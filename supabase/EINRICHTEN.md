@@ -245,6 +245,8 @@ deployt werden – `seed.sql` reicht.
 
 Einmalig, **in dieser Reihenfolge**. Danach wird eine Runde nicht gewertet, wenn ein Programm nach einer
 (nachträglich ergänzten) Ursache noch nicht durchsucht ist – statt dass die Partei dafür 0 Punkte bekommt.
+Die Links zeigen auf `main` und funktionieren erst, wenn der Pull Request mit diesen Dateien gemergt ist.
+Die Migration lässt sich gefahrlos mehrfach ausführen.
 
 1. **Datenbank ergänzen:** [`supabase/migrations/20261004000000_abdeckung_ursachen.sql`](https://github.com/politik-duell/politik-duell/blob/main/supabase/migrations/20261004000000_abdeckung_ursachen.sql)
    → **Copy raw file** → im [SQL Editor](https://supabase.com/dashboard/project/xfprvshhexhzhfgkfxpi/sql/new)

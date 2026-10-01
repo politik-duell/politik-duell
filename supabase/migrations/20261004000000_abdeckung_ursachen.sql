@@ -6,4 +6,4 @@
 -- die Partei nicht gewertet („noch nicht erfasst“) statt mit 0 Punkten. null = ältere Einträge,
 -- für alle Ursachen des Themas durchsucht. Befüllt aus daten/ (seed.sql).
 
-alter table public.abdeckung add column durchsucht_fuer integer[];
+alter table public.abdeckung add column if not exists durchsucht_fuer integer[];
