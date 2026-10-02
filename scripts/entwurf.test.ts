@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { pruefeKatalog, type Datei } from '../src/data/katalog'
-import { begriffePruefsumme, bewertungsHinweise, blindListe, blindReste, eintragen, erfassungsHinweise, neutralisiere, resteSchwelle, zuordnungsHinweise, kennungen, ohneParteinamen, programmServer, PROTOKOLL, pruefeBewertung, pruefeErfassung, pruefeKennungen, pruefeProtokoll, ursachenFreigegeben, type Bewertung, type Erfassung, type Kennung } from './entwurf'
+import { begriffePruefsumme, bewertungsHinweise, blindListe, blindReste, eintragen, erfassungsHinweise, neutralisiere, resteSchwelle, zuordnungsHinweise, kennungen, ohneParteinamen, programmServer, PROTOKOLL, pruefeBewertung, pruefeErfassung, pruefeKennungen, pruefeProgramm, pruefeProtokoll, suchbegriffeHinweise, ursachenFreigegeben, type Bewertung, type Erfassung, type Kennung } from './entwurf'
 import { seitenOhneText } from './programme'
 import { vergleicheStand } from './stand-vergleich'
 
@@ -104,6 +104,16 @@ describe('Ursachen freigegeben', () => {
     const k = katalog()
     const anderesZiel = katalog({ ...themaInhalt(), ziel: 'Eltern finden einen bezahlbaren Platz.' })
     expect(ursachenFreigegeben(k, anderesZiel, 17).join()).toMatch(/Ziel von Thema 17 weicht/)
+  })
+
+  it('verlangt die freigegebene Abgrenzung der Ursachen', () => {
+    const abgrenzung = { zaehlt: ['Mehr Plätze durch Neubau'], zaehlt_nicht: ['Allgemeine Familienpolitik'] }
+    const mit = (a: unknown) => katalog(themaInhalt([{ ...themaInhalt().ursachen[0], abgrenzung: a } as never, themaInhalt().ursachen[1]]))
+    expect(ursachenFreigegeben(mit(abgrenzung), mit(abgrenzung), 17)).toEqual([])
+    const anders = ursachenFreigegeben(mit(abgrenzung), mit({ zaehlt: ['Alles'], zaehlt_nicht: [] }), 17).join()
+    expect(anders).toMatch(/Abgrenzung von Ursache 1701 weicht/)
+    expect(anders).toMatch(/regeln/)
+    expect(ursachenFreigegeben(katalog(), mit(abgrenzung), 17).join()).toMatch(/Abgrenzung von Ursache 1701 weicht/)
   })
 })
 
@@ -290,6 +300,39 @@ describe('Suchbegriffe je Lösungsrichtung', () => {
     expect(h).toHaveLength(1)
     expect(h[0]).toMatch(/Zwei \(Bund\): 12 Treffer zu Ursache 1701/)
   })
+
+  it('nennt mit Seitenangaben die Fundstellen statt der Summe', () => {
+    const e = erfassung()
+    e.treffer!.programme[1].seiten = { '1701': [12, 14] }
+    const h = erfassungsHinweise(katalog(), e)
+    expect(h).toHaveLength(1)
+    expect(h[0]).toMatch(/Zwei \(Bund\): Ursache 1701 ohne Maßnahme, aber mindestens 3 Begriffe zugleich auf S\. 12, 14/)
+    // Viele Treffer ohne Seite mit mehreren Begriffen: kein Hinweis.
+    e.treffer!.programme[1].seiten = {}
+    expect(erfassungsHinweise(katalog(), e)).toEqual([])
+  })
+
+  it('weist auf kurze Begriffe ohne Markierung und zu viele Begriffe hin', () => {
+    const e = erfassung()
+    e.suchbegriffe['1701'] = { 'Plätze ausbauen': ['kita', '^auen', '=fluss', 'krippenplatz', 'a1', 'a2', 'a3', 'a4', 'a5'] }
+    const h = suchbegriffeHinweise(e).join('\n')
+    expect(h).toMatch(/9 Begriffe – höchstens 8/)
+    expect(h).toMatch(/„kita“ hat nur 4 Zeichen[^]*„\^kita“/)
+    expect(h).not.toMatch(/„\^auen“ hat|„=fluss“ hat|krippenplatz/)
+    // Die Ausgangslage hat nur „kita“ ohne Markierung unter fünf Zeichen.
+    expect(suchbegriffeHinweise(erfassung())).toHaveLength(1)
+  })
+
+  it('prüft eine einzelne Antwort wie die ganze Erfassung und die Regeln', () => {
+    const k = katalog()
+    const p = erfassung().programme[0]
+    expect(pruefeProgramm(k, 17, p)).toEqual([])
+    const lang = { ...p, massnahmen: [{ ...p.massnahmen[0], beschreibung: 'x'.repeat(201), ursachen_ids: [1799] }] }
+    expect(pruefeProgramm(k, 17, lang).join('\n')).toMatch(/länger als 200[^]*1799 gehört nicht zum Thema/)
+    expect(pruefeProgramm(k, 17, { partei_id: 1, land: null, massnahmen: [] }).join()).toMatch(/weder Maßnahmen noch keine_massnahme/)
+    expect(pruefeErfassung(k, { ...erfassung(), regeln: ['Klimaschutz zählt nur für 1701.'] })).toEqual([])
+    expect(pruefeErfassung(k, { ...erfassung(), regeln: [''] }).join()).toMatch(/regeln: erwartet eine Liste/)
+  })
 })
 
 describe('Zuordnung zu Ursachen blind bestätigt', () => {
@@ -452,5 +495,14 @@ describe('Phasen getrennt', () => {
     const mitName = themaInhalt([...themaInhalt().ursachen.slice(0, 1), { id: 1702, beschreibung: 'Die Politik der Grünen', quelle_url: 'https://destatis.de/b', ebene: 'bund' }])
     expect(vergleicheStand(vorher, katalog(mitName)).join()).toMatch(/Ursache 1702 nennt eine Partei/)
     expect(vergleicheStand(vorher, katalog({ ...themaInhalt(), ziel: 'Wie die SPD es will.' })).join()).toMatch(/Ziel von Thema 17 nennt eine Partei/)
+  })
+
+  it('zählt die Abgrenzung zur Ursache: nicht zusammen mit Maßnahmen ändern, keine Parteinamen', () => {
+    const vorher = katalog()
+    const d = datei()
+    d.ursachen[0] = { ...d.ursachen[0], abgrenzung: { zaehlt: ['Neubau von Plätzen'], zaehlt_nicht: [] } }
+    expect(vergleicheStand(vorher, katalog(d)).join()).toMatch(/Thema 17: Ursache 1701 und Maßnahmen/)
+    const ohneMassnahmen = themaInhalt([{ ...themaInhalt().ursachen[0], abgrenzung: { zaehlt: ['Neubau'], zaehlt_nicht: ['Was die Grünen wollen'] } } as never, themaInhalt().ursachen[1]])
+    expect(vergleicheStand(vorher, katalog(ohneMassnahmen)).join()).toMatch(/Abgrenzung von Ursache 1701 nennt eine Partei/)
   })
 })

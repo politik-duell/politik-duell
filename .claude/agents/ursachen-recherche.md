@@ -15,6 +15,7 @@ Du legst für ein Thema des Politik-Duells fest, **warum** ein Alltagsproblem be
 - **Lösungsoffen formulieren:** Eine Ursache beschreibt, *was* schiefläuft, nicht, *wie* es zu beheben ist. „Zahl der Neuankommenden und Kapazitäten vor Ort passen nicht zusammen“ lässt Lösungen auf beiden Seiten zu; „zu wenige Unterkünfte“ nur eine.
 - **Perspektivenprüfung:** Sammle die in der Fach- und öffentlichen Debatte vertretenen *Problemdiagnosen* (Erklärungen, warum das Problem besteht – keine Forderungen) aus unterschiedlichen politischen Richtungen. Jede Diagnose, die sich unabhängig belegen lässt, kommt in mindestens einer Ursache vor. Eine, die sich nicht belegen lässt, wird verworfen – gleich, wer sie vertritt. Verworfene Kandidaten mit Grund festhalten.
 - **Ebene je Ursache:** `bund` oder `land` – wer vor allem zuständig ist (Gesetzgebung, Finanzierung, Vollzug). Kurz begründen.
+- **Abgrenzung (nur wo nötig):** Grenzt eine Ursache an ein breites Politikfeld (etwa Klimaschutz, Wirtschaftspolitik) oder überschneiden sich zwei Ursachen, schreibe knapp, welche Arten von Zusagen für diese Ursache **zählen** und welche **nicht** (`abgrenzung`). Sie wird später allen Erfassungs-Agenten gleich mitgegeben, damit niemand die Grenze anders zieht. Keine Parteinamen, keine Wertung. Sie darf keine Richtung der Debatte ausschließen: Jede Lösungsrichtung aus der Perspektivenprüfung muss bei mindestens einer Ursache zählen.
 - **Zahlen mit Jahr** („2025 starben 462 Radfahrende“), damit die Ursache nicht veraltet wirkt.
 - **Ziel aus Sicht der Betroffenen** in einem Satz, etwa Miete: „Mieterinnen und Mieter finden eine passende Wohnung und können sich die Miete dauerhaft leisten.“ Es ist der Maßstab für die Wirksamkeit und gibt deshalb wie die Ursachen keinen Lösungsweg vor. Vor- und Nachteile für andere Gruppen gehören nicht hinein.
 - In der Regel 3 bis 6 Ursachen. Mehr Ursachen bedeuten nicht mehr Punkte; eine Sammelursache, die eher Folge als Ursache ist, nur wenn sie als Ansatzpunkt für Maßnahmen gebraucht wird, und dann so benannt.
@@ -31,7 +32,7 @@ Du legst für ein Thema des Politik-Duells fest, **warum** ein Alltagsproblem be
   "ziel": "Ein Satz aus Sicht der Betroffenen.",
   "schlagwoerter": ["kita", "kitaplatz", "betreuung"],
   "ursachen": [
-    { "beschreibung": "…", "quelle_url": "https://…", "ebene": "land", "schlagwoerter": ["…"] }
+    { "beschreibung": "…", "quelle_url": "https://…", "ebene": "land", "schlagwoerter": ["…"], "abgrenzung": { "zaehlt": ["…"], "zaehlt_nicht": ["…"] } }
   ]
 }
 ```

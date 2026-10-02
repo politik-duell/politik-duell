@@ -1,14 +1,14 @@
 // Treffermatrix: zählt jeden Suchbegriff (je Ursache und Lösungsrichtung) in jedem Programm der
 // Erfassung und schreibt das Ergebnis als `treffer` in die Erfassung. So ist nachvollziehbar, dass
-// alle Programme mit denselben Begriffen durchsucht wurden, und es fällt auf, wo ein Programm viele
-// Treffer, aber keine Maßnahme hat. Ergänzt ein Agent eigene Synonyme, kommen sie in `suchbegriffe`
-// und werden mit einem neuen Lauf in allen Programmen gezählt.
+// alle Programme mit denselben Begriffen durchsucht wurden, und es fällt auf, wo ein Programm Fundstellen
+// (Seiten mit mehreren Begriffen einer Ursache), aber keine Maßnahme hat. Ergänzt ein Agent eigene
+// Synonyme, kommen sie in `suchbegriffe` und werden mit einem neuen Lauf in allen Programmen gezählt.
 // Aufruf: npm run entwurf:treffer -- <erfassung.json> [--lokal <ordner>]
 import { readFileSync, writeFileSync } from 'node:fs'
-import { begriffePruefsumme, erfassungsHinweise, pruefeSuchbegriffe, type Erfassung, type Treffermatrix } from '../entwurf.ts'
+import { begriffePruefsumme, erfassungsHinweise, pruefeSuchbegriffe, suchbegriffeHinweise, type Erfassung, type Treffermatrix } from '../entwurf.ts'
 import { pruefeDatenordner } from '../katalog-laden.ts'
 import { erfassungsSeiten, lokalePdfs } from '../programme.ts'
-import { zaehle } from './suche.ts'
+import { analysiere, eintraege, seitenJeUrsache } from './dossier-lib.ts'
 
 const args = process.argv.slice(2)
 const l = args.indexOf('--lokal')
@@ -28,6 +28,7 @@ const erfassung = JSON.parse(readFileSync(pfad, 'utf8')) as Erfassung
 const format = pruefeSuchbegriffe(katalog, { ...erfassung, treffer: undefined }).filter((f) => !f.startsWith('treffer'))
 for (const f of format) console.error(`Fehler:  ${f}`)
 if (format.length) process.exit(1)
+for (const h of suchbegriffeHinweise(erfassung)) console.error(`Hinweis: ${h}`)
 
 const matrix: Treffermatrix = { begriffe_pruefsumme: begriffePruefsumme(erfassung.suchbegriffe), programme: [] }
 let nichtGeladen = 0
@@ -49,13 +50,15 @@ for (const p of erfassung.programme) {
     nichtGeladen++
     continue
   }
+  const ursachenDesProgramms = katalog.ursachen.filter((x) => x.thema_id === erfassung.thema_id && (!p.land || (x.ebene ?? 'bund') === 'land'))
+  const analyse = analysiere(seiten, eintraege(erfassung.suchbegriffe, new Set(ursachenDesProgramms.map((u) => String(u.id)))))
   const ursachen: Treffermatrix['programme'][number]['ursachen'] = {}
-  for (const u of katalog.ursachen.filter((x) => x.thema_id === erfassung.thema_id && (!p.land || (x.ebene ?? 'bund') === 'land'))) {
-    ursachen[u.id] = {}
-    for (const [richtung, begriffe] of Object.entries(erfassung.suchbegriffe[String(u.id)] ?? {}))
-      ursachen[u.id][richtung] = Object.fromEntries(begriffe.map((b) => [b, zaehle(seiten, b)]))
-  }
-  matrix.programme.push({ partei_id: p.partei_id, land: p.land, ursachen })
+  analyse.eintraege.forEach((e, j) => {
+    ursachen[e.ursache] ??= {}
+    ursachen[e.ursache][e.richtung] ??= {}
+    ursachen[e.ursache][e.richtung][e.begriff] = analyse.treffer[j]
+  })
+  matrix.programme.push({ partei_id: p.partei_id, land: p.land, ursachen, seiten: seitenJeUrsache(analyse), unspezifisch: [...analyse.unspezifisch].sort() })
   const summen = Object.entries(ursachen).map(([u, r]) => `${u}: ${Object.entries(r).map(([rn, b]) => `${rn} ${Object.values(b).reduce((a, c) => a + c, 0)}`).join(' / ')}`)
   console.log(`${name.padEnd(16)} ${summen.join(' · ')}`)
 }
@@ -65,5 +68,8 @@ if (nichtGeladen) {
 }
 const neu = { ...erfassung, treffer: matrix }
 writeFileSync(pfad, JSON.stringify(neu, null, 2) + '\n', 'utf8')
+const unspezifisch = [...new Set(matrix.programme.flatMap((p) => p.unspezifisch ?? []))]
+if (unspezifisch.length)
+  console.log(`Unspezifisch (auf mindestens 20 % der Seiten eines Programms, zählen nicht für die Hinweise): ${unspezifisch.join(', ')} – durch „^“ oder „=“ eingrenzen oder streichen.`)
 for (const h of erfassungsHinweise(katalog, neu)) console.error(`Hinweis: ${h}`)
 console.log(`\nTreffer für ${matrix.programme.length} Programme in ${pfad} geschrieben.`)
