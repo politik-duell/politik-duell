@@ -66,9 +66,19 @@ export interface Instrument {
 
 export type EntwurfHerkunft = 'blind' | 'nicht_blind'
 
-/** Ursache im Repo: mit Vermerk, wenn sie erst nach dem Blick in die Programme dazukam. */
+/**
+ * Was für eine Ursache zählt und was nicht – vor dem Blick in die Programme festgelegt, damit alle
+ * Erfassungs-Agenten dieselbe Grenze ziehen (z. B. ob Klimaschutz zu einer Hitze-Ursache gehört).
+ */
+export interface Abgrenzung {
+  zaehlt: string[]
+  zaehlt_nicht: string[]
+}
+
+/** Ursache im Repo: mit Vermerk, wenn sie erst nach dem Blick in die Programme dazukam, und mit Abgrenzung. */
 export interface KatalogUrsache extends Ursache {
   nachtraeglich?: string
+  abgrenzung?: Abgrenzung
 }
 
 /**
@@ -628,7 +638,7 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[], idsD
         f(uOrt, 'erwartet ein Objekt')
         continue
       }
-      unbekannteFelder(uOrt, roh, ['id', 'beschreibung', 'quelle_url', 'ebene', 'schlagwoerter', 'nachtraeglich'])
+      unbekannteFelder(uOrt, roh, ['id', 'beschreibung', 'quelle_url', 'ebene', 'schlagwoerter', 'nachtraeglich', 'abgrenzung'])
       // Nach dem Blick in die Programme ergänzt? Dann offen vermerkt, mit Datum und Grund.
       const nachtraeglich = roh.nachtraeglich !== undefined ? text(uOrt, roh, 'nachtraeglich', 300) : undefined
       const u: KatalogUrsache = {
@@ -645,6 +655,26 @@ export function pruefeKatalog(parteienDatei: Datei, themenDateien: Datei[], idsD
       const uw = schlagwoerter(uOrt, roh)
       if (uw) u.schlagwoerter = uw
       if (nachtraeglich) u.nachtraeglich = nachtraeglich
+      if (roh.abgrenzung !== undefined) {
+        const aOrt = `${uOrt} › abgrenzung`
+        const a = roh.abgrenzung
+        if (!istObjekt(a)) f(aOrt, 'erwartet { zaehlt: [...], zaehlt_nicht: [...] }')
+        else {
+          unbekannteFelder(aOrt, a, ['zaehlt', 'zaehlt_nicht'])
+          const liste = (feld: string): string[] => {
+            const v = a[feld]
+            if (v === undefined) return []
+            if (!Array.isArray(v) || v.some((x) => typeof x !== 'string' || !x.trim() || x.length > 300)) {
+              f(aOrt, `„${feld}“ muss eine Liste kurzer Texte sein (höchstens 300 Zeichen je Eintrag)`)
+              return []
+            }
+            return v as string[]
+          }
+          const ab = { zaehlt: liste('zaehlt'), zaehlt_nicht: liste('zaehlt_nicht') }
+          if (!ab.zaehlt.length && !ab.zaehlt_nicht.length) f(aOrt, 'mindestens ein Eintrag in „zaehlt“ oder „zaehlt_nicht“ nötig')
+          else u.abgrenzung = ab
+        }
+      }
       if (ursacheIds.has(u.id)) f(uOrt, `Ursachen-ID ${u.id} ist doppelt`)
       ursacheIds.add(u.id)
       eigeneUrsachen.add(u.id)

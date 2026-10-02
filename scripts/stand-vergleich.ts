@@ -54,7 +54,7 @@ export function vergleicheStand(alt: Katalog, neu: Katalog): string[] {
   return fehler
 }
 
-const ursacheText = (u: Katalog['ursachen'][number]) => JSON.stringify([u.beschreibung, u.quelle_url, u.ebene ?? 'bund'])
+const ursacheText = (u: Katalog['ursachen'][number]) => JSON.stringify([u.beschreibung, u.quelle_url, u.ebene ?? 'bund', u.abgrenzung ?? null])
 
 /** Phase A (Ursachen, Ziel) und Phase B–D (Maßnahmen) desselben Themas nicht im selben Pull Request. */
 export function trennePhasen(alt: Katalog, neu: Katalog): string[] {
@@ -74,8 +74,11 @@ export function trennePhasen(alt: Katalog, neu: Katalog): string[] {
     const entfernt = [...alteU.keys()].filter((id) => !jetztU.some((u) => u.id === id))
     const zielNeu = (vorher?.ziel ?? '') !== (t.ziel ?? '')
 
-    for (const u of geaendert)
+    for (const u of geaendert) {
       if (enthaeltParteinamen(u.beschreibung, namen)) fehler.push(`Ursache ${u.id} nennt eine Partei oder Person – Ursachen beschreiben das Problem, nicht wer es wie lösen will`)
+      if (u.abgrenzung && enthaeltParteinamen([...u.abgrenzung.zaehlt, ...u.abgrenzung.zaehlt_nicht].join('\n'), namen))
+        fehler.push(`Abgrenzung von Ursache ${u.id} nennt eine Partei oder Person`)
+    }
     if (zielNeu && t.ziel && enthaeltParteinamen(t.ziel, namen)) fehler.push(`Ziel von Thema ${t.id} nennt eine Partei oder Person`)
 
     const phaseA = !vorher || zielNeu || geaendert.length > 0 || entfernt.length > 0

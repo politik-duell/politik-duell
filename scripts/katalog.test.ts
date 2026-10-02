@@ -104,6 +104,19 @@ describe('Datenkatalog: Prüfregeln', () => {
     expect(fehlerVon(thema({ ursachen: [{ ...u, nachtraeglich: '' }] }))).toMatch(/„nachtraeglich“ fehlt oder ist leer/)
   })
 
+  it('prüft die Abgrenzung einer Ursache', () => {
+    const u = { id: 11, beschreibung: 'Zu wenige Praxen', quelle_url: 'https://studie.de/aerzte', ebene: 'bund' }
+    const mit = (abgrenzung: unknown) => fehlerVon(thema({ ursachen: [{ ...u, abgrenzung }] }))
+    expect(mit({ zaehlt: ['Neue Praxen'], zaehlt_nicht: ['Allgemeine Gesundheitspolitik'] })).toBe('')
+    expect(mit({ zaehlt_nicht: ['Allgemeine Gesundheitspolitik'] })).toBe('')
+    expect(mit({})).toMatch(/mindestens ein Eintrag/)
+    expect(mit({ zaehlt: [''] })).toMatch(/Liste kurzer Texte/)
+    expect(mit({ zaehlt: 'Neue Praxen' })).toMatch(/Liste kurzer Texte/)
+    expect(mit('Neue Praxen')).toMatch(/erwartet \{ zaehlt/)
+    expect(mit({ gilt: ['x'] })).not.toBe('')
+    expect(pruefeKatalog(parteien(), [thema({ ursachen: [{ ...u, abgrenzung: { zaehlt: ['Neue Praxen'] } }] })]).katalog.ursachen[0].abgrenzung).toEqual({ zaehlt: ['Neue Praxen'], zaehlt_nicht: [] })
+  })
+
   it('verlangt bei echten Daten ein wörtliches Zitat, bei fiktiven nicht', () => {
     const ohneZitat = { ...massnahme() } as Record<string, unknown>
     delete ohneZitat.zitat

@@ -13,9 +13,28 @@ export const fliesstext = (seite: string) =>
 // zwei Zeichen eines Begriffs darf deshalb ein Leerzeichen oder eine Trennung stehen.
 const zwischen = '(?:\\s*[-‐]\\s+|\\s)?'
 
-/** Regulärer Ausdruck (ohne Flags) für einen Begriff. */
-export const begriffQuelle = (b: string) =>
-  [...b.trim().replace(/\s+/g, '')].map((z) => z.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join(zwischen)
+const WORTZEICHEN = '[\\p{L}\\p{N}]'
+
+/**
+ * Ein Begriff ist ein Wortteil. Ein Zeichen vorn schränkt das ein, damit kurze Begriffe nicht in
+ * fremden Wörtern treffen („auen“ in „bauen“): `^auen` gilt nur am Wortanfang, `=auen` nur als ganzes Wort.
+ */
+export const begriffMarker = (b: string): '' | '^' | '=' => {
+  const z = b.trim()[0]
+  return z === '^' || z === '=' ? z : ''
+}
+
+/** Der Begriff ohne Markierung. */
+export const begriffKern = (b: string) => (begriffMarker(b) ? b.trim().slice(1) : b.trim())
+
+/** Regulärer Ausdruck (ohne Flags, mit Unicode-Flag zu benutzen) für einen Begriff. */
+export const begriffQuelle = (b: string) => {
+  const marker = begriffMarker(b)
+  const kern = [...begriffKern(b).replace(/\s+/g, '')].map((z) => z.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join(zwischen)
+  if (marker === '=') return `(?<!${WORTZEICHEN})${kern}(?!${WORTZEICHEN})`
+  if (marker === '^') return `(?<!${WORTZEICHEN})${kern}`
+  return kern
+}
 
 /** Treffer eines Begriffs in allen Seiten. */
 export function zaehle(seiten: string[], begriff: string): number {

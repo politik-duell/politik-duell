@@ -9,6 +9,8 @@ import type { Katalog } from '../src/data/katalog.ts'
 import type { Evidenz, Rolle, RollenModifikator } from '../src/data/types.ts'
 import { naechsteId } from './ids.ts'
 import { fehlendeZahlen } from './zitate.ts'
+import { MINDEST_BEGRIFFE_JE_SEITE } from './entwurf/dossier-lib.ts'
+import { begriffKern, begriffMarker } from './entwurf/suche.ts'
 import { createHash } from 'node:crypto'
 
 // ---------------------------------------------------------------------------
@@ -46,13 +48,26 @@ export type Suchbegriffe = Record<string, Record<string, string[]>>
 export interface Treffermatrix {
   /** Prüfsumme der Suchbegriffe, mit denen gezählt wurde: Kommen Begriffe dazu, muss neu gezählt werden. */
   begriffe_pruefsumme: string
-  programme: { partei_id: number; land: string | null; ursachen: Record<string, Record<string, Record<string, number>>> }[]
+  programme: {
+    partei_id: number
+    land: string | null
+    ursachen: Record<string, Record<string, Record<string, number>>>
+    /** Ursache → Seiten, auf denen mehrere verschiedene Begriffe der Ursache zugleich treffen (ohne unspezifische Begriffe). */
+    seiten?: Record<string, number[]>
+    /** Begriffe, die in diesem Programm auf zu vielen Seiten stehen. */
+    unspezifisch?: string[]
+  }[]
 }
 
 export interface Erfassung {
   thema_id: number
   /** Für alle Programme dieselben – steht später in docs/perspektiven-ursachen.md. */
   suchbegriffe: Suchbegriffe
+  /**
+   * Regeln für diese Erfassung, die der Koordinator nach dem Pilot festlegt (z. B. ob eine Art von Zusage
+   * zu einer Ursache zählt). Für alle Programme dieselben; sie ändern keine Ursache.
+   */
+  regeln?: string[]
   /** Alle Begriffe in allen erfassten Programmen gezählt (`npm run entwurf:treffer`). */
   treffer?: Treffermatrix
   programme: ErfasstesProgramm[]
@@ -113,6 +128,8 @@ export function ursachenFreigegeben(freigegeben: Katalog, arbeitsstand: Katalog,
     if (!alt) fehler.push(`Ursache ${u.id} ist nicht freigegeben (fehlt im Zielzweig) – Ursachen nicht beim Erfassen ergänzen`)
     else if (alt.beschreibung !== u.beschreibung || alt.quelle_url !== u.quelle_url || (alt.ebene ?? 'bund') !== (u.ebene ?? 'bund'))
       fehler.push(`Ursache ${u.id} weicht vom freigegebenen Stand ab – Ursachen nicht beim Erfassen ändern`)
+    else if (JSON.stringify(alt.abgrenzung ?? null) !== JSON.stringify(u.abgrenzung ?? null))
+      fehler.push(`Abgrenzung von Ursache ${u.id} weicht vom freigegebenen Stand ab – Regeln für diese Erfassung gehören in „regeln“ der Erfassung, nicht in die Ursache`)
   }
   for (const v of vorher) if (!jetzt.some((u) => u.id === v.id)) fehler.push(`Ursache ${v.id} fehlt im Arbeitsstand`)
   return fehler
@@ -365,7 +382,7 @@ export interface BlindListe {
   /** SHA-256 über den übrigen Inhalt: Die Bewertung gibt sie zurück, damit spätere Textänderungen auffallen. */
   pruefsumme: string
   thema: { id: number; name: string; ziel?: string }
-  ursachen: { id: number; beschreibung: string; ebene: string }[]
+  ursachen: { id: number; beschreibung: string; ebene: string; abgrenzung?: { zaehlt: string[]; zaehlt_nicht: string[] } }[]
   instrumente: { id: number; name: string; ebene: string | null; wirksamkeit: number; umsetzbarkeit: number; evidenz?: string | null; begruendung: string }[]
   massnahmen: { kennung: string; ebene: 'bund' | 'land'; beschreibung: string; zitat: string; ursachen_ids: number[] }[]
 }
@@ -388,7 +405,9 @@ export function blindListe(k: Katalog, e: Erfassung, fest?: Kennung[]): BlindLis
   })
   const liste: Omit<BlindListe, 'pruefsumme'> = {
     thema: { id: thema.id, name: thema.name, ziel: thema.ziel },
-    ursachen: k.ursachen.filter((u) => u.thema_id === thema.id).map((u) => ({ id: u.id, beschreibung: u.beschreibung, ebene: u.ebene ?? 'bund' })),
+    ursachen: k.ursachen
+      .filter((u) => u.thema_id === thema.id)
+      .map((u) => ({ id: u.id, beschreibung: u.beschreibung, ebene: u.ebene ?? 'bund', ...(u.abgrenzung ? { abgrenzung: u.abgrenzung } : {}) })),
     instrumente: k.instrumente
       .filter((i) => i.thema_id === thema.id)
       .map((i) => ({
@@ -519,12 +538,41 @@ export function pruefeSuchbegriffe(k: Katalog, e: Erfassung): string[] {
   return f
 }
 
-/** Ab so vielen Treffern zu einer Ursache ohne Maßnahme fragt der Hinweis nach. */
+/** Ab so vielen Treffern zu einer Ursache ohne Maßnahme fragt der Hinweis nach (Matrix ohne Seitenangaben). */
 export const TREFFER_OHNE_MASSNAHME = 10
 
+/** Mehr Begriffe je Richtung als das verwässern die Suche und füllen die Treffermatrix mit Rauschen. */
+export const MAX_BEGRIFFE_JE_RICHTUNG = 8
+/** Kürzere Begriffe ohne Markierung treffen auch mitten in anderen Wörtern. */
+export const KURZER_BEGRIFF = 5
+
 /**
- * Hinweise (keine Fehler): Ein Programm hat zu einer Ursache viele Treffer, aber keine Maßnahme –
- * dann den Agenten die Fundstellen lesen lassen oder im Protokoll begründen, warum nichts passt.
+ * Hinweise (keine Fehler) zur Qualität der Suchbegriffe: zu viele je Richtung, zu kurze ohne Markierung
+ * (`^` Wortanfang, `=` ganzes Wort).
+ */
+export function suchbegriffeHinweise(e: Pick<Erfassung, 'suchbegriffe'>): string[] {
+  const h: string[] = []
+  for (const [u, richtungen] of Object.entries(e.suchbegriffe ?? {})) {
+    for (const [r, begriffe] of Object.entries(richtungen ?? {})) {
+      if (!Array.isArray(begriffe)) continue
+      if (begriffe.length > MAX_BEGRIFFE_JE_RICHTUNG)
+        h.push(`Ursache ${u}, Richtung „${r}“: ${begriffe.length} Begriffe – höchstens ${MAX_BEGRIFFE_JE_RICHTUNG}, lieber wenige spezifische`)
+      for (const b of begriffe) {
+        if (typeof b !== 'string' || begriffMarker(b)) continue
+        if (begriffKern(b).replace(/\s+/g, '').length < KURZER_BEGRIFF)
+          h.push(`Ursache ${u}, Richtung „${r}“: „${b}“ hat nur ${begriffKern(b).length} Zeichen und trifft auch mitten in anderen Wörtern – „^${b}“ (nur Wortanfang) oder „=${b}“ (ganzes Wort) schreiben`)
+      }
+    }
+  }
+  return h
+}
+
+/**
+ * Hinweise (keine Fehler): Ein Programm hat zu einer Ursache Fundstellen, aber keine Maßnahme –
+ * dann den Agenten diese Seiten lesen lassen oder im Protokoll begründen, warum nichts passt.
+ * Eine Fundstelle sind Seiten, auf denen mindestens drei verschiedene Begriffe der Ursache zugleich
+ * treffen; unspezifische Begriffe zählen nicht. Matrizen ohne Seitenangaben (älter) zählen die
+ * Treffer einer Ursache zusammen.
  */
 export function erfassungsHinweise(k: Katalog, e: Erfassung): string[] {
   const h: string[] = []
@@ -535,6 +583,14 @@ export function erfassungsHinweise(k: Katalog, e: Erfassung): string[] {
     if (!t) continue
     for (const u of ursachenFuer(k, e, p)) {
       if (p.massnahmen.some((m) => m.ursachen_ids.includes(u.id))) continue
+      if (t.seiten) {
+        const seiten = t.seiten[String(u.id)] ?? []
+        if (seiten.length)
+          h.push(
+            `${name(p)}: Ursache ${u.id} ohne Maßnahme, aber mindestens ${MINDEST_BEGRIFFE_JE_SEITE} Begriffe zugleich auf S. ${seiten.slice(0, 12).join(', ')}${seiten.length > 12 ? ' …' : ''} – diese Seiten prüfen lassen oder Grund im Protokoll`,
+          )
+        continue
+      }
       const richtungen = Object.entries(t.ursachen[String(u.id)] ?? {}).map(([r, b]) => [r, Object.values(b).reduce((a, c) => a + c, 0)] as const)
       const summe = richtungen.reduce((a, [, n]) => a + n, 0)
       if (summe >= TREFFER_OHNE_MASSNAHME)
@@ -550,35 +606,50 @@ export function pruefeErfassung(k: Katalog, e: Erfassung): string[] {
   const ursachen = new Map(k.ursachen.filter((u) => u.thema_id === e.thema_id).map((u) => [u.id, u]))
   if (!ursachen.size) f.push(`Thema ${e.thema_id} hat keine Ursachen`)
   f.push(...pruefeSuchbegriffe(k, e))
+  if (e.regeln !== undefined && (!Array.isArray(e.regeln) || e.regeln.some((r) => typeof r !== 'string' || !r.trim() || r.length > 400)))
+    f.push('regeln: erwartet eine Liste kurzer Texte (höchstens 400 Zeichen je Regel)')
   const gesehen = new Set<string>()
   for (const p of e.programme) {
     const name = `Partei ${p.partei_id} ${p.land ?? 'Bund'}`
     if (gesehen.has(name)) f.push(`${name}: doppelt in der Erfassung`)
     gesehen.add(name)
-    if (!k.parteien.some((x) => x.id === p.partei_id)) f.push(`${name}: unbekannte Partei`)
-    if (p.land && !k.landesprogramme.some((l) => l.partei_id === p.partei_id && l.land === p.land && l.aktuell && l.url))
-      f.push(`${name}: kein aktuelles Landesprogramm in parteien.json`)
-    if (k.abdeckung.some((a) => a.thema_id === e.thema_id && a.partei_id === p.partei_id && (a.land ?? null) === p.land && a.aktuell))
-      f.push(`${name}: hat zu diesem Thema schon einen Eintrag – bestehende Einträge von Hand ergänzen`)
-    if (!p.massnahmen.length && !p.keine_massnahme?.trim()) f.push(`${name}: weder Maßnahmen noch keine_massnahme`)
-    if (p.massnahmen.length && p.keine_massnahme) f.push(`${name}: Maßnahmen und keine_massnahme zugleich`)
-    for (const [j, m] of p.massnahmen.entries()) {
-      const was = `${name}, Maßnahme ${j + 1}`
-      if (!m.beschreibung?.trim()) f.push(`${was}: beschreibung fehlt`)
-      else if (m.beschreibung.length > 200) f.push(`${was}: beschreibung ist länger als 200 Zeichen (${m.beschreibung.length})`)
-      if (!m.zitat?.trim()) f.push(`${was}: zitat fehlt`)
-      else if (m.zitat.length > 800) f.push(`${was}: zitat ist länger als 800 Zeichen`)
-      else if (m.beschreibung) {
-        const zahlen = fehlendeZahlen(m.beschreibung, m.zitat)
-        if (zahlen.length) f.push(`${was}: Zahl ${zahlen.join(', ')} steht in der Beschreibung, aber nicht im Zitat – nichts dazuerfinden oder das Zitat erweitern`)
-      }
-      if (!Number.isInteger(m.seite) || m.seite < 1) f.push(`${was}: seite muss die PDF-Seite sein (ganze Zahl ≥ 1)`)
-      if (!m.ursachen_ids?.length) f.push(`${was}: ursachen_ids fehlen`)
-      for (const id of m.ursachen_ids ?? []) {
-        const u = ursachen.get(id)
-        if (!u) f.push(`${was}: Ursache ${id} gehört nicht zum Thema`)
-        else if (p.land && (u.ebene ?? 'bund') !== 'land') f.push(`${was}: Landesprogramme nur für Ursachen mit ebene „land“ (${id} ist Bund)`)
-      }
+    f.push(...pruefeProgramm(k, e.thema_id, p))
+  }
+  return f
+}
+
+/**
+ * Prüft ein erfasstes Programm gegen den Katalog: Partei und Landesprogramm bekannt, noch kein Eintrag
+ * zum Thema, Längen, Seitenzahl, Zahlen im Zitat und Ursachen der richtigen Ebene. Auch für eine einzelne
+ * Antwort eines Agenten brauchbar (`npm run entwurf:antwort-pruefen`).
+ */
+export function pruefeProgramm(k: Katalog, themaId: number, p: ErfasstesProgramm): string[] {
+  const f: string[] = []
+  const ursachen = new Map(k.ursachen.filter((u) => u.thema_id === themaId).map((u) => [u.id, u]))
+  const name = `Partei ${p.partei_id} ${p.land ?? 'Bund'}`
+  if (!k.parteien.some((x) => x.id === p.partei_id)) f.push(`${name}: unbekannte Partei`)
+  if (p.land && !k.landesprogramme.some((l) => l.partei_id === p.partei_id && l.land === p.land && l.aktuell && l.url))
+    f.push(`${name}: kein aktuelles Landesprogramm in parteien.json`)
+  if (k.abdeckung.some((a) => a.thema_id === themaId && a.partei_id === p.partei_id && (a.land ?? null) === p.land && a.aktuell))
+    f.push(`${name}: hat zu diesem Thema schon einen Eintrag – bestehende Einträge von Hand ergänzen`)
+  if (!p.massnahmen.length && !p.keine_massnahme?.trim()) f.push(`${name}: weder Maßnahmen noch keine_massnahme`)
+  if (p.massnahmen.length && p.keine_massnahme) f.push(`${name}: Maßnahmen und keine_massnahme zugleich`)
+  for (const [j, m] of p.massnahmen.entries()) {
+    const was = `${name}, Maßnahme ${j + 1}`
+    if (!m.beschreibung?.trim()) f.push(`${was}: beschreibung fehlt`)
+    else if (m.beschreibung.length > 200) f.push(`${was}: beschreibung ist länger als 200 Zeichen (${m.beschreibung.length})`)
+    if (!m.zitat?.trim()) f.push(`${was}: zitat fehlt`)
+    else if (m.zitat.length > 800) f.push(`${was}: zitat ist länger als 800 Zeichen`)
+    else if (m.beschreibung) {
+      const zahlen = fehlendeZahlen(m.beschreibung, m.zitat)
+      if (zahlen.length) f.push(`${was}: Zahl ${zahlen.join(', ')} steht in der Beschreibung, aber nicht im Zitat – nichts dazuerfinden oder das Zitat erweitern`)
+    }
+    if (!Number.isInteger(m.seite) || m.seite < 1) f.push(`${was}: seite muss die PDF-Seite sein (ganze Zahl ≥ 1)`)
+    if (!m.ursachen_ids?.length) f.push(`${was}: ursachen_ids fehlen`)
+    for (const id of m.ursachen_ids ?? []) {
+      const u = ursachen.get(id)
+      if (!u) f.push(`${was}: Ursache ${id} gehört nicht zum Thema`)
+      else if (p.land && (u.ebene ?? 'bund') !== 'land') f.push(`${was}: Landesprogramme nur für Ursachen mit ebene „land“ (${id} ist Bund)`)
     }
   }
   return f
