@@ -39,8 +39,6 @@ function forderungAntwort(themaName: string | null): string {
   )
 }
 
-const spielerTexte = (v: Nachricht[]) => v.filter((n) => n.von === 'spieler').map((n) => n.text)
-
 function werteAus(
   analyse: AnalyseAntwort,
   nr: number,
@@ -214,7 +212,7 @@ export function Runde({
         )
       }
     } else {
-      onErgebnis({ ...werteAus(analyse, nr, sprecher, spieler, daten, forderung ?? undefined, rundenKarten), eingaben: spielerTexte(neu) })
+      onErgebnis({ ...werteAus(analyse, nr, sprecher, spieler, daten, forderung ?? undefined, rundenKarten), gespraech: neu })
     }
     setKarten(rundenKarten)
   }
@@ -240,13 +238,13 @@ export function Runde({
       setDenkt(false)
     }
     // Angetippt nach einer Nachfrage: das bisherige Gespräch; nach einer Haltungskarte: die Haltung davor.
-    const eingaben = spielerTexte(verlauf.length ? verlauf : vorher)
+    const gespraech = verlauf.length ? verlauf : vorher
     onErgebnis({
       ...werteAus(
         { ...analyse, zusammenfassung: zusammenfassung ?? analyse.zusammenfassung },
         nr, sprecher, spieler, daten, forderung ?? undefined, karten,
       ),
-      ...(eingaben.length ? { eingaben } : {}),
+      ...(gespraech.length ? { gespraech } : {}),
     })
   }
 

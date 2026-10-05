@@ -230,13 +230,15 @@ export function Aufloesung({
   return (
     <main className="seite aufloesung">
       <h2 className="sr-only">Das Problem</h2>
-      {/* Die eigene Eingabe im Wortlaut über der Kurzfassung – nicht, wenn beide gleich lauten. */}
-      {runde.eingaben?.length && !(runde.eingaben.length === 1 && runde.eingaben[0].trim() === runde.zusammenfassung.trim()) ? (
+      {/* Das Gespräch der Runde in Sprechblasen über der Kurzfassung – nicht, wenn es nur aus einer Eingabe
+          besteht, die genauso lautet wie die Kurzfassung. */}
+      {runde.gespraech?.length &&
+      !(runde.gespraech.length === 1 && runde.gespraech[0].text.trim() === runde.zusammenfassung.trim()) ? (
         <div className="deine-eingabe">
-          <span className="deine-eingabe-label">{runde.eingaben.length > 1 ? 'Deine Eingaben' : 'Deine Eingabe'}</span>
-          {runde.eingaben.map((t, i) => (
-            <p key={i} className="blase blase-spieler">
-              {t}
+          <span className="deine-eingabe-label">{runde.gespraech.length > 1 ? 'Das Gespräch' : 'Deine Eingabe'}</span>
+          {runde.gespraech.map((n, i) => (
+            <p key={i} className={`blase blase-${n.von}`}>
+              {n.text}
             </p>
           ))}
         </div>

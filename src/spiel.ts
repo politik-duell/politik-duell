@@ -19,8 +19,11 @@ export interface RundenErgebnis {
   /** Bundesland der Person, die das Problem genannt hat. */
   land: string | null
   zusammenfassung: string
-  /** Was die Person in dieser Runde eingegeben hat (Wortlaut, nur zur Anzeige – nicht im Teilen-Text). */
-  eingaben?: string[]
+  /**
+   * Das Gespräch dieser Runde (Eingaben im Wortlaut und Nachfragen der KI) – nur zur Anzeige in der Auflösung,
+   * nicht im Teilen-Text.
+   */
+  gespraech?: { von: 'spieler' | 'ki'; text: string }[]
   /** Vorläufige Einschätzung bei ungeprüften Themen (ohne Punkte und Links). */
   einschaetzung: string | null
   thema: Thema | null
