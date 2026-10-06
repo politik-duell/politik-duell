@@ -60,11 +60,8 @@ if (p.nicht_durchsucht !== undefined) {
   process.exit(fehlerliste.length ? 1 : 0)
 }
 
-for (const f of pruefeProgramm(katalog, erfassung, p)) {
-  // Ein Bündel, das noch nicht im Leitfaden steht, entscheidet der Koordinator für alle Programme.
-  if (f.includes('„Neue Bündel“')) hinweise.push(f)
-  else fehlerliste.push(f)
-}
+// Dieselbe Prüfung wie in entwurf:zusammenfuehren und entwurf:eintragen – was dort abgelehnt würde, ist hier ein Fehler.
+fehlerliste.push(...pruefeProgramm(katalog, erfassung, p))
 const massnahmen = Array.isArray(p.massnahmen) ? p.massnahmen : []
 // Zitate gegen die ausgewertete Fassung des Programms.
 const lp = p.land ? katalog.landesprogramme.find((x) => x.partei_id === p.partei_id && x.land === p.land && x.aktuell) : undefined

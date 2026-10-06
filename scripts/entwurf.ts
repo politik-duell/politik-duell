@@ -967,6 +967,9 @@ export function ohneBuendel(k: Katalog, e: Pick<Erfassung, 'programme' | 'leitfa
 /** Ab so vielen Maßnahmen ohne Bündel an einer Ursache mit Bündelliste gibt es einen Hinweis. */
 export const BUENDEL_OHNE = 3
 
+/** Höchstlänge von `keine_massnahme` – die Begründung wird so in die Themendatei übernommen (Grenze dort: 400). */
+export const KEINE_MASSNAHME_MAX = 400
+
 /** Regeln und Bündel des Leitfadens: Ursachen des Themas, eindeutige Nummern, keine Parteinamen (er geht an die Bewertung). */
 export function pruefeLeitfaden(k: Katalog, l: Leitfaden): string[] {
   const f: string[] = []
@@ -1045,6 +1048,9 @@ export function pruefeProgramm(k: Katalog, e: Pick<Erfassung, 'thema_id' | 'leit
   if (!Array.isArray(p.massnahmen)) return [...f, `${name}: massnahmen fehlen (Liste, auch leer)`]
   if (!p.massnahmen.length && !p.keine_massnahme?.trim()) f.push(`${name}: weder Maßnahmen noch keine_massnahme`)
   if (p.massnahmen.length && p.keine_massnahme) f.push(`${name}: Maßnahmen und keine_massnahme zugleich`)
+  // Dieselbe Grenze wie für „begruendung“ in der Themendatei – sonst lehnt erst entwurf:eintragen ab.
+  if (typeof p.keine_massnahme === 'string' && p.keine_massnahme.length > KEINE_MASSNAHME_MAX)
+    f.push(`${name}: keine_massnahme ist länger als ${KEINE_MASSNAHME_MAX} Zeichen (${p.keine_massnahme.length}) – nur gelesene Kapitel und Seiten und warum nichts an den Ursachen ansetzt; Einzelheiten ins Protokoll`)
   for (const b of p.neue_buendel ?? [])
     if (!b || typeof b.name !== 'string' || !b.name.trim() || !ursachen.has(b.ursache)) f.push(`${name}: neue_buendel – je Eintrag { "ursache": <ID des Themas>, "name": "…", "seite": N }`)
   for (const b of p.eigene_synonyme ?? [])
@@ -1079,8 +1085,11 @@ export function pruefeProgramm(k: Katalog, e: Pick<Erfassung, 'thema_id' | 'leit
     }
     if (m.buendel !== undefined) {
       const erlaubt = alle.flatMap((u) => e.leitfaden?.buendel?.[String(u)] ?? [])
+      // `buendel` nur mit einem Namen aus dem Auftrag; ein neues Instrument meldet `neue_buendel`.
       if (!erlaubt.includes(m.buendel))
-        f.push(`${was}: Bündel „${m.buendel}“ steht im Leitfaden nicht bei ihren Ursachen – im Protokoll unter „Neue Bündel“ melden; der Koordinator ergänzt den Leitfaden für alle Programme`)
+        f.push(
+          `${was}: Bündel „${m.buendel}“ steht im Leitfaden nicht bei ihren Ursachen${erlaubt.length ? ` (dort: ${erlaubt.map((b) => `„${b}“`).join(', ')})` : ' (dort keine Bündel)'} – „buendel“ nur mit einem Namen aus dem Auftrag; sonst weglassen und ein eigenes Instrument unter „neue_buendel“ melden, der Koordinator ergänzt den Leitfaden für alle Programme`,
+        )
       const vorher = buendelGesehen.get(m.buendel)
       if (vorher !== undefined) f.push(
           `${was}: Bündel „${m.buendel}“ schon bei Maßnahme ${vorher} – gleichartige Zusage: nur die konkreteste Stelle behalten; andere Zusage: ohne „buendel“ erfassen oder unter „neue_buendel“ melden, nie zusammenfassen`,

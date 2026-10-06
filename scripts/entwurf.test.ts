@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { pruefeKatalog, type Datei } from '../src/data/katalog'
-import { BUENDEL_OHNE, begriffePruefsumme, bewertungsHinweise, pruefeLeitfaden, pruefeProgramm, zitatHinweise, zuordnungsBilanz, type Leitfaden, blindListe, blindReste, eintragen, erfassungsHinweise, neutralisiere, resteSchwelle, zuordnungsHinweise, kennungen, ohneParteinamen, programmServer, PROTOKOLL, pruefeBewertung, pruefeErfassung, pruefeKennungen, ordneKennungen, pruefeProtokoll, vergleicheErfassung, ohneBuendel, teilbewertung, fuehreTeilbewertungZusammen, kurzbericht, enthaeltParteinamen, pruefeAntwort, type BlindListe, ursachenFreigegeben, pruefeNachtrag, type Bewertung, type Erfassung, type Kennung, type Treffermatrix, type Zuordnung } from './entwurf'
+import { BUENDEL_OHNE, KEINE_MASSNAHME_MAX, begriffePruefsumme, bewertungsHinweise, pruefeLeitfaden, pruefeProgramm, zitatHinweise, zuordnungsBilanz, type Leitfaden, blindListe, blindReste, eintragen, erfassungsHinweise, neutralisiere, resteSchwelle, zuordnungsHinweise, kennungen, ohneParteinamen, programmServer, PROTOKOLL, pruefeBewertung, pruefeErfassung, pruefeKennungen, ordneKennungen, pruefeProtokoll, vergleicheErfassung, ohneBuendel, teilbewertung, fuehreTeilbewertungZusammen, kurzbericht, enthaeltParteinamen, pruefeAntwort, type BlindListe, ursachenFreigegeben, pruefeNachtrag, type Bewertung, type Erfassung, type Kennung, type Treffermatrix, type Zuordnung } from './entwurf'
 import { seitenOhneText } from './programme'
 import { auftragText } from './entwurf/auftrag-text'
 import { erstesJsonObjekt, fehlerStelle } from './entwurf/json-text'
@@ -678,11 +678,24 @@ describe('Leitfaden und Bündel', () => {
     p.massnahmen.push({ ...p.massnahmen[1], zitat: 'Wir zahlen mehr.', buendel: 'Gehälter' })
     const f = pruefeProgramm(k, e, p).join('\n')
     expect(f).toMatch(/Bündel „Vergütung“ schon bei Maßnahme 2/)
-    expect(f).toMatch(/Bündel „Gehälter“ steht im Leitfaden nicht.*„Neue Bündel“/)
+    expect(f).toMatch(/Bündel „Gehälter“ steht im Leitfaden nicht bei ihren Ursachen \(dort: „Vergütung“, „Ausbildung“\).*„neue_buendel“/)
     // Ungebündelt viele Maßnahmen an einer Ursache mit Bündelliste.
     const viele = { ...erfassung(), leitfaden: LEITFADEN }
     viele.programme[0].massnahmen = Array.from({ length: BUENDEL_OHNE + 1 }, (_, i) => ({ beschreibung: `Zusage ${i}`, ursachen_ids: [1702], zitat: `Zusage ${i}.`, seite: 13 }))
     expect(erfassungsHinweise(k, viele).join()).toMatch(/Eins \(Bund\): 4 Maßnahmen zu Ursache 1702 ohne Bündel/)
+  })
+
+  it('lehnt schon bei der Selbstprüfung ab, was zusammenfuehren oder eintragen ablehnen würde', () => {
+    const k = katalog()
+    // Leitfaden ohne Bündel: Ein Richtungsname als `buendel` ist ein Fehler (Thema 29).
+    const ohne = { ...erfassung(), leitfaden: { ...LEITFADEN, buendel: undefined } }
+    const p = ohne.programme[0]
+    p.massnahmen[1].buendel = 'Fachkräfte gewinnen'
+    expect(pruefeProgramm(k, ohne, p).join()).toMatch(/Bündel „Fachkräfte gewinnen“ steht im Leitfaden nicht bei ihren Ursachen \(dort keine Bündel\)/)
+    // `keine_massnahme` über 400 Zeichen: Die Themendatei nimmt die Begründung nicht (Thema 30).
+    const leer = { partei_id: 2, land: null, massnahmen: [], keine_massnahme: 'x'.repeat(KEINE_MASSNAHME_MAX + 1) }
+    expect(pruefeProgramm(k, erfassung(), leer).join()).toMatch(/keine_massnahme ist länger als 400 Zeichen \(401\)/)
+    expect(pruefeProgramm(k, erfassung(), { ...leer, keine_massnahme: 'x'.repeat(KEINE_MASSNAHME_MAX) })).toEqual([])
   })
 
   it('meldet nicht durchsuchte Programme, offene und sichere Ursache doppelt und Zitate, die klein beginnen', () => {
