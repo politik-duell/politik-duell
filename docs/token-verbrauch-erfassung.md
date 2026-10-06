@@ -4,7 +4,7 @@ Beobachtet beim Durchgang für die Themen 27, 29, 30 und 33 (6. 10. 2026, Pull R
 
 ## Hebel, nach Wirkung geordnet
 
-1. **Programme ohne Treffer überspringen.** Viele Programme haben in den Suchbegriffen null Treffer, vor allem Landesprogramme von AfD, FDP und Union. Ihre Agenten liefern fast immer „keine Maßnahme“. `entwurf:auftrag` könnte für solche Programme keinen Auftrag erzeugen und `keine_massnahme` mit „keine Treffer in den Suchbegriffen“ setzen. Das spart gut ein Viertel der Agenten. Risiko: Eine Maßnahme, die ohne die Suchbegriffe formuliert ist, würde übersehen. **Offen:** Reicht „keine Treffer“ als Beleg für „keine Maßnahme“? Das ist eine Methodenentscheidung (`docs/methode.md`).
+1. ~~**Programme ohne Treffer überspringen.**~~ **Verworfen.** Die Idee war, für Programme ohne Treffer keinen Auftrag zu erzeugen und `keine_massnahme` mit „keine Treffer in den Suchbegriffen“ zu setzen. Die Archive widerlegen das: In den Themen 27, 29, 30 und 33 hatten 11 Programme keinen Treffer, 6 davon lieferten trotzdem echte Maßnahmen (7, alle nach der Bewertung ohne Parteinamen eingetragen): 27 Union-ST, FDP-MV; 30 SPD-MV (2), SPD-ST, AfD-MV; 33 AfD-ST (`daten/protokolle/<ID>/2026-10-06-bund-land-BE-MV-ST/`, `treffer.txt` und `erfassung.json`). Null Treffer sind kein Beleg für „keine Maßnahme“; übersprungene Programme würden Parteien Punkte kosten.
 2. **Kleineres Modell bei wenigen Treffern.** Alle Agenten laufen bisher auf derselben Stufe. Für Programme mit wenigen Treffern genügt vermutlich eine kleinere Stufe; bei vielen Treffern zählt die Zitattreue, dort bleibt die Stufe.
 3. **Mehrere Themen in einem Auftrag je Programm.** Bei mehreren Themen liest derselbe Agent dasselbe Programm mehrfach. Ein Auftrag je Programm mit allen Themen bündelt das Lesen; dafür müssen Skript und Agent angepasst werden.
 4. **Wiederholungen vermeiden.** Im Durchgang kosteten drei Fehlerbilder zusätzliche Agentenläufe:
@@ -17,4 +17,4 @@ Beobachtet beim Durchgang für die Themen 27, 29, 30 und 33 (6. 10. 2026, Pull R
 
 ## Reihenfolge
 
-Größter Gewinn: Punkt 1 zusammen mit Punkt 4. Punkt 1 braucht vorher die Methodenentscheidung.
+Punkt 1 entfällt (siehe oben). Größter Gewinn: Punkt 3 zusammen mit Punkt 4.
