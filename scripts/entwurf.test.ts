@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { pruefeKatalog, type Datei } from '../src/data/katalog'
-import { BUENDEL_OHNE, KEINE_MASSNAHME_MAX, begriffePruefsumme, bewertungsHinweise, pruefeLeitfaden, pruefeProgramm, zitatHinweise, zuordnungsBilanz, type Leitfaden, blindListe, blindReste, eintragen, erfassungsHinweise, neutralisiere, resteSchwelle, zuordnungsHinweise, kennungen, ohneParteinamen, programmServer, PROTOKOLL, pruefeBewertung, pruefeErfassung, pruefeKennungen, ordneKennungen, pruefeProtokoll, vergleicheErfassung, ohneBuendel, teilbewertung, fuehreTeilbewertungZusammen, kurzbericht, enthaeltParteinamen, pruefeAntwort, type BlindListe, ursachenFreigegeben, pruefeNachtrag, type Bewertung, type Erfassung, type Kennung, type Treffermatrix, type Zuordnung } from './entwurf'
+import { BUENDEL_OHNE, KEINE_MASSNAHME_MAX, synonymVorschlag, begriffePruefsumme, bewertungsHinweise, pruefeLeitfaden, pruefeProgramm, zitatHinweise, zuordnungsBilanz, type Leitfaden, blindListe, blindReste, eintragen, erfassungsHinweise, neutralisiere, resteSchwelle, zuordnungsHinweise, kennungen, ohneParteinamen, programmServer, PROTOKOLL, pruefeBewertung, pruefeErfassung, pruefeKennungen, ordneKennungen, pruefeProtokoll, vergleicheErfassung, ohneBuendel, teilbewertung, fuehreTeilbewertungZusammen, kurzbericht, enthaeltParteinamen, pruefeAntwort, type BlindListe, ursachenFreigegeben, pruefeNachtrag, type Bewertung, type Erfassung, type Kennung, type Treffermatrix, type Zuordnung } from './entwurf'
 import { seitenOhneText } from './programme'
 import { auftragText } from './entwurf/auftrag-text'
 import { erstesJsonObjekt, fehlerStelle } from './entwurf/json-text'
@@ -901,6 +901,23 @@ describe('Kurzbericht der Erfassung (feste Form)', () => {
     expect(pruefeProgramm(k(), erfassung(), { ...p, eigene_synonyme: [{ begriff: '', ursache: 1, richtung: 'x' }] }).join()).toMatch(/eigene_synonyme/)
   })
   const k = () => katalog()
+
+  it('sammelt eigene Synonyme aller Programme als Vorschlag, ohne schon gesuchte Begriffe', () => {
+    const suchbegriffe = { '1702': { 'Fachkräfte gewinnen': ['fachkräfte', 'quereinstieg'] } }
+    expect(
+      synonymVorschlag(
+        [
+          { name: 'Eins-Bund', eigene_synonyme: [{ begriff: 'Seiteneinstieg', ursache: 1702, richtung: 'Fachkräfte gewinnen' }, { begriff: 'Quereinstieg', ursache: 1702, richtung: 'Fachkräfte gewinnen' }] },
+          { name: 'Zwei-BE', eigene_synonyme: [{ begriff: 'seiteneinstieg', ursache: 1702, richtung: 'Fachkräfte gewinnen' }, { begriff: 'zulage', ursache: 1702, richtung: 'Bezahlung' }] },
+          { name: 'Drei-Bund' },
+        ],
+        suchbegriffe,
+      ),
+    ).toEqual([
+      '1702 „Bezahlung“ (Richtung nicht im Leitfaden): „zulage“ (Zwei-BE)',
+      '1702 „Fachkräfte gewinnen“: „seiteneinstieg“ (Eins-Bund, Zwei-BE)',
+    ])
+  })
 })
 
 describe('Evaluationen des Skills (.claude/skills/thema-erfassen/evals)', () => {

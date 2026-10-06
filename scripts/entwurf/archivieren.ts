@@ -37,7 +37,7 @@ if (existsSync(ziel)) {
   process.exit(1)
 }
 // Nur diese Dateien und Ordner; alles andere im Arbeitsordner bleibt draußen.
-const dateien = ['erfassung.json', 'kennungen.json', 'blind.json', 'bewertung.json', 'pr-daten.md', 'ohne-buendel.txt', 'treffer.txt']
+const dateien = ['erfassung.json', 'kennungen.json', 'blind.json', 'bewertung.json', 'pr-daten.md', 'ohne-buendel.txt', 'synonyme-vorschlag.txt', 'treffer.txt']
 const ordnerListe = ['protokoll', 'staende']
 let groesse = 0
 let anzahl = 0

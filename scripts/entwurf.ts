@@ -947,6 +947,27 @@ export function vergleicheErfassung(k: Katalog, vorher: ErfasstesProgramm[], jet
 }
 
 /**
+ * Eigene Synonyme aller Programme als Vorschlag für die Suchbegriffe im Leitfaden – je Ursache und
+ * Richtung mit den Programmen, die den Begriff melden. Begriffe, die schon bei der Ursache stehen,
+ * entfallen. Nur ein Vorschlag: Was übernommen wird, entscheidet die Koordination für alle Programme.
+ */
+export function synonymVorschlag(programme: { name: string; eigene_synonyme?: ErfasstesProgramm['eigene_synonyme'] }[], suchbegriffe: Suchbegriffe | undefined): string[] {
+  const gruppen = new Map<string, Map<string, string[]>>()
+  for (const p of programme)
+    for (const s of p.eigene_synonyme ?? []) {
+      const begriff = s.begriff.trim().toLowerCase()
+      const vorhanden = Object.values(suchbegriffe?.[String(s.ursache)] ?? {}).flat().map((b) => b.toLowerCase())
+      if (!begriff || vorhanden.includes(begriff)) continue
+      const richtung = s.richtung.trim()
+      const schluessel = `${s.ursache} „${richtung}“${suchbegriffe?.[String(s.ursache)]?.[richtung] ? '' : ' (Richtung nicht im Leitfaden)'}`
+      const g = gruppen.get(schluessel) ?? new Map<string, string[]>()
+      g.set(begriff, [...new Set([...(g.get(begriff) ?? []), p.name])])
+      gruppen.set(schluessel, g)
+    }
+  return [...gruppen].sort(([a], [b]) => a.localeCompare(b)).map(([k, g]) => `${k}: ${[...g].map(([b, n]) => `„${b}“ (${n.join(', ')})`).join('; ')}`)
+}
+
+/**
  * Maßnahmen ohne Bündel an Ursachen, für die der Leitfaden Bündel nennt – je Programm mit Seite. Das ist
  * erlaubt (eine zweite, verschiedene Zusage bleibt ohne Bündel), aber jede soll die Koordination einmal
  * ansehen: gleiches Instrument (dann Rückfrage) oder eigenes (dann bleibt sie, oder ein neues Bündel).

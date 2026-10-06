@@ -2,13 +2,14 @@
 // in die Erfassung zusammen. Nicht durchsuchte Programme bleiben draußen („noch nicht erfasst“).
 // Vergleicht mit dem vorherigen Stand (plan–validate–execute): je Programm entfallene, vermutlich
 // zusammengefasste, neue und geänderte Maßnahmen und Ursachen, die keine Maßnahme mehr haben. Maßnahmen
-// ohne Bündel an Ursachen mit Bündeln stehen nur zur Information in ohne-buendel.txt.
+// ohne Bündel an Ursachen mit Bündeln stehen nur zur Information in ohne-buendel.txt, die eigenen Synonyme
+// der Agenten als Vorschlag für die Suchbegriffe des Leitfadens in synonyme-vorschlag.txt.
 // Der vorherige Stand bleibt als staende/erfassung-N.json.
 // Danach: npm run entwurf:treffer -- <erfassung.json>
 // Aufruf: npm run entwurf:zusammenfuehren -- <erfassung.json>
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { ohneBuendel, pruefeProgramm, vergleicheErfassung, type Erfassung, type ErfasstesProgramm } from '../entwurf.ts'
+import { ohneBuendel, pruefeProgramm, synonymVorschlag, vergleicheErfassung, type Erfassung, type ErfasstesProgramm } from '../entwurf.ts'
 import { pruefeDatenordner } from '../katalog-laden.ts'
 import { leseLeitfaden, programmOrdner } from './erfassung-datei.ts'
 
@@ -32,6 +33,7 @@ if (!existsSync(ordner)) {
 const programme = new Map(erfassung.programme.map((p) => [`${p.partei_id}/${p.land}`, p]))
 const fehlerliste: string[] = []
 const nichtDurchsucht: string[] = []
+const synonyme: Parameters<typeof synonymVorschlag>[0] = []
 for (const d of readdirSync(ordner).filter((x) => x.endsWith('.json')).sort()) {
   const p = JSON.parse(readFileSync(join(ordner, d), 'utf8')) as ErfasstesProgramm
   const schluessel = `${p.partei_id}/${p.land ?? null}`
@@ -43,6 +45,7 @@ for (const d of readdirSync(ordner).filter((x) => x.endsWith('.json')).sort()) {
   // Ein Bündel, das erst nach der Abgabe in den Leitfaden kam, ist jetzt bekannt – deshalb hier erneut prüfen.
   fehlerliste.push(...pruefeProgramm(katalog, { thema_id: erfassung.thema_id, leitfaden, nachtrag: erfassung.nachtrag }, p).map((f) => `${d}: ${f}`))
   programme.set(schluessel, { ...p, land: p.land ?? null })
+  synonyme.push({ name: d.replace(/\.json$/, ''), eigene_synonyme: p.eigene_synonyme })
 }
 for (const f of fehlerliste) console.error(`Fehler:  ${f}`)
 if (fehlerliste.length) process.exit(1)
@@ -74,4 +77,9 @@ const ungebuendelt = ohneBuendel(katalog, { programme: liste, leitfaden })
 const buendelDatei = join(pfad, '..', 'ohne-buendel.txt')
 writeFileSync(buendelDatei, ungebuendelt.join('\n') + (ungebuendelt.length ? '\n' : ''), 'utf8')
 if (ungebuendelt.length) console.log(`\n${ungebuendelt.length} Maßnahmen ohne Bündel an Ursachen mit Bündeln – zur Information in ${buendelDatei} (keine Rückfrage nötig)`)
+// Nicht automatisch in den Leitfaden: Ein Begriff gilt erst, wenn er für alle Programme gleich gesucht wird.
+const vorschlag = synonymVorschlag(synonyme, leitfaden?.suchbegriffe)
+const synonymDatei = join(pfad, '..', 'synonyme-vorschlag.txt')
+writeFileSync(synonymDatei, vorschlag.join('\n') + (vorschlag.length ? '\n' : ''), 'utf8')
+if (vorschlag.length) console.log(`${vorschlag.length} Richtungen mit eigenen Synonymen – Vorschlag für die Suchbegriffe des Leitfadens in ${synonymDatei} (gilt erst ab dem nächsten Durchgang)`)
 console.log(`Weiter: npm run entwurf:treffer -- ${pfad}`)
