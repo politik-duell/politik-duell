@@ -1,6 +1,6 @@
 // Sichert die Protokolle eines Durchgangs im Repository, damit „jeder Eingriff steht im Protokoll“ auch
 // nach dem Ende des Containers belegbar bleibt: daten/protokolle/<ID>/<Datum>-<Ebene>/ mit Erfassung,
-// Ständen, Kennungen, bewerteter Blindliste, Bewertung, protokoll/ und pr-daten.md.
+// Ständen, Kennungen, bewerteter Blindliste, Bewertung, protokoll/ (mit kosten.md) und pr-daten.md.
 // Nicht kopiert werden Programmtexte (texte/) und Aufträge (auftraege/, enthalten lange Programmauszüge) –
 // sie sind urheberrechtlich geschützt und lassen sich aus dem Programm neu erzeugen.
 // Aufruf: npm run entwurf:archivieren -- <erfassung.json> [--name <Bezeichnung>] [--datum JJJJ-MM-TT]
@@ -22,6 +22,11 @@ if (!pfad || rest.length || !/^\d{4}-\d{2}-\d{2}$/.test(datum) || (nameArg !== u
   process.exit(1)
 }
 const ordner = join(pfad, '..')
+// Ohne Kosten je Agent lässt sich der Tokenverbrauch späterer Durchgänge nicht vergleichen (fehlte bei Themen 27, 29, 30, 33).
+if (!existsSync(join(ordner, 'protokoll', 'kosten.md'))) {
+  console.error(`Fehler:  ${join(ordner, 'protokoll', 'kosten.md')} fehlt – je Agent eine Zeile „| Agent | Programm | Tokens | Dauer |“ (auch die Rückfragen und den Blind-Agenten), dann entwurf:bericht und entwurf:archivieren erneut`)
+  process.exit(1)
+}
 const erfassung = leseErfassung(pfad)
 const laender = [...new Set(erfassung.programme.map((p) => p.land).filter((l): l is string => !!l))].sort()
 const bund = erfassung.programme.some((p) => !p.land)
