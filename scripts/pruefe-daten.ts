@@ -1,6 +1,8 @@
 // Prüft den Datenkatalog in daten/ (Format, Quellenpflicht, Abdeckung).
 // Aufruf: npm run daten:pruefen            – nur Dateien prüfen
 //         npm run daten:pruefen -- --links – zusätzlich alle Links abrufen
+import { readdirSync, readFileSync } from 'node:fs'
+import { leitfadenLuecken, type Leitfaden } from './entwurf.ts'
 import { pruefeDatenordner } from './katalog-laden.ts'
 import { fehlendeZahlen } from './zitate.ts'
 
@@ -39,6 +41,19 @@ if (process.argv.includes('--links') && !fehler.length) {
         }
       }),
     )
+  }
+}
+
+// Phase A: Ein Leitfaden zu einem Thema, das noch für kein Programm erfasst ist, muss vollständig sein, bevor
+// erfasst wird (Regel und Suchbegriffe je Ursache) – so stehen Abgrenzungen fest, bevor jemand in Programme schaut.
+if (!katalog.fiktiv) {
+  const ordner = new URL('../daten/leitfaeden/', import.meta.url)
+  for (const d of readdirSync(ordner).filter((x) => x.endsWith('.json'))) {
+    const l = JSON.parse(readFileSync(new URL(d, ordner), 'utf8')) as Leitfaden
+    if (katalog.abdeckung.some((a) => a.thema_id === l.thema_id)) continue
+    const { fehler: luecken, hinweise } = leitfadenLuecken(katalog, l)
+    fehler.push(...luecken)
+    warnungen.push(...hinweise)
   }
 }
 

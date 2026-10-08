@@ -43,4 +43,22 @@ Du legst für ein Thema des Politik-Duells fest, **warum** ein Alltagsproblem be
 
 2. **Perspektivenprüfung** als Markdown-Tabelle: Ursache (kurz) | Ebene | Quelle (mit Belegstufe A/B/C) | Diagnose aus der Debatte (je Lösungsrichtung einzeln, durch „;“ getrennt, mit „eher vertreten von“ – nur zur Kontrolle der Einseitigkeit). Aus jeder Richtung werden beim Erfassen eigene Suchbegriffe; nenne deshalb auch gegenläufige Wege (etwa „mehr Angebot“ und „weniger Nachfrage“). Danach „Entschieden:“ für strittige Ebenen und „Verworfen:“ mit Gründen.
 
-3. **Hinweise zur Quellenprüfung:** je Ursache die wörtlichen Zitate und Zahlen aus der Quelle mit Datum und Seite, damit die Betreiberin sie im Original bestätigen kann. Markiere alles, was du nicht im Original lesen konntest, mit der **genauen URL** des PDFs – der Skill liest es dann selbst nach. Lass eine Diagnose deshalb nicht einfach weg: nenne sie unter „Verworfen“ als „nicht gelesen“ mit Quelle.
+3. **Leitfaden-Vorschlag** für die Erfassung, als zweites JSON. Ursachen heißen darin nach ihrer Nummer in deiner Liste („1“, „2“ …), der Skill setzt die IDs ein. Alles ohne Parteinamen und ohne Blick in Programme, für alle Programme gleich:
+
+```json
+{
+  "regeln": [{ "ursachen": [1], "text": "Zu 1 gehören … Nicht dazu: … Grenzfall …: nur als ursachen_offen." }],
+  "suchbegriffe": { "1": { "Mehr Plätze schaffen": ["kitaplätz", "kitaausbau"], "Nachfrage steuern": ["betreuungsgeld"] } },
+  "buendel": { "1": ["Ausbauförderung"] },
+  "hebel": { "2": ["CO₂-Bepreisung", "Tempolimit"] },
+  "gekoppelt": [[3, 4]]
+}
+```
+
+   - **Je Ursache mindestens eine Regel:** was dazugehört, was nicht; Abgrenzung zu benachbarten Ursachen; offene Grenzfälle als „nur als `ursachen_offen`“. Höchstens 500 Zeichen je Regel.
+   - **`suchbegriffe`:** je Ursache jede Lösungsrichtung aus der Perspektivenprüfung mit eigenen Begriffen – auch die gegenläufigen. Wortteile, kleingeschrieben, Stamm bei Umlautplural („kitaplätz“), Sprache aller Richtungen, möglichst spezifisch (kein „staat“, „förder“). Steht ein Begriff bei zwei Ursachen, braucht es eine Regel, die beide nennt, oder `gekoppelt`.
+   - **`buendel`** (optional) nur für breite Richtungen mit vielen gleichartigen Einzelzusagen, benannt nach dem **Hebel** („CO₂-Bepreisung“, „Kaufförderung für Fahrzeuge“), nicht nach einem Bereich wie „Verkehr“.
+   - **`hebel`** (optional) statt Bündeln für Ursachen, die eine ganze Politik umfassen („Erwärmung begrenzen“): je Lösungsrichtung die Hebel aller Seiten der Debatte, auch Rücknahmen – jedes Programm muss jeden beantworten.
+   - **`gekoppelt`** (optional), wenn eine Regel Ursachen immer zusammen vergibt.
+
+4. **Hinweise zur Quellenprüfung:** je Ursache die wörtlichen Zitate und Zahlen aus der Quelle mit Datum und Seite, damit die Betreiberin sie im Original bestätigen kann. Markiere alles, was du nicht im Original lesen konntest, mit der **genauen URL** des PDFs – der Skill liest es dann selbst nach. Lass eine Diagnose deshalb nicht einfach weg: nenne sie unter „Verworfen“ als „nicht gelesen“ mit Quelle.
