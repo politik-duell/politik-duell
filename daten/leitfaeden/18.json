@@ -1,7 +1,7 @@
 {
   "thema_id": 18,
-  "stand": "2026-10-04",
-  "herkunft": "KI-Entwurf aus der Perspektivenprüfung (docs/perspektiven-ursachen.md, Thema 18) und den Abgrenzungsfragen, die in der abgebrochenen Erfassung vom 2. 10. 2026 bei allen Programmen wiederkehrten (Emissionsmaßnahmen 1801/1802, Wasser in Landwirtschaft und Wald, technischer Hochwasserschutz, Listenpunkte). Noch nicht von der Betreiberin bestätigt. Von der Betreiberin am 4. 10. 2026 bestätigt; Regel 1 auf ihre Entscheidung geändert (Emissionsmaßnahmen zählen bei 1801 und 1802), Regeln 8 und 9 bestätigt.",
+  "stand": "2026-10-08",
+  "herkunft": "KI-Entwurf aus der Perspektivenprüfung (docs/perspektiven-ursachen.md, Thema 18) und den Abgrenzungsfragen, die in der abgebrochenen Erfassung vom 2. 10. 2026 bei allen Programmen wiederkehrten (Emissionsmaßnahmen 1801/1802, Wasser in Landwirtschaft und Wald, technischer Hochwasserschutz, Listenpunkte). Noch nicht von der Betreiberin bestätigt. Von der Betreiberin am 4. 10. 2026 bestätigt; Regel 1 auf ihre Entscheidung geändert (Emissionsmaßnahmen zählen bei 1801 und 1802), Regeln 8 und 9 bestätigt. Hebel-Checkliste (hebel) für alle sechs Ursachen: KI-Entwurf in Phase A vom 8. 10. 2026, ohne Blick in Programme oder frühere Erfassungen, aus der Perspektivenprüfung und den Suchbegriffen; noch nicht von der Betreiberin bestätigt.",
   "regeln": [
     {
       "nr": 1,
@@ -89,6 +89,86 @@
       "Klimaziele, Klimaschutzgesetz und internationale Abkommen"
     ]
   },
+  "hebel": {
+    "1801": [
+      "CO₂-Preis für Wärme und Verkehr (nationaler Preis, EU-ETS 2)",
+      "EU-Emissionshandel für Strom und Industrie (ETS 1)",
+      "CO₂-Grenzausgleich an der EU-Außengrenze",
+      "Energiesteuern und klimaschädliche Subventionen (Diesel, Kerosin, Dienstwagen)",
+      "Förderung erneuerbaren Stroms (EEG-Vergütung, Ausschreibungen)",
+      "Flächen und Abstände für Windkraft",
+      "Solarpflicht für Dächer",
+      "Beteiligung von Gemeinden und Bürgern an Wind- und Solaranlagen",
+      "Ausbau von Stromnetzen und Speichern",
+      "Kohleausstieg (Zeitpunkt)",
+      "Neue Gaskraftwerke",
+      "Weiterbetrieb, Wiederinbetriebnahme oder Neubau von Kernkraftwerken",
+      "Forschung zu Kernfusion und neuen Reaktortypen",
+      "Vorgaben für neue Heizungen (Gebäudeenergiegesetz)",
+      "Förderung von Heizungstausch und energetischer Sanierung",
+      "Sanierungspflichten für Bestandsgebäude",
+      "Kommunale Wärmeplanung und Wärmenetze",
+      "Vorgaben zur Energieeffizienz (Energieeffizienzgesetz)",
+      "Zulassungsende für Verbrenner und CO₂-Flottengrenzwerte",
+      "Kaufförderung für Elektrofahrzeuge",
+      "Ladeinfrastruktur",
+      "Tempolimit auf Autobahnen",
+      "Ausbau von Bahn und öffentlichem Nahverkehr",
+      "Günstige Tickets im Nahverkehr (Deutschlandticket)",
+      "E-Fuels und Biokraftstoffe",
+      "Wasserstoff: Erzeugung, Import und Netz",
+      "Förderung klimaneutraler Industrie (Klimaschutzverträge)",
+      "CO₂-Abscheidung und -Speicherung (CCS, CCU, Entnahme aus der Luft)",
+      "Wiedervernässung von Mooren",
+      "Waldumbau und Aufforstung",
+      "Emissionen der Landwirtschaft (Tierhaltung, Düngung)",
+      "Klimaziele in Bund und EU (Zieljahr, Zwischen- und Sektorziele)",
+      "Pariser Abkommen und internationale Klimafinanzierung",
+      "Klimaanpassungsgesetz und Anpassungsstrategie mit messbaren Zielen"
+    ],
+    "1802": [
+      "Hitzeaktionspläne und Hitzeschutzplan",
+      "Hitzewarnung bis zu gefährdeten Menschen",
+      "Hitzeschutzvorgaben für Pflegeheime und Krankenhäuser",
+      "Finanzierung baulichen Hitzeschutzes in Pflegeheimen und Krankenhäusern",
+      "Beratung und aufsuchende Hilfe für gefährdete Menschen bei Hitze",
+      "Kühle Orte und Trinkwasser im öffentlichen Raum",
+      "Hitzeschutz am Arbeitsplatz (Arbeitsschutz)"
+    ],
+    "1803": [
+      "Förderung von Stadtgrün und Straßenbäumen",
+      "Bauvorgaben zum Hitzeschutz an Gebäuden (Begrünung, Verschattung, Wärmeschutz)",
+      "Förderung von Hitzeschutz an Gebäuden",
+      "Grünflächen und Kaltluftschneisen in der Stadtplanung"
+    ],
+    "1804": [
+      "Flächenverbrauch für Siedlung und Verkehr (Obergrenze, Bauland)",
+      "Förderung von Entsiegelung und Schwammstadt",
+      "Entsiegelungs- und Versickerungspflichten beim Bauen",
+      "Niederschlagswassergebühr nach versiegelter Fläche",
+      "Ausbau von Kanalisation und Regenrückhaltebecken",
+      "Starkregen-Gefahrenkarten und kommunales Starkregenrisikomanagement"
+    ],
+    "1805": [
+      "Bauverbot in Überschwemmungsgebieten (Ausnahmen)",
+      "Festsetzung von Überschwemmungs- und Risikogebieten",
+      "Technischer Hochwasserschutz (Deiche, Polder, Rückhaltebecken)",
+      "Naturnaher Hochwasserschutz (Auen, Deichrückverlegung, Retentionsflächen)",
+      "Schnellere Planung und Genehmigung von Hochwasserschutzanlagen",
+      "Rückbau oder Umsiedlung aus Überschwemmungsgebieten",
+      "Förderung des Objektschutzes an Gebäuden",
+      "Pflichten zur Bauvorsorge in Hochwassergebieten"
+    ],
+    "1806": [
+      "Pflichtversicherung gegen Elementarschäden",
+      "Angebotspflicht mit Abwahlmöglichkeit (Opt-out)",
+      "Staatliche Rückversicherung für Elementarschäden",
+      "Prämienrabatte oder Auflagen für Vorsorge am Gebäude",
+      "Zuschüsse oder Steuervorteile für Versicherungsprämien",
+      "Information und Beratung zum Versicherungsschutz",
+      "Staatshilfen nach Schäden für Unversicherte (gewähren oder ausschließen)"
+    ]
+  },
   "suchbegriffe": {
     "1801": {
       "Erwärmung begrenzen, Emissionen senken": [
@@ -127,7 +207,28 @@
         "kohlekraft",
         "abscheidung",
         "wiedervernässung",
-        "aufforstung"
+        "aufforstung",
+        "photovoltaik",
+        "solarpflicht",
+        "solardach",
+        "erneuerbare-energien-gesetz",
+        "bürgerenergie",
+        "windenergiegebiet",
+        "abstandsregel",
+        "netzausbau",
+        "stromspeicher",
+        "batteriespeicher",
+        "gaskraftwerk",
+        "kraftwerksstrategie",
+        "kernfusion",
+        "fusionsreaktor",
+        "co2-speicher",
+        "co₂-speicher",
+        "carbon capture",
+        "moorschutz",
+        "waldumbau",
+        "düngeverordnung",
+        "methan"
       ],
       "Hitzeanpassung": [
         "klimaanpassung",
@@ -136,6 +237,36 @@
         "klimawandel",
         "erderwärmung",
         "klimaresilien"
+      ],
+      "Wärme, Verkehr und Industrie": [
+        "wärmeplanung",
+        "wärmenetz",
+        "fernwärme",
+        "energetische sanierung",
+        "sanierungspflicht",
+        "gebäuderichtlinie",
+        "energieeffizienz",
+        "flottengrenzwert",
+        "elektroauto",
+        "e-auto",
+        "elektromobilität",
+        "ladeinfrastruktur",
+        "ladesäule",
+        "tempolimit",
+        "deutschlandticket",
+        "e-fuels",
+        "biokraftstoff",
+        "wasserstoff",
+        "elektrolyse",
+        "dienstwagen",
+        "dieselprivileg",
+        "kerosin",
+        "klimaschädliche subvention",
+        "umweltschädliche subvention",
+        "grenzausgleich",
+        "ets 2",
+        "ets2",
+        "ets-2"
       ]
     },
     "1802": {
@@ -145,7 +276,10 @@
         "trinkwasserbrunnen",
         "kühlräume",
         "kühle orte",
-        "tropennacht"
+        "tropennacht",
+        "hitzeschutzplan",
+        "arbeitsschutz",
+        "aufsuchend"
       ]
     },
     "1803": {
@@ -161,12 +295,15 @@
         "kaltluft",
         "verschattung",
         "wärmeinsel",
-        "stadtklima"
+        "stadtklima",
+        "baumpflanz",
+        "fassadenbegrünung"
       ],
       "Bauvorschriften und Gebäudehitzeschutz": [
         "sommerlicher wärmeschutz",
         "außenverschattung",
-        "kühlung"
+        "kühlung",
+        "hitzeschutz"
       ],
       "Nachverdichtung nicht bremsen": [
         "nachverdichtung",
@@ -180,7 +317,10 @@
         "schwammstadt",
         "flächenverbrauch",
         "flächenfraß",
-        "flächenneuinanspruchnahme"
+        "flächenneuinanspruchnahme",
+        "flächenspar",
+        "niederschlagswasser",
+        "gesplittete"
       ],
       "Technischer Rückhalt, Kanal und Speicher": [
         "regenwasser",
@@ -188,7 +328,9 @@
         "starkregen",
         "kanalisation",
         "regenrückhalt",
-        "abwasser"
+        "abwasser",
+        "starkregengefahr",
+        "starkregenrisiko"
       ],
       "Bauland ausweisen, Bauen nicht verteuern": [
         "baulandausweisung",
@@ -205,7 +347,10 @@
         "retention",
         "flussauen",
         "auenschutz",
-        "deichrückverlegung"
+        "deichrückverlegung",
+        "risikogebiet",
+        "umsiedlung",
+        "absiedlung"
       ],
       "Technischer Hochwasserschutz": [
         "hochwasser",
@@ -214,7 +359,8 @@
         "rückhaltebecken",
         "überflutung",
         "flutkatastrophe",
-        "ahrtal"
+        "ahrtal",
+        "planungsbeschleunigung"
       ],
       "Bauvorsorge der Eigentümer": [
         "objektschutz",
@@ -233,14 +379,16 @@
       ],
       "Rückversicherung, Prävention": [
         "rückversicherung",
-        "versicherungsschutz"
+        "versicherungsschutz",
+        "versicherungsprämie"
       ],
       "Freiwillige Versicherung, staatliche Hilfen": [
         "soforthilfe",
         "aufbauhilfe",
         "fluthilfe",
         "katastrophenhilfe",
-        "eigenverantwortung"
+        "eigenverantwortung",
+        "unversichert"
       ]
     }
   }
