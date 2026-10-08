@@ -16,7 +16,7 @@ Du bist Koordination wie in `/thema-erfassen` (liest keine Programme, vergibst k
 
 **Mehrere Themen** (durch „|“ getrennt): Schritte 1–2 je Thema, in Schritt 3 je Thema die Arbeitsdatei, dann ein gemeinsamer Lauf mit allen Arbeitsdateien (ein Agent je Programm für alle Themen).
 
-**Zusammen mit neuen Themen** (aus `/liste-ausfuehren`): nur Schritte 1–2 und die Arbeitsdatei aus Schritt 3; erfasst wird im selben Lauf wie die neuen Themen (`/thema-erfassen` mit allen Arbeitsdateien), damit kein Programm zweimal gelesen wird.
+**Zusammen mit neuen Themen** (aus `/liste-ausfuehren`): nur Schritte 1–2 und die Arbeitsdatei aus Schritt 3; erfasst wird im selben Lauf wie die neuen Themen (`/thema-erfassen` mit allen Arbeitsdateien) – ein Durchgang der Sammelbefehle, eine Bewertungsrunde.
 
 ## 1. Gibt es den Lösungsweg schon?
 

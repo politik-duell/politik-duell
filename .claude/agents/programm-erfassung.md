@@ -82,7 +82,7 @@ Dann prüfen:
 npm run -s entwurf:programm-pruefen '--' <Ergebnisdatei>
 ```
 
-Das Skript prüft Felder, Längen, Ebenen, Zahlen, Bündel und **ob jedes Zitat auf der angegebenen PDF-Seite steht**. Bei „Fehler“ korrigierst du die Datei und prüfst erneut, bis es durchläuft. Meldet es „Bündel … schon bei Maßnahme …“, prüfe, ob es wirklich dieselbe Art Zusage ist; wenn nicht, gilt Schritt 6 (ohne `buendel` oder `neue_buendel`) – nie zusammenfassen. „Hinweis“ prüfst du an der Stelle (etwa: Zitat beginnt klein → Einleitung mitzitieren) und änderst nur, wenn der Hinweis zutrifft.
+Das Skript prüft Felder, Längen, Ebenen, Zahlen, Bündel und **ob jedes Zitat auf der angegebenen PDF-Seite steht**. Bei „Fehler“ korrigierst du die Datei und prüfst erneut, bis es durchläuft. Meldet es „Bündel … schon bei Maßnahme …“, prüfe, ob es wirklich dieselbe Art Zusage ist; wenn nicht, gilt Schritt 6 (ohne `buendel` oder `neue_buendel`) – nie zusammenfassen. „Hinweis“ prüfst du an der Stelle (etwa: Zitat beginnt klein → Einleitung mitzitieren) und änderst nur, wenn der Hinweis zutrifft. „Bündel ohne Maßnahme“: je genanntes Bündel noch einmal gezielt im Text suchen (Begriffe der Richtung, Kapitel des Bereichs); was du findest, erfasst du nach Schritt 6, sonst bleibt es leer.
 
 ## Was du zurückgibst
 

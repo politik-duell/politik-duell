@@ -17,10 +17,10 @@ Du bist Koordination: Du liest keine Programme, vergibst keine Werte und schreib
 `npm run -s liste:auswahl -- <datei>` prüft die Tabelle und zählt die bestätigten Aufträge. Die Blöcke laufen in dieser Reihenfolge, jeweils nach dem genannten Skill (lies dessen `SKILL.md` und folge ihm), im selben Zweig mit eigenen Commits:
 
 1. **Haltungen:** `/haltung-anlegen --liste <datei>` (Vorschläge aus `liste:auswahl -- <datei> --art haltung`), danach `/haltung-erfassen` für alle neuen IDs in einem Lauf (höchstens 15 je Lauf).
-2. **Themen und Forderungen** – ein Block, ein Sammeldurchgang, damit jedes Programm einmal gelesen wird:
+2. **Themen und Forderungen** – ein Block, ein gemeinsamer Erfassungslauf:
    1. `/thema-anlegen` mit allen Namen aus `--art thema` (durch „;“ getrennt) – Phase A mit eigenem Commit.
    2. `/forderung-erfassen` für alle Zeilen von `--art forderung` (je Zeile ein Thema mit seinen Forderungen, Themen durch „|“ getrennt), aber nur bis zur Arbeitsdatei (dort „Zusammen mit neuen Themen“).
-   3. `/thema-erfassen` für die neuen Themen-IDs **und** die Nachträge in einem Lauf („Mehrere Themen“): ein Sammelauftrag und ein Agent je Programm für alles, ab `zusammenfuehren` je Thema.
+   3. `/thema-erfassen` für die neuen Themen-IDs **und** die Nachträge in einem Lauf („Mehrere Themen“): dieselben Sammelbefehle für alle, je Programm und Thema ein Agent.
    Ohne neue Themen oder ohne Forderungen entfällt der jeweilige Teil.
 3. **Prompt-Evaluation:** `npm run -s liste:auswahl -- <datei> --evaluation` liefert je bestätigter Zeile Art und erwartete Antwort. In `docs/prompt-evaluation.md` kommt ein Abschnitt (Datum, Art der Quelle ohne Namen) mit diesen Zeilen, aber die Äußerung **umschrieben**: der Kern in eigenen, sachlichen Worten, so dass die Einordnung erkennbar bleibt – keine Parolen, Beleidigungen, Symbole oder antisemitischen Behauptungen im Wortlaut, keine Namen von Personen („Abwertung einer Gruppe wegen ihrer Herkunft mit Ausweisungsforderung“ statt der Parole). Kommt die Liste überwiegend aus einem politischen Lager, das dort vermerken – die Evaluation braucht Äußerungen aus allen Lagern.
 

@@ -6,7 +6,7 @@
 // Erwartet die Erfassung (thema_id) als erfassung.json im Arbeitsordner (eine Ebene über protokoll/).
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { basename, join } from 'node:path'
-import { kurzbericht, programmName, pruefeProgramm, TREFFER_OHNE_MASSNAHME, vorgeschlageneUrsachen, zitatHinweise, type ErfasstesProgramm, nachtragUrsachen } from '../entwurf.ts'
+import { kurzbericht, offeneBuendel, programmName, pruefeProgramm, TREFFER_OHNE_MASSNAHME, vorgeschlageneUrsachen, zitatHinweise, type ErfasstesProgramm, nachtragUrsachen } from '../entwurf.ts'
 import { fundstellen, zulaessigeUrsachen } from './auftrag-text.ts'
 import { pruefeDatenordner } from '../katalog-laden.ts'
 import { erfassungsSeiten, lokalePdfs } from '../programme.ts'
@@ -91,6 +91,7 @@ if (seiten) {
       hinweise.push(`nicht_erfasst ${u}: keine der genannten Seiten hat einen Treffer zu dieser Ursache – Fundstellen aus dem Auftrag gelesen?`)
   }
 }
+hinweise.push(...offeneBuendel(erfassung, p, zulaessigeUrsachen(katalog, erfassung.thema_id, p.land ?? null, nachtragUrsachen(erfassung)).map((u) => u.id)))
 const gesehen = new Map<string, number>()
 for (const [j, m] of massnahmen.entries()) {
   const was = `Maßnahme ${j + 1}`

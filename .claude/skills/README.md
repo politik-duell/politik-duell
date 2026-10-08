@@ -15,14 +15,14 @@ flowchart TD
     subgraph T["Themen"]
         T1["/thema-anlegen<br/>Programme gesperrt · Agent ursachen-recherche<br/>Ursachen, Perspektivenprüfung, Leitfaden mit Regeln und Suchbegriffen"]
         T2["KI-Freigabe · eigener Commit"]
-        T3["/thema-erfassen<br/>Leitfaden vollständig? (entwurf:auftrag)<br/>je Programm ein Agent programm-erfassung für alle Themen und Nachträge<br/>(entwurf:sammelauftrag) · Rückfragen nur bei Skriptfehlern"]
+        T3["/thema-erfassen<br/>Leitfaden vollständig? (entwurf:auftrag)<br/>je Programm und Thema ein Agent programm-erfassung<br/>Themen und Nachträge in einem Lauf · Rückfragen nur bei Skriptfehlern"]
         T4["entwurf:blind → Agent blind-bewertung<br/>ohne Parteinamen: Werte, Instrumente, Zuordnung"]
         T5["entwurf:eintragen · Prüfungen · Archiv · Pull Request"]
         T1 --> T2 --> T3 --> T4 --> T5
     end
     subgraph F["Forderungen"]
         F1["/forderung-erfassen<br/>npm run instrumente: schon vorhanden?"]
-        F2["neue Suchbegriffe im Leitfaden<br/>Nachtrag nur in erfassten Programmen<br/>mit neuen Themen: gemeinsamer Sammeldurchgang"]
+        F2["neue Suchbegriffe im Leitfaden<br/>Nachtrag nur in erfassten Programmen<br/>mit neuen Themen: ein gemeinsamer Lauf"]
         F1 --> F2 --> T3
     end
     subgraph H["Haltungen"]
@@ -55,7 +55,8 @@ flowchart TD
 - Modelle fest in den Agentenbeschreibungen: Erfassung `sonnet`, Recherche, Bewertung und Einordnung `opus`. Die Koordination startet vor allem Skripte und läuft deshalb mit `sonnet` (`model:` im Kopf von `/liste-ausfuehren` und den Unterskills); Regeln, Suchbegriffe und verwandte Themen liefern die Recherche-Agenten, die Koordination überträgt sie nur. Nur `/liste-einordnen` urteilt selbst und läuft mit dem Modell der Sitzung.
 - Sammelbefehle: `entwurf:lauf -- vorab | auftraege | erfasst | blind | bewertet` erledigt einen Schritt für alle Themen eines Laufs – fünf Aufrufe statt rund 16 je Thema.
 - Kurze Überblicke: `themen:ueberblick -- --kurz` (eine Zeile je Thema) und `-- --haltungen` (ID und Frage) statt ganzer Dateien.
-- Jedes Programm einmal je Lauf: mehrere Themen in `/thema-erfassen` und Nachträge aus `/forderung-erfassen` laufen in einem Sammeldurchgang, ein Erfassungs-Agent je Programm für alle (`entwurf:sammelauftrag`); bewertet wird weiter je Thema.
+- Ein Lauf für alle Themen: mehrere Themen in `/thema-erfassen` und Nachträge aus `/forderung-erfassen` laufen gemeinsam durch die Sammelbefehle, je Programm und Thema ein Erfassungs-Agent, bis zu sieben gleichzeitig. Sammelaufträge (ein Agent je Programm für alle Themen, `--sammel`) sind kein Standard mehr: Im Vergleichslauf (Themen 18 und 30, sechs Bundesprogramme) kosteten sie 806.752 statt 580.227 Tokens und 307 statt 80 Sekunden – die Agenten lesen gezielt statt das ganze Programm, und der Kontext des ersten Themas wächst im zweiten mit.
+- Bereiche als Hebel-Checkliste: Bündel nach Bereichen (etwa „Verkehr und Antriebe“) erfasst ein Einzelagent oft nur einmal je Bereich (Thema 18: 68 statt 123 Maßnahmen); als `hebel` beantwortet jedes Programm jeden Hebel. `entwurf:auftrag` weist darauf hin, die Selbstprüfung nennt leere Bündel.
 - Leitfaden vor dem Lesen vollständig: Fehlt einer Ursache eine Regel, kostet das später eine Rückfrage an jedes Programm (Thema 18: mehr Tokens als die Erfassung selbst).
 - Ein Testlauf je Block (`npm test -- --reporter=dot`) am Ende; Phase-A-Schritte prüfen nur mit `daten:pruefen`.
 - Haltungen gebündelt: sieben Erfassungs-Agenten und ein Einordnungs-Agent je Lauf, gleich wie viele Haltungen (bis 15); jedes Programm wird einmal gelesen.

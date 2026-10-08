@@ -16,9 +16,10 @@ describe('Sammelbefehle (entwurf:lauf)', () => {
     ])
   })
 
-  it('legt bei mehreren Themen Sammelaufträge an, bei einem nicht', () => {
-    expect(zeilen('auftraege').at(-1)).toBe('entwurf:sammelauftrag .cache/entwurf/38/erfassung.json .cache/entwurf/2/erfassung.json')
-    expect(plane('auftraege', themen.slice(0, 1), { auswahl: [] }).map((b) => b.skript)).toEqual(['entwurf:auftrag'])
+  it('legt Einzelaufträge an, Sammelaufträge nur mit --sammel und mehreren Themen', () => {
+    expect(zeilen('auftraege').map((x) => x.split(' ')[0])).toEqual(['entwurf:auftrag', 'entwurf:auftrag'])
+    expect(plane('auftraege', themen, { auswahl: [], sammel: true }).at(-1)).toEqual({ skript: 'entwurf:sammelauftrag', args: ['.cache/entwurf/38/erfassung.json', '.cache/entwurf/2/erfassung.json'] })
+    expect(plane('auftraege', themen.slice(0, 1), { auswahl: [], sammel: true }).map((b) => b.skript)).toEqual(['entwurf:auftrag'])
   })
 
   it('prüft alle Bewertungen, bevor das erste Thema eingetragen wird, und testet einmal am Ende', () => {
@@ -36,7 +37,7 @@ describe('Sammelbefehle (entwurf:lauf)', () => {
     expect(leseArgumente(['auftraege', 'a.json', 'b.json', '--land', 'BE', 'MV', '--lokal', 'pdf'])).toEqual({
       schritt: 'auftraege',
       pfade: ['a.json', 'b.json'],
-      optionen: { auswahl: ['--land', 'BE', 'MV'], lokal: 'pdf', bewertungFertig: false },
+      optionen: { auswahl: ['--land', 'BE', 'MV'], lokal: 'pdf', bewertungFertig: false, sammel: false },
     })
     expect(leseArgumente(['los', 'a.json'])).toHaveProperty('fehler')
     expect(leseArgumente(['blind'])).toHaveProperty('fehler')

@@ -14,7 +14,7 @@ Du bist die **Koordination**: Du startest Skripte und Agenten und prüfst, ob di
 
 Alle Befehle **führst du aus** (`npm run -s …`), die Skripte musst du nicht lesen. Arbeitsordner: `.cache/entwurf/<ID>/`. Lange Ausgaben stehen in Dateien – hole sie nicht in deinen Kontext, wenn die Zahlen der Skriptausgabe genügen. Windows: [reference/windows.md](reference/windows.md). Fehlermeldungen: [reference/fehlerbilder.md](reference/fehlerbilder.md).
 
-Bund und Länder in einem Durchgang (ohne `--bund`/`--land` laufen alle Programme; Landesprogramme nur, wenn das Thema Landesursachen hat). **Mehrere Themen** – auch Nachträge aus `/forderung-erfassen`, deren Arbeitsdatei mit `nachtrag` schon steht – laufen **gemeinsam**: jedes Programm wird einmal gelesen, ab dem Zusammenführen geht es je Thema weiter, die Bewertung mischt keine Themen.
+Bund und Länder in einem Durchgang (ohne `--bund`/`--land` laufen alle Programme; Landesprogramme nur, wenn das Thema Landesursachen hat). **Mehrere Themen** – auch Nachträge aus `/forderung-erfassen`, deren Arbeitsdatei mit `nachtrag` schon steht – laufen **gemeinsam** durch dieselben Schritte; je Programm und Thema ein Agent, die Bewertung mischt keine Themen.
 
 Jeder Schritt ist **ein** Befehl für alle Themen des Laufs: `npm run -s entwurf:lauf '--' <schritt> <Arbeitsdateien>` startet die Einzelskripte nacheinander und bricht beim ersten Fehler ab (Ausgabe des Skripts darüber). Nach dem Beheben denselben Schritt erneut starten. `<Arbeitsdateien>` = `.cache/entwurf/<ID>/erfassung.json …`, im Folgenden kurz `$E` – im Befehl immer ausschreiben (die Shell merkt sich keine Variablen zwischen Aufrufen).
 
@@ -34,15 +34,15 @@ Prüft die Freigabe (`ursachen:freigegeben --gegen HEAD`: `freigabe` auch mit `a
 npm run -s entwurf:lauf '--' auftraege $E
 ```
 
-Legt je Thema die Aufträge an, bei mehreren Themen zusätzlich die Sammelaufträge (`.cache/entwurf/sammel/auftraege/`). `NICHT GELADEN` → „Programm nicht erreichbar“ unten. Lehnt der Schritt ab, weil einer Ursache eine Regel oder Suchbegriffe fehlen: wie oben unter Phase-A-Sperre ergänzen. Meldet er einen Begriff bei mehreren Ursachen, prüfe, ob die Regeln die Fundstellen eindeutig zuordnen; sonst gemeinsame Regel oder `gekoppelt` – jetzt, nicht als Rückfrage an jedes Programm.
+Legt je Thema die Aufträge an. (`'--sammel'` legt zusätzlich Sammelaufträge an – ein Agent je Programm für alle Themen. Nur für Vergleichsläufe: Im Vergleichslauf mit den Themen 18 und 30 brauchten sie 39 % mehr Tokens und fast viermal so lange wie Einzelaufträge.) `NICHT GELADEN` → „Programm nicht erreichbar“ unten. Lehnt der Schritt ab, weil einer Ursache eine Regel oder Suchbegriffe fehlen: wie oben unter Phase-A-Sperre ergänzen. Meldet er einen Begriff bei mehreren Ursachen, prüfe, ob die Regeln die Fundstellen eindeutig zuordnen; sonst gemeinsame Regel oder `gekoppelt` – jetzt, nicht als Rückfrage an jedes Programm. Meldet er eine Ursache mit vielen Bündeln ohne Hebel-Checkliste: Sind die Bündel Bereiche (etwa „Verkehr und Antriebe“) statt einzelner Instrumente, die Hebel je Bereich unter Phase-A-Sperre als `hebel` ergänzen (wie oben); sonst weiter.
 
 ## 2. Erfassen
 
-Je Auftrag – bei mehreren Themen je **Sammel**auftrag – ein Agent `programm-erfassung`, bis zu sieben gleichzeitig. Das Modell steht in der Agentenbeschreibung – **keinen** Parameter `model` setzen, damit alle Programme mit demselben Modell laufen. Auftrag nur dieser Satz:
+Je Auftrag ein Agent `programm-erfassung`, bis zu sieben gleichzeitig. Das Modell steht in der Agentenbeschreibung – **keinen** Parameter `model` setzen, damit alle Programme mit demselben Modell laufen. Auftrag nur dieser Satz:
 
 > Erledige den Erfassungsauftrag `.cache/entwurf/<ID>/auftraege/<Name>.md` nach `.claude/agents/programm-erfassung.md`.
 
-bzw. „Erledige den Sammelauftrag `.cache/entwurf/sammel/auftraege/<Name>.md` nach `.claude/agents/programm-erfassung.md`.“ Der Agent prüft sich selbst und speichert je Thema `programme/<Name>.json`. Fehlt eine Datei, denselben Agenten (SendMessage) die Fehler beheben lassen, mit Thema. Nach jedem Agenten eine Zeile in `protokoll/kosten.md` (des ersten Themas, mit den Themen-IDs): `| Agent | Programm | Tokens | Dauer |`.
+Der Agent prüft sich selbst und speichert `programme/<Name>.json`. Fehlt eine Datei, denselben Agenten (SendMessage) die Fehler beheben lassen. Nach jedem Agenten eine Zeile in `protokoll/kosten.md` seines Themas: `| Agent | Programm | Tokens | Dauer |`.
 
 ```bash
 npm run -s entwurf:lauf '--' erfasst $E
