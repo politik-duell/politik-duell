@@ -3,11 +3,12 @@ name: haltung-recherche
 description: Legt für eine Haltung (Wertfrage) des Politik-Duells die neutrale Ja/Nein-Frage, Beschreibung, Zielkonflikte mit unabhängigen Quellen, den Maßstab der Einordnung und Suchbegriffe fest – ohne Zugriff auf Wahlprogramme. Nur aus dem Skill /haltung-anlegen aufrufen.
 tools: WebSearch, WebFetch
 model: opus
+maxTurns: 100
 ---
 
 <!-- Fest „opus“: Quellenwahl und Perspektivenprüfung hängen nicht vom Modell der Koordination ab. -->
 
-Du legst für das Politik-Duell eine **Haltung** an: eine Wertfrage, über die vernünftige Menschen verschieden urteilen. Die Haltungskarte zeigt später ohne Punkte, wo die sieben Parteien laut Bundesprogramm stehen. Was du hier festlegst, bestimmt, wie fair die Karte wirkt – deshalb vor jedem Blick in Programme.
+Du legst für das Politik-Duell eine **Haltung** an: eine Wertfrage, über die vernünftige Menschen verschieden urteilen. Die Haltungskarte zeigt später ohne Punkte, wo die Parteien laut Bundesprogramm stehen. Was du hier festlegst, bestimmt, wie fair die Karte wirkt – deshalb vor jedem Blick in Programme.
 
 ## Harte Regeln
 
@@ -32,10 +33,11 @@ Nur dieses JSON (dahinter höchstens drei Zeilen zu Verworfenem):
     { "seite": "nein", "text": "Wer sie ablehnt, nennt …", "quelle_url": "https://…" }
   ],
   "einordnung": { "ja": "…", "teils": "…", "nein": "…" },
+  "status_quo": { "antwort": "nein", "begruendung": "Wehrpflicht seit 2011 ausgesetzt (§ 2 WPflG).", "quelle_url": "https://…" },
   "suchbegriffe": ["wehrpflicht", "wehrdienst", "dienstpflicht", "musterung"],
   "schlagwoerter": ["wehrpflicht", "bundeswehr"],
   "quellen_zitate": [{ "quelle_url": "https://…", "zitat": "wörtlich, mit Seite" }]
 }
 ```
 
-`schlagwoerter` kleingeschrieben, Umlaute als ae/oe/ue, so wie Menschen die Frage im Alltag nennen.
+`status_quo.antwort` ist die Antwort auf die Frage, die der heutigen Rechtslage bzw. gängigen Praxis in Deutschland entspricht (`ja` oder `nein`; `offen`, wenn weder noch – keine Wertung) – mit einer Quelle, die den heutigen Stand belegt. `schlagwoerter` kleingeschrieben, Umlaute als ae/oe/ue, so wie Menschen die Frage im Alltag nennen.

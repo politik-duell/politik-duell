@@ -1683,6 +1683,181 @@
           "ki_entwurf": true
         }
       ]
+    },
+    {
+      "partei_id": 18,
+      "durchsucht_fuer": [601, 602, 603, 604, 605, 606],
+      "massnahmen": [
+        {
+          "id": 8490,
+          "beschreibung": "Spezialisierte Kammern an den Verwaltungsgerichten für Asylprozesse, um Verfahren zu beschleunigen",
+          "ursachen_ids": [602],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Spezialisierte Asylkammern können Verfahren beschleunigen (NRW meldet kürzere Dauer, zusammen mit mehr Personal); § 83 AsylG sieht sie aber schon vor, viele Gerichte haben sie. Einrichtung und Richterstellen liegen bei den Ländern.",
+          "zitat": "Kammern für Asylprozesse: Spezialisierte Kammern an den Verwaltungsgerichten beschleunigen die Bearbeitung von Asylfällen und machen sie gerechter.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=136",
+          "evidenz": "offen",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8491,
+          "beschreibung": "Bundesweite kostenlose Asylberatung zur Begleitung der Asylsuchenden und Beschleunigung der Verfahren",
+          "ursachen_ids": [602],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Beratung kann Anhörungen vorbereiten und Fehlentscheidungen vermeiden; die BAMF-Evaluation 2026 konnte eine Wirkung auf Verfahrensdauer und Klagen mangels Daten nicht messen. Der Bund fördert die Beratung seit 2023 (§ 12a AsylG).",
+          "zitat": "Kostenlose Asylberatung: Es wird eine bundesweite, qualifizierte und kostenlose Beratung zur Begleitung von Asylsuchenden und zur Beschleunigung von Asylverfahren eingeführt.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=136",
+          "beleg_studie_url": "https://www.asyl.net/view/evaluation-der-behoerdenunabhaengigen-asylverfahrensberatung",
+          "evidenz": "offen",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8492,
+          "instrument": 6110,
+          "beschreibung": "Arbeitserlaubnis vom ersten Tag an, unabhängig vom Aufenthaltsstatus und vom einzelnen Arbeitgeber",
+          "ursachen_ids": [603],
+          "zitat": "Bedingungslose Arbeitserlaubnis: Zugewanderte Personen erhalten vom ersten Tag an eine Arbeitserlaubnis, unabhängig von ihrem Aufenthaltsstatus.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=51",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8493,
+          "instrument": 6101,
+          "beschreibung": "Abschlüsse werden nach Gleichwertigkeit des Berufsbildes im Ausbildungsland anerkannt statt individuell geprüft",
+          "ursachen_ids": [603],
+          "zitat": "Beschleunigte Anerkennung von Abschlüssen: Die Anerkennung von Bildungs- und Berufsabschlüssen erfolgt nicht mehr individuell, sondern auf der Grundlage der Gleichwertigkeit des Berufsbildes im Ausbildungsland.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=51",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8494,
+          "instrument": 6107,
+          "beschreibung": "Kostenlose Deutschkurse für alle Zielgruppen unabhängig vom Aufenthaltsstatus",
+          "ursachen_ids": [603],
+          "zitat": "Kostenlose Deutschkurse: Für alle Zielgruppen, unabhängig vom Aufenthaltsstatus, werden kostenlose Deutschkurse angeboten.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=138",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8495,
+          "instrument": 6109,
+          "beschreibung": "Dublin-Verordnung abschaffen und Asylsuchende nach BIP, Bevölkerungsdichte und Größe auf die Länder verteilen",
+          "ursachen_ids": [605],
+          "zitat": "Gerechte Verteilung von Asylsuchenden: Die Dublin-III-Verordnung wird zugunsten einer Verteilung nach Kriterien wie BIP, Bevölkerungsdichte und Gesamtgröße eines Landes abgeschafft.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=135",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8496,
+          "instrument": 6108,
+          "beschreibung": "Chancenjahr: Menschen mit abgelehntem Asylantrag können sich durch ein Jahr Arbeit einen Aufenthaltstitel erarbeiten",
+          "ursachen_ids": [606],
+          "zitat": "Das Chancenjahr: Menschen mit abgelehntem Asylantrag erhalten die Möglichkeit, ein Jahr lang zu arbeiten und sich durch Beschäftigung das Recht auf einen Aufenthaltstitel zu erarbeiten.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=138",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8497,
+          "instrument": 6108,
+          "beschreibung": "Dauerhafter Aufenthaltsstatus, wenn eine Abschiebung drei Jahre lang nicht vollzogen wurde und Integrationsbereitschaft gezeigt wurde",
+          "ursachen_ids": [606],
+          "zitat": "Personen, bei denen eine Abschiebung innerhalb von drei Jahren nicht vollzogen wurde, können einen dauerhaften Aufenthaltsstatus erhalten, wenn sie die Abschiebung nicht aktiv verhindert und durch Integrationsmaßnahmen ihre Bereitschaft zur gesellschaftlichen Teilhabe gezeigt haben.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf#page=139",
+          "stand": "2026-10-07",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [601],
+      "massnahmen": [
+        {
+          "id": 8602,
+          "beschreibung": "Einheitlicher Rahmenvertrag mit Qualitätskriterien und verlässlicher Refinanzierung für Anbieter, die den Bezirken Unterbringungsplätze bereitstellen.",
+          "ursachen_ids": [601],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ein Rahmenvertrag mit verlässlicher Refinanzierung macht die Bereitstellung von Plätzen planbarer und kann teure Notbeschaffung vermeiden; zusätzliche Plätze schafft er nicht direkt, und höhere Qualitätsvorgaben können Kosten erhöhen. Das Land kann ihn selbst regeln.",
+          "zitat": "Wir schaffen einen einheitlichen Rahmenvertrag für Akteure, die Unterbringungsplätze für Bezirke bereitstellen. Der Vertrag beinhaltet klare Qualitätskriterien, Beschwerderechte sowie eine transparente und verlässliche Refinanzierung.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=107",
+          "beleg_studie_url": "https://www.bpb.de/themen/migration-integration/kurzdossiers/kommunale-migrations-und-fluechtlingspolitik/577376/kommunale-unterbringung-von-gefluechteten-in-deutschland/",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8603,
+          "beschreibung": "Feste Stellen für die Belange Zugewanderter in Ämtern, darunter Landesamt für Einwanderung und Landesamt für Flüchtlingsangelegenheiten.",
+          "ursachen_ids": [601],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Zusätzliche feste Stellen, auch in Einwanderungs- und Flüchtlingsbehörden, können Anliegen bündeln und Behörden etwas entlasten; die Überlastung entsteht laut Studien aber auch durch komplexes Recht und schleppende Digitalisierung, und Zahl und Wirkung der Stellen bleiben offen.",
+          "zitat": "In Jugendamt, Sozialamt, Gesundheitsamt, Schulamt, Jobcenter, Bürgeramt sowie in den Landesämtern für Einwanderung (LEA) und für Flüchtlingsangelegenheiten (LAF) schaffen wir feste Stellen, die spezifisch für die Belange von Zugewanderten zuständig sind.",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf#page=105",
+          "beleg_studie_url": "https://www.bertelsmann-stiftung.de/de/unsere-projekte/migration-fair-gestalten/projektnachrichten/studie-auslaenderbehoerden-zwischen-anspruch-und-alltag",
+          "evidenz": "offen",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 18,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [601],
+      "keine_massnahme": {
+        "begruendung": "Kapitel 'Geflüchtete und Zugewanderte gleichberechtigt einbinden' (S. 16-17), 'Freizügigkeit im Schengenraum erhalten' (S. 47-48), 'Starke Kommunen durch gerechte Finanzierung' (S. 23-24), Pflegekräfte-Anerkennung (S. 34) gelesen; nichts setzt an Unterbringungs- oder Behördenkapazitäten bei der Aufnahme an.",
+        "stand": "2026-10-08",
+        "treffer": 25,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 18,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [601],
+      "massnahmen": [
+        {
+          "id": 8604,
+          "instrument": 6118,
+          "beschreibung": "Geflüchtete dezentral statt in großen Sammelunterkünften unterbringen, um Kosten zu senken und Teilhabe früh zu ermöglichen.",
+          "ursachen_ids": [601],
+          "zitat": "Dezentrale Unterbringung statt großer Sammelunterkünfte, um Inklusion zu erleichtern, Kosten zu senken und soziale Teilhabe früh zu ermöglichen",
+          "beleg_programm_url": "https://voltdeutschland.org/storage/assets-sachsen-anhalt/pdf/landtagswahl-2026/wahlprogramm_volt_lv_lsa.pdf#page=135",
+          "stand": "2026-10-08",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
     }
   ]
 }

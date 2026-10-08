@@ -1,6 +1,8 @@
 import { useId } from 'react'
+import { useAnsicht } from '../barrierefrei'
 import { Kreuzfeld } from './Kreuz'
 import { Logo } from './Logo'
+import { useErstesMal } from './erstesMal'
 
 export function Start({
   bereit,
@@ -9,6 +11,7 @@ export function Start({
   ladeFehler,
   onBeispieldaten,
   onStart,
+  lokal = false,
 }: {
   bereit: boolean
   einverstanden: boolean
@@ -16,17 +19,23 @@ export function Start({
   ladeFehler: string | null
   onBeispieldaten: () => void
   onStart: () => void
+  /** Ohne Datenbank und KI (Beispieldaten, Katalog-Fassung): Eingaben verlassen den Browser nicht. */
+  lokal?: boolean
 }) {
   const id = useId()
+  const titel = useAnsicht('')
+  const auftritt = useErstesMal('start')
   return (
-    <main className="start">
+    <main className={auftritt ? 'start start-auftritt' : 'start'}>
       <div className="start-inhalt stimmzettel">
         <div className="start-kopf">
           <div>
-            <h1 className="titel">Politik-Duell</h1>
+            <h1 className="titel" ref={titel}>
+              Politik-Duell
+            </h1>
             <p className="slogan">Versprechen kann jeder.</p>
           </div>
-          <Logo groesse={72} />
+          <Logo groesse={72} animiert={auftritt} />
         </div>
         <p className="erklaerung">
           Zwei Spieler:innen, zwei Parteien, fünf Runden. Nennt echte Alltagsprobleme – das Spiel zeigt, welche Partei
@@ -34,6 +43,8 @@ export function Start({
         </p>
         <p className="start-themen">
           <a href="#/themen">Welche Themen das Spiel schon kennt</a>
+          {' · '}
+          <a href="#/quiz">Programm-Quiz: Wer sagt Ja?</a>
         </p>
         {ladeFehler ? (
           <div className="ladefehler" role="alert">
@@ -42,6 +53,10 @@ export function Start({
               Mit Beispieldaten spielen
             </button>
           </div>
+        ) : lokal ? (
+          <button className="knopf knopf-gross" onClick={onStart} disabled={!bereit}>
+            {bereit ? 'Spiel starten' : 'Lade Spieldaten …'}
+          </button>
         ) : (
           <>
             {/* Ausdrückliche Einwilligung (Art. 9 DSGVO): Eingaben können politische Meinungen erkennen lassen. */}
@@ -64,13 +79,22 @@ export function Start({
             </button>
           </>
         )}
-        <p className="datenschutz">
-          <strong>Datenschutz:</strong> Keine Konten, keine Cookies, keine IP-Adressen, kein Audio. Deine Eingaben
-          ordnet eine KI (Mistral, EU) ein. Gespeichert wird eine anonyme, neutrale Kurzfassung des Problems; endet eine
-          Runde ohne Wertung, sehen wir den Wortlaut zur Prüfung (höchstens 30 Tage). Die
-          Wortwolke im Hintergrund zeigt die Themen, die das Spiel schon werten kann – keine Eingaben.{' '}
-          <a href="#/datenschutz">Mehr erfahren</a>
-        </p>
+        {lokal ? (
+          <p className="datenschutz">
+            <strong>Datenschutz:</strong> Keine Konten, keine Cookies, kein Audio. In dieser Fassung bleiben deine
+            Eingaben in deinem Browser: Eine einfache Stichwortsuche ordnet sie ein, keine KI, nichts wird gesendet oder
+            gespeichert. Die Wortwolke im Hintergrund zeigt die Themen, die das Spiel schon werten kann.{' '}
+            <a href="#/datenschutz">Mehr erfahren</a>
+          </p>
+        ) : (
+          <p className="datenschutz">
+            <strong>Datenschutz:</strong> Keine Konten, keine Cookies, keine IP-Adressen, kein Audio. Deine Eingaben
+            ordnet eine KI (Mistral, EU) ein. Gespeichert wird eine anonyme, neutrale Kurzfassung des Problems; endet eine
+            Runde ohne Wertung, sehen wir den Wortlaut zur Prüfung (höchstens 30 Tage). Die
+            Wortwolke im Hintergrund zeigt die Themen, die das Spiel schon werten kann – keine Eingaben.{' '}
+            <a href="#/datenschutz">Mehr erfahren</a>
+          </p>
+        )}
       </div>
     </main>
   )

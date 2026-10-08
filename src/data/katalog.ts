@@ -279,8 +279,8 @@ export interface SpielbareHaltungen {
 export function spielbareHaltungen(k: Katalog, mitKiEntwurf = false): SpielbareHaltungen {
   const frei = k.haltungen.filter((h) => k.fiktiv || h.freigabe)
   return {
-    haltungen: frei.map(({ id, frage, beschreibung, verwandte_themen, schlagwoerter }) => ({
-      id, frage, beschreibung, verwandte_themen, ...(schlagwoerter ? { schlagwoerter } : {}),
+    haltungen: frei.map(({ id, frage, beschreibung, status_quo, verwandte_themen, schlagwoerter }) => ({
+      id, frage, beschreibung, ...(status_quo ? { status_quo } : {}), verwandte_themen, ...(schlagwoerter ? { schlagwoerter } : {}),
     })),
     positionen: frei.flatMap((h) =>
       h.positionen
@@ -1088,7 +1088,7 @@ export function pruefeKatalog(
       f(ort, 'erwartet ein Objekt')
       continue
     }
-    unbekannteFelder(ort, h, ['id', 'frage', 'beschreibung', 'verwandte_themen', 'zielkonflikte', 'einordnung', 'suchbegriffe', 'positionen', 'freigabe', 'schlagwoerter'])
+    unbekannteFelder(ort, h, ['id', 'frage', 'beschreibung', 'status_quo', 'verwandte_themen', 'zielkonflikte', 'einordnung', 'suchbegriffe', 'positionen', 'freigabe', 'schlagwoerter'])
     const haltung: KatalogHaltung = {
       id: ganzzahl(ort, h, 'id', 1, 32767),
       frage: text(ort, h, 'frage', 160),
@@ -1098,6 +1098,11 @@ export function pruefeKatalog(
       positionen: [],
     }
     if (haltung.frage && !haltung.frage.trim().endsWith('?')) f(ort, '„frage“ ist eine neutrale Ja/Nein-Frage und endet mit „?“')
+    // Heutige Lage: Pflicht ab der Freigabe, denn im Quiz zählt „keine Aussage“ wie diese Antwort (docs/plan-quiz.md).
+    if (h.status_quo === undefined) {
+      if (h.freigabe !== undefined) f(ort, '„status_quo“ fehlt: „ja“ oder „nein“ – die Antwort, die der heutigen Rechtslage bzw. Praxis entspricht („offen“, wenn weder noch)')
+    } else if (h.status_quo === 'ja' || h.status_quo === 'nein' || h.status_quo === 'offen') haltung.status_quo = h.status_quo
+    else f(ort, '„status_quo“ ist „ja“, „nein“ oder „offen“')
     for (const [feld, wert] of [['frage', haltung.frage], ['beschreibung', haltung.beschreibung]] as const)
       if (wert && ohneParteinamen(wert, parteinamen) !== wert) f(ort, `„${feld}“ nennt eine Partei – die Frage beschreibt den Wertkonflikt, nicht wer wo steht`)
     if (haltungIds.has(haltung.id)) f(ort, `Haltungs-ID ${haltung.id} ist doppelt`)
@@ -1162,7 +1167,13 @@ export function pruefeKatalog(
     if (h.suchbegriffe !== undefined) {
       const s = h.suchbegriffe
       if (!Array.isArray(s) || !s.length || s.some((x) => typeof x !== 'string' || !x.trim())) f(ort, '„suchbegriffe“ muss eine nicht leere Liste von Wörtern sein')
-      else haltung.suchbegriffe = s as string[]
+      else {
+        haltung.suchbegriffe = s as string[]
+        for (const b of s as string[]) {
+          const n = suchbegriffInParteinamen(b, parteinamen)
+          if (n) f(ort, `Suchbegriff „${b}“ steckt im Parteinamen „${n}“ – träfe dort fast jede Seite; genauer fassen`)
+        }
+      }
     }
 
     // Positionen der Parteien (Phase B): erst nach der Freigabe, höchstens eine je Partei und Programm.
@@ -1246,7 +1257,7 @@ export function pruefeKatalog(
       haltung.positionen.push(p)
     }
 
-    // „Alle sieben oder keine“: Die Karte erscheint erst, wenn jede Partei eine Position hat.
+    // „Alle oder keine“: Die Karte erscheint erst, wenn jede Partei eine Position hat.
     const fehlend = katalog.parteien.filter((x) => !haltung.positionen.some((p) => p.partei_id === x.id))
     if ((haltung.freigabe || katalog.fiktiv) && fehlend.length)
       warnungen.push(`${ort}: keine Position für ${fehlend.map((x) => `„${x.kurzname}“ (${x.id})`).join(', ')} – die Haltungskarte erscheint erst, wenn alle Parteien erfasst sind`)
@@ -1289,6 +1300,19 @@ export const alsDateien = (module: Record<string, unknown>): Datei[] =>
     .map(([pfad, inhalt]) => ({ pfad: pfad.replace(/^(\.\.\/)+/, ''), inhalt }))
 
 /** Prüft und wirft bei Fehlern – für Stellen, an denen die Daten schon geprüft sein müssen. */
+/**
+ * Steckt ein Suchbegriff in einem Parteinamen („bündnis“ in „Bündnis 90/Die Grünen“, „sozial“ in
+ * „Sozialdemokratische Partei“)? Dann träfe die Suche im Programm dieser Partei fast jede Seite (Kopfzeilen, Selbstnennung)
+ * und begrübe die eigentlichen Stellen – eine Ungleichbehandlung. Gibt den getroffenen Namen zurück, sonst null.
+ */
+export function suchbegriffInParteinamen(begriff: string, parteien: { name: string; kurzname: string }[]): string | null {
+  const norm = (t: string) => t.toLowerCase().replace(/[^\p{L}\p{N}]/gu, '')
+  const b = norm(begriff)
+  if (b.length < 3) return null
+  for (const p of parteien) for (const n of [p.name, p.kurzname]) if (norm(n).includes(b)) return n
+  return null
+}
+
 export function ladeKatalog(parteienDatei: Datei, themenDateien: Datei[], haltungDateien: Datei[] = []): Katalog {
   const { katalog, fehler } = pruefeKatalog(parteienDatei, themenDateien, undefined, undefined, haltungDateien)
   if (fehler.length) throw new Error(`Datenkatalog fehlerhaft (npm run daten:pruefen):\n${fehler.join('\n')}`)

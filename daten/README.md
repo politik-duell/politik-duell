@@ -92,6 +92,9 @@ Zu jedem Programm steht in `parteien.json` die **SHA-256-Prüfsumme** der ausgew
 | 15 | AfD | [Zeit für Deutschland](https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf) | 12. 1. 2025 |
 | 16 | Die Linke | [Alle wollen regieren. Wir wollen verändern.](https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf) | 18. 1. 2025 |
 | 17 | BSW | [Unser Land verdient mehr!](https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf) | 12. 1. 2025 |
+| 18 | Volt Deutschland | [Holen wir uns die Zukunft zurück](https://voltdeutschland.org/storage/assets-btw25/volt-programm-bundestagswahl-2025.pdf) | 16. 1. 2025 (Datum der PDF-Fassung; ein Beschlussdatum ist nicht veröffentlicht) |
+
+**Volt** ist im Fork seit 7. 10. 2026 dabei. Die Positionen zu den Haltungen kommen als Nachtrag dazu (`npm run haltung:auftrag|haltung:blind|haltung:eintragen -- <IDs> --nachtrag 18`): nur das Volt-Programm wird erfasst und ohne Parteinamen eingeordnet, die Positionen der übrigen Parteien bleiben unverändert. Maßnahmen und Landesprogramme von Volt sind noch nicht erfasst.
 
 Seitenanker `#page=N` zählen PDF-Seiten, nicht die gedruckten Seitenzahlen. Die IDs 1–5 waren fiktive Parteien und werden nicht wiederverwendet. Das BSW heißt ab 1. 10. 2026 „Bündnis Soziale Gerechtigkeit und Wirtschaftliche Vernunft“; die Abkürzung bleibt.
 
@@ -368,13 +371,14 @@ Viele Programme schlagen denselben Lösungsweg vor – etwa ein Handyverbot an S
 
 ### `haltungen/NN-name.json` – eine Datei pro Haltung
 
-Eine **Haltung** ist eine Wertfrage, über die man verschieden denken kann, als neutrale Ja/Nein-Frage. Sie bekommt **keine Punkte**: Die Haltungskarte zeigt nur, wo die Parteien dazu stehen (mit Zitat) und welche Ziele gegeneinander stehen (Regeln: [`docs/methode.md`](../docs/methode.md) → „Forderungen und Haltungen“, Plan: [`docs/plan-haltungen.md`](../docs/plan-haltungen.md), Teil B).
+Eine **Haltung** ist eine Wertfrage, über die man verschieden denken kann, als neutrale Ja/Nein-Frage. Sie bekommt **keine Punkte**: Die Haltungskarte zeigt nur, wo die Parteien dazu stehen (mit Zitat) und welche Ziele gegeneinander stehen (Regeln: [`docs/methode.md`](../docs/methode.md) → „Forderungen und Haltungen“, Plan: [`docs/plan-haltungen.md`](../docs/plan-haltungen.md), Teil B). `status_quo` ist die Antwort, die der heutigen Rechtslage bzw. Praxis entspricht (`ja`, `nein` oder `offen`, wenn weder noch; Pflicht ab der Freigabe): Im Quiz zählt `keine_aussage` wie diese Antwort, weil ein Programm ohne Aussage daran nichts ändern will (`docs/plan-quiz.md`); die Tabelle „Heutige Lage je Haltung“ in `docs/haltungen.md` begründet jeden Wert.
 
 ```json
 {
   "id": 1,
   "frage": "Soll es ein generelles Tempolimit auf Autobahnen geben?",
   "beschreibung": "Ein neutraler Satz, worum es geht.",
+  "status_quo": "nein",
   "verwandte_themen": [8],
   "zielkonflikte": [
     { "seite": "ja", "text": "Wer ein Tempolimit will, nennt …", "quelle_url": "https://…" },
@@ -411,6 +415,7 @@ Eine **Haltung** ist eine Wertfrage, über die man verschieden denken kann, als 
 - **Alle sieben oder keine:** Die Karte erscheint erst, wenn jede Partei eine Position hat (sonst Warnung). Weniger als drei Programme mit erkennbarer Position (Aufnahmekriterium) meldet die Prüfung ebenfalls als Warnung.
 - `schlagwoerter` (optional, nur für den Mock ohne KI): Wörter, an denen die Mock-Analyse eine Haltung dieser Frage zuordnet.
 - **IDs:** eigener Nummernkreis 1, 2, … (`npm run daten:id -- --haltung`), nie wiederverwendet; eine entfernte Haltung kommt mit Grund in [`ids.json`](ids.json) → `haltungen_stillgelegt`.
+- **Programm-Quiz:** Aus jeder Haltung, deren sieben Positionen geprüft sind, macht `npm run quiz:erzeugen` eine Quizfrage in `public/quiz/fragen.json` (Regeln: [`docs/plan-quiz.md`](../docs/plan-quiz.md)). Die Datei nicht von Hand ändern – nach einer Änderung an Haltungen neu erzeugen und mit einchecken; die automatische Prüfung meldet eine veraltete Datei.
 
 ### IDs
 

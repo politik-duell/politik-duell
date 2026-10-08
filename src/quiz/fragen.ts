@@ -1,0 +1,96 @@
+import type { HaltungEintrag, HaltungPosition, Partei, Zielkonflikt } from '../data/types.ts'
+import type { QuizFrage, QuizPartei } from './typen.ts'
+
+// Quizfragen aus den Haltungen (docs/plan-quiz.md → „Fragen aus dem Katalog“). Mechanisch, ohne redaktionelle
+// Auswahl: je Haltung höchstens eine Frage, nur wenn alle Bundesprogramme eine Position haben.
+
+const nachId = <T extends { partei_id: number }>(a: T, b: T) => a.partei_id - b.partei_id
+
+/**
+ * Die Frage zu einer Haltung – oder null, wenn eine Partei ohne Position ist oder keine Seite klar vertreten wird.
+ * `positionen` darf auch Landesprogramme und andere Haltungen enthalten; es zählen nur die Bundesprogramme.
+ */
+export function quizFrage(
+  haltung: HaltungEintrag,
+  positionen: HaltungPosition[],
+  zielkonflikte: Zielkonflikt[],
+  parteien: Pick<Partei, 'id'>[],
+): QuizFrage | null {
+  const bund = positionen.filter((p) => p.haltung_id === haltung.id && (p.land ?? null) === null)
+  const je = parteien.map((partei) => bund.find((p) => p.partei_id === partei.id))
+  if (!je.length || je.some((p) => !p)) return null
+  const alle = (je as HaltungPosition[]).sort(nachId)
+  // Keine Aussage heißt: Das Programm will daran nichts ändern – es zählt wie die heutige Lage (`status_quo`).
+  const status_quo = haltung.status_quo === 'ja' || haltung.status_quo === 'nein' ? haltung.status_quo : null
+  const gilt = (p: HaltungPosition) => (p.position === 'keine_aussage' && status_quo ? status_quo : p.position)
+  const mit = (w: string) => alle.filter((p) => gilt(p) === w).map((p) => p.partei_id)
+  const ja = mit('ja')
+  const nein = mit('nein')
+  const teils = mit('teils')
+
+  const gesucht = ja.length ? 'ja' : nein.length ? 'nein' : null
+  if (!gesucht) return null
+  const richtig = gesucht === 'ja' ? ja : nein
+  // Stehen alle auf derselben Seite, gibt es nichts zu raten.
+  if (richtig.length >= alle.length) return null
+  const art = richtig.length === 1 ? 'einzeln' : 'mehrfach'
+
+  return {
+    id: `h${haltung.id}`,
+    haltung_id: haltung.id,
+    frage: haltung.frage,
+    beschreibung: haltung.beschreibung,
+    art,
+    gesucht,
+    status_quo,
+    richtig,
+    neutral: art === 'mehrfach' ? teils : [],
+    positionen: alle.map((p) => ({
+      partei_id: p.partei_id,
+      position: p.position,
+      kurzfassung: p.kurzfassung ?? null,
+      zitat: p.zitat ?? null,
+      beleg_url: p.beleg_programm_url ?? null,
+      begruendung: p.begruendung ?? null,
+    })),
+    zielkonflikte: zielkonflikte
+      .filter((z) => z.haltung_id === haltung.id)
+      .sort((a, b) => (a.seite === b.seite ? 0 : a.seite === 'ja' ? -1 : 1))
+      .map(({ seite, text, quelle_url }) => ({ seite, text, quelle_url })),
+    ki_entwurf: alle.some((p) => p.ki_entwurf),
+  }
+}
+
+/** Alle Fragen, nach Haltungs-ID. */
+export function quizFragen(
+  haltungen: HaltungEintrag[],
+  positionen: HaltungPosition[],
+  zielkonflikte: Zielkonflikt[],
+  parteien: Pick<Partei, 'id'>[],
+): QuizFrage[] {
+  return [...haltungen]
+    .sort((a, b) => a.id - b.id)
+    .map((h) => quizFrage(h, positionen, zielkonflikte, parteien))
+    .filter((f): f is QuizFrage => f !== null)
+}
+
+export const quizParteien = (parteien: Partei[]): QuizPartei[] =>
+  [...parteien]
+    .sort((a, b) => a.id - b.id)
+    .map(({ id, name, kurzname, farbe, programm_url }) => ({ id, name, kurzname, farbe, programm_url }))
+
+/** Anleitung unter der Frage – ein kurzer Satz: was gesucht ist. */
+export function anleitung(f: Pick<QuizFrage, 'art' | 'gesucht'>): string {
+  const wort = f.gesucht === 'ja' ? 'Ja' : 'Nein'
+  if (f.art === 'einzeln') return `Nur eine Partei sagt ${wort}. Welche?`
+  return `Wer sagt ${wort}? Mehrere sind richtig.`
+}
+
+/** Regeln in Stichworten darunter: wie „teils“ und „keine Aussage“ zählen, wie man abgibt. */
+export function anleitungRegeln(f: Pick<QuizFrage, 'art' | 'status_quo'>): string[] {
+  return [
+    ...(f.art === 'mehrfach' ? ['„teils“ zählt nicht'] : ['ein Tipp gibt ab']),
+    ...(f.status_quo ? [`keine Aussage zählt als ${f.status_quo === 'ja' ? 'Ja' : 'Nein'}`] : []),
+  ]
+}
+

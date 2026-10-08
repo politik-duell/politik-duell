@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useAnsicht } from '../barrierefrei'
 import { gesamtpunkte, gespraechsKarten, type Karte, type RundenErgebnis, type Spieler } from '../spiel'
 import { ohneTreffer } from '../logic/ohneTreffer'
 import { punkteText } from '../logic/bewertung'
@@ -8,6 +9,7 @@ import { useDaten, useLandName } from '../data/kontext'
 import { Belege, KI_HINWEIS, NICHT_BLIND } from './Aufloesung'
 import { ForderungsKarte } from './ForderungsKarte'
 import { HaltungsKarte } from './HaltungsKarte'
+import { Konfetti } from './Konfetti'
 import { Kreuz } from './Kreuz'
 import { Logo } from './Logo'
 import { parteiStil } from './stil'
@@ -21,6 +23,7 @@ export function Ende({
   runden: RundenErgebnis[]
   onNeu: () => void
 }) {
+  const titel = useAnsicht('Endstand')
   const [pa, pb] = gesamtpunkte(runden)
   const landName = useLandName()
   const [geteilt, setGeteilt] = useState<string | null>(null)
@@ -52,9 +55,13 @@ export function Ende({
 
   return (
     <main className="seite ende">
+      {/* Konfettiregen für die Seite, die gewonnen hat (bei Gleichstand keiner). */}
+      {sieger && <Konfetti />}
       <div className="ende-kopf">
         <Logo groesse={72} />
-        <h2 className="sr-only">Endstand</h2>
+        <h2 className="sr-only" ref={titel}>
+          Endstand
+        </h2>
         <p className="endstand">
           <span style={parteiStil(spieler[0].partei.farbe)}>{spieler[0].partei.kurzname}</span> {pa} : {pb}{' '}
           <span style={parteiStil(spieler[1].partei.farbe)}>{spieler[1].partei.kurzname}</span>

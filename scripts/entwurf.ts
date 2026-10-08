@@ -5,7 +5,7 @@
 // (Erfassung). Daraus entsteht eine Liste ohne Parteinamen in gemischter Reihenfolge
 // (blindListe), die ein anderer Agent bewertet (Bewertung). Erst `eintragen` bringt
 // beides zusammen und schreibt es mit neuen IDs in die Themendatei.
-import type { Katalog } from '../src/data/katalog.ts'
+import { suchbegriffInParteinamen, type Katalog } from '../src/data/katalog.ts'
 import type { Evidenz, Rolle, RollenModifikator } from '../src/data/types.ts'
 import { naechsteId } from './ids.ts'
 import { fehlendeZahlen } from './zitate.ts'
@@ -1032,6 +1032,11 @@ export function pruefeLeitfaden(k: Katalog, l: Leitfaden): string[] {
             if (!Array.isArray(begriffe) || !begriffe.length || begriffe.some((b) => typeof b !== 'string' || !b.trim()))
               f.push(`Leitfaden: Suchbegriffe zu Ursache ${u}, Richtung „${r}“ – Liste nicht leerer Begriffe`)
             else if (enthaeltParteinamen(`${r} ${begriffe.join(' ')}`, weitere)) f.push(`Leitfaden: Suchbegriffe zu Ursache ${u}, Richtung „${r}“ nennen eine Partei oder Person`)
+            else
+              for (const b of begriffe) {
+                const n = suchbegriffInParteinamen(b, k.parteien)
+                if (n) f.push(`Leitfaden: Suchbegriff „${b}“ (Ursache ${u}) steckt im Parteinamen „${n}“ – träfe dort fast jede Seite; genauer fassen`)
+              }
       }
   }
   for (const [b, grund] of Object.entries(l.suchbegriffe_geprueft ?? {}))
@@ -1102,6 +1107,8 @@ export function pruefeProgramm(k: Katalog, e: Pick<Erfassung, 'thema_id' | 'leit
   if (!Array.isArray(p.massnahmen)) return [...f, `${name}: massnahmen fehlen (Liste, auch leer)`]
   if (!p.massnahmen.length && !p.keine_massnahme?.trim()) f.push(`${name}: weder Maßnahmen noch keine_massnahme`)
   if (p.massnahmen.length && p.keine_massnahme) f.push(`${name}: Maßnahmen und keine_massnahme zugleich`)
+  // Gleiche Grenze wie beim Eintragen (abdeckung.begruendung) – sonst fällt es erst nach der Bewertung auf.
+  if (p.keine_massnahme && p.keine_massnahme.length > 400) f.push(`${name}: keine_massnahme ist länger als 400 Zeichen (${p.keine_massnahme.length}) – kürzer fassen, Seiten behalten`)
   for (const b of p.neue_buendel ?? [])
     if (!b || typeof b.name !== 'string' || !b.name.trim() || !ursachen.has(b.ursache)) f.push(`${name}: neue_buendel – je Eintrag { "ursache": <ID des Themas>, "name": "…", "seite": N }`)
   for (const b of p.eigene_synonyme ?? [])

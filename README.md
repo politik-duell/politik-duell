@@ -2,7 +2,29 @@
 
 *„Versprechen kann jeder."* – Zwei-Spieler-Webspiel: Alltagsprobleme nennen, das Spiel zeigt, welche Partei dafür die wirksamste und umsetzbare Lösung bietet – mit Beleg-Link nach jeder Runde.
 
-Konzept, Grundprinzipien und Meilensteine: siehe [CLAUDE.md](CLAUDE.md). Methode zum Weitergeben an Partner und Prüfende: [docs/methode.md](docs/methode.md). Vereinsgründung (Satzung, Fahrplan, Übergabe der App): [docs/verein/](docs/verein/README.md).
+Grundprinzipien und Kurzüberblick: [CLAUDE.md](CLAUDE.md); Konzept, Spielablauf und Meilensteine: [docs/projekt.md](docs/projekt.md). Methode zum Weitergeben an Partner und Prüfende: [docs/methode.md](docs/methode.md). Vereinsgründung (Satzung, Fahrplan, Übergabe der App): [docs/verein/](docs/verein/README.md).
+
+## Dieser Fork: ma3u/politik-duell
+
+Testversion: **https://ma3u.github.io/politik-duell/** (GitHub Pages, ohne Supabase). Stand gegenüber dem Upstream [politik-duell/politik-duell](https://github.com/politik-duell/politik-duell): 35 eigene Commits seit `feb91ac`; die 8 neueren Upstream-Commits (u. a. Hebel-Checkliste im Leitfaden, Forderungen je Programm bündeln, sparsamere Skills) sind noch nicht übernommen. Änderungen gehen nur auf den Fork, nicht in den Upstream.
+
+**Programm-Quiz „Wer sagt Ja?“** (neu, `#/quiz`, auf Pages die Startseite)
+- Mehrspieler bis acht Personen, Browser zu Browser per WebRTC; Vermittlung über die Firebase Realtime Database (REST, ohne SDK), ersatzweise Supabase Realtime; merkbare Raumnamen („Kluge Eule 27“), „Mit Fremden“, „Mit Freunden“ (Raum eröffnen oder beitreten), „Alleine“
+- Show mit zwei KI-Moderatoren (Mara, Ben; ElevenLabs, vorab aufgenommen), Animationen, Geräuschen, Konfetti für den Sieg, Startmusik im Party-Elektro-Stil; Ton-Schalter als Lautsprecher, Hinweis „Mit Ton spielen?“ bis der Browser den Ton freigibt
+- Startseite: Name (wird gemerkt) und Zeit je Frage als Knopf in einer Zeile; Ton-Wahl wird auf ausdrücklichen Wunsch gemerkt
+- 24 Fragen aus den Haltungen, auf Pages mit KI-Entwürfen (gekennzeichnet); „keine Aussage im Programm“ zählt wie die heutige Lage (`status_quo` je Haltung, [docs/haltungen.md](docs/haltungen.md)); Frage und Auflösung kompakt, Sprung zu den Antwortfeldern, Belege eingeklappt
+
+**Daten**
+- **Volt** als achte Partei: Bundesprogramm, Landesprogramme ST, MV, BE, Positionen der erfassten Haltungen
+- **Alle 37 Themen** mit Maßnahmen aller acht Parteien aus Bundes- und (wo Landessache) Landesprogrammen ST, MV, BE – 3242 Maßnahmen, Einordnung ohne Parteinamen, alle als **ungeprüfter KI-Entwurf**
+- **Haltungen** der Quizfragen neu erfasst (weniger „keine Aussage“, Suchbegriffe bereinigt, siehe [docs/haltungen.md](docs/haltungen.md))
+- **Programmtext:** doppelt gezeichneter Fettdruck wird beim Auslesen zusammengeführt (im Unionsprogramm 2025 waren 902 Zeilen verschränkt; die Suche fand dort etwa „Schuldenbremse“ nicht)
+
+**App und Betrieb**
+- Barrierefreiheit nach WCAG 2.2 AA für Handy, iPad und Desktop ([docs/barrierefreiheit.md](docs/barrierefreiheit.md))
+- Duell auf Pages mit dem echten Katalog (`VITE_DATENQUELLE=katalog`, Stichwortsuche im Browser statt KI), Einstieg ins Quiz (`VITE_STARTSEITE=quiz`)
+- Startseiten mit einmaligem Auftritt und animiertem Logo; PWA-Precache bis 4 MiB, damit der Katalog offline bleibt
+- `.env` nicht mehr im Repository (Vorlage `.env.example`); Schlüssel wie `ELEVENLABS_API_KEY` nur in `.env.local`
 
 ## Stand: Meilenstein 1 – klickbarer Prototyp
 
@@ -34,7 +56,8 @@ Konzept, Grundprinzipien und Meilensteine: siehe [CLAUDE.md](CLAUDE.md). Methode
 - Punkte berechnet dieselbe Logik in App und Funktion (`supabase/functions/_shared/bewertung.ts`) – die KI vergibt keine Punkte
 - Abgeschlossene Runden werden anonym gespeichert (nur neutrale Kurzfassung); unbekannte Themen landen in `review_warteschlange` mit vorläufiger Einschätzung; Runden ohne Wertung (auch Grenzfälle) zusätzlich im Wortlaut in `review_eingaben` (nur Admins, gelöscht beim Sichten oder nach 30 Tagen)
 - Rate-Limit pro zufälliger Sitzungs-ID
-- Ohne Supabase-Verbindung: „Mit Beispieldaten spielen“ bzw. `VITE_DATENQUELLE=mock`
+- Ohne Supabase-Verbindung: „Mit Beispieldaten spielen“ bzw. `VITE_DATENQUELLE=mock`; echter Katalog aus `daten/` mit KI-Entwürfen und Stichwortsuche statt KI: `VITE_DATENQUELLE=katalog` (so auf GitHub Pages)
+- Startseite: `VITE_STARTSEITE=quiz` öffnet beim Aufruf ohne Unterseite das Programm-Quiz (so auf GitHub Pages), sonst das Duell
 
 ## Stand: Meilenstein 4 – Wortwolke und Moderation
 
@@ -59,9 +82,18 @@ Konzept, Grundprinzipien und Meilensteine: siehe [CLAUDE.md](CLAUDE.md). Methode
 
 **Einrichten:** siehe [supabase/EINRICHTEN.md](supabase/EINRICHTEN.md).
 
+## Programm-Quiz „Wer sagt Ja?“ (`#/quiz`)
+
+Zweiter Spielmodus ohne Datenbank und ohne KI (Plan und rechtliche Einordnung: [docs/plan-quiz.md](docs/plan-quiz.md)):
+
+- Bis zu acht Personen raten, welche Parteien im Wahlprogramm zu einer Frage Ja (oder Nein) sagen – Einzel- oder Mehrfachauswahl, schnellere richtige Antworten bringen mehr Punkte (bis 1000 je Frage); allein üben geht auch
+- Fragen aus den geprüften Haltungen: `npm run quiz:erzeugen` schreibt `public/quiz/fragen.json`; mit `-- --entwuerfe` zusätzlich eine lokale Fassung mit KI-Entwürfen (`fragen-entwurf.json`, nicht im Repository; ins Build nur mit `VITE_QUIZ_ENTWUERFE=true`, so auf der Pages-Testversion)
+- Browser zu Browser per WebRTC; den Verbindungsaufbau vermittelt die Firebase Realtime Database (`VITE_FIREBASE_DATABASE_URL`, per REST ohne SDK, jede Nachricht wird nach dem Lesen gelöscht – siehe [firebase/README.md](firebase/README.md)), die auch weiterleitet, wenn keine Direktverbindung zustande kommt. Ohne Firebase-Adresse übernimmt ein Supabase-Realtime-Kanal; ohne beides funktionieren Räume zwischen Tabs desselben Browsers
+- Optional `VITE_STUN_URLS` (z. B. `stun:stun.example.eu:3478`) für Direktverbindungen übers Internet – die Datenschutzerklärung nennt den Server dann automatisch
+
 ## Datenkatalog
 
-- **Echte Parteien:** CDU/CSU, SPD, Grüne, FDP, AfD, Linke, BSW mit ihren Wahlprogrammen zur Bundestagswahl 2025 (`daten/parteien.json`). Maßnahmen sind bisher für Miete erfasst (alle 7 Parteien), noch ungeprüft – im Spiel gilt deshalb vorerst alles als „noch nicht erfasst“
+- **Echte Parteien:** CDU/CSU, SPD, Grüne, FDP, AfD, Linke, BSW, Volt mit ihren Wahlprogrammen zur Bundestagswahl 2025, dazu Landesprogramme für Sachsen-Anhalt, Mecklenburg-Vorpommern und Berlin (`daten/parteien.json`). Für alle 37 Themen sind Maßnahmen aller Parteien erfasst – als KI-Entwurf, bis Menschen sie prüfen (im Spiel nur in der Testphase bzw. auf der Pages-Testversion)
 - Jede Maßnahme mit wörtlichem Zitat und Seitenanker; `npm run pruefliste` erzeugt je Thema eine Prüfliste (Bewertung ohne Parteinamen, dann Belege)
 - „Mit Beispieldaten spielen“ und die Tests nutzen die fiktiven Daten in `daten/beispiel/`; der Hinweis auf Platzhalterdaten erscheint nur dann
 
@@ -69,7 +101,7 @@ Konzept, Grundprinzipien und Meilensteine: siehe [CLAUDE.md](CLAUDE.md). Methode
 - Alle Parteien, Themen, Ursachen und Maßnahmen liegen als JSON in [`daten/`](daten/README.md) – Änderungen per Pull Request mit Quellenpflicht
 - Automatische Prüfung (`npm run daten:pruefen`, auch in GitHub Actions): Pflichtfelder, Wertebereiche, Beleg mit Seitenanker im Programm der richtigen Partei, Quelle für jede Ursache, keine Platzhalter-Links bei echten Daten
 - **Abdeckung:** Pro Thema steht bei einer erfassten Partei entweder eine Maßnahme oder ausdrücklich „keine Maßnahme im Programm“ – so lässt sich „nichts im Programm“ von „noch nicht erfasst“ unterscheiden. Fehlt eine Partei noch, gilt das Thema für sie als „noch nicht erfasst“
-- **Zehn Themen mit belegten Ursachen:** Auswahl nach den meistgenannten Problemen vor den Wahlen 2026 in Sachsen-Anhalt, Mecklenburg-Vorpommern und Berlin; jede Ursache mit unabhängiger Quelle (Destatis, BBSR, Sachverständigenräte, IAB, DIW, BKA u. a.). Die drei Beispielthemen behalten ihre fiktiven Maßnahmen, die sieben neuen haben noch keine – Runden dazu werden nicht gewertet ([Themenauswahl](daten/README.md#themenauswahl))
+- **37 Themen mit belegten Ursachen:** Auswahl nach den meistgenannten Problemen vor den Wahlen 2026 in Sachsen-Anhalt, Mecklenburg-Vorpommern und Berlin; jede Ursache mit unabhängiger Quelle (Destatis, BBSR, Sachverständigenräte, IAB, DIW, BKA u. a.) ([Themenauswahl](daten/README.md#themenauswahl))
 - Bei echten Daten kommt ein Thema für eine Partei erst ins Spiel, wenn der ganze Eintrag geprüft ist (`geprueft: true`); ungeprüfte Entwürfe bleiben im Repo und kommen nicht in die Datenbank
 - **Anzeige im Spiel** (Tabelle `abdeckung`): „keine Maßnahme zu diesen Ursachen“, „nichts zum Thema im Programm“ (mit Begründung, was durchsucht wurde) oder „noch nicht erfasst“ – im letzten Fall wird die Runde nicht gewertet, damit fehlende Daten keiner Partei einen Punkt kosten; die beste Lösung aller Parteien vergleicht nur erfasste Parteien
 - Einträge, die älter als das aktuelle Programm einer Partei sind, werden zur Neuprüfung gemeldet

@@ -238,3 +238,179 @@ Lauf für die Haltungen 32–35 (Liste aus `/liste-einordnen`), alle Bundesprogr
 
 - 34: Sollen trockengelegte Moore wieder vernässt werden? (Union ja, Grüne ja; Linke: Zitat zur Revitalisierung ohne ausdrückliche Wiedervernässung)
 - 35: Soll in Deutschland die kommerzielle Erdgasförderung durch unkonventionelles Fracking erlaubt werden? (Grüne nein, Linke nein; FDP: Zitat zur heimischen Erdgasförderung mit Fracking-Verfahren, ohne Angabe unkonventioneller Lagerstätten)
+
+
+## Nachtrag Volt (7. 10. 2026)
+
+Volt (ID 18, Programm zur Bundestagswahl 2025) ist im Fork neu aufgenommen. Erfasst als **Nachtrag** (`--nachtrag 18`, `.claude/skills/haltung-erfassen/SKILL.md`): ein Agent `haltung-erfassung` für das Volt-Programm mit denselben Suchbegriffen wie für die übrigen Programme (bei Tempolimit und Zuwanderung aus „Vorgehen“ oben übernommen), Einordnung durch einen Agenten `haltung-einordnung` ohne Parteinamen nach dem Maßstab der Haltung. Die Positionen der übrigen Parteien sind unverändert (geprüft per Vergleich vorher/nachher). Alle Volt-Positionen sind **KI-Entwurf** (`geprueft: false`); Protokolle unter `daten/protokolle/haltung-<ID>/2026-10-07-nachtrag-volt/`. Alle Zitate stehen wörtlich auf der angegebenen Seite (`npm run zitate:pruefen`).
+
+Für die Prüfung vormerken: Windkraft (4) und Euro (19) als „keine Aussage“ trotz gelesener Kapitel; Auslassungen in den Zitaten zu Zuckersteuer (15, enthält „wenn“) und Erbschaftsteuer (25, 565 Zeichen, enthält „sofern“). Folge für das öffentliche Quiz: Tempolimit und Zuwanderung zählen erst wieder, wenn auch die Volt-Position geprüft ist („Alle oder keine“).
+
+| ID | Frage | Volt |
+| --- | --- | --- |
+| 1 | Soll es ein generelles Tempolimit auf Autobahnen geben? | Ja (S. 69) |
+| 2 | Soll Zuwanderung nach Deutschland stärker begrenzt werden? | Teils (S. 50) |
+| 4 | Soll Deutschland den Ausbau der Windkraft an Land weiter vorantreiben? | keine Aussage |
+| 5 | Soll Deutschland wieder Atomkraftwerke zur Stromerzeugung betreiben? | keine Aussage |
+| 7 | Soll Deutschland die Ukraine weiter mit Waffen beliefern? | Ja (S. 45) |
+| 8 | Soll der gemeinsame Unterricht von Kindern mit und ohne Behinderung an Regelschulen Vorrang vor Förderschulen haben? | Ja (S. 112) |
+| 9 | Sollen die Düngeregeln für Landwirtschaftsbetriebe gelockert werden? | keine Aussage |
+| 10 | Soll eine Vermögensteuer eingeführt werden? | Ja (S. 100) |
+| 11 | Soll es in Deutschland einen verpflichtenden Wehrdienst für junge Menschen geben? | keine Aussage |
+| 12 | Soll es einen gesetzlichen Mindestlohn geben? | Ja (S. 89) |
+| 13 | Soll die Schuldenbremse im Grundgesetz bestehen bleiben? | Teils (S. 22) |
+| 14 | Soll das gesetzliche Renteneintrittsalter über 67 Jahre hinaus angehoben werden? | Ja (S. 92) |
+| 15 | Soll es eine Steuer auf stark gezuckerte Getränke geben? | Ja (S. 131) |
+| 16 | Soll Deutschland Mitglied der NATO bleiben? | Teils (S. 40) |
+| 18 | Soll Deutschland wieder Erdgas aus Russland beziehen? | keine Aussage |
+| 19 | Soll Deutschland den Euro als Währung behalten? | keine Aussage |
+| 20 | Sollen Solaranlagen auf Ackerflächen gebaut werden dürfen? | keine Aussage |
+| 21 | Soll es für gut integrierte Geduldete ein dauerhaftes Bleiberecht geben? | Ja (S. 139) |
+| 24 | Soll Deutschland Mitglied der EU bleiben? | Ja (S. 9) |
+| 25 | Soll die Erbschaftsteuer abgeschafft werden? | Nein (S. 100) |
+| 26 | Soll ein Schwangerschaftsabbruch in den ersten zwölf Wochen nach Beratung rechtmäßig sein? | Ja (S. 153) |
+| 31 | Soll der Bund Projekte zur Demokratieförderung weiter finanziell fördern? | Ja (S. 142) |
+| 32 | Soll Deutschland seine Verteidigungsausgaben erhöhen? | Ja (S. 41) |
+| 33 | Sollen Leistungen der Grundsicherung für Arbeitsuchende gekürzt werden, wenn zumutbare Arbeit ohne wichtigen Grund abgelehnt wird? | keine Aussage |
+
+## Neuerfassung der Quiz-Haltungen (8. 10. 2026)
+
+Anlass: Im Quiz standen viele „keine Aussage“ (45 von 192 Positionen), oft weil die Fundstelle nur das Thema berührte (etwa der digitale Euro statt des Verbleibs im Euro). Vorgehen, für alle Programme gleich:
+
+- Anleitung `haltung-erfassung` geschärft: vor dem Speichern prüfen, ob die Passage allein nach dem Maßstab Ja/Teils/Nein trägt; Formen aus dem Maßstab (etwa „erhalten oder vertiefen“) zählen.
+- Suchbegriffe ergänzt (4, 9, 13, 15, 20, 32), „euro“ (traf Europa und Geldbeträge) und „bündnis“ (traf die Parteinamen „Bündnis 90/Die Grünen“ und „Bündnis Sahra Wagenknecht“) ersetzt.
+- Programmtext: doppelt gezeichneter Fettdruck wird zusammengeführt (im Unionsprogramm 902 verschränkte Zeilen, dort fand die Suche etwa „Schuldenbremse“ nicht).
+- Erfassung in Runden zu je vier Haltungen statt aller auf einmal; danach eine Nachprüfung jeder „keine Aussage“ mit gleichem Hinweis für alle; Einordnung ohne Parteinamen wie bisher. Haltungen 1 und 2 haben geprüfte Positionen und blieben unverändert.
+- Ergebnis: 29 statt 45 Positionen ohne Aussage (KI-Entwurf, Einordnung ohne Parteinamen, 8. 10. 2026). Rest der Blindliste: Haltung 26 „fraktionsübergreifend“ (kein Parteiname, Hinweis auf einen Gruppenantrag).
+
+| Haltung | Union | SPD | Grüne | FDP | AfD | Linke | BSW | Volt |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 4 Soll Deutschland den Ausbau der Windkraft an Land weiter vorantreiben? | ja S. 21 | ja S. 34 | ja S. 41 | teils S. 18 | nein S. 81 | ja S. 33 | teils S. 11 | ja S. 66 |
+| 5 Soll Deutschland wieder Atomkraftwerke zur Stromerzeugung betreiben? | teils S. 22 | nein S. 53 | nein S. 43 | ja S. 18 | ja S. 42 | nein S. 33 | nein S. 11 | – |
+| 7 Soll Deutschland die Ukraine weiter mit Waffen beliefern? | ja S. 47 | ja S. 58 | ja S. 142 | ja S. 47 | – | nein S. 23 | nein S. 7 | ja S. 45 |
+| 8 Soll der gemeinsame Unterricht von Kindern mit und ohne Behinderung an Regelschulen Vorrang vor Förderschulen haben? | nein S. 62 | – | ja S. 77 | teils S. 25 | nein S. 161 | ja S. 54 | – | ja S. 112 |
+| 9 Sollen die Düngeregeln für Landwirtschaftsbetriebe gelockert werden? | ja S. 36 | – | nein S. 59 | teils S. 45 | ja S. 76 | – | – | nein S. 77 |
+| 10 Soll eine Vermögensteuer eingeführt werden? | nein S. 34 | ja S. 19 | ja S. 73 | nein S. 14 | nein S. 61 | ja S. 10 | ja S. 17 | ja S. 100 |
+| 11 Soll es in Deutschland einen verpflichtenden Wehrdienst für junge Menschen geben? | ja S. 52 | nein S. 58 | nein S. 154 | nein S. 48 | ja S. 89 | nein S. 23 | nein S. 6 | – |
+| 12 Soll es einen gesetzlichen Mindestlohn geben? | ja S. 5 | ja S. 23 | ja S. 67 | teils S. 18 | – | ja S. 45 | ja S. 21 | ja S. 89 |
+| 13 Soll die Schuldenbremse im Grundgesetz bestehen bleiben? | ja S. 77 | teils S. 17 | teils S. 36 | ja S. 35 | ja S. 55 | nein S. 13 | teils S. 15 | teils S. 22 |
+| 14 Soll das gesetzliche Renteneintrittsalter über 67 Jahre hinaus angehoben werden? | nein S. 5 | nein S. 25 | teils S. 98 | teils S. 21 | teils S. 19 | nein S. 15 | nein S. 23 | ja S. 92 |
+| 15 Soll es eine Steuer auf stark gezuckerte Getränke geben? | nein S. 37 | ja S. 28 | – | nein S. 46 | nein S. 75 | – | – | ja S. 131 |
+| 16 Soll Deutschland Mitglied der NATO bleiben? | ja S. 52 | ja S. 57 | ja S. 152 | ja S. 48 | teils S. 88 | teils S. 22 | teils S. 5 | teils S. 40 |
+| 18 Soll Deutschland wieder Erdgas aus Russland beziehen? | – | nein S. 4 | – | nein S. 49 | ja S. 93 | – | ja S. 10 | – |
+| 19 Soll Deutschland den Euro als Währung behalten? | ja S. 78 | ja S. 18 | – | ja S. 36 | nein S. 63 | – | – | – |
+| 20 Sollen Solaranlagen auf Ackerflächen gebaut werden dürfen? | – | – | teils S. 60 | – | nein S. 81 | – | teils S. 20 | – |
+| 21 Soll es für gut integrierte Geduldete ein dauerhaftes Bleiberecht geben? | nein S. 43 | teils S. 54 | teils S. 127 | teils S. 28 | nein S. 108 | ja S. 53 | – | ja S. 139 |
+| 24 Soll Deutschland Mitglied der EU bleiben? | ja S. 54 | ja S. 60 | ja S. 144 | ja S. 51 | nein S. 141 | ja S. 24 | ja S. 8 | ja S. 9 |
+| 25 Soll die Erbschaftsteuer abgeschafft werden? | nein S. 34 | nein S. 19 | nein S. 73 | nein S. 15 | ja S. 61 | nein S. 11 | nein S. 17 | nein S. 100 |
+| 26 Soll ein Schwangerschaftsabbruch in den ersten zwölf Wochen nach Beratung rechtmäßig sein? | nein S. 64 | ja S. 48 | ja S. 120 | teils S. 29 | nein S. 150 | ja S. 46 | teils S. 34 | ja S. 153 |
+| 31 Soll der Bund Projekte zur Demokratieförderung weiter finanziell fördern? | teils S. 45 | ja S. 41 | ja S. 109 | teils S. 26 | teils S. 56 | ja S. 51 | nein S. 39 | ja S. 142 |
+| 32 Soll Deutschland seine Verteidigungsausgaben erhöhen? | ja S. 52 | ja S. 57 | ja S. 152 | ja S. 48 | – | nein S. 23 | nein S. 6 | ja S. 41 |
+| 33 Sollen Leistungen der Grundsicherung für Arbeitsuchende gekürzt werden, wenn zumutbare Arbeit ohne wichtigen Grund abgelehnt wird? | ja S. 31 | ja S. 14 | – | ja S. 19 | ja S. 25 | nein S. 15 | ja S. 22 | – |
+
+### Zweitlauf der Einordnung (8. 10. 2026)
+
+Dieselben Blindlisten ein zweites Mal von einem unabhängigen Agenten `haltung-einordnung` eingeordnet (Antwort je Haltung in `daten/protokolle/haltung-<ID>/2026-10-08/einordnung-antwort-zweitlauf.txt`). Übereinstimmung: 144 von 148 Zitaten. Die vier Abweichungen liegen jeweils zwischen Nachbarstufen; eingetragen bleibt Lauf 1, die Fälle gehen an die menschliche Prüfung:
+
+| Haltung | Partei | Lauf 1 | Lauf 2 | Streitpunkt |
+| --- | --- | --- | --- | --- |
+| 7 Waffen für die Ukraine | SPD | ja | teils | Lieferung „mit Besonnenheit und Augenmaß“, nicht Kriegspartei werden – Vorbehalt oder Bedingung? |
+| 20 Solaranlagen auf Äckern | BSW | teils | nein | „dürfen die agrarische Nutzung nicht verdrängen“ – Doppelnutzung ausgeschlossen oder nicht? |
+| 24 EU-Mitgliedschaft | BSW | ja | teils | kein Austritt, aber Umbau zum lockereren Staatenverbund |
+| 33 Kürzung der Grundsicherung | BSW | ja | teils | Konsequenzen nur bei abgelehnten Qualifizierungsmaßnahmen, nicht bei abgelehnter Arbeit |
+
+Alle übrigen 144 Positionen (Haltungen 4–33 ohne 1 und 2) hat der Zweitlauf bestätigt.
+
+**Entscheidung der Betreiberin (8. 10. 2026)** zu den vier Grenzfällen des Zweitlaufs, nach Lesen der Zitate: 7 SPD **ja** (Lauf 1 bestätigt), 20 BSW **nein** (Lauf 2), 24 BSW **teils** (Lauf 2), 33 BSW **ja** (Lauf 1 bestätigt). Die beiden geänderten Positionen tragen Kurzfassung und Stand des Zweitlaufs und bleiben KI-Entwurf: `geprueft` setzt die Freigabe der Haltung durch die Betreiberin (statt `art: ki`) und zwei blinde Bestätigungen voraus.
+
+## Heutige Lage je Haltung (8. 10. 2026)
+
+Seit dem 8. 10. 2026 trägt jede Haltung `status_quo`: die Antwort auf die Frage, die der heutigen Rechtslage bzw. gängigen Praxis entspricht. Im Quiz zählt „keine Aussage im Programm“ wie diese Antwort, weil ein Programm, das zu einer Frage schweigt, daran nichts ändern will (Entscheidung der Betreiberin; Regel in `docs/plan-quiz.md`). `offen` steht, wo die heutige Lage weder klar Ja noch klar Nein ist; dann zählt „keine Aussage“ wie bisher als „nicht Ja“. Die Werte hat die Koordination ohne Blick in Programme gesetzt; drei sind Ermessensfälle und mit ⚠ markiert – Änderung durch die Betreiberin jederzeit möglich.
+
+| Nr. | Status quo | Grundlage |
+| --- | --- | --- |
+| 1 | nein | Kein generelles Tempolimit auf Autobahnen (§ 3 StVO, Richtgeschwindigkeit 130). |
+| 2 | nein | Keine zusätzliche Begrenzung über das geltende Aufenthalts- und Asylrecht hinaus. |
+| 3 | nein | Bundes-Betreuungsgeld 2015 vom BVerfG aufgehoben; nur Landesleistungen. |
+| 4 | ja | Ausbau läuft nach EEG und Wind-an-Land-Gesetz mit festen Flächenzielen. |
+| 5 | nein | Letzte Kernkraftwerke am 15. 4. 2023 abgeschaltet (AtG). |
+| 6 | nein | Kein bundesweites Verbot; einzelne Länder regeln Schulen und Behörden selbst. |
+| 7 | ja | Waffenlieferungen laufen seit 2022. |
+| 8 | ja ⚠ | UN-Behindertenrechtskonvention (Art. 24) gilt als Bundesrecht; Förderschulen bestehen in allen Ländern fort. |
+| 9 | nein | Düngeverordnung 2020 in Kraft; Lockerungen nur als Vorhaben. |
+| 10 | nein | Vermögensteuer seit 1997 nicht erhoben. |
+| 11 | nein | Wehrpflicht seit 2011 ausgesetzt; neuer Wehrdienst freiwillig. |
+| 12 | ja | Mindestlohngesetz seit 2015. |
+| 13 | ja | Schuldenbremse steht im Grundgesetz (Art. 109, 115), 2025 um Ausnahmen ergänzt. |
+| 14 | nein | Regelaltersgrenze steigt bis 2031 auf 67, nicht darüber (§ 35 SGB VI). |
+| 15 | nein | Keine Zuckersteuer; freiwillige Reduktionsstrategie. |
+| 16 | ja | NATO-Mitglied seit 1955. |
+| 17 | nein | Staatsleistungen laufen; Ablösungsauftrag (Art. 140 GG, Art. 138 WRV) nicht umgesetzt. |
+| 18 | nein | Kein Pipelinegas aus Russland seit 2022; EU-Ausstieg beschlossen. |
+| 19 | ja | Euro gesetzliches Zahlungsmittel seit 2002. |
+| 20 | offen | Freiflächen- und Agri-Photovoltaik auf Äckern nur in Gebietskulissen des EEG erlaubt – weder klar Ja noch Nein; „keine Aussage“ zählt wie bisher. |
+| 21 | ja | Bleiberecht für gut Integrierte in §§ 25a, 25b AufenthG. |
+| 22 | ja | Kirchenasyl geduldet; Verfahren zwischen Kirchen und BAMF seit 2015. |
+| 23 | nein | Schulpflicht in allen Ländern, Hausunterricht nicht zulässig. |
+| 24 | ja | EU-Mitglied seit 1958 (EWG). |
+| 25 | nein | Erbschaftsteuer wird erhoben (ErbStG). |
+| 26 | nein | Abbruch nach § 218 StGB rechtswidrig, nach Beratung straffrei (§ 218a). |
+| 27 | nein | Keine ausdrückliche Geburtenförderung; Familienleistungen ohne dieses Ziel. |
+| 28 | ja ⚠ | Vorübergehender Schutz ist befristet (EU-Richtlinie 2001/55, bis März 2027 verlängert). |
+| 29 | nein | Keine verbindliche Mitentscheidung vor Ort; nur finanzielle Beteiligung (§ 6 EEG). |
+| 30 | nein | Keine allgemeinen Studiengebühren an staatlichen Hochschulen. |
+| 31 | ja | Bundesprogramm „Demokratie leben!“ läuft. |
+| 32 | ja ⚠ | Verteidigungsausgaben steigen nach Beschlusslage (Sondervermögen, Grundgesetzänderung 2025). |
+| 33 | ja | Leistungsminderung bei Ablehnung zumutbarer Arbeit (§ 31 SGB II). |
+| 34 | ja | Nationale Moorschutzstrategie 2022, Aktionsprogramm Natürlicher Klimaschutz. |
+| 35 | nein | Unkonventionelles Fracking verboten (§ 13a WHG). |
+
+## Wahlkampf 2026 und Themenradar: neue Haltungen 36–53 (8. 10. 2026, nur Phase A)
+
+Anlass: die Wahl-O-Mat-Thesen 2026 (Sachsen-Anhalt, Mecklenburg-Vorpommern, Berlin), die Einordnungstabelle `.cache/listen/2026-10-08-wahlkampf-2026.md` (nur lokal) und der Themenradar „Was Menschen in Deutschland gerade bewegt“ der Betreiberin. Entscheidung: Das Quiz wird um Haltungen ergänzt, die die größten Sorgen abdecken, vor allem Krieg und Frieden (36–40), Klima und Energie (41–42), Vertrauen in die Politik (43–45), Grundsicherung und Sicherheit (46–47) sowie Schule (48–49). Jede Zeile kam aus einem Agenten `haltung-recherche` ohne Blick in Programme; die Koordination hat nur die Form geprüft und Zielkonflikte auf 300 Zeichen kürzen lassen. Phase B (Positionen aus den acht Bundesprogrammen) steht noch aus: `/haltung-erfassen 36-41`, dann `42-47`, dann `48-53`. Erst danach entstehen die Quizfragen.
+
+| Nr. | Frage | Quellen der Zielkonflikte | Freigabe |
+| --- | --- | --- | --- |
+| 36 | Soll der Staat die Ansiedlung und den Ausbau von Rüstungsunternehmen in Deutschland fördern? | bpb.de, sipri.org, uni-mannheim.de | KI-Freigabe 8. 10. 2026 |
+| 37 | Sollen in Deutschland weitreichende US-Raketen stationiert werden? | blog.prif.org, ifsh.de, swp-berlin.org | KI-Freigabe 8. 10. 2026 |
+| 38 | Soll Deutschland an der nuklearen Teilhabe der NATO festhalten? | sipri.org, swp-berlin.org | KI-Freigabe 8. 10. 2026 |
+| 39 | Sollen die Wirtschaftssanktionen gegen Russland gelockert werden? | destatis.de, ifo.de, swp-berlin.org | KI-Freigabe 8. 10. 2026 |
+| 40 | Soll an staatlichen Hochschulen auch für militärische Zwecke geforscht werden dürfen? | idw-online.de, reference-global.com | KI-Freigabe 8. 10. 2026 |
+| 41 | Soll Deutschland bis spätestens 2045 klimaneutral werden? | bundesverfassungsgericht.de, eur-lex.europa.eu, kfw.de, umweltbundesamt.de | KI-Freigabe 8. 10. 2026 |
+| 42 | Soll der gesetzlich beschlossene Ausstieg aus der Kohleverstromung aufgehoben oder zeitlich verschoben werden? | bundesnetzagentur.de, dehst.de, gesetze-im-internet.de, iwh-halle.de | KI-Freigabe 8. 10. 2026 |
+| 43 | Soll der Staat beim Bundesverfassungsgericht das Verbot von Parteien beantragen, die er für verfassungsfeindlich hält? | bundesverfassungsgericht.de | KI-Freigabe 8. 10. 2026 |
+| 44 | Soll die Fünf-Prozent-Hürde bei Bundestagswahlen beibehalten werden? | bundesverfassungsgericht.de, bundeswahlleiterin.de | KI-Freigabe 8. 10. 2026 |
+| 45 | Soll das Wahlalter für Bundestagswahlen auf 16 Jahre gesenkt werden? | bpb.de, bundeswahlleiterin.de, ebi.ac.uk, ideas.repec.org | KI-Freigabe 8. 10. 2026 |
+| 46 | Sollen arbeitsfähige Menschen ohne Arbeit, die Grundsicherung beziehen, grundsätzlich zu gemeinnütziger Arbeit verpflichtet werden? | bundestag.de, gesetze-im-internet.de, iab-forum.de | KI-Freigabe 8. 10. 2026 |
+| 47 | Soll die Polizei große Datenmengen mit Software automatisiert auswerten dürfen? | bundestag.de, bundesverfassungsgericht.de | KI-Freigabe 8. 10. 2026 |
+| 48 | Sollen Kinder länger gemeinsam lernen und erst später als heute auf verschiedene Schulformen aufgeteilt werden? | bpb.de, ideas.repec.org | KI-Freigabe 8. 10. 2026 |
+| 49 | Soll sexuelle und geschlechtliche Vielfalt im Schulunterricht behandelt werden? | fra.europa.eu, servat.unibe.ch | KI-Freigabe 8. 10. 2026 |
+| 50 | Soll innerorts auf mehr Straßen Tempo 30 statt Tempo 50 gelten? | destatis.de, ideas.repec.org, stadt-zuerich.ch, tfw.wales | KI-Freigabe 8. 10. 2026 |
+| 51 | Sollen die gesetzlichen Vorgaben für die Haltung von Nutztieren in der Landwirtschaft gelockert werden? | destatis.de, ideas.repec.org, umweltbundesamt.de | KI-Freigabe 8. 10. 2026 |
+| 52 | Soll die Masern-Impfpflicht für Kinder in Kita und Schule beibehalten werden? | bundesverfassungsgericht.de, ethikrat.org, rki.de | KI-Freigabe 8. 10. 2026 |
+| 53 | Soll der öffentlich-rechtliche Rundfunk weiterhin über den Rundfunkbeitrag finanziert werden? | bundesverfassungsgericht.de, kef-online.de, wirtschaftsdienst.eu | KI-Freigabe 8. 10. 2026 |
+
+Noch nicht angelegt (Recherche am 8. 10. 2026 wegen des Nutzungslimits abgebrochen): Mehrwertsteuer auf Lebensmittel, Bürgerversicherung, Pflegevollversicherung, Rentenversicherung für Beamte und Selbstständige, Kindergrundsicherung, Mietpreisbremse, Ehegattensplitting, Vorratsdatenspeicherung, Verbrenner-Aus 2035, Zurückweisungen an der Grenze, Spitzensteuersatz, Deutschlandticket, Mindestalter für soziale Medien, Volksentscheide. Ebenfalls offen aus der Wahl-O-Mat-Liste: Wald ohne Nutzung, Corona-Aufarbeitung, Ökolandbau, Wolf, Kita-Pflichtjahr, Solarpflicht, Silvesterfeuerwerk.
+
+### Heutige Lage je Haltung 36–53
+
+| Nr. | Status quo | Grundlage |
+| --- | --- | --- |
+| 36 | ja | Nationale Sicherheits- und Verteidigungsindustriestrategie, Kabinettsbeschluss 4. 12. 2024: Schlüsseltechnologien fördern, Finanzierung verbessern, wehrtechnischen Mittelstand stärken. |
+| 37 | nein | Keine weitreichenden US-Raketen in Deutschland; die 2024 vereinbarte zeitweise Stationierung ab 2026 setzen die USA nicht um (Regierungspressekonferenz 4. 5. 2026). |
+| 38 | ja | Deutschland nimmt an der nuklearen Teilhabe teil; F-35 sollen die Rolle des Tornado übernehmen (Beschluss März 2022). |
+| 39 | nein | EU-Sanktionen nach Verordnung (EU) Nr. 833/2014 gelten weiter, zuletzt mit dem 21. Paket (Verordnung (EU) 2026/1848 vom 23. 7. 2026) ausgeweitet. |
+| 40 | ja | Kein Bundesgesetz verbietet militärische Forschung an Hochschulen; Zivilklauseln sind Selbstverpflichtungen (Bundesregierung 2023). Bremen schreibt sie seit 2015 vor, Bayern untersagt sie seit 2024 (Art. 20 BayHIG). |
+| 41 | ja | Nach § 3 Abs. 2 des Bundes-Klimaschutzgesetzes soll bis 2045 Netto-Treibhausgasneutralität erreicht werden. |
+| 42 | nein | Das Kohleverstromungsbeendigungsgesetz schreibt den Ausstieg bis spätestens Ende 2038 vor (§§ 2, 4 KVBG); aufgehoben oder verschoben ist er nicht. |
+| 43 | nein | Das Instrument besteht (Art. 21 Abs. 2 GG), doch weder Bundestag noch Bundesrat noch Bundesregierung haben seit 2017 einen Antrag gestellt (Stand 2026). |
+| 44 | ja | § 4 Abs. 2 Satz 2 Nr. 2 BWahlG: Parteien unter 5 % der Zweitstimmen erhalten keine Sitze (Ausnahmen: nationale Minderheiten; bis zur Neuregelung Parteien mit drei Direktmandaten). |
+| 45 | nein | Für Bundestagswahlen ist wahlberechtigt, wer 18 ist (Art. 38 Abs. 2 GG); ab 16 nur bei der Europawahl (seit 2024) und in einigen Ländern. |
+| 46 | nein | Keine allgemeine Pflicht; Jobcenter können einzelne Leistungsberechtigte nachrangig und höchstens 24 Monate in fünf Jahren in zusätzliche, gemeinnützige Arbeitsgelegenheiten zuweisen (§ 16d SGB II). |
+| 47 | offen | Je Land verschieden: erlaubt und im Einsatz etwa in Bayern (Art. 61a PAG) und Hessen, in anderen Ländern nicht; für BKA und Bundespolizei liegt eine Regelung noch im Bundestag (Anhörung 21. 9. 2026). |
+| 48 | nein | Grundschule Klassen 1–4 (Berlin, Brandenburg 1–6), danach verschiedene Schulformen; Gymnasium in allen Ländern (Eurydice, Stand März 2026). |
+| 49 | ja | Schulrecht ist Ländersache; Lehrpläne und Richtlinien der Länder sehen das Thema vor, etwa Bayern (Richtlinien Familien- und Sexualerziehung 2016, Abschnitt 2.3) und Berlin-Brandenburg (Rahmenlehrplan 1–10, „Bildung zur Akzeptanz von Vielfalt“). |
+| 50 | nein | Innerorts gilt in der Regel 50 km/h (§ 3 Abs. 3 Nr. 1 StVO); Tempo 30 nur in Zonen und streckenweise, etwa vor Kitas und Schulwegen (§ 45 Abs. 9 StVO). |
+| 51 | nein | Tierschutz-Nutztierhaltungsverordnung gilt mit festen Übergangsfristen (§ 45 TierSchNutztV); keine allgemeine Lockerung beschlossen, nur die Tierhaltungskennzeichnung auf 1. 1. 2027 verschoben. |
+| 52 | ja | Masernschutzgesetz seit 1. 3. 2020: Nachweis für Kinder in Kita, Kindertagespflege und Schule (§ 20 Abs. 8 IfSG); 2022 vom Bundesverfassungsgericht bestätigt. |
+| 53 | ja | Rundfunkbeitrag je Wohnung nach § 2 Abs. 1 Rundfunkbeitragsstaatsvertrag, 2026 18,36 € im Monat. |
