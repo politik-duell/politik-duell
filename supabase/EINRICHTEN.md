@@ -2,6 +2,50 @@
 
 Projekt: `xfprvshhexhzhfgkfxpi` (Region Frankfurt).
 
+## Automatisch über GitHub Actions (Standard für alle Änderungen)
+
+Nach jedem Merge nach `main` spielt der Ablauf **„Supabase“** (`.github/workflows/supabase.yml`) ein, was sich
+geändert hat – in dieser Reihenfolge:
+
+1. **neue Migrationen** aus `supabase/migrations/` (`supabase db push`, nur die noch nicht eingespielten),
+2. **Daten** (`supabase/seed.sql` in einer Transaktion; nach einer neuen Migration immer),
+3. **Edge Functions** `analyse` und `pruefung` (mit `verify_jwt = false` aus `config.toml`).
+
+Vorher prüft er, dass `seed.sql` zu `daten/` passt. Kopieren im SQL Editor und der Supabase-Connector sind dafür
+nicht mehr nötig. Von Hand starten (etwa nach einem Fehler): *Actions → Supabase → Run workflow*.
+Ergebnis und Fehler: *Actions → Supabase →* Lauf öffnen. Schlägt ein Schritt fehl, bleibt die Datenbank beim alten
+Stand (jede Migration und die Daten laufen je in einer Transaktion; schon eingespielte Migrationen bleiben).
+
+### Einmalig einrichten
+
+1. **Access Token anlegen:** [supabase.com/dashboard/account/tokens](https://supabase.com/dashboard/account/tokens)
+   → *Generate new token*, Name z. B. `github-actions` → Token kopieren (wird nur einmal angezeigt).
+2. **Adresse des Session Poolers nachsehen:** im [Projekt](https://supabase.com/dashboard/project/xfprvshhexhzhfgkfxpi)
+   oben **Connect** → *Connection String* → *Method:* **Session pooler**. Aus der angezeigten Zeile
+   `postgresql://postgres.xfprvshhexhzhfgkfxpi:[YOUR-PASSWORD]@`**`aws-…-eu-central-1.pooler.supabase.com`**`:5432/postgres`
+   nur den fett gedruckten Teil (den Host) kopieren. GitHub erreicht die direkte Verbindung nicht (nur IPv6).
+3. **Datenbank-Passwort:** das beim Anlegen des Projekts vergebene. Unbekannt? *Project Settings → Database →
+   Reset database password* (danach nichts weiter anzupassen; App und Edge Functions nutzen es nicht).
+4. **Bei GitHub eintragen:** Repository → *Settings → Environments → New environment* → Name **`supabase`**.
+   Dort (empfohlen: unter *Deployment branches* nur `main` erlauben):
+   - *Environment secrets:* `SUPABASE_ACCESS_TOKEN` (aus 1) und `SUPABASE_DB_PASSWORD` (aus 3, so wie es ist,
+     Sonderzeichen sind kein Problem),
+   - *Environment variables:* `SUPABASE_DB_HOST` (aus 2).
+5. **Migrationsverlauf angleichen (nur einmal):** Die bisherigen Migrationen wurden von Hand eingespielt; Supabase
+   weiß das nicht. *Actions → „Supabase – Migrationsverlauf angleichen“ → Run workflow* → `ja` eintragen → starten.
+   Er trägt alle Dateien aus `supabase/migrations/` als eingespielt ein, **ohne sie auszuführen**. Am Ende zeigt
+   „Nachher“ jede Migration links (Local) und rechts (Remote). Nur ausführen, solange keine neue, noch nicht
+   eingespielte Migration auf `main` liegt.
+6. **Probelauf:** *Actions → Supabase → Run workflow*. Erwartet: alle Schritte grün, „Migrationen“ meldet
+   „Remote database is up to date“.
+
+Eine neue Migration also nur noch als Datei in `supabase/migrations/` anlegen (Name `JJJJMMTThhmmss_name.sql`, später
+als die letzte) – nicht mehr zusätzlich im SQL Editor oder über den Connector ausführen, sonst bricht der Ablauf ab,
+weil Tabellen schon existieren.
+
+Die Schritte unten („Weg A“, „Weg B“ und die Abschnitte 4–17) beschreiben den bisherigen Weg von Hand; sie bleiben
+als Rückfall und als Erklärung, was die einzelnen Migrationen tun.
+
 ## Weg A: nur im Browser (empfohlen, kein eigener Rechner nötig)
 
 Die Dateien in `supabase/dashboard/` sind zum Kopieren gedacht. Auf GitHub gibt es oben rechts
@@ -383,7 +427,8 @@ erscheint sie unter „Ohne Wertung“ im Wortlaut mit dem Grund „Haltung“.
 ## Nach Änderungen am Code
 
 `npm run dashboard` erzeugt `supabase/seed.sql`, die Teile in `supabase/seed-teile/` und die Dateien in
-`supabase/dashboard/` neu. Danach im Dashboard:
+`supabase/dashboard/` neu. Nach dem Merge nach `main` spielt der Ablauf „Supabase“ alles ein (siehe oben) – im
+Dashboard ist nichts zu tun. Nur falls der Ablauf nicht läuft, von Hand im Dashboard:
 
 - **Daten geändert** (neue Maßnahmen, Instrumente, Programme): im SQL Editor nur die Dateien aus
   [`supabase/seed-teile/`](https://github.com/politik-duell/politik-duell/tree/main/supabase/seed-teile)
