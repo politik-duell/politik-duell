@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { pruefeKatalog, type Datei } from '../src/data/katalog'
-import { BUENDEL_OHNE, begriffePruefsumme, bewertungsHinweise, leitfadenLuecken, pruefeLeitfaden, pruefeProgramm, zitatHinweise, zuordnungsBilanz, type Leitfaden, blindListe, blindReste, eintragen, erfassungsHinweise, neutralisiere, resteSchwelle, zuordnungsHinweise, kennungen, ohneParteinamen, programmServer, PROTOKOLL, pruefeBewertung, pruefeErfassung, pruefeKennungen, ordneKennungen, pruefeProtokoll, vergleicheErfassung, ohneBuendel, teilbewertung, fuehreTeilbewertungZusammen, kurzbericht, enthaeltParteinamen, pruefeAntwort, type BlindListe, ursachenFreigegeben, pruefeNachtrag, type Bewertung, type Erfassung, type Kennung, type Treffermatrix, type Zuordnung } from './entwurf'
+import { BUENDEL_FUER_HEBEL, BUENDEL_OHNE, begriffePruefsumme, offeneBuendel, bewertungsHinweise, leitfadenLuecken, pruefeLeitfaden, pruefeProgramm, zitatHinweise, zuordnungsBilanz, type Leitfaden, blindListe, blindReste, eintragen, erfassungsHinweise, neutralisiere, resteSchwelle, zuordnungsHinweise, kennungen, ohneParteinamen, programmServer, PROTOKOLL, pruefeBewertung, pruefeErfassung, pruefeKennungen, ordneKennungen, pruefeProtokoll, vergleicheErfassung, ohneBuendel, teilbewertung, fuehreTeilbewertungZusammen, kurzbericht, enthaeltParteinamen, pruefeAntwort, type BlindListe, ursachenFreigegeben, pruefeNachtrag, type Bewertung, type Erfassung, type Kennung, type Treffermatrix, type Zuordnung } from './entwurf'
 import { seitenOhneText } from './programme'
 import { auftragText } from './entwurf/auftrag-text'
 import { erstesJsonObjekt, fehlerStelle } from './entwurf/json-text'
@@ -701,6 +701,25 @@ describe('Leitfaden und Bündel', () => {
     const viele = { ...erfassung(), leitfaden: LEITFADEN }
     viele.programme[0].massnahmen = Array.from({ length: BUENDEL_OHNE + 1 }, (_, i) => ({ beschreibung: `Zusage ${i}`, ursachen_ids: [1702], zitat: `Zusage ${i}.`, seite: 13 }))
     expect(erfassungsHinweise(k, viele).join()).toMatch(/Eins \(Bund\): 4 Maßnahmen zu Ursache 1702 ohne Bündel/)
+  })
+
+  it('weist auf leere Bündel hin und rät bei vielen Bündeln ohne Hebel zur Checkliste', () => {
+    const e = { ...erfassung(), leitfaden: LEITFADEN }
+    const p = e.programme[0]
+    p.massnahmen[1].buendel = 'Vergütung'
+    expect(offeneBuendel(e, p, [1701, 1702])).toEqual([expect.stringMatching(/^Ursache 1702: Bündel ohne Maßnahme: „Ausbildung“ – /)])
+    expect(offeneBuendel(e, p, [1701])).toEqual([])
+    expect(offeneBuendel({ ...e, nachtrag: {} as Erfassung['nachtrag'] }, p, [1702])).toEqual([])
+    const k = katalog()
+    const breit: Leitfaden = {
+      ...LEITFADEN,
+      regeln: [...LEITFADEN.regeln, { nr: 3, ursachen: [1701], text: 'Kitaplätze gehören zu 1701.' }],
+      suchbegriffe: { '1701': { Ausbau: ['kitaplatz'] }, '1702': { Personal: ['vergütung'] } },
+      buendel: { '1702': Array.from({ length: BUENDEL_FUER_HEBEL }, (_, i) => `Bereich ${i}`) },
+    }
+    expect(leitfadenLuecken(k, breit).hinweise.join()).toMatch(/Ursache 1702 hat 5 Bündel, aber keine Hebel-Checkliste/)
+    expect(leitfadenLuecken(k, { ...breit, hebel: { '1702': ['Tempolimit'] } }).hinweise).toEqual([])
+    expect(leitfadenLuecken(k, LEITFADEN, [1702]).hinweise).toEqual([])
   })
 
   it('meldet nicht durchsuchte Programme, offene und sichere Ursache doppelt und Zitate, die klein beginnen', () => {

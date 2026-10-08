@@ -20,6 +20,12 @@ export interface Optionen {
   lokal?: string
   /** bewertet: bewertung.json steht schon (Teil-Neubewertung), entwurf:json entfällt */
   bewertungFertig?: boolean
+  /**
+   * auftraege: zusätzlich Sammelaufträge (ein Agent je Programm für alle Themen). Nicht Standard: Im Vergleichslauf
+   * (Themen 18 und 30, sechs Bundesprogramme) brauchten sie 39 % mehr Tokens und fast viermal so lange wie
+   * Einzelaufträge – die Agenten lesen gezielt statt ganz, der Kontext des ersten Themas wächst im zweiten mit.
+   */
+  sammel?: boolean
 }
 
 export interface Befehl {
@@ -60,7 +66,7 @@ export function plane(schritt: Schritt, themen: Thema[], o: Optionen): Befehl[] 
       break
     case 'auftraege':
       je((t) => [{ skript: 'entwurf:auftrag', args: [t.pfad, ...o.auswahl, ...lokal(o)] }])
-      if (themen.length > 1) b.push({ skript: 'entwurf:sammelauftrag', args: themen.map((t) => t.pfad) })
+      if (o.sammel && themen.length > 1) b.push({ skript: 'entwurf:sammelauftrag', args: themen.map((t) => t.pfad) })
       break
     case 'erfasst':
       je((t) => [
@@ -103,10 +109,12 @@ export function leseArgumente(argv: string[]): { schritt: Schritt; pfade: string
   const auswahl: string[] = []
   let lokalOrdner: string | undefined
   let bewertungFertig = false
+  let sammel = false
   for (let i = 0; i < rest.length; i++) {
     const a = rest[i]
     if (a === '--lokal') lokalOrdner = rest[++i]
     else if (a === '--bewertung-fertig') bewertungFertig = true
+    else if (a === '--sammel') sammel = true
     else if (a === '--bund') auswahl.push(a)
     else if (a === '--land' || a === '--partei') {
       auswahl.push(a)
@@ -117,5 +125,6 @@ export function leseArgumente(argv: string[]): { schritt: Schritt; pfade: string
   if (!pfade.length) return { fehler: 'Keine Arbeitsdatei (.cache/entwurf/<ID>/erfassung.json) angegeben' }
   if (lokalOrdner === undefined && rest.includes('--lokal')) return { fehler: '--lokal ohne Ordner' }
   if (auswahl.length && schritt !== 'vorab' && schritt !== 'auftraege') return { fehler: '--bund, --land und --partei gelten nur für vorab und auftraege' }
-  return { schritt: schritt as Schritt, pfade, optionen: { auswahl, lokal: lokalOrdner, bewertungFertig } }
+  if (sammel && schritt !== 'auftraege') return { fehler: '--sammel gilt nur für auftraege' }
+  return { schritt: schritt as Schritt, pfade, optionen: { auswahl, lokal: lokalOrdner, bewertungFertig, sammel } }
 }
