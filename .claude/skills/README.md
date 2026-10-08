@@ -5,14 +5,15 @@ Die Skills bauen den Katalog für die **geschlossene Testphase** auf: alles als 
 ```mermaid
 flowchart TD
     L["/liste-einordnen<br/>Liste sortieren: Haltung, Forderung, Thema,<br/>Grenze, Pauschal, Tatsache, Meta, doppelt"]
-    LB["Betreiberin hakt ab (oder --direkt)"]
-    L --> LB
+    LA["Betreiberin hakt ab (oder --direkt)"]
+    LB["/liste-ausfuehren (sonnet)<br/>ein Block je Aufruf"]
+    L --> LA --> LB
     LB -->|Haltungen| H1
     LB -->|Themen| T1
     LB -->|Forderungen| F1
     LB -->|alle| EV["docs/prompt-evaluation.md"]
     subgraph T["Themen"]
-        T1["/thema-anlegen<br/>Programme gesperrt · Agent ursachen-recherche<br/>Ursachen, Leitfaden, Suchbegriffe"]
+        T1["/thema-anlegen<br/>Programme gesperrt · Agent ursachen-recherche<br/>Ursachen, Perspektivenprüfung, Leitfaden mit Regeln und Suchbegriffen"]
         T2["KI-Freigabe · eigener Commit"]
         T3["/thema-erfassen<br/>Leitfaden vollständig? (entwurf:auftrag)<br/>je Programm ein Agent programm-erfassung für alle Themen und Nachträge<br/>(entwurf:sammelauftrag) · Rückfragen nur bei Skriptfehlern"]
         T4["entwurf:blind → Agent blind-bewertung<br/>ohne Parteinamen: Werte, Instrumente, Zuordnung"]
@@ -51,17 +52,18 @@ flowchart TD
 - Skripte statt Agenten, wo es geht (zählen, Fundstellen, Zitate, Zusammenführen, Bericht).
 - Keine inhaltlichen Rückfragen, keine Nachrecherche der Koordination, eine Runde für die Suchbegriffe.
 - Bund und Länder in einem Durchgang, mehrere Themen oder Haltungen je Aufruf.
-- Modelle fest in den Agentenbeschreibungen: Erfassung `sonnet`, Recherche, Bewertung und Einordnung `opus`. Die Koordination startet vor allem Skripte und kann deshalb mit `sonnet` laufen, ohne dass sich Urteile ändern.
+- Modelle fest in den Agentenbeschreibungen: Erfassung `sonnet`, Recherche, Bewertung und Einordnung `opus`. Die Koordination startet vor allem Skripte und läuft deshalb mit `sonnet` (`model:` im Kopf von `/liste-ausfuehren` und den Unterskills); Regeln, Suchbegriffe und verwandte Themen liefern die Recherche-Agenten, die Koordination überträgt sie nur. Nur `/liste-einordnen` urteilt selbst und läuft mit dem Modell der Sitzung.
+- Sammelbefehle: `entwurf:lauf -- vorab | auftraege | erfasst | blind | bewertet` erledigt einen Schritt für alle Themen eines Laufs – fünf Aufrufe statt rund 16 je Thema.
 - Kurze Überblicke: `themen:ueberblick -- --kurz` (eine Zeile je Thema) und `-- --haltungen` (ID und Frage) statt ganzer Dateien.
 - Jedes Programm einmal je Lauf: mehrere Themen in `/thema-erfassen` und Nachträge aus `/forderung-erfassen` laufen in einem Sammeldurchgang, ein Erfassungs-Agent je Programm für alle (`entwurf:sammelauftrag`); bewertet wird weiter je Thema.
 - Leitfaden vor dem Lesen vollständig: Fehlt einer Ursache eine Regel, kostet das später eine Rückfrage an jedes Programm (Thema 18: mehr Tokens als die Erfassung selbst).
 - Ein Testlauf je Block (`npm test -- --reporter=dot`) am Ende; Phase-A-Schritte prüfen nur mit `daten:pruefen`.
 - Haltungen gebündelt: sieben Erfassungs-Agenten und ein Einordnungs-Agent je Lauf, gleich wie viele Haltungen (bis 15); jedes Programm wird einmal gelesen.
-- Lange Listen erst sortieren (`/liste-einordnen`), dann nur das Bestätigte anlegen – ein Block je Aufruf, mit `/clear` dazwischen.
+- Lange Listen erst sortieren (`/liste-einordnen`), dann nur das Bestätigte anlegen (`/liste-ausfuehren`) – ein Block je Aufruf, mit `/clear` dazwischen.
 - Keine Dokumentpflege außer dem Abschnitt in `docs/perspektiven-ursachen.md` bzw. `docs/haltungen.md`; der Rest steht in Protokoll und Pull Request.
 
 ## Grundlage
 
-- Skills: [liste-einordnen](liste-einordnen/SKILL.md), [thema-anlegen](thema-anlegen/SKILL.md), [thema-erfassen](thema-erfassen/SKILL.md), [forderung-erfassen](forderung-erfassen/SKILL.md), [haltung-anlegen](haltung-anlegen/SKILL.md), [haltung-erfassen](haltung-erfassen/SKILL.md)
+- Skills: [liste-einordnen](liste-einordnen/SKILL.md), [liste-ausfuehren](liste-ausfuehren/SKILL.md), [thema-anlegen](thema-anlegen/SKILL.md), [thema-erfassen](thema-erfassen/SKILL.md), [forderung-erfassen](forderung-erfassen/SKILL.md), [haltung-anlegen](haltung-anlegen/SKILL.md), [haltung-erfassen](haltung-erfassen/SKILL.md)
 - Agenten: [ursachen-recherche](../agents/ursachen-recherche.md), [programm-erfassung](../agents/programm-erfassung.md), [blind-bewertung](../agents/blind-bewertung.md), [haltung-recherche](../agents/haltung-recherche.md), [haltung-erfassung](../agents/haltung-erfassung.md), [haltung-einordnung](../agents/haltung-einordnung.md)
 - Evaluationen der Erfassung: [thema-erfassen/evals/](thema-erfassen/evals/)

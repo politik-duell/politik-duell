@@ -34,8 +34,9 @@ Nur dieses JSON (dahinter höchstens drei Zeilen zu Verworfenem):
   "einordnung": { "ja": "…", "teils": "…", "nein": "…" },
   "suchbegriffe": ["wehrpflicht", "wehrdienst", "dienstpflicht", "musterung"],
   "schlagwoerter": ["wehrpflicht", "bundeswehr"],
+  "verwandte_themen": [9],
   "quellen_zitate": [{ "quelle_url": "https://…", "zitat": "wörtlich, mit Seite" }]
 }
 ```
 
-`schlagwoerter` kleingeschrieben, Umlaute als ae/oe/ue, so wie Menschen die Frage im Alltag nennen.
+`schlagwoerter` kleingeschrieben, Umlaute als ae/oe/ue, so wie Menschen die Frage im Alltag nennen. `verwandte_themen`: IDs der Themen aus dem Auftrag, deren Alltagsproblem die Frage direkt berührt (höchstens drei, auch leer).
