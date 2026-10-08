@@ -1,0 +1,53 @@
+name: Supabase – Migrationsverlauf angleichen
+
+# Einmalig vor dem ersten Lauf von „Supabase“: Die Migrationen bis 20261012000000 wurden von Hand im SQL Editor
+# bzw. über den Connector eingespielt. Der Verlauf in supabase_migrations.schema_migrations kennt sie daher nicht
+# (nur zwei Einträge unter anderen Nummern). Dieser Ablauf trägt alle Dateien aus supabase/migrations/ als
+# „eingespielt“ ein, ohne sie auszuführen, und entfernt die beiden fremden Einträge.
+# Danach spielt `supabase db push` nur noch neue Migrationen ein.
+# Nur ausführen, wenn alle Migrationen in supabase/migrations/ wirklich schon in der Datenbank stehen.
+on:
+  workflow_dispatch:
+    inputs:
+      bestaetigung:
+        description: 'Alle Migrationen in supabase/migrations/ sind schon eingespielt (zum Bestätigen "ja" eintragen)'
+        required: true
+
+concurrency:
+  group: supabase-produktion
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+env:
+  PROJEKT: xfprvshhexhzhfgkfxpi
+
+jobs:
+  angleichen:
+    if: inputs.bestaetigung == 'ja'
+    runs-on: ubuntu-latest
+    environment: supabase
+    steps:
+      - uses: actions/checkout@v4
+      - uses: supabase/setup-cli@v1
+        with:
+          version: 2.120.0
+      - name: Verbindung zur Datenbank
+        env:
+          PASSWORT: ${{ secrets.SUPABASE_DB_PASSWORD }}
+          HOST: ${{ vars.SUPABASE_DB_HOST }}
+        run: |
+          url=$(node -e 'console.log(`postgresql://postgres.${process.env.PROJEKT}:${encodeURIComponent(process.env.PASSWORT)}@${process.env.HOST}:5432/postgres`)')
+          echo "::add-mask::$url"
+          echo "DB_URL=$url" >> "$GITHUB_ENV"
+      - name: Vorher
+        run: supabase migration list --db-url "$DB_URL"
+      - name: Fremde Einträge entfernen (über den Connector eingespielt, inhaltlich = 20261011000000 und 20261012000000)
+        run: supabase migration repair --db-url "$DB_URL" --status reverted 20261005132607 20261005155253 --yes
+      - name: Alle Dateien als eingespielt eintragen
+        run: |
+          versionen=$(ls supabase/migrations/*.sql | xargs -n1 basename | cut -d_ -f1)
+          supabase migration repair --db-url "$DB_URL" --status applied $versionen --yes
+      - name: Nachher (alle Zeilen müssen links und rechts eine Nummer haben)
+        run: supabase migration list --db-url "$DB_URL"

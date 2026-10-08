@@ -97,7 +97,7 @@ npm run dashboard  # Dateien zum Einfügen im Supabase-Dashboard neu erzeugen
 | `daten/` | Datenkatalog: Parteien, Themen, Ursachen, Maßnahmen (JSON, Anleitung in `daten/README.md`) |
 | `scripts/` | Prüfung des Katalogs, Seed- und Dashboard-Erzeugung |
 | `supabase/seed.sql` | Seed-Daten (erzeugt aus `daten/`) |
-| `supabase/seed-teile/` | Dieselben Seed-Daten je Thema, für den SQL Editor im Dashboard |
+| `supabase/seed-teile/` | Dieselben Seed-Daten je Thema, für den SQL Editor im Dashboard (Rückfall; eingespielt wird automatisch über `.github/workflows/supabase.yml`) |
 | `supabase/dashboard/` | Erzeugte Dateien zum Einfügen im Dashboard (SQL komplett, Edge Function als eine Datei) |
 | `supabase/functions/analyse/` | Edge Function: KI-Einordnung und Speichern der Runde |
 | `supabase/functions/_shared/` | Gemeinsamer Code von App und Funktion: Typen, Punktelogik, KI-Prompt und -Prüfung, Moderationsfilter |
