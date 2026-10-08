@@ -13,7 +13,15 @@ Du bist die **Koordination**: Du startest Skripte und Agenten und prüfst, ob di
 
 Alle Befehle **führst du aus** (`npm run -s …`), die Skripte musst du nicht lesen. Arbeitsordner: `.cache/entwurf/<ID>/`. Lange Ausgaben stehen in Dateien – hole sie nicht in deinen Kontext, wenn die Zahlen der Skriptausgabe genügen. Windows: [reference/windows.md](reference/windows.md). Fehlermeldungen: [reference/fehlerbilder.md](reference/fehlerbilder.md).
 
-**Mehrere Themen:** nacheinander, je Thema Schritte 0–4, am Ende ein Pull Request. Bund und Länder in einem Durchgang (ohne `--bund`/`--land` laufen alle Programme; Landesprogramme nur, wenn das Thema Landesursachen hat).
+Bund und Länder in einem Durchgang (ohne `--bund`/`--land` laufen alle Programme; Landesprogramme nur, wenn das Thema Landesursachen hat).
+
+**Mehrere Themen** (auch Nachträge aus `/forderung-erfassen`, deren Arbeitsdatei mit `nachtrag` schon steht): Schritte 0–1 je Thema, dann **gemeinsam erfassen** – jedes Programm wird einmal gelesen statt einmal je Thema:
+
+```bash
+npm run -s entwurf:sammelauftrag '--' .cache/entwurf/<ID>/erfassung.json .cache/entwurf/<ID>/erfassung.json …
+```
+
+Je Sammelauftrag ein Agent `programm-erfassung` (ohne Parameter `model`), Auftrag nur: „Erledige den Sammelauftrag `.cache/entwurf/sammel/auftraege/<Name>.md` nach `.claude/agents/programm-erfassung.md`.“ Er schreibt je Thema die gewohnte Ergebnisdatei und prüft sie selbst. Rückfragen gehen per SendMessage an denselben Agenten und nennen das Thema. Kosten je Agent in `protokoll/kosten.md` des ersten Themas, mit den Themen-IDs. Ab `zusammenfuehren` läuft alles **je Thema** weiter (eigene Blindliste, eigener Agent `blind-bewertung`, eigener Commit) – die Bewertung mischt keine Themen. `npm test` nur einmal nach dem letzten Thema, am Ende ein Pull Request.
 
 Fortschritt je Thema in `.cache/entwurf/<ID>/fortschritt.md` (eine Zeile je Schritt: erledigt, nächster Befehl); bei Unterbrechung dort weitermachen.
 
@@ -39,11 +47,11 @@ npm run -s entwurf:treffer '--' .cache/entwurf/<ID>/erfassung.json '--vorab'
 npm run -s entwurf:auftrag '--' .cache/entwurf/<ID>/erfassung.json
 ```
 
-`NICHT GELADEN` → „Programm nicht erreichbar“ unten.
+`NICHT GELADEN` → „Programm nicht erreichbar“ unten. `entwurf:auftrag` lehnt ab, solange eine Ursache der Programme keine Regel oder keine Suchbegriffe im Leitfaden hat: dann beides ohne Blick in Programme ergänzen (aus der Perspektivenprüfung, unter Phase-A-Sperre wie die Hebel-Checkliste, eigener Commit). Meldet es einen Begriff bei mehreren Ursachen, prüfe, ob die Regeln die Fundstellen eindeutig zuordnen; sonst gemeinsame Regel oder `gekoppelt` – jetzt, nicht als Rückfrage an jedes Programm.
 
 ## 2. Erfassen
 
-Je Auftrag ein Agent `programm-erfassung`, bis zu sieben gleichzeitig. Das Modell steht in der Agentenbeschreibung – **keinen** Parameter `model` setzen, damit alle Programme mit demselben Modell laufen. Auftrag nur dieser Satz:
+Je Auftrag (bei mehreren Themen: je Sammelauftrag, siehe oben) ein Agent `programm-erfassung`, bis zu sieben gleichzeitig. Das Modell steht in der Agentenbeschreibung – **keinen** Parameter `model` setzen, damit alle Programme mit demselben Modell laufen. Auftrag nur dieser Satz:
 
 > Erledige den Erfassungsauftrag `.cache/entwurf/<ID>/auftraege/<Name>.md` nach `.claude/agents/programm-erfassung.md`.
 
@@ -84,8 +92,9 @@ npm run -s entwurf:eintragen '--' .cache/entwurf/<ID>/erfassung.json .cache/entw
 npm run daten:pruefen
 npm run -s zitate:pruefen '--' '--thema' <ID>
 npm run seed
-npm test
 ```
+
+Danach einmal je Lauf (bei mehreren Themen nach dem letzten): `npm test -- --reporter=dot`.
 
 `zitate:pruefen` meldet ein Zitat: Rückfrage an das Programm (neu zitieren), dann ab Schritt 2 „zusammenführen“ und Teil-Neubewertung. Nie selbst „passend machen“.
 

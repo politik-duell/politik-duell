@@ -13,13 +13,9 @@ Eine Forderung („weniger X“, „Y einführen“) ist im Politik-Duell ein **
 
 Du bist Koordination wie in `/thema-erfassen` (liest keine Programme, vergibst keine Werte). Die Befehle und Agenten sind dieselben; Unterschiede stehen hier.
 
-**Mehrere Themen** (durch „|“ getrennt): Schritte 1–2 je Thema. In Schritt 3 je Thema Arbeitsordner, `entwurf:treffer --vorab` und `entwurf:auftrag`, dann **gemeinsam erfassen** (jedes Programm wird einmal gelesen statt einmal je Thema):
+**Mehrere Themen** (durch „|“ getrennt): Schritte 1–2 je Thema, in Schritt 3 je Thema die Arbeitsdatei, dann gemeinsam erfassen wie in `/thema-erfassen` → „Mehrere Themen“ (`entwurf:sammelauftrag`, ein Agent je Programm für alle Themen; ab `zusammenfuehren` je Thema).
 
-```bash
-npm run -s entwurf:sammelauftrag '--' .cache/entwurf/<ID>/erfassung.json .cache/entwurf/<ID>/erfassung.json …
-```
-
-Je Sammelauftrag ein Agent `programm-erfassung` (ohne Parameter `model`), Auftrag nur: „Erledige den Sammelauftrag `.cache/entwurf/sammel/auftraege/<Name>.md` nach `.claude/agents/programm-erfassung.md`.“ Er schreibt je Thema die gewohnte Ergebnisdatei und prüft sie selbst. Rückfragen gehen per SendMessage an denselben Agenten und nennen das Thema. Kosten je Agent in `protokoll/kosten.md` des ersten Themas, mit den Themen-IDs. Ab `zusammenfuehren` läuft alles **je Thema** weiter wie unten (eigene Blindliste, eigener Agent `blind-bewertung`, eigener Commit) – die Bewertung mischt keine Themen.
+**Zusammen mit neuen Themen** (aus `/liste-einordnen`): nur Schritte 1–2 und die Arbeitsdatei aus Schritt 3; erfasst wird in **einem** Sammeldurchgang mit den neuen Themen (`/thema-erfassen` → „Mehrere Themen“), damit kein Programm zweimal gelesen wird.
 
 ## 1. Gibt es den Lösungsweg schon?
 

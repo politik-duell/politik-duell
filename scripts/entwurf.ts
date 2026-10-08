@@ -823,7 +823,7 @@ function pruefeEinzel(was: string, b: Einzelbewertung): string[] {
 
 /** Ursachen, die für mindestens ein Programm der Erfassung zählen (Landesprogramme nur für Landesursachen). */
 const imNachtrag = (e: Pick<Erfassung, 'nachtrag'>, id: number) => !e.nachtrag || String(id) in e.nachtrag.richtungen
-const ursachenDerErfassung = (k: Katalog, e: Erfassung) =>
+export const ursachenDerErfassung = (k: Katalog, e: Pick<Erfassung, 'thema_id' | 'nachtrag' | 'programme'>) =>
   k.ursachen.filter((u) => u.thema_id === e.thema_id && imNachtrag(e, u.id) && e.programme.some((p) => !p.land || (u.ebene ?? 'bund') === 'land'))
 
 /** Ursachen, für die ein Programm durchsucht wird. */
@@ -1074,6 +1074,37 @@ export function pruefeLeitfaden(k: Katalog, l: Leitfaden): string[] {
           f.push(`Leitfaden: gekoppelt ${JSON.stringify(g)} – je Gruppe mindestens zwei verschiedene Ursachen des Themas`)
   }
   return f
+}
+
+/**
+ * Lücken im Leitfaden, die sonst erst nach der Erfassung als Rückfrage an alle Programme auffallen (Thema 18:
+ * eine Runde an sieben Programme kostete mehr Tokens als die Erfassung selbst). Fehler: eine Ursache ohne
+ * Suchbegriffe oder ohne Regel, die sie abgrenzt. Hinweise: ein Begriff, der bei mehreren Ursachen steht, ohne
+ * Regel, die diese Ursachen gemeinsam nennt, und ohne `gekoppelt` – dann entscheidet jeder Agent selbst, wohin
+ * eine Fundstelle gehört. `ursachen`: nur diese prüfen (Standard: alle des Themas).
+ */
+export function leitfadenLuecken(k: Katalog, l: Leitfaden, ursachen?: number[]): { fehler: string[]; hinweise: string[] } {
+  const ids = ursachen ?? k.ursachen.filter((u) => u.thema_id === l.thema_id).map((u) => u.id)
+  const fehler: string[] = []
+  for (const u of ids) {
+    if (!Object.keys(l.suchbegriffe?.[String(u)] ?? {}).length) fehler.push(`Leitfaden ${l.thema_id}: Ursache ${u} ohne Suchbegriffe – je Lösungsrichtung eigene Begriffe, vor dem Erfassen`)
+    if (!(l.regeln ?? []).some((r) => r.ursachen?.includes(u))) fehler.push(`Leitfaden ${l.thema_id}: Ursache ${u} ohne Regel – was gehört dazu, was nicht (vor dem Erfassen, sonst klären es Rückfragen an jedes Programm)`)
+  }
+  const bei = new Map<string, Set<number>>()
+  for (const [u, richtungen] of Object.entries(l.suchbegriffe ?? {}))
+    for (const begriffe of Object.values(richtungen))
+      for (const b of begriffe) {
+        const key = b.trim().toLowerCase()
+        bei.set(key, (bei.get(key) ?? new Set()).add(Number(u)))
+      }
+  const hinweise: string[] = []
+  for (const [b, menge] of bei) {
+    const gruppe = [...menge].sort((a, c) => a - c)
+    if (gruppe.length < 2 || !gruppe.some((u) => ids.includes(u))) continue
+    const geregelt = (l.regeln ?? []).some((r) => gruppe.every((u) => r.ursachen?.includes(u))) || (l.gekoppelt ?? []).some((g) => gruppe.every((u) => g.includes(u)))
+    if (!geregelt) hinweise.push(`Leitfaden ${l.thema_id}: „${b}“ steht bei ${gruppe.join(' und ')} – grenzen die Regeln das ab, oder braucht es eine gemeinsame Regel bzw. \`gekoppelt\`?`)
+  }
+  return { fehler, hinweise }
 }
 
 /** Hinweise zu Zitaten, die eine Rückfrage auslösen würden (keine Fehler – der Agent prüft die Stelle). */

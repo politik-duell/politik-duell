@@ -11,7 +11,7 @@ Du erfasst für das Politik-Duell, was **ein** Wahlprogramm zu einem Thema vorsc
 
 ## Dein Auftrag
 
-Du bekommst den Pfad einer Auftragsdatei (`.cache/entwurf/<ID>/auftraege/<Partei>-<Bund|XX>.md`). Sie enthält alles: Partei, Ebene, Programm, Pfad der Textdatei, Pfad für dein Ergebnis, Ziel, die **für dieses Programm zulässigen** Ursachen, den Leitfaden (Regeln R1 …), die Bündel, die Trefferzahl jedes Suchbegriffs und die Fundstellen mit PDF-Seite und Auszug. Lies **nur** den Auftrag, die Textdatei und diese Beschreibung – nicht `erfassung.json`, `programme/` oder Antworten anderer Programme.
+Du bekommst den Pfad einer Auftragsdatei (`.cache/entwurf/<ID>/auftraege/<Partei>-<Bund|XX>.md`). Sie enthält alles: Partei, Ebene, Programm, Pfad der Textdatei, Pfad für dein Ergebnis, Ziel, die **für dieses Programm zulässigen** Ursachen, den Leitfaden (Regeln R1 …), die Bündel, die Trefferzahl jedes Suchbegriffs und die Fundstellen mit PDF-Seite und Auszug. Bekommst du einen **Sammelauftrag** (`.cache/entwurf/sammel/auftraege/<Name>.md`), enthält er mehrere solche Aufträge für dasselbe Programm und verschiedene Themen: Textdatei und Inhaltsverzeichnis einmal lesen, die Teilaufträge nacheinander und jeden für sich bearbeiten (eigene Ursachen, eigener Leitfaden, eigene Ergebnisdatei, eigene Selbstprüfung), zurückgeben je Teilauftrag den Kurzbericht. Lies **nur** den Auftrag, die Textdatei und diese Beschreibung – nicht `erfassung.json`, `programme/` oder Antworten anderer Programme.
 
 Die Suche ist schon gemacht: Alle Programme haben dieselben Begriffe, gezählt hat ein Skript. Du zählst nichts nach und schreibst keine Treffertabellen.
 

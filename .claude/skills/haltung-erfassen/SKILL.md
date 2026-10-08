@@ -46,7 +46,7 @@ npm run -s haltung:eintragen '--' <ID> <ID> …
 npm run daten:pruefen
 npm run -s zitate:pruefen
 npm run seed
-npm test
+npm test -- --reporter=dot
 ```
 
 Haltungen mit weniger als drei erkennbaren Positionen trägt das Skript nicht ein (Meldung, die übrigen laufen weiter). Sie bleiben als Phase A liegen und werden in `docs/haltungen.md` als „zurückgestellt“ vermerkt – kein `--trotzdem` ohne Entscheidung der Betreiberin.
