@@ -584,3 +584,58 @@ describe('Eingaben ohne Wertung (review_eingaben)', () => {
     await db.exec('delete from review_eingaben')
   })
 })
+
+describe('Lücken und Kennzahlen (Admin)', () => {
+  beforeAll(async () => {
+    await db.exec('delete from runden')
+    const instrument = INSTRUMENTE[0].id
+    const haltung = HALTUNGEN[0].id
+    await db.exec(`insert into runden (created_at, problem_text, stichwort, status, thema_id, instrument_id, haltung_id, testphase) values
+      (now(),                     'a', 'Handwerker ',  'ungeprueft',     null, null, null, false),
+      (now(),                     'b', 'handwerker',   'ungeprueft',     null, null, null, true),
+      (now() - interval '40 days','c', 'Handwerker',   'ungeprueft',     null, null, null, false),
+      (now(),                     'd', 'Miete',        'unvollstaendig', 2,    null, null, false),
+      (now(),                     'e', 'Miete',        'gewertet',       2,    null, null, false),
+      (now(),                     'f', 'Mietdeckel',   'forderung',      2,    null, null, false),
+      (now(),                     'g', 'Mietdeckel',   'forderung',      2,    ${instrument}, null, false),
+      (now(),                     'h', 'Tempolimit',   'wert',           null, null, null, false),
+      (now(),                     'i', 'Bildung',      'wert',           null, null, ${haltung}, false)`)
+    await db.exec(`insert into runden (problem_text, status) values ('', 'grenze')`)
+  })
+
+  it('nur Admins sehen Lücken und Kennzahlen', async () => {
+    for (const sicht of ['luecken', 'kennzahlen_woche']) {
+      await expect(alsRolle('anon', () => db.query(`select * from ${sicht}`))).rejects.toThrow()
+      expect((await alsNutzer(() => db.query(`select * from ${sicht}`))).rows).toHaveLength(0)
+      expect((await alsAdmin(() => db.query(`select * from ${sicht}`))).rows.length).toBeGreaterThan(0)
+    }
+  })
+
+  it('zählt Lücken je Thema bzw. Stichwort, ohne Grenzfälle und ohne Runden mit Karte', async () => {
+    const { rows } = await alsAdmin(() =>
+      db.query<{ art: string; thema_id: number | null; stichwort: string | null; anzahl_30_tage: number; anzahl: number; anzahl_testphase: number }>(
+        'select art, thema_id, stichwort, anzahl_30_tage, anzahl, anzahl_testphase from luecken order by art, stichwort',
+      ),
+    )
+    expect(rows).toEqual([
+      { art: 'forderung_ohne_loesungsweg', thema_id: 2, stichwort: null, anzahl_30_tage: 1, anzahl: 1, anzahl_testphase: 0 },
+      { art: 'haltung_ohne_karte', thema_id: null, stichwort: 'tempolimit', anzahl_30_tage: 1, anzahl: 1, anzahl_testphase: 0 },
+      { art: 'kein_thema', thema_id: null, stichwort: 'handwerker', anzahl_30_tage: 2, anzahl: 3, anzahl_testphase: 1 },
+      { art: 'unvollstaendig', thema_id: 2, stichwort: null, anzahl_30_tage: 1, anzahl: 1, anzahl_testphase: 0 },
+    ])
+  })
+
+  it('zählt Runden je Woche und Testphase nach Status', async () => {
+    const { rows } = await alsAdmin(() =>
+      db.query<Record<string, number | boolean>>(
+        `select testphase, sum(runden)::int as runden, sum(gewertet)::int as gewertet, sum(ungeprueft)::int as ungeprueft,
+           sum(forderung_mit_karte)::int as forderung_mit_karte, sum(wert_mit_karte)::int as wert_mit_karte, sum(grenze)::int as grenze
+         from kennzahlen_woche group by testphase order by testphase`,
+      ),
+    )
+    expect(rows).toEqual([
+      { testphase: false, runden: 9, gewertet: 1, ungeprueft: 2, forderung_mit_karte: 1, wert_mit_karte: 1, grenze: 1 },
+      { testphase: true, runden: 1, gewertet: 0, ungeprueft: 1, forderung_mit_karte: 0, wert_mit_karte: 0, grenze: 0 },
+    ])
+  })
+})

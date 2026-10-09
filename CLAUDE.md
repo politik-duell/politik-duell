@@ -87,6 +87,7 @@ haltung_zielkonflikte (haltung_id, seite, text, quelle_url)
 review_eingaben (id, created_at, grund, eingaben text[], thema_id, zusammenfassung)
   -- Runden ohne Wertung im Wortlaut, nur Admins, gelöscht beim Sichten oder nach 30 Tagen
   -- View haltungen_vollstaendig: Haltungen mit Position aller Parteien („Alle sieben oder keine“)
+  -- Views luecken, kennzahlen_woche: Zahlen aus runden für die Admin-Ansicht (Reiter „Lücken“), nur Admins
 
 runden (
   id, created_at, thema_id null, instrument_id null, haltung_id null, problem_text,
