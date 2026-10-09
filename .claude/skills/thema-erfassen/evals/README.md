@@ -29,3 +29,31 @@ Szenarien im Format der Skill-Best-Practices (`skills`, `query`, `files`, `expec
 | Kurzbericht | – | Der feste Block war korrekt; der Agent hängte aber eine frei formulierte Zusammenfassung an |
 
 **Schluss:** Zitate und Seiten erkennt die kleinste Stufe verlässlich (die Selbstprüfung erzwingt das ohnehin). Zusagen und Leitfaden-Regeln nicht: Rund ein Drittel der Maßnahmen widerspricht dem Leitfaden oder ist ein Prüfauftrag, drei Zusagen fehlen. Das würde Rückfragen und Bewertung belasten und Programme ungleich behandeln, wenn nicht alle mit derselben Stufe laufen. **Der Skill bleibt unverändert:** Erfassung mit der nächstkleineren Stufe (mittlere), die kleinste nicht. Ein neuer Vergleichstest lohnt sich mit einer neuen Modellgeneration.
+
+## Vergleichstest: vorsortierter Auszug statt ganzer Textdatei
+
+**Frage:** Findet `programm-erfassung` dieselben Maßnahmen mit weniger Tokens, wenn die Textdatei nur die Seiten mit Treffern der Suchbegriffe enthält (Vorschlag aus dem Konzept „Einmal lesen, oft antworten“)?
+
+**Aufbau (9. 10. 2026):** Themen 30 (Sucht und Glücksspiel) und 33 (Mediennutzung von Kindern und Jugendlichen), sechs Bundesprogramme (BSW nicht ladbar: HTTP 503). Je Programm und Thema zwei Agenten `programm-erfassung` mit demselben Modell, Arbeitsordner `.cache/vergleich/<variante>/<ID>/` (nicht im Repository):
+
+- **voll:** Auftrag wie `entwurf:auftrag`, ganze Textdatei.
+- **auszug:** derselbe Auftrag, aber die Textdatei enthält nur Seiten mit Treffern und je eine Nachbarseite (Thema 30: 12–44 Seiten je Programm, Thema 33: 3–21; zusammen 11–55 % der Seiten). Zusatz im Auftrag: kein Inhaltsverzeichnis, nichts außerhalb des Auszugs lesen.
+
+Vergleich mit den 34 Bundes-Maßnahmen dieser sechs Parteien in der archivierten Erfassung vom 6. 10. 2026 (`daten/protokolle/30|33/2026-10-06-bund-land-BE-MV-ST/erfassung.json`). Gleich heißt: Seite ±1 und mindestens 60 % gemeinsame Wörter (bezogen auf das kürzere Zitat). Tokens laut Agentenabschluss.
+
+**Ergebnis:**
+
+| | voll | auszug |
+| --- | --- | --- |
+| Maßnahmen gefunden | 33 | 30 |
+| davon wie im Archiv | 31 von 34 | 25 von 34 |
+| im Archiv, hier fehlend | 3 (SPD S. 30 zu 30; Grüne S. 77 und AfD S. 50 zu 33) | 9 |
+| Tokens (12 Agenten) | 434.869 (Ø 36.239) | 575.500 (Ø 47.958) |
+| Laufzeit (Summe) | 346 s | 286 s |
+
+- **Der Auszug verliert Maßnahmen, die keinen Suchbegriff enthalten.** Grüne zu Thema 33: Die drei Zusagen auf S. 85 (Altersgrenzen, sichere Voreinstellungen, Bürgerrat) stehen auf einer Seite ohne Treffer; der volle Agent fand sie über das Kapitel im Inhaltsverzeichnis. Grüne zu Thema 30: Die Zusagen beginnen auf S. 94, der Auszug enthielt nur S. 95–97. Mehr Nachbarseiten würden den zweiten Fall auffangen, den ersten nicht.
+- **Der Auszug ist teurer, nicht billiger.** Der volle Agent liest gezielt: Fundstellen-Auszüge im Auftrag, Inhaltsverzeichnis, passende Seiten. Der Auszugs-Agent liest den ganzen Auszug, der bei vielen Treffern (Union zu Thema 30: 44 Seiten) größer ist als das, was der volle Agent tatsächlich liest.
+- **Streuung zwischen zwei vollen Läufen:** 31 von 34 gleich. SPD S. 30 und AfD S. 50 fehlen in beiden Varianten; das ist Streuung des Agenten, nicht Folge des Auszugs.
+- Die Schätzung im Konzept (rund 8.000 statt 48.000 Tokens je Thema und Programm) trifft nicht zu: Ein Erfassungs-Agent kostet schon mit ganzer Textdatei rund 36.000 Tokens, davon ein großer fester Teil für Agentenbeschreibung, Auftrag und Selbstprüfung.
+
+**Schluss:** **Der Skill bleibt unverändert.** Ein Auszug nach Suchbegriffen spart nichts und übersieht Zusagen, die anders formuliert sind als die Suchbegriffe. Dasselbe Risiko trägt Hebel 1 in `docs/token-verbrauch-erfassung.md` (Programme ohne Treffer überspringen): Seiten ohne Treffer enthielten hier drei Maßnahmen eines Programms.
