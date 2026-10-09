@@ -81,3 +81,26 @@ Vergleich mit den 34 Bundes-Maßnahmen dieser sechs Parteien in der archivierten
 - Fehlende Stellen unterscheiden sich zwischen den Läufen, aber nicht in der Zahl; das ist Streuung des Agenten wie im Test oben.
 
 **Schluss:** **Einzelaufträge bleiben Standard.** `--sammel` kann sich bei kleinen Themen (wenige Fundstellen je Programm) lohnen; ob die Grenze bei der Zahl der Fundstellen liegt, zeigt erst ein weiterer Lauf mit zwei kleinen Themen und einem großen Thema.
+
+## Vergleichslauf: Programmkatalog mit Haiku (`docs/plan-programmkatalog.md`)
+
+**Frage:** Erfasst ein themenunabhängiger Katalog (Haiku, je Kapitelblock ein Agent) die schon erfassten Maßnahmen und Haltungs-Positionen vollständig – und was kostet er im Vergleich zur Erfassung je Thema?
+
+**Aufbau (9. 10. 2026):** Bundesprogramme SPD (68 Seiten, 8 Blöcke) und AfD (177 Seiten, 9 Blöcke), zerlegt mit `katalog:absaetze` (30.000 Zeichen je Block), Agent `programm-katalog` (Haiku), Selbstprüfung `katalog:pruefen` (jeder Absatz erfasst, Satzverweise gültig, eigene Worte). Abgleich mit `katalog:vergleich` gegen die Bundes-Maßnahmen dieser Parteien in den Themen 6 und 27 und gegen alle Haltungs-Positionen. Gleich heißt: Aussage auf Seite ±1, die mindestens 60 % der Wörter des Zitats enthält.
+
+**Ergebnis:**
+
+| | SPD | AfD |
+| --- | --- | --- |
+| Aussagen im Katalog | 1.170 (zusage 626, ziel 369, lage 77, ablehnung 29, pruefauftrag 35, rueckblick 28, bedingung 6) | 1.099 (zusage 539, ziel 205, lage 199, ablehnung 122, bedingung 17, pruefauftrag 16, rueckblick 1) |
+| Themen-Maßnahmen (6, 27) wiedergefunden | 17 von 17 (16 als Zusage/Ablehnung/Bedingung) | 15 von 15 (alle) |
+| Haltungs-Positionen wiedergefunden | 19 von 19 | 20 von 20 |
+| Tokens (laut Agentenabschluss) | 728.661 (8 Agenten; Block 3 als Test mit allgemeinem Agenten: 136.318) | 669.266 (9 Agenten) |
+| Korrekturrunden | 0–1 je Block, alle „In Ordnung“ | 0–1 je Block |
+
+- **Wiederfund vollständig.** Die eine SPD-Maßnahme ohne passende Art (T6/M6016, S. 55: „Grenzverfahren müssen hohe rechtliche Standards gewährleisten“) hat Haiku mit Zielen desselben Absatzes zu einer `ziel`-Aussage zusammengefasst. Folge: Kandidaten für Themen auch aus `ziel` ziehen, wenn ein Suchbegriff trifft (steht im Plan unter Risiken), und in der Agentenbeschreibung das Zusammenfassen nur für `lage` und `rueckblick` erlauben.
+- **Stichprobe (Opus, 12 Aussagen):** Art und Kurzbeschreibung stimmen; Kurzbeschreibungen in eigenen Worten, ohne Parteinamen.
+- **Schwäche der Zerlegung:** Ein Satz über einen Seitenwechsel wird in zwei Absätze geteilt (AfD Block 1/2). Für die Zuordnung harmlos, für Zitate über die Seitengrenze nachbessern.
+- **Kosten:** Ø 78.851 Tokens je Block mit dem eigenen Agenten (ohne den Testblock), also rund 670.000 Tokens (Haiku) je Programm, einmalig. Die bisherige Erfassung kostet Ø 36.239 Tokens (Sonnet) je Thema und Programm (Vergleichstest oben). Der Katalog eines Programms entspricht damit in Tokens rund 18–19 Themen-Erfassungen; die Zuordnung je Thema (ein Haiku-Agent für alle Programme) kommt hinzu und ist noch nicht gemessen.
+
+**Schluss:** Der Katalog findet alles, was die bisherige Erfassung gefunden hat. In Tokens lohnt er sich erst über viele künftige Themen, Forderungen und Haltungen – für die schon erfassten 37 Themen spart er nichts mehr. Vor dem Ausrollen auf alle Programme: Ausgabe verdichten (Zeilenformat statt JSON, `lage`/`rueckblick` nur unter `ohne`) und die Zuordnung je Thema messen.

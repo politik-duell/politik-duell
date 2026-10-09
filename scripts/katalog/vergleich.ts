@@ -35,7 +35,7 @@ for (const f of readdirSync('daten/haltungen')) {
 }
 
 const zeilen: string[] = []
-const zaehler = { thema: [0, 0, 0], haltung: [0, 0, 0] } // gefunden, davon Art passend, gesamt
+const zaehler = { thema: [0, 0, 0, 0], haltung: [0, 0, 0, 0] } // gefunden, davon Art passend, gesamt, in einer einzigen Aussage
 const passend = { thema: ['zusage', 'ablehnung', 'bedingung'], haltung: ['zusage', 'ablehnung', 'bedingung', 'ziel', 'pruefauftrag', 'lage'] }
 for (const r of refs) {
   const z = norm(r.zitat)
@@ -50,13 +50,14 @@ for (const r of refs) {
   const arten = [...new Set(treffer.map((b) => b.a.art))]
   const artOk = arten.some((a) => passend[r.art].includes(a))
   const c = zaehler[r.art]; c[2]++; if (gefunden) { c[0]++; if (artOk) c[1]++ }
+  if ((bewertet[0]?.wert ?? 0) >= 0.6) c[3]++
   zeilen.push(`| ${r.quelle} | S. ${r.seite} | ${gefunden ? 'ja' : '**nein**'} | ${Math.round(Math.max(bewertet[0]?.wert ?? 0, vereint) * 100)} % | ${arten.join(', ') || '–'} | ${treffer[0]?.a.kurz ?? '–'} |`)
 }
 const bericht = `## ${name} (Partei ${partei}), Themen ${themen.join(', ')}
 
 Katalog: ${aussagen.length} Aussagen (${Object.entries(aussagen.reduce((m, a) => ({ ...m, [a.art]: (m[a.art] ?? 0) + 1 }), {} as Record<string, number>)).map(([a, n]) => `${a} ${n}`).join(', ')})
 
-- Themen-Maßnahmen wiedergefunden: ${zaehler.thema[0]} von ${zaehler.thema[2]}, davon als Zusage/Ablehnung/Bedingung: ${zaehler.thema[1]}
+- Themen-Maßnahmen wiedergefunden: ${zaehler.thema[0]} von ${zaehler.thema[2]}, davon als Zusage/Ablehnung/Bedingung: ${zaehler.thema[1]}, in einer einzigen Aussage: ${zaehler.thema[3]}
 - Haltungs-Positionen wiedergefunden: ${zaehler.haltung[0]} von ${zaehler.haltung[2]}
 
 | Quelle | Seite | gefunden | Wortanteil | Art im Katalog | Kurzbeschreibung im Katalog |
