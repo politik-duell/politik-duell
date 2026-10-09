@@ -1,4 +1,11 @@
 {
+  "permissions": {
+    "deny": [
+      "Read(./supabase/seed.sql)",
+      "Read(./supabase/seed-teile/**)",
+      "Read(./dist/**)"
+    ]
+  },
   "extraKnownMarketplaces": {
     "claude-plugins-official": {
       "source": {

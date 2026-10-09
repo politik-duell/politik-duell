@@ -304,6 +304,12 @@ describe('Erfassung und Bewertung prüfen', () => {
     expect(fehler).toMatch(/weder Maßnahmen noch keine_massnahme/)
   })
 
+  it('meldet keine_massnahme über 400 Zeichen', () => {
+    const e = erfassung()
+    e.programme[1].keine_massnahme = 'x'.repeat(401)
+    expect(pruefeErfassung(katalog(), e).join('\n')).toMatch(/keine_massnahme ist länger als 400 Zeichen \(401\)/)
+  })
+
   it('meldet fehlende Kennungen, Instrumente über zwei Ebenen und Wirksamkeit 3 ohne Beleg', () => {
     const e = erfassung()
     const b = bewertung(e)

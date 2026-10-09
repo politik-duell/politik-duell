@@ -1142,6 +1142,8 @@ export function pruefeProgramm(k: Katalog, e: Pick<Erfassung, 'thema_id' | 'leit
   if (!Array.isArray(p.massnahmen)) return [...f, `${name}: massnahmen fehlen (Liste, auch leer)`]
   if (!p.massnahmen.length && !p.keine_massnahme?.trim()) f.push(`${name}: weder Maßnahmen noch keine_massnahme`)
   if (p.massnahmen.length && p.keine_massnahme) f.push(`${name}: Maßnahmen und keine_massnahme zugleich`)
+  // Gleiche Grenze wie die Begründung im Katalog (src/data/katalog.ts); sonst lehnt erst entwurf:eintragen ab und das Programm wird neu erfasst.
+  if (typeof p.keine_massnahme === 'string' && p.keine_massnahme.length > 400) f.push(`${name}: keine_massnahme ist länger als 400 Zeichen (${p.keine_massnahme.length}) – Kapitel und Seiten nennen, nicht nacherzählen`)
   for (const b of p.neue_buendel ?? [])
     if (!b || typeof b.name !== 'string' || !b.name.trim() || !ursachen.has(b.ursache)) f.push(`${name}: neue_buendel – je Eintrag { "ursache": <ID des Themas>, "name": "…", "seite": N }`)
   for (const b of p.eigene_synonyme ?? [])
