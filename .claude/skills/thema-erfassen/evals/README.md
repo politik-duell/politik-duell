@@ -74,7 +74,7 @@ Vergleich mit den 34 Bundes-Maßnahmen dieser sechs Parteien in der archivierten
 | Tokens | 434.869 (Ø 36.239 je Agent) | 332.347 (Ø 55.391 je Agent) |
 | Laufzeit (Summe / längster Agent) | 346 s / 38 s | 303 s / 62 s |
 
-- **Diesmal 24 % weniger Tokens bei gleicher Fundquote** – das Gegenteil des Laufs mit 18 und 30 (+39 %). Ein Erfassungs-Agent hat einen großen festen Teil (Agentenbeschreibung, Auftrag, Inhaltsverzeichnis, Selbstprüfung); den spart der Sammelauftrag einmal je Programm.
+- **24 % weniger Tokens bei gleicher Fundquote.** Der frühere Lauf mit 18 und 30 (+39 %) gilt nach Entscheidung der Betreiberin als nicht repräsentativ und dient nicht als Vergleich; Sammelaufträge sind seitdem Standard bei mehreren Themen. Ein Erfassungs-Agent hat einen großen festen Teil (Agentenbeschreibung, Auftrag, Inhaltsverzeichnis, Selbstprüfung); den spart der Sammelauftrag einmal je Programm.
 - **Überschneidung der Trefferseiten erklärt den Unterschied nicht.** Anteil gemeinsamer Trefferseiten (bezogen auf das Thema mit weniger Seiten): 18+30 38 %, 30+33 41 % (mit Nachbarseite 63 % bzw. 68 %). Eine Prüfung „Sammelaufträge nur bei gemeinsamen Kapiteln“ würde beide Paare gleich behandeln und wurde deshalb nicht gebaut.
 - **Wahrscheinlicher ist die Menge der Fundstellen.** Thema 18 hat in den sechs Programmen 137 Trefferseiten (Grüne 45), Thema 30 60, Thema 33 23. Bei kleinen Themen überwiegt der feste Teil, den das Bündeln spart; bei großen wächst der Kontext des ersten Themas im zweiten mit. Belegt ist das mit zwei Läufen nicht.
 - **Wartezeit etwa gleich:** Ein Sammel-Agent braucht länger, dafür laufen bei höchstens sieben gleichzeitigen Agenten 6 Sammelaufträge in einer Welle, 12 Einzelaufträge in zwei.
