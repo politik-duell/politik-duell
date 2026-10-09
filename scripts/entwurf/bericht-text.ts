@@ -2,6 +2,7 @@
 // gehört und sich aus den Dateien ergibt, wörtlich aus ihnen – nicht von der Koordination abgeschrieben.
 // Das spart Ausgabetokens und schließt Abschreibfehler aus. Die Koordination ergänzt nur Einordnung und
 // offene Fragen (.claude/skills/thema-erfassen/reference/pull-request.md).
+import { readFileSync } from 'node:fs'
 import type { Katalog } from '../../src/data/katalog.ts'
 import {
   bestaetigteUrsachen,
@@ -51,10 +52,11 @@ export function berichtText(d: BerichtDaten): string {
   const kurz = (p: { partei_id: number }) => k.parteien.find((x) => x.id === p.partei_id)?.kurzname ?? String(p.partei_id)
   const name = (p: ErfasstesProgramm) => programmName(kurz(p), p.land)
 
-  // Modelle: Kopf von rueckfragen.md (vor der Tabelle).
+  // Modelle: Kopf von rueckfragen.md (ältere Läufe), sonst aus den Agentenbeschreibungen.
   const rueckfragen = d.protokoll.get('rueckfragen.md') ?? ''
-  const kopf = rueckfragen.split('\n').filter((l) => /^Modell/.test(l.trim()))
-  z.push('**Modelle** (`protokoll/rueckfragen.md`):', '', ...(kopf.length ? kopf.map((l) => `- ${l.trim()}`) : ['- fehlt']), '')
+  const kopf = rueckfragen.split('\n').filter((l) => /^Modell/.test(l.trim())).map((l) => l.trim())
+  if (!kopf.length) kopf.push(...modelleAusAgenten())
+  z.push('**Modelle**:', '', ...(kopf.length ? kopf.map((l) => `- ${l}`) : ['- fehlt']), '')
 
   // Übersicht je Programm: erfasst → eingetragen (nach der Bewertung bestätigt), Rückfragen.
   const zuordnung = new Map((b?.zuordnung ?? []).map((x) => [x.kennung, x]))
@@ -166,4 +168,13 @@ function antwortEnde(text: string): string {
   } catch {
     return ''
   }
+}
+
+// Modell der Erfassung und der Bewertung aus dem Kopf der Agentenbeschreibungen (.claude/agents/).
+function modelleAusAgenten(): string[] {
+  const modell = (agent: string) => {
+    try { return readFileSync(`.claude/agents/${agent}.md`, 'utf8').match(/^model:\s*(\S+)/m)?.[1] } catch { return undefined }
+  }
+  const erfassung = modell('programm-erfassung'), bewertung = modell('blind-bewertung')
+  return [erfassung && `Modell der Erfassung: ${erfassung}`, bewertung && `Modell der Bewertung: ${bewertung}`].filter((x): x is string => !!x)
 }

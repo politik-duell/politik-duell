@@ -3,7 +3,7 @@ name: thema-erfassen
 description: Erfasst für ein oder mehrere Themen des Politik-Duells mit freigegebenen Ursachen (auch KI-Freigabe) die Maßnahmen aus allen Wahlprogrammen – je Programm ein Erfassungs-Agent, Bewertung ohne Parteinamen durch einen Blind-Agenten, Eintragen als ungeprüfter KI-Entwurf, automatische Prüfung, Pull Request. Aufruf mit Themen-IDs, z. B. /thema-erfassen 17 oder /thema-erfassen 19 20 --bund.
 argument-hint: <Themen-ID> [<Themen-ID> …] [--bund | --land XX …]
 disable-model-invocation: true
-model: sonnet
+model: opus
 ---
 
 # Thema erfassen (Maßnahmen, KI-Entwurf)
@@ -42,7 +42,7 @@ Je Auftrag ein Agent `programm-erfassung`, bis zu sieben gleichzeitig. Das Model
 
 > Erledige den Erfassungsauftrag `.cache/entwurf/<ID>/auftraege/<Name>.md` nach `.claude/agents/programm-erfassung.md`.
 
-Der Agent prüft sich selbst und speichert `programme/<Name>.json`. Fehlt eine Datei, denselben Agenten (SendMessage) die Fehler beheben lassen. Nach jedem Agenten eine Zeile in `protokoll/kosten.md` seines Themas: `| Agent | Programm | Tokens | Dauer |`.
+Der Agent prüft sich selbst und speichert `programme/<Name>.json`. Fehlt eine Datei, denselben Agenten (SendMessage) die Fehler beheben lassen. Was die Selbstprüfung bestanden hat, prüfst du nicht noch einmal.
 
 ```bash
 npm run -s entwurf:lauf '--' erfasst $E
@@ -53,7 +53,7 @@ Führt je Thema zusammen und zählt die Treffer.
 - **Rückfragen nur bei Skriptfehlern** (`zusammenfuehren` lehnt ein Programm ab) oder bei Hinweisen „viele Treffer, aber keine Maßnahme“: eine gebündelte Rückfrage an dieses Programm, Antwort nach `protokoll/erfassung-<Name>-rueckfrage-1.txt`. Keine Rückfragen zu Inhalt oder Zuordnung – das entscheidet die Bewertung.
 - **Eigene Synonyme, neue Bündel:** in den Leitfaden übernehmen (gilt für spätere Durchgänge); keine erneute Erfassung.
 - Nach einer Rückfrage `erfasst` erneut; meldet der Vergleich **entfallene** Maßnahmen, die die Rückfrage nicht betraf, mit derselben Rückfrage-Datei korrigieren lassen.
-- `protokoll/rueckfragen.md` je Thema: erste Zeilen „Modell der Erfassung: …“, „Modell der Bewertung: …“ (aus der Agentenbeschreibung), danach je Rückfrage eine Zeile `| Programm | Anlass | Ergebnis |` oder „keine“.
+- `protokoll/rueckfragen.md` je Thema: je Rückfrage eine Zeile `| Programm | Anlass | Ergebnis |`, sonst nur „keine“. Die Modelle liest der Bericht aus den Agentenbeschreibungen.
 
 ## 3. Bewerten ohne Parteinamen
 

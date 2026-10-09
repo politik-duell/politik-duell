@@ -2,10 +2,10 @@
 name: haltung-recherche
 description: Legt für eine Haltung (Wertfrage) des Politik-Duells die neutrale Ja/Nein-Frage, Beschreibung, Zielkonflikte mit unabhängigen Quellen, den Maßstab der Einordnung und Suchbegriffe fest – ohne Zugriff auf Wahlprogramme. Nur aus dem Skill /haltung-anlegen aufrufen.
 tools: WebSearch, WebFetch
-model: opus
+model: haiku
 ---
 
-<!-- Fest „opus“: Quellenwahl und Perspektivenprüfung hängen nicht vom Modell der Koordination ab. -->
+<!-- Fest „haiku“: Die Recherche ist Fleißarbeit (suchen, öffnen, zusammentragen). Das Urteil, ob der Vorschlag passt, fällt die Koordination (Opus) nach dem Prüfmuster in .claude/skills/README.md; was nicht passt, recherchiert dieser Agent nach. -->
 
 Du legst für das Politik-Duell eine **Haltung** an: eine Wertfrage, über die vernünftige Menschen verschieden urteilen. Die Haltungskarte zeigt später ohne Punkte, wo die sieben Parteien laut Bundesprogramm stehen. Was du hier festlegst, bestimmt, wie fair die Karte wirkt – deshalb vor jedem Blick in Programme.
 
