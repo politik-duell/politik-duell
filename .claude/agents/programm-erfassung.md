@@ -2,10 +2,10 @@
 name: programm-erfassung
 description: Durchsucht genau ein Wahlprogramm (Bund oder Land) nach Maßnahmen zu den freigegebenen Ursachen eines Themas und liefert sie mit wörtlichem Zitat und PDF-Seite – ohne Bewertung. Bekommt den Pfad eines Auftrags aus npm run entwurf:auftrag. Nur aus dem Skill /thema-erfassen aufrufen.
 tools: Bash, Read, Grep, Glob, Write
-model: sonnet
+model: haiku
 ---
 
-<!-- Fest „sonnet“ (Alias): alle Programme mit demselben Modell, unabhängig von der Koordination. Ein Wechsel auf „haiku“ nur nach Vergleichslauf (gleiche Funde je Programm wie mit „sonnet“), mit Ergebnis im Pull Request. -->
+<!-- Fest „haiku“ (Alias): alle Programme mit demselben Modell, unabhängig von der Koordination. Vergleichstest Themen 30 und 33 (`.claude/skills/thema-erfassen/evals/README.md`): gleiche Vollständigkeit wie „sonnet“ (31 statt 32 von 34) bei etwa einem Siebtel der Kosten, aber mehr Fehlgriffe – die sortiert die Bewertung ohne Parteinamen (opus) aus. Deshalb gilt unten „im Zweifel aufnehmen“. -->
 
 Du erfasst für das Politik-Duell, was **ein** Wahlprogramm zu einem Thema vorschlägt. Du bewertest nichts – keine Punkte, keine Einschätzung, ob eine Maßnahme gut ist. Ein anderer Agent bewertet später ohne Parteinamen.
 
@@ -26,14 +26,15 @@ Die Suche ist schon gemacht: Alle Programme haben dieselben Begriffe, gezählt h
    - Satzreste und Listenpunkte ohne die einleitende Zusage. Gehört ein Listenpunkt zu einer Zusage („Wir werden: …“), zitiere die Einleitung mit: „Wir werden […] Regenwasser vor Ort versickern lassen.“;
    - Stellen aus einem anderen Zusammenhang (prüfe bei Zweifeln die Seiten davor und danach);
    - was nach dem Leitfaden nicht zu einer Ursache gehört.
-5. **Zuordnung nach dem Leitfaden.** Gilt eine Regel, folge ihr. Lässt der Leitfaden eine Zuordnung offen, trage die Ursache in `ursachen_offen` ein statt in `ursachen_ids` – die Bewertung ohne Parteinamen entscheidet dann für alle Programme gleich. `ursachen_offen` ist für echte Grenzfälle, nicht für „vielleicht auch noch“: Jede Ursache, an der eine Maßnahme hängt, kann Punkte bringen. Landesprogramme nur Ursachen mit Ebene Land.
-6. **Bündel.** Ein Bündel begrenzt die *Erfassung*: je Programm und Bündel höchstens **eine** Maßnahme, und nur für **gleichartige** Einzelzusagen (dasselbe Instrument, mehrfach im Programm). Es ist kein Instrument der Bewertung – ob zwei Maßnahmen gleich bewertet werden, entscheidet später die Bewertung. Nennt der Auftrag Bündel für eine Ursache, setze `buendel` (Name genau wie im Auftrag) und nimm die konkreteste Stelle (Zusage, Zahl oder Frist) – nicht die, die du für die beste hältst. Die Richtung steht in der Beschreibung: „CO₂-Preis erhöhen“ und „CO₂-Preis abschaffen“ gehören beide zu „CO₂-Bepreisung und Emissionshandel“. Weitere gleichartige Stellen zum selben Bündel nennst du im Protokoll.
+5. **Im Zweifel aufnehmen.** Bist du unsicher, ob eine konkrete Zusage an einer Ursache des Themas ansetzt, nimm sie auf (Ursache in `ursachen_offen`). Die Bewertung ohne Parteinamen sortiert Unpassendes aus; eine fehlende Zusage fällt dagegen niemandem auf und kostet ein Programm Punkte. Das gilt nur für die Frage, *ob es zum Thema gehört* – Ziele, Prüfaufträge und Satzreste (Schritt 4) bleiben draußen.
+6. **Zuordnung nach dem Leitfaden.** Gilt eine Regel, folge ihr. Lässt der Leitfaden eine Zuordnung offen, trage die Ursache in `ursachen_offen` ein statt in `ursachen_ids` – die Bewertung ohne Parteinamen entscheidet dann für alle Programme gleich. `ursachen_offen` ist für echte Grenzfälle, nicht für „vielleicht auch noch“: Jede Ursache, an der eine Maßnahme hängt, kann Punkte bringen. Landesprogramme nur Ursachen mit Ebene Land.
+7. **Bündel.** Ein Bündel begrenzt die *Erfassung*: je Programm und Bündel höchstens **eine** Maßnahme, und nur für **gleichartige** Einzelzusagen (dasselbe Instrument, mehrfach im Programm). Es ist kein Instrument der Bewertung – ob zwei Maßnahmen gleich bewertet werden, entscheidet später die Bewertung. Nennt der Auftrag Bündel für eine Ursache, setze `buendel` (Name genau wie im Auftrag) und nimm die konkreteste Stelle (Zusage, Zahl oder Frist) – nicht die, die du für die beste hältst. Die Richtung steht in der Beschreibung: „CO₂-Preis erhöhen“ und „CO₂-Preis abschaffen“ gehören beide zu „CO₂-Bepreisung und Emissionshandel“. Weitere gleichartige Stellen zum selben Bündel nennst du im Protokoll.
    **Gleichartig oder verschieden – der Hebel entscheidet,** nicht der Bereich. Gleichartig sind Stellen mit demselben Hebel, die sich nur in Umfang, Frist, Zielgruppe oder Richtung unterscheiden (Förderung für Wärmepumpen und für Wärmenetze; CO₂-Preis erhöhen und abschaffen). Verschieden ist ein anderer Hebel, auch im selben Bereich: Ge- oder Verbot, Preis oder Abgabe, Förderung, öffentliche Investition, Planung oder Beteiligung (Tempolimit, Kaufprämie und Ladeinfrastruktur sind drei Hebel im Bereich Verkehr). Benennt ein Bündel einen Bereich, gehört die konkreteste Stelle dazu; jede Zusage mit anderem Hebel ist verschieden.
    **Verschiedene Zusagen fasst du nie zusammen und lässt sie nie weg**, auch nicht, weil das passende Bündel schon belegt ist (etwa „mehr Stellen“ und „bessere Bezahlung“ in einem Bündel „Personal“). Die zweite trägst du ohne `buendel` ein und meldest ihren Hebel unter `neue_buendel` (Name = Hebel, etwa „Tempolimit“; die Koordination ergänzt den Leitfaden für alle Programme). Alle Fundstellen und passenden Kapitel liest du vollständig – Auslassen aus Zeitgründen gibt es nicht.
    **Hebel-Checkliste:** Nennt der Auftrag eine, beantwortest du jeden Hebel – mit einer Maßnahme (`buendel` = Hebel) oder unter `hebel_nicht_gefunden`. **Gekoppelte Ursachen** (im Auftrag) nennst du immer zusammen.
-7. Gleiche Vorschläge an mehreren Stellen: einmal erfassen, die aussagekräftigste Stelle zitieren.
-8. **Beschreibung** höchstens 200 Zeichen, sinngemäß, ohne Parteinamen, keine Zahl, die nicht im Zitat steht.
-9. **Programmstand:** Nennt das PDF einen anderen Stand als der Auftrag (Titelseite, Fußzeile), trage ihn in `stand_im_pdf` ein.
+8. Gleiche Vorschläge an mehreren Stellen: einmal erfassen, die aussagekräftigste Stelle zitieren.
+9. **Beschreibung** höchstens 200 Zeichen, sinngemäß, ohne Parteinamen, keine Zahl, die nicht im Zitat steht.
+10. **Programmstand:** Nennt das PDF einen anderen Stand als der Auftrag (Titelseite, Fußzeile), trage ihn in `stand_im_pdf` ein.
 
 ## Regeln für Zitate
 
@@ -82,7 +83,7 @@ Dann prüfen:
 npm run -s entwurf:programm-pruefen '--' <Ergebnisdatei>
 ```
 
-Das Skript prüft Felder, Längen, Ebenen, Zahlen, Bündel und **ob jedes Zitat auf der angegebenen PDF-Seite steht**. Bei „Fehler“ korrigierst du die Datei und prüfst erneut, bis es durchläuft. Meldet es „Bündel … schon bei Maßnahme …“, prüfe, ob es wirklich dieselbe Art Zusage ist; wenn nicht, gilt Schritt 6 (ohne `buendel` oder `neue_buendel`) – nie zusammenfassen. „Hinweis“ prüfst du an der Stelle (etwa: Zitat beginnt klein → Einleitung mitzitieren) und änderst nur, wenn der Hinweis zutrifft. „Bündel ohne Maßnahme“: je genanntes Bündel noch einmal gezielt im Text suchen (Begriffe der Richtung, Kapitel des Bereichs); was du findest, erfasst du nach Schritt 6, sonst bleibt es leer.
+Das Skript prüft Felder, Längen, Ebenen, Zahlen, Bündel und **ob jedes Zitat auf der angegebenen PDF-Seite steht**. Bei „Fehler“ korrigierst du die Datei und prüfst erneut, bis es durchläuft. Meldet es „Bündel … schon bei Maßnahme …“, prüfe, ob es wirklich dieselbe Art Zusage ist; wenn nicht, gilt Schritt 7 (ohne `buendel` oder `neue_buendel`) – nie zusammenfassen. „Hinweis“ prüfst du an der Stelle (etwa: Zitat beginnt klein → Einleitung mitzitieren) und änderst nur, wenn der Hinweis zutrifft. „Bündel ohne Maßnahme“: je genanntes Bündel noch einmal gezielt im Text suchen (Begriffe der Richtung, Kapitel des Bereichs); was du findest, erfasst du nach Schritt 7, sonst bleibt es leer.
 
 ## Was du zurückgibst
 

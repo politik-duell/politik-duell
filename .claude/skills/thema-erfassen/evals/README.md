@@ -28,7 +28,7 @@ Szenarien im Format der Skill-Best-Practices (`skills`, `query`, `files`, `expec
 | Zusätzlich, vertretbar | 4 | Imam-Ausbildung, Evaluation von Präventionsprogrammen, Arbeitsdefinition Antisemitismus, Abschiebungen beim Bund bündeln |
 | Kurzbericht | – | Der feste Block war korrekt; der Agent hängte aber eine frei formulierte Zusammenfassung an |
 
-**Schluss:** Zitate und Seiten erkennt die kleinste Stufe verlässlich (die Selbstprüfung erzwingt das ohnehin). Zusagen und Leitfaden-Regeln nicht: Rund ein Drittel der Maßnahmen widerspricht dem Leitfaden oder ist ein Prüfauftrag, drei Zusagen fehlen. Das würde Rückfragen und Bewertung belasten und Programme ungleich behandeln, wenn nicht alle mit derselben Stufe laufen. **Der Skill bleibt unverändert:** Erfassung mit der nächstkleineren Stufe (mittlere), die kleinste nicht. Ein neuer Vergleichstest lohnt sich mit einer neuen Modellgeneration.
+**Schluss:** Zitate und Seiten erkennt die kleinste Stufe verlässlich (die Selbstprüfung erzwingt das ohnehin). Zusagen und Leitfaden-Regeln nicht: Rund ein Drittel der Maßnahmen widerspricht dem Leitfaden oder ist ein Prüfauftrag, drei Zusagen fehlen. Das würde Rückfragen und Bewertung belasten und Programme ungleich behandeln, wenn nicht alle mit derselben Stufe laufen. **Der Skill bleibt unverändert:** Erfassung mit der nächstkleineren Stufe (mittlere), die kleinste nicht. *(Überholt durch den Vergleichstest „Haiku statt Sonnet“ unten: Seit 9. 10. 2026 erfasst `haiku` mit „im Zweifel aufnehmen“, die Bewertung sortiert aus.)* Ein neuer Vergleichstest lohnt sich mit einer neuen Modellgeneration.
 
 ## Vergleichstest: vorsortierter Auszug statt ganzer Textdatei
 
@@ -125,3 +125,5 @@ Vergleich mit den 34 Bundes-Maßnahmen dieser sechs Parteien in der archivierten
 - **Vollständigkeit wie Sonnet:** 31 statt 32 von 34; Sonnet selbst schwankt zwischen zwei Läufen um dieselbe Größe (Einzelaufträge 31, Sammelaufträge 32). Die fehlenden Stellen unterscheiden sich von Lauf zu Lauf.
 - **Mehr Fehlgriffe:** Mit „im Zweifel aufnehmen“ liefert Haiku rund 50 % mehr Maßnahmen. Die unpassenden muss die Bewertung ohne Parteinamen aussortieren (Opus), sonst gehen sie in die Punkte ein.
 - **Billiger, aber langsamer:** etwa ein Siebtel der Kosten, aber mehr Werkzeugaufrufe (19–38 je Agent) und fünfmal so lange Laufzeit.
+
+**Schluss:** `programm-erfassung` läuft seit 9. 10. 2026 mit `haiku`; „im Zweifel aufnehmen“ steht in der Agentenbeschreibung (Schritt 5), das Aussortieren in `blind-bewertung.md` (Prüfliste, Punkt 8). Nach dem ersten echten Lauf prüfen: Wie viele Maßnahmen verwirft die Bewertung (`zuordnungsBilanz` im Pull Request), und fehlen Zusagen, die eine Stichprobe mit `sonnet` findet?
