@@ -57,3 +57,27 @@ Vergleich mit den 34 Bundes-Maßnahmen dieser sechs Parteien in der archivierten
 - Die Schätzung im Konzept (rund 8.000 statt 48.000 Tokens je Thema und Programm) trifft nicht zu: Ein Erfassungs-Agent kostet schon mit ganzer Textdatei rund 36.000 Tokens, davon ein großer fester Teil für Agentenbeschreibung, Auftrag und Selbstprüfung.
 
 **Schluss:** **Der Skill bleibt unverändert.** Ein Auszug nach Suchbegriffen spart nichts und übersieht Zusagen, die anders formuliert sind als die Suchbegriffe. Dasselbe Risiko trägt Hebel 1 in `docs/token-verbrauch-erfassung.md` (Programme ohne Treffer überspringen): Seiten ohne Treffer enthielten hier drei Maßnahmen eines Programms.
+
+## Vergleichstest: Sammelaufträge mit verwandten Themen
+
+**Frage:** Sammelaufträge (ein Agent je Programm für mehrere Themen, `entwurf:lauf auftraege --sammel`) waren im Vergleichslauf mit den Themen 18 und 30 teurer als Einzelaufträge (806.752 statt 580.227 Tokens, Pull Request #84). Gilt das auch für zwei Themen, die inhaltlich nah beieinanderliegen?
+
+**Aufbau (9. 10. 2026):** Themen 30 (Sucht und Glücksspiel) und 33 (Mediennutzung von Kindern und Jugendlichen), dieselben sechs Bundesprogramme und Aufträge wie im Test „vorsortierter Auszug“. Je Programm ein Sammelauftrag aus den beiden Einzelaufträgen (`sammelauftrag-text.ts`), Arbeitsordner `.cache/vergleich/sammel/` (nicht im Repository). Vergleich mit dem Lauf „voll“ von demselben Tag und mit den 34 archivierten Maßnahmen, Regeln wie oben.
+
+**Ergebnis:**
+
+| | Einzelaufträge (12 Agenten) | Sammelaufträge (6 Agenten) |
+| --- | --- | --- |
+| Maßnahmen gefunden | 33 | 32 |
+| davon wie im Archiv | 31 von 34 | 32 von 34 (Skript: 31; Union S. 47 dieselbe Zusage mit längerem Zitat) |
+| im Archiv, hier fehlend | SPD S. 30 (30); Grüne S. 77, AfD S. 50 (33) | Grüne S. 85, Linke S. 57 (33) |
+| Tokens | 434.869 (Ø 36.239 je Agent) | 332.347 (Ø 55.391 je Agent) |
+| Laufzeit (Summe / längster Agent) | 346 s / 38 s | 303 s / 62 s |
+
+- **Diesmal 24 % weniger Tokens bei gleicher Fundquote** – das Gegenteil des Laufs mit 18 und 30 (+39 %). Ein Erfassungs-Agent hat einen großen festen Teil (Agentenbeschreibung, Auftrag, Inhaltsverzeichnis, Selbstprüfung); den spart der Sammelauftrag einmal je Programm.
+- **Überschneidung der Trefferseiten erklärt den Unterschied nicht.** Anteil gemeinsamer Trefferseiten (bezogen auf das Thema mit weniger Seiten): 18+30 38 %, 30+33 41 % (mit Nachbarseite 63 % bzw. 68 %). Eine Prüfung „Sammelaufträge nur bei gemeinsamen Kapiteln“ würde beide Paare gleich behandeln und wurde deshalb nicht gebaut.
+- **Wahrscheinlicher ist die Menge der Fundstellen.** Thema 18 hat in den sechs Programmen 137 Trefferseiten (Grüne 45), Thema 30 60, Thema 33 23. Bei kleinen Themen überwiegt der feste Teil, den das Bündeln spart; bei großen wächst der Kontext des ersten Themas im zweiten mit. Belegt ist das mit zwei Läufen nicht.
+- **Wartezeit etwa gleich:** Ein Sammel-Agent braucht länger, dafür laufen bei höchstens sieben gleichzeitigen Agenten 6 Sammelaufträge in einer Welle, 12 Einzelaufträge in zwei.
+- Fehlende Stellen unterscheiden sich zwischen den Läufen, aber nicht in der Zahl; das ist Streuung des Agenten wie im Test oben.
+
+**Schluss:** **Einzelaufträge bleiben Standard.** `--sammel` kann sich bei kleinen Themen (wenige Fundstellen je Programm) lohnen; ob die Grenze bei der Zahl der Fundstellen liegt, zeigt erst ein weiterer Lauf mit zwei kleinen Themen und einem großen Thema.
