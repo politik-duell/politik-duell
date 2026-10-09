@@ -104,3 +104,24 @@ Vergleich mit den 34 Bundes-Maßnahmen dieser sechs Parteien in der archivierten
 - **Kosten:** Ø 78.851 Tokens je Block mit dem eigenen Agenten (ohne den Testblock), also rund 670.000 Tokens (Haiku) je Programm, einmalig. Die bisherige Erfassung kostet Ø 36.239 Tokens (Sonnet) je Thema und Programm (Vergleichstest oben). Der Katalog eines Programms entspricht damit in Tokens rund 18–19 Themen-Erfassungen; die Zuordnung je Thema (ein Haiku-Agent für alle Programme) kommt hinzu und ist noch nicht gemessen.
 
 **Schluss:** Der Katalog findet alles, was die bisherige Erfassung gefunden hat. In Tokens lohnt er sich erst über viele künftige Themen, Forderungen und Haltungen – für die schon erfassten 37 Themen spart er nichts mehr. Vor dem Ausrollen auf alle Programme: Ausgabe verdichten (Zeilenformat statt JSON, `lage`/`rueckblick` nur unter `ohne`) und die Zuordnung je Thema messen.
+
+## Vergleichstest: Haiku statt Sonnet bei der Erfassung (Sammelauftrag)
+
+**Frage:** Erfasst `programm-erfassung` mit Haiku 5.5 so vollständig wie mit Sonnet, wenn Fehlgriffe danach von Opus ohne Parteinamen aussortiert werden – und was kostet es?
+
+**Aufbau (9. 10. 2026):** Themen 30 und 33, sechs Bundesprogramme (BSW nicht ladbar), je Programm ein Sammelauftrag (`entwurf:lauf auftraege --sammel` in einer Arbeitskopie ohne Abdeckung der beiden Themen), Agent `programm-erfassung` mit `model: haiku` und dem Zusatz „Im Zweifel aufnehmen – eine Prüfung ohne Parteinamen sortiert aus“. Vergleich mit den 34 archivierten Bundes-Maßnahmen (Sonnet, 6. 10. 2026) wie oben (Seite ±1, 60 % gemeinsame Wörter), Abweichungen von Hand nachgesehen.
+
+**Ergebnis:**
+
+| | Sonnet, Sammelauftrag (oben) | Haiku, Sammelauftrag |
+| --- | --- | --- |
+| wie im Archiv | 32 von 34 | 31 von 34 (Skript: 30; Union S. 47 Europol dieselbe Zusage mit anderem Satz) |
+| fehlend | Grüne S. 85, Linke S. 57 | Linke S. 20 (Drogenkonsum entkriminalisieren), Union S. 41 (Jugendschutz im Netz), Grüne S. 85 (Bürgerrat) |
+| zusätzlich | 1 | 16 – davon etwa die Hälfte vertretbar (z. B. Spielautomaten in Gaststätten verbieten, Bot-Kennzeichnung, Verbot personalisierter Werbung), die andere Hälfte ohne Bezug zur Ursache (Parteiensponsoring, Ausweisung von Straftätern, DSA gegen Billigprodukte, allgemeine Familienberatung) |
+| Tokens | 332.347 | 935.493 (2,8-fach) |
+| Kosten (API-Listenpreis je Token: Haiku 5.5 1/20 von Sonnet 5.5) | 1 | ≈ 0,14 |
+| Laufzeit Summe / längster Agent | 303 s / 62 s | 1.620 s / 359 s |
+
+- **Vollständigkeit wie Sonnet:** 31 statt 32 von 34; Sonnet selbst schwankt zwischen zwei Läufen um dieselbe Größe (Einzelaufträge 31, Sammelaufträge 32). Die fehlenden Stellen unterscheiden sich von Lauf zu Lauf.
+- **Mehr Fehlgriffe:** Mit „im Zweifel aufnehmen“ liefert Haiku rund 50 % mehr Maßnahmen. Die unpassenden muss die Bewertung ohne Parteinamen aussortieren (Opus), sonst gehen sie in die Punkte ein.
+- **Billiger, aber langsamer:** etwa ein Siebtel der Kosten, aber mehr Werkzeugaufrufe (19–38 je Agent) und fünfmal so lange Laufzeit.
