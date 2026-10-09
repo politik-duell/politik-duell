@@ -11,7 +11,7 @@ Du erfasst für das Politik-Duell, was **ein** Wahlprogramm zu einem Thema vorsc
 
 ## Dein Auftrag
 
-Du bekommst den Pfad einer Auftragsdatei (`.cache/entwurf/<ID>/auftraege/<Partei>-<Bund|XX>.md`). Sie enthält alles: Partei, Ebene, Programm, Pfad der Textdatei, Pfad für dein Ergebnis, Ziel, die **für dieses Programm zulässigen** Ursachen, den Leitfaden (Regeln R1 …), die Bündel, die Trefferzahl jedes Suchbegriffs und die Fundstellen mit PDF-Seite und Auszug. Lies **nur** den Auftrag, die Textdatei und diese Beschreibung – nicht `erfassung.json`, `programme/` oder Antworten anderer Programme.
+Du bekommst den Pfad einer Auftragsdatei (`.cache/entwurf/<ID>/auftraege/<Partei>-<Bund|XX>.md`). Sie enthält alles: Partei, Ebene, Programm, Pfad der Textdatei, Pfad für dein Ergebnis, Ziel, die **für dieses Programm zulässigen** Ursachen, den Leitfaden (Regeln R1 …), die Bündel, die Trefferzahl jedes Suchbegriffs und die Fundstellen mit PDF-Seite und Auszug. Bekommst du einen **Sammelauftrag** (`.cache/entwurf/sammel/auftraege/<Name>.md`), enthält er mehrere solche Aufträge für dasselbe Programm und verschiedene Themen: Textdatei und Inhaltsverzeichnis einmal lesen, die Teilaufträge nacheinander und jeden für sich bearbeiten (eigene Ursachen, eigener Leitfaden, eigene Ergebnisdatei, eigene Selbstprüfung), zurückgeben je Teilauftrag den Kurzbericht. Lies **nur** den Auftrag, die Textdatei und diese Beschreibung – nicht `erfassung.json`, `programme/` oder Antworten anderer Programme.
 
 Die Suche ist schon gemacht: Alle Programme haben dieselben Begriffe, gezählt hat ein Skript. Du zählst nichts nach und schreibst keine Treffertabellen.
 
@@ -44,7 +44,7 @@ Die Suche ist schon gemacht: Alle Programme haben dieselben Begriffe, gezählt h
 
 ## Keine Maßnahme, nicht durchsucht
 
-`keine_massnahme` nur, wenn du die passenden Kapitel gelesen hast und dort nichts an den Ursachen ansetzt. Null Treffer allein reichen nicht. Begründung wie: „Kapitel ‚Umwelt‘ (S. 40–44) und Fundstellen S. 12, 51 gelesen; nichts zu Hochwasserschutz oder Versicherung.“
+`keine_massnahme` nur, wenn du die passenden Kapitel gelesen hast und dort nichts an den Ursachen ansetzt. Null Treffer allein reichen nicht. Begründung höchstens 400 Zeichen, wie: „Kapitel ‚Umwelt‘ (S. 40–44) und Fundstellen S. 12, 51 gelesen; nichts zu Hochwasserschutz oder Versicherung.“
 
 **Seiten ohne Text:** Nennt der Auftrag Seiten fast ohne Text, sind das meist Titel- oder Trennseiten. Liegt eine davon mitten im passenden Kapitel und fehlt dort erkennbar Inhalt, ist der Text vermutlich ein Bild – dann gibt es kein `keine_massnahme`, sondern `nicht_durchsucht` mit diesem Grund.
 
@@ -82,7 +82,7 @@ Dann prüfen:
 npm run -s entwurf:programm-pruefen '--' <Ergebnisdatei>
 ```
 
-Das Skript prüft Felder, Längen, Ebenen, Zahlen, Bündel und **ob jedes Zitat auf der angegebenen PDF-Seite steht**. Bei „Fehler“ korrigierst du die Datei und prüfst erneut, bis es durchläuft. Meldet es „Bündel … schon bei Maßnahme …“, prüfe, ob es wirklich dieselbe Art Zusage ist; wenn nicht, gilt Schritt 6 (ohne `buendel` oder `neue_buendel`) – nie zusammenfassen. „Hinweis“ prüfst du an der Stelle (etwa: Zitat beginnt klein → Einleitung mitzitieren) und änderst nur, wenn der Hinweis zutrifft.
+Das Skript prüft Felder, Längen, Ebenen, Zahlen, Bündel und **ob jedes Zitat auf der angegebenen PDF-Seite steht**. Bei „Fehler“ korrigierst du die Datei und prüfst erneut, bis es durchläuft. Meldet es „Bündel … schon bei Maßnahme …“, prüfe, ob es wirklich dieselbe Art Zusage ist; wenn nicht, gilt Schritt 6 (ohne `buendel` oder `neue_buendel`) – nie zusammenfassen. „Hinweis“ prüfst du an der Stelle (etwa: Zitat beginnt klein → Einleitung mitzitieren) und änderst nur, wenn der Hinweis zutrifft. „Bündel ohne Maßnahme“: je genanntes Bündel noch einmal gezielt im Text suchen (Begriffe der Richtung, Kapitel des Bereichs); was du findest, erfasst du nach Schritt 6, sonst bleibt es leer.
 
 ## Was du zurückgibst
 

@@ -4,15 +4,15 @@ Beobachtet beim Durchgang für die Themen 27, 29, 30 und 33 (6. 10. 2026, Pull R
 
 ## Hebel, nach Wirkung geordnet
 
-1. **Programme ohne Treffer überspringen.** Viele Programme haben in den Suchbegriffen null Treffer, vor allem Landesprogramme von AfD, FDP und Union. Ihre Agenten liefern fast immer „keine Maßnahme“. `entwurf:auftrag` könnte für solche Programme keinen Auftrag erzeugen und `keine_massnahme` mit „keine Treffer in den Suchbegriffen“ setzen. Das spart gut ein Viertel der Agenten. Risiko: Eine Maßnahme, die ohne die Suchbegriffe formuliert ist, würde übersehen. **Offen:** Reicht „keine Treffer“ als Beleg für „keine Maßnahme“? Das ist eine Methodenentscheidung (`docs/methode.md`).
+1. **Programme ohne Treffer überspringen.** Viele Programme haben in den Suchbegriffen null Treffer, vor allem Landesprogramme von AfD, FDP und Union. Ihre Agenten liefern fast immer „keine Maßnahme“. `entwurf:auftrag` könnte für solche Programme keinen Auftrag erzeugen und `keine_massnahme` mit „keine Treffer in den Suchbegriffen“ setzen. Das spart gut ein Viertel der Agenten. Risiko: Eine Maßnahme, die ohne die Suchbegriffe formuliert ist, würde übersehen. **Offen:** Reicht „keine Treffer“ als Beleg für „keine Maßnahme“? Das ist eine Methodenentscheidung (`docs/methode.md`). Der Vergleichstest vom 9. 10. 2026 (`.claude/skills/thema-erfassen/evals/README.md` → „vorsortierter Auszug“) spricht dagegen: Drei Zusagen der Grünen zu Thema 33 standen auf einer Seite ohne Treffer und wurden nur über das Inhaltsverzeichnis gefunden.
 2. **Kleineres Modell bei wenigen Treffern.** Alle Agenten laufen bisher auf derselben Stufe. Für Programme mit wenigen Treffern genügt vermutlich eine kleinere Stufe; bei vielen Treffern zählt die Zitattreue, dort bleibt die Stufe.
-3. **Mehrere Themen in einem Auftrag je Programm.** Bei mehreren Themen liest derselbe Agent dasselbe Programm mehrfach. Ein Auftrag je Programm mit allen Themen bündelt das Lesen; dafür müssen Skript und Agent angepasst werden.
+3. **Mehrere Themen in einem Auftrag je Programm.** Bei mehreren Themen liest derselbe Agent dasselbe Programm mehrfach. Ein Auftrag je Programm mit allen Themen bündelt das Lesen; dafür müssen Skript und Agent angepasst werden. Umgesetzt als `entwurf:lauf auftraege --sammel`, aber nicht Standard: Mit den Themen 18 und 30 kostete es 39 % mehr Tokens, mit 30 und 33 24 % weniger bei gleicher Fundquote (`.claude/skills/thema-erfassen/evals/README.md` → „Sammelaufträge mit verwandten Themen“). Vermutlich lohnt es sich nur bei Themen mit wenigen Fundstellen.
 4. **Wiederholungen vermeiden.** Im Durchgang kosteten drei Fehlerbilder zusätzliche Agentenläufe:
    - Der Leitfaden hat keinen `buendel`-Schlüssel, die Agenten setzen trotzdem `buendel` (Richtungsnamen). `programm-pruefen` meldet das nur als Hinweis, `zusammenfuehren` lehnt es als Fehler ab (Thema 29).
    - `keine_massnahme` länger als 400 Zeichen. `eintragen` lehnt ab, `programm-pruefen` nicht (Thema 30, drei Programme).
    - Ein Zitat auf der angegebenen Seite nicht gefunden (Thema 29, Grüne BE).
 
-   Abhilfe: Beide Regeln in `.claude/agents/programm-erfassung.md` aufnehmen und in `programm-pruefen` als Fehler melden. Bei Thema 33 genügte ein Zusatz im Prompt, und es gab keine Wiederholung.
+   Umgesetzt (Oktober 2026): `programm-pruefen` meldet alle drei als Fehler, bevor der Agent abgibt – Bündel außerhalb des Leitfadens, Zitat nicht auf der Seite und `keine_massnahme` über 400 Zeichen; die Grenze steht auch in `.claude/agents/programm-erfassung.md`.
 5. **Kurze Ausgaben im Koordinationskontext.** Skriptausgaben mit `Select-Object -Last` und `Select-String` filtern. Die Kurzberichte der Agenten lassen sich nicht weiter kürzen, ohne die Prüfbarkeit zu verlieren.
 
 ## Reihenfolge

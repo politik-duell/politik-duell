@@ -1,0 +1,123 @@
+name: Supabase
+
+# Bringt nach jedem Merge nach main neue Migrationen, Daten (seed.sql) und Edge Functions zu Supabase.
+# Einrichtung (Secrets, einmaliges Angleichen des Migrationsverlaufs): supabase/EINRICHTEN.md → „Automatisch über GitHub Actions“.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'supabase/migrations/**'
+      - 'supabase/seed.sql'
+      - 'supabase/functions/**'
+      - 'supabase/config.toml'
+      - '.github/workflows/supabase.yml'
+  workflow_dispatch:
+    inputs:
+      alles:
+        description: 'Migrationen, Daten und Edge Functions einspielen, auch wenn nichts geändert ist'
+        type: boolean
+        default: true
+
+# Nie zwei Läufe gleichzeitig gegen dieselbe Datenbank; ein laufender wird nicht abgebrochen.
+concurrency:
+  group: supabase-produktion
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+env:
+  PROJEKT: xfprvshhexhzhfgkfxpi
+
+jobs:
+  einspielen:
+    runs-on: ubuntu-latest
+    environment: supabase
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # für den Vergleich mit dem vorigen Stand von main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      - name: Seed aktuell?
+        run: |
+          npm run seed
+          git diff --exit-code --stat -- supabase/seed.sql supabase/seed-teile \
+            || { echo "::error::supabase/seed.sql passt nicht zu daten/ – npm run dashboard ausführen und committen."; exit 1; }
+
+      - name: Was hat sich geändert?
+        id: aenderung
+        env:
+          VORHER: ${{ github.event.before }}
+          ALLES: ${{ github.event_name == 'workflow_dispatch' && inputs.alles }}
+        run: |
+          if [ "$ALLES" = "true" ] || [ -z "$VORHER" ] || ! git cat-file -e "$VORHER^{commit}" 2>/dev/null; then
+            echo "migrationen=true" >> "$GITHUB_OUTPUT"
+            echo "daten=true" >> "$GITHUB_OUTPUT"
+            echo "funktionen=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          geaendert=$(git diff --name-only "$VORHER" "$GITHUB_SHA")
+          echo "$geaendert"
+          hat() { grep -qE "$1" <<< "$geaendert" && echo true || echo false; }
+          echo "migrationen=$(hat '^supabase/migrations/')" >> "$GITHUB_OUTPUT"
+          # Neue Migrationen können Spalten anlegen, die seed.sql füllt – dann Daten neu einspielen.
+          echo "daten=$(hat '^supabase/(seed\.sql|migrations/)')" >> "$GITHUB_OUTPUT"
+          echo "funktionen=$(hat '^supabase/(functions/|config\.toml)')" >> "$GITHUB_OUTPUT"
+
+      - uses: supabase/setup-cli@v1
+        with:
+          version: 2.120.0
+
+      - name: Verbindung zur Datenbank
+        if: steps.aenderung.outputs.migrationen == 'true' || steps.aenderung.outputs.daten == 'true'
+        env:
+          PASSWORT: ${{ secrets.SUPABASE_DB_PASSWORD }}
+          HOST: ${{ vars.SUPABASE_DB_HOST }}
+        run: |
+          if [ -z "$PASSWORT" ] || [ -z "$HOST" ]; then
+            echo "::error::Secret SUPABASE_DB_PASSWORD oder Variable SUPABASE_DB_HOST fehlt (supabase/EINRICHTEN.md)."; exit 1
+          fi
+          # Session Pooler (IPv4; die direkte Verbindung ist nur über IPv6 erreichbar). Passwort URL-kodiert.
+          url=$(node -e 'console.log(`postgresql://postgres.${process.env.PROJEKT}:${encodeURIComponent(process.env.PASSWORT)}@${process.env.HOST}:5432/postgres`)')
+          echo "::add-mask::$url"
+          echo "DB_URL=$url" >> "$GITHUB_ENV"
+
+      - name: Migrationen
+        if: steps.aenderung.outputs.migrationen == 'true'
+        run: |
+          supabase migration list --db-url "$DB_URL"
+          supabase db push --db-url "$DB_URL" --yes
+
+      - name: Daten (seed.sql)
+        if: steps.aenderung.outputs.daten == 'true'
+        # Eine Transaktion: bei einem Fehler bleibt die Datenbank beim alten Stand. Gespielte Runden bleiben erhalten.
+        run: psql "$DB_URL" -v ON_ERROR_STOP=1 --single-transaction --quiet -f supabase/seed.sql
+
+      - name: Edge Functions
+        if: steps.aenderung.outputs.funktionen == 'true'
+        env:
+          SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+        # verify_jwt kommt aus supabase/config.toml (für beide Funktionen aus).
+        run: |
+          supabase functions deploy analyse --project-ref "$PROJEKT" --use-api
+          supabase functions deploy pruefung --project-ref "$PROJEKT" --use-api
+
+      - name: Zusammenfassung
+        if: always()
+        env:
+          M: ${{ steps.aenderung.outputs.migrationen }}
+          D: ${{ steps.aenderung.outputs.daten }}
+          F: ${{ steps.aenderung.outputs.funktionen }}
+        run: |
+          {
+            echo "| Teil | eingespielt |"
+            echo "|---|---|"
+            echo "| Migrationen | ${M:-–} |"
+            echo "| Daten (seed.sql) | ${D:-–} |"
+            echo "| Edge Functions | ${F:-–} |"
+          } >> "$GITHUB_STEP_SUMMARY"

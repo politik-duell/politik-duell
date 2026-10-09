@@ -3,6 +3,7 @@ name: forderung-erfassen
 description: Trägt für ein schon erfasstes Thema des Politik-Duells einen fehlenden Lösungsweg nach (Forderungskarte „Zeig mir, wer das fordert“) – prüft, ob es das Instrument schon gibt, ergänzt sonst Suchbegriffe im Leitfaden, durchsucht alle erfassten Programme nur danach, bewertet neue Fundstellen ohne Parteinamen und ergänzt die vorhandenen Einträge als KI-Entwurf. Aufruf z. B. /forderung-erfassen 2 "Mietendeckel" oder mehrere Forderungen eines Themas: /forderung-erfassen 2 "Mietendeckel"; "Wohngeld erhöhen"; mehrere Themen durch „|“ getrennt: /forderung-erfassen 2 "Mietendeckel" | 15 "Tempolimit" (dann ein Agent je Programm für alle Themen).
 argument-hint: <Themen-ID> "<Forderung>"[; "<Forderung>" …] [| <Themen-ID> "<Forderung>" …]
 disable-model-invocation: true
+model: sonnet
 ---
 
 # Forderung erfassen (Nachtrag eines Lösungswegs)
@@ -13,13 +14,9 @@ Eine Forderung („weniger X“, „Y einführen“) ist im Politik-Duell ein **
 
 Du bist Koordination wie in `/thema-erfassen` (liest keine Programme, vergibst keine Werte). Die Befehle und Agenten sind dieselben; Unterschiede stehen hier.
 
-**Mehrere Themen** (durch „|“ getrennt): Schritte 1–2 je Thema. In Schritt 3 je Thema Arbeitsordner, `entwurf:treffer --vorab` und `entwurf:auftrag`, dann **gemeinsam erfassen** (jedes Programm wird einmal gelesen statt einmal je Thema):
+**Mehrere Themen** (durch „|“ getrennt): Schritte 1–2 je Thema, in Schritt 3 je Thema die Arbeitsdatei, dann ein gemeinsamer Lauf mit allen Arbeitsdateien (ein Agent je Programm für alle Themen).
 
-```bash
-npm run -s entwurf:sammelauftrag '--' .cache/entwurf/<ID>/erfassung.json .cache/entwurf/<ID>/erfassung.json …
-```
-
-Je Sammelauftrag ein Agent `programm-erfassung` (ohne Parameter `model`), Auftrag nur: „Erledige den Sammelauftrag `.cache/entwurf/sammel/auftraege/<Name>.md` nach `.claude/agents/programm-erfassung.md`.“ Er schreibt je Thema die gewohnte Ergebnisdatei und prüft sie selbst. Rückfragen gehen per SendMessage an denselben Agenten und nennen das Thema. Kosten je Agent in `protokoll/kosten.md` des ersten Themas, mit den Themen-IDs. Ab `zusammenfuehren` läuft alles **je Thema** weiter wie unten (eigene Blindliste, eigener Agent `blind-bewertung`, eigener Commit) – die Bewertung mischt keine Themen.
+**Zusammen mit neuen Themen** (aus `/liste-ausfuehren`): nur Schritte 1–2 und die Arbeitsdatei aus Schritt 3; erfasst wird im selben Lauf wie die neuen Themen (`/thema-erfassen` mit allen Arbeitsdateien) – ein Durchgang der Sammelbefehle, eine Bewertungsrunde.
 
 ## 1. Gibt es den Lösungsweg schon?
 
@@ -47,17 +44,17 @@ Liegt schon ein Arbeitsordner `.cache/entwurf/<ID>/` vor, umbenennen (`mv .cache
 { "thema_id": 2, "nachtrag": { "forderung": "Mietendeckel", "richtungen": { "202": ["Mieten deckeln", "Mietregulierung lockern"] } }, "programme": [] }
 ```
 
-Danach wie in `/thema-erfassen` die Schritte 1–4 (`entwurf:treffer --vorab`, `entwurf:auftrag`, Agenten `programm-erfassung`, `zusammenfuehren`, `treffer`, `entwurf:blind`, Bewertung, `entwurf:eintragen`, Prüfungen). Die Skripte beschränken alles auf die Richtungen des Nachtrags:
+Danach wie in `/thema-erfassen` die Schritte 1–4 mit `entwurf:lauf` (`vorab` – ohne Freigabeprüfung, das Thema ist schon erfasst –, `auftraege`, Agenten `programm-erfassung`, `erfasst`, `blind`, Agent `blind-bewertung`, `bewertet`). Die Skripte beschränken alles auf die Richtungen des Nachtrags:
 - Aufträge nur für Programme, die schon einen Eintrag haben (andere erst mit `/thema-erfassen`), mit der Liste „Bereits erfasst“.
 - Die Blindliste enthält die vorhandenen Instrumente; die Bewertung ordnet neue Fundstellen einem vorhandenen oder neuen Instrument zu.
 - `entwurf:eintragen` **ergänzt** die Einträge: neue Maßnahmen dazu, gleiche Zitate nicht doppelt, „keine Maßnahme“ wird bei einem Fund zur Maßnahme, ohne Fund bleibt alles, wie es war.
 
 ## 4. Abschluss
 
+Bericht und Archiv (`nachtrag-<Forderung>`) erledigt `bewertet`. Danach zur Kontrolle:
+
 ```bash
-npm run -s entwurf:bericht '--' .cache/entwurf/<ID>/erfassung.json .cache/entwurf/<ID>/bewertung.json
-npm run -s entwurf:archivieren '--' .cache/entwurf/<ID>/erfassung.json '--name' nachtrag-<kurzname>
 npm run -s instrumente '--' <ID>
 ```
 
-Commit „<Thema>: Lösungsweg <Forderung> nachgetragen (KI-Entwurf)“ mit Themendatei, Leitfaden, `supabase/seed.sql`, `supabase/seed-teile/`, Protokoll. Aus `/liste-einordnen` aufgerufen: nur committen – Push und Pull Request macht die Liste. Sonst Pull Request: ein Satz je Forderung (Instrument-ID, in wie vielen Programmen gefunden) und `pr-daten.md`.
+Commit „<Thema>: Lösungsweg <Forderung> nachgetragen (KI-Entwurf)“ mit Themendatei, Leitfaden, `supabase/seed.sql`, `supabase/seed-teile/`, Protokoll. Aus `/liste-ausfuehren` aufgerufen: nur committen – Push und Pull Request macht die Liste. Sonst Pull Request: ein Satz je Forderung (Instrument-ID, in wie vielen Programmen gefunden) und `pr-daten.md`.

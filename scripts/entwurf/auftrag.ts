@@ -8,7 +8,7 @@
 import { mkdirSync, writeFileSync } from 'node:fs'
 import { join, relative } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { PROTOKOLL, nachtragUrsachen, programmName, pruefeLeitfaden, pruefeNachtrag, pruefeSuchbegriffe } from '../entwurf.ts'
+import { PROTOKOLL, leitfadenLuecken, nachtragUrsachen, programmName, pruefeLeitfaden, pruefeNachtrag, pruefeSuchbegriffe, ursachenDerErfassung } from '../entwurf.ts'
 import { pruefeDatenordner } from '../katalog-laden.ts'
 import { erfassungsSeiten, lokalePdfs, textdatei } from '../programme.ts'
 import { auftragText, auswahlProgramme, zulaessigeUrsachen } from './auftrag-text.ts'
@@ -54,6 +54,13 @@ const stub = { ...erfassung, treffer: undefined, programme: auswahl.map((p) => (
 const begriffFehler = pruefeSuchbegriffe(katalog, stub).filter((f) => !f.startsWith('treffer'))
 for (const f of begriffFehler) console.error(`Fehler:  ${f}`)
 if (begriffFehler.length) process.exit(1)
+// Vollständige Erfassung: jede Ursache der Programme mit Regel, bevor ein Agent startet (Nachträge prüft pruefeNachtrag).
+if (erfassung.leitfaden && !erfassung.nachtrag) {
+  const { fehler: luecken, hinweise } = leitfadenLuecken(katalog, erfassung.leitfaden, ursachenDerErfassung(katalog, stub).map((u) => u.id))
+  for (const h of hinweise) console.error(`Hinweis: ${h}`)
+  for (const f of luecken) console.error(`Fehler:  ${f}`)
+  if (luecken.length) process.exit(1)
+}
 
 const ordner = join(pfad, '..')
 const lokal = lokalOrdner ? lokalePdfs(lokalOrdner) : undefined

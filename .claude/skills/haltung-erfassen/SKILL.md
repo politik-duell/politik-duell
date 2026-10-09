@@ -3,6 +3,7 @@ name: haltung-erfassen
 description: Phase B für eine oder viele Haltungen des Politik-Duells in einem Lauf – je Bundesprogramm ein Agent für alle Haltungen (Zitat und Seite je Frage), dann ein Agent, der ohne Parteinamen einordnet (ja/nein/teils/keine Aussage) und die Kurzfassungen schreibt; Eintragen als ungeprüfter KI-Entwurf. Aufruf mit Haltungs-IDs nach /haltung-anlegen, z. B. /haltung-erfassen 4 oder /haltung-erfassen 4-20.
 argument-hint: <Haltungs-ID> [<Haltungs-ID> …] | <von>-<bis>
 disable-model-invocation: true
+model: sonnet
 ---
 
 # Haltung erfassen (Phase B: Positionen)
@@ -46,11 +47,11 @@ npm run -s haltung:eintragen '--' <ID> <ID> …
 npm run daten:pruefen
 npm run -s zitate:pruefen
 npm run seed
-npm test
+npm test -- --reporter=dot
 ```
 
 Haltungen mit weniger als drei erkennbaren Positionen trägt das Skript nicht ein (Meldung, die übrigen laufen weiter). Sie bleiben als Phase A liegen und werden in `docs/haltungen.md` als „zurückgestellt“ vermerkt – kein `--trotzdem` ohne Entscheidung der Betreiberin.
 
 ## 5. Abschluss
 
-In `docs/haltungen.md` je Haltung eine Ergebniszeile (Position und Seite je Partei, „KI-Entwurf, Einordnung ohne Parteinamen, <Datum>“). Commit „Haltungen: Positionen aus sieben Bundesprogrammen (KI-Entwurf)“ mit Haltungsdateien, `supabase/seed.sql`, `supabase/seed-teile/`, `daten/protokolle/haltung-<ID>/`, `docs/haltungen.md`. Aus `/liste-einordnen` aufgerufen: nur committen – Push und Pull Request macht die Liste. Sonst Pull Request mit der Ergebnistabelle und den zurückgestellten Haltungen.
+In `docs/haltungen.md` je Haltung eine Ergebniszeile (Position und Seite je Partei, „KI-Entwurf, Einordnung ohne Parteinamen, <Datum>“). Commit „Haltungen: Positionen aus sieben Bundesprogrammen (KI-Entwurf)“ mit Haltungsdateien, `supabase/seed.sql`, `supabase/seed-teile/`, `daten/protokolle/haltung-<ID>/`, `docs/haltungen.md`. Aus `/liste-ausfuehren` aufgerufen: nur committen – Push und Pull Request macht die Liste. Sonst Pull Request mit der Ergebnistabelle und den zurückgestellten Haltungen.

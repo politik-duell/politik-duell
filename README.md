@@ -2,7 +2,7 @@
 
 *„Versprechen kann jeder."* – Zwei-Spieler-Webspiel: Alltagsprobleme nennen, das Spiel zeigt, welche Partei dafür die wirksamste und umsetzbare Lösung bietet – mit Beleg-Link nach jeder Runde.
 
-Konzept, Grundprinzipien und Meilensteine: siehe [CLAUDE.md](CLAUDE.md). Methode zum Weitergeben an Partner und Prüfende: [docs/methode.md](docs/methode.md). Vereinsgründung (Satzung, Fahrplan, Übergabe der App): [docs/verein/](docs/verein/README.md).
+Grundprinzipien: [CLAUDE.md](CLAUDE.md); Konzept und Meilensteine: [docs/konzept.md](docs/konzept.md). Methode zum Weitergeben an Partner und Prüfende: [docs/methode.md](docs/methode.md). Vereinsgründung (Satzung, Fahrplan, Übergabe der App): [docs/verein/](docs/verein/README.md).
 
 ## Stand: Meilenstein 1 – klickbarer Prototyp
 
@@ -97,7 +97,7 @@ npm run dashboard  # Dateien zum Einfügen im Supabase-Dashboard neu erzeugen
 | `daten/` | Datenkatalog: Parteien, Themen, Ursachen, Maßnahmen (JSON, Anleitung in `daten/README.md`) |
 | `scripts/` | Prüfung des Katalogs, Seed- und Dashboard-Erzeugung |
 | `supabase/seed.sql` | Seed-Daten (erzeugt aus `daten/`) |
-| `supabase/seed-teile/` | Dieselben Seed-Daten je Thema, für den SQL Editor im Dashboard |
+| `supabase/seed-teile/` | Dieselben Seed-Daten je Thema, für den SQL Editor im Dashboard (Rückfall; eingespielt wird automatisch über `.github/workflows/supabase.yml`) |
 | `supabase/dashboard/` | Erzeugte Dateien zum Einfügen im Dashboard (SQL komplett, Edge Function als eine Datei) |
 | `supabase/functions/analyse/` | Edge Function: KI-Einordnung und Speichern der Runde |
 | `supabase/functions/_shared/` | Gemeinsamer Code von App und Funktion: Typen, Punktelogik, KI-Prompt und -Prüfung, Moderationsfilter |

@@ -823,7 +823,7 @@ function pruefeEinzel(was: string, b: Einzelbewertung): string[] {
 
 /** Ursachen, die für mindestens ein Programm der Erfassung zählen (Landesprogramme nur für Landesursachen). */
 const imNachtrag = (e: Pick<Erfassung, 'nachtrag'>, id: number) => !e.nachtrag || String(id) in e.nachtrag.richtungen
-const ursachenDerErfassung = (k: Katalog, e: Erfassung) =>
+export const ursachenDerErfassung = (k: Katalog, e: Pick<Erfassung, 'thema_id' | 'nachtrag' | 'programme'>) =>
   k.ursachen.filter((u) => u.thema_id === e.thema_id && imNachtrag(e, u.id) && e.programme.some((p) => !p.land || (u.ebene ?? 'bund') === 'land'))
 
 /** Ursachen, für die ein Programm durchsucht wird. */
@@ -867,6 +867,9 @@ export function pruefeSuchbegriffe(k: Katalog, e: Erfassung): string[] {
 
 /** Ab so vielen Treffern zu einer Ursache ohne Maßnahme fragt der Hinweis nach. */
 export const TREFFER_OHNE_MASSNAHME = 10
+
+/** Ab so vielen Bündeln einer Ursache ohne Hebel-Checkliste fragt der Leitfaden-Hinweis nach Bereichen. */
+export const BUENDEL_FUER_HEBEL = 5
 
 /**
  * Hinweise (keine Fehler): Ein Programm hat zu einer Ursache viele Treffer, aber keine Maßnahme –
@@ -1076,6 +1079,43 @@ export function pruefeLeitfaden(k: Katalog, l: Leitfaden): string[] {
   return f
 }
 
+/**
+ * Lücken im Leitfaden, die sonst erst nach der Erfassung als Rückfrage an alle Programme auffallen (Thema 18:
+ * eine Runde an sieben Programme kostete mehr Tokens als die Erfassung selbst). Fehler: eine Ursache ohne
+ * Suchbegriffe oder ohne Regel, die sie abgrenzt. Hinweise: ein Begriff, der bei mehreren Ursachen steht, ohne
+ * Regel, die diese Ursachen gemeinsam nennt, und ohne `gekoppelt` – dann entscheidet jeder Agent selbst, wohin
+ * eine Fundstelle gehört. `ursachen`: nur diese prüfen (Standard: alle des Themas).
+ */
+export function leitfadenLuecken(k: Katalog, l: Leitfaden, ursachen?: number[]): { fehler: string[]; hinweise: string[] } {
+  const ids = ursachen ?? k.ursachen.filter((u) => u.thema_id === l.thema_id).map((u) => u.id)
+  const fehler: string[] = []
+  for (const u of ids) {
+    if (!Object.keys(l.suchbegriffe?.[String(u)] ?? {}).length) fehler.push(`Leitfaden ${l.thema_id}: Ursache ${u} ohne Suchbegriffe – je Lösungsrichtung eigene Begriffe, vor dem Erfassen`)
+    if (!(l.regeln ?? []).some((r) => r.ursachen?.includes(u))) fehler.push(`Leitfaden ${l.thema_id}: Ursache ${u} ohne Regel – was gehört dazu, was nicht (vor dem Erfassen, sonst klären es Rückfragen an jedes Programm)`)
+  }
+  const hinweise: string[] = []
+  // Viele Bündel ohne Hebel: meist Bereiche einer breiten Ursache – als Checkliste beantwortet jedes Programm jeden.
+  for (const u of ids) {
+    const n = l.buendel?.[String(u)]?.length ?? 0
+    if (n >= BUENDEL_FUER_HEBEL && !l.hebel?.[String(u)]?.length)
+      hinweise.push(`Leitfaden ${l.thema_id}: Ursache ${u} hat ${n} Bündel, aber keine Hebel-Checkliste – sind es Bereiche (etwa „Verkehr und Antriebe“)? Dann als \`hebel\` führen (Phase A), sonst hängt die Zahl der Lösungswege an der Gründlichkeit des einzelnen Agenten`)
+  }
+  const bei = new Map<string, Set<number>>()
+  for (const [u, richtungen] of Object.entries(l.suchbegriffe ?? {}))
+    for (const begriffe of Object.values(richtungen))
+      for (const b of begriffe) {
+        const key = b.trim().toLowerCase()
+        bei.set(key, (bei.get(key) ?? new Set()).add(Number(u)))
+      }
+  for (const [b, menge] of bei) {
+    const gruppe = [...menge].sort((a, c) => a - c)
+    if (gruppe.length < 2 || !gruppe.some((u) => ids.includes(u))) continue
+    const geregelt = (l.regeln ?? []).some((r) => gruppe.every((u) => r.ursachen?.includes(u))) || (l.gekoppelt ?? []).some((g) => gruppe.every((u) => g.includes(u)))
+    if (!geregelt) hinweise.push(`Leitfaden ${l.thema_id}: „${b}“ steht bei ${gruppe.join(' und ')} – grenzen die Regeln das ab, oder braucht es eine gemeinsame Regel bzw. \`gekoppelt\`?`)
+  }
+  return { fehler, hinweise }
+}
+
 /** Hinweise zu Zitaten, die eine Rückfrage auslösen würden (keine Fehler – der Agent prüft die Stelle). */
 export function zitatHinweise(m: ErfassteMassnahme): string[] {
   const h: string[] = []
@@ -1102,6 +1142,8 @@ export function pruefeProgramm(k: Katalog, e: Pick<Erfassung, 'thema_id' | 'leit
   if (!Array.isArray(p.massnahmen)) return [...f, `${name}: massnahmen fehlen (Liste, auch leer)`]
   if (!p.massnahmen.length && !p.keine_massnahme?.trim()) f.push(`${name}: weder Maßnahmen noch keine_massnahme`)
   if (p.massnahmen.length && p.keine_massnahme) f.push(`${name}: Maßnahmen und keine_massnahme zugleich`)
+  // Gleiche Grenze wie die Begründung im Katalog (src/data/katalog.ts); sonst lehnt erst entwurf:eintragen ab und das Programm wird neu erfasst.
+  if (typeof p.keine_massnahme === 'string' && p.keine_massnahme.length > 400) f.push(`${name}: keine_massnahme ist länger als 400 Zeichen (${p.keine_massnahme.length}) – Kapitel und Seiten nennen, nicht nacherzählen`)
   for (const b of p.neue_buendel ?? [])
     if (!b || typeof b.name !== 'string' || !b.name.trim() || !ursachen.has(b.ursache)) f.push(`${name}: neue_buendel – je Eintrag { "ursache": <ID des Themas>, "name": "…", "seite": N }`)
   for (const b of p.eigene_synonyme ?? [])
@@ -1162,6 +1204,22 @@ export function pruefeProgramm(k: Katalog, e: Pick<Erfassung, 'thema_id' | 'leit
         if (!p.massnahmen.some((m) => m.buendel === h) && !(p.hebel_nicht_gefunden ?? []).some((n) => n.ursache === u && n.hebel === h))
           f.push(`${name}: Hebel „${h}“ (Ursache ${u}) nicht beantwortet – Maßnahme mit "buendel": "${h}" oder Eintrag in hebel_nicht_gefunden mit gelesenen Seiten und Grund`)
   return f
+}
+
+/**
+ * Hinweise der Selbstprüfung: Bündel einer Ursache ohne Maßnahme. Bündel sind keine Pflicht (anders als Hebel),
+ * aber im Vergleichslauf (Thema 18, Oktober 2026) ließen Einzelagenten je Programm ein bis vier der zehn Bündel
+ * leer – je Bündel noch einmal nach seiner Richtung suchen, bevor abgegeben wird.
+ */
+export function offeneBuendel(e: Pick<Erfassung, 'leitfaden' | 'nachtrag'>, p: Pick<ErfasstesProgramm, 'massnahmen'>, ursachen: number[]): string[] {
+  if (e.nachtrag || !Array.isArray(p.massnahmen)) return []
+  const h: string[] = []
+  for (const u of ursachen) {
+    const offen = (e.leitfaden?.buendel?.[String(u)] ?? []).filter((b) => !p.massnahmen.some((m) => m.buendel === b))
+    if (offen.length)
+      h.push(`Ursache ${u}: Bündel ohne Maßnahme: ${offen.map((b) => `„${b}“`).join(', ')} – je Bündel im Text gesucht? Was das Programm dazu zusagt, erfassen (konkreteste Stelle); sonst nichts ändern`)
+  }
+  return h
 }
 
 /**

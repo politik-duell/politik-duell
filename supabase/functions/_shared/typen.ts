@@ -1,4 +1,4 @@
-// Typen spiegeln das Datenmodell aus CLAUDE.md (supabase/migrations).
+// Typen spiegeln das Datenmodell aus docs/konzept.md und docs/datenmodell.md (supabase/migrations).
 // Diese Datei wird von der App und von der Edge Function `analyse` genutzt,
 // darf also nur reines TypeScript ohne Browser- oder Deno-APIs enthalten.
 
@@ -213,7 +213,7 @@ export interface AbdeckungEintrag {
   durchsucht_fuer?: number[] | null
 }
 
-/** Antwortformat der Edge Function `analyse` (siehe CLAUDE.md). */
+/** Antwortformat der Edge Function `analyse` (siehe docs/konzept.md → KI-Schnittstelle). */
 export interface AnalyseAntwort {
   /**
    * `grenze`: Abwertung einer Gruppe, Gewaltaufruf oder Beleidigung (docs/methode.md → „Grenze“). Keine Karte,

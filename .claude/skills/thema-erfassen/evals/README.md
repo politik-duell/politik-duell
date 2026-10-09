@@ -29,3 +29,55 @@ Szenarien im Format der Skill-Best-Practices (`skills`, `query`, `files`, `expec
 | Kurzbericht | – | Der feste Block war korrekt; der Agent hängte aber eine frei formulierte Zusammenfassung an |
 
 **Schluss:** Zitate und Seiten erkennt die kleinste Stufe verlässlich (die Selbstprüfung erzwingt das ohnehin). Zusagen und Leitfaden-Regeln nicht: Rund ein Drittel der Maßnahmen widerspricht dem Leitfaden oder ist ein Prüfauftrag, drei Zusagen fehlen. Das würde Rückfragen und Bewertung belasten und Programme ungleich behandeln, wenn nicht alle mit derselben Stufe laufen. **Der Skill bleibt unverändert:** Erfassung mit der nächstkleineren Stufe (mittlere), die kleinste nicht. Ein neuer Vergleichstest lohnt sich mit einer neuen Modellgeneration.
+
+## Vergleichstest: vorsortierter Auszug statt ganzer Textdatei
+
+**Frage:** Findet `programm-erfassung` dieselben Maßnahmen mit weniger Tokens, wenn die Textdatei nur die Seiten mit Treffern der Suchbegriffe enthält (Vorschlag aus dem Konzept „Einmal lesen, oft antworten“)?
+
+**Aufbau (9. 10. 2026):** Themen 30 (Sucht und Glücksspiel) und 33 (Mediennutzung von Kindern und Jugendlichen), sechs Bundesprogramme (BSW nicht ladbar: HTTP 503). Je Programm und Thema zwei Agenten `programm-erfassung` mit demselben Modell, Arbeitsordner `.cache/vergleich/<variante>/<ID>/` (nicht im Repository):
+
+- **voll:** Auftrag wie `entwurf:auftrag`, ganze Textdatei.
+- **auszug:** derselbe Auftrag, aber die Textdatei enthält nur Seiten mit Treffern und je eine Nachbarseite (Thema 30: 12–44 Seiten je Programm, Thema 33: 3–21; zusammen 11–55 % der Seiten). Zusatz im Auftrag: kein Inhaltsverzeichnis, nichts außerhalb des Auszugs lesen.
+
+Vergleich mit den 34 Bundes-Maßnahmen dieser sechs Parteien in der archivierten Erfassung vom 6. 10. 2026 (`daten/protokolle/30|33/2026-10-06-bund-land-BE-MV-ST/erfassung.json`). Gleich heißt: Seite ±1 und mindestens 60 % gemeinsame Wörter (bezogen auf das kürzere Zitat). Tokens laut Agentenabschluss.
+
+**Ergebnis:**
+
+| | voll | auszug |
+| --- | --- | --- |
+| Maßnahmen gefunden | 33 | 30 |
+| davon wie im Archiv | 31 von 34 | 25 von 34 |
+| im Archiv, hier fehlend | 3 (SPD S. 30 zu 30; Grüne S. 77 und AfD S. 50 zu 33) | 9 |
+| Tokens (12 Agenten) | 434.869 (Ø 36.239) | 575.500 (Ø 47.958) |
+| Laufzeit (Summe) | 346 s | 286 s |
+
+- **Der Auszug verliert Maßnahmen, die keinen Suchbegriff enthalten.** Grüne zu Thema 33: Die drei Zusagen auf S. 85 (Altersgrenzen, sichere Voreinstellungen, Bürgerrat) stehen auf einer Seite ohne Treffer; der volle Agent fand sie über das Kapitel im Inhaltsverzeichnis. Grüne zu Thema 30: Die Zusagen beginnen auf S. 94, der Auszug enthielt nur S. 95–97. Mehr Nachbarseiten würden den zweiten Fall auffangen, den ersten nicht.
+- **Der Auszug ist teurer, nicht billiger.** Der volle Agent liest gezielt: Fundstellen-Auszüge im Auftrag, Inhaltsverzeichnis, passende Seiten. Der Auszugs-Agent liest den ganzen Auszug, der bei vielen Treffern (Union zu Thema 30: 44 Seiten) größer ist als das, was der volle Agent tatsächlich liest.
+- **Streuung zwischen zwei vollen Läufen:** 31 von 34 gleich. SPD S. 30 und AfD S. 50 fehlen in beiden Varianten; das ist Streuung des Agenten, nicht Folge des Auszugs.
+- Die Schätzung im Konzept (rund 8.000 statt 48.000 Tokens je Thema und Programm) trifft nicht zu: Ein Erfassungs-Agent kostet schon mit ganzer Textdatei rund 36.000 Tokens, davon ein großer fester Teil für Agentenbeschreibung, Auftrag und Selbstprüfung.
+
+**Schluss:** **Der Skill bleibt unverändert.** Ein Auszug nach Suchbegriffen spart nichts und übersieht Zusagen, die anders formuliert sind als die Suchbegriffe. Dasselbe Risiko trägt Hebel 1 in `docs/token-verbrauch-erfassung.md` (Programme ohne Treffer überspringen): Seiten ohne Treffer enthielten hier drei Maßnahmen eines Programms.
+
+## Vergleichstest: Sammelaufträge mit verwandten Themen
+
+**Frage:** Sammelaufträge (ein Agent je Programm für mehrere Themen, `entwurf:lauf auftraege --sammel`) waren im Vergleichslauf mit den Themen 18 und 30 teurer als Einzelaufträge (806.752 statt 580.227 Tokens, Pull Request #84). Gilt das auch für zwei Themen, die inhaltlich nah beieinanderliegen?
+
+**Aufbau (9. 10. 2026):** Themen 30 (Sucht und Glücksspiel) und 33 (Mediennutzung von Kindern und Jugendlichen), dieselben sechs Bundesprogramme und Aufträge wie im Test „vorsortierter Auszug“. Je Programm ein Sammelauftrag aus den beiden Einzelaufträgen (`sammelauftrag-text.ts`), Arbeitsordner `.cache/vergleich/sammel/` (nicht im Repository). Vergleich mit dem Lauf „voll“ von demselben Tag und mit den 34 archivierten Maßnahmen, Regeln wie oben.
+
+**Ergebnis:**
+
+| | Einzelaufträge (12 Agenten) | Sammelaufträge (6 Agenten) |
+| --- | --- | --- |
+| Maßnahmen gefunden | 33 | 32 |
+| davon wie im Archiv | 31 von 34 | 32 von 34 (Skript: 31; Union S. 47 dieselbe Zusage mit längerem Zitat) |
+| im Archiv, hier fehlend | SPD S. 30 (30); Grüne S. 77, AfD S. 50 (33) | Grüne S. 85, Linke S. 57 (33) |
+| Tokens | 434.869 (Ø 36.239 je Agent) | 332.347 (Ø 55.391 je Agent) |
+| Laufzeit (Summe / längster Agent) | 346 s / 38 s | 303 s / 62 s |
+
+- **Diesmal 24 % weniger Tokens bei gleicher Fundquote** – das Gegenteil des Laufs mit 18 und 30 (+39 %). Ein Erfassungs-Agent hat einen großen festen Teil (Agentenbeschreibung, Auftrag, Inhaltsverzeichnis, Selbstprüfung); den spart der Sammelauftrag einmal je Programm.
+- **Überschneidung der Trefferseiten erklärt den Unterschied nicht.** Anteil gemeinsamer Trefferseiten (bezogen auf das Thema mit weniger Seiten): 18+30 38 %, 30+33 41 % (mit Nachbarseite 63 % bzw. 68 %). Eine Prüfung „Sammelaufträge nur bei gemeinsamen Kapiteln“ würde beide Paare gleich behandeln und wurde deshalb nicht gebaut.
+- **Wahrscheinlicher ist die Menge der Fundstellen.** Thema 18 hat in den sechs Programmen 137 Trefferseiten (Grüne 45), Thema 30 60, Thema 33 23. Bei kleinen Themen überwiegt der feste Teil, den das Bündeln spart; bei großen wächst der Kontext des ersten Themas im zweiten mit. Belegt ist das mit zwei Läufen nicht.
+- **Wartezeit etwa gleich:** Ein Sammel-Agent braucht länger, dafür laufen bei höchstens sieben gleichzeitigen Agenten 6 Sammelaufträge in einer Welle, 12 Einzelaufträge in zwei.
+- Fehlende Stellen unterscheiden sich zwischen den Läufen, aber nicht in der Zahl; das ist Streuung des Agenten wie im Test oben.
+
+**Schluss:** **Einzelaufträge bleiben Standard.** `--sammel` kann sich bei kleinen Themen (wenige Fundstellen je Programm) lohnen; ob die Grenze bei der Zahl der Fundstellen liegt, zeigt erst ein weiterer Lauf mit zwei kleinen Themen und einem großen Thema.
