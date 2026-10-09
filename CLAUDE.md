@@ -21,6 +21,13 @@ Ein Zwei-Spieler-Webspiel: Spieler nennen reale Alltagsprobleme, das Spiel prüf
 - **Daten:** kuratiert als JSON in `daten/` → Pull Request mit Quellenpflicht und automatischer Prüfung → `npm run seed` erzeugt `supabase/seed.sql`. Erfassung über die Skills in `.claude/skills/` (Übersicht: `.claude/skills/README.md`).
 - **Branding:** Name „Politik-Duell“ (nicht „Wer liefert?“); Quizshow-Anmutung, aber nichts von „Wer wird Millionär“ nachbilden; Tonalität neutral, freundlich, leicht spielerisch, keine Seitenhiebe auf Parteien. Domain politik-duell.de; Supabase-Projekt heißt technisch `wer-liefert`.
 
+## Arbeitsweise (Kontext sparen)
+
+- Kommandoausgaben kurz halten: `npm run -s …`, `npm test -- --reporter=dot`, bei langen Ausgaben nur Ende oder Treffer (`| tail -20`, `grep`).
+- Große Dateien nur in Ausschnitten lesen (Zeilenbereich, Grep zuerst); erzeugte Dateien (`supabase/seed.sql`, `supabase/seed-teile/`, `dist/`) gar nicht – Quelle ist `daten/`.
+- Breite Suchen über viele Dateien an einen Subagenten (Explore) geben; im Hauptkontext nur das Ergebnis.
+- Antworten knapp: Ergebnis zuerst, keine Wiederholung von Plan oder Diff, keine Zusammenfassung dessen, was gerade zu sehen war.
+
 ## Wo steht was
 
 - `docs/konzept.md` – Spielablauf im Detail, Bewertungslogik, Datenmodell-Entwurf, KI-Schnittstelle, Moderation, Branding, Meilensteine, offene Punkte

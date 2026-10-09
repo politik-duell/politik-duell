@@ -12,7 +12,7 @@ Beobachtet beim Durchgang für die Themen 27, 29, 30 und 33 (6. 10. 2026, Pull R
    - `keine_massnahme` länger als 400 Zeichen. `eintragen` lehnt ab, `programm-pruefen` nicht (Thema 30, drei Programme).
    - Ein Zitat auf der angegebenen Seite nicht gefunden (Thema 29, Grüne BE).
 
-   Abhilfe: Beide Regeln in `.claude/agents/programm-erfassung.md` aufnehmen und in `programm-pruefen` als Fehler melden. Bei Thema 33 genügte ein Zusatz im Prompt, und es gab keine Wiederholung.
+   Umgesetzt (Oktober 2026): `programm-pruefen` meldet alle drei als Fehler, bevor der Agent abgibt – Bündel außerhalb des Leitfadens, Zitat nicht auf der Seite und `keine_massnahme` über 400 Zeichen; die Grenze steht auch in `.claude/agents/programm-erfassung.md`.
 5. **Kurze Ausgaben im Koordinationskontext.** Skriptausgaben mit `Select-Object -Last` und `Select-String` filtern. Die Kurzberichte der Agenten lassen sich nicht weiter kürzen, ohne die Prüfbarkeit zu verlieren.
 
 ## Reihenfolge

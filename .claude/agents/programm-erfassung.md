@@ -44,7 +44,7 @@ Die Suche ist schon gemacht: Alle Programme haben dieselben Begriffe, gezählt h
 
 ## Keine Maßnahme, nicht durchsucht
 
-`keine_massnahme` nur, wenn du die passenden Kapitel gelesen hast und dort nichts an den Ursachen ansetzt. Null Treffer allein reichen nicht. Begründung wie: „Kapitel ‚Umwelt‘ (S. 40–44) und Fundstellen S. 12, 51 gelesen; nichts zu Hochwasserschutz oder Versicherung.“
+`keine_massnahme` nur, wenn du die passenden Kapitel gelesen hast und dort nichts an den Ursachen ansetzt. Null Treffer allein reichen nicht. Begründung höchstens 400 Zeichen, wie: „Kapitel ‚Umwelt‘ (S. 40–44) und Fundstellen S. 12, 51 gelesen; nichts zu Hochwasserschutz oder Versicherung.“
 
 **Seiten ohne Text:** Nennt der Auftrag Seiten fast ohne Text, sind das meist Titel- oder Trennseiten. Liegt eine davon mitten im passenden Kapitel und fehlt dort erkennbar Inhalt, ist der Text vermutlich ein Bild – dann gibt es kein `keine_massnahme`, sondern `nicht_durchsucht` mit diesem Grund.
 
