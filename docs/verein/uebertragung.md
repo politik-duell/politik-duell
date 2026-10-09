@@ -74,5 +74,5 @@ Nach der Übertragung in einem Pull Request:
 - [ ] Impressum (`src/rechtliches/Rechtliches.tsx`): „vertreten durch den Vorstand: [Namen]“, „Registergericht: Amtsgericht [Ort], Registernummer: VR [Nummer]“, Hinweis auf Gemeinnützigkeit
 - [ ] Datenschutzerklärung: Verantwortlicher ist der Verein; `DATENSCHUTZ_STAND` aktualisieren
 - [ ] Auftragsverarbeitungsverträge (Vercel, Supabase, Mistral) im Namen des Vereins abschließen bzw. übernehmen
-- [ ] `CLAUDE.md` (Branding, offene Punkte), `README.md`, `supabase/EINRICHTEN.md`: neue Organisation, neue Links
+- [ ] `CLAUDE.md` und `docs/konzept.md` (Branding, offene Punkte), `README.md`, `supabase/EINRICHTEN.md`: neue Organisation, neue Links
 - [ ] Optional: Hinweis „Getragen vom gemeinnützigen Politik-Duell e. V.“ in der Fußzeile, Seite mit Satzung, Vorstand, Methodenbeirat und Geldgebern
