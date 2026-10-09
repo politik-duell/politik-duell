@@ -15,10 +15,39 @@ Stand: 2026-10-09 · Konzept, noch nicht umgesetzt.
 | Programm lesen | je Thema × Programm ein Agent (7–28 je Thema), für Haltungen noch einmal 7 | **einmal je Programm** (Katalog), danach nie wieder |
 | Zitate | Agent tippt ab, `programm-pruefen`, `zusammenfuehren`, `zitate:pruefen` je Thema, CI | Zitat = Verweis auf Satz im Katalog, wörtlicher Text kommt vom Skript; ein Zitatfehler ist nicht mehr möglich |
 | Zuordnung zu Ursachen | 7–28 Agenten, je mit Parteinamen | **ein** Haiku-Agent je Thema, blind über alle Programme |
-| Bewertung | Opus-Agent schreibt alles | Haiku entwirft (inkl. Forschungsstand), Opus prüft blind jeden Wert |
+| Bewertung | Opus-Agent je Thema | bleibt **ein Opus-Agent** je Thema (blind) – günstiger als Haiku-Entwurf + Opus-Prüfung, siehe „Faustregel“ |
 | Recherche (Ursachen, Haltungen) | Opus-Agenten, Koordination prüft Form | Haiku-Agenten, Skript prüft Quellen, Opus sagt passt/passt nicht |
 | Koordination | Sonnet, urteilt nicht | Opus, urteilt nur über blinde Prüfbögen |
 | Forderung nachtragen | Aufträge an alle erfassten Programme | nur Suchbegriffe → Katalog → Zuordnung → Bewertung |
+
+## Ablauf als Bild
+
+Heute (je Thema):
+
+```mermaid
+flowchart LR
+    A[Phase A<br/>Opus-Recherche] --> B[Aufträge je Programm]
+    B --> C1[Sonnet liest Programm 1]
+    B --> C2[Sonnet liest Programm 2]
+    B --> C3[… bis 28 Programme]
+    C1 & C2 & C3 --> D[Zitatprüfung je Programm<br/>+ Rückfragen]
+    D --> E[Opus blind-bewertung]
+    E --> F[Zitate erneut prüfen, eintragen]
+```
+
+Neu:
+
+```mermaid
+flowchart LR
+    K[(Programmkatalog<br/>einmal je Programm<br/>Haiku + Skript + Opus-Stichprobe)]
+    A[Phase A<br/>Haiku-Recherche<br/>Skript prüft Quellen<br/>Opus: passt?] --> S[Skript: Kandidaten<br/>aus dem Katalog]
+    K --> S
+    S --> Z[Haiku zuordnung<br/>1 Agent, alle Programme, blind]
+    Z --> P{Opus: passt?}
+    P -- nein, Liste --> Z
+    P -- ja --> E[Opus blind-bewertung]
+    E --> F[eintragen]
+```
 
 ## 1. Der Programmkatalog
 
@@ -77,8 +106,8 @@ Danach ist der Katalog eingefroren. `zitate:pruefen` prüft künftig nur noch: P
 | `programm-katalog` (neu) | Haiku | ein Kapitelblock → Aussagen |
 | `ursachen-recherche`, `haltung-recherche` | Haiku (bisher Opus) | Web-Recherche, Vorschlag als JSON |
 | `zuordnung` (neu, ersetzt `programm-erfassung` und `haltung-erfassung`) | Haiku | blinde Kandidatenliste → Ursache/Bündel/Hebel bzw. Stelle je Haltung |
-| `bewertung-entwurf` (aus `blind-bewertung`) | Haiku | Werte, Instrumente, Forschungsstand mit Quellen |
-| `haltung-einordnung` | Haiku (bisher Opus) | ja/nein/teils + Kurzfassung |
+| `blind-bewertung` | Opus (unverändert) | Werte, Instrumente, Forschungsstand mit Quellen |
+| `haltung-einordnung` | Opus (unverändert) | ja/nein/teils + Kurzfassung |
 | Skripte | – | alles Zählbare und Prüfbare: Quellen öffnen, Zitate, Vollständigkeit, Format |
 
 **Die Opus-Prüfung ist immer gleich gebaut:**
@@ -99,7 +128,9 @@ Haiku liefert ──► Skript prüft Form ──Fehler──► derselbe Haiku 
 
 - Prüfbögen sind **blind** (Parteien als Programm A, B, …), auch für die Koordination. Damit darf Opus urteilen, ohne die Neutralität aufzuweichen. Die Zuordnung Programm → Partei kennt nur das Eintragen-Skript.
 - Opus schreibt keine Werte, Zitate oder Quellen selbst – es benennt, was nicht passt und warum. Die Korrektur macht Haiku.
-- Bewertung ist die Ausnahme beim Umfang: Opus sieht **jeden** Wert (sie ergeben die Punkte), nicht nur eine Stichprobe – aber als kompakte Tabelle mit Haikus Begründung in einer Zeile.
+**Faustregel – wer macht was, nach Tokens:**
+- Muss Opus **jeden** Punkt ansehen (Bewertung: daraus werden Punkte; Haltungs-Einordnung: jede Zeile ist ein Urteil), schreibt Opus direkt. Haiku-Entwurf + Opus-Prüfung + Nacharbeit wären drei Durchgänge über dieselbe Liste statt einem.
+- Reicht eine **Stichprobe** oder ein Skript (Katalog, Recherche-Quellen, Zuordnung), macht Haiku die Arbeit und Opus prüft kurz.
 
 ## 3. Abläufe neu
 
@@ -117,9 +148,9 @@ Erfassen
   Haiku zuordnung (1 je Thema, alle Programme zugleich)
                              – je Kandidat: Ursache | Grenzfall | gehört nicht dazu; Bündel/Hebel
   Skript zuordnung:pruefen   – Pflichtursachen und Hebel beantwortet, Bündelregeln
-  Haiku bewertung-entwurf    – Instrumente, Wirksamkeit, Umsetzbarkeit, Forschungsstand
+  Opus Prüfbogen             – Zuordnung (Stichprobe, Grenzfälle) → passt / Runde 2
+  Opus blind-bewertung       – Instrumente, Wirksamkeit, Umsetzbarkeit, Forschungsstand (ein Agent je Thema)
   Skript bewertung-pruefen
-  Opus Prüfbogen             – Zuordnung (Stichprobe) + jeder Wert → passt / Runde 2
   entwurf:eintragen, seed, Test (einmal am Ende)
 ```
 
@@ -127,14 +158,14 @@ Erfassen
 
 ### Forderungen (`/forderung-erfassen`)
 
-Suchbegriffe ergänzen → `katalog:kandidaten --nachtrag` → `zuordnung` → `bewertung-entwurf` nur für neue Kandidaten → Opus-Prüfbogen → eintragen. Kein Programm wird angefasst.
+Suchbegriffe ergänzen → `katalog:kandidaten --nachtrag` → `zuordnung` → Opus-Prüfbogen → `blind-bewertung` nur für neue Kandidaten → eintragen. Kein Programm wird angefasst.
 
 ### Haltungen (`/haltung-anlegen` → `/haltung-erfassen`)
 
 ```
 Phase A: Haiku haltung-recherche (parallel) → Skript prüft Quellen/Form → Opus passt/passt nicht → Commit
 Erfassen: katalog:kandidaten --haltung (alle Aussagearten) → Haiku zuordnung wählt je Programm die klarste Stelle
-          → Haiku haltung-einordnung (blind) → Opus Prüfbogen (jede Einordnung, eine Zeile) → eintragen
+          → Opus haltung-einordnung (blind, wie bisher) → eintragen
 ```
 
 Statt 7 Erfassungs-Agenten + 1 Einordnung: 1 Zuordnung + 1 Einordnung, gleich wie viele Haltungen.
@@ -158,6 +189,12 @@ Statt 7 Erfassungs-Agenten + 1 Einordnung: 1 Zuordnung + 1 Einordnung, gleich wi
 | Doppelte Validierung in `zusammenfuehren` nach der Selbstprüfung | einmal prüfen, danach gilt es |
 | Teil-Neubewertung nach später Rückfrage | späte Rückfragen gibt es nicht mehr |
 | Ein Block je Aufruf in `/liste-ausfuehren` als Pflicht | Blöcke sind klein genug |
+| Runde „zu allgemeine Suchbegriffe“ in `entwurf:lauf vorab` | allgemeine Begriffe liefern nur mehr Kandidaten, die `zuordnung` aussortiert; kein Programm wird dadurch teurer gelesen |
+| Neutralisieren der Beschreibungen vor `entwurf:blind` („Reste über Schwelle“) | `kurz` ist schon beim Katalogisieren ohne Parteinamen geprüft |
+| Eigene Synonyme und neue Bündel von Hand in den Leitfaden übertragen | Skript übernimmt sie aus der Zuordnung |
+| Ergebniszeilen in `docs/haltungen.md` und `fortschritt.md` von Hand | erzeugt das Eintragen-Skript |
+| `liste:auswahl` in jedem Unterskill erneut | einmal am Anfang von `/liste-ausfuehren`, Ergebnis als Datei an die Unterskills |
+| Getrennte Läufe für Haltungen und Themen aus einer Liste | ein gemeinsamer Kandidatenlauf über den Katalog |
 
 ## 5. Was bleibt (nicht verhandelbar)
 
@@ -174,17 +211,17 @@ Statt 7 Erfassungs-Agenten + 1 Einordnung: 1 Zuordnung + 1 Einordnung, gleich wi
 | Haiku übersieht eine Aussage im Katalog → fehlt für alle späteren Themen | Vollständigkeitsprüfung je Absatz (Skript); Opus-Stichprobe; Vergleichslauf vor dem Umstieg |
 | `art` falsch (Zusage als Ziel eingestuft) → fällt aus der Themensuche | Kandidaten für Themen enthalten auch `ziel`/`pruefauftrag` mit Treffer; `zuordnung` darf hochstufen, Opus sieht diese Fälle im Prüfbogen |
 | Neue Themen brauchen Begriffe, die beim Katalogisieren niemand kannte | Kandidaten über Volltext der Absätze (nicht nur `stichwoerter`) plus `felder` |
-| Haiku bei Bewertung zu schwach | Opus sieht jeden Wert; zwei Runden; Rest bleibt `offen` und wird nicht eingetragen |
+| Haiku-Zuordnung zu grob oder zu weit | Opus-Prüfbogen mit allen Grenzfällen; die Bewertung (Opus) kann Zuordnungen als „gehört nicht dazu“ zurückweisen |
 
 ## 7. Umstieg in Schritten
 
-1. **Vergleichslauf** (Pflicht laut `programm-erfassung.md`): Katalog für zwei Bundesprogramme mit Haiku; Abgleich mit den schon erfassten Maßnahmen der Themen 18 und 30 – wie viele findet der Katalog als `zusage`? Ergebnis in `thema-erfassen/evals/`. Unter etwa 95 % Wiederfund: Regeln schärfen oder Katalog mit Sonnet.
+1. **Vergleichslauf** (Pflicht laut `programm-erfassung.md`): Katalog für zwei Bundesprogramme mit Haiku; Abgleich mit den schon erfassten Maßnahmen der Themen **6** (Zuwanderung, groß, Bund und Land, strittig) und **27** (Arbeitsbelastung Gesundheitswesen, mittel, neueste Erfassung) sowie mit 5 erfassten Haltungen – wie viele findet der Katalog als `zusage`? Ergebnis in `thema-erfassen/evals/`. Unter etwa 95 % Wiederfund: Regeln schärfen oder Katalog mit Sonnet.
 2. Skripte: `katalog:absaetze`, `katalog:pruefen`, `katalog:kandidaten`, `zuordnung:pruefen`, `recherche:pruefen`, Prüfbogen-Generator; Sperre für `daten/katalog/`.
 3. Alle Programme katalogisieren (einmalig, 27 vorhanden + BSW Bund, sobald erreichbar).
-4. Agenten umstellen (`zuordnung`, `bewertung-entwurf`, Modelle), Skills kürzen, `README.md` der Skills neu.
+4. Agenten umstellen (`zuordnung`, Recherche auf Haiku), Skills kürzen, `README.md` der Skills neu.
 5. Ein Thema und eine Haltung neu gegen den alten Stand laufen lassen (gleiche Punkte?), dann alte Aufträge-Skripte entfernen.
 
-## Offene Entscheidungen
+## Entscheidungen
 
-- **Bewertung:** Haiku-Entwurf + Opus-Prüfung (wie oben) oder Bewertung ganz bei Opus lassen (ein Agent je Thema, ohnehin der kleinste Kostenanteil, aber die Stelle mit den Punkten)?
-- **Katalog im Repository** (`daten/katalog/`, für alle wiederverwendbar, CC BY) oder nur in `.cache/` (dann pro Container neu)?
+- **Bewertung und Haltungs-Einordnung bleiben bei Opus** (je ein blinder Agent). Grund: Faustregel oben – weniger Tokens als Entwurf + Prüfung.
+- **Katalog im Repository** unter `daten/katalog/`. Rechtlich unbedenklich, weil er keinen Programmtext enthält: nur Seitenzahlen, Satzverweise, Einordnung (`art`, `felder`) und eigene Kurzbeschreibungen. Fakten und eigene Zusammenfassungen sind nicht urheberrechtlich geschützt; Zitate entstehen wie bisher nur kurz und einzeln in `daten/themen/` (Zitatrecht, § 51 UrhG). Regel für `kurz`: eigene Worte, keine Satzteile aus dem Programm übernehmen – `katalog:pruefen` meldet Überschneidungen über 8 Wörter.
