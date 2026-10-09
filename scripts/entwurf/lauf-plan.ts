@@ -24,6 +24,8 @@ export interface Optionen {
    * auftraege: zusätzlich Sammelaufträge (ein Agent je Programm für alle Themen). Nicht Standard: Im Vergleichslauf
    * (Themen 18 und 30, sechs Bundesprogramme) brauchten sie 39 % mehr Tokens und fast viermal so lange wie
    * Einzelaufträge – die Agenten lesen gezielt statt ganz, der Kontext des ersten Themas wächst im zweiten mit.
+   * Mit den kleineren Themen 30 und 33 waren es 24 % weniger bei gleicher Fundquote (evals/README.md der Skill
+   * thema-erfassen).
    */
   sammel?: boolean
 }
