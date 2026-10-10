@@ -241,3 +241,15 @@ Lauf für die Haltungen 32–35 (Liste aus `/liste-einordnen`), alle Bundesprogr
 
 - 34: Sollen trockengelegte Moore wieder vernässt werden? (Union ja, Grüne ja; Linke: Zitat zur Revitalisierung ohne ausdrückliche Wiedervernässung)
 - 35: Soll in Deutschland die kommerzielle Erdgasförderung durch unkonventionelles Fracking erlaubt werden? (Grüne nein, Linke nein; FDP: Zitat zur heimischen Erdgasförderung mit Fracking-Verfahren, ohne Angabe unkonventioneller Lagerstätten)
+
+### Ergebnisse Phase B (10. 10. 2026)
+
+Lauf für die Haltungen 36 und 37 (Ersatzfragen für 6 und 28, Liste aus `/liste-einordnen`), alle sieben Bundesprogramme (BSW als lokale Kopie der Betreiberin, Prüfsumme stimmt); **KI-Entwurf**, Einordnung ohne Parteinamen. „–“ heißt „keine Aussage“. Bei Haltung 37 fanden die Agenten auch bei Grünen und Linken Zitate, die Einordnung wertete sie als „keine Aussage“.
+
+| ID | Frage | Union | SPD | Grüne | FDP | AfD | Linke | BSW |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 37 | Sollen Geflüchtete aus der Ukraine bei Bedürftigkeit Leistungen nach dem Asylbewerberleistungsgesetz statt Bürgergeld bzw. Grundsicherung erhalten? | ja (S. 43) | – | – | teils (S. 28) | ja (S. 26) | – | – |
+
+**Zurückgestellt** (nur zwei Programme mit erkennbarer Position; Phase A bleibt liegen):
+
+- 36: Sollen Behörden und Schulen geschlechtergerechte Sprache verwenden? (zwei Fundstellen, eingeordnet als teils und nein; die übrigen fünf Programme ohne Aussage). Auch die positive Fassung der Frage erreicht das Aufnahmekriterium nicht – wie Haltung 6.
