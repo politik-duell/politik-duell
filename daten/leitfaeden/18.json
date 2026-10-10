@@ -96,17 +96,67 @@
     "1803": [
       "Stadtgrün, Verschattung, Frischluft",
       "Bauvorschriften und Gebäudehitzeschutz",
-      "Nachverdichtung nicht bremsen"
+      "Nachverdichtung nicht bremsen",
+      "Verschattung von Spielflächen",
+      "Neuer Stadtwald",
+      "Trinkwasser bei Hitze",
+      "Förderung Hitzeschutz an Gebäuden",
+      "Altbaumschutz",
+      "Pflege öffentlicher Grünflächen",
+      "Wasserzugang zur Abkühlung",
+      "Hitzeschutzkonzepte",
+      "Personal und Mittel für Grünflächenpflege",
+      "Planungsrechtliche Sicherung von Grünflächen und Kleingärten",
+      "Kaltluftschneisen erhalten",
+      "Baumschutzverordnung stärken",
+      "Hitzeaktionsplan fortschreiben",
+      "Hitzeanpassungskonzepte in Einrichtungen",
+      "Begrünungspflicht bei Bau- und Sanierungsprojekten",
+      "Kühle Straßen und Plätze in neuen Quartieren",
+      "Mindestgrünanteil bei Neubauten (Biotopflächenfaktor)",
+      "Kühle Innenräume in öffentlichen Gebäuden",
+      "Bewässerung der Stadtbäume",
+      "Trinkwasserspender und Trinkbrunnen",
+      "Gesetzlicher Schutz für Grünflächen",
+      "Fassadenbegrünung erleichtern",
+      "Hitzeschutzkonzepte in Kitas"
     ],
     "1804": [
       "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen",
       "Technischer Rückhalt, Kanal und Speicher",
-      "Bauland ausweisen, Bauen nicht verteuern"
+      "Bauland ausweisen, Bauen nicht verteuern",
+      "Serielles Bauen und schnellere Genehmigung",
+      "Grundsteuer C für baureife Grundstücke",
+      "Baugebot",
+      "Vorrang Flächenrecycling vor Versiegelung",
+      "Verbindliches Regenwassermanagement",
+      "Förderung Umbau von Leerstand zu Wohnraum",
+      "Ausgleich neuer Versiegelung durch Entsiegelung",
+      "Produktionsintegrierte Kompensation",
+      "Bauordnung und Genehmigungen vereinfachen",
+      "Verbot neuer Bebauung auf Grün- und Wasserflächen",
+      "Förderung privater Entsiegelung",
+      "Entsiegelungsprogramm",
+      "Büroneubau-Moratorium",
+      "Innenentwicklung vor Neuversiegelung",
+      "Regenwassernutzung verpflichtend",
+      "Regenwasseragentur stärken",
+      "Schwammstadtprinzip verankern",
+      "Regenwasser versickern statt ableiten",
+      "Kommunale Boden- und Gebäudefonds",
+      "Vorrang Sanierung vor Neuversiegelung",
+      "Flächennutzungsplan mit Netto-Null-Versiegelung",
+      "Rückbau nicht benötigter Verkehrsinfrastruktur"
     ],
     "1805": [
       "Bauverbot, Flächen freihalten, Rückbau",
       "Technischer Hochwasserschutz",
-      "Bauvorsorge der Eigentümer"
+      "Bauvorsorge der Eigentümer",
+      "Grundwasser-Brunnenanlagen",
+      "Naturnaher Hochwasserschutz",
+      "Auenrenaturierung",
+      "Förderung Hochwasserschutzprojekte",
+      "Deichrückverlegung und Auen-Renaturierung"
     ]
   },
   "suchbegriffe_geprueft": {
@@ -185,12 +235,20 @@
         "kaltluft",
         "verschattung",
         "wärmeinsel",
-        "stadtklima"
+        "stadtklima",
+        "beschattung",
+        "grünfassade",
+        "schattenraum",
+        "mikroklima",
+        "baumschutzverordnung",
+        "sonnenschutz",
+        "kühlort"
       ],
       "Bauvorschriften und Gebäudehitzeschutz": [
         "sommerlicher wärmeschutz",
         "außenverschattung",
-        "kühlung"
+        "kühlung",
+        "hitzeschutz"
       ],
       "Nachverdichtung nicht bremsen": [
         "nachverdichtung",
@@ -204,7 +262,10 @@
         "schwammstadt",
         "flächenverbrauch",
         "flächenfraß",
-        "flächenneuinanspruchnahme"
+        "flächenneuinanspruchnahme",
+        "zersiedelung",
+        "brachfläche",
+        "blau-grün"
       ],
       "Technischer Rückhalt, Kanal und Speicher": [
         "regenwasser",
@@ -212,13 +273,18 @@
         "starkregen",
         "kanalisation",
         "regenrückhalt",
-        "abwasser"
+        "abwasser",
+        "abkopplung",
+        "abkoppelung",
+        "schmutzwasser"
       ],
       "Bauland ausweisen, Bauen nicht verteuern": [
         "baulandausweisung",
         "neubaugebiet",
         "flächenausweisung",
-        "bauland"
+        "bauland",
+        "bauturbo",
+        "bauflächen"
       ]
     },
     "1805": {
@@ -229,7 +295,11 @@
         "retention",
         "flussauen",
         "auenschutz",
-        "deichrückverlegung"
+        "deichrückverlegung",
+        "rückhalteflächen",
+        "rückhalteräum",
+        "wasserrückhalt",
+        "pufferzone"
       ],
       "Technischer Hochwasserschutz": [
         "hochwasser",
@@ -238,7 +308,8 @@
         "rückhaltebecken",
         "überflutung",
         "flutkatastrophe",
-        "ahrtal"
+        "ahrtal",
+        "schutzanlage"
       ],
       "Bauvorsorge der Eigentümer": [
         "objektschutz",
