@@ -1,0 +1,60 @@
+{
+  "partei_id": 17,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Stipendien und Personalentwicklung, um Talente aus Ostdeutschland bis in Führungspositionen zu fördern",
+      "ursachen_ids": [],
+      "ursachen_offen": [1901],
+      "zitat": "Wir wollen zudem Talente aus Ostdeutschland mit besseren Zugängen zu Stipendien fördern und mit einem Personalentwicklungskonzept, mit dem das Erreichen von Führungspositionen unterstützt wird.",
+      "seite": 21
+    },
+    {
+      "beschreibung": "Erwachsenenbildung mit Nachqualifizierung, falls Berufsausbildungen nicht dem deutschen System entsprechen",
+      "ursachen_ids": [],
+      "ursachen_offen": [1901],
+      "buendel": "Anerkennung von Qualifikationen und Eignung stärken",
+      "zitat": "Dafür brauchen wir ein System der Erwachsenenbildung, in dem Schulabschlüsse nachgeholt werden können und Nachqualifikationen möglich sind, falls vorhandene Berufsausbildungen nicht dem deutschen System entsprechen […]",
+      "seite": 37
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 1901, "name": "Anerkennung von Qualifikationen und Eignung stärken", "seite": 37 }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 1902,
+      "seiten": [25, 32, 36, 39, 40],
+      "grund": "Kapitel Bildung, Gesellschaft, Sicherheit und Medien gelesen. Nur Bekenntnisse und Ziele (S. 25 Schutzräume ohne Rassismus; S. 32 Ablehnung jeder Diskriminierung). Strafrecht gegen Beleidigung und Hetze (S. 36, 39, 40) gehört nach R2 zu anderen Themen."
+    },
+    {
+      "ursache": 1903,
+      "seiten": [33, 34],
+      "grund": "S. 34: Selbstbestimmungsgesetz nur abgelehnt („lehnen dieses Gesetz ausdrücklich ab“); der Wechsel „sollte“ mit Gutachten möglich sein. Keine konkrete Handlungszusage. S. 33 Gleichstellung von Frauen: kein Merkmal dieses Themas."
+    },
+    {
+      "ursache": 1904,
+      "seiten": [19, 35, 42, 44],
+      "grund": "Kapitel Verwaltung, Sicherheit, Medien und Bürgerrechte gelesen. Kein Rechtsschutz gegen staatliche Diskriminierung. Zufriedenheitsbewertung der Behörden (S. 19) misst Service, nicht Diskriminierung. Diskriminierungsfreie Projektförderung (S. 42) bezieht sich nur auf politische Bekenntnisse, nicht auf Herkunft, Religion oder Identität."
+    }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "Nachqualifikation", "ursache": 1901, "richtung": "Anerkennung ausländischer Berufsabschlüsse" }
+  ]
+}
+
+Protokoll
+
+Gelesen: Textdatei vollständig (S. 1–45), Schwerpunkt Gesellschaft und Frauen (S. 32–34), Sicherheit und Migration (S. 34–38, Integration S. 37), Medien und Bürgerrechte (S. 38–45), Wirtschaft und Verwaltung (S. 18–19), Bildung (S. 23–25), Teilhabe und Sozialpolitik (S. 21–23).
+
+Richtungen ohne Maßnahme: 1902 (Rassismus, Vorurteile, Beleidigung/Hetze), 1903 (Schutz queerer Menschen, Elternrechte), 1904 (Rechtsschutz gegen staatliche Diskriminierung, Verwaltung schulen). Begründung siehe nicht_erfasst.
+
+Nicht erfasst (gelesen, nicht aufgenommen):
+- S. 22: UN-Behindertenrechtskonvention und barrierefreie Arbeitsplätze: Merkmal Behinderung gehört nicht zum Ziel dieses Themas.
+- S. 25: Demokratiebildung und Friedenspädagogik allgemein: kein Bezug zu Herkunft, Religion oder Identität.
+- S. 34: Selbstbestimmungsgesetz, Frauensport, Straffreiheit bei Fremdbezeichnung: nur Haltung oder „sollte“-Formulierung.
+- S. 36–37: Abschiebung, Asylverfahren, Integrationsanforderungen: anderes Thema (Migration).
+- S. 40: Meinungsfreiheit und Strafrecht: kein Merkmal dieses Themas.
+
+Seiten ohne Text: S. 1 (Titelseite) ohne Bezug.
+Gleichartige Stellen: keine.

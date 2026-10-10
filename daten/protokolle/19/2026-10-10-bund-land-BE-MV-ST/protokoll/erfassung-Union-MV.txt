@@ -1,0 +1,66 @@
+{
+  "partei_id": 11,
+  "land": "MV",
+  "massnahmen": [
+    {
+      "beschreibung": "Politische Bildung und klare Haltung gegen Antisemitismus und Hass sind Pflicht in der Schule; ein Gedenkstättenbesuch wird verpflichtend.",
+      "ursachen_ids": [1902],
+      "buendel": "Vorurteile durch Bildung und Begegnung abbauen",
+      "zitat": "Auch politische Bildung, Erinnerungskultur sowie eine klare Haltung gegen Antisemitismus, Extremismus und Hass sind Pflichtbestandteile schulischer Erziehung. Jede Schülerin und jeder Schüler soll verpflichtend mindestens einmal in der Schullaufbahn ein ehemaliges Konzentrationslager und eine Dokumentations- und Gedenkstätte zur Aufarbeitung der SED-Diktatur besuchen.",
+      "seite": 52
+    },
+    {
+      "beschreibung": "Themenjahre sollen die Vielfalt von Kulturen fördern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [1902],
+      "zitat": "Durch Themenjahre fördern wir die Vielfalt von Kulturen.",
+      "seite": 132
+    },
+    {
+      "beschreibung": "Staatliche NGO-Förderung nur bei schriftlicher Verpflichtung auf die Grundordnung und Distanzierung vom Antisemitismus.",
+      "ursachen_ids": [],
+      "ursachen_offen": [1902],
+      "zitat": "Mit uns gibt es staatliche Fördermittel für Nichtregierungsorganisationen (NGOs) ausschließlich dann, wenn diese sich schriftlich zur Einhaltung der freiheitlich-demokratischen Grundordnung („Demokratieklausel“) verpflichten und sich von jeglicher Form des Antisemitismus ebenfalls schriftlich distanzieren.",
+      "seite": 37
+    },
+    {
+      "beschreibung": "Untersagung des Genderns in Schule und Verwaltung.",
+      "ursachen_ids": [],
+      "ursachen_offen": [1903],
+      "zitat": "Untersagung des Genderns und verbindliche Einhaltung der Vorgaben des Rates für deutsche Rechtschreibung in Schule und Verwaltung in Mecklenburg-Vorpommern.",
+      "seite": 7
+    }
+  ],
+  "neue_buendel": [{ "ursache": 1902, "name": "Themenjahre zur Vielfalt von Kulturen", "seite": 132 }],
+  "nicht_erfasst": [
+    { "ursache": 1904, "seiten": [28, 34, 36, 42, 53], "grund": "Fortbildungen für Polizei, Justiz, Mandatsträger und Lehrkräfte sind allgemein gehalten; kein Bezug zu Diskriminierung oder zu einem Merkmal (R2). Kein Rechtsschutz gegen staatliche Diskriminierung benannt." }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "antisemitismus", "ursache": 1902, "richtung": "Vorurteile durch Bildung und Begegnung abbauen" }
+  ]
+}
+
+Protokoll Union (MV), Thema 19 „Diskriminierung im Alltag“
+
+Gelesen: Textdatei S. 1–7 (Inhaltsverzeichnis, Verbindlich-Liste); S. 15–16 (Fachkräfte, Ziel-Absätze); S. 26–38 (Sicherheitsland, Rechtsstaat, Extremismus, Demokratieklausel); S. 44–53 (Bildungsland, Werteerziehung, Pflichtbestandteile, Fortbildung); S. 96–100 (Familien-, Jugend-, Ehrenamts- und Teilhabekapitel); S. 128–132 (Kulturland, Erinnerungskultur). Fundstellen S. 20, 21, 35, 39, 42, 53, 16 im Kontext gelesen; S. 90, 94, 115–121 nur am Stichwort geprüft („Akzeptanz“ bei Windkraft, Wolf, Tourismus, GAP: kein Bezug zu Merkmalen). S. 138 ist Register.
+
+Richtungen:
+- Rassismus bekämpfen und Betroffene stärken (1902): keine Treffer; Antidiskriminierungsstelle, Beratung oder Opferberatung nicht genannt.
+- Vorurteile durch Bildung und Begegnung abbauen (1902): erfasst S. 52 (Pflicht, buendel). Gleichartig: S. 51 (Werteerziehung als Teil des Auftrags, Zusage nur als Bildungsauftrag) und S. 132 (Gedenkstättenarbeit stärken, Pflichtbesuch) bleiben ohne eigene Erfassung. S. 132 Themenjahre als neue_buendel erfasst.
+- Beleidigung und Hetze strafrechtlich verfolgen (1902): S. 35 (Vorratsdatenspeicherung gegen Hasskriminalität im Internet) nicht erfasst, da Online-Hass nach R2 zu anderem Thema gehört. Sonst keine Treffer.
+- Selbstbestimmung und Aufklärung (1903): S. 7 Gendern-Verbot als Grenzfall in ursachen_offen. Die übrigen Treffer („Akzeptanz“) betreffen Energie, Landwirtschaft und Tourismus.
+- Elternrechte und traditionelles Familienbild betonen (1903): S. 96 („Wir stärken Eltern in ihrer Erziehungsverantwortung.“) ist ein Bekenntnis ohne Instrument, nicht erfasst.
+- Schutz und Akzeptanz queerer Menschen stärken (1903): keine Treffer.
+- Rechtsschutz gegen staatliche Diskriminierung schaffen (1904): keine Treffer (keine Ombudsstelle, kein Gleichbehandlungsgesetz, keine Beschwerdestelle).
+- Bestehende Rechte durchsetzen und Verwaltung schulen (1904): Fortbildungszusagen (S. 28, 34, 39, 42, 53) sind allgemein; nicht erfasst (siehe nicht_erfasst).
+
+Nicht erfasst (gelesen, nicht aufgenommen):
+- S. 96: „Jedes Kind soll unabhängig von Herkunft, Einkommen oder Wohnort faire Startchancen erhalten.“ – Zielsatz.
+- S. 36: Arbeitsgelegenheiten für Asylbewerber in den Kommunen – kein Bezug zu einer Ursache.
+- S. 37: Verhüllungsverbot – kein Merkmal der Ursachen 1902–1904, Identifizierbarkeit als Ziel.
+- S. 35, S. 38: Vorratsdatenspeicherung, Klarnamenpflicht, Mindestalter in sozialen Netzwerken – Online-Hass bzw. Kinderschutz (R2).
+- S. 132: Demokratiebildung über Kultur – Bildungsangebot ohne Bezug zu Merkmalen.
+
+Hinweis Bündel: „Vorurteile durch Bildung und Begegnung abbauen“ ist im Auftrag als Richtung zu 1902 genannt, der Prüfer meldet sie aber nicht im Leitfaden bei 1902. Bitte bei der Koordination prüfen; hier ohne Neue-Bündel-Eintrag, da der Name bereits im Auftrag steht.
+
+Seiten ohne Text: S. 1 und S. 139 (keine Rolle für das Thema).

@@ -1,0 +1,106 @@
+{
+  "partei_id": 11,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Alle Schülerinnen und Schüler sollen Gedenkstätten besuchen; Aufbau des Deutsch-Israelischen Jugendwerks vorantreiben",
+      "ursachen_ids": [1902],
+      "buendel": "Vorurteile durch Bildung und Begegnung abbauen",
+      "zitat": "Alle Schülerinnen und Schüler sollen Gedenkstätten besuchen. Das ist wichtig für ihr historisches Bewusstsein. Gleichzeitig treiben wir den Aufbau des Deutsch-Israelischen Jugendwerks zügig voran.",
+      "seite": 46
+    },
+    {
+      "beschreibung": "Verschärfung der Volksverhetzung: Leugnen des Existenzrechts Israels strafbar, besonders schwerer Fall bei antisemitischen Taten",
+      "ursachen_ids": [1902],
+      "buendel": "Beleidigung und Hetze strafrechtlich verfolgen",
+      "zitat": "Deshalb verschärfen wir den Volksverhetzungs-Paragrafen im Strafgesetzbuch so, dass das Leugnen des Existenzrechts künftig strafbar ist. Außerdem führen wir einen besonders schweren Fall der Volksverhetzung ein, der Täter umfasst, die antisemitisch handeln.",
+      "seite": 46
+    },
+    {
+      "beschreibung": "Vom Bund geförderte Organisationen sollen sich zur Grundordnung bekennen und gegen Antisemitismus (IHRA) erklären",
+      "ursachen_ids": [],
+      "ursachen_offen": [1902],
+      "neue_buendel": [{ "ursache": 1902, "name": "Bekenntnis als Fördervoraussetzung", "seite": 46 }],
+      "zitat": "Zivilgesellschaftliche Organisationen, die vom Bund gefördert werden, sollen künftig ein Bekenntnis zur freiheitlich-demokratischen Grundordnung und zum Existenzrecht Israels abgeben sowie gegen Antisemitismus im Sinne der Definition der Internationalen Allianz zum Holocaustgedenken (IHRA).",
+      "seite": 46
+    },
+    {
+      "beschreibung": "Verpflichtendes Gesellschaftsjahr (perspektivisch), das Menschen unterschiedlicher Milieus, Religionen und Generationen zusammenbringt",
+      "ursachen_ids": [],
+      "ursachen_offen": [1902],
+      "neue_buendel": [{ "ursache": 1902, "name": "Verpflichtendes Gesellschaftsjahr", "seite": 57 }],
+      "zitat": "Der Dienst für das Gemeinwohl bringt Menschen unterschiedlicher Milieus, Religionen und Generationen zusammen. Er bietet die Chance, über den eigenen Tellerrand hinauszuschauen, und trägt zur Persönlichkeitsbildung bei. Wir setzen perspektivisch auf ein verpflichtendes Gesellschaftsjahr, das wir mit der aufwachsenden Wehrpflicht zusammendenken.",
+      "seite": 57
+    },
+    {
+      "beschreibung": "Vereinfachung der Verfahren zur Berufsanerkennung und Erlernen der Sprache am Arbeitsplatz stärken",
+      "ursachen_ids": [],
+      "ursachen_offen": [1901],
+      "buendel": "Anerkennung von Qualifikationen und Eignung stärken",
+      "zitat": "Wir vereinfachen die Verfahren zur Berufsanerkennung und stärken das Erlernen der deutschen Sprache „on the job“.",
+      "seite": 43
+    },
+    {
+      "beschreibung": "Umfassendes Paket gegen Altersdiskriminierung mit klaren Regelungen gegen Diskriminierung im Berufsalltag",
+      "ursachen_ids": [],
+      "ursachen_offen": [1901],
+      "buendel": "Diskriminierung bei Bewerbung und Einstellung bekämpfen",
+      "zitat": "Wir bringen daher ein umfassendes Paket zur Bekämpfung von Altersdiskriminierung auf den Weg. Dazu gehören Aufklärungs- und Bildungsmaßnahmen, die Förderung altersfreundlicher Arbeitsmodelle und klare Regelungen, um Diskriminierung im Berufsalltag entgegenzutreten.",
+      "seite": 63
+    },
+    {
+      "beschreibung": "Änderung des Selbstbestimmungsgesetzes: bei Minderjährigen unabhängige psychologische Gutachten erforderlich",
+      "ursachen_ids": [],
+      "ursachen_offen": [1903],
+      "buendel": "Selbstbestimmung und Aufklärung",
+      "zitat": "Das Selbstbestimmungsgesetz der Ampel erlaubt bei Kindern und Jugendlichen, ihren Geschlechtseintrag und Vornamen auch ohne Gutachten oder Beratung und gerichtliche Entscheidung zu ändern. Das lehnen wir entschieden ab. […] Es braucht in jedem Fall unabhängige psychologische Gutachten.",
+      "seite": 64
+    },
+    {
+      "beschreibung": "Polizeibeauftragten des Bundes abschaffen; Vorwürfe gegen Sicherheitsbehörden sollen durch Staatsanwaltschaften und Gerichte geklärt werden",
+      "ursachen_ids": [1904],
+      "buendel": "Rechtsschutz gegen staatliche Diskriminierung schaffen",
+      "zitat": "Wo es Vorwürfe gegen sie gibt, müssen diese durch Staatsanwaltschaften und Gerichte aufgeklärt werden. Sonderermittler, wie den von der Ampel eingerichteten Polizeibeauftragten des Bundes, schaffen wir ab.",
+      "seite": 40
+    },
+    {
+      "beschreibung": "Ablehnung einer Kennzeichnungspflicht für Bundespolizisten (Haltung ohne eigene Handlung, Grenzfall)",
+      "ursachen_ids": [],
+      "ursachen_offen": [1904],
+      "neue_buendel": [{ "ursache": 1904, "name": "Kennzeichnungspflicht für Polizei", "seite": 40 }],
+      "zitat": "Die Einführung einer Kennzeichnungspflicht für Bundespolizisten lehnen wir ab.",
+      "seite": 40
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 1901, "seiten": [43, 63], "grund": "Keine Stelle zu Auswahl bei Bewerbung oder Einstellung nach Herkunft, Religion oder Identität; Berufsanerkennung und Altersdiskriminierung nur als Grenzfälle erfasst." },
+    { "ursache": 1903, "seiten": [62, 63, 64], "grund": "Gleichstellung und Vielfalt nur als Bekenntnis (S. 62), Ehegattensplitting festhalten (S. 63) ohne Bezug zu Abwertung. Zweitberatung vor Geschlechtsangleichung (S. 64) ist gleichartig und im Protokoll genannt." }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis (S. 2); Kapitel Recht und Ordnung (S. 36–41), Wehrhafte Demokratie und Migration (S. 41–46), Leitkultur und Zusammenhalt (S. 54–59), Familie, Bildung, Gesundheit, Wohnen, Mobilität (S. 60–72), Funktionierender Staat (S. 73–81). Alle Fundstellen gelesen (S. 6, 22, 23, 38, 43, 46, 64, 67, 69; S. 6, 22, 23 nur Suchtreffer ohne Bezug). S. 7–35 (Wirtschaft, Energie, Landwirtschaft, Forschung): nur Suchtreffer und Überschriften geprüft, kein Bezug zu 1901–1904. S. 1 und 82: Titel- und Herausgeberseite.
+
+Gleichartige Stellen (nur im Protokoll): S. 46 Zugehörigkeit zum Existenzrecht Israels als Einbürgerungsvoraussetzung (Bekenntnispflicht, Zielgruppe Einbürgerung); S. 56 Bekenntnis zu Freiheit, Gleichberechtigung, Demokratie und Rechtsstaat (Bekenntnispflicht); S. 64 Zweitberatung vor geschlechtsangleichender Operation (Pflicht zur Beratung, zu 1903).
+
+Nicht erfasst:
+- S. 38–40: Null-Toleranz, Videoschutz, Gesichtserkennung, Bodycams (Sicherheit, R2).
+- S. 46: Aufenthaltsrecht bei antisemitischer Straftat (Folge einer Straftat, R2).
+- S. 59: „Wir dulden keine Abwertung von Muslimen“ (Bekenntnis); Stiftung für Moscheegemeinden und Imam-Ausbildung (Förderung ohne Bezug zu Abwertung im Alltag).
+- S. 57–58: Integrationsvereinbarungen, Integrationskurse, Einbürgerung (Integration, kein Diskriminierungsbezug).
+- S. 61: Inklusion und Teilhabe von Menschen mit Behinderungen (kein Merkmal aus Ziel).
+- S. 62–63: Familie, Ehe und Ehegattensplitting, Partnerschaftsbonus (Bekenntnis oder Familienpolitik, kein Bezug zu Abwertung).
+- S. 64: Elternrechte bei Partnerschaftsgewalt und Vaterschaft (kein Bezug zu 1903).
+- S. 45–46: Förderbedingungen und Extremismus (Thema 22; nur Zuständigkeit dort).
+
+Richtungen ohne Maßnahme:
+- Bündel „Rassismus bekämpfen und Betroffene stärken“ (1902): keine Beratungs-, Beschwerde- oder Antidiskriminierungsstelle und kein Antidiskriminierungsgesetz im Text gefunden (Suche und Kapitel gelesen).
+- Bündel „Schutz und Akzeptanz queerer Menschen stärken“ (1903): keine Maßnahme; die Partei lehnt Ausweitungen ab.
+- Bündel „Elternrechte und traditionelles Familienbild betonen“ (1903): nur Bekenntnisse (S. 62–63), keine Handlung zu Abwertung.
+- Bündel „Bestehende Rechte durchsetzen und Verwaltung schulen“ (1904): nur Fortbildung von Fachkräften in der Berufsbildung (S. 67–69), keine Schulung der Verwaltung gegen Diskriminierung.
+- Bündel „Neutralität in der Schule“ und „Akzeptanz“ (1903): keine Treffer mit Bezug.
+- Bündel „Diskriminierung bei Bewerbung und Einstellung bekämpfen“ (1901): nur Altersdiskriminierung im Berufsalltag (S. 63) als Grenzfall; Merkmal Alter ist im Ziel nicht genannt.
+
+Seiten ohne Text: S. 1, S. 82 (Titel, Herausgeber), keine Rolle.
+Stand im PDF: Titel „Politikwechsel für Deutschland – Wahlprogramm von CDU und CSU“, Herausgeber-Zeile ohne Stand; kein Abweichen vom Auftrag erkennbar.

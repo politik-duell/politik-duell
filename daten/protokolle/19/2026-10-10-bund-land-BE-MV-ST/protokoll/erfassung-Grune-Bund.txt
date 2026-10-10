@@ -1,0 +1,119 @@
+{
+  "partei_id": 13,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Allgemeines Gleichbehandlungsgesetz reformieren: längere Fristen, mehr Diskriminierungsgründe, Verbandsklage, Schutz vor Diskriminierung durch staatliche Stellen",
+      "ursachen_ids": [1901, 1904],
+      "buendel": "Diskriminierung bei Bewerbung und Einstellung bekämpfen",
+      "zitat": "Wir werden das Allgemeine Gleichbehandlungsgesetz reformieren. […] Dazu gehört auch der Schutz vor Diskriminierung durch staatliche Stellen.",
+      "seite": 116
+    },
+    {
+      "beschreibung": "Anerkennung ausländischer Berufsabschlüsse vereinfachen, zentrale Anerkennungsstelle schaffen",
+      "ursachen_ids": [1901],
+      "buendel": "Anerkennung von Qualifikationen und Eignung stärken",
+      "zitat": "Wir wollen die Anerkennung von ausländischen Berufsabschlüssen deutlich vereinfachen und, wo es möglich ist, praxisorientierte Nachweisoptionen ermöglichen. Dafür schaffen wir eine zentrale Anerkennungsstelle und mehr personelle Ressourcen.",
+      "seite": 20
+    },
+    {
+      "beschreibung": "Einstellungs- und Beförderungspraxis in Behörden diskriminierungssensibel gestalten",
+      "ursachen_ids": [1901],
+      "zitat": "Wir wollen, dass Einstellungs- und Beförderungspraxis diskriminierungssensibel gestaltet werden.",
+      "seite": 117
+    },
+    {
+      "beschreibung": "Nationale Strategie gegen Islamfeindlichkeit und antimuslimischen Rassismus",
+      "ursachen_ids": [1902],
+      "buendel": "Rassismus bekämpfen und Betroffene stärken",
+      "zitat": "Mit einer Nationalen Strategie gegen Islamfeindlichkeit und antimuslimischen Rassismus gehen wir gegen die zunehmende Diskriminierung von Muslim*innen und muslimisch gelesenen Menschen vor.",
+      "seite": 117
+    },
+    {
+      "beschreibung": "Beratungsstellen und Selbstorganisationen langfristig absichern und ausbauen; Antidiskriminierungsstelle des Bundes stärken",
+      "ursachen_ids": [1902],
+      "zitat": "Wir wollen, dass Beratungsstellen und Selbstorganisationen langfristig abgesichert und ausgebaut werden sowie die Antidiskriminierungsstelle des Bundes auch in ihren Kompetenzen gestärkt wird.",
+      "seite": 116
+    },
+    {
+      "beschreibung": "Allen Schüler*innen einen NS-Gedenkstättenbesuch ermöglichen und finanziell unterstützen",
+      "ursachen_ids": [],
+      "ursachen_offen": [1902],
+      "buendel": "Vorurteile durch Bildung und Begegnung abbauen",
+      "zitat": "Deswegen wollen wir allen Schüler*innen ermöglichen, einmal in ihrer Schulzeit eine NS-Gedenkstätte zu besuchen und das auch finanziell unterstützen.",
+      "seite": 106
+    },
+    {
+      "beschreibung": "Zielgerichtete Fortbildungsangebot zur Diskriminierungssensibilität in Gesundheitswesen, Justiz und Sicherheitsbehörden stärker fördern",
+      "ursachen_ids": [1904],
+      "buendel": "Bestehende Rechte durchsetzen und Verwaltung schulen",
+      "zitat": "Um strukturellen Rassismus, egal ob im Gesundheitswesen, in der Justiz oder in unseren Sicherheitsbehörden, zu bekämpfen, wollen wir zielgerichtete Fortbildungsangebote zur Steigerung der Diskriminierungssensibilität stärker fördern.",
+      "seite": 116
+    },
+    {
+      "beschreibung": "Ticketsystem für Polizeikontrollen, das die Gründe der Kontrolle darlegt",
+      "ursachen_ids": [1904],
+      "zitat": "Mit einem Ticketsystem für Kontrollen, das die Gründe für Kontrollen darlegt, wollen wir polizeiliches Handeln transparenter machen.",
+      "seite": 134
+    },
+    {
+      "beschreibung": "Anonymisierte Kennzeichnungspflicht für Beamte der Bundespolizei",
+      "ursachen_ids": [1904],
+      "zitat": "Zudem führen wir für die Bundespolizei eine anonymisierte Kennzeichnungspflicht ein.",
+      "seite": 134
+    },
+    {
+      "beschreibung": "Bundesförderprogramm für queere Beratungs- und Projektstrukturen aus dem Aktionsplan Queer leben",
+      "ursachen_ids": [1903],
+      "buendel": "Schutz und Akzeptanz queerer Menschen stärken",
+      "zitat": "Mit dem Aktionsplan „Queer leben“ haben wir in der Bundesregierung einen Plan zur Stärkung von queerem Leben vorgelegt. Diesen wollen wir verstetigen. Zur weiteren Umsetzung wollen wir mit einem Bundesförderprogramm die nötigen Mittel bereitstellen.",
+      "seite": 121
+    },
+    {
+      "beschreibung": "Schutz vor Diskriminierung wegen sexueller und geschlechtlicher Identität im Grundgesetz verankern",
+      "ursachen_ids": [],
+      "ursachen_offen": [1903],
+      "zitat": "Wir wollen den Schutz vor Diskriminierung aufgrund der sexuellen und geschlechtlichen Identität in Artikel 3 des Grundgesetzes verankern.",
+      "seite": 121
+    },
+    {
+      "beschreibung": "Queerfeindliche Straftaten besser erfassen, Ansprechstellen in Behörden und Justiz ausbauen",
+      "ursachen_ids": [],
+      "ursachen_offen": [1904],
+      "zitat": "[…] Hasskriminalität gegen LSBTIQ* entschlossen bekämpfen. Dazu verbessern wir die Erfassung von queerfeindlichen Straftaten und bauen die Unterstützungsangebote sowie Ansprechstellen in Behörden und in der Justiz weiter aus.",
+      "seite": 121
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 1901, "name": "Diskriminierungssensible Einstellungspraxis in Behörden", "seite": 117 },
+    { "ursache": 1902, "name": "Beratungsförderung", "seite": 116 },
+    { "ursache": 1904, "name": "Begründungspflicht bei Polizeikontrollen", "seite": 134 },
+    { "ursache": 1904, "name": "Kennzeichnungspflicht Polizei", "seite": 134 },
+    { "ursache": 1903, "name": "Grundgesetzlicher Diskriminierungsschutz", "seite": 121 },
+    { "ursache": 1904, "name": "Ansprechstellen in Behörden und Justiz", "seite": 121 }
+  ]
+}
+
+Protokoll (Thema 19 „Diskriminierung im Alltag“, Grüne Bund)
+
+Gelesen: Inhaltsverzeichnis S. 4–6; Kapitel 3 A „Eine lebendige Demokratie“ S. 105–126 vollständig (Pflichtursachen 1902, 1903); Fundstellen 1901/1904 gezielt: S. 19–20 (Fachkräfte, Anerkennung), S. 68 (Kirchen-Ausnahme AGG), S. 75–76 (Schule, Kita), S. 82 (Eltern/AGG), S. 117 (Behörden), S. 129 (Anerkennung), S. 134 (Polizei). Kapitel „Für einen Staat, der für die Menschen funktioniert“ S. 32–34 nur nach Suchbegriffen durchgesehen, keine einschlägige Zusage.
+
+Nicht erfasst (gelesen, nicht aufgenommen oder gleichartig zu einer Maßnahme):
+- S. 116: Nationaler Aktionsplan Antidiskriminierung, Ausbau Rassismus- und Diskriminierungsmonitor – gleichartig zu S. 117 bzw. Forschung/Monitoring, keine eigene Maßnahme.
+- S. 116: Vorbehalt gegen 5. EU-Antidiskriminierungsrichtlinie aufgeben – gleiche Stoßrichtung wie AGG-Reform, gleichartig.
+- S. 116–117: Nationale Strategie gegen Antisemitismus, Bildungsstrategie, Antiziganismus-Staatsvertrag, Förderung Minderheiten – gleiche Art wie die Islamfeindlichkeit-Strategie (ein Eintrag je Bündel); Antisemitismus ist Abwertung im Alltag (1902), Zielgruppen verschieden.
+- S. 116, 117: Schutz jüdischer Gemeinden, Strafverfolgung antisemitischer Vorfälle, Dokumentation islamfeindlicher Vorfälle – Schutz und Strafverfolgung gehören nach R2 zu Sicherheit/Straftaten.
+- S. 114–115, 137, 140: Online-Hass, Hasskriminalität, Desinformation – R2 (anderes Thema).
+- S. 117: Benachteiligung jüdischer Einwander*innen beenden (Aussiedler-Vergleich) – staatliche Benachteiligung (1904), gleichartig zu AGG/Rechtsschutz; nicht eigens erfasst.
+- S. 122: Regenbogenfamilien im Abstammungsrecht, diskriminierungsfreie Kostenübernahme Transition (Gesundheit), Schutz LSBTIQ* auf dem Arbeitsmarkt „setzen uns dafür ein“ (allgemein, ohne Instrument) – entweder gleichartig oder Ziel/Gesundheitsthema.
+- S. 68: Ausnahmeklauseln für Kirchen im AGG aufheben – gleichartig zu AGG-Reform (1901); S. 82 AGG-Schutz für Eltern am Arbeitsmarkt – gleichartig.
+- S. 75–76, 134: diskriminierungssensible Fortbildungen in Kita, Lehrkräfteausbildung und Polizei („Diversität sensibilisieren“) – gleichartig zu Fortbildungsmaßnahme S. 116.
+- S. 19–20, 75, 129: Anerkennung ausländischer Abschlüsse – gleichartig zur Anerkennungsmaßnahme S. 20.
+- S. 106–110, 112–113: Engagement, Sportfreundschaft, politische Bildung, Bürgerräte – kein Bezug zu einer Ursache dieses Themas (Vielfalt/Begegnung nur als Lage).
+- S. 131: besondere Bedürfnisse queerer Geflüchteter im Asylverfahren – nicht als Maßnahme gegen Diskriminierung im Sinne der Ursachen erfasst.
+- S. 19–20: Ehegattensplitting und Erwerbsbeteiligung von Frauen – Ort ist Steuerrecht, keiner Ursache zugeordnet.
+- Gleichartig zu Bündel „Diskriminierung bei Bewerbung und Einstellung bekämpfen“: keine weitere Stelle.
+
+Richtungen ohne Maßnahme: 1901 Bewerbung/Einstellung (AGG, Behördenpraxis) belegt; 1902 Rassismus/Betroffene und Bildung belegt; 1903 Akzeptanz belegt; 1904 Rechtsschutz/Behörden/Polizei belegt. Bündel „Beleidigung und Hetze strafrechtlich verfolgen“ (1902) nicht erfasst, da R2 Online-Hass und Straftaten ausschließt. Bündel „Elternrechte und traditionelles Familienbild“ (1903, 0 Treffer) ohne Fundstelle.
+
+Seiten ohne Text (1, 2, 3, 14, 63, 64, 101, 102, 159, 160): keine Rolle, da in Kapiteln ohne Inhalt bzw. Trennseiten vor den Kapiteln 2 und 3; S. 101–102 (Beginn Kapitel 3) wurden als Trennseiten gelesen.

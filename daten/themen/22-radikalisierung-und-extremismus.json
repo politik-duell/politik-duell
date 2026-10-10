@@ -57,5 +57,3320 @@
       "ebene": "land",
       "schlagwoerter": ["keiner hoert zu", "diskussionskultur", "gespraechsabbruch", "andersdenkende meiden", "gegenseitiger respekt"]
     }
+  ],
+  "instrumente": [
+    {
+      "id": 8984,
+      "name": "Ausstiegs-, Distanzierungs- und Deradikalisierungsberatung ausbauen und absichern (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Setzt direkt an Bindungen ans Milieu an; Review zeigt Erfolge v. a. bei Ausstieg mit Bildung, Arbeit, sozialer Einbindung. Dagegen: wenige belastbare Wirkungsevaluationen, Deradikalisierung im engeren Sinn wirkt im Schnitt schwächer.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://jd.journals.publicknowledgeproject.org/index.php/jd/article/view/1027",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8985,
+      "name": "Präventions- und Demokratieprojekte gegen Extremismus fördern und gesetzlich absichern (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Programme, die Schutzfaktoren stärken (Jugendarbeit, Beratung, Bildung), zeigen in den besten Studien Wirkung. Dagegen: Evidenz insgesamt schwach, auf Gruppen zugeschnittene oder überwachende Ansätze können schaden.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://jd.journals.publicknowledgeproject.org/index.php/jd/article/view/577",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8986,
+      "name": "Strategien und Konzepte gegen Extremismus und Rassismus erarbeiten oder bestehende Programme überprüfen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kann Prävention bündeln und Lücken schließen; ohne zusätzliche Angebote bleibt die Wirkung aber mittelbar und hängt von der späteren Umsetzung ab. Zur Wirkung solcher Strategien gibt es kaum Studien.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8987,
+      "name": "Allgemeine Jugend- und Straßensozialarbeit ausbauen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Bietet Jugendlichen Anlaufstellen und Alternativen zu Milieus, ist aber nicht gezielt auf Radikalisierung ausgerichtet; Fachkräfte sind knapp. Spezifische Wirkung auf Extremismus kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8988,
+      "name": "Staatliche Förderung und Kooperation für extremistische Organisationen ausschließen (Demokratieklausel) (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Verhindert, dass öffentliche Mittel extremistische Strukturen stützen; solche Förderungen sind aber selten. Unbestimmte Klauseln wurden gerichtlich beanstandet (VG Dresden 2012), rechtssichere Fassung ist möglich. Wirkung kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8989,
+      "name": "Förderpraxis auf Ausgewogenheit ausrichten, Förderung von Meldestellen und Kampagnenprojekten beenden (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kann bei Teilen der Bevölkerung das Gefühl von Bevormundung und Ungleichbehandlung mindern. Dagegen: Streichungen schwächen Dokumentation und Präventionsarbeit; Wirkung auf Gesprächskultur nicht untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8990,
+      "name": "Politische und historische Bildung in Kita, Schule, Lehrkräftebildung und Landeszentrale ausbauen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Politische Bildung hängt in Studien mit Interesse, Vertrauen und Toleranz zusammen. Dagegen: Effekte auf extremistische Einstellungen klein und kaum kausal belegt; Wirkung hängt stark von Unterrichtsform ab.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://chairedemocratie.openum.ca/fr/publications/the-relation-between-civic-education-and-political-attitudes-and-behavior/",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8991,
+      "name": "Antisemitismus- und Rassismusprävention in Schulen und Hochschulen verankern (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Setzt an Vorurteilen und Überlegenheitsdenken an; Begegnungsformate wirken eher. Dagegen: Metaanalyse findet bei vielen Vorurteilsprogrammen nur kurzfristige, kleine Effekte und Hinweise auf Publikationsbias.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://collaborate.princeton.edu/en/publications/prejudice-reduction-progress-and-challenges/",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8992,
+      "name": "Soziales Lernen, Respekt und Toleranz als schulischen Auftrag stärken (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Programme zum sozialen Lernen verbessern Sozialverhalten und Einstellungen nachweislich. Die Maßnahmen bleiben aber meist unbestimmt, und ein Effekt auf politische Toleranz ist kaum untersucht.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://ojp.gov/ncjrs/virtual-library/abstracts/impact-enhancing-students-social-and-emotional-learning-meta",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8993,
+      "name": "Neutralitäts- und Kontroversitätsgebot für den Unterricht verschärfen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Ein offenes Klassenklima kann Vertrauen und Toleranz fördern; das Kontroversitätsgebot gilt aber bereits weitgehend. Strengere Neutralität kann Lehrkräfte auch von der Auseinandersetzung mit Extremismus abhalten.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8994,
+      "name": "Schülermitbestimmung und Klassenrat stärken (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Mitwirkung in Schulgremien hängt in Panelstudien mit politischer Wirksamkeit und Beteiligung zusammen und übt Streitkultur. Dagegen: Effekt auf Eskalation politischer Gespräche nicht direkt untersucht.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://chairedemocratie.openum.ca/fr/publications/the-relation-between-civic-education-and-political-attitudes-and-behavior/",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8995,
+      "name": "Fortbildung von Beschäftigten in Schule, Polizei und Verwaltung zu Demokratie, Diskriminierung und Extremismus (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Trainings verbessern Wissen dauerhaft, Einstellungseffekte schwinden aber ohne Einbettung. Erreicht Multiplikatoren, wirkt auf die Bevölkerung nur mittelbar.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://business.cornell.edu/news/2016/07/28/successful-lasting-diversity-training/",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8996,
+      "name": "Verfassungstreue im öffentlichen Dienst prüfen und Verfassungsfeinde schneller entfernen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Verhindert, dass Staatsbedienstete extremistische Ideologien weitertragen, und schützt Vertrauen in Institutionen. Ändert Einstellungen in der Bevölkerung kaum; Wirkung nicht untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8997,
+      "name": "Geloste Bürgerräte auf Landes- und Kommunalebene einrichten und fördern (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Deliberation senkte im Feldexperiment affektive Polarisierung deutlich und gibt Mitsprache. Dagegen: erreicht direkt nur wenige; Effekte auf Vertrauen der übrigen Bevölkerung uneinheitlich.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://deliberation.stanford.edu/publications/journal-articles/deliberation-antidote-extreme-partisan-polarization-reflections",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8998,
+      "name": "Sonstige Beteiligungs- und Dialogformate zwischen Politik, Verwaltung und Bürgern ausbauen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kann Kontrollverlust und Gefühl der Bevormundung mindern. Dagegen: Wirkung hängt davon ab, ob Ergebnisse berücksichtigt werden; ohne Folgen droht Enttäuschung. Kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8999,
+      "name": "Direkte Demokratie im Land ausbauen (niedrigere Quoren, Volksbefragungen, Verbindlichkeit) (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Verfügbare Volksrechte gehen in der Schweiz mit mehr Vertrauen einher, häufige Nutzung teils mit weniger. Quoren stehen meist in der Landesverfassung, Änderung braucht Zweidrittelmehrheit.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.cogitatiopress.com/politicsandgovernance/article/view/820",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9000,
+      "name": "Dialog- und Begegnungsformate fördern (interreligiös, interkulturell, moderierte Debattenräume) (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kontakt verringert Vorurteile laut Metaanalysen und Feldexperimenten. Dagegen: neuere vorregistrierte Studien finden kleinere Effekte, die oft auf die getroffenen Personen begrenzt bleiben.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://forrt.org/open-social-psychology/chapter12.html",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9001,
+      "name": "Wissenschafts- und Meinungsfreiheit sowie offene Debattenkultur an Hochschulen absichern (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kann das Gefühl verringern, Positionen würden sanktioniert, und Streit an Hochschulen versachlichen. Dagegen: bestehender Grundrechtsschutz, unklare Reichweite; Wirkung kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9002,
+      "name": "Staatliche Zurückhaltung gegenüber nicht strafbaren Meinungsäußerungen und Protesten (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kann wahrgenommene Bevormundung und Ungleichbehandlung mindern. Dagegen: Rechtslage schützt nicht strafbare Äußerungen bereits weitgehend; Wirkung nicht untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9003,
+      "name": "Lokaljournalismus und Bürgermedien fördern (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Schließungen von Lokalzeitungen erhöhen nachweislich politische Polarisierung, auch in Deutschland. Dagegen: ob Förderung Schließungen verhindert, ist offen; Umfang der Förderung entscheidet.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://ideas.repec.org/a/cup/bjposi/v54y2024i4p1256-1275_12.html",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9004,
+      "name": "Löschpflichten und Moderation von Plattformen zurücknehmen (Land)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 1,
+      "begruendung": "Studien zeigen, dass Sperren extremistischer Accounts deren Reichweite senkt; weniger Moderation erhöht eher den Kontakt mit solchen Inhalten. Plattformrecht ist durch den DSA europäisch geregelt.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.rutgers.edu/news/permanent-twitter-ban-extremist-influencers-can-detoxify-social-media",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9005,
+      "name": "Zusammenarbeit mit Moscheegemeinden und staatliche Aufsicht gegen islamistischen Einfluss (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Kann Zugang zu Milieus und Verbreitung islamistischer Ideologie erschweren. Dagegen: Pflichten für Verbände berühren Religionsfreiheit; Review warnt vor Nebenwirkungen gruppenbezogener Ansätze.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9006,
+      "name": "Verpflichtende Werte- und Politikkurse für Zugewanderte (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Vermittelt demokratische Grundwerte; Integrationskurse regelt aber der Bund, das Land kann kaum verpflichten. Wirkung auf Einstellungen kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9007,
+      "name": "Medien- und Nachrichtenkompetenz für alle Altersgruppen fördern (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Experimente zeigen, dass Medienkompetenz-Trainings die Unterscheidung von Falsch- und Qualitätsnachrichten verbessern. Effekte sind moderat und schwinden; Schulbildung liegt bei den Ländern.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://collaborate.princeton.edu/en/publications/a-digital-media-literacy-intervention-increases-discernment-betwe/",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9008,
+      "name": "Bestehende Plattformregeln (DSA) gegen rechtswidrige Inhalte konsequent durchsetzen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Sperren extremistischer Akteure senkten deren Reichweite deutlich. Dagegen: Inhalte wandern teils auf andere Plattformen ab, wo Nutzer sich weiter radikalisieren können.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.rutgers.edu/news/permanent-twitter-ban-extremist-influencers-can-detoxify-social-media",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9009,
+      "name": "Zusätzliche EU-Pflichten für Plattformen gegen Desinformation (Faktencheck, KI-Kennzeichnung, Haftung) (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Faktenchecks korrigieren Fehlinformationen moderat, bei politisch Überzeugten schwächer; Desinformation ist nicht gleich extremistischer Inhalt. Hängt von EU-Entscheidungen ab.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://cris.haifa.ac.il/en/publications/fact-checking-a-meta-analysis-of-what-works-and-for-whom/",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9010,
+      "name": "Geloste Bürgerräte auf Bundesebene etablieren und gesetzlich absichern (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Deliberation senkte im Feldexperiment affektive Polarisierung deutlich und kann Vertrauen stärken. Dagegen: erreicht direkt nur wenige; Wirkung auf die Gesamtbevölkerung uneinheitlich.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://deliberation.stanford.edu/publications/journal-articles/deliberation-antidote-extreme-partisan-polarization-reflections",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9011,
+      "name": "Volksbegehren und Volksentscheide auf Bundesebene einführen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Verfügbare Volksrechte gehen mit mehr Institutionenvertrauen einher, häufige Nutzung teils mit weniger. Erfordert eine Grundgesetzänderung mit Zweidrittelmehrheit.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.cogitatiopress.com/politicsandgovernance/article/view/820",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9012,
+      "name": "Integritätsregeln für Politik: Karenzzeiten, Spendenbegrenzung, legislative Fußspur, Kontrolle (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Setzt am geringen Vertrauen in Institutionen an, indem Interessenkonflikte begrenzt werden. Dagegen: Wirkung auf Vertrauen und radikale Einstellungen kaum untersucht, eher mittelbar.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9013,
+      "name": "Unabhängigkeit von Staatsanwaltschaft und Richterwahl von der Politik stärken (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Kann Vertrauen in eine unparteiische Justiz stärken. Dagegen: Zusammenhang mit radikalen Einstellungen nur mittelbar; teils Grundgesetz- und Länderfragen berührt.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9014,
+      "name": "Amtszeitbegrenzung und Direktwahl des Bundespräsidenten (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Soll Bürgernähe und Vertrauen stärken; Wirkung auf Institutionenvertrauen nicht untersucht. Erfordert Grundgesetzänderungen.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9015,
+      "name": "Aufsicht und Programmauftrag des öffentlich-rechtlichen Rundfunks auf Staatsferne und Vielfalt ausrichten (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Kann Misstrauen gegenüber Medien und Gefühl der Bevormundung verringern. Dagegen: Wirkung kaum untersucht; Rundfunkrecht ist Ländersache, der Bund kann es nicht regeln.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9016,
+      "name": "Neutralität von Lehrkräften und freie Meinungsäußerung von Schülern sichern (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Offenes Klassenklima kann Vertrauen und Toleranz stützen; Neutralitäts- und Kontroversitätsgebot gelten bereits. Schulrecht ist Ländersache.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9017,
+      "name": "Verbände mit Extremismusbezug von Förderung und staatlicher Kooperation ausschließen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Verhindert, dass staatliche Mittel und Anerkennung extremistische Milieus stützen. Dagegen: rechtssichere, bestimmte Kriterien nötig; Wirkung auf Einstellungen nicht untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9018,
+      "name": "Staatliche Förderung von Meldestellen und meinungsbildenden Akteuren beenden (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kann bei Teilen der Bevölkerung das Gefühl der Bevormundung mindern. Dagegen: Wegfall von Dokumentation und Beratung; Wirkung auf Gesprächskultur nicht untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9019,
+      "name": "Imamausbildung im Inland, Religionsunterricht ohne Auslandseinfluss, Transparenz religiöser Finanzierung (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Kann ausländische und islamistische Einflussnahme auf Gemeinden begrenzen. Dagegen: Pflichten berühren Religionsfreiheit und Länderzuständigkeit; Wirkung kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9020,
+      "name": "Bundesförderung politischer und historischer Bildung und Gedenkstätten (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Bildungsarbeit setzt an Ideologien an; der Bund fördert bereits. Dagegen: Wirkung von Gedenkstättenbesuchen und Bildungsangeboten auf Einstellungen schwer belegbar, Erwartungen laut Forschung oft überzogen.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.news4teachers.de/2023/01/holocaust-gedenktag-debatte-um-verpflichtende-gedenkstaetten-besuche-von-schuelern-was-bringen-sie-wirklich/",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9021,
+      "name": "Politische Bildung und Gedenkstättenbesuche verbindlich in Schulen verankern (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Kann historisches Bewusstsein stärken. Dagegen: Pflichtbesuche wirken laut Forschung nur mit guter Vor- und Nachbereitung, sonst teils Abwehr; Schule ist Ländersache, der Bund kann nur fördern.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.news4teachers.de/2023/01/holocaust-gedenktag-debatte-um-verpflichtende-gedenkstaetten-besuche-von-schuelern-was-bringen-sie-wirklich/",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9022,
+      "name": "Verfassungsfeinde schneller aus dem öffentlichen Dienst entfernen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Verhindert, dass Staatsbedienstete extremistische Ideologien weitertragen. Ändert Einstellungen in der Bevölkerung kaum; Wirkung nicht untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "durchsucht_fuer": [2201, 2202, 2203, 2204, 2205, 2206],
+      "massnahmen": [
+        {
+          "id": 9023,
+          "instrument": 9008,
+          "beschreibung": "Digital Services Act mit Schwerpunkt auf Transparenz, Desinformation sowie Jugend- und Medienschutz umsetzen",
+          "ursachen_ids": [2202],
+          "zitat": "Wir stellen sicher, dass bei der Umsetzung des Digital Services Act der Schwerpunkt auf mehr Transparenz, Kampf gegen Desinformation sowie Jugend- und Medienschutz gelegt wird.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=41",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9024,
+          "beschreibung": "Grundlagenforschung an Hochschulen zu gewaltbereitem und nicht gewaltsamem Islamismus ausbauen",
+          "ursachen_ids": [2204],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Forschung zu Islamismus verbessert das Wissen für Prävention. Wirkt nur mittelbar über spätere Maßnahmen.",
+          "zitat": "Den ideologischen Nährboden dieses religiös motivierten politischen Extremismus nehmen wir intensiver in den Blick. […] Wir bauen die Grundlagenforschung an Hochschulen im Bereich des gewaltbereiten und des nicht gewaltsam agierenden Islamismus aus und verzahnen sie mit dem Handeln unserer Sicherheitsbehörden.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=45",
+          "evidenz": "offen",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9025,
+          "instrument": 9017,
+          "beschreibung": "Vereine, die vom Verfassungsschutz beobachtet werden, von staatlichen Kooperationen und Geldern ausschließen; Geförderte bekennen sich zur Grundordnung",
+          "ursachen_ids": [2204],
+          "zitat": "Vereine und Verbände, die oder deren Mitglieder vom Verfassungsschutz beobachtet werden, schließen wir von staatlichen Kooperationen und Geldern aus. Alle Einrichtungen, die Geld vom Staat erhalten wollen, müssen sich zur freiheitlich-demokratischen Grundordnung bekennen und eine Erklärung gegen Antisemitismus abgeben.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=45",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9026,
+          "instrument": 9021,
+          "beschreibung": "Gedenkstättenbesuche für alle Schülerinnen und Schüler; Aufbau des Deutsch-Israelischen Jugendwerks vorantreiben",
+          "ursachen_ids": [2204],
+          "zitat": "Alle Schülerinnen und Schüler sollen Gedenkstätten besuchen. Das ist wichtig für ihr historisches Bewusstsein. Gleichzeitig treiben wir den Aufbau des Deutsch-Israelischen Jugendwerks zügig voran.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=46",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9027,
+          "instrument": 9022,
+          "beschreibung": "Feinde der freiheitlich-demokratischen Grundordnung schneller aus dem Öffentlichen Dienst entfernen",
+          "ursachen_ids": [2204],
+          "zitat": "Feinde unserer freiheitlich-demokratischen Grundordnung sind schneller aus dem Öffentlichen Dienst zu entfernen.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=41",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9028,
+          "instrument": 9019,
+          "beschreibung": "Pflicht zur Offenlegung der Finanzierung und Spender von Moscheevereinen und Islamverbänden",
+          "ursachen_ids": [2204],
+          "zitat": "Es darf keine Einflussnahme ausländischer Regierungen über Moscheevereine und Islamverbände auf die deutschen Muslime unter dem Deckmantel der Religionsfreiheit geben. Deshalb führen wir eine Pflicht zur Offenlegung der Finanzierung und Spender ein.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=59",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9029,
+          "instrument": 9015,
+          "beschreibung": "Öffentlich-rechtlichen Rundfunk auf Neutralität, Meinungsvielfalt und Sparsamkeit verpflichten",
+          "ursachen_ids": [2205],
+          "zitat": "Es braucht ein Informationsangebot, das nicht überwältigt, belehrt oder bevormundet, nicht tendenziös oder einseitig ist. Wir verpflichten den ÖRR zu seinem Kernauftrag: Sparsamkeit, mehr Meinungsvielfalt und Neutralität.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=57",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9030,
+          "beschreibung": "Verpflichtendes Gesellschaftsjahr (perspektivisch), das Menschen unterschiedlicher Milieus, Religionen und Generationen zusammenbringt",
+          "ursachen_ids": [2206],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ein Dienstjahr bringt Milieus zusammen; Kontakt kann Vorurteile abbauen. Dagegen: nur perspektivisch, Pflichtdienst erfordert Grundgesetzänderung; Kontakteffekte oft klein.",
+          "zitat": "Der Dienst für das Gemeinwohl bringt Menschen unterschiedlicher Milieus, Religionen und Generationen zusammen. Er bietet die Chance, über den eigenen Tellerrand hinauszuschauen, und trägt zur Persönlichkeitsbildung bei. Wir setzen perspektivisch auf ein verpflichtendes Gesellschaftsjahr, das wir mit der aufwachsenden Wehrpflicht zusammendenken.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=57",
+          "evidenz": "gemischt",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2201, 2204, 2205, 2206],
+      "massnahmen": [
+        {
+          "id": 9031,
+          "instrument": 8984,
+          "beschreibung": "Aussteigerprogramme bedarfsgerecht fortführen.",
+          "ursachen_ids": [2201],
+          "zitat": "Wir treten rechtsextremer Gewalt mit der vollen Härte des Rechtsstaates entgegen und werden Aussteigerprogramme bedarfsgerecht fortführen.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=22",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9032,
+          "instrument": 8988,
+          "beschreibung": "Organisationen, die gegen die demokratische Grundordnung stehen, keine staatlichen Fördergelder geben.",
+          "ursachen_ids": [2201],
+          "zitat": "Mit einer rechtssicheren Demokratieklausel werden wir sicherstellen, dass Organisationen und Initiativen, die sich gegen die freiheitlich-demokratische Grundordnung richten oder menschenfeindliche Positionen vertreten, keine staatlichen Fördergelder erhalten.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=22",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9033,
+          "instrument": 8985,
+          "beschreibung": "Jugendclubs als Orte der Begegnung und Demokratiebildung fördern, um Radikalisierung entgegenzuwirken.",
+          "ursachen_ids": [2201],
+          "zitat": "Jugendclubs wollen wir als Orte der Begegnung und Demokratiebildung fördern, um Radikalisierung frühzeitig entgegenzuwirken.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=64",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9034,
+          "instrument": 8996,
+          "beschreibung": "Einen Verfassungstreue-Check im öffentlichen Dienst einführen.",
+          "ursachen_ids": [2204],
+          "zitat": "Wir werden einen Verfassungstreue-Check im Öffentlichen Dienst einführen, um sicherzustellen, dass Staatsbedienstete fest auf dem Boden unserer freiheitlich-demokratischen Grundordnung stehen.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=22",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9035,
+          "instrument": 8990,
+          "beschreibung": "Schulunterricht soll sich mit Extremismus sowie antisemitischen und rassistischen Ideologien auseinandersetzen.",
+          "ursachen_ids": [2204],
+          "zitat": "Bildung ist die beste Prävention gegen Extremismus. Deshalb sollen sich Schülerinnen und Schüler im Unterricht mit allen Formen des Extremismus sowie mit antisemitischen und rassistischen Ideologien auseinandersetzen.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=63",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9036,
+          "instrument": 8985,
+          "beschreibung": "Projekte fördern, die demokratische Werte vermitteln und gegen Extremismus und Menschenfeindlichkeit eintreten.",
+          "ursachen_ids": [2204],
+          "zitat": "Wir unterstützen deshalb Projekte und Initiativen, die demokratische Werte vermitteln und den gesellschaftlichen Zusammenhalt fördern. Dazu gehört für uns selbstverständlich auch, dass sich die geförderten Projekte eindeutig zum Grundgesetz bekennen und Extremismus, Antisemitismus sowie jeder Form von gruppenbezogener Menschenfeindlichkeit entschieden entgegentreten.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=120",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9037,
+          "instrument": 9000,
+          "beschreibung": "Interreligiösen Dialog und Kulturprojekte fördern, die gegenseitiges Verständnis stärken.",
+          "ursachen_ids": [2205, 2206],
+          "zitat": "Den interreligiösen Dialog verstehen wir als wichtigen Beitrag zum gesellschaftlichen Zusammenhalt in Berlin. Entsprechende Kulturprojekte wollen wir gezielt fördern, gegenseitiges Verständnis stärken und antisemitischen Tendenzen entschlossen entgegentreten.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=117",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9038,
+          "instrument": 8986,
+          "beschreibung": "Eine Strategie entwickeln, die Prävention, Intervention und Repression an Schulen verbindet.",
+          "ursachen_ids": [2204],
+          "zitat": "Darauf aufbauend werden wir eine klare Strategie entwickeln, die Prävention, Intervention und Repression konsequent miteinander verbindet.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=60",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2201, 2204, 2205, 2206],
+      "massnahmen": [
+        {
+          "id": 9039,
+          "instrument": 8985,
+          "beschreibung": "Präventionsmaßnahmen und politische Bildung sollen Interventionen gegen Extremismus flankieren.",
+          "ursachen_ids": [2201],
+          "zitat": "Jegliche Form des Extremismus lehnen wir entschieden ab und werden sie mit allen Instrumenten des Rechtsstaates bekämpfen. Mit Politischer Bildung und Präventionsmaßnahmen werden wir Interventionen flankieren, um langfristig Sicherheit und gesellschaftlichen Zusammenhalt zu gewährleisten.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=38",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9040,
+          "instrument": 8990,
+          "beschreibung": "Politische Bildung und klare Haltung gegen Extremismus und Hass sind Pflicht in der Schule; ein Gedenkstättenbesuch wird verpflichtend.",
+          "ursachen_ids": [2204],
+          "zitat": "Auch politische Bildung, Erinnerungskultur sowie eine klare Haltung gegen Antisemitismus, Extremismus und Hass sind Pflichtbestandteile schulischer Erziehung. Jede Schülerin und jeder Schüler soll verpflichtend mindestens einmal in der Schullaufbahn ein ehemaliges Konzentrationslager und eine Dokumentations- und Gedenkstätte zur Aufarbeitung der SED-Diktatur besuchen.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=52",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9041,
+          "instrument": 8988,
+          "beschreibung": "Staatliche NGO-Förderung nur bei schriftlicher Verpflichtung auf die Grundordnung und Distanzierung vom Antisemitismus.",
+          "ursachen_ids": [2204],
+          "zitat": "Mit uns gibt es staatliche Fördermittel für Nichtregierungsorganisationen (NGOs) ausschließlich dann, wenn diese sich schriftlich zur Einhaltung der freiheitlich-demokratischen Grundordnung („Demokratieklausel“) verpflichten und sich von jeglicher Form des Antisemitismus ebenfalls schriftlich distanzieren.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=37",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9042,
+          "instrument": 8987,
+          "beschreibung": "Ein Landesprogramm soll die Jugend- und Straßensozialarbeit stärken, um niedrigschwellig auf neue Problemlagen zu reagieren.",
+          "ursachen_ids": [2201],
+          "zitat": "Durch ein Landesprogramm zur Stärkung der Jugend- und Straßensozialarbeit soll niedrigschwellig auf neue Problemlagen und Herausforderungen reagiert werden.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=97",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9043,
+          "instrument": 8992,
+          "beschreibung": "Werteerziehung und Respekt gegenüber der Umwelt sind Teil des schulischen Auftrags.",
+          "ursachen_ids": [2206],
+          "zitat": "Gleichberechtigt mit der Wissensvermittlung sind für uns Werteerziehung und die Förderung der Persönlichkeitsentwicklung Teil des schulischen Auftrags. Kinder und Jugendliche sollen einen zivilisierten Umgang und Respekt gegenüber ihrer Umwelt lernen.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=51",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2201, 2204, 2205, 2206],
+      "massnahmen": [
+        {
+          "id": 9044,
+          "instrument": 8990,
+          "beschreibung": "Förderprogramm für Projekte, in denen Grundschulkinder demokratisches Zusammenleben im Unterricht erleben; Demokratiebildung an Schulen stärken",
+          "ursachen_ids": [2204],
+          "zitat": "Wir wollen die Demokratiebildung an unseren Schulen stärken und regionale Identität fördern. Dazu bringen wir ein Förderprogramm für Projekte nach dem Vorbild des „Magdeburger Rechts“ auf den Weg, mit dem Grundschülerinnen und Grundschüler demokratisches Zusammenleben altersgerecht im Unterricht und Schulalltag erleben.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=59",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9045,
+          "instrument": 9000,
+          "beschreibung": "Förderung von Initiativen, die Begegnung und Dialog ermöglichen und respektvolles Miteinander in religiöser Vielfalt stärken (Gesprächs- und Respektkultur)",
+          "ursachen_ids": [2205, 2206],
+          "zitat": "Wir werden Initiativen unterstützen, die Begegnung und Dialog ermöglichen und das respektvolle Miteinander in religiöser Vielfalt stärken.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=73",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9046,
+          "instrument": 9000,
+          "beschreibung": "Gegenseitiges Kennenlernen und Achten zwischen Religionen und Einwohnern fördern; Intoleranz bekämpfen",
+          "ursachen_ids": [2206],
+          "zitat": "Akzeptanz fördern: Wir erwarten […] Soweit es denn möglich ist, werden wir das gegenseitige Kennenlernen und Achten fördern. Intoleranz werden wir entschieden bekämpfen.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=74",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9047,
+          "instrument": 9003,
+          "beschreibung": "Förderung offener Kanäle und nichtkommerzieller Lokalradios, die Zugang zu Medien und Vielfalt vor Ort sichern",
+          "ursachen_ids": [2206],
+          "zitat": "Bürgermedien erhalten: Offene Kanäle und nichtkommerzielle Lokalradios schaffen Zugang zu Medien für alle und gewährleisten Vielfalt auf regionaler und lokaler Ebene. Wir sichern gemeinsam mit dem Bund und den anderen Ländern ihre verlässliche Förderung durch die Landesmedienanstalt und das Land.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=37",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "durchsucht_fuer": [2201, 2202, 2203, 2204, 2205, 2206],
+      "massnahmen": [
+        {
+          "id": 9048,
+          "instrument": 9007,
+          "beschreibung": "Programme zur Medien- und Nachrichtenkompetenz für alle Altersgruppen ausbauen",
+          "ursachen_ids": [2202],
+          "zitat": "Medienkompetenz ist eine Grundkompetenz im digitalen Zeitalter. Wir setzen uns dafür ein, Programme zur Förderung der Medien- und Nachrichtenkompetenz für alle Altersgruppen auszubauen, um Manipulation und Desinformation entgegenzuwirken.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=49",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9049,
+          "instrument": 9009,
+          "beschreibung": "Verpflichtende Faktencheck-Tools auf großen Plattformen und Durchsetzung der Bot-Kennzeichnung",
+          "ursachen_ids": [2202],
+          "zitat": "Wir wollen außerdem eine strikte Durchsetzung der Bot-Kennzeichnungspflicht aus der KI-Verordnung, sowie verpflichtende Tools zum Faktencheck auf großen Plattformen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=50",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9050,
+          "instrument": 9010,
+          "beschreibung": "Bürgerräte als festen Bestandteil der Demokratie etablieren",
+          "ursachen_ids": [2203],
+          "zitat": "Wir wollen Bürgerräte als festen Bestandteil unserer Demokratie etablieren. Geloste Bürgerräte beraten zu schwierigen Themen und stärken das Vertrauen in die Demokratie.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=41",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9051,
+          "instrument": 9020,
+          "beschreibung": "Bildungsangebote fördern, die demokratische Werte vermitteln",
+          "ursachen_ids": [2204],
+          "zitat": "Wir fördern Bildungsangebote, die demokratische Werte vermitteln und Menschen befähigen, aktiv an der Demokratie teilzuhaben.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=40",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9052,
+          "instrument": 9020,
+          "beschreibung": "Bessere historische Bildung und Strukturen historischer Bildung fördern",
+          "ursachen_ids": [2204],
+          "zitat": "Geschichtsverfälschungen und Desinformation gefährden die Demokratie im Kern. Deshalb brauchen wir eine bessere historische Bildung zur Stärkung des kritischen Geschichtsbewusstseins.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=40",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9053,
+          "beschreibung": "Interreligiösen Dialog fördern",
+          "ursachen_ids": [2205],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Interreligiöser Dialog kann über Kontakt Vorurteile abbauen. Dagegen: unbestimmt, auf Bundesebene erreicht er wenige Menschen direkt; Kontakteffekte bleiben oft klein.",
+          "zitat": "Wir fördern den interreligiösen «Dialog» und schützen die Religions- und Weltanschauungsfreiheit.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=41",
+          "evidenz": "gemischt",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2201, 2204, 2205, 2206],
+      "massnahmen": [
+        {
+          "id": 9054,
+          "instrument": 8984,
+          "beschreibung": "Kompetenzzentrum für Ausstiegs- und Distanzierungsarbeit zu Islamismus und Rechtsextremismus einrichten",
+          "ursachen_ids": [2201],
+          "zitat": "Zusätzlich richten wir ein Kompetenzzentrum für Deradikalisierungs-, Distanzierungs- und Ausstiegsarbeit in den Bereichen Islamismus und Rechtsextremismus ein.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=29",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9055,
+          "instrument": 8985,
+          "beschreibung": "Rechtsextreme Jugendkultur mit gezielten Präventionsprogrammen begegnen",
+          "ursachen_ids": [2201],
+          "zitat": "Rechtsextreme Jugendkultur behandeln wir als eigenständiges Phänomen und begegnen ihr mit gezielten Präventionsprogrammen.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=29",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9056,
+          "instrument": 8985,
+          "beschreibung": "Zusammenarbeit von Sicherheitsbehörden mit zivilgesellschaftlichen Akteuren in der Extremismusbekämpfung stärken",
+          "ursachen_ids": [2201],
+          "zitat": "Wir stärken die Zusammenarbeit der Sicherheitsbehörden mit zivilgesellschaftlichen Akteur*innen im Bereich der Extremismusbekämpfung.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=29",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9057,
+          "instrument": 8990,
+          "beschreibung": "Träger politischer Bildung auskömmlich finanzieren und ihre inhaltliche Unabhängigkeit sichern",
+          "ursachen_ids": [2204],
+          "zitat": "Deshalb wollen wir Träger politischer Bildung auskömmlich finanzieren und ihre inhaltliche Unabhängigkeit sichern.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=29",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9058,
+          "instrument": 8990,
+          "beschreibung": "Demokratisierungsgrad der Schulen messen und Mittel für Demokratisierungsprojekte bereitstellen",
+          "ursachen_ids": [2204],
+          "zitat": "Wir messen den Demokratisierungsgrad der Schulen und führen freie Mittel für Demokratisierungsprojekte wieder in das Bonusprogramm ein.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=41",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9059,
+          "instrument": 8991,
+          "beschreibung": "Konsequent gegen Antisemitismus, Rassismus und menschenverachtende Ideologie an Hochschulen vorgehen und Prävention stärken",
+          "ursachen_ids": [2204],
+          "zitat": "Wir gehen entschlossen gegen Antisemitismus, Islamismus, Rassismus, Diskriminierung und jede menschenverachtende Ideologie vor und stärken Prävention.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=45",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9060,
+          "instrument": 8991,
+          "beschreibung": "Lehrplan, Curricula und Lehrmaterialien queer- und rassismussensibel überarbeiten",
+          "ursachen_ids": [2204],
+          "zitat": "Bildung muss diskriminierungsfrei sein. Deshalb setzen wir uns für eine queer-, rassismus- und kolonialsensible Überarbeitung von Rahmenlehrplan, Schulcurricula sowie Lehr- und Lernmaterialien ein.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=41",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9061,
+          "instrument": 8995,
+          "beschreibung": "Fortbildungen zu Rassismus und Postkolonialismus sowie diskriminierungskritische Module in der Ausbildung pädagogischer Fachkräfte",
+          "ursachen_ids": [2204],
+          "zitat": "Fortbildungen zu Diskriminierung, Rassismus und Postkolonialismus stärken wir. In die Ausbildung pädagogischer Fachkräfte integrieren wir verpflichtend diskriminierungskritische Module – in allen Entwicklungsstufen.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=41",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9062,
+          "instrument": 8986,
+          "beschreibung": "Rassismusprävention gemeinsam mit Communities weiterentwickeln und in einem Landeskonzept Antidiskriminierung bündeln",
+          "ursachen_ids": [2204],
+          "zitat": "Antisemitismus-, Antiziganismus-, antimuslimische und anti-Schwarze-Rassismusprävention entwickeln wir gemeinsam mit den Communities weiter. Alle Maßnahmen bündeln wir in einem integralen Landeskonzept Antidiskriminierung.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=48",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9063,
+          "instrument": 8992,
+          "beschreibung": "Empathie als Thema in einem Wahlpflichtfach einführen und Fähigkeit zum Kompromiss fördern",
+          "ursachen_ids": [2206],
+          "zitat": "Empathie, Mitgefühl und die Fähigkeit zum Kompromiss wollen wir gezielt fördern. Dafür führen wir in einem Wahlpflichtfach das Thema Empathie ein.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=41",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9064,
+          "instrument": 8994,
+          "beschreibung": "Schülervertretungen und Klassenrat als Instrumente für Konfliktlösung stärken",
+          "ursachen_ids": [2205],
+          "zitat": "Wir stärken Schüler*innenvertretungen und den wöchentlichen Klassenrat als Instrumente für Partizipation, demokratische Praxis und Konfliktlösung.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=41",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9065,
+          "instrument": 8998,
+          "beschreibung": "Vor-Ort-Dialoge der Senatsmitglieder und frühzeitige Informationsveranstaltungen bei Bau- und Infrastrukturmaßnahmen",
+          "ursachen_ids": [2205],
+          "zitat": "Die Beteiligungsplattform „Mein Berlin“ entwickeln wir weiter, setzen auf Vor-Ort-Dialoge der Senatsmitglieder und frühzeitige Informationsveranstaltungen bei anstehenden Bau- und Infrastrukturmaßnahmen.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=29",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9066,
+          "beschreibung": "Ressortübergreifende Programme zur gewaltfreien Konfliktlösung und Prävention in den Kiezen",
+          "ursachen_ids": [2204, 2205],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Programme zur gewaltfreien Konfliktlösung können Gewaltrechtfertigung und Eskalation mindern. Dagegen: unbestimmt, Bezug zu politischen Konflikten offen; kaum untersucht.",
+          "zitat": "Wir fördern ressortübergreifende Programme zur gewaltfreien Konfliktlösung und Prävention in den Kiezen.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=31",
+          "evidenz": "offen",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2201, 2204, 2205, 2206],
+      "massnahmen": [
+        {
+          "id": 9067,
+          "instrument": 8984,
+          "beschreibung": "Aussteigerhilfe und Beratung im Landesprogramm Demokratie und Toleranz weiter fördern",
+          "ursachen_ids": [2201],
+          "zitat": "Dafür stärken wir die Zivilgesellschaft, indem das Landesprogramm „Demokratie und Toleranz gemeinsam stärken!“, mitsamt Regionalzentren, der Beratung für Opfer von rechtsextremer Gewalt und weiterer Angebote […] der Aussteigerhilfe u. a. m. weiter fördern.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=42",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9068,
+          "instrument": 8985,
+          "beschreibung": "Gewalt- und Extremismusprävention an Schulen weiter stärken",
+          "ursachen_ids": [2201],
+          "zitat": "Dazu wollen wir die Gesundheitsvorsorge und Gewalt - und Extremismusprävention an Schulen weiter stärken.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=68",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9069,
+          "instrument": 8990,
+          "beschreibung": "Demokratiebildung als Bestandteil von Studium, Referendariat, Fortbildung und Schulleitungsqualifizierung verankern",
+          "ursachen_ids": [2204],
+          "zitat": "Demokratiebildung als Querschnittsthema gehört zur Qualifikation aller Fachkräfte an Schulen und ist Bestandteil des Unterrichts in allen Fächern. Demokratiebildung verstehen und stärken wir dafür als notwendigen Bestandteil von Studium, Referendariat und Fortbildung der pädagogischen Fachkräfte sowie der Qualifizierung der Schulleitungen.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=66",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9070,
+          "instrument": 8996,
+          "beschreibung": "Verfassungstreue als Voraussetzung für Tätigkeit in der öffentlichen Verwaltung sicherstellen",
+          "ursachen_ids": [2204],
+          "zitat": "Menschen, die nicht die Werte unseres Grundgesetzes – allen voran die universelle Menschenwürde, das Demokratie- bzw. das Rechtsstaatsprinzip – teilen und insofern nicht staatstreu sind, dürfen nicht in der öffentlichen Verwaltung / in der Exekutive arbeiten. Mit geeigneten Maßnahmen werden wir dafür sorgen, dass dieses Ziel erreicht wird.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=42",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9071,
+          "instrument": 8985,
+          "beschreibung": "Projekte der politischen und interkulturellen Bildung fördern, die Demokratie und Vielfalt stärken",
+          "ursachen_ids": [2204],
+          "zitat": "Wir fördern Projekte der politischen, kulturellen und […] Bildung, die Demokratie und Vielfalt stärken.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=78",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9072,
+          "instrument": 8998,
+          "beschreibung": "Kommunen dabei unterstützen, Beteiligungsverfahren zu etablieren",
+          "ursachen_ids": [2205],
+          "zitat": "Wir verfolgen das Ziel, Kommunen dabei zu unterstützen, Beteiligungsverfahren zu etablieren, damit Entscheidungen vor Ort breiter getragen werden und Vertrauen und Akzeptanz steigen.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=43",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9073,
+          "instrument": 8999,
+          "beschreibung": "Qualifizierte Volksbefragung einführen",
+          "ursachen_ids": [2205],
+          "zitat": "Um Bürgerinnen und Bürger stärker an Entscheidungen zu beteiligen, wollen wir die qualifizierte Volksbefragung einführen.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=6",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2201, 2204, 2205, 2206],
+      "massnahmen": [
+        {
+          "id": 9074,
+          "instrument": 8984,
+          "beschreibung": "Beratungsstellen, Aussteigerprogramme und zivilgesellschaftliche Initiativen werden verlässlich unterstützt.",
+          "ursachen_ids": [2201],
+          "zitat": "Beratungsstellen, Aussteigerprogramme und zivilgesellschaftliche Initiativen leisten wichtige Arbeit. Sie werden verlässlich unterstützt.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=33",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9075,
+          "instrument": 8990,
+          "beschreibung": "Landeszentrale für politische Bildung personell und finanziell absichern und aufstocken.",
+          "ursachen_ids": [2204],
+          "zitat": "Die Landeszentrale für politische Bildung wird personell und finanziell abgesichert und aufgestockt.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=20",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9076,
+          "instrument": 8998,
+          "beschreibung": "Anliegen der Bauernproteste in einen strukturierten Dialog überführen.",
+          "ursachen_ids": [2205],
+          "zitat": "Die Anliegen der Bauernproteste werden ernst genommen und in einen strukturierten Dialog überführt.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=45",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9077,
+          "instrument": 8997,
+          "beschreibung": "Bürgerräte einführen, die komplexe Themen wie Mobilität oder Infrastruktur gemeinsam beraten.",
+          "ursachen_ids": [2205],
+          "zitat": "Bürgerräte nach bewährten Vorbildern werden eingeführt, um komplexe Themen wie Mobilität oder Infrastruktur gemeinsam zu beraten.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=35",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9078,
+          "instrument": 8987,
+          "beschreibung": "Pädagogisch begleitete Freiräume, Jugendclubs und selbstorganisierte Räume weiter stärken.",
+          "ursachen_ids": [2201],
+          "zitat": "Pädagogisch begleitete Freiräume, Jugendclubs und selbstorganisierte Räume […] werden weiter gestärkt.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=26",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "durchsucht_fuer": [2201, 2202, 2203, 2204, 2205, 2206],
+      "massnahmen": [
+        {
+          "id": 9079,
+          "instrument": 9009,
+          "beschreibung": "Große Medienplattformen auf EU-Ebene in die Pflicht nehmen, Maßnahmen gegen Verbreitung von Desinformation zu ergreifen",
+          "ursachen_ids": [2202],
+          "zitat": "Die großen Medienplattformen werden wir auch auf Ebene der EU in die Pflicht nehmen, wirksame Maßnahmen gegen die Verbreitung von Desinformation vorzunehmen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=140",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9080,
+          "instrument": 9008,
+          "beschreibung": "Konsequente Löschung rechtswidriger Inhalte und schnellere Sperrung der Accounts",
+          "ursachen_ids": [2202],
+          "zitat": "Ihre Grenzen findet sie, wenn Desinformation sich unkontrolliert ausbreitet und wenn Straftatbestände wie Beleidigung oder Volksverhetzung erfüllt sind. Diese Inhalte […] müssen konsequent gelöscht und entsprechende Accounts schneller gesperrt werden.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=114",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9081,
+          "instrument": 9007,
+          "beschreibung": "Medienkompetenz der Bürger*innen im Umgang mit digitalen Inhalten in allen gesellschaftlichen Gruppen stärken",
+          "ursachen_ids": [2202],
+          "zitat": "Wir brauchen auch bundesweit mehr Anstrengungen, um die Medienkompetenzen und den kritischen Umgang der Bürger*innen mit digitalen Inhalten in allen gesellschaftlichen Gruppen zu stärken.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=110",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9082,
+          "beschreibung": "Angebote für Aussteiger*innen aus extremistischen Szenen und Deradikalisierungsprogramme im Justizvollzug finanziell stärken",
+          "ursachen_ids": [2201],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ausstiegsarbeit setzt an Milieubindungen an; Erfolge v. a. bei Programmen mit Bildung und sozialer Wiedereingliederung, Evidenz aber dünn. Justizvollzug ist Ländersache, Bund kann fördern.",
+          "zitat": "Wir brauchen Angebote für Aussteiger*innen aus den extremistischen Szenen oder Deradikalisierungsprogramme für den Justizvollzug. Diese Arbeit wollen wir finanziell stärken und dauerhaft mit einem Demokratiefördergesetz gesetzlich absichern.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=137",
+          "evidenz": "gemischt",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9083,
+          "instrument": 9010,
+          "beschreibung": "Bürgerräte in Verfahren einbeziehen und gesetzlich absichern, inklusive demokratischer Verfahren zu einzelnen Beratungsergebnissen",
+          "ursachen_ids": [2203, 2205],
+          "zitat": "Mit Bürgerräten besteht die Möglichkeit, den Rat der Menschen als „Expert*innen des Alltags“ in einem repräsentativen Verfahren einzuholen. Auch das gilt es zu stärken und gesetzlich abzusichern, inklusive demokratischer Verfahren zu einzelnen Beratungsergebnissen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=110",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2201, 2204, 2205, 2206],
+      "massnahmen": [
+        {
+          "id": 9084,
+          "instrument": 8985,
+          "beschreibung": "Angebote der Prävention und Demokratiebildung stärken und die offene Jugendarbeit als Alternativangebot finanziell ausstatten",
+          "ursachen_ids": [2201, 2204],
+          "zitat": "Dem massiven Problem von zunehmender rechter Jugendgewalt gerade auch in den Ost-Berliner Bezirken begegnen wir, indem wir Angebote der Prävention und der Demokratiebildung stärken und die offene Jugendarbeit und Jugendfreizeiteinrichtungen als Alternativangebote angemessen und langfristig finanziell ausstatten.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=157",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9085,
+          "instrument": 8985,
+          "beschreibung": "Erweiterung des Landesprogramms gegen Rechtsextremismus, Rassismus und Antisemitismus zur nachhaltigen Sicherung der Arbeit",
+          "ursachen_ids": [2201],
+          "zitat": "Wir Grüne erweitern das Landesprogramm gegen Rechtsextremismus, Rassismus und Antisemitismus sowie die Landeskommission gegen Gewalt, um die Arbeit gegen Rechtsextremismus nachhaltig zu sichern und weiterzuentwickeln.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=159",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9086,
+          "instrument": 8985,
+          "beschreibung": "Ausbau digitaler Präventionsangebote wie spezialisierter Digital Streetwork gegen Rekrutierung",
+          "ursachen_ids": [2201],
+          "zitat": "Daher bauen wir digitale Präventionsangebote wie spezialisierte Digital Streetwork aus […]",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=159",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9087,
+          "instrument": 8985,
+          "beschreibung": "Dauerhafte Sicherung der Präventionsprojekte an Schulen",
+          "ursachen_ids": [2201],
+          "zitat": "Präventionsprojekte an Schulen sichern wir dauerhaft",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=159",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9088,
+          "instrument": 8995,
+          "beschreibung": "Verpflichtender Teil der Ausbildung des pädagogischen Fachpersonals zum Umgang mit Rechtsextremismus, dazu regelmäßige Fort- und Weiterbildung",
+          "ursachen_ids": [2204],
+          "zitat": "Präventionsprojekte an Schulen sichern wir dauerhaft und machen den Umgang mit Rechtsextremismus zu einem verpflichtenden Teil der Ausbildung des pädagogischen Fachpersonals (Lehrkräfte, Erzieher*innen etc.).",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=159",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9089,
+          "instrument": 8985,
+          "beschreibung": "Stärkung der Kinder- und Jugendfreizeiteinrichtungen im Umgang mit rechtsextremen Einstellungen",
+          "ursachen_ids": [2201],
+          "zitat": "Kinder- und Jugendfreizeiteinrichtungen stärken wir im Umgang mit rechtsextremen Einstellungen.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=160",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9090,
+          "instrument": 8990,
+          "beschreibung": "Stärkung der Landeszentrale für politische Bildung und Verankerung ihres demokratischen Auftrags",
+          "ursachen_ids": [2204],
+          "zitat": "Die Landeszentrale für politische Bildung ist unverzichtbar, um Wissen über demokratische Strukturen sowie politische Bildung und Selbstwirksamkeit zu vermitteln. Wir verurteilen die Angriffe der CDU auf die Unabhängigkeit dieser Institution und werden ihren demokratischen Auftrag klar verankern und ihre Arbeit stärken.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=172",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9091,
+          "instrument": 8985,
+          "beschreibung": "Einführung eines Landesdemokratiefördergesetzes zur nachhaltigen Sicherung des zivilgesellschaftlichen Engagements",
+          "ursachen_ids": [2204],
+          "zitat": "Wir führen ein Landesdemokratiefördergesetz ein und unterstützen und sichern ihr Engagement und ihre Arbeit damit nachhaltig.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=172",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9092,
+          "beschreibung": "Einrichtung und Förderung eines Rings politischer Jugendorganisationen",
+          "ursachen_ids": [2204],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ein Ring politischer Jugendorganisationen fördert demokratisches Engagement Jugendlicher. Dagegen: erreicht vor allem bereits Engagierte; Wirkung auf Einstellungen kaum untersucht.",
+          "zitat": "Nach dem Vorbild des Bundes und der meisten Bundesländer unterstützen wir die Einrichtung und Förderung eines Rings politischer Jugendorganisationen in Berlin.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=173",
+          "evidenz": "offen",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9093,
+          "instrument": 8997,
+          "beschreibung": "Unterstützung moderierter Bürger*innenräte mit gelosten Bürger*innen für Handlungsempfehlungen an Debatte und Parlament",
+          "ursachen_ids": [2205],
+          "zitat": "Wir unterstützen Bürger*innenräte, in denen geloste Bürger*innen zu konkreten Themen im Kiez oder auf Landesebene auf Basis von Fachimpulsen und in moderierten Verfahren konkrete Handlungsempfehlungen und Impulse für die öffentliche Debatte und die parlamentarische Entscheidung erarbeiten.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=174",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9094,
+          "instrument": 9000,
+          "beschreibung": "Unterstützung des Dialogs der verschiedenen Glaubensgemeinschaften und interreligiöser Formen des Gedenkens",
+          "ursachen_ids": [2205],
+          "zitat": "Wir Grüne unterstützen den Dialog der verschiedenen Glaubensgemeinschaften und interreligiöse Formen des Gedenkens.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=171",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9095,
+          "instrument": 9000,
+          "beschreibung": "Moderierte Debattenräume an Hochschulen und Dialogförderung in Zeiten politischer Unsicherheit",
+          "ursachen_ids": [2205],
+          "zitat": "Gerade in Zeiten großer politischer Unsicherheiten braucht es mehr niedrigschwellige, moderierte Debattenräume, die unterschiedliche Perspektiven sichtbar machen, Dialog fördern und Polarisierung entgegenwirken.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=199",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9096,
+          "instrument": 8986,
+          "beschreibung": "Überarbeitung der Landeskonzeption „Demokratie. Vielfalt. Respekt.“ gegen Rechtsextremismus, Antisemitismus und Rassismus",
+          "ursachen_ids": [2204],
+          "zitat": "Parallel überarbeiten wir die veraltete Landeskonzeption „Demokratie. Vielfalt. Respekt.“ gegen Rechtsextremismus, Antisemitismus und Rassismus",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=135",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9097,
+          "instrument": 8991,
+          "beschreibung": "Stärkung der Forschung und politischen Bildungsarbeit zu Antislawismus",
+          "ursachen_ids": [2204],
+          "zitat": "Wir wollen die Forschung und politische Bildungsarbeit zu Antislawismus stärken",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=142",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9098,
+          "instrument": 8985,
+          "beschreibung": "Stärkung von Projekten, die über Vorurteile aufklären und Akzeptanz fördern",
+          "ursachen_ids": [2204],
+          "zitat": "Wir stärken Projekte, die aufklären, Vorurteile abbauen und Akzeptanz fördern.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=151",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9099,
+          "beschreibung": "Politische Bildung als Bildungsziel und demokratische Organisation der Schulen in der Landesverfassung verankern",
+          "ursachen_ids": [2204],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Verankert politische Bildung als Ziel; ändert den Unterricht aber nicht unmittelbar. Verfassungsänderung braucht Zweidrittelmehrheit.",
+          "zitat": "Politische Bildung als Bildungsziel und die demokratische Organisation von Schulen wollen wir wie in den meisten anderen Bundesländern auch in Berlin in die Verfassung aufnehmen.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=191",
+          "evidenz": "offen",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9100,
+          "instrument": 8995,
+          "beschreibung": "Verpflichtende Vermittlung von Demokratiebildung, Diskriminierungskritik und kommunikativen Kompetenzen in Aus- und Fortbildung der Sicherheitsbehörden",
+          "ursachen_ids": [2204],
+          "zitat": "Deshalb müssen Demokratiebildung, Diskriminierungskritik und kommunikative Kompetenzen in Aus- und Fortbildung sowie im Studium gefördert werden.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=226",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9101,
+          "instrument": 8984,
+          "beschreibung": "Stärkung der Deradikalisierungsarbeit und der Beratungsstellen gegen Verschwörungsideologien sowie Ausbau der Arbeit mit Jugendlichen und Männern",
+          "ursachen_ids": [2201],
+          "zitat": "Neben einer Gesamtstrategie gegen Rechtsextremismus benötigen wir eine Stärkung der Deradikalisierungsarbeit, der Beratungsstellen gegen Verschwörungsideologien und Hasskriminalität sowie einen Ausbau der zielgruppenspezifischen Arbeit mit Jugendlichen und Männern.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=230",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9102,
+          "beschreibung": "Bundesratsinitiative: Bekenntnis der Schöffen und ehrenamtlichen Richter zur freiheitlich-demokratischen Grundordnung",
+          "ursachen_ids": [2204],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Hält Verfassungsfeinde aus Laiengerichten fern und schützt Vertrauen in die Justiz. Ändert Einstellungen kaum; Bundesratsinitiative braucht Mehrheiten im Bund.",
+          "zitat": "Wir Bündnisgrüne bringen eine Bundesratsinitiative auf den Weg mit dem Ziel, festzuschreiben, dass Schöff*innen und andere ehrenamtliche Richter*innen sich zur freiheitlich-demokratischen Grundordnung bekennen müssen",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=241",
+          "evidenz": "offen",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9103,
+          "instrument": 8992,
+          "beschreibung": "Ausbau der Fortbildungsangebote für Lehrkräfte und Schulen, Vorurteile und Respekt unter Schüler*innen zu befördern",
+          "ursachen_ids": [2206],
+          "zitat": "Wir halten diese Projekte auch im Sinne der Prävention für zentral, um Akzeptanz, Diskriminierungssensibilität und Respekt unter Schüler*innen zu befördern, und werden sie weiter ausbauen und fest als Angebote an den Berliner Schulen etablieren.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=193",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2201, 2204, 2205, 2206],
+      "massnahmen": [
+        {
+          "id": 9104,
+          "instrument": 8990,
+          "beschreibung": "Demokratiebildung als Querschnittsaufgabe in Ausbildung und Lehrplänen verankern, auch zu Desinformation",
+          "ursachen_ids": [2204],
+          "zitat": "Für eine demokratischere Schule und ein gesundes Lernklima wollen wir: […] Demokratiebildung als Querschnittsaufgabe sowie Medienkompetenz verbindlich in der pädagogischen Ausbildung und in den Lehrplänen verankern, insbesondere im Umgang mit Desinformation, Cybermobbing und digitaler Mündigkeit.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=44",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9105,
+          "instrument": 8990,
+          "beschreibung": "Landeszentrale für politische Bildung gesetzlich absichern und Regionalzentren für Demokratie stärken",
+          "ursachen_ids": [2204],
+          "zitat": "Für eine Gesellschaft ohne Hass und ohne Hetze werden wir: […] die Landeszentrale für politische Bildung auf eine gesetzliche Grundlage stellen sowie die Regionalzentren für Demokratie stärken[…].",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=90",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9106,
+          "beschreibung": "Unabhängige Forschungsstelle Demokratie einrichten, die Analysen demokratiefeindlicher Bestrebungen veröffentlicht",
+          "ursachen_ids": [2204],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Öffentlich zugängliche Analysen und Bildungsangebote zu demokratiefeindlichen Bestrebungen setzen an Ideologien an; Wirkung nur mittelbar und nicht untersucht.",
+          "zitat": "Für einen Verfassungsschutz, der die Verfassung schützt, werden wir: […] eine unabhängige Forschungsstelle „Demokratie” einrichten, die wissenschaftliche Analysen demokratiefeindlicher und -gefährdender Bestrebungen erarbeitet, der Öffentlichkeit durch Publikationen und Bildungsangebote zugänglich macht",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=79",
+          "evidenz": "offen",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9107,
+          "instrument": 8997,
+          "beschreibung": "Bürger*innenräte auf Landes- und Kommunalebene für gemeinsam getragene Entscheidungen einführen",
+          "ursachen_ids": [2205],
+          "zitat": "Bürger*innenräte: Wir stärken die Einbeziehung der Bürger*innen auf Landes- und Kommunalebene, für Entscheidungen, die gemeinsam getragen werden.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=67",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9108,
+          "instrument": 8987,
+          "beschreibung": "Soziale Präventionsarbeit in Kommunen finanziell stärken, etwa Streetwork und Jugendclubs",
+          "ursachen_ids": [2201],
+          "zitat": "Für ein sicheres MV wollen wir: […] soziale Präventionsarbeit in den Kommunen gezielt finanziell stärken, etwa in den Bereichen Streetwork, Jugendclubs, Suchtberatung und psychologische Betreuung[…].",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=76",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2201, 2204, 2205, 2206],
+      "massnahmen": [
+        {
+          "id": 9109,
+          "instrument": 8985,
+          "beschreibung": "Stärkere Unterstützung von Beratungsstellen und zivilgesellschaftlichen Akteuren in der Extremismusprävention in der Fläche",
+          "ursachen_ids": [2201],
+          "zitat": "Wir setzen uns außerdem für eine stärkere Unterstützung zivilgesellschaftlicher Akteur*innen und Beratungsstellen in der Extremismusprävention in der Fläche Sachsen-Anhalts ein.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=40",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9110,
+          "instrument": 8990,
+          "beschreibung": "Kitas zu „Kinderstuben der Demokratie“ machen, Beteiligung in der Kita fördern; Prävention von Radikalisierung",
+          "ursachen_ids": [2204],
+          "zitat": "Wir wollen Kitas zu „Kinderstuben der Demokratie“ machen. […] Dies dient auch der Prävention von politischem Extremismus und politischer Radikalisierung in späteren Jahren.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=58",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9111,
+          "instrument": 8990,
+          "beschreibung": "Demokratiebildung als fächerübergreifendes Leitprinzip im Schulalltag, Schülermitbestimmung stärken",
+          "ursachen_ids": [2204],
+          "zitat": "Wir setzen uns entschieden dafür ein, die Mitbestimmung von Schüler*innen auf allen Ebenen der Schule zu stärken, um Demokratie für junge Menschen früh erfahrbar zu machen. Demokratiebildung soll als zentrales Leitprinzip fächerübergreifend in den Schulalltag integriert werden, sodass Schüler*innen aktiv die Inhalte des Unterrichts mitgestalten können.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=64",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9112,
+          "instrument": 8990,
+          "beschreibung": "Verpflichtender Sozialkundeunterricht über die gesamte Schulzeit; politische Bildung ausbauen",
+          "ursachen_ids": [2204],
+          "zitat": "Die frühe Demokratiebildung werden wir stärken, denn sie beginnt bereits in der Kita und im Klassenzimmer. […] Dafür braucht es eine moderne politische Bildung, klare und verbindliche Mitbestimmungsrechte sowie eine Drittelparität in Schulkonferenzen. Wir möchten verpflichtenden Sozialkundeunterricht von der fünften bis zur zwölften bzw. dreizehnten Jahrgangsstufe.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=37",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9113,
+          "instrument": 8995,
+          "beschreibung": "Aus- und Fortbildung der Polizei auf demokratische Werte und Antidiskriminierung ausrichten; regelmäßige Fortbildungen gegen Extremismus vorbeugen",
+          "ursachen_ids": [2204],
+          "zitat": "Die Aus- und Fortbildung der Polizei soll auf demokratische Werte, Menschenrechte, Antidiskriminierung, interkulturelle Kompetenz und Deeskalation ausgerichtet sein. […] Regelmäßige Fortbildungen in diesen Bereichen fördern professionelles Handeln und tragen dazu bei, Extremismus, Vorurteile und Racial Profiling wirksam entgegenzuwirken.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=43",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9114,
+          "instrument": 8985,
+          "beschreibung": "Landes-Demokratiefördergesetz: Projekte gegen Extremismus, Hass und Gewalt dauerhaft und unabhängig von Haushaltsentscheidungen fördern",
+          "ursachen_ids": [2204],
+          "zitat": "Ein Landes-Demokratiefördergesetz soll geschaffen werden, um Engagement langfristig zu stärken und demokratische Strukturen verlässlich abzusichern. Ein solches Gesetz bietet die Möglichkeit, Projekte gegen Extremismus, Hass und Gewalt dauerhaft zu fördern und unabhängig von kurzfristigen Haushaltsentscheidungen zu schützen.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=74",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9115,
+          "instrument": 8990,
+          "beschreibung": "Landeszentrale für politische Bildung per eigenem Landesgesetz unabhängig absichern",
+          "ursachen_ids": [2204],
+          "zitat": "Die Landeszentrale für politische Bildung wollen wir mit einem eigenen Landesgesetz und direkt an den Landtag angebunden unabhängig absichern.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=74",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9116,
+          "instrument": 8985,
+          "beschreibung": "Projekte stärken, die gegen Rassismus, Islamfeindlichkeit, Queerfeindlichkeit und andere gruppenbezogene Menschenfeindlichkeit arbeiten",
+          "ursachen_ids": [2204],
+          "zitat": "Wir wollen Projekte stärken, die gegen Rassismus, Antisemitismus, Islamfeindlichkeit, LGBTIQ*-Feindlichkeit und andere Formen gruppenbezogener Menschenfeindlichkeit arbeiten. Diese Arbeit ist keine freiwillige Zusatzleistung, sondern eine essenzielle staatliche Aufgabe, um die Demokratie grundlegend zu schützen.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=75",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9117,
+          "instrument": 8996,
+          "beschreibung": "Disziplinarverfahren gegen Verfassungsfeinde im öffentlichen Dienst zentral bündeln und personell besser ausstatten",
+          "ursachen_ids": [2204],
+          "zitat": "Wir beenden das Zögern: Durch eine zentrale Bündelung von Disziplinarverfahren und eine bessere personelle Ausstattung sorgen wir dafür, dass Verfassungsfeinde zügig und rechtssicher aus dem Dienst entfernt werden.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=40",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9118,
+          "instrument": 8985,
+          "beschreibung": "Prävention und Bildung gegen Rassismus, Antifeminismus und gruppenbezogene Menschenfeindlichkeit; Bildungsarbeit und politische Jugendbildung stärken",
+          "ursachen_ids": [2204],
+          "zitat": "Wir setzen uns für die Prävention und Bildung gegen Rassismus, Antisemitismus, Antifeminismus und andere gruppenbezogene Menschenfeindlichkeit ein. […] Wir stärken Bildungsarbeit, politische Jugendbildung, Antidiskriminierungsprojekte und Programme, die demokratische Werte vermitteln.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=41",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9119,
+          "instrument": 8998,
+          "beschreibung": "Dialogformat „Parlament der Dörfer“ einführen, das den Austausch zwischen Dörfern und Politik ermöglicht",
+          "ursachen_ids": [2205],
+          "zitat": "Zudem planen wir die Einführung des Dialogformats „Parlament der Dörfer“, das den Austausch zwischen Dörfern und der Politik ermöglicht.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=36",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9120,
+          "instrument": 9003,
+          "beschreibung": "Medienangebote in Dörfern und Kleinstädten fördern, damit lokale Debattenkultur und Berichterstattung erhalten bleiben",
+          "ursachen_ids": [2205],
+          "zitat": "Deshalb fördern wir gezielt Medienangebote in unseren Dörfern und Kleinstädten, damit überall im Land eine lebendige Debattenkultur und eine verlässliche Berichterstattung vor Ort möglich bleiben.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=53",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9121,
+          "instrument": 8998,
+          "beschreibung": "Kommunen befähigen, Mitsprache über Bürgerräte, Beteiligungshaushalte und digitale Dialogformate aktiv zu gestalten",
+          "ursachen_ids": [2205],
+          "zitat": "Ob Bürgerräte, Jugendparlamente, Beteiligungshaushalte oder digitale Dialogformate – Kommunen sollen befähigt werden, Mitsprache aktiv zu gestalten.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=38",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "durchsucht_fuer": [2201, 2202, 2203, 2204, 2205, 2206],
+      "massnahmen": [
+        {
+          "id": 9122,
+          "beschreibung": "Lehrpläne modernisieren mit mehr Raum für Demokratie, Politik und Medienkompetenz",
+          "ursachen_ids": [2202, 2204],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Mehr Demokratie- und Medienbildung im Lehrplan setzt an Ideologie und Medienkontakt an. Lehrpläne sind aber Ländersache; Wirkung schulischer Programme moderat.",
+          "zitat": "Zugleich wollen wir die Lehrpläne modernisieren: Wir Freie Demokraten fordern mehr Raum für wirtschaftliche und finanzielle Bildung, MINT-Themen, Demokratie und Politik sowie Medienkompetenz.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=9",
+          "evidenz": "gemischt",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9123,
+          "instrument": 9021,
+          "beschreibung": "Verpflichtende Besuche von Gedenkstätte und Synagoge sowie Auseinandersetzung mit Antisemitismus im Schulunterricht",
+          "ursachen_ids": [2204],
+          "zitat": "In der Schule muss außerdem auch die Auseinandersetzung mit den verschiedenen Formen von Menschenfeindlichkeit wie dem Antisemitismus intensiviert werden. Dazu gehört der verpflichtende Besuch einer Holocaust-Gedenkstätte und einer Synagoge als Ort aktuellen jüdischen Lebens in Deutschland, die Auseinandersetzung mit der Geschichte Israels sowie die Thematisierung aller Formen des Antisemitismus.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=9",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9124,
+          "instrument": 9022,
+          "beschreibung": "Kein Platz im öffentlichen Dienst für Menschen mit erwiesenen verfassungsfeindlichen Einstellungen",
+          "ursachen_ids": [2204],
+          "zitat": "Für Menschen mit erwiesenen verfassungsfeindlichen Einstellungen ist im öffentlichen Dienst kein Platz.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=26",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9125,
+          "beschreibung": "IHRA-Arbeitsdefinition von Antisemitismus in Behörden etablieren und Grundlage von Fortbildungen für Beamtinnen und Beamte machen",
+          "ursachen_ids": [2204],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Einheitliche Definition und Fortbildungen schärfen den Blick von Behörden für Antisemitismus. Wirkt auf Einstellungen in der Bevölkerung nur mittelbar; Wirkung nicht untersucht.",
+          "zitat": "Wir treten dafür ein, die Arbeitsdefinition von Antisemitismus nach der IHRA (International Holocaust Remembrance Alliance) umfassend in den staatlichen Behörden zu etablieren und diese insbesondere zur Grundlage von Fortbildungen von Beamtinnen und Beamten und bei der Vergabe staatlicher Gelder zu machen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=26",
+          "evidenz": "offen",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9126,
+          "instrument": 9019,
+          "beschreibung": "Islamischen Religionsunterricht frei von islamistischer oder ausländisch gesteuerter Einflussnahme anbieten",
+          "ursachen_ids": [2201],
+          "zitat": "Islamischer Religionsunterricht muss frei von Einflüssen islamistischer oder aus dem Ausland gesteuerter Organisationen angeboten werden.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=26",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9127,
+          "instrument": 9019,
+          "beschreibung": "Ausbildung von Imamen und islamischen Religionslehrern an deutschen Universitäten ausbauen",
+          "ursachen_ids": [2201],
+          "zitat": "Die Ausbildung von Imamen und islamischen Religionslehrer an deutschen Universitäten muss ausgebaut werden, um nicht mehr von der Entsendung von Imamen durch Verbände, die von Autokraten kontrolliert werden, abhängig zu sein.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=26",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9128,
+          "instrument": 9017,
+          "beschreibung": "Verbände, die Islamismus verharmlosen oder Antisemitismus nicht verurteilen, sind keine Partner der Religionspolitik",
+          "ursachen_ids": [2201],
+          "zitat": "Verbände, die Islamismus beschönigen, verharmlosen oder Antisemitismus nicht verurteilen, können hierzulande keine Partner in der Religionspolitik sein.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=26",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9129,
+          "beschreibung": "Parlamentarischer Untersuchungsausschuss zur Aufarbeitung der Corona-Maßnahmen für Aufklärung und Transparenz",
+          "ursachen_ids": [2203],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Aufarbeitung kann Vertrauen bei Menschen stärken, die sich in der Pandemie unfair behandelt fühlten. Dagegen: Wirkung hängt vom Verlauf ab und ist nicht untersucht.",
+          "zitat": "Wir Freie Demokraten fordern einen Parlamentarischen Untersuchungsausschuss, um echte Aufklärung und Transparenz durch ein geordnetes Verfahren zu gewährleisten und Handlungsempfehlungen für zukünftige Krisen zu geben.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=34",
+          "evidenz": "offen",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2201, 2204, 2205, 2206],
+      "massnahmen": [
+        {
+          "id": 9130,
+          "instrument": 8984,
+          "beschreibung": "Aussteigerprogramme und Vernetzung staatlicher Stellen mit Initiativen für eine ursachenorientierte Kriminalprävention gegen Extremismus",
+          "ursachen_ids": [2201],
+          "zitat": "Wir fordern eine ursachenorientierte Kriminalprävention durch verstärkte Aufklärung, Aussteigerprogramme und die Vernetzung staatlicher Stellen mit bürgerschaftlichen Initiativen.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=66",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9131,
+          "instrument": 8987,
+          "beschreibung": "Verstärkter Einsatz von Jugend- und Sozialarbeit sowie Streetwork als verlässliche Anlaufstelle",
+          "ursachen_ids": [2201],
+          "zitat": "Darüber hinaus ist ein verstärkter Einsatz von Jugend- und Sozialarbeiterinnen und -arbeitern sowie Streetworkerinnen und Streetworkern notwendig, um eine verlässliche Anlaufstelle zu schaffen.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=68",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9132,
+          "instrument": 8991,
+          "beschreibung": "Bildungsprogramme gegen Antisemitismus in Schulen verbindlich verankern, mit Begegnungsformaten",
+          "ursachen_ids": [2204],
+          "zitat": "Die Prävention gegen Antisemitismus muss bereits in Schulen und Bildungseinrichtungen verbindlich verankert werden. Wir fordern verbindliche Bildungsprogramme gegen Antisemitismus, die historische Aufklärung mit einem klaren Gegenwartsbezug verbinden. Dazu gehören insbesondere die Einbindung jüdischer Perspektiven, die Zusammenarbeit mit jüdischen Organisationen sowie Begegnungsformate, die Vorurteile abbauen und Empathie fördern.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=79",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9133,
+          "beschreibung": "Kita-Besuchspflicht für Kinder von Asylbewerbern, um Sprache und Werte zu vermitteln, strafbewehrt",
+          "ursachen_ids": [2204],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Frühe Kita-Bildung kann Sprache und Werte vermitteln. Eine strafbewehrte Pflicht nur für eine Gruppe ist rechtlich (Gleichbehandlung, Elternrecht) schwer haltbar; Wirkung auf Einstellungen offen.",
+          "zitat": "Die Kinder von Asylbewerberinnen und -bewerbern sollen ab dem dritten Lebensjahr zum Kitabesuch verpflichtet werden, um die deutsche Sprache und Werte vermittelt zu bekommen. Eine Weigerung durch die Eltern soll in Zukunft strafbewehrt sein.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=97",
+          "evidenz": "offen",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9134,
+          "instrument": 9000,
+          "beschreibung": "Austausch mit israelischen Schulen und Partnerstadt sowie Dialog zu Glauben und Demokratie ausbauen",
+          "ursachen_ids": [2205, 2206],
+          "zitat": "Wir werden zudem den Austausch mit Berlins Partnerstadt Tel Aviv stärken und den Dialog zu Fragen bezüglich Glauben und Demokratie ausbauen.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=79",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2201, 2204, 2205, 2206],
+      "massnahmen": [
+        {
+          "id": 9135,
+          "instrument": 8986,
+          "beschreibung": "Bestehende Präventionsprogramme überprüfen und an aktuelle Herausforderungen anpassen",
+          "ursachen_ids": [2201],
+          "zitat": "Bestehende Präventionsprogramme werden wir überprüfen und an die Herausforderungen der Gegenwart anpassen.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=145",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9136,
+          "instrument": 8985,
+          "beschreibung": "Ehrenamt im Kampf gegen Extremismus besser fördern und in staatliche Programme integrieren",
+          "ursachen_ids": [2201],
+          "zitat": "Ehrenamtliches Engagement ist für uns ein zentraler Baustein im Kampf gegen Extremismus. Deshalb wollen wir das Ehrenamt besser als bisher fördern und in staatliche Programme integrieren.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=145",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9137,
+          "instrument": 8990,
+          "beschreibung": "Landeseigene Gedenkstätten unterstützen, die Bildungsarbeit zur SED-Diktatur leisten",
+          "ursachen_ids": [2204],
+          "zitat": "Wir Freie Demokraten werden: […] die landeseigenen Gedenkstätten unterstützen: Das Dokumentationszentrum am Demmlerplatz in Schwerin und die frühere Stasi-Untersuchungshaftanstalt in Rostock leisten bereits heute wertvolle Bildungsarbeit.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=120",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9138,
+          "instrument": 9006,
+          "beschreibung": "Integration durch Sprache, Arbeit und Werte fördern mit verbindlichen Kursen und Bekenntnis zum Grundgesetz",
+          "ursachen_ids": [2204],
+          "zitat": "Wir Freie Demokraten werden: […] Integration durch Sprache, Arbeit und Werte fördern: verbindliche Kurse, direkter und unverzüglicher Zugang zu Jobs, klares Bekenntnis zum Grundgesetz.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=144",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9139,
+          "instrument": 9001,
+          "beschreibung": "Offene Debattenkultur an Hochschulen auch mit schwer erträglichen Meinungen sichern",
+          "ursachen_ids": [2205],
+          "zitat": "Wir Freie Demokraten werden: […] die Wissenschaftsfreiheit sowie die Freiheit von Forschung und Lehre an den Hochschulen unseres Landes verteidigen. Dazu gehört für uns eine offene Debattenkultur, auch mit schwer erträglichen Meinungen, solange sich nicht die Grenzen des Grundgesetzes oder Strafrechts überschreiten.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=113",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9140,
+          "instrument": 9001,
+          "beschreibung": "Offene Debatten im Hochschulraum gegen Konformitätsdruck stärken",
+          "ursachen_ids": [2205],
+          "zitat": "Wir Freie Demokraten werden: […] Studentenverbindungen und die Vielfältigkeit in der akademischen Landschaft im freiheitlich-demokratischen Rahmen schützen und Vereinigungsfreiheit sowie offene Debatten im Hochschulraum gegen politischen oder sozialen Konformitätsdruck stärken.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=113",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9141,
+          "instrument": 9004,
+          "beschreibung": "Digitale-Dienste-Gesetz ändern: Löschen von Inhalten unterhalb der Strafbarkeitsschwelle durch Plattformen verbieten",
+          "ursachen_ids": [2205],
+          "zitat": "Wir Freie Demokraten werden: […] uns für eine Änderung des Digitale-Dienste-Gesetzes einsetzen, dass Betreibern von sozialen Netzwerken verboten wird, Inhalte unterhalb der Strafbarkeitsschwelle zu löschen.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=151",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2201, 2204, 2205, 2206],
+      "massnahmen": [
+        {
+          "id": 9142,
+          "beschreibung": "Hochschulen: Bekenntnis zur freiheitlich-demokratischen Grundordnung und zum Grundgesetz als Voraussetzung.",
+          "ursachen_ids": [2204],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Soll Ideologien an Hochschulen begrenzen. Ein Bekenntnis als Zugangsvoraussetzung berührt Berufs- und Wissenschaftsfreiheit; Wirkung auf Einstellungen nicht untersucht.",
+          "zitat": "Wir werden: […] ein Bekenntnis zur freiheitlich demokratischen Grundordnung, zum Grundgesetz und zu grundsätzlichen Freiheitsrechten voraussetzen, dazu gehört auch die Anerkennung des Existenzrechts Israels.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=33",
+          "evidenz": "offen",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9143,
+          "instrument": 8990,
+          "beschreibung": "Wiedereinführung des Leistungskurses Geschichte an Gymnasien, um demokratisches Bewusstsein zu stärken.",
+          "ursachen_ids": [2204],
+          "zitat": "Wir fordern die Wiedereinführung des Leistungskurses Geschichte an Gymnasien in Sachsen-Anhalt. Geschichte stärkt das demokratische Bewusstsein, vermittelt Orientierung […] in einer komplexen Welt und fördert die Fähigkeit zu kritischer Urteilsbildung.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=26",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9144,
+          "instrument": 8992,
+          "beschreibung": "In Jugendarbeit und Schule Diskriminierung entgegenwirken und für Toleranz und Akzeptanz aufklären.",
+          "ursachen_ids": [2206],
+          "zitat": "Dazu wollen wir etwa in der Jugendarbeit und in der Schule Diskriminierung entgegenwirken und mit Aufklärung für Toleranz und Akzeptanz werben.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=37",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "durchsucht_fuer": [2201, 2202, 2203, 2204, 2205, 2206],
+      "massnahmen": [
+        {
+          "id": 9145,
+          "instrument": 9011,
+          "beschreibung": "Volksentscheide nach Schweizer Vorbild auch auf Bundesebene einführen",
+          "ursachen_ids": [2203],
+          "zitat": "Wir fordern Volksentscheide nach Schweizer Vorbild auch für Deutschland.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=131",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9146,
+          "beschreibung": "EU-Plattformregulierung (DSA) ablehnen und das Netzwerkdurchsetzungsgesetz zurückbauen",
+          "ursachen_ids": [2202],
+          "wirksamkeit": 0,
+          "umsetzbarkeit": 0,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Weniger Moderation erhöht eher den Kontakt mit extremistischen Inhalten; Sperren senken laut Studien deren Reichweite. Der DSA ist unmittelbar geltendes EU-Recht, eine Nichtanwendung wäre EU-rechtswidrig.",
+          "zitat": "Deshalb lehnen wir auch die Implementierung des europäischen „Digital Services Act (DSA)“ in Deutschland entschieden ab und werden das NetzDG rückabwickeln.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=50",
+          "evidenz": "gemischt",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9147,
+          "instrument": 9016,
+          "beschreibung": "Schülern erlauben, ihre politischen Ansichten ohne Repressionen oder Diskriminierung zu äußern",
+          "ursachen_ids": [2205],
+          "zitat": "Schüler haben das Recht, ihre politischen Ansichten ohne Angst vor Repressionen und Diskriminierung durch Lehrer oder Mitschüler äußern zu können.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=161",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9148,
+          "instrument": 9016,
+          "beschreibung": "Schule frei von politischer Propaganda; Schüler sollen eigene Denkweisen ohne Lehrplanvorgaben entwickeln",
+          "ursachen_ids": [2206],
+          "zitat": "Schule ist kein Ort für politische Propaganda. Sie muss den Schülern die Freiheit geben, eigene politische Denkweisen ohne Vorgaben durch Lehrpläne und Unterrichtswerke zu entwickeln.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=161",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9149,
+          "instrument": 9016,
+          "beschreibung": "Lehrkräfte zur politischen Neutralität verpflichten und Wahlaufrufe im Unterricht untersagen",
+          "ursachen_ids": [2206],
+          "zitat": "Die Lehrer selbst sind unbedingt zur Neutralität verpflichtet. Weder dürfen sie zur Wahl bestimmter Parteien noch zur Teilnahme an Demonstrationen aufrufen.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=161",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9150,
+          "instrument": 9014,
+          "beschreibung": "Mandatszeiten für Abgeordnete und Bundeskanzler begrenzen",
+          "ursachen_ids": [2203],
+          "zitat": "Um unser Ideal des Bürgerabgeordneten zu verwirklichen, fordern wir eine Begrenzung der Mandatszeit für Bundeskanzler auf drei und für Abgeordnete auf insgesamt vier Legislaturperioden in EU-Parlament, Bundestag oder Landesparlament.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=138",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9151,
+          "instrument": 9013,
+          "beschreibung": "Justizwahlausschuss einrichten und Richter nach Qualifikation besetzen",
+          "ursachen_ids": [2203],
+          "zitat": "Wir unterstützen daher den Modellvorschlag des Deutschen Richterbundes, einen Justizwahlausschuss einzurichten.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=138",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9152,
+          "instrument": 9013,
+          "beschreibung": "Weisungsgebundenheit der Staatsanwaltschaft abschaffen",
+          "ursachen_ids": [2203],
+          "zitat": "Die Weisungsgebundenheit der Staatsanwaltschaft wollen wir abschaffen und damit die Abhängigkeit von den Justizministerien beenden.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=139",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9153,
+          "beschreibung": "Freie Listenwahl mit Kumulieren und Streichen von Kandidaten einführen",
+          "ursachen_ids": [2203],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Mehr Einfluss der Wähler auf Personen kann Vertrauen stärken; Wirkung auf Institutionenvertrauen kaum untersucht. Per Bundeswahlgesetz möglich.",
+          "zitat": "Deshalb treten wir für die „freie Listenwahl“ ein, mit der Möglichkeit des Kumulierens und Streichens von Kandidaten.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=136",
+          "evidenz": "offen",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9154,
+          "instrument": 9014,
+          "beschreibung": "Bundespräsident direkt vom Volk wählen lassen",
+          "ursachen_ids": [2203],
+          "zitat": "Der Bundespräsident, als höchster Repräsentant des Staates, soll direkt vom Volk gewählt werden.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=135",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9155,
+          "instrument": 9012,
+          "beschreibung": "Entscheidungen der Parteien in eigener Sache unter Rechnungshof-Kontrolle stellen und öffentlich machen",
+          "ursachen_ids": [2203],
+          "zitat": "Alle Entscheidungen in eigener Sache sind der unbeschränkten Kontrolle der Rechnungshöfe zu unterstellen. Öffentlichkeit ist herzustellen.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=137",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9156,
+          "instrument": 9012,
+          "beschreibung": "Hinweisgeberschutzgesetz so überarbeiten, dass auch staatliches Fehlverhalten erfasst wird",
+          "ursachen_ids": [2203],
+          "zitat": "Wir fordern eine Revision des Hinweisgeberschutzgesetzes vom 02. Juli 2023 mit dem Ziel, Fälle von Staatsversagen und regierungsamtlichem Unrecht einzubeziehen.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=140",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9157,
+          "beschreibung": "Beteiligungen von Parteien an Medienunternehmen verbieten",
+          "ursachen_ids": [2203],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Soll Unabhängigkeit der Medien und Vertrauen stärken; Wirkung nicht untersucht. Ein vollständiges Beteiligungsverbot für Parteien ist verfassungsrechtlich problematisch.",
+          "zitat": "Zum Schutz der freien und unabhängigen Meinungsbildung wollen wir Beteiligungen von Parteien an Medienunternehmen verbieten.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=133",
+          "evidenz": "offen",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9158,
+          "instrument": 9019,
+          "beschreibung": "Imame: Verfassungsbekenntnis und Ausbildung in Deutschland verlangen",
+          "ursachen_ids": [2204],
+          "zitat": "In Deutschland predigende Imame sollen sich zu unserer Verfassung bekennen, möglichst in deutscher Sprache predigen und in Deutschland ausgebildet sein.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=124",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9159,
+          "instrument": 9017,
+          "beschreibung": "Vereine und Verbände, die Extremisten unterstützen, von staatlichen Mitteln ausschließen",
+          "ursachen_ids": [2204],
+          "zitat": "Vereine und Verbände, die Extremisten unterstützen, sind von staatlichen Mittelzuwendungen auszuschließen.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=122",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2201, 2204, 2205, 2206],
+      "massnahmen": [
+        {
+          "id": 9160,
+          "instrument": 8988,
+          "beschreibung": "Förderprogramme für linksextremistische Organisationen und linke Vorfeldorganisationen beenden",
+          "ursachen_ids": [2201, 2204],
+          "zitat": "Die AfD fordert: → Die Beendigung sämtlicher Förderprogramme für linksextremistische Organisationen sowie für als NGOs getarnte linke Vorfeldorganisationen, um die staatliche Neutralität wiederherzustellen.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=17",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9161,
+          "beschreibung": "Verbot jeglicher Auslandsfinanzierung für Moscheen",
+          "ursachen_ids": [2201],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Kann ausländische Einflussnahme auf Moscheegemeinden begrenzen. Pauschales Verbot berührt Religionsfreiheit und EU-Kapitalverkehr; Vereinsrecht ist Bundessache. Wirkung nicht untersucht.",
+          "zitat": "Ein Verbot jeglicher Auslandsfinanzierung für Moscheen.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=24",
+          "evidenz": "offen",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9162,
+          "instrument": 8988,
+          "beschreibung": "Ende aller Kooperationen mit extremistischen Institutionen",
+          "ursachen_ids": [2201],
+          "zitat": "Ein Ende aller Kooperationen mit extremistischen Institutionen.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=24",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9163,
+          "instrument": 8991,
+          "beschreibung": "Antisemitismusprävention im Schulunterricht ausbauen und verankern",
+          "ursachen_ids": [2204],
+          "zitat": "Den Ausbau und die wirksame Verankerung der Antisemitismusprävention im Schulunterricht.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=24",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9164,
+          "instrument": 8993,
+          "beschreibung": "Indoktrinationsverbot im Schulunterricht; kontroverse Themen auch in Schulbüchern kontrovers behandeln",
+          "ursachen_ids": [2206],
+          "zitat": "Deshalb muss auch im Schulunterricht das Indoktrinationsverbot gelten: Kontroverse Themen müssen kontrovers behandelt werden. Dies muss künftig auch für Schulbücher gelten.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=27",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9165,
+          "instrument": 9001,
+          "beschreibung": "Berliner Hochschulen per Gesetz zu einem Kodex Wissenschaftsfreiheit verpflichten",
+          "ursachen_ids": [2205],
+          "zitat": "Als Konzept gegen Cancel Culture schlagen wir vor, die Berliner Hochschulen über das Hochschulgesetz dazu zu verpflichten, dem Beispiel der Universität Hamburg zu folgen, die sich einen „Kodex Wissenschaftsfreiheit“ gegeben hat.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=35",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9166,
+          "instrument": 8988,
+          "beschreibung": "Kulturförderung nicht für Projekte gegen die freiheitlich-demokratische Grundordnung oder mit Antisemitismus-Vorschub",
+          "ursachen_ids": [2204],
+          "zitat": "Die Kulturförderung muss deshalb dazu verpflichtet werden, keine Projekte zu finanzieren, die gegen die freiheitlich-demokratische Grundordnung gerichtet sind oder Antisemitismus Vorschub leisten.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=86",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9167,
+          "instrument": 8989,
+          "beschreibung": "Politische Gesinnung kein Kriterium bei der Bewilligung von Kulturförderung",
+          "ursachen_ids": [2205],
+          "zitat": "Die politische Gesinnung darf kein Kriterium bei der Bewilligung von Förderanträgen sein.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=90",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9168,
+          "instrument": 9002,
+          "beschreibung": "Staatliche Stellen sollen Bürger in sozialen Netzwerken nicht blockieren",
+          "ursachen_ids": [2205],
+          "zitat": "Staatliche Stellen und mit Steuergeldern finanzierte Einrichtungen dürfen Bürger in sozialen Netzwerken nicht wegen unliebsamer […] Meinungsäußerungen blockieren und dadurch von Debatten ausschließen.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=90",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9169,
+          "instrument": 8989,
+          "beschreibung": "Öffentliche Förderung von Meldestellen für Vorfälle beenden",
+          "ursachen_ids": [2205],
+          "zitat": "Außerdem finanziert Berlin Meldestellen wie das Berliner Register oder CLAIM […] Deswegen werden wir die öffentliche Förderung des Meldestellen-Unwesens beenden, so dass sich auch diese Organisationen zukünftig ausschließlich privat finanzieren müssen.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=77",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2201, 2204, 2205, 2206],
+      "massnahmen": [
+        {
+          "id": 9170,
+          "beschreibung": "Staatliche Bürgerforen zur Beteiligung einstellen",
+          "ursachen_ids": [2205],
+          "wirksamkeit": 0,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Streicht Beteiligungsformate; das mag Kritik an Scheinbeteiligung aufgreifen, verringert aber Mitsprache. Keine Hinweise, dass das Eskalation mindert.",
+          "zitat": "Staatlich inszenierte Bürgerforen, die nur den Anschein demokratischer Beteiligung erwecken, tatsächlich aber dazu dienen, Windkraftprojekte gegen den Willen der Bevölkerung durchzusetzen, werden wir umgehend einstellen.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=83",
+          "evidenz": "offen",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9171,
+          "instrument": 8999,
+          "beschreibung": "Quorum für Volksbegehren auf 5 % der Wahlberechtigten senken",
+          "ursachen_ids": [2205],
+          "zitat": "Wir wollen die direkte Demokratie in Mecklenburg-Vorpommern durch verringerte Quoren stärken. Sobald 5 % der Wahlberechtigten in der betroffenen Region (Land, Landkreis oder Kommune) für ein Volksbegehren unterschrieben haben, kommt es zum Volksentscheid.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=46",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9172,
+          "instrument": 8988,
+          "beschreibung": "Landesförderung für Vorfeldorganisationen, asylpolitische Lobbygruppen und extremistische Strukturen beenden",
+          "ursachen_ids": [2201],
+          "zitat": "Die Finanzierung von Vorfeldorganisationen politischer Parteien, asylpolitischen Lobbygruppen oder die Unterstützung extremistischer Strukturen durch Landesmittel wird unverzüglich beendet.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=47",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9173,
+          "instrument": 9005,
+          "beschreibung": "Islamverbände verpflichten, Meldestellen für radikale und extremistische Tendenzen vorzuhalten",
+          "ursachen_ids": [2201, 2204],
+          "zitat": "Wir werden diese Verbände in die Pflicht nehmen, eigene Meldestellen und andere von ihnen als geeignet angesehene Einrichtungen vorzuhalten, die radikale und extremistische Tendenzen sowie entsprechende Personen in ihrem Umfeld erfassen und melden.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=53",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9174,
+          "instrument": 8988,
+          "beschreibung": "Demokratieklausel: Landesförderung nur bei schriftlicher Verfassungstreue und politischer Neutralität",
+          "ursachen_ids": [2204],
+          "zitat": "Steuergelder dürfen ausschließlich an Organisationen fließen, die sich strikt politisch neutral verhalten und zweifelsfrei auf dem Boden der freiheitlich-demokratischen Grundordnung stehen. Wir führen eine Demokratieklausel als verbindliche Voraussetzung für jede Landesförderung ein. Jeder Zuwendungsempfänger muss sich schriftlich zur Verfassungstreue und politischen Neutralität verpflichten.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=47",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9175,
+          "beschreibung": "Sozialkundeunterricht wieder ab der achten Klasse beginnen lassen",
+          "ursachen_ids": [2204],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Legt den Beginn des Sozialkundeunterrichts fest; ob das mehr oder weniger politische Bildung bedeutet, hängt vom bisherigen Stand ab. Wirkung auf Einstellungen kaum untersucht.",
+          "zitat": "Wir werden den Fokus wieder klarer auf Mathematik, Naturwissenschaften und praxisorientierten Unterricht legen. Der Sozialkundeunterricht wird wieder mit der achten Klasse beginnen.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=25",
+          "evidenz": "offen",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2201, 2204, 2205, 2206],
+      "massnahmen": [
+        {
+          "id": 9176,
+          "beschreibung": "Die Landeszentrale für politische Bildung soll in ihrer jetzigen Form abgeschafft und durch ein anderes Landesinstitut ersetzt werden.",
+          "ursachen_ids": [2204],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ersetzt eine bestehende Einrichtung politischer Bildung durch ein neues Institut; ob das Ideologien besser entgegenwirkt, ist nicht belegt, der Umbau kostet Zeit.",
+          "zitat": "Aus diesem Grund werden wir die Landeszentrale für politische Bildung in der aktuellen Form abschaffen und als Alternative ein Landesinstitut für staatspolitische Bildung und kulturelle Identität aufbauen.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=61",
+          "evidenz": "offen",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9177,
+          "instrument": 9002,
+          "beschreibung": "Eine neue Praxis der Toleranz gegenüber Demonstrationen und nonkonformen Meinungsäußerungen soll etabliert werden.",
+          "ursachen_ids": [2206],
+          "zitat": "Wir werden deshalb als Landesregierung eine neue Praxis der Toleranz gegenüber Demonstrationen und nonkonformen Meinungsäußerungen etablieren.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=133",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9178,
+          "instrument": 9004,
+          "beschreibung": "Das Netzwerkdurchsetzungsgesetz soll zurückgenommen und europäische Digitalgesetze überprüft werden.",
+          "ursachen_ids": [2205],
+          "zitat": "Wir setzen uns für die Rückabwicklung des NetzDG und für eine Überprüfung der Europäischen Digitalgesetze (Digital Services Act) ein.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=222",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "durchsucht_fuer": [2201, 2202, 2203, 2204, 2205, 2206],
+      "massnahmen": [
+        {
+          "id": 9179,
+          "instrument": 9009,
+          "beschreibung": "KI-Medieninhalte kennzeichnen und Plattformen für Falschinformationen haften lassen",
+          "ursachen_ids": [2202],
+          "zitat": "Durch Künstliche Intelligenz erzeugte Medieninhalte müssen gekennzeichnet werden, Plattformen haften bei Falschinformationen und Rechtsverstößen durch solche Inhalte.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=55",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9180,
+          "instrument": 9007,
+          "beschreibung": "Förderung der Medien- und Datenschutzkompetenz von Kindern und Jugendlichen",
+          "ursachen_ids": [2202],
+          "zitat": "Die Medien- und Datenschutzkompetenz von Kindern und Jugendlichen muss möglichst früh gefördert werden.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=39",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9181,
+          "instrument": 9011,
+          "beschreibung": "Volksinitiativen, Volksbegehren und Volksentscheide auf Bundesebene einführen",
+          "ursachen_ids": [2203],
+          "zitat": "Wir wollen Volksinitiativen, Volksbegehren und Volksentscheide, Bürger*inneninitiativen, Bürger*innenbegehren und Bürger*innenentscheide auf Bundesebene einführen.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=48",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9182,
+          "instrument": 9012,
+          "beschreibung": "Pflicht, Interessenvertretungen und Sachverständige bei Gesetzentwürfen der Regierung offenzulegen",
+          "ursachen_ids": [2203],
+          "zitat": "Den Gesetzesvorlagen der Bundesregierung muss eine Auflistung der Interessenvertreter*innen sowie der Sachverständigen beigefügt werden, deren Stellungnahmen bei der Erstellung und Erarbeitung berücksichtigt wurden oder die sonst mitgewirkt haben (legislative Fußspur).",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=49",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9183,
+          "instrument": 9012,
+          "beschreibung": "Unternehmensspenden an Parteien verbieten und Spenden von Privatpersonen begrenzen",
+          "ursachen_ids": [2203],
+          "zitat": "Unternehmensspenden an Parteien sowie das steuerlich absetzbare Parteiensponsoring (etwa Unternehmensstände auf Parteitagen) wollen wir verbieten. Spenden von Privatpersonen sind auf 25.000 Euro im Jahr zu begrenzen.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=49",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9184,
+          "instrument": 9012,
+          "beschreibung": "Dreijährige Karenzzeit für Regierungsmitglieder vor einem Wechsel in befasste Unternehmen",
+          "ursachen_ids": [2203],
+          "zitat": "Bundesminister*innen und parlamentarische Staatssekretär*innen müssen nach ihrem Ausscheiden aus dem Amt mindestens drei Jahre bzw. für die Dauer des zeitlichen Anspruchs auf Übergangsgeld warten, bevor sie in Unternehmen wechseln, mit deren wirtschaftlichen Interessen sie zuvor politisch befasst waren.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=50",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9185,
+          "beschreibung": "Aktives und passives Wahlrecht auf allen Ebenen für langfristig in Deutschland lebende Menschen",
+          "ursachen_ids": [2203],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Mehr politische Teilhabe kann Gefühl der Benachteiligung mindern. Wahlrecht für Nicht-Deutsche jenseits der EU-Kommunalwahl erfordert laut Verfassungsrechtsprechung eine Grundgesetzänderung.",
+          "zitat": "Wir wollen das aktive und passive Wahlrecht auf allen Ebenen für alle langfristig in Deutschland lebenden Menschen.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=53",
+          "evidenz": "offen",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9186,
+          "instrument": 9021,
+          "beschreibung": "Politische Bildung, Demokratie und Partizipation früh in Bildungseinrichtungen verankern",
+          "ursachen_ids": [2204],
+          "zitat": "Politische Bildung, Mitbestimmungsrechte, Demokratie und Partizipation müssen früh in den Bildungsinstitutionen und Bildungsinhalten verankert werden.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=39",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9187,
+          "instrument": 9020,
+          "beschreibung": "Dauerhafte Bundesförderung von Gedenkstätten als Bestandteil politischer Bildungsarbeit",
+          "ursachen_ids": [2204],
+          "zitat": "Gedenkstätten und Gedenkorte sind wichtig für das kollektive Erinnern und für die Aufarbeitung der Nazidiktatur. Wir fordern vom Bund eine stärkere und dauerhafte finanzielle Unterstützung dieser Einrichtungen als wichtiger Bestandteil von politischer Bildungsarbeit.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=51",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9188,
+          "instrument": 9010,
+          "beschreibung": "Bürgerräte mit zufällig ausgelosten Menschen unterstützen, stärken und fördern",
+          "ursachen_ids": [2205],
+          "zitat": "Das von der Zivilgesellschaft entwickelte Instrument der Bürger*innenräte, wonach zufällig ausgeloste Menschen aus der Mitte der Gesellschaft Fragen aufwerfen und Lösungsvorschläge für verschiedene Probleme entwickeln, wollen wir unterstützen, stärken und fördern.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=48",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9189,
+          "beschreibung": "Vermittlung von Werten wie Respekt und Fairness im Sport fördern",
+          "ursachen_ids": [2206],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Werte wie Respekt und Fairness im Sport können Umgangsformen prägen. Unbestimmt, Bezug zu politischen Auseinandersetzungen gering; Sportförderung liegt weitgehend bei Ländern und Verbänden.",
+          "zitat": "Die Kommerzialisierung des Sports muss zurückgedrängt und die Vermittlung von Werten wie Respekt und Fairness gefördert werden.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=56",
+          "evidenz": "offen",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9190,
+          "beschreibung": "Stärkere Kontrolle von Medienfusionen zur Erhaltung der Meinungsvielfalt",
+          "ursachen_ids": [2206],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Medienvielfalt und gemeinnütziger Journalismus können Lokalberichterstattung erhalten, deren Wegfall Polarisierung fördert. Fusionskontrolle wirkt aber nur indirekt.",
+          "zitat": "Um Meinungsvielfalt zu erhalten, müssen Fusionen bei Medien stärker kontrolliert werden. Non-Profit-Journalismus muss als gemeinnützig anerkannt werden.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=55",
+          "evidenz": "belegt",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2201, 2204, 2205, 2206],
+      "massnahmen": [
+        {
+          "id": 9191,
+          "instrument": 8984,
+          "beschreibung": "Zielgruppenspezifische Aussteiger*innenprogramme und Maßnahmen ausbauen, die Risikofaktoren wie Gewalterfahrungen und fehlende Integration abmildern.",
+          "ursachen_ids": [2201],
+          "zitat": "Wir werden zielgruppenspezifische Aussteiger*innenprogramme und Maßnahmen ausbauen, die begünstigende Faktoren wie eigene Gewalterfahrungen, erschwerte Bildungszugänge sowie fehlende berufliche und soziale Integration abmildern.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=180",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9192,
+          "instrument": 8984,
+          "beschreibung": "Beratung zur Distanzierung von extrem rechten Szenen und sozialräumliche Programme mit Alternativen zu gewaltorientierten Gruppen ausbauen.",
+          "ursachen_ids": [2201],
+          "zitat": "Dazu gehören Beratungsangebote zur Distanzierung von extrem rechten Szenen, digital orientierte Präventionsformate gegen Propaganda sowie sozialräumliche Programme, die Jugendlichen Alternativen zu gewaltorientierten Gruppenidentitäten eröffnen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=326",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9193,
+          "instrument": 8984,
+          "beschreibung": "Landesprogramm zur Radikalisierungsprävention und Deradikalisierung stärken.",
+          "ursachen_ids": [2201],
+          "zitat": "Um dem wirksam und frühzeitig vorzubeugen, brauchen wir eine Stärkung des Landesprogramms zur Radikalisierungsprävention und Deradikalisierung.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=288",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9194,
+          "instrument": 8986,
+          "beschreibung": "Ressortübergreifende Landesstrategie gegen extrem rechte Strukturen und Aktivitäten entwickeln und evaluieren.",
+          "ursachen_ids": [2201],
+          "zitat": "Wir werden eine ressortübergreifende Landesstrategie entwickeln, die der systematischen Bekämpfung von extrem rechten Strukturen und Aktivitäten gewidmet ist und regelmäßig evaluiert wird.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=326",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9195,
+          "instrument": 8985,
+          "beschreibung": "Stärkung der bezirklichen Straßensozialarbeit gegen die Ansprache Jugendlicher durch extrem rechte Gruppen.",
+          "ursachen_ids": [2201],
+          "zitat": "Hier brauchen wir eine Stärkung der bezirklichen Straßensozialarbeit",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=180",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9196,
+          "instrument": 8990,
+          "beschreibung": "Politische Bildung als Schulfach stärken und an Grundschulen und beruflichen Schulen etablieren.",
+          "ursachen_ids": [2204],
+          "zitat": "Wir wollen das bestehende Schulfach stärken und auch an Grundschulen (ab Jahrgangsstufe 4) sowie an beruflichen Schulen etablieren.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=165",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9197,
+          "instrument": 8991,
+          "beschreibung": "Außerschulische Bildungs- und Präventionsangebote, u. a. zu Antisemitismusprävention und Gewaltprävention, an Schulen absichern.",
+          "ursachen_ids": [2204],
+          "zitat": "Außerschulische Bildungs- und Empowermentangebote in den Bereichen Antidiskriminierung, antirassistische und inklusionssensible Bildung, Antisemitismusprävention, queere Bildung […] wollen wir absichern und verstetigen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=163",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9198,
+          "instrument": 8985,
+          "beschreibung": "Schulen bei der Auseinandersetzung mit extrem rechten Vorkommnissen unterstützen: Präventions- und Empowermentangebote, Fortbildungen, Leitlinien.",
+          "ursachen_ids": [2204],
+          "zitat": "Wir wollen Schulen dabei unterstützen, sich diesen zu stellen: durch auskömmlich finanzierte Präventions- und Empowermentangebote für Schüler*innen, durch Fortbildungen für Pädagog*innen, durch Leitlinien zum Umgang mit extremen Rechten an Schulen",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=164",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9199,
+          "instrument": 8995,
+          "beschreibung": "Verpflichtende Aus- und Weiterbildung zum Umgang mit extrem rechten Ideologien für Beschäftigte in Bildung, Sozialem, öffentlichem Dienst und Sicherheit.",
+          "ursachen_ids": [2204],
+          "zitat": "Wir wollen, dass insbesondere Mitarbeitende in der Bildung, im sozialen Bereich, im öffentlichen Dienst sowie Sicherheitspersonal, Personal- und Betriebsräte verpflichtend zu den Themen Diskriminierung, Rassismus sowie zum Umgang mit extrem rechten Ideologien aus- und weitergebildet werden.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=327",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9200,
+          "instrument": 8991,
+          "beschreibung": "Antislawische Feindbilder konsequent thematisieren und ihre Geschichte systematisch aufarbeiten.",
+          "ursachen_ids": [2204],
+          "zitat": "Wir werden antislawischen Rassismus konsequent thematisieren und ihm entschieden entgegentreten. Antislawische Feindbilder haben eine lange historische Tradition, diese Kontinuitäten müssen systematisch aufgearbeitet werden.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=273",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9201,
+          "instrument": 8986,
+          "beschreibung": "Ressortübergreifende Strategie gegen antimuslimischen Rassismus entwickeln und umsetzen.",
+          "ursachen_ids": [2204],
+          "zitat": "Wir werden eine ressortübergreifende Strategie zur Bekämpfung von antimuslimischem Rassismus entwickeln und umsetzen, die auch für den digitalen Raum gilt.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=272",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9202,
+          "instrument": 8995,
+          "beschreibung": "Politische Bildung in der Ausbildung und Weiterbildung von Beschäftigten im öffentlichen Dienst stärken.",
+          "ursachen_ids": [2204],
+          "zitat": "Vielmehr braucht es eine deutliche Stärkung der politischen Bildung in der Ausbildung der Anwärter*innen und Beschäftigten.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=296",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9203,
+          "beschreibung": "Öffentliche Kampagnen gegen extrem rechte Ideologien und für Demokratie und Grundrechte.",
+          "ursachen_ids": [2204],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Aufklärungskampagnen erreichen viele Menschen und setzen an Ideologien an. Dagegen: Wirkung breiter Kampagnen auf Einstellungen meist gering und kaum untersucht.",
+          "zitat": "Zusätzlich braucht es breit angelegte öffentliche Kampagnen, die mittels Werbeflächen, Social Media und Multiplikator*innen über extrem rechte Ideologien aufklären und das Bewusstsein für Demokratie, Grundrechte und gesellschaftlichen Zusammenhalt stärken.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=327",
+          "evidenz": "offen",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9204,
+          "instrument": 9000,
+          "beschreibung": "Räume für offenen Dialog und Safer Spaces für Menschen mit Migrationsgeschichte und Betroffene von Diskriminierung schaffen.",
+          "ursachen_ids": [2205],
+          "zitat": "Wir wollen die politische, gesellschaftliche und kulturelle Teilhabe von Menschen mit Migrationsgeschichte und von Betroffenen von Diskriminierung stärken und schaffen Räume für offenen Dialog und Safer Spaces.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=269",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9205,
+          "instrument": 8997,
+          "beschreibung": "Dauerhaften gelosten Bürger*innendialog einrichten und per Gesetz verankern.",
+          "ursachen_ids": [2205],
+          "zitat": "Um die Partizipation zu fördern, schlagen wir vor, dass das Land Berlin einen dauerhaften gelosten Bürger*innendialog einrichtet.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=300",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9206,
+          "instrument": 9002,
+          "beschreibung": "Meinungsäußerungen öffentlich Beschäftigter sollen keine dienstrechtlichen Maßregelungen begründen, solange sie nicht strafbar sind.",
+          "ursachen_ids": [2205],
+          "zitat": "Meinungsäußerungen von öffentlich Beschäftigten dürfen, solange sie nicht strafbar sind, keine arbeits- oder dienstrechtlichen Maßregelungen begründen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=296",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2201, 2204, 2205, 2206],
+      "massnahmen": [
+        {
+          "id": 9207,
+          "instrument": 8984,
+          "beschreibung": "Fachstellen wie Exit und LOBBI stärken, die Ausstiegs- und Beratungsarbeit leisten",
+          "ursachen_ids": [2201],
+          "zitat": "Zivilgesellschaftliche Bündnisse, Netzwerke und Fachstellen der Demokratieförderung stärken (z. B. LpB, Regionalzentren, LOBBI, Bidaya, Exit).",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=7",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9208,
+          "instrument": 8985,
+          "beschreibung": "Präventions- und Schutzkonzepte gegen extremistische Einflussnahme und demokratiefeindliche Netzwerke weiterentwickeln",
+          "ursachen_ids": [2201, 2204],
+          "zitat": "Präventions- und Schutzkonzepte gegen extremistische Einflussnahme, demokratiefeindliche Netzwerke und menschenfeindliche Ideologien weiterentwickeln.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=7",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9209,
+          "instrument": 8985,
+          "beschreibung": "Präventionsprogramme gegen Radikalisierung sowie Bildung und Aufklärung in Schulen, Vereinen und Einrichtungen stärken",
+          "ursachen_ids": [2204, 2201],
+          "zitat": "Präventive Programme gegen Radikalisierung sowie Bildung und Aufklärung in Schulen, Vereinen und öffentlichen Einrichtungen stärken.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=7",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9210,
+          "instrument": 8994,
+          "beschreibung": "Klassenrat als verpflichtendes basisdemokratisches Gesprächsformat in Schulen",
+          "ursachen_ids": [2205],
+          "zitat": "Klassenleiterstunden verpflichtend machen und basisdemokratisch gemeinsam mit allen Schüler:innen in Form eines Klassenrates gestalten.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=5",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9211,
+          "instrument": 8997,
+          "beschreibung": "Beteiligungsformate wie Bürger:innenräte stärker fördern",
+          "ursachen_ids": [2205],
+          "zitat": "Beteiligungsformate zur Stärkung der demokratischen Willensbildung wie Kinder- und Jugendparlamente oder Bürger:innenräte stärker fördern.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=7",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2201, 2204, 2205, 2206],
+      "massnahmen": [
+        {
+          "id": 9212,
+          "instrument": 8984,
+          "beschreibung": "Professionelle Ausstiegsberatung für Radikalisierte statt bezahlter Spitzel",
+          "ursachen_ids": [2201],
+          "zitat": "Professionelle Ausstiegsberatung für Menschen, die sich radikalisiert haben, ersetzt die fragwürdige Praxis bezahlter Spitzel.",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=130",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9213,
+          "instrument": 8985,
+          "beschreibung": "Präventionsprogramme und Öffentlichkeitsarbeit über rechtsextreme Gefährdungen, Warnsignale und Unterstützungsangebote",
+          "ursachen_ids": [2201],
+          "zitat": "Wir wollen: […] Öffentlichkeitsarbeit und Präventionsprogramme, die über rechtsextreme Gefährdungen, Warnsignale und Unterstützungsangebote informieren.",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=138",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9214,
+          "instrument": 8990,
+          "beschreibung": "Aufklärungsarbeit an Schulen, in der Erwachsenenbildung und in Kommunen über verfassungsfeindliche Tendenzen und die Werte der Demokratie",
+          "ursachen_ids": [2204],
+          "zitat": "Damit schützen wir die Verfassung durch eine Bildungsoffensive statt Bespitzelung: Wir wollen aktive Aufklärungsarbeit an Schulen, in der Erwachsenenbildung und in Kommunen über verfassungsfeindliche Tendenzen und die Werte unserer Demokratie.",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=130",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9215,
+          "instrument": 8998,
+          "beschreibung": "Beteiligung auf Augenhöhe mit regionalen Foren, Bürgerräten und Werkstattgesprächen unterstützen und finanziell fördern",
+          "ursachen_ids": [2205],
+          "zitat": "Dafür wollen wir: […] Beteiligung auf Augenhöhe – Regionale Foren, Bürgerräte auf allen Ebenen, Werkstattgespräche in betroffenen Gemeinden, Bürgerbudgets, Bürgerhaushalte, und partizipative Projekte erhalten Unterstützung und finanzielle Förderung.",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=77",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9216,
+          "instrument": 8999,
+          "beschreibung": "Direkte Demokratie außerhalb von Wahlen deutlich erleichtern und erweitern",
+          "ursachen_ids": [2205],
+          "zitat": "Die Linke will: die Anwendung aller Formen direkter Demokratie außerhalb von Wahlen deutlich erleichtern und erweitern,",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=13",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9217,
+          "instrument": 9003,
+          "beschreibung": "Journalismus-Stiftung mit Startkapital zur Förderung unabhängigen Lokaljournalismus",
+          "ursachen_ids": [2206],
+          "zitat": "Mit einer Journalismus-Stiftung Sachsen-Anhalt und 10 Millionen Euro Startkapital fördern wir unabhängigen Lokaljournalismus.",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=73",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9218,
+          "instrument": 8985,
+          "beschreibung": "Vereine und Verbände stärken, damit antidemokratische Gruppen keinen Platz finden",
+          "ursachen_ids": [2201],
+          "zitat": "Vereine und Verbände werden gestärkt, damit antidemokratische Gruppen keinen Platz finden, weil die Zivilgesellschaft stark und präsent ist.",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=15",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "durchsucht_fuer": [2201, 2202, 2203, 2204, 2205, 2206],
+      "massnahmen": [
+        {
+          "id": 9219,
+          "beschreibung": "Social-Media-Gesetz für Kinder nach australischem Vorbild",
+          "ursachen_ids": [2202],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Eine Altersgrenze verringert den Kontakt Minderjähriger mit extremistischen Inhalten. Wirkung und Durchsetzbarkeit kaum untersucht; Plattformrecht ist weitgehend EU-rechtlich geregelt.",
+          "zitat": "Wir fordern ein Social-Media-Gesetz nach australischem Vorbild, damit die Kinder nicht in einem virtuellen Paralleluniversum verschwinden […]",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=24",
+          "evidenz": "offen",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9220,
+          "instrument": 9011,
+          "beschreibung": "Volksbegehren für verbindliche Volksabstimmungen über Gesetze auf Bundesebene",
+          "ursachen_ids": [2203],
+          "zitat": "Per Volksbegehren soll es auch auf Bundesebene möglich werden, eine verbindliche Volksabstimmung über Gesetzesvorschläge bzw. Gesetzesrücknahmen (Heizungsgesetz) herbeizuführen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=44",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9221,
+          "beschreibung": "Stipendien und Personalentwicklung für Talente aus Ostdeutschland",
+          "ursachen_ids": [2203],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Mehr Ostdeutsche in Führungspositionen kann das Gefühl mindern, unfair behandelt zu werden. Wirkung auf Vertrauen und Einstellungen nicht untersucht.",
+          "zitat": "Wir wollen zudem Talente aus Ostdeutschland mit besseren Zugängen zu Stipendien fördern und mit einem Personalentwicklungskonzept, mit dem das Erreichen von Führungspositionen unterstützt wird.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=21",
+          "evidenz": "offen",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9222,
+          "instrument": 9013,
+          "beschreibung": "Unabhängige Staatsanwaltschaft ohne Weisungsgebundenheit",
+          "ursachen_ids": [2203],
+          "zitat": "Wir fordern eine unabhängige Staatsanwaltschaft ohne Weisungsgebundenheit.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=40",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9223,
+          "instrument": 9015,
+          "beschreibung": "Kontrolle des öffentlich-rechtlichen Rundfunks und Besetzung seiner Gremien parteifern organisieren",
+          "ursachen_ids": [2203, 2205],
+          "zitat": "Wir fordern, dass die Kontrolle über den ÖRR und die Besetzung ihrer Gremien parteifern organisiert wird und der Einfluss der Gebührenzahler gestärkt wird.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=42",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9224,
+          "instrument": 9012,
+          "beschreibung": "Karenzzeit von mindestens 5 Jahren für Wechsel ausscheidender Politiker in betroffene Branchen",
+          "ursachen_ids": [2203],
+          "zitat": "Der Wechsel von ausscheidenden Politikern in Wirtschaftsbranchen, mit denen sie vorher zu tun hatten, darf allenfalls mit einer Karenzzeit von mindestens 5 Jahren zulässig sein.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=45",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9225,
+          "beschreibung": "Friedenspädagogische Bildung statt Bundeswehrwerbung in Schulen",
+          "ursachen_ids": [2204],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Friedenspädagogik kann Gewaltrechtfertigung entgegenwirken; Wirkung kaum untersucht. Schulinhalte regeln die Länder.",
+          "zitat": "Wir wollen keine Militarisierung von Bildungseinrichtungen und fordern statt Werbung der Bundeswehr in Schulen mehr friedenspädagogische Bildung.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=25",
+          "evidenz": "offen",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9226,
+          "instrument": 9018,
+          "beschreibung": "Verbot der Zusammenarbeit von Staat und Medien zur Beeinflussung der Meinungsbildung",
+          "ursachen_ids": [2205],
+          "zitat": "Wir fordern die Beendigung aller Formen der Zusammenarbeit von Staat und Medien zur Beeinflussung der freien Meinungsbildung.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=39",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9227,
+          "instrument": 9018,
+          "beschreibung": "Abschaffung staatlich finanzierter Meldestellen für Meinungsäußerungen",
+          "ursachen_ids": [2205],
+          "zitat": "Wir fordern die Abschaffung von Meldestellen und deren Finanzierung mit Steuergeldern.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=39",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9228,
+          "beschreibung": "Einhaltung des Neutralitäts- und Sachlichkeitsgebots für Staatsorgane",
+          "ursachen_ids": [2205, 2206],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Sachliche, nicht herabsetzende Kommunikation von Staatsorganen kann Bevormundungsgefühle mindern. Das Gebot gilt bereits verfassungsrechtlich; zusätzliche Wirkung unklar.",
+          "zitat": "Wir fordern die Einhaltung des verfassungsgemäßen Neutralitäts- und Sachlichkeitsgebot. Eine Diffamierung Andersmeinender schadet der Debatte ebenso wie eine Moralisierung, die von notwendigen inhaltlichen Auseinandersetzungen ablenkt.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=39",
+          "evidenz": "offen",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2201, 2204, 2205, 2206],
+      "massnahmen": [
+        {
+          "id": 9229,
+          "instrument": 8985,
+          "beschreibung": "Entradikalisierungsprogramme, mehr und bessere Jugendarbeit sowie Deeskalationsmaßnahmen",
+          "ursachen_ids": [2201],
+          "zitat": "Neben der personellen Aufstockung und der Verbesserung der Ausbildung, Ausstattung und der Arbeitsbedingungen von Einsatzkräften setzen wir auf Deeskalationsmaßnahmen, auf mehr und bessere Jugendarbeit und auf Entradikalisierungsprogramme.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=38",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9230,
+          "instrument": 8989,
+          "beschreibung": "Abschaffung von Meldeportalen für Meinungsäußerungen, die nicht strafbar sind",
+          "ursachen_ids": [2205],
+          "zitat": "Wir sind für die Abschaffung von Meldeportalen für strafrechtlich nicht relevante Meinungsäußerungen (Berliner Register etc.).",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=31",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9231,
+          "beschreibung": "Verbindlichere Programmbeschwerden und ein verbindliches, regelmäßiges Feedback-Format für den öffentlich-rechtlichen Rundfunk",
+          "ursachen_ids": [2205],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Verbindlichere Beschwerde- und Rückmeldewege können Misstrauen und Bevormundungsgefühle gegenüber dem Rundfunk mindern; Wirkung nicht untersucht, Staatsvertrag mit Partnerland nötig.",
+          "zitat": "Programmbeschwerden müssen verbindlicher gestaltet werden. […] Wir brauchen ein verbindliches, regelmäßiges und breitangelegtes Feedback-Format im rbb.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=31",
+          "evidenz": "offen",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9232,
+          "instrument": 8999,
+          "beschreibung": "Mehr direkte Demokratie: regelmäßige Volksbefragungen und mehr Mitbestimmung der Bevölkerung",
+          "ursachen_ids": [2205],
+          "zitat": "Alle Berliner sollen in unserer Stadt mitreden und mitentscheiden. Wir wollen die demokratische Mitbestimmung ausweiten und vereinfachen.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=32",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9233,
+          "instrument": 8998,
+          "beschreibung": "Gesetzliche Antwortpflicht politisch verantwortlicher Dezernenten gegenüber Bürgeranliegen",
+          "ursachen_ids": [2205],
+          "zitat": "Wir wollen eine Antwortpflicht von politisch verantwortlichen Dezernenten gegenüber den Bürgern rechtlich im Bezirksverwaltungsgesetz festlegen.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=63",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9234,
+          "instrument": 9005,
+          "beschreibung": "Bekenntnisorientierten Religions- oder Weltanschauungsunterricht nur unter strenger staatlicher Aufsicht mit geprüftem Personal",
+          "ursachen_ids": [2204],
+          "zitat": "Jeglicher bekenntnisorientierter Religions- oder Weltanschauungsunterricht – gleich welcher Gemeinschaft – darf daher nur unter strenger staatlicher Aufsicht stattfinden und muss von staatlich qualifiziertem und geprüftem Personal durchgeführt werden.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=36",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9235,
+          "instrument": 8990,
+          "beschreibung": "Pflichtfach Ethik/Lebenskunde personell stärken und interkulturell sowie werteorientiert ausrichten",
+          "ursachen_ids": [2204],
+          "zitat": "Die zentrale Auseinandersetzung mit ethischen Fragen, Werten, Weltanschauungen und Religionen erfolgt im Pflichtfach Ethik/Lebenskunde. Dieses Fach ist personell deutlich zu stärken und interkulturell sowie werteorientiert zu profilieren.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=37",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9236,
+          "instrument": 9000,
+          "beschreibung": "Förderung von Begegnungen und Nachbarschaftsprojekten gegen rassistische und ausländerfeindliche Stimmungsmache",
+          "ursachen_ids": [2206],
+          "zitat": "Rassistischer und ausländerfeindlicher Stimmungsmache stellen wir uns mit aller Kraft entgegen. Deshalb wollen wir kulturelle Begegnungen und integrative Stadtteilarbeit in den Berliner Kommunen fördern.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=37",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9237,
+          "beschreibung": "Öffentlich-rechtlicher Rundfunk soll Völkerverständigung fördern und keine Feindbilder aufbauen; Verankerung in der Präambel des Staatsvertrags",
+          "ursachen_ids": [2204],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ein Programmauftrag gegen Feindbilder setzt an Abwertung anderer Gruppen an. Dagegen: Präambel wirkt kaum unmittelbar; Staatsvertrag braucht Zustimmung des Partnerlandes.",
+          "zitat": "Der ÖRR soll die Völkerverständigung fördern und nicht Feindbilder aufbauen. Das gehört in die Präambel des nächsten rbb-Staatsvertrags.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=31",
+          "evidenz": "offen",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9238,
+          "instrument": 8990,
+          "beschreibung": "Einführung von Friedensbildung als verbindlichem Lehrbestandteil an Berliner Schulen",
+          "ursachen_ids": [2204],
+          "zitat": "Wir fordern die Einführung von Friedensbildung als verbindlichem Lehrbestandteil an Berliner Schulen.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=5",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2201, 2204, 2205, 2206],
+      "massnahmen": [
+        {
+          "id": 9239,
+          "instrument": 8984,
+          "beschreibung": "Will bessere Zusammenarbeit mit Präventions- und Aussteigerprogrammen, wo sinnvoll.",
+          "ursachen_ids": [2201],
+          "zitat": "Fokus auf reale Gefahrenlagen: konsequente Ausrichtung auf gewaltbereiten Extremismus und verfassungsfeindliche Bestrebungen; bessere Zusammenarbeit mit Präventions- und Aussteigerprogrammen, wo dies sinnvoll ist.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=70",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9240,
+          "instrument": 8990,
+          "beschreibung": "Will Friedens- und Demokratiebildung in Schulen, Hochschulen, Jugendbildung und Weiterbildung stärken.",
+          "ursachen_ids": [2204],
+          "zitat": "Stärkung von Friedens- und Demokratiebildung in Schulen, Hochschulen, der außerschulischen Jugendbildung und in Weiterbildungsangeboten.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=9",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9241,
+          "instrument": 8990,
+          "beschreibung": "Will Grundwissen über Rechte und Rechtsstaat in der Schule vermitteln und den Austausch mit Justiz fördern.",
+          "ursachen_ids": [2204],
+          "zitat": "Prävention und Rechtsbildung stärken: Grundwissen über Rechte, Pflichten und Rechtsstaat bereits in der Schule vermitteln; Austauschformate mit Justiz, Anwaltschaft und Demokratiebildung fördern (z. B. Besuche von Gerichtsverhandlungen im Rahmen schulischer Bildung).",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=69",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9242,
+          "instrument": 9001,
+          "beschreibung": "Will verlässlichen Schutz der Wissenschaftsfreiheit: keine Sanktionen gegen Lehrende wegen legitimer Positionen.",
+          "ursachen_ids": [2205],
+          "zitat": "Verlässlicher Schutz der Wissenschaftsfreiheit: Keine institutionellen oder informellen Sanktionen gegen Lehrende wegen legitimer wissenschaftlicher oder politischer Positionen.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=53",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9243,
+          "instrument": 9000,
+          "beschreibung": "Will politische Bildung und eine offene Debattenkultur stärken, die Meinungsvielfalt und Respekt fördert.",
+          "ursachen_ids": [2205, 2206],
+          "zitat": "Stärkung politischer Bildung und einer offenen Debattenkultur, die Meinungsvielfalt, Respekt und demokratische Kompetenzen fördert.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=49",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9244,
+          "instrument": 8997,
+          "beschreibung": "Will Bürgerbeteiligung ausbauen, etwa durch Bürgerräte und Bürgerabstimmungen bei kommunalen Entscheidungen.",
+          "ursachen_ids": [2205],
+          "zitat": "Ausbau von Bürgerbeteiligung, etwa durch Bürgerräte und Bürgerabstimmungen bei wichtigen kommunalen Entscheidungen.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=77",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9245,
+          "instrument": 8992,
+          "beschreibung": "Will Gewaltprävention, respektvolle Beziehungen und Gleichberechtigung in allen Schulformen vermitteln.",
+          "ursachen_ids": [2206],
+          "zitat": "Gewaltprävention, respektvolle Beziehungen und Gleichberechtigung müssen kontinuierlich und in jeder Schulform vermittelt werden.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=46",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2201, 2204, 2205, 2206],
+      "massnahmen": [
+        {
+          "id": 9246,
+          "instrument": 8985,
+          "beschreibung": "Projekte der Gewalt- und Extremismusprävention (u. a. in Halle) vom Land weiter fördern",
+          "ursachen_ids": [2201],
+          "zitat": "Projekte der Gewalt- und Extremismusprävention wie die in der Trägerschaft der Halleschen Jugendwerkstatt leisten einen wichtigen Beitrag und sollen weiter vom Land gefördert werden.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=65",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9247,
+          "instrument": 9005,
+          "beschreibung": "Gute Zusammenarbeit mit Moscheegemeinden, um islamistische Unterwanderung zu verhindern",
+          "ursachen_ids": [2201],
+          "zitat": "Notwendig ist eine gute Zusammenarbeit mit den Moschee-Gemeinden, um islamistische Unterwanderungen zu verhindern.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=65",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9248,
+          "instrument": 8987,
+          "beschreibung": "Massive öffentliche Investitionen unter anderem in Radikalisierungsprävention und Jugendarbeit",
+          "ursachen_ids": [2201],
+          "zitat": "Langfristig führt kein Weg an massiven Investitionen vorbei: in frühkindliche Bildung, Schulen, Schulsozialarbeit, Jugendarbeit, Sucht- und Radikalisierungsprävention sowie in die Betreuung von Geflüchteten.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=48",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9249,
+          "instrument": 8986,
+          "beschreibung": "Opferberatung und Präventionsarbeit auf alle Formen gewaltbereiten Extremismus gleichermaßen ausrichten",
+          "ursachen_ids": [2201],
+          "zitat": "Opferberatung und Präventionsarbeit müssen alle Formen gewaltbereiten Extremismus gleichermaßen einbeziehen – unabhängig davon, ob sie rechts, links oder religiös motiviert sind.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=14",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9250,
+          "instrument": 9006,
+          "beschreibung": "Verpflichtende Sprach- und Politikkurse für nicht Deutsch sprechende Zuwanderer",
+          "ursachen_ids": [2204],
+          "zitat": "Unbedingt notwendig sind deshalb verpflichtende Sprach- und Politikkurse für alle nicht Deutsch sprechenden Zuwanderer.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=64",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9251,
+          "instrument": 8990,
+          "beschreibung": "Ausbau von Friedensbildung, Friedensinitiativen und Städtepartnerschaften",
+          "ursachen_ids": [2204],
+          "zitat": "Ausbau von Friedensbildung, Friedensinitiativen und Städtepartnerschaften.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=10",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9252,
+          "instrument": 8989,
+          "beschreibung": "Projekte, die zu Ausgrenzung, Diffamierung oder Boykott unliebsamer Personen aufrufen, nicht mehr öffentlich fördern",
+          "ursachen_ids": [2205],
+          "zitat": "Projekte, die zur Ausgrenzung, Diffamierung oder zum Boykott unliebsamer Künstler, Wissenschaftler oder Journalisten aufrufen („Cancel Culture“), dürfen nicht länger mit öffentlichen Mitteln gefördert werden.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=15",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9253,
+          "instrument": 8989,
+          "beschreibung": "Öffentliche Förderung gerecht und nach objektiven Kriterien vergeben; zivilgesellschaftliche Akteure gleich behandeln",
+          "ursachen_ids": [2205],
+          "zitat": "Öffentliche Fördermittel müssen gerecht, ausgewogen und ohne politische Einseitigkeit vergeben werden. Unterschiedliche zivilgesellschaftliche Akteure sind gleich zu behandeln, Förderentscheidungen müssen an objektive und nachvollziehbare Kriterien gebunden sein.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=15",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9254,
+          "instrument": 8989,
+          "beschreibung": "Förderstrukturen wie „Demokratie leben!“ kritisch überprüfen, wenn sie politische Einseitigkeit verstärken",
+          "ursachen_ids": [2205],
+          "zitat": "Förderstrukturen wie „Demokratie leben! – Partnerschaften für Demokratie“ müssen kritisch überprüft werden, wenn sie nicht der offenen Zivilgesellschaft dienen, sondern politische Einseitigkeit verstärken.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=14",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9255,
+          "instrument": 8998,
+          "beschreibung": "Öffentliche Anhörungen, Beteiligungshaushalte und Bürgerdialoge sollen zur Regel werden",
+          "ursachen_ids": [2205],
+          "zitat": "Öffentliche Anhörungen zu Gesetzesvorhaben, Beteiligungshaushalte sowie Bürgerdialoge in Regionen mit strukturellen Problemen sollen zur Regel werden.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=11",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9256,
+          "instrument": 8997,
+          "beschreibung": "Regelmäßige, repräsentativ besetzte Bürgerräte auf Landes- und Kommunalebene einrichten",
+          "ursachen_ids": [2205],
+          "zitat": "Darüber hinaus setzen wir uns für regelmäßige Bürgerräte auf Landes- und Kommunalebene ein, die repräsentativ zusammengesetzt sind und Empfehlungen zu zentralen Zukunftsfragen erarbeiten.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=11",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9257,
+          "instrument": 8999,
+          "beschreibung": "Entscheidungen aus Volksentscheiden für Regierung und Parlament bindend machen",
+          "ursachen_ids": [2205],
+          "zitat": "Wir wollen, dass Entscheidungen aus Volksentscheiden für Regierung und Parlament bindend sind.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=11",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9258,
+          "instrument": 8994,
+          "beschreibung": "Beteiligung von Schülerinnen und Schülern an ihren Schulen stärken",
+          "ursachen_ids": [2205],
+          "zitat": "Deshalb wollen wir die Beteiligung von Schülern an ihren Schulen stärken.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=73",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9259,
+          "instrument": 9001,
+          "beschreibung": "Klare Leitlinien und transparente Beschwerdewege an Hochschulen für eine pluralistische Wissenschaftskultur",
+          "ursachen_ids": [2205],
+          "zitat": "Klare Leitlinien und transparente Beschwerdewege sollen dazu beitragen, eine pluralistische Wissenschaftskultur zu sichern.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=55",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    }
   ]
 }

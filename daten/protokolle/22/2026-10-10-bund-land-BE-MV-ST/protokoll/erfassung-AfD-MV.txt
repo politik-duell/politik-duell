@@ -1,0 +1,112 @@
+{
+  "partei_id": 15,
+  "land": "MV",
+  "massnahmen": [
+    {
+      "beschreibung": "Staatliche Bürgerforen zur Beteiligung einstellen",
+      "ursachen_ids": [2205],
+      "ursachen_offen": [2206],
+      "buendel": "Dialog und Streitkultur fördern",
+      "zitat": "Staatlich inszenierte Bürgerforen, die nur den Anschein demokratischer Beteiligung erwecken, tatsächlich aber dazu dienen, Windkraftprojekte gegen den Willen der Bevölkerung durchzusetzen, werden wir umgehend einstellen.",
+      "seite": 83
+    },
+    {
+      "beschreibung": "Gendersprache in amtlicher Sprache und öffentlichen Bildungseinrichtungen per Verordnung untersagen",
+      "ursachen_ids": [],
+      "ursachen_offen": [2205],
+      "buendel": "Meinungsfreiheit und Bevormundung",
+      "zitat": "Wer Sprache ideologisch umbauen will, betreibt keine Gleichstellung, sondern kulturelle Bevormundung. Wir werden per Verordnung durchsetzen, dass im gesamten amtlichen Sprachgebrauch des Landes Mecklenburg-Vorpommern sowie in allen öffentlichen Bildungseinrichtungen die Regeln des Rates für deutsche Rechtschreibung verbindlich gelten.",
+      "seite": 21
+    },
+    {
+      "beschreibung": "Quorum für Volksbegehren auf 5 % der Wahlberechtigten senken",
+      "ursachen_ids": [],
+      "ursachen_offen": [2205],
+      "zitat": "Wir wollen die direkte Demokratie in Mecklenburg-Vorpommern durch verringerte Quoren stärken. Sobald 5 % der Wahlberechtigten in der betroffenen Region (Land, Landkreis oder Kommune) für ein Volksbegehren unterschrieben haben, kommt es zum Volksentscheid.",
+      "seite": 46
+    },
+    {
+      "beschreibung": "Landesförderung für Vorfeldorganisationen, asylpolitische Lobbygruppen und extremistische Strukturen beenden",
+      "ursachen_ids": [2201],
+      "buendel": "Rekrutierung und Netzwerke zurückdrängen",
+      "zitat": "Die Finanzierung von Vorfeldorganisationen politischer Parteien, asylpolitischen Lobbygruppen oder die Unterstützung extremistischer Strukturen durch Landesmittel wird unverzüglich beendet.",
+      "seite": 47
+    },
+    {
+      "beschreibung": "Islamverbände verpflichten, Meldestellen für radikale und extremistische Tendenzen vorzuhalten",
+      "ursachen_ids": [2201],
+      "ursachen_offen": [2204],
+      "zitat": "Wir werden diese Verbände in die Pflicht nehmen, eigene Meldestellen und andere von ihnen als geeignet angesehene Einrichtungen vorzuhalten, die radikale und extremistische Tendenzen sowie entsprechende Personen in ihrem Umfeld erfassen und melden.",
+      "seite": 53
+    },
+    {
+      "beschreibung": "Demokratieklausel: Landesförderung nur bei schriftlicher Verfassungstreue und politischer Neutralität",
+      "ursachen_ids": [2204],
+      "ursachen_offen": [2206],
+      "buendel": "Werte und Verfassungstreue betonen",
+      "zitat": "Steuergelder dürfen ausschließlich an Organisationen fließen, die sich strikt politisch neutral verhalten und zweifelsfrei auf dem Boden der freiheitlich-demokratischen Grundordnung stehen. Wir führen eine Demokratieklausel als verbindliche Voraussetzung für jede Landesförderung ein. Jeder Zuwendungsempfänger muss sich schriftlich zur Verfassungstreue und politischen Neutralität verpflichten.",
+      "seite": 47
+    },
+    {
+      "beschreibung": "Sozialkundeunterricht wieder ab der achten Klasse beginnen lassen",
+      "ursachen_ids": [2204],
+      "buendel": "Feindbilder und Gewaltrechtfertigung bildnerisch bearbeiten",
+      "zitat": "Wir werden den Fokus wieder klarer auf Mathematik, Naturwissenschaften und praxisorientierten Unterricht legen. Der Sozialkundeunterricht wird wieder mit der achten Klasse beginnen.",
+      "seite": 25
+    },
+    {
+      "beschreibung": "Keine Unterstützung für Aktivitäten, die unter Forschungsanschein Vorurteile gegen die Polizei schüren",
+      "ursachen_ids": [2204],
+      "zitat": "Wir unterstützen auch keine Aktivitäten, die unter dem Anschein wissenschaftlicher Forschung Gesinnungsschnüffelei betreiben und Vorurteile gegen die Polizei schüren.",
+      "seite": 38
+    },
+    {
+      "beschreibung": "Verfassungsschutz neu ausrichten, Abwehr politischer Militanz priorisieren",
+      "ursachen_ids": [],
+      "ursachen_offen": [2204],
+      "zitat": "Ziel ist eine verhältnismäßige Ausrichtung der Behörde auf neue Schwerpunkte. In der Arbeit der Landesbehörde sollen zukünftig die Bereiche Cybercrime, Spionageabwehr und Abwehr politischer Militanz priorisiert werden.",
+      "seite": 41
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 2205, "name": "Beteiligungsrechte (Volksbegehren, Volksentscheid)", "seite": 46 },
+    { "ursache": 2201, "name": "Meldestellen bei Verbänden vorschreiben", "seite": 53 },
+    { "ursache": 2204, "name": "Förderung streichen (Polizei-Vorurteile)", "seite": 38 },
+    { "ursache": 2204, "name": "Neuausrichtung des Verfassungsschutzes", "seite": 41 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "Bürgerforen", "ursache": 2205, "richtung": "Gesprächsformate einstellen" },
+    { "begriff": "Sozialkundeunterricht", "ursache": 2204, "richtung": "politische Bildung kürzen" },
+    { "begriff": "Demokratieklausel", "ursache": 2204, "richtung": "Förderbedingung Verfassungstreue" }
+  ]
+}
+
+--- Protokoll (Teilauftrag Thema 22 „Radikalisierung und Extremismus“) ---
+
+Gelesen: Inhaltsverzeichnis (S. 2–6); Kapitel Wirtschaftsland (Runder Tisch, S. 12–13), Bildungsland (S. 22–35), Sicherheitsland (S. 36–44), Freiheitsland (S. 44–47), Ordnungsland (S. 47–53), Zukunftsland (S. 53–57, S. 82–83, S. 89–90). Alle Fundstellen (S. 13, 21, 25, 29, 38, 40, 41, 45, 47, 48, 53, 54, 55, 56, 57, 83, 89, 90) gelesen.
+
+Nicht erfasst:
+- S. 13 Runder Tisch Wirtschaft (regelmäßige Runde mit Verbänden): gleichartig zu M1 (Hebel Dialogformat), nicht zusätzlich erfasst; kein Bezug zu Streit- und Gesprächskultur über die Wirtschaft hinaus.
+- S. 29 Beutelsbacher Konsens und Neutralität der Schulen („bekräftigen“, „Lehrer dürfen nicht … aufrufen“): Bekenntnis zu bestehenden Grundsätzen, keine neue Handlung.
+- S. 40 Respekt gegenüber Einsatzkräften, besserer Strafschutz: Gewalt gegen Menschen (R2).
+- S. 45 „Meinungsfreiheit schützt“, Freiheitsland-Präambel: Bekenntnis.
+- S. 46 Quorum Bürgerbegehren (kommunal): gleichartig zu M3 (Hebel Beteiligungsrechte), nicht zusätzlich erfasst.
+- S. 46 Förderstopp „linksradikale Netzwerke“: gleichartig zu M4 (Hebel Förderung), nicht zusätzlich erfasst.
+- S. 48, 53 Grundgesetz/Identität/Religionsfreiheit: Bekenntnisse ohne Maßnahme.
+- S. 54–57 Haushalt, Steuern, Bürokratieabbau, „Respekt gegenüber dem Steuerzahler“: kein Bezug zu 2201–2206. S. 57 kommunale Finanzierung statt „Bevormundung“ durch Zweckförderung: Finanzierungsform, kein Bezug zu politischen Gesprächen.
+- S. 83 „Respekt vor den Bürgern“, „wer Missstände hinweist … verdient Respekt“: Bekenntnisse (2206).
+- S. 89–90 Eigentum „Schutz und Respekt“, Prüfung „unter Einbeziehung der Bürgerbelange“ bei Windkraft/PV: Planungsprüfung ohne Gesprächs- oder Streitkulturbezug; Respektsbekenntnis.
+- S. 32–33 Sport „Autonomie des Sports“, „Vereine sind keine Erfüllungsgehilfen linker Ideologie“: Bekenntnis.
+
+Bündel ohne Maßnahme:
+- 2201 „Ausstieg und Distanzierung begleiten“: keine Fundstelle (Suche nach Ausstieg, Distanzierung, Prävention, Aussteiger nur bei Kernenergie und Verwaltung).
+- 2206 „Zusammenhalt und Respekt stärken“: nur Respektbekenntnisse (S. 40, 54, 55, 83, 89, 90), keine Zusage für Gesprächs- oder Streitkultur.
+- 2206 „Toleranz und Offenheit für Gegenpositionen“: S. 29 (Bekenntnis), S. 47 (Schlagwort „Toleranz“ in Kritik), keine Zusage.
+
+Richtungen ohne Maßnahme: 2201 Ausstieg/Distanzierung (keine Fundstelle).
+
+Bündel-Hinweise der Prüfung: „Dialog und Streitkultur fördern“, „Meinungsfreiheit und Bevormundung“, „Rekrutierung und Netzwerke zurückdrängen“, „Werte und Verfassungstreue betonen“ und „Feindbilder und Gewaltrechtfertigung bildnerisch bearbeiten“ stehen im Auftrag, im Datenstand aber noch nicht bei der jeweiligen Ursache. Koordination bitte prüfen.
+
+Grenzfälle (offene Zuordnung): Bürgerforen (2206 offen), Gendersprache (2205), Volksbegehren-Quorum (2205), Meldestellen (2204), Demokratieklausel (2206 offen), Verfassungsschutz (2204).
+
+Seiten ohne Text: keine relevanten.
