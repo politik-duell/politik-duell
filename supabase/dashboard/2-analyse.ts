@@ -353,7 +353,9 @@ Einordnung ("typ"):
   Antwortet die Person ohne Alltagsproblem mit Ja oder Nein auf genau eine dieser Fragen (z. B. \u201EMeine Haltung
   zur Frage \u2026 : Ja\u201C), ist das "wert" mit dieser "haltung_id" \u2013 auch wenn die Frage nach einer Ma\xDFnahme klingt.
   Dasselbe gilt f\xFCr ein kurzes F\xFCr oder Gegen genau den Gegenstand einer Frage (z. B. \u201EIch bin f\xFCr ein Tempolimit\u201C
-  zur Frage nach einem Tempolimit auf Autobahnen): Einschr\xE4nkungen der Frage muss die Person nicht nennen.` : ""}
+  zur Frage nach einem Tempolimit auf Autobahnen): Einschr\xE4nkungen der Frage muss die Person nicht nennen.
+  Das hat Vorrang vor "forderung" \u2013 auch wenn der Gegenstand eine Steuer, ein Verbot oder eine Abgabe ist
+  (z. B. \u201EIch bin f\xFCr eine Zuckersteuer\u201C zur Frage nach einer Steuer auf gezuckerte Getr\xE4nke).` : ""}
 - Ein pauschales Urteil \xFCber eine Gruppe von Menschen (z. B. \u201EDie Ausl\xE4nder sind alle kriminell\u201C, \u201ERentner sind \u2026\u201C)
   ist weder Problem noch Wert: Ordne es als "forderung" mit "pauschal": true und "thema_id": null ein und frage
   nach dem Alltag dahinter, z. B. \u201EWas hast du selbst erlebt, oder wo f\xFChlst du dich unsicher?\u201C.

@@ -464,6 +464,8 @@ describe('Haltung → Wertfrage (Haltungskarte)', () => {
     expect(p).toContain('Einschränkungen der Frage muss die Person nicht nennen')
     // Ein Reizwort allein ist keine Grenze – „gegen …“ ist eine Haltung.
     expect(p).toContain('nicht ein umstrittenes Wort darin')
+    // Für oder Gegen den Gegenstand einer Wertfrage geht vor Forderung, auch bei Steuern.
+    expect(p).toContain('Das hat Vorrang vor "forderung"')
     expect(p).not.toMatch(/https?:\/\//)
     for (const partei of PARTEIEN) expect(p).not.toContain(partei.name)
   })

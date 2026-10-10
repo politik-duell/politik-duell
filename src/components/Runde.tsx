@@ -43,7 +43,7 @@ function forderungAntwort(themaName: string | null): string {
 /** Was das Zufallsbeispiel in der Eingabe ist – damit klar ist, was die Runde damit macht. */
 const BEISPIEL_TEXT: Record<BeispielArt, string> = {
   problem: 'Beispiel-Problem aus der Datenbank (wird gewertet)',
-  forderung: 'Beispiel-Forderung aus der Datenbank (Forderungskarte, ohne Punkte)',
+  forderung: 'Beispiel-Forderung aus der Datenbank (Nachfrage und Forderungskarte, ohne Punkte)',
   wert: 'Beispiel-Haltung aus der Datenbank (Haltungskarte, ohne Punkte)',
 }
 
