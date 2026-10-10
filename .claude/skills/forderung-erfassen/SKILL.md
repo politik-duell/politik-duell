@@ -3,7 +3,7 @@ name: forderung-erfassen
 description: Trägt für ein schon erfasstes Thema des Politik-Duells einen fehlenden Lösungsweg nach (Forderungskarte „Zeig mir, wer das fordert“) – prüft, ob es das Instrument schon gibt, ergänzt sonst Suchbegriffe im Leitfaden, durchsucht alle erfassten Programme nur danach, bewertet neue Fundstellen ohne Parteinamen und ergänzt die vorhandenen Einträge als KI-Entwurf. Aufruf z. B. /forderung-erfassen 2 "Mietendeckel" oder mehrere Forderungen eines Themas: /forderung-erfassen 2 "Mietendeckel"; "Wohngeld erhöhen"; mehrere Themen durch „|“ getrennt: /forderung-erfassen 2 "Mietendeckel" | 15 "Tempolimit" (dann ein Agent je Programm für alle Themen).
 argument-hint: <Themen-ID> "<Forderung>"[; "<Forderung>" …] [| <Themen-ID> "<Forderung>" …]
 disable-model-invocation: true
-model: sonnet
+model: opus
 ---
 
 # Forderung erfassen (Nachtrag eines Lösungswegs)

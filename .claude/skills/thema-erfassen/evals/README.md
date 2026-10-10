@@ -28,7 +28,7 @@ Szenarien im Format der Skill-Best-Practices (`skills`, `query`, `files`, `expec
 | Zusätzlich, vertretbar | 4 | Imam-Ausbildung, Evaluation von Präventionsprogrammen, Arbeitsdefinition Antisemitismus, Abschiebungen beim Bund bündeln |
 | Kurzbericht | – | Der feste Block war korrekt; der Agent hängte aber eine frei formulierte Zusammenfassung an |
 
-**Schluss:** Zitate und Seiten erkennt die kleinste Stufe verlässlich (die Selbstprüfung erzwingt das ohnehin). Zusagen und Leitfaden-Regeln nicht: Rund ein Drittel der Maßnahmen widerspricht dem Leitfaden oder ist ein Prüfauftrag, drei Zusagen fehlen. Das würde Rückfragen und Bewertung belasten und Programme ungleich behandeln, wenn nicht alle mit derselben Stufe laufen. **Der Skill bleibt unverändert:** Erfassung mit der nächstkleineren Stufe (mittlere), die kleinste nicht. Ein neuer Vergleichstest lohnt sich mit einer neuen Modellgeneration.
+**Schluss:** Zitate und Seiten erkennt die kleinste Stufe verlässlich (die Selbstprüfung erzwingt das ohnehin). Zusagen und Leitfaden-Regeln nicht: Rund ein Drittel der Maßnahmen widerspricht dem Leitfaden oder ist ein Prüfauftrag, drei Zusagen fehlen. Das würde Rückfragen und Bewertung belasten und Programme ungleich behandeln, wenn nicht alle mit derselben Stufe laufen. **Der Skill bleibt unverändert:** Erfassung mit der nächstkleineren Stufe (mittlere), die kleinste nicht. *(Überholt durch den Vergleichstest „Haiku statt Sonnet“ unten: Seit 9. 10. 2026 erfasst `haiku` mit „im Zweifel aufnehmen“, die Bewertung sortiert aus.)* Ein neuer Vergleichstest lohnt sich mit einer neuen Modellgeneration.
 
 ## Vergleichstest: vorsortierter Auszug statt ganzer Textdatei
 
@@ -74,10 +74,56 @@ Vergleich mit den 34 Bundes-Maßnahmen dieser sechs Parteien in der archivierten
 | Tokens | 434.869 (Ø 36.239 je Agent) | 332.347 (Ø 55.391 je Agent) |
 | Laufzeit (Summe / längster Agent) | 346 s / 38 s | 303 s / 62 s |
 
-- **Diesmal 24 % weniger Tokens bei gleicher Fundquote** – das Gegenteil des Laufs mit 18 und 30 (+39 %). Ein Erfassungs-Agent hat einen großen festen Teil (Agentenbeschreibung, Auftrag, Inhaltsverzeichnis, Selbstprüfung); den spart der Sammelauftrag einmal je Programm.
+- **24 % weniger Tokens bei gleicher Fundquote.** Der frühere Lauf mit 18 und 30 (+39 %) gilt nach Entscheidung der Betreiberin als nicht repräsentativ und dient nicht als Vergleich; Sammelaufträge sind seitdem Standard bei mehreren Themen. Ein Erfassungs-Agent hat einen großen festen Teil (Agentenbeschreibung, Auftrag, Inhaltsverzeichnis, Selbstprüfung); den spart der Sammelauftrag einmal je Programm.
 - **Überschneidung der Trefferseiten erklärt den Unterschied nicht.** Anteil gemeinsamer Trefferseiten (bezogen auf das Thema mit weniger Seiten): 18+30 38 %, 30+33 41 % (mit Nachbarseite 63 % bzw. 68 %). Eine Prüfung „Sammelaufträge nur bei gemeinsamen Kapiteln“ würde beide Paare gleich behandeln und wurde deshalb nicht gebaut.
 - **Wahrscheinlicher ist die Menge der Fundstellen.** Thema 18 hat in den sechs Programmen 137 Trefferseiten (Grüne 45), Thema 30 60, Thema 33 23. Bei kleinen Themen überwiegt der feste Teil, den das Bündeln spart; bei großen wächst der Kontext des ersten Themas im zweiten mit. Belegt ist das mit zwei Läufen nicht.
 - **Wartezeit etwa gleich:** Ein Sammel-Agent braucht länger, dafür laufen bei höchstens sieben gleichzeitigen Agenten 6 Sammelaufträge in einer Welle, 12 Einzelaufträge in zwei.
 - Fehlende Stellen unterscheiden sich zwischen den Läufen, aber nicht in der Zahl; das ist Streuung des Agenten wie im Test oben.
 
 **Schluss:** **Einzelaufträge bleiben Standard.** `--sammel` kann sich bei kleinen Themen (wenige Fundstellen je Programm) lohnen; ob die Grenze bei der Zahl der Fundstellen liegt, zeigt erst ein weiterer Lauf mit zwei kleinen Themen und einem großen Thema.
+
+## Vergleichslauf: Programmkatalog mit Haiku (`docs/plan-programmkatalog.md`)
+
+**Frage:** Erfasst ein themenunabhängiger Katalog (Haiku, je Kapitelblock ein Agent) die schon erfassten Maßnahmen und Haltungs-Positionen vollständig – und was kostet er im Vergleich zur Erfassung je Thema?
+
+**Aufbau (9. 10. 2026):** Bundesprogramme SPD (68 Seiten, 8 Blöcke) und AfD (177 Seiten, 9 Blöcke), zerlegt mit `katalog:absaetze` (30.000 Zeichen je Block), Agent `programm-katalog` (Haiku), Selbstprüfung `katalog:pruefen` (jeder Absatz erfasst, Satzverweise gültig, eigene Worte). Abgleich mit `katalog:vergleich` gegen die Bundes-Maßnahmen dieser Parteien in den Themen 6 und 27 und gegen alle Haltungs-Positionen. Gleich heißt: Aussage auf Seite ±1, die mindestens 60 % der Wörter des Zitats enthält.
+
+**Ergebnis:**
+
+| | SPD | AfD |
+| --- | --- | --- |
+| Aussagen im Katalog | 1.170 (zusage 626, ziel 369, lage 77, ablehnung 29, pruefauftrag 35, rueckblick 28, bedingung 6) | 1.099 (zusage 539, ziel 205, lage 199, ablehnung 122, bedingung 17, pruefauftrag 16, rueckblick 1) |
+| Themen-Maßnahmen (6, 27) wiedergefunden | 17 von 17 (16 als Zusage/Ablehnung/Bedingung) | 15 von 15 (alle) |
+| Haltungs-Positionen wiedergefunden | 19 von 19 | 20 von 20 |
+| Tokens (laut Agentenabschluss) | 728.661 (8 Agenten; Block 3 als Test mit allgemeinem Agenten: 136.318) | 669.266 (9 Agenten) |
+| Korrekturrunden | 0–1 je Block, alle „In Ordnung“ | 0–1 je Block |
+
+- **Wiederfund vollständig.** Die eine SPD-Maßnahme ohne passende Art (T6/M6016, S. 55: „Grenzverfahren müssen hohe rechtliche Standards gewährleisten“) hat Haiku mit Zielen desselben Absatzes zu einer `ziel`-Aussage zusammengefasst. Folge: Kandidaten für Themen auch aus `ziel` ziehen, wenn ein Suchbegriff trifft (steht im Plan unter Risiken), und in der Agentenbeschreibung das Zusammenfassen nur für `lage` und `rueckblick` erlauben.
+- **Stichprobe (Opus, 12 Aussagen):** Art und Kurzbeschreibung stimmen; Kurzbeschreibungen in eigenen Worten, ohne Parteinamen.
+- **Schwäche der Zerlegung:** Ein Satz über einen Seitenwechsel wird in zwei Absätze geteilt (AfD Block 1/2). Für die Zuordnung harmlos, für Zitate über die Seitengrenze nachbessern.
+- **Kosten:** Ø 78.851 Tokens je Block mit dem eigenen Agenten (ohne den Testblock), also rund 670.000 Tokens (Haiku) je Programm, einmalig. Die bisherige Erfassung kostet Ø 36.239 Tokens (Sonnet) je Thema und Programm (Vergleichstest oben). Der Katalog eines Programms entspricht damit in Tokens rund 18–19 Themen-Erfassungen; die Zuordnung je Thema (ein Haiku-Agent für alle Programme) kommt hinzu und ist noch nicht gemessen.
+
+**Schluss:** Der Katalog findet alles, was die bisherige Erfassung gefunden hat. In Tokens lohnt er sich erst über viele künftige Themen, Forderungen und Haltungen – für die schon erfassten 37 Themen spart er nichts mehr. Vor dem Ausrollen auf alle Programme: Ausgabe verdichten (Zeilenformat statt JSON, `lage`/`rueckblick` nur unter `ohne`) und die Zuordnung je Thema messen.
+
+## Vergleichstest: Haiku statt Sonnet bei der Erfassung (Sammelauftrag)
+
+**Frage:** Erfasst `programm-erfassung` mit Haiku 5.5 so vollständig wie mit Sonnet, wenn Fehlgriffe danach von Opus ohne Parteinamen aussortiert werden – und was kostet es?
+
+**Aufbau (9. 10. 2026):** Themen 30 und 33, sechs Bundesprogramme (BSW nicht ladbar), je Programm ein Sammelauftrag (`entwurf:lauf auftraege --sammel` in einer Arbeitskopie ohne Abdeckung der beiden Themen), Agent `programm-erfassung` mit `model: haiku` und dem Zusatz „Im Zweifel aufnehmen – eine Prüfung ohne Parteinamen sortiert aus“. Vergleich mit den 34 archivierten Bundes-Maßnahmen (Sonnet, 6. 10. 2026) wie oben (Seite ±1, 60 % gemeinsame Wörter), Abweichungen von Hand nachgesehen.
+
+**Ergebnis:**
+
+| | Sonnet, Sammelauftrag (oben) | Haiku, Sammelauftrag |
+| --- | --- | --- |
+| wie im Archiv | 32 von 34 | 31 von 34 (Skript: 30; Union S. 47 Europol dieselbe Zusage mit anderem Satz) |
+| fehlend | Grüne S. 85, Linke S. 57 | Linke S. 20 (Drogenkonsum entkriminalisieren), Union S. 41 (Jugendschutz im Netz), Grüne S. 85 (Bürgerrat) |
+| zusätzlich | 1 | 16 – davon etwa die Hälfte vertretbar (z. B. Spielautomaten in Gaststätten verbieten, Bot-Kennzeichnung, Verbot personalisierter Werbung), die andere Hälfte ohne Bezug zur Ursache (Parteiensponsoring, Ausweisung von Straftätern, DSA gegen Billigprodukte, allgemeine Familienberatung) |
+| Tokens | 332.347 | 935.493 (2,8-fach) |
+| Kosten (API-Listenpreis je Token: Haiku 5.5 1/20 von Sonnet 5.5) | 1 | ≈ 0,14 |
+| Laufzeit Summe / längster Agent | 303 s / 62 s | 1.620 s / 359 s |
+
+- **Vollständigkeit wie Sonnet:** 31 statt 32 von 34; Sonnet selbst schwankt zwischen zwei Läufen um dieselbe Größe (Einzelaufträge 31, Sammelaufträge 32). Die fehlenden Stellen unterscheiden sich von Lauf zu Lauf.
+- **Mehr Fehlgriffe:** Mit „im Zweifel aufnehmen“ liefert Haiku rund 50 % mehr Maßnahmen. Die unpassenden muss die Bewertung ohne Parteinamen aussortieren (Opus), sonst gehen sie in die Punkte ein.
+- **Billiger, aber langsamer:** etwa ein Siebtel der Kosten, aber mehr Werkzeugaufrufe (19–38 je Agent) und fünfmal so lange Laufzeit.
+
+**Schluss:** `programm-erfassung` läuft seit 9. 10. 2026 mit `haiku`; „im Zweifel aufnehmen“ steht in der Agentenbeschreibung (Schritt 5), das Aussortieren in `blind-bewertung.md` (Prüfliste, Punkt 8). Nach dem ersten echten Lauf prüfen: Wie viele Maßnahmen verwirft die Bewertung (`zuordnungsBilanz` im Pull Request), und fehlen Zusagen, die eine Stichprobe mit `sonnet` findet?

@@ -6,7 +6,7 @@ Die Skills bauen den Katalog für die **geschlossene Testphase** auf: alles als 
 flowchart TD
     L["/liste-einordnen<br/>Liste sortieren: Haltung, Forderung, Thema,<br/>Grenze, Pauschal, Tatsache, Meta, doppelt"]
     LA["Betreiberin hakt ab (oder --direkt)"]
-    LB["/liste-ausfuehren (sonnet)<br/>ein Block je Aufruf"]
+    LB["/liste-ausfuehren (opus)<br/>ein Block je Aufruf"]
     L --> LA --> LB
     LB -->|Haltungen| H1
     LB -->|Themen| T1
@@ -52,16 +52,26 @@ flowchart TD
 - Skripte statt Agenten, wo es geht (zählen, Fundstellen, Zitate, Zusammenführen, Bericht).
 - Keine inhaltlichen Rückfragen, keine Nachrecherche der Koordination, eine Runde für die Suchbegriffe.
 - Bund und Länder in einem Durchgang, mehrere Themen oder Haltungen je Aufruf.
-- Modelle fest in den Agentenbeschreibungen: Erfassung `sonnet`, Recherche, Bewertung und Einordnung `opus`. Die Koordination startet vor allem Skripte und läuft deshalb mit `sonnet` (`model:` im Kopf von `/liste-ausfuehren` und den Unterskills); Regeln, Suchbegriffe und verwandte Themen liefern die Recherche-Agenten, die Koordination überträgt sie nur. Nur `/liste-einordnen` urteilt selbst und läuft mit dem Modell der Sitzung.
+- Modelle: Koordination `opus` (plant, startet Skripte und Agenten, prüft kurz nach dem Prüfmuster unten). Fleißarbeit in den Agenten, Modell fest in der Agentenbeschreibung: Recherche (`ursachen-recherche`, `haltung-recherche`) `haiku`; Erfassung aus Programmen `haiku` für Themen (gleiche Vollständigkeit wie `sonnet` bei etwa einem Siebtel der Kosten, aber mehr Fehlgriffe und längere Laufzeit; die Erfassung nimmt im Zweifel auf, die Bewertung ohne Parteinamen sortiert aus – `thema-erfassen/evals/README.md`), für Haltungen noch `sonnet` (nicht verglichen); Bewertung und Einordnung `opus` – dort muss jeder einzelne Wert stimmen, ein Entwurf mit Prüfung und Nacharbeit kostete dreimal dieselbe Liste. `/liste-einordnen` läuft mit dem Modell der Sitzung.
 - Sammelbefehle: `entwurf:lauf -- vorab | auftraege | erfasst | blind | bewertet` erledigt einen Schritt für alle Themen eines Laufs – fünf Aufrufe statt rund 16 je Thema.
 - Kurze Überblicke: `themen:ueberblick -- --kurz` (eine Zeile je Thema) und `-- --haltungen` (ID und Frage) statt ganzer Dateien.
-- Ein Lauf für alle Themen: mehrere Themen in `/thema-erfassen` und Nachträge aus `/forderung-erfassen` laufen gemeinsam durch die Sammelbefehle, je Programm und Thema ein Erfassungs-Agent, bis zu sieben gleichzeitig. Sammelaufträge (ein Agent je Programm für alle Themen, `--sammel`) sind kein Standard mehr: Im Vergleichslauf (Themen 18 und 30, sechs Bundesprogramme) kosteten sie 806.752 statt 580.227 Tokens und 307 statt 80 Sekunden – die Agenten lesen gezielt statt das ganze Programm, und der Kontext des ersten Themas wächst im zweiten mit. Mit den kleineren Themen 30 und 33 waren sie 24 % günstiger (`thema-erfassen/evals/README.md`); vermutlich lohnen sie sich nur bei wenigen Fundstellen.
+- Ein Lauf für alle Themen: mehrere Themen in `/thema-erfassen` und Nachträge aus `/forderung-erfassen` laufen gemeinsam durch die Sammelbefehle, bei mehreren Themen ein Sammelauftrag je Programm (`--sammel`: ein Agent liest das Programm einmal für alle Themen), bis zu sieben gleichzeitig. Gemessen mit den Themen 30 und 33: 24 % weniger Tokens bei gleicher Fundquote (`thema-erfassen/evals/README.md`). Ein früherer Lauf mit Thema 18 (+39 %) gilt als nicht repräsentativ und ist kein Maßstab.
 - Bereiche als Hebel-Checkliste: Bündel nach Bereichen (etwa „Verkehr und Antriebe“) erfasst ein Einzelagent oft nur einmal je Bereich (Thema 18: 68 statt 123 Maßnahmen); als `hebel` beantwortet jedes Programm jeden Hebel. `entwurf:auftrag` weist darauf hin, die Selbstprüfung nennt leere Bündel.
 - Leitfaden vor dem Lesen vollständig: Fehlt einer Ursache eine Regel, kostet das später eine Rückfrage an jedes Programm (Thema 18: mehr Tokens als die Erfassung selbst).
 - Ein Testlauf je Block (`npm test -- --reporter=dot`) am Ende; Phase-A-Schritte prüfen nur mit `daten:pruefen`.
 - Haltungen gebündelt: sieben Erfassungs-Agenten und ein Einordnungs-Agent je Lauf, gleich wie viele Haltungen (bis 15); jedes Programm wird einmal gelesen.
 - Lange Listen erst sortieren (`/liste-einordnen`), dann nur das Bestätigte anlegen (`/liste-ausfuehren`) – ein Block je Aufruf, mit `/clear` dazwischen.
 - Keine Dokumentpflege außer dem Abschnitt in `docs/perspektiven-ursachen.md` bzw. `docs/haltungen.md`; der Rest steht in Protokoll und Pull Request.
+
+## Prüfmuster
+
+Jede Agentenarbeit wird genau einmal geprüft – erst vom Skript, dann vom Urteil, nie doppelt:
+
+1. **Skript** prüft alles Nachrechenbare (Format, Zitat auf der Seite, Quellen, Vollständigkeit). Fehler gehen direkt an denselben Agenten zurück; die Koordination liest sie nicht inhaltlich.
+2. **Urteil** (Koordination, Opus) nur dort, wo kein Skript reicht – Recherche-Vorschläge in Phase A: kurz „passt“ oder „passt nicht: <Punkte>“. Bei „passt nicht“ **eine** gebündelte Rückfrage an denselben Agenten, danach ein letztes Urteil; was dann nicht passt, wird verworfen (mit Grund). Die Koordination recherchiert und formuliert nicht selbst.
+3. Bei Erfassung und Bewertung ist das Urteil die Bewertung ohne Parteinamen (`blind-bewertung`, `haltung-einordnung`); die Koordination urteilt dort nicht.
+
+Was ein Schritt geprüft hat, prüft kein späterer noch einmal: keine Kontrolle der Agentenergebnisse durch die Koordination nach bestandener Selbstprüfung, keine Aufnahmeprüfung in `/thema-anlegen` für Zeilen aus `/liste-einordnen`, Seed und Tests einmal am Ende eines Pull Requests.
 
 ## Grundlage
 

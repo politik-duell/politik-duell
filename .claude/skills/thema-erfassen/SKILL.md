@@ -3,7 +3,7 @@ name: thema-erfassen
 description: Erfasst für ein oder mehrere Themen des Politik-Duells mit freigegebenen Ursachen (auch KI-Freigabe) die Maßnahmen aus allen Wahlprogrammen – je Programm ein Erfassungs-Agent, Bewertung ohne Parteinamen durch einen Blind-Agenten, Eintragen als ungeprüfter KI-Entwurf, automatische Prüfung, Pull Request. Aufruf mit Themen-IDs, z. B. /thema-erfassen 17 oder /thema-erfassen 19 20 --bund.
 argument-hint: <Themen-ID> [<Themen-ID> …] [--bund | --land XX …]
 disable-model-invocation: true
-model: sonnet
+model: opus
 ---
 
 # Thema erfassen (Maßnahmen, KI-Entwurf)
@@ -34,15 +34,17 @@ Prüft die Freigabe (`ursachen:freigegeben --gegen HEAD`: `freigabe` auch mit `a
 npm run -s entwurf:lauf '--' auftraege $E
 ```
 
-Legt je Thema die Aufträge an. (`'--sammel'` legt zusätzlich Sammelaufträge an – ein Agent je Programm für alle Themen. Nur für Vergleichsläufe: Im Vergleichslauf mit den Themen 18 und 30 brauchten sie 39 % mehr Tokens und fast viermal so lange wie Einzelaufträge, mit den kleineren Themen 30 und 33 24 % weniger; siehe `evals/README.md`.) `NICHT GELADEN` → „Programm nicht erreichbar“ unten. Lehnt der Schritt ab, weil einer Ursache eine Regel oder Suchbegriffe fehlen: wie oben unter Phase-A-Sperre ergänzen. Meldet er einen Begriff bei mehreren Ursachen, prüfe, ob die Regeln die Fundstellen eindeutig zuordnen; sonst gemeinsame Regel oder `gekoppelt` – jetzt, nicht als Rückfrage an jedes Programm. Meldet er eine Ursache mit vielen Bündeln ohne Hebel-Checkliste: Sind die Bündel Bereiche (etwa „Verkehr und Antriebe“) statt einzelner Instrumente, die Hebel je Bereich unter Phase-A-Sperre als `hebel` ergänzen (wie oben); sonst weiter.
+Legt je Thema die Aufträge an. **Mehrere Themen** (auch Nachträge): mit `'--sammel'` zusätzlich je Programm einen Sammelauftrag für alle Themen (`.cache/entwurf/sammel/auftraege/<Name>.md`) – ein Agent liest das Programm einmal; gemessen 24 % weniger Tokens bei gleicher Fundquote (`evals/README.md`). `NICHT GELADEN` → „Programm nicht erreichbar“ unten. Lehnt der Schritt ab, weil einer Ursache eine Regel oder Suchbegriffe fehlen: wie oben unter Phase-A-Sperre ergänzen. Meldet er einen Begriff bei mehreren Ursachen, prüfe, ob die Regeln die Fundstellen eindeutig zuordnen; sonst gemeinsame Regel oder `gekoppelt` – jetzt, nicht als Rückfrage an jedes Programm. Meldet er eine Ursache mit vielen Bündeln ohne Hebel-Checkliste: Sind die Bündel Bereiche (etwa „Verkehr und Antriebe“) statt einzelner Instrumente, die Hebel je Bereich unter Phase-A-Sperre als `hebel` ergänzen (wie oben); sonst weiter.
 
 ## 2. Erfassen
 
-Je Auftrag ein Agent `programm-erfassung`, bis zu sieben gleichzeitig. Das Modell steht in der Agentenbeschreibung – **keinen** Parameter `model` setzen, damit alle Programme mit demselben Modell laufen. Auftrag nur dieser Satz:
+Je Auftrag ein Agent `programm-erfassung` – bei mehreren Themen je **Sammelauftrag** (ein Agent je Programm), sonst je Einzelauftrag –, bis zu sieben gleichzeitig. Das Modell steht in der Agentenbeschreibung – **keinen** Parameter `model` setzen, damit alle Programme mit demselben Modell laufen. Auftrag nur dieser Satz:
 
 > Erledige den Erfassungsauftrag `.cache/entwurf/<ID>/auftraege/<Name>.md` nach `.claude/agents/programm-erfassung.md`.
 
-Der Agent prüft sich selbst und speichert `programme/<Name>.json`. Fehlt eine Datei, denselben Agenten (SendMessage) die Fehler beheben lassen. Nach jedem Agenten eine Zeile in `protokoll/kosten.md` seines Themas: `| Agent | Programm | Tokens | Dauer |`.
+(Sammelauftrag: Pfad `.cache/entwurf/sammel/auftraege/<Name>.md`; der Agent schreibt je Thema seine eigene Ergebnisdatei.)
+
+Der Agent prüft sich selbst und speichert `programme/<Name>.json`. Fehlt eine Datei, denselben Agenten (SendMessage) die Fehler beheben lassen. Was die Selbstprüfung bestanden hat, prüfst du nicht noch einmal.
 
 ```bash
 npm run -s entwurf:lauf '--' erfasst $E
@@ -53,7 +55,7 @@ Führt je Thema zusammen und zählt die Treffer.
 - **Rückfragen nur bei Skriptfehlern** (`zusammenfuehren` lehnt ein Programm ab) oder bei Hinweisen „viele Treffer, aber keine Maßnahme“: eine gebündelte Rückfrage an dieses Programm, Antwort nach `protokoll/erfassung-<Name>-rueckfrage-1.txt`. Keine Rückfragen zu Inhalt oder Zuordnung – das entscheidet die Bewertung.
 - **Eigene Synonyme, neue Bündel:** in den Leitfaden übernehmen (gilt für spätere Durchgänge); keine erneute Erfassung.
 - Nach einer Rückfrage `erfasst` erneut; meldet der Vergleich **entfallene** Maßnahmen, die die Rückfrage nicht betraf, mit derselben Rückfrage-Datei korrigieren lassen.
-- `protokoll/rueckfragen.md` je Thema: erste Zeilen „Modell der Erfassung: …“, „Modell der Bewertung: …“ (aus der Agentenbeschreibung), danach je Rückfrage eine Zeile `| Programm | Anlass | Ergebnis |` oder „keine“.
+- `protokoll/rueckfragen.md` je Thema: je Rückfrage eine Zeile `| Programm | Anlass | Ergebnis |`, sonst nur „keine“. Die Modelle liest der Bericht aus den Agentenbeschreibungen.
 
 ## 3. Bewerten ohne Parteinamen
 
