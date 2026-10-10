@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { MOCK_DATEN, type Daten } from '../data/quelle'
-import { fuerBeideErfasst, haltungStand, instrumentStand, statistik, themenStand } from './stand'
+import { fortschritt, fuerBeideErfasst, haltungStand, instrumentStand, statistik, themenStand } from './stand'
 
 describe('Datenstand (#/themen)', () => {
   it('zählt Themen, Ursachen und Maßnahmen', () => {
@@ -100,5 +100,46 @@ describe('Datenstand (#/themen)', () => {
     ])
     expect(h[0].zielkonflikte).toEqual({ ja: 1, nein: 1 })
     expect(h.every((x) => !('ja' in x) && !('verteilung' in x))).toBe(true)
+  })
+
+  it('zeigt den Fortschritt: vollständig, teilweise, nicht begonnen', () => {
+    const [p1, p2] = MOCK_DATEN.parteien
+    const [t1, t2, t3] = MOCK_DATEN.themen
+    const m = MOCK_DATEN.massnahmen[0]
+    const eintrag = { begruendung: null, stand: '2026-09-01', art: 'massnahmen' as const }
+    const position = { kurzfassung: 'x', zitat: 'x', beleg_programm_url: 'https://x', begruendung: null, stand: '2026-10-01', position: 'ja' as const }
+    const weg = { begruendung: null, evidenz: null, ebene: 'bund' as const }
+    const daten: Daten = {
+      ...MOCK_DATEN,
+      parteien: [p1, p2],
+      themen: [t1, t2, t3],
+      abdeckung: [
+        { ...eintrag, thema_id: t1.id, partei_id: p1.id },
+        { ...eintrag, thema_id: t1.id, partei_id: p2.id },
+        { ...eintrag, thema_id: t2.id, partei_id: p1.id },
+      ],
+      instrumente: [
+        { ...weg, id: 1, thema_id: t1.id, name: 'A' },
+        { ...weg, id: 2, thema_id: t2.id, name: 'B' },
+        { ...weg, id: 3, thema_id: t3.id, name: 'C' },
+      ],
+      massnahmen: [
+        { ...m, id: 1, thema_id: t1.id, partei_id: p1.id, instrument_id: 1 },
+        { ...m, id: 2, thema_id: t2.id, partei_id: p1.id, instrument_id: 2 },
+      ],
+      haltungen: [
+        { id: 1, frage: 'Frage 1?', beschreibung: '', verwandte_themen: [] },
+        { id: 2, frage: 'Frage 2?', beschreibung: '', verwandte_themen: [] },
+      ],
+      haltungPositionen: [
+        { ...position, haltung_id: 1, partei_id: p1.id },
+        { ...position, haltung_id: 1, partei_id: p2.id },
+      ],
+    }
+    expect(fortschritt(daten)).toEqual({
+      themen: { gesamt: 3, vollstaendig: 1, begonnen: 1 },
+      forderungen: { gesamt: 3, vollstaendig: 1, begonnen: 1 },
+      haltungen: { gesamt: 2, vollstaendig: 1, begonnen: 0 },
+    })
   })
 })

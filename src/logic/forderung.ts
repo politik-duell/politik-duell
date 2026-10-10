@@ -77,6 +77,18 @@ export function forderungskarte(daten: Daten, instrumentId: number, land: string
   }
 }
 
+/**
+ * Wie weit die Programme zu einem Lösungsweg ausgewertet sind: `vollstaendig`, wenn bei keiner Partei mehr
+ * „noch nicht erfasst“ steht – Bundesprogramme bzw. bei Lösungswegen auf Landesebene die Programme aller Länder
+ * mit Landesprogrammen; `begonnen`, wenn wenigstens eine Partei erfasst ist; sonst `offen`.
+ */
+export function forderungErfassung(daten: Daten, instrument: InstrumentEintrag): 'vollstaendig' | 'begonnen' | 'offen' {
+  const laender = instrument.ebene === 'land' ? [...new Set(daten.landesprogramme.map((p) => p.land))] : [null]
+  const funde = laender.flatMap((land) => block(daten, instrument, land).parteien.map((p) => p.fund))
+  if (funde.length && funde.every((f) => f !== 'offen')) return 'vollstaendig'
+  return funde.some((f) => f !== 'offen') ? 'begonnen' : 'offen'
+}
+
 function block(daten: Daten, instrument: InstrumentEintrag, land: string | null): Fundblock {
   // Ursachen, an denen der Lösungsweg ansetzt: Ein Programm, das dafür noch nicht durchsucht ist, gilt als „offen“.
   const ursachenIds = [
