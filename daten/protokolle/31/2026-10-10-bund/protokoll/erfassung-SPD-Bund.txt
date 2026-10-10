@@ -1,0 +1,160 @@
+{
+  "partei_id": 12,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Mindestausbildungsvergütung anheben.",
+      "ursachen_ids": [
+        3101
+      ],
+      "zitat": "Für junge Menschen am Beginn von Ausbildung oder Studium sind derzeit – noch mehr als in der Bevölkerung insgesamt – die steigenden Lebenshaltungskosten das zentrale Problem. Wir wollen deshalb die Mindestausbildungsvergütung anheben.",
+      "seite": 15
+    },
+    {
+      "beschreibung": "BAföG-Förderhöhe regelmäßig an die Lebenshaltungskosten anpassen.",
+      "ursachen_ids": [
+        3102
+      ],
+      "zitat": "Mit einer Reform des BAföG wollen wir dafür sorgen, dass die Höhe der Ausbildungsförderung regelmäßig an die steigenden […] Lebenshaltungskosten angepasst wird.",
+      "seite": 15
+    },
+    {
+      "beschreibung": "Mittel für den Neubau von Wohnheimen für Studierende und Azubis verstetigen und erhöhen.",
+      "ursachen_ids": [
+        3101,
+        3102
+      ],
+      "zitat": "Wir wollen sicherstellen, dass Studierende und Azubis für ein WG-Zimmer möglichst nicht mehr als 400 Euro zahlen. Dafür wollen wir die Mittel in den Ausbau von Studierenden- und Azubi-Wohnheimen verstetigen und erhöhen und sicherstellen, dass diese Mittel von den Ländern tatsächlich für den Neubau von Wohnheimen verwendet werden.",
+      "seite": 21
+    },
+    {
+      "beschreibung": "Mietpreisbremse auf mehr Wohnungen von Azubis und Studierenden ausweiten.",
+      "ursachen_ids": [
+        3101,
+        3102
+      ],
+      "zitat": "Indem wir den Anwendungsbereich der Mietpreisbremse ausweiten, werden deutlich mehr Azubis und Studierende erfasst.",
+      "seite": 21
+    },
+    {
+      "beschreibung": "Bundeseinheitlich vergünstigtes Deutschlandticket für bestimmte soziale Gruppen, darunter Auszubildende und Studierende.",
+      "ursachen_ids": [
+        3101
+      ],
+      "zitat": "Außerdem setzen wir uns für ein bundeseinheitlich vergünstigtes Deutschlandticket zu einem reduzierten Preis für bestimmte soziale Gruppen wie Seniorinnen und Senioren, Familien mit Kindern, Auszubildende, Studierende, Schülerinnen und Schüler oder Menschen mit Behinderung ein.",
+      "seite": 35
+    },
+    {
+      "beschreibung": "Arbeitgeber sollen einen Führerscheinzuschuss bis zu 2.000 Euro steuer- und abgabenfrei an Azubis und junge Beschäftigte zahlen können.",
+      "ursachen_ids": [
+        3101
+      ],
+      "zitat": "Zudem wollen wir Arbeitgebern ermöglichen, einen Führerscheinzuschuss von bis zu 2.000 Euro steuer- und abgabenfrei an Auszubildende und junge Beschäftigte auszuzahlen.",
+      "seite": 36
+    },
+    {
+      "beschreibung": "Praxisnahe und kostenfreie Ausbildungen in den Gesundheitsfachberufen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3101
+      ],
+      "zitat": "Deshalb setzen wir uns für praxisnahe und kostenfreie Ausbildungen in den Gesundheitsfachberufen ein.",
+      "seite": 32
+    },
+    {
+      "beschreibung": "Duales Studium stärker fördern und Schutzrechte des Berufsbildungsgesetzes auf diesen Ausbildungsweg ausweiten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3101
+      ],
+      "zitat": "Darüber hinaus werden wir das duale Studium stärker fördern und die Schutzrechte des Berufsbildungsgesetzes auch auf diesen Ausbildungsweg ausweiten.",
+      "seite": 16
+    },
+    {
+      "beschreibung": "Bearbeitungszeiten für BAföG-Anträge durch Digitalisierung und Vereinfachung verkürzen.",
+      "ursachen_ids": [
+        3102
+      ],
+      "zitat": "Darüber hinaus müssen die Bearbeitungszeiten für BAföG-Anträge verkürzt werden – durch weitere Digitalisierung und Vereinfachung.",
+      "seite": 16
+    }
+  ],
+  "neue_buendel": [
+    {
+      "ursache": 3101,
+      "name": "Ausbau von Wohnheimen",
+      "seite": 21
+    },
+    {
+      "ursache": 3102,
+      "name": "Ausbau von Wohnheimen",
+      "seite": 21
+    },
+    {
+      "ursache": 3101,
+      "name": "Mietpreisbremse für Azubis und Studierende",
+      "seite": 21
+    },
+    {
+      "ursache": 3102,
+      "name": "Mietpreisbremse für Azubis und Studierende",
+      "seite": 21
+    },
+    {
+      "ursache": 3101,
+      "name": "Vergünstigtes Deutschlandticket für soziale Gruppen",
+      "seite": 35
+    },
+    {
+      "ursache": 3101,
+      "name": "Steuerfreier Führerscheinzuschuss durch Arbeitgeber",
+      "seite": 36
+    },
+    {
+      "ursache": 3101,
+      "name": "Kostenfreie Ausbildung in Gesundheitsfachberufen",
+      "seite": 32
+    },
+    {
+      "ursache": 3101,
+      "name": "Schutzrechte des Berufsbildungsgesetzes für duales Studium",
+      "seite": 16
+    },
+    {
+      "ursache": 3102,
+      "name": "BAföG-Verfahren digitalisieren und vereinfachen",
+      "seite": 16
+    },
+    {
+      "ursache": 3101,
+      "name": "Mindestausbildungsvergütung anheben",
+      "seite": 15
+    },
+    {
+      "ursache": 3102,
+      "name": "BAföG-Höhe regelmäßig anpassen",
+      "seite": 15
+    }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Kapitel 4 Bildung (S. 15–16, vollständig, einschließlich Ausbildungs- und BAföG-Passagen); Kapitel 2 Made in Germany (S. 10, Fachkräfte); Kapitel 3 Arbeitsmarkt (S. 13, Ausbildungsgarantie und Umlagen); Kapitel 10 Gesundheit (S. 32, vollständig); Kapitel 13 Mobilität (S. 35–36, Fundstellen und Umfeld); Kapitel 6 Wohnen (S. 21, vollständig); Suche im Volltext nach Darlehen, Rückzahlung, Studienkredit, Azubi, Auszubildende, Ausbildung, BAföG, Studium, Studierende, Wohnheim, Vergütung. Seiten ohne Text (1, 2, 67, 68) spielen keine Rolle.
+
+Gleichartige Stellen, im Kurzbericht nicht gesondert erfasst:
+- Zu 3102, Bündel „Studienfinanzierung ausbauen“ (gleicher Hebel BAföG-Förderung, andere Umfang oder Zielgruppe): S. 16 Anspruch für schrittweise mehr Studierende, elternunabhängiges BAföG, Rückkehr zum Vollzuschuss („streben wir an“); S. 21 automatische Erhöhung der BAföG-Wohnkostenpauschale.
+- Zu 3101, Vergütung (gleicher Hebel Vergütungsregel, Zielgruppe Praktikum): S. 32 „verlässliche Regeln bei Vergütungen und Dienstzeiten während des praktischen Jahres“ (Pflegeberufe, Ärzteschaft).
+- Zu Wohnheim-Ausbau (Förderung Wohnraum für Azubis und Studierende): S. 16 Bundesprogramm „Junges Wohnen“ fortsetzen und aufstocken.
+- Zu Mietpreisbremse für Azubis und Studierende: S. 21 kostenlose Onlineplattform zur Durchsetzung und Erstattung der Differenz über 400 Euro.
+
+Nicht erfasst (gelesen, nicht aufgenommen):
+- S. 13: Ausbildungsgarantie, Umlagen oder Fonds für Ausbildung. Das betrifft das Ausbildungsplatzangebot, nicht die Vergütung (nach R2 eigener Zusammenhang).
+- S. 15–16: Ziel „Aufstieg durch Bildung“ und „alle Ausbildungswege offenstehen“ (Bekenntnis ohne Handlung); Kita, Ganztag, Schule (Bildung, eigenes Thema).
+- S. 32: „Unser Ziel ist, dass alle Auszubildenden eine faire Vergütung erhalten“ (Ziel ohne Handlung); Tarifgehälter und Personalausstattung in Pflege und Gesundheit (Gesundheit, eigenes Thema).
+- S. 36: Führerscheinkosten senken, MobilitätsPass mit 500 Euro für 17-Jährige; das Zitat nennt weder Auszubildende noch Studierende, und die Fahrausbildung betrifft keine Ausbildungsvergütung.
+- S. 21: Grundsteuer, Wohngeld, allgemeine Mietpreisregeln (Wohnen, eigenes Thema).
+
+Bündel ohne Treffer: „Betriebe entlasten und Ausbildung attraktiv halten“ (3101): nur Ausbildungsplatz-Maßnahmen gefunden (S. 13), nach R2 nicht zu 3101. „Rückzahlung und Eigenbeteiligung neu regeln“ (3102): keine Stelle zu BAföG-Darlehen, Rückzahlung oder Studienkredit im Programm.
+
+Hinweis zu Bündeln: Die Bündel „Ausbildungsvergütung und Tarifbindung stärken“ (3101) und „Studienfinanzierung ausbauen“ (3102) sind Auftragsnamen, die im Leitfaden dieses Themas nicht als Bündel der Ursachen geführt werden. Der Koordinator ergänzt sie für alle Programme. Neue Bündel: siehe JSON.

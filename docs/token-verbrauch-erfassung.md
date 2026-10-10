@@ -18,3 +18,23 @@ Beobachtet beim Durchgang für die Themen 27, 29, 30 und 33 (6. 10. 2026, Pull R
 ## Reihenfolge
 
 Größter Gewinn: Punkt 1 zusammen mit Punkt 4. Punkt 1 braucht vorher die Methodenentscheidung.
+
+## Messung 10. 10. 2026: Themen 21 und 31, Haltungen 36 und 37
+
+Nur Bundesprogramme (beide Themen ohne Landesursachen), Themen als Sammelauftrag je Programm. Gezählt sind die Tokens der Agenten laut Abschlussmeldung (`subagent_tokens`), ohne die Koordination.
+
+| Schritt | Agenten | Tokens |
+| --- | --- | ---: |
+| Themen: Erfassung (Sammelauftrag 21 + 31, je Programm) | 7 | 1 050 422 |
+| Themen: Rückfrage „Suchbegriffgruppe als Bündel“ (Union, SPD, FDP, BSW) | 4 | 18 878 |
+| Themen: Bewertung ohne Parteinamen (21: 83 Maßnahmen, 31: 39) | 2 | 165 095 |
+| **Themen zusammen** | | **1 234 395** |
+| Haltungen: Recherche Phase A (36, 37 mit einer Rückfrage) | 2 | 91 913 |
+| Haltungen: Fundstellen (alle sieben Programme, beide Haltungen) | 7 | 136 534 |
+| Haltungen: Einordnung ohne Parteinamen | 1 | 17 527 |
+| **Haltungen zusammen** | | **245 974** |
+| **Gesamt** | | **1 480 369** |
+
+- Erfassung je Sammelauftrag 121 000 (Grüne) bis 210 000 Tokens (SPD, 37 Werkzeugaufrufe); im Mittel 150 000 für zwei Themen, also rund 75 000 je Programm und Thema.
+- Ein Bundesthema kostete damit rund 617 000 Tokens, eine Haltung rund 123 000 (eine davon zurückgestellt).
+- Die Rückfrage kostete nur 1,5 % der Erfassung. Ursache ist das bekannte Fehlerbild aus Punkt 4 (Namen von Suchbegriffgruppen als `buendel`): `programm-pruefen` ließ es im Sammelauftrag durch, erst `zusammenfuehren` lehnte ab.

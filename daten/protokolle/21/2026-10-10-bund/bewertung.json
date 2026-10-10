@@ -1,0 +1,648 @@
+{
+  "blind_pruefsumme": "cd9da2c871691bba67bc940c527e7ec93ecedf73a9732c9fa6c333123bf849ec",
+  "neue_instrumente": [
+    {
+      "kennung": "I1",
+      "name": "Sozialleistungen automatisch bzw. antragslos auszahlen, Datenaustausch zwischen Behörden (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Automatische Gewährung erhöht die Inanspruchnahme laut Forschung deutlich, Verwaltungshürden senken sie. Dagegen: Datenaustausch und IT brauchen mehrere Jahre, bei bereits hoch genutzten Leistungen wie Kindergeld ist der Zugewinn klein.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.nber.org/papers/w10488"
+    },
+    {
+      "kennung": "I2",
+      "name": "Aktiv über Ansprüche informieren und beim Antrag helfen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Experimente zeigen: Information erhöht die Inanspruchnahme, mit Antragshilfe noch stärker. Dagegen: Effekte bleiben begrenzt und erreichen die Bedürftigsten schlechter.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.nber.org/papers/w24652"
+    },
+    {
+      "kennung": "I3",
+      "name": "Regelsätze regelmäßig an die Preisentwicklung anpassen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Sichert die Kaufkraft und verhindert, dass Regelsätze hinter der Inflation zurückbleiben. Dagegen: Eine Fortschreibung besteht bereits; die Lücke durch die Bemessung selbst bleibt unberührt.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I4",
+      "name": "Steuerliche Entlastung für Alleinerziehende ausbauen oder als Abzug von der Steuerschuld gestalten (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Entlastet erwerbstätige Alleinerziehende, als Abzug von der Steuerschuld stärker bei kleinen Einkommen. Dagegen: Wer kaum Steuern zahlt, etwa im Grundsicherungsbezug, profitiert ohne Auszahlung kaum.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I5",
+      "name": "Elterngeld-Mindestbetrag und Ersatzrate für geringe Einkommen anheben (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Erhöht das Einkommen von Familien mit kleinen Einkommen im ersten Lebensjahr. Dagegen: zeitlich begrenzt und bei Grundsicherungsbezug weitgehend angerechnet.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I6",
+      "name": "Kindergeld an die Entwicklung des Kinderfreibetrags koppeln bzw. angleichen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Höheres Kindergeld erreicht alle Familien. Dagegen: Es wird auf die Grundsicherung angerechnet und senkt Armutsrisiken laut Evaluationen daher nur wenig; teuer bei geringer Zielgenauigkeit.",
+      "evidenz": "gemischt"
+    },
+    {
+      "kennung": "I7",
+      "name": "Unterhaltsvorschuss: Kindergeld nur teilweise anrechnen, Bezugsdauer ausweiten (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Erhöht die Leistung für Alleinerziehende ohne Unterhalt. Dagegen: Im Grundsicherungsbezug wird der Unterhaltsvorschuss angerechnet, der Zugewinn kommt nur Haushalten oberhalb davon zugute.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I8",
+      "name": "Existenzminimum und Umgangsmehrbedarf von Kindern in Trennungsfamilien absichern (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Deckt Mehrkosten, wenn Kinder in zwei Haushalten leben, und schließt so eine Lücke für Trennungsfamilien. Dagegen: betrifft eine begrenzte Gruppe, Ausgestaltung offen.",
+      "evidenz": "offen"
+    }
+  ],
+  "zuordnung": [
+    {
+      "kennung": "M01",
+      "ursachen": []
+    },
+    {
+      "kennung": "M02",
+      "ursachen": []
+    },
+    {
+      "kennung": "M03",
+      "ursachen": []
+    },
+    {
+      "kennung": "M04",
+      "instrument": "I2",
+      "ursachen": [
+        2103
+      ]
+    },
+    {
+      "kennung": "M05",
+      "ursachen": []
+    },
+    {
+      "kennung": "M06",
+      "instrument": "I8",
+      "ursachen": [
+        2102
+      ]
+    },
+    {
+      "kennung": "M07",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Schließt eine konkrete Bedarfslücke (Internet, Geräte) in der Grundsicherung. Dagegen: deckt nur einen Teilbedarf, die übrige Bemessung bleibt gleich.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2101
+      ]
+    },
+    {
+      "kennung": "M08",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Weniger Verwaltungshürden können die Inanspruchnahme erhöhen. Dagegen: ohne konkrete Schritte bleibt die Wirkung unbestimmt.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2103
+      ]
+    },
+    {
+      "kennung": "M09",
+      "ursachen": []
+    },
+    {
+      "kennung": "M10",
+      "instrument": "I3",
+      "ursachen": [
+        2101
+      ]
+    },
+    {
+      "kennung": "M11",
+      "ursachen": []
+    },
+    {
+      "kennung": "M12",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Automatische Befreiung erreicht Berechtigte, die sie nicht beantragen. Dagegen: kleiner Betrag, und der Rundfunkbeitrag ist Ländersache (Staatsvertrag).",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2103
+      ]
+    },
+    {
+      "kennung": "M13",
+      "ursachen": []
+    },
+    {
+      "kennung": "M14",
+      "instrument": "I1",
+      "ursachen": [
+        2103
+      ]
+    },
+    {
+      "kennung": "M15",
+      "ursachen": []
+    },
+    {
+      "kennung": "M16",
+      "instrument": "I6",
+      "ursachen": [
+        2102
+      ]
+    },
+    {
+      "kennung": "M17",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Kinderzuschlag und Wohngeld gelten als zielgenau gegen Armutsrisiken erwerbstätiger Eltern. Dagegen: geringe Inanspruchnahme und Schnittstellenprobleme, Ausgestaltung und Höhe offen.",
+        "evidenz": "gemischt"
+      },
+      "ursachen": [
+        2102
+      ]
+    },
+    {
+      "kennung": "M18",
+      "ursachen": []
+    },
+    {
+      "kennung": "M19",
+      "ursachen": []
+    },
+    {
+      "kennung": "M20",
+      "ursachen": []
+    },
+    {
+      "kennung": "M21",
+      "ursachen": []
+    },
+    {
+      "kennung": "M22",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Zahlung erhöht das Einkommen von Familien mit Kleinkindern. Dagegen: Studien zum früheren Betreuungsgeld zeigen weniger Kita-Nutzung und Müttererwerbstätigkeit; Höhe und Finanzierung offen.",
+        "evidenz": "gemischt"
+      },
+      "ursachen": [
+        2102
+      ]
+    },
+    {
+      "kennung": "M23",
+      "ursachen": []
+    },
+    {
+      "kennung": "M24",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Auszahlbare Steuergutschriften senkten in den USA Kinderarmut deutlich, kaum Beschäftigungseffekte. Dagegen: Höhe offen, Abstimmung mit Grundsicherung und Steuerverfahren aufwendig.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://www.nationalacademies.org/news/2025/09/federal-tax-credits-in-2021-lifted-more-than-2-million-children-out-of-poverty-says-new-report"
+      },
+      "ursachen": [
+        2102
+      ]
+    },
+    {
+      "kennung": "M25",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Senkt Kosten der Teilhabe am Vereinssport für Kinder. Dagegen: kleiner, befristeter Betrag ohne Bezug zum Einkommen.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2102
+      ]
+    },
+    {
+      "kennung": "M26",
+      "ursachen": []
+    },
+    {
+      "kennung": "M27",
+      "ursachen": []
+    },
+    {
+      "kennung": "M28",
+      "instrument": "I4",
+      "ursachen": [
+        2102
+      ]
+    },
+    {
+      "kennung": "M29",
+      "ursachen": []
+    },
+    {
+      "kennung": "M30",
+      "ursachen": []
+    },
+    {
+      "kennung": "M31",
+      "instrument": "I6",
+      "ursachen": [
+        2102
+      ]
+    },
+    {
+      "kennung": "M32",
+      "instrument": "I5",
+      "ursachen": [
+        2102
+      ]
+    },
+    {
+      "kennung": "M33",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Individuelle Ansprüche könnten Lücken durch Partnereinkommen schließen. Dagegen: nur perspektivisch angekündigt, Wirkung auf die Versorgungslücke unklar.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2101
+      ]
+    },
+    {
+      "kennung": "M34",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 1,
+        "begruendung": "Eine Mindestsicherung an der Armutsgefährdungsgrenze schließt die Einkommenslücke rechnerisch. Dagegen: sehr hohe Kosten ohne geklärte Finanzierung, Erwerbsanreize umstritten.",
+        "evidenz": "gemischt"
+      },
+      "ursachen": [
+        2101
+      ]
+    },
+    {
+      "kennung": "M35",
+      "instrument": "I7",
+      "ursachen": [
+        2102
+      ]
+    },
+    {
+      "kennung": "M36",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Mehr Geld für Angebote benachteiligter Kinder kann Teilhabe stärken. Dagegen: Umfang und Maßnahmen unbestimmt.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2102
+      ]
+    },
+    {
+      "kennung": "M37",
+      "ursachen": []
+    },
+    {
+      "kennung": "M38",
+      "ursachen": []
+    },
+    {
+      "kennung": "M39",
+      "instrument": "I7",
+      "ursachen": [
+        2102
+      ]
+    },
+    {
+      "kennung": "M40",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Höhere Geldleistungen schließen die Versorgungslücke für Geflüchtete. Dagegen: begrenzte Gruppe, Höhe an eine teure Mindestsicherung gekoppelt, Finanzierung offen.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2101
+      ]
+    },
+    {
+      "kennung": "M41",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Eine Neubemessung setzt direkt an zu niedrig berechneten Kinderbedarfen an, die Fachgutachten kritisieren. Dagegen: Methode und Zielhöhe offen, Bemessung bleibt umstritten.",
+        "evidenz": "gemischt"
+      },
+      "ursachen": [
+        2101
+      ]
+    },
+    {
+      "kennung": "M42",
+      "ursachen": []
+    },
+    {
+      "kennung": "M43",
+      "ursachen": []
+    },
+    {
+      "kennung": "M44",
+      "instrument": "I1",
+      "ursachen": [
+        2103
+      ]
+    },
+    {
+      "kennung": "M45",
+      "ursachen": []
+    },
+    {
+      "kennung": "M46",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Simulationen erwarten durch Bündelung und bessere Inanspruchnahme weniger Kinderarmut. Dagegen: Leistungshöhe nicht genannt, Umsetzung verwaltungsaufwendig.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://www.diw.de/de/diw_01.c.926528.de/s_14695.html"
+      },
+      "ursachen": [
+        2102,
+        2103
+      ]
+    },
+    {
+      "kennung": "M47",
+      "instrument": "I8",
+      "ursachen": [
+        2102
+      ]
+    },
+    {
+      "kennung": "M48",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Bringt Familien bei Geburt einen großen Betrag. Dagegen: Wer kaum Beiträge zahlt, etwa arme Haushalte, profitiert wenig; sehr hohe Kosten ohne Finanzierung.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2102
+      ]
+    },
+    {
+      "kennung": "M49",
+      "ursachen": []
+    },
+    {
+      "kennung": "M50",
+      "ursachen": []
+    },
+    {
+      "kennung": "M51",
+      "instrument": "I1",
+      "ursachen": [
+        2103
+      ]
+    },
+    {
+      "kennung": "M52",
+      "instrument": "I2",
+      "ursachen": [
+        2103
+      ]
+    },
+    {
+      "kennung": "M53",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Schließt eine Einkommenslücke selbstständiger Mütter rund um die Geburt. Dagegen: kleine Gruppe, kurze Dauer, Umlage muss erst aufgebaut werden.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2102
+      ]
+    },
+    {
+      "kennung": "M54",
+      "ursachen": []
+    },
+    {
+      "kennung": "M55",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Eine Leistung an einer Stelle baut mehrere Zugangshürden zugleich ab, was die Inanspruchnahme fördert. Dagegen: großer Umbau über Zuständigkeiten hinweg, Dauer und Höhe offen.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2103
+      ]
+    },
+    {
+      "kennung": "M56",
+      "ursachen": []
+    },
+    {
+      "kennung": "M57",
+      "ursachen": []
+    },
+    {
+      "kennung": "M58",
+      "einzeln": {
+        "wirksamkeit": 3,
+        "umsetzbarkeit": 1,
+        "begruendung": "Höhere gebündelte Kinderleistungen senkten etwa in Kanada Kinderarmut ohne Beschäftigungsverluste; Simulationen für Deutschland ähnlich. Dagegen: sehr hohe Kosten ohne geklärte Finanzierung.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://crdcn.ca/publication/evaluating-the-canada-child-benefit/"
+      },
+      "ursachen": [
+        2102
+      ]
+    },
+    {
+      "kennung": "M59",
+      "ursachen": []
+    },
+    {
+      "kennung": "M60",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Entlastet Familien und Alleinerziehende mit Betreuungs- und Unterhaltskosten. Dagegen: Steuerabzüge helfen kaum, wer wenig oder keine Steuern zahlt.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2102
+      ]
+    },
+    {
+      "kennung": "M61",
+      "instrument": "I3",
+      "ursachen": [
+        2101
+      ]
+    },
+    {
+      "kennung": "M62",
+      "ursachen": []
+    },
+    {
+      "kennung": "M63",
+      "instrument": "I1",
+      "ursachen": [
+        2103
+      ]
+    },
+    {
+      "kennung": "M64",
+      "ursachen": []
+    },
+    {
+      "kennung": "M65",
+      "instrument": "I4",
+      "ursachen": [
+        2102
+      ]
+    },
+    {
+      "kennung": "M66",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Geringere Anrechnung kann Alleinerziehenden mehr Einkommen lassen. Dagegen: unbestimmt, welche Anrechnung in welchem Umfang geändert wird.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2102
+      ]
+    },
+    {
+      "kennung": "M67",
+      "ursachen": []
+    },
+    {
+      "kennung": "M68",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Hilft jungen Familien bei Anschaffungskosten. Dagegen: Kredit statt Zuschuss, an Ehe gebunden, arme Familien und Alleinerziehende kaum erreicht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2102
+      ]
+    },
+    {
+      "kennung": "M69",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Gebührenfreiheit erleichtert Kindern die Teilhabe. Dagegen: sichert den Lebensunterhalt nicht, Einrichtungen sind Sache von Ländern und Kommunen.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2102
+      ]
+    },
+    {
+      "kennung": "M70",
+      "ursachen": []
+    },
+    {
+      "kennung": "M71",
+      "instrument": "I5",
+      "ursachen": [
+        2102
+      ]
+    },
+    {
+      "kennung": "M72",
+      "ursachen": []
+    },
+    {
+      "kennung": "M73",
+      "ursachen": []
+    },
+    {
+      "kennung": "M74",
+      "ursachen": []
+    },
+    {
+      "kennung": "M75",
+      "ursachen": []
+    },
+    {
+      "kennung": "M76",
+      "instrument": "I1",
+      "ursachen": [
+        2103
+      ]
+    },
+    {
+      "kennung": "M77",
+      "instrument": "I4",
+      "ursachen": [
+        2102
+      ]
+    },
+    {
+      "kennung": "M78",
+      "ursachen": []
+    },
+    {
+      "kennung": "M79",
+      "ursachen": []
+    },
+    {
+      "kennung": "M80",
+      "ursachen": []
+    },
+    {
+      "kennung": "M81",
+      "instrument": "I4",
+      "ursachen": [
+        2102
+      ]
+    },
+    {
+      "kennung": "M82",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Großzügigere Vermögensregeln verbessern die Lage älterer Grundsicherungsbeziehender. Dagegen: ändert die Höhe der Leistung nicht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2101
+      ]
+    },
+    {
+      "kennung": "M83",
+      "ursachen": []
+    }
+  ]
+}

@@ -178,6 +178,8 @@ Stand: 5. 10. 2026. Aus einer ausgewerteten Liste von Äußerungen aus einer Bef
 | 33 | Sollen Leistungen der Grundsicherung für Arbeitsuchende gekürzt werden, wenn zumutbare Arbeit ohne wichtigen Grund abgelehnt wird? | 5 Arbeitsplätze, 11 Preise und Löhne | bundesverfassungsgericht.de, iab-forum.de | KI-Freigabe 2026-10-06 |
 | 34 | Sollen trockengelegte Moore wieder vernässt werden? | 18 Hitze und Unwetter | greifswaldmoor.de, moorwissen.de | KI-Freigabe 2026-10-06 |
 | 35 | Soll in Deutschland die kommerzielle Erdgasförderung durch unkonventionelles Fracking erlaubt werden? | 3 Energiepreise | umweltbundesamt.de | KI-Freigabe 2026-10-06 |
+| 36 | Sollen Behörden und Schulen geschlechtergerechte Sprache verwenden? | 4 Schule, 14 Behördengänge, 19 Diskriminierung im Alltag | antidiskriminierungsstelle.gov.de, rechtschreibrat.com | KI-Freigabe 2026-10-10 |
+| 37 | Sollen Geflüchtete aus der Ukraine bei Bedürftigkeit Leistungen nach dem Asylbewerberleistungsgesetz statt Bürgergeld bzw. Grundsicherung erhalten? | 6 Zuwanderung und Integration, 5 Arbeitsplätze | bundestag.de | KI-Freigabe 2026-10-10 |
 
 **Ausgelassen (mit Grund):**
 
@@ -188,6 +190,7 @@ Stand: 5. 10. 2026. Aus einer ausgewerteten Liste von Äußerungen aus einer Bef
 - Aus der Liste vom 5. 10. 2026 (Haltungen 24–31): Haltung 28 hat die Recherche umformuliert („Sicherheitslage in ihrer Herkunftsregion es zulässt“ statt „Herkunftsregion sicher ist“), Haltung 31 auf Demokratieförderung verengt (die Jugendförderung ist ein anderes Feld, Kinder- und Jugendplan), Haltung 30 gilt für alle Studierenden gleich (nicht nur Nicht-EU-Ausländer). Zielkonflikt-Sätze, die in den geöffneten Quellen nicht wörtlich standen (u. a. DIW-Zahlen zur Erbschaftsteuer, Rechnungshof zu „Demokratie leben!“, 1,4-%-Zwischenziel der Windflächen, Kostenzahl je Bachelorstudium), sind weggelassen. Die Befragungszahl zur Ukraine stammt von 2023 und ist bei einer Prüfung durch eine neuere Welle zu ersetzen. Haltung 26 zitiert die amtliche englische Übersetzung des BVerfG-Urteils (die deutsche Seite war nicht abrufbar); Wortlaut: BVerfGE 88, 203, Leitsatz 4.
 - Aus der Liste vom 6. 10. 2026 (Haltungen 32–35, Zeilen nur als Art „haltung“ bestätigt): Haltung 32 geht auf eine Zeile über Kriegsangst und Fluchttraumata zurück und ist nur eine Annäherung an diese Sorge; die Recherche hat „weiter erhöhen“ zu „erhöhen“ vereinfacht (kein zeitabhängiger Ausgangspunkt), NATO, Wehrdienst und Waffenlieferungen bleiben eigene Haltungen (16, 11, 7). Haltung 33 gilt für alle Leistungsbeziehenden gleich und nennt „ohne wichtigen Grund“; der IAB-Überblick bezieht sich auf Sanktionsregeln vor 2019 und ist nicht 1:1 auf die Zeit danach übertragbar. Haltung 35 meint nur unkonventionelles Fracking (Verbot seit 2017), nicht konventionelle Förderung; PDF-Quellen waren nicht lesbar, die Zielkonflikte stützen sich auf HTML-Seiten des Umweltbundesamts.
 - Verwandte Themen bei 25, 26, 30, 31, 33 und 34 sind nur lose (die Prüfung verlangt mindestens ein Thema).
+- Ersatzfragen vom 10. 10. 2026 für die zurückgestellten Haltungen 6 und 28: Haltung 36 fragt positiv nach geschlechtergerechter Sprache statt nach einem Verbot (H6), damit sich Befürworter wie Gegner dazu äußern können. Haltung 37 fragt nach den Leistungen für Geflüchtete aus der Ukraine statt nach dem Ende ihres Schutzes (H28, keine Aussage in den Programmen); auf Rückfrage ohne Stichtag (1. 4. 2025) und Gesetzesnamen, weil die Programme älter sind. Beide Zielkonflikte von Haltung 37 stützen sich auf dieselbe Anhörungsseite des Bundestags; der Gesetzgebungsstand nach Mai 2026 war für die Recherche nicht zu klären.
 
 ### Ergebnisse Phase B (5. 10. 2026)
 
@@ -238,3 +241,15 @@ Lauf für die Haltungen 32–35 (Liste aus `/liste-einordnen`), alle Bundesprogr
 
 - 34: Sollen trockengelegte Moore wieder vernässt werden? (Union ja, Grüne ja; Linke: Zitat zur Revitalisierung ohne ausdrückliche Wiedervernässung)
 - 35: Soll in Deutschland die kommerzielle Erdgasförderung durch unkonventionelles Fracking erlaubt werden? (Grüne nein, Linke nein; FDP: Zitat zur heimischen Erdgasförderung mit Fracking-Verfahren, ohne Angabe unkonventioneller Lagerstätten)
+
+### Ergebnisse Phase B (10. 10. 2026)
+
+Lauf für die Haltungen 36 und 37 (Ersatzfragen für 6 und 28, Liste aus `/liste-einordnen`), alle sieben Bundesprogramme (BSW als lokale Kopie der Betreiberin, Prüfsumme stimmt); **KI-Entwurf**, Einordnung ohne Parteinamen. „–“ heißt „keine Aussage“. Bei Haltung 37 fanden die Agenten auch bei Grünen und Linken Zitate, die Einordnung wertete sie als „keine Aussage“.
+
+| ID | Frage | Union | SPD | Grüne | FDP | AfD | Linke | BSW |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 37 | Sollen Geflüchtete aus der Ukraine bei Bedürftigkeit Leistungen nach dem Asylbewerberleistungsgesetz statt Bürgergeld bzw. Grundsicherung erhalten? | ja (S. 43) | – | – | teils (S. 28) | ja (S. 26) | – | – |
+
+**Zurückgestellt** (nur zwei Programme mit erkennbarer Position; Phase A bleibt liegen):
+
+- 36: Sollen Behörden und Schulen geschlechtergerechte Sprache verwenden? (zwei Fundstellen, eingeordnet als teils und nein; die übrigen fünf Programme ohne Aussage). Auch die positive Fassung der Frage erreicht das Aufnahmekriterium nicht – wie Haltung 6.

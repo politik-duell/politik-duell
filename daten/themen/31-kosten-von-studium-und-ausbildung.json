@@ -25,5 +25,566 @@
       "ebene": "bund",
       "schlagwoerter": ["nebenjob", "bafoeg", "studienfinanzierung", "lebensunterhalt", "werkstudent", "erwerbstaetigkeit"]
     }
+  ],
+  "instrumente": [
+    {
+      "id": 8664,
+      "name": "Gesetzliche Mindestausbildungsvergütung anheben (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Hebt die Vergütung genau in den schwach bezahlten Bereichen direkt an; laut BIBB wird aber nur bei 3-4 % der Verträge genau der Mindestsatz vereinbart, und Simulationen warnten vor weniger Ausbildungsplätzen in einzelnen Segmenten.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.bibb.de/de/pressemitteilung_229684.php",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8665,
+      "name": "Schulgeld in schulischen Ausbildungen abschaffen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Entfällt eine direkte Kostenlast für Auszubildende ohne Vergütung; Länder wie NRW übernehmen Schulgeld bereits mit spürbarer Entlastung. Der Bund kann es nur teils über Berufsgesetze und Finanzierung regeln.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.bra.nrw.de/foerderportal-wirtschaft/foerderportal/schultraegerinnen-und-schultraeger/einstieg-die-schulgeldfreiheit-den-gesundheitsfachberufen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8666,
+      "name": "BAföG-Sätze und Freibeträge regelmäßig an Lebenshaltungskosten anpassen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Verhindert, dass die Förderung real an Wert verliert; Zuschüsse erhöhen nachweislich den Studienabschluss. Eine Indexierung hält aber nur das bestehende Niveau, ohne es anzuheben.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.aeaweb.org/doi/10.1257/app.20180100",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8667,
+      "name": "BAföG unabhängiger vom Elterneinkommen gestalten (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Erweitert den Kreis der Geförderten, deren Eltern faktisch nicht zahlen; Zuschüsse stärken den Abschluss. DIW fand bei BAföG-Reformen aber nur kleine Effekte auf die Studienaufnahme, zudem hohe Mehrkosten.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.diw.de/de/diw_01.c.87747.de/bafoeg-reform_hat_kaum_auswirkungen_auf_die_studienaufnahme.html",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8668,
+      "name": "Konditionen und Ausbau staatlicher Studien- und Bildungskredite (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Feste Zinsen und mehr Kreditvolumen erleichtern die Überbrückung, lösen aber nicht das Einkommensproblem und verlagern die Last als Schulden in die Zukunft; Wirkung auf Erwerbsarbeit kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8669,
+      "name": "Aufstiegs-BAföG ausweiten und vereinfachen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Verbessert die Förderung für Fach- und Fortbildungsschüler über ein bestehendes Gesetz; erreicht aber nur eine kleine Gruppe, für Studierende kaum relevant, Wirkung wenig untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8670,
+      "name": "Bundesmittel für Studierendenwerke und soziale Infrastruktur an Hochschulen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Kann Mensapreise, Beiträge und Wohnkosten senken; der Effekt je Person ist klein und hängt von der Ausgestaltung ab. Hochschulen sind Ländersache, der Bund kann nur über einen Pakt mitfinanzieren.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8671,
+      "name": "Förderung von Wohnheimplätzen für Studierende und Auszubildende (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Wohnheimmieten liegen meist deutlich unter Marktmieten, das Bundesprogramm läuft bereits und hat die geförderten Plätze verdoppelt; die Wirkung bleibt aber auf die Bewohner begrenzt und ist kaum evaluiert.",
+      "evidenz": "offen",
+      "beleg_studie_url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1166126",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 8672,
+      "name": "Vergünstigte Mobilität für Auszubildende (Ticket, Führerschein) (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Günstige Tickets entlasten laut DIW vor allem Junge, Auszubildende und Geringverdienende; es bleibt aber eine Entlastung bei einem Kostenposten, und der ÖPNV ist Ländersache mit Bundesmitfinanzierung.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.diw.de/de/diw_01.c.869729.de/publikationen/wochenberichte/2023_14_1/9-euro-ticket__niedrigere_preise_allein_staerken_alltagsmobilitaet_mit_oeffentlichen_verkehrsmitteln_nicht.html",
+      "entwurf_herkunft": "blind"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "durchsucht_fuer": [3101, 3102],
+      "massnahmen": [
+        {
+          "id": 8673,
+          "beschreibung": "BAföG-Empfängern ermöglichen, mehr hinzuzuverdienen",
+          "ursachen_ids": [3102],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Höhere Hinzuverdienstgrenzen verbessern das Einkommen von BAföG-Beziehenden, verstärken aber eher die Erwerbsarbeit neben dem Studium, statt sie zu verringern.",
+          "zitat": "Wir bieten BAföG-Empfängern die Möglichkeit, mehr hinzuzuverdienen.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=69",
+          "evidenz": "offen",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8674,
+          "instrument": 8668,
+          "beschreibung": "Festen Zinssatz für Studienkredite sicherstellen und faire Konditionen vereinbaren",
+          "ursachen_ids": [3102],
+          "zitat": "Die Aufnahme eines Studienkredits darf kein unkalkulierbares Risiko sein. Deshalb setzen wir uns für faire Konditionen ein und stellen einen festen Zinssatz sicher.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=69",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "durchsucht_fuer": [3101, 3102],
+      "massnahmen": [
+        {
+          "id": 8675,
+          "instrument": 8664,
+          "beschreibung": "Mindestausbildungsvergütung anheben.",
+          "ursachen_ids": [3101],
+          "zitat": "Für junge Menschen am Beginn von Ausbildung oder Studium sind derzeit – noch mehr als in der Bevölkerung insgesamt – die steigenden Lebenshaltungskosten das zentrale Problem. Wir wollen deshalb die Mindestausbildungsvergütung anheben.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=15",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8676,
+          "instrument": 8666,
+          "beschreibung": "BAföG-Förderhöhe regelmäßig an die Lebenshaltungskosten anpassen.",
+          "ursachen_ids": [3102],
+          "zitat": "Mit einer Reform des BAföG wollen wir dafür sorgen, dass die Höhe der Ausbildungsförderung regelmäßig an die steigenden […] Lebenshaltungskosten angepasst wird.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=15",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8677,
+          "instrument": 8671,
+          "beschreibung": "Mittel für den Neubau von Wohnheimen für Studierende und Azubis verstetigen und erhöhen.",
+          "ursachen_ids": [3101, 3102],
+          "zitat": "Wir wollen sicherstellen, dass Studierende und Azubis für ein WG-Zimmer möglichst nicht mehr als 400 Euro zahlen. Dafür wollen wir die Mittel in den Ausbau von Studierenden- und Azubi-Wohnheimen verstetigen und erhöhen und sicherstellen, dass diese Mittel von den Ländern tatsächlich für den Neubau von Wohnheimen verwendet werden.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=21",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8678,
+          "instrument": 8672,
+          "beschreibung": "Bundeseinheitlich vergünstigtes Deutschlandticket für bestimmte soziale Gruppen, darunter Auszubildende und Studierende.",
+          "ursachen_ids": [3101],
+          "zitat": "Außerdem setzen wir uns für ein bundeseinheitlich vergünstigtes Deutschlandticket zu einem reduzierten Preis für bestimmte soziale Gruppen wie Seniorinnen und Senioren, Familien mit Kindern, Auszubildende, Studierende, Schülerinnen und Schüler oder Menschen mit Behinderung ein.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=35",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8679,
+          "beschreibung": "Arbeitgeber sollen einen Führerscheinzuschuss bis zu 2.000 Euro steuer- und abgabenfrei an Azubis und junge Beschäftigte zahlen können.",
+          "ursachen_ids": [3101],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ein steuerfreier Führerscheinzuschuss senkt einen konkreten Kostenposten, hängt aber von der Zahlungsbereitschaft des Betriebs ab und ist eine einmalige Entlastung.",
+          "zitat": "Zudem wollen wir Arbeitgebern ermöglichen, einen Führerscheinzuschuss von bis zu 2.000 Euro steuer- und abgabenfrei an Auszubildende und junge Beschäftigte auszuzahlen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=36",
+          "evidenz": "offen",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8680,
+          "instrument": 8665,
+          "beschreibung": "Praxisnahe und kostenfreie Ausbildungen in den Gesundheitsfachberufen.",
+          "ursachen_ids": [3101],
+          "zitat": "Deshalb setzen wir uns für praxisnahe und kostenfreie Ausbildungen in den Gesundheitsfachberufen ein.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=32",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8681,
+          "beschreibung": "Duales Studium stärker fördern und Schutzrechte des Berufsbildungsgesetzes auf diesen Ausbildungsweg ausweiten.",
+          "ursachen_ids": [3101],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "BBiG-Schutzrechte brächten dual Studierenden u. a. Vergütungsanspruch und Mindestvergütung; betrifft aber eine kleine Gruppe, und viele erhalten bereits Vergütung. Wirkung kaum untersucht.",
+          "zitat": "Darüber hinaus werden wir das duale Studium stärker fördern und die Schutzrechte des Berufsbildungsgesetzes auch auf diesen Ausbildungsweg ausweiten.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=16",
+          "evidenz": "offen",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8682,
+          "beschreibung": "Bearbeitungszeiten für BAföG-Anträge durch Digitalisierung und Vereinfachung verkürzen.",
+          "ursachen_ids": [3102],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Kürzere Bearbeitungszeiten vermeiden Finanzierungslücken zu Studienbeginn; die Förderhöhe bleibt unverändert, Wirkung auf den Lebensunterhalt gering.",
+          "zitat": "Darüber hinaus müssen die Bearbeitungszeiten für BAföG-Anträge verkürzt werden – durch weitere Digitalisierung und Vereinfachung.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=16",
+          "evidenz": "offen",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "durchsucht_fuer": [3101, 3102],
+      "massnahmen": [
+        {
+          "id": 8683,
+          "instrument": 8664,
+          "beschreibung": "Mindestausbildungsvergütung wird deutlich angehoben.",
+          "ursachen_ids": [3101],
+          "zitat": "Wir werden die Mindestausbildungsvergütung deutlich anheben, um die Attraktivität der Ausbildung zu erhöhen und ein eigenständiges Leben zu ermöglichen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=78",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8684,
+          "instrument": 8672,
+          "beschreibung": "Führerscheinförderung, Lösung für ein Azubi-Ticket und attraktiverer ÖPNV für Auszubildende.",
+          "ursachen_ids": [3101],
+          "zitat": "Wir wollen für Menschen in Ausbildung auch den Führerscheinerwerb fördern, eine Lösung für ein Azubi-Deutschland-Ticket finden und den öffentlichen Personennahverkehr (ÖPNV) für Auszubildende attraktiver machen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=78",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8685,
+          "beschreibung": "Auszubildendenwerke nach dem Vorbild der Studierendenwerke fördern, mit Wohnheimen und Beratung.",
+          "ursachen_ids": [3101],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Auszubildendenwerke würden die fehlenden Trägerstrukturen für Azubi-Wohnheime schaffen, die bisher Förderung abrufen bremsen; der Aufbau dauert und erfordert Länderbeteiligung.",
+          "zitat": "Wir fördern Auszubildendenwerke nach dem Vorbild der Studierendenwerke. Im Fokus stehen Auszubildendenwohnheime, Betreuung ausländischer Auszubildender, psychologische, soziale und rechtliche Beratung sowie kulturelle Angebote.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=78",
+          "evidenz": "offen",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8686,
+          "instrument": 8671,
+          "beschreibung": "Bau und Sanierung von Wohnheimen über das Programm „Junges Wohnen“ verstetigen und weiter fördern, Auszubildende im Fokus.",
+          "ursachen_ids": [3101, 3102],
+          "zitat": "Für mehr bezahlbaren, inklusiven und barrierefreien Wohnraum möchten wir den Bau sowie die Sanierung von Wohnheimen über das von uns in der laufenden Wahlperiode aufgelegte Programm „Junges Wohnen“ verstetigen und weiter fördern. […] Auszubildende nehmen wir dabei verstärkt in den Fokus.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=79",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8687,
+          "instrument": 8666,
+          "beschreibung": "BAföG-Bedarfssätze und Freibeträge werden regelmäßig an die Lebenshaltungskosten angepasst.",
+          "ursachen_ids": [3102],
+          "zitat": "Das BAföG soll existenzsichernd und bedarfsgerecht sein. Deshalb setzen wir einen zuverlässigen Mechanismus ein, um die Bedarfssätze und Freibeträge regelmäßig an die steigenden Lebenshaltungskosten anzupassen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=79",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8688,
+          "instrument": 8667,
+          "beschreibung": "BAföG elternunabhängiger gestalten; Einkommen der Geschwister wird aus der Berechnung herausgenommen.",
+          "ursachen_ids": [3102],
+          "zitat": "Wir wollen das BAföG elternunabhängiger gestalten und das Einkommen der Geschwister aus der Berechnung herausnehmen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=79",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8689,
+          "beschreibung": "BAföG-Wohnkostenpauschale wird an die ortsüblichen Mieten angepasst.",
+          "ursachen_ids": [3102],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Miete ist der größte Ausgabenposten; eine ortsübliche Pauschale schließt die Lücke in teuren Städten gezielt. Erreicht nur BAföG-Beziehende und kann Mieten an Hochschulorten mittragen.",
+          "zitat": "Die Wohnkostenpauschale soll den ortsüblichen Mieten angepasst werden.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=79",
+          "beleg_studie_url": "https://www.aeaweb.org/doi/10.1257/app.20180100",
+          "evidenz": "belegt",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8690,
+          "instrument": 8669,
+          "beschreibung": "Aufstiegs-BAföG wird reformiert; Unterhaltszuschuss auch in Teilzeit und digitales Antragsverfahren.",
+          "ursachen_ids": [3102],
+          "zitat": "Für Berufstätige, die beispielsweise einen Meister machen wollen, reformieren wir das Aufstiegs-BAföG und ermöglichen den Bezug des Unterhaltszuschusses auch in Teilzeit […] sowie ein vollständig digitalisiertes Antragsverfahren.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=79",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "durchsucht_fuer": [3101, 3102],
+      "massnahmen": [
+        {
+          "id": 8691,
+          "beschreibung": "Stipendien für Auszubildende (SBB- und Azubi-Stipendien) ausbauen",
+          "ursachen_ids": [3101],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Stipendien entlasten einzelne leistungsstarke Auszubildende und Fachkräfte; sie erreichen nur wenige und setzen nicht an der Vergütungshöhe an. Wirkung kaum untersucht.",
+          "zitat": "Zudem wollen wir analog zum Freiwilligen Sozialen Jahr (FSJ) ein berufliches Orientierungsjahr schaffen und SBB-Stipendien sowie Azubi-Stipendien ausbauen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=9",
+          "evidenz": "offen",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8692,
+          "instrument": 8667,
+          "beschreibung": "BAföG zu einem elternunabhängigen Baukasten-System weiterentwickeln",
+          "ursachen_ids": [3102],
+          "zitat": "Die Wahl des Studiums darf nicht von den Voraussetzungen des Elternhauses abhängig sein. Daher wollen wir das BAföG zu einem elternunabhängigen Baukasten-System weiterentwickeln.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=10",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8693,
+          "instrument": 8668,
+          "beschreibung": "Bildungskreditprogramm stärken und ausbauen",
+          "ursachen_ids": [3102],
+          "zitat": "Das Bildungskreditprogramm wollen wir bereits kurzfristig stärken und ausbauen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=10",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "durchsucht_fuer": [3101, 3102],
+      "massnahmen": [
+        {
+          "id": 8694,
+          "beschreibung": "BAföG-Rückzahlung bei Geburt eines Kindes während Ausbildung oder Studium erlassen",
+          "ursachen_ids": [3102],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ein Rückzahlungserlass entlastet Eltern unter den Geförderten nach dem Abschluss, ändert aber nichts am laufenden Lebensunterhalt während des Studiums.",
+          "zitat": "BAföG-Empfängern soll bei einer Geburt während der Ausbildung bzw. während des Studiums die Rückzahlung nach erfolgreichem Abschluss erlassen werden.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=149",
+          "evidenz": "offen",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "durchsucht_fuer": [3101, 3102],
+      "massnahmen": [
+        {
+          "id": 8695,
+          "beschreibung": "Mindestausbildungsvergütung von 80 Prozent der tariflichen Vergütung der Branchen",
+          "ursachen_ids": [3101],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ein Mindestsatz von 80 % des tariflichen Durchschnitts würde schwach bezahlte Bereiche deutlich anheben und Schulgeld entfallen lassen; Simulationen warnen bei starken Anhebungen vor weniger Ausbildungsplätzen.",
+          "zitat": "Wir wollen, dass das Schulgeld entfällt und Azubis eine Mindestausbildungsvergütung erhalten (80 Prozent der durchschnittlichen tariflichen Ausbildungsvergütung der Branchen).",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=39",
+          "beleg_studie_url": "https://www.bibb.de/de/pressemitteilung_229684.php",
+          "evidenz": "gemischt",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8696,
+          "beschreibung": "Unternehmen sollen sich an bezahlbaren Wohnheimplätzen für Auszubildende finanziell beteiligen",
+          "ursachen_ids": [3101],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Mehr günstige Wohnheimplätze würden Auszubildende entlasten; eine Pflichtabgabe für Unternehmen ist rechtlich aufwendig und in Ausgestaltung und Wirkung unklar.",
+          "zitat": "Unternehmen sollten dazu verpflichtet werden, sich insbesondere im ländlichen Raum an der Schaffung von öffentlichem Wohnraum, etwa bezahlbaren Wohnheimplätzen für Auszubildende, finanziell zu beteiligen.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=39",
+          "evidenz": "offen",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8697,
+          "instrument": 8665,
+          "beschreibung": "Schulgeld abschaffen, Ausbildung gebührenfrei machen",
+          "ursachen_ids": [3101],
+          "zitat": "Jede Ausbildung soll vollqualifizierend und gebührenfrei sein. Wir wollen, dass das Schulgeld entfällt […]",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=39",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8698,
+          "beschreibung": "Kostenloses 0-Euro-Ticket für Auszubildende und Studierende im Nahverkehr",
+          "ursachen_ids": [3101],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Kostenloser Nahverkehr entlastet Auszubildende bei einem Kostenposten, günstige Tickets erreichen laut DIW gerade Junge; die dauerhafte Finanzierung durch Bund und Länder ist aber ungeklärt.",
+          "zitat": "Wir wollen das 9-Euro-Ticket sofort wieder einführen. Für Schüler*innen, Azubis, Studierende und Senior*innen wollen wir ein sofortiges 0-Euro-Ticket.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=36",
+          "beleg_studie_url": "https://www.diw.de/de/diw_01.c.869729.de/publikationen/wochenberichte/2023_14_1/9-euro-ticket__niedrigere_preise_allein_staerken_alltagsmobilitaet_mit_oeffentlichen_verkehrsmitteln_nicht.html",
+          "evidenz": "belegt",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8699,
+          "beschreibung": "Ausbildungskosten für Psychotherapeut*innen deckeln, Beschäftigungsstatus in Ausbildung",
+          "ursachen_ids": [3101],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Gedeckelte Kosten und ein tariffähiger Beschäftigungsstatus würden die hohe Belastung in der Psychotherapie-Ausbildung spürbar senken; betrifft nur eine Berufsgruppe, Finanzierung über Kassen offen.",
+          "zitat": "Die Ausbildungskosten für zukünftige Psychotherapeut*innen müssen gedeckelt werden. Psychotherapeut*innen in Ausbildung müssen einen Beschäftigungsstatus erhalten, der ihre Einbindung in Tarifstrukturen erlaubt.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=19",
+          "evidenz": "offen",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8700,
+          "beschreibung": "BAföG für alle: elternunabhängig, existenzsichernd, Höhe an Lebenshaltungskosten und Armutsgrenze",
+          "ursachen_ids": [3102],
+          "wirksamkeit": 3,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ein existenzsichernder Vollzuschuss für alle setzt direkt am Erwerbszwang an; Zuschüsse senken Erwerbsarbeit und erhöhen den Abschluss nachweislich. Die Kosten wären aber sehr hoch und die Finanzierung ist offen.",
+          "zitat": "Die Linke fordert, ein BAföG für alle, das heißt: eltern-, alters- und herkunftsunabhängig, existenzsichernd, unbefristet und als Vollzuschuss. Die Höhe muss regelmäßig an die Lebenshaltungskosten angepasst werden und darf nicht unterhalb der Armutsgefährdungsgrenze liegen.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=40",
+          "beleg_studie_url": "https://www.aeaweb.org/doi/10.1257/app.20180100",
+          "evidenz": "belegt",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8701,
+          "instrument": 8669,
+          "beschreibung": "Anspruch auf Aufstiegs-BAföG für dreijährige schulische Fachschulausbildungen ohne Sanktionen",
+          "ursachen_ids": [3102],
+          "zitat": "Schulische Ausbildungen (Fachschulausbildungen nach DQR 6) sollen erhalten bleiben. Wer eine solche dreijährige Ausbildung durchläuft, soll Anspruch auf das sogenannte Aufstiegs-BaföG (AFBG) haben und keinerlei Sanktionen unterliegen.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=39",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8702,
+          "instrument": 8670,
+          "beschreibung": "Studierendenwerke so finanzieren, dass sie Semesterbeiträge, Mensapreise und Wohnkosten senken können",
+          "ursachen_ids": [3102],
+          "zitat": "Die Studierendenwerke müssen ausreichend finanziert werden, damit sie die Semesterbeiträge, Mensapreise und Wohnkosten für Studierende senken können.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=40",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8703,
+          "beschreibung": "Studentische Beschäftigte tarifvertraglich absichern",
+          "ursachen_ids": [3102],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Bessere Bezahlung studentischer Hilfskräfte senkt die nötige Arbeitszeit für einen Teil der Jobbenden; Tarifverträge schließen aber Länder und Tarifparteien, der Bund kann das kaum durchsetzen.",
+          "zitat": "Studentische Beschäftigte müssen tarifvertraglich abgesichert werden.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=41",
+          "evidenz": "offen",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "durchsucht_fuer": [3101, 3102],
+      "massnahmen": [
+        {
+          "id": 8704,
+          "beschreibung": "BAföG reformieren, damit das Studium auskömmlich finanziert ist.",
+          "ursachen_ids": [3102],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Eine auskömmliche Förderung setzt direkt am Zwang zur Erwerbsarbeit an, Zuschüsse stärken nachweislich den Abschluss; Höhe und Finanzierung bleiben aber unbestimmt.",
+          "zitat": "Eine BAföG-Reform zur auskömmlichen Finanzierung des Studiums und einen Hochschulsozialpakt für gute soziale Infrastruktur sind dringend nötig.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=25",
+          "beleg_studie_url": "https://www.aeaweb.org/doi/10.1257/app.20180100",
+          "evidenz": "belegt",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 8705,
+          "instrument": 8670,
+          "beschreibung": "Hochschulsozialpakt für gute soziale Infrastruktur an den Hochschulen.",
+          "ursachen_ids": [3102],
+          "zitat": "Eine BAföG-Reform zur auskömmlichen Finanzierung des Studiums und einen Hochschulsozialpakt für gute soziale Infrastruktur sind dringend nötig.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=25",
+          "stand": "2026-10-10",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    }
   ]
 }
