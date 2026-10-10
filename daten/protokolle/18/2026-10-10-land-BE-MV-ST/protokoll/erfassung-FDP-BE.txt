@@ -1,0 +1,79 @@
+{
+  "partei_id": 14,
+  "land": "BE",
+  "massnahmen": [
+    {
+      "beschreibung": "Klimaresilienz der Stadt stärken, unter anderem durch Maßnahmen zur Stadtdurchlüftung und Verschattung.",
+      "ursachen_ids": [1803],
+      "buendel": "Stadtgrün, Verschattung, Frischluft",
+      "zitat": "Wir wollen die Klimaresilienz unserer Stadt stärken: durch Maßnahmen zur Stadtdurchlüftung und zur Verschattung […]",
+      "seite": 89
+    },
+    {
+      "beschreibung": "Regenwassermanagement flächendeckend anstoßen und fördern: Stauraum in der Kanalisation, vor allem dezentrales Auffangen und Versickern.",
+      "ursachen_ids": [1804],
+      "buendel": "Technischer Rückhalt, Kanal und Speicher",
+      "zitat": "Die immer noch viel zu großen Mengen an Schmutzwassereinleitungen in die Berliner Gewässer wollen wir künftig weitgehend verhindern. Dazu werden wir flächendeckend Maßnahmen zum Regenwassermanagement anstoßen und fördern. Neben Maßnahmen zur Schaffung von Stauraum in der Kanalisation setzen wir vor allem auf dezentrale Ansätze zum Auffangen und Versickern von Regenwasser an Gebäuden und im Straßenraum.",
+      "seite": 89
+    },
+    {
+      "beschreibung": "Grün- und Erholungsflächen zwischen den Siedlungsachsen dauerhaft schützen.",
+      "ursachen_ids": [1804],
+      "buendel": "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen",
+      "zitat": "Zwischen den Achsen schützen wir dauerhaft Grün- und Erholungsflächen, außerhalb Berlins auch die landwirtschaftliche Nutzung.",
+      "seite": 37
+    },
+    {
+      "beschreibung": "Randbebauung des Tempelhofer Feldes sofort beginnen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [1804],
+      "buendel": "Bauland ausweisen, Bauen nicht verteuern",
+      "zitat": "Wir wollen sofort, ohne erneute Abstimmung, mit der Randbebauung des Tempelhofer Feldes beginnen.",
+      "seite": 47
+    },
+    {
+      "beschreibung": "Nachverdichtung im Bestand und Bauen in die Höhe ermöglichen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [1803],
+      "buendel": "Nachverdichtung nicht bremsen",
+      "zitat": "Wir wollen auch im Bestand nachverdichten. Berlin muss auch weiter in die Höhe ragen, nicht nur innerhalb des S-Bahn-Rings, sondern auch darüber hinaus.",
+      "seite": 40
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 1805,
+      "seiten": [72, 74, 87, 89],
+      "grund": "Kein Bezug zu Hochwasser, Deichen, Rückhalt oder Bauen in Überschwemmungsgebieten. Katastrophenschutz betrifft Notstrom, Lagezentrum und Vorrat, nicht die Bebauung."
+    }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "durchlüft", "ursache": 1803, "richtung": "Stadtgrün, Verschattung, Frischluft" },
+    { "begriff": "Schmutzwasser", "ursache": 1804, "richtung": "Technischer Rückhalt, Kanal und Speicher" }
+  ]
+}
+
+Protokoll
+
+Gelesen: Inhaltsverzeichnis (S. 3–5); Kapitel „Stadtentwicklung und Wohnen“ (S. 35–48: Bürger bauen Berlin, Einfach mehr bauen, Eigentum, Randbebauung Tempelhofer Feld); Kapitel „Verkehr“ (S. 55, 60) nur Fundstellen; „Sauberkeit und Ordnung“ (S. 69–70); „Katastrophenschutz“ (S. 72–75); „Umwelt und Klima“ (S. 89–90) und Energie (S. 87–88). Seiten 1, 94, 100, 105 ohne Text, keine Rolle gespielt.
+
+Gleichartige Stellen nicht gesondert erfasst (Bündel bereits belegt):
+- Stadtgrün: Straßenbäume nachpflanzen und bewässern (S. 89, 70); Pflege und Qualität von Grünflächen (S. 69–70); gesamtstädtische Sicherung von Grünflächen und Biotopverbund (S. 89); Luftqualität durch städtebauliche Durchlüftung und Bepflanzung (S. 90). Zitate ohne „Stadt“ im Satz bzw. Luftqualität nicht als Frischluft-Maßnahme gewertet.
+- Technischer Rückhalt: Pilotgebiete für Regenwassermanagement (S. 90); Schmutzwasser-Zusage ist über die Zitatkette in der Maßnahme erfasst.
+- Flächenverbrauch: Verkehrsinfrastruktur unterirdisch, oberirdisch und in der Höhe, „Kluge Verkehrskonzepte … reduzieren den Flächenverbrauch“ (S. 55) – Investition, Zweck Flächenersparnis; gleichartig zur Flächen-Zusage (S. 37), daher nicht zusätzlich erfasst.
+- Bauland: Verkauf landeseigener Baugrundstücke mit Höchstgebot (S. 37–38); Baulückenkataster (S. 37); Neubaugebiete am Stadtrand mit höherem privatem Grünanteil (S. 38); Kleingartenanlagen für Bauland (S. 41); TXL-Potenzialgebiete (S. 39); Aufstockung und Bürogebäude-Umbau (S. 40, 45); innerstädtische Hochhäuser (S. 45).
+- Nachverdichtung: urbane Gebiete innerhalb des S-Bahn-Rings (S. 44).
+
+Nicht erfasst (Ziel oder kein Bezug zu den Ursachen):
+- S. 87: „Wir wollen eine Stadt, die Regenwasser als Ressource nutzt … als Schwammstadt Starkregen bewältigt“ – Ziel; Mittel nur allgemein (privates Kapital, Anreize).
+- S. 60: Klimaanlagen in allen ÖPNV-Fahrzeugen – Schutz in Fahrzeugen, keine Maßnahme gegen die Aufheizung; nach Leitfaden R4 nicht zu 1803.
+- S. 40: „Grünanteile“ in urbanen Neubauquartieren (S. 48) – Ziel ohne eigene Handlungszusage.
+- S. 87: Ablehnung weiterer energetischer Anforderungen an Gebäude – kein Bezug zu Hitzeschutz.
+- S. 40: Entwicklungsplan für Ufer- und Wasserflächen – kein Hochwasser- oder Siedlungsbezug im Zitat.
+- Nebenstraßen-Kopfsteinpflaster, Fußwege, Radverkehr – kein Bezug zu den Ursachen.
+
+Richtungen ohne Maßnahme:
+- 1803 „Bauvorschriften und Gebäudehitzeschutz“: keine Zusage zu Hitzeschutz an Gebäuden; „sommerlicher Wärmeschutz“, Außenverschattung oder Kühlung kommen im Text nicht vor. Bauvorschriften-Vereinfachung (S. 44–45) ohne Hitzebezug.
+- 1805 (alle drei Richtungen): keine Treffer und keine Aussage zu Hochwasser, Überschwemmungsgebieten, Deichen, Rückhalt oder Eigenvorsorge der Eigentümer.
+
+Stand im PDF: nicht abweichend.

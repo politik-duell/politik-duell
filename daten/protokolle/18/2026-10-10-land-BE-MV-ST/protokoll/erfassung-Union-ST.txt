@@ -1,0 +1,58 @@
+{
+  "partei_id": 11,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Hitzeschutz als Förderaspekt in der Städtebauförderung stärken; Maßnahmen zur Wasserspeicherung in Stadtquartieren unterstützen",
+      "ursachen_ids": [1803],
+      "ursachen_offen": [1804],
+      "zitat": "Wir wollen den Hitzeschutz als Förderaspekt in der Städtebauförderung stärken, Maßnahmen zur besseren Wasserspeicherung unterstützen und damit klimaresiliente Stadtquartiere schaffen.",
+      "seite": 68
+    },
+    {
+      "beschreibung": "Flächenverbrauch begrenzen: Mehrfachnutzung versiegelter Flächen und Reaktivierung von Brachflächen fördern; Förderkulisse für Entsiegelung eröffnen",
+      "ursachen_ids": [1804],
+      "ursachen_offen": [1803],
+      "zitat": "Flächenverbrauch wirksam begrenzen: Boden ist eine endliche Ressource. Wir werden die Mehrfachnutzung bereits versiegelter Flächen ausbauen und die Reaktivierung von Brachflächen fördern. Gleichzeitig möchten wir eine Förderkulisse für Entsiegelungsprojekte eröffnen, um Städte und Gemeinden insbesondere auch bei der Umsetzung von Hitzeschutzplänen zu unterstützen.",
+      "seite": 68
+    },
+    {
+      "beschreibung": "Baugenehmigungen vereinfachen und beschleunigen; digitales Bauamt in den Kommunen unterstützen",
+      "ursachen_ids": [],
+      "ursachen_offen": [1804],
+      "zitat": "Wir vereinfachen und beschleunigen Baugenehmigungen und unterstützen die Kommunen bei der Schaffung eines durchgängig digitalen Bauamtes, für weniger Bürokratie und mehr Tempo beim Wohnungsbau.",
+      "seite": 65
+    },
+    {
+      "beschreibung": "Deiche zurückverlegen, wo eine Kosten-Nutzen-Abschätzung sinnvoll erscheint",
+      "ursachen_ids": [1805],
+      "zitat": "Deshalb werden wir dort, wo es eine Kosten- Nutzenabschätzung sinnvoll erscheinen lässt, Deiche zurückverlegen",
+      "seite": 68
+    }
+  ],
+  "nicht_erfasst": []
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis (S. 2); Einleitung (S. 3–4, nur Überblick); Sicherheit, Brand- und Katastrophenschutz (S. 9–10, Fundstellen zu Hochwasser geprüft); Landwirtschaft (S. 39–42, Fundstellen S. 39 und Wasserrückhalt S. 42); Wohnraum schaffen, Regionen stärken (S. 64–65); Die Natur – Unsere Heimat (S. 66–69).
+Hitze: Im Programm nur die Stellen S. 68 (Hitzeschutz in der Städtebauförderung, Hitzeschutzpläne). Keine Maßnahme zu Stadtgrün, Straßenbäumen oder Gebäudehitzeschutz gefunden.
+
+Erfasst: 4 Maßnahmen. Ursache 1803: 1 (S. 68, Hitzeschutz/Städtebau); Ursache 1804: 1 (S. 68, Flächenverbrauch/Entsiegelung), ursachen_offen 1804 (S. 65, Bauerleichterung); Ursache 1805: 1 (S. 68, Deichrückverlegung).
+
+Grenzfälle: S. 68 Förderkulisse Entsiegelung mit Hitzeschutzplänen (1804 ids, 1803 offen); S. 68 Wasserspeicherung in Stadtquartieren (1803 ids, 1804 offen); S. 65 Bauerleichterung (offen 1804, Richtung „Bauen nicht verteuern“ des Auftrags).
+
+Nicht erfasst (gelesen, nicht aufgenommen):
+- S. 39 „Landwirtschaftliche Nutzflächen wirksam schützen“ (Begrenzung Versiegelung, Zersiedelung): gleiche Zusage zu Flächenverbrauch wie S. 68, einmal erfasst (S. 68 als aussagekräftigere Stelle mit Entsiegelung).
+- S. 66 „Ungenutzte Flächen aktivieren“ (Brachflächen, Baulücken): gleiche Zusage wie S. 68, einmal erfasst.
+- S. 40 Waldumbau/klimaangepasstes Baumartenspektrum: R4 (kein Stadt-, Quartier- oder Hitzebezug).
+- S. 42 „Wasserrückhaltung in der Fläche stärken“ (Gewässerunterhaltung, Landwirtschaft): R5, kein Hochwasserbezug im Zitat, also nicht 1805.
+- S. 68 „Modernes Wassermanagement“ (Aktionsplan, Grundwasser, Oberflächengewässer): kein Hochwasser- oder Siedlungsbezug im Zitat.
+- S. 67 Wassergesetz, „Hochwasserschutz, Deichrückverlegungen und Renaturierung von Auen verbessert“: Rückblick ohne eigene Handlung.
+- S. 65 „energetische und barrierefreie Sanierungen“, „energieeffizienten Umbau von Wohnraum“ (S. 66): kein Hitzebezug (R4).
+- S. 9–10 Brand- und Katastrophenschutz, Sirenen, Löschwasserentnahmestellen, Extremwetter: R8, Zitat ohne Hochwasserschutz.
+
+Richtungen ohne Maßnahme: Stadtgrün/Verschattung/Frischluft (1803): keine Zusage gefunden. Bauvorschriften Gebäudehitzeschutz (1803): keine. Nachverdichtung (1803): keine. Technischer Rückhalt, Kanal und Speicher (1804): keine Zusage gefunden (Regenwasser, Versickerung, Kanalisation nicht im Programm). Bauverbot in Überschwemmungsgebieten, Flächen freihalten, Rückbau (1805): keine Zusage gefunden. Bauvorsorge der Eigentümer (1805): keine (kein Treffer für Objektschutz oder Eigenvorsorge). Technischer Hochwasserschutz (1805): erfasst über S. 68 (Deichrückverlegung); Polder, Rückhaltebecken, Retention: nicht im Text.
+
+Seiten ohne Text: nur S. 1 (Titelseite), keine Rolle.
+Stand im PDF: Beschlossen 13. Juni 2026 (Titelseite) – entspricht dem Auftrag.

@@ -1,0 +1,101 @@
+{
+  "partei_id": 13,
+  "land": "MV",
+  "stand_im_pdf": "Stand: 16.07.2026 (Titelseite)",
+  "massnahmen": [
+    {
+      "beschreibung": "Kommunale Klimaanpassungskonzepte fördern, damit Orte vor Hitze und Starkregen geschützt sind",
+      "ursachen_ids": [1803],
+      "ursachen_offen": [1804],
+      "zitat": "Um das klimaschädliche CO2 besser zu speichern und uns vor Extremwetterereignissen besser zu schützen, werden wir: […] kommunale Klimaanpassungskonzepte fördern, damit die Menschen in jedem Dorf und jeder Stadt vor Hitze und Starkregen geschützt sind.",
+      "seite": 11
+    },
+    {
+      "beschreibung": "Klimaanpassung in den Kommunen stärken mit Trinkwasserspendern, klimaresilienten Baumpflanzungen und Schwammstadt-Maßnahmen, damit es im Sommer kühler bleibt",
+      "ursachen_ids": [1803, 1804],
+      "buendel": "Stadtgrün, Verschattung, Frischluft",
+      "zitat": "Wir helfen Natur und Menschen in allen Orten, indem wir Klimaanpassung in den Kommunen stärken, etwa durch Trinkwasserspender, klimaresiliente Baumpflanzungen und Schwammstadt-Maßnahmen. Damit es im Sommer kühler bleibt, Wasser verfügbar ist und Orte besser mit Starkregen und Hitze klarkommen.",
+      "seite": 13
+    },
+    {
+      "beschreibung": "Kommunen bei Klimaanpassung, Hitzevorsorge und Schutz vor Starkregen und Hochwasser stärker unterstützen",
+      "ursachen_ids": [1805],
+      "ursachen_offen": [1803, 1804],
+      "zitat": "Kommunen unterstützen wir stärker bei Klimaanpassung, Hitzevorsorge und Schutz vor Starkregen und Hochwasser.",
+      "seite": 11
+    },
+    {
+      "beschreibung": "Naturnahe Pufferzonen an Gewässern ausbauen, damit Überflutungen abgefedert und Wasser in der Fläche gehalten wird",
+      "ursachen_ids": [1805],
+      "zitat": "Für sauberes Wasser und gesunde Böden wollen wir: die Wasserrahmenrichtlinie und die Landeswasserstrategie konsequent umsetzen, insbesondere durch den Ausbau natürlicher Pufferzonen wie breiterer Gewässerrandstreifen, Feuchtgebiete und Auen, um Überflutungen abzufedern und Wasser besser in der Fläche zu halten.",
+      "seite": 14
+    },
+    {
+      "beschreibung": "Bundes-Bauturbo für Innenentwicklung und Nachverdichtung nutzen, um zusätzlichen Flächenverbrauch auf der grünen Wiese zu vermeiden",
+      "ursachen_ids": [1804],
+      "ursachen_offen": [1803],
+      "buendel": "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen",
+      "zitat": "Für mehr Tempo bei der Schaffung von Wohnraum wollen wir: […] den „Bauturbo“ des Bundes insbesondere für Innenentwicklung, Nachverdichtung und vereinfachtes Bauen im Bestand nutzen, um langwierige Bauleitplanungsverfahren, hohe Erschließungskosten und zusätzlichen Flächenverbrauch auf der grünen Wiese zu vermeiden.",
+      "seite": 52
+    },
+    {
+      "beschreibung": "Leerstand und Brachflächen kommunal managen und Zwischennutzungen fördern",
+      "ursachen_ids": [1804],
+      "zitat": "Leerstand aktiv managen, etwa durch kommunales Leerstands- und Brachflächenmanagement sowie die Förderung temporärer Zwischennutzungen.",
+      "seite": 52
+    },
+    {
+      "beschreibung": "Gebäudebestand effizienter nutzen, etwa durch erleichterte Dachaufstockungen und Umwandlung leerstehender Gewerberäume in Wohnraum",
+      "ursachen_ids": [],
+      "ursachen_offen": [1804],
+      "zitat": "Für mehr Tempo bei der Schaffung von Wohnraum wollen wir: […] den Gebäudebestand und die vorhandene Infrastruktur effizienter nutzen, etwa durch erleichterte Dachaufstockungen und -ausbauten sowie die Umwandlung leerstehender Gewerberäume in Wohnraum.",
+      "seite": 52
+    },
+    {
+      "beschreibung": "Landesdarlehen, mit dem Kommunen Grundstücke und Gebäude erwerben können, damit schneller und günstiger Wohnungen gebaut werden",
+      "ursachen_ids": [1804],
+      "buendel": "Bauland ausweisen, Bauen nicht verteuern",
+      "zitat": "Wir geben den Kommunen durch ein Landesdarlehen die Handlungsfähigkeit, Grundstücke und Gebäude zu erwerben. Damit schneller und günstiger Wohnungen gebaut werden können; auch dort, wo der Markt versagt.",
+      "seite": 51
+    },
+    {
+      "beschreibung": "Vorgaben wie die Stellplatzpflicht reduzieren und die Landesbauordnung vereinfachen, damit Wohnungsbau nicht unnötig teurer wird",
+      "ursachen_ids": [],
+      "ursachen_offen": [1804],
+      "zitat": "Wir reduzieren Vorgaben wie z. B. die Stellplatzpflicht dort, wo sie den Wohnungsbau unnötig verteuern.",
+      "seite": 55
+    }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "Brachfläche", "ursache": 1804, "richtung": "Flächen wiedernutzen statt neu zu bebauen" },
+    { "begriff": "Bauturbo", "ursache": 1804, "richtung": "Innenentwicklung statt Flächenverbrauch" },
+    { "begriff": "Pufferzone", "ursache": 1805, "richtung": "Wasser in der Fläche halten, Überflutungen abfedern" }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: S. 2 (Inhalt), S. 5–11 (Kapitel 1 Klima, vollständig), S. 12–15 (Kapitel 2 Umwelt, Auszüge: Präambel-Abschnitt S. 13, 2.1 S. 14, 2.2–2.3 S. 14–15), S. 50–55 (Kapitel 8 Wohnraum, vollständig). Kapitel 9 Gesundheit, Mobilität, Wirtschaft und Resilienz (17.3) nur über die Suchbegriffe geprüft: keine Fundstellen zu Hitze, Kühlung, Hochwasser, Versiegelung oder Bauen im Überschwemmungsgebiet außerhalb der gelesenen Seiten.
+
+Zuordnung Wohnraum (S. 52–55): Der Bauturbo-Satz nennt Flächenverbrauch ausdrücklich (1804 bzw. Bündel „Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen“); die Nachverdichtung dort ist zusätzlich als Grenzfall 1803 offen. Brachflächen-, Leerstands- und Bestandsmaßnahmen sind Innenentwicklung, deshalb 1804 (Brachflächen als ids, die Bestandsnutzung als offen). Landesbodenfonds (S. 51) mit Bündel „Bauland ausweisen, Bauen nicht verteuern“. Baukosten/Stellplatz (S. 55) gehört nach dem Bündelnamen zu 1804, aber nicht zum Bündel „Bauland ausweisen“ (anderer Hebel), daher ohne buendel und nur offen. Weitere gleichartige Stellen zu Baurecht (S. 52: digitaler Bauantrag, Bauzeiten verkürzen, serielle Bauweise; S. 55: Landesbauordnung, Standards, serielle Bauweise) sind gleichartig mit dem Baukosten-Punkt und nicht gesondert erfasst.
+
+Zu 1803 und 1805: Klimaanpassungs-Maßnahmen (S. 11, 13) und Pufferzonen (S. 14) wie erfasst. S. 11 „Kommunen unterstützen … Klimaanpassung, Hitzevorsorge, Starkregen und Hochwasser“ als Förderzusage mit mehreren Zwecken (1805 ids, 1803/1804 offen).
+
+Nicht erfasst:
+- S. 8–9 Photovoltaik auf Dächern, öffentlichen Liegenschaften, versiegelten Flächen und Parkplätzen: Energiezweck, keine Entsiegelung oder Flächenbegrenzung im Zitat.
+- S. 11 Wiedervernässung der Moore, Stärkung von Feuchtgebieten und Schwammlandschaften im Landeswassergesetz; S. 14 Moorwiedervernässung und Wasserrückhaltung: Wasserrückhalt ohne Siedlungs- oder Hochwasserbezug (R5).
+- S. 15 Artenvielfalt im urbanen Raum, Blühflächen, Hecken: Biodiversitätsziel ohne Hitze- oder Kühlbezug (R4).
+- S. 15 Alleenschutz und einheitlicher Baumkataster: kein Stadt-, Quartiers- oder Hitzebezug (R4).
+- S. 53 „Neuer Schwung für alte Orte“, „Jung kauft Alt“, Sanierungsförderung für Dorfkerne: Bestandssanierung ohne Flächen- oder Hitzebezug im Zitat.
+- S. 53–55 Wohnungsbauförderung, Sozialwohnungen, Mietpreisbremse, Housing First: kein Bezug zu 1803–1805.
+- S. 110 ff. Resilienz und Katastrophenschutz: R8 greift nur, wenn Hochwasserschutz im Zitat steht; das ist nicht der Fall.
+
+Richtungen ohne Maßnahme:
+- 1804 Technischer Rückhalt, Kanal und Speicher: keine Zusage zu Kanal, Speicher oder Regenwasser-Versickerung gefunden; Starkregen nur als Ziel genannt (S. 11, 13).
+- 1805 Bauverbot, Flächen freihalten, Rückbau; Bauvorsorge der Eigentümer: keine Fundstelle (Überschwemmungsgebiet, Bauverbot, Objektschutz nicht im Text).
+- 1803 Verschattung, Frischluft, Gebäudehitzeschutz (Bauvorschriften): keine Zusage gefunden.
+
+Stand: Titelseite und Impressum „Stand: 16.07.2026“, Auftrag nennt 2026-06-06.
+
+Neue Bündel (Hinweis des Prüfskripts, nur Protokoll): „Stadtgrün, Verschattung, Frischluft“ (S. 13), „Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen“ (S. 52) und „Bauland ausweisen, Bauen nicht verteuern“ (S. 51) stehen im Auftrag, das Skript ordnet sie aber nicht den Ursachen zu. Die Bündel sind hier verwendet, nicht als neue Instrumente eingetragen; Koordination bitte prüfen.
+Hinweis Maßnahme 7 (S. 52): Dachaufstockung und Gewerberaum-Umwandlung ist ein eigener Punkt der Aufzählung („Für mehr Tempo …“), nicht der Bauturbo-Satz; deshalb getrennt erfasst.

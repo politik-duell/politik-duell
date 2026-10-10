@@ -1,0 +1,69 @@
+{
+  "partei_id": 15,
+  "land": "MV",
+  "massnahmen": [
+    {
+      "beschreibung": "Leerstände durch Förderung von Sanierung und Umbau nutzbar machen, damit neuer Wohnraum ohne zusätzliche Flächeninanspruchnahme entsteht",
+      "ursachen_ids": [1804],
+      "zitat": "Leerstände machen wir durch Förderung von Sanierungen und Umbauten nutzbar, so entsteht neuer Wohnraum ohne zusätzlichen Flächenfraß.",
+      "seite": 90
+    },
+    {
+      "beschreibung": "Kleingarten- und Siedlungsflächen vor Bauprojekten schützen und bei der Stadt- und Regionalplanung berücksichtigen",
+      "ursachen_ids": [1804],
+      "ursachen_offen": [1803],
+      "zitat": "Sie dürfen nicht dem Flächenhunger von Investoren oder anonymen Bauprojekten geopfert werden. Ihre Interessen sind bei jeder Stadt- und Regionalplanung verbindlich zu berücksichtigen.",
+      "seite": 93
+    },
+    {
+      "beschreibung": "Dachflächen-Photovoltaik vorrangig ausbauen und bereits versiegelte oder vorbelastete Flächen für PV nutzen",
+      "ursachen_ids": [],
+      "ursachen_offen": [1804],
+      "zitat": "Unser Ansatz setzt auf Priorität für Dachflächen-PV auf privaten, gewerblichen und öffentlichen Gebäuden sowie auf die Nutzung bereits «versiegel»ter oder vorbelasteter Flächen wie Konversionsflächen, Parkplätze und Gewerbeflächen - ohne dauerhaftes Subventionsmodell.",
+      "seite": 84
+    },
+    {
+      "beschreibung": "Umwandlung geeigneter Gewerbeflächen in Mischgebieten zu Wohnraum grundsätzlich zulassen",
+      "ursachen_ids": [],
+      "ursachen_offen": [1803],
+      "zitat": "In Mischgebieten soll die Umwandlung geeigneter Gewerbeflächen zu Wohnraum grundsätzlich zulässig sein, solange nicht-störende Gewerbe erhalten bleiben.",
+      "seite": 89
+    },
+    {
+      "beschreibung": "Überflüssige Bauvorschriften abschaffen und Genehmigungsverfahren beschleunigen",
+      "ursachen_ids": [],
+      "ursachen_offen": [1804],
+      "zitat": "Wir werden überflüssige Bauvorschriften abschaffen. […] Damit beenden wir das Problem endloser Genehmigungsverzögerungen.",
+      "seite": 89
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 1805, "seiten": [40, 78, 93], "grund": "Feuerwehr, Katastrophenschutz und Sirenen ohne Hochwasserbezug (R8); Deiche, Rückhaltebecken, Bauverbote in Überschwemmungsgebieten kommen im Text nicht vor." }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesene Seiten und Kapitel:
+- Inhaltsverzeichnis (S. 2–8) und Präambel-Kapitel „Heimatland MV“ (S. 88–93: Bauen und Wohnen, Schneller bauen, Bezahlbaren Wohnraum erhalten, Historische Bausubstanz, Kleingärten und Siedlungen).
+- Fundstellen S. 8 (Inhaltsverzeichnis, nicht erfasst), S. 17, 29, 83, 84, 90 gelesen; S. 84 und 90 erfasst, S. 83 Wiederholung der PV-Passage, S. 17 (Kühlung nur im Zusammenhang Industrie und Gaskraftwerke) nicht erfasst.
+- Kapitel „Sicherheitsland MV“ Feuerwehr und Katastrophenschutz (S. 39–40) gelesen.
+- Kapitel „Energieland MV“ Freiflächen-PV (S. 82–83, S. 89–90) gelesen.
+- Kapitel „Wasser – bezahlbar, sauber und als Gemeingut geschützt“ (S. 78–79) gelesen.
+
+Nicht erfasst:
+- S. 17: „gute Kühlung durch viel Ostseewind“ steht im Standortkontext für Rechenzentren, keine Hitzeschutz-Zusage.
+- S. 40: Sirenennetz und Feuerwehrausstattung, kein Hochwasserbezug (R8).
+- S. 89–90: „Photovoltaikfelder auf Freiflächen lehnen wir ab“ – Ablehnung ohne eigene Handlung im Zitat; nur der Vorrang-Eintrag (S. 84) ist erfasst.
+- S. 88–89: „Heizungsnormen praktikabel anpassen“, Artenschutzgutachten-Fristen, Waldgesetz – kein Bezug zu 1803/1804/1805.
+- S. 79–80: Wassergebühren, Grundwasser, Kläranlagen – kein Bezug zu Regenwasser oder Versiegelung.
+- Hitze, Tropennacht, Stadtgrün, Entsiegelung, Schwammstadt, Starkregen, Hochwasser, Deich, Überschwemmungsgebiet: im Textkorpus nicht vorhanden.
+
+Richtungen ohne Maßnahme:
+- 1803 Stadtgrün, Verschattung, Frischluft: keine Zusage gefunden.
+- 1804 Entsiegelung, Schwammstadt: keine Zusage gefunden. Regenwasser und Versickerung: keine Zusage.
+- 1805: keine Zusage (Bauverbot, Rückhalt, Hochwasserschutz, Objektschutz nicht vorhanden).
+
+Grenzfälle (ursachen_offen): S. 84 (PV-Vorrang versiegelter Flächen, 1804), S. 89 (Mischgebiete Umwandlung, 1803), S. 89 (Bauvorschriften abschaffen, 1804), S. 93 (Kleingärten, 1803 als Stadtgrün-Teil).
+
+Seiten ohne Text: nur S. 1 (Titelseite). Keine Rolle.

@@ -1,0 +1,135 @@
+{
+  "partei_id": 15,
+  "land": "BE",
+  "massnahmen": [
+    {
+      "beschreibung": "Verpflichtende Entsiegelung von Flächen, wo sinnvoll und mit geringem Aufwand möglich, zusammen mit Flächensparprogrammen.",
+      "ursachen_ids": [
+        1804
+      ],
+      "buendel": "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen",
+      "zitat": "Wir setzen dagegen auf Flächensparprogramme und verpflichtende Entsiegelung, wo dies sinnvoll und mit geringem Aufwand möglich ist.",
+      "seite": 80
+    },
+    {
+      "beschreibung": "Neue Bauprojekte sollen nicht auf Grün-, Wald- oder Wasserflächen entstehen.",
+      "ursachen_ids": [
+        1804
+      ],
+      "zitat": "Neue Bauprojekte dürfen nicht auf bisherigen Grün-, Wald- oder Wasserflächen entstehen.",
+      "seite": 80
+    },
+    {
+      "beschreibung": "Anreize für private Eigentümer, ihre Flächen teilweise zu entsiegeln.",
+      "ursachen_ids": [
+        1804
+      ],
+      "zitat": "Private Eigentümer sollen gezielt Anreize erhalten, ihre Flächen teilweise zu entsiegeln.",
+      "seite": 80
+    },
+    {
+      "beschreibung": "Abwasser- und Regenwassersysteme langfristig auf Trennsystem umstellen, damit Regen- und Abwasser getrennt fließen.",
+      "ursachen_ids": [
+        1804
+      ],
+      "buendel": "Technischer Rückhalt, Kanal und Speicher",
+      "zitat": "Die Abwasser- und Regenwassersysteme müssen langfristig auf ein Trennsystem umgestellt werden, damit Regen- und Abwasser getrennt fließen.",
+      "seite": 81
+    },
+    {
+      "beschreibung": "Nachpflanzpflicht für gefällte Bäume konsequenter durchsetzen und mit Baumbilanzen kontrollieren.",
+      "ursachen_ids": [
+        1803
+      ],
+      "buendel": "Stadtgrün, Verschattung, Frischluft",
+      "zitat": "Immer wieder werden Straßenbäume gefällt, ohne dass ein gleichwertiger Ersatz erfolgt. Künftig muss gelten: Jeder in Berlin gefällte Baum wird nachgepflanzt. Wir werden die Nachpflanzpflicht konsequenter durchsetzen und durch transparente Baumbilanzen kontrollieren.",
+      "seite": 79
+    },
+    {
+      "beschreibung": "Bezirke erhalten ausreichend Mittel, qualifiziertes Personal und Pflegekonzepte für die Grünflächenpflege.",
+      "ursachen_ids": [
+        1803
+      ],
+      "zitat": "Unter unserer Regierungsverantwortung wird die Pflege von Grünflächen wieder Vorrang haben. Wir stellen sicher, dass die Bezirke ausreichende Mittel, qualifiziertes Personal und klare Pflegekonzepte erhalten, die auch tatsächlich umgesetzt werden.",
+      "seite": 79
+    },
+    {
+      "beschreibung": "Innerstädtische Kleingartenanlagen langfristig erhalten und durch festgesetzte Bebauungspläne sichern.",
+      "ursachen_ids": [
+        1803
+      ],
+      "zitat": "Der Erhalt der innerstädtischen Kleingartenanlagen ist für die Berliner AfD ein zentrales landespolitisches Anliegen. Hierfür wollen wir die im Flächennutzungsplan ausgewiesenen Grünflächen/Kleingartenanlagen der Schutzkategorie 2 nach dem Kleingartenentwicklungsplan langfristig erhalten und durch festgesetzte Bebauungspläne weiter sichern.",
+      "seite": 10
+    },
+    {
+      "beschreibung": "Gesetzesänderung, damit bauliche Veränderungen und Neubau in Milieuschutzgebieten leichter möglich sind.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1803
+      ],
+      "buendel": "Nachverdichtung nicht bremsen",
+      "zitat": "Nicht zuletzt unterbleibt in Milieuschutzgebieten auch eine weitere Neubautätigkeit. Wir streben eine Gesetzesänderung an, so dass bauliche Veränderungen und Neubautätigkeit leichter durchgeführt werden können.",
+      "seite": 7
+    },
+    {
+      "beschreibung": "Berliner Bauordnung entschlacken; Dämmstandards auf ein früheres Niveau zurücksetzen, um Bauen zu verbilligen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1804
+      ],
+      "buendel": "Bauland ausweisen, Bauen nicht verteuern",
+      "zitat": "Damit Bauen in Berlin wieder schneller geht, werden wir die umfangreichen Regelungen der Berliner Bauordnung entschlacken und weiter vereinfachen. […] Darüber hinaus werden wir uns dafür einsetzen, die aktuellen energetischen Baustandards bei der Gebäudedämmung auf das Niveau der frühen 2000er-Jahre zurückzusetzen, da die damit verbundenen Kosten sowie der bürokratische Aufwand in keinem Verhältnis zu dem damit erzielbaren energetischen Effizienzgewinn stehen.",
+      "seite": 9
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 1805,
+      "seiten": [
+        17,
+        79,
+        80,
+        81
+      ],
+      "grund": "Kein Hochwasserbezug in Zitaten; Katastrophenschutz (S. 17) ohne Hochwasserschutz (R8); Wasserkapitel (S. 80–81) nur Trinkwasser, Abwasser, Trockenheit."
+    }
+  ],
+  "neue_buendel": [
+    {
+      "ursache": 1804,
+      "name": "Verbot neuer Bebauung auf Grün- und Wasserflächen",
+      "seite": 80
+    },
+    {
+      "ursache": 1804,
+      "name": "Förderung privater Entsiegelung",
+      "seite": 80
+    },
+    {
+      "ursache": 1803,
+      "name": "Personal und Mittel für Grünflächenpflege",
+      "seite": 79
+    },
+    {
+      "ursache": 1803,
+      "name": "Planungsrechtliche Sicherung von Grünflächen und Kleingärten",
+      "seite": 10
+    }
+  ]
+}
+--- Protokoll ---
+
+Gelesene Seiten: Inhaltsverzeichnis S. 3–5 (Kapitel 1 „Bauen & Wohnen“ S. 5–11, Kapitel 13 „Natur & Umwelt“ S. 79–84). Fundstellen S. 6, 10, 29, 49, 79, 80, 81 gelesen. Vorwort S. 2 und Kapitel 2 (Innere Sicherheit, Katastrophenschutz S. 17–18) überflogen. Seiten ohne Text (1, 4, 11, 78) nicht relevant: Titel, Kapitelbeginn bzw. Trennseite. Kapitel 11 Gesundheit (S. 69–73) durchsucht: keine Hitze-Maßnahme. Keine Treffer für Hochwasser, Überschwemmung, Deich, Unwetter.
+
+Nicht erfasst:
+- S. 6: Vergabe bevorzugt für Einheimische nach Punktesystem (Wohnraumvergabe, keine Flächenausweisung und kein Bezug zu 1804). Ebenso „Mehr Mietwohnungen durch weniger Regulierung“ (Ziel, keine konkrete Zusage).
+- S. 7: Sonderbaurecht für Einheimische (§ 246 BauGB, gleichartig zu Milieuschutz-Lockerung, Bündel Nachverdichtung schon belegt; Bundesrecht).
+- S. 29: „Wir wollen Natur-Erlebnis-Schulhöfe, weniger Versiegelung“ – Gestaltungsziel, gleichartig zu Entsiegelung (S. 80, Bündel belegt).
+- S. 79–80: Wälder und Waldwirtschaft, Windkraft im Wald – Waldumbau/Waldpflege ohne Stadt- oder Hitzebezug (R4).
+- S. 80: „Wir werden die Wälder langfristig erhalten“ – R4 ausgeschlossen.
+- S. 83–84: Müll, Graffiti, Winterdienst – nicht 1803 oder 1804.
+- S. 81: „extreme Niederschläge erfordern vorsorgende Planung“ – Bezug Wasserversorgung, nicht Starkregen in Siedlungen (R5).
+
+Bündel ohne Maßnahme (gezielt nachgesucht, S. 7–9, 79–81): 1803 „Bauvorschriften und Gebäudehitzeschutz“ – S. 9 Bauordnung/Dämmstandards ohne Hitze-, Kühlungs- oder Verschattungsbezug (R4), daher nicht erfasst; 1805 „Bauverbot, Flächen freihalten, Rückbau“ – S. 80 Verbot neuer Bebauung nur für Grün-, Wald- und Wasserflächen, ohne Überschwemmungsbezug (R7); „Technischer Hochwasserschutz“ und „Bauvorsorge der Eigentümer“ – kein Treffer im Text (Suche nach Hochwasser, Deich, Rückhalt, Objektschutz, Eigenvorsorge leer).
+
+Grenzfälle: Trennsystem S. 81 (1804) nur über Kanalumbau, ohne Starkregenbezug im Zitat; Milieuschutz S. 7 (1803 offen, Neubau in Wohnvierteln); Bauordnung/Dämmstandards S. 9 (1804 offen, Bauen verbilligen, keine Flächenwirkung im Zitat).

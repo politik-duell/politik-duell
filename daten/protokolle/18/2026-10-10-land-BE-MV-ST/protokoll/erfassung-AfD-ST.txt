@@ -1,0 +1,68 @@
+{
+  "partei_id": 15,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Hinwirken auf Stopp der Versiegelung von Kultur- und Ackerland durch Solarparks; Solaranlagen möglichst auf bereits versiegelten Flächen",
+      "ursachen_ids": [1804],
+      "buendel": "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen",
+      "zitat": "Deshalb wird eine AfD-geführte Landesregierung darauf hinwirken, dass die Versiegelung von wertvollem Kultur- und Ackerland auf dem Altar einer utopischen Energiepolitik gestoppt wird.",
+      "seite": 159
+    },
+    {
+      "beschreibung": "Keine Genehmigung erneuerbarer-Energie-Projekte, die das Mikroklima im Land bedrohen",
+      "ursachen_ids": [],
+      "ursachen_offen": [1803],
+      "zitat": "Eine AfD-geführte Landesregierung wird keine Projekte zum Ausbau erneuerbarer Energien genehmigen, die eine Bedrohung für das Mikroklima im Land darstellen.",
+      "seite": 167
+    },
+    {
+      "beschreibung": "Mehr Überflutungsflächen schaffen, um künftige Hochwasserlagen besser zu beherrschen",
+      "ursachen_ids": [1805],
+      "buendel": "Technischer Hochwasserschutz",
+      "zitat": "In diesem Zusammenhang werden wir, um künftige Hochwasserlagen besser beherrschen zu können, mehr Überflutungsflächen schaffen und Versiegelungen oder Einengungen entlang der Flussläufe in Sachsen-Anhalt abbauen.",
+      "seite": 205
+    },
+    {
+      "beschreibung": "Versiegelungen und Einengungen entlang der Flussläufe abbauen",
+      "ursachen_ids": [1805],
+      "ursachen_offen": [1804],
+      "buendel": "Bauverbot, Flächen freihalten, Rückbau",
+      "zitat": "[…] Versiegelungen oder Einengungen entlang der Flussläufe in Sachsen-Anhalt abbauen.",
+      "seite": 205
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 1803,
+      "seiten": [58, 167, 181, 190],
+      "grund": "Kapitel X, XI, XII, XIII und Kulturkapitel (Altbau S. 58) gelesen; kein Stadtgrün, Verschattung, Frischluft, Hitzeschutz oder Nachverdichtung. Waldaufforstung (S. 181) ist Waldumbau ohne Stadtbezug; Altbausanierung und sozialer Wohnungsbau ohne Hitzebezug. Nur die Mikroklima-Zusage (S. 167) als Grenzfall erfasst."
+    }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "mikroklima", "ursache": 1803, "richtung": "Schutz des Mikroklimas vor lokaler Erwärmung" }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis (S. 252–256); Kapitel X Energiepolitik (S. 158–170); Kapitel XI Landwirtschaft und Heimatpflege, Waldteil (S. 181–182); Kapitel XII Ländlicher Raum und Kommunales (S. 188–193, S. 197–198 Planungshoheit); Kapitel XIII Verkehr, Hochwasserschutz (S. 205); Kapitel VI Feuerwehr (S. 113–114); Altbau und Baukultur (S. 58, Kapitel III). Zusätzlich Grep über den Gesamttext nach Hitze, Kühlung, Stadtgrün, Entsiegelung, Starkregen, Kanal, Abwasser, Elementar und Gebäudebezug: keine weiteren Zusagen gefunden. Hitze und Kühlung kommen im Programm nicht vor.
+
+Erfasst: Versiegelung von Ackerland durch Solarparks stoppen (S. 159, 1804); Mikroklima-Genehmigungsstopp (S. 167, Grenzfall 1803 offen); Überflutungsflächen schaffen (S. 205, 1805, Bündel Technischer Hochwasserschutz); Einengungen und Versiegelungen entlang der Flussläufe abbauen (S. 205, 1805 mit 1804 offen, Bündel Rückbau).
+
+Weitere gleichartige Stelle zu Technischer Hochwasserschutz (nicht erfasst, da gleicher Hebel): S. 205 „Die in Planung befindlichen bzw. bereits begonnenen Hochwasserschutzmaßnahmen werden wir zügig fortführen und vollenden.“
+
+Nicht erfasst:
+- S. 205: „Wir werden eine Elementarpflichtversicherung bei Hochwassergefahr […] einführen.“ Versicherung ist keine Maßnahme an 1803, 1804 oder 1805 (Schadensabsicherung).
+- S. 205: „Innenstadtsanierungsgewinnbeteiligung nach Naturkatastrophen“ – keine Ursache.
+- S. 113–114: Feuerwehr, Katastrophenschutz, Feuerschutzsteuer – Zitate ohne Hochwasserbezug (R8), nicht erfasst.
+- S. 158: Windkraftmoratorium – Mikroklima nur als Begründung genannt, Zusage gilt dem Windkraftausbau, keine Ursache.
+- S. 197–198: dezentrale Abwasserbeseitigung und private Brunnen – kein Starkregen- oder Versickerungsbezug (R5).
+- S. 58: Kreditvergabe für Altbausanierung – kein Hitze- oder Stadtgrünbezug (R4).
+- S. 181–182: Aufforstung und Wald – Waldumbau ohne Stadtbezug (R4).
+- S. 190: sozialer Wohnungsbau und Städtebauförderung – kein Bezug zu 1803–1805.
+- S. 166: „ortsgebundene Heimat- und Umweltschutzpolitik“ – allgemeines Leitbild, keine Handlung.
+
+Richtungen ohne Maßnahme: Stadtgrün, Verschattung, Frischluft, Gebäudehitzeschutz, Nachverdichtung nicht bremsen (1803); Regenwasser-Versickerung und Kanal- oder Speicherausbau gegen Starkregen in Siedlungen, Schwammstadt, Bauland (1804); Bauverbot in Überschwemmungsgebieten, Bauvorsorge der Eigentümer (1805).
+
+Seiten ohne Text: nicht betroffen (die Seiten 158–170 und 205 sind mit Text belegt).

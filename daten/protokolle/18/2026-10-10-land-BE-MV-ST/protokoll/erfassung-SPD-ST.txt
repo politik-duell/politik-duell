@@ -1,0 +1,106 @@
+{
+  "partei_id": 12,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Landesschulbauprogramm, das Schulen fit für heißere Sommer machen soll, mit Beschattung und Kühlung",
+      "ursachen_ids": [1803],
+      "buendel": "Bauvorschriften und Gebäudehitzeschutz",
+      "zitat": "Wir legen ein Landesschulbauprogramm auf, das unsere Schulen barrierefrei und fit für die Zukunft macht. Für heißer werdende Sommer braucht es Beschattung und Kühlung sowohl in den Lehr- und Unterrichtsräumen als auch auf den Schulhöfen und Sporthallen.",
+      "seite": 18
+    },
+    {
+      "beschreibung": "Förderung baulicher Maßnahmen gegen Hitze, etwa hellere Oberflächen an Gebäuden und Plätzen",
+      "ursachen_ids": [1803],
+      "zitat": "Die zunehmende Zahl an Hitzetoten schafft hier unmittelbaren Handlungsbedarf. […] Wir wollen bauliche Maßnahmen fördern.",
+      "seite": 24
+    },
+    {
+      "beschreibung": "Unterstützung der Kommunen bei Hitzeaktionsplänen und beim Schutz innerörtlicher Grünflächen",
+      "ursachen_ids": [1803],
+      "buendel": "Stadtgrün, Verschattung, Frischluft",
+      "zitat": "Kommunen sind zentrale Akteure im Klima- und Umweltschutz. Wir wollen diese fachlich und finanziell bei Klimaschutz- und Klimamanagement, kommunaler Wärmeplanung, Hitzeaktionsplänen, dem Schutz innerörtlicher Grünflächen sowie Luftreinhalte- und Lärmschutzplänen unterstützen.",
+      "seite": 24
+    },
+    {
+      "beschreibung": "Ausbau des Wasserrückhalts in der Fläche durch Versickerung und Schwammstadtkonzepte",
+      "ursachen_ids": [1804],
+      "buendel": "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen",
+      "zitat": "Der Wasserrückhalt in der Fläche wird weiter ausgebaut – durch Versickerung, Schwammstadtkonzepte, die Sanierung von Stauanlagen und eine auskömmliche Finanzierung der Unterhaltungsverbände.",
+      "seite": 23
+    },
+    {
+      "beschreibung": "Vorrang für Flächenrecycling vor weiterer Versiegelung",
+      "ursachen_ids": [1804],
+      "zitat": "Für uns hat Flächenrecycling Vorrang vor weiterer Versiegelung.",
+      "seite": 24
+    },
+    {
+      "beschreibung": "Systematische Weiterentwicklung und finanzielle Absicherung der Starkregenvorsorge",
+      "ursachen_ids": [],
+      "ursachen_offen": [1804],
+      "zitat": "Die Starkregenvorsorge wird systematisch weiterentwickelt und finanziell abgesichert.",
+      "seite": 23
+    },
+    {
+      "beschreibung": "Kostensenkung durch serielles Bauen und Stärkung der Bestandssanierung",
+      "ursachen_ids": [],
+      "ursachen_offen": [1804],
+      "buendel": "Bauland ausweisen, Bauen nicht verteuern",
+      "zitat": "Serielles Bauen senkt Kosten, die Bestandssanierung wird gestärkt.",
+      "seite": 44
+    },
+    {
+      "beschreibung": "Abschluss der Sanierung und Sicherung der Deiche",
+      "ursachen_ids": [1805],
+      "buendel": "Technischer Hochwasserschutz",
+      "zitat": "Hochwasserschutz ist aktiver Bevölkerungsschutz. Die Sanierung und Sicherung der Deiche wird abgeschlossen.",
+      "seite": 23
+    },
+    {
+      "beschreibung": "Schaffung oder Reaktivierung von Retentionsräumen und Rückhalteflächen",
+      "ursachen_ids": [1805],
+      "buendel": "Bauverbot, Flächen freihalten, Rückbau",
+      "zitat": "Retentionsräume und Rückhalteflächen werden geschaffen oder reaktiviert.",
+      "seite": 23
+    },
+    {
+      "beschreibung": "Frühwarnsysteme, Pegeltechnik sowie Hochwasser- und Starkregenkarten für die Vorsorge in Kommunen",
+      "ursachen_ids": [],
+      "ursachen_offen": [1805],
+      "zitat": "Frühwarnsysteme, moderne Pegeltechnik sowie aktuelle Hochwasser- und Starkregenkarten stärken die Vorsorge in den Kommunen.",
+      "seite": 23
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 1803, "name": "Förderung Hitzeschutz an Gebäuden", "seite": 24 },
+    { "ursache": 1804, "name": "Vorrang Flächenrecycling vor Versiegelung", "seite": 24 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "beschattung", "ursache": 1803, "richtung": "Verschattung" },
+    { "begriff": "rückhalteflächen", "ursache": 1805, "richtung": "Flächen freihalten (Retention)" }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis/Einleitung S. 1–6 (Kapitel „Arbeit, Industrie, Energie“, „Gesund bleiben. Sicher leben.“, „Lernen. Wissen. Zukunft.“). Passende Kapitel vollständig: Bildung/Schule S. 18–21 (Schulbau, Schulhöfe), „Natur, Klima, Verantwortung für morgen“ S. 22–24 (Klimaanpassung, Wasser, Hochwasserschutz, Hitzeschutz, Kommunen stärken), „Mobilität, Wohnen und lebendige Orte“ S. 41–44 (Wohnen, Städte und Dörfer), Katastrophenschutz und Feuerwehr S. 29–31, Landwirtschaft/Wald S. 45–50 (nur Stichprobe auf Klima- und Wasserbezug). Fundstellen aus dem Auftrag (S. 18, 22, 23, 24) gelesen; S. 32 (Frauenschutzhäuser) ohne Bezug.
+
+Grenzfälle (als ursachen_offen oder mit Bündel aufgenommen): S. 23 Starkregenvorsorge (1804, Kanal/Speicher gegen Starkregen nicht konkret); S. 44 serielles Bauen und Bestandssanierung (1804, Gegenrichtung zum Bündel „Bauland ausweisen“); S. 23 Frühwarnsysteme und Hochwasserkarten (1805, Vorsorge ohne ausdrückliche Bebauungsregel); S. 24 Flächenrecycling-Vorrang (1804, eher Grundsatz, aufgenommen als eigener Hebel).
+
+Nicht erfasst:
+- S. 22: Klimafonds „zur Finanzierung von Anpassungsmaßnahmen“ – Finanzierung ohne Zweck (R10).
+- S. 22/23: Lagebeschreibungen Hitze, Starkregen, Monitoring; Auen und Wiedervernässung von Mooren ohne Hochwasser- bzw. Siedlungsbezug (R5, R7).
+- S. 23: „Auenlandschaften übernehmen … eine doppelte Funktion“ – Beschreibung, keine Zusage.
+- S. 23: Sanierung von Stauanlagen, Kläranlagen, Monitoring von Einleitungen – kein Siedlungs-/Starkregenbezug (R5).
+- S. 24: Klimatisierung öffentlicher Einrichtungen – Lagebeschreibung.
+- S. 24/44: Städtebauförderung, Quartiersmanagement, Dorfmanagement – Finanzierung ohne Zweck bzw. ohne Bezug zu 1803/1804 (R4, R10).
+- S. 30: Katastrophenschutz „Warnsysteme werden modernisiert“, Extremwetter – kein Hochwasserschutz im Zitat (R8), daher nicht erfasst.
+- S. 44: Abrissprogramme gegen Leerstand im ländlichen Raum – kein Bezug zu Entsiegelung oder Flächenverbrauch im Zitat.
+- S. 44: Planungs- und Genehmigungsverfahren werden beschleunigt – Bauen-Verfahren, kein Flächenbezug (Bündel „Bauland ausweisen“ nicht berührt).
+- S. 45–50 (Wald): Waldbrandprävention, Waldumbau – nicht zu 1803/1805 (R4).
+
+Richtungen ohne Maßnahme: Bündel „Nachverdichtung nicht bremsen“ (1803), „Bauvorsorge der Eigentümer“ (1805) – keine Treffer im Text, auch nicht über Begriffe wie Nachverdichtung, Innenentwicklung, Objektschutz, Eigenvorsorge; Bündel „Bauland ausweisen“ nur über die Serie-Bauen-Zusage (oben).
+
+Seiten ohne Text: keine relevante.
+Stand im PDF: kein abweichender Stand erkennbar (Auftrag: Stand 2026-03-21).
