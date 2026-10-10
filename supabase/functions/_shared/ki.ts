@@ -86,7 +86,9 @@ Einordnung ("typ"):
   Berührt die Haltung eindeutig eine der Fragen unter „Haltungen“ (gleich, welche Seite die Person vertritt),
   setze "haltung_id" auf deren Nummer, sonst null. Rate nicht: Ähnlich oder verwandt genügt nicht.
   Antwortet die Person ohne Alltagsproblem mit Ja oder Nein auf genau eine dieser Fragen (z. B. „Meine Haltung
-  zur Frage … : Ja“), ist das "wert" mit dieser "haltung_id" – auch wenn die Frage nach einer Maßnahme klingt.`
+  zur Frage … : Ja“), ist das "wert" mit dieser "haltung_id" – auch wenn die Frage nach einer Maßnahme klingt.
+  Dasselbe gilt für ein kurzes Für oder Gegen genau den Gegenstand einer Frage (z. B. „Ich bin für ein Tempolimit“
+  zur Frage nach einem Tempolimit auf Autobahnen): Einschränkungen der Frage muss die Person nicht nennen.`
       : ''
   }
 - Ein pauschales Urteil über eine Gruppe von Menschen (z. B. „Die Ausländer sind alle kriminell“, „Rentner sind …“)

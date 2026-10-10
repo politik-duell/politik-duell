@@ -460,6 +460,8 @@ describe('Haltung → Wertfrage (Haltungskarte)', () => {
     expect(p).toMatch(/Rate nicht/)
     // Ja/Nein auf eine erfasste Wertfrage ist eine Haltung, auch wenn die Frage nach einer Maßnahme klingt.
     expect(p).toContain('auch wenn die Frage nach einer Maßnahme klingt')
+    // Ein kurzes „Ich bin für …“ zum Gegenstand der Frage genügt, ohne deren Einschränkungen.
+    expect(p).toContain('Einschränkungen der Frage muss die Person nicht nennen')
     expect(p).not.toMatch(/https?:\/\//)
     for (const partei of PARTEIEN) expect(p).not.toContain(partei.name)
   })
