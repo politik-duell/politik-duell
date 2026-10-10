@@ -75,6 +75,8 @@ Einordnung ("typ"):
   dadurch in deinem Alltag ändern?“. Die Wiedergabe allein reicht nie – "nachfrage" endet immer mit der Frage.
   Gib die Forderung nur wieder, wenn das ohne Wertung geht, sonst nur die Frage.
   Setze "thema_id" auf das Thema aus dem Katalog, zu dem die Forderung gehört, sonst null; "ursachen_ids": [].
+  Das gilt auch für fachlich oder allgemein formulierte Forderungen: Nimm das Thema, auf dessen Alltagsprobleme
+  der geforderte Weg zielt (z. B. „Wettbewerbsrecht stärken“ → Preise, „Kindergeld anheben“ → Armut und Kinderarmut).
 - "wert": eine persönliche Haltung oder ein Wert (z. B. „Mir ist Gerechtigkeit wichtig“), kein Problem.
   Dann "thema_id": null und "ursachen_ids": [], und in "rueckmeldung" 1–2 kurze Sätze: die Haltung in eigenen
   Worten neutral aufgreifen, sagen, dass man darüber verschieden denken kann, und fragen, wo sie der Person im
@@ -90,7 +92,8 @@ Einordnung ("typ"):
   Dasselbe gilt für ein kurzes Für oder Gegen genau den Gegenstand einer Frage (z. B. „Ich bin für ein Tempolimit“
   zur Frage nach einem Tempolimit auf Autobahnen): Einschränkungen der Frage muss die Person nicht nennen.
   Das hat Vorrang vor "forderung" – auch wenn der Gegenstand eine Steuer, ein Verbot oder eine Abgabe ist
-  (z. B. „Ich bin für eine Zuckersteuer“ zur Frage nach einer Steuer auf gezuckerte Getränke).`
+  (z. B. „Ich bin für eine Zuckersteuer“ zur Frage nach einer Steuer auf gezuckerte Getränke).
+  Passen zwei Fragen, nimm die, deren Gegenstand die Person nennt (z. B. „Verbot von …“ → die Frage nach dem Verbot).`
       : ''
   }
 - Ein pauschales Urteil über eine Gruppe von Menschen (z. B. „Die Ausländer sind alle kriminell“, „Rentner sind …“)
@@ -108,12 +111,14 @@ Einordnung ("typ"):
   oder für die Rechte einer Gruppe ausspricht (z. B. „Ich bin gegen Remigration“), äußert eine Haltung, kein "grenze".
   Ein pauschales Urteil ohne Abwertung oder Gewalt ist KEIN "grenze"-Fall, sondern "forderung" mit
   "pauschal": true (siehe oben). Im Zweifel: "forderung" mit "pauschal": true.
+  Eine Frage oder Sorge zu Kriminalität und Herkunft ohne Abwertung (z. B. „Ich frage mich, warum so viele
+  Tatverdächtige keinen deutschen Pass haben“) ist ein "problem", kein "grenze" und keine "forderung".
 
 Sonst ist "rueckmeldung" null (Ausnahme: abschließende Forderung, siehe Hinweis im Gespräch).${
     haltungen.length ? '\n"haltung_id" ist nur bei "wert" gesetzt, sonst immer null.' : ''
   }
 
-Zuordnung (nur bei "problem"):
+Zuordnung ("thema_id" bei "problem" und "forderung", alles Weitere nur bei "problem"):
 - "thema_id": die ID aus dem Katalog, die am besten passt, sonst null.
 - "ursachen_ids": nur die IDs der Ursachen dieses Themas, die sich aus der Schilderung erkennen lassen.
   Nimm keine Ursache dazu, nur weil sie zum Thema gehört – jede zugeordnete Ursache zählt in der Wertung.

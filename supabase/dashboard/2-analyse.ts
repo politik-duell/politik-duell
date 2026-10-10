@@ -342,6 +342,8 @@ Einordnung ("typ"):
   dadurch in deinem Alltag \xE4ndern?\u201C. Die Wiedergabe allein reicht nie \u2013 "nachfrage" endet immer mit der Frage.
   Gib die Forderung nur wieder, wenn das ohne Wertung geht, sonst nur die Frage.
   Setze "thema_id" auf das Thema aus dem Katalog, zu dem die Forderung geh\xF6rt, sonst null; "ursachen_ids": [].
+  Das gilt auch f\xFCr fachlich oder allgemein formulierte Forderungen: Nimm das Thema, auf dessen Alltagsprobleme
+  der geforderte Weg zielt (z. B. \u201EWettbewerbsrecht st\xE4rken\u201C \u2192 Preise, \u201EKindergeld anheben\u201C \u2192 Armut und Kinderarmut).
 - "wert": eine pers\xF6nliche Haltung oder ein Wert (z. B. \u201EMir ist Gerechtigkeit wichtig\u201C), kein Problem.
   Dann "thema_id": null und "ursachen_ids": [], und in "rueckmeldung" 1\u20132 kurze S\xE4tze: die Haltung in eigenen
   Worten neutral aufgreifen, sagen, dass man dar\xFCber verschieden denken kann, und fragen, wo sie der Person im
@@ -355,7 +357,8 @@ Einordnung ("typ"):
   Dasselbe gilt f\xFCr ein kurzes F\xFCr oder Gegen genau den Gegenstand einer Frage (z. B. \u201EIch bin f\xFCr ein Tempolimit\u201C
   zur Frage nach einem Tempolimit auf Autobahnen): Einschr\xE4nkungen der Frage muss die Person nicht nennen.
   Das hat Vorrang vor "forderung" \u2013 auch wenn der Gegenstand eine Steuer, ein Verbot oder eine Abgabe ist
-  (z. B. \u201EIch bin f\xFCr eine Zuckersteuer\u201C zur Frage nach einer Steuer auf gezuckerte Getr\xE4nke).` : ""}
+  (z. B. \u201EIch bin f\xFCr eine Zuckersteuer\u201C zur Frage nach einer Steuer auf gezuckerte Getr\xE4nke).
+  Passen zwei Fragen, nimm die, deren Gegenstand die Person nennt (z. B. \u201EVerbot von \u2026\u201C \u2192 die Frage nach dem Verbot).` : ""}
 - Ein pauschales Urteil \xFCber eine Gruppe von Menschen (z. B. \u201EDie Ausl\xE4nder sind alle kriminell\u201C, \u201ERentner sind \u2026\u201C)
   ist weder Problem noch Wert: Ordne es als "forderung" mit "pauschal": true und "thema_id": null ein und frage
   nach dem Alltag dahinter, z. B. \u201EWas hast du selbst erlebt, oder wo f\xFChlst du dich unsicher?\u201C.
@@ -371,10 +374,12 @@ Einordnung ("typ"):
   oder f\xFCr die Rechte einer Gruppe ausspricht (z. B. \u201EIch bin gegen Remigration\u201C), \xE4u\xDFert eine Haltung, kein "grenze".
   Ein pauschales Urteil ohne Abwertung oder Gewalt ist KEIN "grenze"-Fall, sondern "forderung" mit
   "pauschal": true (siehe oben). Im Zweifel: "forderung" mit "pauschal": true.
+  Eine Frage oder Sorge zu Kriminalit\xE4t und Herkunft ohne Abwertung (z. B. \u201EIch frage mich, warum so viele
+  Tatverd\xE4chtige keinen deutschen Pass haben\u201C) ist ein "problem", kein "grenze" und keine "forderung".
 
 Sonst ist "rueckmeldung" null (Ausnahme: abschlie\xDFende Forderung, siehe Hinweis im Gespr\xE4ch).${haltungen.length ? '\n"haltung_id" ist nur bei "wert" gesetzt, sonst immer null.' : ""}
 
-Zuordnung (nur bei "problem"):
+Zuordnung ("thema_id" bei "problem" und "forderung", alles Weitere nur bei "problem"):
 - "thema_id": die ID aus dem Katalog, die am besten passt, sonst null.
 - "ursachen_ids": nur die IDs der Ursachen dieses Themas, die sich aus der Schilderung erkennen lassen.
   Nimm keine Ursache dazu, nur weil sie zum Thema geh\xF6rt \u2013 jede zugeordnete Ursache z\xE4hlt in der Wertung.
