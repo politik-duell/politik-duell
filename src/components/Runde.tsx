@@ -6,6 +6,7 @@ import type { AnalyseAntwort, Nachricht } from '../data/types'
 import { besteParteien, bewertePartei, werteRunde } from '../logic/bewertung'
 import { haltungskarte } from '../logic/haltung'
 import { fuerBeideErfasst } from '../logic/stand'
+import { zufallsBeispiel, type BeispielArt } from '../logic/zufall'
 import { mitKarte, type Karte, type RundenErgebnis, type Spieler } from '../spiel'
 import { SprechKnopf } from './SprechKnopf'
 import { parteiStil } from './stil'
@@ -37,6 +38,13 @@ function forderungAntwort(themaName: string | null): string {
     (themaName ? ` – sie gehört zum Thema „${themaName}“` : '') +
     '. Gewertet werden hier Lösungen für konkrete Alltagsprobleme. Magst du eins nennen?'
   )
+}
+
+/** Was das Zufallsbeispiel in der Eingabe ist – damit klar ist, was die Runde damit macht. */
+const BEISPIEL_TEXT: Record<BeispielArt, string> = {
+  problem: 'Beispiel-Problem aus der Datenbank (wird gewertet)',
+  forderung: 'Beispiel-Forderung aus der Datenbank (Forderungskarte, ohne Punkte)',
+  wert: 'Beispiel-Haltung aus der Datenbank (Haltungskarte, ohne Punkte)',
 }
 
 const spielerTexte = (v: Nachricht[]) => v.filter((n) => n.von === 'spieler').map((n) => n.text)
@@ -121,11 +129,22 @@ export function Runde({
   const [haltungGezeigt, setHaltungGezeigt] = useState(false)
   /** Karten dieser Runde (ohne Punkte) für den Endbildschirm. */
   const [karten, setKarten] = useState<Karte[]>([])
+  /** Art des Zufallsbeispiels, das gerade in der Eingabe steht (bis man es ändert oder absendet). */
+  const [beispiel, setBeispiel] = useState<BeispielArt | null>(null)
   const daten = useDaten()
 
   const aktiv = spieler[sprecher]
   const rolle = ROLLEN.find((r) => r.id === aktiv.rolle)?.label
   const land = daten.laender.find((l) => l.id === aktiv.land)?.name
+  const parteiIds: [number, number] = [spieler[0].partei.id, spieler[1].partei.id]
+  const beispielOptionen = { parteiIds, land: aktiv.land, mitHaltung: !haltungGezeigt }
+
+  function wuerfeln() {
+    const b = zufallsBeispiel(daten, beispielOptionen, eingabe.trim() || null)
+    if (!b) return
+    setEingabe(b.text)
+    setBeispiel(b.art)
+  }
 
   async function absenden(e: { preventDefault(): void }) {
     e.preventDefault()
@@ -136,6 +155,7 @@ export function Runde({
     setVerlauf(neu)
     setVorher([])
     setEingabe('')
+    setBeispiel(null)
     setHinweis(null)
     setFehler(null)
     setAuswahlThema(null)
@@ -343,15 +363,36 @@ export function Runde({
           maxLength={500}
           placeholder="z. B. „Ich warte seit drei Monaten auf einen Termin beim Facharzt.“"
           value={eingabe}
-          onChange={(e) => setEingabe(e.target.value)}
+          onChange={(e) => {
+            setEingabe(e.target.value)
+            setBeispiel(null)
+          }}
           onKeyDown={(e) => {
             if (e.key === 'Enter' && !e.shiftKey) absenden(e)
           }}
           disabled={denkt}
         />
-        <button className="knopf" type="submit" disabled={denkt || !eingabe.trim()}>
-          Senden
-        </button>
+        {beispiel && (
+          <p className="meta" aria-live="polite">
+            {BEISPIEL_TEXT[beispiel]} – mit „Senden“ einspielen oder vorher anpassen.
+          </p>
+        )}
+        <div className="eingabe-knoepfe">
+          {zufallsBeispiel(daten, beispielOptionen) && (
+            <button
+              type="button"
+              className="knopf knopf-zweit"
+              onClick={wuerfeln}
+              disabled={denkt}
+              title="Zufälliges Problem, Forderung oder Haltung, die das Spiel schon kennt"
+            >
+              <span aria-hidden="true">🎲 </span>Zufallsbeispiel
+            </button>
+          )}
+          <button className="knopf" type="submit" disabled={denkt || !eingabe.trim()}>
+            Senden
+          </button>
+        </div>
       </form>
     </main>
   )

@@ -17,6 +17,7 @@ const FORDERUNG_MUSTER = [
   /\b(man|es|die politik|der staat|die regierung) (sollte|muss|soll)\b/,
   /\b(abschaffen|verbieten)\b/,
   /\bwir brauchen\b/,
+  /\bmeine forderung\b/,
 ]
 
 /** Pauschale Urteile über Gruppen („die Ausländer sind alle …“): nachfragen, nicht wiederholen. */
