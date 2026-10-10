@@ -466,6 +466,13 @@ describe('Haltung → Wertfrage (Haltungskarte)', () => {
     expect(p).toContain('nicht ein umstrittenes Wort darin')
     // Für oder Gegen den Gegenstand einer Wertfrage geht vor Forderung, auch bei Steuern.
     expect(p).toContain('Das hat Vorrang vor "forderung"')
+    // Bei zwei passenden Fragen zählt der genannte Gegenstand.
+    expect(p).toContain('Passen zwei Fragen, nimm die, deren Gegenstand die Person nennt')
+    // Sorge zu Kriminalität und Herkunft ohne Abwertung ist ein Problem.
+    expect(p).toContain('Kriminalität und Herkunft ohne Abwertung')
+    // Auch fachlich formulierte Forderungen bekommen ein Thema.
+    expect(p).toContain('Das gilt auch für fachlich oder allgemein formulierte Forderungen')
+    expect(p).toContain('"thema_id" bei "problem" und "forderung"')
     expect(p).not.toMatch(/https?:\/\//)
     for (const partei of PARTEIEN) expect(p).not.toContain(partei.name)
   })
