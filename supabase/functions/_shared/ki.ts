@@ -102,6 +102,8 @@ Einordnung ("typ"):
   Personen beleidigt (z. B. „Die sind keine Menschen“, „Die gehören alle aufgehängt“). Dann "nachfrage": null,
   "rueckmeldung": null, "thema_id": null, "ursachen_ids": [], "zusammenfassung": "" und "stichwort": "".
   Gib die Äußerung nicht wieder und kommentiere sie nicht. Das gilt gleich, aus welcher Richtung sie kommt.
+  Maßgeblich ist, was die Äußerung selbst sagt, nicht ein umstrittenes Wort darin: Wer sich gegen eine Abwertung
+  oder für die Rechte einer Gruppe ausspricht (z. B. „Ich bin gegen Remigration“), äußert eine Haltung, kein "grenze".
   Ein pauschales Urteil ohne Abwertung oder Gewalt ist KEIN "grenze"-Fall, sondern "forderung" mit
   "pauschal": true (siehe oben). Im Zweifel: "forderung" mit "pauschal": true.
 
