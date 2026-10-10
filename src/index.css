@@ -632,6 +632,10 @@ textarea {
   justify-content: flex-end;
   gap: 8px;
 }
+.eingabe-knoepfe .symbol {
+  vertical-align: -3px;
+  margin-right: 6px;
+}
 
 /* ---------- Auflösung ---------- */
 .deine-eingabe {

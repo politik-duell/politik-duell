@@ -2,8 +2,8 @@ import { kartenHaltungen, type Daten } from '../data/quelle'
 import { instrumenteZurAuswahl } from '../../supabase/functions/_shared/ki.ts'
 import { fuerBeideErfasst } from './stand'
 
-// Zufallsbeispiel für die Eingabe (Aufbau- und Testphase): ein Problem, eine Forderung oder eine Haltung, die
-// die Datenbank schon beantworten kann – damit man nicht ins Leere fragt. Der Text kommt nur aus der Datenbank
+// Zufallsbeispiel für die Eingabe (immer sichtbar): ein Problem, eine Forderung oder eine Haltung, die die
+// Datenbank schon beantworten kann – zum Durchspielen ohne eigene Idee und damit niemand ins Leere fragt. Der Text kommt nur aus der Datenbank
 // und geht wie eine getippte Eingabe an die KI; gewertet wird wie sonst auch.
 
 export type BeispielArt = 'problem' | 'forderung' | 'wert'

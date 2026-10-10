@@ -47,6 +47,22 @@ const BEISPIEL_TEXT: Record<BeispielArt, string> = {
   wert: 'Beispiel-Haltung aus der Datenbank (Haltungskarte, ohne Punkte)',
 }
 
+/** Zwei sich kreuzende Pfeile (Zufallswiedergabe) – eigenes Symbol im Stil des Mikrofons. */
+function ShuffleSymbol() {
+  return (
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" className="symbol">
+      <path
+        d="M3 6h3.5c2 0 3.2 1 4.3 2.7l2.4 3.6c1.1 1.7 2.3 2.7 4.3 2.7H20M3 18h3.5c1.5 0 2.5-.6 3.4-1.6M13.6 7.6c.9-1 1.9-1.6 3.4-1.6H20M17.5 3.5 20 6l-2.5 2.5M17.5 15.5 20 18l-2.5 2.5"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  )
+}
+
 const spielerTexte = (v: Nachricht[]) => v.filter((n) => n.von === 'spieler').map((n) => n.text)
 
 function werteAus(
@@ -386,7 +402,8 @@ export function Runde({
               disabled={denkt}
               title="Zufälliges Problem, Forderung oder Haltung, die das Spiel schon kennt"
             >
-              <span aria-hidden="true">🎲 </span>Zufallsbeispiel
+              <ShuffleSymbol />
+              Zufallsbeispiel
             </button>
           )}
           <button className="knopf" type="submit" disabled={denkt || !eingabe.trim()}>
