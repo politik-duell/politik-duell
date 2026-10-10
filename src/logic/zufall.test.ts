@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { MOCK_DATEN } from '../data/quelle'
-import { beispielKandidaten, zufallsBeispiel, type Beispiel } from './zufall'
+import { beispielKandidaten, zufallsBeispiel, PROBLEM_VORSPANN, type Beispiel } from './zufall'
 import { fuerBeideErfasst } from './stand'
 
 const [p1, p2] = MOCK_DATEN.parteien
@@ -11,7 +11,7 @@ describe('Zufallsbeispiel für die Eingabe', () => {
     const { problem } = beispielKandidaten(MOCK_DATEN, optionen)
     expect(problem.length).toBeGreaterThan(0)
     for (const text of problem) {
-      const u = MOCK_DATEN.ursachen.find((x) => (x.alltag || x.beschreibung) === text)!
+      const u = MOCK_DATEN.ursachen.find((x) => PROBLEM_VORSPANN + (x.alltag || x.beschreibung) === text)!
       expect(fuerBeideErfasst(MOCK_DATEN, u.thema_id, optionen.parteiIds)).toBe(true)
       expect(u.ebene ?? 'bund').toBe('bund')
     }

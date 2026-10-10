@@ -6,6 +6,8 @@ import { fuerBeideErfasst } from './stand'
 // Datenbank schon beantworten kann – zum Durchspielen ohne eigene Idee und damit niemand ins Leere fragt. Der Text kommt nur aus der Datenbank
 // und geht wie eine getippte Eingabe an die KI; gewertet wird wie sonst auch.
 
+export const PROBLEM_VORSPANN = 'Mein Problem im Alltag: '
+
 export type BeispielArt = 'problem' | 'forderung' | 'wert'
 
 export interface Beispiel {
@@ -27,9 +29,10 @@ export function beispielKandidaten(daten: Daten, o: BeispielOptionen): Record<Be
 
   // Problem: Ursache eines Themas, das für beide Parteien ausgewertet ist, in der Sprache der Betroffenen.
   // Ohne Alltagsfassung (ältere Daten) die Beschreibung. Ursachen in Länderzuständigkeit nur mit gewähltem Land.
+  // Ausdrücklich als Problem – sonst liest die KI manche Fassung („… bleiben trotzdem hier“) als Forderung.
   const probleme = daten.ursachen
     .filter((u) => erfassteIds.has(u.thema_id) && ((u.ebene ?? 'bund') === 'bund' || o.land !== null))
-    .map((u) => u.alltag || u.beschreibung)
+    .map((u) => `${PROBLEM_VORSPANN}${u.alltag || u.beschreibung}`)
 
   // Forderung: Lösungsweg, zu dem es eine Forderungskarte gibt (gleiche Auswahl wie bei der KI).
   const forderungen = erfasst
