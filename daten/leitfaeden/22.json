@@ -13,9 +13,17 @@
       "text": "Strafverfolgung, Verbote und Gefahrenabwehr bei Straftaten gehören zu Sicherheit, individuelle Online-Anfeindungen zu Hass im Internet, Bundesförderung von Demokratieprojekten ist eine eigene Haltung. Pauschale Bekenntnisse zu Demokratie oder Zusammenhalt ohne Instrument sind keine Maßnahme."
     }
   ],
+  "buendel": {
+    "2201": ["Ausstieg und Distanzierung begleiten", "Rekrutierung und Netzwerke zurückdrängen"],
+    "2202": ["Plattformen in die Pflicht nehmen", "Medienkompetenz und Aufklärung stärken"],
+    "2203": ["Teilhabe und Gerechtigkeit stärken", "Vertrauen in Institutionen und Rechtsstaat stärken"],
+    "2204": ["Feindbilder und Gewaltrechtfertigung bildnerisch bearbeiten", "Werte und Verfassungstreue betonen"],
+    "2205": ["Meinungsfreiheit und Bevormundung", "Dialog und Streitkultur fördern"],
+    "2206": ["Zusammenhalt und Respekt stärken", "Toleranz und Offenheit für Gegenpositionen"]
+  },
   "suchbegriffe": {
     "2201": {
-      "Ausstieg und Distanzierung begleiten": ["ausstieg", "aussteigerprogramm", "distanzierung", "deradikalisierung", "ausstiegsberatung", "extremismusprävention", "radikalisierungsprävention"],
+      "Ausstieg und Distanzierung begleiten": ["aussteiger", "aussteigerprogramm", "distanzierung", "deradikalisierung", "ausstiegsberatung", "extremismusprävention", "radikalisierungsprävention"],
       "Rekrutierung und Netzwerke zurückdrängen": ["rekrutierung", "vereinsverbot", "extremistische netzwerke", "extremistische strukturen", "extremistische szene", "verbot extremistischer"]
     },
     "2202": {
@@ -35,8 +43,11 @@
       "Dialog und Streitkultur fördern": ["streitkultur", "dialog", "gesprächsformate", "miteinander reden", "bürgerdialog", "diskurs"]
     },
     "2206": {
-      "Zusammenhalt und Respekt stärken": ["gesellschaftlicher zusammenhalt", "zusammenhalt", "respekt", "spaltung überwinden", "polarisierung"],
+      "Zusammenhalt und Respekt stärken": ["gesellschaftlicher zusammenhalt", "respekt", "spaltung überwinden", "polarisierung"],
       "Toleranz und Offenheit für Gegenpositionen": ["toleranz", "pluralismus", "meinungsvielfalt", "andere meinungen", "kontroverse"]
     }
+  },
+  "suchbegriffe_geprueft": {
+    "toleranz": "Wenige Treffer (46); Fehltreffer wie Frustrations- oder Fehlertoleranz sind einzeln und leicht zu erkennen."
   }
 }

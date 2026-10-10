@@ -1,0 +1,205 @@
+{
+  "partei_id": 16,
+  "land": "MV",
+  "stand_im_pdf": "Stand: Juni 2026 (Beschluss Landesparteitag 30. Mai 2026)",
+  "massnahmen": [
+    {
+      "beschreibung": "Eigenes Landesgesetz gegen Diskriminierung auf den Weg bringen",
+      "ursachen_ids": [
+        1904
+      ],
+      "buendel": "Rechtsschutz gegen staatliche Diskriminierung schaffen",
+      "zitat": "Ein eigenes Landesantidiskriminierungsgesetz auf den Weg bringen.",
+      "seite": 16
+    },
+    {
+      "beschreibung": "Landesantidiskriminierungsstelle langfristig absichern",
+      "ursachen_ids": [
+        1904
+      ],
+      "zitat": "Die Landesantidiskriminierungsstelle langfristig absichern.",
+      "seite": 16
+    },
+    {
+      "beschreibung": "Diskriminierungsfreien Schutzbereich Schule für queere Menschen schaffen",
+      "ursachen_ids": [
+        1904
+      ],
+      "zitat": "Einen diskriminierungsfreien Bereich Schule, an dem besonders queere Menschen vor und in Notsituationen geschützt werden und ihnen geholfen wird […]",
+      "seite": 16
+    },
+    {
+      "beschreibung": "Kontrollquittungen für Betroffene polizeilicher Maßnahmen, Polizeibeauftragter als Anlaufstelle für alle",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "zitat": "Den Polizeibeauftragten zu einer Anlaufstelle für „alle“ machen und Kontrollquittungen für Betroffene polizeilicher Maßnahmen einführen.",
+      "seite": 20
+    },
+    {
+      "beschreibung": "Fortbildungen zu Antidiskriminierung und Rassismus für alle Beschäftigten der Justiz",
+      "ursachen_ids": [
+        1904
+      ],
+      "buendel": "Bestehende Rechte durchsetzen und Verwaltung schulen",
+      "zitat": "Fortbildungen zu Antidiskriminierung, strukturellem Rassismus, Geschlechtergerechtigkeit, Diversity und Gewaltsensibilität für alle Beschäftigten verankern.",
+      "seite": 24
+    },
+    {
+      "beschreibung": "Schutz queerer Menschen in der Landesverfassung verankern",
+      "ursachen_ids": [
+        1903
+      ],
+      "buendel": "Schutz und Akzeptanz queerer Menschen stärken",
+      "zitat": "Den Schutz queerer Menschen in der Landesverfassung verankern.",
+      "seite": 16
+    },
+    {
+      "beschreibung": "Landesaktionsplan für Akzeptanz sexueller und geschlechtlicher Vielfalt finanzieren und fortführen",
+      "ursachen_ids": [
+        1903
+      ],
+      "zitat": "Den Landesaktionsplan für Gleichstellung und Akzeptanz sexueller und geschlechtlicher Vielfalt ausfinanzieren und weiterführen.",
+      "seite": 16
+    },
+    {
+      "beschreibung": "Queeres Leben im Rahmenplan der Schulen verankern",
+      "ursachen_ids": [
+        1903
+      ],
+      "ursachen_offen": [
+        1904
+      ],
+      "buendel": "Selbstbestimmung und Aufklärung",
+      "zitat": "Queeres Leben im Rahmenplan von Schulen verankern – in Fächern wie Sozialkunde, Biologie und Geschichte.",
+      "seite": 16
+    },
+    {
+      "beschreibung": "Antidiskriminierungsberatungsstellen erhalten und ausbauen",
+      "ursachen_ids": [
+        1902
+      ],
+      "buendel": "Rassismus bekämpfen und Betroffene stärken",
+      "zitat": "Antidiskriminierungsberatungsstellen erhalten und weiter ausbauen.",
+      "seite": 16
+    },
+    {
+      "beschreibung": "Präventions- und Schutzkonzepte gegen menschenfeindliche Ideologien weiterentwickeln",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1902
+      ],
+      "zitat": "Präventions- und Schutzkonzepte gegen extremistische Einflussnahme, demokratiefeindliche Netzwerke und menschenfeindliche Ideologien weiterentwickeln.",
+      "seite": 7
+    },
+    {
+      "beschreibung": "Diskriminierungssensible Förderstrukturen in Kunst und Kultur schaffen",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "zitat": "Diskriminierungssensible und inklusive Förderstrukturen schaffen.",
+      "seite": 27
+    }
+  ],
+  "neue_buendel": [
+    {
+      "ursache": 1904,
+      "name": "Landesantidiskriminierungsstelle absichern",
+      "seite": 16
+    },
+    {
+      "ursache": 1904,
+      "name": "Diskriminierungsfreier Schutzbereich Schule",
+      "seite": 16
+    },
+    {
+      "ursache": 1904,
+      "name": "Kontrollquittung bei polizeilichen Maßnahmen",
+      "seite": 20
+    },
+    {
+      "ursache": 1903,
+      "name": "Förderung Landesaktionsplan Akzeptanz",
+      "seite": 16
+    },
+    {
+      "ursache": 1902,
+      "name": "Präventions- und Schutzkonzepte gegen menschenfeindliche Ideologien",
+      "seite": 7
+    },
+    {
+      "ursache": 1904,
+      "name": "Diskriminierungssensible Förderstrukturen",
+      "seite": 27
+    },
+    {
+      "ursache": 1904,
+      "name": "Rechtsschutz gegen staatliche Diskriminierung schaffen",
+      "seite": 16
+    },
+    {
+      "ursache": 1904,
+      "name": "Bestehende Rechte durchsetzen und Verwaltung schulen",
+      "seite": 24
+    },
+    {
+      "ursache": 1903,
+      "name": "Schutz und Akzeptanz queerer Menschen stärken",
+      "seite": 16
+    },
+    {
+      "ursache": 1903,
+      "name": "Selbstbestimmung und Aufklärung",
+      "seite": 16
+    },
+    {
+      "ursache": 1902,
+      "name": "Rassismus bekämpfen und Betroffene stärken",
+      "seite": 16
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 1904,
+      "seiten": [
+        16,
+        20
+      ],
+      "grund": "Polizeiprogramm „Queer“ (S. 16) und Grundrechtsbildung in Polizeiausbildung und -fortbildung (S. 20) sind Fortbildungen wie die erfasste Justiz-Maßnahme (gleiches Bündel, Bündel-Limit). Beschwerdestelle für Fehlverhalten der Polizei (S. 20) ohne Merkmalsbezug (R2)."
+    },
+    {
+      "ursache": 1904,
+      "seiten": [
+        16
+      ],
+      "grund": "Reform des Allgemeinen Gleichbehandlungsgesetzes (Bundesrecht, Zivilrecht): nicht Ursache 1904 (öffentliches Recht), Ursache 1901 nicht zulässig für dieses Programm."
+    },
+    {
+      "ursache": 1903,
+      "seiten": [
+        6,
+        16
+      ],
+      "grund": "Fach „Beziehungen, Sexualkunde und Gesundheit“ (S. 6) und queersensible Medizin als Lernziel (S. 16) gleichartig zur Rahmenplan-Maßnahme (Bündel-Limit). Bundesratsinitiative GG Art. 3 (S. 16) gleichartig zur Landesverfassung. Kulturförderung queerer Initiativen (S. 16) gleichartig zur Landesaktionsplan-Förderung. Queere Versorgungszentren (S. 16) Versorgungsangebot ohne Ursachenbezug. Beratung und Schutz bei Gewalt gegen Queere (S. 16) und Gewalthilfegesetz (S. 16): Gewalt gehört nach R2 zu anderem Thema."
+    },
+    {
+      "ursache": 1902,
+      "seiten": [
+        7,
+        16
+      ],
+      "grund": "Zivilgesellschaftliche Bündnisse und Fachstellen wie LOBBI, Bidaya, Exit (S. 7) und zusätzliche Mittel für mobile Betroffenenberatung (S. 16): gleichartig zur Antidiskriminierungsberatung (Bündel-Limit). Hasskriminalität (S. 7) gehört nach R2 zu Sicherheit. Generische Demokratieförderung, Landesdemokratiefördergesetz (S. 7–8) ohne Merkmalsbezug (R2)."
+    }
+  ]
+}
+--- Protokoll ---
+
+Gelesene Seiten: S. 3 (Inhalt), 4–29 vollständig, Kapitel 1–20. S. 1 und 30 fast ohne Text, ohne Bezug. Passende Kapitel: 1 Bildung (S. 4–6), 3 Demokratie und Zusammenhalt (S. 7–8), 7 Soziales (S. 11–13), 8 Gleichstellung (S. 14–16, Queerpolitik und Antidiskriminierungsarbeit), 10 Gesundheit (S. 18–19), 11 Inneres (S. 19–20), 15 Justiz (S. 24–25), 17 Kunst und Kultur (S. 26–27), 19 Verbraucherschutz (S. 28). Übrige Kapitel ohne Bezug.
+
+Richtungen ohne Maßnahme: 1902 „Vorurteile durch Bildung und Begegnung abbauen“, „Beleidigung und Hetze strafrechtlich verfolgen“ (siehe hebel_nicht_gefunden). 1903 „Elternrechte und traditionelles Familienbild betonen“ (siehe hebel_nicht_gefunden). 1904 hat für beide Bündel Maßnahmen.
+
+Grenzfälle: Schulische Maßnahme zu queerem Leben (S. 16, Lehrplan) als 1903 mit 1904 offen, da R1 Schule dem staatlichen Handeln zuordnet. Kontrollquittung (S. 20) und Diskriminierungssensible Förderstrukturen (S. 27) als 1904 offen, da kein ausdrücklicher Merkmalsbezug bzw. Zuordnung unklar. Präventions- und Schutzkonzepte gegen menschenfeindliche Ideologien (S. 7) als 1902 offen, da überwiegend Extremismus-Thema.
+
+Gleichartige Stellen zu Bündeln (nicht erfasst, siehe nicht_erfasst): Justiz-Fortbildung (S. 24) als Bündel-Vertreter gewählt; Polizei-Fortbildungen (S. 16, 20) gleichartig.

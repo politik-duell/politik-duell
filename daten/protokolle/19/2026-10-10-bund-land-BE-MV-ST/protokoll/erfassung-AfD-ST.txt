@@ -1,0 +1,57 @@
+{
+  "partei_id": 15,
+  "land": "ST",
+  "massnahmen": [
+    { "beschreibung": "Landesweite Werbe- und Aufklärungskampagnen sollen Kinder und Familie in den Mittelpunkt stellen, auch in Schule und Bildung.", "ursachen_ids": [1903], "buendel": "Elternrechte und traditionelles Familienbild betonen", "zitat": "Wir werden dagegen wieder die Themen Kinder und Familie in den Mittelpunkt der Werbe- und Aufklärungskampagnen der Landesregierung stellen, aber auch in der schulischen und darüber hinausgehenden Bildung verankern und priorisieren.", "seite": 13 },
+    { "beschreibung": "Staatliche Kampagnen und Programme, die Kinder vor der Pubertät mit sexuellen Themen konfrontieren, sollen eingestellt werden.", "ursachen_ids": [1903], "buendel": "Selbstbestimmung und Aufklärung", "zitat": "Wir werden alle staatlichen Kampagnen und Programme einstellen, die Kinder vor der Pubertät mit sexuellen Themen konfrontieren.", "seite": 22 },
+    { "beschreibung": "Zugang zu Pubertätsblockern und geschlechtsangleichenden Hormontherapien für Minderjährige soll eingeschränkt oder unterbunden werden.", "ursachen_ids": [], "ursachen_offen": [1903], "zitat": "Wir werden diesen Trend umkehren. Statt den Zugang zu Hormontherapien und Pubertätsblockern zu erleichtern, fordern wir, wie auch der Deutsche Ärztetag, den Zugang zu diesen experimentellen Eingriffen einzuschränken bzw. zu unterbinden.", "seite": 23 },
+    { "beschreibung": "An Schulen soll per Runderlass keine Regenbogenfahne mehr gezeigt werden.", "ursachen_ids": [1903], "zitat": "Wir werden deshalb durch entsprechenden Runderlass sicherstellen, dass von schuloffizieller Seite keine Regenbogenfahne mehr gezeigt wird.", "seite": 77 },
+    { "beschreibung": "Fördermittel sollen nicht mehr nach bestimmten Genderzielen oder queerbezogenen Anforderungen vergeben werden.", "ursachen_ids": [1903], "buendel": "Schutz und Akzeptanz queerer Menschen stärken", "zitat": "Förderpolitik ohne Regenbogen! Die Vergabe von Fördermitteln darf sich nicht mehr danach richten, ob die Antragsteller bestimmte Genderziele erreichen oder andere […]", "seite": 192 },
+    { "beschreibung": "Die Landeszentrale für politische Bildung soll in ihrer jetzigen Form abgeschafft und durch ein anderes Landesinstitut ersetzt werden.", "ursachen_ids": [1902], "buendel": "Vorurteile durch Bildung und Begegnung abbauen", "zitat": "Aus diesem Grund werden wir die Landeszentrale für politische Bildung in der aktuellen Form abschaffen und als Alternative ein Landesinstitut für staatspolitische Bildung und kulturelle Identität aufbauen.", "seite": 61 },
+    { "beschreibung": "Landesförderung des Schulprogramms gegen Rassismus soll eingestellt werden.", "ursachen_ids": [1902], "buendel": "Rassismus bekämpfen und Betroffene stärken", "zitat": "Wir werden deshalb die Landesförderung des Programms „Schule gegen Rassismus – Schule mit Courage“ einstellen.", "seite": 77 },
+    { "beschreibung": "Den Einsatz für eine Entschlackung der bestehenden Meinungsstraftatbestände (Hasskriminalität) will die Partei betreiben.", "ursachen_ids": [1902], "buendel": "Beleidigung und Hetze strafrechtlich verfolgen", "zitat": "Wir werden uns diesem Problem mit allen Möglichkeiten einer Landesregierung widmen und uns für eine Entschlackung der bestehenden Meinungsstraftatbestände einsetzen.", "seite": 123 },
+    { "beschreibung": "Der Ausnahmetatbestand für Schlachtungen ohne Betäubung im Tierschutzgesetz soll gestrichen werden.", "ursachen_ids": [], "ursachen_offen": [1902], "zitat": "Wir werden uns deshalb dafür einsetzen, dass der entsprechende Ausnahmetatbestand (§ 4a Abs. 2 Nr. 2 Tierschutzgesetz) gestrichen wird.", "seite": 184 },
+    { "beschreibung": "Ein Beschwerdeweg für Eltern und Schüler bei Fehlverhalten von Lehrkräften und Schulleitungen soll geschaffen und eine Beschwerdestelle eingerichtet werden.", "ursachen_ids": [], "ursachen_offen": [1904], "buendel": "Rechtsschutz gegen staatliche Diskriminierung schaffen", "zitat": "Um auf Fehlverhalten von Lehrern und Schulleitern angemessen reagieren zu können, werden wir erweiterte Appellationsrechte für Eltern und Schüler schaffen und am Bildungsministerium eine Beschwerdestelle mit erhöhter Sichtbarkeit einrichten.", "seite": 86 },
+    { "beschreibung": "Alle Kinder von Flüchtlingen und Asylbewerbern sollen in Sonderklassen unterrichtet werden.", "ursachen_ids": [1904], "zitat": "Wir werden alle Kinder von Flüchtlingen und Asylbewerbern in Sonderklassen unterrichten lassen.", "seite": 88 },
+    { "beschreibung": "Landesstellen für Gleichstellung, Integration und Diversity sollen abgeschafft werden.", "ursachen_ids": [], "ursachen_offen": [1904], "zitat": "In den letzten Jahren wurden immer mehr kostspielige Sonderbeauftragte ernannt – für Gleichstellung, Integration, Diversity und anderes mehr –, die kaum echten Nutzen für die Bürger stiften. Wir werden diese Posten […] konsequent abschaffen.", "seite": 215 }
+  ],
+  "neue_buendel": [
+    { "ursache": 1903, "name": "Symbolverbot", "seite": 77 },
+    { "ursache": 1903, "name": "Einschränkung medizinischer Versorgung", "seite": 23 },
+    { "ursache": 1902, "name": "Beschränkung religiöser Praxis", "seite": 184 },
+    { "ursache": 1904, "name": "Sonderklassen für Flüchtlingskinder", "seite": 88 },
+    { "ursache": 1904, "name": "Beauftragtenstellen abschaffen", "seite": 215 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "Frühsexualisierung", "ursache": 1903, "richtung": "Kampagnen und Programme einstellen" },
+    { "begriff": "Gendersprache", "ursache": 1903, "richtung": "im amtlichen Sprachgebrauch untersagen" },
+    { "begriff": "Hassverbrechen", "ursache": 1902, "richtung": "hinterfragen, Meinungsstraftatbestände entschlacken" }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis (S. 247–256); Kapitel I Familie und Kinder (S. 10–25), III Kultur und Integration (S. 54–67), IV Schulbildung (S. 70–88), VI Innere Sicherheit (S. 104–115, Fundstellen), VII Justizwesen (S. 118–127, Fundstellen), XI Landwirtschaft (S. 184, Fundstelle), XII Ländlicher Raum (S. 192–193), XIV Verwaltung (S. 215), XV Medien (S. 218–224 über Fundstellenauszüge und Stichproben), Kapitel II Einwanderung nur über die Fundstellenauszüge (S. 27, 36) ausgewertet, ohne Maßnahme für dieses Thema. Seiten ohne Text in diesen Kapiteln (S. 68–69, 90–91, 115–117, 128–129) sind Trenn- oder Titelseiten; kein erkennbar fehlender Inhalt.
+
+Nicht erfasst (gelesen, nicht aufgenommen; Ursachen 1902/1903/1904):
+- S. 15 Elternrechte in die Landesverfassung: gleichartig zum Bündel „Elternrechte und traditionelles Familienbild betonen“ (S. 13 gewählt); Bezug zu Abwertung nicht unmittelbar.
+- S. 17 „Wir sprechen uns […] klar gegen die staatliche Bewerbung und Förderung alternativer Lebensentwürfe aus“: gleiches Bündel, Bekenntnis ohne eigene Maßnahme gewählt, nur S. 13 aufgenommen.
+- S. 85 Hausunterricht als Elternrecht: Wahlfreiheit Schule/Hausunterricht, kein Bezug zu einer Ursache.
+- S. 66 „Die AfD-Regierung wird alle Möglichkeiten ausschöpfen, den Einfluss dieser kulturfremden Religion […] zu beschränken, soweit dies rechtlich zulässig ist“ (Muezzin, Moscheen): gleichartig zum Bündel „Beschränkung religiöser Praxis“ (S. 184 gewählt); im Zweifel auch ursachen_offen 1902 möglich.
+- S. 62 Gendersprache im amtlichen Sprachgebrauch untersagen („Wir werden deshalb als Landesregierung Gendersprache im gesamten amtlichen Sprachgebrauch untersagen.“): Verbot wie Symbolverbot S. 77 (gleichartig, Symbolverbot gewählt); bei Bedarf ursachen_offen 1903.
+- S. 97 „Gender-Studien abschaffen!“ (Hochschulförderung über Zielvereinbarungen): Förderstreichung im Bereich Geschlechtervielfalt, gleichartig zu „Förderpolitik ohne Regenbogen“ (S. 192 gewählt).
+- S. 109 „Funktion des Polizeibeauftragten abschaffen!“ („Daneben braucht es keinen Polizeibeauftragten.“): Beschwerdestelle abschaffen, gleichartig zum Bündel „Rechtsschutz gegen staatliche Diskriminierung schaffen“ (S. 86 gewählt).
+- S. 123 Hassverbrechen-Begriff und S. 126 „mindestens so schwer bestraft werden, wie […] Volksverhetzung“, S. 223 „Gesetz […] «Hasskriminalität» […] rückgängig zu machen“: gleichartig zum Bündel „Beleidigung und Hetze strafrechtlich verfolgen“ (S. 123 gewählt).
+- S. 64 Einbürgerung (Erklärung, Test, Aufsatz): Einwanderungs- und Staatsangehörigkeitsrecht, keine Benachteiligung im Alltag.
+- S. 192 „Gleichstellungsbeauftragte abschaffen!“ und S. 11 „Gleichstellungsbeauftragten“ ersetzen: Gleichstellung der Geschlechter, nicht Ursache 1903 (sexuelle und geschlechtliche Vielfalt).
+- S. 36, S. 60 „interkulturelle Öffnung“, „Miteinander e. V.“, „Schule ohne Rassismus“ (Kritik ohne Maßnahme), S. 70–71 (Schule soll Integration nicht leisten, Kritik): keine Handlungszusage.
+- S. 77 Lehrkräfte politische Neutralität, Neutralitätsgebot: kein Bezug zu 1902/1903.
+- S. 74 Inklusion beenden: Behinderung ist kein Merkmal dieses Themas.
+- S. 219–222 Medien (Radio Corax, Rundfunkstaatsverträge, NetzDG): kein Bezug zu 1902–1904 (NetzDG ist Thema 22).
+- S. 106 Schusswaffengebrauch „Generalverdacht“, S. 104 Respekt gegenüber Polizei: kein Bezug zu einer Ursache dieses Themas.
+
+Richtungen ohne Maßnahme: keine. Alle drei Ursachen (1902, 1903, 1904) haben mindestens eine Maßnahme.
+
+Hinweis: Zuordnung der Sonderklassen (S. 88) zu 1904 nach Leitfaden R1 (staatliches Handeln Schule). Schächten-Verbot (S. 184) und Pubertätsblocker (S. 23) sind Grenzfälle, als ursachen_offen erfasst.
+
+Neue Bündel (Hinweis der Prüfung, Bündel aus der Treffer-Liste des Auftrags, im Leitfaden nicht bei diesen Ursachen): „Elternrechte und traditionelles Familienbild betonen“ (1903), „Selbstbestimmung und Aufklärung“ (1903), „Schutz und Akzeptanz queerer Menschen stärken“ (1903), „Vorurteile durch Bildung und Begegnung abbauen“ (1902), „Rassismus bekämpfen und Betroffene stärken“ (1902), „Beleidigung und Hetze strafrechtlich verfolgen“ (1902), „Rechtsschutz gegen staatliche Diskriminierung schaffen“ (1904). Zur Koordination gemeldet; eigene Hebel stehen in neue_buendel.

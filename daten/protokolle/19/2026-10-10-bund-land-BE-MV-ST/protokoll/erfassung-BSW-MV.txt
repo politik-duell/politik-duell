@@ -1,0 +1,77 @@
+{
+  "partei_id": 17,
+  "land": "MV",
+  "massnahmen": [
+    {
+      "beschreibung": "Lehnt das Selbstbestimmungsgesetz in seiner aktuellen Form ab.",
+      "ursachen_ids": [],
+      "ursachen_offen": [1903],
+      "buendel": "Selbstbestimmung und Aufklärung",
+      "zitat": "Zugleich lehnen wir das Selbstbestimmungsgesetz in seiner aktuellen Form ab, weil es zentrale Schutzinteressen nicht ausreichend berücksichtigt.",
+      "seite": 72
+    },
+    {
+      "beschreibung": "Lehnt verpflichtende Gendersprache in staatlichen Einrichtungen ab.",
+      "ursachen_ids": [],
+      "ursachen_offen": [1903],
+      "zitat": "Wir lehnen verpflichtende Gendersprache in staatlichen Einrichtungen und Institutionen ab.",
+      "seite": 56
+    },
+    {
+      "beschreibung": "Fördert internationale Schul-, Kultur- und Städtepartnerschaften für Völkerverständigung und interkulturellen Austausch.",
+      "ursachen_ids": [],
+      "ursachen_offen": [1902],
+      "buendel": "Vorurteile durch Bildung und Begegnung abbauen",
+      "zitat": "Förderung internationaler Schul-, Kultur- und Städtepartnerschaften als Beitrag zur Völkerverständigung und zum interkulturellen Austausch.",
+      "seite": 9
+    },
+    {
+      "beschreibung": "Will Gewaltprävention, respektvolle Beziehungen und Gleichberechtigung in allen Schulformen vermitteln.",
+      "ursachen_ids": [],
+      "ursachen_offen": [1902, 1903],
+      "zitat": "Gewaltprävention, respektvolle Beziehungen und Gleichberechtigung müssen kontinuierlich und in jeder Schulform vermittelt werden.",
+      "seite": 46
+    },
+    {
+      "beschreibung": "Will konsequent gegen Rassismus und Ausländerfeindlichkeit vorgehen.",
+      "ursachen_ids": [1902],
+      "buendel": "Rassismus bekämpfen und Betroffene stärken",
+      "zitat": "Konsequentes Vorgehen gegen Rassismus und Ausländerfeindlichkeit.",
+      "seite": 74
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 1904,
+      "seiten": [47, 67, 68, 71],
+      "grund": "Fortbildung von Lehrkräften, Polizei und Feuerwehr sowie Schulung zu Gewalt gegen Frauen gelesen: keine Maßnahme gegen Diskriminierung durch Behörden oder Schulen; kein Rechtsschutz, keine Beschwerde- oder Ombudsstelle."
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 1903, "name": "Verbot verpflichtender Gendersprache", "seite": 56 },
+    { "ursache": 1902, "name": "Verbindliche Vermittlung im Unterricht", "seite": 46 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "Völkerverständigung", "ursache": 1902, "richtung": "Vorurteile durch Begegnung abbauen" }
+  ]
+}
+
+--- Protokoll ---
+
+Thema 19 „Diskriminierung im Alltag“, BSW MV (Stand laut Auftrag 2026-03-14).
+
+Gelesen: Inhaltsverzeichnis (S. 2–5); Kapitel 1 Frieden und Dialog (S. 6–10, nur Friedensbildung und Partnerschaften); Kapitel 2 (S. 11–17: Familien, Kinder, Teilhabe, Inklusion); Kapitel 4.1 Bildung (S. 45–50); Kapitel 4.3 Kultur (S. 54–56); Kapitel 6.1 Innere Sicherheit (S. 67–72, mit Verfassungsschutz S. 69 und Schutz von Frauen S. 71); Kapitel 6.2 Zuwanderung (S. 72–74); Fundstellen S. 4, 9, 10, 12, 13, 14, 15, 25–27, 36, 37, 53, 54, 67, 68, 74, 77, 82, 83, 89. S. 43 fast ohne Text (Ende Wirtschaftskapitel, nicht relevant).
+
+Ursache 1903 (Pflicht): Treffer „familienbild“ (S. 12) ist ein Fehltreffer: „Familienbildung“ ohne Bezug zu Elternrechten. Keine Stelle zu Neutralität in der Schule, Ehe zwischen Mann und Frau oder Schutz queerer Menschen. Treffer „akzeptanz“ (14) betreffen Energie, Tourismus, Landwirtschaft und Hochschulen, nicht sexuelle oder geschlechtliche Vielfalt. Das Selbstbestimmungsgesetz (S. 72) und die Gendersprache (S. 56) sind als Grenzfälle in ursachen_offen.
+
+Ursache 1902: Keine Maßnahme gegen Beleidigung oder Hetze (0 Treffer; Strafverfolgung gehört nach R2 zu Sicherheit). Begegnungs- und Generationenangebote (S. 13–15, 54) sind ohne Merkmalsbezug und nicht erfasst. Integrationsangebote (S. 74: Deutschkurse, Arbeitsmarktzugang) zielen nicht auf Einstellungen und sind nicht erfasst. Weitere gleichartige Stelle zur Begegnungsförderung: S. 10 („Stärkere Nutzung von EU- und Landesmitteln für internationale Bildungs-, Jugend- und Austauschprojekte“), Hebel Förderung wie S. 9.
+
+Nicht erfasst (Ziele, Bekenntnisse ohne Handlung): S. 16 „konsequenter Schutz vor Übergriffen und Diskriminierung“ (Maßstab, Ziel); S. 71 „Konsequenter Schutz vor Gewalt und Diskriminierung“ (Ziel, Frauenschutz); S. 72 „Niemand darf deshalb diskriminiert oder ausgegrenzt werden“ (Bekenntnis, Satz vor der Ablehnung des Gesetzes); S. 71 Amnestie für Widerstand gegen „Diskriminierung ungeimpfter Menschen“ (kein Merkmal aus R2). Inklusion und Eingliederungshilfe (S. 16–17, 48) betreffen Behinderung, kein Merkmal dieses Themas.
+
+Ursache 1904: Keine Maßnahme zu einem spezifischen Rechtsschutz gegen Diskriminierung durch staatliches Handeln; die Bündel „Rechtsschutz …“ und „ombudsstelle“ etc. haben keinen Fund. Fortbildungen (S. 47, 67, 68) sind nach R1 Arbeitsbedingungen bzw. Ausstattung, nicht Diskriminierungsschutz.
+
+Richtungen ohne Maßnahme: „Beleidigung und Hetze strafrechtlich verfolgen“ (1902; R2), „Elternrechte und traditionelles Familienbild betonen“ (1903; kein Fund), „Schutz und Akzeptanz queerer Menschen stärken“ (1903; kein Fund, S. 72 nur als Bekenntnis).
+
+Konkurrenz im Bündel: „Vorurteile durch Bildung und Begegnung abbauen“ hat S. 9 gewählt (konkreter als S. 10).
+
+Neue Bündel (Hinweis der Prüfung, im Auftrag, aber nicht im Leitfaden bei diesen Ursachen): „Selbstbestimmung und Aufklärung“ (1903, S. 72); „Vorurteile durch Bildung und Begegnung abbauen“ (1902, S. 9); „Rassismus bekämpfen und Betroffene stärken“ (1902, S. 74).

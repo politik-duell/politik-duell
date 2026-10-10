@@ -1,0 +1,50 @@
+{
+  "partei_id": 15,
+  "land": "ST",
+  "massnahmen": [
+    { "beschreibung": "Die Landeszentrale für politische Bildung soll in ihrer jetzigen Form abgeschafft und durch ein anderes Landesinstitut ersetzt werden.", "ursachen_ids": [2204], "buendel": "Feindbilder und Gewaltrechtfertigung bildnerisch bearbeiten", "zitat": "Aus diesem Grund werden wir die Landeszentrale für politische Bildung in der aktuellen Form abschaffen und als Alternative ein Landesinstitut für staatspolitische Bildung und kulturelle Identität aufbauen.", "seite": 61 },
+    { "beschreibung": "Landesförderung für politische Stiftungen soll gesetzlich untersagt werden.", "ursachen_ids": [], "ursachen_offen": [2204], "zitat": "Wir werden jegliche Landesförderung für politische Stiftungen gesetzlich untersagen.", "seite": 213 },
+    { "beschreibung": "Das Indoktrinationsverbot an Schulen soll zu einem strengen Neutralitätsgebot für Lehrkräfte ausgeweitet werden.", "ursachen_ids": [], "ursachen_offen": [2204], "zitat": "Wir werden deshalb das Indoktrinationsverbot zu einem strengen Neutralitätsgebot ausweiten.", "seite": 77 },
+    { "beschreibung": "Eine neue Praxis der Toleranz gegenüber Demonstrationen und nonkonformen Meinungsäußerungen soll etabliert werden.", "ursachen_ids": [2206], "buendel": "Toleranz und Offenheit für Gegenpositionen", "zitat": "Wir werden deshalb als Landesregierung eine neue Praxis der Toleranz gegenüber Demonstrationen und nonkonformen Meinungsäußerungen etablieren.", "seite": 133 },
+    { "beschreibung": "Das Netzwerkdurchsetzungsgesetz soll zurückgenommen und europäische Digitalgesetze überprüft werden.", "ursachen_ids": [2205], "buendel": "Meinungsfreiheit und Bevormundung", "zitat": "Wir setzen uns für die Rückabwicklung des NetzDG und für eine Überprüfung der Europäischen Digitalgesetze (Digital Services Act) ein.", "seite": 222 },
+    { "beschreibung": "Durch Respekt gegenüber der Polizei und Neugewichtung ihrer Aufgaben soll Vertrauen der Bürger in die Polizei gestärkt werden.", "ursachen_ids": [], "ursachen_offen": [2206], "zitat": "Wir werden deshalb durch Respekt gegenüber der Polizei, aber auch durch die Neugewichtung ihrer Aufgaben dafür sorgen, dass sie von den Bürgern wieder als Freund und Helfer wahrgenommen wird.", "seite": 104 }
+  ],
+  "neue_buendel": [
+    { "ursache": 2204, "name": "Förderung entziehen", "seite": 213 },
+    { "ursache": 2204, "name": "Neutralitätsgebot für Lehrkräfte", "seite": 77 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 2201, "seiten": [104, 111, 112, 113], "grund": "Kapitel Innere Sicherheit gelesen; kein Ausstiegs-, Präventions- oder Milieuangebot. Antifa-Verbot und Terror-Einstufung (S. 111–112) sind Verbot und Gefahrenabwehr (R2)." }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "Zensur", "ursache": 2205, "richtung": "verhindern, Löschregeln angreifen" }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis (S. 247–256); Kapitel I (S. 10–25) nicht relevant; III Kultur und Integration (S. 54–67) ganz; IV Schulbildung (S. 70–88) ganz; VI Innere Sicherheit (S. 104–115) gelesen; VII Justizwesen (S. 118–127) gelesen; VIII Demokratie und Bürgerrechte (S. 130–139) gelesen; XIV Verwaltung (S. 215) gelesen; XV Medien (S. 218–224) gelesen; XI Landwirtschaft nur S. 184 (Schächten) gelesen.
+Seiten ohne Text (1, 8, 9 usw.) sind Trennseiten; in den gelesenen Kapiteln fehlt kein erkennbarer Inhalt.
+
+Nicht erfasst (gelesen, nicht aufgenommen):
+- S. 131 Verfassungsschutz-Reform („Wir werden als Landesregierung Reformen des Verfassungsschutzes […] durchführen“): Behördenreform ohne konkrete Maßnahme gegen Radikalisierung; kein Bezug zu 2205 erkennbar.
+- S. 123 Hasskriminalität-Begriff, S. 220 Rundfunkstaatsverträge kündigen, S. 223 Zensur im Internet verhindern: gleichartig zum Bündel „Meinungsfreiheit und Bevormundung“ (S. 222 gewählt).
+- S. 213 Stiftungsförderung ist gleichartig zu Radio Corax (S. 219, „Radio Corax den Geldhahn zudrehen!“): Förderung entziehen; S. 213 gewählt.
+- S. 219 Radio Corax: Förderentzug, gleichartig zu S. 213.
+- S. 104 „Die Verfolgung von Bürgern, die sich im Rahmen der Meinungsfreiheit äußern, hat zu unterbleiben.“ und S. 104/111/171 Strafverfolgung, Verbote, Klimaextremismus: R2 (Sicherheit).
+- S. 111–112 Antifa in die Schranken weisen / Terrorvereinigung: R2 (Verbot, Gefahrenabwehr).
+- S. 66 Religionsfreiheit, Muezzin, Minarett („den Einfluss dieser kulturfremden Religion […] zu beschränken“): kein Bezug zu einer der Ursachen 2204–2206.
+- S. 56–60 „Deutsch denken“, Kulturförderung nach deutscher Identität, Patriotismus: Identitätsförderung ohne Bezug zu Radikalisierung im Sinne der Ursachen.
+- S. 77 Bekenntnis zu Werten, S. 119 Respekt vor dem Recht, S. 108 Rechtsstaatlichkeit: Bekenntnisse oder Strafverfolgung ohne Instrument.
+- S. 64 Einbürgerungserklärung, „Bekenntnis zu Deutschland einfordern“: Einbürgerungspolitik, nicht Radikalisierungsprävention.
+- S. 17, 22 Familienbild, Frühsexualisierung: nicht Thema 22.
+- S. 137 Waffenrecht („linksalternative Diskursherrschaft“): Kritik, keine Maßnahme zu 2205.
+- S. 133 Vermummungsverbot und Demonstrationen (durchsetzen) sind Gefahrenabwehr/Versammlungsrecht (R2); nur die Toleranz-Zusage auf S. 133 erfasst.
+
+Richtungen ohne Maßnahme:
+- 2201 (Ausstieg, Distanzierung, Rekrutierung): keine Zusage. Im Text fehlen Begriffe Aussteiger, Distanzierung, Deradikalisierung, Präventionsangebote; nur Antifa-Verbot und Strafverfolgung (R2).
+- Bündel „Dialog und Streitkultur fördern“ (2205): kein Treffer mit Zusage; Begriffe „Dialog“, „Streitkultur“, „Gespräch“, „Miteinander reden“ im Text nicht als Maßnahme gefunden.
+- Bündel „Zusammenhalt und Respekt stärken“ (2206): nur Bekenntnisse zu Respekt (S. 64, 119, 176) oder Respekt vor der Polizei (S. 104, erfasst als ursachen_offen 2206).
+- Bündel „Werte und Verfassungstreue betonen“ (2204): nur Verweise auf das Grundgesetz (S. 15, 17, 27, 60, 66) ohne Handlungszusage.
+
+Neue Bündel (Hinweis der Prüfung, Bündel aus der Treffer-Liste des Auftrags, im Leitfaden nicht bei diesen Ursachen): „Feindbilder und Gewaltrechtfertigung bildnerisch bearbeiten“ (2204), „Toleranz und Offenheit für Gegenpositionen“ (2206), „Meinungsfreiheit und Bevormundung“ (2205). Zur Koordination gemeldet; eigene Hebel stehen in neue_buendel.

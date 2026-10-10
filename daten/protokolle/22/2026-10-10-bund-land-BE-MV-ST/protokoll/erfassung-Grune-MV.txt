@@ -1,0 +1,106 @@
+{
+  "partei_id": 13,
+  "land": "MV",
+  "stand_im_pdf": "Stand: 16.07.2026",
+  "massnahmen": [
+    {
+      "beschreibung": "V-Leute so regeln, dass Ressourcen nicht als Strukturhilfe für die extremistische Szene dienen",
+      "ursachen_ids": [2201],
+      "buendel": "Rekrutierung und Netzwerke zurückdrängen",
+      "zitat": "Für einen Verfassungsschutz, der die Verfassung schützt, werden wir: […] den Umgang mit V-Leuten so regeln, dass die zur Verfügung gestellten Ressourcen nicht als Strukturhilfe für die extremistische Szene missbraucht werden.",
+      "seite": 79
+    },
+    {
+      "beschreibung": "Demokratiebildung als Querschnittsaufgabe in Ausbildung und Lehrplänen verankern, auch zu Desinformation",
+      "ursachen_ids": [2204],
+      "buendel": "Feindbilder und Gewaltrechtfertigung bildnerisch bearbeiten",
+      "zitat": "Für eine demokratischere Schule und ein gesundes Lernklima wollen wir: […] Demokratiebildung als Querschnittsaufgabe sowie Medienkompetenz verbindlich in der pädagogischen Ausbildung und in den Lehrplänen verankern, insbesondere im Umgang mit Desinformation, Cybermobbing und digitaler Mündigkeit.",
+      "seite": 44
+    },
+    {
+      "beschreibung": "Landeszentrale für politische Bildung gesetzlich absichern und Regionalzentren für Demokratie stärken",
+      "ursachen_ids": [2204],
+      "neue_buendel": [{ "ursache": 2204, "name": "Politische Bildungseinrichtungen stärken", "seite": 90 }],
+      "zitat": "Für eine Gesellschaft ohne Hass und ohne Hetze werden wir: […] die Landeszentrale für politische Bildung auf eine gesetzliche Grundlage stellen sowie die Regionalzentren für Demokratie stärken[…].",
+      "seite": 90
+    },
+    {
+      "beschreibung": "Unabhängige Forschungsstelle Demokratie einrichten, die Analysen demokratiefeindlicher Bestrebungen veröffentlicht",
+      "ursachen_ids": [],
+      "ursachen_offen": [2204],
+      "neue_buendel": [{ "ursache": 2204, "name": "Unabhängige Forschungsstelle Demokratie", "seite": 79 }],
+      "zitat": "Für einen Verfassungsschutz, der die Verfassung schützt, werden wir: […] eine unabhängige Forschungsstelle „Demokratie” einrichten, die wissenschaftliche Analysen demokratiefeindlicher und -gefährdender Bestrebungen erarbeitet, der Öffentlichkeit durch Publikationen und Bildungsangebote zugänglich macht",
+      "seite": 79
+    },
+    {
+      "beschreibung": "Bürger*innen-Polizei mit mehr Präsenz vor Ort und direktem Dialog in den Quartieren stärken",
+      "ursachen_ids": [],
+      "ursachen_offen": [2205],
+      "neue_buendel": [{ "ursache": 2205, "name": "Bürgernahe Polizeipräsenz", "seite": 76 }],
+      "zitat": "Für ein sicheres MV wollen wir: […] eine „Bürger*innen-Polizei“ nach skandinavischem Vorbild stärken, mit mehr Präsenz vor Ort, etwa durch Beamt*innen zu Fuß in den Quartieren und im direkten Dialog mit den Menschen.",
+      "seite": 76
+    },
+    {
+      "beschreibung": "Bürger*innenräte auf Landes- und Kommunalebene für gemeinsam getragene Entscheidungen einführen",
+      "ursachen_ids": [],
+      "ursachen_offen": [2205],
+      "neue_buendel": [{ "ursache": 2205, "name": "Bürger*innenräte", "seite": 67 }],
+      "zitat": "Bürger*innenräte: Wir stärken die Einbeziehung der Bürger*innen auf Landes- und Kommunalebene, für Entscheidungen, die gemeinsam getragen werden.",
+      "seite": 67
+    },
+    {
+      "beschreibung": "Landesprogramm Demokratie und Toleranz gesetzlich verankern (Grenzfall: allgemeines Demokratieprogramm)",
+      "ursachen_ids": [],
+      "ursachen_offen": [2206],
+      "buendel": "Toleranz und Offenheit für Gegenpositionen",
+      "zitat": "Wir stärken ehrenamtliches, zivilgesellschaftliches Engagement und politische Teilhabe, indem wir: […] das Landesprogramm „Demokratie und Toleranz gemeinsam stärken“ gesetzlich verankern und das Demokratiefördergesetz gemeinsam mit der Zivilgesellschaft weiterentwickeln.",
+      "seite": 68
+    },
+    {
+      "beschreibung": "Nachbarschaftstreffs als Orte der Gemeinschaft in jeder Kommune und jedem Stadtteil schaffen",
+      "ursachen_ids": [],
+      "ursachen_offen": [2206],
+      "buendel": "Zusammenhalt und Respekt stärken",
+      "zitat": "Für ein Mecklenburg-Vorpommern, in dem alle gut leben können, fordern wir: […] in jeder Kommune und jedem Stadtteil ein Ort der Gemeinschaft: Diese Nachbarschaftstreffs bieten Raum für Veranstaltungen, Geselligkeit und gemeinsames Arbeiten.",
+      "seite": 63
+    },
+    {
+      "beschreibung": "Soziale Präventionsarbeit in Kommunen finanziell stärken, etwa Streetwork und Jugendclubs",
+      "ursachen_ids": [],
+      "ursachen_offen": [2201],
+      "neue_buendel": [{ "ursache": 2201, "name": "Soziale Präventionsarbeit in Kommunen", "seite": 76 }],
+      "zitat": "Für ein sicheres MV wollen wir: […] soziale Präventionsarbeit in den Kommunen gezielt finanziell stärken, etwa in den Bereichen Streetwork, Jugendclubs, Suchtberatung und psychologische Betreuung[…].",
+      "seite": 76
+    }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "Bürger*innenräte", "ursache": 2205, "richtung": "Beteiligung der Bürger*innen an gemeinsam getragenen Entscheidungen" }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis (S. 2); Kapitel 1 bis 17 nicht vollständig, sondern die passenden Kapitel: Kapitel 3 Präambel (S. 3); Kapitel 6 Bildung, Mitbestimmung und Lernklima (S. 39–44); Kapitel 10 Zusammenleben (S. 62–65); Kapitel 11 Demokratie (S. 66–71); Kapitel 12 Bürgerrechte (S. 72–79); Kapitel 14 Vielfalt, Hass, Sicherheit und Prävention (S. 88–90). Alle Fundstellen gelesen (S. 29, 44, 68, 71, 73, 76, 79, 81, 90).
+
+Nicht erfasst (gelesen, nicht aufgenommen):
+- S. 29: Dialog mit Wirtschaft und Verwaltung über Bürokratieabbau, kein Bezug zu den Ursachen.
+- S. 71: Lagebeschreibung zu Meinungsfreiheit und Demokratie; die Zusage „Erinnerung, Bildung und Bürgerrechte stärken“ wird über die Schulvermittlung der SED-Diktatur, NS und Holocaust (S. 71) erfasst, gleichartig zu S. 44. Die Gedenkstätten- und Projektförderung (S. 71) ist nicht als Maßnahme gegen die Ursachen erfasst, da sie Erinnerung, nicht Ideologie oder Gesprächskultur betrifft.
+- S. 73: Bekenntnis „Bürgerrechte zeigen sich nicht allein im Grundgesetz“ und Lagebeschreibung, keine Handlung.
+- S. 81: „Respekt“ als Lagebeschreibung in der Frauenkapitel-Einleitung.
+- S. 90: Sicherheitsbehörden sollen rechtsextreme Netzwerke erkennen und auflösen; Strafverfolgung und Verbote gehören nach R2 zu Sicherheit. Verfassungsschutz-Kontrolle (S. 79) ebenso.
+- S. 76–77: Polizeiausstattung, Polizeibeauftragte, Sicherheitsbericht, Studie zu Motivation der Beamt*innen: Sicherheit (R2) bzw. kein Ursachenbezug.
+- S. 90: Beratungsangebote für Opfer von Gewalt, Bedrohung und Angriffen: Gewalt gehört nach R2 zu einem anderen Thema.
+- S. 67–68: Dorffest-Programm und Dorffeste, lokale Begegnungsformate (Zusammenhalt ohne Ursachenbezug, gleichartig zu S. 63).
+- S. 75: Algorithmen-Transparenz und Überwachung, keine Ursache dieses Auftrags.
+
+Gleichartige Stellen (nicht einzeln erfasst): S. 90 (Demokratiebildung in pädagogischen Ausbildungen verankern, gleiches Hebel wie S. 44); S. 71 (SED-Diktatur, NS und Holocaust in Schulen verankern, gleiches Hebel wie S. 44); S. 68 (Demokratiefördergesetz, gleiches Hebel wie S. 68 erfasst); S. 68 (Dorffeste und lokale Begegnungsformate, gleiches Hebel wie S. 63).
+
+Richtungen ohne Maßnahme:
+- Bündel „Ausstieg und Distanzierung begleiten“ (2201): keine Ausstiegs- oder Distanzierungsangebote gefunden; Beratung nur für Opfer von Gewalt und Diskriminierung (S. 90), nicht für Ausstieg.
+- Bündel „Werte und Verfassungstreue betonen“ (2204): nur Lagebeschreibung zum Grundgesetz (S. 73); „Rechtsstaatlichkeit“ und „wehrhafte Demokratie“ nur in Verfassungsschutz- und Justizpassagen ohne Ursachenbezug.
+- Bündel „Meinungsfreiheit und Bevormundung“ (2205): nur Lagebeschreibung (S. 71).
+- Bündel „Zusammenhalt und Respekt stärken“ (2206): Respekt nur in der Lagebeschreibung (S. 81); erfasst ist Nachbarschaftstreff (S. 63) als Instrument.
+- Bündel „Dialog und Streitkultur fördern“ (2205): Dialog nur als Mittel der Polizeipräsenz (S. 76, erfasst) und im Wirtschaftsdialog (S. 29, nicht erfasst).
+- Bündel „Toleranz und Offenheit für Gegenpositionen“ (2206): erfasst mit S. 68 als Grenzfall.
+
+Seiten ohne Text: keine im relevanten Kapitel.

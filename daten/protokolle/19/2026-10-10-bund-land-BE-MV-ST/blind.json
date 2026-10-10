@@ -1,0 +1,3697 @@
+{
+  "pruefsumme": "c77c182b193b69b30ff86c7f3ccff32a09ef5b31fbfa8cbc57e2532b139d5f2e",
+  "thema": {
+    "id": 19,
+    "name": "Diskriminierung im Alltag",
+    "ziel": "Betroffene können am Alltag gleichberechtigt teilnehmen, erhalten faire Zugangschancen und werden ohne herkunfts-, religions- oder identitätsbezogene Herabsetzung behandelt."
+  },
+  "ursachen": [
+    {
+      "id": 1901,
+      "beschreibung": "Bewerbungen von Frauen mit Kopftuch werden bei gleicher Qualifikation deutlich seltener beantwortet (IZA-Feldexperiment, veröffentlicht 2016)",
+      "ebene": "bund"
+    },
+    {
+      "id": 1902,
+      "beschreibung": "Rassistische Zuschreibungen sind verbreitet: 48 % meinen, gewisse Gruppen seien „von Natur aus fleißiger“ als andere (Rassismusmonitor, Befragung 2025/26)",
+      "ebene": "land"
+    },
+    {
+      "id": 1903,
+      "beschreibung": "Abwertende Einstellungen gegenüber sexueller und geschlechtlicher Vielfalt bestehen fort: Rund 20 % neigten 2016 zu Abwertung von trans*geschlechtlichen Menschen",
+      "ebene": "land"
+    },
+    {
+      "id": 1904,
+      "beschreibung": "Im öffentlichen Recht fehlt laut Rechtsgutachten (2025) ein spezifischer Rechtsschutz gegen Diskriminierung durch staatliches Handeln, etwa in Schulen und Behörden",
+      "ebene": "land"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        1901,
+        1902,
+        1903,
+        1904
+      ],
+      "text": "Zugeordnet wird nach dem Ort der Benachteiligung: Auswahl bei Bewerbung und Einstellung zu 1901, Einstellungen und Abwertung im Alltag zu 1902 und 1903, staatliches Handeln (Schule, Behörden) zu 1904. Würde und gleiche Rechte aller Menschen sind kein Streitpunkt der Bewertung."
+    },
+    {
+      "nr": 2,
+      "text": "Gewalt und Straftaten gegen Menschen, Online-Hass, Wohnungsknappheit und allgemeine Arbeitsmarktprobleme gehören zu anderen Themen. Maßnahmen ohne Bezug zu einem Merkmal wie Herkunft, Religion oder sexueller Identität sind keine Maßnahme dieses Themas."
+    }
+  ],
+  "instrumente": [],
+  "massnahmen": [
+    {
+      "kennung": "M001",
+      "ebene": "land",
+      "beschreibung": "Unabhängige Ombudsstellen als niedrigschwellige Anlaufstellen landesweit einrichten, unter anderem bei Konflikten mit Jugendämtern",
+      "zitat": "Unabhängige Ombudsstellen als niedrigschwellige Anlaufstellen landesweit etablieren",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "737879f21fa67a18"
+    },
+    {
+      "kennung": "M002",
+      "ebene": "land",
+      "beschreibung": "Fanszenen und Fanhilfen in ihrem Engagement gegen Diskriminierung, Rassismus und Queerfeindlichkeit im Stadion unterstützen.",
+      "zitat": "Wir unterstützen sie in ihrem Engagement gegen Diskriminierung, Rassismus und Queerfeindlichkeit im Stadion.",
+      "ursachen_ids": [
+        1902,
+        1903
+      ],
+      "pruefsumme": "9596222bbb73bea3"
+    },
+    {
+      "kennung": "M003",
+      "ebene": "bund",
+      "beschreibung": "Anonymisierte Kennzeichnungspflicht für Beamte der Bundespolizei",
+      "zitat": "Zudem führen wir für die Bundespolizei eine anonymisierte Kennzeichnungspflicht ein.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "69da64398674048a"
+    },
+    {
+      "kennung": "M004",
+      "ebene": "land",
+      "beschreibung": "Ombudsstelle im Landesamt für Einwanderung wieder einrichten und zu einer mitwirkungsberechtigten Ombudsstelle weiterentwickeln",
+      "zitat": "Zudem werden wir die Ombudsstelle im LEA wieder einrichten und zu einer mitwirkungsberechtigten Ombudsstelle weiterentwickeln, um Transparenz, Rechtsschutz und Vertrauen zu stärken.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "b6fbd52aec0f337e"
+    },
+    {
+      "kennung": "M005",
+      "ebene": "land",
+      "beschreibung": "Verpflichtende Aus- und Weiterbildung zu Diskriminierung und Rassismus für Beschäftigte in Bildung, Sozialem, öffentlichem Dienst und Sicherheit.",
+      "zitat": "Wir wollen, dass insbesondere Mitarbeitende in der Bildung, im sozialen Bereich, im öffentlichen Dienst sowie Sicherheitspersonal, Personal- und Betriebsräte verpflichtend zu den Themen Diskriminierung, Rassismus sowie zum Umgang mit extrem rechten Ideologien aus- und weitergebildet werden.",
+      "ursachen_ids": [
+        1902,
+        1904
+      ],
+      "pruefsumme": "a89321c541f7cdb0"
+    },
+    {
+      "kennung": "M006",
+      "ebene": "land",
+      "beschreibung": "Landesprogramm Demokratie und Toleranz gesetzlich verankern (Grenzfall: allgemeines Demokratieprogramm)",
+      "zitat": "Wir stärken ehrenamtliches, zivilgesellschaftliches Engagement und politische Teilhabe, indem wir: […] das Landesprogramm „Demokratie und Toleranz gemeinsam stärken“ gesetzlich verankern und das Demokratiefördergesetz gemeinsam mit der Zivilgesellschaft weiterentwickeln.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1902
+      ],
+      "pruefsumme": "b54084fec5b9db3e"
+    },
+    {
+      "kennung": "M007",
+      "ebene": "bund",
+      "beschreibung": "Antidiskriminierungsgesetze für den Zivilrechtsverkehr ablehnen",
+      "zitat": "[Partei] tritt für die Bewahrung bzw. Wiederherstellung der bürgerlichen Selbstbestimmung im Zivilrechtsverkehr ein. Deshalb lehnen wir sog. „Antidiskriminierungsgesetze“ ab.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "a5c0e5059e64684c"
+    },
+    {
+      "kennung": "M008",
+      "ebene": "land",
+      "beschreibung": "Gesamtstädtische Antidiskriminierungs- und Diversitätsstrategie, die bestehende Programme zusammenführt und alle Handlungsfelder auf strukturelle Diskriminierung prüft",
+      "zitat": "Wir wollen, dass [Land] wieder Verantwortung übernimmt und voranschreitet: mit einer gesamtstädtischen Antidiskriminierungs- und Diversitätsstrategie.",
+      "ursachen_ids": [
+        1902
+      ],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "db912966dd014520"
+    },
+    {
+      "kennung": "M009",
+      "ebene": "land",
+      "beschreibung": "Umsetzung des Leitbilds diskriminierungsarmen Vermietens bei landeseigenen Wohnungsunternehmen",
+      "zitat": "Die entsprechende Anwendung des Landesantidiskriminierungsgesetzes stellen wir sicher und setzen uns dafür ein, dass die Landeseigenen Wohnungsunternehmen das Leitbild „[Land] vermietet fair!“ für diskriminierungsarmes Vermieten umsetzen",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "f722b49e185cc561"
+    },
+    {
+      "kennung": "M010",
+      "ebene": "land",
+      "beschreibung": "Landesaktionsplan für Akzeptanz sexueller und geschlechtlicher Vielfalt finanzieren und fortführen",
+      "zitat": "Den Landesaktionsplan für Gleichstellung und Akzeptanz sexueller und geschlechtlicher Vielfalt ausfinanzieren und weiterführen.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "ca2a86dbc41a0d33"
+    },
+    {
+      "kennung": "M011",
+      "ebene": "bund",
+      "beschreibung": "Queere Orte und Projekte vor Verdrängung schützen, queere Jugendarbeit als kommunale Pflichtaufgabe",
+      "zitat": "Queere Orte wie Jugendzentren, Projekte, Bars und Clubs müssen geschützt werden – auch vor Wuchermieten und Kürzungen staatlicher Zuschüsse. Die queere Jugendarbeit muss kommunale Pflichtaufgabe werden.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "c45c1fa672ad2dc7"
+    },
+    {
+      "kennung": "M012",
+      "ebene": "land",
+      "beschreibung": "Projekte und Initiativen fördern, die demokratische Werte vermitteln und gegen gruppenbezogene Menschenfeindlichkeit eintreten.",
+      "zitat": "Wir unterstützen deshalb Projekte und Initiativen, die demokratische Werte vermitteln und den gesellschaftlichen Zusammenhalt fördern. Dazu gehört für uns selbstverständlich auch, dass sich die geförderten Projekte eindeutig zum Grundgesetz bekennen und Extremismus, Antisemitismus sowie jeder Form von gruppenbezogener Menschenfeindlichkeit entschieden entgegentreten.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "6e918886d0b789ed"
+    },
+    {
+      "kennung": "M013",
+      "ebene": "bund",
+      "beschreibung": "Schutz vor Diskriminierung wegen sexueller und geschlechtlicher Identität im Grundgesetz verankern",
+      "zitat": "Wir wollen den Schutz vor Diskriminierung aufgrund der sexuellen und geschlechtlichen Identität in Artikel 3 des Grundgesetzes verankern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1903
+      ],
+      "pruefsumme": "e8a234082da22b81"
+    },
+    {
+      "kennung": "M014",
+      "ebene": "bund",
+      "beschreibung": "Fachliche und sprachliche Qualifikation von Medizinpersonal aus dem Ausland am deutschen Standard messen",
+      "zitat": "Sowohl die fachliche als auch sprachliche Qualifikation (Niveau C1) müssen uneingeschränkt dem deutschen Standard genügen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1901
+      ],
+      "pruefsumme": "1fc7f05f327ba3dd"
+    },
+    {
+      "kennung": "M015",
+      "ebene": "land",
+      "beschreibung": "Queere Bildungsangebote für alle [Land] Schüler*innen jährlich, Fachstellen für queere Bildung ausbauen",
+      "zitat": "Unser Ziel: Alle [Land] Schüler*innen sollen jährlich Zugang zu queeren Bildungsangeboten erhalten.",
+      "ursachen_ids": [
+        1903
+      ],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "a372cd20852fc958"
+    },
+    {
+      "kennung": "M016",
+      "ebene": "land",
+      "beschreibung": "Schutz sexueller Minderheiten vor Gewalt und Diskriminierung, mit Benennung der Gruppen, von denen Gewalt ausgeht, und entsprechender Ausrichtung der Gewaltprävention",
+      "zitat": "Wir wollen echten Schutz von sexuellen Minderheiten vor Gewalt und Diskriminierung. Dazu gehören auch die konkrete Benennung, von welchen Personengruppen diese Gewalt ausgeht, und entsprechende Ausrichtung der Gewaltprävention.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1903
+      ],
+      "pruefsumme": "e01229edfd55e695"
+    },
+    {
+      "kennung": "M017",
+      "ebene": "bund",
+      "beschreibung": "Erwachsenenbildung mit Nachqualifizierung, falls Berufsausbildungen nicht dem deutschen System entsprechen",
+      "zitat": "Dafür brauchen wir ein System der Erwachsenenbildung, in dem Schulabschlüsse nachgeholt werden können und Nachqualifikationen möglich sind, falls vorhandene Berufsausbildungen nicht dem deutschen System entsprechen […]",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1901
+      ],
+      "pruefsumme": "8f1d08b905a21e9e"
+    },
+    {
+      "kennung": "M018",
+      "ebene": "land",
+      "beschreibung": "Staatliche NGO-Förderung nur bei schriftlicher Verpflichtung auf die Grundordnung und Distanzierung vom Antisemitismus.",
+      "zitat": "Mit uns gibt es staatliche Fördermittel für Nichtregierungsorganisationen (NGOs) ausschließlich dann, wenn diese sich schriftlich zur Einhaltung der freiheitlich-demokratischen Grundordnung („Demokratieklausel“) verpflichten und sich von jeglicher Form des Antisemitismus ebenfalls schriftlich distanzieren.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1902
+      ],
+      "pruefsumme": "09d3bc6a67519cde"
+    },
+    {
+      "kennung": "M019",
+      "ebene": "land",
+      "beschreibung": "Weiterentwicklung der Fanarbeit, Awareness-Strukturen und Konflikttraining gegen Diskriminierung im Stadion",
+      "zitat": "Dafür wollen wir präventive Maßnahmen wie Fanarbeit, Awareness-Strukturen und Konflikttraining weiterentwickeln und stärken.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "2529aefcd81845aa"
+    },
+    {
+      "kennung": "M020",
+      "ebene": "land",
+      "beschreibung": "Ansprechstelle der Landesregierung für sexuelle und geschlechtliche Vielfalt wird nicht fortgeführt; Mittel sollen in Projekte gegen homophobe Gewalt fließen",
+      "zitat": "Die Stelle der „Ansprechperson der Landesregierung [Land] für die Akzeptanz sexueller und geschlechtlicher Vielfalt“ hat sich nicht bewährt. Die Mittel sollten in Projekte gegen homophobe Gewalt umgelenkt werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1903
+      ],
+      "pruefsumme": "910a2ce9ccb64e88"
+    },
+    {
+      "kennung": "M021",
+      "ebene": "land",
+      "beschreibung": "Landesweite Werbe- und Aufklärungskampagnen sollen Kinder und Familie in den Mittelpunkt stellen, auch in Schule und Bildung.",
+      "zitat": "Wir werden dagegen wieder die Themen Kinder und Familie in den Mittelpunkt der Werbe- und Aufklärungskampagnen der Landesregierung stellen, aber auch in der schulischen und darüber hinausgehenden Bildung verankern und priorisieren.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "df48cc7049ebb20c"
+    },
+    {
+      "kennung": "M022",
+      "ebene": "land",
+      "beschreibung": "Benennung biologischer Tatsachen nicht strafbewehrt lassen",
+      "zitat": "Die Benennung biologischer Tatsachen darf nicht strafbewehrt sein.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1903
+      ],
+      "pruefsumme": "b005cb722bdeeece"
+    },
+    {
+      "kennung": "M023",
+      "ebene": "land",
+      "beschreibung": "Stärkung des Schutzes jüdischer und muslimischer Feiertage",
+      "zitat": "Und wir stärken den Schutz jüdischer und muslimischer Feiertage.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "05e761790ea96ade"
+    },
+    {
+      "kennung": "M024",
+      "ebene": "land",
+      "beschreibung": "Hochschulen: gesetzliche Vorgaben zur Antidiskriminierungsarbeit umsetzen; Strukturen ausbauen.",
+      "zitat": "Die gesetzlichen Vorgaben zur Antidiskriminierungsarbeit wollen wir endlich umsetzen und weitere Maßnahmen zur Verhinderung von Machtmissbrauch ergreifen. Dafür wollen wir zentrale wie dezentrale Strukturen der Antidiskriminierungsarbeit ausbauen und stärken.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "1cd7404fd1fa34d0"
+    },
+    {
+      "kennung": "M025",
+      "ebene": "land",
+      "beschreibung": "Beratungsangebote, Opferhilfe und anonyme Beschwerdestellen bei rechten Vorfällen strukturell und finanziell stärken.",
+      "zitat": "Angesichts rapide ansteigender extrem rechter, neonazistischer Vorfälle, gerade auch durch Jugendliche und junge Erwachsene, müssen Beratungsangebote, Opferhilfe, Register, unabhängige Archive und anonyme Beschwerdestellen strukturell wie finanziell gestärkt und ausgeweitet werden.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "fe8b10cef806eaef"
+    },
+    {
+      "kennung": "M026",
+      "ebene": "land",
+      "beschreibung": "Landesweite unabhängige Ombudsstelle für Diskriminierung und Übergriffe an Schulen, anonyme Meldung und Beratung",
+      "zitat": "Wir setzen für Schulen eine unabhängige landesweite Ombudsstelle für Diskriminierung und Übergriffe jeglicher Art, verbal und körperlich ein, an die sich Schüler*innen, Eltern und Lehrkräfte zur (anonymen) Meldung von Vorfällen und zur (anonymen) Beratung im Umgang mit diesen wenden können.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "00222d968976de34"
+    },
+    {
+      "kennung": "M027",
+      "ebene": "land",
+      "beschreibung": "Queerfeindlichkeit an Schulen entgegentreten: Verantwortliche für Vielfalt an jeder Schule und externe queere Bildungsarbeit stärken.",
+      "zitat": "Queerfeindlichkeit an Schulen treten wir entschieden entgegen. Wir sorgen für qualifizierte Verantwortliche für geschlechtliche und sexuelle Vielfalt an jeder Schule und stärken die externe queere Bildungsarbeit.",
+      "ursachen_ids": [
+        1903
+      ],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "6302cae4d405b393"
+    },
+    {
+      "kennung": "M028",
+      "ebene": "land",
+      "beschreibung": "Beratung für Opfer rechtsextremer Gewalt weiter fördern (Teil eines Landesprogramms)",
+      "zitat": "Dafür stärken wir die Zivilgesellschaft, indem das Landesprogramm „Demokratie und Toleranz gemeinsam stärken!“, mitsamt Regionalzentren, der Beratung für Opfer von rechtsextremer Gewalt und weiterer Angebote […] der Aussteigerhilfe u. a. m. weiter fördern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1902
+      ],
+      "pruefsumme": "646cdbcde16820f3"
+    },
+    {
+      "kennung": "M029",
+      "ebene": "land",
+      "beschreibung": "Verpflichtende Weiterbildungen für Fachkräfte und Polizei, um Mehrfachdiskriminierung queerer Menschen zu verhindern",
+      "zitat": "Um Queerfeminismus zu fördern: […] führen wir verpflichtende Weiterbildungen für Pädagog*innen, Sozialarbeiter*innen, Schulpsycholog*innen und für Polizist*innen ein, um Mehrfachdiskriminierung von queeren Personen zu verhindern.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "d3574d3c7301e65d"
+    },
+    {
+      "kennung": "M030",
+      "ebene": "land",
+      "beschreibung": "Unabhängige Monitoring- und Beschwerdestelle für Diskriminierung im Sport einrichten.",
+      "zitat": "Wir richten eine zentrale, unabhängige Monitoring- und Beschwerdestelle für Diskriminierung im Sport ein. Diese bündelt Kompetenzen gegen Rassismus, Antisemitismus, Sexismus, Queerfeindlichkeit und Ableismus (Diskriminierung wegen Behinderung) unter einem Dach.",
+      "ursachen_ids": [
+        1902,
+        1903
+      ],
+      "pruefsumme": "25188d86bac9f0c3"
+    },
+    {
+      "kennung": "M031",
+      "ebene": "land",
+      "beschreibung": "Empowermentarbeit für alle [Land] Communitys fördern.",
+      "zitat": "Wir fördern Empowermentarbeit für alle [Land] Communitys.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "b3fccadac15f841a"
+    },
+    {
+      "kennung": "M032",
+      "ebene": "bund",
+      "beschreibung": "Beratungsangebote gegen Diskriminierung ausbauen und die Antidiskriminierungsstelle des Bundes stärken",
+      "zitat": "Wir wollen die «Antidiskriminierungsstelle» des Bundes weiter stärken und zivilgesellschaftliche Beratungsangebote ausbauen, damit Betroffene gezielte Unterstützung erhalten.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "56d15be936b4c96c"
+    },
+    {
+      "kennung": "M033",
+      "ebene": "bund",
+      "beschreibung": "Antisemitische Beleidigungen konsequent strafrechtlich verfolgen",
+      "zitat": "Angriffe auf Juden sowie antisemitische Beleidigungen müssen konsequent strafrechtlich geahndet werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1902
+      ],
+      "pruefsumme": "8b16176b823004f2"
+    },
+    {
+      "kennung": "M034",
+      "ebene": "bund",
+      "beschreibung": "Geldleistungen statt diskriminierender Sachleistungen und Bezahlkarten für Geflüchtete",
+      "zitat": "Statt diskriminierender Sachleistungen und Bezahlkarten wollen wir reguläre Geldleistungen auf Höhe der solidarischen Mindestsicherung für alle Menschen.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "3dd001e28fada08a"
+    },
+    {
+      "kennung": "M035",
+      "ebene": "land",
+      "beschreibung": "Unterstützung von Arbeitgeber*innen und AGG-Beschwerdestellen für ein diskriminierungssensibles Arbeitsumfeld",
+      "zitat": "Wir schützen Arbeitnehmer*innen vor Diskriminierung und haben dazu die „Fachstelle Arbeitsmarkt und Antidiskriminierung“ auf den Weg gebracht. Damit unterstützen wir auch Arbeitgeber*innen und AGG-Beschwerdestellen mit entsprechenden Angeboten, für ein diskriminierungssensibles Arbeitsumfeld zu sorgen.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "26e32da373ca8ec0"
+    },
+    {
+      "kennung": "M036",
+      "ebene": "bund",
+      "beschreibung": "Anerkennung ausländischer Qualifikationen und Abschlüsse vereinfachen und beschleunigen",
+      "zitat": "Mit klaren Regeln, einer vereinfachten und schnelleren Anerkennung von Qualifikationen und Abschlüssen und fairen Anwerbeabkommen schaffen wir dafür die Grundlage, um gleichzeitig Integration und Teilhabe zu fördern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1901
+      ],
+      "pruefsumme": "81410851a1e9b09a"
+    },
+    {
+      "kennung": "M037",
+      "ebene": "land",
+      "beschreibung": "An jeder Schule ein Anti-Mobbing-Team gegen Mobbing und gruppenfeindliches Verhalten",
+      "zitat": "Mobbing, Diskriminierung und gruppenfeindliches Verhalten müssen wir erkennen und bekämpfen. Jede Schule soll künftig ein Anti-Mobbing-Team haben.",
+      "ursachen_ids": [
+        1902
+      ],
+      "ursachen_offen": [
+        1903,
+        1904
+      ],
+      "pruefsumme": "169dbd9e33f12f05"
+    },
+    {
+      "kennung": "M038",
+      "ebene": "bund",
+      "beschreibung": "Schülern das Recht geben, politische Ansichten ohne Diskriminierung durch Lehrer oder Mitschüler zu äußern",
+      "zitat": "Schüler haben das Recht, ihre politischen Ansichten ohne Angst vor Repressionen und Diskriminierung durch Lehrer oder Mitschüler äußern zu können.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "491bec5c75a571c4"
+    },
+    {
+      "kennung": "M039",
+      "ebene": "land",
+      "beschreibung": "Landesantidiskriminierungsstelle langfristig absichern",
+      "zitat": "Die Landesantidiskriminierungsstelle langfristig absichern.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "c58319bb4dc1c1ab"
+    },
+    {
+      "kennung": "M040",
+      "ebene": "land",
+      "beschreibung": "Grundschulbezirke aufheben, um die Durchmischung der Schulklassen zu verbessern",
+      "zitat": "Um eine bessere Durchmischung der Schulklassen zu erreichen, müssen die Grundschulbezirke aufgehoben werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1902
+      ],
+      "pruefsumme": "9901a7d1b2d9500d"
+    },
+    {
+      "kennung": "M041",
+      "ebene": "land",
+      "beschreibung": "Bezahlkarte für Geflüchtete abschaffen und eigenes Konto ermöglichen",
+      "zitat": "Wir schaffen die Bezahlkarte ab und ermöglichen allen Geflüchteten einen selbstbestimmten Alltag.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "33087953e26b3e05"
+    },
+    {
+      "kennung": "M042",
+      "ebene": "land",
+      "beschreibung": "Fortbildungen gegen rassistische, sexistische, antisemitische oder ableistische Diskriminierung im Gesundheitssystem.",
+      "zitat": "Wir setzen uns für Fortbildungen gegen rassistische, sexistische, antisemitische oder ableistische Diskriminierung ein, für barrierefreie Praxisräume und ein Lots*innensystem für Gesundheitsangebote.",
+      "ursachen_ids": [
+        1902
+      ],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "3d5ecfb978ae60fa"
+    },
+    {
+      "kennung": "M043",
+      "ebene": "land",
+      "beschreibung": "Ansprechpartner für jüdisches Leben und gegen Antisemitismus wird zur Funktion eines Antisemitismusbeauftragten weiterentwickelt.",
+      "zitat": "Die Arbeit des Ansprechpartners für jüdisches Leben in [Land] und gegen Antisemitismus wird zur Funktion eines Antisemitismusbeauftragten weiterentwickelt.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "37c549ddd7ed83ed"
+    },
+    {
+      "kennung": "M044",
+      "ebene": "land",
+      "beschreibung": "Strukturen der Sicherheitsbehörden diskriminierungskritisch hinterfragen",
+      "zitat": "Wir machen es uns zur Aufgabe, Strukturen zu hinterfragen, damit die Arbeit der Sicherheitsbehörden diskriminierungskritisch und gerecht ablaufen kann.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "e800fe3dfdfb2f4a"
+    },
+    {
+      "kennung": "M045",
+      "ebene": "land",
+      "beschreibung": "Kontrollquittungen: Polizei muss bei Identitätsfeststellung und Durchsuchung Grund und Rechtsgrundlage schriftlich angeben.",
+      "zitat": "Die Polizei ist zu verpflichten, bei jeder Identitätsfeststellung und Durchsuchung schriftlich den Grund und die Rechtsgrundlage anzugeben (Kontrollquittungen).",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "3883122c03db3e30"
+    },
+    {
+      "kennung": "M046",
+      "ebene": "bund",
+      "beschreibung": "Gleichstellungsbeauftragte abschaffen",
+      "zitat": "Gleichstellungsbeauftragte sind abzuschaffen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1901
+      ],
+      "pruefsumme": "dd040521c6a2379c"
+    },
+    {
+      "kennung": "M047",
+      "ebene": "land",
+      "beschreibung": "Landesantidiskriminierungsgesetz evaluieren, weiterentwickeln und Schutzlücken schließen.",
+      "zitat": "Das Landesantidiskriminierungsgesetz ist bundesweit Vorreiter und stärkt den Schutz gegen Diskriminierung. Wir wollen es evaluieren, weiterentwickeln und Schutzlücken schließen.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "e556842d07b6a45d"
+    },
+    {
+      "kennung": "M048",
+      "ebene": "bund",
+      "beschreibung": "Gesetzlich garantierte Gesundheitsversorgung für queere Menschen, insbesondere trans*Personen, von den Krankenkassen finanziert",
+      "zitat": "Wir wollen, dass es eine umfassende Gesundheitsversorgung queerer Menschen gibt und diese gerade für trans*Personen gesetzlich garantiert ist und auch von den Krankenkassen übernommen wird.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1903
+      ],
+      "pruefsumme": "77d1ed2d939e2985"
+    },
+    {
+      "kennung": "M049",
+      "ebene": "land",
+      "beschreibung": "Will Gewaltprävention, respektvolle Beziehungen und Gleichberechtigung in allen Schulformen vermitteln.",
+      "zitat": "Gewaltprävention, respektvolle Beziehungen und Gleichberechtigung müssen kontinuierlich und in jeder Schulform vermittelt werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1902,
+        1903
+      ],
+      "pruefsumme": "7346fbc31f4744a8"
+    },
+    {
+      "kennung": "M050",
+      "ebene": "land",
+      "beschreibung": "Leitstelle Diversity in der Verwaltung mit verbindlicher Schulung der Beschäftigten",
+      "zitat": "Wir etablieren eine Leitstelle Diversity. Diese soll die Wertschätzung der kulturellen Vielfalt stärken und die Sensibilisierung der Beschäftigten voranbringen. So bekämpft die Verwaltung strukturelle Diskriminierung und schult Beschäftigte verbindlich.",
+      "ursachen_ids": [
+        1904
+      ],
+      "ursachen_offen": [
+        1902
+      ],
+      "pruefsumme": "1a0affef2532365d"
+    },
+    {
+      "kennung": "M051",
+      "ebene": "bund",
+      "beschreibung": "Selbstbestimmungsgesetz verbessern",
+      "zitat": "Das Selbstbestimmungsgesetz (SBGG) ist in seiner jetzigen Form mangelhaft und muss verbessert werden.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "fe45319e507d33d7"
+    },
+    {
+      "kennung": "M052",
+      "ebene": "land",
+      "beschreibung": "Neutralitätsgesetz an Schulen um eine staatliche Schutzpflicht erweitern.",
+      "zitat": "Das [Land] Neutralitätsgesetz muss um eine aktive staatliche Schutzpflicht zur Gewährleistung religiöser und weltanschaulicher Neutralität an Schulen erweitert werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "c340cb4519d04c22"
+    },
+    {
+      "kennung": "M053",
+      "ebene": "bund",
+      "beschreibung": "Nationale Strategie gegen Islamfeindlichkeit und antimuslimischen Rassismus",
+      "zitat": "Mit einer Nationalen Strategie gegen Islamfeindlichkeit und antimuslimischen Rassismus gehen wir gegen die zunehmende Diskriminierung von Muslim*innen und muslimisch gelesenen Menschen vor.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "8b7c9c5ec8a77aff"
+    },
+    {
+      "kennung": "M054",
+      "ebene": "land",
+      "beschreibung": "Schulische Lehrinhalte am Familienbild der Mehrheit ausrichten",
+      "zitat": "Wir akzeptieren die unterschiedlichen Formen des Zusammenlebens, bestehen aber darauf, dass sich Lehrinhalte vorrangig an der Lebenswirklichkeit der Mehrheit orientieren und ein lebensbejahendes, verantwortungsvolles Familienbild vermitteln.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1903
+      ],
+      "pruefsumme": "89e0d7fa29b9bc58"
+    },
+    {
+      "kennung": "M055",
+      "ebene": "land",
+      "beschreibung": "Verteilungsquoten beim Übergang in die Grundschulen für eine bessere Durchmischung nach Sprachstand, um Segregation zu verhindern und Begegnung zu fördern",
+      "zitat": "Darüber hinaus soll durch Verteilungsquoten beim Übergang in die Grundschulen eine bessere Durchmischung von Schülern mit unterschiedlichem deutschen Sprachstand innerhalb der Bezirke erreicht werden. Ziel ist es, Segregation zu verhindern und Begegnung zu fördern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1902
+      ],
+      "pruefsumme": "df92843922b0e0c5"
+    },
+    {
+      "kennung": "M056",
+      "ebene": "bund",
+      "beschreibung": "Studienplätze für Medizin und Zahnmedizin vorrangig an Bewerber mit deutscher Staatsangehörigkeit",
+      "zitat": "Es müssen vorrangig Studienplatzbewerber mit deutscher Staatsangehörigkeit für das Fach Medizin/Zahnmedizin ausgebildet werden.",
+      "ursachen_ids": [
+        1901
+      ],
+      "pruefsumme": "43eb9cace9941886"
+    },
+    {
+      "kennung": "M057",
+      "ebene": "land",
+      "beschreibung": "Beschäftigte im öffentlichen Dienst fortbilden in interkultureller Kompetenz und Sprachkenntnissen",
+      "zitat": "Interkulturelle Kompetenz: Alle relevanten Beschäftigten im öffentlichen Dienst erhalten Weiterbildungen zur Erweiterung der interkulturellen Kompetenz und von Sprachkenntnissen.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "d8789761af7a9853"
+    },
+    {
+      "kennung": "M058",
+      "ebene": "land",
+      "beschreibung": "Öffentliche Förderung von Meldestellen für Vorfälle beenden",
+      "zitat": "Außerdem finanziert [Land] Meldestellen wie das [Land] Register oder CLAIM […] Deswegen werden wir die öffentliche Förderung des Meldestellen-Unwesens beenden, so dass sich auch diese Organisationen zukünftig ausschließlich privat finanzieren müssen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "1210c5b6aef64524"
+    },
+    {
+      "kennung": "M059",
+      "ebene": "bund",
+      "beschreibung": "Reform des Allgemeinen Gleichbehandlungsgesetzes mit Verbandsklagerecht, längeren Klagefristen und Einbeziehung staatlichen Handelns",
+      "zitat": "Antirassismus ins Gesetz: […] Zudem fordern wir eine grundlegende Reform des Allgemeinen Gleichbehandlungsgesetzes (AGG), die insbesondere die Klagefristen verlängert, ein Verbandsklagerecht vorsieht, die Diskriminierungsformen „Staatsangehörigkeit“, „Aufenthaltsstatus“, „familiärer Status“ und „sozialer Status“ umfasst und auch staatliches Handeln einbezieht.",
+      "ursachen_ids": [
+        1904
+      ],
+      "ursachen_offen": [
+        1901
+      ],
+      "pruefsumme": "53f6d5c7f2cb3428"
+    },
+    {
+      "kennung": "M060",
+      "ebene": "land",
+      "beschreibung": "Systematische Datenerfassung zu Diskriminierung, um sie sichtbar zu machen",
+      "zitat": "Für konsequente intersektionale Antidiskriminierung wollen wir: […] eine systematische Datenerfassung, um Diskriminierung sichtbar zu machen und wirksam zu bekämpfen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1902
+      ],
+      "pruefsumme": "d54eab2744389973"
+    },
+    {
+      "kennung": "M061",
+      "ebene": "land",
+      "beschreibung": "Mit einem Landes-Antidiskriminierungsgesetz Beratungsstellen absichern und Diskriminierung beklagbar machen",
+      "zitat": "Mit einem Landes-Antidiskriminierungsgesetz sichern wir die bestehenden und durch Land und Bund geförderten Beratungsstellen rechtlich und dauerhaft finanziell ab und setzen einen Landesrahmen für Diskriminierungstatbestände und machen diese damit beklagbar.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "c9458d105722478d"
+    },
+    {
+      "kennung": "M062",
+      "ebene": "land",
+      "beschreibung": "Verpflichtende KI-Folgenabschätzung vor jedem Einsatz in Landeseinrichtungen, halbjährlich überprüft",
+      "zitat": "Wir wollen: […] eine verpflichtende KI-Folgenabschätzung vor jedem Einsatz in öffentlich finanzierten Landeseinrichtungen – analog zur Datenschutz-Folgenabschätzung, mit halbjährlicher Überprüfung aller eingesetzten Systeme.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "9a454858ef226a8e"
+    },
+    {
+      "kennung": "M063",
+      "ebene": "land",
+      "beschreibung": "Förderung von Nichtregierungsorganisationen gegen Diskriminierung über ein Demokratiefördergesetz absichern, mit Qualitätskriterien.",
+      "zitat": "Ihre strukturelle und langfristige Förderung muss u. a. über ein Demokratiefördergesetz abgesichert werden. Hierzu wollen wir verbindliche Qualitätskriterien festlegen, insbesondere in Bezug auf rassismuskritische, antisemitismuskritische und intersektionale Ansätze.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "03e797acaf266ab4"
+    },
+    {
+      "kennung": "M064",
+      "ebene": "land",
+      "beschreibung": "Landesstellen für Gleichstellung, Integration und Diversity sollen abgeschafft werden.",
+      "zitat": "In den letzten Jahren wurden immer mehr kostspielige Sonderbeauftragte ernannt – für Gleichstellung, Integration, Diversity und anderes mehr –, die kaum echten Nutzen für die Bürger stiften. Wir werden diese Posten […] konsequent abschaffen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "0a0352feb5f1d72f"
+    },
+    {
+      "kennung": "M065",
+      "ebene": "land",
+      "beschreibung": "Verbot diskriminierender KI-Anwendungen in Sicherheitsbehörden, etwa Predictive Policing",
+      "zitat": "Damit Entscheidungen weiterhin von Menschen getroffen werden, fordern wir: […] ein Verbot von „Predictive Policing“ und anderen diskriminierenden KI-Anwendungen in Sicherheitsbehörden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "b99d9a75666f3c14"
+    },
+    {
+      "kennung": "M066",
+      "ebene": "land",
+      "beschreibung": "Aktionsprogramm für die Akzeptanz queerer Menschen konsequent weiterentwickeln und umsetzen",
+      "zitat": "Wir verpflichten uns, das „Aktionsprogramm für die Akzeptanz von Lesben, Schwulen, Bisexuellen, Transgender, Transsexuellen und intergeschlechtlichen Menschen“ konsequent weiterzuentwickeln und umzusetzen.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "b627ab0a479ca864"
+    },
+    {
+      "kennung": "M067",
+      "ebene": "land",
+      "beschreibung": "Fachzentren für geschlechtliche Vielfalt zu Versorgungs- und Beratungsstellen ausbauen; Landeskoordinierungsstellen je eine volle Stelle mehr.",
+      "zitat": "Die landesfinanzierten Fachzentren für geschlechtliche Vielfalt werden zu interdisziplinären Versorgungs- und Beratungsstellen ausgebaut. Die Landeskoordinierungsstellen werden auf jeweils eine volle Stelle aufgestockt.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "210e4ddc6abc31c8"
+    },
+    {
+      "kennung": "M068",
+      "ebene": "bund",
+      "beschreibung": "Schülerinnen und Schüler sollen mit Erasmus+ ein Halbjahr im europäischen Ausland verbringen können",
+      "zitat": "Auch Schülerinnen und Schüler sollen künftig von „Erasmus+“ profitieren und unabhängig vom Einkommen der Eltern sechs Monate der Schulzeit im europäischen Ausland absolvieren können.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1902
+      ],
+      "pruefsumme": "780f9c0d1c006123"
+    },
+    {
+      "kennung": "M069",
+      "ebene": "bund",
+      "beschreibung": "Beratungsstellen und Selbstorganisationen langfristig absichern und ausbauen; Antidiskriminierungsstelle des Bundes stärken",
+      "zitat": "Wir wollen, dass Beratungsstellen und Selbstorganisationen langfristig abgesichert und ausgebaut werden sowie die Antidiskriminierungsstelle des Bundes auch in ihren Kompetenzen gestärkt wird.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "4d01d595996c2f36"
+    },
+    {
+      "kennung": "M070",
+      "ebene": "bund",
+      "beschreibung": "Sexuelle Identität in den Gleichheitsartikel des Grundgesetzes aufnehmen",
+      "zitat": "Artikel 3 GG wollen wir um die sexuelle Identität ergänzen.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "3dfd0e2b5eb95f22"
+    },
+    {
+      "kennung": "M071",
+      "ebene": "land",
+      "beschreibung": "Freiwilliges integrierendes Jahr nach dem Vorbild des FSJ auf Bundesebene einführen",
+      "zitat": "Wir machen uns auf Bundesebene stark für ein „Freiwilliges integrierendes Jahr“ nach dem Vorbild des Freiwilligen Sozialen Jahres (FSJ). […] Es richtet sich an junge Menschen mit und ohne Einwanderungsgeschichte und fördert Begegnung, Orientierung und gesellschaftliche Teilhabe.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "459149102c6ec8a4"
+    },
+    {
+      "kennung": "M072",
+      "ebene": "land",
+      "beschreibung": "Queerbeauftragte in allen Bezirken mit gesetzlicher Grundlage",
+      "zitat": "Wir wollen Queerbeauftragte in allen Bezirken und für sie eine gesetzliche Grundlage schaffen.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "79a5063d9547aacc"
+    },
+    {
+      "kennung": "M073",
+      "ebene": "bund",
+      "beschreibung": "Stipendien und Personalentwicklung, um Talente aus Ostdeutschland bis in Führungspositionen zu fördern",
+      "zitat": "Wir wollen zudem Talente aus Ostdeutschland mit besseren Zugängen zu Stipendien fördern und mit einem Personalentwicklungskonzept, mit dem das Erreichen von Führungspositionen unterstützt wird.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1901
+      ],
+      "pruefsumme": "012949e5b9ee0527"
+    },
+    {
+      "kennung": "M074",
+      "ebene": "land",
+      "beschreibung": "Fortbildungen zu Diskriminierung und Rassismus sowie verpflichtende diskriminierungskritische Module in der Ausbildung pädagogischer Fachkräfte",
+      "zitat": "Fortbildungen zu Diskriminierung, Rassismus und Postkolonialismus stärken wir. In die Ausbildung pädagogischer Fachkräfte integrieren wir verpflichtend diskriminierungskritische Module – in allen Entwicklungsstufen.",
+      "ursachen_ids": [
+        1904
+      ],
+      "ursachen_offen": [
+        1902
+      ],
+      "pruefsumme": "4608d3c8ed73204c"
+    },
+    {
+      "kennung": "M075",
+      "ebene": "land",
+      "beschreibung": "Sichtbarkeit lesbischer Geschichte und Gegenwart durch Förderung kultureller Orte und Projekte.",
+      "zitat": "Wir werden gezielt kulturelle Orte und Projekte fördern, die lesbische Geschichte und Gegenwart sichtbar machen und Vernetzung ermöglichen.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "f75536caf1e2f004"
+    },
+    {
+      "kennung": "M076",
+      "ebene": "land",
+      "beschreibung": "Eigenes Landesgesetz gegen Diskriminierung auf den Weg bringen",
+      "zitat": "Ein eigenes Landesantidiskriminierungsgesetz auf den Weg bringen.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "01804b8ad8030c7d"
+    },
+    {
+      "kennung": "M077",
+      "ebene": "land",
+      "beschreibung": "Neustart des Diversity-Landesprogramms mit Verbindlichkeit für alle Verwaltungen, verbindliche Beschwerdeverfahren bei Rassismus und Diskriminierung",
+      "zitat": "Wir wollen daher einen Neustart für das Diversity-Landesprogramm mit Verbindlichkeit für alle Verwaltungen.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "89241bdc995bee81"
+    },
+    {
+      "kennung": "M078",
+      "ebene": "land",
+      "beschreibung": "Antisemitismusprävention im Schulunterricht ausbauen und verankern",
+      "zitat": "Den Ausbau und die wirksame Verankerung der Antisemitismusprävention im Schulunterricht.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "7b3fcea45666293a"
+    },
+    {
+      "kennung": "M079",
+      "ebene": "land",
+      "beschreibung": "Zentraler Gedenk- und Lernort zur Kolonialvergangenheit",
+      "zitat": "Wir verankern das gesamtstädtische Aufarbeitungs- und Erinnerungskonzept „Kolonialismus erinnern“ dauerhaft und setzen die Empfehlungen schrittweise um. Dafür schaffen wir einen zentralen Gedenk- und Lernort zur Kolonialvergangenheit.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "dde02c0a0b9aedf4"
+    },
+    {
+      "kennung": "M080",
+      "ebene": "land",
+      "beschreibung": "Forschung und politische Bildung zu Antislawismus stärken, Sichtbarkeit und Teilhabe betroffener Menschen fördern",
+      "zitat": "Wir wollen die Forschung und politische Bildungsarbeit zu Antislawismus stärken, die Sichtbarkeit und Teilhabe von Menschen mit osteuropäischer Migrationsgeschichte stärken […]",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "8a883275f8053881"
+    },
+    {
+      "kennung": "M081",
+      "ebene": "land",
+      "beschreibung": "Pilotprojekt zur Sensibilisierung von Verantwortlichen für die Bedürfnisse queerer Seniorinnen und Senioren",
+      "zitat": "Darüber hinaus starten wir das Pilotprojekt „Älter werden unterm Regenbogen“ nach [Land] Vorbild, um Verantwortliche für die Bedürfnisse queerer Senior*innen zu sensibilisieren und mit der queeren Community zu vernetzen.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "3c7c9c5d16f62560"
+    },
+    {
+      "kennung": "M082",
+      "ebene": "land",
+      "beschreibung": "Polizei soll verdachtsunabhängige Kontrollen abschaffen, die junge Menschen mit Migrationsgeschichte treffen.",
+      "zitat": "Verdachtsunabhängige Kontrollen der Polizei treffen überproportional häufig junge Menschen mit vermuteter Migrationsgeschichte – diese diskriminierende Praxis werden wir abschaffen.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "064d9ebc837ccef7"
+    },
+    {
+      "kennung": "M083",
+      "ebene": "bund",
+      "beschreibung": "Öffentliche Ämter, Beamten- und Richterstellen allein nach Eignung und Leistung vergeben; Quotenregelungen ablehnen",
+      "zitat": "Öffentliche Ämter, Beamten- und Richterstellen sind ausschließlich nach „Eignung, Befähigung und fachlicher Leistung” zu vergeben (Art. 33 Abs. 2 GG), Quotenregelungen sind abzulehnen.",
+      "ursachen_ids": [
+        1901
+      ],
+      "pruefsumme": "4475f0b604f37e6c"
+    },
+    {
+      "kennung": "M084",
+      "ebene": "land",
+      "beschreibung": "Initiative für Akzeptanz geschlechtlicher und sexueller Vielfalt kritisch evaluieren und weiterentwickeln.",
+      "zitat": "[Partei] [Land] wird die Initiative „[Land] tritt ein für Selbstbestimmung und die Akzeptanz geschlechtlicher und sexueller Vielfalt“ (IGSV) gemeinsam mit den Communitys kritisch evaluieren und konsequent weiterentwickeln.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "cebe91a9fe126a0d"
+    },
+    {
+      "kennung": "M085",
+      "ebene": "land",
+      "beschreibung": "Beratungs-, Melde- und Empowermentstrukturen gegen anti-Schwarzen Rassismus ausbauen und langfristig sichern",
+      "zitat": "Gegen anti-Schwarzen Rassismus bauen wir Beratungs-, Melde- und Empowermentstrukturen aus und sichern sie langfristig.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "8f83f8876d671f0c"
+    },
+    {
+      "kennung": "M086",
+      "ebene": "land",
+      "beschreibung": "Unabhängige Polizeibeauftragte Stelle für Beschwerden und Fehlverhalten in der Polizei schaffen",
+      "zitat": "Wir wollen eine unabhängige Stelle schaffen, die Beschwerden, Hinweise und Fehlverhalten in der Polizei untersucht – und das transparent, niedrigschwellig und mit umfassenden Rechten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "c312db6e01ecfaa0"
+    },
+    {
+      "kennung": "M087",
+      "ebene": "land",
+      "beschreibung": "Den Aktions- und Gedenktag gegen Islamfeindlichkeit abschaffen.",
+      "zitat": "Den Aktions- und Gedenktag gegen Islamfeindlichkeit schaffen wir wieder ab.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1902
+      ],
+      "pruefsumme": "3f577e6ce0188cbe"
+    },
+    {
+      "kennung": "M088",
+      "ebene": "land",
+      "beschreibung": "Interkulturelle Öffnung von Verwaltung, Polizei und sozialen Einrichtungen fortführen",
+      "zitat": "Eine moderne Einwanderungsgesellschaft braucht eine dienstleistungsorientierte, diskriminierungsfreie und interkulturell kompetente Verwaltung. Diese interkulturelle Öffnung führen wir konsequent fort – in Verwaltung, Bildung, Polizei und sozialen Einrichtungen.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "f75e48baac6eaa8a"
+    },
+    {
+      "kennung": "M089",
+      "ebene": "land",
+      "beschreibung": "Antidiskriminierungs- und Mobbingbeauftragte der Bildungsverwaltung stärken.",
+      "zitat": "Zudem wollen wir die Stelle und den Einfluss des*der Antidiskriminierungs- sowie Mobbingbeauftragten der Bildungsverwaltung stärken.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "49a2c4fa8c923f3f"
+    },
+    {
+      "kennung": "M090",
+      "ebene": "land",
+      "beschreibung": "Menschenrechtsbasierte Regulierung und demokratische Kontrolle von KI-Systemen, die Diskriminierung verstärken können.",
+      "zitat": "Deswegen setzen wir uns für eine menschenrechtsbasierte Regulierung und demokratische Kontrolle von künstlicher Intelligenz ein.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "d676b048c7ee5a97"
+    },
+    {
+      "kennung": "M091",
+      "ebene": "land",
+      "beschreibung": "Staatliche und kommunale Einrichtungen sollen keine Konzepte zu Geschlecht, Sexualität oder Identität gegen den Willen der Eltern einführen oder fördern",
+      "zitat": "Kitas und Schulen sind Orte der Bildung und Erziehung, die vor einseitiger ideologischer Einflussnahme geschützt werden müssen. […] Staatliche und kommunale Einrichtungen dürfen keine ideologischen Konzepte zu Themen wie Geschlecht, Sexualität oder Identität gegen den Willen der Eltern einführen oder fördern.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "b46d70321d00e592"
+    },
+    {
+      "kennung": "M092",
+      "ebene": "land",
+      "beschreibung": "Konsequente Umsetzung des Landeskonzepts zur Antisemitismus-Prävention und Schließen von Schutzlücken",
+      "zitat": "Wir wollen das in der rot-rot-grünen Wahlperiode beschlossene „[Land] Landeskonzept zur Weiterentwicklung der Antisemitismus-Prävention“ konsequent umsetzen und bestehende Schutzlücken schließen.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "d214cd5096c733b3"
+    },
+    {
+      "kennung": "M093",
+      "ebene": "bund",
+      "beschreibung": "Schutz vor Diskriminierung im Grundgesetz auf sexuelle Orientierung und geschlechtliche Identität erweitern",
+      "zitat": "Wir wollen queere Lebensentwürfe noch besser vor Diskriminierung schützen. Wir wollen den Schutz vor Diskriminierung im Grundgesetz (GG) explizit auf sexuelle Orientierung und geschlechtliche Identität erweitern. Artikel 3 Abs. 3 GG werden wir daher entsprechend erweitern.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "8e0e214ca78af9be"
+    },
+    {
+      "kennung": "M094",
+      "ebene": "bund",
+      "beschreibung": "Gesetzlich vorgeschriebene Geschlechterquoten aufheben",
+      "zitat": "Gesetze, die solches vorschreiben, sind verfassungswidrig und abzulehnen. [Partei] wird sich im Deutschen Bundestag für ihre Aufhebung einsetzen.",
+      "ursachen_ids": [
+        1901
+      ],
+      "pruefsumme": "8c19c5220492b845"
+    },
+    {
+      "kennung": "M095",
+      "ebene": "land",
+      "beschreibung": "Diskriminierungsfreien Schutzbereich Schule für queere Menschen schaffen",
+      "zitat": "Einen diskriminierungsfreien Bereich Schule, an dem besonders queere Menschen vor und in Notsituationen geschützt werden und ihnen geholfen wird […]",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "a4b05c19382110f9"
+    },
+    {
+      "kennung": "M096",
+      "ebene": "bund",
+      "beschreibung": "Beauftragte*r gegen Rassismus auf Bundesebene",
+      "zitat": "Antirassismus ins Gesetz: […] Eine*r Antirassismusbeauftragte*r muss es auch weiterhin geben.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "4fb8920e0a636b09"
+    },
+    {
+      "kennung": "M097",
+      "ebene": "land",
+      "beschreibung": "Ausbau von Beratung und Spezialangeboten für besonders vulnerable Gruppen, darunter LSBTIQ*",
+      "zitat": "Mehrsprachige Beratung und Spezialangebote für besonders vulnerable Gruppen – etwa Frauen sowie Lesben, Schwule, Bisexuelle, trans* , inter* und queere Menschen (LSBTIQ*) […] – werden gezielt ausgebaut.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "6a955c7eab39be6c"
+    },
+    {
+      "kennung": "M098",
+      "ebene": "land",
+      "beschreibung": "Ressortübergreifende Strategie gegen antimuslimischen Rassismus entwickeln und umsetzen, auch für den digitalen Raum.",
+      "zitat": "Wir werden eine ressortübergreifende Strategie zur Bekämpfung von antimuslimischem Rassismus entwickeln und umsetzen, die auch für den digitalen Raum gilt.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "c9fe2ce8c1648d35"
+    },
+    {
+      "kennung": "M099",
+      "ebene": "land",
+      "beschreibung": "Projekte gegen Rassismus, Islamfeindlichkeit und Queerfeindlichkeit stärken und verlässlich fördern",
+      "zitat": "Wir wollen Projekte stärken, die gegen Rassismus, Antisemitismus, Islamfeindlichkeit, LGBTIQ*-Feindlichkeit und andere Formen gruppenbezogener Menschenfeindlichkeit arbeiten. Diese Arbeit ist keine freiwillige Zusatzleistung, sondern eine essenzielle staatliche Aufgabe, um die Demokratie grundlegend zu schützen.",
+      "ursachen_ids": [
+        1902,
+        1903
+      ],
+      "pruefsumme": "57c4fb25c36966ac"
+    },
+    {
+      "kennung": "M100",
+      "ebene": "land",
+      "beschreibung": "Den Einsatz für eine Entschlackung der bestehenden Meinungsstraftatbestände (Hasskriminalität) will die Partei betreiben.",
+      "zitat": "Wir werden uns diesem Problem mit allen Möglichkeiten einer Landesregierung widmen und uns für eine Entschlackung der bestehenden Meinungsstraftatbestände einsetzen.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "7986dd38b537c149"
+    },
+    {
+      "kennung": "M101",
+      "ebene": "bund",
+      "beschreibung": "Umfassendes Paket gegen Altersdiskriminierung mit klaren Regelungen gegen Diskriminierung im Berufsalltag",
+      "zitat": "Wir bringen daher ein umfassendes Paket zur Bekämpfung von Altersdiskriminierung auf den Weg. Dazu gehören Aufklärungs- und Bildungsmaßnahmen, die Förderung altersfreundlicher Arbeitsmodelle und klare Regelungen, um Diskriminierung im Berufsalltag entgegenzutreten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1901
+      ],
+      "pruefsumme": "47c5070bbbbb7ce9"
+    },
+    {
+      "kennung": "M102",
+      "ebene": "land",
+      "beschreibung": "Alle Einrichtungen, insbesondere Polizei und ihre Datenbanken, diskriminierungskritisch überprüfen und Praktiken beenden.",
+      "zitat": "Wir werden alle Einrichtungen, insbesondere die Polizei und ihre Datenbanken, diskriminierungskritisch überprüfen und diskriminierende Praktiken und Strukturen beenden.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "257970e91279ffc7"
+    },
+    {
+      "kennung": "M103",
+      "ebene": "land",
+      "beschreibung": "Diskriminierung in Jugendarbeit und Schule entgegenwirken und mit Aufklärung für Toleranz und Akzeptanz werben.",
+      "zitat": "Dazu wollen wir etwa in der Jugendarbeit und in der Schule Diskriminierung entgegenwirken und mit Aufklärung für Toleranz und Akzeptanz werben.",
+      "ursachen_ids": [
+        1902,
+        1903
+      ],
+      "pruefsumme": "ac2144699828945e"
+    },
+    {
+      "kennung": "M104",
+      "ebene": "land",
+      "beschreibung": "Schutz queerer Menschen in der Landesverfassung verankern",
+      "zitat": "Den Schutz queerer Menschen in der Landesverfassung verankern.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "9eadd684c5a0c16a"
+    },
+    {
+      "kennung": "M105",
+      "ebene": "land",
+      "beschreibung": "Fortbildungen zur Sensibilisierung in staatlichen Institutionen für den Schutz gleichgeschlechtlicher Ehepaare und anderer Minderheiten",
+      "zitat": "Diese Ehepartner können auf unseren Einsatz für den Schutz ihrer Rechte in einer sicheren Öffentlichkeit zählen. Dazu gehören auch Fortbildungsmaßnahmen zur Sensibilisierung in […] staatlichen Institutionen.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "df1bd1854e2a7090"
+    },
+    {
+      "kennung": "M106",
+      "ebene": "land",
+      "beschreibung": "Verpflichtende Schutzkonzepte in Jugendhilfe, Schulen, Eingliederungshilfe, Geflüchtetenhilfe sowie Gesundheits- und Pflegebereich, die auch Diskriminierung und queersensible Aspekte erfassen.",
+      "zitat": "Prävention ist der wirksamste Schutz vor Gewalt. Einrichtungen der Jugendhilfe, Schulen, Einrichtungen der Eingliederungshilfe, der Geflüchtetenhilfe sowie des Gesundheits- und Pflegebereichs sollen verpflichtend Schutzkonzepte entwickeln und umsetzen. Diese müssen Schutz vor Gewalt und Diskriminierung beinhalten […]",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1902,
+        1903
+      ],
+      "pruefsumme": "edc70021a0565f68"
+    },
+    {
+      "kennung": "M107",
+      "ebene": "land",
+      "beschreibung": "Gesamter öffentlicher Dienst soll diskriminierungskritisch aufgestellt und geschult werden.",
+      "zitat": "Der gesamte öffentliche Dienst des Landes [Land] soll diskriminierungskritisch und menschenrechtsbasiert aufgestellt und geschult werden.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "a6b070115b00ae54"
+    },
+    {
+      "kennung": "M108",
+      "ebene": "land",
+      "beschreibung": "Landesverwaltung interkulturell öffnen, sodass Verwaltungsleistungen unabhängig von der Herkunft zugänglich sind",
+      "zitat": "Wir werden dazu die Landesverwaltung interkulturell öffnen. […] dass die angebotenen Verwaltungsleistungen für alle Einwohner*innen unabhängig von ihrer Herkunft zugänglich sind.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "4de053eee46c3564"
+    },
+    {
+      "kennung": "M109",
+      "ebene": "land",
+      "beschreibung": "Bildungsprogramme gegen Antisemitismus in Schulen verbindlich verankern, mit Begegnungsformaten",
+      "zitat": "Die Prävention gegen Antisemitismus muss bereits in Schulen und Bildungseinrichtungen verbindlich verankert werden. Wir fordern verbindliche Bildungsprogramme gegen Antisemitismus, die historische Aufklärung mit einem klaren Gegenwartsbezug verbinden. Dazu gehören insbesondere die Einbindung jüdischer Perspektiven, die Zusammenarbeit mit jüdischen Organisationen sowie Begegnungsformate, die Vorurteile abbauen und Empathie fördern.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "e81002132736da14"
+    },
+    {
+      "kennung": "M110",
+      "ebene": "land",
+      "beschreibung": "Die Landeszentrale für politische Bildung soll in ihrer jetzigen Form abgeschafft und durch ein anderes Landesinstitut ersetzt werden.",
+      "zitat": "Aus diesem Grund werden wir die Landeszentrale für politische Bildung in der aktuellen Form abschaffen und als Alternative ein Landesinstitut für staatspolitische Bildung und kulturelle Identität aufbauen.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "1afed9f0ecfdc46e"
+    },
+    {
+      "kennung": "M111",
+      "ebene": "land",
+      "beschreibung": "Queere Lebensrealitäten sichtbarer machen und in Bildung, Ausbildung und öffentlichem Leben verankern",
+      "zitat": "Gleichzeitig machen wir queere Lebensrealitäten sichtbarer und verankern sie in Bildung, Ausbildung und öffentlichem Leben.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "81b729d9b25665f3"
+    },
+    {
+      "kennung": "M112",
+      "ebene": "land",
+      "beschreibung": "Polizei- und Bürgerbeauftragten als Institution ausbauen, mit mehr Befugnissen und Personal.",
+      "zitat": "Deshalb wollen wir den Polizei- und Bürgerbeauftragten als Institution ausbauen, seine Befugnisse und sein Personal stärken",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "5a6671f2cd5f2fd2"
+    },
+    {
+      "kennung": "M113",
+      "ebene": "land",
+      "beschreibung": "Rassismusprävention gemeinsam mit Communities weiterentwickeln und in einem Landeskonzept Antidiskriminierung bündeln",
+      "zitat": "Antisemitismus-, Antiziganismus-, antimuslimische und anti-Schwarze-Rassismusprävention entwickeln wir gemeinsam mit den Communities weiter. Alle Maßnahmen bündeln wir in einem integralen Landeskonzept Antidiskriminierung.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "a821aa4eb907d589"
+    },
+    {
+      "kennung": "M114",
+      "ebene": "land",
+      "beschreibung": "Landesprogramm Demokratie und Toleranz fortschreiben und an aktuelle Herausforderungen anpassen",
+      "zitat": "Das Landesprogramm „Demokratie und Toleranz“ werden wir fortschreiben und an die aktuellen Herausforderungen anpassen.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "2eabec2d003428cb"
+    },
+    {
+      "kennung": "M115",
+      "ebene": "land",
+      "beschreibung": "Antisemitismus-Arbeitsdefinition (IHRA) in staatlichen Behörden etablieren; Behörden sensibilisieren",
+      "zitat": "Behörden müssen alle Formen von Antisemitismus frühzeitig erkennen. Wir treten dafür ein, die Arbeitsdefinition von Antisemitismus nach der International Holocaust Remembrance Alliance (IHRA) umfassend in den staatlichen Behörden zu etablieren.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "e9673bfa8d8ae706"
+    },
+    {
+      "kennung": "M116",
+      "ebene": "bund",
+      "beschreibung": "Gleichstellung queerer Familien und Reform des Abstammungsrechts",
+      "zitat": "Regenbogenfamilien müssen mit anderen Familienformen gleichgestellt werden. Das Abstammungsrecht muss reformiert werden, denn es diskriminiert queere Familien.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "7ff6e77ef2e36dca"
+    },
+    {
+      "kennung": "M117",
+      "ebene": "land",
+      "beschreibung": "Akzeptanz von trans Frauen in Schutzräumen",
+      "zitat": "Wir wollen: […] die Akzeptanz von Trans*- Frauen in Schutzräumen,",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1903
+      ],
+      "pruefsumme": "d1d37c9453e546b4"
+    },
+    {
+      "kennung": "M118",
+      "ebene": "land",
+      "beschreibung": "Interkulturelle Kompetenz als Schulungsinhalt in der Verwaltung beenden",
+      "zitat": "Unter dem Schlagwort „Interkulturelle Kompetenz“ betreibt sie eine promigrantische Indoktrination der Verwaltung. Wir machen dem ein Ende.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "e051031415228200"
+    },
+    {
+      "kennung": "M119",
+      "ebene": "land",
+      "beschreibung": "Kriminalitätsbelastete Orte und Waffenverbotszonen abschaffen, da sie Racial Profiling begünstigen.",
+      "zitat": "Die sogenannten kriminalitätsbelasteten Orte und Waffenverbotszonen sind mit zusätzlichen polizeilichen Befugnissen wie Videoüberwachung oder anlasslosen Kontrollen verknüpft und somit ein Einfallstor für Racial Profiling und diskriminierendes Polizeihandeln. Sie wollen wir abschaffen.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "e5b3fde9931a5f27"
+    },
+    {
+      "kennung": "M120",
+      "ebene": "land",
+      "beschreibung": "Förderung von Initiativen, die Begegnung und Dialog ermöglichen und respektvolles Miteinander in religiöser Vielfalt stärken",
+      "zitat": "Wir werden Initiativen unterstützen, die Begegnung und Dialog ermöglichen und das respektvolle Miteinander in religiöser Vielfalt stärken.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "319f5ea4e88dc892"
+    },
+    {
+      "kennung": "M121",
+      "ebene": "land",
+      "beschreibung": "Gut integrierte Einwanderer als Integrationslotsen einbeziehen, um Neuankommenden Orientierung zu geben und Integration aus der Mitte der Gesellschaft zu fördern",
+      "zitat": "Gut integrierte Einwanderer sollen dabei stärker als Integrationslotsen einbezogen werden, um Neuankommenden Orientierung zu geben und Integration aus der Mitte der Gesellschaft heraus zu fördern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1902
+      ],
+      "pruefsumme": "cb85a1682415eb56"
+    },
+    {
+      "kennung": "M122",
+      "ebene": "land",
+      "beschreibung": "Antirassismus sowie feministische und queere Projekte in allen Bezirken der Jugendarbeit fördern.",
+      "zitat": "Wir setzen uns flächendeckend in allen Bezirken für Antirassismus sowie für feministische und queere Projekte ein, damit jeder junge Mensch unsere Stadt gleichberechtigt mitgestalten kann.",
+      "ursachen_ids": [
+        1902,
+        1903
+      ],
+      "pruefsumme": "247f35ffe5a80e35"
+    },
+    {
+      "kennung": "M123",
+      "ebene": "land",
+      "beschreibung": "Schwerpunkt der Lehrkräftebildung weg von Diversity, Queer und Gender verlagern",
+      "zitat": "Im Lehrkräftebildungsgesetz wollen wir den Schwerpunkt weg von den politisch vorgegebenen Themen wie „Diversity“, „Queer“ und „Gender“ hin zu denjenigen Themen verlagern, welche die Lehramtsabsolventen in der Multikohortenstudie als besonders wichtig benannt haben.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1903
+      ],
+      "pruefsumme": "ce2b312d34519760"
+    },
+    {
+      "kennung": "M124",
+      "ebene": "land",
+      "beschreibung": "Lehnt das Selbstbestimmungsgesetz in seiner aktuellen Form ab.",
+      "zitat": "Zugleich lehnen wir das Selbstbestimmungsgesetz in seiner aktuellen Form ab, weil es zentrale Schutzinteressen nicht ausreichend berücksichtigt.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1903
+      ],
+      "pruefsumme": "9a9dfe569125ece5"
+    },
+    {
+      "kennung": "M125",
+      "ebene": "land",
+      "beschreibung": "Ärzt*innen und Therapeut*innen zu queeren Identitäten schulen.",
+      "zitat": "Dafür wollen wir Ärzt*innen und Therapeut*innen zu queeren Identitäten schulen.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "9830f33c2b6b1a1d"
+    },
+    {
+      "kennung": "M126",
+      "ebene": "bund",
+      "beschreibung": "Zielgerichtete Fortbildungsangebot zur Diskriminierungssensibilität in Gesundheitswesen, Justiz und Sicherheitsbehörden stärker fördern",
+      "zitat": "Um strukturellen Rassismus, egal ob im Gesundheitswesen, in der Justiz oder in unseren Sicherheitsbehörden, zu bekämpfen, wollen wir zielgerichtete Fortbildungsangebote zur Steigerung der Diskriminierungssensibilität stärker fördern.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "0217c417e17b441a"
+    },
+    {
+      "kennung": "M127",
+      "ebene": "land",
+      "beschreibung": "Ansprechpersonen LSBTTI und Gleichstellungsbeauftragte bei der Polizei auf zwei hauptamtliche Stellen je Funktion ausbauen.",
+      "zitat": "Um den steigenden Bedarfen gerecht zu werden und den Arbeitsalltag der Gesamtpolizei zu erleichtern, bauen wir die Struktur der Ansprechperson LSBTTI und Gleichstellungsbeauftragten bei der Polizei auf zwei hauptamtliche Ansprechpersonen und zwei hauptamtliche Gleichstellungsbeauftragte aus.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "b195d9a57bc6e775"
+    },
+    {
+      "kennung": "M128",
+      "ebene": "land",
+      "beschreibung": "Breit angelegte Informationskampagne zu Rechten gegen Diskriminierung durch Behörden.",
+      "zitat": "Um das Gesetz und die Möglichkeiten, sich gegen Diskriminierung von Behörden zu wehren, bekannter zu machen, werden wir eine breit angelegte Informationskampagne ins Leben rufen.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "f01cce061c5c07c1"
+    },
+    {
+      "kennung": "M129",
+      "ebene": "land",
+      "beschreibung": "In allen Kulturinstitutionen Fortbildungen zur Diskriminierungssensibilität verpflichtend machen.",
+      "zitat": "In allen Kulturinstitutionen sollen Fortbildungen im Bereich der Diskriminierungssensibilität und Prävention verpflichtend werden.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "ee656757bbe50083"
+    },
+    {
+      "kennung": "M130",
+      "ebene": "land",
+      "beschreibung": "Vehementes Vorgehen gegen Racial Profiling durch staatliche Stellen.",
+      "zitat": "Wir setzen uns vehement gegen die staatliche Praktik des Racial Profiling ein, die klar im Widerspruch zum Landesantidiskriminierungsgesetz steht.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "dce69c93ad3e2672"
+    },
+    {
+      "kennung": "M131",
+      "ebene": "land",
+      "beschreibung": "Unabhängige Beschwerdestelle gegen Diskriminierung an Schulen als eigene Behörde unter dem Dach der LADG-Ombudsstelle",
+      "zitat": "Diskriminierung stellen wir uns entschieden entgegen. Wir setzen auf diskriminierungskritische Schulentwicklung sowie Fortbildungsangebote unter Einbezug der Zivilgesellschaft und richten die von der Zivilgesellschaft geforderte Unabhängige Beschwerdestelle (UBS) als Teil der LADG-Ombudsstelle als eigene Behörde ein.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "8ca1372b53241e4f"
+    },
+    {
+      "kennung": "M132",
+      "ebene": "land",
+      "beschreibung": "Landesprogramm für Begegnungsorte (Dritte Orte) weiter unterstützen",
+      "zitat": "Wir haben ein Landesprogramm zur Schaffung von […] (Dritte Orte) auf den Weg gebracht, um niedrigschwelliges soziales Miteinander zu fördern und Gemeinschaft zu stärken. Dafür werden wir uns auch weiterhin einsetzen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1902
+      ],
+      "pruefsumme": "05da199840d98fbe"
+    },
+    {
+      "kennung": "M133",
+      "ebene": "land",
+      "beschreibung": "Vorurteilsfreie Begleitung von Transitionen und queersensible Versorgung im ganzen Stadtgebiet",
+      "zitat": "Wir setzen uns für die vorurteilsfreie Begleitung der Transitionen, psychologische Beratungsangebote und medizinische Versorgung ein. Es braucht ein strukturiertes Angebot queersensibler Versorgung im ganzen Stadtgebiet, insbesondere im Umgang mit Trans-Identitäten.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "e2543ad9febd0421"
+    },
+    {
+      "kennung": "M134",
+      "ebene": "land",
+      "beschreibung": "Migrationsmuseum und Dokumentationszentrum fördern",
+      "zitat": "Migrantische Zivilgesellschaft stärken wir strukturell. Das gilt auch für Erinnerungskultur. Projekte wie ein Migrationsmuseum und ein Dokumentationszentrum fördern wir.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1902
+      ],
+      "pruefsumme": "9cfeee040789ed62"
+    },
+    {
+      "kennung": "M135",
+      "ebene": "land",
+      "beschreibung": "Landesantidiskriminierungsgesetz: Diskriminierung durch staatliche Stellen verhindern, Betroffenen rechtliches Gehör und Entschädigung ermöglichen",
+      "zitat": "Wir wollen ein Landesantidiskriminierungsgesetz (LADG) auf den Weg bringen, um Diskriminierung durch staatliche Stellen effektiv zu verhindern und Betroffenen rechtliches Gehör und Entschädigung zu ermöglichen.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "6a196bb8ccf4bc5c"
+    },
+    {
+      "kennung": "M136",
+      "ebene": "land",
+      "beschreibung": "Themen Rassismus, Antisemitismus und koloniales Erbe fester Bestandteil der Aus- und Weiterbildung von Lehrkräften.",
+      "zitat": "Alle aktuellen Formen von Rassismus und Antisemitismus sowie das koloniale Erbe [Land] müssen ein fester Bestandteil der Aus- und Weiterbildung von Lehrkräften sowie weiterem pädagogischen Personal sein.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "40516c89c2385174"
+    },
+    {
+      "kennung": "M137",
+      "ebene": "land",
+      "beschreibung": "Dunkelfeldstudien zu Rassismus, Antisemitismus und weiteren Diskriminierungsformen durchführen lassen.",
+      "zitat": "Wir setzen uns dafür ein, dass Dunkelfeldstudien zu Rassismus, Antisemitismus sowie allen weiteren Diskriminierungsformen durchgeführt werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1902
+      ],
+      "pruefsumme": "2e9ed95fe0cbbbf5"
+    },
+    {
+      "kennung": "M138",
+      "ebene": "bund",
+      "beschreibung": "Politische Bildung, Demokratie und Partizipation früh in Bildungseinrichtungen verankern",
+      "zitat": "Politische Bildung, Mitbestimmungsrechte, Demokratie und Partizipation müssen früh in den Bildungsinstitutionen und Bildungsinhalten verankert werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1902
+      ],
+      "pruefsumme": "4692ccc488f5f2ac"
+    },
+    {
+      "kennung": "M139",
+      "ebene": "bund",
+      "beschreibung": "Verbot von Minaretten und Muezzinruf",
+      "zitat": "Der Bau von Minaretten und der Muezzinruf sind zu untersagen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "9f48a800eb10cc14"
+    },
+    {
+      "kennung": "M140",
+      "ebene": "land",
+      "beschreibung": "Unabhängige Beschwerdestelle für Polizei einrichten, an die sich auch Bürger*innen wenden können",
+      "zitat": "Für eine bürger*innennahe Polizei wollen wir: […] ein*n unabhängige*n Polizeibeauftragte*n, an den/die sich nicht nur Polizeibeamt*innen, sondern auch alle Bürger*innen mit Hinweisen und Beschwerden wenden können.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "3ab855ca7d9ab139"
+    },
+    {
+      "kennung": "M141",
+      "ebene": "land",
+      "beschreibung": "Landesfinanzierung von Kinderwunschbehandlungen darf gleichgeschlechtliche Paare und Alleinstehende nicht schlechterstellen",
+      "zitat": "Die zusätzliche Finanzierung von Kinderwunschbehandlungen durch das Land [Land] darf homosexuelle Partnerschaften und Alleinstehende nicht schlechterstellen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "84cb22d78d06f072"
+    },
+    {
+      "kennung": "M142",
+      "ebene": "bund",
+      "beschreibung": "Einstellungs- und Beförderungspraxis in Behörden diskriminierungssensibel gestalten",
+      "zitat": "Wir wollen, dass Einstellungs- und Beförderungspraxis diskriminierungssensibel gestaltet werden.",
+      "ursachen_ids": [
+        1901
+      ],
+      "pruefsumme": "543ff58d7f7e6236"
+    },
+    {
+      "kennung": "M143",
+      "ebene": "land",
+      "beschreibung": "Aus- und Fortbildung der Polizei auf Antidiskriminierung ausrichten; regelmäßige Fortbildungen gegen Racial Profiling",
+      "zitat": "Die Aus- und Fortbildung der Polizei soll auf demokratische Werte, Menschenrechte, Antidiskriminierung, interkulturelle Kompetenz und Deeskalation ausgerichtet sein. […] Regelmäßige Fortbildungen in diesen Bereichen fördern professionelles Handeln und tragen dazu bei, Extremismus, Vorurteile und Racial Profiling wirksam entgegenzuwirken.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "ded8b72e4c8af039"
+    },
+    {
+      "kennung": "M144",
+      "ebene": "land",
+      "beschreibung": "Einführung eines Diversitäts-Checks, der Senatsmaßnahmen vorab auf diskriminierende Wirkungen prüft",
+      "zitat": "Wir wollen zukünftig einen echten Diversitäts-Check einführen.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "21dca6911e3ff486"
+    },
+    {
+      "kennung": "M145",
+      "ebene": "land",
+      "beschreibung": "Prävention und Bildung gegen Rassismus und gruppenbezogene Menschenfeindlichkeit; Bildungsarbeit und Antidiskriminierungsprojekte stärken",
+      "zitat": "Wir setzen uns für die Prävention und Bildung gegen Rassismus, Antisemitismus, Antifeminismus und andere gruppenbezogene Menschenfeindlichkeit ein. […] Wir stärken Bildungsarbeit, politische Jugendbildung, Antidiskriminierungsprojekte und Programme, die demokratische Werte vermitteln.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "4bc4ec4587a1cf3f"
+    },
+    {
+      "kennung": "M146",
+      "ebene": "bund",
+      "beschreibung": "Verpflichtende Antidiskriminierungsschulungen im gesamten öffentlichen Dienst",
+      "zitat": "Es braucht zudem […] sowie verpflichtende Antidiskriminierungsschulungen im gesamten öffentlichen Dienst.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "537714cf5aeab9be"
+    },
+    {
+      "kennung": "M147",
+      "ebene": "land",
+      "beschreibung": "Novellierung des Allgemeinen Gleichbehandlungsgesetzes per Bundesratsinitiative, auch Schutzlücken im staatlichen Handeln schließen.",
+      "zitat": "Außerdem setzen wir uns für eine umfassende Novellierung des Allgemeinen Gleichbehandlungsgesetzes (AGG) ein und werden hierzu eine Bundesratsinitiative einbringen. Schutzlücken, auch im Bereich staatlichen Handelns, wollen wir schließen",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "d8d8fda990f5c602"
+    },
+    {
+      "kennung": "M148",
+      "ebene": "land",
+      "beschreibung": "Queere Perspektiven in Bildung, Jugend und Familie gesetzlich verankern, mit queerem Jugendforum und Fortbildungen",
+      "zitat": "Queere Perspektiven in Bildung, Jugend und Familie verankern wir gesetzlich. Dazu gehören ein queeres Jugendforum und regelmäßige Fortbildungen.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "c725d58c76bb2e83"
+    },
+    {
+      "kennung": "M149",
+      "ebene": "bund",
+      "beschreibung": "Gesetzliches Verbot rassistischer Polizeikontrollen (Racial Profiling)",
+      "zitat": "Es braucht zudem ein gesetzliches Verbot rassistischer Polizeikontrollen („Racial Profiling“)",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "5d7f02b8e7ab446a"
+    },
+    {
+      "kennung": "M150",
+      "ebene": "land",
+      "beschreibung": "Diversitäts- und rassismussensible Forschung im Gesundheitswesen fördern und in die Ausbildung des Gesundheitspersonals integrieren",
+      "zitat": "Wir setzen uns für ein diskriminierungsfreies Gesundheitssystem ein, das diversitäts- und rassismussensible Forschung fördert, ihre Erkenntnisse in die Ausbildung des Gesundheitspersonals integriert und community-basierte Projekte nachhaltig unterstützt.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "74fede75f498efe4"
+    },
+    {
+      "kennung": "M151",
+      "ebene": "bund",
+      "beschreibung": "Queerfeindliche Straftaten besser erfassen, Ansprechstellen in Behörden und Justiz ausbauen",
+      "zitat": "[…] Hasskriminalität gegen LSBTIQ* entschlossen bekämpfen. Dazu verbessern wir die Erfassung von queerfeindlichen Straftaten und bauen die Unterstützungsangebote sowie Ansprechstellen in Behörden und in der Justiz weiter aus.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "139202884552daa7"
+    },
+    {
+      "kennung": "M152",
+      "ebene": "land",
+      "beschreibung": "Landes-Antidiskriminierungsgesetz, das die Rechte von Betroffenen stärkt.",
+      "zitat": "Mit einem Landes-Antidiskriminierungsgesetz stärken wir die Rechte der Betroffenen.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "18965d5d06ce21e1"
+    },
+    {
+      "kennung": "M153",
+      "ebene": "land",
+      "beschreibung": "Ombudsstelle des Landesantidiskriminierungsgesetzes mit mehr Rechten ausstatten",
+      "zitat": "Die [Land] Verwaltung muss hier vorangehen. Die Ombudsstelle des Landesantidiskriminierungsgesetzes (LADG) statten wir deshalb mit mehr Rechten aus.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "f6a3d1b9fb3712cd"
+    },
+    {
+      "kennung": "M154",
+      "ebene": "land",
+      "beschreibung": "Fachzentren für geschlechtliche Vielfalt als Beratungs- und Versorgungsstellen für trans, inter und nichtbinäre Personen finanzieren",
+      "zitat": "Wir werden Fachzentren für geschlechtliche Vielfalt als interdisziplinäre Beratungs- und Versorgungsstellen für TIN-Personen finanzieren.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "c6e39ce6c46bda0a"
+    },
+    {
+      "kennung": "M155",
+      "ebene": "land",
+      "beschreibung": "Im Bundesrat das Selbstbestimmungsgesetz fortschrittlich weiterentwickeln und gegen Rückabwicklung eintreten.",
+      "zitat": "Im Bundesrat werden wir uns für eine fortschrittliche Weiterentwicklung des Selbstbestimmungsgesetzes (SBGG) einsetzen und uns jedem Versuch einer rechten Rückabwicklung entschieden entgegenstellen.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "0406c9aaf4726abb"
+    },
+    {
+      "kennung": "M156",
+      "ebene": "land",
+      "beschreibung": "Losanteil bei Schulübergängen stärken, um den Übergang diskriminierungsfreier zu gestalten.",
+      "zitat": "Insbesondere den Übergang mit dem Wechsel in die Sekundarstufe I wollen wir durch die Stärkung des Losanteils diskriminierungsfreier und einfacher gestalten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "913d8415d4db8ce6"
+    },
+    {
+      "kennung": "M157",
+      "ebene": "land",
+      "beschreibung": "Fachstellen gegen Diskriminierung (u. a. Wohnungs-, Arbeitsmarkt, Gesundheit) stärken und dauerhaft absichern.",
+      "zitat": "Alle bestehenden Fachstellen zur Bekämpfung von Diskriminierung, bspw. auf dem Wohnungs- und Arbeitsmarkt sowie im Gesundheitsbereich, werden wir stärken, ihre Arbeit muss dauerhaft abgesichert werden.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "97749cbb5c74c4fe"
+    },
+    {
+      "kennung": "M158",
+      "ebene": "land",
+      "beschreibung": "Verpflichtende Fortbildungen für Beschäftigte im öffentlichen Dienst zu antimuslimischem Rassismus",
+      "zitat": "Besch ä ftigte im öffentlichen Dienst erhalten verpflichtende Fortbildungen und beim Landeskriminalamt wird eine spezifische Ansprechperson eingesetzt.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "e385cc4537397347"
+    },
+    {
+      "kennung": "M159",
+      "ebene": "land",
+      "beschreibung": "Staatliche Kampagnen und Programme, die Kinder vor der Pubertät mit sexuellen Themen konfrontieren, sollen eingestellt werden.",
+      "zitat": "Wir werden alle staatlichen Kampagnen und Programme einstellen, die Kinder vor der Pubertät mit sexuellen Themen konfrontieren.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "a1fd83394ec045e8"
+    },
+    {
+      "kennung": "M160",
+      "ebene": "land",
+      "beschreibung": "Zugang zum Recht sichern: Mittel für Prozesskostenhilfe, Dolmetscher und Sachverständige verlässlich bereitstellen",
+      "zitat": "Drittens stärken wir den Zugang zum Recht und den Opferschutz. Die Mittel für Prozesskostenhilfe, Dolmetscher, Sachverständige und Fachliteratur sichern wir verlässlich, damit niemand aus Kostengründen auf sein Recht verzichten muss.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "96bdfd01301225ab"
+    },
+    {
+      "kennung": "M161",
+      "ebene": "bund",
+      "beschreibung": "In der Schule zu Ehe, Partnerschaft und Familienzusammenhalt unterrichten",
+      "zitat": "Kinder sollen in der Schule zu Ehe, Partnerschaft und Familienzusammenhalt unterrichtet werden, um später stabile Familien gründen zu können.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1903
+      ],
+      "pruefsumme": "ea4f2d80201623bd"
+    },
+    {
+      "kennung": "M162",
+      "ebene": "land",
+      "beschreibung": "Anspruch auf Ersatz- oder Ausweichtermine bei religiösen Feiertagen in Schulen und Hochschulen",
+      "zitat": "Wir fordern eine verbindlich geregelte Rücksichtnahme auf religiöse Feiertage und den Sabbat bei Prüfungs- und Leistungsnachweisen an Schulen und Universitäten mit einem unbürokratischen Anspruch auf Ersatz- oder Ausweichtermine.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "94a3dc472e5897b2"
+    },
+    {
+      "kennung": "M163",
+      "ebene": "land",
+      "beschreibung": "Queere Bildung in Schulen, Jugendarbeit und Erwachsenenbildung stärken",
+      "zitat": "In Schulen, Jugendarbeit und Erwachsenenbildung stärken wir queere Bildung, um Hass und Gewalt vorzubeugen.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "e19ec603c1fdb8d2"
+    },
+    {
+      "kennung": "M164",
+      "ebene": "bund",
+      "beschreibung": "Anonymisierte Bewerbungsverfahren, damit alle die gleichen Chancen auf einen Ausbildungsplatz haben",
+      "zitat": "Anonymisierte Bewerbungsverfahren sollen sicherstellen, dass alle die gleichen Chancen auf eine Ausbildung haben.",
+      "ursachen_ids": [
+        1901
+      ],
+      "pruefsumme": "d05216b03074ff01"
+    },
+    {
+      "kennung": "M165",
+      "ebene": "land",
+      "beschreibung": "Schutz von Kindern vor Diskriminierung, Rassismus und Queerfeindlichkeit an Schulen durch Beratung, Präventionsprogramme und Netzwerke",
+      "zitat": "Wir wollen Kinder vor Diskriminierung, Mobbing, Rassismus und Queerfeindlichkeit an allen Schulen schützen. Hierfür stärken wir gezielt Beratungsangebote sowie Präventionsprogramme und unterstützen Netzwerke wie „Schule ohne Rassismus – Schule mit Courage“ in ihrer wichtigen Arbeit vor Ort.",
+      "ursachen_ids": [
+        1902,
+        1903
+      ],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "04e7b792219c91c0"
+    },
+    {
+      "kennung": "M166",
+      "ebene": "land",
+      "beschreibung": "Ausweitung der LSBTIQ*-sensiblen Beratung und verpflichtende Weiterbildung zu diversitätssensibler Pflege",
+      "zitat": "Wir werden den Einsatz der Interkulturellen Brückenbauer*innen und das Angebot für LSBTIQ*-sensible Beratung ausweiten. Weiterbildungen zu diversitätssensibler Pflege sollen verpflichtend in der Weiterbildungsordnung verankert werden.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "5f7c505552f552f5"
+    },
+    {
+      "kennung": "M167",
+      "ebene": "land",
+      "beschreibung": "Fördermittel sollen nicht mehr nach bestimmten Genderzielen oder queerbezogenen Anforderungen vergeben werden.",
+      "zitat": "Förderpolitik ohne Regenbogen! Die Vergabe von Fördermitteln darf sich nicht mehr danach richten, ob die Antragsteller bestimmte Genderziele erreichen oder andere […]",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "bbf3f94d245136f6"
+    },
+    {
+      "kennung": "M168",
+      "ebene": "land",
+      "beschreibung": "Queersensible Gesundheitsversorgung stärken und Aus- und Fortbildung in Gesundheitsberufen ausbauen",
+      "zitat": "Jede und jeder soll die beste Behandlung erhalten. Deshalb stärken wir die queersensible Gesundheitsversorgung, insbesondere für trans* Patient*innen und bauen die Aus- und Fortbildung in den Gesundheitsberufen aus.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1903
+      ],
+      "pruefsumme": "3be7a64b3b3e2a10"
+    },
+    {
+      "kennung": "M169",
+      "ebene": "bund",
+      "beschreibung": "Betriebliche Selbstorganisation queerer Beschäftigter und Beschwerdestellen nach dem AGG gegen schlechtere Bezahlung",
+      "zitat": "Studien belegen, dass queere Menschen durchschnittlich schlechter bezahlt werden. Es braucht wirksame Maßnahmen wie die betriebliche Selbstorganisation queerer Menschen, Abschlusses von Betriebs- oder Dienstvereinbarungen und der Arbeit von Beschwerdestellen nach dem Allgemeinen Gleichbehandlungsgesetz (AGG).",
+      "ursachen_ids": [
+        1903
+      ],
+      "ursachen_offen": [
+        1901
+      ],
+      "pruefsumme": "73300a00fd9996dc"
+    },
+    {
+      "kennung": "M170",
+      "ebene": "bund",
+      "beschreibung": "Kriterium der Ausbildungsreife bei der Arbeitsagentur abschaffen",
+      "zitat": "Das Kriterium der „Ausbildungsreife“ der Arbeitsagentur muss abgeschafft werden.",
+      "ursachen_ids": [
+        1901
+      ],
+      "pruefsumme": "2fa5d165f0f94a80"
+    },
+    {
+      "kennung": "M171",
+      "ebene": "land",
+      "beschreibung": "Doppelstrukturen bei Stellen für Diskriminierungsbeschwerden abbauen.",
+      "zitat": "Die Arbeit des Petitionsausschusses werden wir stärken und Doppelstrukturen mit der Landesantidiskriminierungsstelle sowie dem Bürger- und Polizeibeauftragten abbauen.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "fb7087b1ac533755"
+    },
+    {
+      "kennung": "M172",
+      "ebene": "land",
+      "beschreibung": "Neue Orte der Begegnung in jedem Bezirk schaffen",
+      "zitat": "Deshalb stärken wir Stadtteilzentren und mobile Stadtteilarbeit. In jedem Bezirk sollen neue Orte der Begegnung entstehen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1902
+      ],
+      "pruefsumme": "00c8de99ec05071e"
+    },
+    {
+      "kennung": "M173",
+      "ebene": "land",
+      "beschreibung": "Politische Bildung und klare Haltung gegen Antisemitismus und Hass sind Pflicht in der Schule; ein Gedenkstättenbesuch wird verpflichtend.",
+      "zitat": "Auch politische Bildung, Erinnerungskultur sowie eine klare Haltung gegen Antisemitismus, Extremismus und Hass sind Pflichtbestandteile schulischer Erziehung. Jede Schülerin und jeder Schüler soll verpflichtend mindestens einmal in der Schullaufbahn ein ehemaliges Konzentrationslager und eine Dokumentations- und Gedenkstätte zur Aufarbeitung der SED-Diktatur besuchen.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "bf01c6b20e7b423c"
+    },
+    {
+      "kennung": "M174",
+      "ebene": "land",
+      "beschreibung": "Verpflichtende Kurse zu Grund- und Menschenrechten und Antidiskriminierungsrecht für Beschäftigte des öffentlichen Dienstes.",
+      "zitat": "Aus- und Weiterbildung zu Grund- und Menschenrechten und zum Antidiskriminierungsrecht sind zu stärken. Auch im bestehenden Beschäftigungsverhältnis soll es hierzu verpflichtende Kurse geben.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "2d9eb25ed8f8429f"
+    },
+    {
+      "kennung": "M175",
+      "ebene": "land",
+      "beschreibung": "Gendersprache in amtlicher Sprache und öffentlichen Bildungseinrichtungen per Verordnung untersagen",
+      "zitat": "[…] Verunstaltungen durch Gendersternchen, Doppelpunkte, Binnen-I oder andere ideologisch motivierte Schreibweisen haben in der amtlichen Kommunikation, in Schulen und an Hochschulen nichts verloren. […] Wir werden per Verordnung durchsetzen, dass im gesamten amtlichen Sprachgebrauch des Landes [Land] sowie in allen öffentlichen Bildungseinrichtungen die Regeln des Rates für deutsche Rechtschreibung verbindlich gelten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1903
+      ],
+      "pruefsumme": "f9671368686fe27a"
+    },
+    {
+      "kennung": "M176",
+      "ebene": "bund",
+      "beschreibung": "Bundesförderprogramm für queere Beratungs- und Projektstrukturen aus dem Aktionsplan Queer leben",
+      "zitat": "Mit dem Aktionsplan „Queer leben“ haben wir in der Bundesregierung einen Plan zur Stärkung von queerem Leben vorgelegt. Diesen wollen wir verstetigen. Zur weiteren Umsetzung wollen wir mit einem Bundesförderprogramm die nötigen Mittel bereitstellen.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "d1e92e1aa363326e"
+    },
+    {
+      "kennung": "M177",
+      "ebene": "land",
+      "beschreibung": "Sensibilisierung für Rassismus und Queerfeindlichkeit in Aus- und Fortbildung der Polizei stärken",
+      "zitat": "Ihre interkulturelle Kompetenz bauen wir deshalb weiter aus und stärken die Sensibilisierung für Rassismus, Queerfeindlichkeit und geschlechtsspezifische Gewalt in der Aus- und Fortbildung.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "d29166beda9a84e8"
+    },
+    {
+      "kennung": "M178",
+      "ebene": "land",
+      "beschreibung": "Geschlechtsangabe in der Verwaltung nur dort erfassen, wo es unbedingt nötig ist.",
+      "zitat": "Wir machen uns dafür stark, dass die Angabe des Geschlechts nur dort in der Verwaltung erfasst wird, wo dies unbedingt nötig ist.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "017f94ad88c20c03"
+    },
+    {
+      "kennung": "M179",
+      "ebene": "bund",
+      "beschreibung": "Schnellere Anerkennung von Qualifikationen und Abschlüssen auch von Nicht-EU-Bürger*innen",
+      "zitat": "[…] Qualifikationen und Abschlüsse auch von Nicht-EU-Bürger*innen müssen schneller anerkannt werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1901
+      ],
+      "pruefsumme": "d6688c2d69f033d1"
+    },
+    {
+      "kennung": "M180",
+      "ebene": "land",
+      "beschreibung": "Integrationskurse vermitteln Grundordnung, Respekt vor Gleichberechtigung und religiöser Vielfalt",
+      "zitat": "Integration fordert alle Beteiligten: Sprach- und Integrationskurse vom ersten Tag an, die Vermittlung unserer freiheitlich-demokratischen Grundordnung, den Respekt vor Gleichberechtigung, unterschiedlichen Lebensweisen und religiöser Vielfalt.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1902
+      ],
+      "pruefsumme": "b27d354dc12f9612"
+    },
+    {
+      "kennung": "M181",
+      "ebene": "land",
+      "beschreibung": "Frauenfördergesetz konsequent umsetzen",
+      "zitat": "Wir wollen: […] dass Frauenförderung nach dem Frauenfördergesetz konsequent umgesetzt wird,",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "ee77281abed5544b"
+    },
+    {
+      "kennung": "M182",
+      "ebene": "land",
+      "beschreibung": "Antisemitische Vorfälle an Hochschulen benennen, aufklären und konsequent ahnden.",
+      "zitat": "Antisemitische Vorfälle an unseren Hochschulen müssen klar benannt, aufgeklärt, zur Anzeige gebracht und konsequent geahndet werden: von der Anwendung des Hausrechts über temporäre Ausschlüsse vom Studium bis hin zur Exmatrikulation […].",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "dd1791d3e6f71731"
+    },
+    {
+      "kennung": "M183",
+      "ebene": "land",
+      "beschreibung": "Zugriffsberechtigungen und Speicherung in Verwaltungsdatenbanken diskriminierungskritisch überprüfen.",
+      "zitat": "Vor dem Hintergrund unbefugter Datenabfragen insbesondere bei der Polizei wollen wir sowohl die Speichernotwendigkeit als auch die Zugriffsberechtigungen für Verwaltungsdatenbanken diskriminierungskritisch überprüfen.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "4b346c3a91f10ad5"
+    },
+    {
+      "kennung": "M184",
+      "ebene": "land",
+      "beschreibung": "Feste Ansprechpersonen für Antidiskriminierung in der Polizei aufbauen.",
+      "zitat": "Zudem unterstützen wir den Aufbau von festen Ansprechpersonen für die Antidiskriminierung in der Polizei und fordern eine konsequente sowie nachhaltige Fortbildung.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "1ad9343abae2d55a"
+    },
+    {
+      "kennung": "M185",
+      "ebene": "bund",
+      "beschreibung": "IHRA-Arbeitsdefinition von Antisemitismus in Behörden etablieren und Grundlage von Fortbildungen für Beamtinnen und Beamte machen",
+      "zitat": "Wir treten dafür ein, die Arbeitsdefinition von Antisemitismus nach der IHRA (International Holocaust Remembrance Alliance) umfassend in den staatlichen Behörden zu etablieren und diese insbesondere zur Grundlage von Fortbildungen von Beamtinnen und Beamten und bei der Vergabe staatlicher Gelder zu machen.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "d973412d54eeebaf"
+    },
+    {
+      "kennung": "M186",
+      "ebene": "bund",
+      "beschreibung": "Verschärfung der Volksverhetzung: Leugnen des Existenzrechts Israels strafbar, besonders schwerer Fall bei antisemitischen Taten",
+      "zitat": "Deshalb verschärfen wir den Volksverhetzungs-Paragrafen im Strafgesetzbuch so, dass das Leugnen des Existenzrechts künftig strafbar ist. Außerdem führen wir einen besonders schweren Fall der Volksverhetzung ein, der Täter umfasst, die antisemitisch handeln.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "60eaea84f63a02f0"
+    },
+    {
+      "kennung": "M187",
+      "ebene": "land",
+      "beschreibung": "Verbot von Pubertätsblockern zur Einleitung einer Geschlechtsumwandlung fordern",
+      "zitat": "Wir sehen darin eine Gefährdung des Kindeswohls und fordern ein Verbot von Pubertätsblockern zur Einleitung einer Geschlechtsumwandlung.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1903
+      ],
+      "pruefsumme": "4787166c0f6b0c46"
+    },
+    {
+      "kennung": "M188",
+      "ebene": "land",
+      "beschreibung": "Integrationsbudget für Kommunen, u. a. für Willkommensinitiativen, Patenschaftsmodelle und Zuschüsse für Begegnungszentren",
+      "zitat": "Dazu werden wir das Aufnahmegesetz reformieren und […] ein Integrationsbudget auflegen, aus welchem unbürokratisch Mittel für Kommunen zur besseren Integration ausgereicht werden – u.a. für Willkommensinitiativen, Patenschaftsmodelle oder Zuschüsse für Begegnungszentren.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "bfb815b598bfc61a"
+    },
+    {
+      "kennung": "M189",
+      "ebene": "bund",
+      "beschreibung": "Selbstbestimmungsgesetz zurücknehmen",
+      "zitat": "Das Selbstbestimmungsgesetz, welches am 01. November 2024 das Transsexuellengesetz von 1980 abgelöst hat, ist vollumfänglich zurückzunehmen.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "91fe2bd66f600578"
+    },
+    {
+      "kennung": "M190",
+      "ebene": "bund",
+      "beschreibung": "Allen Schüler*innen einen NS-Gedenkstättenbesuch ermöglichen und finanziell unterstützen",
+      "zitat": "Deswegen wollen wir allen Schüler*innen ermöglichen, einmal in ihrer Schulzeit eine NS-Gedenkstätte zu besuchen und das auch finanziell unterstützen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1902
+      ],
+      "pruefsumme": "cae7413829a8a589"
+    },
+    {
+      "kennung": "M191",
+      "ebene": "land",
+      "beschreibung": "Zugang zu Pubertätsblockern und geschlechtsangleichenden Hormontherapien für Minderjährige soll eingeschränkt oder unterbunden werden.",
+      "zitat": "Wir werden diesen Trend umkehren. Statt den Zugang zu Hormontherapien und Pubertätsblockern zu erleichtern, fordern wir, wie auch der Deutsche Ärztetag, den Zugang zu diesen experimentellen Eingriffen einzuschränken bzw. zu unterbinden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1903
+      ],
+      "pruefsumme": "4524c901fa6b9c1a"
+    },
+    {
+      "kennung": "M192",
+      "ebene": "land",
+      "beschreibung": "Unabhängige Beschwerdestelle für Schulen und Kitas einrichten",
+      "zitat": "Eine unabhängige Beschwerdestelle für Schulen und Kitas siedeln wir beim Parlament an.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "a880839b96d8492c"
+    },
+    {
+      "kennung": "M193",
+      "ebene": "land",
+      "beschreibung": "Regenbogenflaggen und andere nicht hoheitliche Flaggen vor öffentlichen Einrichtungen untersagen",
+      "zitat": "Das Hissen von nicht hoheitlichen Flaggen, wie Regenbogenflaggen vor öffentlichen Einrichtungen widerspricht der Neutralitätspflicht des Staates und wird untersagt.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "4da353b92d07da49"
+    },
+    {
+      "kennung": "M194",
+      "ebene": "land",
+      "beschreibung": "Schulung des Personals in Gerichten und Jugendämtern, um Diskriminierung von Regenbogenfamilien abzubauen",
+      "zitat": "Wir sorgen dafür, dass das Personal in Gerichten und Jugendämtern geschult ist, um die Diskriminierung von Regenbogenfamilien abzubauen.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "489254748464d455"
+    },
+    {
+      "kennung": "M195",
+      "ebene": "land",
+      "beschreibung": "Rahmenlehrplan, Curricula und Lehrmaterialien queer- und rassismussensibel überarbeiten",
+      "zitat": "Bildung muss diskriminierungsfrei sein. Deshalb setzen wir uns für eine queer-, rassismus- und kolonialsensible Überarbeitung von Rahmenlehrplan, Schulcurricula sowie Lehr- und Lernmaterialien ein.",
+      "ursachen_ids": [
+        1902,
+        1903
+      ],
+      "pruefsumme": "1fd2392f1d663653"
+    },
+    {
+      "kennung": "M196",
+      "ebene": "land",
+      "beschreibung": "Verbindliche Vermittlung antiziganismuskritischer Kenntnisse in Lehrplänen und in der Ausbildung pädagogischen Personals",
+      "zitat": "Im Rahmen der Aus- und Weiterbildung von pädagogischem Personal sowie in Rahmenlehrplänen der [Land] Schulen müssen antiziganismuskritische Kenntnisse über Geschichte und Gegenwart von Sinti*zze und Rom*nja verbindlich Eingang finden.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "a59a7ce3cc3aaba3"
+    },
+    {
+      "kennung": "M197",
+      "ebene": "land",
+      "beschreibung": "Einheitliche Beratungs- und Unterstützungsangebote für LSBTIQ* in allen Bezirken",
+      "zitat": "Wir wollen einheitliche Beratungs- und Unterstützungsangebote für Lesben, Schwule, Bisexuelle, trans* , inter* und queere Menschen (LSBTIQ*) in allen Bezirken und in der ganzen Stadt.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "117b17d67d903c24"
+    },
+    {
+      "kennung": "M198",
+      "ebene": "bund",
+      "beschreibung": "Keine Indoktrination von Kindern und Jugendlichen; staatliche Förderung dafür einstellen",
+      "zitat": "Es darf keine Indoktrination von Kindern und Jugendlichen durch Trans-Kult, Frühsexualisierung und Genderideologie geben. Jede staatliche Förderung dafür muss eingestellt werden.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "ed05a3761d64fc2b"
+    },
+    {
+      "kennung": "M199",
+      "ebene": "land",
+      "beschreibung": "Verwaltung und öffentliche Einrichtungen sollen selbstgewählte Namen und Pronomen anerkennen.",
+      "zitat": "Verwaltung und öffentliche Einrichtungen müssen Vorbild sein, wenn es um Gleichstellung und Respekt geht. Dazu gehören die Anerkennung selbstgewählter Namen und Pronomen, eine queersensible Aus- und Weiterbildung sowie eine gendersensible Sprache.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "325caf960ce3078f"
+    },
+    {
+      "kennung": "M200",
+      "ebene": "bund",
+      "beschreibung": "Verbot von Burka und Niqab in der Öffentlichkeit",
+      "zitat": "Das Tragen von Burka und Niqab in der Öffentlichkeit wollen wir auch in Deutschland untersagen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "176572345266f8e3"
+    },
+    {
+      "kennung": "M201",
+      "ebene": "bund",
+      "beschreibung": "Demokratiefördergesetz, das Opferberatungen und Projekte gegen Rechtsextremismus langfristig finanziell absichert",
+      "zitat": "Die Gegenkräfte in der Zivilgesellschaft stärken! […] Projekte der mobilen Beratung gegen Rechtsextremismus, Opferberatungen und zivilgesellschaftliche Demokratiebündnisse, Migrant*innen-Selbstorganisationen sowie Antifa-Initiativen müssen mit einem echten, wirksamen Demokratiefördergesetz stärker unterstützt und langfristig finanziell abgesichert werden.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "b5b771ce5e8fc397"
+    },
+    {
+      "kennung": "M202",
+      "ebene": "land",
+      "beschreibung": "Stärkung des Diskriminierungsschutzes auf dem Wohnungsmarkt im Allgemeinen Gleichbehandlungsgesetz auf Bundesebene",
+      "zitat": "Bei der notwendigen Novellierung des Allgemeinen Gleichbehandlungsgesetzes (AGG) auf Bundesebene setzen wir uns dafür ein, den „Diskriminierungsschutz“ auf dem Wohnungsmarkt zu stärken und die bestehenden Ausnahmeregelungen zu streichen.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "16146b468de8ed82"
+    },
+    {
+      "kennung": "M203",
+      "ebene": "land",
+      "beschreibung": "UN-Kinderrechts- und Behindertenrechtskonvention auch für Geflüchtete konsequent umsetzen",
+      "zitat": "Wir werden die UN-Kinderrechts- und die UN-Behindertenrechtskonvention konsequent auch für Geflüchtete umsetzen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "d6428fe92104d477"
+    },
+    {
+      "kennung": "M204",
+      "ebene": "land",
+      "beschreibung": "Diskriminierende Bezahlkarte durch ein verpflichtendes Basiskonto ersetzen",
+      "zitat": "Selbständige Kontoführung: Die diskriminierende Bezahlkarte wird durch ein verpflichtendes Basiskonto ersetzt.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "0ae073ab22ae1e6b"
+    },
+    {
+      "kennung": "M205",
+      "ebene": "land",
+      "beschreibung": "Abschaffung des Neutralitätsgesetzes im öffentlichen Dienst",
+      "zitat": "Das diskriminierende „Neutralitätsgesetz“ schaffen wir in Gänze ab, da es insbesondere kopftuchtragende Frauen vom Staatsdienst ausschließt",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "72956a775b1d32f1"
+    },
+    {
+      "kennung": "M206",
+      "ebene": "land",
+      "beschreibung": "Beauftragtenwesen, auch Antidiskriminierungsbeauftragte, abschaffen",
+      "zitat": "Das ausufernde Beauftragtenwesen mit z. B. Gleichstellungs- und Antidiskriminierungsbeauftragten verschlingt nicht nur Unsummen an Steuermitteln […] Das Beauftragtenwesen wollen wir abschaffen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "3aec673dfb7b04ff"
+    },
+    {
+      "kennung": "M207",
+      "ebene": "land",
+      "beschreibung": "Antisemitische, rassistische oder extremistische Graffiti innerhalb von 24 Stunden entfernen.",
+      "zitat": "Insbesondere antisemitische, «rassistisch»e oder extremistische Graffiti müssen schnellstmöglich, spätestens innerhalb von 24 Stunden, entfernt werden.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "353c9dc77439a088"
+    },
+    {
+      "kennung": "M208",
+      "ebene": "land",
+      "beschreibung": "Kontrollquittungen für Betroffene polizeilicher Maßnahmen, Polizeibeauftragter als Anlaufstelle für alle",
+      "zitat": "Den Polizeibeauftragten zu einer Anlaufstelle für „alle“ machen und Kontrollquittungen für Betroffene polizeilicher Maßnahmen einführen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "fdb42817a00a9342"
+    },
+    {
+      "kennung": "M209",
+      "ebene": "land",
+      "beschreibung": "Neutralitätsgesetz bei Justiz und Polizei strikt durchsetzen (Verbot sichtbarer religiöser Symbole)",
+      "zitat": "Die strikte Einhaltung und konsequente Durchsetzung des [Land] Neutralitätsgesetzes bei Justiz und Polizei.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "fe80f3f26429a1bb"
+    },
+    {
+      "kennung": "M210",
+      "ebene": "land",
+      "beschreibung": "Kampf gegen Rassismus und Antisemitismus stärken; die Arbeit dagegen langfristig und unabhängig von Förderperioden absichern.",
+      "zitat": "Wir werden den Kampf gegen alle Formen von Rassismus und Antisemitismus stärken, vor allem auch die strukturell und institutionell verankerten. Wir setzen uns dafür ein, diese wichtige Arbeit langfristig und von Förderperioden unabhängig zu sichern.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "0dfa5a7850814b59"
+    },
+    {
+      "kennung": "M211",
+      "ebene": "land",
+      "beschreibung": "Themenjahre sollen die Vielfalt von Kulturen fördern.",
+      "zitat": "Durch Themenjahre fördern wir die Vielfalt von Kulturen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1902
+      ],
+      "pruefsumme": "b715dab19a45834f"
+    },
+    {
+      "kennung": "M212",
+      "ebene": "land",
+      "beschreibung": "Behörden sensibilisieren, Maßnahmen gegen Gewalt aus Vorurteilen verankern (Sensibilisierung zur Pflicht).",
+      "zitat": "Wir brauchen wirksame Maßnahmen gegen Hassgewalt, die fest in der IGSV verankert sind, Ursachen bekämpfen und Sensibilisierung in Behörden zur Pflicht machen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "d729c99d92412212"
+    },
+    {
+      "kennung": "M213",
+      "ebene": "land",
+      "beschreibung": "Sportvereine sollen sich im Bereich Antidiskriminierung fortbilden und zertifizieren lassen können.",
+      "zitat": "Darüber hinaus legen wir ein Programm auf, bei dem sich Vereine im Bereich Antidiskriminierung fortbilden und zertifizieren lassen können.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "d85395acf4bb21b0"
+    },
+    {
+      "kennung": "M214",
+      "ebene": "land",
+      "beschreibung": "Queeres Leben im Rahmenplan der Schulen verankern",
+      "zitat": "Queeres Leben im Rahmenplan von Schulen verankern – in Fächern wie Sozialkunde, Biologie und Geschichte.",
+      "ursachen_ids": [
+        1903
+      ],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "2735a2e5384e40c7"
+    },
+    {
+      "kennung": "M215",
+      "ebene": "land",
+      "beschreibung": "Landesbeauftragte*r gegen antimuslimische Diskriminierung, die Lücken in Behörden und Schulen schließt",
+      "zitat": "Wir setzen eine*n Landesbeauftragte*n ein, die*der ressortübergreifend Lücken im Schutz vor antimuslimischer Diskriminierung in unseren gesellschaftlichen Institutionen wie Behörden und Schulen […] schließt",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "9a8b152e3f4c1a95"
+    },
+    {
+      "kennung": "M216",
+      "ebene": "bund",
+      "beschreibung": "Anerkennung im Ausland erworbener Abschlüsse beschleunigen und digitalisieren",
+      "zitat": "Die Anerkennung im Ausland erworbener Abschlüsse wollen wir beschleunigen und durchgehend digitalisieren.",
+      "ursachen_ids": [
+        1901
+      ],
+      "pruefsumme": "5cb63724ab4e450f"
+    },
+    {
+      "kennung": "M217",
+      "ebene": "land",
+      "beschreibung": "Beratungs- und Unterstützungsangebote für queere Menschen langfristig ausbauen, auch im ländlichen Raum",
+      "zitat": "Wir bauen Beratungs- und Unterstützungsangebote langfristig aus und sorgen dafür, dass sie auch im ländlichen Raum erreichbar sind.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "0b538051ab601b11"
+    },
+    {
+      "kennung": "M218",
+      "ebene": "land",
+      "beschreibung": "Ladenschlussgesetz so ändern, dass jüdische Geschäfte mit koscheren Lebensmitteln am Sonntag statt Samstag öffnen können",
+      "zitat": "Wir ändern das Ladenschlussgesetz zugunsten jüdischer Geschäfte mit koscheren Lebensmitteln, damit sie auch an Sonntagen anstelle von Samstagen öffnen können.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "dc10d87f7ca44bd6"
+    },
+    {
+      "kennung": "M219",
+      "ebene": "land",
+      "beschreibung": "Begegnungsorte bei der Stadtplanung von Anfang an mitdenken",
+      "zitat": "Damit unsere Kulturszene lebendig bleibt, fordern wir: […] bei Stadtentwicklungsplanungen schon multikulturelle, interdisziplinäre Begegnungsorte mitzudenken, wie z. B. beim Neubau einer Schule oder eines Schulcampus.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1902
+      ],
+      "pruefsumme": "59d1667c6e02d0a1"
+    },
+    {
+      "kennung": "M220",
+      "ebene": "land",
+      "beschreibung": "Keine Gendersprache in der Behördenkommunikation vorschreiben.",
+      "zitat": "Darüber hinaus treten wir dafür ein, keine Gendersprache in der Behördenkommunikation vorzuschreiben.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "0a84e54c1ecc339b"
+    },
+    {
+      "kennung": "M221",
+      "ebene": "land",
+      "beschreibung": "Sexuelle Identität als Merkmal in Artikel 3 Grundgesetz aufnehmen und dafür eintreten.",
+      "zitat": "Wir setzen uns weiter dafür ein, die verfassungsrechtliche Vervollständigung des Artikel 3 im Grundgesetz um das Merkmal „sexuelle Identität“ voranzutreiben und abzuschließen.",
+      "ursachen_ids": [
+        1903
+      ],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "ac7c7ec5f3d220fa"
+    },
+    {
+      "kennung": "M222",
+      "ebene": "bund",
+      "beschreibung": "Ticketsystem für Polizeikontrollen, das die Gründe der Kontrolle darlegt",
+      "zitat": "Mit einem Ticketsystem für Kontrollen, das die Gründe für Kontrollen darlegt, wollen wir polizeiliches Handeln transparenter machen.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "9c5cf8ef9c19da2e"
+    },
+    {
+      "kennung": "M223",
+      "ebene": "land",
+      "beschreibung": "Unterstützung einer Bundesratsinitiative zum Abbau der Diskriminierung von Regenbogenfamilien und queeren Personen.",
+      "zitat": "Deshalb unterstützt [Land] eine Bundesratsinitiative zum Abbau der Diskriminierung von Regenbogenfamilien und queeren Personen.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "68141c72bb3ce66d"
+    },
+    {
+      "kennung": "M224",
+      "ebene": "land",
+      "beschreibung": "Toleranz und Chancengleichheit unabhängig von Geschlechtsidentität und sexueller Orientierung sowie gesellschaftliche Akzeptanz vielfältiger Lebensmodelle einsetzen",
+      "zitat": "Wir werden: […] uns für Toleranz und Chancengleichheit für alle Menschen, unabhängig von Geschlechtsidentität und sexueller Orientierung sowie für die gesellschaftliche Akzeptanz vielfältiger Lebens-, Beziehungs- und Familienmodelle einsetzen.",
+      "ursachen_ids": [
+        1903
+      ],
+      "ursachen_offen": [
+        1902
+      ],
+      "pruefsumme": "185c87cdbec990da"
+    },
+    {
+      "kennung": "M225",
+      "ebene": "land",
+      "beschreibung": "Unterstützungsangebote für von Benachteiligung betroffene Gruppen, auch queere Personen, an Hochschulen ausbauen.",
+      "zitat": "Zudem wollen wir die Unterstützungsangebote für Personengruppen, die von Benachteiligungen betroffen sind, einschließlich nonbinärer und queerer Personen, ausbauen und verstetigen",
+      "ursachen_ids": [
+        1902,
+        1903
+      ],
+      "pruefsumme": "4f763e3d1abb870b"
+    },
+    {
+      "kennung": "M226",
+      "ebene": "bund",
+      "beschreibung": "Verpflichtende Besuche von Gedenkstätte und Synagoge sowie Auseinandersetzung mit Antisemitismus im Schulunterricht",
+      "zitat": "In der Schule muss außerdem auch die Auseinandersetzung mit den verschiedenen Formen von Menschenfeindlichkeit wie dem Antisemitismus intensiviert werden. Dazu gehört der verpflichtende Besuch einer Holocaust-Gedenkstätte und einer Synagoge als Ort aktuellen jüdischen Lebens in Deutschland, die Auseinandersetzung mit der Geschichte Israels sowie die Thematisierung aller Formen des Antisemitismus.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "c673543ead2a6943"
+    },
+    {
+      "kennung": "M227",
+      "ebene": "land",
+      "beschreibung": "Inhalte zur kolonialen Stadtgeschichte verbindlich in den Schulen vermitteln.",
+      "zitat": "Wir setzen uns außerdem dafür ein, dass Inhalte zur kolonialen Stadtgeschichte in den Schulen verbindlich vermittelt",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "69adeccdec86b68e"
+    },
+    {
+      "kennung": "M228",
+      "ebene": "land",
+      "beschreibung": "Sexuelle Identität ins Grundgesetz aufnehmen und das Abstammungsrecht reformieren, um Regenbogenfamilien gleichzustellen.",
+      "zitat": "Wir kämpfen für die Aufnahme der sexuellen Identität in Artikel 3 GG und eine Reform des Abstammungsrechts, die Regenbogenfamilien endlich gleichstellt.",
+      "ursachen_ids": [
+        1903
+      ],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "0b98f3fedd9c6e66"
+    },
+    {
+      "kennung": "M229",
+      "ebene": "land",
+      "beschreibung": "Beratungsangebote bei antisemitischen Vorfällen im Kulturbereich ausbauen und dauerhaft sichern.",
+      "zitat": "Bestehende Beratungs- und Unterstützungsangebote bei antisemitischen Vorfällen im Kulturbereich – wie etwa das OpenArtsHub – wollen wir ausbauen und dauerhaft sichern.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "d79af3eb83ae0458"
+    },
+    {
+      "kennung": "M230",
+      "ebene": "land",
+      "beschreibung": "Antidiskriminierungsstellen in landeseigenen Wohnungsbaugesellschaften aufbauen.",
+      "zitat": "Wir verpflichten städtische Wohnungsbaugesellschaften zum Aufbau wirksamerer Antidiskriminierungsstellen und bauen Angebote zur Verhinderung von Wohnungslosigkeit bei LSBTIQ+ aus.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "2dc1b58462eebf0b"
+    },
+    {
+      "kennung": "M231",
+      "ebene": "bund",
+      "beschreibung": "Verpflichtendes Gesellschaftsjahr (perspektivisch), das Menschen unterschiedlicher Milieus, Religionen und Generationen zusammenbringt",
+      "zitat": "Der Dienst für das Gemeinwohl bringt Menschen unterschiedlicher Milieus, Religionen und Generationen zusammen. Er bietet die Chance, über den eigenen Tellerrand hinauszuschauen, und trägt zur Persönlichkeitsbildung bei. Wir setzen perspektivisch auf ein verpflichtendes Gesellschaftsjahr, das wir mit der aufwachsenden Wehrpflicht zusammendenken.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1902
+      ],
+      "pruefsumme": "cb6feb52d3ac1373"
+    },
+    {
+      "kennung": "M232",
+      "ebene": "land",
+      "beschreibung": "Gesetz: Kopftuchverbot für Mädchen unter 14 Jahren in Schulen",
+      "zitat": "Nach dem Vorbild anderer europäischer Länder wird [Partei] ein Gesetz auf den Weg bringen, dass Mädchen unter dem Alter der Religionsmündigkeit (U14) zum Schutz ihrer freien Entwicklung in der Schule kein Kopftuch tragen dürfen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "12064d1869b10776"
+    },
+    {
+      "kennung": "M233",
+      "ebene": "bund",
+      "beschreibung": "Nationalen Aktionsplan „Queer leben“ umsetzen und Bundesstiftung Magnus Hirschfeld besser ausstatten, gegen Diskriminierung von LSBTI",
+      "zitat": "Wir bekämpfen Diskriminierung gegenüber LSBTI, setzen den Nationalen Aktionsplan „Queer leben“ um und statten die Bundesstiftung Magnus Hirschfeld finanziell besser aus.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "848673c0b9b1cb0e"
+    },
+    {
+      "kennung": "M234",
+      "ebene": "bund",
+      "beschreibung": "Polizeibeauftragten des Bundes abschaffen; Vorwürfe gegen Sicherheitsbehörden sollen durch Staatsanwaltschaften und Gerichte geklärt werden",
+      "zitat": "Wo es Vorwürfe gegen sie gibt, müssen diese durch Staatsanwaltschaften und Gerichte aufgeklärt werden. Sonderermittler, wie den von der Ampel eingerichteten Polizeibeauftragten des Bundes, schaffen wir ab.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "a4cd4709da2eb9cc"
+    },
+    {
+      "kennung": "M235",
+      "ebene": "land",
+      "beschreibung": "Außerschulische Bildungs- und Empowermentangebote gegen Diskriminierung an Schulen absichern und verstetigen.",
+      "zitat": "Außerschulische Bildungs- und Empowermentangebote in den Bereichen Antidiskriminierung, antirassistische und inklusionssensible Bildung, Antisemitismusprävention, queere Bildung […] wollen wir absichern und verstetigen.",
+      "ursachen_ids": [
+        1902,
+        1903
+      ],
+      "pruefsumme": "02ee090597555e9a"
+    },
+    {
+      "kennung": "M236",
+      "ebene": "land",
+      "beschreibung": "Politisches Handeln gegen Diskriminierung queerer Menschen am Landesaktionsplan Vielfalt ausrichten",
+      "zitat": "Queere Lebensentwürfe wollen wir noch besser vor Diskriminierung schützen, indem wir unser politisches Handeln konsequent am Landesaktionsplan Vielfalt ausrichten und gemeinsam mit der Community weiterentwickeln.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "92e69191b450f0d7"
+    },
+    {
+      "kennung": "M237",
+      "ebene": "land",
+      "beschreibung": "Die Unabhängigkeit des Polizeibeauftragten soll gestärkt werden.",
+      "zitat": "Die Unabhängigkeit des Polizeibeauftragen soll gestärkt werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "917f4cc54fb1a478"
+    },
+    {
+      "kennung": "M238",
+      "ebene": "land",
+      "beschreibung": "Beendigung der separierenden Unterbringung und Beschulung von Kindern in Flüchtlingsunterkünften",
+      "zitat": "Die separierende Unterbringung und Beschulung in Flüchtlingsunterkünften wollen wir schnellstmöglich beenden und allen Kindern einen Willkommensplatz an einer Regelschule anbieten.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "b6d330e6ae50eba6"
+    },
+    {
+      "kennung": "M239",
+      "ebene": "land",
+      "beschreibung": "Der Ausnahmetatbestand für Schlachtungen ohne Betäubung im Tierschutzgesetz soll gestrichen werden.",
+      "zitat": "Wir werden uns deshalb dafür einsetzen, dass der entsprechende Ausnahmetatbestand (§ 4a Abs. 2 Nr. 2 Tierschutzgesetz) gestrichen wird.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1902
+      ],
+      "pruefsumme": "03853e8428c9d4ab"
+    },
+    {
+      "kennung": "M240",
+      "ebene": "bund",
+      "beschreibung": "Vielfalt in Bildungsplänen, Schulbüchern und pädagogischen Berufen abbilden",
+      "zitat": "Wir wollen das Bildungssystem fit machen für die Einwanderungsgesellschaft. […] Wir wollen Vielfalt auch in Bildungsplänen, Schulbüchern und in den pädagogischen Berufen widerspiegeln.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1902
+      ],
+      "pruefsumme": "f7d189edcd2d3ff0"
+    },
+    {
+      "kennung": "M241",
+      "ebene": "land",
+      "beschreibung": "Rassistische Polizeipraktiken offenlegen und bekämpfen; Beratungsstellen unterstützen, die polizeiliches Handeln beobachten.",
+      "zitat": "Wir unterstützen zivilgesellschaftliche Initiativen und Beratungsstellen, wie z.B. die „Kampagne für Opfer rassistischer Polizeigewalt“ (KOP), die polizeiliches Handeln beobachten und auf rassistische Praktiken aufmerksam machen. Wir werden aktiv diese diskriminierenden Praktiken offenlegen und bekämpfen.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "143ed937d39f60d5"
+    },
+    {
+      "kennung": "M242",
+      "ebene": "land",
+      "beschreibung": "Demokratiefördergesetz mit Schwerpunkten auf Rassismus und Queerfeindlichkeit und langfristiger Finanzierung der Zivilgesellschaft",
+      "zitat": "Dabei setzen wir Schwerpunkte auf Antisemitismus, Rassismus, Sexismus, Misogynie, Queerfeindlichkeit und geschlechtsspezifische Gewalt. Damit schaffen wir für die demokratiefördernde Arbeit der Zivilgesellschaft und für die Demokratiebildung einen verlässlichen, gesetzlichen Rahmen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1902,
+        1903
+      ],
+      "pruefsumme": "34af5d3b13734436"
+    },
+    {
+      "kennung": "M243",
+      "ebene": "land",
+      "beschreibung": "Landesaktionsprogramm für die Akzeptanz queerer Menschen zusammen mit der Community neu ausgestalten und finanziell ausstatten",
+      "zitat": "Wir werden […] das Aktionsprogramm für die Akzeptanz von LSBTI+ zusammen mit der Community zu einem modernen Programm ausgestalten und mit den notwendigen finanziellen Mitteln unterstützen.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "93f80501f0ad1133"
+    },
+    {
+      "kennung": "M244",
+      "ebene": "land",
+      "beschreibung": "Queerbeauftragte in allen Bezirken einsetzen",
+      "zitat": "Und wir etablieren in allen Bezirken Queerbeauftragte.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "f095141756cca4ca"
+    },
+    {
+      "kennung": "M245",
+      "ebene": "land",
+      "beschreibung": "Verwaltungsprozesse diskriminierungsfrei gestalten, mit verbindlichen Standards, Fortbildungen und Beschwerdewegen",
+      "zitat": "Gleichzeitig stellen wir sicher, dass Verwaltungsprozesse diskriminierungsfrei, barrierearm und traumasensibel gestaltet sind, mit verbindlichen Standards, Fortbildungen und wirksamen Beschwerdewegen.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "95bef9c98abe5065"
+    },
+    {
+      "kennung": "M246",
+      "ebene": "land",
+      "beschreibung": "Neustart der [Land] Initiative geschlechtliche und sexuelle Vielfalt als verbindliche Gesamtstrategie mit Zielen für alle [Land]",
+      "zitat": "Sie soll zu einer umfassenden Gesamtstrategie entwickelt werden. Wir erhöhen die Verbindlichkeit und setzen klare und nachprüfbare Ziele und Aufgaben für alle [Land].",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "e25f0a5473e2f6e7"
+    },
+    {
+      "kennung": "M247",
+      "ebene": "land",
+      "beschreibung": "Ombudsstelle gegen Diskriminierung durch Behörden personell stärken und mit mehr Befugnissen ausstatten.",
+      "zitat": "Die Ombudsstelle werden wir in ihrer Unabhängigkeit sowie personell stärken und ihre Befugnisse ausweiten.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "141b20adcdced812"
+    },
+    {
+      "kennung": "M248",
+      "ebene": "land",
+      "beschreibung": "Verbot grenzüberschreitender Thematisierung von Sexualität in Kitas und Schulen",
+      "zitat": "Durch die „Sexualpädagogik der Vielfalt“ wird die natürliche Schamgrenze der Kinder verletzt und erleichtert dadurch sexuelle Übergriffe. [Partei] fordert, jede Form grenzüberschreitender Thematisierung von Sexualität in Kitas und an Schulen zu verbieten.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "ba3498add7e21cd4"
+    },
+    {
+      "kennung": "M249",
+      "ebene": "bund",
+      "beschreibung": "Einbürgerung ausgeschlossen bei antisemitischen, rassistischen oder fremdenfeindlichen Handlungen oder Motiven",
+      "zitat": "Antisemitische, rassistische, fremdenfeindliche Handlungen oder Motive stellen einen strengen Ausschlussgrund dar.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1902
+      ],
+      "pruefsumme": "b4c2d8d7c8b59a9c"
+    },
+    {
+      "kennung": "M250",
+      "ebene": "land",
+      "beschreibung": "Queere Sportvereine stärken und Queerfeindlichkeit im Sport aktiv bekämpfen.",
+      "zitat": "Wir stärken queere Sportvereine und bekämpfen aktiv Queerfeindlichkeit",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "1c43ed3cdb55c423"
+    },
+    {
+      "kennung": "M251",
+      "ebene": "land",
+      "beschreibung": "Pseudonymisierte Kennzeichnungspflicht für Polizeibeamtinnen und Polizeibeamte bei Einsätzen einführen",
+      "zitat": "Wir werden: […] eine pseudonymisierte Kennzeichnungspflicht für alle Polizeibeamtinnen und -beamte bei Einsätzen einführen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "c63fd7e5ec8dfc5d"
+    },
+    {
+      "kennung": "M252",
+      "ebene": "land",
+      "beschreibung": "Verbindliche regelmäßige Fortbildungen für Lehrkräfte zum Umgang mit Diskriminierung",
+      "zitat": "Gleichzeitig wollen wir verbindliche regelmäßige Fortbildungen von Lehrer*innen im Bereich der Diskriminierung, um sie zu sensibilisieren und um ihnen wirksame Werkzeuge im Umgang mit Diskriminierung und Übergriffen an die Hand zu geben.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "6bf2665258c21362"
+    },
+    {
+      "kennung": "M253",
+      "ebene": "land",
+      "beschreibung": "Will konsequent gegen Rassismus und Ausländerfeindlichkeit vorgehen.",
+      "zitat": "Konsequentes Vorgehen gegen Rassismus und Ausländerfeindlichkeit.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "1be5ff8ccfe65349"
+    },
+    {
+      "kennung": "M254",
+      "ebene": "land",
+      "beschreibung": "Ein Beschwerdeweg für Eltern und Schüler bei Fehlverhalten von Lehrkräften und Schulleitungen soll geschaffen und eine Beschwerdestelle eingerichtet werden.",
+      "zitat": "Um auf Fehlverhalten von Lehrern und Schulleitern angemessen reagieren zu können, werden wir erweiterte Appellationsrechte für Eltern und Schüler schaffen und am Bildungsministerium eine Beschwerdestelle mit erhöhter Sichtbarkeit einrichten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "2874364d6e882e9a"
+    },
+    {
+      "kennung": "M255",
+      "ebene": "land",
+      "beschreibung": "CSDs politisch und strukturell unterstützen und das Demonstrationsrecht queerer Menschen sichern.",
+      "zitat": "Angesichts rechter Mobilmachung garantiert [Partei], dass queere Menschen ihr Demonstrationsrecht sicher ausüben können und CSDs politisch und strukturell unterstützt werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1903
+      ],
+      "pruefsumme": "00f6728ad1e79af2"
+    },
+    {
+      "kennung": "M256",
+      "ebene": "land",
+      "beschreibung": "Fortbildung zur Diskriminierungssensibilisierung für Mitglieder der Härtefallkommission.",
+      "zitat": "Sie muss personell gestärkt werden und die Mitglieder eine Fortbildung zur Diskriminierungssensibilisierung erhalten.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "1ea4796d2f5234bc"
+    },
+    {
+      "kennung": "M257",
+      "ebene": "bund",
+      "beschreibung": "Ausfinanzierter Aktionsplan gegen queerfeindliche Diskriminierung (Aktionsplan „Queer leben“)",
+      "zitat": "Queerfeindliche Gewalt und Diskriminierung muss überall bekämpft werden. Dafür braucht es einen ausfinanzierten Aktionsplan „Queer leben“.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "537e35686a848675"
+    },
+    {
+      "kennung": "M258",
+      "ebene": "land",
+      "beschreibung": "Antidiskriminierungsberatungsstellen erhalten und ausbauen",
+      "zitat": "Antidiskriminierungsberatungsstellen erhalten und weiter ausbauen.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "4d850028ca65d5e2"
+    },
+    {
+      "kennung": "M259",
+      "ebene": "land",
+      "beschreibung": "Landesprogramm gegen Antiziganismus und zur Teilhabe von Rom*nja entwickeln; Ansprechperson stärken.",
+      "zitat": "Wir werden ein Landesprogramm zur Stärkung der Teilhabe von Rom*nja und gegen Antiziganismus entwickeln und die Ansprechperson gegen Antiziganismus stärken.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "187ae3e71876ae11"
+    },
+    {
+      "kennung": "M260",
+      "ebene": "bund",
+      "beschreibung": "Vorgaben der Filmförderung zu Gender- oder Vielfaltsthemen ablehnen",
+      "zitat": "Vorgaben der staatlichen Filmförderung, die darauf abzielen, ideologische Themen wie „Gender“, „Klimaschutz“ oder die „Vielfalt“ thematisch in Filmen zu verankern, um sie gesellschaftspolitisch durchzusetzen, lehnen wir ab.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1903
+      ],
+      "pruefsumme": "34eab3994d23c030"
+    },
+    {
+      "kennung": "M261",
+      "ebene": "land",
+      "beschreibung": "Stärkung und Neuschaffung von Jugendclubs und Dritten Orten, dazu queere und feministische Einrichtungen",
+      "zitat": "Wir setzen uns für die Stärkung und Neuschaffung von Jugendclubs, soziokulturellen Zentren und sogenannten „Dritten Orten“ ein, […] Dazu gehören ausdrücklich auch queere und feministische Einrichtungen, die Schutzräume bieten, Sichtbarkeit schaffen und Selbstorganisation ermöglichen.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "cef9b33606adca71"
+    },
+    {
+      "kennung": "M262",
+      "ebene": "land",
+      "beschreibung": "Bekanntmachung des Landesantidiskriminierungsgesetzes und Unterstützung Betroffener bei Altersdiskriminierung",
+      "zitat": "Wir stehen Menschen, die Altersdiskriminierung erleben, zur Seite, indem wir das [Land] Antidiskriminierungsgesetz bekannter machen und Betroffene unterstützen.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "8e2a4db73b573570"
+    },
+    {
+      "kennung": "M263",
+      "ebene": "land",
+      "beschreibung": "Bildungsangebote gegen Antisemitismus intensivieren",
+      "zitat": "Gegen Antisemitismus gehen wir konsequent vor – mit intensivierten Bildungsangeboten, Gedenkstätten und Aufklärungsarbeit.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "9f62c288c1dcdea7"
+    },
+    {
+      "kennung": "M264",
+      "ebene": "land",
+      "beschreibung": "Unterstützung des Dialogs der Glaubensgemeinschaften und interreligiöser Formen des Gedenkens",
+      "zitat": "Wir unterstützen den Dialog der verschiedenen Glaubensgemeinschaften und interreligiöse Formen des Gedenkens.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "edcc149250920378"
+    },
+    {
+      "kennung": "M265",
+      "ebene": "bund",
+      "beschreibung": "Benennung des Geschlechts nicht strafbar machen",
+      "zitat": "Die Benennung der Wirklichkeit darf nicht strafbewehrt sein.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1903
+      ],
+      "pruefsumme": "fc4de80daefd8d0c"
+    },
+    {
+      "kennung": "M266",
+      "ebene": "land",
+      "beschreibung": "Landesförderung des Schulprogramms gegen Rassismus soll eingestellt werden.",
+      "zitat": "Wir werden deshalb die Landesförderung des Programms „Schule gegen Rassismus – Schule mit Courage“ einstellen.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "3c9f0f0336f93679"
+    },
+    {
+      "kennung": "M267",
+      "ebene": "bund",
+      "beschreibung": "Allgemeines Gleichbehandlungsgesetz ausweiten, um den Schutz vor Diskriminierung zu stärken",
+      "zitat": "Wir wollen den Schutz vor Diskriminierung, Rassismus und Ausgrenzung weiter stärken. Dazu werden wir das Allgemeine Gleichbehandlungsgesetz ausweiten […].",
+      "ursachen_ids": [
+        1901
+      ],
+      "pruefsumme": "6626f033836337ea"
+    },
+    {
+      "kennung": "M268",
+      "ebene": "land",
+      "beschreibung": "Antidiskriminierungsangebote an Hochschulen ausbauen und Beschwerdestrukturen schaffen",
+      "zitat": "Antidiskriminierungsangebote und Schutz vor Machtmissbrauch bauen wir aus und schaffen ausreichende Beschwerdestrukturen.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "b7f751d378769527"
+    },
+    {
+      "kennung": "M269",
+      "ebene": "land",
+      "beschreibung": "Förderprogramm für Selbstorganisationen marginalisierter Gruppen und Ausbau diskriminierungskritischer Beratung",
+      "zitat": "Wir bauen diskriminierungskritische, mehrsprachige, niedrigschwellige und psychosoziale Unterstützung aus, stärken ein Förderprogramm für marginalisierte Selbstorganisationen […]",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "083ae99713ad53c8"
+    },
+    {
+      "kennung": "M270",
+      "ebene": "land",
+      "beschreibung": "Unabhängige Beratungs- und Unterstützungsstrukturen im ganzen Land ausbauen und langfristig finanzieren",
+      "zitat": "Wir bauen unabhängige Beratungs- und Unterstützungsstrukturen im ganzen Land aus und sichern ihre Finanzierung langfristig ab.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "95efbad8360ad193"
+    },
+    {
+      "kennung": "M271",
+      "ebene": "bund",
+      "beschreibung": "Mit gezielten Maßnahmen Offenheit und Integration im öffentlichen Dienst fördern",
+      "zitat": "Staatliche Institutionen sollen die Vielfalt unserer Gesellschaft widerspiegeln. Mit gezielten Maßnahmen schaffen wir eine Kultur der Offenheit und Integration im öffentlichen Dienst.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "893cefaf4c00383f"
+    },
+    {
+      "kennung": "M272",
+      "ebene": "land",
+      "beschreibung": "Bundesweit das Merkmal sexuelle Identität in Artikel 3 Grundgesetz aufnehmen und Regenbogenfamilien gleichstellen",
+      "zitat": "Auf Bundesebene setzen wir uns für die Ergänzung der Diskriminierungsverbote in Artikel 3 des Grundgesetzes um das Merkmal „sexuelle Identität“ sowie die vollständige Gleichstellung von „Regenbogenfamilien“ im Familien- und Abstammungsrecht ein.",
+      "ursachen_ids": [
+        1904
+      ],
+      "ursachen_offen": [
+        1903
+      ],
+      "pruefsumme": "6a5b50b8488a8327"
+    },
+    {
+      "kennung": "M273",
+      "ebene": "land",
+      "beschreibung": "Landesweite Standards für Inklusion in Behörden und öffentlichen Räumen einführen",
+      "zitat": "Wir setzen uns dafür ein, landesweite Standards für Inklusion in Behörden und öffentlichen Räumen einzuführen. Derzeit fehlen verbindliche Vorgaben, die Menschen mit Behinderungen oder anderen Unterstützungsbedarfen den gleichberechtigten Zugang zu staatlichen Dienstleistungen und öffentlichen Einrichtungen sichern.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "1a968f3b82baa36e"
+    },
+    {
+      "kennung": "M274",
+      "ebene": "land",
+      "beschreibung": "An Hochschulen entschlossen gegen Rassismus und Diskriminierung vorgehen und Prävention stärken",
+      "zitat": "Wir gehen entschlossen gegen Antisemitismus, Islamismus, Rassismus, Diskriminierung und jede menschenverachtende Ideologie vor und stärken Prävention.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1902
+      ],
+      "pruefsumme": "f3988aea05455f46"
+    },
+    {
+      "kennung": "M275",
+      "ebene": "land",
+      "beschreibung": "Landesantidiskriminierungsgesetz aufheben und sicherheitsrelevante Gesetze überarbeiten",
+      "zitat": "[Partei] fordert: → Die sofortige Aufhebung des Landesantidiskriminierungsgesetzes und die Überarbeitung anderer sicherheitsrelevanter Gesetze.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "75c0ba2d53469a1f"
+    },
+    {
+      "kennung": "M276",
+      "ebene": "bund",
+      "beschreibung": "Entgeltgleichheitsgesetz, das gleiche Bezahlung auch für Beschäftigte mit Migrationsgeschichte durchsetzt",
+      "zitat": "Das Entgelttransparenzgesetz muss ein Entgeltgleichheitsgesetz werden, um gleiche Bezahlung für gleichwertige Arbeit durchzusetzen. […] Gleiche Bezahlung von Frauen, Beschäftigten mit Migrationsgeschichte und unabhängig von der geschlechtlichen Identität müssen endlich gewährleistet werden – Gender Pay Gap und Migration Pay Gap überwinden!",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1901
+      ],
+      "pruefsumme": "0e4c702558494fcf"
+    },
+    {
+      "kennung": "M277",
+      "ebene": "land",
+      "beschreibung": "Sprachmittlung in Kitas, Schulen und Behörden stärken und Übersetzungsbudgets bereitstellen",
+      "zitat": "Wir bauen die Sprachförderung weiter aus, stärken Sprachmittlung in Kitas, Schulen und Behörden und stellen verlässliche Budgets für Übersetzungen bereit.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "9bf7872a259d5a46"
+    },
+    {
+      "kennung": "M278",
+      "ebene": "land",
+      "beschreibung": "Aufhebung des Selbstbestimmungsgesetzes über den Bundesrat beantragen",
+      "zitat": "Das Selbstbestimmungsgesetz, das seit November 2024 die formale Änderung des Geschlechtseintrags einmal jährlich ermöglicht, widerspricht dieser Realität. Wir werden die Aufhebung des Gesetzes über den Bundesrat beantragen.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "60ee568cd649ecc4"
+    },
+    {
+      "kennung": "M279",
+      "ebene": "land",
+      "beschreibung": "Lehnt verpflichtende Gendersprache in staatlichen Einrichtungen ab.",
+      "zitat": "Wir lehnen verpflichtende Gendersprache in staatlichen Einrichtungen und Institutionen ab.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1903
+      ],
+      "pruefsumme": "e2f3688676ff7244"
+    },
+    {
+      "kennung": "M280",
+      "ebene": "land",
+      "beschreibung": "Schulunterricht soll sich mit antisemitischen und rassistischen Ideologien auseinandersetzen.",
+      "zitat": "Bildung ist die beste Prävention gegen Extremismus. Deshalb sollen sich Schülerinnen und Schüler im Unterricht mit allen Formen des Extremismus sowie mit antisemitischen und rassistischen Ideologien auseinandersetzen.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "4f661eea91a57834"
+    },
+    {
+      "kennung": "M281",
+      "ebene": "land",
+      "beschreibung": "Gendersprache an Schulen untersagen",
+      "zitat": "Die Verwendung der sogenannten Gendersprache werden wir an Schulen untersagen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1903
+      ],
+      "pruefsumme": "c1e1bc945b90ba2b"
+    },
+    {
+      "kennung": "M282",
+      "ebene": "land",
+      "beschreibung": "Den Aktionsplan gegen Antisemitismus weiter umsetzen",
+      "zitat": "Den Aktionsplan gegen Antisemitismus, den wir in der vergangenen Legislaturperiode mit unseren Partnern in Gesellschaft und Politik entwickelt haben, werden wir beherzt weiter umsetzen.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "aa0f492ee8e89d02"
+    },
+    {
+      "kennung": "M283",
+      "ebene": "bund",
+      "beschreibung": "Vereinfachung der Verfahren zur Berufsanerkennung und Erlernen der Sprache am Arbeitsplatz stärken",
+      "zitat": "Wir vereinfachen die Verfahren zur Berufsanerkennung und stärken das Erlernen der deutschen Sprache „on the job“.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1901
+      ],
+      "pruefsumme": "fb08bc6e2b42f530"
+    },
+    {
+      "kennung": "M284",
+      "ebene": "land",
+      "beschreibung": "Unabhängige Beschwerdestelle für Schüler*innen und Eltern bei Diskriminierung an Schulen einrichten.",
+      "zitat": "Kernstück ist eine unabhängige Beschwerdestelle, angedockt an die Landesantidiskriminierungsstelle.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "a9bb1333aacfa32c"
+    },
+    {
+      "kennung": "M285",
+      "ebene": "bund",
+      "beschreibung": "Ablehnung einer Kennzeichnungspflicht für Bundespolizisten (Haltung ohne eigene Handlung, Grenzfall)",
+      "zitat": "Die Einführung einer Kennzeichnungspflicht für Bundespolizisten lehnen wir ab.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "0a164df5a36cf2a9"
+    },
+    {
+      "kennung": "M286",
+      "ebene": "land",
+      "beschreibung": "Flächendeckende queere Gesundheits- und Pflegeangebote",
+      "zitat": "Wir sichern flächendeckend queere Gesundheits- und Pflegeangebote und integrieren queere Perspektiven in Studium und Ausbildung, insbesondere in den Sozial- und Gesundheitsberufen.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "3f0c0a503b92078e"
+    },
+    {
+      "kennung": "M287",
+      "ebene": "land",
+      "beschreibung": "Maßnahmenplan gegen Diskriminierung von queeren Menschen an Orten der Community und im Nachtleben",
+      "zitat": "Damit queere Menschen sich auch sicher an Orten der eigenen Community und im Nachtleben bewegen können, entwickeln wir einen Maßnahmenplan für die Bekämpfung von Diskriminierung in diesen Bereichen.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "8f8305fa22acb366"
+    },
+    {
+      "kennung": "M288",
+      "ebene": "land",
+      "beschreibung": "Antisemitische Hetze und Straftaten konsequent verfolgen und bestrafen.",
+      "zitat": "Antisemitische Hetze und Straftaten sind konsequent zu verfolgen und zu bestrafen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1902
+      ],
+      "pruefsumme": "7715aa9ae3e59af0"
+    },
+    {
+      "kennung": "M289",
+      "ebene": "land",
+      "beschreibung": "Angebote für alle Menschen unabhängig von sexueller Orientierung weiterentwickeln und institutionell verankern",
+      "zitat": "Wir werden: […] die Angebote für alle Menschen, unabhängig vom familiären Status und der sexuellen Orientierung sowie in allen Lebensphasen, insbesondere im Hinblick auf Wohn- und Betreuungsformen, weiterentwickeln und institutionell verankern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1903
+      ],
+      "pruefsumme": "fdff288c0e5968c0"
+    },
+    {
+      "kennung": "M290",
+      "ebene": "bund",
+      "beschreibung": "Bei der Besetzung von Stellen soll allein die fachliche Qualifikation der Bewerber entscheiden",
+      "zitat": "Bei der Besetzung von Stellen muss allein die fachliche Qualifikation des Bewerbers entscheiden.",
+      "ursachen_ids": [
+        1901
+      ],
+      "pruefsumme": "e36030d1cb0c6608"
+    },
+    {
+      "kennung": "M291",
+      "ebene": "land",
+      "beschreibung": "Fachstelle gegen Diskriminierung auf dem Wohnungsmarkt weiter stärken",
+      "zitat": "Zur Unterstützung von Diskriminierungsbetroffenen leistet die Fachstelle gegen Diskriminierung auf dem Wohnungsmarkt […] einen wichtigen Beitrag. Sie werden wir weiter stärken.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "de1e4ebb2784cba5"
+    },
+    {
+      "kennung": "M292",
+      "ebene": "bund",
+      "beschreibung": "Kopftuchverbot in öffentlichen Einrichtungen und vor allem in Schulen",
+      "zitat": "Wir fordern ein Kopftuchverbot in öffentlichen Einrichtungen und insbesondere in Schulen nach dem Vorbild anderer europäischer Länder.",
+      "ursachen_ids": [
+        1904
+      ],
+      "ursachen_offen": [
+        1901
+      ],
+      "pruefsumme": "fd5e7dbfd123893c"
+    },
+    {
+      "kennung": "M293",
+      "ebene": "land",
+      "beschreibung": "Staatliche Förderung von Genderideologie und Frühsexualisierung in Kitas und Schulen einstellen",
+      "zitat": "Jegliche staatliche Förderung von Genderideologie und Frühsexualisierung in Kitas und Schulen ist einzustellen.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "f296373137649f31"
+    },
+    {
+      "kennung": "M294",
+      "ebene": "land",
+      "beschreibung": "Präventive und demokratiepädagogische Projekte gegen rassistische Haltungen an Schulen intensivieren und dauerhaft fördern.",
+      "zitat": "Angesichts zunehmender rassistischer und sexistischer Haltungen unter Schülerinnen und Schülern werden präventive und demokratiepädagogische Projekte an Schulen intensiviert und dauerhaft gefördert.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "a1e5231a52feeb39"
+    },
+    {
+      "kennung": "M295",
+      "ebene": "land",
+      "beschreibung": "Funktion des Polizeibeauftragten als unabhängige Beschwerdestelle für Bürger stärken",
+      "zitat": "Wir werden: […] die Funktion des Polizeibeauftragten stärken: als unabhängige Anlaufstelle für Bürger bei Beschwerden sowie für Polizeibeschäftigte bei internen Konflikten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "9812886dcbd26c49"
+    },
+    {
+      "kennung": "M296",
+      "ebene": "land",
+      "beschreibung": "Ausbau von Beratungsstellen gegen Diskriminierung",
+      "zitat": "Wir bauen Beratungsstellen aus.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "5176170420d73720"
+    },
+    {
+      "kennung": "M297",
+      "ebene": "land",
+      "beschreibung": "Förderung von Nachbarschaftsprojekten, interkulturellen Festen und Sportvereinen, um Vorbehalte zwischen Menschen mit und ohne Migrationshintergrund abzubauen",
+      "zitat": "Rassistischer und ausländerfeindlicher Stimmungsmache stellen wir uns mit aller Kraft entgegen. Deshalb wollen wir kulturelle Begegnungen und integrative Stadtteilarbeit in den [Land] Kommunen fördern. Wir setzen uns für die Finanzierung von Nachbarschaftsprojekten, interkulturelle Festen und Sportvereinen ein, um Menschen mit und ohne Migrationshintergrund zusammenbringen und kulturelle Vorbehalte abzubauen.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "ca4e1a6e947ed01a"
+    },
+    {
+      "kennung": "M298",
+      "ebene": "land",
+      "beschreibung": "Ausbau der Beratungsangebote für Regenbogenfamilien und Gründung eines weiteren Regenbogenfamilienzentrums",
+      "zitat": "Wir stärken die Beratungsangebote für Regenbogenfamilien und wollen die Gründung eines weiteren Regenbogenfamilienzentrums vorantreiben.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "0a58add45fd0b2cc"
+    },
+    {
+      "kennung": "M299",
+      "ebene": "bund",
+      "beschreibung": "Änderung des Selbstbestimmungsgesetzes: bei Minderjährigen unabhängige psychologische Gutachten erforderlich",
+      "zitat": "Das Selbstbestimmungsgesetz der Ampel erlaubt bei Kindern und Jugendlichen, ihren Geschlechtseintrag und Vornamen auch ohne Gutachten oder Beratung und gerichtliche Entscheidung zu ändern. Das lehnen wir entschieden ab. […] Es braucht in jedem Fall unabhängige psychologische Gutachten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1903
+      ],
+      "pruefsumme": "16976c58e5c34592"
+    },
+    {
+      "kennung": "M300",
+      "ebene": "land",
+      "beschreibung": "Religionsgemeinschaften gleichberechtigt ohne Angst vor Repressionen ihr Gemeindeleben gestalten lassen",
+      "zitat": "[Partei] setzt sich dafür ein: dass alle Religionsgemeinschaften gleichberechtigt ohne Angst vor Repressionen ihr Gemeindeleben ausgestalten und in unserer Gesellschaft darüber hinaus aktiv werden können,",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1902
+      ],
+      "pruefsumme": "0782f2a21cfbd8f9"
+    },
+    {
+      "kennung": "M301",
+      "ebene": "land",
+      "beschreibung": "Institutionelle Strukturen für eine konsequente Queer-Politik im Land aufbauen",
+      "zitat": "Wir setzen uns dafür ein, institutionelle Strukturen für eine konsequente Queer-Politik in [Land] auszubauen.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "0eceae6db7cf6770"
+    },
+    {
+      "kennung": "M302",
+      "ebene": "land",
+      "beschreibung": "Grundgesetz um das Merkmal der sexuellen und geschlechtlichen Identität erweitern (Bundesratsinitiative)",
+      "zitat": "Wir werden: uns für eine Bundesratsinitiative einsetzen, damit der 3. Artikel des Grundgesetzes um das Merkmal der sexuellen und geschlechtlichen Identität erweitert wird.",
+      "ursachen_ids": [
+        1903
+      ],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "00dc78b48913c155"
+    },
+    {
+      "kennung": "M303",
+      "ebene": "bund",
+      "beschreibung": "Volksverhetzungsparagrafen überarbeiten und Schutzlücken bei menschenverachtender Hetze schließen",
+      "zitat": "Wir schließen die Schutzlücken bei menschenverachtender Hetze. Rechtsextreme Äußerungen von Amtsträgerinnen und Amtsträgern sowie in Schulen werden wir besonders in den Blick nehmen und den Volksverhetzungsparagrafen entsprechend überarbeiten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1902
+      ],
+      "pruefsumme": "5a5b2a571b73ab81"
+    },
+    {
+      "kennung": "M304",
+      "ebene": "land",
+      "beschreibung": "Konfessionellen Religionsunterricht als verbindliches Fach erhalten; er soll andere Überzeugungen respektieren lehren",
+      "zitat": "Konfessionellen Religionsunterricht sichern: […] Wir setzen uns dafür ein, ihn als verbindliches zweistündiges Fach zu erhalten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1902
+      ],
+      "pruefsumme": "48eb7490366c5994"
+    },
+    {
+      "kennung": "M305",
+      "ebene": "land",
+      "beschreibung": "Queere Jugendzentren halten und ausbauen",
+      "zitat": "Zusätzlich brauchen queere Jugendliche sichere Orte, an denen sie Respekt erfahren. Deshalb halten wir queere Jugendzentren und bauen sie aus.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "5dd568a0ec311d1d"
+    },
+    {
+      "kennung": "M306",
+      "ebene": "land",
+      "beschreibung": "Unterstützung jüdischen Lebens mit Synagogenneubau, Bildungsarbeit, Schutzmaßnahmen und Kampf gegen Antisemitismus",
+      "zitat": "Wir unterstützen diese Entwicklung – mit dem Neubau von Synagogen, mit Bildungsarbeit, mit Schutzmaßnahmen und durch den entschlossenen Kampf gegen Antisemitismus.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "a73770ff73e0311e"
+    },
+    {
+      "kennung": "M307",
+      "ebene": "land",
+      "beschreibung": "Diskriminierungssensible Förderstrukturen in Kunst und Kultur schaffen",
+      "zitat": "Diskriminierungssensible und inklusive Förderstrukturen schaffen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "e9e4057a4b73a7ba"
+    },
+    {
+      "kennung": "M308",
+      "ebene": "bund",
+      "beschreibung": "Quoten für von Diskriminierung betroffene Gruppen bei Einstellung und in weiteren Lebensbereichen",
+      "zitat": "Damit gleiche Teilhabe nicht nur im öffentlichen Dienst, sondern in allen Lebensbereichen möglich wird, soll es Quoten für von Diskriminierung betroffene Personengruppen wie Menschen mit Migrationsgeschichte und von Rassismus Betroffene auch auf dem privaten Arbeitsmarkt, in der Politik, in Kultur und Medien sowie in allen öffentlich geförderten Einrichtungen geben.",
+      "ursachen_ids": [
+        1901
+      ],
+      "pruefsumme": "5c760f5f3c679160"
+    },
+    {
+      "kennung": "M309",
+      "ebene": "land",
+      "beschreibung": "Landesantidiskriminierungsgesetz umfassend überarbeiten, damit es nicht über Bundesrecht hinausgeht.",
+      "zitat": "Wir werden das Landesantidiskriminierungsgesetz einer umfassenden Überarbeitung unterziehen mit dem Ziel, dass die Landesregelungen nicht über Bundesregelungen hinausgehen und einem konsequenten Eintreten für die Sicherheit der Berlinerinnen und [Land] entgegenstehen.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "531cb1a4fb24306f"
+    },
+    {
+      "kennung": "M310",
+      "ebene": "bund",
+      "beschreibung": "Vom Bund geförderte Organisationen sollen sich zur Grundordnung bekennen und gegen Antisemitismus (IHRA) erklären",
+      "zitat": "Zivilgesellschaftliche Organisationen, die vom Bund gefördert werden, sollen künftig ein Bekenntnis zur freiheitlich-demokratischen Grundordnung und zum Existenzrecht Israels abgeben sowie gegen Antisemitismus im Sinne der Definition der Internationalen Allianz zum Holocaustgedenken (IHRA).",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1902
+      ],
+      "pruefsumme": "cab8e6d6b9edad31"
+    },
+    {
+      "kennung": "M311",
+      "ebene": "land",
+      "beschreibung": "Transitionsrichtlinien für die Verwaltung zur Verbesserung der Lage queerer Beschäftigter",
+      "zitat": "Wir etablieren Transitionsrichtlinien für die [Land] Verwaltung, um die Situation für trans*, inter* und nicht-binäre Beschäftigte des Landes [Land] zu verbessern.",
+      "ursachen_ids": [
+        1903
+      ],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "3dad753af3758bd1"
+    },
+    {
+      "kennung": "M312",
+      "ebene": "land",
+      "beschreibung": "Diskriminierungskritische Jugendarbeit und Schulsozialarbeit strukturell stärken.",
+      "zitat": "Darüber hinaus müssen diskriminierungskritische Jugendarbeit und Schulsozialarbeit strukturell gestärkt werden, um Rassismus, Ausgrenzung und digitaler Gewalt frühzeitig entgegenzuwirken.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "581038cbef094fc5"
+    },
+    {
+      "kennung": "M313",
+      "ebene": "land",
+      "beschreibung": "Alle Kinder von Flüchtlingen und Asylbewerbern sollen in Sonderklassen unterrichtet werden.",
+      "zitat": "Wir werden alle Kinder von Flüchtlingen und Asylbewerbern in Sonderklassen unterrichten lassen.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "53ec9d0c2165ddf1"
+    },
+    {
+      "kennung": "M314",
+      "ebene": "bund",
+      "beschreibung": "Kinderrechte nicht ins Grundgesetz aufnehmen",
+      "zitat": "Kinderrechte sollen nicht ins Grundgesetz aufgenommen werden, da Kinder bereits Träger aller Grundrechte sind.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1903
+      ],
+      "pruefsumme": "6f353db1cfa7c90e"
+    },
+    {
+      "kennung": "M315",
+      "ebene": "land",
+      "beschreibung": "Fördert internationale Schul-, Kultur- und Städtepartnerschaften für Völkerverständigung und interkulturellen Austausch.",
+      "zitat": "Förderung internationaler Schul-, Kultur- und Städtepartnerschaften als Beitrag zur Völkerverständigung und zum interkulturellen Austausch.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1902
+      ],
+      "pruefsumme": "e3ff1987dc5f41eb"
+    },
+    {
+      "kennung": "M316",
+      "ebene": "land",
+      "beschreibung": "Rassismuskritische Bildungsarbeit in Verwaltung, Schulen und Polizei ausbauen.",
+      "zitat": "Rassismuskritische Bildungsarbeit wird in Verwaltung, Schulen und Polizei ausgebaut.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "60418ddea26e618a"
+    },
+    {
+      "kennung": "M317",
+      "ebene": "land",
+      "beschreibung": "Pflichtfach Ethik/Lebenskunde personell stärken und interkulturell sowie werteorientiert ausrichten",
+      "zitat": "Die zentrale Auseinandersetzung mit ethischen Fragen, Werten, Weltanschauungen und Religionen erfolgt im Pflichtfach Ethik/Lebenskunde. Dieses Fach ist personell deutlich zu stärken und interkulturell sowie werteorientiert zu profilieren.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "ec328ff450bd3e0f"
+    },
+    {
+      "kennung": "M318",
+      "ebene": "land",
+      "beschreibung": "Dokumentationspflichten im Polizeigesetz (SOG) zurücknehmen",
+      "zitat": "Wir treten unwahren Behauptungen und Unterstellungen wie z.B. pauschalen Rassismusvorwürfen in Richtung der Polizei öffentlich entgegen und werden die durch Rot-Rot beschlossenen Dokumentationspflichten im SOG in Regierungsverantwortung sofort zurücknehmen.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "d9297ed6702ead2c"
+    },
+    {
+      "kennung": "M319",
+      "ebene": "bund",
+      "beschreibung": "Schutz- und Förderklausel im Grundgesetz für Betroffene rassistischer Diskriminierung",
+      "zitat": "In Artikel 3 des Grundgesetzes soll eine Schutz- und Förderklausel für von rassistischer Diskriminierung Betroffene eingefügt werden.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "dc7cb51a34325f4d"
+    },
+    {
+      "kennung": "M320",
+      "ebene": "land",
+      "beschreibung": "Projekte stärken, die antisemitische Vorfälle erfassen, Opfer beraten und präventiv arbeiten; Antisemitismusprävention ausbauen.",
+      "zitat": "Wir setzen uns für mehr Prävention und Aufklärung in allen gesellschaftlichen Bereichen und staatlichen Einrichtungen ein und werden die Projekte stärken, die in diesem Feld Vorfälle monitoren, Opfer beraten und Präventionsarbeit leisten.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "e726fb758f04965d"
+    },
+    {
+      "kennung": "M321",
+      "ebene": "land",
+      "beschreibung": "Untersagung des Genderns in Schule und Verwaltung.",
+      "zitat": "Untersagung des Genderns und verbindliche Einhaltung der Vorgaben des Rates für deutsche Rechtschreibung in Schule und Verwaltung in [Land].",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1903
+      ],
+      "pruefsumme": "dc218d0a509bed16"
+    },
+    {
+      "kennung": "M322",
+      "ebene": "land",
+      "beschreibung": "Landesbehindertengleichstellungsgesetz konsequent umsetzen",
+      "zitat": "Wir setzen das Landesbehindertengleichstellungsgesetz konsequent um, benennen eine Landesbeauftragte für Inklusion und arbeiten mit Kommunen an barrierefreien Städten und Gemeinden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "c3fe3a838ff0a6b6"
+    },
+    {
+      "kennung": "M323",
+      "ebene": "bund",
+      "beschreibung": "Pubertätsblocker und nicht medizinisch indizierte Eingriffe zur Änderung des Geschlechts verbieten",
+      "zitat": "Deshalb werden wir Pubertätsblocker und nicht medizinisch indizierte Eingriffe zur Änderung des Geschlechts verbieten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1903
+      ],
+      "pruefsumme": "21173ba429bbbd74"
+    },
+    {
+      "kennung": "M324",
+      "ebene": "land",
+      "beschreibung": "Ausbau der Jugendfreizeitangebote, die als Schutzräume unter anderem für queere Jugendliche dienen",
+      "zitat": "Wir setzen uns für den Ausbau der Kinder- und Jugendfreizeitangebote ein. Diese Orte sind zugleich Schutzräume, etwa für queere Jugendliche",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1903
+      ],
+      "pruefsumme": "210bab66d80d1777"
+    },
+    {
+      "kennung": "M325",
+      "ebene": "bund",
+      "beschreibung": "Indoktrination zu Gender-Themen in der Erzieherausbildung unterbinden",
+      "zitat": "Auch bei der Ausbildung zum Erzieher muss jede Indoktrination in Bezug auf Gender-Mainstreaming und andere Ideologien unterbunden werden.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "b4b7637812359f5c"
+    },
+    {
+      "kennung": "M326",
+      "ebene": "land",
+      "beschreibung": "Allgemeines Sicherheits- und Ordnungsgesetz diskriminierungssensibel überarbeiten.",
+      "zitat": "Wir werden mit allen rechtlichen und politischen Mitteln dagegen vorgehen und das ASOG insgesamt einer an der Menschenwürde orientierten und diskriminierungssensiblen Revision unterziehen.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "f5dc1a6def495a0c"
+    },
+    {
+      "kennung": "M327",
+      "ebene": "land",
+      "beschreibung": "Unabhängige Polizeibeschwerdestelle mit eigenen Ermittlungsbefugnissen schaffen",
+      "zitat": "Ihre Rechte werden gestärkt durch eine unabhängige Polizeibeschwerdestelle mit eigenen Ermittlungsbefugnissen und ausreichender Ausstattung, damit Beschwerden nicht zu den Akten gelegt werden.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "abfd963be6092b9f"
+    },
+    {
+      "kennung": "M328",
+      "ebene": "land",
+      "beschreibung": "Novelle des Landesantidiskriminierungsgesetzes: erweiterter Merkmalskatalog, längere Verjährungsfrist, höhere Entschädigung, Rechtshilfefonds, gestärkte Ombudsstelle",
+      "zitat": "Wir erweitern den Merkmalskatalog um Diskriminierungsmerkmale wie Diskriminierung aufgrund des Gewichts, der Staatsangehörigkeit, des Aufenthaltsstatus oder des Familienstands und wenden das Gesetz verbindlich auch auf landeseigene Unternehmen an.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "423ba8f3a860475b"
+    },
+    {
+      "kennung": "M329",
+      "ebene": "land",
+      "beschreibung": "Liberalisierung der gesetzlichen Bestattungsvorgaben, damit sich Bestattungen nach religiösen oder nichtreligiösen Vorstellungen richten können",
+      "zitat": "Außerdem liberalisieren wir die gesetzlichen Vorgaben bei Bestattungen, damit religiöse wie nicht-religiöse Menschen ihre Angehörigen so bestatten lassen […]",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "fb3349669e8c409e"
+    },
+    {
+      "kennung": "M330",
+      "ebene": "land",
+      "beschreibung": "Umsetzung einer zentralen Beschwerdestelle nach dem AGG für öffentliche Kulturbetriebe",
+      "zitat": "Um Machtmissbrauch zu bekämpfen und vorzubeugen, werden wir das bereits vorliegende Konzept für eine zentrale Beschwerdestelle nach dem Allgemeinen Gleichbehandlungsgesetz (AGG) umsetzen",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "6bc3d6fadcd7f21f"
+    },
+    {
+      "kennung": "M331",
+      "ebene": "bund",
+      "beschreibung": "Familienrecht für Regenbogenfamilien öffnen: Elternschaftsvereinbarungen, Adoption für unverheiratete Paare, Verantwortungsgemeinschaft",
+      "zitat": "Ein modernes Familienrecht soll die den heute vielfältigen Familienkonstellationen gerecht werden, etwa indem wir Elternschaftsvereinbarungen gerade in Regenbogenfamilien vor der Empfängnis ermöglichen, das Abstammungsrecht modernisieren, auch unverheirateten Paaren Adoptionen erlauben und die Verantwortungsgemeinschaft gesetzlich verankern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1903
+      ],
+      "pruefsumme": "17ca437608e3f2df"
+    },
+    {
+      "kennung": "M332",
+      "ebene": "bund",
+      "beschreibung": "Allgemeines Gleichbehandlungsgesetz reformieren: längere Fristen, mehr Diskriminierungsgründe, Verbandsklage, Schutz vor Diskriminierung durch staatliche Stellen",
+      "zitat": "Wir werden das Allgemeine Gleichbehandlungsgesetz reformieren. […] Dazu gehört auch der Schutz vor Diskriminierung durch staatliche Stellen.",
+      "ursachen_ids": [
+        1901,
+        1904
+      ],
+      "pruefsumme": "73aeff52e4fa61ee"
+    },
+    {
+      "kennung": "M333",
+      "ebene": "bund",
+      "beschreibung": "Alle Schülerinnen und Schüler sollen Gedenkstätten besuchen; Aufbau des Deutsch-Israelischen Jugendwerks vorantreiben",
+      "zitat": "Alle Schülerinnen und Schüler sollen Gedenkstätten besuchen. Das ist wichtig für ihr historisches Bewusstsein. Gleichzeitig treiben wir den Aufbau des Deutsch-Israelischen Jugendwerks zügig voran.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "9de3218a3755b560"
+    },
+    {
+      "kennung": "M334",
+      "ebene": "land",
+      "beschreibung": "Fortbildungen zu Antidiskriminierung und Rassismus für alle Beschäftigten der Justiz",
+      "zitat": "Fortbildungen zu Antidiskriminierung, strukturellem Rassismus, Geschlechtergerechtigkeit, Diversity und Gewaltsensibilität für alle Beschäftigten verankern.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "5a8c04d89f05a20e"
+    },
+    {
+      "kennung": "M335",
+      "ebene": "land",
+      "beschreibung": "Ombudspersonen in den Jugendämtern der Kreise und kreisfreien Städte einsetzen",
+      "zitat": "Wir werden: […] uns für den Einsatz von Ombudspersonen in den Jugendämtern der Kreise und kreisfreien Städte einsetzen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "7b83705c364015f6"
+    },
+    {
+      "kennung": "M336",
+      "ebene": "land",
+      "beschreibung": "Stigmata im Gesundheitswesen durch Aufklärung vor allem des medizinischen Fachpersonals abbauen",
+      "zitat": "Wir fordern: […] Stigmata effektiv durch Aufklärung, insbesondere des medizinischen Fachpersonals, abbauen.",
+      "ursachen_ids": [
+        1902
+      ],
+      "pruefsumme": "f06f6f7b30f414dd"
+    },
+    {
+      "kennung": "M337",
+      "ebene": "land",
+      "beschreibung": "Beweislastregel (Vermutungsregelung) im Landesantidiskriminierungsgesetz abschaffen",
+      "zitat": "Die Vermutungsregelung in § 7 Landesantidiskriminierungsgesetz, deren Beweislastumkehr die Polizeiarbeit bürokratisch erschwert, wollen wir abschaffen.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "a6b799bb92d48f32"
+    },
+    {
+      "kennung": "M338",
+      "ebene": "land",
+      "beschreibung": "Präventions- und Schutzkonzepte gegen menschenfeindliche Ideologien weiterentwickeln",
+      "zitat": "Präventions- und Schutzkonzepte gegen extremistische Einflussnahme, demokratiefeindliche Netzwerke und menschenfeindliche Ideologien weiterentwickeln.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1902
+      ],
+      "pruefsumme": "eb72c2dd201f1628"
+    },
+    {
+      "kennung": "M339",
+      "ebene": "land",
+      "beschreibung": "Verbindliche Antidiskriminierungs- und Diversitätsstrategien für landeseigene Unternehmen, auch im Umgang mit Kundschaft",
+      "zitat": "Wir wollen wirksame und verbindliche Antidiskriminierungs- und Diversitätsstrategien für sie entwickeln und implementieren.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "bd118e6abd3c5cf2"
+    },
+    {
+      "kennung": "M340",
+      "ebene": "land",
+      "beschreibung": "Öffnung der Landesförderung künstlicher Befruchtung für queere Paare und ledige Frauen",
+      "zitat": "Die finanzielle Förderung der künstlichen Befruchtung durch das Land soll auch für queere Paare und ledige Frauen geöffnet werden und sich nicht weiter an heteronormativen Standards orientieren.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "836dcd41228dc184"
+    },
+    {
+      "kennung": "M341",
+      "ebene": "land",
+      "beschreibung": "Polizeigesetz mit Vorkehrungen gegen Racial Profiling",
+      "zitat": "Für eine bürger*innennahe Polizei wollen wir: […] ein Polizeigesetz, das für intensive Grundrechtseingriffe hohe Hürden aufstellt, Vorkehrungen gegen Racial Profiling trifft […].",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "185a35c82592d9ab"
+    },
+    {
+      "kennung": "M342",
+      "ebene": "land",
+      "beschreibung": "Konsequente, nachhaltige Fortbildung zur Antidiskriminierung für die Polizei.",
+      "zitat": "Zudem unterstützen wir den Aufbau von festen Ansprechpersonen für die Antidiskriminierung in der Polizei und fordern eine konsequente sowie nachhaltige Fortbildung.",
+      "ursachen_ids": [
+        1904
+      ],
+      "pruefsumme": "65d1c125158d88fb"
+    },
+    {
+      "kennung": "M343",
+      "ebene": "bund",
+      "beschreibung": "Anerkennung ausländischer Berufsabschlüsse vereinfachen, zentrale Anerkennungsstelle schaffen",
+      "zitat": "Wir wollen die Anerkennung von ausländischen Berufsabschlüssen deutlich vereinfachen und, wo es möglich ist, praxisorientierte Nachweisoptionen ermöglichen. Dafür schaffen wir eine zentrale Anerkennungsstelle und mehr personelle Ressourcen.",
+      "ursachen_ids": [
+        1901
+      ],
+      "pruefsumme": "a8804eb6cb73340d"
+    },
+    {
+      "kennung": "M344",
+      "ebene": "land",
+      "beschreibung": "An Schulen soll per Runderlass keine Regenbogenfahne mehr gezeigt werden.",
+      "zitat": "Wir werden deshalb durch entsprechenden Runderlass sicherstellen, dass von schuloffizieller Seite keine Regenbogenfahne mehr gezeigt wird.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "fd29a498da507515"
+    },
+    {
+      "kennung": "M345",
+      "ebene": "land",
+      "beschreibung": "Landesförderung für Vereine beenden, die der Polizei pauschal Rassismus unterstellen",
+      "zitat": "Wir beenden die finanzielle Förderung von Vereinen, die der Polizei immer wieder pauschal und unbelegt Rassismus und gewalttätige Übergriffe unterstellen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1902
+      ],
+      "pruefsumme": "184d9c48a37a8566"
+    },
+    {
+      "kennung": "M346",
+      "ebene": "land",
+      "beschreibung": "Queere Themen in allen Stationen des Bildungswegs mitbehandeln; Lehrkräfte dafür im Studium bzw. in der Ausbildung befähigen",
+      "zitat": "Wir wollen: […] den Bildungsunterricht inklusiver gestalten. In allen Stationen des Bildungs- und Erziehungsweges sollen queere Themen mitbehandelt werden.",
+      "ursachen_ids": [
+        1903
+      ],
+      "pruefsumme": "7737fbe4dec4c75d"
+    },
+    {
+      "kennung": "M347",
+      "ebene": "land",
+      "beschreibung": "Schulpflicht konsequent durchsetzen, damit Zugang zu Bildung unabhängig von Herkunft gesichert ist",
+      "zitat": "Schulpflicht konsequent durchsetzen: Zentraler Bestandteil unseres Bildungssystems ist die Schulpflicht. Nur durch sie kann sichergestellt werden, dass in unserem Land jedes Kind Zugang zu einer qualitativ hochwertigen und staatlich anerkannten Bildung erhält – unabhängig von seinem sozialen Hintergrund oder seiner Herkunft.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        1904
+      ],
+      "pruefsumme": "4d0fa88a5db827b6"
+    }
+  ]
+}

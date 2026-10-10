@@ -1,0 +1,3425 @@
+{
+  "pruefsumme": "41043449965e1f5c8960bb3b93331fb55635de1e52560da69289464477ac9d16",
+  "thema": {
+    "id": 22,
+    "name": "Radikalisierung und Extremismus",
+    "ziel": "Menschen können politische Meinungsverschiedenheiten respektvoll austragen und ihr Leben ohne Hinwendung zu menschenfeindlichen, demokratiefeindlichen oder gewaltlegitimierenden Ideologien gestalten."
+  },
+  "ursachen": [
+    {
+      "id": 2201,
+      "beschreibung": "Kontakt zu extremistischen Gleichgesinnten hängt mit radikalen Einstellungen zusammen (Metaanalyse 2021, 127 Studien: r = 0,17); Bindungen im Milieu können den Verbleib stützen",
+      "ebene": "land"
+    },
+    {
+      "id": 2202,
+      "beschreibung": "Passiver Kontakt mit extremistischen Medieninhalten hängt mit radikalen Einstellungen zusammen (Metaanalyse 2021: r = 0,26); die Evidenzqualität ist laut Review niedrig",
+      "ebene": "bund"
+    },
+    {
+      "id": 2203,
+      "beschreibung": "Das Gefühl, unfair behandelt zu werden, und geringes Institutionenvertrauen gehen mit radikalen Einstellungen einher (Metaanalyse 2021: r = 0,11 bis 0,16 bzw. −0,17)",
+      "ebene": "bund"
+    },
+    {
+      "id": 2204,
+      "beschreibung": "Überlegenheitsdenken der eigenen Gruppe, autoritäre Deutungen und Rechtfertigung von Gewalt hängen mit radikalen Einstellungen zusammen (Metaanalyse 2021: r = 0,25 bis 0,34)",
+      "ebene": "land"
+    },
+    {
+      "id": 2205,
+      "beschreibung": "Wahrgenommene Ungleichbehandlung, Bevormundung und Kontrollverlust lassen politische Gespräche emotional eskalieren (Fokusgruppen mit 42 Personen, 2021/22)",
+      "ebene": "land"
+    },
+    {
+      "id": 2206,
+      "beschreibung": "Wo gegenseitiger Respekt und Zuhören als schwach erlebt werden, sind Toleranz und Kooperationsbereitschaft geringer (Befragung 2023 in 12 Ländern, 12.041 Personen)",
+      "ebene": "land"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        2201,
+        2202,
+        2203,
+        2204,
+        2205,
+        2206
+      ],
+      "text": "Maßnahmen gegen Extremismus aller Richtungen (rechts, links, islamistisch, auslandsbezogen) zählen gleich. Zu 2201 Ausstieg, Prävention und Zugang zu Milieus, zu 2202 extremistische Online-Inhalte und Medienkompetenz, zu 2203 Vertrauen und Teilhabe, zu 2204 Ideologie und Gewaltrechtfertigung, zu 2205 und 2206 Streit- und Gesprächskultur."
+    },
+    {
+      "nr": 2,
+      "text": "Strafverfolgung, Verbote und Gefahrenabwehr bei Straftaten gehören zu Sicherheit, individuelle Online-Anfeindungen zu Hass im Internet, Bundesförderung von Demokratieprojekten ist eine eigene Haltung. Pauschale Bekenntnisse zu Demokratie oder Zusammenhalt ohne Instrument sind keine Maßnahme."
+    }
+  ],
+  "instrumente": [],
+  "massnahmen": [
+    {
+      "kennung": "M001",
+      "ebene": "bund",
+      "beschreibung": "Einhaltung des Neutralitäts- und Sachlichkeitsgebots für Staatsorgane",
+      "zitat": "Wir fordern die Einhaltung des verfassungsgemäßen Neutralitäts- und Sachlichkeitsgebot. Eine Diffamierung Andersmeinender schadet der Debatte ebenso wie eine Moralisierung, die von notwendigen inhaltlichen Auseinandersetzungen ablenkt.",
+      "ursachen_ids": [
+        2205,
+        2206
+      ],
+      "pruefsumme": "02a9cc9d087b72fe"
+    },
+    {
+      "kennung": "M002",
+      "ebene": "bund",
+      "beschreibung": "Förderung der Medien- und Datenschutzkompetenz von Kindern und Jugendlichen",
+      "zitat": "Die Medien- und Datenschutzkompetenz von Kindern und Jugendlichen muss möglichst früh gefördert werden.",
+      "ursachen_ids": [
+        2202
+      ],
+      "pruefsumme": "dcf730d4d248f8f0"
+    },
+    {
+      "kennung": "M003",
+      "ebene": "land",
+      "beschreibung": "Moderierte Debattenräume an Hochschulen und Dialogförderung in Zeiten politischer Unsicherheit",
+      "zitat": "Gerade in Zeiten großer politischer Unsicherheiten braucht es mehr niedrigschwellige, moderierte Debattenräume, die unterschiedliche Perspektiven sichtbar machen, Dialog fördern und Polarisierung entgegenwirken.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "c35d9462701b1379"
+    },
+    {
+      "kennung": "M004",
+      "ebene": "bund",
+      "beschreibung": "Programme zur Medien- und Nachrichtenkompetenz für alle Altersgruppen ausbauen",
+      "zitat": "Medienkompetenz ist eine Grundkompetenz im digitalen Zeitalter. Wir setzen uns dafür ein, Programme zur Förderung der Medien- und Nachrichtenkompetenz für alle Altersgruppen auszubauen, um Manipulation und Desinformation entgegenzuwirken.",
+      "ursachen_ids": [
+        2202
+      ],
+      "pruefsumme": "2c4e3bb7c5d52d82"
+    },
+    {
+      "kennung": "M005",
+      "ebene": "land",
+      "beschreibung": "Einen Verfassungstreue-Check im öffentlichen Dienst einführen.",
+      "zitat": "Wir werden einen Verfassungstreue-Check im Öffentlichen Dienst einführen, um sicherzustellen, dass Staatsbedienstete fest auf dem Boden unserer freiheitlich-demokratischen Grundordnung stehen.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "bcf60dabe9c2b45a"
+    },
+    {
+      "kennung": "M006",
+      "ebene": "land",
+      "beschreibung": "Landesprogramm Demokratie und Toleranz gesetzlich verankern (Grenzfall: allgemeines Demokratieprogramm)",
+      "zitat": "Wir stärken ehrenamtliches, zivilgesellschaftliches Engagement und politische Teilhabe, indem wir: […] das Landesprogramm „Demokratie und Toleranz gemeinsam stärken“ gesetzlich verankern und das Demokratiefördergesetz gemeinsam mit der Zivilgesellschaft weiterentwickeln.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2206
+      ],
+      "pruefsumme": "af3c9951fc708479"
+    },
+    {
+      "kennung": "M007",
+      "ebene": "bund",
+      "beschreibung": "Finanzierung nichtstaatlicher Akteure beenden, die auf die Meinungsbildung einwirken",
+      "zitat": "Wir fordern die Beendigung jeglicher Finanzierung von nichtstaatlichen Akteuren, die auf die freie Meinungsbildung einwirken oder diese zu unterdrücken versuchen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2202
+      ],
+      "pruefsumme": "be7dca304657dc37"
+    },
+    {
+      "kennung": "M008",
+      "ebene": "land",
+      "beschreibung": "Aussteigerprogramme und Vernetzung staatlicher Stellen mit Initiativen für eine ursachenorientierte Kriminalprävention gegen Extremismus",
+      "zitat": "Wir fordern eine ursachenorientierte Kriminalprävention durch verstärkte Aufklärung, Aussteigerprogramme und die Vernetzung staatlicher Stellen mit bürgerschaftlichen Initiativen.",
+      "ursachen_ids": [
+        2201
+      ],
+      "pruefsumme": "71fa62e12e8b56da"
+    },
+    {
+      "kennung": "M009",
+      "ebene": "land",
+      "beschreibung": "Vor-Ort-Dialoge der Senatsmitglieder und frühzeitige Informationsveranstaltungen bei Bau- und Infrastrukturmaßnahmen",
+      "zitat": "Die Beteiligungsplattform „Mein [Land]“ entwickeln wir weiter, setzen auf Vor-Ort-Dialoge der Senatsmitglieder und frühzeitige Informationsveranstaltungen bei anstehenden Bau- und Infrastrukturmaßnahmen.",
+      "ursachen_ids": [
+        2205
+      ],
+      "pruefsumme": "9d975628c39cf9cc"
+    },
+    {
+      "kennung": "M010",
+      "ebene": "land",
+      "beschreibung": "Journalismus-Stiftung mit Startkapital zur Förderung unabhängigen Lokaljournalismus",
+      "zitat": "Mit einer Journalismus-Stiftung [Land] und 10 Millionen Euro Startkapital fördern wir unabhängigen Lokaljournalismus.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2206
+      ],
+      "pruefsumme": "686fcd35f8bf1c15"
+    },
+    {
+      "kennung": "M011",
+      "ebene": "land",
+      "beschreibung": "Staatliche NGO-Förderung nur bei schriftlicher Verpflichtung auf die Grundordnung und Distanzierung vom Antisemitismus.",
+      "zitat": "Mit uns gibt es staatliche Fördermittel für Nichtregierungsorganisationen (NGOs) ausschließlich dann, wenn diese sich schriftlich zur Einhaltung der freiheitlich-demokratischen Grundordnung („Demokratieklausel“) verpflichten und sich von jeglicher Form des Antisemitismus ebenfalls schriftlich distanzieren.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "27cc8f7a0f3ba58c"
+    },
+    {
+      "kennung": "M012",
+      "ebene": "bund",
+      "beschreibung": "Unabhängige Staatsanwaltschaft ohne Weisungsgebundenheit",
+      "zitat": "Wir fordern eine unabhängige Staatsanwaltschaft ohne Weisungsgebundenheit.",
+      "ursachen_ids": [
+        2203
+      ],
+      "pruefsumme": "c301436e9659a9a6"
+    },
+    {
+      "kennung": "M013",
+      "ebene": "bund",
+      "beschreibung": "Lehrpläne modernisieren mit mehr Raum für Demokratie, Politik und Medienkompetenz",
+      "zitat": "Zugleich wollen wir die Lehrpläne modernisieren: Wir fordern mehr Raum für wirtschaftliche und finanzielle Bildung, MINT-Themen, Demokratie und Politik sowie Medienkompetenz.",
+      "ursachen_ids": [
+        2202
+      ],
+      "ursachen_offen": [
+        2204
+      ],
+      "pruefsumme": "9e62bbe8160eb5c2"
+    },
+    {
+      "kennung": "M014",
+      "ebene": "bund",
+      "beschreibung": "Friedenspädagogische Bildung statt Bundeswehrwerbung in Schulen",
+      "zitat": "Wir wollen keine Militarisierung von Bildungseinrichtungen und fordern statt Werbung der Bundeswehr in Schulen mehr friedenspädagogische Bildung.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "f41cbaafd8366502"
+    },
+    {
+      "kennung": "M015",
+      "ebene": "land",
+      "beschreibung": "Indoktrinationsverbot im Schulunterricht; kontroverse Themen auch in Schulbüchern kontrovers behandeln",
+      "zitat": "Deshalb muss auch im Schulunterricht das Indoktrinationsverbot gelten: Kontroverse Themen müssen kontrovers behandelt werden. Dies muss künftig auch für Schulbücher gelten.",
+      "ursachen_ids": [
+        2206
+      ],
+      "pruefsumme": "ec87ccfa05f013ef"
+    },
+    {
+      "kennung": "M016",
+      "ebene": "land",
+      "beschreibung": "Kitas zu „Kinderstuben der Demokratie“ machen, Beteiligung in der Kita fördern; Prävention von Radikalisierung",
+      "zitat": "Wir wollen Kitas zu „Kinderstuben der Demokratie“ machen. […] Dies dient auch der Prävention von politischem Extremismus und politischer Radikalisierung in späteren Jahren.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "33f6c5e3ee486840"
+    },
+    {
+      "kennung": "M017",
+      "ebene": "land",
+      "beschreibung": "Qualifizierte Volksbefragung einführen",
+      "zitat": "Um Bürgerinnen und Bürger stärker an Entscheidungen zu beteiligen, wollen wir die qualifizierte Volksbefragung einführen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "184c0fc3621b033b"
+    },
+    {
+      "kennung": "M018",
+      "ebene": "bund",
+      "beschreibung": "Imame: Verfassungsbekenntnis und Ausbildung in Deutschland verlangen",
+      "zitat": "In Deutschland predigende Imame sollen sich zu unserer Verfassung bekennen, möglichst in deutscher Sprache predigen und in Deutschland ausgebildet sein.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2204
+      ],
+      "pruefsumme": "ed52e90456c91166"
+    },
+    {
+      "kennung": "M019",
+      "ebene": "bund",
+      "beschreibung": "Infrastruktur und ÖPNV im ländlichen Raum ausbauen, damit Bürger gleichberechtigt teilhaben",
+      "zitat": "Damit diese am gesellschaftlichen und wirtschaftlichen Leben gleichberechtigt teilhaben können, muss die Infrastruktur und vor allem der ÖPNV bedarfsgerecht und zukunftsfähig ausgebaut werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2203
+      ],
+      "pruefsumme": "1756ad526e6afae7"
+    },
+    {
+      "kennung": "M020",
+      "ebene": "land",
+      "beschreibung": "Bestehende Präventionsprogramme überprüfen und an aktuelle Herausforderungen anpassen",
+      "zitat": "Bestehende Präventionsprogramme werden wir überprüfen und an die Herausforderungen der Gegenwart anpassen.",
+      "ursachen_ids": [
+        2201
+      ],
+      "pruefsumme": "8990d7bd8112018a"
+    },
+    {
+      "kennung": "M021",
+      "ebene": "land",
+      "beschreibung": "Projekte, die zu Ausgrenzung, Diffamierung oder Boykott unliebsamer Personen aufrufen, nicht mehr öffentlich fördern",
+      "zitat": "Projekte, die zur Ausgrenzung, Diffamierung oder zum Boykott unliebsamer Künstler, Wissenschaftler oder Journalisten aufrufen („Cancel Culture“), dürfen nicht länger mit öffentlichen Mitteln gefördert werden.",
+      "ursachen_ids": [
+        2205
+      ],
+      "pruefsumme": "dc7da5cb7d2c5d55"
+    },
+    {
+      "kennung": "M022",
+      "ebene": "bund",
+      "beschreibung": "Konsequente Löschung rechtswidriger Inhalte und schnellere Sperrung der Accounts",
+      "zitat": "Ihre Grenzen findet sie, wenn Desinformation sich unkontrolliert ausbreitet und wenn Straftatbestände wie Beleidigung oder Volksverhetzung erfüllt sind. Diese Inhalte […] müssen konsequent gelöscht und entsprechende Accounts schneller gesperrt werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2202
+      ],
+      "pruefsumme": "17c3b32d11eaa4ef"
+    },
+    {
+      "kennung": "M023",
+      "ebene": "bund",
+      "beschreibung": "Schülern erlauben, ihre politischen Ansichten ohne Repressionen oder Diskriminierung zu äußern",
+      "zitat": "Schüler haben das Recht, ihre politischen Ansichten ohne Angst vor Repressionen und Diskriminierung durch Lehrer oder Mitschüler äußern zu können.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "9d074b8e0cf70294"
+    },
+    {
+      "kennung": "M024",
+      "ebene": "bund",
+      "beschreibung": "Stärkere Nutzung der Raumplanung, um in ländlichen Räumen gleichwertige Lebensverhältnisse herzustellen",
+      "zitat": "Dazu nutzen wir die Raumplanung stärker.",
+      "ursachen_ids": [
+        2203
+      ],
+      "pruefsumme": "f99a2c79ad3095c4"
+    },
+    {
+      "kennung": "M025",
+      "ebene": "bund",
+      "beschreibung": "Verbände, die Islamismus verharmlosen oder Antisemitismus nicht verurteilen, sind keine Partner der Religionspolitik",
+      "zitat": "Verbände, die Islamismus beschönigen, verharmlosen oder Antisemitismus nicht verurteilen, können hierzulande keine Partner in der Religionspolitik sein.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2201
+      ],
+      "pruefsumme": "75a150753a65eebe"
+    },
+    {
+      "kennung": "M026",
+      "ebene": "land",
+      "beschreibung": "Gendersprache in amtlicher Sprache und öffentlichen Bildungseinrichtungen per Verordnung untersagen",
+      "zitat": "Wer Sprache ideologisch umbauen will, betreibt keine Gleichstellung, sondern kulturelle Bevormundung. Wir werden per Verordnung durchsetzen, dass im gesamten amtlichen Sprachgebrauch des Landes [Land] sowie in allen öffentlichen Bildungseinrichtungen die Regeln des Rates für deutsche Rechtschreibung verbindlich gelten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "f495613b4daae273"
+    },
+    {
+      "kennung": "M027",
+      "ebene": "land",
+      "beschreibung": "Landeszentrale für politische Bildung personell und finanziell absichern und aufstocken.",
+      "zitat": "Die Landeszentrale für politische Bildung wird personell und finanziell abgesichert und aufgestockt.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "a8beb86147f877a8"
+    },
+    {
+      "kennung": "M028",
+      "ebene": "land",
+      "beschreibung": "Paritätisch besetzte öffentliche Jurys bei der Vergabe von Kulturfördermitteln",
+      "zitat": "Wir setzen öffentliche, paritätisch besetzte Jurys ein (mit Vertretern aus Kultur, Politik und [Land]), die über die Fördermittel mitentscheiden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "8577373fa7ff4818"
+    },
+    {
+      "kennung": "M029",
+      "ebene": "land",
+      "beschreibung": "Wiedereinführung des Leistungskurses Geschichte an Gymnasien, um demokratisches Bewusstsein zu stärken.",
+      "zitat": "Wir fordern die Wiedereinführung des Leistungskurses Geschichte an Gymnasien in [Land]. Geschichte stärkt das demokratische Bewusstsein, vermittelt Orientierung […] in einer komplexen Welt und fördert die Fähigkeit zu kritischer Urteilsbildung.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2204
+      ],
+      "pruefsumme": "ca41b6ae15025ac4"
+    },
+    {
+      "kennung": "M030",
+      "ebene": "land",
+      "beschreibung": "Ressortübergreifende Strategie gegen antimuslimischen Rassismus entwickeln und umsetzen.",
+      "zitat": "Wir werden eine ressortübergreifende Strategie zur Bekämpfung von antimuslimischem Rassismus entwickeln und umsetzen, die auch für den digitalen Raum gilt.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2204
+      ],
+      "pruefsumme": "0cceb46823c69b8c"
+    },
+    {
+      "kennung": "M031",
+      "ebene": "land",
+      "beschreibung": "Durch Respekt gegenüber der Polizei und Neugewichtung ihrer Aufgaben soll Vertrauen der Bürger in die Polizei gestärkt werden.",
+      "zitat": "Wir werden deshalb durch Respekt gegenüber der Polizei, aber auch durch die Neugewichtung ihrer Aufgaben dafür sorgen, dass sie von den Bürgern wieder als Freund und Helfer wahrgenommen wird.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2206
+      ],
+      "pruefsumme": "97f8822968e4b3e9"
+    },
+    {
+      "kennung": "M032",
+      "ebene": "land",
+      "beschreibung": "Kommunalverwaltungen mit Aufsichtsleitlinien und Unterstützung bei rechtsstaatlichen Verfahren stärken",
+      "zitat": "Wir lassen Kommunalverwaltungen in schwierigen Lagen nicht allein. Mit klaren Aufsichtsleitlinien und gezielter Unterstützung stellen wir sicher, dass rechtsstaatliche Abläufe gewahrt bleiben.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "3daf40b690de4b67"
+    },
+    {
+      "kennung": "M033",
+      "ebene": "land",
+      "beschreibung": "Ausbau der Fortbildungsangebote für Lehrkräfte und Schulen, Vorurteile und Respekt unter Schüler*innen zu befördern",
+      "zitat": "Wir halten diese Projekte auch im Sinne der Prävention für zentral, um Akzeptanz, Diskriminierungssensibilität und Respekt unter Schüler*innen zu befördern, und werden sie weiter ausbauen und fest als Angebote an den [Land] Schulen etablieren.",
+      "ursachen_ids": [
+        2206
+      ],
+      "pruefsumme": "fb21586d53536e61"
+    },
+    {
+      "kennung": "M034",
+      "ebene": "land",
+      "beschreibung": "Verpflichtende Aus- und Weiterbildung zum Umgang mit extrem rechten Ideologien für Beschäftigte in Bildung, Sozialem, öffentlichem Dienst und Sicherheit.",
+      "zitat": "Wir wollen, dass insbesondere Mitarbeitende in der Bildung, im sozialen Bereich, im öffentlichen Dienst sowie Sicherheitspersonal, Personal- und Betriebsräte verpflichtend zu den Themen Diskriminierung, Rassismus sowie zum Umgang mit extrem rechten Ideologien aus- und weitergebildet werden.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "ac027e5b9fbdd844"
+    },
+    {
+      "kennung": "M035",
+      "ebene": "land",
+      "beschreibung": "Förderprogramme für linksextremistische Organisationen und linke Vorfeldorganisationen beenden",
+      "zitat": "[Partei] fordert: → Die Beendigung sämtlicher Förderprogramme für linksextremistische Organisationen sowie für als NGOs getarnte linke Vorfeldorganisationen, um die staatliche Neutralität wiederherzustellen.",
+      "ursachen_ids": [
+        2201
+      ],
+      "ursachen_offen": [
+        2204
+      ],
+      "pruefsumme": "3044036732419ad0"
+    },
+    {
+      "kennung": "M036",
+      "ebene": "land",
+      "beschreibung": "Ablehnung einer Gesinnungsprüfung durch den Verfassungsschutz für Angestellte im öffentlichen Dienst",
+      "zitat": "Eine Gesinnungsprüfung des Verfassungsschutzes für Angestellte im Öffentlichen Dienst, wie […] lehnen wir ab.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "5df19a4165b060a2"
+    },
+    {
+      "kennung": "M037",
+      "ebene": "land",
+      "beschreibung": "Kulturförderung nicht für Projekte gegen die freiheitlich-demokratische Grundordnung oder mit Antisemitismus-Vorschub",
+      "zitat": "Die Kulturförderung muss deshalb dazu verpflichtet werden, keine Projekte zu finanzieren, die gegen die freiheitlich-demokratische Grundordnung gerichtet sind oder Antisemitismus Vorschub leisten.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "610a8593ae5a442f"
+    },
+    {
+      "kennung": "M038",
+      "ebene": "bund",
+      "beschreibung": "Politischem Islam an Schulen keinen Raum geben",
+      "zitat": "Dem politischen Islam darf an deutschen Schulen kein Vorschub geleistet werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2204
+      ],
+      "pruefsumme": "129d8bfb31471831"
+    },
+    {
+      "kennung": "M039",
+      "ebene": "land",
+      "beschreibung": "Unterstützung moderierter Bürger*innenräte mit gelosten Bürger*innen für Handlungsempfehlungen an Debatte und Parlament",
+      "zitat": "Wir unterstützen Bürger*innenräte, in denen geloste Bürger*innen zu konkreten Themen im Kiez oder auf Landesebene auf Basis von Fachimpulsen und in moderierten Verfahren konkrete Handlungsempfehlungen und Impulse für die öffentliche Debatte und die parlamentarische Entscheidung erarbeiten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "e1c6a2e5c90bb0ea"
+    },
+    {
+      "kennung": "M040",
+      "ebene": "bund",
+      "beschreibung": "Teilhabe an Voraussetzungen wie Spracherwerb und Anerkennung der Werte knüpfen",
+      "zitat": "Die Teilhabe an unserer freiheitlich demokratischen Gesellschaft ist an Voraussetzungen geknüpft. Dazu gehören das Erlernen der deutschen Sprache und das Anerkennen unserer Werte bzw. unseres Rechtsstaates.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2204
+      ],
+      "pruefsumme": "f2508028f322a330"
+    },
+    {
+      "kennung": "M041",
+      "ebene": "bund",
+      "beschreibung": "Digital Services Act mit Schwerpunkt auf Transparenz, Desinformation sowie Jugend- und Medienschutz umsetzen",
+      "zitat": "Wir stellen sicher, dass bei der Umsetzung des Digital Services Act der Schwerpunkt auf mehr Transparenz, Kampf gegen Desinformation sowie Jugend- und Medienschutz gelegt wird.",
+      "ursachen_ids": [
+        2202
+      ],
+      "pruefsumme": "53d96072542279fc"
+    },
+    {
+      "kennung": "M042",
+      "ebene": "bund",
+      "beschreibung": "Interreligiösen Dialog fördern",
+      "zitat": "Wir fördern den interreligiösen «Dialog» und schützen die Religions- und Weltanschauungsfreiheit.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "ad49d7e1a0544248"
+    },
+    {
+      "kennung": "M043",
+      "ebene": "land",
+      "beschreibung": "Schulen bei der Auseinandersetzung mit extrem rechten Vorkommnissen unterstützen: Präventions- und Empowermentangebote, Fortbildungen, Leitlinien.",
+      "zitat": "Wir wollen Schulen dabei unterstützen, sich diesen zu stellen: durch auskömmlich finanzierte Präventions- und Empowermentangebote für Schüler*innen, durch Fortbildungen für Pädagog*innen, durch Leitlinien zum Umgang mit extremen Rechten an Schulen",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "86015fd0b67be563"
+    },
+    {
+      "kennung": "M044",
+      "ebene": "land",
+      "beschreibung": "Förderung offener Kanäle und nichtkommerzieller Lokalradios, die Zugang zu Medien und Vielfalt vor Ort sichern",
+      "zitat": "Bürgermedien erhalten: Offene Kanäle und nichtkommerzielle Lokalradios schaffen Zugang zu Medien für alle und gewährleisten Vielfalt auf regionaler und lokaler Ebene. Wir sichern gemeinsam mit dem Bund und den anderen Ländern ihre verlässliche Förderung durch die Landesmedienanstalt und das Land.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2206
+      ],
+      "pruefsumme": "8aa382da66d8bdd4"
+    },
+    {
+      "kennung": "M045",
+      "ebene": "land",
+      "beschreibung": "Will Gewaltprävention, respektvolle Beziehungen und Gleichberechtigung in allen Schulformen vermitteln.",
+      "zitat": "Gewaltprävention, respektvolle Beziehungen und Gleichberechtigung müssen kontinuierlich und in jeder Schulform vermittelt werden.",
+      "ursachen_ids": [
+        2206
+      ],
+      "pruefsumme": "6a625440f069b1cc"
+    },
+    {
+      "kennung": "M046",
+      "ebene": "land",
+      "beschreibung": "Angebote der Prävention und Demokratiebildung stärken und die offene Jugendarbeit als Alternativangebot finanziell ausstatten",
+      "zitat": "Dem massiven Problem von zunehmender rechter Jugendgewalt gerade auch in den Ost-[Land] Bezirken begegnen wir, indem wir Angebote der Prävention und der Demokratiebildung stärken und die offene Jugendarbeit und Jugendfreizeiteinrichtungen als Alternativangebote angemessen und langfristig finanziell ausstatten.",
+      "ursachen_ids": [
+        2201
+      ],
+      "ursachen_offen": [
+        2204
+      ],
+      "pruefsumme": "70d2db778a6b8896"
+    },
+    {
+      "kennung": "M047",
+      "ebene": "land",
+      "beschreibung": "Quorum für Volksbegehren auf 5 % der Wahlberechtigten senken",
+      "zitat": "Wir wollen die direkte Demokratie in [Land] durch verringerte Quoren stärken. Sobald 5 % der Wahlberechtigten in der betroffenen Region (Land, Landkreis oder Kommune) für ein Volksbegehren unterschrieben haben, kommt es zum Volksentscheid.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "f67179578a7c3681"
+    },
+    {
+      "kennung": "M048",
+      "ebene": "land",
+      "beschreibung": "Öffentlich-rechtlicher Rundfunk soll Völkerverständigung fördern und keine Feindbilder aufbauen; Verankerung in der Präambel des Staatsvertrags",
+      "zitat": "Der ÖRR soll die Völkerverständigung fördern und nicht Feindbilder aufbauen. Das gehört in die Präambel des nächsten rbb-Staatsvertrags.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2204
+      ],
+      "pruefsumme": "cabcfaa9b6ea769a"
+    },
+    {
+      "kennung": "M049",
+      "ebene": "land",
+      "beschreibung": "Opferberatung und Präventionsarbeit auf alle Formen gewaltbereiten Extremismus gleichermaßen ausrichten",
+      "zitat": "Opferberatung und Präventionsarbeit müssen alle Formen gewaltbereiten Extremismus gleichermaßen einbeziehen – unabhängig davon, ob sie rechts, links oder religiös motiviert sind.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2201
+      ],
+      "pruefsumme": "937708fe70ed5ef9"
+    },
+    {
+      "kennung": "M050",
+      "ebene": "land",
+      "beschreibung": "Einrichtung und Förderung eines Rings politischer Jugendorganisationen",
+      "zitat": "Nach dem Vorbild des Bundes und der meisten Bundesländer unterstützen wir die Einrichtung und Förderung eines Rings politischer Jugendorganisationen in [Land].",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "8bd2276d4c50b603"
+    },
+    {
+      "kennung": "M051",
+      "ebene": "land",
+      "beschreibung": "Nachbarschaftstreffs als Orte der Gemeinschaft in jeder Kommune und jedem Stadtteil schaffen",
+      "zitat": "Für ein [Land], in dem alle gut leben können, fordern wir: […] in jeder Kommune und jedem Stadtteil ein Ort der Gemeinschaft: Diese Nachbarschaftstreffs bieten Raum für Veranstaltungen, Geselligkeit und gemeinsames Arbeiten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2206
+      ],
+      "pruefsumme": "b2b2f7a3b52dbe00"
+    },
+    {
+      "kennung": "M052",
+      "ebene": "bund",
+      "beschreibung": "Aktives und passives Wahlrecht auf allen Ebenen für langfristig in Deutschland lebende Menschen",
+      "zitat": "Wir wollen das aktive und passive Wahlrecht auf allen Ebenen für alle langfristig in Deutschland lebenden Menschen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2203
+      ],
+      "pruefsumme": "1cd9bcc2c2dc2c70"
+    },
+    {
+      "kennung": "M053",
+      "ebene": "land",
+      "beschreibung": "Stärkung von Dialog- und Empowermentformaten in der Antisemitismusprävention statt befristeter Projektförderung.",
+      "zitat": "Die Bekämpfung und Prävention von Antisemitismus ist eine gesamtgesellschaftliche und langfristige Aufgabe, daher braucht es eine verlässliche und auskömmliche Förderung anerkannter und fachlich qualifizierter Träger sowie die Stärkung von Dialog- und Empowermentformaten statt kurzfristiger befristeter Projektförderungen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "84bf9ad699b0f517"
+    },
+    {
+      "kennung": "M054",
+      "ebene": "land",
+      "beschreibung": "Öffentliche Förderung von Meldestellen für Vorfälle beenden",
+      "zitat": "Außerdem finanziert [Land] Meldestellen wie das [Land] Register oder CLAIM […] Deswegen werden wir die öffentliche Förderung des Meldestellen-Unwesens beenden, so dass sich auch diese Organisationen zukünftig ausschließlich privat finanzieren müssen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "9f3d97e02a559ef0"
+    },
+    {
+      "kennung": "M055",
+      "ebene": "land",
+      "beschreibung": "Beteiligung auf Augenhöhe mit regionalen Foren, Bürgerräten und Werkstattgesprächen unterstützen und finanziell fördern",
+      "zitat": "Dafür wollen wir: […] Beteiligung auf Augenhöhe – Regionale Foren, Bürgerräte auf allen Ebenen, Werkstattgespräche in betroffenen Gemeinden, Bürgerbudgets, Bürgerhaushalte, und partizipative Projekte erhalten Unterstützung und finanzielle Förderung.",
+      "ursachen_ids": [
+        2205
+      ],
+      "pruefsumme": "0e7cf55abde389fd"
+    },
+    {
+      "kennung": "M056",
+      "ebene": "land",
+      "beschreibung": "Gute Zusammenarbeit mit Moscheegemeinden, um islamistische Unterwanderung zu verhindern",
+      "zitat": "Notwendig ist eine gute Zusammenarbeit mit den Moschee-Gemeinden, um islamistische Unterwanderungen zu verhindern.",
+      "ursachen_ids": [
+        2201
+      ],
+      "pruefsumme": "da6ba629a6107c11"
+    },
+    {
+      "kennung": "M057",
+      "ebene": "land",
+      "beschreibung": "Eine neue Praxis der Toleranz gegenüber Demonstrationen und nonkonformen Meinungsäußerungen soll etabliert werden.",
+      "zitat": "Wir werden deshalb als Landesregierung eine neue Praxis der Toleranz gegenüber Demonstrationen und nonkonformen Meinungsäußerungen etablieren.",
+      "ursachen_ids": [
+        2206
+      ],
+      "pruefsumme": "3accbf16bbe136a1"
+    },
+    {
+      "kennung": "M058",
+      "ebene": "land",
+      "beschreibung": "Will Friedens- und Demokratiebildung in Schulen, Hochschulen, Jugendbildung und Weiterbildung stärken.",
+      "zitat": "Stärkung von Friedens- und Demokratiebildung in Schulen, Hochschulen, der außerschulischen Jugendbildung und in Weiterbildungsangeboten.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "cc6a4d6a77f4f254"
+    },
+    {
+      "kennung": "M059",
+      "ebene": "land",
+      "beschreibung": "Aus- und Fortbildung der Polizei auf demokratische Werte und Antidiskriminierung ausrichten; regelmäßige Fortbildungen gegen Extremismus vorbeugen",
+      "zitat": "Die Aus- und Fortbildung der Polizei soll auf demokratische Werte, Menschenrechte, Antidiskriminierung, interkulturelle Kompetenz und Deeskalation ausgerichtet sein. […] Regelmäßige Fortbildungen in diesen Bereichen fördern professionelles Handeln und tragen dazu bei, Extremismus, Vorurteile und Racial Profiling wirksam entgegenzuwirken.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "84475287a66e741c"
+    },
+    {
+      "kennung": "M060",
+      "ebene": "land",
+      "beschreibung": "Polizei- und Bürgerbeauftragten ausbauen und für einen offenen Dialog mit Parlament und Zivilgesellschaft sorgen.",
+      "zitat": "Deshalb wollen wir den Polizei- und Bürgerbeauftragten als Institution ausbauen, seine Befugnisse und sein Personal stärken und für einen aktiven und offenen Dialog zwischen Beauftragtem, Parlament und Zivilgesellschaft sorgen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "d0f2801596ddafbe"
+    },
+    {
+      "kennung": "M061",
+      "ebene": "bund",
+      "beschreibung": "Schülerinnen und Schüler sollen mit Erasmus+ ein Halbjahr im europäischen Ausland verbringen können",
+      "zitat": "Auch Schülerinnen und Schüler sollen künftig von „Erasmus+“ profitieren und unabhängig vom Einkommen der Eltern sechs Monate der Schulzeit im europäischen Ausland absolvieren können.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "c643ee7c22f889a6"
+    },
+    {
+      "kennung": "M062",
+      "ebene": "land",
+      "beschreibung": "Beteiligung von Schülerinnen und Schülern an ihren Schulen stärken",
+      "zitat": "Deshalb wollen wir die Beteiligung von Schülern an ihren Schulen stärken.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "60454fec73e2a4a2"
+    },
+    {
+      "kennung": "M063",
+      "ebene": "land",
+      "beschreibung": "Will politische Bildung und eine offene Debattenkultur stärken, die Meinungsvielfalt und Respekt fördert.",
+      "zitat": "Stärkung politischer Bildung und einer offenen Debattenkultur, die Meinungsvielfalt, Respekt und demokratische Kompetenzen fördert.",
+      "ursachen_ids": [
+        2205,
+        2206
+      ],
+      "pruefsumme": "653f4915946f6500"
+    },
+    {
+      "kennung": "M064",
+      "ebene": "bund",
+      "beschreibung": "Verpflichtende Faktencheck-Tools auf großen Plattformen und Durchsetzung der Bot-Kennzeichnung",
+      "zitat": "Wir wollen außerdem eine strikte Durchsetzung der Bot-Kennzeichnungspflicht aus der KI-Verordnung, sowie verpflichtende Tools zum Faktencheck auf großen Plattformen.",
+      "ursachen_ids": [
+        2202
+      ],
+      "pruefsumme": "b31af96757e4c8b1"
+    },
+    {
+      "kennung": "M065",
+      "ebene": "bund",
+      "beschreibung": "Verfassungsschutz durch eine unabhängige Beobachtungsstelle zu Autoritarismus und gruppenbezogener Menschenfeindlichkeit ersetzen",
+      "zitat": "Wir wollen den Verfassungsschutz durch eine unabhängige Beobachtungsstelle zu „Autoritarismus und gruppenbezogener Menschenfeindlichkeit“ ersetzen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2204
+      ],
+      "pruefsumme": "2f3f42e29a8433cd"
+    },
+    {
+      "kennung": "M066",
+      "ebene": "land",
+      "beschreibung": "Soziale Präventionsarbeit in Kommunen finanziell stärken, etwa Streetwork und Jugendclubs",
+      "zitat": "Für ein sicheres [Land] wollen wir: […] soziale Präventionsarbeit in den Kommunen gezielt finanziell stärken, etwa in den Bereichen Streetwork, Jugendclubs, Suchtberatung und psychologische Betreuung[…].",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2201
+      ],
+      "pruefsumme": "3e0d8279edbf25cf"
+    },
+    {
+      "kennung": "M067",
+      "ebene": "bund",
+      "beschreibung": "Große Medienplattformen auf EU-Ebene in die Pflicht nehmen, Maßnahmen gegen Verbreitung von Desinformation zu ergreifen",
+      "zitat": "Die großen Medienplattformen werden wir auch auf Ebene der EU in die Pflicht nehmen, wirksame Maßnahmen gegen die Verbreitung von Desinformation vorzunehmen.",
+      "ursachen_ids": [
+        2202
+      ],
+      "pruefsumme": "bfc55665d4f947d9"
+    },
+    {
+      "kennung": "M068",
+      "ebene": "land",
+      "beschreibung": "Ressortübergreifende Programme zur gewaltfreien Konfliktlösung und Prävention in den Kiezen",
+      "zitat": "Wir fördern ressortübergreifende Programme zur gewaltfreien Konfliktlösung und Prävention in den Kiezen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2204,
+        2205
+      ],
+      "pruefsumme": "9a8c80eaea091f6d"
+    },
+    {
+      "kennung": "M069",
+      "ebene": "bund",
+      "beschreibung": "Medienkompetenz der Bürger*innen im Umgang mit digitalen Inhalten in allen gesellschaftlichen Gruppen stärken",
+      "zitat": "Wir brauchen auch bundesweit mehr Anstrengungen, um die Medienkompetenzen und den kritischen Umgang der Bürger*innen mit digitalen Inhalten in allen gesellschaftlichen Gruppen zu stärken.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2202
+      ],
+      "pruefsumme": "52aa59d51e6c99b7"
+    },
+    {
+      "kennung": "M070",
+      "ebene": "land",
+      "beschreibung": "Antisemitismusprävention im Schulunterricht ausbauen und verankern",
+      "zitat": "Den Ausbau und die wirksame Verankerung der Antisemitismusprävention im Schulunterricht.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "ed51d2c6aa2c2fd0"
+    },
+    {
+      "kennung": "M071",
+      "ebene": "land",
+      "beschreibung": "Förderstrukturen wie „Demokratie leben!“ kritisch überprüfen, wenn sie politische Einseitigkeit verstärken",
+      "zitat": "Förderstrukturen wie „Demokratie leben! – Partnerschaften für Demokratie“ müssen kritisch überprüft werden, wenn sie nicht der offenen Zivilgesellschaft dienen, sondern politische Einseitigkeit verstärken.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "c917899c3ac705fa"
+    },
+    {
+      "kennung": "M072",
+      "ebene": "land",
+      "beschreibung": "Rechtsextreme Jugendkultur mit gezielten Präventionsprogrammen begegnen",
+      "zitat": "Rechtsextreme Jugendkultur behandeln wir als eigenständiges Phänomen und begegnen ihr mit gezielten Präventionsprogrammen.",
+      "ursachen_ids": [
+        2201
+      ],
+      "pruefsumme": "f2ead67796971e54"
+    },
+    {
+      "kennung": "M073",
+      "ebene": "land",
+      "beschreibung": "Beteiligungsformate wie Bürger:innenräte stärker fördern",
+      "zitat": "Beteiligungsformate zur Stärkung der demokratischen Willensbildung wie Kinder- und Jugendparlamente oder Bürger:innenräte stärker fördern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "80de217785716792"
+    },
+    {
+      "kennung": "M074",
+      "ebene": "land",
+      "beschreibung": "[Land] Hochschulen per Gesetz zu einem Kodex Wissenschaftsfreiheit verpflichten",
+      "zitat": "Als Konzept gegen Cancel Culture schlagen wir vor, die [Land] Hochschulen über das Hochschulgesetz dazu zu verpflichten, dem Beispiel der Universität [Land] zu folgen, die sich einen „Kodex Wissenschaftsfreiheit“ gegeben hat.",
+      "ursachen_ids": [
+        2205
+      ],
+      "pruefsumme": "0e055e3d524326ca"
+    },
+    {
+      "kennung": "M075",
+      "ebene": "land",
+      "beschreibung": "Ein Landesprogramm soll die Jugend- und Straßensozialarbeit stärken, um niedrigschwellig auf neue Problemlagen zu reagieren.",
+      "zitat": "Durch ein Landesprogramm zur Stärkung der Jugend- und Straßensozialarbeit soll niedrigschwellig auf neue Problemlagen und Herausforderungen reagiert werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2201
+      ],
+      "pruefsumme": "20af50e170a6d3f2"
+    },
+    {
+      "kennung": "M076",
+      "ebene": "land",
+      "beschreibung": "Klassenrat als verpflichtendes basisdemokratisches Gesprächsformat in Schulen",
+      "zitat": "Klassenleiterstunden verpflichtend machen und basisdemokratisch gemeinsam mit allen Schüler:innen in Form eines Klassenrates gestalten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "1e139280d0dde1c9"
+    },
+    {
+      "kennung": "M077",
+      "ebene": "bund",
+      "beschreibung": "Demokratiefördergesetz, das mobile Beratung gegen Rechtsextremismus und Opferberatungen langfristig finanziell absichert",
+      "zitat": "Die Gegenkräfte in der Zivilgesellschaft stärken! […] Projekte der mobilen Beratung gegen Rechtsextremismus, Opferberatungen und zivilgesellschaftliche Demokratiebündnisse, Migrant*innen-Selbstorganisationen sowie Antifa-Initiativen müssen mit einem echten, wirksamen Demokratiefördergesetz stärker unterstützt und langfristig finanziell abgesichert werden.",
+      "ursachen_ids": [
+        2201
+      ],
+      "pruefsumme": "dcc8e8c52e12e3a7"
+    },
+    {
+      "kennung": "M078",
+      "ebene": "bund",
+      "beschreibung": "Karenzzeit von mindestens 5 Jahren für Wechsel ausscheidender Politiker in betroffene Branchen",
+      "zitat": "Der Wechsel von ausscheidenden Politikern in Wirtschaftsbranchen, mit denen sie vorher zu tun hatten, darf allenfalls mit einer Karenzzeit von mindestens 5 Jahren zulässig sein.",
+      "ursachen_ids": [
+        2203
+      ],
+      "pruefsumme": "c66dc71af5d39c46"
+    },
+    {
+      "kennung": "M079",
+      "ebene": "land",
+      "beschreibung": "Gesetzliche Antwortpflicht politisch verantwortlicher Dezernenten gegenüber Bürgeranliegen",
+      "zitat": "Wir wollen eine Antwortpflicht von politisch verantwortlichen Dezernenten gegenüber den Bürgern rechtlich im Bezirksverwaltungsgesetz festlegen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205,
+        2206
+      ],
+      "pruefsumme": "a300a6c53a3c26d3"
+    },
+    {
+      "kennung": "M080",
+      "ebene": "land",
+      "beschreibung": "Ideologische Kampagnen in der politischen Bildung und im Zuwendungsbereich stoppen",
+      "zitat": "Ideologische Kampagnen unter dem Deckmantel politischer Bildung und der Wildwuchs im Zuwendungsbereich müssen gestoppt werden.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "ccd60e79cc6726c0"
+    },
+    {
+      "kennung": "M081",
+      "ebene": "land",
+      "beschreibung": "Landesförderung für Vorfeldorganisationen, asylpolitische Lobbygruppen und extremistische Strukturen beenden",
+      "zitat": "Die Finanzierung von Vorfeldorganisationen politischer Parteien, asylpolitischen Lobbygruppen oder die Unterstützung extremistischer Strukturen durch Landesmittel wird unverzüglich beendet.",
+      "ursachen_ids": [
+        2201
+      ],
+      "pruefsumme": "0864f6e973bd8c30"
+    },
+    {
+      "kennung": "M082",
+      "ebene": "bund",
+      "beschreibung": "Gerichtsverhandlungen in Strafprozessen aufzeichnen und automatisiert verschriftlichen",
+      "zitat": "Die Gerichtsverhandlung in Strafprozessen soll künftig aufgezeichnet und die Aufzeichnung sodann automatisiert verschriftlicht werden. Das schafft Transparenz und Gerechtigkeit.",
+      "ursachen_ids": [
+        2203
+      ],
+      "pruefsumme": "88b100db5ffc80fe"
+    },
+    {
+      "kennung": "M083",
+      "ebene": "land",
+      "beschreibung": "Digitale-Dienste-Gesetz ändern: Löschen von Inhalten unterhalb der Strafbarkeitsschwelle durch Plattformen verbieten",
+      "zitat": "Wir werden: […] uns für eine Änderung des Digitale-Dienste-Gesetzes einsetzen, dass Betreibern von sozialen Netzwerken verboten wird, Inhalte unterhalb der Strafbarkeitsschwelle zu löschen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "36d6b92359584c03"
+    },
+    {
+      "kennung": "M084",
+      "ebene": "land",
+      "beschreibung": "Landeszentrale für politische Bildung per eigenem Landesgesetz unabhängig absichern",
+      "zitat": "Die Landeszentrale für politische Bildung wollen wir mit einem eigenen Landesgesetz und direkt an den Landtag angebunden unabhängig absichern.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "8f17e79f9851170d"
+    },
+    {
+      "kennung": "M085",
+      "ebene": "bund",
+      "beschreibung": "Bürgerräte in Verfahren einbeziehen und gesetzlich absichern, inklusive demokratischer Verfahren zu einzelnen Beratungsergebnissen",
+      "zitat": "Mit Bürgerräten besteht die Möglichkeit, den Rat der Menschen als „Expert*innen des Alltags“ in einem repräsentativen Verfahren einzuholen. Auch das gilt es zu stärken und gesetzlich abzusichern, inklusive demokratischer Verfahren zu einzelnen Beratungsergebnissen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2203,
+        2205,
+        2206
+      ],
+      "pruefsumme": "0a155ba36040dc55"
+    },
+    {
+      "kennung": "M086",
+      "ebene": "bund",
+      "beschreibung": "Aufgabe „Delegitimierung des Staates“ beim Verfassungsschutz abschaffen",
+      "zitat": "Der unter anderem in Reaktion auf die großen Proteste gegen die Corona-Maßnahmen neu geschaffene Beobachtungsbereich „Delegitimierung des Staates“ ist ein Konstruktionsfehler. Wir wollen diese Aufgabe abschaffen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "c20bb084e62a842d"
+    },
+    {
+      "kennung": "M087",
+      "ebene": "land",
+      "beschreibung": "Politische Bildung als Bildungsziel und demokratische Organisation der Schulen in der Landesverfassung verankern",
+      "zitat": "Politische Bildung als Bildungsziel und die demokratische Organisation von Schulen wollen wir wie in den meisten anderen Bundesländern auch in [Land] in die Verfassung aufnehmen.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "13d92e6b11479cbb"
+    },
+    {
+      "kennung": "M088",
+      "ebene": "land",
+      "beschreibung": "Landesprogramm zur Radikalisierungsprävention und Deradikalisierung stärken.",
+      "zitat": "Um dem wirksam und frühzeitig vorzubeugen, brauchen wir eine Stärkung des Landesprogramms zur Radikalisierungsprävention und Deradikalisierung.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2201
+      ],
+      "pruefsumme": "58136207bf291af8"
+    },
+    {
+      "kennung": "M089",
+      "ebene": "land",
+      "beschreibung": "Einbürgerung: persönliche Vorsprache und Vier-Augen-Prinzip zur Prüfung der Verfassungstreue",
+      "zitat": "Die verbindliche persönliche Vorsprache und Anwendung des Vier-Augen-Prinzips zur Überprüfung von Sprachkenntnissen, erfolgter Integration und Verfassungstreue.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2204
+      ],
+      "pruefsumme": "1d75fbb1de1b2d39"
+    },
+    {
+      "kennung": "M090",
+      "ebene": "land",
+      "beschreibung": "Sozialkundeunterricht wieder ab der achten Klasse beginnen lassen",
+      "zitat": "Wir werden den Fokus wieder klarer auf Mathematik, Naturwissenschaften und praxisorientierten Unterricht legen. Der Sozialkundeunterricht wird wieder mit der achten Klasse beginnen.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "46465d5003dec55e"
+    },
+    {
+      "kennung": "M091",
+      "ebene": "land",
+      "beschreibung": "Bildungsprogramme gegen Antisemitismus in Schulen verbindlich verankern, mit Begegnungsformaten",
+      "zitat": "Die Prävention gegen Antisemitismus muss bereits in Schulen und Bildungseinrichtungen verbindlich verankert werden. Wir fordern verbindliche Bildungsprogramme gegen Antisemitismus, die historische Aufklärung mit einem klaren Gegenwartsbezug verbinden. Dazu gehören insbesondere die Einbindung jüdischer Perspektiven, die Zusammenarbeit mit jüdischen Organisationen sowie Begegnungsformate, die Vorurteile abbauen und Empathie fördern.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "74e9e2dbbdd6e87d"
+    },
+    {
+      "kennung": "M092",
+      "ebene": "land",
+      "beschreibung": "Die Landeszentrale für politische Bildung soll in ihrer jetzigen Form abgeschafft und durch ein anderes Landesinstitut ersetzt werden.",
+      "zitat": "Aus diesem Grund werden wir die Landeszentrale für politische Bildung in der aktuellen Form abschaffen und als Alternative ein Landesinstitut für staatspolitische Bildung und kulturelle Identität aufbauen.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "8f09cadb9aec0270"
+    },
+    {
+      "kennung": "M093",
+      "ebene": "land",
+      "beschreibung": "Gewalt- und Extremismusprävention an Schulen weiter stärken",
+      "zitat": "Dazu wollen wir die Gesundheitsvorsorge und Gewalt - und Extremismusprävention an Schulen weiter stärken.",
+      "ursachen_ids": [
+        2201
+      ],
+      "pruefsumme": "53a5da5988f19a5f"
+    },
+    {
+      "kennung": "M094",
+      "ebene": "land",
+      "beschreibung": "Lehrplan, Curricula und Lehrmaterialien queer- und rassismussensibel überarbeiten",
+      "zitat": "Bildung muss diskriminierungsfrei sein. Deshalb setzen wir uns für eine queer-, rassismus- und kolonialsensible Überarbeitung von Rahmenlehrplan, Schulcurricula sowie Lehr- und Lernmaterialien ein.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "5abd63d1b8a11566"
+    },
+    {
+      "kennung": "M095",
+      "ebene": "land",
+      "beschreibung": "Rassismusprävention gemeinsam mit Communities weiterentwickeln und in einem Landeskonzept Antidiskriminierung bündeln",
+      "zitat": "Antisemitismus-, Antiziganismus-, antimuslimische und anti-Schwarze-Rassismusprävention entwickeln wir gemeinsam mit den Communities weiter. Alle Maßnahmen bündeln wir in einem integralen Landeskonzept Antidiskriminierung.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "55d34a7945d3bef6"
+    },
+    {
+      "kennung": "M096",
+      "ebene": "land",
+      "beschreibung": "Landesprogramm Demokratie und Toleranz fortschreiben und an aktuelle Herausforderungen anpassen",
+      "zitat": "Das Landesprogramm „Demokratie und Toleranz“ werden wir fortschreiben und an die aktuellen Herausforderungen anpassen.",
+      "ursachen_ids": [
+        2206
+      ],
+      "pruefsumme": "3d6024869fac9735"
+    },
+    {
+      "kennung": "M097",
+      "ebene": "land",
+      "beschreibung": "Zusammenarbeit von Sicherheitsbehörden mit zivilgesellschaftlichen Akteuren in der Extremismusbekämpfung stärken",
+      "zitat": "Wir stärken die Zusammenarbeit der Sicherheitsbehörden mit zivilgesellschaftlichen Akteur*innen im Bereich der Extremismusbekämpfung.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2201
+      ],
+      "pruefsumme": "b33b161dd51805d4"
+    },
+    {
+      "kennung": "M098",
+      "ebene": "land",
+      "beschreibung": "Öffentliche Förderung gerecht und nach objektiven Kriterien vergeben; zivilgesellschaftliche Akteure gleich behandeln",
+      "zitat": "Öffentliche Fördermittel müssen gerecht, ausgewogen und ohne politische Einseitigkeit vergeben werden. Unterschiedliche zivilgesellschaftliche Akteure sind gleich zu behandeln, Förderentscheidungen müssen an objektive und nachvollziehbare Kriterien gebunden sein.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "632184ea2da61e77"
+    },
+    {
+      "kennung": "M099",
+      "ebene": "land",
+      "beschreibung": "Ehrenamt im Kampf gegen Extremismus besser fördern und in staatliche Programme integrieren",
+      "zitat": "Ehrenamtliches Engagement ist für uns ein zentraler Baustein im Kampf gegen Extremismus. Deshalb wollen wir das Ehrenamt besser als bisher fördern und in staatliche Programme integrieren.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2201
+      ],
+      "pruefsumme": "9cd7ed1b37667e9a"
+    },
+    {
+      "kennung": "M100",
+      "ebene": "land",
+      "beschreibung": "Unterstützung des Dialogs der verschiedenen Glaubensgemeinschaften und interreligiöser Formen des Gedenkens",
+      "zitat": "Wir unterstützen den Dialog der verschiedenen Glaubensgemeinschaften und interreligiöse Formen des Gedenkens.",
+      "ursachen_ids": [
+        2205
+      ],
+      "pruefsumme": "95415a1b0c6e89c6"
+    },
+    {
+      "kennung": "M101",
+      "ebene": "land",
+      "beschreibung": "Schulunterricht soll sich mit Extremismus sowie antisemitischen und rassistischen Ideologien auseinandersetzen.",
+      "zitat": "Bildung ist die beste Prävention gegen Extremismus. Deshalb sollen sich Schülerinnen und Schüler im Unterricht mit allen Formen des Extremismus sowie mit antisemitischen und rassistischen Ideologien auseinandersetzen.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "fdd2e8de12bf1364"
+    },
+    {
+      "kennung": "M102",
+      "ebene": "land",
+      "beschreibung": "Gegenseitiges Kennenlernen und Achten zwischen Religionen und Einwohnern fördern; Intoleranz bekämpfen",
+      "zitat": "Akzeptanz fördern: Wir erwarten […] Soweit es denn möglich ist, werden wir das gegenseitige Kennenlernen und Achten fördern. Intoleranz werden wir entschieden bekämpfen.",
+      "ursachen_ids": [
+        2206
+      ],
+      "pruefsumme": "53719ab2d52a0f7e"
+    },
+    {
+      "kennung": "M103",
+      "ebene": "land",
+      "beschreibung": "Offene Debattenkultur an Hochschulen auch mit schwer erträglichen Meinungen sichern",
+      "zitat": "Wir werden: […] die Wissenschaftsfreiheit sowie die Freiheit von Forschung und Lehre an den Hochschulen unseres Landes verteidigen. Dazu gehört für uns eine offene Debattenkultur, auch mit schwer erträglichen Meinungen, solange sich nicht die Grenzen des Grundgesetzes oder Strafrechts überschreiten.",
+      "ursachen_ids": [
+        2205,
+        2206
+      ],
+      "pruefsumme": "9f81639ec8e68fee"
+    },
+    {
+      "kennung": "M104",
+      "ebene": "bund",
+      "beschreibung": "Parlamentarischer Untersuchungsausschuss zur Aufarbeitung der Corona-Maßnahmen für Aufklärung und Transparenz",
+      "zitat": "Wir fordern einen Parlamentarischen Untersuchungsausschuss, um echte Aufklärung und Transparenz durch ein geordnetes Verfahren zu gewährleisten und Handlungsempfehlungen für zukünftige Krisen zu geben.",
+      "ursachen_ids": [
+        2203
+      ],
+      "pruefsumme": "aaa474ca19b8e734"
+    },
+    {
+      "kennung": "M105",
+      "ebene": "bund",
+      "beschreibung": "Grundgesetzartikel 139 mit einer antifaschistischen Klausel präziser fassen",
+      "zitat": "Wir wollen den Grundgesetzartikel 139 gegen Nationalsozialismus und Militarismus mit einer antifaschistischen Klausel präziser fassen.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "d4aa272e22c10181"
+    },
+    {
+      "kennung": "M106",
+      "ebene": "bund",
+      "beschreibung": "Prävention gegen Extremismus setzen und präventive Maßnahmen gezielt entwickeln und umsetzen",
+      "zitat": "Wir wollen Extremismus vorbeugen und bekämpfen. […] Im Kampf gegen Extremismus setzen wir zuvorderst auf Prävention, um extremistische Tendenzen und Demokratiefeindlichkeit frühzeitig zu bekämpfen. Präventive Maßnahmen werden gezielt entwickelt und umgesetzt, um solche Entwicklungen bereits im Keim zu ersticken.",
+      "ursachen_ids": [
+        2201
+      ],
+      "pruefsumme": "850f04c5d3657048"
+    },
+    {
+      "kennung": "M107",
+      "ebene": "land",
+      "beschreibung": "V-Leute so regeln, dass Ressourcen nicht als Strukturhilfe für die extremistische Szene dienen",
+      "zitat": "Für einen Verfassungsschutz, der die Verfassung schützt, werden wir: […] den Umgang mit V-Leuten so regeln, dass die zur Verfügung gestellten Ressourcen nicht als Strukturhilfe für die extremistische Szene missbraucht werden.",
+      "ursachen_ids": [
+        2201
+      ],
+      "pruefsumme": "c6115287f4114cbf"
+    },
+    {
+      "kennung": "M108",
+      "ebene": "land",
+      "beschreibung": "Interreligiösen Dialog und Kulturprojekte fördern, die gegenseitiges Verständnis stärken.",
+      "zitat": "Den interreligiösen Dialog verstehen wir als wichtigen Beitrag zum gesellschaftlichen Zusammenhalt in [Land]. Entsprechende Kulturprojekte wollen wir gezielt fördern, gegenseitiges Verständnis stärken und antisemitischen Tendenzen entschlossen entgegentreten.",
+      "ursachen_ids": [
+        2205,
+        2206
+      ],
+      "pruefsumme": "9e7b7fe3a81f2822"
+    },
+    {
+      "kennung": "M109",
+      "ebene": "bund",
+      "beschreibung": "Schule frei von politischer Propaganda; Schüler sollen eigene Denkweisen ohne Lehrplanvorgaben entwickeln",
+      "zitat": "Schule ist kein Ort für politische Propaganda. Sie muss den Schülern die Freiheit geben, eigene politische Denkweisen ohne Vorgaben durch Lehrpläne und Unterrichtswerke zu entwickeln.",
+      "ursachen_ids": [
+        2206
+      ],
+      "pruefsumme": "66b2835e6285c066"
+    },
+    {
+      "kennung": "M110",
+      "ebene": "land",
+      "beschreibung": "Staatliche Bürgerforen zur Beteiligung einstellen",
+      "zitat": "Staatlich inszenierte Bürgerforen, die nur den Anschein demokratischer Beteiligung erwecken, tatsächlich aber dazu dienen, Windkraftprojekte gegen den Willen der Bevölkerung durchzusetzen, werden wir umgehend einstellen.",
+      "ursachen_ids": [
+        2205
+      ],
+      "ursachen_offen": [
+        2206
+      ],
+      "pruefsumme": "d336bd89304aafb3"
+    },
+    {
+      "kennung": "M111",
+      "ebene": "land",
+      "beschreibung": "Abschaffung von Meldeportalen für Meinungsäußerungen, die nicht strafbar sind",
+      "zitat": "Wir sind für die Abschaffung von Meldeportalen für strafrechtlich nicht relevante Meinungsäußerungen ([Land] Register etc.).",
+      "ursachen_ids": [
+        2205
+      ],
+      "pruefsumme": "68d3b1202bdf331b"
+    },
+    {
+      "kennung": "M112",
+      "ebene": "land",
+      "beschreibung": "Ausbau digitaler Präventionsangebote wie spezialisierter Digital Streetwork gegen Rekrutierung",
+      "zitat": "Daher bauen wir digitale Präventionsangebote wie spezialisierte Digital Streetwork aus […]",
+      "ursachen_ids": [
+        2201
+      ],
+      "pruefsumme": "6b35d005e306f37a"
+    },
+    {
+      "kennung": "M113",
+      "ebene": "bund",
+      "beschreibung": "Pflicht zur Offenlegung der Finanzierung und Spender von Moscheevereinen und Islamverbänden",
+      "zitat": "Es darf keine Einflussnahme ausländischer Regierungen über Moscheevereine und Islamverbände auf die deutschen Muslime unter dem Deckmantel der Religionsfreiheit geben. Deshalb führen wir eine Pflicht zur Offenlegung der Finanzierung und Spender ein.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2204
+      ],
+      "pruefsumme": "2502593d57cfda31"
+    },
+    {
+      "kennung": "M114",
+      "ebene": "land",
+      "beschreibung": "Außerschulische Bildungs- und Präventionsangebote, u. a. zu Antisemitismusprävention und Gewaltprävention, an Schulen absichern.",
+      "zitat": "Außerschulische Bildungs- und Empowermentangebote in den Bereichen Antidiskriminierung, antirassistische und inklusionssensible Bildung, Antisemitismusprävention, queere Bildung […] wollen wir absichern und verstetigen.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "624c4c620d6703de"
+    },
+    {
+      "kennung": "M115",
+      "ebene": "bund",
+      "beschreibung": "Politische Bildung, Demokratie und Partizipation früh in Bildungseinrichtungen verankern",
+      "zitat": "Politische Bildung, Mitbestimmungsrechte, Demokratie und Partizipation müssen früh in den Bildungsinstitutionen und Bildungsinhalten verankert werden.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "95d3e363292d3c55"
+    },
+    {
+      "kennung": "M116",
+      "ebene": "land",
+      "beschreibung": "Räume für offenen Dialog und Safer Spaces für Menschen mit Migrationsgeschichte und Betroffene von Diskriminierung schaffen.",
+      "zitat": "Wir wollen die politische, gesellschaftliche und kulturelle Teilhabe von Menschen mit Migrationsgeschichte und von Betroffenen von Diskriminierung stärken und schaffen Räume für offenen Dialog und Safer Spaces.",
+      "ursachen_ids": [
+        2205
+      ],
+      "pruefsumme": "d35e63f11edea4a8"
+    },
+    {
+      "kennung": "M117",
+      "ebene": "land",
+      "beschreibung": "Verpflichtende Sprach- und Politikkurse für nicht Deutsch sprechende Zuwanderer",
+      "zitat": "Unbedingt notwendig sind deshalb verpflichtende Sprach- und Politikkurse für alle nicht Deutsch sprechenden Zuwanderer.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2204
+      ],
+      "pruefsumme": "34cfc093174f41d0"
+    },
+    {
+      "kennung": "M118",
+      "ebene": "bund",
+      "beschreibung": "Beteiligungen von Parteien an Medienunternehmen verbieten",
+      "zitat": "Zum Schutz der freien und unabhängigen Meinungsbildung wollen wir Beteiligungen von Parteien an Medienunternehmen verbieten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2203
+      ],
+      "pruefsumme": "dcd2f8ab225a8d65"
+    },
+    {
+      "kennung": "M119",
+      "ebene": "bund",
+      "beschreibung": "KI-Medieninhalte kennzeichnen und Plattformen für Falschinformationen haften lassen",
+      "zitat": "Durch Künstliche Intelligenz erzeugte Medieninhalte müssen gekennzeichnet werden, Plattformen haften bei Falschinformationen und Rechtsverstößen durch solche Inhalte.",
+      "ursachen_ids": [
+        2202
+      ],
+      "pruefsumme": "51a3ff4276196df3"
+    },
+    {
+      "kennung": "M120",
+      "ebene": "bund",
+      "beschreibung": "Unternehmensspenden an Parteien verbieten und Spenden von Privatpersonen begrenzen",
+      "zitat": "Unternehmensspenden an Parteien sowie das steuerlich absetzbare Parteiensponsoring (etwa Unternehmensstände auf Parteitagen) wollen wir verbieten. Spenden von Privatpersonen sind auf 25.000 Euro im Jahr zu begrenzen.",
+      "ursachen_ids": [
+        2203
+      ],
+      "pruefsumme": "09f493c94e500fc3"
+    },
+    {
+      "kennung": "M121",
+      "ebene": "land",
+      "beschreibung": "Will verlässlichen Schutz der Wissenschaftsfreiheit: keine Sanktionen gegen Lehrende wegen legitimer Positionen.",
+      "zitat": "Verlässlicher Schutz der Wissenschaftsfreiheit: Keine institutionellen oder informellen Sanktionen gegen Lehrende wegen legitimer wissenschaftlicher oder politischer Positionen.",
+      "ursachen_ids": [
+        2205
+      ],
+      "pruefsumme": "a05464ca555b803b"
+    },
+    {
+      "kennung": "M122",
+      "ebene": "land",
+      "beschreibung": "Will Bürgerbeteiligung ausbauen, etwa durch Bürgerräte und Bürgerabstimmungen bei kommunalen Entscheidungen.",
+      "zitat": "Ausbau von Bürgerbeteiligung, etwa durch Bürgerräte und Bürgerabstimmungen bei wichtigen kommunalen Entscheidungen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "88e1706e710b1bd8"
+    },
+    {
+      "kennung": "M123",
+      "ebene": "bund",
+      "beschreibung": "Zufriedenheitsbewertung aller Bundesbehörden durch die Bürger",
+      "zitat": "Wir werden auf Bundesebene eine kontinuierliche Zufriedenheitsbewertung für alle Behörden durch die Bürger einführen.",
+      "ursachen_ids": [
+        2203
+      ],
+      "pruefsumme": "222378657163bdb9"
+    },
+    {
+      "kennung": "M124",
+      "ebene": "land",
+      "beschreibung": "Ressortübergreifende Landesstrategie gegen extrem rechte Strukturen und Aktivitäten entwickeln und evaluieren.",
+      "zitat": "Wir werden eine ressortübergreifende Landesstrategie entwickeln, die der systematischen Bekämpfung von extrem rechten Strukturen und Aktivitäten gewidmet ist und regelmäßig evaluiert wird.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2201
+      ],
+      "pruefsumme": "5a0a92cb9c0102a4"
+    },
+    {
+      "kennung": "M125",
+      "ebene": "bund",
+      "beschreibung": "Entscheidungen der Parteien in eigener Sache unter Rechnungshof-Kontrolle stellen und öffentlich machen",
+      "zitat": "Alle Entscheidungen in eigener Sache sind der unbeschränkten Kontrolle der Rechnungshöfe zu unterstellen. Öffentlichkeit ist herzustellen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2203
+      ],
+      "pruefsumme": "60ad9d4bc8563ddd"
+    },
+    {
+      "kennung": "M126",
+      "ebene": "land",
+      "beschreibung": "Landes-Demokratiefördergesetz: Projekte gegen Extremismus, Hass und Gewalt dauerhaft und unabhängig von Haushaltsentscheidungen fördern",
+      "zitat": "Ein Landes-Demokratiefördergesetz soll geschaffen werden, um Engagement langfristig zu stärken und demokratische Strukturen verlässlich abzusichern. Ein solches Gesetz bietet die Möglichkeit, Projekte gegen Extremismus, Hass und Gewalt dauerhaft zu fördern und unabhängig von kurzfristigen Haushaltsentscheidungen zu schützen.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "33dd0bd7efdad9ff"
+    },
+    {
+      "kennung": "M127",
+      "ebene": "bund",
+      "beschreibung": "Angebote für Aussteiger*innen aus extremistischen Szenen und Deradikalisierungsprogramme im Justizvollzug finanziell stärken",
+      "zitat": "Wir brauchen Angebote für Aussteiger*innen aus den extremistischen Szenen oder Deradikalisierungsprogramme für den Justizvollzug. Diese Arbeit wollen wir finanziell stärken und dauerhaft mit einem Demokratiefördergesetz gesetzlich absichern.",
+      "ursachen_ids": [
+        2201
+      ],
+      "pruefsumme": "3d98e0bf3cda99e6"
+    },
+    {
+      "kennung": "M128",
+      "ebene": "land",
+      "beschreibung": "Antislawische Feindbilder konsequent thematisieren und ihre Geschichte systematisch aufarbeiten.",
+      "zitat": "Wir werden antislawischen Rassismus konsequent thematisieren und ihm entschieden entgegentreten. Antislawische Feindbilder haben eine lange historische Tradition, diese Kontinuitäten müssen systematisch aufgearbeitet werden.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "d6c71f0cd50471a3"
+    },
+    {
+      "kennung": "M129",
+      "ebene": "land",
+      "beschreibung": "Medienangebote in Dörfern und Kleinstädten fördern, damit lokale Debattenkultur und Berichterstattung erhalten bleiben",
+      "zitat": "Deshalb fördern wir gezielt Medienangebote in unseren Dörfern und Kleinstädten, damit überall im Land eine lebendige Debattenkultur und eine verlässliche Berichterstattung vor Ort möglich bleiben.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "d8b3a61fa6759235"
+    },
+    {
+      "kennung": "M130",
+      "ebene": "land",
+      "beschreibung": "Das Indoktrinationsverbot an Schulen soll zu einem strengen Neutralitätsgebot für Lehrkräfte ausgeweitet werden.",
+      "zitat": "Wir werden deshalb das Indoktrinationsverbot zu einem strengen Neutralitätsgebot ausweiten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2204
+      ],
+      "pruefsumme": "8e1035ba38a90176"
+    },
+    {
+      "kennung": "M131",
+      "ebene": "bund",
+      "beschreibung": "Bundesweite Preisaufsicht für Fernwärme einführen, mehr Transparenz bei der Preiskalkulation",
+      "zitat": "Um die Verbraucher*innen vor übermäßig hohen Kosten bei der Fernwärme zu schützen, führen wir eine bundesweite Preisaufsicht ein und sorgen für mehr Transparenz bei der Preiskalkulation durch die Fernwärmeversorger.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2203
+      ],
+      "pruefsumme": "153d76e3a0e9dbef"
+    },
+    {
+      "kennung": "M132",
+      "ebene": "bund",
+      "beschreibung": "Vermittlung von Werten wie Respekt und Fairness im Sport fördern",
+      "zitat": "Die Kommerzialisierung des Sports muss zurückgedrängt und die Vermittlung von Werten wie Respekt und Fairness gefördert werden.",
+      "ursachen_ids": [
+        2206
+      ],
+      "pruefsumme": "73bab4f22cb3b187"
+    },
+    {
+      "kennung": "M133",
+      "ebene": "land",
+      "beschreibung": "Will den Beobachtungsbereich „Delegitimierung des Staates“ abschaffen.",
+      "zitat": "Der Beobachtungsbereich „Delegitimierung des Staates“ ermöglicht willkürliche Überwachung und die Kriminalisierung legaler politischer Kritik, wir fordern seine Abschaffung.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "34b76c4d94bf1685"
+    },
+    {
+      "kennung": "M134",
+      "ebene": "land",
+      "beschreibung": "Verbindlichere Programmbeschwerden und ein verbindliches, regelmäßiges Feedback-Format für den öffentlich-rechtlichen Rundfunk",
+      "zitat": "Programmbeschwerden müssen verbindlicher gestaltet werden. […] Wir brauchen ein verbindliches, regelmäßiges und breitangelegtes Feedback-Format im rbb.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "f460a82325b4ba2d"
+    },
+    {
+      "kennung": "M135",
+      "ebene": "land",
+      "beschreibung": "Präventionsprogramme gegen Radikalisierung sowie Bildung und Aufklärung in Schulen, Vereinen und Einrichtungen stärken",
+      "zitat": "Präventive Programme gegen Radikalisierung sowie Bildung und Aufklärung in Schulen, Vereinen und öffentlichen Einrichtungen stärken.",
+      "ursachen_ids": [
+        2204
+      ],
+      "ursachen_offen": [
+        2201
+      ],
+      "pruefsumme": "760469b45818d5cd"
+    },
+    {
+      "kennung": "M136",
+      "ebene": "bund",
+      "beschreibung": "Betriebskindergärten ausbauen und bürokratische Hürden bei Kinderbetreuung abbauen, für gleichberechtigte Teilhabe",
+      "zitat": "Eine bedarfsgerechte Kinderbetreuung fördert Chancengleichheit und ermöglicht Frauen gleichberechtigte Teilhabe am Arbeitsmarkt. Für eine verbesserte Vereinbarkeit von Familie, Pflege und Beruf soll der Ausbau von Betriebskindergärten unterstützt und bürokratische Hürden abgebaut werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2203
+      ],
+      "pruefsumme": "dd5fd2540190aecf"
+    },
+    {
+      "kennung": "M137",
+      "ebene": "land",
+      "beschreibung": "Präventions- und Schutzkonzepte gegen extremistische Einflussnahme und demokratiefeindliche Netzwerke weiterentwickeln",
+      "zitat": "Präventions- und Schutzkonzepte gegen extremistische Einflussnahme, demokratiefeindliche Netzwerke und menschenfeindliche Ideologien weiterentwickeln.",
+      "ursachen_ids": [
+        2201,
+        2204
+      ],
+      "pruefsumme": "0c225097b55cf387"
+    },
+    {
+      "kennung": "M138",
+      "ebene": "bund",
+      "beschreibung": "Stipendien und Personalentwicklung für Talente aus Ostdeutschland",
+      "zitat": "Wir wollen zudem Talente aus Ostdeutschland mit besseren Zugängen zu Stipendien fördern und mit einem Personalentwicklungskonzept, mit dem das Erreichen von Führungspositionen unterstützt wird.",
+      "ursachen_ids": [
+        2203
+      ],
+      "pruefsumme": "6df2961d290b1575"
+    },
+    {
+      "kennung": "M139",
+      "ebene": "land",
+      "beschreibung": "Prävention und Bildung gegen Rassismus, Antifeminismus und gruppenbezogene Menschenfeindlichkeit; Bildungsarbeit und politische Jugendbildung stärken",
+      "zitat": "Wir setzen uns für die Prävention und Bildung gegen Rassismus, Antisemitismus, Antifeminismus und andere gruppenbezogene Menschenfeindlichkeit ein. […] Wir stärken Bildungsarbeit, politische Jugendbildung, Antidiskriminierungsprojekte und Programme, die demokratische Werte vermitteln.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "d4903e2ce7d38a7d"
+    },
+    {
+      "kennung": "M140",
+      "ebene": "land",
+      "beschreibung": "Demokratiebildung als Bestandteil von Studium, Referendariat, Fortbildung und Schulleitungsqualifizierung verankern",
+      "zitat": "Demokratiebildung als Querschnittsthema gehört zur Qualifikation aller Fachkräfte an Schulen und ist Bestandteil des Unterrichts in allen Fächern. Demokratiebildung verstehen und stärken wir dafür als notwendigen Bestandteil von Studium, Referendariat und Fortbildung der pädagogischen Fachkräfte sowie der Qualifizierung der Schulleitungen.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "bb5941384c8a542f"
+    },
+    {
+      "kennung": "M141",
+      "ebene": "bund",
+      "beschreibung": "Dauerhafte Bundesförderung von Gedenkstätten als Bestandteil politischer Bildungsarbeit",
+      "zitat": "Gedenkstätten und Gedenkorte sind wichtig für das kollektive Erinnern und für die Aufarbeitung der Nazidiktatur. Wir fordern vom Bund eine stärkere und dauerhafte finanzielle Unterstützung dieser Einrichtungen als wichtiger Bestandteil von politischer Bildungsarbeit.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2204
+      ],
+      "pruefsumme": "2ab50fe28afd351e"
+    },
+    {
+      "kennung": "M142",
+      "ebene": "land",
+      "beschreibung": "Projekte stärken, die gegen Rassismus, Islamfeindlichkeit, Queerfeindlichkeit und andere gruppenbezogene Menschenfeindlichkeit arbeiten",
+      "zitat": "Wir wollen Projekte stärken, die gegen Rassismus, Antisemitismus, Islamfeindlichkeit, LGBTIQ*-Feindlichkeit und andere Formen gruppenbezogener Menschenfeindlichkeit arbeiten. Diese Arbeit ist keine freiwillige Zusatzleistung, sondern eine essenzielle staatliche Aufgabe, um die Demokratie grundlegend zu schützen.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "92b8bbe7d70619d3"
+    },
+    {
+      "kennung": "M143",
+      "ebene": "land",
+      "beschreibung": "Vereine und Verbände stärken, damit antidemokratische Gruppen keinen Platz finden",
+      "zitat": "Vereine und Verbände werden gestärkt, damit antidemokratische Gruppen keinen Platz finden, weil die Zivilgesellschaft stark und präsent ist.",
+      "ursachen_ids": [
+        2201
+      ],
+      "pruefsumme": "133eb293c7039ac4"
+    },
+    {
+      "kennung": "M144",
+      "ebene": "bund",
+      "beschreibung": "Bürgernähere Verwaltung: Antragsverfahren vereinfachen und Leistungen bündeln",
+      "zitat": "Wir wollen einen bürgerfreundlicheren Staat, der unterstützt und hilft – schnell, unbürokratisch und gerecht. […] Indem wir Antragsverfahren vereinfachen, Leistungen zusammenfassen und aufeinander abstimmen, wollen wir verhindern, dass man von einer Stelle zur nächsten verwiesen wird.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2203
+      ],
+      "pruefsumme": "50f4c450f6697cdd"
+    },
+    {
+      "kennung": "M145",
+      "ebene": "bund",
+      "beschreibung": "Mehr Barrierefreiheit im öffentlichen Leben für Menschen mit Behinderung",
+      "zitat": "Wir setzen uns für mehr Barrierefreiheit im öffentlichen Leben ein.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2203
+      ],
+      "pruefsumme": "3b2b395db78d2727"
+    },
+    {
+      "kennung": "M146",
+      "ebene": "bund",
+      "beschreibung": "Länder sollen offenlegen, wie sie Bundesmittel einsetzen und welche Kommune in welcher Höhe profitiert",
+      "zitat": "Die Menschen müssen nachvollziehen können, wohin das Geld fließt. Die Länder sollen transparent machen, inwieweit sie Geld vom Bund zweckmäßig eingesetzt haben und welche Kommune in welcher Höhe profitiert.",
+      "ursachen_ids": [
+        2203
+      ],
+      "pruefsumme": "1441c9dfbf4d6bb7"
+    },
+    {
+      "kennung": "M147",
+      "ebene": "bund",
+      "beschreibung": "Bund bezahlt Kindern das erste Jahr im Sportverein (Zuschuss)",
+      "zitat": "Der Bund soll für alle Kinder das erste Jahr im Sportverein bezahlen (Zuschuss von bis zu 150 Euro im Jahr). So werden Kinder in die Vereine gebracht und die Vereine und ihre wertvolle Arbeit unterstützt.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2201
+      ],
+      "pruefsumme": "39ec8272e66a1749"
+    },
+    {
+      "kennung": "M148",
+      "ebene": "land",
+      "beschreibung": "Will Grundwissen über Rechte und Rechtsstaat in der Schule vermitteln und den Austausch mit Justiz fördern.",
+      "zitat": "Prävention und Rechtsbildung stärken: Grundwissen über Rechte, Pflichten und Rechtsstaat bereits in der Schule vermitteln; Austauschformate mit Justiz, Anwaltschaft und Demokratiebildung fördern (z. B. Besuche von Gerichtsverhandlungen im Rahmen schulischer Bildung).",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "08a8dae1fe2973c5"
+    },
+    {
+      "kennung": "M149",
+      "ebene": "land",
+      "beschreibung": "Stärkung der bezirklichen Straßensozialarbeit gegen die Ansprache Jugendlicher durch extrem rechte Gruppen.",
+      "zitat": "Hier brauchen wir eine Stärkung der bezirklichen Straßensozialarbeit",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2201
+      ],
+      "pruefsumme": "78d65cad2e1922b0"
+    },
+    {
+      "kennung": "M150",
+      "ebene": "bund",
+      "beschreibung": "Bundesweites Bildungsrahmengesetz mit gleichen Bildungschancen",
+      "zitat": "Wir fordern bundesweit gleiche Bildungschancen durch ein bundesweites Bildungsrahmengesetz, das vergleichbare Rahmenbedingungen, Rechtsansprüche und hohe qualitative Standards in allen Bundesländern schafft.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2203
+      ],
+      "pruefsumme": "fb5ccf82c4d4c292"
+    },
+    {
+      "kennung": "M151",
+      "ebene": "bund",
+      "beschreibung": "Reform der Islamkonferenz, damit Wertepartner unter den Verbänden mehr Raum erhalten",
+      "zitat": "Es braucht auch eine Reform der Islamkonferenz (DIK), bei der unsere Wertepartner unter den Verbänden deutlich mehr Raum erhalten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "57096fbeef6b92b6"
+    },
+    {
+      "kennung": "M152",
+      "ebene": "land",
+      "beschreibung": "Verfassungsfeindliche Moscheen schließen und Vereine verbieten",
+      "zitat": "[Partei] fordert: → Die Schließung verfassungsfeindlicher Moscheen und Vereinsverbote.",
+      "ursachen_ids": [
+        2201
+      ],
+      "pruefsumme": "8d1e8a31e7ff657c"
+    },
+    {
+      "kennung": "M153",
+      "ebene": "land",
+      "beschreibung": "Integration durch Sprache, Arbeit und Werte fördern mit verbindlichen Kursen und Bekenntnis zum Grundgesetz",
+      "zitat": "Wir werden: […] Integration durch Sprache, Arbeit und Werte fördern: verbindliche Kurse, direkter und unverzüglicher Zugang zu Jobs, klares Bekenntnis zum Grundgesetz.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2204
+      ],
+      "pruefsumme": "3245bb26aefac773"
+    },
+    {
+      "kennung": "M154",
+      "ebene": "land",
+      "beschreibung": "Kommunen dabei unterstützen, Beteiligungsverfahren zu etablieren",
+      "zitat": "Wir verfolgen das Ziel, Kommunen dabei zu unterstützen, Beteiligungsverfahren zu etablieren, damit Entscheidungen vor Ort breiter getragen werden und Vertrauen und Akzeptanz steigen.",
+      "ursachen_ids": [
+        2205
+      ],
+      "pruefsumme": "ec9ae94af16aa011"
+    },
+    {
+      "kennung": "M155",
+      "ebene": "bund",
+      "beschreibung": "Verzicht auf Gendersprache an Schulen, Hochschulen, im Rundfunk und in der Verwaltung",
+      "zitat": "Den Gender-Zwang aus ideologischen Gründen aber lehnen wir ab, weil er Barrieren errichtet, Menschen ausgrenzt und bevormunden will. Wir setzen uns dafür ein, dass im öffentlichen Raum – an Schulen und Universitäten, im Rundfunk und der Verwaltung – auf die Gendersprache verzichtet wird.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "dcc1d6dadfb7ec68"
+    },
+    {
+      "kennung": "M156",
+      "ebene": "land",
+      "beschreibung": "Polizei soll Community Policing mit Bündnisarbeit der Zivilbevölkerung verbinden",
+      "zitat": "Die Polizei soll Strafverfolgung und Gefahrenabwehr mit „Community Policing“ verbinden und auf Bündnisarbeit mit der Zivilbevölkerung setzen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2206
+      ],
+      "pruefsumme": "4595919771ba0ea9"
+    },
+    {
+      "kennung": "M157",
+      "ebene": "land",
+      "beschreibung": "Förderprogramm für Projekte, in denen Grundschulkinder demokratisches Zusammenleben im Unterricht erleben; Demokratiebildung an Schulen stärken",
+      "zitat": "Wir wollen die Demokratiebildung an unseren Schulen stärken und regionale Identität fördern. Dazu bringen wir ein Förderprogramm für Projekte nach dem Vorbild des „[Land] Rechts“ auf den Weg, mit dem Grundschülerinnen und Grundschüler demokratisches Zusammenleben altersgerecht im Unterricht und Schulalltag erleben.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "3080d554628e4b76"
+    },
+    {
+      "kennung": "M158",
+      "ebene": "land",
+      "beschreibung": "Pädagogisch begleitete Freiräume, Jugendclubs und selbstorganisierte Räume weiter stärken.",
+      "zitat": "Pädagogisch begleitete Freiräume, Jugendclubs und selbstorganisierte Räume […] werden weiter gestärkt.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2201
+      ],
+      "pruefsumme": "851e93b181c97c1b"
+    },
+    {
+      "kennung": "M159",
+      "ebene": "land",
+      "beschreibung": "Entscheidungen aus Volksentscheiden für Regierung und Parlament bindend machen",
+      "zitat": "Wir wollen, dass Entscheidungen aus Volksentscheiden für Regierung und Parlament bindend sind.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "336ddfdcd9d203c1"
+    },
+    {
+      "kennung": "M160",
+      "ebene": "bund",
+      "beschreibung": "Vereine und Verbände, die Extremisten unterstützen, von staatlichen Mitteln ausschließen",
+      "zitat": "Vereine und Verbände, die Extremisten unterstützen, sind von staatlichen Mittelzuwendungen auszuschließen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2204
+      ],
+      "pruefsumme": "f4489df21a7ee5fb"
+    },
+    {
+      "kennung": "M161",
+      "ebene": "bund",
+      "beschreibung": "Einfluss von NGOs und Bürgerräten auf die staatliche Willensbildung ablehnen",
+      "zitat": "Den direkten Einfluss der politisch aktiven Nichtregierungsorganisationen und sogenannter Bürgerräte auf die staatliche Willensbildung lehnen wir ab.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2203
+      ],
+      "pruefsumme": "27e1b71e7f4a28d5"
+    },
+    {
+      "kennung": "M162",
+      "ebene": "bund",
+      "beschreibung": "Bildungsangebote fördern, die demokratische Werte vermitteln",
+      "zitat": "Wir fördern Bildungsangebote, die demokratische Werte vermitteln und Menschen befähigen, aktiv an der Demokratie teilzuhaben.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "020e361d8ec84977"
+    },
+    {
+      "kennung": "M163",
+      "ebene": "land",
+      "beschreibung": "Anerkennung und Respekt für ehrenamtliches Engagement erhöhen, Engagementstrategie neu ausrichten.",
+      "zitat": "Wir wollen die Anerkennung und den Respekt vor ehrenamtlichem Engagement in unserem Land erhöhen. Dazu wollen wir die Engagementstrategie des Landes neu ausrichten […]",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2206
+      ],
+      "pruefsumme": "972850a181a46a83"
+    },
+    {
+      "kennung": "M164",
+      "ebene": "bund",
+      "beschreibung": "Gedenkstättenbesuche für alle Schülerinnen und Schüler; Aufbau des Deutsch-Israelischen Jugendwerks vorantreiben",
+      "zitat": "Alle Schülerinnen und Schüler sollen Gedenkstätten besuchen. Das ist wichtig für ihr historisches Bewusstsein. Gleichzeitig treiben wir den Aufbau des Deutsch-Israelischen Jugendwerks zügig voran.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "b970b0dde5af390a"
+    },
+    {
+      "kennung": "M165",
+      "ebene": "land",
+      "beschreibung": "Beratung zur Distanzierung von extrem rechten Szenen und sozialräumliche Programme mit Alternativen zu gewaltorientierten Gruppen ausbauen.",
+      "zitat": "Dazu gehören Beratungsangebote zur Distanzierung von extrem rechten Szenen, digital orientierte Präventionsformate gegen Propaganda sowie sozialräumliche Programme, die Jugendlichen Alternativen zu gewaltorientierten Gruppenidentitäten eröffnen.",
+      "ursachen_ids": [
+        2201
+      ],
+      "pruefsumme": "5a0fdea3245dcdef"
+    },
+    {
+      "kennung": "M166",
+      "ebene": "land",
+      "beschreibung": "Kita-Besuchspflicht für Kinder von Asylbewerbern, um Sprache und Werte zu vermitteln, strafbewehrt",
+      "zitat": "Die Kinder von Asylbewerberinnen und -bewerbern sollen ab dem dritten Lebensjahr zum Kitabesuch verpflichtet werden, um die deutsche Sprache und Werte vermittelt zu bekommen. Eine Weigerung durch die Eltern soll in Zukunft strafbewehrt sein.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "dc553c1ca160384e"
+    },
+    {
+      "kennung": "M167",
+      "ebene": "land",
+      "beschreibung": "Verbot jeglicher Auslandsfinanzierung für Moscheen",
+      "zitat": "Ein Verbot jeglicher Auslandsfinanzierung für Moscheen.",
+      "ursachen_ids": [
+        2201
+      ],
+      "pruefsumme": "b7af0f34f5f313a1"
+    },
+    {
+      "kennung": "M168",
+      "ebene": "land",
+      "beschreibung": "Antisemitische Vorfälle an Hochschulen benennen, aufklären und konsequent ahnden.",
+      "zitat": "Antisemitische Vorfälle an unseren Hochschulen müssen klar benannt, aufgeklärt, zur Anzeige gebracht und konsequent geahndet werden: von der Anwendung des Hausrechts über temporäre Ausschlüsse vom Studium bis hin zur Exmatrikulation […].",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2204
+      ],
+      "pruefsumme": "e5ef503a1fa15473"
+    },
+    {
+      "kennung": "M169",
+      "ebene": "land",
+      "beschreibung": "Missbrauch von Polizei, Staatsschutz und Verfassungsschutz für politische Zwecke unterbinden",
+      "zitat": "Dem Missbrauch der [Land] Polizei, des Staatsschutzes und des Verfassungsschutzes für politische Zwecke muss Einhalt geboten werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "b883199d796016b3"
+    },
+    {
+      "kennung": "M170",
+      "ebene": "land",
+      "beschreibung": "Lehrkräftebildung: Schwerpunkt weg von Diversity, Queer und Gender verlagern",
+      "zitat": "Im Lehrkräftebildungsgesetz wollen wir den Schwerpunkt weg von den politisch vorgegebenen Themen wie „Diversity“, „Queer“ und „Gender“ hin zu denjenigen Themen verlagern, welche die Lehramtsabsolventen in der Multikohortenstudie als besonders wichtig benannt haben.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2204
+      ],
+      "pruefsumme": "4f8da3ed88883d93"
+    },
+    {
+      "kennung": "M171",
+      "ebene": "land",
+      "beschreibung": "Politische Bildung und klare Haltung gegen Extremismus und Hass sind Pflicht in der Schule; ein Gedenkstättenbesuch wird verpflichtend.",
+      "zitat": "Auch politische Bildung, Erinnerungskultur sowie eine klare Haltung gegen Antisemitismus, Extremismus und Hass sind Pflichtbestandteile schulischer Erziehung. Jede Schülerin und jeder Schüler soll verpflichtend mindestens einmal in der Schullaufbahn ein ehemaliges Konzentrationslager und eine Dokumentations- und Gedenkstätte zur Aufarbeitung der SED-Diktatur besuchen.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "a48eb0b49866c066"
+    },
+    {
+      "kennung": "M172",
+      "ebene": "bund",
+      "beschreibung": "Volksentscheide nach Schweizer Vorbild auch auf Bundesebene einführen",
+      "zitat": "Wir fordern Volksentscheide nach Schweizer Vorbild auch für Deutschland.",
+      "ursachen_ids": [
+        2203
+      ],
+      "pruefsumme": "e265bbb2c9797d45"
+    },
+    {
+      "kennung": "M173",
+      "ebene": "land",
+      "beschreibung": "Landeseigene Gedenkstätten unterstützen, die Bildungsarbeit zur SED-Diktatur leisten",
+      "zitat": "Wir werden: […] die landeseigenen Gedenkstätten unterstützen: Das Dokumentationszentrum am Demmlerplatz in [Land] und die frühere Stasi-Untersuchungshaftanstalt in [Land] leisten bereits heute wertvolle Bildungsarbeit.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2204
+      ],
+      "pruefsumme": "0a05d6f2bf3afd9d"
+    },
+    {
+      "kennung": "M174",
+      "ebene": "land",
+      "beschreibung": "Verpflichtender Teil der Ausbildung des pädagogischen Fachpersonals zum Umgang mit Rechtsextremismus, dazu regelmäßige Fort- und Weiterbildung",
+      "zitat": "Präventionsprojekte an Schulen sichern wir dauerhaft und machen den Umgang mit Rechtsextremismus zu einem verpflichtenden Teil der Ausbildung des pädagogischen Fachpersonals (Lehrkräfte, Erzieher*innen etc.).",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "f0cb36febcf167e8"
+    },
+    {
+      "kennung": "M175",
+      "ebene": "land",
+      "beschreibung": "Demokratieklausel: Landesförderung nur bei schriftlicher Verfassungstreue und politischer Neutralität",
+      "zitat": "Steuergelder dürfen ausschließlich an Organisationen fließen, die sich strikt politisch neutral verhalten und zweifelsfrei auf dem Boden der freiheitlich-demokratischen Grundordnung stehen. Wir führen eine Demokratieklausel als verbindliche Voraussetzung für jede Landesförderung ein. Jeder Zuwendungsempfänger muss sich schriftlich zur Verfassungstreue und politischen Neutralität verpflichten.",
+      "ursachen_ids": [
+        2204
+      ],
+      "ursachen_offen": [
+        2206
+      ],
+      "pruefsumme": "2b8060e551616987"
+    },
+    {
+      "kennung": "M176",
+      "ebene": "bund",
+      "beschreibung": "IHRA-Arbeitsdefinition von Antisemitismus in Behörden etablieren und Grundlage von Fortbildungen für Beamtinnen und Beamte machen",
+      "zitat": "Wir treten dafür ein, die Arbeitsdefinition von Antisemitismus nach der IHRA (International Holocaust Remembrance Alliance) umfassend in den staatlichen Behörden zu etablieren und diese insbesondere zur Grundlage von Fortbildungen von Beamtinnen und Beamten und bei der Vergabe staatlicher Gelder zu machen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2204
+      ],
+      "pruefsumme": "2f87216fc31573a9"
+    },
+    {
+      "kennung": "M177",
+      "ebene": "land",
+      "beschreibung": "Werteerziehung und Respekt gegenüber der Umwelt sind Teil des schulischen Auftrags.",
+      "zitat": "Gleichberechtigt mit der Wissensvermittlung sind für uns Werteerziehung und die Förderung der Persönlichkeitsentwicklung Teil des schulischen Auftrags. Kinder und Jugendliche sollen einen zivilisierten Umgang und Respekt gegenüber ihrer Umwelt lernen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2206
+      ],
+      "pruefsumme": "1cdd927628c58887"
+    },
+    {
+      "kennung": "M178",
+      "ebene": "land",
+      "beschreibung": "Stärkung der Landeszentrale für politische Bildung und Verankerung ihres demokratischen Auftrags",
+      "zitat": "Die Landeszentrale für politische Bildung ist unverzichtbar, um Wissen über demokratische Strukturen sowie politische Bildung und Selbstwirksamkeit zu vermitteln. Wir verurteilen die Angriffe [Partei] auf die Unabhängigkeit dieser Institution und werden ihren demokratischen Auftrag klar verankern und ihre Arbeit stärken.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "b0eba673dff41d8d"
+    },
+    {
+      "kennung": "M179",
+      "ebene": "land",
+      "beschreibung": "Projekte der politischen und interkulturellen Bildung fördern, die Demokratie und Vielfalt stärken",
+      "zitat": "Wir fördern Projekte der politischen, kulturellen und […] Bildung, die Demokratie und Vielfalt stärken.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "a92851fecbc8fde6"
+    },
+    {
+      "kennung": "M180",
+      "ebene": "land",
+      "beschreibung": "Landeszentrale für politische Bildung gesetzlich absichern und Regionalzentren für Demokratie stärken",
+      "zitat": "Für eine Gesellschaft ohne Hass und ohne Hetze werden wir: […] die Landeszentrale für politische Bildung auf eine gesetzliche Grundlage stellen sowie die Regionalzentren für Demokratie stärken[…].",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "a72629c1bc318acd"
+    },
+    {
+      "kennung": "M181",
+      "ebene": "land",
+      "beschreibung": "Politische Bildung in der Ausbildung und Weiterbildung von Beschäftigten im öffentlichen Dienst stärken.",
+      "zitat": "Vielmehr braucht es eine deutliche Stärkung der politischen Bildung in der Ausbildung der Anwärter*innen und Beschäftigten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2204
+      ],
+      "pruefsumme": "562b23b16476dd80"
+    },
+    {
+      "kennung": "M182",
+      "ebene": "land",
+      "beschreibung": "Stärkung der Forschung und politischen Bildungsarbeit zu Antislawismus",
+      "zitat": "Wir wollen die Forschung und politische Bildungsarbeit zu Antislawismus stärken",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "fa5d76dec1a3a3e4"
+    },
+    {
+      "kennung": "M183",
+      "ebene": "land",
+      "beschreibung": "Öffentliche Kampagnen gegen extrem rechte Ideologien und für Demokratie und Grundrechte.",
+      "zitat": "Zusätzlich braucht es breit angelegte öffentliche Kampagnen, die mittels Werbeflächen, Social Media und Multiplikator*innen über extrem rechte Ideologien aufklären und das Bewusstsein für Demokratie, Grundrechte und gesellschaftlichen Zusammenhalt stärken.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2204
+      ],
+      "pruefsumme": "5e3f1f1b48950b44"
+    },
+    {
+      "kennung": "M184",
+      "ebene": "land",
+      "beschreibung": "Demokratisierungsgrad der Schulen messen und Mittel für Demokratisierungsprojekte bereitstellen",
+      "zitat": "Wir messen den Demokratisierungsgrad der Schulen und führen freie Mittel für Demokratisierungsprojekte wieder in das Bonusprogramm ein.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2204
+      ],
+      "pruefsumme": "2133cdb05a1f77ab"
+    },
+    {
+      "kennung": "M185",
+      "ebene": "land",
+      "beschreibung": "Präventionsmaßnahmen und politische Bildung sollen Interventionen gegen Extremismus flankieren.",
+      "zitat": "Jegliche Form des Extremismus lehnen wir entschieden ab und werden sie mit allen Instrumenten des Rechtsstaates bekämpfen. Mit Politischer Bildung und Präventionsmaßnahmen werden wir Interventionen flankieren, um langfristig Sicherheit und gesellschaftlichen Zusammenhalt zu gewährleisten.",
+      "ursachen_ids": [
+        2201
+      ],
+      "pruefsumme": "8a2dc964b50d30fc"
+    },
+    {
+      "kennung": "M186",
+      "ebene": "land",
+      "beschreibung": "Stärkung von Projekten, die über Vorurteile aufklären und Akzeptanz fördern",
+      "zitat": "Wir stärken Projekte, die aufklären, Vorurteile abbauen und Akzeptanz fördern.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "744d5c3391246ebf"
+    },
+    {
+      "kennung": "M187",
+      "ebene": "land",
+      "beschreibung": "Fortbildungen zu Rassismus und Postkolonialismus sowie diskriminierungskritische Module in der Ausbildung pädagogischer Fachkräfte",
+      "zitat": "Fortbildungen zu Diskriminierung, Rassismus und Postkolonialismus stärken wir. In die Ausbildung pädagogischer Fachkräfte integrieren wir verpflichtend diskriminierungskritische Module – in allen Entwicklungsstufen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2204
+      ],
+      "pruefsumme": "bb4015318444c623"
+    },
+    {
+      "kennung": "M188",
+      "ebene": "bund",
+      "beschreibung": "Grundlagenforschung an Hochschulen zu gewaltbereitem und nicht gewaltsamem Islamismus ausbauen",
+      "zitat": "Den ideologischen Nährboden dieses religiös motivierten politischen Extremismus nehmen wir intensiver in den Blick. […] Wir bauen die Grundlagenforschung an Hochschulen im Bereich des gewaltbereiten und des nicht gewaltsam agierenden Islamismus aus und verzahnen sie mit dem Handeln unserer Sicherheitsbehörden.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "5a064b3781046209"
+    },
+    {
+      "kennung": "M189",
+      "ebene": "bund",
+      "beschreibung": "Verbot der Zusammenarbeit von Staat und Medien zur Beeinflussung der Meinungsbildung",
+      "zitat": "Wir fordern die Beendigung aller Formen der Zusammenarbeit von Staat und Medien zur Beeinflussung der freien Meinungsbildung.",
+      "ursachen_ids": [
+        2205
+      ],
+      "pruefsumme": "69f1191b6e1e45d8"
+    },
+    {
+      "kennung": "M190",
+      "ebene": "bund",
+      "beschreibung": "Gesetzlich geschütztes Recht auf nichtdigitalen Zugang zum öffentlichen Leben",
+      "zitat": "Wir treten für ein gesetzlich geschütztes Recht auf nichtdigitale Teilhabe am öffentlichen Leben ein.",
+      "ursachen_ids": [
+        2203
+      ],
+      "pruefsumme": "5026cbaad3c829f9"
+    },
+    {
+      "kennung": "M191",
+      "ebene": "land",
+      "beschreibung": "Projekte fördern, die demokratische Werte vermitteln und gegen Extremismus und Menschenfeindlichkeit eintreten.",
+      "zitat": "Wir unterstützen deshalb Projekte und Initiativen, die demokratische Werte vermitteln und den gesellschaftlichen Zusammenhalt fördern. Dazu gehört für uns selbstverständlich auch, dass sich die geförderten Projekte eindeutig zum Grundgesetz bekennen und Extremismus, Antisemitismus sowie jeder Form von gruppenbezogener Menschenfeindlichkeit entschieden entgegentreten.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "795dda0e699d62b1"
+    },
+    {
+      "kennung": "M192",
+      "ebene": "land",
+      "beschreibung": "Zielgruppenspezifische Aussteiger*innenprogramme und Maßnahmen ausbauen, die Risikofaktoren wie Gewalterfahrungen und fehlende Integration abmildern.",
+      "zitat": "Wir werden zielgruppenspezifische Aussteiger*innenprogramme und Maßnahmen ausbauen, die begünstigende Faktoren wie eigene Gewalterfahrungen, erschwerte Bildungszugänge sowie fehlende berufliche und soziale Integration abmildern.",
+      "ursachen_ids": [
+        2201
+      ],
+      "pruefsumme": "4b029149034e1a82"
+    },
+    {
+      "kennung": "M193",
+      "ebene": "land",
+      "beschreibung": "Fachstellen wie Exit und LOBBI stärken, die Ausstiegs- und Beratungsarbeit leisten",
+      "zitat": "Zivilgesellschaftliche Bündnisse, Netzwerke und Fachstellen der Demokratieförderung stärken (z. B. LpB, Regionalzentren, LOBBI, Bidaya, Exit).",
+      "ursachen_ids": [
+        2201
+      ],
+      "pruefsumme": "34a95734b07d6f56"
+    },
+    {
+      "kennung": "M194",
+      "ebene": "land",
+      "beschreibung": "Paralleler Rechtsstrukturen bekämpfen",
+      "zitat": "Die Bekämpfung paralleler Rechtsstrukturen.",
+      "ursachen_ids": [
+        2201
+      ],
+      "pruefsumme": "8c03cbea0d063ed8"
+    },
+    {
+      "kennung": "M195",
+      "ebene": "land",
+      "beschreibung": "Aussteigerhilfe und Beratung im Landesprogramm Demokratie und Toleranz weiter fördern",
+      "zitat": "Dafür stärken wir die Zivilgesellschaft, indem das Landesprogramm „Demokratie und Toleranz gemeinsam stärken!“, mitsamt Regionalzentren, der Beratung für Opfer von rechtsextremer Gewalt und weiterer Angebote […] der Aussteigerhilfe u. a. m. weiter fördern.",
+      "ursachen_ids": [
+        2201
+      ],
+      "pruefsumme": "e4248fa84d4919ce"
+    },
+    {
+      "kennung": "M196",
+      "ebene": "land",
+      "beschreibung": "Grundlegende Reform der Verfassten Studentenschaft (unabhängige Studentenschaft nach bayerischem Modell)",
+      "zitat": "Oftmals verfolgen studentische Amtsträger die Interessen linksradikaler Kleingruppen, statt das Wohl aller Studenten im Auge zu behalten. […] Deshalb halten wir eine grundlegende Reform der Verfassten Studentenschaft für unerlässlich.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2204
+      ],
+      "pruefsumme": "ab289b6104185948"
+    },
+    {
+      "kennung": "M197",
+      "ebene": "land",
+      "beschreibung": "Stärkung der Kinder- und Jugendfreizeiteinrichtungen im Umgang mit rechtsextremen Einstellungen",
+      "zitat": "Kinder- und Jugendfreizeiteinrichtungen stärken wir im Umgang mit rechtsextremen Einstellungen.",
+      "ursachen_ids": [
+        2201
+      ],
+      "pruefsumme": "41c7220619eb4677"
+    },
+    {
+      "kennung": "M198",
+      "ebene": "land",
+      "beschreibung": "Will bessere Zusammenarbeit mit Präventions- und Aussteigerprogrammen, wo sinnvoll.",
+      "zitat": "Fokus auf reale Gefahrenlagen: konsequente Ausrichtung auf gewaltbereiten Extremismus und verfassungsfeindliche Bestrebungen; bessere Zusammenarbeit mit Präventions- und Aussteigerprogrammen, wo dies sinnvoll ist.",
+      "ursachen_ids": [
+        2201
+      ],
+      "pruefsumme": "a2e494fbce7f0d4b"
+    },
+    {
+      "kennung": "M199",
+      "ebene": "bund",
+      "beschreibung": "Majestätsbeleidigung abschaffen; Politiker und Bürger rechtlich gleich behandeln",
+      "zitat": "Die „Majestätsbeleidigung“, d.h. den besonderen Schutz des § 188 StGB für Personen, die im politischen Leben des Volkes stehen, wollen wir abschaffen. […] Politiker und Bürger müssen gleichbehandelt werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "aef81ffe847c182d"
+    },
+    {
+      "kennung": "M200",
+      "ebene": "bund",
+      "beschreibung": "Mehr Personal in den Justizbehörden und weniger Verfahren",
+      "zitat": "Wir wollen deutlich mehr Personal in den Justizbehörden und eine Reduzierung der Verfahrenszahlen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2203
+      ],
+      "pruefsumme": "67eaa23801ad02f2"
+    },
+    {
+      "kennung": "M201",
+      "ebene": "land",
+      "beschreibung": "Politische Bildung als Schulfach stärken und an Grundschulen und beruflichen Schulen etablieren.",
+      "zitat": "Wir wollen das bestehende Schulfach stärken und auch an Grundschulen (ab Jahrgangsstufe 4) sowie an beruflichen Schulen etablieren.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "66811520513d66a7"
+    },
+    {
+      "kennung": "M202",
+      "ebene": "bund",
+      "beschreibung": "Konsequentere Umsetzung der UN-Behindertenrechtskonvention in Bund und Ländern",
+      "zitat": "Wir fordern eine konsequentere Umsetzung der seit 2009 auch für Deutschland geltenden UN-Behindertenrechtekonvention (UN-BRK) im Bund und in den Ländern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2203
+      ],
+      "pruefsumme": "b1b7b9bcf25b2e91"
+    },
+    {
+      "kennung": "M203",
+      "ebene": "bund",
+      "beschreibung": "Kontrolle des öffentlich-rechtlichen Rundfunks und Besetzung seiner Gremien parteifern organisieren",
+      "zitat": "Wir fordern, dass die Kontrolle über den ÖRR und die Besetzung ihrer Gremien parteifern organisiert wird und der Einfluss der Gebührenzahler gestärkt wird.",
+      "ursachen_ids": [
+        2203,
+        2205
+      ],
+      "pruefsumme": "ed797e09031be7b4"
+    },
+    {
+      "kennung": "M204",
+      "ebene": "land",
+      "beschreibung": "Neutralitätsgesetz bei Justiz und Polizei strikt durchsetzen (Verbot sichtbarer religiöser Symbole)",
+      "zitat": "Die strikte Einhaltung und konsequente Durchsetzung des [Land] Neutralitätsgesetzes bei Justiz und Polizei.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2204
+      ],
+      "pruefsumme": "63730789e7f4a73e"
+    },
+    {
+      "kennung": "M205",
+      "ebene": "bund",
+      "beschreibung": "EU-Entgelttransparenzrichtlinie bis 2026 umsetzen und Entgelttransparenzgesetz weiterentwickeln",
+      "zitat": "Wir wollen die Ungerechtigkeit beenden, dass Frauen immer noch weniger verdienen als Männer, und deswegen die EU-Entgelttransparenzrichtlinie bis 2026 in nationales Recht umsetzen. Wir werden das deutsche Entgelttransparenzgesetz zu einem wirksamen Lohngerechtigkeitsgesetz weiterentwickeln.",
+      "ursachen_ids": [
+        2203
+      ],
+      "pruefsumme": "84db45c955c4e9e9"
+    },
+    {
+      "kennung": "M206",
+      "ebene": "land",
+      "beschreibung": "Ende aller Kooperationen mit extremistischen Institutionen",
+      "zitat": "Ein Ende aller Kooperationen mit extremistischen Institutionen.",
+      "ursachen_ids": [
+        2201
+      ],
+      "pruefsumme": "e231df7e5a1d0c25"
+    },
+    {
+      "kennung": "M207",
+      "ebene": "bund",
+      "beschreibung": "Volksinitiativen, Volksbegehren und Volksentscheide auf Bundesebene einführen",
+      "zitat": "Wir wollen Volksinitiativen, Volksbegehren und Volksentscheide, Bürger*inneninitiativen, Bürger*innenbegehren und Bürger*innenentscheide auf Bundesebene einführen.",
+      "ursachen_ids": [
+        2203
+      ],
+      "pruefsumme": "0cece55234b737d9"
+    },
+    {
+      "kennung": "M208",
+      "ebene": "land",
+      "beschreibung": "Meinungsäußerungen öffentlich Beschäftigter sollen keine dienstrechtlichen Maßregelungen begründen, solange sie nicht strafbar sind.",
+      "zitat": "Meinungsäußerungen von öffentlich Beschäftigten dürfen, solange sie nicht strafbar sind, keine arbeits- oder dienstrechtlichen Maßregelungen begründen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "b3ed936bde9889f5"
+    },
+    {
+      "kennung": "M209",
+      "ebene": "land",
+      "beschreibung": "Dialog zwischen Wissenschaft und Gesellschaft stärken",
+      "zitat": "Auch die beste Idee verändert die Welt nicht, wenn sie im Labor bleibt. Deshalb stärken wir Transfer und den Dialog zwischen Wissenschaft und Gesellschaft.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "9bcc74fd4f917594"
+    },
+    {
+      "kennung": "M210",
+      "ebene": "bund",
+      "beschreibung": "Bürgerräte als festen Bestandteil der Demokratie etablieren",
+      "zitat": "Wir wollen Bürgerräte als festen Bestandteil unserer Demokratie etablieren. Geloste Bürgerräte beraten zu schwierigen Themen und stärken das Vertrauen in die Demokratie.",
+      "ursachen_ids": [
+        2203
+      ],
+      "pruefsumme": "2162078db6583bac"
+    },
+    {
+      "kennung": "M211",
+      "ebene": "bund",
+      "beschreibung": "Bundesprogramm gegen Rechtsextremismus und Menschenfeindlichkeit ausweiten",
+      "zitat": "Fans sind essenziell. Deswegen stärken wir Fanprojekte, […] und weiten das Bundesprogramm gegen Rechtsextremismus und Menschenfeindlichkeit aus.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "5f86c890040ca6d7"
+    },
+    {
+      "kennung": "M212",
+      "ebene": "land",
+      "beschreibung": "Präventionsprogramme und Öffentlichkeitsarbeit über rechtsextreme Gefährdungen, Warnsignale und Unterstützungsangebote",
+      "zitat": "Wir wollen: […] Öffentlichkeitsarbeit und Präventionsprogramme, die über rechtsextreme Gefährdungen, Warnsignale und Unterstützungsangebote informieren.",
+      "ursachen_ids": [
+        2201
+      ],
+      "pruefsumme": "9b673434b43af6d6"
+    },
+    {
+      "kennung": "M213",
+      "ebene": "land",
+      "beschreibung": "Paragraf 188 StGB vollständig streichen",
+      "zitat": "Wir werden: […] uns für die vollständige und ersatzlose Streichung des § 188 StGB einsetzen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "2c431d2cc84d135e"
+    },
+    {
+      "kennung": "M214",
+      "ebene": "bund",
+      "beschreibung": "Verpflichtende Besuche von Gedenkstätte und Synagoge sowie Auseinandersetzung mit Antisemitismus im Schulunterricht",
+      "zitat": "In der Schule muss außerdem auch die Auseinandersetzung mit den verschiedenen Formen von Menschenfeindlichkeit wie dem Antisemitismus intensiviert werden. Dazu gehört der verpflichtende Besuch einer Holocaust-Gedenkstätte und einer Synagoge als Ort aktuellen jüdischen Lebens in Deutschland, die Auseinandersetzung mit der Geschichte Israels sowie die Thematisierung aller Formen des Antisemitismus.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "71ff17985624f387"
+    },
+    {
+      "kennung": "M215",
+      "ebene": "bund",
+      "beschreibung": "Umfassendes Paket gegen Altersdiskriminierung, u. a. Aufklärung und klare Regelungen; Generationen sollen respektvoll zusammenleben",
+      "zitat": "Wir bringen daher ein umfassendes Paket zur Bekämpfung von Altersdiskriminierung auf den Weg. Dazu gehören Aufklärungs- und Bildungsmaßnahmen, die Förderung altersfreundlicher Arbeitsmodelle und klare Regelungen, um Diskriminierung im Berufsalltag entgegenzutreten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2206
+      ],
+      "pruefsumme": "2e6828f6ee14e6b2"
+    },
+    {
+      "kennung": "M216",
+      "ebene": "land",
+      "beschreibung": "Förderung von Begegnungen und Nachbarschaftsprojekten gegen rassistische und ausländerfeindliche Stimmungsmache",
+      "zitat": "Rassistischer und ausländerfeindlicher Stimmungsmache stellen wir uns mit aller Kraft entgegen. Deshalb wollen wir kulturelle Begegnungen und integrative Stadtteilarbeit in den [Land] Kommunen fördern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2204,
+        2206
+      ],
+      "pruefsumme": "2bc1fc2c1864cf7b"
+    },
+    {
+      "kennung": "M217",
+      "ebene": "land",
+      "beschreibung": "Bekenntnisorientierten Religions- oder Weltanschauungsunterricht nur unter strenger staatlicher Aufsicht mit geprüftem Personal",
+      "zitat": "Jeglicher bekenntnisorientierter Religions- oder Weltanschauungsunterricht – gleich welcher Gemeinschaft – darf daher nur unter strenger staatlicher Aufsicht stattfinden und muss von staatlich qualifiziertem und geprüftem Personal durchgeführt werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2204
+      ],
+      "pruefsumme": "a2abee075cad565a"
+    },
+    {
+      "kennung": "M218",
+      "ebene": "bund",
+      "beschreibung": "Hinweisgeberschutzgesetz so überarbeiten, dass auch staatliches Fehlverhalten erfasst wird",
+      "zitat": "Wir fordern eine Revision des Hinweisgeberschutzgesetzes vom 02. Juli 2023 mit dem Ziel, Fälle von Staatsversagen und regierungsamtlichem Unrecht einzubeziehen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2203
+      ],
+      "pruefsumme": "84f0a167d0360a3f"
+    },
+    {
+      "kennung": "M219",
+      "ebene": "land",
+      "beschreibung": "Dauerhafte Sicherung der Präventionsprojekte an Schulen",
+      "zitat": "Präventionsprojekte an Schulen sichern wir dauerhaft",
+      "ursachen_ids": [
+        2201
+      ],
+      "pruefsumme": "a51d1509c7a1ea3b"
+    },
+    {
+      "kennung": "M220",
+      "ebene": "land",
+      "beschreibung": "In Jugendarbeit und Schule Diskriminierung entgegenwirken und für Toleranz und Akzeptanz aufklären.",
+      "zitat": "Dazu wollen wir etwa in der Jugendarbeit und in der Schule Diskriminierung entgegenwirken und mit Aufklärung für Toleranz und Akzeptanz werben.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2206
+      ],
+      "pruefsumme": "6b5f34d77810a346"
+    },
+    {
+      "kennung": "M221",
+      "ebene": "bund",
+      "beschreibung": "Verpflichtendes Gesellschaftsjahr (perspektivisch), das Menschen unterschiedlicher Milieus, Religionen und Generationen zusammenbringt",
+      "zitat": "Der Dienst für das Gemeinwohl bringt Menschen unterschiedlicher Milieus, Religionen und Generationen zusammen. Er bietet die Chance, über den eigenen Tellerrand hinauszuschauen, und trägt zur Persönlichkeitsbildung bei. Wir setzen perspektivisch auf ein verpflichtendes Gesellschaftsjahr, das wir mit der aufwachsenden Wehrpflicht zusammendenken.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2206
+      ],
+      "pruefsumme": "becefcfa3dc0f2de"
+    },
+    {
+      "kennung": "M222",
+      "ebene": "land",
+      "beschreibung": "Das Netzwerkdurchsetzungsgesetz soll zurückgenommen und europäische Digitalgesetze überprüft werden.",
+      "zitat": "Wir setzen uns für die Rückabwicklung des NetzDG und für eine Überprüfung der Europäischen Digitalgesetze (Digital Services Act) ein.",
+      "ursachen_ids": [
+        2205
+      ],
+      "pruefsumme": "764c27c78312d053"
+    },
+    {
+      "kennung": "M223",
+      "ebene": "land",
+      "beschreibung": "Erweiterung des Landesprogramms gegen Rechtsextremismus, Rassismus und Antisemitismus zur nachhaltigen Sicherung der Arbeit",
+      "zitat": "Wir erweitern das Landesprogramm gegen Rechtsextremismus, Rassismus und Antisemitismus sowie die Landeskommission gegen Gewalt, um die Arbeit gegen Rechtsextremismus nachhaltig zu sichern und weiterzuentwickeln.",
+      "ursachen_ids": [
+        2201
+      ],
+      "pruefsumme": "4ededd7aed1644af"
+    },
+    {
+      "kennung": "M224",
+      "ebene": "land",
+      "beschreibung": "Jugendclubs als Orte der Begegnung und Demokratiebildung fördern, um Radikalisierung entgegenzuwirken.",
+      "zitat": "Jugendclubs wollen wir als Orte der Begegnung und Demokratiebildung fördern, um Radikalisierung frühzeitig entgegenzuwirken.",
+      "ursachen_ids": [
+        2201
+      ],
+      "pruefsumme": "c7ec3649f3870729"
+    },
+    {
+      "kennung": "M225",
+      "ebene": "land",
+      "beschreibung": "Verfassungstreue als Voraussetzung für Tätigkeit in der öffentlichen Verwaltung sicherstellen",
+      "zitat": "Menschen, die nicht die Werte unseres Grundgesetzes – allen voran die universelle Menschenwürde, das Demokratie- bzw. das Rechtsstaatsprinzip – teilen und insofern nicht staatstreu sind, dürfen nicht in der öffentlichen Verwaltung / in der Exekutive arbeiten. Mit geeigneten Maßnahmen werden wir dafür sorgen, dass dieses Ziel erreicht wird.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "7f05398cbccbec7d"
+    },
+    {
+      "kennung": "M226",
+      "ebene": "land",
+      "beschreibung": "Dauerhaften gelosten Bürger*innendialog einrichten und per Gesetz verankern.",
+      "zitat": "Um die Partizipation zu fördern, schlagen wir vor, dass das Land [Land] einen dauerhaften gelosten Bürger*innendialog einrichtet.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "b92dee5866e49681"
+    },
+    {
+      "kennung": "M227",
+      "ebene": "bund",
+      "beschreibung": "Ausbau des internationalen künstlerischen Austauschs, um Dialoge zu intensivieren",
+      "zitat": "Den internationalen künstlerischen Austausch wollen wir ausbauen, um Dialoge zu intensivieren und nachbarschaftliche Beziehungen zu stärken.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "f273966a49f71fcf"
+    },
+    {
+      "kennung": "M228",
+      "ebene": "land",
+      "beschreibung": "Entradikalisierungsprogramme, mehr und bessere Jugendarbeit sowie Deeskalationsmaßnahmen",
+      "zitat": "Neben der personellen Aufstockung und der Verbesserung der Ausbildung, Ausstattung und der Arbeitsbedingungen von Einsatzkräften setzen wir auf Deeskalationsmaßnahmen, auf mehr und bessere Jugendarbeit und auf Entradikalisierungsprogramme.",
+      "ursachen_ids": [
+        2201
+      ],
+      "pruefsumme": "831e98682b3f9ee9"
+    },
+    {
+      "kennung": "M229",
+      "ebene": "bund",
+      "beschreibung": "Ausbildung von Imamen und islamischen Religionslehrern an deutschen Universitäten ausbauen",
+      "zitat": "Die Ausbildung von Imamen und islamischen Religionslehrer an deutschen Universitäten muss ausgebaut werden, um nicht mehr von der Entsendung von Imamen durch Verbände, die von Autokraten kontrolliert werden, abhängig zu sein.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2201
+      ],
+      "pruefsumme": "c840cc9b94074678"
+    },
+    {
+      "kennung": "M230",
+      "ebene": "land",
+      "beschreibung": "Islamverbände verpflichten, Meldestellen für radikale und extremistische Tendenzen vorzuhalten",
+      "zitat": "Wir werden diese Verbände in die Pflicht nehmen, eigene Meldestellen und andere von ihnen als geeignet angesehene Einrichtungen vorzuhalten, die radikale und extremistische Tendenzen sowie entsprechende Personen in ihrem Umfeld erfassen und melden.",
+      "ursachen_ids": [
+        2201
+      ],
+      "ursachen_offen": [
+        2204
+      ],
+      "pruefsumme": "9f6c63a3df85d27c"
+    },
+    {
+      "kennung": "M231",
+      "ebene": "bund",
+      "beschreibung": "Bürgerräte mit zufällig ausgelosten Menschen unterstützen, stärken und fördern",
+      "zitat": "Das von der Zivilgesellschaft entwickelte Instrument der Bürger*innenräte, wonach zufällig ausgeloste Menschen aus der Mitte der Gesellschaft Fragen aufwerfen und Lösungsvorschläge für verschiedene Probleme entwickeln, wollen wir unterstützen, stärken und fördern.",
+      "ursachen_ids": [
+        2205
+      ],
+      "pruefsumme": "f6abb2cc2f9d3987"
+    },
+    {
+      "kennung": "M232",
+      "ebene": "land",
+      "beschreibung": "Kompetenzzentrum für Ausstiegs- und Distanzierungsarbeit zu Islamismus und Rechtsextremismus einrichten",
+      "zitat": "Zusätzlich richten wir ein Kompetenzzentrum für Deradikalisierungs-, Distanzierungs- und Ausstiegsarbeit in den Bereichen Islamismus und Rechtsextremismus ein.",
+      "ursachen_ids": [
+        2201
+      ],
+      "pruefsumme": "876c7734a746a545"
+    },
+    {
+      "kennung": "M233",
+      "ebene": "land",
+      "beschreibung": "Mehr direkte Demokratie: regelmäßige Volksbefragungen und mehr Mitbestimmung der Bevölkerung",
+      "zitat": "Alle [Land] sollen in unserer Stadt mitreden und mitentscheiden. Wir wollen die demokratische Mitbestimmung ausweiten und vereinfachen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "8294c2268d96fd7e"
+    },
+    {
+      "kennung": "M234",
+      "ebene": "bund",
+      "beschreibung": "EU-Plattformregulierung (DSA) ablehnen und das Netzwerkdurchsetzungsgesetz zurückbauen",
+      "zitat": "Deshalb lehnen wir auch die Implementierung des europäischen „Digital Services Act (DSA)“ in Deutschland entschieden ab und werden das NetzDG rückabwickeln.",
+      "ursachen_ids": [
+        2202
+      ],
+      "pruefsumme": "a07c155fa3913ae6"
+    },
+    {
+      "kennung": "M235",
+      "ebene": "land",
+      "beschreibung": "Vergabe von Hochschulräumen für außerhochschulische politische Agitation unterbinden",
+      "zitat": "Auch die reguläre Vergabe universitärer Räume für Zwecke der außerhochschulischen politischen Agitation muss konsequent unterbunden werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2204
+      ],
+      "pruefsumme": "727ebec33f9297ff"
+    },
+    {
+      "kennung": "M236",
+      "ebene": "land",
+      "beschreibung": "Kommunen befähigen, Mitsprache über Bürgerräte, Beteiligungshaushalte und digitale Dialogformate aktiv zu gestalten",
+      "zitat": "Ob Bürgerräte, Jugendparlamente, Beteiligungshaushalte oder digitale Dialogformate – Kommunen sollen befähigt werden, Mitsprache aktiv zu gestalten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "f3082fb00e17af88"
+    },
+    {
+      "kennung": "M237",
+      "ebene": "land",
+      "beschreibung": "Politische Gesinnung kein Kriterium bei der Bewilligung von Kulturförderung",
+      "zitat": "Die politische Gesinnung darf kein Kriterium bei der Bewilligung von Förderanträgen sein.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "e27e6fcbc22b1c24"
+    },
+    {
+      "kennung": "M238",
+      "ebene": "bund",
+      "beschreibung": "Private Organisationen aus Regulierungsgremien heraushalten",
+      "zitat": "Wir wollen, dass Deutschland darauf drängt, private Organisationen aus Regulierungsgremien herauszuhalten […]",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2203
+      ],
+      "pruefsumme": "7354c72f5b2fc642"
+    },
+    {
+      "kennung": "M239",
+      "ebene": "land",
+      "beschreibung": "Massive öffentliche Investitionen unter anderem in Radikalisierungsprävention und Jugendarbeit",
+      "zitat": "Langfristig führt kein Weg an massiven Investitionen vorbei: in frühkindliche Bildung, Schulen, Schulsozialarbeit, Jugendarbeit, Sucht- und Radikalisierungsprävention sowie in die Betreuung von Geflüchteten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2201
+      ],
+      "pruefsumme": "2e40419186fd65de"
+    },
+    {
+      "kennung": "M240",
+      "ebene": "bund",
+      "beschreibung": "Lehrkräfte zur politischen Neutralität verpflichten und Wahlaufrufe im Unterricht untersagen",
+      "zitat": "Die Lehrer selbst sind unbedingt zur Neutralität verpflichtet. Weder dürfen sie zur Wahl bestimmter Parteien noch zur Teilnahme an Demonstrationen aufrufen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2206
+      ],
+      "pruefsumme": "eebfca26878aa274"
+    },
+    {
+      "kennung": "M241",
+      "ebene": "land",
+      "beschreibung": "Offene Debatten im Hochschulraum gegen Konformitätsdruck stärken",
+      "zitat": "Wir werden: […] Studentenverbindungen und die Vielfältigkeit in der akademischen Landschaft im freiheitlich-demokratischen Rahmen schützen und Vereinigungsfreiheit sowie offene Debatten im Hochschulraum gegen politischen oder sozialen Konformitätsdruck stärken.",
+      "ursachen_ids": [
+        2205
+      ],
+      "pruefsumme": "38ff23fea356c106"
+    },
+    {
+      "kennung": "M242",
+      "ebene": "bund",
+      "beschreibung": "Mandatszeiten für Abgeordnete und Bundeskanzler begrenzen",
+      "zitat": "Um unser Ideal des Bürgerabgeordneten zu verwirklichen, fordern wir eine Begrenzung der Mandatszeit für Bundeskanzler auf drei und für Abgeordnete auf insgesamt vier Legislaturperioden in EU-Parlament, Bundestag oder Landesparlament.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2203
+      ],
+      "pruefsumme": "450d153ee7cb1b1e"
+    },
+    {
+      "kennung": "M243",
+      "ebene": "land",
+      "beschreibung": "Professionelle Ausstiegsberatung für Radikalisierte statt bezahlter Spitzel",
+      "zitat": "Professionelle Ausstiegsberatung für Menschen, die sich radikalisiert haben, ersetzt die fragwürdige Praxis bezahlter Spitzel.",
+      "ursachen_ids": [
+        2201
+      ],
+      "pruefsumme": "7bd28df4cd9b18ba"
+    },
+    {
+      "kennung": "M244",
+      "ebene": "land",
+      "beschreibung": "Direkte Demokratie außerhalb von Wahlen deutlich erleichtern und erweitern",
+      "zitat": "[Partei] will: die Anwendung aller Formen direkter Demokratie außerhalb von Wahlen deutlich erleichtern und erweitern,",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "16d67c251166696c"
+    },
+    {
+      "kennung": "M245",
+      "ebene": "bund",
+      "beschreibung": "Stärkere Kontrolle von Medienfusionen zur Erhaltung der Meinungsvielfalt",
+      "zitat": "Um Meinungsvielfalt zu erhalten, müssen Fusionen bei Medien stärker kontrolliert werden. Non-Profit-Journalismus muss als gemeinnützig anerkannt werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2206
+      ],
+      "pruefsumme": "f54b43dd97adb7df"
+    },
+    {
+      "kennung": "M246",
+      "ebene": "land",
+      "beschreibung": "Organisationen, die gegen die demokratische Grundordnung stehen, keine staatlichen Fördergelder geben.",
+      "zitat": "Mit einer rechtssicheren Demokratieklausel werden wir sicherstellen, dass Organisationen und Initiativen, die sich gegen die freiheitlich-demokratische Grundordnung richten oder menschenfeindliche Positionen vertreten, keine staatlichen Fördergelder erhalten.",
+      "ursachen_ids": [
+        2201
+      ],
+      "pruefsumme": "ca35f7a1042e4f9b"
+    },
+    {
+      "kennung": "M247",
+      "ebene": "land",
+      "beschreibung": "Eine Strategie entwickeln, die Prävention, Intervention und Repression an Schulen verbindet.",
+      "zitat": "Darauf aufbauend werden wir eine klare Strategie entwickeln, die Prävention, Intervention und Repression konsequent miteinander verbindet.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2204
+      ],
+      "pruefsumme": "5579bef049efb4c5"
+    },
+    {
+      "kennung": "M248",
+      "ebene": "land",
+      "beschreibung": "Regelmäßige, repräsentativ besetzte Bürgerräte auf Landes- und Kommunalebene einrichten",
+      "zitat": "Darüber hinaus setzen wir uns für regelmäßige Bürgerräte auf Landes- und Kommunalebene ein, die repräsentativ zusammengesetzt sind und Empfehlungen zu zentralen Zukunftsfragen erarbeiten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "b05976e7d7abdcb3"
+    },
+    {
+      "kennung": "M249",
+      "ebene": "land",
+      "beschreibung": "Beratungsstellen, Aussteigerprogramme und zivilgesellschaftliche Initiativen werden verlässlich unterstützt.",
+      "zitat": "Beratungsstellen, Aussteigerprogramme und zivilgesellschaftliche Initiativen leisten wichtige Arbeit. Sie werden verlässlich unterstützt.",
+      "ursachen_ids": [
+        2201
+      ],
+      "pruefsumme": "1d34a32dbfa2ea5b"
+    },
+    {
+      "kennung": "M250",
+      "ebene": "land",
+      "beschreibung": "Landesförderprogramm für kulturelle Teilhabe und Vielfalt, das demokratische Teilhabe fördert",
+      "zitat": "Wir wollen: […] ein Landesförderprogramm zur kulturellen Teilhabe und Vielfalt, dass sich der Förderung von offenen partizipativen Ansätzen in der Kultur widmet, lokale Kreativwirtschaft und demokratische Teilhabe fördert,",
+      "ursachen_ids": [
+        2206
+      ],
+      "pruefsumme": "6860ce47556da31d"
+    },
+    {
+      "kennung": "M251",
+      "ebene": "bund",
+      "beschreibung": "Abschaffung staatlich finanzierter Meldestellen für Meinungsäußerungen",
+      "zitat": "Wir fordern die Abschaffung von Meldestellen und deren Finanzierung mit Steuergeldern.",
+      "ursachen_ids": [
+        2205
+      ],
+      "pruefsumme": "1aa30ab047524e88"
+    },
+    {
+      "kennung": "M252",
+      "ebene": "bund",
+      "beschreibung": "Einbürgerung ausgeschlossen bei antisemitischen, rassistischen oder fremdenfeindlichen Motiven und bei Ablehnung der Werte des Grundgesetzes",
+      "zitat": "Antisemitische, rassistische, fremdenfeindliche Handlungen oder Motive stellen einen strengen Ausschlussgrund dar. Auch wer vorbestraft ist oder die Werte unseres Grundgesetzes nicht teilt, darf nicht eingebürgert werden.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "d70d05365e5a0954"
+    },
+    {
+      "kennung": "M253",
+      "ebene": "bund",
+      "beschreibung": "Entgelttransparenzrichtlinie der EU zügig und vollständig umsetzen; mehr Transparenz über Lohngefälle, verbindlichere und einklagbare Regeln",
+      "zitat": "Deshalb werden wir die EU-Entgelttransparenzrichtlinie zügig und vollständig umsetzen. Wir wollen mehr Transparenz über Lohngefälle herstellen, die Regeln verbindlicher und besser einklagbar machen und dadurch Gleichstellung wirksam voranbringen.",
+      "ursachen_ids": [
+        2203
+      ],
+      "pruefsumme": "43285bdc3de5b7e1"
+    },
+    {
+      "kennung": "M254",
+      "ebene": "land",
+      "beschreibung": "Konsequent gegen Antisemitismus, Rassismus und menschenverachtende Ideologie an Hochschulen vorgehen und Prävention stärken",
+      "zitat": "Wir gehen entschlossen gegen Antisemitismus, Islamismus, Rassismus, Diskriminierung und jede menschenverachtende Ideologie vor und stärken Prävention.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "2cd1e7f441164b09"
+    },
+    {
+      "kennung": "M255",
+      "ebene": "land",
+      "beschreibung": "Empathie als Thema in einem Wahlpflichtfach einführen und Fähigkeit zum Kompromiss fördern",
+      "zitat": "Empathie, Mitgefühl und die Fähigkeit zum Kompromiss wollen wir gezielt fördern. Dafür führen wir in einem Wahlpflichtfach das Thema Empathie ein.",
+      "ursachen_ids": [
+        2205,
+        2206
+      ],
+      "pruefsumme": "5bb8441032ab9125"
+    },
+    {
+      "kennung": "M256",
+      "ebene": "bund",
+      "beschreibung": "Pflicht, Interessenvertretungen und Sachverständige bei Gesetzentwürfen der Regierung offenzulegen",
+      "zitat": "Den Gesetzesvorlagen der Bundesregierung muss eine Auflistung der Interessenvertreter*innen sowie der Sachverständigen beigefügt werden, deren Stellungnahmen bei der Erstellung und Erarbeitung berücksichtigt wurden oder die sonst mitgewirkt haben (legislative Fußspur).",
+      "ursachen_ids": [
+        2203
+      ],
+      "pruefsumme": "d6e7fa75e54fd649"
+    },
+    {
+      "kennung": "M257",
+      "ebene": "bund",
+      "beschreibung": "Öffentlich-rechtlichen Rundfunk auf Neutralität, Meinungsvielfalt und Sparsamkeit verpflichten",
+      "zitat": "Es braucht ein Informationsangebot, das nicht überwältigt, belehrt oder bevormundet, nicht tendenziös oder einseitig ist. Wir verpflichten den ÖRR zu seinem Kernauftrag: Sparsamkeit, mehr Meinungsvielfalt und Neutralität.",
+      "ursachen_ids": [
+        2205,
+        2206
+      ],
+      "pruefsumme": "dbe64b8e5a3090dd"
+    },
+    {
+      "kennung": "M258",
+      "ebene": "land",
+      "beschreibung": "Lehnt verpflichtende Gendersprache in staatlichen Einrichtungen ab.",
+      "zitat": "Wir lehnen verpflichtende Gendersprache in staatlichen Einrichtungen und Institutionen ab.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "f8d559e2ceaaa833"
+    },
+    {
+      "kennung": "M259",
+      "ebene": "land",
+      "beschreibung": "Stärkere Unterstützung von Beratungsstellen und zivilgesellschaftlichen Akteuren in der Extremismusprävention in der Fläche",
+      "zitat": "Wir setzen uns außerdem für eine stärkere Unterstützung zivilgesellschaftlicher Akteur*innen und Beratungsstellen in der Extremismusprävention in der Fläche [Land] ein.",
+      "ursachen_ids": [
+        2201
+      ],
+      "pruefsumme": "935fc9b15a0394ec"
+    },
+    {
+      "kennung": "M260",
+      "ebene": "bund",
+      "beschreibung": "Feinde der freiheitlich-demokratischen Grundordnung schneller aus dem Öffentlichen Dienst entfernen",
+      "zitat": "Feinde unserer freiheitlich-demokratischen Grundordnung sind schneller aus dem Öffentlichen Dienst zu entfernen.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "e348f1b7388fa2c9"
+    },
+    {
+      "kennung": "M261",
+      "ebene": "bund",
+      "beschreibung": "Volksbegehren für verbindliche Volksabstimmungen über Gesetze auf Bundesebene",
+      "zitat": "Per Volksbegehren soll es auch auf Bundesebene möglich werden, eine verbindliche Volksabstimmung über Gesetzesvorschläge bzw. Gesetzesrücknahmen (Heizungsgesetz) herbeizuführen.",
+      "ursachen_ids": [
+        2203
+      ],
+      "pruefsumme": "51ac5e34913ef54d"
+    },
+    {
+      "kennung": "M262",
+      "ebene": "bund",
+      "beschreibung": "Kein Platz im öffentlichen Dienst für Menschen mit erwiesenen verfassungsfeindlichen Einstellungen",
+      "zitat": "Für Menschen mit erwiesenen verfassungsfeindlichen Einstellungen ist im öffentlichen Dienst kein Platz.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "fa956126bbbeb332"
+    },
+    {
+      "kennung": "M263",
+      "ebene": "bund",
+      "beschreibung": "Islamischen Religionsunterricht frei von islamistischer oder ausländisch gesteuerter Einflussnahme anbieten",
+      "zitat": "Islamischer Religionsunterricht muss frei von Einflüssen islamistischer oder aus dem Ausland gesteuerter Organisationen angeboten werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2201
+      ],
+      "pruefsumme": "adc1c5f776168529"
+    },
+    {
+      "kennung": "M264",
+      "ebene": "land",
+      "beschreibung": "Bundesratsinitiative: Bekenntnis der Schöffen und ehrenamtlichen Richter zur freiheitlich-demokratischen Grundordnung",
+      "zitat": "Wir bringen eine Bundesratsinitiative auf den Weg mit dem Ziel, festzuschreiben, dass Schöff*innen und andere ehrenamtliche Richter*innen sich zur freiheitlich-demokratischen Grundordnung bekennen müssen",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2204
+      ],
+      "pruefsumme": "14025344c53d316f"
+    },
+    {
+      "kennung": "M265",
+      "ebene": "land",
+      "beschreibung": "Förderung von Initiativen, die Begegnung und Dialog ermöglichen und respektvolles Miteinander in religiöser Vielfalt stärken (Gesprächs- und Respektkultur)",
+      "zitat": "Wir werden Initiativen unterstützen, die Begegnung und Dialog ermöglichen und das respektvolle Miteinander in religiöser Vielfalt stärken.",
+      "ursachen_ids": [
+        2205,
+        2206
+      ],
+      "pruefsumme": "64653e9de43e7b38"
+    },
+    {
+      "kennung": "M266",
+      "ebene": "bund",
+      "beschreibung": "Mindestlohn von 16 Euro bis spätestens 2026 mit dauerhafter Anpassung an den Medianlohn",
+      "zitat": "Um die Europäische Richtlinie klar zu erfüllen, fordern wir spätestens bis 2026 einen Mindestlohn von 16 Euro, der dauerhaft an die Entwicklung des Medianlohns angepasst werden soll, jedoch mindestens jährlich um die Inflationsrate steigen muss.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2203
+      ],
+      "pruefsumme": "4c502e11cceae8be"
+    },
+    {
+      "kennung": "M267",
+      "ebene": "land",
+      "beschreibung": "Dialog mit Kirchen und Religionsgemeinschaften intensivieren.",
+      "zitat": "Wir werden den Dialog mit den Kirchen und allen Religionsgemeinschaften intensivieren.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "85d0070ae5b92198"
+    },
+    {
+      "kennung": "M268",
+      "ebene": "land",
+      "beschreibung": "Schülervertretungen und Klassenrat als Instrumente für Konfliktlösung stärken",
+      "zitat": "Wir stärken Schüler*innenvertretungen und den wöchentlichen Klassenrat als Instrumente für Partizipation, demokratische Praxis und Konfliktlösung.",
+      "ursachen_ids": [
+        2205
+      ],
+      "pruefsumme": "80016d8bd4a43677"
+    },
+    {
+      "kennung": "M269",
+      "ebene": "land",
+      "beschreibung": "Überarbeitung der Landeskonzeption „Demokratie. Vielfalt. Respekt.“ gegen Rechtsextremismus, Antisemitismus und Rassismus",
+      "zitat": "Parallel überarbeiten wir die veraltete Landeskonzeption „Demokratie. Vielfalt. Respekt.“ gegen Rechtsextremismus, Antisemitismus und Rassismus",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "1a836845223f494c"
+    },
+    {
+      "kennung": "M270",
+      "ebene": "land",
+      "beschreibung": "Landesförderung für politische Stiftungen soll gesetzlich untersagt werden.",
+      "zitat": "Wir werden jegliche Landesförderung für politische Stiftungen gesetzlich untersagen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2204
+      ],
+      "pruefsumme": "0455af57da4874b7"
+    },
+    {
+      "kennung": "M271",
+      "ebene": "land",
+      "beschreibung": "Aussteigerprogramme bedarfsgerecht fortführen.",
+      "zitat": "Wir treten rechtsextremer Gewalt mit der vollen Härte des Rechtsstaates entgegen und werden Aussteigerprogramme bedarfsgerecht fortführen.",
+      "ursachen_ids": [
+        2201
+      ],
+      "pruefsumme": "9f1209f3b506dbb3"
+    },
+    {
+      "kennung": "M272",
+      "ebene": "land",
+      "beschreibung": "Demokratiebildung als Querschnittsaufgabe in Ausbildung und Lehrplänen verankern, auch zu Desinformation",
+      "zitat": "Für eine demokratischere Schule und ein gesundes Lernklima wollen wir: […] Demokratiebildung als Querschnittsaufgabe sowie Medienkompetenz verbindlich in der pädagogischen Ausbildung und in den Lehrplänen verankern, insbesondere im Umgang mit Desinformation, Cybermobbing und digitaler Mündigkeit.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "9c1bc24da67a4f83"
+    },
+    {
+      "kennung": "M273",
+      "ebene": "land",
+      "beschreibung": "Pflicht zu einer bestimmten Gendersprache ablehnen; Gendern bleibt jedem freigestellt",
+      "zitat": "Wer gendern […], soll dies tun, eine Pflicht lehnen wir aber ab.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "3c6774c13504c3c1"
+    },
+    {
+      "kennung": "M274",
+      "ebene": "bund",
+      "beschreibung": "Rundfunk-Reform, damit mehr Meinungsvielfalt berücksichtigt wird, bei schlankerem öffentlich-rechtlichem Rundfunk",
+      "zitat": "In der Bevölkerung entsteht zunehmend der Eindruck, dass der öffentlich-rechtliche Rundfunk (ÖRR) mehr Meinungsvielfalt benötigt und die sachliche Berichterstattung mehr Raum einnehmen muss. Wir setzen uns dafür ein, dass dem idealerweise im Rahmen einer „Reform von Innen“ Rechnung getragen wird.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2206
+      ],
+      "pruefsumme": "298a392ac1534334"
+    },
+    {
+      "kennung": "M275",
+      "ebene": "land",
+      "beschreibung": "Austausch mit israelischen Schulen und Partnerstadt sowie Dialog zu Glauben und Demokratie ausbauen",
+      "zitat": "Wir werden zudem den Austausch mit [Land] Partnerstadt Tel Aviv stärken und den Dialog zu Fragen bezüglich Glauben und Demokratie ausbauen.",
+      "ursachen_ids": [
+        2205,
+        2206
+      ],
+      "pruefsumme": "70644665536925e3"
+    },
+    {
+      "kennung": "M276",
+      "ebene": "bund",
+      "beschreibung": "Strafrecht nicht zulasten der Meinungsfreiheit ausweiten",
+      "zitat": "Wir fordern, dass das Strafrecht nicht unangemessen zu Lasten der Meinungsfreiheit ausgeweitet wird.",
+      "ursachen_ids": [
+        2205
+      ],
+      "pruefsumme": "91521f4fe1d6292a"
+    },
+    {
+      "kennung": "M277",
+      "ebene": "bund",
+      "beschreibung": "Social-Media-Gesetz für Kinder nach australischem Vorbild",
+      "zitat": "Wir fordern ein Social-Media-Gesetz nach australischem Vorbild, damit die Kinder nicht in einem virtuellen Paralleluniversum verschwinden […]",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2202
+      ],
+      "pruefsumme": "e12aa97e658d340f"
+    },
+    {
+      "kennung": "M278",
+      "ebene": "bund",
+      "beschreibung": "Freie Listenwahl mit Kumulieren und Streichen von Kandidaten einführen",
+      "zitat": "Deshalb treten wir für die „freie Listenwahl“ ein, mit der Möglichkeit des Kumulierens und Streichens von Kandidaten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2203
+      ],
+      "pruefsumme": "d47f22d9f9da03dc"
+    },
+    {
+      "kennung": "M279",
+      "ebene": "land",
+      "beschreibung": "Verfassungsschutz neu ausrichten, Abwehr politischer Militanz priorisieren",
+      "zitat": "Ziel ist eine verhältnismäßige Ausrichtung der Behörde auf neue Schwerpunkte. In der Arbeit der Landesbehörde sollen zukünftig die Bereiche Cybercrime, Spionageabwehr und Abwehr politischer Militanz priorisiert werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2204
+      ],
+      "pruefsumme": "f2c01a8813cbaa3b"
+    },
+    {
+      "kennung": "M280",
+      "ebene": "land",
+      "beschreibung": "Projekte der Gewalt- und Extremismusprävention (u. a. in Halle) vom Land weiter fördern",
+      "zitat": "Projekte der Gewalt- und Extremismusprävention wie die in der Trägerschaft der Halleschen Jugendwerkstatt leisten einen wichtigen Beitrag und sollen weiter vom Land gefördert werden.",
+      "ursachen_ids": [
+        2201
+      ],
+      "pruefsumme": "63ae92205b634b8b"
+    },
+    {
+      "kennung": "M281",
+      "ebene": "land",
+      "beschreibung": "Klare Leitlinien und transparente Beschwerdewege an Hochschulen für eine pluralistische Wissenschaftskultur",
+      "zitat": "Klare Leitlinien und transparente Beschwerdewege sollen dazu beitragen, eine pluralistische Wissenschaftskultur zu sichern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "c1c1d678efabf891"
+    },
+    {
+      "kennung": "M282",
+      "ebene": "land",
+      "beschreibung": "Keine Unterstützung für Aktivitäten, die unter Forschungsanschein Vorurteile gegen die Polizei schüren",
+      "zitat": "Wir unterstützen auch keine Aktivitäten, die unter dem Anschein wissenschaftlicher Forschung Gesinnungsschnüffelei betreiben und Vorurteile gegen die Polizei schüren.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "16b0b952305434d1"
+    },
+    {
+      "kennung": "M283",
+      "ebene": "land",
+      "beschreibung": "Verpflichtender Sozialkundeunterricht über die gesamte Schulzeit; politische Bildung ausbauen",
+      "zitat": "Die frühe Demokratiebildung werden wir stärken, denn sie beginnt bereits in der Kita und im Klassenzimmer. […] Dafür braucht es eine moderne politische Bildung, klare und verbindliche Mitbestimmungsrechte sowie eine Drittelparität in Schulkonferenzen. Wir möchten verpflichtenden Sozialkundeunterricht von der fünften bis zur zwölften bzw. dreizehnten Jahrgangsstufe.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "f21c78db36f9bd08"
+    },
+    {
+      "kennung": "M284",
+      "ebene": "land",
+      "beschreibung": "Dialogformat „Parlament der Dörfer“ einführen, das den Austausch zwischen Dörfern und Politik ermöglicht",
+      "zitat": "Zudem planen wir die Einführung des Dialogformats „Parlament der Dörfer“, das den Austausch zwischen Dörfern und der Politik ermöglicht.",
+      "ursachen_ids": [
+        2205
+      ],
+      "pruefsumme": "37173e184ea9e405"
+    },
+    {
+      "kennung": "M285",
+      "ebene": "land",
+      "beschreibung": "Einführung von Friedensbildung als verbindlichem Lehrbestandteil an [Land] Schulen",
+      "zitat": "Wir fordern die Einführung von Friedensbildung als verbindlichem Lehrbestandteil an [Land] Schulen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2204
+      ],
+      "pruefsumme": "eb459d046945557d"
+    },
+    {
+      "kennung": "M286",
+      "ebene": "land",
+      "beschreibung": "Öffentliche Anhörungen, Beteiligungshaushalte und Bürgerdialoge sollen zur Regel werden",
+      "zitat": "Öffentliche Anhörungen zu Gesetzesvorhaben, Beteiligungshaushalte sowie Bürgerdialoge in Regionen mit strukturellen Problemen sollen zur Regel werden.",
+      "ursachen_ids": [
+        2205,
+        2206
+      ],
+      "pruefsumme": "c1877acdc6c99bf7"
+    },
+    {
+      "kennung": "M287",
+      "ebene": "bund",
+      "beschreibung": "Bundespräsident direkt vom Volk wählen lassen",
+      "zitat": "Der Bundespräsident, als höchster Repräsentant des Staates, soll direkt vom Volk gewählt werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2203
+      ],
+      "pruefsumme": "6ba49e9207bc9439"
+    },
+    {
+      "kennung": "M288",
+      "ebene": "land",
+      "beschreibung": "Landesaktionsplan gegen Einsamkeit bündelt, unterstützt und finanziert soziale Angebote; Einsamkeit wird als Radikalisierungsrisiko genannt",
+      "zitat": "Denn Einsamkeit macht krank und soziale Isolation kann Radikalisierung und Extremismus fördern. […] Mit einem Landesaktionsplan gegen Einsamkeit wollen wir diese Maßnahmen bündeln, unterstützen und finanzieren.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2201
+      ],
+      "pruefsumme": "edd21ea44520bfca"
+    },
+    {
+      "kennung": "M289",
+      "ebene": "bund",
+      "beschreibung": "Justizwahlausschuss einrichten und Richter nach Qualifikation besetzen",
+      "zitat": "Wir unterstützen daher den Modellvorschlag des Deutschen Richterbundes, einen Justizwahlausschuss einzurichten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2203
+      ],
+      "pruefsumme": "ec3b03fde6c61472"
+    },
+    {
+      "kennung": "M290",
+      "ebene": "land",
+      "beschreibung": "Einsatz für eine Weiterentwicklung des Grundgesetzes angesichts des Erstarkens rechtsextremer Kräfte.",
+      "zitat": "Angesichts des Erstarkens rechtsextremer Kräfte setzt sich [Land] für eine Weiterentwicklung des Grundgesetzes ein.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "ec15c5bd14ebea34"
+    },
+    {
+      "kennung": "M291",
+      "ebene": "land",
+      "beschreibung": "Förderprogramm für Nachbarschaftsregale und Plauderbänke zur Stärkung des Zusammenhalts im Quartier",
+      "zitat": "Ein Förderprogramm schaffen, mit dem wir lokale Initiativen für Nachbarschaftsregale und Plauderbänke unterstützen, um den sozialen Zusammenhalt im Quartier zu stärken.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2206
+      ],
+      "pruefsumme": "c8c9d0399f108788"
+    },
+    {
+      "kennung": "M292",
+      "ebene": "land",
+      "beschreibung": "Pflichtfach Ethik/Lebenskunde personell stärken und interkulturell sowie werteorientiert ausrichten",
+      "zitat": "Die zentrale Auseinandersetzung mit ethischen Fragen, Werten, Weltanschauungen und Religionen erfolgt im Pflichtfach Ethik/Lebenskunde. Dieses Fach ist personell deutlich zu stärken und interkulturell sowie werteorientiert zu profilieren.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2204
+      ],
+      "pruefsumme": "174205d1068a5884"
+    },
+    {
+      "kennung": "M293",
+      "ebene": "land",
+      "beschreibung": "Bürgerräte einführen, die komplexe Themen wie Mobilität oder Infrastruktur gemeinsam beraten.",
+      "zitat": "Bürgerräte nach bewährten Vorbildern werden eingeführt, um komplexe Themen wie Mobilität oder Infrastruktur gemeinsam zu beraten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205,
+        2206
+      ],
+      "pruefsumme": "02d2d9c75a39fb4f"
+    },
+    {
+      "kennung": "M294",
+      "ebene": "land",
+      "beschreibung": "Einführung eines Landesdemokratiefördergesetzes zur nachhaltigen Sicherung des zivilgesellschaftlichen Engagements",
+      "zitat": "Wir führen ein Landesdemokratiefördergesetz ein und unterstützen und sichern ihr Engagement und ihre Arbeit damit nachhaltig.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2204
+      ],
+      "pruefsumme": "5901134b1e6fdc20"
+    },
+    {
+      "kennung": "M295",
+      "ebene": "land",
+      "beschreibung": "Untersagung des Genderns in Schule und Verwaltung.",
+      "zitat": "Untersagung des Genderns und verbindliche Einhaltung der Vorgaben des Rates für deutsche Rechtschreibung in Schule und Verwaltung in [Land].",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "588cb55c4c1bd667"
+    },
+    {
+      "kennung": "M296",
+      "ebene": "land",
+      "beschreibung": "Demokratiebildung als fächerübergreifendes Leitprinzip im Schulalltag, Schülermitbestimmung stärken",
+      "zitat": "Wir setzen uns entschieden dafür ein, die Mitbestimmung von Schüler*innen auf allen Ebenen der Schule zu stärken, um Demokratie für junge Menschen früh erfahrbar zu machen. Demokratiebildung soll als zentrales Leitprinzip fächerübergreifend in den Schulalltag integriert werden, sodass Schüler*innen aktiv die Inhalte des Unterrichts mitgestalten können.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "5bcc6205ae252643"
+    },
+    {
+      "kennung": "M297",
+      "ebene": "land",
+      "beschreibung": "Hochschulen: Bekenntnis zur freiheitlich-demokratischen Grundordnung und zum Grundgesetz als Voraussetzung.",
+      "zitat": "Wir werden: […] ein Bekenntnis zur freiheitlich demokratischen Grundordnung, zum Grundgesetz und zu grundsätzlichen Freiheitsrechten voraussetzen, dazu gehört auch die Anerkennung des Existenzrechts Israels.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "ca22811abf66fba3"
+    },
+    {
+      "kennung": "M298",
+      "ebene": "bund",
+      "beschreibung": "Dreijährige Karenzzeit für Regierungsmitglieder vor einem Wechsel in befasste Unternehmen",
+      "zitat": "Bundesminister*innen und parlamentarische Staatssekretär*innen müssen nach ihrem Ausscheiden aus dem Amt mindestens drei Jahre bzw. für die Dauer des zeitlichen Anspruchs auf Übergangsgeld warten, bevor sie in Unternehmen wechseln, mit deren wirtschaftlichen Interessen sie zuvor politisch befasst waren.",
+      "ursachen_ids": [
+        2203
+      ],
+      "pruefsumme": "da847dcf8c20606e"
+    },
+    {
+      "kennung": "M299",
+      "ebene": "land",
+      "beschreibung": "Angebote gerichtsnaher Mediation in zivil- und verwaltungsrechtlichen Streitigkeiten ausweiten.",
+      "zitat": "Deshalb wollen wir Angebote einer gerichtsnahen Mediation in zivil- und verwaltungsrechtlichen Streitigkeiten ausweiten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205,
+        2206
+      ],
+      "pruefsumme": "b37b7719c3b695a3"
+    },
+    {
+      "kennung": "M300",
+      "ebene": "land",
+      "beschreibung": "Finanzierung der Täter*innenarbeit langfristig absichern.",
+      "zitat": "Die Finanzierung der Täter*innenarbeit ist langfristig abzusichern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2201
+      ],
+      "pruefsumme": "c749a54f0276daf7"
+    },
+    {
+      "kennung": "M301",
+      "ebene": "land",
+      "beschreibung": "Verstärkter Einsatz von Jugend- und Sozialarbeit sowie Streetwork als verlässliche Anlaufstelle",
+      "zitat": "Darüber hinaus ist ein verstärkter Einsatz von Jugend- und Sozialarbeiterinnen und -arbeitern sowie Streetworkerinnen und Streetworkern notwendig, um eine verlässliche Anlaufstelle zu schaffen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2201
+      ],
+      "pruefsumme": "7f0a74a47bc52fc3"
+    },
+    {
+      "kennung": "M302",
+      "ebene": "land",
+      "beschreibung": "Aufklärungsarbeit an Schulen, in der Erwachsenenbildung und in Kommunen über verfassungsfeindliche Tendenzen und die Werte der Demokratie",
+      "zitat": "Damit schützen wir die Verfassung durch eine Bildungsoffensive statt Bespitzelung: Wir wollen aktive Aufklärungsarbeit an Schulen, in der Erwachsenenbildung und in Kommunen über verfassungsfeindliche Tendenzen und die Werte unserer Demokratie.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "f674bcb282be0ff5"
+    },
+    {
+      "kennung": "M303",
+      "ebene": "land",
+      "beschreibung": "Disziplinarverfahren gegen Verfassungsfeinde im öffentlichen Dienst zentral bündeln und personell besser ausstatten",
+      "zitat": "Wir beenden das Zögern: Durch eine zentrale Bündelung von Disziplinarverfahren und eine bessere personelle Ausstattung sorgen wir dafür, dass Verfassungsfeinde zügig und rechtssicher aus dem Dienst entfernt werden.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "50e6ea89be83d60a"
+    },
+    {
+      "kennung": "M304",
+      "ebene": "land",
+      "beschreibung": "Verpflichtende Vermittlung von Demokratiebildung, Diskriminierungskritik und kommunikativen Kompetenzen in Aus- und Fortbildung der Sicherheitsbehörden",
+      "zitat": "Deshalb müssen Demokratiebildung, Diskriminierungskritik und kommunikative Kompetenzen in Aus- und Fortbildung sowie im Studium gefördert werden.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "8869da2c312ac877"
+    },
+    {
+      "kennung": "M305",
+      "ebene": "land",
+      "beschreibung": "Stärkung der Deradikalisierungsarbeit und der Beratungsstellen gegen Verschwörungsideologien sowie Ausbau der Arbeit mit Jugendlichen und Männern",
+      "zitat": "Neben einer Gesamtstrategie gegen Rechtsextremismus benötigen wir eine Stärkung der Deradikalisierungsarbeit, der Beratungsstellen gegen Verschwörungsideologien und Hasskriminalität sowie einen Ausbau der zielgruppenspezifischen Arbeit mit Jugendlichen und Männern.",
+      "ursachen_ids": [
+        2201
+      ],
+      "pruefsumme": "04e5a3b563b299d4"
+    },
+    {
+      "kennung": "M306",
+      "ebene": "land",
+      "beschreibung": "Staatliche Stellen sollen Bürger in sozialen Netzwerken nicht blockieren",
+      "zitat": "Staatliche Stellen und mit Steuergeldern finanzierte Einrichtungen dürfen Bürger in sozialen Netzwerken nicht wegen unliebsamer […] Meinungsäußerungen blockieren und dadurch von Debatten ausschließen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "d2696193b70731c4"
+    },
+    {
+      "kennung": "M307",
+      "ebene": "land",
+      "beschreibung": "Träger politischer Bildung auskömmlich finanzieren und ihre inhaltliche Unabhängigkeit sichern",
+      "zitat": "Deshalb wollen wir Träger politischer Bildung auskömmlich finanzieren und ihre inhaltliche Unabhängigkeit sichern.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "f8222982c3a6bff9"
+    },
+    {
+      "kennung": "M308",
+      "ebene": "bund",
+      "beschreibung": "Weisungsgebundenheit der Staatsanwaltschaft abschaffen",
+      "zitat": "Die Weisungsgebundenheit der Staatsanwaltschaft wollen wir abschaffen und damit die Abhängigkeit von den Justizministerien beenden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2203
+      ],
+      "pruefsumme": "f8d1bb108c232b2b"
+    },
+    {
+      "kennung": "M309",
+      "ebene": "land",
+      "beschreibung": "Anliegen der Bauernproteste in einen strukturierten Dialog überführen.",
+      "zitat": "Die Anliegen der Bauernproteste werden ernst genommen und in einen strukturierten Dialog überführt.",
+      "ursachen_ids": [
+        2205
+      ],
+      "pruefsumme": "99ef3e8be39e313c"
+    },
+    {
+      "kennung": "M310",
+      "ebene": "land",
+      "beschreibung": "Ausbau von Friedensbildung, Friedensinitiativen und Städtepartnerschaften",
+      "zitat": "Ausbau von Friedensbildung, Friedensinitiativen und Städtepartnerschaften.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2204
+      ],
+      "pruefsumme": "6177db6369f3a4f2"
+    },
+    {
+      "kennung": "M311",
+      "ebene": "land",
+      "beschreibung": "Bürger*innenräte auf Landes- und Kommunalebene für gemeinsam getragene Entscheidungen einführen",
+      "zitat": "Bürger*innenräte: Wir stärken die Einbeziehung der Bürger*innen auf Landes- und Kommunalebene, für Entscheidungen, die gemeinsam getragen werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "a5585b85bc49e6dc"
+    },
+    {
+      "kennung": "M312",
+      "ebene": "land",
+      "beschreibung": "Extremismuskategorie „Delegitimierung des Staates“ im Verfassungsschutz abschaffen",
+      "zitat": "[Partei] fordert deshalb die sofortige Abschaffung der Extremismuskategorie der sogenannten „verfassungsschutzrelevanten Delegitimierung des Staates“.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "980f1565b1455f01"
+    },
+    {
+      "kennung": "M313",
+      "ebene": "bund",
+      "beschreibung": "Neuer Pakt für den Rechtsstaat: mehr Personal und bessere Besoldung für Gerichte, Digitalisierung, schnellere Verfahren",
+      "zitat": "Wir brauchen eine bessere personelle Ausstattung unserer Gerichte, eine konkurrenzfähige Besoldung, einen Digitalisierungsschub und schnellere Gerichtsverfahren.",
+      "ursachen_ids": [
+        2203
+      ],
+      "pruefsumme": "c9cbdd848e432e1d"
+    },
+    {
+      "kennung": "M314",
+      "ebene": "bund",
+      "beschreibung": "Bessere historische Bildung und Strukturen historischer Bildung fördern",
+      "zitat": "Geschichtsverfälschungen und Desinformation gefährden die Demokratie im Kern. Deshalb brauchen wir eine bessere historische Bildung zur Stärkung des kritischen Geschichtsbewusstseins.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "a330e44be8bfb55e"
+    },
+    {
+      "kennung": "M315",
+      "ebene": "land",
+      "beschreibung": "Einen radikalen Trägerverein und die zugehörige Moschee in [Land] verbieten.",
+      "zitat": "Den vom [Land] Verfassungsschutz beobachteten radikalen Trägerverein „Islamische Gemeinschaft [Land] e.V.“ der Al-Nur-Moschee in [Land] wollen wir verbieten.",
+      "ursachen_ids": [
+        2201
+      ],
+      "pruefsumme": "d14a40fe8260c1ae"
+    },
+    {
+      "kennung": "M316",
+      "ebene": "land",
+      "beschreibung": "Unabhängige Forschungsstelle Demokratie einrichten, die Analysen demokratiefeindlicher Bestrebungen veröffentlicht",
+      "zitat": "Für einen Verfassungsschutz, der die Verfassung schützt, werden wir: […] eine unabhängige Forschungsstelle „Demokratie” einrichten, die wissenschaftliche Analysen demokratiefeindlicher und -gefährdender Bestrebungen erarbeitet, der Öffentlichkeit durch Publikationen und Bildungsangebote zugänglich macht",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2204
+      ],
+      "pruefsumme": "869592b80efba909"
+    },
+    {
+      "kennung": "M317",
+      "ebene": "bund",
+      "beschreibung": "Vereine, die vom Verfassungsschutz beobachtet werden, von staatlichen Kooperationen und Geldern ausschließen; Geförderte bekennen sich zur Grundordnung",
+      "zitat": "Vereine und Verbände, die oder deren Mitglieder vom Verfassungsschutz beobachtet werden, schließen wir von staatlichen Kooperationen und Geldern aus. Alle Einrichtungen, die Geld vom Staat erhalten wollen, müssen sich zur freiheitlich-demokratischen Grundordnung bekennen und eine Erklärung gegen Antisemitismus abgeben.",
+      "ursachen_ids": [
+        2204
+      ],
+      "pruefsumme": "af537b4c2e7d8b49"
+    },
+    {
+      "kennung": "M318",
+      "ebene": "land",
+      "beschreibung": "Bürger*innen-Polizei mit mehr Präsenz vor Ort und direktem Dialog in den Quartieren stärken",
+      "zitat": "Für ein sicheres [Land] wollen wir: […] eine „Bürger*innen-Polizei“ nach skandinavischem Vorbild stärken, mit mehr Präsenz vor Ort, etwa durch Beamt*innen zu Fuß in den Quartieren und im direkten Dialog mit den Menschen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2205
+      ],
+      "pruefsumme": "19207a1e2bec500f"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "partei_id": 14,
+  "land": "BE",
+  "massnahmen": [
+    { "beschreibung": "Aussteigerprogramme und Vernetzung staatlicher Stellen mit Initiativen für eine ursachenorientierte Kriminalprävention gegen Extremismus", "ursachen_ids": [2201], "zitat": "Wir fordern eine ursachenorientierte Kriminalprävention durch verstärkte Aufklärung, Aussteigerprogramme und die Vernetzung staatlicher Stellen mit bürgerschaftlichen Initiativen.", "seite": 66 },
+    { "beschreibung": "Verstärkter Einsatz von Jugend- und Sozialarbeit sowie Streetwork als verlässliche Anlaufstelle", "ursachen_ids": [], "ursachen_offen": [2201], "zitat": "Darüber hinaus ist ein verstärkter Einsatz von Jugend- und Sozialarbeiterinnen und -arbeitern sowie Streetworkerinnen und Streetworkern notwendig, um eine verlässliche Anlaufstelle zu schaffen.", "seite": 68 },
+    { "beschreibung": "Bildungsprogramme gegen Antisemitismus in Schulen verbindlich verankern, mit Begegnungsformaten", "ursachen_ids": [2204], "zitat": "Die Prävention gegen Antisemitismus muss bereits in Schulen und Bildungseinrichtungen verbindlich verankert werden. Wir fordern verbindliche Bildungsprogramme gegen Antisemitismus, die historische Aufklärung mit einem klaren Gegenwartsbezug verbinden. Dazu gehören insbesondere die Einbindung jüdischer Perspektiven, die Zusammenarbeit mit jüdischen Organisationen sowie Begegnungsformate, die Vorurteile abbauen und Empathie fördern.", "seite": 79 },
+    { "beschreibung": "Kita-Besuchspflicht für Kinder von Asylbewerbern, um Sprache und Werte zu vermitteln, strafbewehrt", "ursachen_ids": [2204], "zitat": "Die Kinder von Asylbewerberinnen und -bewerbern sollen ab dem dritten Lebensjahr zum Kitabesuch verpflichtet werden, um die deutsche Sprache und Werte vermittelt zu bekommen. Eine Weigerung durch die Eltern soll in Zukunft strafbewehrt sein.", "seite": 97 },
+    { "beschreibung": "Austausch mit israelischen Schulen und Partnerstadt sowie Dialog zu Glauben und Demokratie ausbauen", "ursachen_ids": [2205, 2206], "zitat": "Wir werden zudem den Austausch mit Berlins Partnerstadt Tel Aviv stärken und den Dialog zu Fragen bezüglich Glauben und Demokratie ausbauen.", "seite": 79 }
+  ],
+  "neue_buendel": [
+    { "ursache": 2201, "name": "Aussteigerprogramme und Vernetzung der Kriminalprävention", "seite": 66 },
+    { "ursache": 2204, "name": "Verbindliche Bildungsprogramme gegen Antisemitismus in Schulen", "seite": 79 },
+    { "ursache": 2204, "name": "Kita-Besuchspflicht zur Vermittlung von Sprache und Werten", "seite": 97 },
+    { "ursache": 2205, "name": "Dialog und Austausch zu Glauben und Demokratie", "seite": 79 },
+    { "ursache": 2206, "name": "Dialog und Austausch zu Glauben und Demokratie", "seite": 79 }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis (S. 1 bis 6); Kapitel Bildung S. 6 bis 17 (Schule, Medienkompetenz); Kapitel Sicherheit, Justiz, Bürgerrechte S. 64 bis 75; Jüdisches Leben S. 77 bis 79; Häusliche Gewalt, Emanzipation, Regenbogenhauptstadt S. 80 bis 83; Sport und Medien S. 83 bis 85; ÖRR und Energie S. 86 bis 88 (Fundstelle 87); Integration und Migration S. 93 bis 98; Kultur S. 99 bis 105; Potenziale des Alters und Barrierefreiheit S. 117 bis 121; Fundstellen S. 6, 45, 51, 66, 76, 77, 79, 84, 86, 87, 95, 101, 117, 119.
+
+Ohne Text: S. 1 (Titel), S. 94 (mitten im Kapitel Integration, Bild möglich), S. 100 und S. 105 (Kapitelübergänge). S. 94 und S. 105 sind als Lücken vermerkt; für 2205 gibt es mit Maßnahme keine Lücke, für 2204 ebenfalls.
+
+Ohne Maßnahme (Richtungen des Auftrags):
+- 2201 Rekrutierung und Netzwerke zurückdrängen: keine Maßnahme gegen Rekrutierung oder extremistische Netzwerke (S. 66, 68 gelesen). S. 68 betrifft extremistische Umtriebe im Staatsdienst, kein Ausstiegs- oder Netzwerkbezug.
+- 2205 Meinungsfreiheit und Bevormundung: S. 76 betrifft Ehrdelikte und Hass im Internet (R2) sowie Überwachungsbefugnisse; S. 87 nennt Bevormundung nur bei Energie; S. 101 und 103 Kulturpolitik (Freiheit vor Bevormundung als Bekenntnis; Umwandlung der Kultureinrichtungen in privatrechtliche Formen ohne Bezug zu politischen Gesprächen).
+- 2206 Toleranz und Offenheit für Gegenpositionen: nur Bekenntnisse (S. 77 Toleranz gegenüber Antisemitismus) bzw. Frustrationstoleranz in der Kita (S. 6).
+- 2206 Zusammenhalt und Respekt stärken: Respekt nur als Bekenntnis (S. 66); S. 95 Respekt vor Gleichberechtigung und religiöser Vielfalt im Integrationsabschnitt, aber ohne Gesprächsbezug; R1 ordnet 2206 der Gesprächskultur zu, daher nicht erfasst.
+
+Grenzfälle, nicht als Maßnahme erfasst:
+- S. 68: Anti-Gewalt-Trainings der Polizei an Schulen und verstärkte Prävention (gleicher Hebel wie S. 79 im Bündel Bildung, nicht zusätzlich erfasst; Gewaltprävention).
+- S. 97: Schulen mit Extrabudget für Integrationsleistungen und Ganztag zur Vermittlung von Werten (gleicher Hebel wie S. 97 Kita-Pflicht).
+- S. 95: Integrationskurse mit Vermittlung der Grundordnung (gleicher Hebel wie S. 97 Kita-Pflicht; die konkretere Stelle wurde gewählt).
+- S. 78, 107: Gedenkstättenbesuch der 9./10. Klasse und Fortschreibung des Gedenkstättenkonzepts mit Menschenrechtsbildung (Bildung, gleicher Hebel wie S. 79).
+- S. 84: Dialog zwischen Fans, Vereinen und Behörden für Sicherheit im Sport (Dialog, gleicher Hebel wie S. 79; nicht politisch).
+- S. 119: Generationsübergreifender Dialog (Dialog, gleicher Hebel wie S. 79).
+- S. 78: Behandlung der BDS-Kampagne bei Zuwendungen (kein Bezug zu den Ursachen).
+- S. 66, 68: Extremistische Umtriebe in Behörden konsequent unterbinden (Staatsdienst, kein Ursachenbezug).
+- S. 76: Antragsdelikte und Hinweise bei Ehrdelikten im Internet (R2, Hass im Internet, anderes Thema).
+- S. 119: Seniorenvertretungen stärken und Landesseniorenbeirat abschaffen (Beteiligung, kein Dialog- oder Streitkulturbezug).
