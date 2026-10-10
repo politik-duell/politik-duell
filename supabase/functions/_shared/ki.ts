@@ -84,7 +84,9 @@ Einordnung ("typ"):
     haltungen.length
       ? `
   Berührt die Haltung eindeutig eine der Fragen unter „Haltungen“ (gleich, welche Seite die Person vertritt),
-  setze "haltung_id" auf deren Nummer, sonst null. Rate nicht: Ähnlich oder verwandt genügt nicht.`
+  setze "haltung_id" auf deren Nummer, sonst null. Rate nicht: Ähnlich oder verwandt genügt nicht.
+  Antwortet die Person ohne Alltagsproblem mit Ja oder Nein auf genau eine dieser Fragen (z. B. „Meine Haltung
+  zur Frage … : Ja“), ist das "wert" mit dieser "haltung_id" – auch wenn die Frage nach einer Maßnahme klingt.`
       : ''
   }
 - Ein pauschales Urteil über eine Gruppe von Menschen (z. B. „Die Ausländer sind alle kriminell“, „Rentner sind …“)

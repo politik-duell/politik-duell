@@ -458,6 +458,8 @@ describe('Haltung → Wertfrage (Haltungskarte)', () => {
     expect(p).toContain('Haltung 2: Soll Zuwanderung stärker begrenzt werden?')
     expect(p).toContain('"haltung_id": number | null')
     expect(p).toMatch(/Rate nicht/)
+    // Ja/Nein auf eine erfasste Wertfrage ist eine Haltung, auch wenn die Frage nach einer Maßnahme klingt.
+    expect(p).toContain('auch wenn die Frage nach einer Maßnahme klingt')
     expect(p).not.toMatch(/https?:\/\//)
     for (const partei of PARTEIEN) expect(p).not.toContain(partei.name)
   })

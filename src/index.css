@@ -626,8 +626,15 @@ textarea {
   flex-direction: column;
   gap: 8px;
 }
-.eingabe .knopf {
-  align-self: flex-end;
+.eingabe-knoepfe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+.eingabe-knoepfe .symbol {
+  vertical-align: -3px;
+  margin-right: 6px;
 }
 
 /* ---------- Auflösung ---------- */
