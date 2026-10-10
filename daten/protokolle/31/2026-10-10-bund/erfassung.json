@@ -1,0 +1,906 @@
+{
+  "thema_id": 31,
+  "programme": [
+    {
+      "partei_id": 11,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "BAföG-Empfängern ermöglichen, mehr hinzuzuverdienen",
+          "ursachen_ids": [
+            3102
+          ],
+          "zitat": "Wir bieten BAföG-Empfängern die Möglichkeit, mehr hinzuzuverdienen.",
+          "seite": 69
+        },
+        {
+          "beschreibung": "Festen Zinssatz für Studienkredite sicherstellen und faire Konditionen vereinbaren",
+          "ursachen_ids": [
+            3102
+          ],
+          "zitat": "Die Aufnahme eines Studienkredits darf kein unkalkulierbares Risiko sein. Deshalb setzen wir uns für faire Konditionen ein und stellen einen festen Zinssatz sicher.",
+          "seite": 69
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3101,
+          "seiten": [
+            66,
+            67,
+            69,
+            71
+          ],
+          "grund": "Keine Zusage zu Ausbildungsvergütung, Mindestvergütung oder Unterstützung von Auszubildenden (Wohnen, Mobilität). Allianz für Aus- und Weiterbildung (S. 66) ist Bekenntnis zu Bestehendem; Tarifbindung (S. 32–33) nennt keine Ausbildung (R2)."
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 3102,
+          "name": "Hinzuverdienst für BAföG-Empfänger",
+          "seite": 69
+        },
+        {
+          "ursache": 3102,
+          "name": "Fester Zinssatz für Studienkredite",
+          "seite": 69
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Mindestausbildungsvergütung anheben.",
+          "ursachen_ids": [
+            3101
+          ],
+          "zitat": "Für junge Menschen am Beginn von Ausbildung oder Studium sind derzeit – noch mehr als in der Bevölkerung insgesamt – die steigenden Lebenshaltungskosten das zentrale Problem. Wir wollen deshalb die Mindestausbildungsvergütung anheben.",
+          "seite": 15
+        },
+        {
+          "beschreibung": "BAföG-Förderhöhe regelmäßig an die Lebenshaltungskosten anpassen.",
+          "ursachen_ids": [
+            3102
+          ],
+          "zitat": "Mit einer Reform des BAföG wollen wir dafür sorgen, dass die Höhe der Ausbildungsförderung regelmäßig an die steigenden […] Lebenshaltungskosten angepasst wird.",
+          "seite": 15
+        },
+        {
+          "beschreibung": "Mittel für den Neubau von Wohnheimen für Studierende und Azubis verstetigen und erhöhen.",
+          "ursachen_ids": [
+            3101,
+            3102
+          ],
+          "zitat": "Wir wollen sicherstellen, dass Studierende und Azubis für ein WG-Zimmer möglichst nicht mehr als 400 Euro zahlen. Dafür wollen wir die Mittel in den Ausbau von Studierenden- und Azubi-Wohnheimen verstetigen und erhöhen und sicherstellen, dass diese Mittel von den Ländern tatsächlich für den Neubau von Wohnheimen verwendet werden.",
+          "seite": 21
+        },
+        {
+          "beschreibung": "Mietpreisbremse auf mehr Wohnungen von Azubis und Studierenden ausweiten.",
+          "ursachen_ids": [
+            3101,
+            3102
+          ],
+          "zitat": "Indem wir den Anwendungsbereich der Mietpreisbremse ausweiten, werden deutlich mehr Azubis und Studierende erfasst.",
+          "seite": 21
+        },
+        {
+          "beschreibung": "Bundeseinheitlich vergünstigtes Deutschlandticket für bestimmte soziale Gruppen, darunter Auszubildende und Studierende.",
+          "ursachen_ids": [
+            3101
+          ],
+          "zitat": "Außerdem setzen wir uns für ein bundeseinheitlich vergünstigtes Deutschlandticket zu einem reduzierten Preis für bestimmte soziale Gruppen wie Seniorinnen und Senioren, Familien mit Kindern, Auszubildende, Studierende, Schülerinnen und Schüler oder Menschen mit Behinderung ein.",
+          "seite": 35
+        },
+        {
+          "beschreibung": "Arbeitgeber sollen einen Führerscheinzuschuss bis zu 2.000 Euro steuer- und abgabenfrei an Azubis und junge Beschäftigte zahlen können.",
+          "ursachen_ids": [
+            3101
+          ],
+          "zitat": "Zudem wollen wir Arbeitgebern ermöglichen, einen Führerscheinzuschuss von bis zu 2.000 Euro steuer- und abgabenfrei an Auszubildende und junge Beschäftigte auszuzahlen.",
+          "seite": 36
+        },
+        {
+          "beschreibung": "Praxisnahe und kostenfreie Ausbildungen in den Gesundheitsfachberufen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3101
+          ],
+          "zitat": "Deshalb setzen wir uns für praxisnahe und kostenfreie Ausbildungen in den Gesundheitsfachberufen ein.",
+          "seite": 32
+        },
+        {
+          "beschreibung": "Duales Studium stärker fördern und Schutzrechte des Berufsbildungsgesetzes auf diesen Ausbildungsweg ausweiten.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3101
+          ],
+          "zitat": "Darüber hinaus werden wir das duale Studium stärker fördern und die Schutzrechte des Berufsbildungsgesetzes auch auf diesen Ausbildungsweg ausweiten.",
+          "seite": 16
+        },
+        {
+          "beschreibung": "Bearbeitungszeiten für BAföG-Anträge durch Digitalisierung und Vereinfachung verkürzen.",
+          "ursachen_ids": [
+            3102
+          ],
+          "zitat": "Darüber hinaus müssen die Bearbeitungszeiten für BAföG-Anträge verkürzt werden – durch weitere Digitalisierung und Vereinfachung.",
+          "seite": 16
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 3101,
+          "name": "Ausbau von Wohnheimen",
+          "seite": 21
+        },
+        {
+          "ursache": 3102,
+          "name": "Ausbau von Wohnheimen",
+          "seite": 21
+        },
+        {
+          "ursache": 3101,
+          "name": "Mietpreisbremse für Azubis und Studierende",
+          "seite": 21
+        },
+        {
+          "ursache": 3102,
+          "name": "Mietpreisbremse für Azubis und Studierende",
+          "seite": 21
+        },
+        {
+          "ursache": 3101,
+          "name": "Vergünstigtes Deutschlandticket für soziale Gruppen",
+          "seite": 35
+        },
+        {
+          "ursache": 3101,
+          "name": "Steuerfreier Führerscheinzuschuss durch Arbeitgeber",
+          "seite": 36
+        },
+        {
+          "ursache": 3101,
+          "name": "Kostenfreie Ausbildung in Gesundheitsfachberufen",
+          "seite": 32
+        },
+        {
+          "ursache": 3101,
+          "name": "Schutzrechte des Berufsbildungsgesetzes für duales Studium",
+          "seite": 16
+        },
+        {
+          "ursache": 3102,
+          "name": "BAföG-Verfahren digitalisieren und vereinfachen",
+          "seite": 16
+        },
+        {
+          "ursache": 3101,
+          "name": "Mindestausbildungsvergütung anheben",
+          "seite": 15
+        },
+        {
+          "ursache": 3102,
+          "name": "BAföG-Höhe regelmäßig anpassen",
+          "seite": 15
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Mindestausbildungsvergütung wird deutlich angehoben.",
+          "ursachen_ids": [
+            3101
+          ],
+          "zitat": "Wir werden die Mindestausbildungsvergütung deutlich anheben, um die Attraktivität der Ausbildung zu erhöhen und ein eigenständiges Leben zu ermöglichen.",
+          "seite": 78
+        },
+        {
+          "beschreibung": "Führerscheinförderung, Lösung für ein Azubi-Ticket und attraktiverer ÖPNV für Auszubildende.",
+          "ursachen_ids": [
+            3101
+          ],
+          "zitat": "Wir wollen für Menschen in Ausbildung auch den Führerscheinerwerb fördern, eine Lösung für ein Azubi-Deutschland-Ticket finden und den öffentlichen Personennahverkehr (ÖPNV) für Auszubildende attraktiver machen.",
+          "seite": 78
+        },
+        {
+          "beschreibung": "Auszubildendenwerke nach dem Vorbild der Studierendenwerke fördern, mit Wohnheimen und Beratung.",
+          "ursachen_ids": [
+            3101
+          ],
+          "zitat": "Wir fördern Auszubildendenwerke nach dem Vorbild der Studierendenwerke. Im Fokus stehen Auszubildendenwohnheime, Betreuung ausländischer Auszubildender, psychologische, soziale und rechtliche Beratung sowie kulturelle Angebote.",
+          "seite": 78
+        },
+        {
+          "beschreibung": "Bau und Sanierung von Wohnheimen über das Programm „Junges Wohnen“ verstetigen und weiter fördern, Auszubildende im Fokus.",
+          "ursachen_ids": [
+            3101,
+            3102
+          ],
+          "zitat": "Für mehr bezahlbaren, inklusiven und barrierefreien Wohnraum möchten wir den Bau sowie die Sanierung von Wohnheimen über das von uns in der laufenden Wahlperiode aufgelegte Programm „Junges Wohnen“ verstetigen und weiter fördern. […] Auszubildende nehmen wir dabei verstärkt in den Fokus.",
+          "seite": 79
+        },
+        {
+          "beschreibung": "Solidarische Ausbildungsumlage als finanzieller Ausgleich für Ausbildungsbetriebe, insbesondere kleine und mittlere.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3101
+          ],
+          "zitat": "Mit einer solidarischen Ausbildungsumlage sorgen wir dabei für einen finanziellen Ausgleich, um die Ausbildungsbereitschaft kleiner und mittlerer Betriebe zu fördern.",
+          "seite": 78
+        },
+        {
+          "beschreibung": "BAföG-Bedarfssätze und Freibeträge werden regelmäßig an die Lebenshaltungskosten angepasst.",
+          "ursachen_ids": [
+            3102
+          ],
+          "zitat": "Das BAföG soll existenzsichernd und bedarfsgerecht sein. Deshalb setzen wir einen zuverlässigen Mechanismus ein, um die Bedarfssätze und Freibeträge regelmäßig an die steigenden Lebenshaltungskosten anzupassen.",
+          "seite": 79
+        },
+        {
+          "beschreibung": "BAföG elternunabhängiger gestalten; Einkommen der Geschwister wird aus der Berechnung herausgenommen.",
+          "ursachen_ids": [
+            3102
+          ],
+          "zitat": "Wir wollen das BAföG elternunabhängiger gestalten und das Einkommen der Geschwister aus der Berechnung herausnehmen.",
+          "seite": 79
+        },
+        {
+          "beschreibung": "BAföG-Wohnkostenpauschale wird an die ortsüblichen Mieten angepasst.",
+          "ursachen_ids": [
+            3102
+          ],
+          "zitat": "Die Wohnkostenpauschale soll den ortsüblichen Mieten angepasst werden.",
+          "seite": 79
+        },
+        {
+          "beschreibung": "Aufstiegs-BAföG wird reformiert; Unterhaltszuschuss auch in Teilzeit und digitales Antragsverfahren.",
+          "ursachen_ids": [
+            3102
+          ],
+          "zitat": "Für Berufstätige, die beispielsweise einen Meister machen wollen, reformieren wir das Aufstiegs-BAföG und ermöglichen den Bezug des Unterhaltszuschusses auch in Teilzeit […] sowie ein vollständig digitalisiertes Antragsverfahren.",
+          "seite": 79
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "wohnkostenpauschale",
+          "ursache": 3102,
+          "richtung": "Studienfinanzierung ausbauen"
+        },
+        {
+          "begriff": "ausbildungsumlage",
+          "ursache": 3101,
+          "richtung": "Betriebe entlasten und Ausbildung attraktiv halten"
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Stipendien für Auszubildende (SBB- und Azubi-Stipendien) ausbauen",
+          "ursachen_ids": [
+            3101
+          ],
+          "zitat": "Zudem wollen wir analog zum Freiwilligen Sozialen Jahr (FSJ) ein berufliches Orientierungsjahr schaffen und SBB-Stipendien sowie Azubi-Stipendien ausbauen.",
+          "seite": 9
+        },
+        {
+          "beschreibung": "Programm für Auslandsaufenthalte von Auszubildenden ausbauen",
+          "ursachen_ids": [
+            3101
+          ],
+          "zitat": "Auch die Programme „Erasmus+“ und „Ausbildung Weltweit“ für Auszubildende wollen wir ausbauen.",
+          "seite": 10
+        },
+        {
+          "beschreibung": "BAföG zu einem elternunabhängigen Baukasten-System weiterentwickeln",
+          "ursachen_ids": [
+            3102
+          ],
+          "zitat": "Die Wahl des Studiums darf nicht von den Voraussetzungen des Elternhauses abhängig sein. Daher wollen wir das BAföG zu einem elternunabhängigen Baukasten-System weiterentwickeln.",
+          "seite": 10
+        },
+        {
+          "beschreibung": "Bildungskreditprogramm stärken und ausbauen",
+          "ursachen_ids": [
+            3102
+          ],
+          "zitat": "Das Bildungskreditprogramm wollen wir bereits kurzfristig stärken und ausbauen.",
+          "seite": 10
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 3101,
+          "name": "Stipendien für Auszubildende",
+          "seite": 9
+        },
+        {
+          "ursache": 3101,
+          "name": "Auslandsmobilität für Auszubildende",
+          "seite": 10
+        },
+        {
+          "ursache": 3102,
+          "name": "Bildungskredit ausbauen",
+          "seite": 10
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "bildungskredit",
+          "ursache": 3102,
+          "richtung": "Studienfinanzierung ausbauen"
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "BAföG-Rückzahlung bei Geburt eines Kindes während Ausbildung oder Studium erlassen",
+          "ursachen_ids": [
+            3102
+          ],
+          "zitat": "BAföG-Empfängern soll bei einer Geburt während der Ausbildung bzw. während des Studiums die Rückzahlung nach erfolgreichem Abschluss erlassen werden.",
+          "seite": 149
+        },
+        {
+          "beschreibung": "Regelstudienzeit für Studierende mit Kindern auf Antrag um bis zu 6 Semester verlängern",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3102
+          ],
+          "zitat": "Für Studenten mit Kindern soll die Regelstudienzeit auf Antrag um bis zu 6 Semester verlängert werden.",
+          "seite": 149
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3101,
+          "seiten": [
+            159,
+            161,
+            162
+          ],
+          "grund": "Kapitel Bildung gelesen: keine Maßnahme zu Ausbildungsvergütung, Tarifbindung oder Unterstützung von Auszubildenden. Berufsschulen stärken und Kooperation Schule–Betrieb (S. 162) betreffen Schulen, nicht die Vergütung."
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "Rückzahlung erlassen",
+          "ursache": 3102,
+          "richtung": "Rückzahlung und Eigenbeteiligung neu regeln"
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Mindestausbildungsvergütung von 80 Prozent der tariflichen Vergütung der Branchen",
+          "ursachen_ids": [
+            3101
+          ],
+          "zitat": "Wir wollen, dass das Schulgeld entfällt und Azubis eine Mindestausbildungsvergütung erhalten (80 Prozent der durchschnittlichen tariflichen Ausbildungsvergütung der Branchen).",
+          "seite": 39
+        },
+        {
+          "beschreibung": "Solidarische Ausbildungsumlage: Betriebe, die nicht ausbilden, zahlen in einen Fonds für Ausbildungsplätze",
+          "ursachen_ids": [
+            3101
+          ],
+          "zitat": "Solidarische Ausbildungsumlage: Betriebe, die nicht ausbilden, sollen in einen Fonds einzahlen, um Ausbildungsplätze und Verbundausbildungen für andere Betriebe zu finanzieren.",
+          "seite": 39
+        },
+        {
+          "beschreibung": "Unternehmen sollen sich an bezahlbaren Wohnheimplätzen für Auszubildende finanziell beteiligen",
+          "ursachen_ids": [
+            3101
+          ],
+          "zitat": "Unternehmen sollten dazu verpflichtet werden, sich insbesondere im ländlichen Raum an der Schaffung von öffentlichem Wohnraum, etwa bezahlbaren Wohnheimplätzen für Auszubildende, finanziell zu beteiligen.",
+          "seite": 39
+        },
+        {
+          "beschreibung": "Schulgeld abschaffen, Ausbildung gebührenfrei machen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3101
+          ],
+          "zitat": "Jede Ausbildung soll vollqualifizierend und gebührenfrei sein. Wir wollen, dass das Schulgeld entfällt […]",
+          "seite": 39
+        },
+        {
+          "beschreibung": "Kostenloses 0-Euro-Ticket für Auszubildende und Studierende im Nahverkehr",
+          "ursachen_ids": [
+            3101
+          ],
+          "ursachen_offen": [
+            3102
+          ],
+          "zitat": "Wir wollen das 9-Euro-Ticket sofort wieder einführen. Für Schüler*innen, Azubis, Studierende und Senior*innen wollen wir ein sofortiges 0-Euro-Ticket.",
+          "seite": 36
+        },
+        {
+          "beschreibung": "Erasmus+-Programm für Auszubildende ausbauen und bekannter machen",
+          "ursachen_ids": [
+            3101
+          ],
+          "zitat": "Das Erasmus+-Programm für Auszubildende muss ausgebaut werden. Wir setzen uns dafür ein, dass die Mittel und Voraussetzungen dafür verbessert werden und das Programm besser bekannt gemacht wird.",
+          "seite": 24
+        },
+        {
+          "beschreibung": "Ausbildungskosten für Psychotherapeut*innen deckeln, Beschäftigungsstatus in Ausbildung",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3101,
+            3102
+          ],
+          "zitat": "Die Ausbildungskosten für zukünftige Psychotherapeut*innen müssen gedeckelt werden. Psychotherapeut*innen in Ausbildung müssen einen Beschäftigungsstatus erhalten, der ihre Einbindung in Tarifstrukturen erlaubt.",
+          "seite": 19
+        },
+        {
+          "beschreibung": "BAföG für alle: elternunabhängig, existenzsichernd, Höhe an Lebenshaltungskosten und Armutsgrenze",
+          "ursachen_ids": [
+            3102
+          ],
+          "zitat": "Die Linke fordert, ein BAföG für alle, das heißt: eltern-, alters- und herkunftsunabhängig, existenzsichernd, unbefristet und als Vollzuschuss. Die Höhe muss regelmäßig an die Lebenshaltungskosten angepasst werden und darf nicht unterhalb der Armutsgefährdungsgrenze liegen.",
+          "seite": 40
+        },
+        {
+          "beschreibung": "Anspruch auf Aufstiegs-BAföG für dreijährige schulische Fachschulausbildungen ohne Sanktionen",
+          "ursachen_ids": [
+            3102
+          ],
+          "zitat": "Schulische Ausbildungen (Fachschulausbildungen nach DQR 6) sollen erhalten bleiben. Wer eine solche dreijährige Ausbildung durchläuft, soll Anspruch auf das sogenannte Aufstiegs-BaföG (AFBG) haben und keinerlei Sanktionen unterliegen.",
+          "seite": 39
+        },
+        {
+          "beschreibung": "Studierendenwerke so finanzieren, dass sie Semesterbeiträge, Mensapreise und Wohnkosten senken können",
+          "ursachen_ids": [
+            3102
+          ],
+          "zitat": "Die Studierendenwerke müssen ausreichend finanziert werden, damit sie die Semesterbeiträge, Mensapreise und Wohnkosten für Studierende senken können.",
+          "seite": 40
+        },
+        {
+          "beschreibung": "Studentische Beschäftigte tarifvertraglich absichern",
+          "ursachen_ids": [
+            3102
+          ],
+          "zitat": "Studentische Beschäftigte müssen tarifvertraglich abgesichert werden.",
+          "seite": 41
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "Ausbildungsumlage",
+          "ursache": 3101,
+          "richtung": "Betriebe entlasten und Ausbildung attraktiv halten"
+        },
+        {
+          "begriff": "Schulgeld",
+          "ursache": 3101,
+          "richtung": "Ausbildungsvergütung und Tarifbindung stärken"
+        },
+        {
+          "begriff": "Vollzuschuss",
+          "ursache": 3102,
+          "richtung": "Rückzahlung und Eigenbeteiligung neu regeln"
+        },
+        {
+          "begriff": "Studierendenwerk",
+          "ursache": 3102,
+          "richtung": "Studienfinanzierung ausbauen"
+        },
+        {
+          "begriff": "studentische Beschäftigte",
+          "ursache": 3102,
+          "richtung": "Studienfinanzierung ausbauen"
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "BAföG reformieren, damit das Studium auskömmlich finanziert ist.",
+          "ursachen_ids": [
+            3102
+          ],
+          "zitat": "Eine BAföG-Reform zur auskömmlichen Finanzierung des Studiums und einen Hochschulsozialpakt für gute soziale Infrastruktur sind dringend nötig.",
+          "seite": 25
+        },
+        {
+          "beschreibung": "Hochschulsozialpakt für gute soziale Infrastruktur an den Hochschulen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3102
+          ],
+          "zitat": "Eine BAföG-Reform zur auskömmlichen Finanzierung des Studiums und einen Hochschulsozialpakt für gute soziale Infrastruktur sind dringend nötig.",
+          "seite": 25
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 3102,
+          "name": "Soziale Infrastruktur an Hochschulen",
+          "seite": 25
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3101,
+          "seiten": [
+            23,
+            25,
+            27
+          ],
+          "grund": "Keine Zusage zur Ausbildungsvergütung, Mindestvergütung oder Tarifbindung in der Ausbildung. Nur Lagebeschreibung (S. 23: Wohnraum für Auszubildende); Ausbildungsplatzgarantie und Berufsbildungspakt (S. 25) betreffen Zugang und Schulen, nicht die Vergütung; Ausbildungsplätze für Psychotherapeuten und Pflegepersonal (S. 27) ebenfalls nicht."
+        }
+      ]
+    }
+  ],
+  "suchbegriffe": {
+    "3101": {
+      "Ausbildungsvergütung und Tarifbindung stärken": [
+        "mindestausbildungsvergütung",
+        "ausbildungsvergütung",
+        "tarifbindung in der ausbildung",
+        "azubi",
+        "auszubildende",
+        "ausbildungsförderung",
+        "azubi-wohnen"
+      ],
+      "Betriebe entlasten und Ausbildung attraktiv halten": [
+        "ausbildungsbetriebe entlasten",
+        "ausbildungsprämie",
+        "bewerbermangel",
+        "ausbildungsbonus",
+        "betriebliche ausbildung stärken"
+      ]
+    },
+    "3102": {
+      "Studienfinanzierung ausbauen": [
+        "bafög",
+        "bafög-erhöhung",
+        "bafög-reform",
+        "elternunabhängig",
+        "studienstarthilfe",
+        "studienfinanzierung",
+        "wohnpauschale",
+        "studierendenwohnheim"
+      ],
+      "Rückzahlung und Eigenbeteiligung neu regeln": [
+        "bafög-darlehen",
+        "rückzahlungsbelastung",
+        "studienkredit",
+        "einkommensabhängige rückzahlung",
+        "schuldenfreies studium",
+        "darlehensanteil"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "9552738e6ac411b4c75436b9e8347d2078e65d31f061d1a29a058fdf4e1466c0",
+    "programme": [
+      {
+        "partei_id": 11,
+        "land": null,
+        "ursachen": {
+          "3101": {
+            "Ausbildungsvergütung und Tarifbindung stärken": {
+              "mindestausbildungsvergütung": 0,
+              "ausbildungsvergütung": 0,
+              "tarifbindung in der ausbildung": 0,
+              "azubi": 0,
+              "auszubildende": 1,
+              "ausbildungsförderung": 0,
+              "azubi-wohnen": 0
+            },
+            "Betriebe entlasten und Ausbildung attraktiv halten": {
+              "ausbildungsbetriebe entlasten": 0,
+              "ausbildungsprämie": 0,
+              "bewerbermangel": 0,
+              "ausbildungsbonus": 0,
+              "betriebliche ausbildung stärken": 0
+            }
+          },
+          "3102": {
+            "Studienfinanzierung ausbauen": {
+              "bafög": 5,
+              "bafög-erhöhung": 0,
+              "bafög-reform": 0,
+              "elternunabhängig": 0,
+              "studienstarthilfe": 0,
+              "studienfinanzierung": 0,
+              "wohnpauschale": 0,
+              "studierendenwohnheim": 0
+            },
+            "Rückzahlung und Eigenbeteiligung neu regeln": {
+              "bafög-darlehen": 0,
+              "rückzahlungsbelastung": 0,
+              "studienkredit": 2,
+              "einkommensabhängige rückzahlung": 0,
+              "schuldenfreies studium": 0,
+              "darlehensanteil": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": null,
+        "ursachen": {
+          "3101": {
+            "Ausbildungsvergütung und Tarifbindung stärken": {
+              "mindestausbildungsvergütung": 1,
+              "ausbildungsvergütung": 1,
+              "tarifbindung in der ausbildung": 0,
+              "azubi": 6,
+              "auszubildende": 5,
+              "ausbildungsförderung": 1,
+              "azubi-wohnen": 0
+            },
+            "Betriebe entlasten und Ausbildung attraktiv halten": {
+              "ausbildungsbetriebe entlasten": 0,
+              "ausbildungsprämie": 0,
+              "bewerbermangel": 0,
+              "ausbildungsbonus": 0,
+              "betriebliche ausbildung stärken": 0
+            }
+          },
+          "3102": {
+            "Studienfinanzierung ausbauen": {
+              "bafög": 5,
+              "bafög-erhöhung": 0,
+              "bafög-reform": 0,
+              "elternunabhängig": 1,
+              "studienstarthilfe": 0,
+              "studienfinanzierung": 0,
+              "wohnpauschale": 0,
+              "studierendenwohnheim": 0
+            },
+            "Rückzahlung und Eigenbeteiligung neu regeln": {
+              "bafög-darlehen": 0,
+              "rückzahlungsbelastung": 0,
+              "studienkredit": 0,
+              "einkommensabhängige rückzahlung": 0,
+              "schuldenfreies studium": 0,
+              "darlehensanteil": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": null,
+        "ursachen": {
+          "3101": {
+            "Ausbildungsvergütung und Tarifbindung stärken": {
+              "mindestausbildungsvergütung": 1,
+              "ausbildungsvergütung": 1,
+              "tarifbindung in der ausbildung": 0,
+              "azubi": 1,
+              "auszubildende": 9,
+              "ausbildungsförderung": 0,
+              "azubi-wohnen": 0
+            },
+            "Betriebe entlasten und Ausbildung attraktiv halten": {
+              "ausbildungsbetriebe entlasten": 0,
+              "ausbildungsprämie": 0,
+              "bewerbermangel": 0,
+              "ausbildungsbonus": 0,
+              "betriebliche ausbildung stärken": 0
+            }
+          },
+          "3102": {
+            "Studienfinanzierung ausbauen": {
+              "bafög": 4,
+              "bafög-erhöhung": 0,
+              "bafög-reform": 0,
+              "elternunabhängig": 1,
+              "studienstarthilfe": 0,
+              "studienfinanzierung": 0,
+              "wohnpauschale": 0,
+              "studierendenwohnheim": 0
+            },
+            "Rückzahlung und Eigenbeteiligung neu regeln": {
+              "bafög-darlehen": 0,
+              "rückzahlungsbelastung": 0,
+              "studienkredit": 0,
+              "einkommensabhängige rückzahlung": 0,
+              "schuldenfreies studium": 0,
+              "darlehensanteil": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": null,
+        "ursachen": {
+          "3101": {
+            "Ausbildungsvergütung und Tarifbindung stärken": {
+              "mindestausbildungsvergütung": 0,
+              "ausbildungsvergütung": 0,
+              "tarifbindung in der ausbildung": 0,
+              "azubi": 2,
+              "auszubildende": 1,
+              "ausbildungsförderung": 0,
+              "azubi-wohnen": 0
+            },
+            "Betriebe entlasten und Ausbildung attraktiv halten": {
+              "ausbildungsbetriebe entlasten": 0,
+              "ausbildungsprämie": 0,
+              "bewerbermangel": 0,
+              "ausbildungsbonus": 0,
+              "betriebliche ausbildung stärken": 0
+            }
+          },
+          "3102": {
+            "Studienfinanzierung ausbauen": {
+              "bafög": 4,
+              "bafög-erhöhung": 0,
+              "bafög-reform": 0,
+              "elternunabhängig": 2,
+              "studienstarthilfe": 0,
+              "studienfinanzierung": 0,
+              "wohnpauschale": 0,
+              "studierendenwohnheim": 0
+            },
+            "Rückzahlung und Eigenbeteiligung neu regeln": {
+              "bafög-darlehen": 0,
+              "rückzahlungsbelastung": 0,
+              "studienkredit": 0,
+              "einkommensabhängige rückzahlung": 0,
+              "schuldenfreies studium": 0,
+              "darlehensanteil": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": null,
+        "ursachen": {
+          "3101": {
+            "Ausbildungsvergütung und Tarifbindung stärken": {
+              "mindestausbildungsvergütung": 0,
+              "ausbildungsvergütung": 0,
+              "tarifbindung in der ausbildung": 0,
+              "azubi": 0,
+              "auszubildende": 1,
+              "ausbildungsförderung": 0,
+              "azubi-wohnen": 0
+            },
+            "Betriebe entlasten und Ausbildung attraktiv halten": {
+              "ausbildungsbetriebe entlasten": 0,
+              "ausbildungsprämie": 0,
+              "bewerbermangel": 0,
+              "ausbildungsbonus": 0,
+              "betriebliche ausbildung stärken": 0
+            }
+          },
+          "3102": {
+            "Studienfinanzierung ausbauen": {
+              "bafög": 1,
+              "bafög-erhöhung": 0,
+              "bafög-reform": 0,
+              "elternunabhängig": 0,
+              "studienstarthilfe": 0,
+              "studienfinanzierung": 0,
+              "wohnpauschale": 0,
+              "studierendenwohnheim": 0
+            },
+            "Rückzahlung und Eigenbeteiligung neu regeln": {
+              "bafög-darlehen": 0,
+              "rückzahlungsbelastung": 0,
+              "studienkredit": 0,
+              "einkommensabhängige rückzahlung": 0,
+              "schuldenfreies studium": 0,
+              "darlehensanteil": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": null,
+        "ursachen": {
+          "3101": {
+            "Ausbildungsvergütung und Tarifbindung stärken": {
+              "mindestausbildungsvergütung": 1,
+              "ausbildungsvergütung": 3,
+              "tarifbindung in der ausbildung": 0,
+              "azubi": 4,
+              "auszubildende": 6,
+              "ausbildungsförderung": 1,
+              "azubi-wohnen": 0
+            },
+            "Betriebe entlasten und Ausbildung attraktiv halten": {
+              "ausbildungsbetriebe entlasten": 1,
+              "ausbildungsprämie": 0,
+              "bewerbermangel": 0,
+              "ausbildungsbonus": 0,
+              "betriebliche ausbildung stärken": 0
+            }
+          },
+          "3102": {
+            "Studienfinanzierung ausbauen": {
+              "bafög": 5,
+              "bafög-erhöhung": 0,
+              "bafög-reform": 0,
+              "elternunabhängig": 0,
+              "studienstarthilfe": 0,
+              "studienfinanzierung": 0,
+              "wohnpauschale": 0,
+              "studierendenwohnheim": 0
+            },
+            "Rückzahlung und Eigenbeteiligung neu regeln": {
+              "bafög-darlehen": 0,
+              "rückzahlungsbelastung": 0,
+              "studienkredit": 0,
+              "einkommensabhängige rückzahlung": 0,
+              "schuldenfreies studium": 0,
+              "darlehensanteil": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": null,
+        "ursachen": {
+          "3101": {
+            "Ausbildungsvergütung und Tarifbindung stärken": {
+              "mindestausbildungsvergütung": 0,
+              "ausbildungsvergütung": 0,
+              "tarifbindung in der ausbildung": 0,
+              "azubi": 0,
+              "auszubildende": 1,
+              "ausbildungsförderung": 0,
+              "azubi-wohnen": 0
+            },
+            "Betriebe entlasten und Ausbildung attraktiv halten": {
+              "ausbildungsbetriebe entlasten": 0,
+              "ausbildungsprämie": 0,
+              "bewerbermangel": 0,
+              "ausbildungsbonus": 0,
+              "betriebliche ausbildung stärken": 0
+            }
+          },
+          "3102": {
+            "Studienfinanzierung ausbauen": {
+              "bafög": 1,
+              "bafög-erhöhung": 0,
+              "bafög-reform": 1,
+              "elternunabhängig": 0,
+              "studienstarthilfe": 0,
+              "studienfinanzierung": 0,
+              "wohnpauschale": 0,
+              "studierendenwohnheim": 0
+            },
+            "Rückzahlung und Eigenbeteiligung neu regeln": {
+              "bafög-darlehen": 0,
+              "rückzahlungsbelastung": 0,
+              "studienkredit": 0,
+              "einkommensabhängige rückzahlung": 0,
+              "schuldenfreies studium": 0,
+              "darlehensanteil": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}

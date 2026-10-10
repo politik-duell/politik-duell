@@ -1,0 +1,151 @@
+{
+  "partei_id": 12,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Ermäßigten Mehrwertsteuersatz auf Lebensmittel senken; soll vor allem Haushalte mit geringerem Einkommen entlasten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2101
+      ],
+      "zitat": "In Zeiten steigender Preise gerade für die Lebensmittel des täglichen Bedarfs wollen wir den ermäßigten Mehrwertsteuersatz für Lebensmittel von sieben Prozent auf fünf Prozent senken. […] Die Senkung der Mehrwertsteuer hilft insbesondere Haushalten mit geringeren Einkommen, da die Ausgaben für Lebensmittel einen besonders hohen Anteil am Einkommen ausmachen.",
+      "seite": 24
+    },
+    {
+      "beschreibung": "Familien mit niedrigem Lohneinkommen sollen durch Kindergeld, Kinderzuschlag und Wohngeld nicht auf Bürgergeld angewiesen sein.",
+      "ursachen_ids": [
+        2102
+      ],
+      "zitat": "Im nächsten Schritt wollen wir erreichen, dass Familien – insbesondere auch Alleinerziehende – mit eigenem niedrigem Lohneinkommen mit einer Kombination aus Kindergeld, Kinderzuschlag und Wohngeld nicht auf ergänzendes Bürgergeld angewiesen sind.",
+      "seite": 27
+    },
+    {
+      "beschreibung": "Entlastungsbetrag für Alleinerziehende in einen Abzug von der Steuerschuld umwandeln.",
+      "ursachen_ids": [
+        2102
+      ],
+      "zitat": "Für Alleinerziehende wollen wir den Entlastungsbetrag in einen Abzug von der Steuerschuld umwandeln.",
+      "seite": 27
+    },
+    {
+      "beschreibung": "Familienstartzeit: Väter oder Partner können sich nach der Geburt zwei Wochen bei Lohnfortzahlung freistellen lassen.",
+      "ursachen_ids": [
+        2102
+      ],
+      "zitat": "Wir wollen deshalb eine Familienstartzeit einführen: Väter oder Partnerinnen und Partner sollen sich für die ersten zwei Wochen nach der Geburt eines Kindes bei voller, umlagefinanzierter Lohnfortzahlung freistellen lassen können.",
+      "seite": 26
+    },
+    {
+      "beschreibung": "Elterngeld: je Elternteil sechs nicht übertragbare Monate, dazu weitere frei verteilbare Monate.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2102
+      ],
+      "zitat": "Jeder Elternteil soll Anspruch auf sechs nicht übertragbare Monate Elterngeld erhalten. Zusätzlich gibt es weitere sechs Monate, die frei auf beide Elternteile verteilt werden können.",
+      "seite": 26
+    },
+    {
+      "beschreibung": "Besteuerung von Familien reformieren, für Paarfamilien eine gerechtere Verteilung der Steuerlast erreichen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2102
+      ],
+      "zitat": "Wir wollen die Besteuerung von Familien unter Berücksichtigung bereits getroffener Lebensentscheidungen reformieren, für Paarfamilien eine gerechtere Verteilung der Steuerlast erreichen und Partnerschaftlichkeit fördern.",
+      "seite": 27
+    },
+    {
+      "beschreibung": "Anträge bei Sozialleistungen vereinfachen, Leistungen zusammenfassen; Kindergeld soll automatisch gewährt werden.",
+      "ursachen_ids": [
+        2103
+      ],
+      "zitat": "Indem wir Antragsverfahren vereinfachen, Leistungen zusammenfassen und aufeinander abstimmen, wollen wir verhindern, dass man von einer Stelle zur nächsten verwiesen wird. […] Leistungen wie das Kindergeld sollen automatisch gewährt werden.",
+      "seite": 37
+    },
+    {
+      "beschreibung": "Digitalen Datenaustausch zwischen Behörden ausbauen, damit Leistungen ohne mühsame Antragsprozesse ankommen.",
+      "ursachen_ids": [
+        2103
+      ],
+      "zitat": "Ein Schlüssel dafür ist der digitale Datenaustausch zwischen allen Behörden. Er muss problemlos funktionieren. Dafür wollen wir ein System der einmaligen Übermittlung von Daten aufbauen und den dafür notwendigen Staatsvertrag zwischen Bund und Ländern zügig abschließen.",
+      "seite": 38
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 2101,
+      "seiten": [
+        14,
+        21,
+        24,
+        27
+      ],
+      "grund": "Keine Zusage zu Höhe, Bemessung oder Dynamisierung der Grundsicherung oder Regelsätze. S. 14 (Bürgergeld) betrifft Arbeitsmarkt und Haltung; S. 21 (Wohngeld) gehört zu Wohnen; S. 24 nennt Sozialleistungen nur als Bekenntnis; S. 27 armutsfeste Geldleistungen ist Ziel ohne Instrument."
+    }
+  ],
+  "neue_buendel": [
+    {
+      "ursache": 2101,
+      "name": "Mehrwertsteuer auf Lebensmittel senken",
+      "seite": 24
+    },
+    {
+      "ursache": 2102,
+      "name": "Steuerlicher Abzug für Alleinerziehende",
+      "seite": 27
+    },
+    {
+      "ursache": 2102,
+      "name": "Elterngeld ausbauen",
+      "seite": 26
+    },
+    {
+      "ursache": 2102,
+      "name": "Besteuerung von Familien reformieren",
+      "seite": 27
+    },
+    {
+      "ursache": 2103,
+      "name": "Datenaustausch zwischen Behörden",
+      "seite": 38
+    },
+    {
+      "ursache": 2102,
+      "name": "Kinderzuschlag mit Kindergeld und Wohngeld kombinieren",
+      "seite": 27
+    },
+    {
+      "ursache": 2102,
+      "name": "Familienstartzeit",
+      "seite": 26
+    },
+    {
+      "ursache": 2103,
+      "name": "Automatische Leistungsgewährung und vereinfachte Anträge",
+      "seite": 37
+    }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis (S. 3–4); Kapitel 3 Arbeitsmarkt (S. 12–14, Fundstellen und Bürgergeld-Passagen); Kapitel 4 Bildung (S. 15–16, Fundstellen); Kapitel 6 Wohnen (S. 21–22, Fundstellen); Kapitel 8 Renten und Lebensmittelpreise (S. 24–25); Kapitel 9 Familie (S. 26–27, vollständig); Kapitel 10 Gesundheit (S. 30–32, Fundstellen); Kapitel 12 Klima (S. 33–34, Fundstellen); Kapitel 13 Mobilität (S. 35–36, Fundstellen); Kapitel 14 Staat (S. 37–38, vollständig); Kapitel 15–18 (S. 39–41, 47–52, Fundstellen); Kapitel 19–20 (S. 52–55, Fundstellen); S. 57, 63 (Fundstellen). Seiten ohne Text (1, 2, 67, 68) spielen keine Rolle.
+
+Gleiche Stellen, nicht gesondert erfasst: S. 27 zentrale Ansprechstelle und automatische Beantragung von Leistungen (gleiche Art Zugangsverfahren wie S. 37, dort erfasst); S. 26 Maßnahmenpaket gegen Kinderarmut (Wiederholung der Kinderzuschlags-Zusage).
+
+Nicht erfasst (gelesen, nicht aufgenommen):
+- S. 5, 6, 12, 14: Mindestlohn, Löhne, Arbeitsmarkt, Mini-Jobs, Bürgergeld-Forderungen (Arbeitsmarkt und Haltung nach R2).
+- S. 21, 22: Wohngeld, Mieten, Wohnungsbau, Wohngeld plus (Wohnen nach R2).
+- S. 24: Lebensmittelpreise und Marktmacht (Behörden stärken, Prüfung) ohne Bezug zur Grundsicherung; Bekenntnis „Sozialleistungen ... an Lebenshaltungskosten orientieren“ ohne eigene Handlung.
+- S. 27: Kindergeld- und Kinderzuschlags-Erhöhung (Rückblick); „armutsfeste Geldleistungen“ und „Kindergrundsicherung“ (Ziel ohne Instrument; Hinweis auf Infrastruktur); kostenlose Mittagessen, Kita und Schule (Bildung nach R2); Frühe Hilfen und Familienzentren (Jugendhilfe, kein Einkommensbezug).
+- S. 26: Familienbudget für Alltagshelfer (Förderung haushaltsnaher Dienstleistungen, kein Bezug zum Lebensunterhalt); Frühe Hilfen.
+- S. 31: Pflegekosten-Deckel und vereinfachte Antragstellung Hilfe zur Pflege (Pflege, eigenes Thema).
+- S. 39: Einkommen der Werkstattbeschäftigten (Arbeitsmarkt und Teilhabe, eigenes Thema).
+- S. 35–36: Deutschlandticket-Ermäßigung für soziale Gruppen, Mobilitätspass (Mobilität, kein Bezug zu Grundsicherung).
+- S. 33–34: Strom-Spar-Check, soziales Wärmepumpen-Leasing, Netzentgelte (Energie nach R2).
+- S. 15–16: Startchancenprogramm, BAföG, Kita (Bildung nach R2).
+- S. 48: Altersarmut von Frauen (Rente nach R2).
+- S. 54–55, 57, 63: Integration, Asyl, Bundeswehr, Syrien, globale Armut (kein Bezug zu inländischer Grundsicherung oder Familienleistungen).
+
+Bündel aus dem Auftrag, im Leitfaden dieses Themas nicht bei den Ursachen geführt (Neue Bündel für den Koordinator): „Familien- und Kinderleistungen ausbauen“ (2102), „Erwerbsbeteiligung und Vereinbarkeit der Eltern stärken“ (2102), „Zugang erleichtern und Leistungen automatisch auszahlen“ (2103). Weitere gleichartige Stellen: S. 27 zentrale Ansprechstelle und automatische Beantragung (zum Bündel Zugang, nicht gesondert erfasst); S. 37 Anlaufstellen (dieselbe Zusage).
+
+Richtungen ohne Maßnahme: 2101 „Grundsicherung und Regelsätze erhöhen“ und „Leistungen begrenzen und gezielter einsetzen“; 2103 „Leistungsansprüche und Anreize anpassen“ (Bezugsdauer S. 12 betrifft Arbeitslosengeld, Arbeitsmarkt).

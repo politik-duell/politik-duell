@@ -1,0 +1,422 @@
+{
+  "blind_pruefsumme": "7a846a4f3913bdf989e5090959286300fb9623294ec74f68fd629f84d081ca1b",
+  "neue_instrumente": [
+    {
+      "kennung": "I1",
+      "name": "Gesetzliche Mindestausbildungsvergütung anheben (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Hebt die Vergütung genau in den schwach bezahlten Bereichen direkt an; laut BIBB wird aber nur bei 3-4 % der Verträge genau der Mindestsatz vereinbart, und Simulationen warnten vor weniger Ausbildungsplätzen in einzelnen Segmenten.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.bibb.de/de/pressemitteilung_229684.php"
+    },
+    {
+      "kennung": "I2",
+      "name": "Schulgeld in schulischen Ausbildungen abschaffen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Entfällt eine direkte Kostenlast für Auszubildende ohne Vergütung; Länder wie NRW übernehmen Schulgeld bereits mit spürbarer Entlastung. Der Bund kann es nur teils über Berufsgesetze und Finanzierung regeln.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.bra.nrw.de/foerderportal-wirtschaft/foerderportal/schultraegerinnen-und-schultraeger/einstieg-die-schulgeldfreiheit-den-gesundheitsfachberufen"
+    },
+    {
+      "kennung": "I3",
+      "name": "BAföG-Sätze und Freibeträge regelmäßig an Lebenshaltungskosten anpassen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Verhindert, dass die Förderung real an Wert verliert; Zuschüsse erhöhen nachweislich den Studienabschluss. Eine Indexierung hält aber nur das bestehende Niveau, ohne es anzuheben.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.aeaweb.org/doi/10.1257/app.20180100"
+    },
+    {
+      "kennung": "I4",
+      "name": "BAföG unabhängiger vom Elterneinkommen gestalten (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Erweitert den Kreis der Geförderten, deren Eltern faktisch nicht zahlen; Zuschüsse stärken den Abschluss. DIW fand bei BAföG-Reformen aber nur kleine Effekte auf die Studienaufnahme, zudem hohe Mehrkosten.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.diw.de/de/diw_01.c.87747.de/bafoeg-reform_hat_kaum_auswirkungen_auf_die_studienaufnahme.html"
+    },
+    {
+      "kennung": "I5",
+      "name": "Konditionen und Ausbau staatlicher Studien- und Bildungskredite (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Feste Zinsen und mehr Kreditvolumen erleichtern die Überbrückung, lösen aber nicht das Einkommensproblem und verlagern die Last als Schulden in die Zukunft; Wirkung auf Erwerbsarbeit kaum untersucht.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I6",
+      "name": "Aufstiegs-BAföG ausweiten und vereinfachen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Verbessert die Förderung für Fach- und Fortbildungsschüler über ein bestehendes Gesetz; erreicht aber nur eine kleine Gruppe, für Studierende kaum relevant, Wirkung wenig untersucht.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I7",
+      "name": "Bundesmittel für Studierendenwerke und soziale Infrastruktur an Hochschulen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Kann Mensapreise, Beiträge und Wohnkosten senken; der Effekt je Person ist klein und hängt von der Ausgestaltung ab. Hochschulen sind Ländersache, der Bund kann nur über einen Pakt mitfinanzieren.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I8",
+      "name": "Förderung von Wohnheimplätzen für Studierende und Auszubildende (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Wohnheimmieten liegen meist deutlich unter Marktmieten, das Bundesprogramm läuft bereits und hat die geförderten Plätze verdoppelt; die Wirkung bleibt aber auf die Bewohner begrenzt und ist kaum evaluiert.",
+      "evidenz": "offen",
+      "beleg_studie_url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1166126"
+    },
+    {
+      "kennung": "I9",
+      "name": "Vergünstigte Mobilität für Auszubildende (Ticket, Führerschein) (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Günstige Tickets entlasten laut DIW vor allem Junge, Auszubildende und Geringverdienende; es bleibt aber eine Entlastung bei einem Kostenposten, und der ÖPNV ist Ländersache mit Bundesmitfinanzierung.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.diw.de/de/diw_01.c.869729.de/publikationen/wochenberichte/2023_14_1/9-euro-ticket__niedrigere_preise_allein_staerken_alltagsmobilitaet_mit_oeffentlichen_verkehrsmitteln_nicht.html"
+    }
+  ],
+  "zuordnung": [
+    {
+      "kennung": "M01",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "BBiG-Schutzrechte brächten dual Studierenden u. a. Vergütungsanspruch und Mindestvergütung; betrifft aber eine kleine Gruppe, und viele erhalten bereits Vergütung. Wirkung kaum untersucht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3101
+      ]
+    },
+    {
+      "kennung": "M02",
+      "ursachen": []
+    },
+    {
+      "kennung": "M03",
+      "instrument": "I1",
+      "ursachen": [
+        3101
+      ]
+    },
+    {
+      "kennung": "M04",
+      "ursachen": []
+    },
+    {
+      "kennung": "M05",
+      "instrument": "I4",
+      "ursachen": [
+        3102
+      ]
+    },
+    {
+      "kennung": "M06",
+      "instrument": "I5",
+      "ursachen": [
+        3102
+      ]
+    },
+    {
+      "kennung": "M07",
+      "instrument": "I5",
+      "ursachen": [
+        3102
+      ]
+    },
+    {
+      "kennung": "M08",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Bessere Bezahlung studentischer Hilfskräfte senkt die nötige Arbeitszeit für einen Teil der Jobbenden; Tarifverträge schließen aber Länder und Tarifparteien, der Bund kann das kaum durchsetzen.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3102
+      ]
+    },
+    {
+      "kennung": "M09",
+      "instrument": "I2",
+      "ursachen": [
+        3101
+      ]
+    },
+    {
+      "kennung": "M10",
+      "instrument": "I6",
+      "ursachen": [
+        3102
+      ]
+    },
+    {
+      "kennung": "M11",
+      "instrument": "I4",
+      "ursachen": [
+        3102
+      ]
+    },
+    {
+      "kennung": "M12",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Stipendien entlasten einzelne leistungsstarke Auszubildende und Fachkräfte; sie erreichen nur wenige und setzen nicht an der Vergütungshöhe an. Wirkung kaum untersucht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3101
+      ]
+    },
+    {
+      "kennung": "M13",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Eine auskömmliche Förderung setzt direkt am Zwang zur Erwerbsarbeit an, Zuschüsse stärken nachweislich den Abschluss; Höhe und Finanzierung bleiben aber unbestimmt.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://www.aeaweb.org/doi/10.1257/app.20180100"
+      },
+      "ursachen": [
+        3102
+      ]
+    },
+    {
+      "kennung": "M14",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 3,
+        "begruendung": "Miete ist der größte Ausgabenposten; eine ortsübliche Pauschale schließt die Lücke in teuren Städten gezielt. Erreicht nur BAföG-Beziehende und kann Mieten an Hochschulorten mittragen.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://www.aeaweb.org/doi/10.1257/app.20180100"
+      },
+      "ursachen": [
+        3102
+      ]
+    },
+    {
+      "kennung": "M15",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Höhere Hinzuverdienstgrenzen verbessern das Einkommen von BAföG-Beziehenden, verstärken aber eher die Erwerbsarbeit neben dem Studium, statt sie zu verringern.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3102
+      ]
+    },
+    {
+      "kennung": "M16",
+      "ursachen": []
+    },
+    {
+      "kennung": "M17",
+      "instrument": "I7",
+      "ursachen": [
+        3102
+      ]
+    },
+    {
+      "kennung": "M18",
+      "ursachen": []
+    },
+    {
+      "kennung": "M19",
+      "instrument": "I8",
+      "ursachen": [
+        3101,
+        3102
+      ]
+    },
+    {
+      "kennung": "M20",
+      "einzeln": {
+        "wirksamkeit": 3,
+        "umsetzbarkeit": 1,
+        "begruendung": "Ein existenzsichernder Vollzuschuss für alle setzt direkt am Erwerbszwang an; Zuschüsse senken Erwerbsarbeit und erhöhen den Abschluss nachweislich. Die Kosten wären aber sehr hoch und die Finanzierung ist offen.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://www.aeaweb.org/doi/10.1257/app.20180100"
+      },
+      "ursachen": [
+        3102
+      ]
+    },
+    {
+      "kennung": "M21",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Ein Mindestsatz von 80 % des tariflichen Durchschnitts würde schwach bezahlte Bereiche deutlich anheben und Schulgeld entfallen lassen; Simulationen warnen bei starken Anhebungen vor weniger Ausbildungsplätzen.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://www.bibb.de/de/pressemitteilung_229684.php"
+      },
+      "ursachen": [
+        3101
+      ]
+    },
+    {
+      "kennung": "M22",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Ein steuerfreier Führerscheinzuschuss senkt einen konkreten Kostenposten, hängt aber von der Zahlungsbereitschaft des Betriebs ab und ist eine einmalige Entlastung.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3101
+      ]
+    },
+    {
+      "kennung": "M23",
+      "instrument": "I3",
+      "ursachen": [
+        3102
+      ]
+    },
+    {
+      "kennung": "M24",
+      "instrument": "I8",
+      "ursachen": [
+        3101,
+        3102
+      ]
+    },
+    {
+      "kennung": "M25",
+      "ursachen": []
+    },
+    {
+      "kennung": "M26",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Kürzere Bearbeitungszeiten vermeiden Finanzierungslücken zu Studienbeginn; die Förderhöhe bleibt unverändert, Wirkung auf den Lebensunterhalt gering.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3102
+      ]
+    },
+    {
+      "kennung": "M27",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Ein Rückzahlungserlass entlastet Eltern unter den Geförderten nach dem Abschluss, ändert aber nichts am laufenden Lebensunterhalt während des Studiums.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3102
+      ]
+    },
+    {
+      "kennung": "M28",
+      "instrument": "I7",
+      "ursachen": [
+        3102
+      ]
+    },
+    {
+      "kennung": "M29",
+      "instrument": "I2",
+      "ursachen": [
+        3101
+      ]
+    },
+    {
+      "kennung": "M30",
+      "instrument": "I9",
+      "ursachen": [
+        3101
+      ]
+    },
+    {
+      "kennung": "M31",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Mehr günstige Wohnheimplätze würden Auszubildende entlasten; eine Pflichtabgabe für Unternehmen ist rechtlich aufwendig und in Ausgestaltung und Wirkung unklar.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3101
+      ]
+    },
+    {
+      "kennung": "M32",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Gedeckelte Kosten und ein tariffähiger Beschäftigungsstatus würden die hohe Belastung in der Psychotherapie-Ausbildung spürbar senken; betrifft nur eine Berufsgruppe, Finanzierung über Kassen offen.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3101
+      ]
+    },
+    {
+      "kennung": "M33",
+      "instrument": "I9",
+      "ursachen": [
+        3101
+      ]
+    },
+    {
+      "kennung": "M34",
+      "instrument": "I1",
+      "ursachen": [
+        3101
+      ]
+    },
+    {
+      "kennung": "M35",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Kostenloser Nahverkehr entlastet Auszubildende bei einem Kostenposten, günstige Tickets erreichen laut DIW gerade Junge; die dauerhafte Finanzierung durch Bund und Länder ist aber ungeklärt.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://www.diw.de/de/diw_01.c.869729.de/publikationen/wochenberichte/2023_14_1/9-euro-ticket__niedrigere_preise_allein_staerken_alltagsmobilitaet_mit_oeffentlichen_verkehrsmitteln_nicht.html"
+      },
+      "ursachen": [
+        3101
+      ]
+    },
+    {
+      "kennung": "M36",
+      "instrument": "I6",
+      "ursachen": [
+        3102
+      ]
+    },
+    {
+      "kennung": "M37",
+      "instrument": "I3",
+      "ursachen": [
+        3102
+      ]
+    },
+    {
+      "kennung": "M38",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Auszubildendenwerke würden die fehlenden Trägerstrukturen für Azubi-Wohnheime schaffen, die bisher Förderung abrufen bremsen; der Aufbau dauert und erfordert Länderbeteiligung.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3101
+      ]
+    },
+    {
+      "kennung": "M39",
+      "ursachen": []
+    }
+  ]
+}
