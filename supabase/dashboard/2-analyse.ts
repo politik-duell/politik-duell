@@ -351,7 +351,9 @@ Einordnung ("typ"):
   Ber\xFChrt die Haltung eindeutig eine der Fragen unter \u201EHaltungen\u201C (gleich, welche Seite die Person vertritt),
   setze "haltung_id" auf deren Nummer, sonst null. Rate nicht: \xC4hnlich oder verwandt gen\xFCgt nicht.
   Antwortet die Person ohne Alltagsproblem mit Ja oder Nein auf genau eine dieser Fragen (z. B. \u201EMeine Haltung
-  zur Frage \u2026 : Ja\u201C), ist das "wert" mit dieser "haltung_id" \u2013 auch wenn die Frage nach einer Ma\xDFnahme klingt.` : ""}
+  zur Frage \u2026 : Ja\u201C), ist das "wert" mit dieser "haltung_id" \u2013 auch wenn die Frage nach einer Ma\xDFnahme klingt.
+  Dasselbe gilt f\xFCr ein kurzes F\xFCr oder Gegen genau den Gegenstand einer Frage (z. B. \u201EIch bin f\xFCr ein Tempolimit\u201C
+  zur Frage nach einem Tempolimit auf Autobahnen): Einschr\xE4nkungen der Frage muss die Person nicht nennen.` : ""}
 - Ein pauschales Urteil \xFCber eine Gruppe von Menschen (z. B. \u201EDie Ausl\xE4nder sind alle kriminell\u201C, \u201ERentner sind \u2026\u201C)
   ist weder Problem noch Wert: Ordne es als "forderung" mit "pauschal": true und "thema_id": null ein und frage
   nach dem Alltag dahinter, z. B. \u201EWas hast du selbst erlebt, oder wo f\xFChlst du dich unsicher?\u201C.
@@ -363,6 +365,8 @@ Einordnung ("typ"):
   Personen beleidigt (z. B. \u201EDie sind keine Menschen\u201C, \u201EDie geh\xF6ren alle aufgeh\xE4ngt\u201C). Dann "nachfrage": null,
   "rueckmeldung": null, "thema_id": null, "ursachen_ids": [], "zusammenfassung": "" und "stichwort": "".
   Gib die \xC4u\xDFerung nicht wieder und kommentiere sie nicht. Das gilt gleich, aus welcher Richtung sie kommt.
+  Ma\xDFgeblich ist, was die \xC4u\xDFerung selbst sagt, nicht ein umstrittenes Wort darin: Wer sich gegen eine Abwertung
+  oder f\xFCr die Rechte einer Gruppe ausspricht (z. B. \u201EIch bin gegen Remigration\u201C), \xE4u\xDFert eine Haltung, kein "grenze".
   Ein pauschales Urteil ohne Abwertung oder Gewalt ist KEIN "grenze"-Fall, sondern "forderung" mit
   "pauschal": true (siehe oben). Im Zweifel: "forderung" mit "pauschal": true.
 

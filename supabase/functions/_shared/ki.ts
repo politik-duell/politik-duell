@@ -86,7 +86,9 @@ Einordnung ("typ"):
   Berührt die Haltung eindeutig eine der Fragen unter „Haltungen“ (gleich, welche Seite die Person vertritt),
   setze "haltung_id" auf deren Nummer, sonst null. Rate nicht: Ähnlich oder verwandt genügt nicht.
   Antwortet die Person ohne Alltagsproblem mit Ja oder Nein auf genau eine dieser Fragen (z. B. „Meine Haltung
-  zur Frage … : Ja“), ist das "wert" mit dieser "haltung_id" – auch wenn die Frage nach einer Maßnahme klingt.`
+  zur Frage … : Ja“), ist das "wert" mit dieser "haltung_id" – auch wenn die Frage nach einer Maßnahme klingt.
+  Dasselbe gilt für ein kurzes Für oder Gegen genau den Gegenstand einer Frage (z. B. „Ich bin für ein Tempolimit“
+  zur Frage nach einem Tempolimit auf Autobahnen): Einschränkungen der Frage muss die Person nicht nennen.`
       : ''
   }
 - Ein pauschales Urteil über eine Gruppe von Menschen (z. B. „Die Ausländer sind alle kriminell“, „Rentner sind …“)
@@ -100,6 +102,8 @@ Einordnung ("typ"):
   Personen beleidigt (z. B. „Die sind keine Menschen“, „Die gehören alle aufgehängt“). Dann "nachfrage": null,
   "rueckmeldung": null, "thema_id": null, "ursachen_ids": [], "zusammenfassung": "" und "stichwort": "".
   Gib die Äußerung nicht wieder und kommentiere sie nicht. Das gilt gleich, aus welcher Richtung sie kommt.
+  Maßgeblich ist, was die Äußerung selbst sagt, nicht ein umstrittenes Wort darin: Wer sich gegen eine Abwertung
+  oder für die Rechte einer Gruppe ausspricht (z. B. „Ich bin gegen Remigration“), äußert eine Haltung, kein "grenze".
   Ein pauschales Urteil ohne Abwertung oder Gewalt ist KEIN "grenze"-Fall, sondern "forderung" mit
   "pauschal": true (siehe oben). Im Zweifel: "forderung" mit "pauschal": true.
 
