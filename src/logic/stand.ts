@@ -6,6 +6,7 @@ import type { Daten } from '../data/quelle'
 import type { Ebene, Evidenz } from '../data/types'
 import { vollstaendigeHaltungen } from '../../supabase/functions/_shared/haltung.ts'
 import { findeAbdeckung } from './bewertung'
+import { forderungErfassung } from './forderung'
 
 /** Wie weit das Bundesprogramm einer Partei zu einem Thema ausgewertet ist (wie in der Auflösung). */
 export type Erfassung = 'massnahmen' | 'keine' | 'offen'
@@ -73,6 +74,32 @@ export interface Statistik {
   positionenEntwurf: number
   positionenMoeglich: number
   zielkonflikte: number
+}
+
+/** Wie viele Einträge einer Art vollständig, begonnen oder noch gar nicht erfasst sind. */
+export interface Fortschritt {
+  gesamt: number
+  vollstaendig: number
+  begonnen: number
+}
+
+/**
+ * Fortschritt der Erfassung je Art. Vollständig heißt jeweils: Für alle Parteien liegt eine Auswertung vor –
+ * Themen: alle Bundesprogramme ausgewertet (sonst wird die Runde nicht gewertet); Forderungen (Lösungswege):
+ * keine Partei mehr „noch nicht erfasst“ auf der Forderungskarte; Haltungen: Positionen aller Parteien (Karte im Spiel).
+ */
+export function fortschritt(daten: Daten): { themen: Fortschritt; forderungen: Fortschritt; haltungen: Fortschritt } {
+  const zaehle = (staende: ('vollstaendig' | 'begonnen' | 'offen')[]): Fortschritt => ({
+    gesamt: staende.length,
+    vollstaendig: staende.filter((s) => s === 'vollstaendig').length,
+    begonnen: staende.filter((s) => s === 'begonnen').length,
+  })
+  const art = (vollstaendig: boolean, begonnen: boolean) => (vollstaendig ? 'vollstaendig' : begonnen ? 'begonnen' : 'offen')
+  return {
+    themen: zaehle(themenStand(daten).map((t) => art(t.zaehlung.offen === 0, t.zaehlung.offen < t.parteien.length))),
+    forderungen: zaehle(daten.instrumente.map((i) => forderungErfassung(daten, i))),
+    haltungen: zaehle(haltungStand(daten).map((h) => art(h.vollstaendig, h.positionen + h.positionenEntwurf > 0))),
+  }
 }
 
 /** Lösungswege eines Themas für die Übersicht – ohne Parteinamen, nur wie viele Programme einen Weg enthalten. */

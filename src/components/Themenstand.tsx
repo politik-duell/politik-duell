@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react'
 import type { Daten } from '../data/quelle'
 import {
+  fortschritt,
   haltungStand,
   instrumentStand,
   statistik,
   themenStand,
   type Erfassung,
+  type Fortschritt,
   type HaltungStand,
   type Statistik,
   type ThemaInstrumente,
@@ -89,7 +91,10 @@ function Balkendiagramm({
   legende,
   zeilen,
   leer,
+  klasse,
 }: {
+  /** Zusätzliche CSS-Klasse der Abbildung, z. B. `diagramm-prozent` für eine breitere Wertspalte. */
+  klasse?: string
   titel: string
   unterzeile: string
   legende?: { klasse: string; label: string }[]
@@ -146,7 +151,7 @@ function Balkendiagramm({
   }
 
   return (
-    <figure className="diagramm">
+    <figure className={klasse ? `diagramm ${klasse}` : 'diagramm'}>
       <figcaption>
         <strong>{titel}</strong>
         <span>{unterzeile}</span>
@@ -180,6 +185,47 @@ function Balkendiagramm({
         {detail ?? leer}
       </p>
     </figure>
+  )
+}
+
+function Fortschrittsdiagramm({ daten }: { daten: Daten }) {
+  const f = fortschritt(daten)
+  const arten: { id: number; name: string; f: Fortschritt; vollstaendig: string }[] = [
+    { id: 1, name: 'Themen', f: f.themen, vollstaendig: 'alle Bundesprogramme ausgewertet' },
+    { id: 2, name: 'Forderungen', f: f.forderungen, vollstaendig: 'alle Programme ausgewertet' },
+    { id: 3, name: 'Haltungen', f: f.haltungen, vollstaendig: 'Positionen aller Parteien erfasst' },
+  ]
+  const prozent = (n: number, ganz: number) => (ganz ? Math.round((n / ganz) * 100) : 0)
+  return (
+    <Balkendiagramm
+      klasse="diagramm-prozent"
+      titel="Fortschritt der Erfassung"
+      unterzeile="Anteil der angelegten Themen, Forderungen (Lösungswege) und Haltungen, die für alle Parteien vollständig erfasst sind"
+      legende={[
+        { klasse: 'st-massnahmen', label: 'vollständig erfasst' },
+        { klasse: 'st-keine', label: 'teilweise erfasst' },
+        { klasse: 'st-offen', label: 'noch nicht begonnen' },
+      ]}
+      leer="Tippe auf eine Zeile für Details."
+      zeilen={arten.map(({ id, name, f, vollstaendig }) => {
+        const offen = f.gesamt - f.vollstaendig - f.begonnen
+        const anteil = (n: number) => (f.gesamt ? n / f.gesamt : 0)
+        return {
+          id,
+          name,
+          wert: `${prozent(f.vollstaendig, f.gesamt)}\u00a0%`,
+          segmente: [
+            { klasse: 'st-massnahmen', anteil: anteil(f.vollstaendig) },
+            { klasse: 'st-keine', anteil: anteil(f.begonnen) },
+            { klasse: 'st-offen', anteil: anteil(offen) },
+          ],
+          detail: f.gesamt
+            ? `${name}: ${zahl(f.vollstaendig)} von ${zahl(f.gesamt)} vollständig (${vollstaendig}), ` +
+              `${zahl(f.begonnen)} teilweise, ${zahl(offen)} noch nicht begonnen.`
+            : `${name}: noch keine angelegt.`,
+        }
+      })}
+    />
   )
 }
 
@@ -584,6 +630,7 @@ function Inhalt({ daten }: { daten: Daten }) {
         einen eigenen Teil der Daten. Nur Probleme werden mit Punkten gewertet.
       </p>
       <Aufbau s={s} testphase={testphase} />
+      <Fortschrittsdiagramm daten={daten} />
       <h2>Programme</h2>
       <div className="kacheln">
         <Kachel label="Parteien" wert={zahl(s.parteien)} zusatz="Bundesprogramme" />

@@ -2059,6 +2059,9 @@ textarea {
 .balken-teil:last-child {
   border-radius: 0 4px 4px 0;
 }
+.diagramm-prozent .balken-zeile {
+  grid-template-columns: minmax(5.5rem, 34%) 1fr 3.2rem;
+}
 .balken-wert {
   font-size: 0.85rem;
   font-variant-numeric: tabular-nums;
