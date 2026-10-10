@@ -349,7 +349,9 @@ Einordnung ("typ"):
   Alltag?\u201C. Stimme nicht zu und widersprich nicht. Wertet die Haltung eine Gruppe von Menschen ab, gib sie nicht
   wieder und frag nur nach dem Alltag.${haltungen.length ? `
   Ber\xFChrt die Haltung eindeutig eine der Fragen unter \u201EHaltungen\u201C (gleich, welche Seite die Person vertritt),
-  setze "haltung_id" auf deren Nummer, sonst null. Rate nicht: \xC4hnlich oder verwandt gen\xFCgt nicht.` : ""}
+  setze "haltung_id" auf deren Nummer, sonst null. Rate nicht: \xC4hnlich oder verwandt gen\xFCgt nicht.
+  Antwortet die Person ohne Alltagsproblem mit Ja oder Nein auf genau eine dieser Fragen (z. B. \u201EMeine Haltung
+  zur Frage \u2026 : Ja\u201C), ist das "wert" mit dieser "haltung_id" \u2013 auch wenn die Frage nach einer Ma\xDFnahme klingt.` : ""}
 - Ein pauschales Urteil \xFCber eine Gruppe von Menschen (z. B. \u201EDie Ausl\xE4nder sind alle kriminell\u201C, \u201ERentner sind \u2026\u201C)
   ist weder Problem noch Wert: Ordne es als "forderung" mit "pauschal": true und "thema_id": null ein und frage
   nach dem Alltag dahinter, z. B. \u201EWas hast du selbst erlebt, oder wo f\xFChlst du dich unsicher?\u201C.
