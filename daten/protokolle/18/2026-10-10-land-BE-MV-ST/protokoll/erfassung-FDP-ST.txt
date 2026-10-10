@@ -1,0 +1,46 @@
+{
+  "partei_id": 14,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Naturschutzmittel vorrangig in Städten einsetzen; extensiv gepflegte Grünflächen sollen durch Kühlung das bebaute Umfeld entlasten.",
+      "ursachen_ids": [1803],
+      "buendel": "Stadtgrün, Verschattung, Frischluft",
+      "zitat": "Naturschutzmaßnahmen lenken wir dahin, wo sie den höchsten Effekt bringen. Nehmen wir für Maßnahmen zur Verbesserung von Ökosystemen besonders urbane Räume in den Blick. Nur extensiv gepflegte Grünflächen sparen Aufwand für Kommunen und schenken urbanen Räumen Biodiversität. Hecken, Alleen oder Parks filtern Staub, […] produzieren Sauerstoff und fördern die Taubildung insbesondere zur sommerlichen Kühlung des bebauten Umfeldes.",
+      "seite": 18
+    },
+    {
+      "beschreibung": "Innenentwicklung (Ortskerne beleben, Brachflächen aktivieren) hat Vorrang vor zusätzlichem Flächenverbrauch.",
+      "ursachen_ids": [1804],
+      "ursachen_offen": [1803],
+      "buendel": "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen",
+      "zitat": "«Innenentwicklung» hat für uns Vorrang vor zusätzlichem Flächenverbrauch: Ortskerne beleben, Brachflächen aktivieren, Wege verkürzen.",
+      "seite": 58
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 1805,
+      "seiten": [19, 48],
+      "grund": "Hochwasser nur als Beispiel einer Großschadenslage für einen Landesfonds Katastrophenschutz (R8, kein Hochwasserschutz im Zitat); Elementarversicherung ohne Bezug zur Bebauung von Überschwemmungsgebieten; Wasserrückhalt in dürregeplagten Wäldern ohne Hochwasser- oder Siedlungsbezug (R7)."
+    }
+  ],
+  "stand_im_pdf": "Stand: 05.06.2026 (beschlossen am 25.04.2026); Auftrag: 2026-04-25"
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis S. 1–2; Kapitel Wirtschaft, Wohnen und Bauen, Energie, Land- und Forstwirtschaft, Jagd und Umwelt (S. 5–21); Kapitel Sicherheit, Brand- und Katastrophenschutz, Kommunales (S. 47–50); Landesentwicklung (S. 57–58). Kapitel Gesundheit, Pflege, Infrastruktur (S. 59–68) nur per Stichwortsuche geprüft: keine Treffer zu Hitze, Kühlung, Grün, Hochwasser, Flächen.
+
+Erfasst: S. 18 (Naturschutz in Städten mit Kühlwirkung, 1803, Bündel „Stadtgrün, Verschattung, Frischluft“; die Kühlwirkung in S. 19 gehört zum selben Absatz); S. 58 (Innenentwicklung vor Flächenverbrauch, 1804 mit Bündel „Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen“; 1803 als Grenzfall offen, weil Nachverdichtung Hitze verstärken kann, der Leitfaden das aber nicht regelt).
+
+Nicht erfasst:
+- S. 12, 58: „Aber wir stehen nicht im Weg, wenn Menschen ihren Traum vom Eigenheimbau leben wollen.“ – Bekenntnis ohne eigene Handlung, keine Bauland-Ausweisung zugesagt (Bündel „Bauland ausweisen, Bauen nicht verteuern“ nicht belegt).
+- S. 12: Modernisierung, energetische Sanierung, Barrierefreiheit – kein Hitzeschutz oder Bezug zu den Ursachen.
+- S. 19: Wasserrückhalt in dürregeplagten Waldgebieten (Entwässerungsgräben) – Wald ohne Siedlungs- oder Hochwasserbezug (R5, R7).
+- S. 48: Landesfonds Katastrophenschutz (Großbrände, „Hochwasser“ als Beispiel) und Versicherungsangebot für Gebäude gegen Elementarschäden – R8 bzw. kein Ansatz an der Bebauung von Überschwemmungsgebieten (1805 in nicht_erfasst).
+- S. 19–21: Waldbrandprävention, Waldumbau, Aufforstung im Emissionshandel – kein Bezug zu 1803–1805 (R4: Waldumbau ohne Stadt- oder Hitzebezug).
+
+Richtungen ohne Maßnahme: 1803 „Bauvorschriften und Gebäudehitzeschutz“ (keine Zusage zu Gebäudekühlung; der einzige Treffer „Kühlung“ betrifft das Stadtumfeld, S. 19); 1804 „Technischer Rückhalt, Kanal und Speicher“ (keine Zusage; S. 13–14 Energie und S. 58 Abfall nur ohne Bezug); 1804 „Bauland ausweisen“ (siehe oben); 1805 „Bauverbot, Flächen freihalten, Rückbau“ (keine Zusage; S. 12 nennt nur „wirtschaftlich notwendigen Rückbau“ im Wohnungsbestand ohne Bezug zu Überschwemmungsgebieten); 1805 „Technischer Hochwasserschutz“ (keine Zusage, siehe S. 48); 1805 „Bauvorsorge der Eigentümer“ (keine Zusage außer Versicherung, S. 48).
+
+Seiten ohne Text: S. 1 (Titelseite, Hinweis im Auftrag) – keine Rolle gespielt.

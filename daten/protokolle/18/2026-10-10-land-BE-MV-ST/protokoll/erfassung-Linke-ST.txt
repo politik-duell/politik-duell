@@ -1,0 +1,86 @@
+{
+  "partei_id": 16,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Öffentliche Investitionen in mehr Stadtgrün und nachhaltiges Bauen",
+      "ursachen_ids": [1803],
+      "buendel": "Stadtgrün, Verschattung, Frischluft",
+      "zitat": "Wir wollen: […] in nachhaltiges Bauen und mehr «Stadtgrün» investieren.",
+      "seite": 19
+    },
+    {
+      "beschreibung": "Landesfonds für Entsiegelung, der Kommunen und Eigentümer beim Rückbau versiegelter Flächen unterstützt",
+      "ursachen_ids": [1804],
+      "ursachen_offen": [1803],
+      "buendel": "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen",
+      "zitat": "Wir wollen: […] einen Landesfonds für Entsiegelung schaffen, der Kommunen und Eigentümer:innen beim Rückbau versiegelter Flächen unterstützt und so mehr Grün in die Städte und Dörfer bringt.",
+      "seite": 113
+    },
+    {
+      "beschreibung": "Schwammstadtprinzip in Kommunen verankern und bei neuen Projekten und Sanierungen anwenden",
+      "ursachen_ids": [1804],
+      "zitat": "Wir wollen: […] das Schwammstadtprinzip in Kommunen verankern und bei neuen Projekten sowie Sanierungen anwenden,",
+      "seite": 127
+    },
+    {
+      "beschreibung": "Regenrückhalt in der Fläche systematisch stärken",
+      "ursachen_ids": [1804],
+      "buendel": "Technischer Rückhalt, Kanal und Speicher",
+      "zitat": "Wir wollen: […] Regenrückhalt systematisch stärken, damit Wasser in der Fläche bleibt und nicht unkontrolliert abfließt,",
+      "seite": 127
+    },
+    {
+      "beschreibung": "Landesprogramm für Hitze- und Hochwasserschutz im klimaresilienten Tourismus",
+      "ursachen_ids": [1803],
+      "ursachen_offen": [1805],
+      "zitat": "Wir wollen: klimaresiliente Tourismusentwicklung – Landesprogramm für Hitze- und Hochwasserschutz […]",
+      "seite": 94
+    },
+    {
+      "beschreibung": "Nachnutzung und moderate Verdichtung bestehender Siedlungsflächen statt Neubau am Stadtrand unterstützen",
+      "ursachen_ids": [1804],
+      "ursachen_offen": [1803],
+      "zitat": "Die Linke setzt sich für Nachnutzung und moderate Verdichtung bestehender Siedlungsflächen ein",
+      "seite": 85
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 1805, "seiten": [110, 130, 131, 133], "grund": "Hochwasser nur als Lage- oder Einsatzbezug (Feuerwehr, Amtshilfe, Risikoabschätzung zu Infrastruktur); kein Hochwasserschutz und keine Begrenzung des Bauens in Überschwemmungsgebieten; Feuerwehrausstattung ohne Hochwasserschutz im Zitat (R8). Eigenvorsorge S. 131 nur Krisenvorrat, kein Objektschutz." },
+    { "ursache": 1803, "seiten": [127], "grund": "Klimaklausel im Denkmalschutzgesetz nennt weder Hitze, Stadt noch Regenwasser im Zitat; allgemeine Klimaanpassung am Denkmal (R4)." },
+    { "ursache": 1804, "seiten": [125, 126], "grund": "Abwasser-Modernisierung betrifft Reinigungsstandards und Mikroschadstoffe, nicht Starkregen-Kanäle (R5); Dorfteiche ohne Starkregenbezug; Elbwasser-Umleitung nur Wassermangel." }
+  ],
+  "neue_buendel": [
+    { "ursache": 1804, "name": "Schwammstadtprinzip verankern", "seite": 127 },
+    { "ursache": 1803, "name": "Hitzeschutz im Tourismus (Landesprogramm)", "seite": 94 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "Zersiedelung", "ursache": 1804, "richtung": "Flächenverbrauch begrenzen" },
+    { "begriff": "blau-grün", "ursache": 1804, "richtung": "Regen speichern und versickern, Grün in Städten" }
+  ]
+}
+
+Protokoll
+
+Gelesen: Inhaltsverzeichnis S. 1–6; Kapitel 4 Gleichstellung (Einleitung S. 19); S. 83–85 (Wohnen, Städtebau); S. 94 (Tourismus); S. 110, 112–114 (Landwirtschaft, Entsiegelung); S. 120 (Umwelt und Klima, Lage); S. 124–127 (Wasser, Klimaanpassung in Städten); S. 130–133 (Katastrophenschutz, Feuerwehr, Eigenvorsorge). Fundstellen mit „Pol der“ (Slogan „Pol der Hoffnung“) sind Fehltreffer des Begriffs „Polder“ und wurden nicht gelesen. Fundstellen S. 1–2, 5, 7, 8, 12, 17, 21, 26 ff. (Kapitel Frieden, Demokratie, Bildung usw.) enthalten keine Maßnahme zu den Ursachen.
+
+Hinweis: S. 1 hat nur Titeltext (kein Bild-Verdacht im passenden Kapitel).
+
+Weitere gleichartige Stellen (nicht erfasst, weil Bündel schon belegt):
+- S. 127: „Wir wollen: […] ein Landesförderprogramm auflegen, das Kommunen bei der Umsetzung dieser Maßnahmen unterstützt.“ (Förderung, gleiches Bündel wie S. 113, dort konkreter).
+- S. 127: „Infrastruktur grundsätzlich blau-grün planen, damit Städte widerstandsfähiger werden,“ (Planungsvorgabe, gleichartig zum Schwammstadtprinzip).
+- S. 113: „den Flächenverbrauch reduzieren,“ – nur Zielsatz ohne Instrument, nicht erfasst.
+
+Nicht erfasst (gelesen, nicht aufgenommen):
+- S. 85: „Eine unkontrollierte Zersiedelung … lehnen wir ab.“ und Stadtumbau/Rückbau von Plattenbauten – Haltung bzw. kein Bezug zu Hitze, Starkregen oder Entsiegelung im Zitat.
+- S. 113: Mehrgefahrenfonds für klimabedingte Schäden (Bundesratsinitiative) – Schadensfinanzierung, keine Ursache.
+- S. 125: Dorfteiche ökologisch stabilisieren; Spree-Wassermangel – kein Starkregen- oder Hochwasserbezug.
+- S. 131: „öffentliche, regionalisierte Risikoabschätzungen zeigen, wo Hochwassergefahren lauern“ – Transparenz zu Infrastruktur, keine Hochwasserschutz-Zusage.
+- S. 133: Löschwasserbrunnen, Waldbrandvorsorge, Feuerwehr-Ausstattung – kein Hochwasserschutz im Zitat (R8).
+- S. 115–116: Waldumbau gegen Dürre und Hitze – nicht zu 1803 (R4).
+
+Richtungen ohne Maßnahme: 1805 Bauen in Überschwemmungsgebieten begrenzen, Deiche, Rückhaltebecken, Polder, Bauvorsorge der Eigentümer – im Programm nicht vorhanden. 1803 Straßenbäume, Verschattung, Frischluftschneisen, Gebäudehitzeschutz – nicht vorhanden. 1804 Abwasser-Ausbau gegen Starkregen – nicht vorhanden.
+
+Grenzfälle: S. 94 (Hitze/Hochwasser im Tourismus-Landesprogramm), S. 113 (Entsiegelungsfonds mit „Grün in die Städte“ als Zweitwirkung), S. 85 (Verdichtung als Bekenntnis „setzt sich ein“).
+
+Neue Bündel (im Leitfaden für diese Ursache noch nicht geführt, vom Koordinator ergänzen): „Stadtgrün, Verschattung, Frischluft“ (1803); „Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen“ (1804); „Technischer Rückhalt, Kanal und Speicher“ (1804).

@@ -1,0 +1,91 @@
+{
+  "partei_id": 17,
+  "land": "MV",
+  "massnahmen": [
+    {
+      "beschreibung": "Förderung von Rückhaltebecken, Naturteichen, Feuchtpuffern und Bewässerungskonzepten im Wassermanagement",
+      "ursachen_ids": [],
+      "ursachen_offen": [1805],
+      "buendel": "Technischer Hochwasserschutz",
+      "zitat": "Wir fördern Rückhaltebecken, Naturteiche, Gewässerrandstreifen, Feuchtpuffer und Bewässerungskonzepte […].",
+      "seite": 85
+    },
+    {
+      "beschreibung": "Ausbau der Regenwasserinfrastruktur und Modernisierung kommunaler Kläranlagen, um Gewässereinträge zu verringern",
+      "ursachen_ids": [],
+      "ursachen_offen": [1804],
+      "buendel": "Technischer Rückhalt, Kanal und Speicher",
+      "zitat": "Modernisierung kommunaler Kläranlagen sowie Ausbau einer leistungsfähigen Regenwasserinfrastruktur, um Einträge in Flüsse, Seen und Ostsee wirksam zu verringern.",
+      "seite": 85
+    },
+    {
+      "beschreibung": "Förderung naturnaher Küstenschutzprojekte wie Dünen und Strandaufbau",
+      "ursachen_ids": [],
+      "ursachen_offen": [1805],
+      "zitat": "Naturnahe Küstenschutzprojekte wie Dünen- und Strandaufbau fördern wir gezielt.",
+      "seite": 85
+    },
+    {
+      "beschreibung": "Kommunen sollen Bauland aktivieren und neue Wohngebiete entwickeln, unterstützt vom Land",
+      "ursachen_ids": [],
+      "ursachen_offen": [1804],
+      "buendel": "Bauland ausweisen, Bauen nicht verteuern",
+      "zitat": "Aktivierung und Bereitstellung von Bauland sowie Entwicklung neuer Wohngebiete durch die Kommunen, unterstützt durch das Land.",
+      "seite": 21
+    },
+    {
+      "beschreibung": "Vorrang für Photovoltaik auf bereits versiegelten Flächen wie Dächern, Parkplätzen und Industrieflächen",
+      "ursachen_ids": [],
+      "ursachen_offen": [1804],
+      "zitat": "Vorrang für Photovoltaik auf bereits versiegelten Flächen, etwa auf Dächern, Parkplätzen und Industrieflächen.",
+      "seite": 28
+    },
+    {
+      "beschreibung": "Förderung von Agri-Photovoltaik statt zusätzlicher Flächenversiegelung",
+      "ursachen_ids": [],
+      "ursachen_offen": [1804],
+      "zitat": "Förderung von Agri-Photovoltaik statt zusätzlicher Flächenversiegelung.",
+      "seite": 82
+    },
+    {
+      "beschreibung": "Zusätzlicher Flächenverbrauch (bei Windenergie) nur bei tatsächlichem Mehrbedarf",
+      "ursachen_ids": [],
+      "ursachen_offen": [1804],
+      "buendel": "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen",
+      "zitat": "Ein zusätzlicher Flächenverbrauch darf nur erfolgen, wenn ein tatsächlicher Mehrbedarf besteht.",
+      "seite": 25
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 1803,
+      "seiten": [84, 85, 86],
+      "grund": "Kapitel 8.2 Umwelt und Klimaschutz (S. 84–86) gelesen: nichts zu Stadtgrün, Straßenbäumen, Verschattung, Frischluft, Hitze oder Kühlung an Gebäuden. Klimaanpassung nur allgemein."
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 1804, "name": "Vorrang für Photovoltaik auf versiegelten Flächen", "seite": 28 },
+    { "ursache": 1804, "name": "Agri-Photovoltaik fördern", "seite": 82 }
+  ]
+}
+
+Protokoll BSW MV (Thema 18, Ursachen 1803–1805)
+
+Gelesen: Inhaltsverzeichnis (S. 2–5); Kapitel 3.1 Energie (Fundstellen S. 25–28, Windenergie und Energieversorgung); Kapitel 3.1 Wohnungsfrage (S. 21, Fundstelle); Kapitel 8.1 Landwirtschaft (Fundstelle S. 82); Kapitel 8.2 Umwelt und Klimaschutz (S. 84–86 vollständig). Fundstellen laut Auftrag gelesen: S. 21, 25, 27, 28, 82, 84, 85, 86. Feuerwehr und Katastrophenschutz (S. 66) nicht gelesen: die Textsuche findet „Hochwasser“ nur auf S. 86, daher kein Hochwasserbezug (R8).
+
+Bündel-Zuordnung: M1 (Rückhaltebecken, Hochwasser) ist nach R7 Hochwasserschutz, das Zitat hat aber keinen Hochwasserbezug (R5 verlangt ihn für Wasserrückhalt). Deshalb ursachen_offen 1805. M2 (Regenwasserinfrastruktur) zielt auf Gewässereinträge, nicht auf Starkregen in Siedlungen: Grenzfall, ursachen_offen 1804. M3 (Dünen, Küstenschutz) ist naturnaher Küstenschutz gegen Sturmfluten, kein Bezug zu Überschwemmungsgebieten: Grenzfall, ursachen_offen 1805.
+
+Gleiche Zusage mehrfach: PV-Vorrang auf versiegelten Flächen steht auf S. 28 und in ähnlicher Form auf S. 82 („Photovoltaik vorrangig auf Dächern und Parkplätzen … ganz ohne zusätzlichen Flächenfraß“). Erfasst auf S. 28 als die konkretere Stelle.
+
+Nicht erfasst:
+- S. 27: „Leistung statt Flächenverbrauch“ – Slogan, keine Handlungszusage.
+- S. 84–85: Moore und Feuchtgebiete (Revitalisierung, Wasserrückhalteräume) – kein Siedlungs- oder Hochwasserbezug (R5).
+- S. 86: „Aktives Wassermanagement … insbesondere zur Vorsorge gegen Dürre, Starkregen und Hochwasser“ – Ziel, die konkreten Zusagen dazu stehen auf S. 85 (M1).
+- S. 86: „Förderung regionaler Klimaanpassungsmaßnahmen“ – Ziel ohne Zweck (R10).
+- S. 21 (Fundstelle „Bauland“) ist als Grenzfall erfasst (M4), nicht als Ziel.
+
+Richtungen ohne Maßnahme: 1803 (kein Stadtgrün, Hitze- oder Verschattungsmaßnahme gefunden). 1805 Bauen in Überschwemmungsgebieten (Bauverbot, Rückbau, Bauvorsorge): keine Zusage gefunden; „Überschwemmung“ kommt im Text nicht vor.
+
+Seiten ohne Text: S. 43 (Bildung) nicht relevant.
+
+Neue Bündel (Hinweis der Prüfung): Die Bündel „Technischer Hochwasserschutz“, „Technischer Rückhalt, Kanal und Speicher“, „Bauland ausweisen, Bauen nicht verteuern“ und „Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen“ stehen im Leitfaden nicht bei den Ursachen dieser Maßnahmen (ursachen_offen). Bitte der Koordination melden.

@@ -1,0 +1,69 @@
+{
+  "partei_id": 17,
+  "land": "BE",
+  "massnahmen": [
+    {
+      "beschreibung": "Baumoffensive mit fester Haushaltsfinanzierung, Priorität für Neupflanzungen und Baumpflege; Bäume gegen Hitze",
+      "ursachen_ids": [1803],
+      "buendel": "Stadtgrün, Verschattung, Frischluft",
+      "zitat": "Wir wollen, dass aus diesen Beschlüssen echte Baumoffensiven werden. Dazu gehören eine verlässliche Finanzierung im Haushalt und klare Priorität für Neupflanzungen und Pflege. Bäume sind unsere beste Klimaanlage. Sie senken die Hitze, reinigen die Luft.",
+      "seite": 56
+    },
+    {
+      "beschreibung": "Verbindliche Begrünungspflicht für Neubauten (begrünte Dächer, Fassaden, Innenhöfe) in Berlin",
+      "ursachen_ids": [1803],
+      "buendel": "Bauvorschriften und Gebäudehitzeschutz",
+      "zitat": "Wir wollen, dass Berlin seine grüne Seele behält. Dazu gehört: Der dauerhafte Schutz von Grünflächen und Kleingärten. Verbindliche Begrünungspflichten für Neubauten: begrünte Dächer, Fassaden und Innenhöfe sollen die Regel sein.",
+      "seite": 56
+    },
+    {
+      "beschreibung": "Entsiegelung von Asphaltflächen, wo immer möglich, für Regenwasser und Schatten",
+      "ursachen_ids": [1804],
+      "ursachen_offen": [1803],
+      "buendel": "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen",
+      "zitat": "Entsiegelung statt Versiegelung: Asphaltflächen müssen, wo immer möglich, für Regenwasser, Schatten und Leben weichen.",
+      "seite": 56
+    },
+    {
+      "beschreibung": "Flächen für den Wohnungsbau frühzeitig sichern, Baulandvorsorge durch Stadtentwicklungsplanung",
+      "ursachen_ids": [],
+      "ursachen_offen": [1804],
+      "buendel": "Bauland ausweisen, Bauen nicht verteuern",
+      "zitat": "Berlin muss Flächen frühzeitig sichern, statt Wohnungsbau immer erst dann zu diskutieren, wenn der Druck bereits zu groß geworden ist.",
+      "seite": 7
+    },
+    {
+      "beschreibung": "Landeseigenen Boden nicht mehr verkaufen, sondern nur noch im Erbbaurecht vergeben",
+      "ursachen_ids": [],
+      "ursachen_offen": [1804],
+      "neue_buendel": [{ "ursache": 1804, "name": "Bodenpolitik und Erbbaurecht", "seite": 7 }],
+      "zitat": "Landeseigener Grund und Boden darf grundsätzlich nicht weiterverkauft werden. Stattdessen sollen öffentliche Flächen nur noch langfristig im Erbbaurecht vergeben werden",
+      "seite": 7
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 1805, "seiten": [47, 56, 57, 58], "grund": "Umweltkapitel (S. 56–58), Energiekapitel (S. 47) und Wohnkapitel (S. 6–9) gelesen; nichts zu Hochwasserschutz, Deichen, Rückhaltebecken oder Bauverbot in Überschwemmungsgebieten." }
+  ],
+  "eigene_synonyme": []
+}
+
+Protokoll (BSW Berlin, Thema 18 „Hitze und Unwetter“):
+
+Gelesen: Titel und Einleitung S. 1–5 (keine Kapitelübersicht im Programm), Wohnen S. 6–9, Infrastruktur/Nachhaltigkeit S. 43, Energie S. 47, Umwelt S. 56–58, Fundstellen S. 7, 9, 43, 47, 56 (Trefferseiten der Suche), Corona/Tierschutz nicht relevant.
+
+Erfasst:
+- S. 56 Baumoffensive (1803, Bündel Stadtgrün). Weitere Stelle gleichen Hebels: S. 56 „Wir fordern: Mehr Trinkwasserstellen im öffentlichen Raum. Begrünte Plätze und Parks, die Wasser speichern und Verdunstungskühle erzeugen.“ (öffentliche Investition, nicht gesondert erfasst, da gleiches Bündel und die Baumoffensive konkreter ist.)
+- S. 56 Begrünungspflicht (1803, Bündel Gebäudehitzeschutz). Ziel-Bezug: Die Begrünungspflicht nennt im Zitat keine Stadt-/Hitzewörter außer „Berlin“; Zuordnung 1803 nach R4 gesetzt.
+- S. 56 Entsiegelung (1804, Bündel Entsiegelung/Schwammstadt; 1803 als zweite Wirkung „Schatten“ per R6 offen). Weitere gleichartige Stelle S. 56: „Das Schwammstadt-Prinzip soll Leitlinie aller Planungen werden: Regenwasser soll nicht in die Kanalisation fließen, sondern vor Ort versickern […]“ und „Entsiegelung und verstärkte Regenwassernutzung im privaten, öffentlichen und gewerblichen Bereich.“ (gleiches Bündel, nicht zusätzlich erfasst).
+- S. 7 Baulandvorsorge (1804 offen, Bündel Bauland ausweisen). Grenzfall: R5 nennt Flächenausweisung nicht; Bündel des Auftrags führt sie unter 1804. Weitere Stelle S. 9 Genossenschaften und Bauland (Erbbaurecht 99 Jahre) nicht gesondert erfasst.
+- S. 7 Bodenpolitik (1804 offen, neues Bündel „Bodenpolitik und Erbbaurecht“). Grenzfall: Ursachenbezug (Baukosten/Bodenpreise) nicht im Leitfaden geregelt.
+
+Nicht erfasst:
+- S. 47 „Baumpflanzungen, Fassaden- und Dachbegrünung, offene Wasserflächen, Trinkwasserbrunnen und Kühlräume sind sinnvolle Investitionen im Innenstadtbereich.“ – Bewertung, keine eigene Zusage.
+- S. 43 „das Schwammstadtkonzept“ in der Aufzählung „machen wir uns stark für“ – Bekenntnis, keine konkrete Handlung.
+- S. 56 „Wir wollen, dass Berlin seine grüne Seele behält.“ / „Grünflächen sind kein Luxus […]“ – Ziel bzw. Lagebeschreibung.
+- S. 56 „Sommer die Hitze immer mehr staut“ und Schulhöfe – Lagebeschreibung.
+- S. 8 Abriss noch nutzbarer Gebäude – Ablehnung ohne Bezug zu 1803/1804.
+
+Richtungen ohne Maßnahme: Technischer Rückhalt, Kanal und Speicher (1804): keine Kanal- oder Speicherinvestition gefunden. Bauvorsorge/Objektschutz und alle 1805-Bündel: keine Stelle (Suchbegriffe und Kapitel geprüft).
+Seiten ohne Text: keine relevanten.

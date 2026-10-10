@@ -1,0 +1,54 @@
+{
+  "partei_id": 13,
+  "land": "ST",
+  "massnahmen": [
+    { "beschreibung": "Bebauung in Überschwemmungsgebieten untersagen, um den Hochwasserschutz zu stärken", "ursachen_ids": [1805], "buendel": "Bauverbot, Flächen freihalten, Rückbau", "zitat": "Wir setzen uns entschieden dafür ein, die Be[…]bauung in Überschwemmungsgebieten zu untersagen, um den Hochwasserschutz zu stärken.", "seite": 12 },
+    { "beschreibung": "Natürlichen Wasserrückhalt in der Fläche durch naturnahen Hochwasserschutz fördern und stärken", "ursachen_ids": [1805],"zitat": "Wir fordern, dass der natürliche Wasserrückhalt in der Fläche durch Maßnahmen des naturnahen Hochwasserschutzes gefördert und gestärkt wird.", "seite": 12 },
+    { "beschreibung": "Flussauen renaturieren und Altarme anbinden; Dämpfung von Hochwasser als Nebenwirkung", "ursachen_ids": [1805], "zitat": "Wir setzen uns für eine Restaurierung natürlicher Flusslandschaften zur Auenrenaturierung und die Anbindung von Altarmen von Flüssen ein, um der natürlichen Wasserführung mehr Raum zu geben, die ökologische Vielfalt zu verbessern und Lebensräume für Tiere und Pflanzen zu schaffen. Gleichzeitig kann damit die Dämpfung von Hochwassern unterstützt werden.", "seite": 12 },
+    { "beschreibung": "Nicht genutzte Asphaltflächen entsiegeln und ein Entsiegelungskataster einführen", "ursachen_ids": [1804], "buendel": "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen", "zitat": "Weiterhin fordern wir die Entsiegelung nicht genutzter Asphaltflächen und die Einführung eines Entsiegelungskatasters zur Erfassung versiegelter Flächen.", "seite": 9 },
+    { "beschreibung": "Bis 2050 kein weiterer Flächenverbrauch ohne gleichzeitige Entsiegelung", "ursachen_ids": [1804], "zitat": "Bis 2050 muss das Netto-Null-Ziel erreicht werden, sodass kein weiterer Flächenverbrauch ohne gleichzeitige Entsiegelung stattfindet.", "seite": 93 },
+    { "beschreibung": "Beratung zu Wohnraum-Suffizienz fördern, um den Pro-Kopf-Flächenverbrauch zu senken", "ursachen_ids": [1804], "zitat": "Wir fördern Beratungsangebote für Wohnraum-Suffizienz, um den Pro-Kopf-Flächenverbrauch zu senken […]", "seite": 91 },
+    { "beschreibung": "Flächen für Neubauten nur vorsehen, wenn ÖPNV-Anbindung vorhanden ist oder sichergestellt werden kann", "ursachen_ids": [1804], "zitat": "Flächen für Neubauten sollen nur vorgesehen werden, wenn eine ÖPNV-Anbindung vorhanden ist oder sichergestellt werden kann.", "seite": 92 },
+    { "beschreibung": "Nachverdichtung mit Aufwertung und Sicherung urbaner Grünflächen verbinden", "ursachen_ids": [1803], "buendel": "Nachverdichtung nicht bremsen", "zitat": "Wir wollen bauliche Nachverdichtung mit der gleichzeitigen Aufwertung und Sicherung urbaner Grünflächen verbinden.", "seite": 93 },
+    { "beschreibung": "Schwammstadt-Prinzip sowie Dach- und Fassadenbegrünung und grüne Gleise fördern", "ursachen_ids": [1803], "ursachen_offen": [1804], "buendel": "Stadtgrün, Verschattung, Frischluft", "zitat": "Zur Klimaanpassung setzen wir verstärkt auf das Prinzip der Schwammstadt beziehungsweise Schwammlandschaft und fördern Dach- und Fassadenbegrünung sowie grüne Gleise.", "seite": 93 },
+    { "beschreibung": "Förderung von Begrünungskonzepten, baulichem Hitzeschutz und passiver Kühlung als neuer Standard", "ursachen_ids": [1803], "buendel": "Bauvorschriften und Gebäudehitzeschutz", "zitat": "Klimaschutz und Aufenthaltsqualität verbinden wir mit der Förderung von Solaranlagen auf Gebäuden, Begrünungskonzepten, Parkflächen, baulichem Hitzeschutz und passiver Kühlung als neuem Standard.", "seite": 93 },
+    { "beschreibung": "Förderprogramm für Kommunen und Einrichtungen zur Stärkung des Hitzeschutzes", "ursachen_ids": [1803],"zitat": "Dafür wollen wir ein Förderprogramm auflegen, um insbesondere Kommunen und Einrichtungen dabei zu unterstützen, den Hitzeschutz zu stärken.", "seite": 81 }
+  ],
+  "neue_buendel": [
+    { "ursache": 1805, "name": "Naturnaher Hochwasserschutz", "seite": 12 },
+    { "ursache": 1805, "name": "Auenrenaturierung", "seite": 12 },
+    { "ursache": 1804, "name": "Ausgleich neuer Versiegelung durch Entsiegelung", "seite": 93 },
+    { "ursache": 1804, "name": "Wohnraum-Suffizienz (Beratung)", "seite": 91 },
+    { "ursache": 1804, "name": "Neubauflächen nur mit ÖPNV-Anbindung", "seite": 92 },
+    { "ursache": 1803, "name": "Förderprogramm Hitzeschutz", "seite": 81 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "Wasserrückhalt", "ursache": 1805, "richtung": "naturnaher Hochwasserschutz und Wasserrückhalt in der Fläche" },
+    { "begriff": "Hitzeschutz", "ursache": 1803, "richtung": "Hitzeschutz an Gebäuden und in Einrichtungen" }
+  ]
+}
+
+Protokoll (Grüne, Land ST, Thema 18):
+
+Gelesen: Inhaltsverzeichnis (S. 2–6); Kapitel 1.1 bis 1.3 (S. 6–13, Natur, Boden, Flächenverbrauch, Wasser, Hochwasserschutz); Kapitel 1.2 Klimaanpassung (S. 11); Kapitel 2.7/3.x-Krisenvorsorge (S. 48); Kapitel 4.3 bis 4.6 Gesundheit und Pflege (S. 80–82, Hitzeschutz); Kapitel 5.3 Wohnen, Bauen, Landesentwicklung (S. 88–93); Fundstellen S. 23, 24, 26, 30 gelesen. S. 1, 5, 100 ohne Text (Titel/Trennseiten), nicht relevant.
+
+Mit Maßnahme: 1803 (S. 81, 93), 1804 (S. 9, 91, 92, 93), 1805 (S. 12, 13 – Bauverbot; S. 12 – naturnaher Rückhalt und Auenrenaturierung).
+
+Nicht erfasst:
+- S. 9: Netto-Null-Hektar-Ziel und Flächenziel 30 ha bis 2030 (S. 93): Ziele ohne eigene Handlung, nicht erfasst. Die Ausgleichsregel S. 93 ist erfasst (siehe JSON).
+- S. 9: „Durch Renaturierung und Entsiegeln sollen neu versiegelte Flächen ausgeglichen werden“ – gleicher Hebel wie die Ausgleichsregel S. 93, dort erfasst.
+- S. 88: „Begrünung statt auf Betonwüsten“ – Leitbild.
+- S. 92: „Der Vorrang des Bestands wird Leitprinzip: Sanierung statt Neubau“ – Leitprinzip, kein eigener Flächenbezug.
+- S. 81, 86: Hitzeschutz in Pflegeeinrichtungen („muss auch der Hitzeschutz in den Einrichtungen verbessert und flächendeckend gewährleistet werden“, S. 86) – gleicher Hebel wie der Gebäudehitzeschutz S. 93 (Standard), nicht gesondert erfasst.
+- S. 11: „Klimaanpassung beinhaltet Elemente des Hochwasser-, Hitze- und Dürreschutzes … kühlende und vernetzte Grünflächen … bessere Ausstattung der Freiwilligen Feuerwehren“ – Aufzählung von Bestandteilen, keine eigene Handlungszusage.
+- S. 12: Renaturierung der Elbe (Sohlstabilisierung) – ohne Hochwasserbezug im Zitat, nicht 1805.
+- S. 13: Wiedervernässung von Mooren, Wäldern und Nasswiesen („Hochwasserspitzen abzuschwächen“, Förderung) und Wasserrückhalt in der Agrarlandschaft mit Retentionsbecken auf landwirtschaftlichen Flächen – gleicher Hebel wie der naturnahe Wasserrückhalt (S. 12), dort erfasst; die Agrarstelle hat im Zitat keinen Hochwasserbezug.
+- S. 8: Schwammwald-Konzept (Wasser im Wald halten) – Trockenheit, kein Hochwasser-/Siedlungsbezug.
+- S. 23, 26: Photovoltaik auf versiegelten Flächen und Dachpflicht – Energienutzung, kein Rückbau von Versiegelung.
+- S. 30–31: Vorrang Erhalt von Straßen vor Neubau; Flächenverbrauch durch Straßen als Problem – kein Zitat mit Flächenbegrenzungs-Zusage.
+- S. 48: Krisenvorsorge (Konzepte für Hochwasser) – Planung im Ernstfall, kein Hochwasserschutz.
+- S. 92: Elementarversicherung (Bund) – keine der Ursachen 1803–1805 (Bebauung, Versiegelung, Hitze).
+
+Hebel ohne Fund (kein Bündel ohne Maßnahme): Technischer Hochwasserschutz (1805) – keine Deiche, Polder oder Rückhaltebecken im Text; nur Retentionsbecken in der Agrarlandschaft (S. 13, siehe oben). Bauvorsorge der Eigentümer (1805) – keine Treffer und keine Aussage.
+
+Richtungen ohne Maßnahme: keine. Seiten ohne Text: 1, 5, 100 – nicht betroffen.

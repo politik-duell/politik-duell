@@ -1,0 +1,77 @@
+{
+  "partei_id": 12,
+  "land": "MV",
+  "massnahmen": [
+    {
+      "beschreibung": "Reduzierung der weiteren Flächenversiegelung; ortstypische Innenentwicklung soll Vorrang vor neuen Baugebieten haben",
+      "ursachen_ids": [1804],
+      "ursachen_offen": [1803],
+      "buendel": "Entsiegelung, Schwammstadt, Flächenverbrauch begrenzen",
+      "zitat": "Wir setzen uns für eine konsequente Reduzierung der weiteren Flächenversiegelung im Interesse des Bodenschutzes ein. Die ortstypische Innenentwicklung muss Vorrang vor der Neuausweisung von Baugebieten haben.",
+      "seite": 87
+    },
+    {
+      "beschreibung": "Blau-grüne Stadtentwicklung mit Wasserflächen und Bäumen unterstützen, die das innerstädtische Klima verbessern",
+      "ursachen_ids": [1803],
+      "buendel": "Stadtgrün, Verschattung, Frischluft",
+      "zitat": "Wasserflächen und Verschattung durch Bäume und Grünflächen verbessern das innerstädtische Klima. Dafür helfen Projekte der blau/grünen Stadtentwicklung, für die wir uns einsetzen wollen.",
+      "seite": 87
+    },
+    {
+      "beschreibung": "Vorausschauende Planung, damit ausreichend Gewerbe- und Industrieflächen bereitstehen",
+      "ursachen_ids": [1804],
+      "buendel": "Bauland ausweisen, Bauen nicht verteuern",
+      "zitat": "Wir wollen auch weiterhin durch vorausschauende Planung eine ausreichende Gewerbe - und Industrieflächenkapazität sicherstellen.",
+      "seite": 14
+    },
+    {
+      "beschreibung": "Alle zusammenhängend bebauten Gebiete an Küste und in Flusseinzugsgebieten vor Hochwasser schützen",
+      "ursachen_ids": [1805],
+      "buendel": "Technischer Hochwasserschutz",
+      "zitat": "Wir werden künftig alle zusammenhängend bebauten Gebiete an der Küste und in den Flusseinzugsgebieten vor Hochwasser schützen.",
+      "seite": 86
+    },
+    {
+      "beschreibung": "Anstrengungen verstärken, damit Haushalte und Unternehmen Möglichkeiten zur Eigenvorsorge kennen",
+      "ursachen_ids": [],
+      "ursachen_offen": [1805],
+      "buendel": "Bauvorsorge der Eigentümer",
+      "zitat": "Wir werden die Anstrengungen noch einmal verstärken, dass private Haushalte und Unternehmen ihre Möglichkeiten und die Notwendigkeiten zur Eigenvorsorge und Mithilfemöglichkeiten kennen",
+      "seite": 50
+    }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Seiten 1–6 (Einleitung, kein Inhaltsverzeichnis im Text); Kapitel „Umwelt, Naturschutz und Nachhaltigkeit“ (S. 84–89) vollständig; Fundstellen S. 38, 50, 53, 85, 86, 87 vollständig; Kapitel „Wirtschaft“ Gewerbeflächen (S. 14); Kapitel „Gesundheit“ (S. 28); Kapitel „Katastrophen- und Zivilschutz“ (S. 49); Wohnen (S. 53–55). S. 1 und 95 ohne Text (Titel- bzw. Schlussseite, kein Bildteil im passenden Kapitel).
+
+Zuordnung:
+- Versiegelung/Innenentwicklung (S. 87): 1804 gewählt; die Innenentwicklungs-Zusage nennt keine Wirkung auf Hitze und wird nach R6 als ursachen_offen 1803 geführt.
+- Verschattung/Wasserflächen (S. 87): nur 1803 (R6: Zitat nennt keine Regenwasserwirkung).
+- Gewerbeflächen-Planung (S. 14): Flächenausweisung, Gegenrichtung zu 1804; Bündel „Bauland ausweisen, Bauen nicht verteuern“.
+- Hochwasserschutz (S. 86): 1805, Bündel „Technischer Hochwasserschutz“. Gleichartige Stelle im Protokoll: „Wir wollen die Wasser- und Bodenverbände … bei investiven Maßnahmen bei der Deichertüchtigung … unterstützen.“ (S. 86, gleicher Hebel, weniger konkret).
+- Eigenvorsorge (S. 50): 1805 nur als ursachen_offen (Grenzfall: allgemeine Eigenvorsorge in Krisenlagen, nicht Bauen in Überschwemmungsgebieten); Bündel „Bauvorsorge der Eigentümer“ nach Auftragszuordnung.
+
+Bündel ohne Maßnahme: „Bauverbot, Flächen freihalten, Rückbau“ (1805) – im Text gezielt gesucht (Überschwemmungsgebiet, Bauen in Auen/Retention, Rückbau); kein Treffer mit Hochwasserbezug. „Bauvorschriften und Gebäudehitzeschutz“ (1803) – gezielt gesucht (Hitze, Kühlung, Verschattung, Wärmeschutz, Gebäude); nur S. 28, siehe unten. „Technischer Rückhalt, Kanal und Speicher“ (1804) – gezielt gesucht (Regenwasser, Starkregen, Kanal, Abwasser, Speicher); nur die Klimaanpassungs-Aufzählung S. 87, siehe unten.
+
+Nicht erfasst:
+- S. 85 (1803): „Wir werden dafür sorgen, dass entstandene Lücken wiederbepflanzt werden … bei Fällung von Straßenbäumen möglichst nachgepflanzt wird“ und Alleenfonds – Alleen im ländlichen Raum, Zitat nennt weder Stadt, Quartier, Siedlung noch Hitze (R4).
+- S. 28 (1803): „Zudem sollen Krisenresilienz, Bevölkerungsschutz sowie Maßnahmen zum Hitze- und Klimaschutz Berücksichtigung finden.“ – Krankenhausförderung; „sollen … Berücksichtigung finden“ ist eine Absicht ohne konkrete Handlung.
+- S. 53 (1803/1804): „Klimaanpassungsmaßnahmen vor Ort – von Gebäudeenergie bis zu regionalen Schutzkonzepten gegen Wetterextreme – unterstützen wir …“ – Finanzierung ohne konkreten Zweck (R10).
+- S. 87 (1803/1805): „Wir setzen uns dafür ein, dass technische Voraussetzungen für Klimaanpassungsmaßnahmen und Wiederherstellungsmaßnahmen der Natur zukünftig über Ökokonten finanzierbar sein werden.“ – Finanzierungszusage ohne konkreten Zweck (R10).
+- S. 87 (1804): „Das Beräumen vorbelasteter (devastierter) Flächen muss einen hohen Stellenwert in der Bepreisung mit Ökopunkten erhalten.“ – Bewertungsforderung ohne Hochwasser- oder Versiegelungsbezug, kein Rückbau-Versprechen.
+- S. 86 (1804/1805): „Bisher sind 35.500 ha … wiedervernässt“ und „Wir setzen uns dafür ein, dass die technischen Voraussetzungen für die Regulierung von Wasserständen, um den Wasserrückhalt in der Fläche zu gewährleisten, vorhanden sind.“ – Wasserrückhalt in Mooren ohne Siedlungs- oder Hochwasserbezug (R5).
+- S. 49 und S. 85/86 (1805): Ausstattung von Feuerwehr und Katastrophenschutz – Zitat ohne Hochwasserschutz (R8).
+- S. 85 (1805/1804): „Durchlässigkeit und Wasserrückhalt in der Fläche müssen auch vor dem Hintergrund längerer Trockenperioden gewährleistet werden.“ – Landwirtschaft, Trockenheit, kein Hochwasserbezug.
+- S. 85 (1804): Gewässer- und Grundwasserschutz, Ostseeschutz (S. 87) – kein Starkregen- oder Siedlungsbezug.
+- S. 53 (1803): „In der vergangenen Legislaturperiode haben wir … Nachverdichtung und Sanierung vor Neubau … gestärkt“ – Rückblick.
+- S. 4 und S. 54 (1804): „Wir fördern Wohnungsbau für bezahlbare Mieten“ bzw. Förderung von Neubau und Bau im ländlichen Raum sowie „Bodenbevorratung“ (S. 55) – Wohnungsbau-Zwecke ohne erkennbaren Bezug zur Versiegelungsursache (Grenzfall, bewusst nicht erfasst).
+- S. 88–89 (1803): Waldumbau, Waldaufforstung – nach R4 kein Stadt-, Siedlungs- oder Hitzebezug.
+- S. 54 (1803): „Energetische Sanierungen begleiten wir mit Augenmaß“ – kein Hitzebezug.
+- S. 85 (1803): Grünes Band (ehemalige innerdeutsche Grenze), Naturschutz – kein Siedlungs- oder Hitzebezug.
+- S. 38 (Fundstelle „Auenschutz“): Treffer durch „Frauenschutz“ – kein Bezug.
+
+Richtungen ohne Maßnahme: 1803 Gebäudehitzeschutz/Bauvorschriften (nur S. 28, nicht erfasst); 1804 Bauland-Richtung mit Wohnungsbau nur als Grenzfall nicht erfasst; 1804 Technischer Rückhalt, Kanal und Speicher; 1805 Bauverbot/Rückbau in Überschwemmungsgebieten.
+
+Seiten ohne Text: S. 1 (Titel), S. 95 (Schluss) – keine Rolle.
