@@ -321,7 +321,7 @@ var ROLLEN_TEXT = {
 };
 function systemPrompt(themen, ursachen, haltungen = []) {
   const katalog = themen.map((t) => {
-    const u = ursachen.filter((x) => x.thema_id === t.id).map((x) => `    - Ursache ${x.id}: ${x.beschreibung}`).join("\n");
+    const u = ursachen.filter((x) => x.thema_id === t.id).map((x) => `    - Ursache ${x.id}: ${x.beschreibung}${x.alltag ? ` \u2013 im Alltag: \u201E${x.alltag}\u201C` : ""}`).join("\n");
     return `- Thema ${t.id}: ${t.name} \u2013 ${t.beschreibung}
 ${u}`;
   }).join("\n");
@@ -389,6 +389,9 @@ Zuordnung ("thema_id" bei "problem" und "forderung", alles Weitere nur bei "prob
 - "thema_id": die ID aus dem Katalog, die am besten passt, sonst null.
 - "ursachen_ids": nur die IDs der Ursachen dieses Themas, die sich aus der Schilderung erkennen lassen.
   Nimm keine Ursache dazu, nur weil sie zum Thema geh\xF6rt \u2013 jede zugeordnete Ursache z\xE4hlt in der Wertung.
+- \u201Eim Alltag: \u2026\u201C zeigt, wie Betroffene eine Ursache typischerweise erleben. Vergleiche die Schilderung damit,
+  auch wenn sie aus der Sicht anderer Beteiligter kommt (z. B. Anwohner statt Veranstalter, Eltern statt Jugendliche).
+  Passt eine Schilderung erkennbar zu einem dieser S\xE4tze, ordne die Ursache zu, statt nachzufragen.
 - Unterscheide Erlebnis und Gef\xFChl: Schildert jemand vor allem ein Gef\xFChl oder eine Sorge (z. B. \u201EIch f\xFChle mich
   unsicher, seit \u2026\u201C), passen Ursachen, die beschreiben, wie Wahrnehmung und Wirklichkeit auseinanderfallen oder wo
   sich Unsicherheit ballt. Ursachen zu Taten oder T\xE4tergruppen nur, wenn die Schilderung sie erkennen l\xE4sst.

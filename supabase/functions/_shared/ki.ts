@@ -52,7 +52,7 @@ export function systemPrompt(themen: Thema[], ursachen: Ursache[], haltungen: Ha
     .map((t) => {
       const u = ursachen
         .filter((x) => x.thema_id === t.id)
-        .map((x) => `    - Ursache ${x.id}: ${x.beschreibung}`)
+        .map((x) => `    - Ursache ${x.id}: ${x.beschreibung}${x.alltag ? ` – im Alltag: „${x.alltag}“` : ''}`)
         .join('\n')
       return `- Thema ${t.id}: ${t.name} – ${t.beschreibung}\n${u}`
     })
@@ -128,6 +128,9 @@ Zuordnung ("thema_id" bei "problem" und "forderung", alles Weitere nur bei "prob
 - "thema_id": die ID aus dem Katalog, die am besten passt, sonst null.
 - "ursachen_ids": nur die IDs der Ursachen dieses Themas, die sich aus der Schilderung erkennen lassen.
   Nimm keine Ursache dazu, nur weil sie zum Thema gehört – jede zugeordnete Ursache zählt in der Wertung.
+- „im Alltag: …“ zeigt, wie Betroffene eine Ursache typischerweise erleben. Vergleiche die Schilderung damit,
+  auch wenn sie aus der Sicht anderer Beteiligter kommt (z. B. Anwohner statt Veranstalter, Eltern statt Jugendliche).
+  Passt eine Schilderung erkennbar zu einem dieser Sätze, ordne die Ursache zu, statt nachzufragen.
 - Unterscheide Erlebnis und Gefühl: Schildert jemand vor allem ein Gefühl oder eine Sorge (z. B. „Ich fühle mich
   unsicher, seit …“), passen Ursachen, die beschreiben, wie Wahrnehmung und Wirklichkeit auseinanderfallen oder wo
   sich Unsicherheit ballt. Ursachen zu Taten oder Tätergruppen nur, wenn die Schilderung sie erkennen lässt.
