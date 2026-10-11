@@ -33,6 +33,17 @@ describe('systemPrompt', () => {
     expect(p).not.toMatch(/https?:\/\//)
   })
 
+  it('nennt zu jeder Ursache den Alltagssatz, wenn es ihn gibt', () => {
+    const [u, v] = URSACHEN
+    const p = systemPrompt(THEMEN, [
+      { ...u, alltag: 'Ich finde keinen Termin' },
+      { ...v, alltag: null },
+    ])
+    expect(p).toContain(`Ursache ${u.id}: ${u.beschreibung} – im Alltag: „Ich finde keinen Termin“`)
+    expect(p).toContain(`Ursache ${v.id}: ${v.beschreibung}\n`)
+    expect(p).toContain('auch wenn sie aus der Sicht anderer Beteiligter kommt')
+  })
+
   it('behandelt Pauschalurteile über Gruppen wie Forderungen und trennt Gefühl von Erlebnis', () => {
     const p = systemPrompt(THEMEN, URSACHEN)
     expect(p).toContain('pauschales Urteil über eine Gruppe')
