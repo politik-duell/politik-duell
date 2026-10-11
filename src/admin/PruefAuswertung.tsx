@@ -1,8 +1,9 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { pruefEinheiten, type Katalog } from '../data/katalog'
 import { exportiere, KRITISCHE_SPANNWEITE, MINDEST_BEWERTUNGEN, werteAus, type Einzelwert } from '../pruefung/auswertung'
-import { KATALOG } from '../pruefung/katalog'
+import { BASIS, ladeThema, THEMEN } from '../pruefung/katalog'
 import type { PruefBewertung, PruefEinladung } from './client'
-import { einheiten, massnahmenIds, themaName } from './pruefKatalog'
+import { massnahmenIds, themaName } from './pruefKatalog'
 
 // Admin → Prüfung → Auswertung je Thema: Einzelwerte (mit Namen, nur hier),
 // Median je Kriterium, Punkte aus den Medianen, Spannweite. Der Export enthält
@@ -24,15 +25,29 @@ function herunterladen(dateiname: string, inhalt: string) {
 }
 
 export function PruefAuswertung({ einladungen, bewertungen }: { einladungen: PruefEinladung[]; bewertungen: PruefBewertung[] }) {
-  const themen = KATALOG.themen.filter((t) => massnahmenIds(t.id).length > 0)
+  const themen = THEMEN.filter((t) => massnahmenIds(t.id).length > 0)
   const [themaId, setThemaId] = useState(() => themen.find((t) => einladungen.some((e) => e.themen.includes(t.id)))?.id ?? themen[0]?.id)
+  // Die Themendatei wird erst bei Bedarf geladen (src/pruefung/katalog.ts).
+  const [geladen, setGeladen] = useState<{ id: number; katalog: Katalog } | { id: number; fehler: string } | null>(null)
+  useEffect(() => {
+    if (themaId === undefined) return
+    let aktiv = true
+    ladeThema(themaId).then(
+      (katalog) => aktiv && setGeladen({ id: themaId, katalog }),
+      (e: unknown) => aktiv && setGeladen({ id: themaId, fehler: e instanceof Error ? e.message : 'Laden fehlgeschlagen.' }),
+    )
+    return () => {
+      aktiv = false
+    }
+  }, [themaId])
   if (themaId === undefined) return <p className="admin-leer">Noch kein Thema mit Maßnahmen im Datenkatalog.</p>
+  const katalog = geladen?.id === themaId && 'katalog' in geladen ? geladen.katalog : null
 
   const name = new Map(einladungen.map((e) => [e.id, e.name]))
   const aktiv = new Set(einladungen.filter((e) => !e.gesperrt).map((e) => e.id))
-  const partei = (id: number) => KATALOG.parteien.find((p) => p.id === id)
+  const partei = (id: number) => BASIS.parteien.find((p) => p.id === id)
   // Instrumente zuerst, dann einzelne Maßnahmen nach Partei.
-  const massnahmen = einheiten(themaId).sort(
+  const massnahmen = (katalog ? pruefEinheiten(katalog, themaId) : []).sort(
     (a, b) => Number(b.instrument) - Number(a.instrument) || a.massnahmen[0].partei_id - b.massnahmen[0].partei_id || a.id - b.id,
   )
 
@@ -65,7 +80,7 @@ export function PruefAuswertung({ einladungen, bewertungen }: { einladungen: Pru
             ))}
           </select>
         </label>
-        <button className="knopf knopf-klein" onClick={exportieren} disabled={auswertungen.every((a) => a.anzahl === 0)}>
+        <button className="knopf knopf-klein" onClick={exportieren} disabled={!katalog || auswertungen.every((a) => a.anzahl === 0)}>
           Export (ohne Namen)
         </button>
       </div>
@@ -74,9 +89,15 @@ export function PruefAuswertung({ einladungen, bewertungen }: { einladungen: Pru
         Umsetzbarkeit. Markiert (⚠) sind Maßnahmen mit weniger als {MINDEST_BEWERTUNGEN} Bewertungen oder einer
         Spannweite ab {KRITISCHE_SPANNWEITE} – vor der Übernahme klären. * = nach dem Ansehen der Empfehlung geändert.
       </p>
-      <p className="admin-klein">
-        {themaName(themaId)}: {massnahmen.length} Prüfeinheiten (Instrumente und einzelne Maßnahmen), davon {zuKlaeren} zu klären.
-      </p>
+      {geladen?.id === themaId && 'fehler' in geladen ? (
+        <p className="admin-leer">{geladen.fehler}</p>
+      ) : !katalog ? (
+        <p className="admin-klein">{themaName(themaId)} wird geladen …</p>
+      ) : (
+        <p className="admin-klein">
+          {themaName(themaId)}: {massnahmen.length} Prüfeinheiten (Instrumente und einzelne Maßnahmen), davon {zuKlaeren} zu klären.
+        </p>
+      )}
       <div className="pruef-tabelle-rahmen">
         <table className="pruef-tabelle">
           <thead>

@@ -1,6 +1,6 @@
 import { type FormEvent, useState } from 'react'
 import { neuerToken, tokenHash } from '../../supabase/functions/_shared/pruefung'
-import { KATALOG } from '../pruefung/katalog'
+import { THEMEN } from '../pruefung/katalog'
 import { massnahmenIds, themaName } from './pruefKatalog'
 import { adminDb, type PruefBewertung, type PruefEinladung } from './client'
 
@@ -13,7 +13,7 @@ const datum = (iso: string) => new Date(iso).toLocaleDateString('de-DE', { day: 
 const linkFuer = (token: string) => `${location.origin}${location.pathname}#/pruefen/${token}`
 
 /** Themen, zu denen es Maßnahmen gibt (nur diese lassen sich bewerten). */
-const BEWERTBAR = KATALOG.themen.filter((t) => massnahmenIds(t.id).length > 0)
+const BEWERTBAR = THEMEN.filter((t) => massnahmenIds(t.id).length > 0)
 
 export function PruefEinladungen({
   einladungen,
