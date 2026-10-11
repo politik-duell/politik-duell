@@ -19,7 +19,9 @@ Grundprinzipien: [CLAUDE.md](CLAUDE.md); Konzept und Meilensteine: [docs/konzept
 
 > **Mock-Daten:** Parteien („Partei Alpha" … „Partei Epsilon"), Maßnahmen, Punkte und Links (`example.org`) sind **fiktiv**. Echte Parteien kommen erst mit geprüften, belegten Daten hinzu – so entsteht keine ungeprüfte Bewertung realer Parteien.
 
-## Stand: Meilenstein 2 – Push-to-talk
+## Stand: Meilenstein 2 – Push-to-talk (Oktober 2026 wieder entfernt)
+
+- Der Mikrofon-Knopf ist wieder entfernt: Die Browser-Spracherkennung lief oft nicht, und Smartphone-Tastaturen bieten ohnehin eine Diktierfunktion. Eingabe nur noch per Textfeld; `Permissions-Policy` sperrt das Mikrofon.
 
 - Großer Mikrofon-Knopf: gedrückt halten, sprechen, loslassen (Maus, Touch oder Leertaste/Enter)
 - Web Speech API (`de-DE`), Live-Anzeige des erkannten Texts; nach dem Loslassen landet der Text im Eingabefeld und kann vor dem Senden korrigiert werden
@@ -55,7 +57,7 @@ Grundprinzipien: [CLAUDE.md](CLAUDE.md); Konzept und Meilensteine: [docs/konzept
 - Äußerungsrechtlich vorsichtige Formulierungen: 0 Punkte heißt „Im Wahlprogramm (Stand …) keine Maßnahme zu diesen Ursachen gefunden“
 - Parteinamen in KI-Antworten (Kurzfassung, Stichwort, Einschätzung, Nachfrage) werden durch „[Partei]“ ersetzt bzw. entfernt – Aussagen über Parteien kommen nur belegt aus der Datenbank
 - Installierbar als PWA: Service Worker (`vite-plugin-pwa`) speichert nur die App-Dateien, damit sie auch ohne Netz startet; Supabase- und KI-Anfragen laufen immer live und werden nie zwischengespeichert
-- `vercel.json`: Build-Einstellungen und Sicherheits-Header (Content-Security-Policy, HSTS, `Referrer-Policy: no-referrer`, Mikrofon nur für die eigene Seite), lange Cache-Zeiten für Assets
+- `vercel.json`: Build-Einstellungen und Sicherheits-Header (Content-Security-Policy, HSTS, `Referrer-Policy: no-referrer`, kein Mikrofon), lange Cache-Zeiten für Assets
 
 **Einrichten:** siehe [supabase/EINRICHTEN.md](supabase/EINRICHTEN.md).
 

@@ -176,15 +176,7 @@ function Datenschutz() {
         spätestens 30 Tagen.
       </p>
 
-      <h2>5. Spracheingabe</h2>
-      <p>
-        Der Mikrofon-Knopf nutzt die Spracherkennung deines Browsers. Dabei schickt der Browser die Aufnahme an den
-        Dienst seines Herstellers – bei Chrome an Google, bei Safari an Apple (teils auch direkt auf dem Gerät). Das
-        geschieht zwischen dir und dem Browser-Hersteller nach dessen Datenschutzbestimmungen; wir erhalten nur den
-        erkannten Text und nie Audio. Die Spracheingabe ist freiwillig – du kannst jederzeit tippen.
-      </p>
-
-      <h2>6. Schutz vor Missbrauch</h2>
+      <h2>5. Schutz vor Missbrauch</h2>
       <p>
         Damit die KI nicht überlastet wird, begrenzen wir die Anfragen. Dafür erzeugt die App eine zufällige
         Sitzungsnummer und legt sie im Sitzungsspeicher des Browsers ab (sessionStorage – wird beim Schließen des Tabs
@@ -193,20 +185,20 @@ function Datenschutz() {
         Rechtsgrundlage für die Verarbeitung ist Art. 6 Abs. 1 lit. f DSGVO.
       </p>
 
-      <h2>7. Links, Teilen und Schriften</h2>
+      <h2>6. Links, Teilen und Schriften</h2>
       <p>
         Beleg-Links führen zu fremden Websites (z. B. Wahlprogramme, Studien); erst mit dem Klick gelten deren
         Datenschutzbestimmungen. „Teilen“ nutzt die Teilen-Funktion deines Geräts bzw. die Zwischenablage – wir
         erfahren davon nichts. Wir laden keine Schriften oder Skripte von fremden Servern.
       </p>
 
-      <h2>8. Moderation</h2>
+      <h2>7. Moderation</h2>
       <p>
         Nur für die Moderation gibt es Konten (Supabase Auth, E-Mail und Passwort). Sie betreffen ausschließlich
         unser Moderationsteam, nicht die Spieler:innen.
       </p>
 
-      <h2 id="pruefung">9. Prüfung von Bewertungen</h2>
+      <h2 id="pruefung">8. Prüfung von Bewertungen</h2>
       <p>
         Die Bewertungen der Maßnahmen lassen wir von Personen prüfen, die wir persönlich einladen. Sie erhalten einen
         persönlichen Link, ein Konto gibt es nicht. Dieser Abschnitt betrifft nur die Prüfenden, nicht die
@@ -239,7 +231,7 @@ function Datenschutz() {
         Namen. Bereits übernommene Mediane enthalten keine personenbezogenen Daten und bleiben bestehen.
       </p>
 
-      <h2 id="testphase">10. Geschlossene Testphase</h2>
+      <h2 id="testphase">9. Geschlossene Testphase</h2>
       <p>
         Für die Testphase laden wir einzelne Personen mit einem persönlichen Zugangslink ein. Mit diesem Link zeigt das
         Spiel zusätzlich vorläufige Bewertungen, die noch nicht von Menschen geprüft sind. Dieser Abschnitt betrifft nur
@@ -258,13 +250,13 @@ function Datenschutz() {
         E-Mail.
       </p>
 
-      <h2>11. Deine Rechte</h2>
+      <h2>10. Deine Rechte</h2>
       <p>
         Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit
         und Widerspruch (Art. 15–21 DSGVO) sowie auf Widerruf einer Einwilligung (Art. 7 Abs. 3 DSGVO). Da wir keine
         Daten speichern, die sich dir zuordnen lassen, können wir Anfragen zu gespeicherten Kurzfassungen meist nicht
         beantworten (Art. 11 DSGVO). Für Prüfende gilt das nicht: Ihre Daten sind ihnen zugeordnet, Auskunft,
-        Berichtigung und Löschung erledigen wir wie in Abschnitt 9 beschrieben. Schreib uns trotzdem gern: <a href={`mailto:${BETREIBER.email}`}>{BETREIBER.email}</a>.
+        Berichtigung und Löschung erledigen wir wie in Abschnitt 8 beschrieben. Schreib uns trotzdem gern: <a href={`mailto:${BETREIBER.email}`}>{BETREIBER.email}</a>.
       </p>
       <p>
         Du kannst dich außerdem bei einer Datenschutz-Aufsichtsbehörde beschweren, zum Beispiel bei der für uns

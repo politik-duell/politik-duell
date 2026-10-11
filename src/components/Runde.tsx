@@ -8,7 +8,6 @@ import { haltungskarte } from '../logic/haltung'
 import { fuerBeideErfasst } from '../logic/stand'
 import { zufallsBeispiel, type BeispielArt } from '../logic/zufall'
 import { mitKarte, type Karte, type RundenErgebnis, type Spieler } from '../spiel'
-import { SprechKnopf } from './SprechKnopf'
 import { parteiStil } from './stil'
 import { ForderungsKarte } from './ForderungsKarte'
 import { HALTUNG_EINLEITUNG, HaltungsKarte } from './HaltungsKarte'
@@ -47,7 +46,7 @@ const BEISPIEL_TEXT: Record<BeispielArt, string> = {
   wert: 'Beispiel-Haltung aus der Datenbank (Haltungskarte, ohne Punkte)',
 }
 
-/** Zwei sich kreuzende Pfeile (Zufallswiedergabe) – eigenes Symbol im Stil des Mikrofons. */
+/** Zwei sich kreuzende Pfeile (Zufallswiedergabe) – eigenes Symbol. */
 function ShuffleSymbol() {
   return (
     <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" className="symbol">
@@ -298,7 +297,7 @@ export function Runde({
       </div>
       <h2>Welches Alltagsproblem nervt dich?</h2>
       <p className="hinweis">
-        Halte den Knopf gedrückt und erzähl, was in deinem Alltag konkret schiefläuft – oder tippe es ein.
+        Schreib auf, was in deinem Alltag konkret schiefläuft.
       </p>
       <ThemenHinweis parteiIds={[spieler[0].partei.id, spieler[1].partei.id]} />
 
@@ -360,14 +359,6 @@ export function Runde({
           )}
         </div>
       )}
-
-      <SprechKnopf
-        gesperrt={denkt}
-        onText={(t) => setEingabe((alt) => (alt.trim() ? `${alt.trim()} ${t}` : t))}
-      />
-      <p className="oder" aria-hidden="true">
-        oder tippen
-      </p>
 
       <form className="eingabe" onSubmit={absenden}>
         <label htmlFor="problem" className="sr-only">
