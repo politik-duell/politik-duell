@@ -707,7 +707,7 @@ function corsKoepfe(ursprung, erlaubt) {
 
 // _shared/mistral.ts
 var MISTRAL_URL = "https://api.mistral.ai/v1/chat/completions";
-var MISTRAL_STANDARDMODELL = "mistral-small-latest";
+var MISTRAL_STANDARDMODELL = "mistral-medium-latest";
 async function frageMistral(system, nachrichten, zugang, maxTokens = 700) {
   const res = await fetch(MISTRAL_URL, {
     method: "POST",

@@ -5,7 +5,7 @@
 //
 //   MISTRAL_API_KEY=… npm run ki:testset [-- --runden 3] [--nur id,id] [--json ergebnis.json]
 //
-// MISTRAL_MODEL wie in der Edge Function (Standard: mistral-small-latest). Kostet echte KI-Aufrufe
+// MISTRAL_MODEL wie in der Edge Function (Standard: mistral-medium-latest). Kostet echte KI-Aufrufe
 // (je Fall und Runde einer) – nicht Teil der CI.
 import { readFileSync, writeFileSync } from 'node:fs'
 import { spielbareHaltungen } from '../src/data/katalog.ts'
