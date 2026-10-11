@@ -23,7 +23,17 @@ const schmalAbo = (melden: () => void) => {
 const istSchmal = () => matchMedia(SCHMAL).matches
 
 /** Rolle und Bundesland einer Seite (beide optional). */
-function Angaben({ titel, auswahl, onChange }: { titel: string; auswahl: Auswahl; onChange: (a: Auswahl) => void }) {
+function Angaben({
+  titel,
+  auswahl,
+  knapp = false,
+  onChange,
+}: {
+  titel: string
+  auswahl: Auswahl
+  knapp?: boolean
+  onChange: (a: Auswahl) => void
+}) {
   const laender = waehlbareLaender(useDaten())
   return (
     <>
@@ -52,7 +62,7 @@ function Angaben({ titel, auswahl, onChange }: { titel: string; auswahl: Auswahl
             value={auswahl.land ?? ''}
             onChange={(e) => onChange({ ...auswahl, land: e.target.value || null })}
           >
-            <option value="">Keine Angabe – nur Bundesprogramme</option>
+            <option value="">{knapp ? 'Keine Angabe' : 'Keine Angabe – nur Bundesprogramme'}</option>
             {laender.map((l) => (
               <option key={l.id} value={l.id}>
                 {l.name}
@@ -182,7 +192,7 @@ export function Setup({ onFertig }: { onFertig: (s: [Spieler, Spieler]) => void 
             ).map(([titel, auswahl, onChange]) => (
               <fieldset key={titel} className="spieler-wahl stimmzettel">
                 <legend>{titel}</legend>
-                <Angaben titel={titel} auswahl={auswahl} onChange={onChange} />
+                <Angaben titel={titel} auswahl={auswahl} knapp onChange={onChange} />
               </fieldset>
             ))}
           </div>
