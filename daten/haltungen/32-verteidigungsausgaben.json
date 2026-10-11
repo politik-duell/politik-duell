@@ -2,7 +2,9 @@
   "id": 32,
   "frage": "Soll Deutschland seine Verteidigungsausgaben erhöhen?",
   "beschreibung": "Ob Deutschland mehr Geld für seine militärische Verteidigung bereitstellen soll oder nicht, wobei ein bloßer Inflationsausgleich nicht als Erhöhung zählt.",
-  "verwandte_themen": [9],
+  "verwandte_themen": [
+    9
+  ],
   "zielkonflikte": [
     {
       "seite": "ja",
@@ -20,8 +22,25 @@
     "teils": "Ein Programm ist teils, wenn es eine Erhöhung nur unter ausdrücklich genannten Voraussetzungen unterstützt oder zusätzliche Mittel nur für einzelne Bereiche vorsieht, ohne eine Erhöhung der Gesamtausgaben zu befürworten.",
     "nein": "Ein Programm ist nein, wenn es eine weitere reale Erhöhung ausdrücklich ablehnt oder die Verteidigungsausgaben real auf dem bisherigen Niveau halten oder senken will."
   },
-  "suchbegriffe": ["verteidigungsausgab", "verteidigungshaushalt", "verteidigungsetat", "militärausgab", "rüstungsausgab", "sondervermögen", "zwei-prozent", "aufrüstung", "abrüstung", "nato-ziel"],
-  "schlagwoerter": ["verteidigungsausgaben", "militaerausgaben", "bundeswehr", "aufruestung", "krieg"],
+  "suchbegriffe": [
+    "verteidigungsausgab",
+    "verteidigungshaushalt",
+    "verteidigungsetat",
+    "militärausgab",
+    "rüstungsausgab",
+    "sondervermögen",
+    "zwei-prozent",
+    "aufrüstung",
+    "abrüstung",
+    "nato-ziel"
+  ],
+  "schlagwoerter": [
+    "verteidigungsausgaben",
+    "militaerausgaben",
+    "bundeswehr",
+    "aufruestung",
+    "krieg"
+  ],
   "freigabe": {
     "datum": "2026-10-06",
     "art": "ki"
@@ -29,17 +48,21 @@
   "positionen": [
     {
       "partei_id": 11,
-      "position": "keine_aussage",
-      "begruendung": "Nächstliegende Stelle (S. 52) ohne eindeutige Position: Das Zwei-Prozent-Ziel wird als Untergrenze bezeichnet. Das lässt höhere Ausgaben zu, fordert aber keine reale Erhöhung gegenüber dem zugrunde gelegten Niveau ausdrücklich; eine solche lässt sich nur vermuten.",
-      "stand": "2026-10-06",
+      "position": "teils",
+      "kurzfassung": "Sieht das Zwei-Prozent-Ziel der NATO als Untergrenze der Verteidigungsausgaben; eine Erhöhung darüber hinaus wird nicht ausdrücklich gefordert.",
+      "zitat": "Wir halten die NATO-Verpflichtungen für die Finanzierung unserer Verteidigung verlässlich und dauerhaft ein. Wir verstehen das aktuelle Zwei-Prozent-Ziel der NATO als Untergrenze unserer Verteidigungsausgaben, um eine vollständig einsatzbereite Bundeswehr mit einer personellen und materiellen Vollausstattung zu ermöglichen.",
+      "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=52",
+      "stand": "2026-10-11",
       "geprueft": false,
       "ki_entwurf": true
     },
     {
       "partei_id": 12,
-      "position": "keine_aussage",
-      "begruendung": "Nächstliegende Stelle (S. 57) ohne eindeutige Position: Mehr Geld wird allgemein für Sicherheit angekündigt. Für Verteidigung wird mindestens zwei Prozent zugesichert, nachdem bereits mehr als zwei Prozent erreicht wurden. Eine reale Erhöhung der gesamten Verteidigungsausgaben gegenüber diesem Niveau ist damit nicht ausdrücklich belegt.",
-      "stand": "2026-10-06",
+      "position": "teils",
+      "kurzfassung": "Will mehr Geld für Sicherheit ausgeben und mindestens zwei Prozent des BIP für Verteidigung; eine weitere Erhöhung wird nicht ausdrücklich gefordert.",
+      "zitat": "Wir werden mehr Geld für unsere Sicherheit ausgeben. […] Unsere Verteidigungsausgaben haben wir nach Jahren des Abbaus auf mehr als zwei Prozent des Bruttoinlandsprodukts (BIP) gesteigert. Wir setzen uns daher auch zukünftig für eine nachhaltige Verteidigungsfinanzierung von mindestens zwei Prozent des BIP ein.",
+      "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=57",
+      "stand": "2026-10-11",
       "geprueft": false,
       "ki_entwurf": true
     },
