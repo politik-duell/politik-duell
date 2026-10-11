@@ -1,0 +1,34 @@
+{
+  "partei_id": 16,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Der Bund beteiligt sich 15 Jahre lang mit jeweils einer Milliarde Euro pro Jahr an Sanierung und Neubau von Turnhallen, Sportplätzen und Schwimmbädern.", "ursachen_ids": [3701], "buendel": "Sanierung und Neubau von Sportstätten fördern", "zitat": "Sport muss als Teil der Daseinsvorsorge öffentlich gefördert werden. Dazu gehören die Sanierung von Turnhallen und Sportplätzen sowie die Schaffung moderner, barrierefreier und ökologischer Sportstätten und Schwimmbäder. Daran soll sich der Bund in den kommenden 15 Jahren mit jeweils einer Milliarde Euro pro Jahr beteiligen.", "seite": 56 },
+    { "beschreibung": "Einrichtungen für Kinder und Jugendliche, darunter Sportvereine und Schwimmbäder, sollen gebührenfrei sein; Finanzierung der Kommunen verbessern.", "ursachen_ids": [3702], "ursachen_offen": [3703], "buendel": "Betriebskosten und Hallenentgelte fördern oder senken", "zitat": "Kinder- und Jugendfreizeiteinrichtungen, Musikschulen, Bibliotheken, Schwimmbäder, Sportvereine und andere Einrichtungen für Kinder und Jugendliche müssen niedrig schwellig, barrierefrei, wohnortnah und gebührenfrei sein. Dafür braucht es eine Verbesserung der Finanzierungsgrundlage in den Kommunen und eine dauerhafte Kofinanzierung durch die Länder.", "seite": 16 },
+    { "beschreibung": "Werbe- und Sponsoring-Verbot für Tabak, Alkohol, andere Drogen und Glücksspiel, mit Aufklärungskampagnen (Grenzfall: wirkt auf Vereins-Sponsoring, Zweck ist Suchtprävention).", "ursachen_ids": [], "ursachen_offen": [3703], "zitat": "Wir wollen ein Werbe- und Sponsoring-Verbot für Tabak, Alkohol, andere Drogen sowie Glücksspielangebote einführen, begleitet von Aufklärungskampagnen zu Alkohol-, Drogen und Spielsucht.", "seite": 20 },
+    { "beschreibung": "Reform des Gemeinnützigkeitsrechts mit Klarstellung der als gemeinnützig anerkannten Zwecke (Grenzfall: Rechtsrahmen gemeinnütziger Vereine).", "ursachen_ids": [], "ursachen_offen": [3703], "zitat": "Wir brauchen eine Reform des Gemeinnützigkeitsrechts mit einer Klarstellung der als gemeinnützig anerkannten Zwecke.", "seite": 12 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3703, "seiten": [9, 49], "grund": "Wohngemeinnützigkeit (S. 9) betrifft Wohnungen, Parteispenden und Parteisponsoring (S. 49) betreffen Parteien; kein Vereinsbezug." },
+    { "ursache": 3701, "seiten": [43, 44], "grund": "Schwimmbäder als Wasserversorgung (S. 43) ohne Sportstätten-Zusage. Infrastrukturgarantie und Bundesfonds für Kommunen (S. 44) nur Bekenntnis bzw. Möglichkeit ('sollen … können'), gleiche Hebel wie S. 56, dort konkreter erfasst." }
+  ],
+  "neue_buendel": [
+    { "ursache": 3703, "name": "Werbe- und Sponsoringverbot", "seite": 20 },
+    { "ursache": 3703, "name": "Gemeinnützigkeitsrecht reformieren", "seite": 12 }
+  ]
+}
+
+Protokoll (Thema 37 – Finanzierung von Sportvereinen und Sportstätten)
+
+Gelesen: Inhaltsverzeichnis (S. 2–6); Kapitel 1 und 2 (S. 6, S. 9, S. 12, Gemeinnützigkeit und Wohnungen); Kapitel 6 (S. 20, Sponsoring-Verbot); Kapitel 12 (S. 43–45, Wasser, Daseinsvorsorge, Kommunen); Kapitel 16/Kultur und Sport (S. 16, Kinder- und Jugendfreizeiteinrichtungen einschließlich Sportvereine und Schwimmbäder); Kapitel 19 (S. 56, Sport ist kein Luxus); Fundstellen S. 49 gesichtet.
+
+Richtungen ohne Maßnahme:
+- 3702 Bündel "Eigenverantwortung und Auslastung" – keine Stelle gefunden.
+- 3702 Bündel "Betriebskosten und Hallenentgelte": nur die Gebührenfreiheit (S. 16) erfasst, sonst keine Stelle.
+- 3703 Bündel "Eigeneinnahmen und Kooperation der Vereine": Sponsoring-Verbot (S. 20) als Grenzfall offen; keine Kooperations- oder Vereinsfusions-Zusage.
+- 3701 Bündel "Bestand priorisieren und gemeinsam nutzen": nichts im Text gefunden (Hallen, Mehrfachnutzung, Bestandspriorität).
+
+Weitere Stellen (gleicher Hebel wie erfasst, nicht gesondert aufgenommen): S. 44 Bundesfonds und Infrastrukturgarantie für Kommunen (Schwimmbäder und Sportstätten als Daseinsvorsorge, Möglichkeit "können") gleichartig zur Investitionszusage S. 56, dort konkreter.
+
+Nicht erfasst: S. 56 "Sport ist für alle da", Zugang unabhängig vom Einkommen und Kommerzialisierung zurückdrängen (Ziele ohne Handlungszusage); S. 56 Schulschwimmen (Schule, R2); S. 16 Kindergrundsicherung und Kultur-/Sportzugang (kein Vereinsbezug); S. 43 Wasserverteilungskonflikte.
+
+Seiten ohne Text (1, 59, 60) spielten keine Rolle.

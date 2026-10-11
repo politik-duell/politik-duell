@@ -1,0 +1,58 @@
+{
+  "partei_id": 16,
+  "land": "MV",
+  "stand_im_pdf": "Titelseite und Impressum: Stand Juni 2026; Landesparteitag hat das Programm am 30.05.2026 beschlossen",
+  "massnahmen": [
+    {
+      "beschreibung": "Sportanlagen ausbauen und sanieren",
+      "ursachen_ids": [3701],
+      "buendel": "Sanierung und Neubau von Sportstätten fördern",
+      "zitat": "Wir wollen: […] Sportanlagen ausbauen und sanieren, Breiten- und Leistungssport fördern […]",
+      "seite": 11
+    },
+    {
+      "beschreibung": "Ausfinanzierung von Sportförderprogrammen, darunter ein Programm für Sport in Schule und Verein",
+      "ursachen_ids": [],
+      "ursachen_offen": [3703],
+      "buendel": "Vereinsförderung und Entlastung des Ehrenamts",
+      "zitat": "Wir wollen: […] Sportförderung: Die Ausfinanzierung von den Programmen „Kinderbewegungsland“, „Gemeinsam Sport in Schule und Verein“ und „MV kann schwimmen“.",
+      "seite": 11
+    },
+    {
+      "beschreibung": "Anerkennung des Ehrenamts stärken durch Weiterbildung und Freistellungsregelungen für Ehrenamtliche",
+      "ursachen_ids": [3703],
+      "neue_buendel": [{ "ursache": 3703, "name": "Freistellung und Weiterbildung im Ehrenamt", "seite": 13 }],
+      "zitat": "Wir wollen: […] Die Anerkennung des Ehrenamts stärken, indem Weiterbildung und Freistellungsregelungen für Ehrenamtliche ermöglicht werden.",
+      "seite": 13
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3702, "seiten": [8, 11, 13], "grund": "Kapitel Finanzen (S. 8), Kinder- und Jugendpolitik und Sport (S. 11) sowie Ehrenamt (S. 13) gelesen; keine Zusage zu Hallenentgelten, Betriebs- oder Energiekosten von Sportstätten oder Vereinen." }
+  ],
+  "eigene_synonyme": []
+}
+
+Protokoll (Thema 37 Finanzierung von Sportvereinen und Sportstätten, Linke MV)
+
+Gelesen: Inhaltsverzeichnis (S. 1–6); Kapitel 4 Finanzen (S. 8, Kommunen: „Wer in … Sport investiert …“ als Bekenntnis, keine Maßnahme); Kapitel 6 Kinder- und Jugendpolitik (S. 10–11, Sport und Familienpolitik); Kapitel 7 Soziales (S. 11–13; Senioren-Ehrenamt S. 12; Ehrenamt S. 13); Religionsgemeinschaften (S. 7, Ehrenamtsförderung nur als Gleichbehandlung, keine Maßnahme); Fundstellen S. 11 gelesen.
+
+Maßnahme 1 (S. 11): Sportanlagen, Bündel „Sanierung und Neubau von Sportstätten fördern“. Der Zusatz „Bundesstützpunkte und Nachwuchsleistungssport sichern“ ist Leistungssport ohne Vereins- oder Anlagenbezug (R2) und nicht zitiert.
+
+Maßnahme 2 (S. 11): Sportförderprogramme, Grenzfall zwischen Vereinsförderung (3703) und allgemeiner Sportförderung. Im Protokoll als offene Zuordnung geführt. Die Kinderbewegungs- und Schwimmprogramme fördern Sport allgemein; „Gemeinsam Sport in Schule und Verein“ fördert Vereine.
+
+Maßnahme 3 (S. 13): Ehrenamt allgemein (R1 ordnet Ehrenamt zu 3703). Das Bündel „Vereinsförderung und Entlastung des Ehrenamts“ ist bei Maßnahme 2 belegt; Freistellung und Weiterbildung sind ein eigener Hebel, daher neue_buendel.
+
+Weitere gleichartige Stellen (nicht erfasst, da je Bündel nur eine Maßnahme):
+- S. 13: „Die Engagementstrategie „Gemeinsam den Wandel gestalten“ weiterentwickeln und verbindlich finanzieren.“ (Förderung Ehrenamt allgemein, Bündel „Vereinsförderung“ schon belegt)
+- S. 12: „Ehrenamtliches Engagement von Senior:innen durch Begegnungsorte, Weiterbildungsangebote und faire Aufwandsentschädigungen stärken.“ (Ehrenamt einer Zielgruppe, gleichartig zu Maßnahme 3)
+
+Nicht erfasst (Grenzfälle, nicht aufgenommen):
+- S. 11: „Dass die Prävention sexualisierter Gewalt für Sportvereine […] verpflichtend wird.“ Schutzpflicht, keine Finanzierung oder Anlage (R2 / Ursachen nicht berührt).
+- S. 11: „Sportförderung … Kinderbewegungsland“ und Kooperation „Schule und Verein“ als eigener Hebel: Der Programmname allein ist keine eigene Kooperationszusage; die Förderung ist Maßnahme 2.
+- S. 8: „Wer in Bildung, Pflege, Wohnraum, Mobilität, Kultur und Sport investiert, bekämpft Armut …“: Bekenntnis ohne Handlung.
+- S. 11: „Kinderkarte von 50 Euro monatlich … um Sport, Kultur und Bildung zu ermöglichen“: Kosten für Freizeit von Kindern gehören zu Thema 20 (R2), nicht zu Sportvereinen.
+- S. 11: „Jugendverbände … Ferienfreizeiten … gezielt fördern“: Thema 20 (R2), kein Sportbezug.
+
+Richtungen ohne Maßnahme: Bestand priorisieren und gemeinsam nutzen (3701); alle Bündel von 3702 (Hallenentgelte, Betriebskosten, Eigenverantwortung und Auslastung); Eigeneinnahmen der Vereine (3703).
+
+Seiten ohne Text: 1 und 30 (Titel und Rückseite), ohne Relevanz.

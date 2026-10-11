@@ -1,0 +1,42 @@
+{
+  "partei_id": 11,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Übungsleiter- und Ehrenamtspauschale spürbar erhöhen.", "ursachen_ids": [3703], "buendel": "Vereinsförderung und Entlastung des Ehrenamts", "zitat": "Wir erhöhen die Ehrenamts- und die Übungsleiterpauschale spürbar.", "seite": 57 },
+    { "beschreibung": "Vereinspaket für das Ehrenamt, das Bürokratie, Datenschutz und Haftungsfragen von Vereinen angeht.", "ursachen_ids": [3703], "zitat": "Wir setzen ein Vereinspaket für unser Ehrenamt um, mit dem wir Bürokratie, Datenschutz und Haftungsfragen angehen.", "seite": 57 },
+    { "beschreibung": "Sportmilliarde für die kommende Wahlperiode bereitstellen (Verwendung im Text nicht genannt).", "ursachen_ids": [], "ursachen_offen": [3701], "zitat": "Für die kommende Wahlperiode stellen wir sicher, dass die Sportmilliarde zur Verfügung steht.", "seite": 61 }
+  ],
+  "neue_buendel": [
+    { "ursache": 3703, "name": "Bürokratieabbau für Vereine", "seite": 57 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3701, "seiten": [24, 61, 75, 76], "grund": "Sanierung oder Neubau von Sportstätten und Sporthallen nicht genannt; Fundstelle S. 24 betrifft Transportinfrastruktur (Wortteil-Treffer); Kommunen-Daseinsvorsorge S. 76 ohne Sportbezug." },
+    { "ursache": 3702, "seiten": [9, 12, 13, 57, 58, 61, 67, 69, 70, 76], "grund": "Keine Zusage zu Betriebskosten, Hallenentgelten oder Zuschüssen für den Betrieb von Sportstätten; die Fundstellen zu Eigenverantwortung betreffen Gesundheit, Wirtschaft, Forschung und Kultur (R2)." }
+  ]
+}
+
+---
+
+Protokoll
+
+Gelesen: Inhaltsverzeichnis (S. 1–6); Kapitel Kultur, Zusammenhalt und Sport (S. 56–61), Familie und Verantwortung (S. 62–64, ohne Relevanz), Kommunen und Haushalt (S. 75–78, Ausschnitt), Wohnen und Mobilität (S. 72–75, Ausschnitt); Fundstellen S. 9, 12, 13, 24, 57, 58, 61, 67, 69, 70, 76.
+
+Gleiche Stellen zum selben Bündel (nicht separat erfasst):
+- S. 57: Vereinspaket – Anreize für private Gelder und Spenden sowie erleichterter Zugang zu öffentlicher Förderung (Förderung, gleicher Hebel wie Pauschale). Wortlaut: „Zudem setzen wir mehr Anreize für private Gelder und Spenden und erleichtern den Zugang zu öffentlicher Förderung.“
+- S. 57: Notarielle Beglaubigung von Satzungsänderungen und Vorstandswechseln soll entfallen; Datenschutzbeauftragter für gemeinnützige Vereine entfällt – gleicher Hebel wie Vereinspaket (Bürokratieabbau), daher nicht als zweite Maßnahme erfasst.
+
+Nicht erfasst (gelesen, nicht aufgenommen):
+- S. 58: Kultur-Sponsoring, Mäzenatentum, Eigenverantwortung von Kultureinrichtungen – Kultureinrichtungen, nicht Sportvereine (R2).
+- S. 59–61: Spitzensportförderung, Trainer, Olympia, Sportmilliarde-Umfeld ohne Bezug zu Vereinen oder Sportstätten; Schulsport, Bundesjugendspiele, Schwimmen (R2).
+- S. 61: Sportvereine müssen sichere Orte für Kinder und Jugendliche sein – Anforderung, kein Vereinsförderungs- oder Sportstättenbezug im Sinne von 3701–3703.
+- S. 75–76: Kommunale Daseinsvorsorge solide finanzieren, Konnexität, Förderprogramme vereinfachen – allgemein, ohne Sportstätten- oder Vereinsbezug (R1 3701/3702 nicht erfüllt).
+- S. 9, 12, 13, 67, 69, 70: Eigenverantwortung in Gesundheit, Wirtschaft, Forschung – allgemeine Aussagen, keine Maßnahme dieses Themas.
+- S. 24: „Transportinfrastruktur“ (CO2-Infrastruktur) – Wortteil-Treffer, kein Sportbezug.
+
+Richtungen ohne Maßnahme: 3701 Bestand priorisieren und gemeinsam nutzen (keine Fundstelle); 3702 Betriebskosten und Hallenentgelte fördern oder senken (keine Fundstelle); 3702 Eigenverantwortung und Auslastung (nur allgemeine Aussagen); 3703 Eigeneinnahmen und Kooperation der Vereine (nur Kultur-Sponsoring, S. 58).
+
+Seiten ohne Text: S. 1 und S. 82 (Titel- und Schlussseite), ohne Bedeutung für das Ergebnis.
+
+Neue Bündel (Protokoll, Hinweis der Prüfung): „Vereinsförderung und Entlastung des Ehrenamts“ (3703, S. 57) stammt aus den Richtungen des Auftrags, steht aber nicht im Leitfaden; Bündel für die Pauschale gesetzt, Koordination ergänzt den Leitfaden.
+
+Grenzfälle: Sportmilliarde (S. 61) als ursachen_offen 3701 – Verwendung im Text nicht genannt, R2 schließt allgemeine Sportförderung ohne Bezug zu Vereinen oder Sportstätten aus.

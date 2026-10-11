@@ -1,0 +1,41 @@
+{
+  "partei_id": 15,
+  "land": "MV",
+  "massnahmen": [
+    {
+      "beschreibung": "Musikschulen in ihrer Arbeit erhalten; Land will Unterstützung für die Musikschulen prüfen (Finanzierung als gemeinsame Aufgabe von Kommunen, Land und Eltern)",
+      "ursachen_ids": [],
+      "ursachen_offen": [2001],
+      "zitat": "Wir erkennen ihre […] Bedeutung als Teil der kulturellen Daseinsvorsorge an und werden uns dafür einsetzen, dass ihre Arbeit auch künftig möglich bleibt.",
+      "seite": 92
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 2001,
+      "seiten": [32, 33, 66, 67, 92, 93],
+      "grund": "Kapitel Bildung (Schülerticket, Sport als Freizeit), Ehrenamt, Tourismus und Kultur gelesen; keine Zusage zu Treffpunkten oder Freizeitangeboten für Jugendliche. Sportvereine und -stätten gehören zu anderen Themen (R2); Ehrenamtskarte und Zeugnis-Beiblatt betreffen Ehrenamtliche, keine Angebote für Jugendliche."
+    },
+    {
+      "ursache": 2003,
+      "seiten": [36, 82, 83, 90],
+      "grund": "Sicherheitskapitel (S. 36 f.) und Fundstellen gelesen; nichts zu Lärm, Nachtruhe oder Nutzungsregeln öffentlicher Räume für Jugendliche. Treffer Freiflächen und Anwohner betreffen Photovoltaik und Windkraft."
+    }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis (S. 2–6); Kapitel Bildungsland (Schülerticket S. 32, Sport als Freizeit S. 33); Sicherheitsland (S. 36 f.); Gesundheit, Vereinskultur (S. 63); Ehrenamt (S. 66 f.); Tourismus (S. 67 f.) und Verkehr (S. 69); Kultur (S. 92 f.); Fundstellen S. 2, 8, 13, 82, 83, 84, 90 über Auszug geprüft (Treffer Freiflächen, Anwohner, Windkraft – nicht zum Thema).
+
+Nicht erfasst (gelesen, nicht aufgenommen):
+- S. 33 „Sport — mehr als Freizeit“: Bekenntnis, keine Handlung für Jugendliche; Vereinssport gehört zu Thema 37 (R2).
+- S. 63 „Den Breitensport werden wir … finanziell aufwerten“: Sport ohne Jugendbezug (R2), Thema 37.
+- S. 32 „Schülerticket“: kostenlose Schülerbeförderung betrifft den Schulweg, nicht Freizeit.
+- S. 66 f. Ehrenamtskarte und Zeugnis-Beiblatt (Jugendfeuerwehr, Musikzug, Chor): Anerkennung von Ehrenamtlichen, kein Freizeitangebot und keine Kostenzusage für Jugendliche.
+- S. 93 Kleingärten: Schutz vor Flächenverkauf; kein Jugend-Treffpunkt als Zusage.
+- S. 92 „Die Frage der Finanzierung … prüfen, ob … Unterstützung durch das Land möglich sein kann“: Prüfauftrag, nicht aufgenommen. Die Zusage zum Erhalt der Musikschulen steht als Grenzfall (ursachen_offen 2001, Freizeitangebot für Jugendliche; 2002 ist Bundesursache und für Landesprogramme nicht zulässig) im JSON.
+
+Richtungen ohne Maßnahme: Angebote und Räume für Jugendliche ausbauen (2001); Selbstorganisation und Mehrfachnutzung (2001); Zugang zu öffentlichem Raum (2003); Lärm mindern und Ruhe schützen (2003); Nutzungen abstimmen und vermitteln (2003). Hebel-Checkliste: nicht vorgegeben.
+
+Seiten ohne Text: S. 1 (Titelseite, Bild) ohne Bedeutung für das Thema.

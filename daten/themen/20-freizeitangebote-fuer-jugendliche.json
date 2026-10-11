@@ -33,5 +33,1295 @@
       "ebene": "land",
       "schlagwoerter": ["weggeschickt", "vertrieben", "laerm", "anwohner beschweren sich", "aufenthaltsverbot", "nirgendwo treffen"]
     }
+  ],
+  "instrumente": [
+    {
+      "id": 9260,
+      "name": "Offene Jugendarbeit und Jugendfreizeiteinrichtungen ausbauen und verlässlich finanzieren (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Mehr und verlässlich geöffnete Jugendtreffs setzen direkt am Mangel an Orten an; Schließungen senkten in London nachweislich Teilnahme und erhöhten Jugenddelinquenz. Ohne Zielwert und Finanzierungszusage bleibt der Umfang offen.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.economicsobservatory.com/what-are-the-effects-of-youth-club-closures-in-the-uk",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9261,
+      "name": "Verbindliche Mindestversorgung mit Jugendorten per Gesetz, Pflichtaufgabe oder Zielwert (Land)",
+      "wirksamkeit": 3,
+      "umsetzbarkeit": 2,
+      "begruendung": "Rechtsanspruch, Pflichtaufgabe oder Erreichbarkeitsziel sichern Jugendorte flächendeckend und gegen Kürzungen; Wirkung von Jugendclubs ist belegt. Dagegen: hohe Dauerkosten für Land und Kommunen, Aufbau dauert mehrere Jahre.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.economicsobservatory.com/what-are-the-effects-of-youth-club-closures-in-the-uk",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9262,
+      "name": "Jugendbudgets in Kommunen und Bezirken (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Jugendbudgets lassen Jugendliche selbst über Angebote entscheiden und sind leicht einzuführen; die Summen sind meist klein und Wirkungen auf das Angebot kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9263,
+      "name": "Treffpunkte für Jugendliche im öffentlichen Raum und in der Quartiersplanung vorsehen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Schafft unmittelbar Aufenthaltsorte, die Jugendliche laut Befragungen vermissen; Wirkung und Konfliktfreiheit solcher Orte sind wenig untersucht, die Umsetzung liegt bei den Kommunen.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9264,
+      "name": "Leerstand und Zwischennutzungen für Jugendorte öffnen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Nutzt vorhandene Flächen für Jugendorte, auch in dichten Quartieren, und ist vergleichsweise günstig; Zwischennutzungen sind oft befristet, Wirkung kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9265,
+      "name": "Vergünstigte Karten für Kulturangebote für Jugendliche (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Senkt Kosten für einzelne Kulturbesuche und ist einfach umsetzbar; schafft aber keine Treffpunkte, und ob Ermäßigungen die Teilnahme Jugendlicher erhöhen, ist kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9266,
+      "name": "Schutzkonzepte und Sicherheit in Jugendfreizeiteinrichtungen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Sichere Einrichtungen können verhindern, dass Jugendliche Treffs meiden; mehr Orte oder Angebote entstehen dadurch nicht, und die Wirkung ist kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9267,
+      "name": "Förderung von Kinder- und Jugendverbänden und Jugendringen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Jugendverbände tragen Gruppen- und Ferienangebote, Förderung ist leicht umsetzbar; ohne Bezug zu Orten oder konkretem Ausbau bleibt der Effekt auf das Angebot unbestimmt.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9268,
+      "name": "Bundesförderung von Jugendverbänden und jugendlichem Engagement, u. a. Kinder- und Jugendplan (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Der Bund fördert Jugendverbände bereits über den Kinder- und Jugendplan; diese Mittel stärken vor allem überregionale Strukturen und erreichen Treffs vor Ort nur am Rand.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9269,
+      "name": "Bundesprogramm für kommunale Jugendfreizeit-Infrastruktur und Jugendarbeit (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Bundesgeld kann Kommunen Aufbau und Erhalt von Jugendeinrichtungen ermöglichen, deren Nutzen belegt ist; der Bund darf nur befristet mitfinanzieren, Betrieb bleibt Sache von Ländern und Kommunen.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.economicsobservatory.com/what-are-the-effects-of-youth-club-closures-in-the-uk",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9270,
+      "name": "Parkbetreuung zur Konfliktvermittlung in Grünanlagen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Präsenz von Vermittelnden kann Nutzungskonflikte entschärfen und ist günstig; das Angebot ist nicht auf Jugendliche zugeschnitten, unabhängige Evaluationen fehlen.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9271,
+      "name": "E-Sport und Gaming fördern (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Spricht ein verbreitetes Freizeitinteresse Jugendlicher an; schafft aber kaum Orte, Gemeinnützigkeit von E-Sport regelt der Bund, Wirkung ist kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "durchsucht_fuer": [2001, 2002, 2003],
+      "keine_massnahme": {
+        "begruendung": "Kapitel Kultur und Zusammenhalt (S. 56–61), Familie und Verantwortung (S. 62–64), Recht und Ordnung (S. 38–41), Wohnen und Mobilität (S. 72–75) sowie Fundstellen S. 26, 72, 79 gelesen; nichts zu Jugendtreffs, Freizeitangeboten, Freizeitkosten oder Nutzungsregeln für Jugendliche.",
+        "stand": "2026-10-11",
+        "treffer": 3,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 11,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2001, 2003],
+      "massnahmen": [
+        {
+          "id": 9272,
+          "instrument": 9266,
+          "beschreibung": "Verbindliche Schutzkonzepte für alle Jugendclubs mit Schulungen des Personals und Umsetzung im Alltag",
+          "ursachen_ids": [2001],
+          "zitat": "Jugendclubs müssen echte Schutzräume sein - ohne Wenn und Aber. Deshalb werden wir alle Einrichtungen zu verbindlichen Schutzkonzepten mit klaren Handlungsanweisungen, regelmäßigen Schulungen für das Personal und einer konsequenten Umsetzung im Alltag verpflichten.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=13",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9273,
+          "instrument": 9260,
+          "beschreibung": "Jugendclubs als Orte der Begegnung und Demokratiebildung fördern",
+          "ursachen_ids": [2001],
+          "zitat": "Jugendclubs wollen wir als Orte der Begegnung und Demokratiebildung fördern, um Radikalisierung frühzeitig entgegenzuwirken.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=64",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9274,
+          "instrument": 9260,
+          "beschreibung": "Jugendfreizeiteinrichtungen weiter ausbauen und modernisieren",
+          "ursachen_ids": [2001],
+          "zitat": "Deshalb wollen wir Jugendfreizeiteinrichtungen weiter ausbauen und sie konsequent modernisieren.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=109",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9275,
+          "instrument": 9263,
+          "beschreibung": "Diverse Orte für Kinder und Jugendliche zugänglicher machen: Calisthenikanlagen in Parks ausbauen, ungenutzte öffentliche Räume zum ungestörten Aufenthalt umgestalten",
+          "ursachen_ids": [2003, 2001],
+          "zitat": "Neben Jugendfreizeiteinrichtungen wollen wir diverse Orte in Berlin für Kinder und Jugendliche zugänglicher machen. Wir wollen Calisthenikanlagen in Parks ausbauen und ungenutzte öffentliche Räume so umgestalten, dass sich Kinder und Jugendliche dort ungestört aufhalten können.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=109",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9276,
+          "beschreibung": "Sportangebote für Kinder und Jugendliche in allen Bezirken ausbauen („Sport 365“)",
+          "ursachen_ids": [2001],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ganzjährige, wohnortnahe Sportangebote in allen Bezirken erweitern das Freizeitangebot direkt und bauen auf einem laufenden Programm auf; die Wirkung des Programms ist nicht unabhängig untersucht.",
+          "zitat": "Mit dem weiteren Ausbau von „Sport 365“ wollen wir ganzjährige, wohnortnahe Sportangebote für Kinder und Jugendliche in allen Bezirken schaffen.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=113",
+          "evidenz": "offen",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9277,
+          "instrument": 9265,
+          "beschreibung": "Vergünstigte Kulturtickets auf Kinder und Jugendliche ausweiten",
+          "ursachen_ids": [2001],
+          "zitat": "Wir unterstützen die Teilhabe an Kultur für alle und schätzen Programme wie „KulturLeben Berlin“, die bestimmten Personengruppen den Kauf von erheblich vergünstigten Tickets ermöglichen. Dieses Angebot möchten wir insbesondere auf Kinder und Jugendliche erweitern.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=120",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9278,
+          "beschreibung": "Digitaler Chancenpass als App mit Überblick über Angebote im Kiez und Zugang zu Bildungs- und Freizeitangeboten für Kinder und Familien",
+          "ursachen_ids": [2001],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Eine App mit Überblick und direktem Zugang kann die geringe Nutzung von Teilhabeleistungen erhöhen; schafft aber keine Angebote, Aufbau und Datenschutz brauchen Zeit.",
+          "zitat": "Deshalb werden wir einen „Berliner Chancenpass“ einführen, der die Leistungen bündelt, entbürokratisiert und digital zugänglich macht. Als einfach und intuitiv bedienbare App soll er Kindern und ihren Familien einen Überblick über Angebote im Kiez geben und einen direkten Zugang zu Bildungs- und Freizeitangeboten ermöglichen – etwa für Sportvereine, Musikschulen oder Nachhilfe.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=103",
+          "evidenz": "offen",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2001, 2003],
+      "massnahmen": [
+        {
+          "id": 9279,
+          "beschreibung": "Modellprojekt für mobile Kinder- und Jugendzentren im ländlichen Raum, um die Erreichbarkeit der Angebote zu verbessern",
+          "ursachen_ids": [2001],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Mobile Jugendzentren verbessern die Erreichbarkeit im ländlichen Raum; als einzelnes Modellprojekt bleibt die Reichweite klein, die Wirkung mobiler Angebote ist wenig untersucht.",
+          "zitat": "Mit der Durchführung eines Modellprojektes für mobile Kinder- und Jugendzentren im ländlichen Raum wollen wir die Erreichbarkeit dieser Angebote verbessern.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=97",
+          "evidenz": "offen",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9280,
+          "instrument": 9260,
+          "beschreibung": "Landesprogramm zur Stärkung der Jugend- und Straßensozialarbeit, um auf neue Problemlagen niedrigschwellig zu reagieren",
+          "ursachen_ids": [2001],
+          "zitat": "Durch ein Landesprogramm zur Stärkung der Jugend- und Straßensozialarbeit soll niedrigschwellig auf neue Problemlagen und Herausforderungen reagiert werden.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=97",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9281,
+          "instrument": 9260,
+          "beschreibung": "Förderung lokaler Kulturorte und Einrichtungen, darunter Jugendclubs und mobile Clubs",
+          "ursachen_ids": [2001],
+          "zitat": "Wir werden lokale Kulturorte und Einrichtungen flächendeckend und verlässlich fördern. Dazu gehören Dorfkirchen und Kirchensanierungen, Bibliotheken, Musikschulen, Vereinshäuser, Jugendclubs, mobile Clubs, Heimatstuben sowie lokale Festivals.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=129",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9282,
+          "beschreibung": "Rechtliche Hürden abbauen, damit Senioren- und Jugendarbeit gemeinsam gefördert werden können",
+          "ursachen_ids": [2001],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Gemeinsame Förderung kann generationsübergreifende Orte gerade in kleinen Gemeinden tragfähig machen; zusätzliche Mittel gibt es nicht, die Wirkung ist offen.",
+          "zitat": "Zudem wollen wir rechtliche Hürden abbauen, um eine gemeinsame Mischförderung von Senioren- und Jugendarbeit zu ermöglichen.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=98",
+          "evidenz": "offen",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2001, 2003],
+      "massnahmen": [
+        {
+          "id": 9283,
+          "instrument": 9260,
+          "beschreibung": "Offene Jugendarbeit und Jugendverbände dauerhaft und verlässlich unterstützen.",
+          "ursachen_ids": [2001],
+          "zitat": "Gute Rahmenbedingungen für Kinder- und Jugendarbeit schaffen: Jugendverbände und offene Jugendarbeit leisten einen wichtigen Beitrag zur Persönlichkeitsentwicklung. Wir unterstützen diese Arbeit dauerhaft und verlässlich.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=32",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "durchsucht_fuer": [2001, 2002, 2003],
+      "massnahmen": [
+        {
+          "id": 9284,
+          "beschreibung": "Förderung von Popkultur ausbauen, um vielfältige kulturelle Angebote für jüngere Zielgruppen zu schaffen.",
+          "ursachen_ids": [2001],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Popkulturförderung kann Angebote für junge Menschen erweitern; sie zielt auf Kulturbetrieb, nicht auf Treffpunkte, die Wirkung für Jugendliche ist offen.",
+          "zitat": "Die Förderung von Popkultur wollen wir ausbauen, um insbesondere für jüngere Zielgruppen vielfältige kulturelle Angebote zu schaffen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=51",
+          "evidenz": "offen",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9285,
+          "instrument": 9268,
+          "beschreibung": "Jugendverbände, Jugendparlamente und ähnliche Strukturen weiter unterstützen.",
+          "ursachen_ids": [2001],
+          "zitat": "Jugendverbände, Jugendparlamente und ähnliche Strukturen leisten eine wichtige Arbeit. Wir wollen sie weiter unterstützen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=27",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2001, 2003],
+      "massnahmen": [
+        {
+          "id": 9286,
+          "instrument": 9261,
+          "beschreibung": "Treffpunkte für Jugendliche im öffentlichen Raum schaffen, Finanzierung in den Bezirken gesetzlich absichern; Nutzung ohne Geld zahlen",
+          "ursachen_ids": [2001],
+          "zitat": "Auch im öffentlichen Raum schaffen wir mehr Treffpunkte für Jugendliche mit und ohne Beeinträchtigungen, die entsprechend ihren Wünschen und Bedürfnissen gestaltet werden. Hierfür schaffen wir langfristig und im Gesetzesrang die finanziellen und personellen Voraussetzungen in den Bezirken. An diesen „JugendOrten“ können sie sich aufhalten, ohne Geld zahlen zu müssen.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=38",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9287,
+          "instrument": 9264,
+          "beschreibung": "Leerstehende Ladenflächen und Einkaufszentren für Jugendangebote beleben und Zwischennutzungen erleichtern",
+          "ursachen_ids": [2001],
+          "zitat": "Leerstehende Shoppingcenter und Ladenzeilen beleben wir neu und ermöglichen dort Jugend-, Kultur-, Spiel-, Sport- und soziale Angebote. Zwischennutzungen fördern wir gezielt und vereinfachen Genehmigungen.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=19",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9288,
+          "instrument": 9267,
+          "beschreibung": "Arbeit der Kinder- und Jugendverbände stärken (Grenzfall: Verbandsförderung, kein Angebot oder Ort selbst)",
+          "ursachen_ids": [2001],
+          "zitat": "Wir stärken die Arbeit der Kinder- und Jugendverbände in ihrer ganzen Vielfalt.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=39",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9289,
+          "beschreibung": "Lärmschutz-Vorgaben anpassen, damit junge Menschen nicht aus dem öffentlichen Raum verdrängt werden",
+          "ursachen_ids": [2003],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Großzügigere Lärmregeln für Jugendtreffpunkte setzen direkt an Beschwerden an, die zur Schließung führen; Rahmen ist Bundesrecht, Länder können nur Richtlinien anpassen, Wirkung ist wenig untersucht.",
+          "zitat": "Wir schützen junge Menschen zudem vor Verdrängung aus dem öffentlichen Raum, in dem wir die gesetzlichen Vorgaben zum Lärmschutz anpassen.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=38",
+          "evidenz": "offen",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2001, 2003],
+      "massnahmen": [
+        {
+          "id": 9290,
+          "instrument": 9260,
+          "beschreibung": "Jugendclubs, soziokulturelle Zentren und offene Treffpunkte für Jugendliche stärken und neu schaffen",
+          "ursachen_ids": [2001],
+          "zitat": "Wir setzen uns für die Stärkung und Neuschaffung von Jugendclubs, soziokulturellen Zentren und sogenannten „Dritten Orten“ ein, sprich offenen Räumen zwischen Schule, Arbeit und zuhause.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=36",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2001, 2003],
+      "massnahmen": [
+        {
+          "id": 9291,
+          "instrument": 9260,
+          "beschreibung": "Jugendclubs, pädagogisch begleitete Freiräume und selbstorganisierte Räume für Jugendliche weiter stärken",
+          "ursachen_ids": [2001],
+          "zitat": "Pädagogisch begleitete Freiräume, Jugendclubs und selbstorganisierte Räume wie das bisherige Modellprojekt Queer*Spaces werden weiter gestärkt.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=26",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9292,
+          "instrument": 9262,
+          "beschreibung": "Kommunen gezielt unterstützen, Jugendbudgets bereitzustellen und Angebote für Jugendliche zu ermöglichen",
+          "ursachen_ids": [2001],
+          "zitat": "Kommunen, die Jugendgremien einrichten, erhalten gezielte Unterstützung, um Jugendbudgets bereitzustellen und Angebote von und für Jugendliche zu ermöglichen.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=25",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9293,
+          "instrument": 9260,
+          "beschreibung": "Verbindlichen Jugendförderplan mit Mindeststandards für Angebote des Landes erarbeiten",
+          "ursachen_ids": [2001],
+          "zitat": "Wir werden mit den Akteuren der Kinder- und Jugendarbeit einen verbindlichen Jugendförderplan erarbeiten. Dieser soll unter anderem Mindeststandards für Angebote des Landes definieren und die Förderung vereinfachen.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=25",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9294,
+          "beschreibung": "Digitale Jugendarbeit ausbauen",
+          "ursachen_ids": [2001],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Digitale Angebote erreichen auch Jugendliche fern von Treffs; sie ersetzen keine physischen Orte, die Wirkung ist kaum untersucht.",
+          "zitat": "Digitale Jugendarbeit auf der Grundlage der Digitalen Agenda trägt zur Attraktivität unseres Landes bei und wird ausgebaut.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=26",
+          "evidenz": "offen",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9295,
+          "instrument": 9267,
+          "beschreibung": "Kreis-Kinder- und Jugendringe finanziell und personell besser ausstatten",
+          "ursachen_ids": [2001],
+          "zitat": "Kreis-Kinder- und Jugendringe werden finanziell und personell besser ausgestattet, um Qualifizierung, Koordination und Vernetzung vor Ort zu sichern.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=26",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9296,
+          "instrument": 9271,
+          "beschreibung": "Leitlinie für die Förderung von E-Sport erarbeiten, E-Sport den traditionellen Sportarten gleichstellen",
+          "ursachen_ids": [2001],
+          "zitat": "E-Sport soll unterstützt und anderen traditionellen Sportarten gleichgestellt werden. Dafür wird eine Leitlinie für die Förderung erarbeitet.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=41",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "durchsucht_fuer": [2001, 2002, 2003],
+      "massnahmen": [
+        {
+          "id": 9297,
+          "instrument": 9269,
+          "beschreibung": "Sonderprogramm über zehn Jahre, mit dem Kommunen Strukturen der Kinder- und Jugendarbeit aufbauen und stärken",
+          "ursachen_ids": [2001],
+          "zitat": "Mit einem Sonderprogramm wollen wir über zehn Jahre Kommunen dabei unterstützen, Strukturen für Kinder- und Jugendarbeit aufzubauen und zu stärken.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=84",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9298,
+          "instrument": 9268,
+          "beschreibung": "Mittel des Kinder- und Jugendplans (zentrales Förderinstrument für Jugendarbeit) aufstocken und an Bedarfe anpassen",
+          "ursachen_ids": [2001],
+          "zitat": "Die Mittel des Kinder- und Jugendplans, dem zentralen Förderinstrument für Jugendarbeit und Jugendhilfe, […] wollen wir aufstocken und den Bedarfen entsprechend kontinuierlich anpassen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=84",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9299,
+          "beschreibung": "Feministische Mädchen- und Jungenarbeit sowie queersensible Angebote besonders fördern",
+          "ursachen_ids": [2001],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Zielgruppenspezifische Angebote können Jugendliche erreichen, die allgemeine Treffs meiden; der Bund fördert nur Modelle, die Breitenwirkung ist begrenzt.",
+          "zitat": "Dabei wollen wir feministische Mädchen- und Jungenarbeit sowie queersensible Angebote besonders fördern.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=84",
+          "evidenz": "offen",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9300,
+          "beschreibung": "Sichere und selbst gestaltete Aufenthaltsorte für Jugendliche im öffentlichen Raum schaffen",
+          "ursachen_ids": [2001],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Selbst gestaltete Aufenthaltsorte entsprechen dem Wunsch Jugendlicher nach Treffpunkten; der Bund kann nur über Förderprogramme beitragen, Umfang und Wirkung sind offen.",
+          "zitat": "Für alle Jugendlichen wollen wir sichere und selbst gestaltete Aufenthaltsorte im öffentlichen Raum schaffen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=84",
+          "evidenz": "offen",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9301,
+          "instrument": 9268,
+          "beschreibung": "Freiräume und Ressourcen für jugendliches Engagement, unter anderem über Förderprogramme",
+          "ursachen_ids": [2001],
+          "zitat": "Wir setzen uns für mehr Freiräume und Ressourcen für jugendliches Engagement ein. Dazu gehören Förderprogramme, Vernetzungsangebote und die Anerkennung ehrenamtlicher Arbeit.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=85",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9302,
+          "instrument": 9268,
+          "beschreibung": "Jugendverbände mit Schwerpunkt Integration und Demokratie gezielt unterstützen",
+          "ursachen_ids": [2001],
+          "zitat": "Jugendverbände, die sich für Integration und Demokratie und gegen Antisemitismus und Rassismus einsetzen, wollen wir gezielt unterstützen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=84",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9303,
+          "beschreibung": "Auskömmlichere Kommunalfinanzierung und Deutschlandfonds, damit Kommunen Investitionen etwa in Jugendclubs finanzieren können",
+          "ursachen_ids": [2001],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Bessere Kommunalfinanzen ermöglichen auch Investitionen in Jugendclubs; das Geld ist nicht zweckgebunden, ob es bei Jugendorten ankommt, bleibt offen.",
+          "zitat": "Allein zum Erhalt und zur Sanierung der kommunalen Infrastruktur, dazu zählen zum Beispiel […] Jugendclubs, Sportplätze und Kultureinrichtungen, fehlen bundesweit 186 Milliarden Euro. Durch eine auskömmlichere Finanzierung der Kommunen und den Deutschlandfonds geben wir Kommunen endlich die Möglichkeit, diese dringend notwendigen Investitionen zu finanzieren.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=108",
+          "evidenz": "offen",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9304,
+          "beschreibung": "Leistungen für Bildung und Teilhabe direkter abrufbar machen, auch für Sportvereine und Musikschulen",
+          "ursachen_ids": [2002],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Nur ein kleiner Teil berechtigter Kinder nutzt die Teilhabeleistung, auch wegen Bürokratie; direkte Abrechnung über Vereine kann das ändern. Der Betrag bleibt niedrig, fehlende Angebote vor Ort löst sie nicht.",
+          "zitat": "Deshalb müssen sie einfacher, digitaler, bürgerfreundlicher und transparenter werden. Das gilt insbesondere für den bisherigen Kinderzuschlag und die Leistungen der Bildung und Teilhabe, deren direkte Abrufung – beispielsweise durch Schulen, Sportvereine oder Musikschulen – wir erleichtern wollen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=83",
+          "beleg_studie_url": "https://www.der-paritaetische.de/alle-meldungen/paritaetische-expertise-zeigt-nicht-einmal-jedes-fuenfte-kind-im-buergergeldbezug-profitiert-von-teilhabeleistungen/",
+          "evidenz": "belegt",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9305,
+          "beschreibung": "Kulturpass für Jugendliche verstetigen (Guthaben, um Kultur zu entdecken)",
+          "ursachen_ids": [2002],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ein Kulturguthaben senkt einmalig Kosten für Kultur; es erreicht nur einen Jahrgang, ein Großteil wird für Bücher und Kino genutzt, die Evaluation steht aus.",
+          "zitat": "Deshalb werden wir den Kulturpass verstetigen und prüfen, ihn auszubauen. Mit ihm erhalten Jugendliche ein Guthaben, um Kultur zu entdecken.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=125",
+          "evidenz": "offen",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2001, 2003],
+      "massnahmen": [
+        {
+          "id": 9306,
+          "instrument": 9260,
+          "beschreibung": "Offene Jugendarbeit und Jugendfreizeiteinrichtungen langfristig finanziell ausstatten",
+          "ursachen_ids": [2001],
+          "zitat": "Dem massiven Problem von zunehmender rechter Jugendgewalt gerade auch in den Ost-Berliner Bezirken begegnen wir, indem wir Angebote der Prävention und der Demokratiebildung stärken und die offene Jugendarbeit und Jugendfreizeiteinrichtungen als Alternativangebote angemessen und langfristig finanziell ausstatten.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=157",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9307,
+          "instrument": 9263,
+          "beschreibung": "Bei der Quartiersplanung eigene Treffpunkte und Freiräume für Kinder und Jugendliche vorsehen",
+          "ursachen_ids": [2001],
+          "zitat": "Wichtig ist uns, Kinder und Jugendliche sowie marginalisierte Gruppen an diesem Prozess zu beteiligen und vor allem ihre Bedürfnisse zu berücksichtigen. Sie bekommen sichere, barrierefreie Spielplätze und eigene Treffpunkte und Freiräume.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=63",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9308,
+          "instrument": 9270,
+          "beschreibung": "Parkläufer- und Kiezmanager-Programm fortführen und dauerhaft sichern",
+          "ursachen_ids": [2003],
+          "zitat": "Das Programm der Parkläufer*innen und Kiezmanager*innen wollen wir fortführen und dauerhaft sichern. Diese Fachkräfte tragen maßgeblich zur Sicherheit und zu einem respektvollen Miteinander in unseren Grünanlagen bei.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=27",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9309,
+          "beschreibung": "In jedem Bezirk mindestens einen queeren Ort schaffen, auch als Jugendclub",
+          "ursachen_ids": [2001],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ein queerer Ort je Bezirk schafft sichere Treffpunkte für eine Teilgruppe; nur teils als Jugendclub, Breitenwirkung für alle Jugendlichen begrenzt.",
+          "zitat": "In jedem Bezirk soll daher mindestens ein queerer Ort in Form eines Zentrums, Jugendclubs oder Familienzentrums entstehen.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=150",
+          "evidenz": "offen",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9310,
+          "beschreibung": "Verkehrsberuhigte Quartiere gestalten, mit Raum zum Spielen und für Treffpunkte von Jugendlichen",
+          "ursachen_ids": [2001],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Verkehrsberuhigte Quartiere schaffen nebenbei Aufenthaltsflächen auch für Jugendliche; der Schwerpunkt liegt auf Verkehr, eigene Jugendorte sind nicht zugesagt.",
+          "zitat": "Wir gestalten verkehrsberuhigte Quartiere ohne Durchgangsverkehr, die trotzdem für Anwohnende, Feuerwehr, Polizei und Rettungsdienste erreichbar bleiben. […] In grünen Bereichen, wo Blumenkübel den Durchgangsverkehr heraushalten und Bäume im Sommer angenehm kühlen, können Kinder unbeschwert draußen spielen, die Nachbarschaft bekommt Treffpunkte, Jugendliche ihre Orte.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=89",
+          "evidenz": "offen",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9311,
+          "instrument": 9271,
+          "beschreibung": "E-Sport und Gaming-Strukturen gemeinnützig fördern",
+          "ursachen_ids": [2001],
+          "zitat": "E-Sport und Gaming sind Teil der Berliner Jugend- und Alltagskultur – wir fördern gemeinnützige Strukturen, Medienkompetenz, Diversität und einen nachhaltigen, fairen E-Sport-Standort.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=38",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9312,
+          "instrument": 9266,
+          "beschreibung": "Kinder- und Jugendfreizeiteinrichtungen im Umgang mit rechtsextremen Einstellungen stärken",
+          "ursachen_ids": [2001],
+          "zitat": "Kinder- und Jugendfreizeiteinrichtungen stärken wir im Umgang mit rechtsextremen Einstellungen.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=160",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2001, 2003],
+      "massnahmen": [
+        {
+          "id": 9313,
+          "instrument": 9260,
+          "beschreibung": "Offene Kinder- und Jugendarbeit fördern und sichere Treffpunkte schaffen",
+          "ursachen_ids": [2001],
+          "zitat": "Deshalb fördern wir offene Kinder- und Jugendarbeit, schaffen sichere Treffpunkte […].",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=64",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9314,
+          "beschreibung": "Nachbarschaftstreffs als Orte der Gemeinschaft in jeder Kommune; Veranstaltungen für unter 25 kostenlos",
+          "ursachen_ids": [2001],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ein Treffpunkt je Stadtteil mit kostenlosen Veranstaltungen für unter 25 schafft Orte, die auch Jugendliche nutzen können; sie sind nicht jugendspezifisch, die Finanzierung ist offen.",
+          "zitat": "Für ein Mecklenburg-Vorpommern, in dem alle gut leben können, fordern wir: […] in jeder Kommune und jedem Stadtteil ein Ort der Gemeinschaft: Diese Nachbarschaftstreffs bieten Raum für Veranstaltungen, Geselligkeit und gemeinsames Arbeiten. Für Menschen unter 25 und über 65 sind Veranstaltungen kostenlos.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=63",
+          "evidenz": "offen",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9315,
+          "beschreibung": "Kostenfreies Deutschlandticket für alle unter 27, damit sie auch Jugendclubs und Freizeiteinrichtungen erreichen",
+          "ursachen_ids": [2001],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Kostenlose Mobilität erleichtert den Weg zu Jugendclubs; schafft aber keine Orte, und ein landesweit kostenfreies Ticket für alle unter 27 ist sehr teuer und nur mit Bund und Verbünden möglich.",
+          "zitat": "Damit Mobilität für alle bezahlbar ist, werden wir: […] das Deutschlandticket für alle unter 27 kostenfrei machen, damit sie nicht nur zur Schule, Uni, Hochschule oder zum Ausbildungsplatz, sondern auch zu Freund*innen, Jugendclubs und Freizeiteinrichtungen mobil sein können.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=23",
+          "evidenz": "offen",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2001, 2003],
+      "massnahmen": [
+        {
+          "id": 9316,
+          "instrument": 9260,
+          "beschreibung": "Jugendorte schaffen und ausbauen, auch unbeplante Räume und selbstverwaltete Jugendzentren",
+          "ursachen_ids": [2001],
+          "zitat": "Wir wollen außerdem Jugendorte schaffen und ausbauen, wozu insbesondere unbeplante Räume und selbstverwaltete Jugendzentren in kleineren Städten und Gemeinden zählen.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=56",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9317,
+          "instrument": 9260,
+          "beschreibung": "Offene Jugendarbeit, insbesondere mobile Jugendarbeit, massiv stärken",
+          "ursachen_ids": [2001],
+          "zitat": "Wir setzen uns für eine massive Stärkung der mobilen Jugendarbeit […] ein, da sie die Grundpfeiler einer wirkungsvollen Jugendpolitik bilden.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=62",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "durchsucht_fuer": [2001, 2002, 2003],
+      "massnahmen": [
+        {
+          "id": 9318,
+          "beschreibung": "Engagement der Babyboomer-Generation gezielt einbinden, um Sportangebote für Kinder und Jugendliche auszubauen",
+          "ursachen_ids": [2001],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Mehr Ehrenamtliche können Sportangebote für Jugendliche erweitern; der Bund kann Engagement nur anregen, ein konkretes Instrument fehlt.",
+          "zitat": "Um diese Potenziale zu heben, wollen wir neben einer generellen Stärkung des Ehrenamts insbesondere das Engagement der Babyboomer-Generation gezielt einbinden. Mit ihrer Erfahrung und Zeit können sie Sportangebote für Kinder, Jugendliche und Senioren ausbauen und die Vereinsarbeit beleben.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=32",
+          "evidenz": "offen",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2001, 2003],
+      "massnahmen": [
+        {
+          "id": 9319,
+          "instrument": 9270,
+          "beschreibung": "Finanzierung eines Projekts verstetigen, das Konflikte zwischen Nutzenden und Anwohnenden von Grünanlagen niedrigschwellig deeskaliert",
+          "ursachen_ids": [2003],
+          "zitat": "Wir verstetigen die Finanzierung des „Parkläufer“-Projekts, um Konflikte zwischen Nutzern und Anwohnern öffentlicher Grünanlagen niedrigschwellig zu deeskalieren und die Einhaltung der Parkordnungen sicherzustellen.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=70",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9320,
+          "instrument": 9265,
+          "beschreibung": "Kultureinrichtungen finanziell ermöglichen, vergünstigte Karten für Jugendliche anzubieten",
+          "ursachen_ids": [2001],
+          "zitat": "Wir wollen es Kultureinrichtungen finanziell ermöglichen, vergünstigte Karten für Jugendliche anzubieten.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=104",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2001, 2003],
+      "keine_massnahme": {
+        "begruendung": "Erfasste Stellen (S. 79, 107) setzen laut Bewertung ohne Parteinamen an keiner der Ursachen an.",
+        "stand": "2026-10-11",
+        "treffer": 7,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 14,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2001, 2003],
+      "massnahmen": [
+        {
+          "id": 9321,
+          "instrument": 9260,
+          "beschreibung": "Mittel der Jugendhilfe des Landes an den Verbraucherpreisindex anpassen und erhöhen",
+          "ursachen_ids": [2001],
+          "zitat": "Damit Jugendliche ihre Fähigkeiten und Interessen entdecken und entwickeln können, sollen die Mittel der Kinder und Jugendhilfe des Landes entsprechend der Entwicklung des Verbraucherpreisindexes erhöht werden.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=35",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "durchsucht_fuer": [2001, 2002, 2003],
+      "keine_massnahme": {
+        "begruendung": "Erfasste Stellen (S. 149) setzen laut Bewertung ohne Parteinamen an keiner der Ursachen an.",
+        "stand": "2026-10-11",
+        "treffer": 6,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 15,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2001, 2003],
+      "massnahmen": [
+        {
+          "id": 9322,
+          "instrument": 9266,
+          "beschreibung": "Jugendhäuser sollen wieder sichere Orte für Kinder und Jugendliche sein.",
+          "ursachen_ids": [2001],
+          "zitat": "Wir werden dafür Sorge tragen, dass Jugendhäuser wieder sichere Orte für Kinder und Jugendliche sind.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=63",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2001, 2003],
+      "keine_massnahme": {
+        "begruendung": "Erfasste Stellen (S. 92) setzen laut Bewertung ohne Parteinamen an keiner der Ursachen an.",
+        "stand": "2026-10-11",
+        "treffer": 7,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 15,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2001, 2003],
+      "massnahmen": [
+        {
+          "id": 9323,
+          "beschreibung": "Förderung der SIMSON-Kultur als Teil der Jugendkultur",
+          "ursachen_ids": [2001],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Fördert ein bestimmtes Hobby einer Teilgruppe Jugendlicher; wie gefördert werden soll, bleibt offen, Orte oder breite Angebote entstehen kaum.",
+          "zitat": "Die SIMSON-Kultur ist als Teil der Jugendkultur besonders zu fördern.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=203",
+          "evidenz": "offen",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "durchsucht_fuer": [2001, 2002, 2003],
+      "massnahmen": [
+        {
+          "id": 9324,
+          "beschreibung": "Freizeiteinrichtungen und Treffpunkte für Kinder und Jugendliche niedrigschwellig, wohnortnah und gebührenfrei machen; Finanzierung der Kommunen verbessern, Länder kofinanzieren.",
+          "ursachen_ids": [2001, 2002],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Gebührenfreie, wohnortnahe Einrichtungen senken Kostenhürden und sichern Orte; der Bund kann Gebührenfreiheit kommunaler und Vereinsangebote nicht anordnen, die Finanzierung ist ungeklärt.",
+          "zitat": "Kinder- und Jugendfreizeiteinrichtungen, Musikschulen, Bibliotheken, Schwimmbäder, Sportvereine und andere Einrichtungen für Kinder und Jugendliche müssen niedrig schwellig, barrierefrei, wohnortnah und gebührenfrei sein. Dafür braucht es eine Verbesserung der Finanzierungsgrundlage in den Kommunen und eine dauerhafte Kofinanzierung durch die Länder.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=16",
+          "evidenz": "offen",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9325,
+          "beschreibung": "Queere Jugendarbeit wird kommunale Pflichtaufgabe; queere Orte wie Jugendzentren sollen vor Mieterhöhungen und Kürzungen geschützt werden.",
+          "ursachen_ids": [2001],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Sichert Orte für eine kleine Zielgruppe; der Bund darf Kommunen nach dem Grundgesetz keine neuen Aufgaben übertragen, Schutz vor Mieterhöhungen ist rechtlich schwer.",
+          "zitat": "Queere Orte wie Jugendzentren, Projekte, Bars und Clubs müssen geschützt werden – auch vor Wuchermieten und Kürzungen staatlicher Zuschüsse. Die queere Jugendarbeit muss kommunale Pflichtaufgabe werden.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=47",
+          "evidenz": "offen",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2001, 2003],
+      "massnahmen": [
+        {
+          "id": 9326,
+          "instrument": 9260,
+          "beschreibung": "Jugendclubs, Abenteuerspielplätze, Sporthallen, Stadtbibliotheken und selbstverwaltete Treffpunkte sichern und ausbauen",
+          "ursachen_ids": [2001],
+          "zitat": "Ob Jugendclub, Abenteuerspielplatz, Sporthalle, Stadtbibliothek oder selbstverwalteter Treffpunkt – all diese Angebote wollen wir sichern und ausbauen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=177",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9327,
+          "instrument": 9261,
+          "beschreibung": "Mindestens einen selbstverwalteten Jugendort pro Bezirk unterstützen",
+          "ursachen_ids": [2001],
+          "zitat": "Die Linke wird sich für mindestens einen selbstverwalteten Jugendort pro Bezirk einsetzen, denn diese sind unverzichtbare Orte der kritischen Auseinandersetzung, Solidarität und Entwicklung alternativer Lebensentwürfe.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=177",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9328,
+          "instrument": 9260,
+          "beschreibung": "Abendliche und wetterunabhängige Raumnutzung verbessern, Kooperation der Jugendarbeit mit Stadtteilzentren und Sportvereinen stärken",
+          "ursachen_ids": [2001],
+          "zitat": "Für eine verbesserte abendliche und wetterunabhängige Nutzung von Räumen werden wir kreative Wege finden und die Kooperation der Jugendarbeit mit anderen Akteuren im Sozialraum wie bspw. Stadtteilzentren oder Kultur- und Sportvereinen stärken.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=177",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9329,
+          "instrument": 9262,
+          "beschreibung": "Jugendbeteiligung mit verbindlichen Jugendbudgets in allen Bezirken verankern",
+          "ursachen_ids": [2001],
+          "zitat": "Wir werden das JugFöG weiterentwickeln und echte Kinder- und Jugendbeteiligung mit verbindlichen Jugendbudgets in allen Bezirken verankern.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=176",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9330,
+          "beschreibung": "Zweckbindung der Mittel der Kinder- und Jugendhilfe, Geld für Jugendclubs soll bei den Jugendclubs ankommen",
+          "ursachen_ids": [2001],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Zweckbindung verhindert, dass Mittel für Jugendclubs anderweitig ausgegeben werden, und sichert so bestehende Orte; zusätzliche Mittel bringt sie nicht, Kommunen verlieren Spielraum.",
+          "zitat": "Weiterhin setzt sich Die Linke analog zu den bereits vorhandenen Anreizmodellen des JugFöG für eine Zweckbindung der Mittel für die gesamte Kinder- und Jugendhilfe ein: Geld, das für Jugendclubs vorgesehen ist, muss auch bei den Jugendclubs ankommen und darf von den Bezirken nicht für andere Zwecke ausgegeben werden.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=181",
+          "evidenz": "offen",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2001, 2003],
+      "massnahmen": [
+        {
+          "id": 9331,
+          "instrument": 9261,
+          "beschreibung": "Kinder- und Jugendarbeit zur kommunalen Pflichtaufgabe machen und den Landesjugendplan bedarfsgerecht ausfinanzieren",
+          "ursachen_ids": [2001],
+          "zitat": "Wir wollen: […] Kinder- und Jugendarbeit zur kommunalen Pflichtaufgabe machen, die Landesjugendhilfeplanung strategisch ausrichten und den Landesjugendplan bedarfsgerecht ausfinanzieren.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=11",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2001, 2003],
+      "massnahmen": [
+        {
+          "id": 9332,
+          "instrument": 9261,
+          "beschreibung": "Landesweiter Rechtsanspruch auf Kinder- und Jugendarbeit mit Mindeststandard; Förderung kommunaler Maßnahmen dynamisch erhöhen",
+          "ursachen_ids": [2001],
+          "zitat": "Kinder- und Jugendarbeit landesweit sichern: Wir wollen Kinder- und Jugendhilfe mit einem qualitativen und quantitativen Mindeststandard als Rechtsanspruch für junge Menschen im Kinder- und Jugendhilfegesetz des Landes festschreiben. Die Förderung von kommunalen Maßnahmen werden wir entsprechend der steigenden Bedarfe erhöhen und eine jährliche Dynamisierung von 2,5 Prozent bzw. mindestens in Höhe der Inflationsrate gesetzlich verankern.",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=61",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9333,
+          "instrument": 9264,
+          "beschreibung": "Freiräume aus Leerstand gemeinsam mit Jugendlichen gestalten und nutzen",
+          "ursachen_ids": [2001],
+          "zitat": "Leerstand zu Freiräumen machen – mit Jugendlichen gestalten und nutzen, auch in engen Quartieren,",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=63",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9334,
+          "instrument": 9260,
+          "beschreibung": "Verlässliche Öffnungszeiten, stabile Teams und sichere Räume für Jugendangebote, ohne Antragsaufwand",
+          "ursachen_ids": [2001],
+          "zitat": "Wir wollen: verlässliche Öffnungszeiten (auch abends und in den Ferien), stabile Teams und sichere Räume gewährleisten – ohne Antragsstress,",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=63",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9335,
+          "instrument": 9261,
+          "beschreibung": "Jugendorte in jedem Ortsteil in etwa 15 Minuten erreichbar machen, wo es fehlt mit mobilem Angebot vor Ort",
+          "ursachen_ids": [2001],
+          "zitat": "Wir wollen: Nähe sichern – in jedem Ortsteil mindestens einen Jugendort in ca. 15 Minuten erreichbar, wo das fehlt: mobiles Angebot vor Ort,",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=64",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9336,
+          "instrument": 9261,
+          "beschreibung": "Investitionspfad: fehlende Jugendorte benennen, finanzieren und terminieren",
+          "ursachen_ids": [2001],
+          "zitat": "Wir wollen: […] einen Investitionspfad festlegen – fehlende Orte (z.B. Jugendclub, Jugendbildungsstätte) benennen, finanzieren, terminieren – mit Zeitleiste je Region,",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=65",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9337,
+          "beschreibung": "Ferien- und Schullandheim-Angebote als feste Säule sichern, Teilnahme unabhängig vom Geldbeutel",
+          "ursachen_ids": [2001],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ferienangebote unabhängig vom Einkommen erweitern Freizeit für ärmere Jugendliche; es geht um einzelne Fahrten, nicht um verlässliche Orte, die Finanzierung ist offen.",
+          "zitat": "Schullandheime und Ferien als feste Säule sichern – Teilnahme unabhängig vom Geldbeutel,",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=63",
+          "evidenz": "offen",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9338,
+          "beschreibung": "Zugang zu offenen Angeboten ohne Nachweispflichten und ohne formale Kriterien",
+          "ursachen_ids": [2001],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Zugang ohne Nachweise senkt Hürden für offene Angebote und kostet wenig; mehr Orte oder Angebote entstehen dadurch nicht.",
+          "zitat": "Wir wollen: […] Zugang ohne Nachweispflichten (keine ID-Pflicht) ermöglichen – Teilnahme an offenen Angeboten ohne formale Kriterien;",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=63",
+          "evidenz": "offen",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "durchsucht_fuer": [2001, 2002, 2003],
+      "massnahmen": [
+        {
+          "id": 9339,
+          "instrument": 9269,
+          "beschreibung": "Investitionsprogramm für kinder- und jugendfreundliche Infrastruktur; wohnortnaher, niedrigschwelliger Zugang zu Jugendfreizeiteinrichtungen",
+          "ursachen_ids": [2001],
+          "zitat": "Mit einem Investitionsprogramm „Kinder und Bildung“ wollen wir in eine kinder-, jugend- und familienfreundliche Infrastruktur investieren. Wir fordern einen niedrigschwelligen und wohnortnahen Zugang zu Angeboten wie Kinder- und Jugendfreizeiteinrichtungen, Bibliotheken, Sportstätten oder Musikschulen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=32",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9340,
+          "beschreibung": "Der Bund übernimmt für alle Kinder das erste Vereinsjahr im Sport per Zuschuss",
+          "ursachen_ids": [2002],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ein Zuschuss für das erste Vereinsjahr senkt Kosten beim Einstieg; er ist einmalig, schafft kein Angebot, und Zuschüsse wie die Teilhabeleistung erreichen ärmere Kinder bisher schlecht.",
+          "zitat": "Der Bund soll für alle Kinder das erste Jahr im Sportverein bezahlen (Zuschuss von bis zu 150 Euro im Jahr).",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=24",
+          "evidenz": "offen",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2001, 2003],
+      "massnahmen": [
+        {
+          "id": 9341,
+          "instrument": 9260,
+          "beschreibung": "Angebote der Jugendarbeit ausbauen, neben Sprach- und Integrationsangeboten im Rahmen von Präventionsprojekten",
+          "ursachen_ids": [2001],
+          "zitat": "Gezielte Präventionsprojekte werden in stark betroffenen Communities eingerichtet. Sprachkurse, Integrationsangebote und Angebote der Jugendarbeit werden ausgebaut.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=40",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9342,
+          "beschreibung": "Kostenlose oder stark vergünstigte Nutzung kommunaler Sportanlagen für Vereine, freier Zugang für Kinder und Jugendliche",
+          "ursachen_ids": [2001],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Freier Zugang zu Sportanlagen öffnet Orte für Jugendliche ohne Kosten; Kommunen verlieren Einnahmen, und offene Nutzungszeiten neben dem Vereinsbetrieb sind begrenzt.",
+          "zitat": "Breitensport und Vereine stärken: Kostenlose oder stark vergünstigte Nutzung kommunaler Anlagen für Vereine. Freier Zugang für Kinder und Jugendliche.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=27",
+          "evidenz": "offen",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2001, 2003],
+      "massnahmen": [
+        {
+          "id": 9343,
+          "instrument": 9260,
+          "beschreibung": "Ausbau kostenfreier und niedrigschwelliger Freizeitangebote für Kinder und Jugendliche",
+          "ursachen_ids": [2001],
+          "zitat": "Ausbau kostenfreier und niedrigschwelliger Freizeitangebote für Kinder und Jugendliche.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=13",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9344,
+          "instrument": 9260,
+          "beschreibung": "Stärkung selbstorganisierter, ehrenamtlich gestalteter Jugendarbeit",
+          "ursachen_ids": [2001],
+          "zitat": "Stärkung selbstorganisierter Jugendarbeit, die von jungen Menschen eigenverantwortlich und ehrenamtlich gestaltet wird.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=13",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9345,
+          "instrument": 9260,
+          "beschreibung": "Langfristige Absicherung und verlässliche Finanzierung von Jugendclubs, Freizeithäusern und offenen Treffpunkten",
+          "ursachen_ids": [2001],
+          "zitat": "Langfristige Absicherung und verlässliche Finanzierung von Jugendclubs, Freizeithäusern und offenen Treffpunkten.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=13",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9346,
+          "beschreibung": "Verlässliche Förderung von Vereinen und Initiativen, die Kinder und Jugendliche aus einkommensschwachen Familien erreichen",
+          "ursachen_ids": [2001],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Verlässliche Förderung kann Angebote für ärmere Kinder sichern; unklar bleibt, ob es um Freizeitangebote oder allgemeine Unterstützung geht, der Umfang ist offen.",
+          "zitat": "Verlässliche Förderung von Vereinen und Initiativen, die Kinder und Jugendliche aus einkommensschwachen Familien erreichen und unterstützen.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=13",
+          "evidenz": "offen",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2001, 2003],
+      "massnahmen": [
+        {
+          "id": 9347,
+          "beschreibung": "Förderprogramme für junge Menschen gezielt ausbauen, um Teilhabe sowie kulturelle und kreative Fähigkeiten zu fördern",
+          "ursachen_ids": [2001],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Mehr Förderprogramme können kulturelle Freizeitangebote erweitern; Umfang und Zielrichtung sind unbestimmt, Orte entstehen nicht zwingend.",
+          "zitat": "Förderprogramme für junge Menschen wollen wir gezielt ausbauen, um Teilhabe sowie kulturelle und kreative Fähigkeiten frühzeitig zu fördern.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=73",
+          "evidenz": "offen",
+          "stand": "2026-10-11",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    }
   ]
 }

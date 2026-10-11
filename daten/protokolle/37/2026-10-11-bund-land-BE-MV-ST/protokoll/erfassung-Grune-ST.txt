@@ -1,0 +1,69 @@
+{
+  "partei_id": 13,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Sanierung von Sportstätten und Schwimmbädern unterstützen, mit Fokus auf Nachhaltigkeit und Inklusion",
+      "ursachen_ids": [3701],
+      "buendel": "Sanierung und Neubau von Sportstätten fördern",
+      "zitat": "Deshalb setzen wir uns für die Sanierung von Sportstätten und Schwimmbädern ein, wobei ökologische Nachhaltigkeit und echte Inklusion im Vordergrund stehen.",
+      "seite": 72
+    },
+    {
+      "beschreibung": "Schulische Sportstätten stärker öffnen und mehr frei zugängliche Bewegungsflächen schaffen",
+      "ursachen_ids": [3701],
+      "buendel": "Bestand priorisieren und gemeinsam nutzen",
+      "zitat": "Um das zu gewährleisten, unterstützen wir ein vielfältiges Sportangebot und wollen mehr frei zugängliche Bewegungsflächen schaffen, schulische Sportstätten stärker öffnen […]",
+      "seite": 73
+    },
+    {
+      "beschreibung": "Vereine gezielt bei Energiekosten unterstützen",
+      "ursachen_ids": [3702],
+      "buendel": "Betriebskosten und Hallenentgelte fördern oder senken",
+      "zitat": "Wir streben eine Entbürokratisierung der Sportförderung an und wollen Vereine gezielt bei Energiekosten und Sanierungen unterstützen, um die Belastung durch Bürokratie und hohe Kosten zu reduzieren.",
+      "seite": 72
+    },
+    {
+      "beschreibung": "Ehrenamtspauschale im Sport erhöhen und die Anerkennung des Ehrenamts verbessern",
+      "ursachen_ids": [3703],
+      "buendel": "Vereinsförderung und Entlastung des Ehrenamts",
+      "zitat": "Zusätzlich möchten wir das Ehrenamt im Sport stärken, indem wir die Ehrenamtspauschale erhöhen und die Anerkennung verbessern, denn ohne ehrenamtliches Engagement wäre der Sport in seiner heutigen Form nicht möglich.",
+      "seite": 73
+    },
+    {
+      "beschreibung": "Kooperationen zwischen Sportvereinen und Schulen ausbauen",
+      "ursachen_ids": [],
+      "ursachen_offen": [3703],
+      "buendel": "Eigeneinnahmen und Kooperation der Vereine",
+      "zitat": "Im Kinder- und Jugendsport sollen Kooperationen zwischen Sportvereinen und Schulen weiter ausgebaut werden, insbesondere für Ganztagsangebote, um eine gezieltere Bewegungsförderung zu erreichen.",
+      "seite": 73
+    },
+    {
+      "beschreibung": "Bürokratische Hürden für ehrenamtliches Engagement abbauen",
+      "ursachen_ids": [3703],
+      "zitat": "Wir setzen uns dafür ein, dass sich ehrenamtliches Engagement besser mit dem Beruf vereinbaren lässt, indem wir Anrechnungsregeln prüfen, bürokratische Hürden abbauen und Kinderbetreuungsangebote im Ehrenamt fördern.",
+      "seite": 74
+    }
+  ],
+  "neue_buendel": [{ "ursache": 3703, "name": "Bürokratieabbau im Ehrenamt", "seite": 74 }],
+  "nicht_erfasst": [
+    { "ursache": 3702, "seiten": [17, 38, 61], "grund": "S. 17: Kontrollen landwirtschaftlicher Betriebe, kein Sportbezug. S. 38: allgemeine kommunale Finanzausstattung und Eigenverantwortung der Kommunen, ohne Sportstätten oder Vereine. S. 61: Eigenverantwortung der Schulen (Schulbudget), Schule statt Sport. Auslastung, Hallenentgelte und Nutzungsgebühren kommen im Kapitel Sport nicht vor." }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "Übungsleiter*innen", "ursache": 3703, "richtung": "Entschädigung unterstützen" },
+    { "begriff": "Energiekosten", "ursache": 3702, "richtung": "Vereine bei Energiekosten unterstützen" }
+  ]
+}
+
+Protokoll
+Gelesen: Inhaltsverzeichnis (S. 3–4), Präambel (S. 2); Kapitel 3.7 Sport (S. 72–73), 3.8 Zivilgesellschaft (S. 73–75), 4.2 Integration (S. 79, Teilhabe und Vereine), 3.3 Schulen (S. 59, Ganztag mit Sportvereinen; S. 61, Eigenverantwortung), 2.2 Kommunen (S. 38); Fundstelle S. 17 (Landwirtschaft, Ausschnitt).
+Zu 3701 erfasst: Sanierung von Sportstätten und Schwimmbädern (S. 72); Öffnung schulischer Sportstätten und Bewegungsflächen (S. 73, Bündel „Bestand priorisieren und gemeinsam nutzen“). Gleichartig, nicht separat erfasst (Sanierung, Investition): Klimaanpassung und Klimaschutz in Sportstätten (S. 72); modernisieren und sanieren schulischer Sportstätten (S. 73).
+Zu 3702 erfasst: Vereine bei Energiekosten unterstützen (S. 72; die Entbürokratisierung im selben Satz ist nicht als Maßnahme erfasst, siehe unten). Zu Bündel „Eigenverantwortung und Auslastung“ gibt es keine Sport-Zusage.
+Zu 3703 erfasst: Ehrenamtspauschale erhöhen (S. 73, Bündel „Vereinsförderung“); Kooperation Sportvereine und Schulen (S. 73, Grenzfall, Ursache offen, Bündel „Eigeneinnahmen und Kooperation“); Bürokratie für Ehrenamt abbauen (S. 74, neues Bündel, da anderer Hebel als Förderung).
+Gleichartig, nicht separat erfasst (Förderung von Vereinen und Ehrenamt): Übungsleiter*innen-Entschädigung unterstützen (S. 72); Stabilisierung der Breitensportförderung (S. 72); Ausstattung des Landessportbundes und der Kreissportbünde (S. 72); Förderung von E-Sport-Vereinen (S. 73); Förderung von Vereinen, Initiativen und Migrantenorganisationen (S. 79); Kinderbetreuung im Ehrenamt fördern (S. 74); Freiwilligendienste stärken, Taschengeld erhöhen (S. 74).
+Gleichartig zu Kooperation, nicht separat erfasst: Sportangebote in Ganztagsschulen einbinden (S. 59).
+Nicht erfasst, Ziel oder Prüfauftrag: „Entbürokratisierung der Sportförderung anstreben“ (S. 72, nur als Einleitung im Zitat der Energiekosten-Maßnahme); Anrechnungsregeln prüfen (S. 74).
+Nicht erfasst, Spitzen- und Leistungssport ohne Vereinsbezug (R2): Trainingslager, Förderung von Sportler*innen und Trainer*innen, Landes- und Bundesleistungsstützpunkte (S. 73).
+Nicht erfasst, anderer Bereich: Zugang zu Sportvereinen als Teilhabeziel in der Integrationspolitik (S. 79, „sicherstellen“, Ziel); Sportunterricht und Schulsport (S. 55–57, Schule); Aufarbeitung DDR-Zwangsdoping (S. 73, keine Vereins- oder Stättenfinanzierung); E-Sport-Jugendschutz (S. 73).
+Richtungen ohne Maßnahme: 3702 „Eigenverantwortung und Auslastung“ und „Hallenentgelte senken“ (keine Sport-Zusage; Stellen siehe nicht_erfasst).
+Seiten ohne Text (1, 5, 100) spielen keine Rolle.

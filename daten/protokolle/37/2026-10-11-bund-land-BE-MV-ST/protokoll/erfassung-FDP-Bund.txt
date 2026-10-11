@@ -1,0 +1,67 @@
+{
+  "partei_id": 14,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Vereine bei Haftungsrisiken und Bürokratie entlasten, Dokumentations- und Aufbewahrungspflichten reduzieren",
+      "ursachen_ids": [3703],
+      "zitat": "Damit sich Ehrenamtliche auf ihr Engagement konzentrieren können, wollen wir Vereine bei Haftungsrisiken und Bürokratie deutlich entlasten.",
+      "seite": 32
+    },
+    {
+      "beschreibung": "Übungsleiter- und Ehrenamtspauschalen sowie relevante Einnahmegrenzen anpassen",
+      "ursachen_ids": [3703],
+      "zitat": "Wir passen rechtliche Rahmen, Übungsleiter- und Ehrenamtspauschalen, sowie relevante Einnahmegrenzen an.",
+      "seite": 32
+    },
+    {
+      "beschreibung": "Engagement der Babyboomer-Generation gezielt einbinden, um Sportangebote und Vereinsarbeit zu beleben",
+      "ursachen_ids": [3703],
+      "zitat": "Um diese Potenziale zu heben, wollen wir neben einer generellen Stärkung des Ehrenamts insbesondere das Engagement der Babyboomer-Generation gezielt einbinden. Mit ihrer Erfahrung und Zeit können sie Sportangebote für Kinder, Jugendliche und Senioren ausbauen und die Vereinsarbeit beleben.",
+      "seite": 32
+    },
+    {
+      "beschreibung": "eSports als gemeinnützig anerkennen",
+      "ursachen_ids": [],
+      "ursachen_offen": [3703],
+      "zitat": "Wir setzen uns zudem dafür ein, dass eSports als gemeinnützig anerkannt wird.",
+      "seite": 32
+    },
+    {
+      "beschreibung": "Zusammenarbeit zwischen Vereinen, Schulen, Unternehmen und sozialen Einrichtungen stärken",
+      "ursachen_ids": [],
+      "ursachen_offen": [3703],
+      "zitat": "Außerdem stärken wir die Zusammenarbeit zwischen Vereinen, Schulen, Unternehmen und sozialen Einrichtungen, um möglichst viele Menschen zu erreichen.",
+      "seite": 32
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 3701,
+      "seiten": [8, 32, 40, 43],
+      "grund": "Kein Sportstätten-Bezug im Programm. Sport und Ehrenamt (S. 31–32) gelesen; Schulsanierung (S. 8) gehört nach R2 zu Schule; Infrastruktur (S. 40, 43) betrifft Straßen, Schiene und Flughäfen."
+    },
+    {
+      "ursache": 3702,
+      "seiten": [18, 20, 32],
+      "grund": "Keine Betriebskosten oder Hallenentgelte für Vereine oder Sportstätten. Treffer ‚Eigenverantwortung‘ (S. 18, 20) betrifft Arbeitsrecht und Arbeitslosenversicherung; Sport-Kapitel (S. 32) ohne Kostenzusage."
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 3703, "name": "Bürokratieentlastung für Vereine", "seite": 32 },
+    { "ursache": 3703, "name": "Ehrenamtspauschalen anpassen", "seite": 32 },
+    { "ursache": 3703, "name": "Ehrenamtliches Engagement einbinden", "seite": 32 },
+    { "ursache": 3703, "name": "Gemeinnützige Anerkennung", "seite": 32 },
+    { "ursache": 3703, "name": "Kooperation der Vereine", "seite": 32 }
+  ]
+}
+
+## Protokoll
+
+Gelesen: Inhaltsverzeichnis (S. 2–4); Kapitel Sport und Ehrenamt (S. 31–32) vollständig; Kapitel Bildung (S. 8, Schulsanierung); Infrastruktur (S. 40, 43); Fundstellen S. 11, 18, 20, 32. Seiten 1–2 ohne Text (Titelseiten).
+
+Nicht erfasst: S. 11 europäischer „National Trust“ mit Mitgliedsbeiträgen (Denkmalschutz-Stiftung, kein Sportverein); S. 22 „Förderung und Wertschätzung für den Sport“ (Bekenntnis ohne Handlung); S. 32 Sportgroßveranstaltungen und Spitzensport (R2); S. 32 Bundesjugendspiele und Deutsches Sportabzeichen (Schule, R2); S. 18, 20 „Eigenverantwortung“ (Arbeitsrecht, Arbeitslosenversicherung).
+
+Mehrere Maßnahmen zu 3703 mit jeweils eigenem Hebel: Bürokratieentlastung, Pauschalen, Engagement gewinnen, Gemeinnützigkeit, Kooperation (jeweils eigenes Hebel-Name in neue_buendel).
+
+Richtungen ohne Maßnahme: Bestand priorisieren und gemeinsam nutzen (Sportstätten, nichts gefunden); Betriebskosten und Hallenentgelte (nichts gefunden).

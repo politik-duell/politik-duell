@@ -1,0 +1,92 @@
+{
+  "partei_id": 12,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Jugendclubs, pädagogisch begleitete Freiräume und selbstorganisierte Räume für Jugendliche weiter stärken",
+      "ursachen_ids": [2001],
+      "buendel": "Angebote und Räume für Jugendliche ausbauen",
+      "zitat": "Pädagogisch begleitete Freiräume, Jugendclubs und selbstorganisierte Räume wie das bisherige Modellprojekt Queer*Spaces werden weiter gestärkt.",
+      "seite": 26
+    },
+    {
+      "beschreibung": "Kommunen gezielt unterstützen, Jugendbudgets bereitzustellen und Angebote für Jugendliche zu ermöglichen",
+      "ursachen_ids": [2001],
+      "buendel": "Selbstorganisation und Mehrfachnutzung von Räumen",
+      "zitat": "Kommunen, die Jugendgremien einrichten, erhalten gezielte Unterstützung, um Jugendbudgets bereitzustellen und Angebote von und für Jugendliche zu ermöglichen.",
+      "seite": 25
+    },
+    {
+      "beschreibung": "Verbindlichen Jugendförderplan mit Mindeststandards für Angebote des Landes erarbeiten",
+      "ursachen_ids": [2001],
+      "zitat": "Wir werden mit den Akteuren der Kinder- und Jugendarbeit einen verbindlichen Jugendförderplan erarbeiten. Dieser soll unter anderem Mindeststandards für Angebote des Landes definieren und die Förderung vereinfachen.",
+      "seite": 25
+    },
+    {
+      "beschreibung": "Digitale Jugendarbeit ausbauen",
+      "ursachen_ids": [2001],
+      "zitat": "Digitale Jugendarbeit auf der Grundlage der Digitalen Agenda trägt zur Attraktivität unseres Landes bei und wird ausgebaut.",
+      "seite": 26
+    },
+    {
+      "beschreibung": "Förderbedingungen für internationale Jugendarbeit verbessern und neue Formate einführen",
+      "ursachen_ids": [],
+      "ursachen_offen": [2001],
+      "zitat": "Zusammen mit den Trägern der Jugendarbeit werden wir die Förderbedingungen verbessern und neue Formate einführen, damit mehr junge Menschen am internationalen Austausch teilnehmen.",
+      "seite": 26
+    },
+    {
+      "beschreibung": "Kreis-Kinder- und Jugendringe finanziell und personell besser ausstatten",
+      "ursachen_ids": [],
+      "ursachen_offen": [2001],
+      "zitat": "Kreis-Kinder- und Jugendringe werden finanziell und personell besser ausgestattet, um Qualifizierung, Koordination und Vernetzung vor Ort zu sichern.",
+      "seite": 26
+    },
+    {
+      "beschreibung": "Leitlinie für die Förderung von E-Sport erarbeiten, E-Sport den traditionellen Sportarten gleichstellen",
+      "ursachen_ids": [],
+      "ursachen_offen": [2001],
+      "zitat": "E-Sport soll unterstützt und anderen traditionellen Sportarten gleichgestellt werden. Dafür wird eine Leitlinie für die Förderung erarbeitet.",
+      "seite": 41
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 2003,
+      "seiten": [24, 25, 26, 27, 30, 48],
+      "grund": "Kapitel 'Attraktiv durch gute Kinder- und Jugendpolitik' (S. 25–27) und Fundstellen S. 24, 30, 48 gelesen; keine Regel zu Lärm oder zur Nutzung öffentlicher Räume im Verhältnis zu Jugendlichen. Lärmschutzpläne (S. 24) betreffen Kommunen allgemein, Präventionsangebote (S. 30) ohne Nutzungsbezug, S. 48 Energie."
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 2001, "name": "Jugendförderplan und Mindeststandards", "seite": 25 },
+    { "ursache": 2001, "name": "Digitale Jugendarbeit ausbauen", "seite": 26 },
+    { "ursache": 2001, "name": "Internationale Jugendarbeit fördern", "seite": 26 },
+    { "ursache": 2001, "name": "Jugendringe finanziell und personell stärken", "seite": 26 },
+    { "ursache": 2001, "name": "Leitlinie für die Förderung von E-Sport", "seite": 41 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "Jugendbudget", "ursache": 2001, "richtung": "Jugendliche verfügen über eigene Budgets für Projekte" }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Seiten 1–7 (Einleitung, Überblick), Kapitel Wirtschaft/Industrie mit Lärm- und Umweltbezug (S. 24, 48 jeweils nur Fundstelle), Kapitel „Attraktiv durch gute Kinder- und Jugendpolitik“ (S. 25–27), Sicherheit Fundstelle S. 30, Kapitel Kultur, Religion und Sport (S. 37–41).
+Kein Inhaltsverzeichnis im PDF; Kapitel über Überschriften bestimmt.
+
+Ursache 2001 (Pflicht): Maßnahmen erfasst (S. 25, 26, 41). Weitere gleichartige Stellen: „Das Modellprojekt des Queeren Jugendbudgets wird ausgebaut und verstetigt.“ (S. 25, Jugendbudget-Bündel); „Kinder- und Jugendring Sachsen-Anhalt e.V. wird auskömmlich finanziert“ (S. 25, Landesebene, Bündel Jugendringe).
+
+Nicht erfasst:
+- S. 26 „Jugendbegegnungsorte sollen … attraktive und bezahlbare Freizeit- und Kulturangebote bieten“: Zielformulierung („sollen“), keine konkrete Handlung.
+- S. 26 „Jugendliche sollen über eigene Budgets verfügen“: Ziel; die zugesagte Förderung der Kommunen steht unter S. 25 (erfasst).
+- S. 25 Jugendbeteiligung als kommunale Pflichtaufgabe und Wahlalter 16: Beteiligung, kein Bezug zu Treffpunkten oder Freizeitangeboten.
+- S. 26 Mobilität (Ruf- und Nachtbusse, Deutschlandticket, Radwege): Mobilität, nicht Angebot oder Ort der Freizeit.
+- S. 25 Beratungsstellen für queere Jugendliche: Beratung, kein Freizeitangebot.
+- S. 37, 40 Kultur und Sport als „Freizeitangebote“ (Zusammenhang und Bekenntnis) und Vereinsthemen: gehören zu Thema 37 bzw. sind kein Maßnahme-Satz.
+- S. 39 Clubs als Kulturorte anerkannt und geschützt; S. 39 „Dritte Orte“ im ländlichen Raum; Kulturförderung allgemein: R2 (Kultur- bzw. Veranstaltungsorte), kein Jugendbezug im Zitat.
+- S. 30 Präventionsräume und Präventionsangebote: allgemeine Sicherheitspolitik, kein Jugendbezug.
+
+Ursache 2003: keine Maßnahme. Lärm (S. 24) ist allgemeiner Umweltschutz in Kommunen; die Bündel „Zugang zu öffentlichem Raum“, „Lärm mindern und Ruhe schützen“ und „Nutzungen abstimmen und vermitteln“ finden im Text keine Zusage zum Verhältnis Lärm/Nutzung öffentlicher Räume und Jugendlicher. Die Begriffe Streetwork, Mediation, Runder Tisch, Ordnungsamt, Alkoholverbot kommen in den gelesenen Kapiteln nicht vor.
+
+Richtungen ohne Maßnahme: Ursache 2003 insgesamt.
+Seiten ohne Text: nur S. 1 (Titelseite), spielt keine Rolle.

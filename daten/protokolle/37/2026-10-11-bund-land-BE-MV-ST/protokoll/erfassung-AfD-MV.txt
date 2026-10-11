@@ -1,0 +1,70 @@
+{
+  "partei_id": 15,
+  "land": "MV",
+  "massnahmen": [
+    {
+      "beschreibung": "Kommunen und Vereine sollen Mittel für Sanierung von Vereins- und Schulsportstätten sowie Schwimmhallen vollständig und unbürokratisch abrufen können",
+      "ursachen_ids": [3701],
+      "buendel": "Sanierung und Neubau von Sportstätten fördern",
+      "zitat": "Der Sanierungsstau bei Vereins- und Schulsportstätten sowie Schwimmhallen ist noch nicht überwunden. Wir werden sicherstellen, dass Kommunen und Vereine in Mecklenburg-Vorpommern Mittel vollständig und unbürokratisch abrufen können.",
+      "seite": 72
+    },
+    {
+      "beschreibung": "Bundesstützpunkte für Kanurennsport, Triathlon und Segeln (Standorte mit Sportinfrastruktur) dauerhaft erhalten und ausbauen, auf Landes- und Bundesebene",
+      "ursachen_ids": [],
+      "ursachen_offen": [3701],
+      "zitat": "Diese Infrastruktur ist nicht selbstverständlich. Die Bundesstützpunkte für Kanurennsport und Triathlon in Neubrandenburg sowie Segeln in Rostock standen in der Vergangenheit mehrfach akut auf der Kippe und sind derzeit nur bis 2028 gesichert. Wir werden uns auf Landes- und Bundesebene dafür einsetzen, dass diese Standorte dauerhaft erhalten und ausgebaut werden, weil sie nachweislich Weltklasseleistungen hervorbringen.",
+      "seite": 36
+    },
+    {
+      "beschreibung": "Aufwandsentschädigungen für ehrenamtliche Übungsleitende, Trainer und Schiedsrichter regelmäßig an Lohn- und Preisentwicklung anpassen",
+      "ursachen_ids": [3703],
+      "buendel": "Vereinsförderung und Entlastung des Ehrenamts",
+      "zitat": "Ohne sie gibt es keinen Vereinssport. Ihre möglichen Aufwandsentschädigungen werden wir regelmäßig an die Lohn- und Preisentwicklung anpassen.",
+      "seite": 66
+    },
+    {
+      "beschreibung": "Bürokratische Hürden für Vereine (Förderanträge, Versicherungs- und Nachweispflichten) systematisch abbauen",
+      "ursachen_ids": [3703],
+      "zitat": "Bürokratische Hürden für Vereine, sei es bei Förderanträgen, Versicherungspflichten oder Nachweispflichten, werden wir systematisch abbauen.",
+      "seite": 66
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 3702,
+      "seiten": [33, 63, 66, 72],
+      "grund": "Kapitel Sport, Gesundheit (Vereinskultur), Ehrenamt und Sportstätten gelesen; keine Zusage zu Betriebskosten, Energiekosten, Hallenentgelten oder Nutzungsgebühren von Sportstätten. Eigenverantwortung-Treffer betreffen Kommunen, Gesundheit und Tourismus, nicht Sportvereine."
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 3703, "name": "Bürokratieabbau für Vereine", "seite": 66 }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis (S. 2–6); Sport als Freizeit (S. 33); Sportstätten und Schwimmhallen (S. 72); Spitzensport (S. 36); Vereinskultur und Breitensport (S. 63); Ehrenamt und Vereine (S. 66 f.); Fundstellen S. 7, 12, 22, 33, 36, 51, 54, 58, 59, 67, 69, 72, 82, 83, 84, 90 über Auszug und Grep-Treffer geprüft (Treffer überwiegend außerhalb des Themas: Eigenverantwortung in Wirtschaft, Familie, Gesundheit, Tourismus; Freiflächen-PV, Windkraft).
+
+Bündel „Sanierung und Neubau von Sportstätten fördern“: Hauptstelle S. 72 (Zitat oben). Bündel „Bestand priorisieren und gemeinsam nutzen“: im Text gesucht (priorisier, gemeinsam, Mehrfachnutzung, Belegung), nichts zu Sportstätten gefunden.
+
+Bündel „Vereinsförderung und Entlastung des Ehrenamts“: Hauptstelle S. 66 (Aufwandsentschädigungen). Weitere gleichartige Stellen (nicht erfasst, gleiche Art Zusage):
+- S. 63 „Den Breitensport werden wir als Gesundheitsvorsorge politisch und finanziell aufwerten.“ (Förderung des Breitensports, allgemeiner gehalten als S. 66)
+- S. 66 „Die Ehrenamtskarte werden wir überarbeiten und mit wirklichen Vorteilen für die Ehrenamtlichen … ausstatten.“ (Vergünstigungen für Ehrenamtliche, kein Sportbezug ausdrücklich)
+
+Bündel „Betriebskosten und Hallenentgelte fördern oder senken“ und „Eigenverantwortung und Auslastung“: nichts zu Sportstätten oder Vereinen gefunden (S. 33, 63, 66, 72 gelesen).
+
+Bündel „Eigeneinnahmen und Kooperation der Vereine“: im Text gesucht (Beitrag, Sponsoring, Kooperation), nichts zu Vereinen.
+
+Nicht erfasst (gelesen, nicht aufgenommen):
+- S. 33 „Sport — mehr als Freizeit“: Bekenntnis zur Autonomie des Sports, keine Handlung.
+- S. 67 „Heimatvereine fördern“: keine Sportvereine, Thema nicht betroffen.
+- S. 51 „Gemeinnützigkeit von Vereinen wie ‚Greifswald hilft‘ überprüfen“: Migrationsverein, Kontrolle statt Förderung, kein Sportbezug.
+- S. 47 „Wir beenden jede finanzielle Förderung des Landes für diese linksradikalen Netzwerke“: politische Vereine, kein Sportbezug.
+- S. 66 f. Schülerinnen und Schüler, Beiblatt zum Zeugnis für Jugendfeuerwehr, THW, Musikzug, Chor: Anerkennung, keine Vereinsfinanzierung im Sportbereich.
+- S. 36 Spitzensport (duale Karrieremodelle, Eliteschulen): allgemeine Spitzensportförderung ohne Bezug zu Vereinen oder Sportstätten (R2), nicht aufgenommen.
+- S. 72 „Auf Neben- und Freizeitwasserstraßen werden wir Schleusen … erhalten“: Wasserstraßen, keine Sportstätte.
+
+Richtungen ohne Maßnahme: Betriebskosten und Hallenentgelte (3702); Eigenverantwortung und Auslastung (3702, nur Treffer außerhalb des Sports); Bestand priorisieren und gemeinsam nutzen (3701); Eigeneinnahmen und Kooperation der Vereine (3703).
+
+Seiten ohne Text: S. 1 (Titelseite), keine Relevanz für das Thema.

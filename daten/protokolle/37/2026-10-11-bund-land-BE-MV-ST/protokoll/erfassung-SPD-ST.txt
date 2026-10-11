@@ -1,0 +1,85 @@
+{
+  "partei_id": 12,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Sportstätten erhalten und modernisieren; Kommunen bei Investitionen in Neubau und Modernisierung unterstützen",
+      "ursachen_ids": [3701],
+      "buendel": "Sanierung und Neubau von Sportstätten fördern",
+      "zitat": "Sportstätten werden erhalten und modernisiert. Kommunen werden unter anderem bei Investitionen in Neubau, Barrierefreiheit, Energieeffizienz und Digitalisierung unterstützt.",
+      "seite": 40
+    },
+    {
+      "beschreibung": "Vereinspauschalen verdoppeln, dynamisieren und im Sportfördergesetz festschreiben",
+      "ursachen_ids": [3703],
+      "buendel": "Vereinsförderung und Entlastung des Ehrenamts",
+      "zitat": "Die Vereinspauschalen werden verdoppelt und dynamisiert und im Sportfördergesetz festgeschrieben.",
+      "seite": 40
+    },
+    {
+      "beschreibung": "Olympiastützpunkt, Leistungszentren, Sportinternate und Landessportschule verlässlich fördern, einschließlich Tariferhöhungen",
+      "ursachen_ids": [],
+      "ursachen_offen": [3702],
+      "buendel": "Betriebskosten und Hallenentgelte fördern oder senken",
+      "zitat": "Der Olympiastützpunkt Sachsen-Anhalt, Bundesstützpunkte, Leistungszentren, Sportinternate, Mensen und die Landessportschule Osterburg werden verlässlich gefördert. Das schließt Tariferhöhungen, Investitionen sowie eine Leistungssportschwimmhalle in Magdeburg ein.",
+      "seite": 40
+    },
+    {
+      "beschreibung": "Vereine bei der Digitalisierung ihrer Arbeit unterstützen",
+      "ursachen_ids": [3703],
+      "zitat": "Vereine werden bei der Digitalisierung ihrer Arbeit unterstützt.",
+      "seite": 40
+    },
+    {
+      "beschreibung": "Ehrenamtsgesetz im Sport anstreben",
+      "ursachen_ids": [3703],
+      "zitat": "Zur Unterstützung ehrenamtlichen Engagements im Sport wird ein Ehrenamtsgesetz angestrebt.",
+      "seite": 40
+    },
+    {
+      "beschreibung": "Inklusionsberatung im Sport institutionell verankern",
+      "ursachen_ids": [],
+      "ursachen_offen": [3703],
+      "zitat": "Das Projekt -Inklusionsberater:innen im Sport- soll institutionell fest verankert werden.",
+      "seite": 40
+    },
+    {
+      "beschreibung": "Leitlinie für die Förderung von E-Sport erarbeiten, E-Sport den traditionellen Sportarten gleichstellen",
+      "ursachen_ids": [],
+      "ursachen_offen": [3703],
+      "zitat": "E-Sport soll unterstützt und anderen traditionellen Sportarten gleichgestellt werden. Dafür wird eine Leitlinie für die Förderung erarbeitet.",
+      "seite": 41
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 3703, "name": "Digitalisierung der Vereine unterstützen", "seite": 40 },
+    { "ursache": 3703, "name": "Ehrenamtsgesetz im Sport", "seite": 40 },
+    { "ursache": 3703, "name": "Inklusionsberatung im Sport verankern", "seite": 40 },
+    { "ursache": 3703, "name": "Leitlinie für die Förderung von E-Sport", "seite": 41 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "Schwimmhalle", "ursache": 3701, "richtung": "Investitionsprogramm für Schwimmhallen und Schwimmbäder" }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Seiten 1–7 (Einleitung), Kapitel Kultur, Religion und Sport (S. 37–41), Fundstellen S. 18, 37, 40, 41; Kapitel Sicherheit (S. 30) und Schule (S. 18) nur zur Abgrenzung.
+Kein Inhaltsverzeichnis im PDF; Kapitel über Überschriften bestimmt. Teilauftrag 1 (Thema 20) bereits eigene Datei; hier nur dieses Thema.
+
+Ursache 3701 (Sportstätten, Sanierung/Neubau): erfasst (S. 40). Gleichartige Stellen im selben Hebel (öffentliche Investition/Förderung), nicht separat erfasst: „Ein Investitionsprogramm für Schwimmhallen und Schwimmbäder wird aufgelegt.“ (S. 40); „In Halle wird ein Haus des Sportes gebaut.“ (S. 40); „Eine Leistungssportschwimmhalle in Magdeburg“ (S. 40, Spitzensport).
+
+Ursache 3702 (Betriebskosten): offen erfasst (S. 40, Betriebsförderung von Stützpunkten und Landessportschule; Grenzfall, da überwiegend Spitzensport). Sonst keine Zusage zu Hallenentgelten, Hallenmieten, Energiekosten für Vereine oder Nutzungsgebühren gefunden; Auslastung und Eigenverantwortung nicht in Sportkontext (S. 37 betrifft Kulturförderung).
+
+Ursache 3703 (Vereine, Ehrenamt): erfasst (S. 40, 41). Gleichartig, nicht separat: „Kreis- und Stadtsportbünde sowie Landesfachverbände“-Pauschalförderung wird erhöht und dynamisiert (S. 40); „Der Landessportbund wird auskömmlich finanziert“ (S. 40).
+
+Nicht erfasst:
+- S. 18 „Sporthallen“ in Schulen (Beschattung/Kühlung): Schule, R2.
+- S. 37 „Kultur und Sport sind mehr als Freizeitangebote“ und Bekenntnis zum Sport: Lage/Bekenntnis ohne Handlung.
+- S. 40 „Optimale Bedingungen für sportliche Höchstleistungen … Eliteschulen des Sports“, Dopingfreiheit, Förderung dualer Karrieren: Spitzensport ohne Bezug zu Vereinen oder Sportstätten, R2.
+- S. 40 „Ein Landesaktionsplan Inklusiver Sport wird erarbeitet und umgesetzt“: Inklusion, keine Vereinsfinanzierung oder Sportstätte.
+- S. 40 „Viele Menschen werden durch Sport nicht erreicht … Barrieren“: Lagebeschreibung.
+- S. 41 Medien-Staatsvertrag (Berichterstattung über E-Sport): kein Bezug zu Vereinsfinanzierung oder Sportstätten.
+
+Bündel „Bestand priorisieren und gemeinsam nutzen“ (3701) und „Mehrfachnutzung von Hallen“: im Text nicht gefunden (S. 40, 41 gelesen).
+Seiten ohne Text: nur S. 1, spielt keine Rolle.

@@ -1,0 +1,54 @@
+{
+  "partei_id": 12,
+  "land": "MV",
+  "massnahmen": [
+    {
+      "beschreibung": "Jugendclubs, soziokulturelle Zentren und offene Treffpunkte für Jugendliche stärken und neu schaffen",
+      "ursachen_ids": [2001],
+      "buendel": "Angebote und Räume für Jugendliche ausbauen",
+      "zitat": "Wir setzen uns für die Stärkung und Neuschaffung von Jugendclubs, soziokulturellen Zentren und sogenannten „Dritten Orten“ ein, sprich offenen Räumen zwischen Schule, Arbeit und zuhause.",
+      "seite": 36
+    },
+    {
+      "beschreibung": "Wirksamkeit des Kinder- und Jugendbeteiligungsgesetzes evaluieren und Jugendbeteiligung gezielt ausbauen",
+      "ursachen_ids": [],
+      "ursachen_offen": [2001],
+      "zitat": "Die Wirksamkeit des Kinder - und Jugendbeteiligungsgesetzes werden wir evaluieren und die Kinder - und Jugendbeteiligung gezielt ausbauen.",
+      "seite": 35
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 2001, "name": "Jugendbeteiligung", "seite": 35 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "Dritte Orte", "ursache": 2001, "richtung": "Stärkung und Neuschaffung von Treffpunkten für Jugendliche" }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 2003, "seiten": [16, 59, 60, 87], "grund": "Kapitel Sicherheit (S. 46–47) und Fundstellen S. 16, 59, 60, 87 gelesen; keine Regel zu Lärm, Nachtruhe oder Nutzung öffentlicher Räume im Verhältnis zu Jugendlichen und keine Konfliktvermittlung im Jugendbereich. Windpark-Anwohnerbeteiligung, Justiz-Mediation, Integration und Innenentwicklung gehören nicht dazu." }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: S. 1–6 (Vorwort, Schwerpunkte I–III), Kapitel „Jugend braucht Chancen und Beteiligung“, „Jugend braucht eigene Orte“ und Schulsozialarbeit (S. 35–37), Einsamkeit (S. 33), Sicherheit (S. 46–47), Ehrenamt (S. 39–40), Demokratie (S. 41); Fundstellen S. 16, 35, 36, 37, 41, 52, 59, 60, 87. Kultur (S. 80) zur Prüfung, ob „Dritte Orte“ auch für Jugendliche gelten.
+
+Maßnahmen:
+- S. 36: Jugendclubs und Dritte Orte, Stelle mit Zusage ausgewählt (Bündel „Angebote und Räume für Jugendliche ausbauen“). Der Zusatz zur Selbstorganisation (queere und feministische Einrichtungen) gehört zur selben Zusage.
+- S. 35: Jugendbeteiligung als Grenzfall in ursachen_offen, neues Instrument „Jugendbeteiligung“ (kein Bündel passt). Bezug zu Freizeitangeboten ist schwach.
+
+Nicht erfasst:
+- S. 36: 50-50-Taxi-Ticket für 16–25 (Mobilität bei Partynächten, kein Angebot oder Treffpunkt; keine zulässige Ursache passt).
+- S. 36: Jugendübernachtungsstätten und Schullandheime erhalten und weiterentwickeln (Prüfauftrag).
+- S. 36: Präventionsangebote, Stärkung psychischer Gesundheit, Jugendverbände beibehalten (keine Freizeit-Maßnahme oder Bekenntnis zu Bestehendem).
+- S. 36–37: Kinder- und Jugendbericht und Jugendstrategie (Prüfauftrag bzw. allgemeine Absicht).
+- S. 37: Jugend- und Schulsozialarbeit fortsetzen, Koordinierungsstelle prüfen (Jugendhilfe ohne Freizeitbezug; Schule).
+- S. 37: Ergebnisse der Enquete-Kommission auswerten (allgemeine Absicht, kein konkreter Treffpunkt oder Angebot).
+- S. 33: Begegnungsorte („Dritte Orte“) im Rahmen des Landesprogramms gegen Einsamkeit (für alle Altersgruppen, nicht jugendspezifisch).
+- S. 80: „Dritte Orte“ wie Soziokulturelle Zentren fördern (Kultur; ohne Bezug zu Jugendlichen, Regel R2).
+- S. 60: geflüchtete Kinder und Jugendliche sollen Zugang zu Sport und Kultur erhalten (Ziel).
+- S. 41: Demokratie im Alltag gestärkt (Rückblick).
+- S. 52: Beiräte und Jugendbeteiligung in der Kommunalverfassung weiterentwickeln (allgemeine Beteiligung, nicht Jugend-Treffpunkte).
+
+Richtungen ohne Maßnahme: 2003 (alle drei Bündel). Keine Regel zu Lärm, Nachtruhe oder Nutzung öffentlicher Räume gegenüber Jugendlichen; Polizeipräsenz (S. 46–47) ist allgemein.
+Bündel ohne Maßnahme: „Zugang zu öffentlichem Raum für Jugendliche ermöglichen“, „Lärm mindern und Ruhe schützen“, „Nutzungen abstimmen und vermitteln“ (Suche nach Lärm, Nachtruhe, Ordnungsamt, Mediation, Streetwork, Runder Tisch, öffentlicher Raum, Aufenthalt: nur Justiz-Mediation S. 59 und Konfliktlösung in der Schule; beides nicht erfasst).
+Seiten ohne Text: 1 und 95 (Titel- und Rückseite), ohne Rolle.

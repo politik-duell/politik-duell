@@ -1,0 +1,46 @@
+{
+  "partei_id": 14,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Mittel der Jugendhilfe des Landes an den Verbraucherpreisindex anpassen und erhöhen",
+      "ursachen_ids": [2001],
+      "buendel": "Angebote und Räume für Jugendliche ausbauen",
+      "zitat": "Damit Jugendliche ihre Fähigkeiten und Interessen entdecken und entwickeln können, sollen die Mittel der Kinder und Jugendhilfe des Landes entsprechend der Entwicklung des Verbraucherpreisindexes erhöht werden.",
+      "seite": 35
+    },
+    {
+      "beschreibung": "Rechtliche Grundlage für Beteiligung junger Menschen (z. B. Jugendparlamente oder -beiräte) konkretisieren",
+      "ursachen_ids": [],
+      "ursachen_offen": [2001],
+      "zitat": "Partizipation von jungen Menschen ist uns ein wichtiges Anliegen. Deshalb wollen wir eine konkretere Ausformulierung der rechtlichen Grundlage, die die Beteiligung (beispielsweise durch Jugendparlamente oder -beiräte) regelt.",
+      "seite": 35
+    }
+  ],
+  "neue_buendel": [{ "ursache": 2001, "name": "Jugendbeteiligung (Jugendparlamente)", "seite": 35 }],
+  "nicht_erfasst": [
+    { "ursache": 2003, "seiten": [46, 47, 48, 49], "grund": "Kapitel Justiz (S. 46: Mediation nur allgemein in zivil- und verwaltungsrechtlichen Streitigkeiten), Sicherheit (S. 47: Polizeipräsenz und Sicherheitspartnerschaften ohne Bezug zu Jugendlichen oder Lärm) und Kommunales (S. 49) gelesen; keine Regel zu Lärm oder Nutzung öffentlicher Räume durch Jugendliche. S. 48 ohne Text (vermutlich Bild)." }
+  ],
+  "stand_im_pdf": "Stand: 05.06.2026 (Auftrag: 2026-04-25; Beschluss des Landesparteitags 25. April 2026)"
+}
+
+Protokoll
+
+Gelesene Seiten und Kapitel: Inhaltsverzeichnis (S. 2); Kapitel Soziales, Jugendpolitik (S. 35–36); Kapitel Justiz (S. 45–46, Fundstelle); Kapitel Sicherheit (S. 47–48); Kommunales (S. 49–50); Bildung (S. 25–31) für Räume, Ganztag und Schulgebäude; Fundstellen S. 30, 35, 37, 46.
+
+Nicht erfasst (gelesen, nicht aufgenommen):
+- S. 27 „Räume für Macher“ (Lernorte für Jugendliche und Erwachsene, Bibliotheken und Schulen): Bildungsbezug ohne Freizeitbezug; nach R2 Schule/Bildung, nicht dieses Thema.
+- S. 35 Eigenanteile in der Jugendarbeit: Kostenbeteiligung und Teilnahme am Geldbeutel; nach R1 gehört Kosten/Zuschüsse zu Thema 2002, nicht in diesem Auftrag.
+- S. 29 und S. 31 Schulgebäude für Vereine und Kulturangebote, Ganztagsangebote: Schule nach R2, Jugendliche und Freizeit nicht ausdrücklich genannt.
+- S. 30 Talent-Scouting in der Jugendarbeit: Lehrkräftegewinnung, kein Bezug zu Freizeitangeboten.
+- S. 37 Jugendarbeit gegen Diskriminierung: Aufklärung, kein Angebot oder Treffpunkt.
+- S. 46 gerichtsnahe Mediation: allgemeine Justiz, nicht Nutzungskonflikte.
+- S. 40 Kultur (Vermittlungsarbeit): Kulturorte nach R2 anderes Thema.
+
+Bündel ohne Maßnahme (je Bündel gesucht):
+- 2001 „Selbstorganisation und Mehrfachnutzung von Räumen“: Schulgebäude für Vereine (S. 29) ist Schulthema ohne Jugend- und Freizeitbezug (R2); S. 36 betrifft Senioren und Nachbarschaft. Keine Maßnahme.
+- 2003 „Zugang zu öffentlichem Raum für Jugendliche ermöglichen“, „Lärm mindern und Ruhe schützen“, „Nutzungen abstimmen und vermitteln“: Kapitel Sicherheit (S. 47), Kommunales (S. 49–50) und Justiz-Mediation (S. 46) gelesen; keine Zusage dazu. S. 48 ohne Text (vermutlich Bild, Kapitel Sicherheit), dadurch kann dort etwas fehlen. Deshalb nur als nicht_erfasst für 2003 vermerkt, nicht als keine Maßnahme.
+
+Grenzfälle: Jugendbeteiligung (S. 35) als ursachen_offen 2001, da R1 Beteiligung nicht nennt.
+
+Seiten ohne Text: S. 48 (zwischen Sicherheit und Kommunales, vermutlich Bild).

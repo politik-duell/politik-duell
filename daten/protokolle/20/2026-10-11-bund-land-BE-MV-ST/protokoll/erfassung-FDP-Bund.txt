@@ -1,0 +1,38 @@
+{
+  "partei_id": 14,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Engagement der Babyboomer-Generation gezielt einbinden, um Sportangebote für Kinder und Jugendliche auszubauen",
+      "ursachen_ids": [2001],
+      "zitat": "Um diese Potenziale zu heben, wollen wir neben einer generellen Stärkung des Ehrenamts insbesondere das Engagement der Babyboomer-Generation gezielt einbinden. Mit ihrer Erfahrung und Zeit können sie Sportangebote für Kinder, Jugendliche und Senioren ausbauen und die Vereinsarbeit beleben.",
+      "seite": 32
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 2002,
+      "seiten": [10, 15, 27, 30, 40, 42, 43],
+      "grund": "Keine Kosten für Freizeit, Sport, Musik oder Kultur von Kindern und Jugendlichen (R1). Erasmus-Schulaufenthalt (S. 10) gehört zu Schule (R2); Lebenschancen-BAföG (S. 10) betrifft Erwachsene; Rundfunkbeitrag (S. 27), Führerschein (S. 42) und Kinderchancenportal (S. 30) sind keine Freizeitkosten."
+    },
+    {
+      "ursache": 2003,
+      "seiten": [11, 32],
+      "grund": "Kapitel Kultur (S. 11) und Sport (S. 31–32) gelesen; nichts zu Lärm, Nutzung öffentlicher Räume oder Konflikten mit Anwohnenden."
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 2001, "name": "Ehrenamtliches Engagement einbinden", "seite": 32 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "sportangebote", "ursache": 2001, "richtung": "Angebote und Räume für Jugendliche ausbauen" }
+  ]
+}
+
+## Protokoll
+
+Gelesen: Inhaltsverzeichnis (S. 2–4); Kapitel Bildung (S. 6–10, nur Stellen zu Schule/Jugendaustausch), Kunst und Kultur (S. 11), Familie und Senioren (S. 29–31), Sport und Ehrenamt (S. 31–32), Mobilität (S. 42), Medien (S. 27); Fundstellen S. 15, 30, 40, 43. Seiten 1–2 ohne Text (Titelseiten).
+
+Nicht erfasst: S. 10 Erasmus+ für Schülerinnen und Schüler (Schule, R2); S. 10 Lebenschancen-BAföG, Freiraumkonto (Erwachsene); S. 11 „Kultur soll allen Menschen offenstehen“ (allgemeines Ziel, kein Jugendbezug); S. 27 Rundfunkbeitrag für junge Menschen in Ausbildung (keine Freizeit-Leistung nach R1); S. 30 Kinderchancenportal (Verfahren für Familienleistungen); S. 32 Bundesjugendspiele und Sportabzeichen (Schule, R2); S. 32 Sportgroßveranstaltungen und Spitzensport (R2); S. 42 Führerschein günstiger (Mobilität, nicht Freizeit).
+
+Richtungen ohne Maßnahme: Angebote und Räume ausbauen (nur eine Maßnahme, s. o.); Selbstorganisation und Mehrfachnutzung (nichts gefunden); Kosten senken (nur Gebühren in Luftverkehr S. 43, keine Freizeitangebote); Lärm, öffentlicher Raum, Nutzungskonflikte (nichts gefunden).
