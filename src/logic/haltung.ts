@@ -9,7 +9,7 @@ export const POSITION_TEXT: Record<Positionswert, string> = {
   ja: 'Ja',
   nein: 'Nein',
   teils: 'Teils',
-  keine_aussage: 'Keine Aussage im Programm',
+  keine_aussage: 'Keine eindeutige Aussage',
 }
 
 export interface ParteiPosition {

@@ -57,6 +57,8 @@ describe('Haltungen erfassen', () => {
     expect(pruefeHaltungAntwort(liste, antwort)).toEqual([])
     expect(pruefeHaltungAntwort(liste, { ...antwort, einordnungen: [{ ...antwort.einordnungen[0], kurzfassung: 'Die SPD will Tempo 130.' }] }).join())
       .toMatch(/nennt eine Partei[^]*fehlt in der Antwort/)
+    expect(pruefeHaltungAntwort(liste, { ...antwort, einordnungen: [{ ...antwort.einordnungen[0], begruendung: 'Fordert keine Erhoehung fuer alle.' }] }).join())
+      .toMatch(/begruendung mit Umschrift/)
     const datei = positionenEintragen(k, haltung(), funde, kennungen, antwort, '2026-10-05')
     expect(erkennbar(datei)).toBe(2)
     const r = pruefeKatalog(PARTEIEN, [THEMA], undefined, [], [{ pfad: 'haltungen/04-tempo.json', inhalt: datei }])
