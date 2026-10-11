@@ -34,7 +34,7 @@ Ist ein Thema nicht in der DB: KI gibt eine vorläufige Einschätzung, deutlich 
 - **Frontend:** React + Vite + TypeScript, mobil-first, als PWA. Hosting: Vercel oder Netlify.
 - **Backend:** Supabase, Region Frankfurt (Postgres, Edge Functions, Realtime).
 - **KI:** API-Aufruf ausschließlich aus einer Edge Function (API-Key nie im Frontend). Günstiges Modell (z. B. Claude Haiku oder Mistral). Antworten als striktes JSON. Rate-Limit pro Sitzung.
-- **Sprache:** Push-to-talk via Web Speech API (Chrome/Safari); Fallback Texteingabe. Später optional Transkriptionsdienst.
+- **Sprache:** nur Texteingabe; diktieren geht über die Tastatur des Geräts. (Der eigene Push-to-talk-Knopf mit Web Speech API wurde im Oktober 2026 entfernt – er funktionierte oft nicht.)
 - **Wortwolke:** d3-cloud, sanfte Bewegung. Die Wörter sind die angelegten Themen mit belegten Ursachen, die für alle sieben Parteien erfasst sind (Bundesprogramm, Tabelle `abdeckung`), Größe nach Zahl der Ursachen (`src/data/wortwolke.ts`). Auf dem Startbildschirm über die ganze Fläche, im Spiel nur links und rechts neben der Spielspalte (bei schmalen Fenstern gar nicht). Noch nicht erfasste Themen zeigt die Wolke nicht.
 
 ## Datenmodell (Entwurf)
@@ -124,7 +124,7 @@ Vor jeder öffentlichen Anzeige von Spielereingaben (derzeit zeigt die Wortwolke
 ## Meilensteine
 
 1. **Klickbarer Prototyp:** Parteiwahl, Texteingabe, Mock-Daten für 3 Themen (Arzttermine, Miete, Energiepreise), Punktevergabe + Beleg-Links, Endbildschirm.
-2. Push-to-talk-Knopf.
+2. Push-to-talk-Knopf (im Oktober 2026 wieder entfernt).
 3. Supabase-Anbindung: Schema, Seed-Daten, Edge Function mit KI.
 4. Wortwolke mit Realtime + Moderation/Admin-Ansicht.
 5. Datenschutzseite, Impressum, Rate-Limit, Deployment.

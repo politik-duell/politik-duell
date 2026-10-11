@@ -272,7 +272,7 @@ Die Methode ist so fair wie möglich, aber nicht fehlerfrei. Wir benennen ihre G
 
 ## Stand und Mitmachen
 
-Die App läuft als spielbarer Prototyp mit Spracheingabe, KI-Zuordnung, Wortwolke und Datenschutz. Die Daten sind im Aufbau:
+Die App läuft als spielbarer Prototyp mit KI-Zuordnung, Wortwolke und Datenschutz. Die Daten sind im Aufbau:
 
 | Baustein | Stand September 2026 |
 | --- | --- |

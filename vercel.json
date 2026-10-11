@@ -13,7 +13,7 @@
         },
         { "key": "Referrer-Policy", "value": "no-referrer" },
         { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Permissions-Policy", "value": "microphone=(self), camera=(), geolocation=(), payment=(), usb=(), interest-cohort=()" },
+        { "key": "Permissions-Policy", "value": "microphone=(), camera=(), geolocation=(), payment=(), usb=(), interest-cohort=()" },
         { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains" },
         { "key": "Cross-Origin-Opener-Policy", "value": "same-origin" }
       ]
