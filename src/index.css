@@ -481,6 +481,96 @@ textarea:focus-visible {
 .partei-zeile:focus-visible {
   outline-offset: -3px;
 }
+/* Schmale Ansicht: eine Tabelle, links kreuzt A, rechts B. */
+.partei-tabelle {
+  min-width: 0;
+  margin: 1.25rem 0 0;
+  padding: 0;
+  overflow: hidden;
+}
+.partei-tabelle-kopf,
+.partei-tabelle-zeile {
+  display: grid;
+  grid-template-columns: 4rem 1fr 4rem;
+  align-items: stretch;
+}
+.partei-tabelle-kopf {
+  align-items: end;
+  padding: 10px 0 8px;
+  font-size: 0.85rem;
+  color: var(--text-leise);
+  text-align: center;
+  border-bottom: 3px solid var(--tinte);
+}
+.partei-tabelle-kopf span:first-child,
+.partei-tabelle-kopf span:last-child {
+  font-family: var(--schrift-titel);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text);
+}
+.partei-tabelle-zeile + .partei-tabelle-zeile {
+  border-top: 1px solid var(--tinte);
+}
+/* Name mittig, Parteifarbe als Streifen zu beiden Seiten. */
+.partei-tabelle-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.5rem;
+  padding: 6px 14px;
+  font-weight: 700;
+  text-align: center;
+  box-shadow:
+    inset 8px 0 var(--partei),
+    inset -8px 0 var(--partei);
+}
+.tabelle-kreuz {
+  appearance: none;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  font: inherit;
+  background: var(--flaeche);
+  border: 0;
+  cursor: pointer;
+}
+.tabelle-kreuz.gewaehlt {
+  background: var(--stimmblau-hell);
+}
+.tabelle-kreuz:hover:not(:disabled) .kreuzfeld circle {
+  fill: var(--stimmblau-hell);
+}
+.tabelle-kreuz:disabled {
+  cursor: not-allowed;
+}
+.tabelle-kreuz:disabled .kreuzfeld {
+  opacity: 0.25;
+}
+.tabelle-kreuz:focus-visible {
+  outline: 3px solid var(--fokus);
+  outline-offset: -3px;
+}
+.angaben-paar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 16px;
+}
+.angaben-paar .spieler-wahl legend {
+  padding: 10px 12px 8px;
+  font-size: 1.1rem;
+}
+.angaben-paar .rolle-wahl-label {
+  clear: both;
+  margin: 10px 12px 6px;
+  font-size: 0.85rem;
+}
+.angaben-paar .spieler-wahl select {
+  width: calc(100% - 24px);
+  margin: 0 12px;
+  font-size: 0.9rem;
+}
 .rolle-wahl-label {
   display: block;
   margin: 14px 16px 6px;
