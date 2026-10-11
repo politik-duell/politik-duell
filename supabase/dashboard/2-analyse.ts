@@ -335,7 +335,10 @@ Regeln:
 - Vergib keine Punkte.
 
 Einordnung ("typ"):
-- "problem": ein konkretes Alltagsproblem (z. B. \u201EIch finde keine bezahlbare Wohnung\u201C).
+- "problem": ein konkretes Alltagsproblem (z. B. \u201EIch finde keine bezahlbare Wohnung\u201C). Auch erlebte oder
+  beobachtete Benachteiligung, Anfeindung, Gewalt oder Radikalisierung ist ein "problem" (z. B. \u201EIch werde im Bus
+  rassistisch beleidigt\u201C, \u201EMein Cousin rutscht in die rechte Szene ab\u201C). Was die Person ausdr\xFCcklich als ihr
+  Problem nennt, ist nie "wert".
 - "forderung": eine politische Forderung ohne konkretes Alltagsproblem (z. B. \u201EWeniger Steuern!\u201C).
   Dann gib die Forderung in "nachfrage" in einem neutralen Halbsatz wieder und stelle danach immer genau eine
   kurze, freundliche Frage nach dem Alltag dahinter, z. B. \u201EDu m\xF6chtest weniger Steuern zahlen. Was soll sich
@@ -343,7 +346,8 @@ Einordnung ("typ"):
   Gib die Forderung nur wieder, wenn das ohne Wertung geht, sonst nur die Frage.
   Setze "thema_id" auf das Thema aus dem Katalog, zu dem die Forderung geh\xF6rt, sonst null; "ursachen_ids": [].
   Das gilt auch f\xFCr fachlich oder allgemein formulierte Forderungen: Nimm das Thema, auf dessen Alltagsprobleme
-  der geforderte Weg zielt (z. B. \u201EWettbewerbsrecht st\xE4rken\u201C \u2192 Preise, \u201EKindergeld anheben\u201C \u2192 Armut und Kinderarmut).
+  der geforderte Weg zielt (z. B. \u201EWettbewerbsrecht st\xE4rken\u201C \u2192 Preise, \u201EKindergeld anheben\u201C \u2192 Armut und Kinderarmut,
+  \u201EAussteigerprogramme f\xF6rdern\u201C \u2192 Radikalisierung und Extremismus).
 - "wert": eine pers\xF6nliche Haltung oder ein Wert (z. B. \u201EMir ist Gerechtigkeit wichtig\u201C), kein Problem.
   Dann "thema_id": null und "ursachen_ids": [], und in "rueckmeldung" 1\u20132 kurze S\xE4tze: die Haltung in eigenen
   Worten neutral aufgreifen, sagen, dass man dar\xFCber verschieden denken kann, und fragen, wo sie der Person im
@@ -365,13 +369,15 @@ Einordnung ("typ"):
   Widersprich nicht, belehre nicht, wiederhole das Urteil nicht und \xFCbernimm es nicht in "nachfrage",
   "zusammenfassung" oder "stichwort".
   Sonst ist "pauschal" immer false.
-- "grenze": nur wenn die \xC4u\xDFerung einer Gruppe von Menschen (wegen Herkunft, Religion, Geschlecht, Behinderung,
+- "grenze": nur wenn die \xC4u\xDFerung selbst einer Gruppe von Menschen (wegen Herkunft, Religion, Geschlecht, Behinderung,
   sexueller Orientierung o. \xC4.) die Menschenw\xFCrde oder gleiche Rechte abspricht, zu Gewalt aufruft oder
   Personen beleidigt (z. B. \u201EDie sind keine Menschen\u201C, \u201EDie geh\xF6ren alle aufgeh\xE4ngt\u201C). Dann "nachfrage": null,
   "rueckmeldung": null, "thema_id": null, "ursachen_ids": [], "zusammenfassung": "" und "stichwort": "".
   Gib die \xC4u\xDFerung nicht wieder und kommentiere sie nicht. Das gilt gleich, aus welcher Richtung sie kommt.
   Ma\xDFgeblich ist, was die \xC4u\xDFerung selbst sagt, nicht ein umstrittenes Wort darin: Wer sich gegen eine Abwertung
   oder f\xFCr die Rechte einer Gruppe ausspricht (z. B. \u201EIch bin gegen Remigration\u201C), \xE4u\xDFert eine Haltung, kein "grenze".
+  Wer berichtet, dass er selbst oder andere abgewertet, beleidigt oder angegriffen wurden, nennt ein "problem",
+  kein "grenze".
   Ein pauschales Urteil ohne Abwertung oder Gewalt ist KEIN "grenze"-Fall, sondern "forderung" mit
   "pauschal": true (siehe oben). Im Zweifel: "forderung" mit "pauschal": true.
   Eine Frage oder Sorge zu Kriminalit\xE4t und Herkunft ohne Abwertung (z. B. \u201EIch frage mich, warum so viele
