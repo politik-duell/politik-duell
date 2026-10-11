@@ -470,6 +470,9 @@ describe('Haltung → Wertfrage (Haltungskarte)', () => {
     expect(p).toContain('Passen zwei Fragen, nimm die, deren Gegenstand die Person nennt')
     // Sorge zu Kriminalität und Herkunft ohne Abwertung ist ein Problem.
     expect(p).toContain('Kriminalität und Herkunft ohne Abwertung')
+    expect(p).toContain('Wer berichtet, dass er selbst oder andere abgewertet, beleidigt oder angegriffen wurden')
+    expect(p).toContain('Problem nennt, ist nie "wert"')
+    expect(p).toContain('„Aussteigerprogramme fördern“ → Radikalisierung und Extremismus')
     // Auch fachlich formulierte Forderungen bekommen ein Thema.
     expect(p).toContain('Das gilt auch für fachlich oder allgemein formulierte Forderungen')
     expect(p).toContain('"thema_id" bei "problem" und "forderung"')

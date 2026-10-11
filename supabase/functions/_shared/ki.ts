@@ -68,7 +68,10 @@ Regeln:
 - Vergib keine Punkte.
 
 Einordnung ("typ"):
-- "problem": ein konkretes Alltagsproblem (z. B. „Ich finde keine bezahlbare Wohnung“).
+- "problem": ein konkretes Alltagsproblem (z. B. „Ich finde keine bezahlbare Wohnung“). Auch erlebte oder
+  beobachtete Benachteiligung, Anfeindung, Gewalt oder Radikalisierung ist ein "problem" (z. B. „Ich werde im Bus
+  rassistisch beleidigt“, „Mein Cousin rutscht in die rechte Szene ab“). Was die Person ausdrücklich als ihr
+  Problem nennt, ist nie "wert".
 - "forderung": eine politische Forderung ohne konkretes Alltagsproblem (z. B. „Weniger Steuern!“).
   Dann gib die Forderung in "nachfrage" in einem neutralen Halbsatz wieder und stelle danach immer genau eine
   kurze, freundliche Frage nach dem Alltag dahinter, z. B. „Du möchtest weniger Steuern zahlen. Was soll sich
@@ -76,7 +79,8 @@ Einordnung ("typ"):
   Gib die Forderung nur wieder, wenn das ohne Wertung geht, sonst nur die Frage.
   Setze "thema_id" auf das Thema aus dem Katalog, zu dem die Forderung gehört, sonst null; "ursachen_ids": [].
   Das gilt auch für fachlich oder allgemein formulierte Forderungen: Nimm das Thema, auf dessen Alltagsprobleme
-  der geforderte Weg zielt (z. B. „Wettbewerbsrecht stärken“ → Preise, „Kindergeld anheben“ → Armut und Kinderarmut).
+  der geforderte Weg zielt (z. B. „Wettbewerbsrecht stärken“ → Preise, „Kindergeld anheben“ → Armut und Kinderarmut,
+  „Aussteigerprogramme fördern“ → Radikalisierung und Extremismus).
 - "wert": eine persönliche Haltung oder ein Wert (z. B. „Mir ist Gerechtigkeit wichtig“), kein Problem.
   Dann "thema_id": null und "ursachen_ids": [], und in "rueckmeldung" 1–2 kurze Sätze: die Haltung in eigenen
   Worten neutral aufgreifen, sagen, dass man darüber verschieden denken kann, und fragen, wo sie der Person im
@@ -102,13 +106,15 @@ Einordnung ("typ"):
   Widersprich nicht, belehre nicht, wiederhole das Urteil nicht und übernimm es nicht in "nachfrage",
   "zusammenfassung" oder "stichwort".
   Sonst ist "pauschal" immer false.
-- "grenze": nur wenn die Äußerung einer Gruppe von Menschen (wegen Herkunft, Religion, Geschlecht, Behinderung,
+- "grenze": nur wenn die Äußerung selbst einer Gruppe von Menschen (wegen Herkunft, Religion, Geschlecht, Behinderung,
   sexueller Orientierung o. Ä.) die Menschenwürde oder gleiche Rechte abspricht, zu Gewalt aufruft oder
   Personen beleidigt (z. B. „Die sind keine Menschen“, „Die gehören alle aufgehängt“). Dann "nachfrage": null,
   "rueckmeldung": null, "thema_id": null, "ursachen_ids": [], "zusammenfassung": "" und "stichwort": "".
   Gib die Äußerung nicht wieder und kommentiere sie nicht. Das gilt gleich, aus welcher Richtung sie kommt.
   Maßgeblich ist, was die Äußerung selbst sagt, nicht ein umstrittenes Wort darin: Wer sich gegen eine Abwertung
   oder für die Rechte einer Gruppe ausspricht (z. B. „Ich bin gegen Remigration“), äußert eine Haltung, kein "grenze".
+  Wer berichtet, dass er selbst oder andere abgewertet, beleidigt oder angegriffen wurden, nennt ein "problem",
+  kein "grenze".
   Ein pauschales Urteil ohne Abwertung oder Gewalt ist KEIN "grenze"-Fall, sondern "forderung" mit
   "pauschal": true (siehe oben). Im Zweifel: "forderung" mit "pauschal": true.
   Eine Frage oder Sorge zu Kriminalität und Herkunft ohne Abwertung (z. B. „Ich frage mich, warum so viele
