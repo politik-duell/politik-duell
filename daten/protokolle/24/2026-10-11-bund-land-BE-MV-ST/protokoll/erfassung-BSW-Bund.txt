@@ -1,0 +1,126 @@
+{
+  "partei_id": 17,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Recht auf einen Ausbildungsplatz für jeden jungen Menschen garantieren",
+      "ursachen_ids": [2403],
+      "buendel": "Ausbildungsplätze schaffen und sichern",
+      "zitat": "Jedem jungen Menschen ist das Recht auf einen Ausbildungsplatz zu garantieren.",
+      "seite": 25
+    },
+    {
+      "beschreibung": "Bundesweites Praktikumskonzept für Kooperation von Betrieben und Schulen bei der Berufsorientierung",
+      "ursachen_ids": [2403],
+      "buendel": "Orientierung, Vermittlung und Mobilität",
+      "zitat": "Mit einem bundesweiten Praktikumskonzept sollen Unternehmen und Betriebe in enge Kooperation mit den Schulen kommen.",
+      "seite": 25
+    },
+    {
+      "beschreibung": "Berufsbildungspakt, um Berufsschulen zu modernisieren und besser auszustatten",
+      "ursachen_ids": [],
+      "ursachen_offen": [2403],
+      "zitat": "Wir brauchen einen Berufsbildungspakt, damit Berufsschulen modernisiert und besser ausgestattet werden.",
+      "seite": 25
+    },
+    {
+      "beschreibung": "Bund beteiligt sich an der Grundfinanzierung und dem Hochschulbau, um die Unterfinanzierung der Hochschulen zu beenden",
+      "ursachen_ids": [],
+      "ursachen_offen": [2401],
+      "buendel": "Perspektiven vor Ort schaffen und Rückkehr fördern",
+      "zitat": "Die chronische Unterfinanzierung von Hochschulen muss beendet werden. Zwingend notwendig ist eine Beteiligung des Bundes an der Grundfinanzierung von Hochschulen und mit Investitionsmitteln am Hochschulbau.",
+      "seite": 25
+    },
+    {
+      "beschreibung": "BAföG-Reform für eine auskömmliche Finanzierung des Studiums (Zitat nennt zusätzlich einen Hochschulsozialpakt)",
+      "ursachen_ids": [],
+      "ursachen_offen": [2401],
+      "zitat": "Eine BAföG-Reform zur auskömmlichen Finanzierung des Studiums und einen Hochschulsozialpakt für gute soziale Infrastruktur sind dringend nötig.",
+      "seite": 25
+    },
+    {
+      "beschreibung": "Kita-Beiträge stabil halten oder senken und mittelfristig beitragsfrei machen",
+      "ursachen_ids": [],
+      "ursachen_offen": [2402],
+      "buendel": "Familien und Geburten fördern",
+      "zitat": "Wir fordern Stabilität bzw. Senkung von Kita-Beiträgen und mittelfristig Beitragsfreiheit.",
+      "seite": 24
+    },
+    {
+      "beschreibung": "Unternehmen stärker in die Pflicht nehmen, Kita-Plätze bereitzustellen, mit steuerlichen Vorteilen als Ausgleich",
+      "ursachen_ids": [],
+      "ursachen_offen": [2402],
+      "zitat": "Unternehmen sollen stärker in die Pflicht genommen werden, wenn es um die Bereitstellung von Kita-Plätzen geht. Im Gegenzug soll es für diese Unternehmen steuerliche Vorteile geben.",
+      "seite": 32
+    },
+    {
+      "beschreibung": "Investitionsprogramm für kinder-, jugend- und familienfreundliche Infrastruktur",
+      "ursachen_ids": [],
+      "ursachen_offen": [2402],
+      "zitat": "Mit einem Investitionsprogramm „Kinder und Bildung“ wollen wir in eine kinder-, jugend- und familienfreundliche Infrastruktur investieren.",
+      "seite": 32
+    },
+    {
+      "beschreibung": "Kostenfreie, verlässliche Ferienbetreuung für Kinder anbieten",
+      "ursachen_ids": [],
+      "ursachen_offen": [2402],
+      "zitat": "Hier ist der Staat gefordert, verlässliche, kostenfreie und qualitativ wertvolle Ferienbetreuung anzubieten.",
+      "seite": 33
+    },
+    {
+      "beschreibung": "Kommunen die nötigen finanziellen Mittel bereitstellen, damit sie ihre Ausgaben selbst priorisieren können",
+      "ursachen_ids": [2404],
+      "buendel": "Kommunale Finanzen stärken",
+      "zitat": "Insbesondere die Kommunen leiden unter dem Sanierungsrückstau. […] Dafür sind den Kommunen die erforderlichen finanziellen Mittel bereitzustellen.",
+      "seite": 16
+    },
+    {
+      "beschreibung": "Attraktivität der Verwaltungen als Arbeitgeber über flexible Arbeitszeiten und schlanke Führung erhöhen",
+      "ursachen_ids": [],
+      "ursachen_offen": [2404],
+      "zitat": "Die Attraktivität der Verwaltungen als Arbeitgeber wollen wir durch flexible Arbeitszeitmodelle, kompetente und schlanke Führungsstrukturen sowie die frühzeitige Förderung von Leistungsträgern erhöhen.",
+      "seite": 16
+    },
+    {
+      "beschreibung": "Vereinfachtes Genehmigungsverfahren für sozialen Wohnungsbau und vereinfachtes serielles Bauen",
+      "ursachen_ids": [],
+      "ursachen_offen": [2404],
+      "buendel": "Verfahren und Verwaltung vereinfachen",
+      "zitat": "Notwendig ist auch die Beschleunigung von Bauvorhaben, etwa durch die Vereinfachung von seriellem Bauen und die Einführung eines vereinfachten Genehmigungsverfahrens für sozialen Wohnungsbau.",
+      "seite": 28
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 2403, "name": "Berufsschulen modernisieren", "seite": 25 },
+    { "ursache": 2401, "name": "Studienfinanzierung (BAföG)", "seite": 25 },
+    { "ursache": 2402, "name": "Betriebliche Kita-Plätze", "seite": 32 },
+    { "ursache": 2402, "name": "Investitionen in Kinder- und Familieninfrastruktur", "seite": 32 },
+    { "ursache": 2402, "name": "Kostenfreie Ferienbetreuung", "seite": 33 },
+    { "ursache": 2404, "name": "Personal in Verwaltungen gewinnen", "seite": 16 }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: S. 1–7 (Präambel, Frieden; Thema nicht berührt), S. 9 und 11 (Industrie und Energie; Fundstellen zu „Abwanderung“), S. 15–16 (Infrastruktur, Kommunen, Verwaltung), S. 21–22 (Ostdeutschland, Arbeitsmarkt), S. 24–26 (Kita, Schule, Ausbildung, Hochschulen), S. 27–28 (Gesundheit, Wohnen), S. 32–33 (Familie, Kinderbetreuung). S. 20 nach Auszug (Pflanzenschutz-Genehmigung, kein Bezug). Kein Inhaltsverzeichnis im PDF. S. 1 fast ohne Text (Titelseite).
+
+Nicht erfasst:
+- S. 9, 11: „Abwanderung wichtiger Industrien“ und Energiepolitik – Industrie, nicht Abwanderung junger Menschen; eigenes Thema.
+- S. 16: „Wir wollen gleichwertige Lebensverhältnisse auf dem Land und in der Stadt!“ – Ziel ohne Handlung.
+- S. 16: Infrastruktur-Garantie (ÖPNV, Hausärzte, Krankenhäuser, Einkauf, Freizeittreffs, Internet) – Zusage, aber eigene Themen (R2), kein Bezug zu Ursachen 2401–2404.
+- S. 21: Förderung Ostdeutscher und Stipendien für Talente aus Ostdeutschland – kein Bezug zu Region oder Abwanderung junger Menschen.
+- S. 24: Sportverein-Zuschuss – Sport, eigenes Thema.
+- S. 27: Geburtskliniken und Hebammen-Kreißsäle wohnortnah; Hausärzte – Gesundheitsversorgung, eigenes Thema, kein Geburtenbezug.
+- S. 28: „Bauvorschriften auf den Prüfstand“ – Prüfauftrag.
+- S. 32: Kinderfreibetrag und Kindergeld („sollte genauso hoch sein“) – Forderung mit „sollte“, Prüfcharakter, kein konkreter Ursachenbezug.
+- S. 22: „in erster Linie junge Menschen in Deutschland qualifizieren und ausbilden“ – gleiches Bündel wie Maßnahme 1 (weitere Stelle).
+- S. 27: „mehr Medizinstudienplätze und Ausbildungsplätze für Psychotherapeuten“ – gleiches Bündel wie Maßnahme 1 (weitere Stelle).
+- S. 25: „Berufsvorbereitung in der Sekundarstufe I … stärken“ – gleiches Bündel wie Maßnahme 2 (weitere Stelle).
+- S. 25: Unterstützung der Länder und Kommunen bei der Ausbildung von Lehrern und Erziehern – Fachkräfte im Bildungssystem, keine Ausbildungsplätze für junge Menschen.
+- S. 16: „Ein wichtiger Hebel wäre eine gerechte Altschuldenlösung für die Kommunen.“ – gleiches Bündel wie Maßnahme 10, bedingte Formulierung (weitere Stelle).
+- S. 25: Hochschulsozialpakt – im Zitat von Maßnahme 5 mitgenannt.
+- S. 20: Pflanzenschutzmittel-Genehmigungsverfahren – anderes Feld.
+
+Grenzfälle (offen): Maßnahme 3 (Berufsschulen, 2403), 4 und 5 (Hochschulen und BAföG, 2401), 6–9 (Kita und Betreuung, 2402: Familienpolitik mit Bezug zu Geburten), 11 (Verwaltungspersonal, 2404), 12 (Genehmigung im Wohnungsbau, 2404; Leitfaden nennt Planungskapazitäten, nicht Genehmigungen).
+Richtungen ohne Maßnahme: Bündel „Mobilität und Zuzug ermöglichen“ (2401; nur Verkehr allgemein und „sichere Pendleranbindung“ als „sollte“-Satz S. 14, kein Bezug zu jungen Menschen) und „Zuzug und Versorgung an Schrumpfung anpassen“ (2402; kein Fund). Gleiche Bündel-Suche im Text: keine weiteren Zusagen.
+Seiten ohne Text: S. 1.

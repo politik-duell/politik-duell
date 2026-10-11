@@ -1,0 +1,57 @@
+{
+  "partei_id": 15,
+  "land": "MV",
+  "massnahmen": [
+    { "beschreibung": "Rückgewinnungsprogramme für gut ausgebildete Leistungsträger, die das Land verlassen haben", "ursachen_ids": [2401], "buendel": "Perspektiven vor Ort schaffen und Rückkehr fördern", "zitat": "Viele gut ausgebildete Leistungsträger haben unser Land wegen zu hoher Steuern, überbordender Bürokratie und mangelnder Perspektiven verlassen. Mit gezielten Rückgewinnungsprogrammen wollen wir sie ansprechen und für Mecklenburg-Vorpommern zurückgewinnen.", "seite": 14 },
+    { "beschreibung": "Studiengang Rechtswissenschaft mit Staatsexamen an der Universität Rostock wieder einführen", "ursachen_ids": [2401], "neue_buendel": "Studienangebot an Hochschulstandorten schaffen", "zitat": "Wiedereinführung des juristischen Staatsexamens an der Universität Rostock. […] Der bestehende und sich noch verschärfende Mangel muss dringend behoben und die hierfür erforderlichen politischen Entscheidungen getroffen werden.", "seite": 35 },
+    { "beschreibung": "Schwellenwerte für freihändige und vereinfachte Auftragsvergabe deutlich erhöhen", "ursachen_ids": [2404], "buendel": "Verfahren und Verwaltung vereinfachen", "zitat": "Die Schwellenwerte für die freihändige und vereinfachte Auftragsvergabe werden wir deutlich erhöhen, damit der Mittelstand wieder eine echte Chance auf öffentliche Aufträge bekommt.", "seite": 13 },
+    { "beschreibung": "Finanzmittel für Kommunen vorrangig über den allgemeinen kommunalen Finanzausgleich bereitstellen", "ursachen_ids": [2404], "buendel": "Kommunale Finanzen stärken", "zitat": "Deshalb stellen wir Finanzmittel vorrangig über den allgemeinen kommunalen Finanzausgleich, insbesondere die Infrastrukturpauschale, bereit.", "seite": 57 },
+    { "beschreibung": "Unterstützungsnetzwerk für Schwangere in Not ausbauen, mit Hilfen in und nach der Schwangerschaft", "ursachen_ids": [2402], "neue_buendel": "Beratungs- und Hilfsangebote ausbauen", "zitat": "Stattdessen wollen wir das Unterstützungsnetzwerk für Schwangere in Not gezielt ausbauen. Dazu gehören umfangreiche Hilfen in Schwangerschaft und nach der Geburt, besonders in schwierigen Lebenslagen", "seite": 21 },
+    { "beschreibung": "Baby-Begrüßungsgeld von 3.000 Euro, in drei Raten ausgezahlt", "ursachen_ids": [2402], "buendel": "Familien und Geburten fördern", "zitat": "Wir werden ein Baby-Begrüßungsgeld in Höhe von 3.000 Euro einführen. Damit erleichtern wir jungen Menschen die Entscheidung für den Schritt ins Elternsein.", "seite": 19 },
+    { "beschreibung": "Familiensplitting auf Bundesebene: Familieneinkommen zusammenzählen und auf alle Familienmitglieder aufteilen", "ursachen_ids": [2402], "neue_buendel": "Steuerliche Entlastung von Familien", "zitat": "Wir setzen uns auf Bundesebene für das Familiensplitting ein. Das Familieneinkommen wird dabei zusammengezählt und anschließend auf alle Familienmitglieder aufgeteilt – nicht nur auf die Eheleute.", "seite": 22 },
+    { "beschreibung": "Betreuungsschlüssel in Krippe, Kindergarten und Hort deutlich verbessern", "ursachen_offen": [2402], "ursachen_ids": [], "zitat": "Wir werden daher […] die deutliche Verbesserung der Betreuungsquote auf 1:4 in der Krippe, 1:10 im Kindergarten und 1:17 im Hort durchsetzen.", "seite": 19 },
+    { "beschreibung": "Grunderwerbsteuer für die erste selbstgenutzte Immobilie abschaffen, mit Begründung der Familienstärkung", "ursachen_offen": [2402], "ursachen_ids": [], "zitat": "Wir wollen unsere Familien stärken und deshalb die Grunderwerbsteuer für die erste selbstgenutzte Immobilie vollständig abschaffen.", "seite": 55 }
+  ],
+  "neue_buendel": [
+    { "ursache": 2401, "name": "Studienangebot an Hochschulstandorten schaffen", "seite": 35 },
+    { "ursache": 2402, "name": "Beratungs- und Hilfsangebote ausbauen", "seite": 21 },
+    { "ursache": 2402, "name": "Steuerliche Entlastung von Familien", "seite": 22 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "rückgewinn", "ursache": 2401, "richtung": "Rückkehr fördern" },
+    { "begriff": "schwellenwert", "ursache": 2404, "richtung": "Verfahren vereinfachen" }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 2401, "seiten": [14, 31, 34, 35, 50, 52], "grund": "Fachkräfteeinwanderung nur als Möglichkeit („kann … sein“), Azubi- und Schülerticket sowie Bus und Bahn gehören nach R2 zu eigenem Thema, Rückkehr-Anreize (S. 50–52) betreffen Ausreise und Herkunftsländer, nicht junge Menschen aus der Region; Studiengebühren für Nicht-EU-Studierende (S. 35) und Hochschul-Grundfinanzierung ohne Standortwirkung auf junge Menschen aus der Region." },
+    { "ursache": 2402, "seiten": [14, 18, 20, 21, 52], "grund": "Fachkräfteeinwanderung als Zuzug nur Möglichkeit; Beratungsangebote für Familien (S. 18) gleichartig zum Hilfsnetzwerk (S. 21), dort erfasst; Mehrgenerationen-Konzepte und Arbeitgeber-Telearbeit nur als Sollensaussage; Familienverträglichkeitsprüfung (S. 21) ist Gesetzesprüfung ohne Geburtenbezug." },
+    { "ursache": 2404, "seiten": [56, 83, 86, 87], "grund": "Gleichartig zur Vergabe-Zusage (Hebel Verfahren vereinfachen): Konnexität (S. 57, Kostenausgleich), Glasfaser-Genehmigungen mit ländlichen Räumen (S. 87), Geothermie-Genehmigungen (S. 86), UVP-Verschärfung bei Windkraft (S. 83, Gegenrichtung), Behördengänge online (S. 87); Nicht-Nachbesetzung und Aufgabenkritik nur Landesverwaltung ohne kommunalen Bezug (S. 56)." }
+  ]
+}
+
+Protokoll (Teilauftrag Thema 24 „Abwanderung aus strukturschwachen Regionen“, AfD MV):
+
+Gelesen: Inhaltsverzeichnis S. 1–9; Kapitel „Wirtschaft und Förderung“ S. 12–15 (Vergabe S. 13, Fachkräfte und Zuwanderung S. 13–14); „Familienland MV“ S. 16–22 (vollständig); „Bildungsland MV“ Ausbildung, Berufsschulen, Hochschulen S. 31–35; Migrations-Rückkehr S. 50–52 (Auszüge); „Starke Kommunen“ und Haushalt S. 55–57; Digitalisierung S. 87; Stichwort-Fundstellen S. 5, 71, 77, 83, 86.
+
+Gleichartige Stellen, nicht gesondert erfasst (ein Eintrag je Bündel bzw. Hebel):
+- S. 34 Berufsschulstandorte: Mindestschülerzahlen senken, um Berufsschulstandorte im Osten zu erhöhen – gleichartig zum Studienangebot (Standortangebot), dort erfasst, weil konkreter.
+- S. 18 Beratungs- und Unterstützungsangebote für Familien in Krisen „ausreichend ausstatten“ – gleichartig zum Hilfsnetzwerk (S. 21), dort erfasst.
+- S. 57 Konnexität („gleicht die entstehenden Kosten vollständig aus“) – gleichartig zum Finanzausgleich (Finanzierung Kommunen).
+- S. 86 Geothermie-Genehmigungen entbürokratisieren und kommunale Träger unterstützen; S. 87 Glasfaser-Genehmigungen vereinfachen, ländliche Räume priorisieren; S. 87 Behördengänge online – alle Hebel „Verfahren vereinfachen“, dort Vergabe-Schwellenwerte (S. 13) als konkretere Zusage erfasst.
+- S. 83 UVP für Windkraft verschärfen – gleicher Hebel, Gegenrichtung.
+- S. 20 Kindertagespflege „stärker unterstützen“ – Teil der Kita-Zusage (offen 2402).
+
+Grenzfälle (in ursachen_offen): S. 19 Betreuungsschlüssel (Ursache 2402 nur über Familien-/Geburtenbezug im Text); S. 55 Grunderwerbsteuer (Eigentum, Familienbegründung).
+
+Nicht erfasst, Gründe:
+- S. 13–14 „Fachkräfteeinwanderung kann … ein sinnvolles Instrument sein“ – Möglichkeit.
+- S. 19 „Länder und Kommunen sollen Mehrgenerationen-Konzepte stärken“; S. 19 Arbeitgeber „sollen“ – Sollen ohne konkrete Handlung des Landes.
+- S. 21 Familienverträglichkeitsprüfung – Gesetzesprüfung, kein Hebel auf Geburten oder Abwanderung.
+- S. 31 Schülerticket, S. 34 Azubi-Ticket – Bus und Bahn gehören nach R2 zu eigenem Thema.
+- S. 35 Studiengebühren Nicht-EU – Ausländerpolitik, keine Wirkung auf junge Menschen aus der Region.
+- S. 50–52 Rückkehr-Anreize („befriedete Regionen“, Ausreiseeinrichtungen, Syrien) – Migration; „sollte“.
+- S. 56 Aufgabenkritik und Nicht-Nachbesetzung in der Landesverwaltung – kein kommunaler Bezug.
+- S. 15 Leitbranchen „schaffen Arbeitsplätze im ländlichen Raum“ – Wirtschaft, eigenes Thema (R2).
+
+Bündel ohne Maßnahme: „Zuzug und Versorgung an Schrumpfung anpassen“ (2402) – Suche nach Schrumpfung, Daseinsvorsorge, Versorgung im Text ohne konkrete Zusage zu Zuzug oder Versorgung in schrumpfenden Regionen; Daseinsvorsorge nur als Verwaltungsaufgabe (S. 56) und Krankenhaus-/Schulthemen (eigene Themen). Die Auftragsbündel für 2401 „Mobilität und Zuzug ermöglichen“ und 2404 „Kommunale Finanzen stärken“ sind über die Zusagen oben belegt bzw. wie in der Liste beschrieben.
+
+Seiten ohne Text: S. 1 (Titelseite), keine Rolle gespielt.

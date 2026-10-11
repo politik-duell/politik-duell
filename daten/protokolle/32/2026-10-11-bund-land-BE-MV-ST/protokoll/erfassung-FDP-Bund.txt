@@ -1,0 +1,38 @@
+{
+  "partei_id": 14,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Überzogene Bau-Auflagen abbauen und Mindeststandards bei Brand- und Gesundheitsschutz reduzieren",
+      "ursachen_ids": [],
+      "ursachen_offen": [3204],
+      "buendel": "Gebäude für Veranstaltungen anpassen",
+      "zitat": "Wir werden überzogene Bau-Auflagen abbauen und auf sinnvolle Mindeststandards bei Gebäudeenergie, Brand- und Gesundheitsschutz sowie Statik reduzieren.",
+      "seite": 44
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 3201,
+      "seiten": [11, 43, 44, 45],
+      "grund": "Kulturkapitel ohne Flächen- oder Mietschutz für Kulturorte, Clubs oder Hausprojekte. Bauflächen, Nachverdichtung und Wohnungsmieten (S. 43–45) betreffen Wohnungsbau und gehören nach dem Leitfaden nicht zu 3201."
+    },
+    {
+      "ursache": 3202,
+      "seiten": [13, 26, 44],
+      "grund": "Keine Zusage zu Schall, Lärmschutz oder Veranstaltungsgenehmigungen. Genehmigungsfiktion (S. 13, 44) gilt allgemein für Verfahren, nicht für Veranstaltungen; die Regel zu öffentlichen Räumen (S. 26) betrifft extremistische Veranstaltungen."
+    },
+    {
+      "ursache": 3203,
+      "seiten": [11],
+      "grund": "Nur allgemeine Kultur- und Kreativwirtschaftsförderung (Rahmen und Ziel, R2 ausgeschlossen); keine Förderung von Clubs, Spielstätten oder Kulturorten."
+    }
+  ]
+}
+
+Protokoll:
+- Gelesen: Inhaltsverzeichnis (S. 1–6), Kapitel „e. Vielfältige Kunst und Kultur“ (S. 11), Kapitel „c. Mehr Bauen und besseres Wohnen“ (S. 43–45) und die Fundstellen S. 31 und 46 (Falsch-Treffer: „Umbau“ bei altersgerechtem Wohnen und „Waldumbau“, ohne Bezug zu Kulturorten). Fundstelle S. 26 (öffentliche Räumlichkeiten) und S. 13 (Genehmigungsfiktion) gelesen.
+- Ursache 3204 als Grenzfall in ursachen_offen: Die Zusage zu Bau-Auflagen und Brandschutz steht im Wohnungsbau-Kontext und nennt keine Veranstaltungsstätten. Weitere gleichartige Stelle zum Bündel: Gebäudetyp E / Erleichterungen im Bauordnungsrecht (S. 44), nicht zusätzlich erfasst.
+- Nicht erfasst: Gebäudetyp E (S. 44), Bauflächen (S. 44), Genehmigungsfiktion (S. 13, 44) – siehe nicht_erfasst.
+- Richtungen ohne Maßnahme: 3201 (Flächen schützen, Umnutzung ermöglichen), 3202 (Schallschutz, Emissionen begrenzen), 3203 (Förderung, Eigenmittel und Kooperationen).
+- Seiten ohne Text: 1 und 2 (Titel und Vorwort), ohne Bedeutung für das Thema.

@@ -1,0 +1,97 @@
+{
+  "partei_id": 11,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Kindergeld anheben und künftig automatisch nach der Geburt auszahlen",
+      "ursachen_ids": [2402],
+      "buendel": "Familien und Geburten fördern",
+      "zitat": "Entsprechend heben wir auch das Kindergeld an, das künftig nach der Geburt automatisch ausgezahlt werden soll.",
+      "seite": 63
+    },
+    {
+      "beschreibung": "Zuzug von nach 1993 geborenen Angehörigen von Spätaussiedlern ermöglichen",
+      "ursachen_ids": [2402],
+      "buendel": "Zuzug und Versorgung an Schrumpfung anpassen",
+      "zitat": "Wir ermöglichen den Zuzug der nach dem 1. Januar 1993 geborenen Angehörigen.",
+      "seite": 60
+    },
+    {
+      "beschreibung": "Digitale Bundesagentur für Einwanderung von Fachkräften einrichten",
+      "ursachen_ids": [],
+      "ursachen_offen": [2402],
+      "neue_buendel": [{ "ursache": 2402, "name": "Erwerbszuwanderung digital erleichtern", "seite": 15 }],
+      "zitat": "Dazu richten wir eine digitale Bundesagentur für Einwanderung („Work-and-Stay-Agentur“) ein.",
+      "seite": 15
+    },
+    {
+      "beschreibung": "Hochschulen und Forschungseinrichtungen in allen Regionen stärken",
+      "ursachen_ids": [],
+      "ursachen_offen": [2401],
+      "zitat": "Wir stärken Hochschulen und Forschungseinrichtungen, Startups und junge Technologieunternehmen in allen Regionen, damit Ausgründungen und der Transfer hin zu marktfähigen Lösungen besser gelingen.",
+      "seite": 27
+    },
+    {
+      "beschreibung": "Berufsorientierung in allen Schulformen mit bestehenden Maßnahmen abstimmen",
+      "ursachen_ids": [2403],
+      "buendel": "Orientierung, Vermittlung und Mobilität",
+      "zitat": "Zusammen mit den Akteuren, die sich bundesweit und regional in der Berufsorientierung engagieren, wollen wir sämtliche bestehenden Maßnahmen aufeinander abstimmen.",
+      "seite": 67
+    },
+    {
+      "beschreibung": "Allianz für Aus- und Weiterbildung fortführen",
+      "ursachen_ids": [2403],
+      "buendel": "Ausbildungsplätze schaffen und sichern",
+      "zitat": "Die Allianz für Aus- und Weiterbildung führen wir fort.",
+      "seite": 66
+    },
+    {
+      "beschreibung": "Planungs- und Baugenehmigungsverfahren digitalisieren und beschleunigen",
+      "ursachen_ids": [2404],
+      "buendel": "Verfahren und Verwaltung vereinfachen",
+      "zitat": "Planungs- und Nebenkosten senken wir durch Digitalisierung und Beschleunigung von Bauleit- und Baugenehmigungsverfahren.",
+      "seite": 73
+    },
+    {
+      "beschreibung": "Grundsatz der Konnexität: Wer eine Leistung veranlasst, zahlt die Finanzierung",
+      "ursachen_ids": [2404],
+      "buendel": "Kommunale Finanzen stärken",
+      "zitat": "Wir orientieren uns am Grundsatz der Konnexität. Für uns ist klar: Wer eine Leistung veranlasst oder ausweitet, muss für ihre Finanzierung aufkommen.",
+      "seite": 76
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 2402,
+      "seiten": [69, 70, 71],
+      "grund": "Pflege- und Gesundheitsreform, Geburtshilfe und Alterung als Versorgungsfrage (Gesundheit und Pflege sind eigene Themen, R2). Keine Maßnahme gegen Geburtenrückgang oder Alterung in der Region."
+    }
+  ]
+}
+
+---
+
+Protokoll
+
+Gelesen: Inhaltsverzeichnis (S. 1–6); Kapitel „Ja zu Familie und Verantwortung“ (S. 62–64), „Ja zu Aufstieg durch Bildung“ (S. 65–68), „Ja zu einer starken Wirtschaft“ mit Fachkräften und Gründungen (S. 15, 27–28), „Ja zu einem funktionierenden Staat“ mit Kommunen (S. 75–78), Migration (S. 42–44); Fundstellen S. 6, 60, 67, 69, 73.
+
+Gleichartige Stellen (je Bündel nur eine Maßnahme, nach Schritt 7 nur in der Auswahl genannt):
+- Bündel „Familien und Geburten fördern“: „Wir verbessern das Elterngeld.“ (S. 62); Kinderfreibetrag in Richtung Grundfreibetrag, steuerlicher Entlastungsbetrag für Alleinerziehende (S. 63); Kindergeld für im EU-Ausland lebende Kinder anpassbar (S. 63).
+- Bündel „Zuzug und Versorgung an Schrumpfung anpassen“ (Zuzugsregeln, andere Richtung): „Wir setzen einen faktischen Aufnahmestopp sofort durch. Dazu weisen wir diejenigen an den deutschen Grenzen zurück […]“ (S. 42–43); „Wir setzen den Familiennachzug zu subsidiär Schutzberechtigten aus“ (S. 43). Die konkretere Stelle mit Frist (S. 60) ist erfasst.
+- Bündel „Verfahren und Verwaltung vereinfachen“: „Wir machen die kommunal relevanten Förderprogramme des Bundes einfacher in der Abwicklung […]“ (S. 77); „Projekte der kommunalen Daseinsvorsorge […] Die Prozesse müssen schneller, die Rechtswege kürzer werden.“ (S. 76).
+- Bündel „Orientierung, Vermittlung und Mobilität“: „Innovative Konzepte für Schulabgänger […] wie das Freiwillige Handwerksjahr, müssen sich mehr herumsprechen.“ (S. 67).
+
+Nicht erfasst:
+- S. 6, 15: Migration und Fachkräfte als allgemeine Lage und Ziel („Der Zuzug ist zu viel …“); Fachkräfteoffensive als Lagebeschreibung (S. 15).
+- S. 66: „Wir unterstützen die Entwicklung der Berufsschulen.“ und duale Ausbildung als Ziel, kein konkreter Ausbildungsplatz-Hebel; keine Verbindung zu Abwanderung.
+- S. 63: Kinderbetreuung und Kita-Ausbau (Infrastruktur, Vereinbarkeit), ohne Bezug zu Geburten oder Abwanderung.
+- S. 77: „Gemeinschaftsaufgabe Verbesserung der Regionalen Wirtschaftsstruktur“ und Tourismus (Wirtschaft, eigenes Thema nach R2; keiner Ursache zugeordnet).
+- S. 76: „Wir stärken Städte, Gemeinden und Landkreise … brauchen die Kommunen auch dauerhaft sichere Einnahmequellen.“ und „Ausgabendynamik […] Lösungen finden“: Lage bzw. Ziel, keine konkrete Zusage.
+- S. 76: „Stadt- und Dorfentwicklung“ als Ziel „gleichwertige Lebensverhältnisse“.
+- S. 76: Transparenz bei Mischfinanzierungen (keine Finanzkraft der Kommunen).
+- S. 27–28: Gründung, Gründerschutzzone, Forschungsförderung (Wirtschaft, eigene Themen).
+- S. 65–66: Schul- und Bildungsmaßnahmen ohne Bezug zu Ausbildungsangebot oder Abwanderung.
+
+Richtungen ohne Maßnahme: Bündel „Ausbildungsplätze schaffen und sichern“ hat eine Maßnahme (Allianz); „Ausbildungsplatzgarantie“, „Ausbildungsumlage“, „Ausbildungsförderung“ und „Wohnheim für Auszubildende“ im Text nicht gefunden. Bündel „Mobilität und Zuzug ermöglichen“ (2401), „Perspektiven vor Ort schaffen und Rückkehr fördern“ (2401): keine Rückkehrförderung, keine Maßnahme für junge Menschen (Auszubildende, Mobilität) gefunden. Bündel „Zuzug und Versorgung an Schrumpfung anpassen“ (2402) mit Spätaussiedler-Zuzug belegt.
+
+Seiten ohne Text: 1 und 82, für dieses Thema ohne Bedeutung.

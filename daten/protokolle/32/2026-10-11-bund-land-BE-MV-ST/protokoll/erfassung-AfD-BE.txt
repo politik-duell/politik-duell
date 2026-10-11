@@ -1,0 +1,67 @@
+{
+  "partei_id": 15,
+  "land": "BE",
+  "massnahmen": [
+    {
+      "beschreibung": "Kulturarbeit in Außenbezirken verbessern; zentraler Aspekt ist die Bereitstellung von Räumlichkeiten",
+      "ursachen_ids": [],
+      "ursachen_offen": [3201],
+      "buendel": "Zusätzliche Flächen und Umnutzung ermöglichen",
+      "zitat": "Insbesondere wollen wir die Kulturarbeit in den Außenbezirken verbessern. Ein zentraler Aspekt ist dabei die Bereitstellung von Räumlichkeiten.",
+      "seite": 89
+    },
+    {
+      "beschreibung": "Musikschulgesetz, das unter anderem die Raumsituation der Musikschulen verbessern soll",
+      "ursachen_ids": [],
+      "ursachen_offen": [3201, 3203],
+      "zitat": "Zur Konkretisierung des festgelegten Angebotsumfangs der Musikschulen werden wir ein Musikschulgesetz verabschieden und damit die Rahmenbedingungen für den Musikschulunterricht, vor allem im Hinblick auf die Raumsituation, verbessern.",
+      "seite": 89
+    },
+    {
+      "beschreibung": "Private Mäzene und Spenden zur Finanzierung bedeutender Kulturbauprojekte einsetzen",
+      "ursachen_ids": [],
+      "ursachen_offen": [3203],
+      "buendel": "Eigenmittel und Kooperationen",
+      "zitat": "Zur Umsetzung bedeutender Kulturbauprojekte setzen wir auf innovative Finanzierungs- und Beteiligungsmodelle: privates Mäzenatentum und gezielt eingesetzte Spendengelder zur Wiederherstellung historischer Objekte und Kulturgüter.",
+      "seite": 88
+    },
+    {
+      "beschreibung": "Einführung eines Veranstaltungssicherheitsgesetzes (zusammen mit einem Vermummungsverbot auf Demonstrationen)",
+      "ursachen_ids": [],
+      "ursachen_offen": [3202],
+      "zitat": "Die Einführung eines generellen Vermummungsverbots auf Demonstrationen und die Schaffung eines Veranstaltungssicherheitsgesetzes.",
+      "seite": 17
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 3203, "name": "Gesetzliche Rahmenbedingungen", "seite": 89 },
+    { "ursache": 3202, "name": "Veranstaltungssicherheit", "seite": 17 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3204, "seiten": [9, 44, 48, 88, 89], "grund": "Keine Zusage zu Umbau, Sanierung oder Brandschutz von Gebäuden für Veranstaltungen. S. 44 betrifft das Mobilitätsgesetz (Verkehr), S. 9 die Bauordnung allgemein, S. 88 Stadtbild und Wiederherstellung historischer Objekte, S. 89 Musikschulen ohne Umbau." }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "räumlichkeiten", "ursache": 3201, "richtung": "Bereitstellung von Räumen für Kulturarbeit" }
+  ]
+}
+
+Protokoll (Thema 32, Räume für Kultur und Clubs; AfD Berlin):
+
+Gelesen: Inhaltsverzeichnis (S. 3); Vorwort (S. 2); Kapitel 14 „Kunst, Kultur, Medien und Erinnerungspolitik“ vollständig (S. 85–92); Kapitel 1 „Bauen & Wohnen“ (S. 5–7, 9–10 in Ausschnitten, Stichwortsuche); Kapitel 2 Innere Sicherheit (Fundstelle S. 17); Kapitel 5 Hochschulen (Fundstelle S. 35); Kapitel 6 Verkehr (Fundstelle S. 44); Kapitel 7 Wirtschaft & Soziales (S. 47–48, Ausschnitt). Übrige Kapitel nur über Stichwortsuche gesichtet.
+
+Erfasst, Grenzfälle: Breitenkultur-Räume (S. 89) und Musikschulgesetz (S. 89) offen, da die Zuordnung zu 3201 bzw. 3203 nicht eindeutig ist. Mäzenatentum und Spenden für Kulturbauprojekte (S. 88) offen bei 3203; die Zusage betrifft Stadtbild und Kulturbauten, nicht den laufenden Betrieb von Kulturorten. Veranstaltungssicherheitsgesetz (S. 17) steht im Kontext Demonstrationen und Extremismus; als Auflage für Veranstaltungen nach Leitfaden R1 offen bei 3202.
+
+Nicht erfasst:
+- S. 6–7 „Milieuschutz begrenzen“: Wohnviertel und Wohnbevölkerung, keine Kultur- oder Clubnutzung.
+- S. 9 Bauordnung entschlacken, Baugenehmigungen beschleunigen: allgemein, nicht auf Veranstaltungsstätten bezogen.
+- S. 35 Hochschulgesetz, Räumung von Hausbesetzungen: Hochschulen, keine Kulturorte.
+- S. 44 Mobilitätsgesetz: Verkehr.
+- S. 48 Gewerbeflächenkataster, gewerbliche Nutzung priorisieren: allgemeine Gewerbeflächen, nicht Kulturorte oder Clubs.
+- S. 48 Abbau von Umwelt- und Bürokratieauflagen für Gastronomie: nicht auf Veranstaltungen oder Clubs bezogen.
+- S. 86, 90 Kulturförderung allgemein (Verfassungstreue-Klausel, Leitlinien der Förderung, Gesinnung bei Bewilligung): allgemeine Kulturförderung ohne Bezug zu Clubs, Spielstätten, soziokulturellen Zentren oder selbstverwalteten Kulturorten (R2).
+- S. 89 Festanstellungsquote und Übernahme von Honorarkräften an Musikschulen: Personal, keine Ursache des Themas.
+- S. 90 Kunstmesse, Rundfunk, KI in Kunst: nicht Räume für Kultur und Clubs.
+
+Richtungen ohne Maßnahme: Bündel „Flächen für Kultur schützen“ (3201): keine Zusage zum Schutz von Kulturflächen oder Clubs gefunden; Milieuschutz wird eher begrenzt (S. 6–7). Bündel „Schallschutz und angepasste Genehmigungen“ und „Emissionen begrenzen und Anwohner schützen“ (3202): nichts zu Schall, Lärm, Nachtruhe oder Anwohnerschutz bei Veranstaltungen. Bündel „Verlässliche Förderung für Kulturorte“ (3203): nur allgemeine Kulturförderung (R2) und Breitenkultur-Räume, die oben erfasst sind. Bündel „Gebäude für Veranstaltungen anpassen“ und „Nutzung an das Gebäude anpassen“ (3204): nichts.
+
+Seiten ohne Text: 4, 20, 33 u. a. sind Trennseiten; sie liegen nicht im Kapitel Kultur und spielten keine Rolle.

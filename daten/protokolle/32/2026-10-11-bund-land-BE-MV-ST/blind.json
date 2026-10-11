@@ -1,0 +1,1156 @@
+{
+  "pruefsumme": "aae47ed90842aa0ea3bdc95e5848b15bec27a7c1257145d237db68b398674816",
+  "thema": {
+    "id": 32,
+    "name": "Räume für Kultur und Clubs",
+    "ziel": "Kulturschaffende und Besucherinnen und Besucher finden dauerhaft nutzbare, bezahlbare Orte für vielfältige Musik, Kultur und Clubleben."
+  },
+  "ursachen": [
+    {
+      "id": 3201,
+      "beschreibung": "Steigende Mieten und rentablere konkurrierende Nutzungen verdrängen kleine Spielstätten und Clubs, die mit kleinen Budgets arbeiten (europäische Studie, veröffentlicht 2020)",
+      "ebene": "land"
+    },
+    {
+      "id": 3202,
+      "beschreibung": "Schall aus Konzerten und Veranstaltungen führt zu Konflikten mit Anwohnenden, besonders bei Freiluftangeboten oder schlechter Schalldämmung (europäische Studie, 2020)",
+      "ebene": "land"
+    },
+    {
+      "id": 3203,
+      "beschreibung": "Kulturorte, die Nachwuchs fördern oder Gemeinwesenarbeit leisten, arbeiten häufig mit kleinen Budgets (europäische Studie, veröffentlicht 2020)",
+      "ebene": "land"
+    },
+    {
+      "id": 3204,
+      "beschreibung": "Umgenutzte Gebäude sind normalerweise nicht auf Akustik und Publikumsbetrieb von Musikveranstaltungen ausgelegt (europäische Studie, veröffentlicht 2020)",
+      "ebene": "land"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        3201,
+        3202,
+        3203,
+        3204
+      ],
+      "text": "Zu 3201 gehören Gewerbemieten und Flächenschutz für Kulturorte, Clubs und Hausprojekte mit Kulturnutzung, zu 3202 Schall, Lärmschutz, Auflagen und Genehmigung von Veranstaltungen, zu 3203 Förderung und Betriebskosten von Kulturorten, zu 3204 Umbau, Sanierung und Brandschutz von Gebäuden für Veranstaltungen. Wohnungsmieten und Wohnungsbau gehören zu Miete."
+    },
+    {
+      "nr": 2,
+      "text": "Allgemeine Kulturförderung (Theater, Museen, Orchester) ohne Bezug zu Clubs, Spielstätten, soziokulturellen Zentren oder selbstverwalteten Kulturorten ist keine Maßnahme dieses Themas. Jugendtreffs gehören zu Freizeitangebote und Treffpunkte für Jugendliche."
+    }
+  ],
+  "instrumente": [],
+  "massnahmen": [
+    {
+      "kennung": "M001",
+      "ebene": "bund",
+      "beschreibung": "Kulturförderung zur Pflichtaufgabe machen und Länder und Kommunen so ausstatten, dass sie gemeinnützige Kultur- und Veranstaltungsstätten verlässlich unterstützen können",
+      "zitat": "Kunst und Kultur müssen als Teil der Daseinsvorsorge öffentlich gefördert werden. Kulturförderung sollte Pflichtaufgabe werden. Länder und Kommunen müssen finanziell so ausgestattet werden, dass sie Kulturförderung betreiben können. Gemeinnützige Kultur- und Veranstaltungsstätten und Menschen, die ehrenamtlich kulturelle Angebote schaffen, brauchen verlässliche und unbürokratische Unterstützung.",
+      "ursachen_ids": [
+        3203
+      ],
+      "pruefsumme": "e5e4cb4d2b79ded6"
+    },
+    {
+      "kennung": "M002",
+      "ebene": "land",
+      "beschreibung": "Leerstehende Ladenflächen für Kultur- und andere Angebote zwischennutzen und dafür Genehmigungen vereinfachen.",
+      "zitat": "Leerstehende Shoppingcenter und Ladenzeilen beleben wir neu und ermöglichen dort Jugend-, Kultur-, Spiel-, Sport- und soziale Angebote. Zwischennutzungen fördern wir gezielt und vereinfachen Genehmigungen.",
+      "ursachen_ids": [
+        3201
+      ],
+      "pruefsumme": "fdb89a5ff54a025e"
+    },
+    {
+      "kennung": "M003",
+      "ebene": "land",
+      "beschreibung": "Kulturorte vor Verdrängung schützen und einen baurechtlichen Bestandsschutz für Kulturorte einführen.",
+      "zitat": "Kulturorte vor Verdrängung schützen und einen baurechtlichen Bestandsschutz für Kulturorte einführen.",
+      "ursachen_ids": [
+        3201
+      ],
+      "pruefsumme": "21c1e4d45f38ec73"
+    },
+    {
+      "kennung": "M004",
+      "ebene": "bund",
+      "beschreibung": "Genehmigungen und Auflagen für öffentliche Veranstaltungen vereinfachen",
+      "zitat": "Genehmigungen und Auflagen für öffentliche Veranstaltungen machen wir einfacher.",
+      "ursachen_ids": [
+        3202
+      ],
+      "pruefsumme": "9d24a05aa1197714"
+    },
+    {
+      "kennung": "M005",
+      "ebene": "land",
+      "beschreibung": "Clubs als Kulturorte anerkennen und schützen",
+      "zitat": "Clubs werden als Kulturorte anerkannt und geschützt.",
+      "ursachen_ids": [
+        3201
+      ],
+      "ursachen_offen": [
+        3202
+      ],
+      "pruefsumme": "3a38d6a1e4df40cf"
+    },
+    {
+      "kennung": "M006",
+      "ebene": "land",
+      "beschreibung": "Notfallfonds für akut bedrohte Orte der Clubkultur einrichten",
+      "zitat": "Wir stärken die Vernetzung […] und wollen für akut bedrohte Orte der Clubkultur einen Notfallfonds einrichten.",
+      "ursachen_ids": [
+        3203
+      ],
+      "pruefsumme": "a7746e1f20ec5d22"
+    },
+    {
+      "kennung": "M007",
+      "ebene": "bund",
+      "beschreibung": "Bei Bestandsbauten soll immer das Baurecht aus dem Erstellungszeitraum gelten.",
+      "zitat": "Zum Schutz von Eigentum und Bestand vor veränderten Bauvorschriften muss immer das Baurecht aus dem Erstellungszeitraum anwendbar bleiben.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3201,
+        3204
+      ],
+      "pruefsumme": "153bf08d9c235174"
+    },
+    {
+      "kennung": "M008",
+      "ebene": "bund",
+      "beschreibung": "Baurecht ändern, um Rahmenbedingungen für Clubs und Livemusikstätten zu verbessern",
+      "zitat": "Wir wollen die Rahmenbedingungen für Kulturorte, besonders für Clubs- und Livemusikstätten und vor allem in Innenstädten, durch Änderungen beim Lärmschutz, im Baurecht sowie im Gewerbemietrecht verbessern. Die Förderung von Schallschutzmaßnahmen bauen wir aus.",
+      "ursachen_ids": [
+        3201
+      ],
+      "ursachen_offen": [
+        3202
+      ],
+      "pruefsumme": "db6ba5b3e7766e1e"
+    },
+    {
+      "kennung": "M009",
+      "ebene": "land",
+      "beschreibung": "Private Mäzene und Spenden zur Finanzierung bedeutender Kulturbauprojekte einsetzen",
+      "zitat": "Zur Umsetzung bedeutender Kulturbauprojekte setzen wir auf innovative Finanzierungs- und Beteiligungsmodelle: privates Mäzenatentum und gezielt eingesetzte Spendengelder zur Wiederherstellung historischer Objekte und Kulturgüter.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3203
+      ],
+      "pruefsumme": "255d29aec8161f4f"
+    },
+    {
+      "kennung": "M010",
+      "ebene": "land",
+      "beschreibung": "Verstetigte Landesförderung für Klubs und Musikspielstätten, um das Klubsterben zu bekämpfen",
+      "zitat": "Wir wollen: […] eine verstetigte Landesförderung von Klubs und Musikspielstätten, um aktiv das Klubsterben zu bekämpfen und Subkultur zu fördern.",
+      "ursachen_ids": [
+        3203
+      ],
+      "pruefsumme": "1d80522dc048de83"
+    },
+    {
+      "kennung": "M011",
+      "ebene": "bund",
+      "beschreibung": "Überzogene Bau-Auflagen abbauen und Mindeststandards bei Brand- und Gesundheitsschutz reduzieren",
+      "zitat": "Wir werden überzogene Bau-Auflagen abbauen und auf sinnvolle Mindeststandards bei Gebäudeenergie, Brand- und Gesundheitsschutz sowie Statik reduzieren.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3204
+      ],
+      "pruefsumme": "1195a441542fd629"
+    },
+    {
+      "kennung": "M012",
+      "ebene": "bund",
+      "beschreibung": "Langfristige Schutzinstrumente für Kulturschaffende gegen unverschuldete Verdienstausfälle, ausgehend von der Sicherung von Kulturorten",
+      "zitat": "Die Sicherung von staatlichen, privaten und freien Kunst- und Kulturorten muss auf die Schaffung langfristiger Schutzinstrumente für Kunst- und Kulturschaffende vor unverschuldeten Verdienstausfällen ausgedehnt werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3203
+      ],
+      "pruefsumme": "19bc21ec53e09866"
+    },
+    {
+      "kennung": "M013",
+      "ebene": "land",
+      "beschreibung": "Stärkere Kooperation zwischen Produktion und Präsentation von Kunst ermöglichen, mit gemeinschaftlich nutzbaren Infrastrukturen wie Ateliers und Proberäumen.",
+      "zitat": "Deshalb ermöglichen wir stärkere Kooperation zwischen Produktion und Präsentation von Kunst sowie Handwerk. Dafür braucht es neue Förderansätze und gemeinschaftlich nutzbare Infrastrukturen, wie z.B. Atelier- und Proberäume.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3203
+      ],
+      "pruefsumme": "10e75565ce47dea8"
+    },
+    {
+      "kennung": "M014",
+      "ebene": "land",
+      "beschreibung": "Programm für den Umbau von Handelsimmobilien für Kulturnutzungen auflegen",
+      "zitat": "Wir werden […] ein Programm für den Umbau von Handelsimmobilien für Wohn-, Büro- und Kulturnutzungen auflegen.",
+      "ursachen_ids": [
+        3204
+      ],
+      "pruefsumme": "1138315214637247"
+    },
+    {
+      "kennung": "M015",
+      "ebene": "bund",
+      "beschreibung": "Bundesregeln so ändern, dass Stadtplanung Freiräume für Clubkultur berücksichtigen kann",
+      "zitat": "Bundesregularien sollen es Stadtplaner*innen ermöglichen, verstärkt Freiräume etwa für die Clubkultur zu berücksichtigen, die für eine partizipative und experimentelle Nutzung zur Verfügung stehen.",
+      "ursachen_ids": [
+        3201
+      ],
+      "pruefsumme": "f3518e944e0ca22f"
+    },
+    {
+      "kennung": "M016",
+      "ebene": "land",
+      "beschreibung": "Einkaufszentren zu multifunktionalen Orten mit Raum für Kultur weiterentwickeln",
+      "zitat": "Wir wollen Einkaufszentren zu multifunktionalen Orten weiterentwickeln, die neben Handel auch Raum für Kultur, Bildung, Gesundheit und öffentliche Dienstleistungen bieten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3204
+      ],
+      "pruefsumme": "b220b8c87c9fdd95"
+    },
+    {
+      "kennung": "M017",
+      "ebene": "land",
+      "beschreibung": "Möglichst viele noch verbleibende nichtkommerzielle Räume für Kunst und Kulturerfahrung sichern",
+      "zitat": "Wir setzen uns grundsätzlich dafür ein, den kunstschöpferischen Aktivitäten in [Land] und den Kunsterfahrungen in [Land] möglichst viele der noch verbleibenden nichtkommerziellen Räume zu sichern.",
+      "ursachen_ids": [
+        3201
+      ],
+      "pruefsumme": "6e93822595b12731"
+    },
+    {
+      "kennung": "M018",
+      "ebene": "land",
+      "beschreibung": "Eigenmittel- und Liquiditätsfonds, der soziokulturellen Begegnungs- und Bildungsorten beim Einwerben von Fördermitteln hilft",
+      "zitat": "Damit unsere Kultur die Unterstützung erhält, […] werden wir: […] eine institutionelle Förderung der soziokulturellen Begegnungs- und Bildungsorte auflegen, damit sie erhalten bleiben und unabhängig und frei wirken können. Dafür braucht es auch einen Eigenmittel- und Liquiditätsfonds zur Unterstützung der Einwerbung von Fördermitteln.",
+      "ursachen_ids": [
+        3203
+      ],
+      "pruefsumme": "0630dd7edba056a4"
+    },
+    {
+      "kennung": "M019",
+      "ebene": "bund",
+      "beschreibung": "Lärmschutz ändern, um Rahmenbedingungen für Clubs und Livemusikstätten zu verbessern",
+      "zitat": "Wir wollen die Rahmenbedingungen für Kulturorte, besonders für Clubs- und Livemusikstätten und vor allem in Innenstädten, durch Änderungen beim Lärmschutz, im Baurecht sowie im Gewerbemietrecht verbessern. Die Förderung von Schallschutzmaßnahmen bauen wir aus.",
+      "ursachen_ids": [
+        3202
+      ],
+      "pruefsumme": "747f4c6675cc60e5"
+    },
+    {
+      "kennung": "M020",
+      "ebene": "land",
+      "beschreibung": "Förderprogramme für ökologische Umrüstung von Kultureinrichtungen",
+      "zitat": "Kultureinrichtungen müssen Teil der ökologischen Transformation sein. Wir setzen uns für Förderprogramme ein, die klimaneutrale Produktionen und die ökologische Umrüstung von Häusern unterstützen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3204
+      ],
+      "pruefsumme": "21a38a103bf6aba9"
+    },
+    {
+      "kennung": "M021",
+      "ebene": "land",
+      "beschreibung": "Landeseigene Grundstücke nicht mehr privatisieren, per Bodensicherungsgesetz festschreiben",
+      "zitat": "Landeseigene Grundstücke werden nicht mehr privatisiert. Das wollen wir in einem Bodensicherungsgesetz festschreiben.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3201
+      ],
+      "pruefsumme": "c703a73b59b9a7f2"
+    },
+    {
+      "kennung": "M022",
+      "ebene": "land",
+      "beschreibung": "Landeszuschüsse für Musik- und Kunstschulen, kurzfristig zur Deckung steigender Sozialversicherungskosten und Mobilitätspauschalen",
+      "zitat": "Um Scheinselbstständigkeit nach dem Herrenberg-Urteil zu vermeiden, beenden wir prekäre Beschäftigungsverhältnisse und unterstützen die Musik- und Kunstschulen kurzfristig mit Landeszuschüssen zur Abdeckung der steigenden Sozialversicherungskosten und Mobilitätspauschalen.",
+      "ursachen_ids": [
+        3203
+      ],
+      "pruefsumme": "4dee60f41c7bac44"
+    },
+    {
+      "kennung": "M023",
+      "ebene": "land",
+      "beschreibung": "Festivallandschaft bei der Umsetzung ihrer Konzepte unterstützen",
+      "zitat": "Wir werden: […] die Festivallandschaft in [Land] bei der Umsetzung ihrer Konzepte unterstützen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3203
+      ],
+      "pruefsumme": "95abe2e5330369ce"
+    },
+    {
+      "kennung": "M024",
+      "ebene": "land",
+      "beschreibung": "Gezielte Startförderungen für Clubs und kreative Orte auflegen",
+      "zitat": "Wir werden die Zusammenarbeit mit der Kultur- und Kreativwirtschaft intensivieren und gezielte Startförderungen, insbesondere für Clubs und kreative Orte, auflegen.",
+      "ursachen_ids": [
+        3203
+      ],
+      "pruefsumme": "ea1830ab00a59898"
+    },
+    {
+      "kennung": "M025",
+      "ebene": "land",
+      "beschreibung": "Nutzung von Leerständen und öffentlichen Gebäuden für Kultur fördern.",
+      "zitat": "Die Nutzung von Leerständen und öffentlichen Gebäuden für Kultur fördern.",
+      "ursachen_ids": [
+        3201
+      ],
+      "pruefsumme": "7c822659a65c3121"
+    },
+    {
+      "kennung": "M026",
+      "ebene": "land",
+      "beschreibung": "Standortpartnerschaften zwischen Industrie sowie Musik- und Kreativszene unterstützen",
+      "zitat": "Standortpartnerschaften zwischen Industrie sowie Musik- und Kreativszene unterstützen wir ausdrücklich.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3203
+      ],
+      "pruefsumme": "43781c458a178b94"
+    },
+    {
+      "kennung": "M027",
+      "ebene": "land",
+      "beschreibung": "Ehemaligen Flughafen Tempelhof zu einem Kulturort entwickeln und dafür ein Nutzungskonzept erarbeiten",
+      "zitat": "Den ehemaligen Flughafen Tempelhof wollen wir zu einem Kulturort weiterentwickeln, der das Potential des historischen Gebäudes voll ausschöpft. Dafür werden wir gemeinsam mit relevanten Akteuren ein zukunftsorientiertes Nutzungskonzept erarbeiten.",
+      "ursachen_ids": [
+        3204
+      ],
+      "pruefsumme": "4e274b4683fbf36c"
+    },
+    {
+      "kennung": "M028",
+      "ebene": "land",
+      "beschreibung": "Eine neue Förderung für Clubs und Spielstätten einführen.",
+      "zitat": "Für die Clubwirtschaft initiieren wir erstmals eine Spielstättenförderung und setzen Empfehlungen aus der [Land] Strategie zur [Land] Nachtökonomie um. So sichern wir Clubs langfristig.",
+      "ursachen_ids": [
+        3203
+      ],
+      "pruefsumme": "9533d95b8ea91c6a"
+    },
+    {
+      "kennung": "M029",
+      "ebene": "land",
+      "beschreibung": "Sich auf Bundesebene für gesetzliche Regelungen zu bezahlbaren Gewerbemieten einsetzen, um Gewerbe und Kultur in den Kiezen vor Verdrängung zu schützen.",
+      "zitat": "Wir erhalten den Mix aus Gewerbe, Dienstleistungen und Kultur in unseren Kiezen und schützen Unternehmen vor Verdrängung. Dafür setzen wir uns auf Bundesebene für gesetzliche Regelungen ein, mit denen wir bezahlbare Gewerbemieten durchsetzen können.",
+      "ursachen_ids": [
+        3201
+      ],
+      "pruefsumme": "912968ad42d2b004"
+    },
+    {
+      "kennung": "M030",
+      "ebene": "land",
+      "beschreibung": "Kommunales Vorkaufsrecht sichern und ausweiten, um öffentliche Flächen vor Privatisierung und Bodenspekulation zu schützen",
+      "zitat": "Kommunen brauchen wirksame Instrumente gegen die Privatisierung öffentlicher Flächen. Deshalb wollen wir das kommunale Vorkaufsrecht sichern und ausweiten, um Bodenspekulation zu verhindern und die Schaffung von bezahlbarem Wohnraum sowie gemeinwohlorientierter Infrastruktur zu unterstützen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3201
+      ],
+      "pruefsumme": "fd81cfa6e31aeb83"
+    },
+    {
+      "kennung": "M031",
+      "ebene": "land",
+      "beschreibung": "Nutzung öffentlicher Räume für unkommerzielle Freiluftveranstaltungen deutlich erleichtern",
+      "zitat": "Die Nutzung öffentlicher Räume für unkommerzielle Freiluftveranstaltungen werden wir deutlich erleichtern.",
+      "ursachen_ids": [
+        3202
+      ],
+      "pruefsumme": "e9cf686d1075d3d5"
+    },
+    {
+      "kennung": "M032",
+      "ebene": "bund",
+      "beschreibung": "Clubs im Baurecht als Orte der Kultur anerkennen",
+      "zitat": "In der Baunutzungsverordnung sollten Clubs als Orte der Kultur anerkannt werden, um ihre gesellschaftliche Bedeutung zu unterstreichen.",
+      "ursachen_ids": [
+        3201
+      ],
+      "ursachen_offen": [
+        3202
+      ],
+      "pruefsumme": "c6acdb7470c32370"
+    },
+    {
+      "kennung": "M033",
+      "ebene": "land",
+      "beschreibung": "Aktionsplan gegen Verdrängung queerer und zivilgesellschaftlicher Orte einschließlich Kulturorten",
+      "zitat": "Aktuell zeigt sich jedoch, dass [Land] queere Infrastruktur mit ihren Empowermenträumen, Beratungsstrukturen, Projekten, Kulturorten und Safer Spaces akut bedroht ist. […] Wir setzen einen Aktionsplan gegen Verdrängung von zivilgesellschaftlicher Infrastruktur und Safer Spaces in der ganzen Stadt auf.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3201
+      ],
+      "pruefsumme": "f4654140004288ee"
+    },
+    {
+      "kennung": "M034",
+      "ebene": "land",
+      "beschreibung": "Das ICC zu einem Zentrum für Kultur, Kreativwirtschaft und Großveranstaltungen umbauen.",
+      "zitat": "Unser ICC bauen wir gemeinsam mit privaten Partner*innen aus dem internationalen Konzeptverfahren zu einem Zentrum für Kultur-, Kreativwirtschaft und Großveranstaltungen aus.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3204
+      ],
+      "pruefsumme": "e1cb4b907f816bc1"
+    },
+    {
+      "kennung": "M035",
+      "ebene": "land",
+      "beschreibung": "Transitverkehr auf zwei Bundesstraßen sperren, um Abgase und Lärm zu verringern.",
+      "zitat": "Die Bundesstraßen B2 und B91 werden oft von LKW-Fahrern als Abkürzung genutzt, um schneller auf die A4 zu kommen. Das verursacht nicht nur zusätzliche Schäden, sondern auch Emissionen durch Abgase und Lärm. Deshalb werden wir dafür sorgen, dass dort das Verkehrszeichen 253 nach § 45 StVO mit dem Zusatzzeichen „Transitverkehr gesperrt“ aufgestellt wird.",
+      "ursachen_ids": [
+        3202
+      ],
+      "pruefsumme": "34a765cc2c438461"
+    },
+    {
+      "kennung": "M036",
+      "ebene": "land",
+      "beschreibung": "Städtischer Kurator stellt freien Kunstschaffenden Orte und Räume im Stadtraum zeitlich begrenzt für Projekte zur Verfügung",
+      "zitat": "Wir setzen einen Stadtkurator ein, der freien Künstlern und Künstlergruppen bestimmte Orte und Räume im Stadtraum zeitlich begrenzt für ihre kreativen Projekte zur Verfügung stellt.",
+      "ursachen_ids": [
+        3201
+      ],
+      "pruefsumme": "67ac5c366f754c0a"
+    },
+    {
+      "kennung": "M037",
+      "ebene": "land",
+      "beschreibung": "Lärmschutz-Vorgaben anpassen, um junge Menschen im öffentlichen Raum vor Verdrängung zu schützen.",
+      "zitat": "Wir schützen junge Menschen zudem vor Verdrängung aus dem öffentlichen Raum, in dem wir die gesetzlichen Vorgaben zum Lärmschutz anpassen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3202
+      ],
+      "pruefsumme": "55f081688bdeea8d"
+    },
+    {
+      "kennung": "M038",
+      "ebene": "land",
+      "beschreibung": "Institutionelle Förderung von Kulturorten ausweiten und verstetigen, vor allem für kleine und mittlere Einrichtungen im ländlichen Raum; soziokulturelle Zentren dauerhaft finanziell sichern",
+      "zitat": "UNESCO-Welterbestätten, Theater, Museen, Orte der Industriekultur, kulturelle Bildungseinrichtungen und soziokulturelle Zentren sollen so dauerhaft gesichert und finanziell stabilisiert werden – mit einem besonderen Schwerpunkt auf der Stärkung ländlicher Kulturorte. Ein zentraler Bestandteil muss die Ausweitung und Verstetigung der institutionellen Förderung sein – insbesondere für kleine und mittlere Einrichtungen im ländlichen Raum.",
+      "ursachen_ids": [
+        3203
+      ],
+      "pruefsumme": "816524301a043b7b"
+    },
+    {
+      "kennung": "M039",
+      "ebene": "land",
+      "beschreibung": "Landesprogramm übernimmt GEMA-Gebühren für ehrenamtliche, eintrittsfreie Veranstaltungen von Vereinen und Feuerwehren",
+      "zitat": "Ehrenamtliche Tätigkeiten werden wir weiter fördern, bspw. indem wir mit einem Landesprogramm die GEMA-Gebühren für ehrenamtlich durchgeführte und eintrittsfreie Veranstaltungen von gemeinnützigen Vereinen und Feuerwehren übernehmen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3203
+      ],
+      "pruefsumme": "1c485e883ae9cd35"
+    },
+    {
+      "kennung": "M040",
+      "ebene": "land",
+      "beschreibung": "Zuständigkeiten für Sicherheitskonzepte und Schutzmaßnahmen bei Großveranstaltungen gesetzlich klar regeln",
+      "zitat": "Zuständigkeiten für Sicherheitskonzepte und Schutzmaßnahmen werden gesetzlich klar geregelt, um Kommunen, Veranstalter und Einsatzkräfte rechtssicher zu entlasten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3202
+      ],
+      "pruefsumme": "92b4633319f5e37d"
+    },
+    {
+      "kennung": "M041",
+      "ebene": "land",
+      "beschreibung": "Kultur-Investitionsprogramm für Erhalt, Technik, Barrierearmut und Brandschutz von Kulturgebäuden",
+      "zitat": "Mit einem Kultur-Investitionsprogramm unterstützen wir den Erhalt von Gebäuden, deren Technik und auch Barrierearmut, Brandschutz und Digitalisierung.",
+      "ursachen_ids": [
+        3204
+      ],
+      "pruefsumme": "0e8a64ea0a44549f"
+    },
+    {
+      "kennung": "M042",
+      "ebene": "land",
+      "beschreibung": "Konflikte zwischen Anwohnenden, Bezirken und Clubbetreibenden durch frühzeitige Mediation lösen, etwa über das Büro des Nachtlebens",
+      "zitat": "Konflikte zwischen Anwohnerinnen und Anwohnern, Bezirken und Clubbetreibenden sollen durch frühzeitige Mediation, insbesondere über das „Büro des Nachtlebens“, gelöst werden.",
+      "ursachen_ids": [
+        3202
+      ],
+      "pruefsumme": "f16dbea03ca87ddd"
+    },
+    {
+      "kennung": "M043",
+      "ebene": "land",
+      "beschreibung": "Härtefallregelung bei der Grundsteuer für Clubs und kulturelle Einrichtungen",
+      "zitat": "Damit diese [Land] Mischung erhalten bleibt, werden wir eine wirksame Härtefallregelung schaffen, die u. a. Kleingewerbe, Clubs, Strandbäder, Wagenburgen, soziale und kulturelle Einrichtungen vor unverhältnismäßigen Steigerungen der Grundsteuer schützt.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3201
+      ],
+      "pruefsumme": "ba0bc8cfc34be9ec"
+    },
+    {
+      "kennung": "M044",
+      "ebene": "land",
+      "beschreibung": "Öffentliche Investitionen in die Ausstattung öffentlicher Veranstaltungsorte",
+      "zitat": "Wir investieren in die nötige Ausstattung öffentlicher Veranstaltungsorte […].",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3204
+      ],
+      "pruefsumme": "1075f925b279a120"
+    },
+    {
+      "kennung": "M045",
+      "ebene": "bund",
+      "beschreibung": "Sanierung kommunaler Kultureinrichtungen durch auskömmlichere Kommunalfinanzierung und Deutschlandfonds ermöglichen",
+      "zitat": "Allein zum Erhalt und zur Sanierung der kommunalen Infrastruktur, dazu zählen zum Beispiel Straßen, Spielplätze, Schwimmbäder, Jugendclubs, Sportplätze und Kultureinrichtungen, fehlen bundesweit 186 Milliarden Euro. Durch eine auskömmlichere Finanzierung der Kommunen und den Deutschlandfonds geben wir Kommunen endlich die Möglichkeit, diese dringend notwendigen Investitionen zu finanzieren.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3204
+      ],
+      "pruefsumme": "20124be85aa0f057"
+    },
+    {
+      "kennung": "M046",
+      "ebene": "land",
+      "beschreibung": "Stärkung und Modernisierung von Spielstätten und soziokulturellen Zentren als Kulturorte",
+      "zitat": "Stärkung und Modernisierung von Spielstätten, […] und soziokulturellen Zentren, auch als Orte der Begegnung und Bildung.",
+      "ursachen_ids": [
+        3203
+      ],
+      "ursachen_offen": [
+        3204
+      ],
+      "pruefsumme": "23b173cee678b35a"
+    },
+    {
+      "kennung": "M047",
+      "ebene": "land",
+      "beschreibung": "Kulturarbeit in Außenbezirken verbessern; zentraler Aspekt ist die Bereitstellung von Räumlichkeiten",
+      "zitat": "Insbesondere wollen wir die Kulturarbeit in den Außenbezirken verbessern. Ein zentraler Aspekt ist dabei die Bereitstellung von Räumlichkeiten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3201
+      ],
+      "pruefsumme": "bd49a4c742e11066"
+    },
+    {
+      "kennung": "M048",
+      "ebene": "land",
+      "beschreibung": "Förderprogramm für Clubs und Musikspielstätten: Basisförderung für feste Spielstätten bei Sanierung und Betrieb, auch für Technik, Lärm- und Brandschutz",
+      "zitat": "Wir legen ein Förderprogramm mit klaren Richtlinien auf, um kleine und mittlere Clubs sowie Musikspielstätten zu unterstützen. Insbesondere feste Spielstätten sollen eine Basisförderung für Sanierungs- und Betriebskosten erhalten. Damit helfen wir Betreiber*innen bei notwendigen Investitionen in Technik, Lärm- und Brandschutz und sichern den laufenden Betrieb.",
+      "ursachen_ids": [
+        3204
+      ],
+      "ursachen_offen": [
+        3202
+      ],
+      "pruefsumme": "e5109d8eeae51337"
+    },
+    {
+      "kennung": "M049",
+      "ebene": "land",
+      "beschreibung": "Schulgebäude außerhalb des Unterrichts für Vereine und Kulturangebote öffnen",
+      "zitat": "Generell sollen Schulgebäude unabhängig von der Eigentümersituation auch außerhalb des Unterrichts für weitere Aktivitäten geöffnet und so zum Beispiel Heimat für Vereine und Kulturangebote werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3201,
+        3204
+      ],
+      "pruefsumme": "cfeb54c41f160848"
+    },
+    {
+      "kennung": "M050",
+      "ebene": "land",
+      "beschreibung": "Selbstverwaltete und freie Kulturorte unterstützen.",
+      "zitat": "Selbstverwaltete und freie Kulturorte unterstützen.",
+      "ursachen_ids": [
+        3203
+      ],
+      "pruefsumme": "9bbdd4bb8800a2ee"
+    },
+    {
+      "kennung": "M051",
+      "ebene": "land",
+      "beschreibung": "Lokale Kulturorte und Einrichtungen verlässlich fördern, auch Jugendclubs und mobile Clubs",
+      "zitat": "Wir werden lokale Kulturorte und Einrichtungen flächendeckend und verlässlich fördern. Dazu gehören […] Jugendclubs, mobile Clubs, Heimatstuben sowie lokale Festivals.",
+      "ursachen_ids": [
+        3203
+      ],
+      "pruefsumme": "15453ef312a699f4"
+    },
+    {
+      "kennung": "M052",
+      "ebene": "land",
+      "beschreibung": "Kulturelle Nutzung leer stehender Immobilien erleichtern und Zwischennutzungen ausweiten",
+      "zitat": "Wir wollen die kulturelle Nutzung leer stehender Immobilien erleichtern und Zwischennutzungen ausweiten.",
+      "ursachen_ids": [
+        3201
+      ],
+      "pruefsumme": "182a404249506e65"
+    },
+    {
+      "kennung": "M053",
+      "ebene": "land",
+      "beschreibung": "Gast- und Spielstättenförderung für die freie Theaterszene und Kulturhäuser ohne eigenes Ensemble auf den Weg bringen",
+      "zitat": "Zur Sicherung der Vielfalt wird eine Gast- und Spielstättenförderung der freien (Theater-)Szene und der Kulturhäuser ohne eigenes Ensemble auf den Weg gebracht.",
+      "ursachen_ids": [
+        3203
+      ],
+      "pruefsumme": "ce0afde26b039f2c"
+    },
+    {
+      "kennung": "M054",
+      "ebene": "bund",
+      "beschreibung": "Trägerinnen und Träger kultureller Infrastruktur finanziell und organisatorisch stärker unterstützen",
+      "zitat": "Wir wollen, dass die Trägerinnen und Träger kultureller Infrastruktur finanziell und organisatorisch stärker unterstützt werden.",
+      "ursachen_ids": [
+        3203
+      ],
+      "pruefsumme": "594ebfd2e3d30e06"
+    },
+    {
+      "kennung": "M055",
+      "ebene": "bund",
+      "beschreibung": "Kulturschutzgebiete im Baurecht, die Clubs und kulturelle Einrichtungen vor Verdrängung schützen sollen",
+      "zitat": "Mit „Kulturschutzgebieten“ im Baurecht schützen wir kulturelle Einrichtungen wie Clubs vor Verdrängung und sichern ihnen eine langfristige Perspektive.",
+      "ursachen_ids": [
+        3201
+      ],
+      "pruefsumme": "76759840edd40af7"
+    },
+    {
+      "kennung": "M056",
+      "ebene": "land",
+      "beschreibung": "Erhaltung und kulturelle Nutzung stillgelegter Industrieorte fördern, etwa als Museen oder Kulturzentren",
+      "zitat": "Industriekultur wollen wir sichtbar und erfahrbar machen. Denn stillgelegte Industrieorte erzählen unsere Geschichte. Wir fördern ihre Erhaltung, Erschließung und kulturelle Nutzung, etwa als Museen, Lernorte oder Kulturzentren.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3201
+      ],
+      "pruefsumme": "fd0687f23584b241"
+    },
+    {
+      "kennung": "M057",
+      "ebene": "land",
+      "beschreibung": "Kulturprojekte bis hin zu Kleinkunstbühnen sollen eine Stiftung zur Unterstützung erhalten.",
+      "zitat": "Kulturelle Projekte von Heimatfesten bis hin zu Kleinkunstbühnen erhalten eine Stiftung zur Unterstützung.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3203
+      ],
+      "pruefsumme": "10c4c75fe085810d"
+    },
+    {
+      "kennung": "M058",
+      "ebene": "land",
+      "beschreibung": "Gewerbemieten per Gesetz dauerhaft begrenzen; Vorstoß über den Bundesrat",
+      "zitat": "Wir werden über den Bundesrat eine dauerhafte Begrenzung der Gewerbemieten per Gesetz vorschlagen.",
+      "ursachen_ids": [
+        3201
+      ],
+      "pruefsumme": "c24c3d33be56dbef"
+    },
+    {
+      "kennung": "M059",
+      "ebene": "land",
+      "beschreibung": "Vereine und Initiativen sollen öffentliche Räume wie Schulen oder Sporthallen außerhalb der Nutzungszeiten unbürokratisch und möglichst kostenfrei nutzen können",
+      "zitat": "Wir werden: […] uns dafür einsetzen, dass Vereine und ehrenamtliche Initiativen öffentliche Räume wie Schulen, Sporthallen oder kommunale Einrichtungen außerhalb der regulären Nutzungszeiten unbürokratisch und möglichst kostenfrei für ihre Arbeit nutzen können.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3201
+      ],
+      "pruefsumme": "1a64ea8911454687"
+    },
+    {
+      "kennung": "M060",
+      "ebene": "land",
+      "beschreibung": "Bauliche Barrieren bei Kunst und Kultur abbauen (Grenzfall zu Umbau von Veranstaltungsorten).",
+      "zitat": "Finanzielle, soziale und bauliche Barrieren bei Kunst und Kultur abbauen.",
+      "ursachen_ids": [
+        3204
+      ],
+      "pruefsumme": "eddfdff056469dbc"
+    },
+    {
+      "kennung": "M061",
+      "ebene": "land",
+      "beschreibung": "Clubs im Baugesetzbuch als Kultureinrichtungen verankern (Bundesebene)",
+      "zitat": "Auf Bundesebene setzen wir uns für […] die Verankerung von Clubs als Kultureinrichtungen im Baugesetzbuch […]",
+      "ursachen_ids": [
+        3201
+      ],
+      "pruefsumme": "347cf06d7accfa93"
+    },
+    {
+      "kennung": "M062",
+      "ebene": "land",
+      "beschreibung": "Förderung von Dritten Orten wie soziokulturellen Zentren als Orte lokaler Begegnung und Vernetzung",
+      "zitat": "Wir fördern weiterhin „Dritte Orte“ wie z.B. Soziokulturelle Zentren, die wichtig sind für die lokale Begegnung und Vernetzung.",
+      "ursachen_ids": [
+        3203
+      ],
+      "pruefsumme": "b3b2b032b17511d8"
+    },
+    {
+      "kennung": "M063",
+      "ebene": "bund",
+      "beschreibung": "Bund schafft die Voraussetzung, dass Länder und Kommunen Mietendeckel für Kleingewerbe und kulturelle Einrichtungen einführen können",
+      "zitat": "Kleingewerbe leiden unter explodierten Gewerbemieten. Der Bund muss dafür sorgen, dass Länder und Kommunen rechtssicher Mietendeckel für Kleingewerbe, Handwerk, kulturelle Einrichtungen sowie für soziale und gemeinnützige Träger einführen können.",
+      "ursachen_ids": [
+        3201
+      ],
+      "pruefsumme": "1edb0b41464f077d"
+    },
+    {
+      "kennung": "M064",
+      "ebene": "land",
+      "beschreibung": "Orte wie Tempelhofer Vorfeld, Straße des 17. Juni und Waldbühne für Großveranstaltungen weiterentwickeln",
+      "zitat": "Wir wollen, dass auch solche Veranstaltungen in [Land] stattfinden, und werden Orte wie das Vorfeld des Flughafens Tempelhof, die Straße des 17. Juni oder das Olympiagelände inklusive der Waldbühne gezielt weiterentwickeln, um dort große Konzerte, Festivals oder Straßenfeste stattfinden lassen zu können.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3204
+      ],
+      "pruefsumme": "3f7bd41e7ea0d574"
+    },
+    {
+      "kennung": "M065",
+      "ebene": "land",
+      "beschreibung": "Flächen für kreative Orte und Clubnutzungen frühzeitig sichern und planungsrechtlich absichern",
+      "zitat": "Flächen für kreative Orte und Clubnutzungen sollen frühzeitig gesichert und planungsrechtlich verlässlich abgesichert werden.",
+      "ursachen_ids": [
+        3201
+      ],
+      "pruefsumme": "9f07f10b353bdc0c"
+    },
+    {
+      "kennung": "M066",
+      "ebene": "land",
+      "beschreibung": "Clubs, Musikspielstätten und Open-Air-Formate frühzeitig in Stadtentwicklung, Quartiersplanung und Genehmigung berücksichtigen, um gewachsene Kulturorte zu sichern",
+      "zitat": "Clubs, Musikspielstätten und Open-Air-Formate müssen bei Stadtentwicklung, Quartiersplanung und Genehmigungsverfahren frühzeitig berücksichtigt werden. […] So lassen sich spätere Konflikte vermeiden und gewachsene Kulturorte besser sichern.",
+      "ursachen_ids": [
+        3201
+      ],
+      "ursachen_offen": [
+        3202
+      ],
+      "pruefsumme": "5b1ca308267cc3ba"
+    },
+    {
+      "kennung": "M067",
+      "ebene": "land",
+      "beschreibung": "Schallschutzfonds ausbauen und Genehmigungsverfahren für Veranstaltungen vereinfachen (Land)",
+      "zitat": "Auf Landesebene wollen wir […] den Schallschutzfonds ausbauen und Genehmigungsverfahren vereinfachen.",
+      "ursachen_ids": [
+        3202
+      ],
+      "pruefsumme": "a74993fa18e63f35"
+    },
+    {
+      "kennung": "M068",
+      "ebene": "land",
+      "beschreibung": "Förderrichtlinien für wirtschaftlich agierende Kultureinrichtungen praxisnäher gestalten",
+      "zitat": "Förderrichtlinien sollen praxisnäher gestaltet werden, damit wirtschaftlich agierende Kultureinrichtungen nicht zwischen klassischer Kulturförderung und Wirtschaftsförderung durchs Raster fallen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3203
+      ],
+      "pruefsumme": "0d73f8c744fd645e"
+    },
+    {
+      "kennung": "M069",
+      "ebene": "land",
+      "beschreibung": "Clubs als Kulturorte anerkennen und so besseren Zugang zu Kulturförderung ermöglichen",
+      "zitat": "Wir wollen Clubs konsequent als Kulturorte anerkennen und ihnen damit einen besseren Zugang zu Kulturförderung ermöglichen.",
+      "ursachen_ids": [
+        3203
+      ],
+      "pruefsumme": "ced0fe8f151c2271"
+    },
+    {
+      "kennung": "M070",
+      "ebene": "land",
+      "beschreibung": "Landesprogramm Soziokultur mit mindestens 500.000 Euro für soziokulturelle Zentren",
+      "zitat": "Zudem engagieren wir uns für die verlässliche Förderung der soziokulturellen Zentren im Land. Zu diesem Zweck werden wir ein Landesprogramm Soziokultur einrichten, das mit mindestens 500.000 Euro ausgestattet wird.",
+      "ursachen_ids": [
+        3203
+      ],
+      "pruefsumme": "2344129989325861"
+    },
+    {
+      "kennung": "M071",
+      "ebene": "land",
+      "beschreibung": "Bund: Gewerbemietpreisbremse, Mietspiegel und Kündigungsschutz für Gewerbemietende unterstützen",
+      "zitat": "Im Sinne der [Land] Mischung schaffen wir bezahlbare landeseigene Gewerbeflächen und setzen uns bundesweit für eine Gewerbemietpreisbremse, einen Mietspiegel und gewerblichen Kündigungsschutz ein.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3201
+      ],
+      "pruefsumme": "f8cef9c4494c4380"
+    },
+    {
+      "kennung": "M072",
+      "ebene": "land",
+      "beschreibung": "Keine pauschale Sperrstunde und keine Tanzverbote an Feiertagen für Clubs",
+      "zitat": "Eine pauschale Sperrstunde oder Tanzverbote aufgrund von Feiertagen lehnen wir ab.",
+      "ursachen_ids": [
+        3202
+      ],
+      "pruefsumme": "be9701e5c42557f3"
+    },
+    {
+      "kennung": "M073",
+      "ebene": "land",
+      "beschreibung": "Verbindliche Quote für Kultur- und Kreativräume in neuen Stadtquartieren",
+      "zitat": "Auch für Kultur- und Kreativräume wollen wir eine verbindliche Quote in neuen Quartieren – so stärken wir soziale Teilhabe und kulturelle Bildung.",
+      "ursachen_ids": [
+        3201
+      ],
+      "pruefsumme": "d1c7579a24f2dd43"
+    },
+    {
+      "kennung": "M074",
+      "ebene": "land",
+      "beschreibung": "Lärmschutzreform auf Bundesebene",
+      "zitat": "Auf Bundesebene setzen wir uns für […] eine Lärmschutzreform ein.",
+      "ursachen_ids": [
+        3202
+      ],
+      "pruefsumme": "43893a03cc2b0f36"
+    },
+    {
+      "kennung": "M075",
+      "ebene": "land",
+      "beschreibung": "Vernetzung und ressortübergreifende Zusammenarbeit im Bereich Nachtökonomie stärken",
+      "zitat": "Wir stärken die Vernetzung und die ressortübergreifende Zusammenarbeit im Bereich Nachtökonomie.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3203
+      ],
+      "pruefsumme": "d37aa91790d5b294"
+    },
+    {
+      "kennung": "M076",
+      "ebene": "land",
+      "beschreibung": "Landesförderung für Spielstätten (Clubs), die gesellschaftspolitisches Engagement würdigt",
+      "zitat": "Auf Landesebene wollen wir eine Spielstättenförderung einführen, die Clubs mit gesellschaftspolitischem Engagement würdigt […]",
+      "ursachen_ids": [
+        3203
+      ],
+      "pruefsumme": "ea83a0669f9c95be"
+    },
+    {
+      "kennung": "M077",
+      "ebene": "land",
+      "beschreibung": "Wer neu in die Nachbarschaft von Clubs baut, muss selbst für ausreichenden Schallschutz sorgen (Agent-of-Change-Prinzip)",
+      "zitat": "Gleichzeitig unterstützen wir das sogenannte Agent-of-Change-Prinzip: Wer neu in die Nachbarschaft bestehender Clubs baut, muss selbst für ausreichenden Schallschutz sorgen.",
+      "ursachen_ids": [
+        3202
+      ],
+      "pruefsumme": "b1e3780f9dfce87e"
+    },
+    {
+      "kennung": "M078",
+      "ebene": "land",
+      "beschreibung": "Landesförderung für Kulturangebote auf fünfjährige institutionelle Zuwendungen mit Zielvereinbarungen umstellen",
+      "zitat": "Darüber hinaus wollen wir in Zukunft bei der Förderung, die das Land bestimmt, auf folgende drei Kategorien setzen: 1. institutionelle Förderung, die kontinuierlich erfolgt mit fünfjährigen Zuwendungsbescheiden mit Zielvereinbarungen, die messbare Vereinbarungen enthält und jeweils ein Jahr vor Ende der Laufzeit evaluiert wird.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3203
+      ],
+      "pruefsumme": "883cd5fe24a2f858"
+    },
+    {
+      "kennung": "M079",
+      "ebene": "bund",
+      "beschreibung": "Festivalförderfonds für Musikfestivals um Konzeptförderung und Beratung erweitern",
+      "zitat": "Die neu eingeführte Förderung für Musikfestivals (Festivalförderfonds) hat sich bewährt, sie erweitern wir um eine Konzeptförderung sowie um Beratung und Wissensvermittlung.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3203
+      ],
+      "pruefsumme": "5b45f32b1ce0a581"
+    },
+    {
+      "kennung": "M080",
+      "ebene": "bund",
+      "beschreibung": "Künstlerische und pädagogische Tätigkeiten im Kunst- und Kulturbereich bis zu einer Einkommensgrenze von der Umsatzsteuerpflicht befreien.",
+      "zitat": "Wir werden künstlerische und pädagogische Tätigkeiten im Kunst- und Kulturbereich bis zu einer sinnvollen Einkommensgrenze von der Umsatzsteuerpflicht befreien.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3203
+      ],
+      "pruefsumme": "4646952a50870779"
+    },
+    {
+      "kennung": "M081",
+      "ebene": "land",
+      "beschreibung": "Vereinfachte Genehmigungsverfahren und Lärmschutz-Reform (Bund) für Clubs und kleine Musikspielstätten",
+      "zitat": "Neben dem von uns eingeführten Schallschutzfonds […] nutzen wir sämtliche Instrumente, um Clubs, kleine Musikspielstätten und Open-Air-Formate langfristig zu sichern: […] über vereinfachte Genehmigungsverfahren […] und eine Lärmschutz-Reform auf Bundesebene.",
+      "ursachen_ids": [
+        3202
+      ],
+      "pruefsumme": "aae5533931acaa1f"
+    },
+    {
+      "kennung": "M082",
+      "ebene": "land",
+      "beschreibung": "Nichtstaatliche Finanzierung kultureller Projekte (etwa Fundraising, Crowdfunding, Stiftungen, Mäzene) unterstützen; Co-Finanzierung durch das Land bei geeigneten Projekten",
+      "zitat": "Wir werden: […] alle Formen nichtstaatlicher Finanzierung kultureller Projekte durch professionelle Beratung, wie z.B. Fundraising, Crowdfunding, Stiftungen, Mäzene, unterstützen. Bei geeigneten Projekten werden wir eine Co-Finanzierung durch das Land ermöglichen.",
+      "ursachen_ids": [
+        3203
+      ],
+      "pruefsumme": "de8b9e1859bdaa9f"
+    },
+    {
+      "kennung": "M083",
+      "ebene": "bund",
+      "beschreibung": "Kultur-Investitionsprogramme des Bundes für Einrichtungen der freien Szene und Popkultur stärker öffnen",
+      "zitat": "Wir wollen die Kultur-Investitionsprogramme des Bundes vielfältiger aufstellen, indem wir Einrichtungen der freien Szene und der Popkultur stärker berücksichtigen.",
+      "ursachen_ids": [
+        3203
+      ],
+      "pruefsumme": "4cfea4d96a5945ac"
+    },
+    {
+      "kennung": "M084",
+      "ebene": "land",
+      "beschreibung": "Kommunale Genehmigungs- und Antragsverfahren für Veranstaltungen vereinfachen, digitalisieren und beschleunigen",
+      "zitat": "Wir werden: […] kommunale Genehmigungs- und Antragsverfahren für Veranstaltungen und Vereinsaktivitäten vereinfachen, digitalisieren und beschleunigen.",
+      "ursachen_ids": [
+        3202
+      ],
+      "pruefsumme": "cec1784c56330628"
+    },
+    {
+      "kennung": "M085",
+      "ebene": "bund",
+      "beschreibung": "Gewerbemietrecht ändern, damit Clubs und vergleichbare Kulturorte vor Verdrängung geschützt sind",
+      "zitat": "Dazu gehören auch kulturelle Einrichtungen wie Theater, Kinos, Bibliotheken oder Clubs, die Raum für neue Begegnungen und gemeinsame Erfahrungen oder Projekte geben. […] Wir wollen diese Orte deshalb im Gewerbemietrecht vor Verdrängung schützen.",
+      "ursachen_ids": [
+        3201
+      ],
+      "pruefsumme": "a78f7d43f11d16d3"
+    },
+    {
+      "kennung": "M086",
+      "ebene": "land",
+      "beschreibung": "Regelungen für Umbauten, Aufstockungen und Nebenanlagen vereinfachen und Landesbauordnung anpassen",
+      "zitat": "Zudem werden wir Regelungen für Umbauten, Aufstockungen und bauliche Nebenanlagen vereinfachen und die Landesbauordnung weiter an den Bedürfnissen unserer Bürgerinnen und Bürger und Unternehmen ausrichten",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3204
+      ],
+      "pruefsumme": "c63cbf351c530373"
+    },
+    {
+      "kennung": "M087",
+      "ebene": "land",
+      "beschreibung": "Brachflächen, Industrieanlagen und Baulücken einer neuen Nutzung zuführen und Umnutzung fördern (ohne Bezug zu Kulturorten)",
+      "zitat": "Ungenutzte Flächen aktivieren: Brachflächen, alte Industrieanlagen und Baulücken wollen wir einer neuen Nutzung zuführen. Wir fördern die Umnutzung und das Recycling nicht mehr genutzter Flächen und ermöglichen ein effektives Flächenmanagement für nachhaltige Stadt- und Dorfentwicklung.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3201
+      ],
+      "pruefsumme": "4b6c52d8606f2b88"
+    },
+    {
+      "kennung": "M088",
+      "ebene": "land",
+      "beschreibung": "Ausbau und langfristige Sicherung von Stadtteilzentren und Begegnungsprojekten",
+      "zitat": "[Land] braucht mehr Orte der Begegnung und verlässliche Angebote, die soziale Teilhabe fördern. Dazu gehören der Ausbau und die langfristige Sicherung von Stadtteilzentren, die Förderung von Nachbarschafts- und Begegnungsprojekten […]",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3203
+      ],
+      "pruefsumme": "13800e6deb27eafc"
+    },
+    {
+      "kennung": "M089",
+      "ebene": "land",
+      "beschreibung": "Zwischennutzung leerstehender Gebäude, temporäre Veranstaltungsflächen und Open-Air-Angebote erleichtern",
+      "zitat": "Zwischennutzungen von leer stehenden Gebäuden, temporäre Veranstaltungsflächen und Open-Air-Angebote wollen wir erleichtern, um neue Freiräume für Kultur, Musik und kreative Experimente zu schaffen.",
+      "ursachen_ids": [
+        3201
+      ],
+      "pruefsumme": "e9931d2a0d042778"
+    },
+    {
+      "kennung": "M090",
+      "ebene": "land",
+      "beschreibung": "Kommunen sollen Leerstand abbauen und alternative Zwischennutzungen ermöglichen, etwa für nichtkommerzielle Treffpunkte",
+      "zitat": "Kommunen sollen beim Abbau von Leerstand unterstützt werden und intelligente, alternative Zwischennutzungen ermöglichen, z. B. durch Start-ups, Pop-up-Stores oder nichtkommerzielle Treffpunkte.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3201
+      ],
+      "pruefsumme": "e34a4ea44ca13f0e"
+    },
+    {
+      "kennung": "M091",
+      "ebene": "land",
+      "beschreibung": "Bei Konflikten zwischen alten Clubrechten und neuen Ansprüchen von Anwohnenden sollen die alten Rechte vorgehen",
+      "zitat": "Dies gilt insbesondere dann, wenn alte Rechte von Clubs auf neue Ansprüche von Anwohnerinnen und Anwohnern treffen. Wir plädieren dafür, dass in diesen Fällen die alten Rechte vorgehen.",
+      "ursachen_ids": [
+        3202
+      ],
+      "pruefsumme": "1db4a40f2dd65dd0"
+    },
+    {
+      "kennung": "M092",
+      "ebene": "land",
+      "beschreibung": "Milieuschutz auch für Gewerbemietende einführen",
+      "zitat": "Wir führen Milieuschutz auch für Gewerbemieter*innen ein.",
+      "ursachen_ids": [
+        3201
+      ],
+      "pruefsumme": "0e28d00087a21130"
+    },
+    {
+      "kennung": "M093",
+      "ebene": "bund",
+      "beschreibung": "Kultur-Sponsoring, Mäzenatentum und Wirtschaftskooperationen für Kultureinrichtungen stärken",
+      "zitat": "Wir unterstützen die Bereitschaft zur Eigenverantwortung von Kultureinrichtungen. Kultur-Sponsoring, Mäzenatentum und Wirtschaftskooperationen müssen selbstverständlicher Bestandteil im Management moderner Kultureinrichtungen sein.",
+      "ursachen_ids": [
+        3203
+      ],
+      "pruefsumme": "0556cc63db3fd4a0"
+    },
+    {
+      "kennung": "M094",
+      "ebene": "land",
+      "beschreibung": "Förderung des barrierefreien Umbaus von Kulturstätten",
+      "zitat": "Wir fördern den barrierefreien «Umbau» von Kulturstätten und etablieren Begleitangebote für Senior*innen, um die Teilnahme an kulturellen Angeboten für Menschen in allen Lebenslagen zu ermöglichen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3204
+      ],
+      "pruefsumme": "43f8bb0cb6694662"
+    },
+    {
+      "kennung": "M095",
+      "ebene": "land",
+      "beschreibung": "Barrierefreien Umbau landeseigener Theater innerhalb einer Übergangsfrist umsetzen",
+      "zitat": "Für landeseigene Theater soll das Land [Land] den barrierefreien Umbau innerhalb einer vierjährigen Übergangsfrist konsequent umsetzen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3204
+      ],
+      "pruefsumme": "f7cb9aa30ea20a4d"
+    },
+    {
+      "kennung": "M096",
+      "ebene": "bund",
+      "beschreibung": "Förderung von Schallschutzmaßnahmen für Kulturorte ausbauen",
+      "zitat": "Wir wollen die Rahmenbedingungen für Kulturorte, besonders für Clubs- und Livemusikstätten und vor allem in Innenstädten, durch Änderungen beim Lärmschutz, im Baurecht sowie im Gewerbemietrecht verbessern. Die Förderung von Schallschutzmaßnahmen bauen wir aus.",
+      "ursachen_ids": [
+        3202
+      ],
+      "pruefsumme": "313850e6ae05aed2"
+    },
+    {
+      "kennung": "M097",
+      "ebene": "land",
+      "beschreibung": "Energetische Sanierung von Kultureinrichtungen fördern (Grenzfall: kein Umbau für Veranstaltungen ausdrücklich genannt)",
+      "zitat": "Wir werden die Digitalisierung von Kunst- und Kulturschätzen ebenso vorantreiben wie die energetische Sanierung von Kultureinrichtungen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3204
+      ],
+      "pruefsumme": "6249ab8936a39dc2"
+    },
+    {
+      "kennung": "M098",
+      "ebene": "land",
+      "beschreibung": "Musikschulgesetz, das unter anderem die Raumsituation der Musikschulen verbessern soll",
+      "zitat": "Zur Konkretisierung des festgelegten Angebotsumfangs der Musikschulen werden wir ein Musikschulgesetz verabschieden und damit die Rahmenbedingungen für den Musikschulunterricht, vor allem im Hinblick auf die Raumsituation, verbessern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3201,
+        3203
+      ],
+      "pruefsumme": "1b09678905208565"
+    },
+    {
+      "kennung": "M099",
+      "ebene": "bund",
+      "beschreibung": "Queere Clubs und Orte vor Wuchermieten und Kürzungen staatlicher Zuschüsse schützen",
+      "zitat": "Queere Orte wie Jugendzentren, Projekte, Bars und Clubs müssen geschützt werden – auch vor Wuchermieten und Kürzungen staatlicher Zuschüsse.",
+      "ursachen_ids": [
+        3201
+      ],
+      "ursachen_offen": [
+        3203
+      ],
+      "pruefsumme": "ba9ff8197c0ae704"
+    },
+    {
+      "kennung": "M100",
+      "ebene": "land",
+      "beschreibung": "Dem Clubsterben entgegenwirken und mehr Club-Angebote, auch mobil im ländlichen Raum, unterstützen (ohne konkretes Instrument)",
+      "zitat": "Wir wirken dem Clubsterben entgegen und setzen uns für mehr (mobile) Club-Angebote insbesondere im ländlichen Raum ein.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3201
+      ],
+      "pruefsumme": "f250c8dc4161d78d"
+    },
+    {
+      "kennung": "M101",
+      "ebene": "land",
+      "beschreibung": "Einführung eines Veranstaltungssicherheitsgesetzes (zusammen mit einem Vermummungsverbot auf Demonstrationen)",
+      "zitat": "Die Einführung eines generellen Vermummungsverbots auf Demonstrationen und die Schaffung eines Veranstaltungssicherheitsgesetzes.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3202
+      ],
+      "pruefsumme": "948726281d2ed53a"
+    },
+    {
+      "kennung": "M102",
+      "ebene": "bund",
+      "beschreibung": "Staatlich geförderte Projekte, Vereine und Stiftungen sollen sich zur freiheitlich-demokratischen Grundordnung bekennen.",
+      "zitat": "Projekte, Vereine und Stiftungen, die staatlich gefördert werden, müssen sich zur freiheitlich-demokratischen Grundordnung bekennen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3203
+      ],
+      "pruefsumme": "a441d2e739bb0c9f"
+    },
+    {
+      "kennung": "M103",
+      "ebene": "land",
+      "beschreibung": "S-Bahn-Bögen gemeinsam mit der Deutschen Bahn als Kunst-, Kultur- und Geschäftsorte erschließen",
+      "zitat": "Mit der Deutschen Bahn wollen wir S-Bahn-Bögen als Kunst-, Kultur- und Geschäftsorte erschließen. Mit Pop-up-Ausstellungen und temporären Formaten sollen insbesondere junge Künstlerinnen und Künstler mehr Sichtbarkeit und neue Entwicklungsmöglichkeiten erhalten.",
+      "ursachen_ids": [
+        3201
+      ],
+      "pruefsumme": "431fcca3f94f0a6f"
+    },
+    {
+      "kennung": "M104",
+      "ebene": "land",
+      "beschreibung": "Weiterbau der Autobahn A 100 ablehnen, unter anderem wegen Clubsterben",
+      "zitat": "Wir lehnen den Weiterbau der Autobahn A 100 ab, denn der 17. Bauabschnitt würde für Ost-[Land] Kieze in [Land], [Land] und Friedrichshain noch mehr Stau, Lärm, Luftverschmutzung und Clubsterben bedeuten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3201
+      ],
+      "pruefsumme": "507d231f071b29e9"
+    }
+  ]
+}

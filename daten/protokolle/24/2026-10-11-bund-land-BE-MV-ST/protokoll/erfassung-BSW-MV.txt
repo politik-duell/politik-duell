@@ -1,0 +1,168 @@
+{
+  "partei_id": 17,
+  "land": "MV",
+  "massnahmen": [
+    {
+      "beschreibung": "Gezielte Förderung von Familien, besonders Alleinerziehender und Familien mit niedrigem oder mittlerem Einkommen",
+      "ursachen_ids": [
+        2402
+      ],
+      "buendel": "Familien und Geburten fördern",
+      "zitat": "Gezielte Förderung von Familien, insbesondere von Alleinerziehenden, Familien mit niedrigen und mittleren Einkommen sowie in belasteten Lebenslagen.",
+      "seite": 12
+    },
+    {
+      "beschreibung": "Abwanderung von Know-how und Fachkräften stoppen, indem Perspektiven für Umsetzung und Wachstum im Land geschaffen werden",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2401
+      ],
+      "buendel": "Perspektiven vor Ort schaffen und Rückkehr fördern",
+      "zitat": "Abwanderung von Know-how und Fachkräften stoppen, indem attraktive Perspektiven für Umsetzung und Wachstum im Land geschaffen werden.",
+      "seite": 34
+    },
+    {
+      "beschreibung": "Verbindliche Praktika in Betrieben als fester Bestandteil schulischer Bildung, um junge Menschen für die Region zu gewinnen",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2401
+      ],
+      "zitat": "Um junge Menschen frühzeitig für regionale Wirtschaftsstrukturen zu gewinnen, sollen verbindliche Praktika in Betrieben – insbesondere im Handwerk – fester Bestandteil schulischer Bildung werden",
+      "seite": 32
+    },
+    {
+      "beschreibung": "Förderung von studentischem Wohnraum, besonders in Hochschulstädten",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2401
+      ],
+      "zitat": "Förderung von studentischem Wohnraum, insbesondere in Hochschulstädten.",
+      "seite": 52
+    },
+    {
+      "beschreibung": "Beschleunigte und vereinfachte Anerkennung ausländischer Berufs- und Bildungsabschlüsse",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2402
+      ],
+      "zitat": "Beschleunigte und vereinfachte Anerkennung ausländischer Berufs- und Bildungsabschlüsse.",
+      "seite": 31
+    },
+    {
+      "beschreibung": "Pauschale Zuweisungen an Kommunen statt kleinteiliger Förderprogramme, insbesondere aus Bundesmitteln",
+      "ursachen_ids": [
+        2404
+      ],
+      "buendel": "Kommunale Finanzen stärken",
+      "zitat": "Pauschale Zuweisungen an Kommunen, insbesondere aus dem Bundes-Sondervermögen für Infrastruktur und Klimaschutz, statt kleinteiliger Förderprogramme.",
+      "seite": 76
+    },
+    {
+      "beschreibung": "Gemeinden sollen ohne zusätzlichen Antrag verbindlich an den Erträgen der Windenergie beteiligt werden, zweckfrei",
+      "ursachen_ids": [
+        2404
+      ],
+      "zitat": "Ohne zusätzliche Beantragung und ohne bürokratischen Mehraufwand müssen betroffene Gemeinden verbindlich an den Erträgen der Windenergie beteiligt werden.",
+      "seite": 25
+    },
+    {
+      "beschreibung": "Vereinheitlichung von Formularen und Verfahren für Kommunen, Bürger, Unternehmen und Verwaltung",
+      "ursachen_ids": [
+        2404
+      ],
+      "buendel": "Verfahren und Verwaltung vereinfachen",
+      "zitat": "Vereinheitlichung von Formularen und Verfahren, um Aufwand für Bürger, Unternehmen und Verwaltungen zu reduzieren.",
+      "seite": 76
+    },
+    {
+      "beschreibung": "Entscheidungsspielräume der Kommunen stärken, unnötige bürokratische Anforderungen absenken",
+      "ursachen_ids": [
+        2404
+      ],
+      "zitat": "Stärkung kommunaler Entscheidungsspielräume, insbesondere beim Absehen von oder der Absenkung unnötiger bürokratischer Anforderungen.",
+      "seite": 29
+    },
+    {
+      "beschreibung": "Beschleunigung von Planungs- und Genehmigungsverfahren",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2404
+      ],
+      "zitat": "Beschleunigung von Planungs- und Genehmigungsverfahren, ohne Abstriche bei Rechtssicherheit und Beteiligung.",
+      "seite": 29
+    },
+    {
+      "beschreibung": "Verteilung von Geflüchteten nach der Leistungsfähigkeit der Kommunen",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2404
+      ],
+      "zitat": "Gerechte Verteilung von Geflüchteten nach der tatsächlichen Leistungsfähigkeit von Kommunen.",
+      "seite": 74
+    }
+  ],
+  "neue_buendel": [
+    {
+      "ursache": 2401,
+      "name": "Praktika in Betrieben",
+      "seite": 32
+    },
+    {
+      "ursache": 2401,
+      "name": "Studentischer Wohnraum",
+      "seite": 52
+    },
+    {
+      "ursache": 2402,
+      "name": "Anerkennung ausländischer Abschlüsse",
+      "seite": 31
+    },
+    {
+      "ursache": 2404,
+      "name": "Gemeindebeteiligung an Windenergieerträgen",
+      "seite": 25
+    },
+    {
+      "ursache": 2404,
+      "name": "Bürokratische Anforderungen für Kommunen absenken",
+      "seite": 29
+    },
+    {
+      "ursache": 2404,
+      "name": "Planungs- und Genehmigungsverfahren beschleunigen",
+      "seite": 29
+    },
+    {
+      "ursache": 2404,
+      "name": "Verteilung nach Leistungsfähigkeit der Kommunen",
+      "seite": 74
+    }
+  ],
+  "eigene_synonyme": []
+}
+
+Protokoll
+
+Gelesene Seiten und Kapitel: Inhaltsverzeichnis (S. 2–5); Kapitel 2 Soziale Gerechtigkeit, Familie und Demografie (S. 11–18, 20 Ziel-Teile); Kapitel 3 Wirtschaft (S. 21–34: Rahmenbedingungen, Energie, Bürokratie, Fachkräfte, Regionale Wertschöpfung, Innovation); Kapitel 4.1/4.2 Bildung und Hochschulen (S. 48–52, Stichprobe der Übergangs- und Studienpassagen); Kapitel 7 Kommunen (S. 73–76); Fundstellen S. 4 (Inhaltsverzeichnis, übersprungen), 14, 29, 34, 73, 89.
+
+Erfasst (Grenzfälle, offen zugeordnet): 2401 über S. 34 (Abwanderung), S. 32 (Praktika, Zielgruppe junge Menschen), S. 52 (studentischer Wohnraum). 2402 über S. 31 (Anerkennung ausländischer Abschlüsse, Zuzug von Fachkräften). 2404 über S. 29 (Planungs- und Genehmigungsverfahren, Ziel-Bullet ohne Kommunenbezug) und S. 74 (Verteilung Geflüchteter).
+
+Gleichartige Stellen (nicht eigene Maßnahme, weil dasselbe Bündel mit gleichem Hebel bereits belegt ist): S. 74 „Verlässliche Finanzierung von Unterbringung, Betreuung und Integration durch Land und Bund“; S. 75 „Ausreichende und verlässliche Finanzierung kommunaler Aufgaben“; S. 76 „Verzicht auf verpflichtende kommunale Eigenanteile, wo diese faktisch nicht leistbar sind“ (Bündel „Kommunale Finanzen stärken“). S. 76 „Vereinfachung bestehender Förderprogramme“ (Bündel „Verfahren und Verwaltung vereinfachen“).
+
+Nicht erfasst:
+- S. 14 „Wir wollen Bedingungen schaffen, unter denen Menschen gern in Mecklenburg-Vorpommern bleiben oder zurückkehren“ – allgemeines Ziel ohne konkrete Maßnahme; S. 14 „Ziel unserer Politik ist es, diesen Entwicklungen aktiv entgegenzuwirken“ – Zielbekenntnis.
+- S. 12 „Wir wollen zu einer Kultur beitragen, in der sich Menschen gern für Kinder entscheiden“ – Zielbekenntnis.
+- S. 18 „Sicherstellung kurzer, zumutbarer Wege durch eine wohnortnahe Versorgungs- und Infrastruktur“ – Ziel für Senioren, ohne Bezug zu Geburten oder Zuzug.
+- S. 30–31 „bürokratiearme und bedarfsgerechte Einwanderung von Fachkräften“ und „Menschen dauerhaft … zu gewinnen und zu halten“ – Zielformulierung; die konkrete Anerkennungsregel ist erfasst.
+- S. 37 „Stärkung von Ausbildung, Nachwuchs und Beteiligung junger Menschen“ (Tourismus) – Ausbildung einer Branche, ohne Bezug zu Bleiben oder Rückkehr der Region.
+- S. 20–21 Wohnungsfrage, S. 21 Ferienwohnungen – eigenes Thema Wohnen (R2).
+- S. 13 Jugendclubs, Freizeithäuser – Freizeitangebote für Jugendliche (R2).
+- S. 48–51 Schulen, Gymnasien, Berufsausbildung (Ausbildungsprämien S. 50) – Schulen und Ausbildung sind eigene Themen (2403 nicht Teil dieses Auftrags).
+- S. 33 Gewerbeflächen, Förderzugänge, kommunale Abgaben – Wirtschaftsthemen ohne Bezug zu 2401/2402/2404 (R1/R2).
+- S. 89 „Die Vereinfachung und Digitalisierung von Planungs- und Genehmigungsverfahren … ist wichtig“ – Bekenntnis ohne Handlungszusage.
+- S. 75 „Kommunen … Lage“ – Lagebeschreibung.
+- S. 27–28 Energie und Netze, Windenergie-Abstände (S. 25–26) – keine Ursache dieses Themas.
+
+Richtungen ohne Maßnahme im Bündelsinn: „Mobilität und Zuzug ermöglichen“ (2401) – Mobilitätskapitel S. 87–88 ohne Bezug zu jungen Menschen oder Zuzug gelesen; „Zuzug und Versorgung an Schrumpfung anpassen“ (2402) – nur die Anerkennungsregel S. 31 als Zuzugsmaßnahme erfasst (neue Bündel). Die übrigen Bündel sind belegt.
+
+Seiten ohne Text: S. 43 (Bildungskapitel, außerhalb der Ursachen).
