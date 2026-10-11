@@ -49,8 +49,8 @@ import {
   RATE_LIMIT_SITZUNG,
   ursprungErlaubt,
 } from '../_shared/zugriff.ts'
+import { type ChatNachricht, frageMistral as frageMistralMit } from '../_shared/mistral.ts'
 
-const MISTRAL_URL = 'https://api.mistral.ai/v1/chat/completions'
 const MAX_ANFRAGE_BYTES = 8_000
 
 const ERLAUBT = erlaubteUrspruenge(Deno.env.get('ERLAUBTE_URSPRUENGE'))
@@ -60,25 +60,11 @@ const db = createClient(Deno.env.get('SUPABASE_URL')!, Deno.env.get('SUPABASE_SE
   auth: { persistSession: false },
 })
 
-async function frageMistral(system: string, nachrichten: ReturnType<typeof nutzerNachrichten>): Promise<unknown> {
+/** Fragt Mistral mit den Einstellungen aus `_shared/mistral.ts` (dieselben wie im Testset). */
+async function frageMistral(system: string, nachrichten: ChatNachricht[]): Promise<unknown> {
   const key = Deno.env.get('MISTRAL_API_KEY')
   if (!key) throw new Error('MISTRAL_API_KEY fehlt')
-  const res = await fetch(MISTRAL_URL, {
-    method: 'POST',
-    headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      model: Deno.env.get('MISTRAL_MODEL') ?? 'mistral-small-latest',
-      temperature: 0.1,
-      // Platz für drei Fassungen von Nachfrage bzw. Rückmeldung.
-      max_tokens: 700,
-      response_format: { type: 'json_object' },
-      messages: [{ role: 'system', content: system }, ...nachrichten],
-    }),
-    signal: AbortSignal.timeout(20_000),
-  })
-  if (!res.ok) throw new Error(`Mistral ${res.status}: ${(await res.text()).slice(0, 200)}`)
-  const daten = await res.json()
-  return JSON.parse(daten.choices?.[0]?.message?.content ?? '{}')
+  return frageMistralMit(system, nachrichten, { key, modell: Deno.env.get('MISTRAL_MODEL') })
 }
 
 async function lesJson(req: Request): Promise<unknown> {

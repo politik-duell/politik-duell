@@ -91,7 +91,7 @@ Row Level Security: Frontend darf nur lesen (Themen, Maßnahmen, freigegebene Pr
 
 ## KI-Schnittstelle
 
-Edge Function `analyse` erhält: Gesprächsverlauf der Runde, Rolle, Liste aller Themen + Ursachen (IDs + Kurztext) und der vollständig erfassten Haltungen (ID + Frage).
+Edge Function `analyse` erhält: Gesprächsverlauf der Runde, Rolle, Liste aller Themen + Ursachen (IDs + Kurztext + Alltagssatz) und der vollständig erfassten Haltungen (ID + Frage).
 Antwort (JSON):
 
 ```json
@@ -109,6 +109,8 @@ Antwort (JSON):
 ```
 
 Systemprompt-Regeln: neutral, respektvoll, keine Belehrung, keine eigenen Bewertungen von Parteien, keine Links, Deutsch, kurze Sätze. Temperatur niedrig (0,1), damit die Zuordnung zu Thema und Ursachen stabil bleibt; Abwechslung im Text kommt aus den drei Fassungen, nicht aus einer höheren Temperatur.
+
+**Zuordnung messen:** `MISTRAL_API_KEY=… npm run ki:testset` schickt die festen Fälle aus `scripts/ki-testset/faelle.json` mit dem Prompt und Katalog des Arbeitsverzeichnisses an Mistral und zählt, wie oft Typ, Thema und Ursachen stimmen (zu viele, zu wenige, unnötige Nachfragen). So lässt sich eine Änderung am Prompt oder an Beschreibungen vor dem Deploy mit dem Stand von `main` vergleichen; die Antworten schwanken etwas, daher bei knappen Unterschieden `--runden 3`. Schreibt nichts in die Datenbank, kostet aber echte KI-Aufrufe – nicht Teil der CI.
 
 ## Moderation
 

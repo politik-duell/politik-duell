@@ -705,30 +705,20 @@ function corsKoepfe(ursprung, erlaubt) {
   };
 }
 
-// analyse/index.ts
+// _shared/mistral.ts
 var MISTRAL_URL = "https://api.mistral.ai/v1/chat/completions";
-var MAX_ANFRAGE_BYTES = 8e3;
-var ERLAUBT = erlaubteUrspruenge(Deno.env.get("ERLAUBTE_URSPRUENGE"));
-var GLOBAL_MAX = globalesLimit(Deno.env.get("RATE_LIMIT_GLOBAL"));
-var db = createClient(Deno.env.get("SUPABASE_URL"), Deno.env.get("SUPABASE_SERVICE_ROLE_KEY"), {
-  auth: {
-    persistSession: false
-  }
-});
-async function frageMistral(system, nachrichten) {
-  const key = Deno.env.get("MISTRAL_API_KEY");
-  if (!key) throw new Error("MISTRAL_API_KEY fehlt");
+var MISTRAL_STANDARDMODELL = "mistral-small-latest";
+async function frageMistral(system, nachrichten, zugang, maxTokens = 700) {
   const res = await fetch(MISTRAL_URL, {
     method: "POST",
     headers: {
-      Authorization: `Bearer ${key}`,
+      Authorization: `Bearer ${zugang.key}`,
       "Content-Type": "application/json"
     },
     body: JSON.stringify({
-      model: Deno.env.get("MISTRAL_MODEL") ?? "mistral-small-latest",
+      model: zugang.modell || MISTRAL_STANDARDMODELL,
       temperature: 0.1,
-      // Platz für drei Fassungen von Nachfrage bzw. Rückmeldung.
-      max_tokens: 700,
+      max_tokens: maxTokens,
       response_format: {
         type: "json_object"
       },
@@ -745,6 +735,24 @@ async function frageMistral(system, nachrichten) {
   if (!res.ok) throw new Error(`Mistral ${res.status}: ${(await res.text()).slice(0, 200)}`);
   const daten = await res.json();
   return JSON.parse(daten.choices?.[0]?.message?.content ?? "{}");
+}
+
+// analyse/index.ts
+var MAX_ANFRAGE_BYTES = 8e3;
+var ERLAUBT = erlaubteUrspruenge(Deno.env.get("ERLAUBTE_URSPRUENGE"));
+var GLOBAL_MAX = globalesLimit(Deno.env.get("RATE_LIMIT_GLOBAL"));
+var db = createClient(Deno.env.get("SUPABASE_URL"), Deno.env.get("SUPABASE_SERVICE_ROLE_KEY"), {
+  auth: {
+    persistSession: false
+  }
+});
+async function frageMistral2(system, nachrichten) {
+  const key = Deno.env.get("MISTRAL_API_KEY");
+  if (!key) throw new Error("MISTRAL_API_KEY fehlt");
+  return frageMistral(system, nachrichten, {
+    key,
+    modell: Deno.env.get("MISTRAL_MODEL")
+  });
 }
 async function lesJson(req) {
   const text = await req.text();
@@ -808,7 +816,7 @@ Deno.serve(async (req) => {
       antwort = antwortAusAuswahl(anfrage.auswahl, themen, ursachen);
     } else {
       const haltungen = await vollstaendigeHaltungen(testphase);
-      antwort = bereinigeAntwort(await frageMistral(systemPrompt(themen, ursachen, haltungen), nutzerNachrichten(anfrage.verlauf, anfrage.rolle)), anfrage.verlauf, themen, ursachen, parteien, Math.random, haltungen);
+      antwort = bereinigeAntwort(await frageMistral2(systemPrompt(themen, ursachen, haltungen), nutzerNachrichten(anfrage.verlauf, anfrage.rolle)), anfrage.verlauf, themen, ursachen, parteien, Math.random, haltungen);
     }
     if (antwort.typ === "forderung" && !antwort.pauschal && antwort.thema_id !== null) {
       const thema = themen.find((t) => t.id === antwort.thema_id);
@@ -845,7 +853,7 @@ async function erkenneInstrument(thema, verlauf, land, testphase) {
     if (mRes.error) throw mRes.error;
     const kandidaten = instrumenteZurAuswahl(thema.id, iRes.data, mRes.data, land);
     if (!kandidaten.length) return null;
-    const roh = await frageMistral(instrumentPrompt(thema, kandidaten), instrumentNachrichten(verlauf));
+    const roh = await frageMistral2(instrumentPrompt(thema, kandidaten), instrumentNachrichten(verlauf));
     return bereinigeInstrument(roh, kandidaten);
   } catch (e) {
     console.error("erkenneInstrument:", e instanceof Error ? e.message : e);
