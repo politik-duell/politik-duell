@@ -2,7 +2,7 @@
 // damit beide mit denselben Einstellungen fragen.
 
 const MISTRAL_URL = 'https://api.mistral.ai/v1/chat/completions'
-export const MISTRAL_STANDARDMODELL = 'mistral-small-latest'
+export const MISTRAL_STANDARDMODELL = 'mistral-medium-latest'
 
 export interface ChatNachricht {
   role: 'system' | 'user' | 'assistant'

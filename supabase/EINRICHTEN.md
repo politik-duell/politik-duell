@@ -72,7 +72,7 @@ Die Dateien in `supabase/dashboard/` sind zum Kopieren gedacht. Auf GitHub gibt 
    Rate-Limit (40 Anfragen pro 30 Minuten und Sitzung).
 
 Das Secret `MISTRAL_API_KEY` ist schon gespeichert ✔. Optional wechselt das Secret
-`MISTRAL_MODEL` das Modell (Standard: `mistral-small-latest`).
+`MISTRAL_MODEL` das Modell (Standard: `mistral-medium-latest`).
 
 > **Wichtig bei Mistral:** In der Mistral-Konsole unter *Billing* muss **„API pay-as-you-go“
 > aktiviert** sein – auch im Free-Plan. Sonst lehnt Mistral jeden API-Aufruf mit
