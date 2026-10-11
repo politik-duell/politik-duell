@@ -36,7 +36,7 @@ describe('haltungskarte', () => {
   it('zeigt keine Punkte und keine Wertung der Positionen', () => {
     const k = haltungskarte(MOCK_DATEN, 1)!
     expect(JSON.stringify(k)).not.toMatch(/punkte|wirksamkeit|umsetzbarkeit|richtig|falsch/i)
-    expect(Object.values(POSITION_TEXT)).toEqual(['Ja', 'Nein', 'Teils', 'Keine Aussage im Programm'])
+    expect(Object.values(POSITION_TEXT)).toEqual(['Ja', 'Nein', 'Teils', 'Keine eindeutige Aussage'])
   })
 
   it('kennzeichnet Entwürfe der Testphase', () => {

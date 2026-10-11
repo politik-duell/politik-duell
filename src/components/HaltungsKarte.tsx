@@ -92,8 +92,8 @@ export function HaltungsKarte({ haltungId, onThema }: { haltungId: number; onThe
         </p>
       )}
       <p className="meta">
-        Positionen aus den Bundeswahlprogrammen, mit Wortlaut und Seite. „Keine Aussage im Programm“ heißt: Das
-        Programm wurde durchsucht, eine Position dazu nicht gefunden. Über Werte entscheiden keine Studien – deshalb
+        Positionen aus den Bundeswahlprogrammen, mit Wortlaut und Seite. „Keine eindeutige Aussage“ heißt: Das
+        Programm wurde durchsucht, eine klare Position dazu aber nicht gefunden. Über Werte entscheiden keine Studien – deshalb
         gibt es hier keine Punkte und kein Richtig oder Falsch.
       </p>
     </section>

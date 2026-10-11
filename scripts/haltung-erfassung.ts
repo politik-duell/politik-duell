@@ -80,6 +80,8 @@ export function haltungBlind(k: Katalog, h: KatalogHaltung, funde: HaltungFund[]
 }
 
 const WERTE = new Set(['ja', 'nein', 'teils', 'keine_aussage'])
+/** Häufige Umschriften (fuer, hoehere …): Texte erscheinen im Spiel und gehören in normales Deutsch. */
+const UMSCHRIFT = /\b(fuer|ueber\w*|gegenueber|moeglich\w*|ausdruecklich\w*|laesst|waere|koennen|muessen|hoeher\w*|erhoehung\w*|grundsaetzlich\w*)\b/i
 
 /** Prüft die Antwort gegen die Blindliste: jede Kennung genau einmal, gültige Werte, Kurzfassung ohne Parteinamen. */
 export function pruefeHaltungAntwort(liste: HaltungBlindliste, a: HaltungAntwort): string[] {
@@ -94,6 +96,8 @@ export function pruefeHaltungAntwort(liste: HaltungBlindliste, a: HaltungAntwort
     gesehen.add(was)
     if (!WERTE.has(e?.position)) f.push(`${was}: position muss ja, nein, teils oder keine_aussage sein`)
     if (typeof e?.begruendung !== 'string' || e.begruendung.trim().length < 10) f.push(`${was}: begruendung fehlt (ein Satz: woran im Zitat die Einordnung hängt)`)
+    for (const feld of ['kurzfassung', 'begruendung'] as const)
+      if (UMSCHRIFT.test(e?.[feld] ?? '')) f.push(`${was}: ${feld} mit Umschrift statt Umlaut (ae/oe/ue) – mit ä, ö, ü schreiben`)
     if (e?.position !== 'keine_aussage') {
       const kf = e?.kurzfassung?.trim() ?? ''
       if (!kf) f.push(`${was}: kurzfassung fehlt`)
@@ -124,7 +128,7 @@ export function positionenEintragen(k: Katalog, datei: Json, funde: HaltungFund[
     if (fund.zitat && !e) throw new Error(`Keine Einordnung für ${p.kurzname} (${kennung})`)
     if (!fund.zitat || e!.position === 'keine_aussage') {
       const begruendung = fund.zitat
-        ? `Fundstelle S. ${fund.seite} äußert laut Einordnung ohne Parteinamen keine erkennbare Haltung zur Frage: ${e!.begruendung}`
+        ? `Nächstliegende Stelle (S. ${fund.seite}) ohne eindeutige Position: ${e!.begruendung.trim()}`
         : fund.keine_aussage!
       return { partei_id: p.id, position: 'keine_aussage', begruendung, stand: heute, geprueft: false, ki_entwurf: true }
     }

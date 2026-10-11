@@ -26,6 +26,8 @@ Gleiche Formulierung, gleiche Einordnung – egal wo sie steht. Im Zweifel zwisc
 
 **Kurzfassung** (nicht bei `keine_aussage`): höchstens 25 Wörter, neutrale eigene Worte, ohne Subjekt („Will …“, „Lehnt … ab“), nur was das Zitat trägt, Zahlen nur aus dem Zitat, keine Wertung.
 
+Kurzfassung und Begründung erscheinen im Spiel: in normalem Deutsch mit Umlauten und ß (nicht „fuer“, „hoehere“), ohne Verfahrenswörter wie „Kennung“ oder „Liste“.
+
 ## Antwort
 
 ```json
