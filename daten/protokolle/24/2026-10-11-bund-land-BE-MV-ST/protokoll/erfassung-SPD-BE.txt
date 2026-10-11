@@ -1,0 +1,82 @@
+{
+  "partei_id": 12,
+  "land": "BE",
+  "massnahmen": [
+    {
+      "beschreibung": "Bezahlbaren Wohnraum für Studierende ausbauen und den Anteil an Studierendenwohnungen verdoppeln.",
+      "ursachen_ids": [2401],
+      "buendel": "Mobilität und Zuzug ermöglichen",
+      "zitat": "Bezahlbaren und barrierefreien Wohnraum für Studierende bauen wir aus und verdoppeln die Quote an Studierendenwohnungen.",
+      "seite": 44
+    },
+    {
+      "beschreibung": "Sich für eine ortsabhängige Wohnkostenpauschale für Studierende einsetzen, weil das BAföG in Berlin zu niedrig ist.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2401],
+      "zitat": "Trotzdem bleibt die Finanzierung schwierig, weil das BAföG für ein Leben in Berlin zu niedrig ist. Wir setzen uns deshalb für eine ortsabhängige Wohnkostenpauschale ein.",
+      "seite": 44
+    },
+    {
+      "beschreibung": "Das Förderprogramm für Kinderwunschbehandlungen (assistierte Reproduktion) wieder auflegen.",
+      "ursachen_ids": [2402],
+      "buendel": "Familien und Geburten fördern",
+      "zitat": "Das Förderprogramm Assistierte Reproduktion für Paare mit unerfülltem Kinderwunsch legen wir unter Einbeziehung aller Familienmodelle wieder auf.",
+      "seite": 35
+    },
+    {
+      "beschreibung": "Die landeseigenen Kita-Eigenbetriebe mit zusätzlichen Investitionsmitteln finanziell stabilisieren und dabei die schwankende Geburtenrate berücksichtigen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2402],
+      "buendel": "Zuzug und Versorgung an Schrumpfung anpassen",
+      "zitat": "[…] Sie sichern die Daseinsvorsorge in der Grundstruktur. Wir stabilisieren ihre Finanzierung durch zusätzliche Investitionsmittel, berücksichtigen dabei schwankende Geburtenrate und ermöglichen mit den Eigenbetrieben ein wohnortnahes Kita-Angebot in allen Bezirken.",
+      "seite": 37
+    },
+    {
+      "beschreibung": "Das Finanzierungsmodell der Bezirke reformieren und das Konnexitätsprinzip konsequent umsetzen.",
+      "ursachen_ids": [2404],
+      "buendel": "Kommunale Finanzen stärken",
+      "zitat": "Wir stehen für eine verlässliche Finanzierung dieser Aufgaben. Dafür reformieren wir das Finanzierungsmodell der Bezirke, setzen das Konnexitätsprinzip konsequent um und streben ein Budgetierungssystem an, das einer wachsenden Stadt gerecht wird.",
+      "seite": 61
+    },
+    {
+      "beschreibung": "Den Bau von Wohnungen für Beschäftigte des Landes voranbringen, weil Wohnraummangel die Personalgewinnung erschwert.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2404],
+      "zitat": "Wohnraummangel erschwert die Personalgewinnung. Deshalb treiben wir den Bau von Beschäftigtenwohnungen voran.",
+      "seite": 61
+    },
+    {
+      "beschreibung": "Planungsrechtliche Genehmigungen beschleunigen, mit KI-gestützter Digitalisierung in den Bauämtern.",
+      "ursachen_ids": [2404],
+      "buendel": "Verfahren und Verwaltung vereinfachen",
+      "zitat": "Planungsrechtliche Genehmigungen sollen zügig erfolgen. Dazu treiben wir die die KI unterstützte Digitalisierung in den Bauämtern voran.",
+      "seite": 18
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 2401, "name": "Finanzielle Förderung für Studierende", "seite": 44 },
+    { "ursache": 2404, "name": "Wohnraum für Beschäftigte im öffentlichen Dienst", "seite": 61 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 2401, "seiten": [9, 52], "grund": "Azubi-Werk mit bezahlbarem Wohnraum für Auszubildende (S. 9) ist gleicher Hebel wie die Studierendenwohnungen im selben Bündel, nur eine Maßnahme je Bündel. Rückkehrhilfen für Menschen ohne Bleibeperspektive (S. 52) betreffen keine Abwanderung junger Menschen. Azubi-Ticket (S. 9) ist Mobilität, aber kein Halte- oder Zuzugsinstrument." },
+    { "ursache": 2402, "seiten": [7, 17, 34], "grund": "Wohnungsneubau mit Zielzahl (S. 17, „sollen“) ist ein Ziel; Zuzug wird nur als Lage genannt (S. 7). Geburtshilfe und Hebammenausbildung (S. 34) betreffen Versorgung bei Geburten, nicht die Geburtenzahl. Kita-Rechtsanspruch (S. 37) ist Vereinbarkeit, kein Geburten- oder Alterungsinstrument. Fachkräfte-Quote in Kitas, weil Geburtenrückgang sie nicht mehr gegenfinanziert (S. 37), gleiches Bündel wie die Kita-Eigenbetriebe, nur eine Maßnahme je Bündel." },
+    { "ursache": 2404, "seiten": [22, 23, 37, 38], "grund": "Bezirke personell und finanziell besser ausstatten (S. 22, 23, 37) ist gleicher Hebel wie die Finanzierungsreform im selben Bündel; nur eine Maßnahme je Bündel. Bauverwaltung mit Digitalisierung ist erfasst." }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "azubi-wohnraum", "ursache": 2401, "richtung": "Mobilität und Zuzug ermöglichen" },
+    { "begriff": "studierendenwohnung", "ursache": 2401, "richtung": "Mobilität und Zuzug ermöglichen" },
+    { "begriff": "geburtenrückgang", "ursache": 2402, "richtung": "Zuzug und Versorgung an Schrumpfung anpassen" }
+  ]
+}
+
+--- Protokoll (Thema 24, Teilauftrag 2: SPD Berlin, Abwanderung und Ausbildung) ---
+
+Gelesen: Inhaltsverzeichnis (S. 3–6); Wirtschaft und Ausbildung (S. 8–9: Azubi-Werk, Ausbildungsfinanzierung, S. 12–13 Gewerbe und Wirtschaftsförderung, kein Bezug); Wohnen (S. 16–19, Bau-Turbo, Bauämter, Bezirke); Familie und Kita (S. 34–38, Kinderwunsch, Kita-Eigenbetriebe, Geburtenrate, Bezirke Hilfen zur Erziehung); Hochschule (S. 44, Studierendenwohnungen, BAföG); Verwaltung (S. 61–62, Bezirksfinanzierung, Beschäftigtenwohnungen). Fundstellen S. 7, 8, 35, 37, 52 gelesen. Seiten 1, 2, 57, 65, 66 ohne Text; keine davon im relevanten Kapitel.
+
+Ursachen mit Maßnahme: 2401 (Studierendenwohnungen S. 44; Wohnkostenpauschale S. 44, Grenzfall), 2402 (Kinderwunschprogramm S. 35; Kita-Eigenbetriebe S. 37, Grenzfall), 2404 (Bezirksfinanzierung S. 61; Beschäftigtenwohnungen S. 61, Grenzfall; Bauämter S. 18). Ursache 2403 steht nicht im Auftrag.
+
+Richtungen ohne Maßnahme: Bündel „Perspektiven vor Ort schaffen und Rückkehr fördern“ (2401) – Stichwortsuche nach Perspektive, Rückkehr und Halten ergab nur Rückkehrhilfen für Geflüchtete (S. 52), die keine Abwanderung junger Menschen betreffen, und Arbeitsmarktperspektiven (S. 8); keine Maßnahme dazu.
+
+Weitere gleichartige Stellen im Protokoll: Azubi-Werk (S. 9), Azubiwohnungen von Unternehmen (S. 61), Ausbildungsbeihilfen (S. 44); Bezirke finanziell (S. 22, 23, 37).
+
+Hebel-Checkliste: nicht im Auftrag genannt.

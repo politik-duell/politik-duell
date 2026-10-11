@@ -1,0 +1,79 @@
+{
+  "partei_id": 16,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Queere Clubs und Orte vor Wuchermieten und Kürzungen staatlicher Zuschüsse schützen",
+      "ursachen_ids": [3201],
+      "ursachen_offen": [3203],
+      "buendel": "Flächen für Kultur schützen",
+      "zitat": "Queere Orte wie Jugendzentren, Projekte, Bars und Clubs müssen geschützt werden – auch vor Wuchermieten und Kürzungen staatlicher Zuschüsse.",
+      "seite": 47
+    },
+    {
+      "beschreibung": "Bund schafft die Voraussetzung, dass Länder und Kommunen Mietendeckel für Kleingewerbe und kulturelle Einrichtungen einführen können",
+      "ursachen_ids": [3201],
+      "zitat": "Kleingewerbe leiden unter explodierten Gewerbemieten. Der Bund muss dafür sorgen, dass Länder und Kommunen rechtssicher Mietendeckel für Kleingewerbe, Handwerk, kulturelle Einrichtungen sowie für soziale und gemeinnützige Träger einführen können.",
+      "seite": 8
+    },
+    {
+      "beschreibung": "Bundesregeln so ändern, dass Stadtplanung Freiräume für Clubkultur berücksichtigen kann",
+      "ursachen_ids": [3201],
+      "buendel": "Zusätzliche Flächen und Umnutzung ermöglichen",
+      "zitat": "Bundesregularien sollen es Stadtplaner*innen ermöglichen, verstärkt Freiräume etwa für die Clubkultur zu berücksichtigen, die für eine partizipative und experimentelle Nutzung zur Verfügung stehen.",
+      "seite": 45
+    },
+    {
+      "beschreibung": "Kulturförderung zur Pflichtaufgabe machen und Länder und Kommunen so ausstatten, dass sie gemeinnützige Kultur- und Veranstaltungsstätten verlässlich unterstützen können",
+      "ursachen_ids": [3203],
+      "buendel": "Verlässliche Förderung für Kulturorte",
+      "zitat": "Kunst und Kultur müssen als Teil der Daseinsvorsorge öffentlich gefördert werden. Kulturförderung sollte Pflichtaufgabe werden. Länder und Kommunen müssen finanziell so ausgestattet werden, dass sie Kulturförderung betreiben können. Gemeinnützige Kultur- und Veranstaltungsstätten und Menschen, die ehrenamtlich kulturelle Angebote schaffen, brauchen verlässliche und unbürokratische Unterstützung.",
+      "seite": 55
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 3202,
+      "seiten": [8, 34, 45, 47, 49, 55, 56],
+      "grund": "Kapitel Wohnen (S. 8–10), Clubs (S. 45, 47), Kultur (S. 55–56) und Fundstellen S. 34, 49 gelesen; nichts zu Schall, Lärmschutz oder Genehmigung von Veranstaltungen. Lichtwerbung (S. 34) und Awareness-Konzepte bei Großveranstaltungen (S. 49) betreffen keinen Veranstaltungslärm."
+    },
+    {
+      "ursache": 3204,
+      "seiten": [2, 5, 15, 17, 24, 28, 29, 30, 31, 32, 33, 34, 35, 42, 44, 53],
+      "grund": "Alle Fundstellen gelesen: Umbau meint dort Industrie-, Auto-, Energie-, Landwirtschafts- und Stadtumbau sowie Wärmewende. Keine Zusage zu Umbau, Sanierung, Brandschutz oder Technik von Veranstaltungsorten."
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 3201, "name": "Gewerbemieten begrenzen", "seite": 8 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "Wuchermiet", "ursache": 3201, "richtung": "Schutz vor überhöhten Mieten" },
+    { "begriff": "Veranstaltungsstätt", "ursache": 3203, "richtung": "Förderung gemeinnütziger Veranstaltungsstätten" }
+  ]
+}
+
+Protokoll Teilauftrag 1 (Thema 32, Räume für Kultur und Clubs)
+
+Gelesen: Inhaltsverzeichnis (S. 1–6); Wohnen (S. 8–10); Kommunen und Stadtentwicklung (S. 44–46); Kultur und Medien (S. 55–57); Fundstellen 3203 und 3201 (S. 20, 47, 49, 52); Pflichtursache 3204 vollständig über alle Fundstellen (S. 2, 5, 15, 17, 24, 28–35, 42, 44, 53); Kapitel Wirtschaft (S. 28–35). S. 1, 59, 60 ohne Text, ohne Bedeutung für das Thema.
+
+Nicht erfasst (gelesen, nicht aufgenommen):
+- S. 9 „Leerstand beenden“ (Leerstandsabgabe, Wohnraum): Wohnen, nicht Kulturorte.
+- S. 45 Umnutzung leerstehender Gewerbeflächen zu Sorgezentren: kein Kulturort, keine Verdrängung von Kultur.
+- S. 44 Förderung und Eigenanteile der Kommunen (allgemein, ohne Bezug zu Kulturorten).
+- S. 52 „mehr Investitionen … Jugend- und Kulturzentren“: Aufzählung in allgemeiner Infrastrukturforderung.
+- S. 55 Kooperationsverbot, Künstlersozialkasse, Filmförderung, Museen: allgemeine Kulturförderung ohne Bezug zu Kulturorten (R2).
+- S. 34 Lichtwerbung einschränken: keine Veranstaltungen (3202).
+- S. 49 Awareness-Konzepte bei Großveranstaltungen: nicht Schall (3202).
+- S. 20 Werbe- und Sponsoring-Verbot Tabak/Alkohol: kein Kulturort.
+- S. 57 Digitalisierung und kulturelle Teilhabe: kein Bezug zu Kulturorten.
+
+Gleichartige Stellen (Protokoll, nicht eigene Maßnahme):
+- Bündel „Flächen für Kultur schützen“: S. 56 „Diese oft ehrenamtlich geschaffenen Orte verdienen Bestandsschutz, finanzielle Unterstützung und Schutz vor Verdrängung durch Profitorientierung“ (Bekenntnis mit Forderung nach Bestandsschutz; gleicher Hebel wie S. 47, dort gewählt).
+- Bündel „Verlässliche Förderung für Kulturorte“: S. 56 „Hierfür müssen Förderungsprogramme unbürokratischer zugänglich gemacht werden“ (Infrastruktur für künstlerisches Schaffen); S. 16 Kinder- und Jugendfreizeiteinrichtungen, Musikschulen gebührenfrei und Kofinanzierung durch die Länder (Förderung, aber Freizeit und Musikschulen, nicht Kulturorte im engeren Sinn).
+
+Richtungen ohne Maßnahme:
+- 3202: beide Bündel („Schallschutz und angepasste Genehmigungen“, „Emissionen begrenzen und Anwohner schützen“) ohne Treffer; Fundstellen siehe nicht_erfasst.
+- 3203: Bündel „Eigenmittel und Kooperationen“ ohne Maßnahme (nur allgemeine Kommunalförderung S. 44, siehe oben).
+- 3204: beide Bündel ohne Maßnahme (siehe nicht_erfasst).
+
+Grenzfälle: M1 (S. 47) – Schutz vor Zuschusskürzungen als 3203 offen geführt; M2 (S. 8) Mietendeckel ist ein anderer Hebel als Bestandsschutz und daher ohne Bündel, Bündel „Gewerbemieten begrenzen“ neu gemeldet; M3 (S. 45) „sollen … ermöglichen“ als Handlungszusage aufgenommen.

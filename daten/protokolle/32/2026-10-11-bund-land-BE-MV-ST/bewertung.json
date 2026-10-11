@@ -1,0 +1,838 @@
+{
+  "blind_pruefsumme": "aae47ed90842aa0ea3bdc95e5848b15bec27a7c1257145d237db68b398674816",
+  "neue_instrumente": [
+    {
+      "kennung": "I1",
+      "name": "Verstetigte Förderung für Clubs, Spielstätten und soziokulturelle Zentren (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Dauerhafte Zuschüsse schließen die Budgetlücke kleiner Orte direkt; Fachnetzwerke nennen Förderung als zentrale Hilfe. Gegen Mieten- und Verdrängungsdruck wirkt Geld allein nur begrenzt.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://liveurope.eu/node/18023"
+    },
+    {
+      "kennung": "I3",
+      "name": "Zwischennutzung von Leerstand und öffentlichen Gebäuden für Kultur erleichtern (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Schafft kurzfristig günstige Räume für Kultur, Erfahrungen aus vielen Städten liegen vor. Zwischennutzungen sind aber befristet und unsicher und ersetzen keine dauerhaften Orte.",
+      "evidenz": "gemischt"
+    },
+    {
+      "kennung": "I4",
+      "name": "Kulturorte allgemein vor Verdrängung schützen, ohne konkretes Instrument (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Benennt das Problem der Verdrängung, nennt aber kein Instrument, das Mieten oder konkurrierende Nutzungen beeinflusst; die Wirkung hängt von der späteren Ausgestaltung ab.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I5",
+      "name": "Flächen für Clubs und Kulturorte planungsrechtlich sichern (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Planerische Sicherung und frühe Berücksichtigung in Quartieren können Verdrängung und spätere Konflikte verhindern. Wichtige Teile des Planungsrechts liegen beim Bund, Umsetzung erfolgt kommunal und dauert.",
+      "evidenz": "gemischt"
+    },
+    {
+      "kennung": "I6",
+      "name": "Gewerbemieten begrenzen und Gewerbemietende schützen per Bundesratsinitiative (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "Eine Begrenzung von Gewerbemieten setzt direkt an steigenden Mieten an; Wirkung im Gewerbe ist in Deutschland kaum untersucht. Das Land kann nur anstoßen, entscheiden muss der Bund.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I7",
+      "name": "Genehmigungsverfahren und Zuständigkeiten für Veranstaltungen vereinfachen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Einfachere Verfahren senken Aufwand und Hürden für Veranstaltungen; an Schallkonflikten mit Anwohnenden ändern sie wenig.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I8",
+      "name": "Vorrang bestehender Clubs bei Lärmkonflikten, Schallschutzpflicht für Neubauten (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Das Agent-of-Change-Prinzip legt Schallschutz Neubauenden auf und wird in Großbritannien und Australien angewendet; Berichte zeigen aber uneinheitliche Anwendung, Wirkungsstudien fehlen. Lärmrecht liegt teils beim Bund.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.ioa.org.uk/news/Small-music-venues---noise-complaints-contributing-to-closures"
+    },
+    {
+      "kennung": "I9",
+      "name": "Investitionsförderung für Sanierung, Technik, Schall- und Brandschutz von Kulturorten (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Zuschüsse für Umbau, Technik und Brandschutz machen Gebäude für Veranstaltungen nutzbar und senken Investitionslast; Umfang und Zielgenauigkeit für kleine Orte bleiben offen.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I10",
+      "name": "Einzelne Großimmobilien zu Kultur- und Veranstaltungsorten entwickeln (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Schafft wenige große Veranstaltungsorte; kleinen Spielstätten und Clubs mit knappen Budgets hilft das kaum. Umbauten großer Bestandsbauten sind teuer und langwierig.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I11",
+      "name": "Umbau von Handels- und Einkaufsimmobilien auch für Kulturnutzung (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Kann zusätzliche Räume für Kultur schaffen, Kultur ist aber nur eine von mehreren Nutzungen; ob Räume bezahlbar und für Musikbetrieb geeignet sind, bleibt offen.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I12",
+      "name": "Barrierefreien Umbau von Kulturorten fördern (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Verbessert die Nutzbarkeit für das Publikum, berührt die Ursache (Gebäude nicht für Publikumsbetrieb ausgelegt) aber nur am Rand; Akustik und Kosten bleiben unberührt.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I13",
+      "name": "Clubs als Kulturorte anerkennen und Förderrichtlinien für sie öffnen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Öffnet Clubs den Zugang zu Kulturförderung, schafft aber selbst keine zusätzlichen Mittel; Wirkung hängt von vorhandenen Budgets ab.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I14",
+      "name": "Clubs im Bauplanungsrecht als Kulturorte einstufen und vor Verdrängung schützen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Einstufung als Anlage für kulturelle Zwecke erweitert zulässige Standorte, der Bund ist zuständig. Planungsämter halten Konflikte aber nicht allein über Gebietskategorien für lösbar; Wirkungsbelege fehlen.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.evangelisch.de/inhalte/185975/08-05-2021/clubs-sind-kuenftig-kulturstaetten"
+    },
+    {
+      "kennung": "I15",
+      "name": "Gewerbemietrecht ändern, um Kulturorte vor Mietsteigerung und Verdrängung zu schützen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Setzt direkt an steigenden Gewerbemieten an; Wirkung einer Gewerbemietbegrenzung ist kaum untersucht, Eingriffe in die Vertragsfreiheit sind rechtlich anspruchsvoll und umstritten.",
+      "evidenz": "offen"
+    }
+  ],
+  "zuordnung": [
+    {
+      "kennung": "M001",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 1,
+        "begruendung": "Bessere Ausstattung von Ländern und Kommunen kann verlässliche Förderung von Veranstaltungsstätten sichern. Eine Pflichtaufgabe Kultur bräuchte Länderrecht oder Grundgesetzänderung; Finanzierung ungeklärt.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M002",
+      "instrument": "I3",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M003",
+      "instrument": "I5",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M004",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Einfachere Genehmigungen und Auflagen senken Hürden für Veranstaltungen; Veranstaltungsrecht liegt überwiegend bei Ländern und Kommunen, Schallkonflikte bleiben.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3202
+      ]
+    },
+    {
+      "kennung": "M005",
+      "instrument": "I4",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M006",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Ein Notfallfonds kann akute Schließungen abwenden, lindert aber nur Folgen und ändert die dauerhaft knappen Budgets nicht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M007",
+      "ursachen": []
+    },
+    {
+      "kennung": "M008",
+      "instrument": "I14",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M009",
+      "ursachen": []
+    },
+    {
+      "kennung": "M010",
+      "instrument": "I1",
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M011",
+      "ursachen": []
+    },
+    {
+      "kennung": "M012",
+      "ursachen": []
+    },
+    {
+      "kennung": "M013",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Gemeinsam nutzbare Proberäume und Ateliers verbessern die Raumlage für Kulturschaffende; Umfang und Finanzierung sind unbestimmt.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M014",
+      "instrument": "I11",
+      "ursachen": [
+        3204
+      ]
+    },
+    {
+      "kennung": "M015",
+      "instrument": "I14",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M016",
+      "instrument": "I11",
+      "ursachen": [
+        3204
+      ]
+    },
+    {
+      "kennung": "M017",
+      "instrument": "I4",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M018",
+      "instrument": "I1",
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M019",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 3,
+        "begruendung": "Änderungen im Lärmschutzrecht (etwa TA Lärm) können Konflikte zwischen Clubs und Anwohnenden entschärfen, der Bund ist zuständig. Inhalt der Änderung unbestimmt, Schutz der Anwohnenden muss gewahrt bleiben.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3202
+      ]
+    },
+    {
+      "kennung": "M020",
+      "ursachen": []
+    },
+    {
+      "kennung": "M021",
+      "ursachen": []
+    },
+    {
+      "kennung": "M022",
+      "ursachen": []
+    },
+    {
+      "kennung": "M023",
+      "ursachen": []
+    },
+    {
+      "kennung": "M024",
+      "instrument": "I1",
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M025",
+      "instrument": "I3",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M026",
+      "ursachen": []
+    },
+    {
+      "kennung": "M027",
+      "instrument": "I10",
+      "ursachen": [
+        3204
+      ]
+    },
+    {
+      "kennung": "M028",
+      "instrument": "I1",
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M029",
+      "instrument": "I6",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M030",
+      "ursachen": []
+    },
+    {
+      "kennung": "M031",
+      "instrument": "I7",
+      "ursachen": [
+        3202
+      ]
+    },
+    {
+      "kennung": "M032",
+      "instrument": "I14",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M033",
+      "instrument": "I4",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M034",
+      "instrument": "I10",
+      "ursachen": [
+        3204
+      ]
+    },
+    {
+      "kennung": "M035",
+      "ursachen": []
+    },
+    {
+      "kennung": "M036",
+      "instrument": "I3",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M037",
+      "ursachen": []
+    },
+    {
+      "kennung": "M038",
+      "instrument": "I1",
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M039",
+      "ursachen": []
+    },
+    {
+      "kennung": "M040",
+      "instrument": "I7",
+      "ursachen": [
+        3202
+      ]
+    },
+    {
+      "kennung": "M041",
+      "instrument": "I9",
+      "ursachen": [
+        3204
+      ]
+    },
+    {
+      "kennung": "M042",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Frühe Mediation kann Lärmkonflikte entschärfen, bevor Auflagen oder Schließungen drohen; an der Schallursache selbst ändert sie nichts, Wirkungsbelege fehlen.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3202
+      ]
+    },
+    {
+      "kennung": "M043",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Eine Härtefallregel senkt Kostensteigerungen bei der Grundsteuer für Clubs; der Anteil an den Gesamtkosten ist klein, rechtlich muss die Regel gleichheitskonform ausgestaltet werden.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M044",
+      "instrument": "I9",
+      "ursachen": [
+        3204
+      ]
+    },
+    {
+      "kennung": "M045",
+      "ursachen": []
+    },
+    {
+      "kennung": "M046",
+      "instrument": "I1",
+      "ursachen": [
+        3203,
+        3204
+      ]
+    },
+    {
+      "kennung": "M047",
+      "instrument": "I3",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M048",
+      "instrument": "I9",
+      "ursachen": [
+        3204,
+        3202,
+        3203
+      ]
+    },
+    {
+      "kennung": "M049",
+      "instrument": "I3",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M050",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Zielt auf selbstverwaltete Kulturorte mit kleinen Budgets, nennt aber weder Instrument noch Umfang der Unterstützung.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M051",
+      "instrument": "I1",
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M052",
+      "instrument": "I3",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M053",
+      "instrument": "I1",
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M054",
+      "ursachen": []
+    },
+    {
+      "kennung": "M055",
+      "instrument": "I14",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M056",
+      "ursachen": []
+    },
+    {
+      "kennung": "M057",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Eine Stiftung kann auch Kleinkunstbühnen unterstützen; der Bezug zu Spielstätten ist schmal, Kapital und Förderumfang sind offen.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M058",
+      "instrument": "I6",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M059",
+      "ursachen": []
+    },
+    {
+      "kennung": "M060",
+      "instrument": "I12",
+      "ursachen": [
+        3204
+      ]
+    },
+    {
+      "kennung": "M061",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 1,
+        "begruendung": "Die Einstufung von Clubs als Kultureinrichtungen im Baurecht erweitert zulässige Standorte; das Land kann sie nur beim Bund anstoßen.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://www.evangelisch.de/inhalte/185975/08-05-2021/clubs-sind-kuenftig-kulturstaetten"
+      },
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M062",
+      "instrument": "I1",
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M063",
+      "instrument": "I15",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M064",
+      "instrument": "I10",
+      "ursachen": [
+        3204
+      ]
+    },
+    {
+      "kennung": "M065",
+      "instrument": "I5",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M066",
+      "instrument": "I5",
+      "ursachen": [
+        3201,
+        3202
+      ]
+    },
+    {
+      "kennung": "M067",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 3,
+        "begruendung": "Ein Schallschutzfonds finanziert Dämmung direkt an der Konfliktursache, hohe Antragszahlen zeigen Bedarf. Eine Wirkungsevaluation fehlt, die Mittel reichen meist nur für einen Teil der Orte.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3202
+      ]
+    },
+    {
+      "kennung": "M068",
+      "instrument": "I13",
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M069",
+      "instrument": "I13",
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M070",
+      "instrument": "I1",
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M071",
+      "instrument": "I6",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M072",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Verzicht auf Sperrstunde und Tanzverbote vermeidet zusätzliche Auflagen für Clubs; Schallkonflikte mit Anwohnenden löst das nicht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3202
+      ]
+    },
+    {
+      "kennung": "M073",
+      "instrument": "I5",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M074",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 1,
+        "begruendung": "Eine Lärmschutzreform könnte Konflikte zwischen Clubs und Anwohnenden entschärfen; das Land kann sie nur beim Bund anstoßen, Inhalt bleibt offen.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3202
+      ]
+    },
+    {
+      "kennung": "M075",
+      "ursachen": []
+    },
+    {
+      "kennung": "M076",
+      "instrument": "I1",
+      "ursachen": [
+        3203
+      ]
+    },
+    {
+      "kennung": "M077",
+      "instrument": "I8",
+      "ursachen": [
+        3202
+      ]
+    },
+    {
+      "kennung": "M078",
+      "ursachen": []
+    },
+    {
+      "kennung": "M079",
+      "ursachen": []
+    },
+    {
+      "kennung": "M080",
+      "ursachen": []
+    },
+    {
+      "kennung": "M081",
+      "instrument": "I7",
+      "ursachen": [
+        3202
+      ]
+    },
+    {
+      "kennung": "M082",
+      "ursachen": []
+    },
+    {
+      "kennung": "M083",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 3,
+        "begruendung": "Öffnet bestehende Bundes-Investitionsprogramme für freie Szene und Popkultur und entlastet so kleine Orte bei Investitionen; Umfang der zusätzlichen Mittel ist offen.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3203,
+        3204
+      ]
+    },
+    {
+      "kennung": "M084",
+      "instrument": "I7",
+      "ursachen": [
+        3202
+      ]
+    },
+    {
+      "kennung": "M085",
+      "instrument": "I15",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M086",
+      "ursachen": []
+    },
+    {
+      "kennung": "M087",
+      "ursachen": []
+    },
+    {
+      "kennung": "M088",
+      "ursachen": []
+    },
+    {
+      "kennung": "M089",
+      "instrument": "I3",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M090",
+      "ursachen": []
+    },
+    {
+      "kennung": "M091",
+      "instrument": "I8",
+      "ursachen": [
+        3202
+      ]
+    },
+    {
+      "kennung": "M092",
+      "instrument": "I6",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M093",
+      "ursachen": []
+    },
+    {
+      "kennung": "M094",
+      "instrument": "I12",
+      "ursachen": [
+        3204
+      ]
+    },
+    {
+      "kennung": "M095",
+      "ursachen": []
+    },
+    {
+      "kennung": "M096",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 3,
+        "begruendung": "Förderung von Schallschutz setzt direkt an Lärmkonflikten an, der Bund hat bereits ein solches Programm aufgelegt. Eine Wirkungsevaluation fehlt, Umfang offen.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3202
+      ]
+    },
+    {
+      "kennung": "M097",
+      "ursachen": []
+    },
+    {
+      "kennung": "M098",
+      "ursachen": []
+    },
+    {
+      "kennung": "M099",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Benennt Mieten und Zuschusskürzungen als Gefahr für queere Clubs, nennt aber kein Instrument; Mietschutz bräuchte Änderungen im Gewerbemietrecht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3201,
+        3203
+      ]
+    },
+    {
+      "kennung": "M100",
+      "instrument": "I4",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M101",
+      "ursachen": []
+    },
+    {
+      "kennung": "M102",
+      "ursachen": []
+    },
+    {
+      "kennung": "M103",
+      "instrument": "I3",
+      "ursachen": [
+        3201
+      ]
+    },
+    {
+      "kennung": "M104",
+      "ursachen": []
+    }
+  ]
+}

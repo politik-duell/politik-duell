@@ -1,0 +1,78 @@
+{
+  "partei_id": 13,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Landesprogramm Soziokultur mit mindestens 500.000 Euro für soziokulturelle Zentren",
+      "ursachen_ids": [3203],
+      "buendel": "Verlässliche Förderung für Kulturorte",
+      "zitat": "Zudem engagieren wir uns für die verlässliche Förderung der soziokulturellen Zentren im Land. Zu diesem Zweck werden wir ein Landesprogramm Soziokultur einrichten, das mit mindestens 500.000 Euro ausgestattet wird.",
+      "seite": 70
+    },
+    {
+      "beschreibung": "Förderprogramm für Clubs und Musikspielstätten: Basisförderung für feste Spielstätten bei Sanierung und Betrieb, auch für Technik, Lärm- und Brandschutz",
+      "ursachen_ids": [3204],
+      "ursachen_offen": [3202],
+      "buendel": "Gebäude für Veranstaltungen anpassen",
+      "zitat": "Wir legen ein Förderprogramm mit klaren Richtlinien auf, um kleine und mittlere Clubs sowie Musikspielstätten zu unterstützen. Insbesondere feste Spielstätten sollen eine Basisförderung für Sanierungs- und Betriebskosten erhalten. Damit helfen wir Betreiber*innen bei notwendigen Investitionen in Technik, Lärm- und Brandschutz und sichern den laufenden Betrieb.",
+      "seite": 70
+    },
+    {
+      "beschreibung": "Kommunen sollen Leerstand abbauen und alternative Zwischennutzungen ermöglichen, etwa für nichtkommerzielle Treffpunkte",
+      "ursachen_ids": [],
+      "ursachen_offen": [3201],
+      "buendel": "Zusätzliche Flächen und Umnutzung ermöglichen",
+      "zitat": "Kommunen sollen beim Abbau von Leerstand unterstützt werden und intelligente, alternative Zwischennutzungen ermöglichen, z. B. durch Start-ups, Pop-up-Stores oder nichtkommerzielle Treffpunkte.",
+      "seite": 93
+    },
+    {
+      "beschreibung": "Kommunales Vorkaufsrecht sichern und ausweiten, um öffentliche Flächen vor Privatisierung und Bodenspekulation zu schützen",
+      "ursachen_ids": [],
+      "ursachen_offen": [3201],
+      "buendel": "Flächen für Kultur schützen",
+      "zitat": "Kommunen brauchen wirksame Instrumente gegen die Privatisierung öffentlicher Flächen. Deshalb wollen wir das kommunale Vorkaufsrecht sichern und ausweiten, um Bodenspekulation zu verhindern und die Schaffung von bezahlbarem Wohnraum sowie gemeinwohlorientierter Infrastruktur zu unterstützen.",
+      "seite": 98
+    },
+    {
+      "beschreibung": "Erhaltung und kulturelle Nutzung stillgelegter Industrieorte fördern, etwa als Museen oder Kulturzentren",
+      "ursachen_ids": [],
+      "ursachen_offen": [3201],
+      "zitat": "Industriekultur wollen wir sichtbar und erfahrbar machen. Denn stillgelegte Industrieorte erzählen unsere Geschichte. Wir fördern ihre Erhaltung, Erschließung und kulturelle Nutzung, etwa als Museen, Lernorte oder Kulturzentren.",
+      "seite": 71
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 3201, "name": "Förderung kultureller Nutzung stillgelegter Industrieorte", "seite": 71 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "Basisförderung", "ursache": 3203, "richtung": "Förderung von Betriebskosten" }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3202, "seiten": [9, 10, 24, 70], "grund": "S. 9–10 betreffen Verkehrs-, Umgebungslärm und Licht, S. 24 Abstände bei Windenergie; keine Regel zu Schall aus Konzerten, Auflagen oder Genehmigung von Veranstaltungen. Clubs-Lärmtechnik (S. 70) nur als Grenzfall erfasst." }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis (S. 2–6); Kapitel 3.6 „Lebendige Kultur“ (S. 69–72) vollständig; Kapitel 5.3 Bauen/Stadtentwicklung (S. 92–93) und 5.6 Kommunen (S. 97–98) ausschnittweise zu Leerstand, Zwischennutzung, Flächenschutz; Kapitel 1.1 Lärm (S. 9–10) und Fundstelle S. 24 im Ausschnitt; Fundstellen S. 13, 14, 18, 22, 25, 26, 33, 67 nur im Treffer-Ausschnitt geprüft (Wald, Tierhaltung, Energie, Wärme, Studium, Mehrfachnutzung von Verpackungen: andere Bedeutung von „Umbau“ bzw. „Mehrfachnutzung“). S. 91 (Wohnen, Miethausprojekte, Gentrifizierung) gelesen: Wohnen, Ursache 3201 nach R1 nicht zuzuordnen.
+
+Nicht erfasst (Stelle, Grund):
+- S. 70: Förderprogramm Clubs, Basisförderung Betriebskosten (3203, Förderung) – gleiches Bündel wie Soziokultur-Landesprogramm, dort die konkreteste Zahl; hier nur die Sanierungs-/Technikpassage (3204) erfasst.
+- S. 70: Förderung freier Theater und Spielstätten, institutionelle Förderung von Theaterhäusern (3203, Förderung) – gleichartig, nicht gesondert erfasst.
+- S. 70: „Clubkultur als schützenswertes Kulturgut anerkennen“ – Bekenntnis ohne eigene Handlung.
+- S. 70: Landesfonds Investitionsstau bei Theatern; S. 69: Förderprogramm barrierefreier Umbau von Kultureinrichtungen, Museumssonntag, 1,5 % Kulturhaushalt – allgemeine Kulturförderung ohne Bezug zu Clubs, Spielstätten, Soziokultur (R2).
+- S. 71: Großevents im ländlichen Raum, KulturPass 2.0 (Nachfrage, nicht Budget der Kulturorte), Bibliotheken – kein Bezug zu Kulturorten in Gefahr.
+- S. 98: Leerstand-Abgaben und Nutzungsfristen (Umnutzung, gleichartig zu Zwischennutzung S. 93, nicht gesondert erfasst); Übernahme ungenutzter Immobilien als letztes Mittel.
+- S. 71: Förderung neuer Nutzungen denkmalgeschützter Gebäude (Umnutzung, gleichartig zur Industriekultur).
+- S. 89 (Wirtschaft/Dorfzentren mit Veranstaltungsräumen) und S. 64–65 (Kooperation Kultur und Schule, KreaS): kein Kulturort-Budget bzw. eigenes Thema Bildung/Wirtschaft.
+- S. 92: Gemeinschaftliche Wohnformen, Mietshausprojekte, Durchmischung: Wohnen (R1, Miete), nicht 3201.
+- Lärmschutz, Immissionsschutz (S. 9–10, 24): siehe nicht_erfasst 3202.
+
+Richtungen ohne Maßnahme:
+- 3201 Flächen für Kultur schützen: kein Gewerbemietschutz, kein Kulturflächen-Schutz für Clubs gefunden; einzig allgemeiner Vorkaufsrecht-Passus (S. 98) als Grenzfall erfasst.
+- 3202 Schallschutz/Genehmigungen und Emissionen/Anwohnerschutz: keine Aussage zu Veranstaltungslärm außer Clubs-Technik (S. 70, Grenzfall).
+- 3204 Nutzung an das Gebäude anpassen: nur Treffer „Mehrfachnutzung“ (Verpackungen, S. 33), kein Bezug. Mehrzweck-Dorfzentren mit Veranstaltungsräumen (S. 89) bündeln Angebote ohne Bezug zu Musik- oder Kulturveranstaltungen; nicht erfasst.
+- Bündel „Schallschutz und angepasste Genehmigungen“ und „Emissionen begrenzen und Anwohner schützen“ (3202): im Text kein Zusage zu Veranstaltungen; Lärm- und Immissionsregeln betreffen Verkehr, Licht und Windenergie (S. 9–10, 24).
+- Bündel „Eigenmittel und Kooperationen“ (3203): Kooperation Kultur und Schule (KreaS, S. 64–65) ist Kulturelle Bildung, kein Budget oder Eigenmittel von Kulturorten; nicht erfasst. Kulturpass (S. 71) setzt bei der Nachfrage an.
+
+Seiten ohne Text: S. 1, 5, 100 nicht relevant (Titel/Impressum).

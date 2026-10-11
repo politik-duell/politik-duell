@@ -1,0 +1,80 @@
+{
+  "partei_id": 12,
+  "land": "BE",
+  "massnahmen": [
+    {
+      "beschreibung": "Eine neue Förderung für Clubs und Spielstätten einführen.",
+      "ursachen_ids": [3203],
+      "buendel": "Verlässliche Förderung für Kulturorte",
+      "zitat": "Für die Clubwirtschaft initiieren wir erstmals eine Spielstättenförderung und setzen Empfehlungen aus der Berliner Strategie zur Berliner Nachtökonomie um. So sichern wir Clubs langfristig.",
+      "seite": 11
+    },
+    {
+      "beschreibung": "Leerstehende Ladenflächen für Kultur- und andere Angebote zwischennutzen und dafür Genehmigungen vereinfachen.",
+      "ursachen_ids": [3201],
+      "buendel": "Zusätzliche Flächen und Umnutzung ermöglichen",
+      "zitat": "Leerstehende Shoppingcenter und Ladenzeilen beleben wir neu und ermöglichen dort Jugend-, Kultur-, Spiel-, Sport- und soziale Angebote. Zwischennutzungen fördern wir gezielt und vereinfachen Genehmigungen.",
+      "seite": 19
+    },
+    {
+      "beschreibung": "Sich auf Bundesebene für gesetzliche Regelungen zu bezahlbaren Gewerbemieten einsetzen, um Gewerbe und Kultur in den Kiezen vor Verdrängung zu schützen.",
+      "ursachen_ids": [3201],
+      "buendel": "Flächen für Kultur schützen",
+      "zitat": "Wir erhalten den Mix aus Gewerbe, Dienstleistungen und Kultur in unseren Kiezen und schützen Unternehmen vor Verdrängung. Dafür setzen wir uns auf Bundesebene für gesetzliche Regelungen ein, mit denen wir bezahlbare Gewerbemieten durchsetzen können.",
+      "seite": 13
+    },
+    {
+      "beschreibung": "Das ICC zu einem Zentrum für Kultur, Kreativwirtschaft und Großveranstaltungen umbauen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [3204],
+      "buendel": "Gebäude für Veranstaltungen anpassen",
+      "zitat": "Unser ICC bauen wir gemeinsam mit privaten Partner*innen aus dem internationalen Konzeptverfahren zu einem Zentrum für Kultur-, Kreativwirtschaft und Großveranstaltungen aus.",
+      "seite": 15
+    },
+    {
+      "beschreibung": "Lärmschutz-Vorgaben anpassen, um junge Menschen im öffentlichen Raum vor Verdrängung zu schützen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [3202],
+      "zitat": "Wir schützen junge Menschen zudem vor Verdrängung aus dem öffentlichen Raum, in dem wir die gesetzlichen Vorgaben zum Lärmschutz anpassen.",
+      "seite": 38
+    },
+    {
+      "beschreibung": "Stärkere Kooperation zwischen Produktion und Präsentation von Kunst ermöglichen, mit gemeinschaftlich nutzbaren Infrastrukturen wie Ateliers und Proberäumen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [3203],
+      "buendel": "Eigenmittel und Kooperationen",
+      "zitat": "Deshalb ermöglichen wir stärkere Kooperation zwischen Produktion und Präsentation von Kunst sowie Handwerk. Dafür braucht es neue Förderansätze und gemeinschaftlich nutzbare Infrastrukturen, wie z.B. Atelier- und Proberäume.",
+      "seite": 14
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3201, "seiten": [13, 19, 22, 54], "grund": "Weitere Stellen zu Flächen (Gewerbehöfe S. 13, Gewerbemietrecht des Bundes S. 22, landeseigene Immobilien für Kultur S. 54, Molkenmarkt S. 19) liegen in belegten Bündeln oder ohne Kulturbezug; Gewerbehöfe ohne Kulturbezug." },
+    { "ursache": 3202, "seiten": [15, 23], "grund": "Großveranstaltungen sollen sozial und ökologisch gestaltet werden (Ziel, kein Schallbezug). Lärm im Grünkonzept (S. 23) ohne Schallmaßnahme für Veranstaltungen." },
+    { "ursache": 3204, "seiten": [14, 15, 18, 59], "grund": "Messegelände modernisieren (S. 14–15) ist gleicher Hebel wie das ICC im selben Bündel, nur eine Maßnahme je Bündel. Um- und Mehrfachnutzung kommunaler Gebäude für soziale Infrastruktur (S. 18) und Mehrfachnutzung von Quartiersflächen (S. 59) haben keinen Kulturbezug." }
+  ],
+  "eigene_synonyme": []
+}
+
+--- Protokoll (Thema 32, Teilauftrag 1: SPD Berlin, Kulturräume und Clubs) ---
+
+Gelesen: Inhaltsverzeichnis (S. 3–6); Kapitel Wirtschaft und Kreativwirtschaft (S. 11–15, einschließlich Gewerbeflächen, Kunstproduktion und Großveranstaltungen); Wohnen und Flächen (S. 16–19, 22; Zwischennutzung und Umnutzung S. 18–19, Gewerbemietrecht S. 22); Jugend im öffentlichen Raum (S. 38); Grün und Lärm (S. 23); Kulturmetropole Berlin (S. 53–55); Quartiersflächen (S. 59). Weitere Fundstellen des Auftrags (S. 7, 21) betreffen Straßen, Verkehr und Wohnungsbau und wurden nicht als Kulturräume gewertet. Seiten 1, 2, 57, 65, 66 ohne Text; S. 57 ist eine Trennseite zwischen Sport und Verantwortung, nicht im Kulturkapitel.
+
+Ursachen mit Maßnahme: 3201 (Zwischennutzung S. 19; Gewerbemieten S. 13), 3202 (Lärmschutz S. 38, Grenzfall), 3203 (Spielstättenförderung S. 11; Kunstkooperation S. 14, Grenzfall), 3204 (ICC S. 15, Grenzfall).
+
+Richtungen ohne Maßnahme: keine. Bündel „Zusätzliche Flächen und Umnutzung ermöglichen“ ist mit der Zwischennutzung (S. 19) belegt; die landeseigenen Immobilien für kulturelle Nutzung (S. 54) gehören zum gleichen Hebel und sind deshalb nicht zusätzlich erfasst.
+
+Zu Bündel „Verlässliche Förderung für Kulturorte“: gleichartige Stellen (mehrjährige Förderung und Ressourcen für Kulturorte S. 54; Kostensteigerungen S. 54) bleiben im Protokoll, da das Bündel schon mit der Spielstättenförderung belegt ist.
+
+Nicht erfasst:
+- S. 54: „Ateliers, Proberäume, Theater, Museen und andere Kulturorte stärken wir …“ – allgemeines Ziel ohne Instrument.
+- S. 54: „Landeseigene Immobilien sollen stärker für kulturelle Nutzungen geöffnet…“ und „Analog zum Sport sollen Räume kostenlos zur Verfügung gestellt werden.“ – gleicher Hebel wie Zwischennutzung (Bündel belegt).
+- S. 55: Hauptstadtkulturfonds – Projektförderung der freien Szene, kein Bezug zu Kulturorten.
+- S. 19: Molkenmarkt mit „Gewerbe und Kultur“ – Neubauquartier, Bündel belegt.
+- S. 14–15: Messegelände modernisieren – gleicher Hebel wie ICC, Bündel belegt.
+- S. 13: Gewerbehöfe bauen – keine Kulturnutzung genannt.
+- S. 16: „Begegnungsorte und Kleingewerbe … dem Gemeinwohl dienen“ – Bekenntnis, kein Instrument.
+- S. 54: Industriekultur „weiterentwickeln“ – allgemeines Ziel.
+- S. 15: Großveranstaltungen „sozial, ökologisch und demokratisch gestaltet“ – Ziel.
+- S. 19: Genehmigungsvereinfachung für Zwischennutzung – im Bündel der Zwischennutzung enthalten.
+
+Hebel-Checkliste: nicht im Auftrag genannt.

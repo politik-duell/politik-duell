@@ -1,0 +1,33 @@
+{
+  "partei_id": 12,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Kulturschutzgebiete im Baurecht, die Clubs und kulturelle Einrichtungen vor Verdrängung schützen sollen",
+      "ursachen_ids": [3201],
+      "buendel": "Flächen für Kultur schützen",
+      "zitat": "Mit „Kulturschutzgebieten“ im Baurecht schützen wir kulturelle Einrichtungen wie Clubs vor Verdrängung und sichern ihnen eine langfristige Perspektive.",
+      "seite": 51
+    },
+    {
+      "beschreibung": "Trägerinnen und Träger kultureller Infrastruktur finanziell und organisatorisch stärker unterstützen",
+      "ursachen_ids": [3203],
+      "buendel": "Verlässliche Förderung für Kulturorte",
+      "zitat": "Wir wollen, dass die Trägerinnen und Träger kultureller Infrastruktur finanziell und organisatorisch stärker unterstützt werden.",
+      "seite": 50
+    }
+  ],
+  "nicht_erfasst": [
+    {"ursache": 3201, "seiten": [53], "grund": "Leerstand-Strategie für den ländlichen Raum betrifft Wohn- und Gewerberaum allgemein, nicht Kulturorte, Clubs oder Hausprojekte (R1)."},
+    {"ursache": 3202, "seiten": [49, 50, 51, 52, 53], "grund": "Kapitel Kultur (S. 49–53) gelesen; nichts zu Schall, Lärmschutz, Veranstaltungsgenehmigungen oder Anwohnenden."},
+    {"ursache": 3204, "seiten": [49, 50, 51, 52, 53], "grund": "Keine Zusage zu Umbau, Sanierung oder Brandschutz von Gebäuden für Veranstaltungen; Sportstätten-Sanierung (S. 52) gehört zum Thema Sport (R2)."}
+  ],
+  "eigene_synonyme": [
+    {"begriff": "kulturelle infrastruktur", "ursache": 3203, "richtung": "Förderung der Träger kultureller Infrastruktur"}
+  ]
+}
+--- Protokoll ---
+Thema 32 „Räume für Kultur und Clubs“, SPD (Bund). Textdatei: .cache/entwurf/32/texte/SPD-Bund.txt, Inhaltsverzeichnis S. 3–4 gelesen. Gelesene Kapitel: Kap. 18 Medienvielfalt, Kunst und Kultur, Sport (S. 49–52), Kap. 19 ländlicher Raum (S. 52–53, Leerstand S. 53), Kap. 6 Wohnen (S. 20–23, nur Wohnungsmiete = R1 ausgeschlossen), Kap. 14 Staat (S. 37–38, Genehmigungsfiktion ohne Kulturbezug), Kap. 9 Familie (S. 25–28, ohne Kulturbezug), Kap. 20 Einwanderung (S. 54–56, ohne Kulturbezug).
+Nicht erfasst: S. 51 Popkultur-Förderung und Games-Förderung (allgemeine Kulturförderung, R2); S. 51 Kinos im ländlichen Raum mit langfristigen Förderprogrammen (gleichartig zu 3203, Verlässliche Förderung, weitere Stelle); S. 50 „kulturelle Teilhabe“ fördern und Kultur-Staatsziel (allgemein, R2); S. 51 Bundesinitiative Industriekultur und Kultur- und Gedenkorte mit regionalem Bezug (allgemein, R2); S. 52 Sanierung von Sportstätten (Sport, R2); S. 53 Leerstand-Strategie (keine Kulturorte, siehe nicht_erfasst).
+Richtungen ohne Maßnahme: 3202 (beide Bündel), 3201 Bündel „Zusätzliche Flächen und Umnutzung ermöglichen“, 3203 Bündel „Eigenmittel und Kooperationen“, 3204 (beide Bündel).
+Seiten ohne Text: 1, 2, 67, 68 nicht relevant (Titel, Inhalt außerhalb Kapitel 18/19).

@@ -1,0 +1,47 @@
+{
+  "partei_id": 17,
+  "land": "BE",
+  "massnahmen": [
+    {
+      "beschreibung": "Städtischer Kurator stellt freien Kunstschaffenden Orte und Räume im Stadtraum zeitlich begrenzt für Projekte zur Verfügung",
+      "ursachen_ids": [3201],
+      "buendel": "Zusätzliche Flächen und Umnutzung ermöglichen",
+      "zitat": "Wir setzen einen Stadtkurator ein, der freien Künstlern und Künstlergruppen bestimmte Orte und Räume im Stadtraum zeitlich begrenzt für ihre kreativen Projekte zur Verfügung stellt.",
+      "seite": 20
+    },
+    {
+      "beschreibung": "Möglichst viele noch verbleibende nichtkommerzielle Räume für Kunst und Kulturerfahrung sichern",
+      "ursachen_ids": [3201],
+      "buendel": "Flächen für Kultur schützen",
+      "zitat": "Wir setzen uns grundsätzlich dafür ein, den kunstschöpferischen Aktivitäten in Berlin und den Kunsterfahrungen in Berlin möglichst viele der noch verbleibenden nichtkommerziellen Räume zu sichern.",
+      "seite": 20
+    },
+    {
+      "beschreibung": "Ausbau und langfristige Sicherung von Stadtteilzentren und Begegnungsprojekten",
+      "ursachen_ids": [],
+      "ursachen_offen": [3203],
+      "zitat": "Berlin braucht mehr Orte der Begegnung und verlässliche Angebote, die soziale Teilhabe fördern. Dazu gehören der Ausbau und die langfristige Sicherung von Stadtteilzentren, die Förderung von Nachbarschafts- und Begegnungsprojekten […]",
+      "seite": 12
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3202, "seiten": [18, 20, 50], "grund": "Kapitel Kultur (S. 18–21) und Verkehrskapitel (S. 50, Lärmschutz bei Straßenbau) gelesen; keine Regel zu Schall, Auflagen oder Genehmigung von Veranstaltungen." },
+    { "ursache": 3204, "seiten": [17, 21, 27, 43, 46], "grund": "Sanierung und Umbau nur allgemein (Schulen S. 17, Sanierungsplan Infrastruktur S. 43, Sportstätten S. 27, Krankenhäuser S. 21, Energieinfrastruktur S. 46); keine Gebäude für Veranstaltungen oder Kulturorte." }
+  ]
+}
+
+Protokoll
+
+Gelesen: Inhaltsverzeichnis und Vorwort (S. 1–6), Wohnen (S. 6–9, ohne Treffer für Gewerbemieten oder Zwischennutzung), Einsamkeit/Stadtteilzentren (S. 12), Bildung/Stadtteil (S. 13–15), Kapitel Kultur (S. 18–21), Verkehr (S. 50), Infrastruktur/Sanierungsplan (S. 43), Fundstellen S. 11, 19, 21, 27, 46.
+
+Grenzfall: S. 12 Stadtteilzentren und Begegnungsprojekte (Gemeinwesen, Einsamkeit) als ursachen_offen 3203, weil unklar ist, ob Stadtteilzentren als Kulturorte gelten. Kein Kulturbezug im Wortlaut.
+
+Nicht erfasst:
+- S. 18: Kulturfördergesetz (R2, allgemeine Kulturförderung ohne Bezug zu Kulturorten). Grenzfall zu 3203, nicht aufgenommen.
+- S. 18–19: Rücknahme der Kürzungen im Kulturetat und der Streichungen bei Projektfonds, Jugendkulturinitiative und Arbeitsraumprogramm für Ateliers (R2). Grenzfall zu 3203 und 3201 (Ateliers), nicht aufgenommen.
+- S. 19: Kulturpass für Jugendliche, Teilhabe am Konsum von Kultur, kein Bezug zu Kulturorten.
+- S. 20: Öffnung von Foyers außerhalb der Veranstaltungszeiten – „Wir schlagen vor“, Vorschlag ohne Zusage, keine Clubs oder Spielstätten.
+- S. 27, 21, 46: Sportstätten-, Krankenhaus- und Energieinfrastruktursanierung, keine Veranstaltungsstätten.
+
+Richtungen ohne Maßnahme: 3202 (Schall, Auflagen, Genehmigung), 3203 (Förderung von Kulturorten nur allgemein, Eigenmittel und Kooperationen), 3204 (Umbau für Musikveranstaltungen).
+Seiten ohne Text: keine relevanten.

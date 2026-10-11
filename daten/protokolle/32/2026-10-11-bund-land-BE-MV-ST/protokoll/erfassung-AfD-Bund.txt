@@ -1,0 +1,53 @@
+{
+  "partei_id": 15,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Bei Bestandsbauten soll immer das Baurecht aus dem Erstellungszeitraum gelten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [3201, 3204],
+      "zitat": "Zum Schutz von Eigentum und Bestand vor veränderten Bauvorschriften muss immer das Baurecht aus dem Erstellungszeitraum anwendbar bleiben.",
+      "seite": 38
+    },
+    {
+      "beschreibung": "Künstlerische und pädagogische Tätigkeiten im Kunst- und Kulturbereich bis zu einer Einkommensgrenze von der Umsatzsteuerpflicht befreien.",
+      "ursachen_ids": [],
+      "ursachen_offen": [3203],
+      "zitat": "Wir werden künstlerische und pädagogische Tätigkeiten im Kunst- und Kulturbereich bis zu einer sinnvollen Einkommensgrenze von der Umsatzsteuerpflicht befreien.",
+      "seite": 174
+    },
+    {
+      "beschreibung": "Staatlich geförderte Projekte, Vereine und Stiftungen sollen sich zur freiheitlich-demokratischen Grundordnung bekennen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [3203],
+      "zitat": "Projekte, Vereine und Stiftungen, die staatlich gefördert werden, müssen sich zur freiheitlich-demokratischen Grundordnung bekennen.",
+      "seite": 174
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 3202,
+      "seiten": [170, 171, 172, 173, 174, 175, 36, 37, 38, 39, 40, 41],
+      "grund": "Kapitel Kultur und Medienpolitik (S. 170–175) und Bauen (S. 36–41) gelesen; nichts zu Schall, Lärmschutz, Auflagen oder Genehmigung von Veranstaltungen."
+    }
+  ]
+}
+
+## Protokoll AfD (Bund) – Thema 32 „Räume für Kultur und Clubs“
+
+Gelesen: Inhaltsverzeichnis (S. 1–8); Kapitel „Bauen, Wohnen, Infrastruktur …“ S. 36–41 (Bestandsschutz, Miete, Infrastruktur, ländlicher Raum); Kapitel „Kultur und Medienpolitik“ S. 170–175. Fundstellen S. 4, 8 (Inhaltsverzeichnis), S. 37 (Wohnungsbau, Miete – nach R1 nicht Kultur), S. 80, 83, 129 (keine Kulturbezug), S. 173 (Kulturförderung) gelesen.
+
+Nicht erfasst:
+- S. 173: „Politische Vorgaben der staatlichen Kulturförderung sind abzulehnen.“ – Ablehnung, keine Förderzusage für Kulturorte.
+- S. 37–38: Mieter zu Eigentümern, Wohngeld, Mietrecht – Wohnungsmiete/Wohnungsbau nach R1 nicht Thema.
+- S. 40: „Ersatz für alte Bestandsbauten … im Außenbereich“ – kein Kulturbezug.
+- S. 174: „Keine Umsatzsteuerpflicht …“ und Förderbedingung wurden als Grenzfälle zu 3203 aufgenommen (siehe JSON).
+
+Richtungen ohne Maßnahme:
+- 3201 „Zusätzliche Flächen und Umnutzung ermöglichen“: keine Fundstelle (Umnutzung, Zwischennutzung, Bauland für Kultur).
+- 3202 (gesamt): keine Aussage zu Schall, Lärmschutz, Veranstaltungsgenehmigung, Nachtruhe.
+- 3203 „Eigenmittel und Kooperationen“: keine Maßnahme.
+- 3204 „Nutzung an das Gebäude anpassen“: keine Maßnahme (Standorte, Freilichtbühne, Mehrfachnutzung nicht im Text).
+- 3204 „Gebäude für Veranstaltungen anpassen“: kein Umbau-/Brandschutz-Bezug außer dem Bestandsschutz (Grenzfall, siehe JSON).
+
+Seiten ohne Text (1, 2, 9, 10, 35, 36, 52–54, 70–72, 85, 86, 98–100, 115, 116, 127, 128, 142–144, 157, 158, 168–170, 176) spielten keine Rolle: die Kapitelanfänge (S. 36, 170) sind lesbar.

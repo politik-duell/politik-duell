@@ -1,0 +1,129 @@
+{
+  "partei_id": 15,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Rückgewinnungsprogramme für abgewanderte Leistungsträger auflegen.",
+      "ursachen_ids": [2401],
+      "buendel": "Perspektiven vor Ort schaffen und Rückkehr fördern",
+      "zitat": "Folgende Maßnahmen werden wir in diesem Zusammenhang umsetzen: […] Statt solcher Abwanderungen brauchen wir Rückgewinnungsprogramme für abgewanderte Leistungsträger.",
+      "seite": 114
+    },
+    {
+      "beschreibung": "Berufsorientierung an Schulen früher praktizieren, um mehr ausbildungsfähige Schulabgänger zu gewinnen.",
+      "ursachen_ids": [2403],
+      "buendel": "Orientierung, Vermittlung und Mobilität",
+      "zitat": "Stärkung von Handwerk und Gewerbe durch mehr ausbildungsfähige Schulabgänger, indem eine frühere Berufsorientierung in den Schulen praktiziert und das Leistungsprinzip an unseren Schulen wieder gestärkt wird",
+      "seite": 21
+    },
+    {
+      "beschreibung": "Einmalige Willkommensprämie von 20.000 € bei der Geburt eines Kindes, bei fehlenden Rentenbeiträgen als Gutschrift.",
+      "ursachen_ids": [2402],
+      "buendel": "Familien und Geburten fördern",
+      "zitat": "Weitere Bausteine, die die Rente langfristig stabilisieren […] eine Willkommensprämie von 20.000 € für neugeborene Babys, sofern bereits Rentenbeiträge in derselben Höhe eingezahlt worden sind, andernfalls eine Gutschrift auf zukünftige Rentenbeiträge in dieser Höhe (die Prämie wird aus Steuermitteln finanziert und reduziert die Rente nicht).",
+      "seite": 21
+    },
+    {
+      "beschreibung": "Ehegattensplitting auf ein Familiensplitting ausweiten, um Familien mit Kindern steuerlich zu entlasten.",
+      "ursachen_ids": [2402],
+      "zitat": "Familien mit Kindern dürfen nicht schlechter gestellt werden als Kinderlose. Als eine der wichtigsten Maßnahmen in Anlehnung an den Wortlaut des Grundgesetzes fordern wir eine Ausweitung des Ehegattensplittings auf das Familiensplitting.",
+      "seite": 60
+    },
+    {
+      "beschreibung": "Ausreichend Kita-Plätze bereitstellen, mit Vorrang für Familien mit berufstätigen Eltern und Alleinerziehenden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2402],
+      "zitat": "Bereitstellung von ausreichend Kindergarten- und Kitaplätzen in Wohnraumnähe mit Vorrang für Familien, in denen beide Eltern arbeiten, sowie für arbeitende Alleinerziehende",
+      "seite": 21
+    },
+    {
+      "beschreibung": "Bei Schwangerschaftskonfliktberatung Ultraschallaufnahmen des Kindes zeigen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2402],
+      "zitat": "Während der Schwangerschaftskonfliktberatung sollen den Müttern Ultraschallaufnahmen des Kindes gezeigt werden, damit sie sich über den Entwicklungsstand des Kindes im Klaren sind.",
+      "seite": 151
+    },
+    {
+      "beschreibung": "Punktesystem mit Auswahlkriterien für außereuropäische Fachkräfte einführen, Branchen und Quoten festlegen.",
+      "ursachen_ids": [2402],
+      "buendel": "Zuzug und Versorgung an Schrumpfung anpassen",
+      "zitat": "Für außereuropäische Fachkräfte ist das Fachkräfteeinwanderungsrecht zu reformieren. Im Rahmen eines Auswahlverfahrens werden wir ein Punktesystem mit klaren Auswahlkriterien […] einführen und bedarfsgerecht entsprechende Branchen und Quoten festlegen.",
+      "seite": 114
+    },
+    {
+      "beschreibung": "Konnexitätsprinzip strikt einhalten, damit Kommunen nicht für Aufgaben anderer Ebenen zahlen.",
+      "ursachen_ids": [2404],
+      "buendel": "Kommunale Finanzen stärken",
+      "zitat": "In der Praxis wird dieses Prinzip zulasten insbesondere der Kommunen nicht durchgehend eingehalten, was dort zu erheblichen finanziellen Belastungen führt. Wir fordern die strikte Einhaltung des verfassungsrechtlich geregelten Prinzips.",
+      "seite": 56
+    },
+    {
+      "beschreibung": "Grundsteuer abschaffen; Kommunen werden über einen Zuschlag auf Einkommen- und Körperschaftsteuer entschädigt.",
+      "ursachen_ids": [2404],
+      "zitat": "Deshalb wird sie gänzlich abgeschafft. Die Kommunen werden durch einen Zuschlag auf die Einkommensteuer […] vollumfänglich entschädigt.",
+      "seite": 59
+    },
+    {
+      "beschreibung": "Planungs- und Genehmigungsverfahren für Infrastrukturprojekte vereinfachen, um Neuinvestitionen zu beschleunigen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2404],
+      "buendel": "Verfahren und Verwaltung vereinfachen",
+      "zitat": "Die deutsche Infrastruktur modernisieren wir durch: […] Beschleunigung notwendiger Neuinvestitionen durch Vereinfachung von Planungs- und Genehmigungsverfahren",
+      "seite": 15
+    },
+    {
+      "beschreibung": "Digitalisierung der Verwaltung vorantreiben.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2404],
+      "zitat": "Die deutsche Infrastruktur modernisieren wir durch: […] Vorantreiben der Digitalisierung der Verwaltung",
+      "seite": 15
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 2402, "name": "Familiensplitting", "seite": 60 },
+    { "ursache": 2402, "name": "Kinderbetreuungsplätze", "seite": 21 },
+    { "ursache": 2402, "name": "Schwangerschaftskonfliktberatung", "seite": 151 },
+    { "ursache": 2404, "name": "Grundsteuer abschaffen", "seite": 59 },
+    { "ursache": 2404, "name": "Digitalisierung der Verwaltung", "seite": 15 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "Rückgewinnung", "ursache": 2401, "richtung": "abgewanderte Fachkräfte zurückholen" },
+    { "begriff": "Familiensplitting", "ursache": 2402, "richtung": "steuerliche Entlastung von Familien" },
+    { "begriff": "Willkommensprämie", "ursache": 2402, "richtung": "Geldleistung bei Geburt" },
+    { "begriff": "Zuwanderung begrenzen", "ursache": 2402, "richtung": "Zuzug begrenzen" }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 2401,
+      "seiten": [16, 50, 65, 66, 102, 107, 108, 109, 111],
+      "grund": "Rückkehr-Begriffe betreffen Rückkehr zu Rechtslagen, Asyl- und Syrien-Rückkehr oder Abschiebung, nicht das Halten oder Zurückholen junger Menschen in der Region."
+    }
+  ]
+}
+
+## Protokoll AfD (Bund) – Thema 24 „Abwanderung aus strukturschwachen Regionen“
+
+Gelesen: Inhaltsverzeichnis (S. 1–8); Wirtschaft S. 15–16, 21 (Berufsorientierung, Rentenbausteine); Finanzen S. 55–60 (Konnexität, Grundsteuer, Familiensplitting); Asyl und Migration S. 100–115 (Zuzug, Grenzen, Fachkräfte, Rückkehr); Familie und Demografie S. 144–157; Bildung S. 158–163; Landwirtschaft und ländlicher Raum S. 40, 73–75. Fundstellen S. 4, 8 (Inhaltsverzeichnis) übersprungen; alle übrigen Fundstellen gelesen.
+
+Gleichartig zu erfassten Stellen (nicht eigene Einträge, gleicher Hebel):
+- 2401 Rückkehr/Rückgewinnung: S. 16 „Zurückgewinnung Ausgewanderter durch attraktive Rahmenbedingungen“ (gleich wie S. 114).
+- 2402 Geldleistung bei Geburt bzw. Familie: S. 21 Erziehungsgeld (Eigenbetreuung); S. 148 Rückzahlung von 20.000 € bei Geburt jedes Kindes; S. 148–149 Betreuungsgehalt bis zum 3. Geburtstag; S. 149 Ehe-Start-Kredit mit Erlass je Kind; S. 149 BAföG-Erlass bei Geburt.
+- 2402 Steuerentlastung für Familien: S. 149 Anhebung Kinderfreibetrag; S. 149 Mehrwertsteuer für Kinderbedarf auf 7 % (gleichartig zum Familiensplitting).
+- 2402 Zuzug begrenzen/steuern: S. 21 „Begrenzung der Zuwanderung auf qualifizierte Arbeitskräfte“ (Zielgruppe anders, Richtung gleich); S. 101 „Einreisen darf künftig nur noch, wem dies erlaubt ist“; S. 104 Grenzkontrollen und Zurückweisung; S. 104 Asylverfahren außerhalb Deutschlands; S. 105 keine pauschalen Zuwanderungskontingente; S. 110 „strikte Begrenzung des Zuzugsgeschehens“; S. 114 Blaue Karte EU fortentwickeln.
+- 2402 Kinderbetreuung: S. 153 „Betriebskindergärten stärker als bisher zu fördern“ (gleich Kita-Angebot).
+- 2404 Konnexität: S. 56 „Kosten der Zuwanderung … eigene Position … Konnexitätsprinzip eingehalten“.
+- 2404 Verfahren: S. 39 „die Bewilligung von Neubauprojekten zu beschleunigen“ (gleich Planungsverfahren).
+
+Nicht erfasst (gelesen, keine Maßnahme nach Schritt 4):
+- S. 15, 21 Ziele und Lagebeschreibungen („Mehr kluge Köpfe“, Sätze mit „sollen“).
+- S. 102–109 Asyl-Rückführung, Abschiebung, Bleiberecht, „freiwillige Rückkehr“ von Schutzsuchenden: Ausreise, nicht Zuzug in die Region; Rückkehrförderung betrifft keine Abwanderung junger Menschen.
+- S. 111 Staatsangehörigkeit; S. 112–113 Pflegekräfte zurück in den Beruf (Arbeitsbedingungen, eigenes Thema nach R2).
+- S. 162 „Haupt- und Realschulen sollen durch Kooperationen … attraktiver werden“ (Soll-Formulierung ohne eigene Zusage); S. 162 Berufliche Bildung „gestärkt“ (Ziel).
+- S. 163 Hochschulgrundfinanzierung und S. 163 Diplom/Magister: keine Standort- oder Regionsbezug (R1, R2).
+- S. 40, 73–75 ländlicher Raum: ÖPNV/Infrastruktur (eigenes Thema), Windkraftstopp und Verbleib (Begründung, keine Ursache).
+- S. 38 Kommunales Wohngeld: Wohnen/Miete nach R1 nicht hier.
+- S. 150–151 Schwangerschaftsabbruch-Regeln: außer Ultraschall-Beratung (erfasst) kein Geburtenbezug.
+
+Bündel ohne Maßnahme: „Mobilität und Zuzug ermöglichen“ (2401) – gesucht (Fachkräfte-Zuzug S. 114, Blaue Karte); der Fachkräfte-Zuzug fällt nach R1 unter 2402 und ist dort erfasst. „Ausbildungsplätze schaffen und sichern“ (2403) – gesucht (S. 161–162 duale Ausbildung, Lehrstellen, Kooperationen): nur Zielformulierungen oder Soll-Sätze, keine konkrete Zusage; die Kooperation S. 162 steht unter „Nicht erfasst“.
+
+Seiten ohne Text (1, 2, 9, 10, 35, 36, 52–54, 70–72, 85, 86, 98–100, 115, 116, 127, 128, 142–144, 157, 158, 168–170, 176) spielten keine Rolle, außer S. 157 (Kapitelende, Familie; Inhalt auf S. 156 erfasst) und S. 115 (leer, Migration).

@@ -1,0 +1,78 @@
+{
+  "partei_id": 13,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Gewerbemietrecht ändern, damit Clubs und vergleichbare Kulturorte vor Verdrängung geschützt sind",
+      "ursachen_ids": [3201],
+      "buendel": "Flächen für Kultur schützen",
+      "zitat": "Dazu gehören auch kulturelle Einrichtungen wie Theater, Kinos, Bibliotheken oder Clubs, die Raum für neue Begegnungen und gemeinsame Erfahrungen oder Projekte geben. […] Wir wollen diese Orte deshalb im Gewerbemietrecht vor Verdrängung schützen.",
+      "seite": 105
+    },
+    {
+      "beschreibung": "Baurecht ändern, um Rahmenbedingungen für Clubs und Livemusikstätten zu verbessern",
+      "ursachen_ids": [3201],
+      "ursachen_offen": [3202],
+      "buendel": "Zusätzliche Flächen und Umnutzung ermöglichen",
+      "zitat": "Wir wollen die Rahmenbedingungen für Kulturorte, besonders für Clubs- und Livemusikstätten und vor allem in Innenstädten, durch Änderungen beim Lärmschutz, im Baurecht sowie im Gewerbemietrecht verbessern. Die Förderung von Schallschutzmaßnahmen bauen wir aus.",
+      "seite": 124
+    },
+    {
+      "beschreibung": "Lärmschutz ändern, um Rahmenbedingungen für Clubs und Livemusikstätten zu verbessern",
+      "ursachen_ids": [3202],
+      "buendel": "Emissionen begrenzen und Anwohner schützen",
+      "zitat": "Wir wollen die Rahmenbedingungen für Kulturorte, besonders für Clubs- und Livemusikstätten und vor allem in Innenstädten, durch Änderungen beim Lärmschutz, im Baurecht sowie im Gewerbemietrecht verbessern. Die Förderung von Schallschutzmaßnahmen bauen wir aus.",
+      "seite": 124
+    },
+    {
+      "beschreibung": "Förderung von Schallschutzmaßnahmen für Kulturorte ausbauen",
+      "ursachen_ids": [3202],
+      "buendel": "Schallschutz und angepasste Genehmigungen",
+      "zitat": "Wir wollen die Rahmenbedingungen für Kulturorte, besonders für Clubs- und Livemusikstätten und vor allem in Innenstädten, durch Änderungen beim Lärmschutz, im Baurecht sowie im Gewerbemietrecht verbessern. Die Förderung von Schallschutzmaßnahmen bauen wir aus.",
+      "seite": 124
+    },
+    {
+      "beschreibung": "Kultur-Investitionsprogramme des Bundes für Einrichtungen der freien Szene und Popkultur stärker öffnen",
+      "ursachen_ids": [3203],
+      "buendel": "Verlässliche Förderung für Kulturorte",
+      "zitat": "Wir wollen die Kultur-Investitionsprogramme des Bundes vielfältiger aufstellen, indem wir Einrichtungen der freien Szene und der Popkultur stärker berücksichtigen.",
+      "seite": 125
+    },
+    {
+      "beschreibung": "Festivalförderfonds für Musikfestivals um Konzeptförderung und Beratung erweitern",
+      "ursachen_ids": [],
+      "ursachen_offen": [3203],
+      "zitat": "Die neu eingeführte Förderung für Musikfestivals (Festivalförderfonds) hat sich bewährt, sie erweitern wir um eine Konzeptförderung sowie um Beratung und Wissensvermittlung.",
+      "seite": 125
+    },
+    {
+      "beschreibung": "Sanierung kommunaler Kultureinrichtungen durch auskömmlichere Kommunalfinanzierung und Deutschlandfonds ermöglichen",
+      "ursachen_ids": [],
+      "ursachen_offen": [3204],
+      "zitat": "Allein zum Erhalt und zur Sanierung der kommunalen Infrastruktur, dazu zählen zum Beispiel Straßen, Spielplätze, Schwimmbäder, Jugendclubs, Sportplätze und Kultureinrichtungen, fehlen bundesweit 186 Milliarden Euro. Durch eine auskömmlichere Finanzierung der Kommunen und den Deutschlandfonds geben wir Kommunen endlich die Möglichkeit, diese dringend notwendigen Investitionen zu finanzieren.",
+      "seite": 108
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3204, "seiten": [16, 42, 44, 48, 50, 58, 60, 70, 71, 72, 78, 123], "grund": "Treffer sind Umbau von Stromnetzen, Wärmenetzen, Stadt, Ställen, Wohnungen und Gewerbe-Barrierefreiheit; keine Sanierung oder Umbau von Gebäuden für Veranstaltungen. Kultureinrichtungen nur in S. 108 (Grenzfall, siehe Maßnahmen)." },
+    { "ursache": 3201, "seiten": [71], "grund": "Umwandlung ungenutzter Büro- und Gewerbeflächen zu Wohnraum gehört zu Wohnungsbau (Miete), nicht zu Kulturflächen." }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "Gewerbemietrecht", "ursache": 3201, "richtung": "Schutz von Gewerbemieten für Clubs und Kulturorte" },
+    { "begriff": "Verdrängung", "ursache": 3201, "richtung": "Schutz vor Verdrängung von Clubs und Kulturorten" },
+    { "begriff": "Lärmschutz", "ursache": 3202, "richtung": "Änderungen beim Lärmschutz für Kulturorte" },
+    { "begriff": "Baurecht", "ursache": 3201, "richtung": "Änderungen im Baurecht für Kulturorte" }
+  ]
+}
+
+Protokoll
+
+Gelesen: Inhaltsverzeichnis (S. 4–7); Kapitel 3 „Für demokratischen Zusammenhalt“ (S. 105–106) und „Für handlungsfähige Kommunen“ (S. 108); Kapitel 3 „Für lebendige Kunst und Kultur“ (S. 124–126); S. 123 (Anfang Kulturorte-Bezug nicht vorhanden, Barrierefreiheit Gewerbeflächen); S. 111–112 (Ehrenamt, Sportstätten); S. 47, 53, 71 (Trefferstellen). Pflicht 3204: alle Fundstellen (S. 16, 42, 44, 48, 50, 58, 60, 70, 71, 72, 78, 123, 124) und Kontext gelesen.
+
+Gleiche Stellen: S. 124 (Lärm, Baurecht, Gewerbemietrecht) ist eine Zusage in drei Hebel aufgeteilt; Lärmschutz und Schallschutzförderung getrennt, Baurecht als Grenzfall (3201 mit 3202 offen). Gewerbemietrecht-Schutz S. 105 ist die konkrete Stelle für 3201; S. 124 nennt dasselbe Instrument erneut (nicht separat erfasst).
+
+Nicht erfasst: S. 124 „Ausbau der kulturellen Infrastruktur, besonders im ländlichen Raum“ (allgemein, nach R2 kein Bezug zu Clubs oder Spielstätten); S. 125 „Bundeskulturfonds“ und „freie Szene“ (Projektförderung von Kulturschaffenden, keine Kulturorte); S. 125 Kulturpass; S. 126 Honoraruntergrenzen und Künstlersozialversicherung (Personen, nicht Orte); S. 112 Sanierung von Sportstätten und Schwimmbädern (Sport); S. 111 Engagementkarte für Kultureinrichtungen (Vergünstigung, kein Ursachenbezug); S. 111 Parteisponsoring (kein Bezug); S. 47 Lärmschutz an Flughäfen und S. 53 Lärm (Verkehr und Umwelt, nicht Veranstaltungslärm); S. 84 und 99 „soziokulturelles Existenzminimum“ (Begriffstreffer ohne Bezug); S. 71 Wohnungsumbau und Aufstockung (Wohnungsbau, Miete).
+
+Richtungen ohne Maßnahme: 3203 Eigenmittel und Kooperationen (Textsuche nach Eigenmittel, Eigeneinnahmen, Kooperation, Ehrenamt: nichts zu Kulturorten; Parteisponsoring S. 111 ist kein Bezug); 3204 Nutzung an das Gebäude anpassen (Mehrfachnutzung S. 60 ist Landwirtschaft, Freilichtbühne/Open-Air ohne Fund).
+
+Seiten ohne Text: 1–3, 14, 63–64, 101–102, 159–160 spielten keine Rolle.

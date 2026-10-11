@@ -1,0 +1,90 @@
+{
+  "partei_id": 14,
+  "land": "BE",
+  "massnahmen": [
+    {
+      "beschreibung": "Clubs, Musikspielstätten und Open-Air-Formate frühzeitig in Stadtentwicklung, Quartiersplanung und Genehmigung berücksichtigen, um gewachsene Kulturorte zu sichern",
+      "ursachen_ids": [3201],
+      "ursachen_offen": [3202],
+      "buendel": "Flächen für Kultur schützen",
+      "zitat": "Clubs, Musikspielstätten und Open-Air-Formate müssen bei Stadtentwicklung, Quartiersplanung und Genehmigungsverfahren frühzeitig berücksichtigt werden. […] So lassen sich spätere Konflikte vermeiden und gewachsene Kulturorte besser sichern.",
+      "seite": 110
+    },
+    {
+      "beschreibung": "Wer neu in die Nachbarschaft von Clubs baut, muss selbst für ausreichenden Schallschutz sorgen (Agent-of-Change-Prinzip)",
+      "ursachen_ids": [3202],
+      "buendel": "Schallschutz und angepasste Genehmigungen",
+      "zitat": "Gleichzeitig unterstützen wir das sogenannte Agent-of-Change-Prinzip: Wer neu in die Nachbarschaft bestehender Clubs baut, muss selbst für ausreichenden Schallschutz sorgen.",
+      "seite": 34
+    },
+    {
+      "beschreibung": "Zwischennutzung leerstehender Gebäude, temporäre Veranstaltungsflächen und Open-Air-Angebote erleichtern",
+      "ursachen_ids": [3201],
+      "buendel": "Zusätzliche Flächen und Umnutzung ermöglichen",
+      "zitat": "Zwischennutzungen von leer stehenden Gebäuden, temporäre Veranstaltungsflächen und Open-Air-Angebote wollen wir erleichtern, um neue Freiräume für Kultur, Musik und kreative Experimente zu schaffen.",
+      "seite": 34
+    },
+    {
+      "beschreibung": "Keine pauschale Sperrstunde und keine Tanzverbote an Feiertagen für Clubs",
+      "ursachen_ids": [3202],
+      "buendel": "Emissionen begrenzen und Anwohner schützen",
+      "zitat": "Eine pauschale Sperrstunde oder Tanzverbote aufgrund von Feiertagen lehnen wir ab.",
+      "seite": 111
+    },
+    {
+      "beschreibung": "Konflikte zwischen Anwohnenden, Bezirken und Clubbetreibenden durch frühzeitige Mediation lösen, etwa über das Büro des Nachtlebens",
+      "ursachen_ids": [3202],
+      "zitat": "Konflikte zwischen Anwohnerinnen und Anwohnern, Bezirken und Clubbetreibenden sollen durch frühzeitige Mediation, insbesondere über das „Büro des Nachtlebens“, gelöst werden.",
+      "seite": 111
+    },
+    {
+      "beschreibung": "Bei Konflikten zwischen alten Clubrechten und neuen Ansprüchen von Anwohnenden sollen die alten Rechte vorgehen",
+      "ursachen_ids": [3202],
+      "zitat": "Dies gilt insbesondere dann, wenn alte Rechte von Clubs auf neue Ansprüche von Anwohnerinnen und Anwohnern treffen. Wir plädieren dafür, dass in diesen Fällen die alten Rechte vorgehen.",
+      "seite": 110
+    },
+    {
+      "beschreibung": "Clubs als Kulturorte anerkennen und so besseren Zugang zu Kulturförderung ermöglichen",
+      "ursachen_ids": [3203],
+      "buendel": "Verlässliche Förderung für Kulturorte",
+      "zitat": "Wir wollen Clubs konsequent als Kulturorte anerkennen und ihnen damit einen besseren Zugang zu Kulturförderung ermöglichen.",
+      "seite": 34
+    },
+    {
+      "beschreibung": "Barrierefreien Umbau landeseigener Theater innerhalb einer Übergangsfrist umsetzen",
+      "ursachen_ids": [],
+      "ursachen_offen": [3204],
+      "buendel": "Gebäude für Veranstaltungen anpassen",
+      "zitat": "Für landeseigene Theater soll das Land Berlin den barrierefreien Umbau innerhalb einer vierjährigen Übergangsfrist konsequent umsetzen.",
+      "seite": 120
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3201, "seiten": [34, 110], "grund": "Steigende Gewerbemieten nur als Lage genannt; Alte Münze und Kulturförderung ohne Clubbezug (R2)." },
+    { "ursache": 3202, "seiten": [34, 101], "grund": "Genehmigungsverfahren 'müssen einfacher werden' und Ansprechpartner als Kann-Vorschlag: Ziel bzw. Möglichkeit. Queer-Clubs-Bürokratieabbau (S. 101) gleichartig." },
+    { "ursache": 3203, "seiten": [101, 102, 103, 104], "grund": "Allgemeine Kulturförderung, Atelierförderung und Sponsoring ohne Bezug zu Clubs oder Spielstätten (R2)." }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "agent-of-change", "ursache": 3202, "richtung": "Schallschutzpflicht für Neubau nahe Clubs" },
+    { "begriff": "büro des nachtlebens", "ursache": 3202, "richtung": "Mediation bei Konflikten" },
+    { "begriff": "musikspielstätten", "ursache": 3201, "richtung": "Schutz von Musikspielstätten" }
+  ],
+  "neue_buendel": [
+    { "ursache": 3202, "name": "Mediation bei Nutzungskonflikten", "seite": 111 },
+    { "ursache": 3202, "name": "Vorrang alter Clubrechte bei Lärmkonflikten", "seite": 110 }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesene Seiten und Kapitel: Inhaltsverzeichnis (S. 2–5); Kapitel „Bürokratieabbau“ und „Sonderwirtschaftszone“ (S. 20–24, nur Genehmigungsbezug); „Stadtentwicklung und Wohnen“ (S. 34–39, Flächen und Gewerbe; S. 45–48 Gewerbe-/Leerstandsaussagen); „Einzelhandel, Handwerk, Gastronomie“ (S. 28); Kapitel „Am Beat der Zeit – Clubkultur stärken“ (S. 34); „Kultur“ mit „Kulturförderung und -finanzierung“, „Kulturelle Bildung“, „Einzelne Kultureinrichtungen“ und „Clublandschaft“ (S. 101–111); Barrierefreiheit (S. 119–121). Seiten 1, 94, 100, 105 fast ohne Text (105 Trennseite innerhalb Kultur, ohne erkennbaren Inhalt, Kapitel enthält dennoch Text).
+
+Richtungen ohne Maßnahme: Keine Maßnahme, Eigenmittel und Kooperationen (3203): Sponsoring und Spenden für Kultureinrichtungen (S. 102) nur allgemeine Kulturförderung ohne Clubbezug (R2). Nutzung an das Gebäude anpassen (3204): nur Zwischennutzung leerstehender Gebäude (S. 34), dort 3201 zugeordnet; keine Akustik- oder Umbauzusage für Clubs gefunden.
+
+Gleichartige weitere Stellen (nicht separat erfasst): S. 110 Schallschutz-Pflicht für neue Quartiere (gleicher Hebel wie Agent-of-Change, S. 34); S. 101 Bürokratieabbau für queere Clubs; S. 34 Clubs in Krisenzeiten unbürokratisch unterstützen (Förderhebel wie S. 34 Anerkennung); S. 28 Sondernutzungsflächen für kulturelle Projekte unbürokratisch ausweisen (Flächenhebel wie S. 34 Zwischennutzung); S. 20–21 Genehmigungsfiktion und Anzeigeverfahren allgemein (Verfahrenshebel, nicht Veranstaltungen).
+
+Nicht erfasst (Grund siehe oben): Alte Münze (S. 110, R2); Atelierförderung und Gespräche mit Immobilieneigentümern (S. 104, R2); Milieuschutz und Vorkaufsrecht (S. 38, Wohnen, R1); Tempelhofer Feld und Frei-Kiez (S. 22, 45–46: Wohnungsbau bzw. Wirtschaft, nicht Kulturorte).
+
+Grenzfälle: M1 (Planung, S. 110) hängt auch an 3202 (Konfliktvermeidung) – als ursachen_offen markiert. M9 (Theater-Umbau, S. 120) ist Gebäude-Umbau eines Kulturinstituts (R2-nah) – nur ursachen_offen 3204. M7 ist ein Plädoyer für eine Vorrangregel – als Zusage aufgenommen, neu benanntes Bündel.
+
+Stand im PDF: kein abweichender Stand erkennbar.

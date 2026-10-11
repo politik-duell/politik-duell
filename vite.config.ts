@@ -17,6 +17,9 @@ export default defineConfig({
       manifest: false,
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,webmanifest}'],
+        // Der Datenkatalog (nur Admin und Prüfseite, lazy geladen) wächst mit jedem
+        // Thema über die 2-MiB-Grenze; er wird bei Bedarf live geladen statt vorab.
+        globIgnores: ['**/katalog-*.js'],
         navigateFallback: '/index.html',
         cleanupOutdatedCaches: true,
         runtimeCaching: [],
