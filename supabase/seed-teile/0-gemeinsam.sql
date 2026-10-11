@@ -80,7 +80,7 @@ insert into public.themen (id, name, beschreibung) values
   (17, 'Kita-Betreuung', 'Familien finden keinen passenden Betreuungsplatz oder erleben, dass die Betreuung zu wenig Personal hat, ausfällt oder zu viel kostet.'),
   (18, 'Hitze und Unwetter', 'Hitzewellen, Starkregen und Hochwasser belasten die Gesundheit und beschädigen Wohnungen und Eigentum.'),
   (19, 'Diskriminierung im Alltag', 'Menschen werden wegen zugeschriebener Herkunft, Religion, sexueller oder geschlechtlicher Identität bei der Wohnungs- und Arbeitssuche, in Behörden, Schulen und im öffentlichen Raum benachteiligt oder angefeindet.'),
-  (20, 'Freizeitangebote und Treffpunkte für Jugendliche', 'Jugendliche finden vor Ort keine passenden Freizeitangebote oder Treffpunkte, können Aktivitäten nicht bezahlen oder verlieren Aufenthaltsorte durch Konflikte mit Anwohnenden und anderen Nutzenden.'),
+  (20, 'Freizeitangebote und Treffpunkte für Jugendliche', 'Jugendliche finden vor Ort keine passenden Freizeitangebote oder Treffpunkte, können Aktivitäten nicht bezahlen oder verlieren Aufenthaltsorte durch Konflikte mit Anwohnenden und anderen Nutzenden (etwa Lärmbeschwerden über Jugendliche an ihrem Treffpunkt).'),
   (21, 'Armut und Kinderarmut', 'Menschen haben zu wenig Geld für grundlegende Bedürfnisse und gesellschaftliche Teilhabe. Kinder wachsen unter finanziellen Einschränkungen auf, auch wenn ihre Familien Unterstützung erhalten.'),
   (22, 'Radikalisierung und Extremismus', 'Menschen erleben die Hinwendung zu extremistischen Gruppen und Einstellungen sowie politische Konflikte, in denen gegenseitige Abwertung und Gesprächsabbrüche den Austausch erschweren.'),
   (23, 'Mobbing und Druck in der Schule', 'Schülerinnen und Schüler erleben Mobbing, Cybermobbing, Ausgrenzung oder belastenden Leistungs- und Prüfungsdruck im Schulalltag.'),
@@ -97,7 +97,7 @@ insert into public.themen (id, name, beschreibung) values
   (34, 'Umgang der Polizei mit jungen Menschen', 'Junge Menschen erleben Polizeikontrollen oder Einsätze als belastend, unangemessen oder schwer nachvollziehbar und können mögliche Fehler nur schwer klären lassen.'),
   (35, 'Kosten für den Führerschein', 'Der Führerscheinerwerb ist teuer. Fahrschulpreise, Fahrstunden, Prüfungen und Wartezeiten können Kosten und Dauer schwer planbar machen.'),
   (36, 'Leerstand und Geschäftsschließungen in Innenstädten', 'In Innenstädten und Ortskernen schließen Geschäfte. Ladenflächen stehen leer, Einkaufsangebote verschwinden und manche Orte werden weniger besucht.'),
-  (37, 'Finanzierung von Sportvereinen und Sportstätten', 'Breiten- und Amateursportvereinen fehlen finanzielle Spielräume oder geeignete Sportstätten, um Training und Wettkämpfe dauerhaft anzubieten.')
+  (37, 'Finanzierung von Sportvereinen und Sportstätten', 'Breiten- und Amateursportvereinen fehlen finanzielle Spielräume, Unterstützung für ehrenamtliche Trainer und Übungsleiter oder geeignete Sportstätten wie Sporthallen, Sportplätze und Schwimmbäder, um Training, Schwimmkurse und Wettkämpfe dauerhaft anzubieten.')
 on conflict (id) do update set name = excluded.name, beschreibung = excluded.beschreibung;
 
 insert into public.ursachen (id, thema_id, beschreibung, quelle_url, ebene, alltag) values
