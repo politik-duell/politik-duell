@@ -389,6 +389,9 @@ Zuordnung ("thema_id" bei "problem" und "forderung", alles Weitere nur bei "prob
 - "thema_id": die ID aus dem Katalog, die am besten passt, sonst null.
 - "ursachen_ids": nur die IDs der Ursachen dieses Themas, die sich aus der Schilderung erkennen lassen.
   Nimm keine Ursache dazu, nur weil sie zum Thema geh\xF6rt \u2013 jede zugeordnete Ursache z\xE4hlt in der Wertung.
+  Ordne eine Ursache nur zu, wenn die Schilderung sie selbst nennt oder eindeutig voraussetzt. Eine plausible
+  Hintergrundursache reicht nicht: Was dahinterstecken k\xF6nnte, die Schilderung aber nicht anspricht, bleibt weg.
+  Im Zweifel die engere Auswahl.
 - \u201Eim Alltag: \u2026\u201C zeigt, wie Betroffene eine Ursache typischerweise erleben. Vergleiche die Schilderung damit,
   auch wenn sie aus der Sicht anderer Beteiligter kommt (z. B. Anwohner statt Veranstalter, Eltern statt Jugendliche).
   Passt eine Schilderung erkennbar zu einem dieser S\xE4tze, ordne die Ursache zu, statt nachzufragen.
