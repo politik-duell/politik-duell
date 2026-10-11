@@ -1,13 +1,13 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import type { BewertungEingabe, Wert } from '../../supabase/functions/_shared/pruefung'
 import { Logo } from '../components/Logo'
-import { pruefEinheiten, type Pruefeinheit } from '../data/katalog'
+import { pruefEinheiten, type Katalog, type Pruefeinheit } from '../data/katalog'
 import type { Thema, Ursache } from '../data/types'
 import { UMSETZBARKEIT, WIRKSAMKEIT } from '../rechtliches/massstab'
 import { Skala } from '../rechtliches/Methode'
 import * as api from './api'
 import { blindeReihenfolge } from './auswertung'
-import { KATALOG } from './katalog'
+import { BASIS, ladeThema } from './katalog'
 
 // Prüfseite für eingeladene Prüfende (#/pruefen/<token>), Ablauf siehe
 // docs/plan-pruefung.md: Einwilligung → Ziel und Maßstab → Maßnahmen ohne
@@ -29,10 +29,15 @@ const bewertet = (b: api.GeladeneBewertung | undefined) => b?.wirksamkeit != nul
 
 type Stand = api.PruefStand | { fehler: string }
 
-/** Lädt den Stand; Fehler werden zur Meldung (wirft nie). */
+/** Daten der zugewiesenen Themen – je Thema eine eigene Datei, geladen mit dem Stand. */
+const kataloge = new Map<number, Katalog>()
+
+/** Lädt den Stand und die Daten seiner Themen; Fehler werden zur Meldung (wirft nie). */
 async function ladeStand(token: string): Promise<Stand> {
   try {
-    return await api.laden(token)
+    const stand = await api.laden(token)
+    await Promise.all(stand.themen.map(async (id) => kataloge.set(id, await ladeThema(id))))
+    return stand
   } catch (e) {
     if (e instanceof api.PruefFehler && e.status === 403)
       return { fehler: 'Dieser Link ist nicht (mehr) gültig. Bitte wende dich an die Person, die dich eingeladen hat.' }
@@ -81,15 +86,18 @@ export function Pruefseite({ token }: { token: string }) {
   )
 }
 
-const themaVon = (id: number) => KATALOG.themen.find((t) => t.id === id)
+const themaVon = (id: number) => kataloge.get(id)?.themen.find((t) => t.id === id)
 // Bewertet wird je Prüfeinheit: ein Instrument (gleicher Lösungsweg in mehreren Programmen) oder eine einzelne Maßnahme.
-const massnahmenVon = (themaId: number) => blindeReihenfolge(pruefEinheiten(KATALOG, themaId))
+const massnahmenVon = (themaId: number) => {
+  const katalog = kataloge.get(themaId)
+  return katalog ? blindeReihenfolge(pruefEinheiten(katalog, themaId)) : []
+}
 
 /** Ebene, aus deren Sicht die Umsetzbarkeit bewertet wird (ein Instrument gilt nur für eine). */
 function ebeneText(e: Pruefeinheit): string {
   const laender = [...new Set(e.massnahmen.map((m) => m.land).filter((l): l is string => !!l))]
   if (!laender.length) return 'Bundesebene'
-  return `Landesebene (${laender.map((l) => KATALOG.laender.find((x) => x.id === l)?.name ?? l).join(', ')})`
+  return `Landesebene (${laender.map((l) => BASIS.laender.find((x) => x.id === l)?.name ?? l).join(', ')})`
 }
 
 function Einwilligung({ token, stand, onFertig }: { token: string; stand: api.PruefStand; onFertig: () => Promise<void> }) {
@@ -256,7 +264,7 @@ function Bewerten({ token, stand, onNeuLaden }: { token: string; stand: api.Prue
 
   const thema = themaVon(themaId)
   const massnahmen = massnahmenVon(themaId)
-  const ursachen = KATALOG.ursachen.filter((u) => u.thema_id === themaId)
+  const ursachen = kataloge.get(themaId)?.ursachen.filter((u) => u.thema_id === themaId) ?? []
   const fertig = massnahmen.filter((m) => bewertet(werte[m.id])).length
   const abgesendet = massnahmen.length > 0 && massnahmen.every((m) => werte[m.id]?.abgesendet)
 
