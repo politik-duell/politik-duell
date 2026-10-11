@@ -1,0 +1,70 @@
+{
+  "partei_id": 11,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Sportstättenförderung für Kommunen und Vereine fortsetzen.",
+      "ursachen_ids": [3701],
+      "buendel": "Sanierung und Neubau von Sportstätten fördern",
+      "zitat": "Wir werden die Sportstättenförderung für Kommunen und Vereine fortsetzen.",
+      "seite": 71
+    },
+    {
+      "beschreibung": "Sportentwicklungsplanung und interkommunale Zusammenarbeit im Sport strukturell fördern.",
+      "ursachen_ids": [3701],
+      "buendel": "Bestand priorisieren und gemeinsam nutzen",
+      "zitat": "Sportentwicklungsplanung und interkommunale Zusammenarbeit fördern wir strukturell.",
+      "seite": 71
+    },
+    {
+      "beschreibung": "Neues Förderprogramm zur Entlastung der Vereine, damit ausreichend Trainerinnen, Trainer und Übungsleiter zur Verfügung stehen.",
+      "ursachen_ids": [3703],
+      "buendel": "Vereinsförderung und Entlastung des Ehrenamts",
+      "zitat": "Dafür braucht es ausreichend Trainerinnen und Trainer sowie Übungsleiter. Zur Entlastung der Vereine wollen wir hierfür ein neues Förderprogramm auflegen.",
+      "seite": 71
+    },
+    {
+      "beschreibung": "Übungsleiter- und Ehrenamtspauschale auf Bundesebene anheben.",
+      "ursachen_ids": [3703],
+      "zitat": "Wir setzen uns für die Anhebung der Übungsleiter- und Ehrenamtspauschale auf Bundesebene ein.",
+      "seite": 71
+    },
+    {
+      "beschreibung": "Ehrenamts-Check bei allen neuen Gesetzen einführen und Vereinfachungen im Vereins- und Gemeinnützigkeitsrecht anstreben.",
+      "ursachen_ids": [3703],
+      "zitat": "Wir führen einen Ehrenamts-Check bei allen neuen Gesetzen ein und setzen uns für Vereinfachungen im Vereins-, Gemeinnützigkeits- und Steuerrecht auf Bundesebene ein.",
+      "seite": 70
+    },
+    {
+      "beschreibung": "Kooperationen von Vereinen mit Schulen und Kitas, um junge Menschen für Engagement zu gewinnen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [3703],
+      "buendel": "Eigeneinnahmen und Kooperation der Vereine",
+      "zitat": "Besonders wollen wir junge Menschen für Engagement gewinnen, etwa durch Kooperationen von Vereinen mit Schulen und Kitas.",
+      "seite": 71
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3702, "seiten": [12, 26, 46, 55, 70, 71], "grund": "Keine Zusage zu Betriebskosten, Hallenentgelten oder Auslastung von Sportstätten. Die Treffer auf S. 12, 26, 46 und 55 betreffen Wirtschaft, Gesundheit, Energie und Verwaltung ohne Sportbezug." }
+  ],
+  "neue_buendel": [
+    { "ursache": 3703, "name": "Übungsleiterpauschale anheben", "seite": 71 },
+    { "ursache": 3703, "name": "Bürokratieabbau für Vereine", "seite": 70 }
+  ]
+}
+
+--- Protokoll ---
+Gelesen: Inhaltsverzeichnis (S. 2); Kapitel „Starkes Ehrenamt – lebendiger Sport“ (S. 70–71); Rückblick Sport (S. 5–6, nur Vergangenheit); Fundstellen S. 5, 6, 12, 26–27, 46–47, 49, 55, 70, 71, 73.
+Maßnahmen Ursache 3701 (Sportstätten, Förderung/Planung) und 3703 (Vereine, Ehrenamt, Entlastung) siehe JSON. Gleichartige Stellen im selben Bündel nicht zusätzlich erfasst:
+- 3703 Bündel „Vereinsförderung und Entlastung des Ehrenamts“ (Förderung): S. 70 „Landesprogramm ‚Ehrenamt‘“ (Förderlinie für Engagierte, gleichartig zum Förderprogramm S. 71) und „Ehrenamtsstruktur stärken“ (Freiwilligenagenturen, S. 70); S. 71 „Wohlfahrtsverbände und Landessportbund bleiben ein zentraler Baustein“.
+- 3703 Bürokratieabbau (gleichartig zum Ehrenamts-Check): S. 70 „Führungszeugnisse, Statistikpflichten und Kennzeichnungspflichten bei Vereinsfesten müssen auf das notwendige Maß reduziert werden“; „Förderpraxis verbessern“ (S. 70, digitale Antragsverfahren, vereinheitlichte Förderverfahren).
+Nicht erfasst:
+- S. 71 „Eliteschulen des Sports“, „Landessportschule“, „Olympiastützpunkt“ werden weiter finanziert – Spitzensport ohne Vereins- oder Sportstättenbezug (R2).
+- S. 71 „Das Nationale Schwimmzentrum in Magdeburg ist eine zentrale Investition für den Spitzensport“ – Bekenntnis zu einer bestehenden Investition ohne neue Handlung. Grenzfall für 3701.
+- S. 5 „Wir haben Sportvereine und Kommunen beim Neubau … unterstützt“ – Rückblick.
+- S. 71 „Sport als gesellschaftliche Kraft“, Gesundheit, Integration, Schwimmen lernen im Schulunterricht – Ziel bzw. Schulbezug (R2), kein Bezug zu Sportstätten, Betriebskosten oder Vereinsfinanzierung.
+- S. 70 „Die 380.000 Vereinssportler unterstützen“, „Starkes Ehrenamt“ – Ziele.
+Richtung ohne Maßnahme: 3702 (Betriebskosten und Hallenentgelte; Eigenverantwortung und Auslastung) – im Sportkapitel keine Fundstelle.
+Bündel 3701 „Bestand priorisieren und gemeinsam nutzen“ mit Maßnahme; Bündel 3702 beide ohne Fund.
+Seiten ohne Text: nur S. 1 (Titelseite), ohne Bedeutung.
+Grenzfall (ursachen_offen): Kooperationen mit Schulen und Kitas (S. 71) – Nachwuchsgewinnung im Ehrenamt, kein Finanzbezug zu 3703.

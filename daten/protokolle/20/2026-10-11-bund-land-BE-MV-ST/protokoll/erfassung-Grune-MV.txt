@@ -1,0 +1,64 @@
+{
+  "partei_id": 13,
+  "land": "MV",
+  "massnahmen": [
+    {
+      "beschreibung": "Offene Kinder- und Jugendarbeit fördern und sichere Treffpunkte schaffen",
+      "ursachen_ids": [2001],
+      "buendel": "Angebote und Räume für Jugendliche ausbauen",
+      "zitat": "Deshalb fördern wir offene Kinder- und Jugendarbeit, schaffen sichere Treffpunkte […].",
+      "seite": 64
+    },
+    {
+      "beschreibung": "Nachbarschaftstreffs als Orte der Gemeinschaft in jeder Kommune; Veranstaltungen für unter 25 kostenlos",
+      "ursachen_ids": [],
+      "ursachen_offen": [2001],
+      "zitat": "Für ein Mecklenburg-Vorpommern, in dem alle gut leben können, fordern wir: […] in jeder Kommune und jedem Stadtteil ein Ort der Gemeinschaft: Diese Nachbarschaftstreffs bieten Raum für Veranstaltungen, Geselligkeit und gemeinsames Arbeiten. Für Menschen unter 25 und über 65 sind Veranstaltungen kostenlos.",
+      "seite": 63
+    },
+    {
+      "beschreibung": "Kostenfreies Deutschlandticket für alle unter 27, damit sie auch Jugendclubs und Freizeiteinrichtungen erreichen",
+      "ursachen_ids": [],
+      "ursachen_offen": [2001],
+      "zitat": "Damit Mobilität für alle bezahlbar ist, werden wir: […] das Deutschlandticket für alle unter 27 kostenfrei machen, damit sie nicht nur zur Schule, Uni, Hochschule oder zum Ausbildungsplatz, sondern auch zu Freund*innen, Jugendclubs und Freizeiteinrichtungen mobil sein können.",
+      "seite": 23
+    },
+    {
+      "beschreibung": "Soziale Präventionsarbeit in den Kommunen finanziell stärken, etwa Streetwork und Jugendclubs",
+      "ursachen_ids": [],
+      "ursachen_offen": [2003],
+      "buendel": "Nutzungen abstimmen und vermitteln",
+      "zitat": "Für ein sicheres MV wollen wir: […] soziale Präventionsarbeit in den Kommunen gezielt finanziell stärken, etwa in den Bereichen Streetwork, Jugendclubs, Suchtberatung und psychologische Betreuung, unter anderem durch die Umwidmung ineffektiver Überwachungsausgaben.",
+      "seite": 76
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 2001, "name": "Nachbarschaftstreffs in jeder Kommune", "seite": 63 },
+    { "ursache": 2001, "name": "Ticketpreis senken", "seite": 23 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "treffpunkt", "ursache": 2001, "richtung": "Treffpunkte für Jugendliche schaffen" }
+  ],
+  "stand_im_pdf": "Stand: 16.07.2026 (Titelseite; Auftrag: 2026-06-06)"
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis (S. 1–6); Kapitel 3 Mobilität (S. 22–24); Kapitel 8 Wohnraum (S. 52–53); Kapitel 10 Zusammenleben (S. 63–65); Kapitel 11 Demokratie (S. 67–68); Kapitel 12 Bürgerrechte (S. 74, 76); Kapitel 13 Frauen/Kinder (S. 84); Kapitel 15 Kultur (S. 95–98); Kapitel 16 Finanzen (S. 100–104); Fundstellen S. 6, 8–10, 27, 40. Seiten ohne Text (1, 5 …) übersprungen.
+
+Gleichartige Stellen (nicht separat erfasst): S. 64 „flächendeckendes und niedrigschwelliges Angebot an Jugendclubs … unterstützen“ und „Jugendkultur … ausreichend finanziert“ (Förderung wie Maßnahme 1); S. 98 „Bibliotheken als Kultur- und Begegnungsorte insbesondere für Kinder und Jugendliche stärken und länger öffnen“ (Förderung, Kultur-Einrichtung).
+
+Nicht erfasst:
+- S. 6, 8, 9, 27 und 10: Energie-Flächen, Netzanschlüsse und Mehrfachnutzung von PV-Flächen; Schwimmhallen und Freizeitangebote für alle Generationen im Tourismus-Zusammenhang – nicht jugendbezogen.
+- S. 40: Lagebeschreibung Bildung (Jugendclubs als Ort, an dem Talente entdeckt werden), keine Zusage.
+- S. 68: Kinder- und Jugendbeiräte (Beteiligung) und Dorffest-Programm (Dorfleben ohne Jugendbezug).
+- S. 74, 76: „Bürger*innen-Polizei“ und Präsenz vor Ort – allgemeine Sicherheitspolitik, nicht auf Lärm oder Nutzung durch Jugendliche bezogen (R1 2003).
+- S. 84: Aufklärung und Schutz in der Jugendarbeit – Kinderschutz, kein Freizeitangebot.
+- S. 95–97: Kulturorte und Begegnungsorte ohne Jugendbezug (R2).
+- S. 101: Beispiel „In Neubukow wird ein neuer Jugendtreff eröffnet“ – Teil einer Lagebeschreibung zu Investitionen, keine eigene Zusage des Programms.
+- S. 104: Kommunalfinanzen allgemein („Ob Busverbindung, Schwimmbad, Jugendclub …“) – nicht spezifisch auf Jugendangebote bezogen.
+- S. 52: Leerstand und Wohnraum – kein Jugendbezug.
+
+Bündel ohne Maßnahme (je im Text gesucht): „Selbstorganisation und Mehrfachnutzung von Räumen“ (2001: nur Energie-Flächen S. 8–9, Wohnen S. 52, Doppelnutzung Landesliegenschaften nur als Untersuchung S. 64); „Zugang zu öffentlichem Raum für Jugendliche ermöglichen“ (2003: nichts gefunden außer Ticket, das unter 2001 steht); „Lärm mindern und Ruhe schützen“ (2003: keine Lärm- oder Nachtruhe-Regeln; S. 74 nur allgemeine Prävention).
+
+Grenzfälle (ursachen_offen): Nachbarschaftstreffs (S. 63), Ticket für unter 27 (S. 23), Streetwork (S. 76).

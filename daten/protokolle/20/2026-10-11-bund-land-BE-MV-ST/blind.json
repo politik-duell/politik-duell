@@ -1,0 +1,1099 @@
+{
+  "pruefsumme": "3cc19e4c89dee6e0df590152adb9222a0fc279060ea697da9a377dfa719b6ec8",
+  "thema": {
+    "id": 20,
+    "name": "Freizeitangebote und Treffpunkte für Jugendliche",
+    "ziel": "Jugendliche können passende Freizeitaktivitäten wahrnehmen und verlässlich Orte nutzen, an denen sie sich mit anderen treffen und ihre Interessen ausleben können."
+  },
+  "ursachen": [
+    {
+      "id": 2001,
+      "beschreibung": "Junge Menschen wünschen mehr jugendgerechte Treffpunkte im öffentlichen Raum und erschwingliche Angebote (Befragung von über 2.400 Jugendlichen in Halle, 2024)",
+      "ebene": "land"
+    },
+    {
+      "id": 2002,
+      "beschreibung": "Geldmangel hindert junge Menschen an sozialer Teilhabe: In Interviews mit 54 Kindern und Jugendlichen (2023) beschrieben Betroffene finanzielle Probleme als Hindernis",
+      "ebene": "bund"
+    },
+    {
+      "id": 2003,
+      "beschreibung": "Nehmen Konflikte mit Anwohnenden und anderen Nutzenden überhand, geben Jugendliche Treffpunkte auf (Fallstudien in zwei Städten, veröffentlicht 2016)",
+      "ebene": "land"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        2001,
+        2002,
+        2003
+      ],
+      "text": "Zu 2001 gehören Jugendtreffs, Jugendzentren, offene Jugendarbeit, Freizeitangebote und Orte für Jugendliche; zu 2002 Kosten und Zuschüsse für Freizeit, Sport, Musik und Kultur von Kindern und Jugendlichen (etwa Teilhabeleistungen); zu 2003 Regeln für Lärm und Nutzung öffentlicher Räume im Verhältnis zu Jugendlichen. Allgemeine Kinder- und Jugendhilfe ohne Freizeitbezug gehört nicht dazu."
+    },
+    {
+      "nr": 2,
+      "text": "Sportvereine und Sportstätten als Einrichtung, Clubs und Kulturorte als Veranstaltungsorte sowie Schule und Ganztag gehören zu anderen Themen, soweit das Zitat Jugendliche und Freizeit nicht ausdrücklich nennt."
+    }
+  ],
+  "instrumente": [],
+  "massnahmen": [
+    {
+      "kennung": "M001",
+      "ebene": "land",
+      "beschreibung": "Ausbau kostenfreier und niedrigschwelliger Freizeitangebote für Kinder und Jugendliche",
+      "zitat": "Ausbau kostenfreier und niedrigschwelliger Freizeitangebote für Kinder und Jugendliche.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "05fd49c3c9644693"
+    },
+    {
+      "kennung": "M002",
+      "ebene": "land",
+      "beschreibung": "Kommunen gezielt unterstützen, Jugendbudgets bereitzustellen und Angebote für Jugendliche zu ermöglichen",
+      "zitat": "Kommunen, die Jugendgremien einrichten, erhalten gezielte Unterstützung, um Jugendbudgets bereitzustellen und Angebote von und für Jugendliche zu ermöglichen.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "79bbb66f93d74732"
+    },
+    {
+      "kennung": "M003",
+      "ebene": "land",
+      "beschreibung": "Verlässliche Förderung von Vereinen und Initiativen, die Kinder und Jugendliche aus einkommensschwachen Familien erreichen",
+      "zitat": "Verlässliche Förderung von Vereinen und Initiativen, die Kinder und Jugendliche aus einkommensschwachen Familien erreichen und unterstützen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2001
+      ],
+      "pruefsumme": "9e3505dfc80a679c"
+    },
+    {
+      "kennung": "M004",
+      "ebene": "land",
+      "beschreibung": "Kultureinrichtungen finanziell ermöglichen, vergünstigte Karten für Jugendliche anzubieten",
+      "zitat": "Wir wollen es Kultureinrichtungen finanziell ermöglichen, vergünstigte Karten für Jugendliche anzubieten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2001
+      ],
+      "pruefsumme": "eb4b1e60ce0101be"
+    },
+    {
+      "kennung": "M005",
+      "ebene": "land",
+      "beschreibung": "Verkehrsberuhigte Quartiere gestalten, mit Raum zum Spielen und für Treffpunkte von Jugendlichen",
+      "zitat": "Wir gestalten verkehrsberuhigte Quartiere ohne Durchgangsverkehr, die trotzdem für Anwohnende, Feuerwehr, Polizei und Rettungsdienste erreichbar bleiben. […] In grünen Bereichen, wo Blumenkübel den Durchgangsverkehr heraushalten und Bäume im Sommer angenehm kühlen, können Kinder unbeschwert draußen spielen, die Nachbarschaft bekommt Treffpunkte, Jugendliche ihre Orte.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2001,
+        2003
+      ],
+      "pruefsumme": "320d34d1635c5ff9"
+    },
+    {
+      "kennung": "M006",
+      "ebene": "land",
+      "beschreibung": "Stärkung selbstorganisierter, ehrenamtlich gestalteter Jugendarbeit",
+      "zitat": "Stärkung selbstorganisierter Jugendarbeit, die von jungen Menschen eigenverantwortlich und ehrenamtlich gestaltet wird.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "6b3a6e68a622e85f"
+    },
+    {
+      "kennung": "M007",
+      "ebene": "land",
+      "beschreibung": "Verlässliche Öffnungszeiten, stabile Teams und sichere Räume für Jugendangebote, ohne Antragsaufwand",
+      "zitat": "Wir wollen: verlässliche Öffnungszeiten (auch abends und in den Ferien), stabile Teams und sichere Räume gewährleisten – ohne Antragsstress,",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "4899bd3c00164e0e"
+    },
+    {
+      "kennung": "M008",
+      "ebene": "land",
+      "beschreibung": "Soziale Präventionsarbeit in den Kommunen finanziell stärken, etwa Streetwork und Jugendclubs",
+      "zitat": "Für ein sicheres [Land] wollen wir: […] soziale Präventionsarbeit in den Kommunen gezielt finanziell stärken, etwa in den Bereichen Streetwork, Jugendclubs, Suchtberatung und psychologische Betreuung, unter anderem durch die Umwidmung ineffektiver Überwachungsausgaben.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2003
+      ],
+      "pruefsumme": "3c1b0d57931858ce"
+    },
+    {
+      "kennung": "M009",
+      "ebene": "land",
+      "beschreibung": "Finanzierung eines Projekts verstetigen, das Konflikte zwischen Nutzenden und Anwohnenden von Grünanlagen niedrigschwellig deeskaliert",
+      "zitat": "Wir verstetigen die Finanzierung des „Parkläufer“-Projekts, um Konflikte zwischen Nutzern und Anwohnern öffentlicher Grünanlagen niedrigschwellig zu deeskalieren und die Einhaltung der Parkordnungen sicherzustellen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2003
+      ],
+      "pruefsumme": "ae020d3c6619c96a"
+    },
+    {
+      "kennung": "M010",
+      "ebene": "land",
+      "beschreibung": "Modellprojekt für mobile Kinder- und Jugendzentren im ländlichen Raum, um die Erreichbarkeit der Angebote zu verbessern",
+      "zitat": "Mit der Durchführung eines Modellprojektes für mobile Kinder- und Jugendzentren im ländlichen Raum wollen wir die Erreichbarkeit dieser Angebote verbessern.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "fce84410871f5a62"
+    },
+    {
+      "kennung": "M011",
+      "ebene": "land",
+      "beschreibung": "Bei der Quartiersplanung eigene Treffpunkte und Freiräume für Kinder und Jugendliche vorsehen",
+      "zitat": "Wichtig ist uns, Kinder und Jugendliche sowie marginalisierte Gruppen an diesem Prozess zu beteiligen und vor allem ihre Bedürfnisse zu berücksichtigen. Sie bekommen sichere, barrierefreie Spielplätze und eigene Treffpunkte und Freiräume.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "e56a7349141fd6c9"
+    },
+    {
+      "kennung": "M012",
+      "ebene": "land",
+      "beschreibung": "Musikschulen in ihrer Arbeit erhalten; Land will Unterstützung für die Musikschulen prüfen (Finanzierung als gemeinsame Aufgabe von Kommunen, Land und Eltern)",
+      "zitat": "Wir erkennen ihre […] Bedeutung als Teil der kulturellen Daseinsvorsorge an und werden uns dafür einsetzen, dass ihre Arbeit auch künftig möglich bleibt.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2001
+      ],
+      "pruefsumme": "97c8396e83bd73e1"
+    },
+    {
+      "kennung": "M013",
+      "ebene": "bund",
+      "beschreibung": "Ganztagsbetreuung mit kostenlosen Sport-, Kunst- und Musikangeboten für Kinder",
+      "zitat": "Sie muss auch in den Schulzeiten verlässlich und ausreichend lang garantiert sein, idealerweise durch eine Ganztagsbetreuung, die […] kostenlose Angebote im Bereich Sport, Kunst und Musik sowie eine Schulspeisung beinhaltet.",
+      "ursachen_ids": [
+        2002
+      ],
+      "pruefsumme": "83c9cf92854d576e"
+    },
+    {
+      "kennung": "M014",
+      "ebene": "bund",
+      "beschreibung": "Freizeiteinrichtungen und Treffpunkte für Kinder und Jugendliche niedrigschwellig, wohnortnah und gebührenfrei machen; Finanzierung der Kommunen verbessern, Länder kofinanzieren.",
+      "zitat": "Kinder- und Jugendfreizeiteinrichtungen, Musikschulen, Bibliotheken, Schwimmbäder, Sportvereine und andere Einrichtungen für Kinder und Jugendliche müssen niedrig schwellig, barrierefrei, wohnortnah und gebührenfrei sein. Dafür braucht es eine Verbesserung der Finanzierungsgrundlage in den Kommunen und eine dauerhafte Kofinanzierung durch die Länder.",
+      "ursachen_ids": [
+        2001,
+        2002
+      ],
+      "pruefsumme": "9b6c9933ea8db393"
+    },
+    {
+      "kennung": "M015",
+      "ebene": "land",
+      "beschreibung": "Wirksamkeit des Kinder- und Jugendbeteiligungsgesetzes evaluieren und Jugendbeteiligung gezielt ausbauen",
+      "zitat": "Die Wirksamkeit des Kinder - und Jugendbeteiligungsgesetzes werden wir evaluieren und die Kinder - und Jugendbeteiligung gezielt ausbauen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2001
+      ],
+      "pruefsumme": "3d2a6de376020ca7"
+    },
+    {
+      "kennung": "M016",
+      "ebene": "bund",
+      "beschreibung": "Kostenfreie, verlässliche Ferienbetreuung für Kinder durch den Staat",
+      "zitat": "Hier ist der Staat gefordert, verlässliche, kostenfreie und qualitativ wertvolle Ferienbetreuung anzubieten.",
+      "ursachen_ids": [
+        2002
+      ],
+      "ursachen_offen": [
+        2001
+      ],
+      "pruefsumme": "8f4040a13f3fdb70"
+    },
+    {
+      "kennung": "M017",
+      "ebene": "land",
+      "beschreibung": "Bezirke beim Beleben und Umgestalten öffentlicher Räume in Brennpunkten unterstützen",
+      "zitat": "Außerdem werden wir gezielt die Bezirke dabei unterstützen, gemeinsam mit der Nachbarschaft und den Akteur*innen vor Ort durch Veranstaltungsformate, städtebauliche Maßnahmen und mehr Sauberkeit öffentliche Räume neu zu beleben und umzugestalten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2003
+      ],
+      "pruefsumme": "fafe70b25eecc72f"
+    },
+    {
+      "kennung": "M018",
+      "ebene": "land",
+      "beschreibung": "Entschiedeneres Vorgehen gegen Vermüllung, Graffiti und Störungen im öffentlichen Raum, mit härteren Sanktionen",
+      "zitat": "Gemeinsam mit den Kommunen werden wir wesentlich entschiedener gegen Vermüllung, Graffiti und Störungen im öffentlichen Raum vorgehen. […] Dabei stehen wir ausdrücklich auch für mehr und härtere Sanktionierungen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2003
+      ],
+      "pruefsumme": "b1a97c53442ee3b2"
+    },
+    {
+      "kennung": "M019",
+      "ebene": "land",
+      "beschreibung": "Jugendorte in jedem Ortsteil in etwa 15 Minuten erreichbar machen, wo es fehlt mit mobilem Angebot vor Ort",
+      "zitat": "Wir wollen: Nähe sichern – in jedem Ortsteil mindestens einen Jugendort in ca. 15 Minuten erreichbar, wo das fehlt: mobiles Angebot vor Ort,",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "b7d701ea2711c5e6"
+    },
+    {
+      "kennung": "M020",
+      "ebene": "bund",
+      "beschreibung": "Mehrwertsteuer auf Artikel des Kinderbedarfs auf 7 % senken",
+      "zitat": "Die Mehrwertsteuer für Artikel des Kinderbedarfs soll auf 7 % reduziert werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2002
+      ],
+      "pruefsumme": "14d5b51ecc5b0efa"
+    },
+    {
+      "kennung": "M021",
+      "ebene": "land",
+      "beschreibung": "Parkläufer- und Kiezmanager-Programm fortführen und dauerhaft sichern",
+      "zitat": "Das Programm der Parkläufer*innen und Kiezmanager*innen wollen wir fortführen und dauerhaft sichern. Diese Fachkräfte tragen maßgeblich zur Sicherheit und zu einem respektvollen Miteinander in unseren Grünanlagen bei.",
+      "ursachen_ids": [
+        2003
+      ],
+      "pruefsumme": "816ce698af0f1890"
+    },
+    {
+      "kennung": "M022",
+      "ebene": "bund",
+      "beschreibung": "Engagement der Babyboomer-Generation gezielt einbinden, um Sportangebote für Kinder und Jugendliche auszubauen",
+      "zitat": "Um diese Potenziale zu heben, wollen wir neben einer generellen Stärkung des Ehrenamts insbesondere das Engagement der Babyboomer-Generation gezielt einbinden. Mit ihrer Erfahrung und Zeit können sie Sportangebote für Kinder, Jugendliche und Senioren ausbauen und die Vereinsarbeit beleben.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "fbc8efcfe0d8bd27"
+    },
+    {
+      "kennung": "M023",
+      "ebene": "bund",
+      "beschreibung": "Sonderprogramm über zehn Jahre, mit dem Kommunen Strukturen der Kinder- und Jugendarbeit aufbauen und stärken",
+      "zitat": "Mit einem Sonderprogramm wollen wir über zehn Jahre Kommunen dabei unterstützen, Strukturen für Kinder- und Jugendarbeit aufzubauen und zu stärken.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "d2cc327883ee87a8"
+    },
+    {
+      "kennung": "M024",
+      "ebene": "land",
+      "beschreibung": "Verbindliche Schutzkonzepte für alle Jugendclubs mit Schulungen des Personals und Umsetzung im Alltag",
+      "zitat": "Jugendclubs müssen echte Schutzräume sein - ohne Wenn und Aber. Deshalb werden wir alle Einrichtungen zu verbindlichen Schutzkonzepten mit klaren Handlungsanweisungen, regelmäßigen Schulungen für das Personal und einer konsequenten Umsetzung im Alltag verpflichten.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "c5e967e2e6ddd403"
+    },
+    {
+      "kennung": "M025",
+      "ebene": "land",
+      "beschreibung": "Schiedsstelle zur Mediation und Begleitung von Konflikten in stadtentwicklungspolitischen Streitfällen unterstützen",
+      "zitat": "„Schiedsstelle“ zur Mediation und ständigen Begleitung von Konflikten in stadtentwicklungspolitischen Streitfällen unterstützen wir.",
+      "ursachen_ids": [
+        2003
+      ],
+      "pruefsumme": "8492f1226da66f6f"
+    },
+    {
+      "kennung": "M026",
+      "ebene": "bund",
+      "beschreibung": "Feministische Mädchen- und Jungenarbeit sowie queersensible Angebote besonders fördern",
+      "zitat": "Dabei wollen wir feministische Mädchen- und Jungenarbeit sowie queersensible Angebote besonders fördern.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "2386c015b90b9209"
+    },
+    {
+      "kennung": "M027",
+      "ebene": "land",
+      "beschreibung": "Kostenlose oder stark vergünstigte Nutzung kommunaler Sportanlagen für Vereine, freier Zugang für Kinder und Jugendliche",
+      "zitat": "Breitensport und Vereine stärken: Kostenlose oder stark vergünstigte Nutzung kommunaler Anlagen für Vereine. Freier Zugang für Kinder und Jugendliche.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2001
+      ],
+      "pruefsumme": "9e4bc3031370e9bd"
+    },
+    {
+      "kennung": "M028",
+      "ebene": "land",
+      "beschreibung": "Sportangebote für Kinder und Jugendliche in allen Bezirken ausbauen („Sport 365“)",
+      "zitat": "Mit dem weiteren Ausbau von „Sport 365“ wollen wir ganzjährige, wohnortnahe Sportangebote für Kinder und Jugendliche in allen Bezirken schaffen.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "141b8805f2aa85f2"
+    },
+    {
+      "kennung": "M029",
+      "ebene": "land",
+      "beschreibung": "Kulturelle Bildungsangebote für alle Bevölkerungsgruppen zugänglich machen, unabhängig von finanziellen Möglichkeiten",
+      "zitat": "Wir werden: […] die Zugänglichkeit für alle sicherstellen: Kulturelle Bildungsangebote sollten für alle Bevölkerungsgruppen zugänglich sein, unabhängig von sozialem Hintergrund oder finanziellen Möglichkeiten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2001
+      ],
+      "pruefsumme": "dff915b026fe8894"
+    },
+    {
+      "kennung": "M030",
+      "ebene": "bund",
+      "beschreibung": "Taschengeld für Freiwilligendienste so ausgestalten, dass auch Jugendliche aus einkommensärmeren Haushalten teilnehmen können.",
+      "zitat": "Das „Taschengeld“ wollen wir so ausgestalten, dass auch Jugendliche aus einkommensärmeren Haushalten sich für einen Freiwilligendienst entscheiden können.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2002
+      ],
+      "pruefsumme": "305335dc71cf3194"
+    },
+    {
+      "kennung": "M031",
+      "ebene": "land",
+      "beschreibung": "E-Sport und Gaming-Strukturen gemeinnützig fördern",
+      "zitat": "E-Sport und Gaming sind Teil der [Land] Jugend- und Alltagskultur – wir fördern gemeinnützige Strukturen, Medienkompetenz, Diversität und einen nachhaltigen, fairen E-Sport-Standort.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2001
+      ],
+      "pruefsumme": "36065c8c8559bebf"
+    },
+    {
+      "kennung": "M032",
+      "ebene": "land",
+      "beschreibung": "Förderung der SIMSON-Kultur als Teil der Jugendkultur",
+      "zitat": "Die SIMSON-Kultur ist als Teil der Jugendkultur besonders zu fördern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2001
+      ],
+      "pruefsumme": "820907e5ed1c12cb"
+    },
+    {
+      "kennung": "M033",
+      "ebene": "land",
+      "beschreibung": "Mindestens einen selbstverwalteten Jugendort pro Bezirk unterstützen",
+      "zitat": "[Partei] wird sich für mindestens einen selbstverwalteten Jugendort pro Bezirk einsetzen, denn diese sind unverzichtbare Orte der kritischen Auseinandersetzung, Solidarität und Entwicklung alternativer Lebensentwürfe.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "9e80609979d47b60"
+    },
+    {
+      "kennung": "M034",
+      "ebene": "land",
+      "beschreibung": "Jugendhäuser sollen wieder sichere Orte für Kinder und Jugendliche sein.",
+      "zitat": "Wir werden dafür Sorge tragen, dass Jugendhäuser wieder sichere Orte für Kinder und Jugendliche sind.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "603ef92584856963"
+    },
+    {
+      "kennung": "M035",
+      "ebene": "land",
+      "beschreibung": "Kinder- und Jugendfreizeiteinrichtungen im Umgang mit rechtsextremen Einstellungen stärken",
+      "zitat": "Kinder- und Jugendfreizeiteinrichtungen stärken wir im Umgang mit rechtsextremen Einstellungen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2001
+      ],
+      "pruefsumme": "4a22c0e36a50cbd3"
+    },
+    {
+      "kennung": "M036",
+      "ebene": "land",
+      "beschreibung": "Förderbedingungen für internationale Jugendarbeit verbessern und neue Formate einführen",
+      "zitat": "Zusammen mit den Trägern der Jugendarbeit werden wir die Förderbedingungen verbessern und neue Formate einführen, damit mehr junge Menschen am internationalen Austausch teilnehmen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2001
+      ],
+      "pruefsumme": "354c780c4b92618c"
+    },
+    {
+      "kennung": "M037",
+      "ebene": "bund",
+      "beschreibung": "Investitionsprogramm für kinder- und jugendfreundliche Infrastruktur; wohnortnaher, niedrigschwelliger Zugang zu Jugendfreizeiteinrichtungen",
+      "zitat": "Mit einem Investitionsprogramm „Kinder und Bildung“ wollen wir in eine kinder-, jugend- und familienfreundliche Infrastruktur investieren. Wir fordern einen niedrigschwelligen und wohnortnahen Zugang zu Angeboten wie Kinder- und Jugendfreizeiteinrichtungen, Bibliotheken, Sportstätten oder Musikschulen.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "3819b76bc40b0332"
+    },
+    {
+      "kennung": "M038",
+      "ebene": "bund",
+      "beschreibung": "Queere Jugendarbeit wird kommunale Pflichtaufgabe; queere Orte wie Jugendzentren sollen vor Mieterhöhungen und Kürzungen geschützt werden.",
+      "zitat": "Queere Orte wie Jugendzentren, Projekte, Bars und Clubs müssen geschützt werden – auch vor Wuchermieten und Kürzungen staatlicher Zuschüsse. Die queere Jugendarbeit muss kommunale Pflichtaufgabe werden.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "4f3d49385ab083ab"
+    },
+    {
+      "kennung": "M039",
+      "ebene": "land",
+      "beschreibung": "Mittel der Jugendhilfe des Landes an den Verbraucherpreisindex anpassen und erhöhen",
+      "zitat": "Damit Jugendliche ihre Fähigkeiten und Interessen entdecken und entwickeln können, sollen die Mittel der Kinder und Jugendhilfe des Landes entsprechend der Entwicklung des Verbraucherpreisindexes erhöht werden.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "b2ebf310be61ed19"
+    },
+    {
+      "kennung": "M040",
+      "ebene": "land",
+      "beschreibung": "Ferien- und Schullandheim-Angebote als feste Säule sichern, Teilnahme unabhängig vom Geldbeutel",
+      "zitat": "Schullandheime und Ferien als feste Säule sichern – Teilnahme unabhängig vom Geldbeutel,",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "ff8cce410994c39e"
+    },
+    {
+      "kennung": "M041",
+      "ebene": "land",
+      "beschreibung": "Förderung lokaler Kulturorte und Einrichtungen, darunter Jugendclubs und mobile Clubs",
+      "zitat": "Wir werden lokale Kulturorte und Einrichtungen flächendeckend und verlässlich fördern. Dazu gehören Dorfkirchen und Kirchensanierungen, Bibliotheken, Musikschulen, Vereinshäuser, Jugendclubs, mobile Clubs, Heimatstuben sowie lokale Festivals.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2001
+      ],
+      "pruefsumme": "d8a07eaa6bce4bc5"
+    },
+    {
+      "kennung": "M042",
+      "ebene": "land",
+      "beschreibung": "Kinder- und Jugendtourismus ausbauen; Jugendherbergen und Schullandheime energetisch sanieren",
+      "zitat": "Wir wollen: […] Den Kinder- und Jugendtourismus ausbauen, Jugendherbergen und Schullandheime energetisch sanieren […]",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2001
+      ],
+      "pruefsumme": "0196cb738d7d985b"
+    },
+    {
+      "kennung": "M043",
+      "ebene": "land",
+      "beschreibung": "Jugendclubs, Abenteuerspielplätze, Sporthallen, Stadtbibliotheken und selbstverwaltete Treffpunkte sichern und ausbauen",
+      "zitat": "Ob Jugendclub, Abenteuerspielplatz, Sporthalle, Stadtbibliothek oder selbstverwalteter Treffpunkt – all diese Angebote wollen wir sichern und ausbauen.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "422e9a9cdc63c9d7"
+    },
+    {
+      "kennung": "M044",
+      "ebene": "land",
+      "beschreibung": "Digitale Jugendarbeit ausbauen",
+      "zitat": "Digitale Jugendarbeit auf der Grundlage der Digitalen Agenda trägt zur Attraktivität unseres Landes bei und wird ausgebaut.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "a74762fb4f5d6162"
+    },
+    {
+      "kennung": "M045",
+      "ebene": "land",
+      "beschreibung": "Kinder- und Jugendarbeit zur kommunalen Pflichtaufgabe machen und den Landesjugendplan bedarfsgerecht ausfinanzieren",
+      "zitat": "Wir wollen: […] Kinder- und Jugendarbeit zur kommunalen Pflichtaufgabe machen, die Landesjugendhilfeplanung strategisch ausrichten und den Landesjugendplan bedarfsgerecht ausfinanzieren.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "68fe259bd523dae9"
+    },
+    {
+      "kennung": "M046",
+      "ebene": "land",
+      "beschreibung": "Langfristige Absicherung und verlässliche Finanzierung von Jugendclubs, Freizeithäusern und offenen Treffpunkten",
+      "zitat": "Langfristige Absicherung und verlässliche Finanzierung von Jugendclubs, Freizeithäusern und offenen Treffpunkten.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "747297674152de46"
+    },
+    {
+      "kennung": "M047",
+      "ebene": "bund",
+      "beschreibung": "Auskömmlichere Kommunalfinanzierung und Deutschlandfonds, damit Kommunen Investitionen etwa in Jugendclubs finanzieren können",
+      "zitat": "Allein zum Erhalt und zur Sanierung der kommunalen Infrastruktur, dazu zählen zum Beispiel […] Jugendclubs, Sportplätze und Kultureinrichtungen, fehlen bundesweit 186 Milliarden Euro. Durch eine auskömmlichere Finanzierung der Kommunen und den Deutschlandfonds geben wir Kommunen endlich die Möglichkeit, diese dringend notwendigen Investitionen zu finanzieren.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2001
+      ],
+      "pruefsumme": "04d93d8e29a7507b"
+    },
+    {
+      "kennung": "M048",
+      "ebene": "land",
+      "beschreibung": "Jugendbeteiligung mit verbindlichen Jugendbudgets in allen Bezirken verankern",
+      "zitat": "Wir werden das JugFöG weiterentwickeln und echte Kinder- und Jugendbeteiligung mit verbindlichen Jugendbudgets in allen Bezirken verankern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2001
+      ],
+      "pruefsumme": "1d65737513a48be9"
+    },
+    {
+      "kennung": "M049",
+      "ebene": "land",
+      "beschreibung": "Förderprogramme für junge Menschen gezielt ausbauen, um Teilhabe sowie kulturelle und kreative Fähigkeiten zu fördern",
+      "zitat": "Förderprogramme für junge Menschen wollen wir gezielt ausbauen, um Teilhabe sowie kulturelle und kreative Fähigkeiten frühzeitig zu fördern.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "f93b58c7750f1839"
+    },
+    {
+      "kennung": "M050",
+      "ebene": "land",
+      "beschreibung": "Jugendfreizeiteinrichtungen weiter ausbauen und modernisieren",
+      "zitat": "Deshalb wollen wir Jugendfreizeiteinrichtungen weiter ausbauen und sie konsequent modernisieren.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "5f0076e7fbf18781"
+    },
+    {
+      "kennung": "M051",
+      "ebene": "land",
+      "beschreibung": "Zugang zu offenen Angeboten ohne Nachweispflichten und ohne formale Kriterien",
+      "zitat": "Wir wollen: […] Zugang ohne Nachweispflichten (keine ID-Pflicht) ermöglichen – Teilnahme an offenen Angeboten ohne formale Kriterien;",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "9c8145d30e1fe7db"
+    },
+    {
+      "kennung": "M052",
+      "ebene": "land",
+      "beschreibung": "Zweckbindung der Mittel der Kinder- und Jugendhilfe, Geld für Jugendclubs soll bei den Jugendclubs ankommen",
+      "zitat": "Weiterhin setzt sich [Partei] analog zu den bereits vorhandenen Anreizmodellen des JugFöG für eine Zweckbindung der Mittel für die gesamte Kinder- und Jugendhilfe ein: Geld, das für Jugendclubs vorgesehen ist, muss auch bei den Jugendclubs ankommen und darf von den Bezirken nicht für andere Zwecke ausgegeben werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2001
+      ],
+      "pruefsumme": "0f293a598a296031"
+    },
+    {
+      "kennung": "M053",
+      "ebene": "land",
+      "beschreibung": "Landesprogramm zur Stärkung der Jugend- und Straßensozialarbeit, um auf neue Problemlagen niedrigschwellig zu reagieren",
+      "zitat": "Durch ein Landesprogramm zur Stärkung der Jugend- und Straßensozialarbeit soll niedrigschwellig auf neue Problemlagen und Herausforderungen reagiert werden.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "a5d9dcb70de22496"
+    },
+    {
+      "kennung": "M054",
+      "ebene": "land",
+      "beschreibung": "Kostenfreies Deutschlandticket für alle unter 27, damit sie auch Jugendclubs und Freizeiteinrichtungen erreichen",
+      "zitat": "Damit Mobilität für alle bezahlbar ist, werden wir: […] das Deutschlandticket für alle unter 27 kostenfrei machen, damit sie nicht nur zur Schule, Uni, Hochschule oder zum Ausbildungsplatz, sondern auch zu Freund*innen, Jugendclubs und Freizeiteinrichtungen mobil sein können.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2001
+      ],
+      "pruefsumme": "c9320d5c78fbb322"
+    },
+    {
+      "kennung": "M055",
+      "ebene": "land",
+      "beschreibung": "Offene Jugendarbeit, insbesondere mobile Jugendarbeit, massiv stärken",
+      "zitat": "Wir setzen uns für eine massive Stärkung der mobilen Jugendarbeit […] ein, da sie die Grundpfeiler einer wirkungsvollen Jugendpolitik bilden.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "b27151a568e316ad"
+    },
+    {
+      "kennung": "M056",
+      "ebene": "land",
+      "beschreibung": "Jugendorte schaffen und ausbauen, auch unbeplante Räume und selbstverwaltete Jugendzentren",
+      "zitat": "Wir wollen außerdem Jugendorte schaffen und ausbauen, wozu insbesondere unbeplante Räume und selbstverwaltete Jugendzentren in kleineren Städten und Gemeinden zählen.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "87d77ff3deab4dda"
+    },
+    {
+      "kennung": "M057",
+      "ebene": "land",
+      "beschreibung": "Jugendclubs, soziokulturelle Zentren und offene Treffpunkte für Jugendliche stärken und neu schaffen",
+      "zitat": "Wir setzen uns für die Stärkung und Neuschaffung von Jugendclubs, soziokulturellen Zentren und sogenannten „Dritten Orten“ ein, sprich offenen Räumen zwischen Schule, Arbeit und zuhause.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "1cb59a26f34d3586"
+    },
+    {
+      "kennung": "M058",
+      "ebene": "bund",
+      "beschreibung": "Sichere und selbst gestaltete Aufenthaltsorte für Jugendliche im öffentlichen Raum schaffen",
+      "zitat": "Für alle Jugendlichen wollen wir sichere und selbst gestaltete Aufenthaltsorte im öffentlichen Raum schaffen.",
+      "ursachen_ids": [
+        2001
+      ],
+      "ursachen_offen": [
+        2003
+      ],
+      "pruefsumme": "f9db46a5cd580b01"
+    },
+    {
+      "kennung": "M059",
+      "ebene": "land",
+      "beschreibung": "Offene Kinder- und Jugendarbeit fördern und sichere Treffpunkte schaffen",
+      "zitat": "Deshalb fördern wir offene Kinder- und Jugendarbeit, schaffen sichere Treffpunkte […].",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "f3168e3fe7588805"
+    },
+    {
+      "kennung": "M060",
+      "ebene": "land",
+      "beschreibung": "Rechtliche Grundlage für Beteiligung junger Menschen (z. B. Jugendparlamente oder -beiräte) konkretisieren",
+      "zitat": "Partizipation von jungen Menschen ist uns ein wichtiges Anliegen. Deshalb wollen wir eine konkretere Ausformulierung der rechtlichen Grundlage, die die Beteiligung (beispielsweise durch Jugendparlamente oder -beiräte) regelt.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2001
+      ],
+      "pruefsumme": "927cbd7f407dee0a"
+    },
+    {
+      "kennung": "M061",
+      "ebene": "land",
+      "beschreibung": "Verbindlichen Jugendförderplan mit Mindeststandards für Angebote des Landes erarbeiten",
+      "zitat": "Wir werden mit den Akteuren der Kinder- und Jugendarbeit einen verbindlichen Jugendförderplan erarbeiten. Dieser soll unter anderem Mindeststandards für Angebote des Landes definieren und die Förderung vereinfachen.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "e252ba16504228c4"
+    },
+    {
+      "kennung": "M062",
+      "ebene": "land",
+      "beschreibung": "Mindestumfang freiwilliger Kommunalleistungen (u. a. Vereine, Kultur, Sport, Spielplätze) im Finanzausgleich festschreiben",
+      "zitat": "Wir werden: […] einen Mindestumfang an freiwilligen Leistungen der Kommune im Finanzausgleichsgesetz festschreiben, damit Vereine, Kultur, Sport und Spielplätze auch in schwierigen Zeiten gesichert sind.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2001
+      ],
+      "pruefsumme": "4ea9ea809bd5088f"
+    },
+    {
+      "kennung": "M063",
+      "ebene": "bund",
+      "beschreibung": "Kulturpass für Jugendliche verstetigen (Guthaben, um Kultur zu entdecken)",
+      "zitat": "Deshalb werden wir den Kulturpass verstetigen und prüfen, ihn auszubauen. Mit ihm erhalten Jugendliche ein Guthaben, um Kultur zu entdecken.",
+      "ursachen_ids": [
+        2002
+      ],
+      "pruefsumme": "1d06235735220b67"
+    },
+    {
+      "kennung": "M064",
+      "ebene": "land",
+      "beschreibung": "Lärmschutz-Vorgaben anpassen, damit junge Menschen nicht aus dem öffentlichen Raum verdrängt werden",
+      "zitat": "Wir schützen junge Menschen zudem vor Verdrängung aus dem öffentlichen Raum, in dem wir die gesetzlichen Vorgaben zum Lärmschutz anpassen.",
+      "ursachen_ids": [
+        2003
+      ],
+      "pruefsumme": "567739ad7924e71d"
+    },
+    {
+      "kennung": "M065",
+      "ebene": "land",
+      "beschreibung": "Landesweiter Rechtsanspruch auf Kinder- und Jugendarbeit mit Mindeststandard; Förderung kommunaler Maßnahmen dynamisch erhöhen",
+      "zitat": "Kinder- und Jugendarbeit landesweit sichern: Wir wollen Kinder- und Jugendhilfe mit einem qualitativen und quantitativen Mindeststandard als Rechtsanspruch für junge Menschen im Kinder- und Jugendhilfegesetz des Landes festschreiben. Die Förderung von kommunalen Maßnahmen werden wir entsprechend der steigenden Bedarfe erhöhen und eine jährliche Dynamisierung von 2,5 Prozent bzw. mindestens in Höhe der Inflationsrate gesetzlich verankern.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "b1de682b860d0037"
+    },
+    {
+      "kennung": "M066",
+      "ebene": "land",
+      "beschreibung": "Altersgerechte Beteiligungsformate für Kinder und Jugendliche schaffen, damit sie ihre Lebenswelt mitgestalten können.",
+      "zitat": "Kinder und Jugendliche verdienen besonderen Schutz, verlässliche Unterstützung und die Möglichkeit, ihre Lebenswelt mitzugestalten. Wir stärken die Rechte von Kindern und Jugendlichen durch […] altersgerechte Beteiligungsformate und eine verlässliche Jugendhilfe.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2001
+      ],
+      "pruefsumme": "eeff50df2d6bf3fb"
+    },
+    {
+      "kennung": "M067",
+      "ebene": "bund",
+      "beschreibung": "Leistungen für Bildung und Teilhabe direkter abrufbar machen, auch für Sportvereine und Musikschulen",
+      "zitat": "Deshalb müssen sie einfacher, digitaler, bürgerfreundlicher und transparenter werden. Das gilt insbesondere für den bisherigen Kinderzuschlag und die Leistungen der Bildung und Teilhabe, deren direkte Abrufung – beispielsweise durch Schulen, Sportvereine oder Musikschulen – wir erleichtern wollen.",
+      "ursachen_ids": [
+        2002
+      ],
+      "pruefsumme": "9be374c2b3cee39e"
+    },
+    {
+      "kennung": "M068",
+      "ebene": "land",
+      "beschreibung": "Digitaler Chancenpass als App mit Überblick über Angebote im Kiez und Zugang zu Bildungs- und Freizeitangeboten für Kinder und Familien",
+      "zitat": "Deshalb werden wir einen „[Land] Chancenpass“ einführen, der die Leistungen bündelt, entbürokratisiert und digital zugänglich macht. Als einfach und intuitiv bedienbare App soll er Kindern und ihren Familien einen Überblick über Angebote im Kiez geben und einen direkten Zugang zu Bildungs- und Freizeitangeboten ermöglichen – etwa für Sportvereine, Musikschulen oder Nachhilfe.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2001
+      ],
+      "pruefsumme": "9e0b732cfae08f5d"
+    },
+    {
+      "kennung": "M069",
+      "ebene": "land",
+      "beschreibung": "Streetwork-Teams und niedrigschwellige Angebote ausbauen, insbesondere für junge Menschen (im Kontext Suchthilfe)",
+      "zitat": "Wir wollen Konsumräume und Streetwork-Teams ausbauen, Wartezeiten auf Therapieplätze verkürzen und niedrigschwellige Angebote ausbauen, insbesondere um junge Menschen sowie Menschen in sozial benachteiligten Lebenslagen besser zu erreichen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2001
+      ],
+      "pruefsumme": "d65aed817a1ec9f6"
+    },
+    {
+      "kennung": "M070",
+      "ebene": "land",
+      "beschreibung": "Arbeit der Kinder- und Jugendverbände stärken (Grenzfall: Verbandsförderung, kein Angebot oder Ort selbst)",
+      "zitat": "Wir stärken die Arbeit der Kinder- und Jugendverbände in ihrer ganzen Vielfalt.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2001
+      ],
+      "pruefsumme": "01c57e52008152da"
+    },
+    {
+      "kennung": "M071",
+      "ebene": "land",
+      "beschreibung": "Investitionspfad: fehlende Jugendorte benennen, finanzieren und terminieren",
+      "zitat": "Wir wollen: […] einen Investitionspfad festlegen – fehlende Orte (z.B. Jugendclub, Jugendbildungsstätte) benennen, finanzieren, terminieren – mit Zeitleiste je Region,",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "0b66cab074435323"
+    },
+    {
+      "kennung": "M072",
+      "ebene": "land",
+      "beschreibung": "Vergünstigte Kulturtickets auf Kinder und Jugendliche ausweiten",
+      "zitat": "Wir unterstützen die Teilhabe an Kultur für alle und schätzen Programme wie „KulturLeben [Land]“, die bestimmten Personengruppen den Kauf von erheblich vergünstigten Tickets ermöglichen. Dieses Angebot möchten wir insbesondere auf Kinder und Jugendliche erweitern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2001
+      ],
+      "pruefsumme": "35c41870d640e7fd"
+    },
+    {
+      "kennung": "M073",
+      "ebene": "land",
+      "beschreibung": "Fahr- und Stellflächen des Autoverkehrs reduzieren, um mehr Platz und Aufenthaltsqualität für Fußgänger*innen zu schaffen",
+      "zitat": "Mehr Platz und mehr Aufenthaltsqualität für Fußgänger*innen schaffen wir durch die Reduzierung von Fahr- und Stellflächen für den Autoverkehr, besonders in großen lebendigen Einkaufsstraßen, Flaniermeilen und Kiezblocks.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2003
+      ],
+      "pruefsumme": "63567e69d09a4041"
+    },
+    {
+      "kennung": "M074",
+      "ebene": "bund",
+      "beschreibung": "Jugendverbände mit Schwerpunkt Integration und Demokratie gezielt unterstützen",
+      "zitat": "Jugendverbände, die sich für Integration und Demokratie und gegen Antisemitismus und Rassismus einsetzen, wollen wir gezielt unterstützen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2001
+      ],
+      "pruefsumme": "c9825d46d9833acf"
+    },
+    {
+      "kennung": "M075",
+      "ebene": "land",
+      "beschreibung": "Offene Jugendarbeit und Jugendfreizeiteinrichtungen langfristig finanziell ausstatten",
+      "zitat": "Dem massiven Problem von zunehmender rechter Jugendgewalt gerade auch in den Ost-[Land] Bezirken begegnen wir, indem wir Angebote der Prävention und der Demokratiebildung stärken und die offene Jugendarbeit und Jugendfreizeiteinrichtungen als Alternativangebote angemessen und langfristig finanziell ausstatten.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "257b91d58ec2388c"
+    },
+    {
+      "kennung": "M076",
+      "ebene": "bund",
+      "beschreibung": "Förderung von Popkultur ausbauen, um vielfältige kulturelle Angebote für jüngere Zielgruppen zu schaffen.",
+      "zitat": "Die Förderung von Popkultur wollen wir ausbauen, um insbesondere für jüngere Zielgruppen vielfältige kulturelle Angebote zu schaffen.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "8471adb8a10a682c"
+    },
+    {
+      "kennung": "M077",
+      "ebene": "land",
+      "beschreibung": "Abendliche und wetterunabhängige Raumnutzung verbessern, Kooperation der Jugendarbeit mit Stadtteilzentren und Sportvereinen stärken",
+      "zitat": "Für eine verbesserte abendliche und wetterunabhängige Nutzung von Räumen werden wir kreative Wege finden und die Kooperation der Jugendarbeit mit anderen Akteuren im Sozialraum wie bspw. Stadtteilzentren oder Kultur- und Sportvereinen stärken.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "8f4905536935d0c8"
+    },
+    {
+      "kennung": "M078",
+      "ebene": "land",
+      "beschreibung": "Freiräume aus Leerstand gemeinsam mit Jugendlichen gestalten und nutzen",
+      "zitat": "Leerstand zu Freiräumen machen – mit Jugendlichen gestalten und nutzen, auch in engen Quartieren,",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "c619714006e535e1"
+    },
+    {
+      "kennung": "M079",
+      "ebene": "land",
+      "beschreibung": "1.200 Sitzgelegenheiten in den zwölf Bezirken schaffen",
+      "zitat": "Höhere Aufenthaltsqualität durch Sitzgelegenheiten schaffen wir durch ein 1.200-Bänke-Programm für die zwölf [Land] Bezirke.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2003
+      ],
+      "pruefsumme": "ab41c036073eee91"
+    },
+    {
+      "kennung": "M080",
+      "ebene": "land",
+      "beschreibung": "Jugendclubs, pädagogisch begleitete Freiräume und selbstorganisierte Räume für Jugendliche weiter stärken",
+      "zitat": "Pädagogisch begleitete Freiräume, Jugendclubs und selbstorganisierte Räume wie das bisherige Modellprojekt Queer*Spaces werden weiter gestärkt.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "9da8bd5bf75f52b8"
+    },
+    {
+      "kennung": "M081",
+      "ebene": "land",
+      "beschreibung": "Treffpunkte für Jugendliche im öffentlichen Raum schaffen, Finanzierung in den Bezirken gesetzlich absichern; Nutzung ohne Geld zahlen",
+      "zitat": "Auch im öffentlichen Raum schaffen wir mehr Treffpunkte für Jugendliche mit und ohne Beeinträchtigungen, die entsprechend ihren Wünschen und Bedürfnissen gestaltet werden. Hierfür schaffen wir langfristig und im Gesetzesrang die finanziellen und personellen Voraussetzungen in den Bezirken. An diesen „JugendOrten“ können sie sich aufhalten, ohne Geld zahlen zu müssen.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "d7d0abc0244e5f95"
+    },
+    {
+      "kennung": "M082",
+      "ebene": "land",
+      "beschreibung": "Mehr Polizei, höherer Kontrolldruck sowie wirksamere Platzverweise und Aufenthaltsverbote im öffentlichen Raum",
+      "zitat": "Wir sorgen für mehr Sicherheit und Ordnung im öffentlichen Raum, durch mehr Polizei in den Innenstädten und an Kriminalitätsschwerpunkten, höheren Kontrolldruck sowie wirksamere Platzverweise und Aufenthaltsverbote.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2003
+      ],
+      "pruefsumme": "fc4d049e0ebb7f42"
+    },
+    {
+      "kennung": "M083",
+      "ebene": "bund",
+      "beschreibung": "Jugendverbände, Jugendparlamente und ähnliche Strukturen weiter unterstützen.",
+      "zitat": "Jugendverbände, Jugendparlamente und ähnliche Strukturen leisten eine wichtige Arbeit. Wir wollen sie weiter unterstützen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2001
+      ],
+      "pruefsumme": "989d6bfb2ce2dd71"
+    },
+    {
+      "kennung": "M084",
+      "ebene": "bund",
+      "beschreibung": "Infrastrukturgarantie: Begegnungsorte müssen in jedem Ort vorhanden sein; Kommunen sollen die soziale Infrastruktur vorhalten (Grenzfall: allgemein, nicht jugendspezifisch).",
+      "zitat": "Kommunen müssen in der Lage sein, die notwendige soziale Infrastruktur vorzuhalten. Hierfür brauchen wir eine Infrastrukturgarantie: Bus, Bäcker, eine Möglichkeit zum Geldabheben, Arztpraxen und Begegnungsorte müssen in jedem Ort vorhanden sein.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2001
+      ],
+      "pruefsumme": "d7bf719c4ea946d0"
+    },
+    {
+      "kennung": "M085",
+      "ebene": "bund",
+      "beschreibung": "Mittel des Kinder- und Jugendplans (zentrales Förderinstrument für Jugendarbeit) aufstocken und an Bedarfe anpassen",
+      "zitat": "Die Mittel des Kinder- und Jugendplans, dem zentralen Förderinstrument für Jugendarbeit und Jugendhilfe, […] wollen wir aufstocken und den Bedarfen entsprechend kontinuierlich anpassen.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "ef53825d30b58527"
+    },
+    {
+      "kennung": "M086",
+      "ebene": "land",
+      "beschreibung": "Offene Jugendarbeit und Jugendverbände dauerhaft und verlässlich unterstützen.",
+      "zitat": "Gute Rahmenbedingungen für Kinder- und Jugendarbeit schaffen: Jugendverbände und offene Jugendarbeit leisten einen wichtigen Beitrag zur Persönlichkeitsentwicklung. Wir unterstützen diese Arbeit dauerhaft und verlässlich.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "de1808086750519a"
+    },
+    {
+      "kennung": "M087",
+      "ebene": "land",
+      "beschreibung": "Jugendclubs als Orte der Begegnung und Demokratiebildung fördern",
+      "zitat": "Jugendclubs wollen wir als Orte der Begegnung und Demokratiebildung fördern, um Radikalisierung frühzeitig entgegenzuwirken.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "b80a773acba97ca5"
+    },
+    {
+      "kennung": "M088",
+      "ebene": "land",
+      "beschreibung": "Rechtliche Hürden abbauen, damit Senioren- und Jugendarbeit gemeinsam gefördert werden können",
+      "zitat": "Zudem wollen wir rechtliche Hürden abbauen, um eine gemeinsame Mischförderung von Senioren- und Jugendarbeit zu ermöglichen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2001
+      ],
+      "pruefsumme": "4ed0a80994214a04"
+    },
+    {
+      "kennung": "M089",
+      "ebene": "bund",
+      "beschreibung": "Infrastruktur für Bildung und Teilhabe ausbauen, unter anderem Mobilität für Kinder und Jugendliche.",
+      "zitat": "Zugleich bauen wir konsequent und gezielt die Infrastruktur für Bildung und Teilhabe weiter aus. Dazu gehören […] Mobilität für Kinder und Jugendliche.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2002
+      ],
+      "pruefsumme": "40d2119bc5c0fa2e"
+    },
+    {
+      "kennung": "M090",
+      "ebene": "land",
+      "beschreibung": "Rechtliche Grundlage für nächtliche Ausgangssperren für jugendliche Intensivtäter schaffen.",
+      "zitat": "[Partei] fordert: […] Eine rechtliche Grundlage für kriminalitätsbezogene nächtliche Ausgangssperren für jugendliche Intensivtäter.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2003
+      ],
+      "pruefsumme": "bca46fb2b59a14f3"
+    },
+    {
+      "kennung": "M091",
+      "ebene": "land",
+      "beschreibung": "Leitlinie für die Förderung von E-Sport erarbeiten, E-Sport den traditionellen Sportarten gleichstellen",
+      "zitat": "E-Sport soll unterstützt und anderen traditionellen Sportarten gleichgestellt werden. Dafür wird eine Leitlinie für die Förderung erarbeitet.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2001
+      ],
+      "pruefsumme": "d15119fcfc83033e"
+    },
+    {
+      "kennung": "M092",
+      "ebene": "land",
+      "beschreibung": "Diverse Orte für Kinder und Jugendliche zugänglicher machen: Calisthenikanlagen in Parks ausbauen, ungenutzte öffentliche Räume zum ungestörten Aufenthalt umgestalten",
+      "zitat": "Neben Jugendfreizeiteinrichtungen wollen wir diverse Orte in [Land] für Kinder und Jugendliche zugänglicher machen. Wir wollen Calisthenikanlagen in Parks ausbauen und ungenutzte öffentliche Räume so umgestalten, dass sich Kinder und Jugendliche dort ungestört aufhalten können.",
+      "ursachen_ids": [
+        2003
+      ],
+      "ursachen_offen": [
+        2001
+      ],
+      "pruefsumme": "18bc7864198f1646"
+    },
+    {
+      "kennung": "M093",
+      "ebene": "land",
+      "beschreibung": "Nachbarschaftstreffs als Orte der Gemeinschaft in jeder Kommune; Veranstaltungen für unter 25 kostenlos",
+      "zitat": "Für ein [Land], in dem alle gut leben können, fordern wir: […] in jeder Kommune und jedem Stadtteil ein Ort der Gemeinschaft: Diese Nachbarschaftstreffs bieten Raum für Veranstaltungen, Geselligkeit und gemeinsames Arbeiten. Für Menschen unter 25 und über 65 sind Veranstaltungen kostenlos.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2001
+      ],
+      "pruefsumme": "a92ad71e48217e26"
+    },
+    {
+      "kennung": "M094",
+      "ebene": "land",
+      "beschreibung": "Leerstehende Ladenflächen und Einkaufszentren für Jugendangebote beleben und Zwischennutzungen erleichtern",
+      "zitat": "Leerstehende Shoppingcenter und Ladenzeilen beleben wir neu und ermöglichen dort Jugend-, Kultur-, Spiel-, Sport- und soziale Angebote. Zwischennutzungen fördern wir gezielt und vereinfachen Genehmigungen.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "fb105ba290a39a69"
+    },
+    {
+      "kennung": "M095",
+      "ebene": "land",
+      "beschreibung": "Kreis-Kinder- und Jugendringe finanziell und personell besser ausstatten",
+      "zitat": "Kreis-Kinder- und Jugendringe werden finanziell und personell besser ausgestattet, um Qualifizierung, Koordination und Vernetzung vor Ort zu sichern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2001
+      ],
+      "pruefsumme": "8a680fca5074c62d"
+    },
+    {
+      "kennung": "M096",
+      "ebene": "bund",
+      "beschreibung": "Der Bund übernimmt für alle Kinder das erste Vereinsjahr im Sport per Zuschuss",
+      "zitat": "Der Bund soll für alle Kinder das erste Jahr im Sportverein bezahlen (Zuschuss von bis zu 150 Euro im Jahr).",
+      "ursachen_ids": [
+        2002
+      ],
+      "pruefsumme": "210b2b9818abb218"
+    },
+    {
+      "kennung": "M097",
+      "ebene": "bund",
+      "beschreibung": "Freiräume und Ressourcen für jugendliches Engagement, unter anderem über Förderprogramme",
+      "zitat": "Wir setzen uns für mehr Freiräume und Ressourcen für jugendliches Engagement ein. Dazu gehören Förderprogramme, Vernetzungsangebote und die Anerkennung ehrenamtlicher Arbeit.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2001
+      ],
+      "pruefsumme": "015b4c7d440138d8"
+    },
+    {
+      "kennung": "M098",
+      "ebene": "land",
+      "beschreibung": "Angebote der Jugendarbeit ausbauen, neben Sprach- und Integrationsangeboten im Rahmen von Präventionsprojekten",
+      "zitat": "Gezielte Präventionsprojekte werden in stark betroffenen Communities eingerichtet. Sprachkurse, Integrationsangebote und Angebote der Jugendarbeit werden ausgebaut.",
+      "ursachen_ids": [
+        2001
+      ],
+      "pruefsumme": "97bb6fab3ba9d16e"
+    },
+    {
+      "kennung": "M099",
+      "ebene": "land",
+      "beschreibung": "In jedem Bezirk mindestens einen queeren Ort schaffen, auch als Jugendclub",
+      "zitat": "In jedem Bezirk soll daher mindestens ein queerer Ort in Form eines Zentrums, Jugendclubs oder Familienzentrums entstehen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2001
+      ],
+      "pruefsumme": "234a401027cfc8da"
+    },
+    {
+      "kennung": "M100",
+      "ebene": "bund",
+      "beschreibung": "Deutschlandticket für Schüler*innen, Azubis und Studierende kostenlos, Preis auf 9 Euro gesenkt (Grenzfall: Mobilität, kein Freizeitbezug).",
+      "zitat": "Darüber hinaus senken wir den Preis für das Deutschlandticket wieder auf 9 Euro. Für Schüler*innen, Azubis, Senior*innen und Studierende soll das Deutschlandticket kostenlos sein.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2002
+      ],
+      "pruefsumme": "99b6f53fdf9ae1c2"
+    }
+  ]
+}

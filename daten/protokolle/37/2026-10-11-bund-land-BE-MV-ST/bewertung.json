@@ -1,0 +1,1291 @@
+{
+  "blind_pruefsumme": "445c0acae649ab7620488cc4d6cd403a448f6bb6a53de6be235136ed1f910e93",
+  "neue_instrumente": [
+    {
+      "kennung": "I1",
+      "name": "Landesmittel bzw. Investitionsprogramm für Sanierung und Neubau von Sportstätten aufstocken (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Setzt direkt am Sanierungsstau an; Studien zeigen, dass Sportplätze und Bäder die Vereinsteilnahme stützen. Landesmittel sind aber klein gegenüber dem Rückstand in Milliardenhöhe und hängen vom Haushalt ab.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.bisp-surf.de/Record/PU201407006674"
+    },
+    {
+      "kennung": "I2",
+      "name": "Bestehende Sportstättenförderung des Landes fortführen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Sichert die bisherige Förderung ab und ist leicht umsetzbar; zusätzliche Mittel gegen den wachsenden Rückstand sind damit nicht verbunden.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I3",
+      "name": "Planung, Datengrundlage und schnellere Förder- und Genehmigungsverfahren für Sportstättenbau (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kommunen wünschen weniger Bürokratie in Förderprogrammen, und bessere Daten lenken Mittel gezielter. Ohne zusätzliches Geld bleibt der Abbau des Sanierungsstaus aber begrenzt; Wirkung kaum untersucht.",
+      "evidenz": "offen",
+      "beleg_studie_url": "https://kommunal.de/sportstaetten-sanierung-kommunen-finanzen"
+    },
+    {
+      "kennung": "I4",
+      "name": "Prioritäten bei Sportstätteninvestitionen setzen (Bestand, Schulsport, Bäder) (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kann knappe Mittel auf den Bestand lenken und ist einfach umsetzbar; ändert aber nichts an der Höhe der verfügbaren Mittel.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I5",
+      "name": "Sportflächen bei Neubauvorhaben einplanen bzw. vorschreiben (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Schafft zusätzliche, meist offene Sportflächen bei Neubauten; der Rückstand bei bestehenden Hallen und Bädern bleibt unberührt. Verpflichtungen für Investoren brauchen Bauplanungsrecht und Verträge.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I6",
+      "name": "Öffentliche Sportstätten für Vereine kostenfrei oder stark vergünstigt nutzbar machen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Sportstättenkosten bestimmen laut Panelstudie die Höhe der Vereinsbeiträge, daher entlastet freie Nutzung spürbar. Die Kosten tragen aber Kommunen, deren Sportbetriebe oft schon Verluste haben; Ausgleich durch das Land nötig.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.bisp-surf.de/Record/PU202008006689"
+    },
+    {
+      "kennung": "I7",
+      "name": "Bestehende gebührenfreie Nutzung von Sportstätten und Bädern für Vereine beibehalten (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Verhindert Beitragserhöhungen durch neue Nutzungsgebühren, die laut Studien auf Beiträge durchschlagen; bringt gegenüber heute aber keine zusätzliche Entlastung.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.bisp-surf.de/Record/PU202008006689"
+    },
+    {
+      "kennung": "I8",
+      "name": "Energetische Sanierung von Bädern und Eishallen zur Senkung der Betriebskosten (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Messungen in Pilotbädern zeigen deutliche Einsparungen bei Wärme und Strom und senken so Betriebsverluste. Hohe Investitionen nötig; Wirkung erst nach Jahren.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.energiezukunft.eu/bauen/bauzukunft/energieeffizient-im-spa"
+    },
+    {
+      "kennung": "I9",
+      "name": "Vereinspauschalen bzw. Grundförderung des Landes für Sportvereine erhöhen und dynamisieren (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Mehr und breitere Einnahmen gehen laut Panelstudie mit niedrigeren Beiträgen einher und verbessern die Finanzlage der Vereine. Dauerhafte Mehrausgaben belasten den Landeshaushalt.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.bisp-surf.de/Record/PU202008006689"
+    },
+    {
+      "kennung": "I10",
+      "name": "Bestehende Förderung des Landessportbunds langfristig fortführen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Gibt Vereinen Planungssicherheit und ist leicht umsetzbar; zusätzliche Mittel gegen gestiegene Kosten sind damit nicht verbunden.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I11",
+      "name": "Landesförderung für Personal in Vereinen (Übungsleiter, Trainer, Hauptamt, Weiterbildung) (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Kosten für Trainer und Übungsleiter treiben laut Panelstudie die Beiträge; Zuschüsse entlasten Vereine direkt. Umfang meist unbestimmt, Finanzierung aus dem Landeshaushalt nötig.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.bisp-surf.de/Record/PU202008006689"
+    },
+    {
+      "kennung": "I12",
+      "name": "Für höhere steuerfreie Übungsleiter- und Ehrenamtspauschalen eintreten (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Kann Ehrenamt etwas attraktiver machen, eine Wirkung auf das Engagement ist aber nicht belegt; die Pauschalen wurden 2026 bereits erhöht. Regelt nur der Bund, das Land kann sich nur einsetzen.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I13",
+      "name": "Anerkennung und Rahmenbedingungen für Ehrenamtliche verbessern (Ehrenamtskarte, Freistellung, Vereinbarkeit) (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Würdigt Ehrenamt und erleichtert Engagement; Evaluationen zeigen Zufriedenheit der Karteninhaber, aber keinen Nachweis für mehr Engagement. Die Finanzlage der Vereine ändert sich kaum.",
+      "evidenz": "offen",
+      "beleg_studie_url": "https://www.baden-wuerttemberg.de/de/service/presse/pressemitteilung/pid/erprobung-der-ehrenamtskarte-laeuft-erfolgreich"
+    },
+    {
+      "kennung": "I14",
+      "name": "Bürokratie für Vereine abbauen, Förderverfahren vereinfachen und Digitalisierung unterstützen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Bürokratie ist eine der größten Belastungen für Vereinsvorstände; Vereinfachung entlastet Ehrenamtliche. Viele Pflichten sind Bundes- oder EU-Recht, und die Wirkung auf die Vereinsfinanzen ist kaum untersucht.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I15",
+      "name": "Kooperationen von Schulen und Kitas mit Sportvereinen fördern (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kann Vereinen Nachwuchs und bezahlte Ganztagsstunden bringen; belastet aber zugleich Ehrenamtliche, und die Wirkung auf die Vereinssituation ist kaum untersucht.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I16",
+      "name": "Bundesprogramm zur Sanierung von Sportstätten und Schwimmbädern fortführen und ausbauen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Setzt am Sanierungsstau an, und Sportstätten stützen die Vereinsteilnahme nachweislich. Der Bund finanziert solche Programme bereits; die Summen decken aber nur einen Teil des Rückstands.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.bisp-surf.de/Record/PU201407006674"
+    },
+    {
+      "kennung": "I17",
+      "name": "Steuerfreie Übungsleiter- und Ehrenamtspauschale erhöhen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Vom Bund einfach umsetzbar und für Engagierte spürbar; eine Wirkung auf Zahl der Ehrenamtlichen oder Vereinsfinanzen ist nicht belegt, Vereine müssen die Zahlungen selbst aufbringen.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I18",
+      "name": "Vereine bei Bürokratie, Haftung und Datenschutzpflichten entlasten (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Entlastet Vorstände bei häufig genannten Belastungen; Datenschutz ist zum Teil EU-Recht, und die Wirkung auf Vereinsfinanzen und Sportstätten ist kaum untersucht.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I19",
+      "name": "Ehrenamt im Breitensport allgemein stärken und neue Engagierte gewinnen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Zielt auf das Ehrenamt als Rückgrat der Vereine; konkrete Instrumente fehlen, und der Bund hat im Vereinssport nur begrenzte Hebel.",
+      "evidenz": "offen"
+    }
+  ],
+  "zuordnung": [
+    {
+      "kennung": "M001",
+      "instrument": "I15",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M002",
+      "instrument": "I1",
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M003",
+      "instrument": "I12",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M004",
+      "instrument": "I18",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M005",
+      "instrument": "I6",
+      "ursachen": [
+        3702
+      ]
+    },
+    {
+      "kennung": "M006",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Kann die Angst vor Vorstandsämtern mindern; eine Haftungsbegrenzung für Ehrenamtliche besteht im Bundesrecht bereits, das Land kann sie nur anregen.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M007",
+      "instrument": "I13",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M008",
+      "instrument": "I1",
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M009",
+      "instrument": "I7",
+      "ursachen": [
+        3702
+      ]
+    },
+    {
+      "kennung": "M010",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Zuschüsse zu Energiekosten entlasten Vereine kurzfristig, wie Hilfsprogramme in der Energiekrise; ohne Sanierung bleiben die Kosten aber bestehen, eine Evaluation fehlt.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3702
+      ]
+    },
+    {
+      "kennung": "M011",
+      "instrument": "I15",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M012",
+      "ursachen": []
+    },
+    {
+      "kennung": "M013",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Bessere Kommunalfinanzen und ein Investitionsfonds setzen an der Finanzierung des Sanierungsstaus an; Mittel sind nicht zweckgebunden für Sport, Umfang und Finanzierung offen.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M014",
+      "instrument": "I1",
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M015",
+      "ursachen": []
+    },
+    {
+      "kennung": "M016",
+      "instrument": "I16",
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M017",
+      "ursachen": []
+    },
+    {
+      "kennung": "M018",
+      "instrument": "I1",
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M019",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 1,
+        "begruendung": "Senkt Beiträge direkt und bringt Vereinen Einnahmen; Erfahrungen mit Sportgutscheinen zeigen hohe Reichweite, aber viele Nutzer waren schon aktiv. Sehr teuer, Finanzierung ungeklärt.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7460334"
+      },
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M020",
+      "instrument": "I16",
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M021",
+      "instrument": "I3",
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M022",
+      "instrument": "I14",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M023",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Bekennt sich zu wohnortnahen Vereinsangeboten, nennt aber weder Mittel noch Instrument; Wirkung daher kaum abschätzbar.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M024",
+      "instrument": "I13",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M025",
+      "ursachen": []
+    },
+    {
+      "kennung": "M026",
+      "ursachen": []
+    },
+    {
+      "kennung": "M027",
+      "instrument": "I13",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M028",
+      "instrument": "I1",
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M029",
+      "instrument": "I17",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M030",
+      "ursachen": []
+    },
+    {
+      "kennung": "M031",
+      "instrument": "I10",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M032",
+      "instrument": "I14",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M033",
+      "instrument": "I15",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M034",
+      "instrument": "I1",
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M035",
+      "instrument": "I18",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M036",
+      "ursachen": []
+    },
+    {
+      "kennung": "M037",
+      "instrument": "I18",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M038",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Übertragung ungenutzter Anlagen an Vereine kann kommunale Betriebskosten senken und Flächen zurückgewinnen; belastet aber Vereine mit Betrieb und Unterhalt.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3702
+      ]
+    },
+    {
+      "kennung": "M039",
+      "instrument": "I6",
+      "ursachen": [
+        3702
+      ]
+    },
+    {
+      "kennung": "M040",
+      "ursachen": []
+    },
+    {
+      "kennung": "M041",
+      "ursachen": []
+    },
+    {
+      "kennung": "M042",
+      "instrument": "I6",
+      "ursachen": [
+        3702
+      ]
+    },
+    {
+      "kennung": "M043",
+      "instrument": "I15",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M044",
+      "instrument": "I2",
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M045",
+      "instrument": "I1",
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M046",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Investitionen in kommunale Infrastruktur können auch Sportstätten zugutekommen; die Mittel verteilen sich aber auf viele Einrichtungsarten, Umfang offen.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M047",
+      "ursachen": []
+    },
+    {
+      "kennung": "M048",
+      "instrument": "I1",
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M049",
+      "instrument": "I11",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M050",
+      "instrument": "I14",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M051",
+      "instrument": "I4",
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M052",
+      "instrument": "I11",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M053",
+      "instrument": "I19",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M054",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Einmaliger Zuschuss zum ersten Vereinsjahr senkt die Einstiegshürde; Sportgutscheine erreichen viele Kinder, doch viele waren schon aktiv. Danach fällt die Entlastung weg.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7460334"
+      },
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M055",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Benennt das Problem bezahlbarer Einmietung für Vereine ohne eigene Anlagen, lässt aber offen, wie Zugang und Kosten gesichert werden.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3702
+      ]
+    },
+    {
+      "kennung": "M056",
+      "instrument": "I1",
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M057",
+      "instrument": "I14",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M058",
+      "instrument": "I11",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M059",
+      "instrument": "I1",
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M060",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Eigenstrom kann Energiekosten senken und Einnahmen bringen; die Gemeinnützigkeit regelt aber das Steuerrecht des Bundes, das Land kann wenig selbst tun.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3702,
+        3703
+      ]
+    },
+    {
+      "kennung": "M061",
+      "instrument": "I4",
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M062",
+      "instrument": "I14",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M063",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Eine Überprüfung der Bäderbetriebe kann Abläufe und Kosten verbessern; ob sich Verluste und Öffnungszeiten tatsächlich bessern, ist offen.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3702
+      ]
+    },
+    {
+      "kennung": "M064",
+      "instrument": "I1",
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M065",
+      "ursachen": []
+    },
+    {
+      "kennung": "M066",
+      "instrument": "I19",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M067",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Vereine mit eigenen Anlagen tragen Betriebskosten selbst, die laut Studien die Beiträge erhöhen; Gleichstellung entlastet sie. Erfordert Gesetzesänderung und dauerhafte Mittel.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://www.bisp-surf.de/Record/PU202008006689"
+      },
+      "ursachen": [
+        3702
+      ]
+    },
+    {
+      "kennung": "M068",
+      "ursachen": []
+    },
+    {
+      "kennung": "M069",
+      "instrument": "I2",
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M070",
+      "instrument": "I14",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M071",
+      "ursachen": []
+    },
+    {
+      "kennung": "M072",
+      "ursachen": []
+    },
+    {
+      "kennung": "M073",
+      "ursachen": []
+    },
+    {
+      "kennung": "M074",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Schutz vor Angriffen kann Schiedsrichter und Übungsleiter halten; das Strafrecht ist Bundesrecht, und ein Effekt auf die Vereinslage ist kaum untersucht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M075",
+      "instrument": "I12",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M076",
+      "einzeln": {
+        "wirksamkeit": 0,
+        "umsetzbarkeit": 1,
+        "begruendung": "Knüpft Förderung an eine Gesinnungserklärung, bringt Vereinen kein zusätzliches Geld und erhöht den Aufwand; eine Pflicht zu einer bestimmten Grundhaltung ist verfassungsrechtlich heikel.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M077",
+      "instrument": "I3",
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M078",
+      "instrument": "I13",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M079",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Zielt auf den Erhalt wohnortnaher Bäder, nennt aber keine Mittel oder Instrumente zur Sanierung.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M080",
+      "instrument": "I12",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M081",
+      "instrument": "I13",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M082",
+      "instrument": "I1",
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M083",
+      "instrument": "I13",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M084",
+      "instrument": "I13",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M085",
+      "instrument": "I9",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M086",
+      "einzeln": {
+        "wirksamkeit": 0,
+        "umsetzbarkeit": 2,
+        "begruendung": "Verschärft Förderbedingungen, ohne Mittel oder Entlastung zu bringen; kann Aufwand für Vereine erhöhen. Gemeinnützigkeit regelt das Bundessteuerrecht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M087",
+      "ursachen": []
+    },
+    {
+      "kennung": "M088",
+      "instrument": "I11",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M089",
+      "instrument": "I16",
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M090",
+      "instrument": "I9",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M091",
+      "instrument": "I3",
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M092",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 1,
+        "begruendung": "Gebührenfreiheit für Kinder in Vereinen und Bädern senkt Kosten direkt; Erfahrungen mit Teilhabeleistungen zeigen aber geringe Nutzung. Finanzierung bei Kommunen und Ländern ungeklärt.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://www.der-paritaetische.de/alle-meldungen/paritaetische-expertise-zeigt-nicht-einmal-jedes-fuenfte-kind-im-buergergeldbezug-profitiert-von-teilhabeleistungen/"
+      },
+      "ursachen": [
+        3702,
+        3703
+      ]
+    },
+    {
+      "kennung": "M093",
+      "instrument": "I3",
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M094",
+      "instrument": "I11",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M095",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Mehr Zusammenarbeit kann Vereinen Mitglieder bringen; Schulen sind Ländersache, und Instrumente des Bundes fehlen.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M096",
+      "instrument": "I14",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M097",
+      "ursachen": []
+    },
+    {
+      "kennung": "M098",
+      "instrument": "I9",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M099",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Nachnutzung von Wettkampfstätten kann Breitensport nützen; Studien zu Großereignissen zeigen gemischte Erfahrungen. Hängt von einer Vergabe durch Dritte ab.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://www.gov.scot/publications/updated-review-evidence-legacy-major-sporting-events-july-2015/pages/6/"
+      },
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M100",
+      "ursachen": []
+    },
+    {
+      "kennung": "M101",
+      "instrument": "I15",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M102",
+      "instrument": "I1",
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M103",
+      "einzeln": {
+        "wirksamkeit": 3,
+        "umsetzbarkeit": 2,
+        "begruendung": "Eine Milliarde jährlich über 15 Jahre setzt direkt am Sanierungsstau an; Sportstätten stützen die Vereinsteilnahme nachweislich. Finanzierung über so lange Zeit ist im Haushalt nicht gesichert.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://www.bisp-surf.de/Record/PU201407006674"
+      },
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M104",
+      "instrument": "I15",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M105",
+      "instrument": "I1",
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M106",
+      "instrument": "I12",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M107",
+      "ursachen": []
+    },
+    {
+      "kennung": "M108",
+      "instrument": "I7",
+      "ursachen": [
+        3702
+      ]
+    },
+    {
+      "kennung": "M109",
+      "instrument": "I13",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M110",
+      "ursachen": []
+    },
+    {
+      "kennung": "M111",
+      "instrument": "I14",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M112",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Erstattung von GEMA-Gebühren entlastet Vereine bei Veranstaltungen gezielt; der Betrag ist gering und betrifft Training und Sportstätten nicht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M113",
+      "instrument": "I15",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M114",
+      "ursachen": []
+    },
+    {
+      "kennung": "M115",
+      "ursachen": []
+    },
+    {
+      "kennung": "M116",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Modernisierung bestehender Anlagen statt Neubau ist nachhaltiger; ob Großereignisse dem Breitensport nützen, ist in Studien gemischt. Hängt von einer Vergabe durch Dritte ab.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://www.gov.scot/publications/updated-review-evidence-legacy-major-sporting-events-july-2015/pages/6/"
+      },
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M117",
+      "instrument": "I11",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M118",
+      "instrument": "I11",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M119",
+      "ursachen": []
+    },
+    {
+      "kennung": "M120",
+      "instrument": "I12",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M121",
+      "instrument": "I8",
+      "ursachen": [
+        3702
+      ]
+    },
+    {
+      "kennung": "M122",
+      "instrument": "I3",
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M123",
+      "instrument": "I11",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M124",
+      "instrument": "I5",
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M125",
+      "ursachen": []
+    },
+    {
+      "kennung": "M126",
+      "instrument": "I10",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M127",
+      "instrument": "I12",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M128",
+      "ursachen": []
+    },
+    {
+      "kennung": "M129",
+      "ursachen": []
+    },
+    {
+      "kennung": "M130",
+      "instrument": "I14",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M131",
+      "ursachen": []
+    },
+    {
+      "kennung": "M132",
+      "instrument": "I3",
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M133",
+      "ursachen": []
+    },
+    {
+      "kennung": "M134",
+      "ursachen": []
+    },
+    {
+      "kennung": "M135",
+      "instrument": "I1",
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M136",
+      "instrument": "I8",
+      "ursachen": [
+        3702
+      ]
+    },
+    {
+      "kennung": "M137",
+      "ursachen": []
+    },
+    {
+      "kennung": "M138",
+      "instrument": "I13",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M139",
+      "instrument": "I15",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M140",
+      "instrument": "I14",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M141",
+      "instrument": "I13",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M142",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Eigenverantwortliche Instandhaltung mit Planungssicherheit kann Sanierungen beschleunigen; Mittel und Ausgestaltung bleiben offen, Vereine tragen mehr Verantwortung.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M143",
+      "instrument": "I17",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M144",
+      "instrument": "I5",
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M145",
+      "ursachen": []
+    },
+    {
+      "kennung": "M146",
+      "instrument": "I3",
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M147",
+      "instrument": "I13",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M148",
+      "instrument": "I4",
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M149",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Unbürokratische Einmalhilfe erreicht kleine Vereine schnell; 1.000 Euro lindern nur kurzfristig und ändern an laufenden Kosten wenig.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M150",
+      "ursachen": []
+    },
+    {
+      "kennung": "M151",
+      "instrument": "I13",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M152",
+      "instrument": "I3",
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M153",
+      "instrument": "I15",
+      "ursachen": [
+        3703
+      ]
+    },
+    {
+      "kennung": "M154",
+      "instrument": "I1",
+      "ursachen": [
+        3701
+      ]
+    },
+    {
+      "kennung": "M155",
+      "einzeln": {
+        "wirksamkeit": 0,
+        "umsetzbarkeit": 3,
+        "begruendung": "Wirksamkeitsprüfungen können Mittel besser lenken; eine Begrenzung der Dauerförderung nimmt Vereinen aber Planungssicherheit und verbessert ihre Finanzlage nicht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3703
+      ]
+    }
+  ]
+}

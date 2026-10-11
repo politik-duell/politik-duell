@@ -1,0 +1,79 @@
+{
+  "partei_id": 15,
+  "land": "BE",
+  "massnahmen": [
+    {
+      "beschreibung": "Sanierungsstau bei Sportflächen durch massive Investitionen und ein Sofortprogramm beheben.",
+      "ursachen_ids": [3701],
+      "buendel": "Sanierung und Neubau von Sportstätten fördern",
+      "zitat": "Der Sanierungsstau bei Sportflächen muss durch massive Investitionen und ein […] Sofortprogramm behoben werden.",
+      "seite": 65
+    },
+    {
+      "beschreibung": "Bei Neubauvorhaben den Bedarf an zusätzlichen Sportflächen berücksichtigen.",
+      "ursachen_ids": [3701],
+      "zitat": "Bei Neubauvorhaben muss der Bedarf an zusätzlichen Sportflächen berücksichtigt werden.",
+      "seite": 66
+    },
+    {
+      "beschreibung": "Beim Neubau und bei der Sanierung von Sportstätten auf behindertengerechte Eignung achten.",
+      "ursachen_ids": [3701],
+      "zitat": "Beim Neubau und bei der Sanierung von Sportstätten muss stärker auf eine behindertengerechte Eignung geachtet werden.",
+      "seite": 66
+    },
+    {
+      "beschreibung": "Begrenzung der Dauerförderung von Trägern und Vereinen, ergänzt um regelmäßige Wirksamkeitsprüfung.",
+      "ursachen_ids": [3703],
+      "buendel": "Vereinsförderung und Entlastung des Ehrenamts",
+      "zitat": "Deshalb sind eine regelmäßige Wirksamkeitsprüfung von Programmen und eine Begrenzung der Dauerförderung von Trägern und Vereinen unerlässlich.",
+      "seite": 49
+    },
+    {
+      "beschreibung": "Politisch motivierte NGOs und Vereine sollen sich künftig nur über private Spenden und Mitgliedsbeiträge finanzieren.",
+      "ursachen_ids": [],
+      "ursachen_offen": [3703],
+      "buendel": "Eigeneinnahmen und Kooperation der Vereine",
+      "zitat": "Berlin vergibt jedes Jahr hohe Summen an linksradikale NGOs und Vereine […] Wir werden Sorge dafür tragen, dass solche Organisationen sich künftig ausschließlich durch private Spenden und Mitgliedsbeiträge finanzieren.",
+      "seite": 77
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 3701, "name": "Bedarfsplanung Sportflächen", "seite": 66 },
+    { "ursache": 3701, "name": "Barrierefreie Sportstätten", "seite": 66 }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 3702,
+      "seiten": [46, 48, 49, 51, 65, 66, 67],
+      "grund": "Betriebs- und Nutzungskosten von Sportstätten oder Hallenentgelte kommen nicht vor. Der Treffer „Eigenverantwortung“ steht in Sozial-, Familien-, Gesundheits- und Umweltpolitik (S. 46, 48, 49, 61, 62, 69, 72, 79) und im Sportkapitel nur als Begleitwort (S. 65); keine Zusage zu Betriebskosten."
+    }
+  ]
+}
+
+Protokoll Teilauftrag 2 (Thema 37, Ursachen 3701, 3702, 3703)
+
+Gelesen: Kapitel Sport (S. 64–67, vollständig); Kapitel Wirtschaft & Soziales (S. 46–52, Abschnitte Sozialpolitik, Sozialausgaben und Ehrenamt); Kapitel Kunst, Kultur (S. 87–89) und Natur (S. 79–81) nur auf Treffer geprüft; Fundstellen S. 46, 48, 49, 61, 62, 65, 66, 69, 72, 77, 79. Die Fundstellen zu „Eigenverantwortung“ (S. 46, 48, 61, 62, 69, 72, 79) sind Sozial-, Familien-, Gesundheits- und Umweltpolitik, keine Sportvereine oder Sportstätten. Die Suche nach Hallen, Entgelten, Energiekosten, Betriebskosten, Miete, Verein, Ehrenamt und Sportstätten im ganzen Programm ergab nur die hier genannten Stellen. Seiten ohne Text (u. a. 64, 68, 74, 78) sind Trennseiten.
+
+Erfasst:
+- S. 65–66: Sanierungsstau (3701, Bündel Sanierung und Neubau).
+- S. 66: Bedarf bei Neubauvorhaben berücksichtigen (3701, neues Instrument Planung).
+- S. 66: behindertengerechte Eignung bei Neubau und Sanierung (3701, neues Instrument).
+- S. 49: Begrenzung der Dauerförderung von Trägern und Vereinen (3703, Bündel Vereinsförderung).
+- S. 77: Finanzierung politischer NGOs und Vereine nur über Spenden und Mitgliedsbeiträge (3703, Grenzfall: betrifft nicht Sportvereine, Bündel Eigeneinnahmen).
+
+Weitere gleichartige Stellen (nicht separat erfasst):
+- S. 66: „Die AfD unterstützt die Forderungen des Landessportbunds […] und setzt sich für deren Umsetzung ein.“ – gleichartig zum Sanierungsstau (Bündel Sanierung und Neubau), allgemeiner.
+- S. 66: „Für den schulischen Sportunterricht muss eine schulortnahe Versorgung mit Sportflächen sichergestellt werden.“ – gleichartig zur Bedarfsplanung, Zielgruppe Schulsport.
+- S. 51: „Wir setzen uns für die faire und ideologiefreie Anerkennung und Förderung des Ehrenamts ein.“ – gleichartig zu Bündel Vereinsförderung (Ehrenamt), allgemeiner als S. 49.
+
+Nicht erfasst:
+- S. 66: Olympiabewerbung, Nachnutzung der Olympiasportstätten – nur als Voraussetzung einer Großveranstaltung (R2), nicht als Zusage zu Vereinen oder Sportstätten.
+- S. 66–67: Sportunterricht, Schwimmbus, Sport-AGs im Ganztag, Sportförderunterricht – Schule (R2).
+- S. 65: Spitzensport, Trainer, Eliteschulen, Olympiastützpunkte – Spitzensport ohne Vereinsbezug (R2).
+- S. 65: Gewalt im Amateurfußball und in Freibädern, „klare Regeln und rigoroses Vorgehen“ – Sicherheit, kein Bezug zu Beiträgen, Betrieb oder Sportstätten im Sinn der Ursachen.
+- S. 65: „Sport verbessert […] Wohlbefinden“ und Behindertensport als Ziel – Bekenntnis bzw. Ziel.
+- S. 65: „Eisflächen“, Hallenbäder, Warteliste bei Vereinen – Lagebeschreibung.
+- S. 66: Ziel einer bedarfsgerechten Versorgung mit Sportflächen – Ziel.
+- S. 46, 48, 61, 62, 69, 72, 79: „Eigenverantwortung“ in anderen Politikfeldern – nicht Ursache 3702.
+
+Richtungen ohne Maßnahme: 3701 „Bestand priorisieren und gemeinsam nutzen“ und 3702 „Betriebskosten und Hallenentgelte fördern oder senken“ (siehe hebel_nicht_gefunden). 3702 „Eigenverantwortung und Auslastung“ enthält nur Treffer aus anderen Politikfeldern (siehe nicht_erfasst).

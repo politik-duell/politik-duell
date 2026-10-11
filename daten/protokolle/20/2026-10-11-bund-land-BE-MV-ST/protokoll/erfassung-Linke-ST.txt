@@ -1,0 +1,92 @@
+{
+  "partei_id": 16,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Landesweiter Rechtsanspruch auf Kinder- und Jugendarbeit mit Mindeststandard; Förderung kommunaler Maßnahmen dynamisch erhöhen",
+      "ursachen_ids": [2001],
+      "buendel": "Angebote und Räume für Jugendliche ausbauen",
+      "zitat": "Kinder- und Jugendarbeit landesweit sichern: Wir wollen Kinder- und Jugendhilfe mit einem qualitativen und quantitativen Mindeststandard als Rechtsanspruch für junge Menschen im Kinder- und Jugendhilfegesetz des Landes festschreiben. Die Förderung von kommunalen Maßnahmen werden wir entsprechend der steigenden Bedarfe erhöhen und eine jährliche Dynamisierung von 2,5 Prozent bzw. mindestens in Höhe der Inflationsrate gesetzlich verankern.",
+      "seite": 61
+    },
+    {
+      "beschreibung": "Freiräume aus Leerstand gemeinsam mit Jugendlichen gestalten und nutzen",
+      "ursachen_ids": [2001],
+      "buendel": "Selbstorganisation und Mehrfachnutzung von Räumen",
+      "zitat": "Leerstand zu Freiräumen machen – mit Jugendlichen gestalten und nutzen, auch in engen Quartieren,",
+      "seite": 63
+    },
+    {
+      "beschreibung": "Verlässliche Öffnungszeiten, stabile Teams und sichere Räume für Jugendangebote, ohne Antragsaufwand",
+      "ursachen_ids": [2001],
+      "zitat": "Wir wollen: verlässliche Öffnungszeiten (auch abends und in den Ferien), stabile Teams und sichere Räume gewährleisten – ohne Antragsstress,",
+      "seite": 63
+    },
+    {
+      "beschreibung": "Jugendorte in jedem Ortsteil in etwa 15 Minuten erreichbar machen, wo es fehlt mit mobilem Angebot vor Ort",
+      "ursachen_ids": [2001],
+      "zitat": "Wir wollen: Nähe sichern – in jedem Ortsteil mindestens einen Jugendort in ca. 15 Minuten erreichbar, wo das fehlt: mobiles Angebot vor Ort,",
+      "seite": 64
+    },
+    {
+      "beschreibung": "Investitionspfad: fehlende Jugendorte benennen, finanzieren und terminieren",
+      "ursachen_ids": [2001],
+      "zitat": "Wir wollen: […] einen Investitionspfad festlegen – fehlende Orte (z.B. Jugendclub, Jugendbildungsstätte) benennen, finanzieren, terminieren – mit Zeitleiste je Region,",
+      "seite": 65
+    },
+    {
+      "beschreibung": "Ferien- und Schullandheim-Angebote als feste Säule sichern, Teilnahme unabhängig vom Geldbeutel",
+      "ursachen_ids": [2001],
+      "zitat": "Schullandheime und Ferien als feste Säule sichern – Teilnahme unabhängig vom Geldbeutel,",
+      "seite": 63
+    },
+    {
+      "beschreibung": "Zugang zu offenen Angeboten ohne Nachweispflichten und ohne formale Kriterien",
+      "ursachen_ids": [2001],
+      "zitat": "Wir wollen: […] Zugang ohne Nachweispflichten (keine ID-Pflicht) ermöglichen – Teilnahme an offenen Angeboten ohne formale Kriterien;",
+      "seite": 63
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 2003,
+      "seiten": [68, 105, 107, 134, 137],
+      "grund": "Keine Regel zu Lärm oder Nutzung öffentlicher Räume im Verhältnis zu Jugendlichen. Skateparks und Bolzplätze stehen im Sportkapitel ohne Jugendbezug (R2). Lärmschutz nur beim Flughafen (S. 105). Konfliktmediation für Nachbarschaft und Mediation in der Justiz ohne Jugendbezug."
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 2001, "name": "Verlässliche Öffnungszeiten und stabile Teams", "seite": 63 },
+    { "ursache": 2001, "name": "Jugendorte in Reichweite", "seite": 64 },
+    { "ursache": 2001, "name": "Investitionspfad für fehlende Jugendorte", "seite": 65 },
+    { "ursache": 2001, "name": "Kostenfreie Teilnahme an Ferienangeboten", "seite": 63 },
+    { "ursache": 2001, "name": "Zugang ohne Nachweispflicht", "seite": 63 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "jugendort", "ursache": 2001, "richtung": "Orte für Jugendliche ausbauen" }
+  ]
+}
+
+Protokoll (Linke-ST, Thema 20 – Freizeitangebote und Treffpunkte für Jugendliche)
+
+Gelesen: Inhaltsverzeichnis (S. 2–6); Kapitel „Kinder- und Jugendarmut bekämpfen“ (S. 59–65, vollständig); Sportkapitel S. 66–69 (vollständig, für Abgrenzung); Fundstellen S. 4, 9, 57, 58, 62, 68, 105, 107, 110, 124, 125, 130, 134, 137 (Ausschnitte bzw. vollständig dort, wo Zusagen stehen).
+
+Erfasst: 2001 mit Jugendarbeit (S. 61, Bündel), Leerstand (S. 63, Bündel), Öffnungszeiten (S. 63), Ferienangebote (S. 63), Zugang ohne Nachweise (S. 63), Jugendorte in Reichweite (S. 64), Investitionspfad (S. 65).
+
+Nicht erfasst:
+- S. 62: Jugendparlamente mit Antrags-, Rede- und Budgetrecht – Beteiligung, keine Treffpunkte oder Angebote.
+- S. 60: Vertrauensperson in Vereinen/Jugendzentren – Kinderschutz, kein Angebot.
+- S. 64–65: Jugendticket, Nulltarif, Radwege und Schulwege – Verkehr, nicht Freizeitangebot.
+- S. 63–65: Tarifbindung in geförderten Angeboten, Nichtinanspruchnahme erheben, Wegezeiten messen, Teilhabe-Bild – Monitoring/Arbeitsbedingungen, keine Zusage an Treffpunkten; Tarifbindung gleichartig zur Jugendarbeit (S. 61).
+- S. 64: Grundausstattung (Mittagessen, Beiträge, Fahrten), Kinderteilhabe-Ausgleich, Bibliotheken – Kosten für Freizeit gehören nach R1 zu 2002 (nicht Ursache dieses Programms); Bibliotheken Kultur.
+- S. 57–58: Freizeitangebote und Treffpunkte für Senior:innen – nicht Jugendliche.
+- S. 134: Streetwork, offene Jugendtreffs und Jugendzentren („Jugendarbeit statt Jugendknast“) – gleichartig zur Förderung der Jugendarbeit (S. 61), daher nicht als zweite Maßnahme im Bündel.
+- S. 68: Skateparks/Bolzplätze „Öffentliche Angebote sollen erhalten bleiben“ – Sport ohne Jugendbezug (R2).
+- S. 68: Zuschüsse für Mitgliedsbeiträge für Kinder – Kosten für Freizeit, nach R1 nicht Ursache 2001/2003 dieses Programms.
+- S. 134 (Konfliktmediatoren für Nachbarschaftsstreit), S. 137 (Mediationshilfe) – kein Jugendbezug (R1 2003).
+- S. 18, 25, 45, 130 – Lagebeschreibung, Bekenntnis oder Einleitung.
+
+Richtungen ohne Maßnahme: 2003 Zugang zu öffentlichem Raum (nur Skatepark, Sportkapitel), 2003 Lärm mindern (nur Flughafen), 2003 Nutzungen abstimmen (Mediation/Konfliktmediation ohne Jugendbezug).
+
+Seiten ohne Text: keine relevanten (nur S. 1 als Titelseite).
+
+Stand im PDF: Landtagswahlprogramm, Beschluss 14. März 2026 – stimmt mit dem Auftrag überein.

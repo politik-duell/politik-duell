@@ -1,0 +1,64 @@
+{
+  "partei_id": 12,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Förderung von Popkultur ausbauen, um vielfältige kulturelle Angebote für jüngere Zielgruppen zu schaffen.",
+      "ursachen_ids": [2001],
+      "buendel": "Angebote und Räume für Jugendliche ausbauen",
+      "zitat": "Die Förderung von Popkultur wollen wir ausbauen, um insbesondere für jüngere Zielgruppen vielfältige kulturelle Angebote zu schaffen.",
+      "seite": 51
+    },
+    {
+      "beschreibung": "Jugendverbände, Jugendparlamente und ähnliche Strukturen weiter unterstützen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2001],
+      "zitat": "Jugendverbände, Jugendparlamente und ähnliche Strukturen leisten eine wichtige Arbeit. Wir wollen sie weiter unterstützen.",
+      "seite": 27
+    },
+    {
+      "beschreibung": "Taschengeld für Freiwilligendienste so ausgestalten, dass auch Jugendliche aus einkommensärmeren Haushalten teilnehmen können.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2002],
+      "buendel": "Teilhabe für Kinder und Jugendliche finanziell sichern",
+      "zitat": "Das „Taschengeld“ wollen wir so ausgestalten, dass auch Jugendliche aus einkommensärmeren Haushalten sich für einen Freiwilligendienst entscheiden können.",
+      "seite": 28
+    },
+    {
+      "beschreibung": "Infrastruktur für Bildung und Teilhabe ausbauen, unter anderem Mobilität für Kinder und Jugendliche.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2002],
+      "zitat": "Zugleich bauen wir konsequent und gezielt die Infrastruktur für Bildung und Teilhabe weiter aus. Dazu gehören […] Mobilität für Kinder und Jugendliche.",
+      "seite": 27
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 2001, "name": "Jugendverbände und Jugendparlamente unterstützen", "seite": 27 },
+    { "ursache": 2002, "name": "Infrastruktur für Bildung und Teilhabe ausbauen", "seite": 27 }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 2003,
+      "seiten": [27, 28, 35, 49, 50, 51, 52],
+      "grund": "Kein Eintrag zu Lärm, Nachtruhe oder Nutzungskonflikten im öffentlichen Raum mit Jugendlichen. Lärmschutz (S. 35) betrifft nur den Schienenverkehr."
+    }
+  ],
+  "hebel_nicht_gefunden": []
+}
+
+Protokoll:
+Gelesen: Inhaltsverzeichnis (S. 3); Kapitel 9 Familien (S. 25–28), Kapitel 18 Medien, Kultur und Sport (S. 49–52), Kapitel 19 Kommunen (S. 52–53); Fundstellen S. 4, 7, 24, 26, 30, 32, 35, 53 (Treffer ohne Jugendbezug, siehe unten).
+Nicht erfasst:
+- S. 26: Kindergeld, Kinderzuschlag, Wohngeld, Familienzentren – Einkommens- und Familienpolitik, keine Freizeitkosten.
+- S. 27: Ganztag, kostenloses Mittagessen in Kitas und Schulen – Schule, gehört zu anderen Themen (R2).
+- S. 27: „Wir wollen allen Kindern … sichern – mit einer Infrastruktur für soziale Teilhabe und armutsfesten … Geldleistungen.“ – Leitbild ohne eigenes Instrument; die konkreten Instrumente stehen oben.
+- S. 28: Schutzkonzepte in Einrichtungen, in denen Kinder und Jugendliche sich aufhalten – Gewaltschutz, kein Freizeitangebot.
+- S. 50: „Kultur für alle“ und bezahlbare kulturelle Angebote für alle Bürgerinnen und Bürger – Leitbild und Ziel ohne eigenes Instrument (Kosten-Ursache 2002 nicht besetzt).
+- S. 51: Kinos im ländlichen Raum als Treffpunkte, Clubs (Kulturschutzgebiete) – Kulturorte ohne ausdrücklichen Jugendbezug (R2).
+- S. 52: Sport, Sportstätten, Breitensport – gehört zu Thema 37 (R2).
+- S. 35: ÖPNV-Ticket bezahlbar für die Breite der Gesellschaft – kein Jugendbezug.
+- S. 52: „Ländliche Räume … (Ruf-)Busse und Bahnen“ – Mobilität ohne Jugendbezug.
+- S. 24: ermäßigte Mehrwertsteuer auf Lebensmittel – kein Freizeitbezug.
+Richtungen ohne Maßnahme: 2001 „Selbstorganisation und Mehrfachnutzung von Räumen“; 2002 „Allgemeine Kosten und Gebühren senken“; 2003 alle drei Richtungen.
+Neue Bündel: Jugendverbände-Förderung (S. 27) – gleiche Richtung wie Popkultur-Förderung, aber anderer Gegenstand (Strukturen statt Angebote); Mobilität/Infrastruktur für Teilhabe (S. 27) – Infrastruktur statt Geldleistung.
+Seiten ohne Text: 1, 2, 67, 68 (nicht relevant).

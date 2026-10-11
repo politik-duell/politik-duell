@@ -1,0 +1,51 @@
+{
+  "partei_id": 12,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Länder, Kommunen und Vereine bei der Sanierung von Sportstätten unterstützen.",
+      "ursachen_ids": [3701],
+      "buendel": "Sanierung und Neubau von Sportstätten fördern",
+      "zitat": "Wir helfen Ländern, Kommunen und Vereinen bei der Sanierung von Sportstätten.",
+      "seite": 52
+    },
+    {
+      "beschreibung": "Attraktivität und Zugänglichkeit des Ehrenamts im Breitensport erhöhen.",
+      "ursachen_ids": [3703],
+      "buendel": "Vereinsförderung und Entlastung des Ehrenamts",
+      "zitat": "Wir […] erhöhen die Attraktivität und Zugänglichkeit des Ehrenamts im Breitensport.",
+      "seite": 52
+    },
+    {
+      "beschreibung": "Gemeinnützigkeitsrecht modernisieren.",
+      "ursachen_ids": [],
+      "ursachen_offen": [3703],
+      "zitat": "Mit dem Demokratiefördergesetz schaffen wir die Grundlage, zivilgesellschaftliche Initiativen […] nachhaltig zu unterstützen. Das Gemeinnützigkeitsrecht wollen wir modernisieren.",
+      "seite": 41
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 3703, "name": "Gemeinnützigkeitsrecht modernisieren", "seite": 41 }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 3702,
+      "seiten": [34, 41, 51, 52],
+      "grund": "Keine Aussage zu Hallenmieten, Energiekosten oder Betriebszuschüssen für Sportstätten oder Vereine. Sport-Kapitel (S. 51–52) gelesen; allgemeine Energiepreise (S. 6) betreffen Unternehmen."
+    }
+  ],
+  "hebel_nicht_gefunden": []
+}
+
+Protokoll:
+Gelesen: Inhaltsverzeichnis (S. 3); Kapitel 15 Zusammenhalt (S. 40–41), Kapitel 16 Gewalt (Fundstellen), Kapitel 18 Kultur und Sport (S. 49–52), Kapitel 19 Kommunen (S. 52–53); Fundstellen S. 21, 41, 52 gelesen; S. 46 (Feuerwehren) und S. 34 (Windkraft und Schwimmbad) gelesen.
+Nicht erfasst:
+- S. 21: Wohngemeinnützigkeit – Wohnungsbau, kein Vereinsbezug.
+- S. 34: „wenn das neue Windrad die Kita oder das Schwimmbad finanziert“ – Einnahmen der Gemeinde aus Windkraft, keine Zusage zu Sportstätten.
+- S. 17: Zukunftspakt Bund, Länder, Kommunen – allgemeine Kommunalinvestitionen ohne Sportstätten-Bezug.
+- S. 46: „die Engagierten in den Freiwilligen Feuerwehren, dem THW, bei der DLRG … unterstützen“, „solide ergänzende Ausstattung für die Feuerwehren“ – Hilfsorganisationen, keine Sportvereine; gehört nicht zum Thema.
+- S. 51: „Sowohl im Spitzen- als auch im Breitensport … Trainerinnen, Trainer … Sportfördergesetz“ – allgemeine Sportförderung ohne Vereins- oder Sportstättenbezug (R2).
+- S. 52: Sport als Staatsziel, Schutz vor Gewalt im Sport, Sportgroßveranstaltungen, Olympische Bewerbung – Ziel bzw. allgemeine Sportförderung (R2).
+Richtungen ohne Maßnahme: 3701 „Bestand priorisieren und gemeinsam nutzen“; 3702 „Betriebskosten und Hallenentgelte fördern oder senken“ und „Eigenverantwortung und Auslastung“; 3703 „Eigeneinnahmen und Kooperation der Vereine“.
+Neue Bündel: Gemeinnützigkeitsrecht (S. 41) – Rechtsrahmen statt Förderung oder Entlastung; Grenzfall, daher ursachen_offen 3703.
+Seiten ohne Text: 1, 2, 67, 68 (nicht relevant).

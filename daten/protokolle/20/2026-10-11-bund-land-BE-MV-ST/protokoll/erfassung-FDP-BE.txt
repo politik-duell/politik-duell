@@ -1,0 +1,61 @@
+{
+  "partei_id": 14,
+  "land": "BE",
+  "massnahmen": [
+    {
+      "beschreibung": "Finanzierung eines Projekts verstetigen, das Konflikte zwischen Nutzenden und Anwohnenden von Grünanlagen niedrigschwellig deeskaliert",
+      "ursachen_ids": [],
+      "ursachen_offen": [2003],
+      "buendel": "Nutzungen abstimmen und vermitteln",
+      "zitat": "Wir verstetigen die Finanzierung des „Parkläufer“-Projekts, um Konflikte zwischen Nutzern und Anwohnern öffentlicher Grünanlagen niedrigschwellig zu deeskalieren und die Einhaltung der Parkordnungen sicherzustellen.",
+      "seite": 70
+    },
+    {
+      "beschreibung": "Streetwork-Teams und niedrigschwellige Angebote ausbauen, insbesondere für junge Menschen (im Kontext Suchthilfe)",
+      "ursachen_ids": [],
+      "ursachen_offen": [2001],
+      "buendel": "Angebote und Räume für Jugendliche ausbauen",
+      "zitat": "Wir Liberale wollen Konsumräume und Streetwork-Teams ausbauen, Wartezeiten auf Therapieplätze verkürzen und niedrigschwellige Angebote ausbauen, insbesondere um junge Menschen sowie Menschen in sozial benachteiligten Lebenslagen besser zu erreichen.",
+      "seite": 117
+    },
+    {
+      "beschreibung": "Kultureinrichtungen finanziell ermöglichen, vergünstigte Karten für Jugendliche anzubieten",
+      "ursachen_ids": [],
+      "ursachen_offen": [2001],
+      "zitat": "Wir wollen es Kultureinrichtungen finanziell ermöglichen, vergünstigte Karten für Jugendliche anzubieten.",
+      "seite": 104
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 2003,
+      "seiten": [28, 34, 40, 55, 67, 68, 90, 93, 109, 110, 111],
+      "grund": "Siehe Protokoll; Konflikt- und Lärmstellen betreffen Clubs (R2) oder Gewerbe, Wohnungsbau und Sensorik ohne Jugendbezug."
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 2001, "name": "Ermäßigte Angebote für Jugendliche", "seite": 104 }
+  ]
+}
+
+Protokoll
+
+Gelesene Seiten und Kapitel: Inhaltsverzeichnis (S. 2–6). Kapitel „Am Beat der Zeit – Clubkultur stärken“ (S. 32–34); Kapitel „Innen, Recht und saubere Stadt“ mit Sicherheit, Sauberkeit und Ordnung (S. 64–70); Kapitel „Kulturelle Bildung“ (S. 104), „Clublandschaft“ (S. 108–111); Kapitel „Sucht und Drogen“ (S. 115–118); Kapitel „Einzelhandel, Handwerk, Gastronomie“ (S. 28); Stadtentwicklung und Grünflächen (S. 40, 109); Verkehr (S. 55, 64–65); Digitalisierung (S. 90, 93). Fundstellen aus dem Auftrag vollständig gelesen.
+
+Ursache 2003 (Pflicht): gelesen wurden die Fundstellen S. 28, 34, 40, 55, 67, 68, 70, 90, 93, 109, 110, 111, 117. Eine Maßnahme (Parkläufer, S. 70, ursachen_offen). Die Konfliktmediation für Clubs (S. 111) und der Schallschutz für Clubs (S. 34, 110) sind nach R2 Thema Clubs/Kulturorte und wurden nicht erfasst, weil das Zitat Jugendliche nicht ausdrücklich nennt.
+
+Ursache 2001: zwei Maßnahmen. Streetwork-Ausbau (S. 117) ist ursachen_offen, weil der Kontext Suchthilfe ist. Die Aussage zu Streetwork in der Sicherheitsrubrik (S. 68: „verstärkter Einsatz von Jugend- und Sozialarbeiterinnen und -arbeitern sowie Streetworkerinnen und Streetworkern notwendig“) ist gleichartig (Ausbau Personal Jugendarbeit) und nicht erfasst, weil die konkretere Zusage S. 117 gewählt wurde. Ermäßigte Karten für Jugendliche (S. 104) sind ursachen_offen; die Zuordnung „erschwingliche Angebote“ könnte auch zur Ursache für Kosten für Freizeit und Kultur gehören, die für dieses Thema nicht freigegeben ist.
+
+Nicht erfasst (Stellen gelesen, nicht aufgenommen):
+- S. 115: „Regionale Netzwerke und Vereine, die Sport- und Freizeitangebote liefern und so insbesondere Kindern Impulse zu mehr Sport und Bewegung bieten, wollen wir besser fördern.“ Sportvereine gehören nach R2 zu Thema 37 (Sportvereine und Sportstätten) und nennen keine Jugendlichen.
+- S. 34: „Wir setzen uns dafür ein, Clubstandorte bei der Stadtentwicklung frühzeitig mitzudenken und langfristig zu sichern.“ sowie Zwischennutzungen leerstehender Gebäude: Clubs und Kulturorte, R2, kein Jugendbezug.
+- S. 110/111: Agent-of-Change-Schallschutz und Mediation Anwohner–Clubs: Clubs, R2.
+- S. 67: „Security by Design“ an Risikoorten, S. 28 Aufenthaltsqualität im Einzelhandel: keine Konflikte mit Jugendlichen und Nutzungen, sondern Sicherheit und Stadtgestaltung.
+- S. 68: Prävention, Polizei und Jugendhilfe (Anlaufstelle, Streetwork) – siehe oben.
+- S. 70: Sauberkeit, Kiezinitiativen, Sanitäranlagen – keine Jugendlichen-Zusage.
+- S. 40, 55, 90, 93, 109: Kleingärten, Radwege, Regenwasser, Sensorik, Parkbegrünung – kein Bezug zu Freizeit oder Jugend.
+- Sportkapitel (S. 81–83) nicht für dieses Thema ausgewertet; gehört nach R2 zu Thema 37.
+
+Richtungen ohne Maßnahme: Angebote und Räume für Jugendliche ausbauen – Maßnahme S. 117 (ursachen_offen). Selbstorganisation und Mehrfachnutzung von Räumen – keine (siehe hebel_nicht_gefunden). Zugang zu öffentlichem Raum für Jugendliche ermöglichen – keine (siehe hebel_nicht_gefunden). Lärm mindern und Ruhe schützen – keine (siehe hebel_nicht_gefunden). Nutzungen abstimmen und vermitteln – Maßnahme S. 70 (ursachen_offen).
+
+Seiten ohne Text: S. 1, 94, 100, 105 (Titel- und Trennseiten bzw. Bildseiten). S. 105 liegt im Kapitel „Kulturelle Bildung“ bzw. „Einzelne Kultureinrichtungen“ nicht im Themenbereich; S. 94 und 100 ebenfalls nicht betroffen.

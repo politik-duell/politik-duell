@@ -1,0 +1,41 @@
+{
+  "partei_id": 13,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Sonderprogramm über zehn Jahre, mit dem Kommunen Strukturen der Kinder- und Jugendarbeit aufbauen und stärken", "ursachen_ids": [2001], "zitat": "Mit einem Sonderprogramm wollen wir über zehn Jahre Kommunen dabei unterstützen, Strukturen für Kinder- und Jugendarbeit aufzubauen und zu stärken.", "seite": 84 },
+    { "beschreibung": "Mittel des Kinder- und Jugendplans (zentrales Förderinstrument für Jugendarbeit) aufstocken und an Bedarfe anpassen", "ursachen_ids": [2001], "zitat": "Die Mittel des Kinder- und Jugendplans, dem zentralen Förderinstrument für Jugendarbeit und Jugendhilfe, […] wollen wir aufstocken und den Bedarfen entsprechend kontinuierlich anpassen.", "seite": 84 },
+    { "beschreibung": "Feministische Mädchen- und Jungenarbeit sowie queersensible Angebote besonders fördern", "ursachen_ids": [2001], "zitat": "Dabei wollen wir feministische Mädchen- und Jungenarbeit sowie queersensible Angebote besonders fördern.", "seite": 84 },
+    { "beschreibung": "Sichere und selbst gestaltete Aufenthaltsorte für Jugendliche im öffentlichen Raum schaffen", "ursachen_ids": [2001], "ursachen_offen": [2003], "zitat": "Für alle Jugendlichen wollen wir sichere und selbst gestaltete Aufenthaltsorte im öffentlichen Raum schaffen.", "seite": 84 },
+    { "beschreibung": "Freiräume und Ressourcen für jugendliches Engagement, unter anderem über Förderprogramme", "ursachen_ids": [], "ursachen_offen": [2001], "zitat": "Wir setzen uns für mehr Freiräume und Ressourcen für jugendliches Engagement ein. Dazu gehören Förderprogramme, Vernetzungsangebote und die Anerkennung ehrenamtlicher Arbeit.", "seite": 85 },
+    { "beschreibung": "Jugendverbände mit Schwerpunkt Integration und Demokratie gezielt unterstützen", "ursachen_ids": [], "ursachen_offen": [2001], "zitat": "Jugendverbände, die sich für Integration und Demokratie und gegen Antisemitismus und Rassismus einsetzen, wollen wir gezielt unterstützen.", "seite": 84 },
+    { "beschreibung": "Auskömmlichere Kommunalfinanzierung und Deutschlandfonds, damit Kommunen Investitionen etwa in Jugendclubs finanzieren können", "ursachen_ids": [], "ursachen_offen": [2001], "zitat": "Allein zum Erhalt und zur Sanierung der kommunalen Infrastruktur, dazu zählen zum Beispiel […] Jugendclubs, Sportplätze und Kultureinrichtungen, fehlen bundesweit 186 Milliarden Euro. Durch eine auskömmlichere Finanzierung der Kommunen und den Deutschlandfonds geben wir Kommunen endlich die Möglichkeit, diese dringend notwendigen Investitionen zu finanzieren.", "seite": 108 },
+    { "beschreibung": "Leistungen für Bildung und Teilhabe direkter abrufbar machen, auch für Sportvereine und Musikschulen", "ursachen_ids": [2002], "zitat": "Deshalb müssen sie einfacher, digitaler, bürgerfreundlicher und transparenter werden. Das gilt insbesondere für den bisherigen Kinderzuschlag und die Leistungen der Bildung und Teilhabe, deren direkte Abrufung – beispielsweise durch Schulen, Sportvereine oder Musikschulen – wir erleichtern wollen.", "seite": 83 },
+    { "beschreibung": "Kulturpass für Jugendliche verstetigen (Guthaben, um Kultur zu entdecken)", "ursachen_ids": [2002], "zitat": "Deshalb werden wir den Kulturpass verstetigen und prüfen, ihn auszubauen. Mit ihm erhalten Jugendliche ein Guthaben, um Kultur zu entdecken.", "seite": 125 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 2003, "seiten": [47, 48, 124], "grund": "Lärm- und Verkehrsaussagen ohne Bezug zu Jugendlichen oder Regeln für deren Nutzung öffentlicher Räume; Lärmschutz für Clubs ohne Jugendbezug (R2)."},
+    { "ursache": 2002, "seiten": [39, 40, 49, 78, 111], "grund": "Deutschland-Ticket, Azubi-Ticket und ÖPNV-Vergünstigungen betreffen Mobilität, nicht Freizeit, Sport, Musik oder Kultur von Kindern und Jugendlichen (R1 2002); Engagementkarte gilt Engagierten." }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis (S. 4–7); Kapitel Jugend und Kinder (S. 82–87), Kommunen, Engagement und Sport (S. 108–113), Kultur (S. 124–125); Fundstellen S. 47, 48, 42, 72, 118, 120 (vollständig bzw. Kapitelkontext); S. 11, 17, 31, 35, 39, 40, 60, 71, 149 nur im Auszug der Auftragsdatei geprüft (Strom, Mobilität, Lebensmittel, Standards, Klima, Biomasse, Leerstand, Internet – ohne Freizeitbezug). Seiten ohne Text (1–3, 14, 63, 64, 101, 102, 159, 160) keine Rolle.
+
+Nicht erfasst (Seite, Grund):
+- S. 111: Engagementkarte, vergünstigt Schwimmbad- und Kulturbesuch für Engagierte, nicht für Kinder und Jugendliche (R1 2002). Für Thema 37 als offene Ursache erfasst.
+- S. 87: Mehrgenerationenhäuser als Treffpunkte für Jung und Alt, nicht jugendspezifisch.
+- S. 83–84: Kindergrundsicherung, Kinderarmut, Familienleistungen ohne Freizeitbezug (R1 2002).
+- S. 84–85: psychische Gesundheit, Social-Media-Schutz, Beteiligungsformate, Jugendcheck, Wahlalter – kein Freizeitangebot und kein Treffpunkt.
+- S. 108: Jugendsozialarbeit als Kommunalaufgabe, Jugendhilfe ohne Freizeitbezug.
+- S. 111–112: Freiwilligendienst, Ausbau der Plätze – kein Freizeitangebot.
+- S. 112–113: Breitensport stärken, Spitzensport, Fanprojekte – R2 (Sport gehört zu anderem Thema); allgemeines Ziel „gute Bedingungen schaffen“ (S. 112) ohne konkrete Zusage.
+- S. 124: Lärmschutz für Clubs und Live-Musik, Kulturorte ohne Nennung von Jugendlichen (R2).
+- S. 47–48: Lärm an Flughäfen, Aufenthaltsqualität öffentlicher Räume, Tempo-Regeln – kein Bezug zu Jugendlichen (R1 2003).
+- S. 120: Verhütungsmittel, Frauenhäuser – kein Freizeitbezug.
+- S. 49, 78: Deutschland-Ticket (Preis, Tarif), Azubi-Ticket, vergünstigter ÖPNV für junge Menschen (Länder „begrüßen“ nur) – Mobilität, kein Freizeitbezug (Bündel „Allgemeine Kosten und Gebühren senken“ geprüft).
+- Richtungen ohne Maßnahme: „Nutzungen abstimmen und vermitteln“ (2003) – keine Treffer und keine Stelle zu Mediation, Streetwork oder Runden Tischen gefunden.
+
+Zu 2003: Die Zusage „sichere und selbst gestaltete Aufenthaltsorte“ (S. 84) ist auch als Grenzfall 2003 (Zugang öffentlicher Raum) offen geführt.
+
+Grenzfälle (offen): Freiräume für jugendliches Engagement (S. 85), Jugendverbände (S. 84), Kommunalfinanzierung mit Nennung von Jugendclubs (S. 108).

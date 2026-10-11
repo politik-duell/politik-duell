@@ -1,0 +1,63 @@
+{
+  "partei_id": 12,
+  "land": "MV",
+  "massnahmen": [
+    {
+      "beschreibung": "Sportstätten mit Sanierungsbedarf über bestehende Programme fördern",
+      "ursachen_ids": [3701],
+      "buendel": "Sanierung und Neubau von Sportstätten fördern",
+      "zitat": "Viele unserer Sportstätten im Land weisen einen Sanierungsbedarf auf. Zur Stärkung des Breitensports werden wir weiterhin Sportstätten über die etablierten Programme fördern.",
+      "seite": 40
+    },
+    {
+      "beschreibung": "Vereinen, Karneval und Kapellen für bis zu drei Veranstaltungen im Jahr die GEMA-Gebühren erstatten",
+      "ursachen_ids": [3703],
+      "buendel": "Vereinsförderung und Entlastung des Ehrenamts",
+      "zitat": "Viele kleine Vereine drücken gerade bei Veranstaltungen vor allem die GEMA - Gebühren. Um sie zu entlasten, werden wir Vereinen, dem Karneval und (Schalmeien - )Kapellen für […] öffentliche Auftritte und Veranstaltungen für bis zu drei Veranstaltungen im Jahr die GEMA - Gebühren erstatten.",
+      "seite": 5
+    },
+    {
+      "beschreibung": "Projekte wie „Sport in Schule und Verein“ fortführen und die Zusammenarbeit der Fachverbände verstärken",
+      "ursachen_ids": [],
+      "ursachen_offen": [3703],
+      "buendel": "Eigeneinnahmen und Kooperation der Vereine",
+      "zitat": "Diese positive Rolle möchten wir weiter fördern, auch durch den Ausbau von inklusiven Sportangeboten, die Fortführung von Projekten wie „Sport in Schule und Verein“ und „KinderBewegungsLand“ sowie eine verstärkte Zusammenarbeit der Fachverbände.",
+      "seite": 41
+    }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "Sportanlagenprogramm", "ursache": 3701, "richtung": "Förderung von Sportanlagen aus Investitionsmitteln" }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3702, "seiten": [5, 40, 41, 52], "grund": "Kapitel Sport (S. 40–41), Ehrenamt (S. 39–40), Kommunen (S. 50–52) und Fundstellen S. 5, 40, 41, 50, 52 gelesen; keine Hallenentgelte, Nutzungsentgelte, Energiekosten- oder Betriebskostenzuschüsse für Sportstätten oder Vereine, keine Auslastungs- oder Eigenverantwortungsregel." }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: S. 1–6 (Vorwort, Schwerpunkte I–III), Kapitel Sport (S. 40–41), Ehrenamt (S. 39–40), Kommunen und Investitionen (S. 50–52), Ehrenamtsabschnitt Sport und Vereine S. 5–6; Fundstellen S. 5, 40, 41, 50, 52.
+
+Maßnahmen:
+- S. 40: Sportstätten fördern (Bündel „Sanierung und Neubau von Sportstätten fördern“), konkreteste Stelle mit Sanierungsbedarf und Förderung.
+- S. 5–6: GEMA-Erstattung für Vereine (Bündel „Vereinsförderung und Entlastung des Ehrenamts“). Die Stelle nennt Vereine allgemein (Karneval, Kapellen), nicht nur Sportvereine; R1 3703 nennt „Entlastung von Vereinen“.
+- S. 41: Kooperation mit „Sport in Schule und Verein“ und Fachverbänden als Grenzfall in ursachen_offen (Bündel „Eigeneinnahmen und Kooperation der Vereine“). Die Zusage ist eher auf Sportangebote gerichtet als auf die Finanzlage der Vereine.
+
+Weitere gleichartige Stellen (Bündel belegt, nicht erfasst):
+- 3701: S. 52 „Zukunftsinvestitionen … in Sportstätten“ und „Schwimmbäder, Kultur- und Sportstätten … erhalten und modernisieren“ (öffentliche Investition); S. 40 „Sportanlagenprogramm“ aus dem MV-Plan 2035 (im selben Absatz wie die Maßnahme).
+- 3703: S. 5 „Wir unterstützen es [das Ehrenamt] durch verlässliche Förderung, Anerkennung, weniger Bürokratie und gute Beratung.“ (allgemeines Ehrenamt); S. 40 „Wir stellen aktuell über das Sportfördergesetz jährlich mehr Geld für die Vereine und Verbände … zur Verfügung“ (Bestand, beschreibt laufende Förderung).
+
+Nicht erfasst:
+- S. 5: „Die Ehrenamtsstiftung MV bleibt … eine zentrale Anlaufstelle“ (Bekenntnis zu Bestehendem).
+- S. 5: „… werden wir weiter gute Bedingungen schaffen“ (Ziel).
+- S. 39: Bürokratische Hürden für das Ehrenamt abbauen und Ehrenamtsgesetz prüfen; Ausbau des Ehrenamts für Jugendliche und Berufstätige (Prüfauftrag bzw. nicht vereinsbezogen).
+- S. 40: „So sorgen wir gemeinsam für Freizeitmöglichkeiten in Sportvereinen“ (Ziel).
+- S. 41: Ausbau inklusiver Sportangebote und Barrierefreiheit im Sport (Sportangebot, keine Vereinsfinanzierung oder Sportstätte).
+- S. 41: „MV kann schwimmen“ unterstützen (Schwimmlernen, keine Sportstätte).
+- S. 41: Olympische Segelwettbewerbe in Rostock-Warnemünde; Leistungssport- und Athletenausbildung; Olympia- und Bundesstützpunkte (Spitzensport, keine Maßnahme dieses Themas, R2).
+- S. 50: Kommunale Investitionen in Sportstätten gefördert (Rückblick).
+
+Richtungen ohne Maßnahme: 3702 (Bündel „Betriebskosten und Hallenentgelte fördern oder senken“ und „Eigenverantwortung und Auslastung“). Suche nach Hallenentgelt, Nutzungsentgelt, Betriebskosten, Energiekosten, Hallenmiete, Auslastung, Eigenverantwortung, Kostensenkung in Sport-, Kommunal- und Ehrenamtskapiteln: nichts Vereins- oder Sportstättenbezogenes. Energie- und Netzentgelte (S. 16 u. a.) betreffen Energiepolitik allgemein.
+
+Bündel ohne Maßnahme: „Bestand priorisieren und gemeinsam nutzen“ (3701): keine Aussage zu Priorisierung oder gemeinsamer Nutzung von Hallen und Sportstätten; die Stellen zur gemeinsamen Nutzung (Polizei-Digitalisierung, S. 47) gehören nicht dazu.
+
+Seiten ohne Text: 1 und 95 (Titel- und Rückseite), ohne Rolle.

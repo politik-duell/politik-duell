@@ -1,0 +1,51 @@
+{
+  "partei_id": 17,
+  "land": "BE",
+  "massnahmen": [
+    {
+      "beschreibung": "Angebote der Jugendarbeit ausbauen, neben Sprach- und Integrationsangeboten im Rahmen von Präventionsprojekten",
+      "ursachen_ids": [2001],
+      "buendel": "Angebote und Räume für Jugendliche ausbauen",
+      "zitat": "Gezielte Präventionsprojekte werden in stark betroffenen Communities eingerichtet. Sprachkurse, Integrationsangebote und Angebote der Jugendarbeit werden ausgebaut.",
+      "seite": 40
+    },
+    {
+      "beschreibung": "Kostenlose oder stark vergünstigte Nutzung kommunaler Sportanlagen für Vereine, freier Zugang für Kinder und Jugendliche",
+      "ursachen_ids": [],
+      "ursachen_offen": [2001],
+      "zitat": "Breitensport und Vereine stärken: Kostenlose oder stark vergünstigte Nutzung kommunaler Anlagen für Vereine. Freier Zugang für Kinder und Jugendliche.",
+      "seite": 27
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 2003,
+      "seiten": [41, 48, 49, 50, 58],
+      "grund": "Ordnungsamt-Kontrollen und Sicherheitszonen betreffen Drogenkonsum und Sauberkeit, nicht Konflikte um Lärm und Nutzung durch Jugendliche. Verkehr, A100 und Anwohnerbelange (S. 48–50) und Sauberkeit (S. 58) ohne Jugendbezug."
+    }
+  ],
+  "neue_buendel": [
+    {
+      "ursache": 2001,
+      "name": "Kostenloser Zugang zu Sportanlagen für Jugendliche",
+      "seite": 27
+    }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Textdatei S. 1–6 (Einleitung, Forderungen, Kapitel Friedens-/Kultur-Einstieg), Kapitel „Kulturhauptstadt Berlin“ (S. 18–20), „Sport für alle“ (S. 26–27), „Innere Sicherheit“ (S. 38–41, Jugendarbeit, Prävention, Ordnungsamt), Verkehr und Anwohner (S. 48–50), Sauberkeit (S. 58). Fundstellen 27, 38, 40, 41, 48, 49, 50, 58 gelesen.
+
+Maßnahme 2001 (Bündel „Angebote und Räume für Jugendliche ausbauen“): S. 40 gewählt (Jugendarbeit ausdrücklich genannt). Weitere gleichartige Stellen: S. 26 „Wir bauen niedrigschwellige, Spaß machende Angebote direkt im Kiez aus – von Fußball über Schwimmen bis Leichtathletik.“ (Einleitung „Besonders wichtig ist uns, Kinder und Jugendliche […] in Bewegung zu bringen.“); S. 38 „setzen wir auf […] mehr und bessere Jugendarbeit“ (Ziel-Formulierung, nicht gewählt).
+
+Grenzfall 2001: S. 27 Zugang zu kommunalen Sportanlagen für Kinder und Jugendliche; als Zugangs-/Entgelt-Hebel verschieden von „ausbauen“, daher ohne Bündel und mit neue_buendel. Sportanlagen sind eigentlich Thema 37; Zuordnung offen.
+
+Nicht erfasst: S. 19 „Kulturpass für Jugendliche“ (Guthaben für 15–18-Jährige für kulturelle Angebote): Leitfaden ordnet Kosten für Kultur der Ursache 2002 zu, die in diesem Auftrag nicht enthalten ist. S. 26–27 „Bezahlbarer Sport für alle“ (Angebote in jedem Bezirk, ohne Jugendbezug) und „Schulsport ausbauen“ (Schule, R2). S. 27 Sanierung und Sanierungsoffensive für Sportstätten, SEZ (Thema 37). S. 38 „Deeskalationsmaßnahmen“ und Polizeiausstattung ohne Freizeitbezug. S. 40 Schulsozialarbeit und Anti-Gewalt-Programme (Schule). S. 41 „Sicherheitszonen“ im Umfeld von Schulen und Kitas sowie Ordnungsamt-Kontrollen (Drogen, Sauberkeit): kein Bezug zu Lärm oder Nutzungskonflikten mit Jugendlichen. S. 20 Foyers und Räume für Kunst (kein Jugendbezug).
+
+Ursache 2003 ohne Maßnahme: Bündel „Zugang zu öffentlichem Raum für Jugendliche ermöglichen“, „Lärm mindern und Ruhe schützen“ und „Nutzungen abstimmen und vermitteln“ im Text nicht gefunden (Suche nach Lärm, Nachtruhe, Mediation, Runder Tisch, Streetwork, Anwohner, Konflikt): nur Verkehrslärm und Anwohnerbelange der A100 (S. 49–50) und Verkehrsplanung.
+
+Seiten ohne Text: keine relevanten.
+
+Nachsuche Bündel ohne Maßnahme (2001 „Selbstorganisation und Mehrfachnutzung von Räumen“): nach selbstverwaltet, Selbstorganisation, Mehrfachnutzung, Räume, leerstehende Gebäude, Zwischennutzung, Beteiligung gesucht; Treffer nur bei Kunst-Räumen (S. 20: Stadtkurator, Foyers ohne Konsumzwang, nichtkommerzielle Räume für Künstler) und Wohnungs-Leerstand (S. 8–9), ohne Jugendbezug. Nicht erfasst.
+Nachsuche Bündel ohne Maßnahme (2003 „Zugang zu öffentlichem Raum für Jugendliche ermöglichen“, „Lärm mindern und Ruhe schützen“, „Nutzungen abstimmen und vermitteln“): Treffer nur Verkehr und Anwohner (S. 49–50) sowie Sicherheit (S. 41, Drogen); kein Jugendbezug. Nicht erfasst.

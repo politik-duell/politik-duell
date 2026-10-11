@@ -1,0 +1,55 @@
+{
+  "partei_id": 13,
+  "land": "MV",
+  "massnahmen": [
+    {
+      "beschreibung": "Flächendeckendes, niedrigschwelliges Angebot an Jugendclubs, Vereinen, Kultur- und Sportstätten unterstützen",
+      "ursachen_ids": [3703],
+      "ursachen_offen": [3701],
+      "buendel": "Vereinsförderung und Entlastung des Ehrenamts",
+      "zitat": "Für eine unbeschwerte Kindheit und Jugend wollen wir: […] ein flächendeckendes und niedrigschwelliges Angebot an Jugendclubs, Vereinen, Kultur-, Musik- und Sportstätten unterstützen.",
+      "seite": 64
+    },
+    {
+      "beschreibung": "Nachbarschaftstreffs in jeder Kommune: Vereine sollen die Räume gegen eine minimale Gebühr nutzen können",
+      "ursachen_ids": [],
+      "ursachen_offen": [3702, 3703],
+      "buendel": "Betriebskosten und Hallenentgelte fördern oder senken",
+      "zitat": "Für ein Mecklenburg-Vorpommern, in dem alle gut leben können, fordern wir: […] in jeder Kommune und jedem Stadtteil ein Ort der Gemeinschaft: Diese Nachbarschaftstreffs bieten Raum für Veranstaltungen, Geselligkeit und gemeinsames Arbeiten. […] Vereine sollen diese Räumlichkeiten gegen eine minimale Gebühr nutzen können.",
+      "seite": 63
+    },
+    {
+      "beschreibung": "Bessere Möglichkeiten zur Freistellung schaffen, um ehrenamtliches Engagement zu erleichtern",
+      "ursachen_ids": [],
+      "ursachen_offen": [3703],
+      "zitat": "Darüber hinaus schaffen wir bessere Möglichkeiten zur Freistellung, um ehrenamtliches Engagement zu erleichtern.",
+      "seite": 68
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 3703, "name": "Freistellung für Ehrenamt", "seite": 68 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "freistellung", "ursache": 3703, "richtung": "Freistellung für ehrenamtliches Engagement" }
+  ],
+  "stand_im_pdf": "Stand: 16.07.2026 (Titelseite; Auftrag: 2026-06-06)"
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis (S. 1–6); Kapitel 3 Mobilität (S. 22–24, Ticket und Tourismus-Infrastruktur); Kapitel 4 Wirtschaft (S. 27, Schwimmhallen im Tourismus); Kapitel 8 Wohnraum (S. 52–53); Kapitel 10 Zusammenleben (S. 63–65); Kapitel 11 Demokratie (S. 67–68); Kapitel 13 Frauen/Kinder (S. 84, 91 Integration); Kapitel 15 Kultur (S. 95–98); Kapitel 16 Finanzen (S. 100–104); Fundstellen S. 10 und S. 64. Seiten ohne Text übersprungen.
+
+Gleichartige Stellen (nicht separat erfasst): S. 64 „Doppelnutzung“ der Landesliegenschaften nur als Untersuchung (Prüfauftrag, nicht erfasst); S. 104 „mehr direkte Zuweisungen“ an Kommunen ohne Bezug zu Sportstätten, Sanierung oder Vereinen (Lage- und Finanzierungsaussage, nicht erfasst).
+
+Nicht erfasst:
+- S. 10: Matching-Plattform für Netzanschlusspunkte und Großverbraucher – Energie, kein Sportstätten-Bezug (Bündel „Bestand priorisieren und gemeinsam nutzen“).
+- S. 27: Schwimmhallen als Tourismus-Infrastruktur – anderer Zusammenhang.
+- S. 63: „verlässliche, niedrigschwellige Zugänge zu … Sport“ – allgemeines Ziel der Armutsbekämpfung, keine konkrete Handlung.
+- S. 64: Stabsstelle und Untersuchung der Landesliegenschaften auf Doppelnutzung – Prüfauftrag.
+- S. 68: Kinder- und Jugendbeiräte und Bürger*innenräte – Beteiligung, kein Vereinsbezug.
+- S. 91: Integration, Begegnungsorte – andere Themen.
+- S. 104: Kommunen allgemein handlungsfähig ausstatten („mehr direkte Zuweisungen“, Klimafonds) – nicht auf Sportstätten oder Vereine bezogen.
+
+Bündel ohne Maßnahme (je im Text gesucht): „Sanierung und Neubau von Sportstätten fördern“ (3701: nur die Unterstützung des Angebots an Sportstätten auf S. 64, als Grenzfall unter Maßnahme 1 bei ursachen_offen; keine Sanierungs- oder Neubauzusage gefunden); „Bestand priorisieren und gemeinsam nutzen“ (3701: nur Energie S. 10 und Prüfauftrag S. 64); „Eigenverantwortung und Auslastung“ (3702: nichts zu Auslastung, Eigenverantwortung oder Wirtschaftlichkeit von Hallen); „Eigeneinnahmen und Kooperation der Vereine“ (3703: nichts zu Sponsoring, Mitgliedsbeiträgen oder Vereinskooperation gefunden).
+
+Grenzfälle (ursachen_offen): Maßnahme 1 Sportstätten-Teil (S. 64, 3701); Maßnahme 2 Vereins-Räume gegen Gebühr (S. 63, 3702/3703); Maßnahme 3 Freistellung (S. 68, 3703).

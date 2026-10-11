@@ -1,0 +1,62 @@
+{
+  "partei_id": 17,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Investitionsprogramm für kinder- und jugendfreundliche Infrastruktur; wohnortnaher, niedrigschwelliger Zugang zu Jugendfreizeiteinrichtungen",
+      "ursachen_ids": [2001],
+      "zitat": "Mit einem Investitionsprogramm „Kinder und Bildung“ wollen wir in eine kinder-, jugend- und familienfreundliche Infrastruktur investieren. Wir fordern einen niedrigschwelligen und wohnortnahen Zugang zu Angeboten wie Kinder- und Jugendfreizeiteinrichtungen, Bibliotheken, Sportstätten oder Musikschulen.",
+      "seite": 32
+    },
+    {
+      "beschreibung": "Der Bund übernimmt für alle Kinder das erste Vereinsjahr im Sport per Zuschuss",
+      "ursachen_ids": [2002],
+      "zitat": "Der Bund soll für alle Kinder das erste Jahr im Sportverein bezahlen (Zuschuss von bis zu 150 Euro im Jahr).",
+      "seite": 24
+    },
+    {
+      "beschreibung": "Ganztagsbetreuung mit kostenlosen Sport-, Kunst- und Musikangeboten für Kinder",
+      "ursachen_ids": [2002],
+      "zitat": "Sie muss auch in den Schulzeiten verlässlich und ausreichend lang garantiert sein, idealerweise durch eine Ganztagsbetreuung, die […] kostenlose Angebote im Bereich Sport, Kunst und Musik sowie eine Schulspeisung beinhaltet.",
+      "seite": 33
+    },
+    {
+      "beschreibung": "Kostenfreie, verlässliche Ferienbetreuung für Kinder durch den Staat",
+      "ursachen_ids": [2002],
+      "ursachen_offen": [2001],
+      "zitat": "Hier ist der Staat gefordert, verlässliche, kostenfreie und qualitativ wertvolle Ferienbetreuung anzubieten.",
+      "seite": 33
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 2003,
+      "seiten": [32, 35],
+      "grund": "Kapitel Familie (S. 31–32) und Sicherheit (S. 34–35) gelesen; keine Regel für Lärm oder Nutzung öffentlicher Räume im Verhältnis zu Jugendlichen. Polizeipräsenz auf öffentlichen Plätzen (S. 35) dient dem Sicherheitsgefühl allgemein."
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 2001, "name": "Investitionsprogramm für Jugendfreizeiteinrichtungen", "seite": 32 },
+    { "ursache": 2002, "name": "Zuschuss für das erste Vereinsjahr im Sport", "seite": 24 },
+    { "ursache": 2002, "name": "Kostenlose Angebote im Ganztag", "seite": 33 },
+    { "ursache": 2002, "name": "Kostenfreie Ferienbetreuung", "seite": 33 }
+  ]
+}
+
+Protokoll (Thema 20 „Freizeitangebote und Treffpunkte für Jugendliche“, BSW Bund)
+
+Gelesen: Präambel (S. 2), Kapitel Infrastruktur und Wirtschaft (S. 15–16), Kapitel Bildung (S. 23–25), Gesundheit (S. 26–27, ohne Treffer zum Thema), Kapitel Familie und Kinder (S. 31–33), Sicherheit (S. 34–35), Kultur (S. 42). Fundstelle S. 33 vollständig gelesen. Seiten 28–30 und 36–41 nur über die Stichwortsuche in der Textdatei geprüft; dort keine Stelle zu Jugendfreizeit, Lärm, Treffpunkten oder Vereinskosten.
+
+Der Auftrag nennt für dieses Thema keine Bündel im Leitfaden; die Richtungen aus der Trefferliste sind Suchrichtungen. Daher kein Feld buendel und keine Hebel-Checkliste; eigene Instrumente stehen unter neue_buendel.
+
+Zu 2001: S. 32 (Investitionsprogramm „Kinder und Bildung“, Zugang zu Jugendfreizeiteinrichtungen) erfasst. Weitere Stelle, nicht gesondert erfasst: S. 16 „Freizeittreffs insbesondere für die Jugend […] sind vom Staat zu gewährleisten“ (Teil einer Infrastruktur-Garantie für viele Bereiche). Nicht erfasst: S. 15 „Jugendfreizeiteinrichtungen […] sollten […] selbstverständlich sein“ (Lagebeschreibung, kein Handlungsversprechen). Richtung „Selbstorganisation und Mehrfachnutzung von Räumen“: S. 15–16 und 31–32 gelesen, nichts dazu gefunden.
+
+Zu 2002: S. 24 (Vereinsjahr-Zuschuss) erfasst. S. 33 (Ganztag mit kostenlosen Sport-, Kunst- und Musikangeboten; kostenfreie Ferienbetreuung) als zwei eigene Maßnahmen erfasst, weil andere Hebel (kostenlose Angebote statt Zuschuss). Ferienbetreuung zusätzlich als Grenzfall zu 2001. Nicht erfasst: S. 15 Lehrkräfte an Musikschulen (Sozialversicherung der Lehrkräfte, kein Kostenbezug für Kinder); S. 24 Senkung der Kita-Beiträge (Kinderbetreuung ohne Freizeitbezug); S. 31 kostenloses Mittagessen (Verpflegung, kein Freizeitbezug). Richtung „Allgemeine Kosten und Gebühren senken“: keine Freizeit-Gebühr gefunden.
+
+Zu 2003: keine Maßnahme. Gelesen S. 32 und 34–35. Nicht erfasst: S. 35 Polizeipräsenz und Sicherheitsgefühl (allgemeine Sicherheit, keine Regel für Jugendliche und Anwohnende). Richtungen „Zugang zu öffentlichem Raum“, „Lärm mindern“, „Nutzungen abstimmen“: nichts gefunden.
+
+Richtungen ohne Maßnahme: Selbstorganisation und Mehrfachnutzung von Räumen (2001); Allgemeine Kosten und Gebühren senken (2002); Zugang zu öffentlichem Raum, Lärm mindern, Nutzungen abstimmen (2003).
+
+S. 42 „Das BSW fordert, Kunst und Kultur sowie kulturelle Teilhabe und Bildung als Pflichtaufgaben des Staates zu definieren“: Zielbekenntnis zu Kultur allgemein, kein Bezug zu Kosten für Kinder oder Jugendliche; nicht erfasst.
+
+Stand im PDF: Titelseite „Wahlprogramm für die Bundestagswahl 2025“, Stand wie Auftrag.

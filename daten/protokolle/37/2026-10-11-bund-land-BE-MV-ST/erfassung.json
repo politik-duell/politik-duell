@@ -1,0 +1,4065 @@
+{
+  "thema_id": 37,
+  "programme": [
+    {
+      "partei_id": 11,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Übungsleiter- und Ehrenamtspauschale spürbar erhöhen.",
+          "ursachen_ids": [
+            3703
+          ],
+          "buendel": "Vereinsförderung und Entlastung des Ehrenamts",
+          "zitat": "Wir erhöhen die Ehrenamts- und die Übungsleiterpauschale spürbar.",
+          "seite": 57
+        },
+        {
+          "beschreibung": "Vereinspaket für das Ehrenamt, das Bürokratie, Datenschutz und Haftungsfragen von Vereinen angeht.",
+          "ursachen_ids": [
+            3703
+          ],
+          "zitat": "Wir setzen ein Vereinspaket für unser Ehrenamt um, mit dem wir Bürokratie, Datenschutz und Haftungsfragen angehen.",
+          "seite": 57
+        },
+        {
+          "beschreibung": "Sportmilliarde für die kommende Wahlperiode bereitstellen (Verwendung im Text nicht genannt).",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3701
+          ],
+          "zitat": "Für die kommende Wahlperiode stellen wir sicher, dass die Sportmilliarde zur Verfügung steht.",
+          "seite": 61
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 3703,
+          "name": "Bürokratieabbau für Vereine",
+          "seite": 57
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3701,
+          "seiten": [
+            24,
+            61,
+            75,
+            76
+          ],
+          "grund": "Sanierung oder Neubau von Sportstätten und Sporthallen nicht genannt; Fundstelle S. 24 betrifft Transportinfrastruktur (Wortteil-Treffer); Kommunen-Daseinsvorsorge S. 76 ohne Sportbezug."
+        },
+        {
+          "ursache": 3702,
+          "seiten": [
+            9,
+            12,
+            13,
+            57,
+            58,
+            61,
+            67,
+            69,
+            70,
+            76
+          ],
+          "grund": "Keine Zusage zu Betriebskosten, Hallenentgelten oder Zuschüssen für den Betrieb von Sportstätten; die Fundstellen zu Eigenverantwortung betreffen Gesundheit, Wirtschaft, Forschung und Kultur (R2)."
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Investitionen in neue Schwimmbäder und Unterstützung der Sanierung von Sportanlagen in allen Bezirken",
+          "ursachen_ids": [
+            3701
+          ],
+          "buendel": "Sanierung und Neubau von Sportstätten fördern",
+          "zitat": "Ehrenamt und Sport, Kunst und Kultur machen Berlin lebenswert: Wir investieren 40 Millionen Euro in neue Schwimmbäder und unterstützen mit der Sportmilliarde des Bundes die Sanierung von Sportanlagen in allen Bezirken.",
+          "seite": 107
+        },
+        {
+          "beschreibung": "Vorhandene Sportstätten intelligent nutzen und Neubau nur dort, wo langfristig sinnvoll",
+          "ursachen_ids": [
+            3701
+          ],
+          "buendel": "Bestand priorisieren und gemeinsam nutzen",
+          "zitat": "Vorhandene Sportstätten und Infrastrukturen sind intelligent zu nutzen und nur dort zu ergänzen, wo es langfristig sinnvoll ist.",
+          "seite": 115
+        },
+        {
+          "beschreibung": "Sanierungsstrategie, bessere Datengrundlage und beschleunigte Genehmigungen für Sportstätten",
+          "ursachen_ids": [
+            3701
+          ],
+          "zitat": "Zugleich werden wir mehr Planungssicherheit für Bezirke und Vereine schaffen – durch eine verlässliche Sanierungsstrategie, eine bessere Datengrundlage und beschleunigte Genehmigungsprozesse.",
+          "seite": 111
+        },
+        {
+          "beschreibung": "Konstruktive und verlässliche Begleitung von Stadionneubauten und -erweiterungen für Profivereine",
+          "ursachen_ids": [
+            3701
+          ],
+          "zitat": "Wir begleiten den Stadionneubau von Hertha BSC, den Neubau einer Arena für ALBA Berlin sowie die Erweiterung des Stadions von 1. FC Union Berlin konstruktiv und verlässlich.",
+          "seite": 114
+        },
+        {
+          "beschreibung": "Unternehmensführung und -struktur der landeseigenen Bäder-Betriebe kritisch überprüfen",
+          "ursachen_ids": [
+            3702
+          ],
+          "zitat": "Unser Ziel ist, dass die Berlinerinnen und Berliner wieder auf verlässliche Öffnungszeiten, moderne Ausstattung und ausreichend Kapazitäten in den Bädern zählen können. Dafür werden wir die Unternehmensführung und -struktur der Berliner Bäder-Betriebe einer kritischen Revision unterziehen.",
+          "seite": 112
+        },
+        {
+          "beschreibung": "Förderung digitaler Zugangs- und Buchungssysteme für Sportanlagen, damit Sportflächen flexibler genutzt werden",
+          "ursachen_ids": [
+            3702
+          ],
+          "buendel": "Eigenverantwortung und Auslastung",
+          "zitat": "Digitale Zugangs- und Buchungssysteme für Berliner Sportanlagen wollen wir fördern, um einen vereinfachten Zutritt zu jeder Zeit zu den Sportanlagen und damit eine erweiterte, flexible Nutzung von Sportflächen zu ermöglichen.",
+          "seite": 115
+        },
+        {
+          "beschreibung": "Rechtssichere Rahmenbedingungen, damit gemeinnützige Sportvereine mit erneuerbaren Energien zusätzliche Einnahmen erzielen können",
+          "ursachen_ids": [
+            3703
+          ],
+          "ursachen_offen": [
+            3702
+          ],
+          "buendel": "Eigeneinnahmen und Kooperation der Vereine",
+          "zitat": "Gleichzeitig wollen wir rechtssichere Rahmenbedingungen schaffen, damit gemeinnützige Sportvereine durch den Betrieb erneuerbarer Energiequellen – insbesondere zur Eigenversorgung und in begrenztem […] Umfang auch zur Einspeisung – zusätzliche Einnahmen erzielen können, ohne ihre Gemeinnützigkeit zu gefährden.",
+          "seite": 111
+        },
+        {
+          "beschreibung": "Mehr Kooperationen zwischen Schulen und Sportvereinen ermöglichen und bürokratische Hürden abbauen",
+          "ursachen_ids": [
+            3703
+          ],
+          "zitat": "Zudem wollen wir mehr Kooperationen zwischen Schulen und Vereinen ermöglichen und bürokratische Hürden abbauen.",
+          "seite": 113
+        },
+        {
+          "beschreibung": "Vereine und Ehrenamt stärker anerkennen, bürokratische Hürden abbauen und Förderverfahren vereinfachen",
+          "ursachen_ids": [
+            3703
+          ],
+          "buendel": "Vereinsförderung und Entlastung des Ehrenamts",
+          "zitat": "Wir werden dieses Engagement stärker anerkennen, bürokratische Hürden abbauen und Förderverfahren vereinfachen.",
+          "seite": 114
+        },
+        {
+          "beschreibung": "Hauptamtliche Ansprechpartner und bedarfsgerechte Beratung für Vereine aufbauen",
+          "ursachen_ids": [
+            3703
+          ],
+          "zitat": "Gleichzeitig wollen wir professionelle Strukturen ausbauen, die Ehrenamtliche unterstützen. Hauptamtliche Ansprechpartner, klare Zuständigkeiten, bedarfsgerechte Beratung und einfache Förderprogramme sollen Vereine entlasten und das Ehrenamt stärken.",
+          "seite": 114
+        },
+        {
+          "beschreibung": "Sportvereine bei Digitalisierung und beim Einsatz künstlicher Intelligenz unterstützen, um sie zu entlasten",
+          "ursachen_ids": [
+            3703
+          ],
+          "ursachen_offen": [
+            3702
+          ],
+          "zitat": "Wir wollen die Chancen der Künstlichen Intelligenz gezielt für den Berliner Sport nutzen. […] Deshalb werden wir Sportvereine bei der Digitalisierung und beim Einsatz Künstlicher Intelligenz unterstützen.",
+          "seite": 115
+        },
+        {
+          "beschreibung": "Landeseigene Förderprogramme für den Breiten-E-Sport auf Grundlage der Gemeinnützigkeit entwickeln",
+          "ursachen_ids": [
+            3703
+          ],
+          "zitat": "Die Eingliederung des Breiten-E-Sports in die Sportverwaltung ist dabei ebenso ein wichtiger Baustein, wie die Entwicklung von landeseigenen Förderprogrammen auf Grundlage der nun vorhandenen Gemeinnützigkeit.",
+          "seite": 115
+        },
+        {
+          "beschreibung": "Nutzung bezirklicher und landeseigener Flächen für das Ehrenamt kostenfrei ermöglichen",
+          "ursachen_ids": [
+            3702
+          ],
+          "ursachen_offen": [
+            3703
+          ],
+          "buendel": "Betriebskosten und Hallenentgelte fördern oder senken",
+          "zitat": "Die Nutzung von bezirklichen und landeseigenen Flächen soll kostenfrei möglich sein.",
+          "seite": 116
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 3701,
+          "name": "Sanierungsstrategie und schnellere Genehmigungen",
+          "seite": 111
+        },
+        {
+          "ursache": 3701,
+          "name": "Begleitung von Stadionneubauten",
+          "seite": 114
+        },
+        {
+          "ursache": 3702,
+          "name": "Überprüfung der Betriebsführung der Bäder-Betriebe",
+          "seite": 112
+        },
+        {
+          "ursache": 3703,
+          "name": "Kooperation von Schulen und Vereinen",
+          "seite": 113
+        },
+        {
+          "ursache": 3703,
+          "name": "Hauptamtliche Beratung für Vereine",
+          "seite": 114
+        },
+        {
+          "ursache": 3703,
+          "name": "Digitalisierung und KI-Unterstützung für Vereine",
+          "seite": 115
+        },
+        {
+          "ursache": 3703,
+          "name": "Förderprogramme für den E-Sport",
+          "seite": 115
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Mittel der Landessportförderung von 13 auf 20 Mio. Euro erhöhen; Sanierungsstau bei Sportstätten abbauen",
+          "ursachen_ids": [
+            3701
+          ],
+          "buendel": "Sanierung und Neubau von Sportstätten fördern",
+          "zitat": "Gemeinsam mit Kommunen, Sportverbänden und Vereinen werden wir den massiven Sanierungs- und Investitionsstau bei Sportstätten systematisch abbauen. Dafür werden wir die Mittel für die Sportförderung im Landeshaushalt von aktuell 13 Millionen auf 20 Millionen erhöhen.",
+          "seite": 83
+        },
+        {
+          "beschreibung": "Digitaler Sportstätten-Atlas erfasst Zustand und Sanierungsbedarf als Grundlage für Investitionsentscheidungen",
+          "ursachen_ids": [
+            3701
+          ],
+          "buendel": "Bestand priorisieren und gemeinsam nutzen",
+          "zitat": "Zwecks einer gezielten und strategisch gesteuerten Investitionsoffensive richten wir in Kooperation mit Kommunen und Vereinen einen digitalen Sportstätten-Atlas ein, der Zustand, Sanierungsbedarf und Nutzung landesweit erfasst.",
+          "seite": 83
+        },
+        {
+          "beschreibung": "Förderprogramm „Ehrenamt im Sport“ einführen und Weiterbildung der Ehrenamtlichen finanziell absichern",
+          "ursachen_ids": [
+            3703
+          ],
+          "buendel": "Vereinsförderung und Entlastung des Ehrenamts",
+          "zitat": "Wir führen das Förderprogramm „ Ehrenamt im Sport “ ein. Damit werden wir in enger Abstimmung mit dem Landessportbund Weiterbildungsmöglichkeiten finanziell absichern.",
+          "seite": 99
+        },
+        {
+          "beschreibung": "Landesprogramm zur Zusammenarbeit von Schulen und Sportvereinen, um Vereine in den Ganztag einzubinden",
+          "ursachen_ids": [
+            3703
+          ],
+          "buendel": "Eigeneinnahmen und Kooperation der Vereine",
+          "zitat": "Zur Förderung der Zusammenarbeit von Schulen und Sportvereinen werden wir ein Landesprogramm auflegen, um insbesondere die Einbindung der Vereine in den Ganztag zu stärken.",
+          "seite": 84
+        },
+        {
+          "beschreibung": "Novellierung des Sportfördergesetzes: Bürokratie abbauen, Antragsverfahren digitalisieren, Förderung des Landessportbundes dynamisieren",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3703
+          ],
+          "zitat": "Mit einer Novellierung des Sportfördergesetzes werden wir die Sportförderung in Mecklenburg-Vorpommern modernisieren und die Autonomie des Sports garantieren. Ziel ist die Abschaffung überflüssiger Bürokratie, eine vollständige Digitalisierung der Antragsverfahren und eine Dynamisierung der finanziellen Förderung des Landessportbundes.",
+          "seite": 83
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 3703,
+          "name": "Bürokratieabbau in der Sportförderung",
+          "seite": 83
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3702,
+          "seiten": [
+            2,
+            50,
+            71,
+            41,
+            82,
+            83,
+            84
+          ],
+          "grund": "Fundstellen S. 2, 50, 71 (Eigenverantwortung, allgemein) und Kapitel Sportoffensive (S. 82–84) sowie Kommunalfinanzen (S. 41) gelesen; keine Zusage zu Hallenentgelten, Energie- oder Betriebskosten von Sportstätten und zu Eigenverantwortung/Auslastung im Sport. Nur ‚sollten‘ (S. 41, Bund und Land sollten Sportstätten finanzieren) – Forderungsform, nicht erfasst."
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Sportstättenförderung für Kommunen und Vereine fortsetzen.",
+          "ursachen_ids": [
+            3701
+          ],
+          "buendel": "Sanierung und Neubau von Sportstätten fördern",
+          "zitat": "Wir werden die Sportstättenförderung für Kommunen und Vereine fortsetzen.",
+          "seite": 71
+        },
+        {
+          "beschreibung": "Sportentwicklungsplanung und interkommunale Zusammenarbeit im Sport strukturell fördern.",
+          "ursachen_ids": [
+            3701
+          ],
+          "buendel": "Bestand priorisieren und gemeinsam nutzen",
+          "zitat": "Sportentwicklungsplanung und interkommunale Zusammenarbeit fördern wir strukturell.",
+          "seite": 71
+        },
+        {
+          "beschreibung": "Neues Förderprogramm zur Entlastung der Vereine, damit ausreichend Trainerinnen, Trainer und Übungsleiter zur Verfügung stehen.",
+          "ursachen_ids": [
+            3703
+          ],
+          "buendel": "Vereinsförderung und Entlastung des Ehrenamts",
+          "zitat": "Dafür braucht es ausreichend Trainerinnen und Trainer sowie Übungsleiter. Zur Entlastung der Vereine wollen wir hierfür ein neues Förderprogramm auflegen.",
+          "seite": 71
+        },
+        {
+          "beschreibung": "Übungsleiter- und Ehrenamtspauschale auf Bundesebene anheben.",
+          "ursachen_ids": [
+            3703
+          ],
+          "zitat": "Wir setzen uns für die Anhebung der Übungsleiter- und Ehrenamtspauschale auf Bundesebene ein.",
+          "seite": 71
+        },
+        {
+          "beschreibung": "Ehrenamts-Check bei allen neuen Gesetzen einführen und Vereinfachungen im Vereins- und Gemeinnützigkeitsrecht anstreben.",
+          "ursachen_ids": [
+            3703
+          ],
+          "zitat": "Wir führen einen Ehrenamts-Check bei allen neuen Gesetzen ein und setzen uns für Vereinfachungen im Vereins-, Gemeinnützigkeits- und Steuerrecht auf Bundesebene ein.",
+          "seite": 70
+        },
+        {
+          "beschreibung": "Kooperationen von Vereinen mit Schulen und Kitas, um junge Menschen für Engagement zu gewinnen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3703
+          ],
+          "buendel": "Eigeneinnahmen und Kooperation der Vereine",
+          "zitat": "Besonders wollen wir junge Menschen für Engagement gewinnen, etwa durch Kooperationen von Vereinen mit Schulen und Kitas.",
+          "seite": 71
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3702,
+          "seiten": [
+            12,
+            26,
+            46,
+            55,
+            70,
+            71
+          ],
+          "grund": "Keine Zusage zu Betriebskosten, Hallenentgelten oder Auslastung von Sportstätten. Die Treffer auf S. 12, 26, 46 und 55 betreffen Wirtschaft, Gesundheit, Energie und Verwaltung ohne Sportbezug."
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 3703,
+          "name": "Übungsleiterpauschale anheben",
+          "seite": 71
+        },
+        {
+          "ursache": 3703,
+          "name": "Bürokratieabbau für Vereine",
+          "seite": 70
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Länder, Kommunen und Vereine bei der Sanierung von Sportstätten unterstützen.",
+          "ursachen_ids": [
+            3701
+          ],
+          "buendel": "Sanierung und Neubau von Sportstätten fördern",
+          "zitat": "Wir helfen Ländern, Kommunen und Vereinen bei der Sanierung von Sportstätten.",
+          "seite": 52
+        },
+        {
+          "beschreibung": "Attraktivität und Zugänglichkeit des Ehrenamts im Breitensport erhöhen.",
+          "ursachen_ids": [
+            3703
+          ],
+          "buendel": "Vereinsförderung und Entlastung des Ehrenamts",
+          "zitat": "Wir […] erhöhen die Attraktivität und Zugänglichkeit des Ehrenamts im Breitensport.",
+          "seite": 52
+        },
+        {
+          "beschreibung": "Gemeinnützigkeitsrecht modernisieren.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3703
+          ],
+          "zitat": "Mit dem Demokratiefördergesetz schaffen wir die Grundlage, zivilgesellschaftliche Initiativen […] nachhaltig zu unterstützen. Das Gemeinnützigkeitsrecht wollen wir modernisieren.",
+          "seite": 41
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 3703,
+          "name": "Gemeinnützigkeitsrecht modernisieren",
+          "seite": 41
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3702,
+          "seiten": [
+            34,
+            41,
+            51,
+            52
+          ],
+          "grund": "Keine Aussage zu Hallenmieten, Energiekosten oder Betriebszuschüssen für Sportstätten oder Vereine. Sport-Kapitel (S. 51–52) gelesen; allgemeine Energiepreise (S. 6) betreffen Unternehmen."
+        }
+      ],
+      "hebel_nicht_gefunden": []
+    },
+    {
+      "partei_id": 12,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Vereinsinvestitionsprogramm für Sportstätten entbürokratisieren und finanziell stärken; Neubau, Sanierung und Barrierefreiheit fortsetzen",
+          "ursachen_ids": [
+            3701
+          ],
+          "buendel": "Sanierung und Neubau von Sportstätten fördern",
+          "zitat": "Wir setzen Neubau, Sanierung, Barrierefreiheit und inklusive Sportstätten mit Nachdruck fort. Das Vereinsinvestitionsprogramm entbürokratisieren wir und stärken es finanziell.",
+          "seite": 56
+        },
+        {
+          "beschreibung": "Landeseigene Schwimmbäder mit Typenschwimmhallen neu bauen und Bestandsbäder klimagerecht sanieren",
+          "ursachen_ids": [
+            3701
+          ],
+          "zitat": "Wir investieren in landeseigene Schwimmbäder, bauen Typenschwimmhallen und sanieren Bestandsbäder klimagerecht.",
+          "seite": 56
+        },
+        {
+          "beschreibung": "Zentrale Planungs- und Baueinheit für bezirkliche Sportinfrastruktur einrichten, die Bau und Sanierung beschleunigt",
+          "ursachen_ids": [
+            3701
+          ],
+          "zitat": "Bei der bezirklichen Sportinfrastruktur richten wir uns an der Sportentwicklungsplanung aus und entwickeln ein Typenbauprogramm für Sportfunktionsgebäude. Eine zentrale Planungs- und Baueinheit entlastet Bezirke und beschleunigt barrierefreien Bau und Sanierung.",
+          "seite": 56
+        },
+        {
+          "beschreibung": "Sportstätten für Vereine weiterhin gebührenfrei zur Verfügung stellen",
+          "ursachen_ids": [
+            3702
+          ],
+          "buendel": "Betriebskosten und Hallenentgelte fördern oder senken",
+          "zitat": "Sportstätten stellen wir Vereinen weiterhin gebührenfrei zur Verfügung.",
+          "seite": 55
+        },
+        {
+          "beschreibung": "Fördervereinbarung mit dem Landessportbund nach 2029 fortführen",
+          "ursachen_ids": [
+            3703
+          ],
+          "buendel": "Vereinsförderung und Entlastung des Ehrenamts",
+          "zitat": "Die Fördervereinbarung mit dem Landessportbund wollen wir nach 2029 fortführen",
+          "seite": 56
+        },
+        {
+          "beschreibung": "Trainer*innen weiter qualifizieren und ihre Einkommenssituation verbessern (Grenzfall: Zuordnung zur Vereinsfinanzierung offen)",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3703
+          ],
+          "zitat": "Trainer*innen qualifizieren wir weiter und verbessern ihre Einkommenssituation.",
+          "seite": 56
+        },
+        {
+          "beschreibung": "Ehrenamtliche Strukturen weiter entbürokratisieren (Grenzfall: allgemeines Ehrenamt, kein Sportbezug)",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3703
+          ],
+          "zitat": "Wir setzen uns für die Anerkennung ehrenamtlicher Arbeit durch die Weiterentwicklung der Ehrenamtskarte, vergünstigte BVG-Tickets und eine weitere Entbürokratisierung ehrenamtlicher Strukturen ein.",
+          "seite": 50
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 3701,
+          "name": "Öffentliche Investition in Sportstätten",
+          "seite": 56
+        },
+        {
+          "ursache": 3701,
+          "name": "Zentrale Planung und Bau",
+          "seite": 56
+        },
+        {
+          "ursache": 3703,
+          "name": "Vergütung von Trainer*innen",
+          "seite": 56
+        },
+        {
+          "ursache": 3703,
+          "name": "Entbürokratisierung ehrenamtlicher Strukturen",
+          "seite": 50
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Sportstätten mit Sanierungsbedarf über bestehende Programme fördern",
+          "ursachen_ids": [
+            3701
+          ],
+          "buendel": "Sanierung und Neubau von Sportstätten fördern",
+          "zitat": "Viele unserer Sportstätten im Land weisen einen Sanierungsbedarf auf. Zur Stärkung des Breitensports werden wir weiterhin Sportstätten über die etablierten Programme fördern.",
+          "seite": 40
+        },
+        {
+          "beschreibung": "Vereinen, Karneval und Kapellen für bis zu drei Veranstaltungen im Jahr die GEMA-Gebühren erstatten",
+          "ursachen_ids": [
+            3703
+          ],
+          "buendel": "Vereinsförderung und Entlastung des Ehrenamts",
+          "zitat": "Viele kleine Vereine drücken gerade bei Veranstaltungen vor allem die GEMA - Gebühren. Um sie zu entlasten, werden wir Vereinen, dem Karneval und (Schalmeien - )Kapellen für […] öffentliche Auftritte und Veranstaltungen für bis zu drei Veranstaltungen im Jahr die GEMA - Gebühren erstatten.",
+          "seite": 5
+        },
+        {
+          "beschreibung": "Projekte wie „Sport in Schule und Verein“ fortführen und die Zusammenarbeit der Fachverbände verstärken",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3703
+          ],
+          "buendel": "Eigeneinnahmen und Kooperation der Vereine",
+          "zitat": "Diese positive Rolle möchten wir weiter fördern, auch durch den Ausbau von inklusiven Sportangeboten, die Fortführung von Projekten wie „Sport in Schule und Verein“ und „KinderBewegungsLand“ sowie eine verstärkte Zusammenarbeit der Fachverbände.",
+          "seite": 41
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "Sportanlagenprogramm",
+          "ursache": 3701,
+          "richtung": "Förderung von Sportanlagen aus Investitionsmitteln"
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3702,
+          "seiten": [
+            5,
+            40,
+            41,
+            52
+          ],
+          "grund": "Kapitel Sport (S. 40–41), Ehrenamt (S. 39–40), Kommunen (S. 50–52) und Fundstellen S. 5, 40, 41, 50, 52 gelesen; keine Hallenentgelte, Nutzungsentgelte, Energiekosten- oder Betriebskostenzuschüsse für Sportstätten oder Vereine, keine Auslastungs- oder Eigenverantwortungsregel."
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Sportstätten erhalten und modernisieren; Kommunen bei Investitionen in Neubau und Modernisierung unterstützen",
+          "ursachen_ids": [
+            3701
+          ],
+          "buendel": "Sanierung und Neubau von Sportstätten fördern",
+          "zitat": "Sportstätten werden erhalten und modernisiert. Kommunen werden unter anderem bei Investitionen in Neubau, Barrierefreiheit, Energieeffizienz und Digitalisierung unterstützt.",
+          "seite": 40
+        },
+        {
+          "beschreibung": "Vereinspauschalen verdoppeln, dynamisieren und im Sportfördergesetz festschreiben",
+          "ursachen_ids": [
+            3703
+          ],
+          "buendel": "Vereinsförderung und Entlastung des Ehrenamts",
+          "zitat": "Die Vereinspauschalen werden verdoppelt und dynamisiert und im Sportfördergesetz festgeschrieben.",
+          "seite": 40
+        },
+        {
+          "beschreibung": "Olympiastützpunkt, Leistungszentren, Sportinternate und Landessportschule verlässlich fördern, einschließlich Tariferhöhungen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3702
+          ],
+          "buendel": "Betriebskosten und Hallenentgelte fördern oder senken",
+          "zitat": "Der Olympiastützpunkt Sachsen-Anhalt, Bundesstützpunkte, Leistungszentren, Sportinternate, Mensen und die Landessportschule Osterburg werden verlässlich gefördert. Das schließt Tariferhöhungen, Investitionen sowie eine Leistungssportschwimmhalle in Magdeburg ein.",
+          "seite": 40
+        },
+        {
+          "beschreibung": "Vereine bei der Digitalisierung ihrer Arbeit unterstützen",
+          "ursachen_ids": [
+            3703
+          ],
+          "zitat": "Vereine werden bei der Digitalisierung ihrer Arbeit unterstützt.",
+          "seite": 40
+        },
+        {
+          "beschreibung": "Ehrenamtsgesetz im Sport anstreben",
+          "ursachen_ids": [
+            3703
+          ],
+          "zitat": "Zur Unterstützung ehrenamtlichen Engagements im Sport wird ein Ehrenamtsgesetz angestrebt.",
+          "seite": 40
+        },
+        {
+          "beschreibung": "Inklusionsberatung im Sport institutionell verankern",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3703
+          ],
+          "zitat": "Das Projekt -Inklusionsberater:innen im Sport- soll institutionell fest verankert werden.",
+          "seite": 40
+        },
+        {
+          "beschreibung": "Leitlinie für die Förderung von E-Sport erarbeiten, E-Sport den traditionellen Sportarten gleichstellen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3703
+          ],
+          "zitat": "E-Sport soll unterstützt und anderen traditionellen Sportarten gleichgestellt werden. Dafür wird eine Leitlinie für die Förderung erarbeitet.",
+          "seite": 41
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 3703,
+          "name": "Digitalisierung der Vereine unterstützen",
+          "seite": 40
+        },
+        {
+          "ursache": 3703,
+          "name": "Ehrenamtsgesetz im Sport",
+          "seite": 40
+        },
+        {
+          "ursache": 3703,
+          "name": "Inklusionsberatung im Sport verankern",
+          "seite": 40
+        },
+        {
+          "ursache": 3703,
+          "name": "Leitlinie für die Förderung von E-Sport",
+          "seite": 41
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "Schwimmhalle",
+          "ursache": 3701,
+          "richtung": "Investitionsprogramm für Schwimmhallen und Schwimmbäder"
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Bundesprogramm zur Sanierung von Sportstätten und Schwimmbädern ausbauen",
+          "ursachen_ids": [
+            3701
+          ],
+          "zitat": "Wir wollen das Bundesprogramm zur Sanierung von Sportstätten und Schwimmbädern ausbauen.",
+          "seite": 112
+        },
+        {
+          "beschreibung": "Vorhandene Sportstätten bei einer Sportgroßveranstaltung einbeziehen, neue für die Öffentlichkeit nutzbar machen",
+          "ursachen_ids": [
+            3701
+          ],
+          "zitat": "Den Nachhaltigkeitszielen wollen wir auch dadurch Rechnung tragen, dass wir bereits vorhandene Sportstätten in die Bewerbung einbeziehen und neu zu bauende für die Öffentlichkeit nutzbar machen.",
+          "seite": 112
+        },
+        {
+          "beschreibung": "Auskömmlichere Kommunalfinanzierung und Deutschlandfonds, damit Kommunen Investitionen etwa in Sportplätze und Schwimmbäder finanzieren können",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3701
+          ],
+          "zitat": "Allein zum Erhalt und zur Sanierung der kommunalen Infrastruktur, dazu zählen zum Beispiel […] Schwimmbäder, Jugendclubs, Sportplätze und Kultureinrichtungen, fehlen bundesweit 186 Milliarden Euro. Durch eine auskömmlichere Finanzierung der Kommunen und den Deutschlandfonds geben wir Kommunen endlich die Möglichkeit, diese dringend notwendigen Investitionen zu finanzieren.",
+          "seite": 108
+        },
+        {
+          "beschreibung": "Engagementkarte einführen, die unter anderem den Besuch von Schwimmbädern vergünstigt",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3702
+          ],
+          "zitat": "Zusammen mit Ländern und Kommunen wollen wir eine bundesweite Engagementkarte einführen, um den Besuch von Schwimmbädern und Kultureinrichtungen oder die Nutzung des öffentlichen Personennahverkehrs (ÖPNV) zu vergünstigen.",
+          "seite": 111
+        },
+        {
+          "beschreibung": "Zivilgesellschaftliche Organisationen von überflüssiger Bürokratie entlasten",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3703
+          ],
+          "zitat": "Zivilgesellschaftliche Organisationen tragen das gemeinnützige Engagement. Ihre Arbeit wollen wir von überflüssiger Bürokratie entlasten.",
+          "seite": 112
+        },
+        {
+          "beschreibung": "Katalog gemeinnütziger Zwecke erweitern",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3703
+          ],
+          "zitat": "Zudem erweitern wir den Katalog gemeinnütziger Zwecke.",
+          "seite": 112
+        },
+        {
+          "beschreibung": "E-Sport stärker beachten und als gemeinnützig anerkennen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3703
+          ],
+          "zitat": "Wir wollen, dass der E-Sport stärkere Beachtung findet und als gemeinnützig anerkannt wird.",
+          "seite": 113
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Netz barrierefreier, klimaneutraler Sportstätten schaffen, mit mindestens drei inklusiven Sportstätten pro Bezirk",
+          "ursachen_ids": [
+            3701
+          ],
+          "buendel": "Sanierung und Neubau von Sportstätten fördern",
+          "zitat": "Durch eine sinnvolle Sportstätten-Entwicklungsplanung und die Unterstützung der Bezirke bei der Umsetzung werden wir ein berlinweites Netz barrierefreier, klimaneutraler Sportstätten schaffen. […] Mindestens drei inklusive Sportstätten pro Bezirk sollen entstehen",
+          "seite": 39
+        },
+        {
+          "beschreibung": "Vereinsvorrang bei Sporthallen und Sportplätzen; Nutzungsvorschriften so ändern, dass Vereine bessere Trainingszeiten erhalten",
+          "ursachen_ids": [
+            3701
+          ],
+          "buendel": "Bestand priorisieren und gemeinsam nutzen",
+          "zitat": "In Zeiten von Wartelisten und Aufnahmestopps in vielen Sportvereinen, insbesondere für Kinder und Jugendliche, ist klar: Sporthallen und Sportplätze müssen zuerst dem Vereinssport zur Verfügung stehen. Wo keine Nutzungskonflikte entstehen, soll aber auch eine Nutzung durch den vereinsungebundenen Sport ermöglicht werden. Dazu wollen wir die Sportanlagen-Nutzungsvorschriften (SPAN) so ändern, dass Vereine mit entsprechendem Angebot künftig eine bessere Chance auf Trainingszeiten erhalten.",
+          "seite": 36
+        },
+        {
+          "beschreibung": "Eintritt in Schwimm- und Freibäder für Freiwilligendienstleistende kostenfrei, für Schüler fair und bezahlbar",
+          "ursachen_ids": [
+            3702
+          ],
+          "buendel": "Betriebskosten und Hallenentgelte fördern oder senken",
+          "zitat": "Für Freiwilligendienstleistende wollen wir den Eintritt in Schwimm- und Freibäder kostenfrei ermöglichen und für Schüler*innen so gestalten, dass er fair und für alle bezahlbar ist.",
+          "seite": 40
+        },
+        {
+          "beschreibung": "Förderbedingungen für hauptamtliche Verwaltungskräfte in Vereinen so ändern, dass die Mitgliederzahlen deutlich sinken",
+          "ursachen_ids": [
+            3703
+          ],
+          "buendel": "Vereinsförderung und Entlastung des Ehrenamts",
+          "zitat": "Das Programm zur Förderung hauptamtlicher Verwaltungskräfte […] Aber die Hürden sind aktuell zu hoch. Deswegen wollen wir die Fördervereinbarung zwischen dem Land Berlin und dem Landessportbund Berlin so ändern, dass die Mitgliedszahlen, die für eine Förderung benötigt werden, deutlich sinken.",
+          "seite": 37
+        },
+        {
+          "beschreibung": "Kriterienkatalog Inklusive Sportstätten als verbindliche bauliche Leitlinie festlegen",
+          "ursachen_ids": [
+            3701
+          ],
+          "zitat": "Auch neu errichtete Typensporthallen müssen bei der Barrierefreiheit modernen Standards entsprechen. Als baufachliche Leitlinie wollen wir den „Kriterienkatalog Inklusive Sportstätten“ verbindlich festlegen.",
+          "seite": 39
+        },
+        {
+          "beschreibung": "Bürger*innen-Beteiligung bei der Planung neuer Sportflächen stärken",
+          "ursachen_ids": [
+            3701
+          ],
+          "zitat": "Wir stärken die Bürger*innen-Beteiligung bei der Planung neuer Sportflächen.",
+          "seite": 39
+        },
+        {
+          "beschreibung": "Berliner Bäder energetisch sanieren, um die Kosten zu senken",
+          "ursachen_ids": [
+            3702
+          ],
+          "zitat": "Die Berliner Bäder werden energetisch saniert, um Strom- und Wärmeversorgung zu optimieren und die Kosten zu senken.",
+          "seite": 40
+        },
+        {
+          "beschreibung": "Zusätzliche Wasserzeiten schaffen, auch für Schwimmunterricht und Schwimmen von Frauen und Mädchen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3701
+          ],
+          "zitat": "Wir wollen zusätzliche Wasserzeiten schaffen und damit auch mehr separate Schwimmunterrichtsangebote sowie Schwimmzeiten für Frauen und Mädchen bzw. FLINTA*-Personen ermöglichen.",
+          "seite": 40
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 3701,
+          "name": "Verbindliche Baustandards für Sportstätten",
+          "seite": 39
+        },
+        {
+          "ursache": 3701,
+          "name": "Beteiligung bei der Planung von Sportflächen",
+          "seite": 39
+        },
+        {
+          "ursache": 3702,
+          "name": "Energetische Sanierung von Bädern",
+          "seite": 40
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Flächendeckendes, niedrigschwelliges Angebot an Jugendclubs, Vereinen, Kultur- und Sportstätten unterstützen",
+          "ursachen_ids": [
+            3703
+          ],
+          "ursachen_offen": [
+            3701
+          ],
+          "buendel": "Vereinsförderung und Entlastung des Ehrenamts",
+          "zitat": "Für eine unbeschwerte Kindheit und Jugend wollen wir: […] ein flächendeckendes und niedrigschwelliges Angebot an Jugendclubs, Vereinen, Kultur-, Musik- und Sportstätten unterstützen.",
+          "seite": 64
+        },
+        {
+          "beschreibung": "Nachbarschaftstreffs in jeder Kommune: Vereine sollen die Räume gegen eine minimale Gebühr nutzen können",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3702,
+            3703
+          ],
+          "buendel": "Betriebskosten und Hallenentgelte fördern oder senken",
+          "zitat": "Für ein Mecklenburg-Vorpommern, in dem alle gut leben können, fordern wir: […] in jeder Kommune und jedem Stadtteil ein Ort der Gemeinschaft: Diese Nachbarschaftstreffs bieten Raum für Veranstaltungen, Geselligkeit und gemeinsames Arbeiten. […] Vereine sollen diese Räumlichkeiten gegen eine minimale Gebühr nutzen können.",
+          "seite": 63
+        },
+        {
+          "beschreibung": "Bessere Möglichkeiten zur Freistellung schaffen, um ehrenamtliches Engagement zu erleichtern",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3703
+          ],
+          "zitat": "Darüber hinaus schaffen wir bessere Möglichkeiten zur Freistellung, um ehrenamtliches Engagement zu erleichtern.",
+          "seite": 68
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 3703,
+          "name": "Freistellung für Ehrenamt",
+          "seite": 68
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "freistellung",
+          "ursache": 3703,
+          "richtung": "Freistellung für ehrenamtliches Engagement"
+        }
+      ],
+      "stand_im_pdf": "Stand: 16.07.2026 (Titelseite; Auftrag: 2026-06-06)"
+    },
+    {
+      "partei_id": 13,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Sanierung von Sportstätten und Schwimmbädern unterstützen, mit Fokus auf Nachhaltigkeit und Inklusion",
+          "ursachen_ids": [
+            3701
+          ],
+          "buendel": "Sanierung und Neubau von Sportstätten fördern",
+          "zitat": "Deshalb setzen wir uns für die Sanierung von Sportstätten und Schwimmbädern ein, wobei ökologische Nachhaltigkeit und echte Inklusion im Vordergrund stehen.",
+          "seite": 72
+        },
+        {
+          "beschreibung": "Schulische Sportstätten stärker öffnen und mehr frei zugängliche Bewegungsflächen schaffen",
+          "ursachen_ids": [
+            3701
+          ],
+          "buendel": "Bestand priorisieren und gemeinsam nutzen",
+          "zitat": "Um das zu gewährleisten, unterstützen wir ein vielfältiges Sportangebot und wollen mehr frei zugängliche Bewegungsflächen schaffen, schulische Sportstätten stärker öffnen […]",
+          "seite": 73
+        },
+        {
+          "beschreibung": "Vereine gezielt bei Energiekosten unterstützen",
+          "ursachen_ids": [
+            3702
+          ],
+          "buendel": "Betriebskosten und Hallenentgelte fördern oder senken",
+          "zitat": "Wir streben eine Entbürokratisierung der Sportförderung an und wollen Vereine gezielt bei Energiekosten und Sanierungen unterstützen, um die Belastung durch Bürokratie und hohe Kosten zu reduzieren.",
+          "seite": 72
+        },
+        {
+          "beschreibung": "Ehrenamtspauschale im Sport erhöhen und die Anerkennung des Ehrenamts verbessern",
+          "ursachen_ids": [
+            3703
+          ],
+          "buendel": "Vereinsförderung und Entlastung des Ehrenamts",
+          "zitat": "Zusätzlich möchten wir das Ehrenamt im Sport stärken, indem wir die Ehrenamtspauschale erhöhen und die Anerkennung verbessern, denn ohne ehrenamtliches Engagement wäre der Sport in seiner heutigen Form nicht möglich.",
+          "seite": 73
+        },
+        {
+          "beschreibung": "Kooperationen zwischen Sportvereinen und Schulen ausbauen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3703
+          ],
+          "buendel": "Eigeneinnahmen und Kooperation der Vereine",
+          "zitat": "Im Kinder- und Jugendsport sollen Kooperationen zwischen Sportvereinen und Schulen weiter ausgebaut werden, insbesondere für Ganztagsangebote, um eine gezieltere Bewegungsförderung zu erreichen.",
+          "seite": 73
+        },
+        {
+          "beschreibung": "Bürokratische Hürden für ehrenamtliches Engagement abbauen",
+          "ursachen_ids": [
+            3703
+          ],
+          "zitat": "Wir setzen uns dafür ein, dass sich ehrenamtliches Engagement besser mit dem Beruf vereinbaren lässt, indem wir Anrechnungsregeln prüfen, bürokratische Hürden abbauen und Kinderbetreuungsangebote im Ehrenamt fördern.",
+          "seite": 74
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 3703,
+          "name": "Bürokratieabbau im Ehrenamt",
+          "seite": 74
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3702,
+          "seiten": [
+            17,
+            38,
+            61
+          ],
+          "grund": "S. 17: Kontrollen landwirtschaftlicher Betriebe, kein Sportbezug. S. 38: allgemeine kommunale Finanzausstattung und Eigenverantwortung der Kommunen, ohne Sportstätten oder Vereine. S. 61: Eigenverantwortung der Schulen (Schulbudget), Schule statt Sport. Auslastung, Hallenentgelte und Nutzungsgebühren kommen im Kapitel Sport nicht vor."
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "Übungsleiter*innen",
+          "ursache": 3703,
+          "richtung": "Entschädigung unterstützen"
+        },
+        {
+          "begriff": "Energiekosten",
+          "ursache": 3702,
+          "richtung": "Vereine bei Energiekosten unterstützen"
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Vereine bei Haftungsrisiken und Bürokratie entlasten, Dokumentations- und Aufbewahrungspflichten reduzieren",
+          "ursachen_ids": [
+            3703
+          ],
+          "zitat": "Damit sich Ehrenamtliche auf ihr Engagement konzentrieren können, wollen wir Vereine bei Haftungsrisiken und Bürokratie deutlich entlasten.",
+          "seite": 32
+        },
+        {
+          "beschreibung": "Übungsleiter- und Ehrenamtspauschalen sowie relevante Einnahmegrenzen anpassen",
+          "ursachen_ids": [
+            3703
+          ],
+          "zitat": "Wir passen rechtliche Rahmen, Übungsleiter- und Ehrenamtspauschalen, sowie relevante Einnahmegrenzen an.",
+          "seite": 32
+        },
+        {
+          "beschreibung": "Engagement der Babyboomer-Generation gezielt einbinden, um Sportangebote und Vereinsarbeit zu beleben",
+          "ursachen_ids": [
+            3703
+          ],
+          "zitat": "Um diese Potenziale zu heben, wollen wir neben einer generellen Stärkung des Ehrenamts insbesondere das Engagement der Babyboomer-Generation gezielt einbinden. Mit ihrer Erfahrung und Zeit können sie Sportangebote für Kinder, Jugendliche und Senioren ausbauen und die Vereinsarbeit beleben.",
+          "seite": 32
+        },
+        {
+          "beschreibung": "eSports als gemeinnützig anerkennen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3703
+          ],
+          "zitat": "Wir setzen uns zudem dafür ein, dass eSports als gemeinnützig anerkannt wird.",
+          "seite": 32
+        },
+        {
+          "beschreibung": "Zusammenarbeit zwischen Vereinen, Schulen, Unternehmen und sozialen Einrichtungen stärken",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3703
+          ],
+          "zitat": "Außerdem stärken wir die Zusammenarbeit zwischen Vereinen, Schulen, Unternehmen und sozialen Einrichtungen, um möglichst viele Menschen zu erreichen.",
+          "seite": 32
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3701,
+          "seiten": [
+            8,
+            32,
+            40,
+            43
+          ],
+          "grund": "Kein Sportstätten-Bezug im Programm. Sport und Ehrenamt (S. 31–32) gelesen; Schulsanierung (S. 8) gehört nach R2 zu Schule; Infrastruktur (S. 40, 43) betrifft Straßen, Schiene und Flughäfen."
+        },
+        {
+          "ursache": 3702,
+          "seiten": [
+            18,
+            20,
+            32
+          ],
+          "grund": "Keine Betriebskosten oder Hallenentgelte für Vereine oder Sportstätten. Treffer ‚Eigenverantwortung‘ (S. 18, 20) betrifft Arbeitsrecht und Arbeitslosenversicherung; Sport-Kapitel (S. 32) ohne Kostenzusage."
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 3703,
+          "name": "Bürokratieentlastung für Vereine",
+          "seite": 32
+        },
+        {
+          "ursache": 3703,
+          "name": "Ehrenamtspauschalen anpassen",
+          "seite": 32
+        },
+        {
+          "ursache": 3703,
+          "name": "Ehrenamtliches Engagement einbinden",
+          "seite": 32
+        },
+        {
+          "ursache": 3703,
+          "name": "Gemeinnützige Anerkennung",
+          "seite": 32
+        },
+        {
+          "ursache": 3703,
+          "name": "Kooperation der Vereine",
+          "seite": 32
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Bestehende Sportstätten für eine mögliche Olympia-Austragung in erster Linie modernisieren und renovieren; neue Anlagen nur bei dringendem sportlichem Bedarf",
+          "ursachen_ids": [
+            3701
+          ],
+          "buendel": "Sanierung und Neubau von Sportstätten fördern",
+          "zitat": "Für die Austragung sollen in erster Linie bestehende Sportstätten modernisiert und renoviert werden. Nur da, wo es sportlich dringend erforderlich ist, werden neue Anlagen gebaut.",
+          "seite": 83
+        },
+        {
+          "beschreibung": "Vorhandene Sportanlagen besser nutzen: Onlineportal für Sportanlagen und Schulhöfe außerhalb der Schulzeit für Sport zur Verfügung stellen",
+          "ursachen_ids": [
+            3701
+          ],
+          "buendel": "Bestand priorisieren und gemeinsam nutzen",
+          "zitat": "Die vorhandenen Sportanlagen müssen besser für den Sport genutzt werden. Dazu werden wir ein Onlineportal für die Nutzung von Sportanlagen einrichten und Schulhöfe und Sportanlagen auch außerhalb der Schulzeiten für sportliche Aktivitäten zur Verfügung stellen.",
+          "seite": 83
+        },
+        {
+          "beschreibung": "Instandhaltung von Sportstätten auf eine neue Grundlage stellen, damit Nutzende Baumaßnahmen eigenverantwortlich mit finanzieller Planungssicherheit umsetzen können",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3701,
+            3702
+          ],
+          "buendel": "Eigenverantwortung und Auslastung",
+          "zitat": "Die Instandhaltung von Sportstätten wollen wir auf eine neue Grundlage stellen, die es den Nutzerinnen und Nutzern ermöglicht, Baumaßnahmen möglichst eigenverantwortlich und mit finanzieller Planungssicherheit umzusetzen.",
+          "seite": 83
+        },
+        {
+          "beschreibung": "Landessportbund bei der Erhaltung der Vielfalt des Sports unterstützen und seine Finanzierung langfristig garantieren",
+          "ursachen_ids": [
+            3703
+          ],
+          "buendel": "Vereinsförderung und Entlastung des Ehrenamts",
+          "zitat": "Wir unterstützen den Landessportbund Berlin dabei, die Vielfalt des Berliner Sports in allen Facetten erlebbar und sichtbar zu halten, indem wir eine verlässliche und langfristige Finanzierung garantieren.",
+          "seite": 84
+        },
+        {
+          "beschreibung": "Unterstützung eines neuen, eigenfinanzierten Fußballstadions für einen Berliner Verein",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3701
+          ],
+          "zitat": "Wir werden Hertha BSC dabei unterstützen, ein neues, eigenfinanziertes Fußballstadion in Berlin zu errichten.",
+          "seite": 84
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 3701,
+          "name": "Unterstützung eigenfinanzierter Sportstätten-Neubau",
+          "seite": 84
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Langfristiges Sanierungsprogramm für Sportstätten gemeinsam mit den Kommunen, mit verlässlicher und planbarer Förderkulisse",
+          "ursachen_ids": [
+            3701
+          ],
+          "buendel": "Sanierung und Neubau von Sportstätten fördern",
+          "zitat": "Wir Freie Demokraten werden: […] gemeinsam mit Kommunen ein langfristiges Programm zur Sanierung und Modernisierung von Sportstätten auflegen und dafür eine verlässliche und planbare Förderkulisse schaffen.",
+          "seite": 124
+        },
+        {
+          "beschreibung": "Einen regelmäßig fortzuschreibenden Zustandsbericht der Sportstätten im Land für den Mitteleinsatz einfordern",
+          "ursachen_ids": [
+            3701
+          ],
+          "buendel": "Bestand priorisieren und gemeinsam nutzen",
+          "zitat": "Wir Freie Demokraten werden: […] einen aussagekräftigen und regelmäßig fortzuschreibenden Zustandsbericht der Sportstätten im Land für einen sinnvollen Mitteleinsatz einfordern",
+          "seite": 124
+        },
+        {
+          "beschreibung": "Bürokratische Hürden für Förderanträge, Genehmigungen und Bauvorhaben im Sport abbauen",
+          "ursachen_ids": [
+            3701
+          ],
+          "zitat": "Wir Freie Demokraten werden: […] auch im Sport Hindernisse abbauen, die sich aus allzu bürokratischen gesetzlichen Regelungen oder einem unvertretbar strengen Verwaltungsvollzug ergeben, insbesondere bei Förderanträgen, Genehmigungen und Bauvorhaben.",
+          "seite": 124
+        },
+        {
+          "beschreibung": "Vereine sollen Sporthallen und kommunale Einrichtungen außerhalb der Nutzungszeiten unbürokratisch und möglichst kostenfrei nutzen können",
+          "ursachen_ids": [
+            3702
+          ],
+          "buendel": "Betriebskosten und Hallenentgelte fördern oder senken",
+          "zitat": "Wir Freie Demokraten werden: […] uns dafür einsetzen, dass Vereine und ehrenamtliche Initiativen öffentliche Räume wie Schulen, Sporthallen oder kommunale Einrichtungen außerhalb der regulären Nutzungszeiten unbürokratisch und möglichst kostenfrei für ihre Arbeit nutzen können.",
+          "seite": 122
+        },
+        {
+          "beschreibung": "Kommunen nur wirtschaftlich tätig werden lassen, wenn kein privates Unternehmen die Leistung gleich gut erbringt",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3702
+          ],
+          "zitat": "Wir Freie Demokraten werden: […] dafür sorgen, dass Kommunen nur wirtschaftlich tätig werden, wenn kein privatwirtschaftliches Unternehmen die gleiche Leistung gleich gut erbringen kann.",
+          "seite": 79
+        },
+        {
+          "beschreibung": "Präventive Kommunalaufsicht, die schon vor finanziellen Notlagen berät und Auswege aufzeigt",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3702
+          ],
+          "zitat": "Wir Freie Demokraten werden: […] eine präventive Kommunalaufsicht einfordern, die nicht erst bei finanziellen Notlagen aktiv wird, sondern beratend unterstützt und Auswege aufzeigt.",
+          "seite": 79
+        },
+        {
+          "beschreibung": "Aufsichtsgremien kommunaler Unternehmen nach Fachkompetenz besetzen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3702
+          ],
+          "zitat": "Wir Freie Demokraten werden: […] dafür eintreten, dass Aufsichtsgremien für kommunale Unternehmen nach Fachkompetenz und nicht nach Verwaltungsamt oder Parteizugehörigkeit besetzt werden.",
+          "seite": 79
+        },
+        {
+          "beschreibung": "Landesförderprogramme für Vereine stärker pauschalisieren und Antrags- und Verwendungsnachweise vereinfachen",
+          "ursachen_ids": [
+            3703
+          ],
+          "buendel": "Vereinsförderung und Entlastung des Ehrenamts",
+          "zitat": "Wir Freie Demokraten werden: […] Förderprogramme für Vereine stärker pauschalisieren und Antrags- sowie Verwendungsnachweise deutlich vereinfachen.",
+          "seite": 122
+        },
+        {
+          "beschreibung": "Steuerliche Freibeträge für Übungsleiter- und Ehrenamtspauschalen erhöhen",
+          "ursachen_ids": [
+            3703
+          ],
+          "zitat": "Wir Freie Demokraten werden: […] uns für eine Erhöhung der steuerlichen Freibeträge für Übungsleiter- und Ehrenamtspauschalen einsetzen […]",
+          "seite": 122
+        },
+        {
+          "beschreibung": "Landesgesetze und Verwaltungsvorschriften auf unnötige Belastungen für Vereine überprüfen und vereinfachen",
+          "ursachen_ids": [
+            3703
+          ],
+          "zitat": "Wir Freie Demokraten werden: […] Landesgesetze und Verwaltungsvorschriften regelmäßig auf unnötige Belastungen für Vereine überprüfen und vereinfachen.",
+          "seite": 122
+        },
+        {
+          "beschreibung": "Haftungsbeschränkungen für ehrenamtliche Vereinsvorstände anregen",
+          "ursachen_ids": [
+            3703
+          ],
+          "zitat": "Wir Freie Demokraten werden: […] Haftungsbeschränkungen für ehrenamtliche Vorstände von Vereinen anregen, soweit keine grob fahrlässigen oder vorsätzlichen Verstöße vorliegen.",
+          "seite": 122
+        },
+        {
+          "beschreibung": "Ehrenamtskarte durch private Akzeptanzstellen attraktiver machen und Nachweise bürokratieärmer anerkennen",
+          "ursachen_ids": [
+            3703
+          ],
+          "zitat": "Wir Freie Demokraten werden: […] die Ehrenamtskarte durch Einbindung privater Akzeptanzstellen deutlich attraktiver sowie durch die Anerkennung von bestehenden Nachweisen bürokratieärmer gestalten.",
+          "seite": 122
+        },
+        {
+          "beschreibung": "Ehrenamtliche rechtlich verlässlich gegen physische und verbale Angriffe schützen",
+          "ursachen_ids": [
+            3703
+          ],
+          "zitat": "Wir Freie Demokraten werden: […] Ehrenamtler, die sich für das Gemeinwohl engagieren, rechtlich verlässlich gegen physische und verbale Angriffe Dritter schützen.",
+          "seite": 122
+        },
+        {
+          "beschreibung": "Verlässliche und unbürokratische Erstattung für Arbeitgeber sichern, wenn Beschäftigte für Ehrenamt freigestellt werden",
+          "ursachen_ids": [
+            3703
+          ],
+          "zitat": "Wir Freie Demokraten werden: […] verlässliche und unbürokratische Erstattungsverfahren für Arbeitgeber sicherstellen, wenn Mitarbeitende für ehrenamtliche Einsätze oder Ausbildungen freigestellt werden.",
+          "seite": 122
+        },
+        {
+          "beschreibung": "Anreize schaffen, damit auch ältere Menschen und Menschen mit Behinderungen sich ehrenamtlich engagieren",
+          "ursachen_ids": [
+            3703
+          ],
+          "zitat": "Wir Freie Demokraten werden: […] Anreize schaffen, um auch ältere Menschen sowie Menschen mit Behinderungen für ein ehrenamtliches Engagement zu ermutigen.",
+          "seite": 122
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 3701,
+          "name": "Bürokratieabbau bei Sport-Bauvorhaben",
+          "seite": 124
+        },
+        {
+          "ursache": 3702,
+          "name": "Wirtschaftliche Betätigung der Kommunen begrenzen",
+          "seite": 79
+        },
+        {
+          "ursache": 3702,
+          "name": "Präventive Kommunalaufsicht",
+          "seite": 79
+        },
+        {
+          "ursache": 3702,
+          "name": "Besetzung der Aufsichtsgremien kommunaler Unternehmen",
+          "seite": 79
+        },
+        {
+          "ursache": 3703,
+          "name": "Steuerliche Freibeträge für Ehrenamtspauschalen",
+          "seite": 122
+        },
+        {
+          "ursache": 3703,
+          "name": "Bürokratieabbau für Vereine",
+          "seite": 122
+        },
+        {
+          "ursache": 3703,
+          "name": "Haftung und Versicherung Ehrenamtlicher",
+          "seite": 122
+        },
+        {
+          "ursache": 3703,
+          "name": "Anerkennung Ehrenamt (Ehrenamtskarte)",
+          "seite": 122
+        },
+        {
+          "ursache": 3703,
+          "name": "Schutz Ehrenamtlicher vor Angriffen",
+          "seite": 122
+        },
+        {
+          "ursache": 3703,
+          "name": "Erstattung für Arbeitgeber bei Freistellung",
+          "seite": 122
+        },
+        {
+          "ursache": 3703,
+          "name": "Anreize zur Gewinnung Ehrenamtlicher",
+          "seite": 122
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3702,
+          "seiten": [
+            4,
+            9,
+            29,
+            40,
+            41,
+            102,
+            113,
+            121,
+            122,
+            124
+          ],
+          "grund": "Bündel „Eigenverantwortung und Auslastung“: Treffer sind das Wort „Eigenverantwortung“ in Wirtschafts-, Gesundheits-, Hochschul- und Brandschutzkapiteln. Keine Zusage zu Auslastung, Nutzungsgebühren oder Kostensenkung im Sportbetrieb."
+        },
+        {
+          "ursache": 3703,
+          "seiten": [
+            119,
+            123,
+            124
+          ],
+          "grund": "Bündel „Eigeneinnahmen und Kooperation der Vereine“: keine Zusage zu Mitgliedsbeiträgen, Sponsoring, Vereinsfusion. S. 119 nennt Sponsoring nur als Beschreibung der Kulturszene. Schule-Verein-Kooperation (S. 123, 124) gehört nach R2 zu Schule und Ganztag."
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Kontinuierliche Investitionen in Sportstätten",
+          "ursachen_ids": [
+            3701
+          ],
+          "buendel": "Sanierung und Neubau von Sportstätten fördern",
+          "zitat": "Wir setzen uns deshalb für kontinuierliche Investitionen in Sportstätten ein.",
+          "seite": 52
+        },
+        {
+          "beschreibung": "Planungs- und Förderverfahren für Sportstätten beschleunigen, digitalisieren und ehrenamtsfreundlich gestalten",
+          "ursachen_ids": [
+            3701
+          ],
+          "zitat": "Planungs- und Förderverfahren müssen beschleunigt, digitalisiert und ehrenamtsfreundlich gestaltet werden.",
+          "seite": 52
+        },
+        {
+          "beschreibung": "Schulgebäude außerhalb des Unterrichts für Vereine und Kulturangebote öffnen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3701
+          ],
+          "buendel": "Bestand priorisieren und gemeinsam nutzen",
+          "zitat": "Generell sollen Schulgebäude unabhängig von der Eigentümersituation auch außerhalb des Unterrichts für weitere Aktivitäten geöffnet und so zum Beispiel Heimat für Vereine und Kulturangebote werden.",
+          "seite": 29
+        },
+        {
+          "beschreibung": "Vereine mit eigenen Liegenschaften und Vereine mit kommunalen Sportstätten gleichstellen; Sportfördergesetz anpassen",
+          "ursachen_ids": [
+            3702
+          ],
+          "buendel": "Betriebskosten und Hallenentgelte fördern oder senken",
+          "zitat": "Dies wollen wir Liberale stärken, zum Beispiel durch […] die Gleichstellung von Vereinen, die eigene Liegenschaften nutzen und tragen zu Vereinen, die kommunale Sportstätten in Anspruch nehmen. Bei letzterem geht es auch um die Anpassung des Sportfördergesetzes Sachsen-Anhalt.",
+          "seite": 52
+        },
+        {
+          "beschreibung": "Pauschalförderung für Vereine und Mitgliedsorganisationen erhöhen und dynamisieren",
+          "ursachen_ids": [
+            3703
+          ],
+          "buendel": "Vereinsförderung und Entlastung des Ehrenamts",
+          "zitat": "Wir wollen die Pauschalförderung für Vereine und Mitgliedsorganisationen nachhaltig erhöhen und dynamisieren.",
+          "seite": 52
+        },
+        {
+          "beschreibung": "Förderungen für ehrenamtliches Engagement bürokratisch entlasten und vereinfachen",
+          "ursachen_ids": [
+            3703
+          ],
+          "zitat": "Die Förderungen des Landes sind zu umständlich und führen dazu, dass die Mittel nicht dort ankommen, wo sie sollen. Deshalb werden wir die Förderungen mit geringen Summen für ehrenamtliches Engagement massiv bürokratisch entlasten und vereinfachen.",
+          "seite": 51
+        },
+        {
+          "beschreibung": "Ehrenamtliches Engagement im Sport durch Anerkennung, Sichtbarkeit und bessere Rahmenbedingungen stärken",
+          "ursachen_ids": [
+            3703
+          ],
+          "zitat": "Wir wollen ehrenamtliches Engagement im Sport konkret stärken – durch Anerkennungsinstrumente, mehr Sichtbarkeit für ehrenamtliches Wirken und bessere Rahmenbedingungen für die Vereinbarkeit mit Schule, Studium und Beruf sowie die langfristige Sicherung der Freiwilligendienste.",
+          "seite": 52
+        },
+        {
+          "beschreibung": "Qualifizierte Trainer- und Übungsleiterstrukturen dauerhaft sichern",
+          "ursachen_ids": [
+            3703
+          ],
+          "zitat": "Qualifizierte Trainer- und Übungsleiterstrukturen sichern wir dauerhaft – insbesondere im Nachwuchs- und Leistungssport.",
+          "seite": 52
+        },
+        {
+          "beschreibung": "Kooperationen mit Sportvereinen ausbauen und Sport in Kita und Schule stärken",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3703
+          ],
+          "buendel": "Eigeneinnahmen und Kooperation der Vereine",
+          "zitat": "Wir stärken Sport in Kita und Schule und bauen Kooperationen mit Sportvereinen aus.",
+          "seite": 52
+        },
+        {
+          "beschreibung": "Förderprogramme, Vereinsrecht und Gemeinnützigkeit für neue, digital geprägte Sportarten technologieneutral gestalten",
+          "ursachen_ids": [
+            3703
+          ],
+          "zitat": "eSport und andere neue, digital geprägte Sportarten sind Ausdruck gesellschaftlicher Realität und dürfen nicht strukturell benachteiligt werden. Förderprogramme, Vereinsrecht und Gemeinnützigkeitsregelungen müssen technologieneutral ausgestaltet sein.",
+          "seite": 53
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 3701,
+          "name": "Planungs- und Förderverfahren beschleunigen",
+          "seite": 52
+        },
+        {
+          "ursache": 3703,
+          "name": "Bürokratieentlastung der Förderung für ehrenamtliches Engagement",
+          "seite": 51
+        },
+        {
+          "ursache": 3703,
+          "name": "Anerkennung und Rahmenbedingungen für Ehrenamt im Sport",
+          "seite": 52
+        },
+        {
+          "ursache": 3703,
+          "name": "Qualifizierung und Absicherung von Trainer- und Übungsleitenden",
+          "seite": 52
+        },
+        {
+          "ursache": 3703,
+          "name": "Gleichbehandlung neuer Sportarten bei Förderung und Gemeinnützigkeit",
+          "seite": 53
+        }
+      ],
+      "stand_im_pdf": "Stand: 05.06.2026 (Auftrag: 2026-04-25; Beschluss des Landesparteitags 25. April 2026)"
+    },
+    {
+      "partei_id": 15,
+      "land": null,
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel Soziale Marktwirtschaft (S. 15–16, 34), Infrastruktur und Energie (S. 38–41), Finanzen (S. 55, 59) und Währung (S. 62) gelesen; kein Sportstätten-, Betriebskosten- oder Vereinsbezug. Treffer ‚Eigenverantwortung‘ sind allgemeine Leitbilder.",
+      "nicht_erfasst": [
+        {
+          "ursache": 3701,
+          "seiten": [
+            38,
+            39,
+            40,
+            41
+          ],
+          "grund": "Nur Straßen, Brücken und Gebäude der Infrastruktur sowie allgemeine Energiepolitik; keine Maßnahme zu Sanierung oder Neubau von Sportstätten oder Sporthallen."
+        },
+        {
+          "ursache": 3702,
+          "seiten": [
+            15,
+            16,
+            34,
+            40,
+            41,
+            55,
+            59,
+            62
+          ],
+          "grund": "Energiepolitik (S. 40–41) ist allgemein und nennt keine Sportstätten, Hallen oder Vereine. Eigenverantwortung (S. 15–16, 34, 55, 62) ist ein Leitbild ohne Handlung für Betriebs- oder Nutzungskosten."
+        },
+        {
+          "ursache": 3703,
+          "seiten": [
+            15,
+            16,
+            30,
+            55,
+            59
+          ],
+          "grund": "Kein Vereinsförderungs-, Ehrenamts- oder Entlastungsvorschlag. Ehrenamt (S. 16) ist nur ein Bildungsziel; Mitgliedsbeiträge (S. 30) betreffen die WHO."
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Sanierungsstau bei Sportflächen durch massive Investitionen und ein Sofortprogramm beheben.",
+          "ursachen_ids": [
+            3701
+          ],
+          "buendel": "Sanierung und Neubau von Sportstätten fördern",
+          "zitat": "Der Sanierungsstau bei Sportflächen muss durch massive Investitionen und ein […] Sofortprogramm behoben werden.",
+          "seite": 65
+        },
+        {
+          "beschreibung": "Bei Neubauvorhaben den Bedarf an zusätzlichen Sportflächen berücksichtigen.",
+          "ursachen_ids": [
+            3701
+          ],
+          "zitat": "Bei Neubauvorhaben muss der Bedarf an zusätzlichen Sportflächen berücksichtigt werden.",
+          "seite": 66
+        },
+        {
+          "beschreibung": "Beim Neubau und bei der Sanierung von Sportstätten auf behindertengerechte Eignung achten.",
+          "ursachen_ids": [
+            3701
+          ],
+          "zitat": "Beim Neubau und bei der Sanierung von Sportstätten muss stärker auf eine behindertengerechte Eignung geachtet werden.",
+          "seite": 66
+        },
+        {
+          "beschreibung": "Begrenzung der Dauerförderung von Trägern und Vereinen, ergänzt um regelmäßige Wirksamkeitsprüfung.",
+          "ursachen_ids": [
+            3703
+          ],
+          "buendel": "Vereinsförderung und Entlastung des Ehrenamts",
+          "zitat": "Deshalb sind eine regelmäßige Wirksamkeitsprüfung von Programmen und eine Begrenzung der Dauerförderung von Trägern und Vereinen unerlässlich.",
+          "seite": 49
+        },
+        {
+          "beschreibung": "Politisch motivierte NGOs und Vereine sollen sich künftig nur über private Spenden und Mitgliedsbeiträge finanzieren.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3703
+          ],
+          "buendel": "Eigeneinnahmen und Kooperation der Vereine",
+          "zitat": "Berlin vergibt jedes Jahr hohe Summen an linksradikale NGOs und Vereine […] Wir werden Sorge dafür tragen, dass solche Organisationen sich künftig ausschließlich durch private Spenden und Mitgliedsbeiträge finanzieren.",
+          "seite": 77
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 3701,
+          "name": "Bedarfsplanung Sportflächen",
+          "seite": 66
+        },
+        {
+          "ursache": 3701,
+          "name": "Barrierefreie Sportstätten",
+          "seite": 66
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3702,
+          "seiten": [
+            46,
+            48,
+            49,
+            51,
+            65,
+            66,
+            67
+          ],
+          "grund": "Betriebs- und Nutzungskosten von Sportstätten oder Hallenentgelte kommen nicht vor. Der Treffer „Eigenverantwortung“ steht in Sozial-, Familien-, Gesundheits- und Umweltpolitik (S. 46, 48, 49, 61, 62, 69, 72, 79) und im Sportkapitel nur als Begleitwort (S. 65); keine Zusage zu Betriebskosten."
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Kommunen und Vereine sollen Mittel für Sanierung von Vereins- und Schulsportstätten sowie Schwimmhallen vollständig und unbürokratisch abrufen können",
+          "ursachen_ids": [
+            3701
+          ],
+          "buendel": "Sanierung und Neubau von Sportstätten fördern",
+          "zitat": "Der Sanierungsstau bei Vereins- und Schulsportstätten sowie Schwimmhallen ist noch nicht überwunden. Wir werden sicherstellen, dass Kommunen und Vereine in Mecklenburg-Vorpommern Mittel vollständig und unbürokratisch abrufen können.",
+          "seite": 72
+        },
+        {
+          "beschreibung": "Bundesstützpunkte für Kanurennsport, Triathlon und Segeln (Standorte mit Sportinfrastruktur) dauerhaft erhalten und ausbauen, auf Landes- und Bundesebene",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3701
+          ],
+          "zitat": "Diese Infrastruktur ist nicht selbstverständlich. Die Bundesstützpunkte für Kanurennsport und Triathlon in Neubrandenburg sowie Segeln in Rostock standen in der Vergangenheit mehrfach akut auf der Kippe und sind derzeit nur bis 2028 gesichert. Wir werden uns auf Landes- und Bundesebene dafür einsetzen, dass diese Standorte dauerhaft erhalten und ausgebaut werden, weil sie nachweislich Weltklasseleistungen hervorbringen.",
+          "seite": 36
+        },
+        {
+          "beschreibung": "Aufwandsentschädigungen für ehrenamtliche Übungsleitende, Trainer und Schiedsrichter regelmäßig an Lohn- und Preisentwicklung anpassen",
+          "ursachen_ids": [
+            3703
+          ],
+          "buendel": "Vereinsförderung und Entlastung des Ehrenamts",
+          "zitat": "Ohne sie gibt es keinen Vereinssport. Ihre möglichen Aufwandsentschädigungen werden wir regelmäßig an die Lohn- und Preisentwicklung anpassen.",
+          "seite": 66
+        },
+        {
+          "beschreibung": "Bürokratische Hürden für Vereine (Förderanträge, Versicherungs- und Nachweispflichten) systematisch abbauen",
+          "ursachen_ids": [
+            3703
+          ],
+          "zitat": "Bürokratische Hürden für Vereine, sei es bei Förderanträgen, Versicherungspflichten oder Nachweispflichten, werden wir systematisch abbauen.",
+          "seite": 66
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3702,
+          "seiten": [
+            33,
+            63,
+            66,
+            72
+          ],
+          "grund": "Kapitel Sport, Gesundheit (Vereinskultur), Ehrenamt und Sportstätten gelesen; keine Zusage zu Betriebskosten, Energiekosten, Hallenentgelten oder Nutzungsgebühren von Sportstätten. Eigenverantwortung-Treffer betreffen Kommunen, Gesundheit und Tourismus, nicht Sportvereine."
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 3703,
+          "name": "Bürokratieabbau für Vereine",
+          "seite": 66
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Landesprogramm: kostenfreie Vereinsteilnahme am Sport für alle Kinder bis 18",
+          "ursachen_ids": [
+            3703
+          ],
+          "buendel": "Vereinsförderung und Entlastung des Ehrenamts",
+          "zitat": "Um dieser negativen Tendenz entgegenzuwirken, gleichzeitig die Familien finanziell zu entlasten und dem Vereinssport Nachwuchs zu verschaffen, werden wir im Rahmen eines Landesprogramms jedem Kind bis zur Vollendung des 18. Lebensjahres die Möglichkeit bieten, sich in einem Verein seiner Wahl kostenfrei sportlich zu betätigen.",
+          "seite": 19
+        },
+        {
+          "beschreibung": "Vereinsförderung nur mit Bekenntnis zur demokratischen Ordnung und patriotischen Grundhaltung",
+          "ursachen_ids": [
+            3703
+          ],
+          "zitat": "Wir werden deshalb als Landesregierung dafür sorgen, dass jeder Verein, der entweder institutionell oder projektbezogen mit Steuergeld gefördert werden will, ein glaubhaftes Bekenntnis zur demokratischen Ordnung und zu einer patriotischen Grundhaltung ablegen muss.",
+          "seite": 135
+        },
+        {
+          "beschreibung": "Ehrenamtskarte einführen und ehrenamtliches Engagement im Bevölkerungsschutz anerkennen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3703
+          ],
+          "zitat": "Die AfD wird das ehrenamtliche Engagement im Bevölkerungsschutz sowie im Rettungsdienst nachhaltig anerkennen und unterstützt die Einführung der Ehrenamtskarte.",
+          "seite": 113
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 3703,
+          "name": "Bekenntnis als Bedingung der Vereinsförderung",
+          "seite": 135
+        },
+        {
+          "ursache": 3703,
+          "name": "Ehrenamtskarte als Anerkennung des Ehrenamts",
+          "seite": 113
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3701,
+          "seiten": [
+            192,
+            200
+          ],
+          "grund": "Keine Zusage zur Sanierung oder zum Neubau von Sportstätten. Allgemeine Infrastrukturprogramme (S. 192) ohne Sportbezug; Schulsanierung gehört nach R2 zu Schule; Schwimmbäder (S. 200) nur als Lagebeschreibung zur Fährfinanzierung."
+        },
+        {
+          "ursache": 3702,
+          "seiten": [
+            45,
+            46,
+            59,
+            202,
+            221,
+            242
+          ],
+          "grund": "Keine Zusage zu Betriebskosten, Hallenentgelten oder Nutzungsgebühren von Sportstätten. Treffer betreffen Abschiebehaft, Heimwerker, Behindertenparkplätze, MDR und Gesundheitsvorsorge ohne Sportbezug."
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Der Bund beteiligt sich 15 Jahre lang mit jeweils einer Milliarde Euro pro Jahr an Sanierung und Neubau von Turnhallen, Sportplätzen und Schwimmbädern.",
+          "ursachen_ids": [
+            3701
+          ],
+          "buendel": "Sanierung und Neubau von Sportstätten fördern",
+          "zitat": "Sport muss als Teil der Daseinsvorsorge öffentlich gefördert werden. Dazu gehören die Sanierung von Turnhallen und Sportplätzen sowie die Schaffung moderner, barrierefreier und ökologischer Sportstätten und Schwimmbäder. Daran soll sich der Bund in den kommenden 15 Jahren mit jeweils einer Milliarde Euro pro Jahr beteiligen.",
+          "seite": 56
+        },
+        {
+          "beschreibung": "Einrichtungen für Kinder und Jugendliche, darunter Sportvereine und Schwimmbäder, sollen gebührenfrei sein; Finanzierung der Kommunen verbessern.",
+          "ursachen_ids": [
+            3702
+          ],
+          "ursachen_offen": [
+            3703
+          ],
+          "buendel": "Betriebskosten und Hallenentgelte fördern oder senken",
+          "zitat": "Kinder- und Jugendfreizeiteinrichtungen, Musikschulen, Bibliotheken, Schwimmbäder, Sportvereine und andere Einrichtungen für Kinder und Jugendliche müssen niedrig schwellig, barrierefrei, wohnortnah und gebührenfrei sein. Dafür braucht es eine Verbesserung der Finanzierungsgrundlage in den Kommunen und eine dauerhafte Kofinanzierung durch die Länder.",
+          "seite": 16
+        },
+        {
+          "beschreibung": "Werbe- und Sponsoring-Verbot für Tabak, Alkohol, andere Drogen und Glücksspiel, mit Aufklärungskampagnen (Grenzfall: wirkt auf Vereins-Sponsoring, Zweck ist Suchtprävention).",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3703
+          ],
+          "zitat": "Wir wollen ein Werbe- und Sponsoring-Verbot für Tabak, Alkohol, andere Drogen sowie Glücksspielangebote einführen, begleitet von Aufklärungskampagnen zu Alkohol-, Drogen und Spielsucht.",
+          "seite": 20
+        },
+        {
+          "beschreibung": "Reform des Gemeinnützigkeitsrechts mit Klarstellung der als gemeinnützig anerkannten Zwecke (Grenzfall: Rechtsrahmen gemeinnütziger Vereine).",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3703
+          ],
+          "zitat": "Wir brauchen eine Reform des Gemeinnützigkeitsrechts mit einer Klarstellung der als gemeinnützig anerkannten Zwecke.",
+          "seite": 12
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3703,
+          "seiten": [
+            9,
+            49
+          ],
+          "grund": "Wohngemeinnützigkeit (S. 9) betrifft Wohnungen, Parteispenden und Parteisponsoring (S. 49) betreffen Parteien; kein Vereinsbezug."
+        },
+        {
+          "ursache": 3701,
+          "seiten": [
+            43,
+            44
+          ],
+          "grund": "Schwimmbäder als Wasserversorgung (S. 43) ohne Sportstätten-Zusage. Infrastrukturgarantie und Bundesfonds für Kommunen (S. 44) nur Bekenntnis bzw. Möglichkeit ('sollen … können'), gleiche Hebel wie S. 56, dort konkreter erfasst."
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 3703,
+          "name": "Werbe- und Sponsoringverbot",
+          "seite": 20
+        },
+        {
+          "ursache": 3703,
+          "name": "Gemeinnützigkeitsrecht reformieren",
+          "seite": 12
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Ein „Jahrzehnt der Investitionen“ in den Breitensport mit zentraler Baudienststelle für den Sportstättenbau",
+          "ursachen_ids": [
+            3701
+          ],
+          "buendel": "Sanierung und Neubau von Sportstätten fördern",
+          "zitat": "Wir werden ein „Jahrzehnt der Investitionen“ in den Breitensport einleiten. Dafür richten wir eine zentrale Baudienststelle für den Sportstättenbau ein.",
+          "seite": 316
+        },
+        {
+          "beschreibung": "Reaktivierung ungenutzter Sportorte in die Eigenverantwortung der Vereine geben, saisonale Sportstätten ganzjährig nutzen",
+          "ursachen_ids": [
+            3702
+          ],
+          "buendel": "Eigenverantwortung und Auslastung",
+          "zitat": "Wir setzen uns für die Reaktivierung ungenutzter Sport- und Bewegungsorte ein, die in die Eigenverantwortung der Sportvereine übertragen werden sollen. Saisonal genutzte Sportstätten müssen einer ganzjährigen aktiven Nutzung zugeführt werden.",
+          "seite": 317
+        },
+        {
+          "beschreibung": "Nutzung der Bäder für Vereine bleibt unentgeltlich",
+          "ursachen_ids": [
+            3702
+          ],
+          "buendel": "Betriebskosten und Hallenentgelte fördern oder senken",
+          "zitat": "Die Nutzung der Bäder für Kitas, Schulen und Vereine bleibt unentgeltlich.",
+          "seite": 318
+        },
+        {
+          "beschreibung": "Energetische Sanierung der Kälteanlagen von Eissporthallen per Investitionsprogramm",
+          "ursachen_ids": [
+            3702
+          ],
+          "zitat": "Wir starten ein Investitionsprogramm zur energetischen Sanierung der Kälteanlagen, um den Eissport auch in Zeiten der Klimakrise ökologisch nachhaltig und finanzierbar zu halten.",
+          "seite": 320
+        },
+        {
+          "beschreibung": "Gemeinsame Nutzung bestehender Sportflächen durch Schulen und Sportvereine verbessern",
+          "ursachen_ids": [
+            3701
+          ],
+          "buendel": "Bestand priorisieren und gemeinsam nutzen",
+          "zitat": "Dazu führen wir schrittweise zunächst tägliche Bewegungszeiten und zusätzliche Sportangebote im Ganztag ein, stärken Kooperationen zwischen Schulen und Sportvereinen und verbessern die Nutzung bestehender Sportflächen.",
+          "seite": 312
+        },
+        {
+          "beschreibung": "Ein ergänzender Fonds mit dem Landessportbund für Personal und Instandhaltung in den Vereinen",
+          "ursachen_ids": [
+            3703
+          ],
+          "buendel": "Vereinsförderung und Entlastung des Ehrenamts",
+          "zitat": "Wir werden mit dem Landessportbund einen ergänzenden Fonds auflegen, der direkt in die Basis des Breitensports investiert, insbesondere zur Sicherung von Personal und zur Instandhaltung der Infrastruktur.",
+          "seite": 313
+        },
+        {
+          "beschreibung": "Ehrenamt durch Digitalisierung von Bürokratie entlasten, Übungsleiterpauschale anheben",
+          "ursachen_ids": [
+            3703
+          ],
+          "zitat": "Um es zu stützen, werden wir die Übungsleiterpauschale spürbar anheben und die Digitalisierung vorantreiben, um das Ehrenamt von Bürokratie zu entlasten.",
+          "seite": 313
+        },
+        {
+          "beschreibung": "Schulschwimmzentren und kostenlose Nachschulungsangebote in Kooperation mit Vereinen ausbauen",
+          "ursachen_ids": [
+            3703
+          ],
+          "buendel": "Eigeneinnahmen und Kooperation der Vereine",
+          "zitat": "Dafür bauen wir die Schulschwimmzentren und kostenlose Nachschulungsangebote in Kooperation mit Vereinen vor allem in Bezirken mit hohen Nichtschwimmerquoten aus.",
+          "seite": 318
+        },
+        {
+          "beschreibung": "Mindestens 40 Prozent der Sportfördermittel und öffentlichen Trainingszeiten an Mädchen- und FLINTA*-Teams vergeben",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3703
+          ],
+          "zitat": "Wir führen eine verbindliche Quote für die Mittelvergabe ein. Im ersten Schritt sollen mindestens 40 Prozent der Sportfördermittel und der öffentlichen Trainingszeiten zweckgebunden an Mädchen* und FLINTA*-Teams vergeben werden.",
+          "seite": 314
+        },
+        {
+          "beschreibung": "Sportflächen bei großen Wohnungsneubauvorhaben verbindlich festschreiben",
+          "ursachen_ids": [
+            3701
+          ],
+          "zitat": "Bei Wohnungsneubauvorhaben nehmen wir Investor*innen in die Pflicht: Bei Großprojekten muss die Errichtung von öffentlich zugänglichen, konsumfreien und ungedeckten Sportflächen (wie Bolzplätzen, Calisthenics-Anlagen oder Skate-Elementen) verbindlich festgeschrieben werden.",
+          "seite": 322
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 3702,
+          "name": "Energetische Sanierung von Sportstätten",
+          "seite": 320
+        },
+        {
+          "ursache": 3703,
+          "name": "Bürokratieabbau für Ehrenamt und Vereine",
+          "seite": 313
+        },
+        {
+          "ursache": 3703,
+          "name": "Quote bei der Vergabe von Sportfördermitteln",
+          "seite": 314
+        },
+        {
+          "ursache": 3701,
+          "name": "Sportflächen bei Wohnungsneubau festschreiben",
+          "seite": 322
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "MV",
+      "stand_im_pdf": "Titelseite und Impressum: Stand Juni 2026; Landesparteitag hat das Programm am 30.05.2026 beschlossen",
+      "massnahmen": [
+        {
+          "beschreibung": "Sportanlagen ausbauen und sanieren",
+          "ursachen_ids": [
+            3701
+          ],
+          "buendel": "Sanierung und Neubau von Sportstätten fördern",
+          "zitat": "Wir wollen: […] Sportanlagen ausbauen und sanieren, Breiten- und Leistungssport fördern […]",
+          "seite": 11
+        },
+        {
+          "beschreibung": "Ausfinanzierung von Sportförderprogrammen, darunter ein Programm für Sport in Schule und Verein",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3703
+          ],
+          "buendel": "Vereinsförderung und Entlastung des Ehrenamts",
+          "zitat": "Wir wollen: […] Sportförderung: Die Ausfinanzierung von den Programmen „Kinderbewegungsland“, „Gemeinsam Sport in Schule und Verein“ und „MV kann schwimmen“.",
+          "seite": 11
+        },
+        {
+          "beschreibung": "Anerkennung des Ehrenamts stärken durch Weiterbildung und Freistellungsregelungen für Ehrenamtliche",
+          "ursachen_ids": [
+            3703
+          ],
+          "neue_buendel": [
+            {
+              "ursache": 3703,
+              "name": "Freistellung und Weiterbildung im Ehrenamt",
+              "seite": 13
+            }
+          ],
+          "zitat": "Wir wollen: […] Die Anerkennung des Ehrenamts stärken, indem Weiterbildung und Freistellungsregelungen für Ehrenamtliche ermöglicht werden.",
+          "seite": 13
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3702,
+          "seiten": [
+            8,
+            11,
+            13
+          ],
+          "grund": "Kapitel Finanzen (S. 8), Kinder- und Jugendpolitik und Sport (S. 11) sowie Ehrenamt (S. 13) gelesen; keine Zusage zu Hallenentgelten, Betriebs- oder Energiekosten von Sportstätten oder Vereinen."
+        }
+      ],
+      "eigene_synonyme": []
+    },
+    {
+      "partei_id": 16,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Investitionsprogramme für die Sanierung von Bädern, Turnhallen und Sportanlagen, Kommunen verlässlich unterstützen",
+          "ursachen_ids": [
+            3701
+          ],
+          "buendel": "Sanierung und Neubau von Sportstätten fördern",
+          "zitat": "Der hohe Sanierungsstau bei Schwimm- und Sportstätten muss abgebaut werden. Wir setzen uns für langfristige Investitionsprogramme ein, durch die Kommunen bei der Sanierung und Modernisierung von Bädern, Turnhallen und Sportanlagen verlässlich unterstützt werden.",
+          "seite": 67
+        },
+        {
+          "beschreibung": "Wohnortnahe Schwimmangebote mit ausreichenden Kapazitäten sicherstellen",
+          "ursachen_ids": [
+            3701
+          ],
+          "buendel": "Bestand priorisieren und gemeinsam nutzen",
+          "zitat": "Dafür wollen wir wohnortnahe Schwimmangebote mit ausreichenden Kapazitäten sicherstellen",
+          "seite": 67
+        },
+        {
+          "beschreibung": "Vereinen ohne eigene Sportstätten Zugang ermöglichen; Zugang und Nutzung müssen finanzierbar sein",
+          "ursachen_ids": [
+            3702
+          ],
+          "ursachen_offen": [
+            3701
+          ],
+          "buendel": "Betriebskosten und Hallenentgelte fördern oder senken",
+          "zitat": "Vereinen, die über keine eigenen Sportstätten verfügen, ist der Zugang zu ermöglichen. Viele Vereine verfügen nicht über eigene Sportstätten und sind auf „Einmietmöglichkeiten“ angewiesen. Der Zugang und die Nutzung müssen möglich und finanzierbar sein.",
+          "seite": 68
+        },
+        {
+          "beschreibung": "Ehrenamt im Sport stärken: landesweite Ehrenamtskarte, mehr Anerkennung, Vereinbarkeit mit Schule, Studium und Beruf",
+          "ursachen_ids": [
+            3703
+          ],
+          "buendel": "Vereinsförderung und Entlastung des Ehrenamts",
+          "zitat": "Gemeinsam mit dem Landessportbund wollen wir die Förderung des Ehrenamtes weiterentwickeln, u.a. durch mehr Anerkennung, eine landesweite Ehrenamtskarte, die Sicherung der Freiwilligendienste und den Ausbau der Vereinbarkeit von Engagement mit Schule, Studium und Beruf.",
+          "seite": 68
+        },
+        {
+          "beschreibung": "Kooperationen von Schulen, Kitas und Vereinen unterstützen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3703
+          ],
+          "buendel": "Eigeneinnahmen und Kooperation der Vereine",
+          "zitat": "Dafür setzen wir auf […] die Unterstützung der Kooperationen von Schulen, Kitas und Vereinen.",
+          "seite": 68
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "sportanlage",
+          "ursache": 3701,
+          "richtung": "Sanierung und Neubau von Sportstätten fördern"
+        },
+        {
+          "begriff": "turnhalle",
+          "ursache": 3701,
+          "richtung": "Sanierung und Neubau von Sportstätten fördern"
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Der Bund übernimmt für alle Kinder das erste Vereinsjahr im Sport per Zuschuss; soll auch die Vereine unterstützen",
+          "ursachen_ids": [
+            3703
+          ],
+          "buendel": "Vereinsförderung und Entlastung des Ehrenamts",
+          "zitat": "Der Bund soll für alle Kinder das erste Jahr im Sportverein bezahlen (Zuschuss von bis zu 150 Euro im Jahr). So werden Kinder in die Vereine gebracht und die Vereine und ihre wertvolle Arbeit unterstützt.",
+          "seite": 24
+        },
+        {
+          "beschreibung": "Investitionsprogramm für kinder- und jugendfreundliche Infrastruktur, u. a. Sportstätten wohnortnah zugänglich; Mittel gegen Sanierungsstau in Bildungs- und Betreuungseinrichtungen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3701
+          ],
+          "buendel": "Sanierung und Neubau von Sportstätten fördern",
+          "zitat": "Mit einem Investitionsprogramm „Kinder und Bildung“ wollen wir in eine kinder-, jugend- und familienfreundliche Infrastruktur investieren. Wir fordern einen niedrigschwelligen und wohnortnahen Zugang zu Angeboten wie Kinder- und Jugendfreizeiteinrichtungen, Bibliotheken, Sportstätten oder Musikschulen. Die Mittel des Investitionsprogramms sollen in die Bildungs- und Betreuungsinfrastruktur in Städten und Gemeinden fließen, deren teils marode Einrichtungen unter dem langjährigen Sanierungs- und Investitionsstau leiden.",
+          "seite": 32
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3701,
+          "seiten": [
+            15,
+            16,
+            28,
+            31,
+            35
+          ],
+          "grund": "Kapitel Infrastruktur (S. 15–16), Wohnen (S. 28) und Familie (S. 31) gelesen; keine Sanierung oder Neubau von Sportstätten, Sporthallen oder Bädern. Schulgebäude-Sanierung gehört zu Schule."
+        },
+        {
+          "ursache": 3702,
+          "seiten": [
+            2,
+            15,
+            16,
+            24,
+            31,
+            32
+          ],
+          "grund": "Kapitel Infrastruktur, Energie und Familie gelesen; keine Betriebs- oder Nutzungskosten, Hallenentgelte oder Betriebszuschüsse für Sportstätten. Energiepreispassagen betreffen Wirtschaft allgemein."
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Mittel für die Sanierung von Sportstätten verdoppeln und Kürzungen stoppen",
+          "ursachen_ids": [
+            3701
+          ],
+          "buendel": "Sanierung und Neubau von Sportstätten fördern",
+          "zitat": "Sanierungsoffensive für Sportstätten: Wir stoppen Kürzungen und verdoppeln die Mittel für Sanierungen.",
+          "seite": 27
+        },
+        {
+          "beschreibung": "Bei Sportstätten Instandhaltung, Umbau und barrierefreie Modernisierung vorrangig behandeln",
+          "ursachen_ids": [
+            3701
+          ],
+          "buendel": "Bestand priorisieren und gemeinsam nutzen",
+          "zitat": "Priorität haben Instandhaltung, Umbau und barrierefreie Modernisierung.",
+          "seite": 27
+        },
+        {
+          "beschreibung": "Kommunale Sportanlagen für Vereine kostenlos oder stark vergünstigt nutzbar machen",
+          "ursachen_ids": [
+            3702
+          ],
+          "buendel": "Betriebskosten und Hallenentgelte fördern oder senken",
+          "zitat": "Breitensport und Vereine stärken: Kostenlose oder stark vergünstigte Nutzung kommunaler Anlagen für Vereine.",
+          "seite": 27
+        },
+        {
+          "beschreibung": "Gezielte Unterstützung für Trainer, Ehrenamtliche und Inklusionsprojekte im Breitensport",
+          "ursachen_ids": [
+            3703
+          ],
+          "buendel": "Vereinsförderung und Entlastung des Ehrenamts",
+          "zitat": "Breitensport und Vereine stärken: […] Gezielte Unterstützung für Trainer, Ehrenamtliche und Inklusionsprojekte.",
+          "seite": 27
+        }
+      ],
+      "neue_buendel": []
+    },
+    {
+      "partei_id": 17,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Regelmäßige Sanierung und Modernisierung bestehender Infrastruktur, darunter Sporthallen und Schwimmbäder",
+          "ursachen_ids": [
+            3701
+          ],
+          "buendel": "Sanierung und Neubau von Sportstätten fördern",
+          "zitat": "Regelmäßige Sanierung und Modernisierung bestehender Infrastruktur, etwa Straßen, Brücken, Schulen, Sporthallen, Schwimmbäder und Kitas.",
+          "seite": 76
+        },
+        {
+          "beschreibung": "Förderung kleiner Vereine durch einen unbürokratischen Soforthilfefonds von etwa 1.000 Euro pro Verein",
+          "ursachen_ids": [
+            3703
+          ],
+          "buendel": "Vereinsförderung und Entlastung des Ehrenamts",
+          "zitat": "Ein unbürokraƟscher Soforthilfefonds für kleine Vereine, etwa in Höhe von 1.000 Euro pro Verein.",
+          "seite": 78
+        },
+        {
+          "beschreibung": "Digitales Vereinsportal zur Vereinfachung von Verwaltung, Förderung und Beratung für Vereine",
+          "ursachen_ids": [
+            3703
+          ],
+          "zitat": "Ein digitales Vereinsportal Mecklenburg-Vorpommern, zur Vereinfachung von Verwaltung, Förderung und Beratung.",
+          "seite": 77
+        },
+        {
+          "beschreibung": "Ehrenamtskarte durch eine andere Form der Würdigung ersetzen",
+          "ursachen_ids": [
+            3703
+          ],
+          "zitat": "[…] Ehrenamtskarte, die wenig Akzeptanzstellen hat, durch andere Form der Würdigung ersetzen.",
+          "seite": 77
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3702,
+          "seiten": [
+            75,
+            76,
+            77
+          ],
+          "grund": "Kapitel 7 (S. 75–77) gelesen: nur allgemeine Kommunalfinanzierung und Entlastung, keine Zusage zu Betriebskosten, Hallenentgelten oder Verlusten kommunaler Sportbetriebe."
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 3703,
+          "name": "Digitales Vereinsportal und Bürokratieabbau für Vereine",
+          "seite": 77
+        },
+        {
+          "ursache": 3703,
+          "name": "Ehrenamtskarte durch andere Würdigung ersetzen",
+          "seite": 77
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Öffentliche Investitionen in Erhalt und Neubau von Sportstätten in den kommenden Jahren",
+          "ursachen_ids": [
+            3701
+          ],
+          "buendel": "Sanierung und Neubau von Sportstätten fördern",
+          "zitat": "Deshalb muss in den kommenden Jahren intensiv in die Erhaltung oder den […] Neubau von Sportstätten investiert werden.",
+          "seite": 41
+        },
+        {
+          "beschreibung": "Vorrang für Sportstätten des Schulsports sowie für Hallen- und Freibäder",
+          "ursachen_ids": [
+            3701
+          ],
+          "buendel": "Bestand priorisieren und gemeinsam nutzen",
+          "zitat": "Oberste Priorität haben hierbei Sportstätten, welche primär für den Schulsport benötigt werden sowie Hallen- und Freibäder, um die Schwimmfertigkeit in der Bevölkerung zu erhalten oder gar zu verbessern.",
+          "seite": 42
+        },
+        {
+          "beschreibung": "Ehrenamt im Sport stärken durch Ausweitung der Freistellung, höhere Ehrenamtspauschalen und Anerkennung bei der Rente",
+          "ursachen_ids": [
+            3703
+          ],
+          "buendel": "Vereinsförderung und Entlastung des Ehrenamts",
+          "zitat": "Dazu bedarf es einer Ausweitung des Freistellungsgesetzes auf privates Ehrenamt, die Erhöhung von Ehrenamtspauschalen sowie die Anerkennung der ehrenamtlichen Tätigkeit bei der Rentenberechnung.",
+          "seite": 42
+        },
+        {
+          "beschreibung": "Verwaltungs- und Förderverfahren für Vereine und Verbände vereinfachen",
+          "ursachen_ids": [
+            3703
+          ],
+          "zitat": "Gleichzeitig müssen Verwaltungs- und Förderverfahren vereinfacht werden, um Vereine und Verbände spürbar zu entlasten.",
+          "seite": 42
+        },
+        {
+          "beschreibung": "Bedingungen für öffentliche Förderung von Organisationen: Gemeinwohlorientierung, transparente Mittelverwendung, politische Neutralität; Gemeinnützigkeit enger fassen",
+          "ursachen_ids": [
+            3703
+          ],
+          "zitat": "Auch die Kriterien der Gemeinnützigkeit müssen geschärft werden. […] Öffentliche Förderung darf nur dort erfolgen, wo eine nachweisbare Gemeinwohlorientierung, transparente Mittelverwendung und politische Neutralität gegeben sind, soweit nicht gesetzlich etwas anderes vorgesehen ist.",
+          "seite": 14
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 3703,
+          "name": "Verwaltungs- und Förderverfahren für Vereine vereinfachen",
+          "seite": 42
+        },
+        {
+          "ursache": 3703,
+          "name": "Förderbedingungen und Gemeinnützigkeit",
+          "seite": 14
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3702,
+          "seiten": [
+            20,
+            41,
+            42,
+            75,
+            76
+          ],
+          "grund": "Breitensport- und Kommunalkapitel gelesen. Keine Zusage zu Hallenentgelten, Nutzungs- oder Betriebskosten von Sportstätten. Kommunalabgabengesetz nur als Möglichkeit (kann). Landwirtschaft (S. 20) kein Sportbezug."
+        }
+      ]
+    }
+  ],
+  "suchbegriffe": {
+    "3701": {
+      "Sanierung und Neubau von Sportstätten fördern": [
+        "sportstätten",
+        "sanierung sportstätten",
+        "sporthallen",
+        "sportstättenförderung",
+        "sanierungsprogramm sport",
+        "goldener plan",
+        "schwimmbäder",
+        "sportinfrastruktur"
+      ],
+      "Bestand priorisieren und gemeinsam nutzen": [
+        "bestand priorisieren",
+        "gemeinsame nutzung",
+        "mehrfachnutzung von hallen",
+        "interkommunale sportstätten",
+        "hallenbelegung"
+      ]
+    },
+    "3702": {
+      "Betriebskosten und Hallenentgelte fördern oder senken": [
+        "hallenentgelt",
+        "nutzungsentgelt",
+        "betriebskostenzuschuss",
+        "energiekosten sportvereine",
+        "kostenfreie hallennutzung",
+        "hallenmiete",
+        "entgeltfreie nutzung"
+      ],
+      "Eigenverantwortung und Auslastung": [
+        "auslastung",
+        "nutzungsgebühr",
+        "eigenverantwortung",
+        "kostensenkung",
+        "wirtschaftlicher betrieb"
+      ]
+    },
+    "3703": {
+      "Vereinsförderung und Entlastung des Ehrenamts": [
+        "vereinsförderung",
+        "sportvereine",
+        "ehrenamt im sport",
+        "übungsleiterpauschale",
+        "ehrenamtspauschale",
+        "gemeinnützigkeit",
+        "vereine entlasten",
+        "sportförderung"
+      ],
+      "Eigeneinnahmen und Kooperation der Vereine": [
+        "sponsoring",
+        "mitgliedsbeiträge",
+        "kooperationen von vereinen",
+        "vereinsfusion",
+        "schule und verein"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "746a82d6ad0dbba63a4df35fa8276006c65f0bed90c058a0802dab1eb24f6ee6",
+    "programme": [
+      {
+        "partei_id": 11,
+        "land": null,
+        "ursachen": {
+          "3701": {
+            "Sanierung und Neubau von Sportstätten fördern": {
+              "sportstätten": 0,
+              "sanierung sportstätten": 0,
+              "sporthallen": 0,
+              "sportstättenförderung": 0,
+              "sanierungsprogramm sport": 0,
+              "goldener plan": 0,
+              "schwimmbäder": 0,
+              "sportinfrastruktur": 1
+            },
+            "Bestand priorisieren und gemeinsam nutzen": {
+              "bestand priorisieren": 0,
+              "gemeinsame nutzung": 0,
+              "mehrfachnutzung von hallen": 0,
+              "interkommunale sportstätten": 0,
+              "hallenbelegung": 0
+            }
+          },
+          "3702": {
+            "Betriebskosten und Hallenentgelte fördern oder senken": {
+              "hallenentgelt": 0,
+              "nutzungsentgelt": 0,
+              "betriebskostenzuschuss": 0,
+              "energiekosten sportvereine": 0,
+              "kostenfreie hallennutzung": 0,
+              "hallenmiete": 0,
+              "entgeltfreie nutzung": 0
+            },
+            "Eigenverantwortung und Auslastung": {
+              "auslastung": 0,
+              "nutzungsgebühr": 0,
+              "eigenverantwortung": 7,
+              "kostensenkung": 0,
+              "wirtschaftlicher betrieb": 0
+            }
+          },
+          "3703": {
+            "Vereinsförderung und Entlastung des Ehrenamts": {
+              "vereinsförderung": 0,
+              "sportvereine": 1,
+              "ehrenamt im sport": 0,
+              "übungsleiterpauschale": 1,
+              "ehrenamtspauschale": 0,
+              "gemeinnützigkeit": 1,
+              "vereine entlasten": 0,
+              "sportförderung": 1
+            },
+            "Eigeneinnahmen und Kooperation der Vereine": {
+              "sponsoring": 1,
+              "mitgliedsbeiträge": 0,
+              "kooperationen von vereinen": 0,
+              "vereinsfusion": 0,
+              "schule und verein": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 11,
+        "land": "BE",
+        "ursachen": {
+          "3701": {
+            "Sanierung und Neubau von Sportstätten fördern": {
+              "sportstätten": 10,
+              "sanierung sportstätten": 0,
+              "sporthallen": 4,
+              "sportstättenförderung": 0,
+              "sanierungsprogramm sport": 0,
+              "goldener plan": 0,
+              "schwimmbäder": 2,
+              "sportinfrastruktur": 1
+            },
+            "Bestand priorisieren und gemeinsam nutzen": {
+              "bestand priorisieren": 0,
+              "gemeinsame nutzung": 1,
+              "mehrfachnutzung von hallen": 0,
+              "interkommunale sportstätten": 0,
+              "hallenbelegung": 0
+            }
+          },
+          "3702": {
+            "Betriebskosten und Hallenentgelte fördern oder senken": {
+              "hallenentgelt": 0,
+              "nutzungsentgelt": 0,
+              "betriebskostenzuschuss": 0,
+              "energiekosten sportvereine": 0,
+              "kostenfreie hallennutzung": 0,
+              "hallenmiete": 0,
+              "entgeltfreie nutzung": 0
+            },
+            "Eigenverantwortung und Auslastung": {
+              "auslastung": 0,
+              "nutzungsgebühr": 0,
+              "eigenverantwortung": 4,
+              "kostensenkung": 0,
+              "wirtschaftlicher betrieb": 0
+            }
+          },
+          "3703": {
+            "Vereinsförderung und Entlastung des Ehrenamts": {
+              "vereinsförderung": 0,
+              "sportvereine": 14,
+              "ehrenamt im sport": 0,
+              "übungsleiterpauschale": 0,
+              "ehrenamtspauschale": 0,
+              "gemeinnützigkeit": 3,
+              "vereine entlasten": 1,
+              "sportförderung": 2
+            },
+            "Eigeneinnahmen und Kooperation der Vereine": {
+              "sponsoring": 0,
+              "mitgliedsbeiträge": 0,
+              "kooperationen von vereinen": 0,
+              "vereinsfusion": 0,
+              "schule und verein": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 11,
+        "land": "MV",
+        "ursachen": {
+          "3701": {
+            "Sanierung und Neubau von Sportstätten fördern": {
+              "sportstätten": 7,
+              "sanierung sportstätten": 0,
+              "sporthallen": 0,
+              "sportstättenförderung": 0,
+              "sanierungsprogramm sport": 0,
+              "goldener plan": 0,
+              "schwimmbäder": 0,
+              "sportinfrastruktur": 2
+            },
+            "Bestand priorisieren und gemeinsam nutzen": {
+              "bestand priorisieren": 0,
+              "gemeinsame nutzung": 0,
+              "mehrfachnutzung von hallen": 0,
+              "interkommunale sportstätten": 0,
+              "hallenbelegung": 0
+            }
+          },
+          "3702": {
+            "Betriebskosten und Hallenentgelte fördern oder senken": {
+              "hallenentgelt": 0,
+              "nutzungsentgelt": 0,
+              "betriebskostenzuschuss": 0,
+              "energiekosten sportvereine": 0,
+              "kostenfreie hallennutzung": 0,
+              "hallenmiete": 0,
+              "entgeltfreie nutzung": 0
+            },
+            "Eigenverantwortung und Auslastung": {
+              "auslastung": 0,
+              "nutzungsgebühr": 0,
+              "eigenverantwortung": 3,
+              "kostensenkung": 0,
+              "wirtschaftlicher betrieb": 0
+            }
+          },
+          "3703": {
+            "Vereinsförderung und Entlastung des Ehrenamts": {
+              "vereinsförderung": 0,
+              "sportvereine": 6,
+              "ehrenamt im sport": 3,
+              "übungsleiterpauschale": 0,
+              "ehrenamtspauschale": 0,
+              "gemeinnützigkeit": 0,
+              "vereine entlasten": 0,
+              "sportförderung": 7
+            },
+            "Eigeneinnahmen und Kooperation der Vereine": {
+              "sponsoring": 0,
+              "mitgliedsbeiträge": 0,
+              "kooperationen von vereinen": 0,
+              "vereinsfusion": 0,
+              "schule und verein": 1
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 11,
+        "land": "ST",
+        "ursachen": {
+          "3701": {
+            "Sanierung und Neubau von Sportstätten fördern": {
+              "sportstätten": 2,
+              "sanierung sportstätten": 0,
+              "sporthallen": 0,
+              "sportstättenförderung": 1,
+              "sanierungsprogramm sport": 0,
+              "goldener plan": 0,
+              "schwimmbäder": 0,
+              "sportinfrastruktur": 2
+            },
+            "Bestand priorisieren und gemeinsam nutzen": {
+              "bestand priorisieren": 0,
+              "gemeinsame nutzung": 0,
+              "mehrfachnutzung von hallen": 0,
+              "interkommunale sportstätten": 0,
+              "hallenbelegung": 0
+            }
+          },
+          "3702": {
+            "Betriebskosten und Hallenentgelte fördern oder senken": {
+              "hallenentgelt": 0,
+              "nutzungsentgelt": 0,
+              "betriebskostenzuschuss": 0,
+              "energiekosten sportvereine": 0,
+              "kostenfreie hallennutzung": 0,
+              "hallenmiete": 0,
+              "entgeltfreie nutzung": 0
+            },
+            "Eigenverantwortung und Auslastung": {
+              "auslastung": 1,
+              "nutzungsgebühr": 0,
+              "eigenverantwortung": 5,
+              "kostensenkung": 0,
+              "wirtschaftlicher betrieb": 0
+            }
+          },
+          "3703": {
+            "Vereinsförderung und Entlastung des Ehrenamts": {
+              "vereinsförderung": 0,
+              "sportvereine": 4,
+              "ehrenamt im sport": 0,
+              "übungsleiterpauschale": 0,
+              "ehrenamtspauschale": 2,
+              "gemeinnützigkeit": 1,
+              "vereine entlasten": 0,
+              "sportförderung": 0
+            },
+            "Eigeneinnahmen und Kooperation der Vereine": {
+              "sponsoring": 0,
+              "mitgliedsbeiträge": 0,
+              "kooperationen von vereinen": 1,
+              "vereinsfusion": 0,
+              "schule und verein": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": null,
+        "ursachen": {
+          "3701": {
+            "Sanierung und Neubau von Sportstätten fördern": {
+              "sportstätten": 1,
+              "sanierung sportstätten": 0,
+              "sporthallen": 0,
+              "sportstättenförderung": 0,
+              "sanierungsprogramm sport": 0,
+              "goldener plan": 0,
+              "schwimmbäder": 0,
+              "sportinfrastruktur": 0
+            },
+            "Bestand priorisieren und gemeinsam nutzen": {
+              "bestand priorisieren": 0,
+              "gemeinsame nutzung": 0,
+              "mehrfachnutzung von hallen": 0,
+              "interkommunale sportstätten": 0,
+              "hallenbelegung": 0
+            }
+          },
+          "3702": {
+            "Betriebskosten und Hallenentgelte fördern oder senken": {
+              "hallenentgelt": 0,
+              "nutzungsentgelt": 0,
+              "betriebskostenzuschuss": 0,
+              "energiekosten sportvereine": 0,
+              "kostenfreie hallennutzung": 0,
+              "hallenmiete": 0,
+              "entgeltfreie nutzung": 0
+            },
+            "Eigenverantwortung und Auslastung": {
+              "auslastung": 0,
+              "nutzungsgebühr": 0,
+              "eigenverantwortung": 0,
+              "kostensenkung": 0,
+              "wirtschaftlicher betrieb": 0
+            }
+          },
+          "3703": {
+            "Vereinsförderung und Entlastung des Ehrenamts": {
+              "vereinsförderung": 0,
+              "sportvereine": 0,
+              "ehrenamt im sport": 0,
+              "übungsleiterpauschale": 0,
+              "ehrenamtspauschale": 0,
+              "gemeinnützigkeit": 3,
+              "vereine entlasten": 0,
+              "sportförderung": 0
+            },
+            "Eigeneinnahmen und Kooperation der Vereine": {
+              "sponsoring": 0,
+              "mitgliedsbeiträge": 0,
+              "kooperationen von vereinen": 0,
+              "vereinsfusion": 0,
+              "schule und verein": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": "BE",
+        "ursachen": {
+          "3701": {
+            "Sanierung und Neubau von Sportstätten fördern": {
+              "sportstätten": 5,
+              "sanierung sportstätten": 0,
+              "sporthallen": 0,
+              "sportstättenförderung": 0,
+              "sanierungsprogramm sport": 0,
+              "goldener plan": 0,
+              "schwimmbäder": 2,
+              "sportinfrastruktur": 1
+            },
+            "Bestand priorisieren und gemeinsam nutzen": {
+              "bestand priorisieren": 0,
+              "gemeinsame nutzung": 0,
+              "mehrfachnutzung von hallen": 0,
+              "interkommunale sportstätten": 0,
+              "hallenbelegung": 0
+            }
+          },
+          "3702": {
+            "Betriebskosten und Hallenentgelte fördern oder senken": {
+              "hallenentgelt": 0,
+              "nutzungsentgelt": 0,
+              "betriebskostenzuschuss": 0,
+              "energiekosten sportvereine": 0,
+              "kostenfreie hallennutzung": 0,
+              "hallenmiete": 0,
+              "entgeltfreie nutzung": 0
+            },
+            "Eigenverantwortung und Auslastung": {
+              "auslastung": 0,
+              "nutzungsgebühr": 1,
+              "eigenverantwortung": 0,
+              "kostensenkung": 0,
+              "wirtschaftlicher betrieb": 0
+            }
+          },
+          "3703": {
+            "Vereinsförderung und Entlastung des Ehrenamts": {
+              "vereinsförderung": 0,
+              "sportvereine": 5,
+              "ehrenamt im sport": 0,
+              "übungsleiterpauschale": 0,
+              "ehrenamtspauschale": 0,
+              "gemeinnützigkeit": 0,
+              "vereine entlasten": 0,
+              "sportförderung": 0
+            },
+            "Eigeneinnahmen und Kooperation der Vereine": {
+              "sponsoring": 0,
+              "mitgliedsbeiträge": 0,
+              "kooperationen von vereinen": 0,
+              "vereinsfusion": 0,
+              "schule und verein": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": "MV",
+        "ursachen": {
+          "3701": {
+            "Sanierung und Neubau von Sportstätten fördern": {
+              "sportstätten": 6,
+              "sanierung sportstätten": 0,
+              "sporthallen": 0,
+              "sportstättenförderung": 0,
+              "sanierungsprogramm sport": 0,
+              "goldener plan": 0,
+              "schwimmbäder": 1,
+              "sportinfrastruktur": 0
+            },
+            "Bestand priorisieren und gemeinsam nutzen": {
+              "bestand priorisieren": 0,
+              "gemeinsame nutzung": 0,
+              "mehrfachnutzung von hallen": 0,
+              "interkommunale sportstätten": 0,
+              "hallenbelegung": 0
+            }
+          },
+          "3702": {
+            "Betriebskosten und Hallenentgelte fördern oder senken": {
+              "hallenentgelt": 0,
+              "nutzungsentgelt": 0,
+              "betriebskostenzuschuss": 0,
+              "energiekosten sportvereine": 0,
+              "kostenfreie hallennutzung": 0,
+              "hallenmiete": 0,
+              "entgeltfreie nutzung": 0
+            },
+            "Eigenverantwortung und Auslastung": {
+              "auslastung": 0,
+              "nutzungsgebühr": 0,
+              "eigenverantwortung": 0,
+              "kostensenkung": 0,
+              "wirtschaftlicher betrieb": 0
+            }
+          },
+          "3703": {
+            "Vereinsförderung und Entlastung des Ehrenamts": {
+              "vereinsförderung": 0,
+              "sportvereine": 4,
+              "ehrenamt im sport": 0,
+              "übungsleiterpauschale": 0,
+              "ehrenamtspauschale": 0,
+              "gemeinnützigkeit": 0,
+              "vereine entlasten": 0,
+              "sportförderung": 0
+            },
+            "Eigeneinnahmen und Kooperation der Vereine": {
+              "sponsoring": 0,
+              "mitgliedsbeiträge": 0,
+              "kooperationen von vereinen": 0,
+              "vereinsfusion": 0,
+              "schule und verein": 1
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": "ST",
+        "ursachen": {
+          "3701": {
+            "Sanierung und Neubau von Sportstätten fördern": {
+              "sportstätten": 1,
+              "sanierung sportstätten": 0,
+              "sporthallen": 1,
+              "sportstättenförderung": 0,
+              "sanierungsprogramm sport": 0,
+              "goldener plan": 0,
+              "schwimmbäder": 1,
+              "sportinfrastruktur": 0
+            },
+            "Bestand priorisieren und gemeinsam nutzen": {
+              "bestand priorisieren": 0,
+              "gemeinsame nutzung": 0,
+              "mehrfachnutzung von hallen": 0,
+              "interkommunale sportstätten": 0,
+              "hallenbelegung": 0
+            }
+          },
+          "3702": {
+            "Betriebskosten und Hallenentgelte fördern oder senken": {
+              "hallenentgelt": 0,
+              "nutzungsentgelt": 0,
+              "betriebskostenzuschuss": 0,
+              "energiekosten sportvereine": 0,
+              "kostenfreie hallennutzung": 0,
+              "hallenmiete": 0,
+              "entgeltfreie nutzung": 0
+            },
+            "Eigenverantwortung und Auslastung": {
+              "auslastung": 0,
+              "nutzungsgebühr": 0,
+              "eigenverantwortung": 1,
+              "kostensenkung": 0,
+              "wirtschaftlicher betrieb": 0
+            }
+          },
+          "3703": {
+            "Vereinsförderung und Entlastung des Ehrenamts": {
+              "vereinsförderung": 0,
+              "sportvereine": 0,
+              "ehrenamt im sport": 0,
+              "übungsleiterpauschale": 0,
+              "ehrenamtspauschale": 0,
+              "gemeinnützigkeit": 0,
+              "vereine entlasten": 0,
+              "sportförderung": 0
+            },
+            "Eigeneinnahmen und Kooperation der Vereine": {
+              "sponsoring": 0,
+              "mitgliedsbeiträge": 0,
+              "kooperationen von vereinen": 0,
+              "vereinsfusion": 0,
+              "schule und verein": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": null,
+        "ursachen": {
+          "3701": {
+            "Sanierung und Neubau von Sportstätten fördern": {
+              "sportstätten": 2,
+              "sanierung sportstätten": 0,
+              "sporthallen": 0,
+              "sportstättenförderung": 0,
+              "sanierungsprogramm sport": 0,
+              "goldener plan": 0,
+              "schwimmbäder": 3,
+              "sportinfrastruktur": 0
+            },
+            "Bestand priorisieren und gemeinsam nutzen": {
+              "bestand priorisieren": 0,
+              "gemeinsame nutzung": 0,
+              "mehrfachnutzung von hallen": 0,
+              "interkommunale sportstätten": 0,
+              "hallenbelegung": 0
+            }
+          },
+          "3702": {
+            "Betriebskosten und Hallenentgelte fördern oder senken": {
+              "hallenentgelt": 0,
+              "nutzungsentgelt": 0,
+              "betriebskostenzuschuss": 0,
+              "energiekosten sportvereine": 0,
+              "kostenfreie hallennutzung": 0,
+              "hallenmiete": 0,
+              "entgeltfreie nutzung": 0
+            },
+            "Eigenverantwortung und Auslastung": {
+              "auslastung": 1,
+              "nutzungsgebühr": 0,
+              "eigenverantwortung": 0,
+              "kostensenkung": 0,
+              "wirtschaftlicher betrieb": 0
+            }
+          },
+          "3703": {
+            "Vereinsförderung und Entlastung des Ehrenamts": {
+              "vereinsförderung": 0,
+              "sportvereine": 1,
+              "ehrenamt im sport": 0,
+              "übungsleiterpauschale": 0,
+              "ehrenamtspauschale": 0,
+              "gemeinnützigkeit": 2,
+              "vereine entlasten": 0,
+              "sportförderung": 0
+            },
+            "Eigeneinnahmen und Kooperation der Vereine": {
+              "sponsoring": 1,
+              "mitgliedsbeiträge": 0,
+              "kooperationen von vereinen": 0,
+              "vereinsfusion": 0,
+              "schule und verein": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": "BE",
+        "ursachen": {
+          "3701": {
+            "Sanierung und Neubau von Sportstätten fördern": {
+              "sportstätten": 13,
+              "sanierung sportstätten": 0,
+              "sporthallen": 3,
+              "sportstättenförderung": 0,
+              "sanierungsprogramm sport": 0,
+              "goldener plan": 0,
+              "schwimmbäder": 5,
+              "sportinfrastruktur": 1
+            },
+            "Bestand priorisieren und gemeinsam nutzen": {
+              "bestand priorisieren": 0,
+              "gemeinsame nutzung": 0,
+              "mehrfachnutzung von hallen": 0,
+              "interkommunale sportstätten": 0,
+              "hallenbelegung": 0
+            }
+          },
+          "3702": {
+            "Betriebskosten und Hallenentgelte fördern oder senken": {
+              "hallenentgelt": 0,
+              "nutzungsentgelt": 0,
+              "betriebskostenzuschuss": 0,
+              "energiekosten sportvereine": 0,
+              "kostenfreie hallennutzung": 0,
+              "hallenmiete": 0,
+              "entgeltfreie nutzung": 0
+            },
+            "Eigenverantwortung und Auslastung": {
+              "auslastung": 0,
+              "nutzungsgebühr": 0,
+              "eigenverantwortung": 0,
+              "kostensenkung": 0,
+              "wirtschaftlicher betrieb": 0
+            }
+          },
+          "3703": {
+            "Vereinsförderung und Entlastung des Ehrenamts": {
+              "vereinsförderung": 0,
+              "sportvereine": 4,
+              "ehrenamt im sport": 0,
+              "übungsleiterpauschale": 0,
+              "ehrenamtspauschale": 0,
+              "gemeinnützigkeit": 1,
+              "vereine entlasten": 0,
+              "sportförderung": 0
+            },
+            "Eigeneinnahmen und Kooperation der Vereine": {
+              "sponsoring": 0,
+              "mitgliedsbeiträge": 0,
+              "kooperationen von vereinen": 0,
+              "vereinsfusion": 0,
+              "schule und verein": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": "MV",
+        "ursachen": {
+          "3701": {
+            "Sanierung und Neubau von Sportstätten fördern": {
+              "sportstätten": 1,
+              "sanierung sportstätten": 0,
+              "sporthallen": 0,
+              "sportstättenförderung": 0,
+              "sanierungsprogramm sport": 0,
+              "goldener plan": 0,
+              "schwimmbäder": 0,
+              "sportinfrastruktur": 0
+            },
+            "Bestand priorisieren und gemeinsam nutzen": {
+              "bestand priorisieren": 0,
+              "gemeinsame nutzung": 1,
+              "mehrfachnutzung von hallen": 0,
+              "interkommunale sportstätten": 0,
+              "hallenbelegung": 0
+            }
+          },
+          "3702": {
+            "Betriebskosten und Hallenentgelte fördern oder senken": {
+              "hallenentgelt": 0,
+              "nutzungsentgelt": 0,
+              "betriebskostenzuschuss": 0,
+              "energiekosten sportvereine": 0,
+              "kostenfreie hallennutzung": 0,
+              "hallenmiete": 0,
+              "entgeltfreie nutzung": 0
+            },
+            "Eigenverantwortung und Auslastung": {
+              "auslastung": 0,
+              "nutzungsgebühr": 0,
+              "eigenverantwortung": 0,
+              "kostensenkung": 0,
+              "wirtschaftlicher betrieb": 0
+            }
+          },
+          "3703": {
+            "Vereinsförderung und Entlastung des Ehrenamts": {
+              "vereinsförderung": 0,
+              "sportvereine": 0,
+              "ehrenamt im sport": 0,
+              "übungsleiterpauschale": 0,
+              "ehrenamtspauschale": 0,
+              "gemeinnützigkeit": 0,
+              "vereine entlasten": 0,
+              "sportförderung": 0
+            },
+            "Eigeneinnahmen und Kooperation der Vereine": {
+              "sponsoring": 0,
+              "mitgliedsbeiträge": 0,
+              "kooperationen von vereinen": 0,
+              "vereinsfusion": 0,
+              "schule und verein": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": "ST",
+        "ursachen": {
+          "3701": {
+            "Sanierung und Neubau von Sportstätten fördern": {
+              "sportstätten": 3,
+              "sanierung sportstätten": 0,
+              "sporthallen": 0,
+              "sportstättenförderung": 0,
+              "sanierungsprogramm sport": 0,
+              "goldener plan": 0,
+              "schwimmbäder": 1,
+              "sportinfrastruktur": 0
+            },
+            "Bestand priorisieren und gemeinsam nutzen": {
+              "bestand priorisieren": 0,
+              "gemeinsame nutzung": 0,
+              "mehrfachnutzung von hallen": 0,
+              "interkommunale sportstätten": 0,
+              "hallenbelegung": 0
+            }
+          },
+          "3702": {
+            "Betriebskosten und Hallenentgelte fördern oder senken": {
+              "hallenentgelt": 0,
+              "nutzungsentgelt": 0,
+              "betriebskostenzuschuss": 0,
+              "energiekosten sportvereine": 0,
+              "kostenfreie hallennutzung": 0,
+              "hallenmiete": 0,
+              "entgeltfreie nutzung": 0
+            },
+            "Eigenverantwortung und Auslastung": {
+              "auslastung": 0,
+              "nutzungsgebühr": 0,
+              "eigenverantwortung": 2,
+              "kostensenkung": 0,
+              "wirtschaftlicher betrieb": 1
+            }
+          },
+          "3703": {
+            "Vereinsförderung und Entlastung des Ehrenamts": {
+              "vereinsförderung": 0,
+              "sportvereine": 5,
+              "ehrenamt im sport": 1,
+              "übungsleiterpauschale": 0,
+              "ehrenamtspauschale": 1,
+              "gemeinnützigkeit": 0,
+              "vereine entlasten": 0,
+              "sportförderung": 2
+            },
+            "Eigeneinnahmen und Kooperation der Vereine": {
+              "sponsoring": 0,
+              "mitgliedsbeiträge": 0,
+              "kooperationen von vereinen": 0,
+              "vereinsfusion": 0,
+              "schule und verein": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": null,
+        "ursachen": {
+          "3701": {
+            "Sanierung und Neubau von Sportstätten fördern": {
+              "sportstätten": 0,
+              "sanierung sportstätten": 0,
+              "sporthallen": 0,
+              "sportstättenförderung": 0,
+              "sanierungsprogramm sport": 0,
+              "goldener plan": 0,
+              "schwimmbäder": 0,
+              "sportinfrastruktur": 0
+            },
+            "Bestand priorisieren und gemeinsam nutzen": {
+              "bestand priorisieren": 0,
+              "gemeinsame nutzung": 0,
+              "mehrfachnutzung von hallen": 0,
+              "interkommunale sportstätten": 0,
+              "hallenbelegung": 0
+            }
+          },
+          "3702": {
+            "Betriebskosten und Hallenentgelte fördern oder senken": {
+              "hallenentgelt": 0,
+              "nutzungsentgelt": 0,
+              "betriebskostenzuschuss": 0,
+              "energiekosten sportvereine": 0,
+              "kostenfreie hallennutzung": 0,
+              "hallenmiete": 0,
+              "entgeltfreie nutzung": 0
+            },
+            "Eigenverantwortung und Auslastung": {
+              "auslastung": 0,
+              "nutzungsgebühr": 0,
+              "eigenverantwortung": 2,
+              "kostensenkung": 0,
+              "wirtschaftlicher betrieb": 0
+            }
+          },
+          "3703": {
+            "Vereinsförderung und Entlastung des Ehrenamts": {
+              "vereinsförderung": 0,
+              "sportvereine": 0,
+              "ehrenamt im sport": 0,
+              "übungsleiterpauschale": 0,
+              "ehrenamtspauschale": 1,
+              "gemeinnützigkeit": 0,
+              "vereine entlasten": 0,
+              "sportförderung": 0
+            },
+            "Eigeneinnahmen und Kooperation der Vereine": {
+              "sponsoring": 0,
+              "mitgliedsbeiträge": 1,
+              "kooperationen von vereinen": 0,
+              "vereinsfusion": 0,
+              "schule und verein": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": "BE",
+        "ursachen": {
+          "3701": {
+            "Sanierung und Neubau von Sportstätten fördern": {
+              "sportstätten": 2,
+              "sanierung sportstätten": 0,
+              "sporthallen": 0,
+              "sportstättenförderung": 0,
+              "sanierungsprogramm sport": 0,
+              "goldener plan": 0,
+              "schwimmbäder": 0,
+              "sportinfrastruktur": 0
+            },
+            "Bestand priorisieren und gemeinsam nutzen": {
+              "bestand priorisieren": 0,
+              "gemeinsame nutzung": 0,
+              "mehrfachnutzung von hallen": 0,
+              "interkommunale sportstätten": 0,
+              "hallenbelegung": 0
+            }
+          },
+          "3702": {
+            "Betriebskosten und Hallenentgelte fördern oder senken": {
+              "hallenentgelt": 0,
+              "nutzungsentgelt": 0,
+              "betriebskostenzuschuss": 0,
+              "energiekosten sportvereine": 0,
+              "kostenfreie hallennutzung": 0,
+              "hallenmiete": 0,
+              "entgeltfreie nutzung": 0
+            },
+            "Eigenverantwortung und Auslastung": {
+              "auslastung": 1,
+              "nutzungsgebühr": 0,
+              "eigenverantwortung": 4,
+              "kostensenkung": 0,
+              "wirtschaftlicher betrieb": 0
+            }
+          },
+          "3703": {
+            "Vereinsförderung und Entlastung des Ehrenamts": {
+              "vereinsförderung": 0,
+              "sportvereine": 0,
+              "ehrenamt im sport": 0,
+              "übungsleiterpauschale": 0,
+              "ehrenamtspauschale": 0,
+              "gemeinnützigkeit": 1,
+              "vereine entlasten": 0,
+              "sportförderung": 0
+            },
+            "Eigeneinnahmen und Kooperation der Vereine": {
+              "sponsoring": 0,
+              "mitgliedsbeiträge": 0,
+              "kooperationen von vereinen": 0,
+              "vereinsfusion": 0,
+              "schule und verein": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": "MV",
+        "ursachen": {
+          "3701": {
+            "Sanierung und Neubau von Sportstätten fördern": {
+              "sportstätten": 6,
+              "sanierung sportstätten": 0,
+              "sporthallen": 1,
+              "sportstättenförderung": 0,
+              "sanierungsprogramm sport": 0,
+              "goldener plan": 0,
+              "schwimmbäder": 0,
+              "sportinfrastruktur": 0
+            },
+            "Bestand priorisieren und gemeinsam nutzen": {
+              "bestand priorisieren": 0,
+              "gemeinsame nutzung": 0,
+              "mehrfachnutzung von hallen": 0,
+              "interkommunale sportstätten": 0,
+              "hallenbelegung": 0
+            }
+          },
+          "3702": {
+            "Betriebskosten und Hallenentgelte fördern oder senken": {
+              "hallenentgelt": 0,
+              "nutzungsentgelt": 0,
+              "betriebskostenzuschuss": 0,
+              "energiekosten sportvereine": 0,
+              "kostenfreie hallennutzung": 0,
+              "hallenmiete": 0,
+              "entgeltfreie nutzung": 0
+            },
+            "Eigenverantwortung und Auslastung": {
+              "auslastung": 0,
+              "nutzungsgebühr": 0,
+              "eigenverantwortung": 20,
+              "kostensenkung": 0,
+              "wirtschaftlicher betrieb": 0
+            }
+          },
+          "3703": {
+            "Vereinsförderung und Entlastung des Ehrenamts": {
+              "vereinsförderung": 0,
+              "sportvereine": 3,
+              "ehrenamt im sport": 0,
+              "übungsleiterpauschale": 0,
+              "ehrenamtspauschale": 1,
+              "gemeinnützigkeit": 0,
+              "vereine entlasten": 0,
+              "sportförderung": 1
+            },
+            "Eigeneinnahmen und Kooperation der Vereine": {
+              "sponsoring": 1,
+              "mitgliedsbeiträge": 0,
+              "kooperationen von vereinen": 0,
+              "vereinsfusion": 0,
+              "schule und verein": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": "ST",
+        "ursachen": {
+          "3701": {
+            "Sanierung und Neubau von Sportstätten fördern": {
+              "sportstätten": 6,
+              "sanierung sportstätten": 0,
+              "sporthallen": 0,
+              "sportstättenförderung": 0,
+              "sanierungsprogramm sport": 0,
+              "goldener plan": 0,
+              "schwimmbäder": 0,
+              "sportinfrastruktur": 0
+            },
+            "Bestand priorisieren und gemeinsam nutzen": {
+              "bestand priorisieren": 0,
+              "gemeinsame nutzung": 0,
+              "mehrfachnutzung von hallen": 0,
+              "interkommunale sportstätten": 0,
+              "hallenbelegung": 0
+            }
+          },
+          "3702": {
+            "Betriebskosten und Hallenentgelte fördern oder senken": {
+              "hallenentgelt": 0,
+              "nutzungsentgelt": 0,
+              "betriebskostenzuschuss": 0,
+              "energiekosten sportvereine": 0,
+              "kostenfreie hallennutzung": 0,
+              "hallenmiete": 0,
+              "entgeltfreie nutzung": 0
+            },
+            "Eigenverantwortung und Auslastung": {
+              "auslastung": 0,
+              "nutzungsgebühr": 0,
+              "eigenverantwortung": 9,
+              "kostensenkung": 0,
+              "wirtschaftlicher betrieb": 1
+            }
+          },
+          "3703": {
+            "Vereinsförderung und Entlastung des Ehrenamts": {
+              "vereinsförderung": 0,
+              "sportvereine": 3,
+              "ehrenamt im sport": 0,
+              "übungsleiterpauschale": 0,
+              "ehrenamtspauschale": 0,
+              "gemeinnützigkeit": 1,
+              "vereine entlasten": 0,
+              "sportförderung": 0
+            },
+            "Eigeneinnahmen und Kooperation der Vereine": {
+              "sponsoring": 0,
+              "mitgliedsbeiträge": 0,
+              "kooperationen von vereinen": 0,
+              "vereinsfusion": 0,
+              "schule und verein": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": null,
+        "ursachen": {
+          "3701": {
+            "Sanierung und Neubau von Sportstätten fördern": {
+              "sportstätten": 0,
+              "sanierung sportstätten": 0,
+              "sporthallen": 0,
+              "sportstättenförderung": 0,
+              "sanierungsprogramm sport": 0,
+              "goldener plan": 0,
+              "schwimmbäder": 0,
+              "sportinfrastruktur": 0
+            },
+            "Bestand priorisieren und gemeinsam nutzen": {
+              "bestand priorisieren": 0,
+              "gemeinsame nutzung": 0,
+              "mehrfachnutzung von hallen": 0,
+              "interkommunale sportstätten": 0,
+              "hallenbelegung": 0
+            }
+          },
+          "3702": {
+            "Betriebskosten und Hallenentgelte fördern oder senken": {
+              "hallenentgelt": 0,
+              "nutzungsentgelt": 0,
+              "betriebskostenzuschuss": 0,
+              "energiekosten sportvereine": 0,
+              "kostenfreie hallennutzung": 0,
+              "hallenmiete": 0,
+              "entgeltfreie nutzung": 0
+            },
+            "Eigenverantwortung und Auslastung": {
+              "auslastung": 0,
+              "nutzungsgebühr": 0,
+              "eigenverantwortung": 7,
+              "kostensenkung": 0,
+              "wirtschaftlicher betrieb": 0
+            }
+          },
+          "3703": {
+            "Vereinsförderung und Entlastung des Ehrenamts": {
+              "vereinsförderung": 0,
+              "sportvereine": 0,
+              "ehrenamt im sport": 0,
+              "übungsleiterpauschale": 0,
+              "ehrenamtspauschale": 0,
+              "gemeinnützigkeit": 0,
+              "vereine entlasten": 0,
+              "sportförderung": 0
+            },
+            "Eigeneinnahmen und Kooperation der Vereine": {
+              "sponsoring": 0,
+              "mitgliedsbeiträge": 1,
+              "kooperationen von vereinen": 0,
+              "vereinsfusion": 0,
+              "schule und verein": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": "BE",
+        "ursachen": {
+          "3701": {
+            "Sanierung und Neubau von Sportstätten fördern": {
+              "sportstätten": 2,
+              "sanierung sportstätten": 0,
+              "sporthallen": 1,
+              "sportstättenförderung": 0,
+              "sanierungsprogramm sport": 0,
+              "goldener plan": 0,
+              "schwimmbäder": 0,
+              "sportinfrastruktur": 0
+            },
+            "Bestand priorisieren und gemeinsam nutzen": {
+              "bestand priorisieren": 0,
+              "gemeinsame nutzung": 0,
+              "mehrfachnutzung von hallen": 0,
+              "interkommunale sportstätten": 0,
+              "hallenbelegung": 0
+            }
+          },
+          "3702": {
+            "Betriebskosten und Hallenentgelte fördern oder senken": {
+              "hallenentgelt": 0,
+              "nutzungsentgelt": 0,
+              "betriebskostenzuschuss": 0,
+              "energiekosten sportvereine": 0,
+              "kostenfreie hallennutzung": 0,
+              "hallenmiete": 0,
+              "entgeltfreie nutzung": 0
+            },
+            "Eigenverantwortung und Auslastung": {
+              "auslastung": 0,
+              "nutzungsgebühr": 0,
+              "eigenverantwortung": 10,
+              "kostensenkung": 0,
+              "wirtschaftlicher betrieb": 0
+            }
+          },
+          "3703": {
+            "Vereinsförderung und Entlastung des Ehrenamts": {
+              "vereinsförderung": 0,
+              "sportvereine": 0,
+              "ehrenamt im sport": 0,
+              "übungsleiterpauschale": 0,
+              "ehrenamtspauschale": 0,
+              "gemeinnützigkeit": 0,
+              "vereine entlasten": 0,
+              "sportförderung": 0
+            },
+            "Eigeneinnahmen und Kooperation der Vereine": {
+              "sponsoring": 0,
+              "mitgliedsbeiträge": 1,
+              "kooperationen von vereinen": 0,
+              "vereinsfusion": 0,
+              "schule und verein": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": "MV",
+        "ursachen": {
+          "3701": {
+            "Sanierung und Neubau von Sportstätten fördern": {
+              "sportstätten": 3,
+              "sanierung sportstätten": 0,
+              "sporthallen": 0,
+              "sportstättenförderung": 0,
+              "sanierungsprogramm sport": 0,
+              "goldener plan": 0,
+              "schwimmbäder": 0,
+              "sportinfrastruktur": 2
+            },
+            "Bestand priorisieren und gemeinsam nutzen": {
+              "bestand priorisieren": 0,
+              "gemeinsame nutzung": 0,
+              "mehrfachnutzung von hallen": 0,
+              "interkommunale sportstätten": 0,
+              "hallenbelegung": 0
+            }
+          },
+          "3702": {
+            "Betriebskosten und Hallenentgelte fördern oder senken": {
+              "hallenentgelt": 0,
+              "nutzungsentgelt": 0,
+              "betriebskostenzuschuss": 0,
+              "energiekosten sportvereine": 0,
+              "kostenfreie hallennutzung": 0,
+              "hallenmiete": 0,
+              "entgeltfreie nutzung": 0
+            },
+            "Eigenverantwortung und Auslastung": {
+              "auslastung": 1,
+              "nutzungsgebühr": 0,
+              "eigenverantwortung": 7,
+              "kostensenkung": 0,
+              "wirtschaftlicher betrieb": 0
+            }
+          },
+          "3703": {
+            "Vereinsförderung und Entlastung des Ehrenamts": {
+              "vereinsförderung": 0,
+              "sportvereine": 1,
+              "ehrenamt im sport": 0,
+              "übungsleiterpauschale": 0,
+              "ehrenamtspauschale": 0,
+              "gemeinnützigkeit": 1,
+              "vereine entlasten": 0,
+              "sportförderung": 0
+            },
+            "Eigeneinnahmen und Kooperation der Vereine": {
+              "sponsoring": 0,
+              "mitgliedsbeiträge": 0,
+              "kooperationen von vereinen": 0,
+              "vereinsfusion": 0,
+              "schule und verein": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": "ST",
+        "ursachen": {
+          "3701": {
+            "Sanierung und Neubau von Sportstätten fördern": {
+              "sportstätten": 0,
+              "sanierung sportstätten": 0,
+              "sporthallen": 0,
+              "sportstättenförderung": 0,
+              "sanierungsprogramm sport": 0,
+              "goldener plan": 0,
+              "schwimmbäder": 1,
+              "sportinfrastruktur": 0
+            },
+            "Bestand priorisieren und gemeinsam nutzen": {
+              "bestand priorisieren": 0,
+              "gemeinsame nutzung": 0,
+              "mehrfachnutzung von hallen": 0,
+              "interkommunale sportstätten": 0,
+              "hallenbelegung": 0
+            }
+          },
+          "3702": {
+            "Betriebskosten und Hallenentgelte fördern oder senken": {
+              "hallenentgelt": 0,
+              "nutzungsentgelt": 0,
+              "betriebskostenzuschuss": 0,
+              "energiekosten sportvereine": 0,
+              "kostenfreie hallennutzung": 0,
+              "hallenmiete": 0,
+              "entgeltfreie nutzung": 0
+            },
+            "Eigenverantwortung und Auslastung": {
+              "auslastung": 3,
+              "nutzungsgebühr": 0,
+              "eigenverantwortung": 4,
+              "kostensenkung": 1,
+              "wirtschaftlicher betrieb": 1
+            }
+          },
+          "3703": {
+            "Vereinsförderung und Entlastung des Ehrenamts": {
+              "vereinsförderung": 3,
+              "sportvereine": 0,
+              "ehrenamt im sport": 0,
+              "übungsleiterpauschale": 1,
+              "ehrenamtspauschale": 0,
+              "gemeinnützigkeit": 0,
+              "vereine entlasten": 0,
+              "sportförderung": 0
+            },
+            "Eigeneinnahmen und Kooperation der Vereine": {
+              "sponsoring": 0,
+              "mitgliedsbeiträge": 2,
+              "kooperationen von vereinen": 0,
+              "vereinsfusion": 0,
+              "schule und verein": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": null,
+        "ursachen": {
+          "3701": {
+            "Sanierung und Neubau von Sportstätten fördern": {
+              "sportstätten": 2,
+              "sanierung sportstätten": 0,
+              "sporthallen": 0,
+              "sportstättenförderung": 0,
+              "sanierungsprogramm sport": 0,
+              "goldener plan": 0,
+              "schwimmbäder": 5,
+              "sportinfrastruktur": 0
+            },
+            "Bestand priorisieren und gemeinsam nutzen": {
+              "bestand priorisieren": 0,
+              "gemeinsame nutzung": 0,
+              "mehrfachnutzung von hallen": 0,
+              "interkommunale sportstätten": 0,
+              "hallenbelegung": 0
+            }
+          },
+          "3702": {
+            "Betriebskosten und Hallenentgelte fördern oder senken": {
+              "hallenentgelt": 0,
+              "nutzungsentgelt": 0,
+              "betriebskostenzuschuss": 0,
+              "energiekosten sportvereine": 0,
+              "kostenfreie hallennutzung": 0,
+              "hallenmiete": 0,
+              "entgeltfreie nutzung": 0
+            },
+            "Eigenverantwortung und Auslastung": {
+              "auslastung": 0,
+              "nutzungsgebühr": 0,
+              "eigenverantwortung": 0,
+              "kostensenkung": 0,
+              "wirtschaftlicher betrieb": 0
+            }
+          },
+          "3703": {
+            "Vereinsförderung und Entlastung des Ehrenamts": {
+              "vereinsförderung": 0,
+              "sportvereine": 1,
+              "ehrenamt im sport": 0,
+              "übungsleiterpauschale": 0,
+              "ehrenamtspauschale": 0,
+              "gemeinnützigkeit": 4,
+              "vereine entlasten": 0,
+              "sportförderung": 1
+            },
+            "Eigeneinnahmen und Kooperation der Vereine": {
+              "sponsoring": 2,
+              "mitgliedsbeiträge": 0,
+              "kooperationen von vereinen": 0,
+              "vereinsfusion": 0,
+              "schule und verein": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": "BE",
+        "ursachen": {
+          "3701": {
+            "Sanierung und Neubau von Sportstätten fördern": {
+              "sportstätten": 9,
+              "sanierung sportstätten": 0,
+              "sporthallen": 5,
+              "sportstättenförderung": 0,
+              "sanierungsprogramm sport": 0,
+              "goldener plan": 0,
+              "schwimmbäder": 3,
+              "sportinfrastruktur": 0
+            },
+            "Bestand priorisieren und gemeinsam nutzen": {
+              "bestand priorisieren": 0,
+              "gemeinsame nutzung": 0,
+              "mehrfachnutzung von hallen": 0,
+              "interkommunale sportstätten": 0,
+              "hallenbelegung": 0
+            }
+          },
+          "3702": {
+            "Betriebskosten und Hallenentgelte fördern oder senken": {
+              "hallenentgelt": 0,
+              "nutzungsentgelt": 0,
+              "betriebskostenzuschuss": 0,
+              "energiekosten sportvereine": 0,
+              "kostenfreie hallennutzung": 0,
+              "hallenmiete": 0,
+              "entgeltfreie nutzung": 0
+            },
+            "Eigenverantwortung und Auslastung": {
+              "auslastung": 1,
+              "nutzungsgebühr": 3,
+              "eigenverantwortung": 1,
+              "kostensenkung": 1,
+              "wirtschaftlicher betrieb": 0
+            }
+          },
+          "3703": {
+            "Vereinsförderung und Entlastung des Ehrenamts": {
+              "vereinsförderung": 0,
+              "sportvereine": 11,
+              "ehrenamt im sport": 0,
+              "übungsleiterpauschale": 1,
+              "ehrenamtspauschale": 0,
+              "gemeinnützigkeit": 2,
+              "vereine entlasten": 0,
+              "sportförderung": 0
+            },
+            "Eigeneinnahmen und Kooperation der Vereine": {
+              "sponsoring": 0,
+              "mitgliedsbeiträge": 0,
+              "kooperationen von vereinen": 0,
+              "vereinsfusion": 0,
+              "schule und verein": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": "MV",
+        "ursachen": {
+          "3701": {
+            "Sanierung und Neubau von Sportstätten fördern": {
+              "sportstätten": 0,
+              "sanierung sportstätten": 0,
+              "sporthallen": 0,
+              "sportstättenförderung": 0,
+              "sanierungsprogramm sport": 0,
+              "goldener plan": 0,
+              "schwimmbäder": 0,
+              "sportinfrastruktur": 0
+            },
+            "Bestand priorisieren und gemeinsam nutzen": {
+              "bestand priorisieren": 0,
+              "gemeinsame nutzung": 0,
+              "mehrfachnutzung von hallen": 0,
+              "interkommunale sportstätten": 0,
+              "hallenbelegung": 0
+            }
+          },
+          "3702": {
+            "Betriebskosten und Hallenentgelte fördern oder senken": {
+              "hallenentgelt": 0,
+              "nutzungsentgelt": 0,
+              "betriebskostenzuschuss": 0,
+              "energiekosten sportvereine": 0,
+              "kostenfreie hallennutzung": 0,
+              "hallenmiete": 0,
+              "entgeltfreie nutzung": 0
+            },
+            "Eigenverantwortung und Auslastung": {
+              "auslastung": 0,
+              "nutzungsgebühr": 0,
+              "eigenverantwortung": 0,
+              "kostensenkung": 0,
+              "wirtschaftlicher betrieb": 0
+            }
+          },
+          "3703": {
+            "Vereinsförderung und Entlastung des Ehrenamts": {
+              "vereinsförderung": 0,
+              "sportvereine": 1,
+              "ehrenamt im sport": 0,
+              "übungsleiterpauschale": 0,
+              "ehrenamtspauschale": 0,
+              "gemeinnützigkeit": 0,
+              "vereine entlasten": 0,
+              "sportförderung": 1
+            },
+            "Eigeneinnahmen und Kooperation der Vereine": {
+              "sponsoring": 0,
+              "mitgliedsbeiträge": 0,
+              "kooperationen von vereinen": 0,
+              "vereinsfusion": 0,
+              "schule und verein": 1
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": "ST",
+        "ursachen": {
+          "3701": {
+            "Sanierung und Neubau von Sportstätten fördern": {
+              "sportstätten": 9,
+              "sanierung sportstätten": 0,
+              "sporthallen": 0,
+              "sportstättenförderung": 0,
+              "sanierungsprogramm sport": 0,
+              "goldener plan": 0,
+              "schwimmbäder": 3,
+              "sportinfrastruktur": 0
+            },
+            "Bestand priorisieren und gemeinsam nutzen": {
+              "bestand priorisieren": 0,
+              "gemeinsame nutzung": 0,
+              "mehrfachnutzung von hallen": 0,
+              "interkommunale sportstätten": 0,
+              "hallenbelegung": 0
+            }
+          },
+          "3702": {
+            "Betriebskosten und Hallenentgelte fördern oder senken": {
+              "hallenentgelt": 0,
+              "nutzungsentgelt": 0,
+              "betriebskostenzuschuss": 0,
+              "energiekosten sportvereine": 0,
+              "kostenfreie hallennutzung": 0,
+              "hallenmiete": 0,
+              "entgeltfreie nutzung": 0
+            },
+            "Eigenverantwortung und Auslastung": {
+              "auslastung": 0,
+              "nutzungsgebühr": 0,
+              "eigenverantwortung": 3,
+              "kostensenkung": 0,
+              "wirtschaftlicher betrieb": 1
+            }
+          },
+          "3703": {
+            "Vereinsförderung und Entlastung des Ehrenamts": {
+              "vereinsförderung": 0,
+              "sportvereine": 3,
+              "ehrenamt im sport": 1,
+              "übungsleiterpauschale": 0,
+              "ehrenamtspauschale": 0,
+              "gemeinnützigkeit": 0,
+              "vereine entlasten": 0,
+              "sportförderung": 0
+            },
+            "Eigeneinnahmen und Kooperation der Vereine": {
+              "sponsoring": 0,
+              "mitgliedsbeiträge": 1,
+              "kooperationen von vereinen": 0,
+              "vereinsfusion": 0,
+              "schule und verein": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": null,
+        "ursachen": {
+          "3701": {
+            "Sanierung und Neubau von Sportstätten fördern": {
+              "sportstätten": 1,
+              "sanierung sportstätten": 0,
+              "sporthallen": 0,
+              "sportstättenförderung": 0,
+              "sanierungsprogramm sport": 0,
+              "goldener plan": 0,
+              "schwimmbäder": 0,
+              "sportinfrastruktur": 0
+            },
+            "Bestand priorisieren und gemeinsam nutzen": {
+              "bestand priorisieren": 0,
+              "gemeinsame nutzung": 0,
+              "mehrfachnutzung von hallen": 0,
+              "interkommunale sportstätten": 0,
+              "hallenbelegung": 0
+            }
+          },
+          "3702": {
+            "Betriebskosten und Hallenentgelte fördern oder senken": {
+              "hallenentgelt": 0,
+              "nutzungsentgelt": 0,
+              "betriebskostenzuschuss": 0,
+              "energiekosten sportvereine": 0,
+              "kostenfreie hallennutzung": 0,
+              "hallenmiete": 0,
+              "entgeltfreie nutzung": 0
+            },
+            "Eigenverantwortung und Auslastung": {
+              "auslastung": 0,
+              "nutzungsgebühr": 0,
+              "eigenverantwortung": 0,
+              "kostensenkung": 0,
+              "wirtschaftlicher betrieb": 0
+            }
+          },
+          "3703": {
+            "Vereinsförderung und Entlastung des Ehrenamts": {
+              "vereinsförderung": 0,
+              "sportvereine": 0,
+              "ehrenamt im sport": 0,
+              "übungsleiterpauschale": 0,
+              "ehrenamtspauschale": 0,
+              "gemeinnützigkeit": 1,
+              "vereine entlasten": 0,
+              "sportförderung": 0
+            },
+            "Eigeneinnahmen und Kooperation der Vereine": {
+              "sponsoring": 0,
+              "mitgliedsbeiträge": 0,
+              "kooperationen von vereinen": 0,
+              "vereinsfusion": 0,
+              "schule und verein": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": "BE",
+        "ursachen": {
+          "3701": {
+            "Sanierung und Neubau von Sportstätten fördern": {
+              "sportstätten": 9,
+              "sanierung sportstätten": 0,
+              "sporthallen": 1,
+              "sportstättenförderung": 0,
+              "sanierungsprogramm sport": 0,
+              "goldener plan": 0,
+              "schwimmbäder": 1,
+              "sportinfrastruktur": 2
+            },
+            "Bestand priorisieren und gemeinsam nutzen": {
+              "bestand priorisieren": 0,
+              "gemeinsame nutzung": 0,
+              "mehrfachnutzung von hallen": 0,
+              "interkommunale sportstätten": 0,
+              "hallenbelegung": 0
+            }
+          },
+          "3702": {
+            "Betriebskosten und Hallenentgelte fördern oder senken": {
+              "hallenentgelt": 0,
+              "nutzungsentgelt": 0,
+              "betriebskostenzuschuss": 0,
+              "energiekosten sportvereine": 0,
+              "kostenfreie hallennutzung": 0,
+              "hallenmiete": 0,
+              "entgeltfreie nutzung": 0
+            },
+            "Eigenverantwortung und Auslastung": {
+              "auslastung": 0,
+              "nutzungsgebühr": 0,
+              "eigenverantwortung": 0,
+              "kostensenkung": 0,
+              "wirtschaftlicher betrieb": 0
+            }
+          },
+          "3703": {
+            "Vereinsförderung und Entlastung des Ehrenamts": {
+              "vereinsförderung": 0,
+              "sportvereine": 1,
+              "ehrenamt im sport": 0,
+              "übungsleiterpauschale": 0,
+              "ehrenamtspauschale": 0,
+              "gemeinnützigkeit": 2,
+              "vereine entlasten": 0,
+              "sportförderung": 0
+            },
+            "Eigeneinnahmen und Kooperation der Vereine": {
+              "sponsoring": 0,
+              "mitgliedsbeiträge": 1,
+              "kooperationen von vereinen": 0,
+              "vereinsfusion": 0,
+              "schule und verein": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": "MV",
+        "ursachen": {
+          "3701": {
+            "Sanierung und Neubau von Sportstätten fördern": {
+              "sportstätten": 0,
+              "sanierung sportstätten": 0,
+              "sporthallen": 1,
+              "sportstättenförderung": 0,
+              "sanierungsprogramm sport": 0,
+              "goldener plan": 0,
+              "schwimmbäder": 1,
+              "sportinfrastruktur": 0
+            },
+            "Bestand priorisieren und gemeinsam nutzen": {
+              "bestand priorisieren": 0,
+              "gemeinsame nutzung": 0,
+              "mehrfachnutzung von hallen": 0,
+              "interkommunale sportstätten": 0,
+              "hallenbelegung": 0
+            }
+          },
+          "3702": {
+            "Betriebskosten und Hallenentgelte fördern oder senken": {
+              "hallenentgelt": 0,
+              "nutzungsentgelt": 0,
+              "betriebskostenzuschuss": 0,
+              "energiekosten sportvereine": 0,
+              "kostenfreie hallennutzung": 0,
+              "hallenmiete": 0,
+              "entgeltfreie nutzung": 0
+            },
+            "Eigenverantwortung und Auslastung": {
+              "auslastung": 0,
+              "nutzungsgebühr": 0,
+              "eigenverantwortung": 0,
+              "kostensenkung": 0,
+              "wirtschaftlicher betrieb": 0
+            }
+          },
+          "3703": {
+            "Vereinsförderung und Entlastung des Ehrenamts": {
+              "vereinsförderung": 0,
+              "sportvereine": 1,
+              "ehrenamt im sport": 0,
+              "übungsleiterpauschale": 0,
+              "ehrenamtspauschale": 0,
+              "gemeinnützigkeit": 0,
+              "vereine entlasten": 0,
+              "sportförderung": 0
+            },
+            "Eigeneinnahmen und Kooperation der Vereine": {
+              "sponsoring": 0,
+              "mitgliedsbeiträge": 0,
+              "kooperationen von vereinen": 0,
+              "vereinsfusion": 0,
+              "schule und verein": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": "ST",
+        "ursachen": {
+          "3701": {
+            "Sanierung und Neubau von Sportstätten fördern": {
+              "sportstätten": 3,
+              "sanierung sportstätten": 0,
+              "sporthallen": 0,
+              "sportstättenförderung": 0,
+              "sanierungsprogramm sport": 0,
+              "goldener plan": 0,
+              "schwimmbäder": 1,
+              "sportinfrastruktur": 0
+            },
+            "Bestand priorisieren und gemeinsam nutzen": {
+              "bestand priorisieren": 0,
+              "gemeinsame nutzung": 1,
+              "mehrfachnutzung von hallen": 0,
+              "interkommunale sportstätten": 0,
+              "hallenbelegung": 0
+            }
+          },
+          "3702": {
+            "Betriebskosten und Hallenentgelte fördern oder senken": {
+              "hallenentgelt": 0,
+              "nutzungsentgelt": 0,
+              "betriebskostenzuschuss": 0,
+              "energiekosten sportvereine": 0,
+              "kostenfreie hallennutzung": 0,
+              "hallenmiete": 0,
+              "entgeltfreie nutzung": 0
+            },
+            "Eigenverantwortung und Auslastung": {
+              "auslastung": 0,
+              "nutzungsgebühr": 0,
+              "eigenverantwortung": 0,
+              "kostensenkung": 0,
+              "wirtschaftlicher betrieb": 2
+            }
+          },
+          "3703": {
+            "Vereinsförderung und Entlastung des Ehrenamts": {
+              "vereinsförderung": 0,
+              "sportvereine": 2,
+              "ehrenamt im sport": 1,
+              "übungsleiterpauschale": 0,
+              "ehrenamtspauschale": 2,
+              "gemeinnützigkeit": 3,
+              "vereine entlasten": 0,
+              "sportförderung": 1
+            },
+            "Eigeneinnahmen und Kooperation der Vereine": {
+              "sponsoring": 0,
+              "mitgliedsbeiträge": 0,
+              "kooperationen von vereinen": 0,
+              "vereinsfusion": 0,
+              "schule und verein": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}

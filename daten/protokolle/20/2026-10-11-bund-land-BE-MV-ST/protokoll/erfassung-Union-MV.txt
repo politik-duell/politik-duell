@@ -1,0 +1,82 @@
+{
+  "partei_id": 11,
+  "land": "MV",
+  "massnahmen": [
+    {
+      "beschreibung": "Modellprojekt für mobile Kinder- und Jugendzentren im ländlichen Raum, um die Erreichbarkeit der Angebote zu verbessern",
+      "ursachen_ids": [2001],
+      "buendel": "Angebote und Räume für Jugendliche ausbauen",
+      "zitat": "Mit der Durchführung eines Modellprojektes für mobile Kinder- und Jugendzentren im ländlichen Raum wollen wir die Erreichbarkeit dieser Angebote verbessern.",
+      "seite": 97
+    },
+    {
+      "beschreibung": "Landesprogramm zur Stärkung der Jugend- und Straßensozialarbeit, um auf neue Problemlagen niedrigschwellig zu reagieren",
+      "ursachen_ids": [2001],
+      "zitat": "Durch ein Landesprogramm zur Stärkung der Jugend- und Straßensozialarbeit soll niedrigschwellig auf neue Problemlagen und Herausforderungen reagiert werden.",
+      "seite": 97
+    },
+    {
+      "beschreibung": "Förderung lokaler Kulturorte und Einrichtungen, darunter Jugendclubs und mobile Clubs",
+      "ursachen_ids": [],
+      "ursachen_offen": [2001],
+      "zitat": "Wir werden lokale Kulturorte und Einrichtungen flächendeckend und verlässlich fördern. Dazu gehören Dorfkirchen und Kirchensanierungen, Bibliotheken, Musikschulen, Vereinshäuser, Jugendclubs, mobile Clubs, Heimatstuben sowie lokale Festivals.",
+      "seite": 129
+    },
+    {
+      "beschreibung": "Rechtliche Hürden abbauen, damit Senioren- und Jugendarbeit gemeinsam gefördert werden können",
+      "ursachen_ids": [],
+      "ursachen_offen": [2001],
+      "zitat": "Zudem wollen wir rechtliche Hürden abbauen, um eine gemeinsame Mischförderung von Senioren- und Jugendarbeit zu ermöglichen.",
+      "seite": 98
+    },
+    {
+      "beschreibung": "Mehr Polizei, höherer Kontrolldruck sowie wirksamere Platzverweise und Aufenthaltsverbote im öffentlichen Raum",
+      "ursachen_ids": [],
+      "ursachen_offen": [2003],
+      "zitat": "Wir sorgen für mehr Sicherheit und Ordnung im öffentlichen Raum, durch mehr Polizei in den Innenstädten und an Kriminalitätsschwerpunkten, höheren Kontrolldruck sowie wirksamere Platzverweise und Aufenthaltsverbote.",
+      "seite": 31
+    },
+    {
+      "beschreibung": "Entschiedeneres Vorgehen gegen Vermüllung, Graffiti und Störungen im öffentlichen Raum, mit härteren Sanktionen",
+      "ursachen_ids": [],
+      "ursachen_offen": [2003],
+      "zitat": "Gemeinsam mit den Kommunen werden wir wesentlich entschiedener gegen Vermüllung, Graffiti und Störungen im öffentlichen Raum vorgehen. […] Dabei stehen wir ausdrücklich auch für mehr und härtere Sanktionierungen.",
+      "seite": 32
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 2001, "name": "Jugend- und Straßensozialarbeit fördern", "seite": 97 },
+    { "ursache": 2001, "name": "Lokale Kulturorte und Jugendclubs fördern", "seite": 129 },
+    { "ursache": 2001, "name": "Rechtliche Hürden für gemeinsame Förderung abbauen", "seite": 98 },
+    { "ursache": 2003, "name": "Platzverweise und Aufenthaltsverbote", "seite": 31 },
+    { "ursache": 2003, "name": "Sanktionen gegen Störungen im öffentlichen Raum", "seite": 32 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "Straßensozialarbeit", "ursache": 2001, "richtung": "Förderung offener Jugendarbeit" }
+  ]
+}
+
+Protokoll (Thema 20 „Freizeitangebote und Treffpunkte für Jugendliche“, Union MV, Textdatei 139 S.)
+
+Gelesen: Inhaltsverzeichnis (S. 3–4); Kapitel G. Familienland, I. Kinder, Jugend, Familie und Senioren (S. 96–98), II. Ehrenamtliches Engagement (S. 98–99), III. Teilhabe (S. 99–100) bis S. 101; Kapitel J. Kulturland, „Kultur in die Fläche“ (S. 128–129); Kapitel F.III ländlicher Raum (S. 122–123); Kapitel B. Sicherheitsland, Punkte 8–12 (S. 30–32); Grep-Treffer auf S. 22, 26, 35, 42, 121 gesichtet.
+
+Maßnahmen:
+- S. 97: mobile Kinder- und Jugendzentren (Modellprojekt, Bündel 2001) und Straßensozialarbeit (Landesprogramm). Straßensozialarbeit ist ein eigenes Landesprogramm; im Bündel „Angebote und Räume ausbauen“ nur die Modellprojekt-Zusage erfasst (konkreter). Weitere gleichartige Stelle: keine.
+- S. 129 (Bündel-frei, Grenzfall 2001): Kultur-Förderung nennt Jugendclubs. Wegen der Regel zu Clubs (R2) als offen erfasst.
+- S. 98: rechtliche Hürden für Mischförderung Senioren-/Jugendarbeit (offen 2001).
+- S. 31 und S. 32 (offen 2003): allgemeine Ordnungs- und Sanktionszusagen für den öffentlichen Raum, ohne ausdrücklichen Jugendbezug. Grenzfall; im Zweifel aufgenommen.
+
+Nicht erfasst:
+- S. 97: „Mit der Prüfung eines landesweiten Kulturtickets für Jugendliche“ – Prüfauftrag; Ursache 2002 nicht im Auftrag.
+- S. 97: „Mit der Prüfung … Familienkarte M-V“ – Prüfauftrag, Ursache 2002 nicht im Auftrag.
+- S. 97: „Mobilität von Jugendlichen im ländlichen Raum … Dafür prüfen wir …“ – Prüfauftrag, kein Freizeitbezug.
+- S. 96–97: Kinder- und Familienzentren, Geburtshilfe, Childhood-Häuser, Freiwilligendienste, psychotherapeutische Versorgung – kein Freizeitbezug.
+- S. 97–99: Ehrenamt im Sport, Führerschein- und GEMA-Zuschüsse, Ehrenamtsanrechnung auf Wartesemester – Ehrenamt bzw. Sport, nicht Freizeitangebote für Jugendliche (R2).
+- S. 123: ILE-Entwicklungsprogramme mit „Freizeitangebote“ – kein Jugendbezug im Zitat (R2).
+- S. 129–130: „Club-Angebote“ und Clubsterben – Clubs als Veranstaltungsorte, gehören zu anderen Themen (R2).
+- S. 26–27, 42, 6: Videobeobachtung in Angsträumen – Sicherheit, kein Nutzungskonflikt mit Jugendlichen.
+
+Bündel ohne Maßnahme: „Selbstorganisation und Mehrfachnutzung von Räumen“ (2001) – keine Fundstelle gefunden, Kapitel Familienland und Kultur gelesen. Bündel „Zugang zu öffentlichem Raum für Jugendliche ermöglichen“ (2003) – nur Tourismus-Fundstelle S. 22 („Aufenthaltsqualität“, Tourismuswirtschaft), nicht erfasst. Bündel „Lärm mindern und Ruhe schützen“ (2003) – keine Treffer im Text. Bündel „Nutzungen abstimmen und vermitteln“ (2003) – S. 121 nur Windenergie/Anwohnende, nicht erfasst.
+
+Seiten ohne Text: 1 und 139 (Titel-/Rückseiten), keine Rolle.
+Stand im PDF: kein abweichender Stand erkennbar (Auftrag: 2026-06-05).
