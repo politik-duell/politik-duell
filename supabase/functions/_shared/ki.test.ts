@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest'
 import { PARTEIEN, THEMEN, URSACHEN } from '../../../src/data/mock'
 import {
   antwortAusAuswahl,
+  gestuetzt,
   bereinigeAntwort,
   bereinigeInstrument,
   EingabeFehler,
@@ -96,14 +97,55 @@ describe('bereinigeAntwort', () => {
     expect(b.stichwort).toBe('Die Miete steigt')
   })
 
-  it('übernimmt eine gültige Zuordnung', () => {
-    const a = bereinige({ typ: 'problem', thema_id: 2, ursachen_ids: [202], zusammenfassung: 'Miete steigt stark.' })
-    expect(a).toMatchObject({ typ: 'problem', thema_id: 2, ursachen_ids: [202] })
+  const miete = [spieler('Meine Miete wird jedes Jahr erhöht, und eine neue Wohnung finde ich nicht.')]
+
+  it('übernimmt eine gültige Zuordnung mit den Wörtern, die sie stützen', () => {
+    const a = bereinige(
+      { typ: 'problem', thema_id: 2, ursachen_ids: [202], ursachen_belege: { 202: 'Miete wird jedes Jahr erhöht' }, zusammenfassung: 'Miete steigt stark.' },
+      miete,
+    )
+    expect(a).toMatchObject({ typ: 'problem', thema_id: 2, ursachen_ids: [202], ursachen_belege: { 202: 'Miete wird jedes Jahr erhöht' } })
   })
 
   it('verwirft Ursachen, die nicht zum Thema gehören', () => {
-    const a = bereinige({ typ: 'problem', thema_id: 2, ursachen_ids: [202, 101, 999], zusammenfassung: 'x' })
+    const a = bereinige(
+      { typ: 'problem', thema_id: 2, ursachen_ids: [202, 101, 999], ursachen_belege: { 202: 'Miete erhöht', 101: 'Miete', 999: 'Wohnung' }, zusammenfassung: 'x' },
+      miete,
+    )
     expect(a.ursachen_ids).toEqual([202])
+  })
+
+  it('verwirft Ursachen ohne Anhalt in der Schilderung (kein Beleg oder Wörter, die nicht gesagt wurden)', () => {
+    const a = bereinige(
+      { typ: 'problem', thema_id: 2, ursachen_ids: [201, 202, 203], ursachen_belege: { 202: 'Miete erhöht', 203: 'Baukosten steigen stark' }, zusammenfassung: 'x' },
+      miete,
+    )
+    expect(a.ursachen_ids).toEqual([202])
+    // Ohne gestützte Ursache: Nachfrage mit Ursachen zum Antippen statt vorsorglicher Zuordnung.
+    const b = bereinige({ typ: 'problem', thema_id: 2, ursachen_ids: [201, 202], zusammenfassung: 'x' }, miete)
+    expect(b).toMatchObject({ ursachen_ids: [], thema_id: 2, nachfrage: NACHFRAGE_URSACHE })
+  })
+
+  it('lässt dieselben Wörter nur eine Ursache stützen', () => {
+    const a = bereinige(
+      { typ: 'problem', thema_id: 2, ursachen_ids: [201, 202], ursachen_belege: { 201: 'neue Wohnung finde ich nicht', 202: 'Neue Wohnung finde ich nicht!' }, zusammenfassung: 'x' },
+      miete,
+    )
+    expect(a.ursachen_ids).toEqual([201])
+  })
+
+  it('ordnet höchstens drei Ursachen zu, in der Reihenfolge der KI', () => {
+    const text = 'Seit mein Vater im Heim ist, fehlt Personal, der Eigenanteil steigt, ich pflege die Mutter zu Hause und es werden immer mehr Pflegebedürftige.'
+    const a = bereinige(
+      {
+        typ: 'problem', thema_id: 10, ursachen_ids: [1004, 1001, 1002, 1003],
+        ursachen_belege: { 1001: 'fehlt Personal', 1002: 'Eigenanteil steigt', 1003: 'immer mehr Pflegebedürftige', 1004: 'pflege die Mutter zu Hause' },
+        zusammenfassung: 'x',
+      },
+      [spieler(text)],
+    )
+    expect(a.ursachen_ids).toEqual([1004, 1001, 1002])
+    expect(Object.keys(a.ursachen_belege!)).toHaveLength(3)
   })
 
   it('fragt nach, statt ohne erkennbare Ursache alle Ursachen zu werten', () => {
@@ -310,17 +352,34 @@ describe('pruefeAnfrage', () => {
   })
 })
 
+describe('gestuetzt', () => {
+  it('erkennt Wörter aus der Schilderung, auch gebeugt', () => {
+    expect(gestuetzt('Miete wird jedes Jahr erhöht', ['Meine Miete erhöhen sie jedes Jahr.'])).toBe(true)
+    expect(gestuetzt('Mieten steigen', ['Die Miete steigt.'])).toBe(true)
+  })
+  it('lehnt leere oder fremde Wörter ab', () => {
+    expect(gestuetzt('', ['Miete'])).toBe(false)
+    expect(gestuetzt('laufender Mietvertrag wird teurer', ['Ich suche eine Wohnung, alles ist zu teuer.'])).toBe(false)
+  })
+})
+
 describe('antwortAusAuswahl', () => {
   it('wertet die angetippten Ursachen wie eine Zuordnung der KI', () => {
     const a = antwortAusAuswahl({ thema_id: 2, ursachen_ids: [202, 201] }, THEMEN, URSACHEN)
     expect(a).toMatchObject({ typ: 'problem', nachfrage: null, thema_id: 2, ursachen_ids: [202, 201], einschaetzung: null })
   })
 
-  it('speichert keinen Text der Person, nur Thema und Ursachen', () => {
+  it('zeigt den angetippten Satz aus dem Katalog, keinen Text der Person', () => {
+    const satz = (id: number) => {
+      const u = URSACHEN.find((x) => x.id === id)!
+      return (u.alltag || u.beschreibung).replace(/[.!…]*$/, '')
+    }
     const a = antwortAusAuswahl({ thema_id: 2, ursachen_ids: [202] }, THEMEN, URSACHEN)
-    expect(a.zusammenfassung).toBe('Miete: eine Ursache angetippt')
+    expect(a.zusammenfassung).toBe(`${satz(202)}.`)
     expect(a.stichwort).toBe('Miete')
-    expect(antwortAusAuswahl({ thema_id: 2, ursachen_ids: [201, 202] }, THEMEN, URSACHEN).zusammenfassung).toBe('Miete: 2 Ursachen angetippt')
+    expect(antwortAusAuswahl({ thema_id: 2, ursachen_ids: [201, 202] }, THEMEN, URSACHEN).zusammenfassung).toBe(
+      `${satz(201)}. ${satz(202)}.`.slice(0, 200),
+    )
   })
 
   it('lehnt Ursachen eines anderen Themas und unbekannte Themen ab', () => {

@@ -39,6 +39,16 @@ function forderungAntwort(themaName: string | null): string {
   )
 }
 
+/**
+ * Schalter „nur Alltagsprobleme“ fürs Zufallsbeispiel: gilt für alle Runden bis zum Neuladen. Bewusst nicht im
+ * Browser gespeichert – sonst bräuchte es einen Eintrag in der Datenschutzerklärung (§ 25 TDDDG).
+ */
+let nurProblemeGewaehlt = false
+const liesNurProbleme = () => nurProblemeGewaehlt
+const merkeNurProbleme = (an: boolean) => {
+  nurProblemeGewaehlt = an
+}
+
 /** Was das Zufallsbeispiel in der Eingabe ist – damit klar ist, was die Runde damit macht. */
 const BEISPIEL_TEXT: Record<BeispielArt, string> = {
   problem: 'Beispiel-Problem aus der Datenbank (wird gewertet)',
@@ -93,6 +103,7 @@ function werteAus(
   return {
     nr, sprecher, rolle, land, thema, status, ...(forderung ? { forderung } : {}), ...(karten.length ? { karten } : {}),
     ursachen_ids: analyse.ursachen_ids,
+    ...(analyse.ursachen_belege ? { ursachen_belege: analyse.ursachen_belege } : {}),
     zusammenfassung: analyse.zusammenfassung,
     einschaetzung: null,
     ergebnisse: [ea, eb],
@@ -152,7 +163,8 @@ export function Runde({
   const rolle = ROLLEN.find((r) => r.id === aktiv.rolle)?.label
   const land = daten.laender.find((l) => l.id === aktiv.land)?.name
   const parteiIds: [number, number] = [spieler[0].partei.id, spieler[1].partei.id]
-  const beispielOptionen = { parteiIds, land: aktiv.land, mitHaltung: !haltungGezeigt }
+  const [nurProbleme, setNurProbleme] = useState(liesNurProbleme)
+  const beispielOptionen = { parteiIds, land: aktiv.land, mitHaltung: !haltungGezeigt, nurProbleme }
 
   function wuerfeln() {
     const b = zufallsBeispiel(daten, beispielOptionen, eingabe.trim() || null)
@@ -397,6 +409,17 @@ export function Runde({
               Zufallsbeispiel
             </button>
           )}
+          <label className="meta nur-probleme">
+            <input
+              type="checkbox"
+              checked={nurProbleme}
+              onChange={(e) => {
+                setNurProbleme(e.target.checked)
+                merkeNurProbleme(e.target.checked)
+              }}
+            />{' '}
+            nur Alltagsprobleme
+          </label>
           <button className="knopf" type="submit" disabled={denkt || !eingabe.trim()}>
             Senden
           </button>

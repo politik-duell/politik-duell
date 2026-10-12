@@ -5,13 +5,13 @@ import { MAX_JE_URSACHE, punkteText, type ParteiErgebnis, type Treffer } from '.
 import { EVIDENZ_TEXT } from '../logic/forderung'
 import { ohneTreffer } from '../logic/ohneTreffer'
 import type { RundenErgebnis, Spieler } from '../spiel'
-import { KI_HINWEIS, MassnahmeBelege, NICHT_BLIND } from './belege'
+import { KI_ENTWURF, KI_ENTWURF_ERKLAERUNG, KI_HINWEIS, MassnahmeBelege, NICHT_BLIND, NICHT_BLIND_ERKLAERUNG } from './belege'
 import { ForderungsKarte } from './ForderungsKarte'
 import { Kreuzfeld } from './Kreuz'
 import { parteiStil } from './stil'
 
 // Gemeinsame Bausteine liegen in belege.tsx (auch die Forderungskarte nutzt sie); hier weiter exportiert.
-export { KI_HINWEIS, MassnahmeBelege, NICHT_BLIND }
+export { KI_ENTWURF, KI_HINWEIS, MassnahmeBelege, NICHT_BLIND }
 
 export function Belege({ ergebnis }: { ergebnis: ParteiErgebnis }) {
   return (
@@ -74,7 +74,7 @@ function DuellKopf({
       {(leer?.badge || ergebnis.ki_entwurf) && (
         <span className="duell-marke">
           {leer?.badge && <span className="badge-ungeprueft">{leer.badge}</span>}
-          {ergebnis.ki_entwurf && <span className="badge-ungeprueft">{ergebnis.nicht_blind ? NICHT_BLIND : 'KI-Entwurf'}</span>}
+          {ergebnis.ki_entwurf && <span className="badge-ungeprueft">{ergebnis.nicht_blind ? NICHT_BLIND : KI_ENTWURF}</span>}
         </span>
       )}
     </div>
@@ -90,6 +90,13 @@ function Halbbalken({ ergebnis, punkte, vorne }: { ergebnis: ParteiErgebnis; pun
     </span>
   )
 }
+
+/**
+ * Hinweis, wenn eine Maßnahme an mehreren Ursachen der Runde ansetzt: Sie zählt dann bei jeder davon
+ * (docs/methode.md → „Wer über die Zuordnung entscheidet“) – für alle Parteien gleich.
+ */
+const mehrfachText = (n: number) =>
+  `Wirkt auf ${n} der genannten Ursachen und zählt deshalb bei jeder davon.`
 
 /** Eine gezählte Maßnahme mit Rechnung, Begründung und Belegen. */
 function MassnahmeInhalt({ t, gewicht, mehrere }: { t: Treffer; gewicht: number; mehrere: boolean }) {
@@ -107,6 +114,9 @@ function MassnahmeInhalt({ t, gewicht, mehrere }: { t: Treffer; gewicht: number;
           Für deine Rolle {t.rollenBonus > 0 ? 'wirksamer' : 'weniger wirksam'} (Grundwert {t.massnahme.wirksamkeit}/3):{' '}
           {t.rollenBegruendung}
         </p>
+      )}
+      {t.ursachen_ids.length > 1 && (
+        <p className="massnahme-rolle duell-mehrfach">{mehrfachText(t.ursachen_ids.length)}</p>
       )}
       {t.massnahme.land && <p className="massnahme-rolle">Aus dem Landeswahlprogramm {landName(t.massnahme.land)}</p>}
       {(t.massnahme.evidenz === 'gemischt' || t.massnahme.evidenz === 'offen') && (
@@ -192,7 +202,15 @@ function Duell({ runde, spieler }: { runde: RundenErgebnis; spieler: [Spieler, S
               <li key={id} style={{ ['--zeile' as string]: i }}>
                 <details className="duell-zeile">
                   <summary>
-                    <span className="duell-ursache">{ursacheText(id)}</span>
+                    <span className="duell-ursache">
+                      <span>
+                        {ursacheText(id)}
+                        {/* Woran die KI die Ursache erkannt hat – zum Nachprüfen der Zuordnung. */}
+                        {runde.ursachen_belege?.[id] && (
+                          <small className="duell-beleg">Deine Worte: „{runde.ursachen_belege[id]}“</small>
+                        )}
+                      </span>
+                    </span>
                     <span className="duell-balken" aria-hidden="true">
                       <Halbbalken ergebnis={a} punkte={pa} vorne={(pa ?? 0) > 0 && (pa ?? 0) >= (pb ?? 0)} />
                       <Halbbalken ergebnis={b} punkte={pb} vorne={(pb ?? 0) > 0 && (pb ?? 0) >= (pa ?? 0)} />
@@ -214,7 +232,8 @@ function Duell({ runde, spieler }: { runde: RundenErgebnis; spieler: [Spieler, S
         </ul>
       )}
       <p className="duell-legende">
-        Balken: Punkte je Ursache – bester Lösungsweg voll, jeder weitere halb so stark, höchstens {MAX_JE_URSACHE}. Tippen
+        Balken: Punkte je Ursache – bester Lösungsweg voll, jeder weitere halb so stark, höchstens {MAX_JE_URSACHE}. Die
+        Rundenpunkte sind die Summe über alle Ursachen; eine Maßnahme, die auf mehrere davon wirkt, zählt bei jeder. Tippen
         zeigt Maßnahmen und Belege.
       </p>
       {leere.map(({ e, leer }) => (
@@ -327,9 +346,8 @@ export function Aufloesung({
                 <strong>{KI_HINWEIS}</strong>
               </summary>
               Maßnahmen und Punkte sind in der Testphase ein Entwurf, den eine KI nach der offenen Methode erstellt hat.
-              Zitat und Seite im Programm lassen sich über die Links prüfen.
-              {runde.ergebnisse.some((e) => e.nicht_blind) &&
-                ' „Nicht blind“ heißt: Diese Werte wurden mit Kenntnis der Partei vergeben oder geändert, nicht ohne Parteinamen.'}
+              Zitat und Seite im Programm lassen sich über die Links prüfen. {KI_ENTWURF_ERKLAERUNG}
+              {runde.ergebnisse.some((e) => e.nicht_blind) && ` ${NICHT_BLIND_ERKLAERUNG}`}
             </details>
           )}
           <details className="beste enthuellen" style={{ animationDelay: '1500ms' }}>
@@ -351,7 +369,7 @@ export function Aufloesung({
               runde.beste.map((b) => (
                 <div key={b.partei.id} className="beste-zeile" style={parteiStil(b.partei.farbe)}>
                   <strong>{b.partei.name}</strong> mit {punkteText(b.punkte)} Punkten
-                  {b.ki_entwurf && (b.nicht_blind ? ` (${NICHT_BLIND})` : ' (vorläufige KI-Bewertung)')}
+                  {b.ki_entwurf && ` (${b.nicht_blind ? NICHT_BLIND : KI_ENTWURF})`}
                   {b.treffer.map((t) => (
                     <p key={t.massnahme.id} className="beste-massnahme">
                       {t.massnahme.beschreibung} <MassnahmeBelege massnahme={t.massnahme} />

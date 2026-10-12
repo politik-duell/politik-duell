@@ -7,8 +7,16 @@ function seitenText(url: string, land: boolean) {
 }
 
 export const KI_HINWEIS = 'Vorläufige KI-Bewertung – noch nicht von Menschen geprüft'
+/** Bewertung, die eine KI ohne Parteinamen entworfen hat und die noch kein Mensch geprüft hat (nur Testphase). */
+export const KI_ENTWURF = 'KI-Entwurf'
 /** KI-Entwurf, dessen Werte mit Kenntnis der Partei vergeben oder geändert wurden (oder vor der Blindbewertung entstanden). */
-export const NICHT_BLIND = 'vorläufige Bewertung, nicht blind'
+export const NICHT_BLIND = 'KI-Entwurf, nicht blind'
+/** Erklärung beider Kennzeichen – überall, wo sie erscheinen, im selben Wortlaut. */
+export const KI_ENTWURF_ERKLAERUNG =
+  '„KI-Entwurf“ heißt: Eine KI hat die Maßnahme nach der offenen Methode bewertet, ohne die Partei zu kennen; ' +
+  'Menschen haben die Werte noch nicht geprüft.'
+export const NICHT_BLIND_ERKLAERUNG =
+  '„Nicht blind“ heißt: Diese Werte wurden mit Kenntnis der Partei vergeben oder geändert, nicht ohne Parteinamen.'
 
 export function MassnahmeBelege({ massnahme }: { massnahme: Massnahme }) {
   return (

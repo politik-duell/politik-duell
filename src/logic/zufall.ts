@@ -20,7 +20,15 @@ export interface BeispielOptionen {
   land: string | null
   /** Haltungen nur, solange in dieser Runde noch keine Haltungskarte kam (höchstens eine je Runde). */
   mitHaltung: boolean
+  /** Nur Alltagsprobleme (Schalter „nur Probleme“) – etwa zum Testen der Wertung. */
+  nurProbleme?: boolean
 }
+
+/**
+ * Gewicht je Art beim Ziehen: Alltagsprobleme sind der Kern des Spiels und kommen dreimal so oft wie
+ * Forderungen oder Haltungen (die keine Punkte bringen bzw. erst nachfragen).
+ */
+export const BEISPIEL_GEWICHT: Record<BeispielArt, number> = { problem: 3, forderung: 1, wert: 1 }
 
 /** Alle Kandidaten je Art – leer, wenn die Datenbank für diese Art noch nichts Passendes hat. */
 export function beispielKandidaten(daten: Daten, o: BeispielOptionen): Record<BeispielArt, string[]> {
@@ -47,11 +55,12 @@ export function beispielKandidaten(daten: Daten, o: BeispielOptionen): Record<Be
     ? kartenHaltungen(daten).flatMap((h) => [haltung(h.frage, 'dafür'), haltung(h.frage, 'dagegen')])
     : []
 
+  if (o.nurProbleme) return { problem: probleme, forderung: [], wert: [] }
   return { problem: probleme, forderung: forderungen, wert: haltungen }
 }
 
 /**
- * Zieht ein Beispiel: erst eine Art (gleich wahrscheinlich unter denen mit Kandidaten), dann einen Text.
+ * Zieht ein Beispiel: erst eine Art (nach BEISPIEL_GEWICHT unter denen mit Kandidaten), dann einen Text.
  * `vorher` wird nach Möglichkeit nicht wiederholt. null, wenn die Datenbank noch nichts Passendes hat.
  */
 export function zufallsBeispiel(
@@ -65,7 +74,9 @@ export function zufallsBeispiel(
     kandidaten[a].some((t) => t !== vorher),
   )
   if (!arten.length) return null
-  const art = arten[Math.floor(zufall() * arten.length)]
+  const summe = arten.reduce((s, a) => s + BEISPIEL_GEWICHT[a], 0)
+  let rest = zufall() * summe
+  const art = arten.find((a) => (rest -= BEISPIEL_GEWICHT[a]) < 0) ?? arten[arten.length - 1]
   const texte = kandidaten[art].filter((t) => t !== vorher)
   return { art, text: texte[Math.floor(zufall() * texte.length)] }
 }

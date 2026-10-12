@@ -5,7 +5,8 @@ import { punkteText } from '../logic/bewertung'
 import { forderungskarte } from '../logic/forderung'
 import { haltungskarte } from '../logic/haltung'
 import { useDaten, useLandName } from '../data/kontext'
-import { Belege, KI_HINWEIS, NICHT_BLIND } from './Aufloesung'
+import { Belege, KI_ENTWURF, KI_HINWEIS, NICHT_BLIND } from './Aufloesung'
+import { KI_ENTWURF_ERKLAERUNG, NICHT_BLIND_ERKLAERUNG } from './belege'
 import { ForderungsKarte } from './ForderungsKarte'
 import { HaltungsKarte } from './HaltungsKarte'
 import { Kreuz } from './Kreuz'
@@ -64,7 +65,8 @@ export function Ende({
         </p>
         {mitKi && (
           <p className="ki-hinweis" role="note">
-            <strong>{KI_HINWEIS}.</strong> Das Ergebnis beruht teilweise auf KI-Entwürfen aus der Testphase.
+            <strong>{KI_HINWEIS}.</strong> Das Ergebnis beruht teilweise auf KI-Entwürfen aus der Testphase. {KI_ENTWURF_ERKLAERUNG}
+            {runden.some((r) => r.ergebnisse?.some((e) => e.nicht_blind)) && ` ${NICHT_BLIND_ERKLAERUNG}`}
           </p>
         )}
       </div>
@@ -80,7 +82,7 @@ export function Ende({
                 {r.ergebnisse?.some((e) => e.ki_entwurf) && (
                   <>
                     {' '}
-                    <span className="badge-ungeprueft">{r.ergebnisse.some((e) => e.nicht_blind) ? NICHT_BLIND : 'vorläufige KI-Bewertung'}</span>
+                    <span className="badge-ungeprueft">{r.ergebnisse.some((e) => e.nicht_blind) ? NICHT_BLIND : KI_ENTWURF}</span>
                   </>
                 )}
                 {r.status === 'unvollstaendig' && (

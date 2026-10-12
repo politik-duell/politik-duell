@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { MOCK_DATEN } from '../data/quelle'
-import { beispielKandidaten, zufallsBeispiel, PROBLEM_VORSPANN, type Beispiel } from './zufall'
+import { BEISPIEL_GEWICHT, beispielKandidaten, zufallsBeispiel, PROBLEM_VORSPANN, type Beispiel } from './zufall'
 import { fuerBeideErfasst } from './stand'
 
 const [p1, p2] = MOCK_DATEN.parteien
@@ -32,6 +32,22 @@ describe('Zufallsbeispiel für die Eingabe', () => {
     }
     const k = beispielKandidaten(MOCK_DATEN, optionen)
     expect(arten).toEqual(new Set((['problem', 'forderung', 'wert'] as const).filter((a) => k[a].length)))
+  })
+
+  it('zieht Alltagsprobleme häufiger als Forderungen und Haltungen', () => {
+    const k = beispielKandidaten(MOCK_DATEN, optionen)
+    expect(k.forderung.length && k.wert.length).toBeTruthy()
+    // Gleichmäßig verteilte Zufallszahlen: Anteil der Probleme = Gewicht / Summe der Gewichte.
+    const n = 500
+    const probleme = Array.from({ length: n }, (_, i) => zufallsBeispiel(MOCK_DATEN, optionen, null, () => (i + 0.5) / n)!)
+      .filter((b) => b.art === 'problem').length
+    const summe = BEISPIEL_GEWICHT.problem + BEISPIEL_GEWICHT.forderung + BEISPIEL_GEWICHT.wert
+    expect(probleme / n).toBeCloseTo(BEISPIEL_GEWICHT.problem / summe, 1)
+    expect(probleme / n).toBeGreaterThan(0.5)
+  })
+
+  it('liefert mit „nur Probleme“ ausschließlich Alltagsprobleme', () => {
+    for (let i = 0; i < 50; i++) expect(zufallsBeispiel(MOCK_DATEN, { ...optionen, nurProbleme: true })!.art).toBe('problem')
   })
 
   it('gibt null zurück, wenn die Datenbank nichts Passendes hat', () => {
