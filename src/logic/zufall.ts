@@ -40,11 +40,11 @@ export function beispielKandidaten(daten: Daten, o: BeispielOptionen): Record<Be
     .map((i) => `Meine Forderung: ${i.name.replace(/\s*\((Bund|Land)\)$/, '')}.`)
 
   // Haltung: nur Wertfragen mit vollständiger Karte; Ja oder Nein per Zufall, damit keine Seite vorgegeben ist.
-  // Ausdrücklich als persönliche Haltung zur Frage – sonst liest die KI „Ja zur Steuer“ als Forderung.
-  const haltung = (frage: string, seite: string) =>
-    `Meine persönliche Haltung zur Frage „${frage}“: ${seite}. Darüber kann man verschieden denken.`
+  // Mit der Frage im Wortlaut, damit die KI die Haltung erkennt – sonst liest sie „für die Steuer“ als Forderung.
+  // So, wie man es sagen würde; den Satz „darüber kann man verschieden denken“ sagt das Spiel selbst.
+  const haltung = (frage: string, seite: string) => `Bei der Frage „${frage}“ bin ich klar ${seite}.`
   const haltungen = o.mitHaltung
-    ? kartenHaltungen(daten).flatMap((h) => [haltung(h.frage, 'Ja'), haltung(h.frage, 'Nein')])
+    ? kartenHaltungen(daten).flatMap((h) => [haltung(h.frage, 'dafür'), haltung(h.frage, 'dagegen')])
     : []
 
   return { problem: probleme, forderung: forderungen, wert: haltungen }

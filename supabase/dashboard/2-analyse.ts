@@ -356,8 +356,8 @@ Einordnung ("typ"):
   wieder und frag nur nach dem Alltag.${haltungen.length ? `
   Ber\xFChrt die Haltung eindeutig eine der Fragen unter \u201EHaltungen\u201C (gleich, welche Seite die Person vertritt),
   setze "haltung_id" auf deren Nummer, sonst null. Rate nicht: \xC4hnlich oder verwandt gen\xFCgt nicht.
-  Antwortet die Person ohne Alltagsproblem mit Ja oder Nein auf genau eine dieser Fragen (z. B. \u201EMeine Haltung
-  zur Frage \u2026 : Ja\u201C), ist das "wert" mit dieser "haltung_id" \u2013 auch wenn die Frage nach einer Ma\xDFnahme klingt.
+  Antwortet die Person ohne Alltagsproblem mit Ja oder Nein auf genau eine dieser Fragen (z. B. \u201EBei der Frage
+  \u2026 bin ich daf\xFCr\u201C), ist das "wert" mit dieser "haltung_id" \u2013 auch wenn die Frage nach einer Ma\xDFnahme klingt.
   Dasselbe gilt f\xFCr ein kurzes F\xFCr oder Gegen genau den Gegenstand einer Frage (z. B. \u201EIch bin f\xFCr ein Tempolimit\u201C
   zur Frage nach einem Tempolimit auf Autobahnen): Einschr\xE4nkungen der Frage muss die Person nicht nennen.
   Das hat Vorrang vor "forderung" \u2013 auch wenn der Gegenstand eine Steuer, ein Verbot oder eine Abgabe ist

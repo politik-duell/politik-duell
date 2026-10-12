@@ -91,8 +91,8 @@ Einordnung ("typ"):
       ? `
   Berührt die Haltung eindeutig eine der Fragen unter „Haltungen“ (gleich, welche Seite die Person vertritt),
   setze "haltung_id" auf deren Nummer, sonst null. Rate nicht: Ähnlich oder verwandt genügt nicht.
-  Antwortet die Person ohne Alltagsproblem mit Ja oder Nein auf genau eine dieser Fragen (z. B. „Meine Haltung
-  zur Frage … : Ja“), ist das "wert" mit dieser "haltung_id" – auch wenn die Frage nach einer Maßnahme klingt.
+  Antwortet die Person ohne Alltagsproblem mit Ja oder Nein auf genau eine dieser Fragen (z. B. „Bei der Frage
+  … bin ich dafür“), ist das "wert" mit dieser "haltung_id" – auch wenn die Frage nach einer Maßnahme klingt.
   Dasselbe gilt für ein kurzes Für oder Gegen genau den Gegenstand einer Frage (z. B. „Ich bin für ein Tempolimit“
   zur Frage nach einem Tempolimit auf Autobahnen): Einschränkungen der Frage muss die Person nicht nennen.
   Das hat Vorrang vor "forderung" – auch wenn der Gegenstand eine Steuer, ein Verbot oder eine Abgabe ist
