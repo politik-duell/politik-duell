@@ -346,7 +346,7 @@ Bekommt dieselben Felder: Haltungen über Schlagwörter in der Haltungsdatei (`s
 
 1. **Ursachenauswahl und Forderung ohne Umdeutung** (A1, A2, A4, Lücke 4, neuer `wert`-Text). Braucht keine neuen Daten. *Umgesetzt (4. 10. 2026).* Umsetzungsdetails:
    - Die Ursachen erscheinen nur, solange eine Nachfrage offen ist – nicht nach der letzten Antwort, damit eine Runde nicht doppelt gespeichert wird.
-   - Angetippte Ursachen gehen als `auswahl` an die Edge Function `analyse`; sie fragt dann keine KI (zählt nur für das Rate-Limit je Sitzung, nicht für das globale) und speichert die Runde. Als Problem steht dort nur „Thema: n Ursachen angetippt“ – kein Text der Person.
+   - Angetippte Ursachen gehen als `auswahl` an die Edge Function `analyse`; sie fragt dann keine KI (zählt nur für das Rate-Limit je Sitzung, nicht für das globale) und speichert die Runde. Als Problem steht dort der angetippte Satz aus dem Katalog („im Alltag“, bei mehreren die Sätze nacheinander) – kein Text der Person.
    - Feld `pauschal` und Status `forderung` (Migration `20261006000000_runden_forderung.sql`) sind schon in diesem Schritt dabei; Forderungen ohne Problem kommen wie Haltungen nicht zur Freigabe in der Admin-Ansicht.
    - Nachgereicht: Statt immer desselben Satzes greift die KI eine Haltung oder abschließende Forderung in `rueckmeldung` in eigenen Worten auf (keine Zustimmung, kein Widerspruch). Bei Parteinamen, Filtertreffern, zu kurzem oder zu langem Text und bei Pauschalurteilen zeigt die App den festen Satz.
 2. **Forderungskarte** (A3): Instrumente in die Datenbank, zweistufiger KI-Aufruf. *Umgesetzt (4. 10. 2026).* Umsetzungsdetails:

@@ -58,10 +58,22 @@ interface Lauf {
   urteil?: Urteil
 }
 
+/** Bei Rate-Limit (429) bis zu viermal mit wachsender Pause neu fragen – sonst fehlen ganze Runden in der Bilanz. */
+async function mitWiederholung<T>(f: () => Promise<T>): Promise<T> {
+  for (let versuch = 0; ; versuch++) {
+    try {
+      return await f()
+    } catch (e) {
+      if (versuch >= 4 || !(e instanceof Error) || !e.message.startsWith('Mistral 429')) throw e
+      await new Promise((r) => setTimeout(r, 2000 * 2 ** versuch))
+    }
+  }
+}
+
 async function frage(fall: Fall, runde: number): Promise<Lauf> {
   const verlauf = [{ von: 'spieler' as const, text: fall.text }]
   try {
-    const roh = await frageMistral(system, nutzerNachrichten(verlauf, null), { key: key!, modell })
+    const roh = await mitWiederholung(() => frageMistral(system, nutzerNachrichten(verlauf, null), { key: key!, modell }))
     const antwort = bereinigeAntwort(roh, verlauf, katalog.themen, katalog.ursachen, katalog.parteien, () => 0, haltungen)
     return { fall, runde, antwort, urteil: beurteile(fall, antwort) }
   } catch (e) {

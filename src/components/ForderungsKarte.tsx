@@ -1,6 +1,6 @@
 import { useDaten, useLandName } from '../data/kontext'
 import { EVIDENZ_TEXT, forderungskarte, type Fund, type Fundblock } from '../logic/forderung'
-import { KI_HINWEIS, MassnahmeBelege, NICHT_BLIND } from './belege'
+import { KI_ENTWURF_ERKLAERUNG, KI_HINWEIS, MassnahmeBelege, NICHT_BLIND_ERKLAERUNG } from './belege'
 import { parteiStil } from './stil'
 
 const FUND_TEXT: Record<Fund, (ebene: 'bund' | 'land') => string> = {
@@ -73,8 +73,8 @@ export function ForderungsKarte({
 
       {karte.ki_entwurf && (
         <p className="ki-hinweis" role="note">
-          <strong>{KI_HINWEIS}</strong>
-          {karte.nicht_blind && ` („${NICHT_BLIND}“)`}
+          <strong>{KI_HINWEIS}.</strong> {KI_ENTWURF_ERKLAERUNG}
+          {karte.nicht_blind && ` ${NICHT_BLIND_ERKLAERUNG}`}
         </p>
       )}
       <p className="meta">

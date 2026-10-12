@@ -126,8 +126,14 @@ Sonst ist "rueckmeldung" null (Ausnahme: abschließende Forderung, siehe Hinweis
 
 Zuordnung ("thema_id" bei "problem" und "forderung", alles Weitere nur bei "problem"):
 - "thema_id": die ID aus dem Katalog, die am besten passt, sonst null.
-- "ursachen_ids": nur die IDs der Ursachen dieses Themas, die sich aus der Schilderung erkennen lassen.
-  Nimm keine Ursache dazu, nur weil sie zum Thema gehört – jede zugeordnete Ursache zählt in der Wertung.
+- "ursachen_ids": nur die IDs der Ursachen dieses Themas, die die Schilderung selbst nennt oder erkennbar beschreibt –
+  höchstens ${MAX_AUSWAHL}, die deutlichste zuerst. Nimm keine Ursache dazu, nur weil sie zum Thema gehört oder ähnlich
+  klingt – jede zugeordnete Ursache zählt in der Wertung.
+  Setzt eine Ursache eine bestimmte Lage voraus (z. B. einen laufenden Vertrag, einen Heimplatz, einen bestimmten
+  Wohnort), ordne sie nur zu, wenn die Schilderung diese Lage erkennen lässt.
+- "ursachen_belege": zu jeder Ursache in "ursachen_ids" die Wörter aus der Schilderung der Person, die diese
+  Ursache nennen – wörtlich übernommen, höchstens acht Wörter, z. B. {"204": "Miete wird jedes Jahr erhöht"}.
+  Dieselben Wörter stützen nie zwei Ursachen. Findest du keine solchen Wörter, ordne die Ursache nicht zu.
 - „im Alltag: …“ zeigt, wie Betroffene eine Ursache typischerweise erleben. Vergleiche die Schilderung damit,
   auch wenn sie aus der Sicht anderer Beteiligter kommt (z. B. Anwohner statt Veranstalter, Eltern statt Jugendliche).
   Passt eine Schilderung erkennbar zu einem dieser Sätze, ordne die Ursache zu, statt nachzufragen.
@@ -137,6 +143,9 @@ Zuordnung ("thema_id" bei "problem" und "forderung", alles Weitere nur bei "prob
 - Lässt sich keine Ursache erkennen: "thema_id" wie erkannt, "ursachen_ids": [] und in "nachfrage" genau eine
   kurze, freundliche Frage, woran es im Alltag konkret hakt, z. B. „Was genau macht dir dabei Sorgen?“.
   Gib keine Antworten vor.
+- Nennt die Person einen klaren Grund für ihr Problem, den keine Ursache des Themas beschreibt (z. B. Lärm von
+  einer Baustelle nebenan beim Thema Miete), dann passt kein Thema – nimm nicht ersatzweise die nächstliegende
+  Ursache und frag nicht nach. Nachfragen nur, wenn die Schilderung zu allgemein ist, um einen Grund zu erkennen.
 - Passt kein Thema: "thema_id": null, "ursachen_ids": [] und in "einschaetzung" 1–2 neutrale Sätze zu möglichen
   Ursachen des Problems – ohne Parteien, ohne Lösungsbewertung, ohne Links.
 
@@ -161,7 +170,7 @@ ${haltungen.map((h) => `- Haltung ${h.id}: ${h.frage}`).join('\n')}
 }
 Antworte ausschließlich mit einem JSON-Objekt:
 {"typ": "problem" | "forderung" | "wert" | "grenze", "nachfrage": string[] | null, "thema_id": number | null,
- "ursachen_ids": number[], "pauschal": boolean, "zusammenfassung": string, "stichwort": string,
+ "ursachen_ids": number[], "ursachen_belege": {[id: string]: string}, "pauschal": boolean, "zusammenfassung": string, "stichwort": string,
  "einschaetzung": string | null, "rueckmeldung": string[] | null${haltungen.length ? ', "haltung_id": number | null' : ''}}`
 }
 
@@ -318,20 +327,23 @@ function pruefeAuswahl(roh: unknown): UrsachenAuswahl | null {
 
 /**
  * Antwort für angetippte Ursachen – ohne KI. Gewertet wird wie bei einer Zuordnung durch die KI.
- * Die Zusammenfassung nennt nur Thema und Anzahl (die Ursachen zeigt die Auflösung):
- * Der Text der Person wird nicht gespeichert.
+ * Die Zusammenfassung ist der angetippte Satz aus dem Katalog („im Alltag“, sonst die Beschreibung),
+ * bei mehreren die Sätze nacheinander: Der Text der Person wird nicht gespeichert.
  */
 export function antwortAusAuswahl(auswahl: UrsachenAuswahl, themen: Thema[], ursachen: Ursache[]): AnalyseAntwort {
   const thema = themen.find((t) => t.id === auswahl.thema_id)
   const passt = auswahl.ursachen_ids.every((id) => ursachen.some((u) => u.id === id && u.thema_id === auswahl.thema_id))
   if (!thema || !passt) throw new EingabeFehler('Diese Ursachen gehören nicht zu diesem Thema.')
-  const n = auswahl.ursachen_ids.length
+  const saetze = auswahl.ursachen_ids.map((id) => {
+    const u = ursachen.find((x) => x.id === id)!
+    return (u.alltag || u.beschreibung).trim().replace(/[.!…]*$/, '')
+  })
   return {
     typ: 'problem',
     nachfrage: null,
     thema_id: thema.id,
     ursachen_ids: [...auswahl.ursachen_ids],
-    zusammenfassung: kurz(`${thema.name}: ${n === 1 ? 'eine Ursache' : `${n} Ursachen`} angetippt`, 200),
+    zusammenfassung: kurz(`${saetze.join('. ')}.`, 200),
     stichwort: bereinigeStichwort(thema.name, thema.name),
     einschaetzung: null,
   }
@@ -395,6 +407,22 @@ function ohneWiederholung(nachfrage: string, verlauf: Nachricht[]): string {
     if (!frueher.has(vergleichbar(kandidat))) return kandidat
   }
   return nachfrage
+}
+
+const inhaltsWoerter = (s: string) => vergleichbar(s).split(' ').filter((w) => w.length >= 3)
+
+/**
+ * Stützt ein Beleg der KI eine Ursache? Die Wörter müssen aus der Schilderung stammen: mindestens zwei Drittel
+ * der Inhaltswörter (ab drei Buchstaben) kommen dort vor, Wortanfänge genügen (Beugung, „erhöht“/„erhöhen“).
+ * So kann die KI eine Ursache nicht ohne Anhalt im Gesagten zuordnen; ob sie inhaltlich passt, zeigt die App.
+ */
+export function gestuetzt(beleg: string, texte: string[]): boolean {
+  const gesucht = inhaltsWoerter(beleg)
+  if (!gesucht.length) return false
+  const vorhanden = texte.flatMap(inhaltsWoerter)
+  const stamm = (w: string) => w.slice(0, Math.max(3, Math.min(w.length, 5)))
+  const treffer = gesucht.filter((w) => vorhanden.some((v) => v === w || stamm(v) === stamm(w)))
+  return treffer.length * 3 >= gesucht.length * 2
 }
 
 /** Antwort bei einer Grenzüberschreitung: ohne jeden Inhalt der Äußerung. */
@@ -499,7 +527,23 @@ export function bereinigeAntwort(
   }
 
   const erlaubt = ursachen.filter((u) => u.thema_id === thema.id).map((u) => u.id)
-  const genannt = Array.isArray(r.ursachen_ids) ? r.ursachen_ids.map(Number).filter((id) => erlaubt.includes(id)) : []
+  // Nur Ursachen, die die Schilderung mit eigenen Worten stützt, und höchstens so viele, wie man antippen darf –
+  // sonst zählten vorsorglich zugeordnete Ursachen mit (docs/methode.md → „Punkte in der Runde“).
+  const belegRoh = r.ursachen_belege && typeof r.ursachen_belege === 'object' ? (r.ursachen_belege as Record<string, unknown>) : {}
+  const spielerTexte = verlauf.filter((n) => n.von === 'spieler').map((n) => n.text)
+  const belege: Record<number, string> = {}
+  const vergeben = new Set<string>()
+  const genannt = (Array.isArray(r.ursachen_ids) ? r.ursachen_ids.map(Number) : [])
+    .filter((id, i, alle) => erlaubt.includes(id) && alle.indexOf(id) === i)
+    .filter((id) => {
+      const beleg = kurz(belegRoh[String(id)], 120)
+      // Dieselben Wörter stützen nur eine Ursache: Sonst nennt die Schilderung das Problem, nicht seinen Grund.
+      if (!gestuetzt(beleg, spielerTexte) || vergeben.has(vergleichbar(beleg))) return false
+      vergeben.add(vergleichbar(beleg))
+      belege[id] = beleg
+      return true
+    })
+    .slice(0, MAX_AUSWAHL)
   if (genannt.length === 0) {
     // Keine Ursache erkennbar: nicht einfach alle Ursachen werten – sonst gewänne, wer zum
     // Thema die meisten Maßnahmen hat, nicht wer das geschilderte Problem am besten löst.
@@ -521,7 +565,8 @@ export function bereinigeAntwort(
     typ,
     nachfrage: null,
     thema_id: thema.id,
-    ursachen_ids: [...new Set(genannt)],
+    ursachen_ids: genannt,
+    ursachen_belege: Object.fromEntries(genannt.map((id) => [id, belege[id]])),
     zusammenfassung,
     stichwort,
     einschaetzung: null,

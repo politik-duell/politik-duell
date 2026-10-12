@@ -26,6 +26,8 @@ export interface RundenErgebnis {
   thema: Thema | null
   /** Zugeordnete Ursachen (Reihenfolge der Analyse); leer bei ungeprüften Themen. */
   ursachen_ids?: number[]
+  /** Wörter aus der Schilderung, die eine Ursache stützen (nur bei Zuordnung durch die KI, nur zur Anzeige). */
+  ursachen_belege?: Record<number, string>
   /**
    * gewertet: beide Parteien für das Thema erfasst · unvollstaendig: Thema bekannt, aber für
    * mindestens eine der beiden noch nicht erfasst oder ohne aktuelles Landesprogramm (keine Punkte)

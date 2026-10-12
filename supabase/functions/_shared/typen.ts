@@ -227,7 +227,14 @@ export interface AnalyseAntwort {
    * bietet dann dessen Ursachen zum Antippen an bzw. nennt das Thema.
    */
   thema_id: number | null
+  /** Bei `problem` höchstens MAX_AUSWAHL, jede durch Wörter aus der Schilderung gestützt (siehe `ursachen_belege`). */
   ursachen_ids: number[]
+  /**
+   * Bei `problem` mit Ursachen aus der KI: je Ursache die Wörter aus der Schilderung, die sie nennen (wörtlich,
+   * geprüft). Die App zeigt sie neben der Ursache („Deine Worte: …“). Nur in der Antwort, nie gespeichert.
+   * Fehlt bei angetippten Ursachen.
+   */
+  ursachen_belege?: Record<number, string>
   /** Pauschales Urteil über eine Gruppe: nur nachfragen, keine Ursachenauswahl. */
   pauschal?: boolean
   /**

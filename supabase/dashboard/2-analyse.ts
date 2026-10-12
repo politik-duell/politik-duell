@@ -387,8 +387,14 @@ Sonst ist "rueckmeldung" null (Ausnahme: abschlie\xDFende Forderung, siehe Hinwe
 
 Zuordnung ("thema_id" bei "problem" und "forderung", alles Weitere nur bei "problem"):
 - "thema_id": die ID aus dem Katalog, die am besten passt, sonst null.
-- "ursachen_ids": nur die IDs der Ursachen dieses Themas, die sich aus der Schilderung erkennen lassen.
-  Nimm keine Ursache dazu, nur weil sie zum Thema geh\xF6rt \u2013 jede zugeordnete Ursache z\xE4hlt in der Wertung.
+- "ursachen_ids": nur die IDs der Ursachen dieses Themas, die die Schilderung selbst nennt oder erkennbar beschreibt \u2013
+  h\xF6chstens ${MAX_AUSWAHL}, die deutlichste zuerst. Nimm keine Ursache dazu, nur weil sie zum Thema geh\xF6rt oder \xE4hnlich
+  klingt \u2013 jede zugeordnete Ursache z\xE4hlt in der Wertung.
+  Setzt eine Ursache eine bestimmte Lage voraus (z. B. einen laufenden Vertrag, einen Heimplatz, einen bestimmten
+  Wohnort), ordne sie nur zu, wenn die Schilderung diese Lage erkennen l\xE4sst.
+- "ursachen_belege": zu jeder Ursache in "ursachen_ids" die W\xF6rter aus der Schilderung der Person, die diese
+  Ursache nennen \u2013 w\xF6rtlich \xFCbernommen, h\xF6chstens acht W\xF6rter, z. B. {"204": "Miete wird jedes Jahr erh\xF6ht"}.
+  Dieselben W\xF6rter st\xFCtzen nie zwei Ursachen. Findest du keine solchen W\xF6rter, ordne die Ursache nicht zu.
 - \u201Eim Alltag: \u2026\u201C zeigt, wie Betroffene eine Ursache typischerweise erleben. Vergleiche die Schilderung damit,
   auch wenn sie aus der Sicht anderer Beteiligter kommt (z. B. Anwohner statt Veranstalter, Eltern statt Jugendliche).
   Passt eine Schilderung erkennbar zu einem dieser S\xE4tze, ordne die Ursache zu, statt nachzufragen.
@@ -398,6 +404,9 @@ Zuordnung ("thema_id" bei "problem" und "forderung", alles Weitere nur bei "prob
 - L\xE4sst sich keine Ursache erkennen: "thema_id" wie erkannt, "ursachen_ids": [] und in "nachfrage" genau eine
   kurze, freundliche Frage, woran es im Alltag konkret hakt, z. B. \u201EWas genau macht dir dabei Sorgen?\u201C.
   Gib keine Antworten vor.
+- Nennt die Person einen klaren Grund f\xFCr ihr Problem, den keine Ursache des Themas beschreibt (z. B. L\xE4rm von
+  einer Baustelle nebenan beim Thema Miete), dann passt kein Thema \u2013 nimm nicht ersatzweise die n\xE4chstliegende
+  Ursache und frag nicht nach. Nachfragen nur, wenn die Schilderung zu allgemein ist, um einen Grund zu erkennen.
 - Passt kein Thema: "thema_id": null, "ursachen_ids": [] und in "einschaetzung" 1\u20132 neutrale S\xE4tze zu m\xF6glichen
   Ursachen des Problems \u2013 ohne Parteien, ohne L\xF6sungsbewertung, ohne Links.
 
@@ -418,7 +427,7 @@ ${haltungen.map((h) => `- Haltung ${h.id}: ${h.frage}`).join("\n")}
 ` : ""}
 Antworte ausschlie\xDFlich mit einem JSON-Objekt:
 {"typ": "problem" | "forderung" | "wert" | "grenze", "nachfrage": string[] | null, "thema_id": number | null,
- "ursachen_ids": number[], "pauschal": boolean, "zusammenfassung": string, "stichwort": string,
+ "ursachen_ids": number[], "ursachen_belege": {[id: string]: string}, "pauschal": boolean, "zusammenfassung": string, "stichwort": string,
  "einschaetzung": string | null, "rueckmeldung": string[] | null${haltungen.length ? ', "haltung_id": number | null' : ""}}`;
 }
 function instrumenteZurAuswahl(themaId, instrumente, massnahmen, land) {
@@ -510,7 +519,10 @@ function antwortAusAuswahl(auswahl, themen, ursachen) {
   const thema = themen.find((t) => t.id === auswahl.thema_id);
   const passt = auswahl.ursachen_ids.every((id) => ursachen.some((u) => u.id === id && u.thema_id === auswahl.thema_id));
   if (!thema || !passt) throw new EingabeFehler("Diese Ursachen geh\xF6ren nicht zu diesem Thema.");
-  const n = auswahl.ursachen_ids.length;
+  const saetze = auswahl.ursachen_ids.map((id) => {
+    const u = ursachen.find((x) => x.id === id);
+    return (u.alltag || u.beschreibung).trim().replace(/[.!…]*$/, "");
+  });
   return {
     typ: "problem",
     nachfrage: null,
@@ -518,7 +530,7 @@ function antwortAusAuswahl(auswahl, themen, ursachen) {
     ursachen_ids: [
       ...auswahl.ursachen_ids
     ],
-    zusammenfassung: kurz(`${thema.name}: ${n === 1 ? "eine Ursache" : `${n} Ursachen`} angetippt`, 200),
+    zusammenfassung: kurz(`${saetze.join(". ")}.`, 200),
     stichwort: bereinigeStichwort(thema.name, thema.name),
     einschaetzung: null
   };
@@ -565,6 +577,15 @@ function ohneWiederholung(nachfrage, verlauf) {
     if (!frueher.has(vergleichbar(kandidat))) return kandidat;
   }
   return nachfrage;
+}
+var inhaltsWoerter = (s) => vergleichbar(s).split(" ").filter((w) => w.length >= 3);
+function gestuetzt(beleg, texte) {
+  const gesucht = inhaltsWoerter(beleg);
+  if (!gesucht.length) return false;
+  const vorhanden = texte.flatMap(inhaltsWoerter);
+  const stamm = (w) => w.slice(0, Math.max(3, Math.min(w.length, 5)));
+  const treffer = gesucht.filter((w) => vorhanden.some((v) => v === w || stamm(v) === stamm(w)));
+  return treffer.length * 3 >= gesucht.length * 2;
 }
 function grenzeAntwort() {
   return {
@@ -636,7 +657,17 @@ function bereinigeAntwort(roh, verlauf, themen, ursachen, parteien = [], zufall 
     };
   }
   const erlaubt = ursachen.filter((u) => u.thema_id === thema.id).map((u) => u.id);
-  const genannt = Array.isArray(r.ursachen_ids) ? r.ursachen_ids.map(Number).filter((id) => erlaubt.includes(id)) : [];
+  const belegRoh = r.ursachen_belege && typeof r.ursachen_belege === "object" ? r.ursachen_belege : {};
+  const spielerTexte = verlauf.filter((n) => n.von === "spieler").map((n) => n.text);
+  const belege = {};
+  const vergeben = /* @__PURE__ */ new Set();
+  const genannt = (Array.isArray(r.ursachen_ids) ? r.ursachen_ids.map(Number) : []).filter((id, i, alle) => erlaubt.includes(id) && alle.indexOf(id) === i).filter((id) => {
+    const beleg = kurz(belegRoh[String(id)], 120);
+    if (!gestuetzt(beleg, spielerTexte) || vergeben.has(vergleichbar(beleg))) return false;
+    vergeben.add(vergleichbar(beleg));
+    belege[id] = beleg;
+    return true;
+  }).slice(0, MAX_AUSWAHL);
   if (genannt.length === 0) {
     const fragen = nachfragen < MAX_NACHFRAGEN;
     return {
@@ -654,9 +685,11 @@ function bereinigeAntwort(roh, verlauf, themen, ursachen, parteien = [], zufall 
     typ,
     nachfrage: null,
     thema_id: thema.id,
-    ursachen_ids: [
-      ...new Set(genannt)
-    ],
+    ursachen_ids: genannt,
+    ursachen_belege: Object.fromEntries(genannt.map((id) => [
+      id,
+      belege[id]
+    ])),
     zusammenfassung,
     stichwort,
     einschaetzung: null

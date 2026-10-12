@@ -46,6 +46,8 @@
     { "id": "forderung-steuern", "text": "Weniger Steuern!", "typ": "forderung", "thema": null, "auch_thema": [11] },
     { "id": "forderung-clubs", "text": "Clubs sollen baurechtlich als Kulturstätten gelten statt als Vergnügungsstätten.", "typ": "forderung", "thema": 32 },
     { "id": "wert-gerechtigkeit", "text": "Mir ist Gerechtigkeit wichtig.", "typ": "wert", "thema": null },
+    { "id": "arbeitszeit-erreichbarkeit", "text": "Mein Chef erwartet, dass ich abends und am Wochenende erreichbar bin, und ich finde kaum Zeit für meine Kinder.", "typ": "problem", "thema": null },
+    { "id": "miete-suche", "text": "Ich suche seit Monaten eine Wohnung, und alles, was frei wird, ist viel teurer als meine alte Miete.", "typ": "problem", "thema": 2, "ursachen": [202], "auch": [201, 205] },
     { "id": "kein-thema", "text": "Mein Nachbar mäht jeden Sonntag um sieben Uhr Rasen.", "typ": "problem", "thema": null }
   ]
 }
