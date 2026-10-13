@@ -3,7 +3,6 @@ name: thema-erfassen
 description: Erfasst für ein oder mehrere Themen des Politik-Duells mit freigegebenen Ursachen (auch KI-Freigabe) die Maßnahmen aus allen Wahlprogrammen – je Programm ein Erfassungs-Agent, Bewertung ohne Parteinamen durch einen Blind-Agenten, Eintragen als ungeprüfter KI-Entwurf, automatische Prüfung, Pull Request. Aufruf mit Themen-IDs, z. B. /thema-erfassen 17 oder /thema-erfassen 19 20 --bund.
 argument-hint: <Themen-ID> [<Themen-ID> …] [--bund | --land XX …]
 disable-model-invocation: true
-model: opus
 ---
 
 # Thema erfassen (Maßnahmen, KI-Entwurf)

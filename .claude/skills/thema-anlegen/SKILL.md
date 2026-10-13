@@ -3,7 +3,6 @@ name: thema-anlegen
 description: Phase A für ein oder mehrere neue Themen des Politik-Duells – Ziel, Ursachen mit unabhängigen Quellen, Ebene, Perspektivenprüfung, Leitfaden und Suchbegriffe, ohne Blick in Wahlprogramme. Endet mit KI-Freigabe (Testphase) und einem eigenen Commit; mit --erfassen geht es direkt mit /thema-erfassen weiter. Aufruf z. B. /thema-anlegen Kita-Betreuung oder /thema-anlegen Pflege; Rente --erfassen.
 argument-hint: <Thema>[; <Thema> …] [--erfassen] | <Thema> --neu <ID>
 disable-model-invocation: true
-model: opus
 ---
 
 # Neues Thema anlegen (Phase A: Ursachen)

@@ -3,10 +3,9 @@ name: liste-ausfuehren
 description: Arbeitet die bestätigten Zeilen einer Einordnungstabelle aus /liste-einordnen ab – je Aufruf den nächsten offenen Block (Haltungen; Themen und Forderungen; Prompt-Evaluation) mit /haltung-anlegen, /haltung-erfassen, /thema-anlegen, /forderung-erfassen und /thema-erfassen, dann Commit, Push und Pull Request. Aufruf z. B. /liste-ausfuehren .cache/listen/2026-10-05-umfrage.md oder mit --alle für alle Blöcke.
 argument-hint: <.cache/listen/….md> [--alle]
 disable-model-invocation: true
-model: opus
 ---
 
-<!-- „opus“: Die Koordination plant, startet Skripte und Agenten und prüft deren Ergebnisse kurz (passt / passt nicht, siehe README → „Prüfmuster“); die Fleißarbeit machen die Agenten. Urteile fallen in den Agenten (Modell fest in .claude/agents/), das Einordnen der Liste beim Modell der Sitzung in /liste-einordnen. -->
+<!-- Koordination mit dem Modell der Sitzung (am besten Opus; kein `model` im Kopf, weil Copilot es nicht kennt): Die Koordination plant, startet Skripte und Agenten und prüft deren Ergebnisse kurz (passt / passt nicht, siehe README → „Prüfmuster“); die Fleißarbeit machen die Agenten. Urteile fallen in den Agenten (Modell fest in .claude/agents/), das Einordnen der Liste beim Modell der Sitzung in /liste-einordnen. -->
 
 # Liste abarbeiten
 
