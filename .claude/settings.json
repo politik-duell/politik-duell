@@ -30,11 +30,11 @@
     ],
     "PreToolUse": [
       {
-        "matcher": "WebFetch|WebSearch|Read|Write|Edit|MultiEdit|NotebookEdit|Grep|Glob|Bash|NotebookRead",
+        "matcher": "WebFetch|WebSearch|Read|Write|Edit|MultiEdit|NotebookEdit|Grep|Glob|Bash|PowerShell|NotebookRead",
         "hooks": [
           {
             "type": "command",
-            "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/sperre.mjs\""
+            "command": "node -e \"const p=require('path'),u=require('url');import(u.pathToFileURL(p.join(process.env.CLAUDE_PROJECT_DIR||process.cwd(),'.claude','hooks','sperre.mjs')).href).then(m=>m.hauptprogramm())\""
           }
         ]
       }

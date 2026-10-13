@@ -14,11 +14,17 @@
 // 4. Agent haltung-einordnung (Haltungen ohne Parteinamen einordnen): Read nur .cache/haltung/<ID>/blind.json und
 //    die eigene Antwort, Write nur .cache/haltung/<ID>/protokoll/einordnung-antwort.txt, Bash nur
 //    `npm run -s haltung:antwort-pruefen -- <ID>`; keine Websuche (das Zitat genügt), alles andere gesperrt.
+// 5. GitHub Copilot in VS Code (.github/hooks/sperre.json, Umgebungsvariable SPERRE_UMGEBUNG=copilot):
+//    Werkzeugnamen und Eingaben weichen ab, und PreToolUse kennt kein agent_type. Darum prüft pruefeCopilot
+//    alle Texte der Eingabe unabhängig vom Werkzeugnamen, und SubagentStart/-Stop legen für die Dauer eines
+//    Agenten blind-bewertung bzw. haltung-einordnung eine Markierung in .cache/sperre-agenten/ an – solange
+//    eine besteht, gelten dessen Regeln für alle Werkzeugaufrufe (die Sitzung wartet ohnehin auf den Agenten).
 //
 // Eingabe: JSON auf stdin ({ tool_name, tool_input, cwd, agent_type? }). Ausgabe bei Sperre: Entscheidung
 // „deny“ mit Grund. Ohne Abhängigkeiten, damit der Hook schnell startet.
-import { existsSync, readFileSync } from 'node:fs'
+import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, statSync, writeFileSync } from 'node:fs'
 import { isAbsolute, join, resolve } from 'node:path'
+import { pathToFileURL } from 'node:url'
 
 const wurzel = process.env.CLAUDE_PROJECT_DIR || process.cwd()
 const MARKER = join(wurzel, '.cache', 'phase-a')
@@ -106,7 +112,7 @@ export function pruefe(eingabe, { liste, programmHosts, phaseA, wurzel: basis = 
   const protokolle = /(^|[\s/\\'"=])daten[/\\]protokolle([\s/\\'"]|$)/
   if (['Read', 'Grep', 'Glob', 'NotebookRead'].includes(werkzeug) && texte.some((t) => protokolle.test(t) || t.startsWith('daten/protokolle')))
     return 'Phase A (Ursachen festlegen): kein Zugriff auf daten/protokolle/ – dort stehen Programmstellen früherer Erfassungen.'
-  if (werkzeug === 'Bash' && typeof e.command === 'string') {
+  if ((werkzeug === 'Bash' || werkzeug === 'PowerShell') && typeof e.command === 'string') {
     const c = e.command
     if (/\bnpm run phase-a\b/.test(c) && !/[;&|]/.test(c.replace(/\b2>&1\b/g, ''))) return null
     if (cache.test(c) || /\.cache\//.test(c)) return 'Phase A (Ursachen festlegen): kein Zugriff auf .cache/ – dort liegen Programmtexte und Erfassungen.'
@@ -156,20 +162,120 @@ function ladeListe() {
   return { liste, programmHosts: [...programmHosts] }
 }
 
-// Nur als Hook ausführen, nicht beim Import in Tests.
-if (import.meta.url === `file://${process.argv[1]}`) {
+/** Alle Texte einer Werkzeugeingabe mit ihrem Schlüssel, auch verschachtelt (Copilot: urls als Liste u. Ä.). */
+export function texteDerEingabe(wert, schluessel = '') {
+  if (typeof wert === 'string') return [[schluessel, wert]]
+  if (Array.isArray(wert)) return wert.flatMap((w) => texteDerEingabe(w, schluessel))
+  if (wert && typeof wert === 'object') return Object.entries(wert).flatMap(([k, w]) => texteDerEingabe(w, k))
+  return []
+}
+
+const PHASE_A_BEFEHLE =
+  /\b(programme:(laden|suche|texte)|programm:(text|sichern)|zitate:pruefen|entwurf:|punkte\b|pruefliste|blind:reste|instrumente\b|haltung:(auftrag|programm-pruefen|blind|eintragen))|(^|[\s/\\])scripts[/\\](entwurf[/\\](programm|programme|treffer|reste)|pruefe-zitate|erzeuge-pruefliste)/
+
+/**
+ * Prüfung für GitHub Copilot: unabhängig vom Werkzeugnamen. `agenten` = Typen der laufenden Agenten
+ * blind-bewertung/haltung-einordnung (Markierungen aus SubagentStart). Reine Funktion für Tests.
+ */
+export function pruefeCopilot(eingabe, { liste, programmHosts, phaseA, agenten = [], wurzel: basis = wurzel }) {
+  const werkzeug = String(eingabe.tool_name ?? '')
+  const texte = texteDerEingabe(eingabe.tool_input ?? {})
+  const adressen = texte.map(([, t]) => t.trim()).filter((t) => /^https?:\/\//i.test(t))
+  const befehle = texte.filter(([k]) => /command|cmd/i.test(k)).map(([, t]) => t.trim())
+  const pfade = texte.filter(([k]) => /path|file|dir/i.test(k)).map(([, t]) => t)
+  const istWeb = adressen.length > 0 || /fetch|web/i.test(werkzeug)
+
+  for (const url of adressen) {
+    const grund = gesperrteAdresse(url, liste, programmHosts)
+    if (grund) return grund
+  }
+
+  const blind = agenten.some((a) => BLIND_AGENT.test(a))
+  const haltung = agenten.some((a) => HALTUNG_AGENT.test(a))
+  if (blind || haltung) {
+    const name = blind ? 'Bewertung ohne Parteinamen' : 'Einordnung ohne Parteinamen'
+    const pfadOk = blind ? blindPfadErlaubt : haltungPfadErlaubt
+    const pruefbefehl = blind ? BLIND_PRUEFBEFEHL : HALTUNG_PRUEFBEFEHL
+    const cwd = eingabe.cwd || basis
+    const gesperrt = `${name} (Agent läuft, .cache/sperre-agenten/): ${werkzeug} ist gesperrt. Erlaubt sind nur die Blindliste lesen, die eigene Antwort schreiben und die Selbstprüfung${blind ? ' sowie Websuche' : ''}.`
+    if (befehle.length) return befehle.every((b) => pruefbefehl.test(b)) && !pfade.length ? null : gesperrt
+    if (pfade.length) {
+      const art = /read|view|open|get_?file/i.test(werkzeug) ? 'Read' : 'Write'
+      return pfade.every((p) => pfadOk(art, p, basis, cwd)) ? null : gesperrt
+    }
+    if (blind && istWeb) return null
+    return gesperrt
+  }
+
+  if (!phaseA || istWeb) return null
+  if (befehle.some((b) => /^npm run phase-a\b/.test(b) && !/[;&|]/.test(b.replace(/\b2>&1\b/g, '')))) return null
+  const alle = texte.map(([, t]) => t)
+  if (alle.some((t) => /(^|[\s/\\'"=])\.cache([\s/\\'"]|$)/.test(t)))
+    return 'Phase A (Ursachen festlegen): kein Zugriff auf .cache/ – dort liegen Programmtexte und Erfassungen.'
+  if (alle.some((t) => /(^|[\s/\\'"=])daten[/\\]protokolle([\s/\\'"]|$)/.test(t)))
+    return 'Phase A (Ursachen festlegen): kein Zugriff auf daten/protokolle/ – dort stehen Programmstellen früherer Erfassungen.'
+  if (befehle.some((b) => PHASE_A_BEFEHLE.test(b)))
+    return 'Phase A (Ursachen festlegen): Werkzeuge, die Wahlprogramme lesen, sind gesperrt. Erlaubt: npm run quelle:text, npm run themen:ueberblick.'
+  return null
+}
+
+const AGENTEN_ORDNER = join(wurzel, '.cache', 'sperre-agenten')
+/** Eine Markierung gilt höchstens so lange; danach (Agent abgebrochen, kein SubagentStop) verfällt sie. */
+const AGENTEN_HOECHSTDAUER_MS = 2 * 60 * 60 * 1000
+
+function laufendeAgenten() {
+  if (!existsSync(AGENTEN_ORDNER)) return []
+  const typen = []
+  for (const datei of readdirSync(AGENTEN_ORDNER)) {
+    const pfad = join(AGENTEN_ORDNER, datei)
+    try {
+      if (Date.now() - statSync(pfad).mtimeMs > AGENTEN_HOECHSTDAUER_MS) rmSync(pfad, { force: true })
+      else typen.push(JSON.parse(readFileSync(pfad, 'utf8')).agent_type)
+    } catch {
+      // halb geschriebene oder gerade entfernte Markierung
+    }
+  }
+  return typen.filter((t) => typeof t === 'string')
+}
+
+/**
+ * Als Hook: Eingabe von stdin lesen, bei Sperre „deny“ ausgeben. Claude Code ruft das über `node -e` mit
+ * process.env.CLAUDE_PROJECT_DIR (sonst Arbeitsordner) auf – so hängt der Pfad nicht von der Shell ab:
+ * cmd und PowerShell setzen `$CLAUDE_PROJECT_DIR` nicht ein. Copilot: .github/hooks/sperre.json mit
+ * `modus` subagent-start bzw. subagent-stop für die Markierungen.
+ */
+export async function hauptprogramm(modus) {
   let roh = ''
   for await (const teil of process.stdin) roh += teil
   let eingabe
   try {
     eingabe = JSON.parse(roh)
   } catch {
-    process.exit(0)
+    return
+  }
+  const copilot = process.env.SPERRE_UMGEBUNG === 'copilot'
+  if (modus === 'subagent-start' || modus === 'subagent-stop') {
+    const typ = String(eingabe.agent_type ?? '')
+    if (!BLIND_AGENT.test(typ) && !HALTUNG_AGENT.test(typ)) return
+    const pfad = join(AGENTEN_ORDNER, `${String(eingabe.agent_id ?? typ).replace(/[^\w.-]/g, '_')}.json`)
+    if (modus === 'subagent-stop') rmSync(pfad, { force: true })
+    else {
+      mkdirSync(AGENTEN_ORDNER, { recursive: true })
+      writeFileSync(pfad, JSON.stringify({ agent_type: typ, start: new Date().toISOString() }))
+    }
+    return
   }
   const phaseA = existsSync(MARKER)
-  const braucheListe = eingabe.tool_name === 'WebFetch'
+  const texte = texteDerEingabe(eingabe.tool_input ?? {})
+  const braucheListe = eingabe.tool_name === 'WebFetch' || (copilot && texte.some(([, t]) => /^\s*https?:\/\//i.test(t)))
   const { liste, programmHosts } = braucheListe ? ladeListe() : { liste: null, programmHosts: [] }
-  const grund = pruefe(eingabe, { liste, programmHosts, phaseA, wurzel })
+  const grund = copilot
+    ? pruefeCopilot(eingabe, { liste, programmHosts, phaseA, agenten: laufendeAgenten(), wurzel })
+    : pruefe(eingabe, { liste, programmHosts, phaseA, wurzel })
   if (grund)
     console.log(JSON.stringify({ hookSpecificOutput: { hookEventName: 'PreToolUse', permissionDecision: 'deny', permissionDecisionReason: grund } }))
 }
+
+// Direkt aufgerufen (node .claude/hooks/sperre.mjs [modus]), nicht beim Import in Tests. pathToFileURL, weil
+// process.argv[1] unter Windows „C:\…“ ist, import.meta.url aber „file:///C:/…“.
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) await hauptprogramm(process.argv[2])

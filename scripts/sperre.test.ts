@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
 // @ts-expect-error – Hook in reinem JavaScript (schneller Start), ohne Typdeklaration
-import { pruefe } from '../.claude/hooks/sperre.mjs'
+import { pruefe, pruefeCopilot } from '../.claude/hooks/sperre.mjs'
 
 const liste = JSON.parse(readFileSync(new URL('../daten/gesperrte-adressen.json', import.meta.url), 'utf8'))
 const kontext = (phaseA = false) => ({ liste, programmHosts: ['cms.gruene.de', 'berlin-wird.de'], phaseA, wurzel: '/repo' })
@@ -33,6 +33,8 @@ describe('Programmsperre (PreToolUse-Hook)', () => {
     expect(p('Bash', { command: "npm run -s programme:suche '--' kita" })).toMatch(/Programme lesen|Wahlprogramme/)
     expect(p('Bash', { command: 'node --experimental-strip-types scripts/entwurf/programm-text.ts x' })).toMatch(/Phase A/)
     expect(p('Bash', { command: 'npm run phase-a -- ende' })).toBeNull()
+    expect(p('PowerShell', { command: 'Get-Content .cache\\entwurf\\17\\erfassung.json' })).toMatch(/Phase A/)
+    expect(p('PowerShell', { command: 'npm run -s programme:suche -- kita' })).toMatch(/Wahlprogramme/)
     expect(p('Bash', { command: 'npm run -s quelle:text -- https://www.dji.de/x.pdf --suche Kita' })).toBeNull()
     expect(p('Read', { file_path: '/repo/daten/README.md' })).toBeNull()
     expect(p('Read', { file_path: '/repo/daten/protokolle/18/2026-10-04-bund/erfassung.json' })).toMatch(/daten\/protokolle/)
@@ -117,6 +119,49 @@ describe('Programmsperre (PreToolUse-Hook)', () => {
       expect(pruefe({ tool_name: 'Read', tool_input: { file_path: '/repo/.cache/entwurf/9/erfassung.json' } }, kontext())).toBeNull()
       expect(pruefe({ tool_name: 'Read', tool_input: { file_path: '/repo/.cache/entwurf/9/erfassung.json' }, agent_type: 'programm-erfassung' }, kontext())).toBeNull()
       expect(blind('Read', { file_path: '/repo/.cache/entwurf/9/erfassung.json' }, { agent_type: 'projekt:blind-bewertung' })).toMatch(/gesperrt/)
+    })
+  })
+
+  describe('GitHub Copilot (andere Werkzeugnamen, kein agent_type)', () => {
+    const cp = (tool_name: string, tool_input: Record<string, unknown>, { phaseA = false, agenten = [] as string[] } = {}) =>
+      pruefeCopilot({ tool_name, tool_input, cwd: '/repo' }, { ...kontext(phaseA), agenten })
+
+    it('sperrt Parteiserver in jedem Werkzeug, auch in Listen', () => {
+      expect(cp('fetch_webpage', { urls: ['https://www.destatis.de/a', 'https://www.spd.de/x'] })).toMatch(/spd\.de ist gesperrt/)
+      expect(cp('run_in_terminal', { command: 'curl https://cms.gruene.de/p.pdf' })).toBeNull() // nur ganze Adressen als Wert
+      expect(cp('fetch_webpage', { urls: ['https://www.destatis.de/a'] })).toBeNull()
+    })
+
+    it('Phase A: sperrt .cache/, daten/protokolle/ und Programm-Werkzeuge unabhängig vom Werkzeugnamen', () => {
+      const a = { phaseA: true }
+      expect(cp('Read', { path: 'c:\\repo\\.cache\\entwurf\\17\\erfassung.json' }, a)).toMatch(/Phase A/)
+      expect(cp('grep_search', { query: 'Kita', includePattern: '.cache/**' }, a)).toMatch(/Phase A/)
+      expect(cp('run_in_terminal', { command: 'Get-Content daten/protokolle/18/x.txt' }, a)).toMatch(/daten\/protokolle/)
+      expect(cp('run_in_terminal', { command: 'npm run -s programme:suche -- kita' }, a)).toMatch(/Wahlprogramme/)
+      expect(cp('run_in_terminal', { command: 'npm run phase-a -- ende' }, a)).toBeNull()
+      expect(cp('Read', { path: 'docs/methode.md' }, a)).toBeNull()
+      expect(cp('Read', { path: '.cache/entwurf/17/erfassung.json' })).toBeNull()
+    })
+
+    it('solange blind-bewertung läuft: nur Blindliste, Antwort, Selbstprüfung und Websuche', () => {
+      const b = { agenten: ['blind-bewertung'] }
+      expect(cp('Read', { path: '.cache/entwurf/9/blind.json' }, b)).toBeNull()
+      expect(cp('read_file', { filePath: '/repo/.cache/entwurf/9/protokoll/bewertung-antwort.txt', startLine: 1 } as never, b)).toBeNull()
+      expect(cp('create_file', { filePath: '/repo/.cache/entwurf/9/protokoll/bewertung-antwort.txt', content: 'x' }, b)).toBeNull()
+      expect(cp('run_in_terminal', { command: 'npm run -s entwurf:antwort-pruefen -- 9', explanation: 'Prüfung' }, b)).toBeNull()
+      expect(cp('fetch_webpage', { urls: ['https://www.dji.de/b.pdf'] }, b)).toBeNull()
+      expect(cp('Read', { path: '.cache/entwurf/9/erfassung.json' }, b)).toMatch(/gesperrt/)
+      expect(cp('create_file', { filePath: '/repo/.cache/entwurf/9/blind.json', content: 'x' }, b)).toMatch(/gesperrt/)
+      expect(cp('run_in_terminal', { command: 'npm run -s entwurf:antwort-pruefen -- 9 && cat .cache/entwurf/9/kennungen.json' }, b)).toMatch(/gesperrt/)
+      expect(cp('grep_search', { query: 'SPD' }, b)).toMatch(/gesperrt/)
+      expect(cp('fetch_webpage', { urls: ['https://www.afd.de/x'] }, b)).toMatch(/gesperrt/)
+    })
+
+    it('solange haltung-einordnung läuft: keine Websuche', () => {
+      const h = { agenten: ['haltung-einordnung'] }
+      expect(cp('Read', { path: '.cache/haltung/4/blind.json' }, h)).toBeNull()
+      expect(cp('run_in_terminal', { command: 'npm run -s haltung:antwort-pruefen -- 4' }, h)).toBeNull()
+      expect(cp('fetch_webpage', { urls: ['https://www.dji.de/b.pdf'] }, h)).toMatch(/gesperrt/)
     })
   })
 })
