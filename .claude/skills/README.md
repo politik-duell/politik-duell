@@ -6,7 +6,7 @@ Die Skills bauen den Katalog für die **geschlossene Testphase** auf: alles als 
 flowchart TD
     L["/liste-einordnen<br/>Liste sortieren: Haltung, Forderung, Thema,<br/>Grenze, Pauschal, Tatsache, Meta, doppelt"]
     LA["Betreiberin hakt ab (oder --direkt)"]
-    LB["/liste-ausfuehren (opus)<br/>ein Block je Aufruf"]
+    LB["/liste-ausfuehren<br/>ein Block je Aufruf"]
     L --> LA --> LB
     LB -->|Haltungen| H1
     LB -->|Themen| T1
@@ -53,7 +53,7 @@ flowchart TD
 - Skripte statt Agenten, wo es geht (zählen, Fundstellen, Zitate, Zusammenführen, Bericht).
 - Keine inhaltlichen Rückfragen, keine Nachrecherche der Koordination, eine Runde für die Suchbegriffe.
 - Bund und Länder in einem Durchgang, mehrere Themen oder Haltungen je Aufruf.
-- Modelle: Koordination `opus` (plant, startet Skripte und Agenten, prüft kurz nach dem Prüfmuster unten). Fleißarbeit in den Agenten, Modell fest in der Agentenbeschreibung: Recherche (`ursachen-recherche`, `haltung-recherche`) `haiku`; Erfassung aus Programmen `haiku` für Themen (gleiche Vollständigkeit wie `sonnet` bei etwa einem Siebtel der Kosten, aber mehr Fehlgriffe und längere Laufzeit; die Erfassung nimmt im Zweifel auf, die Bewertung ohne Parteinamen sortiert aus – `thema-erfassen/evals/README.md`), für Haltungen noch `sonnet` (nicht verglichen); Bewertung und Einordnung `opus` – dort muss jeder einzelne Wert stimmen, ein Entwurf mit Prüfung und Nacharbeit kostete dreimal dieselbe Liste. `/liste-einordnen` läuft mit dem Modell der Sitzung.
+- Modelle: Koordination mit dem Modell der Sitzung, am besten Opus (plant, startet Skripte und Agenten, prüft kurz nach dem Prüfmuster unten). Die Skills legen es nicht fest: GitHub Copilot kennt `model: opus` nicht und lässt den Slash-Befehl dann nicht absenden. Fleißarbeit in den Agenten, Modell fest in der Agentenbeschreibung: Recherche (`ursachen-recherche`, `haltung-recherche`) `haiku`; Erfassung aus Programmen `haiku` für Themen (gleiche Vollständigkeit wie `sonnet` bei etwa einem Siebtel der Kosten, aber mehr Fehlgriffe und längere Laufzeit; die Erfassung nimmt im Zweifel auf, die Bewertung ohne Parteinamen sortiert aus – `thema-erfassen/evals/README.md`), für Haltungen noch `sonnet` (nicht verglichen); Bewertung und Einordnung `opus` – dort muss jeder einzelne Wert stimmen, ein Entwurf mit Prüfung und Nacharbeit kostete dreimal dieselbe Liste. `/liste-einordnen` läuft mit dem Modell der Sitzung.
 - Sammelbefehle: `entwurf:lauf -- vorab | auftraege | erfasst | blind | bewertet` erledigt einen Schritt für alle Themen eines Laufs – fünf Aufrufe statt rund 16 je Thema.
 - Kurze Überblicke: `themen:ueberblick -- --kurz` (eine Zeile je Thema) und `-- --haltungen` (ID und Frage) statt ganzer Dateien.
 - Ein Lauf für alle Themen: mehrere Themen in `/thema-erfassen` und Nachträge aus `/forderung-erfassen` laufen gemeinsam durch die Sammelbefehle, bei mehreren Themen ein Sammelauftrag je Programm (`--sammel`: ein Agent liest das Programm einmal für alle Themen), bis zu sieben gleichzeitig. Gemessen mit den Themen 30 und 33: 24 % weniger Tokens bei gleicher Fundquote (`thema-erfassen/evals/README.md`). Ein früherer Lauf mit Thema 18 (+39 %) gilt als nicht repräsentativ und ist kein Maßstab.

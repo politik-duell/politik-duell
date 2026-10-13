@@ -102,7 +102,7 @@ Danach ist der Katalog eingefroren. `zitate:pruefen` prüft künftig nur noch: P
 
 | Rolle | Modell | Was |
 |---|---|---|
-| Koordination (Skills) | **Opus** (Sitzungsmodell bzw. `model: opus` im Kopf) | Plan, Skripte starten, Prüfbögen lesen, passt / passt nicht |
+| Koordination (Skills) | **Opus** (Sitzungsmodell; kein `model` im Kopf der Skills, damit sie auch in GitHub Copilot laufen) | Plan, Skripte starten, Prüfbögen lesen, passt / passt nicht |
 | `programm-katalog` (neu) | Haiku | ein Kapitelblock → Aussagen |
 | `ursachen-recherche`, `haltung-recherche` | Haiku (bisher Opus) | Web-Recherche, Vorschlag als JSON |
 | `zuordnung` (neu, ersetzt `programm-erfassung` und `haltung-erfassung`) | Haiku | blinde Kandidatenliste → Ursache/Bündel/Hebel bzw. Stelle je Haltung |

@@ -3,7 +3,6 @@ name: haltung-anlegen
 description: Phase A für eine oder viele Haltungen (Wertfragen) des Politik-Duells – je Haltung ein Agent haltung-recherche (parallel) für neutrale Ja/Nein-Frage, Beschreibung, Zielkonflikte mit unabhängigen Quellen, Maßstab der Einordnung und Suchbegriffe, ohne Blick in Wahlprogramme. Endet mit KI-Freigabe (Testphase) und eigenem Commit; mit --erfassen geht es direkt mit /haltung-erfassen weiter. Aufruf z. B. /haltung-anlegen Wehrpflicht; Schuldenbremse --erfassen oder mit einer Auswahl aus /liste-einordnen.
 argument-hint: <Wertfrage oder Stichwort>[; …] | --liste <.cache/listen/…md> [--erfassen]
 disable-model-invocation: true
-model: opus
 ---
 
 # Haltung anlegen (Phase A)
