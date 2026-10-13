@@ -33,6 +33,8 @@ describe('Programmsperre (PreToolUse-Hook)', () => {
     expect(p('Bash', { command: "npm run -s programme:suche '--' kita" })).toMatch(/Programme lesen|Wahlprogramme/)
     expect(p('Bash', { command: 'node --experimental-strip-types scripts/entwurf/programm-text.ts x' })).toMatch(/Phase A/)
     expect(p('Bash', { command: 'npm run phase-a -- ende' })).toBeNull()
+    expect(p('PowerShell', { command: 'Get-Content .cache\\entwurf\\17\\erfassung.json' })).toMatch(/Phase A/)
+    expect(p('PowerShell', { command: 'npm run -s programme:suche -- kita' })).toMatch(/Wahlprogramme/)
     expect(p('Bash', { command: 'npm run -s quelle:text -- https://www.dji.de/x.pdf --suche Kita' })).toBeNull()
     expect(p('Read', { file_path: '/repo/daten/README.md' })).toBeNull()
     expect(p('Read', { file_path: '/repo/daten/protokolle/18/2026-10-04-bund/erfassung.json' })).toMatch(/daten\/protokolle/)

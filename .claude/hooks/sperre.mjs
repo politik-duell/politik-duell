@@ -19,6 +19,7 @@
 // „deny“ mit Grund. Ohne Abhängigkeiten, damit der Hook schnell startet.
 import { existsSync, readFileSync } from 'node:fs'
 import { isAbsolute, join, resolve } from 'node:path'
+import { pathToFileURL } from 'node:url'
 
 const wurzel = process.env.CLAUDE_PROJECT_DIR || process.cwd()
 const MARKER = join(wurzel, '.cache', 'phase-a')
@@ -106,7 +107,7 @@ export function pruefe(eingabe, { liste, programmHosts, phaseA, wurzel: basis = 
   const protokolle = /(^|[\s/\\'"=])daten[/\\]protokolle([\s/\\'"]|$)/
   if (['Read', 'Grep', 'Glob', 'NotebookRead'].includes(werkzeug) && texte.some((t) => protokolle.test(t) || t.startsWith('daten/protokolle')))
     return 'Phase A (Ursachen festlegen): kein Zugriff auf daten/protokolle/ – dort stehen Programmstellen früherer Erfassungen.'
-  if (werkzeug === 'Bash' && typeof e.command === 'string') {
+  if ((werkzeug === 'Bash' || werkzeug === 'PowerShell') && typeof e.command === 'string') {
     const c = e.command
     if (/\bnpm run phase-a\b/.test(c) && !/[;&|]/.test(c.replace(/\b2>&1\b/g, ''))) return null
     if (cache.test(c) || /\.cache\//.test(c)) return 'Phase A (Ursachen festlegen): kein Zugriff auf .cache/ – dort liegen Programmtexte und Erfassungen.'
@@ -156,15 +157,19 @@ function ladeListe() {
   return { liste, programmHosts: [...programmHosts] }
 }
 
-// Nur als Hook ausführen, nicht beim Import in Tests.
-if (import.meta.url === `file://${process.argv[1]}`) {
+/**
+ * Als Hook: Eingabe von stdin lesen, bei Sperre „deny“ ausgeben. Aufruf aus .claude/settings.json über
+ * `node -e` mit process.env.CLAUDE_PROJECT_DIR (sonst Arbeitsordner) – so hängt der Pfad nicht von der Shell ab:
+ * cmd und PowerShell (Windows ohne Git Bash, VS-Code-Chat) setzen `$CLAUDE_PROJECT_DIR` nicht ein.
+ */
+export async function hauptprogramm() {
   let roh = ''
   for await (const teil of process.stdin) roh += teil
   let eingabe
   try {
     eingabe = JSON.parse(roh)
   } catch {
-    process.exit(0)
+    return
   }
   const phaseA = existsSync(MARKER)
   const braucheListe = eingabe.tool_name === 'WebFetch'
@@ -173,3 +178,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   if (grund)
     console.log(JSON.stringify({ hookSpecificOutput: { hookEventName: 'PreToolUse', permissionDecision: 'deny', permissionDecisionReason: grund } }))
 }
+
+// Direkt aufgerufen (node .claude/hooks/sperre.mjs), nicht beim Import in Tests. pathToFileURL, weil
+// process.argv[1] unter Windows „C:\…“ ist, import.meta.url aber „file:///C:/…“.
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) await hauptprogramm()
