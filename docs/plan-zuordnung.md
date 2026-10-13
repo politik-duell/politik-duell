@@ -1,12 +1,15 @@
-# Plan: Verlässliche Zuordnung – die KI schlägt vor, die Person bestätigt
+# Plan: Verlässliche Zuordnung – bei Unsicherheit entscheidet die Person
 
-Stand: 13. 10. 2026 · Konzept, noch nicht umgesetzt. Entscheidungen offen (siehe „Offene Entscheidungen“).
+Stand: 13. 10. 2026 · Konzept, noch nicht umgesetzt. Grundsatzentscheidungen getroffen (siehe „Entscheidungen“).
 
 ## Ziel
 
-Wer ein persönliches Problem nennt, sieht weiterhin, welche Partei genau dafür am besten abschneidet. Neu ist: **Gewertet wird nur, was die Person als ihr Problem bestätigt hat.** Die KI versteht und schlägt vor, sie entscheidet nicht mehr allein darüber, welche Ursachen zählen.
+Wer ein persönliches Problem nennt, sieht weiterhin, welche Partei genau dafür am besten abschneidet. Neu ist zweierlei:
 
-Grundsatz: **Die KI ist Übersetzerin, die Person hat das letzte Wort.** Fehler der KI sollen klein, sichtbar und korrigierbar sein, statt unsichtbar ein Rundenergebnis zu drehen.
+1. **Die KI ordnet in zwei engen Schritten zu** – erst das Thema, dann nur unter dessen Ursachen. Das verhindert Sprünge in fremde Themen.
+2. **Ist die Zuordnung nicht sicher, entscheidet die Person.** Sie wählt selbst aus den Alltagssätzen des Themas, ohne Vorauswahl der KI, oder sagt „Nichts davon passt“. Nur sichere Zuordnungen gehen ohne Rückfrage in die Wertung.
+
+Grundsatz: **Die KI ist Übersetzerin, nicht Schiedsrichterin.** Wo sie raten müsste, rät sie nicht, sondern fragt.
 
 ## Anlass
 
@@ -32,6 +35,18 @@ Der Prompt regelt diese Fälle schon (`ki.ts` → `systemPrompt`: „Nimm keine 
 | `supabase/functions/analyse/index.ts` → `speichereRunde` | Runden ohne Wertung landen im Wortlaut in `review_eingaben` (nur Admins, 30 Tage). |
 | `docs/methode.md` → „Punkte in der Runde“, „Rolle der KI“ | Beschreiben die Zuordnung durch die KI mit Belegwörtern; angetippte Ursachen „gelten als Schilderung der Person“. |
 
+
+## Entscheidungen
+
+| Frage | Entscheidung |
+| --- | --- |
+| Bestätigung immer oder nur bei Unsicherheit? | **Nur bei Unsicherheit.** Sichere Zuordnungen gehen direkt zur Auflösung, wie heute. |
+| Vorauswahl durch die KI in der Auswahl? | **Keine.** Ist die KI unsicher, tippt die Person selbst – ein unsicherer Vorschlag würde sonst ungelesen bestätigt. |
+| „Nichts davon passt“ anbieten? | **Nur in der Auswahl**, also wenn die KI unsicher ist und Ursachen zum Antippen da sind. |
+| Text der Auswahl | Überschrift „Was davon trifft bei dir zu?“, darüber „Thema: *Name* · anderes Thema“, Knöpfe „Damit werten“ (wie heute) und „Nichts davon passt“. Kein „So habe ich dich verstanden“ – ohne Vorauswahl gäbe es nichts zu bestätigen. |
+
+**Folge der Entscheidungen:** Die Verlässlichkeit hängt jetzt daran, dass „unsicher“ gut erkannt wird. Die Fehler aus den Testpartien („Bus fährt kaum“ → Gesundheitssystem) hatte die KI als sicher behandelt. Deshalb verlässt sich der Plan nicht allein auf die Selbsteinschätzung der KI, sondern ergänzt feste Auslöser im Code (siehe „Wann gilt eine Zuordnung als unsicher?“).
+
 ## Neuer Ablauf
 
 ```mermaid
@@ -39,51 +54,67 @@ flowchart TD
     E[Eingabe] --> K1[KI, Schritt 1:<br/>Typ und Thema]
     K1 -->|forderung / wert / grenze| W[wie bisher]
     K1 -->|kein Thema| U[ungeprüft, ohne Wertung]
-    K1 -->|problem + Thema| K2[KI, Schritt 2:<br/>Vorschlag aus den Ursachen dieses Themas]
-    K2 --> B["Bestätigung:<br/>„So habe ich dich verstanden“"]
-    B -->|Stimmt so / angepasst| A[Auflösung mit Punkten]
-    B -->|Anderes Thema| T[Themenwahl] --> B
+    K1 -->|problem + Thema| K2[KI, Schritt 2:<br/>Ursachen nur dieses Themas]
+    K2 --> P{sicher?<br/>KI und Prüfung im Code}
+    P -->|ja| A[Auflösung mit Punkten]
+    P -->|nein| B["Auswahl ohne Vorauswahl:<br/>„Was davon trifft bei dir zu?“"]
+    B -->|Damit werten| A
+    B -->|anderes Thema| B
     B -->|Nichts davon passt| R[ohne Wertung → review_eingaben]
 ```
 
 ### 1. Schritt 1: Typ und Thema
 
 - Ein Aufruf mit dem Katalog **ohne Ursachen**: Themen mit Name und Beschreibung, dazu die Haltungen wie bisher. Rückgabe: `typ`, `thema_id`, `zusammenfassung`, `stichwort`, Nachfrage und Rückmeldung wie heute.
+- Neu: `thema_sicher` (ja/nein) und, falls nicht sicher, bis zu zwei weitere Themen (`thema_kandidaten`); ebenso `mehrere_probleme`, wenn die Eingabe erkennbar mehrere Probleme aus verschiedenen Themen nennt (Arzt und Bus).
 - Die Regeln für `forderung`, `wert`, `grenze` und Pauschalurteile bleiben unverändert (Grundprinzip 4, `docs/plan-haltungen.md`).
-- Ist das Thema unsicher, nennt die KI bis zu zwei Kandidaten (`thema_kandidaten`); die Bestätigung bietet sie zur Wahl an.
 
-### 2. Schritt 2: Vorschlag der Ursachen
+### 2. Schritt 2: Ursachen des Themas
 
-- Ein kurzer zweiter Aufruf nur mit den Ursachen des erkannten Themas (meist 4–6, je mit `alltag`). Rückgabe: bis zu `MAX_AUSWAHL` Ursachen-IDs als **Vormarkierung** – ohne Belegwörter, sie werden nicht mehr gebraucht.
-- Weil nur die Ursachen eines Themas im Blick sind, kann ein Satz wie „schlafe schlecht“ nicht mehr eine Ursache eines fremden Themas anziehen.
-- Ist sich die KI nicht sicher, markiert sie nichts vor. Das ist kein Fehler: Die Person tippt dann selbst.
+- Ein kurzer zweiter Aufruf nur mit den Ursachen des erkannten Themas (meist 4–6, je mit `beschreibung` und `alltag`). Rückgabe wie heute: `ursachen_ids` und `ursachen_belege` (wörtliche Belegwörter), dazu `sicher` (ja/nein).
+- Weil nur die Ursachen eines Themas im Blick sind, kann ein Satz wie „schlafe schlecht“ keine Ursache eines fremden Themas mehr anziehen.
+- Die Belegwörter bleiben: Sie zeigen bei sicheren Zuordnungen in der Auflösung „Deine Worte: …“ und dienen der Prüfung im Code.
 - Vorbild ist der zweite Aufruf für Instrumente bei Forderungen (`instrumenteZurAuswahl`, `mitInstrument`).
 
-### 3. Bestätigung in der App
+### 3. Wann gilt eine Zuordnung als unsicher?
 
-Nach der Eingabe erscheint statt der Auflösung:
+Unsicher ist sie, wenn **einer** dieser Auslöser greift. Ein falscher Alarm kostet nur einen Tipp, eine übersehene Unsicherheit dagegen eine falsche Wertung – die Auslöser sind deshalb bewusst großzügig.
 
-> **So habe ich dich verstanden:** *Arzttermine* · [anderes Thema]
-> ☑ Ich warte monatelang auf einen Facharzttermin
-> ☑ Der nächste Hausarzt ist weit weg
+| Auslöser | Woher | Fängt (Testpartie) |
+| --- | --- | --- |
+| KI meldet `thema_sicher: false` oder nennt `thema_kandidaten` | Schritt 1 | Windräder → Schule |
+| KI meldet `mehrere_probleme` | Schritt 1 | Arzt und Bus in einer Eingabe |
+| KI meldet in Schritt 2 `sicher: false` oder keine Ursache | Schritt 2 | wie heute die Nachfrage |
+| Kein Belegwort findet sich (Wortstamm) in `beschreibung` oder `alltag` der Ursache | Code, `bereinigeAntwort` | „Bus fährt kaum“ → „Termine … gesteuert“, „Formulare verstehe ich nicht“ → „Register nicht vernetzt“ |
+
+Die Wortstamm-Prüfung ist als Filter zu grob (deshalb wurde sie als Ablehnungsregel verworfen), als **Auslöser für die Auswahl** taugt sie: Sie muss nur verdächtige Fälle finden, nicht beweisen. Füllwörter („kaum“, „nicht“, „immer“) zählen nicht. Wie oft sie anschlägt, zeigt der Testsatz; schlägt sie zu oft an, wird die Liste der Füllwörter angepasst, nicht der Grundsatz.
+
+### 4. Auswahl in der App
+
+Greift ein Auslöser, erscheint statt der Auflösung:
+
+> Thema: *Arzttermine* · [anderes Thema]
+> **Was davon trifft bei dir zu?**
+> ☐ Ich warte monatelang auf einen Facharzttermin
+> ☐ Der nächste Hausarzt ist weit weg
 > ☐ …
-> [Stimmt so] · [Nichts davon passt]
+> [Damit werten] · [Nichts davon passt]
 
-- Angezeigt werden alle Ursachen des Themas in der `alltag`-Fassung, die vorgeschlagenen vorausgewählt. Höchstens `MAX_AUSWAHL` lassen sich wählen.
-- „Stimmt so“ schickt die Auswahl wie heute über `auswahl` an `analyse` – gewertet wird ohne weiteren KI-Aufruf.
-- Mehrere Probleme in einer Eingabe (Arzt und Bus in einer Schilderung): Die Bestätigung zeigt nur das Thema des Hauptproblems; über „anderes Thema“ lässt sich wechseln. Gewertet wird je Runde ein Thema, wie heute.
-- Die Zeile „Deine Worte: …“ in der Auflösung entfällt; an ihre Stelle tritt „Von dir bestätigt“.
-- Die bestehende Auswahl nach einer Nachfrage (`UrsachenAuswahl`) geht in dieser Bestätigung auf.
+- Angezeigt werden alle Ursachen des Themas in der `alltag`-Fassung, **nichts vorausgewählt**. Höchstens `MAX_AUSWAHL` lassen sich wählen.
+- „anderes Thema“ zeigt die `thema_kandidaten` aus Schritt 1 und darunter die übrigen Themen.
+- „Damit werten“ schickt die Auswahl wie heute über `auswahl` an `analyse` – gewertet wird ohne weiteren KI-Aufruf. In der Auflösung steht dann „Von dir gewählt“ statt „Deine Worte: …“.
+- Die bestehende Auswahl nach einer Nachfrage (`UrsachenAuswahl`) geht in dieser Ansicht auf; die Nachfrage selbst entfällt im Fall „problem mit Thema“, weil die Auswahl ihre Aufgabe übernimmt.
 
-### 4. „Nichts davon passt“
+### 5. „Nichts davon passt“
 
-- Die Runde endet ohne Wertung, wie heute nach zwei Nachfragen. Die Eingabe geht in die Review-Warteschlange `review_eingaben` (Grundprinzip 5: Wortlaut, ohne Parteien, ohne Verbindung zur Runde, 30 Tage) mit dem Vermerk, welches Thema vorgeschlagen war.
-- Damit muss die App bei dieser Anfrage den `verlauf` mitschicken (heute bei `auswahl` leer).
+- Nur in dieser Auswahl. Die Runde endet ohne Wertung, wie heute nach zwei Nachfragen. Die Eingabe geht in die Review-Warteschlange `review_eingaben` (Grundprinzip 5: Wortlaut, ohne Parteien, ohne Verbindung zur Runde, 30 Tage) mit dem Vermerk, welches Thema angeboten war.
+- Dafür muss die App bei dieser Anfrage den `verlauf` mitschicken (heute bei `auswahl` leer).
 - **So lernt der Katalog:** Aus diesen Eingaben entstehen neue `alltag`-Sätze oder neue Ursachen (Skill `/thema-erfassen`, Recherche wie bei `/thema-anlegen`). Beispiel aus der Testpartie: eine Ursache zu Alltagskontakt und gemeinsamer Sprache vor Ort beim Thema Zuwanderung und Integration.
 
 ## Was sich nicht ändert
 
 - Punkte kommen deterministisch aus der Datenbank (`bewertung.ts`), Belege nur aus der Datenbank.
+- Sichere Zuordnungen gehen ohne Zwischenschritt zur Auflösung, wie heute.
 - Höchstens drei Ursachen je Runde, Gewichtung der Lösungswege, `abdeckung`, Bund und Länder.
 - Forderungs- und Haltungskarte, Grenze, Pauschalurteile.
 - Keine Speicherung des Wortlauts bei gewerteten Runden.
@@ -91,44 +122,37 @@ Nach der Eingabe erscheint statt der Auflösung:
 ## Kosten
 
 - Heute geht bei **jedem** Aufruf der ganze Katalog mit (rund 42.000 Zeichen, grob 11.000–13.000 Token).
-- Neu: Schritt 1 mit Themen ohne Ursachen (grob ein Fünftel davon), Schritt 2 mit den Ursachen eines Themas (wenige Hundert Token).
-- Zwei Aufrufe statt einem sind damit nach dieser Schätzung **deutlich günstiger** als heute. Die Bestätigung selbst kostet keinen KI-Aufruf. Vor der Umsetzung den Prompt messen (Token-Angabe in der Antwort von Mistral bei einem einzelnen Aufruf), statt der Schätzung zu vertrauen.
+- Neu: Schritt 1 mit Themen ohne Ursachen (grob ein Fünftel davon), Schritt 2 mit den Ursachen eines Themas (wenige Hundert Token). Zwei Aufrufe sind damit nach dieser Schätzung **deutlich günstiger** als einer heute. Die Auswahl kostet keinen KI-Aufruf; Nachfragen fallen bei „problem mit Thema“ weg.
+- Vor der Umsetzung den Prompt messen (Token-Angabe in der Antwort von Mistral bei einem einzelnen Aufruf), statt der Schätzung zu vertrauen.
 
 ## Prüfung
 
-- **Unit-Tests** (`ki.test.ts`, `logik.test.ts`): Schritt 1 und 2 bereinigen, Vormarkierung nur aus dem Thema, „Nichts davon passt“ landet in `review_eingaben`, Auswahl über `auswahl` wie bisher.
+- **Unit-Tests** (`ki.test.ts`, `logik.test.ts`): Schritt 1 und 2 bereinigen; jeder Auslöser aus „Wann gilt eine Zuordnung als unsicher?“ mit Beispielen aus mehreren Themen; Wortstamm-Prüfung mit Füllwörtern; „Nichts davon passt“ landet in `review_eingaben`; Auswahl über `auswahl` wie bisher.
 - **Mock** (`src/logic/analyse.ts`): Schritt 1 und 2 über Schlagwörter nachbilden, damit `VITE_DATENQUELLE=mock` den neuen Ablauf zeigt.
-- **Kleiner Testsatz für die echte KI**: die 12 Eingaben der Testpartien plus je drei Formulierungen für „falsches Thema“ und „Beleg passt nicht“, zusammen rund 20. Erwartetes Ergebnis je Eingabe vorher festlegen und gegenlesen lassen; ein Lauf je Eingabe, wiederholt nur bei überraschendem Ergebnis. Läuft nur nach Änderungen am Prompt, lokal gegen Mistral mit `bereinigeAntwort`, **nicht** über die öffentliche Funktion (sonst füllt er `review_eingaben` und `runden`). Antworten aufzeichnen, damit Änderungen an der Bereinigung ohne neuen Aufruf geprüft werden können. Format wie `docs/prompt-evaluation.md`.
-- Weil die Bestätigung Fehler abfängt, muss der Test zeigen, dass die KI **meist** richtig vorschlägt – nicht immer.
+- **Kleiner Testsatz für die echte KI**: die 12 Eingaben der Testpartien plus je drei Formulierungen für „falsches Thema“ und „Beleg passt nicht“, zusammen rund 20. Erwartetes Ergebnis je Eingabe vorher festlegen (sicher zugeordnet mit welchen Ursachen, oder Auswahl) und gegenlesen lassen; ein Lauf je Eingabe, wiederholt nur bei überraschendem Ergebnis. Läuft nur nach Änderungen am Prompt, lokal gegen Mistral mit `bereinigeAntwort`, **nicht** über die öffentliche Funktion (sonst füllt er `review_eingaben` und `runden`). Antworten aufzeichnen, damit Änderungen an Bereinigung und Auslösern ohne neuen Aufruf geprüft werden können. Format wie `docs/prompt-evaluation.md`.
+- **Wichtigste Kennzahl:** Wie viele falsche Zuordnungen gehen ohne Auswahl in die Wertung? Ziel ist null im Testsatz. Zweitrangig: wie oft die Auswahl unnötig erscheint.
 
 ## Risiken
 
 | Risiko | Einschätzung und Gegenmittel |
 | --- | --- |
-| Ein Klick mehr pro Runde, weniger „magisch“ | Bei richtigem Vorschlag genügt ein Tipp. Die Bestätigung zeigt zugleich, dass das Spiel zugehört hat. |
-| Taktische Auswahl: Ursachen antippen, bei denen die eigene Partei gut abschneidet | Schon heute über die Wortwahl möglich. Die Auswahl zeigt keine Parteien und keine Punkte; der Themenhinweis verrät vor der Auflösung nichts über einzelne Parteien. Gering, nicht null. |
-| Personen bestätigen ungelesen den Vorschlag | Dann gilt im schlechtesten Fall der heutige Stand. Vorschläge nur bei Sicherheit, sonst ohne Vormarkierung. |
-| Mehr Runden ohne Wertung durch „Nichts davon passt“ | Erwünscht: Sie zeigen die Lücken im Katalog statt sie mit falschen Punkten zu überdecken. Anteil in der Admin-Ansicht beobachten. |
-
-## Offene Entscheidungen
-
-1. **Bestätigung immer oder nur bei Unsicherheit?** Vorschlag: immer – einheitlicher Ablauf, und nur so gilt Grundprinzip 2 ohne Ausnahme.
-2. **Zweiter Aufruf oder keine Vormarkierung?** Ohne Schritt 2 wäre es noch günstiger, die Person müsste aber immer selbst tippen. Vorschlag: Schritt 2 behalten, bei Fehler oder Zeitüberschreitung ohne Vormarkierung weiter.
-3. **„Nichts davon passt“ immer anbieten?** Vorschlag: ja.
-4. **Bestätigungstext** („So habe ich dich verstanden“) und Darstellung mit der Gestaltung abstimmen (Quizshow-Anmutung, `/ux-copy`).
+| Die KI hält eine falsche Zuordnung für sicher | Hauptrisiko dieser Variante. Gegenmittel: feste Auslöser im Code statt nur Selbsteinschätzung; Kennzahl im Testsatz; Meldungen über „Fehler melden“ auswerten. |
+| Auslöser schlagen zu oft an, das Spiel fragt ständig | Kostet je einen Tipp. Füllwörter anpassen, Anteil im Testsatz und in der Admin-Ansicht beobachten. |
+| Taktische Auswahl: Ursachen antippen, bei denen die eigene Partei gut abschneidet | Nur in der Auswahl möglich und schon heute über die Wortwahl. Die Auswahl zeigt keine Parteien und keine Punkte. Gering, nicht null. |
+| Mehr Runden ohne Wertung durch „Nichts davon passt“ | Erwünscht: Sie zeigen die Lücken im Katalog statt sie mit falschen Punkten zu überdecken. |
 
 ## Änderungen an Dokumenten
 
-- `docs/methode.md` → „Punkte in der Runde“, Punkt 2: Zuordnung durch die KI als Vorschlag, gewertet wird die Bestätigung; Belegwörter entfallen; „Nichts davon passt“ ergänzen.
-- `docs/methode.md` → „Rolle der KI“: Tabelle anpassen („schlägt Thema und Ursachen vor“), Hinweis auf zwei Schritte.
-- `docs/konzept.md` (Spielablauf, KI-Schnittstelle) und `docs/datenmodell.md` (Vermerk des vorgeschlagenen Themas in `review_eingaben`, falls neue Spalte).
-- `CLAUDE.md` → „Kurzfassung, Runde“: Bestätigung erwähnen.
+- `docs/methode.md` → „Punkte in der Runde“, Punkt 2: Zuordnung in zwei Schritten; bei Unsicherheit wählt die Person ohne Vorauswahl; „Nichts davon passt“ ergänzen; Nachfrage bei „problem mit Thema“ entfällt.
+- `docs/methode.md` → „Rolle der KI“: Tabelle anpassen, Auslöser für Unsicherheit kurz nennen.
+- `docs/konzept.md` (Spielablauf, KI-Schnittstelle) und `docs/datenmodell.md` (Vermerk des angebotenen Themas in `review_eingaben`, falls neue Spalte).
+- `CLAUDE.md` → „Kurzfassung, Runde“: Auswahl bei Unsicherheit erwähnen.
 
 ## Reihenfolge
 
-1. Entscheidungen oben treffen; Prompt messen (Kosten).
-2. Schritt 1 und 2 in `ki.ts` und `analyse/index.ts`, mit Unit-Tests und Mock. Antwortformat abwärtskompatibel halten, bis die App umgestellt ist.
-3. Bestätigung in der App (`Runde.tsx`, `UrsachenAuswahl.tsx`, `Aufloesung.tsx`), „Nichts davon passt“ mit Speicherung.
-4. Testsatz einmal vorher (heutiger Stand) und einmal nachher laufen lassen.
+1. Prompt messen (Kosten); Testsatz mit erwarteten Ergebnissen anlegen und gegenlesen lassen; einmal mit dem heutigen Stand laufen lassen.
+2. Schritt 1 und 2 in `ki.ts` und `analyse/index.ts`, mit den Auslösern, Unit-Tests und Mock. Antwortformat abwärtskompatibel halten, bis die App umgestellt ist.
+3. Auswahl in der App (`Runde.tsx`, `UrsachenAuswahl.tsx`, `Aufloesung.tsx`), „Nichts davon passt“ mit Speicherung.
+4. Testsatz erneut laufen lassen; Füllwörter und Auslöser nachjustieren.
 5. `docs/methode.md` und die übrigen Dokumente anpassen.
 6. Katalog aus „Nichts davon passt“ ergänzen – laufend, über die bestehenden Skills.
