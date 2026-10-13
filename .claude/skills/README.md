@@ -44,6 +44,7 @@ flowchart TD
 | Gleiche Suche für alle | Suchbegriffe und Leitfaden je Thema bzw. Haltung, für alle Programme gleich, von Skripten gezählt; vor dem Erfassen je Ursache eine Regel und Suchbegriffe (`daten:pruefen`, `entwurf:auftrag`) |
 | Belegte Zitate | Jeder Erfassungs-Agent prüft sein Zitat gegen die PDF-Seite (`entwurf:programm-pruefen`, `haltung:programm-pruefen`); `zitate:pruefen` in der CI |
 | Urteil ohne Parteinamen | `blind-bewertung` und `haltung-einordnung` sehen nur neutralisierte Listen; der Hook sperrt ihnen alles andere |
+| Auch mit GitHub Copilot | VS Code liest Skills und Agenten aus `.claude/`; `.github/hooks/sperre.json` ruft denselben Hook auf. Copilot nennt Werkzeuge anders und schickt kein `agent_type` mit, darum prüft der Hook dort alle Texte der Eingabe und markiert laufende Bewertungs- und Einordnungs-Agenten über SubagentStart/-Stop (`.cache/sperre-agenten/`, verfällt nach 2 h) |
 | Keine Eingriffe der Koordination | Sie liest keine Programme und vergibt keine Werte; Rückfragen nur bei Skriptfehlern und im Protokoll |
 | Fehlende Daten kosten nichts | Nicht durchsuchte Programme bleiben „noch nicht erfasst“, nie „keine Maßnahme“ |
 

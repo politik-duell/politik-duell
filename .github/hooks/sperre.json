@@ -1,0 +1,13 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      { "type": "command", "command": "node .claude/hooks/sperre.mjs", "cwd": ".", "env": { "SPERRE_UMGEBUNG": "copilot" }, "timeout": 15 }
+    ],
+    "SubagentStart": [
+      { "type": "command", "command": "node .claude/hooks/sperre.mjs subagent-start", "cwd": ".", "env": { "SPERRE_UMGEBUNG": "copilot" }, "timeout": 15 }
+    ],
+    "SubagentStop": [
+      { "type": "command", "command": "node .claude/hooks/sperre.mjs subagent-stop", "cwd": ".", "env": { "SPERRE_UMGEBUNG": "copilot" }, "timeout": 15 }
+    ]
+  }
+}
