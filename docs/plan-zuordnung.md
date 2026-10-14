@@ -233,5 +233,5 @@ Nach jeder Eingabe mit Thema erscheint vor der Auflösung eine von zwei Ansichte
    - Ist die KI unsicher, bleibt ihre Nachfrage im Gespräch stehen; darunter steht die Auswahl ohne Vorauswahl. Man kann also antippen oder weiterschreiben.
    - Die Auflösung zeigt je Ursache „Von dir bestätigt“ mit dem angetippten Alltagssatz statt „Deine Worte“.
 4. Testsatz erneut laufen lassen; Füllwörter und Auslöser nachjustieren.
-5. `docs/methode.md` und die übrigen Dokumente anpassen.
+5. ~~`docs/methode.md` und die übrigen Dokumente anpassen~~ (umgesetzt: `docs/methode.md`, `docs/konzept.md`, `docs/datenmodell.md`, `CLAUDE.md`, Methodenseite der App).
 6. Katalog aus „Nichts davon passt“ ergänzen – laufend, über die bestehenden Skills.
