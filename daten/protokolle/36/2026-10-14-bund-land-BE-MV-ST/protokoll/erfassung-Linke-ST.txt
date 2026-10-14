@@ -1,0 +1,61 @@
+{
+  "partei_id": 16,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Stadtumbauprogramm bis 2035 gegen Leerstand: Rückbau und Aufwertung im Bestand finanzieren.",
+      "ursachen_ids": [3602],
+      "ursachen_offen": [3603],
+      "buendel": "Nutzungsmischung und Ansiedlung fördern",
+      "zitat": "Wir wollen: […] gegen den Leerstand die Auflage eines neuen Stadtumbauprogramms bis 2035 für den Rückbau und Aufwertung im Bestand finanzieren.",
+      "seite": 85
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 3604,
+      "seiten": [63, 64, 65, 104],
+      "grund": "Öffnungszeiten (S. 63) betreffen Jugendangebote, Bus/Bahn und Radwege für Jugendliche (S. 64–65), Rad- und Fußverkehr sowie Tempo 30 (S. 104). Kein Bezug zu Innenstadt, Ortskern, Einzelhandel oder Leerstand (R2); Parken und Ladenöffnung nicht behandelt."
+    }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "stadtumbau", "ursache": 3602, "richtung": "Nutzungsmischung und Ansiedlung fördern" },
+    { "begriff": "nachnutzung", "ursache": 3602, "richtung": "Nutzungsmischung und Ansiedlung fördern" }
+  ]
+}
+
+PROTOKOLL – Erfassung Linke (Land ST), Thema 36 „Leerstand und Geschäftsschließungen in Innenstädten“
+
+Gelesen:
+- Inhaltsverzeichnis S. 2–6; Titelseite S. 1 (Bild, kein Text).
+- Kapitel 9 „Kommunalpolitik und Wohnen“ (S. 76–85, mit Städtebau/Leerstand S. 85) und Wohnen-Abschnitt S. 82–84.
+- Fundstellen: S. 19 (Einleitung, übersprungen), S. 63–65 (Jugendangebote), S. 104 (Verkehr).
+- Zur Abgrenzung durchgesehen: Verkehr/ÖPNV (S. 102–105), Wirtschaft (S. 86–90), Tourismus/Gastronomie (S. 90 ff.).
+- Stand im PDF: Beschluss vom 14. März 2026, entspricht dem Auftrag.
+
+Nicht erfasst:
+- S. 85: „Die Linke setzt sich für Nachnutzung und moderate Verdichtung bestehender Siedlungsflächen ein.“ – allgemeines Bekenntnis ohne konkrete Handlungszusage.
+- S. 85: Stadtumbau mit öffentlicher Beteiligung zur Quartiersentwicklung fortführen – Zitat nennt weder Innenstadt noch Leerstand (R2).
+- S. 83: Stadtumbauprogramme mit Landes- und Bundesmitteln aufstocken – Zitat nennt weder Innenstadt noch Leerstand (R2).
+- S. 85: explodierende Gewerbemieten, Verödung der Innenstädte – Lagebeschreibung, keine Maßnahme.
+- S. 63: „Wo Raum fehlt, wird Leerstand zum Freiraum“ / „Leerstand zu Freiräumen machen“ – Jugendfreiräume, anderer Zusammenhang.
+- S. 63: verlässliche Öffnungszeiten – Jugendclubs, keine Ladenöffnungszeiten.
+- S. 64–65: Bus/Bahn, sichere Rad- und Schulwege – Jugendmobilität ohne Innenstadtbezug (R2).
+- S. 104: Radwegebau, Radschnellwege, Fußwege, Tempo 30, Fahrradstraßen – kein Innenstadt-/Einzelhandelsbezug im Zitat (R2).
+- S. 19: „mehr Stadtgrün“ investieren – Einleitung, Bekenntnis.
+- S. 90: Investitionsfonds für Mittelstand und Handwerk – kein Innenstadt- oder Leerstandsbezug.
+- Lebensmitteleinzelhandel (Konzerne, Handelspraktiken) und Digital-Points im Tante-Emma-Laden – Ursachen außerhalb der für dieses Programm zulässigen Ursachen.
+
+Grenzfall:
+- Stadtumbau gegen Leerstand (S. 85): zugeordnet zu 3602 (Nachnutzung/Nutzungsmischung im Leerstand), zusätzlich offen für 3603, weil die Maßnahme die Aufwertung im Bestand betrifft. Bündel „Nutzungsmischung und Ansiedlung fördern“ gesetzt, da „Leerstandsmanagement“ dort geführt wird.
+
+Richtungen ohne Maßnahme:
+- 3602 „Marktprofile und Wettbewerb“: nichts gefunden.
+- 3603 „Aufenthaltsqualität und Verkehrsberuhigung“, „Sauberkeit, Sicherheit und Instandhaltung“: nichts Innenstadtbezogenes gefunden (S. 104 Tempo 30 ohne Innenstadtbezug).
+- 3604 „Erreichbarkeit mit dem Auto und Parkplätze“: nichts gefunden.
+- 3604 „Nahmobilität und öffentlicher Verkehr“: nur S. 64–65 und S. 104, ohne Innenstadt-/Einzelhandelsbezug.
+- 3604 „Öffnungszeiten und zeitliche Zugänglichkeit“: nur S. 63 (Jugendarbeit).
+
+Seiten ohne Text: S. 1 (Titelseite mit Bild) – keine Rolle für das Ergebnis.
+
+Hinweis zur Prüfung: Das Erfassungs-Skript (npm run -s entwurf:programm-pruefen) konnte in dieser Sitzung nicht ausgeführt werden (keine Shell verfügbar). Das JSON wurde manuell gegen die Textdatei geprüft: Zitat und Seite 85 stimmen überein. Prüfung und Kurzbericht sind von der Koordination auszuführen.

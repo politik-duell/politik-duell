@@ -1,0 +1,35 @@
+{
+  "partei_id": 15,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Begleitetes Fahren ab 16 Jahren ermöglichen",
+      "ursachen_ids": [3502],
+      "buendel": "Ausbildung und Prüfung entschlacken",
+      "zitat": "In diesem Zusammenhang wollen wir auch das begleitete Fahren bereits ab 16 Jahren ermöglichen.",
+      "seite": 43
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 3501,
+      "seiten": [42, 43, 44, 45, 46],
+      "grund": "Kapitel Verkehr gelesen; nur Aussagen zu Kfz-Verkehr, Tempolimit, Maut, Schiene, Flughafen-Nebenkosten. Nichts zu Fahrschul- oder Führerscheinpreisen, Gebühren, Wettbewerb oder Transparenz."
+    }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "begleitete Fahren", "ursache": 3502, "richtung": "Ausbildung und Prüfung entschlacken" }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis (S. 3–5); Kapitel „Verkehr“ (S. 42–46) vollständig; Fundstellen S. 28 und 33 (Gesundheitskapitel: Krankenhaus, Ambulanz, Heilpraktiker – kein Bezug zum Führerschein); S. 42, 43 (Fundstelle begleitetes Fahren), S. 46.
+
+Erfasst: S. 43 „begleitetes Fahren bereits ab 16 Jahren ermöglichen“ – Ausbildungsform und Einstiegsalter, daher 3502 (Ausbildungsanforderungen); Bündel „Ausbildung und Prüfung entschlacken“ gesetzt, weil es die einzige Zusage in diesem Bereich ist. Suchbegriff „begleitetes fahren“ hat im Text nicht getroffen, weil der Text „begleitete Fahren“ hat.
+
+Nicht erfasst: Die Aussagen zur „individuellen Mobilität muss bezahlbar bleiben“ (S. 42) sind Ziel bzw. Bekenntnis ohne Führerscheinbezug. Tempolimit, Maut, Verbrenner, Flughafenentgelte (S. 42–46) betreffen Autofahren bzw. Verkehr allgemein (R2), nicht den Erwerb der Fahrerlaubnis.
+
+Richtungen ohne Maßnahme: „Führerscheinkosten senken und Zugang erleichtern“ (3501) – keine Aussage zu Führerscheinkosten, Fahrschulgebühren oder Förderung. „Wettbewerb und Preistransparenz in Fahrschulen“ (3501) – nichts gefunden. „Ausbildung und Prüfung entschlacken“ – nur das begleitete Fahren, keine Pflichtstunden, Sonderfahrten oder Prüfungsänderungen. „Qualität und Prüfungsreife sichern“ (3502) – nur Heilpraktiker-Prüfungsstandards (S. 33), die nicht die Fahrerlaubnis betreffen.
+
+Seiten ohne Text: keine im Verkehrskapitel.

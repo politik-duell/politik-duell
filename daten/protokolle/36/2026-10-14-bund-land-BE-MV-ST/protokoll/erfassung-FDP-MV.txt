@@ -1,0 +1,58 @@
+{
+  "partei_id": 14,
+  "land": "MV",
+  "massnahmen": [
+    {
+      "beschreibung": "Sonntagsöffnungsverbot vollständig aufheben (im Kapitel Tourismus genannt, ohne Innenstadtbezug).",
+      "ursachen_ids": [],
+      "ursachen_offen": [3604],
+      "buendel": "Öffnungszeiten und zeitliche Zugänglichkeit",
+      "zitat": "Wir Freie Demokraten werden: […] das Sonntagsöffnungsverbot vollständig aufheben.",
+      "seite": 19
+    },
+    {
+      "beschreibung": "Innerstädtische Grünflächen, Kleingärten und Kaltluftschneisen fördern, um Überhitzung vorzubeugen und bebaute Flächen lebenswerter zu machen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [3603],
+      "buendel": "Aufenthaltsqualität und Verkehrsberuhigung",
+      "zitat": "Wir Freie Demokraten werden: […] die Entwicklung innerstädtischer Grünflächen, Kleingartenanlagen und Kaltluftschneisen gezielt fördern, um sommerlicher Überhitzung vorzubeugen und bebaute Flächen lebenswerter für Menschen, Pflanzen und Tiere zu machen.",
+      "seite": 32
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 3602,
+      "seiten": [4, 7, 19, 75, 76, 77, 78, 79, 80],
+      "grund": "Gewerbeflächen, Gründung und wirtschaftliche Freiheitszonen (S. 4, 7) ohne Innenstadt- oder Ladenbezug; Kommunenkapitel (S. 75–80) ohne Maßnahme zu Innenstädten, Sortiment oder Nutzungsmischung."
+    }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "innerstädtische Grünflächen", "ursache": 3603, "richtung": "Begrünung innerstädtischer Flächen" }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen (PDF-Seiten): S. 2 (Inhaltsverzeichnis); Wirtschaft: S. 4 (Gewerbeflächen), S. 19–20 (Tourismus), S. 32–33 (Klima/Grün); Bürger und Staat, Infrastruktur, Digitalisierung: S. 53–62; Kommunen: S. 74–80; Fundstelle S. 124 (Sportstätten); Sicherheit: S. 132–133. Die übrigen Kapitel (Wirtschaft S. 5–18, 21–31, 34–35; Selbstbestimmtheit; Finanzen; Bildung; Ehrenamt; Rechtsstaat) nur per Stichwortsuche in der Textdatei geprüft (Innenstadt, Ortskern, Einzelhandel, Leerstand, Handel, Ladenöffnung, Sonntag, Parken, Stadtbild, Aufenthalt, Verkehr, Zentren). Treffer zu Innenstadt, Ortskern, Einzelhandel oder Leerstand: keine.
+
+Grenzfälle (als ursachen_offen eingetragen):
+- S. 19, Sonntagsöffnungsverbot aufheben: Öffnungszeiten von Geschäften (3604), Zitat nennt aber weder Innenstadt noch Einzelhandel (R2). Steht im Tourismus-Kapitel.
+- S. 32–33, innerstädtische Grünflächen fördern: Gestaltung bebauter Flächen (3603), Motiv Klimaanpassung; „innerstädtisch“ statt „Innenstadt“ im Zitat.
+
+Nicht erfasst (gelesen, nicht aufgenommen):
+- S. 61–62, Fahrradinfrastruktur in Kommunen, landesweites ÖPNV-Konzept, Rufbus, Deutschlandticket, Barrierefreiheit im ÖPNV, DB-Anbindung der Städte, Mobilitätsplattformen, Führerschein: allgemeine Mobilität ohne Bezug zu Innenstadt oder Einzelhandel (R2 sinngemäß); nach R1 bei 3604 nur mit Innenstadtbezug.
+- S. 61, digitale Parkleitsysteme mit Bezahlfunktion, Ost-West-Bundesstraße, Gigaliner: Autoverkehr/Parken ohne Innenstadtbezug (R2).
+- S. 4, Gewerbeflächenmanagement, wirtschaftliche Freiheitszonen: Ansiedlung von Gewerbe ohne Innenstadtbezug (3602 nur für Innenstädte).
+- S. 19, Abbau von Auflagen für Beherbergung und Gastronomie, Ablehnung der Übernachtungsteuer: kein Bezug zu Geschäften in Innenstädten.
+- S. 56, digitale Verwaltung, „Öffnungszeiten von gestern“: Behörden, keine Geschäfte.
+- S. 124, Instandhaltung von Sportstätten: kein Stadtbild- oder öffentlicher-Raum-Bezug im Sinne von 3603.
+- S. 132–133, Polizeipräsenz, Personal, Ablehnung flächendeckender Videoüberwachung: Sicherheit, die R1 nicht zu 3603 zählt; kein Innenstadtbezug.
+- S. 56–57, 83: Öffnungszeiten von Verwaltung und Kitas: nicht Geschäfte.
+
+Richtungen ohne Maßnahme (3602): Nutzungsmischung und Ansiedlung in Innenstädten, Leerstandsmanagement, Zwischennutzung, Innenstadtfonds, Marktprofile und Wettbewerb in Innenstädten – keine Aussage im Programm.
+Richtungen ohne Maßnahme (3603): Aufenthaltsqualität, Fußgängerzonen, Verkehrsberuhigung, Platzgestaltung, Sauberkeit und Ordnung in Innenstädten – keine Aussage im Programm (außer Grünflächen oben).
+Richtungen ohne Maßnahme (3604): Parkplätze und Parkgebühren in Innenstädten, Erreichbarkeit der Innenstadt, Fahrrad- und ÖPNV-Anbindung der Innenstadt – keine Aussage im Programm (außer Sonntagsöffnung oben).
+
+Seiten ohne Text (1, 3, 36, 54, 67, 74, 81, 121, 127, 130): Trenn- und Kapitelseiten, keine Rolle für das Thema. S. 54 ist Kapitelbeginn „Bürger und Staat“, Text ab S. 55 gelesen.
+
+Stand: Programm lt. Auftrag 2026-03-22; im Text kein abweichender Stand erkennbar.

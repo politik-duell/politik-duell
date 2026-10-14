@@ -1,0 +1,38 @@
+{
+  "partei_id": 12,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Städtebauförderung ausbauen und den stationären Einzelhandel stärken",
+      "ursachen_ids": [3601],
+      "zitat": "Wir bauen die Städtebauförderung aus und stärken den stationären Einzelhandel.",
+      "seite": 52
+    },
+    {
+      "beschreibung": "Leerstand-Strategie mit Förderprogrammen, damit leerstehende Immobilien zu Wohn- oder Gewerberaum werden",
+      "ursachen_ids": [3602],
+      "zitat": "Um leerstehende Gebäude im ländlichen Raum wieder nutzbar zu machen und damit die Attraktivität und Wirtschaftskraft dieser Regionen zu stärken, brauchen wir eine umfassende Leerstand-Strategie für den ländlichen Raum. Durch gezielte Förderprogramme und Anreize sollen Kommunen und private Eigentümer motiviert werden, leerstehende Immobilien in Wohn- oder Gewerberaum umzuwandeln.",
+      "seite": 53
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 3603,
+      "seiten": [34, 53],
+      "grund": "Städtebauförderung zur Klimaanpassung (S. 34) und Stadtgrün (S. 53) nennen keine Innenstadt, Ortskern, Einzelhandel oder Leerstand (R2); Stadtgrün betrifft Naturschutz."
+    },
+    {
+      "ursache": 3604,
+      "seiten": [36, 52],
+      "grund": "Busse/Bahnen im ländlichen Raum (S. 52), Fußverkehrsstrategie und Fahrradparkhäuser (S. 36) ohne Bezug zu Innenstadt oder Einzelhandel (R2)."
+    }
+  ]
+}
+
+Protokoll (Thema 36, Leerstand und Geschäftsschließungen in Innenstädten):
+- Gelesen: Inhaltsverzeichnis (S. 3); Kapitel 19 „Starke Kommunen, gleiche Chancen in Land und Stadt“ (S. 52–54); Fundstellen S. 53 (Stadtgrün, Naturschutz – kein Bezug). Außerdem zur Abgrenzung: Kapitel 12 (S. 34, Städtebauförderung Klimaanpassung), Kapitel 13 (S. 35–36, Mobilität), Kapitel 6 (S. 22, „lebenswerte Innenstädte“ bei Wohneigentum).
+- Erfasst: Städtebauförderung ausbauen und stationären Einzelhandel stärken (3601, S. 52); Leerstand-Strategie mit Förderprogrammen zur Umwandlung leerstehender Immobilien in Wohn- oder Gewerberaum (3602, S. 53; im Auftragstext ist die Stelle ländlicher Raum, aber sie nennt Leerstand und Gewerberaum, daher nach R2 zählbar).
+- Nicht erfasst: Städtebauförderung zur Klimaanpassung (S. 34, Grünflächen, kühlende öffentliche Räume) – keine Nennung von Innenstadt/Ortskern/Einzelhandel/Leerstand (R2). Busse und Bahnen im ländlichen Raum (S. 52), Fußverkehrsstrategie und Fahrradparkhäuser (S. 36) – ohne Innenstadtbezug (R2). Wohneigentum „Jung kauft Alt“ (S. 22) – Wohnen (R2). Leerstand von Wohnraum und Zweckentfremdung (S. 20) – Miete/Wohnen (R2). Lebensmittelhändler und Mehrwertsteuer (S. 24) – Preise, kein Bezug zum Geschäftsbesatz.
+- Richtungen ohne Maßnahme: 3603 (Aufenthaltsqualität, Sauberkeit) und 3604 (Erreichbarkeit, Öffnungszeiten) – siehe nicht_erfasst.
+- Seiten ohne Text (1, 2, 67, 68) spielen keine Rolle.
+- Keine Bündel im Auftrag genannt; daher kein `buendel`-Feld.

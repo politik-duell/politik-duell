@@ -1,0 +1,4623 @@
+{
+  "thema_id": 36,
+  "programme": [
+    {
+      "partei_id": 11,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Lehnt Fahrverbote für Innenstädte und das Umwidmen von Parkplätzen ab.",
+          "ursachen_ids": [
+            3604
+          ],
+          "zitat": "Anti-Auto-Haltung, Fahrverbote für Innenstädte, das Umwidmen von Parkplätzen und ein generelles Tempolimit auf deutschen Autobahnen lehnen wir ab.",
+          "seite": 74
+        },
+        {
+          "beschreibung": "Bürokratie für den Einzelhandel verringern: Beweislast bei Dokumentationspflichten umkehren, regelmäßige Nachweise durch ein Anzeigerecht ersetzen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3601
+          ],
+          "zitat": "Wir kehren in Handwerk, Einzelhandel, Gastronomie oder Hotellerie bei Dokumentationspflichten die Beweislast um und ersetzen die regelmäßigen Nachweise durch ein Anzeigerecht von Verstößen.",
+          "seite": 17
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3602,
+          "seiten": [
+            73,
+            76
+          ],
+          "grund": "Mix aus (Innen-)Verdichtung und Aufstockung von Geschäftsgebäuden (S. 73) sowie Stadt- und Dorfentwicklung (S. 76): nennt weder Innenstadt, Ortskern, Einzelhandel noch Leerstand (R2)."
+        },
+        {
+          "ursache": 3603,
+          "seiten": [
+            74,
+            77
+          ],
+          "grund": "Begrünung in Städten und Gemeinden (S. 77) und Instandhaltung bei der Bahn (S. 74): kein Bezug zu Innenstadt, Ortskern, Einzelhandel oder Leerstand (R2)."
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "Umwidmen von Parkplätzen",
+          "ursache": 3604,
+          "richtung": "Parkplätze erhalten"
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Förderprogramm für den Umbau von Handelsimmobilien zu Wohn-, Büro- und Kulturnutzungen; Zentrenprogramm „Lebendige Zentren“ mit dem Bund um- und ausbauen",
+          "ursachen_ids": [
+            3602
+          ],
+          "zitat": "Wir werden gemeinsam mit dem Bund das Programm „Lebendige Zentren“ um- und ausbauen und ein Programm für den Umbau von Handelsimmobilien für Wohn-, Büro- und Kulturnutzungen auflegen.",
+          "seite": 37
+        },
+        {
+          "beschreibung": "Leerstandsmanagement landeseigener Immobilien weiterentwickeln und für Start-ups und Kreativwirtschaft öffnen",
+          "ursachen_ids": [
+            3602
+          ],
+          "zitat": "Wir werden das Leerstandsmanagement landeseigener Immobilien weiterentwickeln und gezielt für die Nutzung durch Start-ups und Unternehmen der Kreativwirtschaft öffnen.",
+          "seite": 37
+        },
+        {
+          "beschreibung": "Systematisches Leerstandsmonitoring von Büro- und Gewerbeflächen einführen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3602
+          ],
+          "zitat": "Für mehr Transparenz über die Entwicklungen auf dem Gewerbemarkt setzen wir uns für die Einführung eines systematischen Leerstandsmonitorings von Büro- und Gewerbeflächen ein.",
+          "seite": 37
+        },
+        {
+          "beschreibung": "Engen Austausch mit den Bezirken suchen und den Zentrengipfel gegen Leerstand fortführen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3602
+          ],
+          "zitat": "Dafür streben wir einen engen Austausch mit den Bezirken an und führen den erfolgreichen Zentrengipfel fort.",
+          "seite": 37
+        },
+        {
+          "beschreibung": "Konkrete Kiezpläne für jede Einkaufsstraße gemeinsam mit Bezirken, Handel und Gastronomie entwickeln",
+          "ursachen_ids": [
+            3602
+          ],
+          "zitat": "Gemeinsam mit Bezirken, Handel und Gastronomie wollen wir konkrete Kiezpläne für jede Einkaufsstraße entwickeln.",
+          "seite": 37
+        },
+        {
+          "beschreibung": "Rechtssichere Sonntagsöffnung; acht verkaufsoffene Sonntage sollen stattfinden; Bezirke sollen zweimal im Jahr zusätzliche verkaufsoffene Sonntage festlegen können",
+          "ursachen_ids": [
+            3604
+          ],
+          "zitat": "Wir stehen für eine rechtssichere Gestaltung der Sonntagsöffnung und setzen uns dafür ein, dass die gesetzlich möglichen acht verkaufsoffenen Sonntage auch tatsächlich stattfinden. Darüber hinaus sollen die Bezirke zweimal im Jahr zusätzliche verkaufsoffene Sonntage für besondere bezirkliche Anlässe festlegen können.",
+          "seite": 37
+        },
+        {
+          "beschreibung": "Baukasten für Bezirke zu Verkehrsberuhigung und Verkehrssicherheit, damit wohnungsnaher Einzelhandel für Kunden erreichbar bleibt",
+          "ursachen_ids": [
+            3604
+          ],
+          "zitat": "Polizei und Feuerwehr wie Müllabfuhr müssen schnell überall hin gelangen, wohnungsnaher Einzelhandel und Supermärkte erreichbar für Kunden wie Lieferanten sein. Um das sicherzustellen, nutzen wir das neue Landesorganisationsgesetz und geben als Senat den Bezirken einen einheitlichen und verbindlichen Baukasten von Möglichkeiten sinnvoller Verkehrsberuhigung und Verkehrssicherheit an die Hand.",
+          "seite": 70
+        },
+        {
+          "beschreibung": "Verkehrsinfrastruktur gezielt ergänzen, um Innenstadt und Außenbezirke besser zu vernetzen",
+          "ursachen_ids": [
+            3604
+          ],
+          "zitat": "Die bestehende Verkehrsinfrastruktur werden wir gezielt ergänzen, um Innenstadt und Außenbezirke noch besser zu vernetzen.",
+          "seite": 69
+        },
+        {
+          "beschreibung": "In Fußgängerzonen soll die Geschwindigkeit von Fahrzeugen technisch auf Schrittgeschwindigkeit begrenzt werden",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3603
+          ],
+          "zitat": "In Fußgängerzonen soll die Geschwindigkeit der Fahrzeuge technisch auf Schrittgeschwindigkeit begrenzt werden.",
+          "seite": 71
+        },
+        {
+          "beschreibung": "Taubenpopulation an Einkaufszentren und anderen stark frequentierten Orten begrenzen (Taubenschläge, Fütterungsverbote, bauliche Vergrämung)",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3603
+          ],
+          "zitat": "Wir werden die Taubenpopulation insbesondere an Einkaufszentren, Bahnhöfen und anderen stark frequentierten Orten wirksam und tierschutzgerecht begrenzen.",
+          "seite": 79
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 3602,
+          "name": "Landeseigene Leerstände öffnen",
+          "seite": 37
+        },
+        {
+          "ursache": 3602,
+          "name": "Leerstandsmonitoring",
+          "seite": 37
+        },
+        {
+          "ursache": 3602,
+          "name": "Zentrengipfel und Austausch mit Bezirken",
+          "seite": 37
+        },
+        {
+          "ursache": 3604,
+          "name": "Verkehrsinfrastruktur zur Innenstadt",
+          "seite": 69
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "einkaufsstraße",
+          "ursache": 3602,
+          "richtung": "Marktprofile und Wettbewerb"
+        },
+        {
+          "begriff": "handelsimmobilien",
+          "ursache": 3602,
+          "richtung": "Nutzungsmischung und Ansiedlung fördern"
+        },
+        {
+          "begriff": "einzelhandel",
+          "ursache": 3604,
+          "richtung": "Erreichbarkeit mit dem Auto und Parkplätze"
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Regeln für verkaufsoffene Sonntage praxisnäher und flexibler gestalten und dafür bürokratische Hürden abbauen.",
+          "ursachen_ids": [
+            3604
+          ],
+          "zitat": "Die Regelungen für verkaufsoffene Sonntage in Mecklenburg-Vorpommern sollen praxisnah und flexibel gestaltet werden. […] Unnötige bürokratische Hürden werden wir abbauen, damit Unternehmer künftig unkomplizierter planen können.",
+          "seite": 23
+        },
+        {
+          "beschreibung": "Integrierte ländliche Entwicklung fördern, auch um Leerstand zu revitalisieren und mit Wohnen und Freizeit zu verbinden.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3602
+          ],
+          "zitat": "Wir fördern eine integrierte ländliche Entwicklung, die partizipative Beteiligung der Bevölkerung und regionale Kooperationen, um Wohnen, Freizeit, Naherholung und die Revitalisierung von Leerstand zu verbinden.",
+          "seite": 122
+        },
+        {
+          "beschreibung": "Mehr Polizei in Innenstädten und an Kriminalitätsschwerpunkten, höherer Kontrolldruck, wirksamere Platzverweise und Aufenthaltsverbote für mehr Ordnung im öffentlichen Raum.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3603
+          ],
+          "zitat": "Wir sorgen für mehr Sicherheit und Ordnung im öffentlichen Raum, durch mehr Polizei in den Innenstädten und an Kriminalitätsschwerpunkten, höheren Kontrolldruck sowie wirksamere Platzverweise und Aufenthaltsverbote.",
+          "seite": 31
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "Dorfkern",
+          "ursache": 3602,
+          "richtung": "Ortskerne und Dorfkerne stärken"
+        },
+        {
+          "begriff": "Leerstand",
+          "ursache": 3602,
+          "richtung": "Leerstand revitalisieren"
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Einzelhandel in Innenstädten gezielt unterstützen, kreative Konzepte gegen Leerstand verfolgen und Stadtkerne als Orte der Begegnung stärken.",
+          "ursachen_ids": [
+            3602
+          ],
+          "ursachen_offen": [
+            3603
+          ],
+          "zitat": "Innenstädte lebendig halten, als Zentren des Lebens und Wirtschaftens: Wir stärken Stadtkerne als Orte der Begegnung, Kultur und Wirtschaft, mit gezielter Unterstützung des Einzelhandels und kreativen Konzepten gegen Leerstand.",
+          "seite": 66
+        },
+        {
+          "beschreibung": "Überholte Umweltzonen in Innenstädten aufheben.",
+          "ursachen_ids": [
+            3604
+          ],
+          "zitat": "Überholte Umweltzonen in Innenstädten wollen wir aufheben.",
+          "seite": 62
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "Leerstand",
+          "ursache": 3602,
+          "richtung": "Nutzungsmischung und Ansiedlung fördern"
+        },
+        {
+          "begriff": "Umweltzone",
+          "ursache": 3604,
+          "richtung": "Erreichbarkeit mit dem Auto und Parkplätze"
+        },
+        {
+          "begriff": "Stadtkern",
+          "ursache": 3603,
+          "richtung": "Aufenthaltsqualität und Verkehrsberuhigung"
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Städtebauförderung ausbauen und den stationären Einzelhandel stärken",
+          "ursachen_ids": [
+            3601
+          ],
+          "zitat": "Wir bauen die Städtebauförderung aus und stärken den stationären Einzelhandel.",
+          "seite": 52
+        },
+        {
+          "beschreibung": "Leerstand-Strategie mit Förderprogrammen, damit leerstehende Immobilien zu Wohn- oder Gewerberaum werden",
+          "ursachen_ids": [
+            3602
+          ],
+          "zitat": "Um leerstehende Gebäude im ländlichen Raum wieder nutzbar zu machen und damit die Attraktivität und Wirtschaftskraft dieser Regionen zu stärken, brauchen wir eine umfassende Leerstand-Strategie für den ländlichen Raum. Durch gezielte Förderprogramme und Anreize sollen Kommunen und private Eigentümer motiviert werden, leerstehende Immobilien in Wohn- oder Gewerberaum umzuwandeln.",
+          "seite": 53
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3603,
+          "seiten": [
+            34,
+            53
+          ],
+          "grund": "Städtebauförderung zur Klimaanpassung (S. 34) und Stadtgrün (S. 53) nennen keine Innenstadt, Ortskern, Einzelhandel oder Leerstand (R2); Stadtgrün betrifft Naturschutz."
+        },
+        {
+          "ursache": 3604,
+          "seiten": [
+            36,
+            52
+          ],
+          "grund": "Busse/Bahnen im ländlichen Raum (S. 52), Fußverkehrsstrategie und Fahrradparkhäuser (S. 36) ohne Bezug zu Innenstadt oder Einzelhandel (R2)."
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Leerstehende Ladenzeilen und Shoppingcenter beleben, Zwischennutzungen fördern und Genehmigungen vereinfachen.",
+          "ursachen_ids": [
+            3602
+          ],
+          "zitat": "Leerstehende Shoppingcenter und Ladenzeilen beleben wir neu und ermöglichen dort Jugend-, Kultur-, Spiel-, Sport- und soziale Angebote. Zwischennutzungen fördern wir gezielt und vereinfachen Genehmigungen. So wird Leerstand zu neuem Raum für die Stadtgesellschaft.",
+          "seite": 19
+        },
+        {
+          "beschreibung": "Empfehlungen des Zentrengipfels zur Attraktivität von Einkaufsstraßen umsetzen, lokale Selbstorganisation stärken.",
+          "ursachen_ids": [
+            3602
+          ],
+          "zitat": "Wir erhalten und stärken die ökonomische Vielfalt in allen Berliner Stadtteilen. Stationärer Einzelhandel, vielfältige Gastronomie- und Kulturangebote beleben Kieze und schaffen Begegnung – zwischen Berliner*innen und Gästen aus aller Welt. Um Einkaufsstraßen attraktiver zu machen, setzen wir die Empfehlungen des Berliner Zentrengipfels konsequent um und stärken lokale Selbstorganisation.",
+          "seite": 13
+        },
+        {
+          "beschreibung": "Neues Stadtquartier am Molkenmarkt mit Wohnungen, Gewerbe und Kultur zügig errichten.",
+          "ursachen_ids": [
+            3602
+          ],
+          "zitat": "Das neue Stadtquartier am Molkenmarkt mit bezahlbaren, landeseigenen Wohnungen, Gewerbe und Kultur errichten wir zügig.",
+          "seite": 19
+        },
+        {
+          "beschreibung": "Mehr Ladezonen und Kurzzeitparkplätze in Geschäftsstraßen.",
+          "ursachen_ids": [
+            3604
+          ],
+          "zitat": "In Geschäftsstraßen richten wir mehr Ladezonen und Kurzzeitparkplätze ein",
+          "seite": 27
+        },
+        {
+          "beschreibung": "Flächendeckend mindestens 10-Minuten-Takt im ÖPNV, auch in der Innenstadt.",
+          "ursachen_ids": [
+            3604
+          ],
+          "zitat": "Wir wollen für alle Nutzer*innen mit oder ohne Behinderungen flächendeckend mindestens einen 10-Minuten-Takt – in der Innenstadt ebenso wie in den Außenbezirken.",
+          "seite": 24
+        },
+        {
+          "beschreibung": "Bundesgesetze für bezahlbare Gewerbemieten anstoßen; Gewerbemix in Kiezen gegen Verdrängung erhalten.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3602
+          ],
+          "zitat": "Wir erhalten den Mix aus Gewerbe, Dienstleistungen und Kultur in unseren Kiezen und schützen Unternehmen vor Verdrängung. Dafür setzen wir uns auf Bundesebene für gesetzliche Regelungen ein, mit denen wir bezahlbare Gewerbemieten durchsetzen können.",
+          "seite": 13
+        },
+        {
+          "beschreibung": "Umsatzeinbußen durch Baustellen abmildern; Mittel für Überbrückungshilfe sicherstellen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3604
+          ],
+          "zitat": "Umsatzeinbußen für die Gewerbetreibenden in Folge von Baustellen wollen wir abmildern. Daher wollen wir die finanziellen Mittel für die Überbrückungshilfe im nötigen Umfang sicherstellen.",
+          "seite": 13
+        },
+        {
+          "beschreibung": "Plätze und Straßen so gestalten, dass Menschen gern verweilen und sich sicher fühlen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3603
+          ],
+          "zitat": "Wir gestalten Plätze und Straßen so, dass Menschen dort gern verweilen und sich sicher fühlen",
+          "seite": 22
+        },
+        {
+          "beschreibung": "Straßenreinigungsgesetz ändern, damit die BSR Sauberkeit über Meldungen, Sensoren und Feedback steuern kann.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3603
+          ],
+          "zitat": "Wir ändern das Straßenreinigungsgesetz, damit die BSR Sauberkeit besser über Meldungen, Sensoren und Nutzerfeedback steuern kann.",
+          "seite": 24
+        },
+        {
+          "beschreibung": "Sicherheit im öffentlichen Raum stärken: Beleuchtung und Überdachung von Haltestellen, besetzte Bahnhöfe, BVG-Streifen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3603
+          ],
+          "zitat": "Wir stärken die Sicherheit im öffentlichen Raum, etwa durch Überdachung und Beleuchtung von Haltestellen, Sicherheitsinfos in Nachtbussen, besetzte Bahnhöfe, mehr BVG-Streifen mit gemischten Teams",
+          "seite": 32
+        },
+        {
+          "beschreibung": "Breitere, beleuchtete, barrierefreie Gehwege und mehr sichere Querungen fördern.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3604
+          ],
+          "zitat": "Das fördern wir mit breiten, gut beleuchteten, barrierefreien und sicheren Gehwegen zu jeder Jahreszeit und bei allen Witterungsbedingungen sowie deutlich mehr sicheren Querungen, auch in Fahrradstraßen.",
+          "seite": 25
+        },
+        {
+          "beschreibung": "Gewässer in der Innenstadt besser zugänglich machen, Baden in der Spree ermöglichen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3603
+          ],
+          "zitat": "Wir wollen, dass die Gewässer in der Innenstadt wieder besser zugänglich werden. Als Baustein dafür machen wir Baden in der Spree möglich.",
+          "seite": 23
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 3602,
+          "name": "Zentrenentwicklung und Standortgemeinschaften",
+          "seite": 13
+        },
+        {
+          "ursache": 3602,
+          "name": "Stadtquartiere mit Gewerbe in Innenstadtlagen",
+          "seite": 19
+        },
+        {
+          "ursache": 3602,
+          "name": "Bezahlbare Gewerbemieten",
+          "seite": 13
+        },
+        {
+          "ursache": 3604,
+          "name": "Überbrückungshilfen bei Baustellen",
+          "seite": 13
+        },
+        {
+          "ursache": 3603,
+          "name": "Sicherheit im öffentlichen Raum",
+          "seite": 32
+        },
+        {
+          "ursache": 3604,
+          "name": "Fußwegeausbau",
+          "seite": 25
+        },
+        {
+          "ursache": 3603,
+          "name": "Gewässerzugang in der Innenstadt",
+          "seite": 23
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "Einkaufsstraße",
+          "ursache": 3602,
+          "richtung": "Attraktivität von Einkaufsstraßen"
+        },
+        {
+          "begriff": "Standortgemeinschaft",
+          "ursache": 3602,
+          "richtung": "Zentrenmanagement und lokale Selbstorganisation"
+        },
+        {
+          "begriff": "Geschäftsstraße",
+          "ursache": 3604,
+          "richtung": "Ladezonen und Kurzzeitparken für Geschäfte"
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Kooperation von Kultur und Tourismus stärken, um Innenstädte mit Kulturrouten, Festivals und Kunst im öffentlichen Raum zu beleben.",
+          "ursachen_ids": [
+            3603
+          ],
+          "zitat": "Dieses Potenzial wollen wir besser nutzen und werden dafür die Kooperation zwischen Kultur und Tourismus stärken. Ziel ist es dabei auch, die Innenstädte durch Kulturrouten, Festivals oder Kunst im öffentlichen Raum zu beleben.",
+          "seite": 80
+        },
+        {
+          "beschreibung": "Projekte der blau/grünen Stadtentwicklung (Wasserflächen, Bäume, Grün) für das innerstädtische Klima, für die man sich einsetzen will.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3603
+          ],
+          "zitat": "Wasserflächen und Verschattung durch Bäume und Grünflächen verbessern das innerstädtische Klima. Dafür helfen Projekte der blau/grünen Stadtentwicklung, für die wir uns einsetzen wollen.",
+          "seite": 87
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3602,
+          "seiten": [
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            19,
+            52,
+            53,
+            54,
+            55,
+            80,
+            81,
+            82,
+            87
+          ],
+          "grund": "Wirtschafts-, Tourismus-, Wohn- und Kulturkapitel gelesen: keine Maßnahme zu Sortiment, Ansiedlung oder Nutzungsmischung von Geschäften in Innenstädten. Dorfläden und Neue Dorfmitte (S. 19, 82) betreffen den ländlichen Raum und nennen weder Innenstadt, Ortskern, Einzelhandel noch Leerstand (R2). Leerstehende Gebäude (S. 87) nur als allgemeines Ziel ohne Maßnahme."
+        },
+        {
+          "ursache": 3604,
+          "seiten": [
+            12,
+            25,
+            26,
+            27
+          ],
+          "grund": "Tourismus- und Mobilitätskapitel gelesen: Pendlerparkplätze, Radwege, ÖPNV und Rufbus ohne Bezug zu Innenstadt, Ortskern oder Einzelhandel (R2). Keine Aussage zu Parken in Innenstädten, Parkgebühren, Ladenöffnungszeiten oder Ladenschluss."
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "leerstehende Gebäude",
+          "ursache": 3602,
+          "richtung": "Nutzungsmischung und Ansiedlung fördern"
+        },
+        {
+          "begriff": "Kunst im öffentlichen Raum",
+          "ursache": 3603,
+          "richtung": "Aufenthaltsqualität und Verkehrsberuhigung"
+        },
+        {
+          "begriff": "innerstädtisches Klima",
+          "ursache": 3603,
+          "richtung": "Aufenthaltsqualität und Verkehrsberuhigung"
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Gemeinsame Initiativen von Kommunen und Wirtschaft sollen Stadt- und Ortszentren stärken.",
+          "ursachen_ids": [
+            3602
+          ],
+          "zitat": "Stadt- und Ortszentren werden durch gemeinsame Initiativen von Kommunen und Wirtschaft gestärkt.",
+          "seite": 6
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3603,
+          "seiten": [
+            24,
+            30,
+            44
+          ],
+          "grund": "Hitzeschutz-Plätze, Sicherheitsgefühl und Bürgerbeteiligung in der Stadtentwicklung: kein Innenstadt-, Ortskern- oder Einzelhandelsbezug (R2); Sicherheitssatz ist Wirkungsaussage ohne Zusage."
+        },
+        {
+          "ursache": 3604,
+          "seiten": [
+            27,
+            28,
+            40,
+            41,
+            42
+          ],
+          "grund": "Öffnungszeiten nur für Kitas und Bibliotheken (Sonntagsöffnung); ÖPNV-, Bahn- und Radangebote ohne Innenstadtbezug (R2)."
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "Ortszentr",
+          "ursache": 3602,
+          "richtung": "Stadt- und Ortszentren stärken"
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Städtebauförderung aufstocken, um lebendige Innenstädte und Ortszentren mit gemischten Quartieren zu schaffen",
+          "ursachen_ids": [
+            3602
+          ],
+          "ursachen_offen": [
+            3603
+          ],
+          "zitat": "Wir wollen lebendige und […] Innenstädte und Ortszentren mit attraktiven und nutzungsdurchmischten Quartieren schaffen. […] Hierfür wollen wir die Mittel für die Städtebauförderung aufstocken […]",
+          "seite": 73
+        },
+        {
+          "beschreibung": "Große Onlineplattformen sollen wie der Laden um die Ecke Produktverantwortung übernehmen",
+          "ursachen_ids": [
+            3601
+          ],
+          "zitat": "Wir unterstützen den Digital Fairness Act der EU-Kommission und setzen uns dafür ein, dass große Plattformen – genau wie der Laden um die Ecke – Produktverantwortung übernehmen müssen.",
+          "seite": 27
+        },
+        {
+          "beschreibung": "Zollschlupflöcher schließen, über die Onlinehändler unsichere Billigprodukte einführen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3601
+          ],
+          "zitat": "Die Schlupflöcher im Zollrecht müssen geschlossen werden, durch die besonders asiatische Onlinehändler wie Temu unsichere Wegwerfprodukte am Zoll vorbeischleusen und europäische Hersteller unterbieten.",
+          "seite": 29
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3604,
+          "seiten": [
+            46,
+            48,
+            49,
+            50,
+            86,
+            126
+          ],
+          "grund": "Nahverkehr, Radwege, Schulwege, Busse und Bahnen, Fußwege im Quartier und Bibliotheksöffnungszeiten ohne Bezug zu Innenstadt, Ortskern, Einzelhandel oder Leerstand (R2)."
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "Ortszentren",
+          "ursache": 3602,
+          "richtung": "Nutzungsmischung und Ansiedlung fördern"
+        },
+        {
+          "begriff": "Städtebauförderung",
+          "ursache": 3602,
+          "richtung": "Nutzungsmischung und Ansiedlung fördern"
+        },
+        {
+          "begriff": "Laden um die Ecke",
+          "ursache": 3601,
+          "richtung": "Lokalen Handel stärken und Wettbewerb angleichen"
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Sofortprogramm: leerstehende Erdgeschossflächen an soziale Träger und Initiativen zu gedeckelten Mieten vergeben",
+          "ursachen_ids": [
+            3602
+          ],
+          "zitat": "Mit einem Sofortprogramm für soziale Gewerbemieten stellen wir leerstehende Erdgeschossflächen sozialen Trägern, Kulturschaffenden, Jugendeinrichtungen und Nachbarschaftsinitiativen zu gedeckelten Mieten zur Verfügung und entwickeln ein soziales Gewerbemietmodell, das Vergabekriterien gemeinwohlorientiert gestaltet.",
+          "seite": 56
+        },
+        {
+          "beschreibung": "Landesweites Flächenregister, das unter anderem Leerstand erfasst",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3602
+          ],
+          "zitat": "Wir werden aufbauend auf dem Liegenschaftskataster ein landesweites Flächenregister schaffen, das Informationen zu Eigentum, Nutzung, Leerstand, baulichem Zustand und Potenzialflächen enthält.",
+          "seite": 60
+        },
+        {
+          "beschreibung": "Begrünung und Kühlung der Wohnumfelder in dicht bebauten Kiezen; in der Innenstadt Biotopflächenfaktor",
+          "ursachen_ids": [
+            3603
+          ],
+          "zitat": "Gerade in dicht bebauten Kiezen und Vierteln mit wenig Grün investieren wir in bessere Wohnumfelder – mehr Pflanzen, entsiegelte Böden und Kühlung an heißen Tagen. In der Innenstadt nutzen wir hierfür das Instrument des Biotopflächenfaktors.",
+          "seite": 64
+        },
+        {
+          "beschreibung": "Rahmen für verkaufsoffene Sonntage ausschöpfen, Schutz der Beschäftigten im Einzelhandel wahren",
+          "ursachen_ids": [
+            3604
+          ],
+          "zitat": "Den Rahmen der aktuellen Gesetzgebung für verkaufsoffene Sonntage wollen wir ausschöpfen und achten dabei konsequent auf den Schutz der Beschäftigten im Einzelhandel, die bei langen Arbeitszeiten und Belastungen auf die Erholung am Sonntag angewiesen sind.",
+          "seite": 102
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "Mischnutzung",
+          "ursache": 3602,
+          "richtung": "Nutzungsmischung fördern"
+        },
+        {
+          "begriff": "leerstehend",
+          "ursache": 3602,
+          "richtung": "Nutzung leerstehender Flächen fördern"
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "MV",
+      "stand_im_pdf": "Stand: 16.07.2026 (Titelseite); Auftrag nennt Stand 2026-06-06",
+      "massnahmen": [
+        {
+          "beschreibung": "Leerstand kommunal managen (Leerstands- und Brachflächenmanagement) und temporäre Zwischennutzungen fördern.",
+          "ursachen_ids": [
+            3602
+          ],
+          "zitat": "Für mehr Tempo bei der Schaffung von Wohnraum wollen wir: […] Leerstand aktiv managen, etwa durch kommunales Leerstands- und Brachflächenmanagement sowie die Förderung temporärer Zwischennutzungen.",
+          "seite": 52
+        },
+        {
+          "beschreibung": "Umwandlung leerstehender Gewerberäume in Wohnraum erleichtern (zusammen mit Dachaufstockungen und Ausbauten).",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3602
+          ],
+          "zitat": "Für mehr Tempo bei der Schaffung von Wohnraum wollen wir: […] den Gebäudebestand und die vorhandene Infrastruktur effizienter nutzen, etwa durch erleichterte Dachaufstockungen und -ausbauten sowie die Umwandlung leerstehender Gewerberäume in Wohnraum.",
+          "seite": 52
+        },
+        {
+          "beschreibung": "Landeswohnraumförderung aufstocken und reformieren, unter anderem um Leerstand in zentralen Ortslagen zu aktivieren.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3602
+          ],
+          "zitat": "Wir fördern bezahlbares Wohnen, indem wir: […] das Landeswohnraumförderprogramm „Wohnungsbau Sozial“ aufstocken und reformieren, unter anderem durch zinsgünstigere Darlehen und höhere Tilgungszuschüsse für Sozialwohnungen, eine möglichst lange Mietpreisbindung sowie die Einführung neuer Fördersparten für altersgerechte, bezahlbare Wohnformen und die Aktivierung von Leerstand in zentralen Ortslagen.",
+          "seite": 53
+        },
+        {
+          "beschreibung": "Landesprogramme für Bestandsimmobilien auflegen, um Dorfkerne zu beleben und alte Gebäude zu sanieren.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3602
+          ],
+          "zitat": "Wir fördern bezahlbares Wohnen, indem wir: […] ein Landesprogramm „Neuer Schwung für alte Orte“ sowie „Jung kauft Alt“ aufsetzen, um Bestandsimmobilien für junge Familien zu erschließen, Dorfkerne zu beleben und die Sanierung alter Gebäude zu unterstützen.",
+          "seite": 53
+        },
+        {
+          "beschreibung": "Umbau von Bestandsgebäuden und Neubau innovativer Seniorenwohnformen in zentralen Ortslagen fördern.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3602
+          ],
+          "zitat": "Wir fördern bezahlbares Wohnen, indem wir: […] den Umbau von Bestandsgebäuden und den Neubau für innovative Seniorenwohnformen in zentralen Ortslagen fördern.",
+          "seite": 53
+        },
+        {
+          "beschreibung": "Bodenpolitik so ausrichten, dass bezahlbares Wohnen mit der Wiederbelebung zentraler Ortslagen verbunden wird.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3602
+          ],
+          "zitat": "Für gemeinwohlorientierte Bodenpolitik und Wohnraumentwicklung wollen wir: […] durch eine strategische Bodenpolitik bezahlbares Wohnen mit der Wiederbelebung zentraler Ortslagen verbinden.",
+          "seite": 54
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3603,
+          "seiten": [
+            21,
+            25
+          ],
+          "grund": "Radwege-Instandhaltung (S. 21) und Verkehrsberuhigung in Orten, Wohngebieten und innerorts (S. 25, Vision Zero) ohne Nennung von Innenstadt, Ortskern, Einzelhandel oder Leerstand (R2). Keine Aussage zu Sauberkeit, Sicherheit oder Stadtbild im Zentrum."
+        },
+        {
+          "ursache": 3604,
+          "seiten": [
+            22,
+            24,
+            55
+          ],
+          "grund": "Bahn-, Bus-, Rad- und Fußverkehr, Mobilitätsstationen (S. 22, 24) allgemein, ohne Innenstadt-Bezug (R2). Stellplatzpflicht im Wohnungsbau (S. 55) ohne Innenstadt- oder Einzelhandelsbezug. Keine Aussage zu Parken in Innenstädten oder Ladenöffnungszeiten."
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 3602,
+          "name": "Umnutzung leerstehender Gewerbeflächen",
+          "seite": 52
+        },
+        {
+          "ursache": 3602,
+          "name": "Förderung Leerstandsaktivierung",
+          "seite": 53
+        },
+        {
+          "ursache": 3602,
+          "name": "Förderung Dorfkern-Belebung",
+          "seite": 53
+        },
+        {
+          "ursache": 3602,
+          "name": "Förderung Seniorenwohnen im Bestand",
+          "seite": 53
+        },
+        {
+          "ursache": 3602,
+          "name": "Strategische Bodenpolitik in Ortslagen",
+          "seite": 54
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "leerstand",
+          "ursache": 3602,
+          "richtung": "Nutzungsmischung und Ansiedlung fördern"
+        },
+        {
+          "begriff": "zentrale Ortslagen",
+          "ursache": 3602,
+          "richtung": "Nutzungsmischung und Ansiedlung fördern"
+        },
+        {
+          "begriff": "dorfkern",
+          "ursache": 3602,
+          "richtung": "Nutzungsmischung und Ansiedlung fördern"
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Kommunen beim Leerstandsabbau unterstützen und Zwischennutzungen, etwa durch Start-ups oder Pop-up-Stores, ermöglichen.",
+          "ursachen_ids": [
+            3602
+          ],
+          "zitat": "Kommunen sollen beim Abbau von Leerstand unterstützt werden und intelligente, alternative Zwischennutzungen ermöglichen, z. B. durch Start-ups, Pop-up-Stores oder nichtkommerzielle Treffpunkte.",
+          "seite": 93
+        },
+        {
+          "beschreibung": "Kommunen mit abgestuften Instrumenten gegen langfristigen Leerstand ausstatten: Nutzungs- oder Sanierungsfristen, höhere Abgaben, verpflichtende Zwischennutzung.",
+          "ursachen_ids": [
+            3602
+          ],
+          "zitat": "Kommunen sollen wirksamere, abgestufte Instrumente gegen langfristigen Leerstand erhalten – etwa Nutzungs- oder Sanierungsfristen, höhere Abgaben oder verpflichtende Zwischennutzung.",
+          "seite": 98
+        },
+        {
+          "beschreibung": "Übernahme langjährig ungenutzter oder entwicklungsfähiger Immobilien als letztes Mittel erleichtern, wenn die anderen Instrumente erfolglos bleiben.",
+          "ursachen_ids": [
+            3602
+          ],
+          "zitat": "Kommunen sollen wirksamere, abgestufte Instrumente gegen langfristigen Leerstand erhalten – etwa […] verpflichtende Zwischennutzung. Erst wenn diese Maßnahmen erfolglos bleiben, soll die Übernahme langjährig ungenutzter oder entwicklungsfähiger Immobilien als letztes Mittel erleichtert werden.",
+          "seite": 98
+        },
+        {
+          "beschreibung": "Neue moderne Dorfzentren ermöglichen, die Angebote wie Dorfladen, Co-Working und Veranstaltungsräume unter einem Dach bündeln.",
+          "ursachen_ids": [
+            3602
+          ],
+          "zitat": "Deshalb wollen wir existierende Treffpunkte sichern und neue moderne Dorfzentren ermöglichen, die mehrere Angebote unter einem Dach bündeln: Einkaufen im Dorfladen, arbeiten an Co-Working-Plätzen, feiern in Veranstaltungsräumen, Carsharing und Ladesäule vor der Tür und am Ende mindestens ein Gespräch beim Kaffee.",
+          "seite": 39
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3603,
+          "seiten": [
+            31,
+            93,
+            94
+          ],
+          "grund": "Aufenthaltsqualität nur als Ziel („Innenstädte … sollten neu gedacht werden“, S. 93). Begrünung, Hitzeschutz, autofreie Quartiere, Tempo 30 und Angsträume betreffen Stadt und Quartier allgemein, ohne Innenstadt-, Ortskern-, Einzelhandels- oder Leerstand-Bezug im Zitat (R2). Sauberkeit und Instandhaltung: nichts gefunden."
+        },
+        {
+          "ursache": 3604,
+          "seiten": [
+            29,
+            31,
+            71,
+            94
+          ],
+          "grund": "Parkraum und Parkgebühren (S. 31) sind Autofahren ohne Innenstadt-Bezug (R2). Allgemeiner ÖPNV, Rad- und Fußverkehr sowie Grundzentren-Anbindung (S. 22–30) ohne Innenstadt-Bezug (R2). 15-Minuten-Stadt mit Nahversorgung (S. 94): Grenzfall, nicht erfasst. Öffnungszeiten: nur Bibliotheken (S. 71)."
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "dorfzentr",
+          "ursache": 3602,
+          "richtung": "Nutzungsmischung und Ansiedlung fördern"
+        },
+        {
+          "begriff": "leerstand",
+          "ursache": 3602,
+          "richtung": "Nutzungsmischung und Ansiedlung fördern"
+        },
+        {
+          "begriff": "ortskern",
+          "ursache": 3602,
+          "richtung": "Nutzungsmischung und Ansiedlung fördern"
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Regeln, damit importierte Waren auf großen Online-Plattformen angemessen verzollt und versteuert werden.",
+          "ursachen_ids": [
+            3601
+          ],
+          "zitat": "Wir setzen uns zudem für wirksame und praktikable Regeln auf europäischer und nationaler Ebene ein, die sicherstellen, dass importierte Waren auf großen Online-Plattformen angemessen verzollt und versteuert werden.",
+          "seite": 16
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3602,
+          "seiten": [
+            14,
+            15,
+            16,
+            42,
+            43,
+            44
+          ],
+          "grund": "Steuer-, Gastronomie- und Tourismuskapitel (S. 14–16) sowie Bau- und Stadtplanungskapitel (S. 42–44) gelesen; nichts zu Sortiment, Ansiedlung oder Nutzungsmischung in Innenstädten oder Ortskernen. Gastronomie-Umsatzsteuer und Nachverdichtung betreffen keinen Innenstadt-Einzelhandel."
+        },
+        {
+          "ursache": 3603,
+          "seiten": [
+            24,
+            42,
+            43,
+            44
+          ],
+          "grund": "Kapitel Sicherheit und Bürgerrechte (S. 24) und Stadtplanung (S. 44) gelesen; Videoüberwachung nur an Schwerpunkten wie Bahnhöfen, ohne Innenstadtbezug. Nichts zu Sauberkeit, Aufenthaltsqualität oder Begrünung von Innenstädten."
+        },
+        {
+          "ursache": 3604,
+          "seiten": [
+            42,
+            43,
+            44
+          ],
+          "grund": "Verkehrskapitel (S. 40–43) und Stadtplanung (S. 44) gelesen; Parkplatz-Echtzeiterfassung und Seitenstreifen nur als Smart-City-Bausteine ohne Innenstadtbezug, ÖPNV-Flexibilisierung ohne Innenstadtbezug, keine Öffnungszeiten."
+        }
+      ],
+      "neue_buendel": [],
+      "hebel_nicht_gefunden": []
+    },
+    {
+      "partei_id": 14,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Aufstockung von Einzelhandelsflächen mit Wohngeschossen unbürokratisch ermöglichen und fördern",
+          "ursachen_ids": [
+            3602
+          ],
+          "zitat": "Wir wollen daher die Aufstockung von Einzelhandels- und anderen geeigneten Flächen mit Wohngeschossen unbürokratisch – auch im Tausch gegen die Ausweitung etwa der überbauten Einzelhandelsflächen – ermöglichen und fördern.",
+          "seite": 40
+        },
+        {
+          "beschreibung": "Leerstehende Gewerbe-, Büro- und Ladenflächen freiwillig in Wohnraum umwandeln ermöglichen",
+          "ursachen_ids": [
+            3602
+          ],
+          "zitat": "Wir ermöglichen es, leer stehende Gewerbe-, Büro- und Ladenflächen freiwillig in Wohnraum umzuwandeln.",
+          "seite": 46
+        },
+        {
+          "beschreibung": "Sondernutzungsflächen für Einzelhandel, Schankbetriebe und Kultur unbürokratisch ausweisen",
+          "ursachen_ids": [
+            3602
+          ],
+          "ursachen_offen": [
+            3603
+          ],
+          "zitat": "Wir wollen, dass Sondernutzungsflächen für den Einzelhandel, Schankbetriebe und kulturelle Projekte unbürokratisch ausgewiesen werden",
+          "seite": 28
+        },
+        {
+          "beschreibung": "Quadratmetergrenzen für großflächigen Einzelhandel im Baurecht des Bundes deutlich anheben",
+          "ursachen_ids": [
+            3602
+          ],
+          "zitat": "Für die Neugestaltung moderner Einzelhandelsstandorte ist es außerdem notwendig, die Quadratmetergrenzen für großflächigen Einzelhandel in der Baunutzungsverordnung auf Bundesebene deutlich anzuheben.",
+          "seite": 28
+        },
+        {
+          "beschreibung": "Zwischennutzung leer stehender Gebäude erleichtern",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3602
+          ],
+          "zitat": "Zwischennutzungen von leer stehenden Gebäuden, temporäre Veranstaltungsflächen und Open-Air-Angebote wollen wir erleichtern, um neue Freiräume für Kultur, Musik und kreative Experimente zu schaffen.",
+          "seite": 34
+        },
+        {
+          "beschreibung": "Kleinteilige Eigentümerstruktur in der Innenstadt anstreben, wo Flächen neu gebaut oder umgestaltet werden",
+          "ursachen_ids": [
+            3602
+          ],
+          "zitat": "Wir werden deshalb bei neu zu bebauenden oder grundlegend umzugestaltenden Flächen, insbesondere in der Innenstadt, eine kleinteilige Eigentümerstruktur anstreben und wo immer möglich herstellen.",
+          "seite": 36
+        },
+        {
+          "beschreibung": "Leerstehende Objekte durch finanziellen Druck auf untätige Eigentümer nutzbar machen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3602
+          ],
+          "zitat": "Wir wollen mit einem landesweiten Ansatz die Nutzbarmachung sogenannter Geisterhäuser zügig vorantreiben. Wir entwickeln ein effizientes Modell, um blockierende/untätige Eigentümerinnen und Eigentümer durch finanziellen Druck zu veranlassen, ihre Objekte abzugeben oder zu sanieren.",
+          "seite": 41
+        },
+        {
+          "beschreibung": "Bauliche Umgestaltung einzelhandelsgeprägter Viertel zur Erhöhung der Aufenthaltsqualität",
+          "ursachen_ids": [
+            3603
+          ],
+          "ursachen_offen": [
+            3602
+          ],
+          "zitat": "Wir werden uns dafür einsetzen, dass stark vom Einzelhandel geprägte Viertel echte bauliche Umgestaltungen erfahren, um die Aufenthaltsqualität zu erhöhen, da zu ihrer Attraktivität eine angenehme Atmosphäre gehört, die mittels Sauberkeit und Sicherheit gewährleistet wird.",
+          "seite": 28
+        },
+        {
+          "beschreibung": "Mittel für die Pflege von Parks, Straßen und Plätzen im Land und in den Bezirken erhöhen",
+          "ursachen_ids": [
+            3603
+          ],
+          "zitat": "Im Haushalt des Landes Berlin, aber auch in allen Bezirken sollen die Mittel für die Pflege von Parks, Straßen und Plätzen erhöht werden.",
+          "seite": 70
+        },
+        {
+          "beschreibung": "Ordnungsämter sollen Überwachung illegaler Müllentsorgung priorisieren; zusätzliche Stellen im Ordnungsdienst",
+          "ursachen_ids": [
+            3603
+          ],
+          "zitat": "Die Überwachung der illegalen Müllentsorgung soll durch die Ordnungsämter gegenüber anderen Aufgaben priorisiert werden. Dazu sollen zusätzliche Stellen im Allgemeinen Ordnungsdienst geschaffen werden.",
+          "seite": 71
+        },
+        {
+          "beschreibung": "Öffentliche Toiletten für alle Geschlechter kostenfrei nutzbar machen",
+          "ursachen_ids": [
+            3603
+          ],
+          "zitat": "Als Teil der öffentlichen Infrastruktur sollen öffentliche Toiletten für alle Geschlechter kostenfrei nutzbar sein.",
+          "seite": 70
+        },
+        {
+          "beschreibung": "Reinigung von ÖPNV-Verkehrsflächen und Bahnhofsvorplätzen über Verkehrsverträge sichern",
+          "ursachen_ids": [
+            3603
+          ],
+          "zitat": "Einen besonderen Fokus wollen wir auf die konsequentere Reinigung von Verkehrsflächen des ÖPNV legen. Dies gilt auch für Bahnhofsvorplätze. Dafür wollen wir über die Verkehrsverträge die Anbieter von ÖPNV-Leistungen ebenfalls in die Verantwortung nehmen.",
+          "seite": 72
+        },
+        {
+          "beschreibung": "Digitale Fahrwegplanung für Reinigungsintervalle, zunächst an Bahnhöfen",
+          "ursachen_ids": [
+            3603
+          ],
+          "zitat": "Wir wollen die Einführung einer digitalen Fahrwegplanung für die Reinigungs- und Leerungsintervalle zunächst an Bahnhöfen vorantreiben.",
+          "seite": 71
+        },
+        {
+          "beschreibung": "Polizeipräsenz im öffentlichen Raum dauerhaft verstärken",
+          "ursachen_ids": [
+            3603
+          ],
+          "zitat": "Unser Ziel ist eine verstärkte Polizeipräsenz. Die Polizei soll dauerhaft Präsenz im öffentlichen Raum zeigen.",
+          "seite": 66
+        },
+        {
+          "beschreibung": "Polizei erhält Sonderbefugnisse an kriminalitätsbelasteten Orten",
+          "ursachen_ids": [
+            3603
+          ],
+          "zitat": "Dazu erhält die Polizei an solchen kriminalitätsbelasteten Orten die Sonderbefugnisse der verdachtsunabhängigen Identitätsfeststellung und der Durchsuchung von Personen und Sachen.",
+          "seite": 67
+        },
+        {
+          "beschreibung": "Bau von Obdachlosencamps verhindern",
+          "ursachen_ids": [
+            3603
+          ],
+          "zitat": "Zudem soll der Bau von Obdachlosencamps konsequent verhindert und Betroffenen sollen aktiv alternative Wohnmöglichkeiten aufgezeigt werden.",
+          "seite": 67
+        },
+        {
+          "beschreibung": "Konsequentes Vorgehen gegen Vandalismus und Graffiti auf öffentlicher Infrastruktur",
+          "ursachen_ids": [
+            3603
+          ],
+          "zitat": "Wir fordern ein konsequentes Vorgehen gegen Vandalismus. Sachbeschädigung, beispielsweise in Form von Graffiti auf öffentlicher Infrastruktur, wird in Berlin nicht genug verfolgt.",
+          "seite": 68
+        },
+        {
+          "beschreibung": "Parkläufer-Projekt verstetigen, um Konflikte in öffentlichen Grünanlagen zu deeskalieren",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3603
+          ],
+          "zitat": "Wir verstetigen die Finanzierung des „Parkläufer“-Projekts, um Konflikte zwischen Nutzern und Anwohnern öffentlicher Grünanlagen niedrigschwellig zu deeskalieren und die Einhaltung der Parkordnungen sicherzustellen.",
+          "seite": 70
+        },
+        {
+          "beschreibung": "BSR-Kieztage öfter und an mehr Orten veranstalten",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3603
+          ],
+          "zitat": "BSR-Kieztage sollen öfter und an mehr Orten stattfinden.",
+          "seite": 71
+        },
+        {
+          "beschreibung": "Kapazität bestehender Durchgangsstraßen in der Innenstadt nicht weiter reduzieren",
+          "ursachen_ids": [
+            3604
+          ],
+          "zitat": "Eine weitere Reduzierung der Kapazitäten bestehender Durchgangsstraßen in der Innenstadt lehnen wir, wo es nicht sinnvoll ist, ab.",
+          "seite": 62
+        },
+        {
+          "beschreibung": "U-Bahn-Netz jährlich um ein bis zwei Kilometer erweitern",
+          "ursachen_ids": [
+            3604
+          ],
+          "zitat": "Daher ist es erforderlich, das bestehende Netz nicht nur zu erhalten, sondern jährlich ein bis zwei Kilometer zusätzlich zu bauen.",
+          "seite": 57
+        },
+        {
+          "beschreibung": "Gehwegfreihaltung von parkenden Autos und Hindernissen durch konsequente Ahndung",
+          "ursachen_ids": [
+            3604
+          ],
+          "zitat": "Gehwege dürfen nicht durch parkende Autos, E-Scooter oder andere Hindernisse blockiert werden. Wir setzen auf konsequente Ahndung von Verstößen.",
+          "seite": 61
+        },
+        {
+          "beschreibung": "Vorrangnetz für den Fußverkehr definieren; bei Planung und Instandhaltung prioritär behandeln",
+          "ursachen_ids": [
+            3604
+          ],
+          "zitat": "Wir werden ein Vorrangnetz für den Fußverkehr definieren lassen, analog zu den Vorrangnetzen für den Auto- und Radverkehr sowie den ÖPNV. Dieses Netz […] wird bei Planung, Instandhaltung und Ausbau prioritär behandelt.",
+          "seite": 61
+        },
+        {
+          "beschreibung": "Fahrradstraßen parallel zu Hauptstraßen deutlich ausweiten",
+          "ursachen_ids": [
+            3604
+          ],
+          "zitat": "Fahrradstraßen parallel zu Hauptstraßen nach dem Beispiel der Linienstraße wollen wir deutlich ausweiten und das Netz von Fahrradstraßen erheblich vergrößern.",
+          "seite": 65
+        },
+        {
+          "beschreibung": "Privat finanzierte Fahrradparkhäuser an stark frequentierten Orten, insbesondere Bahnhöfen",
+          "ursachen_ids": [
+            3604
+          ],
+          "zitat": "An stark frequentierten Orten, insbesondere Bahnhöfen, sollen mit Sicherheitstechnik ausgestattete privatwirtschaftlich finanzierte Fahrradparkhäuser – auch unterirdisch – entstehen.",
+          "seite": 65
+        },
+        {
+          "beschreibung": "Sonntagsöffnung bundesweit erlauben; Bezirke sollen zusätzliche verkaufsoffene Sonntage genehmigen",
+          "ursachen_ids": [
+            3604
+          ],
+          "zitat": "Auf Bundesebene setzen wir uns dafür ein, die Sonntagsöffnung komplett zu erlauben. In einem ersten Schritt sollen die Bezirke zusätzliche verkaufsoffene Sonntage pro Jahr genehmigen und eigenständig terminieren dürfen.",
+          "seite": 21
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 3602,
+          "name": "Leerstand in Wohnraum umwandeln",
+          "seite": 46
+        },
+        {
+          "ursache": 3602,
+          "name": "Sondernutzungsflächen im öffentlichen Raum ausweisen",
+          "seite": 28
+        },
+        {
+          "ursache": 3602,
+          "name": "Großflächigkeitsgrenze im Baurecht anheben",
+          "seite": 28
+        },
+        {
+          "ursache": 3602,
+          "name": "Zwischennutzung leer stehender Gebäude erleichtern",
+          "seite": 34
+        },
+        {
+          "ursache": 3602,
+          "name": "Kleinteilige Eigentümerstruktur in der Innenstadt",
+          "seite": 36
+        },
+        {
+          "ursache": 3602,
+          "name": "Finanzieller Druck auf untätige Eigentümer",
+          "seite": 41
+        },
+        {
+          "ursache": 3603,
+          "name": "Kontrolle illegaler Müllentsorgung durch Ordnungsamt",
+          "seite": 71
+        },
+        {
+          "ursache": 3603,
+          "name": "Kostenfreie öffentliche Toiletten",
+          "seite": 70
+        },
+        {
+          "ursache": 3603,
+          "name": "Reinigungspflicht der ÖPNV-Anbieter über Verkehrsverträge",
+          "seite": 72
+        },
+        {
+          "ursache": 3603,
+          "name": "Digitale Reinigungsplanung",
+          "seite": 71
+        },
+        {
+          "ursache": 3603,
+          "name": "Polizeipräsenz im öffentlichen Raum",
+          "seite": 66
+        },
+        {
+          "ursache": 3603,
+          "name": "Sonderbefugnisse an kriminalitätsbelasteten Orten",
+          "seite": 67
+        },
+        {
+          "ursache": 3603,
+          "name": "Verbot von Obdachlosencamps",
+          "seite": 67
+        },
+        {
+          "ursache": 3603,
+          "name": "Verfolgung von Vandalismus und Graffiti",
+          "seite": 68
+        },
+        {
+          "ursache": 3603,
+          "name": "Parkläufer und Deeskalation in Grünanlagen",
+          "seite": 70
+        },
+        {
+          "ursache": 3603,
+          "name": "Kiezaktionen der BSR",
+          "seite": 71
+        },
+        {
+          "ursache": 3604,
+          "name": "Gehwegfreihaltung durchsetzen",
+          "seite": 61
+        },
+        {
+          "ursache": 3604,
+          "name": "Vorrangnetz für den Fußverkehr",
+          "seite": 61
+        },
+        {
+          "ursache": 3604,
+          "name": "Fahrradstraßen ausweiten",
+          "seite": 65
+        },
+        {
+          "ursache": 3604,
+          "name": "Fahrradparkhäuser an Bahnhöfen",
+          "seite": 65
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "leer stehend",
+          "ursache": 3602,
+          "richtung": "Leerstand, Zwischennutzung und Umnutzung"
+        },
+        {
+          "begriff": "Geisterhaus",
+          "ursache": 3602,
+          "richtung": "leerstehende Gebäude nutzbar machen"
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Sonntagsöffnungsverbot vollständig aufheben (im Kapitel Tourismus genannt, ohne Innenstadtbezug).",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3604
+          ],
+          "zitat": "Wir Freie Demokraten werden: […] das Sonntagsöffnungsverbot vollständig aufheben.",
+          "seite": 19
+        },
+        {
+          "beschreibung": "Innerstädtische Grünflächen, Kleingärten und Kaltluftschneisen fördern, um Überhitzung vorzubeugen und bebaute Flächen lebenswerter zu machen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3603
+          ],
+          "zitat": "Wir Freie Demokraten werden: […] die Entwicklung innerstädtischer Grünflächen, Kleingartenanlagen und Kaltluftschneisen gezielt fördern, um sommerlicher Überhitzung vorzubeugen und bebaute Flächen lebenswerter für Menschen, Pflanzen und Tiere zu machen.",
+          "seite": 32
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3602,
+          "seiten": [
+            4,
+            7,
+            19,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80
+          ],
+          "grund": "Gewerbeflächen, Gründung und wirtschaftliche Freiheitszonen (S. 4, 7) ohne Innenstadt- oder Ladenbezug; Kommunenkapitel (S. 75–80) ohne Maßnahme zu Innenstädten, Sortiment oder Nutzungsmischung."
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "innerstädtische Grünflächen",
+          "ursache": 3603,
+          "richtung": "Begrünung innerstädtischer Flächen"
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Ladenöffnungszeitengesetz weitgehend liberalisieren, mehr Sonntags- und Feiertagsöffnungen ermöglichen",
+          "ursachen_ids": [
+            3604
+          ],
+          "zitat": "Wir werden schnellstmöglich die vollständige Liberalisierung des Ladenöffnungszeitengesetzes vorantreiben, die insbesondere eine größtmögliche Ausweitung der Sonntagsöffnungen sowie Öffnungen an Feiertagen ermöglicht.",
+          "seite": 7
+        },
+        {
+          "beschreibung": "Sichere Fahrradabstellanlagen und Ladepunkte an Bahnhöfen, ÖPNV-Knoten und in Ortszentren",
+          "ursachen_ids": [
+            3604
+          ],
+          "zitat": "Menschen wollen mit dem Rad mobil sein, wir schaffen die Infrastruktur dafür. […] Zur Attraktivität gehören sichere Abstellanlagen und Ladepunkte an Bahnhöfen, ÖPNV-Knoten und in Ortszentren.",
+          "seite": 66
+        },
+        {
+          "beschreibung": "Ortskerne beleben; Innenentwicklung hat Vorrang vor neuem Flächenverbrauch",
+          "ursachen_ids": [
+            3602
+          ],
+          "zitat": "Innenentwicklung hat für uns Vorrang vor zusätzlichem Flächenverbrauch: Ortskerne beleben, Brachflächen aktivieren, Wege verkürzen.",
+          "seite": 58
+        },
+        {
+          "beschreibung": "Sicherheitspartnerschaften von Polizei und Ordnungsämtern ausbauen; mehr Polizeipräsenz im öffentlichen Raum",
+          "ursachen_ids": [
+            3603
+          ],
+          "zitat": "Wir bauen Sicherheitspartnerschaften zwischen Polizei und Ordnungsämtern flächendeckend aus und machen gemeinsame Einsätze zum Regelfall. Klare Zuständigkeiten, feste Absprachen und abgestimmtes Handeln verhindern Kompetenzgerangel, erhöhen die Präsenz im öffentlichen Raum und sorgen dafür, dass staatliche Autorität geschlossen, effizient und für die Bürger sichtbar wahrgenommen wird.",
+          "seite": 47
+        },
+        {
+          "beschreibung": "Waffenverbotszonen im Land abschaffen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3603
+          ],
+          "zitat": "Ebenso fordern wir die Abschaffung aller Waffenverbotszonen im Land und damit die Abschaffung der Möglichkeit der anlasslosen Personenkontrollen in diesen.",
+          "seite": 48
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 3603,
+          "name": "Waffenverbotszonen abschaffen",
+          "seite": 48
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "ortskerne beleben",
+          "ursache": 3602,
+          "richtung": "Belebung von Ortskernen"
+        },
+        {
+          "begriff": "ortszentren",
+          "ursache": 3604,
+          "richtung": "Fahrradabstellanlagen in Ortszentren"
+        }
+      ],
+      "stand_im_pdf": "05.06.2026"
+    },
+    {
+      "partei_id": 15,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Versandhandel mit rezeptpflichtigen Medikamenten verbieten",
+          "ursachen_ids": [
+            3601
+          ],
+          "zitat": "Den Versandhandel mit rezeptpflichtigen Medikamenten lassen wir nicht mehr zu, da er zu Wettbewerbsverzerrungen beiträgt.",
+          "seite": 29
+        },
+        {
+          "beschreibung": "Erhalt und Ausbau innerstädtischer Fahrspuren und Parkraum, zum Schutz des Einzelhandels",
+          "ursachen_ids": [
+            3604
+          ],
+          "zitat": "Gleichzeitig fordert die AfD den Erhalt und Ausbau von innerstädtischen Fahrspuren und Parkraum zur Vermeidung von wachsendem Verkehrschaos sowie zum Schutz der Attraktivität des Einzelhandels.",
+          "seite": 43
+        },
+        {
+          "beschreibung": "Historische Innenstädte bewahren und bei Bedarf rekonstruieren",
+          "ursachen_ids": [
+            3603
+          ],
+          "zitat": "Die Schönheit historischer Innenstädte muss bewahrt und bei Bedarf durch Rekonstruktionen wiederhergestellt werden.",
+          "seite": 172
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3602,
+          "seiten": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41
+          ],
+          "grund": "Kapitel Bauen und Wohnen gelesen; nur Wohnungsbau, Baurecht, Eigentum und Wohngeld. Nichts zu Sortiment, Ansiedlung oder Nutzungsmischung in Innenstädten."
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "Versandhandel",
+          "ursache": 3601,
+          "richtung": "Lokalen Handel stärken und Wettbewerb angleichen"
+        },
+        {
+          "begriff": "innerstädtischen Fahrspuren",
+          "ursache": 3604,
+          "richtung": "Erreichbarkeit mit dem Auto und Parkplätze"
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 3603,
+          "name": "Bewahrung und Rekonstruktion historischer Innenstädte",
+          "seite": 172
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Personaloffensive für den Berliner Nahverkehr",
+          "ursachen_ids": [
+            3604
+          ],
+          "zitat": "Eine Offensive zur Personalgewinnung bei BVG und S-Bahn.",
+          "seite": 41
+        },
+        {
+          "beschreibung": "Ausbau des Schienennetzes und Einsatz neuer Verkehrssysteme wie Seilbahnen",
+          "ursachen_ids": [
+            3604
+          ],
+          "zitat": "Einen zügigen Ausbau des Schienennetzes und den Einsatz moderner, ressourcenschonender Verkehrssysteme wie Seilbahnen.",
+          "seite": 42
+        },
+        {
+          "beschreibung": "ÖPNV-Anbindungen neuer Stadtgebiete vor deren Bezug fertigstellen",
+          "ursachen_ids": [
+            3604
+          ],
+          "zitat": "Effektive ÖPNV-Anbindungen fertigzustellen, bevor neue Stadtgebiete bezogen werden.",
+          "seite": 42
+        },
+        {
+          "beschreibung": "Beschleunigung des ÖPNV durch Vorrangschaltungen",
+          "ursachen_ids": [
+            3604
+          ],
+          "zitat": "Eine Beschleunigung des ÖPNV durch optimierte Vorrangschaltungen.",
+          "seite": 42
+        },
+        {
+          "beschreibung": "Digitale Zugleittechnik zur Erhöhung der Taktfolge",
+          "ursachen_ids": [
+            3604
+          ],
+          "zitat": "Die zügige Einführung digitaler Zugleittechnik (CBTC) zur Erhöhung der Taktfolge und zur sicheren Trennung von Bahnsteig und Gleiskörper.",
+          "seite": 42
+        },
+        {
+          "beschreibung": "Barrierefreiheit für Mobilitätseingeschränkte und kognitiv Beeinträchtigte ausbauen",
+          "ursachen_ids": [
+            3604
+          ],
+          "zitat": "Barrierefreiheit nicht nur für in der Mobilität beeinträchtige Personen, sondern auch für kognitiv Beeinträchtige ausbauen.",
+          "seite": 42
+        },
+        {
+          "beschreibung": "Tarifangebote für Pendler aus dem Umland zum Umstieg auf den ÖPNV",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3604
+          ],
+          "zitat": "Tarifliche Angebote, die Pendler schon in Brandenburg auf den ÖPNV umsteigen lassen.",
+          "seite": 42
+        },
+        {
+          "beschreibung": "Mobilitätskonten mit vereinfachtem Ticketing für ÖPNV, Carsharing und Mikromobilität",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3604
+          ],
+          "zitat": "Vereinfachtes Ticketing durch Mobilitätskonten, die den ÖPNV, Carsharing-Angebote und Mikromobilität integrieren.",
+          "seite": 42
+        },
+        {
+          "beschreibung": "Gemeinsame Sicherheits- und Sauberkeitsstreifen auf U-Bahn-Linien",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3603
+          ],
+          "zitat": "Gemeinsame Sicherheits- und Sauberkeitsstreifen auf allen U-Bahn-Linien und ein einheitliches Notrufsystem.",
+          "seite": 42
+        },
+        {
+          "beschreibung": "Systematische Sanierung der Gehwege im Programm „Gehweg 2030“",
+          "ursachen_ids": [
+            3604
+          ],
+          "zitat": "Eine Initiative „Gehweg 2030“, mit der die Gehweginfrastruktur Berlins […] systematisch saniert wird.",
+          "seite": 43
+        },
+        {
+          "beschreibung": "Vermeidung von Engstellen auf Gehwegen durch abgestellte Fahrzeuge und Stadtmöbel",
+          "ursachen_ids": [
+            3604
+          ],
+          "zitat": "Die Vermeidung von Engstellen durch abgestellte E-Scooter, Fahrräder oder durch Stadtmöbel.",
+          "seite": 44
+        },
+        {
+          "beschreibung": "Bedarfsgerechter Radwegeausbau durch besseres Radverkehrsmonitoring",
+          "ursachen_ids": [
+            3604
+          ],
+          "zitat": "Einen bedarfsgerechten Ausbau der Radverkehrsinfrastruktur durch besseres Radverkehrsmonitoring.",
+          "seite": 43
+        },
+        {
+          "beschreibung": "Radverkehrsführung auf Nebenstraßen parallel zu Hauptstraßen",
+          "ursachen_ids": [
+            3604
+          ],
+          "zitat": "Eine zielgerichtete Streckenführung auf Nebenstraßen, die benachbart und parallel zu Hauptstraßen verlaufen.",
+          "seite": 43
+        },
+        {
+          "beschreibung": "Programm mit abschließbaren Fahrradabstellanlagen",
+          "ursachen_ids": [
+            3604
+          ],
+          "zitat": "Ein „1.000-Räder-Programm“, das modulare, abschließbare Abstellanlagen vorsieht.",
+          "seite": 43
+        },
+        {
+          "beschreibung": "Streusalz auf Gehwegen bei Glätte erlauben und Straßenreinigungsgesetz novellieren",
+          "ursachen_ids": [
+            3604
+          ],
+          "ursachen_offen": [
+            3603
+          ],
+          "zitat": "Wir werden das Berliner Straßenreinigungsgesetz in diesem Sinne weiter novellieren. Klare, automatische Auslösetatbestände für den Einsatz von Streusalz auf Gehwegen, eine direkte Ermächtigung der BSR und Abbau bürokratischer Hürden stehen dabei im Vordergrund.",
+          "seite": 84
+        },
+        {
+          "beschreibung": "Ordnungsämter rund um die Uhr aktiv, konsequente Ahndung von Verursachern",
+          "ursachen_ids": [
+            3603
+          ],
+          "zitat": "Die Ordnungsämter müssen rund um die Uhr aktiv sein, um eine konsequente Ahndung von Verursachern zu ermöglichen.",
+          "seite": 83
+        },
+        {
+          "beschreibung": "Mobile Einsatzteams zur Beseitigung von Müll, Graffiti und Verwahrlosung",
+          "ursachen_ids": [
+            3603
+          ],
+          "zitat": "Mobile Einsatzteams beseitigen illegalen Müll, Graffiti und andere Verwahrlosungen.",
+          "seite": 83
+        },
+        {
+          "beschreibung": "Videoüberwachung an Müll-Hotspots",
+          "ursachen_ids": [
+            3603
+          ],
+          "zitat": "Videoüberwachung an Müll-Hotspots.",
+          "seite": 83
+        },
+        {
+          "beschreibung": "Ausreichende Abfallbehälter und Müll-Infrastruktur",
+          "ursachen_ids": [
+            3603
+          ],
+          "zitat": "Ausreichende Abfallbehälter und eine funktionierende Müll-Infrastruktur, auch durch den Ausbau und die Weiterentwicklung der bestehenden BSR-Recyclinghöfe.",
+          "seite": 84
+        },
+        {
+          "beschreibung": "Schnellere Entfernung von Autowracks, höhere Kosten für Verursacher",
+          "ursachen_ids": [
+            3603
+          ],
+          "zitat": "Autowracks müssen für die Verursacher teurer werden und schneller entfernt werden.",
+          "seite": 83
+        },
+        {
+          "beschreibung": "Entfernung von Obdachlosencamps nach klaren Regeln",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3603
+          ],
+          "zitat": "Obdachlosencamps sollen nach klaren Regeln entfernt werden.",
+          "seite": 83
+        },
+        {
+          "beschreibung": "Einbindung von Bürgern und Bildungseinrichtungen in Sauberkeitsmaßnahmen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3603
+          ],
+          "zitat": "Die Einbindung von Bürgern und Bildungseinrichtungen in Umwelt- und Sauberkeitsmaßnahmen.",
+          "seite": 84
+        },
+        {
+          "beschreibung": "Videoüberwachung in Brennpunktbereichen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3603
+          ],
+          "zitat": "Eine vollständige Videoüberwachung in allen Brennpunktbereichen.",
+          "seite": 13
+        },
+        {
+          "beschreibung": "Mobile Polizeiwachen in Problemvierteln und dichteres Netz stationärer Wachen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3603
+          ],
+          "zitat": "Die Einführung mobiler Polizeiwachen in Problemvierteln sowie die Schaffung eines dichteren Netzes stationärer Polizeiwachen.",
+          "seite": 13
+        },
+        {
+          "beschreibung": "Pflege der Grünflächen durch ausreichende Bezirksmittel, Personal und Pflegekonzepte",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3603
+          ],
+          "zitat": "Wir stellen sicher, dass die Bezirke ausreichende Mittel, qualifiziertes Personal und klare Pflegekonzepte erhalten, die auch tatsächlich umgesetzt werden.",
+          "seite": 79
+        },
+        {
+          "beschreibung": "Durchsetzung der Nachpflanzpflicht für gefällte Straßenbäume",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3603
+          ],
+          "zitat": "Wir werden die Nachpflanzpflicht konsequenter durchsetzen und durch transparente Baumbilanzen kontrollieren.",
+          "seite": 79
+        },
+        {
+          "beschreibung": "Originalgetreue Rekonstruktion stadtbildprägender Bauwerke, u. a. Altstadt am Molkenmarkt",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3603
+          ],
+          "zitat": "Deshalb setzen wir uns für die originalgetreue Rekonstruktion stadtbildprägender Bauwerke ein. Dies betrifft insbesondere die Schinkelsche Bauakademie sowie eine Wiederbebauung der Berliner Altstadt am Molkenmarkt.",
+          "seite": 88
+        },
+        {
+          "beschreibung": "Rückbau von Umwelt- und Bürokratieauflagen für Einzelhandel und Gastronomie",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3602
+          ],
+          "zitat": "Deshalb fordern wir: […] Den Rückbau der wuchernden Umwelt- und Bürokratieauflagen für Einzelhandel und Gastronomie.",
+          "seite": 48
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3602,
+          "seiten": [
+            46,
+            47,
+            48
+          ],
+          "grund": "Ansiedlung und Gewerbeflächen nur allgemein (Gewerbeflächenkataster, Standortmarketing, Gewerbesteuer, CO2-Bepreisung für Gewerbeimmobilien) ohne Innenstadt- oder Einzelhandelsbezug; „Berliner Mischung“ nur als Bekenntnis zum Bestehenden; Tourismus-/City-Tax-Zusagen ohne Bezug zu Geschäftsschließungen."
+        },
+        {
+          "ursache": 3604,
+          "seiten": [
+            42,
+            43,
+            60
+          ],
+          "grund": "Öffnungszeiten: nur Kita-Öffnungszeiten (S. 60), keine Ladenöffnung. Parken, Park-and-Ride, Autoverkehr, Kiezblocks und Baustellen (S. 42–43) nach R2 Autofahren, nicht Innenstadt. Lade- und Lieferzonen (S. 43) Wirtschaftsverkehr, nicht Kundenerreichbarkeit."
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "verwahrlosung",
+          "ursache": 3603,
+          "richtung": "Sauberkeit des öffentlichen Raums"
+        },
+        {
+          "begriff": "vermüllung",
+          "ursache": 3603,
+          "richtung": "Sauberkeit des öffentlichen Raums"
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Ladenschlusszeiten und Bäderverkaufsverordnung liberalisieren, mehr verkaufsoffene Sonntage, mehr touristische Orte in der Bäderverkaufsverordnung",
+          "ursachen_ids": [
+            3604
+          ],
+          "zitat": "Wir stehen für eine Liberalisierung der Ladenschlusszeiten und der Bäderverkaufsverordnung, mehr verkaufsoffene Sonntage und eine Erweiterung der touristischen Orte in der Bäderverkaufsverordnung.",
+          "seite": 13
+        },
+        {
+          "beschreibung": "Förderung von Sanierung und Umbau von Leerständen, damit daraus neuer Wohnraum entsteht",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3602
+          ],
+          "zitat": "Leerstände machen wir durch Förderung von Sanierungen und Umbauten nutzbar, so entsteht neuer Wohnraum ohne zusätzlichen Flächenfraß.",
+          "seite": 90
+        },
+        {
+          "beschreibung": "Bei öffentlichen Bauten soll auf einen architektonischen Heimatstil geachtet werden",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3603
+          ],
+          "zitat": "Die öffentliche Hand prägt mit Bauvorhaben maßgeblich Innenstädte und Infrastruktur. […] Bei öffentlichen Bauten soll in Zukunft auf einen architektonischen Heimatstil geachtet werden.",
+          "seite": 89
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "leerstände",
+          "ursache": 3602,
+          "richtung": "Nutzungsmischung und Ansiedlung fördern"
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Asylunterkünfte nicht in Innenstadtlagen einrichten; Standorte so wählen, dass Konfliktpotenziale vermieden werden.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3603
+          ],
+          "zitat": "Deren Lage wird im Interesse der Bürger sowie der Bewohner der Unterkünfte so gewählt werden, dass Konfliktpotentiale vermieden werden. Von Innenstadtlagen ist daher Abstand zu nehmen.",
+          "seite": 33
+        },
+        {
+          "beschreibung": "Kredite zu Sonderkonditionen für die Sanierung von Altbauten in historischen Innenstadtbereichen ermöglichen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3603
+          ],
+          "zitat": "In Sachsen-Anhalt verfügen viele Städte über eine gute Altbausubstanz, vor allem in den historischen Innenstadtbereichen. […] Eine AfD-geführte Landesregierung wird die Kreditvergabe zu Sonderkonditionen für die Sanierung dieser Altbausubstanz […]",
+          "seite": 58
+        },
+        {
+          "beschreibung": "Ortsumfahrungen schneller realisieren, um die Ortskerne zu entlasten.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3603
+          ],
+          "zitat": "Aber auch Ortsumfahrungen müssen schneller realisiert werden, um die Ortskerne zu entlasten.",
+          "seite": 198
+        },
+        {
+          "beschreibung": "Gewinnbeteiligung an der Innenstadtsanierung nach Naturkatastrophen einführen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3603
+          ],
+          "zitat": "Wir werden eine Elementarpflichtversicherung bei Hochwassergefahr und eine Innenstadtsanierungsgewinnbeteiligung nach Naturkatastrophen einführen.",
+          "seite": 205
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3602,
+          "seiten": [
+            33,
+            58,
+            142,
+            143,
+            144,
+            145,
+            149,
+            151,
+            188,
+            191,
+            192,
+            193
+          ],
+          "grund": "Kapitel IX (Wirtschaft) und XII (Ländlicher Raum) gelesen. Keine Zusage zu Sortiment, Ansiedlung oder Nutzungsmischung in Innenstädten. Dorfläden (S. 191, 193) nur ländlicher Raum, Zitat ohne Innenstadt, Ortskern, Einzelhandel oder Leerstand (R2). Verpackungssteuer-Ablehnung (S. 145) betrifft Kosten, nicht Sortiment."
+        },
+        {
+          "ursache": 3604,
+          "seiten": [
+            196,
+            199,
+            200,
+            202,
+            204
+          ],
+          "grund": "Kapitel XIII (Verkehr) gelesen. Behindertenparkplätze (S. 202) und Baumaßnahmen (S. 199) ohne Innenstadtbezug (R2). Bus und Bahn (S. 200) und Radwege (S. 204) allgemein ohne Innenstadt-, Ortskern- oder Einzelhandelsbezug (R2). Keine Zusage zu Öffnungszeiten."
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "Dorfläden",
+          "ursache": 3602,
+          "richtung": "Nahversorgung und Einkaufsmöglichkeiten im ländlichen Raum"
+        },
+        {
+          "begriff": "Ortskerne",
+          "ursache": 3603,
+          "richtung": "Entlastung der Ortskerne (Ortsumfahrungen)"
+        },
+        {
+          "begriff": "Innenstadtsanierung",
+          "ursache": 3603,
+          "richtung": "Sanierung und Wiederaufbau in Innenstädten"
+        },
+        {
+          "begriff": "Altbausubstanz",
+          "ursache": 3603,
+          "richtung": "Sanierung von Altbauten in Innenstadtbereichen"
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Innenstädte autofrei machen, mit Ausnahmen für Menschen mit besonderen Bedarfen und den Lieferverkehr.",
+          "ursachen_ids": [
+            3604
+          ],
+          "ursachen_offen": [
+            3603
+          ],
+          "zitat": "Wir setzen uns für autofreie Innenstädte ein – selbstverständlich mit Ausnahmen für Menschen mit besonderen Bedarfen oder für den Lieferverkehr.",
+          "seite": 44
+        },
+        {
+          "beschreibung": "Hilfsangebote und Sozialarbeit für Obdachlose und Suchtabhängige statt Verdrängung aus den Innenstädten.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3603
+          ],
+          "neue_buendel": [
+            {
+              "ursache": 3603,
+              "name": "Hilfsangebote und Sozialarbeit statt Verdrängung",
+              "seite": 48
+            }
+          ],
+          "zitat": "Obdachlosen und Suchtabhängigen ist nicht mit einer Verdrängung aus den Innenstädten geholfen, vielmehr benötigen sie bessere Hilfsangebote und eine Stärkung der Sozialarbeit.",
+          "seite": 48
+        },
+        {
+          "beschreibung": "Leerstehendes Gewerbe wie Einkaufszentren und Warenhäuser in kommunale oder genossenschaftliche Hand überführen und zu Sorgezentren umbauen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3602
+          ],
+          "zitat": "Um die Nahversorgung im Wohnumfeld zu sichern, wollen wir leerstehendes Gewerbe (insbesondere große Gewerbeflächen wie Shoppingmalls oder Warenhäuser) in kommunale oder genossenschaftliche Hand überführen und zu Sorgezentren umgestalten.",
+          "seite": 45
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3601,
+          "seiten": [
+            8,
+            14,
+            56,
+            57
+          ],
+          "grund": "Kein Wettbewerbs- oder Digitalisierungsthema zwischen Online- und stationärem Handel: Finanzregeln für Amazon/Paypal (S. 14), Haftung für Onlinemarktplätze als Verbraucherschutz (S. 56), Digitalisierung ohne Bezug zum lokalen Handel (S. 57); Kleingewerbe-Mieten (S. 8) ohne Bezug zum Online-Handel."
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "autofreie Innenstädte",
+          "ursache": 3604,
+          "richtung": "Erreichbarkeit mit dem Auto und Parkplätze"
+        },
+        {
+          "begriff": "leerstehendes Gewerbe",
+          "ursache": 3602,
+          "richtung": "Nutzungsmischung und Ansiedlung fördern"
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Leer gefallene Shoppingcenter in die öffentliche Hand überführen und gemeinschaftlich als Quartiers-Sorgezentren betreiben.",
+          "ursachen_ids": [
+            3602
+          ],
+          "zitat": "Insbesondere leer gefallene Shoppingcenter wollen wir dafür in die öffentliche Hand überführen und gemeinschaftlich […] betreiben.",
+          "seite": 43
+        },
+        {
+          "beschreibung": "Keine neuen Shopping-Center genehmigen, um Kleingewerbe vor Verdrängung zu schützen.",
+          "ursachen_ids": [
+            3602
+          ],
+          "zitat": "Da Berlin schon jetzt ein Überangebot an Shopping-Centern aufweist, die zu einer Verdrängung von Kleingewerbe führen, schlagen wir vor, dass keine solchen neu genehmigt werden.",
+          "seite": 50
+        },
+        {
+          "beschreibung": "Leerstehende Bürogebäude umnutzen, mit Bundesfördermitteln und einem neuen Landesförderprogramm.",
+          "ursachen_ids": [
+            3602
+          ],
+          "zitat": "Stattdessen setzen wir uns für die Umnutzung bereits bestehender, leer stehender Bürogebäude ein, nutzen dafür zur Verfügung stehende Fördermittel auf Bundesebene und schaffen ein Landesförderprogramm.",
+          "seite": 49
+        },
+        {
+          "beschreibung": "Ein Leerstandskataster zur systematischen Erfassung von Leerstand einführen.",
+          "ursachen_ids": [
+            3602
+          ],
+          "zitat": "Außerdem wollen wir die Einführung eines Leerstandskatasters zur systematischen Bestandserfassung von Leerstand.",
+          "seite": 49
+        },
+        {
+          "beschreibung": "Bundesgesetz gegen Gewerbeleerstand (Zweckentfremdungsverbot für Gewerbe) fordern, um Leerstand zu sanktionieren.",
+          "ursachen_ids": [
+            3602
+          ],
+          "zitat": "Wir fordern außerdem auf Bundesebene ein Zweckentfremdungsverbotsgesetz für Gewerbe, um Leerstand konsequent zu sanktionieren.",
+          "seite": 49
+        },
+        {
+          "beschreibung": "Stadtentwicklungsplan Zentren neu auflegen, Zentren als Daseinsvorsorge verstehen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3602
+          ],
+          "zitat": "Den Stadtentwicklungsplan (StEP) Zentren werden wir neu auflegen – mit einer neuen Bedeutung von Zentrum als Daseinsvorsorge und nicht als „hohe kommerzielle Aktivität“.",
+          "seite": 50
+        },
+        {
+          "beschreibung": "Über den Bundesrat eine dauerhafte gesetzliche Begrenzung der Gewerbemieten vorschlagen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3602
+          ],
+          "zitat": "Immer mehr Läden, insbesondere Gastronomie und Einzelhandel, aber auch Kitas und andere Einrichtungen, sind dadurch von Verdrängung bedroht. Wir werden über den Bundesrat eine dauerhafte Begrenzung der Gewerbemieten per Gesetz vorschlagen.",
+          "seite": 89
+        },
+        {
+          "beschreibung": "Erhalt der Galeria-Warenhaus-Standorte in der City West, behutsame Weiterentwicklung mit Beteiligung.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3602
+          ],
+          "zitat": "Wir setzen uns für den Erhalt der dortigen Galeria-Warenhaus-Standorte, eine behutsame Weiterentwicklung der Objekte unter Beteiligung der Anwohner*innen und der benachbarten Gewerbetreibenden ein.",
+          "seite": 48
+        },
+        {
+          "beschreibung": "Am Alexanderplatz einen Nutzungsmix (vor allem Kultur) und eine ansprechende Gestaltung ermöglichen, damit der Platz wieder Aufenthaltsqualität hat.",
+          "ursachen_ids": [
+            3602,
+            3603
+          ],
+          "zitat": "Die Innenstadt muss Lebensraum für alle sein und braucht eine hohe Aufenthaltsqualität. […] Der Alexanderplatz ist für viele Berliner*innen ein zentraler Ort. Damit der Platz Aufenthaltsqualität zurückerhält, wollen wir einen Nutzungsmix insbesondere mit Kultur und eine ansprechende Gestaltung ermöglichen.",
+          "seite": 47
+        },
+        {
+          "beschreibung": "Die Zentrale Landesbibliothek soll in das Galeria-Warenhaus am Alexanderplatz einziehen.",
+          "ursachen_ids": [
+            3602
+          ],
+          "zitat": "In das Warenhaus Galeria soll auch die Zentrale Landesbibliothek (ZLB) einziehen.",
+          "seite": 47
+        },
+        {
+          "beschreibung": "Die kulturelle Nutzung leerstehender Immobilien erleichtern und Zwischennutzungen ausweiten.",
+          "ursachen_ids": [
+            3602
+          ],
+          "zitat": "Wir wollen die kulturelle Nutzung leer stehender Immobilien erleichtern und Zwischennutzungen ausweiten.",
+          "seite": 238
+        },
+        {
+          "beschreibung": "Fahr- und Stellflächen für den Autoverkehr reduzieren, besonders in Einkaufsstraßen, für mehr Platz und Aufenthalt für Fußgänger*innen.",
+          "ursachen_ids": [
+            3603
+          ],
+          "ursachen_offen": [
+            3604
+          ],
+          "zitat": "Mehr Platz und mehr Aufenthaltsqualität für Fußgänger*innen schaffen wir durch die Reduzierung von Fahr- und Stellflächen für den Autoverkehr, besonders in großen lebendigen Einkaufsstraßen, Flaniermeilen und Kiezblocks.",
+          "seite": 66
+        },
+        {
+          "beschreibung": "Die Zahl der verkaufsoffenen Sonntage reduzieren; eine Aufweichung des Sonntagsöffnungsverbots lehnen wir ab.",
+          "ursachen_ids": [
+            3604
+          ],
+          "zitat": "Eine Aufweichung des Verbots der Sonntagsöffnung für den Einzelhandel insbesondere durch digitale Kleinstsupermärkte lehnen wir ab, die Zahl der verkaufsoffenen Sonntage wollen wir reduzieren.",
+          "seite": 95
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 3602,
+          "name": "Ankauf leer stehender Einkaufszentren",
+          "seite": 43
+        },
+        {
+          "ursache": 3602,
+          "name": "Genehmigungsstopp für neue Shopping-Center",
+          "seite": 50
+        },
+        {
+          "ursache": 3602,
+          "name": "Leerstandskataster",
+          "seite": 49
+        },
+        {
+          "ursache": 3602,
+          "name": "Verbot von Gewerbeleerstand (Zweckentfremdung)",
+          "seite": 49
+        },
+        {
+          "ursache": 3602,
+          "name": "Stadtentwicklungsplan Zentren",
+          "seite": 50
+        },
+        {
+          "ursache": 3602,
+          "name": "Begrenzung der Gewerbemieten",
+          "seite": 89
+        },
+        {
+          "ursache": 3602,
+          "name": "Erhalt von Warenhausstandorten",
+          "seite": 48
+        },
+        {
+          "ursache": 3603,
+          "name": "Nutzungsmix und Gestaltung zentraler Plätze",
+          "seite": 47
+        },
+        {
+          "ursache": 3602,
+          "name": "Ansiedlung öffentlicher Einrichtung in Warenhaus",
+          "seite": 47
+        },
+        {
+          "ursache": 3602,
+          "name": "Zwischennutzung leer stehender Immobilien",
+          "seite": 238
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "Shopping-Center",
+          "ursache": 3602,
+          "richtung": "neue Genehmigung ausschließen, Kleingewerbe schützen"
+        },
+        {
+          "begriff": "Kleingewerbe",
+          "ursache": 3602,
+          "richtung": "Schutz vor Verdrängung"
+        },
+        {
+          "begriff": "Warenhaus",
+          "ursache": 3602,
+          "richtung": "Erhalt und Nachnutzung von Warenhausstandorten"
+        },
+        {
+          "begriff": "leer stehend",
+          "ursache": 3602,
+          "richtung": "Nutzung leerstehender Immobilien"
+        },
+        {
+          "begriff": "Einkaufsstraße",
+          "ursache": 3603,
+          "richtung": "Flächen für Fußverkehr statt Autoverkehr"
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3604,
+          "seiten": [
+            16,
+            25,
+            56,
+            58,
+            64,
+            68,
+            79,
+            115,
+            320
+          ],
+          "grund": "Parkraum, Parkgebühren, ÖPNV- und Straßenbahnausbau, Schulen, Beratung, Sport ohne Innenstadt-, Ortskern-, Einzelhandels- oder Leerstandsbezug (R2); Späti-Ausnahmen (S. 103) nur Prüfauftrag"
+        },
+        {
+          "ursache": 3603,
+          "seiten": [
+            18,
+            32,
+            54,
+            66,
+            207,
+            208,
+            210,
+            265,
+            313,
+            319
+          ],
+          "grund": "Sauberkeit, Grünflächen, Toiletten, Bänke, Werbung, Kieztage, Sport und Badestellen ohne Innenstadt-Bezug (R2); Kieztage nennen Einzelhandels-Parkplätze nur als Standort"
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Stadtprofile stärken und Innenstädte als lebendige Orte sichern (Grenzfall: Ansiedlung/Nutzungsmischung oder Aufenthalt)",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3602,
+            3603
+          ],
+          "zitat": "Stadtprofile stärken, Innenstädte als lebendige Orte sichern und Stadt-Umland-Kooperationen ausbauen.",
+          "seite": 26
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3604,
+          "seiten": [
+            20,
+            21,
+            24
+          ],
+          "grund": "ÖPNV-, Rad- und Straßenmaßnahmen (S. 20–21) nennen weder Innenstadt, Ortskern, Einzelhandel noch Leerstand (R2). Öffnungszeiten (S. 24) betreffen Gerichte."
+        }
+      ],
+      "stand_im_pdf": "Juni 2026 (Beschluss 30. Mai 2026)"
+    },
+    {
+      "partei_id": 16,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Stadtumbauprogramm bis 2035 gegen Leerstand: Rückbau und Aufwertung im Bestand finanzieren.",
+          "ursachen_ids": [
+            3602
+          ],
+          "ursachen_offen": [
+            3603
+          ],
+          "zitat": "Wir wollen: […] gegen den Leerstand die Auflage eines neuen Stadtumbauprogramms bis 2035 für den Rückbau und Aufwertung im Bestand finanzieren.",
+          "seite": 85
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3604,
+          "seiten": [
+            63,
+            64,
+            65,
+            104
+          ],
+          "grund": "Öffnungszeiten (S. 63) betreffen Jugendangebote, Bus/Bahn und Radwege für Jugendliche (S. 64–65), Rad- und Fußverkehr sowie Tempo 30 (S. 104). Kein Bezug zu Innenstadt, Ortskern, Einzelhandel oder Leerstand (R2); Parken und Ladenöffnung nicht behandelt."
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "stadtumbau",
+          "ursache": 3602,
+          "richtung": "Nutzungsmischung und Ansiedlung fördern"
+        },
+        {
+          "begriff": "nachnutzung",
+          "ursache": 3602,
+          "richtung": "Nutzungsmischung und Ansiedlung fördern"
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Sichere Radwege in der Innenstadt schaffen, zusammen mit attraktivem öffentlichem Nah- und Fernverkehr.",
+          "ursachen_ids": [
+            3604
+          ],
+          "zitat": "Wir wollen eine Verkehrspolitik, die für alle Verkehrsteilnehmer da ist – vom Autofahrer bis zum Fußgänger. Dafür braucht es sichere Radwege in der Innenstadt ebenso wie einen attraktiven öffentlichen Nah- und Fernverkehr und intakte Straßen und Autobahnen.",
+          "seite": 30
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3601,
+          "seiten": [
+            14,
+            15,
+            30,
+            31
+          ],
+          "grund": "Kartellrecht, Fusionskontrolle und Marktanteilsgrenzen (Lebensmittel, Konzerne) sowie Verbraucherschutz betreffen Marktmacht allgemein, nicht den Wettbewerb zwischen Online- und stationärem Handel."
+        },
+        {
+          "ursache": 3602,
+          "seiten": [
+            16,
+            19,
+            28
+          ],
+          "grund": "Einkaufsmöglichkeiten für den täglichen Bedarf (S. 16), Lebensmittelläden im ländlichen Raum (S. 19) und gemischte Quartiere (S. 28) ohne Nennung von Innenstadt, Ortskern, Einzelhandel oder Leerstand (R2)."
+        },
+        {
+          "ursache": 3603,
+          "seiten": [
+            3,
+            11,
+            28,
+            29
+          ],
+          "grund": "Sichere Straßen und Plätze durch mehr Polizei (S. 3) ohne Innenstadtbezug; Sauberkeit, Aufenthaltsqualität und Gestaltung des öffentlichen Raums nicht behandelt. Treffer auf S. 11 betrifft Energienetze."
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "BE",
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel Gesundheit (S. 22), Sport (S. 26–27), Sicherheit (S. 38–41), Wohnen (S. 6–8, 12), Verkehr (S. 48–50), Steuern (S. 52–55) und Umwelt und Sauberkeit (S. 56–59) gelesen. Keine konkrete Zusage, die Innenstädte, Ortskerne, Einzelhandel oder Leerstand betrifft.",
+      "nicht_erfasst": [
+        {
+          "ursache": 3602,
+          "seiten": [
+            8,
+            12,
+            53,
+            54
+          ],
+          "grund": "Wohnungsleerstand (S. 8, 12) betrifft Wohnraum, nicht Geschäfte; die Prüfung „ist zu prüfen“ ist ein Prüfauftrag. Wirtschaftsförderung und Gewerbesteuer-Hebesatz (S. 53–54) gelten dem Standort allgemein, nicht Innenstädten (R2)."
+        },
+        {
+          "ursache": 3603,
+          "seiten": [
+            26,
+            27,
+            38,
+            40,
+            41,
+            47,
+            56,
+            57,
+            58
+          ],
+          "grund": "Sportstätten, Polizeipräsenz, Streifen, Videoüberwachung, Beleuchtung, Sauberkeitskontrollen, Kiezreinigung und Trinkwasserstellen nennen keine Innenstadt, keinen Ortskern, Einzelhandel oder Leerstand (R2). S. 47 („sinnvolle Investitionen im Innenstadtbereich“) ist ein Bekenntnis ohne eigene Handlungszusage."
+        },
+        {
+          "ursache": 3604,
+          "seiten": [
+            22,
+            48,
+            49,
+            50
+          ],
+          "grund": "Parkraummanagement, Ladezonen, ÖPNV, Radwege, Baustellenkoordination und Fußverkehr ohne Innenstadt- oder Einzelhandelsbezug (R2). Praxisöffnungszeiten (S. 22) betreffen keine Geschäfte. Park-and-Ride (S. 48) ist nur eine Möglichkeit („können“)."
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Standort- und Innenstadtpolitik, die inhabergeführte Geschäfte stärkt, Leerstand reduziert und kleinteilige Versorgungsstrukturen erhält.",
+          "ursachen_ids": [
+            3602
+          ],
+          "zitat": "Lebendigkeit der Innenstädte und Ortskerne erhalten und fördern durch eine aktive Standort- und Innenstadtpolitik, die inhabergeführte Geschäfte stärkt, Leerstand reduziert und kleinteilige Versorgungsstrukturen erhält.",
+          "seite": 33
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3603,
+          "seiten": [
+            67,
+            76
+          ],
+          "grund": "Nur Polizeipräsenz und Videoüberwachung im öffentlichen Raum (S. 67) ohne Innenstadtbezug; nichts zu Aufenthaltsqualität, Verkehrsberuhigung, Begrünung oder Sauberkeit in Innenstädten."
+        },
+        {
+          "ursache": 3604,
+          "seiten": [
+            33,
+            37,
+            87,
+            88,
+            90
+          ],
+          "grund": "ÖPNV, Straßen, Park-and-Ride und Radwege nur allgemein oder für Tourismus, ohne Innenstadt-, Einzelhandels- oder Leerstandsbezug (R2); keine Aussage zu Parkgebühren oder Ladenöffnungszeiten."
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "inhabergeführte",
+          "ursache": 3602,
+          "richtung": "Stärkung inhabergeführter Geschäfte in Innenstädten"
+        },
+        {
+          "begriff": "Ortskern",
+          "ursache": 3602,
+          "richtung": "Erhalt der Lebendigkeit von Innenstädten und Ortskernen"
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Mehr sichtbare Polizeipräsenz für sichere, attraktive öffentliche Räume",
+          "ursachen_ids": [
+            3603
+          ],
+          "zitat": "Wir setzen uns für mehr sichtbare Polizeipräsenz, klare rechtliche Befugnisse, soziale Gerechtigkeit und ausreichende Mittel für attraktive Innenstädte, lebenswerte Quartiere und starke ländliche Räume ein.",
+          "seite": 67
+        },
+        {
+          "beschreibung": "Ausreichende Mittel für attraktive Innenstädte und lebenswerte Quartiere",
+          "ursachen_ids": [
+            3603
+          ],
+          "zitat": "Wir setzen uns für mehr sichtbare Polizeipräsenz, klare rechtliche Befugnisse, soziale Gerechtigkeit und ausreichende Mittel für attraktive Innenstädte, lebenswerte Quartiere und starke ländliche Räume ein.",
+          "seite": 67
+        },
+        {
+          "beschreibung": "Konsequente Nutzung kommunaler Vorkaufsrechte gegen Leerstand und Spekulation im Rahmen der Gemeindeentwicklung",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3602
+          ],
+          "zitat": "Das BSW setzt auf eine ganzheitliche Gemeindeentwicklung und die Stärkung lokaler Handlungsfähigkeit, etwa durch die konsequente Nutzung kommunaler Vorkaufsrechte gegen Leerstand und Spekulation.",
+          "seite": 34
+        },
+        {
+          "beschreibung": "Förderung des sozialen Wohnungsbaus in Innenstädten nach dem Drittel-Mix-Modell",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3602
+          ],
+          "zitat": "Die Förderung des sozialen Wohnungsbaus in den Innenstädten in Anlehnung an das Hamburger Drittel-Mix-Modell (ein Drittel öffentlich geförderter Wohnungsbau, ein Drittel Eigentumswohnungen, ein Drittel frei finanzierte Wohnungen) kann Segregation verhindern.",
+          "seite": 65
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 3602,
+          "name": "Kommunales Vorkaufsrecht gegen Leerstand",
+          "seite": 34
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3604,
+          "seiten": [
+            31,
+            32,
+            33
+          ],
+          "grund": "Kapitel Infrastruktur und Mobilität gelesen: ÖPNV, Radwege und Bike-&-Ride nur allgemein bzw. für ländlichen Raum; ÖPNV-Anbindung von Versorgungszentren im ländlichen Raum (S. 32) ist nicht Innenstadt/Ortskern; keine Aussage zu Parken oder Öffnungszeiten."
+        },
+        {
+          "ursache": 3602,
+          "seiten": [
+            21,
+            23,
+            29,
+            30,
+            32,
+            89
+          ],
+          "grund": "Gründung/Nachfolge allgemein (S. 21–22); Meisterbindung nur Prüfauftrag (S. 23); Ansiedlung in Mittelzentren ohne Innenstadtbezug, Wohnungsleerstand und kommunaler Gebäudefonds ohne Innenstadt- oder Geschäftsbezug (S. 29–31); Handel vor Ort per Steuervergünstigung allgemein, nicht auf Innenstädte bezogen (S. 89)."
+        }
+      ]
+    }
+  ],
+  "suchbegriffe": {
+    "3601": {
+      "Lokalen Handel stärken und Wettbewerb angleichen": [
+        "lokaler einzelhandel",
+        "stationärer handel",
+        "onlinehandel",
+        "plattformregulierung",
+        "digitalisierung des handels",
+        "fairer wettbewerb im handel",
+        "händler vor ort"
+      ],
+      "Digitale Vertriebswege und Flächenanpassung": [
+        "digitale vertriebswege",
+        "händlerplattform",
+        "flächen anpassen",
+        "click and collect",
+        "strukturwandel im handel"
+      ]
+    },
+    "3602": {
+      "Nutzungsmischung und Ansiedlung fördern": [
+        "nutzungsmischung",
+        "innenstadt belebung",
+        "leerstandsmanagement",
+        "ansiedlung von geschäften",
+        "ansiedlung in innenstädten",
+        "zwischennutzung",
+        "innenstadtfonds",
+        "gründerinnen und gründer in innenstädten",
+        "ankermieter"
+      ],
+      "Marktprofile und Wettbewerb": [
+        "profil der geschäfte",
+        "wettbewerb im einzelhandel",
+        "wettbewerb der innenstädte",
+        "einzelhandelskonzept",
+        "zentrenkonzept"
+      ]
+    },
+    "3603": {
+      "Aufenthaltsqualität und Verkehrsberuhigung": [
+        "aufenthaltsqualität",
+        "fußgängerzone",
+        "stadtgrün",
+        "verkehrsberuhigung",
+        "platzgestaltung",
+        "innenstadt umgestalten",
+        "begrünung der innenstadt",
+        "begrünung von plätzen"
+      ],
+      "Sauberkeit, Sicherheit und Instandhaltung": [
+        "sauberkeit",
+        "ordnung in der innenstadt",
+        "instandhaltung",
+        "sicherheit in der innenstadt",
+        "sauberkeit öffentlicher raum"
+      ]
+    },
+    "3604": {
+      "Erreichbarkeit mit dem Auto und Parkplätze": [
+        "parkplätze in der innenstadt",
+        "parkplätze für den einzelhandel",
+        "innenstadt erreichbar",
+        "zufahrt zur innenstadt",
+        "parkraum",
+        "autofreundliche innenstadt",
+        "parkgebühren"
+      ],
+      "Nahmobilität und öffentlicher Verkehr": [
+        "nahmobilität",
+        "fahrradfreundliche innenstadt",
+        "radwege zur innenstadt",
+        "öpnv zur innenstadt",
+        "fußwege"
+      ],
+      "Öffnungszeiten und zeitliche Zugänglichkeit": [
+        "ladenöffnungszeiten",
+        "öffnungszeiten",
+        "sonntagsöffnung",
+        "verkaufsoffene sonntage",
+        "ladenschluss"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "14e0ab8625f9abb12fae11a7a77b3d5c1e963b2741c8be29b185551660caf3c1",
+    "programme": [
+      {
+        "partei_id": 11,
+        "land": null,
+        "ursachen": {
+          "3601": {
+            "Lokalen Handel stärken und Wettbewerb angleichen": {
+              "lokaler einzelhandel": 0,
+              "stationärer handel": 0,
+              "onlinehandel": 0,
+              "plattformregulierung": 0,
+              "digitalisierung des handels": 0,
+              "fairer wettbewerb im handel": 0,
+              "händler vor ort": 0
+            },
+            "Digitale Vertriebswege und Flächenanpassung": {
+              "digitale vertriebswege": 0,
+              "händlerplattform": 0,
+              "flächen anpassen": 0,
+              "click and collect": 0,
+              "strukturwandel im handel": 0
+            }
+          },
+          "3602": {
+            "Nutzungsmischung und Ansiedlung fördern": {
+              "nutzungsmischung": 0,
+              "innenstadt belebung": 0,
+              "leerstandsmanagement": 0,
+              "ansiedlung von geschäften": 0,
+              "ansiedlung in innenstädten": 0,
+              "zwischennutzung": 0,
+              "innenstadtfonds": 0,
+              "gründerinnen und gründer in innenstädten": 0,
+              "ankermieter": 0
+            },
+            "Marktprofile und Wettbewerb": {
+              "profil der geschäfte": 0,
+              "wettbewerb im einzelhandel": 0,
+              "wettbewerb der innenstädte": 0,
+              "einzelhandelskonzept": 0,
+              "zentrenkonzept": 0
+            }
+          },
+          "3603": {
+            "Aufenthaltsqualität und Verkehrsberuhigung": {
+              "aufenthaltsqualität": 0,
+              "fußgängerzone": 0,
+              "stadtgrün": 0,
+              "verkehrsberuhigung": 0,
+              "platzgestaltung": 0,
+              "innenstadt umgestalten": 0,
+              "begrünung der innenstadt": 0,
+              "begrünung von plätzen": 0
+            },
+            "Sauberkeit, Sicherheit und Instandhaltung": {
+              "sauberkeit": 0,
+              "ordnung in der innenstadt": 0,
+              "instandhaltung": 1,
+              "sicherheit in der innenstadt": 0,
+              "sauberkeit öffentlicher raum": 0
+            }
+          },
+          "3604": {
+            "Erreichbarkeit mit dem Auto und Parkplätze": {
+              "parkplätze in der innenstadt": 0,
+              "parkplätze für den einzelhandel": 0,
+              "innenstadt erreichbar": 0,
+              "zufahrt zur innenstadt": 0,
+              "parkraum": 0,
+              "autofreundliche innenstadt": 0,
+              "parkgebühren": 0
+            },
+            "Nahmobilität und öffentlicher Verkehr": {
+              "nahmobilität": 0,
+              "fahrradfreundliche innenstadt": 0,
+              "radwege zur innenstadt": 0,
+              "öpnv zur innenstadt": 0,
+              "fußwege": 0
+            },
+            "Öffnungszeiten und zeitliche Zugänglichkeit": {
+              "ladenöffnungszeiten": 0,
+              "öffnungszeiten": 0,
+              "sonntagsöffnung": 0,
+              "verkaufsoffene sonntage": 0,
+              "ladenschluss": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 11,
+        "land": "BE",
+        "ursachen": {
+          "3602": {
+            "Nutzungsmischung und Ansiedlung fördern": {
+              "nutzungsmischung": 0,
+              "innenstadt belebung": 0,
+              "leerstandsmanagement": 1,
+              "ansiedlung von geschäften": 0,
+              "ansiedlung in innenstädten": 0,
+              "zwischennutzung": 0,
+              "innenstadtfonds": 0,
+              "gründerinnen und gründer in innenstädten": 0,
+              "ankermieter": 0
+            },
+            "Marktprofile und Wettbewerb": {
+              "profil der geschäfte": 0,
+              "wettbewerb im einzelhandel": 0,
+              "wettbewerb der innenstädte": 0,
+              "einzelhandelskonzept": 0,
+              "zentrenkonzept": 0
+            }
+          },
+          "3603": {
+            "Aufenthaltsqualität und Verkehrsberuhigung": {
+              "aufenthaltsqualität": 5,
+              "fußgängerzone": 2,
+              "stadtgrün": 0,
+              "verkehrsberuhigung": 1,
+              "platzgestaltung": 0,
+              "innenstadt umgestalten": 0,
+              "begrünung der innenstadt": 0,
+              "begrünung von plätzen": 0
+            },
+            "Sauberkeit, Sicherheit und Instandhaltung": {
+              "sauberkeit": 11,
+              "ordnung in der innenstadt": 0,
+              "instandhaltung": 2,
+              "sicherheit in der innenstadt": 0,
+              "sauberkeit öffentlicher raum": 0
+            }
+          },
+          "3604": {
+            "Erreichbarkeit mit dem Auto und Parkplätze": {
+              "parkplätze in der innenstadt": 0,
+              "parkplätze für den einzelhandel": 0,
+              "innenstadt erreichbar": 0,
+              "zufahrt zur innenstadt": 0,
+              "parkraum": 5,
+              "autofreundliche innenstadt": 0,
+              "parkgebühren": 0
+            },
+            "Nahmobilität und öffentlicher Verkehr": {
+              "nahmobilität": 0,
+              "fahrradfreundliche innenstadt": 0,
+              "radwege zur innenstadt": 0,
+              "öpnv zur innenstadt": 0,
+              "fußwege": 1
+            },
+            "Öffnungszeiten und zeitliche Zugänglichkeit": {
+              "ladenöffnungszeiten": 0,
+              "öffnungszeiten": 3,
+              "sonntagsöffnung": 2,
+              "verkaufsoffene sonntage": 1,
+              "ladenschluss": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 11,
+        "land": "MV",
+        "ursachen": {
+          "3602": {
+            "Nutzungsmischung und Ansiedlung fördern": {
+              "nutzungsmischung": 0,
+              "innenstadt belebung": 0,
+              "leerstandsmanagement": 0,
+              "ansiedlung von geschäften": 0,
+              "ansiedlung in innenstädten": 0,
+              "zwischennutzung": 0,
+              "innenstadtfonds": 0,
+              "gründerinnen und gründer in innenstädten": 0,
+              "ankermieter": 0
+            },
+            "Marktprofile und Wettbewerb": {
+              "profil der geschäfte": 0,
+              "wettbewerb im einzelhandel": 0,
+              "wettbewerb der innenstädte": 0,
+              "einzelhandelskonzept": 0,
+              "zentrenkonzept": 0
+            }
+          },
+          "3603": {
+            "Aufenthaltsqualität und Verkehrsberuhigung": {
+              "aufenthaltsqualität": 1,
+              "fußgängerzone": 0,
+              "stadtgrün": 0,
+              "verkehrsberuhigung": 0,
+              "platzgestaltung": 0,
+              "innenstadt umgestalten": 0,
+              "begrünung der innenstadt": 0,
+              "begrünung von plätzen": 0
+            },
+            "Sauberkeit, Sicherheit und Instandhaltung": {
+              "sauberkeit": 0,
+              "ordnung in der innenstadt": 0,
+              "instandhaltung": 3,
+              "sicherheit in der innenstadt": 0,
+              "sauberkeit öffentlicher raum": 0
+            }
+          },
+          "3604": {
+            "Erreichbarkeit mit dem Auto und Parkplätze": {
+              "parkplätze in der innenstadt": 0,
+              "parkplätze für den einzelhandel": 0,
+              "innenstadt erreichbar": 0,
+              "zufahrt zur innenstadt": 0,
+              "parkraum": 0,
+              "autofreundliche innenstadt": 0,
+              "parkgebühren": 0
+            },
+            "Nahmobilität und öffentlicher Verkehr": {
+              "nahmobilität": 1,
+              "fahrradfreundliche innenstadt": 0,
+              "radwege zur innenstadt": 0,
+              "öpnv zur innenstadt": 0,
+              "fußwege": 3
+            },
+            "Öffnungszeiten und zeitliche Zugänglichkeit": {
+              "ladenöffnungszeiten": 0,
+              "öffnungszeiten": 1,
+              "sonntagsöffnung": 2,
+              "verkaufsoffene sonntage": 2,
+              "ladenschluss": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 11,
+        "land": "ST",
+        "ursachen": {
+          "3602": {
+            "Nutzungsmischung und Ansiedlung fördern": {
+              "nutzungsmischung": 0,
+              "innenstadt belebung": 0,
+              "leerstandsmanagement": 0,
+              "ansiedlung von geschäften": 0,
+              "ansiedlung in innenstädten": 0,
+              "zwischennutzung": 0,
+              "innenstadtfonds": 0,
+              "gründerinnen und gründer in innenstädten": 0,
+              "ankermieter": 0
+            },
+            "Marktprofile und Wettbewerb": {
+              "profil der geschäfte": 0,
+              "wettbewerb im einzelhandel": 0,
+              "wettbewerb der innenstädte": 0,
+              "einzelhandelskonzept": 0,
+              "zentrenkonzept": 0
+            }
+          },
+          "3603": {
+            "Aufenthaltsqualität und Verkehrsberuhigung": {
+              "aufenthaltsqualität": 1,
+              "fußgängerzone": 0,
+              "stadtgrün": 0,
+              "verkehrsberuhigung": 0,
+              "platzgestaltung": 0,
+              "innenstadt umgestalten": 0,
+              "begrünung der innenstadt": 0,
+              "begrünung von plätzen": 0
+            },
+            "Sauberkeit, Sicherheit und Instandhaltung": {
+              "sauberkeit": 0,
+              "ordnung in der innenstadt": 0,
+              "instandhaltung": 0,
+              "sicherheit in der innenstadt": 0,
+              "sauberkeit öffentlicher raum": 0
+            }
+          },
+          "3604": {
+            "Erreichbarkeit mit dem Auto und Parkplätze": {
+              "parkplätze in der innenstadt": 0,
+              "parkplätze für den einzelhandel": 0,
+              "innenstadt erreichbar": 0,
+              "zufahrt zur innenstadt": 0,
+              "parkraum": 0,
+              "autofreundliche innenstadt": 0,
+              "parkgebühren": 0
+            },
+            "Nahmobilität und öffentlicher Verkehr": {
+              "nahmobilität": 0,
+              "fahrradfreundliche innenstadt": 0,
+              "radwege zur innenstadt": 0,
+              "öpnv zur innenstadt": 0,
+              "fußwege": 0
+            },
+            "Öffnungszeiten und zeitliche Zugänglichkeit": {
+              "ladenöffnungszeiten": 0,
+              "öffnungszeiten": 1,
+              "sonntagsöffnung": 0,
+              "verkaufsoffene sonntage": 0,
+              "ladenschluss": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": null,
+        "ursachen": {
+          "3601": {
+            "Lokalen Handel stärken und Wettbewerb angleichen": {
+              "lokaler einzelhandel": 0,
+              "stationärer handel": 0,
+              "onlinehandel": 0,
+              "plattformregulierung": 0,
+              "digitalisierung des handels": 0,
+              "fairer wettbewerb im handel": 0,
+              "händler vor ort": 0
+            },
+            "Digitale Vertriebswege und Flächenanpassung": {
+              "digitale vertriebswege": 0,
+              "händlerplattform": 0,
+              "flächen anpassen": 0,
+              "click and collect": 0,
+              "strukturwandel im handel": 0
+            }
+          },
+          "3602": {
+            "Nutzungsmischung und Ansiedlung fördern": {
+              "nutzungsmischung": 0,
+              "innenstadt belebung": 0,
+              "leerstandsmanagement": 0,
+              "ansiedlung von geschäften": 0,
+              "ansiedlung in innenstädten": 0,
+              "zwischennutzung": 0,
+              "innenstadtfonds": 0,
+              "gründerinnen und gründer in innenstädten": 0,
+              "ankermieter": 0
+            },
+            "Marktprofile und Wettbewerb": {
+              "profil der geschäfte": 0,
+              "wettbewerb im einzelhandel": 0,
+              "wettbewerb der innenstädte": 0,
+              "einzelhandelskonzept": 0,
+              "zentrenkonzept": 0
+            }
+          },
+          "3603": {
+            "Aufenthaltsqualität und Verkehrsberuhigung": {
+              "aufenthaltsqualität": 0,
+              "fußgängerzone": 0,
+              "stadtgrün": 1,
+              "verkehrsberuhigung": 0,
+              "platzgestaltung": 0,
+              "innenstadt umgestalten": 0,
+              "begrünung der innenstadt": 0,
+              "begrünung von plätzen": 0
+            },
+            "Sauberkeit, Sicherheit und Instandhaltung": {
+              "sauberkeit": 0,
+              "ordnung in der innenstadt": 0,
+              "instandhaltung": 0,
+              "sicherheit in der innenstadt": 0,
+              "sauberkeit öffentlicher raum": 0
+            }
+          },
+          "3604": {
+            "Erreichbarkeit mit dem Auto und Parkplätze": {
+              "parkplätze in der innenstadt": 0,
+              "parkplätze für den einzelhandel": 0,
+              "innenstadt erreichbar": 0,
+              "zufahrt zur innenstadt": 0,
+              "parkraum": 0,
+              "autofreundliche innenstadt": 0,
+              "parkgebühren": 0
+            },
+            "Nahmobilität und öffentlicher Verkehr": {
+              "nahmobilität": 0,
+              "fahrradfreundliche innenstadt": 0,
+              "radwege zur innenstadt": 0,
+              "öpnv zur innenstadt": 0,
+              "fußwege": 0
+            },
+            "Öffnungszeiten und zeitliche Zugänglichkeit": {
+              "ladenöffnungszeiten": 0,
+              "öffnungszeiten": 0,
+              "sonntagsöffnung": 0,
+              "verkaufsoffene sonntage": 0,
+              "ladenschluss": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": "BE",
+        "ursachen": {
+          "3602": {
+            "Nutzungsmischung und Ansiedlung fördern": {
+              "nutzungsmischung": 0,
+              "innenstadt belebung": 0,
+              "leerstandsmanagement": 0,
+              "ansiedlung von geschäften": 0,
+              "ansiedlung in innenstädten": 0,
+              "zwischennutzung": 1,
+              "innenstadtfonds": 0,
+              "gründerinnen und gründer in innenstädten": 0,
+              "ankermieter": 0
+            },
+            "Marktprofile und Wettbewerb": {
+              "profil der geschäfte": 0,
+              "wettbewerb im einzelhandel": 0,
+              "wettbewerb der innenstädte": 0,
+              "einzelhandelskonzept": 0,
+              "zentrenkonzept": 0
+            }
+          },
+          "3603": {
+            "Aufenthaltsqualität und Verkehrsberuhigung": {
+              "aufenthaltsqualität": 1,
+              "fußgängerzone": 0,
+              "stadtgrün": 1,
+              "verkehrsberuhigung": 1,
+              "platzgestaltung": 0,
+              "innenstadt umgestalten": 0,
+              "begrünung der innenstadt": 0,
+              "begrünung von plätzen": 0
+            },
+            "Sauberkeit, Sicherheit und Instandhaltung": {
+              "sauberkeit": 2,
+              "ordnung in der innenstadt": 0,
+              "instandhaltung": 3,
+              "sicherheit in der innenstadt": 0,
+              "sauberkeit öffentlicher raum": 0
+            }
+          },
+          "3604": {
+            "Erreichbarkeit mit dem Auto und Parkplätze": {
+              "parkplätze in der innenstadt": 0,
+              "parkplätze für den einzelhandel": 0,
+              "innenstadt erreichbar": 0,
+              "zufahrt zur innenstadt": 0,
+              "parkraum": 1,
+              "autofreundliche innenstadt": 0,
+              "parkgebühren": 1
+            },
+            "Nahmobilität und öffentlicher Verkehr": {
+              "nahmobilität": 0,
+              "fahrradfreundliche innenstadt": 0,
+              "radwege zur innenstadt": 0,
+              "öpnv zur innenstadt": 0,
+              "fußwege": 1
+            },
+            "Öffnungszeiten und zeitliche Zugänglichkeit": {
+              "ladenöffnungszeiten": 0,
+              "öffnungszeiten": 4,
+              "sonntagsöffnung": 0,
+              "verkaufsoffene sonntage": 0,
+              "ladenschluss": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": "MV",
+        "ursachen": {
+          "3602": {
+            "Nutzungsmischung und Ansiedlung fördern": {
+              "nutzungsmischung": 0,
+              "innenstadt belebung": 0,
+              "leerstandsmanagement": 0,
+              "ansiedlung von geschäften": 0,
+              "ansiedlung in innenstädten": 0,
+              "zwischennutzung": 0,
+              "innenstadtfonds": 0,
+              "gründerinnen und gründer in innenstädten": 0,
+              "ankermieter": 0
+            },
+            "Marktprofile und Wettbewerb": {
+              "profil der geschäfte": 0,
+              "wettbewerb im einzelhandel": 0,
+              "wettbewerb der innenstädte": 0,
+              "einzelhandelskonzept": 0,
+              "zentrenkonzept": 0
+            }
+          },
+          "3603": {
+            "Aufenthaltsqualität und Verkehrsberuhigung": {
+              "aufenthaltsqualität": 0,
+              "fußgängerzone": 0,
+              "stadtgrün": 0,
+              "verkehrsberuhigung": 0,
+              "platzgestaltung": 0,
+              "innenstadt umgestalten": 0,
+              "begrünung der innenstadt": 0,
+              "begrünung von plätzen": 0
+            },
+            "Sauberkeit, Sicherheit und Instandhaltung": {
+              "sauberkeit": 0,
+              "ordnung in der innenstadt": 0,
+              "instandhaltung": 0,
+              "sicherheit in der innenstadt": 0,
+              "sauberkeit öffentlicher raum": 0
+            }
+          },
+          "3604": {
+            "Erreichbarkeit mit dem Auto und Parkplätze": {
+              "parkplätze in der innenstadt": 0,
+              "parkplätze für den einzelhandel": 0,
+              "innenstadt erreichbar": 0,
+              "zufahrt zur innenstadt": 0,
+              "parkraum": 0,
+              "autofreundliche innenstadt": 0,
+              "parkgebühren": 0
+            },
+            "Nahmobilität und öffentlicher Verkehr": {
+              "nahmobilität": 0,
+              "fahrradfreundliche innenstadt": 0,
+              "radwege zur innenstadt": 0,
+              "öpnv zur innenstadt": 0,
+              "fußwege": 0
+            },
+            "Öffnungszeiten und zeitliche Zugänglichkeit": {
+              "ladenöffnungszeiten": 0,
+              "öffnungszeiten": 0,
+              "sonntagsöffnung": 0,
+              "verkaufsoffene sonntage": 0,
+              "ladenschluss": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": "ST",
+        "ursachen": {
+          "3602": {
+            "Nutzungsmischung und Ansiedlung fördern": {
+              "nutzungsmischung": 0,
+              "innenstadt belebung": 0,
+              "leerstandsmanagement": 0,
+              "ansiedlung von geschäften": 0,
+              "ansiedlung in innenstädten": 0,
+              "zwischennutzung": 0,
+              "innenstadtfonds": 0,
+              "gründerinnen und gründer in innenstädten": 0,
+              "ankermieter": 0
+            },
+            "Marktprofile und Wettbewerb": {
+              "profil der geschäfte": 0,
+              "wettbewerb im einzelhandel": 0,
+              "wettbewerb der innenstädte": 0,
+              "einzelhandelskonzept": 0,
+              "zentrenkonzept": 0
+            }
+          },
+          "3603": {
+            "Aufenthaltsqualität und Verkehrsberuhigung": {
+              "aufenthaltsqualität": 0,
+              "fußgängerzone": 0,
+              "stadtgrün": 0,
+              "verkehrsberuhigung": 0,
+              "platzgestaltung": 0,
+              "innenstadt umgestalten": 0,
+              "begrünung der innenstadt": 0,
+              "begrünung von plätzen": 0
+            },
+            "Sauberkeit, Sicherheit und Instandhaltung": {
+              "sauberkeit": 0,
+              "ordnung in der innenstadt": 0,
+              "instandhaltung": 0,
+              "sicherheit in der innenstadt": 0,
+              "sauberkeit öffentlicher raum": 0
+            }
+          },
+          "3604": {
+            "Erreichbarkeit mit dem Auto und Parkplätze": {
+              "parkplätze in der innenstadt": 0,
+              "parkplätze für den einzelhandel": 0,
+              "innenstadt erreichbar": 0,
+              "zufahrt zur innenstadt": 0,
+              "parkraum": 0,
+              "autofreundliche innenstadt": 0,
+              "parkgebühren": 0
+            },
+            "Nahmobilität und öffentlicher Verkehr": {
+              "nahmobilität": 0,
+              "fahrradfreundliche innenstadt": 0,
+              "radwege zur innenstadt": 0,
+              "öpnv zur innenstadt": 0,
+              "fußwege": 0
+            },
+            "Öffnungszeiten und zeitliche Zugänglichkeit": {
+              "ladenöffnungszeiten": 0,
+              "öffnungszeiten": 3,
+              "sonntagsöffnung": 1,
+              "verkaufsoffene sonntage": 0,
+              "ladenschluss": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": null,
+        "ursachen": {
+          "3601": {
+            "Lokalen Handel stärken und Wettbewerb angleichen": {
+              "lokaler einzelhandel": 0,
+              "stationärer handel": 0,
+              "onlinehandel": 0,
+              "plattformregulierung": 0,
+              "digitalisierung des handels": 0,
+              "fairer wettbewerb im handel": 0,
+              "händler vor ort": 0
+            },
+            "Digitale Vertriebswege und Flächenanpassung": {
+              "digitale vertriebswege": 0,
+              "händlerplattform": 0,
+              "flächen anpassen": 0,
+              "click and collect": 0,
+              "strukturwandel im handel": 0
+            }
+          },
+          "3602": {
+            "Nutzungsmischung und Ansiedlung fördern": {
+              "nutzungsmischung": 0,
+              "innenstadt belebung": 0,
+              "leerstandsmanagement": 0,
+              "ansiedlung von geschäften": 0,
+              "ansiedlung in innenstädten": 0,
+              "zwischennutzung": 0,
+              "innenstadtfonds": 0,
+              "gründerinnen und gründer in innenstädten": 0,
+              "ankermieter": 0
+            },
+            "Marktprofile und Wettbewerb": {
+              "profil der geschäfte": 0,
+              "wettbewerb im einzelhandel": 0,
+              "wettbewerb der innenstädte": 0,
+              "einzelhandelskonzept": 0,
+              "zentrenkonzept": 0
+            }
+          },
+          "3603": {
+            "Aufenthaltsqualität und Verkehrsberuhigung": {
+              "aufenthaltsqualität": 1,
+              "fußgängerzone": 0,
+              "stadtgrün": 1,
+              "verkehrsberuhigung": 0,
+              "platzgestaltung": 0,
+              "innenstadt umgestalten": 0,
+              "begrünung der innenstadt": 0,
+              "begrünung von plätzen": 0
+            },
+            "Sauberkeit, Sicherheit und Instandhaltung": {
+              "sauberkeit": 1,
+              "ordnung in der innenstadt": 0,
+              "instandhaltung": 0,
+              "sicherheit in der innenstadt": 0,
+              "sauberkeit öffentlicher raum": 0
+            }
+          },
+          "3604": {
+            "Erreichbarkeit mit dem Auto und Parkplätze": {
+              "parkplätze in der innenstadt": 0,
+              "parkplätze für den einzelhandel": 0,
+              "innenstadt erreichbar": 0,
+              "zufahrt zur innenstadt": 0,
+              "parkraum": 0,
+              "autofreundliche innenstadt": 0,
+              "parkgebühren": 0
+            },
+            "Nahmobilität und öffentlicher Verkehr": {
+              "nahmobilität": 1,
+              "fahrradfreundliche innenstadt": 0,
+              "radwege zur innenstadt": 0,
+              "öpnv zur innenstadt": 0,
+              "fußwege": 1
+            },
+            "Öffnungszeiten und zeitliche Zugänglichkeit": {
+              "ladenöffnungszeiten": 0,
+              "öffnungszeiten": 1,
+              "sonntagsöffnung": 0,
+              "verkaufsoffene sonntage": 0,
+              "ladenschluss": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": "BE",
+        "ursachen": {
+          "3602": {
+            "Nutzungsmischung und Ansiedlung fördern": {
+              "nutzungsmischung": 1,
+              "innenstadt belebung": 0,
+              "leerstandsmanagement": 0,
+              "ansiedlung von geschäften": 0,
+              "ansiedlung in innenstädten": 0,
+              "zwischennutzung": 6,
+              "innenstadtfonds": 0,
+              "gründerinnen und gründer in innenstädten": 0,
+              "ankermieter": 0
+            },
+            "Marktprofile und Wettbewerb": {
+              "profil der geschäfte": 0,
+              "wettbewerb im einzelhandel": 0,
+              "wettbewerb der innenstädte": 0,
+              "einzelhandelskonzept": 0,
+              "zentrenkonzept": 0
+            }
+          },
+          "3603": {
+            "Aufenthaltsqualität und Verkehrsberuhigung": {
+              "aufenthaltsqualität": 5,
+              "fußgängerzone": 0,
+              "stadtgrün": 11,
+              "verkehrsberuhigung": 1,
+              "platzgestaltung": 1,
+              "innenstadt umgestalten": 0,
+              "begrünung der innenstadt": 0,
+              "begrünung von plätzen": 0
+            },
+            "Sauberkeit, Sicherheit und Instandhaltung": {
+              "sauberkeit": 6,
+              "ordnung in der innenstadt": 0,
+              "instandhaltung": 7,
+              "sicherheit in der innenstadt": 0,
+              "sauberkeit öffentlicher raum": 0
+            }
+          },
+          "3604": {
+            "Erreichbarkeit mit dem Auto und Parkplätze": {
+              "parkplätze in der innenstadt": 0,
+              "parkplätze für den einzelhandel": 0,
+              "innenstadt erreichbar": 0,
+              "zufahrt zur innenstadt": 0,
+              "parkraum": 3,
+              "autofreundliche innenstadt": 0,
+              "parkgebühren": 0
+            },
+            "Nahmobilität und öffentlicher Verkehr": {
+              "nahmobilität": 0,
+              "fahrradfreundliche innenstadt": 0,
+              "radwege zur innenstadt": 0,
+              "öpnv zur innenstadt": 0,
+              "fußwege": 1
+            },
+            "Öffnungszeiten und zeitliche Zugänglichkeit": {
+              "ladenöffnungszeiten": 0,
+              "öffnungszeiten": 1,
+              "sonntagsöffnung": 0,
+              "verkaufsoffene sonntage": 1,
+              "ladenschluss": 1
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": "MV",
+        "ursachen": {
+          "3602": {
+            "Nutzungsmischung und Ansiedlung fördern": {
+              "nutzungsmischung": 0,
+              "innenstadt belebung": 0,
+              "leerstandsmanagement": 0,
+              "ansiedlung von geschäften": 0,
+              "ansiedlung in innenstädten": 0,
+              "zwischennutzung": 1,
+              "innenstadtfonds": 0,
+              "gründerinnen und gründer in innenstädten": 0,
+              "ankermieter": 0
+            },
+            "Marktprofile und Wettbewerb": {
+              "profil der geschäfte": 0,
+              "wettbewerb im einzelhandel": 0,
+              "wettbewerb der innenstädte": 0,
+              "einzelhandelskonzept": 0,
+              "zentrenkonzept": 0
+            }
+          },
+          "3603": {
+            "Aufenthaltsqualität und Verkehrsberuhigung": {
+              "aufenthaltsqualität": 0,
+              "fußgängerzone": 0,
+              "stadtgrün": 0,
+              "verkehrsberuhigung": 2,
+              "platzgestaltung": 0,
+              "innenstadt umgestalten": 0,
+              "begrünung der innenstadt": 0,
+              "begrünung von plätzen": 0
+            },
+            "Sauberkeit, Sicherheit und Instandhaltung": {
+              "sauberkeit": 0,
+              "ordnung in der innenstadt": 0,
+              "instandhaltung": 1,
+              "sicherheit in der innenstadt": 0,
+              "sauberkeit öffentlicher raum": 0
+            }
+          },
+          "3604": {
+            "Erreichbarkeit mit dem Auto und Parkplätze": {
+              "parkplätze in der innenstadt": 0,
+              "parkplätze für den einzelhandel": 0,
+              "innenstadt erreichbar": 0,
+              "zufahrt zur innenstadt": 0,
+              "parkraum": 0,
+              "autofreundliche innenstadt": 0,
+              "parkgebühren": 0
+            },
+            "Nahmobilität und öffentlicher Verkehr": {
+              "nahmobilität": 0,
+              "fahrradfreundliche innenstadt": 0,
+              "radwege zur innenstadt": 0,
+              "öpnv zur innenstadt": 0,
+              "fußwege": 3
+            },
+            "Öffnungszeiten und zeitliche Zugänglichkeit": {
+              "ladenöffnungszeiten": 0,
+              "öffnungszeiten": 0,
+              "sonntagsöffnung": 0,
+              "verkaufsoffene sonntage": 0,
+              "ladenschluss": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": "ST",
+        "ursachen": {
+          "3602": {
+            "Nutzungsmischung und Ansiedlung fördern": {
+              "nutzungsmischung": 0,
+              "innenstadt belebung": 0,
+              "leerstandsmanagement": 0,
+              "ansiedlung von geschäften": 0,
+              "ansiedlung in innenstädten": 0,
+              "zwischennutzung": 2,
+              "innenstadtfonds": 0,
+              "gründerinnen und gründer in innenstädten": 0,
+              "ankermieter": 0
+            },
+            "Marktprofile und Wettbewerb": {
+              "profil der geschäfte": 0,
+              "wettbewerb im einzelhandel": 0,
+              "wettbewerb der innenstädte": 0,
+              "einzelhandelskonzept": 0,
+              "zentrenkonzept": 1
+            }
+          },
+          "3603": {
+            "Aufenthaltsqualität und Verkehrsberuhigung": {
+              "aufenthaltsqualität": 3,
+              "fußgängerzone": 0,
+              "stadtgrün": 0,
+              "verkehrsberuhigung": 0,
+              "platzgestaltung": 0,
+              "innenstadt umgestalten": 0,
+              "begrünung der innenstadt": 0,
+              "begrünung von plätzen": 0
+            },
+            "Sauberkeit, Sicherheit und Instandhaltung": {
+              "sauberkeit": 0,
+              "ordnung in der innenstadt": 0,
+              "instandhaltung": 0,
+              "sicherheit in der innenstadt": 0,
+              "sauberkeit öffentlicher raum": 0
+            }
+          },
+          "3604": {
+            "Erreichbarkeit mit dem Auto und Parkplätze": {
+              "parkplätze in der innenstadt": 0,
+              "parkplätze für den einzelhandel": 0,
+              "innenstadt erreichbar": 0,
+              "zufahrt zur innenstadt": 0,
+              "parkraum": 1,
+              "autofreundliche innenstadt": 0,
+              "parkgebühren": 1
+            },
+            "Nahmobilität und öffentlicher Verkehr": {
+              "nahmobilität": 1,
+              "fahrradfreundliche innenstadt": 0,
+              "radwege zur innenstadt": 0,
+              "öpnv zur innenstadt": 0,
+              "fußwege": 0
+            },
+            "Öffnungszeiten und zeitliche Zugänglichkeit": {
+              "ladenöffnungszeiten": 0,
+              "öffnungszeiten": 0,
+              "sonntagsöffnung": 1,
+              "verkaufsoffene sonntage": 0,
+              "ladenschluss": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": null,
+        "ursachen": {
+          "3601": {
+            "Lokalen Handel stärken und Wettbewerb angleichen": {
+              "lokaler einzelhandel": 0,
+              "stationärer handel": 0,
+              "onlinehandel": 0,
+              "plattformregulierung": 0,
+              "digitalisierung des handels": 0,
+              "fairer wettbewerb im handel": 0,
+              "händler vor ort": 0
+            },
+            "Digitale Vertriebswege und Flächenanpassung": {
+              "digitale vertriebswege": 0,
+              "händlerplattform": 0,
+              "flächen anpassen": 0,
+              "click and collect": 0,
+              "strukturwandel im handel": 0
+            }
+          },
+          "3602": {
+            "Nutzungsmischung und Ansiedlung fördern": {
+              "nutzungsmischung": 0,
+              "innenstadt belebung": 0,
+              "leerstandsmanagement": 0,
+              "ansiedlung von geschäften": 0,
+              "ansiedlung in innenstädten": 0,
+              "zwischennutzung": 0,
+              "innenstadtfonds": 0,
+              "gründerinnen und gründer in innenstädten": 0,
+              "ankermieter": 0
+            },
+            "Marktprofile und Wettbewerb": {
+              "profil der geschäfte": 0,
+              "wettbewerb im einzelhandel": 0,
+              "wettbewerb der innenstädte": 0,
+              "einzelhandelskonzept": 0,
+              "zentrenkonzept": 0
+            }
+          },
+          "3603": {
+            "Aufenthaltsqualität und Verkehrsberuhigung": {
+              "aufenthaltsqualität": 0,
+              "fußgängerzone": 0,
+              "stadtgrün": 0,
+              "verkehrsberuhigung": 0,
+              "platzgestaltung": 0,
+              "innenstadt umgestalten": 0,
+              "begrünung der innenstadt": 0,
+              "begrünung von plätzen": 0
+            },
+            "Sauberkeit, Sicherheit und Instandhaltung": {
+              "sauberkeit": 0,
+              "ordnung in der innenstadt": 0,
+              "instandhaltung": 1,
+              "sicherheit in der innenstadt": 0,
+              "sauberkeit öffentlicher raum": 0
+            }
+          },
+          "3604": {
+            "Erreichbarkeit mit dem Auto und Parkplätze": {
+              "parkplätze in der innenstadt": 0,
+              "parkplätze für den einzelhandel": 0,
+              "innenstadt erreichbar": 0,
+              "zufahrt zur innenstadt": 0,
+              "parkraum": 0,
+              "autofreundliche innenstadt": 0,
+              "parkgebühren": 0
+            },
+            "Nahmobilität und öffentlicher Verkehr": {
+              "nahmobilität": 0,
+              "fahrradfreundliche innenstadt": 0,
+              "radwege zur innenstadt": 0,
+              "öpnv zur innenstadt": 0,
+              "fußwege": 0
+            },
+            "Öffnungszeiten und zeitliche Zugänglichkeit": {
+              "ladenöffnungszeiten": 0,
+              "öffnungszeiten": 0,
+              "sonntagsöffnung": 0,
+              "verkaufsoffene sonntage": 0,
+              "ladenschluss": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": "BE",
+        "ursachen": {
+          "3602": {
+            "Nutzungsmischung und Ansiedlung fördern": {
+              "nutzungsmischung": 0,
+              "innenstadt belebung": 0,
+              "leerstandsmanagement": 0,
+              "ansiedlung von geschäften": 0,
+              "ansiedlung in innenstädten": 0,
+              "zwischennutzung": 2,
+              "innenstadtfonds": 0,
+              "gründerinnen und gründer in innenstädten": 0,
+              "ankermieter": 0
+            },
+            "Marktprofile und Wettbewerb": {
+              "profil der geschäfte": 0,
+              "wettbewerb im einzelhandel": 0,
+              "wettbewerb der innenstädte": 0,
+              "einzelhandelskonzept": 0,
+              "zentrenkonzept": 0
+            }
+          },
+          "3603": {
+            "Aufenthaltsqualität und Verkehrsberuhigung": {
+              "aufenthaltsqualität": 3,
+              "fußgängerzone": 0,
+              "stadtgrün": 4,
+              "verkehrsberuhigung": 0,
+              "platzgestaltung": 0,
+              "innenstadt umgestalten": 0,
+              "begrünung der innenstadt": 0,
+              "begrünung von plätzen": 0
+            },
+            "Sauberkeit, Sicherheit und Instandhaltung": {
+              "sauberkeit": 8,
+              "ordnung in der innenstadt": 0,
+              "instandhaltung": 3,
+              "sicherheit in der innenstadt": 0,
+              "sauberkeit öffentlicher raum": 0
+            }
+          },
+          "3604": {
+            "Erreichbarkeit mit dem Auto und Parkplätze": {
+              "parkplätze in der innenstadt": 0,
+              "parkplätze für den einzelhandel": 0,
+              "innenstadt erreichbar": 0,
+              "zufahrt zur innenstadt": 0,
+              "parkraum": 0,
+              "autofreundliche innenstadt": 0,
+              "parkgebühren": 1
+            },
+            "Nahmobilität und öffentlicher Verkehr": {
+              "nahmobilität": 0,
+              "fahrradfreundliche innenstadt": 0,
+              "radwege zur innenstadt": 0,
+              "öpnv zur innenstadt": 0,
+              "fußwege": 4
+            },
+            "Öffnungszeiten und zeitliche Zugänglichkeit": {
+              "ladenöffnungszeiten": 0,
+              "öffnungszeiten": 2,
+              "sonntagsöffnung": 1,
+              "verkaufsoffene sonntage": 1,
+              "ladenschluss": 2
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": "MV",
+        "ursachen": {
+          "3602": {
+            "Nutzungsmischung und Ansiedlung fördern": {
+              "nutzungsmischung": 0,
+              "innenstadt belebung": 0,
+              "leerstandsmanagement": 0,
+              "ansiedlung von geschäften": 0,
+              "ansiedlung in innenstädten": 0,
+              "zwischennutzung": 0,
+              "innenstadtfonds": 0,
+              "gründerinnen und gründer in innenstädten": 0,
+              "ankermieter": 0
+            },
+            "Marktprofile und Wettbewerb": {
+              "profil der geschäfte": 0,
+              "wettbewerb im einzelhandel": 0,
+              "wettbewerb der innenstädte": 0,
+              "einzelhandelskonzept": 0,
+              "zentrenkonzept": 0
+            }
+          },
+          "3603": {
+            "Aufenthaltsqualität und Verkehrsberuhigung": {
+              "aufenthaltsqualität": 0,
+              "fußgängerzone": 0,
+              "stadtgrün": 0,
+              "verkehrsberuhigung": 0,
+              "platzgestaltung": 0,
+              "innenstadt umgestalten": 0,
+              "begrünung der innenstadt": 0,
+              "begrünung von plätzen": 0
+            },
+            "Sauberkeit, Sicherheit und Instandhaltung": {
+              "sauberkeit": 0,
+              "ordnung in der innenstadt": 0,
+              "instandhaltung": 1,
+              "sicherheit in der innenstadt": 0,
+              "sauberkeit öffentlicher raum": 0
+            }
+          },
+          "3604": {
+            "Erreichbarkeit mit dem Auto und Parkplätze": {
+              "parkplätze in der innenstadt": 0,
+              "parkplätze für den einzelhandel": 0,
+              "innenstadt erreichbar": 0,
+              "zufahrt zur innenstadt": 0,
+              "parkraum": 0,
+              "autofreundliche innenstadt": 0,
+              "parkgebühren": 0
+            },
+            "Nahmobilität und öffentlicher Verkehr": {
+              "nahmobilität": 0,
+              "fahrradfreundliche innenstadt": 0,
+              "radwege zur innenstadt": 0,
+              "öpnv zur innenstadt": 0,
+              "fußwege": 0
+            },
+            "Öffnungszeiten und zeitliche Zugänglichkeit": {
+              "ladenöffnungszeiten": 0,
+              "öffnungszeiten": 2,
+              "sonntagsöffnung": 1,
+              "verkaufsoffene sonntage": 0,
+              "ladenschluss": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": "ST",
+        "ursachen": {
+          "3602": {
+            "Nutzungsmischung und Ansiedlung fördern": {
+              "nutzungsmischung": 0,
+              "innenstadt belebung": 0,
+              "leerstandsmanagement": 0,
+              "ansiedlung von geschäften": 0,
+              "ansiedlung in innenstädten": 0,
+              "zwischennutzung": 0,
+              "innenstadtfonds": 0,
+              "gründerinnen und gründer in innenstädten": 0,
+              "ankermieter": 0
+            },
+            "Marktprofile und Wettbewerb": {
+              "profil der geschäfte": 0,
+              "wettbewerb im einzelhandel": 0,
+              "wettbewerb der innenstädte": 0,
+              "einzelhandelskonzept": 0,
+              "zentrenkonzept": 0
+            }
+          },
+          "3603": {
+            "Aufenthaltsqualität und Verkehrsberuhigung": {
+              "aufenthaltsqualität": 0,
+              "fußgängerzone": 0,
+              "stadtgrün": 0,
+              "verkehrsberuhigung": 0,
+              "platzgestaltung": 0,
+              "innenstadt umgestalten": 0,
+              "begrünung der innenstadt": 0,
+              "begrünung von plätzen": 0
+            },
+            "Sauberkeit, Sicherheit und Instandhaltung": {
+              "sauberkeit": 1,
+              "ordnung in der innenstadt": 0,
+              "instandhaltung": 0,
+              "sicherheit in der innenstadt": 0,
+              "sauberkeit öffentlicher raum": 0
+            }
+          },
+          "3604": {
+            "Erreichbarkeit mit dem Auto und Parkplätze": {
+              "parkplätze in der innenstadt": 0,
+              "parkplätze für den einzelhandel": 0,
+              "innenstadt erreichbar": 0,
+              "zufahrt zur innenstadt": 0,
+              "parkraum": 0,
+              "autofreundliche innenstadt": 0,
+              "parkgebühren": 0
+            },
+            "Nahmobilität und öffentlicher Verkehr": {
+              "nahmobilität": 0,
+              "fahrradfreundliche innenstadt": 0,
+              "radwege zur innenstadt": 0,
+              "öpnv zur innenstadt": 0,
+              "fußwege": 1
+            },
+            "Öffnungszeiten und zeitliche Zugänglichkeit": {
+              "ladenöffnungszeiten": 1,
+              "öffnungszeiten": 4,
+              "sonntagsöffnung": 1,
+              "verkaufsoffene sonntage": 0,
+              "ladenschluss": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": null,
+        "ursachen": {
+          "3601": {
+            "Lokalen Handel stärken und Wettbewerb angleichen": {
+              "lokaler einzelhandel": 0,
+              "stationärer handel": 0,
+              "onlinehandel": 0,
+              "plattformregulierung": 0,
+              "digitalisierung des handels": 0,
+              "fairer wettbewerb im handel": 0,
+              "händler vor ort": 0
+            },
+            "Digitale Vertriebswege und Flächenanpassung": {
+              "digitale vertriebswege": 0,
+              "händlerplattform": 0,
+              "flächen anpassen": 0,
+              "click and collect": 0,
+              "strukturwandel im handel": 0
+            }
+          },
+          "3602": {
+            "Nutzungsmischung und Ansiedlung fördern": {
+              "nutzungsmischung": 0,
+              "innenstadt belebung": 0,
+              "leerstandsmanagement": 0,
+              "ansiedlung von geschäften": 0,
+              "ansiedlung in innenstädten": 0,
+              "zwischennutzung": 0,
+              "innenstadtfonds": 0,
+              "gründerinnen und gründer in innenstädten": 0,
+              "ankermieter": 0
+            },
+            "Marktprofile und Wettbewerb": {
+              "profil der geschäfte": 0,
+              "wettbewerb im einzelhandel": 0,
+              "wettbewerb der innenstädte": 0,
+              "einzelhandelskonzept": 0,
+              "zentrenkonzept": 0
+            }
+          },
+          "3603": {
+            "Aufenthaltsqualität und Verkehrsberuhigung": {
+              "aufenthaltsqualität": 0,
+              "fußgängerzone": 0,
+              "stadtgrün": 0,
+              "verkehrsberuhigung": 0,
+              "platzgestaltung": 0,
+              "innenstadt umgestalten": 0,
+              "begrünung der innenstadt": 0,
+              "begrünung von plätzen": 0
+            },
+            "Sauberkeit, Sicherheit und Instandhaltung": {
+              "sauberkeit": 1,
+              "ordnung in der innenstadt": 0,
+              "instandhaltung": 1,
+              "sicherheit in der innenstadt": 0,
+              "sauberkeit öffentlicher raum": 0
+            }
+          },
+          "3604": {
+            "Erreichbarkeit mit dem Auto und Parkplätze": {
+              "parkplätze in der innenstadt": 0,
+              "parkplätze für den einzelhandel": 0,
+              "innenstadt erreichbar": 0,
+              "zufahrt zur innenstadt": 0,
+              "parkraum": 1,
+              "autofreundliche innenstadt": 0,
+              "parkgebühren": 0
+            },
+            "Nahmobilität und öffentlicher Verkehr": {
+              "nahmobilität": 0,
+              "fahrradfreundliche innenstadt": 0,
+              "radwege zur innenstadt": 0,
+              "öpnv zur innenstadt": 0,
+              "fußwege": 0
+            },
+            "Öffnungszeiten und zeitliche Zugänglichkeit": {
+              "ladenöffnungszeiten": 0,
+              "öffnungszeiten": 0,
+              "sonntagsöffnung": 0,
+              "verkaufsoffene sonntage": 0,
+              "ladenschluss": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": "BE",
+        "ursachen": {
+          "3602": {
+            "Nutzungsmischung und Ansiedlung fördern": {
+              "nutzungsmischung": 0,
+              "innenstadt belebung": 0,
+              "leerstandsmanagement": 0,
+              "ansiedlung von geschäften": 0,
+              "ansiedlung in innenstädten": 0,
+              "zwischennutzung": 0,
+              "innenstadtfonds": 0,
+              "gründerinnen und gründer in innenstädten": 0,
+              "ankermieter": 0
+            },
+            "Marktprofile und Wettbewerb": {
+              "profil der geschäfte": 0,
+              "wettbewerb im einzelhandel": 0,
+              "wettbewerb der innenstädte": 0,
+              "einzelhandelskonzept": 0,
+              "zentrenkonzept": 0
+            }
+          },
+          "3603": {
+            "Aufenthaltsqualität und Verkehrsberuhigung": {
+              "aufenthaltsqualität": 0,
+              "fußgängerzone": 0,
+              "stadtgrün": 2,
+              "verkehrsberuhigung": 1,
+              "platzgestaltung": 0,
+              "innenstadt umgestalten": 0,
+              "begrünung der innenstadt": 0,
+              "begrünung von plätzen": 0
+            },
+            "Sauberkeit, Sicherheit und Instandhaltung": {
+              "sauberkeit": 3,
+              "ordnung in der innenstadt": 0,
+              "instandhaltung": 2,
+              "sicherheit in der innenstadt": 0,
+              "sauberkeit öffentlicher raum": 0
+            }
+          },
+          "3604": {
+            "Erreichbarkeit mit dem Auto und Parkplätze": {
+              "parkplätze in der innenstadt": 0,
+              "parkplätze für den einzelhandel": 0,
+              "innenstadt erreichbar": 0,
+              "zufahrt zur innenstadt": 0,
+              "parkraum": 2,
+              "autofreundliche innenstadt": 0,
+              "parkgebühren": 0
+            },
+            "Nahmobilität und öffentlicher Verkehr": {
+              "nahmobilität": 1,
+              "fahrradfreundliche innenstadt": 0,
+              "radwege zur innenstadt": 0,
+              "öpnv zur innenstadt": 0,
+              "fußwege": 1
+            },
+            "Öffnungszeiten und zeitliche Zugänglichkeit": {
+              "ladenöffnungszeiten": 0,
+              "öffnungszeiten": 1,
+              "sonntagsöffnung": 0,
+              "verkaufsoffene sonntage": 0,
+              "ladenschluss": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": "MV",
+        "ursachen": {
+          "3602": {
+            "Nutzungsmischung und Ansiedlung fördern": {
+              "nutzungsmischung": 0,
+              "innenstadt belebung": 0,
+              "leerstandsmanagement": 0,
+              "ansiedlung von geschäften": 0,
+              "ansiedlung in innenstädten": 0,
+              "zwischennutzung": 0,
+              "innenstadtfonds": 0,
+              "gründerinnen und gründer in innenstädten": 0,
+              "ankermieter": 0
+            },
+            "Marktprofile und Wettbewerb": {
+              "profil der geschäfte": 0,
+              "wettbewerb im einzelhandel": 0,
+              "wettbewerb der innenstädte": 0,
+              "einzelhandelskonzept": 0,
+              "zentrenkonzept": 0
+            }
+          },
+          "3603": {
+            "Aufenthaltsqualität und Verkehrsberuhigung": {
+              "aufenthaltsqualität": 0,
+              "fußgängerzone": 0,
+              "stadtgrün": 0,
+              "verkehrsberuhigung": 0,
+              "platzgestaltung": 0,
+              "innenstadt umgestalten": 0,
+              "begrünung der innenstadt": 0,
+              "begrünung von plätzen": 0
+            },
+            "Sauberkeit, Sicherheit und Instandhaltung": {
+              "sauberkeit": 0,
+              "ordnung in der innenstadt": 0,
+              "instandhaltung": 1,
+              "sicherheit in der innenstadt": 0,
+              "sauberkeit öffentlicher raum": 0
+            }
+          },
+          "3604": {
+            "Erreichbarkeit mit dem Auto und Parkplätze": {
+              "parkplätze in der innenstadt": 0,
+              "parkplätze für den einzelhandel": 0,
+              "innenstadt erreichbar": 0,
+              "zufahrt zur innenstadt": 0,
+              "parkraum": 0,
+              "autofreundliche innenstadt": 0,
+              "parkgebühren": 0
+            },
+            "Nahmobilität und öffentlicher Verkehr": {
+              "nahmobilität": 0,
+              "fahrradfreundliche innenstadt": 0,
+              "radwege zur innenstadt": 0,
+              "öpnv zur innenstadt": 0,
+              "fußwege": 0
+            },
+            "Öffnungszeiten und zeitliche Zugänglichkeit": {
+              "ladenöffnungszeiten": 0,
+              "öffnungszeiten": 0,
+              "sonntagsöffnung": 0,
+              "verkaufsoffene sonntage": 1,
+              "ladenschluss": 1
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": "ST",
+        "ursachen": {
+          "3602": {
+            "Nutzungsmischung und Ansiedlung fördern": {
+              "nutzungsmischung": 0,
+              "innenstadt belebung": 0,
+              "leerstandsmanagement": 0,
+              "ansiedlung von geschäften": 0,
+              "ansiedlung in innenstädten": 0,
+              "zwischennutzung": 0,
+              "innenstadtfonds": 0,
+              "gründerinnen und gründer in innenstädten": 0,
+              "ankermieter": 0
+            },
+            "Marktprofile und Wettbewerb": {
+              "profil der geschäfte": 0,
+              "wettbewerb im einzelhandel": 0,
+              "wettbewerb der innenstädte": 0,
+              "einzelhandelskonzept": 0,
+              "zentrenkonzept": 0
+            }
+          },
+          "3603": {
+            "Aufenthaltsqualität und Verkehrsberuhigung": {
+              "aufenthaltsqualität": 0,
+              "fußgängerzone": 0,
+              "stadtgrün": 0,
+              "verkehrsberuhigung": 0,
+              "platzgestaltung": 0,
+              "innenstadt umgestalten": 0,
+              "begrünung der innenstadt": 0,
+              "begrünung von plätzen": 0
+            },
+            "Sauberkeit, Sicherheit und Instandhaltung": {
+              "sauberkeit": 1,
+              "ordnung in der innenstadt": 0,
+              "instandhaltung": 3,
+              "sicherheit in der innenstadt": 0,
+              "sauberkeit öffentlicher raum": 0
+            }
+          },
+          "3604": {
+            "Erreichbarkeit mit dem Auto und Parkplätze": {
+              "parkplätze in der innenstadt": 0,
+              "parkplätze für den einzelhandel": 0,
+              "innenstadt erreichbar": 0,
+              "zufahrt zur innenstadt": 0,
+              "parkraum": 0,
+              "autofreundliche innenstadt": 0,
+              "parkgebühren": 0
+            },
+            "Nahmobilität und öffentlicher Verkehr": {
+              "nahmobilität": 0,
+              "fahrradfreundliche innenstadt": 0,
+              "radwege zur innenstadt": 0,
+              "öpnv zur innenstadt": 0,
+              "fußwege": 0
+            },
+            "Öffnungszeiten und zeitliche Zugänglichkeit": {
+              "ladenöffnungszeiten": 0,
+              "öffnungszeiten": 0,
+              "sonntagsöffnung": 0,
+              "verkaufsoffene sonntage": 0,
+              "ladenschluss": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": null,
+        "ursachen": {
+          "3601": {
+            "Lokalen Handel stärken und Wettbewerb angleichen": {
+              "lokaler einzelhandel": 0,
+              "stationärer handel": 0,
+              "onlinehandel": 0,
+              "plattformregulierung": 0,
+              "digitalisierung des handels": 0,
+              "fairer wettbewerb im handel": 0,
+              "händler vor ort": 0
+            },
+            "Digitale Vertriebswege und Flächenanpassung": {
+              "digitale vertriebswege": 0,
+              "händlerplattform": 0,
+              "flächen anpassen": 0,
+              "click and collect": 0,
+              "strukturwandel im handel": 0
+            }
+          },
+          "3602": {
+            "Nutzungsmischung und Ansiedlung fördern": {
+              "nutzungsmischung": 0,
+              "innenstadt belebung": 0,
+              "leerstandsmanagement": 0,
+              "ansiedlung von geschäften": 0,
+              "ansiedlung in innenstädten": 0,
+              "zwischennutzung": 0,
+              "innenstadtfonds": 0,
+              "gründerinnen und gründer in innenstädten": 0,
+              "ankermieter": 0
+            },
+            "Marktprofile und Wettbewerb": {
+              "profil der geschäfte": 0,
+              "wettbewerb im einzelhandel": 0,
+              "wettbewerb der innenstädte": 0,
+              "einzelhandelskonzept": 0,
+              "zentrenkonzept": 0
+            }
+          },
+          "3603": {
+            "Aufenthaltsqualität und Verkehrsberuhigung": {
+              "aufenthaltsqualität": 0,
+              "fußgängerzone": 0,
+              "stadtgrün": 0,
+              "verkehrsberuhigung": 0,
+              "platzgestaltung": 0,
+              "innenstadt umgestalten": 0,
+              "begrünung der innenstadt": 0,
+              "begrünung von plätzen": 0
+            },
+            "Sauberkeit, Sicherheit und Instandhaltung": {
+              "sauberkeit": 0,
+              "ordnung in der innenstadt": 0,
+              "instandhaltung": 1,
+              "sicherheit in der innenstadt": 0,
+              "sauberkeit öffentlicher raum": 0
+            }
+          },
+          "3604": {
+            "Erreichbarkeit mit dem Auto und Parkplätze": {
+              "parkplätze in der innenstadt": 0,
+              "parkplätze für den einzelhandel": 0,
+              "innenstadt erreichbar": 0,
+              "zufahrt zur innenstadt": 0,
+              "parkraum": 0,
+              "autofreundliche innenstadt": 0,
+              "parkgebühren": 0
+            },
+            "Nahmobilität und öffentlicher Verkehr": {
+              "nahmobilität": 0,
+              "fahrradfreundliche innenstadt": 0,
+              "radwege zur innenstadt": 0,
+              "öpnv zur innenstadt": 0,
+              "fußwege": 1
+            },
+            "Öffnungszeiten und zeitliche Zugänglichkeit": {
+              "ladenöffnungszeiten": 0,
+              "öffnungszeiten": 0,
+              "sonntagsöffnung": 0,
+              "verkaufsoffene sonntage": 0,
+              "ladenschluss": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": "BE",
+        "ursachen": {
+          "3602": {
+            "Nutzungsmischung und Ansiedlung fördern": {
+              "nutzungsmischung": 1,
+              "innenstadt belebung": 0,
+              "leerstandsmanagement": 0,
+              "ansiedlung von geschäften": 0,
+              "ansiedlung in innenstädten": 0,
+              "zwischennutzung": 2,
+              "innenstadtfonds": 0,
+              "gründerinnen und gründer in innenstädten": 0,
+              "ankermieter": 0
+            },
+            "Marktprofile und Wettbewerb": {
+              "profil der geschäfte": 0,
+              "wettbewerb im einzelhandel": 0,
+              "wettbewerb der innenstädte": 0,
+              "einzelhandelskonzept": 0,
+              "zentrenkonzept": 0
+            }
+          },
+          "3603": {
+            "Aufenthaltsqualität und Verkehrsberuhigung": {
+              "aufenthaltsqualität": 5,
+              "fußgängerzone": 0,
+              "stadtgrün": 5,
+              "verkehrsberuhigung": 3,
+              "platzgestaltung": 0,
+              "innenstadt umgestalten": 0,
+              "begrünung der innenstadt": 0,
+              "begrünung von plätzen": 1
+            },
+            "Sauberkeit, Sicherheit und Instandhaltung": {
+              "sauberkeit": 5,
+              "ordnung in der innenstadt": 0,
+              "instandhaltung": 5,
+              "sicherheit in der innenstadt": 0,
+              "sauberkeit öffentlicher raum": 0
+            }
+          },
+          "3604": {
+            "Erreichbarkeit mit dem Auto und Parkplätze": {
+              "parkplätze in der innenstadt": 0,
+              "parkplätze für den einzelhandel": 0,
+              "innenstadt erreichbar": 0,
+              "zufahrt zur innenstadt": 0,
+              "parkraum": 4,
+              "autofreundliche innenstadt": 0,
+              "parkgebühren": 2
+            },
+            "Nahmobilität und öffentlicher Verkehr": {
+              "nahmobilität": 0,
+              "fahrradfreundliche innenstadt": 0,
+              "radwege zur innenstadt": 0,
+              "öpnv zur innenstadt": 0,
+              "fußwege": 1
+            },
+            "Öffnungszeiten und zeitliche Zugänglichkeit": {
+              "ladenöffnungszeiten": 0,
+              "öffnungszeiten": 5,
+              "sonntagsöffnung": 2,
+              "verkaufsoffene sonntage": 0,
+              "ladenschluss": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": "MV",
+        "ursachen": {
+          "3602": {
+            "Nutzungsmischung und Ansiedlung fördern": {
+              "nutzungsmischung": 0,
+              "innenstadt belebung": 0,
+              "leerstandsmanagement": 0,
+              "ansiedlung von geschäften": 0,
+              "ansiedlung in innenstädten": 0,
+              "zwischennutzung": 0,
+              "innenstadtfonds": 0,
+              "gründerinnen und gründer in innenstädten": 0,
+              "ankermieter": 0
+            },
+            "Marktprofile und Wettbewerb": {
+              "profil der geschäfte": 0,
+              "wettbewerb im einzelhandel": 0,
+              "wettbewerb der innenstädte": 0,
+              "einzelhandelskonzept": 0,
+              "zentrenkonzept": 0
+            }
+          },
+          "3603": {
+            "Aufenthaltsqualität und Verkehrsberuhigung": {
+              "aufenthaltsqualität": 0,
+              "fußgängerzone": 0,
+              "stadtgrün": 0,
+              "verkehrsberuhigung": 0,
+              "platzgestaltung": 0,
+              "innenstadt umgestalten": 0,
+              "begrünung der innenstadt": 0,
+              "begrünung von plätzen": 0
+            },
+            "Sauberkeit, Sicherheit und Instandhaltung": {
+              "sauberkeit": 0,
+              "ordnung in der innenstadt": 0,
+              "instandhaltung": 0,
+              "sicherheit in der innenstadt": 0,
+              "sauberkeit öffentlicher raum": 0
+            }
+          },
+          "3604": {
+            "Erreichbarkeit mit dem Auto und Parkplätze": {
+              "parkplätze in der innenstadt": 0,
+              "parkplätze für den einzelhandel": 0,
+              "innenstadt erreichbar": 0,
+              "zufahrt zur innenstadt": 0,
+              "parkraum": 0,
+              "autofreundliche innenstadt": 0,
+              "parkgebühren": 0
+            },
+            "Nahmobilität und öffentlicher Verkehr": {
+              "nahmobilität": 0,
+              "fahrradfreundliche innenstadt": 0,
+              "radwege zur innenstadt": 0,
+              "öpnv zur innenstadt": 0,
+              "fußwege": 0
+            },
+            "Öffnungszeiten und zeitliche Zugänglichkeit": {
+              "ladenöffnungszeiten": 0,
+              "öffnungszeiten": 1,
+              "sonntagsöffnung": 0,
+              "verkaufsoffene sonntage": 0,
+              "ladenschluss": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": "ST",
+        "ursachen": {
+          "3602": {
+            "Nutzungsmischung und Ansiedlung fördern": {
+              "nutzungsmischung": 0,
+              "innenstadt belebung": 0,
+              "leerstandsmanagement": 0,
+              "ansiedlung von geschäften": 0,
+              "ansiedlung in innenstädten": 0,
+              "zwischennutzung": 0,
+              "innenstadtfonds": 0,
+              "gründerinnen und gründer in innenstädten": 0,
+              "ankermieter": 0
+            },
+            "Marktprofile und Wettbewerb": {
+              "profil der geschäfte": 0,
+              "wettbewerb im einzelhandel": 0,
+              "wettbewerb der innenstädte": 0,
+              "einzelhandelskonzept": 0,
+              "zentrenkonzept": 0
+            }
+          },
+          "3603": {
+            "Aufenthaltsqualität und Verkehrsberuhigung": {
+              "aufenthaltsqualität": 0,
+              "fußgängerzone": 0,
+              "stadtgrün": 1,
+              "verkehrsberuhigung": 0,
+              "platzgestaltung": 0,
+              "innenstadt umgestalten": 0,
+              "begrünung der innenstadt": 0,
+              "begrünung von plätzen": 0
+            },
+            "Sauberkeit, Sicherheit und Instandhaltung": {
+              "sauberkeit": 0,
+              "ordnung in der innenstadt": 0,
+              "instandhaltung": 0,
+              "sicherheit in der innenstadt": 0,
+              "sauberkeit öffentlicher raum": 0
+            }
+          },
+          "3604": {
+            "Erreichbarkeit mit dem Auto und Parkplätze": {
+              "parkplätze in der innenstadt": 0,
+              "parkplätze für den einzelhandel": 0,
+              "innenstadt erreichbar": 0,
+              "zufahrt zur innenstadt": 0,
+              "parkraum": 0,
+              "autofreundliche innenstadt": 0,
+              "parkgebühren": 0
+            },
+            "Nahmobilität und öffentlicher Verkehr": {
+              "nahmobilität": 1,
+              "fahrradfreundliche innenstadt": 0,
+              "radwege zur innenstadt": 0,
+              "öpnv zur innenstadt": 0,
+              "fußwege": 1
+            },
+            "Öffnungszeiten und zeitliche Zugänglichkeit": {
+              "ladenöffnungszeiten": 0,
+              "öffnungszeiten": 1,
+              "sonntagsöffnung": 0,
+              "verkaufsoffene sonntage": 0,
+              "ladenschluss": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": null,
+        "ursachen": {
+          "3601": {
+            "Lokalen Handel stärken und Wettbewerb angleichen": {
+              "lokaler einzelhandel": 0,
+              "stationärer handel": 0,
+              "onlinehandel": 0,
+              "plattformregulierung": 0,
+              "digitalisierung des handels": 0,
+              "fairer wettbewerb im handel": 0,
+              "händler vor ort": 0
+            },
+            "Digitale Vertriebswege und Flächenanpassung": {
+              "digitale vertriebswege": 0,
+              "händlerplattform": 0,
+              "flächen anpassen": 0,
+              "click and collect": 0,
+              "strukturwandel im handel": 0
+            }
+          },
+          "3602": {
+            "Nutzungsmischung und Ansiedlung fördern": {
+              "nutzungsmischung": 0,
+              "innenstadt belebung": 0,
+              "leerstandsmanagement": 0,
+              "ansiedlung von geschäften": 0,
+              "ansiedlung in innenstädten": 0,
+              "zwischennutzung": 0,
+              "innenstadtfonds": 0,
+              "gründerinnen und gründer in innenstädten": 0,
+              "ankermieter": 0
+            },
+            "Marktprofile und Wettbewerb": {
+              "profil der geschäfte": 0,
+              "wettbewerb im einzelhandel": 0,
+              "wettbewerb der innenstädte": 0,
+              "einzelhandelskonzept": 0,
+              "zentrenkonzept": 0
+            }
+          },
+          "3603": {
+            "Aufenthaltsqualität und Verkehrsberuhigung": {
+              "aufenthaltsqualität": 0,
+              "fußgängerzone": 0,
+              "stadtgrün": 0,
+              "verkehrsberuhigung": 0,
+              "platzgestaltung": 0,
+              "innenstadt umgestalten": 0,
+              "begrünung der innenstadt": 0,
+              "begrünung von plätzen": 0
+            },
+            "Sauberkeit, Sicherheit und Instandhaltung": {
+              "sauberkeit": 0,
+              "ordnung in der innenstadt": 0,
+              "instandhaltung": 1,
+              "sicherheit in der innenstadt": 0,
+              "sauberkeit öffentlicher raum": 0
+            }
+          },
+          "3604": {
+            "Erreichbarkeit mit dem Auto und Parkplätze": {
+              "parkplätze in der innenstadt": 0,
+              "parkplätze für den einzelhandel": 0,
+              "innenstadt erreichbar": 0,
+              "zufahrt zur innenstadt": 0,
+              "parkraum": 0,
+              "autofreundliche innenstadt": 0,
+              "parkgebühren": 0
+            },
+            "Nahmobilität und öffentlicher Verkehr": {
+              "nahmobilität": 0,
+              "fahrradfreundliche innenstadt": 0,
+              "radwege zur innenstadt": 0,
+              "öpnv zur innenstadt": 0,
+              "fußwege": 0
+            },
+            "Öffnungszeiten und zeitliche Zugänglichkeit": {
+              "ladenöffnungszeiten": 0,
+              "öffnungszeiten": 0,
+              "sonntagsöffnung": 0,
+              "verkaufsoffene sonntage": 0,
+              "ladenschluss": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": "BE",
+        "ursachen": {
+          "3602": {
+            "Nutzungsmischung und Ansiedlung fördern": {
+              "nutzungsmischung": 0,
+              "innenstadt belebung": 0,
+              "leerstandsmanagement": 0,
+              "ansiedlung von geschäften": 0,
+              "ansiedlung in innenstädten": 0,
+              "zwischennutzung": 0,
+              "innenstadtfonds": 0,
+              "gründerinnen und gründer in innenstädten": 0,
+              "ankermieter": 0
+            },
+            "Marktprofile und Wettbewerb": {
+              "profil der geschäfte": 0,
+              "wettbewerb im einzelhandel": 0,
+              "wettbewerb der innenstädte": 0,
+              "einzelhandelskonzept": 0,
+              "zentrenkonzept": 0
+            }
+          },
+          "3603": {
+            "Aufenthaltsqualität und Verkehrsberuhigung": {
+              "aufenthaltsqualität": 0,
+              "fußgängerzone": 0,
+              "stadtgrün": 1,
+              "verkehrsberuhigung": 0,
+              "platzgestaltung": 0,
+              "innenstadt umgestalten": 0,
+              "begrünung der innenstadt": 0,
+              "begrünung von plätzen": 0
+            },
+            "Sauberkeit, Sicherheit und Instandhaltung": {
+              "sauberkeit": 7,
+              "ordnung in der innenstadt": 0,
+              "instandhaltung": 2,
+              "sicherheit in der innenstadt": 0,
+              "sauberkeit öffentlicher raum": 0
+            }
+          },
+          "3604": {
+            "Erreichbarkeit mit dem Auto und Parkplätze": {
+              "parkplätze in der innenstadt": 0,
+              "parkplätze für den einzelhandel": 0,
+              "innenstadt erreichbar": 0,
+              "zufahrt zur innenstadt": 0,
+              "parkraum": 1,
+              "autofreundliche innenstadt": 0,
+              "parkgebühren": 0
+            },
+            "Nahmobilität und öffentlicher Verkehr": {
+              "nahmobilität": 0,
+              "fahrradfreundliche innenstadt": 0,
+              "radwege zur innenstadt": 0,
+              "öpnv zur innenstadt": 0,
+              "fußwege": 0
+            },
+            "Öffnungszeiten und zeitliche Zugänglichkeit": {
+              "ladenöffnungszeiten": 0,
+              "öffnungszeiten": 2,
+              "sonntagsöffnung": 0,
+              "verkaufsoffene sonntage": 0,
+              "ladenschluss": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": "MV",
+        "ursachen": {
+          "3602": {
+            "Nutzungsmischung und Ansiedlung fördern": {
+              "nutzungsmischung": 0,
+              "innenstadt belebung": 0,
+              "leerstandsmanagement": 0,
+              "ansiedlung von geschäften": 0,
+              "ansiedlung in innenstädten": 0,
+              "zwischennutzung": 0,
+              "innenstadtfonds": 0,
+              "gründerinnen und gründer in innenstädten": 0,
+              "ankermieter": 0
+            },
+            "Marktprofile und Wettbewerb": {
+              "profil der geschäfte": 0,
+              "wettbewerb im einzelhandel": 0,
+              "wettbewerb der innenstädte": 0,
+              "einzelhandelskonzept": 0,
+              "zentrenkonzept": 0
+            }
+          },
+          "3603": {
+            "Aufenthaltsqualität und Verkehrsberuhigung": {
+              "aufenthaltsqualität": 0,
+              "fußgängerzone": 0,
+              "stadtgrün": 0,
+              "verkehrsberuhigung": 0,
+              "platzgestaltung": 0,
+              "innenstadt umgestalten": 0,
+              "begrünung der innenstadt": 0,
+              "begrünung von plätzen": 0
+            },
+            "Sauberkeit, Sicherheit und Instandhaltung": {
+              "sauberkeit": 0,
+              "ordnung in der innenstadt": 0,
+              "instandhaltung": 0,
+              "sicherheit in der innenstadt": 0,
+              "sauberkeit öffentlicher raum": 0
+            }
+          },
+          "3604": {
+            "Erreichbarkeit mit dem Auto und Parkplätze": {
+              "parkplätze in der innenstadt": 0,
+              "parkplätze für den einzelhandel": 0,
+              "innenstadt erreichbar": 0,
+              "zufahrt zur innenstadt": 0,
+              "parkraum": 0,
+              "autofreundliche innenstadt": 0,
+              "parkgebühren": 0
+            },
+            "Nahmobilität und öffentlicher Verkehr": {
+              "nahmobilität": 0,
+              "fahrradfreundliche innenstadt": 0,
+              "radwege zur innenstadt": 0,
+              "öpnv zur innenstadt": 0,
+              "fußwege": 0
+            },
+            "Öffnungszeiten und zeitliche Zugänglichkeit": {
+              "ladenöffnungszeiten": 0,
+              "öffnungszeiten": 0,
+              "sonntagsöffnung": 0,
+              "verkaufsoffene sonntage": 0,
+              "ladenschluss": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": "ST",
+        "ursachen": {
+          "3602": {
+            "Nutzungsmischung und Ansiedlung fördern": {
+              "nutzungsmischung": 0,
+              "innenstadt belebung": 0,
+              "leerstandsmanagement": 0,
+              "ansiedlung von geschäften": 0,
+              "ansiedlung in innenstädten": 0,
+              "zwischennutzung": 0,
+              "innenstadtfonds": 0,
+              "gründerinnen und gründer in innenstädten": 0,
+              "ankermieter": 0
+            },
+            "Marktprofile und Wettbewerb": {
+              "profil der geschäfte": 0,
+              "wettbewerb im einzelhandel": 0,
+              "wettbewerb der innenstädte": 0,
+              "einzelhandelskonzept": 0,
+              "zentrenkonzept": 0
+            }
+          },
+          "3603": {
+            "Aufenthaltsqualität und Verkehrsberuhigung": {
+              "aufenthaltsqualität": 1,
+              "fußgängerzone": 0,
+              "stadtgrün": 0,
+              "verkehrsberuhigung": 0,
+              "platzgestaltung": 1,
+              "innenstadt umgestalten": 0,
+              "begrünung der innenstadt": 0,
+              "begrünung von plätzen": 0
+            },
+            "Sauberkeit, Sicherheit und Instandhaltung": {
+              "sauberkeit": 1,
+              "ordnung in der innenstadt": 0,
+              "instandhaltung": 0,
+              "sicherheit in der innenstadt": 0,
+              "sauberkeit öffentlicher raum": 0
+            }
+          },
+          "3604": {
+            "Erreichbarkeit mit dem Auto und Parkplätze": {
+              "parkplätze in der innenstadt": 0,
+              "parkplätze für den einzelhandel": 0,
+              "innenstadt erreichbar": 0,
+              "zufahrt zur innenstadt": 0,
+              "parkraum": 0,
+              "autofreundliche innenstadt": 0,
+              "parkgebühren": 0
+            },
+            "Nahmobilität und öffentlicher Verkehr": {
+              "nahmobilität": 0,
+              "fahrradfreundliche innenstadt": 0,
+              "radwege zur innenstadt": 0,
+              "öpnv zur innenstadt": 0,
+              "fußwege": 0
+            },
+            "Öffnungszeiten und zeitliche Zugänglichkeit": {
+              "ladenöffnungszeiten": 0,
+              "öffnungszeiten": 0,
+              "sonntagsöffnung": 0,
+              "verkaufsoffene sonntage": 0,
+              "ladenschluss": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}

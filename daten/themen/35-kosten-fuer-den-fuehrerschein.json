@@ -25,5 +25,173 @@
       "ebene": "bund",
       "schlagwoerter": ["durchgefallen", "pruefung wiederholen", "theoriepruefung", "fahrpruefung", "nachschulung"]
     }
+  ],
+  "instrumente": [
+    {
+      "id": 9944,
+      "name": "Finanzielle Förderung des Führerscheinerwerbs für junge Menschen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Entlastet einzelne Gruppen bei den Kosten, senkt aber weder Preise noch Wiederholungsprüfungen; ohne mehr Wettbewerb kann ein Zuschuss teilweise in Preisen aufgehen. Bund kann finanzieren, Haushaltsmittel nötig.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9945,
+      "name": "Ausbildung entlasten: digitale Theorie, Simulatoren, keine Tagesgrenze (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Setzt direkt an Ausbildungsaufwand und Kosten an, per Verordnung änderbar. Der Kosteneffekt von Digitaltheorie und Simulatoren ist kaum untersucht; Preise bestimmen weiter die Fahrschulen.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "durchsucht_fuer": [3501, 3502],
+      "massnahmen": [
+        {
+          "id": 9946,
+          "beschreibung": "Bürokratie abbauen und die Ausbildung effizient gestalten, damit der Führerschein für junge Menschen bezahlbar bleibt.",
+          "ursachen_ids": [3501],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Allgemeine Zusage ohne konkrete Schritte; Bürokratieabbau kann Kosten etwas senken, der Effekt auf Fahrschulpreise ist unbestimmt und kaum untersucht.",
+          "zitat": "Der Führerschein muss für junge Menschen bezahlbar sein. Dafür gilt es, Bürokratie abzubauen und die Ausbildung effizient zu gestalten.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=74",
+          "evidenz": "offen",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "durchsucht_fuer": [3501, 3502],
+      "massnahmen": [
+        {
+          "id": 9947,
+          "beschreibung": "Fahrausbildung samt Theorieunterricht reformieren, auch mit dem Ziel, die Kosten der Fahrausbildung spürbar zu senken",
+          "ursachen_ids": [3501, 3502],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Benennt Kosten und Durchfallquoten als Anlass, bleibt aber ohne konkrete Änderungen; Wirkung hängt vom Inhalt der Reform ab. Bund kann die Ausbildungsregeln selbst ändern.",
+          "zitat": "Vor dem Hintergrund erhöhter Quoten nicht bestandener Prüfungen und steigender Preise werden wir die Fahrausbildung samt Theorieunterricht im Sinne von Verkehrssicherheit und Effizienz reformieren, auch mit dem Ziel, die Kosten der Fahrausbildung spürbar zu senken.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=36",
+          "evidenz": "offen",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9948,
+          "instrument": 9944,
+          "beschreibung": "Alle Jugendlichen im 17. Lebensjahr erhalten 500 Euro Guthaben, unter anderem für Führerscheinkosten",
+          "ursachen_ids": [3501],
+          "zitat": "Alle jungen Menschen im 17. Lebensjahr sollen daher einen MobilitätsPass mit 500 Euro Guthaben, etwa für Führerscheinkosten, Bahntickets oder Fahrräder, erhalten.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=36",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9949,
+          "instrument": 9944,
+          "beschreibung": "Arbeitgeber sollen einen steuer- und abgabenfreien Führerscheinzuschuss bis 2.000 Euro an Auszubildende und junge Beschäftigte zahlen können",
+          "ursachen_ids": [3501],
+          "zitat": "Zudem wollen wir Arbeitgebern ermöglichen, einen Führerscheinzuschuss von bis zu 2.000 Euro steuer- und abgabenfrei an Auszubildende und junge Beschäftigte auszuzahlen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=36",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "durchsucht_fuer": [3501, 3502],
+      "massnahmen": [
+        {
+          "id": 9950,
+          "instrument": 9944,
+          "beschreibung": "Förderung des Führerscheinerwerbs für Menschen in Ausbildung",
+          "ursachen_ids": [3501],
+          "zitat": "Wir wollen für Menschen in Ausbildung auch den Führerscheinerwerb fördern […]",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=78",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "durchsucht_fuer": [3501, 3502],
+      "massnahmen": [
+        {
+          "id": 9951,
+          "instrument": 9945,
+          "beschreibung": "Führerschein sowie Lkw- und Bus-Qualifikation günstiger machen: Obergrenze für Theorieunterricht entfällt, Theorie digital, Fahrsimulatoren in der Ausbildung.",
+          "ursachen_ids": [3501],
+          "zitat": "Deshalb wollen wir den Führerschein und die Berufskraftfahrerqualifikation (Lkw-Führerschein, Bus-Führerschein) wieder günstiger machen, z. B. durch den Verzicht auf eine Tagesobergrenze für den Theorieunterricht, die Möglichkeit den Theorieunterricht digital zu absolvieren und die Integration von Fahrsimulatoren in der Ausbildung.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=42",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9952,
+          "beschreibung": "Prüfungsmarkt für weitere Anbieter öffnen, Fahrprüfer ohne Ingenieursstudium weiterbilden, mehr Prüftermine und kürzere Wartezeiten.",
+          "ursachen_ids": [3501],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Mehr Anbieter und Prüfer können Wettbewerb und Termine verbessern; die Prüfgebühr macht aber nur einen kleinen Teil der Gesamtkosten aus. Wirkung kaum untersucht, Umsetzung braucht Bund-Länder-Abstimmung.",
+          "zitat": "Mit der Öffnung des Prüfungsmarktes für weitere Anbieter und einer Weiterbildung zum Fahrprüfer auch ohne Ingenieursstudium wollen wir die Anzahl an Prüfterminen steigern und Wartezeiten deutlich senken.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=42",
+          "evidenz": "offen",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "durchsucht_fuer": [3501, 3502],
+      "keine_massnahme": {
+        "begruendung": "Erfasste Stellen (S. 43) setzen laut Bewertung ohne Parteinamen an keiner der Ursachen an.",
+        "stand": "2026-10-14",
+        "treffer": 3,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 16,
+      "durchsucht_fuer": [3501, 3502],
+      "keine_massnahme": {
+        "begruendung": "Kapitel 9 Mobilität (S. 36–37) und Kapitel 10 Bildung (S. 38–39) gelesen, Fundstellen S. 10, 14, 39 geprüft. Führerschein, Fahrschule, Fahrerlaubnis, Fahrausbildung und Fahrprüfung kommen im Programm nicht vor.",
+        "stand": "2026-10-14",
+        "treffer": 3,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 17,
+      "durchsucht_fuer": [3501, 3502],
+      "keine_massnahme": {
+        "begruendung": "Kapitel „Verkehrspolitik für alle statt Bevormundung und Verbote“ (S. 28–30) gelesen; Stichwörter Führerschein, Fahrschule, Fahrerlaubnis, Prüfung, Ausbildung im ganzen Programm ohne Treffer zu Fahrausbildung.",
+        "stand": "2026-10-14",
+        "treffer": 0,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    }
   ]
 }

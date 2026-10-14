@@ -1,0 +1,55 @@
+{
+  "partei_id": 14,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Führerschein sowie Lkw- und Bus-Qualifikation günstiger machen: Obergrenze für Theorieunterricht entfällt, Theorie digital, Fahrsimulatoren in der Ausbildung.",
+      "ursachen_ids": [3501],
+      "ursachen_offen": [3502],
+      "buendel": "Führerscheinkosten senken und Zugang erleichtern",
+      "zitat": "Deshalb wollen wir den Führerschein und die Berufskraftfahrerqualifikation (Lkw-Führerschein, Bus-Führerschein) wieder günstiger machen, z. B. durch den Verzicht auf eine Tagesobergrenze für den Theorieunterricht, die Möglichkeit den Theorieunterricht digital zu absolvieren und die Integration von Fahrsimulatoren in der Ausbildung.",
+      "seite": 42
+    },
+    {
+      "beschreibung": "Prüfungsmarkt für weitere Anbieter öffnen, Fahrprüfer ohne Ingenieursstudium weiterbilden, mehr Prüftermine und kürzere Wartezeiten.",
+      "ursachen_ids": [3502],
+      "ursachen_offen": [3501],
+      "buendel": "Ausbildung und Prüfung entschlacken",
+      "zitat": "Mit der Öffnung des Prüfungsmarktes für weitere Anbieter und einer Weiterbildung zum Fahrprüfer auch ohne Ingenieursstudium wollen wir die Anzahl an Prüfterminen steigern und Wartezeiten deutlich senken.",
+      "seite": 42
+    },
+    {
+      "beschreibung": "Begleitetes Fahren ab 16 Jahren ermöglichen.",
+      "ursachen_ids": [3502],
+      "zitat": "Das begleitete Fahren wollen wir ab 16 Jahren ermöglichen – denn frühe Fahrpraxis erhöht nachweislich die Verkehrssicherheit.",
+      "seite": 42
+    },
+    {
+      "beschreibung": "Zwangstests für Senioren ablehnen.",
+      "ursachen_ids": [3502],
+      "zitat": "Diskriminierende Zwangstests für Senioren lehnen wir ab.",
+      "seite": 42
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 3502, "name": "Begleitetes Fahren ab 16", "seite": 42 },
+    { "ursache": 3502, "name": "Keine Zwangstests für Senioren", "seite": 42 }
+  ]
+}
+
+Protokoll
+
+Gelesen: Inhaltsverzeichnis (S. 1–6); Kapitel V.d–e (S. 36–39) und Kapitel VI.b „Bessere Infrastruktur und technologieneutrale Mobilität“ (S. 40–43) vollständig; Fundstellen S. 39 und S. 42.
+
+Aufgenommen:
+- S. 42, Kosten: Zusage „günstiger machen“ mit den Mitteln Theorie-Obergrenze, digitale Theorie, Fahrsimulatoren. Ursache 3501 gesetzt, 3502 als Grenzfall offen (Umfang der Pflichtstunden gehört nach R1 zu 3502).
+- S. 42, Prüfungsmarkt: Ursache 3502 gesetzt, 3501 als Grenzfall offen (Öffnung für Anbieter = Wettbewerb).
+- S. 42, begleitetes Fahren ab 16 und Ablehnung von Zwangstests für Senioren: Ausbildungs- und Prüfungsanforderungen (3502). Eigene Hebel, daher neue_buendel. Die Ablehnung ist eine Position ohne Handlung; aufgenommen, weil sie eine Prüfungsanforderung betrifft (Grenzfall).
+
+Nicht erfasst:
+- S. 39 und S. 42: Digitalisierung des Führerscheins in der digitalen Wallet und der Fahrzeugpapiere – Dokumente, kein Bezug zu Kosten oder Erwerb.
+
+Bündel ohne Maßnahme (gezielt gesucht): „Wettbewerb und Preistransparenz in Fahrschulen“ (Begriff „Fahrschule“ und Preisbezüge im Text nicht vorhanden); „Qualität und Prüfungsreife sichern“ (nur Verkehrssicherheit im Zusammenhang mit begleitetem Fahren, bereits erfasst).
+
+Richtungen ohne Maßnahme: keine.
+Seiten ohne Text: 1, 2 (Titel, Vorwort); ohne Bedeutung für das Thema.

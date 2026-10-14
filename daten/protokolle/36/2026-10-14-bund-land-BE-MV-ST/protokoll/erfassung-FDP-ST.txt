@@ -1,0 +1,89 @@
+{
+  "partei_id": 14,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Ladenöffnungszeitengesetz weitgehend liberalisieren, mehr Sonntags- und Feiertagsöffnungen ermöglichen",
+      "ursachen_ids": [3604],
+      "buendel": "Öffnungszeiten und zeitliche Zugänglichkeit",
+      "zitat": "Wir werden schnellstmöglich die vollständige Liberalisierung des Ladenöffnungszeitengesetzes vorantreiben, die insbesondere eine größtmögliche Ausweitung der Sonntagsöffnungen sowie Öffnungen an Feiertagen ermöglicht.",
+      "seite": 7
+    },
+    {
+      "beschreibung": "Sichere Fahrradabstellanlagen und Ladepunkte an Bahnhöfen, ÖPNV-Knoten und in Ortszentren",
+      "ursachen_ids": [3604],
+      "buendel": "Nahmobilität und öffentlicher Verkehr",
+      "zitat": "Menschen wollen mit dem Rad mobil sein, wir schaffen die Infrastruktur dafür. […] Zur Attraktivität gehören sichere Abstellanlagen und Ladepunkte an Bahnhöfen, ÖPNV-Knoten und in Ortszentren.",
+      "seite": 66
+    },
+    {
+      "beschreibung": "Ortskerne beleben; Innenentwicklung hat Vorrang vor neuem Flächenverbrauch",
+      "ursachen_ids": [3602],
+      "buendel": "Nutzungsmischung und Ansiedlung fördern",
+      "zitat": "Innenentwicklung hat für uns Vorrang vor zusätzlichem Flächenverbrauch: Ortskerne beleben, Brachflächen aktivieren, Wege verkürzen.",
+      "seite": 58
+    },
+    {
+      "beschreibung": "Sicherheitspartnerschaften von Polizei und Ordnungsämtern ausbauen; mehr Polizeipräsenz im öffentlichen Raum",
+      "ursachen_ids": [3603],
+      "buendel": "Sauberkeit, Sicherheit und Instandhaltung",
+      "zitat": "Wir bauen Sicherheitspartnerschaften zwischen Polizei und Ordnungsämtern flächendeckend aus und machen gemeinsame Einsätze zum Regelfall. Klare Zuständigkeiten, feste Absprachen und abgestimmtes Handeln verhindern Kompetenzgerangel, erhöhen die Präsenz im öffentlichen Raum und sorgen dafür, dass staatliche Autorität geschlossen, effizient und für die Bürger sichtbar wahrgenommen wird.",
+      "seite": 47
+    },
+    {
+      "beschreibung": "Waffenverbotszonen im Land abschaffen",
+      "ursachen_ids": [],
+      "ursachen_offen": [3603],
+      "zitat": "Ebenso fordern wir die Abschaffung aller Waffenverbotszonen im Land und damit die Abschaffung der Möglichkeit der anlasslosen Personenkontrollen in diesen.",
+      "seite": 48
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 3603, "name": "Waffenverbotszonen abschaffen", "seite": 48 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "ortskerne beleben", "ursache": 3602, "richtung": "Belebung von Ortskernen" },
+    { "begriff": "ortszentren", "ursache": 3604, "richtung": "Fahrradabstellanlagen in Ortszentren" }
+  ],
+  "stand_im_pdf": "05.06.2026"
+}
+
+--- Protokoll ---
+
+Gelesene Seiten und Kapitel:
+- S. 1–2: Titel, Inhaltsverzeichnis.
+- S. 4–12: Einstieg, Kapitel 1 „Wirtschaft“ (Wirtschaft S. 5–10), „Wohnen und Bauen“ (S. 11–12).
+- S. 47–48: Sicherheit (Polizei, Waffenverbotszonen).
+- S. 49–50: Kommunales (Stichprobe, ohne Bezug).
+- S. 57–58: Landesentwicklung.
+- S. 65–68: Infrastruktur (Straßen-, Rad- und Fußverkehr, ÖPNV, Güterverkehr).
+- Suchfundstellen S. 7, 23, 24, 67 gelesen. S. 23–24 (Kitas) als Fundstelle gelesen, nicht aufgenommen.
+- Nicht gelesen: S. 13–46, 51–56, 59–64, 69 (Energie, Land- und Forstwirtschaft, Bildung, Soziales, Gesundheit, Pflege, Verwaltung, Justiz, Finanzen). Kein Bezug zu Innenstädten, Ortskernen oder Einzelhandel in den Treffern.
+
+Maßnahmen:
+- S. 7 Ladenöffnung: Die Zusage betrifft die Öffnungszeiten von Geschäften allgemein; das Zitat nennt weder Innenstadt noch Einzelhandel (R2). Aufgenommen als 3604, weil Öffnungszeiten der Geschäfte den Gegenstand der Ursache bilden. Grenzfall.
+- S. 58 Ortskerne: Prinzipformulierung („Vorrang“), aber mit der konkreten Nennung „Ortskerne beleben“ (R2). Grenzfall.
+- S. 66 Abstellanlagen: Nur die Stelle mit „Ortszentren“ erfasst. Die übrigen Rad- und Fußverkehr-Stellen (S. 65 Lücken schließen, Kreuzungen, S. 57 Radwegenetz) und ÖPNV-Stellen (S. 57, 67) nennen keine Innenstadt, keinen Ortskern und keinen Einzelhandel. Sie gehören in dasselbe Bündel „Nahmobilität und öffentlicher Verkehr“ und sind dort nicht erfasst (R2, eine Maßnahme je Bündel).
+- S. 47 Polizei: Sicherheitspartnerschaften und Polizeipräsenz im öffentlichen Raum, ohne Innenstadt-Wort. Aufgenommen als 3603 im Bündel „Sauberkeit, Sicherheit und Instandhaltung“. Grenzfall.
+- S. 48 Waffenverbotszonen: Abschaffung ist ein anderer Hebel (Verbot abschaffen) als Polizeipersonal und Präsenz; daher ohne Bündel, unter neue_buendel. Grenzfall, ursachen_offen 3603.
+
+Nicht erfasst:
+- S. 23–24 Kita-Öffnungszeiten („flexible Öffnungszeiten nach tatsächlichem Bedarf“, Betreuungszusammenschlüsse): Betreuungseinrichtungen, keine Geschäfte; kein Bezug zu Geschäftsschließungen.
+- S. 65, 57, 67 Rad-, Fuß- und ÖPNV-Ausbau allgemein (Lücken schließen, 30-Minuten-Erreichbarkeit, Takt, Pünktlichkeit, Bus-Netz, MaaS): kein Innenstadt-, Ortskern- oder Einzelhandelsbezug (R2); nicht als Bündel-Zusatz erfasst.
+- S. 67 „Sauberkeit“: Qualitätskennzahl für SPNV-Fahrzeuge, nicht öffentlicher Raum.
+- S. 11–12 Wohnungsmarkt, Rückbau, Bestandsimmobilien, Modernisierung: Wohnungsmarkt, keine Geschäftsleerstände.
+- S. 6–9 Bürokratieabbau, Gründung, Gewerbesteuer, Steuern, Privatisierung, Verteidigungsindustrie: kein Bezug zu Innenstädten oder Einzelhandel.
+- S. 58 Coworking in Stadt und Land, zentrale Orte als Versorgungsanker: allgemein, ohne Innenstadt-Bezug.
+- S. 49–50 Kommunalfinanzen: kein Bezug.
+
+Richtungen ohne Maßnahme:
+- 3602 Marktprofile und Wettbewerb (Profil der Geschäfte, Einzelhandelskonzept, Zentrenkonzept): nichts gefunden.
+- 3602 Leerstandsmanagement, Zwischennutzung, Innenstadtfonds, Ankermieter, Gründung in Innenstädten: nichts gefunden.
+- 3603 Aufenthaltsqualität, Verkehrsberuhigung, Stadtgrün, Platzgestaltung, Instandhaltung im öffentlichen Raum: nichts gefunden.
+- 3604 Parken und Parkplätze für Innenstädte oder Einzelhandel, Parkgebühren: nichts gefunden (Lkw-Parkplätze S. 68 betreffen Logistik).
+
+Seiten ohne Text: nur S. 1 (Titelseite mit Bild) laut Hinweis; ohne Bedeutung.
+
+Stand: Titelseite nennt „Stand: 05.06.2026“ (Auftrag: 2026-04-25; beschlossen am 25. April 2026).
+
+Prüfung: Die Selbstprüfung (npm run -s entwurf:programm-pruefen) habe ich in dieser Umgebung nicht ausführen können. Die Koordination führt sie aus.

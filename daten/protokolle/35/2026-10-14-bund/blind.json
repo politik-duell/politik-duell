@@ -1,0 +1,147 @@
+{
+  "pruefsumme": "be380610f11ca65036afbe18bcdab99bcb58ac3c41e649317f6692573ae83ad3",
+  "thema": {
+    "id": 35,
+    "name": "Kosten für den Führerschein",
+    "ziel": "Menschen können die Fahrerlaubnis zu bezahlbaren, nachvollziehbaren Kosten und in verlässlich planbaren Abläufen erwerben und sicher fahren lernen."
+  },
+  "ursachen": [
+    {
+      "id": 3501,
+      "beschreibung": "Fahrschule und Führerscheingebühr wurden 2024 durchschnittlich um 5,8 % teurer als im Vorjahr; die Verbraucherpreise insgesamt stiegen um 2,2 %",
+      "ebene": "bund"
+    },
+    {
+      "id": 3502,
+      "beschreibung": "Nicht bestandene Prüfungen führen zu Wiederholungskosten: 2025 wurden 828.324 von 2.042.050 theoretischen und 577.858 von 1.886.133 praktischen Prüfungen nicht bestanden",
+      "ebene": "bund"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        3501,
+        3502
+      ],
+      "text": "Zu 3501 gehören Preise, Gebühren, Wettbewerb und Transparenz bei Fahrschulen und der Fahrerlaubnis (Prüfungsgebühren, Kosten für Auszubildende), zu 3502 Ausbildungs- und Prüfungsanforderungen (Theorie, Praxis, Umfang der Pflichtstunden, Wiederholungen)."
+    },
+    {
+      "nr": 2,
+      "text": "Spritpreise, Kfz-Steuer, Elektroautos und Parkplätze gehören zu Autofahren, Führerschein für Berufe oder Dienste ohne Bezug zum Erwerb der Fahrerlaubnis ist keine Maßnahme dieses Themas. Förderung des Führerscheinerwerbs für bestimmte Gruppen zählt zu 3501."
+    }
+  ],
+  "instrumente": [],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "bund",
+      "beschreibung": "Bürokratie abbauen und die Ausbildung effizient gestalten, damit der Führerschein für junge Menschen bezahlbar bleibt.",
+      "zitat": "Der Führerschein muss für junge Menschen bezahlbar sein. Dafür gilt es, Bürokratie abzubauen und die Ausbildung effizient zu gestalten.",
+      "ursachen_ids": [
+        3501
+      ],
+      "ursachen_offen": [
+        3502
+      ],
+      "pruefsumme": "2be64d5efe61c7c2"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "bund",
+      "beschreibung": "Förderung des Führerscheinerwerbs für Menschen in Ausbildung",
+      "zitat": "Wir wollen für Menschen in Ausbildung auch den Führerscheinerwerb fördern […]",
+      "ursachen_ids": [
+        3501
+      ],
+      "pruefsumme": "3ce6a1026b9b122e"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "bund",
+      "beschreibung": "Fahrausbildung samt Theorieunterricht reformieren, auch mit dem Ziel, die Kosten der Fahrausbildung spürbar zu senken",
+      "zitat": "Vor dem Hintergrund erhöhter Quoten nicht bestandener Prüfungen und steigender Preise werden wir die Fahrausbildung samt Theorieunterricht im Sinne von Verkehrssicherheit und Effizienz reformieren, auch mit dem Ziel, die Kosten der Fahrausbildung spürbar zu senken.",
+      "ursachen_ids": [
+        3501,
+        3502
+      ],
+      "pruefsumme": "2130f16073def857"
+    },
+    {
+      "kennung": "M04",
+      "ebene": "bund",
+      "beschreibung": "Zwangstests für Senioren ablehnen.",
+      "zitat": "Diskriminierende Zwangstests für Senioren lehnen wir ab.",
+      "ursachen_ids": [
+        3502
+      ],
+      "pruefsumme": "44ecccf73af39d6a"
+    },
+    {
+      "kennung": "M05",
+      "ebene": "bund",
+      "beschreibung": "Alle Jugendlichen im 17. Lebensjahr erhalten 500 Euro Guthaben, unter anderem für Führerscheinkosten",
+      "zitat": "Alle jungen Menschen im 17. Lebensjahr sollen daher einen MobilitätsPass mit 500 Euro Guthaben, etwa für Führerscheinkosten, Bahntickets oder Fahrräder, erhalten.",
+      "ursachen_ids": [
+        3501
+      ],
+      "pruefsumme": "7fd460302ebcbea1"
+    },
+    {
+      "kennung": "M06",
+      "ebene": "bund",
+      "beschreibung": "Begleitetes Fahren ab 16 Jahren ermöglichen",
+      "zitat": "In diesem Zusammenhang wollen wir auch das begleitete Fahren bereits ab 16 Jahren ermöglichen.",
+      "ursachen_ids": [
+        3502
+      ],
+      "pruefsumme": "78af0c32ebfe3a4f"
+    },
+    {
+      "kennung": "M07",
+      "ebene": "bund",
+      "beschreibung": "Prüfungsmarkt für weitere Anbieter öffnen, Fahrprüfer ohne Ingenieursstudium weiterbilden, mehr Prüftermine und kürzere Wartezeiten.",
+      "zitat": "Mit der Öffnung des Prüfungsmarktes für weitere Anbieter und einer Weiterbildung zum Fahrprüfer auch ohne Ingenieursstudium wollen wir die Anzahl an Prüfterminen steigern und Wartezeiten deutlich senken.",
+      "ursachen_ids": [
+        3502
+      ],
+      "ursachen_offen": [
+        3501
+      ],
+      "pruefsumme": "52dd7885bbfc5fbd"
+    },
+    {
+      "kennung": "M08",
+      "ebene": "bund",
+      "beschreibung": "Führerschein sowie Lkw- und Bus-Qualifikation günstiger machen: Obergrenze für Theorieunterricht entfällt, Theorie digital, Fahrsimulatoren in der Ausbildung.",
+      "zitat": "Deshalb wollen wir den Führerschein und die Berufskraftfahrerqualifikation (Lkw-Führerschein, Bus-Führerschein) wieder günstiger machen, z. B. durch den Verzicht auf eine Tagesobergrenze für den Theorieunterricht, die Möglichkeit den Theorieunterricht digital zu absolvieren und die Integration von Fahrsimulatoren in der Ausbildung.",
+      "ursachen_ids": [
+        3501
+      ],
+      "ursachen_offen": [
+        3502
+      ],
+      "pruefsumme": "db9c85ff9c9dd174"
+    },
+    {
+      "kennung": "M09",
+      "ebene": "bund",
+      "beschreibung": "Begleitetes Fahren ab 16 Jahren ermöglichen.",
+      "zitat": "Das begleitete Fahren wollen wir ab 16 Jahren ermöglichen – denn frühe Fahrpraxis erhöht nachweislich die Verkehrssicherheit.",
+      "ursachen_ids": [
+        3502
+      ],
+      "pruefsumme": "46b2c2ba461b56e3"
+    },
+    {
+      "kennung": "M10",
+      "ebene": "bund",
+      "beschreibung": "Arbeitgeber sollen einen steuer- und abgabenfreien Führerscheinzuschuss bis 2.000 Euro an Auszubildende und junge Beschäftigte zahlen können",
+      "zitat": "Zudem wollen wir Arbeitgebern ermöglichen, einen Führerscheinzuschuss von bis zu 2.000 Euro steuer- und abgabenfrei an Auszubildende und junge Beschäftigte auszuzahlen.",
+      "ursachen_ids": [
+        3501
+      ],
+      "pruefsumme": "ef3c9c359176cdff"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "blind_pruefsumme": "be380610f11ca65036afbe18bcdab99bcb58ac3c41e649317f6692573ae83ad3",
+  "neue_instrumente": [
+    {
+      "kennung": "I1",
+      "name": "Finanzielle Förderung des Führerscheinerwerbs für junge Menschen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Entlastet einzelne Gruppen bei den Kosten, senkt aber weder Preise noch Wiederholungsprüfungen; ohne mehr Wettbewerb kann ein Zuschuss teilweise in Preisen aufgehen. Bund kann finanzieren, Haushaltsmittel nötig.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I2",
+      "name": "Ausbildung entlasten: digitale Theorie, Simulatoren, keine Tagesgrenze (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Setzt direkt an Ausbildungsaufwand und Kosten an, per Verordnung änderbar. Der Kosteneffekt von Digitaltheorie und Simulatoren ist kaum untersucht; Preise bestimmen weiter die Fahrschulen.",
+      "evidenz": "offen"
+    }
+  ],
+  "zuordnung": [
+    {
+      "kennung": "M01",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Allgemeine Zusage ohne konkrete Schritte; Bürokratieabbau kann Kosten etwas senken, der Effekt auf Fahrschulpreise ist unbestimmt und kaum untersucht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3501
+      ]
+    },
+    {
+      "kennung": "M02",
+      "instrument": "I1",
+      "ursachen": [
+        3501
+      ]
+    },
+    {
+      "kennung": "M03",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Benennt Kosten und Durchfallquoten als Anlass, bleibt aber ohne konkrete Änderungen; Wirkung hängt vom Inhalt der Reform ab. Bund kann die Ausbildungsregeln selbst ändern.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3501,
+        3502
+      ]
+    },
+    {
+      "kennung": "M04",
+      "ursachen": []
+    },
+    {
+      "kennung": "M05",
+      "instrument": "I1",
+      "ursachen": [
+        3501
+      ]
+    },
+    {
+      "kennung": "M06",
+      "ursachen": []
+    },
+    {
+      "kennung": "M07",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Mehr Anbieter und Prüfer können Wettbewerb und Termine verbessern; die Prüfgebühr macht aber nur einen kleinen Teil der Gesamtkosten aus. Wirkung kaum untersucht, Umsetzung braucht Bund-Länder-Abstimmung.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3501
+      ]
+    },
+    {
+      "kennung": "M08",
+      "instrument": "I2",
+      "ursachen": [
+        3501
+      ]
+    },
+    {
+      "kennung": "M09",
+      "ursachen": []
+    },
+    {
+      "kennung": "M10",
+      "instrument": "I1",
+      "ursachen": [
+        3501
+      ]
+    }
+  ]
+}
