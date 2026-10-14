@@ -177,6 +177,7 @@ function Duell({ runde, spieler }: { runde: RundenErgebnis; spieler: [Spieler, S
   const ursachenIds =
     runde.ursachen_ids ?? [...new Set([...a.treffer, ...b.treffer].flatMap((t) => t.ursachen_ids))]
   const ursacheText = (id: number) => ursachen.find((u) => u.id === id)?.beschreibung ?? 'Ursache'
+  const alltagText = (id: number) => ursachen.find((u) => u.id === id)?.alltag ?? null
   const punkteVon = (e: ParteiErgebnis, id: number) => (e.abdeckung ? (wertungFuer(e, id)?.punkte ?? 0) : null)
   const leere = runde.ergebnisse!.map((e) => ({ e, leer: ohneTreffer(e, landName) })).filter((x) => x.leer)
 
@@ -205,9 +206,11 @@ function Duell({ runde, spieler }: { runde: RundenErgebnis; spieler: [Spieler, S
                     <span className="duell-ursache">
                       <span>
                         {ursacheText(id)}
-                        {/* Woran die KI die Ursache erkannt hat – zum Nachprüfen der Zuordnung. */}
-                        {runde.ursachen_belege?.[id] && (
+                        {/* Was die Person bestätigt hat (docs/plan-zuordnung.md); ältere Runden: woran die KI sie erkannte. */}
+                        {runde.ursachen_belege?.[id] ? (
                           <small className="duell-beleg">Deine Worte: „{runde.ursachen_belege[id]}“</small>
+                        ) : (
+                          alltagText(id) && <small className="duell-beleg">Von dir bestätigt: „{alltagText(id)}“</small>
                         )}
                       </span>
                     </span>

@@ -39,6 +39,15 @@ function forderungAntwort(themaName: string | null): string {
   )
 }
 
+/** Nach „Nichts davon passt“: sagen, dass dieser Teil des Themas noch fehlt, und zu einem neuen Problem einladen. */
+function passtNichtAntwort(themaName: string | null): string {
+  return (
+    'Danke – das ist ' +
+    (themaName ? `beim Thema „${themaName}“ ` : '') +
+    'noch nicht erfasst. Wir sehen es uns an und ergänzen fehlende Ursachen. Magst du ein anderes Problem nennen?'
+  )
+}
+
 /**
  * Schalter „nur Alltagsprobleme“ fürs Zufallsbeispiel: gilt für alle Runden bis zum Neuladen. Bewusst nicht im
  * Browser gespeichert – sonst bräuchte es einen Eintrag in der Datenschutzerklärung (§ 25 TDDDG).
@@ -136,8 +145,11 @@ export function Runde({
   const [eingabe, setEingabe] = useState('')
   const [denkt, setDenkt] = useState(false)
   const [fehler, setFehler] = useState<string | null>(null)
-  /** Thema, dessen Ursachen gerade zum Antippen angeboten werden (bei einer offenen Nachfrage). */
-  const [auswahlThema, setAuswahlThema] = useState<number | null>(null)
+  /**
+   * Bestätigung (docs/plan-zuordnung.md): das Thema, dessen Ursachen gerade zum Antippen stehen – mit den von der KI
+   * vorgeschlagenen Ursachen, wenn sie sicher war, und weiteren Themen, die sie in Frage kommend fand.
+   */
+  const [angebot, setAngebot] = useState<{ thema_id: number; vorauswahl: number[]; kandidaten: number[] } | null>(null)
   /**
    * Neutrale Zusammenfassung der KI zu einem geschilderten Problem – für die Anzeige nach einer Auswahl.
    * Bei einer Forderung bleibt sie leer: Dann steht das Thema mit den gewählten Ursachen als Problem da.
@@ -185,7 +197,7 @@ export function Runde({
     setBeispiel(null)
     setHinweis(null)
     setFehler(null)
-    setAuswahlThema(null)
+    setAngebot(null)
     setHaltung(null)
     setDenkt(true)
     let analyse: AnalyseAntwort
@@ -235,7 +247,11 @@ export function Runde({
     // zusätzlich dessen Ursachen zum Antippen (nicht bei Pauschalurteilen über Gruppen).
     if (analyse.nachfrage) {
       setVerlauf([...neu, { von: 'ki', text: analyse.nachfrage }])
-      setAuswahlThema(analyse.pauschal ? null : analyse.thema_id)
+      setAngebot(
+        analyse.pauschal || analyse.thema_id === null
+          ? null
+          : { thema_id: analyse.thema_id, vorauswahl: [], kandidaten: analyse.thema_kandidaten ?? [] },
+      )
       setZusammenfassung(analyse.typ === 'problem' ? analyse.zusammenfassung || null : null)
     } else if (analyse.typ === 'wert' || analyse.typ === 'forderung') {
       // Runde ohne Wertung – ein neues Problem kann genannt werden.
@@ -260,10 +276,45 @@ export function Runde({
             (analyse.typ === 'wert' ? WERT_ANTWORT : analyse.pauschal ? PAUSCHAL_ANTWORT : forderungAntwort(thema)),
         )
       }
+    } else if (analyse.typ === 'problem' && analyse.thema_id !== null && analyse.ursachen_ids.length > 0) {
+      // Gewertet wird erst, was die Person bestätigt: die Ursachen der KI vorausgewählt (sie war sicher).
+      setAngebot({ thema_id: analyse.thema_id, vorauswahl: analyse.ursachen_ids, kandidaten: [] })
+      setZusammenfassung(analyse.zusammenfassung || null)
     } else {
       onErgebnis({ ...werteAus(analyse, nr, sprecher, spieler, daten, forderung ?? undefined, rundenKarten), eingaben: spielerTexte(neu) })
     }
     setKarten(rundenKarten)
+  }
+
+  /**
+   * „Nichts davon passt“: Runde ohne Wertung, das Gesagte geht zur Durchsicht (review_eingaben, 30 Tage), damit
+   * fehlende Ursachen ergänzt werden können. Danach kann ein neues Problem genannt werden.
+   */
+  async function passtNicht(themaId: number) {
+    if (denkt) return
+    const gespraech = verlauf.length ? verlauf : vorher
+    setFehler(null)
+    setDenkt(true)
+    try {
+      await analysiere(daten, {
+        verlauf: gespraech,
+        rolle: aktiv.rolle,
+        land: aktiv.land,
+        parteien: [spieler[0].partei.id, spieler[1].partei.id],
+        auswahl: { thema_id: themaId, ursachen_ids: [], passt_nicht: true },
+      })
+    } catch (err) {
+      setFehler(err instanceof AnalyseFehler ? err.message : 'Das hat gerade nicht geklappt.')
+      return
+    } finally {
+      setDenkt(false)
+    }
+    const name = daten.themen.find((t) => t.id === themaId)?.name
+    setVerlauf([])
+    setVorher(gespraech)
+    setAngebot(null)
+    setZusammenfassung(null)
+    setHinweis(passtNichtAntwort(name ?? null))
   }
 
   /** Angetippte Ursachen werten: ohne KI, die Edge Function speichert die Runde. */
@@ -297,7 +348,7 @@ export function Runde({
     })
   }
 
-  const angebot = daten.themen.find((t) => t.id === auswahlThema) ?? null
+  const angebotThema = angebot ? (daten.themen.find((t) => t.id === angebot.thema_id) ?? null) : null
 
   return (
     <main className="seite runde">
@@ -338,19 +389,27 @@ export function Runde({
           haltungId={haltung}
           onThema={(id) => {
             // Ein Tipp füllt das Eingabefeld nicht vor, sondern zeigt die Ursachen des Themas zum Antippen (A2).
-            setAuswahlThema(id)
+            setAngebot({ thema_id: id, vorauswahl: [], kandidaten: [] })
             setZusammenfassung(null)
           }}
         />
       )}
 
-      {angebot && (
+      {angebot && angebotThema && (
         <UrsachenAuswahl
-          key={`${angebot.id}-${verlauf.length}`}
-          thema={angebot}
+          key={`${angebotThema.id}-${verlauf.length}-${angebot.vorauswahl.join(',')}`}
+          thema={angebotThema}
+          themen={daten.themen}
           ursachen={daten.ursachen}
+          vorauswahl={angebot.vorauswahl}
+          kandidaten={angebot.kandidaten}
           gesperrt={denkt}
-          onWaehlen={(ids) => auswaehlen(angebot.id, ids)}
+          onWaehlen={(ids) => auswaehlen(angebotThema.id, ids)}
+          // Ein anderes Thema hat keinen Vorschlag der KI: ohne Vorauswahl; die bisherigen Themen bleiben zur Wahl.
+          onThema={(id) =>
+            setAngebot({ thema_id: id, vorauswahl: [], kandidaten: [angebotThema.id, ...angebot.kandidaten].filter((k) => k !== id) })
+          }
+          onPasstNicht={() => passtNicht(angebotThema.id)}
         />
       )}
 

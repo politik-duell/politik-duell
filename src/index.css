@@ -2853,3 +2853,23 @@ textarea {
 .gespraechskarte .haltungskarte > h3 {
   display: none;
 }
+
+/* Bestätigung vor der Wertung (UrsachenAuswahl): Thema mit „anderes Thema“, Knöpfe nebeneinander. */
+.ursachen-auswahl .ursachen-thema {
+  margin: 0 0 0.5rem;
+}
+.ursachen-auswahl .ursachen-thema .knopf-link,
+.ursachen-auswahl .ursachen-knoepfe .knopf-link {
+  display: inline;
+  margin: 0;
+}
+.ursachen-themawahl select {
+  width: 100%;
+  margin: 0 0 0.6rem;
+}
+.ursachen-knoepfe {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 16px;
+}

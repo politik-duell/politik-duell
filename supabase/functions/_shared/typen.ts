@@ -232,6 +232,8 @@ export interface AnalyseAntwort {
    * hat: bis zu zwei weitere Themen, die in Frage kommen (docs/plan-zuordnung.md). Sonst fehlend.
    */
   thema_kandidaten?: number[]
+  /** Antwort auf „Nichts davon passt“: Thema ohne Ursachen, ohne Wertung („noch nicht erfasst“). */
+  passt_nicht?: boolean
   /** Bei `problem` höchstens MAX_AUSWAHL, jede durch Wörter aus der Schilderung gestützt (siehe `ursachen_belege`). */
   ursachen_ids: number[]
   /**
@@ -291,7 +293,13 @@ export const MAX_AUSWAHL = 3
 
 export interface UrsachenAuswahl {
   thema_id: number
+  /** Leer genau dann, wenn `passt_nicht`. */
   ursachen_ids: number[]
+  /**
+   * „Nichts davon passt“ in der Bestätigung (docs/plan-zuordnung.md): Runde ohne Wertung, der Wortlaut geht in
+   * `review_eingaben` – so zeigt sich, welche Ursachen im Katalog fehlen.
+   */
+  passt_nicht?: boolean
 }
 
 export interface Nachricht {

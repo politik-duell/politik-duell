@@ -134,8 +134,11 @@ Deno.serve(async (req) => {
       if (thema) antwort = mitInstrument(antwort, await erkenneInstrument(thema, anfrage.verlauf, anfrage.land, testphase))
     }
 
-    // Abgeschlossene Runde anonym speichern (nur die neutrale Zusammenfassung). Mit Nachfrage ist sie nicht abgeschlossen.
-    if (!antwort.nachfrage) {
+    // Abgeschlossene Runde anonym speichern (nur die neutrale Zusammenfassung). Mit Nachfrage ist sie nicht
+    // abgeschlossen – und ebenso nicht, wenn die KI Ursachen vorschlägt: Gewertet wird erst, was die Person in der
+    // App bestätigt (docs/plan-zuordnung.md); diese Runde speichert dann die Anfrage mit `auswahl`.
+    const vorschlag = !anfrage.auswahl && antwort.typ === 'problem' && antwort.ursachen_ids.length > 0
+    if (!antwort.nachfrage && !vorschlag) {
       // Der Originaltext wird geprüft; gespeichert wird er nur bei Runden ohne Wertung (review_eingaben, 30 Tage).
       const original = anfrage.verlauf.filter((n) => n.von === 'spieler').map((n) => n.text)
       await speichereRunde(antwort, anfrage.parteien, anfrage.rolle, anfrage.land, testphase, original, parteien, ursachen)
@@ -260,6 +263,15 @@ async function speichereRunde(
     await Promise.all([
       db.from('runden').insert({ ...basis, status: 'forderung', thema_id: antwort.thema_id, ...(antwort.instrument_id ? { instrument_id: antwort.instrument_id } : {}) }),
       merkeOhneWertung('forderung', original, antwort.thema_id, antwort.zusammenfassung),
+    ])
+    return
+  }
+
+  // „Nichts davon passt“: Thema bekannt, Ursache nicht erfasst – ungeprüft mit Thema (Lücken: „ursache_fehlt“).
+  if (antwort.passt_nicht && antwort.thema_id !== null) {
+    await Promise.all([
+      db.from('runden').insert({ ...basis, status: 'ungeprueft', thema_id: antwort.thema_id }),
+      merkeOhneWertung('ungeprueft', original, antwort.thema_id, antwort.zusammenfassung),
     ])
     return
   }

@@ -19,6 +19,12 @@ const ARTEN: { art: LueckenArt; titel: string; was: string; schritt: string }[] 
     schritt: '/thema-anlegen',
   },
   {
+    art: 'ursache_fehlt',
+    titel: 'Thema erkannt, keine passende Ursache',
+    was: 'Runden, in denen jemand bei der Bestätigung „Nichts davon passt“ gewählt hat – der Wortlaut steht 30 Tage im Reiter „Ohne Wertung“.',
+    schritt: 'Ursache ergänzen (/thema-erfassen <ID>)',
+  },
+  {
     art: 'forderung_ohne_loesungsweg',
     titel: 'Forderung ohne erfassten Lösungsweg',
     was: 'Forderungen zu einem bekannten Thema, für die keine Forderungskarte gezeigt werden konnte.',
