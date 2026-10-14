@@ -1,0 +1,50 @@
+{
+  "partei_id": 15,
+  "land": "MV",
+  "massnahmen": [
+    {
+      "beschreibung": "Das Sonderrecht für Politikerbeleidigungen abschaffen; Staatsanwaltschaften und Gerichte sollen das Strafrecht konsequent anwenden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2501],
+      "zitat": "Wir setzen uns dafür ein, dass die Staatsanwaltschaften und Gerichte das Strafrecht konsequent anwenden und dabei jeder Eindruck einer politisch motivierten Gewichtung vermieden wird. Das Sonderrecht für Politikerbeleidigungen ist wieder abzuschaffen.",
+      "seite": 43
+    },
+    {
+      "beschreibung": "Mit öffentlichen Mitteln finanzierte Anzeigeportale gegen Hass lehnen; Haltung ohne konkrete Handlung (Grenzfall).",
+      "ursachen_ids": [],
+      "ursachen_offen": [2501],
+      "zitat": "Mit Steuern finanzierte Anschwärzportale, die die Staatsanwaltschaften mit Anzeigen überfrachten, lehnen wir ab.",
+      "seite": 43
+    }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "anschwärzportal", "ursache": 2501, "richtung": "Meldeportale ablehnen" },
+    { "begriff": "politikerbeleidigung", "ursache": 2501, "richtung": "Strafverfolgung von Beleidigung" }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 2503,
+      "seiten": [43, 44, 46, 47, 53],
+      "grund": "Kapitel Freiheitsland (S. 44–46) und Fundstellen gelesen; nichts zu Medienkompetenz, Gesprächskultur oder Moderation. Demokratieklausel und Förderstopp (S. 46–47) betreffen Förderpolitik gegen Extremismus, nicht Prävention von Hass im Netz."
+    }
+  ]
+}
+
+--- Protokoll (Thema 25, AfD MV) ---
+
+Gelesen: Inhaltsverzeichnis (S. 2–5); Kapitel „Sicherheitsland MV“ (S. 36–43) und „Freiheitsland MV“ (S. 44–46) vollständig; Ordnungsland S. 47 und Fundstelle S. 53 vollständig. S. 1 ohne Text (Titelseite).
+
+Nicht erfasst:
+- S. 43: „Dem Opferschutz ist ein höherer Stellenwert zuzumessen. Mehrfachvernehmungen sind tunlichst durch eine erleichterte Verwertung früherer Vernehmungen zu erleichtern.“ – Opferschutz im Strafverfahren, ohne Bezug zu Hass oder Anfeindung im Netz.
+- S. 44: „Wir ermutigen die Staatsanwaltschaften, in einfach gelagerten Fällen von der Möglichkeit des beschleunigten Verfahrens mehr Gebrauch zu machen.“ – allgemeines Strafverfahren, kein Hass-Bezug.
+- S. 43: Verbindungsdaten/Quick-Freeze, KI-Auswertung, Kinderpornografie – allgemeine Strafverfolgung bzw. Sicherheit, kein Hass-Bezug (R2).
+- S. 37 und 41: Cybercrime-Experten beim LKA, Cybercrime als Schwerpunkt des Verfassungsschutzes – Sicherheit (R2: Betrug/Datenmissbrauch).
+- S. 47: Förderstopp linksradikaler Netzwerke, Strafbarkeit – Extremismus (R2).
+- S. 53: Meldestellen von Islamverbänden für radikale und extremistische Tendenzen – Extremismus, keine Meldung von Hass gegen Betroffene (R2).
+- S. 40: Angriffe auf Einsatzkräfte, Strafrahmen ausschöpfen – Gewalt offline, kein Netzbezug.
+- S. 64: Schutz des medizinischen Personals vor Gewalt („bedroht, beleidigt“) – Gewalt durch Patienten, kein Bezug zu Online-Anfeindung.
+- S. 37: Entgegentreten unwahrer Behauptungen über die Polizei – kein Bezug zu Hass im Netz.
+
+Richtungen ohne Maßnahme: 2501 „Meldewege und Hilfe für Betroffene ausbauen“ (keine Beratung oder Hilfe für Betroffene von Online-Hass gefunden; S. 53 ist Extremismus); 2503 „Prävention, Medienkompetenz und Gesprächskultur“ und „Moderation und Gestaltung der Plattformen“ (keine Fundstelle).
+
+Grenzfälle: Beide Maßnahmen auf S. 43 sind Strafverfolgungs- bzw. Meldeportal-Aussagen ohne ausdrücklichen Netzbezug; die zweite ist eine Haltung („lehnen wir ab“), als offen markiert.

@@ -1,0 +1,44 @@
+{
+  "partei_id": 12,
+  "land": "MV",
+  "massnahmen": [
+    {
+      "beschreibung": "Digitales Gewaltschutzgesetz mit wirksamen Betroffenenrechten und Schließung von Strafverfolgungslücken im Bund",
+      "ursachen_ids": [2501],
+      "zitat": "Wir setzen uns für die Einführung eines digitalen Gewaltschutzgesetzes mit wirksamen Betroffenenrechten und Schließung bestehender Strafverfolgungslücken im Bund ein.",
+      "seite": 38
+    },
+    {
+      "beschreibung": "Kampagnen gegen Hass im Netz sowie gegen Fake News und Falschinformationen, dazu Förderung von Medienkompetenz",
+      "ursachen_ids": [2503],
+      "zitat": "Dem Hass begegnen wir überall – auch im Netz – mit Kampagnen gegen Fake News und Fehlinformationen sowie landesweiter Förderung von Medienkompetenz.",
+      "seite": 44
+    },
+    {
+      "beschreibung": "Onlineangebote der Landeszentrale für politische Bildung ausbauen, um Herausforderungen für die Demokratie im Netz zu begegnen",
+      "ursachen_ids": [],
+      "ursachen_offen": [2503],
+      "zitat": "Um den Herausforderungen für unsere Demokratie im Netz besser begegnen zu können, wollen wir die Onlineangebote der Landeszentrale für politische Bildung ausbauen.",
+      "seite": 43
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 2501, "seiten": [38, 47, 58, 59, 72], "grund": "Gewalthilfe und Beratungsstellen (S. 38) betreffen häusliche und sexualisierte Gewalt, nicht Hass im Netz; Opferschutzfonds und Adhäsionsverfahren (S. 59) nur Prüfaufträge; Staatsanwaltschaft (S. 58, 72) nur Personal und Lage ohne Online-Bezug; Cybercrime-Polizei (S. 47) ohne Hass-Bezug (R2)." }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "gewaltschutzgesetz", "ursache": 2501, "richtung": "Strafverfolgung von Hass und Bedrohung im Netz" },
+    { "begriff": "fake news", "ursache": 2503, "richtung": "Prävention, Medienkompetenz und Gesprächskultur" }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Einleitung S. 2–6 nur überflogen (keine Fundstellen übernommen). Kapitel Jugend S. 35–37, Demokratie und Zusammenhalt S. 38–45 (Fundstellen S. 39, 44 vollständig), Polizei und Sicherheit S. 46–48 (Fundstellen S. 46–48), Digitales und Justiz S. 56–60 (Fundstellen S. 58, 59), Medienbildung in Schule S. 67 und 69 (Fundstellen), Justiz und Wissenschaft S. 72 (Fundstelle). Das Kapitel Kultur (S. 78) und Verbraucherschutz (S. 91) nur als Fundstelle ohne Online-Bezug. S. 1 und 95 ohne Text.
+
+Richtungen ohne Maßnahme: „Meldewege und Hilfe für Betroffene ausbauen“ (2501, 0 Treffer): im Text kein Meldeweg und keine Online-Beratung gefunden. Die Strafverfolgung-Richtung (2501) ist mit dem digitalen Gewaltschutzgesetz erfasst. Die Richtung „Moderation und Gestaltung der Plattformen“ (2503, 0 Treffer) und die Plattformpflichten (2502, nicht im Auftrag) ohne Fundstelle.
+
+Grenzfälle (ursachen_offen): Onlineangebote der Landeszentrale für politische Bildung (S. 43, 2503): Ziel „Demokratie im Netz“, ohne ausdrücklichen Bezug zu Hass.
+
+Nicht aufgenommen: S. 39 „Dem Hassdiskurs und Hetze in sozialen Medien treten wir entschieden entgegen, stärken faktenbasierte Aufklärung“ (gleicher Hebel wie S. 44; einmal erfasst). S. 44, 67 und 69 Medienkompetenz in Schule und Bildung (gleicher Hebel wie S. 44; allgemein, ohne Hass-Bezug). S. 42 „Hetze … bedrohen“ (Bekenntnis). S. 43 Landesprogramm „Demokratie und Toleranz“ fortschreiben (allgemein gegen Extremismus, ohne Online-Bezug). S. 47 Aufbau polizeilicher Fähigkeiten im digitalen Raum und sozialen Medien (Cybercrime und Kinderpornografie, kein Hass-Bezug, R2). S. 48 Schutz von Beschäftigten vor Anfeindungen (offline). S. 38 Gewalthilfegesetz und Frauenschutzhäuser (häusliche Gewalt, nicht online). S. 59 Opferschutzfonds und Adhäsionsverfahren (nur Prüfauftrag). S. 72 Staatsanwaltschaft Nachwuchs (prüfen).
+
+Seiten ohne Text: 1 und 95 (Titel und Schluss), keine Rolle gespielt.

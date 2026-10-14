@@ -1,0 +1,106 @@
+{
+  "partei_id": 13,
+  "land": "BE",
+  "massnahmen": [
+    {
+      "beschreibung": "Unabhängige Beschwerdestelle gegen Diskriminierung an Schulen, eingerichtet unter dem Dach der LADG-Ombudsstelle",
+      "ursachen_ids": [2302],
+      "zitat": "Unter dem Dach der LADG-Ombudsstelle wird eine unabhängige Beschwerdestelle gegen Diskriminierung an Schulen eingerichtet.",
+      "seite": 136
+    },
+    {
+      "beschreibung": "Bedarfsgerechte, praxisnahe und qualitätsgesicherte Fortbildungen für pädagogisches Personal, schulweit umgesetzt und evaluiert",
+      "ursachen_ids": [2302],
+      "zitat": "Wir werden für bedarfsgerechte, praxisnahe und qualitätsgesicherte Fortbildungsangebote sorgen, die fachbereichs- und schulweit implementiert und evaluiert werden.",
+      "seite": 194
+    },
+    {
+      "beschreibung": "Klassenräte an allen Schulen und in allen Klassen verbindlich umsetzen",
+      "ursachen_ids": [2301],
+      "zitat": "Wir sorgen dafür, dass die gesetzlich verankerten Klassenräte auch in allen Schulen und Klassen verbindlich umgesetzt werden",
+      "seite": 185
+    },
+    {
+      "beschreibung": "Queere Bildungsprojekte und Präventionsangebote gegen Diskriminierung als feste Angebote an Schulen etablieren und ausbauen",
+      "ursachen_ids": [2301],
+      "zitat": "Die ideologischen Angriffe […] auf queere Bildung und Bildungsprojekte […] weisen wir entschieden zurück. Wir halten diese Projekte auch im Sinne der Prävention für zentral, um Akzeptanz, Diskriminierungssensibilität und Respekt unter Schüler*innen zu befördern, und werden sie weiter ausbauen und fest als Angebote an den Berliner Schulen etablieren.",
+      "seite": 193
+    },
+    {
+      "beschreibung": "Einheitliche, LADG-konforme Vorgaben für die inhaltliche Ausgestaltung von Schulordnungen an Berliner Schulen",
+      "ursachen_ids": [],
+      "ursachen_offen": [2301],
+      "zitat": "[…] Dazu gehören einheitliche Vorgaben zur inhaltlichen Ausgestaltung von Schulordnungen an Berliner Schulen, die LADG-konform sind.",
+      "seite": 140
+    },
+    {
+      "beschreibung": "Verlässliche Betreuung in der Grundschule um mindestens eine Stunde bis 14:30 Uhr verlängern, mit Lernbegleitung, damit keine Hausaufgaben zu Hause nötig sind",
+      "ursachen_ids": [2304],
+      "zitat": "Wir Grüne verlängern die Zeiten der verlässlichen Betreuung auch für Kinder ohne Hortvertrag in der Grundschule um mindestens eine Stunde auf 14:30 Uhr. In dieser Zeit sollen Kinder Gelerntes mit professioneller Begleitung vertiefen können, sodass keine weiteren Aufgaben zu Hause erledigt werden müssen.",
+      "seite": 191
+    },
+    {
+      "beschreibung": "Gemeinschaftsschulen berlinweit verdoppeln, um Schulstress zu verringern",
+      "ursachen_ids": [2304],
+      "zitat": "LÄNGERES GEMEINSAMES LERNEN FÜR WENIGER SCHULSTRESS […] Gemeinschaftsschulen sind die Schulen der Zukunft. Wir Grüne wollen ihre Zahl in Berlin verdoppeln.",
+      "seite": 220
+    },
+    {
+      "beschreibung": "Übergang von der Grund- zur Oberschule reformieren, damit Schüler*innen der Klassen 4 bis 6 mit weniger Druck zur Schule gehen",
+      "ursachen_ids": [2304],
+      "zitat": "Den Übergang auf die Oberschule werden wir reformieren und gerechter gestalten, sodass Schüler*innen der 4., 5. und 6. Klassen mit weniger Druck zur Schule gehen können.",
+      "seite": 188
+    },
+    {
+      "beschreibung": "Mentale Gesundheit in Schulen stärken: Hilfesysteme verknüpfen, Aufklärung fördern, Wohlbefinden als Qualitätsmerkmal festlegen",
+      "ursachen_ids": [2304],
+      "zitat": "Darüber hinaus nehmen wir die mentale Gesundheit stärker in den Blick, indem wir Hilfesysteme besser miteinander verknüpfen, Aufklärung in den Schulen fördern und das Wohlbefinden der Schüler*innen als Qualitätsmerkmal in der Evaluation und Schulentwicklung festlegen.",
+      "seite": 192
+    },
+    {
+      "beschreibung": "Übergang zu zeitgemäßen Prüfungsformaten und kompetenzbasiertem Lernfeedback statt Ziffernoten",
+      "ursachen_ids": [],
+      "ursachen_offen": [2304],
+      "zitat": "Zu einer modernen Pädagogik gehört perspektivisch auch der Übergang zu zeitgemäßen Prüfungsformaten und kompetenzbasiertem Lernfeedback statt Ziffernoten.",
+      "seite": 187
+    },
+    {
+      "beschreibung": "Lehrkräfte entlasten durch systematische Arbeitszeiterfassung und ein neues Arbeitszeitmodell",
+      "ursachen_ids": [],
+      "ursachen_offen": [2304],
+      "zitat": "Deshalb wollen wir Lehrkräfte entlasten, indem wir ihre Arbeitszeit systematisch erfassen und perspektivisch ein neues Arbeitszeitmodell entwickeln",
+      "seite": 193
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 2301, "name": "Präventionsangebote gegen Ausgrenzung", "seite": 193 },
+    { "ursache": 2304, "name": "Gemeinschaftsschulen verdoppeln", "seite": 220 },
+    { "ursache": 2304, "name": "Übergang Grund- zu Oberschule reformieren", "seite": 188 },
+    { "ursache": 2304, "name": "Prüfungsformate statt Ziffernoten", "seite": 187 },
+    { "ursache": 2304, "name": "Lehrkräfte-Arbeitszeitmodell", "seite": 193 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "Klassenräte", "ursache": 2301, "richtung": "Klassenklima stärken (Klassenrat; Suche fand wegen Leerzeichen im Text nichts)" },
+    { "begriff": "Hausaufgabenstress", "ursache": 2304, "richtung": "Belastung reduzieren" },
+    { "begriff": "Ziffernoten", "ursache": 2304, "richtung": "Prüfungsdruck verringern" }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 2301, "seiten": [187], "grund": "Ziel „soziales Lernen … vermitteln“ ohne konkrete Handlung; gleichartig zum Klassenrat, nicht zusätzlich aufgenommen." },
+    { "ursache": 2302, "seiten": [189, 190, 204], "grund": "Schulsozialarbeit, Schulstationen und Schulpsychologie: nach R2 nur zu 2301/2302, wenn das Zitat Mobbing, Gewalt oder Konflikte nennt; die Stellen nennen das nicht." },
+    { "ursache": 2302, "seiten": [188], "grund": "Fortbildung und Beratung für inklusive Beschulung: gleiches Bündel wie die aufgenommene Fortbildung, dort nur eine Maßnahme; Bezug zu Mobbing oder Eingreifen fehlt." },
+    { "ursache": 2302, "seiten": [190, 193], "grund": "Feedback-Strukturen für Lehrkräfte bzw. Teams aus verschiedenen Professionen: kein Bezug zu Mobbing oder zum Eingreifen von Lehrkräften." },
+    { "ursache": 2304, "seiten": [192], "grund": "Schulstart später „werben“: Werbung in Gremien, keine Maßnahme gegen Schulbelastung im engeren Sinn; Biorhythmus-Begründung betrifft Lernen, nicht Druck." }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis (S. 4–5); Kapitel 5.2 „Gerechte Bildungschancen – Schule neu denken“ (S. 185–194); S. 204 (psychische Gesundheit, Schulpsychologie); S. 220–221 (Gemeinschaftsschulen); Kapitel 4.2 „Berlin gegen Diskriminierung“ (S. 134–137) und S. 140 (Schulordnungen). Die übrigen Fundstellen (S. 14–125 außerhalb Schule, S. 131–133, 164, 172–176, 213–214, 223–253) habe ich anhand der Auszüge im Auftrag als nicht schulbezogen geprüft.
+
+Nicht erfasst: siehe nicht_erfasst oben. Zusätzlich: S. 186 Problem- und Lagebeschreibung (Lehrkräftemangel, Stress) ohne eigene Zusage; S. 186 und S. 193 multiprofessionelle Teams (Personal, kein Bezug zu Mobbing oder Druck) – nicht aufgenommen.
+
+Gleichartige Stellen (nicht zusätzlich erfasst): S. 193 unabhängige Beschwerdestelle (UBS) als Behörde – gleiches Bündel wie S. 136, dort die schulbezogene Stelle gewählt. S. 193 Fortbildungsangebote in diskriminierungskritischer Schulentwicklung – gleiches Bündel wie S. 194; konkretere Stelle gewählt.
+
+Richtungen ohne Maßnahme: keine Richtung der Ursachen 2301, 2302, 2304 ohne Fund; Prüfungsbezug über Bündel „Prüfungsdruck“ (ohne Treffer) durch S. 187 abgedeckt.
+
+Seiten ohne Text: keine der Pflichtstellen betroffen.

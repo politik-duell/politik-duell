@@ -1,0 +1,94 @@
+{
+  "partei_id": 12,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Digitales Gewaltschutzgesetz: Betroffene digitaler Gewalt sollen ihre Rechte durchsetzen können; Täter-Accounts sollen leichter gesperrt werden.",
+      "ursachen_ids": [2501],
+      "zitat": "Wir wollen konsequent auch gegen digitale Gewalt vorgehen. Dazu schaffen wir ein digitales Gewaltschutzgesetz. […] Zudem sollen die Täter-Accounts einfacher gesperrt werden können. Versehen mit einem Verbandsklagerecht sollen Rechte der Betroffenen effektiv durchgesetzt werden können.",
+      "seite": 44
+    },
+    {
+      "beschreibung": "Zentralstelle für strafbare Inhalte im Internet beim BKA ausbauen, um Online-Hasskriminalität effektiver zu verfolgen.",
+      "ursachen_ids": [2501],
+      "zitat": "Hasskriminalität im Internet und gezielte Desinformationskampagnen gefährden unsere Demokratie. Wir werden konsequent dagegen vorgehen und die Zentralstelle für strafbare Inhalte im Internet beim Bundeskriminalamt weiter ausbauen, um die Verfolgung von Online-Hasskriminalität effektiver zu gestalten.",
+      "seite": 48
+    },
+    {
+      "beschreibung": "Log-in-Falle: IP-Adressen bei verdächtigen Konten erfassen, um über Justiz-Schnittstellen Stammdaten zu ermitteln.",
+      "ursachen_ids": [2501],
+      "ursachen_offen": [2502],
+      "zitat": "Dabei gewährleisten wir den Schutz der Daten der Nutzerinnen und Nutzer, stärken die IT-Sicherheitsmaßnahmen der Unternehmen und ihre Verantwortung im Kampf gegen Hass und Hetze im Netz. Gleichzeitig schaffen wir damit eine bessere Grundlage für die wirksame Strafverfolgung bei konkreten Tatverdachten. Ergänzend setzen wir dabei auf die Log-in-Falle, die bei der Anmeldung an einem verdächtigen Benutzerkonto die IP-Adresse erfasst, wodurch per Justiz-Schnittstellen Stammdaten ermittelt werden können.",
+      "seite": 45
+    },
+    {
+      "beschreibung": "Plattformbetreiber verpflichten, illegale Inhalte zu entfernen.",
+      "ursachen_ids": [2502],
+      "zitat": "Wir setzen klare Regeln zur Bekämpfung von Hasskriminalität und Netzstraftaten um. Plattformbetreiber werden verpflichtet, illegale Inhalte zu entfernen […]",
+      "seite": 45
+    },
+    {
+      "beschreibung": "Plattformen verpflichten, ihre Algorithmen offenzulegen und auf diskriminierende oder manipulative Praktiken zu prüfen.",
+      "ursachen_ids": [2503],
+      "ursachen_offen": [2502],
+      "zitat": "Plattformen sollen verpflichtet werden, ihre Algorithmen und Entscheidungsprozesse zur Inhaltsdarstellung offenzulegen und auf diskriminierende oder manipulative Praktiken zu prüfen.",
+      "seite": 50
+    },
+    {
+      "beschreibung": "Antidiskriminierungsstelle stärken und Beratungsangebote für Betroffene ausbauen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2501],
+      "zitat": "Wir wollen die Antidiskriminierungsstelle des Bundes weiter stärken und zivilgesellschaftliche Beratungsangebote ausbauen, damit Betroffene gezielte Unterstützung erhalten.",
+      "seite": 41
+    },
+    {
+      "beschreibung": "Datenschutz für Betroffene von Hassdelikten: Wohnanschrift soll im Strafverfahren nicht mehr durch Akteneinsicht offengelegt werden müssen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2501],
+      "zitat": "Wir verbessern den Datenschutz bei Hassdelikten. Im Strafverfahren soll die Wohn- oder Aufenthaltsanschrift künftig nicht mehr durch Akteneinsicht offengelegt werden müssen, um Betroffene besser zu schützen.",
+      "seite": 48
+    },
+    {
+      "beschreibung": "Strafrecht gegen Hetze überarbeiten: Schutzlücken bei menschenverachtender Hetze schließen, Volksverhetzungsparagrafen überarbeiten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2501],
+      "zitat": "Wir schließen die Schutzlücken bei menschenverachtender Hetze. Rechtsextreme Äußerungen von Amtsträgerinnen und Amtsträgern sowie in Schulen werden wir besonders in den Blick nehmen und den Volksverhetzungsparagrafen entsprechend überarbeiten.",
+      "seite": 48
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 2503,
+      "seiten": [40, 49],
+      "grund": "Bekenntnis gegen Hass und Hetze (S. 40) und Medienkompetenz gegen Desinformation für alle Altersgruppen (S. 49): kein Bezug zu beleidigenden Beiträgen oder Anfeindungen."
+    }
+  ],
+  "neue_buendel": [
+    {"ursache": 2501, "name": "Ermittlungsbefugnisse: Log-in-Falle", "seite": 45},
+    {"ursache": 2501, "name": "Beratungsangebote für Betroffene von Diskriminierung", "seite": 41},
+    {"ursache": 2501, "name": "Datenschutz für Betroffene von Hassdelikten", "seite": 48},
+    {"ursache": 2501, "name": "Strafrecht gegen Volksverhetzung", "seite": 48}
+  ],
+  "eigene_synonyme": [
+    {"begriff": "Gewaltschutzgesetz", "ursache": 2501, "richtung": "Meldewege und Hilfe für Betroffene ausbauen"},
+    {"begriff": "Log-in-Falle", "ursache": 2501, "richtung": "Strafverfolgung von Hass und Bedrohung im Netz"}
+  ]
+}
+
+Protokoll Thema 25 (SPD Bund)
+
+Gelesen: Inhaltsverzeichnis (S. 3); Kapitel 15 (S. 40–42); Kapitel 16 Gewalt (S. 42–47); Kapitel 17 (S. 47–49); Kapitel 18 Medien (S. 49–50); Kapitel 19 (S. 52, nur Fundstelle); Kapitel 20 Einwanderung (S. 55, Antidiskriminierungsberatung, nur Fundstelle). Kapitel 14 Staat (S. 37–38) als passend überflogen. Die Fundstellen S. 43, 44, 45, 48, 49, 50 vollständig gelesen.
+
+Nicht erfasst:
+- S. 47: Antidiskriminierungsstelle soll Anti-Feminismus „in den Fokus nehmen“ (Schwerpunktsetzung, keine Hilfe oder Meldung).
+- S. 47: „gegen Herabwürdigungen und Hassreden vorgehen“ (Bekenntnis ohne Handlung).
+- S. 50: Faktenchecks, Bot-Kennzeichnung, „strikte Durchsetzung“ der KI-Verordnung und DSA gegen Desinformation (kein Hassbezug; gleichartig zu S. 45, dort erfasst).
+- S. 50: „die Plattformen zu zwingen, gegen illegale Inhalte vorzugehen“ (DSA-Durchsetzung; gleichartig zu S. 45, dort erfasst).
+- S. 43: Strafverfolgung allgemein, Umweltkriminalität, KI-Datenanalysen (ohne Hass- oder Netzbezug).
+- S. 44: Schutz und Beratung bei häuslicher und sexualisierter Gewalt, Frauenhäuser (kein Online-Bezug).
+- S. 55: Ausbau der Antidiskriminierungsberatung (gleichartig zu S. 41, dort erfasst).
+- S. 51: Regulierung digitaler Plattformen für Kulturschaffende (kein Hassbezug).
+
+Meldewege: im Text kein Meldeverfahren für Hasskommentare gefunden (Suche nach „melde“ ohne Treffer).
+
+Seiten ohne Text: 1, 2, 67, 68 (nicht relevant).

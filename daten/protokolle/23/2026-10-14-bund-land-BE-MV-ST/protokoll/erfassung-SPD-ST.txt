@@ -1,0 +1,83 @@
+{
+  "partei_id": 12,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Präventive und demokratiepädagogische Projekte an Schulen gegen abwertende Haltungen unter Schülern intensivieren und dauerhaft fördern",
+      "ursachen_ids": [2301],
+      "zitat": "Angesichts zunehmender rassistischer und sexistischer Haltungen unter Schülerinnen und Schülern werden präventive und demokratiepädagogische Projekte an Schulen intensiviert und dauerhaft gefördert.",
+      "seite": 36
+    },
+    {
+      "beschreibung": "Schutzkonzepte gegen Gewalt und Diskriminierung für Schulen und weitere Einrichtungen verpflichtend machen",
+      "ursachen_ids": [2301],
+      "zitat": "Prävention ist der wirksamste Schutz vor Gewalt. Einrichtungen der Jugendhilfe, Schulen, Einrichtungen der Eingliederungshilfe, der Geflüchtetenhilfe sowie des Gesundheits- und Pflegebereichs sollen verpflichtend Schutzkonzepte entwickeln und umsetzen. Diese müssen Schutz vor Gewalt und Diskriminierung beinhalten.",
+      "seite": 32
+    },
+    {
+      "beschreibung": "Regelmäßige Fortbildungen für Fachkräfte verbindlich machen, damit Prävention im Alltag wirkt",
+      "ursachen_ids": [2302],
+      "zitat": "Regelmäßige Schulungen und Fortbildungen für Fachkräfte sind verbindlich, damit Prävention im Alltag wirkt.",
+      "seite": 33
+    },
+    {
+      "beschreibung": "Qualifizierung zu Beratungslehrkräften wird neu gestartet",
+      "ursachen_ids": [2302],
+      "zitat": "Die Qualifizierung zu Beratungslehrkräften wird neu gestartet.",
+      "seite": 18
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 2304,
+      "seiten": [15, 18, 19, 27, 28, 54],
+      "grund": "Gelesen: Schulkapitel S. 17-20, Fundstellen S. 15, 27, 28, 54. Entlastung betrifft Lehrkräfte (S. 18), Kita-Eltern, Jugendämter, Ärzte, Haushalte (Steuern). Leistungs- oder Prüfungsdruck von Schülern wird nicht genannt."
+    }
+  ],
+  "neue_buendel": [
+    {
+      "ursache": 2301,
+      "name": "Schutzkonzepte gegen Gewalt und Diskriminierung",
+      "seite": 32
+    }
+  ],
+  "eigene_synonyme": [
+    {
+      "begriff": "Beratungslehrkräfte",
+      "ursache": 2302,
+      "richtung": "Unterstützung durch Fachkräfte und Beschwerdewege"
+    },
+    {
+      "begriff": "Schulungen",
+      "ursache": 2302,
+      "richtung": "Fortbildung und Handlungssicherheit der Lehrkräfte"
+    }
+  ]
+}
+
+Protokoll
+
+Gelesen: S. 2-6 (Einleitung, keine Inhaltsverzeichnisseite im PDF); Schulkapitel S. 17-20 vollständig; Fundstellen S. 7, 9, 12, 14, 15, 18, 20, 27, 28, 29, 30, 31, 32, 33, 35, 36, 38, 41, 54, 56 gelesen. S. 1 fast ohne Text (Titelseite), ohne Bezug.
+
+Erfasst:
+- Klassenklima (2301): S. 36 Projekte gegen abwertende Haltungen unter Schülern; S. 32 Schutzkonzepte (neues Bündel).
+- Handeln/Qualifikation Lehrkräfte (2302): S. 33 Fortbildungspflicht; S. 18 Beratungslehrkräfte.
+
+Nicht erfasst:
+- S. 18, 36 Schulsozialarbeit (Finanzierung, Verstetigung, Beratungs- und Vermittlungsinstanz): Zitat nennt weder Mobbing, Gewalt noch Konflikte; nach R2 keine Zuordnung zu 2301/2302.
+- S. 18 Seiteneinsteigende, Ermäßigungsstunden, Arbeitszeitmodell, Unterrichtsausfall: Lehrkräfte und Schule allgemein (R2), nicht Mobbing.
+- S. 18-19 Inklusion, gemeinsames Lernen, Schulen mit sozialen Herausforderungen: kein Bezug zu Mobbing oder Ausgrenzung unter Schülern.
+- S. 19 Zugang zu Social Media für Kinder: Mediennutzung von Kindern (R2), kein Schulbezug.
+- S. 20 Demokratie lernen, Mitbestimmung, Lernen durch Engagement: allgemeines Ziel ohne konkrete Maßnahme.
+- S. 20 Lehrkräfte bei Haltung gegen Rassismus unterstützen: weitere Stelle zum Bündel Fortbildung/Handlungssicherheit; S. 33 gewählt (verbindlich, konkreter).
+- S. 36 Schule ohne Rassismus, schulinterne Fortbildungen; rassismuskritische Bildungsarbeit in Schulen: weitere gleichartige Stellen (Bündel Fortbildung bzw. Klassenklima); gewählt jeweils S. 33 bzw. S. 36 (erster Satz).
+- S. 11 Absonderung zugewanderter Schüler wird abgelehnt: Ablehnung ohne Handlungszusage.
+- S. 30 Präventionsarbeit in Schulen hilft, Konflikte zu entschärfen; kommunale Präventionsräte werden unterstützt: allgemeine Sicherheitsaussage, kein konkreter Schulbezug.
+- S. 32 Täterarbeit: nur Prüfauftrag.
+- S. 27-28, 12, 14, 15, 7, 9, 29, 31, 38, 41, 54, 56: kein Bezug zu Mobbing, Druck oder Schulkonflikten (Jugendhilfe, Gesundheit, Polizei, Justiz, Ehrenamt, E-Sport, Bund, Cyber-Sicherheit).
+
+Hebel ohne Fund:
+- Bündel 2301 "Regeln und Konsequenzen durchsetzen": im Text kein Treffer zu Regeln, Konsequenzen, Ordnung oder Disziplin.
+- Bündel 2304 "Befähigung und Stressbewältigung": Resilienz und psychische Gesundheit nur allgemein (S. 15, 56), keine Schulmaßnahme.
+
+Grenzfälle (aufgenommen): S. 32 Schutzkonzepte nennen Gewalt und Diskriminierung, nicht Mobbing; S. 33 "Fachkräfte" nicht ausdrücklich Lehrkräfte; S. 36 Projekte gegen rassistische und sexistische Haltungen unter Schülern, nicht ausdrücklich Mobbing.

@@ -1,0 +1,68 @@
+{
+  "partei_id": 12,
+  "land": "MV",
+  "massnahmen": [
+    {
+      "beschreibung": "Präventionsangebote gegen Mobbing, Cybermobbing, Gewalt und Ausgrenzung sowie zur psychischen Gesundheit junger Menschen weiter unterstützen",
+      "ursachen_ids": [2301],
+      "ursachen_offen": [2304],
+      "zitat": "Wir wollen Präventionsangebote gegen Mobbing, Cybermobbing, Gewalt und Ausgrenzung sowie Angebote zur Stärkung psychischer Gesundheit junger Menschen weiter unterstützen.",
+      "seite": 36
+    },
+    {
+      "beschreibung": "Konfliktlösung und Kommunikation als Alltagskompetenzen in der schulischen Bildung stärken",
+      "ursachen_ids": [2301],
+      "zitat": "Wir wollen Alltagskompetenzen wie Finanzbildung, Medienkompetenz, Kommunikation und Konfliktlösung in der schulischen Bildung weiter stärken.",
+      "seite": 69
+    },
+    {
+      "beschreibung": "Gesundheitsvorsorge sowie Gewalt- und Extremismusprävention an Schulen stärken",
+      "ursachen_ids": [],
+      "ursachen_offen": [2301, 2304],
+      "zitat": "Dazu wollen wir die Gesundheitsvorsorge und Gewalt- und Extremismusprävention an Schulen weiter stärken.",
+      "seite": 68
+    },
+    {
+      "beschreibung": "Demokratiebildung in Studium, Referendariat und Fortbildung von Lehrkräften und Schulleitungen verankern, auch für den Umgang mit Vorfällen",
+      "ursachen_ids": [],
+      "ursachen_offen": [2302],
+      "zitat": "Demokratiebildung verstehen und stärken wir dafür als notwendigen Bestandteil von Studium, Referendariat und Fortbildung der pädagogischen Fachkräfte sowie der Qualifizierung der Schulleitungen. Dabei geht es um pädagogisch wie rechtlich sicheres Handeln, um antidemokratischem Denken und Handeln vorzubeugen sowie im Falle des Auftretens aktiv dagegen und damit umgehen zu können.",
+      "seite": 66
+    },
+    {
+      "beschreibung": "Schulleitungen und Pädagogen von Verwaltungsaufgaben entlasten und durch Verwaltungsfachpersonal unterstützen",
+      "ursachen_ids": [],
+      "ursachen_offen": [2304],
+      "zitat": "Wir wollen dafür Schulleitungen und Pädagoginnen und Pädagogen von Verwaltungsaufgaben weiter entlasten und durch zusätzliches Verwaltungsfachpersonal unterstützen.",
+      "seite": 68
+    },
+    {
+      "beschreibung": "Flexibleres Prüfungssystem mit mehreren Prüfungszeiträumen in der beruflichen Bildung, um Stress zu reduzieren",
+      "ursachen_ids": [],
+      "ursachen_offen": [2304],
+      "zitat": "Es soll im Rahmen der nach bundesweiten Vorgaben und betrieblichen Notwendigkeiten bestehenden Möglichkeiten ein flexibleres Prüfungssystem mit mehreren Prüfungszeiträumen geben, um Lernphasen planbarer zu machen und Stress zu reduzieren.",
+      "seite": 70
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 2302, "seiten": [35, 37, 67, 70], "grund": "Schulsozialarbeit und Schulpsychologie in Teams oder Förderung (S. 37, 67, 70) nennen weder Mobbing, Gewalt noch Konflikte (R2); Childhood-Haus (S. 35) betrifft sexualisierte Gewalt außerhalb der Schule; Fortbildung zu Medien und KI (S. 67, 69) ohne Bezug zu Mobbing." },
+    { "ursache": 2304, "seiten": [47, 48, 59, 60, 64, 66, 67, 72], "grund": "Entlastung bei Polizei, Verwaltung und Kita (S. 47, 48, 64) ohne Schulbezug; Prüfungsdruck in der Juristenausbildung (S. 59, 60) nur Prüfauftrag und nicht Schule; Prüfung und Leistungsbewertung (S. 67) nur allgemeine Weiterentwicklung; Wohlbefinden (S. 66) als Ziel; psychosoziale Betreuung Studierender (S. 72) nicht Schule." },
+    { "ursache": 2301, "seiten": [39, 66, 78], "grund": "Bekenntnisse gegen Ausgrenzung (S. 39, 78) ohne Handlung; Demokratie in Schulen (S. 66) als Ziel; Ansprechpersonen für Minderjährige (S. 39) ohne Mobbing-Bezug." }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "konfliktlösung", "ursache": 2301, "richtung": "Klassenklima und soziales Lernen stärken" },
+    { "begriff": "gewaltprävention", "ursache": 2301, "richtung": "Klassenklima und soziales Lernen stärken" }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Einleitung S. 2–6 nur überflogen (dort keine Fundstellen übernommen; die Textdatei hat kein eigenes Inhaltsverzeichnis). Kapitel Jugend und Ehrenamt S. 35–37 und 40–41, Demokratie und Zusammenhalt S. 38–45 (Fundstellen S. 39, 44), Polizei S. 46–48 (Fundstellen S. 46–48), Justiz und Digitales S. 56–60, Kita und Schule S. 64–70 vollständig, Wissenschaft S. 71–73 (Ausschnitt; Fundstelle S. 72). Die Fundstellen S. 2, 3, 4, 17, 18, 24, 28, 29, 32, 53, 56, 58, 74, 75, 76, 78, 91 wurden nur im Umfeld gelesen; die Kapitel Wirtschaft, Energie, Verkehr und Gesundheit/Pflege (S. 7–34) habe ich nur über die Fundstellen gesehen. S. 1 und 95 ohne Text (Titel bzw. Schluss).
+
+Richtungen ohne Maßnahme: keine. 2301 (Konfliktlösung, Präventionsangebote), 2302 (Demokratiebildung-Fortbildung als Grenzfall) und 2304 (Prüfungssystem, Verwaltungsentlastung, Gesundheitsvorsorge als Grenzfälle) haben je mindestens eine Stelle. 2302 hat kein eindeutiges Mobbing-Zitat: Schulsozialarbeit und Schulpsychologie nennen im Text keinen Mobbing-, Gewalt- oder Konfliktbezug (R2), daher nur die Grenzfall-Stelle.
+
+Grenzfälle (ursachen_offen): Präventionsangebote mit psychischer Gesundheit (S. 36, 2304); Gewalt- und Extremismusprävention und Gesundheitsvorsorge an Schulen (S. 68, 2301/2304); Demokratiebildung-Fortbildung für Umgang mit Vorfällen (S. 66, 2302); Entlastung von Verwaltungsaufgaben (S. 68, 2304); flexibleres Prüfungssystem in der beruflichen Bildung, „soll … geben“ mit Vorbehalt (S. 70, 2304).
+
+Nicht aufgenommen: S. 37 Schulsozialarbeit fortsetzen und Koordinierungsstelle prüfen (Prüfauftrag; R2 verlangt Mobbing, Gewalt oder Konflikt im Zitat). S. 67 und 70 multiprofessionelle Teams mit Schulsozialarbeit und Schulpsychologie (R2 wie oben). S. 68 Mentoring-Entlastung durch Anrechnungsstunden (gleicher Hebel wie Verwaltungsentlastung, nur eine Stelle erfasst). S. 4 Reduzierung der Unterrichtsverpflichtung (Einleitung, übersprungen). S. 37 Kinderschutzgesetz und Schutzkonzepte (Kindeswohl, kein Mobbing). S. 39 Ausgrenzung und Vielfalt (Bekenntnis). S. 66 und 69 Ziel Wohlbefinden und Demokratie in Schulen (Ziele). S. 67 Prüfungen und Leistungsbewertung (allgemeine Weiterentwicklung ohne Maßnahme). S. 72 psychosoziale Betreuung der Studierenden (keine Schule).
+
+Seiten ohne Text: 1 und 95 (Titel und Schluss), keine Rolle gespielt.

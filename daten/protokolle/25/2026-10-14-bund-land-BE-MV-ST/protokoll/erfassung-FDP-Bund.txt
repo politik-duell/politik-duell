@@ -1,0 +1,64 @@
+{
+  "partei_id": 14,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Polizei soll LSBTI-feindliche Hasskriminalität bundesweit einheitlich erfassen und verfolgen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2501],
+      "zitat": "Die Polizei soll LSBTI-feindliche Hasskriminalität bundesweit einheitlich erfassen und verfolgen.",
+      "seite": 25
+    },
+    {
+      "beschreibung": "Netzsperren, Chatkontrollen und Uploadfilter ablehnen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2502],
+      "zitat": "Wir lehnen Netzsperren, Chatkontrollen, Uploadfilter, die Vorratsdatenspeicherung und andere Formen der anlasslosen Datenerfassung ab.",
+      "seite": 24
+    },
+    {
+      "beschreibung": "Sorgfaltspflichten für Plattformen aus dem Digital Services Act sollen die Meinungsfreiheit nicht beeinträchtigen und keine privaten Entscheidungen über die Grenzen der Meinungsfreiheit bringen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2502],
+      "zitat": "Auch digitale Plattformen haben eine eigene Verantwortung, wenn es um den Schutz der Meinungsfreiheit geht. Die im Rahmen des Digital Services Act eingeführten Sorgfaltspflichten für Plattformen dürfen nicht dazu führen, dass die Meinungsfreiheit beeinträchtigt wird oder dass Private statt staatlicher Gerichte über die Grenzen der Meinungsfreiheit entscheiden.",
+      "seite": 27
+    },
+    {
+      "beschreibung": "Lehrpläne mit mehr Raum für Medienkompetenz, neben wirtschaftlicher Bildung, MINT und Demokratie.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2503],
+      "zitat": "Zugleich wollen wir die Lehrpläne modernisieren: Wir Freie Demokraten fordern mehr Raum für wirtschaftliche und finanzielle Bildung, MINT-Themen, Demokratie und Politik sowie Medienkompetenz.",
+      "seite": 9
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 2503,
+      "seiten": [24, 25, 27],
+      "grund": "Leitbild demokratische Streitkultur auch im Netz (S. 25) ist ein Ziel ohne konkrete Handlung. Recht auf Verschlüsselung und Quick-Freeze (S. 24) betreffen Datenschutz, nicht Hass."
+    }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis (S. 2–3); IV.a Grundrechte und Rechtsstaat (S. 21–24, Sicherheit, Cybersicherheit, Datenschutz, Verschlüsselung); IV.b Offene Gesellschaft (S. 25–27, Diskriminierung, LSBTI, Antisemitismus, Extremismus, Meinungsfreiheit, ÖRR); II.b Lehrpläne (S. 9); Fundstellen S. 9, 23, 24, 25, 27, 49 gelesen. Kapitel IV.c (Migration, S. 27–29) nur nach Stichworten durchsucht, ohne Hass- oder Netzbezug. S. 49 (Außenpolitik China und Russland) ist für das Thema nicht einschlägig; die Erwähnung des Digital Services Act dort betrifft Billigprodukte, nicht Hass.
+
+Keine Seiten ohne Text in den gelesenen Abschnitten (S. 1–2 Titel/Vorspann).
+
+Richtungen ohne Maßnahme:
+- Meldewege und Hilfe für Betroffene (2501): nichts gefunden. Die Online-Plattform für Frauenhausplätze (S. 29) betrifft häusliche Gewalt, nicht Hass im Netz.
+- Plattformen verbindlich in die Pflicht nehmen (2502): nur Grenzfälle erfasst. Keine Lösch- oder Moderationspflicht gefunden. Der Hinweis auf den Digital Services Act auf S. 49 betrifft Produktsicherheit.
+- Prävention und Gesprächskultur (2503): nur Medienkompetenz im Lehrplan als Grenzfall erfasst. Keine Moderations- oder Meldemaßnahme gefunden.
+- Moderation und Gestaltung der Plattformen (2503): nichts gefunden.
+
+Nicht erfasst (gelesen, nicht aufgenommen):
+- S. 25: „demokratische Streitkultur … auch in der digitalen Welt“. Leitbild, keine Handlungszusage.
+- S. 26: Antisemitismus. IHRA-Arbeitsdefinition für Behörden und Fortbildungen sowie die Kritik an eingestellten Verfahren. Kein Bezug zu Hass im Netz, nicht erfasst.
+- S. 27: Strafbarkeitslücken bei antisemitischen und extremistischen Organisationen. Keine Hasskommentare oder Online-Inhalte.
+- S. 26: Radikalisierung durch islamistische Influencer im Netz ist nach Leitfaden R2 Extremismus, nicht Hass im Netz.
+- S. 23: Justiz-Digitalisierung und Online-Gerichtsverfahren. Kein Hass-Bezug.
+- S. 24: Quick-Freeze, Verschlüsselung, Cybersicherheit, Netzneutralität. Datenschutz bzw. Sicherheit (R2).
+- S. 9: Menschenfeindlichkeits-Bildung in der Schule. Kein Netzbezug. Die Medienkompetenz-Forderung ist erfasst.
+
+Grenzfälle (ursachen_offen): 2501 LSBTI-Hasskriminalität (Strafverfolgung, Zuordnung 2501 oder 2502 offen, weil das Zitat weder Betroffene noch Plattformen nennt); 2502 Ablehnung von Uploadfilter und Netzsperren sowie DSA-Sorgfaltspflichten (Gegenposition zu Plattformpflichten); 2503 Medienkompetenz im Lehrplan.

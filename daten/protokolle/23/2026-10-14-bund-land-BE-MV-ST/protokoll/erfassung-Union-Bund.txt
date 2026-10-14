@@ -1,0 +1,42 @@
+{
+  "partei_id": 11,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Ein Maßnahmenpaket zum Gesundheits- und Jugendmedienschutz bei Social Media vorlegen, nach wissenschaftlicher Bewertung", "ursachen_ids": [2303], "zitat": "Die frühe Nutzung von Social Media hat Auswirkungen auf die Gesundheit sowie die Lern- und Leistungsfähigkeit von Kindern und Jugendlichen, auch in der Schule. Diese werden wir schnellstmöglich wissenschaftlich basiert bewerten und ein Maßnahmenpaket zur Stärkung von Gesundheit- und Jugendmedienschutz vorlegen.", "seite": 66 },
+    { "beschreibung": "Forschungsbasierte Qualifizierung von Lehrkräften und Schulleitungen im Rahmen des DigitalPakts", "ursachen_ids": [2302], "zitat": "Damit legen wir den Fokus auf digitale Infrastruktur, digitale Lehr- und Lernprogramme sowie auf die forschungsbasierte Qualifizierung von Lehrkräften und Schulleitungen.", "seite": 66 },
+    { "beschreibung": "Verbindliche Vergleichsarbeiten und Lernstandserhebungen einführen bzw. ausbauen", "ursachen_ids": [2304], "zitat": "Wir setzen auf aussagekräftige und verbindliche Vergleichsarbeiten und Lernstandserhebungen.", "seite": 65 },
+    { "beschreibung": "Ambulante und stationäre Versorgung psychischer Erkrankungen bei Kindern und Jugendlichen verbessern", "ursachen_ids": [], "ursachen_offen": [2304], "zitat": "Wir wollen die ambulanten und stationären Versorgungsangebote für psychische Erkrankungen bedarfsgerecht verbessern, insbesondere für Kinder und Jugendliche.", "seite": 70 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 2301, "seiten": [63, 64, 65], "grund": "Kindesschutz, Jugendhilfe und Kooperation Schule–Jugendhilfe nennen kein Mobbing, keine Gewalt unter Schülern und kein Klassenklima; keine Zusage zu Klassennormen oder Ausgrenzung." }
+  ],
+  "neue_buendel": [
+    { "ursache": 2304, "name": "Vergleichsarbeiten und Lernstandserhebungen", "seite": 65 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "Vergleichsarbeit", "ursache": 2304, "richtung": "Prüfungen verbindlich ausbauen" }
+  ]
+}
+
+## Protokoll (Thema 23 – Mobbing und Druck in der Schule, Union (Bund))
+
+**Gelesen:** Inhaltsverzeichnis (S. 2); Kapitel „Ja zu Leitkultur und Zusammenhalt“ (S. 54–59), „Ja zu Familie und Verantwortung“ (S. 60–64), „Ja zu Aufstieg durch Bildung“ (S. 65–66), „Ja zu leistungsstarker beruflicher und akademischer Bildung“ (S. 66–68), „Ja zu guter Gesundheit und Pflege“ (S. 67–70); Fundstellen laut Auftrag außerhalb dieser Kapitel nach Auszug geprüft.
+
+**Erfasst:** S. 66 (Social Media, Digitalpakt), S. 65 (Vergleichsarbeiten), S. 70 (psychische Versorgung, Grenzfall 2304 offen).
+
+**Nicht erfasst:**
+- S. 3, 5, 14, 24, 36, 40, 63: „Entlastung“ betrifft Steuern, Abgaben, Landwirte, Justizpersonal und Alleinerziehende, nicht schulische Anforderungen.
+- S. 18, 22, 41–42, 53: „Resilienz“ betrifft Wirtschaft, Energie, Zivilschutz und Dienste.
+- S. 63: psychosoziale Unterstützungsangebote für Jugendliche (ähnlich wie S. 70, dort erfasst).
+- S. 65: „Wir müssen Kinder und Jugendliche mehr fördern und mehr fordern“ und Ganztagsausbau: Leitbild bzw. Ausbau, keine Entlastung von Leistungsdruck.
+- S. 65: Kooperation Schule, Jugendhilfe, Eingliederungshilfe: ohne Nennung von Mobbing oder Gewalt (R2).
+- S. 66: Medienbildung in der Schule: Mediennutzung von Kindern gehört nach R2 nicht zu diesem Thema.
+- S. 60: Bundesjugendspiele mit Wettbewerbscharakter: Sport, kein Prüfungs- oder Schuldruckbezug.
+- S. 60: sichere Orte im Sport gegen sexualisierte Gewalt: kein Schulbezug.
+- S. 56: Gendersprache an Schulen: kein Bezug.
+
+**Richtungen ohne Maßnahme:** 2301 (Klassenklima, Regeln) ohne Fundstelle. 2302 Beschwerdewege, Schulsozialarbeit, Schulpsychologie ohne Fundstelle (Anlaufstelle S. 70 betrifft Apotheken; Fortbildung S. 67, 69 betrifft Berufsbildung und Handwerk).
+
+**Hinweis 2304:** Keine Maßnahme zur Entlastung von Schülerinnen und Schülern gefunden. Vergleichsarbeiten erhöhen eher Prüfungen; das Zitat ist als Richtung „Ausbau“ erfasst.
+
+**Selbstprüfung:** Das Prüfskript konnte in dieser Sitzung nicht ausgeführt werden (kein Shell-Zugriff). Die Datei ist ungeprüft.

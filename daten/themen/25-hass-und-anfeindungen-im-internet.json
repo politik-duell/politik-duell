@@ -33,5 +33,1545 @@
       "ebene": "land",
       "schlagwoerter": ["eskalation", "streit im netz", "anfeindungen", "umgangston", "frust"]
     }
+  ],
+  "instrumente": [
+    {
+      "id": 10133,
+      "name": "Beratung, Opferhilfe und Anlaufstellen für Betroffene von Hass und digitaler Gewalt ausbauen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Beratung und Anlaufstellen senken Hürden, Vorfälle zu melden und anzuzeigen. Gegen eine starke Einstufung spricht, dass Wirkungsstudien zu diesen Angeboten kaum vorliegen; Land kann es allein finanzieren.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10134,
+      "name": "Schulung von Polizei, Justiz und Verwaltung zu Hasskriminalität und digitaler Gewalt (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Sensibilisiertes Personal nimmt Anzeigen ernster und bearbeitet sie besser; die Wirkung ist aber mittelbar, Wirkungsstudien fehlen weitgehend. Landesbehörden können Schulungen selbst einführen.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10135,
+      "name": "Strafverfolgung von Hasskriminalität im Netz stärken: Personal, Spezialabteilungen, Spezialeinheiten (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Spezialisierte Stellen und mehr Personal können Anzeigen schneller bearbeiten und Täter häufiger ermitteln. Gegen eine starke Einstufung: kaum Wirkungsstudien, Personalgewinnung dauert, Anonymität erschwert Ermittlungen.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10136,
+      "name": "Meldestellen und Monitoring für Hass und digitale Gewalt aufbauen und fördern (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Niedrigschwellige Meldewege, auch unterhalb der Strafbarkeit, erleichtern Betroffenen das Melden und machen Vorfälle sichtbar. Wirkung auf spätere Verfolgung und Entfernung ist kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10137,
+      "name": "Hasskriminalität besser statistisch erfassen und berichten (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Bessere Erfassung schafft eine Datengrundlage, verändert aber weder Meldeverhalten noch Verfolgung unmittelbar. Land kann Erfassung und Berichte selbst regeln.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10138,
+      "name": "Login-Falle und gerichtlich angeordnete Accountsperren zur Ermittlung anonymer Täter (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Kann anonyme Täter identifizierbar machen, an denen Ermittlungen bisher oft scheitern. Datenschutz- und EU-rechtliche Fragen sind zu klären; Erfahrungen mit dem Instrument liegen kaum vor.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10139,
+      "name": "Digitales Gewaltschutzgesetz: Betroffenenrechte, Verbandsklage, leichtere Sperrung von Täter-Accounts (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Stärkt die Durchsetzung von Betroffenenrechten und Sperrungen gegenüber Plattformen und Tätern. Muss mit dem EU-Plattformrecht abgestimmt werden; Wirkung noch nicht belegt.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10140,
+      "name": "Strafverfolgung von Online-Hasskriminalität stärken, BKA-Zentralstelle ausbauen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Zentrale Stellen bündeln Meldungen und Fälle und können Verfahren beschleunigen; der Bund finanziert sie selbst. Wirkungsnachweise auf Hassaufkommen fehlen weitgehend.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10141,
+      "name": "Strafrecht gegen Hetze und digitale sexualisierte Gewalt ergänzen oder verschärfen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Schließt mögliche Strafbarkeitslücken, Forschung zeigt aber meist nur schwache Abschreckung durch höhere Strafen. Tatbestände zu Meinungsäußerungen sind verfassungsrechtlich heikel (Art. 5 GG).",
+      "evidenz": "gemischt",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10142,
+      "name": "Bundesgesetze gegen digitale Gewalt und Deepfakes über den Bundesrat voranbringen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "Die Rechtslage (StGB, Gewaltschutz) wäre wirksam zu ergänzen, liegt aber beim Bund. Das Land kann nur Initiativen im Bundesrat einbringen und hängt von Bundestag und Bundesregierung ab.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10143,
+      "name": "Plattformpflichten zur Entfernung rechtswidriger Inhalte und Aufsicht nach dem Digital Services Act (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Klare Pflichten und besser ausgestattete Aufsicht können die Entfernungsquote erhöhen. Der Rahmen ist EU-Recht, nationale Spielräume sind begrenzt; Wirkung bisheriger Regeln gemischt.",
+      "evidenz": "gemischt",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10144,
+      "name": "Plattformen auf Schutz der Meinungsfreiheit verpflichten, Grenzen für Sorgfaltspflichten (Bund)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 1,
+      "begruendung": "Zielt auf Begrenzung von Moderation und Löschung und bringt Schutz vor Hass und Bedrohung nicht voran. Zudem weitgehend durch EU-Recht (DSA) geregelt, nationale Alleingänge kaum möglich.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10145,
+      "name": "Algorithmen von Plattformen stärker regulieren, offenlegen und prüfen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Transparenz kann Verstärkung feindseliger Beiträge sichtbar machen; ein belegter Effekt auf Hass fehlt. Zuständig ist im Wesentlichen die EU (DSA), nationale Regeln sind kaum möglich.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10146,
+      "name": "Öffentliche Förderung von Meldestellen beenden (Land)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 3,
+      "begruendung": "Entzieht Meldewegen die Finanzierung und senkt tendenziell die Zahl gemeldeter Vorfälle, ohne andere Ursachen anzugehen. Als Haushaltsentscheidung des Landes leicht umsetzbar; Argument der Überlastung von Strafverfolgung ist nicht belegt.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10147,
+      "name": "Öffentliche Förderung von Meldestellen beenden, Meldestellen abschaffen (Bund)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 2,
+      "begruendung": "Entzieht Meldewegen die Finanzierung und senkt tendenziell gemeldete Vorfälle. Förderende ist leicht möglich; eine Abschaffung der Stellen selbst stößt auf EU-Vorgaben (vertrauenswürdige Hinweisgeber) und Vereinsfreiheit.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10148,
+      "name": "Sondertatbestand für Beleidigung von Politikern (§ 188 StGB) streichen oder nicht mehr aktiv verfolgen (Land)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 1,
+      "begruendung": "Verringert den strafrechtlichen Schutz vor Anfeindungen und stärkt Betroffene nicht. Als Bundesrecht kann das Land nur über den Bundesrat darauf hinwirken.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10149,
+      "name": "Beleidigung von Personen des politischen Lebens (§ 188 StGB) streichen (Bund)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 3,
+      "begruendung": "Verringert den strafrechtlichen Schutz vor Anfeindungen und stärkt Betroffene nicht; Beleidigung bleibt nach § 185 StGB strafbar. Gesetzesänderung durch den Bund rechtlich einfach möglich.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10150,
+      "name": "Digitale Prävention, Aufklärung und Strategien gegen Hass im Netz (Digital Streetwork, Kampagnen, Jugendarbeit) (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Aufklärung und Präventionsangebote können Hemmschwellen und Dynamiken in Debatten beeinflussen; Studien zu Gegenrede und Kampagnen zeigen uneinheitliche, oft kleine Effekte. Land kann sie selbst finanzieren.",
+      "evidenz": "gemischt",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10151,
+      "name": "Medienkompetenz in Schule und Erwachsenenbildung verankern und ausbauen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Verbessert den Umgang mit Inhalten und Desinformation; ein belegter Effekt auf Hass und Anfeindungen ist unsicher. Lehrplan und Lehrkräfte brauchen mehrere Jahre, Land ist zuständig.",
+      "evidenz": "gemischt",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10152,
+      "name": "Zivilgesellschaftliche Projekte und Initiativen gegen Hass dauerhaft fördern (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Verlässliche Förderung sichert Beratung und Präventionsarbeit vor Ort; Bezug zu Hass im Netz ist oft indirekt, Wirkung kaum evaluiert. Landesmittel und Landesgesetz genügen.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10153,
+      "name": "Antidiskriminierungsstelle und zivilgesellschaftliche Opferberatung stärken und finanziell absichern (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Unterstützt Betroffene bei Beratung und Rechtsdurchsetzung, nicht speziell bei Hass im Netz. Dauerhafte Bundesförderung braucht Gesetz und Haushaltsmittel; Wirkung kaum evaluiert.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10154,
+      "name": "Erfassung von Hasskriminalität verbessern, Straftaten gegen Betroffenengruppen einheitlich erfassen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Schafft eine bessere Datenbasis und lenkt Verfolgung; Meldeverhalten und Plattformen ändert sie nicht direkt. Bund-Länder-Abstimmung der Statistik nötig.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "durchsucht_fuer": [2501, 2502, 2503],
+      "massnahmen": [
+        {
+          "id": 10155,
+          "instrument": 10143,
+          "beschreibung": "Umsetzung des Digital Services Act mit Schwerpunkt auf Transparenz, Kampf gegen Desinformation sowie Jugend- und Medienschutz",
+          "ursachen_ids": [2502],
+          "zitat": "Wir sorgen dafür, dass ein ausreichender Kinder- und Jugendschutz auch im Internet gewährleistet wird. Das gilt auch für Soziale Medien als wichtige Plattformen des Austauschs und der Information. Wir stellen sicher, dass bei der Umsetzung des Digital Services Act der Schwerpunkt auf mehr Transparenz, Kampf gegen Desinformation sowie Jugend- und Medienschutz gelegt wird.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=41",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10156,
+          "instrument": 10141,
+          "beschreibung": "Strafrecht gegen Volksverhetzung und antisemitische Äußerungen verschärfen",
+          "ursachen_ids": [2501],
+          "zitat": "Deshalb verschärfen wir den Volksverhetzungs-Paragrafen im Strafgesetzbuch so, dass das Leugnen des Existenzrechts künftig strafbar ist. Außerdem führen wir einen besonders schweren Fall der Volksverhetzung ein, der Täter umfasst, die antisemitisch handeln.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=46",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2501, 2503],
+      "massnahmen": [
+        {
+          "id": 10157,
+          "instrument": 10133,
+          "beschreibung": "Beratungsangebote bei digitaler Gewalt ausbauen und die Strategien dagegen weiterentwickeln.",
+          "ursachen_ids": [2501],
+          "zitat": "Unsere Strategien zur Bekämpfung digitaler Gewalt werden wir gezielt weiterentwickeln, bestehende Beratungsangebote ausbauen",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=12",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10158,
+          "instrument": 10142,
+          "beschreibung": "Neue Formen digitaler Gewalt wie digitale Belästigung und Mobbing in Sozialen Medien strafrechtlich bekämpfen; Gesetzeslücken schließen.",
+          "ursachen_ids": [2501],
+          "zitat": "Neue Formen digitaler Gewalt, etwa durch digitale Belästigungen, Mobbing in den Sozialen Medien oder manipulierte Inhalte wie Deepfakes müssen konsequent bekämpft und bestehende gesetzliche Lücken geschlossen werden.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=12",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10159,
+          "instrument": 10135,
+          "beschreibung": "Spezialabteilung der Staatsanwaltschaft für Hasskriminalität ausbauen und stärken.",
+          "ursachen_ids": [2501],
+          "zitat": "Die spezialisierte Abteilung für Staatsschutzdelikte und Hasskriminalität bei der Staatsanwaltschaft werden wir weiter ausbauen und stärken.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=22",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10160,
+          "instrument": 10133,
+          "beschreibung": "Bestehende Schutz-Anlaufstellen für Betroffene queerfeindlicher Straftaten fortführen.",
+          "ursachen_ids": [2501],
+          "zitat": "Bestehende Schutz-Anlaufstellen führen wir bedarfsgerecht fort.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=110",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10161,
+          "instrument": 10151,
+          "beschreibung": "Medienkompetenz als verbindlichen Bestandteil an allen Schulen verankern.",
+          "ursachen_ids": [2503],
+          "zitat": "Medienbildung ist Demokratiebildung. Deshalb wollen wir Medienkompetenz als verbindlichen Bestandteil an allen Schulen verankern. Schülerinnen und Schüler sollen lernen, Informationen kritisch zu prüfen, Desinformation zu erkennen und digitale wie klassische Medien verantwortungsvoll zu nutzen.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=63",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2501, 2503],
+      "massnahmen": [
+        {
+          "id": 10162,
+          "beschreibung": "Vorratsdatenspeicherung auf Bundesebene einfordern, um Hasskriminalität im Internet zu bekämpfen.",
+          "ursachen_ids": [2501],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Speicherung kann Ermittlungen helfen; Studien zu Aufklärungsquoten sind uneinheitlich, und der EU-Rechtsrahmen (EuGH) setzt enge Grenzen. Das Land kann nur auf Bundesebene darauf hinwirken.",
+          "zitat": "Nach Überzeugung sämtlicher Experten ist eine Speicherung von Vorratsdaten unverzichtbar, um insbesondere Kindesmissbrauch und Hasskriminalität im Internet wirksam zu bekämpfen. […] Daher werden wir weiterhin auf Bundesebene die Einführung einer mit dem EU-Recht vereinbaren Vorratsdatenspeicherung einfordern.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=35",
+          "evidenz": "gemischt",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10163,
+          "instrument": 10142,
+          "beschreibung": "Strafrecht gegen digitale sexualisierte Gewalt mittels KI-Deepfakes weiterentwickeln.",
+          "ursachen_ids": [2501],
+          "zitat": "Zudem werden wir uns konsequent für die kontinuierliche Weiterentwicklung des Strafrechts zur Bekämpfung neuer Formen von Kriminalität einsetzen, beispielsweise digitaler sexualisierter Gewalt unter Anwendung Künstlicher Intelligenz in Form von Deepfakes.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=35",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10164,
+          "beschreibung": "Mindestalter von 14 Jahren für soziale Netzwerke, um Kinder besser vor Hassbotschaften zu schützen.",
+          "ursachen_ids": [2503],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Weniger Kinder in sozialen Netzwerken sähen weniger Hass, Altersgrenzen lassen sich aber schwer durchsetzen. Die Regelung liegt bei Bund und EU (DSA, Jugendschutz), nicht beim Land.",
+          "zitat": "Wir fordern ein Mindestalter von 14 Jahren für die Nutzung sozialer Netzwerke (MV-Kinderschutz), um Kinder besser vor Risiken wie Mobbing, Pornografie, Gewaltdarstellungen und Hassbotschaften zu schützen.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=38",
+          "evidenz": "offen",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10165,
+          "beschreibung": "Gesetzliche Klarnamen- und ID-Pflicht gegenüber Plattformbetreibern und Providern.",
+          "ursachen_ids": [2503],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Könnte Enthemmung durch Anonymität verringern; Erfahrungen mit Klarnamenpflichten zeigen kaum weniger Hass. Zudem Bundes- und EU-Recht (Datenschutz, DSA), das Land kann sie nicht allein einführen.",
+          "zitat": "Wir setzen uns für eine gesetzliche Klarnamen - und ID-Pflicht gegenüber Plattformbetreibern und Providern ein.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=38",
+          "evidenz": "gemischt",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2501, 2503],
+      "massnahmen": [
+        {
+          "id": 10166,
+          "instrument": 10151,
+          "beschreibung": "Medienkompetenz für alle Generationen mit Schulen, Landesmedienanstalt und Trägern ausbauen",
+          "ursachen_ids": [2503],
+          "zitat": "Medienkompetenz stärken: In einer Welt aus Reels, KI-generierten Bildern und Social-Media-Schlagzeilen braucht es Fähigkeiten zur Bewertung, Einordnung und Reflexion. Wir werden medienpädagogische Angebote ausbauen und mit Schulen, der Landesmedienanstalt und zivilgesellschaftlichen Trägern neue (Weiter-)Bildungsformate für alle Generationen entwickeln.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=36",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "durchsucht_fuer": [2501, 2502, 2503],
+      "massnahmen": [
+        {
+          "id": 10167,
+          "instrument": 10139,
+          "beschreibung": "Digitales Gewaltschutzgesetz: Betroffene digitaler Gewalt sollen ihre Rechte durchsetzen können; Täter-Accounts sollen leichter gesperrt werden.",
+          "ursachen_ids": [2501],
+          "zitat": "Wir wollen konsequent auch gegen digitale Gewalt vorgehen. Dazu schaffen wir ein digitales Gewaltschutzgesetz. […] Zudem sollen die Täter-Accounts einfacher gesperrt werden können. Versehen mit einem Verbandsklagerecht sollen Rechte der Betroffenen effektiv durchgesetzt werden können.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=44",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10168,
+          "instrument": 10140,
+          "beschreibung": "Zentralstelle für strafbare Inhalte im Internet beim BKA ausbauen, um Online-Hasskriminalität effektiver zu verfolgen.",
+          "ursachen_ids": [2501],
+          "zitat": "Hasskriminalität im Internet und gezielte Desinformationskampagnen gefährden unsere Demokratie. Wir werden konsequent dagegen vorgehen und die Zentralstelle für strafbare Inhalte im Internet beim Bundeskriminalamt weiter ausbauen, um die Verfolgung von Online-Hasskriminalität effektiver zu gestalten.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=48",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10169,
+          "instrument": 10138,
+          "beschreibung": "Log-in-Falle: IP-Adressen bei verdächtigen Konten erfassen, um über Justiz-Schnittstellen Stammdaten zu ermitteln.",
+          "ursachen_ids": [2501],
+          "zitat": "Dabei gewährleisten wir den Schutz der Daten der Nutzerinnen und Nutzer, stärken die IT-Sicherheitsmaßnahmen der Unternehmen und ihre Verantwortung im Kampf gegen Hass und Hetze im Netz. Gleichzeitig schaffen wir damit eine bessere Grundlage für die wirksame Strafverfolgung bei konkreten Tatverdachten. Ergänzend setzen wir dabei auf die Log-in-Falle, die bei der Anmeldung an einem verdächtigen Benutzerkonto die IP-Adresse erfasst, wodurch per Justiz-Schnittstellen Stammdaten ermittelt werden können.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=45",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10170,
+          "instrument": 10143,
+          "beschreibung": "Plattformbetreiber verpflichten, illegale Inhalte zu entfernen.",
+          "ursachen_ids": [2502],
+          "zitat": "Wir setzen klare Regeln zur Bekämpfung von Hasskriminalität und Netzstraftaten um. Plattformbetreiber werden verpflichtet, illegale Inhalte zu entfernen […]",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=45",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10171,
+          "instrument": 10145,
+          "beschreibung": "Plattformen verpflichten, ihre Algorithmen offenzulegen und auf diskriminierende oder manipulative Praktiken zu prüfen.",
+          "ursachen_ids": [2503],
+          "zitat": "Plattformen sollen verpflichtet werden, ihre Algorithmen und Entscheidungsprozesse zur Inhaltsdarstellung offenzulegen und auf diskriminierende oder manipulative Praktiken zu prüfen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=50",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10172,
+          "instrument": 10153,
+          "beschreibung": "Antidiskriminierungsstelle stärken und Beratungsangebote für Betroffene ausbauen.",
+          "ursachen_ids": [2501],
+          "zitat": "Wir wollen die Antidiskriminierungsstelle des Bundes weiter stärken und zivilgesellschaftliche Beratungsangebote ausbauen, damit Betroffene gezielte Unterstützung erhalten.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=41",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10173,
+          "beschreibung": "Datenschutz für Betroffene von Hassdelikten: Wohnanschrift soll im Strafverfahren nicht mehr durch Akteneinsicht offengelegt werden müssen.",
+          "ursachen_ids": [2501],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Nimmt Betroffenen die Sorge, dass Täter ihre Anschrift erfahren, und senkt so eine bekannte Hürde beim Anzeigen. Änderung der Strafprozessordnung ist Bundesrecht und ohne Mehrkosten möglich; Wirkung nicht untersucht.",
+          "zitat": "Wir verbessern den Datenschutz bei Hassdelikten. Im Strafverfahren soll die Wohn- oder Aufenthaltsanschrift künftig nicht mehr durch Akteneinsicht offengelegt werden müssen, um Betroffene besser zu schützen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=48",
+          "evidenz": "offen",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10174,
+          "instrument": 10141,
+          "beschreibung": "Strafrecht gegen Hetze überarbeiten: Schutzlücken bei menschenverachtender Hetze schließen, Volksverhetzungsparagrafen überarbeiten.",
+          "ursachen_ids": [2501],
+          "zitat": "Wir schließen die Schutzlücken bei menschenverachtender Hetze. Rechtsextreme Äußerungen von Amtsträgerinnen und Amtsträgern sowie in Schulen werden wir besonders in den Blick nehmen und den Volksverhetzungsparagrafen entsprechend überarbeiten.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=48",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2501, 2503],
+      "massnahmen": [
+        {
+          "id": 10175,
+          "instrument": 10151,
+          "beschreibung": "Medienkompetenz, kritischer Umgang mit sozialen Medien und digitale Verantwortung als fester Bestandteil schulischer Bildung, mit neuem Rahmenlehrplan Digitales.",
+          "ursachen_ids": [2503],
+          "zitat": "Wir stärken Medienkompetenz, kritischen Umgang mit sozialen Medien, KI-Kompetenzen und digitale Verantwortung als festen Bestandteil schulischer Bildung. Dafür entwickeln wir einen neuen Rahmenlehrplan Digitales.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=41",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10176,
+          "instrument": 10150,
+          "beschreibung": "Digitale Präventionsansätze gegen Hassrede in eine Strategie für Demokratie und Zusammenhalt im Netz einbetten.",
+          "ursachen_ids": [2503],
+          "zitat": "Berlin braucht eine Strategie für lebendige Demokratie und gesellschaftlichen Zusammenhalt im Netz, ergänzt um digitale Präventionsansätze gegen Hassrede, Desinformation und Radikalisierung.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=29",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10177,
+          "instrument": 10133,
+          "beschreibung": "Hasskriminalität online wie offline stärker verfolgen, Aufklärungsquoten erhöhen.",
+          "ursachen_ids": [2501],
+          "zitat": "Gewalt gegen Frauen, queerfeindliche Übergriffe und andere Formen von Hasskriminalität bekämpfen wir entschlossen - egal, ob sie online oder offline stattfinden. Wir stärken spezialisierte Beratungsstellen und erhöhen die […].",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=30",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10178,
+          "instrument": 10133,
+          "beschreibung": "Spezialisierte Beratungsstellen für Betroffene von Hasskriminalität stärken.",
+          "ursachen_ids": [2501],
+          "zitat": "Gewalt gegen Frauen, queerfeindliche Übergriffe und andere Formen von Hasskriminalität bekämpfen wir entschlossen - egal, ob sie online oder offline stattfinden. Wir stärken spezialisierte Beratungsstellen und erhöhen die […].",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=30",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2501, 2503],
+      "massnahmen": [
+        {
+          "id": 10179,
+          "instrument": 10142,
+          "beschreibung": "Digitales Gewaltschutzgesetz mit Betroffenenrechten und Schließung von Strafverfolgungslücken im Bund",
+          "ursachen_ids": [2501],
+          "zitat": "Wir setzen uns für die Einführung eines digitalen Gewaltschutzgesetzes mit wirksamen Betroffenenrechten und Schließung bestehender Strafverfolgungslücken im Bund ein.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=38",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10180,
+          "instrument": 10150,
+          "beschreibung": "Kampagnen gegen Fake News und Fehlinformationen sowie Förderung von Medienkompetenz gegen Hass im Netz",
+          "ursachen_ids": [2503],
+          "zitat": "Dem Hass begegnen wir überall – auch im Netz – mit Kampagnen gegen Fake News und Fehlinformationen sowie landesweiter Förderung von Medienkompetenz.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=44",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2501, 2503],
+      "massnahmen": [
+        {
+          "id": 10181,
+          "instrument": 10134,
+          "beschreibung": "Fachkräfte im Umgang mit digitaler Gewalt schulen; digitale Präsenz von Strafverfolgungs- und Aufsichtsbehörden und digitale Beratungsangebote ausbauen",
+          "ursachen_ids": [2501],
+          "zitat": "Das Hilfesystem braucht Schulung und technischen Schutz. Fachkräfte werden im Umgang mit digitaler Gewalt geschult, die digitale Präsenz von Strafverfolgungsbehörden und Aufsichtsbehörden ausgebaut und um digitale Beratungsangebote ergänzt.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=32",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10182,
+          "instrument": 10135,
+          "beschreibung": "Digitale Gewalt, darunter Hass und Bedrohungen im Netz, soll konsequent verfolgt und bekämpft werden",
+          "ursachen_ids": [2501],
+          "zitat": "Digitale Gewalt und Straftaten nehmen zu – von Cyberstalking, Cybermobbing über Cybergrooming bis hin zu Hass und Bedrohungen im Netz. Diese Formen von Gewalt müssen konsequent verfolgt und bekämpft werden.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=32",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10183,
+          "instrument": 10152,
+          "beschreibung": "Zivilgesellschaftliche Initiativen, die sich gegen Hass engagieren, verlässlich fördern",
+          "ursachen_ids": [2503],
+          "zitat": "Zivilgesellschaftliche Initiativen, die sich für Menschenrechte und gegen Hass engagieren, werden verlässlich gefördert.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=36",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "durchsucht_fuer": [2501, 2502, 2503],
+      "massnahmen": [
+        {
+          "id": 10184,
+          "instrument": 10139,
+          "beschreibung": "Strafbare Inhalte wie Beleidigung konsequent löschen und Accounts schneller sperren; digitales Gewaltschutzgesetz",
+          "ursachen_ids": [2502, 2501],
+          "zitat": "Straftatbestände wie Beleidigung oder Volksverhetzung erfüllt sind. Diese Inhalte […] müssen konsequent gelöscht und entsprechende Accounts schneller gesperrt werden. Dafür sorgen wir mit einem digitalen Gewaltschutzgesetz und stärken die Rechte der Nutzer*innen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=114",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10185,
+          "beschreibung": "Medienanstalten sollen mehr Ressourcen für Löschung und Verfolgung von Hasskriminalität im Netz erhalten",
+          "ursachen_ids": [2502],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Mehr Mittel können Löschung und Verfolgung von Hass im Netz beschleunigen; Wirkung nicht untersucht. Medienanstalten sind Ländereinrichtungen, der Bund kann nur über Staatsvertrag und Länder beitragen.",
+          "zitat": "Die Medienanstalten der Bundesländer müssen weitere Ressourcen erhalten, um effizient bei der Löschung und Verfolgung von Hasskriminalität im Internet und in den sozialen Medien zusammenzuarbeiten.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=115",
+          "evidenz": "offen",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10186,
+          "instrument": 10138,
+          "beschreibung": "Login-Falle und gerichtlich angeordnete Accountsperren, damit Strafverfolgung bei anonymen Accounts möglich wird",
+          "ursachen_ids": [2501],
+          "zitat": "Wir stärken die effektiven Möglichkeiten der deutschen Strafverfolgungsbehörden im digitalen Raum, um gegen Organisierte Kriminalität und Hasskriminalität vorgehen zu können und bei anonymisierten Accounts, die derzeit strafrechtlich kaum verfolgt werden können, Strafverfolgung mit der Login-Falle und durch Gerichte angeordnete Accountsperren zu ermöglichen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=140",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10187,
+          "instrument": 10141,
+          "beschreibung": "Verbreitung von KI-generierten oder echten Nacktbildern gegen den Willen der Betroffenen grundsätzlich strafbar machen",
+          "ursachen_ids": [2501],
+          "zitat": "Bei der Umsetzung der EU-Richtlinie zur Bekämpfung von Gewalt gegen Frauen setzen wir uns dafür ein, dass die Verbreitung von KI-generierten oder echten Nacktbildern gegen den Willen der Betroffenen grundsätzlich eine Straftat darstellt.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=119",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10188,
+          "instrument": 10154,
+          "beschreibung": "Hasskriminalität gegen LSBTIQ* bekämpfen; Erfassung queerfeindlicher Straftaten verbessern; Unterstützungsangebote und Ansprechstellen ausbauen (Bezug zum Netz nicht genannt)",
+          "ursachen_ids": [2501],
+          "zitat": "Hasskriminalität gegen LSBTIQ* entschlossen bekämpfen. Dazu verbessern wir die Erfassung von queerfeindlichen Straftaten und bauen die Unterstützungsangebote sowie Ansprechstellen in Behörden und in der Justiz weiter aus.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=121",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10189,
+          "instrument": 10154,
+          "beschreibung": "Polizeistatistik reformieren, um Hasskriminalität besser zu erfassen",
+          "ursachen_ids": [2501],
+          "zitat": "Wir reformieren die Polizeistatistik, um Hasskriminalität besser zu erfassen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=133",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10190,
+          "instrument": 10145,
+          "beschreibung": "Manipulative Algorithmen von Plattformen strenger regulieren; Algorithmen, die Kinder süchtig machen, nicht zulassen",
+          "ursachen_ids": [2503],
+          "zitat": "Manipulative Algorithmen von Social-Media-Plattformen wollen wir strenger regulieren. Algorithmen, die gezielt darauf ausgerichtet sind, unsere Kinder süchtig zu machen, werden wir nicht dulden.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=85",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10191,
+          "beschreibung": "Antisemitismusstrategie für den digitalen Raum erarbeiten",
+          "ursachen_ids": [2503],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Eine Strategie bündelt Maßnahmen gegen Antisemitismus im Netz, ist aber selbst noch keine Maßnahme; Wirkung hängt von der Umsetzung ab. Bund kann sie allein erarbeiten.",
+          "zitat": "Wir setzen uns für die Erarbeitung einer Antisemitismusstrategie für den digitalen Raum ein.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=116",
+          "evidenz": "offen",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2501, 2503],
+      "massnahmen": [
+        {
+          "id": 10192,
+          "instrument": 10136,
+          "beschreibung": "Zentrale Meldestelle für digitale Gewalt als Kompetenzzentrum, die Meldungen aufnimmt und die Zusammenarbeit mit Strafverfolgung koordiniert",
+          "ursachen_ids": [2501],
+          "zitat": "Eine zentrale Meldestelle für digitale Gewalt soll als Kompetenzzentrum fungieren, Meldungen aufnehmen und die Zusammenarbeit mit Strafverfolgungsbehörden koordinieren.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=161",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10193,
+          "instrument": 10133,
+          "beschreibung": "Beratungs- und Unterstützungsangebote für Betroffene digitaler Gewalt ausbauen",
+          "ursachen_ids": [2501],
+          "zitat": "Wir werden Beratungs- und Unterstützungsangebote für Betroffene digitaler Gewalt ausbauen",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=133",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10194,
+          "instrument": 10150,
+          "beschreibung": "Digitale Präventionsangebote wie Digital Streetwork ausbauen und Medienkompetenz in allen Altersgruppen fördern",
+          "ursachen_ids": [2503],
+          "zitat": "Daher bauen wir digitale Präventionsangebote wie spezialisierte Digital Streetwork aus und fördern in allen Altersgruppen Medienkompetenz, um Desinformation und Hass frühzeitig zu erkennen.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=159",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10195,
+          "instrument": 10135,
+          "beschreibung": "Bekämpfung von Onlinekriminalität und Hasskriminalität im Netz stärken",
+          "ursachen_ids": [2501],
+          "zitat": "Wir stärken die Bekämpfung von Onlinekriminalität und Hasskriminalität im Netz.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=224",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2501, 2503],
+      "massnahmen": [
+        {
+          "id": 10196,
+          "instrument": 10135,
+          "beschreibung": "Strafverfolgung von Bedrohungen im digitalen Raum stärken und Polizeien sowie Staatsanwaltschaften besser ausstatten.",
+          "ursachen_ids": [2501],
+          "zitat": "Wir fordern eine konsequente Durchsetzung bestehender Gesetze, um die Strafverfolgung im digitalen Raum nachhaltig zu stärken. Um geschlechtsspezifische Gewalt sowie politisch motivierten Straftaten und Bedrohungen im digitalen Raum effektiv zu bekämpfen, müssen Polizeien und Staatsanwaltschaften personell und technisch modern ausgestattet werden.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=82",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10197,
+          "instrument": 10133,
+          "beschreibung": "Beratungs- und Unterstützungsangebote für Opfer von Bedrohungen und Angriffen ausbauen.",
+          "ursachen_ids": [2501],
+          "zitat": "Für eine Gesellschaft ohne Hass und ohne Hetze werden wir: […] die Beratungs- und Unterstützungsangebote für Opfer von Bedrohungen und Angriffen weiter ausbauen und das Beratungs- und Hilfenetz für Opfer sexueller und häuslicher Gewalt auskömmlich finanzieren.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=90",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10198,
+          "instrument": 10137,
+          "beschreibung": "Periodischen Sicherheitsbericht vorlegen, der gruppenbezogene Hasskriminalität sichtbar macht.",
+          "ursachen_ids": [2501],
+          "zitat": "Für eine bürger*innennahe Polizei wollen wir: […] einen periodischen Sicherheitsbericht, der die Kriminalstatistik unter Einbeziehung von Wissenschaft und Zivilgesellschaft allgemeinverständlich ergänzt und auch gruppenbezogene Hasskriminalität sichtbar macht.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=77",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10199,
+          "instrument": 10150,
+          "beschreibung": "Präventionskonzepte gegen sexualisierte und digitale Gewalt an Schulen, Hochschulen und am Arbeitsplatz.",
+          "ursachen_ids": [2503],
+          "zitat": "Wir schützen Frauen* vor Gewalt durch: […] Präventionskonzepte gegen sexualisierte und digitale Gewalt an Schulen, Hochschulen und am Arbeitsplatz.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=82",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10200,
+          "instrument": 10151,
+          "beschreibung": "Demokratiebildung und Medienkompetenz in Lehrplänen und pädagogischer Ausbildung verankern, unter anderem zu Desinformation und digitaler Mündigkeit.",
+          "ursachen_ids": [2503],
+          "zitat": "Für eine demokratischere Schule und ein gesundes Lernklima wollen wir: […] Demokratiebildung als Querschnittsaufgabe sowie Medienkompetenz verbindlich in der pädagogischen Ausbildung und in den Lehrplänen verankern, insbesondere im Umgang mit Desinformation, Cybermobbing und digitaler Mündigkeit.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=44",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2501, 2503],
+      "massnahmen": [
+        {
+          "id": 10201,
+          "instrument": 10133,
+          "beschreibung": "Spezialisierte Anlaufstellen und niedrigschwellige Beratung für Betroffene ausbauen",
+          "ursachen_ids": [2501],
+          "zitat": "Gleichzeitig bauen wir die Opferarbeit aus, stärken niedrigschwellige Beratungsangebote und schaffen spezialisierte Anlaufstellen, um Betroffene besser zu unterstützen und zu schützen.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=46",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10202,
+          "instrument": 10135,
+          "beschreibung": "Staatsanwaltschaften und Gerichte bei Cyber- und Onlinekriminalität mit spezialisiertem Personal stärken",
+          "ursachen_ids": [2501],
+          "zitat": "Cyber- und Onlinekriminalität nehmen rasant zu und stellen die Justiz vor neue Herausforderungen. Wir wollen Staatsanwaltschaften und Gerichte gezielt stärken, und zwar durch spezialisiertes Personal und interdisziplinäre Teams.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=46",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10203,
+          "instrument": 10151,
+          "beschreibung": "Unterrichtsfach Informatik und Medienbildung von Klasse 5 bis 10 verpflichtend einführen",
+          "ursachen_ids": [2503],
+          "zitat": "Wir setzen uns für eine verbindliche Vermittlung digitaler Kompetenzen im Unterricht ein. Dafür wollen wir nach dem Vorbild Baden-Württembergs ein Unterrichtsfach „Informatik und Medienbildung“ schaffen, das verpflichtend von Klasse 5 bis 10 bzw. 11 an allen allgemeinbildenden Schulen durchgängig angeboten werden soll. In diesem neuen Fach erwerben Schüler*innen zunächst im Bereich der Medienbildung Kompetenzen wie das kritische Hinterfragen von Inhalten in sozialen Medien, das Erkennen KI-generierter Inhalte sowie grundlegendes Wissen zu Datenschutz und Datenethik.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=64",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10204,
+          "instrument": 10152,
+          "beschreibung": "Landes-Demokratiefördergesetz für dauerhafte Förderung von Projekten gegen Extremismus und Hass",
+          "ursachen_ids": [2503],
+          "zitat": "Ein Landes-Demokratiefördergesetz soll geschaffen werden, um Engagement langfristig zu stärken und demokratische Strukturen verlässlich abzusichern. Ein solches Gesetz bietet die Möglichkeit, Projekte gegen Extremismus, Hass und Gewalt dauerhaft zu fördern und unabhängig von kurzfristigen Haushaltsentscheidungen zu schützen.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=74",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10205,
+          "instrument": 10133,
+          "beschreibung": "Schutzkonzepte mit Sicherheitsberatung und Ansprechstellen für Engagierte, die von rechten Bedrohungen betroffen sind",
+          "ursachen_ids": [2501],
+          "zitat": "Ehrenamtliche und Initiativen, die sich für Demokratie einsetzen, geraten zunehmend ins Visier rechter Bedrohungen. Wir wollen Schutzkonzepte entwickeln, die Engagierte durch Sicherheitsberatung, rechtliche Begleitung, klare staatliche Schutzmechanismen und Ansprechstellen in der Verwaltung gezielt unterstützen.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=75",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "durchsucht_fuer": [2501, 2502, 2503],
+      "massnahmen": [
+        {
+          "id": 10206,
+          "instrument": 10154,
+          "beschreibung": "Polizei soll LSBTI-feindliche Hasskriminalität bundesweit einheitlich erfassen und verfolgen.",
+          "ursachen_ids": [2501],
+          "zitat": "Die Polizei soll LSBTI-feindliche Hasskriminalität bundesweit einheitlich erfassen und verfolgen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=25",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10207,
+          "instrument": 10144,
+          "beschreibung": "Sorgfaltspflichten für Plattformen aus dem Digital Services Act sollen die Meinungsfreiheit nicht beeinträchtigen und keine privaten Entscheidungen über die Grenzen der Meinungsfreiheit bringen.",
+          "ursachen_ids": [2502],
+          "zitat": "Auch digitale Plattformen haben eine eigene Verantwortung, wenn es um den Schutz der Meinungsfreiheit geht. Die im Rahmen des Digital Services Act eingeführten Sorgfaltspflichten für Plattformen dürfen nicht dazu führen, dass die Meinungsfreiheit beeinträchtigt wird oder dass Private statt staatlicher Gerichte über die Grenzen der Meinungsfreiheit entscheiden.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=27",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10208,
+          "beschreibung": "Lehrpläne mit mehr Raum für Medienkompetenz, neben wirtschaftlicher Bildung, MINT und Demokratie.",
+          "ursachen_ids": [2503],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Mehr Raum für Medienkompetenz hilft beim Umgang mit Inhalten; Wirkung auf Hass ist unsicher. Lehrpläne sind Ländersache, der Bund kann nur über Vereinbarungen anregen.",
+          "zitat": "Zugleich wollen wir die Lehrpläne modernisieren: Wir Freie Demokraten fordern mehr Raum für wirtschaftliche und finanzielle Bildung, MINT-Themen, Demokratie und Politik sowie Medienkompetenz.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=9",
+          "evidenz": "gemischt",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2501, 2503],
+      "massnahmen": [
+        {
+          "id": 10209,
+          "instrument": 10150,
+          "beschreibung": "Aufklärung über psychische Gewalt im Internet stärken.",
+          "ursachen_ids": [2503],
+          "zitat": "Die Aufklärung über Formen und Folgen von psychischer Gewalt im Internet wollen wir stärken.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=68",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10210,
+          "beschreibung": "Ehrdelikte bleiben Antragsdelikte; Hinweise von Polizei und Staatsanwaltschaft auf Ehrdelikte im Internet sollen eingestellt werden.",
+          "ursachen_ids": [2501],
+          "wirksamkeit": 0,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Das Einstellen polizeilicher Hinweise auf Ehrdelikte senkt Anzeigen, ändert aber nichts für Betroffene. Der Erhalt des Antragsdelikts schützt Selbstbestimmung. Praxis der Landesbehörden ist leicht änderbar.",
+          "zitat": "Die Entscheidung darüber, ob wegen des Verdachts auf ein Ehrdelikt ein Ermittlungsverfahren eingeleitet werden soll, soll auch künftig bei dem Betroffenen verbleiben, indem es sich bei den entsprechenden Tatbeständen auch weiterhin um Antragsdelikte handeln soll. Die Praxis, durch Polizei und Staatsanwaltschaft insbesondere Mitglieder von Regierungen und Parlamenten aktiv auf mögliche Ehrdelikte im Internet hinzuweisen und zur Stellung eines Strafantrages aufzufordern, wollen wir einstellen.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=76",
+          "evidenz": "offen",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10211,
+          "beschreibung": "Opfer von Gewalt sollen sofort psychologische Betreuung erhalten; Schutz vor Stalking und Hasskriminalität durch höhere Strafandrohung.",
+          "ursachen_ids": [2501],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Psychologische Soforthilfe stützt Betroffene, die höhere Strafandrohung (Bundesrecht) schreckt kaum ab. Nicht auf das Netz bezogen; Betreuung ist Landessache, Strafrahmen nur über den Bund änderbar.",
+          "zitat": "Wir wollen den Opferschutz ausbauen. Opfern von Gewalt, auch politisch motivierter Gewalt, muss sofortiger Zugang zu psychologischer Betreuung ermöglicht werden. Der Schutz vor Stalking und Hasskriminalität muss durch eine höhere Strafandrohung im Gewaltschutzgesetz und eine bessere Durchsetzung desselben ausgebaut werden.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=73",
+          "evidenz": "offen",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10212,
+          "instrument": 10134,
+          "beschreibung": "Schulungen von Polizei, Staatsanwaltschaft und Gerichten zu antisemitischen Aussagen und Straftaten.",
+          "ursachen_ids": [2501],
+          "zitat": "Wir setzen uns für umfangreiche Schulungen von Polizei, Staatsanwaltschaft und Gerichten zur Sensibilisierung im Hinblick auf antisemitische Aussagen und Straftaten ein.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=78",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10213,
+          "instrument": 10136,
+          "beschreibung": "Monitoringstellen und Vereine gegen Antisemitismus weiter fördern, auch für Vorfälle unter der Strafbarkeitsgrenze.",
+          "ursachen_ids": [2501],
+          "zitat": "Vereine wie das Jüdische Forum für Demokratie und gegen Antisemitismus (JFDA) und Monitoringstellen wie die Recherche- und Informationsstelle Antisemitismus (RIAS) sollen weiter gefördert werden, da sie antisemitische Vorfälle auch unter der Strafbarkeitsgrenze dokumentieren.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=79",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10214,
+          "instrument": 10134,
+          "beschreibung": "Schulungen von Polizei, Justiz und Verwaltung zu queerfeindlicher Gewalt und Hasskriminalität.",
+          "ursachen_ids": [2501],
+          "zitat": "Hasskriminalität ist ein Angriff auf die offene Gesellschaft. Queerfeindliche Gewalt muss klar benannt, sichtbar gemacht und konsequent mit Haltung und Härte verfolgt werden. Wir setzen uns für Schulungen der Polizei, Justiz und Verwaltung zur Sensibilisierung für queerfeindliche Gewalt und Hasskriminalität ein.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=82",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2501, 2503],
+      "massnahmen": [
+        {
+          "id": 10215,
+          "instrument": 10148,
+          "beschreibung": "Paragraf 188 StGB (Schutz von Personen des politischen Lebens vor Verleumdung) ersatzlos streichen; dafür auf Bundesebene eintreten.",
+          "ursachen_ids": [2501],
+          "zitat": "Wir Freie Demokraten werden: […] uns für die vollständige und ersatzlose Streichung des § 188 StGB einsetzen.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=151",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2501, 2503],
+      "massnahmen": [
+        {
+          "id": 10216,
+          "instrument": 10151,
+          "beschreibung": "Digitale Bildung und Medienkompetenz in Schule und Lehrkräftebildung verankern (Informationen prüfen, Desinformation erkennen, verantwortungsvoll kommunizieren).",
+          "ursachen_ids": [2503],
+          "zitat": "Digitale Bildung beginnt nicht beim Gerät, sondern bei Kompetenz: Informationen prüfen, Quellen bewerten, Desinformation erkennen, verantwortungsvoll kommunizieren – das gehört systematisch in Schule und Lehrkräftebildung.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=25",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "durchsucht_fuer": [2501, 2502, 2503],
+      "massnahmen": [
+        {
+          "id": 10217,
+          "beschreibung": "NetzDG rückabwickeln und die Umsetzung des EU-Digital-Services-Act in Deutschland ablehnen.",
+          "ursachen_ids": [2502],
+          "wirksamkeit": 0,
+          "umsetzbarkeit": 0,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Würde Plattformpflichten zur Entfernung rechtswidriger Inhalte abschaffen und Meldewege schwächen. Der Digital Services Act gilt als EU-Verordnung unmittelbar; seine Ablehnung ist EU-rechtswidrig.",
+          "zitat": "Deshalb lehnen wir auch die Implementierung des europäischen „Digital Services Act (DSA)“ in Deutschland entschieden ab und werden das NetzDG rückabwickeln.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=50",
+          "evidenz": "offen",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10218,
+          "instrument": 10144,
+          "beschreibung": "Große Anbieter sozialer Medien sollen verpflichtet werden, die Meinungsfreiheit ihrer Nutzer zu respektieren.",
+          "ursachen_ids": [2502],
+          "zitat": "Als Quasi-Oligopole sollen die großen Anbieter sozialer Medien verpflichtet werden, die Meinungsfreiheit ihrer Nutzer zu respektieren.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=132",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10219,
+          "instrument": 10140,
+          "beschreibung": "Antisemitische Beleidigungen und Angriffe auf Juden sollen konsequent strafrechtlich geahndet werden.",
+          "ursachen_ids": [2501],
+          "zitat": "Angriffe auf Juden sowie antisemitische Beleidigungen müssen konsequent strafrechtlich geahndet werden.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=124",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2501, 2503],
+      "massnahmen": [
+        {
+          "id": 10220,
+          "instrument": 10146,
+          "beschreibung": "Öffentliche Förderung von Meldestellen beenden, sodass sie sich ausschließlich privat finanzieren",
+          "ursachen_ids": [2501],
+          "zitat": "Außerdem finanziert Berlin Meldestellen wie das Berliner Register oder CLAIM, die in einem rechtlichen Graubereich operieren und oftmals unbestätigte Meldungen und Meinungsäußerungen unterhalb der Strafbarkeitsgrenze zu einem politisch einseitig gefärbten Meinungsbild verdichten. […] Deswegen werden wir die öffentliche Förderung des Meldestellen-Unwesens beenden, so dass sich auch diese Organisationen zukünftig ausschließlich privat finanzieren müssen.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=77",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2501, 2503],
+      "massnahmen": [
+        {
+          "id": 10221,
+          "instrument": 10148,
+          "beschreibung": "Das Sonderrecht für Politikerbeleidigungen abschaffen; Staatsanwaltschaften und Gerichte sollen das Strafrecht konsequent anwenden.",
+          "ursachen_ids": [2501],
+          "zitat": "Wir setzen uns dafür ein, dass die Staatsanwaltschaften und Gerichte das Strafrecht konsequent anwenden und dabei jeder Eindruck einer politisch motivierten Gewichtung vermieden wird. Das Sonderrecht für Politikerbeleidigungen ist wieder abzuschaffen.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=43",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2501, 2503],
+      "massnahmen": [
+        {
+          "id": 10222,
+          "beschreibung": "Gesetzesänderungen gegen Hasskriminalität aus dem Jahr 2021 im Strafgesetzbuch wieder rückgängig machen",
+          "ursachen_ids": [2501],
+          "wirksamkeit": 0,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Würde Strafbarkeits- und Melderegeln gegen Hass im Netz zurücknehmen und Betroffenen nicht helfen. Die Gesetze sind Bundesrecht, das Land kann nur im Bundesrat darauf hinwirken.",
+          "zitat": "[…] nannten „Gesetz zur Bekämpfung des Rechtsextremismus und der Hasskriminalität“ 2021 zusammengefassten Änderungen unter anderem des Strafgesetzbuchs wieder rückgängig zu machen.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=223",
+          "evidenz": "offen",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "durchsucht_fuer": [2501, 2502, 2503],
+      "massnahmen": [
+        {
+          "id": 10223,
+          "instrument": 10143,
+          "beschreibung": "EU-Plattformrecht (Digital Services Act) zügig ins nationale Recht überführen und weiterentwickeln",
+          "ursachen_ids": [2502],
+          "zitat": "Die EU-Gesetze über […] und über digitale Dienste (Digital Services Act) müssen zügig in nationales Recht überführt und perspektivisch weiterentwickelt werden.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=57",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10224,
+          "instrument": 10143,
+          "beschreibung": "Bundesnetzagentur mit ausreichend Personal ausstatten, um Verbraucherschutz und den Digital Services Act umzusetzen",
+          "ursachen_ids": [2502],
+          "zitat": "Die Bundesnetzagentur braucht ausreichend Personal, um Verbraucherschutz und den Digital Services Act wirksam umzusetzen.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=57",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10225,
+          "instrument": 10153,
+          "beschreibung": "Opferberatungen und Projekte gegen Rechtsextremismus stärker unterstützen und langfristig finanziell absichern",
+          "ursachen_ids": [2501],
+          "zitat": "Projekte der mobilen Beratung gegen Rechtsextremismus, Opferberatungen und zivilgesellschaftliche Demokratiebündnisse […] müssen mit einem echten, wirksamen Demokratiefördergesetz stärker unterstützt und langfristig finanziell abgesichert werden.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=51",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10226,
+          "instrument": 10154,
+          "beschreibung": "Straftaten gegen Medienschaffende gesondert erfassen und von spezialisierten Staatsanwaltschaften bearbeiten lassen",
+          "ursachen_ids": [2501],
+          "zitat": "Straftaten gegen Medienschaffende sollten gesondert erfasst werden und von […] bearbeitet werden.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=55",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10227,
+          "beschreibung": "Plattformen bei Falschinformationen und Rechtsverstößen durch KI-erzeugte Inhalte haftbar machen",
+          "ursachen_ids": [2502],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Haftung für KI-Inhalte könnte Moderationsanreize erhöhen, trifft aber vor allem Falschinformation. Die Plattformhaftung ist im DSA geregelt, ein nationaler Alleingang ist nicht möglich.",
+          "zitat": "Durch Künstliche Intelligenz erzeugte Medieninhalte müssen gekennzeichnet werden, Plattformen haften bei Falschinformationen und Rechtsverstößen durch solche Inhalte.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=55",
+          "evidenz": "offen",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2501, 2503],
+      "massnahmen": [
+        {
+          "id": 10228,
+          "instrument": 10133,
+          "beschreibung": "Technik-Kompetenzzentren für Beratung, Weiterbildung und Forensik bei digitaler Gewalt aufbauen.",
+          "ursachen_ids": [2501],
+          "zitat": "Wir wollen Technik-Kompetenzzentren aufbauen, die Beratungsstellen, Frauenhäuser und Verbraucher*innen in den Bereichen Beratung, Weiterbildung und Forensik bei Fällen digitaler Gewalt sowie allgemein im Bereich IT-Sicherheit unterstützen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=287",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10229,
+          "instrument": 10135,
+          "beschreibung": "Fortbildungsoffensive und Spezialeinheiten in Polizei und Justiz gegen digitale Gewalt.",
+          "ursachen_ids": [2501],
+          "zitat": "Zusätzlich zum Ausbau von Schutz- und Therapieangeboten für Betroffene fordern wir hier eine Fortbildungs- und Sensibilisierungsoffensive innerhalb der Berliner Sicherheitsbehörden. Diese sollte verpflichtende Weiterbildung für Polizei und Justiz sowie die Bildung von Spezialeinheiten beim LKA und Fachdezernaten bei der Staatsanwaltschaft umfassen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=287",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10230,
+          "instrument": 10142,
+          "beschreibung": "Gesetzliche Regelungen gegen nicht einvernehmliche sexualisierte KI-Deepfakes fordern.",
+          "ursachen_ids": [2501],
+          "zitat": "Zum Schutz vor Deepfakes fordern wir strikte gesetzliche Regelungen gegen die Erstellung und Verbreitung KI-generierter sexualisierter Inhalte, die ohne Zustimmung der Betroffenen erstellt wurden.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=287",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10231,
+          "instrument": 10151,
+          "beschreibung": "Medienkompetenzzentren in allen Bezirken, kostenfreie Angebote und Schulungen für Fachkräfte.",
+          "ursachen_ids": [2503],
+          "zitat": "Wir wollen gut ausgestattete Medienkompetenzzentren in allen Bezirken, kostenfreie, pädagogisch begleitete Angebote und regelmäßige Schulungen für pädagogische Fachkräfte, damit junge Menschen, Eltern und Fachkräfte souverän und kritisch mit digitalen Medien umgehen können.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=178",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10232,
+          "instrument": 10150,
+          "beschreibung": "Ressortübergreifende Strategie gegen antimuslimischen Rassismus, die auch für den digitalen Raum gilt.",
+          "ursachen_ids": [2503],
+          "zitat": "Wir werden eine ressortübergreifende Strategie zur Bekämpfung von antimuslimischem Rassismus entwickeln und umsetzen, die auch für den digitalen Raum gilt.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=272",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10233,
+          "instrument": 10150,
+          "beschreibung": "Jugendarbeit stärker auf digitale Gewaltprävention und Empowerment ausrichten.",
+          "ursachen_ids": [2503],
+          "zitat": "Jugendarbeit muss als eigenständiger Schwerpunkt stärker berücksichtigt werden, insbesondere durch Empowermentansätze, politische Bildung, digitale Gewaltprävention sowie Diversitätsmanagement in Jugendverbänden und Einrichtungen der offenen Kinder- und Jugendarbeit.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=276",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10234,
+          "instrument": 10136,
+          "beschreibung": "Unabhängige Meldestellen für queerfeindliche Gewalt ausbauen und Opferberatung stärken.",
+          "ursachen_ids": [2501],
+          "zitat": "Wir fordern den Ausbau unabhängiger Meldestellen für queerfeindliche Gewalt und die Stärkung der Opferberatungsstellen, damit Betroffene auch ohne Anzeige Hilfe finden.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=218",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10235,
+          "instrument": 10133,
+          "beschreibung": "Betroffene von Hassgewalt besser unterstützen und den Hilfsfonds ausbauen.",
+          "ursachen_ids": [2501],
+          "zitat": "Betroffene von Hassgewalt müssen besser unterstützt werden und bei Bedarf unkompliziert finanzielle Hilfe erhalten. Den dafür vorgesehenen Fonds wollen wir ausbauen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=289",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10236,
+          "instrument": 10137,
+          "beschreibung": "Angriffe auf Obdachlose künftig als Hasskriminalität erfassen.",
+          "ursachen_ids": [2501],
+          "zitat": "Angriffe auf Obdachlose sollen künftig als Hasskriminalität erfasst werden.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=289",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10237,
+          "instrument": 10136,
+          "beschreibung": "Projekte gegen Antisemitismus stärken, die Vorfälle monitoren und Opfer beraten.",
+          "ursachen_ids": [2501],
+          "zitat": "[…] werden die Projekte stärken, die in diesem Feld Vorfälle monitoren, Opfer beraten und Präventionsarbeit leisten.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=271",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10238,
+          "instrument": 10133,
+          "beschreibung": "Beratung, Opferhilfe und anonyme Beschwerdestellen bei extrem rechten Vorfällen stärken.",
+          "ursachen_ids": [2501],
+          "zitat": "Angesichts rapide ansteigender extrem rechter, neonazistischer Vorfälle, gerade auch durch Jugendliche und junge Erwachsene, müssen Beratungsangebote, Opferhilfe, Register, unabhängige Archive und anonyme Beschwerdestellen strukturell wie finanziell gestärkt und ausgeweitet werden.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=326",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2501, 2503],
+      "massnahmen": [
+        {
+          "id": 10239,
+          "instrument": 10133,
+          "beschreibung": "Beratungs- und Unterstützungsangebote für Betroffene digitaler Gewalt ausbauen",
+          "ursachen_ids": [2501],
+          "zitat": "Wir wollen: […] Beratungs- und Unterstützungsangebote für Betroffene digitaler Gewalt ausbauen und stärken.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=14",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10240,
+          "instrument": 10135,
+          "beschreibung": "Hasskriminalität konsequent bekämpfen und Prävention mit Opferschutz verzahnen",
+          "ursachen_ids": [2501],
+          "zitat": "Wir wollen: […] Hasskriminalität und diskriminierende Straftaten konsequent bekämpfen und Präventionsarbeit mit Opferschutz verzahnen.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=7",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10241,
+          "instrument": 10134,
+          "beschreibung": "Polizei und Justiz für digitale Gewalt sensibilisieren und fortbilden",
+          "ursachen_ids": [2501],
+          "zitat": "Wir wollen: […] Polizei und Justiz stärker für digitale Gewalt sensibilisieren und entsprechend fortbilden.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=14",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10242,
+          "instrument": 10151,
+          "beschreibung": "Medienbildung auf allen Ebenen ausbauen, auch Lehrkräfte- und Erwachsenenbildung",
+          "ursachen_ids": [2503],
+          "zitat": "Wir wollen: […] Medienbildung auf allen Ebenen ausbauen: schulisch, außerschulisch und für Erwachsene.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=27",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10243,
+          "instrument": 10152,
+          "beschreibung": "Projekte unterstützen, die sich gegen Hass und digitale Übergriffe engagieren",
+          "ursachen_ids": [2503],
+          "zitat": "Wir wollen: […] Projekte unterstützen, die sich gegen Hass, sexualisierte Gewalt und digitale Übergriffe engagieren.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=14",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10244,
+          "beschreibung": "Bundesebene: Haftungs- und Sorgfaltspflichten für Tech-Konzerne, transparente Algorithmen",
+          "ursachen_ids": [2503],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Haftungs- und Sorgfaltspflichten sowie Algorithmentransparenz könnten Schutz vor Hass stärken; Wirkung unbelegt, vor allem Jugendschutz. Das Land kann nur auf Bundesebene darauf hinwirken; Regeln liegen bei der EU.",
+          "zitat": "Wir wollen: […] Uns auf Bundesebene für Haftungs- und Sorgfaltspflichten von Tech-Konzernen, insbesondere deren Verantwortung hinsichtlich des Kinder- und Jugendschutzes, sowie transparente Algorithmen und faire Besteuerung einsetzen.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=27",
+          "evidenz": "offen",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2501, 2503],
+      "massnahmen": [
+        {
+          "id": 10245,
+          "instrument": 10133,
+          "beschreibung": "Beratungsstellen gegen Hass im Netz stärken.",
+          "ursachen_ids": [2501],
+          "zitat": "… Deswegen stärken wir die Beratungsstellen gegen Hass im Netz.",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=21",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10246,
+          "instrument": 10133,
+          "beschreibung": "Spezialisierte Ansprechpartner:innen bei jeder Polizeibehörde und jedem Landkreis gegen Hasskriminalität.",
+          "ursachen_ids": [2501],
+          "zitat": "Hasskriminalität wird durch spezialisierte Ansprechpartner:innen in jeder Polizeibehörde und jedem Landkreis bekämpft – damit Opfer von Hass und Hetze ernst genommen werden.",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=127",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "durchsucht_fuer": [2501, 2502, 2503],
+      "massnahmen": [
+        {
+          "id": 10247,
+          "instrument": 10147,
+          "beschreibung": "Staatlich geförderte Meldestellen für Meinungsäußerungen abschaffen und nicht mehr aus Steuergeld finanzieren",
+          "ursachen_ids": [2501],
+          "zitat": "Inzwischen gibt es aber zahlreiche staatlich geförderte Meldestellen, bei denen ausdrücklich auch klar von der Meinungsfreiheit gedeckte Äußerungen gemeldet werden können. […] Wir fordern die Abschaffung von Meldestellen und deren Finanzierung mit Steuergeldern.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=39",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10248,
+          "beschreibung": "Polizei von Hausdurchsuchungen wegen Politikerbeleidigung und der Suche im Internet nach Beleidigungen entlasten",
+          "ursachen_ids": [2501],
+          "wirksamkeit": 0,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Verringert die Verfolgung von Beleidigungen und hilft Betroffenen nicht. Polizeiliche Prioritäten lassen sich rechtlich leicht ändern; für eine Entlastung der Polizei sprechen knappe Ressourcen.",
+          "zitat": "Die Polizei braucht auch Entlastung von nachrangigen Aufgaben. Hausdurchsuchungen wegen Politikerbeleidigung oder die Durchforstung des Internets nach möglichen Beleidigungen gehören ganz sicher nicht zu den Aufgaben, mit denen unsere Polizei und Ermittlungsbehörden sich beschäftigen sollten.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=35",
+          "evidenz": "offen",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10249,
+          "instrument": 10149,
+          "beschreibung": "Beleidigung von Personen des politischen Lebens aus dem Strafgesetzbuch (§ 188) streichen",
+          "ursachen_ids": [2501],
+          "zitat": "Wir fordern, den Tatbestand der Beleidigung einer „im politischen Leben des Volkes stehenden Person“ wieder aus Paragraf 188 des Strafgesetzbuchs zu streichen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=35",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2501, 2503],
+      "massnahmen": [
+        {
+          "id": 10250,
+          "instrument": 10146,
+          "beschreibung": "Abschaffung von Meldeportalen für strafrechtlich nicht relevante Meinungsäußerungen.",
+          "ursachen_ids": [2501],
+          "zitat": "Wir sind für die Abschaffung von Meldeportalen für strafrechtlich nicht relevante Meinungsäußerungen (Berliner Register etc.).",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=31",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2501, 2503],
+      "massnahmen": [
+        {
+          "id": 10251,
+          "instrument": 10150,
+          "beschreibung": "Politische Bildung und eine offene Debattenkultur an Regionalschulen stärken, mit Respekt und Meinungsvielfalt",
+          "ursachen_ids": [2503],
+          "zitat": "Stärkung poliƟscher Bildung und einer offenen DebaƩenkultur, die Meinungsvielfalt, Respekt und demokraƟsche Kompetenzen fördert.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=49",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2501, 2503],
+      "keine_massnahme": {
+        "begruendung": "Erfasste Stellen (S. 11) setzen laut Bewertung ohne Parteinamen an keiner der Ursachen an.",
+        "stand": "2026-10-14",
+        "treffer": 4,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    }
   ]
 }

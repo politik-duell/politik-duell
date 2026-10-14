@@ -1,0 +1,57 @@
+{
+  "partei_id": 16,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Hausaufgaben abschaffen; Einüben und Festigen des Gelernten soll in der Schule stattfinden",
+      "ursachen_ids": [2304],
+      "zitat": "Über Hausaufgaben wird soziale Ungleichheit in ungleichen Schulerfolg übersetzt, deshalb wollen wir sie abschaffen.",
+      "seite": 38
+    },
+    {
+      "beschreibung": "Schule für alle, in der Kinder unabhängig von Herkunft und Förderbedarf gemeinsam lernen",
+      "ursachen_ids": [],
+      "ursachen_offen": [2301],
+      "zitat": "Wir setzen dagegen auf eine Schule für alle. […] alle Kinder unabhängig von Herkunft, Förderbedarf oder sozialen Umständen gemeinsam lernen und wachsen können.",
+      "seite": 39
+    }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "Hausaufgaben", "ursache": 2304, "richtung": "Belastung reduzieren" }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 2302,
+      "seiten": [39, 44],
+      "grund": "Schulpsychologie und Schulsozialarbeit (S. 39, 44): Zitat nennt kein Mobbing, Gewalt oder Konflikt (R2). Mehr-Pädagog*innen-System (S. 39) ohne Bezug zu Mobbing. Lehrkräfte-Schulung nur zu KI und Datenschutz (S. 39)."
+    },
+    {
+      "ursache": 2303,
+      "seiten": [39, 40],
+      "grund": "Medien- und Datenschutzkompetenz von Kindern ist Mediennutzung von Kindern (R2). Medienkompetenz in der beruflichen Ausbildung (S. 40) ohne Schulbezug zu Cybermobbing."
+    }
+  ]
+}
+
+## Protokoll Linke (Bund), Thema 23 „Mobbing und Druck in der Schule“
+
+Gelesen: Inhaltsverzeichnis (S. 2–6); Kapitel 10 „Gute Bildung“ (S. 38–41) vollständig; Fundstellen S. 6, 15, 16, 18, 19, 20, 25, 26, 27, 32, 39, 40, 44, 47, 54, 58 (Kontext der Treffer, meist Gesundheit, Arbeit, Energie, Entwicklungspolitik, Wahlaufruf).
+
+Aufgenommen:
+- S. 38: Hausaufgaben abschaffen (2304, Entlastung von Schüler*innen).
+- S. 39: „Schule für alle“ mit gemeinsamem Lernen unabhängig von Herkunft und Förderbedarf (2301, Grenzfall).
+
+Nicht erfasst (gelesen, nicht aufgenommen):
+- S. 39: Schulpsychologie und Schulsozialarbeit an jeder Schule (2302): Zitat ohne Mobbing, Gewalt oder Konflikt, daher nach R2 nicht 2302.
+- S. 39: Mehr-Pädagog*innen-System, Mitbestimmung, Lernsoftware, KI-Schulung der Lehrkräfte: kein Bezug zu Mobbing, Klassenklima, Druck oder Entlastung.
+- S. 38: Vertretungsreserve von 10 Prozent gegen Unterrichtsausfall: Lehrkräftemangel (R2), kein 2302/2304.
+- S. 38 und 39: Sanierung, Ganztag, Schulbücher, Verpflegung, Verkehrssicherheit: keine Ursache.
+- S. 54: Inklusion, Umbau der Förderschulen und Sonderpädagogik an Regelschulen: Förderstruktur, kein Klassenklima- oder Mobbing-Bezug; der Gedanke steckt schon in „Schule für alle“ (S. 39).
+- S. 16: Schutz vor Gewalt und Erkennen sexualisierter Übergriffe im Vorschulalter; Kinder- und Jugendfreizeit: kein Schulbezug.
+- S. 19: Psychotherapie-Versorgung für Kinder und Jugendliche: Versorgung, keine Maßnahme gegen Druck in der Schule.
+- S. 40: Abschaffung des Kriteriums „Ausbildungsreife“: Ausbildung, nicht Schule.
+- S. 6, 15, 18, 20, 25–27, 32, 44, 47, 58: Preise, Rente, Pflege, Arbeitsbedingungen, Energie, Entwicklungspolitik, Kommunen, Queerpolitik, Wahlaufruf: kein Bezug zu den Ursachen dieses Themas.
+
+Richtungen ohne Maßnahme: 2302 (Beschwerdewege, Fortbildung der Lehrkräfte), 2303 (Plattformschutz, Cybermobbing mit Schulbezug). 2301 „Regeln und Konsequenzen“ ohne Fund. Keine Hebel-Checkliste im Auftrag.
+
+Seiten ohne Text (1, 59, 60): keine Rolle für das Thema.

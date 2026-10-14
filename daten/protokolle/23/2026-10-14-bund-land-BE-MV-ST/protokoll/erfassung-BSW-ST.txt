@@ -1,0 +1,106 @@
+{
+  "partei_id": 17,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Verbindlicher Personalschlüssel für Schulsozialarbeit und Schulpsychologie; jede Schule mindestens eine Schulsozialarbeiterstelle",
+      "ursachen_ids": [2301, 2302],
+      "zitat": "Schulsozialarbeit ist jedoch unverzichtbar für Prävention, Integration, Konfliktlösung und die Unterstützung von Lehrkräften. […] Wir brauchen einen verbindlichen, landesweiten Personalschlüssel für Schulsozialarbeit und Schulpsychologie, orientiert am Bundesdurchschnitt. Jede Schule muss dauerhaft mindestens eine Schulsozialarbeiterstelle haben, Förderschulen benötigen angepasste Schlüssel.",
+      "seite": 47
+    },
+    {
+      "beschreibung": "Mehr Studienplätze und stärkerer Praxisbezug im Lehramtsstudium für künftige Lehrkräfte",
+      "ursachen_ids": [2302],
+      "zitat": "Wir wollen die Stärken beider Modelle zusammenführen: mehr Studienplätze schaffen, den Praxisbezug landesweit ausbauen und zugleich eine exzellente wissenschaftliche Qualifizierung zukünftiger Lehrkräfte sichern.",
+      "seite": 52
+    },
+    {
+      "beschreibung": "Längeres gemeinsames Lernen bis zur 8. Klasse; begründet mit Leistungsdruck und Überforderung",
+      "ursachen_ids": [2304],
+      "zitat": "Der Druck, das Abitur als einzigen Weg zum Erfolg zu betrachten, belastet Familien und Kinder. Überforderung, Leistungsdruck, Nachhilfe und Schulabbrüche sind häufige Folgen. Das BSW ist deshalb für längeres gemeinsames Lernen bis zur 8. Klasse.",
+      "seite": 45
+    },
+    {
+      "beschreibung": "Sozialpsychiatrischen Dienst ausbauen und stärker in Jugend- und Schularbeit einbinden",
+      "ursachen_ids": [2304],
+      "zitat": "Immer mehr sozial benachteiligte Menschen, Rentner, Geflüchtete sowie Jugendliche leiden unter Depressionen, Zukunftsängsten oder Traumafolgestörungen. […] Der sozialpsychiatrische Dienst muss deshalb ausgebaut und stärker in Jugend-, Schul- und Integrationsarbeit eingebunden werden.",
+      "seite": 59
+    },
+    {
+      "beschreibung": "Kürzungen bei Anrechnungsstunden, Altersermäßigungen und Zusatzaufgaben für Lehrkräfte zurücknehmen (Entlastung)",
+      "ursachen_ids": [],
+      "ursachen_offen": [2304],
+      "zitat": "Kürzungen bei Anrechnungsstunden, Altersermäßigungen und Zusatzaufgaben müssen zurückgenommen werden.",
+      "seite": 44
+    },
+    {
+      "beschreibung": "Pflicht zur Arbeitszeiterfassung für Lehrkräfte umsetzen, um die Arbeitsbelastung sichtbar zu machen und zu begrenzen",
+      "ursachen_ids": [],
+      "ursachen_offen": [2304],
+      "zitat": "Die Pflicht zur Arbeitszeiterfassung muss auch in Sachsen-Anhalt umgesetzt werden.",
+      "seite": 44
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 2301,
+      "seiten": [12, 13, 15, 16, 43, 45, 73],
+      "grund": "Ausgrenzung nur politisch (Meinungsfreiheit, Förderstopp), soziales Lernen (S. 43) nur Ziel, Schülermitbestimmung (S. 73) ohne Klassenklima-Bezug; Smartphone-Verbot (S. 45) ist Mediennutzung, nach R2 eigenes Thema."
+    },
+    {
+      "ursache": 2302,
+      "seiten": [45, 46, 47, 72, 73],
+      "grund": "KI-Fortbildung (S. 45) nur Bedarfsaussage zu Prüfungsformaten, ohne Bezug zu Mobbing; Kita-Fortbildung (S. 46, 47) nicht Schule; Ombudsstellen (S. 72–73) betreffen Jugendhilfe, nicht Beschwerdewege an Schulen."
+    },
+    {
+      "ursache": 2304,
+      "seiten": [50, 51],
+      "grund": "Hochschul-Prüfungsdruck nur Lage und Prüfauftrag (Diplom ‚ernsthaft prüfen‘), keine Schulmaßnahme."
+    },
+    {
+      "ursache": 2304,
+      "seiten": [18, 20, 23, 27, 36, 38, 75, 76],
+      "grund": "Entlastung nur in Wirtschaft, Landwirtschaft, Berufsschule, Pflege, Steuern, Verwaltung, Justiz; kein Schülerdruck."
+    },
+    {
+      "ursache": 2304,
+      "seiten": [58, 80],
+      "grund": "Bündel Befähigung und Stressbewältigung: nur Lage zu psychischer Gesundheit Erwachsener bzw. Klimaresilienz in der Landwirtschaft; keine Zusage zur Stressbewältigung von Schülern."
+    }
+  ],
+  "eigene_synonyme": [
+    {
+      "begriff": "Konfliktlösung",
+      "ursache": 2302,
+      "richtung": "Unterstützung durch Fachkräfte und Beschwerdewege"
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 2302, "name": "Lehramtsausbildung und Praxisbezug", "seite": 52 },
+    { "ursache": 2304, "name": "Längeres gemeinsames Lernen", "seite": 45 },
+    { "ursache": 2304, "name": "Sozialpsychiatrischer Dienst für Jugendliche", "seite": 59 },
+    { "ursache": 2304, "name": "Arbeitszeiterfassung Lehrkräfte", "seite": 44 }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis (PDF S. 2–3); Kapitel 4.2 Gute Bildung (PDF S. 41–52, vollständig); Kapitel 4.4 Psychische Gesundheit (S. 57–59); Kapitel 5.4 Teilhabe der Jugend und Jugendhilfe-Abschnitt (S. 72–74). Fundstellen außerhalb dieser Kapitel (S. 12, 13, 15, 16, 18, 20, 23, 27, 36, 38, 75, 76, 80, 81) nach dem Auszug aus dem Auftrag geprüft: Politik, Wirtschaft, Landwirtschaft, Verwaltung, Pflege, Steuern – keine Schulmaßnahme. S. 1 ist Titelseite ohne Text (Stand 07.03.2026, passt zum Auftrag).
+
+Grenzfälle (ursachen_offen): Entlastung der Lehrkräfte (S. 44, 2304) wirkt auf Schüler nur indirekt; Arbeitszeiterfassung (S. 44, 2304) ebenso. Beide sind Zuordnungen nach dem Stichwort „Entlastung“ im Leitfaden.
+
+Gleicher Hebel, nicht gesondert: Vertrauenslehrkräfte (S. 48), multiprofessionelle Teams und Schulgesundheitsfachkräfte (S. 48), Verwaltungs- und Schulsekretariate (S. 44) sind Personal wie der Personalschlüssel (S. 47) und im Bündel „Unterstützung durch Fachkräfte und Beschwerdewege“ erfasst. Schulsozialarbeit zählt nach R2 zu 2301 und 2302, weil das Zitat „Konfliktlösung“ nennt.
+
+Gefunden, aber nicht erfasst:
+- S. 45 KI-Fortbildung („Lehrkräfte brauchen dafür gezielte Aus- und Fortbildung“): Bedarfsaussage zu Prüfungsformaten, kein Bezug zu Mobbing oder Handeln bei Mobbing.
+- S. 45 Smartphone-Verbot: Mediennutzung von Kindern, nach R2 eigenes Thema (das Zitat nennt zwar „soziale Konflikte“, die Maßnahme zielt aber auf Mediennutzung).
+- S. 43: soziales Lernen, Lernmittelfreiheit, Gemeinschaftsschule – Ziele oder anderer Zusammenhang.
+- S. 48–49: Ganztag (Verordnung, Förderprogramm, „Ganztag 2030“) – kein Bezug zu Mobbing oder Schülerdruck.
+- S. 72–73: Ombudsstellen für Jugendhilfe – keine Schule.
+- S. 50–51: Hochschule (Diplom „ernsthaft geprüft werden“, Studienstrukturen) – Prüfauftrag bzw. Ziel, nicht Schule.
+- S. 73: Schülermitbestimmung – kein Klassenklima- oder Ausgrenzungsbezug.
+- S. 12–16: Ausgrenzung im politischen Sinn – nicht schulisch.
+
+Richtungen ohne Maßnahme: 2301 „Regeln und Konsequenzen durchsetzen“ (nur Corona-Kontext, S. 16). Bündel „Befähigung und Stressbewältigung“ (2304) ohne Maßnahme, Gründe siehe nicht_erfasst. Ursache 2303 steht im Leitfaden, ist aber nicht Ursache dieses Auftrags.
+
+Seiten ohne Text: nur S. 1.

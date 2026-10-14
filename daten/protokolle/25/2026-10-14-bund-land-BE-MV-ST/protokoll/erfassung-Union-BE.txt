@@ -1,0 +1,77 @@
+{
+  "partei_id": 11,
+  "land": "BE",
+  "massnahmen": [
+    {
+      "beschreibung": "Beratungsangebote bei digitaler Gewalt ausbauen und die Strategien dagegen weiterentwickeln.",
+      "ursachen_ids": [2501],
+      "zitat": "Unsere Strategien zur Bekämpfung digitaler Gewalt werden wir gezielt weiterentwickeln, bestehende Beratungsangebote ausbauen",
+      "seite": 12
+    },
+    {
+      "beschreibung": "Neue Formen digitaler Gewalt wie digitale Belästigung und Mobbing in Sozialen Medien strafrechtlich bekämpfen; Gesetzeslücken schließen.",
+      "ursachen_ids": [2501],
+      "zitat": "Neue Formen digitaler Gewalt, etwa durch digitale Belästigungen, Mobbing in den Sozialen Medien oder manipulierte Inhalte wie Deepfakes müssen konsequent bekämpft und bestehende gesetzliche Lücken geschlossen werden.",
+      "seite": 12
+    },
+    {
+      "beschreibung": "Spezialabteilung der Staatsanwaltschaft für Hasskriminalität ausbauen und stärken.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2501],
+      "zitat": "Die spezialisierte Abteilung für Staatsschutzdelikte und Hasskriminalität bei der Staatsanwaltschaft werden wir weiter ausbauen und stärken.",
+      "seite": 22
+    },
+    {
+      "beschreibung": "Bestehende Schutz-Anlaufstellen für Betroffene queerfeindlicher Straftaten fortführen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2501],
+      "zitat": "Bestehende Schutz-Anlaufstellen führen wir bedarfsgerecht fort.",
+      "seite": 110
+    },
+    {
+      "beschreibung": "Medienkompetenz als verbindlichen Bestandteil an allen Schulen verankern.",
+      "ursachen_ids": [2503],
+      "zitat": "Medienbildung ist Demokratiebildung. Deshalb wollen wir Medienkompetenz als verbindlichen Bestandteil an allen Schulen verankern. Schülerinnen und Schüler sollen lernen, Informationen kritisch zu prüfen, Desinformation zu erkennen und digitale wie klassische Medien verantwortungsvoll zu nutzen.",
+      "seite": 63
+    },
+    {
+      "beschreibung": "Stadtweite Kampagnen zur Zivilcourage, damit Menschen im öffentlichen Raum eingreifen können.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2503],
+      "zitat": "Gleichzeitig fördern wir das menschliche Miteinander durch stadtweite Kampagnen zur Zivilcourage, damit Berliner im öffentlichen Raum achtsam eingreifen können.",
+      "seite": 110
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 2501, "name": "Staatsanwaltschaft Hasskriminalität ausbauen", "seite": 22 },
+    { "ursache": 2501, "name": "Schutz-Anlaufstellen fortführen", "seite": 110 },
+    { "ursache": 2503, "name": "Zivilcourage-Kampagnen", "seite": 110 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "Hetze", "ursache": 2501, "richtung": "Strafverfolgung von Hass" },
+    { "begriff": "Zivilcourage", "ursache": 2503, "richtung": "Prävention und Gegenrede" }
+  ]
+}
+
+--- Protokoll ---
+
+Thema 25 „Hass und Anfeindungen im Internet“, Union (BE). Stand laut Auftrag 2026-06-09.
+
+Gelesen: Inhaltsverzeichnis (S. 2–3); Kapitel I (S. 6–14), insbesondere Gewaltschutz und Kinder- und Jugendschutz (S. 11–13); Kapitel II (S. 17–26), Strafverfolgung und Extremismus; Kapitel V, Medienbildung (S. 63–64); Kapitel VII, Ordnung und Sauberkeit (S. 77–80); Kapitel VIII, Personal und Finanzen (S. 90–93); Kapitel X, Verantwortung in Vielfalt (S. 110–111); Fundstellen S. 12, 20, 22, 25, 63, 79 vollständig. Textsuche nach Hass-, Netz- und Plattform-Begriffen im gesamten Text ausgewertet.
+
+Nicht erfasst:
+- S. 79: Strafbare Schmierereien, antisemitische Graffiti innerhalb von 24 Stunden entfernen. Kein Internetbezug, Hebel Reinigung statt Hilfe oder Strafverfolgung im Netz.
+- S. 83: Stärkere Kontrolle von Online-Plattformen beim Heimtierhandel. Kein Bezug zu Hass oder Anfeindung (R2).
+- S. 20: Finanzermittlungszentrum, Datenaustausch der Behörden, IP-Adressen-Speicherung. Keine Hasskriminalität genannt.
+- S. 22: „Antisemitische Hetze und Straftaten sind konsequent zu verfolgen und zu bestrafen.“ Gleiche Richtung wie die Abteilungs-Maßnahme (S. 22), nicht zusätzlich erfasst; Hetze ohne Netzbezug.
+- S. 25: Strafbarkeitslücke bei Flugdaten (§ 97a AufenthG). Kein Hassbezug.
+- S. 9, 13, 14, 23, 26, 30, 41, 56–61, 64, 70, 78, 90–93, 97–109, 116, 123–124: kein Bezug zu Hass oder Anfeindung im Netz.
+- Bündel „Moderation und Gestaltung der Plattformen“ (2503): keine Fundstelle im Text gefunden (kein Klarnamen-, Algorithmen-, Moderations- oder Netiquette-Bezug).
+- Bündel „Meldewege und Hilfe für Betroffene ausbauen“ (2501): Meldestellen oder Opferberatung im Netz werden nicht genannt; die Beratung in S. 12 ist erfasst.
+- Ursache 2502 (Plattformpflichten) gehört nicht zu diesem Auftrag.
+
+Richtungen ohne Maßnahme: 2503 „Moderation und Gestaltung der Plattformen“ (siehe oben).
+
+Grenzfälle (ursachen_offen): Spezialabteilung Hasskriminalität (S. 22), Schutz-Anlaufstellen für queerfeindliche Straftaten (S. 110, offline), Zivilcourage-Kampagnen (S. 110, offline).
+
+Seiten ohne Text: 1, 5, 17, 28, 39, 53, 67, 76, 86, 95, 106, 127, 128 – keine Rolle gespielt (Trennseiten).

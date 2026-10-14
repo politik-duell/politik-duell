@@ -1,0 +1,65 @@
+{
+  "partei_id": 17,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Staatlich geförderte Meldestellen für Meinungsäußerungen abschaffen und nicht mehr aus Steuergeld finanzieren",
+      "ursachen_ids": [2501],
+      "zitat": "Inzwischen gibt es aber zahlreiche staatlich geförderte Meldestellen, bei denen ausdrücklich auch klar von der Meinungsfreiheit gedeckte Äußerungen gemeldet werden können. […] Wir fordern die Abschaffung von Meldestellen und deren Finanzierung mit Steuergeldern.",
+      "seite": 39
+    },
+    {
+      "beschreibung": "Polizei von Hausdurchsuchungen wegen Politikerbeleidigung und der Suche im Internet nach Beleidigungen entlasten",
+      "ursachen_ids": [2501],
+      "zitat": "Die Polizei braucht auch Entlastung von nachrangigen Aufgaben. Hausdurchsuchungen wegen Politikerbeleidigung oder die Durchforstung des Internets nach möglichen Beleidigungen gehören ganz sicher nicht zu den Aufgaben, mit denen unsere Polizei und Ermittlungsbehörden sich beschäftigen sollten.",
+      "seite": 35
+    },
+    {
+      "beschreibung": "Beleidigung von Personen des politischen Lebens aus dem Strafgesetzbuch (§ 188) streichen",
+      "ursachen_ids": [2501],
+      "zitat": "Wir fordern, den Tatbestand der Beleidigung einer „im politischen Leben des Volkes stehenden Person“ wieder aus Paragraf 188 des Strafgesetzbuchs zu streichen.",
+      "seite": 35
+    },
+    {
+      "beschreibung": "Staatsanwaltschaft unabhängig von politischen Weisungen stellen (Grenzfall: Strafverfolgung allgemein)",
+      "ursachen_ids": [],
+      "ursachen_offen": [2501],
+      "zitat": "Zudem ist die Staatsanwaltschaft in Deutschland weisungsgebunden und somit Einflüssen der Politik ausgesetzt. […] Wir fordern eine unabhängige Staatsanwaltschaft ohne Weisungsgebundenheit.",
+      "seite": 40
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 2501, "name": "Strafnorm streichen", "seite": 35 },
+    { "ursache": 2501, "name": "Weisungsunabhängigkeit der Staatsanwaltschaft", "seite": 40 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "politikerbeleidigung", "ursache": 2501, "richtung": "Verfolgung abbauen" }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 2502, "seiten": [24, 39, 40, 43], "grund": "Kritik am Digital Services Act ohne eigene Handlungszusage; Forderung nach klaren Begriffen betrifft Begriffsdefinition, keine Plattformpflicht; Social-Media-Altersgrenze (S. 24) ist allgemeine Netzpolitik ohne Hass-Bezug (R2); Datenschutzforderung (S. 43) ohne Hass-Bezug." },
+    { "ursache": 2503, "seiten": [24, 41], "grund": "Algorithmen nur als Problem beschrieben; keine Zusage zu Moderation, Anonymität, Klarnamen, Empfehlungssystemen oder Transparenz." }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: PDF-Seiten 24 (Kinder, Social Media), 33–35 (Gewaltschutz, Sicherheit, Polizei), 38–45 (Meinungsfreiheit, Medien, Digitales, Schluss). Präambel und Kapitel 1–3 (S. 2–23) nur über Stichwortsuche gesichtet, ohne Hass-, Netz- oder Strafverfolgungsbezug. Kein Inhaltsverzeichnis im PDF.
+
+Pflicht 2501 erfüllt: vier Maßnahmen für 2501. Zuordnung der Polizei-Maßnahme (S. 35): Zitat nennt Politiker als Betroffene der Beleidigung, daher 2501 (R1).
+
+Strafrecht-Forderung (S. 40: „Strafrecht nicht unangemessen ausweiten“) gleicher Hebel wie § 188 streichen; nur die konkretere Stelle erfasst.
+
+Nicht erfasst:
+- S. 35: Schutz von Einsatzkräften vor verbalen und tätlichen Angriffen – offline, kein Internetbezug.
+- S. 33–34: Gewaltschutz für Frauen, Frauenhäuser, Täterarbeit – offline, kein Bezug zu Hass im Netz.
+- S. 39–40: „Hass und Hetze“ und „Desinformation“ nicht unklar definieren – Begriffsforderung ohne Maßnahme.
+- S. 24: Social-Media-Gesetz nach australischem Vorbild – allgemeine Netzpolitik ohne Hass-Bezug (R2).
+- S. 41: Algorithmen als Problem beschrieben, keine Zusage.
+- S. 43: Verbot des Sammelns von Verhaltensdaten – Datenschutz (R2).
+
+Richtungen ohne Maßnahme: Beratung und Hilfe für Betroffene (2501; kein Fund); Plattformen in die Pflicht nehmen (2502; nur Kritik am DSA); Eigenverantwortung der Plattformen (2502; keine eigene Zusage); Prävention, Gesprächskultur (2503; kein Fund); Moderation und Gestaltung der Plattformen (2503; nur Problembeschreibung).
+
+Grenzfall: Staatsanwaltschaft (S. 40) als ursachen_offen 2501 mit neuem Bündel.
+
+Neue Bündel: „Strafnorm streichen“ (S. 35), „Weisungsunabhängigkeit der Staatsanwaltschaft“ (S. 40).
+Stand im PDF: nicht angegeben (Titel „Wahlprogramm für die Bundestagswahl 2025“).

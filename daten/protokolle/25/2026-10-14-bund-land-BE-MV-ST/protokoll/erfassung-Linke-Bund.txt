@@ -1,0 +1,79 @@
+{
+  "partei_id": 16,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "EU-Plattformrecht (Digital Services Act) zügig ins nationale Recht überführen und weiterentwickeln",
+      "ursachen_ids": [2502],
+      "zitat": "Die EU-Gesetze über […] und über digitale Dienste (Digital Services Act) müssen zügig in nationales Recht überführt und perspektivisch weiterentwickelt werden.",
+      "seite": 57
+    },
+    {
+      "beschreibung": "Bundesnetzagentur mit ausreichend Personal ausstatten, um Verbraucherschutz und den Digital Services Act umzusetzen",
+      "ursachen_ids": [2502],
+      "zitat": "Die Bundesnetzagentur braucht ausreichend Personal, um Verbraucherschutz und den Digital Services Act wirksam umzusetzen.",
+      "seite": 57
+    },
+    {
+      "beschreibung": "Opferberatungen und Projekte gegen Rechtsextremismus stärker unterstützen und langfristig finanziell absichern",
+      "ursachen_ids": [],
+      "ursachen_offen": [2501],
+      "zitat": "Projekte der mobilen Beratung gegen Rechtsextremismus, Opferberatungen und zivilgesellschaftliche Demokratiebündnisse […] müssen mit einem echten, wirksamen Demokratiefördergesetz stärker unterstützt und langfristig finanziell abgesichert werden.",
+      "seite": 51
+    },
+    {
+      "beschreibung": "Unterstützung für alle, die von Diskriminierung, Hetze und rechter Gewalt betroffen sind",
+      "ursachen_ids": [],
+      "ursachen_offen": [2501],
+      "zitat": "Kein Mensch darf ausgegrenzt werden! Wir unterstützen alle, die von Diskriminierungen, Hetze und rechter Gewalt betroffen sind.",
+      "seite": 48
+    },
+    {
+      "beschreibung": "Straftaten gegen Medienschaffende gesondert erfassen und von spezialisierten Staatsanwaltschaften bearbeiten lassen",
+      "ursachen_ids": [],
+      "ursachen_offen": [2501],
+      "zitat": "Straftaten gegen Medienschaffende sollten gesondert erfasst werden und von […] bearbeitet werden.",
+      "seite": 55
+    },
+    {
+      "beschreibung": "Plattformen bei Falschinformationen und Rechtsverstößen durch KI-erzeugte Inhalte haftbar machen",
+      "ursachen_ids": [],
+      "ursachen_offen": [2502],
+      "zitat": "Durch Künstliche Intelligenz erzeugte Medieninhalte müssen gekennzeichnet werden, Plattformen haften bei Falschinformationen und Rechtsverstößen durch solche Inhalte.",
+      "seite": 55
+    }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "Hetze", "ursache": 2501, "richtung": "Meldewege und Hilfe für Betroffene ausbauen" }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 2503,
+      "seiten": [40, 43, 48, 51, 57],
+      "grund": "Politische Bildung, Medienkompetenz, Kritik an Tech-Konzernen (S. 40, 51, 57) ohne Bezug zu Anfeindung. Anonymität im Internet (S. 43) steht im Tierhandel-Zusammenhang. Algorithmen (S. 48) in Sicherheitspolitik. Keine Moderations- oder Gesprächsdesign-Zusage."
+    }
+  ]
+}
+
+## Protokoll Linke (Bund), Thema 25 „Hass und Anfeindungen im Internet“
+
+Gelesen: Inhaltsverzeichnis (S. 2–6); Kapitel 15 „Für ein Land, in dem alle mitbestimmen können“ (S. 48–50), Kapitel 16 „Extreme Rechte stoppen!“ (S. 51–52), Kapitel 17 (S. 52–53), Kapitel 19 „Medien und Kultur“ (S. 55–56), Kapitel 20 „Digitalisierung“ (S. 57–58); Fundstellen S. 28, 40, 43, 48, 49, 51, 55, 57.
+
+Aufgenommen:
+- S. 57: Digital Services Act ins nationale Recht überführen (2502).
+- S. 57: Bundesnetzagentur personell für Verbraucherschutz und DSA ausstatten (2502).
+- S. 51, 48, 55: Grenzfälle, Ursache offen. Opferberatungen und Unterstützung von Betroffenen von Hetze und rechter Gewalt (2501), Strafverfolgung von Straftaten gegen Medienschaffende (2501), Plattformhaftung für KI-erzeugte Falschinformationen und Rechtsverstöße (2502).
+
+Nicht erfasst (gelesen, nicht aufgenommen):
+- S. 28: Staatsanwaltschaften bei Behinderung von Betriebsratswahlen: Arbeitsrecht, kein Hass-Bezug.
+- S. 48: Kriminalpolizei und Staatsanwaltschaft mit Kriminalität Schritt halten lassen, inklusive Manipulation mithilfe von KI in sozialen Medien: allgemeine Sicherheits- und Netzpolitik ohne Bezug zu Hass oder Anfeindung (R2).
+- S. 49: Strafbarkeit von Abgeordnetenbestechung, Awareness-Konzepte gegen sexualisierte Gewalt, Chat-Kontrollen: kein Bezug zu Hass im Netz.
+- S. 55: Einschüchterungsklagen gegen kritische Recherchen, kostenlose Unterstützung der Betroffenen: Medienrecht, nicht Hass im Netz. Kennzeichnung KI-Inhalte: Desinformation, kein Hass-Bezug.
+- S. 56: Haftung für Onlinemarktplätze: Verbraucherschutz (R2, Betrug). Gemeinnützige Plattformen als Alternative (S. 57) und personalisierte Werbung: kein Pflicht- oder Moderationsbezug zu Hass.
+- S. 43: Anonymität im Internet: Aufzählung zum Tierhandel, eigener Zusammenhang.
+- S. 51: Politische Bildung stärken, Gedenkstätten: Prävention ohne Bezug zu Anfeindung im Netz.
+- S. 51, 57: Lagebeschreibungen („Hass schüren“, „Hassbotschaften … nehmen zu“), Bekenntnisse („nicht auf Hass … setzen“): keine Handlungszusage.
+
+Richtungen ohne Maßnahme: 2503 (Prävention, Medienkompetenz, Gesprächskultur; Moderationsdesign, Anonymität, Algorithmen). 2501 Meldewege und Hilfe ohne eigene Meldestellen-Zusage. 2502 Eigenverantwortung der Plattformen: nichts gefunden.
+
+Seiten ohne Text (1, 59, 60): keine Rolle für das Thema.

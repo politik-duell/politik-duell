@@ -1,0 +1,73 @@
+{
+  "partei_id": 15,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Disziplinarrechte und rechtliche Sicherheit der Lehrkräfte und Schulen stärken.",
+      "ursachen_ids": [2301],
+      "ursachen_offen": [2302],
+      "zitat": "Disziplinarrechte der Lehrer und Schulen stärken. Um den Auftrag der Schule gerecht zu werden, bedarf es einer Stärkung der rechtlichen Sicherheit und der Disziplinarrechte.",
+      "seite": 162
+    },
+    {
+      "beschreibung": "Bildungsstandards aller Schulformen anheben, statt Leistungsanforderungen zu senken.",
+      "ursachen_ids": [2304],
+      "zitat": "Statt einer Senkung der Leistungsanforderungen müssen die Bildungsstandards aller Schulformen und Bildungseinrichtungen wieder auf das Niveau einer führenden innovativen Wissenschafts- und Industrienation angehoben werden.",
+      "seite": 159
+    },
+    {
+      "beschreibung": "Verbindliche Kriterien für den Übergang auf das Gymnasium festlegen.",
+      "ursachen_ids": [2304],
+      "zitat": "Wir werden verbindliche Kriterien für den Übergang auf das Gymnasium festlegen.",
+      "seite": 160
+    },
+    {
+      "beschreibung": "Klassenstärken an allen Schulformen verringern.",
+      "ursachen_ids": [2301],
+      "zitat": "An allen Schulformen sollen die Klassenstärken verringert werden.",
+      "seite": 159
+    },
+    {
+      "beschreibung": "Förderschulen erhalten; Inklusion soll Schüler und Lehrer nicht überfordern.",
+      "ursachen_ids": [2304],
+      "zitat": "Eine Inklusion muss mit Augenmaß erfolgen, den Kindern Erfolgserlebnisse ermöglichen, darf aber Schüler und Lehrer nicht überfordern und die Mitschüler nicht am Lernfortschritt hindern. […] Die AfD setzt sich deshalb für den Erhalt der Förderschulen ein.",
+      "seite": 160
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 2303,
+      "seiten": [161],
+      "grund": "Kapitel Bildung (S. 159–163) gelesen. Digitalfreie Grundschuljahre betreffen Mediennutzung von Kindern (R2), nichts gegen Cybermobbing oder Plattformschutz."
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 2301, "name": "Klassenstärke verringern", "seite": 159 },
+    { "ursache": 2304, "name": "Verbindliche Kriterien für den Gymnasium-Übergang", "seite": 160 },
+    { "ursache": 2304, "name": "Förderschulen erhalten", "seite": 161 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "disziplinarrecht", "ursache": 2301, "richtung": "Konsequenzen durchsetzen" },
+    { "begriff": "bildungsstandard", "ursache": 2304, "richtung": "anheben" }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis (S. 1–8); Kapitel Bildung, Wissenschaft und Technologieoffenheit (S. 159–163) vollständig; Fundstellen S. 33, 59, 61, 119, 148 (Impfpflicht, Steuern, Familie, Innere Sicherheit: kein Bezug zu Mobbing oder Druck in der Schule); Familienkapitel S. 151–152 (Geschlechtsidentität, Kritik ohne Maßnahme zu Mobbing).
+
+Ursache 2301 (Klassenklima): Maßnahme Disziplinarrechte (S. 162, offen zu 2302) und Klassenstärke (S. 159, Grenzfall: kein Bezug zu Klassenklima im Text). Bündel „Klassenklima und soziales Lernen stärken“: keine Stelle gefunden.
+Ursache 2302 (Lehrkräfte): Disziplinarrechte (S. 162) zugleich als Stärkung der rechtlichen Sicherheit. Bündel Fachkräfte/Beschwerdewege und Fortbildung: nichts gefunden.
+Ursache 2303 (Cyber): nichts gefunden; S. 161 digitalfreie Räume nach R2 als Mediennutzung nicht erfasst. Bündel Plattformschutz/Jugendschutz: nichts gefunden.
+Ursache 2304 (Druck): Bildungsstandards anheben (S. 159, Bündel „Belastung reduzieren“ mit umgekehrter Richtung), Kriterien Gymnasium-Übergang (S. 160, Grenzfall), Förderschulen erhalten mit Begründung Überforderung (S. 160–161, Grenzfall). Bündel „Befähigung und Stressbewältigung“: nichts gefunden.
+
+Nicht erfasst (gelesen, nicht aufgenommen):
+- S. 160: Schulpflicht zur Bildungspflicht lockern – kein Bezug zu Mobbing oder Leistungsdruck im Text.
+- S. 159: Schüler haben das Recht, ihre Ansichten ohne Angst vor Diskriminierung durch Mitschüler zu äußern – Recht, keine Handlungszusage.
+- S. 160: Das Abitur muss wieder Ausweis der Studierfähigkeit werden – Ziel.
+- S. 162: Einfluss des politischen Islam an Schulen, Muslimen keine Sonderrechte – kein Bezug zu Mobbing oder Druck.
+- S. 162: Pflichtdeutschunterricht für Migrantenkinder – kein Bezug zu Mobbing oder Druck.
+
+Seiten ohne Text: 159–163 gelesen, keine davon als Bild.
+Kein Hebel-Checklistenteil im Auftrag.
+Selbstprüfung: im Arbeitsumfeld nicht ausführbar (kein Shell-Zugriff); Befehl siehe Auftrag.

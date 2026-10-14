@@ -1,0 +1,49 @@
+{
+  "partei_id": 12,
+  "land": "BE",
+  "massnahmen": [
+    {
+      "beschreibung": "Medienkompetenz, kritischer Umgang mit sozialen Medien und digitale Verantwortung als fester Bestandteil schulischer Bildung, mit neuem Rahmenlehrplan Digitales.",
+      "ursachen_ids": [2503],
+      "zitat": "Wir stärken Medienkompetenz, kritischen Umgang mit sozialen Medien, KI-Kompetenzen und digitale Verantwortung als festen Bestandteil schulischer Bildung. Dafür entwickeln wir einen neuen Rahmenlehrplan Digitales.",
+      "seite": 41
+    },
+    {
+      "beschreibung": "Digitale Präventionsansätze gegen Hassrede in eine Strategie für Demokratie und Zusammenhalt im Netz einbetten.",
+      "ursachen_ids": [2503],
+      "zitat": "Berlin braucht eine Strategie für lebendige Demokratie und gesellschaftlichen Zusammenhalt im Netz, ergänzt um digitale Präventionsansätze gegen Hassrede, Desinformation und Radikalisierung.",
+      "seite": 29
+    },
+    {
+      "beschreibung": "Hasskriminalität online wie offline stärker verfolgen, Aufklärungsquoten erhöhen.",
+      "ursachen_ids": [2501],
+      "zitat": "Gewalt gegen Frauen, queerfeindliche Übergriffe und andere Formen von Hasskriminalität bekämpfen wir entschlossen - egal, ob sie online oder offline stattfinden. Wir stärken spezialisierte Beratungsstellen und erhöhen die […].",
+      "seite": 30
+    },
+    {
+      "beschreibung": "Spezialisierte Beratungsstellen für Betroffene von Hasskriminalität stärken.",
+      "ursachen_ids": [2501],
+      "zitat": "Gewalt gegen Frauen, queerfeindliche Übergriffe und andere Formen von Hasskriminalität bekämpfen wir entschlossen - egal, ob sie online oder offline stattfinden. Wir stärken spezialisierte Beratungsstellen und erhöhen die […].",
+      "seite": 30
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 2503, "name": "Digitale Präventionsstrategie gegen Hassrede", "seite": 29 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 2501, "seiten": [19, 20, 32], "grund": "Keine Meldestelle für Hass im Netz. Mietpreis-Check-App und Mietenaufsicht (S. 19–20) betreffen überhöhte Mieten, nicht Hass im Netz. S. 32 Cybergrooming ist sexualisierte Gewalt, kein Hasskommentar." },
+    { "ursache": 2503, "seiten": [31, 41, 47, 48, 55], "grund": "Kein Plattform-Bezug. Digitales Community Policing (S. 31) ohne Bezug zu Hass. Empathie-Wahlpflichtfach (S. 41) ohne Online- oder Hassbezug. Großstadtanonymität (S. 47) meint offline. Algorithmen (S. 48) betreffen Verwaltungssysteme ohne Hassbezug. Medienaufsicht und Medienkompetenz der Landesmedienanstalt (S. 55) ohne Hassbezug." }
+  ]
+}
+
+Protokoll – Teilauftrag Thema 25 (SPD Berlin, Hass und Anfeindungen im Internet)
+
+Gelesen: Sicherheit und Justiz (S. 29–32), Schule und digitale Bildung (S. 41), Zusammenleben und Vielfalt (S. 47–49), Medien und Kultur (S. 55). Fundstellen S. 9, 19, 20, 29–32, 41, 47, 48, 55.
+
+Fehltreffer des Skripts: S. 9, 19, 20 (Staatsanwaltschaft für Betriebsräte bzw. Mietwucher, kein Hassbezug). S. 41 Medienkompetenz wurde als 2503 zugeordnet, weil der Auftrag diesen Begriff der Richtung Prävention und Medienkompetenz zuordnet. S. 47 Anonymität und S. 48 Algorithmen (siehe oben).
+
+Gleicher Vorschlag an mehreren Stellen: Strafverfolgung und Beratung stehen im selben Satz (S. 30). Sie sind zwei Hebel und daher zwei Maßnahmen mit demselben Zitat.
+
+Grenzfälle: Die digitale Präventionsstrategie (S. 29) ist als Bedarf formuliert („Berlin braucht eine Strategie“), aber mit konkreten Präventionsansätzen verbunden; sie ist deshalb als 2503 erfasst. Gewalt gegen Frauen und queerfeindliche Übergriffe (S. 30) sind nur mit dem Zusatz „online oder offline“ auf dieses Thema bezogen.
+
+Seiten ohne Text, die eine Rolle spielten: keine.
