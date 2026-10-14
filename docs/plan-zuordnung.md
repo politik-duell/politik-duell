@@ -25,6 +25,40 @@ Zwei Testpartien in der geschlossenen Testphase (Persona: älterer AfD-Wähler, 
 
 Der Prompt regelt diese Fälle schon (`ki.ts` → `systemPrompt`: „Nimm keine Ursache dazu, nur weil sie … ähnlich klingt“), und `bereinigeAntwort` prüft, dass der Beleg wörtlich in der Schilderung steht. **Ob der Beleg die Ursache trägt, lässt sich im Code aber nicht prüfen** – und weitere Regeln im Prompt beheben einzelne Fälle, nicht das Raten selbst. Menschen schildern Symptome („Strom ist teuer“); die Ursachen im Katalog sind Befunde („Börsenpreis richtet sich nach dem teuersten Kraftwerk“). Diese Lücke kann die KI nur schließen, indem sie rät.
 
+## Ausgangsmessung (13. 10. 2026)
+
+`npm run ki:testset -- --nur <die 20 Fälle tp-*, beleg-*, thema-*>` mit dem heutigen Prompt, ein Lauf: **11 von 20 richtig** (Typ 19/20, Thema 17/20, Ursachen exakt 7/13). Die Fehler aus den Testpartien treten wieder auf – sie sind also systematisch, keine Ausreißer:
+
+| Fall | Erwartet | KI heute | Falltyp |
+| --- | --- | --- | --- |
+| tp-windrad-forderung | Haltung (Windkraft-Ausbau) | Forderung, Thema **Schule** – wie in der Testpartie | falsches Thema |
+| tp-windrad-laerm | kein erfasstes Thema | Thema **Internet und Mobilfunk** | falsches Thema |
+| thema-tanken-tafel | Armut, Nachfrage | Autofahren, zwei Ursachen | falsches Thema |
+| tp-amt, beleg-formular | „so viele Vorschriften und Formulare“ (1404) | beide Male „dieselben Nachweise bei jeder Behörde“ (1403) | Beleg passt nicht |
+| tp-bahnhof | nur „nachts an Bahnhöfen unsicher“ (901) | zusätzlich „Straftaten bleiben ohne Folgen“ (902) – wie in der Testpartie | Beleg passt nicht |
+| tp-rente-reicht-nicht | keine Ursache (Rentenniveau nicht erfasst) | „kleine Rente, weil wenig verdient“ (702) | nur entfernt passend |
+| tp-arzt-land | Nachfrage (zwei Probleme) | zwei Arzt-Ursachen | mehrere Probleme |
+| tp-wohnung-warten | Sozialwohnungen (206) | nur die erlaubten Nebenursachen | zu wenig |
+
+Einzelergebnisse liegen nicht im Repository; der Lauf ist mit dem Befehl oben wiederholbar.
+
+## Katalog-Nachträge aus dem Gegenlesen
+
+Beim Gegenlesen der Testfälle festgelegt – je über die bestehenden Skills (`/thema-anlegen`, `/thema-erfassen`, `/haltung-erfassen`), nicht über den Prompt:
+
+| Anlass (Fall) | Nachtrag | Bis dahin erwartet |
+| --- | --- | --- |
+| Rente reicht trotz 40 Arbeitsjahren nicht | Ursache zu Rentenniveau und Lebenshaltungskosten. Bis dahin soll das Spiel anzeigen, dass dieser Teil des Themas **noch nicht erfasst** ist. | keine Ursache |
+| Arzt weit weg und Bus fährt kaum | Nachfrage, welches Problem zuerst; die Nachfrage soll auf die **Infrastruktur in ländlichen Regionen** zielen (Thema 24) | Nachfrage |
+| „Polizei sieht man kaum“ | Ursache zu fehlender **Polizeipräsenz** im öffentlichen Raum (heute gibt es nur Aufklärung, 902) | nur 901 |
+| „Schluss mit den Windrädern“ | als Haltung einordnen (Haltung 4, Windkraft-Ausbau) mit Zielkonflikten aus Studien: Klimawandel, Unabhängigkeit von Energiepreisen auf dem Weltmarkt | Typ `wert` |
+| Lärm von Windrädern | neues Thema **Ausbau erneuerbarer Energien** (Lärm, Abstände, Beteiligung vor Ort; vgl. Haltung 29) | kein Thema |
+| Fremd im eigenen Ort | Ursache zu **Identität und Integration**: Ballung statt guter Verteilung, wenig Kontakt; aus Studien, woher das Gefühl kommt und was politisch hilft | keine Ursache |
+| Wärmepumpe des Nachbarn brummt | neues Thema **Wärmewende**; die Einordnung soll den Lärm in Relation setzen (z. B. zu Verkehrslärm einer nahen Autobahn) | kein Thema |
+| Tanken teuer, „Tafel“ | Thema **Armut** statt Autofahren; Ursachen und Lösungswege prüfen: warum Menschen so arm sind, Grundsicherung zu niedrig, Einschränkungen in der Sozialhilfe, **Sozialticket** für Bus und Bahn | Thema 21, Nachfrage |
+
+Ändert ein Nachtrag den Katalog, wird der zugehörige Fall in `scripts/ki-testset/faelle.json` angepasst.
+
 ## Ist-Zustand
 
 | Stelle | Verhalten heute |
@@ -165,7 +199,7 @@ Nach jeder Eingabe mit Thema erscheint vor der Auflösung eine von zwei Ansichte
 
 ## Reihenfolge
 
-1. Testsatz mit erwarteten Ergebnissen anlegen und gegenlesen lassen; einmal mit dem heutigen Stand laufen lassen.
+1. ~~Testsatz anlegen, gegenlesen, mit dem heutigen Stand laufen lassen~~ (erledigt, siehe „Ausgangsmessung“).
 2. Schritt 1 und 2 in `ki.ts` und `analyse/index.ts`, mit den Auslösern, Unit-Tests und Mock. Antwortformat abwärtskompatibel halten, bis die App umgestellt ist.
 3. Bestätigung in der App (`Runde.tsx`, `UrsachenAuswahl.tsx`, `Aufloesung.tsx`), „Nichts davon passt“ mit Speicherung.
 4. Testsatz erneut laufen lassen; Füllwörter und Auslöser nachjustieren.
