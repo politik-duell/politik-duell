@@ -1,0 +1,73 @@
+{
+  "partei_id": 11,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Oberschule: Sozialverhalten und Basiskompetenzen neben Praxis- und Wirtschaftsbildung stärken",
+      "ursachen_ids": [],
+      "ursachen_offen": [2301],
+      "zitat": "Praxisorientierte Lernerfahrungen, informatische Grundbildung und ökonomisches Grundverständnis sind dabei ebenso wichtig wie die Stärkung von Basiskompetenzen, Sozialverhalten und Selbstorganisation.",
+      "seite": 22
+    },
+    {
+      "beschreibung": "Medienkompetenz von Lehrkräften in der Ausbildung verankern und in der Fortbildung vorsehen",
+      "ursachen_ids": [2302],
+      "zitat": "Die Vermittlung von Medienkompetenz ist für Lehrkräfte verpflichtend in der Ausbildung zu verankern und in der Fortbildung vorzusehen.",
+      "seite": 22
+    },
+    {
+      "beschreibung": "Lehrkräfteausbildung stärker auf Praxisphasen, Referendariat und Kompetenzanforderungen ausrichten",
+      "ursachen_ids": [2302],
+      "zitat": "Frühzeitige und verbindliche Praxisphasen müssen daher ausgebaut werden. […] Ergänzend dazu ist das Referendariat zu reformieren: weniger rein theoretische Ausbildungsanteile, dafür mehr angeleitete Praxis, eigenverantwortlicher Unterricht und gezieltes Feedback.",
+      "seite": 25
+    },
+    {
+      "beschreibung": "Schulen sollen befristet Vertretungs- und Unterstützungskräfte einstellen können, um Lehrkräfte zu entlasten",
+      "ursachen_ids": [],
+      "ursachen_offen": [2304],
+      "zitat": "Neben flexiblen Schulbudgets sollen Schulen die Möglichkeit erhalten, befristet Vertretungspersonal und weitere Unterstützungskräfte einzustellen. Mit dem Ziel, Lehrkräfte von Aufgaben zu entlasten und mehr Zeit für den Unterricht zu schaffen, bauen wir Unterstützungssysteme für Unterricht und Verwaltung weiter aus.",
+      "seite": 20
+    },
+    {
+      "beschreibung": "Psychische Gesundheit und Suizidprävention gemeinsam mit Schulen und Kommunen stärken",
+      "ursachen_ids": [],
+      "ursachen_offen": [2304],
+      "zitat": "Gesundheitsprävention wird in allen Lebensphasen verankert – von der Kita bis ins hohe Alter. Bewegung, Ernährung, psychische Gesundheit […] stärken wir gemeinsam mit Kommunen, Schulen, Vereinen und Krankenkassen. Suizidprävention und mentale Gesundheit erhalten dabei einen höheren Stellenwert.",
+      "seite": 28
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 2302, "name": "Lehrkräfteausbildung", "seite": 25 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "Sozialverhalten", "ursache": 2301, "richtung": "Klassenklima und soziales Lernen stärken" },
+    { "begriff": "Unterstützungskräfte", "ursache": 2304, "richtung": "Belastung reduzieren" },
+    { "begriff": "mentale Gesundheit", "ursache": 2304, "richtung": "Befähigung und Stressbewältigung" }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis (S. 2); Kapitel „Das klügste Bildungssystem in Deutschland“ (S. 19–25) vollständig; Kapitel „Gute Gesundheit und Pflege überall“ (S. 26–28) vollständig; Kapitel „Soziale Gerechtigkeit und Familie“ (S. 30–32) auf Schul- und Ausgrenzungsbezug; Fundstellen S. 4, 8, 9, 12, 16, 21, 22, 23, 24, 27, 31, 44, 53, 56, 70, 71, 73.
+
+Erfasst (5): S. 22 Oberschule/Sozialverhalten (2301, offen); S. 22 und S. 25 Lehrkräfte-Qualifikation (2302); S. 20 Unterstützungskräfte (2304, offen, Grenzfall: Entlastung von Lehrkräften, nicht Schülern); S. 28 Gesundheitsprävention mit Schulen (2304, offen, Grenzfall: allgemeine Prävention).
+
+Nicht erfasst:
+- S. 23 Schulsozialarbeit und schulpsychologische Versorgung: Zitat nennt weder Mobbing, Gewalt noch Konflikte; nach R2 nicht 2301/2302. Grenzfall für die Koordination: Die Stelle „Beratung und Betreuung von betroffenen Schülerinnen und Schülern“ könnte bei Mobbing gemeint sein.
+- S. 24 Leistungsmessung: Bekenntnis zu Noten, Versetzungen und Abschlussprüfungen („wird beibehalten“), keine Verringerung des Drucks (2304).
+- S. 23 „bedarfsgerechte Entlastung von Auszubildenden“: unbestimmte Zielaussage, betrifft Auszubildende, nicht Schülerinnen und Schüler (2304).
+- S. 21 Vorschuljahr, verbindliche Sprachstandserhebung: Prüfung/Förderung ohne Druckabbau (2304).
+- S. 22 Schulordnung zur Nutzung elektronischer Endgeräte: kein Bezug zu Klassenklima oder Ausgrenzung (2301; Bündel „Regeln und Konsequenzen durchsetzen“ ohne Treffer in diesem Sinn).
+- S. 22 Brennpunktschulen mit Personal und Förderangeboten: kein Bezug zu Ausgrenzung oder Leistungsdruck.
+- S. 19–20 Nachmittagsangebote und Berufsorientierung: kein Bezug zu den Ursachen.
+- S. 24 Lehramtsausbildung, Zulage, Stipendium, Seiteneinsteiger: Lehrkräftemangel, nach R2 Schule, nicht 2302.
+- S. 73 Ausgrenzung durch religiösen Extremismus: kein Schulbezug (2301).
+- S. 8, 12, 27, 31, 56, 70, 71: „Entlastung“ von Kommunen, Wirtschaft, Pflegenden, Alleinerziehenden, Verwaltung, Ehrenamt – kein Bezug zu Schülerdruck.
+- S. 9 „Fortbildung“: Lehrgänge der Feuerwehr, keine Schule.
+- S. 21 Eltern-Entlastung durch Kooperation Kita/Grundschule/Hort: kein Bezug zu Schülerdruck.
+
+Richtungen ohne Maßnahme: 2301 „Regeln und Konsequenzen durchsetzen“ (nur Schulordnung S. 22 und „Konsequenzen“ S. 4, s. oben); 2302 „Unterstützung durch Fachkräfte und Beschwerdewege“ (nur Schulsozialarbeit/Schulpsychologie S. 23, s. oben); 2302 „Beschwerdewege“ und „Anlaufstelle“: keine Stelle gefunden.
+
+Seiten ohne Text: keine relevanten.
+
+Hinweis: Keine Stelle erwähnt „Mobbing“. Ursache 2303 (Cybermobbing) ist für dieses Thema nicht freigegeben.

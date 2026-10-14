@@ -1,0 +1,64 @@
+{
+  "partei_id": 15,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "NetzDG rückabwickeln und die Umsetzung des EU-Digital-Services-Act in Deutschland ablehnen.",
+      "ursachen_ids": [2502],
+      "zitat": "Deshalb lehnen wir auch die Implementierung des europäischen „Digital Services Act (DSA)“ in Deutschland entschieden ab und werden das NetzDG rückabwickeln.",
+      "seite": 50
+    },
+    {
+      "beschreibung": "Große Anbieter sozialer Medien sollen verpflichtet werden, die Meinungsfreiheit ihrer Nutzer zu respektieren.",
+      "ursachen_ids": [2502],
+      "zitat": "Als Quasi-Oligopole sollen die großen Anbieter sozialer Medien verpflichtet werden, die Meinungsfreiheit ihrer Nutzer zu respektieren.",
+      "seite": 132
+    },
+    {
+      "beschreibung": "Antisemitische Beleidigungen und Angriffe auf Juden sollen konsequent strafrechtlich geahndet werden.",
+      "ursachen_ids": [2501],
+      "zitat": "Angriffe auf Juden sowie antisemitische Beleidigungen müssen konsequent strafrechtlich geahndet werden.",
+      "seite": 124
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 2501,
+      "seiten": [118, 133, 139],
+      "grund": "Meldewege und Hilfe für Betroffene: nichts gefunden. S. 133 nur Bekenntnis (Verfolgung und Löschung von Hate Speech als Verstoß), keine Handlungszusage. S. 118 und 139 Staatsanwaltschaft ohne Bezug zu Hass im Netz."
+    },
+    {
+      "ursache": 2503,
+      "seiten": [49, 133],
+      "grund": "Kapitel Digitalisierung (S. 46–50), Innere Sicherheit (S. 116–125), Meinungsfreiheit (S. 131–139) gelesen. Keine Prävention, Medienkompetenz oder Moderationsdesign gegen Hass. S. 49 Desinformation ohne Bezug."
+    }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "netzdg", "ursache": 2502, "richtung": "Plattformpflichten abschaffen" },
+    { "begriff": "majestätsbeleidigung", "ursache": 2501, "richtung": "Strafschutz abschaffen" }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis (S. 1–8); Digitalisierung S. 46–50; Innere Sicherheit S. 116–125 (Strafverfolgung, Extremismus, Islam, Kalifat); Meinungsfreiheit S. 131–133; Justiz und Verfassungsschutz S. 137–139; Fundstellen S. 6, 49, 118, 122, 139 geprüft.
+
+Ursache 2501 (Anzeige, Strafverfolgung, Hilfe): Maßnahme antisemitische Beleidigungen (S. 124). Grenzfall: die Stelle nennt nicht ausdrücklich das Internet. Bündel „Meldewege und Hilfe für Betroffene ausbauen“: nichts gefunden.
+Ursache 2502 (Plattformen): NetzDG rückabwickeln (S. 50, Bündel Pflicht, umgekehrte Richtung) und Meinungsfreiheit-Pflicht für große Anbieter (S. 132, Bündel Eigenverantwortung). Grenzfall: Beide betreffen Plattformpflichten; zwei verschiedene Bündel belegt.
+Ursache 2503 (Prävention, Gesprächskultur): nichts gefunden.
+
+Weitere gleichartige Stellen (im selben Bündel, nicht eigene Maßnahme):
+- Bündel „Plattformen verbindlich in die Pflicht nehmen“: S. 132 „Staatliche Zensurvorschriften … werden wir umgehend abschaffen.“
+- Bündel „Strafverfolgung von Hass und Bedrohung im Netz“: S. 133 „Die Majestätsbeleidigung … wollen wir abschaffen.“ (§ 188 StGB)
+
+Nicht erfasst (gelesen, nicht aufgenommen):
+- S. 133: Verfolgung, Ächtung und Löschung von „Hate Speech“ ist ein Verstoß gegen die Meinungsfreiheit – Bekenntnis ohne Handlung.
+- S. 122: Strafbarkeit der Forderung nach einem Kalifat – Extremismus (R2), kein Hass im Netz.
+- S. 118: Unterstützung der Staatsanwaltschaften bei organisierter Kriminalität – kein Bezug zu Hass im Netz.
+- S. 139: Weisungsgebundenheit der Staatsanwaltschaft – kein Bezug zu Hass im Netz.
+- S. 49–50: Kampf gegen Desinformation, DSGVO – kein Bezug zu Hass oder Anfeindung.
+- S. 131: Vormachtstellung in sozialen Medien nicht zur einseitigen Willensbildung nutzen – Bekenntnis.
+
+Seiten ohne Text: 116–125, 131–139 gelesen, keine Bildseite im Kapitel.
+Kein Hebel-Checklistenteil im Auftrag.
+Selbstprüfung: im Arbeitsumfeld nicht ausführbar (kein Shell-Zugriff); Befehl siehe Auftrag.

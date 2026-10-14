@@ -1,0 +1,43 @@
+{
+  "partei_id": 16,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Beratungsstellen gegen Hass im Netz stärken.",
+      "ursachen_ids": [2501],
+      "ursachen_offen": [],
+      "zitat": "… Deswegen stärken wir die Beratungsstellen gegen Hass im Netz.",
+      "seite": 21
+    },
+    {
+      "beschreibung": "Spezialisierte Ansprechpartner:innen bei jeder Polizeibehörde und jedem Landkreis gegen Hasskriminalität.",
+      "ursachen_ids": [2501],
+      "ursachen_offen": [],
+      "zitat": "Hasskriminalität wird durch spezialisierte Ansprechpartner:innen in jeder Polizeibehörde und jedem Landkreis bekämpft – damit Opfer von Hass und Hetze ernst genommen werden.",
+      "seite": 127
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 2503,
+      "seiten": [28, 74, 144],
+      "grund": "Medienkompetenz, Algorithmenverständnis und Medien-Offensive sind allgemeine Medienbildung ohne Bezug zu Hass oder Anfeindung (R2); KI-Einsatz in der Sozialverwaltung ist keine Plattform-Moderation. Keine Moderations- oder Gesprächsdesign-Zusage gefunden."
+    }
+  ]
+}
+
+--- Protokoll ---
+Gelesen: Inhaltsverzeichnis (S. 1–6); Kapitel 2 Demokratie (S. 13–16); Kapitel 4 Gleichstellung (S. 21, 23–24); Kapitel 5 Bildung, Medienbildung (S. 27–28); Kapitel 8 Medien (S. 74); Kapitel 17 Innenpolitik und Justiz (S. 127–128, 135–144).
+Zusagen gefunden:
+- S. 21 Beratungsstellen gegen Hass im Netz stärken (Betroffene): erfasst (2501, Bündel Meldewege und Hilfe).
+- S. 127 Ansprechpartner:innen gegen Hasskriminalität bei Polizei und Landkreisen (Opferbezug): erfasst (2501, Bündel Strafverfolgung). Grenzfall: kein ausdrücklicher Netzbezug.
+Weitere gleichartige Stellen (Strafverfolgung, nicht erneut erfasst): S. 21 „die Verfasser von Hassnachrichten vor Konsequenzen stellen“ – Zielformulierung im selben Bündel; die konkretere Stelle S. 127 wurde gewählt.
+Nicht erfasst:
+- S. 127 Cybersicherheit gegen „Bedrohungen aus dem Netz“: Sicherheitsthema ohne Hass-Bezug (R2).
+- S. 137–140 Schwerpunktstaatsanwaltschaften (rechtsextreme Straftaten), Opferschutz und Anonymisierung von Geschädigten, Aufklärungskampagnen an Schulen („was strafbar ist“): kein Bezug zu Hass oder Bedrohung im Netz.
+- S. 28, S. 74 Medienkompetenz und Medien-Offensive: allgemeine Medienbildung ohne Hass-Bezug (R2).
+- S. 13–16 Demokratie (rechte Hetze als Überschrift, Politische Bildung, Ehrenamt): keine Meldestelle, keine Beratung für Betroffene, kein Plattform-Bezug.
+- S. 23–24 häusliche Gewalt: nicht Hass im Netz.
+Richtungen ohne Maßnahme: Moderation und Gestaltung der Plattformen (2503) – Suche nach Moderation, Plattform, Algorithmen, Anonymität, Klarnamen, Empfehlungssysteme; keine Zusage gefunden.
+Seiten ohne Text: S. 1 (Titelseite) – keine Rolle.
+Stand im PDF: wie Auftrag (Beschluss 14. März 2026).

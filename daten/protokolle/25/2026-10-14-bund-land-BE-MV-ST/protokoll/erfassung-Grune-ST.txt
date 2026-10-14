@@ -1,0 +1,70 @@
+{
+  "partei_id": 13,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Spezialisierte Anlaufstellen und niedrigschwellige Beratung für Betroffene ausbauen",
+      "ursachen_ids": [2501],
+      "zitat": "Gleichzeitig bauen wir die Opferarbeit aus, stärken niedrigschwellige Beratungsangebote und schaffen spezialisierte Anlaufstellen, um Betroffene besser zu unterstützen und zu schützen.",
+      "seite": 46
+    },
+    {
+      "beschreibung": "Staatsanwaltschaften und Gerichte bei Cyber- und Onlinekriminalität mit spezialisiertem Personal stärken",
+      "ursachen_ids": [],
+      "ursachen_offen": [2501],
+      "zitat": "Cyber- und Onlinekriminalität nehmen rasant zu und stellen die Justiz vor neue Herausforderungen. Wir wollen Staatsanwaltschaften und Gerichte gezielt stärken, und zwar durch spezialisiertes Personal und interdisziplinäre Teams.",
+      "seite": 46
+    },
+    {
+      "beschreibung": "Unterrichtsfach Informatik und Medienbildung von Klasse 5 bis 10 verpflichtend einführen",
+      "ursachen_ids": [2503],
+      "zitat": "Wir setzen uns für eine verbindliche Vermittlung digitaler Kompetenzen im Unterricht ein. Dafür wollen wir nach dem Vorbild Baden-Württembergs ein Unterrichtsfach „Informatik und Medienbildung“ schaffen, das verpflichtend von Klasse 5 bis 10 bzw. 11 an allen allgemeinbildenden Schulen durchgängig angeboten werden soll. In diesem neuen Fach erwerben Schüler*innen zunächst im Bereich der Medienbildung Kompetenzen wie das kritische Hinterfragen von Inhalten in sozialen Medien, das Erkennen KI-generierter Inhalte sowie grundlegendes Wissen zu Datenschutz und Datenethik.",
+      "seite": 64
+    },
+    {
+      "beschreibung": "Landes-Demokratiefördergesetz für dauerhafte Förderung von Projekten gegen Extremismus und Hass",
+      "ursachen_ids": [],
+      "ursachen_offen": [2503],
+      "zitat": "Ein Landes-Demokratiefördergesetz soll geschaffen werden, um Engagement langfristig zu stärken und demokratische Strukturen verlässlich abzusichern. Ein solches Gesetz bietet die Möglichkeit, Projekte gegen Extremismus, Hass und Gewalt dauerhaft zu fördern und unabhängig von kurzfristigen Haushaltsentscheidungen zu schützen.",
+      "seite": 74
+    },
+    {
+      "beschreibung": "Schutzkonzepte mit Sicherheitsberatung und Ansprechstellen für Engagierte, die von rechten Bedrohungen betroffen sind",
+      "ursachen_ids": [],
+      "ursachen_offen": [2501],
+      "zitat": "Ehrenamtliche und Initiativen, die sich für Demokratie einsetzen, geraten zunehmend ins Visier rechter Bedrohungen. Wir wollen Schutzkonzepte entwickeln, die Engagierte durch Sicherheitsberatung, rechtliche Begleitung, klare staatliche Schutzmechanismen und Ansprechstellen in der Verwaltung gezielt unterstützen.",
+      "seite": 75
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 2503, "name": "Landes-Demokratiefördergesetz", "seite": 74 },
+    { "ursache": 2501, "name": "Schutzkonzepte für bedrohte Engagierte", "seite": 75 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "opferarbeit", "ursache": 2501, "richtung": "Unterstützung und Beratung für Betroffene" },
+    { "begriff": "anlaufstelle", "ursache": 2501, "richtung": "spezialisierte Anlaufstellen für Betroffene" },
+    { "begriff": "medienbildung", "ursache": 2503, "richtung": "Unterricht zum kritischen Umgang mit sozialen Medien" }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Kapitel 2.3 (PDF-S. 39–41), 2.4 (S. 41–43), 2.5 (S. 43–45), 2.6 Justiz (S. 46–47), 2.10 (S. 52–53), 3.3 Schulen (S. 64, Medienbildung), 3.8 Zivilgesellschaft (S. 73–75). Fundstellen laut Auftrag gelesen. Volltext nach Stichworten (Hass, Netz, Plattform, Melde, Cyber, Algorithmus, Anfeindung, Bedrohung, Betroffene, Anlaufstelle, Medienkompetenz) durchsucht.
+
+Nicht erfasst:
+- S. 46 Plattformpflichten („Plattformen stärker in die Verantwortung nehmen“, „strafbare Inhalte … entfernen“, lokale Flankierung des EU Digital Services Act): Ursache 2502 ist im Auftrag für Landesprogramme nicht zulässig (Ebene Bund).
+- S. 41 Beratung für Betroffene rechter Gewalt, Ausbau der Beratung für Betroffene antifeministischer Hetze; S. 74 Beratungsstellen stärken: gleicher Hebel wie die Anlaufstellen (S. 46), im Zitat dort erfasst.
+- S. 41 Prävention und Bildung gegen Diskriminierung „im Netz“; S. 40 Beratungsstellen in der Extremismusprävention; S. 45 Bildungs- und Präventionsprogramme „Schulen ohne Sexismus“; S. 75 Projekte gegen Diskriminierung stärken: gleicher Hebel wie das Landes-Demokratiefördergesetz (S. 74), dort erfasst.
+- S. 53 Digital- und Medienkompetenz in Schulen und Erwachsenenbildung: gleicher Hebel wie das Medienbildungsfach (S. 64); das Fach wurde gewählt, weil es Klassenstufen und Verbindlichkeit nennt.
+- S. 53 Maßnahmen gegen Desinformation und Fake News: kein Bezug zu Hass, Bedrohung oder Anfeindung (R2).
+- S. 73 Zivilgesellschaft „konsequent schützen“ vor aggressiven Anfeindungen: nur allgemeines Ziel; die konkrete Zusage steht S. 75 (erfasst).
+- S. 43–44 Polizeibeauftragte, Fehlerkultur; S. 44–45 Gewaltschutz für Frauen und queere Menschen: Gewalt im Offline-Bereich, kein Netzbezug.
+- S. 39 Landesaktionsplan gegen Einsamkeit; S. 84–85 Online- und Mediensucht: kein Bezug zu Hass oder Anfeindung.
+
+Bündel ohne Maßnahme:
+- „Moderation und Gestaltung der Plattformen“ (Ursache 2503): Im Volltext gesucht (Moderation, Anonymität, Klarnamen, Empfehlungssysteme, Netiquette, Gegenrede, Zivilcourage, Umgangston, Transparenz der Algorithmen). Keine Zusage zur Plattformgestaltung gefunden. Algorithmen werden nur in der Medienbildung genannt (S. 53, S. 64).
+- „Meldewege“: Keine Meldestelle für Hasskommentare gefunden; Bündel ist über die Anlaufstellen (S. 46) belegt.
+
+Grenzfälle (offen, im Zweifel aufgenommen): Cyber-Justiz-Personal (Strafverfolgung ohne Angabe, ob Betroffene oder Plattformen gemeint, R1); Landes-Demokratiefördergesetz (Prävention als Förderung); Schutzkonzepte für Engagierte (Bedrohung offline).
+
+Seiten ohne Text: 1, 5, 100 – ohne Belang.

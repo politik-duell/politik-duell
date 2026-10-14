@@ -1,0 +1,83 @@
+{
+  "partei_id": 12,
+  "land": "MV",
+  "massnahmen": [
+    {
+      "beschreibung": "Präventionsangebote gegen Mobbing, Cybermobbing und Gewalt sowie zur psychischen Gesundheit junger Menschen weiter unterstützen",
+      "ursachen_ids": [2301],
+      "zitat": "Wir wollen Präventionsangebote gegen Mobbing, Cybermobbing, Gewalt und Ausgrenzung sowie Angebote zur Stärkung psychischer Gesundheit junger Menschen weiter unterstützen.",
+      "seite": 36
+    },
+    {
+      "beschreibung": "Konfliktlösung als Alltagskompetenz in der schulischen Bildung stärken",
+      "ursachen_ids": [2301],
+      "zitat": "Wir wollen Alltagskompetenzen wie Finanzbildung, Medienkompetenz, Kommunikation und Konfliktlösung in der schulischen Bildung weiter stärken.",
+      "seite": 69
+    },
+    {
+      "beschreibung": "Fort- und Weiterbildung der Lehrkräfte ausbauen",
+      "ursachen_ids": [2302],
+      "zitat": "Wir wollen die Fort - und Weiterbildung der Lehrkräfte sowie der Quer - und Seiteneinstieg in den Schuldienst in Kooperation mit den Hochschulen ausbauen und zukunftsfähig etablieren.",
+      "seite": 68
+    },
+    {
+      "beschreibung": "Leistungsbewertung reformieren, Rückmeldungen lernförderlich gestalten",
+      "ursachen_ids": [2304],
+      "zitat": "Wir wollen die Leistungsbewertung reformieren und damit lernförderliche und prozessorientierte Leistungsrückmeldungen in den Mittelpunkt stellen.",
+      "seite": 68
+    },
+    {
+      "beschreibung": "Flexibleres Prüfungssystem mit mehreren Prüfungszeiträumen, um Stress zu reduzieren (berufliche Bildung)",
+      "ursachen_ids": [2304],
+      "zitat": "Es soll im Rahmen der nach bundesweiten Vorgaben und betrieblichen Notwendigkeiten bestehenden Möglichkeiten ein flexibleres Prüfungssystem mit mehreren Prüfungszeiträumen geben, um Lernphasen planbarer zu machen und Stress zu reduzieren.",
+      "seite": 70
+    },
+    {
+      "beschreibung": "Gesundheitsvorsorge sowie Gewalt- und Extremismusprävention an Schulen stärken",
+      "ursachen_ids": [2304],
+      "ursachen_offen": [2301],
+      "zitat": "Die pädagogische Arbeit muss im Mittelpunkt stehen. Dazu wollen wir die Gesundheitsvorsorge und Gewalt - und Extremismusprävention an Schulen weiter stärken.",
+      "seite": 68
+    },
+    {
+      "beschreibung": "Arbeitszeit von Lehrkräften erfassen, um Überlastung zu verhindern (Modellversuch)",
+      "ursachen_ids": [2304],
+      "zitat": "Gemeinsam mit den Vertretungen der Lehrerinnen und Lehrer und Schulleitungen wollen wir gemeinsam ein neue s System der Arbeitszeiterfassung für Lehrpersonal in Schulen in einem Modellversuch entwickeln.",
+      "seite": 68
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 2301, "name": "Konfliktlösung im Unterricht", "seite": 69 },
+    { "ursache": 2304, "name": "Flexible Prüfungszeiträume", "seite": 70 },
+    { "ursache": 2304, "name": "Entlastung von Lehrkräften", "seite": 68 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "Mobbing", "ursache": 2301, "richtung": "Prävention gegen Mobbing" },
+    { "begriff": "Konfliktlösung", "ursache": 2301, "richtung": "Konfliktkompetenz in der Schule stärken" },
+    { "begriff": "Überlastung", "ursache": 2304, "richtung": "Entlastung von Lehrkräften" },
+    { "begriff": "Leistungsbewertung", "ursache": 2304, "richtung": "lernförderliche Rückmeldungen" }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Textdatei hat kein Inhaltsverzeichnis; S. 2–6 (Vorwort, Überblick). Kinder, Jugend, Ehrenamt S. 35–37 und 40; Demokratie S. 41–44 (Fundstellen 39, 44 vollständig); Medien S. 44–45; Innere Sicherheit S. 45–49 (Ausschnitt); Justiz S. 58–59 (Ausschnitt); Bildung S. 64–70 vollständig. Fundstellen ohne Schulbezug (S. 17, 18, 24, 28, 29, 32, 46, 47, 53, 56, 57, 74–76, 78, 91) nur im Auszug. S. 1 und 95 ohne Text, ohne Bedeutung.
+
+Nicht aufgenommen:
+- S. 37 Schulsozialarbeit fortsetzen, Koordinierungsstelle „prüfen“: Zitat ohne Mobbing, Gewalt oder Konflikt (R2); Prüfauftrag.
+- S. 37 Kinderschutzgesetz, Schutzkonzepte: Kindeswohl, kein Mobbing-Bezug; allgemeines Weiterentwickeln.
+- S. 67 und 70 multiprofessionelle Teams mit Schulsozialarbeit und Schulpsychologie: Zitat ohne Mobbing, Gewalt oder Konflikt (R2).
+- S. 66 Demokratiebildung in Studium, Fortbildung und Unterricht: gleicher Hebel wie S. 68 (Fortbildung); Extremismusfokus.
+- S. 4 Reduzierung der Unterrichtsverpflichtung (Zeit- und Stufenplan) und S. 68 Verwaltungsfachpersonal: gleicher Hebel wie „Entlastung von Lehrkräften“ (S. 68), nicht gesondert.
+- S. 66, 69: Wohlbefinden und demokratische Schulen als Ziele.
+- S. 67: Übergänge, Prüfungen, Leistungsbewertung „weiterentwickeln“: allgemeine Ankündigung ohne Maßnahme.
+- S. 35 Childhood-Haus, S. 39 Ansprechpersonen, S. 40 und 91 Anlaufstellen: kein Schulbezug.
+- S. 67, 69 Medienkompetenz und KI in Schulen: anderes Thema.
+
+Richtungen ohne Maßnahme:
+- 2301 „Regeln und Konsequenzen durchsetzen“: keine Zusage gefunden (Schulordnung, Konsequenzen nicht im Text).
+- 2302 „Beschwerdewege“ und Vertrauenslehrkräfte: keine Fundstelle an Schulen.
+
+Grenzfälle:
+- S. 68 Gesundheitsvorsorge und Gewalt- und Extremismusprävention an Schulen (2304, 2301 offen).
+- S. 70 Prüfungszeiträume: „soll … im Rahmen der bestehenden Möglichkeiten“ mit Vorbehalt (2304).

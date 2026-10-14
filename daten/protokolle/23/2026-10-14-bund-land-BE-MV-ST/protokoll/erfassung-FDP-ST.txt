@@ -1,0 +1,58 @@
+{
+  "partei_id": 14,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Diskriminierung in der Jugendarbeit und in der Schule entgegenwirken und für Toleranz und Akzeptanz werben.",
+      "ursachen_ids": [2301],
+      "zitat": "Dazu wollen wir etwa in der Jugendarbeit und in der Schule Diskriminierung entgegenwirken und mit Aufklärung für Toleranz und Akzeptanz werben.",
+      "seite": 37
+    },
+    {
+      "beschreibung": "Lehrkräfte von unterrichtsfremden Aufgaben und Dokumentationspflichten entlasten, unter anderem durch Schulsozialarbeit und Schulpsychologie.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2304],
+      "zitat": "Wer Lehrkräfte entlastet, sorgt am Ende dafür, dass Kinder mehr verlässlichen Unterricht erleben, Feedback bekommen und echte Förderung statt „Verwaltung von Unterrichtsausfall“ stattfindet. Dazu gehört: unterrichtsfremde Aufgaben auf mehr Schultern zu verteilen […] Schluss mit Dokumentationspflichten, die pädagogisch nichts bringen.",
+      "seite": 28
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 2302,
+      "seiten": [28, 30, 37, 59],
+      "grund": "S. 28 Schulsozialarbeit/Schulpsychologie ohne Bezug zu Mobbing, Gewalt oder Konflikten (R2). S. 30 Seiteneinsteiger-Qualifizierung als Antwort auf den Lehrkräftemangel (R2). S. 37 Ansprechpersonen in der Polizei, S. 59 Anlaufstelle für Gesundheitsprävention: kein Schulbezug."
+    }
+  ],
+  "eigene_synonyme": [
+    {
+      "begriff": "diskriminierung",
+      "ursache": 2301,
+      "richtung": "Klassenklima und soziales Lernen stärken"
+    }
+  ],
+  "stand_im_pdf": "Stand: 05.06.2026 (Beschluss 25.04.2026)"
+}
+
+Protokoll (Thema 23, FDP-ST)
+
+Gelesen: Inhaltsverzeichnis (S. 2); Kapitelrahmen Kapitel 2 (S. 22–23); Familien und Bildung (S. 24–31); Wissenschaft Anfang (S. 32); Soziales (S. 35–37); Medien (S. 39); Gesundheit Anfang (S. 59–60). Fundstellen ohne Schulbezug, nur überflogen auf Zuordnung: S. 11, 12, 16, 36, 44, 53, 63, 65, 67. S. 1 ist Titelseite (ohne Text, kein Bild-Verdacht im Schulkapitel).
+
+Maßnahmen: S. 37 (Diskriminierung in der Schule entgegenwirken) als 2301 erfasst (Prävention von Ausgrenzung, R1). S. 28 (Lehrkräfte entlasten) als Grenzfall 2304 unter ursachen_offen: Entlastung wird in R1 der Ursache 2304 zugeordnet, der Bezug zu belastendem Druck bei Schülerinnen und Schülern ist aber nur indirekt.
+
+Nicht erfasst:
+- S. 26: Handynutzung auf dem Schulgelände vor Ort entscheiden, keine Verbote; Mediennutzung nach R2 eigenes Thema, kein Bezug zu Mobbing.
+- S. 26, 27, 31: Medienbildung, KI-Profilklassen, MINT, Leistungskurs Geschichte, Berufsorientierung, Schülerkostensatz, Schulstandorte: kein Bezug zu Mobbing, Ausgrenzung oder Leistungsdruck.
+- S. 30: Seiteneinsteiger-Qualifizierung und Lehramtszugang: Antwort auf Lehrkräftemangel (R2), nicht 2302.
+- S. 30: Unterstützungskräfte für Lehrkräfte: gleiche Zusage wie S. 28, dort erfasst.
+- S. 32: psychische Gesundheit von Studierenden: Hochschule, nicht Schule.
+- S. 59–60: mobile Kinder- und Jugendmedizin, psychiatrische Versorgung, Gesundheitsprävention: Gesundheitsversorgung, kein Schulbezug.
+- S. 35: Jugendarbeit, Jugendparlamente: kein Bezug zu Mobbing oder Ausgrenzung in der Schule.
+- S. 11, 12, 16, 36, 44, 53, 63, 65, 67: „Entlastung“ in Wohnen, Landwirtschaft, Bürokratie, Finanzen, Rettungsdienst, Pflege, Verkehr; kein Schulbezug.
+
+Richtungen ohne Maßnahme:
+- 2301 Regeln und Konsequenzen durchsetzen: keine Fundstelle.
+- 2302 Unterstützung durch Fachkräfte und Beschwerdewege: nur Schulsozialarbeit (S. 28) ohne Mobbing-Bezug; Rest nicht Schule.
+- 2302 Fortbildung und Handlungssicherheit der Lehrkräfte: nur Seiteneinsteiger-Fortbildung (S. 30), nach R2 Lehrkräftemangel.
+- 2304 Befähigung und Stressbewältigung: nur Hochschule (S. 32) und Gesundheitsversorgung (S. 59–60), kein Schulbezug.
+
+Stand im PDF: Titelseite „Stand: 05.06.2026“, Beschluss 25.04.2026 (im JSON als stand_im_pdf eingetragen).

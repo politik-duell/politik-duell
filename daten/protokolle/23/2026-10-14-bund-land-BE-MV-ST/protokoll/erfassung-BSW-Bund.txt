@@ -1,0 +1,47 @@
+{
+  "partei_id": 17,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Social-Media-Gesetz nach australischem Vorbild, damit Kinder nicht in virtuelle Welten abtauchen",
+      "ursachen_ids": [2303],
+      "zitat": "Wir fordern ein Social-Media-Gesetz nach australischem Vorbild, damit die Kinder nicht in einem virtuellen Paralleluniversum verschwinden, sondern wieder im Hier und Jetzt mit echten Freunden kommunizieren und lachen.",
+      "seite": 24
+    },
+    {
+      "beschreibung": "Gewaltschutz als fester Bestandteil des Bildungscurriculums in Schulen und Hochschulen (Grenzfall: Gewalt gegen Frauen)",
+      "ursachen_ids": [],
+      "ursachen_offen": [2301],
+      "zitat": "Entsprechend müssen die Information über und die Sensibilisierung zum Gewaltschutz fester Bestandteil im Bildungscurriculum sein – in Schulen und […] Hochschulen.",
+      "seite": 33
+    }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "social-media-gesetz", "ursache": 2303, "richtung": "Plattformschutz für Kinder" }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 2301, "seiten": [24, 25], "grund": "Sportvereins-Zuschuss ohne Schulbezug; Friedenspädagogik und Demokratiebildung ohne Bezug zu Ausgrenzung oder Klassenklima; Satz zu geborgenen Schutzräumen ist ein Ziel ohne Handlung." },
+    { "ursache": 2302, "seiten": [24, 25, 35], "grund": "Entlastung der Lehrkräfte und Unterstützungsteams betrifft Arbeitsbedingungen und Lehrkräftemangel (R2); Zitate nennen kein Mobbing; Lehrerausbildung nur als „sollte“ ohne Zusage; Polizei-Fortbildung gehört nicht zur Schule." },
+    { "ursache": 2304, "seiten": [24, 25], "grund": "Notengebung als Standard der Leistungsmessung setzt nicht an Leistungs- oder Prüfungsdruck an; keine Zusage zur Entlastung von Schülern." }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: PDF-Seiten 1–5 (Präambel, Frieden), 22–27 (Bildung, Schule, Kita, Hochschule), 31–36 (Familie, Kinderbetreuung, Gesellschaft, Gewaltschutz, Sicherheit), 38–41 (Meinungsfreiheit, Medien), 42–45 (Digitales, Restkapitel). Gesundheit, Wirtschaft, Wohnen und Verkehr (S. 6–21, 26–30) nur über Stichwortsuche gesichtet, ohne Schulbezug. Kein Inhaltsverzeichnis im PDF.
+
+Grenzfall: Gewaltschutz-Zusage (S. 33) betrifft Gewalt gegen Frauen; aufgenommen als ursachen_offen 2301, weil sie Gewalt im schulischen Curriculum betrifft.
+
+Nicht erfasst:
+- S. 24: Handys und Tablets aus Klassenzimmern verbannen – nach R2 Mediennutzung von Kindern, eigenes Thema, kein Bezug zu Mobbing.
+- S. 24: Bund zahlt erstes Vereinsjahr – kein Schulbezug, keine Ausgrenzung in der Schule.
+- S. 24–25: Notengebung, Reform der Rahmenlehrpläne – keine Entlastung vom Leistungsdruck.
+- S. 25: Entlastung der Lehrkräfte durch Unterstützungsteams (Sozialarbeit, Schulpsychologie) – Lehrkräftemangel (R2); Mobbing wird nur im Ziel-Satz über Schutzräume genannt.
+- S. 25: Lehrerausbildung „sollte“ mehr Praxis enthalten – Möglichkeit, keine Zusage.
+- S. 25: Friedenspädagogik statt Bundeswehrwerbung – kein Bezug zu Mobbing oder Ausgrenzung.
+- S. 33–34: Täterarbeit und Anti-Aggressionstrainings – Gewalt gegen Frauen, nicht Schule.
+
+Richtungen ohne Maßnahme: Regeln und Konsequenzen durchsetzen (2301; S. 22 und 40 betreffen Arbeitsmarkt bzw. Beamte); Fortbildung und Handlungssicherheit der Lehrkräfte (2302); Beschwerdewege und Ansprechpersonen (2302, kein Fund); Befähigung und Stressbewältigung (2304, kein Fund); Medienkompetenz und Nutzungsregeln (2303, s. Handyverbot oben).
+
+Neue Bündel: keine.
+Stand im PDF: nicht angegeben (Titel „Wahlprogramm für die Bundestagswahl 2025“).

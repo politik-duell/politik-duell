@@ -1,0 +1,102 @@
+{
+  "partei_id": 11,
+  "land": "BE",
+  "massnahmen": [
+    {
+      "beschreibung": "Themen wie Gleichberechtigung, Grenzen und gewaltfreie Konfliktlösung sollen früh in Kitas und Schulen vermittelt werden.",
+      "ursachen_ids": [2301],
+      "zitat": "Deshalb stärken wir Aufklärung, Sensibilisierung und frühe Intervention – in Schulen, Kitas, Jugendhilfe, Sportvereinen, aber auch Verwaltung, Polizei, Justiz und Gesundheitswesen. […] Themen wie Gleichberechtigung, Grenzen und Konsens sowie gewaltfreie Konfliktlösung müssen frühzeitig in Kitas und Schulen vermittelt werden.",
+      "seite": 11
+    },
+    {
+      "beschreibung": "Ganztagsangebote an Grundschulen qualitativ ausbauen; sie sollen auch soziales Lernen fördern.",
+      "ursachen_ids": [2301],
+      "zitat": "Ganztagsangebote an Grundschulen wollen wir weiter qualitativ ausbauen. Sie entlasten Familien, schaffen verlässliche Betreuung und bieten zusätzliche Chancen für Förderung, Bewegung und soziales Lernen.",
+      "seite": 56
+    },
+    {
+      "beschreibung": "Vorschule (Kita-Chancenjahr) stärken und ausbauen; soziale Kompetenzen sollen ein Schwerpunkt sein.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2301],
+      "zitat": "Mit dem Kita-Chancenjahr haben wir die Vorschule in Berlin wieder eingeführt. Diese wollen wir stärken und weiter ausbauen – mit dem Ziel, alle Kinder bestmöglich auf die Schule vorzubereiten. Im Mittelpunkt sollen dabei Sprachförderung, soziale Kompetenzen und grundlegende Fähigkeiten für erfolgreiches Lernen stehen.",
+      "seite": 56
+    },
+    {
+      "beschreibung": "Strategie gegen Gewalt an Schulen, die Prävention, Intervention und Repression verbindet.",
+      "ursachen_ids": [2302],
+      "ursachen_offen": [2301],
+      "zitat": "Darauf aufbauend werden wir eine klare Strategie entwickeln, die Prävention, Intervention und Repression konsequent miteinander verbindet.",
+      "seite": 60
+    },
+    {
+      "beschreibung": "Zusammenarbeit von Schule mit Kinder- und Jugendhilfe sowie Jugendsozialarbeit ausbauen; Kontext Gewalt an Schulen.",
+      "ursachen_ids": [2301, 2302],
+      "zitat": "Gewalt, Antisemitismus, Extremismus und Diskriminierung haben an Berliner Schulen keinen Platz. […] Die Kooperation zwischen Schule sowie der Kinder- und Jugendhilfe und der Jugendsozialarbeit werden wir dabei konsequent weiterentwickeln und stärken.",
+      "seite": 60
+    },
+    {
+      "beschreibung": "Lehrkräfte sollen Aus-, Fort- und Weiterbildung systematisch durchlaufen und regelmäßig fortgebildet werden.",
+      "ursachen_ids": [2302],
+      "zitat": "Wir wollen die Aus-, Fort- und Weiterbildung von Lehrkräften verbindlicher, strategischer und praxisnäher ausrichten. […] Künftig sollen alle Lehrkräfte diese Qualifizierungsangebote systematisch durchlaufen und regelmäßig fortgebildet werden.",
+      "seite": 58
+    },
+    {
+      "beschreibung": "Landesprogramm für Mental Health und Ausbau schulpsychologischer Angebote; Resilienzförderung im Schulalltag.",
+      "ursachen_ids": [2304],
+      "zitat": "Mit einem Landesprogramm für Mental Health und dem Ausbau schulpsychologischer Angebote wollen wir verlässliche Unterstützungsstrukturen für Schülerinnen und Schüler, Lehrkräfte und Familien schaffen. Prävention, frühe Hilfen und Resilienzförderung sollen dabei fester Bestandteil des Schulalltags werden.",
+      "seite": 61
+    },
+    {
+      "beschreibung": "Schulen sollen sicherstellen, dass kein sozialer Druck auf Schülerinnen und Schüler ausgeübt wird.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2301],
+      "zitat": "Schulen müssen konsequent sicherstellen, dass religiöse Praktiken wie das Fasten im Ramadan freiwillig bleiben und kein sozialer Druck auf Schülerinnen und Schüler ausgeübt wird.",
+      "seite": 57
+    },
+    {
+      "beschreibung": "Ausbau von Schuldistanz-Teams in den Jugendämtern, die bei Schulabsentismus präventiv und intervenierend arbeiten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2301, 2304],
+      "zitat": "Zudem setzen wir uns für die landesweit einheitliche rechtliche Verankerung und den flächendeckenden Ausbau der Schuldistanz- und Jugenddelinquenz-Teams in allen Berliner Jugendämtern ein. Diese spezialisierten Teams arbeiten präventiv und intervenierend mit Kindern und Jugendlichen, die durch Schulabsentismus oder auffälliges Verhalten ins Blickfeld geraten sind.",
+      "seite": 12
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 2301, "name": "Ganztagsangebote ausbauen", "seite": 56 },
+    { "ursache": 2301, "name": "Vorschule stärken", "seite": 56 },
+    { "ursache": 2302, "name": "Gewaltstrategie für Schulen", "seite": 60 },
+    { "ursache": 2301, "name": "Schutz vor sozialem Druck in der Schule", "seite": 57 },
+    { "ursache": 2301, "name": "Schuldistanz-Teams ausbauen", "seite": 12 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "Fort- und Weiterbildung", "ursache": 2302, "richtung": "Fortbildung und Handlungssicherheit der Lehrkräfte" },
+    { "begriff": "Konfliktlösung", "ursache": 2301, "richtung": "Klassenklima und soziales Lernen stärken" },
+    { "begriff": "sozialer Druck", "ursache": 2301, "richtung": "Schutz vor Gruppendruck" }
+  ]
+}
+
+--- Protokoll ---
+
+Thema 23 „Mobbing und Druck in der Schule“, Union (BE). Stand laut Auftrag 2026-06-09.
+
+Gelesen: Inhaltsverzeichnis (S. 2–3); Kapitel V „Schule“ (S. 53–66) vollständig; Kapitel I (S. 6–14) vollständig; Kapitel II (S. 17–26) vollständig; Fundstellen S. 9, 14, 23, 26, 30, 41, 56, 58, 61, 70, 78, 90, 92, 93, 97–103, 108–110, 116, 123, 124 vollständig.
+
+Nicht erfasst:
+- S. 58: Schulsozialarbeit und Schulpsychologie stärken („100 Prozent plus X“). Das Zitat nennt weder Mobbing, Gewalt noch Konflikte; nach R2 kein Bezug zu 2301/2302.
+- S. 58: Schulsozialarbeit-Programm stärken, „jede Schule mit Sozialpädagogen ausstatten“. Gleiche Begründung wie oben.
+- S. 56: Klassengrößen auf höchstens 20/25 begrenzen. Lernbedingungen, kein Bezug zu Klassenklima benannt.
+- S. 57: Keine Abschaffung der Schulnoten, Leistungsstandards. Bekenntnis zu Bestehendem, keine Entlastung vom Leistungsdruck.
+- S. 61: Schulsport, Schwimmunterricht, Bewegte Pausen. Zweck Gesundheit und Konzentration; „soziales Miteinander“ nur als Nebeneffekt.
+- S. 61: Präventionsangebote „psychische Gesundheit“ im Schulalltag verankern (Gute gesunde Schule). Gleichartig zur Mental-Health-Maßnahme (S. 61), nicht zusätzlich erfasst.
+- S. 98: Soulspace-Standorte für junge Menschen in psychischen Krisen. Nicht schulbezogen; gleichartig zur Befähigungs-Maßnahme, deshalb nachrangig.
+- S. 13: Schutzkonzepte in Jugendclubs, Gewaltschutz- und Kinderschutzambulanzen. Kein Schulbezug.
+- S. 9–14, 30, 41, 70, 78, 90–93, 97–103, 108–110, 116, 123–124: Entlastung von Polizei, Rettungsdienst, Verwaltung, Pflege; Anlaufstellen für Wohnen, Pflege, Obdachlosigkeit, Jugendfreizeit (S. 109), digitale Anlaufstellen (S. 110); Ehrenamt, Medien. Kein Bezug zu Mobbing, Druck oder Lehrkräften in der Schule.
+- S. 22–26: Extremismus, Migration, Justiz. Kein Schulbezug.
+
+Richtungen ohne Maßnahme:
+- 2301 „Regeln und Konsequenzen durchsetzen“: kein Schulbezug gefunden. Die Treffer (S. 23, 70, 123) betreffen Antisemitismus, Baustellen und rbb.
+- 2304 „Belastung reduzieren“: Entlastung betrifft Lehrkräfte oder andere Bereiche, nicht den Leistungs- und Prüfungsdruck für Schülerinnen und Schüler.
+
+Grenzfälle (ursachen_offen): Vorschule (soziale Kompetenzen), Gruppendruck (S. 57), Schuldistanz (S. 12).
+
+Seiten ohne Text: 1, 5, 17, 28, 39, 53, 67, 76, 86, 95, 106, 127, 128 – keine Rolle gespielt (Trennseiten).

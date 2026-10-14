@@ -1,0 +1,59 @@
+{
+  "partei_id": 13,
+  "land": "BE",
+  "massnahmen": [
+    {
+      "beschreibung": "Zentrale Meldestelle für digitale Gewalt als Kompetenzzentrum, die Meldungen aufnimmt und die Zusammenarbeit mit Strafverfolgung koordiniert",
+      "ursachen_ids": [2501],
+      "zitat": "Eine zentrale Meldestelle für digitale Gewalt soll als Kompetenzzentrum fungieren, Meldungen aufnehmen und die Zusammenarbeit mit Strafverfolgungsbehörden koordinieren.",
+      "seite": 161
+    },
+    {
+      "beschreibung": "Beratungs- und Unterstützungsangebote für Betroffene digitaler Gewalt ausbauen",
+      "ursachen_ids": [2501],
+      "zitat": "Wir werden Beratungs- und Unterstützungsangebote für Betroffene digitaler Gewalt ausbauen",
+      "seite": 133
+    },
+    {
+      "beschreibung": "Digitale Präventionsangebote wie Digital Streetwork ausbauen und Medienkompetenz in allen Altersgruppen fördern",
+      "ursachen_ids": [2503],
+      "zitat": "Daher bauen wir digitale Präventionsangebote wie spezialisierte Digital Streetwork aus und fördern in allen Altersgruppen Medienkompetenz, um Desinformation und Hass frühzeitig zu erkennen.",
+      "seite": 159
+    },
+    {
+      "beschreibung": "Bekämpfung von Onlinekriminalität und Hasskriminalität im Netz stärken",
+      "ursachen_ids": [],
+      "ursachen_offen": [2501],
+      "zitat": "Wir stärken die Bekämpfung von Onlinekriminalität und Hasskriminalität im Netz.",
+      "seite": 224
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 2501, "name": "Beratungsangebote für Betroffene digitaler Gewalt", "seite": 133 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "Online-Beratung", "ursache": 2501, "richtung": "Beratung und Hilfe für Betroffene" },
+    { "begriff": "Digital Streetwork", "ursache": 2503, "richtung": "Prävention" }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 2501, "seiten": [160], "grund": "Opferberatungsstellen gegen rechtsextreme Bedrohungen: gleicher Hebel (Beratung) wie S. 133, dort eine Maßnahme; hier nicht zusätzlich." },
+    { "ursache": 2501, "seiten": [133], "grund": "Fortbildungsprogramme für Polizei, Justiz und Schulen zu digitaler Gewalt: Hebel Schulung, keine Beratung oder Meldung." },
+    { "ursache": 2501, "seiten": [159, 233], "grund": "Plattformpflichten (Löschen, DSA) gehören nach dem Leitfaden zu 2502, nicht zulässig für dieses Landesprogramm." },
+    { "ursache": 2501, "seiten": [172], "grund": "Landesdemokratiefördergesetz: Desinformation und Hass werden nur als Lage genannt, die Maßnahme hat keinen Bezug zu Hass im Netz (R2)." },
+    { "ursache": 2503, "seiten": [103, 115, 190, 197], "grund": "Medienkompetenz-Angebote, Medienteams und Curricula: gleicher Hebel wie S. 159, dort eine Maßnahme; hier nicht zusätzlich." },
+    { "ursache": 2503, "seiten": [162, 190], "grund": "Algorithmen: S. 162 nur Kritik, S. 190 Verständnis als Bildungsziel; kein Instrument für Moderation oder Gestaltung der Plattformen." },
+    { "ursache": 2503, "seiten": [233], "grund": "Strategie gegen Desinformation (S. 233): Lagebeschreibung und Ziel ohne konkrete Handlung zu Gesprächs- oder Moderationsdesign." }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis (S. 4–5); Kapitel 4.1 „Strukturelle Gleichstellung“ (S. 132–133, Abschnitt digitale Gewalt); Kapitel 4.7 „Kampf gegen Rechtsextremismus“ (S. 159–161); Kapitel 4.11 (S. 172, nur Demokratiefördergesetz); Kapitel 5.2 Schule (S. 190, Medienkompetenz); Kapitel 6.1 „Innere Sicherheit“ (S. 224, S. 233–234, Abschnitt Kriminalität im digitalen Zeitalter). Weitere Fundstellen (S. 38, 103, 108, 115, 116, 162, 167, 175, 197, 217, 230, 232, 237–242) anhand der Auszüge und der Textstellen geprüft: keine weiteren Maßnahmen für diese Ursachen.
+
+Nicht erfasst: siehe nicht_erfasst oben. Außerdem: S. 175 nur Lagebeschreibung zu Hasskriminalität; S. 230 Beratungsstellen gegen Verschwörungsideologien und Deradikalisierung sind keine Hilfe für Betroffene von Hass im Netz.
+
+Gleichartige Stellen (nicht zusätzlich erfasst): S. 160 Opferberatungsstellen (gleicher Hebel wie S. 133), S. 38/103/115/190/197 Medienkompetenz-Angebote (gleicher Hebel wie S. 159), S. 161 Melde- und Dokumentationsstrukturen (gleicher Hebel wie Meldestelle S. 161).
+
+Richtungen ohne Maßnahme: keine. Bündel „Strafverfolgung“ durch S. 224 (offen zwischen 2501 und 2502) abgedeckt; Bündel „Moderation und Gestaltung der Plattformen“ ohne Maßnahme für 2503 (Begriff „Algorithmen“ nur Kritik oder Bildungsziel).
+
+Seiten ohne Text: keine der Pflichtstellen betroffen.

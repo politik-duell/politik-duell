@@ -1,0 +1,74 @@
+{
+  "partei_id": 11,
+  "land": "MV",
+  "massnahmen": [
+    {
+      "beschreibung": "Werteerziehung als Teil des Schulauftrags: zivilisierter Umgang, Respekt und positives Gemeinschaftserleben lernen.",
+      "ursachen_ids": [2301],
+      "zitat": "Gleichberechtigt mit der Wissensvermittlung sind für uns Werteerziehung und die Förderung der Persönlichkeitsentwicklung Teil des schulischen Auftrags. Kinder und Jugendliche sollen einen zivilisierten Umgang und Respekt gegenüber ihrer Umwelt lernen, Gemeinschaft positiv erleben und sich zu benehmen wissen.",
+      "seite": 51
+    },
+    {
+      "beschreibung": "Absenken von Anforderungen und Leistungsstandards stoppen und umkehren.",
+      "ursachen_ids": [2304],
+      "zitat": "Das Absenken von Anforderungen und Leistungsstandards werden wir stoppen und stattdessen umkehren.",
+      "seite": 50
+    },
+    {
+      "beschreibung": "Verschärfte Zugangsvoraussetzungen zum Gymnasium, alternativ über einen Potenzialtest.",
+      "ursachen_ids": [2304],
+      "zitat": "Die Zugangsvoraussetzungen zum Gymnasium werden verschärft: In den Fächern Deutsch, Mathe und in der ersten Fremdsprache müssen für den Zugang zum Gymnasium mindestens befriedigende Leistungen erreicht worden sein. Andernfalls besteht die Möglichkeit, über einen Potenzialtest die Zugangsvoraussetzungen zum Gymnasium zu erfüllen.",
+      "seite": 48
+    },
+    {
+      "beschreibung": "Gezielte Förderung von Kindern mit Lernrückständen, parallel zu höheren Leistungsanforderungen.",
+      "ursachen_ids": [2304],
+      "zitat": "Parallel zu höheren Leistungsanforderungen werden wir alle Kinder besser fördern und fordern. […] Kinder mit Lernrückständen werden gezielt unterstützt, Stärken und Schwächen jeder Schülerin und jedes Schülers individuell berücksichtigt, Begabungen und Hochbegabungen entsprechend gefördert.",
+      "seite": 51
+    },
+    {
+      "beschreibung": "Bessere psychotherapeutische Versorgung von Kindern und Jugendlichen.",
+      "ursachen_ids": [2304],
+      "zitat": "Wir stehen dafür, dass die psychotherapeutische Versorgung von Kindern und Jugendlichen verbessert wird, um den gestiegenen Bedarfen endlich gerecht zu werden.",
+      "seite": 97
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 2302,
+      "seiten": [48, 50, 53, 56, 60],
+      "grund": "Schulsozialarbeit und Schulpsychologie nur ohne Bezug zu Mobbing, Gewalt oder Konflikt (R2); Fortbildung nur Medienbildung und MINT; kein Handeln von Lehrkräften bei Mobbing und kein Beschwerdeweg an Schulen. Anlaufstellen (S. 6, 24, 32, 73, 100) betreffen Wirtschaft, Verwaltung, Gesundheit und Barrierefreiheit."
+    },
+    {
+      "ursache": 2301,
+      "seiten": [44, 45, 47, 53],
+      "grund": "Kita-Bildung und kleinere Klassen ohne Bezug zu Klassenklima oder Ausgrenzung; Smartphone-Regeln und Mediensensibilisierung sind Mediennutzung von Kindern (R2)."
+    },
+    {
+      "ursache": 2304,
+      "seiten": [47, 51, 56, 81],
+      "grund": "Entlastung der Lehrkräfte betrifft nicht den Druck auf Schülerinnen und Schüler; Bekenntnis zu Benotung und Vergleichsarbeiten ist Bestehendes ohne Handlung; Social-Media-Grenze (S. 81) gehört zu Mediennutzung."
+    }
+  ],
+  "eigene_synonyme": [
+    {"begriff": "Leistungsanforderungen", "ursache": 2304, "richtung": "Leistungsdruck erhöhen"},
+    {"begriff": "Potenzialtest", "ursache": 2304, "richtung": "Prüfungsdruck beim Gymnasialzugang"},
+    {"begriff": "psychotherapeutische Versorgung", "ursache": 2304, "richtung": "Versorgung bei Angst und Depression"}
+  ]
+}
+
+Protokoll Thema 23 „Mobbing und Druck in der Schule“ (Union, MV)
+
+Gelesen: Inhaltsverzeichnis S. 2–4; Kapitel C „Bildungsland“ S. 44–60 vollständig; Kapitel E „Gesundheitsland“ S. 71–73 und 80–82 (Prävention, Sucht, Glücksspiel); Kapitel G „Familienland“ S. 96–98 (Kinder, Jugend). Fundstellen S. 6–7, 26–39, 42, 53, 81, 106–107 gelesen. Die übrigen Fundstellen (S. 9, 11, 12, 24, 32, 41, 75, 82, 100, 116, 119, 132, 135, 137, 139) nur im Auszug des Auftrags geprüft: Wirtschaft, Energie, Verwaltung, Barrierefreiheit, Register; ohne Schulbezug.
+
+Zusagen (Schule): Kapitel C enthält keine Zusage zum Eingreifen bei Mobbing und keinen Beschwerdeweg an Schulen. Zu Klassenklima und Ausgrenzung nur die Werteerziehung (S. 51).
+
+Grenzfälle (aufgenommen): S. 48 (Zugangsprüfung zum Gymnasium, Leistungsdruck); S. 51 (Lernförderung als Gegengewicht zu höheren Anforderungen, Hinweis auf Leistungsdruck); S. 97 (Psychotherapie, Versorgung statt Druckabbau, daher unter 2304 als Grenzfall). S. 50 nennt zusätzlich „höhere Leistungsanforderungen in allen Schularten“; das ist derselbe Hebel wie „Absenken stoppen“ und ist nur einmal erfasst (Zitat S. 50).
+
+Nicht erfasst: Schulsozialarbeit und Schulpsychologie (S. 48, 50, 60) ohne Nennung von Mobbing, Gewalt oder Konflikt (R2). Multiprofessionelle Teams (S. 47, 48) ohne Mobbing-Bezug. Smartphone-Verbot und Mediensensibilisierung (S. 53): Mediennutzung. Kleinere Klassen (S. 47): kein Klassenklima-Bezug. Entlastung der Lehrkräfte (S. 56): nicht der Schüler-Druck. Benotung und Vergleichsarbeiten (S. 51): Bekenntnis zu Bestehendem. Mindestalter für soziale Netzwerke (S. 38, Mobbing genannt): Ursache 2303, bei diesem Thema nicht aufgeführt. Jugend- und Straßensozialarbeit, Familienzentren (S. 96–97): keine Ursache dieses Themas.
+
+Richtungen ohne Maßnahme: 2302 (keine Zusage zu Handeln von Lehrkräften bei Mobbing, keine Beschwerdewege; Fortbildungen nur Medienbildung und MINT). Pflichtursache, daher in nicht_erfasst eingetragen.
+
+Seiten ohne Text: S. 1 und S. 139 (Titel bzw. Register), für das Thema ohne Bedeutung.
+
+Selbstprüfung: nicht ausgeführt (kein Shell-Zugriff in dieser Umgebung).

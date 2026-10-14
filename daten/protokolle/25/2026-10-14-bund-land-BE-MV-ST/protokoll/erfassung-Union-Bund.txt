@@ -1,0 +1,36 @@
+{
+  "partei_id": 11,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Umsetzung des Digital Services Act mit Schwerpunkt auf Transparenz, Kampf gegen Desinformation sowie Jugend- und Medienschutz", "ursachen_ids": [2502], "zitat": "Wir sorgen dafür, dass ein ausreichender Kinder- und Jugendschutz auch im Internet gewährleistet wird. Das gilt auch für Soziale Medien als wichtige Plattformen des Austauschs und der Information. Wir stellen sicher, dass bei der Umsetzung des Digital Services Act der Schwerpunkt auf mehr Transparenz, Kampf gegen Desinformation sowie Jugend- und Medienschutz gelegt wird.", "seite": 41 },
+    { "beschreibung": "Strafrecht gegen Volksverhetzung und antisemitische Äußerungen verschärfen", "ursachen_ids": [], "ursachen_offen": [2501, 2502], "zitat": "Deshalb verschärfen wir den Volksverhetzungs-Paragrafen im Strafgesetzbuch so, dass das Leugnen des Existenzrechts künftig strafbar ist. Außerdem führen wir einen besonders schweren Fall der Volksverhetzung ein, der Täter umfasst, die antisemitisch handeln.", "seite": 46 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 2503, "seiten": [40, 41, 45], "grund": "Anonymität und IP-Adressen-Speicherung betreffen Strafverfolgung allgemein, nicht Moderation, Gesprächskultur oder Prävention. Demokratie-leben- und Extremismus-Stellen ohne Bezug zu Anfeindungen im Netz." }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "Volksverhetzung", "ursache": 2501, "richtung": "Strafverfolgung verschärfen" }
+  ]
+}
+
+## Protokoll (Thema 25 – Hass und Anfeindungen im Internet, Union (Bund))
+
+**Gelesen:** Inhaltsverzeichnis (S. 2); Kapitel „Ja zu Recht und Ordnung“ (S. 36–41); Kapitel „Ja zu einer wehrhaften Demokratie“ (S. 42–46); Fundstellen laut Auftrag (S. 39, 40, 41, 45, 46).
+
+**Erfasst:** S. 41 (Digital Services Act, Plattformen), S. 46 (Volksverhetzung, Grenzfall 2501/2502).
+
+**Nicht erfasst:**
+- S. 39: Höchststrafe für Stalking. Nachstellung ohne Netz- oder Hassbezug.
+- S. 40: Anonymität des Internets und IP-Adressen-Speicherung, Befugnisse der Sicherheitsbehörden (Gesichtserkennung, Analyse sozialer Netzwerke). Allgemeine Netzpolitik (R2), kein Bezug zu Hass oder Anfeindung.
+- S. 41: „Was in der analogen Welt verboten ist, muss auch in der digitalen Welt verboten sein.“ Grundsatz im Kapitel Cybersicherheit, keine konkrete Handlung gegen Hass.
+- S. 45: „Delikte wie … antisemitische Äußerungen müssen … verfolgt und geahndet werden.“ Strafverfolgung von Hass, ohne Netzbezug; inhaltlich vom Strafrechtsvorschlag S. 46 gedeckt (gleicher Hebel, konkretere Stelle gewählt).
+- S. 45: Gesetz gegen Extremismus (Werbung für Terrororganisationen), Moscheen mit Hass-Predigt, „Demokratie leben“: extremistische Inhalte gehören nach R2 zu Extremismus.
+- S. 36: Beleidigungen gegen Polizei: kein Netzbezug.
+
+**Richtungen ohne Maßnahme:**
+- 2501 Meldewege und Hilfe für Betroffene: keine Fundstelle in S. 36–46. Opferschutz (S. 38–39) betrifft häusliche Gewalt und Kinder.
+- 2503 Prävention und Gesprächs- oder Moderationsdesign: keine Fundstelle außer den unter „Nicht erfasst“ genannten.
+
+**Zuordnung 2501/2502:** Die Strafrechtsstelle S. 46 nennt weder Betroffene noch Plattformen; nach R1 offen, daher `ursachen_offen`. Das Zitat spricht nicht vom Netz.
+
+**Selbstprüfung:** Das Prüfskript konnte in dieser Sitzung nicht ausgeführt werden (kein Shell-Zugriff). Die Datei ist ungeprüft.

@@ -1,0 +1,29 @@
+{
+  "partei_id": 17,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Ablehnung von Melde- und Überwachungsplattformen für Äußerungen (Gegenposition zu Meldewegen).",
+      "ursachen_ids": [],
+      "ursachen_offen": [2501],
+      "zitat": "Das BSW lehnt Melde- und Überwachungsplattformen kategorisch ab. Die Kontrolle von grundrechtlich geschützten Äußerungen schafft ein Klima der Einschüchterung und ist ein Angriff auf Pluralität und Ideenwettstreit.",
+      "seite": 11
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 2501, "seiten": [14, 71], "grund": "Opferberatung nur für gewaltbereiten Extremismus, kein Netzbezug (R2: Extremismus); Staatsanwaltschaft: Weisungsrecht ohne Bezug zu Hass im Netz." },
+    { "ursache": 2503, "seiten": [12, 13, 45, 67, 70], "grund": "Dialog und Debattenkultur nur als Ziele ohne Handlung (S. 12, 13); Smartphone-Verbot an Schulen gehört nach R2 zu Mobbing in der Schule (S. 45); Algorithmen in Staatssoftware und KI-Prüfungen ohne Plattformbezug (S. 45, 67); Aufklärung zu Betrugsmaschen gehört nach R2 zu Sicherheit (S. 70)." }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis (S. 2–4); Kapitel 2 Demokratie & Debatte (S. 10–14, Auszug 15–16); Kapitel 4.2 Schulische Smartphone-Regeln und Digitalisierung (S. 45, Auszug); Kapitel 5.2 Sicherheit (S. 65–70); Kapitel 5.3 Justiz (S. 70–72); Kapitel 5.4 Teilhabe der Jugend (S. 72–73). Textdatei ist dieselbe wie bei Thema 23 (BSW-ST.txt, 90 Seiten, S. 1 ohne Text, Titelseite).
+
+Suche nach Begriffen wie Hass, Netz, Plattform, Meldung, Cyber, Medienkompetenz im Text: Treffer außerhalb dieser Kapitel betreffen Netze (Energie, Verkehr, Glasfaser), Vernetzung und Bürgerbeteiligung ohne Hass-Bezug.
+
+Richtungen ohne Maßnahme: Meldewege und Hilfe für Betroffene (2501) nur als Gegenposition erfasst (siehe offen). Strafverfolgung von Hass und Bedrohung im Netz: keine Zusage im Text gefunden. Moderation und Gestaltung der Plattformen (2503): keine Zusage, nur Algorithmen-Hinweise ohne Plattformbezug.
+
+Grenzfall (ursachen_offen): Ablehnung von Melde- und Überwachungsplattformen (S. 11, 2501); sie ist eine Gegenposition zu Meldewegen, keine ausgebaute Maßnahme.
+
+Keine Zusage (Ziel, Lage oder Prüfauftrag): „Sachliche Debattenkultur … fördern“ (S. 13); Zivilgesellschaft und Demokratieförderung (S. 14–15), ohne Netzbezug.
