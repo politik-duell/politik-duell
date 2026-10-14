@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest'
 import { PARTEIEN, THEMEN, URSACHEN } from '../../../src/data/mock'
 import {
   antwortAusAuswahl,
+  belegPasstZuUrsache,
   gestuetzt,
   bereinigeAntwort,
   bereinigeInstrument,
@@ -16,10 +17,14 @@ import {
   NACHFRAGE_URSACHE,
   nutzerNachrichten,
   ohneParteinamen,
+  ordneEin,
   pruefeAnfrage,
   systemPrompt,
+  themenPrompt,
+  unsicherheit,
+  ursachenPrompt,
 } from './ki.ts'
-import type { AnalyseAntwort, Nachricht } from './typen.ts'
+import type { AnalyseAntwort, Nachricht, Thema, Ursache } from './typen.ts'
 
 const spieler = (text: string): Nachricht => ({ von: 'spieler', text })
 const ki = (text: string): Nachricht => ({ von: 'ki', text })
@@ -524,9 +529,9 @@ describe('Haltung → Wertfrage (Haltungskarte)', () => {
 
   it('nennt die vollständigen Haltungen im Prompt – nur Nummer und Frage, ohne Parteien und Links', () => {
     const p = systemPrompt(THEMEN, URSACHEN, haltungen)
-    expect(p).toContain('Haltung 1: Soll es ein generelles Tempolimit auf Autobahnen geben?')
-    expect(p).toContain('Haltung 2: Soll Zuwanderung stärker begrenzt werden?')
-    expect(p).toContain('"haltung_id": number | null')
+    expect(p).toContain('Haltung H1: Soll es ein generelles Tempolimit auf Autobahnen geben?')
+    expect(p).toContain('Haltung H2: Soll Zuwanderung stärker begrenzt werden?')
+    expect(p).toContain('"haltung_id": string | null')
     expect(p).toMatch(/Rate nicht/)
     // Ja/Nein auf eine erfasste Wertfrage ist eine Haltung, auch wenn die Frage nach einer Maßnahme klingt.
     expect(p).toContain('auch wenn die Frage nach einer Maßnahme klingt')
@@ -557,6 +562,9 @@ describe('Haltung → Wertfrage (Haltungskarte)', () => {
 
   it('übernimmt eine Haltung nur bei „wert“ und nur aus der angebotenen Liste', () => {
     expect(mitHaltungen({ typ: 'wert', haltung_id: 1, zusammenfassung: 'Tempolimit' })).toMatchObject({ typ: 'wert', haltung_id: 1 })
+    // Kennung wie im Prompt („H1“), damit die KI Haltungs- und Themennummern nicht verwechselt.
+    expect(mitHaltungen({ typ: 'wert', haltung_id: 'H1', zusammenfassung: 'Tempolimit' })).toMatchObject({ typ: 'wert', haltung_id: 1 })
+    for (const id of ['H3', 'H', 'h1', 'H1a']) expect(mitHaltungen({ typ: 'wert', haltung_id: id })).not.toHaveProperty('haltung_id')
     // Erfunden, nicht angeboten (etwa unvollständig), falscher Typ.
     for (const id of [3, 99999, '1', null]) expect(mitHaltungen({ typ: 'wert', haltung_id: id })).not.toHaveProperty('haltung_id')
     // Ohne Liste (Datenbank ohne Haltungen): nie.
@@ -571,5 +579,196 @@ describe('Haltung → Wertfrage (Haltungskarte)', () => {
     const pauschal = mitHaltungen({ typ: 'forderung', pauschal: true, nachfrage: 'Was hast du erlebt?', haltung_id: 2 })
     expect(pauschal).not.toHaveProperty('haltung_id')
     expect(mitHaltungen({ typ: 'grenze', haltung_id: 2 })).toEqual(grenzeAntwort())
+  })
+})
+
+// Zuordnung in zwei Schritten (docs/plan-zuordnung.md). Eigene Daten nach dem echten Katalog, damit die Fälle
+// aus den Testpartien (Oktober 2026) nachvollziehbar bleiben.
+const Z_THEMEN: Thema[] = [
+  { id: 1, name: 'Arzttermine', beschreibung: 'Lange Wartezeiten und weite Wege zur ärztlichen Versorgung.' },
+  { id: 8, name: 'Bus und Bahn', beschreibung: 'Schlechtes Angebot im öffentlichen Nahverkehr.' },
+  { id: 14, name: 'Behördengänge', beschreibung: 'Lange Wartezeiten und komplizierte Verfahren bei Ämtern.' },
+]
+const Z_URSACHEN: Ursache[] = [
+  { id: 101, thema_id: 1, beschreibung: 'Zu wenige Hausarztpraxen, besonders auf dem Land', quelle_url: 'https://example.org/1', alltag: 'Ich finde keine Hausarztpraxis in meiner Nähe, die noch neue Patienten nimmt' },
+  { id: 102, thema_id: 1, beschreibung: 'Termine und Wege durch das Gesundheitssystem werden kaum gesteuert', quelle_url: 'https://example.org/2', alltag: 'Ich weiß nicht, wohin ich mich wenden soll, und lande bei Terminen und Wegen im Kreis' },
+  { id: 801, thema_id: 8, beschreibung: 'Rund 21 Millionen Menschen fehlt ein gutes Grundangebot an Bus und Bahn', quelle_url: 'https://example.org/3', alltag: 'Bei mir fährt kaum ein Bus oder eine Bahn, ohne Auto komme ich nirgends hin' },
+  { id: 1403, thema_id: 14, beschreibung: 'Behörden tauschen Daten kaum aus: Register sind nicht vernetzt', quelle_url: 'https://example.org/4', alltag: 'Ich muss dieselben Angaben und Nachweise bei jeder Behörde neu einreichen' },
+  { id: 1404, thema_id: 14, beschreibung: 'Viele Vorschriften machen Verfahren kompliziert und langsam', quelle_url: 'https://example.org/5', alltag: 'Beim Amt gibt es so viele Vorschriften und Formulare, dass alles kompliziert und langsam ist' },
+]
+const ursache = (id: number) => Z_URSACHEN.find((u) => u.id === id)!
+
+describe('themenPrompt (Schritt 1)', () => {
+  it('nennt nur Themen, keine Ursachen, und fragt nach Sicherheit und mehreren Problemen', () => {
+    const p = themenPrompt(Z_THEMEN)
+    expect(p).toContain('Thema 14: Behördengänge')
+    expect(p).not.toMatch(/Ursache \d/)
+    expect(p).not.toContain('Register sind nicht vernetzt')
+    for (const feld of ['"thema_sicher"', '"thema_kandidaten"', '"mehrere_probleme"']) expect(p).toContain(feld)
+    expect(p).not.toContain('"ursachen_belege"')
+  })
+
+  it('ist viel kürzer als der bisherige Prompt mit allen Ursachen', () => {
+    expect(themenPrompt(Z_THEMEN).length).toBeLessThan(systemPrompt(Z_THEMEN, Z_URSACHEN).length)
+  })
+})
+
+describe('ursachenPrompt (Schritt 2)', () => {
+  it('nennt nur die übergebenen Ursachen mit Alltagsfassung und fragt nach Sicherheit', () => {
+    const p = ursachenPrompt(Z_THEMEN[2], Z_URSACHEN.filter((u) => u.thema_id === 14))
+    expect(p).toContain('„Behördengänge“')
+    expect(p).toContain('Ursache 1404: Viele Vorschriften')
+    expect(p).toContain('im Alltag: „Beim Amt gibt es so viele Vorschriften und Formulare')
+    expect(p).not.toContain('Ursache 101')
+    expect(p).toContain('"sicher": boolean')
+  })
+})
+
+describe('belegPasstZuUrsache', () => {
+  it('erkennt Belege, die kein Wort mit der Ursache teilen (Fälle aus den Testpartien)', () => {
+    expect(belegPasstZuUrsache('Bus fährt kaum', ursache(102))).toBe(false)
+    expect(belegPasstZuUrsache('Formulare verstehe ich nicht', ursache(1403))).toBe(false)
+  })
+
+  it('lässt passende Belege durch, auch gebeugt und in Zusammensetzungen', () => {
+    expect(belegPasstZuUrsache('Formulare verstehe ich nicht', ursache(1404))).toBe(true)
+    expect(belegPasstZuUrsache('der nächste Hausarzt ist 15 Kilometer weg', ursache(101))).toBe(true)
+    expect(belegPasstZuUrsache('Der Bus kommt nur zweimal', ursache(801))).toBe(false) // „Bus“ hat nur drei Buchstaben
+    expect(belegPasstZuUrsache('ohne Auto komme ich nicht weg', ursache(801))).toBe(true)
+    expect(belegPasstZuUrsache('am Hauptbahnhof', { beschreibung: 'Unsicher an Bahnhöfen', alltag: null })).toBe(true)
+  })
+
+  it('zählt Füllwörter nicht: „kaum“ allein trägt keine Ursache', () => {
+    expect(belegPasstZuUrsache('kaum', ursache(102))).toBe(false)
+    expect(belegPasstZuUrsache('', ursache(102))).toBe(false)
+  })
+})
+
+describe('unsicherheit', () => {
+  const sicher2 = { ursachen_ids: [1404], ursachen_belege: { 1404: 'so viele Formulare' }, sicher: true }
+  const kandidaten = Z_URSACHEN.filter((u) => u.thema_id === 14)
+
+  it('ist leer, wenn beide Schritte sicher sind und die Belege passen', () => {
+    expect(unsicherheit({ thema_sicher: true, thema_kandidaten: [], mehrere_probleme: false }, sicher2, kandidaten)).toEqual([])
+  })
+
+  it('nennt jeden Grund einzeln', () => {
+    expect(unsicherheit({ thema_sicher: false }, sicher2, kandidaten)).toEqual(['thema_unsicher'])
+    expect(unsicherheit({ thema_kandidaten: [8] }, sicher2, kandidaten)).toEqual(['thema_kandidaten'])
+    expect(unsicherheit({ thema_id: 14, mehrere_probleme: true, thema_kandidaten: [8] }, sicher2, kandidaten))
+      .toEqual(['thema_kandidaten', 'mehrere_probleme'])
+    expect(unsicherheit({}, { ...sicher2, sicher: false }, kandidaten)).toEqual(['ursachen_unsicher'])
+    expect(unsicherheit({}, { ursachen_ids: [1403], ursachen_belege: { 1403: 'Formulare verstehe ich nicht' }, sicher: true }, kandidaten))
+      .toEqual(['beleg_1403'])
+  })
+
+  it('zählt „mehrere Probleme“ und weitere Themen nur mit einem anderen Thema', () => {
+    // Wartezeit und Formulare beim Amt sind ein Problem in einem Thema, auch wenn die KI „mehrere“ meldet.
+    expect(unsicherheit({ thema_id: 14, mehrere_probleme: true, thema_kandidaten: [] }, sicher2, kandidaten)).toEqual([])
+    expect(unsicherheit({ thema_id: 14, mehrere_probleme: true, thema_kandidaten: [14] }, sicher2, kandidaten)).toEqual([])
+  })
+
+  it('gilt als unsicher, wenn Schritt 2 nichts oder Unsinn liefert', () => {
+    expect(unsicherheit({}, null, kandidaten)).toEqual(['ursachen_unsicher'])
+    expect(unsicherheit({}, 'kein Objekt', kandidaten)).toEqual(['ursachen_unsicher'])
+  })
+})
+
+describe('ordneEin', () => {
+  type Aufruf = { system: string; nachrichten: { role: string; content: string }[] }
+  /** Antwortet nacheinander mit den übergebenen rohen Antworten und merkt sich die Aufrufe. */
+  const kiMit = (...antworten: unknown[]) => {
+    const aufrufe: Aufruf[] = []
+    const frage = async (system: string, nachrichten: Aufruf['nachrichten']) => {
+      aufrufe.push({ system, nachrichten })
+      const a = antworten[aufrufe.length - 1]
+      if (a instanceof Error) throw a
+      return a
+    }
+    return { frage, aufrufe }
+  }
+  const katalog = { themen: Z_THEMEN, ursachen: Z_URSACHEN }
+  const amt = [spieler('Die Formulare beim Amt verstehe ich nicht, so viele Formulare.')]
+  const schritt1 = { typ: 'problem', thema_id: 14, thema_sicher: true, thema_kandidaten: [], mehrere_probleme: false, nachfrage: null, zusammenfassung: 'Formulare beim Amt sind unverständlich.', stichwort: 'Formulare' }
+
+  it('übernimmt sichere Ursachen aus Schritt 2 – Schritt 2 sieht nur die Ursachen des Themas', async () => {
+    const { frage, aufrufe } = kiMit(schritt1, { ursachen_ids: [1404], ursachen_belege: { 1404: 'so viele Formulare' }, sicher: true })
+    const { antwort, unsicher } = await ordneEin(frage, amt, null, katalog, () => 0)
+    expect(unsicher).toEqual([])
+    expect(antwort).toMatchObject({ typ: 'problem', thema_id: 14, ursachen_ids: [1404], nachfrage: null })
+    expect(aufrufe).toHaveLength(2)
+    expect(aufrufe[0].system).not.toMatch(/Ursache \d/)
+    expect(aufrufe[1].system).toContain('Ursache 1404')
+    expect(aufrufe[1].system).not.toContain('Ursache 101')
+    expect(aufrufe[1].nachrichten).toEqual([{ role: 'user', content: amt[0].text }])
+  })
+
+  it('macht bei unpassendem Beleg eine Nachfrage mit Thema statt einer Wertung', async () => {
+    const { frage } = kiMit(schritt1, { ursachen_ids: [1403], ursachen_belege: { 1403: 'Formulare beim Amt verstehe ich nicht' }, sicher: true })
+    const { antwort, unsicher } = await ordneEin(frage, amt, null, katalog, () => 0)
+    expect(unsicher).toEqual(['beleg_1403'])
+    expect(antwort).toMatchObject({ typ: 'problem', thema_id: 14, ursachen_ids: [] })
+    expect(antwort.nachfrage).toBeTruthy()
+  })
+
+  it('verwirft nur die Ursache mit unpassendem Beleg, wenn eine passende bleibt', async () => {
+    const { frage } = kiMit(schritt1, {
+      ursachen_ids: [1404, 1403],
+      ursachen_belege: { 1404: 'so viele Formulare', 1403: 'Formulare beim Amt verstehe ich nicht' },
+      sicher: true,
+    })
+    const { antwort, unsicher } = await ordneEin(frage, amt, null, katalog, () => 0)
+    expect(unsicher).toEqual(['beleg_1403'])
+    expect(antwort).toMatchObject({ thema_id: 14, ursachen_ids: [1404], nachfrage: null })
+  })
+
+  it('fragt bei mehreren Problemen nach und reicht die weiteren Themen weiter', async () => {
+    const verlauf = [spieler('Der Hausarzt ist 15 Kilometer weg, und der Bus fährt kaum.')]
+    const { frage } = kiMit(
+      { ...schritt1, thema_id: 1, mehrere_probleme: true, thema_kandidaten: [8, 99], nachfrage: ['Welches Problem soll in dieser Runde zählen?'] },
+      { ursachen_ids: [101], ursachen_belege: { 101: 'Hausarzt ist 15 Kilometer weg' }, sicher: true },
+    )
+    const { antwort, unsicher } = await ordneEin(frage, verlauf, null, katalog, () => 0)
+    expect(unsicher).toEqual(['thema_kandidaten', 'mehrere_probleme'])
+    expect(antwort).toMatchObject({ thema_id: 1, ursachen_ids: [], nachfrage: 'Welches Problem soll in dieser Runde zählen?', thema_kandidaten: [8] })
+  })
+
+  it('bleibt bei einem Fehler in Schritt 2 bei der Nachfrage, statt die Runde scheitern zu lassen', async () => {
+    const { frage } = kiMit(schritt1, new Error('Mistral 503'))
+    const { antwort, unsicher } = await ordneEin(frage, amt, null, katalog, () => 0)
+    expect(unsicher).toContain('ursachen_keine_antwort')
+    expect(antwort).toMatchObject({ thema_id: 14, ursachen_ids: [] })
+  })
+
+  it('braucht für Forderung, Haltung und Problem ohne Thema nur einen Aufruf', async () => {
+    for (const r1 of [
+      { typ: 'forderung', thema_id: 14, nachfrage: ['Du möchtest weniger Formulare. Was soll sich ändern?'], zusammenfassung: 'x' },
+      { typ: 'wert', thema_id: null, zusammenfassung: 'x' },
+      { typ: 'problem', thema_id: null, einschaetzung: 'Möglicher Grund …', zusammenfassung: 'x' },
+    ]) {
+      const { frage, aufrufe } = kiMit(r1)
+      const { antwort, unsicher } = await ordneEin(frage, amt, null, katalog, () => 0)
+      expect(aufrufe).toHaveLength(1)
+      expect(unsicher).toEqual([])
+      expect(antwort.ursachen_ids).toEqual([])
+      expect(antwort.thema_kandidaten).toBeUndefined()
+    }
+  })
+
+  it('übernimmt bei einer Forderung kein Thema, bei dem die KI selbst unsicher ist', async () => {
+    const r1 = { typ: 'forderung', thema_id: 14, thema_sicher: false, nachfrage: ['Was soll sich dadurch ändern?'], zusammenfassung: 'x' }
+    const { frage, aufrufe } = kiMit(r1)
+    const { antwort, unsicher } = await ordneEin(frage, amt, null, katalog, () => 0)
+    expect(aufrufe).toHaveLength(1)
+    expect(unsicher).toEqual(['thema_unsicher'])
+    expect(antwort).toMatchObject({ typ: 'forderung', thema_id: null })
+    const sicher = await ordneEin(kiMit({ ...r1, thema_sicher: true }).frage, amt, null, katalog, () => 0)
+    expect(sicher.antwort.thema_id).toBe(14)
+  })
+
+  it('übernimmt keine Ursachen, die Schritt 1 trotz Anweisung liefert', async () => {
+    const { frage } = kiMit({ ...schritt1, ursachen_ids: [1404], ursachen_belege: { 1404: 'so viele Formulare' } }, { ursachen_ids: [], sicher: false })
+    const { antwort } = await ordneEin(frage, amt, null, katalog, () => 0)
+    expect(antwort.ursachen_ids).toEqual([])
   })
 })

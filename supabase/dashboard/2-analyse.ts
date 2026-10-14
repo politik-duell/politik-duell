@@ -319,14 +319,24 @@ var ROLLEN_TEXT = {
   studierend: "Studierend",
   vermoegend: "Verm\xF6gend"
 };
-function systemPrompt(themen, ursachen, haltungen = []) {
+function themenPrompt(themen, haltungen = []) {
+  return baueSystemPrompt(themen, null, haltungen);
+}
+var haltungKennung = (id) => `H${id}`;
+function haltungAusKennung(roh) {
+  if (typeof roh === "number" && Number.isInteger(roh)) return roh;
+  const treffer = typeof roh === "string" ? /^H(\d+)$/.exec(roh.trim()) : null;
+  return treffer ? Number(treffer[1]) : null;
+}
+function baueSystemPrompt(themen, ursachen, haltungen) {
   const katalog = themen.map((t) => {
+    if (!ursachen) return `- Thema ${t.id}: ${t.name} \u2013 ${t.beschreibung}`;
     const u = ursachen.filter((x) => x.thema_id === t.id).map((x) => `    - Ursache ${x.id}: ${x.beschreibung}${x.alltag ? ` \u2013 im Alltag: \u201E${x.alltag}\u201C` : ""}`).join("\n");
     return `- Thema ${t.id}: ${t.name} \u2013 ${t.beschreibung}
 ${u}`;
   }).join("\n");
   return `Du moderierst das Spiel \u201EPolitik-Duell\u201C. Spieler:innen nennen Alltagsprobleme.
-Deine einzige Aufgabe: die \xC4u\xDFerung einordnen und einem Thema und Ursachen aus dem Katalog zuordnen.
+Deine einzige Aufgabe: die \xC4u\xDFerung einordnen und ${ursachen ? "einem Thema und Ursachen" : "einem Thema"} aus dem Katalog zuordnen.
 
 Regeln:
 - Neutral, respektvoll, freundlich. Keine Belehrung. Deutsch, kurze S\xE4tze.
@@ -355,7 +365,8 @@ Einordnung ("typ"):
   Alltag?\u201C. Stimme nicht zu und widersprich nicht. Wertet die Haltung eine Gruppe von Menschen ab, gib sie nicht
   wieder und frag nur nach dem Alltag.${haltungen.length ? `
   Ber\xFChrt die Haltung eindeutig eine der Fragen unter \u201EHaltungen\u201C (gleich, welche Seite die Person vertritt),
-  setze "haltung_id" auf deren Nummer, sonst null. Rate nicht: \xC4hnlich oder verwandt gen\xFCgt nicht.
+  setze "haltung_id" auf deren Kennung (z. B. "H4"), sonst null. Rate nicht: \xC4hnlich oder verwandt gen\xFCgt nicht.
+  Die Kennung einer Haltung ist nie eine "thema_id".
   Antwortet die Person ohne Alltagsproblem mit Ja oder Nein auf genau eine dieser Fragen (z. B. \u201EBei der Frage
   \u2026 bin ich daf\xFCr\u201C), ist das "wert" mit dieser "haltung_id" \u2013 auch wenn die Frage nach einer Ma\xDFnahme klingt.
   Dasselbe gilt f\xFCr ein kurzes F\xFCr oder Gegen genau den Gegenstand einer Frage (z. B. \u201EIch bin f\xFCr ein Tempolimit\u201C
@@ -385,7 +396,7 @@ Einordnung ("typ"):
 
 Sonst ist "rueckmeldung" null (Ausnahme: abschlie\xDFende Forderung, siehe Hinweis im Gespr\xE4ch).${haltungen.length ? '\n"haltung_id" ist nur bei "wert" gesetzt, sonst immer null.' : ""}
 
-Zuordnung ("thema_id" bei "problem" und "forderung", alles Weitere nur bei "problem"):
+${ursachen ? `Zuordnung ("thema_id" bei "problem" und "forderung", alles Weitere nur bei "problem"):
 - "thema_id": die ID aus dem Katalog, die am besten passt, sonst null.
 - "ursachen_ids": nur die IDs der Ursachen dieses Themas, die die Schilderung selbst nennt oder erkennbar beschreibt \u2013
   h\xF6chstens ${MAX_AUSWAHL}, die deutlichste zuerst. Nimm keine Ursache dazu, nur weil sie zum Thema geh\xF6rt oder \xE4hnlich
@@ -408,7 +419,27 @@ Zuordnung ("thema_id" bei "problem" und "forderung", alles Weitere nur bei "prob
   einer Baustelle nebenan beim Thema Miete), dann passt kein Thema \u2013 nimm nicht ersatzweise die n\xE4chstliegende
   Ursache und frag nicht nach. Nachfragen nur, wenn die Schilderung zu allgemein ist, um einen Grund zu erkennen.
 - Passt kein Thema: "thema_id": null, "ursachen_ids": [] und in "einschaetzung" 1\u20132 neutrale S\xE4tze zu m\xF6glichen
-  Ursachen des Problems \u2013 ohne Parteien, ohne L\xF6sungsbewertung, ohne Links.
+  Ursachen des Problems \u2013 ohne Parteien, ohne L\xF6sungsbewertung, ohne Links.` : `Zuordnung ("thema_id" bei "problem" und "forderung", alles Weitere nur bei "problem"):
+- "thema_id": die ID aus dem Katalog, deren Gegenstand das Problem ist, sonst null. Ordne nach dem, worum es der
+  Person geht, nicht nach einzelnen W\xF6rtern (z. B. \u201EWegen des L\xE4rms nebenan schlafe ich schlecht\u201C ist kein
+  Thema zu Hitze, nur weil dort auch schlechter Schlaf vorkommt).
+- "thema_sicher": true nur, wenn genau ein Thema eindeutig passt. Passen mehrere Themen oder ber\xFChrt die
+  Schilderung das Thema nur am Rand: false.
+- "thema_kandidaten": bei "thema_sicher": false oder "mehrere_probleme": true bis zu zwei weitere Themen-IDs,
+  die ebenfalls in Frage kommen; sonst [].
+- "mehrere_probleme": true, wenn die Person mehrere verschiedene Probleme nennt, die zu verschiedenen Themen
+  geh\xF6ren (z. B. \u201EDer Hausarzt ist weit weg, und der Bus f\xE4hrt kaum\u201C). Dann "thema_id" f\xFCr das Problem, das sie
+  zuerst oder am deutlichsten nennt, die \xFCbrigen in "thema_kandidaten", und in "nachfrage" genau eine kurze,
+  freundliche Frage, welches Problem in dieser Runde z\xE4hlen soll. Eine Folge desselben Problems (z. B. \u201Eohne Auto
+  komme ich nicht zum Einkaufen\u201C) ist kein weiteres Problem, ebenso mehrere Gr\xFCnde innerhalb desselben Themas
+  (z. B. teure Fahrkarten und unp\xFCnktliche Z\xFCge). Sonst false.
+- Die Ursachen des Themas ordnet ein zweiter Schritt zu. Ist die Schilderung so allgemein, dass sich kein Grund
+  erkennen l\xE4sst, schreib in "nachfrage" genau eine kurze, freundliche Frage, woran es im Alltag konkret hakt,
+  z. B. \u201EWas genau macht dir dabei Sorgen?\u201C. Gib keine Antworten vor. Sonst ist "nachfrage" bei "problem" null.
+- Nennt die Person einen klaren Grund f\xFCr ihr Problem, den kein Thema beschreibt (z. B. L\xE4rm von einer Baustelle
+  nebenan), dann passt kein Thema \u2013 nimm nicht ersatzweise das n\xE4chstliegende.
+- Passt kein Thema: "thema_id": null und in "einschaetzung" 1\u20132 neutrale S\xE4tze zu m\xF6glichen Ursachen des
+  Problems \u2013 ohne Parteien, ohne L\xF6sungsbewertung, ohne Links.`}
 
 "zusammenfassung": ein kurzer, neutraler Satz zum Problem, ohne Namen oder pers\xF6nliche Details.
 "stichwort": 1\u20133 W\xF6rter, die das Problem neutral benennen (z. B. \u201EFacharzttermin\u201C, \u201ENebenkosten-Nachzahlung\u201C),
@@ -423,12 +454,12 @@ Katalog:
 ${katalog}
 ${haltungen.length ? `
 Haltungen (Wertfragen, nur f\xFCr "wert"):
-${haltungen.map((h) => `- Haltung ${h.id}: ${h.frage}`).join("\n")}
+${haltungen.map((h) => `- Haltung ${haltungKennung(h.id)}: ${h.frage}`).join("\n")}
 ` : ""}
 Antworte ausschlie\xDFlich mit einem JSON-Objekt:
 {"typ": "problem" | "forderung" | "wert" | "grenze", "nachfrage": string[] | null, "thema_id": number | null,
- "ursachen_ids": number[], "ursachen_belege": {[id: string]: string}, "pauschal": boolean, "zusammenfassung": string, "stichwort": string,
- "einschaetzung": string | null, "rueckmeldung": string[] | null${haltungen.length ? ', "haltung_id": number | null' : ""}}`;
+${ursachen ? ' "ursachen_ids": number[], "ursachen_belege": {[id: string]: string},' : ' "thema_sicher": boolean, "thema_kandidaten": number[], "mehrere_probleme": boolean,'} "pauschal": boolean, "zusammenfassung": string, "stichwort": string,
+ "einschaetzung": string | null, "rueckmeldung": string[] | null${haltungen.length ? ', "haltung_id": string | null' : ""}}`;
 }
 function instrumenteZurAuswahl(themaId, instrumente, massnahmen, land) {
   return instrumente.filter((i) => i.thema_id === themaId && (i.ebene === "bund" || land !== null && massnahmen.some((m) => m.instrument_id === i.id && m.land === land))).sort((a, b) => a.id - b.id);
@@ -463,6 +494,107 @@ function mitInstrument(antwort, instrumentId) {
   return {
     ...antwort,
     instrument_id: instrumentId
+  };
+}
+function ursachenPrompt(thema, ursachen) {
+  const liste = ursachen.map((u) => `- Ursache ${u.id}: ${u.beschreibung}${u.alltag ? ` \u2013 im Alltag: \u201E${u.alltag}\u201C` : ""}`).join("\n");
+  return `Du hilfst im Spiel \u201EPolitik-Duell\u201C. Eine Person hat ein Alltagsproblem zum Thema \u201E${thema.name}\u201C genannt
+(${thema.beschreibung}). Deine einzige Aufgabe: Welche der folgenden Ursachen nennt oder beschreibt sie selbst?
+
+Regeln:
+- "ursachen_ids": nur Ursachen, die die Schilderung selbst nennt oder erkennbar beschreibt \u2013 h\xF6chstens ${MAX_AUSWAHL},
+  die deutlichste zuerst. Nimm keine Ursache dazu, nur weil sie zum Thema geh\xF6rt oder ein Wort mit der Schilderung
+  teilt \u2013 jede zugeordnete Ursache z\xE4hlt in der Wertung.
+- Setzt eine Ursache eine bestimmte Lage voraus (z. B. einen laufenden Vertrag, einen Heimplatz, einen bestimmten
+  Wohnort), ordne sie nur zu, wenn die Schilderung diese Lage erkennen l\xE4sst. Widerspricht die Schilderung dieser
+  Lage (z. B. \u201Eich wohne seit 20 Jahren in derselben Wohnung\u201C bei einer Ursache \xFCber Neuvermietungen), passt sie nicht.
+- Ein gemeinsames Wort gen\xFCgt nicht: Der Beleg muss denselben Grund nennen wie die Ursache (z. B. \u201Eder Bus kommt
+  st\xE4ndig zu sp\xE4t\u201C nennt Unp\xFCnktlichkeit, nicht zu teure Fahrkarten, auch wenn beide vom Bus handeln).
+- "ursachen_belege": zu jeder Ursache in "ursachen_ids" die W\xF6rter aus der Schilderung, die genau diesen Grund
+  nennen \u2013 w\xF6rtlich \xFCbernommen, h\xF6chstens acht W\xF6rter, z. B. {"204": "Miete wird jedes Jahr erh\xF6ht"}. Dieselben
+  W\xF6rter st\xFCtzen nie zwei Ursachen. Findest du keine W\xF6rter, die diesen Grund nennen, ordne die Ursache nicht zu.
+- \u201Eim Alltag: \u2026\u201C zeigt, wie Betroffene eine Ursache typischerweise erleben. Vergleiche die Schilderung damit,
+  auch wenn sie aus der Sicht anderer Beteiligter kommt (z. B. Anwohner statt Veranstalter, Eltern statt Jugendliche).
+- Unterscheide Erlebnis und Gef\xFChl: Schildert jemand vor allem ein Gef\xFChl oder eine Sorge (z. B. \u201EIch f\xFChle mich
+  unsicher, seit \u2026\u201C), passen Ursachen, die beschreiben, wie Wahrnehmung und Wirklichkeit auseinanderfallen oder wo
+  sich Unsicherheit ballt. Ursachen zu Taten oder T\xE4tergruppen nur, wenn die Schilderung sie erkennen l\xE4sst.
+- "sicher": true nur, wenn jede gew\xE4hlte Ursache den Grund trifft, den die Person nennt. Nennt sie einen Grund,
+  den keine Ursache beschreibt, passt eine Ursache nur ungef\xE4hr oder ist die Schilderung zu allgemein: false.
+- Bewerte nichts und nenne keine Parteien, Links oder Zahlen.
+
+Ursachen:
+${liste}
+
+Antworte ausschlie\xDFlich mit einem JSON-Objekt:
+{"ursachen_ids": number[], "ursachen_belege": {[id: string]: string}, "sicher": boolean}`;
+}
+var FUELLWOERTER = new Set("kaum nicht immer mehr sehr viel viele vielen ganz noch schon auch eben einfach mein meine meinem meinen meiner mich unser unsere unserem unseren keine keinen keinem einen einem einer eine dass weil wenn aber oder doch dann denn jetzt hier dort habe haben hatte wird werden wurde sind bist kann koennen muss muessen soll sollen gibt alle alles jeden jede jeder ihre ihren sein seine sich diese dieser dieses fuer ueber unter nach seit gegen ohne beim wieder total echt leider bald heute gerade schon etwas nichts leute menschen".split(" "));
+var grundWoerter = (s) => s.toLowerCase().replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/ü/g, "ue").replace(/ß/g, "ss").split(/[^a-z]+/).filter((w) => w.length >= 4 && !FUELLWOERTER.has(w));
+function belegPasstZuUrsache(beleg, ursache) {
+  const gesucht = grundWoerter(beleg);
+  const vorhanden = grundWoerter(`${ursache.beschreibung} ${ursache.alltag ?? ""}`);
+  const stamm = (w) => w.slice(0, 5);
+  return gesucht.some((w) => vorhanden.some((v) => v.includes(stamm(w)) || w.includes(stamm(v))));
+}
+var alsObjekt = (roh) => roh && typeof roh === "object" ? roh : {};
+function unsicherheit(schritt1, schritt2, ursachen) {
+  const r1 = alsObjekt(schritt1);
+  const r2 = alsObjekt(schritt2);
+  const gruende = [];
+  const andere = (Array.isArray(r1.thema_kandidaten) ? r1.thema_kandidaten.map(Number) : []).filter((id) => Number.isInteger(id) && id !== Number(r1.thema_id));
+  if (r1.thema_sicher === false) gruende.push("thema_unsicher");
+  if (andere.length > 0) gruende.push("thema_kandidaten");
+  if (r1.mehrere_probleme === true && andere.length > 0) gruende.push("mehrere_probleme");
+  if (r2.sicher !== true) gruende.push("ursachen_unsicher");
+  const belege = alsObjekt(r2.ursachen_belege);
+  for (const id of Array.isArray(r2.ursachen_ids) ? r2.ursachen_ids.map(Number) : []) {
+    const u = ursachen.find((x) => x.id === id);
+    if (u && !belegPasstZuUrsache(kurz(belege[String(id)], 120), u)) gruende.push(`beleg_${id}`);
+  }
+  return gruende;
+}
+async function ordneEin(frage, verlauf, rolle, { themen, ursachen, parteien = [], haltungen = [] }, zufall = Math.random) {
+  const r1 = alsObjekt(await frage(themenPrompt(themen, haltungen), nutzerNachrichten(verlauf, rolle)));
+  let roh = {
+    ...r1,
+    ursachen_ids: []
+  };
+  const unsicher = [];
+  if (r1.typ === "forderung" && r1.thema_sicher === false) {
+    roh = {
+      ...roh,
+      thema_id: null
+    };
+    unsicher.push("thema_unsicher");
+  }
+  const thema = r1.typ === "problem" ? themen.find((t) => t.id === Number(r1.thema_id)) : void 0;
+  if (thema) {
+    const kandidaten = ursachen.filter((u) => u.thema_id === thema.id);
+    let r2 = {};
+    try {
+      r2 = await frage(ursachenPrompt(thema, kandidaten), instrumentNachrichten(verlauf));
+    } catch {
+      unsicher.push("ursachen_keine_antwort");
+    }
+    unsicher.push(...unsicherheit(r1, r2, kandidaten));
+    const { ursachen_ids, ursachen_belege } = alsObjekt(r2);
+    const verworfen = new Set(unsicher.filter((g) => g.startsWith("beleg_")).map((g) => Number(g.slice(6))));
+    const uebrig = (Array.isArray(ursachen_ids) ? ursachen_ids.map(Number) : []).filter((id) => !verworfen.has(id));
+    const ganz = unsicher.some((g) => !g.startsWith("beleg_")) || uebrig.length === 0;
+    roh = {
+      ...r1,
+      ursachen_ids: ganz ? [] : uebrig,
+      ursachen_belege
+    };
+  }
+  const antwort = bereinigeAntwort(roh, verlauf, themen, ursachen, parteien, zufall, haltungen);
+  const weitere = (Array.isArray(r1.thema_kandidaten) ? r1.thema_kandidaten.map(Number) : []).filter((id, i, alle) => id !== antwort.thema_id && themen.some((t) => t.id === id) && alle.indexOf(id) === i).slice(0, 2);
+  return {
+    antwort: antwort.typ === "problem" && antwort.nachfrage && weitere.length ? {
+      ...antwort,
+      thema_kandidaten: weitere
+    } : antwort,
+    unsicher
   };
 }
 function nutzerNachrichten(verlauf, rolle) {
@@ -625,7 +757,8 @@ function bereinigeAntwort(roh, verlauf, themen, ursachen, parteien = [], zufall 
   const stichwort = bereinigeStichwort(stichwortRoh, zusammenfassung.replace(/\[Partei\]/g, ""));
   if (typ !== "problem") {
     const offen = typ === "forderung" ? nachfrage || null : null;
-    const haltungId = typ === "wert" && typeof r.haltung_id === "number" && haltungen.some((h) => h.id === r.haltung_id) ? r.haltung_id : null;
+    const gemeint = haltungAusKennung(r.haltung_id);
+    const haltungId = typ === "wert" && gemeint !== null && haltungen.some((h) => h.id === gemeint) ? gemeint : null;
     return {
       typ,
       nachfrage: offen,
@@ -849,7 +982,12 @@ Deno.serve(async (req) => {
       antwort = antwortAusAuswahl(anfrage.auswahl, themen, ursachen);
     } else {
       const haltungen = await vollstaendigeHaltungen(testphase);
-      antwort = bereinigeAntwort(await frageMistral2(systemPrompt(themen, ursachen, haltungen), nutzerNachrichten(anfrage.verlauf, anfrage.rolle)), anfrage.verlauf, themen, ursachen, parteien, Math.random, haltungen);
+      antwort = (await ordneEin(frageMistral2, anfrage.verlauf, anfrage.rolle, {
+        themen,
+        ursachen,
+        parteien,
+        haltungen
+      })).antwort;
     }
     if (antwort.typ === "forderung" && !antwort.pauschal && antwort.thema_id !== null) {
       const thema = themen.find((t) => t.id === antwort.thema_id);

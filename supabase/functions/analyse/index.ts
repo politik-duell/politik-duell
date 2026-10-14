@@ -14,7 +14,6 @@ import { createClient } from 'npm:@supabase/supabase-js@2'
 import { bewertePartei, werteRunde } from '../_shared/bewertung.ts'
 import {
   antwortAusAuswahl,
-  bereinigeAntwort,
   bereinigeInstrument,
   EingabeFehler,
   type HaltungKurz,
@@ -22,9 +21,8 @@ import {
   instrumentPrompt,
   instrumenteZurAuswahl,
   mitInstrument,
-  nutzerNachrichten,
+  ordneEin,
   pruefeAnfrage,
-  systemPrompt,
 } from '../_shared/ki.ts'
 import { pruefeText } from '../_shared/moderation.ts'
 import { tokenHash } from '../_shared/pruefung.ts'
@@ -119,16 +117,14 @@ Deno.serve(async (req) => {
     const testphase = anfrage.zugang ? await zugangGueltig(anfrage.zugang) : false
 
     // Angetippte Ursachen: ohne KI werten. Sonst ordnet die KI die Schilderung ein – bei einer Haltung
-    // auch einer der vollständig erfassten Wertfragen (Haltungskarte).
+    // auch einer der vollständig erfassten Wertfragen (Haltungskarte). Bei einem Problem in zwei Schritten
+    // (erst Thema, dann dessen Ursachen); der zweite zählt nicht extra für das Rate-Limit.
     let antwort: AnalyseAntwort
     if (anfrage.auswahl) {
       antwort = antwortAusAuswahl(anfrage.auswahl, themen, ursachen)
     } else {
       const haltungen = await vollstaendigeHaltungen(testphase)
-      antwort = bereinigeAntwort(
-        await frageMistral(systemPrompt(themen, ursachen, haltungen), nutzerNachrichten(anfrage.verlauf, anfrage.rolle)),
-        anfrage.verlauf, themen, ursachen, parteien, Math.random, haltungen,
-      )
+      antwort = (await ordneEin(frageMistral, anfrage.verlauf, anfrage.rolle, { themen, ursachen, parteien, haltungen })).antwort
     }
 
     // Forderung mit erkanntem Thema: ein zweiter, kurzer Aufruf nur mit den Instrumenten dieses Themas.
