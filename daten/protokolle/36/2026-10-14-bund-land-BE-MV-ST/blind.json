@@ -1,0 +1,1599 @@
+{
+  "pruefsumme": "ac7b68e29bb2adddf09844204a31d5afcefaea337363172eced67424556891f2",
+  "thema": {
+    "id": 36,
+    "name": "Leerstand und Geschäftsschließungen in Innenstädten",
+    "ziel": "Menschen finden in ihrer Innenstadt oder ihrem Ortskern passende Einkaufsangebote und können diese gut erreichen und gerne nutzen."
+  },
+  "ursachen": [
+    {
+      "id": 3601,
+      "beschreibung": "Der zunehmende Onlinehandel wirkt sich laut BBSR-Projekt (2021 bis 2024) negativ auf den Geschäftsbesatz in den Zentren aus",
+      "ebene": "bund"
+    },
+    {
+      "id": 3602,
+      "beschreibung": "Einzigartigkeit des Sortiments und Atmosphäre eines Geschäfts hängen signifikant mit Schließungen zusammen (Daten 2015 bis 2020, Bekleidung und Medien; Studie 2024)",
+      "ebene": "land"
+    },
+    {
+      "id": 3603,
+      "beschreibung": "26 % der Befragten im Osten und 32 % im Westen sahen 2026 beim Stadtbild und Aufenthalt im öffentlichen Raum großen Handlungsbedarf (Befragung von 5.079 Personen)",
+      "ebene": "land"
+    },
+    {
+      "id": 3604,
+      "beschreibung": "Eine zugängliche Lage und günstige Öffnungszeiten hängen mit weniger Geschäftsschließungen zusammen (Daten 2015 bis 2020, Bekleidung und Medien; Studie 2024)",
+      "ebene": "land"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        3601,
+        3602,
+        3603,
+        3604
+      ],
+      "text": "Zu 3601 gehören Wettbewerbsbedingungen zwischen Online- und stationärem Handel und Digitalisierung des lokalen Handels, zu 3602 Sortiment, Ansiedlung und Nutzungsmischung in Innenstädten, zu 3603 Aufenthaltsqualität, Sauberkeit und Gestaltung des öffentlichen Raums, zu 3604 Erreichbarkeit (Parken, Straßenraum, Fuß-, Rad- und Nahverkehr) und Öffnungszeiten."
+    },
+    {
+      "nr": 2,
+      "text": "Wohnungsmieten gehören zu Miete, Abwanderung und kommunale Finanzen allgemein zu Abwanderung aus strukturschwachen Regionen, Parkplätze und Autoverkehr ohne Bezug zu Innenstadt oder Einzelhandel zu Autofahren. Maßnahmen für Innenstädte zählen nur, wenn das Zitat Innenstadt, Ortskern, Einzelhandel oder Leerstand nennt."
+    }
+  ],
+  "instrumente": [],
+  "massnahmen": [
+    {
+      "kennung": "M001",
+      "ebene": "bund",
+      "beschreibung": "Lehnt Fahrverbote für Innenstädte und das Umwidmen von Parkplätzen ab.",
+      "zitat": "Anti-Auto-Haltung, Fahrverbote für Innenstädte, das Umwidmen von Parkplätzen und ein generelles Tempolimit auf deutschen Autobahnen lehnen wir ab.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "a3f84bdd2ce313a8"
+    },
+    {
+      "kennung": "M002",
+      "ebene": "land",
+      "beschreibung": "Übernahme langjährig ungenutzter oder entwicklungsfähiger Immobilien als letztes Mittel erleichtern, wenn die anderen Instrumente erfolglos bleiben.",
+      "zitat": "Kommunen sollen wirksamere, abgestufte Instrumente gegen langfristigen Leerstand erhalten – etwa […] verpflichtende Zwischennutzung. Erst wenn diese Maßnahmen erfolglos bleiben, soll die Übernahme langjährig ungenutzter oder entwicklungsfähiger Immobilien als letztes Mittel erleichtert werden.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "7c927b8f1d74a8bd"
+    },
+    {
+      "kennung": "M003",
+      "ebene": "land",
+      "beschreibung": "Breitere, beleuchtete, barrierefreie Gehwege und mehr sichere Querungen fördern.",
+      "zitat": "Das fördern wir mit breiten, gut beleuchteten, barrierefreien und sicheren Gehwegen zu jeder Jahreszeit und bei allen Witterungsbedingungen sowie deutlich mehr sicheren Querungen, auch in Fahrradstraßen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3604
+      ],
+      "pruefsumme": "fc7c756dae8eb77b"
+    },
+    {
+      "kennung": "M004",
+      "ebene": "land",
+      "beschreibung": "Ortskerne beleben; Innenentwicklung hat Vorrang vor neuem Flächenverbrauch",
+      "zitat": "Innenentwicklung hat für uns Vorrang vor zusätzlichem Flächenverbrauch: Ortskerne beleben, Brachflächen aktivieren, Wege verkürzen.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "ccf7612fd8c20b15"
+    },
+    {
+      "kennung": "M005",
+      "ebene": "land",
+      "beschreibung": "Sofortprogramm: leerstehende Erdgeschossflächen an soziale Träger und Initiativen zu gedeckelten Mieten vergeben",
+      "zitat": "Mit einem Sofortprogramm für soziale Gewerbemieten stellen wir leerstehende Erdgeschossflächen sozialen Trägern, Kulturschaffenden, Jugendeinrichtungen und Nachbarschaftsinitiativen zu gedeckelten Mieten zur Verfügung und entwickeln ein soziales Gewerbemietmodell, das Vergabekriterien gemeinwohlorientiert gestaltet.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "c525385e0866333f"
+    },
+    {
+      "kennung": "M006",
+      "ebene": "land",
+      "beschreibung": "Sichere Fahrradabstellanlagen und Ladepunkte an Bahnhöfen, ÖPNV-Knoten und in Ortszentren",
+      "zitat": "Menschen wollen mit dem Rad mobil sein, wir schaffen die Infrastruktur dafür. […] Zur Attraktivität gehören sichere Abstellanlagen und Ladepunkte an Bahnhöfen, ÖPNV-Knoten und in Ortszentren.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "d93a7fdbb9414fc0"
+    },
+    {
+      "kennung": "M007",
+      "ebene": "land",
+      "beschreibung": "Landeswohnraumförderung aufstocken und reformieren, unter anderem um Leerstand in zentralen Ortslagen zu aktivieren.",
+      "zitat": "Wir fördern bezahlbares Wohnen, indem wir: […] das Landeswohnraumförderprogramm „Wohnungsbau Sozial“ aufstocken und reformieren, unter anderem durch zinsgünstigere Darlehen und höhere Tilgungszuschüsse für Sozialwohnungen, eine möglichst lange Mietpreisbindung sowie die Einführung neuer Fördersparten für altersgerechte, bezahlbare Wohnformen und die Aktivierung von Leerstand in zentralen Ortslagen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3602
+      ],
+      "pruefsumme": "ddfe3a56a7028f9e"
+    },
+    {
+      "kennung": "M008",
+      "ebene": "bund",
+      "beschreibung": "Sichere Radwege in der Innenstadt schaffen, zusammen mit attraktivem öffentlichem Nah- und Fernverkehr.",
+      "zitat": "Wir wollen eine Verkehrspolitik, die für alle Verkehrsteilnehmer da ist – vom Autofahrer bis zum Fußgänger. Dafür braucht es sichere Radwege in der Innenstadt ebenso wie einen attraktiven öffentlichen Nah- und Fernverkehr und intakte Straßen und Autobahnen.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "a3b9f5be83980b86"
+    },
+    {
+      "kennung": "M009",
+      "ebene": "bund",
+      "beschreibung": "Erhalt und Ausbau innerstädtischer Fahrspuren und Parkraum, zum Schutz des Einzelhandels",
+      "zitat": "Gleichzeitig fordert [Partei] den Erhalt und Ausbau von innerstädtischen Fahrspuren und Parkraum zur Vermeidung von wachsendem Verkehrschaos sowie zum Schutz der Attraktivität des Einzelhandels.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "69395bc567bde409"
+    },
+    {
+      "kennung": "M010",
+      "ebene": "bund",
+      "beschreibung": "Städtebauförderung aufstocken, um lebendige Innenstädte und Ortszentren mit gemischten Quartieren zu schaffen",
+      "zitat": "Wir wollen lebendige und […] Innenstädte und Ortszentren mit attraktiven und nutzungsdurchmischten Quartieren schaffen. […] Hierfür wollen wir die Mittel für die Städtebauförderung aufstocken […]",
+      "ursachen_ids": [
+        3602
+      ],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "bd7b01a55dfb6d5b"
+    },
+    {
+      "kennung": "M011",
+      "ebene": "land",
+      "beschreibung": "Radverkehrsführung auf Nebenstraßen parallel zu Hauptstraßen",
+      "zitat": "Eine zielgerichtete Streckenführung auf Nebenstraßen, die benachbart und parallel zu Hauptstraßen verlaufen.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "693e7ca1f2f9eb75"
+    },
+    {
+      "kennung": "M012",
+      "ebene": "land",
+      "beschreibung": "Entfernung von Obdachlosencamps nach klaren Regeln",
+      "zitat": "Obdachlosencamps sollen nach klaren Regeln entfernt werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "8adb15e3841dea2a"
+    },
+    {
+      "kennung": "M013",
+      "ebene": "land",
+      "beschreibung": "Rückbau von Umwelt- und Bürokratieauflagen für Einzelhandel und Gastronomie",
+      "zitat": "Deshalb fordern wir: […] Den Rückbau der wuchernden Umwelt- und Bürokratieauflagen für Einzelhandel und Gastronomie.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3602
+      ],
+      "pruefsumme": "3e7c26b74c4f644f"
+    },
+    {
+      "kennung": "M014",
+      "ebene": "land",
+      "beschreibung": "Stadtumbauprogramm bis 2035 gegen Leerstand: Rückbau und Aufwertung im Bestand finanzieren.",
+      "zitat": "Wir wollen: […] gegen den Leerstand die Auflage eines neuen Stadtumbauprogramms bis 2035 für den Rückbau und Aufwertung im Bestand finanzieren.",
+      "ursachen_ids": [
+        3602
+      ],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "8604d393254dec02"
+    },
+    {
+      "kennung": "M015",
+      "ebene": "land",
+      "beschreibung": "Originalgetreue Rekonstruktion stadtbildprägender Bauwerke, u. a. Altstadt am Molkenmarkt",
+      "zitat": "Deshalb setzen wir uns für die originalgetreue Rekonstruktion stadtbildprägender Bauwerke ein. Dies betrifft insbesondere die Schinkelsche Bauakademie sowie eine Wiederbebauung der [Land] Altstadt am Molkenmarkt.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "fe29dbe258ac9ca5"
+    },
+    {
+      "kennung": "M016",
+      "ebene": "land",
+      "beschreibung": "Zwischennutzung leer stehender Gebäude erleichtern",
+      "zitat": "Zwischennutzungen von leer stehenden Gebäuden, temporäre Veranstaltungsflächen und Open-Air-Angebote wollen wir erleichtern, um neue Freiräume für Kultur, Musik und kreative Experimente zu schaffen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3602
+      ],
+      "pruefsumme": "4a7ac013c10d81b5"
+    },
+    {
+      "kennung": "M017",
+      "ebene": "land",
+      "beschreibung": "Mehr sichtbare Polizeipräsenz für sichere, attraktive öffentliche Räume",
+      "zitat": "Wir setzen uns für mehr sichtbare Polizeipräsenz, klare rechtliche Befugnisse, soziale Gerechtigkeit und ausreichende Mittel für attraktive Innenstädte, lebenswerte Quartiere und starke ländliche Räume ein.",
+      "ursachen_ids": [
+        3603
+      ],
+      "pruefsumme": "f302fe9a82516bd8"
+    },
+    {
+      "kennung": "M018",
+      "ebene": "land",
+      "beschreibung": "Gewinnbeteiligung an der Innenstadtsanierung nach Naturkatastrophen einführen.",
+      "zitat": "Wir werden eine Elementarpflichtversicherung bei Hochwassergefahr und eine Innenstadtsanierungsgewinnbeteiligung nach Naturkatastrophen einführen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "c49458f851efb0ed"
+    },
+    {
+      "kennung": "M019",
+      "ebene": "land",
+      "beschreibung": "Überholte Umweltzonen in Innenstädten aufheben.",
+      "zitat": "Überholte Umweltzonen in Innenstädten wollen wir aufheben.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "f9e85172d8d04dc5"
+    },
+    {
+      "kennung": "M020",
+      "ebene": "land",
+      "beschreibung": "Umwandlung leerstehender Gewerberäume in Wohnraum erleichtern (zusammen mit Dachaufstockungen und Ausbauten).",
+      "zitat": "Für mehr Tempo bei der Schaffung von Wohnraum wollen wir: […] den Gebäudebestand und die vorhandene Infrastruktur effizienter nutzen, etwa durch erleichterte Dachaufstockungen und -ausbauten sowie die Umwandlung leerstehender Gewerberäume in Wohnraum.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3602
+      ],
+      "pruefsumme": "f38fffd535738532"
+    },
+    {
+      "kennung": "M021",
+      "ebene": "land",
+      "beschreibung": "Waffenverbotszonen im Land abschaffen",
+      "zitat": "Ebenso fordern wir die Abschaffung aller Waffenverbotszonen im Land und damit die Abschaffung der Möglichkeit der anlasslosen Personenkontrollen in diesen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "07d190e6870c44dd"
+    },
+    {
+      "kennung": "M022",
+      "ebene": "land",
+      "beschreibung": "Bundesgesetz gegen Gewerbeleerstand (Zweckentfremdungsverbot für Gewerbe) fordern, um Leerstand zu sanktionieren.",
+      "zitat": "Wir fordern außerdem auf Bundesebene ein Zweckentfremdungsverbotsgesetz für Gewerbe, um Leerstand konsequent zu sanktionieren.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "c8114d5a7781a060"
+    },
+    {
+      "kennung": "M023",
+      "ebene": "land",
+      "beschreibung": "BSR-Kieztage öfter und an mehr Orten veranstalten",
+      "zitat": "BSR-Kieztage sollen öfter und an mehr Orten stattfinden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "c2820308909f0bde"
+    },
+    {
+      "kennung": "M024",
+      "ebene": "land",
+      "beschreibung": "Ausbau des Schienennetzes und Einsatz neuer Verkehrssysteme wie Seilbahnen",
+      "zitat": "Einen zügigen Ausbau des Schienennetzes und den Einsatz moderner, ressourcenschonender Verkehrssysteme wie Seilbahnen.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "901988cb7a996d91"
+    },
+    {
+      "kennung": "M025",
+      "ebene": "land",
+      "beschreibung": "Verkehrsinfrastruktur gezielt ergänzen, um Innenstadt und Außenbezirke besser zu vernetzen",
+      "zitat": "Die bestehende Verkehrsinfrastruktur werden wir gezielt ergänzen, um Innenstadt und Außenbezirke noch besser zu vernetzen.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "73faf669b2591830"
+    },
+    {
+      "kennung": "M026",
+      "ebene": "land",
+      "beschreibung": "Kooperation von Kultur und Tourismus stärken, um Innenstädte mit Kulturrouten, Festivals und Kunst im öffentlichen Raum zu beleben.",
+      "zitat": "Dieses Potenzial wollen wir besser nutzen und werden dafür die Kooperation zwischen Kultur und Tourismus stärken. Ziel ist es dabei auch, die Innenstädte durch Kulturrouten, Festivals oder Kunst im öffentlichen Raum zu beleben.",
+      "ursachen_ids": [
+        3603
+      ],
+      "pruefsumme": "17e766ba6d5fa096"
+    },
+    {
+      "kennung": "M027",
+      "ebene": "land",
+      "beschreibung": "Ordnungsämter rund um die Uhr aktiv, konsequente Ahndung von Verursachern",
+      "zitat": "Die Ordnungsämter müssen rund um die Uhr aktiv sein, um eine konsequente Ahndung von Verursachern zu ermöglichen.",
+      "ursachen_ids": [
+        3603
+      ],
+      "pruefsumme": "bb05ad22e5838672"
+    },
+    {
+      "kennung": "M028",
+      "ebene": "land",
+      "beschreibung": "Kredite zu Sonderkonditionen für die Sanierung von Altbauten in historischen Innenstadtbereichen ermöglichen.",
+      "zitat": "In [Land] verfügen viele Städte über eine gute Altbausubstanz, vor allem in den historischen Innenstadtbereichen. […] Eine [Partei]-geführte Landesregierung wird die Kreditvergabe zu Sonderkonditionen für die Sanierung dieser Altbausubstanz […]",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "26ace7a6065f904f"
+    },
+    {
+      "kennung": "M029",
+      "ebene": "land",
+      "beschreibung": "Kleinteilige Eigentümerstruktur in der Innenstadt anstreben, wo Flächen neu gebaut oder umgestaltet werden",
+      "zitat": "Wir werden deshalb bei neu zu bebauenden oder grundlegend umzugestaltenden Flächen, insbesondere in der Innenstadt, eine kleinteilige Eigentümerstruktur anstreben und wo immer möglich herstellen.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "fb153fd2acc0d07c"
+    },
+    {
+      "kennung": "M030",
+      "ebene": "bund",
+      "beschreibung": "Bürokratie für den Einzelhandel verringern: Beweislast bei Dokumentationspflichten umkehren, regelmäßige Nachweise durch ein Anzeigerecht ersetzen.",
+      "zitat": "Wir kehren in Handwerk, Einzelhandel, Gastronomie oder Hotellerie bei Dokumentationspflichten die Beweislast um und ersetzen die regelmäßigen Nachweise durch ein Anzeigerecht von Verstößen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3601
+      ],
+      "pruefsumme": "42c013557579a3bd"
+    },
+    {
+      "kennung": "M031",
+      "ebene": "bund",
+      "beschreibung": "Hilfsangebote und Sozialarbeit für Obdachlose und Suchtabhängige statt Verdrängung aus den Innenstädten.",
+      "zitat": "Obdachlosen und Suchtabhängigen ist nicht mit einer Verdrängung aus den Innenstädten geholfen, vielmehr benötigen sie bessere Hilfsangebote und eine Stärkung der Sozialarbeit.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "477258e1b4213fe8"
+    },
+    {
+      "kennung": "M032",
+      "ebene": "land",
+      "beschreibung": "Öffentliche Toiletten für alle Geschlechter kostenfrei nutzbar machen",
+      "zitat": "Als Teil der öffentlichen Infrastruktur sollen öffentliche Toiletten für alle Geschlechter kostenfrei nutzbar sein.",
+      "ursachen_ids": [
+        3603
+      ],
+      "pruefsumme": "08a13aa22aeedd70"
+    },
+    {
+      "kennung": "M033",
+      "ebene": "land",
+      "beschreibung": "Umbau von Bestandsgebäuden und Neubau innovativer Seniorenwohnformen in zentralen Ortslagen fördern.",
+      "zitat": "Wir fördern bezahlbares Wohnen, indem wir: […] den Umbau von Bestandsgebäuden und den Neubau für innovative Seniorenwohnformen in zentralen Ortslagen fördern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3602
+      ],
+      "pruefsumme": "03e91c1ac6cf7bef"
+    },
+    {
+      "kennung": "M034",
+      "ebene": "land",
+      "beschreibung": "In Fußgängerzonen soll die Geschwindigkeit von Fahrzeugen technisch auf Schrittgeschwindigkeit begrenzt werden",
+      "zitat": "In Fußgängerzonen soll die Geschwindigkeit der Fahrzeuge technisch auf Schrittgeschwindigkeit begrenzt werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "9e47e5b2b712e454"
+    },
+    {
+      "kennung": "M035",
+      "ebene": "land",
+      "beschreibung": "Am Alexanderplatz einen Nutzungsmix (vor allem Kultur) und eine ansprechende Gestaltung ermöglichen, damit der Platz wieder Aufenthaltsqualität hat.",
+      "zitat": "Die Innenstadt muss Lebensraum für alle sein und braucht eine hohe Aufenthaltsqualität. […] Der Alexanderplatz ist für viele [Land]*innen ein zentraler Ort. Damit der Platz Aufenthaltsqualität zurückerhält, wollen wir einen Nutzungsmix insbesondere mit Kultur und eine ansprechende Gestaltung ermöglichen.",
+      "ursachen_ids": [
+        3602,
+        3603
+      ],
+      "pruefsumme": "2953ada85c601fd8"
+    },
+    {
+      "kennung": "M036",
+      "ebene": "land",
+      "beschreibung": "Gemeinsame Sicherheits- und Sauberkeitsstreifen auf U-Bahn-Linien",
+      "zitat": "Gemeinsame Sicherheits- und Sauberkeitsstreifen auf allen U-Bahn-Linien und ein einheitliches Notrufsystem.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "77d3ff54491e403b"
+    },
+    {
+      "kennung": "M037",
+      "ebene": "land",
+      "beschreibung": "Taubenpopulation an Einkaufszentren und anderen stark frequentierten Orten begrenzen (Taubenschläge, Fütterungsverbote, bauliche Vergrämung)",
+      "zitat": "Wir werden die Taubenpopulation insbesondere an Einkaufszentren, Bahnhöfen und anderen stark frequentierten Orten wirksam und tierschutzgerecht begrenzen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "1646a7397a872d72"
+    },
+    {
+      "kennung": "M038",
+      "ebene": "land",
+      "beschreibung": "Sicherheitspartnerschaften von Polizei und Ordnungsämtern ausbauen; mehr Polizeipräsenz im öffentlichen Raum",
+      "zitat": "Wir bauen Sicherheitspartnerschaften zwischen Polizei und Ordnungsämtern flächendeckend aus und machen gemeinsame Einsätze zum Regelfall. Klare Zuständigkeiten, feste Absprachen und abgestimmtes Handeln verhindern Kompetenzgerangel, erhöhen die Präsenz im öffentlichen Raum und sorgen dafür, dass staatliche Autorität geschlossen, effizient und für die Bürger sichtbar wahrgenommen wird.",
+      "ursachen_ids": [
+        3603
+      ],
+      "pruefsumme": "27bf3d7b5e15d821"
+    },
+    {
+      "kennung": "M039",
+      "ebene": "land",
+      "beschreibung": "Baukasten für Bezirke zu Verkehrsberuhigung und Verkehrssicherheit, damit wohnungsnaher Einzelhandel für Kunden erreichbar bleibt",
+      "zitat": "Polizei und Feuerwehr wie Müllabfuhr müssen schnell überall hin gelangen, wohnungsnaher Einzelhandel und Supermärkte erreichbar für Kunden wie Lieferanten sein. Um das sicherzustellen, nutzen wir das neue Landesorganisationsgesetz und geben als [Land] den Bezirken einen einheitlichen und verbindlichen Baukasten von Möglichkeiten sinnvoller Verkehrsberuhigung und Verkehrssicherheit an die Hand.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "fcfdff7972ec8d05"
+    },
+    {
+      "kennung": "M040",
+      "ebene": "land",
+      "beschreibung": "Einbindung von Bürgern und Bildungseinrichtungen in Sauberkeitsmaßnahmen",
+      "zitat": "Die Einbindung von Bürgern und Bildungseinrichtungen in Umwelt- und Sauberkeitsmaßnahmen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "e3e0ac9667576361"
+    },
+    {
+      "kennung": "M041",
+      "ebene": "land",
+      "beschreibung": "Sicherheit im öffentlichen Raum stärken: Beleuchtung und Überdachung von Haltestellen, besetzte Bahnhöfe, BVG-Streifen.",
+      "zitat": "Wir stärken die Sicherheit im öffentlichen Raum, etwa durch Überdachung und Beleuchtung von Haltestellen, Sicherheitsinfos in Nachtbussen, besetzte Bahnhöfe, mehr BVG-Streifen mit gemischten Teams",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "941088278e979b1e"
+    },
+    {
+      "kennung": "M042",
+      "ebene": "land",
+      "beschreibung": "Regeln für verkaufsoffene Sonntage praxisnäher und flexibler gestalten und dafür bürokratische Hürden abbauen.",
+      "zitat": "Die Regelungen für verkaufsoffene Sonntage in [Land] sollen praxisnah und flexibel gestaltet werden. […] Unnötige bürokratische Hürden werden wir abbauen, damit Unternehmer künftig unkomplizierter planen können.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "c047c308a578720f"
+    },
+    {
+      "kennung": "M043",
+      "ebene": "land",
+      "beschreibung": "Stadtprofile stärken und Innenstädte als lebendige Orte sichern (Grenzfall: Ansiedlung/Nutzungsmischung oder Aufenthalt)",
+      "zitat": "Stadtprofile stärken, Innenstädte als lebendige Orte sichern und Stadt-Umland-Kooperationen ausbauen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3602,
+        3603
+      ],
+      "pruefsumme": "38538fe452445d53"
+    },
+    {
+      "kennung": "M044",
+      "ebene": "land",
+      "beschreibung": "Förderprogramm für den Umbau von Handelsimmobilien zu Wohn-, Büro- und Kulturnutzungen; Zentrenprogramm „Lebendige Zentren“ mit dem Bund um- und ausbauen",
+      "zitat": "Wir werden gemeinsam mit dem Bund das Programm „Lebendige Zentren“ um- und ausbauen und ein Programm für den Umbau von Handelsimmobilien für Wohn-, Büro- und Kulturnutzungen auflegen.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "084fda4e03ba3c97"
+    },
+    {
+      "kennung": "M045",
+      "ebene": "land",
+      "beschreibung": "Leerstand kommunal managen (Leerstands- und Brachflächenmanagement) und temporäre Zwischennutzungen fördern.",
+      "zitat": "Für mehr Tempo bei der Schaffung von Wohnraum wollen wir: […] Leerstand aktiv managen, etwa durch kommunales Leerstands- und Brachflächenmanagement sowie die Förderung temporärer Zwischennutzungen.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "3f77f61e58d966a2"
+    },
+    {
+      "kennung": "M046",
+      "ebene": "land",
+      "beschreibung": "Mittel für die Pflege von Parks, Straßen und Plätzen im Land und in den Bezirken erhöhen",
+      "zitat": "Im Haushalt des Landes [Land], aber auch in allen Bezirken sollen die Mittel für die Pflege von Parks, Straßen und Plätzen erhöht werden.",
+      "ursachen_ids": [
+        3603
+      ],
+      "pruefsumme": "d22e50a664b9c560"
+    },
+    {
+      "kennung": "M047",
+      "ebene": "land",
+      "beschreibung": "Vorrangnetz für den Fußverkehr definieren; bei Planung und Instandhaltung prioritär behandeln",
+      "zitat": "Wir werden ein Vorrangnetz für den Fußverkehr definieren lassen, analog zu den Vorrangnetzen für den Auto- und Radverkehr sowie den ÖPNV. Dieses Netz […] wird bei Planung, Instandhaltung und Ausbau prioritär behandelt.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "cfac3ceeb022a6bf"
+    },
+    {
+      "kennung": "M048",
+      "ebene": "bund",
+      "beschreibung": "Regeln, damit importierte Waren auf großen Online-Plattformen angemessen verzollt und versteuert werden.",
+      "zitat": "Wir setzen uns zudem für wirksame und praktikable Regeln auf europäischer und nationaler Ebene ein, die sicherstellen, dass importierte Waren auf großen Online-Plattformen angemessen verzollt und versteuert werden.",
+      "ursachen_ids": [
+        3601
+      ],
+      "pruefsumme": "93607ec0a35702fe"
+    },
+    {
+      "kennung": "M049",
+      "ebene": "land",
+      "beschreibung": "Bodenpolitik so ausrichten, dass bezahlbares Wohnen mit der Wiederbelebung zentraler Ortslagen verbunden wird.",
+      "zitat": "Für gemeinwohlorientierte Bodenpolitik und Wohnraumentwicklung wollen wir: […] durch eine strategische Bodenpolitik bezahlbares Wohnen mit der Wiederbelebung zentraler Ortslagen verbinden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3602
+      ],
+      "pruefsumme": "c53636fa09948f4b"
+    },
+    {
+      "kennung": "M050",
+      "ebene": "land",
+      "beschreibung": "Kapazität bestehender Durchgangsstraßen in der Innenstadt nicht weiter reduzieren",
+      "zitat": "Eine weitere Reduzierung der Kapazitäten bestehender Durchgangsstraßen in der Innenstadt lehnen wir, wo es nicht sinnvoll ist, ab.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "94b9073d79adb2f0"
+    },
+    {
+      "kennung": "M051",
+      "ebene": "land",
+      "beschreibung": "Rechtssichere Sonntagsöffnung; acht verkaufsoffene Sonntage sollen stattfinden; Bezirke sollen zweimal im Jahr zusätzliche verkaufsoffene Sonntage festlegen können",
+      "zitat": "Wir stehen für eine rechtssichere Gestaltung der Sonntagsöffnung und setzen uns dafür ein, dass die gesetzlich möglichen acht verkaufsoffenen Sonntage auch tatsächlich stattfinden. Darüber hinaus sollen die Bezirke zweimal im Jahr zusätzliche verkaufsoffene Sonntage für besondere bezirkliche Anlässe festlegen können.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "c6370441c9591c66"
+    },
+    {
+      "kennung": "M052",
+      "ebene": "land",
+      "beschreibung": "Leer gefallene Shoppingcenter in die öffentliche Hand überführen und gemeinschaftlich als Quartiers-Sorgezentren betreiben.",
+      "zitat": "Insbesondere leer gefallene Shoppingcenter wollen wir dafür in die öffentliche Hand überführen und gemeinschaftlich […] betreiben.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "bd7ef9550aa25a3b"
+    },
+    {
+      "kennung": "M053",
+      "ebene": "bund",
+      "beschreibung": "Historische Innenstädte bewahren und bei Bedarf rekonstruieren",
+      "zitat": "Die Schönheit historischer Innenstädte muss bewahrt und bei Bedarf durch Rekonstruktionen wiederhergestellt werden.",
+      "ursachen_ids": [
+        3603
+      ],
+      "pruefsumme": "88fbfe653b73caf0"
+    },
+    {
+      "kennung": "M054",
+      "ebene": "land",
+      "beschreibung": "Leerstehende Bürogebäude umnutzen, mit Bundesfördermitteln und einem neuen Landesförderprogramm.",
+      "zitat": "Stattdessen setzen wir uns für die Umnutzung bereits bestehender, leer stehender Bürogebäude ein, nutzen dafür zur Verfügung stehende Fördermittel auf Bundesebene und schaffen ein Landesförderprogramm.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "7d8eb9dfd9907898"
+    },
+    {
+      "kennung": "M055",
+      "ebene": "land",
+      "beschreibung": "Gewässer in der Innenstadt besser zugänglich machen, Baden in der Spree ermöglichen.",
+      "zitat": "Wir wollen, dass die Gewässer in der Innenstadt wieder besser zugänglich werden. Als Baustein dafür machen wir Baden in der Spree möglich.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "aaf1d4d117dcf55a"
+    },
+    {
+      "kennung": "M056",
+      "ebene": "land",
+      "beschreibung": "Konsequente Nutzung kommunaler Vorkaufsrechte gegen Leerstand und Spekulation im Rahmen der Gemeindeentwicklung",
+      "zitat": "[Partei] setzt auf eine ganzheitliche Gemeindeentwicklung und die Stärkung lokaler Handlungsfähigkeit, etwa durch die konsequente Nutzung kommunaler Vorkaufsrechte gegen Leerstand und Spekulation.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3602
+      ],
+      "pruefsumme": "df7e61f1848e09d9"
+    },
+    {
+      "kennung": "M057",
+      "ebene": "land",
+      "beschreibung": "Förderung des sozialen Wohnungsbaus in Innenstädten nach dem Drittel-Mix-Modell",
+      "zitat": "Die Förderung des sozialen Wohnungsbaus in den Innenstädten in Anlehnung an das [Land] Drittel-Mix-Modell (ein Drittel öffentlich geförderter Wohnungsbau, ein Drittel Eigentumswohnungen, ein Drittel frei finanzierte Wohnungen) kann Segregation verhindern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3602
+      ],
+      "pruefsumme": "c97cdd1220ec9d79"
+    },
+    {
+      "kennung": "M058",
+      "ebene": "land",
+      "beschreibung": "Reinigung von ÖPNV-Verkehrsflächen und Bahnhofsvorplätzen über Verkehrsverträge sichern",
+      "zitat": "Einen besonderen Fokus wollen wir auf die konsequentere Reinigung von Verkehrsflächen des ÖPNV legen. Dies gilt auch für Bahnhofsvorplätze. Dafür wollen wir über die Verkehrsverträge die Anbieter von ÖPNV-Leistungen ebenfalls in die Verantwortung nehmen.",
+      "ursachen_ids": [
+        3603
+      ],
+      "pruefsumme": "b85fde1056525e7d"
+    },
+    {
+      "kennung": "M059",
+      "ebene": "bund",
+      "beschreibung": "Große Onlineplattformen sollen wie der Laden um die Ecke Produktverantwortung übernehmen",
+      "zitat": "Wir unterstützen den Digital Fairness Act der EU-Kommission und setzen uns dafür ein, dass große Plattformen – genau wie der Laden um die Ecke – Produktverantwortung übernehmen müssen.",
+      "ursachen_ids": [
+        3601
+      ],
+      "pruefsumme": "2ddeda19c7904098"
+    },
+    {
+      "kennung": "M060",
+      "ebene": "land",
+      "beschreibung": "U-Bahn-Netz jährlich um ein bis zwei Kilometer erweitern",
+      "zitat": "Daher ist es erforderlich, das bestehende Netz nicht nur zu erhalten, sondern jährlich ein bis zwei Kilometer zusätzlich zu bauen.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "b2d08d32453f3c6b"
+    },
+    {
+      "kennung": "M061",
+      "ebene": "land",
+      "beschreibung": "Leerstehende Objekte durch finanziellen Druck auf untätige Eigentümer nutzbar machen",
+      "zitat": "Wir wollen mit einem landesweiten Ansatz die Nutzbarmachung sogenannter Geisterhäuser zügig vorantreiben. Wir entwickeln ein effizientes Modell, um blockierende/untätige Eigentümerinnen und Eigentümer durch finanziellen Druck zu veranlassen, ihre Objekte abzugeben oder zu sanieren.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3602
+      ],
+      "pruefsumme": "a991e5688d1f65aa"
+    },
+    {
+      "kennung": "M062",
+      "ebene": "land",
+      "beschreibung": "Bau von Obdachlosencamps verhindern",
+      "zitat": "Zudem soll der Bau von Obdachlosencamps konsequent verhindert und Betroffenen sollen aktiv alternative Wohnmöglichkeiten aufgezeigt werden.",
+      "ursachen_ids": [
+        3603
+      ],
+      "pruefsumme": "e44a6d8a0c83ec13"
+    },
+    {
+      "kennung": "M063",
+      "ebene": "land",
+      "beschreibung": "Über den Bundesrat eine dauerhafte gesetzliche Begrenzung der Gewerbemieten vorschlagen.",
+      "zitat": "Immer mehr Läden, insbesondere Gastronomie und Einzelhandel, aber auch Kitas und andere Einrichtungen, sind dadurch von Verdrängung bedroht. Wir werden über den Bundesrat eine dauerhafte Begrenzung der Gewerbemieten per Gesetz vorschlagen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3602
+      ],
+      "pruefsumme": "2799b99713601ba7"
+    },
+    {
+      "kennung": "M064",
+      "ebene": "land",
+      "beschreibung": "Begrünung und Kühlung der Wohnumfelder in dicht bebauten Kiezen; in der Innenstadt Biotopflächenfaktor",
+      "zitat": "Gerade in dicht bebauten Kiezen und Vierteln mit wenig Grün investieren wir in bessere Wohnumfelder – mehr Pflanzen, entsiegelte Böden und Kühlung an heißen Tagen. In der Innenstadt nutzen wir hierfür das Instrument des Biotopflächenfaktors.",
+      "ursachen_ids": [
+        3603
+      ],
+      "pruefsumme": "8f950ed7057d65cc"
+    },
+    {
+      "kennung": "M065",
+      "ebene": "land",
+      "beschreibung": "Schnellere Entfernung von Autowracks, höhere Kosten für Verursacher",
+      "zitat": "Autowracks müssen für die Verursacher teurer werden und schneller entfernt werden.",
+      "ursachen_ids": [
+        3603
+      ],
+      "pruefsumme": "0bdbc632142d7bc0"
+    },
+    {
+      "kennung": "M066",
+      "ebene": "land",
+      "beschreibung": "Bedarfsgerechter Radwegeausbau durch besseres Radverkehrsmonitoring",
+      "zitat": "Einen bedarfsgerechten Ausbau der Radverkehrsinfrastruktur durch besseres Radverkehrsmonitoring.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "4ce345c11331a045"
+    },
+    {
+      "kennung": "M067",
+      "ebene": "land",
+      "beschreibung": "Polizei erhält Sonderbefugnisse an kriminalitätsbelasteten Orten",
+      "zitat": "Dazu erhält die Polizei an solchen kriminalitätsbelasteten Orten die Sonderbefugnisse der verdachtsunabhängigen Identitätsfeststellung und der Durchsuchung von Personen und Sachen.",
+      "ursachen_ids": [
+        3603
+      ],
+      "pruefsumme": "5c50a62580cb7c31"
+    },
+    {
+      "kennung": "M068",
+      "ebene": "land",
+      "beschreibung": "Landesweites Flächenregister, das unter anderem Leerstand erfasst",
+      "zitat": "Wir werden aufbauend auf dem Liegenschaftskataster ein landesweites Flächenregister schaffen, das Informationen zu Eigentum, Nutzung, Leerstand, baulichem Zustand und Potenzialflächen enthält.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3602
+      ],
+      "pruefsumme": "1ee7042ba6f7f4fc"
+    },
+    {
+      "kennung": "M069",
+      "ebene": "land",
+      "beschreibung": "Empfehlungen des Zentrengipfels zur Attraktivität von Einkaufsstraßen umsetzen, lokale Selbstorganisation stärken.",
+      "zitat": "Wir erhalten und stärken die ökonomische Vielfalt in allen [Land] Stadtteilen. Stationärer Einzelhandel, vielfältige Gastronomie- und Kulturangebote beleben Kieze und schaffen Begegnung – zwischen [Land]*innen und Gästen aus aller Welt. Um Einkaufsstraßen attraktiver zu machen, setzen wir die Empfehlungen des [Land] Zentrengipfels konsequent um und stärken lokale Selbstorganisation.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "3434ccb8a05c2799"
+    },
+    {
+      "kennung": "M070",
+      "ebene": "land",
+      "beschreibung": "Systematisches Leerstandsmonitoring von Büro- und Gewerbeflächen einführen",
+      "zitat": "Für mehr Transparenz über die Entwicklungen auf dem Gewerbemarkt setzen wir uns für die Einführung eines systematischen Leerstandsmonitorings von Büro- und Gewerbeflächen ein.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3602
+      ],
+      "pruefsumme": "ece72d5cfa6fc85c"
+    },
+    {
+      "kennung": "M071",
+      "ebene": "land",
+      "beschreibung": "Engen Austausch mit den Bezirken suchen und den Zentrengipfel gegen Leerstand fortführen",
+      "zitat": "Dafür streben wir einen engen Austausch mit den Bezirken an und führen den erfolgreichen Zentrengipfel fort.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3602
+      ],
+      "pruefsumme": "91e11c04acd50fe6"
+    },
+    {
+      "kennung": "M072",
+      "ebene": "land",
+      "beschreibung": "Erhalt der Galeria-Warenhaus-Standorte in der City West, behutsame Weiterentwicklung mit Beteiligung.",
+      "zitat": "Wir setzen uns für den Erhalt der dortigen Galeria-Warenhaus-Standorte, eine behutsame Weiterentwicklung der Objekte unter Beteiligung der Anwohner*innen und der benachbarten Gewerbetreibenden ein.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3602
+      ],
+      "pruefsumme": "084cbe515629220f"
+    },
+    {
+      "kennung": "M073",
+      "ebene": "bund",
+      "beschreibung": "Leerstand-Strategie mit Förderprogrammen, damit leerstehende Immobilien zu Wohn- oder Gewerberaum werden",
+      "zitat": "Um leerstehende Gebäude im ländlichen Raum wieder nutzbar zu machen und damit die Attraktivität und Wirtschaftskraft dieser Regionen zu stärken, brauchen wir eine umfassende Leerstand-Strategie für den ländlichen Raum. Durch gezielte Förderprogramme und Anreize sollen Kommunen und private Eigentümer motiviert werden, leerstehende Immobilien in Wohn- oder Gewerberaum umzuwandeln.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "0735be995570368f"
+    },
+    {
+      "kennung": "M074",
+      "ebene": "land",
+      "beschreibung": "Konsequentes Vorgehen gegen Vandalismus und Graffiti auf öffentlicher Infrastruktur",
+      "zitat": "Wir fordern ein konsequentes Vorgehen gegen Vandalismus. Sachbeschädigung, beispielsweise in Form von Graffiti auf öffentlicher Infrastruktur, wird in [Land] nicht genug verfolgt.",
+      "ursachen_ids": [
+        3603
+      ],
+      "pruefsumme": "2a026c9847ebd9f7"
+    },
+    {
+      "kennung": "M075",
+      "ebene": "land",
+      "beschreibung": "Ladenöffnungszeitengesetz weitgehend liberalisieren, mehr Sonntags- und Feiertagsöffnungen ermöglichen",
+      "zitat": "Wir werden schnellstmöglich die vollständige Liberalisierung des Ladenöffnungszeitengesetzes vorantreiben, die insbesondere eine größtmögliche Ausweitung der Sonntagsöffnungen sowie Öffnungen an Feiertagen ermöglicht.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "3bd845701563fb3f"
+    },
+    {
+      "kennung": "M076",
+      "ebene": "land",
+      "beschreibung": "Sondernutzungsflächen für Einzelhandel, Schankbetriebe und Kultur unbürokratisch ausweisen",
+      "zitat": "Wir wollen, dass Sondernutzungsflächen für den Einzelhandel, Schankbetriebe und kulturelle Projekte unbürokratisch ausgewiesen werden",
+      "ursachen_ids": [
+        3602
+      ],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "9def2aa0c760e60b"
+    },
+    {
+      "kennung": "M077",
+      "ebene": "land",
+      "beschreibung": "Bei öffentlichen Bauten soll auf einen architektonischen Heimatstil geachtet werden",
+      "zitat": "Die öffentliche Hand prägt mit Bauvorhaben maßgeblich Innenstädte und Infrastruktur. […] Bei öffentlichen Bauten soll in Zukunft auf einen architektonischen Heimatstil geachtet werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "189eda7b5061d046"
+    },
+    {
+      "kennung": "M078",
+      "ebene": "land",
+      "beschreibung": "Barrierefreiheit für Mobilitätseingeschränkte und kognitiv Beeinträchtigte ausbauen",
+      "zitat": "Barrierefreiheit nicht nur für in der Mobilität beeinträchtige Personen, sondern auch für kognitiv Beeinträchtige ausbauen.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "aca158719b32db0a"
+    },
+    {
+      "kennung": "M079",
+      "ebene": "land",
+      "beschreibung": "Kommunen beim Leerstandsabbau unterstützen und Zwischennutzungen, etwa durch Start-ups oder Pop-up-Stores, ermöglichen.",
+      "zitat": "Kommunen sollen beim Abbau von Leerstand unterstützt werden und intelligente, alternative Zwischennutzungen ermöglichen, z. B. durch Start-ups, Pop-up-Stores oder nichtkommerzielle Treffpunkte.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "9fdc46c754c3835b"
+    },
+    {
+      "kennung": "M080",
+      "ebene": "bund",
+      "beschreibung": "Versandhandel mit rezeptpflichtigen Medikamenten verbieten",
+      "zitat": "Den Versandhandel mit rezeptpflichtigen Medikamenten lassen wir nicht mehr zu, da er zu Wettbewerbsverzerrungen beiträgt.",
+      "ursachen_ids": [
+        3601
+      ],
+      "pruefsumme": "26f494c3548601de"
+    },
+    {
+      "kennung": "M081",
+      "ebene": "land",
+      "beschreibung": "Stadtentwicklungsplan Zentren neu auflegen, Zentren als Daseinsvorsorge verstehen.",
+      "zitat": "Den Stadtentwicklungsplan (StEP) Zentren werden wir neu auflegen – mit einer neuen Bedeutung von Zentrum als Daseinsvorsorge und nicht als „hohe kommerzielle Aktivität“.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3602
+      ],
+      "pruefsumme": "d32e705578c15f82"
+    },
+    {
+      "kennung": "M082",
+      "ebene": "land",
+      "beschreibung": "Streusalz auf Gehwegen bei Glätte erlauben und Straßenreinigungsgesetz novellieren",
+      "zitat": "Wir werden das [Land] Straßenreinigungsgesetz in diesem Sinne weiter novellieren. Klare, automatische Auslösetatbestände für den Einsatz von Streusalz auf Gehwegen, eine direkte Ermächtigung der BSR und Abbau bürokratischer Hürden stehen dabei im Vordergrund.",
+      "ursachen_ids": [
+        3604
+      ],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "c3ddd877236e32d2"
+    },
+    {
+      "kennung": "M083",
+      "ebene": "land",
+      "beschreibung": "Gemeinsame Initiativen von Kommunen und Wirtschaft sollen Stadt- und Ortszentren stärken.",
+      "zitat": "Stadt- und Ortszentren werden durch gemeinsame Initiativen von Kommunen und Wirtschaft gestärkt.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "b3aad514f842abce"
+    },
+    {
+      "kennung": "M084",
+      "ebene": "land",
+      "beschreibung": "Kommunen mit abgestuften Instrumenten gegen langfristigen Leerstand ausstatten: Nutzungs- oder Sanierungsfristen, höhere Abgaben, verpflichtende Zwischennutzung.",
+      "zitat": "Kommunen sollen wirksamere, abgestufte Instrumente gegen langfristigen Leerstand erhalten – etwa Nutzungs- oder Sanierungsfristen, höhere Abgaben oder verpflichtende Zwischennutzung.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "a368fd033cfaa416"
+    },
+    {
+      "kennung": "M085",
+      "ebene": "land",
+      "beschreibung": "Die Zentrale Landesbibliothek soll in das Galeria-Warenhaus am Alexanderplatz einziehen.",
+      "zitat": "In das Warenhaus Galeria soll auch die Zentrale Landesbibliothek (ZLB) einziehen.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "81da0c4061ebe740"
+    },
+    {
+      "kennung": "M086",
+      "ebene": "land",
+      "beschreibung": "Förderung von Sanierung und Umbau von Leerständen, damit daraus neuer Wohnraum entsteht",
+      "zitat": "Leerstände machen wir durch Förderung von Sanierungen und Umbauten nutzbar, so entsteht neuer Wohnraum ohne zusätzlichen Flächenfraß.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3602
+      ],
+      "pruefsumme": "fbf387fc9c262a02"
+    },
+    {
+      "kennung": "M087",
+      "ebene": "land",
+      "beschreibung": "Fahr- und Stellflächen für den Autoverkehr reduzieren, besonders in Einkaufsstraßen, für mehr Platz und Aufenthalt für Fußgänger*innen.",
+      "zitat": "Mehr Platz und mehr Aufenthaltsqualität für Fußgänger*innen schaffen wir durch die Reduzierung von Fahr- und Stellflächen für den Autoverkehr, besonders in großen lebendigen Einkaufsstraßen, Flaniermeilen und Kiezblocks.",
+      "ursachen_ids": [
+        3603
+      ],
+      "ursachen_offen": [
+        3604
+      ],
+      "pruefsumme": "0911cb6a4a0d5fe3"
+    },
+    {
+      "kennung": "M088",
+      "ebene": "land",
+      "beschreibung": "Gehwegfreihaltung von parkenden Autos und Hindernissen durch konsequente Ahndung",
+      "zitat": "Gehwege dürfen nicht durch parkende Autos, E-Scooter oder andere Hindernisse blockiert werden. Wir setzen auf konsequente Ahndung von Verstößen.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "d4aa5d33a365dd59"
+    },
+    {
+      "kennung": "M089",
+      "ebene": "land",
+      "beschreibung": "Digitale Zugleittechnik zur Erhöhung der Taktfolge",
+      "zitat": "Die zügige Einführung digitaler Zugleittechnik (CBTC) zur Erhöhung der Taktfolge und zur sicheren Trennung von Bahnsteig und Gleiskörper.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "94fc16f2f4b47fd3"
+    },
+    {
+      "kennung": "M090",
+      "ebene": "land",
+      "beschreibung": "Bundesgesetze für bezahlbare Gewerbemieten anstoßen; Gewerbemix in Kiezen gegen Verdrängung erhalten.",
+      "zitat": "Wir erhalten den Mix aus Gewerbe, Dienstleistungen und Kultur in unseren Kiezen und schützen Unternehmen vor Verdrängung. Dafür setzen wir uns auf Bundesebene für gesetzliche Regelungen ein, mit denen wir bezahlbare Gewerbemieten durchsetzen können.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3602
+      ],
+      "pruefsumme": "f2458b5a59bd0f9e"
+    },
+    {
+      "kennung": "M091",
+      "ebene": "land",
+      "beschreibung": "Digitale Fahrwegplanung für Reinigungsintervalle, zunächst an Bahnhöfen",
+      "zitat": "Wir wollen die Einführung einer digitalen Fahrwegplanung für die Reinigungs- und Leerungsintervalle zunächst an Bahnhöfen vorantreiben.",
+      "ursachen_ids": [
+        3603
+      ],
+      "pruefsumme": "a7d906d70856eafb"
+    },
+    {
+      "kennung": "M092",
+      "ebene": "land",
+      "beschreibung": "Ortsumfahrungen schneller realisieren, um die Ortskerne zu entlasten.",
+      "zitat": "Aber auch Ortsumfahrungen müssen schneller realisiert werden, um die Ortskerne zu entlasten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "a1d05d5cc26bd451"
+    },
+    {
+      "kennung": "M093",
+      "ebene": "land",
+      "beschreibung": "Tarifangebote für Pendler aus dem Umland zum Umstieg auf den ÖPNV",
+      "zitat": "Tarifliche Angebote, die Pendler schon in [Land] auf den ÖPNV umsteigen lassen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3604
+      ],
+      "pruefsumme": "2a022d61a3ce1fdb"
+    },
+    {
+      "kennung": "M094",
+      "ebene": "land",
+      "beschreibung": "Vermeidung von Engstellen auf Gehwegen durch abgestellte Fahrzeuge und Stadtmöbel",
+      "zitat": "Die Vermeidung von Engstellen durch abgestellte E-Scooter, Fahrräder oder durch Stadtmöbel.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "9337a1a6db2e4241"
+    },
+    {
+      "kennung": "M095",
+      "ebene": "land",
+      "beschreibung": "Neues Stadtquartier am Molkenmarkt mit Wohnungen, Gewerbe und Kultur zügig errichten.",
+      "zitat": "Das neue Stadtquartier am Molkenmarkt mit bezahlbaren, landeseigenen Wohnungen, Gewerbe und Kultur errichten wir zügig.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "f5f2849fa10042a2"
+    },
+    {
+      "kennung": "M096",
+      "ebene": "land",
+      "beschreibung": "Leerstehende Ladenzeilen und Shoppingcenter beleben, Zwischennutzungen fördern und Genehmigungen vereinfachen.",
+      "zitat": "Leerstehende Shoppingcenter und Ladenzeilen beleben wir neu und ermöglichen dort Jugend-, Kultur-, Spiel-, Sport- und soziale Angebote. Zwischennutzungen fördern wir gezielt und vereinfachen Genehmigungen. So wird Leerstand zu neuem Raum für die Stadtgesellschaft.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "6ab74abf5fd03db5"
+    },
+    {
+      "kennung": "M097",
+      "ebene": "land",
+      "beschreibung": "Ordnungsämter sollen Überwachung illegaler Müllentsorgung priorisieren; zusätzliche Stellen im Ordnungsdienst",
+      "zitat": "Die Überwachung der illegalen Müllentsorgung soll durch die Ordnungsämter gegenüber anderen Aufgaben priorisiert werden. Dazu sollen zusätzliche Stellen im Allgemeinen Ordnungsdienst geschaffen werden.",
+      "ursachen_ids": [
+        3603
+      ],
+      "pruefsumme": "0ad22ee6592e5457"
+    },
+    {
+      "kennung": "M098",
+      "ebene": "land",
+      "beschreibung": "Ausreichende Mittel für attraktive Innenstädte und lebenswerte Quartiere",
+      "zitat": "Wir setzen uns für mehr sichtbare Polizeipräsenz, klare rechtliche Befugnisse, soziale Gerechtigkeit und ausreichende Mittel für attraktive Innenstädte, lebenswerte Quartiere und starke ländliche Räume ein.",
+      "ursachen_ids": [
+        3603
+      ],
+      "pruefsumme": "39e03bec38728ecd"
+    },
+    {
+      "kennung": "M099",
+      "ebene": "bund",
+      "beschreibung": "Leerstehendes Gewerbe wie Einkaufszentren und Warenhäuser in kommunale oder genossenschaftliche Hand überführen und zu Sorgezentren umbauen.",
+      "zitat": "Um die Nahversorgung im Wohnumfeld zu sichern, wollen wir leerstehendes Gewerbe (insbesondere große Gewerbeflächen wie Shoppingmalls oder Warenhäuser) in kommunale oder genossenschaftliche Hand überführen und zu Sorgezentren umgestalten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3602
+      ],
+      "pruefsumme": "6f271c99a5297224"
+    },
+    {
+      "kennung": "M100",
+      "ebene": "land",
+      "beschreibung": "Sonntagsöffnung bundesweit erlauben; Bezirke sollen zusätzliche verkaufsoffene Sonntage genehmigen",
+      "zitat": "Auf Bundesebene setzen wir uns dafür ein, die Sonntagsöffnung komplett zu erlauben. In einem ersten Schritt sollen die Bezirke zusätzliche verkaufsoffene Sonntage pro Jahr genehmigen und eigenständig terminieren dürfen.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "c59e8e248f1a6575"
+    },
+    {
+      "kennung": "M101",
+      "ebene": "land",
+      "beschreibung": "Quadratmetergrenzen für großflächigen Einzelhandel im Baurecht des Bundes deutlich anheben",
+      "zitat": "Für die Neugestaltung moderner Einzelhandelsstandorte ist es außerdem notwendig, die Quadratmetergrenzen für großflächigen Einzelhandel in der Baunutzungsverordnung auf Bundesebene deutlich anzuheben.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "82e8313b1bd4ef81"
+    },
+    {
+      "kennung": "M102",
+      "ebene": "land",
+      "beschreibung": "Mobilitätskonten mit vereinfachtem Ticketing für ÖPNV, Carsharing und Mikromobilität",
+      "zitat": "Vereinfachtes Ticketing durch Mobilitätskonten, die den ÖPNV, Carsharing-Angebote und Mikromobilität integrieren.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3604
+      ],
+      "pruefsumme": "83215f369fcc39b5"
+    },
+    {
+      "kennung": "M103",
+      "ebene": "land",
+      "beschreibung": "Personaloffensive für den [Land] Nahverkehr",
+      "zitat": "Eine Offensive zur Personalgewinnung bei BVG und S-Bahn.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "1130e593c4e92a14"
+    },
+    {
+      "kennung": "M104",
+      "ebene": "land",
+      "beschreibung": "Mehr Ladezonen und Kurzzeitparkplätze in Geschäftsstraßen.",
+      "zitat": "In Geschäftsstraßen richten wir mehr Ladezonen und Kurzzeitparkplätze ein",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "3653d0c8db21cb42"
+    },
+    {
+      "kennung": "M105",
+      "ebene": "land",
+      "beschreibung": "Privat finanzierte Fahrradparkhäuser an stark frequentierten Orten, insbesondere Bahnhöfen",
+      "zitat": "An stark frequentierten Orten, insbesondere Bahnhöfen, sollen mit Sicherheitstechnik ausgestattete privatwirtschaftlich finanzierte Fahrradparkhäuser – auch unterirdisch – entstehen.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "ddb35cd7a706330b"
+    },
+    {
+      "kennung": "M106",
+      "ebene": "land",
+      "beschreibung": "Asylunterkünfte nicht in Innenstadtlagen einrichten; Standorte so wählen, dass Konfliktpotenziale vermieden werden.",
+      "zitat": "Deren Lage wird im Interesse der Bürger sowie der Bewohner der Unterkünfte so gewählt werden, dass Konfliktpotentiale vermieden werden. Von Innenstadtlagen ist daher Abstand zu nehmen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "6cf4f1c01fdf6bb8"
+    },
+    {
+      "kennung": "M107",
+      "ebene": "bund",
+      "beschreibung": "Städtebauförderung ausbauen und den stationären Einzelhandel stärken",
+      "zitat": "Wir bauen die Städtebauförderung aus und stärken den stationären Einzelhandel.",
+      "ursachen_ids": [
+        3601
+      ],
+      "pruefsumme": "9eddaa1d73aaefad"
+    },
+    {
+      "kennung": "M108",
+      "ebene": "land",
+      "beschreibung": "Innerstädtische Grünflächen, Kleingärten und Kaltluftschneisen fördern, um Überhitzung vorzubeugen und bebaute Flächen lebenswerter zu machen.",
+      "zitat": "Wir werden: […] die Entwicklung innerstädtischer Grünflächen, Kleingartenanlagen und Kaltluftschneisen gezielt fördern, um sommerlicher Überhitzung vorzubeugen und bebaute Flächen lebenswerter für Menschen, Pflanzen und Tiere zu machen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "e9223f63d4b4459b"
+    },
+    {
+      "kennung": "M109",
+      "ebene": "land",
+      "beschreibung": "Systematische Sanierung der Gehwege im Programm „Gehweg 2030“",
+      "zitat": "Eine Initiative „Gehweg 2030“, mit der die Gehweginfrastruktur [Land] […] systematisch saniert wird.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "8bd7441e683fdd80"
+    },
+    {
+      "kennung": "M110",
+      "ebene": "land",
+      "beschreibung": "Fahrradstraßen parallel zu Hauptstraßen deutlich ausweiten",
+      "zitat": "Fahrradstraßen parallel zu Hauptstraßen nach dem Beispiel der Linienstraße wollen wir deutlich ausweiten und das Netz von Fahrradstraßen erheblich vergrößern.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "5d61664dcf63f6c5"
+    },
+    {
+      "kennung": "M111",
+      "ebene": "land",
+      "beschreibung": "Projekte der blau/grünen Stadtentwicklung (Wasserflächen, Bäume, Grün) für das innerstädtische Klima, für die man sich einsetzen will.",
+      "zitat": "Wasserflächen und Verschattung durch Bäume und Grünflächen verbessern das innerstädtische Klima. Dafür helfen Projekte der blau/grünen Stadtentwicklung, für die wir uns einsetzen wollen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "ad36671ec6c2e936"
+    },
+    {
+      "kennung": "M112",
+      "ebene": "land",
+      "beschreibung": "Die Zahl der verkaufsoffenen Sonntage reduzieren; eine Aufweichung des Sonntagsöffnungsverbots lehnen wir ab.",
+      "zitat": "Eine Aufweichung des Verbots der Sonntagsöffnung für den Einzelhandel insbesondere durch digitale Kleinstsupermärkte lehnen wir ab, die Zahl der verkaufsoffenen Sonntage wollen wir reduzieren.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "70adef10e8f6cf5c"
+    },
+    {
+      "kennung": "M113",
+      "ebene": "land",
+      "beschreibung": "Aufstockung von Einzelhandelsflächen mit Wohngeschossen unbürokratisch ermöglichen und fördern",
+      "zitat": "Wir wollen daher die Aufstockung von Einzelhandels- und anderen geeigneten Flächen mit Wohngeschossen unbürokratisch – auch im Tausch gegen die Ausweitung etwa der überbauten Einzelhandelsflächen – ermöglichen und fördern.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "8dcf1f53ad5645ed"
+    },
+    {
+      "kennung": "M114",
+      "ebene": "land",
+      "beschreibung": "Integrierte ländliche Entwicklung fördern, auch um Leerstand zu revitalisieren und mit Wohnen und Freizeit zu verbinden.",
+      "zitat": "Wir fördern eine integrierte ländliche Entwicklung, die partizipative Beteiligung der Bevölkerung und regionale Kooperationen, um Wohnen, Freizeit, Naherholung und die Revitalisierung von Leerstand zu verbinden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3602
+      ],
+      "pruefsumme": "660b53a7f7d01e16"
+    },
+    {
+      "kennung": "M115",
+      "ebene": "land",
+      "beschreibung": "Standort- und Innenstadtpolitik, die inhabergeführte Geschäfte stärkt, Leerstand reduziert und kleinteilige Versorgungsstrukturen erhält.",
+      "zitat": "Lebendigkeit der Innenstädte und Ortskerne erhalten und fördern durch eine aktive Standort- und Innenstadtpolitik, die inhabergeführte Geschäfte stärkt, Leerstand reduziert und kleinteilige Versorgungsstrukturen erhält.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "56e6ad34d5028aa9"
+    },
+    {
+      "kennung": "M116",
+      "ebene": "land",
+      "beschreibung": "Beschleunigung des ÖPNV durch Vorrangschaltungen",
+      "zitat": "Eine Beschleunigung des ÖPNV durch optimierte Vorrangschaltungen.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "f5b9fda9ca9d7004"
+    },
+    {
+      "kennung": "M117",
+      "ebene": "land",
+      "beschreibung": "Konkrete Kiezpläne für jede Einkaufsstraße gemeinsam mit Bezirken, Handel und Gastronomie entwickeln",
+      "zitat": "Gemeinsam mit Bezirken, Handel und Gastronomie wollen wir konkrete Kiezpläne für jede Einkaufsstraße entwickeln.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "2f5d975308bd28d3"
+    },
+    {
+      "kennung": "M118",
+      "ebene": "land",
+      "beschreibung": "Parkläufer-Projekt verstetigen, um Konflikte in öffentlichen Grünanlagen zu deeskalieren",
+      "zitat": "Wir verstetigen die Finanzierung des „Parkläufer“-Projekts, um Konflikte zwischen Nutzern und Anwohnern öffentlicher Grünanlagen niedrigschwellig zu deeskalieren und die Einhaltung der Parkordnungen sicherzustellen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "325a4183653a3ddd"
+    },
+    {
+      "kennung": "M119",
+      "ebene": "land",
+      "beschreibung": "Straßenreinigungsgesetz ändern, damit die BSR Sauberkeit über Meldungen, Sensoren und Feedback steuern kann.",
+      "zitat": "Wir ändern das Straßenreinigungsgesetz, damit die BSR Sauberkeit besser über Meldungen, Sensoren und Nutzerfeedback steuern kann.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "c85f253032cc4ccf"
+    },
+    {
+      "kennung": "M120",
+      "ebene": "land",
+      "beschreibung": "Ausreichende Abfallbehälter und Müll-Infrastruktur",
+      "zitat": "Ausreichende Abfallbehälter und eine funktionierende Müll-Infrastruktur, auch durch den Ausbau und die Weiterentwicklung der bestehenden BSR-Recyclinghöfe.",
+      "ursachen_ids": [
+        3603
+      ],
+      "pruefsumme": "47f736c22a4e594e"
+    },
+    {
+      "kennung": "M121",
+      "ebene": "land",
+      "beschreibung": "Videoüberwachung an Müll-Hotspots",
+      "zitat": "Videoüberwachung an Müll-Hotspots.",
+      "ursachen_ids": [
+        3603
+      ],
+      "pruefsumme": "2563628979a2fa70"
+    },
+    {
+      "kennung": "M122",
+      "ebene": "land",
+      "beschreibung": "Leerstandsmanagement landeseigener Immobilien weiterentwickeln und für Start-ups und Kreativwirtschaft öffnen",
+      "zitat": "Wir werden das Leerstandsmanagement landeseigener Immobilien weiterentwickeln und gezielt für die Nutzung durch Start-ups und Unternehmen der Kreativwirtschaft öffnen.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "b6bd03b95f3b9a9f"
+    },
+    {
+      "kennung": "M123",
+      "ebene": "land",
+      "beschreibung": "Mobile Polizeiwachen in Problemvierteln und dichteres Netz stationärer Wachen",
+      "zitat": "Die Einführung mobiler Polizeiwachen in Problemvierteln sowie die Schaffung eines dichteren Netzes stationärer Polizeiwachen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "0bb6c59748601245"
+    },
+    {
+      "kennung": "M124",
+      "ebene": "land",
+      "beschreibung": "Videoüberwachung in Brennpunktbereichen",
+      "zitat": "Eine vollständige Videoüberwachung in allen Brennpunktbereichen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "219c66383eba66d2"
+    },
+    {
+      "kennung": "M125",
+      "ebene": "land",
+      "beschreibung": "Durchsetzung der Nachpflanzpflicht für gefällte Straßenbäume",
+      "zitat": "Wir werden die Nachpflanzpflicht konsequenter durchsetzen und durch transparente Baumbilanzen kontrollieren.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "b0c081ff2819aefb"
+    },
+    {
+      "kennung": "M126",
+      "ebene": "land",
+      "beschreibung": "Ein Leerstandskataster zur systematischen Erfassung von Leerstand einführen.",
+      "zitat": "Außerdem wollen wir die Einführung eines Leerstandskatasters zur systematischen Bestandserfassung von Leerstand.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "707464756d2a42ae"
+    },
+    {
+      "kennung": "M127",
+      "ebene": "land",
+      "beschreibung": "Sonntagsöffnungsverbot vollständig aufheben (im Kapitel Tourismus genannt, ohne Innenstadtbezug).",
+      "zitat": "Wir werden: […] das Sonntagsöffnungsverbot vollständig aufheben.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3604
+      ],
+      "pruefsumme": "ef190a0c17d0a46a"
+    },
+    {
+      "kennung": "M128",
+      "ebene": "land",
+      "beschreibung": "Ladenschlusszeiten und Bäderverkaufsverordnung liberalisieren, mehr verkaufsoffene Sonntage, mehr touristische Orte in der Bäderverkaufsverordnung",
+      "zitat": "Wir stehen für eine Liberalisierung der Ladenschlusszeiten und der Bäderverkaufsverordnung, mehr verkaufsoffene Sonntage und eine Erweiterung der touristischen Orte in der Bäderverkaufsverordnung.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "86c10d1809d86133"
+    },
+    {
+      "kennung": "M129",
+      "ebene": "land",
+      "beschreibung": "Umsatzeinbußen durch Baustellen abmildern; Mittel für Überbrückungshilfe sicherstellen.",
+      "zitat": "Umsatzeinbußen für die Gewerbetreibenden in Folge von Baustellen wollen wir abmildern. Daher wollen wir die finanziellen Mittel für die Überbrückungshilfe im nötigen Umfang sicherstellen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3604
+      ],
+      "pruefsumme": "bfe2878b2fda13d1"
+    },
+    {
+      "kennung": "M130",
+      "ebene": "land",
+      "beschreibung": "Neue moderne Dorfzentren ermöglichen, die Angebote wie Dorfladen, Co-Working und Veranstaltungsräume unter einem Dach bündeln.",
+      "zitat": "Deshalb wollen wir existierende Treffpunkte sichern und neue moderne Dorfzentren ermöglichen, die mehrere Angebote unter einem Dach bündeln: Einkaufen im Dorfladen, arbeiten an Co-Working-Plätzen, feiern in Veranstaltungsräumen, Carsharing und Ladesäule vor der Tür und am Ende mindestens ein Gespräch beim Kaffee.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "11a073ac83179d23"
+    },
+    {
+      "kennung": "M131",
+      "ebene": "land",
+      "beschreibung": "Keine neuen Shopping-Center genehmigen, um Kleingewerbe vor Verdrängung zu schützen.",
+      "zitat": "Da [Land] schon jetzt ein Überangebot an Shopping-Centern aufweist, die zu einer Verdrängung von Kleingewerbe führen, schlagen wir vor, dass keine solchen neu genehmigt werden.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "d74fb9afdd70636f"
+    },
+    {
+      "kennung": "M132",
+      "ebene": "land",
+      "beschreibung": "Rahmen für verkaufsoffene Sonntage ausschöpfen, Schutz der Beschäftigten im Einzelhandel wahren",
+      "zitat": "Den Rahmen der aktuellen Gesetzgebung für verkaufsoffene Sonntage wollen wir ausschöpfen und achten dabei konsequent auf den Schutz der Beschäftigten im Einzelhandel, die bei langen Arbeitszeiten und Belastungen auf die Erholung am Sonntag angewiesen sind.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "6b0b8d23079722e6"
+    },
+    {
+      "kennung": "M133",
+      "ebene": "land",
+      "beschreibung": "Bauliche Umgestaltung einzelhandelsgeprägter Viertel zur Erhöhung der Aufenthaltsqualität",
+      "zitat": "Wir werden uns dafür einsetzen, dass stark vom Einzelhandel geprägte Viertel echte bauliche Umgestaltungen erfahren, um die Aufenthaltsqualität zu erhöhen, da zu ihrer Attraktivität eine angenehme Atmosphäre gehört, die mittels Sauberkeit und Sicherheit gewährleistet wird.",
+      "ursachen_ids": [
+        3603
+      ],
+      "ursachen_offen": [
+        3602
+      ],
+      "pruefsumme": "ba2c863275aca9da"
+    },
+    {
+      "kennung": "M134",
+      "ebene": "land",
+      "beschreibung": "Mehr Polizei in Innenstädten und an Kriminalitätsschwerpunkten, höherer Kontrolldruck, wirksamere Platzverweise und Aufenthaltsverbote für mehr Ordnung im öffentlichen Raum.",
+      "zitat": "Wir sorgen für mehr Sicherheit und Ordnung im öffentlichen Raum, durch mehr Polizei in den Innenstädten und an Kriminalitätsschwerpunkten, höheren Kontrolldruck sowie wirksamere Platzverweise und Aufenthaltsverbote.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "4132b1745b8f7946"
+    },
+    {
+      "kennung": "M135",
+      "ebene": "land",
+      "beschreibung": "Mobile Einsatzteams zur Beseitigung von Müll, Graffiti und Verwahrlosung",
+      "zitat": "Mobile Einsatzteams beseitigen illegalen Müll, Graffiti und andere Verwahrlosungen.",
+      "ursachen_ids": [
+        3603
+      ],
+      "pruefsumme": "f78d4e2be2b80288"
+    },
+    {
+      "kennung": "M136",
+      "ebene": "bund",
+      "beschreibung": "Zollschlupflöcher schließen, über die Onlinehändler unsichere Billigprodukte einführen",
+      "zitat": "Die Schlupflöcher im Zollrecht müssen geschlossen werden, durch die besonders asiatische Onlinehändler wie Temu unsichere Wegwerfprodukte am Zoll vorbeischleusen und europäische Hersteller unterbieten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3601
+      ],
+      "pruefsumme": "551099b3a5c5bab7"
+    },
+    {
+      "kennung": "M137",
+      "ebene": "land",
+      "beschreibung": "Landesprogramme für Bestandsimmobilien auflegen, um Dorfkerne zu beleben und alte Gebäude zu sanieren.",
+      "zitat": "Wir fördern bezahlbares Wohnen, indem wir: […] ein Landesprogramm „Neuer Schwung für alte Orte“ sowie „Jung kauft Alt“ aufsetzen, um Bestandsimmobilien für junge Familien zu erschließen, Dorfkerne zu beleben und die Sanierung alter Gebäude zu unterstützen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3602
+      ],
+      "pruefsumme": "ffc901ec0648469b"
+    },
+    {
+      "kennung": "M138",
+      "ebene": "bund",
+      "beschreibung": "Innenstädte autofrei machen, mit Ausnahmen für Menschen mit besonderen Bedarfen und den Lieferverkehr.",
+      "zitat": "Wir setzen uns für autofreie Innenstädte ein – selbstverständlich mit Ausnahmen für Menschen mit besonderen Bedarfen oder für den Lieferverkehr.",
+      "ursachen_ids": [
+        3604
+      ],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "b529d32231693282"
+    },
+    {
+      "kennung": "M139",
+      "ebene": "land",
+      "beschreibung": "Programm mit abschließbaren Fahrradabstellanlagen",
+      "zitat": "Ein „1.000-Räder-Programm“, das modulare, abschließbare Abstellanlagen vorsieht.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "cc6958756a481ad8"
+    },
+    {
+      "kennung": "M140",
+      "ebene": "land",
+      "beschreibung": "Plätze und Straßen so gestalten, dass Menschen gern verweilen und sich sicher fühlen.",
+      "zitat": "Wir gestalten Plätze und Straßen so, dass Menschen dort gern verweilen und sich sicher fühlen",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "d4c04c3e2e74bafd"
+    },
+    {
+      "kennung": "M141",
+      "ebene": "land",
+      "beschreibung": "Einzelhandel in Innenstädten gezielt unterstützen, kreative Konzepte gegen Leerstand verfolgen und Stadtkerne als Orte der Begegnung stärken.",
+      "zitat": "Innenstädte lebendig halten, als Zentren des Lebens und Wirtschaftens: Wir stärken Stadtkerne als Orte der Begegnung, Kultur und Wirtschaft, mit gezielter Unterstützung des Einzelhandels und kreativen Konzepten gegen Leerstand.",
+      "ursachen_ids": [
+        3602
+      ],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "b7990d9029b68dcc"
+    },
+    {
+      "kennung": "M142",
+      "ebene": "land",
+      "beschreibung": "ÖPNV-Anbindungen neuer Stadtgebiete vor deren Bezug fertigstellen",
+      "zitat": "Effektive ÖPNV-Anbindungen fertigzustellen, bevor neue Stadtgebiete bezogen werden.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "b7496a59f3bffe1a"
+    },
+    {
+      "kennung": "M143",
+      "ebene": "land",
+      "beschreibung": "Flächendeckend mindestens 10-Minuten-Takt im ÖPNV, auch in der Innenstadt.",
+      "zitat": "Wir wollen für alle Nutzer*innen mit oder ohne Behinderungen flächendeckend mindestens einen 10-Minuten-Takt – in der Innenstadt ebenso wie in den Außenbezirken.",
+      "ursachen_ids": [
+        3604
+      ],
+      "pruefsumme": "c8b12135923dcedb"
+    },
+    {
+      "kennung": "M144",
+      "ebene": "land",
+      "beschreibung": "Die kulturelle Nutzung leerstehender Immobilien erleichtern und Zwischennutzungen ausweiten.",
+      "zitat": "Wir wollen die kulturelle Nutzung leer stehender Immobilien erleichtern und Zwischennutzungen ausweiten.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "f1cd3f7a6cf47719"
+    },
+    {
+      "kennung": "M145",
+      "ebene": "land",
+      "beschreibung": "Pflege der Grünflächen durch ausreichende Bezirksmittel, Personal und Pflegekonzepte",
+      "zitat": "Wir stellen sicher, dass die Bezirke ausreichende Mittel, qualifiziertes Personal und klare Pflegekonzepte erhalten, die auch tatsächlich umgesetzt werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3603
+      ],
+      "pruefsumme": "5dc27174a50e7d14"
+    },
+    {
+      "kennung": "M146",
+      "ebene": "land",
+      "beschreibung": "Polizeipräsenz im öffentlichen Raum dauerhaft verstärken",
+      "zitat": "Unser Ziel ist eine verstärkte Polizeipräsenz. Die Polizei soll dauerhaft Präsenz im öffentlichen Raum zeigen.",
+      "ursachen_ids": [
+        3603
+      ],
+      "pruefsumme": "b0ef7d02362b1425"
+    },
+    {
+      "kennung": "M147",
+      "ebene": "land",
+      "beschreibung": "Leerstehende Gewerbe-, Büro- und Ladenflächen freiwillig in Wohnraum umwandeln ermöglichen",
+      "zitat": "Wir ermöglichen es, leer stehende Gewerbe-, Büro- und Ladenflächen freiwillig in Wohnraum umzuwandeln.",
+      "ursachen_ids": [
+        3602
+      ],
+      "pruefsumme": "8117898778d11f6b"
+    }
+  ]
+}

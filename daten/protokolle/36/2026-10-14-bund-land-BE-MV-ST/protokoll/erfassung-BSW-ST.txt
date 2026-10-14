@@ -1,0 +1,60 @@
+{
+  "partei_id": 17,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Mehr sichtbare Polizeipräsenz für sichere, attraktive öffentliche Räume",
+      "ursachen_ids": [3603],
+      "buendel": "Sauberkeit, Sicherheit und Instandhaltung",
+      "zitat": "Wir setzen uns für mehr sichtbare Polizeipräsenz, klare rechtliche Befugnisse, soziale Gerechtigkeit und ausreichende Mittel für attraktive Innenstädte, lebenswerte Quartiere und starke ländliche Räume ein.",
+      "seite": 67
+    },
+    {
+      "beschreibung": "Ausreichende Mittel für attraktive Innenstädte und lebenswerte Quartiere",
+      "ursachen_ids": [3603],
+      "buendel": "Aufenthaltsqualität und Verkehrsberuhigung",
+      "zitat": "Wir setzen uns für mehr sichtbare Polizeipräsenz, klare rechtliche Befugnisse, soziale Gerechtigkeit und ausreichende Mittel für attraktive Innenstädte, lebenswerte Quartiere und starke ländliche Räume ein.",
+      "seite": 67
+    },
+    {
+      "beschreibung": "Konsequente Nutzung kommunaler Vorkaufsrechte gegen Leerstand und Spekulation im Rahmen der Gemeindeentwicklung",
+      "ursachen_ids": [],
+      "ursachen_offen": [3602],
+      "zitat": "Das BSW setzt auf eine ganzheitliche Gemeindeentwicklung und die Stärkung lokaler Handlungsfähigkeit, etwa durch die konsequente Nutzung kommunaler Vorkaufsrechte gegen Leerstand und Spekulation.",
+      "seite": 34
+    },
+    {
+      "beschreibung": "Förderung des sozialen Wohnungsbaus in Innenstädten nach dem Drittel-Mix-Modell",
+      "ursachen_ids": [],
+      "ursachen_offen": [3602],
+      "buendel": "Nutzungsmischung und Ansiedlung fördern",
+      "zitat": "Die Förderung des sozialen Wohnungsbaus in den Innenstädten in Anlehnung an das Hamburger Drittel-Mix-Modell (ein Drittel öffentlich geförderter Wohnungsbau, ein Drittel Eigentumswohnungen, ein Drittel frei finanzierte Wohnungen) kann Segregation verhindern.",
+      "seite": 65
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 3602, "name": "Kommunales Vorkaufsrecht gegen Leerstand", "seite": 34 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3604, "seiten": [31, 32, 33], "grund": "Kapitel Infrastruktur und Mobilität gelesen: ÖPNV, Radwege und Bike-&-Ride nur allgemein bzw. für ländlichen Raum; ÖPNV-Anbindung von Versorgungszentren im ländlichen Raum (S. 32) ist nicht Innenstadt/Ortskern; keine Aussage zu Parken oder Öffnungszeiten." },
+    { "ursache": 3602, "seiten": [21, 23, 29, 30, 32, 89], "grund": "Gründung/Nachfolge allgemein (S. 21–22); Meisterbindung nur Prüfauftrag (S. 23); Ansiedlung in Mittelzentren ohne Innenstadtbezug, Wohnungsleerstand und kommunaler Gebäudefonds ohne Innenstadt- oder Geschäftsbezug (S. 29–31); Handel vor Ort per Steuervergünstigung allgemein, nicht auf Innenstädte bezogen (S. 89)." }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Titelseite und Inhaltsverzeichnis (PDF 1–2), Präambel (PDF 6–7); Kapitel 3 Wirtschaft & Infrastruktur vollständig (PDF 16–34: Investieren statt Kaputtsparen, Industrie & Landwirtschaft, Mittelstand, Gute Arbeit, Ausbildung, Energie/Klimaschutz/Chemie, Städte entwickeln, Bezahlbar Wohnen, Leistungsfähige Infrastruktur, Mobilität, Regionen gerecht entwickeln); Kapitel 5.2 Sicherheit (PDF 64–69) und 5.5 Kommunen (PDF 74–76); Fundstellen PDF 59, 67, 75; Stellen mit Innenstadt-, Leerstand-, Handel- und Parkbezug aus der Textsuche (PDF 32, 34, 65, 89). Kapitel 4 (Soziales, Gesundheit, Bildung, Kultur), Gleichstellung, Migration und Demokratie nur über die Suchbegriffe und deren Treffer geprüft; dort keine Stelle zu Innenstädten.
+
+Aufgenommen: Polizeipräsenz und Mittel für Innenstädte (3603, S. 67, ein Satz, zwei Maßnahmen mit unterschiedlichem Hebel); Vorkaufsrecht gegen Leerstand (3602, offen, S. 34); Drittel-Mix im sozialen Wohnungsbau in Innenstädten (3602, offen, S. 65).
+
+Grenzfälle: Vorkaufsrecht – Leerstand allgemein, nicht ausdrücklich Geschäftsleerstand in Innenstädten. Drittel-Mix – Wohnungsmix in Innenstädten, Hebel Wohnungsbauförderung, Wirkung auf Segregation statt auf Geschäftsschließungen; Formulierung mit „kann“ nur als Wirkungsaussage gelesen, Förderung wird gefordert. Polizeipräsenz – Sicherheit im öffentlichen Raum, Innenstädte im selben Satz genannt.
+
+Nicht erfasst (gelesen, nicht aufgenommen): S. 59 („Platzgestaltung“ ist Teil von „Arbeitsplatzgestaltung“, Betriebsberatung für Inklusion, kein Innenstadtbezug). S. 29 Entsiegelung, Grünflächen und Schattenräume in Städten und Gemeinden allgemein – kein Innenstadt- oder Leerstandsbezug (R2). S. 68 Polizeistärke von 7.000 Stellen – Personal landesweit, kein Innenstadtbezug. S. 75 „Sauberkeit, Ordnung und Lebensqualität vor Ort nehmen sichtbar ab“ – Lagebeschreibung. S. 34 „Nahversorgung“ – Bekenntnis ohne Handlung. Architektur-Passage zu historischen Stadtkernen (Kapitel Kultur) – Bekenntnis („verdienen Pflege“), keine Handlungszusage.
+
+Richtungen ohne Maßnahme: 3604 (Erreichbarkeit: Parken, Öffnungszeiten, Nahmobilität in Innenstädten) – keine Zusage gefunden.
+
+Seiten ohne Text: PDF 1 (Titelseite, nicht relevant).
+
+Stand: Titelseite „Beschlossen am 07. März 2026“, entspricht dem Auftrag; kein stand_im_pdf nötig.
+
+Selbstprüfung: nicht ausgeführt (keine Shell verfügbar). Die Koordination führt `npm run -s entwurf:programm-pruefen '--' .cache/entwurf/36/protokoll/erfassung-BSW-ST.txt` aus. Besonders zu prüfen: Bündel „Nutzungsmischung und Ansiedlung fördern“ zusammen mit ursachen_offen (Drittel-Mix), und ob das Vorkaufsrecht-Zitat auf PDF 34 steht (Zitat beginnt im Block der Seitenmarke 34).

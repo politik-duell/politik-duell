@@ -1,0 +1,60 @@
+{
+  "partei_id": 12,
+  "land": "MV",
+  "massnahmen": [
+    {
+      "beschreibung": "Kooperation von Kultur und Tourismus stärken, um Innenstädte mit Kulturrouten, Festivals und Kunst im öffentlichen Raum zu beleben.",
+      "ursachen_ids": [3603],
+      "zitat": "Dieses Potenzial wollen wir besser nutzen und werden dafür die Kooperation zwischen Kultur und Tourismus stärken. Ziel ist es dabei auch, die Innenstädte durch Kulturrouten, Festivals oder Kunst im öffentlichen Raum zu beleben.",
+      "seite": 80
+    },
+    {
+      "beschreibung": "Projekte der blau/grünen Stadtentwicklung (Wasserflächen, Bäume, Grün) für das innerstädtische Klima, für die man sich einsetzen will.",
+      "ursachen_ids": [],
+      "ursachen_offen": [3603],
+      "zitat": "Wasserflächen und Verschattung durch Bäume und Grünflächen verbessern das innerstädtische Klima. Dafür helfen Projekte der blau/grünen Stadtentwicklung, für die wir uns einsetzen wollen.",
+      "seite": 87
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 3602,
+      "seiten": [7, 8, 9, 10, 11, 12, 13, 14, 19, 52, 53, 54, 55, 80, 81, 82, 87],
+      "grund": "Wirtschafts-, Tourismus-, Wohn- und Kulturkapitel gelesen: keine Maßnahme zu Sortiment, Ansiedlung oder Nutzungsmischung von Geschäften in Innenstädten. Dorfläden und Neue Dorfmitte (S. 19, 82) betreffen den ländlichen Raum und nennen weder Innenstadt, Ortskern, Einzelhandel noch Leerstand (R2). Leerstehende Gebäude (S. 87) nur als allgemeines Ziel ohne Maßnahme."
+    },
+    {
+      "ursache": 3604,
+      "seiten": [12, 25, 26, 27],
+      "grund": "Tourismus- und Mobilitätskapitel gelesen: Pendlerparkplätze, Radwege, ÖPNV und Rufbus ohne Bezug zu Innenstadt, Ortskern oder Einzelhandel (R2). Keine Aussage zu Parken in Innenstädten, Parkgebühren, Ladenöffnungszeiten oder Ladenschluss."
+    }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "leerstehende Gebäude", "ursache": 3602, "richtung": "Nutzungsmischung und Ansiedlung fördern" },
+    { "begriff": "Kunst im öffentlichen Raum", "ursache": 3603, "richtung": "Aufenthaltsqualität und Verkehrsberuhigung" },
+    { "begriff": "innerstädtisches Klima", "ursache": 3603, "richtung": "Aufenthaltsqualität und Verkehrsberuhigung" }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesene Seiten: 2–14 (Einleitung, Wirtschaft, Handwerk, Tourismus, Innovation), 19 (Landesentwicklung), 25–27 (Verkehr), 52–55 (Wohnen und Stadtentwicklung), 80–82 (Kultur, ländliche Räume), 87 (Klimaanpassung). Seiten 15–18, 20–24, 28–51, 56–79, 83–86 und 88–94 nicht vollständig gelesen, nur über Stichwörter (Innenstadt, Ortskern, Einzelhandel, Leerstand, Parken, Öffnungszeiten, Sauberkeit, Aufenthalt, Fußgänger, Platz, Stadtbild) geprüft; keine Treffer mit Innenstadtbezug außer S. 80 und 87. Seiten 1 und 95 ohne Text (Titel- und Schlussseite).
+
+Maßnahme 3603: S. 80 (Kultur und Innenstädte) als Maßnahme erfasst. S. 87 (blau/grüne Stadtentwicklung, innerstädtisches Klima) als Grenzfall in ursachen_offen, weil die Maßnahme eher dem Klima dient als der Aufenthaltsqualität.
+
+Nicht erfasst:
+- S. 19 und 82, Dorfläden und „Neue Dorfmitte“: ländlicher Raum, Zitat ohne Innenstadt, Ortskern, Einzelhandel oder Leerstand (R2).
+- S. 87, „Durch geeignete Maßnahmen müssen über lange Zeiträume leerstehende Gebäude eine neue Nutzung erfahren“ und Innenentwicklung: allgemeine Ziele ohne konkrete Handlung, Bezug Wohnen und Flächenschutz.
+- S. 53, „Leerstand zu vermeiden“ im ländlichen Raum: Wohnen, nicht Geschäfte (R2).
+- S. 4 und 54 (Mietpreisbremse in touristischen Zentren): Wohnungsmieten, nicht Ursache (R2).
+- S. 10 (Förderung kleinster Betriebe, Landeswirtschaftsförderung): allgemeine Wirtschaftsförderung ohne Innenstadt- oder Einzelhandelsbezug.
+- S. 25–27 (Pendlerparkplätze, Radwegenetz, Rufbus, ÖPNV-Takt, AGFK): keine Innenstadt-Nennung und keine Parkraum- oder Öffnungszeiten-Aussage (R2).
+
+Richtungen ohne Maßnahme:
+- Nutzungsmischung und Ansiedlung fördern (3602): keine Maßnahme zu Geschäften oder Leerstand in Innenstädten gefunden.
+- Marktprofile und Wettbewerb (3602): keine Fundstelle.
+- Sauberkeit, Sicherheit und Instandhaltung (3603): keine Fundstelle mit Innenstadtbezug (Polizeipräsenz in der Fläche ohne Innenstadtbezug, nicht erfasst).
+- Erreichbarkeit mit dem Auto und Parkplätze (3604): keine Fundstelle (nur Pendlerparkplätze an Verkehrsknoten, nicht erfasst).
+- Nahmobilität und öffentlicher Verkehr (3604): Radwege und ÖPNV ohne Innenstadtbezug, nicht erfasst.
+- Öffnungszeiten und zeitliche Zugänglichkeit (3604): keine Fundstelle.
+
+Hinweis an die Koordination: Ich hatte in dieser Sitzung keine Shell. Die Prüfung mit `npm run -s entwurf:programm-pruefen` ist daher noch nicht gelaufen und muss von der Koordination ausgeführt werden. Das Bündel-Feld entfällt, weil der Auftrag keine Bündel nennt.

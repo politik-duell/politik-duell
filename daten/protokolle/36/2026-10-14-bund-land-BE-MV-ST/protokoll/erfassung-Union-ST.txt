@@ -1,0 +1,57 @@
+{
+  "partei_id": 11,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Einzelhandel in Innenstädten gezielt unterstützen, kreative Konzepte gegen Leerstand verfolgen und Stadtkerne als Orte der Begegnung stärken.",
+      "ursachen_ids": [3602],
+      "ursachen_offen": [3603],
+      "zitat": "Innenstädte lebendig halten, als Zentren des Lebens und Wirtschaftens: Wir stärken Stadtkerne als Orte der Begegnung, Kultur und Wirtschaft, mit gezielter Unterstützung des Einzelhandels und kreativen Konzepten gegen Leerstand.",
+      "seite": 66
+    },
+    {
+      "beschreibung": "Überholte Umweltzonen in Innenstädten aufheben.",
+      "ursachen_ids": [3604],
+      "zitat": "Überholte Umweltzonen in Innenstädten wollen wir aufheben.",
+      "seite": 62
+    }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "Leerstand", "ursache": 3602, "richtung": "Nutzungsmischung und Ansiedlung fördern" },
+    { "begriff": "Umweltzone", "ursache": 3604, "richtung": "Erreichbarkeit mit dem Auto und Parkplätze" },
+    { "begriff": "Stadtkern", "ursache": 3603, "richtung": "Aufenthaltsqualität und Verkehrsberuhigung" }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis (S. 2); Kapitel „Wohnraum schaffen, Regionen stärken“ (S. 64–66); Kapitel „Bezahlbare Mobilität in Stadt und Land“ (S. 60–63); Kapitel „Die Natur – Unsere Heimat“ (S. 66–68, Auszug); Kapitel „Sachsen-Anhalt – Immer eine Reise wert“ (S. 84–86); Kapitel „Sicherheit. Ordnung. Migrationswende.“ (S. 4–9, Auszüge); Fundstellen S. 50 und S. 86. Seite 1 (Titel) ist die einzige Seite fast ohne Text und liegt außerhalb der passenden Kapitel.
+
+Stand: Titelseite nennt Beschluss 13.06.2026, entspricht dem Auftrag.
+
+Maßnahmen:
+- S. 66 (R1: 3602, Innenstadt-Einzelhandel und Leerstand; 3603 offen wegen „Stadtkerne als Orte der Begegnung“). Die Zusage steht im Kapitel unter „Wir werden“ (S. 65).
+- S. 62 (3604, Zufahrt/Erreichbarkeit der Innenstadt mit dem Auto; Umweltzonen in Innenstädten). Steht unter „Wir werden“ (S. 61–63).
+
+Nicht erfasst:
+- S. 65: „lebendigen Innenstädten“ als Teil eines Ziels („Die Entwicklung unseres Bundeslandes als Ganzes aktiv gestalten“) – Ziel, keine Handlung.
+- S. 66: „Ungenutzte Flächen aktivieren“ (Brachflächen, Baulücken), „Städtebau- und Wohnraumförderung“ – kein Innenstadt-, Ortskern-, Einzelhandels- oder Leerstandsbezug im Zitat (R2).
+- S. 68: „Klimafeste Städte fördern“ (Hitzeschutz, klimaresiliente Stadtquartiere) – Stadtquartiere, nicht Innenstadt (R2).
+- S. 9: „Die Kommunen sollen konsequenter gegen Verschmutzungen im öffentlichen Raum vorgehen“ – Soll-Formulierung an Kommunen, kein Innenstadt-Bezug (R2).
+- S. 63: „Anbindung des suburbanen Raumes an städtische Zentren“ (Radverkehr) und S. 62 „Sachsen-Anhalt-Takt“ für Ober- und Mittelzentren – kein Innenstadt-Begriff (R2).
+- S. 62: „witterungsunabhängige Aufenthaltsmöglichkeiten“ (ÖPNV) – ohne Innenstadt-Bezug.
+- S. 7: „Videoschutz im öffentlichen Raum“ – Sicherheit/Polizei, kein Innenstadt-Bezug, nicht Aufenthaltsqualität im Sinne des Leitfadens.
+- S. 86: „touristische Aufenthaltsqualität“ – Tourismus, kein Innenstadt-Bezug.
+- S. 50: „Flexible Öffnungszeitenmodelle“ – Kitas, keine Ladenöffnung.
+- S. 85: „Einzelhandel“ nur als Branchenaufzählung im Tourismus.
+
+Richtungen ohne Maßnahme:
+- 3602 Marktprofile und Wettbewerb: nichts gefunden.
+- 3603 Sauberkeit, Sicherheit und Instandhaltung: nur S. 9 (nicht erfasst, s. o.).
+- 3604 Erreichbarkeit mit dem Auto und Parkplätze: Umweltzonen erfasst; zu Parkplätzen und Parkgebühren nichts gefunden.
+- 3604 Nahmobilität und öffentlicher Verkehr: keine Aussage mit Innenstadtbezug (S. 61–63).
+- 3604 Öffnungszeiten: nichts zu Ladenöffnung, Sonntagsöffnung oder verkaufsoffenen Sonntagen.
+
+Grenzfälle: Die Zusage auf S. 66 ist 3602 zugeordnet; 3603 (Stadtkerne als Orte der Begegnung) ist offen gelassen. Umweltzonen-Aufhebung als 3604 (Erreichbarkeit) gewertet.
+
+Hinweis: Die Selbstprüfung (npm-Skript) konnte nicht ausgeführt werden, da keine Shell verfügbar war. Zitate wurden gegen die Textdatei geprüft (S. 62 und S. 66).

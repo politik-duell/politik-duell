@@ -41,5 +41,2014 @@
       "ebene": "land",
       "schlagwoerter": ["erreichbarkeit", "parken", "autozufahrt", "fusswege", "radwege", "oeffnungszeiten"]
     }
+  ],
+  "instrumente": [
+    {
+      "id": 9953,
+      "name": "Parkraum und Fahrspuren in Innenstädten erhalten oder ausbauen, Fahrverbote ablehnen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Gute Pkw-Erreichbarkeit hilft Händlern mit Kundschaft aus dem Umland; Studien zeigen aber, dass viele Kunden zu Fuß, mit Rad oder ÖPNV kommen. Zuständig sind vor allem Kommunen; der Bund setzt nur den Rahmen.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://findingspress.org/article/24497-local-business-perception-vs-mobility-behavior-of-shoppers-a-survey-from-berlin",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9954,
+      "name": "Parkraum, Straßenkapazität, Kurzzeit- und Ladezonen für Kfz in Innenstädten sichern (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kurzzeitparken und Ladezonen stützen den Einzelhandel punktuell; Händler überschätzen jedoch oft den Anteil der Autokunden. Zu Zugangsbeschränkungen wie Umweltzonen ist die Wirkung auf Handelsumsätze je nach Geschäftstyp uneinheitlich.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://findingspress.org/article/24497-local-business-perception-vs-mobility-behavior-of-shoppers-a-survey-from-berlin",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9955,
+      "name": "Verkehrsberuhigung und Umverteilung von Straßenraum in Geschäftsstraßen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Mehr Platz und Aufenthalt für Fußgänger erhöht oft die Passantenfrequenz; Ladenbetreiber befürchten jedoch Umsatzverluste, wenn Parkplätze und Zufahrt wegfallen. Mit Lieferzonen und Baukasten lässt sich der Zugang sichern.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://doi.org/10.1080/01441647.2021.1912849",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9956,
+      "name": "Fußverkehrsinfrastruktur verbessern (Gehwege, Querungen, Barrierefreiheit, Winterdienst) (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Bessere Fußwege erleichtern den Weg zu Geschäften, der Bezug zum Einkaufsangebot ist aber indirekt und kaum untersucht. Gut machbar über Landes- und Bezirkshaushalte.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9957,
+      "name": "Radverkehrsnetz und Fahrradstraßen ausbauen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Radkunden kaufen häufig und lokal ein, der Effekt auf Geschäftsbesatz ist aber nur indirekt; Radnetze sind kurzfristig umsetzbar. Wirkung auf Leerstand kaum belegt.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://doi.org/10.1080/01441647.2021.1912849",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9958,
+      "name": "Sichere Fahrradabstellanlagen und Fahrradparkhäuser (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Sichere Abstellplätze erleichtern die Anreise mit dem Rad, sind aber nur eine Teilvoraussetzung für die Erreichbarkeit. Günstig und schnell umsetzbar; Wirkung auf Einkaufsangebote kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9959,
+      "name": "ÖPNV-Angebot ausbauen und beschleunigen (Netz, Takt, Personal, Anbindung der Innenstadt) (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Bessere Anbindung bringt Kunden in die Zentren; ÖPNV-Kunden kommen öfter, geben je Besuch nach Kontrolle von Kundenmerkmalen aber kaum anders aus. Der Effekt auf Geschäftsbesatz ist kaum belegt. Netzausbau braucht Jahre und hohe Mittel, Personal fehlt teils.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9960,
+      "name": "ÖPNV-Tarifangebote und Mobilitätskonten für einfacheren Zugang (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Einfachere Tickets und Pendlertarife senken Hürden für die Anreise in Zentren; der Beitrag zum Einkaufsangebot bleibt gering und ist kaum untersucht. Landesweit rasch umsetzbar.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9961,
+      "name": "Zwischennutzung leerstehender Flächen erleichtern und fördern (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Pop-up-Läden und Zwischennutzungen beleben Leerstand und können Dauermieter anziehen; viele bleiben aber befristet und lösen strukturellen Leerstand nicht. Rechtlich und finanziell gut machbar.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.innenstadtprogramm.bund.de/SharedDocs/downloads/Webs/ZIZ/DE/Erfahrungsbericht_Zwischennutzung.pdf?__blob=publicationFile&v=4",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9962,
+      "name": "Abgestufte Eingriffe gegen langfristigen Leerstand (Fristen, Abgaben, Vorkaufsrecht, Übernahme) (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Druck auf untätige Eigentümer kann Nutzung anstoßen; Erfahrungen mit Leerstandsabgaben für Gewerbe sind uneinheitlich. Eigentumsrecht und Rechtssicherheit erfordern Aufwand, Vorkaufsrechte sind teuer.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://wrap.warwick.ac.uk/id/eprint/171874/",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9963,
+      "name": "Gewerbemieten per Bundesgesetz begrenzen, Bundesratsinitiative (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Mietbegrenzung kann Verdrängung kleiner Läden bremsen, könnte aber das Angebot an Gewerberaum verknappen; Erfahrungen sind kaum untersucht. Land kann nur im Bundesrat vorschlagen, Eigentumsgarantie ist zu beachten.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9964,
+      "name": "Landesförderprogramm für Umbau und Sanierung leerstehender Gebäude und Zentren (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Förderung senkt Umbaukosten und aktiviert Leerstand; Evaluierungen ähnlicher Programme zeigen Aufwertung, aber nicht immer weniger Leerstand. Finanzierbar im Landeshaushalt, auch mit Bundesmitteln.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.staedtebaufoerderung.info/SharedDocs/downloads/DE/WeitereProgramme/AktiveStadtUndOrtsteilzentren/Zwischeneva_2015.pdf?__blob=publicationFile&v=2",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9965,
+      "name": "Städtebauförderung für Innenstädte und Ortszentren aufstocken (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Etabliertes Programm für Zentren, Aufenthaltsqualität und Nutzungsmischung; Evaluierungen sehen Aufwertung, der Rückgang von Leerstand ist weniger klar. Bund finanziert bereits, Aufstockung ist haushaltsrechtlich machbar.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.staedtebaufoerderung.info/SharedDocs/downloads/DE/WeitereProgramme/AktiveStadtUndOrtsteilzentren/Zwischeneva_2015.pdf?__blob=publicationFile&v=2",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9966,
+      "name": "Umwandlung und Aufstockung leerstehender Gewerbe-, Büro- und Handelsflächen zu Wohnraum erleichtern (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Umnutzung beseitigt Leerstand und belebt Quartiere, ersetzt aber Handelsflächen und erweitert das Einkaufsangebot nicht. Über Landesbauordnung und Genehmigungspraxis rasch machbar.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.bbsr.bund.de/BBSR/DE/veroeffentlichungen/bbsr-online/2025/bbsr-online-052-2025-dl.pdf?__blob=publicationFile&v=2",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9967,
+      "name": "Leerstandskataster und Flächenmonitoring einführen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Bessere Daten erleichtern gezielte Ansiedlung und Ansprache von Eigentümern, bewirken allein aber keine Nutzung. Geringer Aufwand, Ergebnis hängt von der Nutzung der Daten ab.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9968,
+      "name": "Zentren- und Citymanagement mit Kommunen, Handel und Gastronomie (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Abgestimmte Konzepte und lokale Zusammenschlüsse (etwa Standortgemeinschaften) werden positiv bewertet, strenge Wirkungsstudien fehlen. Geringe Kosten, im Land schnell umsetzbar.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.furmancenter.org/wp-content/uploads/2007/05/ImpactofBIDcombined_000_1_1.pdf",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9969,
+      "name": "Strategische Innenstadt-, Zentren- und Bodenpolitik ohne konkretes Instrument (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Leitlinien wie Innenentwicklung oder neue Zentrenpläne geben Richtung vor; konkrete Wirkung hängt von späteren Instrumenten ab und ist schwer zu belegen. Rechtlich ohne Hürden.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://repos.hcu-hamburg.de/handle/hcu/570",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9970,
+      "name": "Dorfzentren und integrierte ländliche Entwicklung fördern (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Gebündelte Angebote im Ortskern (Dorfladen, Treffpunkte) können Grundversorgung sichern; Erfahrungen mit Dorfläden sind gemischt, flächendeckende Wirkung auf Leerstand unklar. Finanzierbar mit Landes- und EU-Mitteln.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://literatur.thuenen.de/digbib_extern/dn065243.pdf",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9971,
+      "name": "Warenhaus-Standorte erhalten und mit neuen Nutzungen füllen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Warenhaus-Schließungen senken die Frequenz im Umfeld (Studie: im Mittel rund 12 %), Nachnutzungen mildern den Rückgang; die Wirkung kultureller oder öffentlicher Nutzer ist kaum untersucht. Landesmittel sind begrenzt, Eigentümer und Betreiber entscheiden mit.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://doi.org/10.1016/j.jretai.2026.05.001",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9972,
+      "name": "Verkaufsoffene Sonntage ausweiten und Genehmigung vereinfachen, im bestehenden Rechtsrahmen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Mehr Sonntagsöffnung kann Frequenz steigern; Länderstudien finden mehr Beschäftigung und Ausgaben, für Deutschland weniger Handelsjobs nach der Liberalisierung. Wirkung auf Schließungen nicht direkt untersucht. Landesrecht, rasch änderbar; Beschäftigtenschutz beachten.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://cep.lse.ac.uk/pubs/download/dp1336.pdf",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9973,
+      "name": "Sonntagsöffnung vollständig freigeben, Ladenöffnungsrecht umfassend liberalisieren (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Volle Freigabe könnte Kunden zusätzlich anziehen; Studien finden mehr Beschäftigung in Europa, aber weniger Handelsjobs in Deutschland, Wirkung auf Schließungen nicht direkt untersucht. Sonntagsschutz (Art. 140 GG) setzt enge Grenzen; teils Bundesrecht nötig.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://edoc.hu-berlin.de/18452/5152",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9974,
+      "name": "Zoll-, Steuer- und Plattformregeln für Online-Importe und große Plattformen verschärfen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Gleichere Bedingungen für Online- und stationären Handel können Preisdruck mindern; die Wirkung auf Innenstadtläden ist kaum untersucht. Zoll und Plattformrecht liegen weitgehend bei der EU.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9975,
+      "name": "Sichtbare Polizeipräsenz und Sicherheitspartnerschaften im öffentlichen Raum (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Mehr Präsenz kann Kriminalität an Brennpunkten senken und das Sicherheitsgefühl verbessern; der Einfluss auf Passantenfrequenz und Ladenbesatz ist kaum belegt. Personalaufbau dauert.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8356500/",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9976,
+      "name": "Illegalen Müll, Graffiti und Vandalismus kontrollieren und ahnden (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Konsequente Kontrolle kann Verschmutzung verringern und Aufenthaltsqualität steigern; Wirkung auf Einkaufsangebote nur indirekt und kaum untersucht. Mit Personalmitteln im Land machbar.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8356497/",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9977,
+      "name": "Reinigung, Pflege und Abfallinfrastruktur im öffentlichen Raum stärken (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Sauberkeit gehört zu den meistgenannten Handlungsfeldern im Stadtbild, direkter Ansatz an der Aufenthaltsqualität; Belege zu Frequenz und Umsatz sind begrenzt. Über Landes- und Bezirksmittel gut machbar.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://pubmed.ncbi.nlm.nih.gov/41926728/",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9978,
+      "name": "Bürgerbeteiligung und Aktionstage für Sauberkeit (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Aktionen stärken Bewusstsein und lokale Pflege, ersetzen aber keine dauerhafte Reinigung. Günstig und sofort umsetzbar; Wirkung kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9979,
+      "name": "Begrünung und Zugang zu Gewässern in Innenstadtquartieren (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Straßengrün und Wasserzugang steigern Aufenthaltsqualität und teils die Verweildauer, der Effekt auf Ladenbesatz ist jedoch schwach belegt. Über Landesplanung machbar.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2023/09/greening-high-streets-sustaining-community-centres_99cbeb33/5ebe6bb5-en.pdf",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9980,
+      "name": "Historische Stadtbilder bewahren, rekonstruieren und Heimatstil bei öffentlichen Bauten (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Attraktive Stadtbilder können Besucher anziehen, der Zusammenhang mit Geschäftsschließungen ist kaum untersucht. Rekonstruktionen sind teuer und dauern Jahre.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9981,
+      "name": "Plätze, Straßen und Einkaufsviertel baulich umgestalten für mehr Aufenthaltsqualität (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Umgestaltungen erhöhen Verweildauer und Frequenz, Erfahrungen aus Fußgängerzonen und Plätzen sind überwiegend positiv, aber vom Einzelfall abhängig. Planung und Bau dauern mehrere Jahre.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://discovery.ucl.ac.uk/1575499/1/Street%20appeal%20%28progress%20in%20planning%29%20-%20revised.pdf",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 9982,
+      "name": "Obdachlosencamps räumen und deren Bau verhindern (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Räumung ändert das Stadtbild sofort; eine Studie aus Denver sieht leicht weniger Kriminalität im Umkreis, aber mehr Gewaltdelikte und Gesundheitsschäden für Betroffene. Wirkung auf Einkaufsangebote nicht untersucht. Landes- und Ordnungsrecht reicht aus.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://pubmed.ncbi.nlm.nih.gov/39412580/",
+      "entwurf_herkunft": "blind"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "durchsucht_fuer": [3601, 3602, 3603, 3604],
+      "massnahmen": [
+        {
+          "id": 9983,
+          "instrument": 9953,
+          "beschreibung": "Lehnt Fahrverbote für Innenstädte und das Umwidmen von Parkplätzen ab.",
+          "ursachen_ids": [3604],
+          "zitat": "Anti-Auto-Haltung, Fahrverbote für Innenstädte, das Umwidmen von Parkplätzen und ein generelles Tempolimit auf deutschen Autobahnen lehnen wir ab.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=74",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9984,
+          "beschreibung": "Bürokratie für den Einzelhandel verringern: Beweislast bei Dokumentationspflichten umkehren, regelmäßige Nachweise durch ein Anzeigerecht ersetzen.",
+          "ursachen_ids": [3601],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Weniger Dokumentationsaufwand entlastet stationäre Händler, Größe des Effekts auf Schließungen ist kaum untersucht. Bundesrechtlich machbar, Beweislastumkehr braucht Prüfung der Schutzziele.",
+          "zitat": "Wir kehren in Handwerk, Einzelhandel, Gastronomie oder Hotellerie bei Dokumentationspflichten die Beweislast um und ersetzen die regelmäßigen Nachweise durch ein Anzeigerecht von Verstößen.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=17",
+          "evidenz": "offen",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3602, 3603, 3604],
+      "massnahmen": [
+        {
+          "id": 9985,
+          "instrument": 9964,
+          "beschreibung": "Förderprogramm für den Umbau von Handelsimmobilien zu Wohn-, Büro- und Kulturnutzungen; Zentrenprogramm „Lebendige Zentren“ mit dem Bund um- und ausbauen",
+          "ursachen_ids": [3602],
+          "zitat": "Wir werden gemeinsam mit dem Bund das Programm „Lebendige Zentren“ um- und ausbauen und ein Programm für den Umbau von Handelsimmobilien für Wohn-, Büro- und Kulturnutzungen auflegen.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=37",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9986,
+          "instrument": 9961,
+          "beschreibung": "Leerstandsmanagement landeseigener Immobilien weiterentwickeln und für Start-ups und Kreativwirtschaft öffnen",
+          "ursachen_ids": [3602],
+          "zitat": "Wir werden das Leerstandsmanagement landeseigener Immobilien weiterentwickeln und gezielt für die Nutzung durch Start-ups und Unternehmen der Kreativwirtschaft öffnen.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=37",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9987,
+          "instrument": 9967,
+          "beschreibung": "Systematisches Leerstandsmonitoring von Büro- und Gewerbeflächen einführen",
+          "ursachen_ids": [3602],
+          "zitat": "Für mehr Transparenz über die Entwicklungen auf dem Gewerbemarkt setzen wir uns für die Einführung eines systematischen Leerstandsmonitorings von Büro- und Gewerbeflächen ein.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=37",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9988,
+          "instrument": 9968,
+          "beschreibung": "Engen Austausch mit den Bezirken suchen und den Zentrengipfel gegen Leerstand fortführen",
+          "ursachen_ids": [3602],
+          "zitat": "Dafür streben wir einen engen Austausch mit den Bezirken an und führen den erfolgreichen Zentrengipfel fort.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=37",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9989,
+          "instrument": 9968,
+          "beschreibung": "Konkrete Kiezpläne für jede Einkaufsstraße gemeinsam mit Bezirken, Handel und Gastronomie entwickeln",
+          "ursachen_ids": [3602],
+          "zitat": "Gemeinsam mit Bezirken, Handel und Gastronomie wollen wir konkrete Kiezpläne für jede Einkaufsstraße entwickeln.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=37",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9990,
+          "instrument": 9972,
+          "beschreibung": "Rechtssichere Sonntagsöffnung; acht verkaufsoffene Sonntage sollen stattfinden; Bezirke sollen zweimal im Jahr zusätzliche verkaufsoffene Sonntage festlegen können",
+          "ursachen_ids": [3604],
+          "zitat": "Wir stehen für eine rechtssichere Gestaltung der Sonntagsöffnung und setzen uns dafür ein, dass die gesetzlich möglichen acht verkaufsoffenen Sonntage auch tatsächlich stattfinden. Darüber hinaus sollen die Bezirke zweimal im Jahr zusätzliche verkaufsoffene Sonntage für besondere bezirkliche Anlässe festlegen können.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=37",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9991,
+          "instrument": 9955,
+          "beschreibung": "Baukasten für Bezirke zu Verkehrsberuhigung und Verkehrssicherheit, damit wohnungsnaher Einzelhandel für Kunden erreichbar bleibt",
+          "ursachen_ids": [3604],
+          "zitat": "Polizei und Feuerwehr wie Müllabfuhr müssen schnell überall hin gelangen, wohnungsnaher Einzelhandel und Supermärkte erreichbar für Kunden wie Lieferanten sein. Um das sicherzustellen, nutzen wir das neue Landesorganisationsgesetz und geben als Senat den Bezirken einen einheitlichen und verbindlichen Baukasten von Möglichkeiten sinnvoller Verkehrsberuhigung und Verkehrssicherheit an die Hand.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=70",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9992,
+          "instrument": 9959,
+          "beschreibung": "Verkehrsinfrastruktur gezielt ergänzen, um Innenstadt und Außenbezirke besser zu vernetzen",
+          "ursachen_ids": [3604],
+          "zitat": "Die bestehende Verkehrsinfrastruktur werden wir gezielt ergänzen, um Innenstadt und Außenbezirke noch besser zu vernetzen.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=69",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9993,
+          "instrument": 9977,
+          "beschreibung": "Taubenpopulation an Einkaufszentren und anderen stark frequentierten Orten begrenzen (Taubenschläge, Fütterungsverbote, bauliche Vergrämung)",
+          "ursachen_ids": [3603],
+          "zitat": "Wir werden die Taubenpopulation insbesondere an Einkaufszentren, Bahnhöfen und anderen stark frequentierten Orten wirksam und tierschutzgerecht begrenzen.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=79",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3602, 3603, 3604],
+      "massnahmen": [
+        {
+          "id": 9994,
+          "instrument": 9972,
+          "beschreibung": "Regeln für verkaufsoffene Sonntage praxisnäher und flexibler gestalten und dafür bürokratische Hürden abbauen.",
+          "ursachen_ids": [3604],
+          "zitat": "Die Regelungen für verkaufsoffene Sonntage in Mecklenburg-Vorpommern sollen praxisnah und flexibel gestaltet werden. […] Unnötige bürokratische Hürden werden wir abbauen, damit Unternehmer künftig unkomplizierter planen können.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=23",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9995,
+          "instrument": 9970,
+          "beschreibung": "Integrierte ländliche Entwicklung fördern, auch um Leerstand zu revitalisieren und mit Wohnen und Freizeit zu verbinden.",
+          "ursachen_ids": [3602],
+          "zitat": "Wir fördern eine integrierte ländliche Entwicklung, die partizipative Beteiligung der Bevölkerung und regionale Kooperationen, um Wohnen, Freizeit, Naherholung und die Revitalisierung von Leerstand zu verbinden.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=122",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9996,
+          "instrument": 9975,
+          "beschreibung": "Mehr Polizei in Innenstädten und an Kriminalitätsschwerpunkten, höherer Kontrolldruck, wirksamere Platzverweise und Aufenthaltsverbote für mehr Ordnung im öffentlichen Raum.",
+          "ursachen_ids": [3603],
+          "zitat": "Wir sorgen für mehr Sicherheit und Ordnung im öffentlichen Raum, durch mehr Polizei in den Innenstädten und an Kriminalitätsschwerpunkten, höheren Kontrolldruck sowie wirksamere Platzverweise und Aufenthaltsverbote.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=31",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3602, 3603, 3604],
+      "massnahmen": [
+        {
+          "id": 9997,
+          "instrument": 9969,
+          "beschreibung": "Einzelhandel in Innenstädten gezielt unterstützen, kreative Konzepte gegen Leerstand verfolgen und Stadtkerne als Orte der Begegnung stärken.",
+          "ursachen_ids": [3602, 3603],
+          "zitat": "Innenstädte lebendig halten, als Zentren des Lebens und Wirtschaftens: Wir stärken Stadtkerne als Orte der Begegnung, Kultur und Wirtschaft, mit gezielter Unterstützung des Einzelhandels und kreativen Konzepten gegen Leerstand.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=66",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 9998,
+          "instrument": 9954,
+          "beschreibung": "Überholte Umweltzonen in Innenstädten aufheben.",
+          "ursachen_ids": [3604],
+          "zitat": "Überholte Umweltzonen in Innenstädten wollen wir aufheben.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=62",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "durchsucht_fuer": [3601, 3602, 3603, 3604],
+      "massnahmen": [
+        {
+          "id": 9999,
+          "beschreibung": "Leerstand-Strategie mit Förderprogrammen, damit leerstehende Immobilien zu Wohn- oder Gewerberaum werden",
+          "ursachen_ids": [3602],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Förderprogramme und Anreize für Umnutzung leerstehender Gebäude senken Hürden für Eigentümer und Kommunen; Evaluierungen ähnlicher Programme zeigen Aufwertung, aber nicht durchgehend weniger Leerstand. Bund kann es finanzieren.",
+          "zitat": "Um leerstehende Gebäude im ländlichen Raum wieder nutzbar zu machen und damit die Attraktivität und Wirtschaftskraft dieser Regionen zu stärken, brauchen wir eine umfassende Leerstand-Strategie für den ländlichen Raum. Durch gezielte Förderprogramme und Anreize sollen Kommunen und private Eigentümer motiviert werden, leerstehende Immobilien in Wohn- oder Gewerberaum umzuwandeln.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=53",
+          "evidenz": "gemischt",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3602, 3603, 3604],
+      "massnahmen": [
+        {
+          "id": 10000,
+          "instrument": 9961,
+          "beschreibung": "Leerstehende Ladenzeilen und Shoppingcenter beleben, Zwischennutzungen fördern und Genehmigungen vereinfachen.",
+          "ursachen_ids": [3602],
+          "zitat": "Leerstehende Shoppingcenter und Ladenzeilen beleben wir neu und ermöglichen dort Jugend-, Kultur-, Spiel-, Sport- und soziale Angebote. Zwischennutzungen fördern wir gezielt und vereinfachen Genehmigungen. So wird Leerstand zu neuem Raum für die Stadtgesellschaft.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=19",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10001,
+          "instrument": 9968,
+          "beschreibung": "Empfehlungen des Zentrengipfels zur Attraktivität von Einkaufsstraßen umsetzen, lokale Selbstorganisation stärken.",
+          "ursachen_ids": [3602],
+          "zitat": "Wir erhalten und stärken die ökonomische Vielfalt in allen Berliner Stadtteilen. Stationärer Einzelhandel, vielfältige Gastronomie- und Kulturangebote beleben Kieze und schaffen Begegnung – zwischen Berliner*innen und Gästen aus aller Welt. Um Einkaufsstraßen attraktiver zu machen, setzen wir die Empfehlungen des Berliner Zentrengipfels konsequent um und stärken lokale Selbstorganisation.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=13",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10002,
+          "beschreibung": "Neues Stadtquartier am Molkenmarkt mit Wohnungen, Gewerbe und Kultur zügig errichten.",
+          "ursachen_ids": [3602],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ein gemischtes Quartier mit Gewerbe und Kultur ergänzt die Innenstadt, betrifft aber nur einen Standort. Bau dauert Jahre, Finanzierung über landeseigene Gesellschaften.",
+          "zitat": "Das neue Stadtquartier am Molkenmarkt mit bezahlbaren, landeseigenen Wohnungen, Gewerbe und Kultur errichten wir zügig.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=19",
+          "evidenz": "offen",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10003,
+          "instrument": 9954,
+          "beschreibung": "Mehr Ladezonen und Kurzzeitparkplätze in Geschäftsstraßen.",
+          "ursachen_ids": [3604],
+          "zitat": "In Geschäftsstraßen richten wir mehr Ladezonen und Kurzzeitparkplätze ein",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=27",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10004,
+          "instrument": 9959,
+          "beschreibung": "Flächendeckend mindestens 10-Minuten-Takt im ÖPNV, auch in der Innenstadt.",
+          "ursachen_ids": [3604],
+          "zitat": "Wir wollen für alle Nutzer*innen mit oder ohne Behinderungen flächendeckend mindestens einen 10-Minuten-Takt – in der Innenstadt ebenso wie in den Außenbezirken.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=24",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10005,
+          "instrument": 9963,
+          "beschreibung": "Bundesgesetze für bezahlbare Gewerbemieten anstoßen; Gewerbemix in Kiezen gegen Verdrängung erhalten.",
+          "ursachen_ids": [3602],
+          "zitat": "Wir erhalten den Mix aus Gewerbe, Dienstleistungen und Kultur in unseren Kiezen und schützen Unternehmen vor Verdrängung. Dafür setzen wir uns auf Bundesebene für gesetzliche Regelungen ein, mit denen wir bezahlbare Gewerbemieten durchsetzen können.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=13",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10006,
+          "instrument": 9981,
+          "beschreibung": "Plätze und Straßen so gestalten, dass Menschen gern verweilen und sich sicher fühlen.",
+          "ursachen_ids": [3603],
+          "zitat": "Wir gestalten Plätze und Straßen so, dass Menschen dort gern verweilen und sich sicher fühlen",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=22",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10007,
+          "instrument": 9977,
+          "beschreibung": "Straßenreinigungsgesetz ändern, damit die BSR Sauberkeit über Meldungen, Sensoren und Feedback steuern kann.",
+          "ursachen_ids": [3603],
+          "zitat": "Wir ändern das Straßenreinigungsgesetz, damit die BSR Sauberkeit besser über Meldungen, Sensoren und Nutzerfeedback steuern kann.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=24",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10008,
+          "instrument": 9975,
+          "beschreibung": "Sicherheit im öffentlichen Raum stärken: Beleuchtung und Überdachung von Haltestellen, besetzte Bahnhöfe, BVG-Streifen.",
+          "ursachen_ids": [3603],
+          "zitat": "Wir stärken die Sicherheit im öffentlichen Raum, etwa durch Überdachung und Beleuchtung von Haltestellen, Sicherheitsinfos in Nachtbussen, besetzte Bahnhöfe, mehr BVG-Streifen mit gemischten Teams",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=32",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10009,
+          "instrument": 9956,
+          "beschreibung": "Breitere, beleuchtete, barrierefreie Gehwege und mehr sichere Querungen fördern.",
+          "ursachen_ids": [3604],
+          "zitat": "Das fördern wir mit breiten, gut beleuchteten, barrierefreien und sicheren Gehwegen zu jeder Jahreszeit und bei allen Witterungsbedingungen sowie deutlich mehr sicheren Querungen, auch in Fahrradstraßen.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=25",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10010,
+          "instrument": 9979,
+          "beschreibung": "Gewässer in der Innenstadt besser zugänglich machen, Baden in der Spree ermöglichen.",
+          "ursachen_ids": [3603],
+          "zitat": "Wir wollen, dass die Gewässer in der Innenstadt wieder besser zugänglich werden. Als Baustein dafür machen wir Baden in der Spree möglich.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=23",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3602, 3603, 3604],
+      "massnahmen": [
+        {
+          "id": 10011,
+          "beschreibung": "Kooperation von Kultur und Tourismus stärken, um Innenstädte mit Kulturrouten, Festivals und Kunst im öffentlichen Raum zu beleben.",
+          "ursachen_ids": [3603],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Kulturrouten, Festivals und Kunst bringen zeitweise Frequenz, ersetzen aber kein dauerhaftes Einkaufsangebot; Wirkung auf Leerstand kaum untersucht. Günstig und schnell machbar.",
+          "zitat": "Dieses Potenzial wollen wir besser nutzen und werden dafür die Kooperation zwischen Kultur und Tourismus stärken. Ziel ist es dabei auch, die Innenstädte durch Kulturrouten, Festivals oder Kunst im öffentlichen Raum zu beleben.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=80",
+          "evidenz": "offen",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3602, 3603, 3604],
+      "massnahmen": [
+        {
+          "id": 10012,
+          "instrument": 9968,
+          "beschreibung": "Gemeinsame Initiativen von Kommunen und Wirtschaft sollen Stadt- und Ortszentren stärken.",
+          "ursachen_ids": [3602],
+          "zitat": "Stadt- und Ortszentren werden durch gemeinsame Initiativen von Kommunen und Wirtschaft gestärkt.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=6",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "durchsucht_fuer": [3601, 3602, 3603, 3604],
+      "massnahmen": [
+        {
+          "id": 10013,
+          "instrument": 9965,
+          "beschreibung": "Städtebauförderung aufstocken, um lebendige Innenstädte und Ortszentren mit gemischten Quartieren zu schaffen",
+          "ursachen_ids": [3602, 3603],
+          "zitat": "Wir wollen lebendige und […] Innenstädte und Ortszentren mit attraktiven und nutzungsdurchmischten Quartieren schaffen. […] Hierfür wollen wir die Mittel für die Städtebauförderung aufstocken […]",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=73",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10014,
+          "instrument": 9974,
+          "beschreibung": "Große Onlineplattformen sollen wie der Laden um die Ecke Produktverantwortung übernehmen",
+          "ursachen_ids": [3601],
+          "zitat": "Wir unterstützen den Digital Fairness Act der EU-Kommission und setzen uns dafür ein, dass große Plattformen – genau wie der Laden um die Ecke – Produktverantwortung übernehmen müssen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=27",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10015,
+          "instrument": 9974,
+          "beschreibung": "Zollschlupflöcher schließen, über die Onlinehändler unsichere Billigprodukte einführen",
+          "ursachen_ids": [3601],
+          "zitat": "Die Schlupflöcher im Zollrecht müssen geschlossen werden, durch die besonders asiatische Onlinehändler wie Temu unsichere Wegwerfprodukte am Zoll vorbeischleusen und europäische Hersteller unterbieten.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=29",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3602, 3603, 3604],
+      "massnahmen": [
+        {
+          "id": 10016,
+          "beschreibung": "Sofortprogramm: leerstehende Erdgeschossflächen an soziale Träger und Initiativen zu gedeckelten Mieten vergeben",
+          "ursachen_ids": [3602],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Gedeckelte Mieten für soziale Träger füllen Leerstand mit Nutzern, schaffen aber kein Handelsangebot; nur landeseigene oder angemietete Flächen erreichbar. Wirkung kaum untersucht.",
+          "zitat": "Mit einem Sofortprogramm für soziale Gewerbemieten stellen wir leerstehende Erdgeschossflächen sozialen Trägern, Kulturschaffenden, Jugendeinrichtungen und Nachbarschaftsinitiativen zu gedeckelten Mieten zur Verfügung und entwickeln ein soziales Gewerbemietmodell, das Vergabekriterien gemeinwohlorientiert gestaltet.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=56",
+          "evidenz": "offen",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10017,
+          "instrument": 9967,
+          "beschreibung": "Landesweites Flächenregister, das unter anderem Leerstand erfasst",
+          "ursachen_ids": [3602],
+          "zitat": "Wir werden aufbauend auf dem Liegenschaftskataster ein landesweites Flächenregister schaffen, das Informationen zu Eigentum, Nutzung, Leerstand, baulichem Zustand und Potenzialflächen enthält.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=60",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10018,
+          "instrument": 9979,
+          "beschreibung": "Begrünung und Kühlung der Wohnumfelder in dicht bebauten Kiezen; in der Innenstadt Biotopflächenfaktor",
+          "ursachen_ids": [3603],
+          "zitat": "Gerade in dicht bebauten Kiezen und Vierteln mit wenig Grün investieren wir in bessere Wohnumfelder – mehr Pflanzen, entsiegelte Böden und Kühlung an heißen Tagen. In der Innenstadt nutzen wir hierfür das Instrument des Biotopflächenfaktors.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=64",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10019,
+          "instrument": 9972,
+          "beschreibung": "Rahmen für verkaufsoffene Sonntage ausschöpfen, Schutz der Beschäftigten im Einzelhandel wahren",
+          "ursachen_ids": [3604],
+          "zitat": "Den Rahmen der aktuellen Gesetzgebung für verkaufsoffene Sonntage wollen wir ausschöpfen und achten dabei konsequent auf den Schutz der Beschäftigten im Einzelhandel, die bei langen Arbeitszeiten und Belastungen auf die Erholung am Sonntag angewiesen sind.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=102",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3602, 3603, 3604],
+      "massnahmen": [
+        {
+          "id": 10020,
+          "instrument": 9961,
+          "beschreibung": "Leerstand kommunal managen (Leerstands- und Brachflächenmanagement) und temporäre Zwischennutzungen fördern.",
+          "ursachen_ids": [3602],
+          "zitat": "Für mehr Tempo bei der Schaffung von Wohnraum wollen wir: […] Leerstand aktiv managen, etwa durch kommunales Leerstands- und Brachflächenmanagement sowie die Förderung temporärer Zwischennutzungen.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=52",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10021,
+          "instrument": 9966,
+          "beschreibung": "Umwandlung leerstehender Gewerberäume in Wohnraum erleichtern (zusammen mit Dachaufstockungen und Ausbauten).",
+          "ursachen_ids": [3602],
+          "zitat": "Für mehr Tempo bei der Schaffung von Wohnraum wollen wir: […] den Gebäudebestand und die vorhandene Infrastruktur effizienter nutzen, etwa durch erleichterte Dachaufstockungen und -ausbauten sowie die Umwandlung leerstehender Gewerberäume in Wohnraum.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=52",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10022,
+          "instrument": 9964,
+          "beschreibung": "Landeswohnraumförderung aufstocken und reformieren, unter anderem um Leerstand in zentralen Ortslagen zu aktivieren.",
+          "ursachen_ids": [3602],
+          "zitat": "Wir fördern bezahlbares Wohnen, indem wir: […] das Landeswohnraumförderprogramm „Wohnungsbau Sozial“ aufstocken und reformieren, unter anderem durch zinsgünstigere Darlehen und höhere Tilgungszuschüsse für Sozialwohnungen, eine möglichst lange Mietpreisbindung sowie die Einführung neuer Fördersparten für altersgerechte, bezahlbare Wohnformen und die Aktivierung von Leerstand in zentralen Ortslagen.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=53",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10023,
+          "instrument": 9964,
+          "beschreibung": "Landesprogramme für Bestandsimmobilien auflegen, um Dorfkerne zu beleben und alte Gebäude zu sanieren.",
+          "ursachen_ids": [3602],
+          "zitat": "Wir fördern bezahlbares Wohnen, indem wir: […] ein Landesprogramm „Neuer Schwung für alte Orte“ sowie „Jung kauft Alt“ aufsetzen, um Bestandsimmobilien für junge Familien zu erschließen, Dorfkerne zu beleben und die Sanierung alter Gebäude zu unterstützen.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=53",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10024,
+          "instrument": 9969,
+          "beschreibung": "Bodenpolitik so ausrichten, dass bezahlbares Wohnen mit der Wiederbelebung zentraler Ortslagen verbunden wird.",
+          "ursachen_ids": [3602],
+          "zitat": "Für gemeinwohlorientierte Bodenpolitik und Wohnraumentwicklung wollen wir: […] durch eine strategische Bodenpolitik bezahlbares Wohnen mit der Wiederbelebung zentraler Ortslagen verbinden.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=54",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3602, 3603, 3604],
+      "massnahmen": [
+        {
+          "id": 10025,
+          "instrument": 9961,
+          "beschreibung": "Kommunen beim Leerstandsabbau unterstützen und Zwischennutzungen, etwa durch Start-ups oder Pop-up-Stores, ermöglichen.",
+          "ursachen_ids": [3602],
+          "zitat": "Kommunen sollen beim Abbau von Leerstand unterstützt werden und intelligente, alternative Zwischennutzungen ermöglichen, z. B. durch Start-ups, Pop-up-Stores oder nichtkommerzielle Treffpunkte.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=93",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10026,
+          "instrument": 9962,
+          "beschreibung": "Kommunen mit abgestuften Instrumenten gegen langfristigen Leerstand ausstatten: Nutzungs- oder Sanierungsfristen, höhere Abgaben, verpflichtende Zwischennutzung.",
+          "ursachen_ids": [3602],
+          "zitat": "Kommunen sollen wirksamere, abgestufte Instrumente gegen langfristigen Leerstand erhalten – etwa Nutzungs- oder Sanierungsfristen, höhere Abgaben oder verpflichtende Zwischennutzung.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=98",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10027,
+          "instrument": 9962,
+          "beschreibung": "Übernahme langjährig ungenutzter oder entwicklungsfähiger Immobilien als letztes Mittel erleichtern, wenn die anderen Instrumente erfolglos bleiben.",
+          "ursachen_ids": [3602],
+          "zitat": "Kommunen sollen wirksamere, abgestufte Instrumente gegen langfristigen Leerstand erhalten – etwa […] verpflichtende Zwischennutzung. Erst wenn diese Maßnahmen erfolglos bleiben, soll die Übernahme langjährig ungenutzter oder entwicklungsfähiger Immobilien als letztes Mittel erleichtert werden.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=98",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10028,
+          "instrument": 9970,
+          "beschreibung": "Neue moderne Dorfzentren ermöglichen, die Angebote wie Dorfladen, Co-Working und Veranstaltungsräume unter einem Dach bündeln.",
+          "ursachen_ids": [3602],
+          "zitat": "Deshalb wollen wir existierende Treffpunkte sichern und neue moderne Dorfzentren ermöglichen, die mehrere Angebote unter einem Dach bündeln: Einkaufen im Dorfladen, arbeiten an Co-Working-Plätzen, feiern in Veranstaltungsräumen, Carsharing und Ladesäule vor der Tür und am Ende mindestens ein Gespräch beim Kaffee.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=39",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "durchsucht_fuer": [3601, 3602, 3603, 3604],
+      "massnahmen": [
+        {
+          "id": 10029,
+          "instrument": 9974,
+          "beschreibung": "Regeln, damit importierte Waren auf großen Online-Plattformen angemessen verzollt und versteuert werden.",
+          "ursachen_ids": [3601],
+          "zitat": "Wir setzen uns zudem für wirksame und praktikable Regeln auf europäischer und nationaler Ebene ein, die sicherstellen, dass importierte Waren auf großen Online-Plattformen angemessen verzollt und versteuert werden.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=16",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3602, 3603, 3604],
+      "massnahmen": [
+        {
+          "id": 10030,
+          "instrument": 9966,
+          "beschreibung": "Aufstockung von Einzelhandelsflächen mit Wohngeschossen unbürokratisch ermöglichen und fördern",
+          "ursachen_ids": [3602],
+          "zitat": "Wir wollen daher die Aufstockung von Einzelhandels- und anderen geeigneten Flächen mit Wohngeschossen unbürokratisch – auch im Tausch gegen die Ausweitung etwa der überbauten Einzelhandelsflächen – ermöglichen und fördern.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=40",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10031,
+          "instrument": 9966,
+          "beschreibung": "Leerstehende Gewerbe-, Büro- und Ladenflächen freiwillig in Wohnraum umwandeln ermöglichen",
+          "ursachen_ids": [3602],
+          "zitat": "Wir ermöglichen es, leer stehende Gewerbe-, Büro- und Ladenflächen freiwillig in Wohnraum umzuwandeln.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=46",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10032,
+          "beschreibung": "Sondernutzungsflächen für Einzelhandel, Schankbetriebe und Kultur unbürokratisch ausweisen",
+          "ursachen_ids": [3602, 3603],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Unbürokratische Sondernutzung belebt Straßenraum mit Läden, Gastronomie und Kultur, ersetzt aber keine fehlenden Angebote. Verwaltungsvereinfachung ist im Land rasch möglich; Nutzungskonflikte (Lärm) sind zu beachten.",
+          "zitat": "Wir wollen, dass Sondernutzungsflächen für den Einzelhandel, Schankbetriebe und kulturelle Projekte unbürokratisch ausgewiesen werden",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=28",
+          "evidenz": "offen",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10033,
+          "beschreibung": "Quadratmetergrenzen für großflächigen Einzelhandel im Baurecht des Bundes deutlich anheben",
+          "ursachen_ids": [3602],
+          "wirksamkeit": 0,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Höhere Grenzen für großflächigen Einzelhandel erleichtern Standorte außerhalb der Zentren und können Innenstädte schwächen; geplante Neugestaltung moderner Standorte könnte auch Zentren helfen. Regelung liegt im Bundesbaurecht.",
+          "zitat": "Für die Neugestaltung moderner Einzelhandelsstandorte ist es außerdem notwendig, die Quadratmetergrenzen für großflächigen Einzelhandel in der Baunutzungsverordnung auf Bundesebene deutlich anzuheben.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=28",
+          "evidenz": "gemischt",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10034,
+          "instrument": 9961,
+          "beschreibung": "Zwischennutzung leer stehender Gebäude erleichtern",
+          "ursachen_ids": [3602],
+          "zitat": "Zwischennutzungen von leer stehenden Gebäuden, temporäre Veranstaltungsflächen und Open-Air-Angebote wollen wir erleichtern, um neue Freiräume für Kultur, Musik und kreative Experimente zu schaffen.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=34",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10035,
+          "beschreibung": "Kleinteilige Eigentümerstruktur in der Innenstadt anstreben, wo Flächen neu gebaut oder umgestaltet werden",
+          "ursachen_ids": [3602],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Kleinteilige Eigentümer können Vielfalt und Ansiedlung fördern, belegt ist das kaum; wirkt nur bei Neubau und Umgestaltung, daher langsam. Nur auf eigenen oder planbaren Flächen umsetzbar.",
+          "zitat": "Wir werden deshalb bei neu zu bebauenden oder grundlegend umzugestaltenden Flächen, insbesondere in der Innenstadt, eine kleinteilige Eigentümerstruktur anstreben und wo immer möglich herstellen.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=36",
+          "evidenz": "offen",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10036,
+          "instrument": 9962,
+          "beschreibung": "Leerstehende Objekte durch finanziellen Druck auf untätige Eigentümer nutzbar machen",
+          "ursachen_ids": [3602],
+          "zitat": "Wir wollen mit einem landesweiten Ansatz die Nutzbarmachung sogenannter Geisterhäuser zügig vorantreiben. Wir entwickeln ein effizientes Modell, um blockierende/untätige Eigentümerinnen und Eigentümer durch finanziellen Druck zu veranlassen, ihre Objekte abzugeben oder zu sanieren.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=41",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10037,
+          "instrument": 9981,
+          "beschreibung": "Bauliche Umgestaltung einzelhandelsgeprägter Viertel zur Erhöhung der Aufenthaltsqualität",
+          "ursachen_ids": [3603],
+          "zitat": "Wir werden uns dafür einsetzen, dass stark vom Einzelhandel geprägte Viertel echte bauliche Umgestaltungen erfahren, um die Aufenthaltsqualität zu erhöhen, da zu ihrer Attraktivität eine angenehme Atmosphäre gehört, die mittels Sauberkeit und Sicherheit gewährleistet wird.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=28",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10038,
+          "instrument": 9977,
+          "beschreibung": "Mittel für die Pflege von Parks, Straßen und Plätzen im Land und in den Bezirken erhöhen",
+          "ursachen_ids": [3603],
+          "zitat": "Im Haushalt des Landes Berlin, aber auch in allen Bezirken sollen die Mittel für die Pflege von Parks, Straßen und Plätzen erhöht werden.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=70",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10039,
+          "instrument": 9976,
+          "beschreibung": "Ordnungsämter sollen Überwachung illegaler Müllentsorgung priorisieren; zusätzliche Stellen im Ordnungsdienst",
+          "ursachen_ids": [3603],
+          "zitat": "Die Überwachung der illegalen Müllentsorgung soll durch die Ordnungsämter gegenüber anderen Aufgaben priorisiert werden. Dazu sollen zusätzliche Stellen im Allgemeinen Ordnungsdienst geschaffen werden.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=71",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10040,
+          "instrument": 9977,
+          "beschreibung": "Öffentliche Toiletten für alle Geschlechter kostenfrei nutzbar machen",
+          "ursachen_ids": [3603],
+          "zitat": "Als Teil der öffentlichen Infrastruktur sollen öffentliche Toiletten für alle Geschlechter kostenfrei nutzbar sein.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=70",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10041,
+          "instrument": 9977,
+          "beschreibung": "Reinigung von ÖPNV-Verkehrsflächen und Bahnhofsvorplätzen über Verkehrsverträge sichern",
+          "ursachen_ids": [3603],
+          "zitat": "Einen besonderen Fokus wollen wir auf die konsequentere Reinigung von Verkehrsflächen des ÖPNV legen. Dies gilt auch für Bahnhofsvorplätze. Dafür wollen wir über die Verkehrsverträge die Anbieter von ÖPNV-Leistungen ebenfalls in die Verantwortung nehmen.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=72",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10042,
+          "instrument": 9977,
+          "beschreibung": "Digitale Fahrwegplanung für Reinigungsintervalle, zunächst an Bahnhöfen",
+          "ursachen_ids": [3603],
+          "zitat": "Wir wollen die Einführung einer digitalen Fahrwegplanung für die Reinigungs- und Leerungsintervalle zunächst an Bahnhöfen vorantreiben.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=71",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10043,
+          "instrument": 9975,
+          "beschreibung": "Polizeipräsenz im öffentlichen Raum dauerhaft verstärken",
+          "ursachen_ids": [3603],
+          "zitat": "Unser Ziel ist eine verstärkte Polizeipräsenz. Die Polizei soll dauerhaft Präsenz im öffentlichen Raum zeigen.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=66",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10044,
+          "instrument": 9982,
+          "beschreibung": "Bau von Obdachlosencamps verhindern",
+          "ursachen_ids": [3603],
+          "zitat": "Zudem soll der Bau von Obdachlosencamps konsequent verhindert und Betroffenen sollen aktiv alternative Wohnmöglichkeiten aufgezeigt werden.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=67",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10045,
+          "instrument": 9976,
+          "beschreibung": "Konsequentes Vorgehen gegen Vandalismus und Graffiti auf öffentlicher Infrastruktur",
+          "ursachen_ids": [3603],
+          "zitat": "Wir fordern ein konsequentes Vorgehen gegen Vandalismus. Sachbeschädigung, beispielsweise in Form von Graffiti auf öffentlicher Infrastruktur, wird in Berlin nicht genug verfolgt.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=68",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10046,
+          "instrument": 9978,
+          "beschreibung": "BSR-Kieztage öfter und an mehr Orten veranstalten",
+          "ursachen_ids": [3603],
+          "zitat": "BSR-Kieztage sollen öfter und an mehr Orten stattfinden.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=71",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10047,
+          "instrument": 9954,
+          "beschreibung": "Kapazität bestehender Durchgangsstraßen in der Innenstadt nicht weiter reduzieren",
+          "ursachen_ids": [3604],
+          "zitat": "Eine weitere Reduzierung der Kapazitäten bestehender Durchgangsstraßen in der Innenstadt lehnen wir, wo es nicht sinnvoll ist, ab.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=62",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10048,
+          "instrument": 9959,
+          "beschreibung": "U-Bahn-Netz jährlich um ein bis zwei Kilometer erweitern",
+          "ursachen_ids": [3604],
+          "zitat": "Daher ist es erforderlich, das bestehende Netz nicht nur zu erhalten, sondern jährlich ein bis zwei Kilometer zusätzlich zu bauen.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=57",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10049,
+          "instrument": 9956,
+          "beschreibung": "Gehwegfreihaltung von parkenden Autos und Hindernissen durch konsequente Ahndung",
+          "ursachen_ids": [3604],
+          "zitat": "Gehwege dürfen nicht durch parkende Autos, E-Scooter oder andere Hindernisse blockiert werden. Wir setzen auf konsequente Ahndung von Verstößen.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=61",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10050,
+          "instrument": 9956,
+          "beschreibung": "Vorrangnetz für den Fußverkehr definieren; bei Planung und Instandhaltung prioritär behandeln",
+          "ursachen_ids": [3604],
+          "zitat": "Wir werden ein Vorrangnetz für den Fußverkehr definieren lassen, analog zu den Vorrangnetzen für den Auto- und Radverkehr sowie den ÖPNV. Dieses Netz […] wird bei Planung, Instandhaltung und Ausbau prioritär behandelt.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=61",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10051,
+          "instrument": 9957,
+          "beschreibung": "Fahrradstraßen parallel zu Hauptstraßen deutlich ausweiten",
+          "ursachen_ids": [3604],
+          "zitat": "Fahrradstraßen parallel zu Hauptstraßen nach dem Beispiel der Linienstraße wollen wir deutlich ausweiten und das Netz von Fahrradstraßen erheblich vergrößern.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=65",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10052,
+          "instrument": 9958,
+          "beschreibung": "Privat finanzierte Fahrradparkhäuser an stark frequentierten Orten, insbesondere Bahnhöfen",
+          "ursachen_ids": [3604],
+          "zitat": "An stark frequentierten Orten, insbesondere Bahnhöfen, sollen mit Sicherheitstechnik ausgestattete privatwirtschaftlich finanzierte Fahrradparkhäuser – auch unterirdisch – entstehen.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=65",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10053,
+          "instrument": 9973,
+          "beschreibung": "Sonntagsöffnung bundesweit erlauben; Bezirke sollen zusätzliche verkaufsoffene Sonntage genehmigen",
+          "ursachen_ids": [3604],
+          "zitat": "Auf Bundesebene setzen wir uns dafür ein, die Sonntagsöffnung komplett zu erlauben. In einem ersten Schritt sollen die Bezirke zusätzliche verkaufsoffene Sonntage pro Jahr genehmigen und eigenständig terminieren dürfen.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=21",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3602, 3603, 3604],
+      "massnahmen": [
+        {
+          "id": 10054,
+          "instrument": 9973,
+          "beschreibung": "Sonntagsöffnungsverbot vollständig aufheben (im Kapitel Tourismus genannt, ohne Innenstadtbezug).",
+          "ursachen_ids": [3604],
+          "zitat": "Wir Freie Demokraten werden: […] das Sonntagsöffnungsverbot vollständig aufheben.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=19",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3602, 3603, 3604],
+      "massnahmen": [
+        {
+          "id": 10055,
+          "instrument": 9973,
+          "beschreibung": "Ladenöffnungszeitengesetz weitgehend liberalisieren, mehr Sonntags- und Feiertagsöffnungen ermöglichen",
+          "ursachen_ids": [3604],
+          "zitat": "Wir werden schnellstmöglich die vollständige Liberalisierung des Ladenöffnungszeitengesetzes vorantreiben, die insbesondere eine größtmögliche Ausweitung der Sonntagsöffnungen sowie Öffnungen an Feiertagen ermöglicht.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=7",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10056,
+          "instrument": 9958,
+          "beschreibung": "Sichere Fahrradabstellanlagen und Ladepunkte an Bahnhöfen, ÖPNV-Knoten und in Ortszentren",
+          "ursachen_ids": [3604],
+          "zitat": "Menschen wollen mit dem Rad mobil sein, wir schaffen die Infrastruktur dafür. […] Zur Attraktivität gehören sichere Abstellanlagen und Ladepunkte an Bahnhöfen, ÖPNV-Knoten und in Ortszentren.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=66",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10057,
+          "instrument": 9969,
+          "beschreibung": "Ortskerne beleben; Innenentwicklung hat Vorrang vor neuem Flächenverbrauch",
+          "ursachen_ids": [3602],
+          "zitat": "Innenentwicklung hat für uns Vorrang vor zusätzlichem Flächenverbrauch: Ortskerne beleben, Brachflächen aktivieren, Wege verkürzen.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=58",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10058,
+          "instrument": 9975,
+          "beschreibung": "Sicherheitspartnerschaften von Polizei und Ordnungsämtern ausbauen; mehr Polizeipräsenz im öffentlichen Raum",
+          "ursachen_ids": [3603],
+          "zitat": "Wir bauen Sicherheitspartnerschaften zwischen Polizei und Ordnungsämtern flächendeckend aus und machen gemeinsame Einsätze zum Regelfall. Klare Zuständigkeiten, feste Absprachen und abgestimmtes Handeln verhindern Kompetenzgerangel, erhöhen die Präsenz im öffentlichen Raum und sorgen dafür, dass staatliche Autorität geschlossen, effizient und für die Bürger sichtbar wahrgenommen wird.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=47",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "durchsucht_fuer": [3601, 3602, 3603, 3604],
+      "massnahmen": [
+        {
+          "id": 10059,
+          "beschreibung": "Versandhandel mit rezeptpflichtigen Medikamenten verbieten",
+          "ursachen_ids": [3601],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 0,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Das Versandverbot würde Apotheken vor Ort im Wettbewerb entlasten, betrifft aber nur ein Segment des Handels. Nach EuGH-Rechtsprechung verstößt ein Verbot gegen die Warenverkehrsfreiheit und ist nicht umsetzbar.",
+          "zitat": "Den Versandhandel mit rezeptpflichtigen Medikamenten lassen wir nicht mehr zu, da er zu Wettbewerbsverzerrungen beiträgt.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=29",
+          "evidenz": "offen",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10060,
+          "instrument": 9953,
+          "beschreibung": "Erhalt und Ausbau innerstädtischer Fahrspuren und Parkraum, zum Schutz des Einzelhandels",
+          "ursachen_ids": [3604],
+          "zitat": "Gleichzeitig fordert die AfD den Erhalt und Ausbau von innerstädtischen Fahrspuren und Parkraum zur Vermeidung von wachsendem Verkehrschaos sowie zum Schutz der Attraktivität des Einzelhandels.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=43",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10061,
+          "beschreibung": "Historische Innenstädte bewahren und bei Bedarf rekonstruieren",
+          "ursachen_ids": [3603],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Historische Stadtbilder können Besucher anziehen, der Zusammenhang mit Geschäftsschließungen ist kaum untersucht. Der Bund kann nur über Förderung und Denkmalprogramme beitragen, Rekonstruktionen sind teuer.",
+          "zitat": "Die Schönheit historischer Innenstädte muss bewahrt und bei Bedarf durch Rekonstruktionen wiederhergestellt werden.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=172",
+          "evidenz": "offen",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3602, 3603, 3604],
+      "massnahmen": [
+        {
+          "id": 10062,
+          "instrument": 9959,
+          "beschreibung": "Personaloffensive für den Berliner Nahverkehr",
+          "ursachen_ids": [3604],
+          "zitat": "Eine Offensive zur Personalgewinnung bei BVG und S-Bahn.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=41",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10063,
+          "instrument": 9959,
+          "beschreibung": "Ausbau des Schienennetzes und Einsatz neuer Verkehrssysteme wie Seilbahnen",
+          "ursachen_ids": [3604],
+          "zitat": "Einen zügigen Ausbau des Schienennetzes und den Einsatz moderner, ressourcenschonender Verkehrssysteme wie Seilbahnen.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=42",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10064,
+          "instrument": 9959,
+          "beschreibung": "ÖPNV-Anbindungen neuer Stadtgebiete vor deren Bezug fertigstellen",
+          "ursachen_ids": [3604],
+          "zitat": "Effektive ÖPNV-Anbindungen fertigzustellen, bevor neue Stadtgebiete bezogen werden.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=42",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10065,
+          "instrument": 9959,
+          "beschreibung": "Beschleunigung des ÖPNV durch Vorrangschaltungen",
+          "ursachen_ids": [3604],
+          "zitat": "Eine Beschleunigung des ÖPNV durch optimierte Vorrangschaltungen.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=42",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10066,
+          "instrument": 9959,
+          "beschreibung": "Digitale Zugleittechnik zur Erhöhung der Taktfolge",
+          "ursachen_ids": [3604],
+          "zitat": "Die zügige Einführung digitaler Zugleittechnik (CBTC) zur Erhöhung der Taktfolge und zur sicheren Trennung von Bahnsteig und Gleiskörper.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=42",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10067,
+          "instrument": 9956,
+          "beschreibung": "Barrierefreiheit für Mobilitätseingeschränkte und kognitiv Beeinträchtigte ausbauen",
+          "ursachen_ids": [3604],
+          "zitat": "Barrierefreiheit nicht nur für in der Mobilität beeinträchtige Personen, sondern auch für kognitiv Beeinträchtige ausbauen.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=42",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10068,
+          "instrument": 9960,
+          "beschreibung": "Tarifangebote für Pendler aus dem Umland zum Umstieg auf den ÖPNV",
+          "ursachen_ids": [3604],
+          "zitat": "Tarifliche Angebote, die Pendler schon in Brandenburg auf den ÖPNV umsteigen lassen.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=42",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10069,
+          "instrument": 9960,
+          "beschreibung": "Mobilitätskonten mit vereinfachtem Ticketing für ÖPNV, Carsharing und Mikromobilität",
+          "ursachen_ids": [3604],
+          "zitat": "Vereinfachtes Ticketing durch Mobilitätskonten, die den ÖPNV, Carsharing-Angebote und Mikromobilität integrieren.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=42",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10070,
+          "instrument": 9956,
+          "beschreibung": "Systematische Sanierung der Gehwege im Programm „Gehweg 2030“",
+          "ursachen_ids": [3604],
+          "zitat": "Eine Initiative „Gehweg 2030“, mit der die Gehweginfrastruktur Berlins […] systematisch saniert wird.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=43",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10071,
+          "instrument": 9956,
+          "beschreibung": "Vermeidung von Engstellen auf Gehwegen durch abgestellte Fahrzeuge und Stadtmöbel",
+          "ursachen_ids": [3604],
+          "zitat": "Die Vermeidung von Engstellen durch abgestellte E-Scooter, Fahrräder oder durch Stadtmöbel.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=44",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10072,
+          "instrument": 9957,
+          "beschreibung": "Bedarfsgerechter Radwegeausbau durch besseres Radverkehrsmonitoring",
+          "ursachen_ids": [3604],
+          "zitat": "Einen bedarfsgerechten Ausbau der Radverkehrsinfrastruktur durch besseres Radverkehrsmonitoring.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=43",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10073,
+          "instrument": 9957,
+          "beschreibung": "Radverkehrsführung auf Nebenstraßen parallel zu Hauptstraßen",
+          "ursachen_ids": [3604],
+          "zitat": "Eine zielgerichtete Streckenführung auf Nebenstraßen, die benachbart und parallel zu Hauptstraßen verlaufen.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=43",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10074,
+          "instrument": 9958,
+          "beschreibung": "Programm mit abschließbaren Fahrradabstellanlagen",
+          "ursachen_ids": [3604],
+          "zitat": "Ein „1.000-Räder-Programm“, das modulare, abschließbare Abstellanlagen vorsieht.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=43",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10075,
+          "instrument": 9956,
+          "beschreibung": "Streusalz auf Gehwegen bei Glätte erlauben und Straßenreinigungsgesetz novellieren",
+          "ursachen_ids": [3604],
+          "zitat": "Wir werden das Berliner Straßenreinigungsgesetz in diesem Sinne weiter novellieren. Klare, automatische Auslösetatbestände für den Einsatz von Streusalz auf Gehwegen, eine direkte Ermächtigung der BSR und Abbau bürokratischer Hürden stehen dabei im Vordergrund.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=84",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10076,
+          "instrument": 9976,
+          "beschreibung": "Ordnungsämter rund um die Uhr aktiv, konsequente Ahndung von Verursachern",
+          "ursachen_ids": [3603],
+          "zitat": "Die Ordnungsämter müssen rund um die Uhr aktiv sein, um eine konsequente Ahndung von Verursachern zu ermöglichen.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=83",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10077,
+          "instrument": 9977,
+          "beschreibung": "Mobile Einsatzteams zur Beseitigung von Müll, Graffiti und Verwahrlosung",
+          "ursachen_ids": [3603],
+          "zitat": "Mobile Einsatzteams beseitigen illegalen Müll, Graffiti und andere Verwahrlosungen.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=83",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10078,
+          "instrument": 9976,
+          "beschreibung": "Videoüberwachung an Müll-Hotspots",
+          "ursachen_ids": [3603],
+          "zitat": "Videoüberwachung an Müll-Hotspots.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=83",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10079,
+          "instrument": 9977,
+          "beschreibung": "Ausreichende Abfallbehälter und Müll-Infrastruktur",
+          "ursachen_ids": [3603],
+          "zitat": "Ausreichende Abfallbehälter und eine funktionierende Müll-Infrastruktur, auch durch den Ausbau und die Weiterentwicklung der bestehenden BSR-Recyclinghöfe.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=84",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10080,
+          "instrument": 9976,
+          "beschreibung": "Schnellere Entfernung von Autowracks, höhere Kosten für Verursacher",
+          "ursachen_ids": [3603],
+          "zitat": "Autowracks müssen für die Verursacher teurer werden und schneller entfernt werden.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=83",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10081,
+          "instrument": 9982,
+          "beschreibung": "Entfernung von Obdachlosencamps nach klaren Regeln",
+          "ursachen_ids": [3603],
+          "zitat": "Obdachlosencamps sollen nach klaren Regeln entfernt werden.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=83",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10082,
+          "instrument": 9978,
+          "beschreibung": "Einbindung von Bürgern und Bildungseinrichtungen in Sauberkeitsmaßnahmen",
+          "ursachen_ids": [3603],
+          "zitat": "Die Einbindung von Bürgern und Bildungseinrichtungen in Umwelt- und Sauberkeitsmaßnahmen.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=84",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10083,
+          "instrument": 9980,
+          "beschreibung": "Originalgetreue Rekonstruktion stadtbildprägender Bauwerke, u. a. Altstadt am Molkenmarkt",
+          "ursachen_ids": [3603],
+          "zitat": "Deshalb setzen wir uns für die originalgetreue Rekonstruktion stadtbildprägender Bauwerke ein. Dies betrifft insbesondere die Schinkelsche Bauakademie sowie eine Wiederbebauung der Berliner Altstadt am Molkenmarkt.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=88",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3602, 3603, 3604],
+      "massnahmen": [
+        {
+          "id": 10084,
+          "instrument": 9972,
+          "beschreibung": "Ladenschlusszeiten und Bäderverkaufsverordnung liberalisieren, mehr verkaufsoffene Sonntage, mehr touristische Orte in der Bäderverkaufsverordnung",
+          "ursachen_ids": [3604],
+          "zitat": "Wir stehen für eine Liberalisierung der Ladenschlusszeiten und der Bäderverkaufsverordnung, mehr verkaufsoffene Sonntage und eine Erweiterung der touristischen Orte in der Bäderverkaufsverordnung.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=13",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10085,
+          "instrument": 9964,
+          "beschreibung": "Förderung von Sanierung und Umbau von Leerständen, damit daraus neuer Wohnraum entsteht",
+          "ursachen_ids": [3602],
+          "zitat": "Leerstände machen wir durch Förderung von Sanierungen und Umbauten nutzbar, so entsteht neuer Wohnraum ohne zusätzlichen Flächenfraß.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=90",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10086,
+          "instrument": 9980,
+          "beschreibung": "Bei öffentlichen Bauten soll auf einen architektonischen Heimatstil geachtet werden",
+          "ursachen_ids": [3603],
+          "zitat": "Die öffentliche Hand prägt mit Bauvorhaben maßgeblich Innenstädte und Infrastruktur. […] Bei öffentlichen Bauten soll in Zukunft auf einen architektonischen Heimatstil geachtet werden.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=89",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3602, 3603, 3604],
+      "massnahmen": [
+        {
+          "id": 10087,
+          "instrument": 9980,
+          "beschreibung": "Kredite zu Sonderkonditionen für die Sanierung von Altbauten in historischen Innenstadtbereichen ermöglichen.",
+          "ursachen_ids": [3603],
+          "zitat": "In Sachsen-Anhalt verfügen viele Städte über eine gute Altbausubstanz, vor allem in den historischen Innenstadtbereichen. […] Eine AfD-geführte Landesregierung wird die Kreditvergabe zu Sonderkonditionen für die Sanierung dieser Altbausubstanz […]",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=58",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10088,
+          "beschreibung": "Ortsumfahrungen schneller realisieren, um die Ortskerne zu entlasten.",
+          "ursachen_ids": [3603],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Weniger Durchgangsverkehr kann den Ortskern aufwerten, Erfahrungen zeigen aber auch Kaufkraftverlust durch weniger Passanten. Planung und Bau dauern Jahre, teils Bundes- und Kreisstraßen.",
+          "zitat": "Aber auch Ortsumfahrungen müssen schneller realisiert werden, um die Ortskerne zu entlasten.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=198",
+          "evidenz": "gemischt",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "durchsucht_fuer": [3601, 3602, 3603, 3604],
+      "massnahmen": [
+        {
+          "id": 10089,
+          "beschreibung": "Innenstädte autofrei machen, mit Ausnahmen für Menschen mit besonderen Bedarfen und den Lieferverkehr.",
+          "ursachen_ids": [3604, 3603],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Autofreie Zentren steigern oft Aufenthaltsqualität und Fußgängerfrequenz; Händler befürchten Umsatzverluste und Erreichbarkeitsprobleme, Ausnahmen für Lieferung mindern das. Entscheiden müssen Kommunen, der Bund setzt Verkehrsrecht.",
+          "zitat": "Wir setzen uns für autofreie Innenstädte ein – selbstverständlich mit Ausnahmen für Menschen mit besonderen Bedarfen oder für den Lieferverkehr.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=44",
+          "evidenz": "gemischt",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10090,
+          "beschreibung": "Hilfsangebote und Sozialarbeit für Obdachlose und Suchtabhängige statt Verdrängung aus den Innenstädten.",
+          "ursachen_ids": [3603],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Sozialarbeit und Hilfen verringern Konflikte im öffentlichen Raum nachhaltiger als Verdrängung, der Effekt auf Einkaufsangebote ist aber indirekt und kaum untersucht. Zuständig sind Länder und Kommunen.",
+          "zitat": "Obdachlosen und Suchtabhängigen ist nicht mit einer Verdrängung aus den Innenstädten geholfen, vielmehr benötigen sie bessere Hilfsangebote und eine Stärkung der Sozialarbeit.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=48",
+          "evidenz": "offen",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10091,
+          "beschreibung": "Leerstehendes Gewerbe wie Einkaufszentren und Warenhäuser in kommunale oder genossenschaftliche Hand überführen und zu Sorgezentren umbauen.",
+          "ursachen_ids": [3602],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Öffentliche Übernahme sichert Nachnutzung großer Leerstandsobjekte, ist aber teuer und betrifft wenige Standorte; Erfahrungen mit Sorgezentren fehlen. Bund kann nur mit Programmen und Geld beitragen, Umsetzung liegt bei Kommunen.",
+          "zitat": "Um die Nahversorgung im Wohnumfeld zu sichern, wollen wir leerstehendes Gewerbe (insbesondere große Gewerbeflächen wie Shoppingmalls oder Warenhäuser) in kommunale oder genossenschaftliche Hand überführen und zu Sorgezentren umgestalten.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=45",
+          "evidenz": "offen",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3602, 3603, 3604],
+      "massnahmen": [
+        {
+          "id": 10092,
+          "beschreibung": "Leer gefallene Shoppingcenter in die öffentliche Hand überführen und gemeinschaftlich als Quartiers-Sorgezentren betreiben.",
+          "ursachen_ids": [3602],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Öffentliche Übernahme sichert Nachnutzung großer Leerstandsobjekte, ist aber teuer und betrifft nur wenige Standorte; Erfahrungen mit kommunalen Sorgezentren fehlen weitgehend. Finanzierung und Erwerb sind aufwendig.",
+          "zitat": "Insbesondere leer gefallene Shoppingcenter wollen wir dafür in die öffentliche Hand überführen und gemeinschaftlich […] betreiben.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=43",
+          "evidenz": "offen",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10093,
+          "beschreibung": "Keine neuen Shopping-Center genehmigen, um Kleingewerbe vor Verdrängung zu schützen.",
+          "ursachen_ids": [3602],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Begrenzung neuer Shopping-Center kann Kleingewerbe und Zentren schützen (Zentrenverträglichkeit), löst bestehenden Leerstand aber nicht. Genehmigung liegt bei den Kommunen, Land kann nur über Planungsrecht lenken.",
+          "zitat": "Da Berlin schon jetzt ein Überangebot an Shopping-Centern aufweist, die zu einer Verdrängung von Kleingewerbe führen, schlagen wir vor, dass keine solchen neu genehmigt werden.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=50",
+          "evidenz": "gemischt",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10094,
+          "instrument": 9964,
+          "beschreibung": "Leerstehende Bürogebäude umnutzen, mit Bundesfördermitteln und einem neuen Landesförderprogramm.",
+          "ursachen_ids": [3602],
+          "zitat": "Stattdessen setzen wir uns für die Umnutzung bereits bestehender, leer stehender Bürogebäude ein, nutzen dafür zur Verfügung stehende Fördermittel auf Bundesebene und schaffen ein Landesförderprogramm.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=49",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10095,
+          "instrument": 9967,
+          "beschreibung": "Ein Leerstandskataster zur systematischen Erfassung von Leerstand einführen.",
+          "ursachen_ids": [3602],
+          "zitat": "Außerdem wollen wir die Einführung eines Leerstandskatasters zur systematischen Bestandserfassung von Leerstand.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=49",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10096,
+          "beschreibung": "Bundesgesetz gegen Gewerbeleerstand (Zweckentfremdungsverbot für Gewerbe) fordern, um Leerstand zu sanktionieren.",
+          "ursachen_ids": [3602],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Sanktionen gegen Gewerbeleerstand könnten Eigentümer zur Vermietung drängen; Erfahrungen mit Gewerbe sind kaum vorhanden. Land kann nur über den Bundesrat anstoßen, Eigentumsrechte sind eine Hürde.",
+          "zitat": "Wir fordern außerdem auf Bundesebene ein Zweckentfremdungsverbotsgesetz für Gewerbe, um Leerstand konsequent zu sanktionieren.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=49",
+          "evidenz": "offen",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10097,
+          "instrument": 9969,
+          "beschreibung": "Stadtentwicklungsplan Zentren neu auflegen, Zentren als Daseinsvorsorge verstehen.",
+          "ursachen_ids": [3602],
+          "zitat": "Den Stadtentwicklungsplan (StEP) Zentren werden wir neu auflegen – mit einer neuen Bedeutung von Zentrum als Daseinsvorsorge und nicht als „hohe kommerzielle Aktivität“.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=50",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10098,
+          "instrument": 9963,
+          "beschreibung": "Über den Bundesrat eine dauerhafte gesetzliche Begrenzung der Gewerbemieten vorschlagen.",
+          "ursachen_ids": [3602],
+          "zitat": "Immer mehr Läden, insbesondere Gastronomie und Einzelhandel, aber auch Kitas und andere Einrichtungen, sind dadurch von Verdrängung bedroht. Wir werden über den Bundesrat eine dauerhafte Begrenzung der Gewerbemieten per Gesetz vorschlagen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=89",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10099,
+          "instrument": 9971,
+          "beschreibung": "Erhalt der Galeria-Warenhaus-Standorte in der City West, behutsame Weiterentwicklung mit Beteiligung.",
+          "ursachen_ids": [3602],
+          "zitat": "Wir setzen uns für den Erhalt der dortigen Galeria-Warenhaus-Standorte, eine behutsame Weiterentwicklung der Objekte unter Beteiligung der Anwohner*innen und der benachbarten Gewerbetreibenden ein.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=48",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10100,
+          "instrument": 9981,
+          "beschreibung": "Am Alexanderplatz einen Nutzungsmix (vor allem Kultur) und eine ansprechende Gestaltung ermöglichen, damit der Platz wieder Aufenthaltsqualität hat.",
+          "ursachen_ids": [3602, 3603],
+          "zitat": "Die Innenstadt muss Lebensraum für alle sein und braucht eine hohe Aufenthaltsqualität. […] Der Alexanderplatz ist für viele Berliner*innen ein zentraler Ort. Damit der Platz Aufenthaltsqualität zurückerhält, wollen wir einen Nutzungsmix insbesondere mit Kultur und eine ansprechende Gestaltung ermöglichen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=47",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10101,
+          "instrument": 9971,
+          "beschreibung": "Die Zentrale Landesbibliothek soll in das Galeria-Warenhaus am Alexanderplatz einziehen.",
+          "ursachen_ids": [3602],
+          "zitat": "In das Warenhaus Galeria soll auch die Zentrale Landesbibliothek (ZLB) einziehen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=47",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10102,
+          "instrument": 9961,
+          "beschreibung": "Die kulturelle Nutzung leerstehender Immobilien erleichtern und Zwischennutzungen ausweiten.",
+          "ursachen_ids": [3602],
+          "zitat": "Wir wollen die kulturelle Nutzung leer stehender Immobilien erleichtern und Zwischennutzungen ausweiten.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=238",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10103,
+          "instrument": 9955,
+          "beschreibung": "Fahr- und Stellflächen für den Autoverkehr reduzieren, besonders in Einkaufsstraßen, für mehr Platz und Aufenthalt für Fußgänger*innen.",
+          "ursachen_ids": [3603, 3604],
+          "zitat": "Mehr Platz und mehr Aufenthaltsqualität für Fußgänger*innen schaffen wir durch die Reduzierung von Fahr- und Stellflächen für den Autoverkehr, besonders in großen lebendigen Einkaufsstraßen, Flaniermeilen und Kiezblocks.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=66",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10104,
+          "beschreibung": "Die Zahl der verkaufsoffenen Sonntage reduzieren; eine Aufweichung des Sonntagsöffnungsverbots lehnen wir ab.",
+          "ursachen_ids": [3604],
+          "wirksamkeit": 0,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Weniger verkaufsoffene Sonntage verkürzen die Öffnungszeiten des stationären Handels und wirken dem Ziel entgegen; Studien zeigen allenfalls geringe Effekte der Sonntagsöffnung. Landesrecht, leicht umsetzbar.",
+          "zitat": "Eine Aufweichung des Verbots der Sonntagsöffnung für den Einzelhandel insbesondere durch digitale Kleinstsupermärkte lehnen wir ab, die Zahl der verkaufsoffenen Sonntage wollen wir reduzieren.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=95",
+          "evidenz": "gemischt",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3602, 3603, 3604],
+      "massnahmen": [
+        {
+          "id": 10105,
+          "instrument": 9969,
+          "beschreibung": "Stadtprofile stärken und Innenstädte als lebendige Orte sichern (Grenzfall: Ansiedlung/Nutzungsmischung oder Aufenthalt)",
+          "ursachen_ids": [3602, 3603],
+          "zitat": "Stadtprofile stärken, Innenstädte als lebendige Orte sichern und Stadt-Umland-Kooperationen ausbauen.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=26",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3602, 3603, 3604],
+      "massnahmen": [
+        {
+          "id": 10106,
+          "instrument": 9964,
+          "beschreibung": "Stadtumbauprogramm bis 2035 gegen Leerstand: Rückbau und Aufwertung im Bestand finanzieren.",
+          "ursachen_ids": [3602, 3603],
+          "zitat": "Wir wollen: […] gegen den Leerstand die Auflage eines neuen Stadtumbauprogramms bis 2035 für den Rückbau und Aufwertung im Bestand finanzieren.",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=85",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "durchsucht_fuer": [3601, 3602, 3603, 3604],
+      "massnahmen": [
+        {
+          "id": 10107,
+          "beschreibung": "Sichere Radwege in der Innenstadt schaffen, zusammen mit attraktivem öffentlichem Nah- und Fernverkehr.",
+          "ursachen_ids": [3604],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Sichere Radwege und guter ÖPNV erleichtern die Anreise, der Zusammenhang mit Geschäftsbesatz ist indirekt. Zuständig sind Länder und Kommunen; der Bund kann über Programme beitragen.",
+          "zitat": "Wir wollen eine Verkehrspolitik, die für alle Verkehrsteilnehmer da ist – vom Autofahrer bis zum Fußgänger. Dafür braucht es sichere Radwege in der Innenstadt ebenso wie einen attraktiven öffentlichen Nah- und Fernverkehr und intakte Straßen und Autobahnen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=30",
+          "evidenz": "offen",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3602, 3603, 3604],
+      "keine_massnahme": {
+        "begruendung": "Kapitel Gesundheit (S. 22), Sport (S. 26–27), Sicherheit (S. 38–41), Wohnen (S. 6–8, 12), Verkehr (S. 48–50), Steuern (S. 52–55) und Umwelt und Sauberkeit (S. 56–59) gelesen. Keine konkrete Zusage, die Innenstädte, Ortskerne, Einzelhandel oder Leerstand betrifft.",
+        "stand": "2026-10-14",
+        "treffer": 13,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 17,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3602, 3603, 3604],
+      "massnahmen": [
+        {
+          "id": 10108,
+          "instrument": 9969,
+          "beschreibung": "Standort- und Innenstadtpolitik, die inhabergeführte Geschäfte stärkt, Leerstand reduziert und kleinteilige Versorgungsstrukturen erhält.",
+          "ursachen_ids": [3602],
+          "zitat": "Lebendigkeit der Innenstädte und Ortskerne erhalten und fördern durch eine aktive Standort- und Innenstadtpolitik, die inhabergeführte Geschäfte stärkt, Leerstand reduziert und kleinteilige Versorgungsstrukturen erhält.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=33",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3602, 3603, 3604],
+      "massnahmen": [
+        {
+          "id": 10109,
+          "instrument": 9975,
+          "beschreibung": "Mehr sichtbare Polizeipräsenz für sichere, attraktive öffentliche Räume",
+          "ursachen_ids": [3603],
+          "zitat": "Wir setzen uns für mehr sichtbare Polizeipräsenz, klare rechtliche Befugnisse, soziale Gerechtigkeit und ausreichende Mittel für attraktive Innenstädte, lebenswerte Quartiere und starke ländliche Räume ein.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=67",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10110,
+          "beschreibung": "Ausreichende Mittel für attraktive Innenstädte und lebenswerte Quartiere",
+          "ursachen_ids": [3603],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Allgemeine Mittelzusage ohne Verwendungszweck; Wirkung hängt vom Einsatz ab und ist nicht abschätzbar. Finanzierung im Landeshaushalt nicht festgelegt.",
+          "zitat": "Wir setzen uns für mehr sichtbare Polizeipräsenz, klare rechtliche Befugnisse, soziale Gerechtigkeit und ausreichende Mittel für attraktive Innenstädte, lebenswerte Quartiere und starke ländliche Räume ein.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=67",
+          "evidenz": "offen",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10111,
+          "instrument": 9962,
+          "beschreibung": "Konsequente Nutzung kommunaler Vorkaufsrechte gegen Leerstand und Spekulation im Rahmen der Gemeindeentwicklung",
+          "ursachen_ids": [3602],
+          "zitat": "Das BSW setzt auf eine ganzheitliche Gemeindeentwicklung und die Stärkung lokaler Handlungsfähigkeit, etwa durch die konsequente Nutzung kommunaler Vorkaufsrechte gegen Leerstand und Spekulation.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=34",
+          "stand": "2026-10-14",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    }
   ]
 }

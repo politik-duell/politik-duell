@@ -1,0 +1,61 @@
+{
+  "partei_id": 12,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Gemeinsame Initiativen von Kommunen und Wirtschaft sollen Stadt- und Ortszentren stärken.",
+      "ursachen_ids": [3602],
+      "zitat": "Stadt- und Ortszentren werden durch gemeinsame Initiativen von Kommunen und Wirtschaft gestärkt.",
+      "seite": 6
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 3603,
+      "seiten": [24, 30, 44],
+      "grund": "Hitzeschutz-Plätze, Sicherheitsgefühl und Bürgerbeteiligung in der Stadtentwicklung: kein Innenstadt-, Ortskern- oder Einzelhandelsbezug (R2); Sicherheitssatz ist Wirkungsaussage ohne Zusage."
+    },
+    {
+      "ursache": 3604,
+      "seiten": [27, 28, 40, 41, 42],
+      "grund": "Öffnungszeiten nur für Kitas und Bibliotheken (Sonntagsöffnung); ÖPNV-, Bahn- und Radangebote ohne Innenstadtbezug (R2)."
+    }
+  ],
+  "eigene_synonyme": [
+    {
+      "begriff": "Ortszentr",
+      "ursache": 3602,
+      "richtung": "Stadt- und Ortszentren stärken"
+    }
+  ]
+}
+
+PROTOKOLL
+
+Gelesen:
+- Volltext: S. 2–8 (Einleitung, Kapitel „Arbeit, Industrie, Energie“, „Gleichwertige Lebensverhältnisse“ auf S. 6, Tourismus S. 7), S. 40–44 (Kapitel „Mobilität, Wohnen und lebendige Orte“, Städte und Dörfer, Wohnen und Städtebau).
+- Gezielt gelesen: S. 11–12 (Ausschnitt), S. 23–24 (Hitzeschutz), S. 27–28 (Kita-Öffnungszeiten), S. 30 (Prävention und kommunale Sicherheit), S. 45–46 (Landwirtschaft, ohne Befund).
+- Übrige Seiten (9–10, 13–22, 25–26, 29, 31–39, 47–61) nur per Stichwortsuche (Innenstadt, Ortskern, Einzelhandel, Handel, Leerstand, Geschäft, Öffnungszeiten, Parken, Verkehr, Aufenthalt, Sauberkeit, Stadtbild, Zentrum u. a.). Kein weiterer Treffer mit Innenstadt-Bezug.
+- Kein Inhaltsverzeichnis im Text (S. 1–6 ohne eigenes Verzeichnis); Seite 1 ist Titelbild ohne Text, außerhalb der Kapitel.
+
+Erfasst:
+- S. 6: „Stadt- und Ortszentren werden durch gemeinsame Initiativen von Kommunen und Wirtschaft gestärkt.“ Zu 3602 (Ansiedlung und Angebot in Ortszentren). Grenzfall: allgemein formuliert, aber mit benannter Maßnahme (gemeinsame Initiativen); im Zweifel aufgenommen.
+
+Nicht erfasst:
+- S. 44: „Bundesmittel der Städtebauförderung werden konsequent kofinanziert. Quartiersmanagement … werden gestärkt.“ Zitat nennt weder Innenstadt noch Ortskern (R2); Städtebauförderung allgemein.
+- S. 44: „Multifunktionshäuser sowie automatisierte und genossenschaftliche Nahversorger sichern Versorgung vor Ort.“ Nahversorgung in Städten und Dörfern, kein Innenstadt-/Ortskern-Begriff (R2). Grenzfall, nicht aufgenommen.
+- S. 44: „Leerstand im ländlichen Raum wird durch gezielte Abrissprogramme reduziert …“ Wohnungsleerstand im ländlichen Raum, keine Geschäfte oder Innenstädte; trifft keine der drei Ursachen.
+- S. 24: „Die Auswahl hellerer Oberflächen … auf Plätzen … Wir wollen bauliche Maßnahmen fördern.“ Hitzeschutz, kein Innenstadt-Bezug (R2). Grenzfall zu 3603 (Gestaltung des öffentlichen Raums), nicht aufgenommen.
+- S. 30: „Städtebauliche Maßnahmen, gute Beleuchtung … erhöhen das Sicherheitsgefühl.“ Wirkungsaussage ohne Zusage, kein Innenstadt-Bezug.
+- S. 40: „Die gesetzliche Ermöglichung der Sonntagsöffnung öffentlicher Bibliotheken wird angestrebt.“ Öffnungszeit einer Bibliothek, kein Ladenbezug (R2).
+- S. 27–28: Kita-Öffnungszeiten („flexible Öffnungszeiten“, „Ausbau“). Keine Einkaufsangebote.
+- S. 41–42: ÖPNV, Bahnhöfe, Park-&-Ride, Fuß- und Radverkehr, Radwege. Allgemeine Mobilität ohne Innenstadt-Bezug (R2).
+- S. 7: Tourismus („Radwege und Bahnverbindungen werden gesichert“). Kein Innenstadt-Bezug.
+- S. 7: Gründungsbonus für Start-ups. Allgemeine Gründungsförderung, kein Innenstadt-Bezug.
+
+Bündel: im Auftrag keine genannt; keine Zuordnung zu Bündeln.
+Richtungen ohne Maßnahme: 3603 und 3604 (siehe nicht_erfasst).
+Seiten ohne Text: S. 1 (Titelbild, außerhalb der Kapitel). Keine Rolle für das Ergebnis.
+Stand im PDF: kein abweichender Stand erkennbar.
+
+Hinweis: Die Selbstprüfung (npm run -s entwurf:programm-pruefen) wurde nicht ausgeführt; die Koordination führt sie aus.

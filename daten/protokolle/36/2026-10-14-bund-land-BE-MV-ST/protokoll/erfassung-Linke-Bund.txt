@@ -1,0 +1,64 @@
+{
+  "partei_id": 16,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Innenstädte autofrei machen, mit Ausnahmen für Menschen mit besonderen Bedarfen und den Lieferverkehr.",
+      "ursachen_ids": [3604],
+      "ursachen_offen": [3603],
+      "buendel": "Erreichbarkeit mit dem Auto und Parkplätze",
+      "zitat": "Wir setzen uns für autofreie Innenstädte ein – selbstverständlich mit Ausnahmen für Menschen mit besonderen Bedarfen oder für den Lieferverkehr.",
+      "seite": 44
+    },
+    {
+      "beschreibung": "Hilfsangebote und Sozialarbeit für Obdachlose und Suchtabhängige statt Verdrängung aus den Innenstädten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [3603],
+      "neue_buendel": [{ "ursache": 3603, "name": "Hilfsangebote und Sozialarbeit statt Verdrängung", "seite": 48 }],
+      "zitat": "Obdachlosen und Suchtabhängigen ist nicht mit einer Verdrängung aus den Innenstädten geholfen, vielmehr benötigen sie bessere Hilfsangebote und eine Stärkung der Sozialarbeit.",
+      "seite": 48
+    },
+    {
+      "beschreibung": "Leerstehendes Gewerbe wie Einkaufszentren und Warenhäuser in kommunale oder genossenschaftliche Hand überführen und zu Sorgezentren umbauen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [3602],
+      "buendel": "Nutzungsmischung und Ansiedlung fördern",
+      "zitat": "Um die Nahversorgung im Wohnumfeld zu sichern, wollen wir leerstehendes Gewerbe (insbesondere große Gewerbeflächen wie Shoppingmalls oder Warenhäuser) in kommunale oder genossenschaftliche Hand überführen und zu Sorgezentren umgestalten.",
+      "seite": 45
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3601, "seiten": [8, 14, 56, 57], "grund": "Kein Wettbewerbs- oder Digitalisierungsthema zwischen Online- und stationärem Handel: Finanzregeln für Amazon/Paypal (S. 14), Haftung für Onlinemarktplätze als Verbraucherschutz (S. 56), Digitalisierung ohne Bezug zum lokalen Handel (S. 57); Kleingewerbe-Mieten (S. 8) ohne Bezug zum Online-Handel." }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "autofreie Innenstädte", "ursache": 3604, "richtung": "Erreichbarkeit mit dem Auto und Parkplätze" },
+    { "begriff": "leerstehendes Gewerbe", "ursache": 3602, "richtung": "Nutzungsmischung und Ansiedlung fördern" }
+  ]
+}
+
+Protokoll – Linke (Bund), Thema 36 „Leerstand und Geschäftsschließungen in Innenstädten“
+
+Gelesen: Inhaltsverzeichnis (S. 2–3); Kapitel 1 Wohnen und Mieten (S. 8–9, Kleingewerbe-Mieten und Leerstand); Kapitel 3 (S. 13–14, Amazon/Paypal); Kapitel 9 Mobilität (S. 36–37); Kapitel 12 „Planbares Leben und starke Kommunen“ (S. 44–45) vollständig; Fundstellen S. 32 (Ladepunkte im Einzelhandel), S. 44 (Fußwege); Stellen zu Sicherheit und Obdachlosigkeit (S. 48), Sonntagsschutz (S. 50), Lichtwerbung und Verbraucherschutz (S. 34, S. 56), Digitalisierung (S. 57). Volltextsuche nach Innenstadt, Einzelhandel, Ortskern, Leerstand, Geschäft, Stadtbild, Onlinehandel u. a. ausgewertet.
+
+Maßnahmen: Die Stelle „autofreie Innenstädte“ (S. 44) steht bei 3604 (Erreichbarkeit mit dem Auto); weil sie auch den Straßenraum und die Aufenthaltsqualität betrifft, zusätzlich offen bei 3603. Die Hilfs- und Sozialarbeit-Stelle (S. 48) ist als Grenzfall bei 3603 offen. Das leerstehende Gewerbe zu Sorgezentren (S. 45) ist als Grenzfall bei 3602 offen, weil es Umnutzung von Leerstand betrifft, aber kein Wort zu Innenstädten enthält, sondern zur Nahversorgung im Wohnumfeld.
+
+Nicht erfasst (gelesen, nicht aufgenommen):
+- S. 8: Mietendeckel für Kleingewerbe, Handwerk u. a. – Zitat nennt weder Innenstadt, Ortskern, Einzelhandel noch Leerstand (R2).
+- S. 9: Leerstandsabgabe für Wohnungen – Wohnen, kein Innenstadtgeschäft (R2).
+- S. 14: Finanzregeln für Amazon und Paypal – Finanzaufsicht, kein Handelswettbewerb (3601).
+- S. 34, S. 56: Einschränkung von Lichtwerbung – kein Innenstadt- oder Ortskernbezug (R2).
+- S. 36: stündliche Anbindung jeder Ortschaft, Bürgerbus, 0-Euro-Ticket – kein Innenstadtbezug (R2).
+- S. 44: Infrastrukturgarantie (Bus, Bäcker, Geldabheben, Arztpraxen) „in jedem Ort“ – kein Innenstadt-, Ortskern- oder Einzelhandelsbezug (R2).
+- S. 44–45: Fuß- und Radwege, Fahrradabstellanlagen, Platz auf den Straßen, 15-Minuten-Versorgung – ohne Innenstadtbezug im Zitat (R2); nur im Satz zur autofreien Innenstadt genannt, daher nicht eigene Maßnahme.
+- S. 45: Parks, Grünflächen, öffentliche Toiletten, Begrünung „in den Städten“ – allgemein, kein Innenstadtbezug (R2); Grenzfall für 3603.
+- S. 45: pünktliche, kostenfreie Busse und Bahnen „für alle Städte und Gemeinden“ – kein Innenstadtbezug (R2).
+- S. 48: „Sicherheit muss stadtteilgerecht sein“, Sicherheitskonzepte im öffentlichen Raum – allgemeine Prinzipien, keine konkrete Maßnahme.
+- S. 32: Ladepunkte an Tankstellen, im Einzelhandel und am Arbeitsplatz – Elektromobilität, nicht Innenstadt (R2).
+- S. 50: Unterstützung des erwerbsarbeitsfreien Sonntags – Öffnungszeiten, aber kein Innenstadt- oder Einzelhandelsbezug (R2).
+- S. 56: Haftung für Onlinemarktplätze – Verbraucherschutz, kein Wettbewerb zwischen Online- und stationärem Handel.
+
+Richtungen ohne Maßnahme: 3601 „Lokalen Handel stärken und Wettbewerb angleichen“ und „Digitale Vertriebswege und Flächenanpassung“; 3602 „Marktprofile und Wettbewerb“; 3603 „Sauberkeit, Sicherheit und Instandhaltung“ (nur allgemeine Sicherheitsprinzipien); 3604 „Öffnungszeiten und zeitliche Zugänglichkeit“ und „Nahmobilität und öffentlicher Verkehr“ (ohne Innenstadtbezug).
+
+Seiten ohne Text: S. 1, 59, 60 – Titelseite und Anhang, ohne Relevanz.
+
+Hinweis: Die Richtungen des Auftrags sind hier als Bündel verwendet (buendel); eine Bündelbezeichnung ist nur gesetzt, wenn die Stelle genau zu dieser Richtung gehört.

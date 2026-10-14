@@ -1,0 +1,65 @@
+{
+  "partei_id": 17,
+  "land": "MV",
+  "massnahmen": [
+    {
+      "beschreibung": "Standort- und Innenstadtpolitik, die inhabergeführte Geschäfte stärkt, Leerstand reduziert und kleinteilige Versorgungsstrukturen erhält.",
+      "ursachen_ids": [3602],
+      "buendel": "Nutzungsmischung und Ansiedlung fördern",
+      "zitat": "Lebendigkeit der Innenstädte und Ortskerne erhalten und fördern durch eine aktive Standort- und Innenstadtpolitik, die inhabergeführte Geschäfte stärkt, Leerstand reduziert und kleinteilige Versorgungsstrukturen erhält.",
+      "seite": 33
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 3603,
+      "seiten": [67, 76],
+      "grund": "Nur Polizeipräsenz und Videoüberwachung im öffentlichen Raum (S. 67) ohne Innenstadtbezug; nichts zu Aufenthaltsqualität, Verkehrsberuhigung, Begrünung oder Sauberkeit in Innenstädten."
+    },
+    {
+      "ursache": 3604,
+      "seiten": [33, 37, 87, 88, 90],
+      "grund": "ÖPNV, Straßen, Park-and-Ride und Radwege nur allgemein oder für Tourismus, ohne Innenstadt-, Einzelhandels- oder Leerstandsbezug (R2); keine Aussage zu Parkgebühren oder Ladenöffnungszeiten."
+    }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "inhabergeführte", "ursache": 3602, "richtung": "Stärkung inhabergeführter Geschäfte in Innenstädten" },
+    { "begriff": "Ortskern", "ursache": 3602, "richtung": "Erhalt der Lebendigkeit von Innenstädten und Ortskernen" }
+  ]
+}
+
+--- Protokoll ---
+
+Thema 36 „Leerstand und Geschäftsschließungen in Innenstädten“, BSW MV (Stand laut Auftrag 2026-03-14).
+
+Gelesen:
+- Einleitung S. 1 (nur Ziel-Aussagen, keine Maßnahme).
+- Inhaltsverzeichnis S. 2–5.
+- Kapitel 2 Soziale Gerechtigkeit, Wohnungsfrage S. 19–21 (S. 21: Leerstand nur bei Wohnraum).
+- Kapitel 3 Wirtschaftliche Vernunft S. 22–37 (Standortpolitik, Regionale Wertschöpfung S. 31–33, Gründung und Nachfolge S. 34–36, Tourismus-Beginn S. 36–37).
+- Kapitel 7 Kommunen S. 73–76 (Infrastruktur, Verwaltung).
+- Kapitel 9 Mobilität S. 87–90 (ÖPNV, Straßen).
+- S. 67 (Polizei, Videoüberwachung im öffentlichen Raum).
+- Für die übrigen Seiten: Volltext-Stichwortsuche (Innenstadt, Ortskern, Einzelhandel, Leerstand, Geschäft, Laden, Öffnungszeit, Parken, Aufenthalt, Sauberkeit, Begrünung, Stadtbild u. a.). Keine weiteren Treffer mit Innenstadt-Bezug.
+- S. 43 (fast ohne Text) liegt in Bildung, außerhalb der passenden Kapitel.
+
+Erfasst:
+- S. 33: Innenstadt- und Ortskernpolitik (inhabergeführte Geschäfte stärken, Leerstand reduzieren, Versorgungsstrukturen erhalten) → Ursache 3602, Bündel „Nutzungsmischung und Ansiedlung fördern“. Die Stelle ist die einzige konkrete Aussage zu Innenstadtgeschäften. Sie steht in einer Zielliste; als Grenzfall im Zweifel aufgenommen, weil sie eine konkrete Ausrichtung der Innenstadtpolitik nennt und Innenstadt, Geschäfte und Leerstand benennt (R2).
+
+Richtungen ohne Maßnahme:
+- 3603 (Aufenthaltsqualität, Sauberkeit, Sicherheit): keine Maßnahme mit Innenstadt-Bezug.
+- 3604 (Erreichbarkeit, Parken, Nahmobilität, Öffnungszeiten): keine Maßnahme mit Innenstadt-Bezug.
+
+Nicht erfasst:
+- S. 21: Wohnungsleerstand („Leerstand entgegenzuwirken“) – Wohnraum, kein Ladenleerstand.
+- S. 33: „fairer Wettbewerb … große Handelsketten und digitale Plattformen“ – kein Innenstadt-, Einzelhandels- oder Leerstandsbezug nach R2; Ursache 3602 nicht eindeutig betroffen.
+- S. 19: Anreize zur Ansiedlung von Unternehmen im ländlichen Raum – kein Innenstadtbezug.
+- S. 34–36: Gründung, Nachfolge, Landesfonds – allgemein, ohne Innenstadtbezug.
+- S. 67, 87–90: Polizei, ÖPNV, Straßen – allgemein, ohne Innenstadtbezug (siehe nicht_erfasst).
+- S. 37: Radwege für touristische Mobilität – Tourismus, kein Innenstadtbezug.
+
+Eigene Synonyme: „inhabergeführt“ und „Ortskern“ stehen im Programm für die Richtung der Ursache 3602, fehlen aber in der Suche.
+
+Neue Bündel: keine.
+
+Hinweis: Die Selbstprüfung (npm run -s entwurf:programm-pruefen) konnte in dieser Umgebung nicht ausgeführt werden (keine Shell). Die Datei ist deshalb ungeprüft; die Koordination führt die Prüfung aus.

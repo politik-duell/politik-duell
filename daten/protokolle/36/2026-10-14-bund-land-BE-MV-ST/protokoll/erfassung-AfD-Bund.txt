@@ -1,0 +1,60 @@
+{
+  "partei_id": 15,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Versandhandel mit rezeptpflichtigen Medikamenten verbieten",
+      "ursachen_ids": [3601],
+      "buendel": "Lokalen Handel stärken und Wettbewerb angleichen",
+      "zitat": "Den Versandhandel mit rezeptpflichtigen Medikamenten lassen wir nicht mehr zu, da er zu Wettbewerbsverzerrungen beiträgt.",
+      "seite": 29
+    },
+    {
+      "beschreibung": "Erhalt und Ausbau innerstädtischer Fahrspuren und Parkraum, zum Schutz des Einzelhandels",
+      "ursachen_ids": [3604],
+      "buendel": "Erreichbarkeit mit dem Auto und Parkplätze",
+      "zitat": "Gleichzeitig fordert die AfD den Erhalt und Ausbau von innerstädtischen Fahrspuren und Parkraum zur Vermeidung von wachsendem Verkehrschaos sowie zum Schutz der Attraktivität des Einzelhandels.",
+      "seite": 43
+    },
+    {
+      "beschreibung": "Historische Innenstädte bewahren und bei Bedarf rekonstruieren",
+      "ursachen_ids": [3603],
+      "zitat": "Die Schönheit historischer Innenstädte muss bewahrt und bei Bedarf durch Rekonstruktionen wiederhergestellt werden.",
+      "seite": 172
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 3602,
+      "seiten": [36, 37, 38, 39, 40, 41],
+      "grund": "Kapitel Bauen und Wohnen gelesen; nur Wohnungsbau, Baurecht, Eigentum und Wohngeld. Nichts zu Sortiment, Ansiedlung oder Nutzungsmischung in Innenstädten."
+    }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "Versandhandel", "ursache": 3601, "richtung": "Lokalen Handel stärken und Wettbewerb angleichen" },
+    { "begriff": "innerstädtischen Fahrspuren", "ursache": 3604, "richtung": "Erreichbarkeit mit dem Auto und Parkplätze" }
+  ],
+  "neue_buendel": [
+    { "ursache": 3603, "name": "Bewahrung und Rekonstruktion historischer Innenstädte", "seite": 172 }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis (S. 3–5); Kapitel Bauen, Wohnen, Infrastruktur (S. 36–41); Verkehr (S. 42–46); Wirtschaft/Soziale Marktwirtschaft (S. 13–15, Ausschnitt); Gesundheit Arzneimittel (S. 29); Kultur (S. 172); Fundstellen S. 43, 46, 79.
+
+Erfasst:
+- S. 29: Verbot des Versandhandels mit rezeptpflichtigen Medikamenten, begründet mit Wettbewerbsverzerrung. Grenzfall: Zuordnung zu 3601 (Wettbewerb Online/stationär), nicht Innenstadt-bezogen; im Zweifel aufgenommen.
+- S. 43: Erhalt und Ausbau innerstädtischer Fahrspuren und Parkraum, begründet mit Attraktivität des Einzelhandels. 3604 (Erreichbarkeit).
+- S. 172: „Die Schönheit historischer Innenstädte muss bewahrt und bei Bedarf durch Rekonstruktionen wiederhergestellt werden.“ Grenzfall: überwiegend Leitbild, aber mit konkreter Handlung (Rekonstruktion) und Innenstadtbezug; im Zweifel aufgenommen. Kein Bündel passt; als neues Instrument gemeldet.
+
+Nicht erfasst:
+- S. 43: „Wissenschaftlich mangelhaft belegte Maßnahmen, wie … Tempo-30-Regelungen auf Hauptstraßen, erreichen das nicht.“ Ablehnung ohne Innenstadtbezug im Satz, Nähe zu Umwelt- und Verkehrsfluss; R2.
+- S. 42–43: „Die AfD unterstützt und fördert den motorisierten Individualverkehr“, „Individuelle Mobilität muss bezahlbar bleiben“: Autofahren allgemein (R2), kein Innenstadtbezug.
+- S. 15 (Liste), Gastronomie-Mehrwertsteuer: Steuersatz für Gastronomie, nicht Einzelhandel oder Innenstadt (R1/R2); nur über die Suche gesehen.
+- S. 14 („Strangulierende Bürokratie …“), S. 122 (No-go-Areas, Stadtteile ohne Innenstadtbezug), S. 40 (ÖPNV im ländlichen Raum), S. 46 (Bahn-Sauberkeit), S. 79 (Instandhaltung nach Hochwasser): nicht Innenstadt bzw. nicht passende Ursache.
+- Handelspolitik S. 93 (Außenhandel) und Digitalisierung (S. 46–51, nur über die Suche geprüft): kein Bezug zum lokalen Handel.
+
+Richtungen ohne Maßnahme: „Ansiedlung, Nutzungsmischung, Leerstand“ (3602) – nichts. „Digitale Vertriebswege und Flächenanpassung“ (3601) – nichts außer Versandhandel. „Aufenthaltsqualität und Verkehrsberuhigung“ (3603), „Sauberkeit, Sicherheit und Instandhaltung“ (3603) – nichts zu Innenstadt-Aufenthalt, Sauberkeit oder Sicherheit. „Marktprofile und Wettbewerb“ (3602) – nichts. „Nahmobilität und öffentlicher Verkehr“ (3604) – nur ÖPNV im ländlichen Raum (S. 40), kein Innenstadtbezug. „Öffnungszeiten“ (3604) – nichts gefunden.
+
+Seiten ohne Text: keine in den gelesenen Kapiteln mit Innenstadt-Bezug.

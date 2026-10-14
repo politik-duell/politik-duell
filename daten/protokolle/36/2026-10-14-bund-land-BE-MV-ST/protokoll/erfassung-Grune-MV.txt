@@ -1,0 +1,99 @@
+{
+  "partei_id": 13,
+  "land": "MV",
+  "stand_im_pdf": "Stand: 16.07.2026 (Titelseite); Auftrag nennt Stand 2026-06-06",
+  "massnahmen": [
+    {
+      "beschreibung": "Leerstand kommunal managen (Leerstands- und Brachflächenmanagement) und temporäre Zwischennutzungen fördern.",
+      "ursachen_ids": [3602],
+      "buendel": "Nutzungsmischung und Ansiedlung fördern",
+      "zitat": "Für mehr Tempo bei der Schaffung von Wohnraum wollen wir: […] Leerstand aktiv managen, etwa durch kommunales Leerstands- und Brachflächenmanagement sowie die Förderung temporärer Zwischennutzungen.",
+      "seite": 52
+    },
+    {
+      "beschreibung": "Umwandlung leerstehender Gewerberäume in Wohnraum erleichtern (zusammen mit Dachaufstockungen und Ausbauten).",
+      "ursachen_ids": [],
+      "ursachen_offen": [3602],
+      "zitat": "Für mehr Tempo bei der Schaffung von Wohnraum wollen wir: […] den Gebäudebestand und die vorhandene Infrastruktur effizienter nutzen, etwa durch erleichterte Dachaufstockungen und -ausbauten sowie die Umwandlung leerstehender Gewerberäume in Wohnraum.",
+      "seite": 52
+    },
+    {
+      "beschreibung": "Landeswohnraumförderung aufstocken und reformieren, unter anderem um Leerstand in zentralen Ortslagen zu aktivieren.",
+      "ursachen_ids": [],
+      "ursachen_offen": [3602],
+      "zitat": "Wir fördern bezahlbares Wohnen, indem wir: […] das Landeswohnraumförderprogramm „Wohnungsbau Sozial“ aufstocken und reformieren, unter anderem durch zinsgünstigere Darlehen und höhere Tilgungszuschüsse für Sozialwohnungen, eine möglichst lange Mietpreisbindung sowie die Einführung neuer Fördersparten für altersgerechte, bezahlbare Wohnformen und die Aktivierung von Leerstand in zentralen Ortslagen.",
+      "seite": 53
+    },
+    {
+      "beschreibung": "Landesprogramme für Bestandsimmobilien auflegen, um Dorfkerne zu beleben und alte Gebäude zu sanieren.",
+      "ursachen_ids": [],
+      "ursachen_offen": [3602],
+      "zitat": "Wir fördern bezahlbares Wohnen, indem wir: […] ein Landesprogramm „Neuer Schwung für alte Orte“ sowie „Jung kauft Alt“ aufsetzen, um Bestandsimmobilien für junge Familien zu erschließen, Dorfkerne zu beleben und die Sanierung alter Gebäude zu unterstützen.",
+      "seite": 53
+    },
+    {
+      "beschreibung": "Umbau von Bestandsgebäuden und Neubau innovativer Seniorenwohnformen in zentralen Ortslagen fördern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [3602],
+      "zitat": "Wir fördern bezahlbares Wohnen, indem wir: […] den Umbau von Bestandsgebäuden und den Neubau für innovative Seniorenwohnformen in zentralen Ortslagen fördern.",
+      "seite": 53
+    },
+    {
+      "beschreibung": "Bodenpolitik so ausrichten, dass bezahlbares Wohnen mit der Wiederbelebung zentraler Ortslagen verbunden wird.",
+      "ursachen_ids": [],
+      "ursachen_offen": [3602],
+      "zitat": "Für gemeinwohlorientierte Bodenpolitik und Wohnraumentwicklung wollen wir: […] durch eine strategische Bodenpolitik bezahlbares Wohnen mit der Wiederbelebung zentraler Ortslagen verbinden.",
+      "seite": 54
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 3603,
+      "seiten": [21, 25],
+      "grund": "Radwege-Instandhaltung (S. 21) und Verkehrsberuhigung in Orten, Wohngebieten und innerorts (S. 25, Vision Zero) ohne Nennung von Innenstadt, Ortskern, Einzelhandel oder Leerstand (R2). Keine Aussage zu Sauberkeit, Sicherheit oder Stadtbild im Zentrum."
+    },
+    {
+      "ursache": 3604,
+      "seiten": [22, 24, 55],
+      "grund": "Bahn-, Bus-, Rad- und Fußverkehr, Mobilitätsstationen (S. 22, 24) allgemein, ohne Innenstadt-Bezug (R2). Stellplatzpflicht im Wohnungsbau (S. 55) ohne Innenstadt- oder Einzelhandelsbezug. Keine Aussage zu Parken in Innenstädten oder Ladenöffnungszeiten."
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 3602, "name": "Umnutzung leerstehender Gewerbeflächen", "seite": 52 },
+    { "ursache": 3602, "name": "Förderung Leerstandsaktivierung", "seite": 53 },
+    { "ursache": 3602, "name": "Förderung Dorfkern-Belebung", "seite": 53 },
+    { "ursache": 3602, "name": "Förderung Seniorenwohnen im Bestand", "seite": 53 },
+    { "ursache": 3602, "name": "Strategische Bodenpolitik in Ortslagen", "seite": 54 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "leerstand", "ursache": 3602, "richtung": "Nutzungsmischung und Ansiedlung fördern" },
+    { "begriff": "zentrale Ortslagen", "ursache": 3602, "richtung": "Nutzungsmischung und Ansiedlung fördern" },
+    { "begriff": "dorfkern", "ursache": 3602, "richtung": "Nutzungsmischung und Ansiedlung fördern" }
+  ]
+}
+
+Protokoll – Erfassung Thema 36 (Leerstand und Geschäftsschließungen in Innenstädten), Programm Grüne MV, Stand 16.07.2026
+
+Gelesen:
+- S. 2 (Inhaltsverzeichnis), S. 20–25 (Kapitel 3 Mobilität), S. 26–33 (Kapitel 4 Wirtschaft inkl. 4.8 Tourismus), S. 34 (Kapitelseite), S. 50–56 (Kapitel 8 Wohnraum, Beginn Kapitel 9).
+- Stichwortsuche im Gesamttext (Innenstadt, Ortskern/Ortslage/Dorfkern, Einzelhandel, Handel, Geschäft, Leerstand, Zwischennutzung, Parken/Stellplatz, Aufenthalt, öffentlicher Raum, Verkehrsberuhigung, Öffnungszeiten, Kultur). Treffer außerhalb der gelesenen Kapitel (u. a. Kultur S. 94–98, Digitalisierung, Verwaltung) betreffen Kulturorte, Digitalisierung und Verwaltung ohne Bezug zum Thema; die Kapitel 1, 2, 5–7, 9–17 wurden nicht vollständig gelesen.
+- Seiten fast ohne Text (20, 26, 34, 50): Kapitelseiten, kein fehlender Inhalt im passenden Kapitel.
+
+Maßnahmen:
+- M1 (S. 52) Leerstand managen, Zwischennutzung: Bündel „Nutzungsmischung und Ansiedlung fördern“.
+- M2–M6 (S. 52–54): Wohnungsbau- und Bodenpolitik mit ausdrücklichem Bezug zu Leerstand, Dorfkern oder zentralen Ortslagen. Als Grenzfälle unter ursachen_offen 3602 geführt (R2 lässt „Leerstand“ und „Ortskern“ zu, der Bezug zur Nutzungsmischung ist aber eine Auslegungsfrage). M3, M4, M5 haben denselben Hebel (Förderung von Bestand in Ortslagen) mit unterschiedlicher Zielgruppe; sie sind getrennt erfasst, weil kein Bündel dafür im Auftrag steht. Die Koordination kann sie zusammenziehen.
+- Landesbodenfonds (S. 53–54): Zitat ohne Innenstadt- oder Leerstandsbezug. Die Begründung nennt „Neunutzung … leerstehender Gebäude in zentralen Ortslagen“ (S. 53); das ist derselbe Hebel wie M6 und nicht separat erfasst.
+
+Nicht erfasst (gelesen, nicht aufgenommen):
+- S. 21, 22, 24: Bahn, Bus, Rad- und Fußverkehr, Mobilitätsstationen, Rufbusse – ohne Innenstadt-Bezug (R2).
+- S. 25: Verkehrsberuhigung in Orten, Wohngebieten und innerorts (Vision Zero) – ohne Innenstadt-, Ortskern-, Einzelhandels- oder Leerstandsbezug (R2). Bündel „Aufenthaltsqualität und Verkehrsberuhigung“ deshalb ohne Maßnahme.
+- S. 52: „Bauturbo“ für Innenentwicklung und Nachverdichtung – Wohnungsbau allgemein, Zitat ohne Innenstadt- oder Leerstandsbegriff.
+- S. 55: Stellplatzpflicht im Wohnungsbau – ohne Innenstadt- oder Einzelhandelsbezug (R2).
+- S. 27: Tourismus-Ganzjahresangebote („Orte lebendig bleiben“) – kein Innenstadt-Bezug.
+
+Richtungen ohne Maßnahme:
+- 3603 Aufenthaltsqualität, Sauberkeit, Sicherheit, Instandhaltung: nichts, das Innenstadt oder Ortskern betrifft.
+- 3604 Erreichbarkeit mit dem Auto und Parkplätze: nichts.
+- 3604 Öffnungszeiten: nichts.
+
+Selbstprüfung: nicht ausgeführt (keine Shell im Agenten). Die Koordination führt `npm run -s entwurf:programm-pruefen '--' .cache/entwurf/36/protokoll/erfassung-Grune-MV.txt` aus.

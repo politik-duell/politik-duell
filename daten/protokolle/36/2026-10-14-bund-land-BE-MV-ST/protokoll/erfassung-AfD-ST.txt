@@ -1,0 +1,83 @@
+{
+  "partei_id": 15,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Asylunterkünfte nicht in Innenstadtlagen einrichten; Standorte so wählen, dass Konfliktpotenziale vermieden werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [3603],
+      "zitat": "Deren Lage wird im Interesse der Bürger sowie der Bewohner der Unterkünfte so gewählt werden, dass Konfliktpotentiale vermieden werden. Von Innenstadtlagen ist daher Abstand zu nehmen.",
+      "seite": 33
+    },
+    {
+      "beschreibung": "Kredite zu Sonderkonditionen für die Sanierung von Altbauten in historischen Innenstadtbereichen ermöglichen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [3603],
+      "zitat": "In Sachsen-Anhalt verfügen viele Städte über eine gute Altbausubstanz, vor allem in den historischen Innenstadtbereichen. […] Eine AfD-geführte Landesregierung wird die Kreditvergabe zu Sonderkonditionen für die Sanierung dieser Altbausubstanz […]",
+      "seite": 58
+    },
+    {
+      "beschreibung": "Ortsumfahrungen schneller realisieren, um die Ortskerne zu entlasten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [3603],
+      "zitat": "Aber auch Ortsumfahrungen müssen schneller realisiert werden, um die Ortskerne zu entlasten.",
+      "seite": 198
+    },
+    {
+      "beschreibung": "Gewinnbeteiligung an der Innenstadtsanierung nach Naturkatastrophen einführen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [3603],
+      "zitat": "Wir werden eine Elementarpflichtversicherung bei Hochwassergefahr und eine Innenstadtsanierungsgewinnbeteiligung nach Naturkatastrophen einführen.",
+      "seite": 205
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 3602,
+      "seiten": [33, 58, 142, 143, 144, 145, 149, 151, 188, 191, 192, 193],
+      "grund": "Kapitel IX (Wirtschaft) und XII (Ländlicher Raum) gelesen. Keine Zusage zu Sortiment, Ansiedlung oder Nutzungsmischung in Innenstädten. Dorfläden (S. 191, 193) nur ländlicher Raum, Zitat ohne Innenstadt, Ortskern, Einzelhandel oder Leerstand (R2). Verpackungssteuer-Ablehnung (S. 145) betrifft Kosten, nicht Sortiment."
+    },
+    {
+      "ursache": 3604,
+      "seiten": [196, 199, 200, 202, 204],
+      "grund": "Kapitel XIII (Verkehr) gelesen. Behindertenparkplätze (S. 202) und Baumaßnahmen (S. 199) ohne Innenstadtbezug (R2). Bus und Bahn (S. 200) und Radwege (S. 204) allgemein ohne Innenstadt-, Ortskern- oder Einzelhandelsbezug (R2). Keine Zusage zu Öffnungszeiten."
+    }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "Dorfläden", "ursache": 3602, "richtung": "Nahversorgung und Einkaufsmöglichkeiten im ländlichen Raum" },
+    { "begriff": "Ortskerne", "ursache": 3603, "richtung": "Entlastung der Ortskerne (Ortsumfahrungen)" },
+    { "begriff": "Innenstadtsanierung", "ursache": 3603, "richtung": "Sanierung und Wiederaufbau in Innenstädten" },
+    { "begriff": "Altbausubstanz", "ursache": 3603, "richtung": "Sanierung von Altbauten in Innenstadtbereichen" }
+  ]
+}
+
+Protokoll (AfD Sachsen-Anhalt, Thema 36 – Leerstand und Geschäftsschließungen in Innenstädten)
+
+Gelesen:
+- Inhaltsverzeichnis: Die Textdatei enthält kein Inhaltsverzeichnis auf den Seiten 1–6, sondern es steht auf S. 252–256 (Kapitel I–XVII). Daraus gewählt: Kapitel IX (Wirtschaft und Tourismus, S. 142–151), XII (Ländlicher Raum und Kommunales, S. 188–193), XIII (Verkehr und Infrastruktur, S. 196–207), dazu die Fundstellen S. 33, 58–59, 112–113, 185, 196, 34.
+- Präambel (S. 2–7) gelesen: keine Maßnahme zu diesem Thema.
+- Seiten ohne Text: S. 8, 9, 140, 141, 152, 153, 194, 195, 208, 209 sind Trennseiten bzw. leer; sie unterbrechen keine einschlägige Passage.
+
+Maßnahmen (alle Ursache 3603, als Grenzfälle in ursachen_offen; keine Maßnahme zu 3602 und 3604):
+- S. 33: Asylunterkünfte nicht in Innenstadtlagen. Grenzfall, weil die Begründung Konfliktpotenziale und nicht Geschäfte oder Stadtbild betrifft; R2 erfüllt, da das Zitat Innenstadtlagen nennt.
+- S. 58: Kreditvergabe zu Sonderkonditionen für Altbau in Innenstadtbereichen. Grenzfall, weil die Begründung „Verwahrlosung ganzer Stadtgebiete“ ist. Der Abbau von Bürokratie für Bauhandwerk (S. 58–59) ist ein anderer Hebel und nicht erfasst.
+- S. 198: Ortsumfahrungen zur Entlastung der Ortskerne. Grenzfall, weil es um Verkehrsentlastung geht; Ortskern wird genannt.
+- S. 205: Gewinnbeteiligung an der Innenstadtsanierung nach Naturkatastrophen. Grenzfall; der Bezug zu Leerstand ist nur mittelbar.
+
+Nicht erfasst (über die Liste im JSON hinaus):
+- S. 112–113: Freiwillige Bürgerwacht für „ordentliche, saubere und sichere“ Kommunen. Allgemein für Kommunen, kein Innenstadt-, Ortskern- oder Einzelhandelsbezug im Zitat (R2). Grenzfall für die Koordination.
+- S. 191: Leerstände bei kommunalen Wohnungsgesellschaften zurückbauen. Betrifft Wohnungen im ländlichen Raum, nicht Ladenlokale oder Innenstädte.
+- S. 143–151: Mittelstandsförderung, Bürokratieabbau, Betriebsnachfolge, Tourismus. Kein Innenstadt- oder Einzelhandelsbezug.
+- S. 145: Ablehnung einer kommunalen Verpackungssteuer (Gastronomie und Einzelhandel). Kein Hebel an 3602 bis 3604.
+- S. 196–204: Instandhaltung und Straßenausbau allgemein, Autofreundlichkeit bei Baustellen, Lastenräder, Motorräder, LKW-Parkplätze, Deutschlandticket für Schüler. Kein Innenstadtbezug.
+- S. 34, 185: Fundstellen „Instandhaltung“ (Unterkünfte, Tierheime), nicht einschlägig.
+
+Richtungen ohne Maßnahme:
+- 3602 Nutzungsmischung und Ansiedlung; Marktprofile und Wettbewerb: keine Zusage gefunden.
+- 3603 Aufenthaltsqualität und Verkehrsberuhigung: keine Zusage mit Innenstadtbezug außer den Grenzfällen oben.
+- 3603 Sauberkeit, Sicherheit und Instandhaltung: nur Bürgerwacht (S. 112–113), nicht erfasst (R2).
+- 3604 Erreichbarkeit mit dem Auto und Parkplätze: nur Behindertenparkplätze (S. 202) ohne Innenstadtbezug.
+- 3604 Nahmobilität und öffentlicher Verkehr: Bus und Bahn (S. 200), Radwege (S. 204), ohne Innenstadtbezug.
+- 3604 Öffnungszeiten: nichts gefunden.
+
+Hinweis an die Koordination: Die Suchbegriffe „Dorfläden“, „Ortskerne“, „Innenstadtsanierung“ und „Altbausubstanz“ stehen in eigene_synonyme.

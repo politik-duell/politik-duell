@@ -1,0 +1,53 @@
+{
+  "partei_id": 11,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Lehnt Fahrverbote für Innenstädte und das Umwidmen von Parkplätzen ab.",
+      "ursachen_ids": [3604],
+      "zitat": "Anti-Auto-Haltung, Fahrverbote für Innenstädte, das Umwidmen von Parkplätzen und ein generelles Tempolimit auf deutschen Autobahnen lehnen wir ab.",
+      "seite": 74
+    },
+    {
+      "beschreibung": "Bürokratie für den Einzelhandel verringern: Beweislast bei Dokumentationspflichten umkehren, regelmäßige Nachweise durch ein Anzeigerecht ersetzen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [3601],
+      "zitat": "Wir kehren in Handwerk, Einzelhandel, Gastronomie oder Hotellerie bei Dokumentationspflichten die Beweislast um und ersetzen die regelmäßigen Nachweise durch ein Anzeigerecht von Verstößen.",
+      "seite": 17
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 3602,
+      "seiten": [73, 76],
+      "grund": "Mix aus (Innen-)Verdichtung und Aufstockung von Geschäftsgebäuden (S. 73) sowie Stadt- und Dorfentwicklung (S. 76): nennt weder Innenstadt, Ortskern, Einzelhandel noch Leerstand (R2)."
+    },
+    {
+      "ursache": 3603,
+      "seiten": [74, 77],
+      "grund": "Begrünung in Städten und Gemeinden (S. 77) und Instandhaltung bei der Bahn (S. 74): kein Bezug zu Innenstadt, Ortskern, Einzelhandel oder Leerstand (R2)."
+    }
+  ],
+  "eigene_synonyme": [
+    {"begriff": "Umwidmen von Parkplätzen", "ursache": 3604, "richtung": "Parkplätze erhalten"}
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis (S. 1–6); Kapitel „Verkehrsinfrastruktur, Mobilität frei wählen“ (S. 72–75); Kapitel „Freiräume für die Wirtschaft“ (S. 15–19, Handel und Bürokratie); Kapitel „Stadt und Land“ (S. 76–77); Fundstellen S. 74 und 77. Weitere Fundstellen zu Innenstadt, Einzelhandel, Parken, Begrünung, Öffnungszeiten und Digitalisierung des Handels durchsucht; Sonntagsschutz (S. 59) und Bargeld (S. 79) gelesen.
+
+Maßnahmen:
+- S. 74: Ablehnung von Fahrverboten für Innenstädte und des Umwidmens von Parkplätzen → 3604 (Parken). Grenzfall: Ablehnung statt aktiver Zusage, aber Innenstädte und Parkplätze sind genannt.
+- S. 17: Beweislastumkehr und Anzeigerecht für den Einzelhandel bei Dokumentationspflichten → 3601 offen. Grenzfall: Bürokratie für Einzelhandel, nicht ausdrücklich Online- oder Wettbewerbsbezug.
+
+Nicht erfasst:
+- S. 73: „(Innen-)Verdichtung … Aufstockung von Wohn- und Geschäftsgebäuden“ – kein Bezug zu Innenstadt oder Einzelhandel im Zitat (R2).
+- S. 77: Unterstützung der Städte bei Begrünung – R2.
+- S. 74, 75: ÖPNV „in Stadt und Land“, Radwege – nennen keine Innenstadt (R2).
+- S. 19: Schutz von Lieferanten vor unlauteren Handelspraktiken – kein Bezug zu Einzelhandel vor Ort oder Onlinehandel.
+- S. 59: Bekenntnis zur Sonntagsruhe – kein Bezug zu Ladenöffnung im Zitat.
+- S. 79: Bargeld im Alltag – kein Bezug zu Handel vor Ort.
+
+Richtungen ohne Maßnahme: Lokalen Handel stärken und Wettbewerb angleichen (3601: Online gegen stationär, Plattformen, Digitalisierung des lokalen Handels) – nichts gefunden. Nutzungsmischung und Ansiedlung (3602) – nichts gefunden. Aufenthaltsqualität, Sauberkeit, Sicherheit (3603) – nichts gefunden. Öffnungszeiten (3604) – nichts gefunden.
+Seiten ohne Text: 1, 82.

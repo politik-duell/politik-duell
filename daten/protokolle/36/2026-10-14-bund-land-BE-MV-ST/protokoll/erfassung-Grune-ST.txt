@@ -1,0 +1,73 @@
+{
+  "partei_id": 13,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Kommunen beim Leerstandsabbau unterstützen und Zwischennutzungen, etwa durch Start-ups oder Pop-up-Stores, ermöglichen.",
+      "ursachen_ids": [3602],
+      "zitat": "Kommunen sollen beim Abbau von Leerstand unterstützt werden und intelligente, alternative Zwischennutzungen ermöglichen, z. B. durch Start-ups, Pop-up-Stores oder nichtkommerzielle Treffpunkte.",
+      "seite": 93
+    },
+    {
+      "beschreibung": "Kommunen mit abgestuften Instrumenten gegen langfristigen Leerstand ausstatten: Nutzungs- oder Sanierungsfristen, höhere Abgaben, verpflichtende Zwischennutzung.",
+      "ursachen_ids": [3602],
+      "zitat": "Kommunen sollen wirksamere, abgestufte Instrumente gegen langfristigen Leerstand erhalten – etwa Nutzungs- oder Sanierungsfristen, höhere Abgaben oder verpflichtende Zwischennutzung.",
+      "seite": 98
+    },
+    {
+      "beschreibung": "Übernahme langjährig ungenutzter oder entwicklungsfähiger Immobilien als letztes Mittel erleichtern, wenn die anderen Instrumente erfolglos bleiben.",
+      "ursachen_ids": [3602],
+      "zitat": "Kommunen sollen wirksamere, abgestufte Instrumente gegen langfristigen Leerstand erhalten – etwa […] verpflichtende Zwischennutzung. Erst wenn diese Maßnahmen erfolglos bleiben, soll die Übernahme langjährig ungenutzter oder entwicklungsfähiger Immobilien als letztes Mittel erleichtert werden.",
+      "seite": 98
+    },
+    {
+      "beschreibung": "Neue moderne Dorfzentren ermöglichen, die Angebote wie Dorfladen, Co-Working und Veranstaltungsräume unter einem Dach bündeln.",
+      "ursachen_ids": [3602],
+      "zitat": "Deshalb wollen wir existierende Treffpunkte sichern und neue moderne Dorfzentren ermöglichen, die mehrere Angebote unter einem Dach bündeln: Einkaufen im Dorfladen, arbeiten an Co-Working-Plätzen, feiern in Veranstaltungsräumen, Carsharing und Ladesäule vor der Tür und am Ende mindestens ein Gespräch beim Kaffee.",
+      "seite": 39
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 3603,
+      "seiten": [31, 93, 94],
+      "grund": "Aufenthaltsqualität nur als Ziel („Innenstädte … sollten neu gedacht werden“, S. 93). Begrünung, Hitzeschutz, autofreie Quartiere, Tempo 30 und Angsträume betreffen Stadt und Quartier allgemein, ohne Innenstadt-, Ortskern-, Einzelhandels- oder Leerstand-Bezug im Zitat (R2). Sauberkeit und Instandhaltung: nichts gefunden."
+    },
+    {
+      "ursache": 3604,
+      "seiten": [29, 31, 71, 94],
+      "grund": "Parkraum und Parkgebühren (S. 31) sind Autofahren ohne Innenstadt-Bezug (R2). Allgemeiner ÖPNV, Rad- und Fußverkehr sowie Grundzentren-Anbindung (S. 22–30) ohne Innenstadt-Bezug (R2). 15-Minuten-Stadt mit Nahversorgung (S. 94): Grenzfall, nicht erfasst. Öffnungszeiten: nur Bibliotheken (S. 71)."
+    }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "dorfzentr", "ursache": 3602, "richtung": "Nutzungsmischung und Ansiedlung fördern" },
+    { "begriff": "leerstand", "ursache": 3602, "richtung": "Nutzungsmischung und Ansiedlung fördern" },
+    { "begriff": "ortskern", "ursache": 3602, "richtung": "Nutzungsmischung und Ansiedlung fördern" }
+  ]
+}
+
+Protokoll – Grüne (Land ST), Thema 36 „Leerstand und Geschäftsschließungen in Innenstädten“
+
+Gelesen: Inhaltsverzeichnis (S. 3–4); Kapitel 1.8 Mobilität (S. 22–31, alle Fundstellen 29, 31); Kapitel 2.2 Kommunen (S. 39, Fundstelle Dorfzentren); Kapitel 3.6 (S. 71, Fundstelle Bibliotheken); Kapitel 4 (S. 85–88) überflogen, ohne Bezug; Kapitel 5.1–5.6 (S. 88–98) vollständig; S. 92–98 mit allen Fundstellen (93, 98).
+Fehltreffer: „Zentrenkonzept“ auf S. 78 (Migrationszentren).
+Seiten ohne Text: 1, 5 (Titel-/Trennseite), 100 (leer). Keine Chapter-relevanten Inhalte betroffen.
+
+Nicht erfasst (gelesen, nicht aufgenommen):
+- S. 93: „Innenstädte und Ortskerne sollten neu gedacht werden …“ – Ziel mit „sollten“.
+- S. 93: „Lebendige Ortskerne sollen durch Handel und Dienstleistungen gestärkt werden …“ – allgemeines Ziel, kein Instrument.
+- S. 93: Begrünung, Hitzeschutz, Solaranlagen, autofreie Zonen, Gewerbeanbindung – Quartier/Stadt allgemein (R2).
+- S. 94: 15-Minuten-Stadt mit guter Nahversorgung – Grenzfall, Stadt allgemein (R2).
+- S. 89: Dorfzentren mit Dorfgemeinschaftsläden (Kapitel 5.1) – dieselbe Maßnahme wie S. 39, dort erfasst.
+- S. 98: Vorkaufsrecht gegen Bodenspekulation – kein Leerstand-Bezug.
+- S. 92: Vorrang Bestand, Sanierung statt Neubau – allgemeine Landesentwicklung, kein Innenstadt-Bezug.
+- S. 29: Grundzentren-Anbindung ans ÖPNV-Netz (Einkaufszentren genannt) – allgemeiner ÖPNV.
+- S. 31: Parkraumbewirtschaftung, Parkgebühren, Anwohnerparken – Autofahren ohne Innenstadt-Bezug (R2).
+- S. 71: Sonntagsöffnung von Bibliotheken – kein Ladengeschäft.
+
+Grenzfälle für die Koordination:
+- Dorfzentrum (S. 39, 3602): Zitat nennt kein R2-Wort; als Ortskern gewertet. Bei Ausschluss entfällt die Maßnahme.
+- 15-Minuten-Stadt (S. 94, 3604) und autofreie Quartiere (S. 93, 3603): nicht erfasst.
+
+Richtungen ohne Maßnahme: Marktprofile und Wettbewerb (3602); Sauberkeit, Sicherheit und Instandhaltung (3603); Erreichbarkeit mit dem Auto und Parkplätze (3604); Nahmobilität und öffentlicher Verkehr (3604); Öffnungszeiten (3604).
+
+Hinweis: Der Auftrag nennt keine Bündel und keine Hebel-Checkliste. Die Selbstprüfung konnte ich nicht selbst ausführen (keine Shell); sie liegt bei der Koordination.

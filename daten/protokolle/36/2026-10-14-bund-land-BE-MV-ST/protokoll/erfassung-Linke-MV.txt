@@ -1,0 +1,49 @@
+{
+  "partei_id": 16,
+  "land": "MV",
+  "massnahmen": [
+    {
+      "beschreibung": "Stadtprofile stärken und Innenstädte als lebendige Orte sichern (Grenzfall: Ansiedlung/Nutzungsmischung oder Aufenthalt)",
+      "ursachen_ids": [],
+      "ursachen_offen": [3602, 3603],
+      "zitat": "Stadtprofile stärken, Innenstädte als lebendige Orte sichern und Stadt-Umland-Kooperationen ausbauen.",
+      "seite": 26
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 3604,
+      "seiten": [20, 21, 24],
+      "grund": "ÖPNV-, Rad- und Straßenmaßnahmen (S. 20–21) nennen weder Innenstadt, Ortskern, Einzelhandel noch Leerstand (R2). Öffnungszeiten (S. 24) betreffen Gerichte."
+    }
+  ],
+  "stand_im_pdf": "Juni 2026 (Beschluss 30. Mai 2026)"
+}
+
+--- Protokoll ---
+
+Gelesen: S. 1–6 (Titel, Impressum, Inhalt, Einleitung, Kap. 1–2 Wohnen), S. 9 (Kap. 5 Wirtschaft), S. 20–21 (Kap. 12 Verkehr), S. 24 (Fundstelle Öffnungszeiten, Kap. 15 Justiz), S. 25–26 (Kap. 16 Kommunen und Landesentwicklung, Abschnitt „Städte, Dörfer und Regionen lebendig gestalten“). Nur per Stichwortsuche gesichtet: S. 10, 22–23, 27–28 (kein Bezug zu Innenstadt, Einzelhandel, Ortskern, Leerstand oder Parken).
+Seiten ohne Text: 1 und 30 (Titel- bzw. Schlussseite), ohne Bedeutung für das Thema.
+
+Erfasst:
+- S. 26: „Stadtprofile stärken, Innenstädte als lebendige Orte sichern …“ – Grenzfall. Zuordnung zu 3602 (Ansiedlung, Nutzungsmischung) oder 3603 (Aufenthalt) offen gelassen; daher kein Bündel.
+
+Nicht erfasst:
+- S. 26 „Innenentwicklung vor Außenentwicklung, Sanierung vor Neubau fördern“: Bauflächenpolitik ohne Bezug zu Innenstadt-Handel.
+- S. 26 „Das Regionalbudget aufstocken …“: Punkt nennt keine Innenstadt.
+- S. 25 „Programme für Dorfkneipen oder kulturelle Treffpunkte“: Gastronomie und Gemeinschaftsorte; kein Ortskern, keine Innenstadt (R2).
+- S. 20–21 ÖPNV (Deutschlandticket, Nahverkehr für unter 21-Jährige), Radverkehr, Ortsumgehungen und Ortsdurchfahrten („Lebensqualität vor Ort“): kein Innenstadt-, Ortskern-, Einzelhandels- oder Leerstandsbezug (R2).
+- S. 6 „strukturellen Leerstands“ und Wohnungspolitik: Wohnungsleerstand, nicht Geschäftsleerstand.
+- S. 9 Handwerk und „Dorf-Büro-Offensive“ (Co-Working): kein Innenstadt- oder Einzelhandelsbezug.
+- S. 24 „verlässliche Öffnungszeiten“: betrifft Gerichte, nicht Ladenöffnung.
+
+Richtungen ohne Maßnahme:
+- 3602 Marktprofile und Wettbewerb: nichts gefunden.
+- 3603 Sauberkeit, Sicherheit und Instandhaltung: nichts gefunden.
+- 3604 Erreichbarkeit mit dem Auto und Parkplätze: nichts gefunden (Straßenmaßnahmen nur ohne Innenstadtbezug).
+- 3604 Nahmobilität und öffentlicher Verkehr: nur ohne Innenstadtbezug (siehe oben).
+- 3604 Öffnungszeiten: keine Ladenöffnung genannt.
+
+Stand: Im PDF steht „Stand: Juni 2026“, der Auftrag nennt 2026-05-30 (Beschluss).
+
+Hinweis: Die Prüfung mit `entwurf:programm-pruefen` konnte in dieser Sitzung nicht ausgeführt werden (keine Shell verfügbar). Die Koordination führt sie aus.

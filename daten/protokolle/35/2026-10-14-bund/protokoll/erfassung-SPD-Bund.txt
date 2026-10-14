@@ -1,0 +1,32 @@
+{
+  "partei_id": 12,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Fahrausbildung samt Theorieunterricht reformieren, auch mit dem Ziel, die Kosten der Fahrausbildung spürbar zu senken",
+      "ursachen_ids": [3501, 3502],
+      "zitat": "Vor dem Hintergrund erhöhter Quoten nicht bestandener Prüfungen und steigender Preise werden wir die Fahrausbildung samt Theorieunterricht im Sinne von Verkehrssicherheit und Effizienz reformieren, auch mit dem Ziel, die Kosten der Fahrausbildung spürbar zu senken.",
+      "seite": 36
+    },
+    {
+      "beschreibung": "Alle Jugendlichen im 17. Lebensjahr erhalten 500 Euro Guthaben, unter anderem für Führerscheinkosten",
+      "ursachen_ids": [3501],
+      "zitat": "Alle jungen Menschen im 17. Lebensjahr sollen daher einen MobilitätsPass mit 500 Euro Guthaben, etwa für Führerscheinkosten, Bahntickets oder Fahrräder, erhalten.",
+      "seite": 36
+    },
+    {
+      "beschreibung": "Arbeitgeber sollen einen steuer- und abgabenfreien Führerscheinzuschuss bis 2.000 Euro an Auszubildende und junge Beschäftigte zahlen können",
+      "ursachen_ids": [3501],
+      "zitat": "Zudem wollen wir Arbeitgebern ermöglichen, einen Führerscheinzuschuss von bis zu 2.000 Euro steuer- und abgabenfrei an Auszubildende und junge Beschäftigte auszuzahlen.",
+      "seite": 36
+    }
+  ]
+}
+
+Protokoll (Thema 35, Führerscheinkosten):
+- Gelesen: Inhaltsverzeichnis (S. 3); Kapitel 12 „Klimaschutz, den sich jeder leisten kann“ (S. 33–34), Kapitel 13 „Pünktliche Bahn und gute Mobilität“ (S. 34–37), Kapitel 14 Anfang (S. 37). Fundstellen S. 36 (Führerschein, Fahrausbildung, Förderung) und S. 58 (Ukraine, kein Bezug) gelesen.
+- Erfasst: Fahrausbildung-Reform mit Kostenziel (3501 + 3502, eine Zusage mit beiden Hebeln); MobilitätsPass 500 Euro (3501, Förderung für junge Menschen, Führerscheinkosten als eine Verwendung); steuerfreier Arbeitgeberzuschuss bis 2.000 Euro (3501, Förderung für Auszubildende/junge Beschäftigte). Beide Förderungen sind getrennt aufgeführt, da Zielgruppe und Umfang verschieden sind.
+- Nicht erfasst: Ladeinfrastruktur, E-Auto-Umstieg, Tempolimit, Lkw-Fahrkräftemangel und Berufskraftfahrer (S. 36–37): kein Bezug zum Erwerb der Fahrerlaubnis (R2). Klimaziele, Mobilitätsleitbild und „Vision Zero“ (S. 36): Ziele bzw. nicht Führerschein-bezogen.
+- Richtungen ohne Maßnahme: keine. Beide Pflichtursachen (3501, 3502) belegt.
+- Seiten ohne Text (1, 2, 67, 68) spielen keine Rolle.
+- Keine Bündel im Auftrag genannt; daher kein `buendel`-Feld.

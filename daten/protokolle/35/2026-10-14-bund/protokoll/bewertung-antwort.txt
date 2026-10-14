@@ -1,0 +1,67 @@
+{
+  "blind_pruefsumme": "be380610f11ca65036afbe18bcdab99bcb58ac3c41e649317f6692573ae83ad3",
+  "neue_instrumente": [
+    {
+      "kennung": "I1",
+      "name": "Finanzielle Förderung des Führerscheinerwerbs für junge Menschen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Entlastet einzelne Gruppen bei den Kosten, senkt aber weder Preise noch Wiederholungsprüfungen; ohne mehr Wettbewerb kann ein Zuschuss teilweise in Preisen aufgehen. Bund kann finanzieren, Haushaltsmittel nötig.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I2",
+      "name": "Ausbildung entlasten: digitale Theorie, Simulatoren, keine Tagesgrenze (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Setzt direkt an Ausbildungsaufwand und Kosten an, per Verordnung änderbar. Der Kosteneffekt von Digitaltheorie und Simulatoren ist kaum untersucht; Preise bestimmen weiter die Fahrschulen.",
+      "evidenz": "offen"
+    }
+  ],
+  "zuordnung": [
+    {
+      "kennung": "M01",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Allgemeine Zusage ohne konkrete Schritte; Bürokratieabbau kann Kosten etwas senken, der Effekt auf Fahrschulpreise ist unbestimmt und kaum untersucht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [3501]
+    },
+    { "kennung": "M02", "instrument": "I1", "ursachen": [3501] },
+    {
+      "kennung": "M03",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Benennt Kosten und Durchfallquoten als Anlass, bleibt aber ohne konkrete Änderungen; Wirkung hängt vom Inhalt der Reform ab. Bund kann die Ausbildungsregeln selbst ändern.",
+        "evidenz": "offen"
+      },
+      "ursachen": [3501, 3502]
+    },
+    { "kennung": "M04", "ursachen": [] },
+    { "kennung": "M05", "instrument": "I1", "ursachen": [3501] },
+    { "kennung": "M06", "ursachen": [] },
+    {
+      "kennung": "M07",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Mehr Anbieter und Prüfer können Wettbewerb und Termine verbessern; die Prüfgebühr macht aber nur einen kleinen Teil der Gesamtkosten aus. Wirkung kaum untersucht, Umsetzung braucht Bund-Länder-Abstimmung.",
+        "evidenz": "offen"
+      },
+      "ursachen": [3501]
+    },
+    { "kennung": "M08", "instrument": "I2", "ursachen": [3501] },
+    { "kennung": "M09", "ursachen": [] },
+    { "kennung": "M10", "instrument": "I1", "ursachen": [3501] }
+  ]
+}
+
+Hinweise zur Bewertung:
+
+- Wichtig: In dieser Sitzung standen mir weder Web-Recherche noch der Selbstprüfungs-Befehl zur Verfügung (nur Datei-Werkzeuge). Ich habe daher keine Quelle geöffnet, keine `beleg_studie_url` gesetzt und `evidenz` überall als „offen“ eingestuft. Das heißt hier „nicht recherchiert“, nicht „kaum untersucht“. Die Prüfenden sollten den Forschungsstand nachrecherchieren, besonders bei I1 (Zuschüsse) und I2 (Simulator, Digitaltheorie). `entwurf:antwort-pruefen` wurde nicht ausgeführt, das Ergebnis der Formalprüfung ist offen.
+- Nicht bestätigte Ursachen: M01 (3502 offen) nicht gewählt, da „Ausbildung effizient gestalten“ keine Prüfungsanforderung konkret benennt. M08 (3502 offen) nicht gewählt: Digitaltheorie, Simulatoren und Wegfall der Tagesgrenze zielen auf Kosten, nicht auf Durchfallquoten. M07: 3502 ersetzt durch 3501 (offen), da Marktöffnung und Prüfertermine an Wettbewerb und Prüfungsgebühren ansetzen, nicht an Wiederholungen durch Durchfallen.
+- Ohne Ursache: M04 (Zwangstests für Senioren – betrifft Fahreignung älterer Fahrer, nicht den Erwerb der Fahrerlaubnis). M06 und M09 (begleitetes Fahren ab 16 – ändert weder Kosten noch Durchfallquoten; zudem wäre eine EU-Regelung zum Mindestalter betroffen, daher auch bei Umsetzbarkeit kritisch).
+- Schwierig: M03 (vage Reform, die beide Ursachen nennt: Wirksamkeit 1 statt 2, weil kein Inhalt benannt ist) und M07 (Wirkung auf Gesamtkosten unklar). I1 fasst M02, M05, M10 zusammen, obwohl M10 (Steuerfreiheit) leichter umsetzbar ist als M05 (rund 0,4 Mrd. Euro jährlich); gleicher Lösungsweg, daher gleiche Werte.

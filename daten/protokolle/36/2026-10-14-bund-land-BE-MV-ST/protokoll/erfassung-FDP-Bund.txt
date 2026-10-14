@@ -1,0 +1,39 @@
+{
+  "partei_id": 14,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Regeln, damit importierte Waren auf großen Online-Plattformen angemessen verzollt und versteuert werden.",
+      "ursachen_ids": [3601],
+      "buendel": "Lokalen Handel stärken und Wettbewerb angleichen",
+      "zitat": "Wir setzen uns zudem für wirksame und praktikable Regeln auf europäischer und nationaler Ebene ein, die sicherstellen, dass importierte Waren auf großen Online-Plattformen angemessen verzollt und versteuert werden.",
+      "seite": 16
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3602, "seiten": [14, 15, 16, 42, 43, 44], "grund": "Steuer-, Gastronomie- und Tourismuskapitel (S. 14–16) sowie Bau- und Stadtplanungskapitel (S. 42–44) gelesen; nichts zu Sortiment, Ansiedlung oder Nutzungsmischung in Innenstädten oder Ortskernen. Gastronomie-Umsatzsteuer und Nachverdichtung betreffen keinen Innenstadt-Einzelhandel." },
+    { "ursache": 3603, "seiten": [24, 42, 43, 44], "grund": "Kapitel Sicherheit und Bürgerrechte (S. 24) und Stadtplanung (S. 44) gelesen; Videoüberwachung nur an Schwerpunkten wie Bahnhöfen, ohne Innenstadtbezug. Nichts zu Sauberkeit, Aufenthaltsqualität oder Begrünung von Innenstädten." },
+    { "ursache": 3604, "seiten": [42, 43, 44], "grund": "Verkehrskapitel (S. 40–43) und Stadtplanung (S. 44) gelesen; Parkplatz-Echtzeiterfassung und Seitenstreifen nur als Smart-City-Bausteine ohne Innenstadtbezug, ÖPNV-Flexibilisierung ohne Innenstadtbezug, keine Öffnungszeiten." }
+  ],
+  "neue_buendel": [],
+  "hebel_nicht_gefunden": []
+}
+
+Protokoll
+
+Gelesen: Inhaltsverzeichnis (S. 1–6); Kapitel III.b (S. 13–16, Steuern, Gastronomie, Tourismus, Online-Plattformen); S. 24 (Videoüberwachung); Kapitel V.d–e (S. 36–39); Kapitel VI.b–c (S. 40–44, Infrastruktur, Mobilität, Bauen, Stadtplanung) vollständig. Im Text kommen „Innenstadt“, „Ortskern“, „Einzelhandel“, „Leerstand“, „Ladenöffnung“ nicht vor.
+
+Aufgenommen:
+- S. 16, 3601: Zusage, dass importierte Waren auf großen Online-Plattformen angemessen verzollt und versteuert werden. Grenzfall: Die Stelle nennt den stationären Handel nicht, betrifft aber die Wettbewerbsbedingungen des Onlinehandels; deshalb als 3601 gesetzt.
+
+Nicht erfasst:
+- S. 15: reduzierter Umsatzsteuersatz für Gastronomie (keine Einzelhandelsmaßnahme); Tourismus-Passage (ohne Innenstadtbezug); Ersatz der Gewerbesteuer (allgemeine Unternehmenssteuer).
+- S. 44: Nachverdichtung, Aufstockung, Bauflächen (Wohnungsbau, ohne Innenstadtbezug); digitale Echtzeiterfassung von Parkplätzen und Seitenstreifen (R2: Parken ohne Innenstadtbezug).
+- S. 42: flexible, bedarfsgerechte ÖPNV-Angebote (ohne Innenstadtbezug).
+- S. 24: Videoüberwachung an Kriminalitätsschwerpunkten (R2: kein Innenstadtbezug).
+- S. 11–12: Bürokratieabbau für Betriebe allgemein (kein Handelsbezug).
+
+Bündel ohne Maßnahme (gezielt gesucht): „Digitale Vertriebswege und Flächenanpassung“, „Nutzungsmischung und Ansiedlung fördern“, „Marktprofile und Wettbewerb“, „Aufenthaltsqualität und Verkehrsberuhigung“, „Sauberkeit, Sicherheit und Instandhaltung“ (Instandhaltung nur Bahnnetz, S. 42), „Nahmobilität und öffentlicher Verkehr“, „Öffnungszeiten und zeitliche Zugänglichkeit“ – keine Fundstelle mit Innenstadt-, Ortskern- oder Einzelhandelsbezug.
+
+Richtungen ohne Maßnahme: 3602, 3603, 3604 (siehe nicht_erfasst).
+Seiten ohne Text: 1, 2 (Titel, Vorwort); ohne Bedeutung für das Thema.

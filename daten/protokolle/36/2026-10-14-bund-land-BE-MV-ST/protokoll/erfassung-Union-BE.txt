@@ -1,0 +1,111 @@
+{
+  "partei_id": 11,
+  "land": "BE",
+  "massnahmen": [
+    {
+      "beschreibung": "Förderprogramm für den Umbau von Handelsimmobilien zu Wohn-, Büro- und Kulturnutzungen; Zentrenprogramm „Lebendige Zentren“ mit dem Bund um- und ausbauen",
+      "ursachen_ids": [3602],
+      "buendel": "Nutzungsmischung und Ansiedlung fördern",
+      "zitat": "Wir werden gemeinsam mit dem Bund das Programm „Lebendige Zentren“ um- und ausbauen und ein Programm für den Umbau von Handelsimmobilien für Wohn-, Büro- und Kulturnutzungen auflegen.",
+      "seite": 37
+    },
+    {
+      "beschreibung": "Leerstandsmanagement landeseigener Immobilien weiterentwickeln und für Start-ups und Kreativwirtschaft öffnen",
+      "ursachen_ids": [3602],
+      "zitat": "Wir werden das Leerstandsmanagement landeseigener Immobilien weiterentwickeln und gezielt für die Nutzung durch Start-ups und Unternehmen der Kreativwirtschaft öffnen.",
+      "seite": 37
+    },
+    {
+      "beschreibung": "Systematisches Leerstandsmonitoring von Büro- und Gewerbeflächen einführen",
+      "ursachen_ids": [],
+      "ursachen_offen": [3602],
+      "zitat": "Für mehr Transparenz über die Entwicklungen auf dem Gewerbemarkt setzen wir uns für die Einführung eines systematischen Leerstandsmonitorings von Büro- und Gewerbeflächen ein.",
+      "seite": 37
+    },
+    {
+      "beschreibung": "Engen Austausch mit den Bezirken suchen und den Zentrengipfel gegen Leerstand fortführen",
+      "ursachen_ids": [],
+      "ursachen_offen": [3602],
+      "zitat": "Dafür streben wir einen engen Austausch mit den Bezirken an und führen den erfolgreichen Zentrengipfel fort.",
+      "seite": 37
+    },
+    {
+      "beschreibung": "Konkrete Kiezpläne für jede Einkaufsstraße gemeinsam mit Bezirken, Handel und Gastronomie entwickeln",
+      "ursachen_ids": [3602],
+      "buendel": "Marktprofile und Wettbewerb",
+      "zitat": "Gemeinsam mit Bezirken, Handel und Gastronomie wollen wir konkrete Kiezpläne für jede Einkaufsstraße entwickeln.",
+      "seite": 37
+    },
+    {
+      "beschreibung": "Rechtssichere Sonntagsöffnung; acht verkaufsoffene Sonntage sollen stattfinden; Bezirke sollen zweimal im Jahr zusätzliche verkaufsoffene Sonntage festlegen können",
+      "ursachen_ids": [3604],
+      "buendel": "Öffnungszeiten und zeitliche Zugänglichkeit",
+      "zitat": "Wir stehen für eine rechtssichere Gestaltung der Sonntagsöffnung und setzen uns dafür ein, dass die gesetzlich möglichen acht verkaufsoffenen Sonntage auch tatsächlich stattfinden. Darüber hinaus sollen die Bezirke zweimal im Jahr zusätzliche verkaufsoffene Sonntage für besondere bezirkliche Anlässe festlegen können.",
+      "seite": 37
+    },
+    {
+      "beschreibung": "Baukasten für Bezirke zu Verkehrsberuhigung und Verkehrssicherheit, damit wohnungsnaher Einzelhandel für Kunden erreichbar bleibt",
+      "ursachen_ids": [3604],
+      "buendel": "Erreichbarkeit mit dem Auto und Parkplätze",
+      "zitat": "Polizei und Feuerwehr wie Müllabfuhr müssen schnell überall hin gelangen, wohnungsnaher Einzelhandel und Supermärkte erreichbar für Kunden wie Lieferanten sein. Um das sicherzustellen, nutzen wir das neue Landesorganisationsgesetz und geben als Senat den Bezirken einen einheitlichen und verbindlichen Baukasten von Möglichkeiten sinnvoller Verkehrsberuhigung und Verkehrssicherheit an die Hand.",
+      "seite": 70
+    },
+    {
+      "beschreibung": "Verkehrsinfrastruktur gezielt ergänzen, um Innenstadt und Außenbezirke besser zu vernetzen",
+      "ursachen_ids": [3604],
+      "zitat": "Die bestehende Verkehrsinfrastruktur werden wir gezielt ergänzen, um Innenstadt und Außenbezirke noch besser zu vernetzen.",
+      "seite": 69
+    },
+    {
+      "beschreibung": "In Fußgängerzonen soll die Geschwindigkeit von Fahrzeugen technisch auf Schrittgeschwindigkeit begrenzt werden",
+      "ursachen_ids": [],
+      "ursachen_offen": [3603],
+      "buendel": "Aufenthaltsqualität und Verkehrsberuhigung",
+      "zitat": "In Fußgängerzonen soll die Geschwindigkeit der Fahrzeuge technisch auf Schrittgeschwindigkeit begrenzt werden.",
+      "seite": 71
+    },
+    {
+      "beschreibung": "Taubenpopulation an Einkaufszentren und anderen stark frequentierten Orten begrenzen (Taubenschläge, Fütterungsverbote, bauliche Vergrämung)",
+      "ursachen_ids": [],
+      "ursachen_offen": [3603],
+      "buendel": "Sauberkeit, Sicherheit und Instandhaltung",
+      "zitat": "Wir werden die Taubenpopulation insbesondere an Einkaufszentren, Bahnhöfen und anderen stark frequentierten Orten wirksam und tierschutzgerecht begrenzen.",
+      "seite": 79
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 3602, "name": "Landeseigene Leerstände öffnen", "seite": 37 },
+    { "ursache": 3602, "name": "Leerstandsmonitoring", "seite": 37 },
+    { "ursache": 3602, "name": "Zentrengipfel und Austausch mit Bezirken", "seite": 37 },
+    { "ursache": 3604, "name": "Verkehrsinfrastruktur zur Innenstadt", "seite": 69 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "einkaufsstraße", "ursache": 3602, "richtung": "Marktprofile und Wettbewerb" },
+    { "begriff": "handelsimmobilien", "ursache": 3602, "richtung": "Nutzungsmischung und Ansiedlung fördern" },
+    { "begriff": "einzelhandel", "ursache": 3604, "richtung": "Erreichbarkeit mit dem Auto und Parkplätze" }
+  ]
+}
+
+--- Protokoll (Union-BE, Thema 36 „Leerstand und Geschäftsschließungen in Innenstädten“) ---
+
+Gelesen: Inhaltsverzeichnis (S. 2–3); Kapitel III „Wachsen mit Plan“ (S. 36–38; Innenstädte, Einzelhandel, Leerstand auf S. 37); Kapitel VI „Berlin wird schneller“ (S. 68–75); Kapitel VII „Berlin wird sauber“ (S. 76–80); Fundstellen vollständig: S. 10–11, 49, 82, 93, 109, 112, 116, 121, 123. Trennseiten S. 39, 67, 76 liegen vor den gelesenen Kapiteln und fehlen nicht mitten im Text.
+
+Maßnahmen: alle auf Einzelhandel, Leerstand oder Innenstadt bezogen (R2); Zuordnung nach R1. Grenzfälle in ursachen_offen: Leerstandsmonitoring und Zentrengipfel (S. 37; Bezug zu Gewerbe und Dialog statt Sortiment), Fußgängerzonen-Tempo und Taubenpopulation an Einkaufszentren (S. 71, 79; Fußgängerzone und Einkaufszentrum nicht wörtlich in R2 genannt).
+
+Gleichartige Stellen (Bündel bereits durch die aussagekräftigste Stelle belegt): S. 37 „Programm ‚Lebendige Zentren‘ um- und ausbauen“ (Förderung, zu Nutzungsmischung und Ansiedlung); S. 37 „Strategie zur Stärkung des Berliner Einzelhandels entwickeln“ (Konzept, zu Marktprofile und Wettbewerb); S. 37 „rechtssichere Regelungen“ für Spätis als Nahversorger (Öffnungszeitenregelung, zu Öffnungszeiten).
+
+Nicht erfasst (gelesen, nicht aufgenommen):
+- S. 10–11: Videoüberwachung an Fußgängerzonen, Angsträume, Sicherheit allgemein (Sicherheit, nicht 3603); Kurfürstenkiez-Konzept „Aufenthaltsqualität“ (Kiez, kein Innenstadt-Bezug, R2).
+- S. 37: „Leerstand werden wir bekämpfen“ (Ziel); Industrieparks und Gewerbehöfe stärken, neue Standorte fördern (kein Innenstadt-Bezug); „Digitalisierungsprogramm Handel und Gastronomie“ (Ursache 3601, nicht Ursache dieses Themas); „S-Bahn-Bögen für Gewerbe- und Kulturnutzungen prüfen“ (Prüfauftrag).
+- S. 48: Messe, Events „stärkt … den Einzelhandel“ (Wirkung, keine Handlung).
+- S. 69: Lade- und Lieferzonen, digitale Parkausweise, Tempo 50, Poller (kein Innenstadt- oder Einzelhandels-Bezug, R2).
+- S. 70: Parkraumbewirtschaftung, Anwohnerparken, Quartiersgaragen, Parkleitsysteme, Supermarktparkplätze für Anwohner (Parken ohne Innenstadt-/Einzelhandels-Bezug, R2).
+- S. 71–73: Radwege, Fußwege, Beleuchtung, Barrierefreiheit, ÖPNV-Ausbau, Sicherheit im ÖPNV, Aufenthaltsqualität an Bahnhöfen (kein Innenstadt-Bezug). Geofencing für E-Scooter (S. 71) nicht Innenstadt-bezogen.
+- S. 77–80, 82, 116: Stadtreinigung, Bußgelder, Papierkörbe, Unterflurbehälter, Graffiti, Toiletten, Beleuchtung, Sperrmüll, Gewässer, Boote (allgemein, ohne Innenstadt-/Einzelhandels-/Leerstand-Bezug, R2); BSR-Recyclinghöfe, Öffnungszeiten (kein Einkaufsbezug).
+- S. 49, 93: Hochschul-Instandhaltung, Liegenschaftspolitik (anderer Zusammenhang).
+- S. 109, 112, 121: Öffnungszeiten von Behörden, Bädern und Bibliotheken, Sonntagsöffnung für Bibliotheken (keine Einkaufsangebote); S. 121 S-Bahn-Bögen als „Geschäftsorte“ (kein Innenstadt-/Einzelhandels-Bezug, R2).
+- S. 123: Gedenkort am Theodor-Heuss-Platz, „Aufenthaltsqualität“ (nicht Innenstadt).
+
+Richtungen ohne Maßnahme: 3602 Sortiment – keine eigene Zusage zum Sortiment gefunden; 3603 Sicherheit und Ordnung – nicht im Leitfaden zu 3603, daher nicht erfasst; 3604 Nahmobilität und Geschäfts-Öffnungszeiten – außer Sonntagsöffnung (S. 37) keine Zusage mit Innenstadt- oder Einzelhandels-Bezug.
+
+Seiten ohne Text: keine im Zusammenhang mit dem Thema.
