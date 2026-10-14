@@ -72,8 +72,10 @@ export function Methode() {
       <h2>1. Vom Problem zu den Ursachen</h2>
       <p>
         Jedes Thema (z. B. Miete) hat Ursachen, die wir mit einer Quelle belegen (z. B. „zu wenig Neubau“). Nennst du ein
-        Problem, ordnet eine KI es einem Thema und den passenden Ursachen zu. Die KI vergibt keine Punkte, nennt keine
-        Quellen und bewertet keine Parteien.
+        Problem, schlägt eine KI ein Thema und die passenden Ursachen vor. Vor jeder Wertung siehst du die Ursachen des
+        Themas und bestätigst, was auf dich zutrifft – gewertet wird nur das. Passt nichts davon, wird die Runde nicht
+        gewertet, und wir sehen uns an, welche Ursache fehlt. Die KI vergibt keine Punkte, nennt keine Quellen und
+        bewertet keine Parteien.
       </p>
       <p>
         Die Ursachen legen wir fest, bevor wir in die Wahlprogramme schauen. Sie beschreiben, was schiefläuft, nicht wie
@@ -200,7 +202,7 @@ export function Methode() {
           Einzelmaßnahme bleibt konkurrenzfähig. Die Gründe und die Forschung dazu stehen im Methodenpapier.
         </li>
         <li>
-          Die Rundenpunkte sind die Summe über alle zugeordneten Ursachen. Parteien setzen oft an verschiedenen Ursachen
+          Die Rundenpunkte sind die Summe über alle Ursachen, die du bestätigt hast (höchstens drei). Parteien setzen oft an verschiedenen Ursachen
           an; so können sehr unterschiedliche Programme ähnlich viele Punkte erreichen.
         </li>
         <li>Die höhere Summe bekommt den Spielpunkt, bei Gleichstand beide.</li>

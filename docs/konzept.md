@@ -12,7 +12,7 @@ Ausführliche Fassung des Konzepts (bis Oktober 2026 in `CLAUDE.md`). Die Grundp
    - `wert` → respektvoll als persönliche Haltung benennen, Runde ohne Wertung, neues Problem möglich. Berührt die Haltung eindeutig eine erfasste Wertfrage (`haltung_id`, nur Haltungen mit Position aller sieben Parteien), zeigt die Runde die **Haltungskarte** (höchstens eine je Runde): die Frage, die Position jeder Partei aus dem Bundesprogramm (`ja`/`nein`/`teils`/`keine_aussage`, Kurzfassung, Zitat aufklappbar, Beleg-Link) und die Zielkonflikte beider Seiten – ohne Punkte, ohne Hervorhebung der gewählten Parteien; verwandte Themen zum Antippen führen zu deren Ursachen.
    - `grenze` → Abwertung einer Gruppe (Menschenwürde, gleiche Rechte), Gewaltaufruf oder Beleidigung: „Darauf geht das Spiel nicht ein. Magst du ein Problem aus deinem Alltag nennen?“ – ohne Belehrung, ohne Wiedergabe, ohne Karte; in `runden` ohne Inhalt (Wortlaut nur in `review_eingaben`, s. Datenschutz); neues Problem möglich. Ein Pauschalurteil über eine Gruppe ist **kein** `grenze`-Fall (dort Nachfrage nach dem Erlebten), im Zweifel Nachfrage (`docs/methode.md` → „Grenze“).
    - Die eigene Eingabe bleibt sichtbar: nach einer Runde ohne Wertung (auch `grenze`) oben im Verlauf bis zur nächsten Eingabe, nach einer Wertung in der Auflösung über der Kurzfassung (nicht im Teilen-Text).
-   - `problem` → Zuordnung zu Thema + Ursachen. Nur Ursachen, die sich aus der Schilderung erkennen lassen – höchstens drei, jede mit den Wörtern der Schilderung, die sie nennen (die Edge Function prüft, dass sie dort stehen, und verwirft sonst die Ursache; die Auflösung zeigt sie als „Deine Worte“). Nennt die Person einen klaren Grund, den keine Ursache beschreibt, gilt das Thema als nicht passend („ungeprüft – keine Wertung“, Warteschlange für neue Themen). Ist keine erkennbar, fragt die KI nach (Nachfragen insgesamt max. 2, mit Ursachen zum Antippen), sonst Runde ohne Wertung.
+   - `problem` → Zuordnung in zwei Schritten (erst Thema, dann nur dessen Ursachen), dann **Bestätigung** vor jeder Wertung (`docs/plan-zuordnung.md`): Die Ursachen des Themas stehen zum Antippen, höchstens drei. Ist die KI sicher, sind ihre Ursachen vorausgewählt („So habe ich dich verstanden“ · „Stimmt so“), sonst nichts („Was davon trifft bei dir zu?“). Immer dabei: „anderes Thema“ und „Nichts davon passt“ (Runde ohne Wertung, „noch nicht erfasst“, Eingabe zur Durchsicht, in der Admin-Ansicht als Lücke „Thema erkannt, keine passende Ursache“). Gewertet wird nur die bestätigte Auswahl; die Auflösung zeigt je Ursache den bestätigten Alltagssatz. Passt kein Thema: „ungeprüft – keine Wertung“, Warteschlange für neue Themen. Ist keine Ursache erkennbar, fragt die KI zusätzlich nach (Nachfragen insgesamt max. 2), sonst Runde ohne Wertung.
 5. Auflösung: Beide gewählten Parteien werden gezeigt mit Maßnahme, Punktzahl, Kurzbegründung und **Beleg-Links** (Wahlprogramm mit Seitenanker + ggf. Studie). Zusätzlich: welche Partei insgesamt die beste Lösung hätte.
 6. Nach 5 Runden: Gesamtsieger, Zusammenfassung aller Runden mit Links, „Worüber ihr gesprochen habt“ (alle Haltungs- und Forderungskarten der Partie, aufklappbar, nicht im Teilen-Text; eine Forderung erscheint dort nur, wenn sie einem erfassten Lösungsweg entsprach und deshalb eine Forderungskarte hatte – Forderungen ohne Karte und angetippte Ursachen nicht), Teilen-Button.
 
@@ -91,7 +91,8 @@ Row Level Security: Frontend darf nur lesen (Themen, Maßnahmen, freigegebene Pr
 
 ## KI-Schnittstelle
 
-Edge Function `analyse` erhält: Gesprächsverlauf der Runde, Rolle, Liste aller Themen + Ursachen (IDs + Kurztext + Alltagssatz) und der vollständig erfassten Haltungen (ID + Frage).
+Edge Function `analyse` erhält: Gesprächsverlauf der Runde, Rolle, Bundesland, Parteien – oder eine bestätigte Auswahl (`auswahl: { thema_id, ursachen_ids }`, bzw. `passt_nicht: true` mit leerer Liste), dann ohne KI-Aufruf.
+Die KI wird in zwei Schritten gefragt (`ordneEin` in `_shared/ki.ts`): **Schritt 1** mit allen Themen (ID, Name, Beschreibung) und den vollständig erfassten Haltungen (Kennung „H&lt;id&gt;“ + Frage) – Typ, Thema, `thema_sicher`, `thema_kandidaten`, `mehrere_probleme`; **Schritt 2** nur bei einem Problem mit Thema, nur mit dessen Ursachen (ID, Kurztext, Alltagssatz) – `ursachen_ids`, `ursachen_belege`, `sicher`. Ist etwas unsicher, enthält die Antwort keine Ursachen, sondern eine Nachfrage mit Thema. Schlägt die KI Ursachen vor, speichert die Funktion die Runde nicht; das tut erst die Anfrage mit der bestätigten Auswahl.
 Antwort (JSON):
 
 ```json
@@ -100,8 +101,10 @@ Antwort (JSON):
   "nachfrage": "string[] | null (drei Fassungen; die Edge Function zeigt eine zufällig)",
   "thema_id": "number | null",
   "ursachen_ids": [1, 2],
+  "thema_kandidaten": "number[] (nur bei einer Nachfrage zu einem Problem: weitere Themen für „anderes Thema“)",
+  "passt_nicht": "true (nur als Antwort auf „Nichts davon passt“)",
   "instrument_id": "number | null (nur bei forderung mit Thema; zweiter, kurzer Aufruf nur mit den Instrumenten des Themas)",
-  "haltung_id": "number | null (nur bei wert; nur vollständig erfasste Haltungen stehen im Prompt)",
+  "haltung_id": "number | null (nur bei wert; im Prompt als „H<id>“, nur vollständig erfasste Haltungen)",
   "pauschal": "boolean (Pauschalurteil über eine Gruppe: keine Ursachenauswahl)",
   "rueckmeldung": "string[] | null (drei Fassungen; bei wert und abschließender forderung: greift die Äußerung neutral auf; sonst fester Satz)",
   "zusammenfassung": "kurzer neutraler Satz zum Problem"
@@ -110,7 +113,7 @@ Antwort (JSON):
 
 Systemprompt-Regeln: neutral, respektvoll, keine Belehrung, keine eigenen Bewertungen von Parteien, keine Links, Deutsch, kurze Sätze. Temperatur niedrig (0,1), damit die Zuordnung zu Thema und Ursachen stabil bleibt; Abwechslung im Text kommt aus den drei Fassungen, nicht aus einer höheren Temperatur.
 
-**Zuordnung messen:** `MISTRAL_API_KEY=… npm run ki:testset` schickt die festen Fälle aus `scripts/ki-testset/faelle.json` mit dem Prompt und Katalog des Arbeitsverzeichnisses an Mistral und zählt, wie oft Typ, Thema und Ursachen stimmen (zu viele, zu wenige, unnötige Nachfragen). So lässt sich eine Änderung am Prompt oder an Beschreibungen vor dem Deploy mit dem Stand von `main` vergleichen; die Antworten schwanken etwas, daher bei knappen Unterschieden `--runden 3`. Schreibt nichts in die Datenbank, kostet aber echte KI-Aufrufe – nicht Teil der CI.
+**Zuordnung messen:** `MISTRAL_API_KEY=… npm run ki:testset` schickt die festen Fälle aus `scripts/ki-testset/faelle.json` mit dem Ablauf (`ordneEin`, Schritt 1 und 2) und Katalog des Arbeitsverzeichnisses an Mistral und zählt, wie oft Typ, Thema und Ursachen stimmen (zu viele, zu wenige, unnötige Nachfragen). So lässt sich eine Änderung am Prompt oder an Beschreibungen vor dem Deploy mit dem Stand von `main` vergleichen; die Antworten schwanken etwas, daher bei knappen Unterschieden `--runden 3`. Schreibt nichts in die Datenbank, kostet aber echte KI-Aufrufe – nicht Teil der CI.
 
 ## Moderation
 

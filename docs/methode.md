@@ -15,7 +15,7 @@ Das Ziel: Politik an dem messen, was sie für konkrete Probleme vorschlägt, nic
 Fünf Regeln gelten ohne Ausnahme:
 
 1. **Neutrale Methode, kein vorgegebenes Ergebnis.** Alle Parteien werden nach denselben Kriterien bewertet. Bietet eine Partei nachweislich die beste Lösung, gewinnt sie – egal welche.
-2. **Die KI vergibt keine Punkte.** Sie führt nur das Gespräch und ordnet ein Problem einem Thema und seinen Ursachen zu. Die Punkte kommen immer aus einer geprüften Datenbank.
+2. **Die KI vergibt keine Punkte.** Sie führt nur das Gespräch und schlägt vor, zu welchem Thema und welchen Ursachen ein Problem gehört. Gewertet wird nur, was die Person bestätigt hat. Die Punkte kommen immer aus einer geprüften Datenbank.
 3. **Jede Bewertung hat einen Beleg.** Quellen und Links stammen nur aus der Datenbank, die KI erfindet keine. Jede Maßnahme ist mit wörtlichem Zitat und Seitenangabe im Wahlprogramm belegt.
 4. **Forderung ist nicht gleich Problem.** Sagt jemand „weniger X“, fragt das Spiel nach dem konkreten Alltagsproblem dahinter. Bewertet wird die Lösung für das Problem, nicht die Forderung.
 5. **Datenschutz.** Politische Meinungen sind besonders geschützte Daten (Art. 9 DSGVO). Es gibt keine Konten, es werden keine IP-Adressen und keine Sprachaufnahmen gespeichert, nur der anonyme Problemtext. Endet eine Runde ohne Wertung, wird der Wortlaut der Eingaben für höchstens 30 Tage zur Prüfung der Einordnung aufbewahrt, nur für Admins sichtbar und ohne Verbindung zur Runde.
@@ -109,8 +109,13 @@ Wirksamkeit misst den Beitrag zum Ziel der Betroffenen; Vor- und Nachteile für 
 ### Punkte in der Runde
 
 1. Pro Ursache zählen die verschiedenen Lösungswege einer Partei mit abnehmendem Gewicht: der beste voll, der zweite zur Hälfte, der dritte zu einem Viertel und so weiter, zusammen höchstens 9 Punkte – so viel wie eine einzelne Maßnahme mit Bestwerten. Mehrere Maßnahmen zum selben Lösungsweg (Instrument) zählen nur einmal. Begründung und Beispiel im nächsten Abschnitt.
-2. Die Rundenpunkte sind die Summe über alle Ursachen, denen das Problem zugeordnet wurde. Zugeordnet werden nur Ursachen, die sich aus der Schilderung erkennen lassen – nicht vorsorglich alle Ursachen des Themas, sonst gewänne bei vagen Problemen, wer zum Thema die meisten Maßnahmen hat. Deshalb höchstens drei, und die KI muss je Ursache die Wörter der Schilderung nennen, die sie stützen; stehen sie dort nicht, zählt die Ursache nicht. Setzt eine Maßnahme an mehreren der zugeordneten Ursachen an, zählt sie bei jeder davon; die Auflösung weist darauf hin. Ist keine Ursache erkennbar, fragt das Spiel nach, woran es konkret hakt (zusammen mit Nachfragen zu Forderungen höchstens zweimal); bleibt es unklar, wird die Runde nicht gewertet.
-   Ist das Thema erkennbar, zeigt das Spiel bei jeder Nachfrage zusätzlich die Ursachen des Themas zum Antippen. Angetippte Ursachen gelten als Schilderung der Person und werden gewertet wie eine Zuordnung durch die KI – höchstens drei, aus demselben Grund wie oben. Bei pauschalen Urteilen über Gruppen gibt es keine Auswahl, nur die Nachfrage nach dem Erlebten.
+2. Die Rundenpunkte sind die Summe über alle Ursachen, die die Person für ihr Problem bestätigt hat. Höchstens drei – nicht alle Ursachen des Themas, sonst gewänne bei vagen Problemen, wer zum Thema die meisten Maßnahmen hat. Setzt eine Maßnahme an mehreren der bestätigten Ursachen an, zählt sie bei jeder davon; die Auflösung weist darauf hin.
+   **Zuordnung und Bestätigung** (Begründung: `docs/plan-zuordnung.md`): Die KI ordnet in zwei Schritten zu – erst das Thema, dann nur unter dessen Ursachen; je Ursache nennt sie die Wörter der Schilderung, die sie stützen. Vor jeder Wertung sieht die Person die Ursachen des Themas in der Sprache der Betroffenen:
+   - Ist die Zuordnung sicher, sind die Ursachen der KI vorausgewählt („So habe ich dich verstanden“); die Person bestätigt („Stimmt so“) oder ändert die Auswahl.
+   - Ist sie unsicher, ist nichts vorausgewählt („Was davon trifft bei dir zu?“). Unsicher heißt: Die KI ist beim Thema unsicher, ein anderes Thema kommt in Frage, die Schilderung nennt mehrere Probleme aus verschiedenen Themen, oder die KI ist bei den Ursachen unsicher. Ein Beleg, der kein Wort mit seiner Ursache teilt, verwirft diese Ursache; bleibt keine übrig, ist die Zuordnung unsicher.
+   - Immer gibt es „anderes Thema“ und „Nichts davon passt“. Dann wird die Runde nicht gewertet, das Spiel sagt, dass dieser Teil des Themas noch nicht erfasst ist, und die Eingabe geht zur Durchsicht (Grundprinzip 5) – so zeigt sich, welche Ursachen im Katalog fehlen.
+
+   Ist keine Ursache erkennbar, fragt das Spiel zusätzlich nach, woran es konkret hakt (zusammen mit Nachfragen zu Forderungen höchstens zweimal); man kann antippen oder weiterschreiben. Bleibt es unklar, wird die Runde nicht gewertet. Bei pauschalen Urteilen über Gruppen gibt es keine Auswahl, nur die Nachfrage nach dem Erlebten.
 3. Die höhere Summe bekommt den Spielpunkt, bei Gleichstand beide.
 4. Nach fünf Runden gewinnt, wer mehr Spielpunkte hat. Zusätzlich zeigt jede Runde, welche aller sieben Parteien die beste Lösung hätte.
 
@@ -215,13 +220,13 @@ Die KI ist Übersetzerin, nicht Schiedsrichterin. Sie macht aus einem frei formu
 | --- | --- |
 | erkennt, ob ein Problem, eine Forderung oder eine Haltung genannt wurde | vergibt Punkte |
 | gibt eine Forderung neutral wieder und stellt höchstens zwei Nachfragen nach dem Alltagsproblem | nennt Quellen oder Links |
-| ordnet das Problem (oder die Forderung) einem Thema und das Problem dessen Ursachen zu; ordnet eine Forderung – in einem zweiten, kurzen Aufruf nur mit den Lösungswegen dieses Themas – einem davon zu, wenn sie ihm eindeutig entspricht (sonst keinem) | bewertet Parteien oder äußert sich zu ihnen |
+| schlägt für das Problem (oder die Forderung) ein Thema und – in einem zweiten Aufruf nur mit dessen Ursachen – die Ursachen vor; gewertet wird erst, was die Person bestätigt; ordnet eine Forderung – in einem zweiten, kurzen Aufruf nur mit den Lösungswegen dieses Themas – einem davon zu, wenn sie ihm eindeutig entspricht (sonst keinem) | bewertet Parteien oder äußert sich zu ihnen |
 | fasst das Problem in einem neutralen Satz zusammen | belehrt oder kommentiert Meinungen |
 | greift eine Haltung oder Forderung in eigenen Worten auf und lädt zu einem Alltagsproblem ein | stimmt Haltungen zu oder widerspricht ihnen |
 | ordnet eine Haltung einer erfassten Wertfrage zu, wenn sie diese eindeutig berührt (sonst keiner) – nur Nummer und Frage, nicht die Positionen | formuliert oder behauptet Positionen von Parteien |
 | erkennt Abwertung von Gruppen, Gewaltaufrufe und Beleidigungen (Grenze) – im Zweifel fragt sie lieber nach | gibt solche Äußerungen wieder oder kommentiert sie |
 
-Technisch abgesichert: Die KI antwortet in einem festen Format, die Antwort wird geprüft (nur IDs aus dem Katalog, keine Links), Parteinamen in KI-Texten werden entfernt. Die Punkte berechnet ein festes Programm aus der Datenbank – dieselbe Eingabe ergibt immer dasselbe Ergebnis.
+Technisch abgesichert: Gewertet wird nur, was die Person bestätigt hat. Die KI antwortet in einem festen Format, die Antwort wird geprüft (nur IDs aus dem Katalog, keine Links), Parteinamen in KI-Texten werden entfernt. Die Punkte berechnet ein festes Programm aus der Datenbank – dieselbe Eingabe ergibt immer dasselbe Ergebnis.
 
 ## Prüfverfahren
 
