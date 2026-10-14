@@ -42,6 +42,32 @@ Der Prompt regelt diese Fälle schon (`ki.ts` → `systemPrompt`: „Nimm keine 
 
 Einzelergebnisse liegen nicht im Repository; der Lauf ist mit dem Befehl oben wiederholbar.
 
+## Messung nach Schritt 2 (14. 10. 2026)
+
+Dieselben 20 Fälle, je ein Lauf, mit `ordneEin` (Schritt 1 und 2, wie in der Edge Function):
+
+| | vorher (ein Aufruf) | nachher (zwei Schritte) |
+| --- | --- | --- |
+| alles richtig | 11/20 | 11/20 |
+| falsche Ursachen (falsche statt richtiger) | 2 | **0** |
+| zu viele Ursachen | 3 | 3 |
+| zu wenige Ursachen | 1 | 3 |
+| unnötige Nachfragen | 0 | 0 |
+| Thema richtig | 17/20 | 17/20 |
+| Token Eingabe je Aufruf | 16.764 | rund 4.500 (Schritt 1) + rund 1.000 (Schritt 2) |
+
+- **Besser:** Keine Ursache wird mehr mit einem unpassenden Beleg gewertet (Formulare → „dieselben Nachweise bei jeder Behörde“ ist weg). Kosten je Einordnung rund ein Drittel.
+- **Schlechter:** Die Belegprüfung verwirft auch richtige Nebenursachen, wenn die Wörter nicht übereinstimmen („Personal überlastet“ → „zu wenige Pflegekräfte“). Mit der Bestätigung in der App ist das harmlos: Die Ursache ist dann nur nicht vorausgewählt.
+- **Unverändert:** Rente (702 trotz 40 Arbeitsjahren), Bahnhof (902 zusätzlich), Themenwahl bei Windrad-Lärm, Tanken/Tafel und der Windrad-Forderung. Die Aufteilung behebt falsche Themen nicht – dafür ist „anderes Thema“ in der Bestätigung da.
+- Ein Lauf je Fall: Unterschiede von ein, zwei Fällen liegen im Rauschen.
+
+**Abweichungen vom Plan, die die Messung ergab:**
+
+- Ein unpassender Beleg verwirft nur seine Ursache; unsicher ist die Zuordnung erst, wenn keine übrig bleibt (sonst fragte das Spiel bei einer unpassenden Nebenursache nach).
+- „Mehrere Probleme“ und weitere Themen zählen nur, wenn die KI ein **anderes** Thema nennt – sonst meldete sie auch Wartezeit und Formulare beim Amt als mehrere Probleme.
+- Bei einer Forderung, bei der die KI beim Thema unsicher ist, wird kein Thema übernommen (die Windrad-Forderung kam als Thema Schule mit `thema_sicher: false`).
+- Haltungen tragen im Prompt die Kennung „H4“ statt der bloßen Nummer, damit Haltungs- und Themennummern nicht verwechselt werden können. Die Windrad-Forderung behob das nicht; die Kennung bleibt als Vorsorge.
+
 ## Katalog-Nachträge aus dem Gegenlesen
 
 Beim Gegenlesen der Testfälle festgelegt – je über die bestehenden Skills (`/thema-anlegen`, `/thema-erfassen`, `/haltung-erfassen`), nicht über den Prompt:
@@ -200,7 +226,7 @@ Nach jeder Eingabe mit Thema erscheint vor der Auflösung eine von zwei Ansichte
 ## Reihenfolge
 
 1. ~~Testsatz anlegen, gegenlesen, mit dem heutigen Stand laufen lassen~~ (erledigt, siehe „Ausgangsmessung“).
-2. Schritt 1 und 2 in `ki.ts` und `analyse/index.ts`, mit den Auslösern, Unit-Tests und Mock. Antwortformat abwärtskompatibel halten, bis die App umgestellt ist.
+2. ~~Schritt 1 und 2 in `ki.ts` und `analyse/index.ts`, mit den Auslösern und Unit-Tests~~ (umgesetzt, siehe „Messung nach Schritt 2“). Bis die App umgestellt ist, wird eine unsichere Zuordnung wie bisher zur Nachfrage mit Ursachen zum Antippen; `thema_kandidaten` liefert die Antwort schon mit. Der Mock (`src/logic/analyse.ts`) ordnet weiter in einem Schritt über Schlagwörter zu.
 3. Bestätigung in der App (`Runde.tsx`, `UrsachenAuswahl.tsx`, `Aufloesung.tsx`), „Nichts davon passt“ mit Speicherung.
 4. Testsatz erneut laufen lassen; Füllwörter und Auslöser nachjustieren.
 5. `docs/methode.md` und die übrigen Dokumente anpassen.

@@ -48,8 +48,35 @@ export type HaltungKurz = Pick<HaltungEintrag, 'id' | 'frage'>
  * Prompt wie bisher – dann gibt es keine Haltungskarte.
  */
 export function systemPrompt(themen: Thema[], ursachen: Ursache[], haltungen: HaltungKurz[] = []): string {
+  return baueSystemPrompt(themen, ursachen, haltungen)
+}
+
+/**
+ * Schritt 1 der Zuordnung (docs/plan-zuordnung.md): derselbe Prompt, aber der Katalog nur mit Themen. Die
+ * Ursachen ordnet ein zweiter Aufruf nur unter den Ursachen des erkannten Themas zu (`ursachenPrompt`) – so
+ * kann ein Satz nicht an einer ähnlich klingenden Ursache eines fremden Themas hängen bleiben.
+ */
+export function themenPrompt(themen: Thema[], haltungen: HaltungKurz[] = []): string {
+  return baueSystemPrompt(themen, null, haltungen)
+}
+
+/**
+ * Haltungen tragen im Prompt eine eigene Kennung („H4“): Mit bloßen Nummern hat die KI die Nummer einer Haltung
+ * als Thema eingetragen („Schluss mit den Windrädern“ → Haltung 4 zur Windkraft → Thema 4, Schule).
+ */
+const haltungKennung = (id: number) => `H${id}`
+/** „H4“ (wie im Prompt) oder 4 (ältere Antworten) → 4; alles andere null. */
+function haltungAusKennung(roh: unknown): number | null {
+  if (typeof roh === 'number' && Number.isInteger(roh)) return roh
+  const treffer = typeof roh === 'string' ? /^H(\d+)$/.exec(roh.trim()) : null
+  return treffer ? Number(treffer[1]) : null
+}
+
+/** `ursachen` null: Schritt 1 (nur Themen). */
+function baueSystemPrompt(themen: Thema[], ursachen: Ursache[] | null, haltungen: HaltungKurz[]): string {
   const katalog = themen
     .map((t) => {
+      if (!ursachen) return `- Thema ${t.id}: ${t.name} – ${t.beschreibung}`
       const u = ursachen
         .filter((x) => x.thema_id === t.id)
         .map((x) => `    - Ursache ${x.id}: ${x.beschreibung}${x.alltag ? ` – im Alltag: „${x.alltag}“` : ''}`)
@@ -59,7 +86,7 @@ export function systemPrompt(themen: Thema[], ursachen: Ursache[], haltungen: Ha
     .join('\n')
 
   return `Du moderierst das Spiel „Politik-Duell“. Spieler:innen nennen Alltagsprobleme.
-Deine einzige Aufgabe: die Äußerung einordnen und einem Thema und Ursachen aus dem Katalog zuordnen.
+Deine einzige Aufgabe: die Äußerung einordnen und ${ursachen ? 'einem Thema und Ursachen' : 'einem Thema'} aus dem Katalog zuordnen.
 
 Regeln:
 - Neutral, respektvoll, freundlich. Keine Belehrung. Deutsch, kurze Sätze.
@@ -90,7 +117,8 @@ Einordnung ("typ"):
     haltungen.length
       ? `
   Berührt die Haltung eindeutig eine der Fragen unter „Haltungen“ (gleich, welche Seite die Person vertritt),
-  setze "haltung_id" auf deren Nummer, sonst null. Rate nicht: Ähnlich oder verwandt genügt nicht.
+  setze "haltung_id" auf deren Kennung (z. B. "H4"), sonst null. Rate nicht: Ähnlich oder verwandt genügt nicht.
+  Die Kennung einer Haltung ist nie eine "thema_id".
   Antwortet die Person ohne Alltagsproblem mit Ja oder Nein auf genau eine dieser Fragen (z. B. „Bei der Frage
   … bin ich dafür“), ist das "wert" mit dieser "haltung_id" – auch wenn die Frage nach einer Maßnahme klingt.
   Dasselbe gilt für ein kurzes Für oder Gegen genau den Gegenstand einer Frage (z. B. „Ich bin für ein Tempolimit“
@@ -124,7 +152,9 @@ Sonst ist "rueckmeldung" null (Ausnahme: abschließende Forderung, siehe Hinweis
     haltungen.length ? '\n"haltung_id" ist nur bei "wert" gesetzt, sonst immer null.' : ''
   }
 
-Zuordnung ("thema_id" bei "problem" und "forderung", alles Weitere nur bei "problem"):
+${
+  ursachen
+    ? `Zuordnung ("thema_id" bei "problem" und "forderung", alles Weitere nur bei "problem"):
 - "thema_id": die ID aus dem Katalog, die am besten passt, sonst null.
 - "ursachen_ids": nur die IDs der Ursachen dieses Themas, die die Schilderung selbst nennt oder erkennbar beschreibt –
   höchstens ${MAX_AUSWAHL}, die deutlichste zuerst. Nimm keine Ursache dazu, nur weil sie zum Thema gehört oder ähnlich
@@ -147,7 +177,29 @@ Zuordnung ("thema_id" bei "problem" und "forderung", alles Weitere nur bei "prob
   einer Baustelle nebenan beim Thema Miete), dann passt kein Thema – nimm nicht ersatzweise die nächstliegende
   Ursache und frag nicht nach. Nachfragen nur, wenn die Schilderung zu allgemein ist, um einen Grund zu erkennen.
 - Passt kein Thema: "thema_id": null, "ursachen_ids": [] und in "einschaetzung" 1–2 neutrale Sätze zu möglichen
-  Ursachen des Problems – ohne Parteien, ohne Lösungsbewertung, ohne Links.
+  Ursachen des Problems – ohne Parteien, ohne Lösungsbewertung, ohne Links.`
+    : `Zuordnung ("thema_id" bei "problem" und "forderung", alles Weitere nur bei "problem"):
+- "thema_id": die ID aus dem Katalog, deren Gegenstand das Problem ist, sonst null. Ordne nach dem, worum es der
+  Person geht, nicht nach einzelnen Wörtern (z. B. „Wegen des Lärms nebenan schlafe ich schlecht“ ist kein
+  Thema zu Hitze, nur weil dort auch schlechter Schlaf vorkommt).
+- "thema_sicher": true nur, wenn genau ein Thema eindeutig passt. Passen mehrere Themen oder berührt die
+  Schilderung das Thema nur am Rand: false.
+- "thema_kandidaten": bei "thema_sicher": false oder "mehrere_probleme": true bis zu zwei weitere Themen-IDs,
+  die ebenfalls in Frage kommen; sonst [].
+- "mehrere_probleme": true, wenn die Person mehrere verschiedene Probleme nennt, die zu verschiedenen Themen
+  gehören (z. B. „Der Hausarzt ist weit weg, und der Bus fährt kaum“). Dann "thema_id" für das Problem, das sie
+  zuerst oder am deutlichsten nennt, die übrigen in "thema_kandidaten", und in "nachfrage" genau eine kurze,
+  freundliche Frage, welches Problem in dieser Runde zählen soll. Eine Folge desselben Problems (z. B. „ohne Auto
+  komme ich nicht zum Einkaufen“) ist kein weiteres Problem, ebenso mehrere Gründe innerhalb desselben Themas
+  (z. B. teure Fahrkarten und unpünktliche Züge). Sonst false.
+- Die Ursachen des Themas ordnet ein zweiter Schritt zu. Ist die Schilderung so allgemein, dass sich kein Grund
+  erkennen lässt, schreib in "nachfrage" genau eine kurze, freundliche Frage, woran es im Alltag konkret hakt,
+  z. B. „Was genau macht dir dabei Sorgen?“. Gib keine Antworten vor. Sonst ist "nachfrage" bei "problem" null.
+- Nennt die Person einen klaren Grund für ihr Problem, den kein Thema beschreibt (z. B. Lärm von einer Baustelle
+  nebenan), dann passt kein Thema – nimm nicht ersatzweise das nächstliegende.
+- Passt kein Thema: "thema_id": null und in "einschaetzung" 1–2 neutrale Sätze zu möglichen Ursachen des
+  Problems – ohne Parteien, ohne Lösungsbewertung, ohne Links.`
+}
 
 "zusammenfassung": ein kurzer, neutraler Satz zum Problem, ohne Namen oder persönliche Details.
 "stichwort": 1–3 Wörter, die das Problem neutral benennen (z. B. „Facharzttermin“, „Nebenkosten-Nachzahlung“),
@@ -164,14 +216,18 @@ ${
   haltungen.length
     ? `
 Haltungen (Wertfragen, nur für "wert"):
-${haltungen.map((h) => `- Haltung ${h.id}: ${h.frage}`).join('\n')}
+${haltungen.map((h) => `- Haltung ${haltungKennung(h.id)}: ${h.frage}`).join('\n')}
 `
     : ''
 }
 Antworte ausschließlich mit einem JSON-Objekt:
 {"typ": "problem" | "forderung" | "wert" | "grenze", "nachfrage": string[] | null, "thema_id": number | null,
- "ursachen_ids": number[], "ursachen_belege": {[id: string]: string}, "pauschal": boolean, "zusammenfassung": string, "stichwort": string,
- "einschaetzung": string | null, "rueckmeldung": string[] | null${haltungen.length ? ', "haltung_id": number | null' : ''}}`
+${
+   ursachen
+     ? ' "ursachen_ids": number[], "ursachen_belege": {[id: string]: string},'
+     : ' "thema_sicher": boolean, "thema_kandidaten": number[], "mehrere_probleme": boolean,'
+ } "pauschal": boolean, "zusammenfassung": string, "stichwort": string,
+ "einschaetzung": string | null, "rueckmeldung": string[] | null${haltungen.length ? ', "haltung_id": string | null' : ''}}`
 }
 
 // ---------------------------------------------------------------------------
@@ -238,6 +294,168 @@ export function bereinigeInstrument(roh: unknown, erlaubt: Pick<InstrumentKurz, 
 export function mitInstrument(antwort: AnalyseAntwort, instrumentId: number | null): AnalyseAntwort {
   if (antwort.typ !== 'forderung' || antwort.pauschal || antwort.thema_id === null || instrumentId === null) return antwort
   return { ...antwort, instrument_id: instrumentId }
+}
+
+// ---------------------------------------------------------------------------
+// Zuordnung in zwei Schritten (docs/plan-zuordnung.md): Schritt 1 erkennt Typ und Thema (`themenPrompt`),
+// Schritt 2 wählt nur unter den Ursachen dieses Themas (`ursachenPrompt`). Ist eine der beiden Antworten
+// unsicher, zählt keine Ursache: Die Antwort wird eine Nachfrage mit Thema, und die Person tippt selbst an.
+// ---------------------------------------------------------------------------
+
+export function ursachenPrompt(thema: Pick<Thema, 'id' | 'name' | 'beschreibung'>, ursachen: Ursache[]): string {
+  const liste = ursachen
+    .map((u) => `- Ursache ${u.id}: ${u.beschreibung}${u.alltag ? ` – im Alltag: „${u.alltag}“` : ''}`)
+    .join('\n')
+  return `Du hilfst im Spiel „Politik-Duell“. Eine Person hat ein Alltagsproblem zum Thema „${thema.name}“ genannt
+(${thema.beschreibung}). Deine einzige Aufgabe: Welche der folgenden Ursachen nennt oder beschreibt sie selbst?
+
+Regeln:
+- "ursachen_ids": nur Ursachen, die die Schilderung selbst nennt oder erkennbar beschreibt – höchstens ${MAX_AUSWAHL},
+  die deutlichste zuerst. Nimm keine Ursache dazu, nur weil sie zum Thema gehört oder ein Wort mit der Schilderung
+  teilt – jede zugeordnete Ursache zählt in der Wertung.
+- Setzt eine Ursache eine bestimmte Lage voraus (z. B. einen laufenden Vertrag, einen Heimplatz, einen bestimmten
+  Wohnort), ordne sie nur zu, wenn die Schilderung diese Lage erkennen lässt. Widerspricht die Schilderung dieser
+  Lage (z. B. „ich wohne seit 20 Jahren in derselben Wohnung“ bei einer Ursache über Neuvermietungen), passt sie nicht.
+- Ein gemeinsames Wort genügt nicht: Der Beleg muss denselben Grund nennen wie die Ursache (z. B. „der Bus kommt
+  ständig zu spät“ nennt Unpünktlichkeit, nicht zu teure Fahrkarten, auch wenn beide vom Bus handeln).
+- "ursachen_belege": zu jeder Ursache in "ursachen_ids" die Wörter aus der Schilderung, die genau diesen Grund
+  nennen – wörtlich übernommen, höchstens acht Wörter, z. B. {"204": "Miete wird jedes Jahr erhöht"}. Dieselben
+  Wörter stützen nie zwei Ursachen. Findest du keine Wörter, die diesen Grund nennen, ordne die Ursache nicht zu.
+- „im Alltag: …“ zeigt, wie Betroffene eine Ursache typischerweise erleben. Vergleiche die Schilderung damit,
+  auch wenn sie aus der Sicht anderer Beteiligter kommt (z. B. Anwohner statt Veranstalter, Eltern statt Jugendliche).
+- Unterscheide Erlebnis und Gefühl: Schildert jemand vor allem ein Gefühl oder eine Sorge (z. B. „Ich fühle mich
+  unsicher, seit …“), passen Ursachen, die beschreiben, wie Wahrnehmung und Wirklichkeit auseinanderfallen oder wo
+  sich Unsicherheit ballt. Ursachen zu Taten oder Tätergruppen nur, wenn die Schilderung sie erkennen lässt.
+- "sicher": true nur, wenn jede gewählte Ursache den Grund trifft, den die Person nennt. Nennt sie einen Grund,
+  den keine Ursache beschreibt, passt eine Ursache nur ungefähr oder ist die Schilderung zu allgemein: false.
+- Bewerte nichts und nenne keine Parteien, Links oder Zahlen.
+
+Ursachen:
+${liste}
+
+Antworte ausschließlich mit einem JSON-Objekt:
+{"ursachen_ids": number[], "ursachen_belege": {[id: string]: string}, "sicher": boolean}`
+}
+
+/** Wörter ohne Aussage über einen Grund – sie zählen beim Abgleich von Beleg und Ursache nicht. */
+const FUELLWOERTER = new Set(
+  ('kaum nicht immer mehr sehr viel viele vielen ganz noch schon auch eben einfach mein meine meinem meinen meiner ' +
+    'mich unser unsere unserem unseren keine keinen keinem einen einem einer eine dass weil wenn aber oder doch dann ' +
+    'denn jetzt hier dort habe haben hatte wird werden wurde sind bist kann koennen muss muessen soll sollen ' +
+    'gibt alle alles jeden jede jeder ihre ihren sein seine sich diese dieser dieses fuer ueber unter nach seit gegen ' +
+    'ohne beim wieder total echt leider bald heute gerade schon etwas nichts leute menschen')
+    .split(' '),
+)
+
+const grundWoerter = (s: string) =>
+  s
+    .toLowerCase()
+    .replace(/ä/g, 'ae')
+    .replace(/ö/g, 'oe')
+    .replace(/ü/g, 'ue')
+    .replace(/ß/g, 'ss')
+    .split(/[^a-z]+/)
+    .filter((w) => w.length >= 4 && !FUELLWOERTER.has(w))
+
+/**
+ * Trägt der Beleg die Ursache? Mindestens ein Wort des Belegs muss – als Wortanfang, auch in Zusammensetzungen
+ * („Bahnhof“ in „Hauptbahnhof“) – in Beschreibung oder Alltagsfassung der Ursache vorkommen. Bewusst grob: Es soll
+ * nur Verdächtiges finden („Bus fährt kaum“ zu „Termine im Gesundheitssystem werden kaum gesteuert“). Schlägt es
+ * an, wählt die Person selbst – ein falscher Alarm kostet einen Tipp, eine falsche Zuordnung eine falsche Wertung.
+ */
+export function belegPasstZuUrsache(beleg: string, ursache: Pick<Ursache, 'beschreibung' | 'alltag'>): boolean {
+  const gesucht = grundWoerter(beleg)
+  const vorhanden = grundWoerter(`${ursache.beschreibung} ${ursache.alltag ?? ''}`)
+  const stamm = (w: string) => w.slice(0, 5)
+  return gesucht.some((w) => vorhanden.some((v) => v.includes(stamm(w)) || w.includes(stamm(v))))
+}
+
+const alsObjekt = (roh: unknown): Record<string, unknown> => (roh && typeof roh === 'object' ? (roh as Record<string, unknown>) : {})
+
+/**
+ * Gründe, die Ursachen nicht zu übernehmen (leer: sicher). `schritt1`/`schritt2`: die rohen Antworten der KI;
+ * `ursachen`: die Ursachen des erkannten Themas. `beleg_<id>` betrifft nur diese Ursache (siehe `ordneEin`),
+ * alle anderen Gründe die ganze Zuordnung.
+ */
+export function unsicherheit(schritt1: unknown, schritt2: unknown, ursachen: Ursache[]): string[] {
+  const r1 = alsObjekt(schritt1)
+  const r2 = alsObjekt(schritt2)
+  const gruende: string[] = []
+  // Weitere Themen und „mehrere Probleme“ zählen nur mit einem anderen Thema als dem erkannten – sonst meldet die
+  // KI auch mehrere Gründe innerhalb eines Themas (Wartezeit und Formulare beim Amt) als mehrere Probleme.
+  const andere = (Array.isArray(r1.thema_kandidaten) ? r1.thema_kandidaten.map(Number) : []).filter(
+    (id) => Number.isInteger(id) && id !== Number(r1.thema_id),
+  )
+  if (r1.thema_sicher === false) gruende.push('thema_unsicher')
+  if (andere.length > 0) gruende.push('thema_kandidaten')
+  if (r1.mehrere_probleme === true && andere.length > 0) gruende.push('mehrere_probleme')
+  if (r2.sicher !== true) gruende.push('ursachen_unsicher')
+  const belege = alsObjekt(r2.ursachen_belege)
+  for (const id of Array.isArray(r2.ursachen_ids) ? r2.ursachen_ids.map(Number) : []) {
+    const u = ursachen.find((x) => x.id === id)
+    if (u && !belegPasstZuUrsache(kurz(belege[String(id)], 120), u)) gruende.push(`beleg_${id}`)
+  }
+  return gruende
+}
+
+export type KiNachrichten = { role: 'system' | 'user' | 'assistant'; content: string }[]
+/** Ein KI-Aufruf: Systemprompt und Gespräch → rohe JSON-Antwort. Edge Function und Testset übergeben Mistral. */
+export type FrageKi = (system: string, nachrichten: KiNachrichten) => Promise<unknown>
+
+export interface Einordnungskatalog {
+  themen: Thema[]
+  ursachen: Ursache[]
+  parteien?: Pick<Partei, 'name' | 'kurzname'>[]
+  /** Vollständig erfasste Haltungen (nur sie kommen in den Prompt). */
+  haltungen?: HaltungKurz[]
+}
+
+/**
+ * Die ganze Einordnung einer Äußerung: Schritt 1, bei einem Problem mit Thema Schritt 2, dann `bereinigeAntwort`.
+ * `unsicher` nennt die Gründe, aus denen keine Ursache übernommen wurde (für Testset und Protokoll).
+ */
+export async function ordneEin(
+  frage: FrageKi,
+  verlauf: Nachricht[],
+  rolle: Rolle | null,
+  { themen, ursachen, parteien = [], haltungen = [] }: Einordnungskatalog,
+  zufall: () => number = Math.random,
+): Promise<{ antwort: AnalyseAntwort; unsicher: string[] }> {
+  const r1 = alsObjekt(await frage(themenPrompt(themen, haltungen), nutzerNachrichten(verlauf, rolle)))
+  let roh: Record<string, unknown> = { ...r1, ursachen_ids: [] }
+  const unsicher: string[] = []
+  // Eine Forderung hat keinen zweiten Schritt, der ein unsicheres Thema auffängt: dann lieber ohne Thema (keine
+  // Ursachen eines falschen Themas zum Antippen). Beobachtet: „Schluss mit den Windrädern“ → Thema Schule, unsicher.
+  if (r1.typ === 'forderung' && r1.thema_sicher === false) {
+    roh = { ...roh, thema_id: null }
+    unsicher.push('thema_unsicher')
+  }
+  const thema = r1.typ === 'problem' ? themen.find((t) => t.id === Number(r1.thema_id)) : undefined
+  if (thema) {
+    const kandidaten = ursachen.filter((u) => u.thema_id === thema.id)
+    let r2: unknown = {}
+    try {
+      r2 = await frage(ursachenPrompt(thema, kandidaten), instrumentNachrichten(verlauf))
+    } catch {
+      unsicher.push('ursachen_keine_antwort')
+    }
+    unsicher.push(...unsicherheit(r1, r2, kandidaten))
+    // Ein unpassender Beleg verwirft nur seine Ursache; bleibt keine übrig oder ist sonst etwas unsicher, keine.
+    const { ursachen_ids, ursachen_belege } = alsObjekt(r2)
+    const verworfen = new Set(unsicher.filter((g) => g.startsWith('beleg_')).map((g) => Number(g.slice(6))))
+    const uebrig = (Array.isArray(ursachen_ids) ? ursachen_ids.map(Number) : []).filter((id) => !verworfen.has(id))
+    const ganz = unsicher.some((g) => !g.startsWith('beleg_')) || uebrig.length === 0
+    roh = { ...r1, ursachen_ids: ganz ? [] : uebrig, ursachen_belege }
+  }
+  const antwort = bereinigeAntwort(roh, verlauf, themen, ursachen, parteien, zufall, haltungen)
+  // Weitere Themen nur, wenn die Person ohnehin gefragt wird – die App kann sie dann zur Wahl stellen.
+  const weitere = (Array.isArray(r1.thema_kandidaten) ? r1.thema_kandidaten.map(Number) : [])
+    .filter((id, i, alle) => id !== antwort.thema_id && themen.some((t) => t.id === id) && alle.indexOf(id) === i)
+    .slice(0, 2)
+  return {
+    antwort: antwort.typ === 'problem' && antwort.nachfrage && weitere.length ? { ...antwort, thema_kandidaten: weitere } : antwort,
+    unsicher,
+  }
 }
 
 export function nutzerNachrichten(verlauf: Nachricht[], rolle: Rolle | null) {
@@ -497,7 +715,8 @@ export function bereinigeAntwort(
   if (typ !== 'problem') {
     const offen = typ === 'forderung' ? nachfrage || null : null
     // Haltung nur bei „wert“ und nur aus der angebotenen Liste – erfundene oder unvollständige gibt es nicht.
-    const haltungId = typ === 'wert' && typeof r.haltung_id === 'number' && haltungen.some((h) => h.id === r.haltung_id) ? r.haltung_id : null
+    const gemeint = haltungAusKennung(r.haltung_id)
+    const haltungId = typ === 'wert' && gemeint !== null && haltungen.some((h) => h.id === gemeint) ? gemeint : null
     return {
       typ,
       nachfrage: offen,

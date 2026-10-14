@@ -227,6 +227,11 @@ export interface AnalyseAntwort {
    * bietet dann dessen Ursachen zum Antippen an bzw. nennt das Thema.
    */
   thema_id: number | null
+  /**
+   * Nur bei einer Nachfrage zu einem Problem, wenn die KI beim Thema unsicher war oder mehrere Probleme erkannt
+   * hat: bis zu zwei weitere Themen, die in Frage kommen (docs/plan-zuordnung.md). Sonst fehlend.
+   */
+  thema_kandidaten?: number[]
   /** Bei `problem` höchstens MAX_AUSWAHL, jede durch Wörter aus der Schilderung gestützt (siehe `ursachen_belege`). */
   ursachen_ids: number[]
   /**

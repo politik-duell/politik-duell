@@ -6,11 +6,11 @@
 //   MISTRAL_API_KEY=… npm run ki:testset [-- --runden 3] [--nur id,id] [--json ergebnis.json]
 //
 // MISTRAL_MODEL wie in der Edge Function (Standard: mistral-medium-latest). Kostet echte KI-Aufrufe
-// (je Fall und Runde einer) – nicht Teil der CI.
+// (je Fall und Runde einer, bei einem Problem mit Thema zwei) – nicht Teil der CI.
 import { readFileSync, writeFileSync } from 'node:fs'
 import { spielbareHaltungen } from '../src/data/katalog.ts'
 import { vollstaendigeHaltungen } from '../supabase/functions/_shared/haltung.ts'
-import { bereinigeAntwort, nutzerNachrichten, systemPrompt } from '../supabase/functions/_shared/ki.ts'
+import { ordneEin, themenPrompt } from '../supabase/functions/_shared/ki.ts'
 import { frageMistral, MISTRAL_STANDARDMODELL } from '../supabase/functions/_shared/mistral.ts'
 import type { AnalyseAntwort } from '../supabase/functions/_shared/typen.ts'
 import { beurteile, bilanz, type Fall, pruefeFaelle, type Urteil } from './ki-testset/auswertung.ts'
@@ -48,12 +48,15 @@ const faelle = nur ? alle.filter((f) => nur.includes(f.id)) : alle
 // Wie die Edge Function mit Zugang zur Testphase: Haltungen, für die alle Parteien eine Position haben.
 const spielbar = spielbareHaltungen(katalog, true)
 const haltungen = vollstaendigeHaltungen(spielbar.haltungen, spielbar.positionen, katalog.parteien).map(({ id, frage }) => ({ id, frage }))
-const system = systemPrompt(katalog.themen, katalog.ursachen, haltungen)
+// Nur für die Angabe der Promptlänge; den Ablauf (Schritt 1 und 2) macht ordneEin wie in der Edge Function.
+const system = themenPrompt(katalog.themen, haltungen)
 
 interface Lauf {
   fall: Fall
   runde: number
   antwort?: AnalyseAntwort
+  /** Gründe, aus denen keine Ursache übernommen wurde (leer: sicher). */
+  unsicher?: string[]
   fehler?: string
   urteil?: Urteil
 }
@@ -73,9 +76,9 @@ async function mitWiederholung<T>(f: () => Promise<T>): Promise<T> {
 async function frage(fall: Fall, runde: number): Promise<Lauf> {
   const verlauf = [{ von: 'spieler' as const, text: fall.text }]
   try {
-    const roh = await mitWiederholung(() => frageMistral(system, nutzerNachrichten(verlauf, null), { key: key!, modell }))
-    const antwort = bereinigeAntwort(roh, verlauf, katalog.themen, katalog.ursachen, katalog.parteien, () => 0, haltungen)
-    return { fall, runde, antwort, urteil: beurteile(fall, antwort) }
+    const fragen = (s: string, n: Parameters<typeof frageMistral>[1]) => mitWiederholung(() => frageMistral(s, n, { key: key!, modell }))
+    const { antwort, unsicher } = await ordneEin(fragen, verlauf, null, { ...katalog, haltungen }, () => 0)
+    return { fall, runde, antwort, unsicher, urteil: beurteile(fall, antwort) }
   } catch (e) {
     return { fall, runde, fehler: e instanceof Error ? e.message : String(e) }
   }
@@ -101,7 +104,7 @@ console.log(`KI-Testset: ${faelle.length} Fälle × ${runden} Runde(n), Modell $
 for (const l of laeufe.filter((x) => !x.urteil?.ok)) {
   console.log(`✗ ${l.fall.id}${runden > 1 ? ` (Runde ${l.runde})` : ''}: ${l.fehler ? 'keine Antwort' : (l.urteil?.ursachen ?? 'Typ/Thema')}`)
   console.log(`    soll: ${soll(l.fall)}`)
-  console.log(`    ist:  ${l.antwort ? kurz(l.antwort) : `Fehler – ${l.fehler}`}`)
+  console.log(`    ist:  ${l.antwort ? kurz(l.antwort) : `Fehler – ${l.fehler}`}${l.unsicher?.length ? ` · unsicher: ${l.unsicher.join(', ')}` : ''}`)
 }
 const urteile = laeufe.flatMap((l) => (l.urteil ? [l.urteil] : []))
 const b = bilanz(urteile)
