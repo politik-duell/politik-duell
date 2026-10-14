@@ -136,9 +136,8 @@ Nach jeder Eingabe mit Thema erscheint vor der Auflösung eine von zwei Ansichte
 
 ## Kosten
 
-- Heute geht bei **jedem** Aufruf der ganze Katalog mit (rund 42.000 Zeichen, grob 11.000–13.000 Token).
-- Neu: Schritt 1 mit Themen ohne Ursachen (grob ein Fünftel davon), Schritt 2 mit den Ursachen eines Themas (wenige Hundert Token). Zwei Aufrufe sind damit nach dieser Schätzung **deutlich günstiger** als einer heute. Die Bestätigung kostet keinen KI-Aufruf; Nachfragen fallen bei „problem mit Thema“ weg.
-- Vor der Umsetzung den Prompt messen (Token-Angabe in der Antwort von Mistral bei einem einzelnen Aufruf), statt der Schätzung zu vertrauen.
+- Gemessen am 13. 10. 2026 (`mistral-medium-latest`, Katalog aus `daten/`, Haltungen wie in der Testphase): Heute hat **jeder** Aufruf **16.764 Token** Eingabe (Prompt rund 59.000 Zeichen, davon der Katalog mit 161 Ursachen der Großteil).
+- Derselbe Prompt ohne Ursachen – als Annäherung an Schritt 1 – hat **4.550 Token**. Schritt 2 braucht nur die Regeln zur Ursachenwahl und die Ursachen eines Themas (im Mittel rund 1.100 Zeichen, höchstens rund 2.900), geschätzt unter 1.500 Token. Zusammen etwa 6.000 statt 16.800 Token, also rund zwei Drittel weniger. Zwei Aufrufe sind damit nach dieser Schätzung **deutlich günstiger** als einer heute. Die Bestätigung kostet keinen KI-Aufruf; Nachfragen fallen bei „problem mit Thema“ weg.
 
 ## Prüfung
 
@@ -166,7 +165,7 @@ Nach jeder Eingabe mit Thema erscheint vor der Auflösung eine von zwei Ansichte
 
 ## Reihenfolge
 
-1. Prompt messen (Kosten); Testsatz mit erwarteten Ergebnissen anlegen und gegenlesen lassen; einmal mit dem heutigen Stand laufen lassen.
+1. Testsatz mit erwarteten Ergebnissen anlegen und gegenlesen lassen; einmal mit dem heutigen Stand laufen lassen.
 2. Schritt 1 und 2 in `ki.ts` und `analyse/index.ts`, mit den Auslösern, Unit-Tests und Mock. Antwortformat abwärtskompatibel halten, bis die App umgestellt ist.
 3. Bestätigung in der App (`Runde.tsx`, `UrsachenAuswahl.tsx`, `Aufloesung.tsx`), „Nichts davon passt“ mit Speicherung.
 4. Testsatz erneut laufen lassen; Füllwörter und Auslöser nachjustieren.

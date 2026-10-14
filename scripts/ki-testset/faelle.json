@@ -48,6 +48,26 @@
     { "id": "wert-gerechtigkeit", "text": "Mir ist Gerechtigkeit wichtig.", "typ": "wert", "thema": null },
     { "id": "arbeitszeit-erreichbarkeit", "text": "Mein Chef erwartet, dass ich abends und am Wochenende erreichbar bin, und ich finde kaum Zeit für meine Kinder.", "typ": "problem", "thema": null },
     { "id": "miete-suche", "text": "Ich suche seit Monaten eine Wohnung, und alles, was frei wird, ist viel teurer als meine alte Miete.", "typ": "problem", "thema": 2, "ursachen": [202], "auch": [201, 205] },
-    { "id": "kein-thema", "text": "Mein Nachbar mäht jeden Sonntag um sieben Uhr Rasen.", "typ": "problem", "thema": null }
+    { "id": "kein-thema", "text": "Mein Nachbar mäht jeden Sonntag um sieben Uhr Rasen.", "typ": "problem", "thema": null },
+    { "id": "tp-rente-reicht-nicht", "text": "Ich bin 68 und habe 40 Jahre gearbeitet, aber meine Rente reicht nach Miete und Strom kaum zum Leben. Am Monatsende muss ich bei den Lebensmitteln sparen.", "typ": "problem", "thema": 7, "ursachen": [], "auch": [701, 702], "rueckfrage": true },
+    { "id": "tp-arzt-land", "text": "Ich wohne in einem Dorf bei Stendal. Für einen Termin beim Facharzt, Augenarzt oder Kardiologen warte ich ein halbes Jahr, und der nächste Hausarzt ist 15 Kilometer weg, der Bus fährt kaum.", "typ": "problem", "thema": 1, "ursachen": [101], "auch": [102, 103] },
+    { "id": "tp-energie-co2", "text": "Meine Gasrechnung und der Strom sind in den letzten Jahren so teuer geworden, dass ich im Winter nur noch ein Zimmer heize. Dazu kommt die CO2-Abgabe.", "typ": "problem", "thema": 3, "ursachen": [302], "auch": [305] },
+    { "id": "tp-bahnhof", "text": "Am Hauptbahnhof in Magdeburg traue ich mich abends nicht mehr hin. Da gibt es Drogenhandel und Messerangriffe, und die Polizei sieht man kaum.", "typ": "problem", "thema": 9, "ursachen": [901] },
+    { "id": "tp-pauschal", "text": "Die Ausländer kriegen alles in den Hintern geschoben und wir Alten gehen leer aus. Die Grenzen müssen endlich dicht.", "typ": "forderung", "thema": null },
+    { "id": "tp-wohnung-warten", "text": "Ich warte seit zwei Jahren bei der Wohnungsgesellschaft auf eine kleinere, günstigere Wohnung, und gleichzeitig werden in meinem Block Wohnungen an Flüchtlingsfamilien vergeben. Das fühlt sich ungerecht an.", "typ": "problem", "thema": 2, "ursachen": [206], "auch": [201, 205] },
+    { "id": "tp-amt", "text": "Wenn ich mit dem Rollator zum Amt muss, brauche ich einen Termin, den es erst in sechs Wochen gibt. Und die Formulare für den Wohngeldantrag verstehe ich nicht, online geht gar nichts.", "typ": "problem", "thema": 14, "ursachen": [1402, 1404], "auch": [1401] },
+    { "id": "tp-pflegeheim", "text": "Meine Frau ist im Pflegeheim und wir zahlen über 3000 Euro Eigenanteil im Monat. Unsere Ersparnisse sind bald weg, und das Personal im Heim ist völlig überlastet.", "typ": "problem", "thema": 10, "ursachen": [1002, 1001], "auch": [1005] },
+    { "id": "tp-windrad-forderung", "text": "Schluss mit den Windrädern und dem ganzen Klimawahn, das muss abgeschafft werden!", "typ": "forderung", "thema": 3 },
+    { "id": "tp-windrad-laerm", "text": "Direkt hinter unserem Dorf stehen jetzt Windräder, nachts höre ich das Brummen und schlafe schlecht, und mein Strompreis ist trotzdem nicht gesunken.", "typ": "problem", "thema": 3, "ursachen": [], "auch": [304, 301, 302], "rueckfrage": true },
+    { "id": "tp-strom-trotz-wind", "text": "Mein Strom ist trotz der vielen Windräder bei uns nicht billiger geworden, ich zahle jeden Monat mehr.", "typ": "problem", "thema": 3, "ursachen": [304], "auch": [301, 302] },
+    { "id": "tp-wehrpflicht", "text": "Ich finde, dass Deutschland seine Heimat und Traditionen mehr schützen sollte und dass man Wehrpflicht wieder einführen muss.", "typ": "wert", "thema": null },
+    { "id": "tp-bus-dorf", "text": "Bei uns auf dem Dorf fährt der Bus nur dreimal am Tag und am Wochenende gar nicht. Ohne Auto komme ich weder zum Einkaufen noch zur Ärztin, und mit dem Auto wird Tanken immer teurer.", "typ": "problem", "thema": 8, "ursachen": [801] },
+    { "id": "tp-fremd-im-ort", "text": "In meinem Viertel höre ich auf der Straße und im Supermarkt kaum noch Deutsch, und viele Zugezogene haben keinen Kontakt zu uns Alteingesessenen. Ich fühle mich fremd im eigenen Ort.", "typ": "problem", "thema": 6, "ursachen": [], "rueckfrage": true },
+    { "id": "beleg-polizei-praesenz", "text": "Bei uns im Viertel sieht man nie eine Polizeistreife, abends fühle ich mich auf dem Heimweg unwohl.", "typ": "problem", "thema": 9, "ursachen": [901] },
+    { "id": "beleg-strom-hoch", "text": "Meine Stromrechnung ist so hoch geworden, dass ich den Fernseher kaum noch anmache.", "typ": "problem", "thema": 3, "ursachen": [], "auch": [301, 302, 304], "rueckfrage": true },
+    { "id": "beleg-formular", "text": "Den Antrag auf Wohngeld verstehe ich einfach nicht, das sind zwölf Seiten Formular mit lauter Fachbegriffen.", "typ": "problem", "thema": 14, "ursachen": [1404] },
+    { "id": "thema-waermepumpe-laerm", "text": "Neben unserem Haus hat der Nachbar eine Wärmepumpe aufgestellt, nachts brummt sie und ich schlafe schlecht.", "typ": "problem", "thema": null },
+    { "id": "thema-tanken-tafel", "text": "Tanken ist so teuer geworden, dass ich mir überlege, ob ich noch zur Tafel fahren kann.", "typ": "problem", "thema": 15, "ursachen": [1501], "auch": [1502] },
+    { "id": "thema-heizungsgesetz", "text": "Weg mit dem Heizungsgesetz!", "typ": "forderung", "thema": 16 }
   ]
 }
