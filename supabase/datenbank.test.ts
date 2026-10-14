@@ -595,6 +595,7 @@ describe('Lücken und Kennzahlen (Admin)', () => {
       (now(),                     'b', 'handwerker',   'ungeprueft',     null, null, null, true),
       (now() - interval '40 days','c', 'Handwerker',   'ungeprueft',     null, null, null, false),
       (now(),                     'd', 'Miete',        'unvollstaendig', 2,    null, null, false),
+      (now(),                     'j', 'Miete',        'ungeprueft',     2,    null, null, true),
       (now(),                     'e', 'Miete',        'gewertet',       2,    null, null, false),
       (now(),                     'f', 'Mietdeckel',   'forderung',      2,    null, null, false),
       (now(),                     'g', 'Mietdeckel',   'forderung',      2,    ${instrument}, null, false),
@@ -622,6 +623,7 @@ describe('Lücken und Kennzahlen (Admin)', () => {
       { art: 'haltung_ohne_karte', thema_id: null, stichwort: 'tempolimit', anzahl_30_tage: 1, anzahl: 1, anzahl_testphase: 0 },
       { art: 'kein_thema', thema_id: null, stichwort: 'handwerker', anzahl_30_tage: 2, anzahl: 3, anzahl_testphase: 1 },
       { art: 'unvollstaendig', thema_id: 2, stichwort: null, anzahl_30_tage: 1, anzahl: 1, anzahl_testphase: 0 },
+      { art: 'ursache_fehlt', thema_id: 2, stichwort: null, anzahl_30_tage: 1, anzahl: 1, anzahl_testphase: 1 },
     ])
   })
 
@@ -635,7 +637,7 @@ describe('Lücken und Kennzahlen (Admin)', () => {
     )
     expect(rows).toEqual([
       { testphase: false, runden: 9, gewertet: 1, ungeprueft: 2, forderung_mit_karte: 1, wert_mit_karte: 1, grenze: 1 },
-      { testphase: true, runden: 1, gewertet: 0, ungeprueft: 1, forderung_mit_karte: 0, wert_mit_karte: 0, grenze: 0 },
+      { testphase: true, runden: 2, gewertet: 0, ungeprueft: 2, forderung_mit_karte: 0, wert_mit_karte: 0, grenze: 0 },
     ])
   })
 })

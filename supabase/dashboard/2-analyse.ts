@@ -641,6 +641,14 @@ function pruefeAuswahl(roh) {
   if (roh === null || roh === void 0) return null;
   const w = roh;
   const ids = w.ursachen_ids;
+  if (typeof w === "object" && w.passt_nicht === true) {
+    if (!Number.isInteger(w.thema_id) || !Array.isArray(ids) || ids.length !== 0) throw new EingabeFehler("Ung\xFCltige Auswahl (\u201ENichts davon passt\u201C ohne Ursachen).");
+    return {
+      thema_id: w.thema_id,
+      ursachen_ids: [],
+      passt_nicht: true
+    };
+  }
   if (typeof w !== "object" || !Number.isInteger(w.thema_id) || !Array.isArray(ids) || ids.length === 0 || ids.length > MAX_AUSWAHL || !ids.every((id) => Number.isInteger(id)) || new Set(ids).size !== ids.length) throw new EingabeFehler(`Ung\xFCltige Auswahl (1 bis ${MAX_AUSWAHL} Ursachen eines Themas).`);
   return {
     thema_id: w.thema_id,
@@ -649,6 +657,19 @@ function pruefeAuswahl(roh) {
 }
 function antwortAusAuswahl(auswahl, themen, ursachen) {
   const thema = themen.find((t) => t.id === auswahl.thema_id);
+  if (auswahl.passt_nicht) {
+    if (!thema) throw new EingabeFehler("Dieses Thema gibt es nicht.");
+    return {
+      typ: "problem",
+      nachfrage: null,
+      thema_id: thema.id,
+      ursachen_ids: [],
+      passt_nicht: true,
+      zusammenfassung: kurz(`Keine passende Ursache im Thema \u201E${thema.name}\u201C.`, 200),
+      stichwort: bereinigeStichwort(thema.name, thema.name),
+      einschaetzung: null
+    };
+  }
   const passt = auswahl.ursachen_ids.every((id) => ursachen.some((u) => u.id === id && u.thema_id === auswahl.thema_id));
   if (!thema || !passt) throw new EingabeFehler("Diese Ursachen geh\xF6ren nicht zu diesem Thema.");
   const saetze = auswahl.ursachen_ids.map((id) => {
@@ -993,7 +1014,8 @@ Deno.serve(async (req) => {
       const thema = themen.find((t) => t.id === antwort.thema_id);
       if (thema) antwort = mitInstrument(antwort, await erkenneInstrument(thema, anfrage.verlauf, anfrage.land, testphase));
     }
-    if (!antwort.nachfrage) {
+    const vorschlag = !anfrage.auswahl && antwort.typ === "problem" && antwort.ursachen_ids.length > 0;
+    if (!antwort.nachfrage && !vorschlag) {
       const original = anfrage.verlauf.filter((n) => n.von === "spieler").map((n) => n.text);
       await speichereRunde(antwort, anfrage.parteien, anfrage.rolle, anfrage.land, testphase, original, parteien, ursachen);
     }
@@ -1101,6 +1123,17 @@ async function speichereRunde(antwort, [parteiA, parteiB], rolle, land, testphas
         } : {}
       }),
       merkeOhneWertung("forderung", original, antwort.thema_id, antwort.zusammenfassung)
+    ]);
+    return;
+  }
+  if (antwort.passt_nicht && antwort.thema_id !== null) {
+    await Promise.all([
+      db.from("runden").insert({
+        ...basis,
+        status: "ungeprueft",
+        thema_id: antwort.thema_id
+      }),
+      merkeOhneWertung("ungeprueft", original, antwort.thema_id, antwort.zusammenfassung)
     ]);
     return;
   }

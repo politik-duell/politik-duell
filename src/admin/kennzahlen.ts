@@ -17,6 +17,7 @@ export interface KennzahlWoche {
 
 export type LueckenArt =
   | 'kein_thema'
+  | 'ursache_fehlt'
   | 'unvollstaendig'
   | 'forderung_ohne_loesungsweg'
   | 'forderung_ohne_thema'

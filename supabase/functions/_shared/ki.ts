@@ -530,6 +530,11 @@ function pruefeAuswahl(roh: unknown): UrsachenAuswahl | null {
   if (roh === null || roh === undefined) return null
   const w = roh as Partial<UrsachenAuswahl>
   const ids = w.ursachen_ids
+  if (typeof w === 'object' && w.passt_nicht === true) {
+    if (!Number.isInteger(w.thema_id) || !Array.isArray(ids) || ids.length !== 0)
+      throw new EingabeFehler('Ungültige Auswahl („Nichts davon passt“ ohne Ursachen).')
+    return { thema_id: w.thema_id as number, ursachen_ids: [], passt_nicht: true }
+  }
   if (
     typeof w !== 'object' ||
     !Number.isInteger(w.thema_id) ||
@@ -550,6 +555,20 @@ function pruefeAuswahl(roh: unknown): UrsachenAuswahl | null {
  */
 export function antwortAusAuswahl(auswahl: UrsachenAuswahl, themen: Thema[], ursachen: Ursache[]): AnalyseAntwort {
   const thema = themen.find((t) => t.id === auswahl.thema_id)
+  // „Nichts davon passt“: das Thema ist bekannt, die passende Ursache noch nicht erfasst – ohne Wertung.
+  if (auswahl.passt_nicht) {
+    if (!thema) throw new EingabeFehler('Dieses Thema gibt es nicht.')
+    return {
+      typ: 'problem',
+      nachfrage: null,
+      thema_id: thema.id,
+      ursachen_ids: [],
+      passt_nicht: true,
+      zusammenfassung: kurz(`Keine passende Ursache im Thema „${thema.name}“.`, 200),
+      stichwort: bereinigeStichwort(thema.name, thema.name),
+      einschaetzung: null,
+    }
+  }
   const passt = auswahl.ursachen_ids.every((id) => ursachen.some((u) => u.id === id && u.thema_id === auswahl.thema_id))
   if (!thema || !passt) throw new EingabeFehler('Diese Ursachen gehören nicht zu diesem Thema.')
   const saetze = auswahl.ursachen_ids.map((id) => {

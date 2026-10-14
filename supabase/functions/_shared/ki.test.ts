@@ -344,6 +344,8 @@ describe('pruefeAnfrage', () => {
     ['mit doppelter Ursache', { ...gueltig, auswahl: { thema_id: 2, ursachen_ids: [202, 202] } }],
     ['mit Auswahl ohne Thema', { ...gueltig, auswahl: { ursachen_ids: [202] } }],
     ['mit Auswahl als Text', { ...gueltig, auswahl: { thema_id: 2, ursachen_ids: ['202'] } }],
+    ['„Nichts davon passt“ mit Ursachen', { ...gueltig, auswahl: { thema_id: 2, ursachen_ids: [202], passt_nicht: true } }],
+    ['„Nichts davon passt“ ohne Thema', { ...gueltig, auswahl: { ursachen_ids: [], passt_nicht: true } }],
   ])('lehnt Anfrage %s ab', (_, anfrage) => {
     expect(() => pruefeAnfrage(anfrage)).toThrow(EingabeFehler)
   })
@@ -354,6 +356,12 @@ describe('pruefeAnfrage', () => {
     // Auch mit der Nachfrage der KI als letzter Nachricht.
     expect(pruefeAnfrage({ ...gueltig, verlauf: [spieler('a'), ki('b')], auswahl: { thema_id: 2, ursachen_ids: [202] } }).auswahl).toBeTruthy()
     expect(pruefeAnfrage(gueltig).auswahl).toBeNull()
+  })
+
+  it('akzeptiert „Nichts davon passt“ mit dem Gespräch (für die Durchsicht ohne Wertung)', () => {
+    const a = pruefeAnfrage({ ...gueltig, verlauf: [spieler('a'), ki('b'), spieler('c')], auswahl: { thema_id: 2, ursachen_ids: [], passt_nicht: true } })
+    expect(a.auswahl).toEqual({ thema_id: 2, ursachen_ids: [], passt_nicht: true })
+    expect(a.verlauf).toHaveLength(3)
   })
 })
 
@@ -369,6 +377,13 @@ describe('gestuetzt', () => {
 })
 
 describe('antwortAusAuswahl', () => {
+  it('beendet „Nichts davon passt“ ohne Wertung, mit Thema und ohne Text der Person', () => {
+    const a = antwortAusAuswahl({ thema_id: 2, ursachen_ids: [], passt_nicht: true }, THEMEN, URSACHEN)
+    expect(a).toMatchObject({ typ: 'problem', nachfrage: null, thema_id: 2, ursachen_ids: [], passt_nicht: true, stichwort: 'Miete' })
+    expect(a.zusammenfassung).toBe('Keine passende Ursache im Thema „Miete“.')
+    expect(() => antwortAusAuswahl({ thema_id: 99999, ursachen_ids: [], passt_nicht: true }, THEMEN, URSACHEN)).toThrow(EingabeFehler)
+  })
+
   it('wertet die angetippten Ursachen wie eine Zuordnung der KI', () => {
     const a = antwortAusAuswahl({ thema_id: 2, ursachen_ids: [202, 201] }, THEMEN, URSACHEN)
     expect(a).toMatchObject({ typ: 'problem', nachfrage: null, thema_id: 2, ursachen_ids: [202, 201], einschaetzung: null })

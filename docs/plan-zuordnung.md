@@ -227,7 +227,11 @@ Nach jeder Eingabe mit Thema erscheint vor der Auflösung eine von zwei Ansichte
 
 1. ~~Testsatz anlegen, gegenlesen, mit dem heutigen Stand laufen lassen~~ (erledigt, siehe „Ausgangsmessung“).
 2. ~~Schritt 1 und 2 in `ki.ts` und `analyse/index.ts`, mit den Auslösern und Unit-Tests~~ (umgesetzt, siehe „Messung nach Schritt 2“). Bis die App umgestellt ist, wird eine unsichere Zuordnung wie bisher zur Nachfrage mit Ursachen zum Antippen; `thema_kandidaten` liefert die Antwort schon mit. Der Mock (`src/logic/analyse.ts`) ordnet weiter in einem Schritt über Schlagwörter zu.
-3. Bestätigung in der App (`Runde.tsx`, `UrsachenAuswahl.tsx`, `Aufloesung.tsx`), „Nichts davon passt“ mit Speicherung.
+3. ~~Bestätigung in der App (`Runde.tsx`, `UrsachenAuswahl.tsx`, `Aufloesung.tsx`), „Nichts davon passt“ mit Speicherung~~ (umgesetzt). Dabei festgelegt:
+   - Schlägt die KI Ursachen vor, speichert `analyse` die Runde nicht; das tut erst die Anfrage mit der bestätigten `auswahl`. Ältere, noch zwischengespeicherte App-Fassungen werten den Vorschlag direkt – deren Runden fehlen bis zum Neuladen in der Statistik.
+   - „Nichts davon passt“ ist eine `auswahl` mit `passt_nicht: true` und dem Gespräch. Gespeichert als `ungeprueft` **mit** Thema (kein neuer Status); die Sicht `luecken` zählt das als `ursache_fehlt` (Migration `20261014000000_luecken_ursache_fehlt.sql`), der Wortlaut geht in `review_eingaben`. Die App sagt, dass dieser Teil des Themas noch nicht erfasst ist.
+   - Ist die KI unsicher, bleibt ihre Nachfrage im Gespräch stehen; darunter steht die Auswahl ohne Vorauswahl. Man kann also antippen oder weiterschreiben.
+   - Die Auflösung zeigt je Ursache „Von dir bestätigt“ mit dem angetippten Alltagssatz statt „Deine Worte“.
 4. Testsatz erneut laufen lassen; Füllwörter und Auslöser nachjustieren.
-5. `docs/methode.md` und die übrigen Dokumente anpassen.
+5. ~~`docs/methode.md` und die übrigen Dokumente anpassen~~ (umgesetzt: `docs/methode.md`, `docs/konzept.md`, `docs/datenmodell.md`, `CLAUDE.md`, Methodenseite der App).
 6. Katalog aus „Nichts davon passt“ ergänzen – laufend, über die bestehenden Skills.
