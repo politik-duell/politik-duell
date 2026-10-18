@@ -29,6 +29,7 @@
       "id": 2303,
       "beschreibung": "Digitale Angriffe erreichen ein größeres Publikum als Mobbing in der Schule; 2022 wurden 3,0 % der Jugendlichen in Deutschland ausschließlich online gemobbt (HBSC-Studie, 2024)",
       "alltag": "Mein Kind wird im Klassenchat bloßgestellt, auch nach der Schule",
+      "gilt_fuer": "Mobbing über Handy und Internet",
       "quelle_url": "https://europepmc.org/articles/PMC10977470",
       "ebene": "bund",
       "schlagwoerter": ["klassenchat", "cybermobbing", "bilder verschicken", "online blossgestellt"]
@@ -40,6 +41,13 @@
       "quelle_url": "https://europepmc.org/article/MED/37437728",
       "ebene": "land",
       "schlagwoerter": ["leistungsdruck", "pruefungsdruck", "notenstress", "versagensangst", "schulstress"]
+    }
+  ],
+  "symptome": [
+    {
+      "nr": 1,
+      "alltag": "Mein Kind wird in der Schule gemobbt",
+      "ursachen_ids": [2301, 2302]
     }
   ]
 }

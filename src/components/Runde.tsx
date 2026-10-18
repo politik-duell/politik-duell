@@ -113,6 +113,7 @@ function werteAus(
     nr, sprecher, rolle, land, thema, status, ...(forderung ? { forderung } : {}), ...(karten.length ? { karten } : {}),
     ursachen_ids: analyse.ursachen_ids,
     ...(analyse.ursachen_belege ? { ursachen_belege: analyse.ursachen_belege } : {}),
+    ...(analyse.symptom !== undefined ? { symptom: analyse.symptom } : {}),
     zusammenfassung: analyse.zusammenfassung,
     einschaetzung: null,
     ergebnisse: [ea, eb],
@@ -149,7 +150,15 @@ export function Runde({
    * Bestätigung (docs/plan-zuordnung.md): das Thema, dessen Ursachen gerade zum Antippen stehen – mit den von der KI
    * vorgeschlagenen Ursachen, wenn sie sicher war, und weiteren Themen, die sie in Frage kommend fand.
    */
-  const [angebot, setAngebot] = useState<{ thema_id: number; vorauswahl: number[]; kandidaten: number[] } | null>(null)
+  const [angebot, setAngebot] = useState<{
+    thema_id: number
+    vorauswahl: number[]
+    kandidaten: number[]
+    /** Symptomgruppe, deren Ursachen vorausgewählt sind (docs/plan-symptome.md). */
+    symptom?: number
+    /** Eine Ursache passt nur teilweise: was abweicht. */
+    abweichung?: string
+  } | null>(null)
   /**
    * Neutrale Zusammenfassung der KI zu einem geschilderten Problem – für die Anzeige nach einer Auswahl.
    * Bei einer Forderung bleibt sie leer: Dann steht das Thema mit den gewählten Ursachen als Problem da.
@@ -250,7 +259,12 @@ export function Runde({
       setAngebot(
         analyse.pauschal || analyse.thema_id === null
           ? null
-          : { thema_id: analyse.thema_id, vorauswahl: [], kandidaten: analyse.thema_kandidaten ?? [] },
+          : {
+              thema_id: analyse.thema_id,
+              vorauswahl: [],
+              kandidaten: analyse.thema_kandidaten ?? [],
+              ...(analyse.abweichung ? { abweichung: analyse.abweichung } : {}),
+            },
       )
       setZusammenfassung(analyse.typ === 'problem' ? analyse.zusammenfassung || null : null)
     } else if (analyse.typ === 'wert' || analyse.typ === 'forderung') {
@@ -278,7 +292,7 @@ export function Runde({
       }
     } else if (analyse.typ === 'problem' && analyse.thema_id !== null && analyse.ursachen_ids.length > 0) {
       // Gewertet wird erst, was die Person bestätigt: die Ursachen der KI vorausgewählt (sie war sicher).
-      setAngebot({ thema_id: analyse.thema_id, vorauswahl: analyse.ursachen_ids, kandidaten: [] })
+      setAngebot({ thema_id: analyse.thema_id, vorauswahl: analyse.ursachen_ids, kandidaten: [], symptom: analyse.symptom })
       setZusammenfassung(analyse.zusammenfassung || null)
     } else {
       onErgebnis({ ...werteAus(analyse, nr, sprecher, spieler, daten, forderung ?? undefined, rundenKarten), eingaben: spielerTexte(neu) })
@@ -317,8 +331,11 @@ export function Runde({
     setHinweis(passtNichtAntwort(name ?? null))
   }
 
-  /** Angetippte Ursachen werten: ohne KI, die Edge Function speichert die Runde. */
-  async function auswaehlen(themaId: number, ursachenIds: number[]) {
+  /**
+   * Angetippte Ursachen werten: ohne KI, die Edge Function speichert die Runde. `symptom`: die vorgeschlagene
+   * Symptomgruppe – ihre Ursachen zählen nicht zur Höchstzahl.
+   */
+  async function auswaehlen(themaId: number, ursachenIds: number[], symptom?: number) {
     if (denkt) return
     setFehler(null)
     setDenkt(true)
@@ -329,7 +346,7 @@ export function Runde({
         rolle: aktiv.rolle,
         land: aktiv.land,
         parteien: [spieler[0].partei.id, spieler[1].partei.id],
-        auswahl: { thema_id: themaId, ursachen_ids: ursachenIds },
+        auswahl: { thema_id: themaId, ursachen_ids: ursachenIds, ...(symptom !== undefined ? { symptom } : {}) },
       })
     } catch (err) {
       setFehler(err instanceof AnalyseFehler ? err.message : 'Die Wertung hat gerade nicht geklappt.')
@@ -339,9 +356,14 @@ export function Runde({
     }
     // Angetippt nach einer Nachfrage: das bisherige Gespräch; nach einer Haltungskarte: die Haltung davor.
     const eingaben = spielerTexte(verlauf.length ? verlauf : vorher)
+    // Die Kurzfassung der KI nur, wenn die Person ihren Vorschlag unverändert bestätigt hat – sonst die bestätigten
+    // Sätze, damit Kurzfassung und gewertete Ursachen einander nicht widersprechen (Hautarzt/Hausarzt).
+    const vorschlag = angebot?.thema_id === themaId ? angebot.vorauswahl : []
+    const unveraendert =
+      vorschlag.length > 0 && vorschlag.length === ursachenIds.length && ursachenIds.every((id) => vorschlag.includes(id))
     onErgebnis({
       ...werteAus(
-        { ...analyse, zusammenfassung: zusammenfassung ?? analyse.zusammenfassung },
+        { ...analyse, zusammenfassung: (unveraendert && zusammenfassung) || analyse.zusammenfassung },
         nr, sprecher, spieler, daten, forderung ?? undefined, karten,
       ),
       ...(eingaben.length ? { eingaben } : {}),
@@ -349,6 +371,7 @@ export function Runde({
   }
 
   const angebotThema = angebot ? (daten.themen.find((t) => t.id === angebot.thema_id) ?? null) : null
+  const angebotGruppe = angebot?.symptom !== undefined ? angebotThema?.symptome?.find((g) => g.nr === angebot.symptom) : undefined
 
   return (
     <main className="seite runde">
@@ -403,8 +426,12 @@ export function Runde({
           ursachen={daten.ursachen}
           vorauswahl={angebot.vorauswahl}
           kandidaten={angebot.kandidaten}
+          gruppe={angebotGruppe}
+          abweichung={angebot.abweichung}
           gesperrt={denkt}
-          onWaehlen={(ids) => auswaehlen(angebotThema.id, ids)}
+          onWaehlen={(ids) =>
+            auswaehlen(angebotThema.id, ids, angebotGruppe && ids.some((id) => angebotGruppe.ursachen_ids.includes(id)) ? angebotGruppe.nr : undefined)
+          }
           // Ein anderes Thema hat keinen Vorschlag der KI: ohne Vorauswahl; die bisherigen Themen bleiben zur Wahl.
           onThema={(id) =>
             setAngebot({ thema_id: id, vorauswahl: [], kandidaten: [angebotThema.id, ...angebot.kandidaten].filter((k) => k !== id) })

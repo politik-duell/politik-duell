@@ -13,6 +13,7 @@
       "id": 1701,
       "beschreibung": "Der Betreuungsbedarf der Eltern übersteigt das Angebot bei unter Dreijährigen: 2025 wünschten 49,3 % einen Platz, 37,8 % nutzten ein Angebot (Lücke im Westen 12,7, im Osten 5,8 Prozentpunkte)",
       "alltag": "Ich finde für mein Kind unter drei Jahren keinen Kitaplatz",
+      "gilt_fuer": "Kinder unter drei Jahren",
       "quelle_url": "https://www.akjstat.tu-dortmund.de/themen/kindertagesbetreuung-bis-zum-schuleintritt/weiterhin-ungedeckte-platzbedarfe-kindertagesbetreuung-kompakt-ausbaustand-und-bedarf-2025-erschienen",
       "ebene": "land",
       "schlagwoerter": ["kein platz", "keinen platz", "kitaplatz", "krippenplatz", "betreuungsplatz", "warteliste", "absage", "platzzusage"]
@@ -48,6 +49,13 @@
       "quelle_url": "https://doi.org/10.36189/DJI202606",
       "ebene": "land",
       "schlagwoerter": ["kita-gebuehren", "kitagebuehren", "elternbeitrag", "elternbeitraege", "zu teuer", "kosten", "beitrag", "gebuehrenfrei", "beitragsfrei"]
+    }
+  ],
+  "symptome": [
+    {
+      "nr": 1,
+      "alltag": "In der Kita meines Kindes fehlt Personal, und die Betreuung leidet",
+      "ursachen_ids": [1702, 1703, 1704]
     }
   ],
   "instrumente": [

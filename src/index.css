@@ -1006,6 +1006,13 @@ textarea {
     grid-template-columns: 1fr 1fr;
   }
 }
+/* Befund zur Ursache mit Quelle – über beiden Spalten */
+.duell-befund {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-leise);
+}
 .duell-massnahme {
   padding: 8px 0 0 12px;
   border-left: 4px solid var(--partei);
@@ -2654,6 +2661,13 @@ textarea {
   margin: 0 0 0.6rem;
   font-size: 0.85rem;
   color: var(--text-leise);
+}
+/* Nur teilweise passend (docs/plan-symptome.md): was abweicht, über der Auswahl */
+.ursachen-auswahl .ursachen-abweichung {
+  margin: 0 0 0.6rem;
+  padding: 8px 10px;
+  border-left: 3px solid var(--warnung);
+  font-size: 0.9rem;
 }
 .ursachen-auswahl ul {
   display: flex;

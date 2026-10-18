@@ -1,6 +1,7 @@
 import { EingabeFehler } from './fehler.ts'
 import { bereinigeStichwort, pruefeText } from './moderation.ts'
 import {
+  auswahlErlaubt,
   MAX_AUSWAHL,
   ROLLEN_IDS,
   type AnalyseAnfrage,
@@ -11,6 +12,7 @@ import {
   type Nachricht,
   type Partei,
   type Rolle,
+  type Symptomgruppe,
   type Thema,
   type Ursache,
   type UrsachenAuswahl,
@@ -302,39 +304,60 @@ export function mitInstrument(antwort: AnalyseAntwort, instrumentId: number | nu
 // unsicher, zählt keine Ursache: Die Antwort wird eine Nachfrage mit Thema, und die Person tippt selbst an.
 // ---------------------------------------------------------------------------
 
-export function ursachenPrompt(thema: Pick<Thema, 'id' | 'name' | 'beschreibung'>, ursachen: Ursache[]): string {
+export function ursachenPrompt(
+  thema: Pick<Thema, 'id' | 'name' | 'beschreibung' | 'symptome'>,
+  ursachen: Ursache[],
+): string {
   const liste = ursachen
-    .map((u) => `- Ursache ${u.id}: ${u.beschreibung}${u.alltag ? ` – im Alltag: „${u.alltag}“` : ''}`)
+    .map(
+      (u) =>
+        `- Ursache ${u.id}: ${u.beschreibung}${u.gilt_fuer ? ` – gilt nur für: ${u.gilt_fuer}` : ''}` +
+        `${u.alltag ? ` – im Alltag: „${u.alltag}“` : ''}`,
+    )
+    .join('\n')
+  const symptome = (thema.symptome ?? [])
+    .map((s) => `- Folge ${s.nr}: „${s.alltag}“ – Ursachen ${s.ursachen_ids.join(', ')}`)
     .join('\n')
   return `Du hilfst im Spiel „Politik-Duell“. Eine Person hat ein Alltagsproblem zum Thema „${thema.name}“ genannt
 (${thema.beschreibung}). Deine einzige Aufgabe: Welche der folgenden Ursachen nennt oder beschreibt sie selbst?
 
 Regeln:
-- "ursachen_ids": nur Ursachen, die die Schilderung selbst nennt oder erkennbar beschreibt – höchstens ${MAX_AUSWAHL},
-  die deutlichste zuerst. Nimm keine Ursache dazu, nur weil sie zum Thema gehört oder ein Wort mit der Schilderung
-  teilt – jede zugeordnete Ursache zählt in der Wertung.
-- Setzt eine Ursache eine bestimmte Lage voraus (z. B. einen laufenden Vertrag, einen Heimplatz, einen bestimmten
-  Wohnort), ordne sie nur zu, wenn die Schilderung diese Lage erkennen lässt. Widerspricht die Schilderung dieser
-  Lage (z. B. „ich wohne seit 20 Jahren in derselben Wohnung“ bei einer Ursache über Neuvermietungen), passt sie nicht.
+- "ursachen_ids": nur Ursachen, die die Schilderung selbst nennt oder erkennbar beschreibt und die ganz zu ihrer
+  Lage passen – höchstens ${MAX_AUSWAHL}, die deutlichste zuerst. Nimm keine Ursache dazu, nur weil sie zum Thema
+  gehört oder ein Wort mit der Schilderung teilt – jede zugeordnete Ursache zählt in der Wertung.
+- „gilt nur für: …“ nennt die Lage, die eine Ursache voraussetzt (z. B. eine bestimmte Art von Praxis, einen
+  laufenden Vertrag, einen Heimplatz). Schildert die Person dasselbe Erlebnis erkennbar in einer anderen Lage (z. B.
+  bei einer Fachärztin statt in der Hausarztpraxis), passt die Ursache nur teilweise. Dasselbe gilt, wenn sie nur
+  einen Teil des Grundes trifft, den die Person nennt, und wenn eine Ursache ohne „gilt nur für“ erkennbar eine
+  andere Lage voraussetzt. Widerspricht die Schilderung der Lage ausdrücklich (z. B. „ich wohne seit 20 Jahren in
+  derselben Wohnung“ bei einer Ursache über Neuvermietungen), passt sie gar nicht.
+- "teilweise": Passt weder eine Ursache ganz noch eine der Folgen unten, die Ursache, die der Schilderung am
+  nächsten kommt – NICHT in "ursachen_ids", sondern hier mit einem kurzen, neutralen Satz, was abweicht (höchstens
+  20 Wörter), z. B. {"101": "Du sprichst von einer Fachärztin, erfasst ist hier der Mangel an Hausarztpraxen."}.
+  Lieber eine Ursache hier nennen als sie ungenau zuzuordnen. Sonst {}.
 - Ein gemeinsames Wort genügt nicht: Der Beleg muss denselben Grund nennen wie die Ursache (z. B. „der Bus kommt
   ständig zu spät“ nennt Unpünktlichkeit, nicht zu teure Fahrkarten, auch wenn beide vom Bus handeln).
 - "ursachen_belege": zu jeder Ursache in "ursachen_ids" die Wörter aus der Schilderung, die genau diesen Grund
   nennen – wörtlich übernommen, höchstens acht Wörter, z. B. {"204": "Miete wird jedes Jahr erhöht"}. Dieselben
   Wörter stützen nie zwei Ursachen. Findest du keine Wörter, die diesen Grund nennen, ordne die Ursache nicht zu.
+- "symptom": Schildert die Person eine der Folgen unten (auch mit anderen Worten), die Nummer dieser Folge – sonst
+  null. Die Ursachen einer Folge zählen dann alle.
 - „im Alltag: …“ zeigt, wie Betroffene eine Ursache typischerweise erleben. Vergleiche die Schilderung damit,
   auch wenn sie aus der Sicht anderer Beteiligter kommt (z. B. Anwohner statt Veranstalter, Eltern statt Jugendliche).
 - Unterscheide Erlebnis und Gefühl: Schildert jemand vor allem ein Gefühl oder eine Sorge (z. B. „Ich fühle mich
   unsicher, seit …“), passen Ursachen, die beschreiben, wie Wahrnehmung und Wirklichkeit auseinanderfallen oder wo
   sich Unsicherheit ballt. Ursachen zu Taten oder Tätergruppen nur, wenn die Schilderung sie erkennen lässt.
-- "sicher": true nur, wenn jede gewählte Ursache den Grund trifft, den die Person nennt. Nennt sie einen Grund,
-  den keine Ursache beschreibt, passt eine Ursache nur ungefähr oder ist die Schilderung zu allgemein: false.
+- "sicher": true nur, wenn jede Ursache in "ursachen_ids" ganz zur Schilderung passt (bei einer Folge ohne weitere
+  Ursache: wenn die Folge passt). Nennt sie einen Grund, den keine Ursache beschreibt, oder ist die Schilderung zu
+  allgemein: false.
 - Bewerte nichts und nenne keine Parteien, Links oder Zahlen.
 
 Ursachen:
 ${liste}
-
+${symptome ? `\nFolgen, die mehrere Ursachen gemeinsam haben:\n${symptome}\n` : ''}
 Antworte ausschließlich mit einem JSON-Objekt:
-{"ursachen_ids": number[], "ursachen_belege": {[id: string]: string}, "sicher": boolean}`
+{"ursachen_ids": number[], "ursachen_belege": {[id: string]: string}, "teilweise": {[id: string]: string},
+ "symptom": number | null, "sicher": boolean}`
 }
 
 /** Wörter ohne Aussage über einen Grund – sie zählen beim Abgleich von Beleg und Ursache nicht. */
@@ -390,12 +413,30 @@ export function unsicherheit(schritt1: unknown, schritt2: unknown, ursachen: Urs
   if (andere.length > 0) gruende.push('thema_kandidaten')
   if (r1.mehrere_probleme === true && andere.length > 0) gruende.push('mehrere_probleme')
   if (r2.sicher !== true) gruende.push('ursachen_unsicher')
+  // Nur teilweise passend (Hautarzt statt Hausarzt): keine Vorauswahl – die Person entscheidet, ob es trotzdem passt.
+  if (teilweisePassend(r2, ursachen).length) gruende.push('teilweise')
   const belege = alsObjekt(r2.ursachen_belege)
   for (const id of Array.isArray(r2.ursachen_ids) ? r2.ursachen_ids.map(Number) : []) {
     const u = ursachen.find((x) => x.id === id)
     if (u && !belegPasstZuUrsache(kurz(belege[String(id)], 120), u)) gruende.push(`beleg_${id}`)
   }
   return gruende
+}
+
+/** Gründe aus `unsicherheit`, die das Thema selbst in Frage stellen – dann auch keine Symptomgruppe. */
+const GRUENDE_THEMA = ['thema_unsicher', 'thema_kandidaten', 'mehrere_probleme', 'ursachen_keine_antwort']
+
+/** Ursachen des Themas, die laut Schritt 2 nur teilweise passen, mit dem Satz der KI, was abweicht. */
+function teilweisePassend(schritt2: unknown, ursachen: Ursache[]): { id: number; satz: string }[] {
+  return Object.entries(alsObjekt(alsObjekt(schritt2).teilweise))
+    .map(([id, satz]) => ({ id: Number(id), satz: kurz(satz, 200) }))
+    .filter((t) => ursachen.some((u) => u.id === t.id))
+}
+
+/** Symptomgruppe des Themas, die Schritt 2 nennt – oder undefined. */
+function genanntesSymptom(schritt2: unknown, thema: Pick<Thema, 'symptome'>): Symptomgruppe | undefined {
+  const nr = alsObjekt(schritt2).symptom
+  return Number.isInteger(nr) ? thema.symptome?.find((s) => s.nr === nr) : undefined
 }
 
 export type KiNachrichten = { role: 'system' | 'user' | 'assistant'; content: string }[]
@@ -424,6 +465,8 @@ export async function ordneEin(
   const r1 = alsObjekt(await frage(themenPrompt(themen, haltungen), nutzerNachrichten(verlauf, rolle)))
   let roh: Record<string, unknown> = { ...r1, ursachen_ids: [] }
   const unsicher: string[] = []
+  let gruppe: Symptomgruppe | undefined
+  let abweichung: string | undefined
   // Eine Forderung hat keinen zweiten Schritt, der ein unsicheres Thema auffängt: dann lieber ohne Thema (keine
   // Ursachen eines falschen Themas zum Antippen). Beobachtet: „Schluss mit den Windrädern“ → Thema Schule, unsicher.
   if (r1.typ === 'forderung' && r1.thema_sicher === false) {
@@ -440,14 +483,34 @@ export async function ordneEin(
       unsicher.push('ursachen_keine_antwort')
     }
     unsicher.push(...unsicherheit(r1, r2, kandidaten))
-    // Ein unpassender Beleg verwirft nur seine Ursache; bleibt keine übrig oder ist sonst etwas unsicher, keine.
+    // Ein unpassender Beleg verwirft nur seine Ursache.
     const { ursachen_ids, ursachen_belege } = alsObjekt(r2)
     const verworfen = new Set(unsicher.filter((g) => g.startsWith('beleg_')).map((g) => Number(g.slice(6))))
     const uebrig = (Array.isArray(ursachen_ids) ? ursachen_ids.map(Number) : []).filter((id) => !verworfen.has(id))
-    const ganz = unsicher.some((g) => !g.startsWith('beleg_')) || uebrig.length === 0
-    roh = { ...r1, ursachen_ids: ganz ? [] : uebrig, ursachen_belege }
+    // Symptomgruppe (docs/plan-symptome.md): genannt als Folge oder über eine ihrer Ursachen erkannt – dann zählt immer
+    // die ganze Gruppe. Ob jemand eine Folge oder einen ihrer Gründe schildert, unterscheidet die KI nicht verlässlich;
+    // so hängt die Wertung nicht davon ab. Nur ein unsicheres Thema verhindert das.
+    const themaUnsicher = unsicher.some((g) => GRUENDE_THEMA.includes(g))
+    gruppe = themaUnsicher ? undefined : (genanntesSymptom(r2, thema) ?? thema.symptome?.find((s) => s.ursachen_ids.some((id) => uebrig.includes(id))))
+    if (gruppe) {
+      // Weitere Ursachen außerhalb der Gruppe nur, wenn die KI sicher war; teilweise Passendes deckt die Gruppe ab.
+      const weitere = alsObjekt(r2).sicher === true ? uebrig.filter((id) => !gruppe!.ursachen_ids.includes(id)) : []
+      roh = { ...r1, ursachen_ids: weitere, ursachen_belege }
+    } else {
+      // Ohne Gruppe: ist sonst etwas unsicher oder passt eine Ursache nur teilweise, keine Vorauswahl.
+      const blockiert = unsicher.some((g) => !g.startsWith('beleg_'))
+      abweichung = teilweisePassend(r2, kandidaten)[0]?.satz
+      roh = { ...r1, ursachen_ids: blockiert ? [] : uebrig, ursachen_belege }
+    }
   }
-  const antwort = bereinigeAntwort(roh, verlauf, themen, ursachen, parteien, zufall, haltungen)
+  let antwort = bereinigeAntwort(roh, verlauf, themen, ursachen, parteien, zufall, haltungen)
+  if (gruppe && antwort.typ === 'problem' && antwort.thema_id === thema?.id) {
+    const ids = [...antwort.ursachen_ids, ...gruppe.ursachen_ids.filter((id) => !antwort.ursachen_ids.includes(id))]
+    antwort = { ...antwort, nachfrage: null, ursachen_ids: ids, symptom: gruppe.nr }
+  }
+  // Der Satz zur Abweichung steht nur über einer Auswahl ohne Vorauswahl – nie neben vorausgewählten Ursachen.
+  const satz = abweichung && antwort.nachfrage && antwort.thema_id === thema?.id ? bereinigeAbweichung(abweichung, parteien) : null
+  if (satz) antwort = { ...antwort, abweichung: satz }
   // Weitere Themen nur, wenn die Person ohnehin gefragt wird – die App kann sie dann zur Wahl stellen.
   const weitere = (Array.isArray(r1.thema_kandidaten) ? r1.thema_kandidaten.map(Number) : [])
     .filter((id, i, alle) => id !== antwort.thema_id && themen.some((t) => t.id === id) && alle.indexOf(id) === i)
@@ -456,6 +519,13 @@ export async function ordneEin(
     antwort: antwort.typ === 'problem' && antwort.nachfrage && weitere.length ? { ...antwort, thema_kandidaten: weitere } : antwort,
     unsicher,
   }
+}
+
+/** Satz der KI zur Abweichung: ohne Links und Parteinamen, nicht zu kurz, nicht vom Moderationsfilter gestoppt. */
+function bereinigeAbweichung(satz: string, parteien: Pick<Partei, 'name' | 'kurzname'>[]): string | null {
+  const text = ohneParteinamen(satz.replace(/(https?:\/\/|www\.)\S+/gi, ''), parteien).trim()
+  if (text.length < 10 || text.length > 200 || text.includes('[Partei]') || pruefeText(text)) return null
+  return text
 }
 
 export function nutzerNachrichten(verlauf: Nachricht[], rolle: Rolle | null) {
@@ -540,13 +610,19 @@ function pruefeAuswahl(roh: unknown): UrsachenAuswahl | null {
     !Number.isInteger(w.thema_id) ||
     !Array.isArray(ids) ||
     ids.length === 0 ||
-    ids.length > MAX_AUSWAHL ||
+    // Mit Symptomgruppe dürfen es mehr sein; wie viele, prüft antwortAusAuswahl am Katalog.
+    ids.length > (w.symptom === undefined ? MAX_AUSWAHL : MAX_MIT_SYMPTOM) ||
     !ids.every((id) => Number.isInteger(id)) ||
-    new Set(ids).size !== ids.length
+    new Set(ids).size !== ids.length ||
+    (w.symptom !== undefined && !Number.isInteger(w.symptom))
   )
     throw new EingabeFehler(`Ungültige Auswahl (1 bis ${MAX_AUSWAHL} Ursachen eines Themas).`)
-  return { thema_id: w.thema_id as number, ursachen_ids: ids }
+  return { thema_id: w.thema_id as number, ursachen_ids: ids, ...(w.symptom !== undefined ? { symptom: w.symptom } : {}) }
 }
+
+/** Obergrenze einer Auswahl mit Symptomgruppe (Gruppe plus MAX_AUSWAHL weitere) – nur gegen übergroße Anfragen. */
+const MAX_MIT_SYMPTOM = 20
+
 
 /**
  * Antwort für angetippte Ursachen – ohne KI. Gewertet wird wie bei einer Zuordnung durch die KI.
@@ -571,15 +647,27 @@ export function antwortAusAuswahl(auswahl: UrsachenAuswahl, themen: Thema[], urs
   }
   const passt = auswahl.ursachen_ids.every((id) => ursachen.some((u) => u.id === id && u.thema_id === auswahl.thema_id))
   if (!thema || !passt) throw new EingabeFehler('Diese Ursachen gehören nicht zu diesem Thema.')
-  const saetze = auswahl.ursachen_ids.map((id) => {
-    const u = ursachen.find((x) => x.id === id)!
-    return (u.alltag || u.beschreibung).trim().replace(/[.!…]*$/, '')
-  })
+  const gruppe = auswahl.symptom === undefined ? undefined : thema.symptome?.find((s) => s.nr === auswahl.symptom)
+  if (auswahl.symptom !== undefined && !gruppe) throw new EingabeFehler('Diese Symptomgruppe gibt es nicht.')
+  if (!auswahlErlaubt(auswahl.ursachen_ids, gruppe))
+    throw new EingabeFehler(`Höchstens ${MAX_AUSWAHL} Ursachen außerhalb der Symptomgruppe.`)
+  // Ursachen einer Symptomgruppe fasst ihr gemeinsamer Satz zusammen.
+  const ausGruppe = auswahl.ursachen_ids.filter((id) => gruppe?.ursachen_ids.includes(id))
+  const saetze = [
+    ...(ausGruppe.length ? [gruppe!.alltag] : []),
+    ...auswahl.ursachen_ids
+      .filter((id) => !ausGruppe.includes(id))
+      .map((id) => {
+        const u = ursachen.find((x) => x.id === id)!
+        return u.alltag || u.beschreibung
+      }),
+  ].map((t) => t.trim().replace(/[.!…]*$/, ''))
   return {
     typ: 'problem',
     nachfrage: null,
     thema_id: thema.id,
     ursachen_ids: [...auswahl.ursachen_ids],
+    ...(ausGruppe.length ? { symptom: gruppe!.nr } : {}),
     zusammenfassung: kurz(`${saetze.join('. ')}.`, 200),
     stichwort: bereinigeStichwort(thema.name, thema.name),
     einschaetzung: null,

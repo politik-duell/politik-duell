@@ -102,19 +102,19 @@ Deno.serve(async (req) => {
       return json({ fehler: 'Gerade spielen sehr viele Leute. Bitte versuch es etwas später noch einmal.' }, 503)
 
     const [themenRes, ursachenRes, parteienRes] = await Promise.all([
-      db.from('themen').select('id, name, beschreibung'),
+      db.from('themen').select('id, name, beschreibung, symptome'),
       db.from('ursachen').select('*'),
       db.from('parteien').select('*'),
     ])
     if (themenRes.error) throw themenRes.error
     if (ursachenRes.error) throw ursachenRes.error
     if (parteienRes.error) throw parteienRes.error
-    const themen = themenRes.data as Thema[]
     const ursachen = ursachenRes.data as Ursache[]
     const parteien = parteienRes.data as Partei[]
 
-    // Zugang zur Testphase: Dann zählen auch KI-Entwürfe (Maßnahmen, Instrumente).
+    // Zugang zur Testphase: Dann zählen auch KI-Entwürfe (Maßnahmen, Instrumente, Symptomgruppen).
     const testphase = anfrage.zugang ? await zugangGueltig(anfrage.zugang) : false
+    const themen = mitSymptomen(themenRes.data as Thema[], testphase)
 
     // Angetippte Ursachen: ohne KI werten. Sonst ordnet die KI die Schilderung ein – bei einer Haltung
     // auch einer der vollständig erfassten Wertfragen (Haltungskarte). Bei einem Problem in zwei Schritten
@@ -205,6 +205,11 @@ async function vollstaendigeHaltungen(testphase: boolean): Promise<HaltungKurz[]
     console.error('vollstaendigeHaltungen:', e instanceof Error ? e.message : e)
     return []
   }
+}
+
+/** Symptomgruppen, die zählen: ohne Testphase nur die von Menschen geprüften (docs/plan-symptome.md). */
+function mitSymptomen(themen: Thema[], testphase: boolean): Thema[] {
+  return themen.map((t) => ({ ...t, symptome: (t.symptome ?? []).filter((s) => testphase || !s.ki_entwurf) }))
 }
 
 /** Gültiger, nicht gesperrter Zugang zur Testphase? Dann zählen auch KI-Entwürfe. */

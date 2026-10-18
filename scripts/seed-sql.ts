@@ -59,14 +59,14 @@ insert into public.landesprogramme (partei_id, land, url, stand, kein_programm) 
 `
     : ''
 }
-insert into public.themen (id, name, beschreibung) values
-  ${zeilen(k.themen.map((t) => `(${t.id}, ${q(t.name)}, ${q(t.beschreibung)})`))}
-on conflict (id) do update set name = excluded.name, beschreibung = excluded.beschreibung;
+insert into public.themen (id, name, beschreibung, symptome) values
+  ${zeilen(k.themen.map((t) => `(${t.id}, ${q(t.name)}, ${q(t.beschreibung)}, ${q(JSON.stringify(t.symptome ?? []))}::jsonb)`))}
+on conflict (id) do update set name = excluded.name, beschreibung = excluded.beschreibung, symptome = excluded.symptome;
 
-insert into public.ursachen (id, thema_id, beschreibung, quelle_url, ebene, alltag) values
-  ${zeilen(k.ursachen.map((u) => `(${u.id}, ${u.thema_id}, ${q(u.beschreibung)}, ${q(u.quelle_url)}, ${q(u.ebene ?? 'bund')}, ${q(u.alltag ?? null)})`))}
+insert into public.ursachen (id, thema_id, beschreibung, quelle_url, ebene, alltag, gilt_fuer) values
+  ${zeilen(k.ursachen.map((u) => `(${u.id}, ${u.thema_id}, ${q(u.beschreibung)}, ${q(u.quelle_url)}, ${q(u.ebene ?? 'bund')}, ${q(u.alltag ?? null)}, ${q(u.gilt_fuer ?? null)})`))}
 on conflict (id) do update set thema_id = excluded.thema_id, beschreibung = excluded.beschreibung,
-  quelle_url = excluded.quelle_url, ebene = excluded.ebene, alltag = excluded.alltag;
+  quelle_url = excluded.quelle_url, ebene = excluded.ebene, alltag = excluded.alltag, gilt_fuer = excluded.gilt_fuer;
 
 -- Ursachen, die nicht mehr im Katalog stehen (etwa nach der Neuanlage eines Themas), entfernen –
 -- sonst ordnete die KI Probleme ihnen weiter zu. Nichts verweist per Fremdschlüssel auf sie.

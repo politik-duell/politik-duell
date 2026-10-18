@@ -46,6 +46,13 @@
       "schlagwoerter": ["laden", "ladesaeule", "ladepunkt", "wallbox", "zu hause laden", "mietwohnung", "tiefgarage", "strom tanken"]
     }
   ],
+  "symptome": [
+    {
+      "nr": 1,
+      "alltag": "Tanken ist zu teuer",
+      "ursachen_ids": [1501, 1502, 1503]
+    }
+  ],
   "instrumente": [
     {
       "id": 7011,

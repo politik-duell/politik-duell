@@ -9,6 +9,7 @@
       "id": 101,
       "beschreibung": "Zu wenige Hausarztpraxen, besonders auf dem Land: Viele Ärztinnen und Ärzte gehen bald in den Ruhestand, zu wenige lassen sich als Hausarzt nieder",
       "alltag": "Ich finde keine Hausarztpraxis in meiner Nähe, die noch neue Patienten nimmt",
+      "gilt_fuer": "Hausarztpraxen, nicht Fach- oder Zahnarztpraxen",
       "quelle_url": "https://idw-online.de/de/news769524",
       "ebene": "bund",
       "schlagwoerter": ["land", "dorf", "keine praxis", "kein hausarzt", "kein arzt", "aerztemangel", "zu wenig aerzte", "nimmt keine", "keine neuen patienten", "weit fahren", "ruhestand", "rente gegangen", "nachfolger", "nachwuchs", "niederlassen", "medizinstudium"]
@@ -28,6 +29,13 @@
       "quelle_url": "https://idw-online.de/de/news750098",
       "ebene": "bund",
       "schlagwoerter": ["kassenpatient", "gesetzlich versichert", "privatpatient", "privat versichert", "privatversichert", "budget", "quartal", "abrechnung"]
+    }
+  ],
+  "symptome": [
+    {
+      "nr": 1,
+      "alltag": "Ich warte beim Facharzt monatelang auf einen Termin",
+      "ursachen_ids": [102, 103]
     }
   ],
   "instrumente": [
