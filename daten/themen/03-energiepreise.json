@@ -46,6 +46,20 @@
       "schlagwoerter": ["heizung", "gasheizung", "oelheizung", "waermepumpe", "heizen", "nebenkosten", "heizkostenabrechnung", "daemmung"]
     }
   ],
+  "symptome": [
+    {
+      "nr": 1,
+      "alltag": "Mein Strom ist zu teuer",
+      "ursachen_ids": [301, 302, 304],
+      "ki_entwurf": true
+    },
+    {
+      "nr": 2,
+      "alltag": "Meine Heizkosten sind zu hoch",
+      "ursachen_ids": [302, 303, 305],
+      "ki_entwurf": true
+    }
+  ],
   "instrumente": [
     {
       "id": 6703,

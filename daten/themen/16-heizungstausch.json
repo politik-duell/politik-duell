@@ -38,6 +38,14 @@
       "schlagwoerter": ["mieter", "vermieter", "mietwohnung", "modernisierungsumlage", "umlage", "alte heizung", "nebenkosten"]
     }
   ],
+  "symptome": [
+    {
+      "nr": 1,
+      "alltag": "Ich weiß nicht, welche Heizung ich einbauen soll",
+      "ursachen_ids": [1602, 1603],
+      "ki_entwurf": true
+    }
+  ],
   "instrumente": [
     {
       "id": 7034,

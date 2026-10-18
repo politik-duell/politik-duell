@@ -46,6 +46,20 @@
       "schlagwoerter": ["niedriglohn", "mindestlohn", "schlecht bezahlt", "wenig verdienen", "minijob", "gastronomie"]
     }
   ],
+  "symptome": [
+    {
+      "nr": 1,
+      "alltag": "Lebensmittel sind zu teuer geworden",
+      "ursachen_ids": [1101, 1102],
+      "ki_entwurf": true
+    },
+    {
+      "nr": 2,
+      "alltag": "Von meinem Lohn bleibt mir zu wenig zum Leben",
+      "ursachen_ids": [1103, 1104],
+      "ki_entwurf": true
+    }
+  ],
   "instrumente": [
     {
       "id": 6879,

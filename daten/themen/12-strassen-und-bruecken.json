@@ -9,6 +9,7 @@
       "id": 1201,
       "beschreibung": "Viele Autobahnbrücken sind marode, ihre Modernisierung liegt weit hinter dem Plan: Bis Ende 2024 war nur 40 % des Vorgesehenen geschafft; der Autobahn GmbH fehlen Personal und Mittel",
       "alltag": "Ich stehe im Stau, weil Autobahnbrücken gesperrt oder Baustellen ewig nicht fertig sind",
+      "gilt_fuer": "Autobahnen und ihre Brücken, nicht Landes- oder Gemeindestraßen",
       "quelle_url": "https://www.bundesrechnungshof.de/SharedDocs/Kurzmeldungen/DE/2025/brueckenmodernisierung/kurzmeldung.html",
       "ebene": "bund",
       "schlagwoerter": ["autobahnbruecke", "bruecke gesperrt", "talbruecke", "lkw-verbot", "vollsperrung"]
@@ -36,6 +37,14 @@
       "quelle_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/04/PD26_N025_461.html",
       "ebene": "land",
       "schlagwoerter": ["radweg", "fahrradweg", "radfahren", "fahrrad", "pedelec", "e-bike", "radfahrer", "gefaehrlich", "kreuzung"]
+    }
+  ],
+  "symptome": [
+    {
+      "nr": 1,
+      "alltag": "Die Straßen in meiner Gemeinde werden nicht repariert",
+      "ursachen_ids": [1202, 1203],
+      "ki_entwurf": true
     }
   ],
   "instrumente": [

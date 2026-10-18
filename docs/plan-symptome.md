@@ -1,6 +1,6 @@
 # Plan: Symptomgruppen und Geltungsbereich – eine Folge, mehrere Ursachen
 
-Stand: 18. 10. 2026 · Code, Datenformat und Muster (Arzttermine, Miete) umgesetzt; die übrigen Themen folgen.
+Stand: 18. 10. 2026 · Umgesetzt: Code, Datenformat, Muster (Arzttermine, Miete, gegengelesen) und Entwurf für alle übrigen Themen (`ki_entwurf`, Gegenlesen offen).
 
 ## Anlass
 
@@ -54,11 +54,16 @@ Dazu: Die Person bestätigte den Alltagssatz (`alltag`), angezeigt und gewertet 
 | die übrigen 64 Fälle | 49/64 | 49/64 |
 
 - Die übrigen Fälle bleiben gleich (einzelne Wechsel liegen im Rauschen eines Laufs; vor allem die Wortprüfung der Belege, bekannt aus `docs/plan-zuordnung.md`).
+- Nach dem Eintrag aller Themen (19 Gruppen in 16 weiteren Themen, drei neue Testfälle): **61/75**. Die drei neuen Fälle mit Folge stimmen; alle 14 Fehler sind bekannte aus `docs/plan-zuordnung.md` (Wortprüfung der Belege, Themenwahl), keiner betrifft Gruppen.
 - Erster Versuch mit der Regel „nennt sie einen Grund der Gruppe, nur diesen“: 5/11 in den Fällen zu Arzt und Miete. Die KI setzte bei der Sozialwohnung zusätzlich die Folge, bei der Familie statt der Folge eine einzelne Gruppenursache (205) – genau der Fehler aus der Testpartie. Deshalb gilt jetzt immer die ganze Gruppe (11/11).
+
+## Entwurf für die übrigen Themen
+
+Regel aus dem Entwurf (steht in `daten/README.md`): Weil eine erkannte Ursache die ganze Gruppe auslöst, muss **jede** Ursache die Folge selbst nach sich ziehen. Danach verworfen: Behördengänge („dauert ewig“ – unverständliche Formulare sind keine Wartezeit), Pflege „finde keinen Platz“ (Personalmangel zeigt sich auch als Zeitmangel), Abwanderung (keine Ausbildungsstelle heißt nicht wegziehen), Sexismus (Hausarbeit heißt nicht beruflich festhängen), Sucht (Tabak und Alkohol gemischt), Mediennutzung (Unsicherheit der Eltern ist kein Festhängen am Handy), Innenstadt (ungepflegte Innenstadt heißt nicht Schließungen); bei Kultur ohne Lärm (den erleben Anwohnende). Ohne Gruppe bleiben auch Themen, deren Ursachen verschiedene Erlebnisse beschreiben oder enge Lagen voraussetzen (Schule, Rente, Bus und Bahn, Sicherheit, Hitze, Diskriminierung, Jugend, Armut, Einsamkeit, Studium, Führerschein, Internet).
 
 ## Offen
 
-1. **Übrige 35 Themen:** Symptomgruppen und `gilt_fuer` nach dem Muster von Arzttermine und Miete, als ein Pull Request zum Gegenlesen; danach Testset erneut.
+1. **Gegenlesen** der Gruppen in den übrigen Themen; danach `ki_entwurf` entfernen.
 2. **Facharztmangel** als eigene Ursache bei Arzttermine (Fachärzte allgemein, nicht nur Kassen/Privat): neue Ursache mit Recherche und Suche in allen Programmen – über `/thema-erfassen` (nachträgliche Ursache), nicht hier.
 3. **Blinde Zweitbewertung** der Themen dieser Testpartie (Arzttermine, Miete, Pflege, Schule, Bus und Bahn): fast alle Werte sind „KI-Entwurf, nicht blind“; eigener Lauf über die Erfassungs-Skills.
 4. **Gewichte** je Gruppe, wo eine Quelle eine Hauptursache belegt.

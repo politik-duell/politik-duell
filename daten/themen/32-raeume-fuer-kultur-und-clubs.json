@@ -42,6 +42,14 @@
       "schlagwoerter": ["kulturgebaeude", "veranstaltungstechnik", "umbau", "kulturort", "brandschutz"]
     }
   ],
+  "symptome": [
+    {
+      "nr": 1,
+      "alltag": "Unser Club oder Kulturort kann Miete und Betrieb kaum noch bezahlen",
+      "ursachen_ids": [3201, 3203],
+      "ki_entwurf": true
+    }
+  ],
   "instrumente": [
     {
       "id": 9490,

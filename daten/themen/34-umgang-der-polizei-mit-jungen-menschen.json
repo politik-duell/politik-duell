@@ -33,5 +33,13 @@
       "ebene": "land",
       "schlagwoerter": ["polizei anzeigen", "vorfall beweisen", "beschwerde", "einsatz dokumentieren"]
     }
+  ],
+  "symptome": [
+    {
+      "nr": 1,
+      "alltag": "Ich wurde von der Polizei schlecht behandelt",
+      "ursachen_ids": [3402, 3403],
+      "ki_entwurf": true
+    }
   ]
 }
