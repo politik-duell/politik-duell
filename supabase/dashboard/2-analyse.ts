@@ -301,6 +301,9 @@ var ROLLEN_IDS = [
   "vermoegend"
 ];
 var MAX_AUSWAHL = 3;
+function auswahlErlaubt(ids, gruppe) {
+  return ids.filter((id) => !gruppe?.ursachen_ids.includes(id)).length <= MAX_AUSWAHL;
+}
 
 // _shared/ki.ts
 var MAX_NACHFRAGEN = 2;
@@ -497,36 +500,51 @@ function mitInstrument(antwort, instrumentId) {
   };
 }
 function ursachenPrompt(thema, ursachen) {
-  const liste = ursachen.map((u) => `- Ursache ${u.id}: ${u.beschreibung}${u.alltag ? ` \u2013 im Alltag: \u201E${u.alltag}\u201C` : ""}`).join("\n");
+  const liste = ursachen.map((u) => `- Ursache ${u.id}: ${u.beschreibung}${u.gilt_fuer ? ` \u2013 gilt nur f\xFCr: ${u.gilt_fuer}` : ""}${u.alltag ? ` \u2013 im Alltag: \u201E${u.alltag}\u201C` : ""}`).join("\n");
+  const symptome = (thema.symptome ?? []).map((s) => `- Folge ${s.nr}: \u201E${s.alltag}\u201C \u2013 Ursachen ${s.ursachen_ids.join(", ")}`).join("\n");
   return `Du hilfst im Spiel \u201EPolitik-Duell\u201C. Eine Person hat ein Alltagsproblem zum Thema \u201E${thema.name}\u201C genannt
 (${thema.beschreibung}). Deine einzige Aufgabe: Welche der folgenden Ursachen nennt oder beschreibt sie selbst?
 
 Regeln:
-- "ursachen_ids": nur Ursachen, die die Schilderung selbst nennt oder erkennbar beschreibt \u2013 h\xF6chstens ${MAX_AUSWAHL},
-  die deutlichste zuerst. Nimm keine Ursache dazu, nur weil sie zum Thema geh\xF6rt oder ein Wort mit der Schilderung
-  teilt \u2013 jede zugeordnete Ursache z\xE4hlt in der Wertung.
-- Setzt eine Ursache eine bestimmte Lage voraus (z. B. einen laufenden Vertrag, einen Heimplatz, einen bestimmten
-  Wohnort), ordne sie nur zu, wenn die Schilderung diese Lage erkennen l\xE4sst. Widerspricht die Schilderung dieser
-  Lage (z. B. \u201Eich wohne seit 20 Jahren in derselben Wohnung\u201C bei einer Ursache \xFCber Neuvermietungen), passt sie nicht.
+- "ursachen_ids": nur Ursachen, die die Schilderung selbst nennt oder erkennbar beschreibt und die ganz zu ihrer
+  Lage passen \u2013 h\xF6chstens ${MAX_AUSWAHL}, die deutlichste zuerst. Nimm keine Ursache dazu, nur weil sie zum Thema
+  geh\xF6rt oder ein Wort mit der Schilderung teilt \u2013 jede zugeordnete Ursache z\xE4hlt in der Wertung.
+- \u201Egilt nur f\xFCr: \u2026\u201C nennt die Lage, die eine Ursache voraussetzt (z. B. eine bestimmte Art von Praxis, einen
+  laufenden Vertrag, einen Heimplatz). Schildert die Person dasselbe Erlebnis erkennbar in einer anderen Lage (z. B.
+  bei einer Fach\xE4rztin statt in der Hausarztpraxis), passt die Ursache nur teilweise. Dasselbe gilt, wenn sie nur
+  einen Teil des Grundes trifft, den die Person nennt, und wenn eine Ursache ohne \u201Egilt nur f\xFCr\u201C erkennbar eine
+  andere Lage voraussetzt. Widerspricht die Schilderung der Lage ausdr\xFCcklich (z. B. \u201Eich wohne seit 20 Jahren in
+  derselben Wohnung\u201C bei einer Ursache \xFCber Neuvermietungen), passt sie gar nicht.
+- "teilweise": Passt weder eine Ursache ganz noch eine der Folgen unten, die Ursache, die der Schilderung am
+  n\xE4chsten kommt \u2013 NICHT in "ursachen_ids", sondern hier mit einem kurzen, neutralen Satz, was abweicht (h\xF6chstens
+  20 W\xF6rter), z. B. {"101": "Du sprichst von einer Fach\xE4rztin, erfasst ist hier der Mangel an Hausarztpraxen."}.
+  Lieber eine Ursache hier nennen als sie ungenau zuzuordnen. Sonst {}.
 - Ein gemeinsames Wort gen\xFCgt nicht: Der Beleg muss denselben Grund nennen wie die Ursache (z. B. \u201Eder Bus kommt
   st\xE4ndig zu sp\xE4t\u201C nennt Unp\xFCnktlichkeit, nicht zu teure Fahrkarten, auch wenn beide vom Bus handeln).
 - "ursachen_belege": zu jeder Ursache in "ursachen_ids" die W\xF6rter aus der Schilderung, die genau diesen Grund
   nennen \u2013 w\xF6rtlich \xFCbernommen, h\xF6chstens acht W\xF6rter, z. B. {"204": "Miete wird jedes Jahr erh\xF6ht"}. Dieselben
   W\xF6rter st\xFCtzen nie zwei Ursachen. Findest du keine W\xF6rter, die diesen Grund nennen, ordne die Ursache nicht zu.
+- "symptom": Schildert die Person eine der Folgen unten (auch mit anderen Worten), die Nummer dieser Folge \u2013 sonst
+  null. Die Ursachen einer Folge z\xE4hlen dann alle.
 - \u201Eim Alltag: \u2026\u201C zeigt, wie Betroffene eine Ursache typischerweise erleben. Vergleiche die Schilderung damit,
   auch wenn sie aus der Sicht anderer Beteiligter kommt (z. B. Anwohner statt Veranstalter, Eltern statt Jugendliche).
 - Unterscheide Erlebnis und Gef\xFChl: Schildert jemand vor allem ein Gef\xFChl oder eine Sorge (z. B. \u201EIch f\xFChle mich
   unsicher, seit \u2026\u201C), passen Ursachen, die beschreiben, wie Wahrnehmung und Wirklichkeit auseinanderfallen oder wo
   sich Unsicherheit ballt. Ursachen zu Taten oder T\xE4tergruppen nur, wenn die Schilderung sie erkennen l\xE4sst.
-- "sicher": true nur, wenn jede gew\xE4hlte Ursache den Grund trifft, den die Person nennt. Nennt sie einen Grund,
-  den keine Ursache beschreibt, passt eine Ursache nur ungef\xE4hr oder ist die Schilderung zu allgemein: false.
+- "sicher": true nur, wenn jede Ursache in "ursachen_ids" ganz zur Schilderung passt (bei einer Folge ohne weitere
+  Ursache: wenn die Folge passt). Nennt sie einen Grund, den keine Ursache beschreibt, oder ist die Schilderung zu
+  allgemein: false.
 - Bewerte nichts und nenne keine Parteien, Links oder Zahlen.
 
 Ursachen:
 ${liste}
-
+${symptome ? `
+Folgen, die mehrere Ursachen gemeinsam haben:
+${symptome}
+` : ""}
 Antworte ausschlie\xDFlich mit einem JSON-Objekt:
-{"ursachen_ids": number[], "ursachen_belege": {[id: string]: string}, "sicher": boolean}`;
+{"ursachen_ids": number[], "ursachen_belege": {[id: string]: string}, "teilweise": {[id: string]: string},
+ "symptom": number | null, "sicher": boolean}`;
 }
 var FUELLWOERTER = new Set("kaum nicht immer mehr sehr viel viele vielen ganz noch schon auch eben einfach mein meine meinem meinen meiner mich unser unsere unserem unseren keine keinen keinem einen einem einer eine dass weil wenn aber oder doch dann denn jetzt hier dort habe haben hatte wird werden wurde sind bist kann koennen muss muessen soll sollen gibt alle alles jeden jede jeder ihre ihren sein seine sich diese dieser dieses fuer ueber unter nach seit gegen ohne beim wieder total echt leider bald heute gerade schon etwas nichts leute menschen".split(" "));
 var grundWoerter = (s) => s.toLowerCase().replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/ü/g, "ue").replace(/ß/g, "ss").split(/[^a-z]+/).filter((w) => w.length >= 4 && !FUELLWOERTER.has(w));
@@ -546,12 +564,29 @@ function unsicherheit(schritt1, schritt2, ursachen) {
   if (andere.length > 0) gruende.push("thema_kandidaten");
   if (r1.mehrere_probleme === true && andere.length > 0) gruende.push("mehrere_probleme");
   if (r2.sicher !== true) gruende.push("ursachen_unsicher");
+  if (teilweisePassend(r2, ursachen).length) gruende.push("teilweise");
   const belege = alsObjekt(r2.ursachen_belege);
   for (const id of Array.isArray(r2.ursachen_ids) ? r2.ursachen_ids.map(Number) : []) {
     const u = ursachen.find((x) => x.id === id);
     if (u && !belegPasstZuUrsache(kurz(belege[String(id)], 120), u)) gruende.push(`beleg_${id}`);
   }
   return gruende;
+}
+var GRUENDE_THEMA = [
+  "thema_unsicher",
+  "thema_kandidaten",
+  "mehrere_probleme",
+  "ursachen_keine_antwort"
+];
+function teilweisePassend(schritt2, ursachen) {
+  return Object.entries(alsObjekt(alsObjekt(schritt2).teilweise)).map(([id, satz]) => ({
+    id: Number(id),
+    satz: kurz(satz, 200)
+  })).filter((t) => ursachen.some((u) => u.id === t.id));
+}
+function genanntesSymptom(schritt2, thema) {
+  const nr = alsObjekt(schritt2).symptom;
+  return Number.isInteger(nr) ? thema.symptome?.find((s) => s.nr === nr) : void 0;
 }
 async function ordneEin(frage, verlauf, rolle, { themen, ursachen, parteien = [], haltungen = [] }, zufall = Math.random) {
   const r1 = alsObjekt(await frage(themenPrompt(themen, haltungen), nutzerNachrichten(verlauf, rolle)));
@@ -560,6 +595,8 @@ async function ordneEin(frage, verlauf, rolle, { themen, ursachen, parteien = []
     ursachen_ids: []
   };
   const unsicher = [];
+  let gruppe;
+  let abweichung;
   if (r1.typ === "forderung" && r1.thema_sicher === false) {
     roh = {
       ...roh,
@@ -580,14 +617,43 @@ async function ordneEin(frage, verlauf, rolle, { themen, ursachen, parteien = []
     const { ursachen_ids, ursachen_belege } = alsObjekt(r2);
     const verworfen = new Set(unsicher.filter((g) => g.startsWith("beleg_")).map((g) => Number(g.slice(6))));
     const uebrig = (Array.isArray(ursachen_ids) ? ursachen_ids.map(Number) : []).filter((id) => !verworfen.has(id));
-    const ganz = unsicher.some((g) => !g.startsWith("beleg_")) || uebrig.length === 0;
-    roh = {
-      ...r1,
-      ursachen_ids: ganz ? [] : uebrig,
-      ursachen_belege
+    const themaUnsicher = unsicher.some((g) => GRUENDE_THEMA.includes(g));
+    gruppe = themaUnsicher ? void 0 : genanntesSymptom(r2, thema) ?? thema.symptome?.find((s) => s.ursachen_ids.some((id) => uebrig.includes(id)));
+    if (gruppe) {
+      const weitere2 = alsObjekt(r2).sicher === true ? uebrig.filter((id) => !gruppe.ursachen_ids.includes(id)) : [];
+      roh = {
+        ...r1,
+        ursachen_ids: weitere2,
+        ursachen_belege
+      };
+    } else {
+      const blockiert = unsicher.some((g) => !g.startsWith("beleg_"));
+      abweichung = teilweisePassend(r2, kandidaten)[0]?.satz;
+      roh = {
+        ...r1,
+        ursachen_ids: blockiert ? [] : uebrig,
+        ursachen_belege
+      };
+    }
+  }
+  let antwort = bereinigeAntwort(roh, verlauf, themen, ursachen, parteien, zufall, haltungen);
+  if (gruppe && antwort.typ === "problem" && antwort.thema_id === thema?.id) {
+    const ids = [
+      ...antwort.ursachen_ids,
+      ...gruppe.ursachen_ids.filter((id) => !antwort.ursachen_ids.includes(id))
+    ];
+    antwort = {
+      ...antwort,
+      nachfrage: null,
+      ursachen_ids: ids,
+      symptom: gruppe.nr
     };
   }
-  const antwort = bereinigeAntwort(roh, verlauf, themen, ursachen, parteien, zufall, haltungen);
+  const satz = abweichung && antwort.nachfrage && antwort.thema_id === thema?.id ? bereinigeAbweichung(abweichung, parteien) : null;
+  if (satz) antwort = {
+    ...antwort,
+    abweichung: satz
+  };
   const weitere = (Array.isArray(r1.thema_kandidaten) ? r1.thema_kandidaten.map(Number) : []).filter((id, i, alle) => id !== antwort.thema_id && themen.some((t) => t.id === id) && alle.indexOf(id) === i).slice(0, 2);
   return {
     antwort: antwort.typ === "problem" && antwort.nachfrage && weitere.length ? {
@@ -596,6 +662,11 @@ async function ordneEin(frage, verlauf, rolle, { themen, ursachen, parteien = []
     } : antwort,
     unsicher
   };
+}
+function bereinigeAbweichung(satz, parteien) {
+  const text = ohneParteinamen(satz.replace(/(https?:\/\/|www\.)\S+/gi, ""), parteien).trim();
+  if (text.length < 10 || text.length > 200 || text.includes("[Partei]") || pruefeText(text)) return null;
+  return text;
 }
 function nutzerNachrichten(verlauf, rolle) {
   const nachfragen = verlauf.filter((n) => n.von === "ki").length;
@@ -649,12 +720,17 @@ function pruefeAuswahl(roh) {
       passt_nicht: true
     };
   }
-  if (typeof w !== "object" || !Number.isInteger(w.thema_id) || !Array.isArray(ids) || ids.length === 0 || ids.length > MAX_AUSWAHL || !ids.every((id) => Number.isInteger(id)) || new Set(ids).size !== ids.length) throw new EingabeFehler(`Ung\xFCltige Auswahl (1 bis ${MAX_AUSWAHL} Ursachen eines Themas).`);
+  if (typeof w !== "object" || !Number.isInteger(w.thema_id) || !Array.isArray(ids) || ids.length === 0 || // Mit Symptomgruppe dürfen es mehr sein; wie viele, prüft antwortAusAuswahl am Katalog.
+  ids.length > (w.symptom === void 0 ? MAX_AUSWAHL : MAX_MIT_SYMPTOM) || !ids.every((id) => Number.isInteger(id)) || new Set(ids).size !== ids.length || w.symptom !== void 0 && !Number.isInteger(w.symptom)) throw new EingabeFehler(`Ung\xFCltige Auswahl (1 bis ${MAX_AUSWAHL} Ursachen eines Themas).`);
   return {
     thema_id: w.thema_id,
-    ursachen_ids: ids
+    ursachen_ids: ids,
+    ...w.symptom !== void 0 ? {
+      symptom: w.symptom
+    } : {}
   };
 }
+var MAX_MIT_SYMPTOM = 20;
 function antwortAusAuswahl(auswahl, themen, ursachen) {
   const thema = themen.find((t) => t.id === auswahl.thema_id);
   if (auswahl.passt_nicht) {
@@ -672,10 +748,19 @@ function antwortAusAuswahl(auswahl, themen, ursachen) {
   }
   const passt = auswahl.ursachen_ids.every((id) => ursachen.some((u) => u.id === id && u.thema_id === auswahl.thema_id));
   if (!thema || !passt) throw new EingabeFehler("Diese Ursachen geh\xF6ren nicht zu diesem Thema.");
-  const saetze = auswahl.ursachen_ids.map((id) => {
-    const u = ursachen.find((x) => x.id === id);
-    return (u.alltag || u.beschreibung).trim().replace(/[.!…]*$/, "");
-  });
+  const gruppe = auswahl.symptom === void 0 ? void 0 : thema.symptome?.find((s) => s.nr === auswahl.symptom);
+  if (auswahl.symptom !== void 0 && !gruppe) throw new EingabeFehler("Diese Symptomgruppe gibt es nicht.");
+  if (!auswahlErlaubt(auswahl.ursachen_ids, gruppe)) throw new EingabeFehler(`H\xF6chstens ${MAX_AUSWAHL} Ursachen au\xDFerhalb der Symptomgruppe.`);
+  const ausGruppe = auswahl.ursachen_ids.filter((id) => gruppe?.ursachen_ids.includes(id));
+  const saetze = [
+    ...ausGruppe.length ? [
+      gruppe.alltag
+    ] : [],
+    ...auswahl.ursachen_ids.filter((id) => !ausGruppe.includes(id)).map((id) => {
+      const u = ursachen.find((x) => x.id === id);
+      return u.alltag || u.beschreibung;
+    })
+  ].map((t) => t.trim().replace(/[.!…]*$/, ""));
   return {
     typ: "problem",
     nachfrage: null,
@@ -683,6 +768,9 @@ function antwortAusAuswahl(auswahl, themen, ursachen) {
     ursachen_ids: [
       ...auswahl.ursachen_ids
     ],
+    ...ausGruppe.length ? {
+      symptom: gruppe.nr
+    } : {},
     zusammenfassung: kurz(`${saetze.join(". ")}.`, 200),
     stichwort: bereinigeStichwort(thema.name, thema.name),
     einschaetzung: null
@@ -987,17 +1075,17 @@ Deno.serve(async (req) => {
       fehler: "Gerade spielen sehr viele Leute. Bitte versuch es etwas sp\xE4ter noch einmal."
     }, 503);
     const [themenRes, ursachenRes, parteienRes] = await Promise.all([
-      db.from("themen").select("id, name, beschreibung"),
+      db.from("themen").select("id, name, beschreibung, symptome"),
       db.from("ursachen").select("*"),
       db.from("parteien").select("*")
     ]);
     if (themenRes.error) throw themenRes.error;
     if (ursachenRes.error) throw ursachenRes.error;
     if (parteienRes.error) throw parteienRes.error;
-    const themen = themenRes.data;
     const ursachen = ursachenRes.data;
     const parteien = parteienRes.data;
     const testphase = anfrage.zugang ? await zugangGueltig(anfrage.zugang) : false;
+    const themen = mitSymptomen(themenRes.data, testphase);
     let antwort;
     if (anfrage.auswahl) {
       antwort = antwortAusAuswahl(anfrage.auswahl, themen, ursachen);
@@ -1069,6 +1157,12 @@ async function vollstaendigeHaltungen(testphase) {
     console.error("vollstaendigeHaltungen:", e instanceof Error ? e.message : e);
     return [];
   }
+}
+function mitSymptomen(themen, testphase) {
+  return themen.map((t) => ({
+    ...t,
+    symptome: (t.symptome ?? []).filter((s) => testphase || !s.ki_entwurf)
+  }));
 }
 async function zugangGueltig(token) {
   const { data, error } = await db.from("testphase_zugaenge").select("id").eq("token_hash", await tokenHash(token)).eq("gesperrt", false).maybeSingle();

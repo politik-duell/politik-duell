@@ -41,6 +41,7 @@ erDiagram
         smallint id PK
         text name
         text beschreibung
+        jsonb symptome "Symptomgruppen: nr, alltag, ursachen_ids, ki_entwurf"
     }
     ursachen {
         smallint id PK
@@ -48,6 +49,8 @@ erDiagram
         text beschreibung
         text quelle_url
         text ebene "bund | land"
+        text alltag "Satz zum Antippen"
+        text gilt_fuer "vorausgesetzte Lage, sonst null"
     }
     massnahmen {
         serial id PK

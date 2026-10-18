@@ -205,6 +205,11 @@ export function Methode() {
           Die Rundenpunkte sind die Summe über alle Ursachen, die du bestätigt hast (höchstens drei). Parteien setzen oft an verschiedenen Ursachen
           an; so können sehr unterschiedliche Programme ähnlich viele Punkte erreichen.
         </li>
+        <li>
+          Manche Folgen haben mehrere Ursachen zugleich – „Ich finde keine bezahlbare Wohnung“ etwa zu wenig Neubau, teure
+          Neuvermietung und wegfallende Sozialwohnungen. Beschreibst du so eine Folge, zählen alle diese Ursachen (nicht nur
+          drei); du kannst einzelne abwählen. Welche Ursachen zu einer Folge gehören, steht fest im Katalog.
+        </li>
         <li>Die höhere Summe bekommt den Spielpunkt, bei Gleichstand beide.</li>
         <li>
           Wählst du ein Bundesland, zählt bei Ursachen, für die vor allem die Länder zuständig sind (etwa Lehrkräfte oder

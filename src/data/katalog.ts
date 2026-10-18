@@ -9,6 +9,7 @@ import {
   type Landesprogramm,
   type Massnahme,
   type Partei,
+  type Symptomgruppe,
   type Thema,
   type Ursache,
   type Zielkonflikt,
@@ -733,7 +734,7 @@ export function pruefeKatalog(
       f(ort, 'erwartet ein Objekt')
       continue
     }
-    unbekannteFelder(ort, t, ['id', 'name', 'beschreibung', 'ziel', 'schlagwoerter', 'freigabe', 'ursachen', 'instrumente', 'abdeckung'])
+    unbekannteFelder(ort, t, ['id', 'name', 'beschreibung', 'ziel', 'schlagwoerter', 'freigabe', 'ursachen', 'symptome', 'instrumente', 'abdeckung'])
     // Ziel aus Sicht der Betroffenen: Daran wird die Wirksamkeit gemessen. Bei echten Daten Pflicht.
     const ziel = t.ziel !== undefined || !katalog.fiktiv ? text(ort, t, 'ziel', 200) : ''
     const thema: KatalogThema = {
@@ -759,7 +760,7 @@ export function pruefeKatalog(
         f(uOrt, 'erwartet ein Objekt')
         continue
       }
-      unbekannteFelder(uOrt, roh, ['id', 'beschreibung', 'quelle_url', 'ebene', 'alltag', 'schlagwoerter', 'nachtraeglich'])
+      unbekannteFelder(uOrt, roh, ['id', 'beschreibung', 'quelle_url', 'ebene', 'alltag', 'gilt_fuer', 'schlagwoerter', 'nachtraeglich'])
       // Nach dem Blick in die Programme ergänzt? Dann offen vermerkt, mit Datum und Grund.
       const nachtraeglich = roh.nachtraeglich !== undefined ? text(uOrt, roh, 'nachtraeglich', 300) : undefined
       const u: KatalogUrsache = {
@@ -774,6 +775,7 @@ export function pruefeKatalog(
         else u.ebene = roh.ebene as Ursache['ebene']
       }
       if (roh.alltag !== undefined) u.alltag = text(uOrt, roh, 'alltag', 160)
+      if (roh.gilt_fuer !== undefined) u.gilt_fuer = text(uOrt, roh, 'gilt_fuer', 120)
       const uw = schlagwoerter(uOrt, roh)
       if (uw) u.schlagwoerter = uw
       if (nachtraeglich) u.nachtraeglich = nachtraeglich
@@ -781,6 +783,37 @@ export function pruefeKatalog(
       ursacheIds.add(u.id)
       eigeneUrsachen.add(u.id)
       katalog.ursachen.push(u)
+    }
+
+    // Symptomgruppen (docs/plan-symptome.md): eine Folge, mehrere Ursachen desselben Themas.
+    if (t.symptome !== undefined) {
+      if (!Array.isArray(t.symptome)) f(ort, '„symptome“ muss eine Liste sein')
+      const symptome: Symptomgruppe[] = []
+      for (const [i, roh] of (Array.isArray(t.symptome) ? t.symptome : []).entries()) {
+        const sOrt = `${ort} › symptome[${i}]`
+        if (!istObjekt(roh)) {
+          f(sOrt, 'erwartet ein Objekt')
+          continue
+        }
+        unbekannteFelder(sOrt, roh, ['nr', 'alltag', 'ursachen_ids', 'ki_entwurf'])
+        const s: Symptomgruppe = { nr: ganzzahl(sOrt, roh, 'nr', 1, 99), alltag: text(sOrt, roh, 'alltag', 160), ursachen_ids: [] }
+        const ids = roh.ursachen_ids
+        if (!Array.isArray(ids) || ids.length < 2 || ids.some((x) => !Number.isInteger(x)))
+          f(sOrt, '„ursachen_ids“ muss mindestens zwei Ursachen-IDs nennen')
+        else {
+          for (const id of ids as number[]) if (!eigeneUrsachen.has(id)) f(sOrt, `„ursachen_ids“: Ursache ${id} gehört nicht zum Thema`)
+          if (new Set(ids).size !== ids.length) f(sOrt, '„ursachen_ids“ enthält eine Ursache doppelt')
+          s.ursachen_ids = ids as number[]
+        }
+        if (roh.ki_entwurf !== undefined) {
+          if (typeof roh.ki_entwurf !== 'boolean') f(sOrt, '„ki_entwurf“ muss true oder false sein')
+          else if (roh.ki_entwurf) s.ki_entwurf = true
+        }
+        if (symptome.some((x) => x.nr === s.nr)) f(sOrt, `Nummer ${s.nr} ist doppelt`)
+        if (s.alltag && symptome.some((x) => x.alltag.toLowerCase() === s.alltag.toLowerCase())) f(sOrt, 'gleicher Satz wie eine andere Gruppe')
+        symptome.push(s)
+      }
+      if (symptome.length) thema.symptome = symptome
     }
 
     // Freigabe durch die Betreiberin: Datum und Ursachen, deren Quellen sie im Original bestätigt hat.

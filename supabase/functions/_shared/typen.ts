@@ -61,6 +61,23 @@ export interface Thema {
   ziel?: string
   /** Nur Mock: Schlagwörter, mit denen die Mock-Analyse Themen erkennt. */
   schlagwoerter?: string[]
+  /** Folgen, die mehrere Ursachen gemeinsam haben (docs/plan-symptome.md). Fehlt: keine. */
+  symptome?: Symptomgruppe[]
+}
+
+/**
+ * Eine Folge, die mehrere Ursachen eines Themas gemeinsam haben („Ich finde keine bezahlbare Wohnung“). Nennt eine
+ * Person nur diese Folge, keinen der Gründe, zählen alle Ursachen der Gruppe (docs/plan-symptome.md).
+ */
+export interface Symptomgruppe {
+  /** Nummer innerhalb des Themas (1, 2 …). */
+  nr: number
+  /** Die Folge in der Sprache der Betroffenen, Ich-Form, ohne Zahlen. */
+  alltag: string
+  /** Mindestens zwei Ursachen desselben Themas. */
+  ursachen_ids: number[]
+  /** Von einer KI entworfen, noch nicht von Menschen geprüft: zählt nur in der Testphase. */
+  ki_entwurf?: boolean
 }
 
 export interface Ursache {
@@ -75,6 +92,11 @@ export interface Ursache {
    * Auswahl zum Antippen. Gewertet und belegt wird weiter an `beschreibung`. Fehlt sie, zeigt die App `beschreibung`.
    */
   alltag?: string | null
+  /**
+   * Für welche Lage die Ursache gilt, wenn sie eine bestimmte voraussetzt („Hausarztpraxen, nicht Fachärzte“,
+   * „laufender Mietvertrag“). Schildert jemand dasselbe Symptom in einer anderen Lage, passt sie nur teilweise.
+   */
+  gilt_fuer?: string | null
   /** Nur Mock: Schlagwörter, mit denen die Mock-Analyse Ursachen erkennt. */
   schlagwoerter?: string[]
 }
@@ -234,8 +256,21 @@ export interface AnalyseAntwort {
   thema_kandidaten?: number[]
   /** Antwort auf „Nichts davon passt“: Thema ohne Ursachen, ohne Wertung („noch nicht erfasst“). */
   passt_nicht?: boolean
-  /** Bei `problem` höchstens MAX_AUSWAHL, jede durch Wörter aus der Schilderung gestützt (siehe `ursachen_belege`). */
+  /**
+   * Bei `problem` höchstens MAX_AUSWAHL, jede durch Wörter aus der Schilderung gestützt (siehe `ursachen_belege`) –
+   * zuzüglich aller Ursachen der Symptomgruppe `symptom`.
+   */
   ursachen_ids: number[]
+  /**
+   * Nur bei Ursachen aus der KI: Die Person nennt die Folge der Symptomgruppe mit dieser Nummer, aber keinen der
+   * Gründe – deren Ursachen sind in `ursachen_ids` enthalten (docs/plan-symptome.md).
+   */
+  symptom?: number
+  /**
+   * Nur bei einer Nachfrage mit Thema: Eine Ursache passt nur teilweise (etwa Hautarzt statt Hausarzt). Kurzer,
+   * neutraler Satz der KI, was abweicht – die App zeigt ihn über der Auswahl, ohne Vorauswahl.
+   */
+  abweichung?: string
   /**
    * Bei `problem` mit Ursachen aus der KI: je Ursache die Wörter aus der Schilderung, die sie nennen (wörtlich,
    * geprüft). Die App zeigt sie neben der Ursache („Deine Worte: …“). Nur in der Antwort, nie gespeichert.
@@ -291,6 +326,14 @@ export interface AnalyseAnfrage {
 /** Höchstens so viele Ursachen dürfen angetippt werden (docs/plan-haltungen.md, A2). */
 export const MAX_AUSWAHL = 3
 
+/**
+ * Ursachen, die nicht zur Symptomgruppe gehören, zählen zu MAX_AUSWAHL; die der Gruppe nicht – sonst könnte eine
+ * Person, die nur die Folge nennt, nicht alle ihre Ursachen werten lassen (docs/plan-symptome.md).
+ */
+export function auswahlErlaubt(ids: number[], gruppe: Pick<Symptomgruppe, 'ursachen_ids'> | undefined): boolean {
+  return ids.filter((id) => !gruppe?.ursachen_ids.includes(id)).length <= MAX_AUSWAHL
+}
+
 export interface UrsachenAuswahl {
   thema_id: number
   /** Leer genau dann, wenn `passt_nicht`. */
@@ -300,6 +343,11 @@ export interface UrsachenAuswahl {
    * `review_eingaben` – so zeigt sich, welche Ursachen im Katalog fehlen.
    */
   passt_nicht?: boolean
+  /**
+   * Die Symptomgruppe, deren Ursachen vorausgewählt waren: Ihre Ursachen zählen nicht zu MAX_AUSWAHL
+   * (docs/plan-symptome.md).
+   */
+  symptom?: number
 }
 
 export interface Nachricht {

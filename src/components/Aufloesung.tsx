@@ -14,9 +14,18 @@ import { parteiStil } from './stil'
 export { KI_ENTWURF, KI_HINWEIS, MassnahmeBelege, NICHT_BLIND }
 
 export function Belege({ ergebnis }: { ergebnis: ParteiErgebnis }) {
+  // Mehrere Maßnahmen von derselben Programmseite: ein Link genügt.
+  const einmal = ergebnis.treffer.filter(
+    (t, i, alle) =>
+      alle.findIndex(
+        (x) =>
+          x.massnahme.beleg_programm_url === t.massnahme.beleg_programm_url &&
+          (x.massnahme.beleg_studie_url ?? null) === (t.massnahme.beleg_studie_url ?? null),
+      ) === i,
+  )
   return (
     <ul className="belege-liste">
-      {ergebnis.treffer.map((t) => (
+      {einmal.map((t) => (
         <li key={t.massnahme.id}>
           <MassnahmeBelege massnahme={t.massnahme} />
         </li>
@@ -171,13 +180,13 @@ function MassnahmeDetail({ ergebnis, ursacheId }: { ergebnis: ParteiErgebnis; ur
  */
 function Duell({ runde, spieler }: { runde: RundenErgebnis; spieler: [Spieler, Spieler] }) {
   const { ursachen } = useDaten()
+  const gruppe = runde.symptom !== undefined ? runde.thema?.symptome?.find((g) => g.nr === runde.symptom) : undefined
   const landName = useLandName()
   const [a, b] = runde.ergebnisse!
   // Ältere Runden ohne gespeicherte Ursachen: aus den Treffern ableiten.
   const ursachenIds =
     runde.ursachen_ids ?? [...new Set([...a.treffer, ...b.treffer].flatMap((t) => t.ursachen_ids))]
-  const ursacheText = (id: number) => ursachen.find((u) => u.id === id)?.beschreibung ?? 'Ursache'
-  const alltagText = (id: number) => ursachen.find((u) => u.id === id)?.alltag ?? null
+  const ursache = (id: number) => ursachen.find((u) => u.id === id)
   const punkteVon = (e: ParteiErgebnis, id: number) => (e.abdeckung ? (wertungFuer(e, id)?.punkte ?? 0) : null)
   const leere = runde.ergebnisse!.map((e) => ({ e, leer: ohneTreffer(e, landName) })).filter((x) => x.leer)
 
@@ -205,12 +214,15 @@ function Duell({ runde, spieler }: { runde: RundenErgebnis; spieler: [Spieler, S
                   <summary>
                     <span className="duell-ursache">
                       <span>
-                        {ursacheText(id)}
-                        {/* Was die Person bestätigt hat (docs/plan-zuordnung.md); ältere Runden: woran die KI sie erkannte. */}
+                        {/* Überschrift ist, was die Person bestätigt hat (Alltagssatz); der Befund mit Quelle steht im
+                            Detail. Ältere Runden: woran die KI die Ursache erkannte. */}
+                        {ursache(id)?.alltag ?? ursache(id)?.beschreibung ?? 'Ursache'}
                         {runde.ursachen_belege?.[id] ? (
                           <small className="duell-beleg">Deine Worte: „{runde.ursachen_belege[id]}“</small>
+                        ) : gruppe?.ursachen_ids.includes(id) ? (
+                          <small className="duell-beleg">Trägt bei zu: „{gruppe.alltag}“</small>
                         ) : (
-                          alltagText(id) && <small className="duell-beleg">Von dir bestätigt: „{alltagText(id)}“</small>
+                          ursache(id)?.alltag && <small className="duell-beleg">Von dir bestätigt</small>
                         )}
                       </span>
                     </span>
@@ -225,6 +237,14 @@ function Duell({ runde, spieler }: { runde: RundenErgebnis; spieler: [Spieler, S
                     </span>
                   </summary>
                   <div className="duell-details">
+                    {ursache(id)?.alltag && (
+                      <p className="duell-befund">
+                        {ursache(id)!.beschreibung}{' '}
+                        <a href={ursache(id)!.quelle_url} target="_blank" rel="noopener noreferrer">
+                          Quelle
+                        </a>
+                      </p>
+                    )}
                     <MassnahmeDetail ergebnis={a} ursacheId={id} />
                     <MassnahmeDetail ergebnis={b} ursacheId={id} />
                   </div>
@@ -280,6 +300,7 @@ export function Aufloesung({
   }, [])
 
   const rolle = ROLLEN.find((r) => r.id === runde.rolle)?.label
+  const { ursachen } = useDaten()
   const landName = useLandName()
   const ohneWertung = runde.ergebnisse?.filter((e) => !e.abdeckung) ?? []
   const keinLandesprogramm = ohneWertung.filter((e) => e.fehlt?.grund === 'kein_landesprogramm')
@@ -302,7 +323,8 @@ export function Aufloesung({
       <p className="meta">
         {runde.thema ? `Thema: ${runde.thema.name}` : 'Thema nicht in der Datenbank'}
         {rolle && ` · Rolle: ${rolle}`}
-        {runde.land && ` · ${landName(runde.land)}`}
+        {/* Das Bundesland nur, wenn es zählt: bei Ursachen in Länderzuständigkeit (docs/methode.md). */}
+        {runde.land && runde.ursachen_ids?.some((id) => ursachen.find((u) => u.id === id)?.ebene === 'land') && ` · ${landName(runde.land)}`}
       </p>
 
       {!enthuellt ? (

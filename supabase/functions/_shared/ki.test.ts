@@ -24,7 +24,7 @@ import {
   unsicherheit,
   ursachenPrompt,
 } from './ki.ts'
-import type { AnalyseAntwort, Nachricht, Thema, Ursache } from './typen.ts'
+import { auswahlErlaubt, type AnalyseAntwort, type Nachricht, type Thema, type Ursache } from './typen.ts'
 
 const spieler = (text: string): Nachricht => ({ von: 'spieler', text })
 const ki = (text: string): Nachricht => ({ von: 'ki', text })
@@ -785,5 +785,128 @@ describe('ordneEin', () => {
     const { frage } = kiMit({ ...schritt1, ursachen_ids: [1404], ursachen_belege: { 1404: 'so viele Formulare' } }, { ursachen_ids: [], sicher: false })
     const { antwort } = await ordneEin(frage, amt, null, katalog, () => 0)
     expect(antwort.ursachen_ids).toEqual([])
+  })
+})
+
+// Symptomgruppen und „passt nur teilweise“ (docs/plan-symptome.md)
+const S_URSACHEN: Ursache[] = [201, 202, 203, 204, 205, 206].map((id) => ({
+  id,
+  thema_id: 2,
+  beschreibung: `Ursache ${id} der Miete`,
+  quelle_url: `https://example.org/${id}`,
+  alltag: `Alltag ${id}`,
+}))
+S_URSACHEN[4] = { ...S_URSACHEN[4], alltag: 'In meiner Stadt gibt es kaum freie Wohnungen' }
+S_URSACHEN[3] = { ...S_URSACHEN[3], beschreibung: 'Mieten in laufenden Verträgen steigen', alltag: 'Meine Miete steigt Jahr für Jahr', gilt_fuer: 'laufender Mietvertrag' }
+const S_THEMA: Thema = {
+  id: 2,
+  name: 'Miete',
+  beschreibung: 'Hohe Mieten und wenig bezahlbarer Wohnraum.',
+  symptome: [{ nr: 1, alltag: 'Ich finde keine bezahlbare Wohnung', ursachen_ids: [201, 202, 205, 206] }],
+}
+const S_KATALOG = { themen: [...Z_THEMEN, S_THEMA], ursachen: [...Z_URSACHEN, ...S_URSACHEN] }
+
+describe('Symptomgruppen und teilweise passende Ursachen', () => {
+  const kiMit = (...antworten: unknown[]) => {
+    let n = 0
+    return async () => antworten[n++]
+  }
+  const s1 = (thema_id: number) => ({ typ: 'problem', thema_id, thema_sicher: true, thema_kandidaten: [], mehrere_probleme: false, nachfrage: null, zusammenfassung: 'Kurzfassung.', stichwort: 'x' })
+  const wohnung = [spieler('Unsere Miete ist um 15 Prozent gestiegen, und eine bezahlbare Wohnung finden wir nicht.')]
+
+  it('nennt Geltungsbereich und Folgen im Prompt von Schritt 2', () => {
+    const p = ursachenPrompt(S_THEMA, S_URSACHEN)
+    expect(p).toContain('Ursache 204: Mieten in laufenden Verträgen steigen – gilt nur für: laufender Mietvertrag')
+    expect(p).toContain('- Folge 1: „Ich finde keine bezahlbare Wohnung“ – Ursachen 201, 202, 205, 206')
+    for (const feld of ['"teilweise"', '"symptom"']) expect(p).toContain(feld)
+    expect(ursachenPrompt(Z_THEMEN[2], Z_URSACHEN)).not.toContain('Folgen, die mehrere Ursachen')
+  })
+
+  it('wählt bei einer teilweise passenden Ursache nichts vor und reicht den Satz zur Abweichung weiter', async () => {
+    const verlauf = [spieler('Ich warte seit vier Monaten auf einen Termin beim Hautarzt, die Praxen nehmen niemanden.')]
+    const frage = kiMit(s1(1), {
+      ursachen_ids: [],
+      teilweise: { 101: 'Du sprichst von einer Hautarztpraxis, erfasst ist hier der Mangel an Hausarztpraxen.' },
+      symptom: null,
+      sicher: false,
+    })
+    const { antwort, unsicher } = await ordneEin(frage, verlauf, null, S_KATALOG, () => 0)
+    expect(unsicher).toContain('teilweise')
+    expect(antwort).toMatchObject({ typ: 'problem', thema_id: 1, ursachen_ids: [] })
+    expect(antwort.nachfrage).toBeTruthy()
+    expect(antwort.abweichung).toBe('Du sprichst von einer Hautarztpraxis, erfasst ist hier der Mangel an Hausarztpraxen.')
+  })
+
+  it('wählt auch eine ganz passende Ursache nicht vor, wenn daneben eine nur teilweise passt', async () => {
+    const frage = kiMit(s1(2), {
+      ursachen_ids: [204],
+      ursachen_belege: { 204: 'Miete ist um 15 Prozent gestiegen' },
+      teilweise: { 206: 'Von Sozialwohnungen ist nicht die Rede.' },
+      sicher: true,
+    })
+    const { antwort } = await ordneEin(frage, wohnung, null, S_KATALOG, () => 0)
+    expect(antwort.ursachen_ids).toEqual([])
+    expect(antwort.abweichung).toBe('Von Sozialwohnungen ist nicht die Rede.')
+  })
+
+  it('wertet bei einer genannten Folge alle Ursachen der Gruppe, zusätzlich zum genannten Grund', async () => {
+    const frage = kiMit(s1(2), { ursachen_ids: [204], ursachen_belege: { 204: 'Miete ist um 15 Prozent gestiegen' }, symptom: 1, sicher: true })
+    const { antwort, unsicher } = await ordneEin(frage, wohnung, null, S_KATALOG, () => 0)
+    expect(unsicher).toEqual([])
+    expect(antwort).toMatchObject({ thema_id: 2, ursachen_ids: [204, 201, 202, 205, 206], symptom: 1, nachfrage: null })
+    expect(antwort.abweichung).toBeUndefined()
+  })
+
+  it('wertet eine Folge auch ohne einzeln genannte Ursache', async () => {
+    const frage = kiMit(s1(2), { ursachen_ids: [], symptom: 1, sicher: true })
+    const { antwort } = await ordneEin(frage, [spieler('Wir finden keine bezahlbare Wohnung.')], null, S_KATALOG, () => 0)
+    expect(antwort).toMatchObject({ ursachen_ids: [201, 202, 205, 206], symptom: 1, nachfrage: null })
+  })
+
+  it('wählt die ganze Gruppe vor, wenn die KI nur eine ihrer Ursachen nennt – auch bei teilweise Passendem', async () => {
+    const frage = kiMit(s1(2), {
+      ursachen_ids: [204, 205],
+      ursachen_belege: { 204: 'Miete ist um 15 Prozent gestiegen', 205: 'bezahlbare Wohnung finden wir nicht' },
+      teilweise: { 203: 'Von Neubau ist nicht die Rede.' },
+      symptom: null,
+      sicher: true,
+    })
+    const { antwort } = await ordneEin(frage, wohnung, null, S_KATALOG, () => 0)
+    expect(antwort).toMatchObject({ ursachen_ids: [204, 201, 202, 205, 206], symptom: 1, nachfrage: null })
+    expect(antwort.abweichung).toBeUndefined()
+  })
+
+  it('nimmt bei unsicherer KI nur die Gruppe, ohne weitere Ursachen', async () => {
+    const frage = kiMit(s1(2), { ursachen_ids: [204], ursachen_belege: { 204: 'Miete ist um 15 Prozent gestiegen' }, symptom: 1, sicher: false })
+    const { antwort } = await ordneEin(frage, wohnung, null, S_KATALOG, () => 0)
+    expect(antwort).toMatchObject({ ursachen_ids: [201, 202, 205, 206], symptom: 1, nachfrage: null })
+  })
+
+  it('übernimmt keine Folge, wenn die Zuordnung sonst unsicher ist oder die Nummer nicht existiert', async () => {
+    const unsicher = await ordneEin(kiMit({ ...s1(2), thema_sicher: false }, { ursachen_ids: [], symptom: 1, sicher: true }), wohnung, null, S_KATALOG, () => 0)
+    expect(unsicher.antwort).toMatchObject({ ursachen_ids: [] })
+    expect(unsicher.antwort.symptom).toBeUndefined()
+    const fremd = await ordneEin(kiMit(s1(2), { ursachen_ids: [], symptom: 7, sicher: true }), wohnung, null, S_KATALOG, () => 0)
+    expect(fremd.antwort.ursachen_ids).toEqual([])
+    expect(fremd.antwort.symptom).toBeUndefined()
+  })
+
+  it('zählt Ursachen der Gruppe nicht zur Höchstzahl der Auswahl', () => {
+    const gruppe = S_THEMA.symptome![0]
+    expect(auswahlErlaubt([201, 202, 205, 206, 203, 204], gruppe)).toBe(true)
+    expect(auswahlErlaubt([201, 202, 203, 204], undefined)).toBe(false)
+    const basis = { sitzung: '0b6a3c3e-5d7a-4f0e-9a1b-2c3d4e5f6a7b', verlauf: [], rolle: null, parteien: [1, 2] }
+    expect(pruefeAnfrage({ ...basis, auswahl: { thema_id: 2, ursachen_ids: [201, 202, 205, 206, 204], symptom: 1 } }).auswahl?.symptom).toBe(1)
+    expect(() => pruefeAnfrage({ ...basis, auswahl: { thema_id: 2, ursachen_ids: [201, 202, 205, 206] } })).toThrow(EingabeFehler)
+  })
+
+  it('wertet eine bestätigte Gruppe mit ihrem gemeinsamen Satz und lehnt zu viele Ursachen außerhalb ab', () => {
+    const themen = [S_THEMA]
+    const a = antwortAusAuswahl({ thema_id: 2, ursachen_ids: [201, 202, 205, 206, 204], symptom: 1 }, themen, S_URSACHEN)
+    expect(a).toMatchObject({ ursachen_ids: [201, 202, 205, 206, 204], symptom: 1 })
+    expect(a.zusammenfassung).toBe('Ich finde keine bezahlbare Wohnung. Meine Miete steigt Jahr für Jahr.')
+    expect(() => antwortAusAuswahl({ thema_id: 2, ursachen_ids: [201, 203, 204], symptom: 9 }, themen, S_URSACHEN)).toThrow(EingabeFehler)
+    expect(() => antwortAusAuswahl({ thema_id: 2, ursachen_ids: [201, 203, 204, 202], symptom: 1 }, [{ ...S_THEMA, symptome: [{ nr: 1, alltag: 'x', ursachen_ids: [201, 202] }] }], S_URSACHEN)).not.toThrow()
+    expect(() => antwortAusAuswahl({ thema_id: 2, ursachen_ids: [203, 204, 205, 206], symptom: 1 }, [{ ...S_THEMA, symptome: [{ nr: 1, alltag: 'x', ursachen_ids: [201, 202] }] }], S_URSACHEN)).toThrow(EingabeFehler)
   })
 })
