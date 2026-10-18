@@ -1,6 +1,6 @@
 # Plan: Symptomgruppen und Geltungsbereich – eine Folge, mehrere Ursachen
 
-Stand: 18. 10. 2026 · Umgesetzt: Code, Datenformat, Muster (Arzttermine, Miete, gegengelesen) und Entwurf für alle übrigen Themen (`ki_entwurf`, Gegenlesen offen).
+Stand: 18. 10. 2026 · Umgesetzt: Code, Datenformat und 22 Symptomgruppen in 18 Themen, von der Betreiberin gegengelesen (Zuwanderung bewusst nur 604 und 605). Noch nicht live: Migration, Seed, Edge Function.
 
 ## Anlass
 
@@ -63,8 +63,8 @@ Regel aus dem Entwurf (steht in `daten/README.md`): Weil eine erkannte Ursache d
 
 ## Offen
 
-1. **Gegenlesen** der Gruppen in den übrigen Themen; danach `ki_entwurf` entfernen.
+1. **Live schalten:** Migration `20261018000000_symptome.sql`, Seed einspielen, Edge Function `analyse` neu ausrollen.
 2. **Facharztmangel** als eigene Ursache bei Arzttermine (Fachärzte allgemein, nicht nur Kassen/Privat): neue Ursache mit Recherche und Suche in allen Programmen – über `/thema-erfassen` (nachträgliche Ursache), nicht hier.
 3. **Blinde Zweitbewertung** der Themen dieser Testpartie (Arzttermine, Miete, Pflege, Schule, Bus und Bahn): fast alle Werte sind „KI-Entwurf, nicht blind“; eigener Lauf über die Erfassungs-Skills.
 4. **Gewichte** je Gruppe, wo eine Quelle eine Hauptursache belegt.
-5. `ki_entwurf` der Gruppen nach dem Gegenlesen entfernen.
+5. **Punkte mit Bundesland:** Die Übersicht beim Gegenlesen rechnete nur Bundesprogramme. Bei Landesursachen (etwa Kita: Union im Bund 0, in den Landesprogrammen ST, MV und BE mit Personal-Maßnahmen) weicht das Bild ab.
