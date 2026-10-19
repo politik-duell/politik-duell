@@ -1,0 +1,37 @@
+{
+  "id": 41,
+  "name": "Schutz im Krisen- und Kriegsfall",
+  "beschreibung": "Viele Menschen wissen nicht, wie sie in einer Großlage wie Krieg, Sabotage oder langem Stromausfall gewarnt werden und wo sie Schutz und Versorgung finden. Es geht um den Schutz und die Versorgung der Bevölkerung, nicht um die Verhinderung von Konflikten.",
+  "ziel": "Menschen werden in einer Großlage rechtzeitig gewarnt, finden einen geschützten Ort und kommen mit Wasser, Essen und Information durch die Krise.",
+  "schlagwoerter": ["schutzraum", "bunker", "krisenfall", "kriegsfall", "grosslage", "warnung", "sirene", "warnsystem", "notvorrat", "vorrat", "selbsthilfe", "stromausfall", "blackout", "wasserausfall", "zivilschutz", "katastrophenschutz", "notfall"],
+  "ursachen": [
+    {
+      "id": 4101,
+      "beschreibung": "Von 1.967 öffentlichen Schutzräumen (2008) sind 579 übrig, laut Bundesregierung 2026 „weder funktions- noch einsatzbereit“; das Schutzkonzept mit den Ländern steht noch aus",
+      "alltag": "Ich wüsste nicht, wo ich im Ernstfall geschützt Zuflucht finde.",
+      "quelle_url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1195170",
+      "ebene": "bund",
+      "schlagwoerter": ["schutzraum", "bunker", "zufluchtsort", "schutzbau"]
+    },
+    {
+      "id": 4102,
+      "beschreibung": "Der Bund erfasst 2026 erst den Bestand an Sirenen; ihre Auslösung über das Warnsystem MoWaS ist noch nicht durchgängig angebunden",
+      "alltag": "Ich weiß nicht, ob und wie mich eine Warnung im Ernstfall erreicht.",
+      "quelle_url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1195188",
+      "ebene": "land",
+      "schlagwoerter": ["warnung", "sirene", "warnsystem", "warnapp"]
+    },
+    {
+      "id": 4103,
+      "beschreibung": "Viele Haushalte sind auf längere Ausfälle kaum vorbereitet: Rund 45 % sehen sich für zehn Tage ausgestattet, nur etwa ein Drittel könnte ohne Strom kochen (Befragung 2024)",
+      "alltag": "Ich habe nicht genug Vorräte und weiß nicht, wie ich einen Strom- oder Wasserausfall überbrücke.",
+      "quelle_url": "https://www.umweltbundesamt.de/bs-r-2-das-indikator",
+      "ebene": "bund",
+      "schlagwoerter": ["notvorrat", "vorrat", "selbsthilfe", "wasserausfall", "stromausfall", "notfall"]
+    }
+  ],
+  "freigabe": {
+    "datum": "2026-10-19",
+    "art": "ki"
+  }
+}

@@ -1011,6 +1011,81 @@ Ziel: „Menschen können dauerhaft in ihrem Sportverein trainieren und an Wettk
 
 Verworfen oder offen: Vereinsinsolvenzen als verbreitetes Problem (kein Häufigkeitsbeleg gelesen); Benachteiligung kleiner gegenüber großen Vereinen (ein kleineres Budget belegt keine Unterfinanzierung); Energie- und Betriebskosten, Ehrenamt und Hallenverfügbarkeit im Einzelnen (Bericht nur teilweise gelesen); unangemessene Liga-Vorgaben und ungerechte Hallenvergabe (kein unabhängiger Beleg).
 
+## Krankenkasse: Beiträge und Leistungen (38)
+
+Stand: 19. 10. 2026 · KI-Entwurf, KI-Freigabe für die Testphase
+
+Aufnahmegrund: R+V-Studie „Die Ängste der Deutschen 2026“ (1. 10. 2026): „Steuererhöhungen oder Leistungskürzungen“ auf Platz 2 (53 %); im Katalog fehlte jede Ursache zu Krankenkassenbeiträgen und -leistungen. Auf Wunsch der Betreiberin. Abgegrenzt von Arzttermine (1), Pflege (10) und der allgemeinen Abgabenlast (1104).
+
+Ziel: „Versicherte zahlen einen Beitrag, der stabil und bezahlbar bleibt, und erhalten die medizinisch nötigen Leistungen mit Eigenanteilen, die sie sich leisten können.“
+
+| ID | Ursache (kurz) | Ebene | Quelle (Belegstufe) | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 3801 | Leistungsausgaben wachsen schneller als Beitragseinnahmen | Bund | [BMG, Finanzentwicklung 1. Quartal 2026](https://www.bundesgesundheitsministerium.de/presse/pressemitteilungen/finanzentwicklung-der-gkv-im-1-quartal-2026-pm-19-06-2026-1) (A); Finanzkommission Gesundheit, Management Summary S. 2 (A) | Ausgaben begrenzen (Preise, Budgets); Versorgung ausbauen und besser vergüten; Einnahmebasis verbreitern (Bemessungsgrenze, Kapitaleinkommen, Bürgerversicherung); keine höhere Bemessungsgrenze, Ausgaben an Einnahmen orientieren |
+| 3802 | Bund erstattet versicherungsfremde Leistungen nicht voll | Bund | [Finanzkommission Gesundheit, Management Summary](https://www.bundesgesundheitsministerium.de/fileadmin/Dateien/3_Downloads/F/FinanzKommission_Gesundheit/Management_Summary__Erster_Bericht_der_Finanzkommission_Gesundheit_.pdf) S. 6 (A); IGES über HBS-Pressemitteilung 4. 12. 2025 (C, ergänzend) | Bund übernimmt mehr aus Steuern; beitragsfreie Mitversicherung einschränken |
+| 3803 | Kassen füllen Rücklagen über den Zusatzbeitrag auf | Bund | BMG, 19. 6. 2026 (A) | Rücklagenregeln ändern; Zusatzbeitrag an den Bedarf binden |
+| 3804 | Gesetzliche Zuzahlungen bis zur Belastungsgrenze | Bund | [BMG-Informationsblatt Zuzahlungsregelungen](https://www.bundesgesundheitsministerium.de/fileadmin/Dateien/3_Downloads/A/Arzneimittelversorgung/Zuzahlungsregelungen_GKV.pdf) S. 1–3 (A) | Zuzahlungen senken oder abschaffen; Zuzahlungen als Steuerung erhöhen |
+
+Verworfen: Alterung bzw. Kostenschwerpunkt Älterer (beschreibt eine Kostenstruktur, Wachstumsanteil umstritten, keine A/B-Quelle gelesen); Verwaltungskosten (stagnierten laut BMG); Herstellerrabatt-Auslauf (Einmaleffekt, in 3801 enthalten); Bürgergeld-Beitragslücke (nur Verbandsangabe, Beispiel in 3802); Einnahmebasis als eigene Ursache (nur C-Quelle, als Lösungsrichtungen unter 3801); Krankenhausinvestitionen der Länder (nicht belegt).
+
+Tragende Zitate: 3801 – BMG: Leistungsausgaben +8,0 %, Beitragseinnahmen ohne Zusatzbeitrag +4,1 %; Finanzkommission S. 2: „Ohne Reformen würde der durchschnittliche Zusatzbeitragssatz schon im Jahr 2027 3,7 % erreichen … auf 4,7 % im Jahr 2030 ansteigen.“ 3802 – Finanzkommission S. 6: „12,5 Mrd. € (30%) könnten durch die Erstattung versicherungsfremder Leistungen durch den Bund generiert werden.“ 3803 – BMG: erhobener Zusatzbeitrag Ende März 2026 im Schnitt 3,13 %, Reserven rund 6,18 Mrd. Euro (etwa 0,2 Monatsausgaben). 3804 – BMG-Blatt S. 1: „Belastungsgrenzen sorgen dafür, dass gesetzlich Versicherte … durch die gesetzlichen Zuzahlungen nicht unzumutbar belastet werden.“
+
+## Wohneigentum (39)
+
+Stand: 19. 10. 2026 · KI-Entwurf, KI-Freigabe für die Testphase
+
+Aufnahmegrund: R+V-Studie „Die Ängste der Deutschen 2026“: „Wohnraum wird unbezahlbar“ (rund jeder Zweite, Platz 5); Miete (2) deckt nur Mietwohnungen ab. Auf Wunsch der Betreiberin. Abgegrenzt von Miete (2, Baukosten im Mietwohnungsbau bleiben bei 203) und Heizungstausch (16).
+
+Ziel: „Menschen können eine eigene Wohnung oder ein eigenes Haus finden, finanzieren und dauerhaft tragen.“
+
+| ID | Ursache (kurz) | Ebene | Quelle (Belegstufe) | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 3901 | Bebaubare Flächen werden zu wenig genutzt | Bund | [IÖR/BBSR-Online-Publikation 11/2022](https://ioer.de/fileadmin/user_upload/projekte/files/2022/FBR/Blum_IOER_Baulandumfrage_BBSR-Online-Publ_11_2022.pdf) S. 4 (B); Destatis PM 174 vom 22. 5. 2026 (A) | Mehr Bauland ausweisen, Verfahren beschleunigen; gegenläufig Flächenschutz |
+| 3902 | Baukosten im Neubau stark gestiegen | Bund | [Destatis, Baupreisindex](https://www.destatis.de/DE/Themen/Wirtschaft/Preise/Baupreise-Immobilienpreisindex/_inhalt.html) (A) | Bauvorgaben vereinfachen, Energievorgaben lockern, serielles Bauen; gegenläufig strengere Standards |
+| 3903 | Eigenkapitalbedarf gestiegen | Bund | [Wirtschaftsdienst 106 (2026), Heft 5](https://www.wirtschaftsdienst.eu/inhalt/jahr/2026/heft/5/beitrag/wenn-preise-den-einkommen-davonlaufen-zugang-zu-wohneigentum-in-deutschland-9618.html) (B); DIW Wochenbericht 44/2025 (B) | Eigenkapitalersatz, Sparförderung, Übertragung in der Familie erleichtern; gegenläufig Erbschaftsteuer erhöhen |
+| 3904 | Erwerbsnebenkosten | Land | Wirtschaftsdienst 2026 (B); Steuersätze aus Wirtschaftsdienst 2024 (C, Kontext) | Grunderwerbsteuer senken oder Freibetrag; gegenläufig Ländereinnahmen sichern |
+| 3905 | Hohe Kreditrate im Verhältnis zum Einkommen | Bund | Wirtschaftsdienst 2026 (B) | Zinsverbilligung, Förderdarlehen, Tilgungszuschüsse |
+
+Verworfen: Kaufpreise steigen schneller als Einkommen (Folge von 3901 und 3902); Zinsen als Eintrittshürde (beeinflussen laut Studie die Eigenkapitalhürde nicht, nur die Rate); Energievorgaben als Hauptursache der Baukosten (nur Verbandsgutachten mit Gegenbefund); zu wenige Baugenehmigungen (widerlegt: 2025 +10,6 %); Nachfrage in Großstädten und Zuwanderung (in 205 erfasst); Grundstückspreise und Kapitalanleger als Preistreiber (Quellen nicht gelesen, Grenzfall).
+
+Tragende Zitate: 3901 – IÖR/BBSR S. 4: „Die Studie beziffert die baureifen, potenziell bebaubaren Flächen in den Städten und Gemeinden auf mindestens 99.000 Hektar … Davon sind nach Angaben der Kommunen rund zwei Drittel für Wohnungsbau vorgesehen.“ 3902 – Destatis: Wohngebäude Neubau +89 % (2010–2025). 3903 – Kiel-Studie: Eigenkapitalbelastung 3,2 Jahreseinkommen (2024) nach 1,7–1,8 bis etwa 2008; Sparzeit 6,8 → 13,9 Jahre. 3904 – Sparzeit für Nebenkosten im Median der Kreise 1,46 Jahre, Frankfurt 3,41. 3905 – Hypothekenbelastung 25 % des verfügbaren Einkommens (2024), 18 % (2005). Die Zahlen der Kiel-Studie stammen aus der HTML-Fassung (Peer-Review nicht ausgewiesen).
+
+## Arbeitszeit, Erreichbarkeit und Vereinbarkeit (40)
+
+Stand: 19. 10. 2026 · KI-Entwurf, KI-Freigabe für die Testphase
+
+Aufnahmegrund: Testlauf 2026-10 (`docs/befunde-testlauf-2026-10.md`, Befund 1): Spielende nannten Arbeitszeit, Erreichbarkeit und Vereinbarkeit; im Katalog gab es dafür weder Thema noch Ursache. Abgegrenzt von Arbeitsplätze (5), Pflege (10, Entlastung pflegender Angehöriger 1004), Kita-Betreuung (17), Arbeitsbelastung im Gesundheitswesen (27) und Sexismus (28, Verteilung der Sorgearbeit).
+
+Ziel: „Beschäftigte können ihre Arbeitszeit so gestalten, dass sie gesund bleiben, nach der Arbeit abschalten können und Beruf mit Familie oder Pflege vereinbaren.“
+
+| ID | Ursache (kurz) | Ebene | Quelle (Belegstufe) | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 4001 | Mehrarbeit verbreitet, teils ohne Ausgleich | Bund | [Destatis PM N038 vom 24. 7. 2025](https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/07/PD25_N038_13.html) (A) | Höchstgrenzen einhalten, Zeiterfassung, Vergütung oder Ausgleich; gegenläufig wöchentliche statt tägliche Höchstarbeitszeit |
+| 4002 | Wunsch und tatsächlicher Arbeitsumfang passen nicht | Bund | [Destatis PM 314 vom 4. 9. 2026](https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_314_13.html) (A) | Teilzeitanspruch ausbauen; Aufstockung und Rückkehr in Vollzeit; kürzere Arbeitszeit für alle; Wahlarbeitszeit und Arbeitszeitkonto |
+| 4003 | Betreuung oder Pflege als Grund für reduzierte Arbeitszeit | Bund | [Destatis PM N007 vom 30. 1. 2026](https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/01/PD26_N007_13.html) (A) | Elternzeit und Pflegezeit; mobiles Arbeiten; Gleitzeit |
+
+Verworfen: **Erwartete Erreichbarkeit außerhalb der Arbeitszeit** und **Arbeitsmenge passt nicht zu Zeit und Personal** – beide nur über den DGB-Index Gute Arbeit belegt (WSI GenderDatenPortal; die ISF-Studie zitiert dieselbe Befragung: 24,3 % „oft“ oder „sehr häufig“ erreichbar), also nur C; die unabhängigen Quellen (BAuA-Arbeitszeitreport 2021, BIBB/BAuA-Erwerbstätigenbefragung 2018, Stressreport 2019, Eurofound EWCS 2024) waren nicht abrufbar (HTTP 403/429). Wieder aufnehmen, sobald eine davon gelesen ist – vor der Erfassung ist das keine nachträgliche Ursache. Ebenfalls verworfen: Tageshöchstgrenze als Ursache (keine Quelle, Lösungsrichtung unter 4001); fehlende Zeiterfassung (Rechtslage belegt, Ausmaß nicht gemessen); Arbeitszeitlage (Schicht, Wochenende; Quelle nicht lesbar); freiwillige Mehrarbeit aus Einkommensgründen (Motive nicht belegt); Teilzeit bremst die Entwicklung von Frauen (gehört zu 28).
+
+Tragende Zitate: 4001 – Destatis: „Das entsprach einem Anteil von 11 % der insgesamt 39,1 Millionen Arbeitnehmerinnen und Arbeitnehmer“; Ausgleich unbezahlt 19 %, bezahlt 16 %, Arbeitszeitkonto 71 % (Mehrfachnennung). 4002 – Destatis: 3,8 Mio. wollten weniger arbeiten (3,3 Mio. in Vollzeit), 1,5 Mio. mehr (1,1 Mio. in Teilzeit). 4003 – Destatis: Betreuung von Kindern, Menschen mit Behinderungen oder Pflegebedürftigen bei 23,5 % der Teilzeitbeschäftigten (Frauen 28,8 %, Männer 6,8 %).
+
+## Schutz im Krisen- und Kriegsfall (41)
+
+Stand: 19. 10. 2026 · KI-Entwurf, KI-Freigabe für die Testphase
+
+Aufnahmegrund: R+V-Studie „Die Ängste der Deutschen 2026“ (Sorgen um Weltlage, autoritäre Herrscher und Krieg); auf Wunsch der Betreiberin als Alltagsproblem gefasst. Abgrenzung zu „Krieg, Geopolitik und Verteidigung“ (`daten/README.md`, kein Thema): Es geht um Schutz und Versorgung der Bevölkerung in jeder Großlage, nicht um die Verhinderung von Konflikten. Abgegrenzt von Hitze und Unwetter (18) und Internetbetrug (906).
+
+Ziel: „Menschen werden in einer Großlage rechtzeitig gewarnt, finden einen geschützten Ort und kommen mit Wasser, Essen und Information durch die Krise.“
+
+| ID | Ursache (kurz) | Ebene | Quelle (Belegstufe) | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 4101 | Öffentliche Schutzräume nicht einsatzbereit, Konzept offen | Bund | [hib 591/2026](https://www.bundestag.de/presse/hib/kurzmeldungen-1195170) (Antwort Drs. 21/7120, A); hib 40/2025 (A) | Schutzräume reaktivieren oder bauen; Schutzorte im Bestand (Keller, Gebäude) |
+| 4102 | Sirenenbestand nicht erfasst, MoWaS-Anbindung offen | Land | [hib 592/2026](https://www.bundestag.de/presse/hib/kurzmeldungen-1195188) (Antwort Drs. 21/7126, A) | Sirenen ausbauen und anbinden; Warn-Apps und Cell Broadcast |
+| 4103 | Haushalte kaum auf längere Ausfälle vorbereitet | Bund | [UBA, Indikator BS-R-2](https://www.umweltbundesamt.de/bs-r-2-das-indikator) (B); [idw, BBK-geförderte Befragung](https://idw-online.de/de/news840233) (B) | Information und Vorräte fördern; Eigenvorsorge betonen; staatliche Notreserven |
+
+Verworfen: Notstrom für Mobilfunk und Festnetz (nur C; Drs. 21/7504 enthält nur die Fragen); Sabotage und Cyberangriffe auf die Versorgung (Gefährdung belegt, Umsetzungslücke nicht gelesen; Kandidat, sobald Drs. 21/2067 oder ein Lagebild gelesen ist); Warnung erreicht die Bevölkerung nicht (Gegenbeleg nur C); zu wenig Geld (Hebel, keine Ursache); Katastrophenschutz zu schwach und Koordination Bund–Länder (nur C, Kandidaten); Ehrenamt (keine Quelle); Außen-, Bündnis- und Verteidigungspolitik (Wertfragen, Haltungen).
+
+Tragende Zitate: 4101 – hib 591/2026: „Von 1.967 öffentlichen Schutzräumen (Stand 2008) sind 579 übrig“, sie seien „weder funktions- noch einsatzbereit“; „Es wird derzeit mit den Ländern abgestimmt. Eine Finalisierung ist noch nicht erfolgt.“ 4102 – hib 592/2026: Erfassung „den bundesweiten Ist-Bestand an Sirenen“; Ziel, „die kommunalen Sirenen digital über das Modulare Warnsystem (MoWaS) … auszulösen“. 4103 – idw 25. 9. 2024: rund 45 % für zehn Tage ausgestattet, etwa ein Drittel könnte ohne Strom zubereiten (Erhebungsjahr in der Meldung nicht genannt); UBA: rund 30 % (2021) halten ihre Vorsorge für unzureichend.
+
 ## Forschungsstand: Integration, Abschiebung, Zuzug (1. 10. 2026)
 
 Stand: 1. 10. 2026 · KI-Recherche, noch nicht von der Betreiberin bestätigt. Geprüft am 1. 10. 2026: im Volltext Foged u. a., Dustmann u. a., Gehrsitz/Ungerer, ifo; im Abstract (Verlagsseite) Couttenier u. a., Pinotti, Fasani u. a., Hines/Peri, Lange/Sommerfeld, Marie/Pinotti. Miles/Cox und die Zahlen zu den Abgeschobenen nur über [EconoFact](https://econofact.org/does-deporting-immigrants-lower-crime-evidence-from-secure-communities) (Hines/Peri); die Originalseiten (SSRN) waren nicht abrufbar.

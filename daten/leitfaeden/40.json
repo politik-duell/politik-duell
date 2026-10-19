@@ -1,0 +1,42 @@
+{
+  "thema_id": 40,
+  "stand": "2026-10-19",
+  "herkunft": "KI-Entwurf aus der Perspektivenprüfung (docs/perspektiven-ursachen.md, Thema 40), vor dem Blick in die Programme geschrieben. Noch nicht von der Betreiberin bestätigt.",
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [4001],
+      "text": "Zu 1 gehören Arbeit über die vereinbarte Arbeitszeit hinaus (bezahlt, unbezahlt oder auf Zeitkonto), Ausgleich und Vergütung, Erfassung der Arbeitszeit und Höchst- und Ruhezeiten, soweit sie Mehrarbeit betreffen. Nicht dazu: Umfang der vertraglichen Arbeitszeit (→ 2). Erreichbarkeit nach Feierabend sowie Arbeitsmenge und Personal: nur als ursachen_offen (Ursachen verworfen, siehe Perspektivenprüfung). Grenzfall: Schichtlage, Abend- und Wochenendarbeit: nur als ursachen_offen."
+    },
+    {
+      "nr": 2,
+      "ursachen": [4002],
+      "text": "Zu 2 gehören Wunsch und tatsächlicher Umfang der Arbeitszeit, in beide Richtungen (weniger oder mehr Stunden), und Schwierigkeiten, den Umfang zu ändern. Maßgeblich ist der Umfang, unabhängig vom Grund. Wer wegen Betreuung reduziert, zählt auch hier; Maßnahmen zu Lage, Ort oder Freistellung gehören zu 3. Nicht dazu: Mehrarbeit über den Vertrag (→ 1). Grenzfall: Ausbildung oder Gesundheit als Grund: nur als ursachen_offen."
+    },
+    {
+      "nr": 3,
+      "ursachen": [4003],
+      "text": "Zu 3 gehören Lage, Ort und Freistellung der Arbeitszeit, wenn Betreuung von Kindern, Menschen mit Behinderung oder pflegebedürftigen Angehörigen der Grund ist: Gleitzeit, mobiles Arbeiten, Elternzeit, Pflegezeit. Nicht dazu: Umfang oder Anspruch auf Stunden (→ 2); Kinderbetreuungsangebot und Öffnungszeiten (→ T17); Pflegegeld und Entlastungsleistungen (→ T10, U1004); Verteilung der Sorgearbeit zwischen den Geschlechtern (→ T28). Grenzfall: Pflege als Grund für Mehrarbeit: nur als ursachen_offen."
+    }
+  ],
+  "suchbegriffe": {
+    "4001": {
+      "Tägliche Höchstarbeitszeit einhalten": ["tägliche höchstarbeitszeit", "arbeitszeitgesetz", "ruhezeiten einhalten"],
+      "Arbeitszeit erfassen und kontrollieren": ["zeiterfassung", "arbeitszeitkontrolle"],
+      "Mehrarbeit vergüten oder ausgleichen": ["überstunden vergüten", "überstundenvergütung", "mehrarbeitszuschlag", "überstunden ausgleichen"],
+      "Wöchentliche Höchstarbeitszeit statt Tagesgrenze": ["wöchentliche höchstarbeitszeit", "wochenhöchstarbeitszeit"]
+    },
+    "4002": {
+      "Anspruch auf Teilzeit ausbauen": ["teilzeitanspruch", "brückenteilzeit"],
+      "Stunden aufstocken und Rückkehr in Vollzeit": ["arbeitszeit aufstocken", "stunden aufstocken", "rückkehr in vollzeit"],
+      "Kürzere Arbeitszeit für alle": ["vier-tage-woche", "viertagewoche", "kürzere arbeitszeit"],
+      "Wahlarbeitszeit und Arbeitszeitkonto": ["wahlarbeitszeit", "arbeitszeitkonto"]
+    },
+    "4003": {
+      "Elternzeit und Familienzeit": ["elternzeit", "familienzeit"],
+      "Pflegezeit als Freistellung": ["pflegezeit"],
+      "Mobiles Arbeiten": ["mobiles arbeiten", "mobile arbeit", "homeoffice"],
+      "Gleitzeit und feste Arbeitszeitlage": ["gleitzeit", "kernarbeitszeit"]
+    }
+  }
+}
