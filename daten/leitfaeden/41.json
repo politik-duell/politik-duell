@@ -1,0 +1,73 @@
+{
+  "thema_id": 41,
+  "stand": "2026-10-19",
+  "herkunft": "KI-Entwurf aus der Perspektivenprüfung (docs/perspektiven-ursachen.md, Thema 41), vor dem Blick in die Programme geschrieben. Noch nicht von der Betreiberin bestätigt.",
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        4101
+      ],
+      "text": "Gehört dazu: öffentliche Schutzräume, die nicht einsatzbereit sind, und das fehlende Konzept für Schutzorte (öffentlich und privat, etwa Keller, Tiefgaragen, Gebäude). Nicht dazu: Warnung (→ 2), Vorräte (→ 3), Verteidigungsausgaben und Bündnisfragen (Wertfragen, keine Ursache). Grenzfall: Schutz bei Hochwasser (T18) nur als ursachen_offen."
+    },
+    {
+      "nr": 2,
+      "ursachen": [
+        4102
+      ],
+      "text": "Gehört dazu: Lücken im Warnweg, Sirenen ohne Erfassung oder Auslösung über MoWaS, Warn-Apps und Cell Broadcast. Nicht dazu: ob Menschen eine Warnung verstehen und handeln (→ 3), Schutzorte (→ 1). Warnungen bei Hochwasser und Starkregen gehören zu T18 und nur als ursachen_offen hierher."
+    },
+    {
+      "nr": 3,
+      "ursachen": [
+        4103
+      ],
+      "text": "Gehört dazu: fehlende Notvorräte an Wasser, Lebensmitteln und Medikamenten sowie fehlendes Wissen zur Selbsthilfe bei Strom- und Wasserausfall. Nicht dazu: Schutzorte (→ 1), Warnung (→ 2). Versorgungsketten des Handels und Lieferengpässe nur als ursachen_offen. Kosten und Platz für Vorräte nur als ursachen_offen, solange keine Quelle gelesen ist."
+    }
+  ],
+  "suchbegriffe": {
+    "4101": {
+      "Schutzräume reaktivieren oder neu bauen": [
+        "schutzräum",
+        "schutzraum",
+        "bunker",
+        "schutzbau"
+      ],
+      "Schutzorte im Bestand nutzen (Keller, Gebäude)": [
+        "zufluchtsort",
+        "schutzort"
+      ],
+      "Zivilschutzbindung aufgeben": [
+        "zivilschutzbindung",
+        "schutzbaukonzept"
+      ]
+    },
+    "4102": {
+      "Sirenen ausbauen und an das Warnsystem anbinden": [
+        "sirene",
+        "mowas",
+        "warnsystem"
+      ],
+      "Warn-Apps und Cell Broadcast statt Sirenen": [
+        "warn-app",
+        "warnapp",
+        "cell broadcast"
+      ]
+    },
+    "4103": {
+      "Vorräte und Information fördern": [
+        "notvorrat",
+        "notvorrät",
+        "selbsthilfe",
+        "selbstschutz"
+      ],
+      "Eigenverantwortung betonen": [
+        "eigenvorsorge"
+      ],
+      "Staatliche Notreserven": [
+        "lebensmittelreserv",
+        "notreserv"
+      ]
+    }
+  }
+}

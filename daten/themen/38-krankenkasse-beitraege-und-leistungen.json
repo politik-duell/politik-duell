@@ -1,0 +1,90 @@
+{
+  "id": 38,
+  "name": "Krankenkasse: Beiträge und Leistungen",
+  "beschreibung": "Viele Versicherte sehen den Zusatzbeitrag steigen und erleben, dass Leistungen begrenzt sind oder Zuzahlungen und Eigenanteile anfallen.",
+  "ziel": "Versicherte zahlen einen Beitrag, der stabil und bezahlbar bleibt, und erhalten die medizinisch nötigen Leistungen mit Eigenanteilen, die sie sich leisten können.",
+  "schlagwoerter": [
+    "krankenkasse",
+    "krankenversicherung",
+    "zusatzbeitrag",
+    "beitrag",
+    "beitraege",
+    "kassenleistung",
+    "zuzahlung",
+    "eigenanteil",
+    "gkv",
+    "kassenbeitrag"
+  ],
+  "ursachen": [
+    {
+      "id": 3801,
+      "beschreibung": "Die Leistungsausgaben der GKV wachsen schneller als die Beitragseinnahmen: im 1. Quartal 2026 +8,0 % gegenüber +4,1 % (ohne Zusatzbeitrag); ohne Reformen 4,7 % Zusatzbeitrag bis 2030",
+      "alltag": "Mein Zusatzbeitrag steigt schon wieder, obwohl ich keine neuen Leistungen bekomme.",
+      "quelle_url": "https://www.bundesgesundheitsministerium.de/presse/pressemitteilungen/finanzentwicklung-der-gkv-im-1-quartal-2026-pm-19-06-2026-1",
+      "ebene": "bund",
+      "schlagwoerter": [
+        "ausgaben",
+        "leistungsausgaben",
+        "kosten",
+        "krankenhaus",
+        "arznei",
+        "medikamente",
+        "beitragsanstieg",
+        "einnahmen",
+        "beitragsbemessungsgrenze",
+        "buergerversicherung"
+      ]
+    },
+    {
+      "id": 3802,
+      "beschreibung": "Der Bund erstattet versicherungsfremde Leistungen nicht voll: Laut Finanzkommission Gesundheit (2026) brächte die Erstattung 12,5 Mrd. Euro; Abgrenzung umstritten",
+      "alltag": "Meine Beiträge zahlen auch Leistungen, die nicht nur Beitragszahler betreffen.",
+      "quelle_url": "https://www.bundesgesundheitsministerium.de/fileadmin/Dateien/3_Downloads/F/FinanzKommission_Gesundheit/Management_Summary__Erster_Bericht_der_Finanzkommission_Gesundheit_.pdf",
+      "ebene": "bund",
+      "schlagwoerter": [
+        "bundeszuschuss",
+        "versicherungsfremd",
+        "steuern",
+        "steuermittel",
+        "buergergeld",
+        "mitversicherung",
+        "gesundheitsfonds"
+      ]
+    },
+    {
+      "id": 3803,
+      "beschreibung": "Die Kassen füllen nach Defiziten ihre Rücklagen auf: erhobener Zusatzbeitrag Ende März 2026 im Schnitt 3,13 % (bekanntgegeben 2,9 %), Reserven nur rund 0,2 Monatsausgaben",
+      "alltag": "Meine Kasse erhöht den Zusatzbeitrag und sagt, sie muss Rücklagen wieder auffüllen.",
+      "quelle_url": "https://www.bundesgesundheitsministerium.de/presse/pressemitteilungen/finanzentwicklung-der-gkv-im-1-quartal-2026-pm-19-06-2026-1",
+      "ebene": "bund",
+      "schlagwoerter": [
+        "ruecklage",
+        "zusatzbeitrag",
+        "reserve",
+        "beitragssatz",
+        "defizit",
+        "mindestreserve"
+      ]
+    },
+    {
+      "id": 3804,
+      "beschreibung": "Gesetzliche Zuzahlungen fallen u. a. bei Krankenhaus, Heilmitteln, häuslicher Krankenpflege und Fahrkosten an, bis zur Belastungsgrenze von 2 % der Bruttoeinnahmen (chronisch Kranke 1 %)",
+      "alltag": "Beim Arzt, im Krankenhaus oder bei der Physiotherapie zahle ich jedes Mal Zuzahlungen.",
+      "quelle_url": "https://www.bundesgesundheitsministerium.de/fileadmin/Dateien/3_Downloads/A/Arzneimittelversorgung/Zuzahlungsregelungen_GKV.pdf",
+      "ebene": "bund",
+      "schlagwoerter": [
+        "zuzahlung",
+        "eigenanteil",
+        "selbstbeteiligung",
+        "belastungsgrenze",
+        "medikament",
+        "heilmittel",
+        "hilfsmittel"
+      ]
+    }
+  ],
+  "freigabe": {
+    "datum": "2026-10-19",
+    "art": "ki"
+  }
+}

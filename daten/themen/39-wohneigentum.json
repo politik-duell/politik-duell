@@ -1,0 +1,94 @@
+{
+  "id": 39,
+  "name": "Wohneigentum",
+  "beschreibung": "Viele Menschen möchten eine eigene Wohnung oder ein eigenes Haus, sehen aber Kaufpreise, Eigenkapital und Nebenkosten als kaum erreichbar an.",
+  "ziel": "Menschen können eine eigene Wohnung oder ein eigenes Haus finden, finanzieren und dauerhaft tragen.",
+  "schlagwoerter": [
+    "wohneigentum",
+    "eigentumswohnung",
+    "eigenheim",
+    "hauskauf",
+    "immobilie",
+    "eigenkapital",
+    "kaufnebenkosten",
+    "grunderwerbsteuer",
+    "bauland",
+    "bauzinsen"
+  ],
+  "ursachen": [
+    {
+      "id": 3901,
+      "beschreibung": "Bebaubare Flächen werden zu wenig genutzt: Kommunen melden mindestens 99.000 Hektar baureifes Land, rund zwei Drittel für Wohnungsbau vorgesehen (IÖR/BBSR 2022)",
+      "alltag": "Ich finde kaum Grundstücke, auf denen ich mir ein eigenes Haus bauen kann.",
+      "quelle_url": "https://ioer.de/fileadmin/user_upload/projekte/files/2022/FBR/Blum_IOER_Baulandumfrage_BBSR-Online-Publ_11_2022.pdf",
+      "ebene": "bund",
+      "schlagwoerter": [
+        "bauland",
+        "baugebiet",
+        "bebauungsplan",
+        "grundstueck",
+        "baureif"
+      ]
+    },
+    {
+      "id": 3902,
+      "beschreibung": "Die Kosten für Bau und Ausstattung neuer Wohngebäude sind stark gestiegen: Der Baupreisindex für Wohngebäude im Neubau lag 2025 um 89 % über 2010.",
+      "alltag": "Ein neues Haus oder eine neue Wohnung zu bauen wird für mich immer teurer.",
+      "quelle_url": "https://www.destatis.de/DE/Themen/Wirtschaft/Preise/Baupreise-Immobilienpreisindex/_inhalt.html",
+      "ebene": "bund",
+      "schlagwoerter": [
+        "baukosten",
+        "neubau",
+        "bauwerk",
+        "baustandard",
+        "bauordnung"
+      ]
+    },
+    {
+      "id": 3903,
+      "beschreibung": "Der Eigenkapitalbedarf beim Kauf ist gestiegen: 3,2 Jahreseinkommen für eine Eigentumswohnung (2024) statt 1,7 bis 1,8 bis etwa 2008; die Sparzeit hat sich auf 13,9 Jahre verdoppelt",
+      "alltag": "Für den Kauf einer Wohnung fehlt mir das Eigenkapital.",
+      "quelle_url": "https://www.wirtschaftsdienst.eu/inhalt/jahr/2026/heft/5/beitrag/wenn-preise-den-einkommen-davonlaufen-zugang-zu-wohneigentum-in-deutschland-9618.html",
+      "ebene": "bund",
+      "schlagwoerter": [
+        "eigenkapital",
+        "sparzeit",
+        "ersparnis",
+        "elternhaus",
+        "erbschaft"
+      ]
+    },
+    {
+      "id": 3904,
+      "beschreibung": "Beim Kauf fallen Nebenkosten an, die mit dem Kaufpreis steigen: Die Sparzeit allein für die Erwerbsnebenkosten liegt im Median der Kreise bei 1,46 Jahren, in Frankfurt am Main bei 3,41 Jahren.",
+      "alltag": "Zum Kaufpreis kommen Steuern und Gebühren, die ich vorab aufbringen muss.",
+      "quelle_url": "https://www.wirtschaftsdienst.eu/inhalt/jahr/2026/heft/5/beitrag/wenn-preise-den-einkommen-davonlaufen-zugang-zu-wohneigentum-in-deutschland-9618.html",
+      "ebene": "land",
+      "schlagwoerter": [
+        "grunderwerbsteuer",
+        "kaufnebenkosten",
+        "notarkosten",
+        "maklerprovision",
+        "grundbuch"
+      ]
+    },
+    {
+      "id": 3905,
+      "beschreibung": "Die laufende Kreditrate aus Zinsen und Tilgung ist im Verhältnis zum Einkommen hoch: Die Hypothekenbelastung lag 2024 bei rund 25 % des verfügbaren Einkommens, 2005 bei rund 18 %.",
+      "alltag": "Die monatliche Rate für meine Finanzierung nimmt einen großen Teil meines Einkommens.",
+      "quelle_url": "https://www.wirtschaftsdienst.eu/inhalt/jahr/2026/heft/5/beitrag/wenn-preise-den-einkommen-davonlaufen-zugang-zu-wohneigentum-in-deutschland-9618.html",
+      "ebene": "bund",
+      "schlagwoerter": [
+        "bauzinsen",
+        "zinsen",
+        "kreditrate",
+        "tilgung",
+        "hypothek"
+      ]
+    }
+  ],
+  "freigabe": {
+    "datum": "2026-10-19",
+    "art": "ki"
+  }
+}
