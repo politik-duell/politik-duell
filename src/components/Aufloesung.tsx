@@ -34,6 +34,23 @@ export function Belege({ ergebnis }: { ergebnis: ParteiErgebnis }) {
   )
 }
 
+/** Links zu den Programmen der Partei (Bund, ggf. Länder) – zum schnellen Selbstprüfen, wo nichts gefunden wurde. */
+function ProgrammLinks({ ergebnis }: { ergebnis: ParteiErgebnis }) {
+  const landName = useLandName()
+  return (
+    <span className="belege">
+      {(ergebnis.programme.length ? ergebnis.programme : [{ land: null, url: ergebnis.partei.programm_url }]).map((p, i) => (
+        <span key={p.land ?? 'bund'}>
+          {i > 0 && ' · '}
+          <a href={p.url} target="_blank" rel="noopener noreferrer">
+            {p.land ? `Landeswahlprogramm ${landName(p.land)}` : 'Wahlprogramm'}
+          </a>
+        </span>
+      ))}
+    </span>
+  )
+}
+
 const wertungFuer = (e: ParteiErgebnis, ursacheId: number) => e.ursachen.find((u) => u.ursache_id === ursacheId)
 
 /** Gewicht eines Lösungswegs in Worten: voll, zur Hälfte, zu einem Viertel … */
@@ -152,9 +169,12 @@ function MassnahmeDetail({ ergebnis, ursacheId }: { ergebnis: ParteiErgebnis; ur
     <div className="duell-massnahme" style={parteiStil(ergebnis.partei.farbe)}>
       <span className="duell-massnahme-partei">{ergebnis.partei.kurzname}</span>
       {!w || !wege.length ? (
-        <p className="duell-keine">
-          {!ergebnis.abdeckung ? leer?.kurz : leer ? `${leer.kurz}.` : 'Keine Maßnahme zu dieser Ursache.'}
-        </p>
+        <>
+          <p className="duell-keine">
+            {!ergebnis.abdeckung ? leer?.kurz : leer ? `${leer.kurz}.` : 'Keine Maßnahme zu dieser Ursache.'}
+          </p>
+          <ProgrammLinks ergebnis={ergebnis} />
+        </>
       ) : (
         <>
           {mehrere && (
@@ -270,16 +290,7 @@ function Duell({ runde, spieler }: { runde: RundenErgebnis; spieler: [Spieler, S
           </summary>
           <p>{leer!.lang}</p>
           {e.abdeckung?.begruendung && <p className="keine-begruendung">{e.abdeckung.begruendung}</p>}
-          <span className="belege">
-            {(e.programme.length ? e.programme : [{ land: null, url: e.partei.programm_url }]).map((p, i) => (
-              <span key={p.land ?? 'bund'}>
-                {i > 0 && ' · '}
-                <a href={p.url} target="_blank" rel="noopener noreferrer">
-                  {p.land ? `Landeswahlprogramm ${landName(p.land)}` : 'Wahlprogramm'}
-                </a>
-              </span>
-            ))}
-          </span>
+          <ProgrammLinks ergebnis={e} />
         </details>
       ))}
     </section>
