@@ -5,138 +5,61 @@
   "regeln": [
     {
       "nr": 1,
-      "ursachen": [
-        3901
-      ],
+      "ursachen": [3901],
       "text": "Zu 1 gehören Ausweisung, Verfügbarkeit und Nutzung bebaubarer Flächen für Eigenheime und Eigentumswohnungen sowie Dauer der Planungs- und Genehmigungsverfahren für diese Flächen. Nicht dazu: Baukosten der Gebäude (2), Erwerbsnebenkosten (4). Grundstückspreise und Spekulation auf Grundstücke: nur als ursachen_offen."
     },
     {
       "nr": 2,
-      "ursachen": [
-        3902
-      ],
+      "ursachen": [3902],
       "text": "Zu 2 gehören Kosten für Bau und Ausstattung neuer Wohngebäude, einschließlich Vorgaben aus Bauordnungen und Energierecht, soweit sie Baukosten bestimmen. Nicht dazu: Grundstückspreise (1), Eigenkapital (3). Abgrenzung zu T2-Ursache 203: Maßnahmen zu Baukosten beim Erwerb gehören hierher, Maßnahmen zu Baukosten im Mietwohnungsneubau zu T2. Grenzfall Lohn- und Materialkosten im Bau: nur als ursachen_offen."
     },
     {
       "nr": 3,
-      "ursachen": [
-        3903
-      ],
+      "ursachen": [3903],
       "text": "Zu 3 gehören der Eigenkapitalbedarf beim Kauf (Anteil am Kaufpreis, Anforderungen der Banken wie der Beleihungsauslauf), die Dauer des Ansparens und Übertragungen innerhalb der Familie als Eigenkapitalquelle. Nicht dazu: Steuern und Gebühren beim Kauf (4), laufende Rate (5). Grenzfall Tragfähigkeitsprüfung der Banken: nur als ursachen_offen."
     },
     {
       "nr": 4,
-      "ursachen": [
-        3904
-      ],
+      "ursachen": [3904],
       "text": "Zu 4 gehören Grunderwerbsteuer, Notar- und Grundbuchkosten sowie Maklerprovision beim Kauf. Nicht dazu: Eigenkapital zum Ansparen (3), Zinsen und Tilgung (5). Grenzfall Maklerprovision als Marktusance: nur als ursachen_offen."
     },
     {
       "nr": 5,
-      "ursachen": [
-        3905
-      ],
+      "ursachen": [3905],
       "text": "Zu 5 gehören Zinsen, Tilgung und Laufzeit der Kreditrate im Verhältnis zum Einkommen. Nicht dazu: Eintrittshürde Eigenkapital (3) und Kaufpreise (1, 2). Grenzfall Kreditvergabe-Regeln der Banken: nur als ursachen_offen."
     }
   ],
   "suchbegriffe": {
     "3901": {
-      "Mehr Bauland ausweisen": [
-        "baulandausweis",
-        "baugebiet",
-        "bebauungsplan",
-        "baulandmobilisier"
-      ],
-      "Planungs- und Genehmigungsverfahren beschleunigen": [
-        "planungsbeschleunig",
-        "baugenehmigungsverfahren"
-      ],
-      "Flächenschutz, weniger Neuausweisung": [
-        "flächenschutz",
-        "flächenverbrauch",
-        "flächensparen"
-      ]
+      "Mehr Bauland ausweisen": ["baulandausweis", "baugebiet", "bebauungsplan", "baulandmobilisier"],
+      "Planungs- und Genehmigungsverfahren beschleunigen": ["planungsbeschleunig", "baugenehmigungsverfahren"],
+      "Flächenschutz, weniger Neuausweisung": ["flächenschutz", "flächenverbrauch", "flächensparen"]
     },
     "3902": {
-      "Bauvorgaben vereinfachen und vereinheitlichen": [
-        "bauordnung",
-        "baustandard",
-        "baukostensenk"
-      ],
-      "Energievorgaben lockern": [
-        "gebäudeenergiegesetz",
-        "gebäudeenerg"
-      ],
-      "Serielles und Typenbau fördern": [
-        "typenbau",
-        "serielles bauen"
-      ],
-      "Baukosten über Zuschüsse senken": [
-        "baukostenzuschuss"
-      ],
-      "Strengere Standards (Energie, Brandschutz)": [
-        "effizienzhaus",
-        "energiestandard",
-        "brandschutz",
-        "schallschutz"
-      ]
+      "Bauvorgaben vereinfachen und vereinheitlichen": ["bauordnung", "baustandard", "baukostensenk"],
+      "Energievorgaben lockern": ["gebäudeenergiegesetz", "gebäudeenerg"],
+      "Serielles und Typenbau fördern": ["typenbau", "serielles bauen"],
+      "Baukosten über Zuschüsse senken": ["baukostenzuschuss"],
+      "Strengere Standards (Energie, Brandschutz)": ["effizienzhaus", "energiestandard", "brandschutz", "schallschutz"]
     },
     "3903": {
-      "Eigenkapital durch Förderdarlehen ersetzen": [
-        "eigenkapitalersatz",
-        "mietkauf",
-        "eigenkapitalhilfe"
-      ],
-      "Sparen für Eigenkapital fördern": [
-        "bausparen",
-        "wohnungsbauprämie",
-        "vermögenswirksam"
-      ],
-      "Vermögensübertragung in der Familie erleichtern": [
-        "schenkung",
-        "erbschaftsteuerfreibetrag"
-      ],
-      "Erbschaftsteuer erhöhen (Gegenrichtung)": [
-        "erbschaftsteuer"
-      ],
-      "Eigenkapitalanforderung der Banken": [
-        "beleihungsauslauf"
-      ]
+      "Eigenkapital durch Förderdarlehen ersetzen": ["eigenkapitalersatz", "mietkauf", "eigenkapitalhilfe"],
+      "Sparen für Eigenkapital fördern": ["bausparen", "wohnungsbauprämie", "vermögenswirksam"],
+      "Vermögensübertragung in der Familie erleichtern": ["schenkung", "erbschaftsteuerfreibetrag"],
+      "Erbschaftsteuer erhöhen (Gegenrichtung)": ["erbschaftsteuer"],
+      "Eigenkapitalanforderung der Banken": ["beleihungsauslauf"]
     },
     "3904": {
-      "Grunderwerbsteuer senken oder Freibetrag einführen": [
-        "grunderwerbsteuer",
-        "grunderwerbsteuerfreibetrag"
-      ],
-      "Einheitlichen Grunderwerbsteuersatz festlegen": [
-        "grunderwerbsteuersatz"
-      ],
-      "Notar- und Grundbuchkosten senken": [
-        "notarkost",
-        "grundbuchkost",
-        "notargebühr"
-      ],
-      "Maklerprovision begrenzen oder aufteilen": [
-        "maklerprovision",
-        "maklercourtage"
-      ],
-      "Länder-Einnahmen aus der Steuer sichern (Gegenrichtung)": [
-        "grunderwerbsteuereinnahm"
-      ]
+      "Grunderwerbsteuer senken oder Freibetrag einführen": ["grunderwerbsteuer", "grunderwerbsteuerfreibetrag"],
+      "Einheitlichen Grunderwerbsteuersatz festlegen": ["grunderwerbsteuersatz"],
+      "Notar- und Grundbuchkosten senken": ["notarkost", "grundbuchkost", "notargebühr"],
+      "Maklerprovision begrenzen oder aufteilen": ["maklerprovision", "maklercourtage"],
+      "Länder-Einnahmen aus der Steuer sichern (Gegenrichtung)": ["grunderwerbsteuereinnahm"]
     },
     "3905": {
-      "Zinsen senken über den Leitzins": [
-        "leitzins",
-        "bauzins"
-      ],
-      "Zinsverbilligung und Förderdarlehen": [
-        "zinsverbillig",
-        "zinsgünstig"
-      ],
-      "Tilgung und Zinsbindung anpassen": [
-        "tilgungszuschuss",
-        "zinsbindung"
-      ]
+      "Zinsen senken über den Leitzins": ["leitzins", "bauzins"],
+      "Zinsverbilligung und Förderdarlehen": ["zinsverbillig", "zinsgünstig"],
+      "Tilgung und Zinsbindung anpassen": ["tilgungszuschuss", "zinsbindung"]
     }
   }
 }

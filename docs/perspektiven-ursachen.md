@@ -1050,6 +1050,24 @@ Verworfen: Kaufpreise steigen schneller als Einkommen (Folge von 3901 und 3902);
 
 Tragende Zitate: 3901 – IÖR/BBSR S. 4: „Die Studie beziffert die baureifen, potenziell bebaubaren Flächen in den Städten und Gemeinden auf mindestens 99.000 Hektar … Davon sind nach Angaben der Kommunen rund zwei Drittel für Wohnungsbau vorgesehen.“ 3902 – Destatis: Wohngebäude Neubau +89 % (2010–2025). 3903 – Kiel-Studie: Eigenkapitalbelastung 3,2 Jahreseinkommen (2024) nach 1,7–1,8 bis etwa 2008; Sparzeit 6,8 → 13,9 Jahre. 3904 – Sparzeit für Nebenkosten im Median der Kreise 1,46 Jahre, Frankfurt 3,41. 3905 – Hypothekenbelastung 25 % des verfügbaren Einkommens (2024), 18 % (2005). Die Zahlen der Kiel-Studie stammen aus der HTML-Fassung (Peer-Review nicht ausgewiesen).
 
+## Arbeitszeit, Erreichbarkeit und Vereinbarkeit (40)
+
+Stand: 19. 10. 2026 · KI-Entwurf, KI-Freigabe für die Testphase
+
+Aufnahmegrund: Testlauf 2026-10 (`docs/befunde-testlauf-2026-10.md`, Befund 1): Spielende nannten Arbeitszeit, Erreichbarkeit und Vereinbarkeit; im Katalog gab es dafür weder Thema noch Ursache. Abgegrenzt von Arbeitsplätze (5), Pflege (10, Entlastung pflegender Angehöriger 1004), Kita-Betreuung (17), Arbeitsbelastung im Gesundheitswesen (27) und Sexismus (28, Verteilung der Sorgearbeit).
+
+Ziel: „Beschäftigte können ihre Arbeitszeit so gestalten, dass sie gesund bleiben, nach der Arbeit abschalten können und Beruf mit Familie oder Pflege vereinbaren.“
+
+| ID | Ursache (kurz) | Ebene | Quelle (Belegstufe) | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 4001 | Mehrarbeit verbreitet, teils ohne Ausgleich | Bund | [Destatis PM N038 vom 24. 7. 2025](https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/07/PD25_N038_13.html) (A) | Höchstgrenzen einhalten, Zeiterfassung, Vergütung oder Ausgleich; gegenläufig wöchentliche statt tägliche Höchstarbeitszeit |
+| 4002 | Wunsch und tatsächlicher Arbeitsumfang passen nicht | Bund | [Destatis PM 314 vom 4. 9. 2026](https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_314_13.html) (A) | Teilzeitanspruch ausbauen; Aufstockung und Rückkehr in Vollzeit; kürzere Arbeitszeit für alle; Wahlarbeitszeit und Arbeitszeitkonto |
+| 4003 | Betreuung oder Pflege als Grund für reduzierte Arbeitszeit | Bund | [Destatis PM N007 vom 30. 1. 2026](https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/01/PD26_N007_13.html) (A) | Elternzeit und Pflegezeit; mobiles Arbeiten; Gleitzeit |
+
+Verworfen: **Erwartete Erreichbarkeit außerhalb der Arbeitszeit** und **Arbeitsmenge passt nicht zu Zeit und Personal** – beide nur über den DGB-Index Gute Arbeit belegt (WSI GenderDatenPortal; die ISF-Studie zitiert dieselbe Befragung: 24,3 % „oft“ oder „sehr häufig“ erreichbar), also nur C; die unabhängigen Quellen (BAuA-Arbeitszeitreport 2021, BIBB/BAuA-Erwerbstätigenbefragung 2018, Stressreport 2019, Eurofound EWCS 2024) waren nicht abrufbar (HTTP 403/429). Wieder aufnehmen, sobald eine davon gelesen ist – vor der Erfassung ist das keine nachträgliche Ursache. Ebenfalls verworfen: Tageshöchstgrenze als Ursache (keine Quelle, Lösungsrichtung unter 4001); fehlende Zeiterfassung (Rechtslage belegt, Ausmaß nicht gemessen); Arbeitszeitlage (Schicht, Wochenende; Quelle nicht lesbar); freiwillige Mehrarbeit aus Einkommensgründen (Motive nicht belegt); Teilzeit bremst die Entwicklung von Frauen (gehört zu 28).
+
+Tragende Zitate: 4001 – Destatis: „Das entsprach einem Anteil von 11 % der insgesamt 39,1 Millionen Arbeitnehmerinnen und Arbeitnehmer“; Ausgleich unbezahlt 19 %, bezahlt 16 %, Arbeitszeitkonto 71 % (Mehrfachnennung). 4002 – Destatis: 3,8 Mio. wollten weniger arbeiten (3,3 Mio. in Vollzeit), 1,5 Mio. mehr (1,1 Mio. in Teilzeit). 4003 – Destatis: Betreuung von Kindern, Menschen mit Behinderungen oder Pflegebedürftigen bei 23,5 % der Teilzeitbeschäftigten (Frauen 28,8 %, Männer 6,8 %).
+
 ## Schutz im Krisen- und Kriegsfall (41)
 
 Stand: 19. 10. 2026 · KI-Entwurf, KI-Freigabe für die Testphase

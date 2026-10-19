@@ -3,18 +3,7 @@
   "name": "Wohneigentum",
   "beschreibung": "Viele Menschen möchten eine eigene Wohnung oder ein eigenes Haus, sehen aber Kaufpreise, Eigenkapital und Nebenkosten als kaum erreichbar an.",
   "ziel": "Menschen können eine eigene Wohnung oder ein eigenes Haus finden, finanzieren und dauerhaft tragen.",
-  "schlagwoerter": [
-    "wohneigentum",
-    "eigentumswohnung",
-    "eigenheim",
-    "hauskauf",
-    "immobilie",
-    "eigenkapital",
-    "kaufnebenkosten",
-    "grunderwerbsteuer",
-    "bauland",
-    "bauzinsen"
-  ],
+  "schlagwoerter": ["wohneigentum", "eigentumswohnung", "eigenheim", "hauskauf", "immobilie", "eigenkapital", "kaufnebenkosten", "grunderwerbsteuer", "bauland", "bauzinsen"],
   "ursachen": [
     {
       "id": 3901,
@@ -22,13 +11,7 @@
       "alltag": "Ich finde kaum Grundstücke, auf denen ich mir ein eigenes Haus bauen kann.",
       "quelle_url": "https://ioer.de/fileadmin/user_upload/projekte/files/2022/FBR/Blum_IOER_Baulandumfrage_BBSR-Online-Publ_11_2022.pdf",
       "ebene": "bund",
-      "schlagwoerter": [
-        "bauland",
-        "baugebiet",
-        "bebauungsplan",
-        "grundstueck",
-        "baureif"
-      ]
+      "schlagwoerter": ["bauland", "baugebiet", "bebauungsplan", "grundstueck", "baureif"]
     },
     {
       "id": 3902,
@@ -36,13 +19,7 @@
       "alltag": "Ein neues Haus oder eine neue Wohnung zu bauen wird für mich immer teurer.",
       "quelle_url": "https://www.destatis.de/DE/Themen/Wirtschaft/Preise/Baupreise-Immobilienpreisindex/_inhalt.html",
       "ebene": "bund",
-      "schlagwoerter": [
-        "baukosten",
-        "neubau",
-        "bauwerk",
-        "baustandard",
-        "bauordnung"
-      ]
+      "schlagwoerter": ["baukosten", "neubau", "bauwerk", "baustandard", "bauordnung"]
     },
     {
       "id": 3903,
@@ -50,13 +27,7 @@
       "alltag": "Für den Kauf einer Wohnung fehlt mir das Eigenkapital.",
       "quelle_url": "https://www.wirtschaftsdienst.eu/inhalt/jahr/2026/heft/5/beitrag/wenn-preise-den-einkommen-davonlaufen-zugang-zu-wohneigentum-in-deutschland-9618.html",
       "ebene": "bund",
-      "schlagwoerter": [
-        "eigenkapital",
-        "sparzeit",
-        "ersparnis",
-        "elternhaus",
-        "erbschaft"
-      ]
+      "schlagwoerter": ["eigenkapital", "sparzeit", "ersparnis", "elternhaus", "erbschaft"]
     },
     {
       "id": 3904,
@@ -64,13 +35,7 @@
       "alltag": "Zum Kaufpreis kommen Steuern und Gebühren, die ich vorab aufbringen muss.",
       "quelle_url": "https://www.wirtschaftsdienst.eu/inhalt/jahr/2026/heft/5/beitrag/wenn-preise-den-einkommen-davonlaufen-zugang-zu-wohneigentum-in-deutschland-9618.html",
       "ebene": "land",
-      "schlagwoerter": [
-        "grunderwerbsteuer",
-        "kaufnebenkosten",
-        "notarkosten",
-        "maklerprovision",
-        "grundbuch"
-      ]
+      "schlagwoerter": ["grunderwerbsteuer", "kaufnebenkosten", "notarkosten", "maklerprovision", "grundbuch"]
     },
     {
       "id": 3905,
@@ -78,13 +43,7 @@
       "alltag": "Die monatliche Rate für meine Finanzierung nimmt einen großen Teil meines Einkommens.",
       "quelle_url": "https://www.wirtschaftsdienst.eu/inhalt/jahr/2026/heft/5/beitrag/wenn-preise-den-einkommen-davonlaufen-zugang-zu-wohneigentum-in-deutschland-9618.html",
       "ebene": "bund",
-      "schlagwoerter": [
-        "bauzinsen",
-        "zinsen",
-        "kreditrate",
-        "tilgung",
-        "hypothek"
-      ]
+      "schlagwoerter": ["bauzinsen", "zinsen", "kreditrate", "tilgung", "hypothek"]
     }
   ],
   "freigabe": {

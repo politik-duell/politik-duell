@@ -1,0 +1,37 @@
+{
+  "id": 40,
+  "name": "Arbeitszeit, Erreichbarkeit und Vereinbarkeit",
+  "beschreibung": "Viele Beschäftigte arbeiten länger als vereinbart, werden in der Freizeit erreicht oder können ihre Arbeitszeit nicht so gestalten, wie es zu Kindern oder pflegebedürftigen Angehörigen passt.",
+  "ziel": "Beschäftigte können ihre Arbeitszeit so gestalten, dass sie gesund bleiben, nach der Arbeit abschalten können und Beruf mit Familie oder Pflege vereinbaren.",
+  "schlagwoerter": ["arbeitszeit", "ueberstunden", "erreichbarkeit", "vereinbarkeit", "familie", "lange arbeitszeit"],
+  "ursachen": [
+    {
+      "id": 4001,
+      "beschreibung": "Mehrarbeit ist verbreitet und wird teils nicht ausgeglichen: 2024 leisteten 4,4 Mio. Beschäftigte (11 %) Mehrarbeit, 19 % der Betroffenen unbezahlt",
+      "alltag": "Ich arbeite regelmäßig länger, als in meinem Vertrag steht, und sehe davon oft keinen Ausgleich.",
+      "quelle_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/07/PD25_N038_13.html",
+      "ebene": "bund",
+      "schlagwoerter": ["ueberstunden", "mehrarbeit", "lange arbeitszeit"]
+    },
+    {
+      "id": 4002,
+      "beschreibung": "Gewünschter und tatsächlicher Arbeitsumfang passen oft nicht zusammen, in beide Richtungen: 2025 wollten 3,8 Mio. Erwerbstätige weniger und 1,5 Mio. mehr arbeiten",
+      "alltag": "Ich würde gern meine Stunden ändern, finde aber keinen Weg dorthin.",
+      "quelle_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_314_13.html",
+      "ebene": "bund",
+      "schlagwoerter": ["arbeitszeit", "teilzeit", "vollzeit", "stunden"]
+    },
+    {
+      "id": 4003,
+      "beschreibung": "Betreuung oder Pflege ist für viele der Grund, die Arbeitszeit zu reduzieren: 2024 für 23,5 % der Teilzeitbeschäftigten (Frauen 28,8 %, Männer 6,8 %)",
+      "alltag": "Ich arbeite weniger, weil ich mich um Kinder oder pflegebedürftige Angehörige kümmere.",
+      "quelle_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/01/PD26_N007_13.html",
+      "ebene": "bund",
+      "schlagwoerter": ["vereinbarkeit", "familie", "kinder", "pflege"]
+    }
+  ],
+  "freigabe": {
+    "datum": "2026-10-19",
+    "art": "ki"
+  }
+}

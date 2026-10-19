@@ -5,110 +5,46 @@
   "regeln": [
     {
       "nr": 1,
-      "ursachen": [
-        3801
-      ],
+      "ursachen": [3801],
       "text": "Zu 1 gehören Ausgaben der GKV, die schneller wachsen als die beitragspflichtigen Einnahmen (Krankenhaus, Arznei, ambulante Versorgung, Honorare) und die Frage, wie die Einnahmebasis aussieht (Beitragsbemessungsgrenze, Kapitaleinkommen, Versichertenkreis). Nicht dazu: Verwaltungskosten, Pflegeversicherung, der Zusatzbeitrag als Satz. Abgrenzung zu 3: Rücklagen sind eine Folge von Defiziten. Grenzfall Krankenhausinvestitionen (Länder): nur als ursachen_offen."
     },
     {
       "nr": 2,
-      "ursachen": [
-        3802
-      ],
+      "ursachen": [3802],
       "text": "Zu 2 gehören Kosten versicherungsfremder Leistungen, die der Bund nicht oder nicht voll erstattet (z. B. Mitversicherung von Kindern und Ehepartnern, Versorgung von Bürgergeldbeziehenden). Nicht dazu: Ausgaben, die der Versicherungsgemeinschaft zuzurechnen sind. Grenzfall Mitversicherung: nur als ursachen_offen, bis die Abgrenzung belegt ist."
     },
     {
       "nr": 3,
-      "ursachen": [
-        3803
-      ],
+      "ursachen": [3803],
       "text": "Zu 3 gehören Rücklagen der Kassen und die Lücke zwischen erhobenem und bekanntgegebenem Zusatzbeitrag. Nicht dazu: die laufenden Ausgaben (Ursache 1). Abgrenzung zu 1: Ursache 3 beschreibt, warum die Beiträge über dem Bedarf liegen, Ursache 1, warum der Bedarf steigt."
     },
     {
       "nr": 4,
-      "ursachen": [
-        3804
-      ],
+      "ursachen": [3804],
       "text": "Zu 4 gehören gesetzliche Zuzahlungen und Eigenanteile, die Versicherte bei Krankenhaus, Heilmitteln, häuslicher Krankenpflege und Fahrkosten selbst tragen, sowie die Belastungsgrenze. Nicht dazu: Pflegeeigenanteile (T10). Grenzfall Leistungsausschluss, der keine Zuzahlung ist (z. B. Zahnersatz, Brillen): nur als ursachen_offen."
     }
   ],
   "buendel": {
-    "3802": [
-      "Steuerfinanzierung versicherungsfremder Leistungen"
-    ]
+    "3802": ["Steuerfinanzierung versicherungsfremder Leistungen"]
   },
   "suchbegriffe": {
     "3801": {
-      "Ausgaben begrenzen: Preise, Budgets, Wirtschaftlichkeit": [
-        "ausgabenbremse",
-        "kostendämpf",
-        "arzneimittelpreis",
-        "herstellerabschlag",
-        "honorarbudget",
-        "wirtschaftlichkeitsgebot",
-        "preismoratorium",
-        "einnahmenorientierte ausgabenpolitik"
-      ],
-      "Versorgung ausbauen und besser vergüten": [
-        "krankenhausvergütung",
-        "krankenhausreform",
-        "versorgungsausbau",
-        "honorarerhöh",
-        "pflegepersonal"
-      ],
-      "Einnahmebasis verbreitern": [
-        "beitragsbemessungsgrenze",
-        "bürgerversicherung",
-        "kapitalerträge",
-        "kapitaleinkommen",
-        "beitragspflichtig"
-      ],
-      "Einnahmen nicht erhöhen, Ausgaben an Einnahmen orientieren": [
-        "keine höhere bemessungsgrenze",
-        "einnahmenorientiert",
-        "ausgaben an einnahmen",
-        "grundlohnrate"
-      ]
+      "Ausgaben begrenzen: Preise, Budgets, Wirtschaftlichkeit": ["ausgabenbremse", "kostendämpf", "arzneimittelpreis", "herstellerabschlag", "honorarbudget", "wirtschaftlichkeitsgebot", "preismoratorium", "einnahmenorientierte ausgabenpolitik"],
+      "Versorgung ausbauen und besser vergüten": ["krankenhausvergütung", "krankenhausreform", "versorgungsausbau", "honorarerhöh", "pflegepersonal"],
+      "Einnahmebasis verbreitern": ["beitragsbemessungsgrenze", "bürgerversicherung", "kapitalerträge", "kapitaleinkommen", "beitragspflichtig"],
+      "Einnahmen nicht erhöhen, Ausgaben an Einnahmen orientieren": ["keine höhere bemessungsgrenze", "einnahmenorientiert", "ausgaben an einnahmen", "grundlohnrate"]
     },
     "3802": {
-      "Bund übernimmt mehr aus Steuern": [
-        "bundeszuschuss",
-        "steuerfinanzier",
-        "versicherungsfremd",
-        "bürgergeldbeziehend",
-        "steuermittel"
-      ],
-      "Beitragsfreie Mitversicherung einschränken": [
-        "mitversicherung",
-        "ehepartner",
-        "beitragsfrei",
-        "familienversicherung"
-      ]
+      "Bund übernimmt mehr aus Steuern": ["bundeszuschuss", "steuerfinanzier", "versicherungsfremd", "bürgergeldbeziehend", "steuermittel"],
+      "Beitragsfreie Mitversicherung einschränken": ["mitversicherung", "ehepartner", "beitragsfrei", "familienversicherung"]
     },
     "3803": {
-      "Rücklagenregeln ändern": [
-        "rücklagen",
-        "mindestreserve",
-        "reservekorridor",
-        "schwankungsreserve"
-      ],
-      "Zusatzbeitrag an Bedarf binden": [
-        "zusatzbeitrag senken",
-        "beitragssatz senken"
-      ]
+      "Rücklagenregeln ändern": ["rücklagen", "mindestreserve", "reservekorridor", "schwankungsreserve"],
+      "Zusatzbeitrag an Bedarf binden": ["zusatzbeitrag senken", "beitragssatz senken"]
     },
     "3804": {
-      "Zuzahlungen senken oder abschaffen": [
-        "zuzahlung",
-        "zuzahlungsfrei",
-        "eigenanteil senken",
-        "belastungsgrenze senken"
-      ],
-      "Zuzahlungen erhöhen oder steuern": [
-        "zuzahlung erhöhen",
-        "praxisgebühr",
-        "steuerungsgebühr"
-      ]
+      "Zuzahlungen senken oder abschaffen": ["zuzahlung", "zuzahlungsfrei", "eigenanteil senken", "belastungsgrenze senken"],
+      "Zuzahlungen erhöhen oder steuern": ["zuzahlung erhöhen", "praxisgebühr", "steuerungsgebühr"]
     }
   }
 }
