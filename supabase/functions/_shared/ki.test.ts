@@ -82,7 +82,7 @@ describe('systemPrompt', () => {
 
 describe('nutzerNachrichten', () => {
   it('verlangt nach zwei Nachfragen eine abschließende Einordnung', () => {
-    const n = nutzerNachrichten([spieler('a'), ki('b'), spieler('c'), ki('d'), spieler('e')], 'mieter')
+    const n = nutzerNachrichten([spieler('a'), ki('b'), spieler('c'), ki('d'), spieler('e')], ['mieter', 'mieter'])
     expect(n[0].content).toContain('Mieter:in')
     expect(n[0].content).toContain('bereits zweimal')
     // Eine Forderung bleibt eine Forderung, sie wird nicht zum Problem umgedeutet.
@@ -91,6 +91,13 @@ describe('nutzerNachrichten', () => {
     expect(nutzerNachrichten([spieler('a'), ki('b'), spieler('c')], null)[0].content).toContain('frag anders als zuvor')
     expect(nutzerNachrichten([spieler('a')], null)[0].content).not.toContain('frag anders')
     expect(n.slice(1).map((x) => x.role)).toEqual(['user', 'assistant', 'user', 'assistant', 'user'])
+  })
+
+  it('nennt bei verschiedenen Rollen der Seiten beide', () => {
+    const text = nutzerNachrichten([spieler('a')], ['arbeitslos', 'mieter'])[0].content
+    expect(text).toContain('verschiedene Rollen')
+    expect(text).toContain('Mieter:in')
+    expect(nutzerNachrichten([spieler('a')], [null, null])[0].content).toContain('Rolle der Person: keine Angabe.')
   })
 })
 
@@ -320,9 +327,11 @@ describe('pruefeAnfrage', () => {
   }
 
   it('akzeptiert eine gültige Anfrage', () => {
-    expect(pruefeAnfrage(gueltig).rolle).toBe('mieter')
-    expect(pruefeAnfrage(gueltig).land).toBeNull()
-    expect(pruefeAnfrage({ ...gueltig, land: 'ST' }).land).toBe('ST')
+    // Ältere App-Fassung: eine Rolle und ein Land für beide Seiten.
+    expect(pruefeAnfrage(gueltig).seiten).toEqual([{ rolle: 'mieter', land: null }, { rolle: 'mieter', land: null }])
+    expect(pruefeAnfrage({ ...gueltig, land: 'ST' }).seiten[1].land).toBe('ST')
+    const seiten = [{ rolle: 'arbeitslos', land: 'ST' }, { rolle: null, land: null }]
+    expect(pruefeAnfrage({ ...gueltig, rolle: undefined, seiten }).seiten).toEqual(seiten)
     expect(pruefeAnfrage(gueltig).zugang).toBeNull()
     const zugang = 'a'.repeat(43)
     expect(pruefeAnfrage({ ...gueltig, zugang }).zugang).toBe(zugang)
@@ -336,6 +345,9 @@ describe('pruefeAnfrage', () => {
     ['mit unbekannter Rolle', { ...gueltig, rolle: 'koenig' }],
     ['mit gleicher Partei', { ...gueltig, parteien: [1, 1] }],
     ['mit ungültigem Bundesland', { ...gueltig, land: 'Sachsen-Anhalt' }],
+    ['mit nur einer Seite', { ...gueltig, seiten: [{ rolle: null, land: null }] }],
+    ['mit unbekannter Rolle einer Seite', { ...gueltig, seiten: [{ rolle: null, land: null }, { rolle: 'koenig', land: null }] }],
+    ['mit ungültigem Bundesland einer Seite', { ...gueltig, seiten: [{ rolle: null, land: 'Berlin' }, { rolle: null, land: null }] }],
     ['mit ungültigem Zugang zur Testphase', { ...gueltig, zugang: 'geheim' }],
     ['mit zu langem Verlauf', { ...gueltig, verlauf: Array(7).fill(spieler('a')) }],
     ['ohne Verlauf und ohne Auswahl', { ...gueltig, verlauf: [] }],

@@ -49,11 +49,16 @@ export interface Forderungskarte {
 }
 
 /**
- * Baut die Karte. Bundesprogramme immer; ist ein Bundesland gewählt und gibt es das Gegenstück auf
- * Landesebene (`entspricht`), kommt dessen Landesprogramm-Block dazu. Null, wenn die ID unbekannt ist
+ * Baut die Karte. Bundesprogramme immer; ist ein Bundesland gewählt (eins oder die beider Seiten) und gibt es das
+ * Gegenstück auf Landesebene (`entspricht`), kommt je Land dessen Landesprogramm-Block dazu. Null, wenn die ID unbekannt ist
  * oder weder Bund noch gewähltes Land einen Block ergeben.
  */
-export function forderungskarte(daten: Daten, instrumentId: number, land: string | null): Forderungskarte | null {
+export function forderungskarte(
+  daten: Daten,
+  instrumentId: number,
+  land: string | null | readonly (string | null)[],
+): Forderungskarte | null {
+  const laender = [...new Set((Array.isArray(land) ? land : [land]).filter((l): l is string => l !== null))]
   const instrument = daten.instrumente.find((i) => i.id === instrumentId)
   if (!instrument) return null
   const gegenstueck = instrument.entspricht ? daten.instrumente.find((i) => i.id === instrument.entspricht) : undefined
@@ -63,7 +68,7 @@ export function forderungskarte(daten: Daten, instrumentId: number, land: string
   const bund = nachEbene('bund')
   if (bund) bloecke.push(block(daten, bund, null))
   const lands = nachEbene('land')
-  if (lands && land) bloecke.push(block(daten, lands, land))
+  if (lands) for (const l of laender) bloecke.push(block(daten, lands, l))
   if (!bloecke.length) return null
 
   const gezeigt = bloecke.flatMap((b) => b.parteien.flatMap((p) => p.massnahmen))

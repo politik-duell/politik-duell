@@ -221,7 +221,7 @@ export async function analysiere(
     return analysiereAsync(anfrage.verlauf, daten.themen, daten.ursachen, {
       instrumente: daten.instrumente,
       massnahmen: daten.massnahmen,
-      land: anfrage.land,
+      land: anfrage.seiten.map((s) => s.land),
       haltungen: kartenHaltungen(daten),
     })
   }
