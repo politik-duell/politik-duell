@@ -517,7 +517,7 @@ function Strang({
 }
 
 function Aufbau({ s, testphase }: { s: Statistik; testphase: boolean }) {
-  const entwurf = (n: number) => (testphase && n ? `, davon ${zahl(n)} KI-Entwurf` : '')
+  const entwurf = (n: number) => (testphase && n ? `, davon ${zahl(n)} KI\u2011Entwurf` : '')
   const massnahmen = s.massnahmen + s.massnahmenEntwurf
   const mitWeg = s.massnahmenMitInstrument + s.massnahmenMitInstrumentEntwurf
   const positionen = s.positionen + s.positionenEntwurf
