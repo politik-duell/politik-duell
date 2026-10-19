@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, type ReactNode } from 'react'
 import { useDaten, useLandName } from '../data/kontext'
 import { ROLLEN } from '../data/rollen'
 import { MAX_JE_URSACHE, punkteText, type ParteiErgebnis, type Treffer } from '../logic/bewertung'
@@ -124,31 +124,67 @@ function Halbbalken({ ergebnis, punkte, vorne }: { ergebnis: ParteiErgebnis; pun
 const mehrfachText = (n: number) =>
   `Wirkt auf ${n} der genannten Ursachen und zählt deshalb bei jeder davon.`
 
-/** Eine gezählte Maßnahme mit Rechnung, Begründung und Belegen. */
+/**
+ * Ergebnis mit kleinem ⓘ daneben; die Rechnung dahinter erscheint erst auf Tippen,
+ * damit die Auflösung nicht mit Formeln überfrachtet wirkt.
+ */
+function MitRechnung({ ergebnis, rechnung }: { ergebnis: ReactNode; rechnung: ReactNode }) {
+  const [offen, setOffen] = useState(false)
+  return (
+    <>
+      <p className="duell-ergebnis">
+        {ergebnis}
+        <button
+          type="button"
+          className="info-knopf"
+          aria-expanded={offen}
+          aria-label={offen ? 'Rechnung ausblenden' : 'Rechnung zeigen'}
+          title="So wird gerechnet"
+          onClick={() => setOffen((o) => !o)}
+        >
+          i
+        </button>
+      </p>
+      {offen && <p className="duell-rechnung">{rechnung}</p>}
+    </>
+  )
+}
+
+/** Eine gezählte Maßnahme mit Punkten, Belegen und aufklappbarer Einordnung (Begründung, Rolle, Forschungsstand). */
 function MassnahmeInhalt({ t, gewicht, mehrere }: { t: Treffer; gewicht: number; mehrere: boolean }) {
   const landName = useLandName()
   return (
     <div className={mehrere ? 'duell-weg' : undefined}>
       <p className="massnahme-titel">{t.massnahme.beschreibung}</p>
-      <p className="duell-rechnung">
-        wirkt {t.wirksamkeit}/3 × umsetzbar {t.massnahme.umsetzbarkeit}/3 = <strong>{t.punkteJeUrsache}</strong>
-        {mehrere && ` · ${gewichtText(gewicht)}`}
-      </p>
-      <p className="massnahme-begruendung">{t.massnahme.begruendung}</p>
-      {t.rollenBegruendung && (
-        <p className="massnahme-rolle">
-          Für deine Rolle {t.rollenBonus > 0 ? 'wirksamer' : 'weniger wirksam'} (Grundwert {t.massnahme.wirksamkeit}/3):{' '}
-          {t.rollenBegruendung}
-        </p>
-      )}
-      {t.ursachen_ids.length > 1 && (
-        <p className="massnahme-rolle duell-mehrfach">{mehrfachText(t.ursachen_ids.length)}</p>
-      )}
+      <MitRechnung
+        ergebnis={
+          <>
+            <strong>{punkteText(t.punkteJeUrsache)}</strong> {t.punkteJeUrsache === 1 ? 'Punkt' : 'Punkte'}
+            {mehrere && ` · ${gewichtText(gewicht)}`}
+          </>
+        }
+        rechnung={
+          <>
+            wirkt {t.wirksamkeit}/3 × umsetzbar {t.massnahme.umsetzbarkeit}/3 = <strong>{t.punkteJeUrsache}</strong>
+          </>
+        }
+      />
       {t.massnahme.land && <p className="massnahme-rolle">Aus dem Landeswahlprogramm {landName(t.massnahme.land)}</p>}
-      {(t.massnahme.evidenz === 'gemischt' || t.massnahme.evidenz === 'offen') && (
-        <p className="massnahme-rolle">{EVIDENZ_TEXT[t.massnahme.evidenz]}</p>
-      )}
       <MassnahmeBelege massnahme={t.massnahme} />
+      <details className="massnahme-einordnung">
+        <summary>Einordnung</summary>
+        <p className="massnahme-begruendung">{t.massnahme.begruendung}</p>
+        {t.rollenBegruendung && (
+          <p className="massnahme-rolle">
+            Für deine Rolle {t.rollenBonus > 0 ? 'wirksamer' : 'weniger wirksam'} (Grundwert {t.massnahme.wirksamkeit}/3):{' '}
+            {t.rollenBegruendung}
+          </p>
+        )}
+        {t.ursachen_ids.length > 1 && (
+          <p className="massnahme-rolle duell-mehrfach">{mehrfachText(t.ursachen_ids.length)}</p>
+        )}
+        {(t.massnahme.evidenz === 'gemischt' || t.massnahme.evidenz === 'offen') && <p className="massnahme-rolle">{EVIDENZ_TEXT[t.massnahme.evidenz]}</p>}
+      </details>
     </div>
   )
 }
@@ -178,12 +214,21 @@ function MassnahmeDetail({ ergebnis, ursacheId }: { ergebnis: ParteiErgebnis; ur
       ) : (
         <>
           {mehrere && (
-            <p className="duell-rechnung">
-              {wege.length} Lösungswege:{' '}
-              {wege.map(({ b }, i) => (i === 0 ? `${b.punkte}` : ` + ${b.punkte} × ${gewichtFaktor(b.gewicht)}`)).join('')} ={' '}
-              <strong>{punkteText(w.punkte)}</strong>
-              {w.gedeckelt && ` (gedeckelt bei ${MAX_JE_URSACHE})`}
-            </p>
+            <MitRechnung
+              ergebnis={
+                <>
+                  <strong>{punkteText(w.punkte)}</strong> Punkte aus {wege.length} Lösungswegen
+                </>
+              }
+              rechnung={
+                <>
+                  Bester Weg voll, jeder weitere halb so stark:{' '}
+                  {wege.map(({ b }, i) => (i === 0 ? `${b.punkte}` : ` + ${b.punkte} × ${gewichtFaktor(b.gewicht)}`)).join('')} ={' '}
+                  <strong>{punkteText(w.punkte)}</strong>
+                  {w.gedeckelt && ` (gedeckelt bei ${MAX_JE_URSACHE})`}
+                </>
+              }
+            />
           )}
           {wege.map(({ b, t }) => (
             <MassnahmeInhalt key={b.massnahme_id} t={t} gewicht={b.gewicht} mehrere={mehrere} />

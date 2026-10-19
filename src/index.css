@@ -867,20 +867,20 @@ textarea {
 .duell-zeilen li + li {
   border-top: 1px solid var(--linie);
 }
-.duell-zeile summary {
+.duell-zeile > summary {
   display: grid;
   gap: 6px;
   padding: 10px 14px 12px;
   cursor: pointer;
   list-style: none;
 }
-.duell-zeile summary::-webkit-details-marker {
+.duell-zeile > summary::-webkit-details-marker {
   display: none;
 }
-.duell-zeile summary:hover {
+.duell-zeile > summary:hover {
   background: var(--papier);
 }
-.duell-zeile summary:focus-visible {
+.duell-zeile > summary:focus-visible {
   outline: 3px solid var(--fokus);
   outline-offset: -3px;
 }
@@ -1015,6 +1015,46 @@ textarea {
 }
 .duell-rechnung strong {
   color: var(--text);
+}
+.duell-ergebnis {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-variant-numeric: tabular-nums;
+}
+/* Kleines ⓘ neben einem Ergebnis: blendet die Rechnung ein */
+.info-knopf {
+  display: inline-grid;
+  place-items: center;
+  width: 1.4em;
+  height: 1.4em;
+  padding: 0;
+  border: 1.5px solid var(--text-leise);
+  border-radius: 50%;
+  background: none;
+  font: italic 700 0.8rem/1 Georgia, serif;
+  color: var(--text-leise);
+  cursor: pointer;
+}
+.info-knopf[aria-expanded='true'] {
+  border-color: var(--akzent-text);
+  background: var(--akzent-text);
+  color: var(--flaeche);
+}
+.info-knopf:focus-visible {
+  outline: 2px solid var(--fokus);
+  outline-offset: 2px;
+}
+.massnahme-einordnung {
+  margin: 4px 0 0;
+  font-size: 0.88rem;
+}
+.massnahme-einordnung > summary {
+  cursor: pointer;
+  color: var(--akzent-text);
+}
+.massnahme-einordnung[open] > summary {
+  margin-bottom: 4px;
 }
 .duell-weg + .duell-weg {
   margin-top: 8px;
