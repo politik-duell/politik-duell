@@ -656,25 +656,8 @@ textarea {
 }
 
 /* ---------- Runde ---------- */
-.am-zug {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  margin: 8px 0 14px;
-  padding: 5px 14px 5px 5px;
-  border-radius: 999px;
-  background: var(--flaeche);
-  border: 1.5px solid var(--partei-linie);
-}
-.am-zug-label {
-  padding: 2px 10px;
-  border-radius: 999px;
-  background: var(--partei);
-  color: #111;
-  font-size: 0.85rem;
-  font-weight: 700;
-}
 .rolle-chip {
+  margin: 8px 0 14px;
   font-size: 0.85rem;
   color: var(--text-leise);
 }
@@ -2610,41 +2593,6 @@ textarea {
   }
 }
 
-/* ---------- Themenhinweis in der Runde ---------- */
-.themen-hinweis {
-  margin: 0.5rem 0 0;
-  font-size: 0.92rem;
-}
-.themen-hinweis summary {
-  cursor: pointer;
-  font-weight: 700;
-  color: var(--akzent-text);
-}
-.themen-chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin: 0.6rem 0 0.4rem;
-  padding: 0;
-  list-style: none;
-}
-.themen-chips li {
-  padding: 3px 10px;
-  border-radius: 999px;
-  border: 1px dashed var(--linie);
-  color: var(--text-leise);
-  font-size: 0.85rem;
-}
-.themen-chips li.bereit {
-  border: 1px solid var(--stimmblau);
-  background: var(--stimmblau-hell);
-  color: var(--tinte);
-}
-.themen-hinweis .meta {
-  margin: 0;
-  font-size: 0.85rem;
-}
-
 /* Ursachen zum Antippen (Runde, bei einer Nachfrage mit erkanntem Thema) */
 .ursachen-auswahl {
   margin: 0.5rem 0 1rem;
@@ -2868,18 +2816,13 @@ textarea {
   display: none;
 }
 
-/* Bestätigung vor der Wertung (UrsachenAuswahl): Thema mit „anderes Thema“, Knöpfe nebeneinander. */
+/* Bestätigung vor der Wertung (UrsachenAuswahl): Thema, Knöpfe nebeneinander. */
 .ursachen-auswahl .ursachen-thema {
   margin: 0 0 0.5rem;
 }
-.ursachen-auswahl .ursachen-thema .knopf-link,
 .ursachen-auswahl .ursachen-knoepfe .knopf-link {
   display: inline;
   margin: 0;
-}
-.ursachen-themawahl select {
-  width: 100%;
-  margin: 0 0 0.6rem;
 }
 .ursachen-knoepfe {
   display: flex;

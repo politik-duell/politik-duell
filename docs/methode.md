@@ -6,7 +6,7 @@ Stand: 2. 10. 2026
 
 ## Worum es geht
 
-Das Politik-Duell ist ein Spiel für zwei Personen. Jede wählt eine Partei. In fünf Runden nennen beide abwechselnd ein Problem aus ihrem Alltag, etwa „Ich finde keinen Facharzttermin“ oder „Meine Miete frisst mein halbes Gehalt“. Das Spiel zeigt dann, welche der beiden Parteien dafür die wirksamere und umsetzbare Lösung im Programm hat. Zu jeder Bewertung gibt es den Beleg: einen Link auf die Seite im Wahlprogramm.
+Das Politik-Duell ist ein Spiel für zwei Personen. Jede wählt eine Partei. In fünf Runden nennen sie – meist gemeinsam – ein Problem aus ihrem Alltag, etwa „Ich finde keinen Facharzttermin“ oder „Meine Miete frisst mein halbes Gehalt“. Das Spiel zeigt dann, welche der beiden Parteien dafür die wirksamere und umsetzbare Lösung im Programm hat. Zu jeder Bewertung gibt es den Beleg: einen Link auf die Seite im Wahlprogramm.
 
 Das Ziel: Politik an dem messen, was sie für konkrete Probleme vorschlägt, nicht an Versprechen, Sympathie oder Lautstärke. Das Spiel ist keine Wahlempfehlung und kein Gesamturteil über eine Partei.
 
@@ -118,7 +118,7 @@ Wirksamkeit misst den Beitrag zum Ziel der Betroffenen; Vor- und Nachteile für 
    - Ist die Zuordnung sicher, sind die Ursachen der KI vorausgewählt („So habe ich dich verstanden“); die Person bestätigt („Stimmt so“) oder ändert die Auswahl.
    - Ist sie unsicher, ist nichts vorausgewählt („Was davon trifft bei dir zu?“). Unsicher heißt: Die KI ist beim Thema unsicher, ein anderes Thema kommt in Frage, die Schilderung nennt mehrere Probleme aus verschiedenen Themen, die KI ist bei den Ursachen unsicher, oder die nächstliegende Ursache passt nur teilweise (andere Lage als ihr Geltungsbereich, etwa Zahnarzt statt Hausarzt) – dann steht über der Auswahl, was abweicht. Ein Beleg, der kein Wort mit seiner Ursache teilt, verwirft diese Ursache; bleibt keine übrig, ist die Zuordnung unsicher. Eine erkannte Symptomgruppe gilt trotz unsicherer Ursachen; nur ein unsicheres Thema verhindert sie.
    - In der Auflösung steht als Überschrift je Ursache der bestätigte Alltagssatz; der Befund mit Quelle steht im aufgeklappten Detail. Die Kurzfassung der KI erscheint nur, wenn die Person ihren Vorschlag unverändert bestätigt hat – sonst die bestätigten Sätze.
-   - Immer gibt es „anderes Thema“ und „Nichts davon passt“. Dann wird die Runde nicht gewertet, das Spiel sagt, dass dieser Teil des Themas noch nicht erfasst ist, und die Eingabe geht zur Durchsicht (Grundprinzip 5) – so zeigt sich, welche Ursachen im Katalog fehlen.
+   - Immer gibt es „Nichts davon passt“; zu einem anderen Thema wechseln lässt sich nicht, damit niemand zu einem Thema springt, das gar nicht zur Schilderung passt. Dann wird die Runde nicht gewertet, das Spiel sagt, dass dieser Teil des Themas noch nicht erfasst ist, und die Eingabe geht zur Durchsicht (Grundprinzip 5) – so zeigt sich, welche Ursachen im Katalog fehlen.
 
    Ist keine Ursache erkennbar, fragt das Spiel zusätzlich nach, woran es konkret hakt (zusammen mit Nachfragen zu Forderungen höchstens zweimal); man kann antippen oder weiterschreiben. Bleibt es unklar, wird die Runde nicht gewertet. Bei pauschalen Urteilen über Gruppen gibt es keine Auswahl, nur die Nachfrage nach dem Erlebten.
 3. Die höhere Summe bekommt den Spielpunkt, bei Gleichstand beide.

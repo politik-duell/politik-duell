@@ -5,10 +5,8 @@ import { ROLLEN } from '../data/rollen'
 import type { AnalyseAntwort, Nachricht } from '../data/types'
 import { besteParteien, bewertePartei, werteRunde } from '../logic/bewertung'
 import { haltungskarte } from '../logic/haltung'
-import { fuerBeideErfasst } from '../logic/stand'
 import { zufallsBeispiel, type BeispielArt } from '../logic/zufall'
 import { mitKarte, type Karte, type RundenErgebnis, type Spieler } from '../spiel'
-import { parteiStil } from './stil'
 import { ForderungsKarte } from './ForderungsKarte'
 import { HALTUNG_EINLEITUNG, HaltungsKarte } from './HaltungsKarte'
 import { UrsachenAuswahl } from './UrsachenAuswahl'
@@ -148,12 +146,11 @@ export function Runde({
   const [fehler, setFehler] = useState<string | null>(null)
   /**
    * Bestätigung (docs/plan-zuordnung.md): das Thema, dessen Ursachen gerade zum Antippen stehen – mit den von der KI
-   * vorgeschlagenen Ursachen, wenn sie sicher war, und weiteren Themen, die sie in Frage kommend fand.
+   * vorgeschlagenen Ursachen, wenn sie sicher war.
    */
   const [angebot, setAngebot] = useState<{
     thema_id: number
     vorauswahl: number[]
-    kandidaten: number[]
     /** Symptomgruppe, deren Ursachen vorausgewählt sind (docs/plan-symptome.md). */
     symptom?: number
     /** Eine Ursache passt nur teilweise: was abweicht. */
@@ -262,7 +259,6 @@ export function Runde({
           : {
               thema_id: analyse.thema_id,
               vorauswahl: [],
-              kandidaten: analyse.thema_kandidaten ?? [],
               ...(analyse.abweichung ? { abweichung: analyse.abweichung } : {}),
             },
       )
@@ -292,7 +288,7 @@ export function Runde({
       }
     } else if (analyse.typ === 'problem' && analyse.thema_id !== null && analyse.ursachen_ids.length > 0) {
       // Gewertet wird erst, was die Person bestätigt: die Ursachen der KI vorausgewählt (sie war sicher).
-      setAngebot({ thema_id: analyse.thema_id, vorauswahl: analyse.ursachen_ids, kandidaten: [], symptom: analyse.symptom })
+      setAngebot({ thema_id: analyse.thema_id, vorauswahl: analyse.ursachen_ids, symptom: analyse.symptom })
       setZusammenfassung(analyse.zusammenfassung || null)
     } else {
       onErgebnis({ ...werteAus(analyse, nr, sprecher, spieler, daten, forderung ?? undefined, rundenKarten), eingaben: spielerTexte(neu) })
@@ -375,17 +371,11 @@ export function Runde({
 
   return (
     <main className="seite runde">
-      <div className="am-zug" style={parteiStil(aktiv.partei.farbe)}>
-        <span className="am-zug-label">{aktiv.partei.kurzname}</span>
-        <strong>{aktiv.name} ist dran</strong>
-        {rolle && <span className="rolle-chip">{rolle}</span>}
-        {land && <span className="rolle-chip">{land}</span>}
-      </div>
+      {(rolle || land) && <p className="rolle-chip">{[rolle, land].filter(Boolean).join(' · ')}</p>}
       <h2>Welches Alltagsproblem nervt dich?</h2>
       <p className="hinweis">
         Schreib auf, was in deinem Alltag konkret schiefläuft.
       </p>
-      <ThemenHinweis parteiIds={[spieler[0].partei.id, spieler[1].partei.id]} />
 
       <div className="verlauf" aria-live="polite">
         {vorher.map((n, i) => (
@@ -412,7 +402,7 @@ export function Runde({
           haltungId={haltung}
           onThema={(id) => {
             // Ein Tipp füllt das Eingabefeld nicht vor, sondern zeigt die Ursachen des Themas zum Antippen (A2).
-            setAngebot({ thema_id: id, vorauswahl: [], kandidaten: [] })
+            setAngebot({ thema_id: id, vorauswahl: [] })
             setZusammenfassung(null)
           }}
         />
@@ -422,19 +412,13 @@ export function Runde({
         <UrsachenAuswahl
           key={`${angebotThema.id}-${verlauf.length}-${angebot.vorauswahl.join(',')}`}
           thema={angebotThema}
-          themen={daten.themen}
           ursachen={daten.ursachen}
           vorauswahl={angebot.vorauswahl}
-          kandidaten={angebot.kandidaten}
           gruppe={angebotGruppe}
           abweichung={angebot.abweichung}
           gesperrt={denkt}
           onWaehlen={(ids) =>
             auswaehlen(angebotThema.id, ids, angebotGruppe && ids.some((id) => angebotGruppe.ursachen_ids.includes(id)) ? angebotGruppe.nr : undefined)
-          }
-          // Ein anderes Thema hat keinen Vorschlag der KI: ohne Vorauswahl; die bisherigen Themen bleiben zur Wahl.
-          onThema={(id) =>
-            setAngebot({ thema_id: id, vorauswahl: [], kandidaten: [angebotThema.id, ...angebot.kandidaten].filter((k) => k !== id) })
           }
           onPasstNicht={() => passtNicht(angebotThema.id)}
         />
@@ -512,40 +496,5 @@ export function Runde({
         </div>
       </form>
     </main>
-  )
-}
-
-/**
- * Welche Themen das Spiel schon kennt – damit niemand ins Leere fragt. Markiert
- * wird nur, ob ein Thema für beide Parteien ausgewertet ist, nicht für welche
- * nicht: Das verrät vor der Auflösung nichts über eine einzelne Partei.
- */
-function ThemenHinweis({ parteiIds }: { parteiIds: [number, number] }) {
-  const daten = useDaten()
-  if (!daten.themen.length) return null
-  const themen = daten.themen.map((t) => ({ ...t, bereit: fuerBeideErfasst(daten, t.id, parteiIds) }))
-  const bereit = themen.filter((t) => t.bereit).length
-  return (
-    <details className="themen-hinweis">
-      <summary>
-        Welche Themen kennt das Spiel schon? ({daten.themen.length})
-      </summary>
-      <ul className="themen-chips">
-        {themen.map((t) => (
-          <li key={t.id} className={t.bereit ? 'bereit' : undefined}>
-            {t.bereit && <span aria-hidden="true">✓ </span>}
-            {t.name}
-            {!t.bereit && <span className="sr-only"> (noch nicht für beide Parteien ausgewertet)</span>}
-          </li>
-        ))}
-      </ul>
-      <p className="meta">
-        {bereit === themen.length
-          ? 'Alle Themen sind für eure beiden Parteien ausgewertet.'
-          : `✓ = für eure beiden Parteien ausgewertet (${bereit} von ${themen.length}). Bei den anderen wird die Runde gezeigt, aber noch nicht gewertet.`}{' '}
-        Andere Probleme kannst du trotzdem nennen – dann gibt es eine Einschätzung ohne Wertung.{' '}
-        <a href="#/themen">Ganze Übersicht</a>
-      </p>
-    </details>
   )
 }

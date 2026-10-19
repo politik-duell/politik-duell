@@ -58,7 +58,7 @@ Dieselben 20 Fälle, je ein Lauf, mit `ordneEin` (Schritt 1 und 2, wie in der Ed
 
 - **Besser:** Keine Ursache wird mehr mit einem unpassenden Beleg gewertet (Formulare → „dieselben Nachweise bei jeder Behörde“ ist weg). Kosten je Einordnung rund ein Drittel.
 - **Schlechter:** Die Belegprüfung verwirft auch richtige Nebenursachen, wenn die Wörter nicht übereinstimmen („Personal überlastet“ → „zu wenige Pflegekräfte“). Mit der Bestätigung in der App ist das harmlos: Die Ursache ist dann nur nicht vorausgewählt.
-- **Unverändert:** Rente (702 trotz 40 Arbeitsjahren), Bahnhof (902 zusätzlich), Themenwahl bei Windrad-Lärm, Tanken/Tafel und der Windrad-Forderung. Die Aufteilung behebt falsche Themen nicht – dafür ist „anderes Thema“ in der Bestätigung da.
+- **Unverändert:** Rente (702 trotz 40 Arbeitsjahren), Bahnhof (902 zusätzlich), Themenwahl bei Windrad-Lärm, Tanken/Tafel und der Windrad-Forderung. Die Aufteilung behebt falsche Themen nicht – passt das Thema nicht, bleibt „Nichts davon passt“ (ein Wechsel zu einem anderen Thema ist bewusst nicht vorgesehen, siehe unten).
 - Ein Lauf je Fall: Unterschiede von ein, zwei Fällen liegen im Rauschen.
 
 **Abweichungen vom Plan, die die Messung ergab:**
@@ -105,7 +105,7 @@ Beim Gegenlesen der Testfälle festgelegt – je über die bestehenden Skills (`
 | Bestätigung immer oder nur bei Unsicherheit? | **Immer.** Keine Runde wird gewertet, ohne dass die Person die Ursachen bestätigt hat (Grundprinzip 2 ohne Ausnahme). |
 | Vorauswahl durch die KI? | **Nur wenn sie sicher ist.** Bei Unsicherheit ist nichts vorausgewählt – ein unsicherer Vorschlag würde sonst ungelesen bestätigt. |
 | „Nichts davon passt“ anbieten? | **Immer**, in jeder Bestätigung. |
-| Texte | Sicher: „So habe ich dich verstanden“, Knöpfe „Stimmt so“ und „Nichts davon passt“. Unsicher: „Was davon trifft bei dir zu?“, Knöpfe „Damit werten“ (wie heute) und „Nichts davon passt“. In beiden darüber „Thema: *Name* · anderes Thema“. |
+| Texte | Sicher: „So habe ich dich verstanden“, Knöpfe „Stimmt so“ und „Nichts davon passt“. Unsicher: „Was davon trifft bei dir zu?“, Knöpfe „Damit werten“ (wie heute) und „Nichts davon passt“. In beiden darüber „Thema: *Name*“ (ohne Themenwechsel). |
 
 **Folge der Entscheidungen:** Ob die KI sicher ist, entscheidet jetzt nur noch, ob etwas vorausgewählt ist. Das Risiko verschiebt sich: Eine falsche Vorauswahl kann ungelesen bestätigt werden. Die Fehler aus den Testpartien („Bus fährt kaum“ → Gesundheitssystem) hatte die KI als sicher behandelt. Deshalb verlässt sich der Plan nicht allein auf die Selbsteinschätzung der KI, sondern ergänzt feste Auslöser im Code (siehe „Wann gilt eine Zuordnung als unsicher?“).
 
@@ -121,10 +121,8 @@ flowchart TD
     P -->|ja| S["mit Vorauswahl:<br/>„So habe ich dich verstanden“"]
     P -->|nein| B["ohne Vorauswahl:<br/>„Was davon trifft bei dir zu?“"]
     S -->|Stimmt so / geändert| A[Auflösung mit Punkten]
-    S -->|anderes Thema| B
     S -->|Nichts davon passt| R
     B -->|Damit werten| A
-    B -->|anderes Thema| B
     B -->|Nichts davon passt| R[ohne Wertung → review_eingaben]
 ```
 
@@ -160,7 +158,7 @@ Nach jeder Eingabe mit Thema erscheint vor der Auflösung eine von zwei Ansichte
 
 **KI sicher – mit Vorauswahl:**
 
-> Thema: *Arzttermine* · [anderes Thema]
+> Thema: *Arzttermine*
 > **So habe ich dich verstanden:**
 > ☑ Ich warte monatelang auf einen Facharzttermin
 > ☑ Der nächste Hausarzt ist weit weg
@@ -169,7 +167,7 @@ Nach jeder Eingabe mit Thema erscheint vor der Auflösung eine von zwei Ansichte
 
 **KI unsicher – ohne Vorauswahl:**
 
-> Thema: *Arzttermine* · [anderes Thema]
+> Thema: *Arzttermine*
 > **Was davon trifft bei dir zu?**
 > ☐ Ich warte monatelang auf einen Facharzttermin
 > ☐ Der nächste Hausarzt ist weit weg
@@ -177,7 +175,7 @@ Nach jeder Eingabe mit Thema erscheint vor der Auflösung eine von zwei Ansichte
 > [Damit werten] · [Nichts davon passt]
 
 - Angezeigt werden in beiden Fällen alle Ursachen des Themas in der `alltag`-Fassung. Höchstens `MAX_AUSWAHL` lassen sich wählen; die Vorauswahl lässt sich ändern.
-- „anderes Thema“ zeigt die `thema_kandidaten` aus Schritt 1 und darunter die übrigen Themen; danach folgt die Ansicht ohne Vorauswahl, weil für das neue Thema kein Vorschlag der KI vorliegt.
+- Einen Wechsel zu einem anderen Thema gibt es nicht (früher „anderes Thema“): Damit ließ sich zu einem Thema springen, das gar nicht zur Schilderung passt. Passt das Thema nicht, führt „Nichts davon passt“ zur Runde ohne Wertung; die Eingabe zeigt in der Durchsicht, wo die Zuordnung danebenlag.
 - „Stimmt so“ und „Damit werten“ schicken die Auswahl wie heute über `auswahl` an `analyse` – gewertet wird ohne weiteren KI-Aufruf. In der Auflösung steht „Von dir bestätigt“ statt „Deine Worte: …“.
 - Die bestehende Auswahl nach einer Nachfrage (`UrsachenAuswahl`) geht in der Ansicht ohne Vorauswahl auf; die Nachfrage selbst entfällt im Fall „problem mit Thema“, weil diese Ansicht ihre Aufgabe übernimmt.
 

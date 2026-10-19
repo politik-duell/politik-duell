@@ -8,7 +8,7 @@ Grundprinzipien: [CLAUDE.md](CLAUDE.md); Konzept und Meilensteine: [docs/konzept
 
 - Startbildschirm mit Erklärung, Datenschutzhinweis und schwebender Wortwolke der erfassten Themen
 - Parteiwahl für Spieler:in A und B (nicht dieselbe) plus optionale Rolle
-- 5 Runden abwechselnd, Texteingabe
+- 5 Runden, Texteingabe
 - Mock-Analyse im Format der späteren Edge Function `analyse` (`problem` | `forderung` | `wert`)
   - Forderung → höchstens 2 Nachfragen nach dem Alltagsproblem
   - Wert → respektvoller Hinweis, Runde wird nicht gewertet, neues Problem möglich
