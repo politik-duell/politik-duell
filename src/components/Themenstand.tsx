@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { type ReactNode, useEffect, useState } from 'react'
 import type { Daten } from '../data/quelle'
 import {
   fortschritt,
@@ -17,7 +17,6 @@ import { BETREIBER } from '../rechtliches/betreiber'
 import { EVIDENZ_TEXT } from '../logic/forderung'
 import { Logo } from './Logo'
 import { Zusammenhaenge } from './Zusammenhaenge'
-import { parteiStil } from './stil'
 
 // Übersicht unter #/themen: welche Themen das Spiel kennt, wie weit die Programme
 // ausgewertet sind und ein paar Zahlen zum Datenbestand. Neutralität: Parteien
@@ -26,10 +25,10 @@ import { parteiStil } from './stil'
 // Bei Lösungswegen steht nur, in wie vielen Programmen sie vorkommen (ohne Namen), bei
 // Haltungen nur, wie viele Positionen erfasst sind – nicht, wie die Parteien zur Frage stehen.
 
-const ERFASSUNG: Record<Erfassung, { label: string; zeichen: string }> = {
-  massnahmen: { label: 'ausgewertet, mit Maßnahmen', zeichen: '●' },
-  keine: { label: 'ausgewertet, nichts zum Thema im Programm', zeichen: '○' },
-  offen: { label: 'noch nicht erfasst', zeichen: '–' },
+const ERFASSUNG: Record<Erfassung, { label: string; kurz: string }> = {
+  massnahmen: { label: 'ausgewertet, mit Maßnahmen', kurz: 'mit Maßnahmen' },
+  keine: { label: 'ausgewertet, nichts zum Thema im Programm', kurz: 'nichts zum Thema' },
+  offen: { label: 'noch nicht erfasst', kurz: 'noch offen' },
 }
 const REIHENFOLGE: Erfassung[] = ['massnahmen', 'keine', 'offen']
 
@@ -63,6 +62,7 @@ interface Zeile {
   id: number
   name: string
   wert: string
+  /** Leer: Zeile ohne Balken, nur Name und Wert (z. B. Stand je Partei). */
   segmente: { klasse: string; anteil: number }[]
   detail: string
   /** Aufklappbare Unterzeilen (z. B. Ursachen eines Themas). */
@@ -81,29 +81,42 @@ function Balken({ segmente }: { segmente: Zeile['segmente'] }) {
   )
 }
 
+/** Lange Listen zeigen zuerst so viele Zeilen; der Rest kommt mit „Alle … zeigen“. */
+const ANFANGS = 8
+
 /**
  * Balkendiagramm aus Zeilen: Hover, Fokus oder Tippen zeigt die Details unter dem Diagramm.
- * Zeilen mit `kinder` klappen beim Tippen ihre Unterzeilen auf.
+ * Zeilen mit `kinder` klappen beim Tippen ihre Unterzeilen auf. Lange Listen sind gekürzt.
  */
 function Balkendiagramm({
   titel,
   unterzeile,
+  steuerung,
   legende,
   zeilen,
   leer,
   klasse,
+  einheit,
 }: {
   /** Zusätzliche CSS-Klasse der Abbildung, z. B. `diagramm-prozent` für eine breitere Wertspalte. */
   klasse?: string
   titel: string
   unterzeile: string
+  /** Steht unter dem Titel, z. B. ein Umschalter der Ansicht. */
+  steuerung?: ReactNode
   legende?: { klasse: string; label: string }[]
   zeilen: Zeile[]
   leer: string
+  /** Mehrzahl für den Knopf „Alle … zeigen“, z. B. „Themen“. */
+  einheit?: string
 }) {
   const [aktiv, setAktiv] = useState<string | null>(null)
   const [offen, setOffen] = useState<ReadonlySet<number>>(new Set())
+  const [alle, setAlle] = useState(false)
   const klappbar = zeilen.some((z) => z.kinder?.length)
+  // Erst ab ein paar Zeilen mehr kürzen, sonst spart der Knopf nichts.
+  const kuerzbar = zeilen.length > ANFANGS + 2
+  const sichtbar = kuerzbar && !alle ? zeilen.slice(0, ANFANGS) : zeilen
   const schluessel = (z: Zeile, eltern?: number) => (eltern === undefined ? `${z.id}` : `${eltern}/${z.id}`)
   const detail = [
     ...zeilen.map((z) => [schluessel(z), z.detail]),
@@ -123,7 +136,7 @@ function Balkendiagramm({
     return (
       <button
         type="button"
-        className={`balken-zeile${aktiv === s ? ' aktiv' : ''}${eltern !== undefined ? ' balken-kind' : ''}`}
+        className={`balken-zeile${aktiv === s ? ' aktiv' : ''}${eltern !== undefined ? ' balken-kind' : ''}${z.segmente.length ? '' : ' ohne-balken'}`}
         aria-label={z.detail}
         aria-expanded={kinder ? offen.has(z.id) : undefined}
         onMouseEnter={() => setAktiv(s)}
@@ -142,7 +155,7 @@ function Balkendiagramm({
           )}
           {z.name}
         </span>
-        <Balken segmente={z.segmente} />
+        {z.segmente.length > 0 && <Balken segmente={z.segmente} />}
         <span className="balken-wert" aria-hidden="true">
           {z.wert}
         </span>
@@ -156,6 +169,7 @@ function Balkendiagramm({
         <strong>{titel}</strong>
         <span>{unterzeile}</span>
       </figcaption>
+      {steuerung}
       {legende && <Legende eintraege={legende} />}
       {klappbar && (
         <p className="diagramm-steuerung">
@@ -168,7 +182,7 @@ function Balkendiagramm({
         </p>
       )}
       <ul className="balken" onMouseLeave={() => setAktiv(null)}>
-        {zeilen.map((z) => (
+        {sichtbar.map((z) => (
           <li key={z.id}>
             {knopf(z)}
             {z.kinder && offen.has(z.id) && (
@@ -181,6 +195,13 @@ function Balkendiagramm({
           </li>
         ))}
       </ul>
+      {kuerzbar && (
+        <p className="diagramm-mehr">
+          <button type="button" className="knopf-link" aria-expanded={alle} onClick={() => setAlle((a) => !a)}>
+            {alle ? 'Weniger zeigen' : `Alle ${zahl(zeilen.length)} ${einheit ?? 'Einträge'} zeigen`}
+          </button>
+        </p>
+      )}
       <p className="diagramm-detail" aria-hidden="true">
         {detail ?? leer}
       </p>
@@ -188,196 +209,240 @@ function Balkendiagramm({
   )
 }
 
-function Fortschrittsdiagramm({ daten }: { daten: Daten }) {
+function Fortschrittsdiagramm({ daten, s }: { daten: Daten; s: Statistik }) {
   const f = fortschritt(daten)
-  const arten: { id: number; name: string; f: Fortschritt; vollstaendig: string }[] = [
-    { id: 1, name: 'Themen', f: f.themen, vollstaendig: 'alle Bundesprogramme ausgewertet' },
+  const arten: { id: number; name: string; f: Fortschritt; vollstaendig: string; zusatz?: string }[] = [
+    {
+      id: 1,
+      name: 'Themen',
+      f: f.themen,
+      vollstaendig: 'alle Bundesprogramme ausgewertet',
+      zusatz: ` Insgesamt ${zahl(s.erfasst)} von ${zahl(s.paare)} Kombinationen aus Thema und Partei ausgewertet.`,
+    },
     { id: 2, name: 'Forderungen', f: f.forderungen, vollstaendig: 'alle Programme ausgewertet' },
     { id: 3, name: 'Haltungen', f: f.haltungen, vollstaendig: 'Positionen aller Parteien erfasst' },
   ]
   const prozent = (n: number, ganz: number) => (ganz ? Math.round((n / ganz) * 100) : 0)
   return (
-    <Balkendiagramm
-      klasse="diagramm-prozent"
-      titel="Fortschritt der Erfassung"
-      unterzeile="Anteil der angelegten Themen, Forderungen (Lösungswege) und Haltungen, die für alle Parteien vollständig erfasst sind"
-      legende={[
-        { klasse: 'st-massnahmen', label: 'vollständig erfasst' },
-        { klasse: 'st-keine', label: 'teilweise erfasst' },
-        { klasse: 'st-offen', label: 'noch nicht begonnen' },
-      ]}
-      leer="Tippe auf eine Zeile für Details."
-      zeilen={arten.map(({ id, name, f, vollstaendig }) => {
-        const offen = f.gesamt - f.vollstaendig - f.begonnen
-        const anteil = (n: number) => (f.gesamt ? n / f.gesamt : 0)
-        return {
-          id,
-          name,
-          wert: `${prozent(f.vollstaendig, f.gesamt)}\u00a0%`,
-          segmente: [
-            { klasse: 'st-massnahmen', anteil: anteil(f.vollstaendig) },
-            { klasse: 'st-keine', anteil: anteil(f.begonnen) },
-            { klasse: 'st-offen', anteil: anteil(offen) },
-          ],
-          detail: f.gesamt
-            ? `${name}: ${zahl(f.vollstaendig)} von ${zahl(f.gesamt)} vollständig (${vollstaendig}), ` +
-              `${zahl(f.begonnen)} teilweise, ${zahl(offen)} noch nicht begonnen.`
-            : `${name}: noch keine angelegt.`,
-        }
-      })}
-    />
-  )
-}
-
-function Auswertungsdiagramm({ themen, parteien }: { themen: ThemaStand[]; parteien: number }) {
-  return (
-    <Balkendiagramm
-      titel="Auswertung je Thema"
-      unterzeile={`Wie viele der ${parteien} Wahlprogramme zu jedem Thema schon ausgewertet sind`}
-      legende={REIHENFOLGE.map((e) => ({ klasse: `st-${e}`, label: ERFASSUNG[e].label }))}
-      leer="Tippe auf ein Thema für Details."
-      zeilen={themen.map((t) => {
-        const erfasst = t.zaehlung.massnahmen + t.zaehlung.keine
-        return {
-          id: t.id,
-          name: t.name,
-          wert: `${erfasst}/${parteien}`,
-          segmente: REIHENFOLGE.map((e) => ({ klasse: `st-${e}`, anteil: parteien ? t.zaehlung[e] / parteien : 0 })),
-          detail:
-            `${t.name}: ${erfasst} von ${parteien} Programmen ausgewertet` +
-            (t.zaehlung.keine ? `, davon ${t.zaehlung.keine} ohne Aussage zum Thema` : '') +
-            (t.zaehlung.offen ? `; ${t.zaehlung.offen} noch nicht erfasst.` : '.'),
-        }
-      })}
-    />
-  )
-}
-
-function Massnahmendiagramm({ themen, testphase }: { themen: ThemaStand[]; testphase: boolean }) {
-  const max = Math.max(1, ...themen.map((t) => t.massnahmen + t.massnahmenEntwurf))
-  const mitEntwurf = testphase && themen.some((t) => t.massnahmenEntwurf > 0)
-  return (
-    <Balkendiagramm
-      titel="Maßnahmen je Thema"
-      unterzeile="Erfasste Maßnahmen aller Parteien zusammen; Ursachen in den Details"
-      legende={
-        mitEntwurf
-          ? [
-              { klasse: 'mn-geprueft', label: 'geprüft' },
-              { klasse: 'mn-entwurf', label: 'KI-Entwurf, ungeprüft' },
-            ]
-          : undefined
-      }
-      leer="Tippe auf ein Thema für Details."
-      zeilen={themen.map((t) => ({
-        id: t.id,
-        name: t.name,
-        wert: zahl(t.massnahmen + t.massnahmenEntwurf),
-        segmente: [
-          { klasse: 'mn-geprueft', anteil: t.massnahmen / max },
-          { klasse: 'mn-entwurf', anteil: t.massnahmenEntwurf / max },
-        ],
-        detail:
-          `${t.name}: ${zahl(t.ursachen)} ${t.ursachen === 1 ? 'Ursache' : 'Ursachen'}, ` +
-          `${zahl(t.massnahmen + t.massnahmenEntwurf)} Maßnahmen` +
-          (t.massnahmenEntwurf ? ` (davon ${zahl(t.massnahmenEntwurf)} KI-Entwurf)` : '') +
-          '.',
-      }))}
-    />
+    <>
+      <Balkendiagramm
+        klasse="diagramm-prozent"
+        titel="Fortschritt der Erfassung"
+        unterzeile="Anteil der angelegten Themen, Forderungen (Lösungswege) und Haltungen, die für alle Parteien vollständig erfasst sind"
+        legende={[
+          { klasse: 'st-massnahmen', label: 'vollständig erfasst' },
+          { klasse: 'st-keine', label: 'teilweise erfasst' },
+          { klasse: 'st-offen', label: 'noch nicht begonnen' },
+        ]}
+        leer="Tippe auf eine Zeile für Details."
+        zeilen={arten.map(({ id, name, f, vollstaendig, zusatz }) => {
+          const offen = f.gesamt - f.vollstaendig - f.begonnen
+          const anteil = (n: number) => (f.gesamt ? n / f.gesamt : 0)
+          return {
+            id,
+            name,
+            wert: `${prozent(f.vollstaendig, f.gesamt)}\u00a0%`,
+            segmente: [
+              { klasse: 'st-massnahmen', anteil: anteil(f.vollstaendig) },
+              { klasse: 'st-keine', anteil: anteil(f.begonnen) },
+              { klasse: 'st-offen', anteil: anteil(offen) },
+            ],
+            detail: f.gesamt
+              ? `${name}: ${zahl(f.vollstaendig)} von ${zahl(f.gesamt)} vollständig (${vollstaendig}), ` +
+                `${zahl(f.begonnen)} teilweise, ${zahl(offen)} noch nicht begonnen.${zusatz ?? ''}`
+              : `${name}: noch keine angelegt.`,
+          }
+        })}
+      />
+      <p className="meta">
+        Grundlage: {zahl(s.parteien)} Bundesprogramme
+        {s.landesprogramme > 0 && (
+          <>
+            {' '}
+            und {zahl(s.landesprogramme)} Landesprogramme in {zahl(s.laender)} {s.laender === 1 ? 'Land' : 'Ländern'}
+          </>
+        )}
+        {s.stand && <> · Stand {datum(s.stand)}</>}
+      </p>
+    </>
   )
 }
 
 const kurz = (text: string, max = 60) => (text.length > max ? `${text.slice(0, max - 1).trimEnd()}…` : text)
 
-function Ursachendiagramm({ themen, testphase }: { themen: ThemaStand[]; testphase: boolean }) {
+/** Was das Themendiagramm je Thema zeigt. */
+type Ansicht = 'auswertung' | 'ursachen' | 'wege'
+const ANSICHTEN: { id: Ansicht; label: string }[] = [
+  { id: 'auswertung', label: 'Auswertung' },
+  { id: 'ursachen', label: 'Ursachen' },
+  { id: 'wege', label: 'Lösungswege' },
+]
+
+/** Inhalt des Themendiagramms in einer Ansicht. */
+interface Sicht {
+  unterzeile: string
+  legende: { klasse: string; label: string }[]
+  leer: string
+  zeilen: Zeile[]
+}
+
+/** Wie weit die Programme zu jedem Thema ausgewertet sind; aufklappen zeigt den Stand je Partei. */
+function auswertungSicht(daten: Daten, themen: ThemaStand[]): Sicht {
+  const parteien = daten.parteien.length
+  const name = new Map(daten.parteien.map((p) => [p.id, p.kurzname]))
+  return {
+    unterzeile: `Wie viele der ${parteien} Bundesprogramme zu jedem Thema schon ausgewertet sind; aufklappen zeigt den Stand je Partei (in fester Reihenfolge)`,
+    legende: REIHENFOLGE.map((e) => ({ klasse: `st-${e}`, label: ERFASSUNG[e].label })),
+    leer: 'Tippe auf ein Thema, um den Stand je Partei aufzuklappen.',
+    zeilen: themen.map((t) => {
+      const erfasst = t.zaehlung.massnahmen + t.zaehlung.keine
+      return {
+        id: t.id,
+        name: t.name,
+        wert: `${erfasst}/${parteien}`,
+        segmente: REIHENFOLGE.map((e) => ({ klasse: `st-${e}`, anteil: parteien ? t.zaehlung[e] / parteien : 0 })),
+        detail:
+          `${t.name}: ${erfasst} von ${parteien} Programmen ausgewertet` +
+          (t.zaehlung.keine ? `, davon ${t.zaehlung.keine} ohne Aussage zum Thema` : '') +
+          (t.zaehlung.offen ? `; ${t.zaehlung.offen} noch nicht erfasst.` : '.'),
+        kinder: t.parteien.map((p) => ({
+          id: p.partei_id,
+          name: name.get(p.partei_id) ?? '',
+          wert: `${ERFASSUNG[p.stand].kurz}${p.ki_entwurf ? ' · KI\u2011Entwurf' : ''}`,
+          segmente: [],
+          detail: `${name.get(p.partei_id)}: ${ERFASSUNG[p.stand].label}${p.ki_entwurf ? ' (KI-Entwurf)' : ''}.`,
+        })),
+      }
+    }),
+  }
+}
+
+/** Belegte Ursachen je Thema; aufklappen zeigt die Maßnahmen je Ursache (alle Parteien zusammen). */
+function ursachenSicht(themen: ThemaStand[], testphase: boolean): Sicht {
   const maxUrsachen = Math.max(1, ...themen.map((t) => t.ursachen))
   const maxMassnahmen = Math.max(1, ...themen.flatMap((t) => t.ursachenStand.map((u) => u.massnahmen + u.massnahmenEntwurf)))
   const mitEntwurf = testphase && themen.some((t) => t.massnahmenEntwurf > 0)
-  return (
-    <Balkendiagramm
-      titel="Ursachen je Thema"
-      unterzeile="Belegte Ursachen und ob schon Maßnahmen an ihnen ansetzen; aufklappen zeigt die Maßnahmen je Ursache (alle Parteien zusammen)"
-      legende={[
-        { klasse: 'ur-mit', label: 'Ursache mit Maßnahmen' },
-        { klasse: 'ur-ohne', label: 'noch ohne Maßnahme' },
-        ...(mitEntwurf ? [{ klasse: 'mn-entwurf', label: 'Maßnahmen als KI-Entwurf' }] : []),
-      ]}
-      leer="Tippe auf ein Thema, um seine Ursachen aufzuklappen."
-      zeilen={themen.map((t) => {
-        const mit = t.ursachen - t.ursachenOhneMassnahme
-        return {
-          id: t.id,
-          name: t.name,
-          wert: zahl(t.ursachen),
-          segmente: [
-            { klasse: 'ur-mit', anteil: mit / maxUrsachen },
-            { klasse: 'ur-ohne', anteil: t.ursachenOhneMassnahme / maxUrsachen },
-          ],
-          detail:
-            `${t.name}: ${zahl(t.ursachen)} ${t.ursachen === 1 ? 'Ursache' : 'Ursachen'}` +
-            (t.ursachenOhneMassnahme ? `, davon ${zahl(t.ursachenOhneMassnahme)} noch ohne Maßnahme.` : ', an allen setzen Maßnahmen an.'),
-          kinder: t.ursachenStand.map((u) => {
-            const summe = u.massnahmen + u.massnahmenEntwurf
-            return {
-              id: u.id,
-              name: kurz(u.beschreibung),
-              wert: zahl(summe),
-              segmente: [
-                { klasse: 'mn-geprueft', anteil: u.massnahmen / maxMassnahmen },
-                { klasse: 'mn-entwurf', anteil: u.massnahmenEntwurf / maxMassnahmen },
-              ],
-              detail:
-                `${u.beschreibung} (${u.ebene === 'land' ? 'Länderzuständigkeit' : 'Bund'}): ` +
-                (summe
-                  ? `${zahl(summe)} ${summe === 1 ? 'Maßnahme setzt' : 'Maßnahmen setzen'} hier an` +
-                    (u.massnahmenEntwurf ? ` (davon ${zahl(u.massnahmenEntwurf)} KI-Entwurf).` : '.')
-                  : 'noch keine Maßnahme erfasst.'),
-            }
-          }),
-        }
-      })}
-    />
-  )
+  return {
+    unterzeile:
+      'Belegte Ursachen und ob schon Maßnahmen an ihnen ansetzen; aufklappen zeigt die Maßnahmen je Ursache (alle Parteien zusammen)',
+    legende: [
+      { klasse: 'ur-mit', label: 'Ursache mit Maßnahmen' },
+      { klasse: 'ur-ohne', label: 'noch ohne Maßnahme' },
+      ...(mitEntwurf ? [{ klasse: 'mn-entwurf', label: 'Maßnahmen als KI-Entwurf' }] : []),
+    ],
+    leer: 'Tippe auf ein Thema, um seine Ursachen aufzuklappen.',
+    zeilen: themen.map((t) => {
+      const mit = t.ursachen - t.ursachenOhneMassnahme
+      const massnahmen = t.massnahmen + t.massnahmenEntwurf
+      return {
+        id: t.id,
+        name: t.name,
+        wert: zahl(t.ursachen),
+        segmente: [
+          { klasse: 'ur-mit', anteil: mit / maxUrsachen },
+          { klasse: 'ur-ohne', anteil: t.ursachenOhneMassnahme / maxUrsachen },
+        ],
+        detail:
+          `${t.name}: ${zahl(t.ursachen)} ${t.ursachen === 1 ? 'Ursache' : 'Ursachen'}` +
+          (t.ursachenOhneMassnahme ? `, davon ${zahl(t.ursachenOhneMassnahme)} noch ohne Maßnahme` : ', an allen setzen Maßnahmen an') +
+          `; ${zahl(massnahmen)} ${massnahmen === 1 ? 'Maßnahme' : 'Maßnahmen'}` +
+          (t.massnahmenEntwurf ? ` (davon ${zahl(t.massnahmenEntwurf)} KI-Entwurf).` : '.'),
+        kinder: t.ursachenStand.map((u) => {
+          const summe = u.massnahmen + u.massnahmenEntwurf
+          return {
+            id: u.id,
+            name: kurz(u.beschreibung),
+            wert: zahl(summe),
+            segmente: [
+              { klasse: 'mn-geprueft', anteil: u.massnahmen / maxMassnahmen },
+              { klasse: 'mn-entwurf', anteil: u.massnahmenEntwurf / maxMassnahmen },
+            ],
+            detail:
+              `${u.beschreibung} (${u.ebene === 'land' ? 'Länderzuständigkeit' : 'Bund'}): ` +
+              (summe
+                ? `${zahl(summe)} ${summe === 1 ? 'Maßnahme setzt' : 'Maßnahmen setzen'} hier an` +
+                  (u.massnahmenEntwurf ? ` (davon ${zahl(u.massnahmenEntwurf)} KI-Entwurf).` : '.')
+                : 'noch keine Maßnahme erfasst.'),
+          }
+        }),
+      }
+    }),
+  }
 }
 
-function Loesungswegdiagramm({ themen, parteien }: { themen: ThemaInstrumente[]; parteien: number }) {
+/** Lösungswege je Thema (Grundlage der Forderungskarte); aufklappen zeigt, in wie vielen Programmen jeder steht. */
+function wegeSicht(themen: ThemaInstrumente[], parteien: number): Sicht {
   const max = Math.max(1, ...themen.map((t) => t.instrumente.length))
+  return {
+    unterzeile: 'Grundlage der Forderungskarte; aufklappen zeigt je Lösungsweg, in den Programmen wie vieler Parteien er steht',
+    legende: [
+      { klasse: 'fd-mehrere', label: 'in Programmen mehrerer Parteien' },
+      { klasse: 'fd-eine', label: 'im Programm einer Partei' },
+    ],
+    leer: 'Tippe auf ein Thema, um seine Lösungswege aufzuklappen.',
+    zeilen: themen.map((t) => {
+      const n = t.instrumente.length
+      return {
+        id: t.id,
+        name: t.name,
+        wert: zahl(n),
+        segmente: [
+          { klasse: 'fd-mehrere', anteil: t.mehrere / max },
+          { klasse: 'fd-eine', anteil: (n - t.mehrere) / max },
+        ],
+        detail: n
+          ? `${t.name}: ${zahl(n)} ${n === 1 ? 'Lösungsweg' : 'Lösungswege'}, davon ${zahl(t.mehrere)} in Programmen mehrerer Parteien.`
+          : `${t.name}: noch keine Lösungswege erfasst.`,
+        kinder: t.instrumente.map((i) => ({
+          id: i.id,
+          name: kurz(i.name),
+          wert: `${i.parteien}/${parteien}`,
+          segmente: [{ klasse: i.parteien > 1 ? 'fd-mehrere' : 'fd-eine', anteil: parteien ? i.parteien / parteien : 0 }],
+          detail:
+            `${i.name} (${i.ebene === 'land' ? 'Landesprogramme' : 'Bundesprogramme'}${i.ki_entwurf ? ', KI-Entwurf' : ''}): ` +
+            (i.massnahmen
+              ? `${zahl(i.massnahmen)} ${i.massnahmen === 1 ? 'Maßnahme' : 'Maßnahmen'} aus den Programmen von ${zahl(i.parteien)} ${i.parteien === 1 ? 'Partei' : 'Parteien'}`
+              : 'noch keine Maßnahme zugeordnet') +
+            (i.evidenz ? `. ${EVIDENZ_TEXT[i.evidenz]}.` : '.'),
+        })),
+      }
+    }),
+  }
+}
+
+/**
+ * Ein Diagramm für alle Zahlen je Thema: Der Umschalter wählt Auswertung, Ursachen oder
+ * Lösungswege; aufgeklappte Themen und die Länge der Liste bleiben beim Umschalten erhalten.
+ */
+function Themendiagramm({ daten, themen, testphase }: { daten: Daten; themen: ThemaStand[]; testphase: boolean }) {
+  const [ansicht, setAnsicht] = useState<Ansicht>('auswertung')
+  const sicht =
+    ansicht === 'auswertung'
+      ? auswertungSicht(daten, themen)
+      : ansicht === 'ursachen'
+        ? ursachenSicht(themen, testphase)
+        : wegeSicht(instrumentStand(daten), daten.parteien.length)
   return (
     <Balkendiagramm
-      titel="Lösungswege je Thema"
-      unterzeile="Grundlage der Forderungskarte; aufklappen zeigt je Lösungsweg, in den Programmen wie vieler Parteien er steht"
-      legende={[
-        { klasse: 'fd-mehrere', label: 'in Programmen mehrerer Parteien' },
-        { klasse: 'fd-eine', label: 'im Programm einer Partei' },
-      ]}
-      leer="Tippe auf ein Thema, um seine Lösungswege aufzuklappen."
-      zeilen={themen.map((t) => {
-        const n = t.instrumente.length
-        return {
-          id: t.id,
-          name: t.name,
-          wert: zahl(n),
-          segmente: [
-            { klasse: 'fd-mehrere', anteil: t.mehrere / max },
-            { klasse: 'fd-eine', anteil: (n - t.mehrere) / max },
-          ],
-          detail: n
-            ? `${t.name}: ${zahl(n)} ${n === 1 ? 'Lösungsweg' : 'Lösungswege'}, davon ${zahl(t.mehrere)} in Programmen mehrerer Parteien.`
-            : `${t.name}: noch keine Lösungswege erfasst.`,
-          kinder: t.instrumente.map((i) => ({
-            id: i.id,
-            name: kurz(i.name),
-            wert: `${i.parteien}/${parteien}`,
-            segmente: [{ klasse: i.parteien > 1 ? 'fd-mehrere' : 'fd-eine', anteil: parteien ? i.parteien / parteien : 0 }],
-            detail:
-              `${i.name} (${i.ebene === 'land' ? 'Landesprogramme' : 'Bundesprogramme'}${i.ki_entwurf ? ', KI-Entwurf' : ''}): ` +
-              (i.massnahmen
-                ? `${zahl(i.massnahmen)} ${i.massnahmen === 1 ? 'Maßnahme' : 'Maßnahmen'} aus den Programmen von ${zahl(i.parteien)} ${i.parteien === 1 ? 'Partei' : 'Parteien'}`
-                : 'noch keine Maßnahme zugeordnet') +
-              (i.evidenz ? `. ${EVIDENZ_TEXT[i.evidenz]}.` : '.'),
-          })),
-        }
-      })}
+      titel="Zahlen je Thema"
+      einheit="Themen"
+      steuerung={
+        <div className="strang-wahl" role="radiogroup" aria-label="Was das Diagramm je Thema zeigt">
+          {ANSICHTEN.map((a) => (
+            <button
+              key={a.id}
+              type="button"
+              role="radio"
+              aria-checked={ansicht === a.id}
+              className={ansicht === a.id ? 'aktiv' : undefined}
+              onClick={() => setAnsicht(a.id)}
+            >
+              {a.label}
+            </button>
+          ))}
+        </div>
+      }
+      {...sicht}
     />
   )
 }
@@ -387,6 +452,7 @@ function Haltungsdiagramm({ haltungen }: { haltungen: HaltungStand[] }) {
   return (
     <Balkendiagramm
       titel="Positionen je Haltung"
+      einheit="Haltungen"
       unterzeile="Eine Haltungskarte gibt es erst, wenn die Positionen aller Parteien erfasst sind („Alle oder keine“); ✓ = im Spiel"
       legende={[
         { klasse: 'st-massnahmen', label: 'Position erfasst' },
@@ -451,7 +517,7 @@ function Strang({
 }
 
 function Aufbau({ s, testphase }: { s: Statistik; testphase: boolean }) {
-  const entwurf = (n: number) => (testphase && n ? `, davon ${zahl(n)} KI-Entwurf` : '')
+  const entwurf = (n: number) => (testphase && n ? `, davon ${zahl(n)} KI\u2011Entwurf` : '')
   const massnahmen = s.massnahmen + s.massnahmenEntwurf
   const mitWeg = s.massnahmenMitInstrument + s.massnahmenMitInstrumentEntwurf
   const positionen = s.positionen + s.positionenEntwurf
@@ -507,61 +573,6 @@ function Aufbau({ s, testphase }: { s: Statistik; testphase: boolean }) {
   )
 }
 
-function Tabelle({ daten, themen }: { daten: Daten; themen: ThemaStand[] }) {
-  const mitEntwurf = themen.some((t) => t.parteien.some((p) => p.ki_entwurf))
-  return (
-    <>
-      <div className="stand-tabelle-rahmen" tabIndex={0} role="region" aria-label="Tabelle: Auswertung je Thema und Partei">
-        <table className="stand-tabelle">
-          <caption className="sr-only">Auswertung der Bundesprogramme je Thema und Partei</caption>
-          <thead>
-            <tr>
-              <th scope="col">Thema</th>
-              <th scope="col" className="zahl">
-                Ursachen
-              </th>
-              {daten.parteien.map((p) => (
-                <th key={p.id} scope="col" style={parteiStil(p.farbe)} title={p.name}>
-                  <span className="partei-punkt" aria-hidden="true" />
-                  {p.kurzname}
-                </th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {themen.map((t) => (
-              <tr key={t.id}>
-                <th scope="row">{t.name}</th>
-                <td className="zahl">{zahl(t.ursachen)}</td>
-                {t.parteien.map((p) => (
-                  <td key={p.partei_id} className={`st-zelle st-zelle-${p.stand}`} title={ERFASSUNG[p.stand].label}>
-                    <span aria-hidden="true">
-                      {ERFASSUNG[p.stand].zeichen}
-                      {p.ki_entwurf && '*'}
-                    </span>
-                    <span className="sr-only">
-                      {ERFASSUNG[p.stand].label}
-                      {p.ki_entwurf && ' (KI-Entwurf)'}
-                    </span>
-                  </td>
-                ))}
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-      <p className="meta stand-zeichen">
-        {REIHENFOLGE.map((e) => (
-          <span key={e}>
-            <span aria-hidden="true">{ERFASSUNG[e].zeichen}</span> {ERFASSUNG[e].label}
-          </span>
-        ))}
-        {mitEntwurf && <span>* nur als KI-Entwurf ausgewertet</span>}
-      </p>
-    </>
-  )
-}
-
 export function Themenstand({
   daten,
   ladeFehler,
@@ -608,13 +619,22 @@ export function Themenstand({
   )
 }
 
+/** Der Graph ist groß und rechenintensiv: Er entsteht erst beim Aufklappen. */
+function ZusammenhaengeAufklappbar({ daten }: { daten: Daten }) {
+  const [offen, setOffen] = useState(false)
+  return (
+    <details className="stand-aufklapper" onToggle={(e) => setOffen(e.currentTarget.open)}>
+      <summary>Netz aus Themen, Ursachen, Lösungswegen und Haltungen anzeigen</summary>
+      {offen && <Zusammenhaenge daten={daten} />}
+    </details>
+  )
+}
+
 function Inhalt({ daten }: { daten: Daten }) {
   const s = statistik(daten)
   const themen = themenStand(daten)
-  const wege = instrumentStand(daten)
   const haltungen = haltungStand(daten)
   const testphase = !!daten.testphase
-  const anteil = s.paare ? Math.round((s.erfasst / s.paare) * 100) : 0
   return (
     <>
       {testphase && (
@@ -630,56 +650,18 @@ function Inhalt({ daten }: { daten: Daten }) {
         einen eigenen Teil der Daten. Nur Probleme werden mit Punkten gewertet.
       </p>
       <Aufbau s={s} testphase={testphase} />
-      <Fortschrittsdiagramm daten={daten} />
-      <h2>Programme</h2>
-      <div className="kacheln">
-        <Kachel label="Parteien" wert={zahl(s.parteien)} zusatz="Bundesprogramme" />
-        {s.landesprogramme > 0 && (
-          <Kachel
-            label="Landesprogramme"
-            wert={zahl(s.landesprogramme)}
-            zusatz={`in ${s.laender} ${s.laender === 1 ? 'Land' : 'Ländern'}`}
-          />
-        )}
-      </div>
-      <div className="fortschritt">
-        <div className="fortschritt-kopf">
-          <span>Bundesprogramme ausgewertet</span>
-          <strong>{anteil} %</strong>
-        </div>
-        <div
-          className="fortschritt-spur"
-          role="meter"
-          aria-valuemin={0}
-          aria-valuemax={s.paare}
-          aria-valuenow={s.erfasst}
-          aria-label="Bundesprogramme ausgewertet"
-        >
-          <span className="fortschritt-fuellung" style={{ width: `${anteil}%` }} />
-        </div>
-        <p className="meta">
-          {zahl(s.erfasst)} von {zahl(s.paare)} Kombinationen aus Thema und Partei
-          {s.stand && <> · Stand {datum(s.stand)}</>}
-        </p>
-      </div>
+      <h2>Stand der Erfassung</h2>
+      <Fortschrittsdiagramm daten={daten} s={s} />
 
       <h2>Themen</h2>
-      {themen.length ? (
+      {themen.length ? <Themendiagramm daten={daten} themen={themen} testphase={testphase} /> : <p>Noch keine Themen erfasst.</p>}
+      <h2>Haltungen</h2>
+      {haltungen.length ? <Haltungsdiagramm haltungen={haltungen} /> : <p>Noch keine Haltungen erfasst.</p>}
+      {themen.length > 0 && (
         <>
-          <Auswertungsdiagramm themen={themen} parteien={s.parteien} />
-          <Massnahmendiagramm themen={themen} testphase={testphase} />
-          <Ursachendiagramm themen={themen} testphase={testphase} />
-          <h2>Forderungen</h2>
-          <Loesungswegdiagramm themen={wege} parteien={s.parteien} />
-          <h2>Haltungen</h2>
-          {haltungen.length ? <Haltungsdiagramm haltungen={haltungen} /> : <p>Noch keine Haltungen erfasst.</p>}
           <h2>Zusammenhänge</h2>
-          <Zusammenhaenge daten={daten} />
-          <h2>Je Thema und Partei</h2>
-          <Tabelle daten={daten} themen={themen} />
+          <ZusammenhaengeAufklappbar daten={daten} />
         </>
-      ) : (
-        <p>Noch keine Themen erfasst.</p>
       )}
 
       <h2>Dein Thema fehlt?</h2>

@@ -1913,11 +1913,6 @@ textarea {
   padding: 0 20px 12px;
   font-weight: 700;
 }
-.kacheln {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr));
-  gap: 10px;
-}
 .kachel {
   display: flex;
   flex-direction: column;
@@ -1939,35 +1934,6 @@ textarea {
 .kachel-zusatz {
   font-size: 0.8rem;
   color: var(--text-leise);
-}
-.fortschritt {
-  margin-top: 14px;
-  padding: 12px 14px;
-  background: var(--flaeche);
-  border: 1px solid var(--linie);
-  border-radius: 10px;
-}
-.fortschritt-kopf {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-}
-.fortschritt-spur {
-  height: 10px;
-  margin: 8px 0 6px;
-  border-radius: 5px;
-  background: var(--flaeche-2);
-  overflow: hidden;
-}
-.fortschritt-fuellung {
-  display: block;
-  height: 100%;
-  border-radius: 0 5px 5px 0;
-  background: var(--st-massnahmen);
-}
-.fortschritt .meta {
-  margin: 0;
-  font-size: 0.85rem;
 }
 .diagramm {
   margin: 0 0 14px;
@@ -2054,7 +2020,8 @@ textarea {
 }
 .balken-name {
   font-size: 0.88rem;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
+  hyphens: auto;
   line-height: 1.25;
 }
 /* Balken: 14px dick, 2px Flächenlücke zwischen Teilen, rundes Ende nur außen. */
@@ -2074,6 +2041,10 @@ textarea {
 .diagramm-prozent .balken-zeile {
   grid-template-columns: minmax(5.5rem, 34%) 1fr 3.2rem;
 }
+/* Zeile ohne Balken (Stand je Partei): Name links, Stand als Text rechts */
+.balken-zeile.ohne-balken {
+  grid-template-columns: minmax(3.5rem, 1fr) auto;
+}
 .balken-wert {
   font-size: 0.85rem;
   font-variant-numeric: tabular-nums;
@@ -2086,72 +2057,12 @@ textarea {
   font-size: 0.85rem;
   color: var(--text-leise);
 }
-.stand-tabelle-rahmen {
-  /* relative: hält die absolut positionierten Screenreader-Texte im Scrollbereich */
-  position: relative;
-  overflow-x: auto;
-  background: var(--flaeche);
-  border: 1px solid var(--linie);
-  border-radius: 10px;
-}
-.stand-tabelle {
-  width: 100%;
-  border-collapse: collapse;
+.diagramm-mehr {
+  margin: 6px 0 0;
   font-size: 0.85rem;
 }
-.stand-tabelle th,
-.stand-tabelle td {
-  padding: 6px 8px;
-  border-bottom: 1px solid var(--linie);
-  text-align: center;
-  white-space: nowrap;
-}
-.stand-tabelle tbody tr:last-child > * {
-  border-bottom: 0;
-}
-.stand-tabelle th[scope='row'],
-.stand-tabelle thead th:first-child {
-  text-align: left;
-  font-weight: 700;
-  white-space: normal;
-  min-width: 7rem;
-  /* Themenspalte bleibt beim seitlichen Scrollen stehen */
-  position: sticky;
-  left: 0;
-  z-index: 1;
-  background: var(--flaeche);
-}
-.stand-tabelle .zahl {
-  text-align: right;
-  font-variant-numeric: tabular-nums;
-}
-.partei-punkt {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  margin-right: 4px;
-  border-radius: 50%;
-  background: var(--partei);
-  box-shadow: 0 0 0 1px var(--partei-linie);
-  vertical-align: 1px;
-}
-.st-zelle-massnahmen {
-  color: var(--st-massnahmen);
-}
-.st-zelle-keine {
-  color: var(--st-massnahmen);
-}
-.st-zelle-offen {
-  color: var(--text-leise);
-}
-.stand-zeichen {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px 16px;
-  font-size: 0.8rem;
-}
 
-/* Aufklappbare Balken (Ursachen je Thema) */
+/* Aufklappbare Balken (Ursachen, Lösungswege, Stand je Partei) */
 .diagramm-steuerung {
   display: flex;
   flex-wrap: wrap;
@@ -2198,6 +2109,49 @@ textarea {
 }
 .ur-ohne {
   background: var(--st-keine);
+}
+/* Schmale Bildschirme: Name über dem Balken statt daneben, sonst bricht er mitten im Wort. */
+@media (max-width: 640px) {
+  .balken-zeile {
+    grid-template-columns: 1fr 2.6rem;
+    row-gap: 2px;
+    padding: 4px;
+  }
+  .diagramm-prozent .balken-zeile {
+    grid-template-columns: 1fr 3.2rem;
+  }
+  .balken-name {
+    grid-column: 1 / -1;
+  }
+  .balken-zeile.ohne-balken .balken-name {
+    grid-column: auto;
+  }
+}
+
+/* Zusammenhangsgraph: eingeklappt, entsteht erst beim Öffnen */
+.stand-aufklapper {
+  margin: 0 0 14px;
+  background: var(--flaeche);
+  border: 1px solid var(--linie);
+  border-radius: 10px;
+}
+.stand-aufklapper summary {
+  min-height: 44px;
+  padding: 12px 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.stand-aufklapper summary:focus-visible {
+  outline: 2px solid var(--fokus);
+  outline-offset: -2px;
+  border-radius: 10px;
+}
+.stand-aufklapper[open] summary {
+  border-bottom: 1px solid var(--linie);
+}
+.stand-aufklapper > .diagramm {
+  margin: 0;
+  border: 0;
 }
 
 /* Zusammenhangsgraph: Themen dunkel, Ursachen blau (Länder hell mit Rand),
@@ -2390,7 +2344,7 @@ textarea {
 }
 .strang-kette {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr)) minmax(0, 0.8fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr)) minmax(9rem, 0.8fr);
   gap: 22px;
   margin: 0;
   padding: 0;
@@ -2426,25 +2380,32 @@ textarea {
   font-weight: 700;
   text-align: center;
 }
+/* Schmale Bildschirme: jeder Strang als kompakte Liste – Zahl links, Bezeichnung und Zusatz rechts,
+   eine Linie verbindet die Glieder bis zum Ergebnis. */
 @media (max-width: 640px) {
+  .strang {
+    padding: 10px 12px 12px;
+  }
+  .strang-kopf {
+    margin-bottom: 6px;
+  }
   .strang-kette {
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 0;
   }
   .strang-kette > li + li::before {
-    content: '↓';
-    left: 50%;
-    top: -16px;
-    transform: translateX(-50%);
-    font-size: 0.85rem;
+    content: none;
   }
   .strang-kette .kachel {
     display: grid;
-    grid-template-columns: 3.6rem 1fr;
+    grid-template-columns: 4.2rem 1fr;
     grid-template-areas: 'wert label' 'wert zusatz';
     align-items: center;
-    column-gap: 10px;
-    padding: 8px 12px;
+    column-gap: 12px;
+    padding: 4px 0;
+    background: none;
+    border: 0;
+    border-radius: 0;
   }
   .strang-kette .kachel-label {
     grid-area: label;
@@ -2453,14 +2414,27 @@ textarea {
   }
   .strang-kette .kachel-wert {
     grid-area: wert;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: right;
+    white-space: nowrap;
   }
   .strang-kette .kachel-zusatz {
     grid-area: zusatz;
+    line-height: 1.3;
   }
   .strang-ergebnis span {
-    padding: 6px;
+    display: block;
+    margin-top: 4px;
+    padding: 6px 0 0 calc(4.2rem + 12px);
+    border: 0;
+    border-top: 1px solid var(--linie);
+    border-radius: 0;
+    text-align: left;
+  }
+  .strang-ergebnis span::before {
+    content: '→';
+    margin-right: 6px;
+    color: var(--text-leise);
   }
 }
 
@@ -2495,6 +2469,18 @@ textarea {
 .strang-wahl button:focus-visible {
   outline: 2px solid var(--fokus);
   outline-offset: -3px;
+}
+@media (max-width: 640px) {
+  /* Umschalter in einer Zeile über die volle Breite */
+  .strang-wahl {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .strang-wahl button {
+    flex: 1 1 auto;
+    padding: 6px 8px;
+    font-size: 0.85rem;
+  }
 }
 
 .g-instrument circle {
