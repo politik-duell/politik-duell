@@ -18,16 +18,17 @@ const FUND_TEXT: Record<Fund, (ebene: 'bund' | 'land') => string> = {
  */
 export function ForderungsKarte({
   instrumentId,
-  land,
+  laender,
   titel = 'Wer fordert das?',
 }: {
   instrumentId: number
-  land: string | null
+  /** Bundesländer der beiden Seiten (je eins oder keins). */
+  laender: (string | null)[]
   titel?: string
 }) {
   const daten = useDaten()
   const landName = useLandName()
-  const karte = forderungskarte(daten, instrumentId, land)
+  const karte = forderungskarte(daten, instrumentId, laender)
   if (!karte) return null
   const { instrument } = karte
   const blockTitel = (b: Fundblock) => (b.land ? `Landeswahlprogramme ${landName(b.land)}` : 'Bundeswahlprogramme')

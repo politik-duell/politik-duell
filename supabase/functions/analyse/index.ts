@@ -34,7 +34,7 @@ import type {
   Massnahme,
   Nachricht,
   Partei,
-  Rolle,
+  Seite,
   Thema,
   Ursache,
 } from '../_shared/typen.ts'
@@ -124,14 +124,14 @@ Deno.serve(async (req) => {
       antwort = antwortAusAuswahl(anfrage.auswahl, themen, ursachen)
     } else {
       const haltungen = await vollstaendigeHaltungen(testphase)
-      antwort = (await ordneEin(frageMistral, anfrage.verlauf, anfrage.rolle, { themen, ursachen, parteien, haltungen })).antwort
+      antwort = (await ordneEin(frageMistral, anfrage.verlauf, anfrage.seiten.map((s) => s.rolle), { themen, ursachen, parteien, haltungen })).antwort
     }
 
     // Forderung mit erkanntem Thema: ein zweiter, kurzer Aufruf nur mit den Instrumenten dieses Themas.
     // Er zählt nicht extra für das Rate-Limit; scheitert er, bleibt es bei der Forderung ohne Karte.
     if (antwort.typ === 'forderung' && !antwort.pauschal && antwort.thema_id !== null) {
       const thema = themen.find((t) => t.id === antwort.thema_id)
-      if (thema) antwort = mitInstrument(antwort, await erkenneInstrument(thema, anfrage.verlauf, anfrage.land, testphase))
+      if (thema) antwort = mitInstrument(antwort, await erkenneInstrument(thema, anfrage.verlauf, anfrage.seiten.map((s) => s.land), testphase))
     }
 
     // Abgeschlossene Runde anonym speichern (nur die neutrale Zusammenfassung). Mit Nachfrage ist sie nicht
@@ -141,7 +141,7 @@ Deno.serve(async (req) => {
     if (!antwort.nachfrage && !vorschlag) {
       // Der Originaltext wird geprüft; gespeichert wird er nur bei Runden ohne Wertung (review_eingaben, 30 Tage).
       const original = anfrage.verlauf.filter((n) => n.von === 'spieler').map((n) => n.text)
-      await speichereRunde(antwort, anfrage.parteien, anfrage.rolle, anfrage.land, testphase, original, parteien, ursachen)
+      await speichereRunde(antwort, anfrage.parteien, anfrage.seiten, testphase, original, parteien, ursachen)
     }
 
     return json(antwort)
@@ -159,7 +159,7 @@ Deno.serve(async (req) => {
 async function erkenneInstrument(
   thema: Thema,
   verlauf: Nachricht[],
-  land: string | null,
+  laender: (string | null)[],
   testphase: boolean,
 ): Promise<number | null> {
   try {
@@ -176,7 +176,7 @@ async function erkenneInstrument(
       thema.id,
       iRes.data as Pick<InstrumentEintrag, 'id' | 'thema_id' | 'name' | 'ebene'>[],
       mRes.data as Pick<Massnahme, 'instrument_id' | 'land'>[],
-      land,
+      laender,
     )
     if (!kandidaten.length) return null
     const roh = await frageMistral(instrumentPrompt(thema, kandidaten), instrumentNachrichten(verlauf))
@@ -227,8 +227,7 @@ async function zugangGueltig(token: string): Promise<boolean> {
 async function speichereRunde(
   antwort: AnalyseAntwort,
   [parteiA, parteiB]: [number, number],
-  rolle: Rolle | null,
-  land: string | null,
+  seiten: [Seite, Seite],
   testphase: boolean,
   original: string[],
   parteien: Partei[],
@@ -300,11 +299,12 @@ async function speichereRunde(
     mAbfrage = mAbfrage.eq('ki_entwurf', false)
     aAbfrage = aAbfrage.eq('ki_entwurf', false)
   }
+  const laender = [...new Set(seiten.map((s) => s.land).filter((l): l is string => l !== null))]
   const [mRes, aRes, lpRes] = await Promise.all([
     mAbfrage,
     aAbfrage,
-    land
-      ? db.from('landesprogramme').select('*').eq('land', land).in('partei_id', [parteiA, parteiB])
+    laender.length
+      ? db.from('landesprogramme').select('*').in('land', laender).in('partei_id', [parteiA, parteiB])
       : Promise.resolve({ data: [], error: null }),
   ])
   // Speichern ist Nebensache: Ein Fehler hier soll die Antwort an die App nicht verhindern.
@@ -319,10 +319,15 @@ async function speichereRunde(
   const b = parteien.find((p) => p.id === parteiB)
   if (!a || !b) return
 
-  // Das Bundesland zählt nur für die Wertung; gespeichert wird es nicht.
-  const ebenen = { land, ursachen, landesprogramme: lpRes.data as Landesprogramm[] }
-  const ea = bewertePartei(a, antwort.thema_id, antwort.ursachen_ids, rolle, massnahmen, abdeckung, ebenen)
-  const eb = bewertePartei(b, antwort.thema_id, antwort.ursachen_ids, rolle, massnahmen, abdeckung, ebenen)
+  // Jede Partei mit Rolle und Bundesland ihrer Seite. Das Bundesland zählt nur für die Wertung; gespeichert wird es nicht.
+  const landesprogramme = lpRes.data as Landesprogramm[]
+  const [ea, eb] = ([a, b] as const).map((p, i) =>
+    bewertePartei(p, antwort.thema_id!, antwort.ursachen_ids, seiten[i].rolle, massnahmen, abdeckung, {
+      land: seiten[i].land,
+      ursachen,
+      landesprogramme,
+    }),
+  )
   const { status } = werteRunde(ea, eb)
   // Gespeichert werden die Rundenpunkte (Summe über die Ursachen), nicht der Spielpunkt.
   // Ist das Thema für eine Partei noch nicht erfasst, gibt es keine Punkte.

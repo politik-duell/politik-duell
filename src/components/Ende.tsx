@@ -77,7 +77,7 @@ export function Ende({
           {runden.map((r) => (
             <li key={r.nr}>
               <p className="zf-kopf">
-                <strong>Runde {r.nr}</strong>, {spieler[r.sprecher].name}:{' '}
+                <strong>Runde {r.nr}</strong>:{' '}
                 {r.thema ? r.thema.name : <span className="badge-ungeprueft">ungeprüft – keine Wertung</span>}
                 {r.ergebnisse?.some((e) => e.ki_entwurf) && (
                   <>
@@ -121,7 +121,7 @@ export function Ende({
         </ol>
       </section>
 
-      <Gespraechskarten karten={gespraechsKarten(runden)} />
+      <Gespraechskarten karten={gespraechsKarten(runden)} laender={spieler.map((s) => s.land)} />
 
       <div className="knopf-reihe">
         <button className="knopf" onClick={teilen}>
@@ -145,11 +145,11 @@ export function Ende({
  * aufklappbar – als Gesprächsanlass nach dem Spiel, ohne Punkte. Nicht im Teilen-Text: Haltungen lassen
  * politische Meinungen erkennen (Art. 9 DSGVO).
  */
-function Gespraechskarten({ karten }: { karten: Karte[] }) {
+function Gespraechskarten({ karten, laender }: { karten: Karte[]; laender: (string | null)[] }) {
   const daten = useDaten()
   // Nur Karten, die es (noch) gibt – etwa nach einem Wechsel der Daten.
   const zeigbar = karten.filter((k) =>
-    k.art === 'haltung' ? haltungskarte(daten, k.haltung_id) : forderungskarte(daten, k.instrument_id, k.land),
+    k.art === 'haltung' ? haltungskarte(daten, k.haltung_id) : forderungskarte(daten, k.instrument_id, laender),
   )
   if (!zeigbar.length) return null
   return (
@@ -165,11 +165,11 @@ function Gespraechskarten({ karten }: { karten: Karte[] }) {
             <HaltungsKarte haltungId={k.haltung_id} />
           </details>
         ) : (
-          <details key={`f${k.instrument_id}/${k.land ?? ''}`} className="gespraechskarte">
+          <details key={`f${k.instrument_id}`} className="gespraechskarte">
             <summary>
-              <span className="karten-art">Forderung</span> {forderungskarte(daten, k.instrument_id, k.land)!.instrument.name}
+              <span className="karten-art">Forderung</span> {forderungskarte(daten, k.instrument_id, laender)!.instrument.name}
             </summary>
-            <ForderungsKarte instrumentId={k.instrument_id} land={k.land} />
+            <ForderungsKarte instrumentId={k.instrument_id} laender={laender} />
           </details>
         ),
       )}

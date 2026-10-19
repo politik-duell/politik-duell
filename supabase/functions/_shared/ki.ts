@@ -12,6 +12,7 @@ import {
   type Nachricht,
   type Partei,
   type Rolle,
+  type Seite,
   type Symptomgruppe,
   type Thema,
   type Ursache,
@@ -242,19 +243,20 @@ export type InstrumentKurz = Pick<InstrumentEintrag, 'id' | 'thema_id' | 'name' 
 
 /**
  * Instrumente, aus denen die KI wählen darf: die Bundes-Instrumente des Themas und – bei gewähltem
- * Bundesland – die Landes-Instrumente, die in einem Programm dieses Landes vorkommen.
+ * Bundesland (einem oder denen beider Seiten) – die Landes-Instrumente, die in einem Programm dieser Länder vorkommen.
  */
 export function instrumenteZurAuswahl(
   themaId: number,
   instrumente: InstrumentKurz[],
   massnahmen: Pick<Massnahme, 'instrument_id' | 'land'>[],
-  land: string | null,
+  land: string | null | readonly (string | null)[],
 ): InstrumentKurz[] {
+  const laender = (Array.isArray(land) ? land : [land]).filter((l): l is string => l !== null)
   return instrumente
     .filter(
       (i) =>
         i.thema_id === themaId &&
-        (i.ebene === 'bund' || (land !== null && massnahmen.some((m) => m.instrument_id === i.id && m.land === land))),
+        (i.ebene === 'bund' || massnahmen.some((m) => m.instrument_id === i.id && m.land !== null && laender.includes(m.land!))),
     )
     .sort((a, b) => a.id - b.id)
 }
@@ -458,7 +460,7 @@ export interface Einordnungskatalog {
 export async function ordneEin(
   frage: FrageKi,
   verlauf: Nachricht[],
-  rolle: Rolle | null,
+  rolle: Rolle | null | readonly (Rolle | null)[],
   { themen, ursachen, parteien = [], haltungen = [] }: Einordnungskatalog,
   zufall: () => number = Math.random,
 ): Promise<{ antwort: AnalyseAntwort; unsicher: string[] }> {
@@ -528,10 +530,18 @@ function bereinigeAbweichung(satz: string, parteien: Pick<Partei, 'name' | 'kurz
   return text
 }
 
-export function nutzerNachrichten(verlauf: Nachricht[], rolle: Rolle | null) {
+/** Rolle für den Hinweis an die KI; bei zwei Seiten mit verschiedenen Rollen beide (wer spricht, ist offen). */
+function rollenHinweis(rolle: Rolle | null | readonly (Rolle | null)[]): string {
+  const text = (r: Rolle | null) => (r ? ROLLEN_TEXT[r] : 'keine Angabe')
+  const rollen = [...new Set(Array.isArray(rolle) ? rolle : [rolle])] as (Rolle | null)[]
+  if (rollen.length === 1) return `Rolle der Person: ${text(rollen[0])}.`
+  return `Die beiden Spielenden haben verschiedene Rollen angegeben (${rollen.map(text).join('; ')}); wer gerade schreibt, ist offen.`
+}
+
+export function nutzerNachrichten(verlauf: Nachricht[], rolle: Rolle | null | readonly (Rolle | null)[]) {
   const nachfragen = verlauf.filter((n) => n.von === 'ki').length
   const hinweis =
-    `Rolle der Person: ${rolle ? ROLLEN_TEXT[rolle] : 'keine Angabe'}.` +
+    rollenHinweis(rolle) +
     (nachfragen === 1
       ? ' Es wurde schon einmal nachgefragt: Falls du noch einmal nachfragst, frag anders als zuvor,' +
         ' z. B. nach einem konkreten Beispiel aus dem Alltag, und gib die Forderung nicht noch einmal wieder.'
@@ -575,7 +585,6 @@ export function pruefeAnfrage(roh: unknown): AnalyseAnfrage {
   }
   if (!auswahl && a.verlauf[a.verlauf.length - 1].von !== 'spieler')
     throw new EingabeFehler('Letzte Nachricht muss vom Spieler sein.')
-  if (a.rolle !== null && a.rolle !== undefined && !ROLLEN_IDS.includes(a.rolle)) throw new EingabeFehler('Ungültige Rolle.')
   if (
     !Array.isArray(a.parteien) ||
     a.parteien.length !== 2 ||
@@ -583,16 +592,32 @@ export function pruefeAnfrage(roh: unknown): AnalyseAnfrage {
     a.parteien[0] === a.parteien[1]
   )
     throw new EingabeFehler('Ungültige Parteien.')
-  // Bundesland nur als Kürzel; es zählt nur für die Wertung und wird nicht gespeichert.
-  if (a.land !== null && a.land !== undefined && (typeof a.land !== 'string' || !/^[A-Z]{2}$/.test(a.land)))
-    throw new EingabeFehler('Ungültiges Bundesland.')
+  const seiten = pruefeSeiten(a)
   // Zugang zur Testphase: nur das Format prüfen; ob er gültig ist, entscheidet die Datenbank.
   if (a.zugang !== null && a.zugang !== undefined && (typeof a.zugang !== 'string' || !/^[A-Za-z0-9_-]{43}$/.test(a.zugang)))
     throw new EingabeFehler('Ungültiger Zugang zur Testphase.')
   return {
-    sitzung: a.sitzung, verlauf: a.verlauf, rolle: a.rolle ?? null, land: a.land ?? null, zugang: a.zugang ?? null, parteien: a.parteien,
+    sitzung: a.sitzung, verlauf: a.verlauf, seiten, zugang: a.zugang ?? null, parteien: a.parteien,
     auswahl,
   }
+}
+
+/**
+ * Rolle und Bundesland je Seite. Ältere App-Fassungen (zwischengespeicherte PWA) schicken noch eine `rolle` und ein
+ * `land` für die ganze Runde – dann gelten sie für beide Seiten.
+ */
+function pruefeSeiten(a: Partial<AnalyseAnfrage> & { rolle?: unknown; land?: unknown }): [Seite, Seite] {
+  const roh: unknown[] = a.seiten === undefined ? [{ rolle: a.rolle, land: a.land }, { rolle: a.rolle, land: a.land }] : a.seiten
+  if (!Array.isArray(roh) || roh.length !== 2) throw new EingabeFehler('Ungültige Seiten.')
+  const seiten = roh.map((s) => {
+    const { rolle, land } = (s ?? {}) as { rolle?: unknown; land?: unknown }
+    if (rolle !== null && rolle !== undefined && !ROLLEN_IDS.includes(rolle as Rolle)) throw new EingabeFehler('Ungültige Rolle.')
+    // Bundesland nur als Kürzel; es zählt nur für die Wertung und wird nicht gespeichert.
+    if (land !== null && land !== undefined && (typeof land !== 'string' || !/^[A-Z]{2}$/.test(land)))
+      throw new EingabeFehler('Ungültiges Bundesland.')
+    return { rolle: (rolle ?? null) as Rolle | null, land: (land ?? null) as string | null }
+  })
+  return [seiten[0], seiten[1]]
 }
 
 /** Form der angetippten Ursachen prüfen; ob sie zum Katalog passen, prüft antwortAusAuswahl. */

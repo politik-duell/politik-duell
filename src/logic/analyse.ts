@@ -83,8 +83,8 @@ function erkenneUrsachen(text: string, thema: Thema, ursachen: Ursache[]): numbe
 export interface InstrumentOptionen {
   instrumente?: InstrumentEintrag[]
   massnahmen?: Pick<Massnahme, 'instrument_id' | 'land'>[]
-  /** Bundesland der Person: nur dann kommen Landes-Instrumente in Frage. */
-  land?: string | null
+  /** Bundesland (oder die Bundesländer beider Seiten): nur dann kommen Landes-Instrumente in Frage. */
+  land?: string | null | (string | null)[]
   /** Vollständig erfasste Haltungen (wie im Prompt der Edge Function); nur ihnen wird eine Haltung zugeordnet. */
   haltungen?: Pick<HaltungEintrag, 'id' | 'schlagwoerter'>[]
 }

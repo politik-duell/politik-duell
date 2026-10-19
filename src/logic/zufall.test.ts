@@ -4,7 +4,7 @@ import { BEISPIEL_GEWICHT, beispielKandidaten, zufallsBeispiel, PROBLEM_VORSPANN
 import { fuerBeideErfasst } from './stand'
 
 const [p1, p2] = MOCK_DATEN.parteien
-const optionen = { parteiIds: [p1.id, p2.id] as [number, number], land: null, mitHaltung: true }
+const optionen = { parteiIds: [p1.id, p2.id] as [number, number], laender: [null, null], mitHaltung: true }
 
 describe('Zufallsbeispiel für die Eingabe', () => {
   it('nimmt Probleme nur aus Themen, die für beide Parteien ausgewertet sind', () => {

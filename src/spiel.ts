@@ -1,4 +1,4 @@
-import type { Partei, Rolle, Thema } from './data/types'
+import type { Partei, Rolle, Seite, Thema } from './data/types'
 import type { ParteiErgebnis } from './logic/bewertung'
 
 export const RUNDEN_GESAMT = 5
@@ -13,11 +13,6 @@ export interface Spieler {
 
 export interface RundenErgebnis {
   nr: number
-  /** Index des Spielers, der das Problem genannt hat (0 = A, 1 = B). */
-  sprecher: 0 | 1
-  rolle: Rolle | null
-  /** Bundesland der Person, die das Problem genannt hat. */
-  land: string | null
   zusammenfassung: string
   /** Was die Person in dieser Runde eingegeben hat (Wortlaut, nur zur Anzeige – nicht im Teilen-Text). */
   eingaben?: string[]
@@ -54,12 +49,20 @@ export interface RundenErgebnis {
 }
 
 /**
- * Karte ohne Punkte, die in einer Runde erschien: Haltungskarte (Wertfrage) oder Forderungskarte (Lösungsweg,
- * mit dem Bundesland der Person für den Block der Landesprogramme).
+ * Rolle und Bundesland für den Vergleich aller Parteien („Beste Lösung aller Parteien“): nur, was beide Seiten
+ * gleich gewählt haben – sonst ohne Rolle bzw. nur mit Bundesprogrammen, damit keine Seite den Vergleich bestimmt.
  */
-export type Karte = { art: 'haltung'; haltung_id: number } | { art: 'forderung'; instrument_id: number; land: string | null }
+export function vergleichsSeite([a, b]: [Spieler, Spieler]): Seite {
+  return { rolle: a.rolle === b.rolle ? a.rolle : null, land: a.land === b.land ? a.land : null }
+}
 
-const kartenSchluessel = (k: Karte) => (k.art === 'haltung' ? `h${k.haltung_id}` : `f${k.instrument_id}/${k.land ?? ''}`)
+/**
+ * Karte ohne Punkte, die in einer Runde erschien: Haltungskarte (Wertfrage) oder Forderungskarte (Lösungsweg; die
+ * Landesprogramme kommen aus den Bundesländern beider Seiten).
+ */
+export type Karte = { art: 'haltung'; haltung_id: number } | { art: 'forderung'; instrument_id: number }
+
+const kartenSchluessel = (k: Karte) => (k.art === 'haltung' ? `h${k.haltung_id}` : `f${k.instrument_id}`)
 
 /** Alle Karten der Partie in der Reihenfolge, in der sie erschienen – jede nur einmal. */
 export function gespraechsKarten(runden: RundenErgebnis[]): Karte[] {

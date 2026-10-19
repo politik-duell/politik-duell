@@ -1,14 +1,11 @@
 import { useState } from 'react'
 import { useDaten } from '../data/kontext'
 import { analysiere, AnalyseFehler, ebenenFuer, type Daten } from '../data/quelle'
-import { ROLLEN } from '../data/rollen'
-import type { AnalyseAntwort, Nachricht } from '../data/types'
+import type { AnalyseAntwort, Nachricht, Seite } from '../data/types'
 import { besteParteien, bewertePartei, werteRunde } from '../logic/bewertung'
 import { haltungskarte } from '../logic/haltung'
-import { fuerBeideErfasst } from '../logic/stand'
 import { zufallsBeispiel, type BeispielArt } from '../logic/zufall'
-import { mitKarte, type Karte, type RundenErgebnis, type Spieler } from '../spiel'
-import { parteiStil } from './stil'
+import { mitKarte, vergleichsSeite, type Karte, type RundenErgebnis, type Spieler } from '../spiel'
 import { ForderungsKarte } from './ForderungsKarte'
 import { HALTUNG_EINLEITUNG, HaltungsKarte } from './HaltungsKarte'
 import { UrsachenAuswahl } from './UrsachenAuswahl'
@@ -83,34 +80,38 @@ function ShuffleSymbol() {
 
 const spielerTexte = (v: Nachricht[]) => v.filter((n) => n.von === 'spieler').map((n) => n.text)
 
+/**
+ * Jede Partei wird mit Rolle und Bundesland ihrer Seite gewertet – gleich, wer das Problem nennt. Der Vergleich
+ * aller Parteien nutzt Rolle bzw. Land nur, wenn beide Seiten dieselben gewählt haben (siehe vergleichsSeite).
+ */
 function werteAus(
   analyse: AnalyseAntwort,
   nr: number,
-  sprecher: 0 | 1,
   spieler: [Spieler, Spieler],
   daten: Daten,
   forderung?: RundenErgebnis['forderung'],
   karten: Karte[] = [],
 ): RundenErgebnis {
   const { themen, parteien, massnahmen, abdeckung } = daten
-  const { rolle, land } = spieler[sprecher]
   const thema = themen.find((t) => t.id === analyse.thema_id) ?? null
 
   // Ohne Thema in der Datenbank: ungeprüft. Die Review-Warteschlange füllt die Edge Function.
   if (!thema) {
     return {
-      nr, sprecher, rolle, land, thema: null, status: 'ungeprueft', ...(forderung ? { forderung } : {}), ...(karten.length ? { karten } : {}),
+      nr, thema: null, status: 'ungeprueft', ...(forderung ? { forderung } : {}), ...(karten.length ? { karten } : {}),
       zusammenfassung: analyse.zusammenfassung, einschaetzung: analyse.einschaetzung ?? null,
       ergebnisse: null, punkte: [0, 0], beste: [], nichtErfasst: [],
     }
   }
 
-  const ebenen = ebenenFuer(daten, land)
-  const ea = bewertePartei(spieler[0].partei, thema.id, analyse.ursachen_ids, rolle, massnahmen, abdeckung, ebenen)
-  const eb = bewertePartei(spieler[1].partei, thema.id, analyse.ursachen_ids, rolle, massnahmen, abdeckung, ebenen)
+  const [ea, eb] = spieler.map((s) =>
+    bewertePartei(s.partei, thema.id, analyse.ursachen_ids, s.rolle, massnahmen, abdeckung, ebenenFuer(daten, s.land)),
+  )
   const { status, punkte } = werteRunde(ea, eb)
+  const { rolle, land } = vergleichsSeite(spieler)
+  const ebenen = ebenenFuer(daten, land)
   return {
-    nr, sprecher, rolle, land, thema, status, ...(forderung ? { forderung } : {}), ...(karten.length ? { karten } : {}),
+    nr, thema, status, ...(forderung ? { forderung } : {}), ...(karten.length ? { karten } : {}),
     ursachen_ids: analyse.ursachen_ids,
     ...(analyse.ursachen_belege ? { ursachen_belege: analyse.ursachen_belege } : {}),
     ...(analyse.symptom !== undefined ? { symptom: analyse.symptom } : {}),
@@ -127,12 +128,10 @@ function werteAus(
 
 export function Runde({
   nr,
-  sprecher,
   spieler,
   onErgebnis,
 }: {
   nr: number
-  sprecher: 0 | 1
   spieler: [Spieler, Spieler]
   onErgebnis: (r: RundenErgebnis) => void
 }) {
@@ -148,12 +147,11 @@ export function Runde({
   const [fehler, setFehler] = useState<string | null>(null)
   /**
    * Bestätigung (docs/plan-zuordnung.md): das Thema, dessen Ursachen gerade zum Antippen stehen – mit den von der KI
-   * vorgeschlagenen Ursachen, wenn sie sicher war, und weiteren Themen, die sie in Frage kommend fand.
+   * vorgeschlagenen Ursachen, wenn sie sicher war.
    */
   const [angebot, setAngebot] = useState<{
     thema_id: number
     vorauswahl: number[]
-    kandidaten: number[]
     /** Symptomgruppe, deren Ursachen vorausgewählt sind (docs/plan-symptome.md). */
     symptom?: number
     /** Eine Ursache passt nur teilweise: was abweicht. */
@@ -180,12 +178,11 @@ export function Runde({
   const [beispiel, setBeispiel] = useState<BeispielArt | null>(null)
   const daten = useDaten()
 
-  const aktiv = spieler[sprecher]
-  const rolle = ROLLEN.find((r) => r.id === aktiv.rolle)?.label
-  const land = daten.laender.find((l) => l.id === aktiv.land)?.name
+  const seiten = spieler.map(({ rolle, land }) => ({ rolle, land })) as [Seite, Seite]
+  const laender = seiten.map((s) => s.land)
   const parteiIds: [number, number] = [spieler[0].partei.id, spieler[1].partei.id]
   const [nurProbleme, setNurProbleme] = useState(liesNurProbleme)
-  const beispielOptionen = { parteiIds, land: aktiv.land, mitHaltung: !haltungGezeigt, nurProbleme }
+  const beispielOptionen = { parteiIds, laender, mitHaltung: !haltungGezeigt, nurProbleme }
 
   function wuerfeln() {
     const b = zufallsBeispiel(daten, beispielOptionen, eingabe.trim() || null)
@@ -213,8 +210,7 @@ export function Runde({
     try {
       analyse = await analysiere(daten, {
         verlauf: neu,
-        rolle: aktiv.rolle,
-        land: aktiv.land,
+        seiten,
         parteien: [spieler[0].partei.id, spieler[1].partei.id],
       })
     } catch (err) {
@@ -237,7 +233,7 @@ export function Runde({
       // Nach der letzten Nachfrage („Forderung bleibt“) zeigt die Runde die Karte gleich.
       setKarteOffen(bekannt && !analyse.nachfrage)
       if (bekannt && analyse.thema_id !== null)
-        rundenKarten = mitKarte(rundenKarten, { art: 'forderung', instrument_id: analyse.instrument_id!, land: aktiv.land })
+        rundenKarten = mitKarte(rundenKarten, { art: 'forderung', instrument_id: analyse.instrument_id! })
     } else if (analyse.typ === 'wert' || analyse.typ === 'grenze') {
       setForderung(null)
       setKarteOffen(false)
@@ -262,7 +258,6 @@ export function Runde({
           : {
               thema_id: analyse.thema_id,
               vorauswahl: [],
-              kandidaten: analyse.thema_kandidaten ?? [],
               ...(analyse.abweichung ? { abweichung: analyse.abweichung } : {}),
             },
       )
@@ -292,10 +287,10 @@ export function Runde({
       }
     } else if (analyse.typ === 'problem' && analyse.thema_id !== null && analyse.ursachen_ids.length > 0) {
       // Gewertet wird erst, was die Person bestätigt: die Ursachen der KI vorausgewählt (sie war sicher).
-      setAngebot({ thema_id: analyse.thema_id, vorauswahl: analyse.ursachen_ids, kandidaten: [], symptom: analyse.symptom })
+      setAngebot({ thema_id: analyse.thema_id, vorauswahl: analyse.ursachen_ids, symptom: analyse.symptom })
       setZusammenfassung(analyse.zusammenfassung || null)
     } else {
-      onErgebnis({ ...werteAus(analyse, nr, sprecher, spieler, daten, forderung ?? undefined, rundenKarten), eingaben: spielerTexte(neu) })
+      onErgebnis({ ...werteAus(analyse, nr, spieler, daten, forderung ?? undefined, rundenKarten), eingaben: spielerTexte(neu) })
     }
     setKarten(rundenKarten)
   }
@@ -312,8 +307,7 @@ export function Runde({
     try {
       await analysiere(daten, {
         verlauf: gespraech,
-        rolle: aktiv.rolle,
-        land: aktiv.land,
+        seiten,
         parteien: [spieler[0].partei.id, spieler[1].partei.id],
         auswahl: { thema_id: themaId, ursachen_ids: [], passt_nicht: true },
       })
@@ -343,8 +337,7 @@ export function Runde({
     try {
       analyse = await analysiere(daten, {
         verlauf: [],
-        rolle: aktiv.rolle,
-        land: aktiv.land,
+        seiten,
         parteien: [spieler[0].partei.id, spieler[1].partei.id],
         auswahl: { thema_id: themaId, ursachen_ids: ursachenIds, ...(symptom !== undefined ? { symptom } : {}) },
       })
@@ -364,7 +357,7 @@ export function Runde({
     onErgebnis({
       ...werteAus(
         { ...analyse, zusammenfassung: (unveraendert && zusammenfassung) || analyse.zusammenfassung },
-        nr, sprecher, spieler, daten, forderung ?? undefined, karten,
+        nr, spieler, daten, forderung ?? undefined, karten,
       ),
       ...(eingaben.length ? { eingaben } : {}),
     })
@@ -375,17 +368,10 @@ export function Runde({
 
   return (
     <main className="seite runde">
-      <div className="am-zug" style={parteiStil(aktiv.partei.farbe)}>
-        <span className="am-zug-label">{aktiv.partei.kurzname}</span>
-        <strong>{aktiv.name} ist dran</strong>
-        {rolle && <span className="rolle-chip">{rolle}</span>}
-        {land && <span className="rolle-chip">{land}</span>}
-      </div>
       <h2>Welches Alltagsproblem nervt dich?</h2>
       <p className="hinweis">
         Schreib auf, was in deinem Alltag konkret schiefläuft.
       </p>
-      <ThemenHinweis parteiIds={[spieler[0].partei.id, spieler[1].partei.id]} />
 
       <div className="verlauf" aria-live="polite">
         {vorher.map((n, i) => (
@@ -412,7 +398,7 @@ export function Runde({
           haltungId={haltung}
           onThema={(id) => {
             // Ein Tipp füllt das Eingabefeld nicht vor, sondern zeigt die Ursachen des Themas zum Antippen (A2).
-            setAngebot({ thema_id: id, vorauswahl: [], kandidaten: [] })
+            setAngebot({ thema_id: id, vorauswahl: [] })
             setZusammenfassung(null)
           }}
         />
@@ -422,19 +408,13 @@ export function Runde({
         <UrsachenAuswahl
           key={`${angebotThema.id}-${verlauf.length}-${angebot.vorauswahl.join(',')}`}
           thema={angebotThema}
-          themen={daten.themen}
           ursachen={daten.ursachen}
           vorauswahl={angebot.vorauswahl}
-          kandidaten={angebot.kandidaten}
           gruppe={angebotGruppe}
           abweichung={angebot.abweichung}
           gesperrt={denkt}
           onWaehlen={(ids) =>
             auswaehlen(angebotThema.id, ids, angebotGruppe && ids.some((id) => angebotGruppe.ursachen_ids.includes(id)) ? angebotGruppe.nr : undefined)
-          }
-          // Ein anderes Thema hat keinen Vorschlag der KI: ohne Vorauswahl; die bisherigen Themen bleiben zur Wahl.
-          onThema={(id) =>
-            setAngebot({ thema_id: id, vorauswahl: [], kandidaten: [angebotThema.id, ...angebot.kandidaten].filter((k) => k !== id) })
           }
           onPasstNicht={() => passtNicht(angebotThema.id)}
         />
@@ -449,7 +429,7 @@ export function Runde({
           )}
           {karteOffen && (
             <>
-              <ForderungsKarte instrumentId={forderung.instrument_id} land={aktiv.land} />
+              <ForderungsKarte instrumentId={forderung.instrument_id} laender={laender} />
               <button type="button" className="knopf-link" onClick={() => setKarteOffen(false)}>
                 Karte ausblenden
               </button>
@@ -512,40 +492,5 @@ export function Runde({
         </div>
       </form>
     </main>
-  )
-}
-
-/**
- * Welche Themen das Spiel schon kennt – damit niemand ins Leere fragt. Markiert
- * wird nur, ob ein Thema für beide Parteien ausgewertet ist, nicht für welche
- * nicht: Das verrät vor der Auflösung nichts über eine einzelne Partei.
- */
-function ThemenHinweis({ parteiIds }: { parteiIds: [number, number] }) {
-  const daten = useDaten()
-  if (!daten.themen.length) return null
-  const themen = daten.themen.map((t) => ({ ...t, bereit: fuerBeideErfasst(daten, t.id, parteiIds) }))
-  const bereit = themen.filter((t) => t.bereit).length
-  return (
-    <details className="themen-hinweis">
-      <summary>
-        Welche Themen kennt das Spiel schon? ({daten.themen.length})
-      </summary>
-      <ul className="themen-chips">
-        {themen.map((t) => (
-          <li key={t.id} className={t.bereit ? 'bereit' : undefined}>
-            {t.bereit && <span aria-hidden="true">✓ </span>}
-            {t.name}
-            {!t.bereit && <span className="sr-only"> (noch nicht für beide Parteien ausgewertet)</span>}
-          </li>
-        ))}
-      </ul>
-      <p className="meta">
-        {bereit === themen.length
-          ? 'Alle Themen sind für eure beiden Parteien ausgewertet.'
-          : `✓ = für eure beiden Parteien ausgewertet (${bereit} von ${themen.length}). Bei den anderen wird die Runde gezeigt, aber noch nicht gewertet.`}{' '}
-        Andere Probleme kannst du trotzdem nennen – dann gibt es eine Einschätzung ohne Wertung.{' '}
-        <a href="#/themen">Ganze Übersicht</a>
-      </p>
-    </details>
   )
 }

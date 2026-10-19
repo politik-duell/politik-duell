@@ -81,6 +81,13 @@ describe('forderungskarte', () => {
     expect(k.bloecke[1].parteien[0].massnahmen.map((m) => m.id)).toEqual([9001])
   })
 
+  it('nimmt die Bundesländer beider Seiten, jedes nur einmal', () => {
+    const laender = (l: (string | null)[]) => forderungskarte(mitLand(), 90, l)!.bloecke.map((b) => b.land)
+    expect(laender([null, 'ST'])).toEqual([null, 'ST'])
+    expect(laender(['ST', 'ST'])).toEqual([null, 'ST'])
+    expect(laender(['ST', 'BE'])).toEqual([null, 'ST', 'BE'])
+  })
+
   it('zeigt ohne Bundesland nur den Bund – auch wenn das erkannte Instrument selbst für das Land gilt', () => {
     expect(forderungskarte(mitLand(), 90, null)!.bloecke.map((b) => b.ebene)).toEqual(['bund'])
     // Land-Instrument erkannt, Person ohne Land (etwa in der Auflösung einer anderen Runde): Bund über das Gegenstück.

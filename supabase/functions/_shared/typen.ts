@@ -304,14 +304,23 @@ export interface AnalyseAntwort {
   stichwort?: string
 }
 
+/**
+ * Rolle und Bundesland einer Seite (A oder B). Jede Partei wird mit den Angaben ihrer Seite gewertet –
+ * gleich, wer das Problem nennt.
+ */
+export interface Seite {
+  rolle: Rolle | null
+  /** Bundesland (Kürzel) – nur zur Wertung, wird nicht gespeichert. */
+  land: string | null
+}
+
 /** Anfrage der App an die Edge Function `analyse`. */
 export interface AnalyseAnfrage {
   /** Zufällige Sitzungs-ID (nur für das Rate-Limit, keine Zuordnung zu Personen). */
   sitzung: string
   verlauf: Nachricht[]
-  rolle: Rolle | null
-  /** Gewähltes Bundesland (Kürzel) – nur zur Wertung, wird nicht gespeichert. */
-  land: string | null
+  /** Rolle und Bundesland der Seiten A und B (in der Reihenfolge von `parteien`). */
+  seiten: [Seite, Seite]
   /** Zugang zur geschlossenen Testphase (Token aus dem Einladungslink) – dann zählen auch KI-Entwürfe. */
   zugang?: string | null
   /** IDs der beiden gewählten Parteien (A, B) – zum Speichern der Runde. */

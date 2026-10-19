@@ -8,7 +8,7 @@ Grundprinzipien: [CLAUDE.md](CLAUDE.md); Konzept und Meilensteine: [docs/konzept
 
 - Startbildschirm mit Erklärung, Datenschutzhinweis und schwebender Wortwolke der erfassten Themen
 - Parteiwahl für Spieler:in A und B (nicht dieselbe) plus optionale Rolle
-- 5 Runden abwechselnd, Texteingabe
+- 5 Runden, Texteingabe
 - Mock-Analyse im Format der späteren Edge Function `analyse` (`problem` | `forderung` | `wert`)
   - Forderung → höchstens 2 Nachfragen nach dem Alltagsproblem
   - Wert → respektvoller Hinweis, Runde wird nicht gewertet, neues Problem möglich
@@ -119,7 +119,7 @@ npm run dashboard  # Dateien zum Einfügen im Supabase-Dashboard neu erzeugen
 - Punkte je Maßnahme: `wirksamkeit × umsetzbarkeit` (0–9); der Rollen-Modifikator verschiebt die Wirksamkeit (0–3). Pro zugeordneter Ursache zählen die verschiedenen Lösungswege der Partei mit abnehmendem Gewicht (bester voll, dann ½, ¼ …), höchstens 9 je Ursache. Rundenpunkte = Summe.
 - Höhere Summe → 1 Spielpunkt, Gleichstand → je 1 Punkt.
 - Annahme: Haben **beide** Parteien 0 Punkte (keine Maßnahme), gibt es keinen Punkt.
-- Die Rolle der Person, die das Problem nennt, gilt für die Bewertung beider Parteien.
+- Jede Partei wird mit Rolle und Bundesland ihrer Seite bewertet – gleich, wer das Problem nennt. Der Vergleich aller Parteien („Beste Lösung“) nutzt Rolle bzw. Land nur, wenn beide Seiten sie gleich gewählt haben.
 
 ## Lizenz
 

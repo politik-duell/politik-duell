@@ -17,7 +17,8 @@ export interface Beispiel {
 
 export interface BeispielOptionen {
   parteiIds: [number, number]
-  land: string | null
+  /** Bundesländer der beiden Seiten (je eins oder keins). */
+  laender: (string | null)[]
   /** Haltungen nur, solange in dieser Runde noch keine Haltungskarte kam (höchstens eine je Runde). */
   mitHaltung: boolean
   /** Nur Alltagsprobleme (Schalter „nur Probleme“) – etwa zum Testen der Wertung. */
@@ -39,12 +40,12 @@ export function beispielKandidaten(daten: Daten, o: BeispielOptionen): Record<Be
   // Ohne Alltagsfassung (ältere Daten) die Beschreibung. Ursachen in Länderzuständigkeit nur mit gewähltem Land.
   // Ausdrücklich als Problem – sonst liest die KI manche Fassung („… bleiben trotzdem hier“) als Forderung.
   const probleme = daten.ursachen
-    .filter((u) => erfassteIds.has(u.thema_id) && ((u.ebene ?? 'bund') === 'bund' || o.land !== null))
+    .filter((u) => erfassteIds.has(u.thema_id) && ((u.ebene ?? 'bund') === 'bund' || o.laender.some((l) => l !== null)))
     .map((u) => `${PROBLEM_VORSPANN}${u.alltag || u.beschreibung}`)
 
   // Forderung: Lösungsweg, zu dem es eine Forderungskarte gibt (gleiche Auswahl wie bei der KI).
   const forderungen = erfasst
-    .flatMap((t) => instrumenteZurAuswahl(t.id, daten.instrumente, daten.massnahmen, o.land))
+    .flatMap((t) => instrumenteZurAuswahl(t.id, daten.instrumente, daten.massnahmen, o.laender))
     .map((i) => `Meine Forderung: ${i.name.replace(/\s*\((Bund|Land)\)$/, '')}.`)
 
   // Haltung: nur Wertfragen mit vollständiger Karte; Ja oder Nein per Zufall, damit keine Seite vorgegeben ist.
