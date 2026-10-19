@@ -465,7 +465,10 @@ ${ursachen ? ' "ursachen_ids": number[], "ursachen_belege": {[id: string]: strin
  "einschaetzung": string | null, "rueckmeldung": string[] | null${haltungen.length ? ', "haltung_id": string | null' : ""}}`;
 }
 function instrumenteZurAuswahl(themaId, instrumente, massnahmen, land) {
-  return instrumente.filter((i) => i.thema_id === themaId && (i.ebene === "bund" || land !== null && massnahmen.some((m) => m.instrument_id === i.id && m.land === land))).sort((a, b) => a.id - b.id);
+  const laender = (Array.isArray(land) ? land : [
+    land
+  ]).filter((l) => l !== null);
+  return instrumente.filter((i) => i.thema_id === themaId && (i.ebene === "bund" || massnahmen.some((m) => m.instrument_id === i.id && m.land !== null && laender.includes(m.land)))).sort((a, b) => a.id - b.id);
 }
 function instrumentPrompt(thema, instrumente) {
   const liste = instrumente.map((i) => `- Instrument ${i.id}: ${i.name}`).join("\n");
@@ -668,9 +671,19 @@ function bereinigeAbweichung(satz, parteien) {
   if (text.length < 10 || text.length > 200 || text.includes("[Partei]") || pruefeText(text)) return null;
   return text;
 }
+function rollenHinweis(rolle) {
+  const text = (r) => r ? ROLLEN_TEXT[r] : "keine Angabe";
+  const rollen = [
+    ...new Set(Array.isArray(rolle) ? rolle : [
+      rolle
+    ])
+  ];
+  if (rollen.length === 1) return `Rolle der Person: ${text(rollen[0])}.`;
+  return `Die beiden Spielenden haben verschiedene Rollen angegeben (${rollen.map(text).join("; ")}); wer gerade schreibt, ist offen.`;
+}
 function nutzerNachrichten(verlauf, rolle) {
   const nachfragen = verlauf.filter((n) => n.von === "ki").length;
-  const hinweis = `Rolle der Person: ${rolle ? ROLLEN_TEXT[rolle] : "keine Angabe"}.` + (nachfragen === 1 ? " Es wurde schon einmal nachgefragt: Falls du noch einmal nachfragst, frag anders als zuvor, z. B. nach einem konkreten Beispiel aus dem Alltag, und gib die Forderung nicht noch einmal wieder." : "") + (nachfragen >= MAX_NACHFRAGEN ? ' Es wurde bereits zweimal nachgefragt: Ordne jetzt abschlie\xDFend ein und stelle keine Nachfrage mehr. Bleibt es bei einer Forderung ohne Alltagsproblem, ordne sie als "forderung" ein und schreib in "rueckmeldung" 1\u20132 kurze S\xE4tze: die Forderung neutral aufgreifen, sagen, dass hier L\xF6sungen f\xFCr konkrete Alltagsprobleme gewertet werden, und zu einem solchen Problem einladen. W\xE4hle nur Ursachen, die sich aus dem Gesagten erkennen lassen.' : "");
+  const hinweis = rollenHinweis(rolle) + (nachfragen === 1 ? " Es wurde schon einmal nachgefragt: Falls du noch einmal nachfragst, frag anders als zuvor, z. B. nach einem konkreten Beispiel aus dem Alltag, und gib die Forderung nicht noch einmal wieder." : "") + (nachfragen >= MAX_NACHFRAGEN ? ' Es wurde bereits zweimal nachgefragt: Ordne jetzt abschlie\xDFend ein und stelle keine Nachfrage mehr. Bleibt es bei einer Forderung ohne Alltagsproblem, ordne sie als "forderung" ein und schreib in "rueckmeldung" 1\u20132 kurze S\xE4tze: die Forderung neutral aufgreifen, sagen, dass hier L\xF6sungen f\xFCr konkrete Alltagsprobleme gewertet werden, und zu einem solchen Problem einladen. W\xE4hle nur Ursachen, die sich aus dem Gesagten erkennen lassen.' : "");
   return [
     {
       role: "system",
@@ -694,19 +707,43 @@ function pruefeAnfrage(roh) {
     if (n.text.trim().length === 0 || n.text.length > MAX_TEXTLAENGE) throw new EingabeFehler("Text zu lang oder leer.");
   }
   if (!auswahl && a.verlauf[a.verlauf.length - 1].von !== "spieler") throw new EingabeFehler("Letzte Nachricht muss vom Spieler sein.");
-  if (a.rolle !== null && a.rolle !== void 0 && !ROLLEN_IDS.includes(a.rolle)) throw new EingabeFehler("Ung\xFCltige Rolle.");
   if (!Array.isArray(a.parteien) || a.parteien.length !== 2 || !a.parteien.every((p) => Number.isInteger(p)) || a.parteien[0] === a.parteien[1]) throw new EingabeFehler("Ung\xFCltige Parteien.");
-  if (a.land !== null && a.land !== void 0 && (typeof a.land !== "string" || !/^[A-Z]{2}$/.test(a.land))) throw new EingabeFehler("Ung\xFCltiges Bundesland.");
+  const seiten = pruefeSeiten(a);
   if (a.zugang !== null && a.zugang !== void 0 && (typeof a.zugang !== "string" || !/^[A-Za-z0-9_-]{43}$/.test(a.zugang))) throw new EingabeFehler("Ung\xFCltiger Zugang zur Testphase.");
   return {
     sitzung: a.sitzung,
     verlauf: a.verlauf,
-    rolle: a.rolle ?? null,
-    land: a.land ?? null,
+    seiten,
     zugang: a.zugang ?? null,
     parteien: a.parteien,
     auswahl
   };
+}
+function pruefeSeiten(a) {
+  const roh = a.seiten === void 0 ? [
+    {
+      rolle: a.rolle,
+      land: a.land
+    },
+    {
+      rolle: a.rolle,
+      land: a.land
+    }
+  ] : a.seiten;
+  if (!Array.isArray(roh) || roh.length !== 2) throw new EingabeFehler("Ung\xFCltige Seiten.");
+  const seiten = roh.map((s) => {
+    const { rolle, land } = s ?? {};
+    if (rolle !== null && rolle !== void 0 && !ROLLEN_IDS.includes(rolle)) throw new EingabeFehler("Ung\xFCltige Rolle.");
+    if (land !== null && land !== void 0 && (typeof land !== "string" || !/^[A-Z]{2}$/.test(land))) throw new EingabeFehler("Ung\xFCltiges Bundesland.");
+    return {
+      rolle: rolle ?? null,
+      land: land ?? null
+    };
+  });
+  return [
+    seiten[0],
+    seiten[1]
+  ];
 }
 function pruefeAuswahl(roh) {
   if (roh === null || roh === void 0) return null;
@@ -1091,7 +1128,7 @@ Deno.serve(async (req) => {
       antwort = antwortAusAuswahl(anfrage.auswahl, themen, ursachen);
     } else {
       const haltungen = await vollstaendigeHaltungen(testphase);
-      antwort = (await ordneEin(frageMistral2, anfrage.verlauf, anfrage.rolle, {
+      antwort = (await ordneEin(frageMistral2, anfrage.verlauf, anfrage.seiten.map((s) => s.rolle), {
         themen,
         ursachen,
         parteien,
@@ -1100,12 +1137,12 @@ Deno.serve(async (req) => {
     }
     if (antwort.typ === "forderung" && !antwort.pauschal && antwort.thema_id !== null) {
       const thema = themen.find((t) => t.id === antwort.thema_id);
-      if (thema) antwort = mitInstrument(antwort, await erkenneInstrument(thema, anfrage.verlauf, anfrage.land, testphase));
+      if (thema) antwort = mitInstrument(antwort, await erkenneInstrument(thema, anfrage.verlauf, anfrage.seiten.map((s) => s.land), testphase));
     }
     const vorschlag = !anfrage.auswahl && antwort.typ === "problem" && antwort.ursachen_ids.length > 0;
     if (!antwort.nachfrage && !vorschlag) {
       const original = anfrage.verlauf.filter((n) => n.von === "spieler").map((n) => n.text);
-      await speichereRunde(antwort, anfrage.parteien, anfrage.rolle, anfrage.land, testphase, original, parteien, ursachen);
+      await speichereRunde(antwort, anfrage.parteien, anfrage.seiten, testphase, original, parteien, ursachen);
     }
     return json(antwort);
   } catch (e) {
@@ -1118,7 +1155,7 @@ Deno.serve(async (req) => {
     }, 502);
   }
 });
-async function erkenneInstrument(thema, verlauf, land, testphase) {
+async function erkenneInstrument(thema, verlauf, laender, testphase) {
   try {
     let iAbfrage = db.from("instrumente").select("id, thema_id, name, ebene").eq("thema_id", thema.id);
     let mAbfrage = db.from("massnahmen").select("instrument_id, land").eq("thema_id", thema.id).not("instrument_id", "is", null);
@@ -1132,7 +1169,7 @@ async function erkenneInstrument(thema, verlauf, land, testphase) {
     ]);
     if (iRes.error) throw iRes.error;
     if (mRes.error) throw mRes.error;
-    const kandidaten = instrumenteZurAuswahl(thema.id, iRes.data, mRes.data, land);
+    const kandidaten = instrumenteZurAuswahl(thema.id, iRes.data, mRes.data, laender);
     if (!kandidaten.length) return null;
     const roh = await frageMistral2(instrumentPrompt(thema, kandidaten), instrumentNachrichten(verlauf));
     return bereinigeInstrument(roh, kandidaten);
@@ -1169,7 +1206,7 @@ async function zugangGueltig(token) {
   if (error) throw error;
   return data !== null;
 }
-async function speichereRunde(antwort, [parteiA, parteiB], rolle, land, testphase, original, parteien, ursachen) {
+async function speichereRunde(antwort, [parteiA, parteiB], seiten, testphase, original, parteien, ursachen) {
   if (antwort.typ === "grenze") {
     await Promise.all([
       db.from("runden").insert({
@@ -1257,10 +1294,13 @@ async function speichereRunde(antwort, [parteiA, parteiB], rolle, land, testphas
     mAbfrage = mAbfrage.eq("ki_entwurf", false);
     aAbfrage = aAbfrage.eq("ki_entwurf", false);
   }
+  const laender = [
+    ...new Set(seiten.map((s) => s.land).filter((l) => l !== null))
+  ];
   const [mRes, aRes, lpRes] = await Promise.all([
     mAbfrage,
     aAbfrage,
-    land ? db.from("landesprogramme").select("*").eq("land", land).in("partei_id", [
+    laender.length ? db.from("landesprogramme").select("*").in("land", laender).in("partei_id", [
       parteiA,
       parteiB
     ]) : Promise.resolve({
@@ -1278,13 +1318,15 @@ async function speichereRunde(antwort, [parteiA, parteiB], rolle, land, testphas
   const a = parteien.find((p) => p.id === parteiA);
   const b = parteien.find((p) => p.id === parteiB);
   if (!a || !b) return;
-  const ebenen = {
-    land,
+  const landesprogramme = lpRes.data;
+  const [ea, eb] = [
+    a,
+    b
+  ].map((p, i) => bewertePartei(p, antwort.thema_id, antwort.ursachen_ids, seiten[i].rolle, massnahmen, abdeckung, {
+    land: seiten[i].land,
     ursachen,
-    landesprogramme: lpRes.data
-  };
-  const ea = bewertePartei(a, antwort.thema_id, antwort.ursachen_ids, rolle, massnahmen, abdeckung, ebenen);
-  const eb = bewertePartei(b, antwort.thema_id, antwort.ursachen_ids, rolle, massnahmen, abdeckung, ebenen);
+    landesprogramme
+  }));
   const { status } = werteRunde(ea, eb);
   const punkte = status === "gewertet" ? {
     punkte_a: ea.punkte,

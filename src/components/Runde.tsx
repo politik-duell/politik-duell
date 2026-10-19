@@ -1,12 +1,11 @@
 import { useState } from 'react'
 import { useDaten } from '../data/kontext'
 import { analysiere, AnalyseFehler, ebenenFuer, type Daten } from '../data/quelle'
-import { ROLLEN } from '../data/rollen'
-import type { AnalyseAntwort, Nachricht } from '../data/types'
+import type { AnalyseAntwort, Nachricht, Seite } from '../data/types'
 import { besteParteien, bewertePartei, werteRunde } from '../logic/bewertung'
 import { haltungskarte } from '../logic/haltung'
 import { zufallsBeispiel, type BeispielArt } from '../logic/zufall'
-import { mitKarte, type Karte, type RundenErgebnis, type Spieler } from '../spiel'
+import { mitKarte, vergleichsSeite, type Karte, type RundenErgebnis, type Spieler } from '../spiel'
 import { ForderungsKarte } from './ForderungsKarte'
 import { HALTUNG_EINLEITUNG, HaltungsKarte } from './HaltungsKarte'
 import { UrsachenAuswahl } from './UrsachenAuswahl'
@@ -81,34 +80,38 @@ function ShuffleSymbol() {
 
 const spielerTexte = (v: Nachricht[]) => v.filter((n) => n.von === 'spieler').map((n) => n.text)
 
+/**
+ * Jede Partei wird mit Rolle und Bundesland ihrer Seite gewertet – gleich, wer das Problem nennt. Der Vergleich
+ * aller Parteien nutzt Rolle bzw. Land nur, wenn beide Seiten dieselben gewählt haben (siehe vergleichsSeite).
+ */
 function werteAus(
   analyse: AnalyseAntwort,
   nr: number,
-  sprecher: 0 | 1,
   spieler: [Spieler, Spieler],
   daten: Daten,
   forderung?: RundenErgebnis['forderung'],
   karten: Karte[] = [],
 ): RundenErgebnis {
   const { themen, parteien, massnahmen, abdeckung } = daten
-  const { rolle, land } = spieler[sprecher]
   const thema = themen.find((t) => t.id === analyse.thema_id) ?? null
 
   // Ohne Thema in der Datenbank: ungeprüft. Die Review-Warteschlange füllt die Edge Function.
   if (!thema) {
     return {
-      nr, sprecher, rolle, land, thema: null, status: 'ungeprueft', ...(forderung ? { forderung } : {}), ...(karten.length ? { karten } : {}),
+      nr, thema: null, status: 'ungeprueft', ...(forderung ? { forderung } : {}), ...(karten.length ? { karten } : {}),
       zusammenfassung: analyse.zusammenfassung, einschaetzung: analyse.einschaetzung ?? null,
       ergebnisse: null, punkte: [0, 0], beste: [], nichtErfasst: [],
     }
   }
 
-  const ebenen = ebenenFuer(daten, land)
-  const ea = bewertePartei(spieler[0].partei, thema.id, analyse.ursachen_ids, rolle, massnahmen, abdeckung, ebenen)
-  const eb = bewertePartei(spieler[1].partei, thema.id, analyse.ursachen_ids, rolle, massnahmen, abdeckung, ebenen)
+  const [ea, eb] = spieler.map((s) =>
+    bewertePartei(s.partei, thema.id, analyse.ursachen_ids, s.rolle, massnahmen, abdeckung, ebenenFuer(daten, s.land)),
+  )
   const { status, punkte } = werteRunde(ea, eb)
+  const { rolle, land } = vergleichsSeite(spieler)
+  const ebenen = ebenenFuer(daten, land)
   return {
-    nr, sprecher, rolle, land, thema, status, ...(forderung ? { forderung } : {}), ...(karten.length ? { karten } : {}),
+    nr, thema, status, ...(forderung ? { forderung } : {}), ...(karten.length ? { karten } : {}),
     ursachen_ids: analyse.ursachen_ids,
     ...(analyse.ursachen_belege ? { ursachen_belege: analyse.ursachen_belege } : {}),
     ...(analyse.symptom !== undefined ? { symptom: analyse.symptom } : {}),
@@ -125,12 +128,10 @@ function werteAus(
 
 export function Runde({
   nr,
-  sprecher,
   spieler,
   onErgebnis,
 }: {
   nr: number
-  sprecher: 0 | 1
   spieler: [Spieler, Spieler]
   onErgebnis: (r: RundenErgebnis) => void
 }) {
@@ -177,12 +178,11 @@ export function Runde({
   const [beispiel, setBeispiel] = useState<BeispielArt | null>(null)
   const daten = useDaten()
 
-  const aktiv = spieler[sprecher]
-  const rolle = ROLLEN.find((r) => r.id === aktiv.rolle)?.label
-  const land = daten.laender.find((l) => l.id === aktiv.land)?.name
+  const seiten = spieler.map(({ rolle, land }) => ({ rolle, land })) as [Seite, Seite]
+  const laender = seiten.map((s) => s.land)
   const parteiIds: [number, number] = [spieler[0].partei.id, spieler[1].partei.id]
   const [nurProbleme, setNurProbleme] = useState(liesNurProbleme)
-  const beispielOptionen = { parteiIds, land: aktiv.land, mitHaltung: !haltungGezeigt, nurProbleme }
+  const beispielOptionen = { parteiIds, laender, mitHaltung: !haltungGezeigt, nurProbleme }
 
   function wuerfeln() {
     const b = zufallsBeispiel(daten, beispielOptionen, eingabe.trim() || null)
@@ -210,8 +210,7 @@ export function Runde({
     try {
       analyse = await analysiere(daten, {
         verlauf: neu,
-        rolle: aktiv.rolle,
-        land: aktiv.land,
+        seiten,
         parteien: [spieler[0].partei.id, spieler[1].partei.id],
       })
     } catch (err) {
@@ -234,7 +233,7 @@ export function Runde({
       // Nach der letzten Nachfrage („Forderung bleibt“) zeigt die Runde die Karte gleich.
       setKarteOffen(bekannt && !analyse.nachfrage)
       if (bekannt && analyse.thema_id !== null)
-        rundenKarten = mitKarte(rundenKarten, { art: 'forderung', instrument_id: analyse.instrument_id!, land: aktiv.land })
+        rundenKarten = mitKarte(rundenKarten, { art: 'forderung', instrument_id: analyse.instrument_id! })
     } else if (analyse.typ === 'wert' || analyse.typ === 'grenze') {
       setForderung(null)
       setKarteOffen(false)
@@ -291,7 +290,7 @@ export function Runde({
       setAngebot({ thema_id: analyse.thema_id, vorauswahl: analyse.ursachen_ids, symptom: analyse.symptom })
       setZusammenfassung(analyse.zusammenfassung || null)
     } else {
-      onErgebnis({ ...werteAus(analyse, nr, sprecher, spieler, daten, forderung ?? undefined, rundenKarten), eingaben: spielerTexte(neu) })
+      onErgebnis({ ...werteAus(analyse, nr, spieler, daten, forderung ?? undefined, rundenKarten), eingaben: spielerTexte(neu) })
     }
     setKarten(rundenKarten)
   }
@@ -308,8 +307,7 @@ export function Runde({
     try {
       await analysiere(daten, {
         verlauf: gespraech,
-        rolle: aktiv.rolle,
-        land: aktiv.land,
+        seiten,
         parteien: [spieler[0].partei.id, spieler[1].partei.id],
         auswahl: { thema_id: themaId, ursachen_ids: [], passt_nicht: true },
       })
@@ -339,8 +337,7 @@ export function Runde({
     try {
       analyse = await analysiere(daten, {
         verlauf: [],
-        rolle: aktiv.rolle,
-        land: aktiv.land,
+        seiten,
         parteien: [spieler[0].partei.id, spieler[1].partei.id],
         auswahl: { thema_id: themaId, ursachen_ids: ursachenIds, ...(symptom !== undefined ? { symptom } : {}) },
       })
@@ -360,7 +357,7 @@ export function Runde({
     onErgebnis({
       ...werteAus(
         { ...analyse, zusammenfassung: (unveraendert && zusammenfassung) || analyse.zusammenfassung },
-        nr, sprecher, spieler, daten, forderung ?? undefined, karten,
+        nr, spieler, daten, forderung ?? undefined, karten,
       ),
       ...(eingaben.length ? { eingaben } : {}),
     })
@@ -371,7 +368,6 @@ export function Runde({
 
   return (
     <main className="seite runde">
-      {(rolle || land) && <p className="rolle-chip">{[rolle, land].filter(Boolean).join(' · ')}</p>}
       <h2>Welches Alltagsproblem nervt dich?</h2>
       <p className="hinweis">
         Schreib auf, was in deinem Alltag konkret schiefläuft.
@@ -433,7 +429,7 @@ export function Runde({
           )}
           {karteOffen && (
             <>
-              <ForderungsKarte instrumentId={forderung.instrument_id} land={aktiv.land} />
+              <ForderungsKarte instrumentId={forderung.instrument_id} laender={laender} />
               <button type="button" className="knopf-link" onClick={() => setKarteOffen(false)}>
                 Karte ausblenden
               </button>

@@ -189,6 +189,10 @@ function Duell({ runde, spieler }: { runde: RundenErgebnis; spieler: [Spieler, S
   const ursache = (id: number) => ursachen.find((u) => u.id === id)
   const punkteVon = (e: ParteiErgebnis, id: number) => (e.abdeckung ? (wertungFuer(e, id)?.punkte ?? 0) : null)
   const leere = runde.ergebnisse!.map((e) => ({ e, leer: ohneTreffer(e, landName) })).filter((x) => x.leer)
+  // Jede Seite mit ihrer Rolle; das Bundesland nur, wenn es zählt: bei Ursachen in Länderzuständigkeit (docs/methode.md).
+  const landZaehlt = ursachenIds.some((id) => ursache(id)?.ebene === 'land')
+  const seitenText = (s: Spieler) =>
+    [s.name, ROLLEN.find((r) => r.id === s.rolle)?.label, landZaehlt && s.land ? landName(s.land) : null].filter(Boolean).join(' · ')
 
   return (
     <section className="duell enthuellen" aria-label="Gegenüberstellung je Ursache">
@@ -197,7 +201,7 @@ function Duell({ runde, spieler }: { runde: RundenErgebnis; spieler: [Spieler, S
           <DuellKopf
             key={e.partei.id}
             ergebnis={e}
-            spielerName={spieler[i].name}
+            spielerName={seitenText(spieler[i])}
             gewinnt={runde.punkte[i] === 1}
             seite={i === 0 ? 'a' : 'b'}
           />
@@ -299,9 +303,12 @@ export function Aufloesung({
     return () => clearTimeout(t)
   }, [])
 
-  const rolle = ROLLEN.find((r) => r.id === runde.rolle)?.label
-  const { ursachen } = useDaten()
   const landName = useLandName()
+  // Der Vergleich aller Parteien nutzt nur, was beide Seiten gleich gewählt haben (vergleichsSeite).
+  const abweichend = [
+    ...(spieler[0].rolle !== spieler[1].rolle ? [['Rollen', 'ohne Rolle']] : []),
+    ...(spieler[0].land !== spieler[1].land ? [['Bundesländer', 'nur mit den Bundeswahlprogrammen']] : []),
+  ]
   const ohneWertung = runde.ergebnisse?.filter((e) => !e.abdeckung) ?? []
   const keinLandesprogramm = ohneWertung.filter((e) => e.fehlt?.grund === 'kein_landesprogramm')
 
@@ -322,9 +329,6 @@ export function Aufloesung({
             <blockquote className="problem-zitat">{runde.zusammenfassung}</blockquote>
       <p className="meta">
         {runde.thema ? `Thema: ${runde.thema.name}` : 'Thema nicht in der Datenbank'}
-        {rolle && ` · Rolle: ${rolle}`}
-        {/* Das Bundesland nur, wenn es zählt: bei Ursachen in Länderzuständigkeit (docs/methode.md). */}
-        {runde.land && runde.ursachen_ids?.some((id) => ursachen.find((u) => u.id === id)?.ebene === 'land') && ` · ${landName(runde.land)}`}
       </p>
 
       {!enthuellt ? (
@@ -350,9 +354,9 @@ export function Aufloesung({
           <p className="rundensieger enthuellen" style={{ animationDelay: '1300ms' }}>
             {runde.status === 'unvollstaendig'
               ? keinLandesprogramm.length
-                ? `Keine Wertung: ${keinLandesprogramm.map((e) => e.partei.kurzname).join(' und ')} ${
-                    keinLandesprogramm.length > 1 ? 'haben' : 'hat'
-                  } in ${landName(runde.land ?? '')} kein aktuelles Landeswahlprogramm.`
+                ? `Keine Wertung: kein aktuelles Landeswahlprogramm von ${keinLandesprogramm
+                    .map((e) => `${e.partei.kurzname} in ${landName(e.fehlt?.land ?? '')}`)
+                    .join(' und ')}.`
                 : `Keine Wertung: Für ${ohneWertung.map((e) => e.partei.kurzname).join(' und ')} noch nicht erfasst.`
               : runde.punkte[0] === 1 && runde.punkte[1] === 1
                 ? 'Gleichstand – beide bekommen einen Punkt.'
@@ -406,8 +410,14 @@ export function Aufloesung({
             {runde.nichtErfasst.length > 0 && (
               <p className="beste-hinweis">
                 Ohne Wertung und daher nicht verglichen (noch nicht erfasst
-                {runde.land ? ' oder ohne aktuelles Landeswahlprogramm' : ''}):{' '}
+                {spieler.some((s) => s.land) ? ' oder ohne aktuelles Landeswahlprogramm' : ''}):{' '}
                 {runde.nichtErfasst.map((p) => p.kurzname).join(', ')}.
+              </p>
+            )}
+            {abweichend.length > 0 && (
+              <p className="beste-hinweis">
+                Ihr habt verschiedene {abweichend.map((x) => x[0]).join(' und ')} gewählt. Damit keine Seite den
+                Vergleich bestimmt, ist er {abweichend.map((x) => x[1]).join(' und ')} gerechnet.
               </p>
             )}
           </details>
@@ -415,7 +425,7 @@ export function Aufloesung({
       )}
 
       {enthuellt && runde.forderung && (
-        <ForderungsKarte instrumentId={runde.forderung.instrument_id} land={runde.land} titel="Deine Forderung" />
+        <ForderungsKarte instrumentId={runde.forderung.instrument_id} laender={spieler.map((s) => s.land)} titel="Deine Forderung" />
       )}
 
       {enthuellt && runde.ergebnisse && (

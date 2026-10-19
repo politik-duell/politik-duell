@@ -64,7 +64,6 @@ export default function App() {
   }, [])
 
   const aktuelleNr = runden.length + 1
-  const sprecher: 0 | 1 = runden.length % 2 === 0 ? 0 : 1
 
   function neuesSpiel(ziel: Phase = 'setup') {
     setSpieler(null)
@@ -146,7 +145,6 @@ export default function App() {
           <Runde
             key={aktuelleNr}
             nr={aktuelleNr}
-            sprecher={sprecher}
             spieler={spieler}
             onErgebnis={(r) => {
               setRunden((alt) => [...alt, r])

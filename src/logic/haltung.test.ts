@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { kartenHaltungen, MOCK_DATEN, type Daten } from '../data/quelle'
-import { gespraechsKarten, mitKarte, type RundenErgebnis } from '../spiel'
+import { gespraechsKarten, mitKarte, vergleichsSeite, type RundenErgebnis, type Spieler } from '../spiel'
 import { haltungskarte, POSITION_TEXT } from './haltung'
 
 // Beispieldaten (daten/beispiel/haltungen/): Haltung 1 (Tempolimit) und 2 (Zuwanderung) sind für alle fünf
@@ -57,13 +57,12 @@ describe('Karten der Partie (Endbildschirm)', () => {
     const k = gespraechsKarten([
       runde(1, [{ art: 'haltung', haltung_id: 2 }]),
       runde(2),
-      runde(3, [{ art: 'forderung', instrument_id: 90, land: null }, { art: 'haltung', haltung_id: 2 }]),
-      runde(4, [{ art: 'forderung', instrument_id: 90, land: 'ST' }]),
+      runde(3, [{ art: 'forderung', instrument_id: 90 }, { art: 'haltung', haltung_id: 2 }]),
+      runde(4, [{ art: 'forderung', instrument_id: 90 }]),
     ])
     expect(k).toEqual([
       { art: 'haltung', haltung_id: 2 },
-      { art: 'forderung', instrument_id: 90, land: null },
-      { art: 'forderung', instrument_id: 90, land: 'ST' },
+      { art: 'forderung', instrument_id: 90 },
     ])
   })
 
@@ -71,5 +70,13 @@ describe('Karten der Partie (Endbildschirm)', () => {
     const a = mitKarte([], { art: 'haltung', haltung_id: 1 })
     expect(mitKarte(a, { art: 'haltung', haltung_id: 1 })).toBe(a)
     expect(mitKarte(a, { art: 'haltung', haltung_id: 2 })).toHaveLength(2)
+  })
+})
+
+describe('vergleichsSeite', () => {
+  const s = (rolle: Spieler['rolle'], land: string | null) => ({ rolle, land }) as Spieler
+  it('nutzt Rolle und Land nur, wenn beide Seiten sie gleich gewählt haben', () => {
+    expect(vergleichsSeite([s('mieter', 'ST'), s('mieter', 'ST')])).toEqual({ rolle: 'mieter', land: 'ST' })
+    expect(vergleichsSeite([s('arbeitslos', 'ST'), s('mieter', null)])).toEqual({ rolle: null, land: null })
   })
 })
