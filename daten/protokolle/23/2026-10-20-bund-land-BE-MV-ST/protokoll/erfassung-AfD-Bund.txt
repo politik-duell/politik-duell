@@ -1,0 +1,47 @@
+{
+  "partei_id": 15,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Stärkung der Disziplinarrechte und der rechtlichen Sicherheit von Lehrkräften und Schulen",
+      "ursachen_ids": [2301],
+      "ursachen_offen": [2302],
+      "buendel": "Regeln und Konsequenzen durchsetzen",
+      "zitat": "Disziplinarrechte der Lehrer und Schulen stärken. Um den Auftrag der Schule gerecht zu werden, bedarf es einer Stärkung der rechtlichen Sicherheit und der Disziplinarrechte.",
+      "seite": 162
+    },
+    {
+      "beschreibung": "Bildungsstandards wieder anheben statt Leistungsanforderungen zu senken",
+      "ursachen_ids": [],
+      "ursachen_offen": [2304],
+      "zitat": "Statt einer Senkung der Leistungsanforderungen müssen die Bildungsstandards aller Schulformen und Bildungseinrichtungen wieder auf das Niveau einer führenden innovativen Wissenschafts- und Industrienation angehoben werden.",
+      "seite": 159
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 2304, "name": "Bildungsstandards anheben", "seite": 159 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 2303, "seiten": [46, 47, 48, 49, 50, 161], "grund": "Digitalisierungskapitel (S. 46–50) und Bildungskapitel (S. 158–163) gelesen: kein Schutz vor digitalen Angriffen, kein Jugendschutz im Netz, keine Cybermobbing-Regel. Digitalfreie Grundschule und Schul-IT betreffen Mediennutzung (R2), nicht digitale Angriffe." }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis (S. 1–8); Bildungskapitel „Bildung, Wissenschaft und Technologieoffenheit“ (S. 158–163) vollständig; Digitalisierungskapitel (S. 46–50) vollständig; Fundstellen S. 33, 59, 61, 119, 148 (Stichwortsuche im Gesamttext, zusätzlich soziale Medien S. 132).
+
+Nicht erfasst:
+- S. 33: Ausgrenzung von Impfablehnenden und Streichung der Masern-Impfpflicht für Kinder und Lehrpersonal – Gesundheitskapitel, Ausgrenzung betrifft Impfablehnende, nicht Mitschüler.
+- S. 59, 61, 148: „Entlastung“ bei Steuern, Sparerpauschbetrag und Familie – anderer Zusammenhang, keine Schulentlastung.
+- S. 119: Ablehnung von Gesinnungsüberprüfungen und „Konsequenzen“ im Sicherheitsbereich – anderer Zusammenhang.
+- S. 160: Schulpflicht zur Bildungspflicht lockern – Begründung Recht auf Bildung, kein Bezug zu Druck oder Mobbing.
+- S. 159: Klassenstärken verringern – allgemeine Schulausstattung, kein Bezug zu Klassenklima oder Ausgrenzung genannt.
+- S. 160: Förderschulen als Regelfall – Inklusionspolitik, keine Maßnahme gegen Mobbing oder Leistungsdruck.
+- S. 161: Recht der Schüler, politische Ansichten ohne Angst vor Diskriminierung durch Lehrer oder Mitschüler zu äußern; Neutralitätsgebot der Lehrer – Rechtsbekenntnis ohne eigene Handlung.
+- S. 162: Migration und Deutschunterricht, Islam an Schulen – nicht Mobbing oder Druck.
+
+Richtungen ohne Maßnahme: 2303 Plattformen und Jugendschutz im Netz (keine Fundstelle); 2303 Medienkompetenz und Nutzungsregeln (digitalfreie Grundschule S. 161 nicht dieser Ursache zugeordnet, siehe Nicht erfasst).
+
+Seiten ohne Text: keine im gelesenen Kapitel betroffen (Bildungskapitel S. 158–163 mit Text; S. 157 leer als Kapiteltrenner).
+
+Grenzfälle: Disziplinarrechte (S. 162) als 2301 mit Bündel, zusätzlich 2302 als offen (Handlungssicherheit der Lehrkräfte). Bildungsstandards anheben (S. 159) als offen 2304 – Gegenrichtung zu Entlastung, Hebel „Bildungsstandards anheben“.

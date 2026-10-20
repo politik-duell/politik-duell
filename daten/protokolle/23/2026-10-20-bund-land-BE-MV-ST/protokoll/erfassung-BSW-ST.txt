@@ -1,0 +1,69 @@
+{
+  "partei_id": 17,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Verbindlicher landesweiter Personalschlüssel für Schulsozialarbeit und Schulpsychologie; jede Schule mindestens eine Schulsozialarbeitsstelle",
+      "ursachen_ids": [2301, 2302],
+      "buendel": "Unterstützung durch Fachkräfte und Beschwerdewege",
+      "zitat": "Schulsozialarbeit ist jedoch unverzichtbar für Prävention, Integration, Konfliktlösung und die Unterstützung von Lehrkräften. […] Wir brauchen einen verbindlichen, landesweiten Personalschlüssel für Schulsozialarbeit und Schulpsychologie, orientiert am Bundesdurchschnitt. Jede Schule muss dauerhaft mindestens eine Schulsozialarbeiterstelle haben.",
+      "seite": 47
+    },
+    {
+      "beschreibung": "Lehramtsausbildung: Theorie und Praxis im Studium besser verzahnen, damit Absolventen im Beruf bestehen",
+      "ursachen_ids": [2302],
+      "zitat": "Theorie und Praxis müssen im Studium besser verzahnt werden, damit Absolventen sicher, handlungsfähig und langfristig im Beruf bestehen können.",
+      "seite": 52
+    },
+    {
+      "beschreibung": "Schulsekretariate aufwerten, Aufgaben erweitern und gemeinsam von Land und Kommunen finanzieren, um Lehrkräfte und Schulleitungen zu entlasten",
+      "ursachen_ids": [2304],
+      "buendel": "Belastung reduzieren",
+      "zitat": "Zur Entlastung von Lehrkräften und Schulleitungen müssen Schulsekretariate aufgewertet, ihre Aufgaben erweitert und gemeinsam von Land und Kommunen finanziert werden.",
+      "seite": 44
+    },
+    {
+      "beschreibung": "Sozialpsychiatrischen Dienst ausbauen und stärker in Jugend- und Schularbeit einbinden",
+      "ursachen_ids": [2304],
+      "buendel": "Befähigung und Stressbewältigung",
+      "zitat": "Immer mehr sozial benachteiligte Menschen, Rentner, Geflüchtete sowie Jugendliche leiden unter Depressionen, Zukunftsängsten oder Traumafolgestörungen. […] Der sozialpsychiatrische Dienst muss deshalb ausgebaut und stärker in Jugend-, Schul- und Integrationsarbeit eingebunden werden.",
+      "seite": 59
+    },
+    {
+      "beschreibung": "Längeres gemeinsames Lernen als Antwort auf Überforderung und Leistungsdruck an Schulen",
+      "ursachen_ids": [],
+      "ursachen_offen": [2304],
+      "zitat": "Überforderung, Leistungsdruck, Nachhilfe und Schulabbrüche sind häufige Folgen. Das BSW ist deshalb für längeres gemeinsames Lernen bis zur 8. Klasse.",
+      "seite": 45
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 2302, "name": "Lehramtsausbildung und Praxisbezug", "seite": 52 },
+    { "ursache": 2304, "name": "Schulstruktur: längeres gemeinsames Lernen", "seite": 45 }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis S. 1–6; Kapitel 4.2 „Gute Bildung – Starke Zukunft“ S. 41–52 vollständig; 4.4 „Psychische Gesundheit“ S. 57–59; 5.3 Justiz S. 72–73 (Ombudsstellen); 5.4 „Teilhabe der Jugend“ S. 73. Kapitel 2 (Demokratie, S. 10–15) und 4.1 Kultur (S. 38–41) nur überflogen; dort nichts zu Schule oder Konflikten an Schulen.
+
+Nicht erfasst:
+- S. 43: „soziales Lernen in Gemeinschaft“ als Teil eines Ziels/einer Lagebeschreibung, keine Handlungszusage (2301).
+- S. 45: verbindliches Smartphone-Verbot in der Schule – Mediennutzung von Kindern (R2), eigenes Thema.
+- S. 45: KI an Schulen, „Lehrkräfte brauchen dafür gezielte Aus- und Fortbildung“ – Bedarf, nicht Mobbing-bezogen; Bündel „Fortbildung und Handlungssicherheit der Lehrkräfte“ dadurch ohne Fundstelle.
+- S. 44: Arbeitszeiterfassung, Unterrichtsverpflichtung (als „würde“-Formulierung), Zurücknahme von Kürzungen bei Anrechnungsstunden – Arbeitsbelastung der Lehrkräfte ohne Bezug zu Druck auf Schülerinnen und Schüler; nur die ausdrücklich als Entlastung genannten Schulsekretariate wurden erfasst.
+- S. 43: Lernmittelfreiheit – Kosten für Eltern, kein Bezug zu Mobbing oder Leistungsdruck.
+- S. 48: Schulpsychologie „präventiv arbeiten“, multiprofessionelle Teams, Brennpunktschulen, Schulgesetz – Personal- bzw. Unterstützungsbereich gleichartig zur Maßnahme S. 47 (eine Maßnahme je Bündel), nicht eigens erfasst.
+- S. 48: Ganztag – „sollte die Landesregierung … einführen“ (Soll-Formulierung, Schritt 4).
+- S. 73: Mitbestimmung und Beteiligung von Schülerinnen und Schülern in der Schule – kein Bezug zu Klassenklima, Ausgrenzung oder Mobbing im Text.
+- S. 72–73: unabhängige Ombudsstellen bei Konflikten in der Jugendhilfe – nicht Schule (R1: Beschwerdewege an Schulen).
+- S. 59: Psychotherapie-Kassensitze, Akutsprechstunden, Ausbildungskapazitäten – allgemeine Versorgung ohne Bezug zu schulischem Druck.
+- S. 50–52: Hochschulstudium (Prüfungsdruck, Bologna, Diplom) – Prüfauftrag („sollte … geprüft werden“), Soll-Formulierung („soll einen garantierten Zugang … erhalten“) und Ziele; kein Schulbezug.
+- S. 72, 75: „Entlastung“ in Justiz, Verwaltung – andere Bereiche.
+
+Richtungen ohne Maßnahme:
+- 2301, Regeln und Konsequenzen durchsetzen: keine Fundstelle zu Schule; S. 16 betrifft Strafen und Konsequenzen in der Corona-Zeit.
+- 2301, Klassenklima und soziales Lernen: keine konkrete Zusage außer über die Schulsozialarbeit (S. 47, nach R2 auch 2301).
+- 2302, Fortbildung und Handlungssicherheit der Lehrkräfte bei Mobbing: keine Fundstelle (S. 45 KI, S. 46–47 Kita).
+
+Seiten ohne Text: keine relevante Rolle.

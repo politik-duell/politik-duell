@@ -1,0 +1,100 @@
+{
+  "partei_id": 17,
+  "land": "BE",
+  "massnahmen": [
+    {
+      "beschreibung": "Flächendeckende Präventions- und Anti-Gewaltprogramme an Schulen einführen",
+      "ursachen_ids": [2301],
+      "buendel": "Klassenklima und soziales Lernen stärken",
+      "zitat": "Es müssen flächendeckend Präventions- und Anti-Gewaltprogramme eingeführt werden.",
+      "seite": 40
+    },
+    {
+      "beschreibung": "Mehr Sozialarbeit an Schulen; Prävention statt Repression bei Gewalt unter Minderjährigen",
+      "ursachen_ids": [2302, 2301],
+      "buendel": "Unterstützung durch Fachkräfte und Beschwerdewege",
+      "zitat": "Schwere Körperverletzungen unter Minderjährigen nehmen zu. Wir setzen auf Prävention vor Repression. In die Schulen gehören mehr Sozalarbeiter.",
+      "seite": 40
+    },
+    {
+      "beschreibung": "Fortbildungsangebote für Lehrkräfte, Sozialarbeit und Polizei gegen Cybermobbing erweitern und verbessern",
+      "ursachen_ids": [2302],
+      "buendel": "Fortbildung und Handlungssicherheit der Lehrkräfte",
+      "zitat": "Cybermobbing und Online-Kriminalität unter Jugendlichen sagen wir den Kampf an. Dazu erweitern und verbessern wir Fortbildungsangebote für Lehrkräfte, Sozialarbeiter und die Polizei.",
+      "seite": 40
+    },
+    {
+      "beschreibung": "Frühere Intervention bei Gewalt in Schulen und intensive soziale Betreuung von Mehrfachtätern",
+      "ursachen_ids": [2302],
+      "zitat": "Bei Gewalt in Schulen muss eine frühere Intervention stattfinden. Insbesondere für Mehrfachtäter streben wir eine intensive soziale Betreuung an.",
+      "seite": 40
+    },
+    {
+      "beschreibung": "Wiedereinführung einer verbindlichen Vorschulphase, die soziales Lernen fördert",
+      "ursachen_ids": [],
+      "ursachen_offen": [2301],
+      "zitat": "Darüber hinaus setzen wir uns für die Wiedereinführung einer verbindlichen Vorschulphase ein, die gezielt Sprachbildung, Zahlenverständnis und soziales Lernen fördert.",
+      "seite": 14
+    },
+    {
+      "beschreibung": "Verteilungsquoten beim Übergang in die Grundschulen für bessere Durchmischung nach Sprachstand",
+      "ursachen_ids": [],
+      "ursachen_offen": [2301],
+      "zitat": "Darüber hinaus soll durch Verteilungsquoten beim Übergang in die Grundschulen eine bessere Durchmischung von Schülern mit unterschiedlichem deutschen Sprachstand innerhalb der Bezirke erreicht werden. Ziel ist es, Segregation zu verhindern und Begegnung zu fördern.",
+      "seite": 14
+    },
+    {
+      "beschreibung": "Zentrales IT-System für alle Berliner Schulen zur Entlastung und Verringerung des Verwaltungsaufwands",
+      "ursachen_ids": [],
+      "ursachen_offen": [2304],
+      "zitat": "Zur Entlastung der Schulen und für mehr Transparenz soll ein zentrales IT-System für alle Berliner Schulen geschaffen werden, das den Verwaltungsaufwand verringert und die Kommunikation zwischen Lehrkräften, Eltern und Schulverwaltung erleichtert.",
+      "seite": 16
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 2304,
+      "seiten": [15, 16, 30, 46, 53, 62],
+      "grund": "Kein Maßnahme für Leistungs- oder Prüfungsdruck von Schülern. Leistungsbewertung (S. 15) ist Leitbild ohne konkrete Maßnahme; IT-System (S. 16) nur als Grenzfall offen; Entlastungs-Treffer betreffen Rundfunkbeitrag, Strom, Kommunen und öffentlichen Dienst."
+    },
+    {
+      "ursache": 2302,
+      "seiten": [5, 14, 16],
+      "grund": "Friedensbildung-Module in der Lehrkräfteausbildung (S. 5) betreffen Friedens- und Wehrdienstthemen, nicht Umgang mit Mobbing. Brennpunkt-Förderprogramm mit Fortbildungen (S. 14) und Schulpsychologen sowie multiprofessionelle Teams (S. 16) nennen im Zitat kein Mobbing, Gewalt oder Konflikt (R2)."
+    }
+  ],
+  "neue_buendel": [
+    {
+      "ursache": 2302,
+      "name": "Frühintervention bei Gewalt an Schulen",
+      "seite": 40
+    }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis entfällt (Programm ohne Inhaltsverzeichnis, Gliederung über Überschriften); Seiten 1–6 überflogen; Kapitel „Bildung“ (S. 14–18, Schulen, Digitalisierung, Schulreinigung); Kapitel „Innere Sicherheit“ Abschnitt „Prävention und Bekämpfung von Gewalt an Schulen“ (S. 39–40); Fundstellen S. 3, 5, 14, 16, 22, 28, 29, 30, 33, 40, 46, 50, 53, 60, 62, 64 gelesen.
+
+Nicht erfasst (gelesen, nicht aufgenommen):
+- S. 1–3: Corona-Aufarbeitung und „Ausgrenzung Andersdenkender“, kein Schulbezug zu Mobbing.
+- S. 5: Friedensbildung-Module, Lehrkräfte-Fortbildung zu Friedens- und Wehrdienstthemen (siehe nicht_erfasst 2302).
+- S. 14: Förderprogramm für Schulen in Brennpunktlagen mit Fortbildungen, kein Bezug zu Mobbing.
+- S. 15: „Leistungsbewertung soll kein Mittel der Selektion […] sein“ – Leitbild ohne Maßnahme.
+- S. 16: Schulpsychologen; multiprofessionelle Teams; Schulassistenz (Zuständigkeit Inklusion).
+- S. 17: Smartphones im Unterricht, Detox-Klassen – Mediennutzung von Kindern (R2), kein Thema.
+- S. 40: „kann an Schulen temporärer Wachschutz eingesetzt werden“ – Möglichkeit.
+- S. 64: „Keine Ausgrenzung durch Digitalisierung“ – betrifft Bürgerdienste, nicht Schule.
+- S. 22, 28, 29, 30, 33, 46, 50, 53, 60, 62: Treffer aus anderen Zusammenhängen (Pflege, Krankenhäuser, Post-Covid, Rundfunk, Strom, Bau, Kommunalfinanzen, Verbraucherschutz, öffentlicher Dienst).
+
+Gleichartige weitere Stellen (Protokoll, nicht separat erfasst):
+- S. 40 „Wir wollen erfolgreiche Bezirksprogramme in den Bereichen Netzwerkarbeit, Anti-Gewalt-Trainings, Elternarbeit und Schulsozialarbeit ausbauen.“ – gleicher Hebel wie Bündel „Klassenklima und soziales Lernen stärken“ (M1) und „Unterstützung durch Fachkräfte und Beschwerdewege“ (M2).
+
+Richtungen ohne Maßnahme:
+- Bündel „Regeln und Konsequenzen durchsetzen“ (2301): Treffer „Konsequenzen“ nur in S. 28, 50, 60 (nicht Schule); keine Maßnahme.
+- Bündel „Befähigung und Stressbewältigung“ (2304): „psychische Gesundheit“ nur S. 62 (öffentlicher Dienst); keine Maßnahme.
+- Bündel „Belastung reduzieren“ (2304): nur die Grenzfälle oben (IT-System offen); keine Maßnahme.
+
+Grenzfälle: Vorschulphase (S. 14, 2301), Verteilungsquoten (S. 14, 2301), IT-System zur Entlastung der Schulen (S. 16, 2304).
+Seiten ohne Text: keine relevanten.
+Stand im PDF: nicht geprüft (Auftrag: Stand 2026-04-25; Titelseite ohne Datum).

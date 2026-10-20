@@ -1,0 +1,2454 @@
+{
+  "thema_id": 25,
+  "programme": [
+    {
+      "partei_id": 11,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Digital Services Act mit Schwerpunkt auf Transparenz sowie Jugend- und Medienschutz umsetzen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2502
+          ],
+          "zitat": "Wir stellen sicher, dass bei der Umsetzung des Digital Services Act der Schwerpunkt auf mehr Transparenz, Kampf gegen Desinformation sowie Jugend- und Medienschutz gelegt wird.",
+          "seite": 41
+        },
+        {
+          "beschreibung": "Verfassungsfeindliche und antisemitische Äußerungen konsequent verfolgen und ahnden",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2501,
+            2502
+          ],
+          "zitat": "Delikte wie das Zeigen verfassungsfeindlicher Symbole sowie verfassungsfeindliche und antisemitische Äußerungen müssen mit der ganzen Konsequenz des Rechtsstaates verfolgt und geahndet werden.",
+          "seite": 45
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 2502,
+          "name": "Plattformen verbindlich in die Pflicht nehmen",
+          "seite": 41
+        },
+        {
+          "ursache": 2501,
+          "name": "Strafverfolgung von Hass und Bedrohung im Netz",
+          "seite": 45
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2503,
+          "seiten": [
+            40,
+            41,
+            45,
+            46
+          ],
+          "grund": "Anonymität des Internets nur als Grundsatz genannt; keine Moderations-, Gestaltungs- oder Präventionsmaßnahme. Bundesprogramm Demokratie leben (S. 46) ist Extremismusprävention (R2)."
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Strategien gegen digitale Gewalt gezielt weiterentwickeln und bestehende Beratungsangebote ausbauen",
+          "ursachen_ids": [
+            2501
+          ],
+          "buendel": "Meldewege und Hilfe für Betroffene ausbauen",
+          "zitat": "Unsere Strategien zur Bekämpfung digitaler Gewalt werden wir gezielt weiterentwickeln, bestehende Beratungsangebote ausbauen […]",
+          "seite": 12
+        },
+        {
+          "beschreibung": "Digitale Gewalt umfassend strafrechtlich erfassen und Lücken schließen, auch bei Mobbing in Sozialen Medien und Deepfakes",
+          "ursachen_ids": [
+            2501
+          ],
+          "buendel": "Strafverfolgung von Hass und Bedrohung im Netz",
+          "zitat": "Deshalb werden wir die Bekämpfung digitaler Gewalt – auch und insbesondere gegen Frauen – konsequent verstärken. […] dass auch psychische und digitale Gewalt umfassend strafrechtlich erfasst werden. Neue Formen digitaler Gewalt, etwa durch digitale Belästigungen, Mobbing in den Sozialen Medien oder manipulierte Inhalte wie Deepfakes müssen konsequent bekämpft und bestehende gesetzliche Lücken geschlossen werden.",
+          "seite": 12
+        },
+        {
+          "beschreibung": "Spezialisierte Staatsanwaltschafts-Abteilung für Hasskriminalität ausbauen und stärken",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2501
+          ],
+          "zitat": "Die spezialisierte Abteilung für Staatsschutzdelikte und Hasskriminalität bei der Staatsanwaltschaft werden wir weiter ausbauen und stärken.",
+          "seite": 22
+        },
+        {
+          "beschreibung": "Antisemitische Hetze konsequent verfolgen und bestrafen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2501
+          ],
+          "zitat": "Antisemitische Hetze und Straftaten sind konsequent zu verfolgen und zu bestrafen.",
+          "seite": 22
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 2501,
+          "name": "Spezialabteilung Hasskriminalität ausbauen",
+          "seite": 22
+        },
+        {
+          "ursache": 2501,
+          "name": "Verfolgung antisemitischer Hetze",
+          "seite": 22
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "Hetze",
+          "ursache": 2501,
+          "richtung": "Strafverfolgung von Hass und Bedrohung im Netz"
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2503,
+          "seiten": [
+            11,
+            12,
+            63
+          ],
+          "grund": "Medienbildung in Schulen (S. 63) gehört nach R2 zu Mediennutzung von Kindern, nicht zu Hass im Netz; keine Aussage zu Moderation, Algorithmen, Anonymität oder Gesprächskultur im Netz; gewaltfreie Konfliktlösung (S. 11) ohne Online-Bezug."
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Vorratsdatenspeicherung auf Bundesebene einfordern, unter anderem zur Bekämpfung von Hasskriminalität im Internet",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2501
+          ],
+          "zitat": "Nach Überzeugung sämtlicher Experten ist eine Speicherung von Vorratsdaten unverzichtbar, um insbesondere Kindesmissbrauch und Hasskriminalität im Internet wirksam zu bekämpfen. […] Daher werden wir weiterhin auf Bundesebene die Einführung einer mit dem EU-Recht vereinbaren Vorratsdatenspeicherung einfordern.",
+          "seite": 35
+        },
+        {
+          "beschreibung": "Strafrecht gegen digitale sexualisierte Gewalt mit KI (Deepfakes) weiterentwickeln",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2501
+          ],
+          "zitat": "Zudem werden wir uns konsequent für die kontinuierliche Weiterentwicklung des Strafrechts zur Bekämpfung neuer Formen von Kriminalität einsetzen, beispielsweise digitaler sexualisierter Gewalt unter Anwendung Künstlicher Intelligenz in Form von Deepfakes.",
+          "seite": 35
+        },
+        {
+          "beschreibung": "Gesetzliche Klarnamen- und ID-Pflicht gegenüber Plattformbetreibern und Anbietern digitaler Dienste",
+          "ursachen_ids": [
+            2503
+          ],
+          "zitat": "Wir setzen uns für eine gesetzliche Klarnamen- und ID-Pflicht gegenüber Plattformbetreibern und Providern ein.",
+          "seite": 38
+        },
+        {
+          "beschreibung": "Klare Haltung gegen Hass als Pflichtbestandteil schulischer Erziehung",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2503
+          ],
+          "zitat": "Auch politische Bildung, Erinnerungskultur sowie eine klare Haltung gegen Antisemitismus, Extremismus und Hass sind Pflichtbestandteile schulischer Erziehung.",
+          "seite": 52
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 2501,
+          "name": "Strafverfolgung von Hass und Bedrohung im Netz",
+          "seite": 35
+        },
+        {
+          "ursache": 2501,
+          "name": "Strafrecht gegen digitale sexualisierte Gewalt",
+          "seite": 35
+        },
+        {
+          "ursache": 2503,
+          "name": "Moderation und Gestaltung der Plattformen",
+          "seite": 38
+        },
+        {
+          "ursache": 2503,
+          "name": "Prävention, Medienkompetenz und Gesprächskultur",
+          "seite": 52
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Medienkompetenz an Schulen stärken: Projekte und Unterricht zur kritischen Reflexion digitaler Medien",
+          "ursachen_ids": [
+            2503
+          ],
+          "zitat": "Medienkompetenzen stärken: Der verantwortungsvolle Umgang mit digitalen Technologien und Künstlicher Intelligenz (KI) sind Hauptaufgaben gegenwärtiger und zukünftiger schulischer Arbeit. […] Durch gezielte Projekte, wie die „Lernwelt Sachsen-Anhalt“ und praxisnahe Unterrichtseinheiten werden Fähigkeiten entwickelt, die Kinder und Jugendliche nicht nur auf die Anforderungen der Arbeitswelt vorbereiten, sondern auch ihre kritische Reflexionsfähigkeit im Umgang mit digitalen Medien stärken.",
+          "seite": 22
+        },
+        {
+          "beschreibung": "Medienpädagogische Angebote für alle Generationen ausbauen, mit Schulen und zivilgesellschaftlichen Trägern",
+          "ursachen_ids": [
+            2503
+          ],
+          "zitat": "Medienkompetenz stärken: In einer Welt aus Reels, KI-generierten Bildern und Social-Media-Schlagzeilen braucht es Fähigkeiten zur Bewertung, Einordnung und Reflexion. Wir werden medienpädagogische Angebote ausbauen und mit Schulen, der Landesmedienanstalt und zivilgesellschaftlichen Trägern neue (Weiter-)Bildungsformate für alle Generationen entwickeln.",
+          "seite": 36
+        },
+        {
+          "beschreibung": "Kinder- und Jugendmedienschutz: Meldemöglichkeiten besser auffindbar machen, Schutzmaßnahmen ausbauen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2501
+          ],
+          "zitat": "Wir wollen für einen besseren Schutz unserer Kinder, dass das in den Bedingungen für Social Media-Plattformen bereits verankerte Mindestalter durch eine wirksame Altersüberprüfung auch tatsächlich durchgesetzt wird. Wir werden Schutzmaßnahmen für junge Nutzerinnen und Nutzer weiterentwickeln und mit unserer Landesmedienanstalt durchsetzen, etwa durch verpflichtende Alterskennzeichnung digitaler Inhalte, besser auffindbare Meldemöglichkeiten und technische Schutzmechanismen.",
+          "seite": 35
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Digitales Gewaltschutzgesetz gegen digitale Gewalt, Täter-Accounts leichter sperrbar, Verbandsklage für Betroffene",
+          "ursachen_ids": [
+            2501
+          ],
+          "ursachen_offen": [
+            2502
+          ],
+          "zitat": "Wir wollen konsequent auch gegen digitale Gewalt vorgehen. Dazu schaffen wir ein digitales Gewaltschutzgesetz. […] Zudem sollen die Täter-Accounts einfacher gesperrt werden können. Versehen mit einem Verbandsklagerecht sollen Rechte der Betroffenen effektiv durchgesetzt werden können.",
+          "seite": 44
+        },
+        {
+          "beschreibung": "Log-in-Falle: Erfassung der IP-Adresse bei Anmeldung an verdächtigen Konten, damit Stammdaten ermittelt werden können",
+          "ursachen_ids": [
+            2501
+          ],
+          "zitat": "Ergänzend setzen wir dabei auf die Log-in-Falle, die bei der Anmeldung an einem verdächtigen Benutzerkonto die IP-Adresse erfasst, wodurch per Justiz-Schnittstellen Stammdaten ermittelt werden können – selbstverständlich unter strikter Wahrung der Grundrechte und des Datenschutzes.",
+          "seite": 45
+        },
+        {
+          "beschreibung": "Zentralstelle für strafbare Inhalte im Internet beim Bundeskriminalamt weiter ausbauen",
+          "ursachen_ids": [
+            2501
+          ],
+          "zitat": "Wir werden konsequent dagegen vorgehen und die Zentralstelle für strafbare Inhalte im Internet beim Bundeskriminalamt weiter ausbauen, um die Verfolgung von Online-Hasskriminalität effektiver zu gestalten.",
+          "seite": 48
+        },
+        {
+          "beschreibung": "Datenschutz bei Hassdelikten: Wohnanschrift im Strafverfahren nicht mehr durch Akteneinsicht offenlegen",
+          "ursachen_ids": [
+            2501
+          ],
+          "zitat": "Wir verbessern den Datenschutz bei Hassdelikten. Im Strafverfahren soll die Wohn- oder Aufenthaltsanschrift künftig nicht mehr durch Akteneinsicht offengelegt werden müssen, um Betroffene besser zu schützen.",
+          "seite": 48
+        },
+        {
+          "beschreibung": "Volksverhetzungsparagrafen überarbeiten, um Schutzlücken bei menschenverachtender Hetze zu schließen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2501
+          ],
+          "zitat": "Wir schließen die Schutzlücken bei menschenverachtender Hetze. […] und den Volksverhetzungsparagrafen entsprechend überarbeiten.",
+          "seite": 48
+        },
+        {
+          "beschreibung": "Ansprechstelle für Kommunalpolitik im Deutschen Forum Kriminalprävention stärken",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2501
+          ],
+          "zitat": "Wir stärken die neue Ansprechstelle für Kommunalpolitik im Deutschen Forum Kriminalprävention.",
+          "seite": 48
+        },
+        {
+          "beschreibung": "Plattformbetreiber verpflichten, illegale Inhalte zu entfernen",
+          "ursachen_ids": [
+            2502
+          ],
+          "zitat": "Wir setzen klare Regeln zur Bekämpfung von Hasskriminalität und Netzstraftaten um. Plattformbetreiber werden verpflichtet, illegale Inhalte zu entfernen […]",
+          "seite": 45
+        },
+        {
+          "beschreibung": "Plattformen verpflichten, Algorithmen und Entscheidungsprozesse der Inhaltsdarstellung offenzulegen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2502,
+            2503
+          ],
+          "zitat": "Plattformen sollen verpflichtet werden, ihre Algorithmen und Entscheidungsprozesse zur Inhaltsdarstellung offenzulegen und auf diskriminierende oder manipulative Praktiken zu prüfen.",
+          "seite": 50
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Digitale Präventionsansätze gegen Hassrede und Radikalisierung, Teil einer Strategie für Zusammenhalt im Netz.",
+          "ursachen_ids": [
+            2503
+          ],
+          "buendel": "Prävention, Medienkompetenz und Gesprächskultur",
+          "zitat": "Berlin braucht eine Strategie für lebendige Demokratie und gesellschaftlichen Zusammenhalt im Netz, ergänzt um digitale Präventionsansätze gegen Hassrede, Desinformation und Radikalisierung.",
+          "seite": 29
+        },
+        {
+          "beschreibung": "Hasskriminalität online wie offline stärker bekämpfen, Beratungsstellen stärken und Aufklärungsquoten erhöhen.",
+          "ursachen_ids": [
+            2501
+          ],
+          "buendel": "Strafverfolgung von Hass und Bedrohung im Netz",
+          "zitat": "Gewalt gegen Frauen, queerfeindliche Übergriffe und andere Formen von Hasskriminalität bekämpfen wir entschlossen - egal, ob sie online oder offline stattfinden. Wir stärken spezialisierte Beratungsstellen und erhöhen die […].",
+          "seite": 30
+        },
+        {
+          "beschreibung": "Aufklärung, um Kinder und Frauen besser vor Cybergrooming und sexualisierter Gewalt im Netz zu schützen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2503
+          ],
+          "neue_buendel": "Aufklärung gegen Cybergrooming und sexualisierte Gewalt im Netz",
+          "zitat": "Durch flächendeckende […] schützen wir Kinder und Frauen besser vor Cybergrooming und sexualisierter Gewalt im Netz.",
+          "seite": 32
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 2503,
+          "name": "Aufklärung gegen Cybergrooming und sexualisierte Gewalt im Netz",
+          "seite": 32
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Mit Kampagnen gegen Fake News und Fehlinformationen sowie Förderung von Medienkompetenz Hass im Netz begegnen.",
+          "ursachen_ids": [
+            2503
+          ],
+          "buendel": "Prävention, Medienkompetenz und Gesprächskultur",
+          "zitat": "Dem Hass begegnen wir überall – auch im Netz – mit Kampagnen gegen Fake News und Fehlinformationen sowie landesweiter Förderung von Medienkompetenz.",
+          "seite": 44
+        },
+        {
+          "beschreibung": "Sich im Bund für ein digitales Gewaltschutzgesetz mit Betroffenenrechten und Schließung von Strafverfolgungslücken einsetzen.",
+          "ursachen_ids": [
+            2501
+          ],
+          "buendel": "Strafverfolgung von Hass und Bedrohung im Netz",
+          "zitat": "Wir setzen uns für die Einführung eines digitalen Gewaltschutzgesetzes mit wirksamen Betroffenenrechten und Schließung bestehender Strafverfolgungslücken im Bund ein.",
+          "seite": 38
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Fachkräfte des Hilfesystems im Umgang mit digitaler Gewalt schulen.",
+          "ursachen_ids": [
+            2501
+          ],
+          "buendel": "Meldewege und Hilfe für Betroffene ausbauen",
+          "zitat": "Das Hilfesystem braucht Schulung und technischen Schutz. Fachkräfte werden im Umgang mit digitaler Gewalt geschult […]",
+          "seite": 32
+        },
+        {
+          "beschreibung": "Digitale Präsenz von Strafverfolgungs- und Aufsichtsbehörden ausbauen und digitale Beratungsangebote ergänzen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2501
+          ],
+          "buendel": "Strafverfolgung von Hass und Bedrohung im Netz",
+          "zitat": "Fachkräfte werden im Umgang mit digitaler Gewalt geschult, die digitale Präsenz von Strafverfolgungsbehörden und Aufsichtsbehörden ausgebaut und um digitale Beratungsangebote ergänzt.",
+          "seite": 32
+        },
+        {
+          "beschreibung": "Medienbildung ausbauen, insbesondere zu Hass im Netz, Desinformation und gezielten Kampagnen.",
+          "ursachen_ids": [
+            2503
+          ],
+          "buendel": "Prävention, Medienkompetenz und Gesprächskultur",
+          "zitat": "Medienbildung wird weiter ausgebaut – insbesondere zu Hass im Netz, Desinformation und gezielten Kampagnen.",
+          "seite": 35
+        },
+        {
+          "beschreibung": "Zivilgesellschaftliche Initiativen, die sich gegen Hass engagieren, verlässlich fördern.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2503
+          ],
+          "zitat": "Zivilgesellschaftliche Initiativen, die sich für Menschenrechte und gegen Hass engagieren, werden verlässlich gefördert.",
+          "seite": 36
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2501,
+          "seiten": [
+            27,
+            31,
+            32,
+            33,
+            35
+          ],
+          "grund": "Opferschutz allgemein (S. 32) gleichartig zur Hilfe-Maßnahme; Staatsanwaltschaften ohne Hass-Bezug (S. 31); Verfolgung von Extremismus (S. 33, 35) nach R2 nicht dieses Thema; Häuser des Jugendrechts (S. 27) ohne Netzbezug."
+        },
+        {
+          "ursache": 2503,
+          "seiten": [
+            19,
+            41
+          ],
+          "grund": "Medienbildung in allen Fächern (S. 19) gleichartig zur Medienbildung auf S. 35; E-Sport-Medienkompetenz und Spielsuchtprävention (S. 41) ohne Hass-Bezug, gleichartig Medienkompetenz."
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 2503,
+          "name": "Zivilgesellschaftliche Initiativen gegen Hass fördern",
+          "seite": 36
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "medienbildung",
+          "ursache": 2503,
+          "richtung": "Medienbildung zu Hass im Netz"
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Als rechtswidrig gemeldete Hassinhalte konsequent löschen und Accounts schneller sperren; digitales Gewaltschutzgesetz.",
+          "ursachen_ids": [
+            2502
+          ],
+          "ursachen_offen": [
+            2501
+          ],
+          "buendel": "Plattformen verbindlich in die Pflicht nehmen",
+          "zitat": "Diese Inhalte […] müssen konsequent gelöscht und entsprechende Accounts schneller gesperrt werden. Dafür sorgen wir mit einem digitalen Gewaltschutzgesetz und stärken die Rechte der Nutzer*innen.",
+          "seite": 114
+        },
+        {
+          "beschreibung": "Medienanstalten der Länder sollen mehr Ressourcen für Löschung und Verfolgung von Hasskriminalität im Netz erhalten.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2502,
+            2501
+          ],
+          "zitat": "Die Medienanstalten der Bundesländer müssen weitere Ressourcen erhalten, um effizient bei der Löschung und Verfolgung von Hasskriminalität im Internet und in den sozialen Medien zusammenzuarbeiten.",
+          "seite": 115
+        },
+        {
+          "beschreibung": "Strafverfolgung im digitalen Raum stärken: Login-Falle und gerichtlich angeordnete Accountsperren bei anonymen Accounts.",
+          "ursachen_ids": [
+            2501
+          ],
+          "ursachen_offen": [
+            2502
+          ],
+          "buendel": "Strafverfolgung von Hass und Bedrohung im Netz",
+          "zitat": "Wir stärken die effektiven Möglichkeiten der deutschen Strafverfolgungsbehörden im digitalen Raum, um gegen Organisierte Kriminalität und Hasskriminalität vorgehen zu können und bei anonymisierten Accounts, die derzeit strafrechtlich kaum verfolgt werden können, Strafverfolgung mit der Login-Falle und durch Gerichte angeordnete Accountsperren zu ermöglichen.",
+          "seite": 140
+        },
+        {
+          "beschreibung": "Hasskriminalität gegen queere Menschen bekämpfen; Erfassung verbessern, Unterstützungsangebote und Ansprechstellen ausbauen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2501
+          ],
+          "buendel": "Meldewege und Hilfe für Betroffene ausbauen",
+          "zitat": "Wir wollen den Schutz vor Diskriminierung […] Hasskriminalität gegen LSBTIQ* entschlossen bekämpfen. Dazu verbessern wir die Erfassung von queerfeindlichen Straftaten und bauen die Unterstützungsangebote sowie Ansprechstellen in Behörden und in der Justiz weiter aus.",
+          "seite": 121
+        },
+        {
+          "beschreibung": "Polizeistatistik reformieren, um Hasskriminalität besser zu erfassen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2501
+          ],
+          "zitat": "Wir reformieren die Polizeistatistik, um Hasskriminalität besser zu erfassen.",
+          "seite": 133
+        },
+        {
+          "beschreibung": "Verbreitung von Nacktbildern gegen den Willen Betroffener grundsätzlich strafbar machen (EU-Richtlinie umsetzen).",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2501
+          ],
+          "zitat": "Bei der Umsetzung der EU-Richtlinie zur Bekämpfung von Gewalt gegen Frauen setzen wir uns dafür ein, dass die Verbreitung von KI-generierten oder echten Nacktbildern gegen den Willen der Betroffenen grundsätzlich eine Straftat darstellt.",
+          "seite": 119
+        },
+        {
+          "beschreibung": "Antisemitismusstrategie für den digitalen Raum erarbeiten.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2503
+          ],
+          "zitat": "Wir setzen uns für die Erarbeitung einer Antisemitismusstrategie für den digitalen Raum ein.",
+          "seite": 116
+        },
+        {
+          "beschreibung": "Aufbau digitaler Fähigkeiten und Medienkompetenz in Schulen.",
+          "ursachen_ids": [
+            2503
+          ],
+          "buendel": "Prävention, Medienkompetenz und Gesprächskultur",
+          "zitat": "Außerdem setzen wir auf den Aufbau von digitalen Fähigkeiten, Medienkompetenz und auf den verantwortlichen Einsatz von Künstlicher Intelligenz (KI).",
+          "seite": 77
+        },
+        {
+          "beschreibung": "Manipulative Algorithmen sozialer Netzwerke strenger regulieren; auf Suchtwirkung ausgerichtete Algorithmen nicht zulassen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2503
+          ],
+          "buendel": "Moderation und Gestaltung der Plattformen",
+          "zitat": "Manipulative Algorithmen von Social-Media-Plattformen wollen wir strenger regulieren. Algorithmen, die gezielt darauf ausgerichtet sind, unsere Kinder süchtig zu machen, werden wir nicht dulden.",
+          "seite": 85
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 2502,
+          "name": "Ausstattung der Medienaufsicht",
+          "seite": 115
+        },
+        {
+          "ursache": 2501,
+          "name": "Strafbarkeit der Verbreitung von Nacktbildern ohne Zustimmung",
+          "seite": 119
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "accountsperr",
+          "ursache": 2502,
+          "richtung": "Sperrung von Accounts"
+        },
+        {
+          "begriff": "nacktbild",
+          "ursache": 2501,
+          "richtung": "Verbreitung ohne Zustimmung"
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Zentrale Meldestelle für digitale Gewalt soll Meldungen aufnehmen und mit den Strafverfolgungsbehörden zusammenarbeiten.",
+          "ursachen_ids": [
+            2501
+          ],
+          "buendel": "Meldewege und Hilfe für Betroffene ausbauen",
+          "zitat": "Eine zentrale Meldestelle für digitale Gewalt soll als Kompetenzzentrum fungieren, Meldungen aufnehmen und die Zusammenarbeit mit Strafverfolgungsbehörden koordinieren.",
+          "seite": 161
+        },
+        {
+          "beschreibung": "Bekämpfung von Online-Kriminalität und Hasskriminalität im Netz soll gestärkt werden.",
+          "ursachen_ids": [
+            2501
+          ],
+          "buendel": "Strafverfolgung von Hass und Bedrohung im Netz",
+          "zitat": "Wir stärken die Bekämpfung von Onlinekriminalität und Hasskriminalität im Netz.",
+          "seite": 224
+        },
+        {
+          "beschreibung": "Verpflichtende Schulungen für Polizei und Justiz zu digitaler Gewalt.",
+          "ursachen_ids": [
+            2501
+          ],
+          "zitat": "Digitale Gewalt gegen Frauen bekämpfen wir mit spezialisierten Online-Beratungsangeboten, Sensibilisierungskampagnen und verpflichtenden Schulungen für Polizei und Justiz.",
+          "seite": 132
+        },
+        {
+          "beschreibung": "Digitale Präventionsangebote wie Digital Streetwork ausbauen und Medienkompetenz fördern, um Hass früh zu erkennen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2503
+          ],
+          "buendel": "Prävention, Medienkompetenz und Gesprächskultur",
+          "zitat": "Daher bauen wir digitale Präventionsangebote wie spezialisierte Digital Streetwork aus und fördern in allen Altersgruppen Medienkompetenz, um Desinformation und Hass frühzeitig zu erkennen.",
+          "seite": 159
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 2501,
+          "name": "Schulungen für Polizei und Justiz zu digitaler Gewalt",
+          "seite": 132
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "onlinekriminalität",
+          "ursache": 2501,
+          "richtung": "Strafverfolgung von Hass und Bedrohung im Netz"
+        },
+        {
+          "begriff": "digital streetwork",
+          "ursache": 2503,
+          "richtung": "Prävention, Medienkompetenz und Gesprächskultur"
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "MV",
+      "stand_im_pdf": "16.07.2026",
+      "massnahmen": [
+        {
+          "beschreibung": "Beratungs- und Unterstützungsangebote für Opfer von Bedrohungen und Angriffen ausbauen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2501
+          ],
+          "zitat": "Für eine Gesellschaft ohne Hass und ohne Hetze werden wir: […] die Beratungs- und Unterstützungsangebote für Opfer von Bedrohungen und Angriffen weiter ausbauen.",
+          "seite": 90
+        },
+        {
+          "beschreibung": "Strafverfolgung von Bedrohungen im digitalen Raum stärken, Polizei und Staatsanwaltschaften personell und technisch ausstatten",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2501
+          ],
+          "zitat": "Wir fordern eine konsequente Durchsetzung bestehender Gesetze, um die Strafverfolgung im digitalen Raum nachhaltig zu stärken. Um geschlechtsspezifische Gewalt sowie politisch motivierten Straftaten und Bedrohungen im digitalen Raum effektiv zu bekämpfen, müssen Polizeien und Staatsanwaltschaften personell und technisch modern ausgestattet werden.",
+          "seite": 82
+        },
+        {
+          "beschreibung": "Demokratiebildung und Medienkompetenz in Ausbildung und Lehrplänen verankern, auch zu Desinformation und Cybermobbing",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2503
+          ],
+          "zitat": "Für eine demokratischere Schule und ein gesundes Lernklima wollen wir: […] Demokratiebildung als Querschnittsaufgabe sowie Medienkompetenz verbindlich in der pädagogischen Ausbildung und in den Lehrplänen verankern, insbesondere im Umgang mit Desinformation, Cybermobbing und digitaler Mündigkeit.",
+          "seite": 44
+        },
+        {
+          "beschreibung": "Präventionskonzepte gegen sexualisierte und digitale Gewalt an Schulen, Hochschulen und am Arbeitsplatz",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2503
+          ],
+          "zitat": "Wir schützen Frauen* vor Gewalt durch: […] Präventionskonzepte gegen sexualisierte und digitale Gewalt an Schulen, Hochschulen und am Arbeitsplatz.",
+          "seite": 82
+        },
+        {
+          "beschreibung": "Regionalzentren für Demokratie stärken und Demokratiebildung in pädagogischen Ausbildungen verankern",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2503
+          ],
+          "zitat": "Für eine Gesellschaft ohne Hass und ohne Hetze werden wir: […] die Regionalzentren für Demokratie stärken und Demokratiebildung in pädagogischen Ausbildungen fest verankern.",
+          "seite": 90
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "LSBTI-feindliche Hasskriminalität bundesweit einheitlich erfassen und verfolgen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2501,
+            2502
+          ],
+          "zitat": "Die Polizei soll LSBTI-feindliche Hasskriminalität bundesweit einheitlich erfassen und verfolgen.",
+          "seite": 25
+        },
+        {
+          "beschreibung": "Plattformen tragen eigene Verantwortung für Meinungsfreiheit; DSA-Sorgfaltspflichten dürfen sie nicht einschränken",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2502
+          ],
+          "zitat": "Auch digitale Plattformen haben eine eigene Verantwortung, wenn es um den Schutz der Meinungsfreiheit geht. Die im Rahmen des Digital Services Act eingeführten Sorgfaltspflichten für Plattformen dürfen nicht dazu führen, dass die Meinungsfreiheit beeinträchtigt wird oder dass Private statt staatlicher Gerichte über die Grenzen der Meinungsfreiheit entscheiden.",
+          "seite": 27
+        },
+        {
+          "beschreibung": "Lehrpläne modernisieren mit mehr Raum für Medienkompetenz",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2503
+          ],
+          "zitat": "Zugleich wollen wir die Lehrpläne modernisieren: Wir Freie Demokraten fordern mehr Raum für wirtschaftliche und finanzielle Bildung, MINT-Themen, Demokratie und Politik sowie Medienkompetenz.",
+          "seite": 9
+        },
+        {
+          "beschreibung": "Auseinandersetzung mit Menschenfeindlichkeit im Schulunterricht intensivieren",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2503
+          ],
+          "zitat": "In der Schule muss außerdem auch die Auseinandersetzung mit den verschiedenen Formen von Menschenfeindlichkeit wie dem Antisemitismus intensiviert werden.",
+          "seite": 9
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 2501,
+          "name": "Strafverfolgung von Hass und Bedrohung im Netz",
+          "seite": 25
+        },
+        {
+          "ursache": 2502,
+          "name": "Eigenverantwortung der Plattformen und Meinungsfreiheit wahren",
+          "seite": 27
+        },
+        {
+          "ursache": 2503,
+          "name": "Prävention, Medienkompetenz und Gesprächskultur",
+          "seite": 9
+        },
+        {
+          "ursache": 2503,
+          "name": "Menschenfeindlichkeit im Unterricht",
+          "seite": 9
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Polizei und Staatsanwaltschaft sollen Mitglieder von Regierungen und Parlamenten nicht mehr aktiv auf mögliche Ehrdelikte im Internet hinweisen, um Strafanträge anzuregen.",
+          "ursachen_ids": [
+            2501
+          ],
+          "buendel": "Strafverfolgung von Hass und Bedrohung im Netz",
+          "zitat": "Die Praxis, durch Polizei und Staatsanwaltschaft insbesondere Mitglieder von Regierungen und Parlamenten aktiv auf mögliche Ehrdelikte im Internet hinzuweisen und zur Stellung eines Strafantrages aufzufordern, wollen wir einstellen.",
+          "seite": 76
+        },
+        {
+          "beschreibung": "Opferschutz ausbauen: Gewaltopfer sollen sofort Zugang zu psychologischer Betreuung erhalten.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2501
+          ],
+          "buendel": "Meldewege und Hilfe für Betroffene ausbauen",
+          "zitat": "Wir wollen den Opferschutz ausbauen. Opfern von Gewalt, auch politisch motivierter Gewalt, muss sofortiger Zugang zu psychologischer Betreuung ermöglicht werden.",
+          "seite": 73
+        },
+        {
+          "beschreibung": "Förderung von Vereinen und Monitoringstellen, die antisemitische Vorfälle unter der Strafbarkeitsgrenze dokumentieren.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2501
+          ],
+          "zitat": "Vereine wie das Jüdische Forum für Demokratie und gegen Antisemitismus (JFDA) und Monitoringstellen wie die Recherche- und Informationsstelle Antisemitismus (RIAS) sollen weiter gefördert werden, da sie antisemitische Vorfälle auch unter der Strafbarkeitsgrenze dokumentieren.",
+          "seite": 79
+        },
+        {
+          "beschreibung": "Aufklärung über Formen und Folgen psychischer Gewalt im Internet stärken.",
+          "ursachen_ids": [
+            2503
+          ],
+          "buendel": "Prävention, Medienkompetenz und Gesprächskultur",
+          "zitat": "Die Aufklärung über Formen und Folgen von psychischer Gewalt im Internet wollen wir stärken.",
+          "seite": 68
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "ehrdelikt",
+          "ursache": 2501,
+          "richtung": "Strafverfolgung von Hass und Bedrohung im Netz"
+        },
+        {
+          "begriff": "psychische gewalt im internet",
+          "ursache": 2503,
+          "richtung": "Prävention, Medienkompetenz und Gesprächskultur"
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2503,
+          "seiten": [
+            16,
+            17
+          ],
+          "grund": "Medienkompetenz und Elternarbeit (S. 16–17) betreffen die Mediennutzung von Kindern, nach R2 ein eigenes Thema. Cybermobbing in der Schule (S. 16) gehört zu Mobbing."
+        },
+        {
+          "ursache": 2501,
+          "seiten": [
+            73,
+            74,
+            78,
+            79,
+            82
+          ],
+          "grund": "Strafandrohung bei Stalking und Hasskriminalität (S. 73), Schulungen und Strafverfolgung queerfeindlicher oder antisemitischer Gewalt (S. 78, 82) und das Weisungsrecht gegenüber der Staatsanwaltschaft (S. 74) haben keinen Internetbezug und sind Strafrecht und Justizorganisation allgemein."
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "MV",
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel „Rechtsstaatlichkeit“ (S. 130–152) und Fundstellen S. 95, 136 gelesen; nichts zu Meldewegen, Hilfe für Betroffene, Plattformpflichten oder Moderation bei Hass im Netz.",
+      "nicht_erfasst": [
+        {
+          "ursache": 2501,
+          "seiten": [
+            137,
+            138,
+            139,
+            151
+          ],
+          "grund": "Personal und Ausstattung der Justiz sind allgemeine Justizpolitik ohne Bezug zu Hass oder Bedrohung im Netz; Meldewege und Betroffenenhilfe kommen nicht vor. S. 151 (Löschverbot unterhalb der Strafbarkeitsschwelle) gehört zu Ursache 2502, die nicht Teil dieses Auftrags ist."
+        },
+        {
+          "ursache": 2503,
+          "seiten": [
+            87,
+            95,
+            98,
+            136
+          ],
+          "grund": "Medienbildung für Kinder gehört nach R2 zur Mediennutzung von Kindern; Finanz- und Cybersicherheit-Stellen ohne Bezug zu Anfeindungen; keine Gesprächs- oder Moderationsmaßnahme."
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "ST",
+      "stand_im_pdf": "Stand: 05.06.2026 (beschlossen am 25.04.2026)",
+      "massnahmen": [
+        {
+          "beschreibung": "Medienkompetenz stärken: Informationen prüfen, Desinformation erkennen, verantwortungsvoll kommunizieren – systematisch in Schule und Lehrkräftebildung",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2503
+          ],
+          "buendel": "Prävention, Medienkompetenz und Gesprächskultur",
+          "zitat": "Digitale Bildung beginnt nicht beim Gerät, sondern bei Kompetenz: Informationen prüfen, Quellen bewerten, Desinformation erkennen, verantwortungsvoll kommunizieren – das gehört systematisch in Schule und Lehrkräftebildung.",
+          "seite": 25
+        },
+        {
+          "beschreibung": "Opferhilfefonds des Landes aufstocken und verstetigen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2501
+          ],
+          "buendel": "Meldewege und Hilfe für Betroffene ausbauen",
+          "zitat": "Um schwere materielle und immaterielle Folgen von Straftaten zumindest teilweise zu lindern, wenn ein Schadensausgleich vom Täter nicht zu erlangen ist, wollen wir den Opferhilfefonds des Landes aufstocken und verstetigen.",
+          "seite": 46
+        },
+        {
+          "beschreibung": "Anschriften und ähnliche Daten von Opfern getrennt von der Verfahrensakte speichern",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2501
+          ],
+          "zitat": "Zum Schutz der Opfer von Straftaten gehört es, deren persönliche Daten besonders zu schützen. Ein unerwünschter Kontakt mit Tätern kann traumatisieren. Deshalb wollen wir dafür sorgen, dass Anschriften und ähnlich wichtige Daten von Opfern und anderen Zeugen regelmäßig getrennt von der eigentlichen Verfahrensakte gespeichert werden.",
+          "seite": 46
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 2501,
+          "name": "Schutz der Daten von Opfern",
+          "seite": 46
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "opferhilfe",
+          "ursache": 2501,
+          "richtung": "Meldewege und Hilfe für Betroffene ausbauen"
+        },
+        {
+          "begriff": "medienbildung",
+          "ursache": 2503,
+          "richtung": "Prävention, Medienkompetenz und Gesprächskultur"
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Ablehnung des EU-Digital-Services-Act und Rückabwicklung des NetzDG",
+          "ursachen_ids": [
+            2502
+          ],
+          "buendel": "Plattformen verbindlich in die Pflicht nehmen",
+          "zitat": "Deshalb lehnen wir auch die Implementierung des europäischen „Digital Services Act (DSA)“ in Deutschland entschieden ab und werden das NetzDG rückabwickeln.",
+          "seite": 50
+        },
+        {
+          "beschreibung": "Große Anbieter sozialer Medien sollen die Meinungsfreiheit ihrer Nutzer respektieren",
+          "ursachen_ids": [
+            2502
+          ],
+          "buendel": "Eigenverantwortung der Plattformen und Meinungsfreiheit wahren",
+          "zitat": "Als Quasi-Oligopole sollen die großen Anbieter sozialer Medien verpflichtet werden, die Meinungsfreiheit ihrer Nutzer zu respektieren.",
+          "seite": 132
+        },
+        {
+          "beschreibung": "Abschaffung des besonderen Strafschutzes (§ 188 StGB) für Personen des politischen Lebens",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2501
+          ],
+          "zitat": "Die „Majestätsbeleidigung“, d.h. den besonderen Schutz des § 188 StGB für Personen, die im politischen Leben des Volkes stehen, wollen wir abschaffen.",
+          "seite": 133
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 2501,
+          "name": "Majestätsbeleidigung abschaffen",
+          "seite": 133
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2503,
+          "seiten": [
+            48,
+            49,
+            50,
+            132,
+            133
+          ],
+          "grund": "Digitalisierung (S. 46–50) und Meinungsfreiheit (S. 132–133) gelesen: keine Prävention, Medienkompetenz, Gesprächskultur oder Gestaltung der Plattformen (Moderation, Anonymität, Algorithmen) genannt."
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Öffentliche Förderung von Meldestellen beenden, die Meldungen unterhalb der Strafbarkeitsgrenze sammeln",
+          "ursachen_ids": [
+            2501
+          ],
+          "buendel": "Meldewege und Hilfe für Betroffene ausbauen",
+          "zitat": "Außerdem finanziert Berlin Meldestellen wie das Berliner Register oder CLAIM, die in einem rechtlichen Graubereich operieren und oftmals unbestätigte Meldungen und Meinungsäußerungen unterhalb der Strafbarkeitsgrenze zu einem politisch einseitig gefärbten Meinungsbild verdichten. […] Deswegen werden wir die öffentliche Förderung des Meldestellen-Unwesens beenden, so dass sich auch diese Organisationen zukünftig ausschließlich privat finanzieren müssen.",
+          "seite": 77
+        },
+        {
+          "beschreibung": "Abschaffung des Strafrechtsschutzes für Politiker vor Beleidigung und Verleumdung (§ 188 StGB)",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2501
+          ],
+          "buendel": "Strafverfolgung von Hass und Bedrohung im Netz",
+          "zitat": "Abschaffung der kleinen Majestätsbeleidigung (§ 188 StGB). Der § 188 StGB ist vom Instrument eines besonderen und daher ohnehin zweifelhaften Ehrenschutzes für Politiker zu einer Methode der Bekämpfung kritischer Äußerungen mit Mitteln des Strafrechts verkommen.",
+          "seite": 16
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Staatsanwaltschaften und Gerichte sollen das Strafrecht konsequent anwenden, ohne politisch motivierte Gewichtung.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2501
+          ],
+          "buendel": "Strafverfolgung von Hass und Bedrohung im Netz",
+          "zitat": "Wir setzen uns dafür ein, dass die Staatsanwaltschaften und Gerichte das Strafrecht konsequent anwenden und dabei jeder Eindruck einer politisch motivierten Gewichtung vermieden wird.",
+          "seite": 43
+        },
+        {
+          "beschreibung": "Mit Steuern finanzierte Portale, über die Anzeigen bei Staatsanwaltschaften eingehen, werden abgelehnt.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2501
+          ],
+          "buendel": "Meldewege und Hilfe für Betroffene ausbauen",
+          "zitat": "Mit Steuern finanzierte Anschwärzportale, die die Staatsanwaltschaften mit Anzeigen überfrachten, lehnen wir ab.",
+          "seite": 43
+        },
+        {
+          "beschreibung": "Mehr Gewicht für Opferschutz; Mehrfachvernehmungen von Betroffenen durch Verwertung früherer Vernehmungen vermeiden.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2501
+          ],
+          "zitat": "Dem Opferschutz ist ein höherer Stellenwert zuzumessen. Mehrfachvernehmungen sind tunlichst durch eine erleichterte Verwertung früherer Vernehmungen zu erleichtern.",
+          "seite": 43
+        },
+        {
+          "beschreibung": "Das Sonderrecht für Beleidigungen von Politikern soll abgeschafft werden.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2501
+          ],
+          "zitat": "Das Sonderrecht für Politikerbeleidigungen ist wieder abzuschaffen.",
+          "seite": 43
+        },
+        {
+          "beschreibung": "Staatsanwaltschaften sollen in einfach gelagerten Fällen häufiger das beschleunigte Verfahren nutzen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2501
+          ],
+          "zitat": "Wir ermutigen die Staatsanwaltschaften, in einfach gelagerten Fällen von der Möglichkeit des beschleunigten Verfahrens mehr Gebrauch zu machen.",
+          "seite": 44
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 2501,
+          "name": "Opferschutz im Strafverfahren",
+          "seite": 43
+        },
+        {
+          "ursache": 2501,
+          "name": "Sonderstrafrecht für Politikerbeleidigung",
+          "seite": 43
+        },
+        {
+          "ursache": 2501,
+          "name": "Beschleunigtes Strafverfahren",
+          "seite": 44
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2503,
+          "seiten": [
+            43,
+            44,
+            47,
+            53
+          ],
+          "grund": "Kein Vorhaben zu Prävention, Medienkompetenz, Gesprächskultur oder Moderation der Plattformen im Text gefunden; die Fundstellen betreffen Strafverfolgung, Rundfunk und Islamverbände."
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Rückabwicklung des Netzwerkdurchsetzungsgesetzes und Überprüfung der europäischen Digitalgesetze einfordern.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2501
+          ],
+          "neue_buendel": [
+            {
+              "ursache": 2501,
+              "name": "Netzwerkdurchsetzungsgesetz rückabwickeln",
+              "seite": 222
+            }
+          ],
+          "zitat": "Wir setzen uns für die Rückabwicklung des NetzDG und für eine Überprüfung der Europäischen Digitalgesetze (Digital Services Act) ein.",
+          "seite": 222
+        },
+        {
+          "beschreibung": "Auf Rückgängigmachung der 2021 zusammengefassten Strafrechtsänderungen gegen Hasskriminalität hinwirken.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2501
+          ],
+          "buendel": "Strafverfolgung von Hass und Bedrohung im Netz",
+          "zitat": "In diesem Zusammenhang werden wir auch darauf hinwirken, die im […] „Gesetz zur Bekämpfung des Rechtsextremismus und der Hasskriminalität“ 2021 zusammengefassten Änderungen unter anderem des Strafgesetzbuchs wieder rückgängig zu machen.",
+          "seite": 222
+        },
+        {
+          "beschreibung": "Initiativen und Kampagnen gegen undurchsichtige Löschregeln und algorithmische Meinungskontrolle auf Plattformen.",
+          "ursachen_ids": [
+            2503
+          ],
+          "buendel": "Moderation und Gestaltung der Plattformen",
+          "zitat": "Als Landesregierung werden wir Initiativen und Kampagnen gegen undurchsichtige Löschregeln und gegen die algorithmische Meinungskontrolle auf den Weg bringen.",
+          "seite": 223
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Beratungsprojekte für Betroffene, darunter Opferberatungen, stärker fördern und langfristig finanziell absichern.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2501
+          ],
+          "buendel": "Meldewege und Hilfe für Betroffene ausbauen",
+          "zitat": "Projekte der mobilen Beratung gegen Rechtsextremismus, Opferberatungen und zivilgesellschaftliche Demokratiebündnisse […] müssen mit einem echten, wirksamen Demokratiefördergesetz stärker unterstützt und langfristig finanziell abgesichert werden.",
+          "seite": 51
+        },
+        {
+          "beschreibung": "Straftaten gegen Medienschaffende gesondert erfassen und von Schwerpunktstaatsanwaltschaften bearbeiten lassen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2501
+          ],
+          "buendel": "Strafverfolgung von Hass und Bedrohung im Netz",
+          "zitat": "Straftaten gegen Medienschaffende sollten gesondert erfasst werden und von Schwerpunktstaatsanwaltschaften bearbeitet werden.",
+          "seite": 55
+        },
+        {
+          "beschreibung": "KI-erzeugte Medieninhalte kennzeichnen; Plattformen sollen für Falschinformationen und Rechtsverstöße durch solche Inhalte haften.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2502
+          ],
+          "buendel": "Plattformen verbindlich in die Pflicht nehmen",
+          "zitat": "Durch Künstliche Intelligenz erzeugte Medieninhalte müssen gekennzeichnet werden, Plattformen haften bei Falschinformationen und Rechtsverstößen durch solche Inhalte.",
+          "seite": 55
+        },
+        {
+          "beschreibung": "Medien- und Datenschutzkompetenz von Kindern und Jugendlichen früh fördern.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2503
+          ],
+          "buendel": "Prävention, Medienkompetenz und Gesprächskultur",
+          "zitat": "Die Medien- und Datenschutzkompetenz von Kindern und Jugendlichen muss möglichst früh gefördert werden.",
+          "seite": 39
+        }
+      ],
+      "eigene_synonyme": [],
+      "nicht_erfasst": []
+    },
+    {
+      "partei_id": 17,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Meldeportale für strafrechtlich nicht relevante Meinungsäußerungen abschaffen",
+          "ursachen_ids": [
+            2501
+          ],
+          "buendel": "Meldewege und Hilfe für Betroffene ausbauen",
+          "zitat": "Wir sind für die Abschaffung von Meldeportalen für strafrechtlich nicht relevante Meinungsäußerungen (Berliner Register etc.). Sie stigmatisieren unliebsame Meinungsäußerungen.",
+          "seite": 31
+        },
+        {
+          "beschreibung": "Verbindlicher digitaler Führerschein über Medienkenntnisse für alle Schülerinnen und Schüler",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2503
+          ],
+          "zitat": "Wir fordern, dass alle Schülerinnen und Schüler am Ende der 10. Klasse einen verbindlichen digitalen Führerschein erwerben, der Kenntnisse im Umgang mit Medien, Datenschutz und Informationsbewertung nachweist.",
+          "seite": 16
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2503,
+          "seiten": [
+            16,
+            40,
+            65
+          ],
+          "grund": "Digitaler Führerschein (S. 16) nur als Grenzfall offen, ohne Bezug zu Hass im Netz im Zitat. Ablehnung von Zensur und Upload-Filtern (S. 65) ist keine Handlungszusage. Cybermobbing-Fortbildung (S. 40) gehört nach R2 zu Mobbing in der Schule (Thema 23)."
+        },
+        {
+          "ursache": 2501,
+          "seiten": [
+            33
+          ],
+          "grund": "Projekte gegen homophobe Gewalt (S. 33) betreffen Gewalt im öffentlichen Raum, nicht Hass oder Anfeindung im Netz."
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "meldeportal",
+          "ursache": 2501,
+          "richtung": "abschaffen"
+        },
+        {
+          "begriff": "digitaler führerschein",
+          "ursache": 2503,
+          "richtung": "einführen"
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Präventionsangebote für Kinder und Jugendliche ausbauen, unter anderem zu Medienkompetenz und Konfliktbewältigung.",
+          "ursachen_ids": [
+            2503
+          ],
+          "buendel": "Prävention, Medienkompetenz und Gesprächskultur",
+          "zitat": "Ausbau von Präventionsangeboten zu psychischer Gesundheit, Resilienz, Medienkompetenz und Konfliktbewältigung.",
+          "seite": 61
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2501,
+          "seiten": [
+            12,
+            47,
+            48,
+            52,
+            61,
+            90,
+            91,
+            92
+          ],
+          "grund": "Keine Meldewege, Beratung oder Hilfe für Betroffene von Hass im Netz gefunden. Strafverfolgung von Online-Hass nicht genannt."
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 2503,
+          "name": "Prävention, Medienkompetenz und Gesprächskultur",
+          "seite": 61
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Keine öffentliche Förderung für Projekte, die zu Diffamierung oder Boykott unliebsamer Personen aufrufen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2503
+          ],
+          "zitat": "Projekte, die zur Ausgrenzung, Diffamierung oder zum Boykott unliebsamer Künstler, Wissenschaftler oder Journalisten aufrufen („Cancel Culture“), dürfen nicht länger mit öffentlichen Mitteln gefördert werden.",
+          "seite": 15
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 2503,
+          "name": "Förderausschluss für Diffamierungsaufrufe",
+          "seite": 15
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2501,
+          "seiten": [
+            10,
+            14,
+            71
+          ],
+          "grund": "S. 10: Ablehnung von Melde- und Überwachungsplattformen im Zusammenhang mit Meinungsfreiheit, nur Haltung und kein Meldeweg für Betroffene. S. 14: Opferberatung nur im Zusammenhang mit gewaltbereitem Extremismus (R2: Radikalisierung). S. 71: Weisungsrecht der Staatsanwaltschaften, ohne Bezug zu Hass oder Bedrohung im Netz."
+        }
+      ]
+    }
+  ],
+  "suchbegriffe": {
+    "2501": {
+      "Meldewege und Hilfe für Betroffene ausbauen": [
+        "hass im netz",
+        "hassrede",
+        "meldestelle",
+        "betroffenenberatung",
+        "betroffene unterstützen",
+        "hatespeech",
+        "opferberatung",
+        "digitale gewalt"
+      ],
+      "Strafverfolgung von Hass und Bedrohung im Netz": [
+        "hasskriminalität",
+        "verfolgen statt nur löschen",
+        "online-straftaten",
+        "staatsanwaltschaft",
+        "bedrohung im netz",
+        "strafbar"
+      ]
+    },
+    "2502": {
+      "Plattformen verbindlich in die Pflicht nehmen": [
+        "plattformverantwortung",
+        "netzwerkdurchsetzungsgesetz",
+        "digital services act",
+        "löschpflicht",
+        "plattformregulierung",
+        "moderation",
+        "bußgeld für plattformen"
+      ],
+      "Eigenverantwortung der Plattformen und Meinungsfreiheit wahren": [
+        "meinungsfreiheit im netz",
+        "overblocking",
+        "uploadfilter",
+        "selbstverpflichtung",
+        "kein löschzwang"
+      ]
+    },
+    "2503": {
+      "Prävention, Medienkompetenz und Gesprächskultur": [
+        "medienkompetenz",
+        "digitale zivilcourage",
+        "gegenrede",
+        "streitkultur im netz",
+        "umgangston",
+        "netiquette"
+      ],
+      "Moderation und Gestaltung der Plattformen": [
+        "moderationsdesign",
+        "anonymität",
+        "klarnamenpflicht",
+        "algorithmen",
+        "empfehlungssysteme",
+        "transparenz der algorithmen"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "f398b52db57869a129cc8730c5b411b461b12c07745686ed7ad1d65b7dd374c4",
+    "programme": [
+      {
+        "partei_id": 11,
+        "land": null,
+        "ursachen": {
+          "2501": {
+            "Meldewege und Hilfe für Betroffene ausbauen": {
+              "hass im netz": 0,
+              "hassrede": 0,
+              "meldestelle": 0,
+              "betroffenenberatung": 0,
+              "betroffene unterstützen": 0,
+              "hatespeech": 0,
+              "opferberatung": 0,
+              "digitale gewalt": 0
+            },
+            "Strafverfolgung von Hass und Bedrohung im Netz": {
+              "hasskriminalität": 0,
+              "verfolgen statt nur löschen": 0,
+              "online-straftaten": 0,
+              "staatsanwaltschaft": 2,
+              "bedrohung im netz": 0,
+              "strafbar": 2
+            }
+          },
+          "2502": {
+            "Plattformen verbindlich in die Pflicht nehmen": {
+              "plattformverantwortung": 0,
+              "netzwerkdurchsetzungsgesetz": 0,
+              "digital services act": 1,
+              "löschpflicht": 0,
+              "plattformregulierung": 0,
+              "moderation": 0,
+              "bußgeld für plattformen": 0
+            },
+            "Eigenverantwortung der Plattformen und Meinungsfreiheit wahren": {
+              "meinungsfreiheit im netz": 0,
+              "overblocking": 0,
+              "uploadfilter": 0,
+              "selbstverpflichtung": 0,
+              "kein löschzwang": 0
+            }
+          },
+          "2503": {
+            "Prävention, Medienkompetenz und Gesprächskultur": {
+              "medienkompetenz": 0,
+              "digitale zivilcourage": 0,
+              "gegenrede": 0,
+              "streitkultur im netz": 0,
+              "umgangston": 0,
+              "netiquette": 0
+            },
+            "Moderation und Gestaltung der Plattformen": {
+              "moderationsdesign": 0,
+              "anonymität": 1,
+              "klarnamenpflicht": 0,
+              "algorithmen": 0,
+              "empfehlungssysteme": 0,
+              "transparenz der algorithmen": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 11,
+        "land": "BE",
+        "ursachen": {
+          "2501": {
+            "Meldewege und Hilfe für Betroffene ausbauen": {
+              "hass im netz": 0,
+              "hassrede": 0,
+              "meldestelle": 0,
+              "betroffenenberatung": 0,
+              "betroffene unterstützen": 0,
+              "hatespeech": 0,
+              "opferberatung": 0,
+              "digitale gewalt": 1
+            },
+            "Strafverfolgung von Hass und Bedrohung im Netz": {
+              "hasskriminalität": 1,
+              "verfolgen statt nur löschen": 0,
+              "online-straftaten": 0,
+              "staatsanwaltschaft": 2,
+              "bedrohung im netz": 0,
+              "strafbar": 3
+            }
+          },
+          "2503": {
+            "Prävention, Medienkompetenz und Gesprächskultur": {
+              "medienkompetenz": 1,
+              "digitale zivilcourage": 0,
+              "gegenrede": 0,
+              "streitkultur im netz": 0,
+              "umgangston": 0,
+              "netiquette": 0
+            },
+            "Moderation und Gestaltung der Plattformen": {
+              "moderationsdesign": 0,
+              "anonymität": 0,
+              "klarnamenpflicht": 0,
+              "algorithmen": 0,
+              "empfehlungssysteme": 0,
+              "transparenz der algorithmen": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 11,
+        "land": "MV",
+        "ursachen": {
+          "2501": {
+            "Meldewege und Hilfe für Betroffene ausbauen": {
+              "hass im netz": 0,
+              "hassrede": 0,
+              "meldestelle": 0,
+              "betroffenenberatung": 0,
+              "betroffene unterstützen": 0,
+              "hatespeech": 0,
+              "opferberatung": 0,
+              "digitale gewalt": 0
+            },
+            "Strafverfolgung von Hass und Bedrohung im Netz": {
+              "hasskriminalität": 1,
+              "verfolgen statt nur löschen": 0,
+              "online-straftaten": 0,
+              "staatsanwaltschaft": 8,
+              "bedrohung im netz": 0,
+              "strafbar": 0
+            }
+          },
+          "2503": {
+            "Prävention, Medienkompetenz und Gesprächskultur": {
+              "medienkompetenz": 0,
+              "digitale zivilcourage": 0,
+              "gegenrede": 0,
+              "streitkultur im netz": 0,
+              "umgangston": 0,
+              "netiquette": 0
+            },
+            "Moderation und Gestaltung der Plattformen": {
+              "moderationsdesign": 0,
+              "anonymität": 1,
+              "klarnamenpflicht": 1,
+              "algorithmen": 1,
+              "empfehlungssysteme": 0,
+              "transparenz der algorithmen": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 11,
+        "land": "ST",
+        "ursachen": {
+          "2501": {
+            "Meldewege und Hilfe für Betroffene ausbauen": {
+              "hass im netz": 0,
+              "hassrede": 0,
+              "meldestelle": 0,
+              "betroffenenberatung": 0,
+              "betroffene unterstützen": 0,
+              "hatespeech": 0,
+              "opferberatung": 0,
+              "digitale gewalt": 0
+            },
+            "Strafverfolgung von Hass und Bedrohung im Netz": {
+              "hasskriminalität": 0,
+              "verfolgen statt nur löschen": 0,
+              "online-straftaten": 0,
+              "staatsanwaltschaft": 1,
+              "bedrohung im netz": 0,
+              "strafbar": 0
+            }
+          },
+          "2503": {
+            "Prävention, Medienkompetenz und Gesprächskultur": {
+              "medienkompetenz": 5,
+              "digitale zivilcourage": 0,
+              "gegenrede": 0,
+              "streitkultur im netz": 0,
+              "umgangston": 0,
+              "netiquette": 0
+            },
+            "Moderation und Gestaltung der Plattformen": {
+              "moderationsdesign": 0,
+              "anonymität": 0,
+              "klarnamenpflicht": 0,
+              "algorithmen": 0,
+              "empfehlungssysteme": 0,
+              "transparenz der algorithmen": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": null,
+        "ursachen": {
+          "2501": {
+            "Meldewege und Hilfe für Betroffene ausbauen": {
+              "hass im netz": 0,
+              "hassrede": 1,
+              "meldestelle": 0,
+              "betroffenenberatung": 0,
+              "betroffene unterstützen": 0,
+              "hatespeech": 0,
+              "opferberatung": 0,
+              "digitale gewalt": 1
+            },
+            "Strafverfolgung von Hass und Bedrohung im Netz": {
+              "hasskriminalität": 4,
+              "verfolgen statt nur löschen": 0,
+              "online-straftaten": 0,
+              "staatsanwaltschaft": 3,
+              "bedrohung im netz": 0,
+              "strafbar": 2
+            }
+          },
+          "2502": {
+            "Plattformen verbindlich in die Pflicht nehmen": {
+              "plattformverantwortung": 0,
+              "netzwerkdurchsetzungsgesetz": 0,
+              "digital services act": 0,
+              "löschpflicht": 0,
+              "plattformregulierung": 0,
+              "moderation": 1,
+              "bußgeld für plattformen": 0
+            },
+            "Eigenverantwortung der Plattformen und Meinungsfreiheit wahren": {
+              "meinungsfreiheit im netz": 0,
+              "overblocking": 0,
+              "uploadfilter": 0,
+              "selbstverpflichtung": 0,
+              "kein löschzwang": 0
+            }
+          },
+          "2503": {
+            "Prävention, Medienkompetenz und Gesprächskultur": {
+              "medienkompetenz": 1,
+              "digitale zivilcourage": 0,
+              "gegenrede": 0,
+              "streitkultur im netz": 0,
+              "umgangston": 0,
+              "netiquette": 0
+            },
+            "Moderation und Gestaltung der Plattformen": {
+              "moderationsdesign": 0,
+              "anonymität": 0,
+              "klarnamenpflicht": 0,
+              "algorithmen": 1,
+              "empfehlungssysteme": 0,
+              "transparenz der algorithmen": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": "BE",
+        "ursachen": {
+          "2501": {
+            "Meldewege und Hilfe für Betroffene ausbauen": {
+              "hass im netz": 0,
+              "hassrede": 1,
+              "meldestelle": 0,
+              "betroffenenberatung": 0,
+              "betroffene unterstützen": 0,
+              "hatespeech": 0,
+              "opferberatung": 0,
+              "digitale gewalt": 0
+            },
+            "Strafverfolgung von Hass und Bedrohung im Netz": {
+              "hasskriminalität": 1,
+              "verfolgen statt nur löschen": 0,
+              "online-straftaten": 0,
+              "staatsanwaltschaft": 7,
+              "bedrohung im netz": 0,
+              "strafbar": 0
+            }
+          },
+          "2503": {
+            "Prävention, Medienkompetenz und Gesprächskultur": {
+              "medienkompetenz": 2,
+              "digitale zivilcourage": 0,
+              "gegenrede": 0,
+              "streitkultur im netz": 0,
+              "umgangston": 0,
+              "netiquette": 0
+            },
+            "Moderation und Gestaltung der Plattformen": {
+              "moderationsdesign": 0,
+              "anonymität": 1,
+              "klarnamenpflicht": 0,
+              "algorithmen": 1,
+              "empfehlungssysteme": 0,
+              "transparenz der algorithmen": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": "MV",
+        "ursachen": {
+          "2501": {
+            "Meldewege und Hilfe für Betroffene ausbauen": {
+              "hass im netz": 0,
+              "hassrede": 0,
+              "meldestelle": 0,
+              "betroffenenberatung": 0,
+              "betroffene unterstützen": 0,
+              "hatespeech": 0,
+              "opferberatung": 0,
+              "digitale gewalt": 0
+            },
+            "Strafverfolgung von Hass und Bedrohung im Netz": {
+              "hasskriminalität": 0,
+              "verfolgen statt nur löschen": 0,
+              "online-straftaten": 0,
+              "staatsanwaltschaft": 2,
+              "bedrohung im netz": 0,
+              "strafbar": 0
+            }
+          },
+          "2503": {
+            "Prävention, Medienkompetenz und Gesprächskultur": {
+              "medienkompetenz": 15,
+              "digitale zivilcourage": 0,
+              "gegenrede": 0,
+              "streitkultur im netz": 0,
+              "umgangston": 0,
+              "netiquette": 0
+            },
+            "Moderation und Gestaltung der Plattformen": {
+              "moderationsdesign": 0,
+              "anonymität": 0,
+              "klarnamenpflicht": 0,
+              "algorithmen": 0,
+              "empfehlungssysteme": 0,
+              "transparenz der algorithmen": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": "ST",
+        "ursachen": {
+          "2501": {
+            "Meldewege und Hilfe für Betroffene ausbauen": {
+              "hass im netz": 1,
+              "hassrede": 0,
+              "meldestelle": 0,
+              "betroffenenberatung": 0,
+              "betroffene unterstützen": 0,
+              "hatespeech": 0,
+              "opferberatung": 0,
+              "digitale gewalt": 1
+            },
+            "Strafverfolgung von Hass und Bedrohung im Netz": {
+              "hasskriminalität": 1,
+              "verfolgen statt nur löschen": 0,
+              "online-straftaten": 0,
+              "staatsanwaltschaft": 3,
+              "bedrohung im netz": 0,
+              "strafbar": 1
+            }
+          },
+          "2503": {
+            "Prävention, Medienkompetenz und Gesprächskultur": {
+              "medienkompetenz": 2,
+              "digitale zivilcourage": 0,
+              "gegenrede": 0,
+              "streitkultur im netz": 0,
+              "umgangston": 0,
+              "netiquette": 0
+            },
+            "Moderation und Gestaltung der Plattformen": {
+              "moderationsdesign": 0,
+              "anonymität": 0,
+              "klarnamenpflicht": 0,
+              "algorithmen": 0,
+              "empfehlungssysteme": 0,
+              "transparenz der algorithmen": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": null,
+        "ursachen": {
+          "2501": {
+            "Meldewege und Hilfe für Betroffene ausbauen": {
+              "hass im netz": 0,
+              "hassrede": 0,
+              "meldestelle": 1,
+              "betroffenenberatung": 0,
+              "betroffene unterstützen": 0,
+              "hatespeech": 0,
+              "opferberatung": 0,
+              "digitale gewalt": 0
+            },
+            "Strafverfolgung von Hass und Bedrohung im Netz": {
+              "hasskriminalität": 4,
+              "verfolgen statt nur löschen": 0,
+              "online-straftaten": 0,
+              "staatsanwaltschaft": 3,
+              "bedrohung im netz": 0,
+              "strafbar": 0
+            }
+          },
+          "2502": {
+            "Plattformen verbindlich in die Pflicht nehmen": {
+              "plattformverantwortung": 0,
+              "netzwerkdurchsetzungsgesetz": 0,
+              "digital services act": 0,
+              "löschpflicht": 0,
+              "plattformregulierung": 0,
+              "moderation": 0,
+              "bußgeld für plattformen": 0
+            },
+            "Eigenverantwortung der Plattformen und Meinungsfreiheit wahren": {
+              "meinungsfreiheit im netz": 0,
+              "overblocking": 0,
+              "uploadfilter": 0,
+              "selbstverpflichtung": 0,
+              "kein löschzwang": 0
+            }
+          },
+          "2503": {
+            "Prävention, Medienkompetenz und Gesprächskultur": {
+              "medienkompetenz": 3,
+              "digitale zivilcourage": 0,
+              "gegenrede": 0,
+              "streitkultur im netz": 0,
+              "umgangston": 0,
+              "netiquette": 0
+            },
+            "Moderation und Gestaltung der Plattformen": {
+              "moderationsdesign": 0,
+              "anonymität": 0,
+              "klarnamenpflicht": 0,
+              "algorithmen": 3,
+              "empfehlungssysteme": 0,
+              "transparenz der algorithmen": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": "BE",
+        "ursachen": {
+          "2501": {
+            "Meldewege und Hilfe für Betroffene ausbauen": {
+              "hass im netz": 0,
+              "hassrede": 2,
+              "meldestelle": 1,
+              "betroffenenberatung": 1,
+              "betroffene unterstützen": 1,
+              "hatespeech": 1,
+              "opferberatung": 1,
+              "digitale gewalt": 5
+            },
+            "Strafverfolgung von Hass und Bedrohung im Netz": {
+              "hasskriminalität": 4,
+              "verfolgen statt nur löschen": 0,
+              "online-straftaten": 0,
+              "staatsanwaltschaft": 9,
+              "bedrohung im netz": 0,
+              "strafbar": 0
+            }
+          },
+          "2503": {
+            "Prävention, Medienkompetenz und Gesprächskultur": {
+              "medienkompetenz": 8,
+              "digitale zivilcourage": 0,
+              "gegenrede": 0,
+              "streitkultur im netz": 0,
+              "umgangston": 0,
+              "netiquette": 0
+            },
+            "Moderation und Gestaltung der Plattformen": {
+              "moderationsdesign": 0,
+              "anonymität": 0,
+              "klarnamenpflicht": 0,
+              "algorithmen": 3,
+              "empfehlungssysteme": 0,
+              "transparenz der algorithmen": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": "MV",
+        "ursachen": {
+          "2501": {
+            "Meldewege und Hilfe für Betroffene ausbauen": {
+              "hass im netz": 0,
+              "hassrede": 0,
+              "meldestelle": 0,
+              "betroffenenberatung": 0,
+              "betroffene unterstützen": 0,
+              "hatespeech": 0,
+              "opferberatung": 0,
+              "digitale gewalt": 1
+            },
+            "Strafverfolgung von Hass und Bedrohung im Netz": {
+              "hasskriminalität": 1,
+              "verfolgen statt nur löschen": 0,
+              "online-straftaten": 0,
+              "staatsanwaltschaft": 4,
+              "bedrohung im netz": 0,
+              "strafbar": 0
+            }
+          },
+          "2503": {
+            "Prävention, Medienkompetenz und Gesprächskultur": {
+              "medienkompetenz": 2,
+              "digitale zivilcourage": 0,
+              "gegenrede": 0,
+              "streitkultur im netz": 0,
+              "umgangston": 0,
+              "netiquette": 0
+            },
+            "Moderation und Gestaltung der Plattformen": {
+              "moderationsdesign": 0,
+              "anonymität": 0,
+              "klarnamenpflicht": 0,
+              "algorithmen": 5,
+              "empfehlungssysteme": 0,
+              "transparenz der algorithmen": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": null,
+        "ursachen": {
+          "2501": {
+            "Meldewege und Hilfe für Betroffene ausbauen": {
+              "hass im netz": 0,
+              "hassrede": 0,
+              "meldestelle": 0,
+              "betroffenenberatung": 0,
+              "betroffene unterstützen": 0,
+              "hatespeech": 0,
+              "opferberatung": 0,
+              "digitale gewalt": 0
+            },
+            "Strafverfolgung von Hass und Bedrohung im Netz": {
+              "hasskriminalität": 1,
+              "verfolgen statt nur löschen": 0,
+              "online-straftaten": 0,
+              "staatsanwaltschaft": 1,
+              "bedrohung im netz": 0,
+              "strafbar": 1
+            }
+          },
+          "2502": {
+            "Plattformen verbindlich in die Pflicht nehmen": {
+              "plattformverantwortung": 0,
+              "netzwerkdurchsetzungsgesetz": 0,
+              "digital services act": 2,
+              "löschpflicht": 0,
+              "plattformregulierung": 0,
+              "moderation": 0,
+              "bußgeld für plattformen": 0
+            },
+            "Eigenverantwortung der Plattformen und Meinungsfreiheit wahren": {
+              "meinungsfreiheit im netz": 0,
+              "overblocking": 0,
+              "uploadfilter": 1,
+              "selbstverpflichtung": 0,
+              "kein löschzwang": 0
+            }
+          },
+          "2503": {
+            "Prävention, Medienkompetenz und Gesprächskultur": {
+              "medienkompetenz": 1,
+              "digitale zivilcourage": 0,
+              "gegenrede": 0,
+              "streitkultur im netz": 0,
+              "umgangston": 0,
+              "netiquette": 0
+            },
+            "Moderation und Gestaltung der Plattformen": {
+              "moderationsdesign": 0,
+              "anonymität": 0,
+              "klarnamenpflicht": 0,
+              "algorithmen": 0,
+              "empfehlungssysteme": 0,
+              "transparenz der algorithmen": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": "BE",
+        "ursachen": {
+          "2501": {
+            "Meldewege und Hilfe für Betroffene ausbauen": {
+              "hass im netz": 0,
+              "hassrede": 0,
+              "meldestelle": 0,
+              "betroffenenberatung": 0,
+              "betroffene unterstützen": 0,
+              "hatespeech": 0,
+              "opferberatung": 0,
+              "digitale gewalt": 0
+            },
+            "Strafverfolgung von Hass und Bedrohung im Netz": {
+              "hasskriminalität": 3,
+              "verfolgen statt nur löschen": 0,
+              "online-straftaten": 0,
+              "staatsanwaltschaft": 4,
+              "bedrohung im netz": 0,
+              "strafbar": 1
+            }
+          },
+          "2503": {
+            "Prävention, Medienkompetenz und Gesprächskultur": {
+              "medienkompetenz": 3,
+              "digitale zivilcourage": 0,
+              "gegenrede": 0,
+              "streitkultur im netz": 0,
+              "umgangston": 0,
+              "netiquette": 0
+            },
+            "Moderation und Gestaltung der Plattformen": {
+              "moderationsdesign": 0,
+              "anonymität": 0,
+              "klarnamenpflicht": 0,
+              "algorithmen": 0,
+              "empfehlungssysteme": 0,
+              "transparenz der algorithmen": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": "MV",
+        "ursachen": {
+          "2501": {
+            "Meldewege und Hilfe für Betroffene ausbauen": {
+              "hass im netz": 0,
+              "hassrede": 0,
+              "meldestelle": 0,
+              "betroffenenberatung": 0,
+              "betroffene unterstützen": 0,
+              "hatespeech": 0,
+              "opferberatung": 0,
+              "digitale gewalt": 0
+            },
+            "Strafverfolgung von Hass und Bedrohung im Netz": {
+              "hasskriminalität": 0,
+              "verfolgen statt nur löschen": 0,
+              "online-straftaten": 0,
+              "staatsanwaltschaft": 10,
+              "bedrohung im netz": 0,
+              "strafbar": 1
+            }
+          },
+          "2503": {
+            "Prävention, Medienkompetenz und Gesprächskultur": {
+              "medienkompetenz": 1,
+              "digitale zivilcourage": 0,
+              "gegenrede": 0,
+              "streitkultur im netz": 0,
+              "umgangston": 0,
+              "netiquette": 0
+            },
+            "Moderation und Gestaltung der Plattformen": {
+              "moderationsdesign": 0,
+              "anonymität": 0,
+              "klarnamenpflicht": 0,
+              "algorithmen": 1,
+              "empfehlungssysteme": 0,
+              "transparenz der algorithmen": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": "ST",
+        "ursachen": {
+          "2501": {
+            "Meldewege und Hilfe für Betroffene ausbauen": {
+              "hass im netz": 0,
+              "hassrede": 0,
+              "meldestelle": 0,
+              "betroffenenberatung": 0,
+              "betroffene unterstützen": 0,
+              "hatespeech": 0,
+              "opferberatung": 0,
+              "digitale gewalt": 0
+            },
+            "Strafverfolgung von Hass und Bedrohung im Netz": {
+              "hasskriminalität": 0,
+              "verfolgen statt nur löschen": 0,
+              "online-straftaten": 0,
+              "staatsanwaltschaft": 1,
+              "bedrohung im netz": 0,
+              "strafbar": 0
+            }
+          },
+          "2503": {
+            "Prävention, Medienkompetenz und Gesprächskultur": {
+              "medienkompetenz": 2,
+              "digitale zivilcourage": 0,
+              "gegenrede": 0,
+              "streitkultur im netz": 0,
+              "umgangston": 0,
+              "netiquette": 0
+            },
+            "Moderation und Gestaltung der Plattformen": {
+              "moderationsdesign": 0,
+              "anonymität": 0,
+              "klarnamenpflicht": 0,
+              "algorithmen": 1,
+              "empfehlungssysteme": 0,
+              "transparenz der algorithmen": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": null,
+        "ursachen": {
+          "2501": {
+            "Meldewege und Hilfe für Betroffene ausbauen": {
+              "hass im netz": 0,
+              "hassrede": 0,
+              "meldestelle": 0,
+              "betroffenenberatung": 0,
+              "betroffene unterstützen": 0,
+              "hatespeech": 1,
+              "opferberatung": 0,
+              "digitale gewalt": 0
+            },
+            "Strafverfolgung von Hass und Bedrohung im Netz": {
+              "hasskriminalität": 0,
+              "verfolgen statt nur löschen": 0,
+              "online-straftaten": 0,
+              "staatsanwaltschaft": 2,
+              "bedrohung im netz": 0,
+              "strafbar": 3
+            }
+          },
+          "2502": {
+            "Plattformen verbindlich in die Pflicht nehmen": {
+              "plattformverantwortung": 0,
+              "netzwerkdurchsetzungsgesetz": 0,
+              "digital services act": 1,
+              "löschpflicht": 0,
+              "plattformregulierung": 0,
+              "moderation": 0,
+              "bußgeld für plattformen": 0
+            },
+            "Eigenverantwortung der Plattformen und Meinungsfreiheit wahren": {
+              "meinungsfreiheit im netz": 0,
+              "overblocking": 0,
+              "uploadfilter": 0,
+              "selbstverpflichtung": 0,
+              "kein löschzwang": 0
+            }
+          },
+          "2503": {
+            "Prävention, Medienkompetenz und Gesprächskultur": {
+              "medienkompetenz": 0,
+              "digitale zivilcourage": 0,
+              "gegenrede": 0,
+              "streitkultur im netz": 0,
+              "umgangston": 0,
+              "netiquette": 0
+            },
+            "Moderation und Gestaltung der Plattformen": {
+              "moderationsdesign": 0,
+              "anonymität": 0,
+              "klarnamenpflicht": 0,
+              "algorithmen": 0,
+              "empfehlungssysteme": 0,
+              "transparenz der algorithmen": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": "BE",
+        "ursachen": {
+          "2501": {
+            "Meldewege und Hilfe für Betroffene ausbauen": {
+              "hass im netz": 0,
+              "hassrede": 0,
+              "meldestelle": 3,
+              "betroffenenberatung": 0,
+              "betroffene unterstützen": 0,
+              "hatespeech": 0,
+              "opferberatung": 0,
+              "digitale gewalt": 0
+            },
+            "Strafverfolgung von Hass und Bedrohung im Netz": {
+              "hasskriminalität": 0,
+              "verfolgen statt nur löschen": 0,
+              "online-straftaten": 0,
+              "staatsanwaltschaft": 3,
+              "bedrohung im netz": 0,
+              "strafbar": 2
+            }
+          },
+          "2503": {
+            "Prävention, Medienkompetenz und Gesprächskultur": {
+              "medienkompetenz": 0,
+              "digitale zivilcourage": 0,
+              "gegenrede": 0,
+              "streitkultur im netz": 0,
+              "umgangston": 0,
+              "netiquette": 0
+            },
+            "Moderation und Gestaltung der Plattformen": {
+              "moderationsdesign": 0,
+              "anonymität": 0,
+              "klarnamenpflicht": 0,
+              "algorithmen": 0,
+              "empfehlungssysteme": 0,
+              "transparenz der algorithmen": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": "MV",
+        "ursachen": {
+          "2501": {
+            "Meldewege und Hilfe für Betroffene ausbauen": {
+              "hass im netz": 0,
+              "hassrede": 0,
+              "meldestelle": 1,
+              "betroffenenberatung": 0,
+              "betroffene unterstützen": 0,
+              "hatespeech": 0,
+              "opferberatung": 0,
+              "digitale gewalt": 0
+            },
+            "Strafverfolgung von Hass und Bedrohung im Netz": {
+              "hasskriminalität": 0,
+              "verfolgen statt nur löschen": 0,
+              "online-straftaten": 0,
+              "staatsanwaltschaft": 4,
+              "bedrohung im netz": 0,
+              "strafbar": 1
+            }
+          },
+          "2503": {
+            "Prävention, Medienkompetenz und Gesprächskultur": {
+              "medienkompetenz": 0,
+              "digitale zivilcourage": 0,
+              "gegenrede": 0,
+              "streitkultur im netz": 0,
+              "umgangston": 0,
+              "netiquette": 0
+            },
+            "Moderation und Gestaltung der Plattformen": {
+              "moderationsdesign": 0,
+              "anonymität": 0,
+              "klarnamenpflicht": 0,
+              "algorithmen": 0,
+              "empfehlungssysteme": 0,
+              "transparenz der algorithmen": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": "ST",
+        "ursachen": {
+          "2501": {
+            "Meldewege und Hilfe für Betroffene ausbauen": {
+              "hass im netz": 0,
+              "hassrede": 0,
+              "meldestelle": 1,
+              "betroffenenberatung": 0,
+              "betroffene unterstützen": 0,
+              "hatespeech": 0,
+              "opferberatung": 0,
+              "digitale gewalt": 0
+            },
+            "Strafverfolgung von Hass und Bedrohung im Netz": {
+              "hasskriminalität": 2,
+              "verfolgen statt nur löschen": 0,
+              "online-straftaten": 0,
+              "staatsanwaltschaft": 3,
+              "bedrohung im netz": 0,
+              "strafbar": 0
+            }
+          },
+          "2503": {
+            "Prävention, Medienkompetenz und Gesprächskultur": {
+              "medienkompetenz": 0,
+              "digitale zivilcourage": 0,
+              "gegenrede": 0,
+              "streitkultur im netz": 0,
+              "umgangston": 0,
+              "netiquette": 0
+            },
+            "Moderation und Gestaltung der Plattformen": {
+              "moderationsdesign": 0,
+              "anonymität": 0,
+              "klarnamenpflicht": 0,
+              "algorithmen": 1,
+              "empfehlungssysteme": 0,
+              "transparenz der algorithmen": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": null,
+        "ursachen": {
+          "2501": {
+            "Meldewege und Hilfe für Betroffene ausbauen": {
+              "hass im netz": 0,
+              "hassrede": 0,
+              "meldestelle": 0,
+              "betroffenenberatung": 0,
+              "betroffene unterstützen": 0,
+              "hatespeech": 0,
+              "opferberatung": 1,
+              "digitale gewalt": 0
+            },
+            "Strafverfolgung von Hass und Bedrohung im Netz": {
+              "hasskriminalität": 0,
+              "verfolgen statt nur löschen": 0,
+              "online-straftaten": 0,
+              "staatsanwaltschaft": 3,
+              "bedrohung im netz": 0,
+              "strafbar": 1
+            }
+          },
+          "2502": {
+            "Plattformen verbindlich in die Pflicht nehmen": {
+              "plattformverantwortung": 0,
+              "netzwerkdurchsetzungsgesetz": 0,
+              "digital services act": 2,
+              "löschpflicht": 0,
+              "plattformregulierung": 0,
+              "moderation": 0,
+              "bußgeld für plattformen": 0
+            },
+            "Eigenverantwortung der Plattformen und Meinungsfreiheit wahren": {
+              "meinungsfreiheit im netz": 0,
+              "overblocking": 0,
+              "uploadfilter": 0,
+              "selbstverpflichtung": 0,
+              "kein löschzwang": 0
+            }
+          },
+          "2503": {
+            "Prävention, Medienkompetenz und Gesprächskultur": {
+              "medienkompetenz": 1,
+              "digitale zivilcourage": 0,
+              "gegenrede": 0,
+              "streitkultur im netz": 0,
+              "umgangston": 0,
+              "netiquette": 0
+            },
+            "Moderation und Gestaltung der Plattformen": {
+              "moderationsdesign": 0,
+              "anonymität": 1,
+              "klarnamenpflicht": 0,
+              "algorithmen": 1,
+              "empfehlungssysteme": 0,
+              "transparenz der algorithmen": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": "BE",
+        "ursachen": {
+          "2501": {
+            "Meldewege und Hilfe für Betroffene ausbauen": {
+              "hass im netz": 0,
+              "hassrede": 0,
+              "meldestelle": 0,
+              "betroffenenberatung": 0,
+              "betroffene unterstützen": 0,
+              "hatespeech": 0,
+              "opferberatung": 0,
+              "digitale gewalt": 0
+            },
+            "Strafverfolgung von Hass und Bedrohung im Netz": {
+              "hasskriminalität": 0,
+              "verfolgen statt nur löschen": 0,
+              "online-straftaten": 0,
+              "staatsanwaltschaft": 0,
+              "bedrohung im netz": 0,
+              "strafbar": 0
+            }
+          },
+          "2503": {
+            "Prävention, Medienkompetenz und Gesprächskultur": {
+              "medienkompetenz": 0,
+              "digitale zivilcourage": 0,
+              "gegenrede": 0,
+              "streitkultur im netz": 0,
+              "umgangston": 0,
+              "netiquette": 0
+            },
+            "Moderation und Gestaltung der Plattformen": {
+              "moderationsdesign": 0,
+              "anonymität": 0,
+              "klarnamenpflicht": 0,
+              "algorithmen": 0,
+              "empfehlungssysteme": 0,
+              "transparenz der algorithmen": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": "MV",
+        "ursachen": {
+          "2501": {
+            "Meldewege und Hilfe für Betroffene ausbauen": {
+              "hass im netz": 0,
+              "hassrede": 0,
+              "meldestelle": 0,
+              "betroffenenberatung": 0,
+              "betroffene unterstützen": 0,
+              "hatespeech": 0,
+              "opferberatung": 0,
+              "digitale gewalt": 0
+            },
+            "Strafverfolgung von Hass und Bedrohung im Netz": {
+              "hasskriminalität": 0,
+              "verfolgen statt nur löschen": 0,
+              "online-straftaten": 0,
+              "staatsanwaltschaft": 0,
+              "bedrohung im netz": 0,
+              "strafbar": 0
+            }
+          },
+          "2503": {
+            "Prävention, Medienkompetenz und Gesprächskultur": {
+              "medienkompetenz": 3,
+              "digitale zivilcourage": 0,
+              "gegenrede": 1,
+              "streitkultur im netz": 0,
+              "umgangston": 0,
+              "netiquette": 0
+            },
+            "Moderation und Gestaltung der Plattformen": {
+              "moderationsdesign": 0,
+              "anonymität": 0,
+              "klarnamenpflicht": 0,
+              "algorithmen": 1,
+              "empfehlungssysteme": 0,
+              "transparenz der algorithmen": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": "ST",
+        "ursachen": {
+          "2501": {
+            "Meldewege und Hilfe für Betroffene ausbauen": {
+              "hass im netz": 0,
+              "hassrede": 0,
+              "meldestelle": 0,
+              "betroffenenberatung": 0,
+              "betroffene unterstützen": 0,
+              "hatespeech": 0,
+              "opferberatung": 1,
+              "digitale gewalt": 0
+            },
+            "Strafverfolgung von Hass und Bedrohung im Netz": {
+              "hasskriminalität": 0,
+              "verfolgen statt nur löschen": 0,
+              "online-straftaten": 0,
+              "staatsanwaltschaft": 1,
+              "bedrohung im netz": 0,
+              "strafbar": 0
+            }
+          },
+          "2503": {
+            "Prävention, Medienkompetenz und Gesprächskultur": {
+              "medienkompetenz": 0,
+              "digitale zivilcourage": 0,
+              "gegenrede": 0,
+              "streitkultur im netz": 0,
+              "umgangston": 0,
+              "netiquette": 0
+            },
+            "Moderation und Gestaltung der Plattformen": {
+              "moderationsdesign": 0,
+              "anonymität": 0,
+              "klarnamenpflicht": 0,
+              "algorithmen": 2,
+              "empfehlungssysteme": 0,
+              "transparenz der algorithmen": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}

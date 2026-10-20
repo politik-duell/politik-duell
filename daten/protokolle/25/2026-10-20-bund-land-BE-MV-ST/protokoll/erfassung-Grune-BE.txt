@@ -1,0 +1,68 @@
+{
+  "partei_id": 13,
+  "land": "BE",
+  "massnahmen": [
+    {
+      "beschreibung": "Zentrale Meldestelle für digitale Gewalt soll Meldungen aufnehmen und mit den Strafverfolgungsbehörden zusammenarbeiten.",
+      "ursachen_ids": [2501],
+      "buendel": "Meldewege und Hilfe für Betroffene ausbauen",
+      "zitat": "Eine zentrale Meldestelle für digitale Gewalt soll als Kompetenzzentrum fungieren, Meldungen aufnehmen und die Zusammenarbeit mit Strafverfolgungsbehörden koordinieren.",
+      "seite": 161
+    },
+    {
+      "beschreibung": "Bekämpfung von Online-Kriminalität und Hasskriminalität im Netz soll gestärkt werden.",
+      "ursachen_ids": [2501],
+      "buendel": "Strafverfolgung von Hass und Bedrohung im Netz",
+      "zitat": "Wir stärken die Bekämpfung von Onlinekriminalität und Hasskriminalität im Netz.",
+      "seite": 224
+    },
+    {
+      "beschreibung": "Verpflichtende Schulungen für Polizei und Justiz zu digitaler Gewalt.",
+      "ursachen_ids": [2501],
+      "zitat": "Digitale Gewalt gegen Frauen bekämpfen wir mit spezialisierten Online-Beratungsangeboten, Sensibilisierungskampagnen und verpflichtenden Schulungen für Polizei und Justiz.",
+      "seite": 132
+    },
+    {
+      "beschreibung": "Digitale Präventionsangebote wie Digital Streetwork ausbauen und Medienkompetenz fördern, um Hass früh zu erkennen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2503],
+      "buendel": "Prävention, Medienkompetenz und Gesprächskultur",
+      "zitat": "Daher bauen wir digitale Präventionsangebote wie spezialisierte Digital Streetwork aus und fördern in allen Altersgruppen Medienkompetenz, um Desinformation und Hass frühzeitig zu erkennen.",
+      "seite": 159
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 2501, "name": "Schulungen für Polizei und Justiz zu digitaler Gewalt", "seite": 132 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "onlinekriminalität", "ursache": 2501, "richtung": "Strafverfolgung von Hass und Bedrohung im Netz" },
+    { "begriff": "digital streetwork", "ursache": 2503, "richtung": "Prävention, Medienkompetenz und Gesprächskultur" }
+  ]
+}
+
+Protokoll
+
+Gelesen: Inhaltsverzeichnis (S. 4–5); Kapitel 4.1 (S. 130–133), 4.4 (S. 149–152), 4.7 (S. 158–161), 4.8 (S. 161–163, nur Einstieg), 4.9 (S. 167–169), 4.10–4.11 (S. 170–175), 6.1 (S. 224–234), 6.3 (S. 240–242); alle 24 Fundstellen des Teilauftrags.
+
+Neue Bündel (Bündel des Auftrags, im Leitfaden zu den Ursachen noch nicht hinterlegt; Koordination bitte ergänzen): 2501 „Meldewege und Hilfe für Betroffene ausbauen“ (S. 161), 2501 „Strafverfolgung von Hass und Bedrohung im Netz“ (S. 224), 2503 „Prävention, Medienkompetenz und Gesprächskultur“ (S. 159).
+
+Richtungen:
+- 2501 Meldewege/Hilfe: Maßnahme S. 161 (Meldestelle, bündelbildend). Gleichartig und nicht gesondert erfasst: S. 133 Beratungs- und Unterstützungsangebote und Melde-/Dokumentationsstrukturen für Betroffene digitaler Gewalt; S. 160 Opferberatungsstellen stärken und Informations-/Beratungsangebote für Betroffene rechter Gewalt; S. 160 „im Internet gehen wir entschieden gegen Hass und Hetze vor und stärken Beratungsstrukturen für Betroffene“ (Vorsatz, Beratung).
+- 2501 Strafverfolgung: Maßnahme S. 224 (bündelbildend). Gleichartig: S. 160 Polizei und Justiz sollen rechte Straftaten schneller erkennen und konsequent verfolgen (Bezug Rechtsextremismus, nicht online); S. 233 Befähigung der Sicherheitsbehörden mit Fokus auf Hasskriminalität im digitalen Raum (gleicher Hebel); S. 133 Fortbildungsprogramme für Polizei, Justiz, Verwaltung, Schulen und Jugendhilfe zu digitaler Gewalt (gleichartig zur neuen Schulungs-Zusage S. 132).
+- 2503 Prävention: Maßnahme S. 159, als Grenzfall in ursachen_offen (Rechtsextremismus-Kontext mit Radikalisierung; die Medienkompetenz-Zusage nennt aber ausdrücklich Hass). Gleichartig: S. 132 Präventionsmaßnahmen im digitalen Raum (Istanbul-Konvention, geschlechtsspezifische Gewalt).
+- 2503 Bündel „Moderation und Gestaltung der Plattformen“: keine Maßnahme gefunden. Suche nach Moderation, Algorithmen, Gegenrede, Zivilcourage, Netiquette, Klarnamen, Anonymität, Empfehlungssysteme: nur S. 129 (Zivilcourage, allgemein), S. 162 und S. 190 (Algorithmen ohne Bezug zu Anfeindungen). Nichts erfasst.
+- Plattformpflichten (Löschen, Digital Services Act) sind Ursache 2502 und gehören nicht zu den Ursachen dieses Teilauftrags: S. 159 (Instagram/TikTok müssen Inhalte löschen), S. 233 (DSA, Schutz der Nutzer*innen vor Hass).
+
+Nicht erfasst (gelesen, nicht aufgenommen):
+- S. 116: Forschung zu digitaler Hassrede (Forschungsausbau, keine Melde-, Hilfe- oder Präventionszusage).
+- S. 230: Beratungsstellen gegen Verschwörungsideologien und Hasskriminalität, Deradikalisierung – Radikalisierung und Extremismus nach R2, nicht Hass im Netz.
+- S. 167, 190, 197, 108, 115, 103, 38: Medienkompetenz, Desinformation, KI-Verständnis ohne Bezug zu Hass, Bedrohung oder Anfeindung (R2: allgemeine Netzpolitik/Medienbildung).
+- S. 172: Landesdemokratiefördergesetz – Demokratieförderung, Hass nur in der Diagnose.
+- S. 175: Hasskriminalität als Lagebeschreibung; AfD-Verbotsverfahren – kein Maßnahme dieses Themas.
+- S. 152: queerfeindliche Gewalt (Dunkelfeldstudie, Anzeigebereitschaft) – offline, kein Online-Bezug.
+- S. 217: Altersdiskriminierung, Betroffene unterstützen – kein Online-Bezug.
+- S. 234: Cybersicherheit, Datenschutz – Sicherheit nach R2.
+- S. 170–171: Religionsgemeinschaften als Ziel von Hass – nur Lage, keine Maßnahme.
+- S. 129: Zivilcourage als allgemeiner Wert, keine Maßnahme.
+
+Seiten ohne Text: Trennseiten (S. 128, 178, 222) und Titel-/Rückseiten; in den gelesenen Kapiteln kein Ausfall.

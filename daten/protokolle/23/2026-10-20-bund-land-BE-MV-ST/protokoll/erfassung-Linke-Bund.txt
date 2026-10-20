@@ -1,0 +1,75 @@
+{
+  "partei_id": 16,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Hausaufgaben abschaffen; das Einüben und Festigen soll in der Schule stattfinden.",
+      "ursachen_ids": [2304],
+      "buendel": "Belastung reduzieren",
+      "zitat": "Lernen soll in der Schule stattfinden. Über Hausaufgaben wird soziale Ungleichheit in ungleichen Schulerfolg übersetzt, deshalb wollen wir sie abschaffen.",
+      "seite": 38
+    },
+    {
+      "beschreibung": "Schulpsychologische und sozialarbeiterische Fachkräfte dauerhaft an jeder Schule verfügbar machen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2304],
+      "buendel": "Befähigung und Stressbewältigung",
+      "zitat": "Schulpsycholog*innen und Sozialarbeiter*innen müssen flächendeckend und dauerhaft an jeder Schule verfügbar sein.",
+      "seite": 39
+    },
+    {
+      "beschreibung": "Mitbestimmungsrechte von Schülerinnen und Schülern ausbauen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2301],
+      "zitat": "Die Mitbestimmungsrechte von Schüler*innen müssen ausgebaut werden.",
+      "seite": 39
+    },
+    {
+      "beschreibung": "Medien- und Datenschutzkompetenz von Kindern und Jugendlichen früh fördern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2303],
+      "buendel": "Medienkompetenz und Nutzungsregeln in der Schule",
+      "zitat": "Die Medien- und Datenschutzkompetenz von Kindern und Jugendlichen muss möglichst früh gefördert werden.",
+      "seite": 39
+    },
+    {
+      "beschreibung": "Kinder und Jugendliche sollen einen Rechtsanspruch auf Schutz vor Gewalt erhalten; ihre Rechte sollen im Grundgesetz verankert werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2301],
+      "zitat": "Wir wollen, dass Kinder und Jugendliche einen Rechtsanspruch auf gute Entfaltung und soziale Teilhabe bekommen. Gleiches gilt für den Schutz vor Gewalt. Deshalb wollen wir ihre Rechte im Grundgesetz verankern.",
+      "seite": 16
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 2302,
+      "seiten": [39, 40],
+      "grund": "Schulpsychologie und Schulsozialarbeit (S. 39) nennen im Zitat kein Mobbing, keine Gewalt und keine Konflikte (R2); Lehrkräfte-Fortbildung nur zu KI und Datenschutz (S. 39); kein Handeln von Lehrkräften bei Mobbing."
+    }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "hausaufgab", "ursache": 2304, "richtung": "Belastung reduzieren" }
+  ]
+}
+
+Protokoll
+
+Gelesen: Inhaltsverzeichnis (S. 2–4), Einleitung (S. 4–5), Kapitel 4 „Kinderarmut bekämpfen – Kinder und Jugendliche beteiligen“ (S. 16–17), Kapitel 10 „Gute Bildung“ (S. 38–40, „Kitas und Kinder stärken“, „Eine Schule für alle“, „Ausbilden, sonst wird umgelegt“, „Weiterbildung“, „Ein gutes Studium“), Kapitel 20 „Digitalisierung“ (S. 57–58). Volltextstichwort-Prüfung zu Mobbing, Gewalt, Cyber, Jugendschutz, Prüfung, Noten, Stress, Hausaufgaben, Schulpsychologie im ganzen Text. Seiten 1, 59, 60 ohne Text.
+
+Nicht erfasst:
+- S. 39 „Eine Schule für alle“ (ganztägig, inklusiv, gemeinsames Lernen): Leitbild und Strukturziel ohne konkrete Maßnahme gegen Ausgrenzung in der Klasse.
+- S. 39 „Politische Bildung, Mitbestimmungsrechte, Demokratie und Partizipation … früh … verankert“: gleichartig zur Mitbestimmung (S. 39), nicht gesondert erfasst.
+- S. 39 „Lehrkräfte müssen verstärkt zu KI, Datenschutz und digitaler Technik geschult werden“: keine Mobbing-Bezug (2302).
+- S. 16 „Bereits im Vorschulalter … sexualisierte Übergriffe und Gewalt zu erkennen“: Vorschulalter, sexualisierte Übergriffe, nicht Mobbing in der Schule.
+- S. 38 Lehrkräftemangel, Vertretungsreserve, Unterrichtsausfall: Schule nach R2, aber nicht Mobbing oder Druck.
+- S. 40 Ausbildungsreife, Ausbildungsbedingungen, Überlastung Auszubildender, Studierende: keine Schulpflichtigen, kein Schulbezug für 2304.
+- S. 6, 15, 16 (Kindergrundsicherung, Steuergutschriften), 18, 20, 26–27 („Entlastung“ bei Energie, Pflege, Arbeit, Familien): Entlastung ohne Schulbezug, kein Leistungs- oder Prüfungsdruck.
+- S. 40 „Politische Bildung, Medienkompetenz und KI-Wissen … Teil der beruflichen Ausbildung“: gleichartig zur Medienkompetenz (S. 39), Ausbildung statt Schule; nicht gesondert erfasst.
+- S. 57 „Kritische Auseinandersetzung mit … den sozialen und kulturellen Folgen von Digitalisierung … Schul- und Erwachsenenbildung“: allgemeine Netzbildung ohne Bezug zu Cybermobbing.
+- S. 57 Digital Services Act, Bundesnetzagentur: allgemeine Netzpolitik (R2), kein Plattformschutz für Kinder.
+- S. 39 Schulstraße, Verkehrssicherheit, Hitzeschutz, Schulbücher kostenlos, Verpflegung: kein Bezug zu Mobbing oder Druck.
+- S. 44 Schulpsychologie als Daseinsvorsorge (Kommunen): gleiche Maßnahme wie S. 39, nicht doppelt erfasst.
+
+Richtungen ohne Maßnahme: 2302 (siehe nicht_erfasst); 2301 hat nur Grenzfälle (ursachen_offen); 2303 nur Medienkompetenz (ursachen_offen), kein Cybermobbing- oder Plattformschutz-Bezug im Programm.
+
+Hinweis: Die Zuordnung der Schulpsychologie zu 2304 (Befähigung und Stressbewältigung) ist ein Grenzfall; im Zitat fehlt Mobbing, deshalb nicht bei 2302.
