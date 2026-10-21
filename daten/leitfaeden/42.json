@@ -1,0 +1,27 @@
+{
+  "thema_id": 42,
+  "stand": "2026-10-21",
+  "herkunft": "Perspektivenprüfung 2026-10-21 (KI-Entwurf, docs/perspektiven-ursachen.md, Thema 42), vor dem Blick in die Programme geschrieben. Noch nicht von der Betreiberin bestätigt.",
+  "regeln": [
+    { "nr": 1, "ursachen": [4201], "text": "Zu 1 gehören der Verlauf der Einkommensteuer bei steigenden Löhnen und Preisen und die Frage, ob der Tarif angepasst wird (kalte Progression, Tarifeckwerte, Grundfreibetrag). Nicht dazu: Höhe der Steuersätze insgesamt (3), Sozialbeiträge (701, 3801–3803), Bürgergeld-Anrechnung (506). Grenzfall: Kindergeld-Erhöhung ohne Tarifwirkung nur als ursachen_offen." },
+    { "nr": 2, "ursachen": [4202], "text": "Zu 2 gehört, dass die Ausgaben des Bundes die laufenden Einnahmen übersteigen, sich Defizit und Verschuldung erhöhen und Zinsausgaben steigen. Nicht dazu: einzelne Ausgabenbereiche wie Rente (701) oder GKV-Bundeszuschüsse (3802), die eigene Ursachen sind. Grenzfall: Ausgabenschub durch Verteidigung oder Sozialleistungen nur als ursachen_offen." },
+    { "nr": 3, "ursachen": [4203], "text": "Zu 3 gehört, wie sich die Steuereinnahmen auf Lohn-, Umsatz-, Erbschaft- und sonstige Steuern verteilen. Nicht dazu: die Gesamthöhe der Abgaben auf Arbeit (1104, Preise und Löhne) und die Beitragsentwicklung (701, 3801). Grenzfall: Steuerhöhe einzelner Steuern (z. B. Mehrwertsteuer-Satz) nur als ursachen_offen." }
+  ],
+  "suchbegriffe": {
+    "4201": {
+      "Tarif an Inflation anpassen": ["kalte progression", "progressionsausgleich", "tarifanpassung", "tarifeckwert"],
+      "Entlastung über Grundfreibetrag": ["grundfreibetrag"],
+      "Ausgleich verzichten, Einnahmen sichern": ["ausgleichsverzicht", "tarifverschieb"]
+    },
+    "4202": {
+      "Ausgaben senken": ["ausgabenkuerz", "sparpaket", "konsolidierung"],
+      "Einnahmen durch Steuern erhöhen": ["steuererhoehung", "einnahmenerhoeh"],
+      "Neuverschuldung zulassen": ["neuverschuldung", "kreditaufnahme", "bereichsausnahme"]
+    },
+    "4203": {
+      "Vermögen und Erbschaften stärker besteuern": ["vermoegensteuer", "erbschaftsteuer"],
+      "Unternehmen und Kapital entlasten": ["unternehmensteuer", "koerperschaftsteuer", "gewerbesteuer"],
+      "Konsum belasten oder entlasten": ["mehrwertsteuer", "umsatzsteuer"]
+    }
+  }
+}

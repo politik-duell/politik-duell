@@ -1,0 +1,37 @@
+{
+  "id": 43,
+  "name": "Künstliche Intelligenz",
+  "beschreibung": "Viele Menschen sorgen sich, dass KI ihren Arbeitsplatz entwertet, dass sie durch KI-Fälschungen getäuscht werden und dass sie über KI-gestützte Entscheidungen keine Kontrolle haben.",
+  "ziel": "Menschen werden durch KI nicht getäuscht, nicht ohne Ausweg benachteiligt und können im Beruf mit der KI-Entwicklung Schritt halten.",
+  "schlagwoerter": ["ki", "kuenstliche intelligenz", "deepfake", "stimmklon", "ki-betrug", "jobverlust", "algorithmus", "automatisierung"],
+  "ursachen": [
+    {
+      "id": 4301,
+      "beschreibung": "Viele Tätigkeiten lassen sich technisch durch Computer übernehmen: 2022 arbeiteten 38 % der Beschäftigten in Berufen, in denen mindestens 70 % der Tätigkeiten ersetzbar sind.",
+      "alltag": "Ich habe Angst, dass meine Arbeit durch KI überflüssig wird.",
+      "quelle_url": "https://doku.iab.de/kurzber/2024/kb2024-05.pdf",
+      "ebene": "bund",
+      "schlagwoerter": ["ki", "jobverlust", "arbeitsplatz", "automatisierung"]
+    },
+    {
+      "id": 4302,
+      "beschreibung": "Beschäftigte nutzen KI sehr ungleich: 2024 ohne Bildungsabschluss knapp ein Drittel, mit Hochschul-, Meister- oder Technikerabschluss fast 80 %. Eingeführt wird KI meist informell.",
+      "alltag": "Im Betrieb wird KI eingeführt, ohne dass mir jemand erklärt, was ich dafür können muss.",
+      "quelle_url": "https://www.bibb.de/de/206074.php",
+      "ebene": "bund",
+      "schlagwoerter": ["ki", "weiterbildung", "arbeitsplatz", "qualifikation"]
+    },
+    {
+      "id": 4303,
+      "beschreibung": "Kriminelle nutzen KI, um Angriffe effizienter und professioneller durchzuführen.",
+      "alltag": "Ich bekomme eine Nachricht oder einen Anruf, der nach einem Angehörigen klingt, und kann nicht sicher sein, ob er echt ist.",
+      "quelle_url": "https://www.bundesregierung.de/breg-de/aktuelles/cybercrime-2025-2430048",
+      "ebene": "bund",
+      "schlagwoerter": ["deepfake", "stimme", "ki-betrug", "fake"]
+    }
+  ],
+  "freigabe": {
+    "datum": "2026-10-21",
+    "art": "ki"
+  }
+}

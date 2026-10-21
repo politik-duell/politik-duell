@@ -1,0 +1,37 @@
+{
+  "id": 42,
+  "name": "Steuern und Abgaben",
+  "beschreibung": "Vom Bruttolohn bleibt vielen zu wenig netto. Viele fürchten, dass Steuern steigen oder staatliche Leistungen gekürzt werden.",
+  "ziel": "Beschäftigte behalten von ihrem Bruttolohn so viel, dass sie damit auskommen, und können sich auf die Höhe von Abgaben und staatlichen Leistungen verlassen.",
+  "schlagwoerter": ["steuern", "abgaben", "sozialabgaben", "netto", "nettolohn", "lohnsteuer", "einkommensteuer", "steuererhoehung", "leistungskuerzung", "kalte progression", "steuerlast", "staatsschulden"],
+  "ursachen": [
+    {
+      "id": 4201,
+      "beschreibung": "Die Einkommensteuer steigt real, wenn Löhne und Preise steigen, der Tarif aber nicht im gleichen Maß angepasst wird (kalte Progression). Ab 2027 ist offen, ob der Ausgleich weiterläuft.",
+      "alltag": "Ich merke, dass mehr Lohn kaum mehr netto bleibt, weil die Steuer schneller steigt als mein Gehalt.",
+      "quelle_url": "https://publikationen.bundesbank.de/publikationen-de/berichte-studien/monatsberichte/monatsbericht-mai-2026-994554?article=oeffentliche-finanzen-994446",
+      "ebene": "bund",
+      "schlagwoerter": ["kalte progression", "einkommensteuer", "tarif", "progressionsausgleich", "lohnsteuer"]
+    },
+    {
+      "id": 4202,
+      "beschreibung": "Der Bund gibt mehr aus, als seine laufenden Einnahmen decken: Das Defizit steigt, die Verschuldung wächst und die Zinsausgaben steigen stark.",
+      "alltag": "Ich frage mich, ob der Staat seine Schulden so in den Griff bekommt, dass die Leistungen bleiben, auf die ich mich verlasse.",
+      "quelle_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/07/PD26_267_713.html",
+      "ebene": "bund",
+      "schlagwoerter": ["haushalt", "staatsschulden", "schulden", "neuverschuldung", "zinsen", "bundeshaushalt", "defizit"]
+    },
+    {
+      "id": 4203,
+      "beschreibung": "Die Steuereinnahmen stammen zum größten Teil aus Lohn- und Umsatzsteuer; Erbschaftsteuer und andere vermögensbezogene Steuern machen nur einen kleinen Anteil aus.",
+      "alltag": "Ich sehe, dass mein Lohn und meine Einkäufe den größten Teil der Steuern tragen, andere Einnahmequellen deutlich weniger.",
+      "quelle_url": "https://www.destatis.de/DE/Themen/Staat/Steuern/Steuereinnahmen/steuereinnahmen.html",
+      "ebene": "bund",
+      "schlagwoerter": ["lohnsteuer", "umsatzsteuer", "mehrwertsteuer", "erbschaftsteuer", "steuerverteilung", "steuereinnahmen"]
+    }
+  ],
+  "freigabe": {
+    "datum": "2026-10-21",
+    "art": "ki"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": 44,
+  "name": "Zölle und Handelskonflikte",
+  "beschreibung": "Beschäftigte in exportabhängigen Betrieben fürchten um ihren Arbeitsplatz, weil Zölle und Handelskonflikte den Absatz bremsen. Zugleich hängen manche Rohstoffe an wenigen Lieferländern und können knapp werden.",
+  "ziel": "Beschäftigte in exportabhängigen Betrieben behalten ihre Arbeit, und wichtige Rohstoffe sind verlässlich verfügbar.",
+  "schlagwoerter": ["zoelle", "zoll", "handelskonflikt", "handelskrieg", "export", "exporte", "lieferkette", "lieferketten", "usa", "china", "seltene erden", "rohstoffe", "importe"],
+  "ursachen": [
+    {
+      "id": 4401,
+      "beschreibung": "US-Zölle verteuern deutsche Exporte in die USA und verringern deren Absatz: Infolge der US-Zollpolitik sanken die Exporte in die USA von Januar bis November 2025 um 9,4 %.",
+      "alltag": "Mein Betrieb verkauft viel in die USA, und seit den Zöllen kommen weniger Aufträge.",
+      "quelle_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/01/PD26_N004_51.html",
+      "ebene": "bund",
+      "schlagwoerter": ["zoelle", "usa", "export", "zollpolitik"]
+    },
+    {
+      "id": 4402,
+      "beschreibung": "Wichtige Rohstoffe stammen aus wenigen Ländern. 2025 kamen 55,4 % der importierten Seltenen Erden nach Deutschland aus China, EU-weit 46,8 %.",
+      "alltag": "Für unsere Produktion brauchen wir seltene Rohstoffe, und mehr als die Hälfte davon kommt aus China. Stockt dort die Lieferung, steht unsere Fertigung still.",
+      "quelle_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/04/PD26_N023_51.html",
+      "ebene": "bund",
+      "schlagwoerter": ["seltene erden", "rohstoffe", "china", "lieferkette", "lieferengpass"]
+    },
+    {
+      "id": 4403,
+      "beschreibung": "Importe aus China steigen und erhöhen den Wettbewerbsdruck auf heimische Hersteller. Die Einfuhren aus China stiegen 2025 um 8,8 % auf 170,6 Mrd. Euro.",
+      "alltag": "Billige Ware aus China kommt auf den Markt, und unsere Preise und Aufträge geraten unter Druck.",
+      "quelle_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/02/PD26_056_51.html",
+      "ebene": "bund",
+      "schlagwoerter": ["china", "importe", "konkurrenz", "wettbewerb"]
+    }
+  ],
+  "freigabe": {
+    "datum": "2026-10-21",
+    "art": "ki"
+  }
+}

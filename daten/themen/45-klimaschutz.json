@@ -1,0 +1,45 @@
+{
+  "id": 45,
+  "name": "Klimaschutz",
+  "beschreibung": "Viele Menschen sorgen sich, dass der Klimawandel ungebremst weitergeht, weil die Treibhausgasemissionen in Deutschland nur langsam sinken.",
+  "ziel": "Die Emissionen sinken so schnell, dass die Klimaziele erreichbar bleiben und die Erderwärmung begrenzt wird.",
+  "schlagwoerter": ["klimaschutz", "klima", "klimawandel", "co2", "treibhausgas", "emissionen", "klimaziele"],
+  "ursachen": [
+    {
+      "id": 4501,
+      "beschreibung": "Im Verkehr sinken die Emissionen nicht: 2025 lagen sie 2,1 Mio. t über dem Vorjahr, und der Expertenrat sieht den Verkehr für 2021 bis 2030 mit 60,8 Mio. t über seinem Budget.",
+      "alltag": "Ich merke, dass der Verkehr nicht weniger Treibhausgase ausstößt.",
+      "quelle_url": "https://dserver.bundestag.de/btd/21/061/2106175.pdf",
+      "ebene": "bund",
+      "schlagwoerter": ["verkehr", "auto", "lkw", "verkehrsemissionen"]
+    },
+    {
+      "id": 4502,
+      "beschreibung": "Im Gebäudebereich sinken die Emissionen nicht: 2025 stiegen sie um 3,4 Mio. t, und der Expertenrat sieht das Gebäudebudget für 2021 bis 2030 um 23,0 Mio. t überschritten.",
+      "alltag": "Ich merke, dass Häuser weiter viel Treibhausgas ausstoßen und der Gebäudebereich kaum sinkt.",
+      "quelle_url": "https://dserver.bundestag.de/btd/21/061/2106175.pdf",
+      "ebene": "bund",
+      "schlagwoerter": ["gebaeude", "haus", "wohnung", "waerme", "sanierung"]
+    },
+    {
+      "id": 4503,
+      "beschreibung": "Die Emissionen der Landwirtschaft bleiben 2025 nahezu unverändert; Methan aus der Tierhaltung und Lachgas aus der Stickstoffdüngung machen den größten Teil aus.",
+      "alltag": "Mir fällt auf, dass sich bei Tierhaltung und Düngung kaum etwas am Ausstoß ändert.",
+      "quelle_url": "https://umweltbundesamt.de/daten/umweltzustand-trends/land-forstwirtschaft/beitrag-der-landwirtschaft-zu-den-treibhausgas",
+      "ebene": "bund",
+      "schlagwoerter": ["landwirtschaft", "tierhaltung", "methan", "duenger", "lachgas"]
+    },
+    {
+      "id": 4504,
+      "beschreibung": "Verfehlungen einzelner Sektoren gleichen Puffer anderer Sektoren im Gesamtbudget aus; nachsteuern muss die Regierung erst, wenn eine Überschreitung zweimal festgestellt ist.",
+      "alltag": "Ich frage mich, warum Klimaziele nicht früher und für jeden Bereich nachgesteuert werden.",
+      "quelle_url": "https://dserver.bundestag.de/btd/21/061/2106175.pdf",
+      "ebene": "bund",
+      "schlagwoerter": ["klimaschutzgesetz", "sektorziele", "nachsteuerung", "budget"]
+    }
+  ],
+  "freigabe": {
+    "datum": "2026-10-21",
+    "art": "ki"
+  }
+}
