@@ -1,0 +1,44 @@
+{
+  "partei_id": 16,
+  "land": "MV",
+  "massnahmen": [
+    { "beschreibung": "Beratungs- und Unterstützungsangebote für Betroffene digitaler Gewalt ausbauen und stärken", "ursachen_ids": [2501], "buendel": "Meldewege und Hilfe für Betroffene ausbauen", "zitat": "Wir wollen: […] Beratungs- und Unterstützungsangebote für Betroffene digitaler Gewalt ausbauen und stärken.", "seite": 14 },
+    { "beschreibung": "Hasskriminalität und diskriminierende Straftaten konsequent bekämpfen", "ursachen_ids": [], "ursachen_offen": [2501], "buendel": "Strafverfolgung von Hass und Bedrohung im Netz", "zitat": "Hasskriminalität und diskriminierende Straftaten konsequent bekämpfen und Präventionsarbeit mit Opferschutz verzahnen.", "seite": 7 },
+    { "beschreibung": "Polizei und Justiz für digitale Gewalt sensibilisieren und fortbilden", "ursachen_ids": [], "ursachen_offen": [2501], "zitat": "Polizei und Justiz stärker für digitale Gewalt sensibilisieren und entsprechend fortbilden.", "seite": 14 },
+    { "beschreibung": "Justizbeschäftigte besser vor Bedrohungen, Einschüchterung und Hasskampagnen schützen", "ursachen_ids": [], "ursachen_offen": [2501], "zitat": "Richter:innen, Staatsanwält:innen und Justizvollzugsbedienstete besser vor Bedrohungen, Einschüchterung, Hasskampagnen und Angriffen schützen.", "seite": 7 },
+    { "beschreibung": "Projekte unterstützen, die sich gegen Hass und digitale Übergriffe engagieren", "ursachen_ids": [], "ursachen_offen": [2503], "zitat": "Projekte unterstützen, die sich gegen Hass, sexualisierte Gewalt und digitale Übergriffe engagieren.", "seite": 14 },
+    { "beschreibung": "Medienbildung als verpflichtenden Bestandteil von Lehrplänen und Ausbildungen stärken", "ursachen_ids": [2503], "buendel": "Prävention, Medienkompetenz und Gesprächskultur", "zitat": "Lehrpläne und Ausbildungen modernisieren, um Medienbildung als verpflichtenden Bestandteil zu stärken.", "seite": 27 },
+    { "beschreibung": "Auf Bundesebene Haftungs- und Sorgfaltspflichten für Tech-Konzerne einsetzen", "ursachen_ids": [], "ursachen_offen": [2501], "buendel": "Plattformen verbindlich in die Pflicht nehmen", "zitat": "Uns auf Bundesebene für Haftungs- und Sorgfaltspflichten von Tech-Konzernen […] einsetzen.", "seite": 27 },
+    { "beschreibung": "Auf Bundesebene transparente Algorithmen einsetzen", "ursachen_ids": [2503], "buendel": "Moderation und Gestaltung der Plattformen", "zitat": "Uns auf Bundesebene […] sowie transparente Algorithmen und faire Besteuerung einsetzen.", "seite": 27 }
+  ],
+  "neue_buendel": [
+    { "ursache": 2501, "name": "Fortbildung von Polizei und Justiz", "seite": 14 },
+    { "ursache": 2501, "name": "Schutz von Justizbeschäftigten vor Hasskampagnen", "seite": 7 },
+    { "ursache": 2503, "name": "Förderung von Projekten gegen Hass", "seite": 14 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "Hasskampagnen", "ursache": 2501, "richtung": "Schutz vor Hass" }
+  ],
+  "stand_im_pdf": "Stand: Juni 2026 (Beschluss am 30. Mai 2026)"
+}
+
+Protokoll
+
+Gelesen: S. 1–3 (Titel, Impressum, Inhalt), S. 7 (Kapitel 3, Kapitel 11 Justiz und Hasskriminalität, Fundstelle), S. 11 (Kapitel 6, Medienkompetenz und Plattformregulierung, Fundstelle), S. 14 (Kapitel 8, Digitale Gewalt, Fundstelle), S. 16 (Queerpolitik und Antidiskriminierung, Fundstelle), S. 24–25 (Kapitel 15 Justiz, Fundstellen), S. 27–28 (Kapitel 18 Digitales und Medien, Kapitel 19 Verbraucherschutz, Fundstellen). Dazu Stichwortsuche in der Textdatei nach Hass-, Melde-, Netz-, Plattform-, Algorithmen- und Betroffenen-Begriffen. Seiten 1 und 30 fast ohne Text (Titel- und Rückseite).
+
+Gleichartige Stellen (nicht eigene Maßnahme): S. 11 „Medienkompetenz in allen Bildungseinrichtungen ausbauen sowie Fort- und Weiterbildungen für Lehrkräfte“ (Hebel Medienbildung wie S. 27, dort konkreter). S. 11 „Plattformregulierung und Verantwortung von Tech-Unternehmen bei Hassrede“ (gleicher Hebel wie S. 27 Haftungspflichten, dort konkreter).
+
+Nicht erfasst:
+- S. 16: Antidiskriminierungsberatung, mobile Betroffenenberatung, Ombudsstelle, Landesantidiskriminierungsgesetz. Diskriminierung allgemein, nicht Hass oder Anfeindung im Netz.
+- S. 16: Beratungs- und Interventionsstellen für queere Betroffene von sexueller und körperlicher Gewalt. Nicht netzbezogen.
+- S. 24: Fortbildungen zu Antidiskriminierung und Gewaltsensibilität für Justizbeschäftigte. Kein Bezug zu Hass im Netz.
+- S. 25: Interdisziplinäre Anlaufstellen für gewaltbetroffene Kinder und Jugendliche, Opferambulanzen, Schulung im Umgang mit sexualisierter und häuslicher Gewalt. Nicht netzbezogen.
+- S. 27: Medienanstalt, Vorwegabzug, Medienaufsicht. Aufsicht ohne Bezug zu Hass oder Anfeindung im Text, Ursache 2502 nicht zulässig.
+- S. 27: KI sozial und transparent gestalten; Digitalstrategie, Glasfaser. Kein Bezug zu Hass.
+- S. 28: Verschlüsselung, Überwachungstechnik, Datenmissbrauch. Sicherheit und Datenschutz nach R2, nicht Thema.
+- S. 20: Polizeibeauftragter, Polizei-Beschwerdestelle, Polizeifortbildung. Nicht netzbezogen.
+- S. 7: Demokratieprogramme, Netzwerke gegen Rechtsextremismus, Präventionsprogramme gegen Radikalisierung. Kein Bezug zu Netz-Hass.
+
+Grenzfälle, Ursache 2501 als offen: Plattform-Pflichten (S. 27, Bündel „Plattformen verbindlich in die Pflicht nehmen“) sind nach R1 2502. 2502 ist für Landesprogramme nicht zulässig; das Bündel steht aber im Auftrag für 2501, daher offen. Strafverfolgung allgemein (S. 7) und Polizei- und Justizfortbildung (S. 14) nennen weder Betroffene noch Plattformen; daher offen. Schutz von Justizbeschäftigten vor Hasskampagnen (S. 7) als Betroffenenschutz offen.
+
+Ursachen ohne Maßnahme: keine. Richtungen ohne Maßnahme: Meldestellen oder Meldewege für Hasskommentare (2501): im Text nicht gefunden. Gegenrede, Netiquette, Streitkultur im Netz (2503): im Text nicht gefunden.

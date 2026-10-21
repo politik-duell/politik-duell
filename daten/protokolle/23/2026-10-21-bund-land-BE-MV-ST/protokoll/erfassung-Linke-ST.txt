@@ -1,0 +1,75 @@
+{
+  "partei_id": 16,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Multiprofessionelle Teams aus Lehrkräften, Sozialarbeit, Psychologie und weiteren Fachkräften in Kitas und Schulen flächendeckend aufbauen, mit Konzeption und gesicherten Ressourcen.",
+      "ursachen_ids": [2301],
+      "ursachen_offen": [2302],
+      "buendel": "Unterstützung durch Fachkräfte und Beschwerdewege",
+      "zitat": "Sie sollen Kinder und Familien von Anfang an unterstützen und sie in ihren sozialen und emotionalen Kompetenzen stärken. […] Für den flächendeckenden Auf- und Ausbau multiprofessioneller Teams werden wir: die Konzeption für den Einsatz multiprofessioneller Teams in Kitas und Schulen weiterentwickeln, die benötigten finanziellen und personellen Ressourcen für die Umsetzung der Konzeption sicherstellen",
+      "seite": 27
+    },
+    {
+      "beschreibung": "Fachkräfte der multiprofessionellen Teams kontinuierlich fortbilden, um Zusammenarbeit und Kommunikation zu verbessern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2302],
+      "buendel": "Fortbildung und Handlungssicherheit der Lehrkräfte",
+      "zitat": "Für den flächendeckenden Auf- und Ausbau multiprofessioneller Teams werden wir: […] die beteiligten Fachkräfte kontinuierlich fortbilden, um die Zusammenarbeit und Kommunikation zu unterstützen.",
+      "seite": 27
+    },
+    {
+      "beschreibung": "Förderung aller Kinder im Regelschulsystem strukturell verbessern (Klassengrößen, Teameinsatz, Lernmaterial) und mehr qualifizierte Pädagog:innen einsetzen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2301],
+      "zitat": "Sie schützt vor Aussonderung und fördert sozialen Zusammenhalt. Deshalb ist für uns der Anspruch auf eine erfolgreiche, inklusive Bildung im Regelschulsystem für alle Schüler:innen verbindlich. Um dieses Ziel zu erreichen, werden wir die Förderung von allen Kindern strukturell verbessern (Klassengrößen, Teameinsatz, differenzierte Lernmaterialien) und vor allem deutlich mehr qualifizierte Pädagog:innen einsetzen.",
+      "seite": 30
+    },
+    {
+      "beschreibung": "Auszubildende für mehrere Tage vor den Abschlussprüfungen ohne Nachteile freistellen, damit sie mehr Zeit zur Prüfungsvorbereitung haben.",
+      "ursachen_ids": [2304],
+      "buendel": "Belastung reduzieren",
+      "zitat": "Außerdem brauchen Auszubildende insgesamt mehr Zeit, um sich auf Prüfungen vorzubereiten. Wir setzen uns dafür ein, dass alle Auszubildenden für mehrere Tage vor ihren Abschlussprüfungen freigestellt werden, ohne dass ihnen dadurch Nachteile entstehen.",
+      "seite": 32
+    },
+    {
+      "beschreibung": "Am Ende der Grundschulzeit keine Schullaufbahnempfehlung mehr; Eltern erhalten nur Beratung zur Schulwahl.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2304],
+      "zitat": "Für die Schulwahl am Ende der Grundschulzeit sollen die Eltern dann Beratungsangebote, aber keine Schullaufbahnempfehlung mehr erhalten.",
+      "seite": 31
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 2301, "name": "Inklusive Förderung im Regelschulsystem", "seite": 30 },
+    { "ursache": 2304, "name": "Schullaufbahnempfehlung abschaffen", "seite": 31 }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis (S. 1–6); Kapitel 5 Bildungsgerechtigkeit (S. 26–35) vollständig; Kapitel 7 Kinder- und Jugendarmut (S. 59–65) vollständig; Kapitel 7 Gesundheit, Kampf gegen Stigmata (S. 51–52) und Kapitel 12 interkulturelle Bildung (S. 98–99) zur Prüfung auf Schulbezug. Fundstellen außerhalb dieser Kapitel (S. 11, 21, 24, 25, 44–50, 54–57, 68–70, 85, 94, 97, 100, 127–144, 149) im Umfeld gelesen und auf Schulbezug geprüft; kein weiterer Treffer außer S. 25 (unten). Seite 1 ist Titelseite (kein Textfehler).
+
+Nicht erfasst:
+- S. 27–28 Schulsozialarbeit verstetigen, Personalschlüssel 1:150 ab 2028/29: Grenzfall. Zitat nennt weder Mobbing, Gewalt noch Konflikte; nach R2 deshalb nicht 2301/2302. Koordination bitte prüfen.
+- S. 60–61 unabhängige Beschwerdewege (Telefon, online, vor Ort) und Vertrauensperson in Vereinen/Jugendzentren: nicht schulbezogen, Ursache 2302 verlangt Beschwerdewege an Schulen.
+- S. 60 Übergaben Jugendhilfe/ÖGD/Schule/Familiengericht bei Kinderschutz (häusliche Gewalt): Familienkontext, kein Schulhandeln bei Mobbing.
+- S. 60 Lotsenstellen in die psychische Versorgung: Versorgung, nicht Leistungsdruck oder Entlastung.
+- S. 34 Lehrkräftemangel, Seiteneinstieg, Fortbildung pädagogischer Mitarbeiter, Entlastung der Lehrkräfte: Schule allgemein (R2), kein Bezug zu Mobbing oder Schülerdruck.
+- S. 30 Kopfnoten abschaffen; Bußgelder und Jugendarrest für Schulschwänzen ersetzen: kein Bezug zu Klassenklima, Mobbing oder Leistungsdruck.
+- S. 30–31 Gemeinschaftsschule und längeres gemeinsames Lernen, Schulpflicht: Schulstruktur; kein ausdrücklicher Bezug zu Klassenklima oder Ausgrenzung.
+- S. 32 Ganztag und Horte im Schulgesetz, S. 33 Schuldemokratie und Drittelparität: Strukturen ohne Bezug zu Klassenklima oder Druck.
+- S. 25 sexuelle Bildung an Schulen finanziell unterstützen: nicht Mobbing oder Ausgrenzung ausdrücklich.
+- S. 63–64 Schullandheime und Ferienangebote, Kinderteilhabe: Freizeit, kein Schulbezug zu Druck oder Mobbing.
+- S. 62 Demokratiebildung und Kinderparlamente: Beteiligung in Kommunen und Land, kein Schulklima.
+- S. 94, 97, 100 und weitere Fundstellen (Ausgrenzung als politischer Begriff, Klimaresilienz, Integration, Sport): kein Bezug zu Schule oder Mobbing.
+
+Richtungen ohne Maßnahme:
+- 2302, Beschwerdewege an Schulen: keine Zusage gefunden.
+- 2302, Handeln der Lehrkräfte bei Mobbing: nur Fortbildung der Fachkräfte (offen erfasst).
+- 2301, Bündel „Klassenklima und soziales Lernen stärken“: keine eigene Zusage; die Teams (S. 27) stehen im Bündel „Unterstützung durch Fachkräfte“.
+- 2301 und 2302, Bündel „Regeln und Konsequenzen durchsetzen“: keine Zusage für Konsequenzen bei Mobbing; nur Gegenrichtung (Kopfnoten, Bußgelder), nicht erfasst.
+- 2304, Schüler:innen-Leistungsdruck und Entlastung: keine Zusage außer Freistellung der Auszubildenden (S. 32) und Schullaufbahnempfehlung (S. 31).
+- Bündel „Befähigung und Stressbewältigung“ (2301, 2304): kein Fund (Resilienz nur als Klimaresilienz, S. 94; Schulpsychologie nicht genannt).
+
+Seiten ohne Text: nur S. 1 (laut Auftrag), ohne Bedeutung für das Thema.

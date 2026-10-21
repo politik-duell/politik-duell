@@ -1,0 +1,64 @@
+{
+  "pruefsumme": "8a3dbc7e525201ca8ba2cb7e21a1f9d45d01f9aeff44e269f959d289f6cfb995",
+  "thema": {
+    "id": 26,
+    "name": "Barrieren für Menschen mit Behinderung",
+    "ziel": "Menschen mit Behinderung können ihren Alltag selbstbestimmt gestalten und Wohnen, Mobilität, Angebote, Arbeit und benötigte Unterstützung gleichberechtigt nutzen."
+  },
+  "ursachen": [
+    {
+      "id": 2601,
+      "beschreibung": "Der Abbau von Zugangsbarrieren an Bahnhöfen verzögert sich laut Bundesrechnungshof (2025) vor allem wegen unzureichender Steuerung der Investitionen",
+      "ebene": "bund"
+    },
+    {
+      "id": 2602,
+      "beschreibung": "Über 50 % der Betriebe nannten 2024 fehlende geeignete Tätigkeiten als Hürde für die Beschäftigung von Menschen mit Behinderung; etwa ein Viertel nannte Ausstattungskosten oder Aufwand",
+      "ebene": "bund"
+    },
+    {
+      "id": 2603,
+      "beschreibung": "Etwa 22 % der Betriebe nannten 2024 erwartete Leistungseinschränkungen oder Sonderregeln als Hürde für die Beschäftigung von Menschen mit Behinderung",
+      "ebene": "bund"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        2601,
+        2602,
+        2603
+      ],
+      "text": "Zu 2601 gehören Barrierefreiheit von Bahnhöfen, Haltestellen und Verkehrsmitteln und die Steuerung der Umsetzung; zu 2602 Arbeitsplätze, Ausstattung, Ausgleichsabgabe und Beschäftigungspflicht; zu 2603 Vorbehalte, Beratung und Regeln, die Einstellung und Beschäftigung betreffen. Barrierefreies Wohnen, Gebäude und digitale Angebote ohne Bezug zu diesen Ursachen sind nur als ursachen_offen zu melden."
+    },
+    {
+      "nr": 2,
+      "text": "Gemeinsamer Unterricht an Regelschulen ist eine eigene Haltung und gehört nicht hierher. Pflege, Rente und allgemeine Diskriminierung gehören zu anderen Themen, soweit das Zitat keine Barriere für Menschen mit Behinderung nennt."
+    }
+  ],
+  "instrumente": [
+    {
+      "id": 10302,
+      "name": "Vermittlung und Förderung von Menschen mit Behinderung auf dem allgemeinen Arbeitsmarkt stärken (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "belegt",
+      "begruendung": "Begleitete Vermittlung (Supported Employment/IPS) verdoppelt laut Übersichtsarbeit etwa die Chance auf reguläre Arbeit. Die Zusagen bleiben aber unbestimmt, und es fehlt ein konkretes Instrument oder ein Betrag.",
+      "beleg_studie_url": "https://www.fhi.no/en/publ/2017/supported-employment-for-arbeidssokere-med-bistandsbehov-en-systematisk-ove/"
+    }
+  ],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "bund",
+      "beschreibung": "Anreize schaffen, damit mehr barrierefreie Arbeitsplätze entstehen",
+      "zitat": "Gleichzeitig braucht es mehr Anreize zur Schaffung barrierefreier Arbeitsplätze.",
+      "ursachen_ids": [
+        2602
+      ],
+      "pruefsumme": "483ed7355a0abbea"
+    }
+  ]
+}

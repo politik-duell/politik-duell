@@ -35,7 +35,8 @@ insert into public.massnahmen (id, thema_id, partei_id, land, beschreibung, ursa
   (10316, 26, 14, null, 'Praxisnahe Förderung und Arbeitsvermittlung für Menschen mit Behinderung auf dem ersten Arbeitsmarkt', '{2602}', 10302, 2, 3, null, 'Begleitete Vermittlung (Supported Employment/IPS) verdoppelt laut Übersichtsarbeit etwa die Chance auf reguläre Arbeit. Die Zusagen bleiben aber unbestimmt, und es fehlt ein konkretes Instrument oder ein Betrag.', 'https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=25', 'https://www.fhi.no/en/publ/2017/supported-employment-for-arbeidssokere-med-bistandsbehov-en-systematisk-ove/', 'belegt', '2026-10-20', false, true, 'blind'),
   (10317, 26, 16, null, 'Netz sanieren, elektrifizieren und ausbauen sowie Strecken reaktivieren, jeweils barrierefrei.', '{2601}', null, 1, 2, null, 'Barrierefreiheit wird nur als Begleitbedingung beim Netzausbau genannt, und bei Neubau ist sie ohnehin Standard. Den Rückstand an bestehenden Bahnhöfen und die Steuerungsmängel spricht die Zusage nicht an.', 'https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=37', null, 'offen', '2026-10-20', false, true, 'blind'),
   (10318, 26, 16, null, 'Beschäftigungspflicht für Menschen mit Behinderung wieder auf sechs Prozent anheben; Betriebe sollen sich nicht freikaufen können.', '{2602}', null, 1, 2, null, 'Eine Studie fand keinen Effekt der Quotensenkung von 6 auf 5 Prozent, eine neuere IAB-Studie dagegen einen kleinen positiven Effekt der Pflicht. Ohne Freikaufmöglichkeit wären neue Sanktionen nötig, und das Problem fehlender Tätigkeiten bliebe.', 'https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=54', 'https://iab.de/publication/?id=591316', 'gemischt', '2026-10-20', false, true, 'blind'),
-  (10319, 26, 16, null, 'Inklusionsbetriebe besser öffentlich finanzieren.', '{2602}', null, 2, 3, null, 'Inklusionsbetriebe schaffen gezielt geeignete Arbeitsplätze mit Mindestlohn, und mehr Förderung kann sie ausweiten. Belastbare Wirkungsstudien fehlen, und die Zahl der Plätze ist bislang gering.', 'https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=54', 'https://www.betanet.de/inklusionsbetriebe.html', 'offen', '2026-10-20', false, true, 'blind');
+  (10319, 26, 16, null, 'Inklusionsbetriebe besser öffentlich finanzieren.', '{2602}', null, 2, 3, null, 'Inklusionsbetriebe schaffen gezielt geeignete Arbeitsplätze mit Mindestlohn, und mehr Förderung kann sie ausweiten. Belastbare Wirkungsstudien fehlen, und die Zahl der Plätze ist bislang gering.', 'https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=54', 'https://www.betanet.de/inklusionsbetriebe.html', 'offen', '2026-10-20', false, true, 'blind'),
+  (10376, 26, 17, null, 'Anreize schaffen, damit mehr barrierefreie Arbeitsplätze entstehen', '{2602}', null, 2, 3, null, 'Zuschüsse für Arbeitsplatzanpassung erhöhen laut Studien Anpassungen und Beschäftigung, werden aber oft wenig genutzt. Die Zusage nennt weder Instrument noch Betrag; ähnliche Leistungen gibt es im SGB IX schon, der Bund kann sie ausbauen.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=22', 'https://nber.org/papers/w31978', 'belegt', '2026-10-21', false, true, 'blind');
 
 select setval(pg_get_serial_sequence('public.massnahmen', 'id'), (select max(id) from public.massnahmen));
 
@@ -54,7 +55,8 @@ insert into public.pruef_einheiten (id, thema_id) values
   (10315, 26),
   (10317, 26),
   (10318, 26),
-  (10319, 26);
+  (10319, 26),
+  (10376, 26);
 
 insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand, ki_entwurf, durchsucht_fuer) values
   (26, 11, null, 'massnahmen', null, '2026-10-20', true, '{2601,2602,2603}'),
@@ -62,6 +64,7 @@ insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand
   (26, 13, null, 'massnahmen', null, '2026-10-20', true, '{2601,2602,2603}'),
   (26, 14, null, 'massnahmen', null, '2026-10-20', true, '{2601,2602,2603}'),
   (26, 15, null, 'keine', 'Erfasste Stellen (S. 23) setzen laut Bewertung ohne Parteinamen an keiner der Ursachen an.', '2026-10-20', true, '{2601,2602,2603}'),
-  (26, 16, null, 'massnahmen', null, '2026-10-20', true, '{2601,2602,2603}');
+  (26, 16, null, 'massnahmen', null, '2026-10-20', true, '{2601,2602,2603}'),
+  (26, 17, null, 'massnahmen', null, '2026-10-21', true, '{2601,2602,2603}');
 
 commit;
