@@ -1,0 +1,58 @@
+{
+  "partei_id": 13,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Keine Massenüberwachung durch Chatkontrolle oder Gesichtserkennung",
+      "ursachen_ids": [3401],
+      "buendel": "Kontrollen begrenzen und nachvollziehbar machen",
+      "zitat": "Massenüberwachung durch Chatkontrolle oder Gesichtserkennung wird es mit uns nicht geben.",
+      "seite": 41
+    },
+    {
+      "beschreibung": "Aus- und Fortbildung der Polizei auf Antidiskriminierung, interkulturelle Kompetenz und Deeskalation ausrichten",
+      "ursachen_ids": [3402],
+      "buendel": "Kommunikation und Fortbildung der Polizei",
+      "zitat": "Die Aus- und Fortbildung der Polizei soll auf demokratische Werte, Menschenrechte, Antidiskriminierung, interkulturelle Kompetenz und Deeskalation ausgerichtet sein.",
+      "seite": 43
+    },
+    {
+      "beschreibung": "Polizei diverser aufstellen, gezielt Menschen mit Migrationsgeschichte, Frauen, queere Menschen und mehrsprachige Bewerber*innen ansprechen",
+      "ursachen_ids": [],
+      "ursachen_offen": [3402],
+      "zitat": "Unsere Polizei soll die Gesellschaft widerspiegeln, der sie dient. Dafür wollen wir gezielt Menschen mit Migrationsgeschichte, Frauen, queere Menschen und Bewerber*innen mit mehrsprachigen Kompetenzen ansprechen und fördern.",
+      "seite": 43
+    },
+    {
+      "beschreibung": "Unabhängige Polizeibeauftragte Stelle für Beschwerden und Fehlverhalten in der Polizei schaffen",
+      "ursachen_ids": [3403],
+      "buendel": "Unabhängige Beschwerde- und Kontrollstellen",
+      "zitat": "Wir wollen eine unabhängige Stelle schaffen, die Beschwerden, Hinweise und Fehlverhalten in der Polizei untersucht – und das transparent, niedrigschwellig und mit umfassenden Rechten.",
+      "seite": 43
+    },
+    {
+      "beschreibung": "Beschwerden bei der Polizei nachvollziehbar dokumentieren und auswerten",
+      "ursachen_ids": [3403],
+      "buendel": "Dokumentation und faire Verfahren",
+      "zitat": "Beschwerden müssen nachvollziehbar dokumentiert und ausgewertet werden, um Strukturen zu verbessern.",
+      "seite": 43
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3401, "seiten": [41, 42], "grund": "Gezielte-Kontrollen-Bündel ohne Fund; Datenanalyse-Verbot (Palantir, S. 42) gleichartig zur Überwachungsbegrenzung, nicht zusätzlich erfasst" },
+    { "ursache": 3402, "seiten": [41, 42, 43, 46], "grund": "Taser-Passage und Verzahnung S. 42 nur Lagebeschreibung und Bedarf (kann/notwendig/braucht), keine Zusage; Personal und Ausstattung (S. 41, R2 Sicherheit); Cyber-Schulungen S. 46 betreffen keine Polizeikontakte; Nachwuchs und Lehrangebot S. 42 gleichartig zur Fortbildung" },
+    { "ursache": 3403, "seiten": [42, 43], "grund": "Klare Beschwerdewege (S. 43) gleichartig zum Polizeibeauftragten; Supervision und Fehlerkultur (S. 43) betreffen nicht Verfahren bei Polizeigewalt" }
+  ]
+}
+
+Protokoll (Thema 34, Grüne ST)
+
+Gelesen: Inhaltsverzeichnis (S. 3–4); Kapitel 2.3 Ende (S. 40); Kapitel 2.4 Innere Sicherheit und Bürgerrechte (S. 41–42); Kapitel 2.5 Anfang, Abschnitte „Polizei diverser aufstellen“, „Unabhängige*r Polizeibeauftragte*r“, „Starke Fehlerkultur, transparente Kontrolle, klare Beschwerdewege“ (S. 43); Kapitel 2.6 Abschnitt Cyberkriminalität (S. 46). Fundstellen S. 18 (Videoüberwachung in Schlachthöfen, Tierschutz, kein Polizeibezug), S. 42, S. 43. Stichwortsuche im ganzen Programm (Polizei, Kontrolle, Beschwerde, Bodycam, Kennzeichnung, Racial Profiling): sonst keine Stellen zu Polizei; Kinder-/Jugendkapitel (S. 54–56) ohne Polizeibezug.
+
+Ursache 3401: Bündel „Kontrollen begrenzen und nachvollziehbar machen“ erfasst (S. 41, Massenüberwachung). Gleichartig und nicht zusätzlich erfasst: S. 42 „Der Einsatz von Datenanalysen muss dabei stets an eine starke rechtliche Kontrolle gebunden sein. Eine Einführung von Palantir oder vergleichbarer Software […] lehnen wir entschieden ab.“ Bündel „Gezielte Kontrollen für Sicherheit ermöglichen“: keine Maßnahme gefunden (Schleierfahndung, Kriminalitätsschwerpunkte, Gefahrengebiete, Kontrollen verstärken im Text nicht vorhanden; Videoüberwachung nur S. 18, Schlachthöfe, kein Polizeibezug).
+Ursache 3402: Bündel „Kommunikation und Fortbildung der Polizei“ erfasst (S. 43, konkreteste Stelle). Gleichartig und nicht zusätzlich erfasst: S. 42 „Nachwuchsgewinnung und Ausbildung“ (passgenaue Kampagnen, „breites und attraktives Lehrangebot zu sorgen“); S. 43 „Polizeihochschule Aschersleben … unabhängige Hochschule“ (Aus- und Fortbildung, Wissenstransfer). Bündel „Handlungsfähigkeit und Rückhalt der Polizei“: keine Maßnahme gefunden (Rückhalt, Einsatztraining, Schutz für Einsatzkräfte nicht im Polizeikapitel; S. 48 Einsatzkräfte nur Bevölkerungsschutz; Personalausbau und Budgets S. 41 gehören zu Sicherheit nach R2, nicht erfasst).
+Grenzfälle: Maßnahme Diversität (S. 43) als ursachen_offen 3402, ohne Bündel. Fortbildung (S. 43) mit „soll“ formuliert, als Zusage erfasst (Zielvorgabe mit konkreter Maßnahme).
+Ursache 3403: Bündel „Unabhängige Beschwerde- und Kontrollstellen“ (S. 43) und „Dokumentation und faire Verfahren“ (S. 43) erfasst. Gleichartig und nicht zusätzlich erfasst: S. 43 „Eine moderne Polizei braucht klare und gut zugängliche Beschwerdewege“. Bündel „Kennzeichnungspflicht“ und „Bodycams“: nicht im Text gefunden.
+
+Richtungen ohne Maßnahme: Ursache 3401 Richtung „Gezielte Kontrollen für Sicherheit“; Ursache 3402 Richtung „Handlungsfähigkeit und Rückhalt der Polizei“; Ursache 3403 keine weitere Richtung offen.
+Seiten ohne Text: S. 1, 5, 100 (Titel- und Schlussseiten), ohne Einfluss.

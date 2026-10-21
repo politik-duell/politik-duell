@@ -1,0 +1,27 @@
+{
+  "partei_id": 11,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Mehr Effizienz beim Einsatz der Beitragsgelder in der gesetzlichen Krankenversicherung, mehr Wettbewerb der Krankenkassen.", "ursachen_ids": [], "ursachen_offen": [3801], "zitat": "[…] wir mehr Effizienz beim Einsatz von Beitragsgeldern an und stärken den Wettbewerb der Krankenkassen.", "seite": 70 },
+    { "beschreibung": "Fehlsteuerungen der Krankenhausreform korrigieren.", "ursachen_ids": [], "ursachen_offen": [3801], "zitat": "Fehlsteuerungen in Folge der Krankenhausreform werden wir korrigieren.", "seite": 70 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3802, "seiten": [31, 63, 71], "grund": "Gelesen: Kapitel Gesundheit und Pflege (S. 67–72). S. 63: Ehegattensplitting ist Steuerrecht, keine Mitversicherung. Keine Zusage zur Erstattung versicherungsfremder Leistungen der GKV durch den Bund. S. 31: Grundsatz gegen Verschiebung steuerfinanzierter Ausgaben betrifft die Arbeitslosenversicherung. S. 71: Steuermittel nur in der Pflegeversicherung (andere Ursache)." },
+    { "ursache": 3803, "seiten": [70], "grund": "Gelesen: GKV-Abschnitt (S. 69–70). Keine Aussage zu Rücklagen der Kassen oder zum erhobenen Zusatzbeitrag im Verhältnis zum Bekanntgegebenen." },
+    { "ursache": 3804, "seiten": [69, 70, 71], "grund": "Gelesen: Kapitel Gesundheit und Pflege (S. 67–72). Keine Aussage zu gesetzlichen Zuzahlungen, Eigenanteilen oder zur Belastungsgrenze." }
+  ]
+}
+
+Protokoll
+
+Gelesen: Inhaltsverzeichnis (S. 2); Kapitel „Für gute Gesundheit und Pflege“ (S. 69–72), Abschnitt „Gesundheitssystem bessere aufstellen“ mit Krankenversicherung, Krankenhausreform, Versorgung, Digitalisierung, Pflege (S. 69–71); Sozialstaat und Arbeitsmarkt (S. 29–35) per Stichwortsuche auf Krankenversicherung, Beitragsbemessungsgrenze, Zuzahlung, Rücklagen, Mitversicherung, versicherungsfremde Leistungen ohne Treffer zur GKV.
+
+Gleichartige Stellen und Abgrenzung:
+- S. 70 „Wir entwickeln die Notfallversorgung weiter …“ und S. 70 Haus- und Kinderarztpraxen: keine Aussage zu Ausgabenwachstum, nicht erfasst (Versorgung).
+- S. 71 Pflegeversicherung (Finanzierungsmix, Steuermittel, Pflegezusatzversicherung): Pflege, andere Ursache (T10), nicht erfasst.
+- S. 69–70 Krankenhausreform, Ziel „kalten Strukturwandel … verhindern“: Ziel, keine Maßnahme.
+- S. 70 Lieferketten für Arzneimittel: Versorgungssicherheit, keine Kostenursache.
+
+Richtungen ohne Maßnahme: 3802, 3803, 3804 (s. JSON).
+Seiten ohne Text: S. 1, S. 82 (Titel und Rückseite), ohne Bedeutung.
+Stand im PDF: Titelseite „Politikwechsel für Deutschland – Wahlprogramm von CDU und CSU“, kein abweichender Stand vermerkt.

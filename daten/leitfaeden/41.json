@@ -19,6 +19,11 @@
       "text": "Gehört dazu: fehlende Notvorräte an Wasser, Lebensmitteln und Medikamenten sowie fehlendes Wissen zur Selbsthilfe bei Strom- und Wasserausfall. Nicht dazu: Schutzorte (→ 1), Warnung (→ 2). Versorgungsketten des Handels und Lieferengpässe nur als ursachen_offen. Kosten und Platz für Vorräte nur als ursachen_offen, solange keine Quelle gelesen ist."
     }
   ],
+  "buendel": {
+    "4101": ["Schutzräume reaktivieren oder neu bauen", "Schutzorte im Bestand nutzen (Keller, Gebäude)", "Zivilschutzbindung aufgeben"],
+    "4102": ["Sirenen ausbauen und an das Warnsystem anbinden", "Warn-Apps und Cell Broadcast statt Sirenen"],
+    "4103": ["Vorräte und Information fördern", "Eigenverantwortung betonen", "Staatliche Notreserven"]
+  },
   "suchbegriffe": {
     "4101": {
       "Schutzräume reaktivieren oder neu bauen": ["schutzräum", "schutzraum", "bunker", "schutzbau"],
@@ -34,5 +39,8 @@
       "Eigenverantwortung betonen": ["eigenvorsorge"],
       "Staatliche Notreserven": ["lebensmittelreserv", "notreserv"]
     }
+  },
+  "suchbegriffe_geprueft": {
+    "warnsystem": "Wenige Treffer (10); Wortformen mitten im Wort (Frühwarnsystem, Schnellwarnsystem) gehören zur Warnung der Bevölkerung oder sind einzeln leicht zu erkennen."
   }
 }

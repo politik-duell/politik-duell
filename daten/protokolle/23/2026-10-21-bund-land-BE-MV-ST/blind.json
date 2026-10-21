@@ -1,0 +1,715 @@
+{
+  "pruefsumme": "d5e11967752a38f6fd052df2ca041e0ddec8e83b50c0b4268d32f21958f4e4d7",
+  "thema": {
+    "id": 23,
+    "name": "Mobbing und Druck in der Schule",
+    "ziel": "Schülerinnen und Schüler können ohne Mobbing und Ausgrenzung zur Schule gehen und schulische Anforderungen ohne gesundheitlich belastenden Druck bewältigen."
+  },
+  "ursachen": [
+    {
+      "id": 2301,
+      "beschreibung": "Abwertende Klassennormen und die Rechtfertigung von Übergriffen begünstigen Mobbing (Längsschnittstudie 2019 mit 1.250 Kindern in 98 Klassen)",
+      "ebene": "land"
+    },
+    {
+      "id": 2302,
+      "beschreibung": "Greifen Lehrkräfte bei Mobbing nicht ein und unterstützen Betroffene nicht, kann sich das Verhalten verfestigen (Studie mit 609 Kindern in 34 Klassen, 2017)",
+      "ebene": "land"
+    },
+    {
+      "id": 2303,
+      "beschreibung": "Digitale Angriffe erreichen ein größeres Publikum als Mobbing in der Schule; 2022 wurden 3,0 % der Jugendlichen in Deutschland ausschließlich online gemobbt (HBSC-Studie, 2024)",
+      "ebene": "bund"
+    },
+    {
+      "id": 2304,
+      "beschreibung": "Belastender Leistungs- und Prüfungsdruck hängt mit Angst und depressiven Beschwerden zusammen (systematischer Review 2023, 52 Studien)",
+      "ebene": "land"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        2301,
+        2302,
+        2303,
+        2304
+      ],
+      "text": "Zu 2301 gehören Klassenklima, soziales Lernen und Prävention von Ausgrenzung, zu 2302 Handeln und Qualifikation von Lehrkräften und Beschwerdewege an Schulen, zu 2303 Cybermobbing mit Schulbezug und Plattformschutz für Kinder, zu 2304 Leistungs- und Prüfungsdruck sowie Entlastung."
+    },
+    {
+      "nr": 2,
+      "text": "Lehrkräftemangel, Unterrichtsausfall, Lernrückstände und Sanierung gehören zu Schule, allgemeine Anfeindungen im Netz zu Hass im Internet, Mediennutzung von Kindern zu eigenem Thema. Schulsozialarbeit und Schulpsychologie zählen zu 2301 und 2302, wenn das Zitat Mobbing, Gewalt oder Konflikte nennt."
+    }
+  ],
+  "instrumente": [
+    {
+      "id": 10112,
+      "name": "Präventionsprogramme gegen Mobbing, Gewalt und Ausgrenzung an Schulen fördern (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "belegt",
+      "begruendung": "Schulische Anti-Mobbing-Programme senken Mobbing und Viktimisierung nachweislich, wenn auch moderat; die Zusagen bleiben unbestimmt (fördern, stärken) und legen weder Reichweite noch Programmstandard fest.",
+      "beleg_studie_url": "https://doi.org/10.1002/cl2.1143"
+    },
+    {
+      "id": 10113,
+      "name": "Flächendeckende, verbindliche Präventions- und Anti-Gewaltprogramme an allen Schulen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 3,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "Setzt direkt an Klassennormen an; Meta-Analysen zeigen eine Senkung von Mobbing um rund ein Fünftel. Flächendeckende Einführung braucht Fortbildung, Unterrichtszeit und Qualitätssicherung über Jahre.",
+      "beleg_studie_url": "https://doi.org/10.1002/cl2.1143"
+    },
+    {
+      "id": 10114,
+      "name": "Soziales Lernen, Empathie und Konfliktlösung als Unterrichtsinhalt stärken (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "belegt",
+      "begruendung": "Programme zum sozial-emotionalen Lernen verbessern belegt Sozialverhalten und Klassenklima; Wirkung auf Mobbing selbst ist schwächer belegt und hängt von Umsetzung und Programmqualität ab.",
+      "beleg_studie_url": "https://doi.org/10.1111/j.1467-8624.2010.01564.x"
+    },
+    {
+      "id": 10115,
+      "name": "Aufklärung gegen Diskriminierung und queerfeindliche Haltungen in der Schule (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Zielt auf abwertende Haltungen, die Ausgrenzung begünstigen; Programme zur Vorurteilsreduktion zeigen aber oft nur kleine, kurzlebige Effekte, eine Wirkung auf Mobbing ist kaum nachgewiesen."
+    },
+    {
+      "id": 10116,
+      "name": "Klassengemeinschaft stärken: Klassenrat, Klassenleiterstunde, gemeinsame Aktivitäten (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Kann Zusammenhalt und Klassennormen positiv beeinflussen und Konflikte früh sichtbar machen; eigenständige Wirkung auf Mobbing ist kaum untersucht."
+    },
+    {
+      "id": 10117,
+      "name": "Zusätzliche Lernzeit mit sozialem Lernen in Vorschule und Ganztag (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Soziales Lernen ist nur ein Nebenziel von Vorschule und Ganztag; ein Effekt auf Mobbing in der Schule ist kaum untersucht. Ausbau braucht Personal und Räume."
+    },
+    {
+      "id": 10118,
+      "name": "Verpflichtende Schutzkonzepte gegen Gewalt und Diskriminierung an Schulen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Schutzkonzepte schaffen Interventionspläne, Beschwerdewege und Prävention; Länder können sie vorschreiben. Wirkung auf Mobbing unter Schülern ist kaum evaluiert, Qualität hängt von der Umsetzung ab."
+    },
+    {
+      "id": 10119,
+      "name": "Schutzkonzepte in Einrichtungen für Kinder fördern oder vorschreiben (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Bund kann über Kinder- und Jugendhilfe und Anreize beitragen, für Schulen sind aber die Länder zuständig; Wirkung auf Mobbing unter Schülern ist kaum untersucht."
+    },
+    {
+      "id": 10120,
+      "name": "Klare Schulregeln zu Gewalt und Mobbing mit verbindlichen, abgestuften Reaktionen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Klare Regeln und verlässliche Reaktionen gelten als wirksame Bestandteile von Anti-Mobbing-Programmen; rein strafende Ahndung ohne Prävention zeigt dagegen wenig Wirkung auf das Schulklima."
+    },
+    {
+      "id": 10121,
+      "name": "Schulverweise und alternative Beschulung bei Gewalt erleichtern (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Schützt Mitschüler kurzfristig vor gewalttätigen Einzelnen; Studien zu Ausschlüssen finden aber keine Verbesserung von Schulklima und Verhalten, teils mehr Folgeprobleme bei den Ausgeschlossenen."
+    },
+    {
+      "id": 10122,
+      "name": "Schulsozialarbeit und Schulpsychologie an jeder Schule ausbauen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Fachkräfte vor Ort können Konflikte und Mobbingfälle früh bearbeiten und Lehrkräfte unterstützen; belastbare Wirkungsstudien fehlen weitgehend, und Fachkräfte sind knapp."
+    },
+    {
+      "id": 10123,
+      "name": "Psychologische und psychosoziale Unterstützung für Schüler an Schulen ausbauen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Hilft Belasteten, lindert aber Folgen statt den Leistungsdruck selbst; gezielte Hilfen wirken, universelle Programme (etwa Achtsamkeit) zeigten in großen Studien keinen Effekt.",
+      "beleg_studie_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9340028/"
+    },
+    {
+      "id": 10124,
+      "name": "Psychosoziale Fachkräfte und Mental-Health-Angebote an Schulen fördern (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Bund kann mit Programmen beitragen, dauerhaftes Personal an Schulen liegt bei den Ländern; lindert Folgen von Druck, universelle Angebote zeigen gemischte Ergebnisse.",
+      "beleg_studie_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9340028/"
+    },
+    {
+      "id": 10125,
+      "name": "Fortbildung von Lehrkräften zu Mobbing, Gewalt, Konflikten und Klassenführung (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Aktives Eingreifen von Lehrkräften hängt mit weniger Viktimisierung zusammen; eine kontrollierte Studie zu einem kurzen Lehrkräftetraining fand aber keine Änderung von Verhalten und Mobbing.",
+      "beleg_studie_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10603241/"
+    },
+    {
+      "id": 10126,
+      "name": "Lehrkräfteaus- und -fortbildung allgemein praxisnäher und verbindlicher gestalten (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Mehr Praxis und Fortbildung können die Handlungssicherheit im Klassenraum stärken; Mobbing und Konflikte sind nicht genannt, ein Effekt auf das Eingreifen ist kaum untersucht."
+    },
+    {
+      "id": 10127,
+      "name": "Fortbildungen für pädagogische Fachkräfte zu Diskriminierung (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Kann Lehrkräfte für Ausgrenzung sensibilisieren; ob Diskriminierungsfortbildungen das Eingreifen bei Mobbing verändern, ist kaum untersucht."
+    },
+    {
+      "id": 10128,
+      "name": "Unabhängige Beschwerdestellen für Schülerinnen, Schüler und Eltern (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Bietet Betroffenen einen Weg, wenn die Schule nicht handelt; wirkt aber nachgelagert im Einzelfall, Effekte auf Mobbing sind kaum untersucht."
+    },
+    {
+      "id": 10129,
+      "name": "Lehrpläne und Stundentafel entschlacken (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Weniger Stoff und Fächer können Lernlast senken; ob der Leistungsdruck dadurch spürbar sinkt, hängt von Prüfungen und Bewertung ab und ist kaum untersucht."
+    },
+    {
+      "id": 10130,
+      "name": "Längeres gemeinsames Lernen und weniger Selektionsdruck beim Übergang (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Verbindliche Übergangsentscheidungen erhöhen nachweislich Noten- und Zukunftsangst in Klasse 4; zugleich steigen dort die Leistungen. Strukturreformen brauchen mehrere Jahre.",
+      "beleg_studie_url": "https://www.zew.de/en/press/latest-press-releases/binding-teachers-recommendation-for-secondary-school-track-increases-pupils-achievement-but-also-their-stress-levels"
+    },
+    {
+      "id": 10131,
+      "name": "Hausaufgaben in die betreute Schulzeit verlagern (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "gemischt",
+      "begruendung": "Mehr Hausaufgabenzeit geht mit mehr Lernangst einher (Querschnittsdaten); der Nutzen von Hausaufgaben ist uneinheitlich belegt. Betreute Lernzeit braucht Personal.",
+      "beleg_studie_url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2023.1130274/full"
+    },
+    {
+      "id": 10132,
+      "name": "Jugendschutz auf Plattformen durchsetzen, etwa durch Altersverifikation (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Plattformpflichten können Kinder vor Angriffen schützen; Wirkung auf Cybermobbing ist nicht belegt, Altersprüfungen werden umgangen, und vieles hängt vom EU-Rahmen (DSA) ab."
+    }
+  ],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "land",
+      "beschreibung": "Ausbau niedrigschwelliger psychischer Beratungsangebote für Jugendliche mit Krisenintervention und zusätzlichen psychotherapeutischen Plätzen.",
+      "zitat": "Wir setzen uns für den Ausbau niedrigschwelliger Beratungsangebote im Bereich der psychischen Gesundheit für Jugendliche ein, einschließlich Krisenintervention und zusätzlicher psychotherapeutischer Plätze.",
+      "ursachen_ids": [
+        2304
+      ],
+      "pruefsumme": "206ad31deb2ce96d"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "land",
+      "beschreibung": "Landesprogramm Psychologie an Schulen mit einer Psychologin oder einem Psychologen auf 800 Schüler*innen",
+      "zitat": "Analog zum Landesprogramm Schulsozialarbeit wollen wir zudem ein Landesprogramm Psychologie an Schulen einrichten und so eine*n Psycholog*in auf 800 Schüler*innen an die Schulen bringen.",
+      "ursachen_ids": [
+        2304
+      ],
+      "pruefsumme": "5632edb130509e8e"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "land",
+      "beschreibung": "Sitzenbleiben auch an Gymnasien abschaffen",
+      "zitat": "Sitzenbleiben wollen wir auch an Gymnasien abschaffen, freiwilliges Verweilen aber weiterhin ermöglichen, wenn es pädagogisch sinnvoll ist.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2304
+      ],
+      "pruefsumme": "cc71b384a3029fab"
+    },
+    {
+      "kennung": "M04",
+      "ebene": "land",
+      "beschreibung": "Unabhängige Beschwerdestelle für Schüler*innen und Eltern bei Diskriminierung, Mobbing und Gewalt an Schulen",
+      "zitat": "[Partei] setzt sich konsequent gegen Rassismus, Antisemitismus, Sexismus, Queerfeindlichkeit, Ableismus, Diskriminierung aufgrund des sozio-ökonomischen Status, Mobbing und Gewalt an [Land] Schulen ein. Dafür braucht es eine abgestimmte und funktionsfähige Antidiskriminierungsarchitektur. Kernstück ist eine unabhängige Beschwerdestelle, angedockt an die Landesantidiskriminierungsstelle.",
+      "ursachen_ids": [
+        2302
+      ],
+      "pruefsumme": "66c71ce3aacca9b7"
+    },
+    {
+      "kennung": "M05",
+      "ebene": "land",
+      "beschreibung": "Förderung aller Kinder im Regelschulsystem strukturell verbessern (Klassengrößen, Teameinsatz, Lernmaterial) und mehr qualifizierte Pädagog:innen einsetzen.",
+      "zitat": "Sie schützt vor Aussonderung und fördert sozialen Zusammenhalt. Deshalb ist für uns der Anspruch auf eine erfolgreiche, inklusive Bildung im Regelschulsystem für alle Schüler:innen verbindlich. Um dieses Ziel zu erreichen, werden wir die Förderung von allen Kindern strukturell verbessern (Klassengrößen, Teameinsatz, differenzierte Lernmaterialien) und vor allem deutlich mehr qualifizierte Pädagog:innen einsetzen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2301
+      ],
+      "pruefsumme": "b1e8c2b3391a8c1b"
+    },
+    {
+      "kennung": "M06",
+      "ebene": "land",
+      "beschreibung": "Selbstregulationskompetenzen stärken; mentale Gesundheit in schulinterne Curricula und Peer-to-Peer-Programme aufnehmen",
+      "zitat": "Auch die Schüler*innen selbst müssen für ihre Bedürfnisse sensibilisiert werden. Insbesondere Selbstregulationskompetenzen wollen wir stärken. Dazu bedarf es einer Verankerung des Themas mentale Gesundheit in den schulinternen Curricula und des Ausbaus von Peer-to-Peer-Programmen.",
+      "ursachen_ids": [
+        2304
+      ],
+      "pruefsumme": "496ac8742eef8696"
+    },
+    {
+      "kennung": "M07",
+      "ebene": "land",
+      "beschreibung": "Schulsozialarbeit stärken: mindestens eine Fachkraft pro Schule, dauerhaft über ein Landesprogramm gesichert",
+      "zitat": "Schulsozialarbeit stärken: mindestens eine:r Schulsozialarbeiter:in pro Schule, dauerhaft gesichert durch ein Landesprogramm.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2302
+      ],
+      "pruefsumme": "2a00f26fd19d562b"
+    },
+    {
+      "kennung": "M08",
+      "ebene": "land",
+      "beschreibung": "Auszubildende für mehrere Tage vor den Abschlussprüfungen ohne Nachteile freistellen, damit sie mehr Zeit zur Prüfungsvorbereitung haben.",
+      "zitat": "Außerdem brauchen Auszubildende insgesamt mehr Zeit, um sich auf Prüfungen vorzubereiten. Wir setzen uns dafür ein, dass alle Auszubildenden für mehrere Tage vor ihren Abschlussprüfungen freigestellt werden, ohne dass ihnen dadurch Nachteile entstehen.",
+      "ursachen_ids": [
+        2304
+      ],
+      "pruefsumme": "390b5447e2b17276"
+    },
+    {
+      "kennung": "M09",
+      "ebene": "land",
+      "beschreibung": "Ziffernnoten bis einschließlich Klasse 9 durch mündliche und schriftliche Rückmeldungen zum Leistungsstand ersetzen",
+      "zitat": "Ziffernnoten wollen wir an allen Schularten bis einschließlich Klasse 9 durch mündliche und schriftliche Rückmeldungen zum Leistungsstand ersetzen.",
+      "ursachen_ids": [
+        2304
+      ],
+      "pruefsumme": "fbc151eb1a144cbb"
+    },
+    {
+      "kennung": "M10",
+      "ebene": "bund",
+      "beschreibung": "Lehrkräfte durch Unterstützungsteams (Sozialarbeit, Schulpsychologie, IT) von fachfremden Aufgaben entlasten",
+      "zitat": "Dazu müssen Lehrkräfte durch Unterstützungsteams (Sozialarbeit, Schulpsychologen, IT-Management) von fachfremden Aufgaben entlastet werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2302
+      ],
+      "pruefsumme": "052445e3932c3d5b"
+    },
+    {
+      "kennung": "M11",
+      "ebene": "land",
+      "beschreibung": "Multiprofessionelle Teams aus Lehrkräften, Sozialarbeit, Psychologie und weiteren Fachkräften in Kitas und Schulen flächendeckend aufbauen, mit Konzeption und gesicherten Ressourcen.",
+      "zitat": "Sie sollen Kinder und Familien von Anfang an unterstützen und sie in ihren sozialen und emotionalen Kompetenzen stärken. […] Für den flächendeckenden Auf- und Ausbau multiprofessioneller Teams werden wir: die Konzeption für den Einsatz multiprofessioneller Teams in Kitas und Schulen weiterentwickeln, die benötigten finanziellen und personellen Ressourcen für die Umsetzung der Konzeption sicherstellen",
+      "ursachen_ids": [
+        2301
+      ],
+      "ursachen_offen": [
+        2302
+      ],
+      "pruefsumme": "48ac441912a721d3"
+    },
+    {
+      "kennung": "M12",
+      "ebene": "land",
+      "beschreibung": "Verbindliche regelmäßige Fortbildungen für Lehrkräfte zu Diskriminierung und Übergriffen.",
+      "zitat": "Gleichzeitig wollen wir verbindliche regelmäßige Fortbildungen von Lehrer*innen im Bereich der Diskriminierung, um sie zu sensibilisieren und um ihnen wirksame Werkzeuge im Umgang mit Diskriminierung und Übergriffen an die Hand zu geben.",
+      "ursachen_ids": [
+        2302
+      ],
+      "pruefsumme": "c3ee5fb3c36b285c"
+    },
+    {
+      "kennung": "M13",
+      "ebene": "land",
+      "beschreibung": "Queeres Leben im Rahmenplan von Schulen verankern, etwa in Sozialkunde, Biologie und Geschichte",
+      "zitat": "Queeres Leben im Rahmenplan von Schulen verankern – in Fächern wie Sozialkunde, Biologie und Geschichte.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2301
+      ],
+      "pruefsumme": "716350db73f99beb"
+    },
+    {
+      "kennung": "M14",
+      "ebene": "land",
+      "beschreibung": "Geschlechterreflektierte Pädagogik stärker in Schulen, Kitas und Ausbildungsstätten etablieren",
+      "zitat": "Geschlechterreflektierte Pädagogik stärker in Schulen, Kitas und Ausbildungsstätten etablieren.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2301
+      ],
+      "pruefsumme": "3124ccf8c749be77"
+    },
+    {
+      "kennung": "M15",
+      "ebene": "land",
+      "beschreibung": "Leistungskontrollen begrenzen: höchstens zwei Klausuren oder Tests pro Woche",
+      "zitat": "Klare Regelung zur Leistungskontrolle. Die aktuellen „Soll“-Bestimmungen sollen so angepasst werden, dass maximal zwei Klausuren oder Test die Woche geschrieben werden dürfen.",
+      "ursachen_ids": [
+        2304
+      ],
+      "pruefsumme": "23412aacfc24cd45"
+    },
+    {
+      "kennung": "M16",
+      "ebene": "bund",
+      "beschreibung": "Notengebung als Standard der Leistungsmessung und verbindliche Bildungsmaßstäbe einführen",
+      "zitat": "Wir wollen allgemeinverbindliche Bildungsmaßstäbe: Notengebung als Standard der Leistungsmessung, Reform der Rahmenlehrpläne, geordnet nach Kenntnissen, Fertigkeiten und […] Kompetenzen, Abkehr von der reinen Kompetenzorientierung, Rückorientierung auf verbindliche Lehrinhalte.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2304
+      ],
+      "pruefsumme": "fc2c54aa67b1cbf7"
+    },
+    {
+      "kennung": "M17",
+      "ebene": "land",
+      "beschreibung": "Gemeinsamer Unterricht von Kindern mit und ohne Behinderung statt Förderschulen, um Stigmatisierung zu verringern.",
+      "zitat": "Die Trennung durch Förderschulen führt zu Stigmatisierung und mindert die Bildungs- und Lebenschancen der Kinder mit Behinderung. Deswegen wollen wir den gemeinsamen Unterricht zum Normalfall machen, die Zahl der Förderschulen in [Land] deutlich reduzieren und dafür die Voraussetzungen für inklusiven Unterricht an allen Schulen schaffen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2301
+      ],
+      "pruefsumme": "5002e27669305cf9"
+    },
+    {
+      "kennung": "M18",
+      "ebene": "land",
+      "beschreibung": "Überfüllte und veraltete Lehrpläne entrümpeln",
+      "zitat": "Darüber hinaus wollen wir die teilweise veralteten und überfüllten Lehrpläne entrümpeln und Lehrpläne wie -formate zeitgemäß gestalten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2304
+      ],
+      "pruefsumme": "c606909bfdd0c11b"
+    },
+    {
+      "kennung": "M19",
+      "ebene": "land",
+      "beschreibung": "Benotung in Kunst, Musik und Sport abschaffen, außer wenn die Fächer als Leistungskurse belegt sind",
+      "zitat": "Abschaffung der Benotung in Kunst, Musik und Sport, sofern die Fächer nicht als Leistungskurse belegt werden.",
+      "ursachen_ids": [
+        2304
+      ],
+      "pruefsumme": "4dc0bfa05b051052"
+    },
+    {
+      "kennung": "M20",
+      "ebene": "land",
+      "beschreibung": "Fachkräfte der multiprofessionellen Teams kontinuierlich fortbilden, um Zusammenarbeit und Kommunikation zu verbessern.",
+      "zitat": "Für den flächendeckenden Auf- und Ausbau multiprofessioneller Teams werden wir: […] die beteiligten Fachkräfte kontinuierlich fortbilden, um die Zusammenarbeit und Kommunikation zu unterstützen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2302
+      ],
+      "pruefsumme": "b8fa355ab62d6bdc"
+    },
+    {
+      "kennung": "M21",
+      "ebene": "land",
+      "beschreibung": "Unabhängige landesweite Ombudsstelle für Schulen, an die sich Schüler*innen, Eltern und Lehrkräfte bei Diskriminierung und Übergriffen anonym wenden können.",
+      "zitat": "Wir setzen für Schulen eine unabhängige landesweite Ombudsstelle für Diskriminierung und Übergriffe jeglicher Art, verbal und körperlich ein, an die sich Schüler*innen, Eltern und Lehrkräfte zur (anonymen) Meldung von Vorfällen und zur (anonymen) Beratung im Umgang mit diesen wenden können.",
+      "ursachen_ids": [
+        2302
+      ],
+      "pruefsumme": "a337a4ab3b491075"
+    },
+    {
+      "kennung": "M22",
+      "ebene": "bund",
+      "beschreibung": "Social-Media-Gesetz nach australischem Vorbild, um Kinder auf Plattformen zu schützen",
+      "zitat": "Wir fordern ein Social-Media-Gesetz nach australischem Vorbild, damit die Kinder nicht in einem virtuellen Paralleluniversum verschwinden, sondern wieder im Hier und Jetzt mit echten Freunden kommunizieren und lachen.",
+      "ursachen_ids": [
+        2303
+      ],
+      "pruefsumme": "e667d2216fae4669"
+    },
+    {
+      "kennung": "M23",
+      "ebene": "land",
+      "beschreibung": "Hausaufgaben abbauen",
+      "zitat": "Vor allem Schüler*innen aus finanziell ärmeren Verhältnissen haben weniger Zeit, Räume, Ruhe und Unterstützung beim Erledigen von Hausaufgaben. […] Deshalb wollen wir Hausaufgaben abbauen.",
+      "ursachen_ids": [
+        2304
+      ],
+      "pruefsumme": "41845f0f5b77e708"
+    },
+    {
+      "kennung": "M24",
+      "ebene": "land",
+      "beschreibung": "Eigenes Schulfach „Beziehungen, Sexualkunde und Gesundheit“ nach britischem Vorbild einführen",
+      "zitat": "Wir wollen: […] Einführung eines Fachs für „Beziehungen, Sexualkunde und Gesundheit“ nach britischem Vorbild",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2301
+      ],
+      "pruefsumme": "43e884f3548f3593"
+    },
+    {
+      "kennung": "M25",
+      "ebene": "land",
+      "beschreibung": "Rückzugsorte für Schüler*innen ohne Bewertung an Schulen; Schulclubs fördern",
+      "zitat": "Schüler*innen brauchen auch in der Schule Rückzugsorte und selbstorganisierte Räume, in denen sie sich begegnen, ausprobieren und ihren Schulalltag mitgestalten können, ohne bewertet oder benotet zu werden. Solche Orte, wie Schulclubs an weiterführenden Schulen, wollen wir fördern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2304
+      ],
+      "pruefsumme": "89eb62d75395b149"
+    },
+    {
+      "kennung": "M26",
+      "ebene": "land",
+      "beschreibung": "Schulsozialarbeit strukturell stärken, um Ausgrenzung und Gewalt frühzeitig entgegenzuwirken",
+      "zitat": "Darüber hinaus müssen diskriminierungskritische Jugendarbeit und Schulsozialarbeit strukturell gestärkt werden, um Rassismus, Ausgrenzung und digitaler Gewalt frühzeitig entgegenzuwirken.",
+      "ursachen_ids": [
+        2301,
+        2302
+      ],
+      "pruefsumme": "375db842b98cb6e3"
+    },
+    {
+      "kennung": "M27",
+      "ebene": "land",
+      "beschreibung": "Stressmanagement, Achtsamkeit und Entspannung als Bestandteil des Sportunterrichts.",
+      "zitat": "Wir wollen eine inhaltliche Erweiterung des Schulsports mit einem neuen Fokus auf Gesundheitsprävention und Freude an Bewegung einführen. Körperbezogene Ansätze zum Stressmanagement",
+      "ursachen_ids": [
+        2304
+      ],
+      "pruefsumme": "3f0d9936d79dbed3"
+    },
+    {
+      "kennung": "M28",
+      "ebene": "land",
+      "beschreibung": "Landesprogramm gegen Mobbing; Schulklima und Schulsozialarbeit als Bausteine der Prävention.",
+      "zitat": "Wir möchten ein Landesaktionsprogramm gegen Mobbing etablieren. Studien zeigen eine hohe Quote an Mobbingfällen sowohl an Schulen als auch in der Arbeitswelt. Es zeigt sich, dass betroffene Täter*innen und Opfer ihre Rollen oftmals von der Schule ins Berufsleben übertragen. Daher gilt es, frühzeitig zu intervenieren und präventiv zu handeln. Dazu braucht es eine starke Schulsozialarbeit ebenso wie ein Schulklima, das auf Kooperation und Miteinander setzt.",
+      "ursachen_ids": [
+        2301
+      ],
+      "ursachen_offen": [
+        2302
+      ],
+      "pruefsumme": "4b2345bd05e4db7e"
+    },
+    {
+      "kennung": "M29",
+      "ebene": "land",
+      "beschreibung": "Antidiskriminierungs- und Mobbingbeauftragte der Bildungsverwaltung in Stelle und Einfluss stärken",
+      "zitat": "Zudem wollen wir die Stelle und den Einfluss des*der Antidiskriminierungs- sowie Mobbingbeauftragten der Bildungsverwaltung stärken.",
+      "ursachen_ids": [
+        2302
+      ],
+      "pruefsumme": "9c47a1b1d2b3a53b"
+    },
+    {
+      "kennung": "M30",
+      "ebene": "bund",
+      "beschreibung": "Handys und Tablets bis zum Ende der Grundschule aus den Klassenzimmern verbannen",
+      "zitat": "Handys und Tablets wollen wir mindestens bis zum Ende der Grundschule aus den Klassenzimmern verbannen und auch danach möglichst wenig im Unterricht einsetzen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2303
+      ],
+      "pruefsumme": "ae6105b2a6c4ba4b"
+    },
+    {
+      "kennung": "M31",
+      "ebene": "land",
+      "beschreibung": "Leitlinien für die Pausengestaltung an Schulen und Ruhe- und Gemeinschaftsräume bereitstellen",
+      "zitat": "Klare Leitlinien für Schulen über die Pausengestaltung, inklusive die Bereitstellung von Ruhe- und Gemeinschaftsräumen, um eine individuelle Pausengestaltung durch Schüler:innen zu ermöglichen.",
+      "ursachen_ids": [
+        2304
+      ],
+      "pruefsumme": "0128883cd004cc75"
+    },
+    {
+      "kennung": "M32",
+      "ebene": "land",
+      "beschreibung": "Sitzenbleiben soll im Wesentlichen eine freiwillige Entscheidung von Schüler*innen und Eltern sein.",
+      "zitat": "Das sogenannte „Sitzenbleiben“ soll im Wesentlichen eine freiwillige und individuelle Entscheidung der Schüler*innen und Eltern werden.",
+      "ursachen_ids": [
+        2304
+      ],
+      "pruefsumme": "c73a99db0d520505"
+    },
+    {
+      "kennung": "M33",
+      "ebene": "land",
+      "beschreibung": "Mehr Mitbestimmung von Schüler*innen durch Klassenräte und Schüler*innenparlamente.",
+      "zitat": "Wir setzen uns entschieden dafür ein, die Mitbestimmung von Schüler*innen auf allen Ebenen der Schule zu stärken, um Demokratie für junge Menschen früh erfahrbar zu machen. […] Um echte Mitbestimmung zu gewährleisten, fordern wir neben Schüler*innenvertretungen auch die Einführung weiterer Gremien wie Klassenräte und Schüler*innenparlamente.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2301
+      ],
+      "pruefsumme": "708873c2f14d4fcf"
+    },
+    {
+      "kennung": "M34",
+      "ebene": "land",
+      "beschreibung": "Schulen bei Anfeindungen durch extreme Rechte unterstützen: Fortbildungen für Pädagog*innen und Leitlinien",
+      "zitat": "Wir wollen Schulen dabei unterstützen, sich diesen zu stellen: durch auskömmlich finanzierte Präventions- und Empowermentangebote für Schüler*innen, durch Fortbildungen für Pädagog*innen, durch Leitlinien zum Umgang mit extremen Rechten an Schulen",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2302
+      ],
+      "pruefsumme": "96693041f44177d2"
+    },
+    {
+      "kennung": "M35",
+      "ebene": "land",
+      "beschreibung": "Diskriminierungsfreien Schulbereich schaffen, in dem queere Menschen in Notsituationen geschützt werden und Hilfe bekommen",
+      "zitat": "Einen diskriminierungsfreien Bereich Schule, an dem besonders queere Menschen vor und in Notsituationen geschützt werden und ihnen geholfen wird […]",
+      "ursachen_ids": [
+        2301
+      ],
+      "ursachen_offen": [
+        2302
+      ],
+      "pruefsumme": "9e1526dec7f188a6"
+    },
+    {
+      "kennung": "M36",
+      "ebene": "land",
+      "beschreibung": "Bei der Schulformempfehlung Stärken stärker würdigen und pädagogischer Einschätzung der Klassenkonferenzen mehr Gewicht geben",
+      "zitat": "Bei der Entscheidung darüber, welche Schulform einem Kind ab der Sekundarstufe I empfohlen wird, wollen wir nicht nur die Leistungen in Mathe, Deutsch und Englisch einbeziehen, sondern wieder umfassender die Stärken der Schüler*innen würdigen und der pädagogischen Einschätzung der Klassenkonferenzen mehr Gewicht verleihen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2304
+      ],
+      "pruefsumme": "2b378286b1295754"
+    },
+    {
+      "kennung": "M37",
+      "ebene": "land",
+      "beschreibung": "Resilienzförderung und Lerntrainings in die Rahmenpläne aufnehmen",
+      "zitat": "Wir wollen: […] Eingliederung von Resilienzförderung und Lerntrainings in die Rahmenpläne",
+      "ursachen_ids": [
+        2304
+      ],
+      "pruefsumme": "7237fa6da2384d97"
+    },
+    {
+      "kennung": "M38",
+      "ebene": "land",
+      "beschreibung": "Am Ende der Grundschulzeit keine Schullaufbahnempfehlung mehr; Eltern erhalten nur Beratung zur Schulwahl.",
+      "zitat": "Für die Schulwahl am Ende der Grundschulzeit sollen die Eltern dann Beratungsangebote, aber keine Schullaufbahnempfehlung mehr erhalten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2304
+      ],
+      "pruefsumme": "360d198c6967cd17"
+    },
+    {
+      "kennung": "M39",
+      "ebene": "land",
+      "beschreibung": "Klassenleiterstunden verpflichtend machen und als Klassenrat gemeinsam mit allen Schüler:innen gestalten",
+      "zitat": "Wir wollen: […] Klassenleiterstunden verpflichtend machen und basisdemokratisch gemeinsam mit allen Schüler:innen in Form eines Klassenrates gestalten.",
+      "ursachen_ids": [
+        2301
+      ],
+      "pruefsumme": "105de072ae7a1e2c"
+    },
+    {
+      "kennung": "M40",
+      "ebene": "land",
+      "beschreibung": "Stärkung der flexiblen Schuleingangsphase mit altersgemischten Gruppen, ohne Leistungsdruck durch Sitzenbleiben.",
+      "zitat": "Zusätzlich setzen wir uns für die Stärkung der flexiblen Schuleingangsphase ein. Kinder lernen dort in altersgemischten Gruppen und können entsprechend ihrer Entwicklung zwei bis drei Jahre dort verweilen. So bekommt jedes Kind die nötige Zeit, sich zu entwickeln, ohne Stigmatisierung und Leistungsdruck durch Sitzenbleiben zu erfahren.",
+      "ursachen_ids": [
+        2304
+      ],
+      "pruefsumme": "48e376819197461b"
+    },
+    {
+      "kennung": "M41",
+      "ebene": "land",
+      "beschreibung": "Benotungen im Schulbetrieb deutlich verringern und in Neigungs- und Talentfächern abschaffen; stattdessen dialogorientierte Rückmeldungen.",
+      "zitat": "Wir setzen uns für eine deutliche Verringerung der Benotungen im allgemeinen Schulbetrieb und den Ersatz durch dialogorientierte Rückmeldeformate ein, die individuelle Lernfortschritte, Fähigkeiten und Entwicklungspotenziale stärker berücksichtigen. In Neigungs- und Talentfächern sollen Noten generell abgeschafft werden.",
+      "ursachen_ids": [
+        2304
+      ],
+      "pruefsumme": "446afa1be40f1a71"
+    },
+    {
+      "kennung": "M42",
+      "ebene": "land",
+      "beschreibung": "Abitur wieder nach 13 Schuljahren (G9), damit mehr Zeit für persönliche Entwicklung bleibt.",
+      "zitat": "Darüber hinaus setzen wir uns dafür ein, dass das Abitur wieder nach 13 Schuljahren (G9) abgelegt wird. Ein längerer Bildungsweg bietet Schüler*innen mehr Zeit für persönliche Entwicklung, außerschulisches Engagement und vertiefendes Lernen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2304
+      ],
+      "pruefsumme": "0a0ff8257b4aca50"
+    },
+    {
+      "kennung": "M43",
+      "ebene": "land",
+      "beschreibung": "Probeunterricht beim Übergang an weiterführende Schulen abschaffen",
+      "zitat": "Den Probeunterricht wollen wir abschaffen.",
+      "ursachen_ids": [
+        2304
+      ],
+      "pruefsumme": "53f262258257a44d"
+    },
+    {
+      "kennung": "M44",
+      "ebene": "land",
+      "beschreibung": "Außerschulische Präventions- und Empowermentangebote an Schulen, auch zu Mobbing- und Gewaltprävention, absichern und verstetigen",
+      "zitat": "Außerschulische Bildungs- und Empowermentangebote in den Bereichen Antidiskriminierung, antirassistische und inklusionssensible Bildung, Antisemitismusprävention, queere Bildung, Armutssensibilisierung, Mobbing- und Gewaltprävention, die die [Land] Schulen durch Projektarbeit, Fortbildungen und bei der Schulentwicklung unterstützen, wollen wir absichern und verstetigen.",
+      "ursachen_ids": [
+        2301
+      ],
+      "pruefsumme": "8ad63eb75c0b36a6"
+    }
+  ]
+}

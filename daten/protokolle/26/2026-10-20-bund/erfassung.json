@@ -1,0 +1,951 @@
+{
+  "thema_id": 26,
+  "programme": [
+    {
+      "partei_id": 11,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Barrieren in Bus und Bahn schneller beseitigen",
+          "ursachen_ids": [
+            2601
+          ],
+          "zitat": "Barrieren in Bus und Bahn müssen schneller beseitigt werden.",
+          "seite": 62
+        },
+        {
+          "beschreibung": "Vermittlung auf den ersten Arbeitsmarkt, Inklusionsbetriebe und Werkstätten stärken",
+          "ursachen_ids": [
+            2602
+          ],
+          "zitat": "Wir erleichtern Menschen mit Behinderungen den Zugang zu Ausbildung und Arbeit mit passgenauen Impulsen für einen inklusiven Arbeitsmarkt. Dafür stärken wir sowohl die Vermittlung auf den ersten Arbeitsmarkt als auch Inklusionsbetriebe und Werkstätten.",
+          "seite": 61
+        },
+        {
+          "beschreibung": "Der Bund übernimmt die Hauptfinanzierung für Instandhaltung, Ausbau und Modernisierung der Bahn-Infrastruktur",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2601
+          ],
+          "zitat": "Für Instandhaltung, Ausbau und Modernisierung übernimmt der Bund die Hauptfinanzierung.",
+          "seite": 74
+        },
+        {
+          "beschreibung": "Aktionsplan für ein barrierefreies Gesundheitswesen fortführen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2601
+          ],
+          "zitat": "Wir führen den Aktionsplan für ein diverses, inklusives und barrierefreies Gesundheitswesen fort.",
+          "seite": 62
+        },
+        {
+          "beschreibung": "Antragsverfahren für Hilfsmittel vereinfachen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2601
+          ],
+          "zitat": "Aufwändige Antragsprozesse für Hilfsmittel, insbesondere für Kinder mit Behinderungen, werden wir vereinfachen.",
+          "seite": 62
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 2601,
+          "name": "Barrierefreiheit im Bahnverkehr ausbauen und Umsetzung steuern",
+          "seite": 62
+        },
+        {
+          "ursache": 2602,
+          "name": "Arbeitsplätze und Ausstattung fördern",
+          "seite": 61
+        },
+        {
+          "ursache": 2601,
+          "name": "Finanzierung und Verfahren der Umsetzung",
+          "seite": 74
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2603,
+          "seiten": [
+            61,
+            62,
+            74,
+            75
+          ],
+          "grund": "Keine Zusage zu Vorbehalten, Beratung oder Regeln für Einstellung und Beschäftigung. Vermittlung und Inklusionsbetriebe (S. 61) gehören zu 2602. Kapitel Teilhabe (S. 61–62) und Mobilität (S. 74–75) gelesen."
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Abbau von Barrieren fördern; Barrierefreiheit als Standard in der Förderung verankern",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2601
+          ],
+          "zitat": "Wir wollen den Abbau von Barrieren für generationenübergreifendes gemeinschaftliches Leben fördern. Barrierefreiheit soll als Standard stärker in der Fördersystematik verankert werden.",
+          "seite": 22
+        },
+        {
+          "beschreibung": "Barrierefreiheit im öffentlichen und privaten Bereich verbessern; private Anbieter zum Barriereabbau verpflichten",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2601
+          ],
+          "zitat": "Dazu werden wir die Barrierefreiheit im privaten und im öffentlichen Bereich verbessern. Wir werden private Anbieter von Waren und Dienstleistungen verpflichten, Barrieren abzubauen oder – wo dies nicht möglich ist – angemessene Vorkehrungen zu ergreifen.",
+          "seite": 39
+        },
+        {
+          "beschreibung": "Mehr Kontrolle und Steuerung des Bundes bei der Deutschen Bahn und ihrer Infrastruktursparte",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2601
+          ],
+          "zitat": "Die neue gemeinwohlorientierte Infrastruktursparte DB InfraGO sowie den Gesamtkonzern entwickeln wir mit mehr Kontrolle und Steuerung des Bundes weiter.",
+          "seite": 35
+        },
+        {
+          "beschreibung": "Anlaufstellen des Sozialstaats barrierefrei und auch digital erreichbar machen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2601
+          ],
+          "zitat": "Wir arbeiten auf zentrale Anlaufstellen hin, die für alle wohnortnah, sozialräumlich, niedrigschwellig, mehrsprachig, barrierefrei und auch digital erreichbar sind.",
+          "seite": 37
+        },
+        {
+          "beschreibung": "Verstärkte Förderung der Aufnahme einer Arbeit auf dem allgemeinen Arbeitsmarkt für Menschen mit Behinderung",
+          "ursachen_ids": [
+            2602
+          ],
+          "zitat": "Wir sichern die Verwirklichung des gleichen Rechts auf Arbeit für Menschen mit Behinderungen. Dazu werden wir die Aufnahme einer Arbeit auf dem allgemeinen Arbeitsmarkt verstärkt fördern[…]",
+          "seite": 39
+        },
+        {
+          "beschreibung": "Weiterentwicklung der Werkstätten für behinderte Menschen und bessere Einkommen der Werkstattbeschäftigten",
+          "ursachen_ids": [
+            2602
+          ],
+          "zitat": "Dazu werden wir die Aufnahme einer Arbeit auf dem allgemeinen Arbeitsmarkt verstärkt fördern und die Weiterentwicklung der Werkstätten für behinderte Menschen zügig umsetzen. Dabei werden wir auch die Einkommenssituation der Werkstattbeschäftigten verbessern.",
+          "seite": 39
+        },
+        {
+          "beschreibung": "Schwerbehindertenvertretungen in den Betrieben stärken",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2602
+          ],
+          "zitat": "Zudem wollen wir neben besseren Chancen für Menschen mit Behinderungen auf dem Arbeitsmarkt auch die Schwerbehindertenvertretungen in den Betrieben sowie die politische Selbstvertretung stärken.",
+          "seite": 39
+        },
+        {
+          "beschreibung": "Betriebliches Eingliederungsmanagement stärken und verbindlicher machen, Reha und Prävention ausbauen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2603
+          ],
+          "zitat": "Deswegen werden wir eine deutliche Steigerung der durchgeführten ganzheitlichen Gefährdungsbeurteilungen vorantreiben, das betriebliche Eingliederungsmanagement (BEM) stärken und verbindlicher machen sowie Reha und Prävention ausbauen und Zugänge vereinfachen und verbessern.",
+          "seite": 13
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Erhebliche Investitionen in umfassende Barrierefreiheit, Haltestellen und Mobilitätsangebote.",
+          "ursachen_ids": [
+            2601
+          ],
+          "buendel": "Barrierefreiheit im Bahnverkehr ausbauen und Umsetzung steuern",
+          "zitat": "Durch erhebliche Investitionen in umfassende Barrierefreiheit, sichere Haltestellen und attraktive Mobilitätsangebote stellen wir sicher, dass klimafreundliche Mobilität für alle zugänglich ist und der Verkehrssektor seine Klimaziele erfüllen kann.",
+          "seite": 47
+        },
+        {
+          "beschreibung": "Veraltete Regelwerke erneuern, um Ausnahmen bei der Barrierefreiheit im Nahverkehr zu beenden.",
+          "ursachen_ids": [
+            2601
+          ],
+          "zitat": "Wir wollen den Stadtumbau stärker fördern und veraltete Regelwerke erneuern, etwa um Ausnahmen bei der Barrierefreiheit im Nahverkehr zu beenden.",
+          "seite": 48
+        },
+        {
+          "beschreibung": "Die Gebäude des Bundes innerhalb von zehn Jahren barrierefrei machen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2601
+          ],
+          "zitat": "Die Gebäude des Bundes wollen wir innerhalb von zehn Jahren barrierefrei machen.",
+          "seite": 122
+        },
+        {
+          "beschreibung": "Mehr barrierefreie Neubaumietwohnungen im sozialen Wohnungsbau; stärkere Unterstützung bei Umbaumaßnahmen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2601
+          ],
+          "zitat": "Wir wollen den Trend zu einem steigenden Anteil von barrierefreien Neubaumietwohnungen im sozialen Wohnungsbau deutlich beschleunigen und unterstützen die Betroffenen stärker bei Umbaumaßnahmen, damit sie in ihren Wohnungen selbstbestimmt leben können.",
+          "seite": 72
+        },
+        {
+          "beschreibung": "Deutschland-App mit barrierefreien staatlichen Verwaltungsangeboten einführen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2601
+          ],
+          "zitat": "Deshalb werden wir gemeinsam mit den Ländern und Kommunen eine plattformunabhängige Deutschland-App auf Open-Source-Basis einführen. Darin sollen schrittweise alle staatlichen Verwaltungsangebote und Leistungen sicher, unkompliziert, barrierefrei und anwendungsfreundlich zur Verfügung stehen.",
+          "seite": 34
+        },
+        {
+          "beschreibung": "Ausgleichsabgabe anpassen und gesetzliche Schlupflöcher schließen, damit Arbeitgeber ihrer Beschäftigungspflicht nachkommen.",
+          "ursachen_ids": [
+            2602
+          ],
+          "buendel": "Verpflichtungen für Betriebe",
+          "zitat": "Damit Arbeitgeber*innen ihrer Beschäftigungspflicht nachkommen, schließen wir gesetzliche Schlupflöcher und passen die Ausgleichsabgabe an.",
+          "seite": 123
+        },
+        {
+          "beschreibung": "Werkstattsystem schrittweise zu Inklusionsunternehmen mit Mindestlohn und Rentenansprüchen weiterentwickeln.",
+          "ursachen_ids": [
+            2602
+          ],
+          "buendel": "Arbeitsplätze und Ausstattung fördern",
+          "zitat": "Das heutige ausgrenzende Werkstättensystem wollen wir schrittweise in Richtung Inklusionsunternehmen weiterentwickeln, in denen Menschen mit und ohne Behinderung gemeinsam arbeiten, mindestens nach Mindestlohn entlohnt werden und existenzsichernde Rentenansprüche erwerben können.",
+          "seite": 123
+        },
+        {
+          "beschreibung": "Modellprojekte zur beruflichen Integration von Menschen mit Behinderung in Bundesverwaltungen.",
+          "ursachen_ids": [
+            2602
+          ],
+          "zitat": "Zusätzlich setzen wir uns dafür ein, dass in den Bundesverwaltungen Modellprojekte für die berufliche Integration von Menschen mit Behinderungen über die gesetzlichen Vorgaben hinaus geschaffen werden.",
+          "seite": 123
+        },
+        {
+          "beschreibung": "Bürokratische Hürden abbauen und durch Aufklärung Vorurteile gegenüber Beschäftigung von Menschen mit Behinderung abbauen.",
+          "ursachen_ids": [
+            2603
+          ],
+          "buendel": "Vorbehalte abbauen und beraten",
+          "zitat": "Wir wollen das Potenzial von Menschen mit Behinderung auch auf den Arbeitsmarkt bringen. Dazu bauen wir bürokratische Hürden und durch Aufklärung Vorurteile ab.",
+          "seite": 19
+        },
+        {
+          "beschreibung": "Hürden beim Eintritt und bei der Rückkehr ins Berufsleben sowie bei der Qualifizierung beseitigen.",
+          "ursachen_ids": [
+            2603
+          ],
+          "buendel": "Regeln flexibler gestalten",
+          "zitat": "Hürden bei Eintritt und Rückkehr ins Berufsleben sowie bei der Qualifizierung beseitigen wir.",
+          "seite": 123
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 2601,
+          "name": "Regelwerk Barrierefreiheit im Nahverkehr",
+          "seite": 48
+        },
+        {
+          "ursache": 2601,
+          "name": "Förderung barrierefreier Wohnungen",
+          "seite": 72
+        },
+        {
+          "ursache": 2602,
+          "name": "Modellprojekte zur beruflichen Integration",
+          "seite": 123
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Praxisnahe Förderung und Arbeitsvermittlung für Menschen mit Behinderung auf dem ersten Arbeitsmarkt",
+          "ursachen_ids": [
+            2602
+          ],
+          "zitat": "Durch praxisnahe Förderung und Arbeitsvermittlung verbessern wir die Chancen auf dem ersten Arbeitsmarkt.",
+          "seite": 25
+        },
+        {
+          "beschreibung": "Mehr Barrierefreiheit im öffentlichen Leben",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2601
+          ],
+          "zitat": "Wir Freie Demokraten setzen uns für mehr Barrierefreiheit im öffentlichen Leben ein.",
+          "seite": 25
+        },
+        {
+          "beschreibung": "Nachweis einer dauerhaften Behinderung nur noch einmal erbringen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2603
+          ],
+          "zitat": "Der Nachweis einer dauerhaften Behinderung muss künftig nur noch einmalig erbracht werden.",
+          "seite": 25
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2601,
+          "seiten": [
+            25,
+            40,
+            41,
+            42,
+            43
+          ],
+          "grund": "Mobilitätskapitel (S. 40–43) gelesen: nur Infrastruktur-Planungsbeschleunigung, ÖPNV und Bahnwettbewerb, keine Barrierefreiheit von Bahnhöfen, Haltestellen oder Verkehrsmitteln. Barrierefreiheit-Zusage S. 25 ist allgemein und als Grenzfall offen erfasst."
+        },
+        {
+          "ursache": 2602,
+          "seiten": [
+            17,
+            18,
+            25
+          ],
+          "grund": "Arbeitsrecht (S. 17–18) gelesen: keine Zusage zu Ausstattung, Arbeitsplatzanpassung oder Ausgleichsabgabe für Menschen mit Behinderung."
+        },
+        {
+          "ursache": 2603,
+          "seiten": [
+            17,
+            18,
+            25
+          ],
+          "grund": "Keine Zusage zu Vorbehalten von Betrieben oder Beratung; Arbeitsrecht gelesen, nichts zu Einstellung und Beschäftigung von Menschen mit Behinderung."
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 2602,
+          "name": "Arbeitsplätze und Ausstattung fördern",
+          "seite": 25
+        },
+        {
+          "ursache": 2601,
+          "name": "Barrierefreiheit im Bahnverkehr ausbauen und Umsetzung steuern",
+          "seite": 25
+        },
+        {
+          "ursache": 2603,
+          "name": "Schwerbehinderung Nachweis vereinfachen",
+          "seite": 25
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Mindestlohn für Beschäftigte in Werkstätten für Menschen mit Behinderung durch Umschichtung von Mitteln sichern",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2602
+          ],
+          "buendel": "Arbeitsplätze und Ausstattung fördern",
+          "zitat": "Behinderten in Werkstätten möchten wir durch Mittelumschichtung den Erhalt des Mindestlohns […]",
+          "seite": 23
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2601,
+          "seiten": [
+            43,
+            44,
+            45,
+            46
+          ],
+          "grund": "Verkehrskapitel (S. 43–46) gelesen: Bahnhöfe, Aufzüge, Bahnsteige oder Barrierefreiheit werden nicht genannt; Schienenpolitik betrifft Pünktlichkeit, Netz und Taktung. Stichwortsuche im Gesamttext ohne weitere Treffer."
+        },
+        {
+          "ursache": 2603,
+          "seiten": [
+            22,
+            23,
+            24,
+            89,
+            164
+          ],
+          "grund": "Sozialpolitik (S. 22–25) und Fundstellen S. 89, 164 gelesen: keine Vorbehalte von Arbeitgebern, keine Beratung oder Regeln zur Beschäftigung von Menschen mit Behinderung; die Fundstellen betreffen Wehrdienst und Hochschulzugang."
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Netz sanieren, elektrifizieren und ausbauen sowie Strecken reaktivieren, jeweils barrierefrei.",
+          "ursachen_ids": [
+            2601
+          ],
+          "buendel": "Barrierefreiheit im Bahnverkehr ausbauen und Umsetzung steuern",
+          "zitat": "Damit die Bahn wieder pünktlich und zuverlässig fährt, muss das Netz saniert, elektrifiziert, müssen Strecken reaktiviert und ausgebaut werden, natürlich barrierefrei.",
+          "seite": 37
+        },
+        {
+          "beschreibung": "Verkehrsinfrastruktur über einen mehrjährig gebundenen Fonds finanzieren, unabhängig vom jährlichen Bundeshaushalt.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2601
+          ],
+          "buendel": "Finanzierung und Verfahren der Umsetzung",
+          "zitat": "Um den großen Investitionsbedarf der Verkehrsinfrastruktur vom jährlichen Bundeshaushalt unabhängig und damit längerfristig verlässlich zu machen, schlagen wir die Schaffung eines verkehrsträgerübergreifenden Infrastrukturfonds nach Schweizer Vorbild vor – mit klaren mehrjährigen Budgets für die einzelnen Verkehrsträger.",
+          "seite": 36
+        },
+        {
+          "beschreibung": "Beschäftigungspflicht für Menschen mit Behinderung wieder auf sechs Prozent anheben; Betriebe sollen sich nicht freikaufen können.",
+          "ursachen_ids": [
+            2602
+          ],
+          "buendel": "Verpflichtungen für Betriebe",
+          "zitat": "Die Beschäftigungspflicht von Menschen mit Behinderungen muss wieder auf sechs Prozent angehoben werden. Die Betriebe dürfen sich daraus nicht rauskaufen können.",
+          "seite": 54
+        },
+        {
+          "beschreibung": "Inklusionsbetriebe besser öffentlich finanzieren.",
+          "ursachen_ids": [
+            2602
+          ],
+          "buendel": "Arbeitsplätze und Ausstattung fördern",
+          "zitat": "Inklusionsbetriebe besser fördern, denn diese leisten einen wesentlichen Beitrag zur Inklusion in den allgemeinen Arbeitsmarkt. Sie brauchen eine bessere öffentliche Finanzierung.",
+          "seite": 54
+        },
+        {
+          "beschreibung": "Mindestlohn auch in Werkstätten für Menschen mit Behinderung zahlen; die EU-Richtlinie soll unverzüglich umgesetzt werden.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2602,
+            2603
+          ],
+          "zitat": "Die Europäische Mindestlohnrichtlinie schreibt vor, dass auch in Werkstätten für Menschen mit Behinderung der Mindestlohn gezahlt werden muss. Auch in Deutschland muss diese Richtlinie unverzüglich umgesetzt werden!",
+          "seite": 54
+        },
+        {
+          "beschreibung": "Barrierefreiheit umfassend herstellen und private Anbieter öffentlich zugänglicher Güter und Dienste verpflichten.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2601
+          ],
+          "zitat": "Wir wollen Barrierefreiheit umfassend herstellen und (auch) die Privatwirtschaft dazu verpflichten. Dafür müssen verbindliche Regelungen in das Allgemeine Gleichbehandlungsgesetz (AGG) und in das Behindertengleichstellungsgesetz (BGG) aufgenommen werden, mit denen private Anbieter*innen von öffentlich zugänglichen Gütern und Dienstleistungen zur Herstellung von Barrierefreiheit verpflichtet werden.",
+          "seite": 54
+        },
+        {
+          "beschreibung": "Quote für barrierefreie Wohnungsangebote einführen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2601
+          ],
+          "zitat": "Wir wollen eine Quote für altersgerechte und barrierefreie Wohnungsangebote und ein gesetzliches Verbot von Zwangsräumungen bei älteren Menschen.",
+          "seite": 17
+        },
+        {
+          "beschreibung": "Bildungseinrichtungen barrierefrei machen und mit Fachkräften und passender Ausstattung versehen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2601
+          ],
+          "zitat": "Bildungseinrichtungen müssen barrierefrei sein und sollten über ausreichend Fachkräfte und eine für alle Kinder passende Ausstattung verfügen.",
+          "seite": 39
+        },
+        {
+          "beschreibung": "Kinder- und Jugendeinrichtungen sowie Sportvereine und Bäder sollen niedrigschwellig, barrierefrei und gebührenfrei sein.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2601
+          ],
+          "zitat": "Kinder- und Jugendfreizeiteinrichtungen, Musikschulen, Bibliotheken, Schwimmbäder, Sportvereine und andere Einrichtungen für Kinder und Jugendliche müssen niedrigschwellig, barrierefrei, wohnortnah und gebührenfrei sein.",
+          "seite": 16
+        },
+        {
+          "beschreibung": "Städtebauförderung an einer inklusiven und barrierefreien Stadt ausrichten.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2601
+          ],
+          "zitat": "Die Städtebauförderung muss am Leitbild einer inklusiven und barrierefreien Stadt ausgerichtet werden, in der ein gleichberechtigtes Zusammenleben aller Menschen mit und ohne Behinderung erreicht wird.",
+          "seite": 45
+        },
+        {
+          "beschreibung": "Sportstätten und Schwimmbäder barrierefrei schaffen und vom Bund fördern lassen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2601
+          ],
+          "zitat": "Sport muss als Teil der Daseinsvorsorge öffentlich gefördert werden. Dazu gehören die Sanierung von Turnhallen und Sportplätzen sowie die Schaffung moderner, barrierefreier und ökologischer Sportstätten und Schwimmbäder.",
+          "seite": 56
+        },
+        {
+          "beschreibung": "Schutz- und Beratungsangebote für Frauen und ihre Kinder kostenfrei, anonym und barrierefrei bereitstellen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            2601
+          ],
+          "zitat": "Schutz und Beratung müssen für alle Frauen und ihre Kinder überall in Deutschland kostenfrei, anonym, pauschal und barrierefrei zur Verfügung stehen.",
+          "seite": 47
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 2601,
+          "name": "Barrierefreiheit-Pflicht für Privatwirtschaft",
+          "seite": 54
+        },
+        {
+          "ursache": 2601,
+          "name": "Quote für barrierefreien Wohnraum",
+          "seite": 17
+        },
+        {
+          "ursache": 2601,
+          "name": "Barrierefreie Bildungseinrichtungen",
+          "seite": 39
+        },
+        {
+          "ursache": 2601,
+          "name": "Barrierefreie Kinder- und Jugendeinrichtungen",
+          "seite": 16
+        },
+        {
+          "ursache": 2601,
+          "name": "Städtebauförderung für inklusive Städte",
+          "seite": 45
+        },
+        {
+          "ursache": 2601,
+          "name": "Barrierefreie Sportstätten",
+          "seite": 56
+        },
+        {
+          "ursache": 2601,
+          "name": "Barrierefreie Schutz- und Beratungsangebote für Frauen",
+          "seite": 47
+        },
+        {
+          "ursache": 2602,
+          "name": "Mindestlohn in Werkstätten",
+          "seite": 54
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2603,
+          "seiten": [
+            54,
+            55
+          ],
+          "grund": "Keine Zusage zu Vorbehalten, Beratung oder Regeln der Einstellung; Verbandsklagerecht im AGG (S. 54) ist allgemeine Antidiskriminierung (R2); gemeinsamer Unterricht (S. 54) gehört nicht hierher."
+        }
+      ],
+      "eigene_synonyme": []
+    }
+  ],
+  "suchbegriffe": {
+    "2601": {
+      "Barrierefreiheit im Bahnverkehr ausbauen und Umsetzung steuern": [
+        "barrierefrei",
+        "barrierefreiheit",
+        "bahnhof",
+        "aufzug",
+        "bahnsteig",
+        "stufenfrei",
+        "mobilitätsgarantie",
+        "behindertengerecht"
+      ],
+      "Finanzierung und Verfahren der Umsetzung": [
+        "finanzierung barrierefreiheit",
+        "förderprogramm bahnhöfe",
+        "umsetzungsfristen",
+        "planungsbeschleunigung"
+      ]
+    },
+    "2602": {
+      "Arbeitsplätze und Ausstattung fördern": [
+        "arbeitsplatzanpassung",
+        "inklusionsbetriebe",
+        "werkstatt für behinderte",
+        "budget für arbeit",
+        "lohnkostenzuschuss",
+        "arbeitsassistenz",
+        "inklusiver arbeitsmarkt"
+      ],
+      "Verpflichtungen für Betriebe": [
+        "ausgleichsabgabe",
+        "beschäftigungspflicht",
+        "schwerbehindertenquote",
+        "pflichtquote"
+      ]
+    },
+    "2603": {
+      "Vorbehalte abbauen und beraten": [
+        "aufklärung arbeitgeber",
+        "inklusionsberatung",
+        "einheitliche ansprechstellen",
+        "vorbehalte",
+        "sensibilisierung"
+      ],
+      "Regeln flexibler gestalten": [
+        "kündigungsschutz",
+        "zusatzurlaub",
+        "entbürokratisierung inklusion",
+        "weniger bürokratie bei der beschäftigung"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "57b12ca87717444fdda46eb774525d37b0df207bdc031639a52a250570e59e00",
+    "programme": [
+      {
+        "partei_id": 11,
+        "land": null,
+        "ursachen": {
+          "2601": {
+            "Barrierefreiheit im Bahnverkehr ausbauen und Umsetzung steuern": {
+              "barrierefrei": 4,
+              "barrierefreiheit": 1,
+              "bahnhof": 0,
+              "aufzug": 0,
+              "bahnsteig": 0,
+              "stufenfrei": 0,
+              "mobilitätsgarantie": 0,
+              "behindertengerecht": 0
+            },
+            "Finanzierung und Verfahren der Umsetzung": {
+              "finanzierung barrierefreiheit": 0,
+              "förderprogramm bahnhöfe": 0,
+              "umsetzungsfristen": 0,
+              "planungsbeschleunigung": 0
+            }
+          },
+          "2602": {
+            "Arbeitsplätze und Ausstattung fördern": {
+              "arbeitsplatzanpassung": 0,
+              "inklusionsbetriebe": 1,
+              "werkstatt für behinderte": 0,
+              "budget für arbeit": 0,
+              "lohnkostenzuschuss": 0,
+              "arbeitsassistenz": 0,
+              "inklusiver arbeitsmarkt": 0
+            },
+            "Verpflichtungen für Betriebe": {
+              "ausgleichsabgabe": 0,
+              "beschäftigungspflicht": 0,
+              "schwerbehindertenquote": 0,
+              "pflichtquote": 0
+            }
+          },
+          "2603": {
+            "Vorbehalte abbauen und beraten": {
+              "aufklärung arbeitgeber": 0,
+              "inklusionsberatung": 0,
+              "einheitliche ansprechstellen": 0,
+              "vorbehalte": 0,
+              "sensibilisierung": 0
+            },
+            "Regeln flexibler gestalten": {
+              "kündigungsschutz": 0,
+              "zusatzurlaub": 0,
+              "entbürokratisierung inklusion": 0,
+              "weniger bürokratie bei der beschäftigung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": null,
+        "ursachen": {
+          "2601": {
+            "Barrierefreiheit im Bahnverkehr ausbauen und Umsetzung steuern": {
+              "barrierefrei": 7,
+              "barrierefreiheit": 4,
+              "bahnhof": 0,
+              "aufzug": 0,
+              "bahnsteig": 0,
+              "stufenfrei": 0,
+              "mobilitätsgarantie": 0,
+              "behindertengerecht": 0
+            },
+            "Finanzierung und Verfahren der Umsetzung": {
+              "finanzierung barrierefreiheit": 0,
+              "förderprogramm bahnhöfe": 0,
+              "umsetzungsfristen": 0,
+              "planungsbeschleunigung": 0
+            }
+          },
+          "2602": {
+            "Arbeitsplätze und Ausstattung fördern": {
+              "arbeitsplatzanpassung": 0,
+              "inklusionsbetriebe": 0,
+              "werkstatt für behinderte": 0,
+              "budget für arbeit": 0,
+              "lohnkostenzuschuss": 0,
+              "arbeitsassistenz": 0,
+              "inklusiver arbeitsmarkt": 0
+            },
+            "Verpflichtungen für Betriebe": {
+              "ausgleichsabgabe": 0,
+              "beschäftigungspflicht": 0,
+              "schwerbehindertenquote": 0,
+              "pflichtquote": 0
+            }
+          },
+          "2603": {
+            "Vorbehalte abbauen und beraten": {
+              "aufklärung arbeitgeber": 0,
+              "inklusionsberatung": 0,
+              "einheitliche ansprechstellen": 0,
+              "vorbehalte": 0,
+              "sensibilisierung": 0
+            },
+            "Regeln flexibler gestalten": {
+              "kündigungsschutz": 0,
+              "zusatzurlaub": 0,
+              "entbürokratisierung inklusion": 0,
+              "weniger bürokratie bei der beschäftigung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": null,
+        "ursachen": {
+          "2601": {
+            "Barrierefreiheit im Bahnverkehr ausbauen und Umsetzung steuern": {
+              "barrierefrei": 27,
+              "barrierefreiheit": 11,
+              "bahnhof": 0,
+              "aufzug": 1,
+              "bahnsteig": 0,
+              "stufenfrei": 0,
+              "mobilitätsgarantie": 1,
+              "behindertengerecht": 1
+            },
+            "Finanzierung und Verfahren der Umsetzung": {
+              "finanzierung barrierefreiheit": 0,
+              "förderprogramm bahnhöfe": 0,
+              "umsetzungsfristen": 0,
+              "planungsbeschleunigung": 0
+            }
+          },
+          "2602": {
+            "Arbeitsplätze und Ausstattung fördern": {
+              "arbeitsplatzanpassung": 0,
+              "inklusionsbetriebe": 0,
+              "werkstatt für behinderte": 0,
+              "budget für arbeit": 0,
+              "lohnkostenzuschuss": 0,
+              "arbeitsassistenz": 0,
+              "inklusiver arbeitsmarkt": 0
+            },
+            "Verpflichtungen für Betriebe": {
+              "ausgleichsabgabe": 1,
+              "beschäftigungspflicht": 1,
+              "schwerbehindertenquote": 0,
+              "pflichtquote": 0
+            }
+          },
+          "2603": {
+            "Vorbehalte abbauen und beraten": {
+              "aufklärung arbeitgeber": 0,
+              "inklusionsberatung": 0,
+              "einheitliche ansprechstellen": 0,
+              "vorbehalte": 1,
+              "sensibilisierung": 0
+            },
+            "Regeln flexibler gestalten": {
+              "kündigungsschutz": 0,
+              "zusatzurlaub": 0,
+              "entbürokratisierung inklusion": 0,
+              "weniger bürokratie bei der beschäftigung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": null,
+        "ursachen": {
+          "2601": {
+            "Barrierefreiheit im Bahnverkehr ausbauen und Umsetzung steuern": {
+              "barrierefrei": 1,
+              "barrierefreiheit": 1,
+              "bahnhof": 0,
+              "aufzug": 0,
+              "bahnsteig": 0,
+              "stufenfrei": 0,
+              "mobilitätsgarantie": 1,
+              "behindertengerecht": 0
+            },
+            "Finanzierung und Verfahren der Umsetzung": {
+              "finanzierung barrierefreiheit": 0,
+              "förderprogramm bahnhöfe": 0,
+              "umsetzungsfristen": 0,
+              "planungsbeschleunigung": 0
+            }
+          },
+          "2602": {
+            "Arbeitsplätze und Ausstattung fördern": {
+              "arbeitsplatzanpassung": 0,
+              "inklusionsbetriebe": 0,
+              "werkstatt für behinderte": 0,
+              "budget für arbeit": 0,
+              "lohnkostenzuschuss": 0,
+              "arbeitsassistenz": 0,
+              "inklusiver arbeitsmarkt": 0
+            },
+            "Verpflichtungen für Betriebe": {
+              "ausgleichsabgabe": 0,
+              "beschäftigungspflicht": 0,
+              "schwerbehindertenquote": 0,
+              "pflichtquote": 0
+            }
+          },
+          "2603": {
+            "Vorbehalte abbauen und beraten": {
+              "aufklärung arbeitgeber": 0,
+              "inklusionsberatung": 0,
+              "einheitliche ansprechstellen": 0,
+              "vorbehalte": 0,
+              "sensibilisierung": 0
+            },
+            "Regeln flexibler gestalten": {
+              "kündigungsschutz": 0,
+              "zusatzurlaub": 0,
+              "entbürokratisierung inklusion": 0,
+              "weniger bürokratie bei der beschäftigung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": null,
+        "ursachen": {
+          "2601": {
+            "Barrierefreiheit im Bahnverkehr ausbauen und Umsetzung steuern": {
+              "barrierefrei": 0,
+              "barrierefreiheit": 0,
+              "bahnhof": 0,
+              "aufzug": 0,
+              "bahnsteig": 0,
+              "stufenfrei": 0,
+              "mobilitätsgarantie": 0,
+              "behindertengerecht": 0
+            },
+            "Finanzierung und Verfahren der Umsetzung": {
+              "finanzierung barrierefreiheit": 0,
+              "förderprogramm bahnhöfe": 0,
+              "umsetzungsfristen": 0,
+              "planungsbeschleunigung": 0
+            }
+          },
+          "2602": {
+            "Arbeitsplätze und Ausstattung fördern": {
+              "arbeitsplatzanpassung": 0,
+              "inklusionsbetriebe": 0,
+              "werkstatt für behinderte": 0,
+              "budget für arbeit": 0,
+              "lohnkostenzuschuss": 0,
+              "arbeitsassistenz": 0,
+              "inklusiver arbeitsmarkt": 0
+            },
+            "Verpflichtungen für Betriebe": {
+              "ausgleichsabgabe": 0,
+              "beschäftigungspflicht": 0,
+              "schwerbehindertenquote": 0,
+              "pflichtquote": 0
+            }
+          },
+          "2603": {
+            "Vorbehalte abbauen und beraten": {
+              "aufklärung arbeitgeber": 0,
+              "inklusionsberatung": 0,
+              "einheitliche ansprechstellen": 0,
+              "vorbehalte": 2,
+              "sensibilisierung": 0
+            },
+            "Regeln flexibler gestalten": {
+              "kündigungsschutz": 0,
+              "zusatzurlaub": 0,
+              "entbürokratisierung inklusion": 0,
+              "weniger bürokratie bei der beschäftigung": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": null,
+        "ursachen": {
+          "2601": {
+            "Barrierefreiheit im Bahnverkehr ausbauen und Umsetzung steuern": {
+              "barrierefrei": 13,
+              "barrierefreiheit": 2,
+              "bahnhof": 1,
+              "aufzug": 0,
+              "bahnsteig": 0,
+              "stufenfrei": 0,
+              "mobilitätsgarantie": 0,
+              "behindertengerecht": 0
+            },
+            "Finanzierung und Verfahren der Umsetzung": {
+              "finanzierung barrierefreiheit": 0,
+              "förderprogramm bahnhöfe": 0,
+              "umsetzungsfristen": 0,
+              "planungsbeschleunigung": 0
+            }
+          },
+          "2602": {
+            "Arbeitsplätze und Ausstattung fördern": {
+              "arbeitsplatzanpassung": 0,
+              "inklusionsbetriebe": 1,
+              "werkstatt für behinderte": 0,
+              "budget für arbeit": 0,
+              "lohnkostenzuschuss": 0,
+              "arbeitsassistenz": 0,
+              "inklusiver arbeitsmarkt": 0
+            },
+            "Verpflichtungen für Betriebe": {
+              "ausgleichsabgabe": 0,
+              "beschäftigungspflicht": 1,
+              "schwerbehindertenquote": 0,
+              "pflichtquote": 0
+            }
+          },
+          "2603": {
+            "Vorbehalte abbauen und beraten": {
+              "aufklärung arbeitgeber": 0,
+              "inklusionsberatung": 0,
+              "einheitliche ansprechstellen": 0,
+              "vorbehalte": 0,
+              "sensibilisierung": 0
+            },
+            "Regeln flexibler gestalten": {
+              "kündigungsschutz": 2,
+              "zusatzurlaub": 0,
+              "entbürokratisierung inklusion": 0,
+              "weniger bürokratie bei der beschäftigung": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}

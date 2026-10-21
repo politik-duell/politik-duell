@@ -1,0 +1,294 @@
+{
+  "blind_pruefsumme": "920e7f46ba0b749114abc0271a7ae2da7deac5fa6db4a8493818f258ad1f717e",
+  "neue_instrumente": [
+    {
+      "kennung": "I1",
+      "name": "Vermittlung und Förderung von Menschen mit Behinderung auf dem allgemeinen Arbeitsmarkt stärken (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Begleitete Vermittlung (Supported Employment/IPS) verdoppelt laut Übersichtsarbeit etwa die Chance auf reguläre Arbeit. Die Zusagen bleiben aber unbestimmt, und es fehlt ein konkretes Instrument oder ein Betrag.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.fhi.no/en/publ/2017/supported-employment-for-arbeidssokere-med-bistandsbehov-en-systematisk-ove/"
+    }
+  ],
+  "zuordnung": [
+    {
+      "kennung": "M01",
+      "ursachen": []
+    },
+    {
+      "kennung": "M02",
+      "ursachen": []
+    },
+    {
+      "kennung": "M03",
+      "instrument": "I1",
+      "ursachen": [
+        2602
+      ]
+    },
+    {
+      "kennung": "M04",
+      "ursachen": []
+    },
+    {
+      "kennung": "M05",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Barrierefreiheit wird nur als Begleitbedingung beim Netzausbau genannt, und bei Neubau ist sie ohnehin Standard. Den Rückstand an bestehenden Bahnhöfen und die Steuerungsmängel spricht die Zusage nicht an.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2601
+      ]
+    },
+    {
+      "kennung": "M06",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Die Maßnahme setzt am richtigen Problem an, dem schleppenden Barriereabbau in Bus und Bahn. Sie nennt aber weder Mittel noch Steuerung oder Fristen, daher ist kaum eine Wirkung abzuschätzen.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2601
+      ]
+    },
+    {
+      "kennung": "M07",
+      "ursachen": []
+    },
+    {
+      "kennung": "M08",
+      "ursachen": []
+    },
+    {
+      "kennung": "M09",
+      "ursachen": []
+    },
+    {
+      "kennung": "M10",
+      "ursachen": []
+    },
+    {
+      "kennung": "M11",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Der Bundesrechnungshof sieht mangelnde Steuerung durch den Bund als Hauptgrund für Verzögerungen. Die Maßnahme stärkt die Steuerung allerdings nur allgemein, ohne Bezug zur Barrierefreiheit von Bahnhöfen.",
+        "evidenz": "offen",
+        "beleg_studie_url": "https://correctiv.org/bundesrechnungshof/2025/07/30/hunderte-millionen-foerdergeld-fuer-barrierefreie-bahnhoefe-ungenutzt/"
+      },
+      "ursachen": [
+        2601
+      ]
+    },
+    {
+      "kennung": "M12",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Investitionen in barrierefreie Haltestellen bauen Barrieren direkt ab. Laut Bundesrechnungshof fehlt es aber weniger an Geld als an Steuerung: Von 600 Mio. Euro wurden nur 84 Mio. abgerufen.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://correctiv.org/bundesrechnungshof/2025/07/30/hunderte-millionen-foerdergeld-fuer-barrierefreie-bahnhoefe-ungenutzt/"
+      },
+      "ursachen": [
+        2601
+      ]
+    },
+    {
+      "kennung": "M13",
+      "ursachen": []
+    },
+    {
+      "kennung": "M14",
+      "ursachen": []
+    },
+    {
+      "kennung": "M15",
+      "ursachen": []
+    },
+    {
+      "kennung": "M16",
+      "ursachen": []
+    },
+    {
+      "kennung": "M17",
+      "ursachen": []
+    },
+    {
+      "kennung": "M18",
+      "instrument": "I1",
+      "ursachen": [
+        2602
+      ]
+    },
+    {
+      "kennung": "M19",
+      "ursachen": []
+    },
+    {
+      "kennung": "M20",
+      "instrument": "I1",
+      "ursachen": [
+        2602
+      ]
+    },
+    {
+      "kennung": "M21",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Eine Studie fand keinen Effekt der Quotensenkung von 6 auf 5 Prozent, eine neuere IAB-Studie dagegen einen kleinen positiven Effekt der Pflicht. Ohne Freikaufmöglichkeit wären neue Sanktionen nötig, und das Problem fehlender Tätigkeiten bliebe.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://iab.de/publication/?id=591316"
+      },
+      "ursachen": [
+        2602
+      ]
+    },
+    {
+      "kennung": "M22",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Laut IAB erhöht die Ausgleichsabgabe die Beschäftigung nur geringfügig (im Schnitt etwa 0,2 Personen je Betrieb). Eine ältere Studie fand bei Quotenänderungen keinen Effekt. Gesetzlich ist das leicht umsetzbar.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://iab.de/publication/?id=591316"
+      },
+      "ursachen": [
+        2602
+      ]
+    },
+    {
+      "kennung": "M23",
+      "instrument": "I1",
+      "ursachen": [
+        2602
+      ]
+    },
+    {
+      "kennung": "M24",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Modellprojekte in Bundesverwaltungen können geeignete Arbeitsplätze erproben. Ihre Reichweite ist aber klein und auf den öffentlichen Dienst begrenzt.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2602
+      ]
+    },
+    {
+      "kennung": "M25",
+      "ursachen": []
+    },
+    {
+      "kennung": "M26",
+      "ursachen": []
+    },
+    {
+      "kennung": "M27",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 3,
+        "begruendung": "Inklusionsbetriebe schaffen gezielt geeignete Arbeitsplätze mit Mindestlohn, und mehr Förderung kann sie ausweiten. Belastbare Wirkungsstudien fehlen, und die Zahl der Plätze ist bislang gering.",
+        "evidenz": "offen",
+        "beleg_studie_url": "https://www.betanet.de/inklusionsbetriebe.html"
+      },
+      "ursachen": [
+        2602
+      ]
+    },
+    {
+      "kennung": "M28",
+      "ursachen": []
+    },
+    {
+      "kennung": "M29",
+      "ursachen": []
+    },
+    {
+      "kennung": "M30",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Schwerbehindertenvertretungen können bei der Arbeitsplatzgestaltung und bei Förderanträgen helfen. Die Zusage ist aber unbestimmt und wirkt vor allem in Betrieben, die schon Menschen mit Behinderung beschäftigen.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2602
+      ]
+    },
+    {
+      "kennung": "M31",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Etwa 22 % der Betriebe erwarten Leistungseinschränkungen oder Sonderregeln, und Aufklärung und weniger Bürokratie setzen dort an. Die Wirkung von Aufklärung ist kaum belegt, und die Zusage nennt keine konkreten Schritte.",
+        "evidenz": "offen",
+        "beleg_studie_url": "https://www.wirtschaftsdienst.eu/inhalt/jahr/2025/heft/8/beitrag/aus-sicht-der-betriebe-was-es-braucht-damit-inklusion-besser-gelingt.html"
+      },
+      "ursachen": [
+        2603
+      ]
+    },
+    {
+      "kennung": "M32",
+      "ursachen": []
+    },
+    {
+      "kennung": "M33",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Weite Ausnahmen im PBefG verzögern die Barrierefreiheit im Nahverkehr, und sie zu streichen erhöht die Verbindlichkeit. Vor Ort fehlen aber vor allem Geld und Personal; umsetzen müssten Länder und Kommunen.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2601
+      ]
+    },
+    {
+      "kennung": "M34",
+      "ursachen": []
+    },
+    {
+      "kennung": "M35",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Die Zusage benennt das Ziel, Hürden beim Berufseinstieg abzubauen, sagt aber nicht, welche Regeln oder Vorbehalte geändert werden sollen. Eine Wirkung lässt sich daher kaum abschätzen.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2603
+      ]
+    },
+    {
+      "kennung": "M36",
+      "ursachen": []
+    },
+    {
+      "kennung": "M37",
+      "ursachen": []
+    },
+    {
+      "kennung": "M38",
+      "ursachen": []
+    },
+    {
+      "kennung": "M39",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 1,
+        "begruendung": "Wenn Werkstätten zu Inklusionsunternehmen mit Mindestlohn werden, entstehen gemeinsame, geeignete Arbeitsplätze. Der Umbau für rund 300.000 Beschäftigte ist aber teuer, die Finanzierung ist ungeklärt, und die Wirkung ist kaum untersucht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2602
+      ]
+    }
+  ]
+}

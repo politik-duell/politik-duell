@@ -1,0 +1,44 @@
+{
+  "partei_id": 11,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Mehr Bauland für den Neubau ausweisen, auch durch Nutzung von Brach- und Konversionsflächen und Bundesgrundstücken.", "ursachen_ids": [3901], "buendel": "Mehr Bauland ausweisen", "zitat": "Für mehr Neubau braucht es auch mehr Bauland – gerade in den Metropolen und Wachstumsregionen.", "seite": 73 },
+    { "beschreibung": "Planungs- und Genehmigungsverfahren für Bauleitplanung und Baugenehmigung digitalisieren und beschleunigen.", "ursachen_ids": [3901], "buendel": "Planungs- und Genehmigungsverfahren beschleunigen", "zitat": "Planungs- und Nebenkosten senken wir durch Digitalisierung und Beschleunigung von Bauleit- und Baugenehmigungsverfahren.", "seite": 73 },
+    { "beschreibung": "Befristete Ausnahmen vom Planungsrecht für Wohnungsbauvorhaben in angespannten Märkten.", "ursachen_ids": [3901], "zitat": "Mit einer befristeten Sonderregelung für angespannte Wohnungsmärkte erlauben wir bei Wohnungsbauvorhaben Ausnahmen vom geltenden Planungsrecht.", "seite": 73 },
+    { "beschreibung": "Bauordnungs- und Raumordnungsrecht entschlacken und Vorschriften spürbar reduzieren.", "ursachen_ids": [3902], "buendel": "Bauvorgaben vereinfachen und vereinheitlichen", "zitat": "Dazu entschlacken wir das Bauordnungs- und Raumordnungsrecht grundlegend und reduzieren die Vorschriften spürbar und verantwortungsbewusst.", "seite": 73 },
+    { "beschreibung": "Keine neuen Standards, die Baukosten ohne nennenswerten Mehrwert erhöhen.", "ursachen_ids": [3902], "buendel": "Strengere Standards (Energie, Brandschutz)", "zitat": "Mit uns gibt es keine neuen Standards, die Baukosten ohne nennenswerten Mehrwert erhöhen.", "seite": 73 },
+    { "beschreibung": "Vermögensbildungsprämie einführen, die Arbeitnehmersparzulage und Wohnungsbauprämie zusammenführt und den Förderbetrag erhöht.", "ursachen_ids": [3903], "buendel": "Sparen für Eigenkapital fördern", "zitat": "Wir führen eine Vermögensbildungsprämie ein, in der wir die Arbeitnehmersparzulage und die Wohnungsbauprämie verschmelzen. Wir erhöhen den Förderbetrag deutlich und vereinheitlichen die Einkommensgrenzen.", "seite": 34 },
+    { "beschreibung": "Freibeträge bei der Erbschaftsteuer erhöhen, damit das Eigenheim in höherem Maße steuerfrei vererbt werden kann.", "ursachen_ids": [3903], "buendel": "Vermögensübertragung in der Familie erleichtern", "zitat": "Wir erhöhen die Freibeträge bei der Erbschaftsteuer deutlich. So kann das Eigenheim in höherem Maße steuerfrei vererbt werden.", "seite": 34 },
+    { "beschreibung": "Länder sollen einen Freibetrag bei der Grunderwerbsteuer für den ersten Erwerb selbstgenutzten Wohneigentums gewähren können.", "ursachen_ids": [], "ursachen_offen": [3904], "buendel": "Grunderwerbsteuer senken oder Freibetrag einführen", "zitat": "Wir unterstützen vor allem Familien, sich den Traum vom Eigenheim zu erfüllen. Länder sollen einen Freibetrag bei der Grunderwerbsteuer von 250.000 Euro pro Erwachsenen und 150.000 Euro für jedes Kind beim erstmaligen Erwerb selbstgenutzten Wohneigentums gewähren können.", "seite": 34 },
+    { "beschreibung": "Bestehende Förderprogramme der Zinsverbilligung neu ausrichten: Einkommensgrenzen anheben, Kauf von Bestandsimmobilien einbeziehen.", "ursachen_ids": [3905], "buendel": "Zinsverbilligung und Förderdarlehen", "zitat": "Die bestehenden Förderprogramme, wie zum Beispiel die Zinsverbilligungsprogramme der KfW, richten wir neu aus, indem wir die Einkommensgrenzen anheben und den Kauf von Bestandsimmobilien einbeziehen.", "seite": 73 }
+  ],
+  "neue_buendel": [
+    { "ursache": 3901, "name": "Ausnahmen vom Planungsrecht", "seite": 73 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3902, "seiten": [18, 73], "grund": "Gelesen: Kapitel Bauen, Wohnen und Mobilität (S. 72–73). S. 18: Pflicht zu Betriebsbeauftragten (u. a. Brandschutz) ist keine Baukostenvorgabe. S. 73: Sonderabschreibung für Mietwohnungsneubau gehört nach R2 zu T2; energetische Sanierung des Bestands ist kein Neubau. Gebäudetyp E („kostengünstigeres, aber sicheres Bauen“) gleichartig zur Bauvorgaben-Zusage, dort nicht separat erfasst." }
+  ]
+}
+
+Protokoll
+
+Gelesen: Inhaltsverzeichnis (S. 2); Kapitel „Bauen und Wohnen bezahlbar machen“ (S. 72–73); Kapitel „Eigentum und Vermögensbildung“ (S. 33–34, mit Abschnitt „Vermögensaufbau“, Grunderwerbsteuer, Erbschaftsteuer, Vermögensbildungsprämie); Abschnitt „Staat, Verwaltung“ (S. 10) und Fundstellen S. 18, 34, 73 aus dem Auftrag.
+
+Gleichartige Stellen (nicht separat erfasst):
+- S. 73 „Dazu entschlacken wir …“ und „Mit einer befristeten Sonderregelung …“: gleichartig innerhalb ihres Bündels („Bauvorgaben vereinfachen“ bzw. Planungsrecht), eine Stelle je Bündel. Gebäudetyp E (S. 73) ist eine weitere Stelle zu „Bauvorgaben vereinfachen“.
+- S. 34 Freibetrag für Erträge aus vermögenswirksamen Leistungen (Haltefrist zehn Jahre): gleichartig Sparförderung, konkretere Stelle (Prämie) gewählt.
+- S. 34 Erbschaftsteuer-Freibetrag: gewählt unter „Vermögensübertragung in der Familie erleichtern“.
+
+Nicht erfasst:
+- S. 33: „Neue Impulse für mehr Eigentum im Land“, Rentenbezug: Bekenntnis und Ziel ohne Hebel.
+- S. 34: Mitarbeiterkapitalbeteiligung (Freibetrag, Besteuerung bei Veräußerung): nicht Eigenkapital für Wohneigentum.
+- S. 34: „Keine Vermögensteuer“: Bekenntnis ohne Eigenkapitalbezug.
+- S. 73: Mieterschutz, Miethöhe, Mietwohnungsförderung: T2, nicht T39.
+- S. 73: Energetische Sanierung bei Erbschaft- und Schenkungsteuer: Bestand, nicht Neubau-Baukosten (3902).
+- 3904: Maklerprovision, Notar- und Grundbuchkosten sowie Grunderwerbsteuer-Satz: im Text nicht vorhanden.
+- 3905: Tilgung, Zinsbindung, Leitzins: im Text nicht vorhanden (nur KfW-Zinsverbilligung, s. JSON).
+- 3903: Eigenkapitalanforderung der Banken, Förderdarlehen als Ersatz für Eigenkapital: im Text nicht vorhanden.
+
+Richtungen ohne Maßnahme: keine. Alle fünf Ursachen haben mindestens eine Stelle; 3904 nur als Grenzfall (Länderzuständigkeit, „können“).
+Seiten ohne Text: S. 1, S. 82 (Titel und Rückseite), ohne Bedeutung.
+Stand im PDF: Titelseite „Politikwechsel für Deutschland – Wahlprogramm von CDU und CSU“, kein abweichender Stand vermerkt.

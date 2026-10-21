@@ -1,0 +1,962 @@
+{
+  "pruefsumme": "ba0396da2bf3b5a986123f3927ff3ebae5848c7c22a041ec82297ff3ce06f386",
+  "thema": {
+    "id": 28,
+    "name": "Sexismus und Benachteiligung von Frauen",
+    "ziel": "Frauen können ihren Alltag, ihren Beruf und ihr Familienleben selbstbestimmt gestalten, ohne geschlechtsbedingte Benachteiligung oder sexistische Anfeindungen."
+  },
+  "ursachen": [
+    {
+      "id": 2801,
+      "beschreibung": "Bei 53 % der Paare übernimmt die Frau deutlich mehr Routine-Hausarbeit als der Mann, bei 44 % ist sie etwa gleich verteilt (BiB, 2025)",
+      "ebene": "bund"
+    },
+    {
+      "id": 2802,
+      "beschreibung": "Mütter bleiben nach einer Familienphase häufig langfristig und oft ungewollt in Teilzeit; die meisten Frauen wünschen Teilzeit vor allem, solange die Kinder klein sind (BiB, 2017)",
+      "ebene": "bund"
+    },
+    {
+      "id": 2803,
+      "beschreibung": "Erwartungen an Mütter widersprechen sich: 83 % der Frauen befürworteten nachmittägliche Präsenz bei den Kindern, 84 % Erwerbstätigkeit zur Unabhängigkeit (Befragung 2012)",
+      "ebene": "land"
+    },
+    {
+      "id": 2804,
+      "beschreibung": "Etwa 40 % der Befragten wussten 2018 nichts von einer betrieblichen Beschwerdestelle gegen sexuelle Belästigung am Arbeitsplatz",
+      "ebene": "bund"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        2801,
+        2802,
+        2803,
+        2804
+      ],
+      "text": "Zu 2801 Aufteilung von Haus- und Sorgearbeit in Partnerschaften (Elternzeit, Partnermonate, Entlastung), zu 2802 Teilzeit und Wiedereinstieg nach der Familienphase, zu 2803 Rollenbilder und Erwartungen an Mütter, zu 2804 Schutz vor sexueller Belästigung am Arbeitsplatz und Beschwerdewege. Die Wahlfreiheit für ein Familienmodell ist selbst keine Benachteiligung."
+    },
+    {
+      "nr": 2,
+      "text": "Gewalt in Partnerschaft, sexualisierte Gewalt und Frauenhausplätze gehören zu Sicherheit, Betreuungsplätze zu Kita-Betreuung, Online-Hass zu Hass im Internet, allgemeine Löhne zu Preise und Löhne. Lohnlücke und Entgelttransparenz zählen zu 2802, wenn das Zitat Teilzeit oder Familienphase nennt, sonst zu keiner Ursache."
+    }
+  ],
+  "instrumente": [],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "land",
+      "beschreibung": "Landeseigenes Familiengeld ab Geburt, gestaffelt nach Kinderzahl, für Eltern.",
+      "zitat": "Zur weiteren Entlastung der Familien werden wir ein landeseigenes Kindergeld einführen. […] Ab Geburt erhalten Eltern für ihr erstgeborenes Kind monatlich 50 Euro, für ihr zweitgeborenes Kind monatlich 150 Euro und für jedes weitere Kind 250 Euro.",
+      "ursachen_ids": [
+        2803
+      ],
+      "pruefsumme": "276f3d7baec3d4c5"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "land",
+      "beschreibung": "Kinder und Jugendliche früh für alltägliche Aufgaben sensibilisieren, damit Sorgearbeit besser verteilt wird.",
+      "zitat": "Wir wollen: […] bereits früh Kinder und Jugendliche für alltägliche Aufgaben sensibilisieren, so dass die Sorgearbeit besser verteilt wird.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2803
+      ],
+      "pruefsumme": "b179a53cc61c7315"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "bund",
+      "beschreibung": "Volles Elterngeld (14 Monate), wenn beide Elternteile je mindestens vier Elterngeldmonate nehmen.",
+      "zitat": "Das volle Elterngeld (14 Monate) soll voll ausgezahlt werden, wenn beide Partner je mindestens vier Elterngeldmonate in Anspruch nehmen.",
+      "ursachen_ids": [
+        2801
+      ],
+      "pruefsumme": "d7b3c341ad70d6d7"
+    },
+    {
+      "kennung": "M04",
+      "ebene": "bund",
+      "beschreibung": "Mindestbetrag beim Elterngeld auf 420 Euro anheben.",
+      "zitat": "Den Mindestbetrag beim Elterngeld wollen wir auf 420 Euro anheben.",
+      "ursachen_ids": [
+        2801
+      ],
+      "pruefsumme": "b58bb8a656e93549"
+    },
+    {
+      "kennung": "M05",
+      "ebene": "bund",
+      "beschreibung": "Geschlechterungleichgewichte auf dem Ausbildungs- und Arbeitsmarkt durch geschlechtersensible Bildung überwinden.",
+      "zitat": "Geschlechterspezifische Ungleichgewichte auf dem Ausbildungs- und Arbeitsmarkt sollen u. a. durch geschlechtersensible Bildung und die Aufwertung schlecht bezahlter Berufe mit hohem Frauenanteil überwunden werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2803
+      ],
+      "pruefsumme": "ab40319d050f3770"
+    },
+    {
+      "kennung": "M06",
+      "ebene": "land",
+      "beschreibung": "Verbot, in staatlichen und kommunalen Kitas und Schulen gegen den Elternwillen Konzepte zu Geschlecht, Sexualität oder Identität einzuführen oder zu fördern",
+      "zitat": "Staatliche und kommunale Einrichtungen dürfen keine ideologischen Konzepte zu Themen wie Geschlecht, Sexualität oder Identität gegen den Willen der Eltern einführen oder fördern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2803
+      ],
+      "pruefsumme": "41e49fb8b8eb579f"
+    },
+    {
+      "kennung": "M07",
+      "ebene": "bund",
+      "beschreibung": "Familienpflegezeit und Familienpflegegeld für Vereinbarkeit von Pflege und Beruf",
+      "zitat": "Mit einer Familienpflegezeit und einem Familienpflegegeld, ähnlich wie beim Elterngeld, ermöglichen wir die Vereinbarkeit von Pflege und Beruf ohne finanzielle Einbußen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2801
+      ],
+      "pruefsumme": "1fa29a69ef2a6441"
+    },
+    {
+      "kennung": "M08",
+      "ebene": "land",
+      "beschreibung": "Schwerpunkt auf die Integration von Frauen in Arbeit, unter anderem um tradierte Rollenbilder zu überwinden",
+      "zitat": "Ein Hauptaugenmerk wollen wir auf die Integration von Frauen in die Arbeit legen, um deren gleichberechtigte Teilhabe in unserer Gesellschaft langfristig zu gewährleisten, tradierte Rollenbilder zu überwinden und die Gefahr einer Abhängigkeit von Partnern oder des sozialen Abstiegs zu verringern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2803
+      ],
+      "pruefsumme": "63f6745c288ecb3c"
+    },
+    {
+      "kennung": "M09",
+      "ebene": "bund",
+      "beschreibung": "Teilzeitmodelle und Job-Sharing im öffentlichen Dienst als Angebot des Arbeitgebers Staat",
+      "zitat": "Wir wollen den Staat als Arbeitgeber attraktiver machen – mit flächendeckendem Homeoffice, Job-Sharing und Teilzeitmodellen im öffentlichen Dienst.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2802
+      ],
+      "pruefsumme": "c45aba58badcb3d6"
+    },
+    {
+      "kennung": "M10",
+      "ebene": "bund",
+      "beschreibung": "Allgemeines Gleichbehandlungsgesetz mit längeren Fristen, Verbandsklage und Schließung von Schutzlücken reformieren",
+      "zitat": "Wir werden das Allgemeine Gleichbehandlungsgesetz reformieren. Dazu weiten wir Fristen, Diskriminierungsgründe und den Anwendungsbereich aus, führen ein Verbandsklagerecht ein und schließen Schutzlücken.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2804
+      ],
+      "pruefsumme": "bbcc40a98634bd22"
+    },
+    {
+      "kennung": "M11",
+      "ebene": "bund",
+      "beschreibung": "Hilfen beim beruflichen Wiedereinstieg nach der Kinderbetreuung",
+      "zitat": "Weitere Bausteine, die die Rente langfristig stabilisieren […] sowie Hilfen beim beruflichen Wiedereinstieg, damit Kinderwünsche nicht mehr an Geld- und Karrieresorgen scheitern",
+      "ursachen_ids": [
+        2802
+      ],
+      "pruefsumme": "4ec4a82e86a1399b"
+    },
+    {
+      "kennung": "M12",
+      "ebene": "bund",
+      "beschreibung": "Erziehungsgeld, das Eigenbetreuung der Kinder in den ersten drei Lebensjahren finanziell erleichtert",
+      "zitat": "Weitere Bausteine, die die Rente langfristig stabilisieren […] ein Erziehungsgeld, das Eltern die Eigenbetreuung ihrer Kinder in den ersten drei Lebensjahren finanziell erleichtert",
+      "ursachen_ids": [
+        2802
+      ],
+      "pruefsumme": "a8dce64d8b92926e"
+    },
+    {
+      "kennung": "M13",
+      "ebene": "land",
+      "beschreibung": "Frauen in Technik und Führung gezielt fördern und die Sichtbarkeit weiblicher Vorbilder verbessern",
+      "zitat": "In vielen Bereichen sind Frauen noch immer unterrepräsentiert. […] Wir wollen zudem die Sichtbarkeit von Vorbildern verbessern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2803
+      ],
+      "pruefsumme": "96a35af4efa9a834"
+    },
+    {
+      "kennung": "M14",
+      "ebene": "bund",
+      "beschreibung": "Unterhaltspflichten sollen an die zeitliche Intensität der Betreuung gebunden werden",
+      "zitat": "Wir wollen Unterhaltspflichten gleichmäßig an die zeitliche Intensität der Betreuung binden und so Kosten und Lasten gerechter aufteilen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2801
+      ],
+      "pruefsumme": "c8e001892f1071d4"
+    },
+    {
+      "kennung": "M15",
+      "ebene": "bund",
+      "beschreibung": "Antidiskriminierungsstelle des Bundes und Beratungsangebote für Betroffene stärken",
+      "zitat": "Wir wollen die Antidiskriminierungsstelle des Bundes weiter stärken und zivilgesellschaftliche Beratungsangebote ausbauen, damit Betroffene gezielte Unterstützung erhalten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2804
+      ],
+      "pruefsumme": "94357f36ba99d63d"
+    },
+    {
+      "kennung": "M16",
+      "ebene": "bund",
+      "beschreibung": "Brückenteilzeit und Rückkehrrecht in Vollzeit ausweiten und flexibler gestalten",
+      "zitat": "Die Brückenteilzeit und das damit verbundene Rückkehrrecht in Vollzeit wollen wir weiten und individueller gestalten.",
+      "ursachen_ids": [
+        2802
+      ],
+      "pruefsumme": "a1be642dd5b63ef7"
+    },
+    {
+      "kennung": "M17",
+      "ebene": "land",
+      "beschreibung": "Klischeefreie Berufsorientierung wird verbindlicher Standard an allen Schulformen.",
+      "zitat": "Wir verankern klischeefreie Berufsorientierung als verbindlichen Standard in allen Schulformen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2803
+      ],
+      "pruefsumme": "59a202f2cc5200f6"
+    },
+    {
+      "kennung": "M18",
+      "ebene": "land",
+      "beschreibung": "Gendersprache im gesamten amtlichen Sprachgebrauch des Landes untersagen.",
+      "zitat": "Wir werden deshalb als Landesregierung Gendersprache im gesamten amtlichen Sprachgebrauch untersagen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2803
+      ],
+      "pruefsumme": "1b28bbf011664bf9"
+    },
+    {
+      "kennung": "M19",
+      "ebene": "land",
+      "beschreibung": "Mädchen früh für MINT-Fächer begeistern und durch landesweite Kampagnen sichtbare Vorbilder schaffen",
+      "zitat": "Für konsequente Gleichstellung werden wir: […] Mädchen früh für MINT-Fächer begeistern und mit landesweiten Kampagnen sichtbare Vorbilder schaffen.",
+      "ursachen_ids": [
+        2803
+      ],
+      "pruefsumme": "1eab8e4d1526e31d"
+    },
+    {
+      "kennung": "M20",
+      "ebene": "land",
+      "beschreibung": "Landesprogramme mit Zuschüssen, Rentenboni und Entlastung für pflegende Angehörige, damit Pflegearbeit nicht in Armut führt",
+      "zitat": "Landesprogramme sollen Zuschüsse, Rentenboni und Entlastungsangebote fördern, damit Pflegearbeit nicht zur Armutsfalle wird.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2803
+      ],
+      "pruefsumme": "cc5e2976fea98955"
+    },
+    {
+      "kennung": "M21",
+      "ebene": "land",
+      "beschreibung": "Staatliche Förderprogramme speziell für Frauen einstellen und Frauenquoten außer Kraft setzen.",
+      "zitat": "Alle staatlichen Programme zur Förderung speziell von Frauen werden wir einstellen, alle Frauenquoten außer Kraft setzen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2803
+      ],
+      "pruefsumme": "470880e06917e3c0"
+    },
+    {
+      "kennung": "M22",
+      "ebene": "land",
+      "beschreibung": "Staatliche Förderung von Genderinhalten in Kitas und Schulen einstellen",
+      "zitat": "Jegliche staatliche Förderung von Genderideologie und Frühsexualisierung in Kitas und Schulen ist einzustellen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2803
+      ],
+      "pruefsumme": "faa3afae79a91ffd"
+    },
+    {
+      "kennung": "M23",
+      "ebene": "bund",
+      "beschreibung": "Mehr Zeitsouveränität und flexible Arbeitszeitmodelle für die Aufteilung von Care-Arbeit",
+      "zitat": "Dafür wollen wir den Beschäftigten mehr Zeitsouveränität und flexible Arbeitszeitmodelle ermöglichen, ohne die Betriebe zu überfordern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2801
+      ],
+      "pruefsumme": "44864d2c5acc2149"
+    },
+    {
+      "kennung": "M24",
+      "ebene": "bund",
+      "beschreibung": "Kinderkrankengeld an mehr Tagen fortführen und die Altersgrenze anheben",
+      "zitat": "Auch über 2025 hinaus sollen Eltern jeweils an 15 Tagen Kinderkrankengeld beziehen können, Alleinerziehende an 30 Tagen. Die Altersgrenze wollen wir auf 14 Jahre anheben.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2801
+      ],
+      "pruefsumme": "86961aaed734533d"
+    },
+    {
+      "kennung": "M25",
+      "ebene": "bund",
+      "beschreibung": "Schutz vor Mobbing im Betrieb verbessern",
+      "zitat": "Den Schutz vor Mobbing werden wir verbessern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2804
+      ],
+      "pruefsumme": "2362952925510be3"
+    },
+    {
+      "kennung": "M26",
+      "ebene": "bund",
+      "beschreibung": "Arbeitsschutzgesetz um die Aspekte Gewalt und sexuelle Belästigung ergänzen, damit das Gesetz zu Gewalt und Belästigung in der Arbeitswelt in Betrieben ankommt.",
+      "zitat": "Das Gesetz über die Beseitigung von Gewalt und Belästigung in der Arbeitswelt muss auch in der betrieblichen Praxis ankommen. Wir wollen deshalb u. a. das Arbeitsschutzgesetz um die Aspekte „Gewalt“ und „sexuelle Belästigung“ ergänzen.",
+      "ursachen_ids": [
+        2804
+      ],
+      "pruefsumme": "90a369fba49c9634"
+    },
+    {
+      "kennung": "M27",
+      "ebene": "land",
+      "beschreibung": "Landeserziehungsgeld für U3-Kinder in Höhe der Kita-Kosten, um die Wahl zwischen häuslicher und externer Betreuung zu stärken",
+      "zitat": "Zur Stärkung der Wahlfreiheit zwischen Selbst- und Fremdbetreuung für U3-Kinder wollen wir ein Landeserziehungsgeld in Höhe der vergleichbaren Kosten für einen Kita-Platz einführen.",
+      "ursachen_ids": [
+        2803
+      ],
+      "pruefsumme": "0348c1c36bcdd89a"
+    },
+    {
+      "kennung": "M28",
+      "ebene": "bund",
+      "beschreibung": "Beratungsstellen gegen Diskriminierung langfristig absichern und ausbauen",
+      "zitat": "Wir wollen, dass Beratungsstellen und Selbstorganisationen langfristig abgesichert und ausgebaut werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2804
+      ],
+      "pruefsumme": "a0a09425be7403c9"
+    },
+    {
+      "kennung": "M29",
+      "ebene": "bund",
+      "beschreibung": "Steuerliche Absetzbarkeit von Betreuungskosten und Unterhalt verbessern, um Familien und Alleinerziehende zu entlasten.",
+      "zitat": "Um Familien und Alleinerziehende stärker zu entlasten, wollen wir die steuerliche Absetzbarkeit von Betreuungskosten und gesetzlichen Unterhaltsleistungen verbessern.",
+      "ursachen_ids": [
+        2801
+      ],
+      "pruefsumme": "c366ed540f59cb21"
+    },
+    {
+      "kennung": "M30",
+      "ebene": "land",
+      "beschreibung": "Steuerliches Familiensplitting zusätzlich zum Kindergeld",
+      "zitat": "[Partei] will ein steuerliches Familiensplitting zusätzlich zum Kindergeld einführen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2803
+      ],
+      "pruefsumme": "3d546682d064b23a"
+    },
+    {
+      "kennung": "M31",
+      "ebene": "bund",
+      "beschreibung": "Kinderbetreuungs- und Pflegezeiten in der Arbeitslosenversicherung anerkennen, Versicherungsfrist verlängern",
+      "zitat": "Die Frist zur Erfüllung der Versicherungszeiten soll verlängert werden, Zeiten der Kinderbetreuung und Pflege von Angehörigen müssen anerkannt werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2802
+      ],
+      "pruefsumme": "0de44b0f954ebea3"
+    },
+    {
+      "kennung": "M32",
+      "ebene": "land",
+      "beschreibung": "Gleichberechtigung als Thema in Kitas und Schulen früh vermitteln",
+      "zitat": "Deshalb stärken wir Aufklärung, Sensibilisierung und frühe Intervention – in Schulen, Kitas, Jugendhilfe, Sportvereinen […] Themen wie Gleichberechtigung, Grenzen und Konsens sowie gewaltfreie Konfliktlösung müssen frühzeitig in Kitas und Schulen vermittelt werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2803
+      ],
+      "pruefsumme": "f495aea3f28642d3"
+    },
+    {
+      "kennung": "M33",
+      "ebene": "bund",
+      "beschreibung": "Für den zweiten Elternteil 28 Tage Elternschutz nach der Geburt einführen, um die partnerschaftliche Aufteilung von Sorge- und Erwerbsarbeit zu fördern.",
+      "zitat": "Um eine partnerschaftliche Aufteilung von Sorge- und Erwerbsarbeit zwischen den Elternteilen zu fördern, wollen wir für den zweiten Elternteil 28 Tage Elternschutz (ab Geburt des Kindes) einführen.",
+      "ursachen_ids": [
+        2801
+      ],
+      "pruefsumme": "48a1103d95ed8590"
+    },
+    {
+      "kennung": "M34",
+      "ebene": "bund",
+      "beschreibung": "Kinder sollen in der Schule zu Ehe, Partnerschaft und Familienzusammenhalt unterrichtet werden",
+      "zitat": "Kinder sollen in der Schule zu Ehe, Partnerschaft und Familienzusammenhalt unterrichtet werden, um später stabile Familien gründen zu können.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2803
+      ],
+      "pruefsumme": "5a8ca41333df3e1c"
+    },
+    {
+      "kennung": "M35",
+      "ebene": "land",
+      "beschreibung": "Gleichstellungsbeauftragte in den Gemeinden abschaffen (Kommunalverfassung ändern).",
+      "zitat": "Wir werden dem ein Ende bereiten: Durch eine einfache Änderung des Kommunalverfassungsgesetzes erreichen wir, dass die Gemeinden keine Gleichstellungsbeauftragten mehr ernennen müssen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2803
+      ],
+      "pruefsumme": "1e74623e64572a6d"
+    },
+    {
+      "kennung": "M36",
+      "ebene": "bund",
+      "beschreibung": "Elterngeld verbessern und den Partnerschaftsbonus bei vollzeitnaher Teilzeit beider Eltern weiterentwickeln.",
+      "zitat": "Wir verbessern das Elterngeld. Den Partnerschaftsbonus bei gleichzeitiger vollzeitnaher Teilzeit beider Eltern entwickeln wir weiter.",
+      "ursachen_ids": [
+        2801
+      ],
+      "pruefsumme": "353b1fdca05b4064"
+    },
+    {
+      "kennung": "M37",
+      "ebene": "land",
+      "beschreibung": "Gender-Mainstreaming-Prüfung für Landesgesetze verpflichtend einführen",
+      "zitat": "Das Landesprogramm für ein geschlechtergerechtes [Land] wollen wir mit klaren Zielvorgaben, verbindlichen Indikatoren und einem jährlichen Monitoring weiterentwickeln. Dazu gehört auch, eine verpflichtende Gender-Mainstreaming-Prüfung für Landesgesetze zu schaffen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2803
+      ],
+      "pruefsumme": "b63dc3ed3eaea207"
+    },
+    {
+      "kennung": "M38",
+      "ebene": "bund",
+      "beschreibung": "Familienstartzeit: zwei Wochen Freistellung mit Lohnersatz für Väter und Co-Mütter nach der Geburt",
+      "zitat": "Wir werden mit einer Familienstartzeit entsprechend den Regelungen der Europäischen Union (EU) Vätern und Co-Müttern die Möglichkeit geben, sich die ersten zwei Wochen nach der Geburt eines Kindes mit einer Lohnersatzleistung von der Arbeit freizustellen.",
+      "ursachen_ids": [
+        2801
+      ],
+      "pruefsumme": "4cb8a5f697def85f"
+    },
+    {
+      "kennung": "M39",
+      "ebene": "bund",
+      "beschreibung": "Mädchen in der Schule für MINT-Fächer begeistern, um den Anteil von Gründerinnen zu erhöhen.",
+      "zitat": "Um den Anteil von Gründerinnen zu erhöhen, begeistern wir insbesondere Mädchen in der Schule in MINT-Fächern",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2803
+      ],
+      "pruefsumme": "f46b41b5ac3313cc"
+    },
+    {
+      "kennung": "M40",
+      "ebene": "bund",
+      "beschreibung": "Ausbau vollzeitnaher Tätigkeiten in Kitas und Schulen im Rahmen einer Fachkräfteoffensive",
+      "zitat": "Wir wollen daher eine Fachkräfteoffensive für Kitas und Schulen verbindlich zwischen allen Bundesländern vereinbaren, die unter anderem den Ausbau von Ausbildungskapazitäten, eine entlohnte Ausbildung für Erzieherinnen und Erzieher, multiprofessionelle Teams, die verstärkte Ansprache von Quereinsteigenden aus anderen Berufen sowie den Ausbau vollzeitnaher Tätigkeit bei den meist weiblichen Beschäftigten umfasst.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2802
+      ],
+      "pruefsumme": "a2eeab6536956a12"
+    },
+    {
+      "kennung": "M41",
+      "ebene": "land",
+      "beschreibung": "Aufklärung und Weiterbildung vor allem in Schulen über Sexismus, häusliche Gewalt und stereotype Rollenbilder",
+      "zitat": "Aufklärung und Weiterbildung – insbesondere in Schulen – müssen gezielt über Sexismus, häusliche Gewalt und stereotype Rollenbilder informieren.",
+      "ursachen_ids": [
+        2803
+      ],
+      "pruefsumme": "6f2ade5af3c41571"
+    },
+    {
+      "kennung": "M42",
+      "ebene": "land",
+      "beschreibung": "Lehrinhalte sollen ein lebensbejahendes, verantwortungsvolles Familienbild vermitteln",
+      "zitat": "Wir akzeptieren die unterschiedlichen Formen des Zusammenlebens, bestehen aber darauf, dass sich Lehrinhalte vorrangig an der Lebenswirklichkeit der Mehrheit orientieren und ein lebensbejahendes, verantwortungsvolles Familienbild vermitteln.",
+      "ursachen_ids": [
+        2803
+      ],
+      "pruefsumme": "efab7352ff3b9b35"
+    },
+    {
+      "kennung": "M43",
+      "ebene": "bund",
+      "beschreibung": "Feministische Mädchen- und Jungenarbeit besonders fördern",
+      "zitat": "Dabei wollen wir feministische Mädchen- und Jungenarbeit sowie queersensible Angebote besonders fördern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2803
+      ],
+      "pruefsumme": "029dc3a14107889b"
+    },
+    {
+      "kennung": "M44",
+      "ebene": "land",
+      "beschreibung": "Kinder und Familie in Kampagnen der Landesregierung und in der Bildung in den Mittelpunkt stellen und als Vorbild verankern.",
+      "zitat": "Wir werden dagegen wieder die Themen Kinder und Familie in den Mittelpunkt der Werbe- und Aufklärungskampagnen der Landesregierung stellen, aber auch in der schulischen und darüber hinausgehenden Bildung verankern und priorisieren.",
+      "ursachen_ids": [
+        2803
+      ],
+      "pruefsumme": "f3fc62e52341d53d"
+    },
+    {
+      "kennung": "M45",
+      "ebene": "bund",
+      "beschreibung": "Arbeitszeitgesetz reformieren: wöchentliche statt tägliche Höchstarbeitszeit, flexible Arbeitszeitmodelle.",
+      "zitat": "Wir wollen das deutsche Arbeitszeitgesetz reformieren, indem wir mit einer wöchentlichen statt einer täglichen Höchstarbeitszeit neue und flexible Arbeitszeitmodelle ermöglichen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2802
+      ],
+      "pruefsumme": "0a546cd9d2502e09"
+    },
+    {
+      "kennung": "M46",
+      "ebene": "bund",
+      "beschreibung": "Ehegattensplitting durch individuelle Besteuerung mit übertragbarem Grundfreibetrag für Neuehen ersetzen",
+      "zitat": "In der jetzigen Form stellt das Ehegattensplitting ein Erwerbshindernis für Frauen dar und ist weder gerecht noch zeitgemäß. Deshalb wollen wir es grundlegend geschlechtergerecht reformieren, indem wir für Neuehen eine individuelle Besteuerung mit übertragbarem Grundfreibetrag einführen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2802
+      ],
+      "pruefsumme": "9650a6cb6722f610"
+    },
+    {
+      "kennung": "M47",
+      "ebene": "land",
+      "beschreibung": "Berufsorientierung ohne Geschlechterstereotype; Girls' Day und Boys' Day in der 9. Klasse verpflichtend",
+      "zitat": "Eine Berufsorientierung fördern, die jungen Menschen ermöglicht, ihre Fähigkeiten unabhängig von Geschlechterstereotypen zu entwickeln. Den Girls’ Day und den Boys’ Day wollen wir in der 9. Klasse verpflichtend durchführen.",
+      "ursachen_ids": [
+        2803
+      ],
+      "pruefsumme": "5af5685d772732c6"
+    },
+    {
+      "kennung": "M48",
+      "ebene": "bund",
+      "beschreibung": "Rechtsanspruch auf eine Vollzeitstelle einführen, auch für familienfreundliche Schichten.",
+      "zitat": "Wir setzen uns für einen Rechtsanspruch auf eine Vollzeitstelle und auf familienfreundliche Schichten ein.",
+      "ursachen_ids": [
+        2802
+      ],
+      "pruefsumme": "de5b88d7fc2795a9"
+    },
+    {
+      "kennung": "M49",
+      "ebene": "bund",
+      "beschreibung": "Wechselmodell bei der Betreuung minderjähriger Kinder nach einer Trennung als gesetzliches Leitbild.",
+      "zitat": "Wir wollen das sogenannte Wechselmodell zum gesetzlichen Leitbild bei der Betreuung minderjähriger Kinder nach einer Trennung der Eltern machen, wobei stets das Kindeswohl oberster Maßstab der Entscheidung bleibt.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2801
+      ],
+      "pruefsumme": "3578465673452fc3"
+    },
+    {
+      "kennung": "M50",
+      "ebene": "bund",
+      "beschreibung": "Allgemeines Gleichbehandlungsgesetz modernisieren, um wirksameren Schutz vor Diskriminierung zu bieten",
+      "zitat": "Wir wollen das Allgemeine Gleichbehandlungsgesetz (AGG) modernisieren, um effektiveren Schutz vor Diskriminierung zu gewährleisten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2804
+      ],
+      "pruefsumme": "60ef67a3b6933e39"
+    },
+    {
+      "kennung": "M51",
+      "ebene": "land",
+      "beschreibung": "Girls- und Boys-Day durch einen Zukunftstag zur Berufsorientierung ohne Trennung nach Geschlecht ersetzen.",
+      "zitat": "Deshalb werden wir den „Girls- und Boys-Day“ durch einen Zukunftstag zur beruflichen Orientierung ersetzen, bei dem Jungen und Mädchen nicht in verschiedene Gruppen getrennt werden und jeder völlig frei wählen darf, was ihm gefällt.",
+      "ursachen_ids": [
+        2803
+      ],
+      "pruefsumme": "fa6810ed2d294f2d"
+    },
+    {
+      "kennung": "M52",
+      "ebene": "bund",
+      "beschreibung": "Freistellung von Vätern oder Partnern nach der Geburt mit Lohnfortzahlung",
+      "zitat": "Väter oder Partnerinnen und Partner sollen sich für die ersten zwei Wochen nach der Geburt eines Kindes bei voller, umlagefinanzierter Lohnfortzahlung freistellen lassen können.",
+      "ursachen_ids": [
+        2801
+      ],
+      "pruefsumme": "555f7299321ec02f"
+    },
+    {
+      "kennung": "M53",
+      "ebene": "bund",
+      "beschreibung": "Antidiskriminierungsstelle soll Antifeminismus und frauenfeindliche Diskriminierung in den Blick nehmen",
+      "zitat": "Wir wollen, dass die Antidiskriminierungsstelle des Bundes auch Anti-Feminismus in den Fokus nimmt, um gezielt frauenfeindliche Diskriminierung zu verhindern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2803
+      ],
+      "pruefsumme": "d5944cb695092c35"
+    },
+    {
+      "kennung": "M54",
+      "ebene": "bund",
+      "beschreibung": "Minijobs schrittweise in sozialversicherungspflichtige Beschäftigung überführen",
+      "zitat": "Minijobs wollen wir schrittweise in sozialversicherungspflichtige Beschäftigung überführen, mit Ausnahmen für Rentner*innen, Schüler*innen und Studierende. Denn sie führen vor allem für Frauen und in Kombination mit dem Ehegattensplitting zu einer Teilzeitfalle, weil sie den Anreiz setzen, weniger und ohne soziale Absicherung zu arbeiten.",
+      "ursachen_ids": [
+        2802
+      ],
+      "pruefsumme": "c0bda8ed806a36ae"
+    },
+    {
+      "kennung": "M55",
+      "ebene": "bund",
+      "beschreibung": "Die Finanzierung der Mütterrente soll nicht mehr über die Beitragszahlenden laufen (Steuerfinanzierung).",
+      "zitat": "Dass die Beitragszahler*innen versicherungsfremde Leistungen wie z. B. die Anerkennung von Kindererziehungszeiten (bekannt als „Mütterrente“) und die Grundrente finanzieren, muss beendet werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2803
+      ],
+      "pruefsumme": "2136be0569b61ca6"
+    },
+    {
+      "kennung": "M56",
+      "ebene": "bund",
+      "beschreibung": "Betreuungsgehalt bis zum dritten Geburtstag, damit Eltern zwischen Fremd- und Selbstbetreuung wählen können",
+      "zitat": "Mit einem Betreuungsgehalt bis zum 3. Geburtstag sollen Eltern echte Wahlfreiheit zwischen Fremd- und Selbstbetreuung",
+      "ursachen_ids": [
+        2801
+      ],
+      "ursachen_offen": [
+        2803
+      ],
+      "pruefsumme": "853405e5970943ad"
+    },
+    {
+      "kennung": "M57",
+      "ebene": "land",
+      "beschreibung": "Landesweites Modellprojekt mit flexibler Kinderbetreuung, damit junge Eltern ihre Erwerbsarbeit an ihre Lebenssituation anpassen können",
+      "zitat": "Um Care-Arbeit zu erleichtern, wollen wir: […] Ein landesweites Modellprojekt umsetzen, das junge Eltern durch flexible Kinderbetreuung dabei unterstützt, ihre Erwerbsarbeit an ihre Lebenssituation anzupassen, und zwar so, wie sie es wollen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2803
+      ],
+      "pruefsumme": "c61a7f965f226078"
+    },
+    {
+      "kennung": "M58",
+      "ebene": "bund",
+      "beschreibung": "Elterngeld mit nicht übertragbaren Monaten je Elternteil und weiteren frei verteilbaren Monaten",
+      "zitat": "Jeder Elternteil soll Anspruch auf sechs nicht übertragbare Monate Elterngeld erhalten. Zusätzlich gibt es weitere sechs Monate, die frei auf beide Elternteile verteilt werden können.",
+      "ursachen_ids": [
+        2801
+      ],
+      "pruefsumme": "2ee3d5e73db9c3af"
+    },
+    {
+      "kennung": "M59",
+      "ebene": "bund",
+      "beschreibung": "Steuerliche Absetzbarkeit haushaltsnaher Dienstleistungen verbessern.",
+      "zitat": "Wir verbessern die steuerliche Absetzbarkeit haushaltsnaher Dienstleistungen.",
+      "ursachen_ids": [
+        2801
+      ],
+      "pruefsumme": "a151bab0a339a654"
+    },
+    {
+      "kennung": "M60",
+      "ebene": "bund",
+      "beschreibung": "Leerstehende Gewerbeflächen in kommunale oder genossenschaftliche Hand überführen und zu Sorgezentren umgestalten, die pflegende Angehörige unterstützen.",
+      "zitat": "Wir wollen „Sorgearbeit“ vergesellschaften! Um die Nahversorgung im Wohnumfeld zu sichern, wollen wir leerstehendes Gewerbe (insbesondere große Gewerbeflächen wie Shoppingmalls oder Warenhäuser) in kommunale oder genossenschaftliche Hand überführen und zu Sorgezentren umgestalten.",
+      "ursachen_ids": [
+        2801
+      ],
+      "pruefsumme": "01f2a4bf384f3c89"
+    },
+    {
+      "kennung": "M61",
+      "ebene": "land",
+      "beschreibung": "Familiensplitting auf Bundesebene einführen; Kindererziehung soll steuerlich berücksichtigt werden",
+      "zitat": "Wir setzen uns auf Bundesebene für das Familiensplitting ein. […] Kindererziehung als gesellschaftsfördernde Leistung wird so endlich steuerlich berücksichtigt und führt zu einer spürbaren Entlastung.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2803
+      ],
+      "pruefsumme": "2c6b1f830503917e"
+    },
+    {
+      "kennung": "M62",
+      "ebene": "land",
+      "beschreibung": "Gezielte Ausbildungsbotschafter in Schulen und mehr Praktika, damit Mädchen und Frauen MINT-Berufe offen stehen",
+      "zitat": "Wir setzen uns dafür ein, dass Mädchen und Frauen in den sogenannten MINT-Berufen (Mathematik, Informatik, Naturwissenschaften und Technik) die gleichen Chancen haben wie Jungen und Männer. Wir setzen vor allem auf Ausbildungsbotschafterinnen und -botschafter, die im Rahmen der Berufsorientierung flächendeckend Schulen besuchen, um ein positives Bild der MINT-Berufe zu vermitteln, sowie auf mehr Praktika, insbesondere in den MINT-Berufen.",
+      "ursachen_ids": [
+        2803
+      ],
+      "pruefsumme": "3107f50c2ed5a420"
+    },
+    {
+      "kennung": "M63",
+      "ebene": "bund",
+      "beschreibung": "Weg aus Mini-Jobs in sozial abgesicherte Arbeit öffnen",
+      "zitat": "Wir wollen Missbrauch bekämpfen und Beschäftigten den Weg aus Mini-Jobs in sozial gut abgesicherte Arbeit öffnen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2802
+      ],
+      "pruefsumme": "15146025ac85cc6a"
+    },
+    {
+      "kennung": "M64",
+      "ebene": "bund",
+      "beschreibung": "Gender-Mainstreaming in der Erzieherausbildung unterbinden",
+      "zitat": "Auch bei der Ausbildung zum Erzieher muss jede Indoktrination in Bezug auf Gender-Mainstreaming und andere Ideologien unterbunden werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2803
+      ],
+      "pruefsumme": "559964bf27469877"
+    },
+    {
+      "kennung": "M65",
+      "ebene": "bund",
+      "beschreibung": "Steuerliche Reform für Paarfamilien mit dem Ziel, Partnerschaftlichkeit zu fördern",
+      "zitat": "Wir wollen die Besteuerung von Familien unter Berücksichtigung bereits getroffener Lebensentscheidungen reformieren, für Paarfamilien eine gerechtere Verteilung der Steuerlast erreichen und Partnerschaftlichkeit fördern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2801
+      ],
+      "pruefsumme": "d1524ba86e45bde6"
+    },
+    {
+      "kennung": "M66",
+      "ebene": "land",
+      "beschreibung": "Präventive und demokratiepädagogische Projekte gegen sexistische Haltungen an Schulen intensivieren und dauerhaft fördern",
+      "zitat": "Angesichts zunehmender rassistischer und sexistischer Haltungen unter Schülerinnen und Schülern werden präventive und demokratiepädagogische Projekte an Schulen intensiviert und dauerhaft gefördert.",
+      "ursachen_ids": [
+        2803
+      ],
+      "pruefsumme": "040b6d1a58a732e3"
+    },
+    {
+      "kennung": "M67",
+      "ebene": "bund",
+      "beschreibung": "Ausdrückliches Rückkehrrecht auf den gleichen oder einen gleichwertigen Arbeitsplatz nach der Elternzeit.",
+      "zitat": "Die Situation von Berufsrückkehrer*innen nach der Elternzeit stärken wir u. a. durch ein ausdrückliches Rückkehrrecht auf den gleichen oder einen gleichwertigen Arbeitsplatz.",
+      "ursachen_ids": [
+        2802
+      ],
+      "pruefsumme": "d72fba26c4abe93a"
+    },
+    {
+      "kennung": "M68",
+      "ebene": "bund",
+      "beschreibung": "Arbeitszeitmodelle mit geringerer Wochenarbeitszeit (z. B. 32 Stunden oder Vier-Tage-Woche) bei vollem Lohn fördern.",
+      "zitat": "Wir setzen uns für Arbeitszeitmodelle mit einer geringeren Wochenarbeitszeit (z. B. 32 Stunden oder Vier-Tage-Woche) bei vollem Lohn- und notwendigem Personalausgleich ein.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2802
+      ],
+      "pruefsumme": "6272fee54c03c06d"
+    },
+    {
+      "kennung": "M69",
+      "ebene": "bund",
+      "beschreibung": "Flexible Arbeitszeitmodelle, um die Verwaltungen als Arbeitgeber attraktiver zu machen",
+      "zitat": "Die Attraktivität der Verwaltungen als Arbeitgeber wollen wir durch flexible Arbeitszeitmodelle, kompetente und schlanke Führungsstrukturen sowie die frühzeitige Förderung von Leistungsträgern erhöhen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2802
+      ],
+      "pruefsumme": "1fd2b093eb16ce15"
+    },
+    {
+      "kennung": "M70",
+      "ebene": "land",
+      "beschreibung": "Stabile Ehen, Familiengründung und Verantwortung für die Familie als verbindliche Themen in den Schul-Lehrplänen",
+      "zitat": "Stabile Ehen und Partnerschaften, Familiengründung und Verantwortung für die Familie wollen wir als Themen verbindlich in die Lehrpläne der Schule aufnehmen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2803
+      ],
+      "pruefsumme": "21c02458b2699e8e"
+    },
+    {
+      "kennung": "M71",
+      "ebene": "land",
+      "beschreibung": "Schulungen in Kitas, um geschlechterneutrale Erziehung zu fördern und stereotype Rollenbilder abzubauen",
+      "zitat": "Wir setzen auf gezielte Schulungsmaßnahmen in Kitas, um eine geschlechterneutrale Erziehung zu fördern und stereotype Rollenbilder von Anfang an abzubauen.",
+      "ursachen_ids": [
+        2803
+      ],
+      "pruefsumme": "ee64d4cd92bbb26d"
+    },
+    {
+      "kennung": "M72",
+      "ebene": "bund",
+      "beschreibung": "Ehegattensplitting durch eine Individualbesteuerung ersetzen; so sollen alte Geschlechterrollen in der Steuerpolitik entgegengewirkt werden.",
+      "zitat": "Wir wollen die Steuerpolitik geschlechtergerechter machen und setzen uns für eine Reform des Ehegattensplittings in Richtung einer Individualbesteuerung mit übertragbarem Grundfreibetrag ein. So wirken wir alten Geschlechterrollen in der Steuerpolitik entgegen.",
+      "ursachen_ids": [
+        2803
+      ],
+      "pruefsumme": "b4c55947188e9baf"
+    },
+    {
+      "kennung": "M73",
+      "ebene": "land",
+      "beschreibung": "Sorgearbeit aufwerten; wer Kranke pflegt, soll dadurch keinen Nachteil erleiden.",
+      "zitat": "Wir wollen: […] die Sorgearbeit aufwerten. Wer Kranke pflegt, soll deswegen keinen Nachteil erleiden, sondern ein abgesichertes Leben führen können.",
+      "ursachen_ids": [
+        2803
+      ],
+      "pruefsumme": "97eac962e27b9401"
+    },
+    {
+      "kennung": "M74",
+      "ebene": "bund",
+      "beschreibung": "Rentenpunkte-Splitting für Paare bei Erwerbsunterbrechungen durch Carearbeit, gegen Altersarmut von Frauen.",
+      "zitat": "Zur Bekämpfung von Altersarmut bei Frauen möchten wir, dass Paare bei Erwerbsunterbrechungen aufgrund von Carearbeit standardisiert die Möglichkeit des Rentenpunkte-Splittings wahrnehmen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2802
+      ],
+      "pruefsumme": "684a5b013ba903d7"
+    },
+    {
+      "kennung": "M75",
+      "ebene": "bund",
+      "beschreibung": "Elterngeld: Mindest- und Höchstbetrag anheben, Ersatzrate für geringe Einkommen erhöhen",
+      "zitat": "Den Mindest- und Höchstbetrag, der seit der Einführung des Elterngeldes im Jahr 2007 unverändert ist, wollen wir auf 500 bzw. 2.400 Euro erhöhen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2801
+      ],
+      "pruefsumme": "2b98e3e8a045ba8c"
+    },
+    {
+      "kennung": "M76",
+      "ebene": "bund",
+      "beschreibung": "Die Gleichwertigkeit aller Betreuungsmodelle im Familienrecht und in der Beratung deutlich machen.",
+      "zitat": "Die Gleichwertigkeit aller Betreuungsmodelle muss im Familienrecht und in der Beratung deutlich werden.",
+      "ursachen_ids": [
+        2803
+      ],
+      "pruefsumme": "0b7cbc0d7c42cf83"
+    },
+    {
+      "kennung": "M77",
+      "ebene": "bund",
+      "beschreibung": "Nach Trennung sollen Kinder möglichst abwechselnd bei beiden Eltern leben (Wechselmodell als Regelfall)",
+      "zitat": "Nach Trennung sollten Kinder möglichst abwechselnd bei beiden Eltern leben und den Alltag mit beiden Eltern teilen (Wechselmodell als Regelfall)",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2801
+      ],
+      "pruefsumme": "9e8914fcd37f095c"
+    },
+    {
+      "kennung": "M78",
+      "ebene": "bund",
+      "beschreibung": "Mehr Einfluss der Beschäftigten, vor allem Frauen, auf Lage und Dauer der Arbeitszeit",
+      "zitat": "Die Erwerbsmöglichkeiten für Frauen verbessern wir durch gleiche Löhne und mehr Zeitsouveränität. Sie sollen mehr Einfluss nehmen können auf Lage und Dauer ihrer Arbeitszeit, um eine bessere Vereinbarkeit von Erwerbstätigkeit und Familie und eine gerechte Aufteilung von Sorgearbeit zwischen den Geschlechtern zu ermöglichen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2802
+      ],
+      "pruefsumme": "78bed01ce73d18b0"
+    },
+    {
+      "kennung": "M79",
+      "ebene": "land",
+      "beschreibung": "Vereinen und Organisationen, die sich an Agitation gegen traditionelle Rollenbilder beteiligen, öffentliche Förderung und Steuervergünstigungen entziehen.",
+      "zitat": "Dieser pervers-linke, radikal feministische und individualistische Ungeist zersetzt dabei nicht nur traditionelle Familien- und Rollenbilder […] Um dem entgegenzusteuern, werden wir Vereinen und Organisationen, die sich an solcher Agitation beteiligen, jede Form öffentlicher Förderung und steuerlicher Vergünstigung entziehen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2803
+      ],
+      "pruefsumme": "1dcce440d5ec5c55"
+    },
+    {
+      "kennung": "M80",
+      "ebene": "land",
+      "beschreibung": "Frauen in Führungspositionen gezielt fördern, etwa durch Mentoring und Teilzeitführung",
+      "zitat": "Frauen in Führungspositionen gezielt fördern, etwa durch Mentoringprogramme und die Möglichkeit der Teilzeitführung.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2803
+      ],
+      "pruefsumme": "be308e96baa9889f"
+    },
+    {
+      "kennung": "M81",
+      "ebene": "bund",
+      "beschreibung": "Recht auf vorübergehende Verkürzung der Arbeitszeit für alle Beschäftigte (Teilzeit nach Wunsch).",
+      "zitat": "Alle Beschäftigten brauchen das Recht auf vorübergehende Verkürzung ihrer Arbeitszeiten […]",
+      "ursachen_ids": [
+        2802
+      ],
+      "pruefsumme": "f0fc346d49d4a026"
+    },
+    {
+      "kennung": "M82",
+      "ebene": "bund",
+      "beschreibung": "Steuerliche Begünstigung von Arbeitgeberprämien für Ausweitung der Arbeitszeit von Teilzeitbeschäftigten",
+      "zitat": "Wir werden einen neuen steuerlichen Anreiz zur Ausweitung der Arbeitszeit von Teilzeitbeschäftigten schaffen: Wenn Arbeitgeber eine Prämie für die Ausweitung der Arbeitszeit zahlen, werden wir diese Prämie steuerlich begünstigen.",
+      "ursachen_ids": [
+        2802
+      ],
+      "pruefsumme": "5e9d480ce09846b9"
+    },
+    {
+      "kennung": "M83",
+      "ebene": "land",
+      "beschreibung": "Gleichstellungsfördernde und geschlechtergerechte Strukturen entwickeln, um einen Kulturwandel für Chancengerechtigkeit von Frauen und Männern zu befördern",
+      "zitat": "Gemeinsam mit den Universitäten in [Land] und [Land] haben wir das Ziel festgeschrieben, gleichstellungsfördernde und geschlechtergerechte Strukturen auf zentraler und dezentraler Ebene zu entwickeln, um den erforderlichen Kulturwandel für mehr Chancengerechtigkeit von Frauen und Männern zu befördern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2803
+      ],
+      "pruefsumme": "ae1a1ec9baccf93e"
+    },
+    {
+      "kennung": "M84",
+      "ebene": "bund",
+      "beschreibung": "Familienbudget zur Förderung haushaltsnaher Dienstleistungen für Familien",
+      "zitat": "Mit einem jährlichen Familienbudget für Alltagshelfer wollen wir sozialversicherungspflichtige haushaltsnahe Dienstleistungen direkt fördern und einfach digital zugänglich machen.",
+      "ursachen_ids": [
+        2801
+      ],
+      "pruefsumme": "bbcb5117a7486a44"
+    },
+    {
+      "kennung": "M85",
+      "ebene": "bund",
+      "beschreibung": "Anerkennung von Erziehungs- und Pflegezeiten in der Rente stärken",
+      "zitat": "Wir stärken die Anerkennung von Erziehungs- und Pflegezeiten in der Rente und schaffen eine faire Absicherung für alle Lebensphasen.",
+      "ursachen_ids": [
+        2803
+      ],
+      "pruefsumme": "f4174ba6ca758dd7"
+    },
+    {
+      "kennung": "M86",
+      "ebene": "bund",
+      "beschreibung": "Abschaffung der Steuerklassen 3 und 5, um die ökonomische Freiheit von Frauen zu stärken.",
+      "zitat": "Die ökonomische Freiheit von Frauen stärken wir durch bessere steuerliche Regelungen, insbesondere durch die Abschaffung der Steuerklassen 3 und 5, für die wir uns weiterhin einsetzen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2802
+      ],
+      "pruefsumme": "e07bb31f4bc1e7df"
+    }
+  ]
+}

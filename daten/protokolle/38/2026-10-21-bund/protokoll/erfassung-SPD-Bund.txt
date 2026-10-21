@@ -1,0 +1,42 @@
+{
+  "partei_id": 12,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Versicherungsfremde Aufgaben im Gesundheitswesen aus Steuermitteln finanzieren", "ursachen_ids": [3802], "buendel": "Steuerfinanzierung versicherungsfremder Leistungen", "zitat": "Versicherungsfremde Aufgaben im Gesundheitswesen wollen wir zukünftig ausreichend aus Steuermitteln finanzieren.", "seite": 29 },
+    { "beschreibung": "Krankenkassen und private Versicherungen in einem solidarischen System zusammenführen", "ursachen_ids": [3801], "zitat": "Krankenkassen und private Krankenversicherungen bilden so ein System einer solidarischen Bürgerversicherung aus, an dem alle beteiligt sind", "seite": 29 },
+    { "beschreibung": "Finanzausgleich zwischen Krankenkassen gerechter gestalten und private Versicherungen einbeziehen", "ursachen_ids": [], "ursachen_offen": [3801], "neue_buendel": [{ "ursache": 3801, "name": "Finanzausgleich zwischen Krankenkassen gerechter gestalten", "seite": 29 }], "zitat": "Der Finanzausgleich zwischen den Krankenkassen soll gerechter ausgestaltet werden, und auch die privaten Versicherungen sollen zum Risikostrukturausgleich beitragen.", "seite": 29 },
+    { "beschreibung": "Beiträge stärker an der wirtschaftlichen Leistungsfähigkeit der Versicherten ausrichten", "ursachen_ids": [3801], "zitat": "Die Beiträge der Versicherten sollen sich noch stärker als jetzt an ihrer wirtschaftlichen Leistungsfähigkeit orientieren.", "seite": 29 },
+    { "beschreibung": "Weitere Strukturreformen für die Versorgungssicherheit, auch in strukturschwachen Regionen", "ursachen_ids": [], "ursachen_offen": [3801], "zitat": "Diesen erfolgreichen Kurs werden wir fortführen und die Versorgungssicherheit durch weitere Strukturreformen verbessern, insbesondere um die medizinische Versorgung in strukturschwachen Regionen zu sichern.", "seite": 29 },
+    { "beschreibung": "Budgets für Hausärztinnen und Hausärzte abschaffen", "ursachen_ids": [3801], "zitat": "Bei den ärztlichen Berufen wollen wir den Schwerpunkt auf die Haus- und Kinderärztinnen und -ärzte legen und den Ausbau der Ausbildungs- und Weiterbildungskapazitäten vorantreiben sowie die Budgets für Hausärztinnen und -ärzte abschaffen.", "seite": 32 },
+    { "beschreibung": "Termingarantie bei Krankenkassen und Kassenärztlichen Vereinigungen einführen", "ursachen_ids": [], "ursachen_offen": [3801], "zitat": "Um Wartezeiten zu verringern, werden wir eine Termingarantie der Krankenkassen und Kassenärztlichen Vereinigungen einführen.", "seite": 29 },
+    { "beschreibung": "Krankenkassen sollen größere Mengen in Deutschland hergestellter Therapien einkaufen dürfen", "ursachen_ids": [3801], "zitat": "Krankenkassen sollen zusammen mit anderen nationalen und europäischen Akteuren größere Mengen an Therapien über längere Zeiträume einkaufen dürfen, wenn diese bei uns hergestellt werden.", "seite": 30 },
+    { "beschreibung": "Begrenzung finanzieller Belastungen der Versicherten als Teil der Sicherheit im Gesundheitswesen", "ursachen_ids": [], "ursachen_offen": [3804], "zitat": "Mit Maßnahmen wie einer Termingarantie, der Begrenzung finanzieller Belastungen und solidarischen Finanzierungsmodellen sorgen wir für mehr Sicherheit und Verlässlichkeit im Gesundheitswesen.", "seite": 28 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3803, "seiten": [28, 29, 30, 32], "grund": "Kap. 10 und 11 gelesen. Keine Zusage zu Rücklagen, Mindestreserve oder zum Zusatzbeitrag. Die Beitragsreduzierung bei Verletzung der Termingarantie (S. 29) betrifft keine Rücklagen und keine Satzfestlegung." }
+  ],
+  "neue_buendel": [
+    { "ursache": 3801, "name": "Finanzausgleich zwischen Krankenkassen gerechter gestalten", "seite": 29 }
+  ]
+}
+
+Protokoll (Teilauftrag 38, Krankenkasse: Beiträge und Leistungen)
+
+Gelesen: Inhaltsverzeichnis (S. 3); Kap. 5 Finanzpolitik (S. 14, 19, Fundstellen); Kap. 10 Gesundheit (S. 28 bis 30); Kap. 11 Pflege (S. 31, 32, Fundstelle). S. 1, 2, 67, 68 ohne Text.
+
+Zu den Ursachen:
+- 3801 (Ausgaben, Einnahmebasis): Versichertenkreis und Bürgerversicherung (S. 29), Beitragsbemessung nach Leistungsfähigkeit (S. 29), Finanzausgleich und private Versicherungen im RSA (S. 29, offen), Strukturreformen (S. 29, offen), Termingarantie (S. 29, offen), Budgets Hausärzte (S. 32), Einkaufsmacht Arzneimittel (S. 30). Weitere gleichartige Stelle: Entbudgetierung der Hausärzte (S. 29, „vorbereitet“, „möchten künftig umsetzen“) gleicher Hebel wie S. 32, dort erfasst.
+- 3802 (versicherungsfremde Leistungen, Steuerfinanzierung): S. 29 erfasst. S. 14 („Bürgergeld ist eine steuerfinanzierte Grundsicherung“) ist Beschreibung ohne Zusage zur GKV. S. 31 Steuermittel für Pflege: keine GKV-Leistung (Leitfaden R1 schließt Pflegeversicherung aus).
+- 3803 (Rücklagen, Zusatzbeitrag): keine Zusage (siehe nicht_erfasst).
+- 3804 (Zuzahlungen, Belastungsgrenze): nur S. 28 „Begrenzung finanzieller Belastungen“ als offene Zusage. Keine Zusage zu Zuzahlungen bei Krankenhaus, Heilmitteln oder Fahrkosten, keine Belastungsgrenze. S. 31 Pflegekosten-Deckel gehört zur Pflege (R4 schließt Pflegeeigenanteile aus).
+
+Nicht erfasst:
+- S. 19: Einkommen aus Kapital und Soli (Einkommensteuer): keine GKV-Einnahmebasis, kein Bezug zur Beitragsbemessung.
+- S. 28: Leistungsverschlechterungen werden abgelehnt; Effizienz und Qualität verbessern (Ziel, Ausgaben nicht konkretisiert).
+- S. 29: einheitliches und einfaches Vergütungssystem als Ziel („Unser Ziel ist“); Notfallversorgung, Rettungsdienst, Telemedizin ohne Kostenbezug.
+- S. 29: Beitragsreduzierung bei verpasster Termingarantie (keine Ursache 3803 oder 3801 nach Leitfaden).
+- S. 30: Digitalisierung, KI-Dokumentation und elektronische Patientenakte: keine Ausgabenzusage.
+- S. 31, 32: Pflegeversicherung (Steuermittel, Pflegekosten-Deckel, Risikostrukturausgleich der privaten Pflegeversicherung): Pflege ist nicht GKV (Leitfaden R1 und R4).
+
+Richtungen ohne Maßnahme: 3803 „Rücklagenregeln ändern“ und „Zusatzbeitrag an Bedarf binden“; 3804 „Zuzahlungen senken oder abschaffen“ (nur die offene Begrenzung), „Zuzahlungen erhöhen oder steuern“; 3802 „Beitragsfreie Mitversicherung einschränken“.
+Seiten ohne Text, für das Ergebnis nicht relevant: 1, 2, 67, 68.

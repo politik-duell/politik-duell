@@ -1,0 +1,24 @@
+{
+  "partei_id": 16,
+  "land": "ST",
+  "massnahmen": [],
+  "keine_massnahme": "Kapitel Katastrophen- und Bevölkerungsschutz (S. 130–133) gelesen, dazu Kapitel Innenpolitik-Einstieg und Stichwortsuche. Nichts zu Sirenen, MoWaS, Warn-Apps, Cell Broadcast oder Lücken im Warnweg; Leuchttürme und Selbstvorsorge (S. 131) betreffen Schutzorte und Vorbereitung, keine Warnung.",
+  "nicht_erfasst": [
+    { "ursache": 4102, "seiten": [130, 131, 132, 133], "grund": "Gelesen: Katastrophenschutz, Eigenvorsorge, Leuchttürme, Feuerwehr, Standards. Keine Zusage zu Sirenen, Warnsystem, Auslösung über MoWaS, Warn-Apps oder Cell Broadcast. Risikoabschätzungen und Informationen zur Selbstvorsorge (S. 131) sind keine Warnwege." }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis (S. 1–8), Kapitel 17 „Innenpolitik“, Abschnitt „Katastrophenschutz und Bevölkerungsschutz“ (S. 130–133). Stichwortsuche im ganzen Text nach Warn-, Sirenen-, Alarm-, Cell-Broadcast-, MoWaS-, Funk-, Benachrichtigungs- und Hochwasserbegriffen: keine Treffer zu Warnsystemen.
+
+Richtungen ohne Maßnahme: „Sirenen ausbauen und an das Warnsystem anbinden“ und „Warn-Apps und Cell Broadcast statt Sirenen“ – Begriffe im Text nicht gefunden (Bündel im Text gesucht, S. 130–133).
+
+Nicht erfasst (Seite, Grund):
+- S. 131: Öffentliche Risikoabschätzungen zu Hochwassergefahren und Information zur Selbstvorsorge (72 Stunden) – Information und Vorsorge, keine Warnung; Warnungen bei Hochwasser gehören zu T18 und kämen nur als ursachen_offen hierher, hier fehlt aber jede Warnzusage.
+- S. 131: Katastrophenschutz-Leuchttürme in den Wohnorten, wo Menschen Hilfe und Informationen erhalten – Schutzorte und Anlaufstellen (nach Leitfaden zu 1), keine Warnung.
+- S. 130–132: Feuerwehr, THW, Rettungsdienste, Amtshilfekosten, Feuerwehrfinanzierung – Einsatzkräfte und Finanzierung, keine Warnwege.
+- S. 132: Besonders schutzbedürftige Einrichtungen (Personalschulung, Evakuierungsrouten, Notstrom) – Schutz von Einrichtungen, nicht Warnung.
+
+Seiten ohne Text: keine relevanten (Auftrag: 1 Seite fast ohne Text, Titelseite).
+Stand im PDF: Titelseite „Beschluss … am 14. März 2026“, wie im Auftrag.

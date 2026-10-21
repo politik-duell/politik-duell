@@ -1,0 +1,72 @@
+{
+  "partei_id": 16,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Selbstgenutztes Wohneigentum bei Erbschaften bis 200 Quadratmeter von der Erbschaftsteuer befreien.",
+      "ursachen_ids": [3903],
+      "buendel": "Vermögensübertragung in der Familie erleichtern",
+      "zitat": "Pro Erbschaft wollen wir eine Immobilie mit bis zu 200 Quadratmetern von der Erbschaftsteuer befreien, wenn sie selbst genutzt wird.",
+      "seite": 11
+    },
+    {
+      "beschreibung": "Steuersätze für Erbschaften und Schenkungen bei Superreichen erhöhen und persönliche Freibeträge senken; selbstgenutztes Wohneigentum bleibt freigestellt.",
+      "ursachen_ids": [3903],
+      "buendel": "Erbschaftsteuer erhöhen (Gegenrichtung)",
+      "zitat": "Für diese Superreichen sollen die Steuersätze für Erbschaften und Schenkungen erhöht und die persönlichen Freibeträge heruntergesetzt werden.",
+      "seite": 11
+    },
+    {
+      "beschreibung": "Grunderwerbsteuer auch auf anteilige Immobilienkäufe (Anteilskäufe, Share Deals) erheben.",
+      "ursachen_ids": [],
+      "ursachen_offen": [3904],
+      "zitat": "Wir fordern eine Reform der Grunderwerbsteuer, sodass anteilige Immobilienkäufe (ab über 50 Prozent) entsprechend anteilig besteuert werden.",
+      "seite": 11
+    },
+    {
+      "beschreibung": "Leistungslose Bodenwertzuwächse abschöpfen, um Spekulation mit Bauland zu bremsen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [3901],
+      "zitat": "Keine Spekulation mit Wohnraum und Bauland! Wir wollen Zweckentfremdung von Wohnraum verbieten und dem Profitstreben mit Grund und Boden entgegenwirken: Leistungslose Bodenwertzuwächse sollen in einem ersten Schritt abgeschöpft werden.",
+      "seite": 9
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 3904, "name": "Grunderwerbsteuer bei Anteilskäufen erheben", "seite": 11 },
+    { "ursache": 3901, "name": "Bodenwertzuwächse abschöpfen", "seite": 9 }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 3902,
+      "seiten": [9],
+      "grund": "Kapitel 2 (S. 8–10) gelesen. Baukosten nur mit dem Prüfauftrag „Wir wollen Regulierungen überprüfen“ (S. 9) und Zusagen zum gemeinnützigen Mietwohnungsbau (Kapitel 2, Ursache T2) berührt; keine Zusage zu Bauvorgaben oder Baukosten beim Eigentumserwerb."
+    },
+    {
+      "ursache": 3905,
+      "seiten": [9, 13, 14],
+      "grund": "Kapitel 2, 3 (S. 8–14) gelesen. Keine Zusage zu Zinsen, Tilgung oder Laufzeit von Baukrediten. Leitzins-Passagen (S. 13) betreffen das Mandat der EZB, der Dispozinsdeckel (S. 14) betrifft Konsumkredite und keine Baufinanzierung."
+    }
+  ]
+}
+
+Protokoll (Linke, Bund, Thema 39)
+
+Gelesen: Inhaltsverzeichnis (S. 1–6); Kapitel 2 Wohnen (S. 8–10); Kapitel 3 Umsteuern (S. 10–14, Fundstellen S. 2 nur Inhaltsverzeichnis, S. 11, S. 13, S. 14). Seiten 1, 59, 60 ohne Text, nicht betroffen.
+
+Nicht erfasst:
+- S. 8: Mietpreisbremse, Mietendeckel, Kündigungsschutz, Wohngeld, Modernisierungsumlage, Heizkosten: Mietwohnungen (Thema 2), nicht Ursache 3901–3905.
+- S. 9: Investitionsoffensive gemeinnütziger Wohnungsbau, Vorkaufsrecht, Enteignung großer Wohnungsbestände, Wohngemeinnützigkeit, Leerstandsabgabe (Mietwohnungen, Thema 2): nicht Eigentumserwerb.
+- S. 9: Prüfauftrag „Wir wollen Regulierungen überprüfen … manche treiben lediglich die Preise in die Höhe“: Prüfung, keine Maßnahme (R2 Bauvorgaben, Ursache 3902).
+- S. 9: Gewinne aus Immobilienspekulation stärker besteuern und Share Deals verbieten: Spekulation mit Immobilien, keine Eigenheimfinanzierung; nicht erfasst (Ursachenbezug nur über Grundstückspreise, siehe Maßnahme 4 bei Bodenwert).
+- S. 10: Vermögensteuer mit Freibetrag für Privatvermögen, abzüglich Schulden wie Hypotheken auf ein Eigenheim: Steuer auf Vermögen, kein Ursachenbezug zu Eigenkapital oder Nebenkosten.
+- S. 11: Steuervorteile für Immobilieninvestor*innen flächendeckend abschaffen: Investoren, nicht Eigenheimerwerb.
+- S. 11: Einfache Freibeträge von 200.000 Euro und Begünstigung von Personen freier Wahl bei Erbschaften: gleicher Hebel wie Maßnahme 1 (Vermögensübertragung), gleichartig, daher nicht gesondert erfasst.
+- S. 11: Schlupflöcher bei der Erbschaftsteuer schließen (Unternehmensvermögen, große Wohnungsbestände): gleicher Hebel wie Maßnahme 2 (Gegenrichtung), gleichartig, nicht gesondert erfasst.
+- S. 13: EZB-Mandat erweitern, Staatsfinanzierung durch die EZB, Krisen: keine Zusage zu Bauzinsen oder Kreditraten (R5).
+- S. 13: Abschaffung der Schuldenbremse, Investitionen in Infrastruktur: keine Ursache dieses Themas.
+- S. 14: Dispozinsdeckel (5 Prozentpunkte über dem Leitzins): Konsumkredit, nicht Baufinanzierung (R5).
+- S. 14: Digitaler Euro, Finanztransaktionssteuer, Banken verkleinern: kein Ursachenbezug.
+
+Richtungen ohne Maßnahme: 3901 „Mehr Bauland ausweisen“, „Planungs- und Genehmigungsverfahren beschleunigen“, „Flächenschutz, weniger Neuausweisung“ (im Text nicht gefunden; Bauland-Aussagen nur als Spekulationsabwehr, Maßnahme 4). 3902 alle Richtungen (siehe JSON nicht_erfasst). 3903 „Eigenkapital durch Förderdarlehen ersetzen“, „Sparen für Eigenkapital fördern“, „Eigenkapitalanforderung der Banken“ (nicht im Text). 3904 „Notar- und Grundbuchkosten senken“, „Maklerprovision begrenzen“, „Grunderwerbsteuer senken oder Freibetrag einführen“ (nicht im Text; die Grunderwerbsteuer-Zusage in Maßnahme 3 verschärft statt senkt). 3905 „Zinsen senken über den Leitzins“, „Zinsverbilligung und Förderdarlehen“, „Tilgung und Zinsbindung anpassen“ (nicht im Text, siehe JSON nicht_erfasst).
+
+Hinweis: Der Text nennt keinen anderen Stand als der Auftrag (2025-01-18).

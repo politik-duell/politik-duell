@@ -1,0 +1,41 @@
+{
+  "partei_id": 12,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Genehmigungsfiktion: Anträge gelten nach Fristablauf als genehmigt, auch für Bau- und Investitionsprojekte", "ursachen_ids": [3901], "buendel": "Planungs- und Genehmigungsverfahren beschleunigen", "zitat": "Wir führen eine Genehmigungsfiktion ein, bei der Anträge automatisch genehmigt sind, wenn die Behörde nicht innerhalb einer gesetzten Frist reagiert. Das gibt Bau- und Investitionsprojekten mehr Planungssicherheit.", "seite": 38 },
+    { "beschreibung": "Kommunen beim Aufbau von Bodenfonds unterstützen", "ursachen_ids": [], "ursachen_offen": [3901], "zitat": "Um eine langfristige und nachhaltige Stadtentwicklung zu ermöglichen, müssen Kommunen beim Aufbau von Bodenfonds unterstützt werden.", "seite": 22 },
+    { "beschreibung": "Vorkaufsrecht für Kommunen stärken", "ursachen_ids": [], "ursachen_offen": [3901], "zitat": "Das Vorkaufsrecht für Kommunen muss gestärkt werden.", "seite": 22 },
+    { "beschreibung": "Einheimischen-Modelle und Konzeptvergaben bei der Vergabe von Bauland stärken", "ursachen_ids": [], "ursachen_offen": [3901], "zitat": "Um eine soziale und demografische Stabilität in den Gemeinden zu gewährleisten, sollen außerdem Einheimischen-Modelle und Konzeptvergaben bei der Vergabe von Bauland gestärkt werden.", "seite": 22 },
+    { "beschreibung": "Vereinfachte Baustandards wie den Gebäudetyp E weiterentwickeln", "ursachen_ids": [3902], "buendel": "Bauvorgaben vereinfachen und vereinheitlichen", "zitat": "Vereinfachte Baustandards wie der Gebäudetyp E müssen weiterentwickelt werden.", "seite": 22 },
+    { "beschreibung": "Serielles und modulares Bauen fördern", "ursachen_ids": [3902], "buendel": "Serielles und Typenbau fördern", "zitat": "Im seriellen und modularen Bauen stecken große Potenziale, die wir heben wollen.", "seite": 22 },
+    { "beschreibung": "Barrierefreiheit als Standard in der Förderung verankern", "ursachen_ids": [], "ursachen_offen": [3902], "neue_buendel": [{ "ursache": 3902, "name": "Barrierefreiheit als Standard in der Förderung", "seite": 22 }], "zitat": "Barrierefreiheit soll als Standard stärker in der Fördersystematik verankert werden.", "seite": 22 },
+    { "beschreibung": "Freibeträge bei Erbschaft und Schenkung erhöhen", "ursachen_ids": [3903], "buendel": "Vermögensübertragung in der Familie erleichtern", "zitat": "Die Erbschaft- und Schenkungsteuer in ihrer heutigen Form ist nicht gerecht […] Die persönlichen Freibeträge wollen wir erhöhen, um den Vermögenspreissteigerungen seit der letzten Anpassung Rechnung zu tragen.", "seite": 19 },
+    { "beschreibung": "Mindestbesteuerung für große Betriebsvermögen bei Erbschaft und Schenkung", "ursachen_ids": [3903], "buendel": "Erbschaftsteuer erhöhen (Gegenrichtung)", "zitat": "Innerhalb des bestehenden progressiven Steuertarifs führen wir eine effektive Mindestbesteuerung für große Betriebsvermögen ein, die auch für vermögenshaltende Familienstiftungen gilt.", "seite": 19 },
+    { "beschreibung": "Förderprogramm Jung kauft Alt verstetigen und ausbauen, mit zinsgünstigen Krediten für junge Familien", "ursachen_ids": [3905], "buendel": "Zinsverbilligung und Förderdarlehen", "zitat": "Das Programm „Jung kauft Alt“ wollen wir verstetigen und ausbauen. […] Durch zinsgünstige Kredite und Zuschüsse zur energetischen Sanierung bekommen sie die Chance, sich ihren Traum zu erfüllen.", "seite": 22 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3904, "seiten": [19, 22], "grund": "Kap. 5 und 6 gelesen. Keine Zusage zu Grunderwerbsteuer, Notar- und Grundbuchkosten oder Maklerprovision beim Kauf." }
+  ],
+  "neue_buendel": [
+    { "ursache": 3902, "name": "Barrierefreiheit als Standard in der Förderung", "seite": 22 }
+  ]
+}
+
+Protokoll (Teilauftrag 39, Wohneigentum)
+
+Gelesen: Inhaltsverzeichnis (S. 3); Kap. 5 Finanzpolitik (S. 16 bis 19); Kap. 6 Bezahlbares Zuhause (S. 20 bis 22). Fundstelle S. 38 (Genehmigungsfiktion, Kap. 14). S. 1, 2, 67, 68 ohne Text.
+
+Zu den Ursachen:
+- 3901 (Flächen, Planung): Genehmigungsfiktion (S. 38, erfasst mit Bündel „Planungs- und Genehmigungsverfahren beschleunigen“). Gleichartig und nicht separat erfasst: S. 20 („Planungs- und Genehmigungsverfahren beschleunigen“) und S. 22 (Digitalisierung der Bauverwaltung, „Verfahren beschleunigt“). Bodenfonds, Vorkaufsrecht, Einheimischen-Modelle und Konzeptvergaben (S. 22) als offene Grenzfälle (Grundstückspreise, Spekulation nach Leitfaden nur offen).
+- 3902 (Baukosten): Gebäudetyp E (S. 22), serielles und modulares Bauen (S. 22), Barrierefreiheit als Standard (S. 22, offen). Weitere gleichartige Stelle: Bürokratieabbau im Bau (S. 22), zum Verfahren 3901.
+- 3903 (Eigenkapital): Freibeträge bei Erbschaft und Schenkung (S. 19, Bündel „Vermögensübertragung in der Familie erleichtern“), Mindestbesteuerung für Betriebsvermögen (S. 19, Bündel „Erbschaftsteuer erhöhen (Gegenrichtung)“). Das selbst genutzte Familienheim bleibt unangetastet (S. 19): Bekenntnis zum Bestand, nicht erfasst.
+- 3904 (Erwerbsnebenkosten): nichts gefunden (siehe nicht_erfasst). Die Spekulationsfrist bei Immobilienverkauf (S. 19) betrifft die Einkommensteuer auf Verkaufsgewinne, nicht die Kaufnebenkosten.
+- 3905 (Kreditrate): „Jung kauft Alt“ mit zinsgünstigen Krediten (S. 22, erfasst mit Bündel „Zinsverbilligung und Förderdarlehen“). Mietpreisbremse, Wohngeld, Mietwohnungsbau (S. 20, 21, 22) betreffen Miete und gehören zu Thema 2, nicht zu diesem Thema.
+
+Nicht erfasst:
+- S. 19: Finanztransaktionssteuer, Einkommen aus Kapital: keine Ursache dieses Themas.
+- S. 21: Investitionskostenzuschuss für Mietwohnungsneubau (Wohngemeinnützigkeit): Leitfaden R2 ordnet Baukosten im Mietwohnungsneubau Thema 2 zu; auch hebel_nicht_gefunden „Baukosten über Zuschüsse senken“.
+- S. 22: Bündnis bezahlbarer Wohnraum, Trendwende in der Bodenpolitik (Ziel).
+
+Richtungen ohne Maßnahme: 3901 „Mehr Bauland ausweisen“ und „Flächenschutz, weniger Neuausweisung“ (keine Zusage zu Ausweisung oder Flächenschutz; Bodenpolitik nur offen). 3902 „Energievorgaben lockern“, „Baukosten über Zuschüsse senken“ (nur Mietwohnungsbau), „Strengere Standards (Energie, Brandschutz)“ (nur Barrierefreiheit, siehe neue_buendel). 3903 „Eigenkapital durch Förderdarlehen ersetzen“, „Sparen für Eigenkapital fördern“, „Eigenkapitalanforderung der Banken“, „Erbschaftsteuer“ bereits erfasst. 3904 alle fünf Richtungen. 3905 „Zinsen senken über den Leitzins“, „Tilgung und Zinsbindung anpassen“.
+Seiten ohne Text, für das Ergebnis nicht relevant: 1, 2, 67, 68.

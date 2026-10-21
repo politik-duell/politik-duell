@@ -1,0 +1,57 @@
+{
+  "partei_id": 17,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Aus- und Fortbildung der Polizei in Akademien und Trainingszentren ausbauen",
+      "ursachen_ids": [3402],
+      "buendel": "Kommunikation und Fortbildung der Polizei",
+      "zitat": "Wir fordern eine solide Ausstattung der Polizei mit modernen Einsatzmitteln und IT […] Dabei setzen wir auf exzellente Aus- und Fortbildung in Akademien und Trainingszentren.",
+      "seite": 35
+    },
+    {
+      "beschreibung": "Befugnisse mit hoher Eingriffstiefe (KI-gestützte Datenauswertung, automatisierter Datenabgleich) nur dort zulassen, wo es erforderlich ist",
+      "ursachen_ids": [],
+      "ursachen_offen": [3401],
+      "zitat": "Ermächtigungsgrundlagen mit besonders hoher Eingriffstiefe – wie die KI-basierte Auswertung von Bestandsdaten oder der automatisierte Datenabgleich – sind nur da erforderlich, wo unsere Gesellschaft vor extremistischen, terroristischen oder anderen schwersten Straftaten geschützt werden muss.",
+      "seite": 35
+    },
+    {
+      "beschreibung": "Vollstreckungsbeamte, Rettungskräfte und medizinisches Personal durch schnellere Anklagen und Strafvollstreckung besser schützen",
+      "ursachen_ids": [],
+      "ursachen_offen": [3402],
+      "buendel": "Handlungsfähigkeit und Rückhalt der Polizei",
+      "zitat": "Wir wollen Vollstreckungsbeamte, Rettungskräfte und medizinisches Personal vor verbalen und tätlichen Angriffen durch schnellere Anklagen und Strafvollstreckungen besser schützen.",
+      "seite": 35
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 3401, "name": "Begrenzung von Befugnissen (Datenauswertung)", "seite": 35 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3403, "seiten": [12, 36], "grund": "Treffer S. 12 betrifft die Kennzeichnung von Produkten, nicht die Polizei. S. 36 nennt die parlamentarische Aufsicht über den Verfassungsschutz, das sind keine Polizeikontakte. Keine Beschwerdestelle, keine Kennzeichnung und keine Dokumentationspflicht bei Polizeieinsätzen." }
+  ]
+}
+
+Protokoll (BSW, Bund, Thema 34 „Umgang der Polizei mit jungen Menschen“)
+
+Gelesen: Kapitel 4 „Sicherheit gewährleisten, Freiheit schützen“ (S. 34–36) vollständig, dazu Stichwortsuche im gesamten Text (Polizei, Kontrolle, Beschwerde, Kennzeichnung). Außerhalb des Kapitels keine Polizeiaussagen. Die Treffer des Auftrags (S. 12) sind Fehltreffer.
+
+Maßnahme 1 (3402): „Dabei setzen wir auf exzellente Aus- und Fortbildung in Akademien und Trainingszentren.“ Die Ausstattung-Passage steht im selben Zitat mit […]. Weitere gleichartige Stelle zum Bündel „Kommunikation und Fortbildung der Polizei“: keine.
+
+Maßnahme 2 (3401, offen): Die Begrenzung von Befugnissen ist Teil von R1 (Regeln für Befugnisse der Polizei), aber als Grenzfall nur offen erfasst. Sie ist eine normative Begrenzung, keine konkrete Kontrollregel.
+
+Gesehen, nicht erfasst:
+- S. 35: Personal, Ausstattung und Präsenz der Polizei (S. 34–35, „Sichtbare Polizeipräsenz“, „mehr Personal“). Nach R2 gehört das zu Sicherheit, nicht zu diesem Thema.
+- S. 35: Verzicht auf Privatisierung von Sicherheitsaufgaben. Keine Polizeikontakt-Regel.
+- S. 36: parlamentarische Kontrolle des Verfassungsschutzes und Streichung des Beobachtungsbereichs „Delegitimierung des Staates“. Verfassungsschutz ist kein Polizeikontakt, daher keine Zuordnung zu 3403.
+- S. 36: Beleidigungsparagraf 188 StGB, Hausdurchsuchungen wegen Politikerbeleidigung. Keine Ursache dieses Themas.
+- S. 36: Migrationspolitik (Abschiebung, Drittstaaten). Nicht Thema.
+
+Grenzfall 3402 (offen): Schutz von Einsatzkräften vor Angriffen (S. 35) ist kein Einsatzverhalten, wurde aber als Grenzfall nach dem Bündel „Handlungsfähigkeit und Rückhalt der Polizei“ erfasst.
+
+Richtungen ohne Maßnahme: 3401 nur offen (Befugnisse); keine Regel zu anlasslosen oder verdachtsunabhängigen Kontrollen, Kontrollbescheinigung oder Kontrollorten. 3403 keine Maßnahme (siehe nicht_erfasst).
+
+Seiten ohne Text: S. 1 (Titelseite) und S. 12 (Fehltreffer), ohne Bedeutung.
+
+Stand im PDF: Titelseite „Wahlprogramm für die Bundestagswahl 2025“, kein abweichender Stand.

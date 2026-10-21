@@ -1,0 +1,187 @@
+{
+  "partei_id": 15,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Genehmigungsrecht für Ersatzbauten von Wohngebäuden im Außenbereich ermöglichen",
+      "ursachen_ids": [
+        3901
+      ],
+      "zitat": "Außerdem muss Ersatz für alte Bestandsbauten genehmigungsrechtlich im Außenbereich ermöglicht werden.",
+      "seite": 40
+    },
+    {
+      "beschreibung": "Gesetzliche Vorgaben zum Bau- und Mietrecht zurückführen, um Wohnungsbau zu erleichtern",
+      "ursachen_ids": [
+        3902
+      ],
+      "buendel": "Bauvorgaben vereinfachen und vereinheitlichen",
+      "zitat": "Ausufernde gesetzliche Vorgaben zum Bau- und Mietrecht […] Wir werden den Wohnungsbau von diesen Fesseln befreien",
+      "seite": 37
+    },
+    {
+      "beschreibung": "Gebäudeenergiegesetz abschaffen (zusammen mit EEG-Umlage und CO₂-Steuer)",
+      "ursachen_ids": [
+        3902
+      ],
+      "buendel": "Energievorgaben lockern",
+      "zitat": "Ideologiegetriebene Kosten wie EEG-Umlage, CO₂-Steuer und das Gebäudeenergiegesetz (GEG) werden wir abschaffen.",
+      "seite": 37
+    },
+    {
+      "beschreibung": "Eigenkapitalersatz für Mieter beim Kauf selbstgenutzten Wohneigentums",
+      "ursachen_ids": [
+        3903
+      ],
+      "buendel": "Eigenkapital durch Förderdarlehen ersetzen",
+      "zitat": "Mieter sollen beim Kauf von selbstgenutztem Wohneigentum z. B. durch Eigenkapitalersatz unterstützt werden.",
+      "seite": 38
+    },
+    {
+      "beschreibung": "Erbschaftsteuer und Vermögensteuer abschaffen",
+      "ursachen_ids": [
+        3903
+      ],
+      "buendel": "Erbschaftsteuer erhöhen (Gegenrichtung)",
+      "zitat": "Die AfD will die derzeit zur Erhebung ausgesetzte Vermögensteuer sowie die Erbschaftssteuer abschaffen.",
+      "seite": 61
+    },
+    {
+      "beschreibung": "Grunderwerbsteuer für selbstnutzende Käufer abschaffen, dazu Grundsteuer und Rundfunkbeitrag",
+      "ursachen_ids": [
+        3904
+      ],
+      "buendel": "Grunderwerbsteuer senken oder Freibetrag einführen",
+      "zitat": "So sind die Grunderwerbsteuer für Selbstnutzer, die Grundsteuer und der Rundfunkbeitrag (GEZ) aufzuheben",
+      "seite": 37
+    },
+    {
+      "beschreibung": "Sparerpauschbetrag auf 6.672 Euro erhöhen und an die Geringfügigkeitsgrenze koppeln",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3903
+      ],
+      "buendel": "Sparen für Eigenkapital fördern",
+      "zitat": "Die AfD will den Sparerpauschbetrag auf 6.672 Euro erhöhen und an die Geringfügigkeitsgrenze koppeln",
+      "seite": 61
+    },
+    {
+      "beschreibung": "Mieter sollen Wohnungen aus öffentlichem Wohnungsbestand zu vergünstigten Bedingungen erwerben können",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3903
+      ],
+      "zitat": "Zur Förderung der Eigentumsbildung werden wir einen Rahmen schaffen, in dem Mieter ihre Wohnungen […] zu vergünstigten Bedingungen erwerben können.",
+      "seite": 38
+    },
+    {
+      "beschreibung": "Vorrang für Einheimische bei der Vergabe von Wohnbaugrundstücken und Wohnraum",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3901
+      ],
+      "zitat": "Bei der Vergabe von Wohnbaugrundstücken und Wohnraum sind Einheimische nach dem Einheimischen-Modell zu bevorzugen.",
+      "seite": 38
+    },
+    {
+      "beschreibung": "Umwandlungshemmnisse aufheben, damit Mietwohnungen zu Eigentum werden können",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3901
+      ],
+      "zitat": "Umwandlungshemmnisse wollen wir aufheben.",
+      "seite": 38
+    },
+    {
+      "beschreibung": "Bestandsschutz: früher geltendes Baurecht bleibt für bestehende Bauvorhaben anwendbar",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3902
+      ],
+      "zitat": "Zum Schutz von Eigentum und Bestand vor veränderten Bauvorschriften muss immer das Baurecht aus dem Erstellungszeitraum anwendbar bleiben.",
+      "seite": 38
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 3905,
+      "seiten": [
+        37,
+        38,
+        39,
+        60,
+        61,
+        148
+      ],
+      "grund": "Keine Aussage zu Zinsen, Tilgung, Zinsbindung, Leitzins oder Förderdarlehen für Immobilienkredite. Ehe-Start-Kredit (S. 148) betrifft Erstanschaffungen, keine Wohnungsfinanzierung."
+    },
+    {
+      "ursache": 3904,
+      "seiten": [
+        37,
+        61
+      ],
+      "grund": "Keine Aussage zu Notar- und Grundbuchkosten, Maklerprovision, einheitlichem Grunderwerbsteuersatz oder Länder-Einnahmen. Die Erhöhung für Käufer aus Drittstaaten (S. 37) ist gleichartig zur Maßnahme mit Bündel und nur im Protokoll genannt."
+    }
+  ],
+  "eigene_synonyme": [
+    {
+      "begriff": "sparerpauschbetrag",
+      "ursache": 3903,
+      "richtung": "Sparen für Eigenkapital"
+    }
+  ],
+  "neue_buendel": [
+    {
+      "ursache": 3901,
+      "name": "Genehmigungsrecht im Außenbereich lockern",
+      "seite": 40
+    },
+    {
+      "ursache": 3903,
+      "name": "Vergünstigter Erwerb aus öffentlichem Wohnungsbestand",
+      "seite": 38
+    },
+    {
+      "ursache": 3901,
+      "name": "Vorrang für Einheimische bei Grundstücksvergabe",
+      "seite": 38
+    },
+    {
+      "ursache": 3901,
+      "name": "Umwandlung von Miet- in Eigentumswohnungen erleichtern",
+      "seite": 38
+    },
+    {
+      "ursache": 3902,
+      "name": "Bestandsschutz im Baurecht",
+      "seite": 38
+    }
+  ]
+}
+--- Protokoll ---
+
+Gelesene Seiten: Inhaltsverzeichnis (S. 1–8); Kapitel „Bauen, Wohnen, Infrastruktur, Energie, Verkehr und Digitales“ S. 37–41 (Wohneigentum S. 37–39; Baurecht und Windkraft S. 40); Kapitel „Finanzen und Steuern“ S. 60–61 (Erbschaftsteuer, Sparerpauschbetrag). S. 148 (Ehe-Start-Kredit) aus dem Kapitel Familie gelesen. S. 36 ist Kapitelseite. Fundstelle S. 81 (Agro-PV, Flächenverbrauch) nur als Snippet aus dem Auftrag gesehen: Energie-Fläche, kein Wohnbau, nicht einschlägig.
+
+Richtungen ohne Maßnahme:
+- 3901 Planung und Genehmigung beschleunigen, Mehr Bauland ausweisen, Flächenschutz: keine Zusage für Wohnbauflächen gefunden (Windkraft und Agro-PV betreffen Energie).
+- 3902 Serielles Bauen, Baukosten über Zuschüsse, strengere Standards: nicht gefunden.
+- 3903 Vermögensübertragung in der Familie: nur über die Abschaffung der Erbschaftsteuer (S. 61).
+- 3904 Notar- und Grundbuchkosten, Maklerprovision, einheitlicher Grunderwerbsteuersatz, Länder-Einnahmen: nicht gefunden.
+- 3905 alle Richtungen: nicht gefunden (siehe nicht_erfasst).
+
+Gleichartige Stellen (nicht eigene Maßnahme):
+- S. 37: Grunderwerbsteuer für ausländische Käufer mit Hauptwohnsitz außerhalb der EU auf 20 % erhöhen. Gleicher Hebel wie Bündel „Grunderwerbsteuer senken oder Freibetrag einführen“, Gegenrichtung und andere Zielgruppe. Erfasst ist die Stelle für Selbstnutzer (konkreter für Wohneigentum).
+- S. 37: Grundsteuer abschaffen (gleicher Satz, laufende Kosten, nicht Ursache 4).
+- S. 38: Wohnungsbaugenossenschaften bei der Vergabe öffentlicher Grundstücke bevorzugen: gleicher Hebel wie Einheimische-Vorrang, Zielgruppe anders.
+- S. 61 Vermögensteuer: in der Erbschaft-Maßnahme erfasst.
+
+Nicht erfasst:
+- S. 37: „Die kostentreibenden Vorschriften der EU in diesem Bereich lehnen wir ab.“ und „Baurecht muss nationales Recht bleiben“: Bekenntnis und Position ohne eigene Handlung.
+- S. 37: „Ideologiegetriebene Kosten …“ erfasst; Ziel „Wohlstand entsteht aus Wohneigentum“: Zielsatz.
+- S. 38–39: Wohngeld statt sozialem Wohnungsbau, Mietpreisbremse und Mietendeckel ablehnen: Mietrecht, kein Wohneigentum.
+- S. 40: Windkraft- und PV-Anlagen beenden: Energie, kein Wohnbau.
+- S. 148: Ehe-Start-Kredit: Erstanschaffungen, nicht 3905.
+
+Seiten ohne Text: S. 36 (Kapitelseite).
+Stand: Titelseite und Vorwort wie im Auftrag (Parteitag Januar 2025).

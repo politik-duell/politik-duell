@@ -1,0 +1,97 @@
+{
+  "partei_id": 13,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Als rechtswidrig gemeldete Hassinhalte konsequent löschen und Accounts schneller sperren; digitales Gewaltschutzgesetz.",
+      "ursachen_ids": [2502],
+      "ursachen_offen": [2501],
+      "buendel": "Plattformen verbindlich in die Pflicht nehmen",
+      "zitat": "Diese Inhalte […] müssen konsequent gelöscht und entsprechende Accounts schneller gesperrt werden. Dafür sorgen wir mit einem digitalen Gewaltschutzgesetz und stärken die Rechte der Nutzer*innen.",
+      "seite": 114
+    },
+    {
+      "beschreibung": "Medienanstalten der Länder sollen mehr Ressourcen für Löschung und Verfolgung von Hasskriminalität im Netz erhalten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2502, 2501],
+      "zitat": "Die Medienanstalten der Bundesländer müssen weitere Ressourcen erhalten, um effizient bei der Löschung und Verfolgung von Hasskriminalität im Internet und in den sozialen Medien zusammenzuarbeiten.",
+      "seite": 115
+    },
+    {
+      "beschreibung": "Strafverfolgung im digitalen Raum stärken: Login-Falle und gerichtlich angeordnete Accountsperren bei anonymen Accounts.",
+      "ursachen_ids": [2501],
+      "ursachen_offen": [2502],
+      "buendel": "Strafverfolgung von Hass und Bedrohung im Netz",
+      "zitat": "Wir stärken die effektiven Möglichkeiten der deutschen Strafverfolgungsbehörden im digitalen Raum, um gegen Organisierte Kriminalität und Hasskriminalität vorgehen zu können und bei anonymisierten Accounts, die derzeit strafrechtlich kaum verfolgt werden können, Strafverfolgung mit der Login-Falle und durch Gerichte angeordnete Accountsperren zu ermöglichen.",
+      "seite": 140
+    },
+    {
+      "beschreibung": "Hasskriminalität gegen queere Menschen bekämpfen; Erfassung verbessern, Unterstützungsangebote und Ansprechstellen ausbauen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2501],
+      "buendel": "Meldewege und Hilfe für Betroffene ausbauen",
+      "zitat": "Wir wollen den Schutz vor Diskriminierung […] Hasskriminalität gegen LSBTIQ* entschlossen bekämpfen. Dazu verbessern wir die Erfassung von queerfeindlichen Straftaten und bauen die Unterstützungsangebote sowie Ansprechstellen in Behörden und in der Justiz weiter aus.",
+      "seite": 121
+    },
+    {
+      "beschreibung": "Polizeistatistik reformieren, um Hasskriminalität besser zu erfassen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2501],
+      "zitat": "Wir reformieren die Polizeistatistik, um Hasskriminalität besser zu erfassen.",
+      "seite": 133
+    },
+    {
+      "beschreibung": "Verbreitung von Nacktbildern gegen den Willen Betroffener grundsätzlich strafbar machen (EU-Richtlinie umsetzen).",
+      "ursachen_ids": [],
+      "ursachen_offen": [2501],
+      "zitat": "Bei der Umsetzung der EU-Richtlinie zur Bekämpfung von Gewalt gegen Frauen setzen wir uns dafür ein, dass die Verbreitung von KI-generierten oder echten Nacktbildern gegen den Willen der Betroffenen grundsätzlich eine Straftat darstellt.",
+      "seite": 119
+    },
+    {
+      "beschreibung": "Antisemitismusstrategie für den digitalen Raum erarbeiten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2503],
+      "zitat": "Wir setzen uns für die Erarbeitung einer Antisemitismusstrategie für den digitalen Raum ein.",
+      "seite": 116
+    },
+    {
+      "beschreibung": "Aufbau digitaler Fähigkeiten und Medienkompetenz in Schulen.",
+      "ursachen_ids": [2503],
+      "buendel": "Prävention, Medienkompetenz und Gesprächskultur",
+      "zitat": "Außerdem setzen wir auf den Aufbau von digitalen Fähigkeiten, Medienkompetenz und auf den verantwortlichen Einsatz von Künstlicher Intelligenz (KI).",
+      "seite": 77
+    },
+    {
+      "beschreibung": "Manipulative Algorithmen sozialer Netzwerke strenger regulieren; auf Suchtwirkung ausgerichtete Algorithmen nicht zulassen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2503],
+      "buendel": "Moderation und Gestaltung der Plattformen",
+      "zitat": "Manipulative Algorithmen von Social-Media-Plattformen wollen wir strenger regulieren. Algorithmen, die gezielt darauf ausgerichtet sind, unsere Kinder süchtig zu machen, werden wir nicht dulden.",
+      "seite": 85
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 2502, "name": "Ausstattung der Medienaufsicht", "seite": 115 },
+    { "ursache": 2501, "name": "Strafbarkeit der Verbreitung von Nacktbildern ohne Zustimmung", "seite": 119 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "accountsperr", "ursache": 2502, "richtung": "Sperrung von Accounts" },
+    { "begriff": "nacktbild", "ursache": 2501, "richtung": "Verbreitung ohne Zustimmung" }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis (S. 4–7); Kapitel 3 A „Eine lebendige Demokratie“ (S. 105–121: Zusammenhalt, Erinnerung, Kommunen, Zivilgesellschaft, Ehrenamt, Sport, Justiz, digitale Bürger*innenrechte, Vielfalt, Frauenrechte, Selbstbestimmung, queeres Leben); Kapitel 3 B „Ein Leben in Sicherheit“ (S. 133–140: Polizei, Organisierte Kriminalität, Extremismus, Bevölkerungsschutz, Desinformation); Fundstellen S. 34, 77, 85, 86, 110, 113, 114, 115, 116, 121, 126, 133, 140.
+
+Nicht erfasst: S. 113 Schwerpunktstaatsanwaltschaften (komplexe Rechtsfelder allgemein, nicht Hass im Netz). S. 86 Strafverfolgung und Meldestellen bei Missbrauchsdarstellungen (sexualisierte Gewalt gegen Kinder, kein Hass oder Anfeindung). S. 115 Schutz der Meinungsfreiheit und Datenschutz-Positionen ohne Handlung gegen Hass. S. 116 Strafverfolgung antisemitischer und S. 117 islamfeindlicher Vorfälle (offline, nicht netzbezogen; gleiche Hebel wie Strafverfolgung-Bündel, dort nicht gesondert erfasst). S. 116 Beratungsstellen Antidiskriminierung (Diskriminierung, keine Anfeindung im Netz). S. 136, 140 Radikalisierung und Medienbildung gegen Extremismus und Desinformation (R2: Radikalisierung bzw. Desinformation, nicht Hass). S. 134–137 Extremismus-Prävention und Prüfaufträge („prüfen“, Vorurteilsmotivation S. 137).
+
+Weitere gleichartige Stellen (nicht gesondert erfasst, gleicher Hebel):
+- Strafverfolgung Hass und Bedrohung im Netz: S. 115 „Wir wollen, dass Straftaten auch im Netz beharrlich und rechtsstaatlich von Polizei und Staatsanwaltschaft verfolgt werden.“ (Quick-Freeze); S. 133 „Dazu zählt, dass wir polizeiliche Ermittlungen im digitalen Raum stärken.“; S. 110 „Üble Nachreden, Verleumdungen und Bedrohungen müssen … auch im Internet stärker geahndet werden.“ (Zusage nur als Ziel formuliert; zusätzlich „Wir prüfen … Impressumspflicht“ = Prüfauftrag, nicht erfasst).
+- Plattformpflichten: S. 115 „In Kooperation mit der EU wirken wir auf eine konsequente Rechtsdurchsetzung des DSA hin.“
+- Medienkompetenz (2503): S. 110 „Wir brauchen auch bundesweit mehr Anstrengungen, um die Medienkompetenzen und den kritischen Umgang der Bürger*innen mit digitalen Inhalten … zu stärken.“ (Erwachsene, allgemein); S. 126 Bibliotheken als Beitrag zur Medienkompetenz.
+- Algorithmen (2503): S. 115 „Im digitalen Raum setzen wir uns für Algorithmen sozialer Netzwerke ein, die eine vielfältige Informationslandschaft gewährleisten.“
+
+Richtungen ohne Maßnahme: keine (2501, 2502, 2503 jeweils mit Stellen belegt). Ursache 2502 bleibt bei Löschpflichten, Plattformaufsicht und Ausstattung der Medienaufsicht.
+
+Seiten ohne Text (1, 2, 3, 14, 63, 64, 101, 102, 159, 160): Seite 101/102 liegen außerhalb der Kapitel 3 A und B; ohne Relevanz.

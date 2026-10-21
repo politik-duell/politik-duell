@@ -1,0 +1,65 @@
+{
+  "partei_id": 11,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Befugnisse und Kompetenzen der Polizei erweitern",
+      "ursachen_ids": [3401],
+      "buendel": "Gezielte Kontrollen für Sicherheit ermöglichen",
+      "zitat": "Sicherheit gewährleisten durch eine sichtbare und handlungsfähige Polizei, hierzu erweitern wir ihre Kompetenzen und Befugnisse.",
+      "seite": 6
+    },
+    {
+      "beschreibung": "Videoschutz im öffentlichen Raum ausweiten, mit KI-gestützter Erkennung auffälliger Verhaltensmuster",
+      "ursachen_ids": [3401],
+      "zitat": "Zur Aufklärung und Verhinderung von Straftaten soll der Videoschutz im öffentlichen Raum ausgeweitet werden. Ergänzend dazu wollen wir einen KI-gestützten intelligenten Videoschutz landesweit ermöglichen, um auffällige Verhaltensmuster automatisiert erkennen und zusätzliche Fahndungserfolge erzielen zu können.",
+      "seite": 7
+    },
+    {
+      "beschreibung": "Gesetzliche Grundlagen für biogeographische Analyse (Haar-, Haut-, Augenfarbe, Alter) schaffen",
+      "ursachen_ids": [],
+      "ursachen_offen": [3401],
+      "zitat": "Wir sprechen uns für die Schaffung der gesetzlichen Grundlagen für die biogeographische Analyse aus.",
+      "seite": 7
+    },
+    {
+      "beschreibung": "Bodycam-Einsatz auch in Wohnungen ermöglichen, um deeskalierend zu wirken und Dokumentation zu sichern",
+      "ursachen_ids": [3403],
+      "ursachen_offen": [3402],
+      "buendel": "Dokumentation und faire Verfahren",
+      "zitat": "Der Einsatz der Bodycam soll auch in Wohnungen möglich sein, da gerade bei Fällen häuslicher Gewalt die deeskalierende Wirkung zum Schutz der vor Ort im Einsatz befindlichen Polizistinnen und Polizisten wichtig ist.",
+      "seite": 7
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 3401, "name": "Videoschutz ausbauen", "seite": 7 },
+    { "ursache": 3401, "name": "Biogeographische Analyse", "seite": 7 }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: S. 1–9 (Inhaltsverzeichnis, Vorwort, Kapitel „Sicherheit. Ordnung. Migrationswende.“ S. 4–9 vollständig); Kapitel „Entschlossener Rechtsstaat“ S. 57–60 vollständig. Fundstellen laut Auftrag: S. 5, 6, 7 (gelesen, Bodycam/Ausstattung/Befugnisse) und S. 70 (Vereinsrecht, Kennzeichnungspflicht bei Vereinsfesten – kein Polizeibezug, nicht erfasst).
+
+Zuordnung:
+- S. 6 Befugnisse: R1 ordnet Befugnisse der Polizei 3401 zu; Bündel „Gezielte Kontrollen für Sicherheit ermöglichen“ (Kontrollbefugnisse).
+- S. 7 Videoschutz: Kontrollort/Befugnis zu 3401; eigener Hebel (Überwachungstechnik), daher neue_buendel „Videoschutz ausbauen“ statt Bündel.
+- S. 7 biogeographische Analyse: Ermittlungsbefugnis mit Bezug zu Kontrollen nicht eindeutig, daher ursachen_offen 3401; eigener Hebel „Biogeographische Analyse“.
+- S. 7 Bodycam in Wohnungen: Dokumentation von Einsätzen (3403, Bündel „Dokumentation und faire Verfahren“), Deeskalation im Einsatz als Grenzfall 3402 (ursachen_offen).
+
+Weitere gleichartige Stellen (Bodycam-Einsatz, gleicher Hebel, nicht gesondert erfasst): S. 6 „konsequenter Einsatz von Bodycams“ (Wir-wollen-Liste, unkonkreter als S. 7).
+
+Nicht erfasst:
+- S. 5–6 Ausstattung der Landespolizei (Smartphones, Bodycams, Fahrzeuge, Taser, S. 6–7 „Ausstattung unserer Polizei mit Tasern“, „flächendeckend … Taser“) – nach R2 Ausstattung zu Sicherheit, nicht zu 3402.
+- S. 6 Personalaufwuchs („weit mehr als 7.000 Polizeivollzugsbeamtinnen“) und S. 6 „die Sichtbarkeit der Landespolizei in den Revieren vor Ort … erhöhen“ – Personal (Sicherheit) bzw. Ziel ohne konkrete Handlung.
+- S. 7 Datenhaus, Datenzugriff, Drohnenabwehr, Bedrohungsmanagement – Sicherheit/IT, nicht 3401–3403.
+- S. 9 Präventionsambulanzen für psychisch Erkrankte mit gewaltbereitem Verhalten – Versorgung, kein Bezug zu Einsatzpraxis.
+- S. 9 Pfefferspray für kommunale Vollzugsbedienstete – Ausstattung/Eigensicherung (Sicherheit).
+- S. 9 Institut für Brand- und Katastrophenschutz (digitale Aus- und Fortbildung) – Feuerwehr, nicht Polizei.
+- S. 7 „Die Möglichkeit, öffentliche Versammlungen sicherer zu machen …“ – Versammlungsrecht, kein Bezug zu Kontrollen oder Polizeigewalt.
+- S. 57–60 Beschleunigung und Fairness der Verfahren (Zielzeiten, „zügig, fair und rechtsstaatlich einwandfrei“) – allgemeine Justiz, kein Polizeiverfahren, keine Maßnahme zu Beschwerden oder Einstellungen mangels Tatverdachts.
+- S. 70 Kennzeichnungspflicht bei Vereinsfesten – kein Polizeibezug.
+
+Bündel ohne Maßnahme: „Kommunikation und Fortbildung der Polizei“ (3402) – gezielt nach Kommunikation, Fortbildung, Deeskalation, Ausbildung der Polizei gesucht; nur die Bodycam-Stelle (Grenzfall, S. 7) gefunden. „Handlungsfähigkeit und Rückhalt der Polizei“ (3402) – nur Ausstattung/Personal (R2 Sicherheit). „Unabhängige Beschwerde- und Kontrollstellen“ (3403) – gezielt nach Beschwerde, Ombudsstelle, unabhängiger Kontrolle, Kennzeichnung gesucht; nichts gefunden.
+Seiten ohne Text: S. 1 (Titelseite).
+Stand im PDF: Beschlossen auf dem 34. Landesparteitag am 13. Juni 2026 (entspricht dem Auftrag).

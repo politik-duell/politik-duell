@@ -1,0 +1,34 @@
+{
+  "partei_id": 12,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Flächendeckender Ausbau von Sirenen wird gefördert", "ursachen_ids": [4102], "buendel": "Sirenen ausbauen und an das Warnsystem anbinden", "zitat": "Wir wollen, dass die Menschen besser und schneller vor Gefahren gewarnt werden. Dazu werden wir den flächendeckenden Ausbau mit Sirenen weiter fördern und die bestehenden Warn-Apps verbessern.", "seite": 46 },
+    { "beschreibung": "Bestehende Warn-Apps sollen verbessert werden", "ursachen_ids": [4102], "buendel": "Warn-Apps und Cell Broadcast statt Sirenen", "zitat": "Dazu werden wir den flächendeckenden Ausbau mit Sirenen weiter fördern und die bestehenden Warn-Apps verbessern.", "seite": 46 },
+    { "beschreibung": "Zivilverteidigung stärken, um besser auf Bedrohungen vorbereitet zu sein", "ursachen_ids": [], "ursachen_offen": [4101], "neue_buendel": [{ "ursache": 4101, "name": "Zivilverteidigung stärken", "seite": 46 }], "zitat": "Zudem stärken wir die Zivilverteidigung, um auf geopolitische Bedrohungen wie hybride Angriffe oder militärische Konflikte besser vorbereitet zu sein.", "seite": 46 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 4103, "seiten": [46], "grund": "Kap. 16 gelesen (S. 46). Keine Zusage zu Notvorräten, Lebensmittelreserven, Information oder Selbsthilfe. Übungen für den Katastrophenfall (S. 46) betreffen Einsatzkräfte und Behörden, nicht Haushalte." }
+  ],
+  "neue_buendel": [
+    { "ursache": 4101, "name": "Zivilverteidigung stärken", "seite": 46 }
+  ]
+}
+
+Protokoll (Teilauftrag 41, Schutz im Krisen- und Kriegsfall)
+
+Gelesen: Inhaltsverzeichnis (S. 3); Kap. 16 Sicherheit und Bevölkerungsschutz (S. 42 bis 46, Abschnitt „Bevölkerungsschutz und Katastrophenhilfe“ auf S. 46); Kap. 21 Freiheit und Sicherheit (S. 57, 58, Stichwortsuche auf Schutz, Zivilschutz, Vorsorge, Warnung, Notfall: nichts zum Schutz der Bevölkerung); Kap. 12 Klimaschutz (S. 33 bis 36, Stichwortsuche: nur Hitze und Hochwasser, gehört zu Thema 18). S. 1, 2, 67, 68 ohne Text.
+
+Zu den Ursachen:
+- 4101 (Schutzräume, Schutzorte): nur „Zivilverteidigung stärken“ (S. 46, offen). Keine Zusage zu Schutzräumen, Bunkern, Zivilschutzbindung oder Schutzorten in Gebäuden. S. 40 „modernen Bevölkerungsschutz“ ist ein Ziel ohne Handlung.
+- 4102 (Warnweg): Sirenenausbau fördern (S. 46, erfasst) und Warn-Apps verbessern (S. 46, erfasst). Cell Broadcast und MoWaS werden nicht genannt.
+- 4103 (Vorräte, Selbsthilfe): nichts gefunden (siehe nicht_erfasst).
+
+Nicht erfasst:
+- S. 46: „Wir verbessern den Bevölkerungsschutz und die Katastrophenhilfe“: Ziel, ohne konkrete Maßnahme.
+- S. 46: Vorsorge gegen Klimafolgen (extreme Niederschläge, Hitze, Dürre), Hochwasserschutz, CBRN-Einsatz: Leitfaden verweist Hochwasser nach T18.
+- S. 46: THW, Feuerwehren, „Hilfen für Helfer“: Ausstattung der Helfer, keine Ursache dieses Themas.
+- S. 46: KRITIS-Dachgesetz, Resilienz von Unternehmen, Versorgungssicherheit: Wirtschaft und Infrastruktur, nicht Vorräte oder Schutzorte der Haushalte.
+- S. 46: Übungen für den Katastrophenfall: Einsatzbereitschaft, keine Ursache 4101 bis 4103.
+
+Richtungen ohne Maßnahme: 4101 „Schutzräume reaktivieren oder neu bauen“, „Schutzorte im Bestand nutzen (Keller, Gebäude)“, „Zivilschutzbindung aufgeben“. 4103 „Vorräte und Information fördern“, „Eigenverantwortung betonen“, „Staatliche Notreserven“.
+Seiten ohne Text, für das Ergebnis nicht relevant: 1, 2, 67, 68.

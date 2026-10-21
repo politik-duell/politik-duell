@@ -1,0 +1,204 @@
+{
+  "blind_pruefsumme": "54fa5ec2ae9c2df85ad1aef363227b5378d89a54090a624d1a8137291d8cd9a3",
+  "neue_instrumente": [
+    {
+      "kennung": "I1",
+      "name": "Plattformpflichten zum Entfernen strafbarer Inhalte durchsetzen und auf Bundes-/EU-Ebene einfordern (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "Durchgesetzte Löschpflichten senkten nach NetzDG-Studie Hass online; Plattformpflichten regeln aber DSA und Bund, das Land kann nur flankieren oder über den Bundesrat anstoßen.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://econpapers.repec.org/RePEc:cge:wacage:701"
+    },
+    {
+      "kennung": "I2",
+      "name": "Öffentliche Förderung von Meldestellen beenden (Bund)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 3,
+      "begruendung": "Weniger Meldewege erschweren Betroffenen das Melden; Befürworter verweisen auf Meinungsfreiheit, ein Beitrag zum Schutz vor Anfeindungen ist nicht erkennbar. Der Bund kann eigene Förderung einstellen.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I3",
+      "name": "Strafrechtsschutz bei Ehrdelikten gegen Personen des politischen Lebens zurücknehmen (Bund)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 3,
+      "begruendung": "Weniger Strafschutz gibt Betroffenen weniger Handhabe gegen Anfeindungen; Kritiker der Norm sehen darin Schutz der Meinungsfreiheit, zum Ziel trägt es nicht bei. Der Bund kann das StGB ändern.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I4",
+      "name": "Unbestimmte Zusage, Hasskriminalität konsequent zu verfolgen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Strafverfolgung kann Betroffenen Rückhalt geben und abschrecken; ohne konkretes Mittel (Personal, Stellen, Meldeweg) bleibt offen, was sich ändert, die Wirkung ist kaum untersucht.",
+      "evidenz": "offen"
+    }
+  ],
+  "zuordnung": [
+    {
+      "kennung": "M01",
+      "instrument": 10237,
+      "ursachen": [
+        2501
+      ]
+    },
+    {
+      "kennung": "M02",
+      "ursachen": []
+    },
+    {
+      "kennung": "M03",
+      "instrument": 10233,
+      "ursachen": [
+        2501
+      ]
+    },
+    {
+      "kennung": "M04",
+      "instrument": "I1",
+      "ursachen": [
+        2502
+      ]
+    },
+    {
+      "kennung": "M05",
+      "ursachen": []
+    },
+    {
+      "kennung": "M06",
+      "instrument": "I2",
+      "ursachen": [
+        2501
+      ]
+    },
+    {
+      "kennung": "M07",
+      "instrument": 10240,
+      "ursachen": [
+        2503
+      ]
+    },
+    {
+      "kennung": "M08",
+      "instrument": "I4",
+      "ursachen": [
+        2501
+      ]
+    },
+    {
+      "kennung": "M09",
+      "instrument": 10233,
+      "ursachen": [
+        2501
+      ]
+    },
+    {
+      "kennung": "M10",
+      "einzeln": {
+        "wirksamkeit": 0,
+        "umsetzbarkeit": 2,
+        "begruendung": "Engere Begriffe sollen zulässige Meinungen vor Löschung und Strafe schützen; Löschpflichten und Strafschutz gegen Hass werden dadurch eher schwächer, ein Beitrag zum Schutz vor Anfeindungen ist nicht erkennbar.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2502
+      ]
+    },
+    {
+      "kennung": "M11",
+      "instrument": 10233,
+      "ursachen": [
+        2501
+      ]
+    },
+    {
+      "kennung": "M12",
+      "ursachen": []
+    },
+    {
+      "kennung": "M13",
+      "instrument": 10236,
+      "ursachen": [
+        2501
+      ]
+    },
+    {
+      "kennung": "M14",
+      "einzeln": {
+        "wirksamkeit": 0,
+        "umsetzbarkeit": 2,
+        "begruendung": "Weniger Ermittlungen zu Beleidigungen im Netz entlasten die Polizei, verringern aber die Folgen für Täter und die Aussicht für Betroffene; Polizei ist überwiegend Ländersache.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2501
+      ]
+    },
+    {
+      "kennung": "M15",
+      "instrument": 10239,
+      "ursachen": [
+        2503
+      ]
+    },
+    {
+      "kennung": "M16",
+      "instrument": "I3",
+      "ursachen": [
+        2501
+      ]
+    },
+    {
+      "kennung": "M17",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Schutz vor Bedrohungen und Hasskampagnen hilft einer einzelnen Berufsgruppe; das Mittel ist unbestimmt, betrifft nur zum Teil das Netz, und eine Wirkung ist kaum untersucht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2501
+      ]
+    },
+    {
+      "kennung": "M18",
+      "ursachen": []
+    },
+    {
+      "kennung": "M19",
+      "instrument": "I4",
+      "ursachen": [
+        2501
+      ]
+    },
+    {
+      "kennung": "M20",
+      "instrument": 10236,
+      "ursachen": [
+        2501
+      ]
+    },
+    {
+      "kennung": "M21",
+      "instrument": "I1",
+      "ursachen": [
+        2502
+      ]
+    },
+    {
+      "kennung": "M22",
+      "instrument": 10240,
+      "ursachen": [
+        2503
+      ]
+    },
+    {
+      "kennung": "M23",
+      "instrument": 10236,
+      "ursachen": [
+        2501
+      ]
+    }
+  ]
+}

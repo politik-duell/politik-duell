@@ -1,0 +1,60 @@
+{
+  "blind_pruefsumme": "d5e11967752a38f6fd052df2ca041e0ddec8e83b50c0b4268d32f21958f4e4d7",
+  "neue_instrumente": [
+    { "kennung": "I1", "name": "Pflichtweises Sitzenbleiben abschaffen, Wiederholen nur noch freiwillig (Land)", "wirksamkeit": 1, "umsetzbarkeit": 3, "evidenz": "gemischt", "begruendung": "Nimmt die Drohung der Nichtversetzung, und Sitzenbleiben verbessert Leistungen laut Forschung nicht; zum Wohlbefinden sind Befunde uneinheitlich (teils Belastung, teils positive Effekte), betroffen ist ein kleiner Teil.", "beleg_studie_url": "https://www.bertelsmann-stiftung.de/de/publikationen/publikation/did/klassenwiederholungen-teuer-und-unwirksam" },
+    { "kennung": "I2", "name": "Ziffernnoten weitgehend durch schriftliche oder dialogische Rückmeldungen ersetzen (Land)", "wirksamkeit": 2, "umsetzbarkeit": 3, "evidenz": "gemischt", "begruendung": "Benotete Stunden gehen in Studien mit mehr Angst und weniger Motivation einher; in Langzeitvergleichen ohne Noten zeigte sich aber kaum besseres Wohlbefinden, Druck kann sich auf spätere Abschlüsse verlagern.", "beleg_studie_url": "https://publinova.nl/product/performance-grading-and-motivational-functioning-and-fear-in-physical-education" },
+    { "kennung": "I3", "name": "Mentale Gesundheit, Resilienz und Stressbewältigung im Unterricht verankern (Land)", "wirksamkeit": 1, "umsetzbarkeit": 3, "evidenz": "gemischt", "begruendung": "Schulische Präventionsprogramme senken Angst und Depressivität nur schwach, universelle Angebote weniger als gezielte; lindert Folgen, statt den Leistungsdruck selbst zu senken. Curricula sind Landessache.", "beleg_studie_url": "https://openresearch-repository.anu.edu.au/items/f894e732-2981-4864-b78f-eafbf446aba1" },
+    { "kennung": "I4", "name": "Ruhe- und Rückzugsräume ohne Bewertung und Pausengestaltung an Schulen (Land)", "wirksamkeit": 1, "umsetzbarkeit": 2, "evidenz": "offen", "begruendung": "Kann Erholung im Schulalltag ermöglichen; berührt den Leistungsdruck nur am Rand, Wirkung kaum untersucht, und Räume fehlen an vielen Schulen.", "beleg_studie_url": "" },
+    { "kennung": "I5", "name": "Selektionshürden beim Übergang zur weiterführenden Schule abbauen (Empfehlung, Probeunterricht) (Land)", "wirksamkeit": 1, "umsetzbarkeit": 3, "evidenz": "gemischt", "begruendung": "Verbindliche Übergangsentscheidungen erhöhen nachweislich Sorgen in Klasse 4, zugleich steigen dort die Leistungen; die Maßnahmen lockern nur einzelne Hürden, Druck kann sich auf später verlagern.", "beleg_studie_url": "https://www.zew.de/en/press/latest-press-releases/binding-teachers-recommendation-for-secondary-school-track-increases-pupils-achievement-but-also-their-stress-levels" }
+  ],
+  "zuordnung": [
+    { "kennung": "M01", "ursachen": [] },
+    { "kennung": "M02", "instrument": 10123, "ursachen": [2304] },
+    { "kennung": "M03", "instrument": "I1", "ursachen": [2304] },
+    { "kennung": "M04", "instrument": 10128, "ursachen": [2302] },
+    { "kennung": "M05", "ursachen": [] },
+    { "kennung": "M06", "instrument": "I3", "ursachen": [2304] },
+    { "kennung": "M07", "ursachen": [] },
+    { "kennung": "M08", "ursachen": [] },
+    { "kennung": "M09", "instrument": "I2", "ursachen": [2304] },
+    { "kennung": "M10", "ursachen": [] },
+    { "kennung": "M11", "ursachen": [] },
+    { "kennung": "M12", "instrument": 10125, "ursachen": [2302] },
+    { "kennung": "M13", "instrument": 10115, "ursachen": [2301] },
+    { "kennung": "M14", "ursachen": [] },
+    { "kennung": "M15", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Begrenzt Prüfungsballungen und damit Belastungsspitzen; die Gesamtmenge an Leistungskontrollen bleibt gleich, eine Wirkung solcher Obergrenzen ist kaum untersucht.", "evidenz": "offen" }, "ursachen": [2304] },
+    { "kennung": "M16", "ursachen": [] },
+    { "kennung": "M17", "ursachen": [] },
+    { "kennung": "M18", "instrument": 10129, "ursachen": [2304] },
+    { "kennung": "M19", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Benotung im Sport geht in Studien mit mehr Angst und weniger Motivation einher; die Maßnahme betrifft aber nur Nebenfächer, der Druck in den Hauptfächern bleibt.", "evidenz": "gemischt", "beleg_studie_url": "https://publinova.nl/product/performance-grading-and-motivational-functioning-and-fear-in-physical-education" }, "ursachen": [2304] },
+    { "kennung": "M20", "ursachen": [] },
+    { "kennung": "M21", "instrument": 10128, "ursachen": [2302] },
+    { "kennung": "M22", "instrument": 10132, "ursachen": [2303] },
+    { "kennung": "M23", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Mehr Hausaufgabenzeit hängt in Querschnittsdaten mit mehr Lernangst zusammen, ursächlich ist das nicht belegt; Abbau ist ohne Zusatzpersonal möglich, der Umfang bleibt unbestimmt.", "evidenz": "gemischt", "beleg_studie_url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2023.1130274/full" }, "ursachen": [2304] },
+    { "kennung": "M24", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Ein Fach zu Beziehungen kann soziales Lernen und respektvollen Umgang fördern; Mobbing ist nicht genannt, eine Wirkung kaum untersucht, und ein neues Fach braucht Stundentafel und Lehrkräfte.", "evidenz": "offen" }, "ursachen": [2301] },
+    { "kennung": "M25", "instrument": "I4", "ursachen": [2304] },
+    { "kennung": "M26", "instrument": 10122, "ursachen": [2301, 2302] },
+    { "kennung": "M27", "instrument": "I3", "ursachen": [2304] },
+    { "kennung": "M28", "instrument": 10112, "ursachen": [2301, 2302] },
+    { "kennung": "M29", "instrument": 10128, "ursachen": [2302] },
+    { "kennung": "M30", "ursachen": [] },
+    { "kennung": "M31", "instrument": "I4", "ursachen": [2304] },
+    { "kennung": "M32", "instrument": "I1", "ursachen": [2304] },
+    { "kennung": "M33", "instrument": 10116, "ursachen": [2301] },
+    { "kennung": "M34", "ursachen": [] },
+    { "kennung": "M35", "ursachen": [] },
+    { "kennung": "M36", "instrument": "I5", "ursachen": [2304] },
+    { "kennung": "M37", "instrument": "I3", "ursachen": [2304] },
+    { "kennung": "M38", "instrument": "I5", "ursachen": [2304] },
+    { "kennung": "M39", "instrument": 10116, "ursachen": [2301] },
+    { "kennung": "M40", "instrument": "I1", "ursachen": [2304] },
+    { "kennung": "M41", "instrument": "I2", "ursachen": [2304] },
+    { "kennung": "M42", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Eine Studie fand unter G8 mehr Stress bei Mädchen, andere keine gesundheitlichen Unterschiede zu G9; die Umstellung dauert mehrere Jahre und braucht zusätzliche Lehrkräfte.", "evidenz": "gemischt", "beleg_studie_url": "https://www.diw.de/de/diw_01.c.497179.de/publikationen/roundup/2015_0057/empirische_befunde_zu_auswirkungen_der_g8-schulzeitverkuerzung.html" }, "ursachen": [2304] },
+    { "kennung": "M43", "instrument": "I5", "ursachen": [2304] },
+    { "kennung": "M44", "instrument": 10112, "ursachen": [2301] }
+  ]
+}
+
+Nicht bestätigte Vorschläge: M01 (2304; allgemeine psychotherapeutische Versorgung ohne Schulbezug, Thema Gesundheitsversorgung), M08 (2304; Freistellung von Auszubildenden vor Kammerprüfungen betrifft Ausbildung/Arbeitsrecht, nicht Schule), M11 (2301; multiprofessionelle Teams ohne Nennung von Mobbing, Gewalt oder Konflikten, Regel 2), M35 (2301; Zielformulierung ohne Instrument).
+Offene entschieden: übernommen M03, M18, M25, M36, M38, M42 (2304), M13, M24, M33 (2301), M26/M28 2302 (Schulsozialarbeit mit Mobbing/Gewalt genannt). Abgelehnt: M05, M17 (Inklusion/Schulstruktur, nicht Klassennormen), M07, M10, M11, M20 (Schulsozialarbeit/Teams ohne Mobbingbezug, Regel 2), M14 (allgemeine Pädagogik ohne Bezug zu Ausgrenzung), M16 (mehr Noten und Standards – zielt nicht auf Entlastung), M30 (Geräte im Unterricht = Mediennutzung/Digitalisierung, nicht Cybermobbing), M34 (Rechtsextremismus, anderes Thema), M35 2302 (Ziel).
+Schwierig: M01 (Folgenlinderung wie 10123, aber ohne Schulbezug); M08 (Prüfungsdruck, aber außerhalb der Schule); M24 (Fach Beziehungen: soziales Lernen nur implizit); M12 zu 10125 statt 10127, weil Umgang mit Übergriffen genannt ist; I2 Wirksamkeit 2 trotz gemischter Lage, weil Noten ein zentraler Druckfaktor sind; M22 auf 10132 (australisches Altersverbot) trotz strengerer Form.

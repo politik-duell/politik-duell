@@ -1,0 +1,48 @@
+{
+  "partei_id": 11,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Digital Services Act mit Schwerpunkt auf Transparenz sowie Jugend- und Medienschutz umsetzen",
+      "ursachen_ids": [],
+      "ursachen_offen": [2502],
+      "zitat": "Wir stellen sicher, dass bei der Umsetzung des Digital Services Act der Schwerpunkt auf mehr Transparenz, Kampf gegen Desinformation sowie Jugend- und Medienschutz gelegt wird.",
+      "seite": 41
+    },
+    {
+      "beschreibung": "Verfassungsfeindliche und antisemitische Äußerungen konsequent verfolgen und ahnden",
+      "ursachen_ids": [],
+      "ursachen_offen": [2501, 2502],
+      "zitat": "Delikte wie das Zeigen verfassungsfeindlicher Symbole sowie verfassungsfeindliche und antisemitische Äußerungen müssen mit der ganzen Konsequenz des Rechtsstaates verfolgt und geahndet werden.",
+      "seite": 45
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 2502, "name": "Plattformen verbindlich in die Pflicht nehmen", "seite": 41 },
+    { "ursache": 2501, "name": "Strafverfolgung von Hass und Bedrohung im Netz", "seite": 45 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 2503, "seiten": [40, 41, 45, 46], "grund": "Anonymität des Internets nur als Grundsatz genannt; keine Moderations-, Gestaltungs- oder Präventionsmaßnahme. Bundesprogramm Demokratie leben (S. 46) ist Extremismusprävention (R2)." }
+  ]
+}
+
+Protokoll (Thema 25 „Hass und Anfeindungen im Internet“, Union Bund)
+
+Gelesen: Inhaltsverzeichnis (S. 1–6); Kapitel „Recht und Ordnung“ (S. 36–41, Schwerpunkt S. 38–41) und „Wehrhafte Demokratie“ (S. 42–46, Schwerpunkt S. 43–46); Fundstellen S. 39, 40, 41, 45, 46.
+
+Grenzfälle: S. 41 (Digital Services Act) ist offen zwischen 2502 und keiner Ursache, weil die Zusage nach R2 keinen ausdrücklichen Bezug zu Hass nennt. S. 45 (verfassungsfeindliche und antisemitische Äußerungen) ist offen zwischen 2501 und 2502, weil das Zitat weder Betroffene noch Plattformen nennt.
+
+Nicht erfasst:
+- S. 40: Grundsatz, dass niemand durch die Anonymität des Internets falschen Schutz erlangen darf. Keine Handlung.
+- S. 40: Speicherpflicht für IP-Adressen und Befugnisse der Sicherheitsbehörden (Gesichtserkennung, Analyse sozialer Netzwerke, Online-Durchsuchung). Allgemeine Sicherheits- und Netzpolitik ohne Bezug zu Hass oder Bedrohung (R2).
+- S. 46: Volksverhetzungs-Paragraf verschärfen und Leugnen des Existenzrechts Israels strafbar machen. Gleichartig zur Strafverfolgungs-Zusage S. 45 und dort schon erfasst.
+- S. 45: Extremismusgesetz und Terror-Unterstützung. Extremismus nach R2 zu einem anderen Thema.
+- S. 39: Schutz von Frauen und Kindern vor häuslicher Gewalt, Stalking und Sexualdelikten. Kein Bezug zu Hass im Netz.
+- S. 41: Cyberabwehr und Cybersicherheit. Angriffe, keine Hassrede.
+- S. 46: Bundesprogramm „Demokratie leben“ im Bundesinnenministerium. Extremismusprävention (R2).
+
+Richtungen ohne Maßnahme: 2501 Meldewege und Hilfe für Betroffene (keine Fundstelle gefunden, Kapitel gelesen); 2503 Prävention, Medienkompetenz und Moderationsdesign (keine Fundstelle außer der Anonymitätsaussage); 2502 Eigenverantwortung der Plattformen und Meinungsfreiheit (keine Fundstelle).
+
+Hinweis zu den Bündeln: Der Auftrag nennt Richtungen mit Trefferzahl, keine Bündel. Die Zuordnung steht daher unter „neue_buendel“, ohne Feld „buendel“.
+
+Seiten ohne Text: S. 1 und 82, nicht im Kapitel.

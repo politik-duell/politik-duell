@@ -1,0 +1,40 @@
+{
+  "blind_pruefsumme": "b3de5feed9209c793d5011bb47097b7d1155439f83f9b8066d15b4c00e7edb1b",
+  "neue_instrumente": [
+    { "kennung": "I1", "name": "Sirenennetz ausbauen, modernisieren und an digitale Warnsysteme (MoWaS, Apps) anbinden (Land)", "wirksamkeit": 2, "umsetzbarkeit": 3, "begruendung": "Warntag-Befragungen zeigen, dass der Mix aus Sirenen, Cell Broadcast und Apps fast alle erreicht; Sirenen erreichen rund 59 % und wirken auch bei Netzausfall. Dagegen: Cell Broadcast erreicht bereits die meisten, der Zusatznutzen weiterer Sirenen ist begrenzt.", "evidenz": "belegt", "beleg_studie_url": "https://www.l-iz.de/melder/wortmelder/2024/09/vorlaeufige-befragungsergebnisse-bundesweiter-warntag-2024-hat-95-prozent-der-buergerinnen-und-buerger-erreicht-603092" },
+    { "kennung": "I2", "name": "Bundesförderung für den Ausbau der Warninfrastruktur, insbesondere Sirenen (Bund)", "wirksamkeit": 2, "umsetzbarkeit": 3, "begruendung": "Der Bund ist für die Warnung im Zivilschutz zuständig und hat Sirenen bereits gefördert; der Warnmittelmix erreicht laut Warntag-Befragungen fast alle. Dagegen: Umfang der Förderung offen, Umsetzung hängt von Ländern und Kommunen ab.", "evidenz": "belegt", "beleg_studie_url": "https://www.l-iz.de/melder/wortmelder/2024/09/vorlaeufige-befragungsergebnisse-bundesweiter-warntag-2024-hat-95-prozent-der-buergerinnen-und-buerger-erreicht-603092" },
+    { "kennung": "I3", "name": "Aufklärung und Angebote zur Selbsthilfe und Krisenvorsorge der Bevölkerung (Bund)", "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Eine Meta-Analyse findet einen kleinen Effekt auf Vorsorgeverhalten, aber keinen signifikanten auf Vorräte und Wissen, bei sehr geringer Evidenzsicherheit. Dafür spricht: günstig und schnell umsetzbar.", "evidenz": "gemischt", "beleg_studie_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11003604" }
+  ],
+  "zuordnung": [
+    { "kennung": "M01", "instrument": "I1", "ursachen": [4102] },
+    { "kennung": "M02", "instrument": "I1", "ursachen": [4102] },
+    { "kennung": "M03", "instrument": "I1", "ursachen": [4102] },
+    { "kennung": "M04", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Warn-Apps sind ein relevanter Warnkanal (rund 56 % beim Warntag 2024) und der Bund betreibt NINA selbst. Dagegen: Verbesserung unbestimmt, Cell Broadcast erreicht bereits mehr Menschen ohne App.", "evidenz": "belegt", "beleg_studie_url": "https://www.l-iz.de/melder/wortmelder/2024/09/vorlaeufige-befragungsergebnisse-bundesweiter-warntag-2024-hat-95-prozent-der-buergerinnen-und-buerger-erreicht-603092" }, "ursachen": [4102] },
+    { "kennung": "M05", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Cell Broadcast ist das reichweitenstärkste Warnmittel; rechtzeitige, klare Meldungen kann das Land als warnende Stelle verbessern. Dagegen: schließt keine Lücke im Warnweg selbst, sondern verbessert Inhalte.", "evidenz": "belegt", "beleg_studie_url": "https://www.l-iz.de/melder/wortmelder/2024/09/vorlaeufige-befragungsergebnisse-bundesweiter-warntag-2024-hat-95-prozent-der-buergerinnen-und-buerger-erreicht-603092" }, "ursachen": [4102] },
+    { "kennung": "M06", "ursachen": [] },
+    { "kennung": "M07", "ursachen": [] },
+    { "kennung": "M08", "instrument": "I2", "ursachen": [4102] },
+    { "kennung": "M09", "ursachen": [] },
+    { "kennung": "M10", "instrument": "I1", "ursachen": [4102] },
+    { "kennung": "M11", "ursachen": [] },
+    { "kennung": "M12", "einzeln": { "wirksamkeit": 2, "umsetzbarkeit": 2, "begruendung": "Erfahrungen aus Israel: Schwerverletzte und Tote waren meist außerhalb von Schutzräumen. Dagegen: Aufbau einsatzbereiter Schutzräume ist teuer, dauert Jahre, Umfang und Finanzierung nicht genannt.", "evidenz": "belegt", "beleg_studie_url": "https://themedialine.org/top-stories/israels-shelter-system-tested-as-iran-fires-missiles-with-heavy-warheads" }, "ursachen": [4101] },
+    { "kennung": "M13", "instrument": "I3", "ursachen": [4103] },
+    { "kennung": "M14", "instrument": "I1", "ursachen": [4102] },
+    { "kennung": "M15", "instrument": "I1", "ursachen": [4102] },
+    { "kennung": "M16", "instrument": "I2", "ursachen": [4102] },
+    { "kennung": "M17", "ursachen": [] },
+    { "kennung": "M18", "ursachen": [] },
+    { "kennung": "M19", "instrument": "I2", "ursachen": [4102] },
+    { "kennung": "M20", "ursachen": [] },
+    { "kennung": "M21", "ursachen": [] },
+    { "kennung": "M22", "instrument": "I1", "ursachen": [4102] },
+    { "kennung": "M23", "ursachen": [] },
+    { "kennung": "M24", "ursachen": [] },
+    { "kennung": "M25", "instrument": "I3", "ursachen": [4103] }
+  ]
+}
+
+Hinweise:
+- Alle vorgeschlagenen ursachen_ids bestätigt.
+- Offene Ursachen alle abgelehnt: M06 (Zivilverteidigung allgemein, keine Schutzräume genannt), M07 (Hochwasser-Pegel/Frühwarnung, gehört zu T18), M09 und M11 (allgemeine Krisen-/Bevölkerungsschutzkonzepte, kein konkreter Warnweg), M17 (Arzneimittelvorrat des Gesundheitswesens, nicht Haushaltsvorsorge), M18 (Warnweg nicht genannt), M20 (Wirtschaftskreisläufe, anderes Thema), M21 (Ersthelfer-App für Einzelnotfälle, keine Bevölkerungswarnung), M23 und M24 (Hochwasser/Klimaanpassung, keine Schutzräume).
+- Schwierig: M02 (vollständige MoWaS-Anbindung) trifft die Ursache 4102 sehr direkt und könnte 3 verdienen; im Instrument I1 mit 2 bewertet, weil der Zusatznutzen gegenüber Cell Broadcast begrenzt ist. M12: Evidenz zu Schutzräumen nur aus Erfahrungsberichten (Israel), keine kontrollierten Studien. I2 Umsetzbarkeit 3, da Zivilschutz-Warnung Bundeszuständigkeit ist und der Bund Sirenen bereits gefördert hat; 2 wäre vertretbar.

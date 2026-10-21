@@ -1,0 +1,168 @@
+{
+  "partei_id": 17,
+  "land": "MV",
+  "massnahmen": [
+    {
+      "beschreibung": "Gewaltschutz, Prävention und soziales Lernen als feste Bestandteile schulischer Bildung ausbauen.",
+      "ursachen_ids": [
+        2301
+      ],
+      "buendel": "Klassenklima und soziales Lernen stärken",
+      "zitat": "Ausbau von Gewaltschutz, Prävention und sozialem Lernen als festen Bestandteilen schulischer Bildung.",
+      "seite": 46
+    },
+    {
+      "beschreibung": "Schulen mit multiprofessionellen Teams (u. a. Sozialarbeit, Schulpsychologie) ausstatten, um psychischen Problemen und Gewalt vorzubeugen.",
+      "ursachen_ids": [
+        2301,
+        2302
+      ],
+      "ursachen_offen": [
+        2304
+      ],
+      "buendel": "Unterstützung durch Fachkräfte und Beschwerdewege",
+      "zitat": "Schulen sind mit multiprofessionellen Teams (Sozialarbeit, Gesundheitsförderung, Schulpsychologie, IT-Support) auszustatten, um psychischen Problemen und Gewalt vorzubeugen.",
+      "seite": 46
+    },
+    {
+      "beschreibung": "Verbindliche Klassenleiterstunde und feste Sprechzeiten für Klassenleitungen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2301
+      ],
+      "zitat": "Verbindliche Klassenleiterstunde und feste Sprechzeiten für die Klassenleiter.",
+      "seite": 46
+    },
+    {
+      "beschreibung": "Mehr Klassennachmittage, gemeinsame Unternehmungen und Aktionen an Schulen.",
+      "ursachen_ids": [
+        2301
+      ],
+      "zitat": "Mehr Klassennachmittage, gemeinsame Unternehmungen und Aktionen an Schulen.",
+      "seite": 46
+    },
+    {
+      "beschreibung": "Kleinere Klassen mit höchstens 24 Schülerinnen und Schülern, unter anderem für Resilienz und soziale Kompetenzen.",
+      "ursachen_ids": [
+        2304
+      ],
+      "ursachen_offen": [
+        2301
+      ],
+      "zitat": "Kleinere Klassen mit maximal 24 Schülerinnen und Schülern, um individuelle Förderung, Resilienz, Selbstbewusstsein und soziale Kompetenzen zu stärken.",
+      "seite": 48
+    },
+    {
+      "beschreibung": "Verbindliche Sucht- und Gesundheitsprävention in Schulen, altersgerecht und alltagsnah, mit Stärkung von Lebens-, Sozial- und Resilienzkompetenzen.",
+      "ursachen_ids": [
+        2304
+      ],
+      "ursachen_offen": [
+        2301
+      ],
+      "buendel": "Befähigung und Stressbewältigung",
+      "zitat": "Verbindliche Sucht- und Gesundheitsprävention in Schulen, altersgerecht und alltagsnah. […] Stärkung von Lebens-, Sozial- und Resilienzkompetenzen.",
+      "seite": 63
+    },
+    {
+      "beschreibung": "Schultage nicht weiter verlängern, stattdessen Hausaufgabenbetreuung anbieten, damit der Nachmittag frei bleibt.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2304
+      ],
+      "buendel": "Belastung reduzieren",
+      "zitat": "Schultage nicht weiter verlängern, eher Hausaufgabenbetreuung anbieten, um den Nachmittag für Hobbys und Vereinsleben freizuhalten.",
+      "seite": 46
+    },
+    {
+      "beschreibung": "Stärkere Leistungsorientierung am Gymnasium, einschließlich Punktetabelle für die Bewertung von Leistungen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2304
+      ],
+      "zitat": "Stärkere Leistungsorientierung am Gymnasium, einschließlich der Punktetabelle für die Bewertung von Leistungen.",
+      "seite": 49
+    },
+    {
+      "beschreibung": "Verpflichtende, praxisnahe Fortbildungen für Lehrkräfte, im Rahmen verbesserter Arbeitsbedingungen.",
+      "ursachen_ids": [
+        2302
+      ],
+      "buendel": "Fortbildung und Handlungssicherheit der Lehrkräfte",
+      "zitat": "Verbesserung der Rahmenbedingungen für die Lehrkräfte […] verpflichtende, praxisnahe Fortbildungen.",
+      "seite": 47
+    }
+  ],
+  "neue_buendel": [
+    {
+      "ursache": 2301,
+      "name": "Klassenklima und soziales Lernen stärken",
+      "seite": 46
+    },
+    {
+      "ursache": 2302,
+      "name": "Unterstützung durch Fachkräfte und Beschwerdewege",
+      "seite": 46
+    },
+    {
+      "ursache": 2304,
+      "name": "Befähigung und Stressbewältigung",
+      "seite": 63
+    },
+    {
+      "ursache": 2304,
+      "name": "Belastung reduzieren",
+      "seite": 46
+    },
+    {
+      "ursache": 2302,
+      "name": "Fortbildung und Handlungssicherheit der Lehrkräfte",
+      "seite": 47
+    },
+    {
+      "ursache": 2301,
+      "name": "Klassenleiterstunde",
+      "seite": 46
+    },
+    {
+      "ursache": 2301,
+      "name": "Gemeinsame Klassenaktionen",
+      "seite": 46
+    },
+    {
+      "ursache": 2304,
+      "name": "Kleinere Klassen",
+      "seite": 48
+    },
+    {
+      "ursache": 2304,
+      "name": "Leistungsanforderungen am Gymnasium",
+      "seite": 49
+    }
+  ]
+}
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis (S. 2–6), Kapitel „Frieden und Dialog“ Auszug (S. 8–9), „Soziale Gerechtigkeit“ (S. 11–18), „Bildung“ (S. 43–50), „Therapie, Prävention, Psychische Gesundheit, Sucht“ (S. 57–64). Fundstellen außerhalb dieser Kapitel: S. 20, 21, 24, 31, 32, 52–56, 66–72, 77, 78, 80, 84, 88–90 (Wohnen, Wirtschaft, Hochschule, Kultur, Pflege, Innere Sicherheit, Ehrenamt, Landwirtschaft, Umwelt, Fischerei, Mobilität, Digitales). Die Fundstellen S. 3 und S. 4 liegen im Inhaltsverzeichnis und sind übersprungen. S. 81 nicht gelesen (keine Fundstelle).
+
+Keine Stelle außerhalb der Kapitel Bildung und Prävention betrifft Mobbing, Ausgrenzung in der Schule oder Druck in der Schule.
+
+Nicht erfasst:
+- S. 14, S. 61, S. 71: „Flächendeckender Ausbau der Schulsozialarbeit …“, „Mehr Schulpsychologen sowie dauerhaft finanzierte Schulsozialarbeit.“, „Ausbau von Schulsozialarbeit, Schulpsychologie …“ – das Zitat nennt weder Mobbing noch Gewalt noch Konflikte; nach R2 keine Zuordnung zu 2301/2302.
+- S. 61: „Fachübergreifende Unterstützung an Kitas und Schulen.“ – ohne Nennung von Mobbing, Gewalt oder Konflikten (R2).
+- S. 46: „Schule soll zu Empathie und gewaltfreien Konfliktlösung befähigen.“ – Ziel, kein Handlungsversprechen.
+- S. 47: „Reduzierung der Unterrichtsverpflichtung … realistische Erfassung der tatsächlichen Arbeitszeit“ – Arbeitsbedingungen der Lehrkräfte, nicht Handeln oder Qualifikation (R1 2302).
+- S. 46: „Beratung mit Eltern zu den Leistungen und zum Lernen der Schüler ausbauen (Lernentwicklungsgespräche)“ – kein Bezug zu Druck-Reduktion oder Mobbing.
+- S. 47: „Mehr Freiräume für Schulen … gemeinsame Schulentwicklung“ – Schulentwicklung, kein Bezug.
+- S. 49: „Kleine Klassen und multiprofessionelle Teams“ (Regionalschulen) – gleichartig zur Maßnahme „Kleinere Klassen“ (S. 48), nicht gesondert erfasst; S. 46 „kleine Klassen … fördern Resilienz“ ebenso.
+- S. 48: „Prüfungen zur Erreichung der Mittleren Reife … 10. Klasse am Gymnasium“ – Prüfungspflicht, gleicher Hebel wie „Leistungsorientierung“ (S. 49), nicht gesondert erfasst.
+- S. 61: „Ausbau von Präventionsangeboten zu psychischer Gesundheit, Resilienz, Medienkompetenz und Konfliktbewältigung“ – gleichartig zur Maßnahme S. 63 (Prävention in Schulen), nicht gesondert erfasst.
+- S. 47: „Vermittlung von Medienkompetenz an weiterführenden Schulen“ – Mediennutzung, kein Mobbing-Bezug.
+- S. 8–9: „Stärkung von Friedens- und Demokratiebildung in Schulen“ – Friedenspolitik, kein Mobbing-Bezug.
+- S. 49: „Stärkung politischer Bildung und einer offenen Debattenkultur … Respekt …“ – allgemeines Ziel.
+- S. 12: „Klare und verbindliche Regeln für Anbieter digitaler Medien“ – Jugendschutz, nicht Thema 23.
+- S. 69: „Grundwissen über Rechte … bereits in der Schule vermitteln“ – Rechtsbildung, kein Bezug zu 2301, 2302, 2304.
+
+Richtungen ohne Maßnahme: „Regeln und Konsequenzen durchsetzen“ (2301) – im gelesenen Text keine Schulregel-Zusage (Treffer nur „Konsequenzen“ S. 70, S. 72 zu Corona und Gleichstellung, ohne Schulbezug).
+
+Seiten ohne Text: keine im relevanten Kapitel.

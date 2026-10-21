@@ -1,0 +1,458 @@
+{
+  "pruefsumme": "920e7f46ba0b749114abc0271a7ae2da7deac5fa6db4a8493818f258ad1f717e",
+  "thema": {
+    "id": 26,
+    "name": "Barrieren für Menschen mit Behinderung",
+    "ziel": "Menschen mit Behinderung können ihren Alltag selbstbestimmt gestalten und Wohnen, Mobilität, Angebote, Arbeit und benötigte Unterstützung gleichberechtigt nutzen."
+  },
+  "ursachen": [
+    {
+      "id": 2601,
+      "beschreibung": "Der Abbau von Zugangsbarrieren an Bahnhöfen verzögert sich laut Bundesrechnungshof (2025) vor allem wegen unzureichender Steuerung der Investitionen",
+      "ebene": "bund"
+    },
+    {
+      "id": 2602,
+      "beschreibung": "Über 50 % der Betriebe nannten 2024 fehlende geeignete Tätigkeiten als Hürde für die Beschäftigung von Menschen mit Behinderung; etwa ein Viertel nannte Ausstattungskosten oder Aufwand",
+      "ebene": "bund"
+    },
+    {
+      "id": 2603,
+      "beschreibung": "Etwa 22 % der Betriebe nannten 2024 erwartete Leistungseinschränkungen oder Sonderregeln als Hürde für die Beschäftigung von Menschen mit Behinderung",
+      "ebene": "bund"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        2601,
+        2602,
+        2603
+      ],
+      "text": "Zu 2601 gehören Barrierefreiheit von Bahnhöfen, Haltestellen und Verkehrsmitteln und die Steuerung der Umsetzung; zu 2602 Arbeitsplätze, Ausstattung, Ausgleichsabgabe und Beschäftigungspflicht; zu 2603 Vorbehalte, Beratung und Regeln, die Einstellung und Beschäftigung betreffen. Barrierefreies Wohnen, Gebäude und digitale Angebote ohne Bezug zu diesen Ursachen sind nur als ursachen_offen zu melden."
+    },
+    {
+      "nr": 2,
+      "text": "Gemeinsamer Unterricht an Regelschulen ist eine eigene Haltung und gehört nicht hierher. Pflege, Rente und allgemeine Diskriminierung gehören zu anderen Themen, soweit das Zitat keine Barriere für Menschen mit Behinderung nennt."
+    }
+  ],
+  "instrumente": [],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "bund",
+      "beschreibung": "Barrierefreiheit im öffentlichen und privaten Bereich verbessern; private Anbieter zum Barriereabbau verpflichten",
+      "zitat": "Dazu werden wir die Barrierefreiheit im privaten und im öffentlichen Bereich verbessern. Wir werden private Anbieter von Waren und Dienstleistungen verpflichten, Barrieren abzubauen oder – wo dies nicht möglich ist – angemessene Vorkehrungen zu ergreifen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2601
+      ],
+      "pruefsumme": "e480b47d9b024837"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "bund",
+      "beschreibung": "Deutschland-App mit barrierefreien staatlichen Verwaltungsangeboten einführen.",
+      "zitat": "Deshalb werden wir gemeinsam mit den Ländern und Kommunen eine plattformunabhängige Deutschland-App auf Open-Source-Basis einführen. Darin sollen schrittweise alle staatlichen Verwaltungsangebote und Leistungen sicher, unkompliziert, barrierefrei und anwendungsfreundlich zur Verfügung stehen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2601
+      ],
+      "pruefsumme": "7506278e2441c397"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "bund",
+      "beschreibung": "Vermittlung auf den ersten Arbeitsmarkt, Inklusionsbetriebe und Werkstätten stärken",
+      "zitat": "Wir erleichtern Menschen mit Behinderungen den Zugang zu Ausbildung und Arbeit mit passgenauen Impulsen für einen inklusiven Arbeitsmarkt. Dafür stärken wir sowohl die Vermittlung auf den ersten Arbeitsmarkt als auch Inklusionsbetriebe und Werkstätten.",
+      "ursachen_ids": [
+        2602
+      ],
+      "pruefsumme": "b7d14d891398babf"
+    },
+    {
+      "kennung": "M04",
+      "ebene": "bund",
+      "beschreibung": "Schutz- und Beratungsangebote für Frauen und ihre Kinder kostenfrei, anonym und barrierefrei bereitstellen.",
+      "zitat": "Schutz und Beratung müssen für alle Frauen und ihre Kinder überall in Deutschland kostenfrei, anonym, pauschal und barrierefrei zur Verfügung stehen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2601
+      ],
+      "pruefsumme": "b8a0a4778e6ce1fa"
+    },
+    {
+      "kennung": "M05",
+      "ebene": "bund",
+      "beschreibung": "Netz sanieren, elektrifizieren und ausbauen sowie Strecken reaktivieren, jeweils barrierefrei.",
+      "zitat": "Damit die Bahn wieder pünktlich und zuverlässig fährt, muss das Netz saniert, elektrifiziert, müssen Strecken reaktiviert und ausgebaut werden, natürlich barrierefrei.",
+      "ursachen_ids": [
+        2601
+      ],
+      "pruefsumme": "77a27bba3d9d9ac7"
+    },
+    {
+      "kennung": "M06",
+      "ebene": "bund",
+      "beschreibung": "Barrieren in Bus und Bahn schneller beseitigen",
+      "zitat": "Barrieren in Bus und Bahn müssen schneller beseitigt werden.",
+      "ursachen_ids": [
+        2601
+      ],
+      "pruefsumme": "a512a435a04914ad"
+    },
+    {
+      "kennung": "M07",
+      "ebene": "bund",
+      "beschreibung": "Kinder- und Jugendeinrichtungen sowie Sportvereine und Bäder sollen niedrigschwellig, barrierefrei und gebührenfrei sein.",
+      "zitat": "Kinder- und Jugendfreizeiteinrichtungen, Musikschulen, Bibliotheken, Schwimmbäder, Sportvereine und andere Einrichtungen für Kinder und Jugendliche müssen niedrigschwellig, barrierefrei, wohnortnah und gebührenfrei sein.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2601
+      ],
+      "pruefsumme": "14c29bb593b8ad1d"
+    },
+    {
+      "kennung": "M08",
+      "ebene": "bund",
+      "beschreibung": "Antragsverfahren für Hilfsmittel vereinfachen",
+      "zitat": "Aufwändige Antragsprozesse für Hilfsmittel, insbesondere für Kinder mit Behinderungen, werden wir vereinfachen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2601
+      ],
+      "pruefsumme": "6f1b880e16fca69a"
+    },
+    {
+      "kennung": "M09",
+      "ebene": "bund",
+      "beschreibung": "Aktionsplan für ein barrierefreies Gesundheitswesen fortführen",
+      "zitat": "Wir führen den Aktionsplan für ein diverses, inklusives und barrierefreies Gesundheitswesen fort.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2601
+      ],
+      "pruefsumme": "43d9ee4d32e17508"
+    },
+    {
+      "kennung": "M10",
+      "ebene": "bund",
+      "beschreibung": "Mindestlohn für Beschäftigte in Werkstätten für Menschen mit Behinderung durch Umschichtung von Mitteln sichern",
+      "zitat": "Behinderten in Werkstätten möchten wir durch Mittelumschichtung den Erhalt des Mindestlohns […]",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2602
+      ],
+      "pruefsumme": "7a976c03934929ae"
+    },
+    {
+      "kennung": "M11",
+      "ebene": "bund",
+      "beschreibung": "Mehr Kontrolle und Steuerung des Bundes bei der Deutschen Bahn und ihrer Infrastruktursparte",
+      "zitat": "Die neue gemeinwohlorientierte Infrastruktursparte DB InfraGO sowie den Gesamtkonzern entwickeln wir mit mehr Kontrolle und Steuerung des Bundes weiter.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2601
+      ],
+      "pruefsumme": "e7a4ea5fdfd322b7"
+    },
+    {
+      "kennung": "M12",
+      "ebene": "bund",
+      "beschreibung": "Erhebliche Investitionen in umfassende Barrierefreiheit, Haltestellen und Mobilitätsangebote.",
+      "zitat": "Durch erhebliche Investitionen in umfassende Barrierefreiheit, sichere Haltestellen und attraktive Mobilitätsangebote stellen wir sicher, dass klimafreundliche Mobilität für alle zugänglich ist und der Verkehrssektor seine Klimaziele erfüllen kann.",
+      "ursachen_ids": [
+        2601
+      ],
+      "pruefsumme": "32371fe3ca43ea1f"
+    },
+    {
+      "kennung": "M13",
+      "ebene": "bund",
+      "beschreibung": "Verkehrsinfrastruktur über einen mehrjährig gebundenen Fonds finanzieren, unabhängig vom jährlichen Bundeshaushalt.",
+      "zitat": "Um den großen Investitionsbedarf der Verkehrsinfrastruktur vom jährlichen Bundeshaushalt unabhängig und damit längerfristig verlässlich zu machen, schlagen wir die Schaffung eines verkehrsträgerübergreifenden Infrastrukturfonds nach Schweizer Vorbild vor – mit klaren mehrjährigen Budgets für die einzelnen Verkehrsträger.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2601
+      ],
+      "pruefsumme": "6912a0bd5721a87b"
+    },
+    {
+      "kennung": "M14",
+      "ebene": "bund",
+      "beschreibung": "Mindestlohn auch in Werkstätten für Menschen mit Behinderung zahlen; die EU-Richtlinie soll unverzüglich umgesetzt werden.",
+      "zitat": "Die Europäische Mindestlohnrichtlinie schreibt vor, dass auch in Werkstätten für Menschen mit Behinderung der Mindestlohn gezahlt werden muss. Auch in Deutschland muss diese Richtlinie unverzüglich umgesetzt werden!",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2602,
+        2603
+      ],
+      "pruefsumme": "79c09271613fe5d6"
+    },
+    {
+      "kennung": "M15",
+      "ebene": "bund",
+      "beschreibung": "Die Gebäude des Bundes innerhalb von zehn Jahren barrierefrei machen.",
+      "zitat": "Die Gebäude des Bundes wollen wir innerhalb von zehn Jahren barrierefrei machen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2601
+      ],
+      "pruefsumme": "8c2b280baf202b1c"
+    },
+    {
+      "kennung": "M16",
+      "ebene": "bund",
+      "beschreibung": "Bildungseinrichtungen barrierefrei machen und mit Fachkräften und passender Ausstattung versehen.",
+      "zitat": "Bildungseinrichtungen müssen barrierefrei sein und sollten über ausreichend Fachkräfte und eine für alle Kinder passende Ausstattung verfügen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2601
+      ],
+      "pruefsumme": "ffc58eb8e004d3e3"
+    },
+    {
+      "kennung": "M17",
+      "ebene": "bund",
+      "beschreibung": "Städtebauförderung an einer inklusiven und barrierefreien Stadt ausrichten.",
+      "zitat": "Die Städtebauförderung muss am Leitbild einer inklusiven und barrierefreien Stadt ausgerichtet werden, in der ein gleichberechtigtes Zusammenleben aller Menschen mit und ohne Behinderung erreicht wird.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2601
+      ],
+      "pruefsumme": "f8ee447148171e67"
+    },
+    {
+      "kennung": "M18",
+      "ebene": "bund",
+      "beschreibung": "Weiterentwicklung der Werkstätten für behinderte Menschen und bessere Einkommen der Werkstattbeschäftigten",
+      "zitat": "Dazu werden wir die Aufnahme einer Arbeit auf dem allgemeinen Arbeitsmarkt verstärkt fördern und die Weiterentwicklung der Werkstätten für behinderte Menschen zügig umsetzen. Dabei werden wir auch die Einkommenssituation der Werkstattbeschäftigten verbessern.",
+      "ursachen_ids": [
+        2602
+      ],
+      "pruefsumme": "4467e89876005988"
+    },
+    {
+      "kennung": "M19",
+      "ebene": "bund",
+      "beschreibung": "Anlaufstellen des Sozialstaats barrierefrei und auch digital erreichbar machen",
+      "zitat": "Wir arbeiten auf zentrale Anlaufstellen hin, die für alle wohnortnah, sozialräumlich, niedrigschwellig, mehrsprachig, barrierefrei und auch digital erreichbar sind.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2601
+      ],
+      "pruefsumme": "d9ae47285a742f94"
+    },
+    {
+      "kennung": "M20",
+      "ebene": "bund",
+      "beschreibung": "Praxisnahe Förderung und Arbeitsvermittlung für Menschen mit Behinderung auf dem ersten Arbeitsmarkt",
+      "zitat": "Durch praxisnahe Förderung und Arbeitsvermittlung verbessern wir die Chancen auf dem ersten Arbeitsmarkt.",
+      "ursachen_ids": [
+        2602
+      ],
+      "pruefsumme": "babc7105e74683e5"
+    },
+    {
+      "kennung": "M21",
+      "ebene": "bund",
+      "beschreibung": "Beschäftigungspflicht für Menschen mit Behinderung wieder auf sechs Prozent anheben; Betriebe sollen sich nicht freikaufen können.",
+      "zitat": "Die Beschäftigungspflicht von Menschen mit Behinderungen muss wieder auf sechs Prozent angehoben werden. Die Betriebe dürfen sich daraus nicht rauskaufen können.",
+      "ursachen_ids": [
+        2602
+      ],
+      "pruefsumme": "d083b09dbf29f6ad"
+    },
+    {
+      "kennung": "M22",
+      "ebene": "bund",
+      "beschreibung": "Ausgleichsabgabe anpassen und gesetzliche Schlupflöcher schließen, damit Arbeitgeber ihrer Beschäftigungspflicht nachkommen.",
+      "zitat": "Damit Arbeitgeber*innen ihrer Beschäftigungspflicht nachkommen, schließen wir gesetzliche Schlupflöcher und passen die Ausgleichsabgabe an.",
+      "ursachen_ids": [
+        2602
+      ],
+      "pruefsumme": "2c8b40708a0f2c89"
+    },
+    {
+      "kennung": "M23",
+      "ebene": "bund",
+      "beschreibung": "Verstärkte Förderung der Aufnahme einer Arbeit auf dem allgemeinen Arbeitsmarkt für Menschen mit Behinderung",
+      "zitat": "Wir sichern die Verwirklichung des gleichen Rechts auf Arbeit für Menschen mit Behinderungen. Dazu werden wir die Aufnahme einer Arbeit auf dem allgemeinen Arbeitsmarkt verstärkt fördern[…]",
+      "ursachen_ids": [
+        2602
+      ],
+      "pruefsumme": "1b01a051d13eac48"
+    },
+    {
+      "kennung": "M24",
+      "ebene": "bund",
+      "beschreibung": "Modellprojekte zur beruflichen Integration von Menschen mit Behinderung in Bundesverwaltungen.",
+      "zitat": "Zusätzlich setzen wir uns dafür ein, dass in den Bundesverwaltungen Modellprojekte für die berufliche Integration von Menschen mit Behinderungen über die gesetzlichen Vorgaben hinaus geschaffen werden.",
+      "ursachen_ids": [
+        2602
+      ],
+      "pruefsumme": "b6305db9330fc5ad"
+    },
+    {
+      "kennung": "M25",
+      "ebene": "bund",
+      "beschreibung": "Sportstätten und Schwimmbäder barrierefrei schaffen und vom Bund fördern lassen.",
+      "zitat": "Sport muss als Teil der Daseinsvorsorge öffentlich gefördert werden. Dazu gehören die Sanierung von Turnhallen und Sportplätzen sowie die Schaffung moderner, barrierefreier und ökologischer Sportstätten und Schwimmbäder.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2601
+      ],
+      "pruefsumme": "2fc97bad092d7a88"
+    },
+    {
+      "kennung": "M26",
+      "ebene": "bund",
+      "beschreibung": "Quote für barrierefreie Wohnungsangebote einführen.",
+      "zitat": "Wir wollen eine Quote für altersgerechte und barrierefreie Wohnungsangebote und ein gesetzliches Verbot von Zwangsräumungen bei älteren Menschen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2601
+      ],
+      "pruefsumme": "d9925afeb1609735"
+    },
+    {
+      "kennung": "M27",
+      "ebene": "bund",
+      "beschreibung": "Inklusionsbetriebe besser öffentlich finanzieren.",
+      "zitat": "Inklusionsbetriebe besser fördern, denn diese leisten einen wesentlichen Beitrag zur Inklusion in den allgemeinen Arbeitsmarkt. Sie brauchen eine bessere öffentliche Finanzierung.",
+      "ursachen_ids": [
+        2602
+      ],
+      "pruefsumme": "ca42b2c9107c9d93"
+    },
+    {
+      "kennung": "M28",
+      "ebene": "bund",
+      "beschreibung": "Mehr Barrierefreiheit im öffentlichen Leben",
+      "zitat": "Wir setzen uns für mehr Barrierefreiheit im öffentlichen Leben ein.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2601
+      ],
+      "pruefsumme": "755ef74cc375b732"
+    },
+    {
+      "kennung": "M29",
+      "ebene": "bund",
+      "beschreibung": "Barrierefreiheit umfassend herstellen und private Anbieter öffentlich zugänglicher Güter und Dienste verpflichten.",
+      "zitat": "Wir wollen Barrierefreiheit umfassend herstellen und (auch) die Privatwirtschaft dazu verpflichten. Dafür müssen verbindliche Regelungen in das Allgemeine Gleichbehandlungsgesetz (AGG) und in das Behindertengleichstellungsgesetz (BGG) aufgenommen werden, mit denen private Anbieter*innen von öffentlich zugänglichen Gütern und Dienstleistungen zur Herstellung von Barrierefreiheit verpflichtet werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2601
+      ],
+      "pruefsumme": "4746b39dc568803d"
+    },
+    {
+      "kennung": "M30",
+      "ebene": "bund",
+      "beschreibung": "Schwerbehindertenvertretungen in den Betrieben stärken",
+      "zitat": "Zudem wollen wir neben besseren Chancen für Menschen mit Behinderungen auf dem Arbeitsmarkt auch die Schwerbehindertenvertretungen in den Betrieben sowie die politische Selbstvertretung stärken.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2602
+      ],
+      "pruefsumme": "f03a5a228ce94e4a"
+    },
+    {
+      "kennung": "M31",
+      "ebene": "bund",
+      "beschreibung": "Bürokratische Hürden abbauen und durch Aufklärung Vorurteile gegenüber Beschäftigung von Menschen mit Behinderung abbauen.",
+      "zitat": "Wir wollen das Potenzial von Menschen mit Behinderung auch auf den Arbeitsmarkt bringen. Dazu bauen wir bürokratische Hürden und durch Aufklärung Vorurteile ab.",
+      "ursachen_ids": [
+        2603
+      ],
+      "pruefsumme": "ca19bf23435bdf81"
+    },
+    {
+      "kennung": "M32",
+      "ebene": "bund",
+      "beschreibung": "Der Bund übernimmt die Hauptfinanzierung für Instandhaltung, Ausbau und Modernisierung der Bahn-Infrastruktur",
+      "zitat": "Für Instandhaltung, Ausbau und Modernisierung übernimmt der Bund die Hauptfinanzierung.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2601
+      ],
+      "pruefsumme": "b43200e90cf8367a"
+    },
+    {
+      "kennung": "M33",
+      "ebene": "bund",
+      "beschreibung": "Veraltete Regelwerke erneuern, um Ausnahmen bei der Barrierefreiheit im Nahverkehr zu beenden.",
+      "zitat": "Wir wollen den Stadtumbau stärker fördern und veraltete Regelwerke erneuern, etwa um Ausnahmen bei der Barrierefreiheit im Nahverkehr zu beenden.",
+      "ursachen_ids": [
+        2601
+      ],
+      "pruefsumme": "a7c95fcde79df87b"
+    },
+    {
+      "kennung": "M34",
+      "ebene": "bund",
+      "beschreibung": "Abbau von Barrieren fördern; Barrierefreiheit als Standard in der Förderung verankern",
+      "zitat": "Wir wollen den Abbau von Barrieren für generationenübergreifendes gemeinschaftliches Leben fördern. Barrierefreiheit soll als Standard stärker in der Fördersystematik verankert werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2601
+      ],
+      "pruefsumme": "8c0abf474d21ba6e"
+    },
+    {
+      "kennung": "M35",
+      "ebene": "bund",
+      "beschreibung": "Hürden beim Eintritt und bei der Rückkehr ins Berufsleben sowie bei der Qualifizierung beseitigen.",
+      "zitat": "Hürden bei Eintritt und Rückkehr ins Berufsleben sowie bei der Qualifizierung beseitigen wir.",
+      "ursachen_ids": [
+        2603
+      ],
+      "pruefsumme": "80bcaf528d54e406"
+    },
+    {
+      "kennung": "M36",
+      "ebene": "bund",
+      "beschreibung": "Betriebliches Eingliederungsmanagement stärken und verbindlicher machen, Reha und Prävention ausbauen",
+      "zitat": "Deswegen werden wir eine deutliche Steigerung der durchgeführten ganzheitlichen Gefährdungsbeurteilungen vorantreiben, das betriebliche Eingliederungsmanagement (BEM) stärken und verbindlicher machen sowie Reha und Prävention ausbauen und Zugänge vereinfachen und verbessern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2603
+      ],
+      "pruefsumme": "91e3fde63b389db1"
+    },
+    {
+      "kennung": "M37",
+      "ebene": "bund",
+      "beschreibung": "Nachweis einer dauerhaften Behinderung nur noch einmal erbringen",
+      "zitat": "Der Nachweis einer dauerhaften Behinderung muss künftig nur noch einmalig erbracht werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2603
+      ],
+      "pruefsumme": "ece0cabf5eee615b"
+    },
+    {
+      "kennung": "M38",
+      "ebene": "bund",
+      "beschreibung": "Mehr barrierefreie Neubaumietwohnungen im sozialen Wohnungsbau; stärkere Unterstützung bei Umbaumaßnahmen.",
+      "zitat": "Wir wollen den Trend zu einem steigenden Anteil von barrierefreien Neubaumietwohnungen im sozialen Wohnungsbau deutlich beschleunigen und unterstützen die Betroffenen stärker bei Umbaumaßnahmen, damit sie in ihren Wohnungen selbstbestimmt leben können.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2601
+      ],
+      "pruefsumme": "50d7d9828213baf7"
+    },
+    {
+      "kennung": "M39",
+      "ebene": "bund",
+      "beschreibung": "Werkstattsystem schrittweise zu Inklusionsunternehmen mit Mindestlohn und Rentenansprüchen weiterentwickeln.",
+      "zitat": "Das heutige ausgrenzende Werkstättensystem wollen wir schrittweise in Richtung Inklusionsunternehmen weiterentwickeln, in denen Menschen mit und ohne Behinderung gemeinsam arbeiten, mindestens nach Mindestlohn entlohnt werden und existenzsichernde Rentenansprüche erwerben können.",
+      "ursachen_ids": [
+        2602
+      ],
+      "pruefsumme": "2aaee7fa4d7f4be9"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "partei_id": 15,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Fallpauschalen im Krankenhaus abschaffen, mittelfristig individuelle Budgetvereinbarungen",
+      "ursachen_ids": [
+        3801
+      ],
+      "zitat": "Notwendig ist die vollständige Abschaffung der Fallpauschalen und mittelfristig die Rückkehr zu individuellen Budgetvereinbarungen",
+      "seite": 28
+    },
+    {
+      "beschreibung": "Bundeseinheitliche gesetzliche Personalbemessung in pflegesensitiven Krankenhausbereichen",
+      "ursachen_ids": [
+        3801
+      ],
+      "zitat": "Eine bundeseinheitliche, gesetzliche Personalbemessung für alle […] pflegesensitiven Bereiche ist zur Sicherstellung der pflegerischen Versorgung unerlässlich.",
+      "seite": 28
+    },
+    {
+      "beschreibung": "Ende der Behandlung ohne Vergütungsanspruch in der ambulanten ärztlichen Versorgung",
+      "ursachen_ids": [
+        3801
+      ],
+      "zitat": "Die Rationierung ärztlicher Leistungen durch den Zwang, Behandlungen ohne Vergütungsanspruch zu erbringen, muss beendet werden.",
+      "seite": 28
+    },
+    {
+      "beschreibung": "Finanzielle und organisatorische Niederlassungshilfen für Ärzte im ländlichen Raum",
+      "ursachen_ids": [
+        3801
+      ],
+      "zitat": "Zur Förderung der Niederlassung von Ärzten im ländlichen Räumen sind finanzielle und organisatorische Niederlassungshilfen zu etablieren.",
+      "seite": 28
+    },
+    {
+      "beschreibung": "Gestaffelte Bonus- und Rückvergütungssysteme gegen Bagatellbehandlungen",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3801
+      ],
+      "zitat": "Um einer ungesteuerten Leistungsausweitung durch Bagatellbehandlungen zu begegnen, sind gestaffelte Bonus- bzw. Rückvergütungssysteme sinnvoll.",
+      "seite": 28
+    },
+    {
+      "beschreibung": "Bürgergeld-Mitversicherung in der Krankenversicherung vollständig aus dem Bundeshaushalt finanzieren",
+      "ursachen_ids": [
+        3802
+      ],
+      "buendel": "Steuerfinanzierung versicherungsfremder Leistungen",
+      "zitat": "Das werden wir verhindern, indem die beitragsfreie Mitversicherung der Bürgergeldempfänger, die heute zu zwei Dritteln vom Beitragszahler finanziert wird, zukünftig vollständig aus dem Bundeshaushalt aufgebracht wird.",
+      "seite": 22
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 3803,
+      "seiten": [
+        22
+      ],
+      "grund": "Keine Aussage zu Kassenrücklagen, Mindestreserve oder zur Lücke zwischen erhobenem und bekanntgegebenem Zusatzbeitrag. Die Verwaltungskostensenkung (S. 22) betrifft keine Rücklagen."
+    },
+    {
+      "ursache": 3804,
+      "seiten": [
+        22,
+        28,
+        29
+      ],
+      "grund": "Keine gesetzliche Zuzahlung, kein Eigenanteil und keine Belastungsgrenze genannt. Häusliche Pflege (S. 29) betrifft Pflegegeld und Pflegekasse, nicht Zuzahlungen bei GKV-Leistungen."
+    }
+  ]
+}
+
+
+--- Protokoll ---
+
+Gelesene Seiten: Inhaltsverzeichnis (S. 1–8); Kapitel „Soziale Marktwirtschaft und Gesundheit“ (S. 10–35, S. 10 Trennseite, S. 35 leer), besonders S. 17–22 (Zweckentfremdung der Sozialversicherungen, Renten, Mitversicherung), S. 22–34 (Grundsicherung und Gesundheitspolitik). Fundstellen aus dem Auftrag: S. 18, 20, 21, 22, 28 gelesen; S. 5 (Inhaltsverzeichnis), S. 57, 61, 166 nur als Wortteile (Öffentlichkeitsarbeit, Kapitalerträge, Halbleiter-Subventionen) gesehen, nicht einschlägig.
+
+Richtungen ohne Maßnahme:
+- 3801 Einnahmebasis verbreitern (Beitragsbemessungsgrenze, Kapitaleinkommen, Versichertenkreis): nicht gefunden. Die Arbeitsmarktmaßnahmen im Bürgergeld-Kapitel (S. 24–27) betreffen Vermittlung, nicht die Beitragsbasis.
+- 3801 Einnahmen nicht erhöhen: keine Aussage zur Beitragsbemessungsgrenze.
+- 3803 (Rücklagenregeln, Zusatzbeitrag an Bedarf binden): nicht gefunden.
+- 3804 (Zuzahlungen senken, erhöhen, Belastungsgrenze): nicht gefunden.
+- 3802 Beitragsfreie Mitversicherung von Kindern und Ehepartnern: nicht gefunden (nur Bürgergeldempfänger, S. 22).
+
+Gleichartige Stellen zum Bündel „Steuerfinanzierung versicherungsfremder Leistungen“ (nicht als eigene Maßnahme erfasst):
+- S. 18: „Versicherungsfremde Leistungen sind daher nicht aus den Beiträgen zu den Sozialversicherungen, sondern aus dem Bundeshaushalt zu finanzieren.“ (allgemeiner, konkrete Stelle S. 22 gewählt)
+- S. 19: nicht beitragsgedeckte Leistungen der Rentenversicherung aus dem Bundeshaushalt finanzieren. Rentenversicherung, nicht GKV; nicht erfasst.
+
+Nicht erfasst:
+- S. 22: Verwaltungskosten senken, Zusammenführung von Kranken- und Pflegeversicherung: nach R1 keine Ausgaben von Ursache 1 (Verwaltung ausgeschlossen); kein Bezug zu Rücklagen (3803).
+- S. 28: Arzneimittel (Versandhandelverbot für rezeptpflichtige Medikamente, Rückverlagerung der Produktion, Vorhaltung im Großhandel): Versorgungssicherheit, keine Ausgabenwirkung nach R1.
+- S. 18–21: Junior-Spardepot (S. 20), Willkommensprämie (S. 21) und Rentenbausteine aus Steuermitteln: Altersvorsorge, nicht GKV.
+- S. 23–27: Bürgergeld und Grundsicherung: Arbeitsmarkt und Vermittlung, keine GKV-Einnahmebasis.
+- S. 29: Häusliche Pflege, Pflegekasse: Pflegeversicherung, nicht Ursache 1–4.
+- S. 33: Entbürokratisierung im Gesundheitswesen: Verwaltung, nach R1 ausgeschlossen.
+- S. 31–34: Corona, WHO, Organspende, Impfung, Heilpraktiker, Telematik: kein Ursachenbezug (S. 33 Heilpraktiker: „Kostenerstattungspflicht der GKV ist hiermit jedoch nicht verbunden“).
+
+Seiten ohne Text: S. 35 und S. 10 (Trennseiten), für die Ergebnisse ohne Belang.
+Stand: Titelseite und Vorwort wie im Auftrag (Parteitag Januar 2025).

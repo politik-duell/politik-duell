@@ -1,0 +1,65 @@
+{
+  "partei_id": 17,
+  "land": "BE",
+  "massnahmen": [
+    {
+      "beschreibung": "Meldeportale für strafrechtlich nicht relevante Meinungsäußerungen abschaffen",
+      "ursachen_ids": [2501],
+      "buendel": "Meldewege und Hilfe für Betroffene ausbauen",
+      "zitat": "Wir sind für die Abschaffung von Meldeportalen für strafrechtlich nicht relevante Meinungsäußerungen (Berliner Register etc.). Sie stigmatisieren unliebsame Meinungsäußerungen.",
+      "seite": 31
+    },
+    {
+      "beschreibung": "Verbindlicher digitaler Führerschein über Medienkenntnisse für alle Schülerinnen und Schüler",
+      "ursachen_ids": [],
+      "ursachen_offen": [2503],
+      "zitat": "Wir fordern, dass alle Schülerinnen und Schüler am Ende der 10. Klasse einen verbindlichen digitalen Führerschein erwerben, der Kenntnisse im Umgang mit Medien, Datenschutz und Informationsbewertung nachweist.",
+      "seite": 16
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 2503,
+      "seiten": [16, 40, 65],
+      "grund": "Digitaler Führerschein (S. 16) nur als Grenzfall offen, ohne Bezug zu Hass im Netz im Zitat. Ablehnung von Zensur und Upload-Filtern (S. 65) ist keine Handlungszusage. Cybermobbing-Fortbildung (S. 40) gehört nach R2 zu Mobbing in der Schule (Thema 23)."
+    },
+    {
+      "ursache": 2501,
+      "seiten": [33],
+      "grund": "Projekte gegen homophobe Gewalt (S. 33) betreffen Gewalt im öffentlichen Raum, nicht Hass oder Anfeindung im Netz."
+    }
+  ],
+  "eigene_synonyme": [
+    {
+      "begriff": "meldeportal",
+      "ursache": 2501,
+      "richtung": "abschaffen"
+    },
+    {
+      "begriff": "digitaler führerschein",
+      "ursache": 2503,
+      "richtung": "einführen"
+    }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Textdatei gesamt per Gliederung (kein Inhaltsverzeichnis; Seiten 1–6 Einleitung ohne Bezug). Kapitel „Meinungsfreiheit schützen“ (S. 31); Kapitel „Bildung“, Abschnitt „Digitalisierung und Medienbildung“ (S. 16); Kapitel „Innere Sicherheit“, Abschnitte „Prävention und Bekämpfung von Gewalt an Schulen“ und „Gewalt im öffentlichen Raum“ (S. 40–41); Kapitel „Digitalisierung, die wirklich nützt“ (S. 64–65, Abschnitte Privatsphäre, Zugang zu Informationen, KI; S. 66 nur überflogen); ÖRR-Abschnitt (S. 30–31).
+
+Nicht erfasst (gelesen, nicht aufgenommen):
+- S. 16: digitaler Führerschein – als Grenzfall offen für 2503 aufgenommen (Medienkompetenz ohne ausdrücklichen Hassbezug).
+- S. 40: „Cybermobbing und Online-Kriminalität unter Jugendlichen sagen wir den Kampf an“ mit Fortbildungen – nach R2 Mobbing unter Schülern, also Thema 23, nicht hier.
+- S. 65: „Zensur, Upload-Filter und pauschale Blockaden widersprechen diesen Prinzipien“ – Ablehnung, keine Maßnahme gegen Hass.
+- S. 33: „Mittel … in Projekte gegen homophobe Gewalt umgelenkt“ – offline, kein Netzbezug.
+- S. 2 (Meinungsfreiheit, Cancel Culture) – Haltung, keine Maßnahme.
+- S. 64: Digitalisierung „inklusiv und fair“, Datenschutz, offene Daten, KI-Regeln – allgemeine Netzpolitik ohne Bezug zu Hass oder Anfeindung (R2).
+
+Richtungen ohne Maßnahme:
+- Bündel „Meldewege und Hilfe für Betroffene ausbauen“: nur Abschaffung von Meldeportalen gefunden (Richtung abschaffen, erfasst); kein Ausbau von Meldestellen oder Betroffenenhilfe gefunden.
+- Bündel „Strafverfolgung von Hass und Bedrohung im Netz“ (2501): keine Stelle im Programm.
+- Bündel „Prävention, Medienkompetenz und Gesprächskultur“ (2503): nur der Grenzfall digitaler Führerschein.
+- Bündel „Moderation und Gestaltung der Plattformen“ (2503): keine Maßnahme (S. 65 nur Ablehnung).
+
+Seiten ohne Text: keine relevanten.
+Stand im PDF: wie im Auftrag (Titelseite ohne abweichendes Datum).

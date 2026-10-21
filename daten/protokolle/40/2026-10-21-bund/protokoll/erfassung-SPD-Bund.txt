@@ -1,0 +1,41 @@
+{
+  "partei_id": 12,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Zuschläge für Mehrarbeit steuerfrei stellen", "ursachen_ids": [4001], "buendel": "Mehrarbeit vergüten oder ausgleichen", "zitat": "Damit sich Mehrarbeit auszahlt, werden Zuschläge für Mehrarbeit, die über die tariflich vereinbarte Vollzeitarbeit hinausgehen, steuerfrei gestellt.", "seite": 24 },
+    { "beschreibung": "Steuerlich begünstigte Arbeitgeberprämie für mehr Stunden bei Teilzeitbeschäftigten", "ursachen_ids": [4002], "buendel": "Stunden aufstocken und Rückkehr in Vollzeit", "zitat": "Wir werden einen neuen steuerlichen Anreiz zur Ausweitung der Arbeitszeit von Teilzeitbeschäftigten schaffen: Wenn Arbeitgeber eine Prämie für die Ausweitung der Arbeitszeit zahlen, werden wir diese Prämie steuerlich begünstigen.", "seite": 24 },
+    { "beschreibung": "Teilzeitmodelle und Job-Sharing im öffentlichen Dienst", "ursachen_ids": [], "ursachen_offen": [4002], "buendel": "Anspruch auf Teilzeit ausbauen", "zitat": "Wir wollen den Staat als Arbeitgeber attraktiver machen – mit flächendeckendem Homeoffice, Job-Sharing und Teilzeitmodellen im öffentlichen Dienst.", "seite": 38 },
+    { "beschreibung": "Kürzere Wochenarbeitszeit als Freizeitausgleich für Beschäftigte in Gesundheitsberufen", "ursachen_ids": [], "ursachen_offen": [4002], "buendel": "Kürzere Arbeitszeit für alle", "zitat": "Außerdem treten wir für mehr Freizeitausgleich ein – beispielsweise durch eine verkürzte Wochenarbeitszeit.", "seite": 32 },
+    { "beschreibung": "Ausbau vollzeitnaher Stellen in Kitas und Schulen im Rahmen einer Fachkräfteoffensive", "ursachen_ids": [], "ursachen_offen": [4002], "neue_buendel": [{ "ursache": 4002, "name": "Vollzeitnahe Stellen in Kitas", "seite": 15 }], "zitat": "Wir wollen daher eine Fachkräfteoffensive für Kitas und Schulen verbindlich zwischen allen Bundesländern vereinbaren, die unter anderem den Ausbau von Ausbildungskapazitäten, eine entlohnte Ausbildung für Erzieherinnen und Erzieher, multiprofessionelle Teams, die verstärkte Ansprache von Quereinsteigenden aus anderen Berufen sowie den Ausbau vollzeitnaher Tätigkeit bei den meist weiblichen Beschäftigten umfasst.", "seite": 15 },
+    { "beschreibung": "Freistellung von Vätern oder Partnern nach der Geburt mit Lohnfortzahlung", "ursachen_ids": [4003], "buendel": "Elternzeit und Familienzeit", "zitat": "Väter oder Partnerinnen und Partner sollen sich für die ersten zwei Wochen nach der Geburt eines Kindes bei voller, umlagefinanzierter Lohnfortzahlung freistellen lassen können.", "seite": 26 },
+    { "beschreibung": "Elterngeld mit nicht übertragbaren Monaten je Elternteil und weiteren frei verteilbaren Monaten", "ursachen_ids": [], "ursachen_offen": [4003], "neue_buendel": [{ "ursache": 4003, "name": "Elterngeld-Monate für beide Elternteile", "seite": 26 }], "zitat": "Jeder Elternteil soll Anspruch auf sechs nicht übertragbare Monate Elterngeld erhalten. Zusätzlich gibt es weitere sechs Monate, die frei auf beide Elternteile verteilt werden können.", "seite": 26 },
+    { "beschreibung": "Familienpflegezeit und Familienpflegegeld für Vereinbarkeit von Pflege und Beruf", "ursachen_ids": [4003], "buendel": "Pflegezeit als Freistellung", "zitat": "Mit einer Familienpflegezeit und einem Familienpflegegeld, ähnlich wie beim Elterngeld, ermöglichen wir die Vereinbarkeit von Pflege und Beruf ohne finanzielle Einbußen.", "seite": 48 },
+    { "beschreibung": "Flächendeckendes Homeoffice im öffentlichen Dienst", "ursachen_ids": [], "ursachen_offen": [4003], "buendel": "Mobiles Arbeiten", "zitat": "Wir wollen den Staat als Arbeitgeber attraktiver machen – mit flächendeckendem Homeoffice, Job-Sharing und Teilzeitmodellen im öffentlichen Dienst.", "seite": 38 },
+    { "beschreibung": "Flexible Arbeitszeitmodelle für mehr Zeit für die Familie", "ursachen_ids": [], "ursachen_offen": [4003], "buendel": "Gleitzeit und feste Arbeitszeitlage", "zitat": "Flexible Arbeitszeitmodelle und eine verlässliche Betreuungsinfrastruktur in Kitas und Schulen schaffen mehr Zeit für die Familie.", "seite": 47 }
+  ],
+  "neue_buendel": [
+    { "ursache": 4002, "name": "Vollzeitnahe Stellen in Kitas", "seite": 15 },
+    { "ursache": 4003, "name": "Elterngeld-Monate für beide Elternteile", "seite": 26 }
+  ]
+}
+
+Protokoll (Teilauftrag 40, Arbeitszeit, Erreichbarkeit und Vereinbarkeit)
+
+Gelesen: Inhaltsverzeichnis (S. 3); Kap. 3 Arbeitsmarkt (S. 12 bis 14, ohne Arbeitszeitbezug); Kap. 4 Bildung (S. 15, Fachkräfteoffensive); Kap. 5 Finanzpolitik (S. 24, Steuern auf Mehrarbeit und Prämien); Kap. 7 Arbeit (S. 23, 24); Kap. 9 Familie (S. 25 bis 27); Kap. 10 und 11 Gesundheit und Pflege (S. 28 bis 32); Kap. 14 Staat (S. 37, 38); Kap. 17 Gleichstellung (S. 47, 48). S. 1, 2, 67, 68 ohne Text.
+
+Zu den Ursachen:
+- 4001 (Mehrarbeit): steuerfreie Zuschläge für Mehrarbeit (S. 24, Bündel „Mehrarbeit vergüten oder ausgleichen“). Gleichartig und nicht separat erfasst: Freizeitausgleich für Gesundheitsberufe (S. 32).
+- 4002 (Umfang): Prämie für Ausweitung bei Teilzeit (S. 24), Teilzeitmodelle im öffentlichen Dienst (S. 38, offen), verkürzte Wochenarbeitszeit für Gesundheitsberufe (S. 32, offen), vollzeitnahe Stellen in Kitas (S. 15, offen). Gleichartig nicht separat: Unterstützung der Gewerkschaften bei Arbeitszeitverkürzung (S. 26, siehe Nicht erfasst).
+- 4003 (Betreuung und Pflege als Grund): Familienstartzeit (S. 26, Bündel „Elternzeit und Familienzeit“), Elterngeld-Monate (S. 26, offen), Familienpflegezeit (S. 48, Bündel „Pflegezeit als Freistellung“; gleichartig S. 31), Homeoffice im öffentlichen Dienst (S. 38, offen), flexible Arbeitszeitmodelle (S. 47, offen).
+
+Nicht erfasst:
+- S. 26: „Wir unterstützen die Gewerkschaften in dem gemeinsamen Ziel … Arbeitszeitverkürzung oder mehr Wahloptionen“: Unterstützung eines Ziels der Tarifparteien, keine eigene Maßnahme (Leitfaden: Tarifautonomie).
+- S. 47: „Die Modernisierung von Arbeitszeitmodellen ermöglicht eine bessere Balance“: allgemeines Ziel ohne Handlung.
+- S. 32: Dienstzeiten und Vergütung im praktischen Jahr (Ausbildung): Leitfaden 4002 mit Grenzfall Ausbildung, keine konkrete Zusage zum Umfang.
+- S. 32: Dokumentationsaufwand, KI-gestützte Dokumentation: keine Arbeitszeitmaßnahme.
+- S. 31, 48: Familienpflegegeld als Lohnersatz (Leitfaden R3 ordnet Pflegegeld zu T10). Nur die Freistellung wurde erfasst.
+- S. 13: Gefährdungsbeurteilung und betriebliches Eingliederungsmanagement: Arbeitsschutz, nicht Arbeitszeit.
+- S. 24: Mini-Jobs und Übergänge: Beschäftigungsform, kein Arbeitszeitbezug.
+
+Richtungen ohne Maßnahme: 4001 „Tägliche Höchstarbeitszeit einhalten“, „Arbeitszeit erfassen und kontrollieren“, „Wöchentliche Höchstarbeitszeit statt Tagesgrenze“ (keine Zusage zu Höchst- oder Ruhezeiten, Zeiterfassung oder Kontrolle). 4002 „Wahlarbeitszeit und Arbeitszeitkonto“ (nur Unterstützung der Gewerkschaften, S. 26).
+Seiten ohne Text, für das Ergebnis nicht relevant: 1, 2, 67, 68.

@@ -1,0 +1,610 @@
+{
+  "pruefsumme": "7298d522419f80b4ad3b5bfb1f1d4ce9eea1ee872ea15ab9f54fd9c9beaba025",
+  "thema": {
+    "id": 38,
+    "name": "Krankenkasse: Beiträge und Leistungen",
+    "ziel": "Versicherte zahlen einen Beitrag, der stabil und bezahlbar bleibt, und erhalten die medizinisch nötigen Leistungen mit Eigenanteilen, die sie sich leisten können."
+  },
+  "ursachen": [
+    {
+      "id": 3801,
+      "beschreibung": "Die Leistungsausgaben der GKV wachsen schneller als die Beitragseinnahmen: im 1. Quartal 2026 +8,0 % gegenüber +4,1 % (ohne Zusatzbeitrag); ohne Reformen 4,7 % Zusatzbeitrag bis 2030",
+      "ebene": "bund"
+    },
+    {
+      "id": 3802,
+      "beschreibung": "Der Bund erstattet versicherungsfremde Leistungen nicht voll: Laut Finanzkommission Gesundheit (2026) brächte die Erstattung 12,5 Mrd. Euro; Abgrenzung umstritten",
+      "ebene": "bund"
+    },
+    {
+      "id": 3803,
+      "beschreibung": "Die Kassen füllen nach Defiziten ihre Rücklagen auf: erhobener Zusatzbeitrag Ende März 2026 im Schnitt 3,13 % (bekanntgegeben 2,9 %), Reserven nur rund 0,2 Monatsausgaben",
+      "ebene": "bund"
+    },
+    {
+      "id": 3804,
+      "beschreibung": "Gesetzliche Zuzahlungen fallen u. a. bei Krankenhaus, Heilmitteln, häuslicher Krankenpflege und Fahrkosten an, bis zur Belastungsgrenze von 2 % der Bruttoeinnahmen (chronisch Kranke 1 %)",
+      "ebene": "bund"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        3801
+      ],
+      "text": "Zu 1 gehören Ausgaben der GKV, die schneller wachsen als die beitragspflichtigen Einnahmen (Krankenhaus, Arznei, ambulante Versorgung, Honorare) und die Frage, wie die Einnahmebasis aussieht (Beitragsbemessungsgrenze, Kapitaleinkommen, Versichertenkreis). Nicht dazu: Verwaltungskosten, Pflegeversicherung, der Zusatzbeitrag als Satz. Abgrenzung zu 3: Rücklagen sind eine Folge von Defiziten. Grenzfall Krankenhausinvestitionen (Länder): nur als ursachen_offen."
+    },
+    {
+      "nr": 2,
+      "ursachen": [
+        3802
+      ],
+      "text": "Zu 2 gehören Kosten versicherungsfremder Leistungen, die der Bund nicht oder nicht voll erstattet (z. B. Mitversicherung von Kindern und Ehepartnern, Versorgung von Bürgergeldbeziehenden). Nicht dazu: Ausgaben, die der Versicherungsgemeinschaft zuzurechnen sind. Grenzfall Mitversicherung: nur als ursachen_offen, bis die Abgrenzung belegt ist."
+    },
+    {
+      "nr": 3,
+      "ursachen": [
+        3803
+      ],
+      "text": "Zu 3 gehören Rücklagen der Kassen und die Lücke zwischen erhobenem und bekanntgegebenem Zusatzbeitrag. Nicht dazu: die laufenden Ausgaben (Ursache 1). Abgrenzung zu 1: Ursache 3 beschreibt, warum die Beiträge über dem Bedarf liegen, Ursache 1, warum der Bedarf steigt."
+    },
+    {
+      "nr": 4,
+      "ursachen": [
+        3804
+      ],
+      "text": "Zu 4 gehören gesetzliche Zuzahlungen und Eigenanteile, die Versicherte bei Krankenhaus, Heilmitteln, häuslicher Krankenpflege und Fahrkosten selbst tragen, sowie die Belastungsgrenze. Nicht dazu: Pflegeeigenanteile (T10). Grenzfall Leistungsausschluss, der keine Zuzahlung ist (z. B. Zahnersatz, Brillen): nur als ursachen_offen."
+    }
+  ],
+  "instrumente": [],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "bund",
+      "beschreibung": "Betriebskosten der Krankenhäuser vollständig von den Krankenkassen finanzieren; Fallpauschalen abschaffen.",
+      "zitat": "Wir wollen, dass die notwendigen Betriebskosten der Krankenhäuser von den Krankenkassen vollständig finanziert werden. Die Fallpauschalen müssen vollständig abgeschafft werden.",
+      "ursachen_ids": [
+        3801
+      ],
+      "pruefsumme": "82e8700cc70fa303"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "bund",
+      "beschreibung": "Mindestbemessungsgrenze in der Krankenversicherung für Soloselbstständige reformieren",
+      "zitat": "Um freiwillig versicherte, geringverdienende oder in Teilzeit beschäftigte Soloselbstständige besser abzusichern, werden wir die Mindestbemessungsgrenze in der gesetzlichen Krankenversicherung reformieren.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3801
+      ],
+      "pruefsumme": "825808397aa0b10d"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "bund",
+      "beschreibung": "Zahnersatz und Sehhilfen wieder vollständig in den Leistungskatalog der gesetzlichen Krankenversicherung aufnehmen",
+      "zitat": "Wir wollen notwendigen Zahnersatz und Sehhilfen vollständig in den Leistungskatalog der gesetzlichen Gesundheitsabsicherung zurückholen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3804
+      ],
+      "pruefsumme": "cce85bc902e8faa1"
+    },
+    {
+      "kennung": "M04",
+      "ebene": "bund",
+      "beschreibung": "Bund und Länder sollen nachhaltig in die Krankenhäuser investieren.",
+      "zitat": "Bund und Länder müssen nachhaltig in die Krankenhäuser investieren! Die Vermögensteuer kann ihnen dabei helfen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3801
+      ],
+      "pruefsumme": "f6ea4cb34cfca307"
+    },
+    {
+      "kennung": "M05",
+      "ebene": "bund",
+      "beschreibung": "Kommunale Versorgungszentren als Rückgrat der wohnortnahen Gesundheitsversorgung fördern.",
+      "zitat": "Wir wollen kommunale Versorgungszentren als Rückgrat der wohnortnahen Gesundheitsversorgung fördern!",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3801
+      ],
+      "pruefsumme": "69e075b6d314d8ea"
+    },
+    {
+      "kennung": "M06",
+      "ebene": "bund",
+      "beschreibung": "Kapitalerträge wie Arbeitseinkommen mit dem normalen Einkommensteuersatz belasten",
+      "zitat": "Kapitalerträge sind wie Arbeitseinkommen mit dem normalen Einkommenssteuersatz zu belasten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3801
+      ],
+      "pruefsumme": "6e4512cd602ffc03"
+    },
+    {
+      "kennung": "M07",
+      "ebene": "bund",
+      "beschreibung": "Versicherungsfremde Leistungen über den Staat finanzieren, etwa Rentenbeiträge pflegender Angehöriger und Beiträge für Bürgergeldbeziehende",
+      "zitat": "In den vergangenen Jahren wurden den Versicherungen jedoch viele Kosten zugeschoben, die aus Steuermitteln hätten finanziert werden sollen. Diesen Trend wollen wir umkehren und damit die Versicherten und die Arbeitgeber von versicherungsfremden Leistungen entlasten. Dazu gehört, dass wir die Finanzierung der Rentenbeiträge von pflegenden Angehörigen oder die Beiträge für Empfänger*innen von Bürgergeld angemessener über den Staat finanzieren.",
+      "ursachen_ids": [
+        3802
+      ],
+      "pruefsumme": "eb0132f0b5020ba5"
+    },
+    {
+      "kennung": "M08",
+      "ebene": "bund",
+      "beschreibung": "Fehl- und Überversorgung abbauen, unter anderem durch mehr Zweitmeinungsverfahren",
+      "zitat": "Und wir wollen wissenschaftliche Maßnahmen ergreifen, um Fehl- und Überversorgung abzubauen, zum Beispiel durch den Ausbau von Zweitmeinungsverfahren.",
+      "ursachen_ids": [
+        3801
+      ],
+      "pruefsumme": "31e5b5cf371394de"
+    },
+    {
+      "kennung": "M09",
+      "ebene": "bund",
+      "beschreibung": "Finanzielle und organisatorische Niederlassungshilfen für Ärzte im ländlichen Raum",
+      "zitat": "Zur Förderung der Niederlassung von Ärzten im ländlichen Räumen sind finanzielle und organisatorische Niederlassungshilfen zu etablieren.",
+      "ursachen_ids": [
+        3801
+      ],
+      "pruefsumme": "4b7f5178279eef30"
+    },
+    {
+      "kennung": "M10",
+      "ebene": "bund",
+      "beschreibung": "Private Versicherungen an den Transformationskosten der Krankenhäuser beteiligen",
+      "zitat": "Wir werden weiter darauf achten, dass sich auch die privaten Versicherungen an den Transformationskosten beteiligen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3801
+      ],
+      "pruefsumme": "52076d2dd971ec35"
+    },
+    {
+      "kennung": "M11",
+      "ebene": "bund",
+      "beschreibung": "Beitragsbemessungsgrenze in der Krankenversicherung abschaffen; Beiträge auf alle Einkommen erheben, auch auf Kapitalerträge.",
+      "zitat": "Wir setzen uns für eine solidarische Gesundheits- und Pflegeversicherung ein. Alle zahlen ein, Beiträge werden auf alle Einkommen erhoben, alle werden gut versorgt. Die Beitragsbemessungsgrenze fällt weg. Auch für Einkommen aus Kapitalerträgen und andere Einkommensarten müssen Beiträge gezahlt werden.",
+      "ursachen_ids": [
+        3801
+      ],
+      "pruefsumme": "9606422598295669"
+    },
+    {
+      "kennung": "M12",
+      "ebene": "bund",
+      "beschreibung": "Primärarztsystem in der ambulanten Versorgung: Haus- und Kinderärzte als erste Anlaufstelle.",
+      "zitat": "In der ambulanten Versorgung setzen wir uns für ein Primärarztsystem ein: Haus- und Kinderärzte sollten die erste Anlaufstelle für Patientinnen und Patienten sein.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3801
+      ],
+      "pruefsumme": "727863ea8683ad2c"
+    },
+    {
+      "kennung": "M13",
+      "ebene": "bund",
+      "beschreibung": "Abschaffung der Trennung der Versorgungssektoren (ambulant, Pflege, stationär)",
+      "zitat": "Wir fordern die Abschaffung der kostspieligen Trennung der verschiedenen Versorgungssektoren wie z. B. der ambulanten, Pflege- und stationären Versorgung.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3801
+      ],
+      "pruefsumme": "e0fc2e0e5a9fc466"
+    },
+    {
+      "kennung": "M14",
+      "ebene": "bund",
+      "beschreibung": "Ende der Behandlung ohne Vergütungsanspruch in der ambulanten ärztlichen Versorgung",
+      "zitat": "Die Rationierung ärztlicher Leistungen durch den Zwang, Behandlungen ohne Vergütungsanspruch zu erbringen, muss beendet werden.",
+      "ursachen_ids": [
+        3801
+      ],
+      "pruefsumme": "7835075f8d02d9b7"
+    },
+    {
+      "kennung": "M15",
+      "ebene": "bund",
+      "beschreibung": "Gesetzliche Krankenversicherung soll alle medizinisch sinnvollen Leistungen abdecken, etwa Zahnersatz und Brillen; nutzlose Leistungen sollen gestrichen werden.",
+      "zitat": "Unsere solidarische Gesundheitsversicherung soll evidenzbasiert alle medizinisch sinnvollen Leistungen wie Zahnersatz, Brillen und Ibuprofen abdecken – erwiesenermaßen nutzlose Leistungen können wir uns hingegen sparen.",
+      "ursachen_ids": [
+        3801
+      ],
+      "ursachen_offen": [
+        3804
+      ],
+      "pruefsumme": "8283fd03100e73ac"
+    },
+    {
+      "kennung": "M16",
+      "ebene": "bund",
+      "beschreibung": "Arzneimittelpreise in der EU einheitlich festlegen, um den Preisanstieg bei Arzneimitteln zu begrenzen.",
+      "zitat": "Preise müssen in der EU einheitlich festgelegt werden.",
+      "ursachen_ids": [
+        3801
+      ],
+      "pruefsumme": "ce71d1b735c078d2"
+    },
+    {
+      "kennung": "M17",
+      "ebene": "bund",
+      "beschreibung": "Krankenkassen sollen für vorsorgende Versicherte einen reduzierten Zusatzbeitrag einführen können.",
+      "zitat": "Wer Vorsorge betreibt, verursacht dadurch weniger Ausgaben für seine Krankenkasse. Deshalb wollen wir den Krankenkassen ermöglichen, für diese Versicherten einen reduzierten Zusatzbeitrag einzuführen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3801
+      ],
+      "pruefsumme": "d01a9d69eec87e7b"
+    },
+    {
+      "kennung": "M18",
+      "ebene": "bund",
+      "beschreibung": "Bundeseinheitliche gesetzliche Personalbemessung in pflegesensitiven Krankenhausbereichen",
+      "zitat": "Eine bundeseinheitliche, gesetzliche Personalbemessung für alle […] pflegesensitiven Bereiche ist zur Sicherstellung der pflegerischen Versorgung unerlässlich.",
+      "ursachen_ids": [
+        3801
+      ],
+      "pruefsumme": "de515c85a2437631"
+    },
+    {
+      "kennung": "M19",
+      "ebene": "bund",
+      "beschreibung": "Hausärzte als Ansprechpartner höher vergüten",
+      "zitat": "Besonders Hausärzte als Ansprechpartner der Patienten müssen höher vergütet werden.",
+      "ursachen_ids": [
+        3801
+      ],
+      "pruefsumme": "876f4357bf768b89"
+    },
+    {
+      "kennung": "M20",
+      "ebene": "bund",
+      "beschreibung": "Beitragsbemessung reformieren und auch Kapitaleinnahmen zur Finanzierung heranziehen",
+      "zitat": "Die Beitragsbemessung werden wir reformieren und beispielsweise auch Kapitaleinnahmen zur Finanzierung unseres Gesundheits- und Pflegesystems heranziehen.",
+      "ursachen_ids": [
+        3801
+      ],
+      "pruefsumme": "9f817dea4fe0597d"
+    },
+    {
+      "kennung": "M21",
+      "ebene": "bund",
+      "beschreibung": "Gestaffelte Bonus- und Rückvergütungssysteme gegen Bagatellbehandlungen",
+      "zitat": "Um einer ungesteuerten Leistungsausweitung durch Bagatellbehandlungen zu begegnen, sind gestaffelte Bonus- bzw. Rückvergütungssysteme sinnvoll.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3801
+      ],
+      "pruefsumme": "b952c3482184490b"
+    },
+    {
+      "kennung": "M22",
+      "ebene": "bund",
+      "beschreibung": "Krankenkassen sollen größere Mengen in Deutschland hergestellter Therapien einkaufen dürfen",
+      "zitat": "Krankenkassen sollen zusammen mit anderen nationalen und europäischen Akteuren größere Mengen an Therapien über längere Zeiträume einkaufen dürfen, wenn diese bei uns hergestellt werden.",
+      "ursachen_ids": [
+        3801
+      ],
+      "pruefsumme": "c617d49d0d7cb127"
+    },
+    {
+      "kennung": "M23",
+      "ebene": "bund",
+      "beschreibung": "Abrechnungsbetrug und Fehlverhalten im Gesundheitswesen wirkungsvoller begrenzen",
+      "zitat": "Abrechnungsbetrug und Fehlverhalten im Gesundheitswesen werden wir zusammen mit den Ländern wirkungsvoller begrenzen.",
+      "ursachen_ids": [
+        3801
+      ],
+      "pruefsumme": "860be50f5b7e3b22"
+    },
+    {
+      "kennung": "M24",
+      "ebene": "bund",
+      "beschreibung": "Gesetzliche Krankenkassen finanzieren versicherungsfremde Leistungen aus Steuermitteln",
+      "zitat": "Wir fordern die Steuerfinanzierung von versicherungsfremden Leistungen (z. B. Beiträge von Bürgergeld-Empfängern).",
+      "ursachen_ids": [
+        3802
+      ],
+      "pruefsumme": "ab80e9a541b8157d"
+    },
+    {
+      "kennung": "M25",
+      "ebene": "bund",
+      "beschreibung": "Beiträge stärker an der wirtschaftlichen Leistungsfähigkeit der Versicherten ausrichten",
+      "zitat": "Die Beiträge der Versicherten sollen sich noch stärker als jetzt an ihrer wirtschaftlichen Leistungsfähigkeit orientieren.",
+      "ursachen_ids": [
+        3801
+      ],
+      "pruefsumme": "d25ea19371213e15"
+    },
+    {
+      "kennung": "M26",
+      "ebene": "bund",
+      "beschreibung": "Begrenzung finanzieller Belastungen der Versicherten als Teil der Sicherheit im Gesundheitswesen",
+      "zitat": "Mit Maßnahmen wie einer Termingarantie, der Begrenzung finanzieller Belastungen und solidarischen Finanzierungsmodellen sorgen wir für mehr Sicherheit und Verlässlichkeit im Gesundheitswesen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3804
+      ],
+      "pruefsumme": "19ab35ff040d176b"
+    },
+    {
+      "kennung": "M27",
+      "ebene": "bund",
+      "beschreibung": "Fallpauschalen im Krankenhaus abschaffen, mittelfristig individuelle Budgetvereinbarungen",
+      "zitat": "Notwendig ist die vollständige Abschaffung der Fallpauschalen und mittelfristig die Rückkehr zu individuellen Budgetvereinbarungen",
+      "ursachen_ids": [
+        3801
+      ],
+      "pruefsumme": "f4ff9d39333bb1a6"
+    },
+    {
+      "kennung": "M28",
+      "ebene": "bund",
+      "beschreibung": "Finanzausgleich zwischen Krankenkassen gerechter gestalten und private Versicherungen einbeziehen",
+      "zitat": "Der Finanzausgleich zwischen den Krankenkassen soll gerechter ausgestaltet werden, und auch die privaten Versicherungen sollen zum Risikostrukturausgleich beitragen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3801
+      ],
+      "pruefsumme": "692ecdaf0e4c128f"
+    },
+    {
+      "kennung": "M29",
+      "ebene": "bund",
+      "beschreibung": "Ausgabenwachstum der GKV soll nicht stärker steigen als die Einnahmen.",
+      "zitat": "Um die ungebremste Leistungsausgabenentwicklung in der GKV in den Griff zu bekommen, sollen in Zukunft die Ausgaben nicht stärker wachsen als die Einnahmen.",
+      "ursachen_ids": [
+        3801
+      ],
+      "pruefsumme": "a343709d2163a32c"
+    },
+    {
+      "kennung": "M30",
+      "ebene": "bund",
+      "beschreibung": "Bürgerversicherung mit Einzahlung nach Einkommen einführen und Zusatzbeiträge abschaffen",
+      "zitat": "Wir fordern die Abschaffung der Zusatzbeiträge und die Einführung einer Bürgerversicherung, in die alle Bürger nach ihrem Einkommen einzahlen und grundsätzlich gleiche Leistungen auf dem Niveau der höchsten medizinischen Standards erhalten.",
+      "ursachen_ids": [
+        3801
+      ],
+      "ursachen_offen": [
+        3803
+      ],
+      "pruefsumme": "cebff119aad7a0d2"
+    },
+    {
+      "kennung": "M31",
+      "ebene": "bund",
+      "beschreibung": "Besondere Vergütung für Arzneimittel mit Therapieerfolgen.",
+      "zitat": "Therapieerfolge wollen wir besonders vergüten.",
+      "ursachen_ids": [
+        3801
+      ],
+      "pruefsumme": "a74f44152b4c0e8d"
+    },
+    {
+      "kennung": "M32",
+      "ebene": "bund",
+      "beschreibung": "Bürgergeld-Mitversicherung in der Krankenversicherung vollständig aus dem Bundeshaushalt finanzieren",
+      "zitat": "Das werden wir verhindern, indem die beitragsfreie Mitversicherung der Bürgergeldempfänger, die heute zu zwei Dritteln vom Beitragszahler finanziert wird, zukünftig vollständig aus dem Bundeshaushalt aufgebracht wird.",
+      "ursachen_ids": [
+        3802
+      ],
+      "pruefsumme": "a6e8cea63fb851b0"
+    },
+    {
+      "kennung": "M33",
+      "ebene": "bund",
+      "beschreibung": "Hausärztlich-zentrierte Primärversorgung stärken, für bessere Qualität und Effizienz",
+      "zitat": "Deshalb werden wir die hausärztlich-zentrierte Primärversorgung stärken, um eine bessere Behandlungsqualität und Effizienz zu erreichen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3801
+      ],
+      "pruefsumme": "e7d5d8cd86c6356b"
+    },
+    {
+      "kennung": "M34",
+      "ebene": "bund",
+      "beschreibung": "Psychotherapie über das Kostenerstattungsverfahren ermöglichen, solange zu wenig Psychotherapeut*innen zugelassen sind.",
+      "zitat": "Solange nicht genügend zugelassene Psychotherapeut*innen zur Verfügung stehen, müssen Therapien unbürokratisch über das Kostenerstattungsverfahren ermöglicht werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3801
+      ],
+      "pruefsumme": "6563a8ac01b94f77"
+    },
+    {
+      "kennung": "M35",
+      "ebene": "bund",
+      "beschreibung": "Gesetzlich vorgeschriebene Personalbemessung in Kliniken; mindestens 100 000 zusätzliche Pflegekräfte in den Krankenhäusern.",
+      "zitat": "Wir setzen uns für eine gesetzlich vorgeschriebene Personalbemessung ein, bei der es am Ende auch mehr Personal gibt, sowie für Schichtpläne ohne Stress. Es braucht mindestens 100 000 zusätzliche Pflegekräfte in den Krankenhäusern!",
+      "ursachen_ids": [
+        3801
+      ],
+      "pruefsumme": "2caa1effdc437a7e"
+    },
+    {
+      "kennung": "M36",
+      "ebene": "bund",
+      "beschreibung": "Beiträge für Selbstständige in der GKV an den tatsächlichen Einnahmen orientieren.",
+      "zitat": "Ungleichbehandlungen wollen wir deshalb abbauen und zum Beispiel die Beiträge für Selbstständige zur gesetzlichen Krankenversicherung an den tatsächlichen Einnahmen orientieren.",
+      "ursachen_ids": [
+        3801
+      ],
+      "pruefsumme": "c13d49f370d60e44"
+    },
+    {
+      "kennung": "M37",
+      "ebene": "bund",
+      "beschreibung": "Mehr Effizienz beim Einsatz der Beitragsgelder in der gesetzlichen Krankenversicherung, mehr Wettbewerb der Krankenkassen.",
+      "zitat": "[…] wir mehr Effizienz beim Einsatz von Beitragsgeldern an und stärken den Wettbewerb der Krankenkassen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3801
+      ],
+      "pruefsumme": "a9d91b088802f47f"
+    },
+    {
+      "kennung": "M38",
+      "ebene": "bund",
+      "beschreibung": "Krankenhausversorgung spezialisieren und die Kostenentwicklung bremsen.",
+      "zitat": "In der Krankenhausversorgung wollen wir spezialisierte und damit bessere Angebote vorhalten, die Kostenentwicklung bremsen und zugleich Ärzte und Pflegekräfte entlasten.",
+      "ursachen_ids": [
+        3801
+      ],
+      "pruefsumme": "41441e8d43f6cbfc"
+    },
+    {
+      "kennung": "M39",
+      "ebene": "bund",
+      "beschreibung": "Bessere psychotherapeutische Versorgung; Wartezeit auf einen Therapieplatz unter vier Wochen.",
+      "zitat": "Wir setzen uns für eine bessere psychotherapeutische Versorgung ein und wollen die Wartezeit auf einen Therapieplatz auf unter vier Wochen verkürzen.",
+      "ursachen_ids": [
+        3801
+      ],
+      "pruefsumme": "3bc1f829d66b4f1f"
+    },
+    {
+      "kennung": "M40",
+      "ebene": "bund",
+      "beschreibung": "Krankenkassen und private Versicherungen in einem solidarischen System zusammenführen",
+      "zitat": "Krankenkassen und private Krankenversicherungen bilden so ein System einer solidarischen Bürgerversicherung aus, an dem alle beteiligt sind",
+      "ursachen_ids": [
+        3801
+      ],
+      "pruefsumme": "9783b3e2528533de"
+    },
+    {
+      "kennung": "M41",
+      "ebene": "bund",
+      "beschreibung": "Ungekürzte, leistungsgerechte Vergütung aller Gesundheitsberufe in der ambulanten Versorgung.",
+      "zitat": "Zu einer Stärkung der flächendeckenden ambulanten Versorgung gehört für uns auch, dass die ungekürzte Vergütung aller Gesundheitsberufe leistungsgerecht erfolgen muss.",
+      "ursachen_ids": [
+        3801
+      ],
+      "pruefsumme": "1b660904044e9712"
+    },
+    {
+      "kennung": "M42",
+      "ebene": "bund",
+      "beschreibung": "Budgets für Hausärztinnen und Hausärzte abschaffen",
+      "zitat": "Bei den ärztlichen Berufen wollen wir den Schwerpunkt auf die Haus- und Kinderärztinnen und -ärzte legen und den Ausbau der Ausbildungs- und Weiterbildungskapazitäten vorantreiben sowie die Budgets für Hausärztinnen und -ärzte abschaffen.",
+      "ursachen_ids": [
+        3801
+      ],
+      "pruefsumme": "7f3d130452900fcd"
+    },
+    {
+      "kennung": "M43",
+      "ebene": "bund",
+      "beschreibung": "Mit Übernahme der Privatversicherten sinkt der Krankenversicherungsbeitrag von 17,1 auf etwa 13,3 Prozent des Bruttolohns.",
+      "zitat": "Privatversicherte werden in die gesetzliche Krankenversicherung übernommen. Dadurch fällt der Beitrag für die Krankenversicherung von derzeit 17,1 auf etwa 13,3 Prozent des Bruttolohns.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3803
+      ],
+      "pruefsumme": "de801c4f2b42b190"
+    },
+    {
+      "kennung": "M44",
+      "ebene": "bund",
+      "beschreibung": "Grundfreibetrag auf Sozialabgaben, gegenfinanziert durch höhere Beitragsbemessungsgrenzen",
+      "zitat": "Wir brauchen einen Grundfreibetrag auf Sozialabgaben bei gleichbleibenden Ansprüchen, gegenfinanziert durch eine Anhebung der Beitragsbemessungsgrenzen.",
+      "ursachen_ids": [
+        3801
+      ],
+      "pruefsumme": "efd65085b87c1d00"
+    },
+    {
+      "kennung": "M45",
+      "ebene": "bund",
+      "beschreibung": "Krankenhäuser vor Ort erhalten und besser in die Versorgung integrieren",
+      "zitat": "Wir fordern einen Erhalt und bessere Integration der Krankenhäuser in die Gesundheitsversorgung vor Ort.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3801
+      ],
+      "pruefsumme": "0e96cb58634b5513"
+    },
+    {
+      "kennung": "M46",
+      "ebene": "bund",
+      "beschreibung": "Fehlsteuerungen der Krankenhausreform korrigieren.",
+      "zitat": "Fehlsteuerungen in Folge der Krankenhausreform werden wir korrigieren.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3801
+      ],
+      "pruefsumme": "76fecd4279f57f42"
+    },
+    {
+      "kennung": "M47",
+      "ebene": "bund",
+      "beschreibung": "Termingarantie bei Krankenkassen und Kassenärztlichen Vereinigungen einführen",
+      "zitat": "Um Wartezeiten zu verringern, werden wir eine Termingarantie der Krankenkassen und Kassenärztlichen Vereinigungen einführen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3801
+      ],
+      "pruefsumme": "7343019d54a4dd30"
+    },
+    {
+      "kennung": "M48",
+      "ebene": "bund",
+      "beschreibung": "Mehr Medizinstudienplätze und Pflegeausbildung, bessere Bezahlung des Pflegepersonals",
+      "zitat": "Wir wollen mehr Medizinstudienplätze und Ausbildungsplätze für Psychotherapeuten schaffen, mehr Pflegepersonal ausbilden und eine bessere Bezahlung.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3801
+      ],
+      "pruefsumme": "ff731de2b687e695"
+    },
+    {
+      "kennung": "M49",
+      "ebene": "bund",
+      "beschreibung": "Versicherungsfremde Aufgaben im Gesundheitswesen aus Steuermitteln finanzieren",
+      "zitat": "Versicherungsfremde Aufgaben im Gesundheitswesen wollen wir zukünftig ausreichend aus Steuermitteln finanzieren.",
+      "ursachen_ids": [
+        3802
+      ],
+      "pruefsumme": "ce65dd2f5b385ec2"
+    },
+    {
+      "kennung": "M50",
+      "ebene": "bund",
+      "beschreibung": "Umsetzung der Krankenhausreform vorantreiben, gemeinsam mit den Ländern",
+      "zitat": "Die Umsetzung der Krankenhausreform werden wir weiter vorantreiben und gemeinsam mit den Ländern umsetzen.",
+      "ursachen_ids": [
+        3801
+      ],
+      "pruefsumme": "80870bf5920053d3"
+    },
+    {
+      "kennung": "M51",
+      "ebene": "bund",
+      "beschreibung": "Leistungsausweitungen der letzten zehn Jahre prüfen; nicht bewährte Leistungen aus dem Leistungskatalog streichen.",
+      "zitat": "Zusätzlich werden wir alle Leistungsausweitungen der letzten zehn Jahre einem Evidenz-, Effizienz- und Wirtschaftlichkeitscheck unterziehen. Leistungen, die sich nicht bewährt haben, sollen aus dem GKV-Leistungskatalog gestrichen werden.",
+      "ursachen_ids": [
+        3801
+      ],
+      "pruefsumme": "706329ebfe6b0dbb"
+    },
+    {
+      "kennung": "M52",
+      "ebene": "bund",
+      "beschreibung": "Weitere Strukturreformen für die Versorgungssicherheit, auch in strukturschwachen Regionen",
+      "zitat": "Diesen erfolgreichen Kurs werden wir fortführen und die Versorgungssicherheit durch weitere Strukturreformen verbessern, insbesondere um die medizinische Versorgung in strukturschwachen Regionen zu sichern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3801
+      ],
+      "pruefsumme": "a2480f4f70bf0db6"
+    }
+  ]
+}

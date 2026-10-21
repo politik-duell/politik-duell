@@ -1,0 +1,59 @@
+{
+  "partei_id": 14,
+  "land": "BE",
+  "massnahmen": [
+    {
+      "beschreibung": "Polizei und Staatsanwaltschaft sollen Mitglieder von Regierungen und Parlamenten nicht mehr aktiv auf mögliche Ehrdelikte im Internet hinweisen, um Strafanträge anzuregen.",
+      "ursachen_ids": [2501],
+      "buendel": "Strafverfolgung von Hass und Bedrohung im Netz",
+      "zitat": "Die Praxis, durch Polizei und Staatsanwaltschaft insbesondere Mitglieder von Regierungen und Parlamenten aktiv auf mögliche Ehrdelikte im Internet hinzuweisen und zur Stellung eines Strafantrages aufzufordern, wollen wir einstellen.",
+      "seite": 76
+    },
+    {
+      "beschreibung": "Opferschutz ausbauen: Gewaltopfer sollen sofort Zugang zu psychologischer Betreuung erhalten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2501],
+      "buendel": "Meldewege und Hilfe für Betroffene ausbauen",
+      "zitat": "Wir wollen den Opferschutz ausbauen. Opfern von Gewalt, auch politisch motivierter Gewalt, muss sofortiger Zugang zu psychologischer Betreuung ermöglicht werden.",
+      "seite": 73
+    },
+    {
+      "beschreibung": "Förderung von Vereinen und Monitoringstellen, die antisemitische Vorfälle unter der Strafbarkeitsgrenze dokumentieren.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2501],
+      "zitat": "Vereine wie das Jüdische Forum für Demokratie und gegen Antisemitismus (JFDA) und Monitoringstellen wie die Recherche- und Informationsstelle Antisemitismus (RIAS) sollen weiter gefördert werden, da sie antisemitische Vorfälle auch unter der Strafbarkeitsgrenze dokumentieren.",
+      "seite": 79
+    },
+    {
+      "beschreibung": "Aufklärung über Formen und Folgen psychischer Gewalt im Internet stärken.",
+      "ursachen_ids": [2503],
+      "buendel": "Prävention, Medienkompetenz und Gesprächskultur",
+      "zitat": "Die Aufklärung über Formen und Folgen von psychischer Gewalt im Internet wollen wir stärken.",
+      "seite": 68
+    }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "ehrdelikt", "ursache": 2501, "richtung": "Strafverfolgung von Hass und Bedrohung im Netz" },
+    { "begriff": "psychische gewalt im internet", "ursache": 2503, "richtung": "Prävention, Medienkompetenz und Gesprächskultur" }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 2503, "seiten": [16, 17], "grund": "Medienkompetenz und Elternarbeit (S. 16–17) betreffen die Mediennutzung von Kindern, nach R2 ein eigenes Thema. Cybermobbing in der Schule (S. 16) gehört zu Mobbing." },
+    { "ursache": 2501, "seiten": [73, 74, 78, 79, 82], "grund": "Strafandrohung bei Stalking und Hasskriminalität (S. 73), Schulungen und Strafverfolgung queerfeindlicher oder antisemitischer Gewalt (S. 78, 82) und das Weisungsrecht gegenüber der Staatsanwaltschaft (S. 74) haben keinen Internetbezug und sind Strafrecht und Justizorganisation allgemein." }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Sicherheit (Auszug S. 67–69 gelesen); Justiz (S. 70–76); Bürgerrechte (S. 75–76); Häusliche Gewalt (S. 78); Jüdisches Leben (S. 77–80); Queere Politik (S. 82–83). Fundstellen S. 3 (Inhaltsverzeichnis), 16–17 (Medienkompetenz), 68–69, 72–76, 78–82 gelesen. Lücken: keine im passenden Kapitel.
+
+Ohne Text: S. 94, 100, 105 liegen außerhalb der passenden Kapitel, S. 1 ist die Titelseite.
+
+Bündel ohne Maßnahme: "Moderation und Gestaltung der Plattformen" (2503) – keine Aussage zu Plattformen, Algorithmen, Anonymität, Klarnamen oder Moderation gefunden (Suche Begriffe und Kapitel Medien, Digitalisierung). "Gesprächskultur" hier ohne Fund. "Verfolgen statt nur löschen" und "Online-Straftaten" (2501) ebenfalls ohne Fund außer S. 76.
+
+Weitere gleichartige Stellen zum Bündel Strafverfolgung von Hass und Bedrohung im Netz: S. 73 (Strafandrohung im Gewaltschutzgesetz für Stalking und Hasskriminalität, nicht internetbezogen), S. 78 und S. 82 (Schulungen für Polizei und Justiz zu antisemitischen bzw. queerfeindlichen Straftaten, nicht internetbezogen). Nicht aufgenommen, da der Auftrag Netzbezug verlangt; die konkreteste Netz-Stelle ist S. 76.
+
+Nicht erfasst: S. 77–80 (Präventions- und Bildungsprogramme gegen Antisemitismus, Schulbesuche, Begegnungsprojekte) – kein Internetbezug. S. 69 (Häusliche und sexualisierte Gewalt, Gewaltschutz, Polizei) – keine Netz- oder Hassbezug. S. 68 (Quellen-TKÜ, Quick-Freeze, Datenspeicherung) – Überwachung, nicht Hass im Netz.
+
+Hinweise der Prüfung: Die Bündel „Strafverfolgung von Hass und Bedrohung im Netz“, „Meldewege und Hilfe für Betroffene ausbauen“ und „Prävention, Medienkompetenz und Gesprächskultur“ stehen im Auftrag bei den Ursachen 2501 bzw. 2503 (Treffer-Liste), nicht in R1/R2; nicht neu. Die Stelle S. 79 (RIAS) ist ein Grenzfall ohne Bündel: Dokumentation antisemitischer Vorfälle, kein ausdrücklicher Meldeweg.
+
+Stand im PDF: Kein abweichender Stand genannt.

@@ -1,0 +1,49 @@
+{
+  "partei_id": 12,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Elterngeld mit nicht übertragbaren Monaten je Elternteil und weiteren frei verteilbaren Monaten", "ursachen_ids": [2801], "buendel": "Partnerschaftliche Aufteilung fördern", "zitat": "Jeder Elternteil soll Anspruch auf sechs nicht übertragbare Monate Elterngeld erhalten. Zusätzlich gibt es weitere sechs Monate, die frei auf beide Elternteile verteilt werden können.", "seite": 26 },
+    { "beschreibung": "Freistellung von Vätern oder Partnern nach der Geburt mit Lohnfortzahlung", "ursachen_ids": [2801], "neue_buendel": [{ "ursache": 2801, "name": "Freistellung nach der Geburt (Familienstartzeit)", "seite": 26 }], "zitat": "Väter oder Partnerinnen und Partner sollen sich für die ersten zwei Wochen nach der Geburt eines Kindes bei voller, umlagefinanzierter Lohnfortzahlung freistellen lassen können.", "seite": 26 },
+    { "beschreibung": "Familienbudget zur Förderung haushaltsnaher Dienstleistungen für Familien", "ursachen_ids": [2801], "buendel": "Familienarbeit entlasten und anerkennen", "zitat": "Mit einem jährlichen Familienbudget für Alltagshelfer wollen wir sozialversicherungspflichtige haushaltsnahe Dienstleistungen direkt fördern und einfach digital zugänglich machen.", "seite": 26 },
+    { "beschreibung": "Steuerliche Reform für Paarfamilien mit dem Ziel, Partnerschaftlichkeit zu fördern", "ursachen_ids": [], "ursachen_offen": [2801], "neue_buendel": [{ "ursache": 2801, "name": "Steuerliche Anreize für Partnerschaftlichkeit", "seite": 27 }], "zitat": "Wir wollen die Besteuerung von Familien unter Berücksichtigung bereits getroffener Lebensentscheidungen reformieren, für Paarfamilien eine gerechtere Verteilung der Steuerlast erreichen und Partnerschaftlichkeit fördern.", "seite": 27 },
+    { "beschreibung": "Familienpflegezeit und Familienpflegegeld für Vereinbarkeit von Pflege und Beruf", "ursachen_ids": [], "ursachen_offen": [2801], "neue_buendel": [{ "ursache": 2801, "name": "Familienpflegezeit und Familienpflegegeld", "seite": 48 }], "zitat": "Mit einer Familienpflegezeit und einem Familienpflegegeld, ähnlich wie beim Elterngeld, ermöglichen wir die Vereinbarkeit von Pflege und Beruf ohne finanzielle Einbußen.", "seite": 48 },
+    { "beschreibung": "Steuerliche Begünstigung von Arbeitgeberprämien für Ausweitung der Arbeitszeit von Teilzeitbeschäftigten", "ursachen_ids": [2802], "buendel": "Rückkehr in Vollzeit und planbare Arbeitszeiten", "zitat": "Wir werden einen neuen steuerlichen Anreiz zur Ausweitung der Arbeitszeit von Teilzeitbeschäftigten schaffen: Wenn Arbeitgeber eine Prämie für die Ausweitung der Arbeitszeit zahlen, werden wir diese Prämie steuerlich begünstigen.", "seite": 24 },
+    { "beschreibung": "Teilzeitmodelle und Job-Sharing im öffentlichen Dienst als Angebot des Arbeitgebers Staat", "ursachen_ids": [], "ursachen_offen": [2802], "buendel": "Teilzeit nach Wunsch und Familienzeit ohne Nachteile", "zitat": "Wir wollen den Staat als Arbeitgeber attraktiver machen – mit flächendeckendem Homeoffice, Job-Sharing und Teilzeitmodellen im öffentlichen Dienst.", "seite": 38 },
+    { "beschreibung": "Ausbau vollzeitnaher Tätigkeiten in Kitas und Schulen im Rahmen einer Fachkräfteoffensive", "ursachen_ids": [], "ursachen_offen": [2802], "neue_buendel": [{ "ursache": 2802, "name": "Vollzeitnahe Stellen in Kitas", "seite": 15 }], "zitat": "Wir wollen daher eine Fachkräfteoffensive für Kitas und Schulen verbindlich zwischen allen Bundesländern vereinbaren, die unter anderem den Ausbau von Ausbildungskapazitäten, eine entlohnte Ausbildung für Erzieherinnen und Erzieher, multiprofessionelle Teams, die verstärkte Ansprache von Quereinsteigenden aus anderen Berufen sowie den Ausbau vollzeitnaher Tätigkeit bei den meist weiblichen Beschäftigten umfasst.", "seite": 15 },
+    { "beschreibung": "Weg aus Mini-Jobs in sozial abgesicherte Arbeit öffnen", "ursachen_ids": [], "ursachen_offen": [2802], "neue_buendel": [{ "ursache": 2802, "name": "Weg aus Mini-Jobs in sozial abgesicherte Arbeit", "seite": 14 }], "zitat": "Wir wollen Missbrauch bekämpfen und Beschäftigten den Weg aus Mini-Jobs in sozial gut abgesicherte Arbeit öffnen.", "seite": 14 },
+    { "beschreibung": "Anerkennung von Erziehungs- und Pflegezeiten in der Rente stärken", "ursachen_ids": [2803], "buendel": "Anerkennung häuslicher Sorgearbeit", "zitat": "Wir stärken die Anerkennung von Erziehungs- und Pflegezeiten in der Rente und schaffen eine faire Absicherung für alle Lebensphasen.", "seite": 48 },
+    { "beschreibung": "Antidiskriminierungsstelle soll Antifeminismus und frauenfeindliche Diskriminierung in den Blick nehmen", "ursachen_ids": [], "ursachen_offen": [2803], "buendel": "Rollenstereotype abbauen", "zitat": "Wir wollen, dass die Antidiskriminierungsstelle des Bundes auch Anti-Feminismus in den Fokus nimmt, um gezielt frauenfeindliche Diskriminierung zu verhindern.", "seite": 47 },
+    { "beschreibung": "Antidiskriminierungsstelle des Bundes und Beratungsangebote für Betroffene stärken", "ursachen_ids": [], "ursachen_offen": [2804], "buendel": "Beschwerdewege und Schutz vor Belästigung ausbauen", "zitat": "Wir wollen die Antidiskriminierungsstelle des Bundes weiter stärken und zivilgesellschaftliche Beratungsangebote ausbauen, damit Betroffene gezielte Unterstützung erhalten.", "seite": 41 },
+    { "beschreibung": "Allgemeines Gleichbehandlungsgesetz modernisieren, um wirksameren Schutz vor Diskriminierung zu bieten", "ursachen_ids": [], "ursachen_offen": [2804], "neue_buendel": [{ "ursache": 2804, "name": "AGG modernisieren", "seite": 41 }], "zitat": "Wir wollen das Allgemeine Gleichbehandlungsgesetz (AGG) modernisieren, um effektiveren Schutz vor Diskriminierung zu gewährleisten.", "seite": 41 }
+  ],
+  "neue_buendel": [
+    { "ursache": 2801, "name": "Freistellung nach der Geburt (Familienstartzeit)", "seite": 26 },
+    { "ursache": 2801, "name": "Steuerliche Anreize für Partnerschaftlichkeit", "seite": 27 },
+    { "ursache": 2801, "name": "Familienpflegezeit und Familienpflegegeld", "seite": 48 },
+    { "ursache": 2802, "name": "Vollzeitnahe Stellen in Kitas", "seite": 15 },
+    { "ursache": 2802, "name": "Weg aus Mini-Jobs in sozial abgesicherte Arbeit", "seite": 14 },
+    { "ursache": 2804, "name": "AGG modernisieren", "seite": 41 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "familienstartzeit", "ursache": 2801, "richtung": "Freistellung nach der Geburt" },
+    { "begriff": "mini-job", "ursache": 2802, "richtung": "Weg aus Mini-Jobs" },
+    { "begriff": "vollzeitnah", "ursache": 2802, "richtung": "Ausbau vollzeitnaher Tätigkeit" }
+  ]
+}
+
+Protokoll (Teilauftrag 28, Sexismus und Benachteiligung von Frauen)
+
+Gelesen: Inhaltsverzeichnis (S. 3); Kap. 3 (S. 10 bis 15, nur Abschnitte zu Teilzeit, Mini-Jobs, Fachkräfte); Kap. 5 (S. 16 bis 19, ohne Relevanz); Kap. 7 (S. 23, 24); Kap. 9 Familie (S. 25 bis 27); Kap. 10 und 11 Gesundheit und Pflege (S. 28 bis 32); Kap. 14 (S. 37, 38); Kap. 15 bis 17 (S. 40 bis 48); S. 55 (Antidiskriminierungsberatung). S. 1, 2, 67, 68 ohne Text.
+
+Nicht erfasst:
+- S. 44: Strafbarkeit sexueller Belästigung („Catcalling“) im öffentlichen Raum. Ursache 2804 betrifft nach Leitfaden nur den Arbeitsplatz.
+- S. 23 und S. 14: Entgelttransparenz und gleicher Lohn ohne Bezug zu Teilzeit oder Familienphase (Leitfaden R2, keine Ursache).
+- S. 10: Frauen in unfreiwilliger Teilzeit als Potenzial zu heben, nur Ziel ohne Handlung.
+- S. 48: Führungspositionen-Gesetz und Parität in Aufsichtsräten: keine Ursache dieses Themas.
+- S. 47: Folgenabschätzung aller Maßnahmen und Gleichstellungsstrategie: allgemeines Ziel, keine Ursache.
+- S. 27 und S. 48: Kindergrundsicherung und Kinderarmut: nicht Ursache 2801 bis 2804.
+- S. 42 bis 44: Gewalt gegen Frauen, Gewaltschutz, digitale Gewalt: Thema Sicherheit (Leitfaden R2).
+
+Richtungen ohne Maßnahme: 2804 „Betriebliche Prävention und klare Verantwortung“ (siehe hebel_nicht_gefunden).
+Weitere gleichartige Stellen: S. 41 (Antidiskriminierungsberatung, S. 55 Ausbau der Antidiskriminierungsberatung und Ausweitung des AGG (Rassismus-Kontext, gleichartig zu S. 41, nicht separat erfasst)); S. 31 (Familienpflegezeit, gleichartig zu S. 48); S. 26 (Anspruch auf Elterngeld, bereits erfasst).
+Seiten ohne Text, für das Ergebnis nicht relevant: 1, 2, 67, 68.

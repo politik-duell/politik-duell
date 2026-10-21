@@ -1,0 +1,33 @@
+{
+  "partei_id": 11,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Ausbau von Videoschutz und automatisierter Gesichtserkennung an Kriminalitätsschwerpunkten.", "ursachen_ids": [3401], "buendel": "Gezielte Kontrollen für Sicherheit ermöglichen", "zitat": "Wir fordern den Ausbau des Videoschutzes an öffentlichen Gefahrenorten und Systeme zur automatisierten Gesichtserkennung an Bahnhöfen, Flughäfen und anderen Kriminalitätsschwerpunkten zur Identifizierung schwerer Straftäter.", "seite": 39 },
+    { "beschreibung": "Keine Pflicht der Bundespolizei, nach einer Kontrolle eine Kontrollquittung auszustellen.", "ursachen_ids": [3401], "buendel": "Kontrollen begrenzen und nachvollziehbar machen", "zitat": "Wir verpflichten sie auch nicht, anlässlich einer Kontrolle eine Kontrollquittung auszustellen.", "seite": 40 },
+    { "beschreibung": "Digitale Ermittlungsbefugnisse für Bundessicherheitsbehörden (Quellen-TKÜ, Online-Durchsuchung, KI-Datenanalyse).", "ursachen_ids": [], "ursachen_offen": [3401], "zitat": "Wir schaffen digitale Befugnisse wie Quellen-Telekommunikationsüberwachung, Online-Durchsuchung und automatische Datenanalyse mittels KI für alle Bundessicherheitsbehörden.", "seite": 40 },
+    { "beschreibung": "Sonderermittler wie den Polizeibeauftragten des Bundes abschaffen; Vorwürfe durch Staatsanwaltschaften und Gerichte klären lassen.", "ursachen_ids": [3403], "buendel": "Unabhängige Beschwerde- und Kontrollstellen", "zitat": "Wo es Vorwürfe gegen sie gibt, müssen diese durch Staatsanwaltschaften und Gerichte aufgeklärt werden. Sonderermittler, wie den von der Ampel eingerichteten Polizeibeauftragten des Bundes, schaffen wir ab.", "seite": 40 },
+    { "beschreibung": "Keine Kennzeichnungspflicht für Bundespolizisten.", "ursachen_ids": [3403], "zitat": "Die Einführung einer Kennzeichnungspflicht für Bundespolizisten lehnen wir ab.", "seite": 40 },
+    { "beschreibung": "Bodycams bei Polizeieinsätzen, auch in Wohnräumen.", "ursachen_ids": [], "ursachen_offen": [3403], "buendel": "Dokumentation und faire Verfahren", "zitat": "Dafür sorgen wir, etwa durch die flächendeckende Ausstattung mit Distanz-Elektro-Impulsgeräten (TASER) und die Verwendung von Bodycams – auch bei Einsätzen in Wohnräumen.", "seite": 40 }
+  ],
+  "neue_buendel": [{ "ursache": 3401, "name": "Digitale Ermittlungsbefugnisse", "seite": 40 }, { "ursache": 3403, "name": "Kennzeichnungspflicht für Polizeikräfte", "seite": 40 }],
+  "nicht_erfasst": [
+    { "ursache": 3402, "seiten": [38, 40], "grund": "Gelesen: Kapitel Recht und Ordnung (S. 38–41). Keine Zusage zu Einsatzpraxis, Kommunikation, Aus- und Fortbildung. Rückhalt, Schutz und Strafverschärfung für Angriffe auf Einsatzkräfte (S. 40) betreffen nicht das Verhalten der Polizei gegenüber Menschen; Ausstattung gehört nach R2 zu Sicherheit." }
+  ]
+}
+
+Protokoll
+
+Gelesen: Inhaltsverzeichnis (S. 2); Kapitel „Recht und Ordnung“ (S. 38–41) mit Abschnitten „Null-Toleranz-Strategie“, „Sicherheitsbehörden und leistungsfähige Justiz“, „Wertschätzung für Sicherheitsbehörden und Einsatzkräfte“, „Cybersicherheit“; Fundstellen S. 39 und S. 40.
+
+Gleichartige Stellen (nicht separat erfasst):
+- S. 40 „Wir geben unseren Sicherheitsbehörden eine möglichst umfassende Befugnis zur elektronischen Gesichtserkennung“ (Bündel „Gezielte Kontrollen für Sicherheit ermöglichen“; konkretere Stelle S. 39 gewählt).
+- S. 40 Distanz-Elektro-Impulsgeräte (TASER): nach R2 Ausstattung, zu Sicherheit, daher nicht T34.
+
+Nicht erfasst:
+- S. 39: Strafmündigkeit („wissenschaftliche Untersuchung“ prüfen), Jugendstrafrecht für Heranwachsende, Strafverschärfungen. Strafrecht, keine Polizeiregel (R1).
+- S. 40: Angriffe auf Einsatzkräfte härter bestrafen; Rückhalt für Polizei. Siehe 3402 im JSON.
+- S. 40: Bekenntnis „Vorwürfe … müssen … aufgeklärt werden“ steht im Zusammenhang der Zusage zu den Sonderermittlern und ist dort mit erfasst.
+
+Richtungen ohne Maßnahme: 3402 (Kommunikation und Fortbildung; Handlungsfähigkeit und Rückhalt; s. JSON).
+Seiten ohne Text: S. 1, S. 82 (Titel und Rückseite), ohne Bedeutung.
+Stand im PDF: Titelseite „Politikwechsel für Deutschland – Wahlprogramm von CDU und CSU“, kein abweichender Stand vermerkt.

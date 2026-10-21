@@ -1,0 +1,43 @@
+{
+  "partei_id": 13,
+  "land": "BE",
+  "massnahmen": [
+    { "beschreibung": "Digitale Kontrollquittung, die jede Person über den Anlass einer Polizeikontrolle informiert.", "ursachen_ids": [3401], "buendel": "Kontrollen begrenzen und nachvollziehbar machen", "zitat": "Polizeiliches Handeln muss sich stets nach dem Handeln der Verdächtigen richten, weshalb wir anlasslose Kontrollen ablehnen. […] Um dem entgegenzuwirken, möchten wir eine digitale Kontrollquittung einführen, mit der jede Person über den Anlass der Kontrolle informiert werden kann.", "seite": 228 },
+    { "beschreibung": "Kriminalitätsbelastete Orte und Messer- und Waffenverbotszonen überprüfen und, wo nötig, abschaffen.", "ursachen_ids": [3401], "zitat": "Wir werden die bestehenden kriminalitätsbelasteten Orte und Messer- und Waffenverbotszonen auf ihre Sinnhaftigkeit überprüfen und werden sie, wo erforderlich, wieder abschaffen.", "seite": 228 },
+    { "beschreibung": "Videoüberwachung im öffentlichen Raum nur dort zielgerichtet ausbauen, wo sie kritische Infrastruktur schützt.", "ursachen_ids": [], "ursachen_offen": [3401], "buendel": "Gezielte Kontrollen für Sicherheit ermöglichen", "zitat": "Statt flächendeckender Videoüberwachung im öffentlichen Raum wollen wir diese nur dort zielgerichtet ausbauen, wo sie tatsächlich helfen kann, unsere kritischen Infrastrukturen zu schützen.", "seite": 228 },
+    { "beschreibung": "Demokratiebildung, Diskriminierungskritik und Kommunikation in Aus- und Fortbildung der Sicherheitsbehörden fördern.", "ursachen_ids": [3402], "buendel": "Kommunikation und Fortbildung der Polizei", "zitat": "Deshalb müssen Demokratiebildung, Diskriminierungskritik und kommunikative Kompetenzen in Aus- und Fortbildung sowie im Studium gefördert werden.", "seite": 226 },
+    { "beschreibung": "Kurswechsel zu einer Deeskalationsstrategie bei Polizeieinsätzen auf der Straße.", "ursachen_ids": [3402], "zitat": "Während der Wegner-Senat mit einem Kurs der Repression zu mehr Eskalation auf den Straßen beiträgt, stehen wir für einen Kurswechsel zu einer Deeskalationsstrategie ein.", "seite": 229 },
+    { "beschreibung": "Standardisierte Verfahren der Polizei im Umgang mit geschlechtsspezifischer und häuslicher Gewalt nach spanischem Vorbild.", "ursachen_ids": [3402], "zitat": "Bei der Polizei etablieren wir standardisierte Verfahren im Umgang mit geschlechtsspezifischer und häuslicher Gewalt nach spanischem Vorbild.", "seite": 131 },
+    { "beschreibung": "Community Policing in die Fläche bringen: mehr Kontaktbereichsbeamt*innen, Fahrradstreifen und Präsenz an Hotspots.", "ursachen_ids": [3402], "zitat": "Wir Grüne wollen Ansätze des „Community Policing“ in die Fläche bringen, um das Vertrauen in die Sicherheitsbehörden zu erhöhen und das Sicherheitsgefühl zu stärken. Dazu zählen mehr Kontaktbereichsbeamt*innen als lokale Ansprechpersonen, die Ausweitung von Fahrradstreifen und Präsenz an hochfrequentierten Orten oder Hotspots, auch mit mobilen Wachen und Kiezläufer*innen.", "seite": 225 },
+    { "beschreibung": "Empfehlungen der Berliner Polizeistudie umsetzen und Supervision, Einsatznachbereitung und Resilienzstärkung für Einsatzkräfte ausbauen.", "ursachen_ids": [], "ursachen_offen": [3402], "buendel": "Handlungsfähigkeit und Rückhalt der Polizei", "zitat": "Wir werden überdies die Empfehlungen der Berliner Polizeistudie konsequent […] umsetzen und Angebote hinsichtlich Supervision, Einsatznachbereitungen und Resilienzstärkung ausbauen.", "seite": 226 },
+    { "beschreibung": "Unabhängigen Polizeibeauftragten verbessern: mehr Kontrolle und Prüfung aller an ihn herangetragenen Sachverhalte.", "ursachen_ids": [3403], "buendel": "Unabhängige Beschwerde- und Kontrollstellen", "zitat": "Wir werden die unabhängige Kontrolle verbessern und dem Beauftragten ermöglichen, effektiv alle an ihn herangetragenen Sachverhalte zu überprüfen.", "seite": 227 },
+    { "beschreibung": "Bodycam-Einsatz auf die Polizei beschränken und nur auf Verlangen oder bei unmittelbarem Zwang anschalten.", "ursachen_ids": [3403], "buendel": "Dokumentation und faire Verfahren", "zitat": "Die Ergebnisse der Bodycam-Studie wollen wir umsetzen und den Einsatz auf die Polizei beschränken. Die Bodycam dient dabei auch als bürgerrechtliches Instrument, das auf Verlangen oder bei unmittelbarem Zwang zur Beweissicherung angeschaltet werden muss.", "seite": 228 }
+  ],
+  "neue_buendel": [
+    { "ursache": 3401, "name": "Kontrollorte und Verbotszonen überprüfen und abschaffen", "seite": 228 },
+    { "ursache": 3402, "name": "Deeskalationsstrategie im Einsatz", "seite": 229 },
+    { "ursache": 3402, "name": "Standardisierte Einsatzverfahren", "seite": 131 },
+    { "ursache": 3402, "name": "Community Policing und bürgernahe Präsenz", "seite": 225 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3401, "seiten": [147], "grund": "Racial-Profiling-Verbot (S. 147) ist eine Anforderung an die Umsetzung von GEAS, keine eigene Maßnahme; die Wirkung auf Kontrollen ist als Kontrollquittung (S. 228) erfasst." },
+    { "ursache": 3402, "seiten": [132, 133, 225, 226, 232], "grund": "Gleichartige Stellen: Schulungen der Polizei zu digitaler Gewalt (S. 132, 133) und Präsenz auf Augenhöhe (S. 232) gehören zu bereits erfassten Hebeln (Fortbildung, Community Policing). Attraktivere Polizeiausbildung und Arbeitsbedingungen (S. 225) betreffen Personal (Leitfaden R2: Sicherheit), nicht Einsatzpraxis. Verbindliche Fortbildungen zu Antifeminismus (S. 226) betreffen Verwaltung, Bildung und Justiz, nicht die Polizei." },
+    { "ursache": 3403, "seiten": [136, 193], "grund": "Gleichartige Stelle: LADG-Ombudsstelle als unabhängige Behörde (S. 136) betrifft Diskriminierung allgemein, nicht Polizeikontakte; die Beschwerdestelle an Schulen (S. 193) betrifft Schulen. Erfasst ist der Polizeibeauftragte (S. 227)." }
+  ]
+}
+
+Protokoll Teilauftrag 2 (Thema 34, Ursachen 3401–3403)
+
+Gelesene Seiten: Kapitel 6.1 Innere Sicherheit (S. 224–234), Kapitel 4.2 Diskriminierung (S. 136), Kapitel 4.3 Geflüchtete (S. 147), Fundstellen S. 123 (Zuwendungsrecht, kein Polizeibezug), S. 131–133 (Gewaltschutz), S. 193 (Schule), S. 225–229.
+
+Nicht erfasst:
+- S. 123: „Handlungssicherheit“ betrifft Zuwendungsrecht für Projekte, kein Polizeibezug.
+- S. 147: Racial-Profiling-Verbot als Anforderung (siehe nicht_erfasst).
+- S. 193: Unabhängige Beschwerdestelle gegen Diskriminierung an Schulen (kein Polizeibezug).
+- S. 210: „Frühwarnsystem“ betrifft Drogen-Checking, kein Polizeibezug.
+
+Weitere gleichartige Stellen (im Protokoll, nicht doppelt erfasst): S. 132 und 133 (Schulungen Polizei digitale Gewalt, Hebel Fortbildung); S. 232 (Präsenz auf Augenhöhe, Hebel Community Policing); S. 136 (LADG-Ombudsstelle, Hebel unabhängige Beschwerdestelle).
+
+Richtungen ohne Maßnahme: keine. Alle sechs Bündel des Auftrags haben eine Maßnahme.
+Grenzfälle: Videoüberwachung (S. 228, ursachen_offen 3401); Polizeistudie (S. 226, ursachen_offen 3402).
+Seiten ohne Text: keine Rolle gespielt.
