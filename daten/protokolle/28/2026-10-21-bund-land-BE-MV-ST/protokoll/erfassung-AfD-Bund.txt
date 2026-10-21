@@ -1,0 +1,151 @@
+{
+  "partei_id": 15,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Betreuungsgehalt bis zum dritten Geburtstag, damit Eltern zwischen Fremd- und Selbstbetreuung wählen können",
+      "ursachen_ids": [
+        2801
+      ],
+      "ursachen_offen": [
+        2803
+      ],
+      "buendel": "Familienarbeit entlasten und anerkennen",
+      "zitat": "Mit einem Betreuungsgehalt bis zum 3. Geburtstag sollen Eltern echte Wahlfreiheit zwischen Fremd- und Selbstbetreuung",
+      "seite": 148
+    },
+    {
+      "beschreibung": "Erziehungsgeld, das Eigenbetreuung der Kinder in den ersten drei Lebensjahren finanziell erleichtert",
+      "ursachen_ids": [
+        2802
+      ],
+      "buendel": "Teilzeit nach Wunsch und Familienzeit ohne Nachteile",
+      "zitat": "Weitere Bausteine, die die Rente langfristig stabilisieren […] ein Erziehungsgeld, das Eltern die Eigenbetreuung ihrer Kinder in den ersten drei Lebensjahren finanziell erleichtert",
+      "seite": 21
+    },
+    {
+      "beschreibung": "Hilfen beim beruflichen Wiedereinstieg nach der Kinderbetreuung",
+      "ursachen_ids": [
+        2802
+      ],
+      "buendel": "Rückkehr in Vollzeit und planbare Arbeitszeiten",
+      "zitat": "Weitere Bausteine, die die Rente langfristig stabilisieren […] sowie Hilfen beim beruflichen Wiedereinstieg, damit Kinderwünsche nicht mehr an Geld- und Karrieresorgen scheitern",
+      "seite": 21
+    },
+    {
+      "beschreibung": "Nach Trennung sollen Kinder möglichst abwechselnd bei beiden Eltern leben (Wechselmodell als Regelfall)",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2801
+      ],
+      "zitat": "Nach Trennung sollten Kinder möglichst abwechselnd bei beiden Eltern leben und den Alltag mit beiden Eltern teilen (Wechselmodell als Regelfall)",
+      "seite": 155
+    },
+    {
+      "beschreibung": "Unterhaltspflichten sollen an die zeitliche Intensität der Betreuung gebunden werden",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2801
+      ],
+      "zitat": "Wir wollen Unterhaltspflichten gleichmäßig an die zeitliche Intensität der Betreuung binden und so Kosten und Lasten gerechter aufteilen.",
+      "seite": 154
+    },
+    {
+      "beschreibung": "Kinder sollen in der Schule zu Ehe, Partnerschaft und Familienzusammenhalt unterrichtet werden",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2803
+      ],
+      "zitat": "Kinder sollen in der Schule zu Ehe, Partnerschaft und Familienzusammenhalt unterrichtet werden, um später stabile Familien gründen zu können.",
+      "seite": 147
+    },
+    {
+      "beschreibung": "Gender-Mainstreaming in der Erzieherausbildung unterbinden",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2803
+      ],
+      "buendel": "Rollenstereotype abbauen",
+      "zitat": "Auch bei der Ausbildung zum Erzieher muss jede Indoktrination in Bezug auf Gender-Mainstreaming und andere Ideologien unterbunden werden.",
+      "seite": 153
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 2804,
+      "seiten": [
+        45,
+        131,
+        135,
+        134,
+        163,
+        164,
+        172
+      ],
+      "grund": "Fundstellen S. 45, 131, 135, 163, 172 sind Wortteil-Treffer (Flagge, Volksabstimmung, Gewaltenteilung, Verschulung, Nationalbewusstsein). Im ganzen Text keine Stelle zu Belästigung, Beschwerdestelle oder Arbeitsplatzschutz; S. 134 Antidiskriminierungsgesetze nur Bekenntnis."
+    },
+    {
+      "ursache": 2801,
+      "seiten": [
+        145,
+        148,
+        153
+      ],
+      "grund": "Partnerschaftliche Aufteilung (Elternzeit, Partnermonate) kommt im Programm nicht vor. Arbeitgeber sollen Telearbeit und flexible Arbeitszeiten schaffen (S. 148) ist ein Appell an Dritte, keine eigene Zusage."
+    }
+  ],
+  "neue_buendel": [
+    {
+      "ursache": 2801,
+      "name": "Wechselmodell nach Trennung",
+      "seite": 155
+    },
+    {
+      "ursache": 2801,
+      "name": "Unterhalt nach Betreuungszeit",
+      "seite": 154
+    },
+    {
+      "ursache": 2803,
+      "name": "Familienleitbild in der Schule",
+      "seite": 147
+    }
+  ],
+  "eigene_synonyme": [
+    {
+      "begriff": "eigenbetreuung",
+      "ursache": 2802,
+      "richtung": "Familienzeit ohne Nachteile"
+    },
+    {
+      "begriff": "betreuungsgehalt",
+      "ursache": 2801,
+      "richtung": "Anerkennung häuslicher Sorgearbeit"
+    },
+    {
+      "begriff": "wechselmodell",
+      "ursache": 2801,
+      "richtung": "Aufteilung der Betreuung nach Trennung"
+    }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesene Seiten: Inhaltsverzeichnis (S. 1–8); Kapitel „Familie und Demografie“ (S. 145–157); Rückgriff auf Rente, Teil „Weitere Bausteine“ (S. 21); Abschnitt Gleichberechtigung im Kapitel Demokratie und Rechtsstaat (S. 134–135); Hochschulabschnitt mit Gleichstellungsbeauftragten (S. 164). S. 157 ist Trennseite.
+
+Richtungen ohne Maßnahme: Partnerschaftliche Aufteilung (Elternzeit, Partnermonate) nicht im Text. Gewalt, Lohn und Entgelt, Belästigung am Arbeitsplatz: nicht gefunden.
+
+Betreuungsgehalt (S. 148) ist mit dem Erziehungsgeld (S. 21) derselbe Hebel (Geld für Eigenbetreuung). Erfasst als eigene Maßnahme je Ursache mit eigenem Bündel; weitere gleichartige Stelle: S. 21.
+
+Nicht erfasst:
+- S. 45, 131, 135, 163, 172: Fundstellen zu 2804 sind Wortteil-Treffer (Flagge, Volksabstimmung, Gewaltenteilung, Verschulung, Nationalbewusstsein); gelesen, nicht einschlägig.
+- S. 134: Antidiskriminierungsgesetze ablehnen: Bekenntnis, kein Beschwerde- oder Schutzvorschlag.
+- S. 134: Quotengesetze aufheben (Aufhebung verfassungswidriger Ungleichbehandlung): kein Bezug zu 2801–2804.
+- S. 164: Gleichstellungsbeauftragte abschaffen: kein Bezug zu den Ursachen.
+- S. 21: Ziel „früherer Berufseintritt und weniger Teilzeitarbeit“, kein Handlungsvorschlag.
+- S. 148–149: Rentenbeitrags-Rückzahlung bei Geburt, Ehe-Start-Kredit, Mehrwertsteuer Kinderbedarf: keine Ursache dieses Themas.
+- S. 148: „zeitliche Entlastung der Eltern angestrebt“: Zielsatz.
+- S. 153: Betriebskindergärten fördern: Kinderbetreuung, nicht dieses Thema.
+
+Stand: Titelseite und Vorwort nennen den Parteitag 11.–12. Januar 2025, wie der Auftrag.

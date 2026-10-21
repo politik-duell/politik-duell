@@ -1,0 +1,28 @@
+{
+  "partei_id": 11,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Elterngeld verbessern und den Partnerschaftsbonus bei vollzeitnaher Teilzeit beider Eltern weiterentwickeln.", "ursachen_ids": [2801], "buendel": "Partnerschaftliche Aufteilung fördern", "zitat": "Wir verbessern das Elterngeld. Den Partnerschaftsbonus bei gleichzeitiger vollzeitnaher Teilzeit beider Eltern entwickeln wir weiter.", "seite": 62 },
+    { "beschreibung": "Steuerliche Absetzbarkeit haushaltsnaher Dienstleistungen verbessern.", "ursachen_ids": [2801], "buendel": "Familienarbeit entlasten und anerkennen", "zitat": "Wir verbessern die steuerliche Absetzbarkeit haushaltsnaher Dienstleistungen.", "seite": 15 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 2802, "seiten": [15, 63], "grund": "Nur Ziel ohne Handlung („Es braucht bessere Rahmenbedingungen für Vollzeitarbeit“, S. 15, nicht auf Familienphase bezogen); Ehegattensplitting nur als Bekenntnis (S. 63); keine Regel zu Teilzeit nach der Familienphase." },
+    { "ursache": 2803, "seiten": [34, 62], "grund": "S. 34: Rentenniveau für Erziehende nur als Ziel („muss […] liegen“), keine Maßnahme. S. 62: Bekenntnis zu Vielfalt der Lebensentwürfe ohne Handlung; Rollenbilder nicht berührt." },
+    { "ursache": 2804, "seiten": [13, 15, 62, 64], "grund": "Pflichtursache. Kapitel Arbeit (S. 12–15), Familie und Frauen (S. 60–64) gelesen. Begriffe sexuelle Belästigung, Beschwerdestelle, Betriebsvereinbarung, Verhaltenskodex im Text nicht vorhanden. Die 36 Treffer „agg“ sind Wortteile (u. a. Agentur, Agenda, Agrar, Kampf), ohne Bezug zur Ursache." }
+  ]
+}
+
+Protokoll
+
+Gelesen: Inhaltsverzeichnis (S. 2); Kapitel „Starker Sozialstaat“ (S. 29–32), „Eigentum“ (S. 33–35, Rente), „Familien unterstützen, Verantwortung übernehmen“ (S. 8, S. 60–64), „Arbeit modernisieren“ und Fachkräfte (S. 12–15), „Recht und Ordnung“ (S. 38–41, Gewalt gegen Frauen), Einleitung (S. 3–6). Fundstellen aus dem Auftrag per Textauszug geprüft; die Treffer zu 2804 sind Wortteile (s. oben).
+
+Nicht erfasst:
+- S. 39: Stalking, Schutz vor häuslicher Gewalt, Frauenhäuser, Fußfessel. Gehört nach R2 zu Sicherheit, nicht zu T28.
+- S. 61: Familienleistungen, Kindergeld, Kinderfreibetrag, Alleinerziehende. Keine Aufteilung von Sorgearbeit zwischen Partnern (R1), daher nicht 2801.
+- S. 61: Kinderbetreuung und steuerliche Absetzbarkeit der Kosten (S. 63). Nach R2 zu Kita, nicht T28.
+- S. 63: Ehegattensplitting „festhalten“ (Bekenntnis).
+- S. 8: „Wir verbessern Elternzeit und Elterngeld“ (weitere gleichartige Stelle zu 2801, Bündel „Partnerschaftliche Aufteilung fördern“; konkretere Stelle S. 62 gewählt). Die Elternzeit gehört zusätzlich zu Thema 40 (4003).
+
+Richtungen ohne Maßnahme: 2802 (Teilzeit/Wiedereinstieg), 2803 (Rollenbilder, Anerkennung), 2804 (Beschwerdewege, Prävention; Pflicht, s. JSON).
+Seiten ohne Text: S. 1, S. 82 (Titel und Rückseite), ohne Bedeutung.
+Stand im PDF: Titelseite „Politikwechsel für Deutschland – Wahlprogramm von CDU und CSU“, kein abweichender Stand vermerkt.

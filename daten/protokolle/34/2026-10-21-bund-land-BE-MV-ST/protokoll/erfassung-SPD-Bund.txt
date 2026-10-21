@@ -1,0 +1,38 @@
+{
+  "partei_id": 12,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Modernes Bundespolizeigesetz mit klaren Befugnissen der Bundespolizei", "ursachen_ids": [3401], "buendel": "Gezielte Kontrollen für Sicherheit ermöglichen", "zitat": "Wir schaffen ein modernes Bundespolizeigesetz, das der Bundespolizei klare Befugnisse gibt, um den heutigen sicherheitspolitischen Herausforderungen wirksam zu begegnen.", "seite": 43 },
+    { "beschreibung": "KI-gestützte automatisierte Datenanalysen für die Polizei", "ursachen_ids": [], "ursachen_offen": [3401], "zitat": "Unsere Polizei soll automatisierte (KI-basierte) Datenanalysen vornehmen können.", "seite": 43 },
+    { "beschreibung": "Besserer Schutz der Einsatzkräfte durch Ausrüstung, Schulungen und Einsatzansatz", "ursachen_ids": [3402], "buendel": "Handlungsfähigkeit und Rückhalt der Polizei", "zitat": "Zudem wollen wir den Schutz der Einsatzkräfte durch verbesserte technische Ausrüstung, Schulungen und einen überlegenen Kräfteansatz in bedrohlichen Situationen schnell erhöhen.", "seite": 43 },
+    { "beschreibung": "Angriffe auf Einsatzkräfte konsequent ahnden und härter bestrafen", "ursachen_ids": [], "ursachen_offen": [3402], "zitat": "Angriffe auf sie, genauso wie auf Rettungskräfte und Helferinnen und Helfer müssen konsequent geahndet und härter bestraft werden.", "seite": 43 },
+    { "beschreibung": "Initiative mit den Ländern zur Angleichung des Polizei- und Versammlungsrechts", "ursachen_ids": [], "ursachen_offen": [3401], "zitat": "Darüber hinaus werden wir mit den Ländern eine Initiative starten, um die föderalen Unterschiede im Bereich des Polizei- und Versammlungsrechts zu harmonisieren.", "seite": 43 }
+  ],
+  "neue_buendel": [
+    { "ursache": 3401, "name": "Automatisierte Datenanalyse der Polizei", "seite": 43 },
+    { "ursache": 3402, "name": "Härtere Strafen für Angriffe auf Einsatzkräfte", "seite": 43 },
+    { "ursache": 3401, "name": "Harmonisierung des Polizei- und Versammlungsrechts", "seite": 43 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3403, "seiten": [42, 43, 44, 45, 46, 49, 50], "grund": "Gelesen: keine Beschwerdestelle, unabhängige Kontrolle, Kennzeichnung oder Dokumentation von Polizeieinsätzen. Die Bot-Kennzeichnungspflicht (S. 50) betrifft KI-Systeme, nicht Polizeikräfte." }
+  ]
+}
+
+Protokoll (Teilauftrag 34, Umgang der Polizei mit jungen Menschen)
+
+Gelesen: Inhaltsverzeichnis (S. 3); Kap. 14 Staat (S. 37 bis 39); Kap. 15 Zusammenhalt (S. 40, 41); Kap. 16 Sicherheit und Gewaltschutz (S. 42 bis 46); Kap. 17 Gleichstellung (S. 47, 48); Kap. 18 Medien (S. 49, 50, Fundstelle). S. 1, 2, 67, 68 ohne Text.
+
+Zu den Ursachen:
+- 3401 (Kontrollen, Befugnisse): S. 43 Bundespolizeigesetz mit klaren Befugnissen (erfasst), KI-Datenanalysen (offen), Angleichung des Polizeirechts (offen). S. 42 „zeitgemäße Befugnisse“ und „moderne Ausrüstung“ sind allgemein gehalten und in den Maßnahmen zum Bundespolizeigesetz enthalten. Keine Zusage zu Begrenzung, Kontrollquittung oder Kontrollorten.
+- 3402 (Einsatzpraxis, Kommunikation, Aus- und Fortbildung): S. 43 Schutz der Einsatzkräfte mit Schulungen und Kräfteansatz (erfasst), härtere Strafen für Angriffe (offen). S. 42 „Respekt“ und „Rücken stärken“ ohne konkrete Handlung. Keine Zusage zu Deeskalation, Kommunikation oder Fortbildung für den Umgang mit Bürgerinnen und Bürgern.
+- 3403 (Beschwerde, Kontrolle, Kennzeichnung, Dokumentation): nichts gefunden (siehe nicht_erfasst).
+
+Nicht erfasst:
+- S. 42: Personalaufbau und Sichtbarkeit der Polizei, Ausstattung der Bundespolizei: Leitfaden R2 (Sicherheit), keine Ursache dieses Themas.
+- S. 42 und 43: Organisierte Kriminalität, Terror, Rechtsextremismus, Waffenkontrolle, Cybercrime: nicht Ursache 3401 bis 3403.
+- S. 43: Bürgerräte, Kriminalprävention, Akademie: keine Zusage zu Kontakten mit Polizei.
+- S. 50: Bot-Kennzeichnungspflicht (KI-Verordnung): keine Kennzeichnung von Polizeikräften.
+- S. 47, 48: Diskriminierungsschutz allgemein und Gleichstellung: Leitfaden R2 (Diskriminierung im Alltag), kein Bezug zu Polizeikontrollen in den Fundstellen.
+
+Richtungen ohne Maßnahme: Bündel „Kontrollen begrenzen und nachvollziehbar machen“, „Kommunikation und Fortbildung der Polizei“ (nur Schulungen als Teil von S. 43), „Unabhängige Beschwerde- und Kontrollstellen“, „Dokumentation und faire Verfahren“. Gesamtlage: nur Ausweitung von Befugnissen, keine Begrenzung.
+Seiten ohne Text, für das Ergebnis nicht relevant: 1, 2, 67, 68.

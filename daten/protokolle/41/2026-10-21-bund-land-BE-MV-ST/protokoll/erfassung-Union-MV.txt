@@ -1,0 +1,17 @@
+{
+  "partei_id": 11,
+  "land": "MV",
+  "massnahmen": [
+    { "beschreibung": "Sirenen und Warnsysteme aktualisieren und ihre Funktion regelmäßig prüfen", "ursachen_ids": [4102], "buendel": "Sirenen ausbauen und an das Warnsystem anbinden", "zitat": "Sirenen, Warnsysteme und Notfallpläne werden aktualisiert und ihre Funktionalität regelmäßig geprobt.", "seite": 40 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 4102, "seiten": [39], "grund": "Resilienzstrategie und Gefahren- und Risikoplan (S. 39) sind Vorsorgeplanung, kein Lücke im Warnweg. Notstrom-Aggregate (S. 39) gehören nicht zu Warnsystemen." }
+  ]
+}
+
+--- Protokoll ---
+Gelesen: Inhaltsverzeichnis (S. 2–4), Kapitel B III Bevölkerungsschutz und Katastrophenvorsorge (S. 38–40, vollständig), Fundstelle S. 40, Stichwortsuche im ganzen Text (Warn, Sirene, MoWaS, Cell Broadcast, Katastrophen).
+Richtungen ohne Maßnahme: „Warn-Apps und Cell Broadcast statt Sirenen“ (kein Treffer; kein Hinweis auf Warn-Apps oder Cell Broadcast in S. 38–40). Die Richtung „Sirenen ausbauen und an das Warnsystem anbinden“ ist über die Zusage auf S. 40 erfasst.
+Nicht erfasst: S. 40 „vernetzte Sicherheitsarchitektur aufbauen“ und „Notfallpläne implementieren“ (allgemeines Ziel, Vorsorge). S. 40 Elementarschadenversicherung (keine Warnung, Thema nicht zugelassen).
+Grenzfall: keiner. Warnungen bei Hochwasser und Starkregen sind im Kapitel nicht genannt.
+Seiten ohne Text: 1, 139 (nicht relevant).

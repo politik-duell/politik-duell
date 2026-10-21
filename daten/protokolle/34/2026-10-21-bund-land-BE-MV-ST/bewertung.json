@@ -1,0 +1,1234 @@
+{
+  "blind_pruefsumme": "4e1a839af7a2b3d914589ea14ca328e1dedf1f7557dbaa812ada6d552fcc8eef",
+  "neue_instrumente": [
+    {
+      "kennung": "I1",
+      "name": "Polizeiliche Kontrollbefugnisse, Kontrollorte und Kontrolldichte ausweiten (Land)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 3,
+      "begruendung": "Mehr Kontrollen und Befugnisse erhöhen die Zahl der Kontakte, die als belastend gelten; Studien finden nur schwache, uneinheitliche Effekte auf Kriminalität. Für das Ziel respektvoller, seltener Kontrollen spricht nichts.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://fullfact.org/crime/does-stop-search-work/"
+    },
+    {
+      "kennung": "I2",
+      "name": "Polizeiliche Kontrollbefugnisse und Kontrollen ausweiten (Bund)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 3,
+      "begruendung": "Erweiterte Befugnisse und mehr Kontrollen erhöhen die Zahl der Kontakte; für eine respektvollere oder nachvollziehbarere Behandlung bei Kontrollen bietet das keinen Ansatz.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://fullfact.org/crime/does-stop-search-work/"
+    },
+    {
+      "kennung": "I3",
+      "name": "Anlasslose Kontrollen abschaffen oder eng begrenzen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Weniger anlasslose Kontrollen senken die Zahl belastender Kontakte; ihr Nutzen gegen Kriminalität gilt als schwach. Dagegen: Wirkung der Abschaffung in Deutschland kaum untersucht, Polizei verliert ein Werkzeug.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://fullfact.org/crime/does-stop-search-work/"
+    },
+    {
+      "kennung": "I4",
+      "name": "Kontrollorte und Verbotszonen überprüfen, Kriterien präzisieren und befristen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Klarere Kriterien und Überprüfung können anlasslose Kontrollen begrenzen und nachvollziehbarer machen; ob die Zahl der Kontrollen spürbar sinkt, bleibt offen.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I5",
+      "name": "Kontrollquittung mit Grund und Rechtsgrundlage bei Polizeikontrollen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Erfahrungen aus Spanien (Fuenlabrada) zeigen mehr Transparenz, weniger Spannung und selektivere Kontrollen. Dagegen: kaum kontrollierte Studien, zusätzlicher Aufwand für die Polizei.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.justiceinitiative.org/voices/q-and-a-how-a-system-to-document-police-stops-improved-policing-in-fuenlabrada-spain"
+    },
+    {
+      "kennung": "I6",
+      "name": "Aus- und Fortbildung zu Kommunikation, Deeskalation, Grundrechten und Antidiskriminierung (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Ein randomisiertes US-Experiment zeigt: Training in fairem Verfahren senkt wahrgenommene Schikane und Gewalt. Dagegen: Inhalte hier meist unbestimmt, Effekte schwinden ohne Begleitung durch Vorgesetzte.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://cebcp.org/weisburd-procedural-justice-hot-spots/"
+    },
+    {
+      "kennung": "I7",
+      "name": "Deeskalation als verbindliche Einsatzstrategie (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Deeskalationsansätze senkten in einem US-Feldversuch Gewaltanwendung und Verletzungen deutlich. Dagegen: Belege stammen aus wenigen Programmen, Strategie ohne Training bleibt unbestimmt.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://nij.ojp.gov/topics/articles/what-works-de-escalation-training"
+    },
+    {
+      "kennung": "I8",
+      "name": "Aus- und Fortbildung der Polizei allgemein ausbauen und modernisieren (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Mehr oder modernere Ausbildung kann das Verhalten bei Kontakten verbessern, die Maßnahmen nennen aber keine Inhalte zu Kommunikation oder Umgang mit Betroffenen.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I9",
+      "name": "Bürgernahe Polizei mit Kontaktbereichsbeamten und Fußstreifen ausbauen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Eine Meta-Analyse findet positive Effekte bürgernaher Polizeiarbeit auf Zufriedenheit und Legitimität, kaum auf Kriminalität. Dagegen: Gesamtbefund uneindeutig, braucht zusätzliches Personal.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://cris.huji.ac.il/en/publications/community-oriented-policing-to-reduce-crime-disorder-and-fear-and/"
+    },
+    {
+      "kennung": "I10",
+      "name": "Supervision und psychologische Begleitung für Polizeikräfte ausbauen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Reflexion von Einsätzen kann Einsatzpraxis verbessern; ein Effekt auf den Umgang mit Betroffenen ist kaum untersucht.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I11",
+      "name": "Polizei diverser aufstellen und interkulturell öffnen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Vielfältigeres Personal kann Kommunikation erleichtern; ob es das Verhalten bei Kontakten spürbar ändert, ist wenig belegt.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I12",
+      "name": "Bodycam-Pflicht bei Zwang oder auf Verlangen mit Einsichtsrecht für Betroffene (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Bodycams senken laut Campbell-Review Beschwerden, Effekt auf Gewalt unklar; feste Einschaltregeln scheinen zu helfen. Aufnahmen erleichtern die Klärung von Vorwürfen.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8356344/"
+    },
+    {
+      "kennung": "I13",
+      "name": "Individuelle oder pseudonyme Kennzeichnungspflicht für Polizeikräfte (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kennzeichnung erleichtert die Identifizierung bei Vorwürfen, gerichtlich gebilligt. Dagegen: Wirkung auf Einstellungsquoten kaum untersucht, Identifizierung scheitert nur in einem Teil der Fälle.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I14",
+      "name": "Individuelle oder anonymisierte Kennzeichnungspflicht für Polizeikräfte des Bundes (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kennzeichnung erleichtert die Identifizierung bei Vorwürfen gegen Bundespolizisten. Dagegen: Wirkung auf die Aufklärung kaum untersucht.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I15",
+      "name": "Unabhängige Polizeibeschwerdestelle mit eigenen Untersuchungsbefugnissen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Studien finden bei unabhängigen Stellen mit Befugnissen häufiger bestätigte Vorwürfe; die Designs sind aber schwach, andere Befunde gegenläufig.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://policing.counciloncj.org/assessing-the-evidence/xi-civilian-oversight"
+    },
+    {
+      "kennung": "I16",
+      "name": "Polizeibeauftragte oder Ombudsstelle einrichten oder stärken, ohne konkrete Ermittlungsbefugnisse (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Eine Anlaufstelle erleichtert Beschwerden; Befunde deuten aber darauf hin, dass Stellen ohne echte Befugnisse wenig an der Aufklärung ändern.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://policing.counciloncj.org/assessing-the-evidence/xi-civilian-oversight"
+    },
+    {
+      "kennung": "I17",
+      "name": "Polizeibeauftragte abschaffen (Land)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 3,
+      "begruendung": "Entfernt eine unabhängige Beschwerdemöglichkeit; zur Klärung von Fehlern bleiben nur die Wege, deren hohe Einstellungsquote die Ursache ist.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://policing.counciloncj.org/assessing-the-evidence/xi-civilian-oversight"
+    },
+    {
+      "kennung": "I18",
+      "name": "Polizeibeauftragte abschaffen (Bund)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 3,
+      "begruendung": "Entfernt eine unabhängige Beschwerdemöglichkeit beim Bund; Vorwürfe blieben allein bei Staatsanwaltschaften, deren häufige Einstellungen die Ursache sind.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://policing.counciloncj.org/assessing-the-evidence/xi-civilian-oversight"
+    },
+    {
+      "kennung": "I19",
+      "name": "Dokumentationspflichten der Polizei zurücknehmen oder reduzieren (Land)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 3,
+      "begruendung": "Weniger Dokumentation entlastet die Polizei, erschwert aber die Nachprüfung von Einsätzen und die Klärung von Vorwürfen.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I20",
+      "name": "Disziplinarverfahren bei Fehlverhalten beschleunigen und konsequent führen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Schnellere, konsequente Disziplinarverfahren können Fehlverhalten ahnden; sie bleiben aber polizeiintern, die Wirkung auf die Klärung von Vorwürfen ist kaum untersucht.",
+      "evidenz": "offen"
+    }
+  ],
+  "zuordnung": [
+    {
+      "kennung": "M001",
+      "instrument": "I13",
+      "ursachen": [
+        3403
+      ]
+    },
+    {
+      "kennung": "M002",
+      "ursachen": []
+    },
+    {
+      "kennung": "M003",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Stärkerer Fokus auf psychische Ausnahmesituationen kann die Einsatzpraxis verbessern, bleibt aber unbestimmt; Polizeipraxis liegt überwiegend bei den Ländern.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M004",
+      "instrument": "I9",
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M005",
+      "instrument": "I1",
+      "ursachen": [
+        3401
+      ]
+    },
+    {
+      "kennung": "M006",
+      "einzeln": {
+        "wirksamkeit": 0,
+        "umsetzbarkeit": 3,
+        "begruendung": "Mehr Schießtraining betrifft Waffenhandhabung, nicht Kommunikation oder respektvollen Umgang bei Kontakten.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M007",
+      "instrument": "I8",
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M008",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Online-Ansprache junger Menschen kann Vertrauen und Kommunikation fördern; Wirkung digitaler Bürgerpolizei auf Kontakte kaum untersucht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M009",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Nichtpolizeiliche Krisenteams ersetzen Polizeikontakte in psychischen Krisen; betrifft junge Menschen nur am Rand, Aufbau braucht Personal und Jahre.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M010",
+      "ursachen": []
+    },
+    {
+      "kennung": "M011",
+      "ursachen": []
+    },
+    {
+      "kennung": "M012",
+      "instrument": "I4",
+      "ursachen": [
+        3401
+      ]
+    },
+    {
+      "kennung": "M013",
+      "ursachen": []
+    },
+    {
+      "kennung": "M014",
+      "instrument": "I10",
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M015",
+      "instrument": "I16",
+      "ursachen": [
+        3403
+      ]
+    },
+    {
+      "kennung": "M016",
+      "ursachen": []
+    },
+    {
+      "kennung": "M017",
+      "einzeln": {
+        "wirksamkeit": 0,
+        "umsetzbarkeit": 3,
+        "begruendung": "Verzicht auf Kennzeichnung lässt die Identifizierung bei Vorwürfen gegen Bundespolizisten unverändert schwierig.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3403
+      ]
+    },
+    {
+      "kennung": "M018",
+      "ursachen": []
+    },
+    {
+      "kennung": "M019",
+      "instrument": "I8",
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M020",
+      "instrument": "I2",
+      "ursachen": [
+        3401
+      ]
+    },
+    {
+      "kennung": "M021",
+      "ursachen": []
+    },
+    {
+      "kennung": "M022",
+      "instrument": "I17",
+      "ursachen": [
+        3403
+      ]
+    },
+    {
+      "kennung": "M023",
+      "ursachen": []
+    },
+    {
+      "kennung": "M024",
+      "instrument": "I8",
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M025",
+      "einzeln": {
+        "wirksamkeit": 0,
+        "umsetzbarkeit": 3,
+        "begruendung": "Verzicht auf Kontrollquittungen lässt Kontrollen der Bundespolizei für Betroffene so wenig nachvollziehbar wie bisher.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3401
+      ]
+    },
+    {
+      "kennung": "M026",
+      "ursachen": []
+    },
+    {
+      "kennung": "M027",
+      "instrument": "I5",
+      "ursachen": [
+        3401
+      ]
+    },
+    {
+      "kennung": "M028",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 3,
+        "begruendung": "Fortbildung zu Diversität und Fehlerkultur kann den Umgang bei Kontakten verbessern (US-Experiment zu fairem Verfahren); wirkt nur bei der Bundespolizei, Inhalte unbestimmt.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://cebcp.org/weisburd-procedural-justice-hot-spots/"
+      },
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M029",
+      "ursachen": []
+    },
+    {
+      "kennung": "M030",
+      "instrument": "I16",
+      "ursachen": [
+        3403
+      ]
+    },
+    {
+      "kennung": "M031",
+      "instrument": "I7",
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M032",
+      "instrument": "I15",
+      "ursachen": [
+        3403
+      ]
+    },
+    {
+      "kennung": "M033",
+      "instrument": "I6",
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M034",
+      "instrument": "I19",
+      "ursachen": [
+        3403
+      ]
+    },
+    {
+      "kennung": "M035",
+      "ursachen": []
+    },
+    {
+      "kennung": "M036",
+      "instrument": "I2",
+      "ursachen": [
+        3401
+      ]
+    },
+    {
+      "kennung": "M037",
+      "instrument": "I6",
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M038",
+      "instrument": "I5",
+      "ursachen": [
+        3401
+      ]
+    },
+    {
+      "kennung": "M039",
+      "instrument": "I18",
+      "ursachen": [
+        3403
+      ]
+    },
+    {
+      "kennung": "M040",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Zivilgesellschaftliche Beobachtung macht Fehlverhalten sichtbar und berät Betroffene, hat aber keine Befugnisse zur Aufklärung.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3403
+      ]
+    },
+    {
+      "kennung": "M041",
+      "instrument": "I3",
+      "ursachen": [
+        3401
+      ]
+    },
+    {
+      "kennung": "M042",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Systematische Dokumentation und Auswertung von Beschwerden verbessert die Nachvollziehbarkeit, ändert aber nichts an der Unabhängigkeit der Prüfung.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3403
+      ]
+    },
+    {
+      "kennung": "M043",
+      "instrument": "I1",
+      "ursachen": [
+        3401
+      ]
+    },
+    {
+      "kennung": "M044",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Stärkung des Polizeibeauftragten des Bundes erleichtert Beschwerden; ohne konkrete Befugnisse bleibt die Wirkung auf die Aufklärung laut Forschung begrenzt.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://policing.counciloncj.org/assessing-the-evidence/xi-civilian-oversight"
+      },
+      "ursachen": [
+        3403
+      ]
+    },
+    {
+      "kennung": "M045",
+      "ursachen": []
+    },
+    {
+      "kennung": "M046",
+      "instrument": "I10",
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M047",
+      "instrument": "I1",
+      "ursachen": [
+        3401
+      ]
+    },
+    {
+      "kennung": "M048",
+      "instrument": "I13",
+      "ursachen": [
+        3403
+      ]
+    },
+    {
+      "kennung": "M049",
+      "ursachen": []
+    },
+    {
+      "kennung": "M050",
+      "ursachen": []
+    },
+    {
+      "kennung": "M051",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 3,
+        "begruendung": "Kontrollbelege mit Grund machen Kontrollen nachvollziehbar; Erfahrungen aus Spanien sind positiv, kontrollierte Studien fehlen. Gilt nur für die Bundespolizei.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://www.justiceinitiative.org/voices/q-and-a-how-a-system-to-document-police-stops-improved-policing-in-fuenlabrada-spain"
+      },
+      "ursachen": [
+        3401
+      ]
+    },
+    {
+      "kennung": "M052",
+      "ursachen": []
+    },
+    {
+      "kennung": "M053",
+      "instrument": "I6",
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M054",
+      "ursachen": []
+    },
+    {
+      "kennung": "M055",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Psychologische Unterstützung kann Belastung und damit Fehlreaktionen mindern; ein Effekt auf den Umgang mit Betroffenen ist kaum untersucht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M056",
+      "instrument": "I16",
+      "ursachen": [
+        3403
+      ]
+    },
+    {
+      "kennung": "M057",
+      "ursachen": []
+    },
+    {
+      "kennung": "M058",
+      "ursachen": []
+    },
+    {
+      "kennung": "M059",
+      "instrument": "I12",
+      "ursachen": [
+        3403
+      ]
+    },
+    {
+      "kennung": "M060",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Interne Ansprechpersonen senken die Schwelle für Hinweise, sind aber nicht unabhängig und ohne Aufklärungsbefugnisse.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3403
+      ]
+    },
+    {
+      "kennung": "M061",
+      "instrument": "I6",
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M062",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Standardisierte Abläufe bei häuslicher Gewalt verbessern die Einsatzpraxis für Opfer, berühren Kontakte mit jungen Menschen aber nur am Rand.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M063",
+      "instrument": "I15",
+      "ursachen": [
+        3403
+      ]
+    },
+    {
+      "kennung": "M064",
+      "ursachen": []
+    },
+    {
+      "kennung": "M065",
+      "ursachen": []
+    },
+    {
+      "kennung": "M066",
+      "ursachen": []
+    },
+    {
+      "kennung": "M067",
+      "instrument": "I11",
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M068",
+      "instrument": "I12",
+      "ursachen": [
+        3403
+      ]
+    },
+    {
+      "kennung": "M069",
+      "instrument": "I6",
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M070",
+      "instrument": "I4",
+      "ursachen": [
+        3401
+      ]
+    },
+    {
+      "kennung": "M071",
+      "instrument": "I19",
+      "ursachen": [
+        3403
+      ]
+    },
+    {
+      "kennung": "M072",
+      "ursachen": []
+    },
+    {
+      "kennung": "M073",
+      "instrument": "I8",
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M074",
+      "instrument": "I16",
+      "ursachen": [
+        3403
+      ]
+    },
+    {
+      "kennung": "M075",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Bessere Ausbildung in Akademien kann das Einsatzverhalten verbessern; Inhalte zu Kommunikation und Umgang mit Betroffenen werden nicht genannt.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M076",
+      "instrument": "I13",
+      "ursachen": [
+        3403
+      ]
+    },
+    {
+      "kennung": "M077",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Einschränkung von Pfefferspray kann Verletzungen bei Ansammlungen mindern; Bund regelt nur Bundespolizei, Versammlungsrecht und Landespolizei liegen bei den Ländern.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M078",
+      "ursachen": []
+    },
+    {
+      "kennung": "M079",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Verzicht auf Taser im Streifendienst vermeidet ein riskantes Zwangsmittel; Wirkung auf den Umgang bei Kontakten insgesamt kaum untersucht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M080",
+      "ursachen": []
+    },
+    {
+      "kennung": "M081",
+      "instrument": "I1",
+      "ursachen": [
+        3401
+      ]
+    },
+    {
+      "kennung": "M082",
+      "instrument": "I15",
+      "ursachen": [
+        3403
+      ]
+    },
+    {
+      "kennung": "M083",
+      "ursachen": []
+    },
+    {
+      "kennung": "M084",
+      "instrument": "I14",
+      "ursachen": [
+        3403
+      ]
+    },
+    {
+      "kennung": "M085",
+      "ursachen": []
+    },
+    {
+      "kennung": "M086",
+      "instrument": "I7",
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M087",
+      "ursachen": []
+    },
+    {
+      "kennung": "M088",
+      "ursachen": []
+    },
+    {
+      "kennung": "M089",
+      "instrument": "I3",
+      "ursachen": [
+        3401
+      ]
+    },
+    {
+      "kennung": "M090",
+      "einzeln": {
+        "wirksamkeit": 0,
+        "umsetzbarkeit": 3,
+        "begruendung": "Weniger interne Ermittlungen nach Schusswaffengebrauch erschweren die Klärung möglicher Fehler.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3403
+      ]
+    },
+    {
+      "kennung": "M091",
+      "instrument": "I1",
+      "ursachen": [
+        3401
+      ]
+    },
+    {
+      "kennung": "M092",
+      "instrument": "I19",
+      "ursachen": [
+        3403
+      ]
+    },
+    {
+      "kennung": "M093",
+      "instrument": "I6",
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M094",
+      "ursachen": []
+    },
+    {
+      "kennung": "M095",
+      "instrument": "I1",
+      "ursachen": [
+        3401
+      ]
+    },
+    {
+      "kennung": "M096",
+      "ursachen": []
+    },
+    {
+      "kennung": "M097",
+      "ursachen": []
+    },
+    {
+      "kennung": "M098",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Ansprechbares, deeskalierendes Auftreten setzt an der Einsatzpraxis an, bleibt aber ohne konkretes Instrument und betrifft beim Bund nur die Bundespolizei.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M099",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Rechtssichere Kontrollbefugnisse können Kontrollen nachvollziehbarer machen; ob sie seltener oder verhältnismäßiger werden, bleibt offen.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3401
+      ]
+    },
+    {
+      "kennung": "M100",
+      "ursachen": []
+    },
+    {
+      "kennung": "M101",
+      "instrument": "I9",
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M102",
+      "instrument": "I6",
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M103",
+      "ursachen": []
+    },
+    {
+      "kennung": "M104",
+      "ursachen": []
+    },
+    {
+      "kennung": "M105",
+      "ursachen": []
+    },
+    {
+      "kennung": "M106",
+      "instrument": "I10",
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M107",
+      "instrument": "I14",
+      "ursachen": [
+        3403
+      ]
+    },
+    {
+      "kennung": "M108",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Unabhängig verwahrte Protokolle und Videos sichern Beweise für die Klärung von Vorwürfen; Konzept und Wirkung unerprobt, für Landespolizeien nur über Länder.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3403
+      ]
+    },
+    {
+      "kennung": "M109",
+      "instrument": "I20",
+      "ursachen": [
+        3403
+      ]
+    },
+    {
+      "kennung": "M110",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 3,
+        "begruendung": "Abschaffung anlassloser Kontrollbefugnisse senkt belastende Kontakte mit der Bundespolizei; ihr Nutzen gegen Kriminalität gilt als schwach. Dagegen: deutsche Wirkung kaum untersucht.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://fullfact.org/crime/does-stop-search-work/"
+      },
+      "ursachen": [
+        3401
+      ]
+    },
+    {
+      "kennung": "M111",
+      "ursachen": []
+    },
+    {
+      "kennung": "M112",
+      "instrument": "I8",
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M113",
+      "instrument": "I6",
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M114",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Bürgerforen und Rechenschaftsberichte fördern Austausch und Transparenz; die Wirkung auf das Verhalten bei einzelnen Kontakten ist gering.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M115",
+      "instrument": "I9",
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M116",
+      "instrument": "I3",
+      "ursachen": [
+        3401
+      ]
+    },
+    {
+      "kennung": "M117",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Bodycams in Wohnungen sichern Beweise, Wirkung auf Gewalt laut Review unklar; ohne Rechte für Betroffene dienen sie vor allem der Polizei, Art. 13 GG setzt Grenzen.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8356344/"
+      },
+      "ursachen": [
+        3403
+      ]
+    },
+    {
+      "kennung": "M118",
+      "instrument": "I2",
+      "ursachen": [
+        3401
+      ]
+    },
+    {
+      "kennung": "M119",
+      "ursachen": []
+    },
+    {
+      "kennung": "M120",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Bodycams können Beschwerden senken und Beweise sichern, Effekt auf Gewalt unklar; ohne Einschaltpflicht und Einsicht für Betroffene begrenzt, Einsatz in Wohnungen rechtlich heikel.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8356344/"
+      },
+      "ursachen": [
+        3403
+      ]
+    },
+    {
+      "kennung": "M121",
+      "ursachen": []
+    },
+    {
+      "kennung": "M122",
+      "ursachen": []
+    },
+    {
+      "kennung": "M123",
+      "instrument": "I15",
+      "ursachen": [
+        3403
+      ]
+    },
+    {
+      "kennung": "M124",
+      "ursachen": []
+    },
+    {
+      "kennung": "M125",
+      "instrument": "I20",
+      "ursachen": [
+        3403
+      ]
+    },
+    {
+      "kennung": "M126",
+      "einzeln": {
+        "wirksamkeit": 0,
+        "umsetzbarkeit": 3,
+        "begruendung": "Beschränkt Folgen laufender Disziplinarverfahren für Beamte; für die Klärung von Vorwürfen Betroffener bringt das nichts.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3403
+      ]
+    },
+    {
+      "kennung": "M127",
+      "instrument": "I11",
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M128",
+      "ursachen": []
+    },
+    {
+      "kennung": "M129",
+      "instrument": "I12",
+      "ursachen": [
+        3403
+      ]
+    },
+    {
+      "kennung": "M130",
+      "instrument": "I10",
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M131",
+      "instrument": "I6",
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M132",
+      "instrument": "I8",
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M133",
+      "instrument": "I12",
+      "ursachen": [
+        3403
+      ]
+    },
+    {
+      "kennung": "M134",
+      "instrument": "I18",
+      "ursachen": [
+        3403
+      ]
+    },
+    {
+      "kennung": "M135",
+      "instrument": "I6",
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M136",
+      "ursachen": []
+    },
+    {
+      "kennung": "M137",
+      "instrument": "I5",
+      "ursachen": [
+        3401
+      ]
+    },
+    {
+      "kennung": "M138",
+      "instrument": "I1",
+      "ursachen": [
+        3401
+      ]
+    },
+    {
+      "kennung": "M139",
+      "ursachen": []
+    },
+    {
+      "kennung": "M140",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Schutz für Hinweisgebende in der Polizei kann Fehlverhalten sichtbar machen; Wirkung auf die Aufklärung von Vorwürfen kaum untersucht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3403
+      ]
+    },
+    {
+      "kennung": "M141",
+      "ursachen": []
+    },
+    {
+      "kennung": "M142",
+      "instrument": "I1",
+      "ursachen": [
+        3401
+      ]
+    },
+    {
+      "kennung": "M143",
+      "instrument": "I17",
+      "ursachen": [
+        3403
+      ]
+    },
+    {
+      "kennung": "M144",
+      "instrument": "I8",
+      "ursachen": [
+        3402
+      ]
+    },
+    {
+      "kennung": "M145",
+      "ursachen": []
+    },
+    {
+      "kennung": "M146",
+      "ursachen": []
+    },
+    {
+      "kennung": "M147",
+      "instrument": "I15",
+      "ursachen": [
+        3403
+      ]
+    },
+    {
+      "kennung": "M148",
+      "ursachen": []
+    },
+    {
+      "kennung": "M149",
+      "instrument": "I1",
+      "ursachen": [
+        3401
+      ]
+    },
+    {
+      "kennung": "M150",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Eine Ermittlungseinheit außerhalb der Polizei, aber im Innenressort, kann Vorwürfe distanzierter prüfen; volle Unabhängigkeit fehlt, Wirkung offen.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3403
+      ]
+    }
+  ]
+}

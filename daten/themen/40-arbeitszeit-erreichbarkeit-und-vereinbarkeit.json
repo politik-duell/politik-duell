@@ -33,5 +33,645 @@
   "freigabe": {
     "datum": "2026-10-19",
     "art": "ki"
-  }
+  },
+  "instrumente": [
+    {
+      "id": 10693,
+      "name": "Überstundenzuschläge bei Vollzeit steuerfrei stellen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Verbessert die Vergütung bezahlter Mehrarbeit, erreicht laut Auswertungen aber nur rund 1,4 % der Beschäftigten; unbezahlte Überstunden bleiben unberührt und mehr Mehrarbeit wird eher gefördert als ausgeglichen.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.wirtschaftsdienst.eu/inhalt/jahr/2025/heft/12/beitrag/steuerfreie-ueberstundenzuschlaege-geringe-entlastung-problematische-verteilungswirkungen.html",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10694,
+      "name": "Wöchentliche statt tägliche Höchstarbeitszeit im Arbeitszeitgesetz (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kann flexiblere Verteilung der Arbeitszeit erlauben; zugleich werden längere Arbeitstage möglich, die nach BAuA-Daten häufiger mit verkürzten Ruhezeiten und höherem Unfallrisiko einhergehen. EU-rechtlich zulässig.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.personalwirtschaft.de/?p=210267",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10695,
+      "name": "Arbeitszeiterfassung gesetzlich regeln und häufiger kontrollieren (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Ohne Erfassung verfallen laut BAuA-Befragungen rund 62 % der Überstunden, mit Erfassung auf Zeitkonto nur 11 %; die meisten Beschäftigten erfassen aber schon, und die Befunde sind Befragungszusammenhänge.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.personalwirtschaft.de/?p=210267",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10696,
+      "name": "Recht auf befristete Arbeitszeitverkürzung mit Rückkehr ausweiten (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Erleichtert es, den Umfang dem Wunsch anzupassen; die bisherige Brückenteilzeit hatte laut IAB kaum messbare Wirkung, was mit starren Regeln erklärt wird, die eine Ausweitung lockern könnte.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://ideas.repec.org/p/iab/iabfob/202402.html",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10697,
+      "name": "Mobiles Arbeiten und Homeoffice rechtlich absichern und fördern (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Homeoffice senkt Konflikte zwischen Beruf und Familie vor allem bei hohem Anteil, fördert aber Arbeit am Abend und Wochenende; ohne Rechtsanspruch bleibt die Wirkung vom Arbeitgeber abhängig.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.zfk.de/uncategorized/studie-homeoffice-kann-konflikte-zwischen-beruf-und-familie-reduzieren",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10698,
+      "name": "Homeoffice und flexible Arbeitszeitmodelle im öffentlichen Dienst des Bundes (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Als Arbeitgeber direkt umsetzbar, erreicht aber nur Beschäftigte des Bundes, wo solche Modelle schon verbreitet sind; Wirkung auf Vereinbarkeit hängt vom Umfang ab.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10699,
+      "name": "Lohnersatz bei Familienpflegezeit und Arbeitszeitreduzierung für Pflege (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Setzt am Einkommensverlust bei Pflege-Freistellung an, den das bisherige Darlehen kaum auffängt; empfohlen vom unabhängigen Beirat, Wirkung in Deutschland aber nicht erprobt, Kosten mehrere Mrd. Euro jährlich.",
+      "evidenz": "offen",
+      "beleg_studie_url": "https://www.bmbfsfj.bund.de/bmbfsfj/aktuelles/alle-meldungen/empfehlungen-zur-familienpflegezeit-und-zum-familienpflegegeld-uebergeben-200050",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10700,
+      "name": "Bezahlte Freistellung des zweiten Elternteils nach der Geburt (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Studien aus Belgien zeigen mehr Beteiligung der Väter an der Betreuung, aber kaum Wirkung auf spätere Erwerbsmuster; die Freistellung umfasst nur wenige Wochen.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://ideas.repec.org/p/upf/upfgen/1934.html",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10701,
+      "name": "Geldleistung für Eigenbetreuung kleiner Kinder zu Hause (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Ermöglicht Betreuung zu Hause ohne Einkommensverlust; das Thüringer Betreuungsgeld senkte aber die Erwerbstätigkeit vor allem gering verdienender Mütter. Bundeskompetenz ist strittig, Kosten hoch.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://idw-online.de/en/news470156",
+      "entwurf_herkunft": "blind"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "durchsucht_fuer": [4001, 4002, 4003],
+      "massnahmen": [
+        {
+          "id": 10702,
+          "instrument": 10693,
+          "beschreibung": "Überstundenzuschläge bei Vollzeitbeschäftigung steuerfrei stellen.",
+          "ursachen_ids": [4001],
+          "zitat": "Wir stellen Überstundenzuschläge bei Vollzeitbeschäftigung steuerfrei. Wer freiwillig mehr arbeiten will, soll mehr Netto vom Brutto haben.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=14",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10703,
+          "instrument": 10694,
+          "beschreibung": "Anstelle der täglichen Höchstarbeitszeit eine wöchentliche Höchstarbeitszeit im Arbeitszeitgesetz festlegen.",
+          "ursachen_ids": [4001],
+          "zitat": "Wir reformieren das Arbeitszeitgesetz und legen für alle Unternehmen anstelle der täglichen eine wöchentliche Höchstarbeitszeit im Sinne der europäischen Arbeitszeitrichtlinie fest.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=14",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10704,
+          "beschreibung": "Besondere Schutzerfordernisse bei gefahrgeneigten Berufen berücksichtigen.",
+          "ursachen_ids": [4001],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Das Unfallrisiko steigt nach acht Stunden nachweislich; die Zusage, Schutzerfordernisse zu berücksichtigen, bleibt aber unbestimmt.",
+          "zitat": "Das gilt vor allem bei gefahrgeneigten Berufen. Hier berücksichtigen wir die besonderen Schutzerfordernisse, weil das Unfallrisiko nach acht Stunden steigt.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=14",
+          "evidenz": "belegt",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10705,
+          "instrument": 10697,
+          "beschreibung": "Rechtssicherheit für mobiles Arbeiten und Homeoffice schaffen und mobile Arbeitsformen fördern.",
+          "ursachen_ids": [4003],
+          "zitat": "Auch für das Homeoffice schaffen wir Rechtssicherheit und fördern damit mobile Arbeitsformen: Sofern freiwillig gewählt, definieren wir es unabhängig vom zeitlichen Umfang als einen Unterfall des mobilen Arbeitens.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=14",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10706,
+          "beschreibung": "Elterngeld verbessern und den Partnerschaftsbonus bei vollzeitnaher Teilzeit beider Eltern weiterentwickeln.",
+          "ursachen_ids": [4003],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Elterngeld erleichtert Freistellung nach der Geburt; der Partnerschaftsbonus wurde laut DIW nur von rund 1 % der Familien genutzt, und die Verbesserung ist unbestimmt.",
+          "zitat": "Wir verbessern das Elterngeld. Den Partnerschaftsbonus bei gleichzeitiger vollzeitnaher Teilzeit beider Eltern entwickeln wir weiter.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=62",
+          "beleg_studie_url": "https://www.diw.de/de/diw_01.c.673403.de/publikationen/wochenberichte/2019_35/elterngeld_und_elterngeld_plus_nutzung_durch_vaeter_gestiegen_aufteilung_zwischen_muettern_und_....html",
+          "evidenz": "belegt",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "durchsucht_fuer": [4001, 4002, 4003],
+      "massnahmen": [
+        {
+          "id": 10707,
+          "instrument": 10693,
+          "beschreibung": "Zuschläge für Mehrarbeit steuerfrei stellen",
+          "ursachen_ids": [4001],
+          "zitat": "Damit sich Mehrarbeit auszahlt, werden Zuschläge für Mehrarbeit, die über die tariflich vereinbarte Vollzeitarbeit hinausgehen, steuerfrei gestellt.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=24",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10708,
+          "beschreibung": "Steuerlich begünstigte Arbeitgeberprämie für mehr Stunden bei Teilzeitbeschäftigten",
+          "ursachen_ids": [4002],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Steuerbegünstigte Prämien können Stundenaufstockungen in Teilzeit erleichtern; Mitnahmeeffekte sind wahrscheinlich und Hindernisse wie Betreuung bleiben unberührt.",
+          "zitat": "Wir werden einen neuen steuerlichen Anreiz zur Ausweitung der Arbeitszeit von Teilzeitbeschäftigten schaffen: Wenn Arbeitgeber eine Prämie für die Ausweitung der Arbeitszeit zahlen, werden wir diese Prämie steuerlich begünstigen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=24",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10709,
+          "beschreibung": "Teilzeitmodelle und Job-Sharing im öffentlichen Dienst",
+          "ursachen_ids": [4002],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Teilzeit und Job-Sharing im Bundesdienst erleichtern passende Arbeitsumfänge, erreichen aber nur Beschäftigte des Bundes, wo Teilzeit schon möglich ist.",
+          "zitat": "Wir wollen den Staat als Arbeitgeber attraktiver machen – mit flächendeckendem Homeoffice, Job-Sharing und Teilzeitmodellen im öffentlichen Dienst.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=38",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10710,
+          "beschreibung": "Kürzere Wochenarbeitszeit als Freizeitausgleich für Beschäftigte in Gesundheitsberufen",
+          "ursachen_ids": [4002],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Kürzere Wochenarbeitszeit kann Belastung senken; der Bund kann sie für Gesundheitsberufe kaum festlegen (Tarifautonomie), Finanzierung und Personal sind offen.",
+          "zitat": "Außerdem treten wir für mehr Freizeitausgleich ein – beispielsweise durch eine verkürzte Wochenarbeitszeit.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=32",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10711,
+          "beschreibung": "Ausbau vollzeitnaher Stellen in Kitas und Schulen im Rahmen einer Fachkräfteoffensive",
+          "ursachen_ids": [4002],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Mehr vollzeitnahe Stellen helfen Beschäftigten, die länger arbeiten wollen; das Vorhaben zielt vor allem auf Fachkräfte und braucht eine Vereinbarung mit den zuständigen Ländern.",
+          "zitat": "Wir wollen daher eine Fachkräfteoffensive für Kitas und Schulen verbindlich zwischen allen Bundesländern vereinbaren, die unter anderem den Ausbau von Ausbildungskapazitäten, eine entlohnte Ausbildung für Erzieherinnen und Erzieher, multiprofessionelle Teams, die verstärkte Ansprache von Quereinsteigenden aus anderen Berufen sowie den Ausbau vollzeitnaher Tätigkeit bei den meist weiblichen Beschäftigten umfasst.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=15",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10712,
+          "instrument": 10700,
+          "beschreibung": "Freistellung von Vätern oder Partnern nach der Geburt mit Lohnfortzahlung",
+          "ursachen_ids": [4003],
+          "zitat": "Väter oder Partnerinnen und Partner sollen sich für die ersten zwei Wochen nach der Geburt eines Kindes bei voller, umlagefinanzierter Lohnfortzahlung freistellen lassen können.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=26",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10713,
+          "beschreibung": "Elterngeld mit nicht übertragbaren Monaten je Elternteil und weiteren frei verteilbaren Monaten",
+          "ursachen_ids": [4003],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Partnermonate haben die Väterbeteiligung am Elterngeld deutlich erhöht, die meisten Väter nehmen aber nur das Minimum; mehr nicht übertragbare Monate dürften wirken, kosten aber erheblich.",
+          "zitat": "Jeder Elternteil soll Anspruch auf sechs nicht übertragbare Monate Elterngeld erhalten. Zusätzlich gibt es weitere sechs Monate, die frei auf beide Elternteile verteilt werden können.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=26",
+          "beleg_studie_url": "https://www.diw.de/de/diw_01.c.673403.de/publikationen/wochenberichte/2019_35/elterngeld_und_elterngeld_plus_nutzung_durch_vaeter_gestiegen_aufteilung_zwischen_muettern_und_....html",
+          "evidenz": "belegt",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10714,
+          "instrument": 10699,
+          "beschreibung": "Familienpflegezeit und Familienpflegegeld für Vereinbarkeit von Pflege und Beruf",
+          "ursachen_ids": [4003],
+          "zitat": "Mit einer Familienpflegezeit und einem Familienpflegegeld, ähnlich wie beim Elterngeld, ermöglichen wir die Vereinbarkeit von Pflege und Beruf ohne finanzielle Einbußen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=48",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10715,
+          "instrument": 10698,
+          "beschreibung": "Flächendeckendes Homeoffice im öffentlichen Dienst",
+          "ursachen_ids": [4003],
+          "zitat": "Wir wollen den Staat als Arbeitgeber attraktiver machen – mit flächendeckendem Homeoffice, Job-Sharing und Teilzeitmodellen im öffentlichen Dienst.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=38",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "durchsucht_fuer": [4001, 4002, 4003],
+      "massnahmen": [
+        {
+          "id": 10716,
+          "instrument": 10695,
+          "beschreibung": "Arbeitszeiterfassung für alle Beschäftigte digital und unbürokratisch im Arbeitszeitgesetz regeln, in Schwarzarbeitsbranchen manipulationssicher",
+          "ursachen_ids": [4001],
+          "zitat": "Die Arbeitszeiterfassung muss für alle Beschäftigten unbürokratisch und digital möglich sein und im Arbeitszeitgesetz geregelt werden. In Branchen, die von Schwarzarbeit betroffen sind, muss dies manipulationssicher erfolgen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=68",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10717,
+          "instrument": 10696,
+          "beschreibung": "Brückenteilzeit und Rückkehrrecht in Vollzeit ausweiten und flexibler gestalten",
+          "ursachen_ids": [4002],
+          "zitat": "Die Brückenteilzeit und das damit verbundene Rückkehrrecht in Vollzeit wollen wir weiten und individueller gestalten.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=69",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10718,
+          "beschreibung": "Minijobs schrittweise in sozialversicherungspflichtige Beschäftigung überführen",
+          "ursachen_ids": [4002],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Minijobs bilden laut IAB und ifo selten eine Brücke in längere Arbeitszeiten und setzen Fehlanreize; ob Betroffene nach der Umwandlung mehr arbeiten oder aussteigen, ist ungewiss.",
+          "zitat": "Minijobs wollen wir schrittweise in sozialversicherungspflichtige Beschäftigung überführen, mit Ausnahmen für Rentner*innen, Schüler*innen und Studierende. Denn sie führen vor allem für Frauen und in Kombination mit dem Ehegattensplitting zu einer Teilzeitfalle, weil sie den Anreiz setzen, weniger und ohne soziale Absicherung zu arbeiten.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=69",
+          "beleg_studie_url": "https://www.evangelisch.de/inhalte/178500/17-11-2020/studie-vor-allem-frauen-stecken-der-minijob-falle",
+          "evidenz": "gemischt",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10719,
+          "beschreibung": "Mehr Zeitsouveränität über Lage und Dauer der Arbeitszeit, für Vereinbarkeit mit Familie und Sorgearbeit",
+          "ursachen_ids": [4003],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Mehr Einfluss auf Lage und Dauer der Arbeitszeit setzt an der Vereinbarkeit an; welches Instrument das leisten soll, bleibt offen.",
+          "zitat": "Die Erwerbsmöglichkeiten für Frauen verbessern wir durch gleiche Löhne und mehr Zeitsouveränität. Sie sollen mehr Einfluss nehmen können auf Lage und Dauer ihrer Arbeitszeit, um eine bessere Vereinbarkeit von Erwerbstätigkeit und Familie und eine gerechte Aufteilung von Sorgearbeit zwischen den Geschlechtern zu ermöglichen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=68",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10720,
+          "instrument": 10697,
+          "beschreibung": "Mobiles Arbeiten, auch im Homeoffice, mit klaren Regeln und fairen Absprachen",
+          "ursachen_ids": [4003],
+          "zitat": "Dazu gehört auch die Möglichkeit, im Homeoffice und mobil zu […] arbeiten – mit klaren Regeln und fairen Absprachen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=68",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10721,
+          "instrument": 10700,
+          "beschreibung": "Familienstartzeit: zwei Wochen Freistellung mit Lohnersatz für Väter und Co-Mütter nach der Geburt",
+          "ursachen_ids": [4003],
+          "zitat": "Wir werden mit einer Familienstartzeit entsprechend den Regelungen der Europäischen Union (EU) Vätern und Co-Müttern die Möglichkeit geben, sich die ersten zwei Wochen nach der Geburt eines Kindes mit einer Lohnersatzleistung von der Arbeit freizustellen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=82",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10722,
+          "instrument": 10699,
+          "beschreibung": "Lohnersatz für die Zeit, in der Beschäftigte die Arbeitszeit zur Pflege reduzieren",
+          "ursachen_ids": [4003],
+          "zitat": "Wer die eigene Arbeitszeit für die Pflege reduziert, braucht finanzielle Unterstützung in Form eines zeitlich begrenzten Ausgleichs der entgangenen Einkünfte.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=92",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "durchsucht_fuer": [4001, 4002, 4003],
+      "massnahmen": [
+        {
+          "id": 10723,
+          "instrument": 10694,
+          "beschreibung": "Arbeitszeitgesetz reformieren: wöchentliche statt tägliche Höchstarbeitszeit, flexible Arbeitszeitmodelle.",
+          "ursachen_ids": [4001],
+          "zitat": "Wir Freie Demokraten wollen das deutsche Arbeitszeitgesetz reformieren, indem wir mit einer wöchentlichen statt einer täglichen Höchstarbeitszeit neue und flexible Arbeitszeitmodelle ermöglichen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=18",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10724,
+          "instrument": 10693,
+          "beschreibung": "Zuschläge für Überstunden bei Vollzeitarbeit von der Lohnsteuer befreien.",
+          "ursachen_ids": [4001],
+          "zitat": "Um zusätzliche Arbeitsanreize zu schaffen, wollen wir Zuschläge für Überstunden bei Vollzeitarbeit von der Lohnsteuer befreien.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=14",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10725,
+          "beschreibung": "Arbeitszeitgesetz abschaffen, um flexible Arbeitszeiten zu ermöglichen; Vereinbarkeit von Beruf und Familie verbessern.",
+          "ursachen_ids": [4003],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 0,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Flexible Arbeitszeiten können Vereinbarkeit erleichtern; die Abschaffung des Arbeitszeitgesetzes widerspricht aber der EU-Arbeitszeitrichtlinie mit Höchst- und Ruhezeiten.",
+          "zitat": "Das veraltete Arbeitszeitgesetz schaffen wir ab, um flexible Arbeitszeiten zu ermöglichen. Flexible Arbeitszeiten, Teilzeit, Jobsharing, bzw. Topsharing und Homeoffice soll es Frauen wie Männern ermöglichen, Beruf und Familie besser zu vereinbaren.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=31",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "durchsucht_fuer": [4001, 4002, 4003],
+      "massnahmen": [
+        {
+          "id": 10726,
+          "beschreibung": "Zulagen für Überstunden und Sondereinsätze bei Polizei und Rettungskräften, bundeseinheitliche Vergütung",
+          "ursachen_ids": [4001],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Zulagen vergüten Mehrarbeit bei Polizei und Rettung besser, verringern sie aber nicht; bundeseinheitliche Besoldung erfordert eine Grundgesetzänderung.",
+          "zitat": "Bundeseinheitliche Besoldung und angemessene Vergütungen mit Gefährdungszulagen sowie weitere Zulagen für Überstunden und Sondereinsätze für Polizei und Rettungskräfte.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=120",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10727,
+          "instrument": 10701,
+          "beschreibung": "Förderprogramme sollen ermöglichen, in der Kleinkindphase ohne finanzielle Einbußen zu Hause zu bleiben oder Teilzeit zu arbeiten",
+          "ursachen_ids": [4002],
+          "zitat": "Die genannten Aufgaben beanspruchen Zeit, weshalb idealerweise der Vater oder die Mutter zumindest in der Kleinkindphase ohne finanzielle Einbußen die Möglichkeit haben sollten, zu Hause zu bleiben oder nur Teilzeit zu arbeiten, wenn sie dies wünschen. Die Familienpolitik der AfD enthält entsprechende Förderprogramme",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=146",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10728,
+          "instrument": 10701,
+          "beschreibung": "Betreuungsgehalt bis zum dritten Geburtstag als Lohnersatz für Eigenbetreuung",
+          "ursachen_ids": [4003],
+          "zitat": "Mit einem Betreuungsgehalt bis zum 3. Geburtstag sollen Eltern echte Wahlfreiheit zwischen Fremd- und Selbstbetreuung",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=148",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "durchsucht_fuer": [4001, 4002, 4003],
+      "massnahmen": [
+        {
+          "id": 10729,
+          "beschreibung": "Acht-Stunden-Tag als Obergrenze verteidigen; mindestens 11 Stunden Ruhezeit zwischen Schichten; Ausnahmen einschränken.",
+          "ursachen_ids": [4001],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Lange Arbeitstage gehen mit höherem Unfall- und Gesundheitsrisiko einher; die Maßnahme bewahrt aber weitgehend geltendes Recht und schränkt Ausnahmen nur unbestimmt ein.",
+          "zitat": "Wir verteidigen den 8-Stunden-Tag als Obergrenze und fordern mindestens 11 Stunden Ruhezeit zwischen Schichten, Ausnahmen wollen wir einschränken […]",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=27",
+          "evidenz": "belegt",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10730,
+          "beschreibung": "Wöchentliche Höchstarbeitszeit auf 40 Stunden begrenzen.",
+          "ursachen_ids": [4001],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Arbeitszeiten über 40 Stunden pro Woche gelten als Gesundheitsrisiko, eine Obergrenze begrenzt Mehrarbeit direkt; sie schränkt aber Betriebe stark ein und ist schwer durchzusetzen.",
+          "zitat": "Ausnahmen wollen wir einschränken und die wöchentliche Höchstarbeitszeit auf 40 Stunden begrenzen.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=27",
+          "evidenz": "belegt",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10731,
+          "instrument": 10695,
+          "beschreibung": "Häufigere Kontrollen der Arbeitszeit mit unkomplizierten Nachweisen der Unternehmen per E-Mail.",
+          "ursachen_ids": [4001],
+          "zitat": "Um Beschäftigte und ehrliche Betriebe besser zu schützen, brauchen wir häufigere Kontrollen der Arbeitszeit- und Mindestlohnregelungen, auch durch unkomplizierte Nachweise der Unternehmen per E-Mail.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=27",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10732,
+          "beschreibung": "Arbeitsunterbrechungen und Dienstzeiten müssen bezahlt werden.",
+          "ursachen_ids": [4001],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Bezahlung von Arbeitsunterbrechungen und Dienstzeiten verringert unbezahlte Arbeitszeit; die Mehrarbeit selbst bleibt, Abgrenzung zu Pausen ist schwierig.",
+          "zitat": "Arbeitsunterbrechungen und Dienstzeiten müssen bezahlt werden, sie sind keine Freizeit der Beschäftigten!",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=27",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10733,
+          "beschreibung": "Arbeitszeitmodelle mit geringerer Wochenarbeitszeit (z. B. 32 Stunden oder Vier-Tage-Woche) bei vollem Lohn fördern.",
+          "ursachen_ids": [4002],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Pilotprojekte zur Vier-Tage-Woche zeigen mehr Zufriedenheit und weniger Stress bei stabiler Produktivität, beruhen aber auf freiwilligen Teilnehmern; Lohn- und Personalausgleich sind nicht finanziert.",
+          "zitat": "Wir setzen uns für Arbeitszeitmodelle mit einer geringeren Wochenarbeitszeit (z. B. 32 Stunden oder Vier-Tage-Woche) bei vollem Lohn- und notwendigem Personalausgleich ein.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=16",
+          "beleg_studie_url": "https://idw-online.de/-DNceAA",
+          "evidenz": "gemischt",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10734,
+          "instrument": 10696,
+          "beschreibung": "Recht auf vorübergehende Verkürzung der Arbeitszeit für alle Beschäftigten.",
+          "ursachen_ids": [4002],
+          "zitat": "Alle Beschäftigten brauchen das Recht auf vorübergehende Verkürzung ihrer Arbeitszeiten […]",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=27",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10735,
+          "beschreibung": "Sabbatjahr: Beschäftigte sollen zweimal im Berufsleben für ein Jahr aussteigen können, mit Rückkehrrecht.",
+          "ursachen_ids": [4002],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ein Sabbatjahr mit Rückkehrrecht schafft Auszeiten, ändert den Arbeitsumfang aber nur zeitweise; Finanzierung der Auszeit bleibt offen.",
+          "zitat": "Recht auf Auszeiten: Beschäftigte sollen zweimal in ihrem Berufsleben die Möglichkeit haben, für ein Jahr auszusteigen (Sabbatjahr), verbunden mit einem Rückkehrrecht.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=27",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10736,
+          "beschreibung": "Rechtsanspruch auf eine Vollzeitstelle, auch für familienfreundliche Schichten.",
+          "ursachen_ids": [4002],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ein Anspruch auf Vollzeit setzt direkt am unfreiwilligen Teilzeitumfang an; Wirkung hängt von Ausnahmen für Betriebe ab, Erfahrungen mit einem solchen Anspruch fehlen.",
+          "zitat": "Wir setzen uns für einen Rechtsanspruch auf eine Vollzeitstelle und auf familienfreundliche Schichten ein.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=27",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10737,
+          "instrument": 10697,
+          "beschreibung": "Mobiles Arbeiten und flexible Betreuungsangebote ausbauen, damit Beruf und Familie besser zu vereinbaren sind.",
+          "ursachen_ids": [4003],
+          "zitat": "Wir setzen uns für Arbeitszeitmodelle mit einer geringeren Wochenarbeitszeit (z. B. 32 Stunden oder Vier-Tage-Woche) bei vollem Lohn- und notwendigem Personalausgleich ein. […] Begleitet wird dies durch den Ausbau von flexiblen Betreuungsangeboten und Homeoffice-Optionen.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=16",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10738,
+          "instrument": 10700,
+          "beschreibung": "Für den zweiten Elternteil 28 Tage Elternschutz nach der Geburt einführen.",
+          "ursachen_ids": [4003],
+          "zitat": "Um eine partnerschaftliche Aufteilung von Sorge- und Erwerbsarbeit zwischen den Elternteilen zu fördern, wollen wir für den zweiten Elternteil 28 Tage Elternschutz (ab Geburt des Kindes) einführen.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=16",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10739,
+          "beschreibung": "Sechs Wochen Freistellung mit vollem, arbeitgeberfinanziertem Lohnausgleich bei einem familiären Pflegefall.",
+          "ursachen_ids": [4003],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Bezahlte Freistellung beim Eintritt eines Pflegefalls verschafft Zeit zur Organisation ohne Einkommensverlust; die volle Finanzierung durch Arbeitgeber belastet kleine Betriebe, Erfahrungen fehlen.",
+          "zitat": "Wir wollen für alle Beschäftigten sechs Wochen Freistellung bei vollem arbeitgeberfinanziertem Lohnausgleich beim ersten Auftreten eines familiären Pflegefalls.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=20",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "durchsucht_fuer": [4001, 4002, 4003],
+      "massnahmen": [
+        {
+          "id": 10740,
+          "instrument": 10698,
+          "beschreibung": "Flexible Arbeitszeitmodelle in den Verwaltungen einführen",
+          "ursachen_ids": [4003],
+          "zitat": "Die Attraktivität der Verwaltungen als Arbeitgeber wollen wir durch flexible Arbeitszeitmodelle, kompetente und schlanke Führungsstrukturen sowie die frühzeitige Förderung von Leistungsträgern erhöhen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=16",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    }
+  ]
 }

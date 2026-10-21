@@ -1,0 +1,1467 @@
+{
+  "thema_id": 41,
+  "programme": [
+    {
+      "partei_id": 11,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Warninfrastruktur ausbauen, bis die Lücken geschlossen sind; Sonderprogramm für die zivile Verteidigung.",
+          "ursachen_ids": [
+            4102
+          ],
+          "buendel": "Sirenen ausbauen und an das Warnsystem anbinden",
+          "zitat": "Wir legen ein Sonderprogramm für die zivile Verteidigung auf, bauen die Warninfrastruktur weiter aus, bis die Lücken geschlossen sind […]",
+          "seite": 42
+        },
+        {
+          "beschreibung": "Wissen über das Verhalten bei Hochwasser, Stromausfällen und anderen Krisen stärken.",
+          "ursachen_ids": [
+            4103
+          ],
+          "buendel": "Vorräte und Information fördern",
+          "zitat": "Auch das Wissen um das Verhalten bei Hochwasser, Stromausfällen und anderen Krisen stärken wir.",
+          "seite": 42
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 4101,
+          "seiten": [
+            42
+          ],
+          "grund": "Gelesen: kompletter Abschnitt „Zeitenwende beim Bevölkerungsschutz und zivile Verteidigung“ (S. 42). Keine Aussage zu Schutzräumen, Bunkern, Schutzorten in Gebäuden, Kellern oder Tiefgaragen. Pakt für den Bevölkerungsschutz (Unterbringung, Fahrzeuge, IT) betrifft Einheiten, nicht Schutzorte für die Bevölkerung. Die nationale Strategie zum Schutz der Kulturgüter (S. 42) ist kein Schutzort."
+        },
+        {
+          "ursache": 4103,
+          "seiten": [
+            42
+          ],
+          "grund": "Appell „Jedermann ist gefordert, sich im Rahmen der Selbsthilfe aktiv zu beteiligen …“ ist keine Handlung der Partei. „Zivile Reserve“ (Konzept, Spontanhelfer) betrifft Helfende, nicht Vorräte. Keine staatliche Notreserve an Wasser, Lebensmitteln oder Medikamenten."
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Sireneninfrastruktur ausbauen und vollständig an bestehende digitale Warnsysteme anbinden",
+          "ursachen_ids": [
+            4102
+          ],
+          "buendel": "Sirenen ausbauen und an das Warnsystem anbinden",
+          "zitat": "Zudem werden wir die Sireneninfrastruktur in Berlin leistungsfähig ausbauen und sie vollständig in bestehende digitale Warnsysteme wie MoWaS und die Warn-App NINA integrieren.",
+          "seite": 14
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Sirenen und Warnsysteme aktualisieren und ihre Funktion regelmäßig prüfen",
+          "ursachen_ids": [
+            4102
+          ],
+          "buendel": "Sirenen ausbauen und an das Warnsystem anbinden",
+          "zitat": "Sirenen, Warnsysteme und Notfallpläne werden aktualisiert und ihre Funktionalität regelmäßig geprobt.",
+          "seite": 40
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 4102,
+          "seiten": [
+            39
+          ],
+          "grund": "Resilienzstrategie und Gefahren- und Risikoplan (S. 39) sind Vorsorgeplanung, kein Lücke im Warnweg. Notstrom-Aggregate (S. 39) gehören nicht zu Warnsystemen."
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Förderung von Sirenen fortsetzen (Sirenen als Teil des Warnwegs)",
+          "ursachen_ids": [
+            4102
+          ],
+          "buendel": "Sirenen ausbauen und an das Warnsystem anbinden",
+          "zitat": "Zudem sollen Katastrophenschutzleuchttürme weiter ausgebaut und die Förderung von Sirenen fortgesetzt werden.",
+          "seite": 10
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Flächendeckender Ausbau von Sirenen wird gefördert",
+          "ursachen_ids": [
+            4102
+          ],
+          "buendel": "Sirenen ausbauen und an das Warnsystem anbinden",
+          "zitat": "Wir wollen, dass die Menschen besser und schneller vor Gefahren gewarnt werden. Dazu werden wir den flächendeckenden Ausbau mit Sirenen weiter fördern und die bestehenden Warn-Apps verbessern.",
+          "seite": 46
+        },
+        {
+          "beschreibung": "Bestehende Warn-Apps sollen verbessert werden",
+          "ursachen_ids": [
+            4102
+          ],
+          "buendel": "Warn-Apps und Cell Broadcast statt Sirenen",
+          "zitat": "Dazu werden wir den flächendeckenden Ausbau mit Sirenen weiter fördern und die bestehenden Warn-Apps verbessern.",
+          "seite": 46
+        },
+        {
+          "beschreibung": "Zivilverteidigung stärken, um besser auf Bedrohungen vorbereitet zu sein",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4101
+          ],
+          "neue_buendel": [
+            {
+              "ursache": 4101,
+              "name": "Zivilverteidigung stärken",
+              "seite": 46
+            }
+          ],
+          "zitat": "Zudem stärken wir die Zivilverteidigung, um auf geopolitische Bedrohungen wie hybride Angriffe oder militärische Konflikte besser vorbereitet zu sein.",
+          "seite": 46
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 4103,
+          "seiten": [
+            46
+          ],
+          "grund": "Kap. 16 gelesen (S. 46). Keine Zusage zu Notvorräten, Lebensmittelreserven, Information oder Selbsthilfe. Übungen für den Katastrophenfall (S. 46) betreffen Einsatzkräfte und Behörden, nicht Haushalte."
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 4101,
+          "name": "Zivilverteidigung stärken",
+          "seite": 46
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "BE",
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel Sicherheit für ein gutes Leben, Abschnitte Infrastruktur-, Bevölkerungs- und Katastrophenschutz sowie Schutz und Sicherheit für Stadt und Menschen (S. 28–30) gelesen; nichts zu Sirenen, Warn-Apps, Cell Broadcast oder MoWaS.",
+      "nicht_erfasst": [
+        {
+          "ursache": 4102,
+          "seiten": [
+            28,
+            29,
+            30
+          ],
+          "grund": "Gelesen: Bevölkerungs- und Katastrophenschutz, Krisenmanagement. Nichts zu Sirenen, MoWaS, Warn-Apps oder Cell Broadcast. Investitionen in Bevölkerungsschutz, Krisenmanagementsystem und zivile Verteidigung (S. 28–30) betreffen nicht den Warnweg; Leichte Sprache in Krisen (S. 30) betrifft das Verstehen (Ursache 3, nicht Teil dieses Auftrags)."
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "MV",
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel Katastrophen- und Zivilschutz (S. 49–50) und Sicherheit (S. 45–46) gelesen, Stichwortsuche Sirene, MoWaS, Warnsystem, Warn-App, Cell Broadcast. Nichts zu Sirenen oder Warnweg; Schutzräume (S. 49) und Eigenvorsorge (S. 50) betreffen andere Ursachen.",
+      "nicht_erfasst": [
+        {
+          "ursache": 4102,
+          "seiten": [
+            45,
+            46,
+            49,
+            50
+          ],
+          "grund": "Keine Zusage zu Sirenen, MoWaS-Anbindung, Warn-Apps oder Cell Broadcast. Bevölkerungsschutz-Investitionen (S. 45, 49) betreffen Fahrzeuge und Ausstattung; Schutzräume und Notstrom (S. 49) betreffen Schutzorte; Eigenvorsorge (S. 50) ist kein Warnweg."
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Warnsysteme im Katastrophenschutz modernisieren und verlässlich finanzieren",
+          "ursachen_ids": [
+            4102
+          ],
+          "buendel": "Sirenen ausbauen und an das Warnsystem anbinden",
+          "zitat": "Warnsysteme werden modernisiert, Einsatzstrukturen verlässlich finanziert.",
+          "seite": 30
+        },
+        {
+          "beschreibung": "Frühwarnsysteme und Pegeltechnik für den Hochwasserschutz in den Kommunen stärken",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4102
+          ],
+          "zitat": "Frühwarnsysteme, moderne Pegeltechnik sowie aktuelle Hochwasser- und Starkregenkarten stärken die Vorsorge in den Kommunen.",
+          "seite": 23
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Warninfrastruktur ausbauen, dazu verlässliche digitale Systeme und Cyberhilfe",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4102
+          ],
+          "buendel": "Sirenen ausbauen und an das Warnsystem anbinden",
+          "zitat": "Wir schaffen verlässliche digitale Systeme, eine moderne Cyberhilfe und bauen die Warninfrastruktur aus.",
+          "seite": 138
+        },
+        {
+          "beschreibung": "Selbsthilfefähigkeit der Bevölkerung stärken: Bevölkerungsschutztag weiterentwickeln, Angebote zur Krisenvorsorge für alle",
+          "ursachen_ids": [
+            4103
+          ],
+          "buendel": "Vorräte und Information fördern",
+          "zitat": "Die Selbsthilfefähigkeit der Bevölkerung stärken wir, indem wir den Bevölkerungsschutztag weiterentwickeln und Angebote für alle Menschen in der Krisenvorsorge anbieten.",
+          "seite": 138
+        },
+        {
+          "beschreibung": "Gesundheitswesen auf Krisen vorbereiten, unter anderem mit einem Vorrat an Arzneimitteln und Medizinprodukten",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4103
+          ],
+          "buendel": "Staatliche Notreserven",
+          "zitat": "Wir wollen unser Gesundheitswesen durch ein Gesundheitssicherstellungsgesetz auf Epidemien, Pandemien, große Katastrophen und militärische Bedrohungen besser vorbereiten. Das betrifft zum Beispiel Prävention durch Lufthygiene, Aufklärung und Aufbau eines zuverlässigen und dauerhaften Monitorings, den Vorrat an Arzneimitteln und Medizinprodukten sowie regelmäßige Katastrophenschutzübungen.",
+          "seite": 96
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 4101,
+          "seiten": [
+            138,
+            150
+          ],
+          "grund": "Die Ertüchtigung vorhandener Schutzbauten steht nur als Prüfauftrag („prüfen“, S. 138); kein Schutzkonzept mit den Ländern und keine Zusage zu neuen Schutzräumen oder Schutzorten im Bestand gefunden. S. 150 betrifft Zufluchtsorte für Verfolgte (Asyl), nicht Schutzorte bei Krisen."
+        }
+      ],
+      "hebel_nicht_gefunden": []
+    },
+    {
+      "partei_id": 13,
+      "land": "BE",
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel 6.2 Bevölkerungs- und Katastrophenschutz (S. 235–237) und Fundstellen S. 139, 210 gelesen; nichts zum Warnweg (Sirenen, MoWaS, Warn-Apps, Cell Broadcast). Frühwarnsysteme (S. 139, 210) betreffen Antisemitismus und Drogen.",
+      "nicht_erfasst": [
+        {
+          "ursache": 4102,
+          "seiten": [
+            139,
+            210,
+            235,
+            236,
+            237
+          ],
+          "grund": "Kapitel 6.2 und Fundstellen gelesen. Die Kommunikationskanäle und die Helfer*innenplattform (S. 236) dienen der Koordination Ehrenamtlicher, nicht der Warnung der Bevölkerung. Übungen mit Bevölkerung (S. 237) betreffen Verhalten, nicht den Warnweg. Frühwarnsysteme (S. 139, 210) haben keinen Bezug zur Warnung bei Großlagen."
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "MV",
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel 17.3 „Gemeinsam für Sicherheit und Resilienz im Ostseeraum“ (S. 109–110) gelesen: Krisenvorsorge, Katastrophenschutz und Resilienzpläne, aber nichts zu Warnwegen, Sirenen oder Warn-Apps. Klimaanpassung (S. 11) nur Schutz vor Starkregen und Hochwasser, keine Warnung. Suche im ganzen Text (Warn, Sirene, MoWaS, Cell Broadcast, Alarm, Notruf) ohne Treffer.",
+      "nicht_erfasst": [
+        {
+          "ursache": 4102,
+          "seiten": [
+            11,
+            109,
+            110
+          ],
+          "grund": "Kapitel 17.3 und Klimaanpassung gelesen. Nur allgemeine Krisenvorsorge und Resilienzpläne; keine Maßnahme an Sirenen, MoWaS, Warn-Apps oder Cell Broadcast. Schutz vor Starkregen und Hochwasser (S. 11) ist kein Warnweg."
+        }
+      ],
+      "stand_im_pdf": "16.07.2026"
+    },
+    {
+      "partei_id": 13,
+      "land": "ST",
+      "massnahmen": [
+        {
+          "beschreibung": "Krisenpläne mit eindeutig geregelten Zuständigkeiten, Abläufen und Kommunikationswegen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4102
+          ],
+          "zitat": "Diese Pläne müssen Zuständigkeiten, Abläufe und Kommunikationswege eindeutig regeln, damit im Ernstfall sofort gehandelt werden kann.",
+          "seite": 48
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 4102,
+          "seiten": [
+            48,
+            49
+          ],
+          "grund": "Keine Fundstelle zu Sirenen, MoWaS, Warn-Apps, Cell Broadcast oder Warnweg (Stichwortsuche warn, Sirene, Cell, Warnsystem). Schutzraumkonzept (S. 48) gehört zu Schutzorten (Thema 1)."
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": null,
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel Innere Sicherheit (S. 21–24), Föderalismus (S. 36), Verteidigung (S. 46–47) gelesen und Volltextsuche nach Schutzraum, Sirene, Warn, Vorrat, Bevölkerungsschutz; nichts zu Schutzorten, Warnweg oder Notvorräten.",
+      "nicht_erfasst": [
+        {
+          "ursache": 4101,
+          "seiten": [
+            24,
+            36,
+            46
+          ],
+          "grund": "Zivil- und Katastrophenschutz (S. 24) nur als Koordinationsrolle des Bundesamts und Ehrenamt genannt; keine Schutzräume, keine Schutzorte, kein Konzept. S. 36 nennt Bevölkerungsschutz nur als Priorität."
+        },
+        {
+          "ursache": 4102,
+          "seiten": [
+            24,
+            36
+          ],
+          "grund": "Keine Aussage zu Sirenen, MoWaS, Warn-Apps, Cell Broadcast oder Warnweg; S. 24 betrifft die Koordination des Katastrophenschutzes allgemein."
+        },
+        {
+          "ursache": 4103,
+          "seiten": [
+            24,
+            36
+          ],
+          "grund": "Keine Aussage zu Notvorräten, Selbsthilfe oder Notreserven der Haushalte."
+        }
+      ],
+      "eigene_synonyme": []
+    },
+    {
+      "partei_id": 14,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Qualität der Cell-Broadcast-Warnmeldungen verbessern, damit sie rechtzeitig erfolgen und Handlungsanweisungen enthalten",
+          "ursachen_ids": [
+            4102
+          ],
+          "buendel": "Warn-Apps und Cell Broadcast statt Sirenen",
+          "zitat": "Wir verbessern die Qualität von per Cell Broadcast gesendeten Warnmeldungen, sodass diese rechtzeitig erfolgen, verständlich sind und klare Handlungsanweisungen zur privaten Krisenvorsorge beinhalten.",
+          "seite": 75
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Flächendeckend einen Mix aus Sirenen, Warn-Apps, Cell Broadcast und Pegelüberwachung für die Warnung der Bevölkerung nutzen",
+          "ursachen_ids": [
+            4102
+          ],
+          "buendel": "Sirenen ausbauen und an das Warnsystem anbinden",
+          "zitat": "Wir Freie Demokraten werden: […] flächendeckend auf einen Mix aus «Sirene»n, Warn-Apps, Cell Broadcast und Pegelüberwachung setzen. So wird jede und jeder schnell gewarnt - ob bei Starkregen, Blackout oder anderen Krisen.",
+          "seite": 128
+        },
+        {
+          "beschreibung": "Landesweit einheitliche Ersthelfer-App etablieren, um Ersthelfende im Notfall zu alarmieren",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4102
+          ],
+          "zitat": "Für schnelle Hilfe wollen wir eine landesweit einheitliche Ersthelfer-App etablieren und breit bekannt machen, damit qualifizierte Ersthelfende im Umfeld eines Notfalls sofort alarmiert werden können.",
+          "seite": 128
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "ST",
+      "stand_im_pdf": "05.06.2026 (Titelseite)",
+      "massnahmen": [
+        {
+          "beschreibung": "Ein ressortübergreifendes Bevölkerungsschutzkonzept erarbeiten und fortschreiben, mit Kommunikationsstrukturen und Vorsorge für die Bevölkerung.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4102
+          ],
+          "zitat": "Das Land hat ein einheitliches, ressortübergreifendes Bevölkerungsschutzkonzept zu erarbeiten und regelmäßig fortzuschreiben, einschließlich klarer Zuständigkeiten, Kommunikationsstrukturen und Vorsorgemaßnahmen für die Bevölkerung.",
+          "seite": 49
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Auf- und Ausbau einer einsatzbereiten Infrastruktur an Schutzräumen für die zivile Bevölkerung",
+          "ursachen_ids": [
+            4101
+          ],
+          "buendel": "Schutzräume reaktivieren oder neu bauen",
+          "zitat": "Einsatz- und betriebsbereite Schutzräume stehen nicht ausreichend zur Verfügung. Hier fordern wir daher den Auf- und Ausbau einer einsatzbereiten Infrastruktur für die zivile Bevölkerung.",
+          "seite": 90
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 4102,
+          "seiten": [
+            76,
+            90
+          ],
+          "grund": "Keine Aussage zu Sirenen, MoWaS, Warn-Apps oder Cell Broadcast. S. 76 Schnellwarnsystem betrifft Lebens- und Futtermittelsicherheit (Produktwarnung), nicht die Warnung der Bevölkerung."
+        },
+        {
+          "ursache": 4103,
+          "seiten": [
+            76,
+            90,
+            96
+          ],
+          "grund": "Keine Notvorräte, keine staatlichen Lebensmittelreserven und keine Information zur Selbsthilfe bei Ausfällen. S. 96 Selbsthilfe betrifft Entwicklungszusammenarbeit."
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "BE",
+      "massnahmen": [
+        {
+          "beschreibung": "Ausbau des Sirenennetzes und verlässliche Warnung der Bevölkerung",
+          "ursachen_ids": [
+            4102
+          ],
+          "buendel": "Sirenen ausbauen und an das Warnsystem anbinden",
+          "zitat": "Die AfD fordert: […] Den Ausbau des Sirenennetzes und eine verlässliche Warnung der Bevölkerung.",
+          "seite": 18
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Sirenennetz wieder aufbauen",
+          "ursachen_ids": [
+            4102
+          ],
+          "buendel": "Sirenen ausbauen und an das Warnsystem anbinden",
+          "zitat": "Das Sirenennetz bauen wir konsequent wieder auf.",
+          "seite": 40
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "ST",
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel VI „Innere Sicherheit“ (S. 113–114, Katastrophenschutz), Energiepolitik (S. 160–161, Blackout-Strategie), Hochwasserschutz (S. 205) und Pandemie-Krisenplan (S. 247) gelesen; nichts zu Sirenen, MoWaS, Warn-Apps, Cell Broadcast oder Warnweg.",
+      "nicht_erfasst": [
+        {
+          "ursache": 4102,
+          "seiten": [
+            113,
+            114,
+            160,
+            161,
+            205,
+            247
+          ],
+          "grund": "Katastrophenschutz (Gesetz, Ehrenamt, Feuerschutzsteuer), Blackout-Strategie zur Energieversorgung, Elementarschaden-Versicherung und Krisenplan betreffen keine Auslösung oder Anbindung von Warnungen."
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Katastrophenschutz massiv aufwerten und investieren, um sich auf Hochwasser, Sturzfluten, Hitze und Dürre vorzubereiten.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4101
+          ],
+          "zitat": "Wir müssen uns jetzt an den Klimawandel anpassen, den Katastrophenschutz massiv aufwerten und investieren, um uns auf Hochwasser, Sturzfluten, Hitzewellen und Dürreperioden vorzubereiten (Kapitel 12).",
+          "seite": 33
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 4102,
+          "seiten": [
+            7,
+            33,
+            44
+          ],
+          "grund": "Kapitel 1 (S. 7), Kapitel 8 (S. 32–33) und Kapitel 12 (S. 44–45) gelesen. Keine Sirenen, kein MoWaS, keine Warn-Apps und kein Cell Broadcast. „Frühwarnsystem“ (S. 7) meint die Preisaufsicht für die Wirtschaft, keine Warnung der Bevölkerung."
+        },
+        {
+          "ursache": 4103,
+          "seiten": [
+            7,
+            33,
+            44
+          ],
+          "grund": "Kapitel 1, 8 und 12 gelesen. Keine Notvorräte an Wasser, Lebensmitteln oder Medikamenten, kein Selbsthilfe- oder Selbstschutzwissen, keine staatliche Notreserve. Nur allgemeiner Katastrophenschutz (S. 33, 44) ohne Vorratsbezug, daher als Grenzfall bei 4101 geführt."
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 4101,
+          "name": "Katastrophenschutz ausbauen (Hochwasser, Hitze)",
+          "seite": 33
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "Katastrophenschutz",
+          "ursache": 4101,
+          "richtung": "aufwerten und investieren"
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "BE",
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel Inneres, Abschnitt Bevölkerungsschutz (S. 297–299) gelesen: Katastrophenschutz, Notunterbringung, Notstrom, Läufer*innen für Information; kein Warnweg (Sirenen, MoWaS, Warn-Apps, Cell Broadcast). Stichwortsuche im Gesamttext ohne Treffer.",
+      "nicht_erfasst": [
+        {
+          "ursache": 4102,
+          "seiten": [
+            297,
+            298,
+            299
+          ],
+          "grund": "Bevölkerungsschutz: Katastrophenschutz-Infopunkte, Leuchttürme, Notfallpläne und aufsuchende Information von Menschen im Katastrophenfall; keine Sirenen, Warnsysteme, Warn-Apps oder Cell Broadcast."
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "MV",
+      "massnahmen": [
+        {
+          "beschreibung": "Landesprogramm zur Modernisierung des Katastrophenschutzes; Beschaffung zentral über das Land (Warnweg nicht genannt)",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4102
+          ],
+          "zitat": "Ein Landesprogramm für die Modernisierung des Katastrophenschutzes einrichten und Beschaffungsvorgänge über das Land zentralisieren, um Kosten für Kommunen und Kreise zu senken.",
+          "seite": 20
+        }
+      ],
+      "stand_im_pdf": "Juni 2026 (Beschluss am 30. Mai 2026)"
+    },
+    {
+      "partei_id": 16,
+      "land": "ST",
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel Katastrophen- und Bevölkerungsschutz (S. 130–133) gelesen, dazu Kapitel Innenpolitik-Einstieg und Stichwortsuche. Nichts zu Sirenen, MoWaS, Warn-Apps, Cell Broadcast oder Lücken im Warnweg; Leuchttürme und Selbstvorsorge (S. 131) betreffen Schutzorte und Vorbereitung, keine Warnung.",
+      "nicht_erfasst": [
+        {
+          "ursache": 4102,
+          "seiten": [
+            130,
+            131,
+            132,
+            133
+          ],
+          "grund": "Gelesen: Katastrophenschutz, Eigenvorsorge, Leuchttürme, Feuerwehr, Standards. Keine Zusage zu Sirenen, Warnsystem, Auslösung über MoWaS, Warn-Apps oder Cell Broadcast. Risikoabschätzungen und Informationen zur Selbstvorsorge (S. 131) sind keine Warnwege."
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Katastrophenschutz stärken, Mittel für Deiche und Dämme bereitstellen (Hochwasser)",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4101
+          ],
+          "zitat": "Wir wollen den Katastrophenschutz stärken, Hochwasserereignisse in ihren Folgen abmildern, Mittel für Auf- und Ausbau von Deichen und Dämmen zur Verfügung stellen",
+          "seite": 20
+        },
+        {
+          "beschreibung": "Regionale Wirtschaftskreisläufe fördern und Importabhängigkeiten verringern (Versorgungsketten, Medikamente)",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4103
+          ],
+          "zitat": "Wir wollen regionale Wirtschaftskreisläufe fördern und Importabhängigkeiten verringern.",
+          "seite": 13
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 4101,
+          "name": "Katastrophenschutz und Hochwasserschutz stärken",
+          "seite": 20
+        },
+        {
+          "ursache": 4103,
+          "name": "Regionale Wirtschaftskreisläufe und Importabhängigkeiten",
+          "seite": 13
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 4102,
+          "seiten": [
+            5,
+            13,
+            20,
+            25,
+            33
+          ],
+          "grund": "Kapitel Frieden (S. 4–9), Wirtschaft (S. 13) und Katastrophenschutz (S. 20) gelesen, Fundstellen S. 5, 25, 33 geprüft: keine Warnung, keine Sirenen, kein MoWaS, keine Warn-App und kein Cell Broadcast. Die Treffer betreffen Bunker (S. 5), Kitas als Schutzräume (S. 25) und Frauenhäuser (S. 33)."
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "BE",
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel Gesundheit (S. 25), Innere Sicherheit (S. 38–41) und Kriegswirtschaft (S. 44) gelesen; nichts zu Sirenen, MoWaS, Warn-Apps oder Cell Broadcast. Warnsystem S. 40 betrifft Betroffene häuslicher Gewalt.",
+      "nicht_erfasst": [
+        {
+          "ursache": 4102,
+          "seiten": [
+            25,
+            40,
+            44
+          ],
+          "grund": "Kein Warnweg-Bezug. S. 25 nennt nur allgemein Investitionen in Katastrophenschutz; S. 40 Fußfessel und Warnsystem für Betroffene häuslicher Gewalt; S. 44 Krankenhausplanung im Operationsplan Deutschland."
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "MV",
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel 'Schutz der Bevölkerung vor den Folgen von Kriegen' (S. 7–8) und 'Feuerwehr, Rettungsdienste und Katastrophenschutz' (S. 68) gelesen; nichts zu Sirenen, Warnsystem, Warn-Apps oder Cell Broadcast. Klimaanpassung (S. 86) betrifft Wasservorsorge, keine Warnung.",
+      "nicht_erfasst": [
+        {
+          "ursache": 4102,
+          "seiten": [
+            7,
+            8,
+            68,
+            71,
+            86
+          ],
+          "grund": "Gelesen: Schutz vor indirekten Kriegsfolgen, Katastrophenschutz (Ausstattung, Ehrenamt), Krisenkommunikation der Corona-Zeit (S. 71), Hochwasser- und Starkregenvorsorge (S. 86). Keine Aussage zum Warnweg; Sirenen, MoWaS und Warn-Apps kommen im Programm nicht vor."
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "ST",
+      "massnahmen": [],
+      "keine_massnahme": "Kapitel „Schutz beginnt vor der Katastrophe“ (S. 68–69) und Kapitel „Schutz ist staatliche Kernaufgabe“ (S. 66–67) gelesen; nichts zu Sirenen, MoWaS, Warn-Apps oder Cell Broadcast.",
+      "nicht_erfasst": [
+        {
+          "ursache": 4102,
+          "seiten": [
+            68,
+            69
+          ],
+          "grund": "Katastrophenschutzgesetz, Landesstab, Schutzräume und Ehrenamt gelesen; keine Zusage zum Warnweg (Sirenen, Auslösung über MoWaS, Warn-Apps, Cell Broadcast)."
+        }
+      ]
+    }
+  ],
+  "suchbegriffe": {
+    "4101": {
+      "Schutzräume reaktivieren oder neu bauen": [
+        "schutzräum",
+        "schutzraum",
+        "bunker",
+        "schutzbau"
+      ],
+      "Schutzorte im Bestand nutzen (Keller, Gebäude)": [
+        "zufluchtsort",
+        "schutzort"
+      ],
+      "Zivilschutzbindung aufgeben": [
+        "zivilschutzbindung",
+        "schutzbaukonzept"
+      ]
+    },
+    "4102": {
+      "Sirenen ausbauen und an das Warnsystem anbinden": [
+        "sirene",
+        "mowas",
+        "warnsystem"
+      ],
+      "Warn-Apps und Cell Broadcast statt Sirenen": [
+        "warn-app",
+        "warnapp",
+        "cell broadcast"
+      ]
+    },
+    "4103": {
+      "Vorräte und Information fördern": [
+        "notvorrat",
+        "notvorrät",
+        "selbsthilfe",
+        "selbstschutz"
+      ],
+      "Eigenverantwortung betonen": [
+        "eigenvorsorge"
+      ],
+      "Staatliche Notreserven": [
+        "lebensmittelreserv",
+        "notreserv"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "63f23d010a4a5785cba64dc85495712f59e33bf406779cbcc25afa85f2a3695f",
+    "programme": [
+      {
+        "partei_id": 11,
+        "land": null,
+        "ursachen": {
+          "4101": {
+            "Schutzräume reaktivieren oder neu bauen": {
+              "schutzräum": 0,
+              "schutzraum": 0,
+              "bunker": 0,
+              "schutzbau": 0
+            },
+            "Schutzorte im Bestand nutzen (Keller, Gebäude)": {
+              "zufluchtsort": 0,
+              "schutzort": 0
+            },
+            "Zivilschutzbindung aufgeben": {
+              "zivilschutzbindung": 0,
+              "schutzbaukonzept": 0
+            }
+          },
+          "4102": {
+            "Sirenen ausbauen und an das Warnsystem anbinden": {
+              "sirene": 0,
+              "mowas": 0,
+              "warnsystem": 0
+            },
+            "Warn-Apps und Cell Broadcast statt Sirenen": {
+              "warn-app": 0,
+              "warnapp": 0,
+              "cell broadcast": 0
+            }
+          },
+          "4103": {
+            "Vorräte und Information fördern": {
+              "notvorrat": 0,
+              "notvorrät": 0,
+              "selbsthilfe": 1,
+              "selbstschutz": 0
+            },
+            "Eigenverantwortung betonen": {
+              "eigenvorsorge": 0
+            },
+            "Staatliche Notreserven": {
+              "lebensmittelreserv": 0,
+              "notreserv": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 11,
+        "land": "BE",
+        "ursachen": {
+          "4102": {
+            "Sirenen ausbauen und an das Warnsystem anbinden": {
+              "sirene": 1,
+              "mowas": 1,
+              "warnsystem": 1
+            },
+            "Warn-Apps und Cell Broadcast statt Sirenen": {
+              "warn-app": 1,
+              "warnapp": 0,
+              "cell broadcast": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 11,
+        "land": "MV",
+        "ursachen": {
+          "4102": {
+            "Sirenen ausbauen und an das Warnsystem anbinden": {
+              "sirene": 1,
+              "mowas": 0,
+              "warnsystem": 1
+            },
+            "Warn-Apps und Cell Broadcast statt Sirenen": {
+              "warn-app": 0,
+              "warnapp": 0,
+              "cell broadcast": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 11,
+        "land": "ST",
+        "ursachen": {
+          "4102": {
+            "Sirenen ausbauen und an das Warnsystem anbinden": {
+              "sirene": 1,
+              "mowas": 0,
+              "warnsystem": 0
+            },
+            "Warn-Apps und Cell Broadcast statt Sirenen": {
+              "warn-app": 0,
+              "warnapp": 0,
+              "cell broadcast": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": null,
+        "ursachen": {
+          "4101": {
+            "Schutzräume reaktivieren oder neu bauen": {
+              "schutzräum": 0,
+              "schutzraum": 0,
+              "bunker": 0,
+              "schutzbau": 0
+            },
+            "Schutzorte im Bestand nutzen (Keller, Gebäude)": {
+              "zufluchtsort": 0,
+              "schutzort": 0
+            },
+            "Zivilschutzbindung aufgeben": {
+              "zivilschutzbindung": 0,
+              "schutzbaukonzept": 0
+            }
+          },
+          "4102": {
+            "Sirenen ausbauen und an das Warnsystem anbinden": {
+              "sirene": 1,
+              "mowas": 0,
+              "warnsystem": 0
+            },
+            "Warn-Apps und Cell Broadcast statt Sirenen": {
+              "warn-app": 1,
+              "warnapp": 0,
+              "cell broadcast": 0
+            }
+          },
+          "4103": {
+            "Vorräte und Information fördern": {
+              "notvorrat": 0,
+              "notvorrät": 0,
+              "selbsthilfe": 0,
+              "selbstschutz": 0
+            },
+            "Eigenverantwortung betonen": {
+              "eigenvorsorge": 0
+            },
+            "Staatliche Notreserven": {
+              "lebensmittelreserv": 0,
+              "notreserv": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": "BE",
+        "ursachen": {
+          "4102": {
+            "Sirenen ausbauen und an das Warnsystem anbinden": {
+              "sirene": 0,
+              "mowas": 0,
+              "warnsystem": 0
+            },
+            "Warn-Apps und Cell Broadcast statt Sirenen": {
+              "warn-app": 0,
+              "warnapp": 0,
+              "cell broadcast": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": "MV",
+        "ursachen": {
+          "4102": {
+            "Sirenen ausbauen und an das Warnsystem anbinden": {
+              "sirene": 0,
+              "mowas": 0,
+              "warnsystem": 0
+            },
+            "Warn-Apps und Cell Broadcast statt Sirenen": {
+              "warn-app": 0,
+              "warnapp": 0,
+              "cell broadcast": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": "ST",
+        "ursachen": {
+          "4102": {
+            "Sirenen ausbauen und an das Warnsystem anbinden": {
+              "sirene": 0,
+              "mowas": 0,
+              "warnsystem": 2
+            },
+            "Warn-Apps und Cell Broadcast statt Sirenen": {
+              "warn-app": 0,
+              "warnapp": 0,
+              "cell broadcast": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": null,
+        "ursachen": {
+          "4101": {
+            "Schutzräume reaktivieren oder neu bauen": {
+              "schutzräum": 0,
+              "schutzraum": 0,
+              "bunker": 0,
+              "schutzbau": 1
+            },
+            "Schutzorte im Bestand nutzen (Keller, Gebäude)": {
+              "zufluchtsort": 1,
+              "schutzort": 0
+            },
+            "Zivilschutzbindung aufgeben": {
+              "zivilschutzbindung": 0,
+              "schutzbaukonzept": 0
+            }
+          },
+          "4102": {
+            "Sirenen ausbauen und an das Warnsystem anbinden": {
+              "sirene": 0,
+              "mowas": 0,
+              "warnsystem": 0
+            },
+            "Warn-Apps und Cell Broadcast statt Sirenen": {
+              "warn-app": 0,
+              "warnapp": 0,
+              "cell broadcast": 0
+            }
+          },
+          "4103": {
+            "Vorräte und Information fördern": {
+              "notvorrat": 0,
+              "notvorrät": 0,
+              "selbsthilfe": 2,
+              "selbstschutz": 2
+            },
+            "Eigenverantwortung betonen": {
+              "eigenvorsorge": 0
+            },
+            "Staatliche Notreserven": {
+              "lebensmittelreserv": 0,
+              "notreserv": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": "BE",
+        "ursachen": {
+          "4102": {
+            "Sirenen ausbauen und an das Warnsystem anbinden": {
+              "sirene": 0,
+              "mowas": 0,
+              "warnsystem": 2
+            },
+            "Warn-Apps und Cell Broadcast statt Sirenen": {
+              "warn-app": 0,
+              "warnapp": 0,
+              "cell broadcast": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": "MV",
+        "ursachen": {
+          "4102": {
+            "Sirenen ausbauen und an das Warnsystem anbinden": {
+              "sirene": 0,
+              "mowas": 0,
+              "warnsystem": 0
+            },
+            "Warn-Apps und Cell Broadcast statt Sirenen": {
+              "warn-app": 0,
+              "warnapp": 0,
+              "cell broadcast": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": "ST",
+        "ursachen": {
+          "4102": {
+            "Sirenen ausbauen und an das Warnsystem anbinden": {
+              "sirene": 0,
+              "mowas": 0,
+              "warnsystem": 0
+            },
+            "Warn-Apps und Cell Broadcast statt Sirenen": {
+              "warn-app": 0,
+              "warnapp": 0,
+              "cell broadcast": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": null,
+        "ursachen": {
+          "4101": {
+            "Schutzräume reaktivieren oder neu bauen": {
+              "schutzräum": 0,
+              "schutzraum": 0,
+              "bunker": 0,
+              "schutzbau": 0
+            },
+            "Schutzorte im Bestand nutzen (Keller, Gebäude)": {
+              "zufluchtsort": 0,
+              "schutzort": 0
+            },
+            "Zivilschutzbindung aufgeben": {
+              "zivilschutzbindung": 0,
+              "schutzbaukonzept": 0
+            }
+          },
+          "4102": {
+            "Sirenen ausbauen und an das Warnsystem anbinden": {
+              "sirene": 0,
+              "mowas": 0,
+              "warnsystem": 0
+            },
+            "Warn-Apps und Cell Broadcast statt Sirenen": {
+              "warn-app": 0,
+              "warnapp": 0,
+              "cell broadcast": 0
+            }
+          },
+          "4103": {
+            "Vorräte und Information fördern": {
+              "notvorrat": 0,
+              "notvorrät": 0,
+              "selbsthilfe": 0,
+              "selbstschutz": 0
+            },
+            "Eigenverantwortung betonen": {
+              "eigenvorsorge": 0
+            },
+            "Staatliche Notreserven": {
+              "lebensmittelreserv": 0,
+              "notreserv": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": "BE",
+        "ursachen": {
+          "4102": {
+            "Sirenen ausbauen und an das Warnsystem anbinden": {
+              "sirene": 0,
+              "mowas": 0,
+              "warnsystem": 1
+            },
+            "Warn-Apps und Cell Broadcast statt Sirenen": {
+              "warn-app": 0,
+              "warnapp": 0,
+              "cell broadcast": 1
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": "MV",
+        "ursachen": {
+          "4102": {
+            "Sirenen ausbauen und an das Warnsystem anbinden": {
+              "sirene": 1,
+              "mowas": 0,
+              "warnsystem": 0
+            },
+            "Warn-Apps und Cell Broadcast statt Sirenen": {
+              "warn-app": 1,
+              "warnapp": 0,
+              "cell broadcast": 1
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": "ST",
+        "ursachen": {
+          "4102": {
+            "Sirenen ausbauen und an das Warnsystem anbinden": {
+              "sirene": 0,
+              "mowas": 0,
+              "warnsystem": 0
+            },
+            "Warn-Apps und Cell Broadcast statt Sirenen": {
+              "warn-app": 1,
+              "warnapp": 0,
+              "cell broadcast": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": null,
+        "ursachen": {
+          "4101": {
+            "Schutzräume reaktivieren oder neu bauen": {
+              "schutzräum": 1,
+              "schutzraum": 0,
+              "bunker": 0,
+              "schutzbau": 0
+            },
+            "Schutzorte im Bestand nutzen (Keller, Gebäude)": {
+              "zufluchtsort": 0,
+              "schutzort": 0
+            },
+            "Zivilschutzbindung aufgeben": {
+              "zivilschutzbindung": 0,
+              "schutzbaukonzept": 0
+            }
+          },
+          "4102": {
+            "Sirenen ausbauen und an das Warnsystem anbinden": {
+              "sirene": 0,
+              "mowas": 0,
+              "warnsystem": 1
+            },
+            "Warn-Apps und Cell Broadcast statt Sirenen": {
+              "warn-app": 0,
+              "warnapp": 0,
+              "cell broadcast": 0
+            }
+          },
+          "4103": {
+            "Vorräte und Information fördern": {
+              "notvorrat": 0,
+              "notvorrät": 0,
+              "selbsthilfe": 1,
+              "selbstschutz": 0
+            },
+            "Eigenverantwortung betonen": {
+              "eigenvorsorge": 0
+            },
+            "Staatliche Notreserven": {
+              "lebensmittelreserv": 0,
+              "notreserv": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": "BE",
+        "ursachen": {
+          "4102": {
+            "Sirenen ausbauen und an das Warnsystem anbinden": {
+              "sirene": 1,
+              "mowas": 0,
+              "warnsystem": 0
+            },
+            "Warn-Apps und Cell Broadcast statt Sirenen": {
+              "warn-app": 0,
+              "warnapp": 0,
+              "cell broadcast": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": "MV",
+        "ursachen": {
+          "4102": {
+            "Sirenen ausbauen und an das Warnsystem anbinden": {
+              "sirene": 1,
+              "mowas": 0,
+              "warnsystem": 0
+            },
+            "Warn-Apps und Cell Broadcast statt Sirenen": {
+              "warn-app": 0,
+              "warnapp": 0,
+              "cell broadcast": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": "ST",
+        "ursachen": {
+          "4102": {
+            "Sirenen ausbauen und an das Warnsystem anbinden": {
+              "sirene": 0,
+              "mowas": 0,
+              "warnsystem": 0
+            },
+            "Warn-Apps und Cell Broadcast statt Sirenen": {
+              "warn-app": 0,
+              "warnapp": 0,
+              "cell broadcast": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": null,
+        "ursachen": {
+          "4101": {
+            "Schutzräume reaktivieren oder neu bauen": {
+              "schutzräum": 0,
+              "schutzraum": 0,
+              "bunker": 0,
+              "schutzbau": 0
+            },
+            "Schutzorte im Bestand nutzen (Keller, Gebäude)": {
+              "zufluchtsort": 0,
+              "schutzort": 0
+            },
+            "Zivilschutzbindung aufgeben": {
+              "zivilschutzbindung": 0,
+              "schutzbaukonzept": 0
+            }
+          },
+          "4102": {
+            "Sirenen ausbauen und an das Warnsystem anbinden": {
+              "sirene": 0,
+              "mowas": 0,
+              "warnsystem": 1
+            },
+            "Warn-Apps und Cell Broadcast statt Sirenen": {
+              "warn-app": 0,
+              "warnapp": 0,
+              "cell broadcast": 0
+            }
+          },
+          "4103": {
+            "Vorräte und Information fördern": {
+              "notvorrat": 0,
+              "notvorrät": 0,
+              "selbsthilfe": 0,
+              "selbstschutz": 0
+            },
+            "Eigenverantwortung betonen": {
+              "eigenvorsorge": 0
+            },
+            "Staatliche Notreserven": {
+              "lebensmittelreserv": 0,
+              "notreserv": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": "BE",
+        "ursachen": {
+          "4102": {
+            "Sirenen ausbauen und an das Warnsystem anbinden": {
+              "sirene": 0,
+              "mowas": 0,
+              "warnsystem": 0
+            },
+            "Warn-Apps und Cell Broadcast statt Sirenen": {
+              "warn-app": 0,
+              "warnapp": 0,
+              "cell broadcast": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": "MV",
+        "ursachen": {
+          "4102": {
+            "Sirenen ausbauen und an das Warnsystem anbinden": {
+              "sirene": 0,
+              "mowas": 0,
+              "warnsystem": 0
+            },
+            "Warn-Apps und Cell Broadcast statt Sirenen": {
+              "warn-app": 0,
+              "warnapp": 0,
+              "cell broadcast": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": "ST",
+        "ursachen": {
+          "4102": {
+            "Sirenen ausbauen und an das Warnsystem anbinden": {
+              "sirene": 0,
+              "mowas": 0,
+              "warnsystem": 0
+            },
+            "Warn-Apps und Cell Broadcast statt Sirenen": {
+              "warn-app": 0,
+              "warnapp": 0,
+              "cell broadcast": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": null,
+        "ursachen": {
+          "4101": {
+            "Schutzräume reaktivieren oder neu bauen": {
+              "schutzräum": 2,
+              "schutzraum": 0,
+              "bunker": 1,
+              "schutzbau": 0
+            },
+            "Schutzorte im Bestand nutzen (Keller, Gebäude)": {
+              "zufluchtsort": 0,
+              "schutzort": 0
+            },
+            "Zivilschutzbindung aufgeben": {
+              "zivilschutzbindung": 0,
+              "schutzbaukonzept": 0
+            }
+          },
+          "4102": {
+            "Sirenen ausbauen und an das Warnsystem anbinden": {
+              "sirene": 0,
+              "mowas": 0,
+              "warnsystem": 0
+            },
+            "Warn-Apps und Cell Broadcast statt Sirenen": {
+              "warn-app": 0,
+              "warnapp": 0,
+              "cell broadcast": 0
+            }
+          },
+          "4103": {
+            "Vorräte und Information fördern": {
+              "notvorrat": 0,
+              "notvorrät": 0,
+              "selbsthilfe": 0,
+              "selbstschutz": 0
+            },
+            "Eigenverantwortung betonen": {
+              "eigenvorsorge": 0
+            },
+            "Staatliche Notreserven": {
+              "lebensmittelreserv": 0,
+              "notreserv": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": "BE",
+        "ursachen": {
+          "4102": {
+            "Sirenen ausbauen und an das Warnsystem anbinden": {
+              "sirene": 0,
+              "mowas": 0,
+              "warnsystem": 1
+            },
+            "Warn-Apps und Cell Broadcast statt Sirenen": {
+              "warn-app": 0,
+              "warnapp": 0,
+              "cell broadcast": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": "MV",
+        "ursachen": {
+          "4102": {
+            "Sirenen ausbauen und an das Warnsystem anbinden": {
+              "sirene": 0,
+              "mowas": 0,
+              "warnsystem": 0
+            },
+            "Warn-Apps und Cell Broadcast statt Sirenen": {
+              "warn-app": 0,
+              "warnapp": 0,
+              "cell broadcast": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": "ST",
+        "ursachen": {
+          "4102": {
+            "Sirenen ausbauen und an das Warnsystem anbinden": {
+              "sirene": 0,
+              "mowas": 0,
+              "warnsystem": 0
+            },
+            "Warn-Apps und Cell Broadcast statt Sirenen": {
+              "warn-app": 0,
+              "warnapp": 0,
+              "cell broadcast": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}

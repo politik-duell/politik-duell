@@ -1,0 +1,28 @@
+{
+  "partei_id": 11,
+  "land": "MV",
+  "massnahmen": [
+    { "beschreibung": "Mehr Polizei an Innenstädten und Kriminalitätsschwerpunkten, höherer Kontrolldruck und wirksamere Platzverweise im öffentlichen Raum", "ursachen_ids": [3401], "buendel": "Gezielte Kontrollen für Sicherheit ermöglichen", "zitat": "Wir sorgen für mehr Sicherheit und Ordnung im öffentlichen Raum, durch mehr Polizei in den Innenstädten und an Kriminalitätsschwerpunkten, höheren Kontrolldruck sowie wirksamere Platzverweise und Aufenthaltsverbote.", "seite": 31 },
+    { "beschreibung": "Videoüberwachung zur Verhinderung von Angsträumen ausweiten", "ursachen_ids": [], "ursachen_offen": [3401], "zitat": "„MV -Sicherheit “: […] Verhinderung von Angsträumen, unter anderem durch eine Ausweitung der Videoüberwachung.", "seite": 6 },
+    { "beschreibung": "Ausbildung der Polizei analysieren, Ausbildungsinhalte modernisieren und digital aufbereiten", "ursachen_ids": [3402], "buendel": "Kommunikation und Fortbildung der Polizei", "zitat": "Wir werden die derzeitige Ausbildung insbesondere für den mittleren Polizeivollzugsdienst analysieren und Ausbildungsinhalte modernisieren und digital aufbereiten.", "seite": 28 }
+  ],
+  "neue_buendel": [
+    { "ursache": 3401, "name": "Videoüberwachung ausweiten", "seite": 6 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "kontrolldruck", "ursache": 3401, "richtung": "Gezielte Kontrollen für Sicherheit ermöglichen" }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3401, "seiten": [31], "grund": "Datenschutzreform und Versammlungsgesetz (S. 31) erweitern Befugnisse, begrenzen aber keine Kontrollen. Kontakt- und Näherungsverbote bei häuslicher Gewalt (S. 31) betreffen Gewaltschutz, nicht Polizeikontakte Jugendlicher." },
+    { "ursache": 3402, "seiten": [28, 31], "grund": "Distanzelektroimpulsgerät (S. 31) ist Ausstattung der Polizei und gehört nach R2 zu Sicherheit. Stellen und Schutzausrüstung (S. 27–29) ebenso." },
+    { "ursache": 3403, "seiten": [26, 31, 33, 35, 36], "grund": "Kapitel B.I und B.II (S. 26–37) gelesen, dazu S. 42: keine Beschwerdestelle, unabhängige Kontrolle, Kennzeichnung oder Dokumentationspflicht. Justiz- und Strafverfahrensstellen (S. 33–36) haben keinen Polizeibezug zum Umgang mit jungen Menschen." }
+  ]
+}
+
+--- Protokoll ---
+Gelesen: Inhaltsverzeichnis (S. 2–4), S. 6 (Nr. 5 Sicherheit), Kapitel B Sicherheitsland I Polizei (S. 26–31), II Rechtsstaat (S. 33–37), III Bevölkerungsschutz (S. 38–40), IV Kommunen Pkt. 6 (S. 42), Fundstellen S. 6, 29, 31, 32, 42, 138 (Stichwortregister).
+Zur Maßnahme S. 31: dieselbe Passage enthält auch wirksamere Platzverweise und Aufenthaltsverbote; einmal erfasst (kein Zweitfund).
+Gleichartige Stellen, nicht gesondert erfasst: S. 32 „Präsenz an Kriminalitätsschwerpunkten“ mit Sanktionen (gleicher Hebel wie Kontrolldruck S. 31). S. 31 Videoüberwachung während Versammlungen und S. 32 „Videoüberwachung verhältnismäßig und rechtsstaatlich einsetzen“ und S. 42 „zielgerichtete Videoüberwachung“ (gleicher Hebel wie S. 6). S. 28 „Fortbildungsprogramme sollen kontinuierlich ausgebaut werden“ und S. 29 „Nachwuchs- und Spezialisierungsprogramme gezielt ausbauen“ (gleicher Hebel wie Ausbildung, S. 28).
+Nicht erfasst: S. 29 weitere Zugangswege zur Kriminalpolizei (Personalgewinnung, Lehrgang nur geprüft). S. 35 Häuser des Jugendrechts (nur geprüft, Justizzusammenarbeit). S. 31 Taser, S. 27–29 Stellen und Ausstattung: Ausstattung nach R2 zu Sicherheit.
+Richtungen ohne Maßnahme: 3401 „Kontrollen begrenzen und nachvollziehbar machen“ (keine Begrenzung anlassloser Kontrollen, keine Kontrollbescheinigung; S. 26–31 gelesen). 3402 „Handlungsfähigkeit und Rückhalt der Polizei“ (nur Ausstattung und Stellen, nach R2 Sicherheit). 3403 „Unabhängige Beschwerde- und Kontrollstellen“ und „Dokumentation und faire Verfahren“ (kein Treffer, kein Inhalt in S. 26–37 und S. 42).
+Seiten ohne Text: 1, 139 (nicht relevant).

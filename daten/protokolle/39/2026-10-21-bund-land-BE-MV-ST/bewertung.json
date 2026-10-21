@@ -1,0 +1,712 @@
+{
+  "blind_pruefsumme": "7e37042f55c71e2a98eb2497ad7e78a61992d3f04069ab6b0e0aeb7106e9db44",
+  "neue_instrumente": [
+    {
+      "kennung": "I1",
+      "name": "Grunderwerbsteuer-Freibetrag oder -Befreiung für (erst)selbstgenutztes Wohneigentum (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "Senkt die Erwerbsnebenkosten direkt; Studien zeigen aber, dass Preise stark auf die Steuer reagieren, ein Teil der Entlastung kann in Kaufpreise fließen. Länder dürfen nur den Satz festlegen, Freibeträge brauchen ein Bundesgesetz.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://ideas.repec.org/p/ces/ceswps/_8839.html"
+    },
+    {
+      "kennung": "I2",
+      "name": "Grunderwerbsteuersatz allgemein senken (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Senkt die Nebenkosten für alle Käufer, Land ist zuständig; dagegen sprechen hohe Einnahmeausfälle und dass Preise teils mitsteigen (Studien zu Satzänderungen).",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://ideas.repec.org/p/ces/ceswps/_8839.html"
+    },
+    {
+      "kennung": "I3",
+      "name": "Grunderwerbsteuersatz anheben (Land)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 3,
+      "begruendung": "Erhöht die Erwerbsnebenkosten statt sie zu senken; Studien zeigen zwar teilweise sinkende Preise, für Käufer bleibt aber keine Entlastung beim Eigenkapital für Nebenkosten.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://ideas.repec.org/p/ces/ceswps/_8839.html"
+    },
+    {
+      "kennung": "I4",
+      "name": "Grunderwerbsteuer-Freibetrag oder -Befreiung für selbstgenutztes Wohneigentum (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Senkt die Nebenkosten beim Kauf deutlich; Teil der Entlastung kann in Preise übergehen. Bund kann das Grunderwerbsteuergesetz ändern, braucht aber den Bundesrat, da das Aufkommen den Ländern zusteht.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://ideas.repec.org/p/ces/ceswps/_8839.html"
+    },
+    {
+      "kennung": "I5",
+      "name": "Erbschaftsteuer senken, abschaffen oder Freibeträge erhöhen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Familientransfers erleichtern den Eigentumserwerb, doch die meisten Erbschaften liegen unter den Freibeträgen und große Transfers gehen an bereits Vermögende; Bundesrat muss zustimmen.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.diw.de/de/diw_01.c.809938.de/erbschaften_machen_vor_allem_vermoegende_noch_reicher.html"
+    },
+    {
+      "kennung": "I6",
+      "name": "Wohnungsbau- bzw. Sparprämie erhöhen und dynamisieren (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Evaluation zeigt: Geförderte sparen mehr und erwerben früher Eigentum; die Beträge sind aber klein und erreichen Geringverdiener bisher kaum. Bund betreibt die Förderung bereits.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.diw.de/de/diw_01.c.822044.de/s_12953.html"
+    },
+    {
+      "kennung": "I7",
+      "name": "Mehr Bauland ausweisen und Ausweisung vereinfachen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Restriktive Flächenregeln gehen laut OECD mit geringerem Angebot und höheren Preisen einher; die Ausweisung liegt aber bei den Kommunen, der Bund kann nur Rahmen und eigene Flächen beitragen.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://oecdecoscope.blog/2021/07/02/a-recipe-for-lower-house-prices/"
+    },
+    {
+      "kennung": "I8",
+      "name": "Planungs- und Genehmigungsverfahren beschleunigen und digitalisieren (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Kürzere Verfahren können Flächen schneller nutzbar machen, schaffen aber kein zusätzliches Bauland; Baugenehmigungen regeln die Länder, Umweltprüfungen teils EU-Recht.",
+      "evidenz": "gemischt"
+    },
+    {
+      "kennung": "I9",
+      "name": "Aktive kommunale Bodenpolitik: Bodenfonds und Vorkaufsrechte stärken (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Kommunaler Flächenerwerb kann Bauland mobilisieren und günstiger vergeben; Wirkung auf Eigentumserwerb kaum untersucht, Ankauf auf teuren Märkten schwierig.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I10",
+      "name": "Planungsbedingte Bodenwertsteigerungen abschöpfen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Kann Spekulation und Horten von Bauland weniger lohnend machen; ob dadurch mehr Flächen bebaut werden oder Kosten an Käufer weitergegeben werden, ist kaum untersucht.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I11",
+      "name": "Bauvorschriften und Baustandards abbauen und vereinfachen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Studien sehen Vorgaben als großen Kostentreiber im Neubau, die Größenordnung ist umstritten; Bauordnungen sind Landesrecht, der Bund kann nur Teile regeln.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.baulinks.de/webplugin/2015/0702.php4"
+    },
+    {
+      "kennung": "I12",
+      "name": "Serielles und modulares Bauen fördern und Genehmigungen vereinheitlichen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Vorfertigung verkürzt Bauzeiten und senkt Kostenrisiken; belastbare Kostensenkungen sind bislang nicht unabhängig belegt und betreffen eher Mehrfamilienhäuser.",
+      "evidenz": "gemischt"
+    },
+    {
+      "kennung": "I13",
+      "name": "Heizungsvorgaben des Gebäudeenergiegesetzes abschaffen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Im Neubau sind Wärmepumpen ohnehin verbreitet, die Kostenersparnis ist gering; ein ersatzloses Auslaufen kollidiert mit der Umsetzung der EU-Gebäuderichtlinie.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I14",
+      "name": "Zinsverbilligte Förderkredite für selbstgenutztes Wohneigentum ausbauen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Senkt die laufende Rate direkt, Bund finanziert die Programme bereits; bisher geringe Nachfrage wegen enger Grenzen und Auflagen, und Subventionen können in Preise übergehen.",
+      "evidenz": "gemischt"
+    }
+  ],
+  "zuordnung": [
+    {
+      "kennung": "M01",
+      "instrument": "I1",
+      "ursachen": [
+        3904
+      ]
+    },
+    {
+      "kennung": "M02",
+      "ursachen": []
+    },
+    {
+      "kennung": "M03",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Setzt direkt an der Eigenkapitalhürde an; Erfahrungen mit Help to Buy zeigen aber steigende Preise in knappen Märkten. Ausgestaltung und Finanzierung sind offen.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://researchonline.lse.ac.uk/id/eprint/120627/"
+      },
+      "ursachen": [
+        3903
+      ]
+    },
+    {
+      "kennung": "M04",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Verhindert nur weitere Kostensteigerungen durch neue Standards, senkt bestehende Baukosten nicht; leicht umsetzbar.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3902
+      ]
+    },
+    {
+      "kennung": "M05",
+      "instrument": "I8",
+      "ursachen": [
+        3901,
+        3902
+      ]
+    },
+    {
+      "kennung": "M06",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 0,
+        "begruendung": "Energievorgaben tragen zu Baukosten bei, ihr Anteil ist umstritten; das GEG setzt die EU-Gebäuderichtlinie um, eine ersatzlose Abschaffung wäre EU-rechtswidrig.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://www.baulinks.de/webplugin/2015/0702.php4"
+      },
+      "ursachen": [
+        3902
+      ]
+    },
+    {
+      "kennung": "M07",
+      "instrument": "I9",
+      "ursachen": [
+        3901
+      ]
+    },
+    {
+      "kennung": "M08",
+      "instrument": "I11",
+      "ursachen": [
+        3902
+      ]
+    },
+    {
+      "kennung": "M09",
+      "instrument": "I4",
+      "ursachen": [
+        3904
+      ]
+    },
+    {
+      "kennung": "M10",
+      "instrument": "I10",
+      "ursachen": [
+        3901
+      ]
+    },
+    {
+      "kennung": "M11",
+      "ursachen": []
+    },
+    {
+      "kennung": "M12",
+      "instrument": "I1",
+      "ursachen": [
+        3904
+      ]
+    },
+    {
+      "kennung": "M13",
+      "ursachen": []
+    },
+    {
+      "kennung": "M14",
+      "instrument": "I7",
+      "ursachen": [
+        3901
+      ]
+    },
+    {
+      "kennung": "M15",
+      "instrument": "I9",
+      "ursachen": [
+        3901
+      ]
+    },
+    {
+      "kennung": "M16",
+      "instrument": "I11",
+      "ursachen": [
+        3902
+      ]
+    },
+    {
+      "kennung": "M17",
+      "ursachen": []
+    },
+    {
+      "kennung": "M18",
+      "ursachen": []
+    },
+    {
+      "kennung": "M19",
+      "instrument": "I1",
+      "ursachen": [
+        3904
+      ]
+    },
+    {
+      "kennung": "M20",
+      "instrument": "I4",
+      "ursachen": [
+        3904
+      ]
+    },
+    {
+      "kennung": "M21",
+      "ursachen": []
+    },
+    {
+      "kennung": "M22",
+      "ursachen": []
+    },
+    {
+      "kennung": "M23",
+      "instrument": "I1",
+      "ursachen": [
+        3904
+      ]
+    },
+    {
+      "kennung": "M24",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 3,
+        "begruendung": "Pilotprojekte melden rund 15 % geringere Bauwerkskosten durch Verzicht auf nicht nötige Standards; eine unabhängige Gesamtauswertung steht noch aus.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://stmb.bayern.de/med/pressemitteilungen/pressearchiv/2025/112/index.php"
+      },
+      "ursachen": [
+        3902
+      ]
+    },
+    {
+      "kennung": "M25",
+      "instrument": "I9",
+      "ursachen": [
+        3901
+      ]
+    },
+    {
+      "kennung": "M26",
+      "instrument": "I5",
+      "ursachen": [
+        3903
+      ]
+    },
+    {
+      "kennung": "M27",
+      "ursachen": []
+    },
+    {
+      "kennung": "M28",
+      "ursachen": []
+    },
+    {
+      "kennung": "M29",
+      "instrument": "I2",
+      "ursachen": [
+        3904
+      ]
+    },
+    {
+      "kennung": "M30",
+      "instrument": "I5",
+      "ursachen": [
+        3903
+      ]
+    },
+    {
+      "kennung": "M31",
+      "instrument": "I1",
+      "ursachen": [
+        3904
+      ]
+    },
+    {
+      "kennung": "M32",
+      "instrument": "I13",
+      "ursachen": [
+        3902
+      ]
+    },
+    {
+      "kennung": "M33",
+      "instrument": "I14",
+      "ursachen": [
+        3905
+      ]
+    },
+    {
+      "kennung": "M34",
+      "instrument": "I8",
+      "ursachen": [
+        3901
+      ]
+    },
+    {
+      "kennung": "M35",
+      "ursachen": []
+    },
+    {
+      "kennung": "M36",
+      "instrument": "I11",
+      "ursachen": [
+        3902
+      ]
+    },
+    {
+      "kennung": "M37",
+      "instrument": "I5",
+      "ursachen": [
+        3903
+      ]
+    },
+    {
+      "kennung": "M38",
+      "instrument": "I7",
+      "ursachen": [
+        3901
+      ]
+    },
+    {
+      "kennung": "M39",
+      "instrument": "I5",
+      "ursachen": [
+        3903
+      ]
+    },
+    {
+      "kennung": "M40",
+      "instrument": "I14",
+      "ursachen": [
+        3905
+      ]
+    },
+    {
+      "kennung": "M41",
+      "instrument": "I1",
+      "ursachen": [
+        3904
+      ]
+    },
+    {
+      "kennung": "M42",
+      "instrument": "I11",
+      "ursachen": [
+        3902
+      ]
+    },
+    {
+      "kennung": "M43",
+      "instrument": "I4",
+      "ursachen": [
+        3904
+      ]
+    },
+    {
+      "kennung": "M44",
+      "instrument": "I1",
+      "ursachen": [
+        3904
+      ]
+    },
+    {
+      "kennung": "M45",
+      "instrument": "I2",
+      "ursachen": [
+        3904
+      ]
+    },
+    {
+      "kennung": "M46",
+      "instrument": "I1",
+      "ursachen": [
+        3904
+      ]
+    },
+    {
+      "kennung": "M47",
+      "instrument": "I9",
+      "ursachen": [
+        3901
+      ]
+    },
+    {
+      "kennung": "M48",
+      "ursachen": []
+    },
+    {
+      "kennung": "M49",
+      "instrument": "I1",
+      "ursachen": [
+        3904
+      ]
+    },
+    {
+      "kennung": "M50",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Erleichtert Ersatzneubau auf bereits bebauten Außenbereichsflächen; betrifft nur wenige Fälle und schafft kaum neues Bauland. Bund ist für das Bauplanungsrecht zuständig.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3901
+      ]
+    },
+    {
+      "kennung": "M51",
+      "instrument": "I3",
+      "ursachen": [
+        3904
+      ]
+    },
+    {
+      "kennung": "M52",
+      "instrument": "I6",
+      "ursachen": [
+        3903
+      ]
+    },
+    {
+      "kennung": "M53",
+      "einzeln": {
+        "wirksamkeit": 0,
+        "umsetzbarkeit": 3,
+        "begruendung": "Angleichung an den Satz eines anderen Landes; eine Entlastung bei den Nebenkosten ist nicht erkennbar, die Richtung bleibt offen.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3904
+      ]
+    },
+    {
+      "kennung": "M54",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Bund regelt Notargebühren und Maklerrecht, die Maklerkosten wurden 2020 schon geteilt; ohne konkrete Höhe bleibt die Entlastung unbestimmt.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3904
+      ]
+    },
+    {
+      "kennung": "M55",
+      "ursachen": []
+    },
+    {
+      "kennung": "M56",
+      "instrument": "I8",
+      "ursachen": [
+        3901
+      ]
+    },
+    {
+      "kennung": "M57",
+      "instrument": "I10",
+      "ursachen": [
+        3901
+      ]
+    },
+    {
+      "kennung": "M58",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 3,
+        "begruendung": "Erlaubt Wohnungsbau ohne neuen Bebauungsplan und kann Flächen schnell nutzbar machen; seit 2025 in Kraft, Wirkung noch kaum untersucht und abhängig von der Zustimmung der Gemeinden.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3901
+      ]
+    },
+    {
+      "kennung": "M59",
+      "instrument": "I6",
+      "ursachen": [
+        3903
+      ]
+    },
+    {
+      "kennung": "M60",
+      "instrument": "I12",
+      "ursachen": [
+        3902
+      ]
+    },
+    {
+      "kennung": "M61",
+      "instrument": "I5",
+      "ursachen": [
+        3903
+      ]
+    },
+    {
+      "kennung": "M62",
+      "instrument": "I2",
+      "ursachen": [
+        3904
+      ]
+    },
+    {
+      "kennung": "M63",
+      "instrument": "I8",
+      "ursachen": [
+        3901
+      ]
+    },
+    {
+      "kennung": "M64",
+      "einzeln": {
+        "wirksamkeit": 0,
+        "umsetzbarkeit": 1,
+        "begruendung": "Begrenzt neue Bauflächen und kann Innenentwicklung anreizen; für Eigentumserwerb ist eher ein knapperes Flächenangebot zu erwarten. Bundesweiter Handel braucht Länder und Kommunen.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3901
+      ]
+    },
+    {
+      "kennung": "M65",
+      "ursachen": []
+    },
+    {
+      "kennung": "M66",
+      "ursachen": []
+    },
+    {
+      "kennung": "M67",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Schafft eine zusätzliche Eigenkapitalquelle, in der Schweiz verbreitet genutzt; dagegen sprechen geschwächte Altersvorsorge und dass nur Beschäftigte mit Betriebsrente profitieren.",
+        "evidenz": "gemischt"
+      },
+      "ursachen": [
+        3903
+      ]
+    },
+    {
+      "kennung": "M68",
+      "instrument": "I13",
+      "ursachen": [
+        3902
+      ]
+    },
+    {
+      "kennung": "M69",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Vergünstigter Kauf senkt den Eigenkapitalbedarf einzelner Mieter; der öffentliche Bestand ist begrenzt und meist kommunal, preisgünstiger Mietbestand geht verloren.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3903
+      ]
+    },
+    {
+      "kennung": "M70",
+      "instrument": "I12",
+      "ursachen": [
+        3902
+      ]
+    },
+    {
+      "kennung": "M71",
+      "instrument": "I1",
+      "ursachen": [
+        3904
+      ]
+    },
+    {
+      "kennung": "M72",
+      "instrument": "I14",
+      "ursachen": [
+        3905
+      ]
+    },
+    {
+      "kennung": "M73",
+      "instrument": "I4",
+      "ursachen": [
+        3904
+      ]
+    },
+    {
+      "kennung": "M74",
+      "ursachen": []
+    },
+    {
+      "kennung": "M75",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Höhere steuerfreie Zinserträge erleichtern das Ansparen nur geringfügig und vor allem bei bereits größeren Ersparnissen; Steuerausfälle sind erheblich.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3903
+      ]
+    },
+    {
+      "kennung": "M76",
+      "instrument": "I12",
+      "ursachen": [
+        3902
+      ]
+    },
+    {
+      "kennung": "M77",
+      "ursachen": []
+    },
+    {
+      "kennung": "M78",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Erleichterte Innenentwicklung kann Baulücken und Brachen nutzbar machen; Städtebauförderung zielt aber vor allem auf Quartiersaufwertung. Bund finanziert sie bereits.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3901
+      ]
+    },
+    {
+      "kennung": "M79",
+      "instrument": "I1",
+      "ursachen": [
+        3904
+      ]
+    },
+    {
+      "kennung": "M80",
+      "instrument": "I1",
+      "ursachen": [
+        3904
+      ]
+    },
+    {
+      "kennung": "M81",
+      "ursachen": []
+    }
+  ]
+}

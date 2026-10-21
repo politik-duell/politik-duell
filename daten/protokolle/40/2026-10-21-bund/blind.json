@@ -1,0 +1,524 @@
+{
+  "pruefsumme": "3779a7da3a0e810561d67282075526c6be9b66e97021404b49dcc2e7d0160da7",
+  "thema": {
+    "id": 40,
+    "name": "Arbeitszeit, Erreichbarkeit und Vereinbarkeit",
+    "ziel": "Beschäftigte können ihre Arbeitszeit so gestalten, dass sie gesund bleiben, nach der Arbeit abschalten können und Beruf mit Familie oder Pflege vereinbaren."
+  },
+  "ursachen": [
+    {
+      "id": 4001,
+      "beschreibung": "Mehrarbeit ist verbreitet und wird teils nicht ausgeglichen: 2024 leisteten 4,4 Mio. Beschäftigte (11 %) Mehrarbeit, 19 % der Betroffenen unbezahlt",
+      "ebene": "bund"
+    },
+    {
+      "id": 4002,
+      "beschreibung": "Gewünschter und tatsächlicher Arbeitsumfang passen oft nicht zusammen, in beide Richtungen: 2025 wollten 3,8 Mio. Erwerbstätige weniger und 1,5 Mio. mehr arbeiten",
+      "ebene": "bund"
+    },
+    {
+      "id": 4003,
+      "beschreibung": "Betreuung oder Pflege ist für viele der Grund, die Arbeitszeit zu reduzieren: 2024 für 23,5 % der Teilzeitbeschäftigten (Frauen 28,8 %, Männer 6,8 %)",
+      "ebene": "bund"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        4001
+      ],
+      "text": "Zu 1 gehören Arbeit über die vereinbarte Arbeitszeit hinaus (bezahlt, unbezahlt oder auf Zeitkonto), Ausgleich und Vergütung, Erfassung der Arbeitszeit und Höchst- und Ruhezeiten, soweit sie Mehrarbeit betreffen. Nicht dazu: Umfang der vertraglichen Arbeitszeit (→ 2). Erreichbarkeit nach Feierabend sowie Arbeitsmenge und Personal: nur als ursachen_offen (Ursachen verworfen, siehe Perspektivenprüfung). Grenzfall: Schichtlage, Abend- und Wochenendarbeit: nur als ursachen_offen."
+    },
+    {
+      "nr": 2,
+      "ursachen": [
+        4002
+      ],
+      "text": "Zu 2 gehören Wunsch und tatsächlicher Umfang der Arbeitszeit, in beide Richtungen (weniger oder mehr Stunden), und Schwierigkeiten, den Umfang zu ändern. Maßgeblich ist der Umfang, unabhängig vom Grund. Wer wegen Betreuung reduziert, zählt auch hier; Maßnahmen zu Lage, Ort oder Freistellung gehören zu 3. Nicht dazu: Mehrarbeit über den Vertrag (→ 1). Grenzfall: Ausbildung oder Gesundheit als Grund: nur als ursachen_offen."
+    },
+    {
+      "nr": 3,
+      "ursachen": [
+        4003
+      ],
+      "text": "Zu 3 gehören Lage, Ort und Freistellung der Arbeitszeit, wenn Betreuung von Kindern, Menschen mit Behinderung oder pflegebedürftigen Angehörigen der Grund ist: Gleitzeit, mobiles Arbeiten, Elternzeit, Pflegezeit. Nicht dazu: Umfang oder Anspruch auf Stunden (→ 2); Kinderbetreuungsangebot und Öffnungszeiten (→ T17); Pflegegeld und Entlastungsleistungen (→ T10, U1004); Verteilung der Sorgearbeit zwischen den Geschlechtern (→ T28). Grenzfall: Pflege als Grund für Mehrarbeit: nur als ursachen_offen."
+    }
+  ],
+  "instrumente": [],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "bund",
+      "beschreibung": "Überstundenzuschläge bei Vollzeitbeschäftigung steuerfrei stellen.",
+      "zitat": "Wir stellen Überstundenzuschläge bei Vollzeitbeschäftigung steuerfrei. Wer freiwillig mehr arbeiten will, soll mehr Netto vom Brutto haben.",
+      "ursachen_ids": [
+        4001
+      ],
+      "pruefsumme": "042b5b21fc84650d"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "bund",
+      "beschreibung": "Rechtssicherheit für mobiles Arbeiten und Homeoffice schaffen und mobile Arbeitsformen fördern.",
+      "zitat": "Auch für das Homeoffice schaffen wir Rechtssicherheit und fördern damit mobile Arbeitsformen: Sofern freiwillig gewählt, definieren wir es unabhängig vom zeitlichen Umfang als einen Unterfall des mobilen Arbeitens.",
+      "ursachen_ids": [
+        4003
+      ],
+      "pruefsumme": "a08b1758949c84c2"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "bund",
+      "beschreibung": "Zuschläge für Mehrarbeit steuerfrei stellen",
+      "zitat": "Damit sich Mehrarbeit auszahlt, werden Zuschläge für Mehrarbeit, die über die tariflich vereinbarte Vollzeitarbeit hinausgehen, steuerfrei gestellt.",
+      "ursachen_ids": [
+        4001
+      ],
+      "pruefsumme": "a6110c08a3dd660b"
+    },
+    {
+      "kennung": "M04",
+      "ebene": "bund",
+      "beschreibung": "Kürzere Wochenarbeitszeit als Freizeitausgleich für Beschäftigte in Gesundheitsberufen",
+      "zitat": "Außerdem treten wir für mehr Freizeitausgleich ein – beispielsweise durch eine verkürzte Wochenarbeitszeit.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4002
+      ],
+      "pruefsumme": "f04ae18c736d0f6d"
+    },
+    {
+      "kennung": "M05",
+      "ebene": "bund",
+      "beschreibung": "Ausbau vollzeitnaher Stellen in Kitas und Schulen im Rahmen einer Fachkräfteoffensive",
+      "zitat": "Wir wollen daher eine Fachkräfteoffensive für Kitas und Schulen verbindlich zwischen allen Bundesländern vereinbaren, die unter anderem den Ausbau von Ausbildungskapazitäten, eine entlohnte Ausbildung für Erzieherinnen und Erzieher, multiprofessionelle Teams, die verstärkte Ansprache von Quereinsteigenden aus anderen Berufen sowie den Ausbau vollzeitnaher Tätigkeit bei den meist weiblichen Beschäftigten umfasst.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4002
+      ],
+      "pruefsumme": "f4e646c7baef2386"
+    },
+    {
+      "kennung": "M06",
+      "ebene": "bund",
+      "beschreibung": "Familienpflegezeit und Familienpflegegeld für Vereinbarkeit von Pflege und Beruf",
+      "zitat": "Mit einer Familienpflegezeit und einem Familienpflegegeld, ähnlich wie beim Elterngeld, ermöglichen wir die Vereinbarkeit von Pflege und Beruf ohne finanzielle Einbußen.",
+      "ursachen_ids": [
+        4003
+      ],
+      "pruefsumme": "f682abc72b443167"
+    },
+    {
+      "kennung": "M07",
+      "ebene": "bund",
+      "beschreibung": "Flexible Arbeitszeitmodelle in den Verwaltungen einführen",
+      "zitat": "Die Attraktivität der Verwaltungen als Arbeitgeber wollen wir durch flexible Arbeitszeitmodelle, kompetente und schlanke Führungsstrukturen sowie die frühzeitige Förderung von Leistungsträgern erhöhen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4003
+      ],
+      "pruefsumme": "f54ed49d1ac4c01d"
+    },
+    {
+      "kennung": "M08",
+      "ebene": "bund",
+      "beschreibung": "Rechtsanspruch auf eine Vollzeitstelle, auch für familienfreundliche Schichten.",
+      "zitat": "Wir setzen uns für einen Rechtsanspruch auf eine Vollzeitstelle und auf familienfreundliche Schichten ein.",
+      "ursachen_ids": [
+        4002
+      ],
+      "pruefsumme": "f83da031d44c40d1"
+    },
+    {
+      "kennung": "M09",
+      "ebene": "bund",
+      "beschreibung": "Betreuungsgehalt bis zum dritten Geburtstag als Lohnersatz für Eigenbetreuung",
+      "zitat": "Mit einem Betreuungsgehalt bis zum 3. Geburtstag sollen Eltern echte Wahlfreiheit zwischen Fremd- und Selbstbetreuung",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4003
+      ],
+      "pruefsumme": "84031fd45e22b77d"
+    },
+    {
+      "kennung": "M10",
+      "ebene": "bund",
+      "beschreibung": "Teilzeitmodelle und Job-Sharing im öffentlichen Dienst",
+      "zitat": "Wir wollen den Staat als Arbeitgeber attraktiver machen – mit flächendeckendem Homeoffice, Job-Sharing und Teilzeitmodellen im öffentlichen Dienst.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4002
+      ],
+      "pruefsumme": "e00f44488f1db0ee"
+    },
+    {
+      "kennung": "M11",
+      "ebene": "bund",
+      "beschreibung": "Einkommensteuer-Tarif (Chancentarif) so umbauen, dass sich zusätzliche Arbeit stärker lohnt.",
+      "zitat": "Der Anreiz, zusätzliche Arbeit aufzunehmen, ist zu gering. […] Dazu wollen wir stufenweise einen linear-progressiven Chancentarif in der Einkommensteuer einführen, der den Mittelstandsbauch vollständig beseitigt.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4002
+      ],
+      "pruefsumme": "2fff00d29c81bd11"
+    },
+    {
+      "kennung": "M12",
+      "ebene": "bund",
+      "beschreibung": "Brückenteilzeit und Rückkehrrecht in Vollzeit ausweiten und flexibler gestalten",
+      "zitat": "Die Brückenteilzeit und das damit verbundene Rückkehrrecht in Vollzeit wollen wir weiten und individueller gestalten.",
+      "ursachen_ids": [
+        4002
+      ],
+      "pruefsumme": "747ad578f88fc9d0"
+    },
+    {
+      "kennung": "M13",
+      "ebene": "bund",
+      "beschreibung": "Flächendeckendes Homeoffice im öffentlichen Dienst",
+      "zitat": "Wir wollen den Staat als Arbeitgeber attraktiver machen – mit flächendeckendem Homeoffice, Job-Sharing und Teilzeitmodellen im öffentlichen Dienst.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4003
+      ],
+      "pruefsumme": "e50cedebf26ec070"
+    },
+    {
+      "kennung": "M14",
+      "ebene": "bund",
+      "beschreibung": "Zuschläge für Überstunden bei Vollzeitarbeit von der Lohnsteuer befreien.",
+      "zitat": "Um zusätzliche Arbeitsanreize zu schaffen, wollen wir Zuschläge für Überstunden bei Vollzeitarbeit von der Lohnsteuer befreien.",
+      "ursachen_ids": [
+        4001
+      ],
+      "ursachen_offen": [
+        4002
+      ],
+      "pruefsumme": "65870e29ba38a2b1"
+    },
+    {
+      "kennung": "M15",
+      "ebene": "bund",
+      "beschreibung": "Anstelle der täglichen Höchstarbeitszeit eine wöchentliche Höchstarbeitszeit im Arbeitszeitgesetz festlegen.",
+      "zitat": "Wir reformieren das Arbeitszeitgesetz und legen für alle Unternehmen anstelle der täglichen eine wöchentliche Höchstarbeitszeit im Sinne der europäischen Arbeitszeitrichtlinie fest.",
+      "ursachen_ids": [
+        4001
+      ],
+      "pruefsumme": "50a4340ee9597181"
+    },
+    {
+      "kennung": "M16",
+      "ebene": "bund",
+      "beschreibung": "Acht-Stunden-Tag als Obergrenze verteidigen; mindestens 11 Stunden Ruhezeit zwischen Schichten; Ausnahmen einschränken.",
+      "zitat": "Wir verteidigen den 8-Stunden-Tag als Obergrenze und fordern mindestens 11 Stunden Ruhezeit zwischen Schichten, Ausnahmen wollen wir einschränken […]",
+      "ursachen_ids": [
+        4001
+      ],
+      "pruefsumme": "6e6f89737b188058"
+    },
+    {
+      "kennung": "M17",
+      "ebene": "bund",
+      "beschreibung": "Häufigere Kontrollen der Arbeitszeit mit unkomplizierten Nachweisen der Unternehmen per E-Mail.",
+      "zitat": "Um Beschäftigte und ehrliche Betriebe besser zu schützen, brauchen wir häufigere Kontrollen der Arbeitszeit- und Mindestlohnregelungen, auch durch unkomplizierte Nachweise der Unternehmen per E-Mail.",
+      "ursachen_ids": [
+        4001
+      ],
+      "pruefsumme": "8ca1ef7578c5ecd3"
+    },
+    {
+      "kennung": "M18",
+      "ebene": "bund",
+      "beschreibung": "Elterngeld verbessern und den Partnerschaftsbonus bei vollzeitnaher Teilzeit beider Eltern weiterentwickeln.",
+      "zitat": "Wir verbessern das Elterngeld. Den Partnerschaftsbonus bei gleichzeitiger vollzeitnaher Teilzeit beider Eltern entwickeln wir weiter.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4003
+      ],
+      "pruefsumme": "1771957015a3efe3"
+    },
+    {
+      "kennung": "M19",
+      "ebene": "bund",
+      "beschreibung": "Familienstartzeit: zwei Wochen Freistellung mit Lohnersatz für Väter und Co-Mütter nach der Geburt",
+      "zitat": "Wir werden mit einer Familienstartzeit entsprechend den Regelungen der Europäischen Union (EU) Vätern und Co-Müttern die Möglichkeit geben, sich die ersten zwei Wochen nach der Geburt eines Kindes mit einer Lohnersatzleistung von der Arbeit freizustellen.",
+      "ursachen_ids": [
+        4003
+      ],
+      "pruefsumme": "70a08e0bf68c4a15"
+    },
+    {
+      "kennung": "M20",
+      "ebene": "bund",
+      "beschreibung": "Arbeitszeitgesetz reformieren: wöchentliche statt tägliche Höchstarbeitszeit, flexible Arbeitszeitmodelle.",
+      "zitat": "Wir wollen das deutsche Arbeitszeitgesetz reformieren, indem wir mit einer wöchentlichen statt einer täglichen Höchstarbeitszeit neue und flexible Arbeitszeitmodelle ermöglichen.",
+      "ursachen_ids": [
+        4001
+      ],
+      "pruefsumme": "cac2d848ec09e4b4"
+    },
+    {
+      "kennung": "M21",
+      "ebene": "bund",
+      "beschreibung": "Arbeitgeber sollen Telearbeit und flexible Arbeitszeiten für Eltern ermöglichen (Appell)",
+      "zitat": "Arbeitgeber sollen durch Telearbeit, flexible Arbeitszeiten und Betriebskindergärten ein Arbeitsumfeld schaffen",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4003
+      ],
+      "pruefsumme": "f966c3e6402f5727"
+    },
+    {
+      "kennung": "M22",
+      "ebene": "bund",
+      "beschreibung": "Mobiles Arbeiten, auch im Homeoffice, mit klaren Regeln und fairen Absprachen",
+      "zitat": "Dazu gehört auch die Möglichkeit, im Homeoffice und mobil zu […] arbeiten – mit klaren Regeln und fairen Absprachen.",
+      "ursachen_ids": [
+        4003
+      ],
+      "pruefsumme": "881812588912bceb"
+    },
+    {
+      "kennung": "M23",
+      "ebene": "bund",
+      "beschreibung": "Wöchentliche Höchstarbeitszeit auf 40 Stunden begrenzen.",
+      "zitat": "Ausnahmen wollen wir einschränken und die wöchentliche Höchstarbeitszeit auf 40 Stunden begrenzen.",
+      "ursachen_ids": [
+        4001
+      ],
+      "pruefsumme": "f96541958935bb9c"
+    },
+    {
+      "kennung": "M24",
+      "ebene": "bund",
+      "beschreibung": "Freistellung von Vätern oder Partnern nach der Geburt mit Lohnfortzahlung",
+      "zitat": "Väter oder Partnerinnen und Partner sollen sich für die ersten zwei Wochen nach der Geburt eines Kindes bei voller, umlagefinanzierter Lohnfortzahlung freistellen lassen können.",
+      "ursachen_ids": [
+        4003
+      ],
+      "pruefsumme": "450d235c89412f21"
+    },
+    {
+      "kennung": "M25",
+      "ebene": "bund",
+      "beschreibung": "Minijobs schrittweise in sozialversicherungspflichtige Beschäftigung überführen",
+      "zitat": "Minijobs wollen wir schrittweise in sozialversicherungspflichtige Beschäftigung überführen, mit Ausnahmen für Rentner*innen, Schüler*innen und Studierende. Denn sie führen vor allem für Frauen und in Kombination mit dem Ehegattensplitting zu einer Teilzeitfalle, weil sie den Anreiz setzen, weniger und ohne soziale Absicherung zu arbeiten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4002
+      ],
+      "pruefsumme": "4a5728897b48b6e6"
+    },
+    {
+      "kennung": "M26",
+      "ebene": "bund",
+      "beschreibung": "Elterngeld mit nicht übertragbaren Monaten je Elternteil und weiteren frei verteilbaren Monaten",
+      "zitat": "Jeder Elternteil soll Anspruch auf sechs nicht übertragbare Monate Elterngeld erhalten. Zusätzlich gibt es weitere sechs Monate, die frei auf beide Elternteile verteilt werden können.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4003
+      ],
+      "pruefsumme": "fde52cb62967739b"
+    },
+    {
+      "kennung": "M27",
+      "ebene": "bund",
+      "beschreibung": "Mobiles Arbeiten und flexible Betreuungsangebote ausbauen, damit Beruf und Familie besser zu vereinbaren sind.",
+      "zitat": "Wir setzen uns für Arbeitszeitmodelle mit einer geringeren Wochenarbeitszeit (z. B. 32 Stunden oder Vier-Tage-Woche) bei vollem Lohn- und notwendigem Personalausgleich ein. […] Begleitet wird dies durch den Ausbau von flexiblen Betreuungsangeboten und Homeoffice-Optionen.",
+      "ursachen_ids": [
+        4003
+      ],
+      "pruefsumme": "46a0fb81d3f366c3"
+    },
+    {
+      "kennung": "M28",
+      "ebene": "bund",
+      "beschreibung": "Lohnersatz für die Zeit, in der Beschäftigte die Arbeitszeit zur Pflege reduzieren",
+      "zitat": "Wer die eigene Arbeitszeit für die Pflege reduziert, braucht finanzielle Unterstützung in Form eines zeitlich begrenzten Ausgleichs der entgangenen Einkünfte.",
+      "ursachen_ids": [
+        4003
+      ],
+      "pruefsumme": "c4462917d3e9fd1e"
+    },
+    {
+      "kennung": "M29",
+      "ebene": "bund",
+      "beschreibung": "Unternehmen können freie Personalkapazitäten in einer Kooperation untereinander zur Verfügung stellen.",
+      "zitat": "So können sich zwei Unternehmen im Rahmen einer Kooperation freie Personalkapazitäten mit Zustimmung der Betriebsräte untereinander zur Verfügung stellen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4001
+      ],
+      "pruefsumme": "2b9cadc24726f24f"
+    },
+    {
+      "kennung": "M30",
+      "ebene": "bund",
+      "beschreibung": "Sechs Wochen Freistellung mit vollem, arbeitgeberfinanziertem Lohnausgleich bei einem familiären Pflegefall.",
+      "zitat": "Wir wollen für alle Beschäftigten sechs Wochen Freistellung bei vollem arbeitgeberfinanziertem Lohnausgleich beim ersten Auftreten eines familiären Pflegefalls.",
+      "ursachen_ids": [
+        4003
+      ],
+      "pruefsumme": "126a8accad277385"
+    },
+    {
+      "kennung": "M31",
+      "ebene": "bund",
+      "beschreibung": "Besondere Schutzerfordernisse bei gefahrgeneigten Berufen berücksichtigen.",
+      "zitat": "Das gilt vor allem bei gefahrgeneigten Berufen. Hier berücksichtigen wir die besonderen Schutzerfordernisse, weil das Unfallrisiko nach acht Stunden steigt.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4001
+      ],
+      "pruefsumme": "fc2a9a3029fd47ca"
+    },
+    {
+      "kennung": "M32",
+      "ebene": "bund",
+      "beschreibung": "Mehr Zeitsouveränität über Lage und Dauer der Arbeitszeit, für Vereinbarkeit mit Familie und Sorgearbeit",
+      "zitat": "Die Erwerbsmöglichkeiten für Frauen verbessern wir durch gleiche Löhne und mehr Zeitsouveränität. Sie sollen mehr Einfluss nehmen können auf Lage und Dauer ihrer Arbeitszeit, um eine bessere Vereinbarkeit von Erwerbstätigkeit und Familie und eine gerechte Aufteilung von Sorgearbeit zwischen den Geschlechtern zu ermöglichen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4003
+      ],
+      "pruefsumme": "92197c5cad208746"
+    },
+    {
+      "kennung": "M33",
+      "ebene": "bund",
+      "beschreibung": "Eine großzügige Arbeitstagepauschale ersetzt die Regeln zum häuslichen Arbeitszimmer und zur Homeoffice-Pauschale.",
+      "zitat": "Eine großzügige Arbeitstagepauschale ersetzt und vereinfacht die bisherigen Regelungen zum häuslichen Arbeitszimmer, zur Homeoffice- und Entfernungskostenpauschale.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4003
+      ],
+      "pruefsumme": "7c6e01ef3da3214a"
+    },
+    {
+      "kennung": "M34",
+      "ebene": "bund",
+      "beschreibung": "Steuerlich begünstigte Arbeitgeberprämie für mehr Stunden bei Teilzeitbeschäftigten",
+      "zitat": "Wir werden einen neuen steuerlichen Anreiz zur Ausweitung der Arbeitszeit von Teilzeitbeschäftigten schaffen: Wenn Arbeitgeber eine Prämie für die Ausweitung der Arbeitszeit zahlen, werden wir diese Prämie steuerlich begünstigen.",
+      "ursachen_ids": [
+        4002
+      ],
+      "pruefsumme": "9b234aae48b42aa9"
+    },
+    {
+      "kennung": "M35",
+      "ebene": "bund",
+      "beschreibung": "Förderprogramme sollen ermöglichen, in der Kleinkindphase ohne finanzielle Einbußen zu Hause zu bleiben oder Teilzeit zu arbeiten",
+      "zitat": "Die genannten Aufgaben beanspruchen Zeit, weshalb idealerweise der Vater oder die Mutter zumindest in der Kleinkindphase ohne finanzielle Einbußen die Möglichkeit haben sollten, zu Hause zu bleiben oder nur Teilzeit zu arbeiten, wenn sie dies wünschen. Die Familienpolitik [Partei] enthält entsprechende Förderprogramme",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4002
+      ],
+      "pruefsumme": "53e11070f79a6fd4"
+    },
+    {
+      "kennung": "M36",
+      "ebene": "bund",
+      "beschreibung": "Flexible Arbeitszeitmodelle für mehr Zeit für die Familie",
+      "zitat": "Flexible Arbeitszeitmodelle und eine verlässliche Betreuungsinfrastruktur in Kitas und Schulen schaffen mehr Zeit für die Familie.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4003
+      ],
+      "pruefsumme": "f0513c9086336f4e"
+    },
+    {
+      "kennung": "M37",
+      "ebene": "bund",
+      "beschreibung": "Arbeitszeitmodelle mit geringerer Wochenarbeitszeit (z. B. 32 Stunden oder Vier-Tage-Woche) bei vollem Lohn fördern.",
+      "zitat": "Wir setzen uns für Arbeitszeitmodelle mit einer geringeren Wochenarbeitszeit (z. B. 32 Stunden oder Vier-Tage-Woche) bei vollem Lohn- und notwendigem Personalausgleich ein.",
+      "ursachen_ids": [
+        4002
+      ],
+      "pruefsumme": "f2e42aa7de9eb49b"
+    },
+    {
+      "kennung": "M38",
+      "ebene": "bund",
+      "beschreibung": "Arbeitszeitgesetz abschaffen, um flexible Arbeitszeiten zu ermöglichen; Vereinbarkeit von Beruf und Familie verbessern.",
+      "zitat": "Das veraltete Arbeitszeitgesetz schaffen wir ab, um flexible Arbeitszeiten zu ermöglichen. Flexible Arbeitszeiten, Teilzeit, Jobsharing, bzw. Topsharing und Homeoffice soll es Frauen wie Männern ermöglichen, Beruf und Familie besser zu vereinbaren.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4003
+      ],
+      "pruefsumme": "3136f58059e4824a"
+    },
+    {
+      "kennung": "M39",
+      "ebene": "bund",
+      "beschreibung": "Hinzuverdienstgrenzen und Transferentzugsraten reformieren, um Anreize für Arbeit oder mehr Arbeit zu erhöhen.",
+      "zitat": "Wir reformieren die Hinzuverdienstgrenzen und die Transferentzugsraten, um die Anreize zu erhöhen, eine Arbeit aufzunehmen oder mehr zu arbeiten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4002
+      ],
+      "pruefsumme": "7858e52c71df53fc"
+    },
+    {
+      "kennung": "M40",
+      "ebene": "bund",
+      "beschreibung": "Sabbatjahr: Beschäftigte sollen zweimal im Berufsleben für ein Jahr aussteigen können, mit Rückkehrrecht.",
+      "zitat": "Recht auf Auszeiten: Beschäftigte sollen zweimal in ihrem Berufsleben die Möglichkeit haben, für ein Jahr auszusteigen (Sabbatjahr), verbunden mit einem Rückkehrrecht.",
+      "ursachen_ids": [
+        4002
+      ],
+      "pruefsumme": "ea13d483753f106c"
+    },
+    {
+      "kennung": "M41",
+      "ebene": "bund",
+      "beschreibung": "Für den zweiten Elternteil 28 Tage Elternschutz nach der Geburt einführen.",
+      "zitat": "Um eine partnerschaftliche Aufteilung von Sorge- und Erwerbsarbeit zwischen den Elternteilen zu fördern, wollen wir für den zweiten Elternteil 28 Tage Elternschutz (ab Geburt des Kindes) einführen.",
+      "ursachen_ids": [
+        4003
+      ],
+      "pruefsumme": "816c7c09c42caa7d"
+    },
+    {
+      "kennung": "M42",
+      "ebene": "bund",
+      "beschreibung": "Arbeitszeiterfassung für alle Beschäftigte digital und unbürokratisch im Arbeitszeitgesetz regeln, in Schwarzarbeitsbranchen manipulationssicher",
+      "zitat": "Die Arbeitszeiterfassung muss für alle Beschäftigten unbürokratisch und digital möglich sein und im Arbeitszeitgesetz geregelt werden. In Branchen, die von Schwarzarbeit betroffen sind, muss dies manipulationssicher erfolgen.",
+      "ursachen_ids": [
+        4001
+      ],
+      "pruefsumme": "37a896af19047723"
+    },
+    {
+      "kennung": "M43",
+      "ebene": "bund",
+      "beschreibung": "Recht auf vorübergehende Verkürzung der Arbeitszeit für alle Beschäftigten.",
+      "zitat": "Alle Beschäftigten brauchen das Recht auf vorübergehende Verkürzung ihrer Arbeitszeiten […]",
+      "ursachen_ids": [
+        4002
+      ],
+      "pruefsumme": "330810dc59a89788"
+    },
+    {
+      "kennung": "M44",
+      "ebene": "bund",
+      "beschreibung": "Zulagen für Überstunden und Sondereinsätze bei Polizei und Rettungskräften, bundeseinheitliche Vergütung",
+      "zitat": "Bundeseinheitliche Besoldung und angemessene Vergütungen mit Gefährdungszulagen sowie weitere Zulagen für Überstunden und Sondereinsätze für Polizei und Rettungskräfte.",
+      "ursachen_ids": [
+        4001
+      ],
+      "pruefsumme": "188001b08bc6db62"
+    },
+    {
+      "kennung": "M45",
+      "ebene": "bund",
+      "beschreibung": "Arbeitsunterbrechungen und Dienstzeiten müssen bezahlt werden.",
+      "zitat": "Arbeitsunterbrechungen und Dienstzeiten müssen bezahlt werden, sie sind keine Freizeit der Beschäftigten!",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4001
+      ],
+      "pruefsumme": "f41c7f6d69b90b01"
+    }
+  ]
+}

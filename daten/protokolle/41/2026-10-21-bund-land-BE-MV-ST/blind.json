@@ -1,0 +1,312 @@
+{
+  "pruefsumme": "b3de5feed9209c793d5011bb47097b7d1155439f83f9b8066d15b4c00e7edb1b",
+  "thema": {
+    "id": 41,
+    "name": "Schutz im Krisen- und Kriegsfall",
+    "ziel": "Menschen werden in einer Großlage rechtzeitig gewarnt, finden einen geschützten Ort und kommen mit Wasser, Essen und Information durch die Krise."
+  },
+  "ursachen": [
+    {
+      "id": 4101,
+      "beschreibung": "Von 1.967 öffentlichen Schutzräumen (2008) sind 579 übrig, laut Bundesregierung 2026 „weder funktions- noch einsatzbereit“; das Schutzkonzept mit den Ländern steht noch aus",
+      "ebene": "bund"
+    },
+    {
+      "id": 4102,
+      "beschreibung": "Der Bund erfasst 2026 erst den Bestand an Sirenen; ihre Auslösung über das Warnsystem MoWaS ist noch nicht durchgängig angebunden",
+      "ebene": "land"
+    },
+    {
+      "id": 4103,
+      "beschreibung": "Viele Haushalte sind auf längere Ausfälle kaum vorbereitet: Rund 45 % sehen sich für zehn Tage ausgestattet, nur etwa ein Drittel könnte ohne Strom kochen (Befragung 2024)",
+      "ebene": "bund"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        4101
+      ],
+      "text": "Gehört dazu: öffentliche Schutzräume, die nicht einsatzbereit sind, und das fehlende Konzept für Schutzorte (öffentlich und privat, etwa Keller, Tiefgaragen, Gebäude). Nicht dazu: Warnung (→ 2), Vorräte (→ 3), Verteidigungsausgaben und Bündnisfragen (Wertfragen, keine Ursache). Grenzfall: Schutz bei Hochwasser (T18) nur als ursachen_offen."
+    },
+    {
+      "nr": 2,
+      "ursachen": [
+        4102
+      ],
+      "text": "Gehört dazu: Lücken im Warnweg, Sirenen ohne Erfassung oder Auslösung über MoWaS, Warn-Apps und Cell Broadcast. Nicht dazu: ob Menschen eine Warnung verstehen und handeln (→ 3), Schutzorte (→ 1). Warnungen bei Hochwasser und Starkregen gehören zu T18 und nur als ursachen_offen hierher."
+    },
+    {
+      "nr": 3,
+      "ursachen": [
+        4103
+      ],
+      "text": "Gehört dazu: fehlende Notvorräte an Wasser, Lebensmitteln und Medikamenten sowie fehlendes Wissen zur Selbsthilfe bei Strom- und Wasserausfall. Nicht dazu: Schutzorte (→ 1), Warnung (→ 2). Versorgungsketten des Handels und Lieferengpässe nur als ursachen_offen. Kosten und Platz für Vorräte nur als ursachen_offen, solange keine Quelle gelesen ist."
+    }
+  ],
+  "instrumente": [],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "land",
+      "beschreibung": "Sirenen und Warnsysteme aktualisieren und ihre Funktion regelmäßig prüfen",
+      "zitat": "Sirenen, Warnsysteme und Notfallpläne werden aktualisiert und ihre Funktionalität regelmäßig geprobt.",
+      "ursachen_ids": [
+        4102
+      ],
+      "pruefsumme": "966b4a15d2cf6c64"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "land",
+      "beschreibung": "Sireneninfrastruktur ausbauen und vollständig an bestehende digitale Warnsysteme anbinden",
+      "zitat": "Zudem werden wir die Sireneninfrastruktur in [Land] leistungsfähig ausbauen und sie vollständig in bestehende digitale Warnsysteme wie MoWaS und die Warn-App NINA integrieren.",
+      "ursachen_ids": [
+        4102
+      ],
+      "pruefsumme": "18362a667033f949"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "land",
+      "beschreibung": "Warnsysteme im Katastrophenschutz modernisieren und verlässlich finanzieren",
+      "zitat": "Warnsysteme werden modernisiert, Einsatzstrukturen verlässlich finanziert.",
+      "ursachen_ids": [
+        4102
+      ],
+      "pruefsumme": "6e439c4cbdb6fbcb"
+    },
+    {
+      "kennung": "M04",
+      "ebene": "bund",
+      "beschreibung": "Bestehende Warn-Apps sollen verbessert werden",
+      "zitat": "Dazu werden wir den flächendeckenden Ausbau mit Sirenen weiter fördern und die bestehenden Warn-Apps verbessern.",
+      "ursachen_ids": [
+        4102
+      ],
+      "pruefsumme": "574e82cc787e2f53"
+    },
+    {
+      "kennung": "M05",
+      "ebene": "land",
+      "beschreibung": "Qualität der Cell-Broadcast-Warnmeldungen verbessern, damit sie rechtzeitig erfolgen und Handlungsanweisungen enthalten",
+      "zitat": "Wir verbessern die Qualität von per Cell Broadcast gesendeten Warnmeldungen, sodass diese rechtzeitig erfolgen, verständlich sind und klare Handlungsanweisungen zur privaten Krisenvorsorge beinhalten.",
+      "ursachen_ids": [
+        4102
+      ],
+      "pruefsumme": "47c3e009dff1d5f9"
+    },
+    {
+      "kennung": "M06",
+      "ebene": "bund",
+      "beschreibung": "Zivilverteidigung stärken, um besser auf Bedrohungen vorbereitet zu sein",
+      "zitat": "Zudem stärken wir die Zivilverteidigung, um auf geopolitische Bedrohungen wie hybride Angriffe oder militärische Konflikte besser vorbereitet zu sein.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4101
+      ],
+      "pruefsumme": "8a995e72dd485263"
+    },
+    {
+      "kennung": "M07",
+      "ebene": "land",
+      "beschreibung": "Frühwarnsysteme und Pegeltechnik für den Hochwasserschutz in den Kommunen stärken",
+      "zitat": "Frühwarnsysteme, moderne Pegeltechnik sowie aktuelle Hochwasser- und Starkregenkarten stärken die Vorsorge in den Kommunen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4102
+      ],
+      "pruefsumme": "cb2f5734afc667d3"
+    },
+    {
+      "kennung": "M08",
+      "ebene": "bund",
+      "beschreibung": "Flächendeckender Ausbau von Sirenen wird gefördert",
+      "zitat": "Wir wollen, dass die Menschen besser und schneller vor Gefahren gewarnt werden. Dazu werden wir den flächendeckenden Ausbau mit Sirenen weiter fördern und die bestehenden Warn-Apps verbessern.",
+      "ursachen_ids": [
+        4102
+      ],
+      "pruefsumme": "7e14b1126eb2935d"
+    },
+    {
+      "kennung": "M09",
+      "ebene": "land",
+      "beschreibung": "Ein ressortübergreifendes Bevölkerungsschutzkonzept erarbeiten und fortschreiben, mit Kommunikationsstrukturen und Vorsorge für die Bevölkerung.",
+      "zitat": "Das Land hat ein einheitliches, ressortübergreifendes Bevölkerungsschutzkonzept zu erarbeiten und regelmäßig fortzuschreiben, einschließlich klarer Zuständigkeiten, Kommunikationsstrukturen und Vorsorgemaßnahmen für die Bevölkerung.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4102
+      ],
+      "pruefsumme": "76330e29219e21a0"
+    },
+    {
+      "kennung": "M10",
+      "ebene": "land",
+      "beschreibung": "Ausbau des Sirenennetzes und verlässliche Warnung der Bevölkerung",
+      "zitat": "[Partei] fordert: […] Den Ausbau des Sirenennetzes und eine verlässliche Warnung der Bevölkerung.",
+      "ursachen_ids": [
+        4102
+      ],
+      "pruefsumme": "6b237b205b33f2b6"
+    },
+    {
+      "kennung": "M11",
+      "ebene": "land",
+      "beschreibung": "Krisenpläne mit eindeutig geregelten Zuständigkeiten, Abläufen und Kommunikationswegen",
+      "zitat": "Diese Pläne müssen Zuständigkeiten, Abläufe und Kommunikationswege eindeutig regeln, damit im Ernstfall sofort gehandelt werden kann.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4102
+      ],
+      "pruefsumme": "47149b0949c5a6ba"
+    },
+    {
+      "kennung": "M12",
+      "ebene": "bund",
+      "beschreibung": "Auf- und Ausbau einer einsatzbereiten Infrastruktur an Schutzräumen für die zivile Bevölkerung",
+      "zitat": "Einsatz- und betriebsbereite Schutzräume stehen nicht ausreichend zur Verfügung. Hier fordern wir daher den Auf- und Ausbau einer einsatzbereiten Infrastruktur für die zivile Bevölkerung.",
+      "ursachen_ids": [
+        4101
+      ],
+      "pruefsumme": "6c9125ca97d63fcf"
+    },
+    {
+      "kennung": "M13",
+      "ebene": "bund",
+      "beschreibung": "Selbsthilfefähigkeit der Bevölkerung stärken: Bevölkerungsschutztag weiterentwickeln, Angebote zur Krisenvorsorge für alle",
+      "zitat": "Die Selbsthilfefähigkeit der Bevölkerung stärken wir, indem wir den Bevölkerungsschutztag weiterentwickeln und Angebote für alle Menschen in der Krisenvorsorge anbieten.",
+      "ursachen_ids": [
+        4103
+      ],
+      "pruefsumme": "22cf0a83ff64b57b"
+    },
+    {
+      "kennung": "M14",
+      "ebene": "land",
+      "beschreibung": "Förderung von Sirenen fortsetzen (Sirenen als Teil des Warnwegs)",
+      "zitat": "Zudem sollen Katastrophenschutzleuchttürme weiter ausgebaut und die Förderung von Sirenen fortgesetzt werden.",
+      "ursachen_ids": [
+        4102
+      ],
+      "pruefsumme": "2f8d40f8ef74d0c5"
+    },
+    {
+      "kennung": "M15",
+      "ebene": "land",
+      "beschreibung": "Flächendeckend einen Mix aus Sirenen, Warn-Apps, Cell Broadcast und Pegelüberwachung für die Warnung der Bevölkerung nutzen",
+      "zitat": "Wir werden: […] flächendeckend auf einen Mix aus «Sirene»n, Warn-Apps, Cell Broadcast und Pegelüberwachung setzen. So wird jede und jeder schnell gewarnt - ob bei Starkregen, Blackout oder anderen Krisen.",
+      "ursachen_ids": [
+        4102
+      ],
+      "pruefsumme": "8c6262c0266d9d25"
+    },
+    {
+      "kennung": "M16",
+      "ebene": "bund",
+      "beschreibung": "Warninfrastruktur ausbauen, dazu verlässliche digitale Systeme und Cyberhilfe",
+      "zitat": "Wir schaffen verlässliche digitale Systeme, eine moderne Cyberhilfe und bauen die Warninfrastruktur aus.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4102
+      ],
+      "pruefsumme": "2ff56c409fc7d110"
+    },
+    {
+      "kennung": "M17",
+      "ebene": "bund",
+      "beschreibung": "Gesundheitswesen auf Krisen vorbereiten, unter anderem mit einem Vorrat an Arzneimitteln und Medizinprodukten",
+      "zitat": "Wir wollen unser Gesundheitswesen durch ein Gesundheitssicherstellungsgesetz auf Epidemien, Pandemien, große Katastrophen und militärische Bedrohungen besser vorbereiten. Das betrifft zum Beispiel Prävention durch Lufthygiene, Aufklärung und Aufbau eines zuverlässigen und dauerhaften Monitorings, den Vorrat an Arzneimitteln und Medizinprodukten sowie regelmäßige Katastrophenschutzübungen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4103
+      ],
+      "pruefsumme": "1b8606547ec9feeb"
+    },
+    {
+      "kennung": "M18",
+      "ebene": "land",
+      "beschreibung": "Landesprogramm zur Modernisierung des Katastrophenschutzes; Beschaffung zentral über das Land (Warnweg nicht genannt)",
+      "zitat": "Ein Landesprogramm für die Modernisierung des Katastrophenschutzes einrichten und Beschaffungsvorgänge über das Land zentralisieren, um Kosten für Kommunen und Kreise zu senken.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4102
+      ],
+      "pruefsumme": "b82a4dbba395e3d2"
+    },
+    {
+      "kennung": "M19",
+      "ebene": "bund",
+      "beschreibung": "Warninfrastruktur ausbauen, bis die Lücken geschlossen sind; Sonderprogramm für die zivile Verteidigung.",
+      "zitat": "Wir legen ein Sonderprogramm für die zivile Verteidigung auf, bauen die Warninfrastruktur weiter aus, bis die Lücken geschlossen sind […]",
+      "ursachen_ids": [
+        4102
+      ],
+      "pruefsumme": "93529654b5ceb0f1"
+    },
+    {
+      "kennung": "M20",
+      "ebene": "bund",
+      "beschreibung": "Regionale Wirtschaftskreisläufe fördern und Importabhängigkeiten verringern (Versorgungsketten, Medikamente)",
+      "zitat": "Wir wollen regionale Wirtschaftskreisläufe fördern und Importabhängigkeiten verringern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4103
+      ],
+      "pruefsumme": "a4faf2ba27a0db02"
+    },
+    {
+      "kennung": "M21",
+      "ebene": "land",
+      "beschreibung": "Landesweit einheitliche Ersthelfer-App etablieren, um Ersthelfende im Notfall zu alarmieren",
+      "zitat": "Für schnelle Hilfe wollen wir eine landesweit einheitliche Ersthelfer-App etablieren und breit bekannt machen, damit qualifizierte Ersthelfende im Umfeld eines Notfalls sofort alarmiert werden können.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4102
+      ],
+      "pruefsumme": "38fa9181a95f6ddb"
+    },
+    {
+      "kennung": "M22",
+      "ebene": "land",
+      "beschreibung": "Sirenennetz wieder aufbauen",
+      "zitat": "Das Sirenennetz bauen wir konsequent wieder auf.",
+      "ursachen_ids": [
+        4102
+      ],
+      "pruefsumme": "16a004a0bc360652"
+    },
+    {
+      "kennung": "M23",
+      "ebene": "bund",
+      "beschreibung": "Katastrophenschutz stärken, Mittel für Deiche und Dämme bereitstellen (Hochwasser)",
+      "zitat": "Wir wollen den Katastrophenschutz stärken, Hochwasserereignisse in ihren Folgen abmildern, Mittel für Auf- und Ausbau von Deichen und Dämmen zur Verfügung stellen",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4101
+      ],
+      "pruefsumme": "483ee495bf6e9720"
+    },
+    {
+      "kennung": "M24",
+      "ebene": "bund",
+      "beschreibung": "Katastrophenschutz massiv aufwerten und investieren, um sich auf Hochwasser, Sturzfluten, Hitze und Dürre vorzubereiten.",
+      "zitat": "Wir müssen uns jetzt an den Klimawandel anpassen, den Katastrophenschutz massiv aufwerten und investieren, um uns auf Hochwasser, Sturzfluten, Hitzewellen und Dürreperioden vorzubereiten (Kapitel 12).",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4101
+      ],
+      "pruefsumme": "0662dc39bc93e21f"
+    },
+    {
+      "kennung": "M25",
+      "ebene": "bund",
+      "beschreibung": "Wissen über das Verhalten bei Hochwasser, Stromausfällen und anderen Krisen stärken.",
+      "zitat": "Auch das Wissen um das Verhalten bei Hochwasser, Stromausfällen und anderen Krisen stärken wir.",
+      "ursachen_ids": [
+        4103
+      ],
+      "pruefsumme": "4c3ab7be0ec3138a"
+    }
+  ]
+}

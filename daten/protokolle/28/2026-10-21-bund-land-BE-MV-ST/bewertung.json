@@ -1,0 +1,744 @@
+{
+  "blind_pruefsumme": "ba0396da2bf3b5a986123f3927ff3ebae5848c7c22a041ec82297ff3ce06f386",
+  "neue_instrumente": [
+    {
+      "kennung": "I1",
+      "name": "Elterngeld-Mindest- und Höchstbetrag anheben (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Geld ist ein Hauptgrund für kurze Elternzeit der Väter, ein höherer Höchstbetrag senkt diese Hürde etwas. Der Mindestbetrag geht aber vor allem an Mütter ohne Vorerwerb und ändert die Aufteilung kaum; Mehrkosten im Haushalt.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.diw.de/de/diw_01.c.673478.de/elterngeld_und_elterngeld_plus_gleichmaessige_aufteilung_zwischen_muettern_und_vaetern_nach_wie_vor_in_weiter_ferne.html"
+    },
+    {
+      "kennung": "I2",
+      "name": "Bezahlte Freistellung des zweiten Elternteils direkt nach der Geburt (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Väterzeit nach der Geburt stärkt frühe Beteiligung und entspricht EU-Vorgaben; Studien finden aber nur bei längeren Freistellungen dauerhafte Effekte, bei Hausarbeit verblassen sie. Umlagefinanzierung per Bundesgesetz machbar.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://childcarecanada.org/node/15425"
+    },
+    {
+      "kennung": "I3",
+      "name": "Rechte auf Rückkehr oder Aufstockung von Teilzeit in Vollzeit ausweiten (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Setzt direkt an der ungewollten Dauer-Teilzeit nach der Familienphase an; die bisherige Brückenteilzeit gilt nur in größeren Betrieben. Wirkung kaum evaluiert, Widerstand der Arbeitgeber und Ausnahmen für Kleinbetriebe absehbar.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I4",
+      "name": "Flexiblere Arbeitszeitmodelle ermöglichen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Mehr Flexibilität kann Vereinbarkeit und höhere Stundenzahl erleichtern. Ohne Rückkehr- oder Aufstockungsrecht bleibt offen, ob Mütter dadurch aus der Teilzeit kommen; längere Tage können Sorgearbeit auch erschweren.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I5",
+      "name": "Ehegattensplitting durch Individualbesteuerung mit übertragbarem Grundfreibetrag ersetzen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Das Splitting gilt als Erwerbshemmnis für Zweitverdienerinnen. Simulationen zeigen deutliche Effekte vor allem bei reiner Individualbesteuerung, mit übertragbarem Grundfreibetrag fallen sie kleiner aus; Übergang und Vertrauensschutz aufwendig.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.diw.de/de/diw_01.c.763052.de/s_6900.html"
+    },
+    {
+      "kennung": "I6",
+      "name": "Betreuungsgeld für häusliche Betreuung von Kindern unter drei Jahren (Bund)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 1,
+      "begruendung": "Erweitert die Wahl, senkt laut Studien aber die Erwerbsbeteiligung von Müttern und verfestigt damit Teilzeit und Rollenteilung. Das Bundesverfassungsgericht hat das Bundes-Betreuungsgeld 2015 mangels Bundeszuständigkeit gekippt.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.wirtschaftsdienst.eu/inhalt/jahr/2023/heft/5/beitrag/betreuungsgeld-familienpolitische-leistung-oder-hindernis-bei-der-arbeitsmarktintegration.html"
+    },
+    {
+      "kennung": "I7",
+      "name": "Antidiskriminierungsstelle und Beratungsstellen für Betroffene stärken (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Mehr Beratung erleichtert Betroffenen von Belästigung den Weg zu Hilfe und macht Rechte bekannter. Betriebliche Beschwerdestellen und Pflichten der Arbeitgeber ändert das nicht direkt; Wirkung kaum untersucht.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I8",
+      "name": "Gleichberechtigung und Geschlechterstereotype in Kita und Schule thematisieren (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Setzt früh an Rollenbildern an und ist mit Lehrplänen und Fortbildung umsetzbar. Ob solche Programme die Erwartungen an Mütter oder die spätere Aufteilung im Haushalt ändern, ist kaum untersucht; Wirkung langfristig und unsicher.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I9",
+      "name": "Berufsorientierung ohne Geschlechterklischees an Schulen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kann Berufswahl und Rollenbilder etwas öffnen und ist schulrechtlich leicht umsetzbar. Die Erwartungen an Mütter in der Familienphase berührt sie nur am Rand; belastbare Wirkungsstudien fehlen.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I10",
+      "name": "Mädchen für MINT gewinnen und weibliche Vorbilder sichtbar machen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Ein Feldexperiment zeigt, dass Besuche weiblicher Vorbilder Stereotype abbauen und MINT-Studienwahl leicht erhöhen. An Erwartungen an Mütter und Familienrollen setzt das nur am Rand an.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.iza.org/de/publications/dp/13163"
+    },
+    {
+      "kennung": "I11",
+      "name": "Geschlechtersensible Bildungs- und Jugendarbeit fördern (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Kann Rollenbilder früh hinterfragen; der Bund kann über Förderprogramme beitragen, Schule und Kita regeln aber die Länder. Wirkung auf spätere Rollenteilung kaum untersucht.",
+      "evidenz": "offen"
+    }
+  ],
+  "zuordnung": [
+    {
+      "kennung": "M01",
+      "ursachen": []
+    },
+    {
+      "kennung": "M02",
+      "instrument": "I8",
+      "ursachen": [
+        2803
+      ]
+    },
+    {
+      "kennung": "M03",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 3,
+        "begruendung": "Mehr reservierte Partnermonate erhöhen die Väterbeteiligung (Quebec, Norwegen) und werden zur Entlastung von Frauen empfohlen; dauerhafte Effekte auf die Hausarbeit sind schwächer belegt.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://www.diw.de/de/diw_01.c.836605.de/das_bisschen_haushalt_____weniger_sorgearbeit_steigert_erwerbsbeteiligung_von_frauen.html"
+      },
+      "ursachen": [
+        2801
+      ]
+    },
+    {
+      "kennung": "M04",
+      "instrument": "I1",
+      "ursachen": [
+        2801
+      ]
+    },
+    {
+      "kennung": "M05",
+      "instrument": "I11",
+      "ursachen": [
+        2803
+      ]
+    },
+    {
+      "kennung": "M06",
+      "ursachen": []
+    },
+    {
+      "kennung": "M07",
+      "ursachen": []
+    },
+    {
+      "kennung": "M08",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Erwerbsintegration von Frauen kann Abhängigkeit und tradierte Rollen verringern. Die Zusage bleibt aber ohne konkretes Instrument, die Wirkung hängt ganz von der Ausgestaltung ab.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2803
+      ]
+    },
+    {
+      "kennung": "M09",
+      "instrument": "I4",
+      "ursachen": [
+        2802
+      ]
+    },
+    {
+      "kennung": "M10",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 3,
+        "begruendung": "Längere Fristen und Verbandsklage erleichtern die Durchsetzung auch bei sexueller Belästigung, die Evaluation des AGG sah hier Bedarf. Betriebliche Beschwerdestellen bekannter macht es nicht direkt.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2804
+      ]
+    },
+    {
+      "kennung": "M11",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Hilfen zum Wiedereinstieg setzen an der Familienphase an; ohne Angaben zu Art und Umfang ist nur eine geringe Wirkung zu erwarten.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2802
+      ]
+    },
+    {
+      "kennung": "M12",
+      "instrument": "I6",
+      "ursachen": [
+        2802,
+        2803
+      ]
+    },
+    {
+      "kennung": "M13",
+      "instrument": "I10",
+      "ursachen": [
+        2803
+      ]
+    },
+    {
+      "kennung": "M14",
+      "ursachen": []
+    },
+    {
+      "kennung": "M15",
+      "instrument": "I7",
+      "ursachen": [
+        2804
+      ]
+    },
+    {
+      "kennung": "M16",
+      "instrument": "I3",
+      "ursachen": [
+        2802
+      ]
+    },
+    {
+      "kennung": "M17",
+      "instrument": "I9",
+      "ursachen": [
+        2803
+      ]
+    },
+    {
+      "kennung": "M18",
+      "ursachen": []
+    },
+    {
+      "kennung": "M19",
+      "instrument": "I10",
+      "ursachen": [
+        2803
+      ]
+    },
+    {
+      "kennung": "M20",
+      "ursachen": [
+        2801
+      ]
+    },
+    {
+      "kennung": "M21",
+      "ursachen": []
+    },
+    {
+      "kennung": "M22",
+      "ursachen": []
+    },
+    {
+      "kennung": "M23",
+      "instrument": "I4",
+      "ursachen": [
+        2801
+      ]
+    },
+    {
+      "kennung": "M24",
+      "ursachen": []
+    },
+    {
+      "kennung": "M25",
+      "ursachen": []
+    },
+    {
+      "kennung": "M26",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 3,
+        "begruendung": "Verankert Schutz vor sexueller Belästigung in der Gefährdungsbeurteilung und macht Prävention zur Arbeitgeberpflicht, wie es die ILO-Konvention 190 vorsieht. Wirkung hängt von Kontrolle durch Aufsichtsbehörden ab.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2804
+      ]
+    },
+    {
+      "kennung": "M27",
+      "einzeln": {
+        "wirksamkeit": 0,
+        "umsetzbarkeit": 1,
+        "begruendung": "Erweitert die Wahl, Studien zum Betreuungsgeld zeigen aber eine sinkende Erwerbsbeteiligung von Müttern und damit verfestigte Rollen. Ein Betrag in Höhe der Kita-Kosten ist für ein Land kaum finanzierbar.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://www.wirtschaftsdienst.eu/inhalt/jahr/2023/heft/5/beitrag/betreuungsgeld-familienpolitische-leistung-oder-hindernis-bei-der-arbeitsmarktintegration.html"
+      },
+      "ursachen": [
+        2803
+      ]
+    },
+    {
+      "kennung": "M28",
+      "instrument": "I7",
+      "ursachen": [
+        2804
+      ]
+    },
+    {
+      "kennung": "M29",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Senkt die Kosten ausgelagerter Betreuung etwas und entlastet Familien; steuerliche Abzüge nützen vor allem höheren Einkommen und ändern die Aufteilung im Paar kaum.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2801
+      ]
+    },
+    {
+      "kennung": "M30",
+      "ursachen": []
+    },
+    {
+      "kennung": "M31",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Sichert nach Erziehungs- oder Pflegephasen den Zugang zu Arbeitslosengeld und Vermittlung und erleichtert so den Wiedereinstieg etwas; an der Dauer-Teilzeit ändert es wenig, Mehrkosten in der Versicherung.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2802
+      ]
+    },
+    {
+      "kennung": "M32",
+      "instrument": "I8",
+      "ursachen": [
+        2803
+      ]
+    },
+    {
+      "kennung": "M33",
+      "instrument": "I2",
+      "ursachen": [
+        2801
+      ]
+    },
+    {
+      "kennung": "M34",
+      "ursachen": []
+    },
+    {
+      "kennung": "M35",
+      "ursachen": []
+    },
+    {
+      "kennung": "M36",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Der Partnerschaftsbonus fördert gleichzeitige Teilzeit beider Eltern, wird aber bisher wenig genutzt; ohne Angaben zur Weiterentwicklung ist die Wirkung auf die Aufteilung gering.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2801
+      ]
+    },
+    {
+      "kennung": "M37",
+      "ursachen": []
+    },
+    {
+      "kennung": "M38",
+      "instrument": "I2",
+      "ursachen": [
+        2801
+      ]
+    },
+    {
+      "kennung": "M39",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Vorbilder und MINT-Angebote können Stereotype etwas abbauen (Feldexperiment). Schulunterricht ist aber Ländersache, und an Erwartungen an Mütter setzt das nur am Rand an.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://www.iza.org/de/publications/dp/13163"
+      },
+      "ursachen": [
+        2803
+      ]
+    },
+    {
+      "kennung": "M40",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Mehr vollzeitnahe Stellen in einem Frauenberuf können ungewollte Teilzeit verringern. Es betrifft nur einen Berufsbereich und hängt von einer Vereinbarung aller Länder und deren Finanzierung ab.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2802
+      ]
+    },
+    {
+      "kennung": "M41",
+      "instrument": "I8",
+      "ursachen": [
+        2803
+      ]
+    },
+    {
+      "kennung": "M42",
+      "ursachen": []
+    },
+    {
+      "kennung": "M43",
+      "instrument": "I11",
+      "ursachen": [
+        2803
+      ]
+    },
+    {
+      "kennung": "M44",
+      "ursachen": []
+    },
+    {
+      "kennung": "M45",
+      "instrument": "I4",
+      "ursachen": [
+        2802
+      ]
+    },
+    {
+      "kennung": "M46",
+      "instrument": "I5",
+      "ursachen": [
+        2802,
+        2803
+      ]
+    },
+    {
+      "kennung": "M47",
+      "instrument": "I9",
+      "ursachen": [
+        2803
+      ]
+    },
+    {
+      "kennung": "M48",
+      "instrument": "I3",
+      "ursachen": [
+        2802
+      ]
+    },
+    {
+      "kennung": "M49",
+      "ursachen": []
+    },
+    {
+      "kennung": "M50",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Eine AGG-Reform kann den Schutz vor Belästigung am Arbeitsplatz verbessern; ohne Angaben zu Fristen, Klagerechten oder Beschwerdestellen ist die Wirkung unbestimmt.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2804
+      ]
+    },
+    {
+      "kennung": "M51",
+      "instrument": "I9",
+      "ursachen": [
+        2803
+      ]
+    },
+    {
+      "kennung": "M52",
+      "instrument": "I2",
+      "ursachen": [
+        2801
+      ]
+    },
+    {
+      "kennung": "M53",
+      "instrument": "I7",
+      "ursachen": [
+        2804
+      ]
+    },
+    {
+      "kennung": "M54",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Minijobs wirken kaum als Brücke und gelten zusammen mit dem Splitting als Teilzeitfalle für Frauen; die Überführung setzt dort an. Kurzfristig drohen Stellenverluste in Branchen mit vielen Minijobs.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://www.boeckler.de/de/auf-einen-blick-17945-minijobs-als-teil-des-niedriglohnsektors-36566.htm"
+      },
+      "ursachen": [
+        2802
+      ]
+    },
+    {
+      "kennung": "M55",
+      "ursachen": []
+    },
+    {
+      "kennung": "M56",
+      "instrument": "I6",
+      "ursachen": [
+        2803
+      ]
+    },
+    {
+      "kennung": "M57",
+      "ursachen": []
+    },
+    {
+      "kennung": "M58",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Sechs nicht übertragbare Monate je Elternteil erhöhen die Väterbeteiligung deutlich (Erfahrungen mit Väterquoten); dauerhafte Effekte auf die Hausarbeit sind schwächer belegt, die Verlängerung kostet viel.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://www.diw.de/de/diw_01.c.836605.de/das_bisschen_haushalt_____weniger_sorgearbeit_steigert_erwerbsbeteiligung_von_frauen.html"
+      },
+      "ursachen": [
+        2801
+      ]
+    },
+    {
+      "kennung": "M59",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Ausgelagerte Hausarbeit erhöht die Erwerbsbeteiligung von Frauen; ein Steuerabzug erreicht aber vor allem höhere Einkommen und weniger Haushalte als direkte Gutscheine.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://www.diw.de/de/diw_01.c.836605.de/das_bisschen_haushalt_____weniger_sorgearbeit_steigert_erwerbsbeteiligung_von_frauen.html"
+      },
+      "ursachen": [
+        2801
+      ]
+    },
+    {
+      "kennung": "M60",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Wohnortnahe Sorgezentren könnten pflegende Angehörige entlasten. Die Überführung privater Gewerbeflächen ist rechtlich und finanziell schwierig, die Wirkung auf die Aufteilung im Paar unklar.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2801
+      ]
+    },
+    {
+      "kennung": "M61",
+      "ursachen": []
+    },
+    {
+      "kennung": "M62",
+      "instrument": "I10",
+      "ursachen": [
+        2803
+      ]
+    },
+    {
+      "kennung": "M63",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Setzt an der Minijob-Teilzeitfalle an, nennt aber kein Instrument; ohne Änderung der Anreize ist nur eine geringe Wirkung zu erwarten.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2802
+      ]
+    },
+    {
+      "kennung": "M64",
+      "ursachen": []
+    },
+    {
+      "kennung": "M65",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Eine partnerschaftlichere Familienbesteuerung kann Erwerbsanreize für beide stärken; das Ziel bleibt ohne konkretes Modell und schützt bestehende Lebensentscheidungen, die Wirkung ist offen.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2801
+      ]
+    },
+    {
+      "kennung": "M66",
+      "instrument": "I8",
+      "ursachen": [
+        2803
+      ]
+    },
+    {
+      "kennung": "M67",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Ein ausdrückliches Rückkehrrecht auf einen gleichwertigen Platz sichert den Wiedereinstieg nach der Elternzeit; die Rückkehr ist arbeitsrechtlich schon weitgehend geschützt, der Zugewinn ist klein.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2802
+      ]
+    },
+    {
+      "kennung": "M68",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Kürzere Normalarbeitszeit könnte die Lücke zwischen Teil- und Vollzeit verkleinern; Pilotstudien zeigen Zufriedenheit, Effekte auf Mütterteilzeit sind unbelegt. Voller Lohnausgleich ist staatlich kaum durchsetzbar.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2802
+      ]
+    },
+    {
+      "kennung": "M69",
+      "instrument": "I4",
+      "ursachen": [
+        2802
+      ]
+    },
+    {
+      "kennung": "M70",
+      "ursachen": []
+    },
+    {
+      "kennung": "M71",
+      "instrument": "I8",
+      "ursachen": [
+        2803
+      ]
+    },
+    {
+      "kennung": "M72",
+      "instrument": "I5",
+      "ursachen": [
+        2802,
+        2803
+      ]
+    },
+    {
+      "kennung": "M73",
+      "ursachen": []
+    },
+    {
+      "kennung": "M74",
+      "ursachen": []
+    },
+    {
+      "kennung": "M75",
+      "instrument": "I1",
+      "ursachen": [
+        2801
+      ]
+    },
+    {
+      "kennung": "M76",
+      "ursachen": []
+    },
+    {
+      "kennung": "M77",
+      "ursachen": []
+    },
+    {
+      "kennung": "M78",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Mehr Einfluss auf Lage und Dauer der Arbeitszeit kann Wechsel aus der Teilzeit erleichtern; ohne konkrete Rechtsansprüche bleibt die Wirkung unbestimmt.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2802
+      ]
+    },
+    {
+      "kennung": "M79",
+      "ursachen": []
+    },
+    {
+      "kennung": "M80",
+      "ursachen": []
+    },
+    {
+      "kennung": "M81",
+      "instrument": "I3",
+      "ursachen": [
+        2802
+      ]
+    },
+    {
+      "kennung": "M82",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Steuerfreie Prämien können Arbeitgeber zur Aufstockung von Teilzeit bewegen; Mitnahmeeffekte sind wahrscheinlich, und Hürden wie Splitting oder Betreuung bleiben.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2802
+      ]
+    },
+    {
+      "kennung": "M83",
+      "ursachen": []
+    },
+    {
+      "kennung": "M84",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Weniger Hausarbeit erhöht die Erwerbsbeteiligung von Frauen stärker als andere Entlastungen; ein direkt gefördertes Budget erreicht mehr Haushalte als Steuerabzüge. Kosten und Schwarzarbeit sind Hürden.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://www.diw.de/de/diw_01.c.836605.de/das_bisschen_haushalt_____weniger_sorgearbeit_steigert_erwerbsbeteiligung_von_frauen.html"
+      },
+      "ursachen": [
+        2801
+      ]
+    },
+    {
+      "kennung": "M85",
+      "ursachen": []
+    },
+    {
+      "kennung": "M86",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Ohne Steuerklasse 5 wirkt das Nettoeinkommen der Zweitverdienerin weniger gering; die Jahressteuer bleibt aber gleich, daher sind nur kleine Effekte auf die Arbeitszeit zu erwarten.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        2802
+      ]
+    }
+  ]
+}

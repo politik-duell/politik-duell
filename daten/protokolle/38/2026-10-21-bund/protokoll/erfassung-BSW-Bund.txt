@@ -1,0 +1,91 @@
+{
+  "partei_id": 17,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Bürgerversicherung mit Einzahlung nach Einkommen einführen und Zusatzbeiträge abschaffen",
+      "ursachen_ids": [3801],
+      "ursachen_offen": [3803],
+      "zitat": "Wir fordern die Abschaffung der Zusatzbeiträge und die Einführung einer Bürgerversicherung, in die alle Bürger nach ihrem Einkommen einzahlen und grundsätzlich gleiche Leistungen auf dem Niveau der höchsten medizinischen Standards erhalten.",
+      "seite": 26
+    },
+    {
+      "beschreibung": "Grundfreibetrag auf Sozialabgaben, gegenfinanziert durch höhere Beitragsbemessungsgrenzen",
+      "ursachen_ids": [3801],
+      "zitat": "Wir brauchen einen Grundfreibetrag auf Sozialabgaben bei gleichbleibenden Ansprüchen, gegenfinanziert durch eine Anhebung der Beitragsbemessungsgrenzen.",
+      "seite": 17
+    },
+    {
+      "beschreibung": "Kapitalerträge wie Arbeitseinkommen mit dem normalen Einkommensteuersatz belasten",
+      "ursachen_ids": [],
+      "ursachen_offen": [3801],
+      "zitat": "Kapitalerträge sind wie Arbeitseinkommen mit dem normalen Einkommenssteuersatz zu belasten.",
+      "seite": 17
+    },
+    {
+      "beschreibung": "Hausärzte als Ansprechpartner höher vergüten",
+      "ursachen_ids": [3801],
+      "zitat": "Besonders Hausärzte als Ansprechpartner der Patienten müssen höher vergütet werden.",
+      "seite": 27
+    },
+    {
+      "beschreibung": "Krankenhäuser vor Ort erhalten und besser in die Versorgung integrieren",
+      "ursachen_ids": [],
+      "ursachen_offen": [3801],
+      "zitat": "Wir fordern einen Erhalt und bessere Integration der Krankenhäuser in die Gesundheitsversorgung vor Ort.",
+      "seite": 27
+    },
+    {
+      "beschreibung": "Abschaffung der Trennung der Versorgungssektoren (ambulant, Pflege, stationär)",
+      "ursachen_ids": [],
+      "ursachen_offen": [3801],
+      "zitat": "Wir fordern die Abschaffung der kostspieligen Trennung der verschiedenen Versorgungssektoren wie z. B. der ambulanten, Pflege- und stationären Versorgung.",
+      "seite": 27
+    },
+    {
+      "beschreibung": "Mehr Medizinstudienplätze und Pflegeausbildung, bessere Bezahlung des Pflegepersonals",
+      "ursachen_ids": [],
+      "ursachen_offen": [3801],
+      "zitat": "Wir wollen mehr Medizinstudienplätze und Ausbildungsplätze für Psychotherapeuten schaffen, mehr Pflegepersonal ausbilden und eine bessere Bezahlung.",
+      "seite": 27
+    },
+    {
+      "beschreibung": "Zahnersatz und Sehhilfen wieder vollständig in den Leistungskatalog der gesetzlichen Krankenversicherung aufnehmen",
+      "ursachen_ids": [],
+      "ursachen_offen": [3804],
+      "zitat": "Wir wollen notwendigen Zahnersatz und Sehhilfen vollständig in den Leistungskatalog der gesetzlichen Gesundheitsabsicherung zurückholen.",
+      "seite": 27
+    },
+    {
+      "beschreibung": "Gesetzliche Krankenkassen finanzieren versicherungsfremde Leistungen aus Steuermitteln",
+      "ursachen_ids": [3802],
+      "buendel": "Steuerfinanzierung versicherungsfremder Leistungen",
+      "zitat": "Wir fordern die Steuerfinanzierung von versicherungsfremden Leistungen (z. B. Beiträge von Bürgergeld-Empfängern).",
+      "seite": 26
+    }
+  ],
+  "nicht_erfasst": []
+}
+
+Protokoll (BSW, Bund, Thema 38 „Krankenkasse: Beiträge und Leistungen“)
+
+Gelesen: Kapitel 3 (S. 20–33) und dort der Gesundheitsabschnitt S. 26–27 vollständig; Einnahmen- und Steuerzusagen S. 16–17; Sozialabgaben S. 17 (Grundfreibetrag, Beitragsbemessungsgrenzen). Textdatei sonst per Stichwortsuche (Krankenkasse, Beitrag, Zuzahlung, Krankenhaus, Zusatzbeitrag) gesichtet; keine weiteren Treffer.
+
+Nicht erfasst (Hinweise, ohne Maßnahme im JSON):
+- S. 26: „Pharmakonzerne … überhöhte Preise“. Problembeschreibung ohne konkrete Zusage.
+- S. 26: Übertragung der Altersrückstellungen der privaten Krankenversicherung beim Anbieterwechsel (Portabilität). Betrifft die PKV, nicht die GKV-Einnahmen oder -Ausgaben.
+- S. 27: Pflegeeigenanteile und Pflegevollversicherung (Steuerfinanzierung). Gehört zu Pflege, nicht zu diesem Thema.
+- S. 27: Stärkung der kommunalen Ebene und Verstetigung integrativer Versorgungskonzepte. Organisationsziel ohne Kostenbezug.
+- S. 26: Kita-Beiträge, Schulspeisung u. a. Keine GKV-Frage.
+- Zuzahlungen und Belastungsgrenze: kein Text dazu gefunden; daher keine Maßnahme zur Zuzahlung (3804).
+
+Grenzfälle: Die Maßnahme zu Zusatzbeiträgen und Bürgerversicherung betrifft 3801 (Versichertenkreis) und 3803 (Zusatzbeitrag als Instrument der Rücklagenlücke) – nur offen für 3803. Das Zitat ist dasselbe wie für 3801.
+Kapitalerträge (S. 17) betreffen die Einkommensteuer, nicht die Beiträge; offen für 3801, weil R1 Kapitaleinkommen als Einnahmebasis nennt.
+Krankenhaus-Erhalt, Sektorentrennung, Pflegepersonal: Grenzfälle zu 3801 (Ausgaben), nur offen. Die Forderung zur Sektorentrennung nennt „kostspielig“.
+Zahnersatz und Sehhilfen: Leistungsausschluss, der keine Zuzahlung ist (R4), nur offen für 3804.
+
+Richtungen ohne Maßnahme: 3803 nur die offene Zusatzbeitrag-Forderung (keine Rücklagenregel). 3804 nur offen (Zahnersatz und Sehhilfen). Zuzahlungen selbst (Krankenhaus, Heilmittel, Fahrkosten, Belastungsgrenze) kommen im Programm nicht vor.
+
+Seiten ohne Text: keine relevanten.
+
+Stand im PDF: Titelseite „Wahlprogramm für die Bundestagswahl 2025“, kein abweichender Stand.

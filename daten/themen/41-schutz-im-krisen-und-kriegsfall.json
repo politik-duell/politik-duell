@@ -33,5 +33,509 @@
   "freigabe": {
     "datum": "2026-10-19",
     "art": "ki"
-  }
+  },
+  "instrumente": [
+    {
+      "id": 10741,
+      "name": "Sirenennetz ausbauen, modernisieren und an digitale Warnsysteme (MoWaS, Apps) anbinden (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Warntag-Befragungen zeigen, dass der Mix aus Sirenen, Cell Broadcast und Apps fast alle erreicht; Sirenen erreichen rund 59 % und wirken auch bei Netzausfall. Dagegen: Cell Broadcast erreicht bereits die meisten, der Zusatznutzen weiterer Sirenen ist begrenzt.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.l-iz.de/melder/wortmelder/2024/09/vorlaeufige-befragungsergebnisse-bundesweiter-warntag-2024-hat-95-prozent-der-buergerinnen-und-buerger-erreicht-603092",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10742,
+      "name": "Bundesförderung für den Ausbau der Warninfrastruktur, insbesondere Sirenen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Der Bund ist für die Warnung im Zivilschutz zuständig und hat Sirenen bereits gefördert; der Warnmittelmix erreicht laut Warntag-Befragungen fast alle. Dagegen: Umfang der Förderung offen, Umsetzung hängt von Ländern und Kommunen ab.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.l-iz.de/melder/wortmelder/2024/09/vorlaeufige-befragungsergebnisse-bundesweiter-warntag-2024-hat-95-prozent-der-buergerinnen-und-buerger-erreicht-603092",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10743,
+      "name": "Aufklärung und Angebote zur Selbsthilfe und Krisenvorsorge der Bevölkerung (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Eine Meta-Analyse findet einen kleinen Effekt auf Vorsorgeverhalten, aber keinen signifikanten auf Vorräte und Wissen, bei sehr geringer Evidenzsicherheit. Dafür spricht: günstig und schnell umsetzbar.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11003604",
+      "entwurf_herkunft": "blind"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "durchsucht_fuer": [4101, 4102, 4103],
+      "massnahmen": [
+        {
+          "id": 10744,
+          "instrument": 10742,
+          "beschreibung": "Warninfrastruktur ausbauen, bis die Lücken geschlossen sind; Sonderprogramm für die zivile Verteidigung.",
+          "ursachen_ids": [4102],
+          "zitat": "Wir legen ein Sonderprogramm für die zivile Verteidigung auf, bauen die Warninfrastruktur weiter aus, bis die Lücken geschlossen sind […]",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=42",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10745,
+          "instrument": 10743,
+          "beschreibung": "Wissen über das Verhalten bei Hochwasser, Stromausfällen und anderen Krisen stärken.",
+          "ursachen_ids": [4103],
+          "zitat": "Auch das Wissen um das Verhalten bei Hochwasser, Stromausfällen und anderen Krisen stärken wir.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=42",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [4102],
+      "massnahmen": [
+        {
+          "id": 10746,
+          "instrument": 10741,
+          "beschreibung": "Sireneninfrastruktur ausbauen und vollständig an bestehende digitale Warnsysteme anbinden",
+          "ursachen_ids": [4102],
+          "zitat": "Zudem werden wir die Sireneninfrastruktur in Berlin leistungsfähig ausbauen und sie vollständig in bestehende digitale Warnsysteme wie MoWaS und die Warn-App NINA integrieren.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=14",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [4102],
+      "massnahmen": [
+        {
+          "id": 10747,
+          "instrument": 10741,
+          "beschreibung": "Sirenen und Warnsysteme aktualisieren und ihre Funktion regelmäßig prüfen",
+          "ursachen_ids": [4102],
+          "zitat": "Sirenen, Warnsysteme und Notfallpläne werden aktualisiert und ihre Funktionalität regelmäßig geprobt.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=40",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [4102],
+      "massnahmen": [
+        {
+          "id": 10748,
+          "instrument": 10741,
+          "beschreibung": "Förderung von Sirenen fortsetzen (Sirenen als Teil des Warnwegs)",
+          "ursachen_ids": [4102],
+          "zitat": "Zudem sollen Katastrophenschutzleuchttürme weiter ausgebaut und die Förderung von Sirenen fortgesetzt werden.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=10",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "durchsucht_fuer": [4101, 4102, 4103],
+      "massnahmen": [
+        {
+          "id": 10749,
+          "instrument": 10742,
+          "beschreibung": "Flächendeckender Ausbau von Sirenen wird gefördert",
+          "ursachen_ids": [4102],
+          "zitat": "Wir wollen, dass die Menschen besser und schneller vor Gefahren gewarnt werden. Dazu werden wir den flächendeckenden Ausbau mit Sirenen weiter fördern und die bestehenden Warn-Apps verbessern.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=46",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10750,
+          "beschreibung": "Bestehende Warn-Apps sollen verbessert werden",
+          "ursachen_ids": [4102],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Warn-Apps sind ein relevanter Warnkanal (rund 56 % beim Warntag 2024) und der Bund betreibt NINA selbst. Dagegen: Verbesserung unbestimmt, Cell Broadcast erreicht bereits mehr Menschen ohne App.",
+          "zitat": "Dazu werden wir den flächendeckenden Ausbau mit Sirenen weiter fördern und die bestehenden Warn-Apps verbessern.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=46",
+          "beleg_studie_url": "https://www.l-iz.de/melder/wortmelder/2024/09/vorlaeufige-befragungsergebnisse-bundesweiter-warntag-2024-hat-95-prozent-der-buergerinnen-und-buerger-erreicht-603092",
+          "evidenz": "belegt",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [4102],
+      "keine_massnahme": {
+        "begruendung": "Kapitel Sicherheit für ein gutes Leben, Abschnitte Infrastruktur-, Bevölkerungs- und Katastrophenschutz sowie Schutz und Sicherheit für Stadt und Menschen (S. 28–30) gelesen; nichts zu Sirenen, Warn-Apps, Cell Broadcast oder MoWaS.",
+        "stand": "2026-10-21",
+        "treffer": 0,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 12,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [4102],
+      "keine_massnahme": {
+        "begruendung": "Kapitel Katastrophen- und Zivilschutz (S. 49–50) und Sicherheit (S. 45–46) gelesen, Stichwortsuche Sirene, MoWaS, Warnsystem, Warn-App, Cell Broadcast. Nichts zu Sirenen oder Warnweg; Schutzräume (S. 49) und Eigenvorsorge (S. 50) betreffen andere Ursachen.",
+        "stand": "2026-10-21",
+        "treffer": 0,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 12,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [4102],
+      "massnahmen": [
+        {
+          "id": 10751,
+          "instrument": 10741,
+          "beschreibung": "Warnsysteme im Katastrophenschutz modernisieren und verlässlich finanzieren",
+          "ursachen_ids": [4102],
+          "zitat": "Warnsysteme werden modernisiert, Einsatzstrukturen verlässlich finanziert.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=30",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "durchsucht_fuer": [4101, 4102, 4103],
+      "massnahmen": [
+        {
+          "id": 10752,
+          "instrument": 10742,
+          "beschreibung": "Warninfrastruktur ausbauen, dazu verlässliche digitale Systeme und Cyberhilfe",
+          "ursachen_ids": [4102],
+          "zitat": "Wir schaffen verlässliche digitale Systeme, eine moderne Cyberhilfe und bauen die Warninfrastruktur aus.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=138",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10753,
+          "instrument": 10743,
+          "beschreibung": "Selbsthilfefähigkeit der Bevölkerung stärken: Bevölkerungsschutztag weiterentwickeln, Angebote zur Krisenvorsorge für alle",
+          "ursachen_ids": [4103],
+          "zitat": "Die Selbsthilfefähigkeit der Bevölkerung stärken wir, indem wir den Bevölkerungsschutztag weiterentwickeln und Angebote für alle Menschen in der Krisenvorsorge anbieten.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=138",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [4102],
+      "keine_massnahme": {
+        "begruendung": "Kapitel 6.2 Bevölkerungs- und Katastrophenschutz (S. 235–237) und Fundstellen S. 139, 210 gelesen; nichts zum Warnweg (Sirenen, MoWaS, Warn-Apps, Cell Broadcast). Frühwarnsysteme (S. 139, 210) betreffen Antisemitismus und Drogen.",
+        "stand": "2026-10-21",
+        "treffer": 2,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 13,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [4102],
+      "keine_massnahme": {
+        "begruendung": "Kapitel 17.3 „Gemeinsam für Sicherheit und Resilienz im Ostseeraum“ (S. 109–110) gelesen: Krisenvorsorge, Katastrophenschutz und Resilienzpläne, aber nichts zu Warnwegen, Sirenen oder Warn-Apps. Klimaanpassung (S. 11) nur Schutz vor Starkregen und Hochwasser, keine Warnung. Suche im ganzen Text (Warn, Sirene, MoWaS, Cell Broadcast, Alarm, Notruf) ohne Treffer.",
+        "stand": "2026-10-21",
+        "treffer": 0,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 13,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [4102],
+      "keine_massnahme": {
+        "begruendung": "Erfasste Stellen (S. 48) setzen laut Bewertung ohne Parteinamen an keiner der Ursachen an.",
+        "stand": "2026-10-21",
+        "treffer": 0,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 14,
+      "durchsucht_fuer": [4101, 4102, 4103],
+      "keine_massnahme": {
+        "begruendung": "Kapitel Innere Sicherheit (S. 21–24), Föderalismus (S. 36), Verteidigung (S. 46–47) gelesen und Volltextsuche nach Schutzraum, Sirene, Warn, Vorrat, Bevölkerungsschutz; nichts zu Schutzorten, Warnweg oder Notvorräten.",
+        "stand": "2026-10-21",
+        "treffer": 0,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 14,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [4102],
+      "massnahmen": [
+        {
+          "id": 10754,
+          "beschreibung": "Qualität der Cell-Broadcast-Warnmeldungen verbessern, damit sie rechtzeitig erfolgen und Handlungsanweisungen enthalten",
+          "ursachen_ids": [4102],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Cell Broadcast ist das reichweitenstärkste Warnmittel; rechtzeitige, klare Meldungen kann das Land als warnende Stelle verbessern. Dagegen: schließt keine Lücke im Warnweg selbst, sondern verbessert Inhalte.",
+          "zitat": "Wir verbessern die Qualität von per Cell Broadcast gesendeten Warnmeldungen, sodass diese rechtzeitig erfolgen, verständlich sind und klare Handlungsanweisungen zur privaten Krisenvorsorge beinhalten.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=75",
+          "beleg_studie_url": "https://www.l-iz.de/melder/wortmelder/2024/09/vorlaeufige-befragungsergebnisse-bundesweiter-warntag-2024-hat-95-prozent-der-buergerinnen-und-buerger-erreicht-603092",
+          "evidenz": "belegt",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [4102],
+      "massnahmen": [
+        {
+          "id": 10755,
+          "instrument": 10741,
+          "beschreibung": "Flächendeckend einen Mix aus Sirenen, Warn-Apps, Cell Broadcast und Pegelüberwachung für die Warnung der Bevölkerung nutzen",
+          "ursachen_ids": [4102],
+          "zitat": "Wir Freie Demokraten werden: […] flächendeckend auf einen Mix aus «Sirene»n, Warn-Apps, Cell Broadcast und Pegelüberwachung setzen. So wird jede und jeder schnell gewarnt - ob bei Starkregen, Blackout oder anderen Krisen.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=128",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [4102],
+      "keine_massnahme": {
+        "begruendung": "Erfasste Stellen (S. 49) setzen laut Bewertung ohne Parteinamen an keiner der Ursachen an.",
+        "stand": "2026-10-21",
+        "treffer": 1,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 15,
+      "durchsucht_fuer": [4101, 4102, 4103],
+      "massnahmen": [
+        {
+          "id": 10756,
+          "beschreibung": "Auf- und Ausbau einer einsatzbereiten Infrastruktur an Schutzräumen für die zivile Bevölkerung",
+          "ursachen_ids": [4101],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Erfahrungen aus Israel: Schwerverletzte und Tote waren meist außerhalb von Schutzräumen. Dagegen: Aufbau einsatzbereiter Schutzräume ist teuer, dauert Jahre, Umfang und Finanzierung nicht genannt.",
+          "zitat": "Einsatz- und betriebsbereite Schutzräume stehen nicht ausreichend zur Verfügung. Hier fordern wir daher den Auf- und Ausbau einer einsatzbereiten Infrastruktur für die zivile Bevölkerung.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=90",
+          "beleg_studie_url": "https://themedialine.org/top-stories/israels-shelter-system-tested-as-iran-fires-missiles-with-heavy-warheads",
+          "evidenz": "belegt",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [4102],
+      "massnahmen": [
+        {
+          "id": 10757,
+          "instrument": 10741,
+          "beschreibung": "Ausbau des Sirenennetzes und verlässliche Warnung der Bevölkerung",
+          "ursachen_ids": [4102],
+          "zitat": "Die AfD fordert: […] Den Ausbau des Sirenennetzes und eine verlässliche Warnung der Bevölkerung.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=18",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [4102],
+      "massnahmen": [
+        {
+          "id": 10758,
+          "instrument": 10741,
+          "beschreibung": "Sirenennetz wieder aufbauen",
+          "ursachen_ids": [4102],
+          "zitat": "Das Sirenennetz bauen wir konsequent wieder auf.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=40",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [4102],
+      "keine_massnahme": {
+        "begruendung": "Kapitel VI „Innere Sicherheit“ (S. 113–114, Katastrophenschutz), Energiepolitik (S. 160–161, Blackout-Strategie), Hochwasserschutz (S. 205) und Pandemie-Krisenplan (S. 247) gelesen; nichts zu Sirenen, MoWaS, Warn-Apps, Cell Broadcast oder Warnweg.",
+        "stand": "2026-10-21",
+        "treffer": 0,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 16,
+      "durchsucht_fuer": [4101, 4102, 4103],
+      "keine_massnahme": {
+        "begruendung": "Erfasste Stellen (S. 33) setzen laut Bewertung ohne Parteinamen an keiner der Ursachen an.",
+        "stand": "2026-10-21",
+        "treffer": 1,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 16,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [4102],
+      "keine_massnahme": {
+        "begruendung": "Kapitel Inneres, Abschnitt Bevölkerungsschutz (S. 297–299) gelesen: Katastrophenschutz, Notunterbringung, Notstrom, Läufer*innen für Information; kein Warnweg (Sirenen, MoWaS, Warn-Apps, Cell Broadcast). Stichwortsuche im Gesamttext ohne Treffer.",
+        "stand": "2026-10-21",
+        "treffer": 0,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 16,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [4102],
+      "keine_massnahme": {
+        "begruendung": "Erfasste Stellen (S. 20) setzen laut Bewertung ohne Parteinamen an keiner der Ursachen an.",
+        "stand": "2026-10-21",
+        "treffer": 0,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 16,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [4102],
+      "keine_massnahme": {
+        "begruendung": "Kapitel Katastrophen- und Bevölkerungsschutz (S. 130–133) gelesen, dazu Kapitel Innenpolitik-Einstieg und Stichwortsuche. Nichts zu Sirenen, MoWaS, Warn-Apps, Cell Broadcast oder Lücken im Warnweg; Leuchttürme und Selbstvorsorge (S. 131) betreffen Schutzorte und Vorbereitung, keine Warnung.",
+        "stand": "2026-10-21",
+        "treffer": 0,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 17,
+      "durchsucht_fuer": [4101, 4102, 4103],
+      "keine_massnahme": {
+        "begruendung": "Erfasste Stellen (S. 20, 13) setzen laut Bewertung ohne Parteinamen an keiner der Ursachen an.",
+        "stand": "2026-10-21",
+        "treffer": 3,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 17,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [4102],
+      "keine_massnahme": {
+        "begruendung": "Kapitel Gesundheit (S. 25), Innere Sicherheit (S. 38–41) und Kriegswirtschaft (S. 44) gelesen; nichts zu Sirenen, MoWaS, Warn-Apps oder Cell Broadcast. Warnsystem S. 40 betrifft Betroffene häuslicher Gewalt.",
+        "stand": "2026-10-21",
+        "treffer": 1,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 17,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [4102],
+      "keine_massnahme": {
+        "begruendung": "Kapitel 'Schutz der Bevölkerung vor den Folgen von Kriegen' (S. 7–8) und 'Feuerwehr, Rettungsdienste und Katastrophenschutz' (S. 68) gelesen; nichts zu Sirenen, Warnsystem, Warn-Apps oder Cell Broadcast. Klimaanpassung (S. 86) betrifft Wasservorsorge, keine Warnung.",
+        "stand": "2026-10-21",
+        "treffer": 0,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 17,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [4102],
+      "keine_massnahme": {
+        "begruendung": "Kapitel „Schutz beginnt vor der Katastrophe“ (S. 68–69) und Kapitel „Schutz ist staatliche Kernaufgabe“ (S. 66–67) gelesen; nichts zu Sirenen, MoWaS, Warn-Apps oder Cell Broadcast.",
+        "stand": "2026-10-21",
+        "treffer": 0,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    }
+  ]
 }

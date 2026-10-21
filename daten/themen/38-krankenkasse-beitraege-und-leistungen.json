@@ -41,5 +41,624 @@
   "freigabe": {
     "datum": "2026-10-19",
     "art": "ki"
-  }
+  },
+  "instrumente": [
+    {
+      "id": 10566,
+      "name": "Versicherungsfremde Leistungen (v. a. Bürgergeld-Beiträge) kostendeckend aus Steuermitteln finanzieren (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Laut IGES deckt die Bürgergeld-Pauschale nur rund 39 % der Kosten (Lücke ca. 9-10 Mrd. Euro), Erstattung senkt den Beitragsbedarf spürbar. Dagegen: einmalige Entlastung ohne Wirkung auf das Ausgabenwachstum, belastet den angespannten Bundeshaushalt.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.haufe.de/sozialwesen/gesundheitsausgaben-fuer-buergergeldbeziehende-nicht-gedeckt_244_623712.html",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10567,
+      "name": "Privatversicherte in eine gemeinsame Bürgerversicherung einbeziehen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "IGES/Bertelsmann-Simulation: Einbeziehung aller Privatversicherten senkt den Beitragssatz um 0,2-0,6 Punkte, weil sie im Schnitt mehr verdienen und gesünder sind. Dagegen: einmaliger Effekt, verfassungsrechtliche Fragen zum PKV-Bestand, lange Übergänge.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://idw-online.de/de/news731604",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10568,
+      "name": "Beitragsbemessungsgrenze anheben oder abschaffen und weitere Einkommensarten verbeitragen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Modellrechnungen zeigen Mehreinnahmen und Beitragssatzspielraum durch breitere Einnahmebasis. Dagegen: bremst das Ausgabenwachstum nicht, Erhebung auf Kapitaleinkünfte aufwendig, mögliche Ausweichreaktionen und Belastung von Arbeitskosten umstritten.",
+      "evidenz": "gemischt",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10569,
+      "name": "Beitragsbemessung für geringverdienende Selbstständige an tatsächlichen Einnahmen ausrichten (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Senkt die Beitragslast geringverdienender Selbstständiger und macht Beiträge für sie bezahlbarer. Dagegen: betrifft eine kleine Gruppe, mindert eher die Einnahmen und ändert nichts am allgemeinen Beitragsanstieg.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10570,
+      "name": "Fallpauschalen im Krankenhaus abschaffen und Betriebskosten voll bzw. über Budgets finanzieren (Bund)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 2,
+      "begruendung": "Könnte Fehlanreize zur Mengenausweitung verringern. Dagegen: volle Kostenerstattung bzw. Selbstkostendeckung schwächt Kostenkontrolle und dürfte die Ausgaben der Kassen erhöhen; Erfahrungen vor 1993 zeigten steigende Kosten.",
+      "evidenz": "gemischt",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10571,
+      "name": "Krankenhausstrukturen spezialisieren und Krankenhausreform umsetzen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Konzentration kann Vorhaltekosten und Doppelstrukturen senken und Qualität verbessern. Dagegen: Einsparungen erst langfristig und unsicher, Umbau verursacht zunächst hohe Transformationskosten.",
+      "evidenz": "gemischt",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10572,
+      "name": "Krankenhausinvestitionen und Transformationskosten aus anderen Mitteln statt aus GKV-Beiträgen tragen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Entlastet die Beitragszahler von Kosten, die nicht aus dem laufenden Betrieb stammen, und mindert Quersubventionierung aus Fallerlösen. Dagegen: geringer, kaum untersuchter Effekt auf den Beitragssatz; Finanzierung durch Länder bzw. PKV ungeklärt.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10573,
+      "name": "Ärztliche Honorare im ambulanten Bereich erhöhen und Budgetierung aufheben (Bund)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kann die Versorgung in Praxen stärken. Dagegen: setzt bei den Ausgaben an, erhöht sie aber und treibt damit den Beitragsbedarf; für bezahlbare Beiträge kein Beitrag.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10574,
+      "name": "Primärarztsystem mit hausärztlicher Steuerung einführen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Systematische Übersicht: Gatekeeping senkt Facharzt- und Klinikinanspruchnahme und teils die Ausgaben bei besserer Qualität. Dagegen: Evidenz schwach und meist aus anderen Systemen, geringere Patientenzufriedenheit, Hausarztmangel.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://blogs.imperial.ac.uk/medical-centre/?p=434",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10575,
+      "name": "Leistungen ohne Nutzennachweis abbauen, etwa über Zweitmeinungen und Prüfung des Leistungskatalogs (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Abbau von Über- und Fehlversorgung kann Ausgaben dämpfen. Dagegen: Wirkung deutscher Zweitmeinungsverfahren kaum belegt, Inanspruchnahme sehr gering; Streichungen sind langwierig und bringen meist wenig Volumen.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10576,
+      "name": "Zahnersatz und Sehhilfen vollständig in den GKV-Leistungskatalog aufnehmen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "Senkt hohe Eigenanteile deutlich; Kostenbeteiligung mindert nachweislich auch nötige Inanspruchnahme, vor allem bei Geringverdienenden. Dagegen: Mehrausgaben in Milliardenhöhe erhöhen den Beitragsbedarf, Finanzierung ungeklärt.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://en.wikipedia.org/wiki/RAND_Health_Insurance_Experiment",
+      "entwurf_herkunft": "blind"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "durchsucht_fuer": [3801, 3802, 3803, 3804],
+      "massnahmen": [
+        {
+          "id": 10577,
+          "beschreibung": "Mehr Effizienz beim Einsatz der Beitragsgelder in der gesetzlichen Krankenversicherung, mehr Wettbewerb der Krankenkassen.",
+          "ursachen_ids": [3801],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Mehr Effizienz und Kassenwettbewerb können Ausgaben dämpfen. Dagegen: ohne konkrete Instrumente unbestimmt, Wirkung des Kassenwettbewerbs auf Leistungsausgaben gering.",
+          "zitat": "[…] wir mehr Effizienz beim Einsatz von Beitragsgeldern an und stärken den Wettbewerb der Krankenkassen.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=70",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "durchsucht_fuer": [3801, 3802, 3803, 3804],
+      "massnahmen": [
+        {
+          "id": 10578,
+          "instrument": 10566,
+          "beschreibung": "Versicherungsfremde Aufgaben im Gesundheitswesen aus Steuermitteln finanzieren",
+          "ursachen_ids": [3802],
+          "zitat": "Versicherungsfremde Aufgaben im Gesundheitswesen wollen wir zukünftig ausreichend aus Steuermitteln finanzieren.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=29",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10579,
+          "instrument": 10567,
+          "beschreibung": "Krankenkassen und private Versicherungen in einem solidarischen System zusammenführen",
+          "ursachen_ids": [3801],
+          "zitat": "Krankenkassen und private Krankenversicherungen bilden so ein System einer solidarischen Bürgerversicherung aus, an dem alle beteiligt sind",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=29",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10580,
+          "beschreibung": "Finanzausgleich zwischen Krankenkassen gerechter gestalten und private Versicherungen einbeziehen",
+          "ursachen_ids": [3801],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Einbeziehung der PKV in den Risikostrukturausgleich brächte der GKV zusätzliche Mittel. Dagegen: verfassungsrechtlich umstritten, und ein gerechterer Ausgleich zwischen Kassen verteilt Geld nur um.",
+          "zitat": "Der Finanzausgleich zwischen den Krankenkassen soll gerechter ausgestaltet werden, und auch die privaten Versicherungen sollen zum Risikostrukturausgleich beitragen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=29",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10581,
+          "beschreibung": "Beiträge stärker an der wirtschaftlichen Leistungsfähigkeit der Versicherten ausrichten",
+          "ursachen_ids": [3801],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Kann Beiträge für Geringverdienende bezahlbarer machen. Dagegen: ohne Angabe des Wegs unbestimmt, ändert am Ausgabenwachstum nichts.",
+          "zitat": "Die Beiträge der Versicherten sollen sich noch stärker als jetzt an ihrer wirtschaftlichen Leistungsfähigkeit orientieren.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=29",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10582,
+          "instrument": 10573,
+          "beschreibung": "Budgets für Hausärztinnen und Hausärzte abschaffen",
+          "ursachen_ids": [3801],
+          "zitat": "Bei den ärztlichen Berufen wollen wir den Schwerpunkt auf die Haus- und Kinderärztinnen und -ärzte legen und den Ausbau der Ausbildungs- und Weiterbildungskapazitäten vorantreiben sowie die Budgets für Hausärztinnen und -ärzte abschaffen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=32",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10583,
+          "beschreibung": "Begrenzung finanzieller Belastungen der Versicherten als Teil der Sicherheit im Gesundheitswesen",
+          "ursachen_ids": [3804],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Zielt auf geringere Zuzahlungen und Eigenanteile. Dagegen: weder Instrument noch Umfang genannt, Wirkung daher kaum abschätzbar.",
+          "zitat": "Mit Maßnahmen wie einer Termingarantie, der Begrenzung finanzieller Belastungen und solidarischen Finanzierungsmodellen sorgen wir für mehr Sicherheit und Verlässlichkeit im Gesundheitswesen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=28",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "durchsucht_fuer": [3801, 3802, 3803, 3804],
+      "massnahmen": [
+        {
+          "id": 10584,
+          "instrument": 10568,
+          "beschreibung": "Beitragsbemessung reformieren und auch Kapitaleinnahmen zur Finanzierung heranziehen",
+          "ursachen_ids": [3801],
+          "zitat": "Die Beitragsbemessung werden wir reformieren und beispielsweise auch Kapitaleinnahmen zur Finanzierung unseres Gesundheits- und Pflegesystems heranziehen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=94",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10585,
+          "instrument": 10571,
+          "beschreibung": "Umsetzung der Krankenhausreform vorantreiben, gemeinsam mit den Ländern",
+          "ursachen_ids": [3801],
+          "zitat": "Die Umsetzung der Krankenhausreform werden wir weiter vorantreiben und gemeinsam mit den Ländern umsetzen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=89",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10586,
+          "instrument": 10575,
+          "beschreibung": "Fehl- und Überversorgung abbauen, unter anderem durch mehr Zweitmeinungsverfahren",
+          "ursachen_ids": [3801],
+          "zitat": "Und wir wollen wissenschaftliche Maßnahmen ergreifen, um Fehl- und Überversorgung abzubauen, zum Beispiel durch den Ausbau von Zweitmeinungsverfahren.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=88",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10587,
+          "beschreibung": "Abrechnungsbetrug und Fehlverhalten im Gesundheitswesen wirkungsvoller begrenzen",
+          "ursachen_ids": [3801],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Bessere Betrugsbekämpfung holt Geld zurück und ist rechtlich einfach. Dagegen: aufgedeckte Schäden machen nur einen kleinen Teil der Ausgaben aus, Wirkung auf den Beitragssatz gering.",
+          "zitat": "Abrechnungsbetrug und Fehlverhalten im Gesundheitswesen werden wir zusammen mit den Ländern wirkungsvoller begrenzen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=88",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10588,
+          "instrument": 10574,
+          "beschreibung": "Hausärztlich-zentrierte Primärversorgung stärken, für bessere Qualität und Effizienz",
+          "ursachen_ids": [3801],
+          "zitat": "Deshalb werden wir die hausärztlich-zentrierte Primärversorgung stärken, um eine bessere Behandlungsqualität und Effizienz zu erreichen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=88",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10589,
+          "instrument": 10569,
+          "beschreibung": "Mindestbemessungsgrenze in der Krankenversicherung für Soloselbstständige reformieren",
+          "ursachen_ids": [3801],
+          "zitat": "Um freiwillig versicherte, geringverdienende oder in Teilzeit beschäftigte Soloselbstständige besser abzusichern, werden wir die Mindestbemessungsgrenze in der gesetzlichen Krankenversicherung reformieren.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=94",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10590,
+          "instrument": 10572,
+          "beschreibung": "Private Versicherungen an den Transformationskosten der Krankenhäuser beteiligen",
+          "ursachen_ids": [3801],
+          "zitat": "Wir werden weiter darauf achten, dass sich auch die privaten Versicherungen an den Transformationskosten beteiligen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=89",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10591,
+          "instrument": 10566,
+          "beschreibung": "Versicherungsfremde Leistungen über den Staat finanzieren, etwa Rentenbeiträge pflegender Angehöriger und Beiträge für Bürgergeldbeziehende",
+          "ursachen_ids": [3802],
+          "zitat": "In den vergangenen Jahren wurden den Versicherungen jedoch viele Kosten zugeschoben, die aus Steuermitteln hätten finanziert werden sollen. Diesen Trend wollen wir umkehren und damit die Versicherten und die Arbeitgeber von versicherungsfremden Leistungen entlasten. Dazu gehört, dass wir die Finanzierung der Rentenbeiträge von pflegenden Angehörigen oder die Beiträge für Empfänger*innen von Bürgergeld angemessener über den Staat finanzieren.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=93",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "durchsucht_fuer": [3801, 3802, 3803, 3804],
+      "massnahmen": [
+        {
+          "id": 10592,
+          "beschreibung": "Ausgabenwachstum der GKV soll nicht stärker steigen als die Einnahmen.",
+          "ursachen_ids": [3801],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Bindung der Ausgaben an die Einnahmen ist Kernempfehlung der Finanzkommission und setzt direkt am Ausgabenwachstum an. Dagegen: frühere Budgetierungen wirkten nur zeitweise und können Versorgungsengpässe auslösen.",
+          "zitat": "Um die ungebremste Leistungsausgabenentwicklung in der GKV in den Griff zu bekommen, sollen in Zukunft die Ausgaben nicht stärker wachsen als die Einnahmen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=33",
+          "evidenz": "gemischt",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10593,
+          "instrument": 10575,
+          "beschreibung": "Leistungsausweitungen der letzten zehn Jahre prüfen; nicht bewährte Leistungen aus dem Leistungskatalog streichen.",
+          "ursachen_ids": [3801],
+          "zitat": "Zusätzlich werden wir alle Leistungsausweitungen der letzten zehn Jahre einem Evidenz-, Effizienz- und Wirtschaftlichkeitscheck unterziehen. Leistungen, die sich nicht bewährt haben, sollen aus dem GKV-Leistungskatalog gestrichen werden.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=33",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10594,
+          "instrument": 10573,
+          "beschreibung": "Ungekürzte, leistungsgerechte Vergütung aller Gesundheitsberufe in der ambulanten Versorgung.",
+          "ursachen_ids": [3801],
+          "zitat": "Zu einer Stärkung der flächendeckenden ambulanten Versorgung gehört für uns auch, dass die ungekürzte Vergütung aller Gesundheitsberufe leistungsgerecht erfolgen muss.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=33",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10595,
+          "instrument": 10571,
+          "beschreibung": "Krankenhausversorgung spezialisieren und die Kostenentwicklung bremsen.",
+          "ursachen_ids": [3801],
+          "zitat": "In der Krankenhausversorgung wollen wir spezialisierte und damit bessere Angebote vorhalten, die Kostenentwicklung bremsen und zugleich Ärzte und Pflegekräfte entlasten.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=33",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10596,
+          "instrument": 10574,
+          "beschreibung": "Primärarztsystem in der ambulanten Versorgung: Haus- und Kinderärzte als erste Anlaufstelle.",
+          "ursachen_ids": [3801],
+          "zitat": "In der ambulanten Versorgung setzen wir uns für ein Primärarztsystem ein: Haus- und Kinderärzte sollten die erste Anlaufstelle für Patientinnen und Patienten sein.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=33",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10597,
+          "beschreibung": "Besondere Vergütung für Arzneimittel mit Therapieerfolgen.",
+          "ursachen_ids": [3801],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Erfolgsabhängige Vergütung kann Zahlungen für unwirksame Arzneimittel vermeiden. Dagegen: Messung aufwendig, Einsparungen in Studien uneinheitlich, als Zusatzvergütung eher ausgabensteigernd.",
+          "zitat": "Therapieerfolge wollen wir besonders vergüten.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=33",
+          "evidenz": "gemischt",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10598,
+          "beschreibung": "Krankenkassen sollen für vorsorgende Versicherte einen reduzierten Zusatzbeitrag einführen können.",
+          "ursachen_ids": [3801],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Anreize zur Vorsorge können langfristig Krankheitskosten senken. Dagegen: Einsparungen durch Bonusmodelle sind kaum belegt, Mitnahmeeffekte bei ohnehin Gesunden mindern die Einnahmen.",
+          "zitat": "Wer Vorsorge betreibt, verursacht dadurch weniger Ausgaben für seine Krankenkasse. Deshalb wollen wir den Krankenkassen ermöglichen, für diese Versicherten einen reduzierten Zusatzbeitrag einzuführen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=34",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10599,
+          "instrument": 10569,
+          "beschreibung": "Beiträge für Selbstständige in der GKV an den tatsächlichen Einnahmen orientieren.",
+          "ursachen_ids": [3801],
+          "zitat": "Ungleichbehandlungen wollen wir deshalb abbauen und zum Beispiel die Beiträge für Selbstständige zur gesetzlichen Krankenversicherung an den tatsächlichen Einnahmen orientieren.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=19",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "durchsucht_fuer": [3801, 3802, 3803, 3804],
+      "massnahmen": [
+        {
+          "id": 10600,
+          "instrument": 10570,
+          "beschreibung": "Fallpauschalen im Krankenhaus abschaffen, mittelfristig individuelle Budgetvereinbarungen",
+          "ursachen_ids": [3801],
+          "zitat": "Notwendig ist die vollständige Abschaffung der Fallpauschalen und mittelfristig die Rückkehr zu individuellen Budgetvereinbarungen",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=28",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10601,
+          "instrument": 10573,
+          "beschreibung": "Ende der Behandlung ohne Vergütungsanspruch in der ambulanten ärztlichen Versorgung",
+          "ursachen_ids": [3801],
+          "zitat": "Die Rationierung ärztlicher Leistungen durch den Zwang, Behandlungen ohne Vergütungsanspruch zu erbringen, muss beendet werden.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=28",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10602,
+          "beschreibung": "Gestaffelte Bonus- und Rückvergütungssysteme gegen Bagatellbehandlungen",
+          "ursachen_ids": [3801],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Finanzielle Anreize senken nachweislich die Inanspruchnahme (RAND-Experiment). Dagegen: es entfällt auch nötige Versorgung, besonders bei Geringverdienenden; die Einsparung für die Kassen ist begrenzt.",
+          "zitat": "Um einer ungesteuerten Leistungsausweitung durch Bagatellbehandlungen zu begegnen, sind gestaffelte Bonus- bzw. Rückvergütungssysteme sinnvoll.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=28",
+          "evidenz": "gemischt",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10603,
+          "instrument": 10566,
+          "beschreibung": "Bürgergeld-Mitversicherung in der Krankenversicherung vollständig aus dem Bundeshaushalt finanzieren",
+          "ursachen_ids": [3802],
+          "zitat": "Das werden wir verhindern, indem die beitragsfreie Mitversicherung der Bürgergeldempfänger, die heute zu zwei Dritteln vom Beitragszahler finanziert wird, zukünftig vollständig aus dem Bundeshaushalt aufgebracht wird.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=22",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "durchsucht_fuer": [3801, 3802, 3803, 3804],
+      "massnahmen": [
+        {
+          "id": 10604,
+          "instrument": 10568,
+          "beschreibung": "Beitragsbemessungsgrenze in der Krankenversicherung abschaffen; Beiträge auf alle Einkommen erheben, auch auf Kapitalerträge.",
+          "ursachen_ids": [3801],
+          "zitat": "Wir setzen uns für eine solidarische Gesundheits- und Pflegeversicherung ein. Alle zahlen ein, Beiträge werden auf alle Einkommen erhoben, alle werden gut versorgt. Die Beitragsbemessungsgrenze fällt weg. Auch für Einkommen aus Kapitalerträgen und andere Einkommensarten müssen Beiträge gezahlt werden.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=18",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10605,
+          "beschreibung": "Gesetzliche Krankenversicherung soll alle medizinisch sinnvollen Leistungen abdecken, etwa Zahnersatz und Brillen; nutzlose Leistungen sollen gestrichen werden.",
+          "ursachen_ids": [3801, 3804],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Übernahme von Zahnersatz und Brillen senkt Eigenanteile deutlich, Streichung nutzloser Leistungen dämpft Ausgaben. Dagegen: Mehrausgaben übersteigen absehbar die Einsparungen, Finanzierung ungeklärt.",
+          "zitat": "Unsere solidarische Gesundheitsversicherung soll evidenzbasiert alle medizinisch sinnvollen Leistungen wie Zahnersatz, Brillen und Ibuprofen abdecken – erwiesenermaßen nutzlose Leistungen können wir uns hingegen sparen.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=18",
+          "evidenz": "gemischt",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10606,
+          "instrument": 10570,
+          "beschreibung": "Betriebskosten der Krankenhäuser vollständig von den Krankenkassen finanzieren; Fallpauschalen abschaffen.",
+          "ursachen_ids": [3801],
+          "zitat": "Wir wollen, dass die notwendigen Betriebskosten der Krankenhäuser von den Krankenkassen vollständig finanziert werden. Die Fallpauschalen müssen vollständig abgeschafft werden.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=18",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10607,
+          "beschreibung": "Arzneimittelpreise in der EU einheitlich festlegen, um den Preisanstieg bei Arzneimitteln zu begrenzen.",
+          "ursachen_ids": [3801],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Gemeinsame Preisfestsetzung könnte die Verhandlungsmacht gegenüber Herstellern stärken. Dagegen: hängt von EU-Entscheidungen ab, und einheitliche Preise könnten für Deutschland auch höher ausfallen als heute.",
+          "zitat": "Preise müssen in der EU einheitlich festgelegt werden.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=19",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10608,
+          "instrument": 10572,
+          "beschreibung": "Bund und Länder sollen nachhaltig in die Krankenhäuser investieren.",
+          "ursachen_ids": [3801],
+          "zitat": "Bund und Länder müssen nachhaltig in die Krankenhäuser investieren! Die Vermögensteuer kann ihnen dabei helfen.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=18",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "durchsucht_fuer": [3801, 3802, 3803, 3804],
+      "massnahmen": [
+        {
+          "id": 10609,
+          "instrument": 10567,
+          "beschreibung": "Bürgerversicherung mit Einzahlung nach Einkommen einführen und Zusatzbeiträge abschaffen",
+          "ursachen_ids": [3801],
+          "zitat": "Wir fordern die Abschaffung der Zusatzbeiträge und die Einführung einer Bürgerversicherung, in die alle Bürger nach ihrem Einkommen einzahlen und grundsätzlich gleiche Leistungen auf dem Niveau der höchsten medizinischen Standards erhalten.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=26",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10610,
+          "beschreibung": "Grundfreibetrag auf Sozialabgaben, gegenfinanziert durch höhere Beitragsbemessungsgrenzen",
+          "ursachen_ids": [3801],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Freibetrag entlastet Geringverdienende, Anhebung der Bemessungsgrenze verbreitert die Einnahmebasis. Dagegen: als Gegenfinanzierung angelegt, also für die Kasse etwa aufkommensneutral; Ausgabenwachstum bleibt.",
+          "zitat": "Wir brauchen einen Grundfreibetrag auf Sozialabgaben bei gleichbleibenden Ansprüchen, gegenfinanziert durch eine Anhebung der Beitragsbemessungsgrenzen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=17",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10611,
+          "instrument": 10573,
+          "beschreibung": "Hausärzte als Ansprechpartner höher vergüten",
+          "ursachen_ids": [3801],
+          "zitat": "Besonders Hausärzte als Ansprechpartner der Patienten müssen höher vergütet werden.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=27",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10612,
+          "beschreibung": "Abschaffung der Trennung der Versorgungssektoren (ambulant, Pflege, stationär)",
+          "ursachen_ids": [3801],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Bessere Verzahnung der Sektoren kann Doppeluntersuchungen und unnötige Klinikaufenthalte vermeiden. Dagegen: völlige Abschaffung der Sektorentrennung ist unbestimmt, berührt Länderkompetenzen und Einsparungen sind kaum belegt.",
+          "zitat": "Wir fordern die Abschaffung der kostspieligen Trennung der verschiedenen Versorgungssektoren wie z. B. der ambulanten, Pflege- und stationären Versorgung.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=27",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10613,
+          "instrument": 10576,
+          "beschreibung": "Zahnersatz und Sehhilfen wieder vollständig in den Leistungskatalog der gesetzlichen Krankenversicherung aufnehmen",
+          "ursachen_ids": [3804],
+          "zitat": "Wir wollen notwendigen Zahnersatz und Sehhilfen vollständig in den Leistungskatalog der gesetzlichen Gesundheitsabsicherung zurückholen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=27",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10614,
+          "instrument": 10566,
+          "beschreibung": "Gesetzliche Krankenkassen finanzieren versicherungsfremde Leistungen aus Steuermitteln",
+          "ursachen_ids": [3802],
+          "zitat": "Wir fordern die Steuerfinanzierung von versicherungsfremden Leistungen (z. B. Beiträge von Bürgergeld-Empfängern).",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=26",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    }
+  ]
 }

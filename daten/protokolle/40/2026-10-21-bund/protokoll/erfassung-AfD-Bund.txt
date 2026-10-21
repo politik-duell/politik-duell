@@ -1,0 +1,106 @@
+{
+  "partei_id": 15,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Zulagen für Überstunden und Sondereinsätze bei Polizei und Rettungskräften, bundeseinheitliche Vergütung",
+      "ursachen_ids": [
+        4001
+      ],
+      "buendel": "Mehrarbeit vergüten oder ausgleichen",
+      "zitat": "Bundeseinheitliche Besoldung und angemessene Vergütungen mit Gefährdungszulagen sowie weitere Zulagen für Überstunden und Sondereinsätze für Polizei und Rettungskräfte.",
+      "seite": 120
+    },
+    {
+      "beschreibung": "Förderprogramme sollen ermöglichen, in der Kleinkindphase ohne finanzielle Einbußen zu Hause zu bleiben oder Teilzeit zu arbeiten",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4002
+      ],
+      "neue_buendel": "Teilzeit in der Familienphase ohne Einbußen fördern",
+      "zitat": "Die genannten Aufgaben beanspruchen Zeit, weshalb idealerweise der Vater oder die Mutter zumindest in der Kleinkindphase ohne finanzielle Einbußen die Möglichkeit haben sollten, zu Hause zu bleiben oder nur Teilzeit zu arbeiten, wenn sie dies wünschen. Die Familienpolitik der AfD enthält entsprechende Förderprogramme",
+      "seite": 146
+    },
+    {
+      "beschreibung": "Betreuungsgehalt bis zum dritten Geburtstag als Lohnersatz für Eigenbetreuung",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4003
+      ],
+      "buendel": "Elternzeit und Familienzeit",
+      "zitat": "Mit einem Betreuungsgehalt bis zum 3. Geburtstag sollen Eltern echte Wahlfreiheit zwischen Fremd- und Selbstbetreuung",
+      "seite": 148
+    },
+    {
+      "beschreibung": "Arbeitgeber sollen Telearbeit und flexible Arbeitszeiten für Eltern ermöglichen (Appell)",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4003
+      ],
+      "buendel": "Mobiles Arbeiten",
+      "zitat": "Arbeitgeber sollen durch Telearbeit, flexible Arbeitszeiten und Betriebskindergärten ein Arbeitsumfeld schaffen",
+      "seite": 148
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 4001,
+      "seiten": [
+        21,
+        112,
+        113,
+        145,
+        148
+      ],
+      "grund": "Keine Aussage zu Erfassung der Arbeitszeit, Höchst- und Ruhezeiten, Ausgleich oder Vergütung der Mehrarbeit in der Wirtschaft. Überstundenzulage für Polizei (S. 120) erfasst."
+    },
+    {
+      "ursache": 4002,
+      "seiten": [
+        21,
+        112,
+        113
+      ],
+      "grund": "Kein Anspruch auf Teilzeit, keine Stundenaufstockung und keine Arbeitszeitkonten. S. 21 ist Zielsatz (weniger Teilzeitarbeit); S. 112–113 beschreibt, dass Teilzeitkräfte aufstocken könnten, ohne Zusage."
+    },
+    {
+      "ursache": 4003,
+      "seiten": [
+        29,
+        145,
+        146,
+        148
+      ],
+      "grund": "Pflegezeit, Gleitzeit, Kernarbeitszeit und Elternzeit im Text nicht als Maßnahme. Häusliche Pflege (S. 29) betrifft Pflegegeld und Entlastung (T10), nicht Freistellung."
+    }
+  ],
+  "neue_buendel": [
+    {
+      "ursache": 4002,
+      "name": "Teilzeit in der Familienphase ohne Einbußen fördern",
+      "seite": 146
+    }
+  ]
+}
+--- Protokoll ---
+
+Gelesene Seiten: Inhaltsverzeichnis (S. 1–8); Fundstellen des Auftrags sind leer. Gelesen: S. 21 (Rente, Bausteine), S. 112–113 (Pflegefachkräfte, Fachkräftemangel), S. 120 (Polizei, Zulagen), S. 145 (Familie, Vereinbarkeit), S. 148 (Telearbeit, Betreuungsgehalt). Zusätzlich über den gesamten Text geprüft (Arbeitszeit, Teilzeit, Überstunden, Vollzeit, Homeoffice, Telearbeit, Gleitzeit, Pflegezeit, Elternzeit, Lebensarbeitszeit, Arbeitnehmer, Erwerbstätigkeit). Die Treffer sind oben ausgewertet.
+
+Richtungen ohne Maßnahme:
+- 4001 Erfassung der Arbeitszeit, Höchst- und Ruhezeiten, Ausgleich über Zeitkonten: nicht gefunden.
+- 4002 Anspruch auf Teilzeit, Aufstockung, Vier-Tage-Woche, Arbeitszeitkonto: nicht gefunden.
+- 4003 Pflegezeit als Freistellung, Gleitzeit und Kernarbeitszeit: nicht gefunden.
+
+Gleichartige Stellen: S. 21: Erziehungsgeld für Eigenbetreuung und Hilfen beim Wiedereinstieg (Thema 28) liegen im Rentenkapitel, nicht im Arbeitszeitbezug; nicht erfasst.
+
+Nicht erfasst:
+- S. 18–19: Anreize für freiwillige Verlängerung der Lebensarbeitszeit (Rente, Lebensarbeitszeit, kein Wochenumfang).
+- S. 21: Ziel „früherer Berufseintritt und weniger Teilzeitarbeit“ (Zielsatz).
+- S. 21: Einkommensteuer senken und Bürgergeld unattraktiver machen (Erwerbsanreiz, nicht Umfang).
+- S. 23–27: Bürgergeld-Vermittlung, gemeinnützige Arbeit (Arbeitsmarkt, nicht Arbeitszeit der Beschäftigten).
+- S. 112–113: Pflegekräfte zurück in den Beruf holen, zwei Drittel der Teilzeitkräfte könnten aufstocken: Lage und Ziel, keine Zusage.
+- S. 29: Häusliche Pflege: Pflegegeld, Entlastung (T10).
+- S. 146: Ziel, dass Eltern in der Kleinkindphase Zeit haben, ist erfasst als offene Zuordnung (Förderprogramme). S. 145: Familienbild, Lagebeschreibung.
+
+Seiten ohne Text: keine im Teil betroffen.
+Stand: Titelseite und Vorwort wie im Auftrag (Parteitag Januar 2025).

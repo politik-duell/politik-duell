@@ -1,0 +1,48 @@
+{
+  "partei_id": 16,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Katastrophenschutz massiv aufwerten und investieren, um sich auf Hochwasser, Sturzfluten, Hitze und Dürre vorzubereiten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [4101],
+      "zitat": "Wir müssen uns jetzt an den Klimawandel anpassen, den Katastrophenschutz massiv aufwerten und investieren, um uns auf Hochwasser, Sturzfluten, Hitzewellen und Dürreperioden vorzubereiten (Kapitel 12).",
+      "seite": 33
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 4102,
+      "seiten": [7, 33, 44],
+      "grund": "Kapitel 1 (S. 7), Kapitel 8 (S. 32–33) und Kapitel 12 (S. 44–45) gelesen. Keine Sirenen, kein MoWaS, keine Warn-Apps und kein Cell Broadcast. „Frühwarnsystem“ (S. 7) meint die Preisaufsicht für die Wirtschaft, keine Warnung der Bevölkerung."
+    },
+    {
+      "ursache": 4103,
+      "seiten": [7, 33, 44],
+      "grund": "Kapitel 1, 8 und 12 gelesen. Keine Notvorräte an Wasser, Lebensmitteln oder Medikamenten, kein Selbsthilfe- oder Selbstschutzwissen, keine staatliche Notreserve. Nur allgemeiner Katastrophenschutz (S. 33, 44) ohne Vorratsbezug, daher als Grenzfall bei 4101 geführt."
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 4101, "name": "Katastrophenschutz ausbauen (Hochwasser, Hitze)", "seite": 33 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "Katastrophenschutz", "ursache": 4101, "richtung": "aufwerten und investieren" }
+  ]
+}
+
+Protokoll (Linke, Bund, Thema 41)
+
+Gelesen: Inhaltsverzeichnis (S. 1–6); Kapitel 1 (S. 7, Fundstelle Preisaufsicht als „Frühwarnsystem“); Kapitel 6 Außen- und Friedenspolitik (S. 21–25, zur Prüfung des Kriegsfalls auf Zivilschutz, Schutzräume, Warnung und Vorräte); Kapitel 8 Klima (S. 32–33, Fundstelle zu Katastrophenschutz); Kapitel 12 Planbares Leben und starke Kommunen (S. 44–45, Klimaanpassung und Katastrophenschutz). Seiten 1, 59, 60 ohne Text, nicht betroffen.
+
+Nicht erfasst:
+- S. 7: „Frühwarnsystem“ bei der Preisaufsicht (Wirtschaft, nicht Bevölkerungswarnung).
+- S. 33 und S. 44: Katastrophenschutz, Klimaanpassung, Schwammstädte gegen Flutkatastrophen (S. 45) und Begrünung gegen Hitze: Hochwasser- und Klimaanpassung gehören nach Leitfaden zu T18. Nur die allgemeine Zusage zum Katastrophenschutz (S. 33) ist als Grenzfall bei 4101 erfasst; die Zusagen auf S. 44 („Klimaanpassung und Katastrophenschutz müssen als selbstverständliche Aufgaben der öffentlichen Versorgung definiert werden“) sind gleichartig und nicht gesondert erfasst.
+- S. 44: Infrastrukturgarantie, Kommunalfinanzen, Daseinsvorsorge: keine Schutzorte, Warnung oder Vorräte.
+- S. 21–25 (Kapitel 6): Krieg und Abrüstung, Außenpolitik, Waffenlieferungen, Sanktionen, Atomwaffen: keine Zivilschutz-Zusage, kein Schutzraum, keine Warnung, keine Vorräte.
+- S. 11: Einmalige Vermögensabgabe zur Bewältigung von Krisen und Pandemien: Finanzierung, keine Ursache 4101–4103.
+- S. 47: Kriegsfall im Abschnitt zu queeren Menschen (Absurde Regelungen, Kriegsfall): kein Bezug zur Schutzinfrastruktur.
+- S. 17 und S. 19: Notfallversorgung im Gesundheitswesen: keine Ursache 4101–4103.
+
+Richtungen ohne Maßnahme: 4101 „Schutzräume reaktivieren oder neu bauen“, „Schutzorte im Bestand nutzen (Keller, Gebäude)“, „Zivilschutzbindung aufgeben“: im Text nicht gefunden (Stichwörter Schutzraum, Bunker, Zufluchtsort, Schutzbau, Zivilschutz ohne Treffer). 4102 „Sirenen ausbauen und an das Warnsystem anbinden“, „Warn-Apps und Cell Broadcast statt Sirenen“: nicht im Text (siehe nicht_erfasst). 4103 „Vorräte und Information fördern“, „Eigenverantwortung betonen“, „Staatliche Notreserven“: nicht im Text (siehe nicht_erfasst).
+
+Hinweis: Der Text nennt keinen anderen Stand als der Auftrag (2025-01-18). Die Zusage auf S. 33 hängt an der Grenze zu T18 (Hochwasser) und ist deshalb nur als ursachen_offen geführt.

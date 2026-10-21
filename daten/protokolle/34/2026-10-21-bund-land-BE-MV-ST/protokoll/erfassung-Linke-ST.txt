@@ -1,0 +1,44 @@
+{
+  "partei_id": 16,
+  "land": "ST",
+  "massnahmen": [
+    { "beschreibung": "Sicherheitsgesetze regelmäßig evaluieren und abschaffen, wenn sie wirkungslos oder grundrechtswidrig sind.", "ursachen_ids": [], "ursachen_offen": [3401], "buendel": "Kontrollen begrenzen und nachvollziehbar machen", "zitat": "Wir evaluieren regelmäßig alle Sicherheitsgesetze und schaffen sie ab, wenn sie sich als wirkungslos oder grundrechtswidrig erweisen.", "seite": 128 },
+    { "beschreibung": "Regelmäßige Fortbildungen der Polizei zu Menschenrechten und interkultureller Kompetenz.", "ursachen_ids": [3402], "buendel": "Kommunikation und Fortbildung der Polizei", "zitat": "Besondere Aufmerksamkeit legen wir auf demokratische Professionalität durch regelmäßige Fortbildungen zu Menschenrechten und interkultureller Kompetenz, um eine demokratische Alltagskultur in der Polizei zu stärken.", "seite": 128 },
+    { "beschreibung": "Bürgerforen zur Polizeiarbeit vor Ort, Anhörungen und Rechenschaftsberichte zu Sicherheitspolitik.", "ursachen_ids": [], "ursachen_offen": [3402], "zitat": "Wir schaffen echte Bürger:innenbeteiligung bei sicherheitspolitischen Fragen: Öffentliche Anhörungen zu neuen Sicherheitsgesetzen, Bürger:innenforen zur Polizeiarbeit vor Ort und transparente Rechenschaftsberichte aller Sicherheitsbehörden ermöglichen es, dass Bürger:innen mitgestalten können.", "seite": 128 },
+    { "beschreibung": "Eine unabhängige Polizeibeschwerdestelle mit eigenen Ermittlungsbefugnissen einrichten.", "ursachen_ids": [3403], "buendel": "Unabhängige Beschwerde- und Kontrollstellen", "zitat": "Ihre Rechte werden gestärkt durch eine unabhängige Polizeibeschwerdestelle mit eigenen Ermittlungsbefugnissen und ausreichender Ausstattung, damit Beschwerden nicht zu den Akten gelegt werden.", "seite": 128 },
+    { "beschreibung": "Individuelle Kennzeichnungspflicht für Polizeikräfte.", "ursachen_ids": [3403], "zitat": "Eine demokratische Polizei hat nichts zu verbergen. Die individuelle Kennzeichnungspflicht […] schützen Bürger:innen ebenso wie Polizeikräfte vor falschen Anschuldigungen.", "seite": 129 },
+    { "beschreibung": "Automatischer Einsatz von Bodycams bei Schusswaffengebrauch und Taser-Einsatz.", "ursachen_ids": [3403], "buendel": "Dokumentation und faire Verfahren", "zitat": "Die individuelle Kennzeichnungspflicht und der automatische Einsatz von Bodycams beim Schusswaffengebrauch oder beim Einsatz von Tasern schützen Bürger:innen ebenso wie Polizeikräfte vor falschen Anschuldigungen.", "seite": 129 }
+  ],
+  "neue_buendel": [
+    { "ursache": 3402, "name": "Bürgerforen zur Polizeiarbeit", "seite": 128 },
+    { "ursache": 3403, "name": "Kennzeichnungspflicht für Polizeikräfte", "seite": 129 }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis (S. 1–8), Kapitel 17 „Innenpolitik“ (S. 127–134), Kapitel 18 „Justiz“ (S. 135–141, nur Staatsanwaltschaft, Strafrecht und Opferschutz, ohne Fundstelle zu Polizeiermittlungen), Demokratiekapitel S. 14–16 (Bürgerbeauftragter), Kinderkapitel S. 60–61 (Beschwerdewege für Kinder, nicht polizeibezogen), Fundstellen S. 98, 129, und Stichwortsuche nach Polizei-, Kontroll-, Beschwerde- und Kennzeichnungsbegriffen im ganzen Text.
+
+Erfasst:
+- S. 128: Evaluation und Abschaffung von Sicherheitsgesetzen (Grenzfall, bedingt und allgemein; Ursache offen 3401, Bündel „Kontrollen begrenzen und nachvollziehbar machen“).
+- S. 128: Fortbildungen zu Menschenrechten und interkultureller Kompetenz (3402, Bündel „Kommunikation und Fortbildung der Polizei“).
+- S. 128: Bürgerforen zur Polizeiarbeit (Grenzfall, Beteiligung; Ursache offen 3402, eigenes Instrument „Bürgerforen zur Polizeiarbeit“).
+- S. 128: unabhängige Polizeibeschwerdestelle mit Ermittlungsbefugnissen (3403, Bündel „Unabhängige Beschwerde- und Kontrollstellen“).
+- S. 129: individuelle Kennzeichnungspflicht (3403, eigenes Instrument „Kennzeichnungspflicht für Polizeikräfte“; das Auftrags-Treffer „kennzeichnungspflicht“ hängt am Bündel für Stellen, der Hebel ist aber eine Pflicht).
+- S. 129: automatischer Bodycam-Einsatz bei Schusswaffe und Taser (3403, Bündel „Dokumentation und faire Verfahren“). Zitat 5 und 6 teilen einen Satz; beide Instrumente sind getrennt erfasst.
+
+Nicht erfasst (Seite, Grund):
+- S. 128: „Unsere Polizist:innen sollen Ansprechpartner:innen sein … statt nur zu kontrollieren“ – Leitbild, kein Handlungsschritt.
+- S. 128: „Wir stärken die Präventionspolizei mit spezialisierten Beamt:innen …“ – Personal, nach Leitfaden R2 zu Sicherheit.
+- S. 128: 500 neue Polizeistellen bis 2030; Arbeitszeit 38 Std. – R2 (Sicherheit) bzw. Arbeitsbedingung; siehe hebel_nicht_gefunden.
+- S. 128: „Informationsfreiheit … Polizeistatistiken und Lagebilder werden veröffentlicht“ und „Rechte der Parlamente bei der Kontrolle der Sicherheitsbehörden“ – Transparenz und parlamentarische Kontrolle, keine unabhängige Stelle; nicht als eigenes Instrument erfasst, da nicht unter R1 3403 genannt (Grenzfall, bei Bedarf als Ursache offen 3403 nachtragen).
+- S. 129: „Gesichtserkennung zur Massenüberwachung lehnen wir ab“ und „Palantir … lehnen wir konsequent ab“ – Ablehnung von Überwachungsinstrumenten, keine Kontrollbefugnis; gleichartig zur Evaluation (Befugnisbegrenzung), daher nur hier genannt. Grenzfall für 3401.
+- S. 129: „unabhängiges Meldesystem“ für rechtsextreme Umtriebe in Sicherheitsbehörden – gleicher Hebel wie Beschwerdestelle (Bündel schon mit S. 128 belegt, Hebel also gleichartig); weitere gleichartige Stelle.
+- S. 15: Bürgerbeauftragter für Beschwerden über die öffentliche Verwaltung – allgemeine Verwaltung, kein Polizeibezug; gleicher Hebel wie Beschwerdestelle, daher nur im Protokoll.
+- S. 98: „Alle relevanten Beschäftigten im öffentlichen Dienst erhalten Weiterbildungen zur … interkulturellen Kompetenz“ – Integrationskapitel, nicht die Polizei; gleicher Hebel wie Fortbildung S. 128 (gleichartige Stelle, Bündel schon belegt).
+- S. 137–139: Schwerpunktstaatsanwaltschaften, Opferschutz, Strafrecht – keine Zusage zu Ermittlungen gegen Polizeibeamte oder zu Einstellungen bei Polizeigewalt.
+- S. 60–61: unabhängige Beschwerdewege für Kinder und Jugendliche – allgemeine Kinderrechte, nicht Polizeikontakte.
+
+Richtungen ohne Maßnahme: „Gezielte Kontrollen für Sicherheit ermöglichen“ (3401) – Bündel im Text gesucht (S. 127–129, 134): keine Zusage zu Kontrollen, Schleierfahndung, Schwerpunkten oder Videoüberwachung; die Ablehnung von Gesichtserkennung und Palantir geht in die Gegenrichtung. „Handlungsfähigkeit und Rückhalt der Polizei“ (3402) – Bündel im Text gesucht (S. 128, 129, 134): nur 500 zusätzliche Stellen (nach Leitfaden R2 Sicherheit) und Arbeitszeit auf 38 Stunden (Arbeitsbedingung, kein Einsatz-, Training- oder Schutzbezug).
+Seiten ohne Text: keine relevanten (Seite 1 Titelseite gemäß Auftrag).
+Stand im PDF: Titelseite „Beschluss … am 14. März 2026“, wie im Auftrag.
