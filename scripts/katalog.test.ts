@@ -361,6 +361,42 @@ describe('Datenkatalog: Instrumente und IDs', () => {
       ],
     })
 
+  describe('Nebenwirkungen', () => {
+    const hinweis = (ueber: Record<string, unknown> = {}) => ({
+      bereich: 'haushalt', richtung: 'nachteil', text: 'Kostet den Haushalt Geld.', quelle_url: 'https://destatis.de/x', belegstufe: 'A', ...ueber,
+    })
+    const mit = (nebenwirkungen: unknown) => fehlerVon(mitInstrumenten([mitInstrument()], [instrument({ nebenwirkungen })]))
+
+    it('übernimmt geprüfte Hinweise am Instrument, auch eine leere Liste', () => {
+      const { katalog, fehler } = pruefeKatalog(parteien(), [mitInstrumenten([mitInstrument()], [instrument({
+        nebenwirkungen: { geprueft: '2026-10-21', hinweise: [hinweis(), hinweis({ bereich: 'umwelt', richtung: 'vorteil' })], ki_entwurf: true },
+      })])])
+      expect(fehler).toEqual([])
+      expect(katalog.instrumente[0].nebenwirkungen?.hinweise.map((h) => h.bereich)).toEqual(['haushalt', 'umwelt'])
+      expect(mit({ geprueft: '2026-10-21', hinweise: [] })).toBe('')
+    })
+
+    it('prüft Bereich, Richtung, Anzahl und Belegstufe', () => {
+      expect(mit({ geprueft: '2026-10-21', hinweise: [hinweis({ bereich: 'moral' })] })).toMatch(/„bereich“ muss/)
+      expect(mit({ geprueft: '2026-10-21', hinweise: [hinweis({ richtung: 'schlecht' })] })).toMatch(/„richtung“ muss/)
+      expect(mit({ geprueft: '2026-10-21', hinweise: [hinweis(), hinweis()] })).toMatch(/doppelt/)
+      const vier = ['haushalt', 'wirtschaft', 'aufwand', 'umwelt'].map((bereich) => hinweis({ bereich }))
+      expect(mit({ geprueft: '2026-10-21', hinweise: vier })).toMatch(/höchstens 3 Hinweise/)
+      expect(mit({ geprueft: '2026-10-21', hinweise: [hinweis({ belegstufe: 'C' })] })).toMatch(/„zweite_quelle_url“ fehlt/)
+      expect(mit({ hinweise: [] })).toMatch(/„geprueft“ muss ein Datum/)
+    })
+
+    it('lehnt Parteiquellen und Parteinamen ab', () => {
+      expect(mit({ geprueft: '2026-10-21', hinweise: [hinweis({ quelle_url: 'https://www.eins.de/positionen' })] })).toMatch(/Parteiquelle/)
+      expect(mit({ geprueft: '2026-10-21', hinweise: [hinweis({ text: 'Partei Zwei rechnet mit Kosten.' })] })).toMatch(/nennt eine Partei/)
+    })
+
+    it('kommt bei Maßnahmen mit Instrument vom Instrument', () => {
+      const nw = { geprueft: '2026-10-21', hinweise: [] }
+      expect(fehlerVon(mitInstrumenten([mitInstrument({ nebenwirkungen: nw })]))).toMatch(/„nebenwirkungen“ kommt aus dem Instrument/)
+    })
+  })
+
   it('übernimmt Bewertung und Begründung aus dem Instrument', () => {
     const { katalog, fehler, warnungen } = pruefeKatalog(parteien(), [mitInstrumenten([mitInstrument()])])
     expect(fehler).toEqual([])

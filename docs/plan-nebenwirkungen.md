@@ -1,6 +1,6 @@
 # Plan: Nebenwirkungen – Folgen einer Maßnahme über das Thema hinaus
 
-Stand: 21. 10. 2026 · Entwurf, noch nicht umgesetzt.
+Stand: 21. 10. 2026 · Entwurf. Umgesetzt: Datenformat und Prüfung (Schritt 2), Pilot Energiepreise begonnen (Schritt 3, siehe unten). Noch nicht: Migration, Seed, Anzeige.
 
 ## Anlass
 
@@ -94,6 +94,30 @@ Prüfung in `npm run daten:pruefen` (`src/data/katalog.ts`): Werte aus den Liste
 3. **Pilot Energiepreise:** alle Instrumente des Themas. Danach gegenlesen lassen, am besten von zwei Personen mit unterschiedlicher politischer Haltung (wie bei Haltungen). Geprüft wird, ob Vor- und Nachteile ausgewogen erfasst sind und ob die Sätze für alle Seiten neutral klingen.
 4. **Anzeige** in Auflösung und Forderungskarte, zunächst nur in der Testphase.
 5. **Ausrollen** auf die übrigen Themen (308 Instrumente und die Maßnahmen ohne Instrument, zusammen rund 670 Einheiten).
+
+### Stand des Pilots (21. 10. 2026)
+
+KI-Entwurf (`ki_entwurf: true`), noch nicht gegengelesen. Zehn Hinweise an sieben von 22 Lösungswegen des Themas, jeder Beleg im Original abgerufen:
+
+| Lösungsweg | Hinweise |
+| --- | --- |
+| 6703 Netzentgelte mit Bundesmitteln senken | Haushalt (Nachteil) |
+| 6705 Klimageld | Verteilung (Vorteil) |
+| 6706 CO₂-Preis auf Heizen abschaffen | Haushalt (Nachteil), Umwelt (Nachteil), Verteilung (Vorteil) |
+| 6707 Erneuerbare und Speicher schneller ausbauen | Umwelt (Vorteil), Haushalt (Nachteil) |
+| 6708 Kohle- und Kernkraftwerke länger betreiben | Umwelt (Nachteil) |
+| 6733 Ausbau der Windenergie stoppen | Umwelt (Nachteil) |
+| 6821 Heimische Erdgasförderung, auch mit Fracking | Umwelt (Nachteil) |
+
+**Offen (15):** 6704 Stromsteuer – die Kosten für den Haushalt sind nur vom arbeitgebernahen IW geschätzt (Belegstufe C), eine zweite unabhängige Quelle fehlt; die Zahl im Gesetzentwurf einer Fraktion zählt nicht. Ohne belastbare Quelle bisher: 6709, 6715, 6719, 6725, 6727, 6735, 6739, 6822, 6823, 6828, 6830, 6833, 6834, 6836.
+
+**Erste Lehren:**
+
+- **Vorteile muss man aktiv suchen.** Zuerst fanden sich fast nur Nachteile bei fossilen und Vorteile bei erneuerbaren Lösungswegen. Erst gezielte Suche ergab die Gegenrichtung (Verteilung bei 6706, Haushalt bei 6707). Für die Recherche-Anleitung: je Lösungsweg ausdrücklich nach Vor- *und* Nachteilen in jedem Bereich fragen.
+- **Die Abgrenzung zur Wirksamkeit ist eng.** Bei 6727 (Freileitungen) ist die Ersparnis die Wirkung auf das Thema selbst, gehört also nicht hierher. Für eine Nebenwirkung, etwa auf Landschaft oder Planungsdauer, fehlte eine unabhängige Quelle.
+- **Viele Kosten stehen nur in Parteiquellen.** Die Finanzierung von Vorschlägen beziffern oft nur Fraktionen. Gute Quellen sind Drucksachen der Bundesregierung, Gesetzesbegründungen und der Bundesrechnungshof.
+- **„Geprüft“ war im Pilot grob.** Die sechs Bereiche wurden je Lösungsweg durchgesehen, aber nicht in jedem einzeln recherchiert. Vor `geprueft` ohne `ki_entwurf` braucht es den Schritt nach festen Suchbegriffen je Bereich (Skill).
+
 
 ## Offene Fragen
 
