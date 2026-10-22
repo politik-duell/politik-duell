@@ -234,19 +234,50 @@ export function Methode() {
         </li>
       </ul>
 
-      <h2>5. Was die Punkte bedeuten – und was nicht</h2>
+      <h2>5. Folgen über das Thema hinaus</h2>
+      <p>
+        Die Punkte messen nur, wie gut eine Maßnahme bei deinem Problem hilft. Viele Maßnahmen wirken aber auch
+        anderswo: Sie kosten den Staat Geld oder bringen welches ein, belasten oder entlasten andere, verändern den
+        Ausstoß von Treibhausgasen. Wie stark solche Folgen zählen sollen, ist eine politische Abwägung – die
+        überlassen wir dir. Deshalb zeigen wir sie unter „Einordnung“, rechnen sie aber nicht in die Punkte ein.
+      </p>
+      <p>
+        Welche Folgen wir betrachten, haben nicht wir erfunden: Grundlage ist die Liste, nach der die
+        Bundesministerien die Folgen jedes Gesetzentwurfs darstellen müssen (§ 44 der Gemeinsamen Geschäftsordnung
+        der Bundesministerien). Ergänzt haben wir zwei Bereiche, die Folgenabschätzungen der EU, die
+        Nachhaltigkeitsziele der Vereinten Nationen und die OECD ebenfalls nennen. So ergeben sich sechs Bereiche:
+        Staatshaushalt; Wirtschaft und Preise; Bürokratie; Umwelt und Klima; Verteilung (wer gewinnt, wer zahlt);
+        Grundrechte und Gesundheit.
+      </p>
+      <ul>
+        <li>Jeder Lösungsweg wird in allen sechs Bereichen geprüft – nach Vorteilen ebenso wie nach Nachteilen.</li>
+        <li>
+          Wir nennen höchstens drei Folgen, nur wesentliche, jede mit einer unabhängigen Quelle. Quellen von Parteien,
+          Fraktionen oder parteinahen Stiftungen zählen nicht.
+        </li>
+        <li>
+          Die Hinweise gehören zum Lösungsweg, nicht zur Partei: Schlagen mehrere Programme dasselbe vor, steht dort
+          dasselbe. Recherchiert wird ohne zu wissen, welche Partei den Weg vorschlägt.
+        </li>
+        <li>
+          Ist nichts Wesentliches belegt, sagen wir das. Steht unter einer Maßnahme gar nichts dazu, haben wir sie
+          noch nicht geprüft.
+        </li>
+      </ul>
+
+      <h2>6. Was die Punkte bedeuten – und was nicht</h2>
       <p>
         Die Punkte sind eine Einschätzung nach dieser Methode, bezogen auf einzelne Alltagsprobleme. Sie sind kein
         Gesamturteil über eine Partei und keine Wahlempfehlung. Ein Spiel deckt nur die fünf genannten Probleme ab.
       </p>
 
-      <h2>6. Offen und korrigierbar</h2>
+      <h2>7. Offen und korrigierbar</h2>
       <p>
         Alle Bewertungen, Begründungen und Belege stehen im <a href={BETREIBER.quellcode}>öffentlichen Quellcode</a>.
         Änderungen sind dort nachvollziehbar und brauchen immer eine Quelle.
       </p>
 
-      <h2 id="fehler">7. Fehler melden</h2>
+      <h2 id="fehler">8. Fehler melden</h2>
       <p>
         Ist eine Maßnahme falsch wiedergegeben, fehlt etwas oder ist ein Beleg veraltet? Bitte melde es mit Link auf die
         Stelle im Programm:

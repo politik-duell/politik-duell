@@ -100,7 +100,7 @@ Das Produkt ist Absicht: Eine Maßnahme ohne Wirkung bringt keine Punkte, auch w
 | 2 | hilft spürbar: setzt an einer Ursache an, deutliche Verbesserung zu erwarten | umsetzbar mit Aufwand oder in mehreren Jahren |
 | 3 | hilft stark: setzt direkt an einer Hauptursache an, Wirkung gut belegt | rechtlich möglich, finanziert, in einer Wahlperiode realistisch |
 
-Wirksamkeit misst den Beitrag zum Ziel der Betroffenen; Vor- und Nachteile für andere Gruppen zählen hier nicht. Umsetzbarkeit fragt, ob die Regierung der Ebene, aus deren Programm die Maßnahme stammt – Bund oder Land –, sie in einer Wahlperiode rechtlich und finanziell umsetzen könnte. Ob sie politisch mehrheitsfähig ist, spielt keine Rolle. Zu jeder Bewertung gehört eine Begründung in ein bis zwei neutralen Sätzen: was dafür, was dagegen spricht.
+Wirksamkeit misst den Beitrag zum Ziel der Betroffenen; Vor- und Nachteile für andere Gruppen zählen hier nicht (sie stehen ohne Punkte unter „Folgen über das Thema hinaus“). Umsetzbarkeit fragt, ob die Regierung der Ebene, aus deren Programm die Maßnahme stammt – Bund oder Land –, sie in einer Wahlperiode rechtlich und finanziell umsetzen könnte. Ob sie politisch mehrheitsfähig ist, spielt keine Rolle. Zu jeder Bewertung gehört eine Begründung in ein bis zwei neutralen Sätzen: was dafür, was dagegen spricht.
 
 **Stand der Forschung.** Zu jeder Maßnahme wird festgehalten, wie gut ihre Wirkung belegt ist: *belegt* (übereinstimmende Studien oder Erfahrungen anderswo), *gemischt* (Studien kommen zu unterschiedlichen Ergebnissen) oder *offen* (kaum untersucht). Wirksamkeit 3 setzt *belegt* voraus und misst die erwartete Verbesserung für die Betroffenen, nicht, ob eine Zielzahl aus der Quelle genau erreicht wird. Ist die Wirkung umstritten, zeigt das Spiel das an („Wirkung in der Forschung umstritten“) und nennt in der Begründung beide Seiten.
 
@@ -109,6 +109,18 @@ Wirksamkeit misst den Beitrag zum Ziel der Betroffenen; Vor- und Nachteile für 
 **Rollen.** Spielende können eine Rolle wählen: Mieter:in, Eigentümer:in, angestellt, selbstständig, Rentner:in, arbeitslos, studierend, vermögend. Wirkt eine Maßnahme für eine Rolle nachweislich deutlich besser oder schlechter, verschiebt sich ihre Wirksamkeit um bis zu zwei Stufen (innerhalb 0 bis 3). Auf 3 hebt eine Rolle sie nur, wenn die Wirkung belegt ist – wie bei jeder Wirksamkeit 3. Jede solche Verschiebung ist einzeln begründet und wird angezeigt. Rolle und Bundesland gehören zur Seite: Jede Partei wird mit den Angaben der Person bewertet, die sie gewählt hat – gleich, wer das Problem nennt. Der Vergleich aller Parteien („Beste Lösung aller Parteien“) nutzt Rolle bzw. Bundesland nur, wenn beide Seiten dasselbe gewählt haben; sonst rechnet er ohne Rolle bzw. nur mit den Bundesprogrammen.
 
 **Gleicher Vorschlag, gleiche Bewertung.** Schlagen mehrere Programme denselben Lösungsweg vor – etwa ein Handyverbot an Schulen –, wird er einmal bewertet und begründet (als *Instrument* im Datenkatalog). Die Bewertung gilt dann für jede Partei, jedes Land und jede spätere Wahlperiode, in der er vorkommt; nur Zitat und Beleg sind je Programm eigene. Unterscheidet sich ein Vorschlag in einem bewertungsrelevanten Punkt – etwa ein Schulbauprogramm mit Betrag statt ohne –, gilt er als eigener Lösungsweg.
+
+### Folgen über das Thema hinaus
+
+Die Punkte messen nur den Beitrag zum Ziel der Betroffenen. Was eine Maßnahme darüber hinaus bewirkt – Kosten für den Staat, Lasten für andere, Folgen für Umwelt und Klima –, zeigt das Spiel als belegte Hinweise unter der Einordnung, **ohne Punkte**: Wie stark solche Folgen zählen sollen, ist genau die politische Abwägung, die das Spiel den Spielenden überlässt.
+
+- **Sechs Bereiche**, nach der Gesetzesfolgenabschätzung der Bundesministerien (§ 44 GGO): öffentliche Haushalte; Wirtschaft, Preise und Verbraucher; Bürokratie und Aufwand; Umwelt, Klima und langfristige Folgen. Ergänzt um zwei Bereiche, die EU-Folgenabschätzung, UN-Nachhaltigkeitsziele und OECD übereinstimmend nennen: Verteilung und soziale Gerechtigkeit; Grundrechte, Gleichbehandlung und Gesundheit.
+- **Beide Richtungen:** Jeder Lösungsweg wird in allen sechs Bereichen nach Vor- und nach Nachteilen durchsucht; die Suchanfragen stehen im Protokoll.
+- **Nur Wesentliches, nur belegt:** höchstens drei Hinweise je Lösungsweg, je Bereich einer, jeder mit unabhängiger Quelle (Anforderungen wie bei Ursachen) und wörtlichem Beleg im Protokoll. Parteiquellen zählen nie.
+- **Am Lösungsweg, ohne Parteinamen:** Hinweise stehen am Instrument und gelten für jede Partei, die es vorschlägt; recherchiert wird ohne Kenntnis der Partei.
+- **Geprüft heißt geprüft:** „Keine wesentlichen Folgen belegt“ erscheint nur nach der Prüfung aller Bereiche; ungeprüfte Lösungswege zeigen nichts.
+
+Ablauf und Begründung: [`docs/plan-nebenwirkungen.md`](plan-nebenwirkungen.md).
 
 ### Punkte in der Runde
 
@@ -275,6 +287,7 @@ Die Methode ist so fair wie möglich, aber nicht fehlerfrei. Wir benennen ihre G
 - **Wechselwirkungen werden pauschal berücksichtigt.** Ob sich zwei Lösungswege einer Partei ergänzen oder überschneiden, wird nicht einzeln bewertet; das abnehmende Gewicht unterstellt für alle eine mittlere Überschneidung. Ein besonders gut abgestimmter Mix kann dadurch etwas zu niedrig, ein widersprüchlicher etwas zu hoch bewertet sein.
 - **Belegte Wirkung bevorzugt Erprobtes.** Instrumente, die es schon gibt, sind besser untersucht als neue Ideen. Die Regel „Wirksamkeit 3 nur mit belegter Wirkung“ kann neue Vorschläge daher etwas benachteiligen. Wir nehmen das in Kauf, weil die Alternative wäre, Versprechen ungeprüft zu glauben.
 - **Das Bundesland verändert das Ergebnis.** Bei Landesthemen kann dieselbe Partei in zwei Ländern unterschiedlich abschneiden. Das ist gewollt: Landesparteien haben eigene Programme.
+- **Folgen für andere zählen nicht in die Punkte.** Eine Maßnahme kann viele Punkte holen und zugleich teuer sein oder anderen schaden. Das Spiel zeigt solche Folgen belegt an, verrechnet sie aber nicht – sonst müsste es selbst entscheiden, wie viel etwa Klimaschutz gegen Kosten zählt. Auch die Auswahl der sechs Bereiche ist eine Entscheidung; deshalb folgt sie der Gesetzesfolgenabschätzung der Bundesministerien.
 - **Ein Spiel ist ein Ausschnitt.** Es deckt fünf Probleme ab und ist kein Gesamturteil über eine Partei – und keine Wahlempfehlung.
 - **Auswahl und Formulierung der Haltungen sind selbst Entscheidungen.** Welche Wertfragen das Spiel kennt und wie sie gestellt sind, prägt, was sichtbar wird. Deshalb gelten feste Aufnahmekriterien, Frage und Zielkonflikte werden vor dem Blick in die Programme festgelegt und von zwei Personen mit unterschiedlicher Haltung geprüft, und weitere Haltungen kommen erst nach Tests mit Spielenden aus verschiedenen Lagern dazu.
 - **Wo die Grenze verläuft, ist eine Abwägung.** Ob eine Äußerung abwertet oder „nur“ pauschal urteilt, entscheidet im Einzelfall die KI nach festen Regeln. Sie kann sich irren – in beide Richtungen. Deshalb ist die Grenze eng gefasst, im Zweifel wird nachgefragt, und ein Grenzfall kostet niemanden etwas: Die Runde geht mit einem anderen Problem weiter.
