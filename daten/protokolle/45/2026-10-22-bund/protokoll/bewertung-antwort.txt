@@ -1,0 +1,21 @@
+{
+  "blind_pruefsumme": "e918e1b0a95d5890a1f4e2075c64c8f7af216a4b65302076980ea337de4c866e",
+  "neue_instrumente": [],
+  "zuordnung": [
+    { "kennung": "M73", "instrument": "I8", "ursachen": [4501] },
+    { "kennung": "M74", "instrument": "I3", "ursachen": [4501, 4502] },
+    { "kennung": "M75", "instrument": "I4", "ursachen": [4501] },
+    { "kennung": "M76", "ursachen": [] },
+    { "kennung": "M77", "instrument": "I7", "ursachen": [4501] },
+    { "kennung": "M78", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Sparsamere Motoren und alternative Kraftstoffe senken Emissionen etwas; laut PIK sind E-Fuels aber teuer (800-1.200 Euro/t CO2), knapp und für Pkw ineffizient, bis 2030 kaum verfügbar.", "evidenz": "belegt", "beleg_studie_url": "https://publications.pik-potsdam.de/pubman/item/item_25599_8" }, "ursachen": [4501] },
+    { "kennung": "M79", "einzeln": { "wirksamkeit": 0, "umsetzbarkeit": 1, "begruendung": "Der EU-Emissionshandel hat Emissionen nachweislich gesenkt; seine Abschaffung entfernt die Obergrenze, eine Globalisierung ist unrealistisch. Beides hängt von EU und anderen Staaten ab.", "evidenz": "belegt", "beleg_studie_url": "https://strathprints.strath.ac.uk/72023" }, "ursachen": [4504] },
+    { "kennung": "M80", "ursachen": [] },
+    { "kennung": "M81", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Sozialleasing wie in Frankreich war stark nachgefragt und erreicht Pendler; der Einbezug von Verbrennern schwächt die Minderung, Emissionswirkung kaum evaluiert, Finanzierung offen.", "evidenz": "offen" }, "ursachen": [4501] }
+  ]
+}
+
+Hinweise:
+- Bestätigt: M73 (wie M47 -> I8), M74 (wie M04 -> I3, beide offenen Ursachen 4501 und 4502, da der CO2-Preis Verkehr und Wärme betrifft), M75 (wie M31/M66 -> I4), M77 (wie M29/M55/M57 -> I7). M79 offen 4504 bestätigt, analog zu I11 (M36, M50).
+- Keine Ursache: M76 (Moorschutz/Landnutzung ist laut Regel 3 LULUCF, nicht Landwirtschaftsemissionen; wie M01, M09, M22). M80 (allgemeine Absichtserklärung ohne konkrete Änderung an Budget- oder Nachsteuerungsregeln; Ziel statt Zusage).
+- Schwierig: M80 gegenüber M43 (konkrete Verschiebung des Zieljahres, bisher 4504 mit 0/3) - Grenze zwischen Haltung und Regeländerung. M78: Wirksamkeit 1 trotz "belegt", weil die Belege gerade die geringe Wirkung bei Pkw zeigen. M81: Quelle zum französischen Sozialleasing (IDDRI, T&E) nicht lesbar bzw. gesperrt, daher ohne URL und "offen".
+- Bisherige Bewertung: I3 heißt "im Verkehr", trägt aber über M04 (und jetzt M74) auch 4502; ggf. Namen auf "Verkehr und Wärme" erweitern.

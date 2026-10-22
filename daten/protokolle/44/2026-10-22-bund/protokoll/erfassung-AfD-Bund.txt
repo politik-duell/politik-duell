@@ -1,0 +1,91 @@
+{
+  "partei_id": 15,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Zusammenarbeit mit Mercosur, ASEAN und BRICS fördern, wenn sie dem Land dient; WTO reformieren",
+      "ursachen_ids": [],
+      "ursachen_offen": [4401],
+      "buendel": "Neue Absatzmärkte erschließen",
+      "zitat": "Wir unterstützen die Reform der Welthandelsorganisation (WTO) und fördern die Zusammenarbeit mit den BRICS-Staaten sowie regionalen Organisationen wie ASEAN und Mercosur, wenn sie der wirtschaftlichen Wohlfahrt und politischen Selbstbestimmtheit unseres Landes dient.",
+      "seite": 95
+    },
+    {
+      "beschreibung": "Vorhandene Handelshemmnisse beseitigen",
+      "ursachen_ids": [],
+      "ursachen_offen": [4401],
+      "buendel": "Zollabbau durch Verhandlung",
+      "zitat": "Den internationalen Handel fördern wir, indem wir: […] vorhandene Handelshemmnisse beseitigen",
+      "seite": 15
+    },
+    {
+      "beschreibung": "Wirtschaftssanktionen gegen Russland sofort aufheben",
+      "ursachen_ids": [],
+      "ursachen_offen": [4401],
+      "zitat": "Zur Wiederherstellung des ungestörten Handels mit Russland gehören die sofortige Aufhebung der Wirtschaftssanktionen gegen Russland.",
+      "seite": 93
+    },
+    {
+      "beschreibung": "Handelsabkommen abschließen, die Rohstofflieferketten sichern",
+      "ursachen_ids": [4402],
+      "buendel": "Bezugsländer diversifizieren",
+      "zitat": "Den internationalen Handel fördern wir, indem wir: […] vorteilhafte Handelsabkommen für unser Land abschließen, die dazu beitragen, unsere Rohstofflieferketten zu sichern",
+      "seite": 15
+    },
+    {
+      "beschreibung": "CO₂-Grenzausgleich aufheben",
+      "ursachen_ids": [],
+      "ursachen_offen": [4403],
+      "buendel": "Importzölle senken",
+      "zitat": "Den internationalen Handel fördern wir, indem wir: […] Aufhebung des CO₂-Grenzausgleichs",
+      "seite": 15
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 4401,
+      "seiten": [92],
+      "grund": "Ziel „Verbesserung der Beziehungen zu den USA“ ohne Aussage zu Zöllen oder Gegenmaßnahmen."
+    },
+    {
+      "ursache": 4402,
+      "seiten": [13, 94, 165, 166],
+      "grund": "Lagebeschreibung zu eingeschränktem Zugang zu seltenen Erden (S. 13); Ziel „Zugang zu Rohstoffen“ (S. 94); Recycling und Forschung nur als Möglichkeit („können“, S. 165–166)."
+    },
+    {
+      "ursache": 4403,
+      "seiten": [93, 94, 95],
+      "grund": "China-Kontakte ausbauen und Schutz vor Ausverkauf nur unter Bedingungen (S. 93–94); Übernahmekontrolle (S. 95) betrifft Investitionen, nicht Importe."
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 4401, "name": "Wirtschaftssanktionen aufheben", "seite": 93 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "handelshemmnisse", "ursache": 4401, "richtung": "Zollabbau durch Verhandlung" },
+    { "begriff": "sanktionen", "ursache": 4401, "richtung": "Wirtschaftssanktionen aufheben" },
+    { "begriff": "grenzausgleich", "ursache": 4403, "richtung": "Importzölle senken" }
+  ]
+}
+
+PROTOKOLL AfD (Bund), Thema 44 „Zölle und Handelskonflikte“
+
+Gelesen: Inhaltsverzeichnis (S. 2–6); Kapitel „Außenpolitik“ S. 86–96 (Verhältnis zu USA, Russland, China, Handelspolitik S. 92–95, Auswärtige Kultur-Trennseite S. 95); Soziale Marktwirtschaft S. 13–15 (Handelsabschnitt S. 15); Rohstoff- und Kreislaufwirtschaft S. 165–166; Rohstoffe in Industriekapitel S. 13.
+
+Gleichartig, nicht gesondert erfasst:
+- „Austausch mit anderen Märkten erleichtern und intensivieren“ (S. 15): Bündel „Neue Absatzmärkte erschließen“, gleiche Stelle wie Handelsabkommen-Zusage (S. 15).
+- „Die Beziehungen zur Eurasischen Wirtschaftsunion sollen ausgebaut werden“ (S. 93): Bündel „Neue Absatzmärkte erschließen“.
+- „Wirtschaftsschädliche Sanktionen beenden“ (S. 15): gleiche Stelle wie Aufhebung der Sanktionen gegen Russland (S. 93).
+- „Die deutsche Außenhandelspolitik muss … diskriminierungsfreien Zugang zu … Märkten … gewährleisten“ (S. 94): Ziel, nicht erfasst.
+
+Nicht erfasst:
+- S. 92: „Die AfD setzt sich für eine Verbesserung der Beziehungen … ein“ (USA): Allgemeinziel, keine Aussage zu Zöllen.
+- S. 95: „Die Kernaufgabe ist es, verlässliche Handelsregeln zu erhalten“ und Lieferkettengesetz ablehnen: Handelsregeln allgemein, nicht Zölle oder Importe.
+- S. 95: Übernahmekontrolle durch ausländische Konzerne (S. 95): Investitionen, nicht Import- oder Exportzölle.
+- S. 13: „eingeschränkter Zugang zu Rohstoffen wie seltene Erden“: Lagebeschreibung.
+
+Richtungen ohne Maßnahme (0 Treffer, Kapitel gelesen): „Gegenzölle und Vergeltung“ (4401); „Eigene Förderung und Recycling“ (4402): nur Möglichkeit („können“, S. 165); „Exportbeschränkungen (gegenläufig)“ (4402); „Handelsschutz gegen Dumping“ (4403): keine Zusage gefunden.
+
+Grenzfälle (ursachen_offen): Mercosur-/Absatzmärkte-Zusage, Handelshemmnisse-Abbau, Russland-Sanktionen (4401, Drittstaaten-Absatz); CO₂-Grenzausgleich (4403, Importabgabe).
+
+Seiten ohne Text: 1, 2, 35, 36, 52, 53, 54 für dieses Thema ohne Bedeutung; die Außenpolitik-Seiten 86–96 haben Text.

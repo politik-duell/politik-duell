@@ -1,0 +1,936 @@
+{
+  "pruefsumme": "1ea07b6ac1c7f283178a02bc0c055c00d5cb875e8cea2fec93b2767e6db83881",
+  "thema": {
+    "id": 44,
+    "name": "Zölle und Handelskonflikte",
+    "ziel": "Beschäftigte in exportabhängigen Betrieben behalten ihre Arbeit, und wichtige Rohstoffe sind verlässlich verfügbar."
+  },
+  "ursachen": [
+    {
+      "id": 4401,
+      "beschreibung": "US-Zölle verteuern deutsche Exporte in die USA und verringern deren Absatz: Infolge der US-Zollpolitik sanken die Exporte in die USA von Januar bis November 2025 um 9,4 %.",
+      "ebene": "bund"
+    },
+    {
+      "id": 4402,
+      "beschreibung": "Wichtige Rohstoffe stammen aus wenigen Ländern. 2025 kamen 55,4 % der importierten Seltenen Erden nach Deutschland aus China, EU-weit 46,8 %.",
+      "ebene": "bund"
+    },
+    {
+      "id": 4403,
+      "beschreibung": "Importe aus China steigen und erhöhen den Wettbewerbsdruck auf heimische Hersteller. Die Einfuhren aus China stiegen 2025 um 8,8 % auf 170,6 Mrd. Euro.",
+      "ebene": "bund"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        4401
+      ],
+      "text": "Zu 1 gehören Zölle und vergleichbare Handelsbeschränkungen von Handelspartnern (vor allem USA), die deutsche Exporte verteuern oder verdrängen, und der dadurch verringerte Absatz. Nicht dazu: Rohstoffimporte (2), Importe aus China (3), allgemeine Konjunktur und Investitionszurückhaltung (501, 504). Grenzfall: Zollfolgen bei Exporten in Drittstaaten: nur als ursachen_offen."
+    },
+    {
+      "nr": 2,
+      "ursachen": [
+        4402
+      ],
+      "text": "Zu 2 gehört, dass Rohstoffe und Vorprodukte aus wenigen Ländern stammen und ihre Lieferung bei Exportbeschränkungen oder Krisen stockt. Nicht dazu: Zölle auf deutsche Exporte (1), Rohstoffpreise allgemein (501), Energieimporte (303). Grenzfall: Rohstoffe, die über Drittstaaten ins Land kommen: nur als ursachen_offen."
+    },
+    {
+      "nr": 3,
+      "ursachen": [
+        4403
+      ],
+      "text": "Zu 3 gehören Importe aus Drittstaaten, vor allem China, die heimische Hersteller unter Wettbewerbsdruck setzen. Nicht dazu: Zölle der USA gegen deutsche Exporte (1), Rohstoffabhängigkeit (2), Lohn- und Energiekosten der Industrie (501). Grenzfall: staatlich gestützte Überkapazitäten als Erklärung der Importe: nur als ursachen_offen, bis die EP-Studie gelesen ist."
+    }
+  ],
+  "instrumente": [],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "bund",
+      "beschreibung": "Bergbau in Naturschutz-, Trinkwasserschutzgebieten und der Tiefsee ausschließen",
+      "zitat": "Wir wollen keinen Bergbau in Naturschutzgebieten, Trinkwasserschutzgebieten oder der Tiefsee.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4402
+      ],
+      "pruefsumme": "870749f7366b3b93"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "bund",
+      "beschreibung": "Neue Handelsabkommen in der EU unterstützen und die Partnerschaft mit den USA zu einem transatlantischen Handelsraum vertiefen",
+      "zitat": "Wir unterstützen in der EU neue Abkommen mit Indien und den ASEAN-Staaten und vertiefen Partnerschaften insbesondere mit den USA für einen umfassenden transatlantischen Wirtschafts-, Handels- und Zukunftsraum.",
+      "ursachen_ids": [
+        4401
+      ],
+      "pruefsumme": "3bdc734580203a60"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "bund",
+      "beschreibung": "Europaweit gegen die Schwemme illegaler Billigprodukte aus China vorgehen",
+      "zitat": "Wir fordern, der Schwemme illegaler Billigprodukte aus China europaweit den Kampf anzusagen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4403
+      ],
+      "pruefsumme": "e913ccf23712c607"
+    },
+    {
+      "kennung": "M04",
+      "ebene": "bund",
+      "beschreibung": "Faire Kooperationsabkommen statt Freihandelsabkommen",
+      "zitat": "Wir fordern eine weltweite Milliardärsteuer, […] faire Kooperationsabkommen anstelle von Freihandelsabkommen […].",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4401
+      ],
+      "pruefsumme": "cd3fe9772ddce679"
+    },
+    {
+      "kennung": "M05",
+      "ebene": "bund",
+      "beschreibung": "Mit strategischen Partnerschaften und Allianzen den Zugang zu wertvollen Rohstoffen sichern.",
+      "zitat": "Viele Bereiche unseres Alltags und unserer Wirtschaft hängen unmittelbar an robusten Lieferketten und dem Zugang zu besonders wertvollen Rohstoffen. Als innovativer Industriestandort wollen wir Allianzen bilden und mit strategischen Partnerschaften Brücken bauen",
+      "ursachen_ids": [
+        4402
+      ],
+      "pruefsumme": "b570d12384b68535"
+    },
+    {
+      "kennung": "M06",
+      "ebene": "bund",
+      "beschreibung": "Staatliche Förderung für Produkte wie E-Autos nur für größtenteils in Europa produzierte Produkte gewähren.",
+      "zitat": "Staatliche Förderprogramme für den Kauf von Produkten wie E-Autos werden wir künftig für Produkte gewähren, die größtenteils auch in Europa mit seinen hohen sozialen und ökologischen Standards produziert wurden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4403
+      ],
+      "pruefsumme": "9412ecfbff87b490"
+    },
+    {
+      "kennung": "M07",
+      "ebene": "bund",
+      "beschreibung": "Europäische Resilienzstrategie gegen Lieferrisiken (De-Risking) und Abhängigkeiten bei Rohstoffen und Vorprodukten.",
+      "zitat": "Die EU muss sich unabhängiger aufstellen und strategische Wertschöpfung wieder stärker nach Europa verlagern. Dazu braucht es eine europäische Resilienzstrategie, die Risiken verringert (De-Risking), kritische Infrastrukturen effektiv schützt und strategisch wichtige Schlüsselindustrien wieder in Europa ansiedelt.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4402
+      ],
+      "pruefsumme": "1f464a2746cd9a22"
+    },
+    {
+      "kennung": "M08",
+      "ebene": "bund",
+      "beschreibung": "CO₂-Grenzausgleich CBAM praxistauglicher und wirksamer gestalten, gegen Wettbewerbsnachteile europäischer Industrie.",
+      "zitat": "Wir werden den […] europäischen CO₂-Zoll CBAM durch eine Ausweitung des Anwendungsbereichs, eine Berücksichtigung der Gesamtemissionen des Herstellers im Herkunftsland und die Nutzung von Standardwerten praxistauglicher und effektiver gestalten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4403
+      ],
+      "pruefsumme": "668e613a04e30a57"
+    },
+    {
+      "kennung": "M09",
+      "ebene": "bund",
+      "beschreibung": "Verbrauch von Primärrohstoffen senken.",
+      "zitat": "Erstens wollen wir den Verbrauch von Primärrohstoffen senken und langfristig halbieren.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4402
+      ],
+      "pruefsumme": "d737e676ed60c127"
+    },
+    {
+      "kennung": "M10",
+      "ebene": "bund",
+      "beschreibung": "Partnerschaften bei Rohstoffen und grünen Technologien vor allem mit mittleren Mächten ausbauen",
+      "zitat": "Wir setzen uns für mehr wirtschaftliche Abkommen und Investitionspartnerschaften sowie Partnerschaften im Bereich Rohstoffe oder grüne Technologien insbesondere mit mittleren Mächten ein.",
+      "ursachen_ids": [
+        4402
+      ],
+      "pruefsumme": "22460eaf282f0878"
+    },
+    {
+      "kennung": "M11",
+      "ebene": "bund",
+      "beschreibung": "Staatliche Garantien für exportorientierte Unternehmen: klimapolitische Sektorleitlinien rückgängig machen",
+      "zitat": "Wir machen die neuen klimapolitischen Sektorleitlinien für Garantien rückgängig.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4401
+      ],
+      "pruefsumme": "f55fda5e30965711"
+    },
+    {
+      "kennung": "M12",
+      "ebene": "bund",
+      "beschreibung": "Neue Rohstoffpartnerschaften schließen, die auf Menschenrechte und Umweltschutz ausgerichtet sind.",
+      "zitat": "Und viertens entwickeln wir eine nachhaltige und faire Rohstoffaußenpolitik und schließen neue Rohstoffpartnerschaften, die an der Einhaltung der Menschenrechte und des Umweltschutzes ausgerichtet sind.",
+      "ursachen_ids": [
+        4402
+      ],
+      "pruefsumme": "0f43286914ed6009"
+    },
+    {
+      "kennung": "M13",
+      "ebene": "bund",
+      "beschreibung": "Wirtschaftssanktionen gegen Russland sofort aufheben",
+      "zitat": "Zur Wiederherstellung des ungestörten Handels mit Russland gehören die sofortige Aufhebung der Wirtschaftssanktionen gegen Russland.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4401
+      ],
+      "pruefsumme": "4febf7f04d7a534a"
+    },
+    {
+      "kennung": "M14",
+      "ebene": "bund",
+      "beschreibung": "Höhere gesetzliche Recyclingquoten und Einsatzquoten für wiederverwertete Stoffe",
+      "zitat": "Wir fordern höhere gesetzliche Recyclingquoten und höhere Einsatzquoten für wiederverwertete Stoffe.",
+      "ursachen_ids": [
+        4402
+      ],
+      "pruefsumme": "3580a39ac75bce51"
+    },
+    {
+      "kennung": "M15",
+      "ebene": "bund",
+      "beschreibung": "Mercosur-Abkommen zügig in Kraft setzen",
+      "zitat": "Mercosur ist ausverhandelt und muss jetzt zügig in Kraft treten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4401
+      ],
+      "pruefsumme": "55017a77d2e0b8e8"
+    },
+    {
+      "kennung": "M16",
+      "ebene": "bund",
+      "beschreibung": "Handelsabkommen abschließen, die Rohstofflieferketten sichern",
+      "zitat": "Den internationalen Handel fördern wir, indem wir: […] vorteilhafte Handelsabkommen für unser Land abschließen, die dazu beitragen, unsere Rohstofflieferketten zu sichern",
+      "ursachen_ids": [
+        4402
+      ],
+      "pruefsumme": "1c94d1ee35992877"
+    },
+    {
+      "kennung": "M17",
+      "ebene": "bund",
+      "beschreibung": "Bei marktverzerrenden Subventionen das EU-Antisubventionsverfahren und einen WTO-Streitschlichtungsmechanismus nutzen",
+      "zitat": "Bei marktverzerrenden Subventionen und Exportbeihilfen setzen wir auf das EU-Antisubventionsverfahren und einen wirksamen, international anerkannten Streitschlichtungsmechanismus bei der Welthandelsorganisation.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4403
+      ],
+      "pruefsumme": "e2f90d9719dba0d9"
+    },
+    {
+      "kennung": "M18",
+      "ebene": "bund",
+      "beschreibung": "Handelsabkommen mit verbindlichen ökonomischen, sozialen und ökologischen Standards verhandeln.",
+      "zitat": "Wir verhandeln entsprechend folgender Prinzipien: rechtsverbindliche und einklagbare ökonomische, soziale und ökologische Standards",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4401
+      ],
+      "pruefsumme": "e2fad22437d6c473"
+    },
+    {
+      "kennung": "M19",
+      "ebene": "bund",
+      "beschreibung": "CO₂-Grenzausgleich aufheben",
+      "zitat": "Den internationalen Handel fördern wir, indem wir: […] Aufhebung des CO₂-Grenzausgleichs",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4403
+      ],
+      "pruefsumme": "4a0e4583828762a5"
+    },
+    {
+      "kennung": "M20",
+      "ebene": "bund",
+      "beschreibung": "Ressourcenschutzgesetz für sparsamen Umgang mit Ressourcen",
+      "zitat": "Unser Ziel ist eine Gesellschaft, die sparsam mit Ressourcen umgeht. Dafür braucht es ein Ressourcenschutzgesetz.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4402
+      ],
+      "pruefsumme": "d882402e8a050f2d"
+    },
+    {
+      "kennung": "M21",
+      "ebene": "bund",
+      "beschreibung": "Handelsabkommen schneller abschließen; Entscheidung im Ministerrat mit qualifizierter Mehrheit statt Einstimmigkeit.",
+      "zitat": "Der Abschluss von weitreichenden Handels- und Investitionsabkommen (beispielsweise das EU- Mercosur-Abkommen oder die Freihandelsverträge der EU mit Indien und Australien) sind wichtige Meilensteine, um robuste Allianzen und Partnerschaften zu etablieren. […] Wir wollen, dass solche Abkommen künftig einfacher gestaltet und schneller zum Abschluss gebracht werden können. Zu oft werden Verhandlungen von einzelnen EU-Mitgliedstaaten ausgebremst. Handelsabkommen sollen daher durch eine qualifizierte Mehrheit im Ministerrat der EU entschieden werden.",
+      "ursachen_ids": [
+        4401
+      ],
+      "pruefsumme": "5333688c175351cb"
+    },
+    {
+      "kennung": "M22",
+      "ebene": "bund",
+      "beschreibung": "Zusammenarbeit mit Mercosur, ASEAN und BRICS fördern, wenn sie dem Land dient; WTO reformieren",
+      "zitat": "Wir unterstützen die Reform der Welthandelsorganisation (WTO) und fördern die Zusammenarbeit mit den BRICS-Staaten sowie regionalen Organisationen wie ASEAN und Mercosur, wenn sie der wirtschaftlichen Wohlfahrt und politischen Selbstbestimmtheit unseres Landes dient.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4401
+      ],
+      "pruefsumme": "49f97f04a4c34d92"
+    },
+    {
+      "kennung": "M23",
+      "ebene": "bund",
+      "beschreibung": "Produktion möglichst nah am Ort des Bedarfs herstellen; regionale Wirtschaftskreisläufe aufbauen",
+      "zitat": "Wir wollen, dass Produkte möglichst nah an dem Ort hergestellt werden, wo sie gebraucht werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4403
+      ],
+      "pruefsumme": "bc962d131ce619e5"
+    },
+    {
+      "kennung": "M24",
+      "ebene": "bund",
+      "beschreibung": "Heimische Agrarproduktion vor billigen Importen aus Drittländern mit geringeren Standards schützen",
+      "zitat": "Landwirtschaft im Einklang mit der Natur: Das geht nur, wenn die hohen Produktionsstandards der heimischen Agrarwirtschaft vor billigen Importen aus Drittländern, die unseren Standards nicht entsprechen, geschützt werden.",
+      "ursachen_ids": [
+        4403
+      ],
+      "pruefsumme": "10ca2f92c1a6e4bb"
+    },
+    {
+      "kennung": "M25",
+      "ebene": "bund",
+      "beschreibung": "Kritische Abhängigkeiten bei Absatzmärkten, Rohstoffquellen und Lieferketten verringern, durch stärkere Diversifizierung",
+      "zitat": "Zugleich werden wir kritische wirtschaftliche Abhängigkeiten verringern, etwa durch die stärkere Diversifizierung von Absatzmärkten, Rohstoffquellen und Lieferketten sowie den Schutz kritischer Infrastruktur und sicherheitsrelevanter Technologie.",
+      "ursachen_ids": [
+        4402
+      ],
+      "pruefsumme": "c263a12c62db3eef"
+    },
+    {
+      "kennung": "M26",
+      "ebene": "bund",
+      "beschreibung": "Zollschlupflöcher schließen, durch die Onlinehändler unsichere Produkte am Zoll vorbeischleusen.",
+      "zitat": "Die Schlupflöcher im Zollrecht müssen geschlossen werden, durch die besonders asiatische Onlinehändler wie Temu unsichere Wegwerfprodukte am Zoll vorbeischleusen und europäische Hersteller unterbieten.",
+      "ursachen_ids": [
+        4403
+      ],
+      "pruefsumme": "f9bbb8c3801f5a01"
+    },
+    {
+      "kennung": "M27",
+      "ebene": "bund",
+      "beschreibung": "Handelshemmnisse gegenüber den USA abbauen und einen Subventionswettlauf vermeiden.",
+      "zitat": "Die Gefahr protektionistischer Maßnahmen der USA ist weiter gestiegen. Wir setzen alles daran, Handelshemmnisse abzubauen und einen Subventionswettlauf mit den USA zu vermeiden.",
+      "ursachen_ids": [
+        4401
+      ],
+      "pruefsumme": "c458e5f71ebf3439"
+    },
+    {
+      "kennung": "M28",
+      "ebene": "bund",
+      "beschreibung": "Moderne Recyclingmethoden fördern und den gesetzlichen Rahmen dafür ausgestalten",
+      "zitat": "Wir wollen moderne Recyclingmethoden statt Produktverbote. Dazu werden wir den bisherigen gesetzlichen Rahmen marktwirtschaftlicher und technologieoffener ausgestalten. Damit machen wir unser Land gleichzeitig unabhängiger von Rohstoffimporten.",
+      "ursachen_ids": [
+        4402
+      ],
+      "pruefsumme": "07f08d48204a1e16"
+    },
+    {
+      "kennung": "M29",
+      "ebene": "bund",
+      "beschreibung": "Ausgehandelte und laufende EU-Freihandelsabkommen mit mehreren Staaten zügig abschließen",
+      "zitat": "Wir setzen uns daher dafür ein, ausgehandelte EU-Freihandelsabkommen sowie laufende Verhandlungen vor allem mit Indonesien, Australien, Thailand, den Philippinen und Malaysia zügig abzuschließen.",
+      "ursachen_ids": [
+        4401
+      ],
+      "pruefsumme": "06bf7a63a3134d31"
+    },
+    {
+      "kennung": "M30",
+      "ebene": "bund",
+      "beschreibung": "CO2-Grenzausgleichsmechanismus für Importe entbürokratisieren und um Exportförderung ergänzen.",
+      "zitat": "Wir entbürokratisieren den CO 2 -Grenzausgleichsmechanismus (CBAM – Carbon Border Adjustment Mechanism) und ergänzen ihn um eine Exportförderung.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4403
+      ],
+      "pruefsumme": "61486927094961d7"
+    },
+    {
+      "kennung": "M31",
+      "ebene": "bund",
+      "beschreibung": "Vorratshaltung von Rohstoffen über eine Bevorratungsrücklage anreizen",
+      "zitat": "Wir reizen das privatwirtschaftliche, nicht-spekulative Anlegen von Vorräten durch eine Rohstoffbevorratungsrücklage an.",
+      "ursachen_ids": [
+        4402
+      ],
+      "pruefsumme": "f58c65eb7f6213d3"
+    },
+    {
+      "kennung": "M32",
+      "ebene": "bund",
+      "beschreibung": "Heimischen und europäischen Rohstoffabbau mit modernisiertem Bergrecht und schnelleren Verfahren fördern.",
+      "zitat": "Drittens setzen wir auf heimischen und europäischen Bergbau, auch mit einem modernisierten Bergrecht, das die Ziele Klimaschutz, Umweltschutz und Bürger*innenbeteiligung vereint, und mit beschleunigten und effektiveren Verwaltungsprozessen für den Rohstoffabbau, um – wo möglich – unabhängiger zu werden von Rohstoffimporten.",
+      "ursachen_ids": [
+        4402
+      ],
+      "pruefsumme": "a891fb1dc3efca97"
+    },
+    {
+      "kennung": "M33",
+      "ebene": "bund",
+      "beschreibung": "Abfallvermeidung, Wiederverwendung und Recycling für eine Kreislaufwirtschaft fördern.",
+      "zitat": "Zweitens fördern wir Abfallvermeidung, Langlebigkeit, Wiederverwendung, Reparatur und Recycling für den Aufbau einer effektiven Kreislaufwirtschaft.",
+      "ursachen_ids": [
+        4402
+      ],
+      "pruefsumme": "8673e8c9c9037215"
+    },
+    {
+      "kennung": "M34",
+      "ebene": "bund",
+      "beschreibung": "Versorgung durch heimischen Rohstoffabbau sichern und Wertstoffe aus Recycling als Rohstoffe nutzen",
+      "zitat": "Wir sichern die Versorgung auch durch einen verantwortungsvollen, heimischen Abbau. Zudem verstehen wir die aus Recycling entstandenen Wertstoffe als Rohstoffe 2.0.",
+      "ursachen_ids": [
+        4402
+      ],
+      "pruefsumme": "e6ea241d22ad753e"
+    },
+    {
+      "kennung": "M35",
+      "ebene": "bund",
+      "beschreibung": "Rohstoffabkommen mit anderen Ländern demokratisch, sozial und ökologisch gestalten und Wertschöpfung vor Ort fördern",
+      "zitat": "Die Rohstoffabkommen Deutschlands mit anderen Ländern müssen demokratisch, sozial und ökologisch gestaltet sein und sollen zum Aufbau einer nachhaltigen Wertschöpfung vor Ort beitragen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4402
+      ],
+      "pruefsumme": "e740120a52220c98"
+    },
+    {
+      "kennung": "M36",
+      "ebene": "bund",
+      "beschreibung": "Bei Ausschreibungen in abhängigen Sektoren Resilienzvorgaben des Net-Zero Industry Act anwenden.",
+      "zitat": "Um unsere Unabhängigkeit und ungestörte Lieferketten zu sichern, gehen wir bei Ausschreibungen in Sektoren mit hoher Abhängigkeit entsprechend der Resilienzvorgaben des Net-Zero Industry Acts vor.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4402
+      ],
+      "pruefsumme": "45f5ff5bd71f74c1"
+    },
+    {
+      "kennung": "M37",
+      "ebene": "bund",
+      "beschreibung": "Transatlantische Handelsbeziehungen durch sektorale Abkommen vertiefen, etwa ein Industriezölle-Abkommen",
+      "zitat": "Für uns [Partei] ist der Ausbau der transatlantischen Handelsbeziehungen ein Schwerpunkt, mindestens durch sektorale Abkommen (z.B. einem Industriezölle-Abkommen)",
+      "ursachen_ids": [
+        4401
+      ],
+      "pruefsumme": "02723c08f44efe25"
+    },
+    {
+      "kennung": "M38",
+      "ebene": "bund",
+      "beschreibung": "Vorhandene Handelshemmnisse beseitigen",
+      "zitat": "Den internationalen Handel fördern wir, indem wir: […] vorhandene Handelshemmnisse beseitigen",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4401
+      ],
+      "pruefsumme": "ec352b147df833ae"
+    },
+    {
+      "kennung": "M39",
+      "ebene": "bund",
+      "beschreibung": "Ausgleichszölle auf EU-Ebene unterstützen, wo unfaire Handelspraktiken geboten sind, etwa auf Stahl.",
+      "zitat": "Unfaire Handelspraktiken und Marktverzerrungen erfordern entschiedenes Handeln – deshalb setzen wir uns, wo es geboten ist, bei der EU-Kommission für Ausgleichszölle ein, etwa auf Stahl.",
+      "ursachen_ids": [
+        4403
+      ],
+      "pruefsumme": "ddb894b2ec671898"
+    },
+    {
+      "kennung": "M40",
+      "ebene": "bund",
+      "beschreibung": "Rohstofffonds schaffen und die heimische Rohstoffgewinnung ausbauen.",
+      "zitat": "Um unsere heimische Industrie mit Rohstoffen zu versorgen, setzen wir auf den neu geschaffenen Rohstofffonds, werden die heimische Rohstoffgewinnung voranbringen und uns für eine koordinierte Rohstoffstrategie der EU einsetzen.",
+      "ursachen_ids": [
+        4402
+      ],
+      "pruefsumme": "50cd1671fa0a9e79"
+    },
+    {
+      "kennung": "M41",
+      "ebene": "bund",
+      "beschreibung": "Internationale Abkommen mit Standards, damit heimische Anbieter nicht von Billigproduzenten verdrängt werden",
+      "zitat": "Was wir brauchen, sind internationale Abkommen, die die Versorgungssicherheit und den Zugang zu wichtigen Absatzmärkten gewährleisten sowie soziale, menschenrechtliche und ökologische Standards sichern, damit heimische Anbieter nicht von weniger regulierten ausländischen Billigproduzenten vom Markt verdrängt werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4403
+      ],
+      "pruefsumme": "b0d0d83d68f66c13"
+    },
+    {
+      "kennung": "M42",
+      "ebene": "bund",
+      "beschreibung": "Handelsabkommen wie das Mercosur-Abkommen ablehnen, die Konkurrenzdruck durch Importe erhöhen",
+      "zitat": "Handelsabkommen, die den Konkurrenzdruck für unsere heimische Landwirtschaft erhöhen, wie das Mercosur-Abkommen, lehnen wir ab.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4403
+      ],
+      "pruefsumme": "4efa16bff7aa00b7"
+    },
+    {
+      "kennung": "M43",
+      "ebene": "bund",
+      "beschreibung": "Regionale Wirtschaftskreisläufe fördern und Importabhängigkeiten verringern",
+      "zitat": "Wir wollen regionale Wirtschaftskreisläufe fördern und Importabhängigkeiten verringern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4402,
+        4403
+      ],
+      "pruefsumme": "921324535d27021d"
+    },
+    {
+      "kennung": "M44",
+      "ebene": "bund",
+      "beschreibung": "Sich an US-Wirtschaftssanktionen nicht beteiligen",
+      "zitat": "Deutschland hat daher ein elementares wirtschaftliches Interesse, sich an den von Washington im Interesse der US-Wirtschaft vorangetriebenen Wirtschaftssanktionen nicht zu beteiligen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4401
+      ],
+      "pruefsumme": "9b9b411847086427"
+    },
+    {
+      "kennung": "M45",
+      "ebene": "bund",
+      "beschreibung": "Freihandels- und Investitionsschutzabkommen ablehnen, stattdessen Kooperationsabkommen mit sozialen und ökologischen Standards",
+      "zitat": "Freihandels- und Investitionsschutzabkommen, die in erster Linie darauf abzielen, im Interesse multinationaler Konzerne soziale Rechte oder andere nationale Regeln außer Kraft zu setzen, lehnen wir ab.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4401
+      ],
+      "pruefsumme": "63d504be7409c350"
+    },
+    {
+      "kennung": "M46",
+      "ebene": "bund",
+      "beschreibung": "Mit Kennzeichnung der Lebensdauer Hersteller zu langlebigeren Produkten bewegen",
+      "zitat": "Wir wollen mit einer Kennzeichnungspflicht für die Lebensdauer den Druck auf die Hersteller erhöhen, ihre Produkte langlebiger zu produzieren.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4402
+      ],
+      "pruefsumme": "e230fb0d69cea53c"
+    },
+    {
+      "kennung": "M47",
+      "ebene": "bund",
+      "beschreibung": "Bundesregierung soll sich in der EU-Handelspolitik gegen unfaire Handelspraktiken der USA zur Wehr setzen",
+      "zitat": "Wir fordern, dass die Bundesregierung im Rahmen der EU-Handelspolitik darauf drängt, dass wir uns gegen unfaire Handelspraktiken auch der USA zur Wehr setzen.",
+      "ursachen_ids": [
+        4401
+      ],
+      "pruefsumme": "10dd961477e3b1ec"
+    }
+  ],
+  "teilbewertung": {
+    "vorherige_pruefsumme": "8871d296a9b1b42c9cce1d358a39e90a20f864bf2756b73eb87af0667b3356d5",
+    "zu_bewerten": [
+      "M41",
+      "M42",
+      "M43",
+      "M44",
+      "M45",
+      "M46",
+      "M47"
+    ],
+    "bisher": {
+      "neue_instrumente": [
+        {
+          "kennung": "I1",
+          "name": "Neue EU-Freihandelsabkommen mit Drittstaaten zügig abschließen und Absatzmärkte diversifizieren (Bund)",
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 1,
+          "begruendung": "Modellrechnungen (ifo 2025) zeigen, dass Abkommen u. a. mit Mercosur, Indien und ASEAN-Staaten die Exportverluste durch US-Zölle ausgleichen könnten; Zollsätze der USA ändern sie nicht. Abschluss liegt bei der EU und braucht Zustimmung der Partner.",
+          "evidenz": "gemischt"
+        },
+        {
+          "kennung": "I2",
+          "name": "Mit den USA über Abbau von Zöllen und Handelshemmnissen verhandeln, etwa sektorale Abkommen (Bund)",
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 1,
+          "begruendung": "Setzt direkt an den US-Zöllen an; ein Industriezoll-Abkommen würde Exporte entlasten. Ergebnis hängt vom Willen der US-Regierung ab, Handelspolitik ist EU-Zuständigkeit; die Verhandlungen 2025 brachten nur begrenzte Senkungen.",
+          "evidenz": "offen"
+        },
+        {
+          "kennung": "I3",
+          "name": "Rohstoffpartnerschaften und Abkommen zur Diversifizierung der Rohstoffbezugsquellen (Bund)",
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "begruendung": "Japan senkte nach 2010 mit Partnerschaften und staatlich gestützten Investitionen seine Abhängigkeit von China bei Seltenen Erden von über 90 auf 60–70 %. Partnerschaften ohne Finanzierung brachten in Deutschland bisher kaum Lieferungen.",
+          "evidenz": "gemischt",
+          "beleg_studie_url": "https://thenightly.com.au/politics/world/the-new-york-times-how-japan-built-a-rare-earth-supply-chain-without-china-c-20939714"
+        },
+        {
+          "kennung": "I4",
+          "name": "Heimischen und europäischen Rohstoffabbau durch modernisiertes Bergrecht und schnellere Verfahren stärken (Bund)",
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Mehr eigene Förderung verringert Importabhängigkeit; neue Bergwerke brauchen aber im Schnitt weit über zehn Jahre bis zur Produktion, und für viele kritische Rohstoffe fehlen in Deutschland abbauwürdige Vorkommen.",
+          "evidenz": "offen"
+        },
+        {
+          "kennung": "I5",
+          "name": "Recycling und Kreislaufwirtschaft fördern, Recycling- und Einsatzquoten erhöhen (Bund)",
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Recycling ersetzt langfristig Primärrohstoffe; bei Seltenen Erden liegt die Recyclingquote aber nur bei etwa 1 %, und Rückläufe aus langlebigen Produkten kommen spät. Quoten sind teils EU-rechtlich vorgeprägt.",
+          "evidenz": "belegt",
+          "beleg_studie_url": "https://www.jyu.fi/en/news/towards-better-autonomy-rare-earth-elements-recycled-from-waste"
+        },
+        {
+          "kennung": "I6",
+          "name": "Gegen zollfreie Billigsendungen und unsichere Produkte aus Drittstaaten vorgehen, Zollkontrollen verschärfen (Bund)",
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Schließt Lücken, über die Kleinsendungen zoll- und kontrollfrei hereinkommen; die EU hat die Abschaffung der 150-Euro-Freigrenze beschlossen. Der Effekt auf heimische Hersteller ist kaum untersucht; Händler weichen etwa auf EU-Lager aus.",
+          "evidenz": "offen"
+        },
+        {
+          "kennung": "I7",
+          "name": "EU-Handelsschutz nutzen: Antisubventions- und Antidumpingverfahren, Ausgleichszölle (Bund)",
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 1,
+          "begruendung": "Antidumpingzölle senken Einfuhren aus China deutlich (Felbermayr/Sandkamp), helfen aber vor allem schwächeren Herstellern und schaden Weiterverarbeitern; Nettoeffekt auf Beschäftigung eher negativ. Verfahren führt die EU-Kommission.",
+          "evidenz": "gemischt",
+          "beleg_studie_url": "https://www.ifo.de/en/cesifo/publications/2018/working-paper/trade-effects-anti-dumping-duties-firm-level-evidence-china"
+        },
+        {
+          "kennung": "I8",
+          "name": "CO₂-Grenzausgleich (CBAM) nachbessern: Anwendungsbereich, Verfahren, Exportentlastung (Bund)",
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "begruendung": "Ein wirksamerer CBAM gleicht CO₂-Kosten bei Importen von Stahl, Zement u. a. aus und mindert Wettbewerbsnachteile; er betrifft nur wenige Branchen, Studien sehen Lücken bei Weiterverarbeitern. Änderung liegt bei der EU.",
+          "evidenz": "gemischt"
+        }
+      ],
+      "zuordnung": [
+        {
+          "kennung": "M01",
+          "ursachen": []
+        },
+        {
+          "kennung": "M02",
+          "instrument": "I2",
+          "ursachen": [
+            4401
+          ]
+        },
+        {
+          "kennung": "M03",
+          "instrument": "I6",
+          "ursachen": [
+            4403
+          ]
+        },
+        {
+          "kennung": "M04",
+          "ursachen": []
+        },
+        {
+          "kennung": "M05",
+          "instrument": "I3",
+          "ursachen": [
+            4402
+          ]
+        },
+        {
+          "kennung": "M06",
+          "einzeln": {
+            "wirksamkeit": 2,
+            "umsetzbarkeit": 2,
+            "begruendung": "Lenkt geförderte Nachfrage etwa bei E-Autos auf europäische Produktion und mindert so Importdruck; die OECD sieht bei Local-Content-Vorgaben höhere Kosten und Einbußen in anderen Branchen. Ausgestaltung muss EU- und WTO-Recht beachten.",
+            "evidenz": "gemischt",
+            "beleg_studie_url": "https://ideas.repec.org/p/oec/traaab/209-en.html"
+          },
+          "ursachen": [
+            4403
+          ]
+        },
+        {
+          "kennung": "M07",
+          "einzeln": {
+            "wirksamkeit": 1,
+            "umsetzbarkeit": 1,
+            "begruendung": "Eine EU-Resilienzstrategie kann Abhängigkeiten bei Rohstoffen und Vorprodukten verringern; der Text bleibt ohne konkrete Instrumente, und die Umsetzung hängt von EU-Entscheidungen ab.",
+            "evidenz": "offen"
+          },
+          "ursachen": [
+            4402
+          ]
+        },
+        {
+          "kennung": "M08",
+          "instrument": "I8",
+          "ursachen": [
+            4403
+          ]
+        },
+        {
+          "kennung": "M09",
+          "ursachen": []
+        },
+        {
+          "kennung": "M10",
+          "instrument": "I3",
+          "ursachen": [
+            4402
+          ]
+        },
+        {
+          "kennung": "M11",
+          "ursachen": []
+        },
+        {
+          "kennung": "M12",
+          "instrument": "I3",
+          "ursachen": [
+            4402
+          ]
+        },
+        {
+          "kennung": "M13",
+          "ursachen": []
+        },
+        {
+          "kennung": "M14",
+          "instrument": "I5",
+          "ursachen": [
+            4402
+          ]
+        },
+        {
+          "kennung": "M15",
+          "instrument": "I1",
+          "ursachen": [
+            4401
+          ]
+        },
+        {
+          "kennung": "M16",
+          "instrument": "I3",
+          "ursachen": [
+            4402
+          ]
+        },
+        {
+          "kennung": "M17",
+          "instrument": "I7",
+          "ursachen": [
+            4403
+          ]
+        },
+        {
+          "kennung": "M18",
+          "ursachen": []
+        },
+        {
+          "kennung": "M19",
+          "einzeln": {
+            "wirksamkeit": 0,
+            "umsetzbarkeit": 1,
+            "begruendung": "Die Abschaffung des CO₂-Grenzausgleichs entlastet Importeure, mindert aber den Schutz heimischer Hersteller vor CO₂-intensiven Importen; zum Ziel trägt sie nicht bei. Änderung nur durch EU-Beschluss.",
+            "evidenz": "gemischt"
+          },
+          "ursachen": [
+            4403
+          ]
+        },
+        {
+          "kennung": "M20",
+          "instrument": "I5",
+          "ursachen": [
+            4402
+          ]
+        },
+        {
+          "kennung": "M21",
+          "instrument": "I1",
+          "ursachen": [
+            4401
+          ]
+        },
+        {
+          "kennung": "M22",
+          "einzeln": {
+            "wirksamkeit": 1,
+            "umsetzbarkeit": 1,
+            "begruendung": "WTO-Reform und Zusammenarbeit mit weiteren Wirtschaftsräumen können Zollkonflikte entschärfen und Absatzmärkte öffnen; der Text bleibt unbestimmt, und Ergebnisse hängen von vielen anderen Staaten ab.",
+            "evidenz": "offen"
+          },
+          "ursachen": [
+            4401
+          ]
+        },
+        {
+          "kennung": "M23",
+          "ursachen": []
+        },
+        {
+          "kennung": "M24",
+          "einzeln": {
+            "wirksamkeit": 1,
+            "umsetzbarkeit": 1,
+            "begruendung": "Schutz vor Billigimporten mit geringeren Standards (etwa Spiegelklauseln) kann Agrarbetriebe entlasten; ein Instrument nennt der Text nicht, Handelspolitik ist EU-Zuständigkeit und WTO-rechtlich begrenzt.",
+            "evidenz": "offen"
+          },
+          "ursachen": [
+            4403
+          ]
+        },
+        {
+          "kennung": "M25",
+          "instrument": "I3",
+          "ursachen": [
+            4402
+          ]
+        },
+        {
+          "kennung": "M26",
+          "instrument": "I6",
+          "ursachen": [
+            4403
+          ]
+        },
+        {
+          "kennung": "M27",
+          "instrument": "I2",
+          "ursachen": [
+            4401
+          ]
+        },
+        {
+          "kennung": "M28",
+          "instrument": "I5",
+          "ursachen": [
+            4402
+          ]
+        },
+        {
+          "kennung": "M29",
+          "instrument": "I1",
+          "ursachen": [
+            4401
+          ]
+        },
+        {
+          "kennung": "M30",
+          "instrument": "I8",
+          "ursachen": [
+            4403
+          ]
+        },
+        {
+          "kennung": "M31",
+          "einzeln": {
+            "wirksamkeit": 2,
+            "umsetzbarkeit": 2,
+            "begruendung": "Vorräte überbrücken Lieferstopps bei Exportbeschränkungen direkt; Japan betreibt ein solches System seit Jahren. Wirkungen sind kaum evaluiert, Vorräte lösen die Abhängigkeit nicht, und die steuerliche Rücklage kostet Einnahmen.",
+            "evidenz": "offen"
+          },
+          "ursachen": [
+            4402
+          ]
+        },
+        {
+          "kennung": "M32",
+          "instrument": "I4",
+          "ursachen": [
+            4402
+          ]
+        },
+        {
+          "kennung": "M33",
+          "instrument": "I5",
+          "ursachen": [
+            4402
+          ]
+        },
+        {
+          "kennung": "M34",
+          "instrument": "I4",
+          "ursachen": [
+            4402
+          ]
+        },
+        {
+          "kennung": "M35",
+          "ursachen": []
+        },
+        {
+          "kennung": "M36",
+          "einzeln": {
+            "wirksamkeit": 1,
+            "umsetzbarkeit": 3,
+            "begruendung": "Resilienzkriterien in Ausschreibungen (etwa Wind, Solar) mindern die Abhängigkeit von einzelnen Lieferländern bei Vorprodukten; die EU-Vorgaben gelten bereits, die Wirkung ist noch nicht untersucht und kann Kosten erhöhen.",
+            "evidenz": "offen"
+          },
+          "ursachen": [
+            4402
+          ]
+        },
+        {
+          "kennung": "M37",
+          "instrument": "I2",
+          "ursachen": [
+            4401
+          ]
+        },
+        {
+          "kennung": "M38",
+          "einzeln": {
+            "wirksamkeit": 1,
+            "umsetzbarkeit": 1,
+            "begruendung": "Abbau von Handelshemmnissen kann Exporte erleichtern; der Text nennt weder Partner noch Weg, und gegen US-Zölle hilft eigener Abbau nur über Verhandlungen auf EU-Ebene.",
+            "evidenz": "offen"
+          },
+          "ursachen": [
+            4401
+          ]
+        },
+        {
+          "kennung": "M39",
+          "instrument": "I7",
+          "ursachen": [
+            4403
+          ]
+        },
+        {
+          "kennung": "M40",
+          "einzeln": {
+            "wirksamkeit": 2,
+            "umsetzbarkeit": 3,
+            "begruendung": "Ein staatlicher Rohstofffonds kann wie in Japan Projekte außerhalb Chinas mitfinanzieren und Abhängigkeit spürbar senken; der Fonds besteht bereits. Heimische Förderung wirkt erst nach vielen Jahren.",
+            "evidenz": "belegt",
+            "beleg_studie_url": "https://thenightly.com.au/politics/world/the-new-york-times-how-japan-built-a-rare-earth-supply-chain-without-china-c-20939714"
+          },
+          "ursachen": [
+            4402
+          ]
+        }
+      ]
+    }
+  }
+}

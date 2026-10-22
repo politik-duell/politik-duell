@@ -1,0 +1,865 @@
+{
+  "id": 42,
+  "name": "Steuern und Abgaben",
+  "beschreibung": "Vom Bruttolohn bleibt vielen zu wenig netto. Viele fürchten, dass Steuern steigen oder staatliche Leistungen gekürzt werden.",
+  "ziel": "Beschäftigte behalten von ihrem Bruttolohn so viel, dass sie damit auskommen, und können sich auf die Höhe von Abgaben und staatlichen Leistungen verlassen.",
+  "schlagwoerter": ["steuern", "abgaben", "sozialabgaben", "netto", "nettolohn", "lohnsteuer", "einkommensteuer", "steuererhoehung", "leistungskuerzung", "kalte progression", "steuerlast", "staatsschulden"],
+  "ursachen": [
+    {
+      "id": 4201,
+      "beschreibung": "Die Einkommensteuer steigt real, wenn Löhne und Preise steigen, der Tarif aber nicht im gleichen Maß angepasst wird (kalte Progression). Ab 2027 ist offen, ob der Ausgleich weiterläuft.",
+      "alltag": "Ich merke, dass mehr Lohn kaum mehr netto bleibt, weil die Steuer schneller steigt als mein Gehalt.",
+      "quelle_url": "https://publikationen.bundesbank.de/publikationen-de/berichte-studien/monatsberichte/monatsbericht-mai-2026-994554?article=oeffentliche-finanzen-994446",
+      "ebene": "bund",
+      "schlagwoerter": ["kalte progression", "einkommensteuer", "tarif", "progressionsausgleich", "lohnsteuer"]
+    },
+    {
+      "id": 4202,
+      "beschreibung": "Der Bund gibt mehr aus, als seine laufenden Einnahmen decken: Das Defizit steigt, die Verschuldung wächst und die Zinsausgaben steigen stark.",
+      "alltag": "Ich frage mich, ob der Staat seine Schulden so in den Griff bekommt, dass die Leistungen bleiben, auf die ich mich verlasse.",
+      "quelle_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/07/PD26_267_713.html",
+      "ebene": "bund",
+      "schlagwoerter": ["haushalt", "staatsschulden", "schulden", "neuverschuldung", "zinsen", "bundeshaushalt", "defizit"]
+    },
+    {
+      "id": 4203,
+      "beschreibung": "Die Steuereinnahmen stammen zum größten Teil aus Lohn- und Umsatzsteuer; Erbschaftsteuer und andere vermögensbezogene Steuern machen nur einen kleinen Anteil aus.",
+      "alltag": "Ich sehe, dass mein Lohn und meine Einkäufe den größten Teil der Steuern tragen, andere Einnahmequellen deutlich weniger.",
+      "quelle_url": "https://www.destatis.de/DE/Themen/Staat/Steuern/Steuereinnahmen/steuereinnahmen.html",
+      "ebene": "bund",
+      "schlagwoerter": ["lohnsteuer", "umsatzsteuer", "mehrwertsteuer", "erbschaftsteuer", "steuerverteilung", "steuereinnahmen"]
+    }
+  ],
+  "freigabe": {
+    "datum": "2026-10-21",
+    "art": "ki"
+  },
+  "instrumente": [
+    {
+      "id": 10759,
+      "name": "Einkommensteuertarif und Freibeträge automatisch an die Inflation anpassen (Bund)",
+      "wirksamkeit": 3,
+      "umsetzbarkeit": 3,
+      "begruendung": "Setzt direkt an der kalten Progression an; Schweiz, USA, Kanada, Belgien u. a. indexieren automatisch, Simulationen zeigen weitgehenden Ausgleich. Dagegen: Einnahmeausfall gegenüber Status quo und weniger Budgetspielraum; einfaches Bundesgesetz mit Bundesratszustimmung.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.wirtschaftsdienst.eu/inhalt/jahr/2016/heft/10/beitrag/moeglichkeiten-zur-kompensation-der-kalten-progression-wirkung-in-oesterreich.html",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10760,
+      "name": "Grundfreibetrag der Einkommensteuer stark anheben (auf etwa 15.000 bis 17.000 Euro) (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "Entlastet alle Steuerpflichtigen spürbar und gleicht aufgelaufene kalte Progression mehr als aus. Dagegen: einmaliger Schritt ohne dauerhafte Anpassung und Ausfälle in zweistelliger Milliardenhöhe ohne geklärte Gegenfinanzierung.",
+      "evidenz": "belegt",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10761,
+      "name": "Einkommensteuertarif abflachen und Spitzensteuersatz später greifen lassen, ohne Gegenfinanzierung (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "Mildert den steilen Progressionsverlauf bei mittleren Einkommen, an dem die kalte Progression besonders wirkt. Dagegen: einmalige Änderung ohne Indexierung, Entlastung absolut v. a. bei höheren Einkommen, hohe Ausfälle ohne Finanzierung.",
+      "evidenz": "gemischt",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10762,
+      "name": "Einkommensteuertarif umbauen: untere und mittlere Einkommen entlasten, hohe stärker belasten (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Senkt die Belastung der Mehrheit der Beschäftigten und ist teilweise gegenfinanziert. Dagegen: keine dauerhafte Inflationsanpassung, Ausweichreaktionen hoher Einkommen mindern die Gegenfinanzierung.",
+      "evidenz": "gemischt",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10763,
+      "name": "Schuldenbremse einhalten, keine Lockerung (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Fiskalregeln gehen laut IWF mit niedrigeren Defiziten einher, besonders bei verbindlicher Ausgestaltung. Dagegen: kausaler Effekt umstritten, Regeln drücken oft Investitionen; geltendes Recht, daher leicht umsetzbar.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.imf.org/-/media/files/publications/sdn/2018/sdn1804-on-second-generation-fiscal-rules.pdf.md",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10764,
+      "name": "Schuldenbremse lockern oder abschaffen, um Investitionen über Kredite zu finanzieren (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Kann Investitionsstau abbauen und Wachstum stützen; IWF verweist auf Investitionsverdrängung durch starre Regeln. Dagegen: erhöht Defizit und Zinslast unmittelbar; erfordert Grundgesetzänderung mit Zweidrittelmehrheit, EU-Regeln gelten weiter.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.imf.org/-/media/files/publications/sdn/2018/sdn1804-on-second-generation-fiscal-rules.pdf.md",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10765,
+      "name": "Subventionen und Ausgaben systematisch überprüfen und abbauen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Finanzhilfen und Steuervergünstigungen des Bundes umfassen dreistellige Milliardenbeträge, Abbau senkt das Defizit spürbar. Dagegen: Einsparziele bleiben oft unbestimmt, viele Posten sind politisch und rechtlich gebunden.",
+      "evidenz": "gemischt",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10766,
+      "name": "Bundesverwaltung verkleinern (Stellenabbau, Digitalisierung) (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Senkt Personal- und Verwaltungskosten auf längere Sicht. Dagegen: Personalausgaben sind nur ein kleiner Teil des Bundeshaushalts, Digitalisierung kostet zunächst; Einsparungen kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10767,
+      "name": "Steuerhinterziehung und Steuerbetrug stärker verfolgen, Steuerverwaltung personell stärken (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Betriebsprüfer erzielen im Schnitt rund 1 Mio. Euro Mehrergebnis je Jahr, mehr Personal erhöht die Einnahmen. Dagegen: Finanzämter sind Ländersache, Fachkräfte fehlen; der Bund kann nur über Gesetze, Bundesbehörden und Vereinbarungen beitragen.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.zdfheute.de/wirtschaft/kampf-gegen-steuerhinterziehung-finanzamt-100.html",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10768,
+      "name": "Vermögensteuer wieder erheben (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Erhöht den Anteil vermögensbezogener Steuern; DIW schätzt je nach Ausgestaltung zweistellige Milliardenbeträge. Dagegen: Ausweichreaktionen, Bewertungsaufwand und Verfassungsvorgaben zur Bewertung; Aufkommen fließt den Ländern zu.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.diw.de/de/diw_01.c.1002952.de/nachrichten/es_gibt_bessere_wege__vermoegen_zu_besteuern.html",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10769,
+      "name": "Verschonung großer Betriebsvermögen bei der Erbschaftsteuer begrenzen oder Mindeststeuer einführen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Große Betriebsvermögen werden weitgehend steuerfrei übertragen, Schätzungen nennen Ausfälle in Milliardenhöhe; Stundung kann Liquiditätsprobleme mildern. Dagegen: Unternehmensverbände warnen vor Investitionsfolgen, Ausweichgestaltungen möglich.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.wirtschaftsdienst.eu/inhalt/jahr/2016/heft/6/beitrag/die-demontage-der-erbschaftsteuer.html",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10770,
+      "name": "Freibeträge der Erbschaft- und Schenkungsteuer erhöhen oder an die Inflation koppeln (Bund)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 3,
+      "begruendung": "Setzt an der Erbschaftsteuer an, senkt aber deren Aufkommen und verstärkt damit das Übergewicht von Lohn- und Umsatzsteuer. Für einzelne Erben (Eigenheim) entlastend; rechtlich einfach umsetzbar.",
+      "evidenz": "belegt",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10771,
+      "name": "Nationale Finanztransaktionssteuer einführen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Besteuert bisher steuerfreie Kapitaltransaktionen; Frankreich und Italien erheben sie. Dagegen: dortige Einnahmen blieben unter den Prognosen, Handel weicht aus; national einführbar, Bemessungsgrundlage strittig.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://articlegateway.com/index.php/JAF/article/view/6562",
+      "entwurf_herkunft": "blind"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "durchsucht_fuer": [4201, 4202, 4203],
+      "massnahmen": [
+        {
+          "id": 10772,
+          "instrument": 10761,
+          "beschreibung": "Einkommensteuertarif schrittweise senken, Grundfreibetrag erhöhen, Grenze für den Spitzensteuersatz anheben",
+          "ursachen_ids": [4201],
+          "zitat": "Dazu flachen wir den Einkommensteuertarif schrittweise spürbar ab und erhöhen den «Grundfreibetrag». Die Einkommensgrenze für den Spitzensteuersatz erhöhen wir deutlich.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=14",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10773,
+          "instrument": 10759,
+          "beschreibung": "Einkommensteuertarif regelmäßig an die Inflation anpassen, um die kalte Progression auszugleichen",
+          "ursachen_ids": [4201],
+          "zitat": "Deshalb passen wir den Einkommensteuertarif regelmäßig an die Inflation an und gleichen so die kalte Progression aus.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=14",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10774,
+          "instrument": 10770,
+          "beschreibung": "Freibeträge bei der Erbschaftsteuer deutlich erhöhen",
+          "ursachen_ids": [4203],
+          "zitat": "Wir erhöhen die Freibeträge bei der Erbschaftsteuer deutlich. So kann das Eigenheim in höherem Maße steuerfrei vererbt werden.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=34",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10775,
+          "instrument": 10765,
+          "beschreibung": "Kassensturz beim Bund, alle Ausgaben und Subventionen hinterfragen, Ausgaben die ihr Ziel verfehlen entfallen lassen",
+          "ursachen_ids": [4202],
+          "zitat": "Unmittelbar zu Beginn der neuen Wahlperiode machen wir einen ehrlichen Kassensturz und hinterfragen alle Ausgaben, insbesondere die Subventionen. […] Ausgaben, die ihr Ziel verfehlen, müssen entfallen.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=77",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10776,
+          "beschreibung": "Maastricht-Kriterien (Schuldenstand, Defizit) verbindlich halten, Verstöße über automatisiertes Defizitverfahren sanktionieren",
+          "ursachen_ids": [4202],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Verbindliche EU-Defizitregeln können Haushaltsdisziplin stärken. Dagegen: Regeln gelten bereits, ein automatisiertes Verfahren erfordert EU-Beschlüsse, die Deutschland nicht allein treffen kann.",
+          "zitat": "Dabei müssen die Maastricht-Kriterien, insbesondere die Schuldenstandsquote von 60 Prozent und das jährliche Defizit-Kriterium von drei Prozent des Bruttoinlandsproduktes, weiterhin verbindlich bleiben. Verstöße müssen mit einem automatisierten Defizitverfahren sanktioniert werden.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=78",
+          "evidenz": "gemischt",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "durchsucht_fuer": [4201, 4202, 4203],
+      "massnahmen": [
+        {
+          "id": 10777,
+          "instrument": 10762,
+          "beschreibung": "Einkommensteuertarif so entlasten, dass die große Mehrheit der Steuerpflichtigen profitiert; Spitzeneinkommen und -vermögen stärker beteiligen.",
+          "ursachen_ids": [4201],
+          "zitat": "Der Einkommensteuertarif nimmt derzeit gerade mittlere Einkommen relativ stark in Anspruch. Wir wollen die große Mehrheit der Einkommensteuerpflichtigen entlasten (etwa 95 Prozent) und dafür unter anderem Spitzeneinkommen und -vermögen stärker an der Finanzierung des Gemeinwohls und der Modernisierung unseres Landes beteiligen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=23",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10778,
+          "instrument": 10764,
+          "beschreibung": "Schuldenregel im Grundgesetz reformieren, damit Investitionen nicht behindert werden; mehr Kreditspielraum.",
+          "ursachen_ids": [4202],
+          "zitat": "Die aktuelle Schuldenregel ist nicht auf die Herausforderungen unserer Zeit und der Zukunft ausgelegt. Deshalb wollen wir die Schuldenregel im Grundgesetz so reformieren, dass Investitionen in die Zukunftsfähigkeit unseres Landes und in den Wohlstand nicht behindert werden.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=17",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10779,
+          "instrument": 10768,
+          "beschreibung": "Vermögensteuer für sehr hohe Vermögen wieder einführen und so Einnahmen erhöhen.",
+          "ursachen_ids": [4203],
+          "zitat": "Die ausgesetzte Vermögensteuer wollen wir für sehr hohe Vermögen revitalisieren.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=19",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10780,
+          "instrument": 10769,
+          "beschreibung": "Mindestbesteuerung für große Betriebsvermögen bei Erbschaften und Schenkungen einführen.",
+          "ursachen_ids": [4203],
+          "zitat": "Innerhalb des bestehenden progressiven Steuertarifs führen wir eine effektive Mindestbesteuerung für große Betriebsvermögen ein, die auch für vermögenshaltende Familienstiftungen gilt.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=19",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10781,
+          "instrument": 10771,
+          "beschreibung": "Finanztransaktionssteuer einführen, weil Finanztransaktionen bisher nicht besteuert werden.",
+          "ursachen_ids": [4203],
+          "zitat": "Anders als an den Finanzplätzen Paris oder Mailand, werden Finanztransaktionen in Deutschland bisher nicht besteuert. Daher wollen wir eine Finanztransaktionssteuer einführen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=19",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "durchsucht_fuer": [4201, 4202, 4203],
+      "massnahmen": [
+        {
+          "id": 10782,
+          "beschreibung": "Arbeitnehmerpauschbetrag in der Einkommensteuer auf mindestens 1.500 Euro anheben.",
+          "ursachen_ids": [4201],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Der Pauschbetrag ist nicht indexiert; eine Anhebung gleicht Inflation für Beschäftigte teilweise aus und vereinfacht. Dagegen: einmaliger Schritt, Wirkung je Person gering.",
+          "zitat": "Um die Erwerbstätigen bürokratisch und finanziell zu entlasten, werden wir die Arbeitnehmerpauschbeträge in der Einkommensteuererklärung anheben. Wir wollen eine Anhebung auf mindestens 1.500 Euro.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=74",
+          "evidenz": "offen",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10783,
+          "instrument": 10764,
+          "beschreibung": "Schuldenbremse reformieren: Kredite in dem Umfang zulassen, wie der Staat investiert.",
+          "ursachen_ids": [4202],
+          "zitat": "Um die notwendigen Investitionen in Infrastruktur, in die Dekarbonisierung unseres Landes und in eine starke, zukunftsfähige Wirtschaft zu finanzieren, wollen wir die Schuldenbremse im Einklang mit den europäischen Regeln reformieren. Die Aufnahme von staatlichen Krediten soll dazu in dem Umfang ermöglicht werden, wie vom Staat Investitionen getätigt werden.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=36",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10784,
+          "beschreibung": "Steuerschlupflöcher schließen, um den Haushalt zu entlasten.",
+          "ursachen_ids": [4202],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Schließen von Steuerschlupflöchern kann Mehreinnahmen bringen. Dagegen: ohne Benennung konkreter Regelungen bleiben Umfang und Wirkung unbestimmt.",
+          "zitat": "Wir wollen den Haushalt entlasten, indem wir Steuerschlupflöcher schließen […].",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=37",
+          "evidenz": "offen",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10785,
+          "instrument": 10765,
+          "beschreibung": "Klima- und umweltschädliche Subventionen abbauen.",
+          "ursachen_ids": [4202],
+          "zitat": "Und wir wollen insbesondere klima- und umweltschädliche Subventionen abbauen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=37",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10786,
+          "instrument": 10766,
+          "beschreibung": "Verwaltung durch weitere Digitalisierung verschlanken, um den Haushalt zu entlasten.",
+          "ursachen_ids": [4202],
+          "zitat": "Wir wollen den Haushalt entlasten, indem […] die Verwaltung durch die weitere Digitalisierung verschlanken.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=37",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10787,
+          "instrument": 10769,
+          "beschreibung": "Erbschaftsteuer reformieren mit personenbezogenem Lebensfreibetrag und Ausnahmen für sehr große Erbschaften streichen.",
+          "ursachen_ids": [4203],
+          "zitat": "Deswegen fokussieren wir uns auf folgende Maßnahmen: eine Reform der Erbschaftssteuer hin zu einem Modell mit personenbezogenem Lebensfreibetrag, weitgehender Streichung bestehender Ausnahmen für außerordentlich große Erbschaften (selbst bewohntes Eigentum bleibt befreit) und großzügigen Stundungsregelungen",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=73",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "durchsucht_fuer": [4201, 4202, 4203],
+      "massnahmen": [
+        {
+          "id": 10788,
+          "instrument": 10759,
+          "beschreibung": "Einkommensteuer-Freibeträge und Eckwerte automatisch an die Preisentwicklung anpassen",
+          "ursachen_ids": [4201],
+          "zitat": "Damit der Staat nicht zum Profiteur von Inflation und der Steuerzahler nicht Opfer der Kalten Progression wird, wollen wir die Freibeträge und Eckwerte der Einkommensteuer automatisch an die allgemeine Preisentwicklung anpassen (Tarif auf Rädern).",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=14",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10789,
+          "beschreibung": "Grundfreibetrag schrittweise um mindestens 1.000 Euro anheben",
+          "ursachen_ids": [4201],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Höherer Grundfreibetrag entlastet alle Steuerpflichtigen und gleicht einen Teil der kalten Progression aus. Dagegen: einmaliger, mäßiger Schritt ohne dauerhafte Anpassung.",
+          "zitat": "Den Grundfreibetrag wollen wir im Zuge der Bürgergeldreform schrittweise um mindestens 1.000 Euro anheben.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=14",
+          "evidenz": "belegt",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10790,
+          "instrument": 10761,
+          "beschreibung": "Einkommensteuertarif als linear-progressiver Chancentarif, der den Mittelstandsbauch beseitigt",
+          "ursachen_ids": [4201],
+          "zitat": "Dazu wollen wir stufenweise einen linear-progressiven Chancentarif in der Einkommensteuer einführen, der den Mittelstandsbauch vollständig beseitigt.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=14",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10791,
+          "instrument": 10761,
+          "beschreibung": "Spitzensteuersatz erst bei höherem Einkommen greifen lassen (Bindung an die Beitragsbemessungsgrenze)",
+          "ursachen_ids": [4201],
+          "zitat": "Konkret fordern wir, dass sich der Spitzensteuersatz künftig an der aktuellen Beitragsbemessungsgrenze der Rentenversicherung orientiert.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=14",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10792,
+          "instrument": 10763,
+          "beschreibung": "Schuldenbremse im Grundgesetz einhalten",
+          "ursachen_ids": [4202],
+          "zitat": "Freiheit für künftige Generationen bedeutet auch, ihnen keine Schuldenberge zu hinterlassen. Daher ist für uns Freie Demokraten die Einhaltung der im Grundgesetz verankerten Schuldenbremse zentrales Gebot der Generationengerechtigkeit.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=35",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10793,
+          "instrument": 10765,
+          "beschreibung": "Subventionen zurückfahren, bis Finanzhilfen und Steuerermäßigungen zur Wertschöpfung passen",
+          "ursachen_ids": [4202],
+          "zitat": "Wir Freie Demokraten wollen Subventionen zurückfahren, damit Finanzhilfen und Steuerermäßigungen auf ein angemessenes Verhältnis zur wirtschaftlichen Wertschöpfung gebracht werden.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=36",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10794,
+          "beschreibung": "Bundesausgaben stärker auf die originären Aufgaben des Bundes beschränken",
+          "ursachen_ids": [4202],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Begrenzung auf Kernaufgaben kann Ausgaben senken. Dagegen: unbestimmt, welche Ausgaben entfallen; viele Bundesausgaben sind gesetzlich gebunden.",
+          "zitat": "Wir Freie Demokraten wollen Ausgaben des Bundes grundsätzlich stärker auf die originären Aufgaben des Bundes beschränken.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=36",
+          "evidenz": "offen",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10795,
+          "instrument": 10766,
+          "beschreibung": "Stellenzahl in der Bundesverwaltung außerhalb der Sicherheitsbehörden deutlich reduzieren",
+          "ursachen_ids": [4202],
+          "zitat": "Die Stellenzahl in der Bundesverwaltung außerhalb der Sicherheitsbehörden wollen wir deutlich reduzieren.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=37",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10796,
+          "beschreibung": "Staatsbeteiligungen veräußern",
+          "ursachen_ids": [4202],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Bringt einmalige Erlöse, die Schulden tilgen können. Dagegen: kein Beitrag zum strukturellen Defizit, entgangene Dividenden, Erlöse hängen vom Marktumfeld ab.",
+          "zitat": "Wir Freie Demokraten wollen Staatsbeteiligungen veräußern, weil private Investoren die besseren Unternehmer sind.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=36",
+          "evidenz": "offen",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10797,
+          "instrument": 10770,
+          "beschreibung": "Freibeträge der Erbschaft- und Schenkungsteuer automatisch an die Inflationsrate anpassen",
+          "ursachen_ids": [4203],
+          "zitat": "Die Existenz von Unternehmen darf nicht durch die Erbschaft- und Schenkungsteuer gefährdet sein. Wir fordern, dass die Freibeträge automatisch um die Inflationsrate erhöht werden.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=15",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "durchsucht_fuer": [4201, 4202, 4203],
+      "massnahmen": [
+        {
+          "id": 10798,
+          "instrument": 10759,
+          "beschreibung": "Einkommensteuer-Freibeträge an die Inflation koppeln (indexieren)",
+          "ursachen_ids": [4201],
+          "zitat": "Die Freibeträge sollen indexiert werden, um auch zukünftig heimliche Steuererhöhungen auszuschließen.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=59",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10799,
+          "instrument": 10760,
+          "beschreibung": "Einkommensteuer-Grundfreibetrag auf 15.000 Euro erhöhen",
+          "ursachen_ids": [4201],
+          "zitat": "Der einkommensteuerliche Grundfreibetrag soll auf 15.000 Euro erhöht werden, von der bisherigen Anlehnung an sozialhilferechtliche Regelungen wird Abstand genommen.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=59",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10800,
+          "beschreibung": "Beitragszahlungen an die EU drastisch senken",
+          "ursachen_ids": [4202],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Geringere EU-Beiträge würden den Bundeshaushalt entlasten. Dagegen: Finanzrahmen und Eigenmittel erfordern einstimmige EU-Beschlüsse, Rückflüsse aus EU-Programmen fielen ebenfalls weg.",
+          "zitat": "Unter anderem sind die Beitragszahlungen von (2023) knapp 30 Milliarden Euro an die EU drastisch zu reduzieren.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=55",
+          "evidenz": "offen",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10801,
+          "instrument": 10763,
+          "beschreibung": "Schuldenbremse einhalten, keine Aufweichung",
+          "ursachen_ids": [4202],
+          "zitat": "Die im Grundgesetz festgeschriebene Schuldenbremse ist einzuhalten. Die AfD lehnt jedwede Aufweichung der Schuldenbremse entschieden ab.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=55",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10802,
+          "beschreibung": "Erbschaftsteuer und Vermögensteuer abschaffen",
+          "ursachen_ids": [4203],
+          "wirksamkeit": 0,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Setzt an vermögensbezogenen Steuern an, senkt deren Anteil aber weiter und verstärkt das Übergewicht von Lohn- und Umsatzsteuer. Länder verlören ihr Erbschaftsteueraufkommen ohne geklärten Ausgleich.",
+          "zitat": "Die AfD will die derzeit zur Erhebung ausgesetzte Vermögensteuer sowie die Erbschaftssteuer abschaffen.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=61",
+          "evidenz": "belegt",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "durchsucht_fuer": [4201, 4202, 4203],
+      "massnahmen": [
+        {
+          "id": 10803,
+          "instrument": 10760,
+          "beschreibung": "Einkommen bis zu einer festen Grenze im Jahr steuerfrei stellen (Grundfreibetrag)",
+          "ursachen_ids": [4201],
+          "zitat": "Alle zu versteuernden Einkommen unter 16.800 Euro im Jahr bleiben steuerfrei – das entspricht der Höhe unseres Modells des Existenzminimums.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=11",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10804,
+          "instrument": 10762,
+          "beschreibung": "Einkommensteuertarif umgestalten: niedrige Einkommen weniger, hohe Einkommen stärker belasten",
+          "ursachen_ids": [4201],
+          "zitat": "Als Faustregel gilt: Wer (als Single, Steuerklasse I) weniger als 7.000 Euro im Monat brutto verdient, zahlt mit unserem Tarif weniger Steuern.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=11",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10805,
+          "instrument": 10764,
+          "beschreibung": "Schuldenbremse abschaffen, damit öffentliche Investitionen über Kredite finanziert werden können",
+          "ursachen_ids": [4202],
+          "zitat": "Wir fordern die Abschaffung der Schuldenbremse. Es muss wieder möglich sein, öffentliche Investitionen in die Infrastruktur, eine klimaneutrale Industrie und den sozialen Ausgleich über Kredite zu finanzieren.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=13",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10806,
+          "instrument": 10768,
+          "beschreibung": "Vermögensteuer wieder einführen (mit Freibetrag, progressiver Satz)",
+          "ursachen_ids": [4203],
+          "zitat": "Die Linke fordert, dass die Vermögensteuer wieder eingeführt wird […] Geschätzte jährliche Mehreinnahmen: 108 Milliarden Euro.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=10",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10807,
+          "beschreibung": "Einmalige Vermögensabgabe für die Reichsten zur Finanzierung der Krisen- und Transformationskosten",
+          "ursachen_ids": [4202],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Einmalige Vermögensabgabe kann hohe Einnahmen bringen und Kreditbedarf senken. Dagegen: Grundgesetz erlaubt sie nur bei außerordentlichem Finanzbedarf, Bewertung und Ausweichen schwierig, Aufkommen unsicher.",
+          "zitat": "Um die enormen Kosten der sozialen und ökologischen Transformation zu stemmen, fordern wir eine einmalige Vermögensabgabe, die die Reichsten unserer Gesellschaft einmalig belastet. […] So können mindestens 310 Milliarden Euro eingenommen werden.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=11",
+          "evidenz": "gemischt",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10808,
+          "beschreibung": "Übergewinnsteuer von 90 Prozent auf Krisenprofite einführen",
+          "ursachen_ids": [4202],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Kann in Krisen zusätzliche Einnahmen bringen. Dagegen: Abgrenzung von Krisengewinnen schwierig, 90 Prozent verfassungsrechtlich heikel, EU-Solidaritätsbeitrag 2022 brachte weniger als erwartet.",
+          "zitat": "Die Linke fordert die Einführung einer Übergewinnsteuer in Höhe von 90 Prozent auf alle Krisenprofite (Kapitel 1).",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=12",
+          "evidenz": "gemischt",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10809,
+          "instrument": 10767,
+          "beschreibung": "Steuerhinterziehung konsequent verfolgen, Strafverfolger und Finanzämter personell und technisch stärken",
+          "ursachen_ids": [4202],
+          "zitat": "Die Strafverfolgungsbehörden und Finanzämter müssen personell und technisch in die Lage versetzt werden, Steuerhinterziehung als Geschäftsmodell konsequent zu verfolgen.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=13",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10810,
+          "instrument": 10771,
+          "beschreibung": "Finanztransaktionssteuer von 0,1 Prozent auf jede Finanztransaktion",
+          "ursachen_ids": [4203],
+          "zitat": "Wir streiten für eine Finanztransaktionssteuer, um Spekulation auf den Finanzmärkten einzudämmen. Bei jeder Finanztransaktion soll ein Steuersatz von 0,1 Prozent fällig werden.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=12",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10811,
+          "beschreibung": "Grunderwerbsteuer so reformieren, dass Teilkäufe von Immobilien anteilig besteuert werden",
+          "ursachen_ids": [4203],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Erschwert Share Deals und erhöht das Aufkommen einer vermögensbezogenen Steuer. Dagegen: seit 2021 bereits verschärft, Mehreinnahmen begrenzt und den Ländern zufließend.",
+          "zitat": "Wir fordern eine Reform der Grunderwerbsteuer, sodass anteilige Immobilienkäufe (ab über 50 Prozent) entsprechend anteilig besteuert werden.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=11",
+          "evidenz": "offen",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10812,
+          "beschreibung": "Grundsteuer am Verkehrswert ausrichten und nicht auf Mieter umlegen",
+          "ursachen_ids": [4203],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Verkehrswertorientierung stärkt die Grundsteuer als vermögensbezogene Steuer, Umlageverbot verlagert Last auf Eigentümer. Dagegen: Reform eher aufkommensneutral, Länder haben Abweichungsrecht, Bewertung aufwendig.",
+          "zitat": "Wir fordern eine Reform der Grundsteuer, die sich am Verkehrswert des Grundstücks orientiert und nicht auf die Mieter*innen umgelegt werden darf.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=10",
+          "evidenz": "offen",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "durchsucht_fuer": [4201, 4202, 4203],
+      "massnahmen": [
+        {
+          "id": 10813,
+          "beschreibung": "Einkommen bis 7500 Euro brutto steuerlich entlasten",
+          "ursachen_ids": [4201],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Senkt die Steuerlast für die große Mehrheit der Beschäftigten. Dagegen: Umfang und Tarifverlauf unbestimmt, keine dauerhafte Inflationsanpassung, Finanzierung offen.",
+          "zitat": "Wir wollen Einkommen bis zu 7500 Euro brutto steuerlich entlasten.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=16",
+          "evidenz": "gemischt",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10814,
+          "instrument": 10760,
+          "beschreibung": "Steuerlichen Grundfreibetrag deutlich erhöhen, orientiert an der Armutsgefährdungsschwelle",
+          "ursachen_ids": [4201],
+          "zitat": "Wir fordern eine deutliche Erhöhung des steuerlichen Grundfreibetrages, der sich an der Armutsgefährdungsschwelle orientieren sollte.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=17",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10815,
+          "instrument": 10761,
+          "beschreibung": "Spitzensteuersatz erst bei sehr hohen Einkommen ansetzen",
+          "ursachen_ids": [4201],
+          "zitat": "Der Spitzensteuersatz sollte mittlere Einkommen verschonen und erst bei sehr hohen Einkommen einsetzen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=17",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10816,
+          "instrument": 10768,
+          "beschreibung": "Vermögensteuer ab 25 Mio. Euro Vermögen mit 1 bis 3 Prozent wieder einführen",
+          "ursachen_ids": [4203],
+          "zitat": "Die Vermögenssteuer wollen wir für Vermögen ab 25 Millionen Euro mit einem Steuersatz von 1 Prozent reaktivieren, der ab 100 Millionen Euro Vermögen auf 2 Prozent und ab 1 Mrd. Euro auf 3 Prozent steigt.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=17",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10817,
+          "instrument": 10769,
+          "beschreibung": "Vererbte Vermögen oberhalb der Freibeträge gleich besteuern",
+          "ursachen_ids": [4203],
+          "zitat": "Aktuell gilt: je höher das Erbvermögen, desto niedriger der effektive Steuersatz. […] Das wollen wir verändern und alle vererbten Vermögen oberhalb der Freibeträge gleich besteuern.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=17",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10818,
+          "instrument": 10771,
+          "beschreibung": "Finanztransaktionssteuer auf Wertpapier- und Derivategeschäfte einführen",
+          "ursachen_ids": [4203],
+          "zitat": "Auch ist es höchste Zeit, eine Finanztransaktionssteuer für alle Wertpapier- und Derivategeschäfte einzuführen, um hochspekulatives Handeln (und die Entkopplung der Finanzmärkte von der Realwirtschaft) einzudämmen und zu besteuern.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=17",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10819,
+          "beschreibung": "Familien beim ersten selbstgenutzten Eigenheim von der Grunderwerbsteuer befreien",
+          "ursachen_ids": [4203],
+          "wirksamkeit": 0,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Entlastet Ersterwerber laut IW deutlich, senkt aber das Aufkommen einer vermögensbezogenen Steuer und verstärkt so das Gewicht von Lohn- und Umsatzsteuer. Aufkommen und Satzhoheit liegen bei den Ländern, Ausgleich nötig.",
+          "zitat": "Gleichzeitig wollen wir Familien beim Erwerb des ersten selbstgenutzten Eigenheims von der Grunderwerbsteuer befreien.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=17",
+          "beleg_studie_url": "https://www.iwkoeln.de/studien/gutachten/beitrag/tobias-hentze-bjoern-seipelt-michael-voigtlaender-reform-der-grunderwerbsteuer-325128.html",
+          "evidenz": "belegt",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10820,
+          "beschreibung": "Belastungsmoratorium bei der Grundsteuer für Eigenheimbesitzer und Mieter",
+          "ursachen_ids": [4203],
+          "wirksamkeit": 0,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Bremst Mehrbelastungen bei der Grundsteuer, senkt aber das Aufkommen einer vermögensbezogenen Steuer. Hebesätze legen Kommunen fest, Länder haben Abweichungsrecht; der Bund kann kaum allein handeln.",
+          "zitat": "Die Grundsteuer-Reform, die aufkommensneutral sein sollte, führt aktuell zu erheblichen Mehrkosten für Millionen Bürger. Wir fordern ein Belastungsmoratorium für normale Eigenheimbesitzer und Mieter.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=17",
+          "evidenz": "offen",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10821,
+          "instrument": 10764,
+          "beschreibung": "Investitionen in Infrastruktur aus der Schuldenbremse ausklammern",
+          "ursachen_ids": [4202],
+          "zitat": "Wir wollen Investitionen in Brücken, Straßen, Schienen, Schulen, Wohnungen und Netze aus der Schuldenbremse ausklammern […]",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=15",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10822,
+          "beschreibung": "Teure Beraterverträge im Militärbereich beenden, volle Transparenz über Militärausgaben",
+          "ursachen_ids": [4202],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Weniger externe Berater und mehr Transparenz können Ausgaben senken. Dagegen: Einsparvolumen gemessen am Defizit gering, eigenes Fachpersonal muss teils erst aufgebaut werden.",
+          "zitat": "Volle Transparenz über alle Militärausgaben, Schluss mit teuren und sinnlosen Beraterverträgen",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=6",
+          "evidenz": "offen",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10823,
+          "beschreibung": "Rüstungsindustrie zur Haftung für Kostensteigerungen und Verzögerungen verpflichten",
+          "ursachen_ids": [4202],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Bundesrechnungshof: wegen schwacher Verträge konnte die Bundeswehr Mehrkosten nicht dem Auftragnehmer anlasten. Dagegen: Hersteller preisen Risiken ein, wenige Anbieter, Wirkung erst bei neuen Verträgen.",
+          "zitat": "Die Bundesregierung muss die Rüstungsindustrie vertraglich verpflichten, für Kostensteigerungen und Verzögerungen bei Rüstungsprojekten zu haften.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=6",
+          "beleg_studie_url": "https://vergabeblog.de/2018-04-25/bundesrechnungshof-ruegt-unwirtschaftliches-verhalten-in-den-bereichen-gesundheit-steuern-bundeswehr-und-strassenbau/",
+          "evidenz": "offen",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10824,
+          "beschreibung": "Verwaltung soll Open-Source-Lösungen statt teurer Software-Rahmenverträge einsetzen",
+          "ursachen_ids": [4202],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Kann Lizenzkosten senken; München meldete Einsparungen in Millionenhöhe. Dagegen: Umstellung kostet zunächst, München kehrte zu Windows zurück, Einsparungen gemessen am Bundesdefizit gering.",
+          "zitat": "Wir fordern: Statt weitere Milliarden für die Vertiefung unserer Abhängigkeit an US-Monopolisten zu überweisen, sollte die nächste Bundesregierung die Verwaltung dabei unterstützen, Open-Source-Lösungen einzusetzen, die langfristig viel Geld sparen […]",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=43",
+          "beleg_studie_url": "https://www.computerworld.com/article/1398642/switch-to-open-source-successfully-completed-city-of-munich-says.html",
+          "evidenz": "gemischt",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    }
+  ]
+}

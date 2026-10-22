@@ -1,0 +1,93 @@
+{
+  "partei_id": 12,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Tempolimit auf Bundesautobahnen einführen.",
+      "ursachen_ids": [4501],
+      "zitat": "Wir wollen ein Tempolimit von 130 km/h auf Bundesautobahnen einführen.",
+      "seite": 36
+    },
+    {
+      "beschreibung": "Verkehr von der Straße auf Schiene und Wasserstraße lenken.",
+      "ursachen_ids": [4501],
+      "zitat": "Wir werden Verkehr von der Straße vor allem auf die Schiene und auch auf die Wasserstraße lenken.",
+      "seite": 34
+    },
+    {
+      "beschreibung": "Luftverkehrsteuer in eine EU-Klimaabgabe umwandeln, die alle Airlines zahlen.",
+      "ursachen_ids": [4501],
+      "zitat": "Wir wollen die Luftverkehrsteuer in eine EU-Klimaabgabe umwandeln, die von allen Airlines gezahlt wird, auch von denen außerhalb Europas.",
+      "seite": 37
+    },
+    {
+      "beschreibung": "Flottengrenzwerte mit der EU-Kommission beibehalten, aber den Weg dorthin pragmatischer gestalten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [4501],
+      "zitat": "Wir werden mit der EU- Kommission in Verhandlungen treten, die Ziele beizubehalten, aber den Weg dorthin pragmatischer zu gestalten.",
+      "seite": 7
+    },
+    {
+      "beschreibung": "Befristeter Steuerabzug beim Kauf eines in Deutschland produzierten E-Autos, auch beim privaten Neuwagenkauf.",
+      "ursachen_ids": [],
+      "ursachen_offen": [4501],
+      "zitat": "Wir wollen mit einem zeitlich befristeten Steuerabzugsbetrag für die Anschaffung eines in Deutschland produzierten E-Autos auch den privaten Neuwagenkauf fördern.",
+      "seite": 7
+    },
+    {
+      "beschreibung": "Straßen-Engpässe weiterhin beseitigen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [4501],
+      "zitat": "Auch künftig sollen Engpässe auf der Straße beseitigt werden.",
+      "seite": 36
+    },
+    {
+      "beschreibung": "Programm „Jung kauft Alt“ ausbauen, mit Zuschüssen zur energetischen Sanierung.",
+      "ursachen_ids": [],
+      "ursachen_offen": [4502],
+      "zitat": "Das Programm „Jung kauft Alt“ wollen wir verstetigen und ausbauen. […] Durch zinsgünstige Kredite und Zuschüsse zur energetischen Sanierung bekommen sie die Chance, sich ihren Traum zu erfüllen.",
+      "seite": 22
+    },
+    {
+      "beschreibung": "Agrarförderung ab der neuen Förderperiode stärker an Betriebe mit Klimaschutzmaßnahmen knüpfen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [4503],
+      "zitat": "Mit der neuen GAP-Förderperiode ab 2028 wollen wir all jene stärker unterstützen, die die Ressourcen Wasser, Boden und Luft schonen, zum Erhalt der Artenvielfalt beitragen und Maßnahmen zum Klimaschutz und zur Klimaanpassung durchführen.",
+      "seite": 54
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 4503, "name": "Klimaschutz-Förderung in der Landwirtschaft", "seite": 54 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 4504, "seiten": [33, 34], "grund": "Nur Bekenntnisse zu den Klimazielen und zum Umsetzen beschlossener Gesetze (S. 33); keine Regeln zu Gesamtbudget, Sektorzielen oder Nachsteuerung gefunden." }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis (S. 3); Kapitel 12 Klimaschutz (S. 33–34 vollständig); Kapitel 13 Mobilität (S. 34–37 vollständig); Kapitel 14 (S. 37, Luftverkehr und Schifffahrt); Industrie- und Autokapitel (S. 7–8 Ausschnitte mit Autos, Flotte, Dienstwagen); Kapitel 19 Landwirtschaft (S. 52–54, ab Naturschutz bis Landwirtschaft vollständig); S. 22 (Eigentumsförderung „Jung kauft Alt“). Kapitel 6 Wohnen (S. 20–22) nur auf Gebäudebezug geprüft. Kapitel 22 und Außenpolitik (S. 57–66) nur nach Klimabegriffen durchsucht, ohne Ursachenbezug zum Inland.
+
+Nicht erfasst:
+- S. 33–34: Wärmenetze, kommunale Wärmeplanung, Wärmepumpen-Leasing, Fernwärme-Preisaufsicht, Heizkosten: Heizungsart und Wärmeplanung gehören nicht zu 4502 (Ursachen 305, 1601–1604).
+- S. 33–34: CO2-Preis und Klimageld („ein Preis auf den Ausstoß von CO 2 … kann für uns immer nur ein ergänzendes Instrument sein“): Preis- und Kostenfrage, Thema 15.
+- S. 34–36: Ladesäulen, Schnellladen, Tankstellen-Pflicht, Ladepreise, Bezahlsysteme: Thema 15 (1504, 1505).
+- S. 34–36: Deutschlandticket, Bahnangebot, Takt, Fernverkehr, Bahnhöfe: Angebot (Thema 8).
+- S. 36: Führerschein-Kosten, MobilitätsPass: kein Ursachenbezug zu Verkehrsemissionen.
+- S. 33: „Beschlossene Gesetze werden wir umsetzen“ und „Wir bekennen uns klar zu den Klimazielen“: Bekenntnisse (4504).
+- S. 53: Naturschutzfonds, Wälder, Moore, Meeresschutzgebiete: Landnutzung (LULUCF), ausgeschlossen nach R3.
+- S. 54: „Wir wollen den Landwirtinnen und Landwirten … Honorierung … Tierschutz“: keine Emissionsminderung benannt.
+- S. 22: Gebäudetyp E, serielles Bauen: Neubau-Kosten, keine Emissionsminderung im Bestand.
+
+Gleichartige Stellen (nur im Protokoll):
+- Verlagerung (Hebel „Verkehr verlagern“), gleichartig zu S. 34: S. 36 „Fahrradinfrastruktur mit bundesweit vernetzten Radschnellwegen und mit Fahrradparkhäusern“; S. 35 „Trassenpreissystem … für mehr Güter auf der Schiene“.
+- Förderung Antrieb und Flotte, gleichartig zu S. 7 (E-Auto-Steuerabzug): S. 36 „Beschaffung von klimafreundlichen Lkw und Nahverkehrsbussen werden wir fördern“; S. 37 „Forschung und Markthochlauf für nachhaltige Kraftstoffe wie E-Fuels“; S. 37 „Modernisierung der Schiffsflotten unterstützen“; S. 8 „Kfz-Steuer-Befreiung für E-Autos … bis 2035 verlängern“; S. 8 „bessere Abschreibungsbedingungen und Änderungen bei der Dienstwagenbesteuerung“.
+
+Richtungen ohne Maßnahme:
+- 4501 „Nachfrage über Abgaben steuern“ (Lkw-Maut, Verkehrsabgabe): nur die Luftverkehrsabgabe (S. 37) gefunden, erfasst.
+- 4501 „Straßenkapazität ausbauen (gegenläufig)“: erfasst als Engpassbeseitigung (S. 36), als offen.
+- 4502 „Sanierung verpflichten (Ordnungsrecht)“ und „Gebäudehülle sanieren“ (Dämmung): keine Verpflichtung gefunden; S. 22 als Zuschuss erfasst.
+- 4503 „Tierbestand verringern“, „Tierhaltung emissionsärmer machen“, „Düngung begrenzen“, „Abgabe auf Tierhaltung oder Dünger“, „Produktion ins Ausland verlagern“: keine Zusage gefunden; S. 52–54 gelesen (Landwirtschaftskapitel).
+- 4504 „Sektorziele verbindlich machen“, „Gesamtbudget flexibel steuern“, „früher nachsteuern“: keine Regelung gefunden (S. 33–34 gelesen, siehe oben).
+
+Seiten ohne Text: keine betroffen (S. 1, 2, 67, 68).

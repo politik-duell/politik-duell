@@ -1,0 +1,43 @@
+{
+  "thema_id": 45,
+  "stand": "2026-10-21",
+  "herkunft": "Perspektivenprüfung 2026-10-21 (KI-Entwurf, docs/perspektiven-ursachen.md, Thema 45), vor dem Blick in die Programme geschrieben. Noch nicht von der Betreiberin bestätigt.",
+  "regeln": [
+    { "nr": 1, "ursachen": [4501], "text": "Zu 1 gehören die Treibhausgasemissionen des Verkehrs (Straße, Schiene, Luft, Schiff) und die Verfehlung im Verkehrssektor. Nicht dazu: Kosten von Tanken, Strom, E-Autos und Laden (Thema 15, Ursachen 1504, 1505); Bahn- und Busangebot (Thema 8). Treiber des Verkehrs (Fahrleistung, Güter, Flotte, Diesel) sind nicht gelesen und daher nur als ursachen_offen." },
+    { "nr": 2, "ursachen": [4502], "text": "Zu 2 gehören die Emissionen des Gebäudebereichs (Wärme, Gebäudebestand) und die Verfehlung im Gebäudesektor. Nicht dazu: Heizungsart, Heizkosten, Regeln, Wärmeplanung und Mieter (Ursachen 305, 1601 bis 1604). Treiber wie Sanierungstempo und Witterung nur als ursachen_offen, bis ERK Kapitel 10.3 gelesen ist." },
+    { "nr": 3, "ursachen": [4503], "text": "Zu 3 gehören die Treibhausgase der Landwirtschaft (Methan aus Tierhaltung, Lachgas aus Düngung). Nicht dazu: Landnutzung, Wald und Moore (LULUCF) und Lebensmittelpreise (Thema 11). Die Landwirtschaft liegt im Budget im Plus; die Ursache beschreibt das Tempo, nicht die Budgetverfehlung. Grenzfall Moorböden: nur als ursachen_offen." },
+    { "nr": 4, "ursachen": [4504], "text": "Zu 4 gehören die Regeln, wie die Gesamtmenge und die Sektorbudgets verbindlich festgelegt, ausgeglichen und nachgesteuert werden (Klimaschutzgesetz, Gesamtbudget, Sektorausgleich, Nachsteuerung). Nicht dazu: einzelne Maßnahmen in Verkehr, Gebäuden oder Landwirtschaft (Ansatzpunkte in 1 bis 3 sowie 15, 16). Die Richtung der Lösung bleibt offen." }
+  ],
+  "buendel": {
+    "4501": ["Verkehr verlagern (Schiene, Rad)", "Antriebe und Flotte wechseln", "Nachfrage über Abgaben steuern", "Tempo und Fahrverbote", "Straßenkapazität ausbauen (gegenläufig)", "Flugverkehr stärken", "Klimavorschriften für Häfen abbauen", "CO₂-Bepreisung und Emissionshandel", "Straßenkapazität ausbauen", "Förderung alternativer Kraftstoffe und Verbrennertechnik", "Verbrenner-Neuwagen auslaufen lassen", "Förderung kleiner E-Fahrzeuge", "Planungsbeschleunigung für Infrastruktur", "Finanzierung der Straßeninfrastruktur", "Nachhaltige Kraftstoffe für Luft- und Schiffsverkehr", "Verbot von Kurzstreckenflügen", "Ladeinfrastruktur ausbauen"],
+    "4502": ["Gebäudehülle sanieren", "Sanierung verpflichten (Ordnungsrecht)", "Sanierung bezuschussen", "Kappungsgrenzen bei energetischen Sanierungen lockern", "CO2-Zertifikatehandel für Gebäudewärme", "Energetische Sanierung mit Aufstockung verbinden", "Sanierte Gebäude als taxonomiekonform anerkennen", "Anreize für Vermieter zur Nutzung der Sanierungsförderung", "Abriss von Bestandsgebäuden begrenzen", "Sanierungsberatung mit Sanierungsbeauftragten"],
+    "4503": ["Tierbestand verringern", "Tierhaltung emissionsärmer machen", "Düngung begrenzen", "Abgabe auf Tierhaltung oder Dünger", "Produktion ins Ausland verlagern (gegenläufig)", "Moorschutz und Wiedervernässung", "Weidehaltung fördern", "Wiedervernässung von Mooren erleichtern", "Düngemittelalternativen fördern", "Förderung tierschutzgerechter Stallumbauten", "Moore revitalisieren", "Klimaschutz-Förderung in der Landwirtschaft"],
+    "4504": ["Sektorziele verbindlich machen", "Gesamtbudget flexibel steuern (gegenläufig)", "früher nachsteuern", "Aussteigen aus dem Pariser Klimaabkommen", "Klimaneutralität nicht mehr als schnelles Ziel", "Emissionshandel als Leitinstrument mit Obergrenze", "Negativemissionsziel im EU-Klimaziel", "Gesamtbudget flexibel steuern", "Klimaschutz als Gemeinschaftsaufgabe"]
+  },
+  "suchbegriffe": {
+    "4501": {
+      "Verkehr verlagern (Schiene, Rad)": ["schienengueter", "radwegausbau", "radweg"],
+      "Antriebe und Flotte wechseln": ["flottengrenzwert", "e-fuel", "synthetische kraftstoffe", "verbrennerverbot", "verbrenner"],
+      "Nachfrage über Abgaben steuern": ["lkw-maut", "verkehrsabgabe", "co2-preis"],
+      "Tempo und Fahrverbote": ["tempolimit", "fahrverbot"],
+      "Straßenkapazität ausbauen (gegenläufig)": ["autobahnausbau", "strassenneubau"]
+    },
+    "4502": {
+      "Gebäudehülle sanieren": ["daemmung", "gebaeudesanierung"],
+      "Sanierung verpflichten (Ordnungsrecht)": ["sanierungspflicht"],
+      "Sanierung bezuschussen": ["sanierungszuschuss"]
+    },
+    "4503": {
+      "Tierbestand verringern": ["tierbestand", "viehbestand"],
+      "Tierhaltung emissionsärmer machen": ["futterzusatz", "methanhemm"],
+      "Düngung begrenzen": ["stickstoffueberschuss", "duengeverordnung", "stoffstrombilanz"],
+      "Abgabe auf Tierhaltung oder Dünger": ["tierhaltungsabgabe", "stickstoffabgabe"],
+      "Produktion ins Ausland verlagern (gegenläufig)": ["fleischimport", "agrarimport"]
+    },
+    "4504": {
+      "Sektorziele verbindlich machen": ["sektorziel", "sektorziele"],
+      "Gesamtbudget flexibel steuern (gegenläufig)": ["gesamtbudget", "sektorenausgleich"],
+      "früher nachsteuern": ["sofortprogramm", "nachsteuerung"]
+    }
+  }
+}

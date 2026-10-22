@@ -1086,6 +1086,85 @@ Verworfen: Notstrom für Mobilfunk und Festnetz (nur C; Drs. 21/7504 enthält nu
 
 Tragende Zitate: 4101 – hib 591/2026: „Von 1.967 öffentlichen Schutzräumen (Stand 2008) sind 579 übrig“, sie seien „weder funktions- noch einsatzbereit“; „Es wird derzeit mit den Ländern abgestimmt. Eine Finalisierung ist noch nicht erfolgt.“ 4102 – hib 592/2026: Erfassung „den bundesweiten Ist-Bestand an Sirenen“; Ziel, „die kommunalen Sirenen digital über das Modulare Warnsystem (MoWaS) … auszulösen“. 4103 – idw 25. 9. 2024: rund 45 % für zehn Tage ausgestattet, etwa ein Drittel könnte ohne Strom zubereiten (Erhebungsjahr in der Meldung nicht genannt); UBA: rund 30 % (2021) halten ihre Vorsorge für unzureichend.
 
+## Steuern und Abgaben (42)
+
+Stand: 21. 10. 2026 · KI-Entwurf, KI-Freigabe für die Testphase
+
+Aufnahmegrund: Umfrage – R+V „Die Ängste der Deutschen 2026“ (1. 10. 2026): Angst vor Steuererhöhungen oder Leistungskürzungen 53 % (Platz 2); ARD-DeutschlandTrend Oktober 2026: rund drei Viertel sehen die Sozialreformen im Widerspruch zu den Entlastungsversprechen. Abgegrenzt von Preise und Löhne (1104, Abgabenlast auf Arbeit), Rente (701), Krankenkasse (3801–3803) und Arbeitsplätze (506, Hinzuverdienst im Bürgergeld).
+
+Ziel: „Beschäftigte behalten von ihrem Bruttolohn so viel, dass sie damit auskommen, und können sich auf die Höhe von Abgaben und staatlichen Leistungen verlassen.“
+
+| ID | Ursache (kurz) | Ebene | Quelle (Belegstufe) | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 4201 | Kalte Progression, Ausgleich ab 2027 offen | Bund | [Bundesbank, Monatsbericht Mai 2026](https://publikationen.bundesbank.de/publikationen-de/berichte-studien/monatsberichte/monatsbericht-mai-2026-994554?article=oeffentliche-finanzen-994446) (A); [Sechster Steuerprogressionsbericht, Drs. 20/13560](https://dserver.bundestag.de/btd/20/135/2013560.pdf) (A) | Tarif an die Inflation anpassen, Grundfreibetrag anheben; gegenläufig auf den Ausgleich verzichten, um Einnahmen zu sichern |
+| 4202 | Ausgaben über den laufenden Einnahmen, Schulden und Zinsen steigen | Bund | [Destatis PM 267 vom 29. 7. 2026](https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/07/PD26_267_713.html) (A); Bundesbank Mai 2026 (A) | Ausgaben senken (Konsolidierung); Einnahmen erhöhen; Neuverschuldung für Investitionen und Verteidigung zulassen |
+| 4203 | Steuereinnahmen überwiegend aus Lohn- und Umsatzsteuer | Bund | [Destatis, Steuereinnahmen 2025](https://www.destatis.de/DE/Themen/Staat/Steuern/Steuereinnahmen/steuereinnahmen.html) (A) | Vermögen und Erbschaften stärker besteuern; Unternehmen und Kapital entlasten; Konsumsteuern senken oder erhöhen |
+
+Verworfen: **Sozialbeiträge insgesamt steigen** (Summe aus 701 und 3801–3803; SVR-Frühjahrsgutachten 2026 nicht abrufbar, HTTP 503); Haushaltslücke laut Bundesrechnungshof 172 bzw. 108 Mrd. Euro (Stellungnahme nicht abrufbar, HTTP 503; ZDF allein C); Grenzbelastung beim Übergang aus Transferleistungen (Überschneidung mit 506, Studie nicht lesbar); Schätzungen zu Vermögen- und Erbschaftsteuer von DIW und IW (Auftrag von Fraktionen bzw. interessennah, nicht gelesen); Abgabenquote (Definitionen von IW und OECD/BMF nicht vergleichbar).
+
+Tragende Zitate: 4201 – Bundesbank: „Offen ist auch, ob die kalte Progression weiter kompensiert wird“ (ab 2027); Progressionsbericht, S. 2: kalte Progression sind „Steuermehrbelastungen …, die entstehen, soweit Einkommenserhöhungen die Inflation ausgleichen“; S. 4: Volumen 2024 gegenüber 2023 9,58 Mrd. Euro. 4202 – Destatis: „Der Bund war Ende 2025 mit 1 840,4 Milliarden Euro verschuldet“ (+6,2 %); Bundesbank: Defizit des Kernhaushalts 2026 „stark um 32 Mrd € auf fast 100 Mrd €“, Zinsausgaben 29,9 Mrd. Euro (2025) bis 78,7 Mrd. Euro (2030, Prognose). 4203 – Destatis: Steuereinnahmen 2025 989,8 Mrd. Euro, davon Lohnsteuer 262,7 Mrd., Umsatzsteuer 310,2 Mrd., Erbschaftsteuer 15,4 Mrd. Euro.
+
+## Künstliche Intelligenz (43)
+
+Stand: 21. 10. 2026 · KI-Entwurf, KI-Freigabe für die Testphase
+
+Aufnahmegrund: Umfrage – R+V „Die Ängste der Deutschen 2026“ (1. 10. 2026): „Jeder dritte Deutsche fürchtet die Folgen von KI“; ZDF-Politbarometer Oktober I 2026: 60 % sehen bei KI mehr Risiken; ARD-DeutschlandTrend Oktober 2026: rund zwei Drittel sorgen sich um den Verlust menschlicher Kontrolle über KI. Abgegrenzt von Arbeitsplätze (5, Strukturwandel 502), Online-Betrug allgemein (906), Hass im Internet (25) und Mediennutzung von Kindern (33). Förderung des KI-Standorts als Selbstzweck ist kein Alltagsproblem und nicht Teil des Themas.
+
+Ziel: „Menschen werden durch KI nicht getäuscht, nicht ohne Ausweg benachteiligt und können im Beruf mit der KI-Entwicklung Schritt halten.“
+
+| ID | Ursache (kurz) | Ebene | Quelle (Belegstufe) | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 4301 | Viele Tätigkeiten technisch ersetzbar | Bund | [IAB-Kurzbericht 5/2024](https://doku.iab.de/kurzber/2024/kb2024-05.pdf) (A) | KI verdrängt Stellen (Beschäftigtenseite) vs. KI ergänzt Tätigkeiten (Industrieperspektive); Umschulung, Schutz vor Verdrängung, Absicherung, KI-Einsatz vorantreiben |
+| 4302 | KI-Nutzung und Qualifizierung ungleich, Einführung informell | Bund | [BIBB, DiWaBe 2.0, 2. 4. 2025](https://www.bibb.de/de/206074.php) (B) | Rechtsanspruch und Förderung für Geringqualifizierte, Schulungspflicht für Betriebe; gegenläufig Eigenanteil |
+| 4303 | Kriminelle nutzen KI für Angriffe | Bund | [Bundesregierung zum BKA-Lagebild Cybercrime 2025, 12. 5. 2026](https://www.bundesregierung.de/breg-de/aktuelles/cybercrime-2025-2430048) (A) | Strafbarkeit von Deepfakes, Löschpflicht und Plattformhaftung, Verbot von Stimmklonen; gegenläufig: bestehendes Recht reicht, Forschung und offene Modelle nicht vorab beschränken |
+
+Verworfen: **Menschen erkennen KI-Fälschungen kaum** (Cybersicherheitsmonitor 2026 von BSI/ProPK nur über Sekundärberichte, Original nicht gefunden); **fehlende Transparenz und Anfechtbarkeit KI-gestützter Entscheidungen** (nur Rechtstext der KI-Verordnung, keine Befragung oder Aufsichtsdaten gelesen; Eurobarometer HTTP 403); **Täuschung durch KI-Stimmen und -Videos mit Zahl** (BKA-Lagebild im Original nicht abrufbar, HTTP 403 – wieder aufnehmen, sobald gelesen; bis dahin trägt 4303 nur die allgemeine Aussage); Regulierung bremst den Standort (Bitkom, C; kein Alltagsproblem); fehlende Mitbestimmung bei KI-Einführung (kein Beleg); Strafbarkeitslücke bei Deepfakes (BT-Drs. 21/1383 nicht lesbar); KI-bedingter Stellenabbau durch Arbeitgeber (keine amtliche Zahl).
+
+Tragende Zitate: 4301 – IAB, S. 7: Der Anteil der Beschäftigten in Berufen mit hohem Substituierbarkeitspotenzial „ist von 34 Prozent im Jahr 2019 (11,34 Millionen) auf 38 Prozent im Jahr 2022 (13,03 Millionen) gestiegen“; S. 1: Potenziale werden „nicht immer und vollständig ausgeschöpft“. 4302 – BIBB: „So nutzen Beschäftigte ohne Bildungsabschluss etwa nur zu knapp einem Drittel KI, bei Beschäftigten mit einem beruflichen Abschluss sind es 58 Prozent, wohingegen fast 80 Prozent der Beschäftigten mit Hochschul-, Meister- oder Technikerabschluss KI nutzen.“ 4303 – Bundesregierung: „Kriminelle nutzen KI, um Angriffe effizienter und professioneller durchzuführen“ (rund 334.000 Cybercrime-Fälle 2025).
+
+Hinweis Suchbegriffe: Die Begriffe sind bewusst KI-spezifisch zusammengesetzt (etwa „ki-weiterbildung“); `entwurf:treffer --vorab` zeigt vor der Erfassung, ob sie in den Programmen vorkommen.
+
+## Zölle und Handelskonflikte (44)
+
+Stand: 21. 10. 2026 · KI-Entwurf, KI-Freigabe für die Testphase
+
+Aufnahmegrund: Umfrage – ARD-DeutschlandTrend Juni 2026: Wirtschaftslage mit 27 % wichtigstes Problem; ZDF-Politbarometer Oktober I 2026: Wirtschaftslage 17 %; R+V 2026: Angst vor schlechterer Wirtschaftslage 51 %, vor einer gefährlicheren Welt durch die Politik Donald Trumps 45 %. Gefasst als Alltagsproblem (Arbeitsplatz in exportabhängigen Betrieben, Verfügbarkeit von Rohstoffen), nicht als Geopolitik (siehe `daten/README.md`). Abgegrenzt von Arbeitsplätze (501 Wettbewerbsfähigkeit, 502 Strukturwandel, 504 Investitionen) und Energiepreise (303).
+
+Ebene: Handelspolitik ist ausschließliche Zuständigkeit der EU (Art. 207 AEUV, nicht im Original gelesen); die Bundesregierung wirkt im Rat mit, Rohstoffpolitik, Genehmigungen und Hilfen liegen national. Daher `bund`.
+
+Ziel: „Beschäftigte in exportabhängigen Betrieben behalten ihre Arbeit, und wichtige Rohstoffe sind verlässlich verfügbar.“
+
+| ID | Ursache (kurz) | Ebene | Quelle (Belegstufe) | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 4401 | US-Zölle senken die Exporte in die USA | Bund | [Destatis PM N004 vom 20. 1. 2026](https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/01/PD26_N004_51.html) (A) | Zollabbau durch Verhandlung (Kiel Institute: Zolllast zu 96 % bei US-Käufern, C); Gegenzölle verteuern eigene Vorprodukte (Kiel 2021, DIHK 2026); neue Abkommen (ifo/EconPol: bis 1,1 % Industrieproduktion, Modell, C) |
+| 4402 | Seltene Erden überwiegend aus China | Bund | [Destatis PM N023 vom 14. 4. 2026](https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/04/PD26_N023_51.html) (A) | Bezugsländer diversifizieren (IMK 2026, IW 2026); eigene Förderung und Recycling (IW, DIHK); gegenläufig Exportbeschränkungen auf Rohstoffe (DIHK: „riskiert eine Spirale“) |
+| 4403 | Mehr Importe aus China, Wettbewerbsdruck | Bund | [Destatis PM 056 vom 20. 2. 2026](https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/02/PD26_056_51.html) (A) | Ursache laut IMK: US-Zölle und schwache Binnennachfrage in China lenken Ware nach Europa; Handelsschutz (Antidumping) vs. offene Märkte (Jabbour u. a. 2018, J. Int. Econ., B: Nettoeffekte auf Beschäftigung und Exporte überwiegend negativ) |
+
+Verworfen: **Konzentration des Exports auf wenige Märkte und Branchen** (USA rund 9,4 % der Exporte 2025, kein tragender Schwerpunkt; Branchenanteile nur aus nicht lesbarem IW-Report); Zölle verteuern Waren in Deutschland (nicht belegt; Kiel: Last trägt die US-Seite); gestrichene Investitionen (Folge, Doppelung mit 501/504; ifo 2026: 9 % → 16 %); chinesische Überkapazitäten und Subventionen als Erklärung (EP-Studie nicht lesbar); Chinas Exportkontrollen für Seltene Erden (nur Fachmedien); Beschäftigungsabbau durch Zölle mit Zahl (IAB-Bericht 9/2025 nicht lesbar); Hilfen für Betriebe (keine Diagnose gefunden).
+
+Tragende Zitate: 4401 – Destatis: „Infolge der Zollpolitik der US-Regierung haben sich die deutsch-amerikanischen Handelsbeziehungen im Jahr 2025 deutlich abgeschwächt“; Exporte in die USA Januar bis November 2025 135,8 Mrd. Euro, −9,4 %. 4402 – Destatis: „Im Jahr 2025 kamen 55,4 % der importierten Menge aus China (3 000 Tonnen)“ (2024: 65,4 %; EU: 46,8 %). 4403 – Destatis: Importe aus China 170,6 Mrd. Euro, 8,8 % mehr als im Vorjahr.
+
+## Klimaschutz (45)
+
+Stand: 21. 10. 2026 · KI-Entwurf, KI-Freigabe für die Testphase
+
+Aufnahmegrund: Umfrage – ARD-DeutschlandTrend Oktober 2026: sechs von zehn sorgen sich wegen des Klimawandels; ZDF-Politbarometer: Klima/Energie als wichtigstes Problem 22 % (August 2026), 10 % (Oktober I); R+V 2026: 30 %. Auf Wunsch der Betreiberin (21. 10. 2026) als eigenes Thema; bisher waren nur die Folgen erfasst (`daten/README.md`, Erweiterung Hitze und Unwetter). Abgegrenzt von Hitze und Unwetter (18, Anpassung), Energiepreise (3), Autofahren (15) und Heizungstausch (16, Kosten, Regeln, Mieter).
+
+Ziel: „Die Emissionen sinken so schnell, dass die Klimaziele erreichbar bleiben und die Erderwärmung begrenzt wird.“
+
+| ID | Ursache (kurz) | Ebene | Quelle (Belegstufe) | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 4501 | Verkehr: Emissionen sinken nicht, Budget überschritten | Bund | [Expertenrat für Klimafragen, Prüfbericht 2026, Drs. 21/6175](https://dserver.bundestag.de/btd/21/061/2106175.pdf), S. 19–20 (A) | Verlagerung auf Schiene und Rad; Antriebe und Flottengrenzwerte; Maut; Tempolimit und Fahrverbote; gegenläufig Straßenausbau |
+| 4502 | Gebäude: Emissionen steigen, Budget überschritten | Bund | ERK-Prüfbericht 2026, S. 19–20 (A) | Sanieren; Sanierungspflicht; Zuschüsse; Witterung als Erklärung (nicht geprüft) |
+| 4503 | Landwirtschaft: Emissionen nahezu unverändert, Tierhaltung und Düngung | Bund | [UBA, Beitrag der Landwirtschaft](https://umweltbundesamt.de/daten/umweltzustand-trends/land-forstwirtschaft/beitrag-der-landwirtschaft-zu-den-treibhausgas) (A) | Tierbestand verringern; emissionsärmere Tierhaltung; Düngung begrenzen; Abgabe; gegenläufig Verlagerung ins Ausland |
+| 4504 | Ausgleich über das Gesamtbudget, Nachsteuerung erst nach zweimaliger Feststellung | Bund | ERK-Prüfbericht 2026, S. 20 und 29 (A) | Sektorziele wieder verbindlich machen vs. Gesamtbudget flexibel steuern; früher nachsteuern |
+
+Gegenläufige Perspektiven ohne eigene Ursache: Deutschlands Anteil am weltweiten CO₂-Ausstoß 1,48 % (2024, Our World in Data) – eine Frage der Wirksamkeit, keine Ursache des Tempos im Inland; Verlagerung von Emissionen ins Ausland in der Breite nicht nachgewiesen (Koch/Basse Mama 2019, Energy Economics, B; nur Abstract gelesen).
+
+Verworfen: **Treiber im Verkehr** (Güterverkehr wächst: UBA 2015 veraltet, Destatis zeigt seit 2019 einen Rückgang; Fahrleistung und Diesel nicht gelesen); **Sanierungstempo im Gebäudebereich** (nur Verbandsangaben, C; ERK Kapitel 10.3 nicht gelesen); Energiewirtschaft und Industrie (laut ERK unter Budget); „CO₂-Preis zu schwach“ und „Vorgaben fehlen“ (nehmen eine Lösung vorweg). Unklar: Die UBA-PM nennt für den Anstieg bei Gebäuden laut Abruf „kühlere Witterung“, DWD-Meldungen beschreiben 2025 als warm – vor einer Verwendung im Original prüfen.
+
+Tragende Zitate: 4501, 4502 – ERK, S. 19: gestiegene Emissionen „insbesondere in den Sektoren Gebäude (+3,4 Mt CO2-Äq. bzw. +3,4 %) und Verkehr (+2,1 Mt CO2-Äq. bzw. +1,5 %)“; S. 20: Saldo aus „Verkehr (Zielüberschreitung: +60,8 Mt CO2-Äq.) und Gebäude (+23,0 Mt CO2-Äq.)“ gegenüber Energiewirtschaft (−95,5), Industrie (−65,1) und Landwirtschaft (−18,4). 4503 – UBA: 53,3 Mio. t, 8,2 % der Emissionen; Tierhaltung direkt 34,6 Mio. t (64,5 %); Methan 61,6 %, Lachgas 31,9 %. 4504 – ERK, S. 20: maßgeblich ist das Gesamtbudget 2021–2030 von 6 199 Mt CO2-Äq.; S. 29: „Feststellung einer zweimaligen Zielüberschreitung durch den Expertenrat“ als Voraussetzung für weitere Maßnahmen (§ 8 KSG).
+
 ## Forschungsstand: Integration, Abschiebung, Zuzug (1. 10. 2026)
 
 Stand: 1. 10. 2026 · KI-Recherche, noch nicht von der Betreiberin bestätigt. Geprüft am 1. 10. 2026: im Volltext Foged u. a., Dustmann u. a., Gehrsitz/Ungerer, ifo; im Abstract (Verlagsseite) Couttenier u. a., Pinotti, Fasani u. a., Hines/Peri, Lange/Sommerfeld, Marie/Pinotti. Miles/Cox und die Zahlen zu den Abgeschobenen nur über [EconoFact](https://econofact.org/does-deporting-immigrants-lower-crime-evidence-from-secure-communities) (Hines/Peri); die Originalseiten (SSRN) waren nicht abrufbar.

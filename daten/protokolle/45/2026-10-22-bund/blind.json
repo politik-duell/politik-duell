@@ -1,0 +1,1665 @@
+{
+  "pruefsumme": "e918e1b0a95d5890a1f4e2075c64c8f7af216a4b65302076980ea337de4c866e",
+  "thema": {
+    "id": 45,
+    "name": "Klimaschutz",
+    "ziel": "Die Emissionen sinken so schnell, dass die Klimaziele erreichbar bleiben und die Erderwärmung begrenzt wird."
+  },
+  "ursachen": [
+    {
+      "id": 4501,
+      "beschreibung": "Im Verkehr sinken die Emissionen nicht: 2025 lagen sie 2,1 Mio. t über dem Vorjahr, und der Expertenrat sieht den Verkehr für 2021 bis 2030 mit 60,8 Mio. t über seinem Budget.",
+      "ebene": "bund"
+    },
+    {
+      "id": 4502,
+      "beschreibung": "Im Gebäudebereich sinken die Emissionen nicht: 2025 stiegen sie um 3,4 Mio. t, und der Expertenrat sieht das Gebäudebudget für 2021 bis 2030 um 23,0 Mio. t überschritten.",
+      "ebene": "bund"
+    },
+    {
+      "id": 4503,
+      "beschreibung": "Die Emissionen der Landwirtschaft bleiben 2025 nahezu unverändert; Methan aus der Tierhaltung und Lachgas aus der Stickstoffdüngung machen den größten Teil aus.",
+      "ebene": "bund"
+    },
+    {
+      "id": 4504,
+      "beschreibung": "Verfehlungen einzelner Sektoren gleichen Puffer anderer Sektoren im Gesamtbudget aus; nachsteuern muss die Regierung erst, wenn eine Überschreitung zweimal festgestellt ist.",
+      "ebene": "bund"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        4501
+      ],
+      "text": "Zu 1 gehören die Treibhausgasemissionen des Verkehrs (Straße, Schiene, Luft, Schiff) und die Verfehlung im Verkehrssektor. Nicht dazu: Kosten von Tanken, Strom, E-Autos und Laden (Thema 15, Ursachen 1504, 1505); Bahn- und Busangebot (Thema 8). Treiber des Verkehrs (Fahrleistung, Güter, Flotte, Diesel) sind nicht gelesen und daher nur als ursachen_offen."
+    },
+    {
+      "nr": 2,
+      "ursachen": [
+        4502
+      ],
+      "text": "Zu 2 gehören die Emissionen des Gebäudebereichs (Wärme, Gebäudebestand) und die Verfehlung im Gebäudesektor. Nicht dazu: Heizungsart, Heizkosten, Regeln, Wärmeplanung und Mieter (Ursachen 305, 1601 bis 1604). Treiber wie Sanierungstempo und Witterung nur als ursachen_offen, bis ERK Kapitel 10.3 gelesen ist."
+    },
+    {
+      "nr": 3,
+      "ursachen": [
+        4503
+      ],
+      "text": "Zu 3 gehören die Treibhausgase der Landwirtschaft (Methan aus Tierhaltung, Lachgas aus Düngung). Nicht dazu: Landnutzung, Wald und Moore (LULUCF) und Lebensmittelpreise (Thema 11). Die Landwirtschaft liegt im Budget im Plus; die Ursache beschreibt das Tempo, nicht die Budgetverfehlung. Grenzfall Moorböden: nur als ursachen_offen."
+    },
+    {
+      "nr": 4,
+      "ursachen": [
+        4504
+      ],
+      "text": "Zu 4 gehören die Regeln, wie die Gesamtmenge und die Sektorbudgets verbindlich festgelegt, ausgeglichen und nachgesteuert werden (Klimaschutzgesetz, Gesamtbudget, Sektorausgleich, Nachsteuerung). Nicht dazu: einzelne Maßnahmen in Verkehr, Gebäuden oder Landwirtschaft (Ansatzpunkte in 1 bis 3 sowie 15, 16). Die Richtung der Lösung bleibt offen."
+    }
+  ],
+  "instrumente": [],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "bund",
+      "beschreibung": "Wiedervernässung von Mooren unterstützen und Genehmigungen für den Umstieg erleichtern.",
+      "zitat": "Wir unterstützen Landwirt*innen beim Übergang auf nasse Bewirtschaftung und werden die Rahmenbedingungen so gestalten, dass Genehmigungsverfahren für den Umstieg einfacher und schneller funktionieren.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4503
+      ],
+      "pruefsumme": "b95694aa0fe7bf7a"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "bund",
+      "beschreibung": "Generelles Tempolimit von 130 km/h auf Autobahnen, das die Partei als überfällig ansieht.",
+      "zitat": "Ein Sicherheitstempo von 130 km/h auf Autobahnen als generelles «Tempolimit» ist deshalb überfällig.",
+      "ursachen_ids": [
+        4501
+      ],
+      "pruefsumme": "02cd505343840b90"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "bund",
+      "beschreibung": "Weidehaltung auf extensivem Dauergrünland fördern.",
+      "zitat": "Weidehaltung auf extensivem, artenreichem Dauergrünland hat sowohl positive Biodiversitäts- wie auch Klimaeffekte. Das wollen wir ebenso fördern",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4503
+      ],
+      "pruefsumme": "69799b4d210752b0"
+    },
+    {
+      "kennung": "M04",
+      "ebene": "bund",
+      "beschreibung": "CO₂-Steuer abschaffen",
+      "zitat": "Ideologiegetriebene Kosten wie EEG-Umlage, CO₂-Steuer und das Gebäudeenergiegesetz (GEG) werden wir abschaffen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4501
+      ],
+      "pruefsumme": "4a95afb46f5cd7af"
+    },
+    {
+      "kennung": "M05",
+      "ebene": "bund",
+      "beschreibung": "Neue Radwege, Ausbau des Radnetzes und Mobilstationen an Verkehrsknotenpunkten, um Rad und Verkehrsmittel zu verknüpfen",
+      "zitat": "Dazu setzen wir auf neue Radwege, den Ausbau des Netzes und Mobilstationen, vor allem an Verkehrsknotenpunkten.",
+      "ursachen_ids": [
+        4501
+      ],
+      "pruefsumme": "4a6d5a9793e3c35b"
+    },
+    {
+      "kennung": "M06",
+      "ebene": "bund",
+      "beschreibung": "Flughäfen als Wirtschaftsfaktor stärken",
+      "zitat": "Deutschlands Flughäfen sind als Wirtschaftsfaktor zu stärken.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4501
+      ],
+      "pruefsumme": "c3a4140076b8b483"
+    },
+    {
+      "kennung": "M07",
+      "ebene": "bund",
+      "beschreibung": "Klimaschutz und Klimaanpassung als Gemeinschaftsaufgabe von Bund, Ländern und Kommunen definieren",
+      "zitat": "Klimaschutz und Klimaanpassung muss als Gemeinschaftsaufgabe definiert werden, damit Bund, Länder und Kommunen gemeinsam handeln können.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4504
+      ],
+      "pruefsumme": "6a4d4755b66d1293"
+    },
+    {
+      "kennung": "M08",
+      "ebene": "bund",
+      "beschreibung": "Förderung für energetische Sanierungen stärker nach Einkommen und eingesparter Energie staffeln.",
+      "zitat": "Die Effizienz steht zukünftig stärker im Mittelpunkt einer finanziellen Förderung. Je kleiner das Einkommen und je mehr Energie eingespart wird, desto höher die Förderung.",
+      "ursachen_ids": [
+        4502
+      ],
+      "pruefsumme": "a8e516a50575a57d"
+    },
+    {
+      "kennung": "M09",
+      "ebene": "bund",
+      "beschreibung": "Revitalisierung von Mooren als Teil des Wasser- und Naturschutzes",
+      "zitat": "Dazu dient auch die Revitalisierung von Mooren und die Wiedereinrichtung von Auwäldern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4503
+      ],
+      "pruefsumme": "66af721f3af7afd4"
+    },
+    {
+      "kennung": "M10",
+      "ebene": "bund",
+      "beschreibung": "CO₂-bezogene Erhöhung der Lkw-Maut zurücknehmen",
+      "zitat": "Die massive CO₂-bezogene Erhöhung der Lkw-Maut muss zurückgenommen werden, da sie vor allem die Waren verteuert.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4501
+      ],
+      "pruefsumme": "ce27feb1861d9725"
+    },
+    {
+      "kennung": "M11",
+      "ebene": "bund",
+      "beschreibung": "Gegen eine Reduktion oder Quoten für Tierhaltung, Fortbestand der Kombihaltung",
+      "zitat": "Wir sind für Tierhaltung, insbesondere auch für den Fortbestand der Kombihaltung und gegen eine Reduktion oder Quoten.",
+      "ursachen_ids": [
+        4503
+      ],
+      "pruefsumme": "14fa41fe876cc66b"
+    },
+    {
+      "kennung": "M12",
+      "ebene": "bund",
+      "beschreibung": "Flächendeckendes bundesweites Radverkehrsnetz",
+      "zitat": "Deutschland braucht ein flächendeckendes bundesweites Radverkehrsnetz.",
+      "ursachen_ids": [
+        4501
+      ],
+      "pruefsumme": "e94eac34305348c8"
+    },
+    {
+      "kennung": "M13",
+      "ebene": "bund",
+      "beschreibung": "Investitionsoffensive in energetische Sanierungen und Heizungstausch mit 25 Milliarden Euro pro Jahr",
+      "zitat": "Wir fordern eine Investitionsoffensive in energetische Sanierungen und den Heizungstausch in Höhe von 25 Milliarden Euro pro Jahr.",
+      "ursachen_ids": [
+        4502
+      ],
+      "pruefsumme": "95bf7ab90919d7fc"
+    },
+    {
+      "kennung": "M14",
+      "ebene": "bund",
+      "beschreibung": "Befristeter Steuerabzug beim Kauf eines in Deutschland produzierten E-Autos, auch beim privaten Neuwagenkauf.",
+      "zitat": "Wir wollen mit einem zeitlich befristeten Steuerabzugsbetrag für die Anschaffung eines in Deutschland produzierten E-Autos auch den privaten Neuwagenkauf fördern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4501
+      ],
+      "pruefsumme": "903bddadbcdd3d8e"
+    },
+    {
+      "kennung": "M15",
+      "ebene": "bund",
+      "beschreibung": "Auslaufen des Neuwagenverkaufs für Verbrenner nach der EU-Richtlinie beibehalten",
+      "zitat": "Es braucht langfristige Planungssicherheit für Verbaucher*innen und Industrie, daher halten wir am Auslaufen vom Neuwagenverkauf für Verbrenner entsprechend der gültigen EU-Richtlinie",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4501
+      ],
+      "pruefsumme": "ddcfa8fbecf91d54"
+    },
+    {
+      "kennung": "M16",
+      "ebene": "bund",
+      "beschreibung": "Rollende Landstraße und Containerumschlag für Transitverbindungen etablieren",
+      "zitat": "Das Konzept der „Rollenden Landstraße“ und des Containerumschlages soll für die Transitverbindungen durch Deutschland mit regelmäßigen Taktungen etabliert werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4501
+      ],
+      "pruefsumme": "a0d2d5deea93a875"
+    },
+    {
+      "kennung": "M17",
+      "ebene": "bund",
+      "beschreibung": "Planungszeiten für Infrastrukturprojekte, auch für Straßen, mindestens halbieren",
+      "zitat": "Ziel ist es die Planungszeiten für alle Infrastrukturprojekte mindestens zu halbieren, um Straßen, Schienen, Wasserstraßen und digitale Netze schneller auszubauen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4501
+      ],
+      "pruefsumme": "3d7510f7218c0f4b"
+    },
+    {
+      "kennung": "M18",
+      "ebene": "bund",
+      "beschreibung": "Tempolimit auf Bundesautobahnen einführen.",
+      "zitat": "Wir wollen ein Tempolimit von 130 km/h auf Bundesautobahnen einführen.",
+      "ursachen_ids": [
+        4501
+      ],
+      "pruefsumme": "ed0f58f472ac2215"
+    },
+    {
+      "kennung": "M19",
+      "ebene": "bund",
+      "beschreibung": "Jede Steuer ablehnen, die sich auf Klimaschutz beruft",
+      "zitat": "[Partei] lehnt daher jede Politik und jede Steuer ab, die sich auf angeblichen Klimaschutz beruft, denn das Klima kann der Mensch nicht schützen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4503
+      ],
+      "pruefsumme": "0f2b848ae3ccab2a"
+    },
+    {
+      "kennung": "M20",
+      "ebene": "bund",
+      "beschreibung": "Belastende Klimaschutzvorschriften für Seehäfen reduzieren",
+      "zitat": "Wir befürworten daher eine konsequente Reduktion von Gebühren und bürokratischen Vorschriften, insbesondere von belastenden Klimaschutzbestimmungen, sowie eine Förderung der Digitalisierung, private Investitionen und Beteiligungen an unseren Häfen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4501
+      ],
+      "pruefsumme": "e643359def66d612"
+    },
+    {
+      "kennung": "M21",
+      "ebene": "bund",
+      "beschreibung": "KfZ-Steuer neu gestalten: große und schwere Autos stärker besteuern",
+      "zitat": "Wir wollen die KfZ-Steuer neugestalten und große und schwere Autos deutlich stärker besteuern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4501
+      ],
+      "pruefsumme": "e8993b5b6123054b"
+    },
+    {
+      "kennung": "M22",
+      "ebene": "bund",
+      "beschreibung": "Moore schützen und Anreize für Wiedervernässung geben",
+      "zitat": "Moore sind unverzichtbare CO2-Senken. Wir wollen den Schutz der Moore gemeinsam mit den Grundstückseigentümern intensivieren und Anreize für Wiedervernässungsprojekte geben.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4503
+      ],
+      "pruefsumme": "1beb2fb3940a73ea"
+    },
+    {
+      "kennung": "M23",
+      "ebene": "bund",
+      "beschreibung": "Immobilienkonzerne verpflichten, Sanierungspläne bei den Kommunen einzureichen",
+      "zitat": "Dazu müssen die Immobilienkonzerne spätestens bis Ende 2026 für ihre Bestandsbauten Sanierungspläne bis bei den jeweiligen Kommunen einreichen.",
+      "ursachen_ids": [
+        4502
+      ],
+      "pruefsumme": "cb00e80fb8bd6ad0"
+    },
+    {
+      "kennung": "M24",
+      "ebene": "bund",
+      "beschreibung": "Bedarfsgerechte Düngung wieder ermöglichen und Dünge-Bürokratie begrenzen",
+      "zitat": "Die derzeitigen Düngeregeln verursachen erhebliche Ertrags- und Qualitätseinbußen sowie massive ökologische Probleme, darunter der Verlust von Bodenfruchtbarkeit und Humus. [Partei] wird deshalb die bedarfsgerechte Nährstoffversorgung von Kulturpflanzen nach guter fachlicher Praxis wieder ermöglichen und den bürokratischen Aufwand auf das absolut notwendige Minimum beschränken.",
+      "ursachen_ids": [
+        4503
+      ],
+      "pruefsumme": "477627c61e1ba39d"
+    },
+    {
+      "kennung": "M25",
+      "ebene": "bund",
+      "beschreibung": "Luftverkehrsteuer in eine EU-Klimaabgabe umwandeln, die alle Airlines zahlen.",
+      "zitat": "Wir wollen die Luftverkehrsteuer in eine EU-Klimaabgabe umwandeln, die von allen Airlines gezahlt wird, auch von denen außerhalb Europas.",
+      "ursachen_ids": [
+        4501
+      ],
+      "pruefsumme": "27332498e3752d1b"
+    },
+    {
+      "kennung": "M26",
+      "ebene": "bund",
+      "beschreibung": "Ab 2035 nur noch klimaneutrale Antriebe neu zulassen.",
+      "zitat": "Wir bleiben dabei, ab 2035 nur noch klimaneutrale Antriebe neu zuzulassen.",
+      "ursachen_ids": [
+        4501
+      ],
+      "pruefsumme": "3db2699f79f95cca"
+    },
+    {
+      "kennung": "M27",
+      "ebene": "bund",
+      "beschreibung": "Verlagerung von Straßentransport auf die Schiene fördern und Kapazitäten im Kombiverkehr ausbauen.",
+      "zitat": "Auch für den Schienengüterverkehr wollen wir Kapazitäten, zum Beispiel im Kombiverkehr, ausbauen und die Verlagerung von Straßentransport auf die Schiene fördern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4501
+      ],
+      "pruefsumme": "09c7790c5e6470b0"
+    },
+    {
+      "kennung": "M28",
+      "ebene": "bund",
+      "beschreibung": "Flächendeckende Sanierungsberatung für alle sanierungsbedürftigen Häuser",
+      "zitat": "Es braucht flächendeckende Beratungsangebote mit Sanierungsbeauftragten für alle sanierungsbedürftigen Häuser.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4502
+      ],
+      "pruefsumme": "008110e62f2bb987"
+    },
+    {
+      "kennung": "M29",
+      "ebene": "bund",
+      "beschreibung": "Faktisches Verbrenner-Verbot ab 2035 umgehend aufheben",
+      "zitat": "Deshalb setzen wir uns für eine umgehende Aufhebung des faktischen Verbrenner-Verbots ab dem Jahr 2035 […].",
+      "ursachen_ids": [
+        4501
+      ],
+      "pruefsumme": "fe7e1c288fa767b2"
+    },
+    {
+      "kennung": "M30",
+      "ebene": "bund",
+      "beschreibung": "Sozial gestaffelte Förderangebote für kleine E-Fahrzeuge",
+      "zitat": "Für Handwerksbetriebe, Pflegedienste oder Menschen im ländlichen Raum, die auf ein Auto zum Pendeln angewiesen sind, wollen wir sozial gestaffelte Förderangebote für kleine E-Fahrzeuge einführen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4501
+      ],
+      "pruefsumme": "4a9c136f5cffe57f"
+    },
+    {
+      "kennung": "M31",
+      "ebene": "bund",
+      "beschreibung": "Straßen-Engpässe weiterhin beseitigen.",
+      "zitat": "Auch künftig sollen Engpässe auf der Straße beseitigt werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4501
+      ],
+      "pruefsumme": "58491badf34dfb32"
+    },
+    {
+      "kennung": "M32",
+      "ebene": "bund",
+      "beschreibung": "Eigenes Negativemissionsziel in das EU-Klimaziel aufnehmen",
+      "zitat": "Zudem wollen wir das EU-Klimaziel um ein eigenes Negativemissionsziel erweitern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4504
+      ],
+      "pruefsumme": "c0eb0ead16cf3140"
+    },
+    {
+      "kennung": "M33",
+      "ebene": "bund",
+      "beschreibung": "Privilegien für Privatjets abschaffen, um diese klimaschädliche Fortbewegungsart zu reduzieren.",
+      "zitat": "Die Privilegien für Privatjets wollen wir abschaffen und diese enorm klimaschädliche Fortbewegungsart reduzieren.",
+      "ursachen_ids": [
+        4501
+      ],
+      "pruefsumme": "da712f23869244be"
+    },
+    {
+      "kennung": "M34",
+      "ebene": "bund",
+      "beschreibung": "Flüge unter 500 Kilometern oder fünf Zugstunden verbieten",
+      "zitat": "Flüge, die kürzer sind als 500 Kilometer oder fünf Zugstunden, wollen wir verbieten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4501
+      ],
+      "pruefsumme": "0f2f86d3a4dfe379"
+    },
+    {
+      "kennung": "M35",
+      "ebene": "bund",
+      "beschreibung": "Nährstoffbilanz einführen, um den Düngereinsatz gezielter zu machen und zu senken.",
+      "zitat": "Die Einführung einer Nährstoffbilanz unterstützt den gezielteren Düngereinsatz und kann helfen, ihn zu senken.",
+      "ursachen_ids": [
+        4503
+      ],
+      "pruefsumme": "643075645d6d5eb1"
+    },
+    {
+      "kennung": "M36",
+      "ebene": "bund",
+      "beschreibung": "Emissionshandel schrittweise auf alle Sektoren mit energiebedingten Emissionen ausweiten",
+      "zitat": "Wir wollen ihn in der EU durch schrittweise Einbeziehung aller Sektoren mit ihren energiebedingten Emissionen als zentrales Klimainstrument stärken.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4504
+      ],
+      "pruefsumme": "44d3a5aeadc8fa45"
+    },
+    {
+      "kennung": "M37",
+      "ebene": "bund",
+      "beschreibung": "Flottengrenzwerte mit der EU-Kommission beibehalten, aber den Weg dorthin pragmatischer gestalten.",
+      "zitat": "Wir werden mit der EU- Kommission in Verhandlungen treten, die Ziele beizubehalten, aber den Weg dorthin pragmatischer zu gestalten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4501
+      ],
+      "pruefsumme": "47e57a1ed6f67bd2"
+    },
+    {
+      "kennung": "M38",
+      "ebene": "bund",
+      "beschreibung": "Straßenbau auf die Sanierung des Bestands konzentrieren",
+      "zitat": "Wir wollen uns beim Straßenbau auf die Sanierung des Bestands konzentrieren.",
+      "ursachen_ids": [
+        4501
+      ],
+      "pruefsumme": "7fa455e29f52139f"
+    },
+    {
+      "kennung": "M39",
+      "ebene": "bund",
+      "beschreibung": "Generelles Tempolimit auf Autobahnen ablehnen",
+      "zitat": "Wir lehnen ein generelles Tempolimit auf Autobahnen ab.",
+      "ursachen_ids": [
+        4501
+      ],
+      "pruefsumme": "9b7f928888bef311"
+    },
+    {
+      "kennung": "M40",
+      "ebene": "bund",
+      "beschreibung": "Entwicklung von Düngemittelalternativen unterstützen",
+      "zitat": "Durch eine ambitionierte Pestizidreduktionsstrategie und die Entwicklung von Düngemittelalternativen unterstützen wir die Agrarbetriebe beim ökologischen Umbau.",
+      "ursachen_ids": [
+        4503
+      ],
+      "pruefsumme": "597a16d0cccee5e7"
+    },
+    {
+      "kennung": "M41",
+      "ebene": "bund",
+      "beschreibung": "Bei prognostizierter längerfristiger Zielverfehlung verbindlich in den Sektoren nachsteuern.",
+      "zitat": "Bei prognostizierter längerfristiger Zielverfehlung soll in den jeweiligen Sektoren verbindlich nachgesteuert werden, denn andernfalls drohen Deutschland teure Strafzahlungen und zukünftig höhere CO₂-Preise.",
+      "ursachen_ids": [
+        4504
+      ],
+      "pruefsumme": "cfc6ba4a9ed4f9b4"
+    },
+    {
+      "kennung": "M42",
+      "ebene": "bund",
+      "beschreibung": "Kosten energetischer Sanierungen von der Erbschaft- und Schenkungsteuer abzugsfähig machen",
+      "zitat": "Wir machen Kosten für energetische Sanierungen von der Erbschaft- und Schenkungsteuer abzugsfähig. So fördern wir die effiziente energetische Sanierung des Immobilienbestands.",
+      "ursachen_ids": [
+        4502
+      ],
+      "pruefsumme": "cdc2c61b51f91153"
+    },
+    {
+      "kennung": "M43",
+      "ebene": "bund",
+      "beschreibung": "Ziel der Klimaneutralität im Klimaschutzgesetz von 2045 auf das EU-Ziel 2050 verschieben",
+      "zitat": "Da nationale Sonderziele im Rahmen des europäischen Emissionshandels keinerlei zusätzlichen Nutzen für den Klimaschutz haben können, wollen wir das Ziel der Klimaneutralität bis 2045 im deutschen Klimaschutzgesetz durch das europäische Ziel der Klimaneutralität bis 2050 ersetzen.",
+      "ursachen_ids": [
+        4504
+      ],
+      "pruefsumme": "2e31940690827550"
+    },
+    {
+      "kennung": "M44",
+      "ebene": "bund",
+      "beschreibung": "Energetische Sanierung mit Aufstockung oder Erweiterung von Wohngebäuden erleichtern.",
+      "zitat": "Wo möglich, wollen wir es erleichtern, dass die energetische Sanierung von Wohngebäuden mit Aufstockung oder Erweiterung verbunden wird.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4502
+      ],
+      "pruefsumme": "a46ff8a2df44b1f4"
+    },
+    {
+      "kennung": "M45",
+      "ebene": "bund",
+      "beschreibung": "Generelles Tempolimit auf Autobahnen und Fahrverbote für Innenstädte ablehnen",
+      "zitat": "Anti-Auto-Haltung, Fahrverbote für Innenstädte, das Umwidmen von Parkplätzen und ein generelles Tempolimit auf deutschen Autobahnen lehnen wir ab.",
+      "ursachen_ids": [
+        4501
+      ],
+      "pruefsumme": "d6b0053f74454420"
+    },
+    {
+      "kennung": "M46",
+      "ebene": "bund",
+      "beschreibung": "Öffentliche Fahrzeugbeschaffung auf reine E-Fahrzeuge umstellen",
+      "zitat": "Die öffentliche Hand soll Vorreiter für die Elektromobilität werden. Ab sofort sollen in der Regel reine E-Fahrzeuge angeschafft werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4501
+      ],
+      "pruefsumme": "0fbf3b1d9e614aca"
+    },
+    {
+      "kennung": "M47",
+      "ebene": "bund",
+      "beschreibung": "Verkehr von der Straße auf Schiene und Wasserstraße lenken.",
+      "zitat": "Wir werden Verkehr von der Straße vor allem auf die Schiene und auch auf die Wasserstraße lenken.",
+      "ursachen_ids": [
+        4501
+      ],
+      "pruefsumme": "7f8336c38ae03819"
+    },
+    {
+      "kennung": "M48",
+      "ebene": "bund",
+      "beschreibung": "Nachhaltige Kraftstoffe aus erneuerbaren Energien für den Luft- und Schiffsverkehr unterstützen.",
+      "zitat": "Um den Luft- und Schiffsverkehr klimaneutral zu modernisieren, unterstützen wir die Produktion nachhaltiger Kraftstoffe aus erneuerbaren Energien, zum Beispiel E-Kerosin, fördern Technologien zur Kraftstoffeinsparung",
+      "ursachen_ids": [
+        4501
+      ],
+      "pruefsumme": "4b36efab57fee880"
+    },
+    {
+      "kennung": "M49",
+      "ebene": "bund",
+      "beschreibung": "Innerstädtische Fahrspuren und Parkraum erhalten und ausbauen",
+      "zitat": "Gleichzeitig fordert [Partei] den Erhalt und Ausbau von innerstädtischen Fahrspuren und Parkraum zur Vermeidung von wachsendem Verkehrschaos sowie zum Schutz der Attraktivität des Einzelhandels.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4501
+      ],
+      "pruefsumme": "8e66e70199825f22"
+    },
+    {
+      "kennung": "M50",
+      "ebene": "bund",
+      "beschreibung": "Einheitlichen europäischen Emissionshandel mit jährlich sinkender Obergrenze als Leitinstrument etablieren",
+      "zitat": "Dafür wollen wir einen einheitlichen europäischen Emissionshandel als Leitinstrument der Klimapolitik etablieren. Mit seiner jährlich sinkenden Obergrenze für Treibhausgasemissionen stellt der Emissionshandel sicher, dass die europäischen Klimaziele eingehalten werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4504
+      ],
+      "pruefsumme": "38762f244ffb4141"
+    },
+    {
+      "kennung": "M51",
+      "ebene": "bund",
+      "beschreibung": "Tempolimit 120 km/h auf Autobahnen und Tempo 30 innerorts (außer auf Hauptverkehrsachsen)",
+      "zitat": "Um Menschen und Klima zu schützen, brauchen wir endlich ein Tempolimit von 120 km/h auf Autobahnen und innerorts Tempo 30 – außer auf Hauptverkehrsachsen.",
+      "ursachen_ids": [
+        4501
+      ],
+      "pruefsumme": "72bc92286e80b1b3"
+    },
+    {
+      "kennung": "M52",
+      "ebene": "bund",
+      "beschreibung": "Finanzierung der Straßeninfrastruktur über die Autobahn GmbH, Lkw-Maut und privates Kapital stärken",
+      "zitat": "Wir wollen den Finanzierungskreislauf Straße stärken, eigene Einnahmen für die Autobahn GmbH durch die LKW-Maut und eine Öffnung für privates Kapital, um eine auskömmliche und überjährige Planung und Finanzierung zu ermöglichen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4501
+      ],
+      "pruefsumme": "a512e5667c337b95"
+    },
+    {
+      "kennung": "M53",
+      "ebene": "bund",
+      "beschreibung": "Kappungsgrenzen bei energetischen Sanierungen lockern",
+      "zitat": "Zudem werden wir die starren Kappungsgrenzen bei energetischen Sanierungen lockern, damit die Modernisierung des Gebäudebestands vorankommt.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4502
+      ],
+      "pruefsumme": "945920024d2206e7"
+    },
+    {
+      "kennung": "M54",
+      "ebene": "bund",
+      "beschreibung": "Belastung des Transportgewerbes durch CO2-Preis und CO2-Zuschlag senken",
+      "zitat": "Wir reduzieren die übermäßige Belastung durch CO2-Preis und CO2-Zuschlag im Transportgewerbe.",
+      "ursachen_ids": [
+        4501
+      ],
+      "pruefsumme": "7212349f9aaf5491"
+    },
+    {
+      "kennung": "M55",
+      "ebene": "bund",
+      "beschreibung": "Verbrenner-Verbot rückgängig machen, Flottengrenzwerte überprüfen und Strafzahlungen verhindern",
+      "zitat": "Das Verbrenner-Verbot muss rückgängig gemacht werden. Die Flottengrenzwerte müssen überprüft, Strafzahlungen verhindert werden.",
+      "ursachen_ids": [
+        4501
+      ],
+      "pruefsumme": "9cf49a5e2d5bc292"
+    },
+    {
+      "kennung": "M56",
+      "ebene": "bund",
+      "beschreibung": "Tierhaltung auf flächengebundene Haltung umstellen und Viehbestände verringern",
+      "zitat": "Statt Megaställen wollen wir für das Wohl von Menschen und Tieren eine flächengebundene Tierhaltung (maximal 1,5 Großvieheinheiten pro Hektar) und damit die Reduzierung der Viehbestände in der Bundesrepublik.",
+      "ursachen_ids": [
+        4503
+      ],
+      "pruefsumme": "eac9f2832e7771ca"
+    },
+    {
+      "kennung": "M57",
+      "ebene": "bund",
+      "beschreibung": "Aufhebung des Verbrennerverbots und der Flottengrenzwerte",
+      "zitat": "Strangulierende Bürokratie und wettbewerbsverzerrende Vorschriften reduzieren wir durch: […] Aufhebung des Verbrennerverbots und der unerreichbaren Flottengrenzwerte",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4501
+      ],
+      "pruefsumme": "97b313127d0ea79d"
+    },
+    {
+      "kennung": "M58",
+      "ebene": "bund",
+      "beschreibung": "Sanierte Gebäude einfacher als taxonomiekonform anerkennen.",
+      "zitat": "Um die Finanzierung von klimafreundlichen Sanierungen zu erleichtern, wollen wir sanierte Gebäude einfacher als taxonomiekonform anerkennen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4502
+      ],
+      "pruefsumme": "b8f3809addfd0e0c"
+    },
+    {
+      "kennung": "M59",
+      "ebene": "bund",
+      "beschreibung": "Ausbau der öffentlichen Ladeinfrastruktur",
+      "zitat": "Wir wollen endlich umfassende Investitionen in die öffentliche Ladeinfrastruktur, verbunden mit günstigen Tarifen und Auflagen für mehr Ladepunkte an Tankstellen, im Einzelhandel und am Arbeitsplatz.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4501
+      ],
+      "pruefsumme": "d0b125a0f812db32"
+    },
+    {
+      "kennung": "M60",
+      "ebene": "bund",
+      "beschreibung": "Anreize setzen, dass Vermieter verfügbare öffentliche Fördermittel zur Sanierung tatsächlich nutzen.",
+      "zitat": "Damit diese positiven Effekte auch bei Mieter*innen ankommen, wollen wir klare Anreize dafür setzen, dass Vermieter*innen verfügbare öffentliche Fördermittel zur Sanierung auch tatsächlich nutzen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4502
+      ],
+      "pruefsumme": "0746ee512499e5fa"
+    },
+    {
+      "kennung": "M61",
+      "ebene": "bund",
+      "beschreibung": "Bundesförderung für tierschutzrelevante Umbauten von Haltungssystemen ausweiten",
+      "zitat": "Sozialverträglicher Umbau der Tierhaltung: für mehr Tierwohl, Klimaschutz und Umweltschutz. Wir wollen hohe Mindesthaltungsstandards für alle Tierarten, eine Ausweitung der Bundesförderung für tierschutzrelevante Umbauten von Haltungssystemen",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4503
+      ],
+      "pruefsumme": "ed0122366c99547c"
+    },
+    {
+      "kennung": "M62",
+      "ebene": "bund",
+      "beschreibung": "Aus dem Pariser Klimaabkommen aussteigen",
+      "zitat": "Wir wollen zudem aus dem Pariser Klimaabkommen aussteigen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4504
+      ],
+      "pruefsumme": "b7e9f60bfb23ce5c"
+    },
+    {
+      "kennung": "M63",
+      "ebene": "bund",
+      "beschreibung": "Luftverkehrsteuer streichen und Luftsicherheitsgebühren senken",
+      "zitat": "Damit das so bleibt, streichen wir die Luftverkehrsteuer und senken Luftsicherheitsgebühren auf ein wettbewerbsfähiges Niveau.",
+      "ursachen_ids": [
+        4501
+      ],
+      "pruefsumme": "4ba7cb557d88289a"
+    },
+    {
+      "kennung": "M64",
+      "ebene": "bund",
+      "beschreibung": "Sektorziele im Klimaschutzgesetz wieder herstellen und verbindliche Emissionsgrenzen setzen",
+      "zitat": "Wir wollen verbindliche Ziele und Emissionsgrenzen und machen den Konzernen klare Vorschriften. Die Sektorziele stellen wir wieder her.",
+      "ursachen_ids": [
+        4504
+      ],
+      "pruefsumme": "fad5dcd604a815b5"
+    },
+    {
+      "kennung": "M65",
+      "ebene": "bund",
+      "beschreibung": "Verantwortung der Sektoren im Klimaschutzgesetz stärken; jedes Ministerium muss Maßnahmen umsetzen.",
+      "zitat": "Um den Herausforderungen und der Dringlichkeit der Klimakrise zu begegnen, werden wir die Rolle des Expertenrates für Klimafragen sowie die […] Verantwortung von Sektoren im Bundes-Klimaschutzgesetz stärken, in denen Klimaschutz zu wenig vorankommt. […] Jedes Ministerium muss deswegen unabhängig von der Gesamtbilanz der Bundesregierung geeignete Maßnahmen umsetzen, die zur Einhaltung der Klimaziele führen sollen.",
+      "ursachen_ids": [
+        4504
+      ],
+      "pruefsumme": "fd6a18f79d95090e"
+    },
+    {
+      "kennung": "M66",
+      "ebene": "bund",
+      "beschreibung": "Auskömmliche Finanzierung von Autobahnen, Brücken und Straßeninfrastruktur (Erhalt und Neubau)",
+      "zitat": "Wir stehen für eine auskömmliche Finanzierung von Autobahnen, Brücken- und Straßeninfrastruktur.",
+      "ursachen_ids": [
+        4501
+      ],
+      "pruefsumme": "410fcaabf24459f7"
+    },
+    {
+      "kennung": "M67",
+      "ebene": "bund",
+      "beschreibung": "Generelles Tempolimit auf Autobahnen ablehnen",
+      "zitat": "[Partei] lehnt ein generelles Tempolimit auf Bundesautobahnen strikt ab.",
+      "ursachen_ids": [
+        4501
+      ],
+      "pruefsumme": "1808ea4943b7f9f1"
+    },
+    {
+      "kennung": "M68",
+      "ebene": "bund",
+      "beschreibung": "Programm „Jung kauft Alt“ ausbauen, mit Zuschüssen zur energetischen Sanierung.",
+      "zitat": "Das Programm „Jung kauft Alt“ wollen wir verstetigen und ausbauen. […] Durch zinsgünstige Kredite und Zuschüsse zur energetischen Sanierung bekommen sie die Chance, sich ihren Traum zu erfüllen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4502
+      ],
+      "pruefsumme": "cd8403630510e8a3"
+    },
+    {
+      "kennung": "M69",
+      "ebene": "bund",
+      "beschreibung": "Stoffstrombilanz im Düngerecht abschaffen",
+      "zitat": "Konkret wollen wir auf die Stoffstrombilanz im Düngerecht verzichten",
+      "ursachen_ids": [
+        4503
+      ],
+      "pruefsumme": "de278aa1b92d4c68"
+    },
+    {
+      "kennung": "M70",
+      "ebene": "bund",
+      "beschreibung": "Abriss von Bestandsgebäuden nur in engen Ausnahmen erlauben",
+      "zitat": "Ein Abriss soll nur noch dann erlaubt sein, wenn die Gebäudesubstanz nicht mehr zu retten ist oder wenn durch Neubau ein Vielfaches des bisherigen Wohnraums entsteht.",
+      "ursachen_ids": [
+        4502
+      ],
+      "pruefsumme": "954adb963db9d953"
+    },
+    {
+      "kennung": "M71",
+      "ebene": "bund",
+      "beschreibung": "Gebäudewärme über einen CO2-Zertifikatehandel statt Einzelvorschriften steuern",
+      "zitat": "Statt unzähliger Einzelvorschriften setzen wir auf eine marktwirtschaftliche Lösung – den CO2-Zertifikatehandel.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4502
+      ],
+      "pruefsumme": "b45fd5b9e03c6e13"
+    },
+    {
+      "kennung": "M72",
+      "ebene": "bund",
+      "beschreibung": "Agrarförderung ab der neuen Förderperiode stärker an Betriebe mit Klimaschutzmaßnahmen knüpfen.",
+      "zitat": "Mit der neuen GAP-Förderperiode ab 2028 wollen wir all jene stärker unterstützen, die die Ressourcen Wasser, Boden und Luft schonen, zum Erhalt der Artenvielfalt beitragen und Maßnahmen zum Klimaschutz und zur Klimaanpassung durchführen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4503
+      ],
+      "pruefsumme": "b0262f24ab383468"
+    },
+    {
+      "kennung": "M73",
+      "ebene": "bund",
+      "beschreibung": "Mehr Verkehr von der Straße auf die Schiene bringen",
+      "zitat": "Wir wollen mehr Verkehr von der Straße auf die Schiene bringen.",
+      "ursachen_ids": [
+        4501
+      ],
+      "pruefsumme": "d9ff31178cc66f57"
+    },
+    {
+      "kennung": "M74",
+      "ebene": "bund",
+      "beschreibung": "CO2-Preis abschaffen",
+      "zitat": "Den CO2-Preis, der alles teurer macht, ohne dass es für die meisten Menschen Alternativen gibt, wollen wir abschaffen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4501,
+        4502
+      ],
+      "pruefsumme": "b8833f18d63f72ca"
+    },
+    {
+      "kennung": "M75",
+      "ebene": "bund",
+      "beschreibung": "Neue Straßen bauen, wo sie nötig sind",
+      "zitat": "Wo die Infrastruktur verfällt, wollen wir sie wieder in Stand setzen, wo neue Straßen nötig sind, wollen wir sie bauen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4501
+      ],
+      "pruefsumme": "7119fe3a1f4be6c5"
+    },
+    {
+      "kennung": "M76",
+      "ebene": "bund",
+      "beschreibung": "Moore durch schonende Nutzung erhalten",
+      "zitat": "Wälder, Grünland und Moore sind durch schonende Nutzung zu erhalten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4503
+      ],
+      "pruefsumme": "c502aaa2a2f1fac7"
+    },
+    {
+      "kennung": "M77",
+      "ebene": "bund",
+      "beschreibung": "Verbrennerverbot zurücknehmen",
+      "zitat": "Das Verbrennerverbot wollen wir kippen.",
+      "ursachen_ids": [
+        4501
+      ],
+      "pruefsumme": "5263b94594851c95"
+    },
+    {
+      "kennung": "M78",
+      "ebene": "bund",
+      "beschreibung": "Förderung alternativer Kraftstoffe und Entwicklung verbrauchsarmer Verbrennermotoren",
+      "zitat": "Wir wollen alle Technologien nutzen, um CO2 zu reduzieren. Das gilt für die Entwicklung verbrauchsarmer und effizienter Verbrennermotoren sowie für die Förderung alternativer Kraftstoffe.",
+      "ursachen_ids": [
+        4501
+      ],
+      "pruefsumme": "5063ee05916dfac3"
+    },
+    {
+      "kennung": "M79",
+      "ebene": "bund",
+      "beschreibung": "Europäischen Emissionshandel globalisieren oder Abschaffung auf EU-Ebene anstreben",
+      "zitat": "Der europäische Emissionshandel muss entweder globalisiert werden, oder Deutschland sollte auf EU-Ebene für seine Abschaffung werben.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4504
+      ],
+      "pruefsumme": "c27667ea8432fefd"
+    },
+    {
+      "kennung": "M80",
+      "ebene": "bund",
+      "beschreibung": "Abkehr vom Ziel einer schnell erreichbaren völligen Klimaneutralität",
+      "zitat": "Wir fordern eine Abkehr vom Wunschdenken einer schnell erreichbaren völligen Klimaneutralität.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4504
+      ],
+      "pruefsumme": "4752506fc20fce42"
+    },
+    {
+      "kennung": "M81",
+      "ebene": "bund",
+      "beschreibung": "Volksleasing für kleine, verbrauchsarme Fahrzeuge (auch Verbrenner unter 5 Liter)",
+      "zitat": "Mit einem „Volksleasing“ für umweltfreundliche Fahrzeuge aus europäischer Produktion, einschließlich verbrauchsarmer Verbrenner (unter 5l), wollen wir Menschen in Regionen mit geringen öffentlichen Verkehrsangeboten angemessene Mobilität ermöglichen.",
+      "ursachen_ids": [
+        4501
+      ],
+      "pruefsumme": "6663703f4e0a4cdf"
+    }
+  ],
+  "teilbewertung": {
+    "vorherige_pruefsumme": "a06b8732d10677f32b1ba253950e3a0d8211edf86806d6c9b3a9ffe040afbc49",
+    "zu_bewerten": [
+      "M73",
+      "M74",
+      "M75",
+      "M76",
+      "M77",
+      "M78",
+      "M79",
+      "M80",
+      "M81"
+    ],
+    "bisher": {
+      "neue_instrumente": [
+        {
+          "kennung": "I1",
+          "name": "Generelles Tempolimit auf Autobahnen einführen (Bund)",
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 3,
+          "begruendung": "Laut UBA spart Tempo 130 etwa 1,3-2,0 Mio. t, Tempo 120 mit 80 außerorts rund 6,6 Mio. t CO2-Äq. pro Jahr; per Gesetz sofort umsetzbar und kostengünstig, deckt aber nur einen Teil der Verkehrslücke.",
+          "evidenz": "belegt",
+          "beleg_studie_url": "https://www.umweltbundesamt.de/themen/verkehr/nachhaltige-mobilitaet/tempolimit"
+        },
+        {
+          "kennung": "I2",
+          "name": "Generelles Tempolimit auf Autobahnen ablehnen (Bund)",
+          "wirksamkeit": 0,
+          "umsetzbarkeit": 3,
+          "begruendung": "Hält den Status quo; die laut UBA mögliche Minderung von 1,3 bis 6,6 Mio. t CO2-Äq. pro Jahr bleibt ungenutzt, die Verkehrsemissionen sinken dadurch nicht.",
+          "evidenz": "belegt",
+          "beleg_studie_url": "https://www.umweltbundesamt.de/themen/verkehr/nachhaltige-mobilitaet/tempolimit"
+        },
+        {
+          "kennung": "I3",
+          "name": "CO2-Preis und klimabezogene Abgaben im Verkehr senken oder abschaffen (Bund)",
+          "wirksamkeit": 0,
+          "umsetzbarkeit": 2,
+          "begruendung": "Studien zeigen, dass CO2-Preise Emissionen auch bei niedrigen Preisen senken; ihr Abbau schwächt diesen Anreiz. Rechtlich national möglich, ab dem EU-Emissionshandel für Verkehr und Wärme aber begrenzt.",
+          "evidenz": "belegt",
+          "beleg_studie_url": "https://strathprints.strath.ac.uk/72023"
+        },
+        {
+          "kennung": "I4",
+          "name": "Straßenausbau, Fahrspuren und Straßenfinanzierung stärken (Bund)",
+          "wirksamkeit": 0,
+          "umsetzbarkeit": 2,
+          "begruendung": "Mehr Straßenkapazität senkt keine Emissionen; Studien zu induziertem Verkehr zeigen eher Mehrverkehr, die Größe des Effekts schwankt aber stark je nach Lage und Stauniveau.",
+          "evidenz": "gemischt"
+        },
+        {
+          "kennung": "I5",
+          "name": "Radwegenetz und Mobilstationen ausbauen (Bund)",
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Neue Radwege werden genutzt, ersetzen laut Studien aber oft nur wenige Autofahrten; ohne begleitende Maßnahmen bleibt die CO2-Wirkung klein. Bund kann über Förderprogramme beitragen.",
+          "evidenz": "gemischt"
+        },
+        {
+          "kennung": "I6",
+          "name": "Neuzulassung nur emissionsfreier Pkw ab 2035 beibehalten (Bund)",
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 1,
+          "begruendung": "EU-Flottengrenzwerte haben die Neuwagen-Emissionen 2019-2023 um rund 28 % gesenkt; die Wirkung auf den Bestand kommt aber verzögert, und die Regel hängt von EU-Entscheidungen ab.",
+          "evidenz": "belegt",
+          "beleg_studie_url": "https://www.eea.europa.eu/data-and-maps/indicators/average-co2-emissions-from-motor-vehicles-1/assessment"
+        },
+        {
+          "kennung": "I7",
+          "name": "Verbrenner-Aus 2035 und Flottengrenzwerte aufheben (Bund)",
+          "wirksamkeit": 0,
+          "umsetzbarkeit": 1,
+          "begruendung": "Flottengrenzwerte haben die Neuwagen-Emissionen nachweislich gesenkt; ihre Aufhebung bremst die Minderung. Zudem kann Deutschland die EU-Verordnung nicht allein ändern.",
+          "evidenz": "belegt",
+          "beleg_studie_url": "https://www.eea.europa.eu/data-and-maps/indicators/average-co2-emissions-from-motor-vehicles-1/assessment"
+        },
+        {
+          "kennung": "I8",
+          "name": "Güterverkehr von der Straße auf Schiene und Wasserstraße verlagern (Bund)",
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Schiene verursacht je Tonnenkilometer deutlich weniger Emissionen; trotz Förderung stagniert der Kombiverkehr aber, weil er privat rund 28 % teurer ist. Ausbau braucht Jahre.",
+          "evidenz": "gemischt",
+          "beleg_studie_url": "https://repositum.tuwien.at/handle/20.500.12708/189196?mode=full"
+        },
+        {
+          "kennung": "I9",
+          "name": "Dünge-Vorgaben und Stoffstrombilanz lockern oder abschaffen (Bund)",
+          "wirksamkeit": 0,
+          "umsetzbarkeit": 2,
+          "begruendung": "Weniger Kontrolle der Stickstoffüberschüsse senkt kein Lachgas, sondern riskiert mehr; der Nutzen der Stoffstrombilanz für die Beratung ist allerdings umstritten. Lockerungen stoßen an die EU-Nitratrichtlinie.",
+          "evidenz": "gemischt"
+        },
+        {
+          "kennung": "I10",
+          "name": "Sektorziele und verbindliche Nachsteuerung im Klimaschutzgesetz stärken (Bund)",
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 3,
+          "begruendung": "Der Expertenrat sah im Wegfall sektoraler Nachsteuerung eine erhöhte Gefahr der Zielverfehlung; zugleich wurden Sektorziele früher trotz Sofortprogrammen verfehlt. Per Gesetzesänderung schnell möglich.",
+          "evidenz": "gemischt",
+          "beleg_studie_url": "https://www.aerzteblatt.de/news/expertenrat-sieht-ampelplaene-zum-klimaschutzgesetz-kritisch-bb9035c9-d676-4e4e-88fe-42c073c03dc9"
+        },
+        {
+          "kennung": "I11",
+          "name": "EU-Emissionshandel mit sinkender Obergrenze auf alle Sektoren ausweiten (Bund)",
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 1,
+          "begruendung": "Der EU-Emissionshandel hat Emissionen nachweislich gesenkt, eine Obergrenze sichert die Gesamtmenge; Sektorverfehlungen werden aber nicht behoben, und die Ausweitung hängt von EU-Entscheidungen ab.",
+          "evidenz": "belegt",
+          "beleg_studie_url": "https://strathprints.strath.ac.uk/72023"
+        }
+      ],
+      "zuordnung": [
+        {
+          "kennung": "M01",
+          "ursachen": []
+        },
+        {
+          "kennung": "M02",
+          "instrument": "I1",
+          "ursachen": [
+            4501
+          ]
+        },
+        {
+          "kennung": "M03",
+          "ursachen": []
+        },
+        {
+          "kennung": "M04",
+          "instrument": "I3",
+          "ursachen": [
+            4501,
+            4502
+          ]
+        },
+        {
+          "kennung": "M05",
+          "instrument": "I5",
+          "ursachen": [
+            4501
+          ]
+        },
+        {
+          "kennung": "M06",
+          "ursachen": []
+        },
+        {
+          "kennung": "M07",
+          "ursachen": []
+        },
+        {
+          "kennung": "M08",
+          "einzeln": {
+            "wirksamkeit": 2,
+            "umsetzbarkeit": 3,
+            "begruendung": "Sanierungsförderung spart laut Evaluation des Förderjahres 2021 rund 1,7 Mio. t CO2-Äq. pro Jahr; Staffelung nach Einsparung erhöht die Zielgenauigkeit, Mitnahmeeffekte bleiben möglich.",
+            "evidenz": "belegt",
+            "beleg_studie_url": "https://www.solarserver.de/2023/06/15/erste-externe-evaluation-der-beg-foerderung-vorgelegt/"
+          },
+          "ursachen": [
+            4502
+          ]
+        },
+        {
+          "kennung": "M09",
+          "ursachen": []
+        },
+        {
+          "kennung": "M10",
+          "instrument": "I3",
+          "ursachen": [
+            4501
+          ]
+        },
+        {
+          "kennung": "M11",
+          "einzeln": {
+            "wirksamkeit": 0,
+            "umsetzbarkeit": 3,
+            "begruendung": "Tierhaltung ist die größte Quelle der Agraremissionen; wer jede Bestandsreduktion ablehnt, lässt diesen Hebel ungenutzt. Als Status quo ohne Aufwand umsetzbar.",
+            "evidenz": "belegt",
+            "beleg_studie_url": "https://www.umweltbundesamt.de/tags/tierbestand"
+          },
+          "ursachen": [
+            4503
+          ]
+        },
+        {
+          "kennung": "M12",
+          "instrument": "I5",
+          "ursachen": [
+            4501
+          ]
+        },
+        {
+          "kennung": "M13",
+          "einzeln": {
+            "wirksamkeit": 2,
+            "umsetzbarkeit": 1,
+            "begruendung": "Sanierungsförderung senkt Gebäudeemissionen nachweislich; 25 Mrd. Euro jährlich wären deutlich mehr als bisher, die Finanzierung ist aber ungeklärt und Handwerkskapazitäten sind knapp.",
+            "evidenz": "belegt",
+            "beleg_studie_url": "https://www.solarserver.de/2023/06/15/erste-externe-evaluation-der-beg-foerderung-vorgelegt/"
+          },
+          "ursachen": [
+            4502
+          ]
+        },
+        {
+          "kennung": "M14",
+          "einzeln": {
+            "wirksamkeit": 1,
+            "umsetzbarkeit": 0,
+            "begruendung": "Kaufanreize beschleunigen E-Auto-Käufe, haben aber hohe Mitnahmeeffekte; die Bindung an Produktion in Deutschland benachteiligt Waren aus anderen EU-Staaten und ist EU-rechtlich kaum haltbar.",
+            "evidenz": "gemischt"
+          },
+          "ursachen": [
+            4501
+          ]
+        },
+        {
+          "kennung": "M15",
+          "instrument": "I6",
+          "ursachen": [
+            4501
+          ]
+        },
+        {
+          "kennung": "M16",
+          "instrument": "I8",
+          "ursachen": [
+            4501
+          ]
+        },
+        {
+          "kennung": "M17",
+          "ursachen": []
+        },
+        {
+          "kennung": "M18",
+          "instrument": "I1",
+          "ursachen": [
+            4501
+          ]
+        },
+        {
+          "kennung": "M19",
+          "ursachen": []
+        },
+        {
+          "kennung": "M20",
+          "einzeln": {
+            "wirksamkeit": 0,
+            "umsetzbarkeit": 2,
+            "begruendung": "Weniger Klimaschutzvorgaben für Häfen senken keine Verkehrsemissionen, eher im Gegenteil; welche Vorgaben gemeint sind, bleibt unklar, viele beruhen auf EU-Recht.",
+            "evidenz": "offen"
+          },
+          "ursachen": [
+            4501
+          ]
+        },
+        {
+          "kennung": "M21",
+          "einzeln": {
+            "wirksamkeit": 1,
+            "umsetzbarkeit": 3,
+            "begruendung": "Fahrzeugsteuern nach Größe und CO2 lenken Käufe zu sparsameren Autos; Studien zum französischen Bonus-Malus finden aber teils keinen Netto-Effekt. Kfz-Steuer ist Bundessache.",
+            "evidenz": "gemischt",
+            "beleg_studie_url": "https://www.insee.fr/en/statistiques/1380983"
+          },
+          "ursachen": [
+            4501
+          ]
+        },
+        {
+          "kennung": "M22",
+          "ursachen": []
+        },
+        {
+          "kennung": "M23",
+          "einzeln": {
+            "wirksamkeit": 1,
+            "umsetzbarkeit": 2,
+            "begruendung": "Sanierungspläne schaffen Planung und Druck bei großen Vermietern, verpflichten aber nicht zur Umsetzung; Wirkung kaum untersucht.",
+            "evidenz": "offen"
+          },
+          "ursachen": [
+            4502
+          ]
+        },
+        {
+          "kennung": "M24",
+          "instrument": "I9",
+          "ursachen": [
+            4503
+          ]
+        },
+        {
+          "kennung": "M25",
+          "einzeln": {
+            "wirksamkeit": 1,
+            "umsetzbarkeit": 1,
+            "begruendung": "Eine EU-weite Klimaabgabe für alle Airlines könnte Flugnachfrage dämpfen; sie erfordert aber Einigung in der EU und mit Drittstaaten, und die Wirkung auf nationale Emissionen ist gering.",
+            "evidenz": "offen"
+          },
+          "ursachen": [
+            4501
+          ]
+        },
+        {
+          "kennung": "M26",
+          "instrument": "I6",
+          "ursachen": [
+            4501
+          ]
+        },
+        {
+          "kennung": "M27",
+          "instrument": "I8",
+          "ursachen": [
+            4501
+          ]
+        },
+        {
+          "kennung": "M28",
+          "einzeln": {
+            "wirksamkeit": 1,
+            "umsetzbarkeit": 2,
+            "begruendung": "Beratung kann Sanierungen anstoßen; Studien finden aber nur schwache und sehr unterschiedliche Effekte, Kosten und Einsparungen entscheiden mehr. Flächendeckend braucht es viel Personal.",
+            "evidenz": "gemischt",
+            "beleg_studie_url": "https://www.rwi-essen.de/publikationen/suche/detail/heterogeneity-in-the-effect-of-home-energy-397"
+          },
+          "ursachen": [
+            4502
+          ]
+        },
+        {
+          "kennung": "M29",
+          "instrument": "I7",
+          "ursachen": [
+            4501
+          ]
+        },
+        {
+          "kennung": "M30",
+          "einzeln": {
+            "wirksamkeit": 1,
+            "umsetzbarkeit": 2,
+            "begruendung": "Gezielte Förderung kleiner E-Autos für Pendler und Betriebe senkt Mitnahmeeffekte gegenüber pauschalen Prämien; die CO2-Wirkung je Euro bleibt aber begrenzt, die Finanzierung ist offen.",
+            "evidenz": "gemischt"
+          },
+          "ursachen": [
+            4501
+          ]
+        },
+        {
+          "kennung": "M31",
+          "instrument": "I4",
+          "ursachen": [
+            4501
+          ]
+        },
+        {
+          "kennung": "M32",
+          "einzeln": {
+            "wirksamkeit": 1,
+            "umsetzbarkeit": 1,
+            "begruendung": "Ein eigenes Ziel für Negativemissionen trennt Entnahme und Minderung und verhindert Verrechnung; es hängt aber von EU-Entscheidungen ab, die Wirkung ist kaum untersucht.",
+            "evidenz": "offen"
+          },
+          "ursachen": [
+            4504
+          ]
+        },
+        {
+          "kennung": "M33",
+          "einzeln": {
+            "wirksamkeit": 1,
+            "umsetzbarkeit": 2,
+            "begruendung": "Privatjets sind je Person sehr emissionsintensiv, machen aber nur einen kleinen Teil der Verkehrsemissionen aus; welche Privilegien wegfallen, bleibt unklar, teils EU-Recht.",
+            "evidenz": "offen"
+          },
+          "ursachen": [
+            4501
+          ]
+        },
+        {
+          "kennung": "M34",
+          "einzeln": {
+            "wirksamkeit": 1,
+            "umsetzbarkeit": 1,
+            "begruendung": "Das französische Kurzstreckenverbot senkte Emissionen nur wenig, auch durch Ausweichen auf andere Routen; ein Verbot braucht nach EU-Luftverkehrsrecht eine Ausnahme der Kommission.",
+            "evidenz": "belegt"
+          },
+          "ursachen": [
+            4501
+          ]
+        },
+        {
+          "kennung": "M35",
+          "einzeln": {
+            "wirksamkeit": 2,
+            "umsetzbarkeit": 3,
+            "begruendung": "Agrarwissenschaftler empfehlen eine verlässliche betriebliche Nährstoffbilanz, um Stickstoffüberschüsse und Lachgas zu senken; ihr Nutzen hängt von Grenzwerten und Kontrolle ab und ist umstritten.",
+            "evidenz": "gemischt",
+            "beleg_studie_url": "https://www.topagrar.com/acker/news/wissenschaftler-geben-handlungsempfehlungen-fuer-klimaneutralitaet-der-landwirtschaft-12584596.html"
+          },
+          "ursachen": [
+            4503
+          ]
+        },
+        {
+          "kennung": "M36",
+          "instrument": "I11",
+          "ursachen": [
+            4504
+          ]
+        },
+        {
+          "kennung": "M37",
+          "einzeln": {
+            "wirksamkeit": 1,
+            "umsetzbarkeit": 1,
+            "begruendung": "Die Ziele bleiben, ein „pragmatischerer Weg“ dürfte die Minderung bis 2030 aber verlangsamen; abhängig von Verhandlungen auf EU-Ebene.",
+            "evidenz": "gemischt"
+          },
+          "ursachen": [
+            4501
+          ]
+        },
+        {
+          "kennung": "M38",
+          "einzeln": {
+            "wirksamkeit": 1,
+            "umsetzbarkeit": 3,
+            "begruendung": "Verzicht auf Neubau vermeidet zusätzlichen induzierten Verkehr, senkt bestehende Emissionen aber nicht; Größe des Effekts in Studien unterschiedlich. Über Haushalt und Bedarfsplan steuerbar.",
+            "evidenz": "gemischt"
+          },
+          "ursachen": [
+            4501
+          ]
+        },
+        {
+          "kennung": "M39",
+          "instrument": "I2",
+          "ursachen": [
+            4501
+          ]
+        },
+        {
+          "kennung": "M40",
+          "einzeln": {
+            "wirksamkeit": 1,
+            "umsetzbarkeit": 2,
+            "begruendung": "Düngemittelalternativen könnten Lachgas mindern, die Förderung von Entwicklung wirkt aber erst langfristig und unbestimmt; kaum untersucht.",
+            "evidenz": "offen"
+          },
+          "ursachen": [
+            4503
+          ]
+        },
+        {
+          "kennung": "M41",
+          "instrument": "I10",
+          "ursachen": [
+            4504
+          ]
+        },
+        {
+          "kennung": "M42",
+          "einzeln": {
+            "wirksamkeit": 1,
+            "umsetzbarkeit": 2,
+            "begruendung": "Schafft einen Sanierungsanreiz beim Erben oder Schenken, betrifft aber nur wenige Fälle und vor allem Vermögende; Länder erhalten die Steuer, daher Zustimmung des Bundesrats nötig.",
+            "evidenz": "offen"
+          },
+          "ursachen": [
+            4502
+          ]
+        },
+        {
+          "kennung": "M43",
+          "einzeln": {
+            "wirksamkeit": 0,
+            "umsetzbarkeit": 3,
+            "begruendung": "Ein späteres Neutralitätsziel verlangsamt die Minderung; dass nationale Ziele im Emissionshandel wenig bringen, gilt nur teilweise, da Verkehr, Gebäude und Landwirtschaft nicht voll im EU-ETS sind.",
+            "evidenz": "offen"
+          },
+          "ursachen": [
+            4504
+          ]
+        },
+        {
+          "kennung": "M44",
+          "einzeln": {
+            "wirksamkeit": 1,
+            "umsetzbarkeit": 2,
+            "begruendung": "Aufstockung kann Sanierungen wirtschaftlicher machen; betrifft nur geeignete Gebäude, Baurecht liegt teils bei den Ländern. Wirkung kaum untersucht.",
+            "evidenz": "offen"
+          },
+          "ursachen": [
+            4502
+          ]
+        },
+        {
+          "kennung": "M45",
+          "instrument": "I2",
+          "ursachen": [
+            4501
+          ]
+        },
+        {
+          "kennung": "M46",
+          "einzeln": {
+            "wirksamkeit": 1,
+            "umsetzbarkeit": 3,
+            "begruendung": "Öffentliche Flotten sind klein, die direkte Minderung gering; Signal- und Markteffekte sind möglich, aber kaum untersucht.",
+            "evidenz": "offen"
+          },
+          "ursachen": [
+            4501
+          ]
+        },
+        {
+          "kennung": "M47",
+          "instrument": "I8",
+          "ursachen": [
+            4501
+          ]
+        },
+        {
+          "kennung": "M48",
+          "einzeln": {
+            "wirksamkeit": 1,
+            "umsetzbarkeit": 2,
+            "begruendung": "E-Kerosin kann Luftverkehr dekarbonisieren, kostet laut ICCT aber ein Vielfaches fossilen Kerosins und ist vor 2050 nicht wettbewerbsfähig; bis 2030 kleine Mengen.",
+            "evidenz": "gemischt",
+            "beleg_studie_url": "https://trid.trb.org/View/1925817"
+          },
+          "ursachen": [
+            4501
+          ]
+        },
+        {
+          "kennung": "M49",
+          "instrument": "I4",
+          "ursachen": [
+            4501
+          ]
+        },
+        {
+          "kennung": "M50",
+          "instrument": "I11",
+          "ursachen": [
+            4504
+          ]
+        },
+        {
+          "kennung": "M51",
+          "instrument": "I1",
+          "ursachen": [
+            4501
+          ]
+        },
+        {
+          "kennung": "M52",
+          "instrument": "I4",
+          "ursachen": [
+            4501
+          ]
+        },
+        {
+          "kennung": "M53",
+          "einzeln": {
+            "wirksamkeit": 1,
+            "umsetzbarkeit": 3,
+            "begruendung": "Höhere Umlagegrenzen können Vermietern Sanierungen erleichtern, belasten aber Mieter; ob dadurch spürbar mehr saniert wird, ist umstritten.",
+            "evidenz": "gemischt"
+          },
+          "ursachen": [
+            4502
+          ]
+        },
+        {
+          "kennung": "M54",
+          "instrument": "I3",
+          "ursachen": [
+            4501
+          ]
+        },
+        {
+          "kennung": "M55",
+          "instrument": "I7",
+          "ursachen": [
+            4501
+          ]
+        },
+        {
+          "kennung": "M56",
+          "einzeln": {
+            "wirksamkeit": 2,
+            "umsetzbarkeit": 1,
+            "begruendung": "Weniger Tiere senken Methan und Gülle-Lachgas direkt; die Flächenbindung trifft aber vor allem Regionen mit hoher Viehdichte, und eine verbindliche Obergrenze stößt auf Eigentums- und Berufsfreiheit.",
+            "evidenz": "belegt",
+            "beleg_studie_url": "https://www.umweltbundesamt.de/tags/tierbestand"
+          },
+          "ursachen": [
+            4503
+          ]
+        },
+        {
+          "kennung": "M57",
+          "instrument": "I7",
+          "ursachen": [
+            4501
+          ]
+        },
+        {
+          "kennung": "M58",
+          "einzeln": {
+            "wirksamkeit": 1,
+            "umsetzbarkeit": 1,
+            "begruendung": "Leichtere Taxonomie-Anerkennung könnte Sanierungskredite verbilligen; die Kriterien legt aber die EU fest, die Wirkung ist kaum untersucht.",
+            "evidenz": "offen"
+          },
+          "ursachen": [
+            4502
+          ]
+        },
+        {
+          "kennung": "M59",
+          "einzeln": {
+            "wirksamkeit": 2,
+            "umsetzbarkeit": 2,
+            "begruendung": "Studien aus Dänemark und Norwegen zeigen, dass öffentliche Ladepunkte den Umstieg auf E-Autos fördern, mit Verzögerung; Ausbau braucht Investitionen und Jahre.",
+            "evidenz": "belegt",
+            "beleg_studie_url": "https://diposit.ub.edu/items/5a5ad497-bd95-40fc-bf98-98d5c77843d9/full"
+          },
+          "ursachen": [
+            4501
+          ]
+        },
+        {
+          "kennung": "M60",
+          "einzeln": {
+            "wirksamkeit": 1,
+            "umsetzbarkeit": 2,
+            "begruendung": "Setzt am Vermieter-Mieter-Dilemma an, das Sanierungen bremst; welche Anreize gemeint sind, bleibt offen, Wirkung kaum untersucht.",
+            "evidenz": "offen"
+          },
+          "ursachen": [
+            4502
+          ]
+        },
+        {
+          "kennung": "M61",
+          "ursachen": []
+        },
+        {
+          "kennung": "M62",
+          "ursachen": []
+        },
+        {
+          "kennung": "M63",
+          "instrument": "I3",
+          "ursachen": [
+            4501
+          ]
+        },
+        {
+          "kennung": "M64",
+          "instrument": "I10",
+          "ursachen": [
+            4504
+          ]
+        },
+        {
+          "kennung": "M65",
+          "instrument": "I10",
+          "ursachen": [
+            4504
+          ]
+        },
+        {
+          "kennung": "M66",
+          "instrument": "I4",
+          "ursachen": [
+            4501
+          ]
+        },
+        {
+          "kennung": "M67",
+          "instrument": "I2",
+          "ursachen": [
+            4501
+          ]
+        },
+        {
+          "kennung": "M68",
+          "einzeln": {
+            "wirksamkeit": 1,
+            "umsetzbarkeit": 3,
+            "begruendung": "Zuschüsse beim Kauf alter Häuser verbinden Eigentumserwerb mit Sanierung; das Programm ist klein, die zusätzliche Minderung begrenzt.",
+            "evidenz": "offen"
+          },
+          "ursachen": [
+            4502
+          ]
+        },
+        {
+          "kennung": "M69",
+          "instrument": "I9",
+          "ursachen": [
+            4503
+          ]
+        },
+        {
+          "kennung": "M70",
+          "ursachen": []
+        },
+        {
+          "kennung": "M71",
+          "einzeln": {
+            "wirksamkeit": 2,
+            "umsetzbarkeit": 2,
+            "begruendung": "CO2-Preise senken Emissionen nachweislich, im Wärmebereich reagieren Haushalte kurzfristig aber schwach; ohne begleitende Vorgaben ist das Tempo unsicher. Rahmen teils EU-Recht.",
+            "evidenz": "gemischt",
+            "beleg_studie_url": "https://strathprints.strath.ac.uk/72023"
+          },
+          "ursachen": [
+            4502
+          ]
+        },
+        {
+          "kennung": "M72",
+          "einzeln": {
+            "wirksamkeit": 1,
+            "umsetzbarkeit": 1,
+            "begruendung": "Der EU-Rechnungshof fand, dass Klimaausgaben der GAP die Agraremissionen bisher nicht gesenkt haben; gezieltere Bindung könnte helfen, hängt aber von EU-Entscheidungen ab.",
+            "evidenz": "gemischt"
+          },
+          "ursachen": [
+            4503
+          ]
+        }
+      ]
+    }
+  }
+}

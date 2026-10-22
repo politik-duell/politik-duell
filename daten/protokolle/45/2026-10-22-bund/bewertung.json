@@ -1,0 +1,824 @@
+{
+  "blind_pruefsumme": "e918e1b0a95d5890a1f4e2075c64c8f7af216a4b65302076980ea337de4c866e",
+  "neue_instrumente": [
+    {
+      "kennung": "I1",
+      "name": "Generelles Tempolimit auf Autobahnen einführen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Laut UBA spart Tempo 130 etwa 1,3-2,0 Mio. t, Tempo 120 mit 80 außerorts rund 6,6 Mio. t CO2-Äq. pro Jahr; per Gesetz sofort umsetzbar und kostengünstig, deckt aber nur einen Teil der Verkehrslücke.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.umweltbundesamt.de/themen/verkehr/nachhaltige-mobilitaet/tempolimit"
+    },
+    {
+      "kennung": "I2",
+      "name": "Generelles Tempolimit auf Autobahnen ablehnen (Bund)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 3,
+      "begruendung": "Hält den Status quo; die laut UBA mögliche Minderung von 1,3 bis 6,6 Mio. t CO2-Äq. pro Jahr bleibt ungenutzt, die Verkehrsemissionen sinken dadurch nicht.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.umweltbundesamt.de/themen/verkehr/nachhaltige-mobilitaet/tempolimit"
+    },
+    {
+      "kennung": "I3",
+      "name": "CO2-Preis und klimabezogene Abgaben im Verkehr senken oder abschaffen (Bund)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 2,
+      "begruendung": "Studien zeigen, dass CO2-Preise Emissionen auch bei niedrigen Preisen senken; ihr Abbau schwächt diesen Anreiz. Rechtlich national möglich, ab dem EU-Emissionshandel für Verkehr und Wärme aber begrenzt.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://strathprints.strath.ac.uk/72023"
+    },
+    {
+      "kennung": "I4",
+      "name": "Straßenausbau, Fahrspuren und Straßenfinanzierung stärken (Bund)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 2,
+      "begruendung": "Mehr Straßenkapazität senkt keine Emissionen; Studien zu induziertem Verkehr zeigen eher Mehrverkehr, die Größe des Effekts schwankt aber stark je nach Lage und Stauniveau.",
+      "evidenz": "gemischt"
+    },
+    {
+      "kennung": "I5",
+      "name": "Radwegenetz und Mobilstationen ausbauen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Neue Radwege werden genutzt, ersetzen laut Studien aber oft nur wenige Autofahrten; ohne begleitende Maßnahmen bleibt die CO2-Wirkung klein. Bund kann über Förderprogramme beitragen.",
+      "evidenz": "gemischt"
+    },
+    {
+      "kennung": "I6",
+      "name": "Neuzulassung nur emissionsfreier Pkw ab 2035 beibehalten (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "EU-Flottengrenzwerte haben die Neuwagen-Emissionen 2019-2023 um rund 28 % gesenkt; die Wirkung auf den Bestand kommt aber verzögert, und die Regel hängt von EU-Entscheidungen ab.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.eea.europa.eu/data-and-maps/indicators/average-co2-emissions-from-motor-vehicles-1/assessment"
+    },
+    {
+      "kennung": "I7",
+      "name": "Verbrenner-Aus 2035 und Flottengrenzwerte aufheben (Bund)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 1,
+      "begruendung": "Flottengrenzwerte haben die Neuwagen-Emissionen nachweislich gesenkt; ihre Aufhebung bremst die Minderung. Zudem kann Deutschland die EU-Verordnung nicht allein ändern.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.eea.europa.eu/data-and-maps/indicators/average-co2-emissions-from-motor-vehicles-1/assessment"
+    },
+    {
+      "kennung": "I8",
+      "name": "Güterverkehr von der Straße auf Schiene und Wasserstraße verlagern (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Schiene verursacht je Tonnenkilometer deutlich weniger Emissionen; trotz Förderung stagniert der Kombiverkehr aber, weil er privat rund 28 % teurer ist. Ausbau braucht Jahre.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://repositum.tuwien.at/handle/20.500.12708/189196?mode=full"
+    },
+    {
+      "kennung": "I9",
+      "name": "Dünge-Vorgaben und Stoffstrombilanz lockern oder abschaffen (Bund)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 2,
+      "begruendung": "Weniger Kontrolle der Stickstoffüberschüsse senkt kein Lachgas, sondern riskiert mehr; der Nutzen der Stoffstrombilanz für die Beratung ist allerdings umstritten. Lockerungen stoßen an die EU-Nitratrichtlinie.",
+      "evidenz": "gemischt"
+    },
+    {
+      "kennung": "I10",
+      "name": "Sektorziele und verbindliche Nachsteuerung im Klimaschutzgesetz stärken (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Der Expertenrat sah im Wegfall sektoraler Nachsteuerung eine erhöhte Gefahr der Zielverfehlung; zugleich wurden Sektorziele früher trotz Sofortprogrammen verfehlt. Per Gesetzesänderung schnell möglich.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.aerzteblatt.de/news/expertenrat-sieht-ampelplaene-zum-klimaschutzgesetz-kritisch-bb9035c9-d676-4e4e-88fe-42c073c03dc9"
+    },
+    {
+      "kennung": "I11",
+      "name": "EU-Emissionshandel mit sinkender Obergrenze auf alle Sektoren ausweiten (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "Der EU-Emissionshandel hat Emissionen nachweislich gesenkt, eine Obergrenze sichert die Gesamtmenge; Sektorverfehlungen werden aber nicht behoben, und die Ausweitung hängt von EU-Entscheidungen ab.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://strathprints.strath.ac.uk/72023"
+    }
+  ],
+  "zuordnung": [
+    {
+      "kennung": "M01",
+      "ursachen": []
+    },
+    {
+      "kennung": "M02",
+      "instrument": "I1",
+      "ursachen": [
+        4501
+      ]
+    },
+    {
+      "kennung": "M03",
+      "ursachen": []
+    },
+    {
+      "kennung": "M04",
+      "instrument": "I3",
+      "ursachen": [
+        4501,
+        4502
+      ]
+    },
+    {
+      "kennung": "M05",
+      "instrument": "I5",
+      "ursachen": [
+        4501
+      ]
+    },
+    {
+      "kennung": "M06",
+      "ursachen": []
+    },
+    {
+      "kennung": "M07",
+      "ursachen": []
+    },
+    {
+      "kennung": "M08",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 3,
+        "begruendung": "Sanierungsförderung spart laut Evaluation des Förderjahres 2021 rund 1,7 Mio. t CO2-Äq. pro Jahr; Staffelung nach Einsparung erhöht die Zielgenauigkeit, Mitnahmeeffekte bleiben möglich.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://www.solarserver.de/2023/06/15/erste-externe-evaluation-der-beg-foerderung-vorgelegt/"
+      },
+      "ursachen": [
+        4502
+      ]
+    },
+    {
+      "kennung": "M09",
+      "ursachen": []
+    },
+    {
+      "kennung": "M10",
+      "instrument": "I3",
+      "ursachen": [
+        4501
+      ]
+    },
+    {
+      "kennung": "M11",
+      "einzeln": {
+        "wirksamkeit": 0,
+        "umsetzbarkeit": 3,
+        "begruendung": "Tierhaltung ist die größte Quelle der Agraremissionen; wer jede Bestandsreduktion ablehnt, lässt diesen Hebel ungenutzt. Als Status quo ohne Aufwand umsetzbar.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://www.umweltbundesamt.de/tags/tierbestand"
+      },
+      "ursachen": [
+        4503
+      ]
+    },
+    {
+      "kennung": "M12",
+      "instrument": "I5",
+      "ursachen": [
+        4501
+      ]
+    },
+    {
+      "kennung": "M13",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 1,
+        "begruendung": "Sanierungsförderung senkt Gebäudeemissionen nachweislich; 25 Mrd. Euro jährlich wären deutlich mehr als bisher, die Finanzierung ist aber ungeklärt und Handwerkskapazitäten sind knapp.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://www.solarserver.de/2023/06/15/erste-externe-evaluation-der-beg-foerderung-vorgelegt/"
+      },
+      "ursachen": [
+        4502
+      ]
+    },
+    {
+      "kennung": "M14",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 0,
+        "begruendung": "Kaufanreize beschleunigen E-Auto-Käufe, haben aber hohe Mitnahmeeffekte; die Bindung an Produktion in Deutschland benachteiligt Waren aus anderen EU-Staaten und ist EU-rechtlich kaum haltbar.",
+        "evidenz": "gemischt"
+      },
+      "ursachen": [
+        4501
+      ]
+    },
+    {
+      "kennung": "M15",
+      "instrument": "I6",
+      "ursachen": [
+        4501
+      ]
+    },
+    {
+      "kennung": "M16",
+      "instrument": "I8",
+      "ursachen": [
+        4501
+      ]
+    },
+    {
+      "kennung": "M17",
+      "ursachen": []
+    },
+    {
+      "kennung": "M18",
+      "instrument": "I1",
+      "ursachen": [
+        4501
+      ]
+    },
+    {
+      "kennung": "M19",
+      "ursachen": []
+    },
+    {
+      "kennung": "M20",
+      "einzeln": {
+        "wirksamkeit": 0,
+        "umsetzbarkeit": 2,
+        "begruendung": "Weniger Klimaschutzvorgaben für Häfen senken keine Verkehrsemissionen, eher im Gegenteil; welche Vorgaben gemeint sind, bleibt unklar, viele beruhen auf EU-Recht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        4501
+      ]
+    },
+    {
+      "kennung": "M21",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Fahrzeugsteuern nach Größe und CO2 lenken Käufe zu sparsameren Autos; Studien zum französischen Bonus-Malus finden aber teils keinen Netto-Effekt. Kfz-Steuer ist Bundessache.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://www.insee.fr/en/statistiques/1380983"
+      },
+      "ursachen": [
+        4501
+      ]
+    },
+    {
+      "kennung": "M22",
+      "ursachen": []
+    },
+    {
+      "kennung": "M23",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Sanierungspläne schaffen Planung und Druck bei großen Vermietern, verpflichten aber nicht zur Umsetzung; Wirkung kaum untersucht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        4502
+      ]
+    },
+    {
+      "kennung": "M24",
+      "instrument": "I9",
+      "ursachen": [
+        4503
+      ]
+    },
+    {
+      "kennung": "M25",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Eine EU-weite Klimaabgabe für alle Airlines könnte Flugnachfrage dämpfen; sie erfordert aber Einigung in der EU und mit Drittstaaten, und die Wirkung auf nationale Emissionen ist gering.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        4501
+      ]
+    },
+    {
+      "kennung": "M26",
+      "instrument": "I6",
+      "ursachen": [
+        4501
+      ]
+    },
+    {
+      "kennung": "M27",
+      "instrument": "I8",
+      "ursachen": [
+        4501
+      ]
+    },
+    {
+      "kennung": "M28",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Beratung kann Sanierungen anstoßen; Studien finden aber nur schwache und sehr unterschiedliche Effekte, Kosten und Einsparungen entscheiden mehr. Flächendeckend braucht es viel Personal.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://www.rwi-essen.de/publikationen/suche/detail/heterogeneity-in-the-effect-of-home-energy-397"
+      },
+      "ursachen": [
+        4502
+      ]
+    },
+    {
+      "kennung": "M29",
+      "instrument": "I7",
+      "ursachen": [
+        4501
+      ]
+    },
+    {
+      "kennung": "M30",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Gezielte Förderung kleiner E-Autos für Pendler und Betriebe senkt Mitnahmeeffekte gegenüber pauschalen Prämien; die CO2-Wirkung je Euro bleibt aber begrenzt, die Finanzierung ist offen.",
+        "evidenz": "gemischt"
+      },
+      "ursachen": [
+        4501
+      ]
+    },
+    {
+      "kennung": "M31",
+      "instrument": "I4",
+      "ursachen": [
+        4501
+      ]
+    },
+    {
+      "kennung": "M32",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Ein eigenes Ziel für Negativemissionen trennt Entnahme und Minderung und verhindert Verrechnung; es hängt aber von EU-Entscheidungen ab, die Wirkung ist kaum untersucht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        4504
+      ]
+    },
+    {
+      "kennung": "M33",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Privatjets sind je Person sehr emissionsintensiv, machen aber nur einen kleinen Teil der Verkehrsemissionen aus; welche Privilegien wegfallen, bleibt unklar, teils EU-Recht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        4501
+      ]
+    },
+    {
+      "kennung": "M34",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Das französische Kurzstreckenverbot senkte Emissionen nur wenig, auch durch Ausweichen auf andere Routen; ein Verbot braucht nach EU-Luftverkehrsrecht eine Ausnahme der Kommission.",
+        "evidenz": "belegt"
+      },
+      "ursachen": [
+        4501
+      ]
+    },
+    {
+      "kennung": "M35",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 3,
+        "begruendung": "Agrarwissenschaftler empfehlen eine verlässliche betriebliche Nährstoffbilanz, um Stickstoffüberschüsse und Lachgas zu senken; ihr Nutzen hängt von Grenzwerten und Kontrolle ab und ist umstritten.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://www.topagrar.com/acker/news/wissenschaftler-geben-handlungsempfehlungen-fuer-klimaneutralitaet-der-landwirtschaft-12584596.html"
+      },
+      "ursachen": [
+        4503
+      ]
+    },
+    {
+      "kennung": "M36",
+      "instrument": "I11",
+      "ursachen": [
+        4504
+      ]
+    },
+    {
+      "kennung": "M37",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Die Ziele bleiben, ein „pragmatischerer Weg“ dürfte die Minderung bis 2030 aber verlangsamen; abhängig von Verhandlungen auf EU-Ebene.",
+        "evidenz": "gemischt"
+      },
+      "ursachen": [
+        4501
+      ]
+    },
+    {
+      "kennung": "M38",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Verzicht auf Neubau vermeidet zusätzlichen induzierten Verkehr, senkt bestehende Emissionen aber nicht; Größe des Effekts in Studien unterschiedlich. Über Haushalt und Bedarfsplan steuerbar.",
+        "evidenz": "gemischt"
+      },
+      "ursachen": [
+        4501
+      ]
+    },
+    {
+      "kennung": "M39",
+      "instrument": "I2",
+      "ursachen": [
+        4501
+      ]
+    },
+    {
+      "kennung": "M40",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Düngemittelalternativen könnten Lachgas mindern, die Förderung von Entwicklung wirkt aber erst langfristig und unbestimmt; kaum untersucht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        4503
+      ]
+    },
+    {
+      "kennung": "M41",
+      "instrument": "I10",
+      "ursachen": [
+        4504
+      ]
+    },
+    {
+      "kennung": "M42",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Schafft einen Sanierungsanreiz beim Erben oder Schenken, betrifft aber nur wenige Fälle und vor allem Vermögende; Länder erhalten die Steuer, daher Zustimmung des Bundesrats nötig.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        4502
+      ]
+    },
+    {
+      "kennung": "M43",
+      "einzeln": {
+        "wirksamkeit": 0,
+        "umsetzbarkeit": 3,
+        "begruendung": "Ein späteres Neutralitätsziel verlangsamt die Minderung; dass nationale Ziele im Emissionshandel wenig bringen, gilt nur teilweise, da Verkehr, Gebäude und Landwirtschaft nicht voll im EU-ETS sind.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        4504
+      ]
+    },
+    {
+      "kennung": "M44",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Aufstockung kann Sanierungen wirtschaftlicher machen; betrifft nur geeignete Gebäude, Baurecht liegt teils bei den Ländern. Wirkung kaum untersucht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        4502
+      ]
+    },
+    {
+      "kennung": "M45",
+      "instrument": "I2",
+      "ursachen": [
+        4501
+      ]
+    },
+    {
+      "kennung": "M46",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Öffentliche Flotten sind klein, die direkte Minderung gering; Signal- und Markteffekte sind möglich, aber kaum untersucht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        4501
+      ]
+    },
+    {
+      "kennung": "M47",
+      "instrument": "I8",
+      "ursachen": [
+        4501
+      ]
+    },
+    {
+      "kennung": "M48",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "E-Kerosin kann Luftverkehr dekarbonisieren, kostet laut ICCT aber ein Vielfaches fossilen Kerosins und ist vor 2050 nicht wettbewerbsfähig; bis 2030 kleine Mengen.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://trid.trb.org/View/1925817"
+      },
+      "ursachen": [
+        4501
+      ]
+    },
+    {
+      "kennung": "M49",
+      "instrument": "I4",
+      "ursachen": [
+        4501
+      ]
+    },
+    {
+      "kennung": "M50",
+      "instrument": "I11",
+      "ursachen": [
+        4504
+      ]
+    },
+    {
+      "kennung": "M51",
+      "instrument": "I1",
+      "ursachen": [
+        4501
+      ]
+    },
+    {
+      "kennung": "M52",
+      "instrument": "I4",
+      "ursachen": [
+        4501
+      ]
+    },
+    {
+      "kennung": "M53",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Höhere Umlagegrenzen können Vermietern Sanierungen erleichtern, belasten aber Mieter; ob dadurch spürbar mehr saniert wird, ist umstritten.",
+        "evidenz": "gemischt"
+      },
+      "ursachen": [
+        4502
+      ]
+    },
+    {
+      "kennung": "M54",
+      "instrument": "I3",
+      "ursachen": [
+        4501
+      ]
+    },
+    {
+      "kennung": "M55",
+      "instrument": "I7",
+      "ursachen": [
+        4501
+      ]
+    },
+    {
+      "kennung": "M56",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 1,
+        "begruendung": "Weniger Tiere senken Methan und Gülle-Lachgas direkt; die Flächenbindung trifft aber vor allem Regionen mit hoher Viehdichte, und eine verbindliche Obergrenze stößt auf Eigentums- und Berufsfreiheit.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://www.umweltbundesamt.de/tags/tierbestand"
+      },
+      "ursachen": [
+        4503
+      ]
+    },
+    {
+      "kennung": "M57",
+      "instrument": "I7",
+      "ursachen": [
+        4501
+      ]
+    },
+    {
+      "kennung": "M58",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Leichtere Taxonomie-Anerkennung könnte Sanierungskredite verbilligen; die Kriterien legt aber die EU fest, die Wirkung ist kaum untersucht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        4502
+      ]
+    },
+    {
+      "kennung": "M59",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Studien aus Dänemark und Norwegen zeigen, dass öffentliche Ladepunkte den Umstieg auf E-Autos fördern, mit Verzögerung; Ausbau braucht Investitionen und Jahre.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://diposit.ub.edu/items/5a5ad497-bd95-40fc-bf98-98d5c77843d9/full"
+      },
+      "ursachen": [
+        4501
+      ]
+    },
+    {
+      "kennung": "M60",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Setzt am Vermieter-Mieter-Dilemma an, das Sanierungen bremst; welche Anreize gemeint sind, bleibt offen, Wirkung kaum untersucht.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        4502
+      ]
+    },
+    {
+      "kennung": "M61",
+      "ursachen": []
+    },
+    {
+      "kennung": "M62",
+      "ursachen": []
+    },
+    {
+      "kennung": "M63",
+      "instrument": "I3",
+      "ursachen": [
+        4501
+      ]
+    },
+    {
+      "kennung": "M64",
+      "instrument": "I10",
+      "ursachen": [
+        4504
+      ]
+    },
+    {
+      "kennung": "M65",
+      "instrument": "I10",
+      "ursachen": [
+        4504
+      ]
+    },
+    {
+      "kennung": "M66",
+      "instrument": "I4",
+      "ursachen": [
+        4501
+      ]
+    },
+    {
+      "kennung": "M67",
+      "instrument": "I2",
+      "ursachen": [
+        4501
+      ]
+    },
+    {
+      "kennung": "M68",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Zuschüsse beim Kauf alter Häuser verbinden Eigentumserwerb mit Sanierung; das Programm ist klein, die zusätzliche Minderung begrenzt.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        4502
+      ]
+    },
+    {
+      "kennung": "M69",
+      "instrument": "I9",
+      "ursachen": [
+        4503
+      ]
+    },
+    {
+      "kennung": "M70",
+      "ursachen": []
+    },
+    {
+      "kennung": "M71",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "CO2-Preise senken Emissionen nachweislich, im Wärmebereich reagieren Haushalte kurzfristig aber schwach; ohne begleitende Vorgaben ist das Tempo unsicher. Rahmen teils EU-Recht.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://strathprints.strath.ac.uk/72023"
+      },
+      "ursachen": [
+        4502
+      ]
+    },
+    {
+      "kennung": "M72",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Der EU-Rechnungshof fand, dass Klimaausgaben der GAP die Agraremissionen bisher nicht gesenkt haben; gezieltere Bindung könnte helfen, hängt aber von EU-Entscheidungen ab.",
+        "evidenz": "gemischt"
+      },
+      "ursachen": [
+        4503
+      ]
+    },
+    {
+      "kennung": "M73",
+      "instrument": "I8",
+      "ursachen": [
+        4501
+      ]
+    },
+    {
+      "kennung": "M74",
+      "instrument": "I3",
+      "ursachen": [
+        4501,
+        4502
+      ]
+    },
+    {
+      "kennung": "M75",
+      "instrument": "I4",
+      "ursachen": [
+        4501
+      ]
+    },
+    {
+      "kennung": "M76",
+      "ursachen": []
+    },
+    {
+      "kennung": "M77",
+      "instrument": "I7",
+      "ursachen": [
+        4501
+      ]
+    },
+    {
+      "kennung": "M78",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Sparsamere Motoren und alternative Kraftstoffe senken Emissionen etwas; laut PIK sind E-Fuels aber teuer (800-1.200 Euro/t CO2), knapp und für Pkw ineffizient, bis 2030 kaum verfügbar.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://publications.pik-potsdam.de/pubman/item/item_25599_8"
+      },
+      "ursachen": [
+        4501
+      ]
+    },
+    {
+      "kennung": "M79",
+      "einzeln": {
+        "wirksamkeit": 0,
+        "umsetzbarkeit": 1,
+        "begruendung": "Der EU-Emissionshandel hat Emissionen nachweislich gesenkt; seine Abschaffung entfernt die Obergrenze, eine Globalisierung ist unrealistisch. Beides hängt von EU und anderen Staaten ab.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://strathprints.strath.ac.uk/72023"
+      },
+      "ursachen": [
+        4504
+      ]
+    },
+    {
+      "kennung": "M80",
+      "ursachen": []
+    },
+    {
+      "kennung": "M81",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Sozialleasing wie in Frankreich war stark nachgefragt und erreicht Pendler; der Einbezug von Verbrennern schwächt die Minderung, Emissionswirkung kaum evaluiert, Finanzierung offen.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        4501
+      ]
+    }
+  ],
+  "teilbewertung": {
+    "vorherige_pruefsumme": "a06b8732d10677f32b1ba253950e3a0d8211edf86806d6c9b3a9ffe040afbc49",
+    "neu_bewertet": [
+      "M73",
+      "M74",
+      "M75",
+      "M76",
+      "M77",
+      "M78",
+      "M79",
+      "M80",
+      "M81"
+    ]
+  }
+}

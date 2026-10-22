@@ -1,0 +1,35 @@
+{
+  "thema_id": 42,
+  "stand": "2026-10-21",
+  "herkunft": "Perspektivenprüfung 2026-10-21 (KI-Entwurf, docs/perspektiven-ursachen.md, Thema 42), vor dem Blick in die Programme geschrieben. Noch nicht von der Betreiberin bestätigt.",
+  "regeln": [
+    { "nr": 1, "ursachen": [4201], "text": "Zu 1 gehören der Verlauf der Einkommensteuer bei steigenden Löhnen und Preisen und die Frage, ob der Tarif angepasst wird (kalte Progression, Tarifeckwerte, Grundfreibetrag). Nicht dazu: Höhe der Steuersätze insgesamt (3), Sozialbeiträge (701, 3801–3803), Bürgergeld-Anrechnung (506). Grenzfall: Kindergeld-Erhöhung ohne Tarifwirkung nur als ursachen_offen." },
+    { "nr": 2, "ursachen": [4202], "text": "Zu 2 gehört, dass die Ausgaben des Bundes die laufenden Einnahmen übersteigen, sich Defizit und Verschuldung erhöhen und Zinsausgaben steigen. Nicht dazu: einzelne Ausgabenbereiche wie Rente (701) oder GKV-Bundeszuschüsse (3802), die eigene Ursachen sind. Grenzfall: Ausgabenschub durch Verteidigung oder Sozialleistungen nur als ursachen_offen." },
+    { "nr": 3, "ursachen": [4203], "text": "Zu 3 gehört, wie sich die Steuereinnahmen auf Lohn-, Umsatz-, Erbschaft- und sonstige Steuern verteilen. Nicht dazu: die Gesamthöhe der Abgaben auf Arbeit (1104, Preise und Löhne) und die Beitragsentwicklung (701, 3801). Grenzfall: Steuerhöhe einzelner Steuern (z. B. Mehrwertsteuer-Satz) nur als ursachen_offen." }
+  ],
+  "buendel": {
+    "4201": ["Tarif an Inflation anpassen", "Entlastung über Grundfreibetrag", "Ausgleich verzichten, Einnahmen sichern", "Solidaritätszuschlag abschaffen", "Einkommensteuertarif vereinfachen", "Familiensplitting", "Steuerfreiheit gesetzliche Rente bis 2000 Euro", "Kinderfreibetrag an Kindergeld angleichen", "Tarifverlauf der Einkommensteuer", "Spitzensteuersatz-Schwelle", "Steuerfreiheit für Überstundenzuschläge", "Solidaritätszuschlag in Tarif integrieren", "Steuergutschriften für niedrige Einkommen", "Individuelle Besteuerung statt Ehegattensplitting", "Einkommensteuertarif umgestalten", "Ehegattensplitting durch Individualbesteuerung ersetzen", "Kindergeld erhöhen"],
+    "4202": ["Ausgaben senken", "Einnahmen durch Steuern erhöhen", "Neuverschuldung zulassen", "Haftung der Rüstungsindustrie für Mehrkosten", "Open-Source-Software in der Verwaltung", "Finanzmittel für Kommunen", "Verteidigungsetat über 2 Prozent des BIP", "Personalabbau in der Bundesverwaltung", "Deutschlandfonds für Investitionen", "Bundesausgaben auf Kernaufgaben beschränken", "Staatsbeteiligungen veräußern", "Verwaltung durch Digitalisierung verschlanken", "Einmalige Vermögensabgabe", "Übergewinnsteuer", "Steuerhinterziehung konsequent verfolgen", "Bund übernimmt Sozialkosten der Kommunen", "Kommunalentschuldungspaket"],
+    "4203": ["Vermögen und Erbschaften stärker besteuern", "Unternehmen und Kapital entlasten", "Konsum belasten oder entlasten", "CO₂-Bepreisung und Emissionshandel", "Kapitalerträge wie Arbeitseinkommen besteuern", "Erbschaften oberhalb der Freibeträge gleich besteuern", "Besteuerung von Aktienrückkäufen", "Spekulationsfrist bei Immobilien begrenzen", "Agrardiesel-Steuerermäßigung wiederherstellen", "Lokale Besteuerung der Gewinne multinationaler Konzerne", "Finanztransaktionssteuer", "Grunderwerbsteuer reformieren", "Grundsteuer am Verkehrswert", "Gewerbesteuer durch Alternative ersetzen", "Steuerfreies Aufstiegsvermögen (Sparer-Freibetrag)", "Vereinfachung des ermäßigten Umsatzsteuersatzes", "Gewerbesteuer-Dumping eindämmen", "Übergewinnsteuer", "Tonnagesteuer-Privileg abschaffen", "Gemeindewirtschaftsteuer statt Gewerbesteuer", "Energie-Soli für Reiche", "Solidaritätszuschlag abschaffen"]
+  },
+  "suchbegriffe_geprueft": {
+    "grundfreibetrag": "Wenige Treffer (10); die Wortformen mitten im Wort (Steuergrundfreibetrag, Silbentrennung) sind gerade die gesuchten Maßnahmen."
+  },
+  "suchbegriffe": {
+    "4201": {
+      "Tarif an Inflation anpassen": ["kalte progression", "progressionsausgleich", "tarifanpassung", "tarifeckwert"],
+      "Entlastung über Grundfreibetrag": ["grundfreibetrag", "pauschbetrag"],
+      "Ausgleich verzichten, Einnahmen sichern": ["ausgleichsverzicht", "tarifverschieb"]
+    },
+    "4202": {
+      "Ausgaben senken": ["ausgabenkuerz", "sparpaket", "konsolidierung"],
+      "Einnahmen durch Steuern erhöhen": ["steuererhoehung", "einnahmenerhoeh", "steuerschlupfloecher"],
+      "Neuverschuldung zulassen": ["neuverschuldung", "kreditaufnahme", "bereichsausnahme"]
+    },
+    "4203": {
+      "Vermögen und Erbschaften stärker besteuern": ["vermoegensteuer", "erbschaftsteuer", "erbschaftssteuer"],
+      "Unternehmen und Kapital entlasten": ["unternehmensteuer", "koerperschaftsteuer", "gewerbesteuer", "investitionspraemie"],
+      "Konsum belasten oder entlasten": ["mehrwertsteuer", "umsatzsteuer"]
+    }
+  }
+}
