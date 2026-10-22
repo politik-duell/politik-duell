@@ -7,6 +7,9 @@
     { "nr": 2, "ursachen": [4202], "text": "Zu 2 gehört, dass die Ausgaben des Bundes die laufenden Einnahmen übersteigen, sich Defizit und Verschuldung erhöhen und Zinsausgaben steigen. Nicht dazu: einzelne Ausgabenbereiche wie Rente (701) oder GKV-Bundeszuschüsse (3802), die eigene Ursachen sind. Grenzfall: Ausgabenschub durch Verteidigung oder Sozialleistungen nur als ursachen_offen." },
     { "nr": 3, "ursachen": [4203], "text": "Zu 3 gehört, wie sich die Steuereinnahmen auf Lohn-, Umsatz-, Erbschaft- und sonstige Steuern verteilen. Nicht dazu: die Gesamthöhe der Abgaben auf Arbeit (1104, Preise und Löhne) und die Beitragsentwicklung (701, 3801). Grenzfall: Steuerhöhe einzelner Steuern (z. B. Mehrwertsteuer-Satz) nur als ursachen_offen." }
   ],
+  "suchbegriffe_geprueft": {
+    "grundfreibetrag": "Wenige Treffer (10); die Wortformen mitten im Wort (Steuergrundfreibetrag, Silbentrennung) sind gerade die gesuchten Maßnahmen."
+  },
   "suchbegriffe": {
     "4201": {
       "Tarif an Inflation anpassen": ["kalte progression", "progressionsausgleich", "tarifanpassung", "tarifeckwert"],
