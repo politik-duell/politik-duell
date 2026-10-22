@@ -93,7 +93,7 @@ Prüfung in `npm run daten:pruefen` (`src/data/katalog.ts`): Werte aus den Liste
 2. **Datenformat und Prüfung**, ohne Daten.
 3. **Pilot Energiepreise:** alle Instrumente des Themas. Danach gegenlesen lassen, am besten von zwei Personen mit unterschiedlicher politischer Haltung (wie bei Haltungen). Geprüft wird, ob Vor- und Nachteile ausgewogen erfasst sind und ob die Sätze für alle Seiten neutral klingen.
 4. **Anzeige** in Auflösung und Forderungskarte, zunächst nur in der Testphase.
-5. **Ausrollen** auf die übrigen Themen (308 Instrumente und die Maßnahmen ohne Instrument, zusammen rund 670 Einheiten).
+5. **Ausrollen** auf die übrigen Themen (308 Instrumente und die Maßnahmen ohne Instrument, zusammen rund 670 Einheiten) mit `/nebenwirkungen-erfassen`. Neu erfasste Themen bekommen die Folgen gleich mit: `/thema-erfassen` ruft den Skill als festen Schritt 5 auf.
 
 ### Stand des Pilots (21. 10. 2026)
 

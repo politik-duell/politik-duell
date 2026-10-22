@@ -1,6 +1,6 @@
 ---
 name: thema-erfassen
-description: Erfasst für ein oder mehrere Themen des Politik-Duells mit freigegebenen Ursachen (auch KI-Freigabe) die Maßnahmen aus allen Wahlprogrammen – je Programm ein Erfassungs-Agent, Bewertung ohne Parteinamen durch einen Blind-Agenten, Eintragen als ungeprüfter KI-Entwurf, automatische Prüfung, Pull Request. Aufruf mit Themen-IDs, z. B. /thema-erfassen 17 oder /thema-erfassen 19 20 --bund.
+description: Erfasst für ein oder mehrere Themen des Politik-Duells mit freigegebenen Ursachen (auch KI-Freigabe) die Maßnahmen aus allen Wahlprogrammen – je Programm ein Erfassungs-Agent, Bewertung ohne Parteinamen durch einen Blind-Agenten, Eintragen als ungeprüfter KI-Entwurf, Folgen über das Thema hinaus (/nebenwirkungen-erfassen), automatische Prüfung, Pull Request. Aufruf mit Themen-IDs, z. B. /thema-erfassen 17 oder /thema-erfassen 19 20 --bund.
 argument-hint: <Themen-ID> [<Themen-ID> …] [--bund | --land XX …]
 disable-model-invocation: true
 ---
@@ -68,7 +68,7 @@ Meldet `entwurf:blind` Reste über der Schwelle: Beschreibung neutral formuliere
 
 Je Thema **ein** Agent `blind-bewertung` (ohne Parameter `model`), alle gleichzeitig, Auftrag = genau der Text von `.cache/entwurf/<ID>/protokoll/bewertung-auftrag.txt`.
 
-## 4. Eintragen, prüfen, abschließen
+## 4. Eintragen und prüfen
 
 ```bash
 npm run -s entwurf:lauf '--' bewertet $E
@@ -79,7 +79,21 @@ Wandelt die Antworten um und prüft **alle** Bewertungen, bevor das erste Thema 
 - **Bewertung fehlerhaft:** Meldungen in `.cache/entwurf/<ID>/rueckfrage-bewertung.txt`, `npm run -s entwurf:bewertung-auftrag '--' .cache/entwurf/<ID>/erfassung.json '--rueckfrage' .cache/entwurf/<ID>/rueckfrage-bewertung.txt`, den neuen Auftragstext per SendMessage an **denselben** Agenten; dann `bewertet` erneut.
 - **`zitate:pruefen` meldet ein Zitat:** Themendatei zurücksetzen (`git checkout -- daten/themen/<Datei>`, sonst lehnt das zweite Eintragen ab), Rückfrage an das Programm (neu zitieren), `erfasst`, Teil-Neubewertung (unten), dann `bewertet '--bewertung-fertig'`. Nie selbst „passend machen“.
 
-Commit für den Lauf („<Themen>: Maßnahmen aus N Programmen (KI-Entwurf)“) mit Themendateien, Leitfäden, `supabase/seed.sql`, `supabase/seed-teile/` und `daten/protokolle/<ID>/…`. Keine weiteren Dokumente. Aus `/liste-ausfuehren` aufgerufen: nur committen – Push und Pull Request macht die Liste. Sonst Pull Request: je Thema zwei, drei Sätze (Programme, Maßnahmen, Instrumente, nicht erfasste Programme) und darunter `pr-daten.md` unverändert ([reference/pull-request.md](reference/pull-request.md)).
+## 5. Folgen über das Thema hinaus
+
+Fester Schritt, damit Bewertung und Folgen nicht auseinanderlaufen: erst jetzt, weil die Bewertung festlegt, welche Vorschläge ein gemeinsamer Lösungsweg (Instrument) sind. Für **alle Themen des Laufs** nach [`../nebenwirkungen-erfassen/SKILL.md`](../nebenwirkungen-erfassen/SKILL.md), Schritte 1–4 (Blindlisten, je Teil ein Agent `nebenwirkungen-recherche`, alle Teile aller Themen gleichzeitig, bis zu sieben auf einmal; Urteil; Eintragen). Ohne `--alle`: Lösungswege, die schon Hinweise haben (etwa bei einem Nachtrag), bleiben stehen; neu recherchiert werden nur die neuen.
+
+Danach einmal für den ganzen Lauf:
+
+```bash
+npm run -s daten:pruefen && npm run -s seed && npm test -- --reporter=dot
+```
+
+Schlägt der Schritt für ein Thema fehl (Agent bricht ab, Antwort nach der Rückfrage weiter fehlerhaft), die Maßnahmen trotzdem committen und im Pull Request vermerken: „Folgen über das Thema hinaus offen – nachholen mit `/nebenwirkungen-erfassen <ID>`“. Die Bewertung hängt nicht davon ab.
+
+## 6. Abschließen
+
+Commit für den Lauf („<Themen>: Maßnahmen aus N Programmen und Folgen (KI-Entwurf)“) mit Themendateien, Leitfäden, `supabase/seed.sql`, `supabase/seed-teile/`, `daten/protokolle/<ID>/…` und `daten/protokolle/nebenwirkungen-<ID>/…`. Keine weiteren Dokumente. Aus `/liste-ausfuehren` aufgerufen: nur committen – Push und Pull Request macht die Liste. Sonst Pull Request: je Thema zwei, drei Sätze (Programme, Maßnahmen, Instrumente, nicht erfasste Programme; Folgen: Lösungswege mit und ohne Hinweise, Bilanz Vor-/Nachteile) und darunter `pr-daten.md` unverändert ([reference/pull-request.md](reference/pull-request.md)).
 
 ## Sonderfälle
 

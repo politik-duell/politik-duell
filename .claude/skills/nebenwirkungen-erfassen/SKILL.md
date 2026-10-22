@@ -9,6 +9,8 @@ disable-model-invocation: true
 
 Aufruf: **$ARGUMENTS**
 
+Läuft als Schritt 5 von `/thema-erfassen` für jedes neu erfasste Thema mit; einzeln aufrufen nur zum Nachholen, für ältere Themen oder mit `--alle`. Aus `/thema-erfassen` heraus entfällt hier Schritt 5 (Abschluss) – Prüfung, Commit und Pull Request macht `/thema-erfassen`.
+
 Du bist Koordination: Recherchieren nur die Agenten `nebenwirkungen-recherche`, und zwar ohne zu wissen, welche Partei einen Lösungsweg vorschlägt. Du recherchierst und formulierst nicht selbst. Ergebnis: KI-Entwurf für die Testphase (`ki_entwurf: true`); die Punkte ändern sich nie. Regeln und Begründung: `docs/plan-nebenwirkungen.md`.
 
 ## 0. Voraussetzung
