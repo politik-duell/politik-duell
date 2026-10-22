@@ -109,7 +109,7 @@ KI-Entwurf (`ki_entwurf: true`), noch nicht gegengelesen. Zehn Hinweise an siebe
 | 6733 Ausbau der Windenergie stoppen | Umwelt (Nachteil) |
 | 6821 Heimische Erdgasförderung, auch mit Fracking | Umwelt (Nachteil) |
 
-**Offen (15):** 6704 Stromsteuer – die Kosten für den Haushalt sind nur vom arbeitgebernahen IW geschätzt (Belegstufe C), eine zweite unabhängige Quelle fehlt; die Zahl im Gesetzentwurf einer Fraktion zählt nicht. Ohne belastbare Quelle bisher: 6709, 6715, 6719, 6725, 6727, 6735, 6739, 6822, 6823, 6828, 6830, 6833, 6834, 6836.
+**Erster Lauf des Skills (22. 10. 2026)** für die übrigen 15 Lösungswege, drei Agenten ohne Parteibezug: elf Hinweise an acht Wegen (3 Vorteile, 7 Nachteile, 1 gemischt), alle Belegstufe A; je Teil zwei Belege im Original nachgesehen. Sieben Wege ohne belegte Folge (6704, 6709, 6715, 6719, 6822, 6828, 6833). Protokoll: `daten/protokolle/nebenwirkungen-3/2026-10-22/`. Im Urteil korrigiert: Gesamtzahlen eines Sektors oder aller Erneuerbaren nur ausdrücklich „zum Vergleich“ (keine Wirkung der Maßnahme), dieselbe Haushaltsquelle für ähnliche Förderwege, Verbandsaussage durch amtliche Angabe ersetzt. Lehre: Drucksachen als PDF ließen sich oft nicht lesen – Zahlen daraus blieben draußen.
 
 **Erste Lehren:**
 

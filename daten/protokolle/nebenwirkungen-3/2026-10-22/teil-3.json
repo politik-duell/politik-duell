@@ -1,0 +1,113 @@
+{
+  "pruefsumme": "87b26b4eaa443067",
+  "thema_id": 3,
+  "thema": "Energiepreise",
+  "ziel": "Haushalte können Strom und Heizung dauerhaft bezahlen.",
+  "ursachen": [
+    "Hohe Netzentgelte für den Betrieb und Ausbau der Stromnetze",
+    "Steuern, Abgaben und Umlagen machen einen großen Teil der Strom- und Gaspreise aus, beim Gas auch der CO₂-Preis",
+    "Rund 70 % der Energie wird importiert, vor allem Öl, Gas und Steinkohle",
+    "Der Strompreis an der Börse richtet sich nach dem teuersten noch benötigten Kraftwerk, heute oft einem Gaskraftwerk",
+    "Drei Viertel der Wohnungen wurden 2022 mit Gas oder Öl beheizt (Zensus); die Heizkosten hängen deshalb stark von deren Preisen ab"
+  ],
+  "teil": 3,
+  "teile": 3,
+  "einheiten": [
+    {
+      "id": 6833,
+      "name": "Langfristige Lieferverträge für Energieimporte nach dem niedrigsten Preis",
+      "ebene": "bund",
+      "begruendung": "Langfristige Verträge können Preisschwankungen dämpfen; sie binden aber auch an Preise, wenn der Markt fällt, und ein Kriterium nur nach dem Preis erhöht die Abhängigkeit von einzelnen Lieferländern."
+    },
+    {
+      "id": 6834,
+      "name": "Neue Gaskraftwerke als Reserve für Dunkelflauten",
+      "ebene": "bund",
+      "begruendung": "Mehr Reservekraftwerke können Preisspitzen in wind- und sonnenarmen Stunden dämpfen; sie senken den Durchschnittspreis kaum, weil gerade Gaskraftwerke den Preis dann setzen, und müssen über Umlagen oder Steuern bezahlt werden."
+    },
+    {
+      "id": 6836,
+      "name": "Einbau von Wärmepumpen fördern, ohne andere Heizungen zu benachteiligen",
+      "ebene": "bund",
+      "begruendung": "Förderung erleichtert den Umstieg von Gas und Öl; ohne Vorgaben für neue Heizungen bleiben viele Haushalte bei fossilen Heizungen und damit von deren Preisen abhängig."
+    }
+  ],
+  "suchhilfe": {
+    "haushalt": {
+      "frage": "Was kostet der Weg Bund, Ländern, Kommunen oder Sozialkassen – oder was bringt er ein?",
+      "vorteil": [
+        "Mehreinnahmen",
+        "Einsparung öffentlicher Haushalt",
+        "Entlastung Sozialversicherung"
+      ],
+      "nachteil": [
+        "Mindereinnahmen",
+        "Kosten Bundeshaushalt",
+        "Haushaltsausgaben Gesetzentwurf"
+      ]
+    },
+    "wirtschaft": {
+      "frage": "Welche Kosten oder Entlastungen entstehen für Unternehmen (besonders kleine und mittlere), wie wirkt er auf Preise und Verbraucher?",
+      "vorteil": [
+        "Entlastung Unternehmen",
+        "sinkende Preise",
+        "Investitionen"
+      ],
+      "nachteil": [
+        "Kosten für Unternehmen",
+        "Preisanstieg",
+        "Wettbewerbsfähigkeit"
+      ]
+    },
+    "aufwand": {
+      "frage": "Welcher Aufwand für Anträge, Nachweise und Kontrollen entsteht oder entfällt – für Bürger, Wirtschaft, Verwaltung?",
+      "vorteil": [
+        "Bürokratieabbau",
+        "Erfüllungsaufwand sinkt"
+      ],
+      "nachteil": [
+        "Erfüllungsaufwand",
+        "Nachweispflichten",
+        "Normenkontrollrat Stellungnahme"
+      ]
+    },
+    "umwelt": {
+      "frage": "Wie wirkt er auf Emissionen, Natur und Ressourcen, und welche Lasten oder Vorteile hat er für spätere Jahre?",
+      "vorteil": [
+        "Emissionsminderung",
+        "Umweltentlastung"
+      ],
+      "nachteil": [
+        "Mehremissionen",
+        "Umweltrisiken",
+        "Flächenverbrauch"
+      ]
+    },
+    "verteilung": {
+      "frage": "Wer gewinnt, wer trägt die Last – nach Einkommen, Alter, Familienform, Stadt und Land?",
+      "vorteil": [
+        "Entlastung geringe Einkommen",
+        "Verteilungswirkung progressiv"
+      ],
+      "nachteil": [
+        "regressiv",
+        "Mitnahmeeffekte",
+        "profitieren höhere Einkommen"
+      ]
+    },
+    "grundrechte": {
+      "frage": "Schränkt er Freiheiten ein oder stärkt er sie, behandelt er Gruppen ungleich, wie wirkt er auf Gesundheit und Sicherheit?",
+      "vorteil": [
+        "Gesundheit verbessert",
+        "Schutz",
+        "Gleichstellung"
+      ],
+      "nachteil": [
+        "Datenschutz",
+        "Grundrechtseingriff",
+        "Benachteiligung",
+        "Gesundheitsrisiko"
+      ]
+    }
+  }
+}
