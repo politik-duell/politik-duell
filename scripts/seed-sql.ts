@@ -9,6 +9,7 @@ import {
   spielbareMassnahmen,
   type Katalog,
 } from '../src/data/katalog.ts'
+import type { Nebenwirkung } from '../src/data/types.ts'
 
 const q = (v: string | null | undefined) => (v == null ? 'null' : `'${v.replace(/'/g, "''")}'`)
 const zeilen = (werte: string[]) => werte.join(',\n  ')

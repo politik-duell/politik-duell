@@ -1,6 +1,6 @@
 # Plan: Nebenwirkungen – Folgen einer Maßnahme über das Thema hinaus
 
-Stand: 21. 10. 2026 · Entwurf. Umgesetzt: Datenformat und Prüfung (Schritt 2), Pilot Energiepreise begonnen (Schritt 3, siehe unten). Noch nicht: Migration, Seed, Anzeige.
+Stand: 22. 10. 2026 · Umgesetzt: Datenformat und Prüfung, Migration, Seed, Anzeige in Auflösung und Forderungskarte, Skill `/nebenwirkungen-erfassen`. Pilot Energiepreise: 7 von 22 Lösungswegen (siehe unten).
 
 ## Anlass
 
@@ -118,6 +118,21 @@ KI-Entwurf (`ki_entwurf: true`), noch nicht gegengelesen. Zehn Hinweise an siebe
 - **Viele Kosten stehen nur in Parteiquellen.** Die Finanzierung von Vorschlägen beziffern oft nur Fraktionen. Gute Quellen sind Drucksachen der Bundesregierung, Gesetzesbegründungen und der Bundesrechnungshof.
 - **„Geprüft“ war im Pilot grob.** Die sechs Bereiche wurden je Lösungsweg durchgesehen, aber nicht in jedem einzeln recherchiert. Vor `geprueft` ohne `ki_entwurf` braucht es den Schritt nach festen Suchbegriffen je Bereich (Skill).
 
+
+### Was der Skill aus dem Pilot übernimmt
+
+| Lehre aus dem Pilot | Umsetzung in `/nebenwirkungen-erfassen` |
+| --- | --- |
+| Vorteile muss man aktiv suchen | Startbegriffe je Bereich für beide Richtungen (`SUCHHILFE` in `scripts/nebenwirkungen.ts`); die Antwort nennt je Bereich die Suchanfragen nach Vor- und nach Nachteilen, sonst Fehler; einseitige Bilanzen meldet die Prüfung, die Koordination fragt gezielt nach |
+| Abgrenzung zur Wirksamkeit ist eng | Die Blindliste enthält Ziel, Ursachen und Begründung; der Agent soll nur nennen, was andere trifft oder anderswo wirkt; die Koordination prüft das im Urteil |
+| Kosten stehen oft nur in Parteiquellen | Parteiserver technisch gesperrt (Hook) und in der Prüfung abgelehnt; Liste guter Quellen im Agenten |
+| „Geprüft“ war grob | Jeder der sechs Bereiche muss mit Suchanfragen belegt sein, bevor `geprueft` gesetzt wird |
+| Zusammenfassungen von Suchergebnissen sind unzuverlässig | Quelle im Original öffnen; je Hinweis die Stelle wörtlich als `beleg` (bleibt im Protokoll); Stichprobe der Koordination |
+| Blind recherchieren | Eigener Agent sieht nur Name, Ebene und Begründung der Lösungswege, der Hook sperrt Themendateien |
+
+### Anzeige
+
+Unter der aufklappbaren „Einordnung“ einer Maßnahme und auf der Forderungskarte unter „Was die Forschung sagt“: Überschrift „Folgen über das Thema hinaus · zählen nicht zu den Punkten“, je Hinweis „Nachteil · Staatshaushalt: Satz. Quelle“. Ist nichts Wesentliches belegt, nur ein leiser Satz; ungeprüfte Lösungswege zeigen nichts. KI-Entwürfe erscheinen nur, wo auch der Eintrag selbst nur in der Testphase sichtbar ist.
 
 ## Offene Fragen
 

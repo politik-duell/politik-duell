@@ -61,6 +61,32 @@ describe('Programmsperre (PreToolUse-Hook)', () => {
     })
   })
 
+  describe('Agent nebenwirkungen-recherche', () => {
+    const agent = (tool_name: string, tool_input: Record<string, string>) =>
+      pruefe({ tool_name, tool_input, agent_type: 'nebenwirkungen-recherche', agent_id: 'n1', cwd: '/repo' }, kontext())
+
+    it('erlaubt nur Teil-Liste, eigene Antwort, Selbstprüfung und Websuche ohne Parteiserver', () => {
+      expect(agent('Read', { file_path: '/repo/.cache/nebenwirkungen/3/teil-2.json' })).toBeNull()
+      expect(agent('Write', { file_path: '.cache/nebenwirkungen/3/protokoll/antwort-2.txt', content: '{}' })).toBeNull()
+      expect(agent('Bash', { command: 'npm run -s nebenwirkungen:antwort-pruefen -- 3 2' })).toBeNull()
+      expect(agent('WebSearch', { query: 'Stromsteuer Mindereinnahmen' })).toBeNull()
+      expect(agent('WebFetch', { url: 'https://www.umweltbundesamt.de/x' })).toBeNull()
+      expect(agent('WebFetch', { url: 'https://www.spd.de/x' })).toMatch(/gesperrt/)
+      for (const datei of ['/repo/daten/themen/03-energiepreise.json', '/repo/.cache/entwurf/3/kennungen.json', '/repo/.cache/nebenwirkungen/3/../3/../../entwurf/3/blind.json'])
+        expect(agent('Read', { file_path: datei })).toMatch(/Recherche ohne Parteinamen/)
+      expect(agent('Write', { file_path: '/repo/daten/themen/03-energiepreise.json', content: '{}' })).toMatch(/gesperrt/)
+      expect(agent('Bash', { command: 'npm run -s nebenwirkungen:antwort-pruefen -- 3 2; cat daten/themen/03-energiepreise.json' })).toMatch(/gesperrt/)
+    })
+
+    it('gilt auch unter GitHub Copilot über die Markierung', () => {
+      const c = (tool_name: string, tool_input: Record<string, unknown>) =>
+        pruefeCopilot({ tool_name, tool_input, cwd: '/repo' }, { ...kontext(), agenten: ['nebenwirkungen-recherche'] })
+      expect(c('read_file', { filePath: '/repo/.cache/nebenwirkungen/3/teil-1.json' })).toBeNull()
+      expect(c('read_file', { filePath: '/repo/daten/themen/03-energiepreise.json' })).toMatch(/Recherche ohne Parteinamen/)
+      expect(c('fetch_webpage', { urls: ['https://www.destatis.de/a'] })).toBeNull()
+    })
+  })
+
   describe('Agent blind-bewertung', () => {
     const blind = (tool_name: string, tool_input: Record<string, string>, extra: Record<string, unknown> = {}) =>
       pruefe({ tool_name, tool_input, agent_type: 'blind-bewertung', agent_id: 'a1', cwd: '/repo', ...extra }, kontext())
