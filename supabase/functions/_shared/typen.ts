@@ -53,6 +53,21 @@ export type Ebene = 'bund' | 'land'
 /** Wie gut die Wirkung einer Maßnahme in der Forschung belegt ist. */
 export type Evidenz = 'belegt' | 'gemischt' | 'offen'
 
+/** Bereiche der Folgen nach § 44 GGO, ergänzt um Verteilung und Grundrechte (docs/plan-nebenwirkungen.md). */
+export const NEBENWIRKUNG_BEREICHE = ['haushalt', 'wirtschaft', 'aufwand', 'umwelt', 'verteilung', 'grundrechte'] as const
+export const NEBENWIRKUNG_RICHTUNGEN = ['vorteil', 'nachteil', 'gemischt'] as const
+
+/** Belegte Folge einer Maßnahme über das Thema hinaus – ohne Punkte. */
+export interface Nebenwirkung {
+  bereich: (typeof NEBENWIRKUNG_BEREICHE)[number]
+  richtung: (typeof NEBENWIRKUNG_RICHTUNGEN)[number]
+  text: string
+  quelle_url: string
+  /** Wie bei Ursachen: A amtlich, B Befragung/begutachtete Studie, C Einschätzung – C nur mit zweiter Quelle. */
+  belegstufe: 'A' | 'B' | 'C'
+  zweite_quelle_url?: string
+}
+
 export interface Thema {
   id: number
   name: string
@@ -123,6 +138,8 @@ export interface InstrumentEintrag {
   ki_entwurf?: boolean
   /** Nur bei Entwürfen: Herkunft der Entwurfswerte, wie bei Maßnahmen. */
   entwurf_herkunft?: 'blind' | 'nicht_blind' | null
+  /** Folgen über das Thema hinaus, wie bei Maßnahmen. */
+  nebenwirkungen?: Nebenwirkung[] | null
   /** Nur Mock: Schlagwörter, mit denen die Mock-Analyse Forderungen diesem Instrument zuordnet. */
   schlagwoerter?: string[]
 }
@@ -209,6 +226,11 @@ export interface Massnahme {
    * entstanden, nicht blind.
    */
   entwurf_herkunft?: 'blind' | 'nicht_blind' | null
+  /**
+   * Folgen über das Thema hinaus (vom Instrument, sonst von der Maßnahme); ändern keine Punkte.
+   * Leere Liste = geprüft, nichts Wesentliches belegt; null/fehlend = noch nicht geprüft.
+   */
+  nebenwirkungen?: Nebenwirkung[] | null
 }
 
 /**

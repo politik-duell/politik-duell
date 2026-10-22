@@ -54,6 +54,9 @@
     "entwurf:bericht": "node --experimental-strip-types scripts/entwurf/bericht.ts",
     "entwurf:archivieren": "node --experimental-strip-types scripts/entwurf/archivieren.ts",
     "entwurf:lauf": "node --experimental-strip-types --no-warnings scripts/entwurf/lauf.ts",
+    "nebenwirkungen:blind": "node --experimental-strip-types scripts/nebenwirkungen/blind.ts",
+    "nebenwirkungen:antwort-pruefen": "node --experimental-strip-types --no-warnings scripts/nebenwirkungen/antwort-pruefen.ts",
+    "nebenwirkungen:eintragen": "node --experimental-strip-types scripts/nebenwirkungen/eintragen.ts",
     "phase-a": "node --experimental-strip-types scripts/phase-a.ts",
     "themen:ueberblick": "node --experimental-strip-types scripts/themen-ueberblick.ts",
     "liste:auswahl": "node --experimental-strip-types scripts/liste-auswahl.ts"

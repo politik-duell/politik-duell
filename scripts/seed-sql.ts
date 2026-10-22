@@ -9,6 +9,7 @@ import {
   spielbareMassnahmen,
   type Katalog,
 } from '../src/data/katalog.ts'
+import type { Nebenwirkung } from '../src/data/types.ts'
 
 const q = (v: string | null | undefined) => (v == null ? 'null' : `'${v.replace(/'/g, "''")}'`)
 const zeilen = (werte: string[]) => werte.join(',\n  ')
@@ -74,21 +75,25 @@ delete from public.ursachen where id not in (${k.ursachen.map((u) => u.id).join(
 `
 }
 
+/** Folgen über das Thema hinaus als jsonb; null = noch nicht geprüft. */
+const folgen = (nw: Nebenwirkung[] | null | undefined) => (nw ? `${q(JSON.stringify(nw))}::jsonb` : 'null')
+
 function instrumenteSql(instrumente: Daten['instrumente']): string {
   return instrumente.length
     ? `
 -- Lösungswege für die Forderungskarte (ohne Punkte). Upsert, damit gespeicherte Forderungen ihren Verweis behalten.
-insert into public.instrumente (id, thema_id, name, begruendung, evidenz, beleg_studie_url, ebene, entspricht, ki_entwurf, entwurf_herkunft) values
+insert into public.instrumente (id, thema_id, name, begruendung, evidenz, beleg_studie_url, ebene, entspricht, ki_entwurf, entwurf_herkunft, nebenwirkungen) values
   ${zeilen(
     instrumente.map(
       (i) =>
         `(${i.id}, ${i.thema_id}, ${q(i.name)}, ${q(i.begruendung)}, ${q(i.evidenz)}, ${q(i.beleg_studie_url)}, ${q(i.ebene)}, ${i.entspricht ?? 'null'}, ` +
-        `${i.ki_entwurf ?? false}, ${q(i.entwurf_herkunft ?? null)})`,
+        `${i.ki_entwurf ?? false}, ${q(i.entwurf_herkunft ?? null)}, ${folgen(i.nebenwirkungen)})`,
     ),
   )}
 on conflict (id) do update set thema_id = excluded.thema_id, name = excluded.name, begruendung = excluded.begruendung,
   evidenz = excluded.evidenz, beleg_studie_url = excluded.beleg_studie_url, ebene = excluded.ebene,
-  entspricht = excluded.entspricht, ki_entwurf = excluded.ki_entwurf, entwurf_herkunft = excluded.entwurf_herkunft;
+  entspricht = excluded.entspricht, ki_entwurf = excluded.ki_entwurf, entwurf_herkunft = excluded.entwurf_herkunft,
+  nebenwirkungen = excluded.nebenwirkungen;
 `
     : ''
 }
@@ -99,13 +104,13 @@ function massnahmenSql(massnahmen: Daten['massnahmen'], einheiten: Daten['einhei
     massnahmen.length
       ? `
 insert into public.massnahmen (id, thema_id, partei_id, land, beschreibung, ursachen_ids, instrument_id, wirksamkeit, umsetzbarkeit,
-  rollen_modifikator, begruendung, beleg_programm_url, beleg_studie_url, evidenz, stand, geprueft, ki_entwurf, entwurf_herkunft) values
+  rollen_modifikator, begruendung, beleg_programm_url, beleg_studie_url, evidenz, stand, geprueft, ki_entwurf, entwurf_herkunft, nebenwirkungen) values
   ${zeilen(
     massnahmen.map(
       (m) =>
         `(${m.id}, ${m.thema_id}, ${m.partei_id}, ${q(m.land)}, ${q(m.beschreibung)}, '{${m.ursachen_ids.join(',')}}', ${m.instrument_id ?? 'null'}, ${m.wirksamkeit}, ${m.umsetzbarkeit}, ` +
         `${m.rollen_modifikator ? `${q(JSON.stringify(m.rollen_modifikator))}::jsonb` : 'null'}, ${q(m.begruendung)}, ` +
-        `${q(m.beleg_programm_url)}, ${q(m.beleg_studie_url)}, ${q(m.evidenz)}, ${q(m.stand)}, ${m.geprueft}, ${m.ki_entwurf ?? false}, ${q(m.entwurf_herkunft ?? null)})`,
+        `${q(m.beleg_programm_url)}, ${q(m.beleg_studie_url)}, ${q(m.evidenz)}, ${q(m.stand)}, ${m.geprueft}, ${m.ki_entwurf ?? false}, ${q(m.entwurf_herkunft ?? null)}, ${folgen(m.nebenwirkungen)})`,
     ),
   )};
 

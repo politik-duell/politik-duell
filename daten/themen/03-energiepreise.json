@@ -65,7 +65,20 @@
       "wirksamkeit": 2,
       "umsetzbarkeit": 2,
       "begruendung": "Senkt einen großen Teil des Strompreises direkt und spürbar; die Kosten des Netzausbaus trägt dann der Bundeshaushalt, und die Finanzierung muss auf Dauer gesichert werden.",
-      "evidenz": "belegt"
+      "evidenz": "belegt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-21",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Der Zuschuss für 2026 beträgt 6,5 Mrd. Euro und wird aus dem Klima- und Transformationsfonds bezahlt.",
+            "quelle_url": "https://dserver.bundestag.de/btd/21/027/2102754.pdf",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6704,
@@ -81,7 +94,20 @@
       "wirksamkeit": 1,
       "umsetzbarkeit": 2,
       "begruendung": "Gleicht höhere Heizkosten durch den CO₂-Preis vor allem für Haushalte mit geringem Einkommen aus, senkt die Preise selbst aber nicht; ein Auszahlungsweg muss erst aufgebaut werden.",
-      "evidenz": "belegt"
+      "evidenz": "belegt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-21",
+        "hinweise": [
+          {
+            "bereich": "verteilung",
+            "richtung": "vorteil",
+            "text": "Eine gleiche Pauschale je Person entlastet Haushalte mit geringem Einkommen im Durchschnitt; mittlere Einkommen bleiben etwa gleich, die oberen 30 % zahlen leicht drauf.",
+            "quelle_url": "https://www.diw.de/de/diw_01.c.917856.de/publikationen/wochenberichte/2024_42_1/.html",
+            "belegstufe": "B"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6706,
@@ -89,7 +115,34 @@
       "wirksamkeit": 2,
       "umsetzbarkeit": 1,
       "begruendung": "Würde Gas- und Heizölpreise direkt senken; ab 2028 gilt aber der europäische Emissionshandel für Gebäude und Verkehr, den Deutschland nicht allein abschaffen kann.",
-      "evidenz": "belegt"
+      "evidenz": "belegt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-21",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Der nationale CO₂-Preis auf Heizen und Verkehr brachte 2024 rund 13 Mrd. Euro für den Klima- und Transformationsfonds; der Anteil aus dem Heizen fiele weg.",
+            "quelle_url": "https://www.umweltbundesamt.de/presse/pressemitteilungen/einnahmen-aus-dem-emissionshandel-erneut-auf",
+            "belegstufe": "A"
+          },
+          {
+            "bereich": "umwelt",
+            "richtung": "nachteil",
+            "text": "Ein CO₂-Preis senkt nach Simulationen den Verbrauch von Heizöl und Gas und damit die Emissionen; dieser Anreiz entfiele beim Heizen.",
+            "quelle_url": "https://www.diw.de/de/diw_01.c.635240.de/themen_nachrichten/diw_berlin_analysiert_klima_und_verteilungswirkungen_eines_co2_preises_im_waerme_und_verkehrssektor.html",
+            "belegstufe": "B"
+          },
+          {
+            "bereich": "verteilung",
+            "richtung": "vorteil",
+            "text": "Der CO₂-Preis belastet Haushalte mit geringem Einkommen anteilig stärker (Simulation 2020: 0,8 % gegenüber 0,25 % des Nettoeinkommens); diese Last entfiele.",
+            "quelle_url": "https://www.diw.de/de/diw_01.c.635240.de/themen_nachrichten/diw_berlin_analysiert_klima_und_verteilungswirkungen_eines_co2_preises_im_waerme_und_verkehrssektor.html",
+            "belegstufe": "B"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6707,
@@ -97,7 +150,27 @@
       "wirksamkeit": 2,
       "umsetzbarkeit": 2,
       "begruendung": "Mehr Wind- und Solarstrom verdrängt teure Gaskraftwerke an der Börse und senkt dort die Preise; zugleich kostet der dafür nötige Netzausbau Geld, das über die Netzentgelte bezahlt wird.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-21",
+        "hinweise": [
+          {
+            "bereich": "umwelt",
+            "richtung": "vorteil",
+            "text": "Erneuerbare Energien vermieden 2025 rund 265 Mio. t Treibhausgase; mehr Wind- und Solarstrom senkt den Ausstoß weiter.",
+            "quelle_url": "https://www.umweltbundesamt.de/daten/energie/erneuerbare-energien-vermiedene-treibhausgase",
+            "belegstufe": "A"
+          },
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Die Förderung nach dem EEG wird aus dem Bundeshaushalt bezahlt; laut Bundesregierung entspricht das derzeit rund 5 Cent je Kilowattstunde.",
+            "quelle_url": "https://dserver.bundestag.de/btd/21/014/2101408.pdf",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6708,
@@ -105,7 +178,20 @@
       "wirksamkeit": 1,
       "umsetzbarkeit": 1,
       "begruendung": "Mehr Kraftwerksleistung könnte die Börsenpreise in einzelnen Stunden senken; die abgeschalteten Kernkraftwerke sind weitgehend zurückgebaut, eine Wiederinbetriebnahme wäre teuer, langwierig und rechtlich neu zu regeln, und Kohlestrom wird durch den Emissionshandel teurer.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-21",
+        "hinweise": [
+          {
+            "bereich": "umwelt",
+            "richtung": "nachteil",
+            "text": "Kohlekraftwerke stoßen mehr Treibhausgase aus als andere Kraftwerke; ein längerer Betrieb erhöht die Emissionen.",
+            "quelle_url": "https://www.umweltbundesamt.de/presse/pressedossiers/pressedossier-braun-steinkohle",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6709,
@@ -415,7 +501,20 @@
           "evidenz": "gemischt",
           "stand": "2026-09-30",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-21",
+            "hinweise": [
+              {
+                "bereich": "umwelt",
+                "richtung": "nachteil",
+                "text": "Fracking kann laut Umweltbundesamt das Grundwasser verunreinigen, vor allem durch eingesetzte Chemikalien und das zurückfließende Lagerstättenwasser.",
+                "quelle_url": "https://www.umweltbundesamt.de/node/3427",
+                "belegstufe": "B"
+              }
+            ],
+            "ki_entwurf": true
+          }
         }
       ]
     },
@@ -478,7 +577,20 @@
           "evidenz": "gemischt",
           "stand": "2026-09-30",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-21",
+            "hinweise": [
+              {
+                "bereich": "umwelt",
+                "richtung": "nachteil",
+                "text": "Windenergie ist laut Umweltbundesamt der wichtigste Träger bei der Vermeidung von Treibhausgasen; ein Ausbaustopp verzichtet auf weitere Einsparungen.",
+                "quelle_url": "https://www.umweltbundesamt.de/daten/energie/erneuerbare-energien-vermiedene-treibhausgase",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         }
       ]
     },

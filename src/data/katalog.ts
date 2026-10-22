@@ -8,6 +8,9 @@ import {
   type Land,
   type Landesprogramm,
   type Massnahme,
+  NEBENWIRKUNG_BEREICHE,
+  NEBENWIRKUNG_RICHTUNGEN,
+  type Nebenwirkung,
   type Partei,
   type Symptomgruppe,
   type Thema,
@@ -76,9 +79,23 @@ export interface Instrument {
   entspricht?: number
   /** Nur Mock: Schlagwörter, mit denen die Mock-Analyse Forderungen diesem Instrument zuordnet. */
   schlagwoerter?: string[]
+  /** Belegte Folgen über das Thema hinaus – ohne Punkte (docs/plan-nebenwirkungen.md). */
+  nebenwirkungen?: Nebenwirkungen
 }
 
 export type EntwurfHerkunft = 'blind' | 'nicht_blind'
+
+export const MAX_NEBENWIRKUNGEN = 3
+
+/**
+ * Folgen einer Maßnahme über das Thema hinaus. `geprueft`: Datum, an dem alle Bereiche durchgesehen
+ * wurden – `hinweise` darf dann leer sein („keine wesentlichen Folgen belegt“). Ändert keine Punkte.
+ */
+export interface Nebenwirkungen {
+  geprueft: string
+  hinweise: Nebenwirkung[]
+  ki_entwurf?: boolean
+}
 
 /** Ursache im Repo: mit Vermerk, wenn sie erst nach dem Blick in die Programme dazukam. */
 export interface KatalogUrsache extends Ursache {
@@ -108,7 +125,7 @@ export interface KatalogPartei extends Partei {
 }
 
 /** Maßnahme im Repo: wie in der Datenbank, plus Herkunft der Bewertung und Wahlperiode. */
-export interface KatalogMassnahme extends Massnahme {
+export interface KatalogMassnahme extends Omit<Massnahme, 'nebenwirkungen'> {
   /** Instrument, aus dem Wirksamkeit, Umsetzbarkeit und Begründung stammen. */
   instrument_id?: number
   /** Nur bei Landesprogrammen: die Landtagswahl, zu der das Programm gehört. */
@@ -117,6 +134,8 @@ export interface KatalogMassnahme extends Massnahme {
   entwurf_herkunft?: EntwurfHerkunft
   /** Nur bei Maßnahmen ohne Instrument: Zahl der Bewertungen durch Prüfende. */
   bewertungen?: number
+  /** Nur bei Maßnahmen ohne Instrument: Folgen über das Thema hinaus (siehe Instrument). */
+  nebenwirkungen?: Nebenwirkungen
 }
 
 /** Landesprogramm im Repo: mit Wahl, zu der es gehört. */
@@ -218,16 +237,27 @@ const zaehlendeAbdeckung = (k: Katalog, mitKiEntwurf: boolean) =>
 const programmSchluessel = (x: { thema_id: number; partei_id: number; land?: string | null; landtagswahl?: string }) =>
   `${x.thema_id}/${x.partei_id}/${x.land ?? ''}/${x.landtagswahl ?? ''}`
 
+/**
+ * Folgen über das Thema hinaus für Spiel und Datenbank: nur geprüfte Hinweise – KI-Entwürfe nur dort, wo
+ * auch der Eintrag selbst als Entwurf nur in der Testphase erscheint. Leere Liste = geprüft, nichts belegt.
+ */
+const sichtbareFolgen = (nw: Nebenwirkungen | undefined, kiErlaubt: boolean): Nebenwirkung[] | undefined =>
+  nw && (!nw.ki_entwurf || kiErlaubt) ? nw.hinweise : undefined
+
 export function spielbareMassnahmen(k: Katalog, mitKiEntwurf = false): Massnahme[] {
   const eintraege = new Map(zaehlendeAbdeckung(k, mitKiEntwurf).map((a) => [programmSchluessel(a), a]))
   return k.massnahmen
     .filter((m) => eintraege.has(programmSchluessel(m)))
     .map((eintrag) => {
-      const { instrument_id, landtagswahl: _l, entwurf_herkunft: eigene, bewertungen: _b, ...m } = eintrag
+      const { instrument_id, landtagswahl: _l, entwurf_herkunft: eigene, bewertungen: _b, nebenwirkungen: eigeneFolgen, ...rest } = eintrag
+      const m: Massnahme = rest
       // Das Instrument bleibt an der Maßnahme: Die Forderungskarte zeigt darüber, wer es vorschlägt.
-      if (instrument_id !== undefined) (m as Massnahme).instrument_id = instrument_id
-      if (!mitKiEntwurf) return m
+      if (instrument_id !== undefined) m.instrument_id = instrument_id
       const ki = !k.fiktiv && !eintraege.get(programmSchluessel(eintrag))!.geprueft
+      const nw = instrument_id !== undefined ? k.instrumente.find((i) => i.id === instrument_id)?.nebenwirkungen : eigeneFolgen
+      const folgen = sichtbareFolgen(nw, mitKiEntwurf && ki)
+      if (folgen) m.nebenwirkungen = folgen
+      if (!mitKiEntwurf) return m
       // Herkunft der Entwurfswerte (Instrument oder Maßnahme) – im Spiel als „nicht blind“ gekennzeichnet.
       const herkunft = eintrag.instrument_id !== undefined ? k.instrumente.find((i) => i.id === eintrag.instrument_id)?.entwurf_herkunft : eigene
       return { ...m, ki_entwurf: ki, ...(ki ? { entwurf_herkunft: herkunft ?? null } : {}) }
@@ -258,6 +288,7 @@ export function spielbareInstrumente(k: Katalog, mitKiEntwurf = false): Instrume
       beleg_studie_url: i.beleg_studie_url ?? null,
       ebene: ebene(i.id),
       entspricht: i.entspricht !== undefined && dabei.has(i.entspricht) ? i.entspricht : null,
+      nebenwirkungen: sichtbareFolgen(i.nebenwirkungen, mitKiEntwurf && ki) ?? null,
       ...(mitKiEntwurf ? { ki_entwurf: ki, ...(ki ? { entwurf_herkunft: i.entwurf_herkunft ?? null } : {}) } : {}),
       ...(i.schlagwoerter ? { schlagwoerter: i.schlagwoerter } : {}),
     }
@@ -354,10 +385,10 @@ const EBENEN = ['bund', 'land'] as const
 const EVIDENZ = ['belegt', 'gemischt', 'offen'] as const
 
 /** Felder, die bei einer Maßnahme mit Instrument vom Instrument kommen. */
-const INSTRUMENT_FELDER = ['wirksamkeit', 'umsetzbarkeit', 'begruendung', 'evidenz', 'beleg_studie_url', 'rollen_modifikator', 'bewertung', 'entwurf_herkunft']
+const INSTRUMENT_FELDER = ['wirksamkeit', 'umsetzbarkeit', 'begruendung', 'evidenz', 'beleg_studie_url', 'rollen_modifikator', 'bewertung', 'entwurf_herkunft', 'nebenwirkungen']
 
 /** Bewertung samt Begründung – steht an einem Instrument oder an einer Maßnahme ohne Instrument. */
-type Bewertungsteil = Pick<Instrument, 'wirksamkeit' | 'umsetzbarkeit' | 'begruendung' | 'evidenz' | 'beleg_studie_url' | 'rollen_modifikator' | 'bewertungen' | 'entwurf_herkunft'>
+type Bewertungsteil = Pick<Instrument, 'wirksamkeit' | 'umsetzbarkeit' | 'begruendung' | 'evidenz' | 'beleg_studie_url' | 'rollen_modifikator' | 'bewertungen' | 'entwurf_herkunft' | 'nebenwirkungen'>
 
 const istObjekt = (v: unknown): v is Record<string, unknown> =>
   typeof v === 'object' && v !== null && !Array.isArray(v)
@@ -569,7 +600,70 @@ export function pruefeKatalog(
         f(ort, '„entwurf_herkunft“ muss „blind“ oder „nicht_blind“ sein')
       else b.entwurf_herkunft = roh.entwurf_herkunft
     }
+    if (roh.nebenwirkungen !== undefined) {
+      const nw = nebenwirkungen(`${ort} › nebenwirkungen`, roh.nebenwirkungen)
+      if (nw) b.nebenwirkungen = nw
+    }
     return b
+  }
+
+  // Folgen über das Thema hinaus (docs/plan-nebenwirkungen.md): je Bereich höchstens ein Hinweis, mit
+  // unabhängiger Quelle und ohne Parteinamen. Parteiquellen erkennt die Prüfung an den Programmservern.
+  const nebenwirkungen = (ort: string, roh: unknown): Nebenwirkungen | undefined => {
+    if (!istObjekt(roh)) {
+      f(ort, 'erwartet ein Objekt mit „geprueft“ und „hinweise“')
+      return undefined
+    }
+    unbekannteFelder(ort, roh, ['geprueft', 'hinweise', 'ki_entwurf'])
+    const nw: Nebenwirkungen = { geprueft: datum(ort, roh, 'geprueft'), hinweise: [] }
+    if (roh.ki_entwurf !== undefined) nw.ki_entwurf = wahrheitswert(ort, roh, 'ki_entwurf')
+    if (!Array.isArray(roh.hinweise)) {
+      f(ort, '„hinweise“ muss eine Liste sein (leer, wenn keine wesentlichen Folgen belegt sind)')
+      return nw
+    }
+    if (roh.hinweise.length > MAX_NEBENWIRKUNGEN) f(ort, `höchstens ${MAX_NEBENWIRKUNGEN} Hinweise – nur die wesentlichen`)
+    const parteiHosts = new Set(
+      [...katalog.parteien.map((p) => p.programm_url), ...katalog.landesprogramme.flatMap((l) => (l.url ? [l.url] : []))].map((u) => {
+        try {
+          return new URL(u).hostname.replace(/^www\./, '')
+        } catch {
+          return ''
+        }
+      }),
+    )
+    const parteinamen = katalog.parteien.map(({ name, kurzname }) => ({ name, kurzname }))
+    const bereiche = new Set<string>()
+    for (const [i, h] of roh.hinweise.entries()) {
+      const hOrt = `${ort} › hinweise[${i}]`
+      if (!istObjekt(h)) {
+        f(hOrt, 'erwartet ein Objekt')
+        continue
+      }
+      unbekannteFelder(hOrt, h, ['bereich', 'richtung', 'text', 'quelle_url', 'belegstufe', 'zweite_quelle_url'])
+      if (!(NEBENWIRKUNG_BEREICHE as readonly unknown[]).includes(h.bereich))
+        f(hOrt, `„bereich“ muss ${NEBENWIRKUNG_BEREICHE.map((b) => `„${b}“`).join(', ')} sein`)
+      else if (bereiche.has(h.bereich as string)) f(hOrt, `Bereich „${String(h.bereich)}“ doppelt – je Bereich höchstens ein Hinweis`)
+      else bereiche.add(h.bereich as string)
+      if (!(NEBENWIRKUNG_RICHTUNGEN as readonly unknown[]).includes(h.richtung))
+        f(hOrt, `„richtung“ muss ${NEBENWIRKUNG_RICHTUNGEN.map((r) => `„${r}“`).join(', ')} sein`)
+      if (h.belegstufe !== 'A' && h.belegstufe !== 'B' && h.belegstufe !== 'C') f(hOrt, '„belegstufe“ muss „A“, „B“ oder „C“ sein')
+      const t = text(hOrt, h, 'text', 200)
+      if (t && ohneParteinamen(t, parteinamen) !== t) f(hOrt, '„text“ nennt eine Partei – Hinweise gelten für den Lösungsweg, nicht für Parteien')
+      const quelle = url(hOrt, h, 'quelle_url')
+      const zweite = url(hOrt, h, 'zweite_quelle_url', h.belegstufe === 'C')
+      for (const q of [quelle, zweite])
+        if (q && parteiHosts.has(new URL(q).hostname.replace(/^www\./, ''))) f(hOrt, `Quelle ${q} ist eine Parteiquelle – nur unabhängige Quellen`)
+      const eintrag: Nebenwirkung = {
+        bereich: h.bereich as Nebenwirkung['bereich'],
+        richtung: h.richtung as Nebenwirkung['richtung'],
+        text: t,
+        quelle_url: quelle ?? '',
+        belegstufe: h.belegstufe as Nebenwirkung['belegstufe'],
+      }
+      if (zweite) eintrag.zweite_quelle_url = zweite
+      nw.hinweise.push(eintrag)
+    }
+    return nw
   }
 
   // --- IDs: Maßnahmen und Instrumente teilen sich einen Nummernkreis ----------
@@ -966,7 +1060,7 @@ export function pruefeKatalog(
         unbekannteFelder(mOrt, mRoh, [
           'id', 'instrument', 'beschreibung', 'ursachen_ids', 'wirksamkeit', 'umsetzbarkeit', 'rollen_modifikator',
           'begruendung', 'zitat', 'beleg_programm_url', 'beleg_studie_url', 'evidenz', 'stand', 'geprueft', 'pruefung', 'bewertung', 'ki_entwurf',
-          'entwurf_herkunft',
+          'entwurf_herkunft', 'nebenwirkungen',
         ])
         const kiEntwurf = mRoh.ki_entwurf !== undefined && wahrheitswert(mOrt, mRoh, 'ki_entwurf')
         const geprueft = wahrheitswert(mOrt, mRoh, 'geprueft')
@@ -1003,6 +1097,7 @@ export function pruefeKatalog(
         if (bewertung.rollen_modifikator) m.rollen_modifikator = bewertung.rollen_modifikator
         if (!instrument && bewertung.entwurf_herkunft) m.entwurf_herkunft = bewertung.entwurf_herkunft
         if (!instrument && bewertung.bewertungen) m.bewertungen = bewertung.bewertungen
+        if (!instrument && bewertung.nebenwirkungen) m.nebenwirkungen = bewertung.nebenwirkungen
         if (instrument) {
           m.instrument_id = instrument.id
           instrumentGenutzt.add(instrument.id)
