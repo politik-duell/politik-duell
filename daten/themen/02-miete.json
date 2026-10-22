@@ -82,7 +82,20 @@
           "evidenz": "gemischt",
           "stand": "2026-09-30",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [
+              {
+                "bereich": "aufwand",
+                "richtung": "vorteil",
+                "text": "Der Normenkontrollrat beziffert die Entlastung durch den Bau-Turbo (befristete Ausnahmen vom Planungsrecht) auf 2,5 Mrd. Euro Erfüllungsaufwand; er ist nur ein Teil dieses Wegs.",
+                "quelle_url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1129150",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 2002,
@@ -96,7 +109,20 @@
           "evidenz": "gemischt",
           "stand": "2026-09-30",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [
+              {
+                "bereich": "umwelt",
+                "richtung": "vorteil",
+                "text": "Der Flächenverbrauch lag 2021 bis 2024 bei 50 ha pro Tag (Ziel 2030: unter 30 ha); gegen ihn unterstützt der Bund laut UBA Kommunen bei der Nutzung von Brachflächen, Freiflächen und Baulücken.",
+                "quelle_url": "https://www.umweltbundesamt.de/en/node/11184",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 2003,
@@ -132,7 +158,20 @@
           "evidenz": "belegt",
           "stand": "2026-09-27",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Der Bund investiert bis 2029 insgesamt 23,5 Mrd. Euro in die soziale Wohnraumförderung, im Programmjahr 2026 stellt er den Ländern vier Mrd. Euro zur Verfügung.",
+                "quelle_url": "https://www.bmwsb.bund.de/SharedDocs/pressemitteilungen/DE/2026/03/VV-soz-wohnungsbau.html",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 2006,
@@ -146,7 +185,12 @@
           "evidenz": "offen",
           "stand": "2026-09-27",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 7222,
@@ -160,7 +204,27 @@
           "evidenz": "offen",
           "stand": "2026-09-30",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Zum Vergleich: Das UBA beziffert die Finanzierungslücke für Ausbau und Modernisierung des gesamten ÖPNV von 2024 bis 2045 auf 91,6 Mrd. Euro; das sind nicht die Kosten dieser Maßnahme.",
+                "quelle_url": "https://www.umweltbundesamt.de/themen/verkehrswende-busverkehr-verdoppeln-bahnverkehr",
+                "belegstufe": "A"
+              },
+              {
+                "bereich": "umwelt",
+                "richtung": "vorteil",
+                "text": "Je Personenkilometer verursachte 2023 ein Regionalzug 49 g Treibhausgase, ein Nahverkehrsbus 92 g, ein durchschnittlich ausgelasteter Pkw 164 g (Umweltbundesamt).",
+                "quelle_url": "https://www.umweltbundesamt.de/umwelttipps-fuer-den-alltag/mobilitaet/bus-bahn-fahren",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         }
       ]
     },
@@ -189,7 +253,20 @@
           "evidenz": "gemischt",
           "stand": "2026-09-27",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [
+              {
+                "bereich": "grundrechte",
+                "richtung": "gemischt",
+                "text": "Die Mietpreisbremse begrenzt Vermieter bei der Miethöhe; das Bundesverfassungsgericht hielt sie 2019 mit der Eigentumsgarantie vereinbar und sah den Schutz vor Verdrängung im öffentlichen Interesse.",
+                "quelle_url": "https://www.bundesverfassungsgericht.de/SharedDocs/Pressemitteilungen/DE/2019/bvg19-056.html",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 2012,
@@ -213,7 +290,12 @@
           "evidenz": "gemischt",
           "stand": "2026-09-27",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 2013,
@@ -227,7 +309,20 @@
           "evidenz": "offen",
           "stand": "2026-09-27",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Für den sozialen Wohnungsbau investiert der Bund bis 2029 insgesamt 23,5 Mrd. Euro, im Programmjahr 2026 stellt er den Ländern 4 Mrd. Euro zur Verfügung (das Programm insgesamt).",
+                "quelle_url": "https://www.bmwsb.bund.de/SharedDocs/pressemitteilungen/DE/2026/03/VV-soz-wohnungsbau.html",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 2014,
@@ -252,7 +347,12 @@
           "evidenz": "offen",
           "stand": "2026-09-27",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 7221,
@@ -292,7 +392,20 @@
           "evidenz": "gemischt",
           "stand": "2026-09-27",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [
+              {
+                "bereich": "grundrechte",
+                "richtung": "gemischt",
+                "text": "Die Mietpreisbremse ist mit der Eigentumsgarantie vereinbar, begrenzt aber die Miethöhe bei Vermietung und greift damit in das Eigentum vermietender Eigentümer ein.",
+                "quelle_url": "https://www.bundesverfassungsgericht.de/SharedDocs/Pressemitteilungen/DE/2019/bvg19-056.html",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 2022,
@@ -317,7 +430,20 @@
           "evidenz": "gemischt",
           "stand": "2026-09-30",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [
+              {
+                "bereich": "umwelt",
+                "richtung": "vorteil",
+                "text": "Nach dem Baugesetzbuch soll die städtebauliche Entwicklung vorrangig als Innenentwicklung erfolgen; das schont laut Umweltbundesamt Flächen im Außenbereich.",
+                "quelle_url": "https://www.umweltbundesamt.de/themen/boden-flaeche/flaechensparen-boeden-landschaften-erhalten/flaechenrecycling-innenentwicklung",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 2024,
@@ -348,7 +474,12 @@
           "evidenz": "offen",
           "stand": "2026-09-30",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         }
       ]
     },
@@ -378,7 +509,12 @@
           "evidenz": "gemischt",
           "stand": "2026-09-27",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 2033,
@@ -392,7 +528,20 @@
           "evidenz": "offen",
           "stand": "2026-09-27",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [
+              {
+                "bereich": "umwelt",
+                "richtung": "nachteil",
+                "text": "Neue Bauflächen zählen zur Flächeninanspruchnahme für Siedlung und Verkehr; diese lag 2021 bis 2024 bei 50 Hektar pro Tag, das Ziel für 2030 liegt unter 30 Hektar.",
+                "quelle_url": "https://www.umweltbundesamt.de/daten/flaeche-boden-land-oekosysteme/flaeche/siedlungs-verkehrsflaeche",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 2034,
@@ -422,7 +571,12 @@
           "evidenz": "offen",
           "stand": "2026-09-27",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 2042,
@@ -436,7 +590,27 @@
           "evidenz": "belegt",
           "stand": "2026-09-30",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Zum Vergleich: Die Wohngeld-Plus-Reform 2022 bezifferte die Bundesregierung auf knapp vier Mrd. Euro, geplant je zur Hälfte Bund und Länder; das sind nicht die Kosten dieser Maßnahme.",
+                "quelle_url": "https://www.bundestag.de/dokumente/textarchiv/2022/kw41-de-wohngeld-912988",
+                "belegstufe": "A"
+              },
+              {
+                "bereich": "aufwand",
+                "richtung": "nachteil",
+                "text": "Zum Vergleich (Reform 2022): Bayern schätzte mindestens 400 zusätzliche Beschäftigte in seinen 96 Wohngeldbehörden; der Städte- und Gemeindebund hielt die Reform für nicht durchführbar.",
+                "quelle_url": "https://www.bundestag.de/dokumente/textarchiv/2022/kw41-de-wohngeld-912988",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 2043,
@@ -461,7 +635,12 @@
           "evidenz": "offen",
           "stand": "2026-09-30",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         }
       ]
     },
@@ -501,7 +680,12 @@
           "evidenz": "gemischt",
           "stand": "2026-09-28",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 2053,
@@ -515,7 +699,20 @@
           "evidenz": "belegt",
           "stand": "2026-09-30",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Der Weg setzt 20 Mrd. Euro jährlich an. Zum Vergleich: Für den sozialen Wohnungsbau des Bundes sind bis 2029 insgesamt 23,5 Mrd. Euro vorgesehen (nicht die Kosten dieser Maßnahme).",
+                "quelle_url": "https://www.bmwsb.bund.de/SharedDocs/pressemitteilungen/DE/2026/03/VV-soz-wohnungsbau.html",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 2054,
@@ -529,7 +726,20 @@
           "evidenz": "offen",
           "stand": "2026-09-28",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Zum Vergleich (Berliner Volksentscheid, nicht dieser Weg): Der Senat schätzte 28,8 bis 36 Mrd. Euro Entschädigung für rund 243.000 Wohnungen, die Initiative 7,3 bis 13,7 Mrd. Euro.",
+                "quelle_url": "https://www.berlin.de/wahlen/abstimmungen/deutsche-wohnen-und-co-enteignen/allgemeine-informationen/artikel.1115174.php",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 2055,
@@ -543,7 +753,12 @@
           "evidenz": "offen",
           "stand": "2026-09-28",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 2056,
@@ -557,7 +772,12 @@
           "evidenz": "offen",
           "stand": "2026-09-28",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 7223,
@@ -571,7 +791,20 @@
           "evidenz": "gemischt",
           "stand": "2026-09-30",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Zum Vergleich: Die Wohngeldausgaben lagen 2025 bei 4 992 Mio. Euro (nicht die Kosten dieser Maßnahme).",
+                "quelle_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_339_22311.html",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         }
       ]
     },
@@ -623,7 +856,20 @@
           "evidenz": "gemischt",
           "stand": "2026-09-28",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [
+              {
+                "bereich": "aufwand",
+                "richtung": "vorteil",
+                "text": "Zum Vergleich: Der Normenkontrollrat beziffert die Entlastung durch den Bau-Turbo (schnellere Genehmigungen) auf 2,5 Mrd. Euro; das ist nicht diese Maßnahme.",
+                "quelle_url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1129150",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 7233,
@@ -749,7 +995,12 @@
           "evidenz": "offen",
           "stand": "2026-09-30",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         }
       ]
     },
@@ -788,7 +1039,12 @@
           "evidenz": "offen",
           "stand": "2026-09-30",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         }
       ]
     },
@@ -1037,7 +1293,12 @@
           "evidenz": "gemischt",
           "stand": "2026-09-30",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 6673,
@@ -1110,7 +1371,20 @@
         }
       },
       "begruendung": "Soll Investitionen anregen; Neubauten sind von der Mietpreisbremse ohnehin ausgenommen, die Wirkung auf den Neubau ist daher gering. Studien finden keinen deutlichen Rückgang des Neubaus durch die Bremse.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-22",
+        "hinweise": [
+          {
+            "bereich": "grundrechte",
+            "richtung": "gemischt",
+            "text": "Ein Auslaufen beendet den Eingriff der Mietpreisbremse in das Eigentum vermietender Eigentümer; das Bundesverfassungsgericht hielt die Bremse 2019 aber für zulässig und im öffentlichen Interesse.",
+            "quelle_url": "https://www.bundesverfassungsgericht.de/SharedDocs/Pressemitteilungen/DE/2019/bvg19-056.html",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6638,
@@ -1128,7 +1402,12 @@
         }
       },
       "begruendung": "Begrenzt Mieten direkt, auch bei Neuvermietung, schafft aber keine neuen Wohnungen; in Berlin sanken 2020/21 die regulierten Mieten, zugleich wurden weniger Wohnungen angeboten. Ob ein bundesweiter Deckel mit Absenkung verfassungsgemäß wäre, ist offen.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-22",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6639,
@@ -1146,7 +1425,12 @@
         }
       },
       "begruendung": "Stoppt Erhöhungen in laufenden Mietverträgen in angespannten Märkten; schafft keine neuen Wohnungen und kann Instandhaltung und Modernisierung bremsen. Ein Mietenstopp wirft verfassungsrechtliche Fragen auf.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-22",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6640,
@@ -1154,7 +1438,12 @@
       "wirksamkeit": 2,
       "umsetzbarkeit": 2,
       "begruendung": "Steuerliche Anreize können Neubau anstoßen; kostet Steuereinnahmen, und ob die Wohnungen günstig vermietet werden, ist nicht gesichert. Frühere Sonderabschreibungen wirkten vor allem bei ohnehin geplanten Projekten.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-22",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6641,
@@ -1162,7 +1451,12 @@
       "wirksamkeit": 2,
       "umsetzbarkeit": 3,
       "begruendung": "Verhindert weitere Kostensteigerungen durch Vorschriften und verkürzt Verfahren; bereits gestiegene Material-, Lohn- und Zinskosten bleiben. Wie viel Standards an den Baukosten ausmachen, ist umstritten.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-22",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6642,
@@ -1170,7 +1464,20 @@
       "wirksamkeit": 2,
       "umsetzbarkeit": 2,
       "begruendung": "Schafft preisgebundene Wohnungen für Haushalte mit geringem Einkommen; erfordert erhebliche öffentliche Mittel, der Umfang ist nicht beziffert.",
-      "evidenz": "belegt"
+      "evidenz": "belegt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-22",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Zum Vergleich: Der Bund investiert im laufenden Programm bis 2029 insgesamt 23,5 Mrd. Euro in den sozialen Wohnungsbau; das sind nicht die Kosten dieser Maßnahme.",
+            "quelle_url": "https://www.bmwsb.bund.de/SharedDocs/pressemitteilungen/DE/2026/03/VV-soz-wohnungsbau.html",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6645,
@@ -1178,7 +1485,12 @@
       "wirksamkeit": 1,
       "umsetzbarkeit": 3,
       "begruendung": "Hält den Neubau geförderter Wohnungen aufrecht, bremst aber den Rückgang des Bestands nicht, solange mehr Wohnungen aus der Bindung fallen als neu gefördert werden.",
-      "evidenz": "belegt"
+      "evidenz": "belegt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-22",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6646,
@@ -1186,7 +1498,12 @@
       "wirksamkeit": 2,
       "umsetzbarkeit": 2,
       "begruendung": "Mehr geförderte Neubauten wirken dem Rückgang des Bestands direkt entgegen; das Land muss dafür zusätzliche Haushaltsmittel bereitstellen, und die Wirkung hängt davon ab, dass Bauherren die Förderung annehmen.",
-      "evidenz": "belegt"
+      "evidenz": "belegt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-22",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6647,
@@ -1194,7 +1511,12 @@
       "wirksamkeit": 2,
       "umsetzbarkeit": 3,
       "begruendung": "Verhindert, dass künftig geförderte Wohnungen nach einigen Jahren aus der Bindung fallen; das Land kann das im eigenen Förderrecht regeln. Private Bauherren nehmen eine Förderung mit Dauerbindung womöglich seltener an.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-22",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6648,
@@ -1202,7 +1524,12 @@
       "wirksamkeit": 2,
       "umsetzbarkeit": 2,
       "begruendung": "Sichert in neuen Quartieren mehr Sozialwohnungen ohne volle Landesförderung; eine sehr hohe Quote kann private Bauvorhaben unwirtschaftlich machen und den Neubau bremsen.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-22",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6649,
@@ -1210,7 +1537,12 @@
       "wirksamkeit": 1,
       "umsetzbarkeit": 3,
       "begruendung": "Lenkt Sozialwohnungen stärker zu Bedürftigen und bringt Geld für neue Förderung; schafft selbst kaum neue Wohnungen, der Verwaltungsaufwand ist hoch, und Besserverdienende ziehen aus, was die Durchmischung verringern kann.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-22",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6650,
@@ -1218,7 +1550,12 @@
       "wirksamkeit": 2,
       "umsetzbarkeit": 1,
       "begruendung": "Würde den Bestand an Wohnungen für Haushalte mit geringem Einkommen schnell erweitern; ob ein Land das regeln darf, ist fraglich, denn das Mietrecht ist Bundessache (Bundesverfassungsgericht 2021 zum Berliner Mietendeckel).",
-      "evidenz": "offen"
+      "evidenz": "offen",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-22",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7232,
@@ -1226,7 +1563,20 @@
       "wirksamkeit": 1,
       "umsetzbarkeit": 2,
       "begruendung": "Weniger Ferienwohnungen und Leerstand bringen Wohnungen zurück auf den Mietmarkt, vor allem in Großstädten; bundesweit ist der Anteil klein. Zweckentfremdungsverbote erlassen die Länder, der Bund kann den Rahmen setzen.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-22",
+        "hinweise": [
+          {
+            "bereich": "grundrechte",
+            "richtung": "nachteil",
+            "text": "Das Berliner Zweckentfremdungsverbot erfasst auch frühere Ferienvermietungen; das OVG sah darin einen Verstoß gegen Eigentum und Berufsfreiheit, das BVerfG ließ dies 2022 offen (Vorlage unzulässig).",
+            "quelle_url": "https://www.bundesverfassungsgericht.de/SharedDocs/Pressemitteilungen/DE/2022/bvg22-048.html",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     }
   ]
 }

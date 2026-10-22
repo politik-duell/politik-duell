@@ -1,0 +1,132 @@
+{
+  "pruefsumme": "7c3ef6eaa76903df",
+  "thema_id": 2,
+  "thema": "Miete",
+  "ziel": "Mieterinnen und Mieter finden eine passende Wohnung und können sich die Miete dauerhaft leisten.",
+  "ursachen": [
+    "Es werden weniger Wohnungen gebaut als gebraucht (Bedarf laut Prognose rund 320.000 pro Jahr)",
+    "Mieten bei Neuvermietung liegen rund 43 % über Bestandsmieten, in großen Städten besonders hoch",
+    "Stark gestiegene Baukosten: Wohngebäude wurden 2010 bis 2025 um 89 % teurer, mehr als doppelt so stark wie die Inflation",
+    "Mieten in laufenden Verträgen steigen weiter (Nettokaltmieten 2025 im Schnitt +2,1 %)",
+    "Die Nachfrage wächst vor allem in wirtschaftlich starken Großstädten: mehr Haushalte durch Zuwanderung und Zuzug aus dem Inland, dazu höhere Einkommen",
+    "Jedes Jahr fallen mehr Sozialwohnungen aus der Bindung, als neue gefördert werden (2025: rund 27.000 neu gefördert, rund 55.000 fallen jährlich heraus)"
+  ],
+  "teil": 1,
+  "teile": 7,
+  "einheiten": [
+    {
+      "id": 2001,
+      "name": "Bauordnungsrecht entschlacken, Gebäudetyp E, befristete Ausnahmen vom Planungsrecht in angespannten Wohnungsmärkten",
+      "ebene": "bund",
+      "begruendung": "Senkt Baukosten und beschleunigt Planung; Bauordnungen sind Ländersache, die Wirkung hängt daher auch von den Ländern ab."
+    },
+    {
+      "id": 2002,
+      "name": "Mehr Bauland: Brach- und Konversionsflächen sowie bundeseigene Grundstücke für den Wohnungsbau nutzen",
+      "ebene": "bund",
+      "begruendung": "Mehr verfügbare Flächen erleichtern Neubau in Wachstumsregionen; Umfang und Tempo hängen von Kommunen und Ländern ab."
+    },
+    {
+      "id": 2005,
+      "name": "Sozialen Wohnungsbau solide fördern und Wohngeld regelmäßig anpassen",
+      "ebene": "bund",
+      "begruendung": "Hält bestehende Instrumente aufrecht, ohne Umfang oder Ausbau zu beziffern; Wohngeld entlastet, schafft aber keine Wohnungen."
+    },
+    {
+      "id": 2006,
+      "name": "Steuerliche Nachteile für Vermieter abschaffen, die weniger als die ortsübliche Vergleichsmiete verlangen",
+      "ebene": "bund",
+      "begruendung": "Setzt einen kleinen Anreiz für günstige Mieten, vor allem bei privaten Vermietern; die Wirkung auf das Mietniveau ist begrenzt."
+    },
+    {
+      "id": 2011,
+      "name": "Mietpreisbremse unbefristet verlängern, auf Wohnungen bis Baujahr 2019 ausweiten und Umgehung über möblierte oder befristete Angebote verhindern",
+      "ebene": "bund",
+      "begruendung": "Dämpft Mieten bei Neuvermietung in angespannten Märkten; schafft keine neuen Wohnungen. Eine unbefristete Geltung ist verfassungsrechtlich weniger abgesichert als die befristete."
+    },
+    {
+      "id": 2012,
+      "name": "Mieterhöhungen im Bestand in angespannten Märkten auf 6 % in drei Jahren begrenzen, Indexmieten deckeln",
+      "ebene": "bund",
+      "begruendung": "Begrenzt Erhöhungen in laufenden Mietverträgen spürbar, vor allem in angespannten Märkten; schafft keine neuen Wohnungen."
+    }
+  ],
+  "suchhilfe": {
+    "haushalt": {
+      "frage": "Was kostet der Weg Bund, Ländern, Kommunen oder Sozialkassen – oder was bringt er ein?",
+      "vorteil": [
+        "Mehreinnahmen",
+        "Einsparung öffentlicher Haushalt",
+        "Entlastung Sozialversicherung"
+      ],
+      "nachteil": [
+        "Mindereinnahmen",
+        "Kosten Bundeshaushalt",
+        "Haushaltsausgaben Gesetzentwurf"
+      ]
+    },
+    "wirtschaft": {
+      "frage": "Welche Kosten oder Entlastungen entstehen für Unternehmen (besonders kleine und mittlere), wie wirkt er auf Preise und Verbraucher?",
+      "vorteil": [
+        "Entlastung Unternehmen",
+        "sinkende Preise",
+        "Investitionen"
+      ],
+      "nachteil": [
+        "Kosten für Unternehmen",
+        "Preisanstieg",
+        "Wettbewerbsfähigkeit"
+      ]
+    },
+    "aufwand": {
+      "frage": "Welcher Aufwand für Anträge, Nachweise und Kontrollen entsteht oder entfällt – für Bürger, Wirtschaft, Verwaltung?",
+      "vorteil": [
+        "Bürokratieabbau",
+        "Erfüllungsaufwand sinkt"
+      ],
+      "nachteil": [
+        "Erfüllungsaufwand",
+        "Nachweispflichten",
+        "Normenkontrollrat Stellungnahme"
+      ]
+    },
+    "umwelt": {
+      "frage": "Wie wirkt er auf Emissionen, Natur und Ressourcen, und welche Lasten oder Vorteile hat er für spätere Jahre?",
+      "vorteil": [
+        "Emissionsminderung",
+        "Umweltentlastung"
+      ],
+      "nachteil": [
+        "Mehremissionen",
+        "Umweltrisiken",
+        "Flächenverbrauch"
+      ]
+    },
+    "verteilung": {
+      "frage": "Wer gewinnt, wer trägt die Last – nach Einkommen, Alter, Familienform, Stadt und Land?",
+      "vorteil": [
+        "Entlastung geringe Einkommen",
+        "Verteilungswirkung progressiv"
+      ],
+      "nachteil": [
+        "regressiv",
+        "Mitnahmeeffekte",
+        "profitieren höhere Einkommen"
+      ]
+    },
+    "grundrechte": {
+      "frage": "Schränkt er Freiheiten ein oder stärkt er sie, behandelt er Gruppen ungleich, wie wirkt er auf Gesundheit und Sicherheit?",
+      "vorteil": [
+        "Gesundheit verbessert",
+        "Schutz",
+        "Gleichstellung"
+      ],
+      "nachteil": [
+        "Datenschutz",
+        "Grundrechtseingriff",
+        "Benachteiligung",
+        "Gesundheitsrisiko"
+      ]
+    }
+  }
+}
