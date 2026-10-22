@@ -1,0 +1,55 @@
+{
+  "partei_id": 14,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Einkommensteuer-Freibeträge und Eckwerte automatisch an die Preisentwicklung anpassen", "ursachen_ids": [4201], "buendel": "Tarif an Inflation anpassen", "zitat": "Damit der Staat nicht zum Profiteur von Inflation und der Steuerzahler nicht Opfer der Kalten Progression wird, wollen wir die Freibeträge und Eckwerte der Einkommensteuer automatisch an die allgemeine Preisentwicklung anpassen (Tarif auf Rädern).", "seite": 14 },
+    { "beschreibung": "Grundfreibetrag schrittweise um mindestens 1.000 Euro anheben", "ursachen_ids": [4201], "buendel": "Entlastung über Grundfreibetrag", "zitat": "Den Grundfreibetrag wollen wir im Zuge der Bürgergeldreform schrittweise um mindestens 1.000 Euro anheben.", "seite": 14 },
+    { "beschreibung": "Einkommensteuertarif als linear-progressiver Chancentarif, der den Mittelstandsbauch beseitigt", "ursachen_ids": [4201], "zitat": "Dazu wollen wir stufenweise einen linear-progressiven Chancentarif in der Einkommensteuer einführen, der den Mittelstandsbauch vollständig beseitigt.", "seite": 14 },
+    { "beschreibung": "Spitzensteuersatz erst bei höherem Einkommen greifen lassen (Bindung an die Beitragsbemessungsgrenze)", "ursachen_ids": [4201], "zitat": "Konkret fordern wir, dass sich der Spitzensteuersatz künftig an der aktuellen Beitragsbemessungsgrenze der Rentenversicherung orientiert.", "seite": 14 },
+    { "beschreibung": "Solidaritätszuschlag vollständig abschaffen", "ursachen_ids": [], "ursachen_offen": [4201], "zitat": "Darüber hinaus wollen wir den Solidaritätszuschlag vollständig abschaffen.", "seite": 14 },
+    { "beschreibung": "Zuschläge für Überstunden bei Vollzeitarbeit von der Lohnsteuer befreien", "ursachen_ids": [], "ursachen_offen": [4201], "zitat": "Um zusätzliche Arbeitsanreize zu schaffen, wollen wir Zuschläge für Überstunden bei Vollzeitarbeit von der Lohnsteuer befreien.", "seite": 14 },
+    { "beschreibung": "Schuldenbremse im Grundgesetz einhalten", "ursachen_ids": [4202], "buendel": "Neuverschuldung zulassen", "zitat": "Freiheit für künftige Generationen bedeutet auch, ihnen keine Schuldenberge zu hinterlassen. Daher ist für uns Freie Demokraten die Einhaltung der im Grundgesetz verankerten Schuldenbremse zentrales Gebot der Generationengerechtigkeit.", "seite": 35 },
+    { "beschreibung": "Subventionen zurückfahren, bis Finanzhilfen und Steuerermäßigungen zur Wertschöpfung passen", "ursachen_ids": [4202], "buendel": "Ausgaben senken", "zitat": "Wir Freie Demokraten wollen Subventionen zurückfahren, damit Finanzhilfen und Steuerermäßigungen auf ein angemessenes Verhältnis zur wirtschaftlichen Wertschöpfung gebracht werden.", "seite": 36 },
+    { "beschreibung": "Bundesausgaben stärker auf die originären Aufgaben des Bundes beschränken", "ursachen_ids": [4202], "zitat": "Wir Freie Demokraten wollen Ausgaben des Bundes grundsätzlich stärker auf die originären Aufgaben des Bundes beschränken.", "seite": 36 },
+    { "beschreibung": "Stellenzahl in der Bundesverwaltung außerhalb der Sicherheitsbehörden deutlich reduzieren", "ursachen_ids": [4202], "zitat": "Die Stellenzahl in der Bundesverwaltung außerhalb der Sicherheitsbehörden wollen wir deutlich reduzieren.", "seite": 37 },
+    { "beschreibung": "Staatsbeteiligungen veräußern", "ursachen_ids": [], "ursachen_offen": [4202], "zitat": "Wir Freie Demokraten wollen Staatsbeteiligungen veräußern, weil private Investoren die besseren Unternehmer sind.", "seite": 36 },
+    { "beschreibung": "Freibeträge der Erbschaft- und Schenkungsteuer automatisch an die Inflationsrate anpassen", "ursachen_ids": [4203], "buendel": "Vermögen und Erbschaften stärker besteuern", "zitat": "Die Existenz von Unternehmen darf nicht durch die Erbschaft- und Schenkungsteuer gefährdet sein. Wir fordern, dass die Freibeträge automatisch um die Inflationsrate erhöht werden.", "seite": 15 },
+    { "beschreibung": "Unternehmenssteuerbelastung auf unter 25 Prozent absenken", "ursachen_ids": [], "ursachen_offen": [4203], "buendel": "Unternehmen und Kapital entlasten", "zitat": "Wir fordern die Absenkung der Unternehmenssteuerbelastung auf unter 25 Prozent.", "seite": 15 },
+    { "beschreibung": "Gewerbesteuer durch eine international systemtaugliche Alternative ersetzen", "ursachen_ids": [], "ursachen_offen": [4203], "zitat": "Dazu wollen wir das deutsche Steuerrecht entbürokratisieren, die Gewerbesteuer durch eine international systemtaugliche Alternative ersetzen […].", "seite": 15 },
+    { "beschreibung": "Steuerfreies Aufstiegsvermögen mit übertragbarem und dynamisiertem Sparer-Freibetrag", "ursachen_ids": [], "ursachen_offen": [4203], "zitat": "Deshalb fordern wir die Einführung eines steuerfreien Aufstiegsvermögens, indem die Sparer nicht ausgeschöpfte Sparer-Freibeträge auf die nachfolgenden Jahre übertragen können […].", "seite": 16 },
+    { "beschreibung": "Katalog der Umsätze zum ermäßigten Umsatzsteuersatz vereinfachen", "ursachen_ids": [], "ursachen_offen": [4203], "zitat": "Wir Freie Demokraten wollen den Katalog der Umsätze zum ermäßigten Steuersatz vereinfachen und entbürokratisieren.", "seite": 15 }
+  ],
+  "neue_buendel": [
+    { "ursache": 4201, "name": "Tarifverlauf der Einkommensteuer", "seite": 14 },
+    { "ursache": 4201, "name": "Spitzensteuersatz-Schwelle", "seite": 14 },
+    { "ursache": 4201, "name": "Solidaritätszuschlag abschaffen", "seite": 14 },
+    { "ursache": 4201, "name": "Steuerfreiheit für Überstundenzuschläge", "seite": 14 },
+    { "ursache": 4202, "name": "Bundesausgaben auf Kernaufgaben beschränken", "seite": 36 },
+    { "ursache": 4202, "name": "Personalabbau in der Bundesverwaltung", "seite": 37 },
+    { "ursache": 4202, "name": "Staatsbeteiligungen veräußern", "seite": 36 },
+    { "ursache": 4203, "name": "Gewerbesteuer durch Alternative ersetzen", "seite": 15 },
+    { "ursache": 4203, "name": "Steuerfreies Aufstiegsvermögen (Sparer-Freibetrag)", "seite": 16 },
+    { "ursache": 4203, "name": "Vereinfachung des ermäßigten Umsatzsteuersatzes", "seite": 15 }
+  ]
+}
+
+Protokoll
+
+Gelesen: Inhaltsverzeichnis (S. 2–4); Kapitel III.b „Ein Steuersystem, das Leistung und Investition belohnt“ (S. 13–16); Kapitel V „Für einen schlanken Staat“, Abschnitte a „Solide Staatsfinanzen“ (S. 34–36), b „Weniger Subventionen und mehr Markt“ (S. 36), d „Ein agiler Staat“ (S. 36–37) als Fundstellen für Ausgaben, Personal und Staatsbeteiligungen. Seiten 1 und 2 ohne Text (Titel, Vorblatt). Stand 2025-02-09, Titelseite nennt keinen anderen Stand.
+
+Weitere gleichartige Stellen (nicht separat erfasst, je Bündel eine Maßnahme):
+- Bündel „Vermögen und Erbschaften stärker besteuern“: S. 14 „Wir lehnen jede Form einer Vermögensteuer oder Vermögensabgabe ab.“; S. 16 „Eine Finanztransaktionssteuer lehnen wir ab.“
+- Bündel „Unternehmen und Kapital entlasten“: S. 15 „Dazu schaffen wir den Solidaritätszuschlag vollständig ab und senken die Körperschaftsteuer.“; S. 15 unbeschränkter Verlustvortrag, Verlustrücktrag, fiktive Eigenkapitalzinsen; S. 16 Abschaffung der Verlustverrechnungsbeschränkung und Wiedereinführung der Spekulationsfrist.
+- Bündel „Ausgaben senken“: S. 36 „Bestehende und neue Subventionsprogramme müssen künftig konsequent zeitlich befristet, degressiv ausgestaltet und extern evaluiert werden.“
+- Personal (neue Bündel „Personalabbau in der Bundesverwaltung“): S. 37 Zahl der Beauftragten reduzieren, „One in, one out“-Prinzip, Staatssekretäre begrenzen, Zahl der Behörden verringern.
+- Bündel „Konsum belasten oder entlasten“: S. 14 Ist-Besteuerung bei der Umsatzsteuer für kleine und mittlere Unternehmen (Verfahren, ohne Steuerhöhe).
+
+Nicht erfasst:
+- S. 13: „Konsolidierung“ des Bundesrechts (Treffer, aber Bürokratieabbau, keine Ausgabenkürzung).
+- S. 15: Ermäßigter Umsatzsteuersatz für Speisen „sollte auch in Deutschland gelten“ und „ein einheitlicher Umsatzsteuersatz von 7 Prozent“: Wunsch („sollte“), keine Zusage.
+- S. 14: Betreuungskosten und Unterhaltsleistungen steuerlich absetzbar (Familienentlastung, kein Bezug zu Tarifverlauf oder Steueraufkommen).
+- S. 35: Ablehnung einer EU-Verschuldungskompetenz und Schuldenfonds: Verschuldung auf EU-Ebene, nicht Ausgaben des Bundes.
+
+Richtungen ohne Maßnahme: Einnahmen durch Steuern erhöhen (4202) – keine Zusage gefunden; das Programm lehnt Steuererhöhungen in diesen Kapiteln nicht ausdrücklich ab.
+
+Neue Bündel (Hinweis der Prüfung, Richtungen aus dem Auftrag, im Leitfaden nicht bei den Ursachen): Tarif an Inflation anpassen; Entlastung über Grundfreibetrag (4201); Neuverschuldung zulassen; Ausgaben senken (4202); Vermögen und Erbschaften stärker besteuern; Unternehmen und Kapital entlasten (4203).

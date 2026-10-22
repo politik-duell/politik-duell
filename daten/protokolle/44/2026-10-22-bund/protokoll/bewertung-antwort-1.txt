@@ -1,0 +1,67 @@
+{
+  "blind_pruefsumme": "8871d296a9b1b42c9cce1d358a39e90a20f864bf2756b73eb87af0667b3356d5",
+  "neue_instrumente": [
+    { "kennung": "I1", "name": "Neue EU-Freihandelsabkommen mit Drittstaaten zügig abschließen und Absatzmärkte diversifizieren (Bund)", "wirksamkeit": 2, "umsetzbarkeit": 1, "begruendung": "Modellrechnungen (ifo 2025) zeigen, dass Abkommen u. a. mit Mercosur, Indien und ASEAN-Staaten die Exportverluste durch US-Zölle ausgleichen könnten; Zollsätze der USA ändern sie nicht. Abschluss liegt bei der EU und braucht Zustimmung der Partner.", "evidenz": "gemischt" },
+    { "kennung": "I2", "name": "Mit den USA über Abbau von Zöllen und Handelshemmnissen verhandeln, etwa sektorale Abkommen (Bund)", "wirksamkeit": 2, "umsetzbarkeit": 1, "begruendung": "Setzt direkt an den US-Zöllen an; ein Industriezoll-Abkommen würde Exporte entlasten. Ergebnis hängt vom Willen der US-Regierung ab, Handelspolitik ist EU-Zuständigkeit; die Verhandlungen 2025 brachten nur begrenzte Senkungen.", "evidenz": "offen" },
+    { "kennung": "I3", "name": "Rohstoffpartnerschaften und Abkommen zur Diversifizierung der Rohstoffbezugsquellen (Bund)", "wirksamkeit": 2, "umsetzbarkeit": 2, "begruendung": "Japan senkte nach 2010 mit Partnerschaften und staatlich gestützten Investitionen seine Abhängigkeit von China bei Seltenen Erden von über 90 auf 60–70 %. Partnerschaften ohne Finanzierung brachten in Deutschland bisher kaum Lieferungen.", "evidenz": "gemischt", "beleg_studie_url": "https://thenightly.com.au/politics/world/the-new-york-times-how-japan-built-a-rare-earth-supply-chain-without-china-c-20939714" },
+    { "kennung": "I4", "name": "Heimischen und europäischen Rohstoffabbau durch modernisiertes Bergrecht und schnellere Verfahren stärken (Bund)", "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Mehr eigene Förderung verringert Importabhängigkeit; neue Bergwerke brauchen aber im Schnitt weit über zehn Jahre bis zur Produktion, und für viele kritische Rohstoffe fehlen in Deutschland abbauwürdige Vorkommen.", "evidenz": "offen" },
+    { "kennung": "I5", "name": "Recycling und Kreislaufwirtschaft fördern, Recycling- und Einsatzquoten erhöhen (Bund)", "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Recycling ersetzt langfristig Primärrohstoffe; bei Seltenen Erden liegt die Recyclingquote aber nur bei etwa 1 %, und Rückläufe aus langlebigen Produkten kommen spät. Quoten sind teils EU-rechtlich vorgeprägt.", "evidenz": "belegt", "beleg_studie_url": "https://www.jyu.fi/en/news/towards-better-autonomy-rare-earth-elements-recycled-from-waste" },
+    { "kennung": "I6", "name": "Gegen zollfreie Billigsendungen und unsichere Produkte aus Drittstaaten vorgehen, Zollkontrollen verschärfen (Bund)", "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Schließt Lücken, über die Kleinsendungen zoll- und kontrollfrei hereinkommen; die EU hat die Abschaffung der 150-Euro-Freigrenze beschlossen. Der Effekt auf heimische Hersteller ist kaum untersucht; Händler weichen etwa auf EU-Lager aus.", "evidenz": "offen" },
+    { "kennung": "I7", "name": "EU-Handelsschutz nutzen: Antisubventions- und Antidumpingverfahren, Ausgleichszölle (Bund)", "wirksamkeit": 2, "umsetzbarkeit": 1, "begruendung": "Antidumpingzölle senken Einfuhren aus China deutlich (Felbermayr/Sandkamp), helfen aber vor allem schwächeren Herstellern und schaden Weiterverarbeitern; Nettoeffekt auf Beschäftigung eher negativ. Verfahren führt die EU-Kommission.", "evidenz": "gemischt", "beleg_studie_url": "https://www.ifo.de/en/cesifo/publications/2018/working-paper/trade-effects-anti-dumping-duties-firm-level-evidence-china" },
+    { "kennung": "I8", "name": "CO₂-Grenzausgleich (CBAM) nachbessern: Anwendungsbereich, Verfahren, Exportentlastung (Bund)", "wirksamkeit": 1, "umsetzbarkeit": 1, "begruendung": "Ein wirksamerer CBAM gleicht CO₂-Kosten bei Importen von Stahl, Zement u. a. aus und mindert Wettbewerbsnachteile; er betrifft nur wenige Branchen, Studien sehen Lücken bei Weiterverarbeitern. Änderung liegt bei der EU.", "evidenz": "gemischt" }
+  ],
+  "zuordnung": [
+    { "kennung": "M01", "ursachen": [] },
+    { "kennung": "M02", "instrument": "I2", "ursachen": [4401] },
+    { "kennung": "M03", "instrument": "I6", "ursachen": [4403] },
+    { "kennung": "M04", "ursachen": [] },
+    { "kennung": "M05", "instrument": "I3", "ursachen": [4402] },
+    { "kennung": "M06", "einzeln": { "wirksamkeit": 2, "umsetzbarkeit": 2, "begruendung": "Lenkt geförderte Nachfrage etwa bei E-Autos auf europäische Produktion und mindert so Importdruck; die OECD sieht bei Local-Content-Vorgaben höhere Kosten und Einbußen in anderen Branchen. Ausgestaltung muss EU- und WTO-Recht beachten.", "evidenz": "gemischt", "beleg_studie_url": "https://ideas.repec.org/p/oec/traaab/209-en.html" }, "ursachen": [4403] },
+    { "kennung": "M07", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 1, "begruendung": "Eine EU-Resilienzstrategie kann Abhängigkeiten bei Rohstoffen und Vorprodukten verringern; der Text bleibt ohne konkrete Instrumente, und die Umsetzung hängt von EU-Entscheidungen ab.", "evidenz": "offen" }, "ursachen": [4402] },
+    { "kennung": "M08", "instrument": "I8", "ursachen": [4403] },
+    { "kennung": "M09", "ursachen": [] },
+    { "kennung": "M10", "instrument": "I3", "ursachen": [4402] },
+    { "kennung": "M11", "ursachen": [] },
+    { "kennung": "M12", "instrument": "I3", "ursachen": [4402] },
+    { "kennung": "M13", "ursachen": [] },
+    { "kennung": "M14", "instrument": "I5", "ursachen": [4402] },
+    { "kennung": "M15", "instrument": "I1", "ursachen": [4401] },
+    { "kennung": "M16", "instrument": "I3", "ursachen": [4402] },
+    { "kennung": "M17", "instrument": "I7", "ursachen": [4403] },
+    { "kennung": "M18", "ursachen": [] },
+    { "kennung": "M19", "einzeln": { "wirksamkeit": 0, "umsetzbarkeit": 1, "begruendung": "Die Abschaffung des CO₂-Grenzausgleichs entlastet Importeure, mindert aber den Schutz heimischer Hersteller vor CO₂-intensiven Importen; zum Ziel trägt sie nicht bei. Änderung nur durch EU-Beschluss.", "evidenz": "gemischt" }, "ursachen": [4403] },
+    { "kennung": "M20", "instrument": "I5", "ursachen": [4402] },
+    { "kennung": "M21", "instrument": "I1", "ursachen": [4401] },
+    { "kennung": "M22", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 1, "begruendung": "WTO-Reform und Zusammenarbeit mit weiteren Wirtschaftsräumen können Zollkonflikte entschärfen und Absatzmärkte öffnen; der Text bleibt unbestimmt, und Ergebnisse hängen von vielen anderen Staaten ab.", "evidenz": "offen" }, "ursachen": [4401] },
+    { "kennung": "M23", "ursachen": [] },
+    { "kennung": "M24", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 1, "begruendung": "Schutz vor Billigimporten mit geringeren Standards (etwa Spiegelklauseln) kann Agrarbetriebe entlasten; ein Instrument nennt der Text nicht, Handelspolitik ist EU-Zuständigkeit und WTO-rechtlich begrenzt.", "evidenz": "offen" }, "ursachen": [4403] },
+    { "kennung": "M25", "instrument": "I3", "ursachen": [4402] },
+    { "kennung": "M26", "instrument": "I6", "ursachen": [4403] },
+    { "kennung": "M27", "instrument": "I2", "ursachen": [4401] },
+    { "kennung": "M28", "instrument": "I5", "ursachen": [4402] },
+    { "kennung": "M29", "instrument": "I1", "ursachen": [4401] },
+    { "kennung": "M30", "instrument": "I8", "ursachen": [4403] },
+    { "kennung": "M31", "einzeln": { "wirksamkeit": 2, "umsetzbarkeit": 2, "begruendung": "Vorräte überbrücken Lieferstopps bei Exportbeschränkungen direkt; Japan betreibt ein solches System seit Jahren. Wirkungen sind kaum evaluiert, Vorräte lösen die Abhängigkeit nicht, und die steuerliche Rücklage kostet Einnahmen.", "evidenz": "offen" }, "ursachen": [4402] },
+    { "kennung": "M32", "instrument": "I4", "ursachen": [4402] },
+    { "kennung": "M33", "instrument": "I5", "ursachen": [4402] },
+    { "kennung": "M34", "instrument": "I4", "ursachen": [4402] },
+    { "kennung": "M35", "ursachen": [] },
+    { "kennung": "M36", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Resilienzkriterien in Ausschreibungen (etwa Wind, Solar) mindern die Abhängigkeit von einzelnen Lieferländern bei Vorprodukten; die EU-Vorgaben gelten bereits, die Wirkung ist noch nicht untersucht und kann Kosten erhöhen.", "evidenz": "offen" }, "ursachen": [4402] },
+    { "kennung": "M37", "instrument": "I2", "ursachen": [4401] },
+    { "kennung": "M38", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 1, "begruendung": "Abbau von Handelshemmnissen kann Exporte erleichtern; der Text nennt weder Partner noch Weg, und gegen US-Zölle hilft eigener Abbau nur über Verhandlungen auf EU-Ebene.", "evidenz": "offen" }, "ursachen": [4401] },
+    { "kennung": "M39", "instrument": "I7", "ursachen": [4403] },
+    { "kennung": "M40", "einzeln": { "wirksamkeit": 2, "umsetzbarkeit": 3, "begruendung": "Ein staatlicher Rohstofffonds kann wie in Japan Projekte außerhalb Chinas mitfinanzieren und Abhängigkeit spürbar senken; der Fonds besteht bereits. Heimische Förderung wirkt erst nach vielen Jahren.", "evidenz": "belegt", "beleg_studie_url": "https://thenightly.com.au/politics/world/the-new-york-times-how-japan-built-a-rare-earth-supply-chain-without-china-c-20939714" }, "ursachen": [4402] }
+  ]
+}
+
+Nicht bestätigt bzw. aussortiert (ursachen []):
+- M01 (Bergbauverbot in Schutzgebieten/Tiefsee): Umweltschutzvorgabe, verringert keine Rohstoffabhängigkeit (offene 4402 nicht übernommen).
+- M04, M18, M35: Gestaltungsprinzipien für Abkommen (fair, Standards, demokratisch/ökologisch), kein Ansatz gegen US-Zölle bzw. Rohstoffabhängigkeit; gleicher Maßstab für alle drei.
+- M09: Ziel (Primärrohstoffverbrauch halbieren) ohne Instrument.
+- M11: Klimaleitlinien bei Exportgarantien betreffen Exportfinanzierung, nicht Zölle von Handelspartnern.
+- M13: Aufhebung eigener Sanktionen gegen Russland betrifft keine Zölle von Handelspartnern auf deutsche Exporte (Regel 1).
+- M23: allgemeines Ziel regionaler Produktion ohne Instrument.
+
+Offene Ursachen übernommen: M03, M06, M08, M17, M19, M30 (4403); M07, M20, M36 (4402); M22, M38, M15 (4401; M15 als Drittstaaten-Abkommen gleich behandelt wie M21/M29, die 4401 vorgeschlagen hatten).
+
+Schwierig: Drittstaaten-Freihandelsabkommen unter 4401 (Regel nennt Zollfolgen in Drittstaaten nur als Grenzfall; ich habe sie wegen des Ausgleichs der US-Zollverluste einheitlich zugeordnet). M19 mit Wirksamkeit 0 statt Aussortieren, weil der Lösungsweg CBAM an derselben Ursache ansetzt wie M08/M30. M40 einzeln wegen bereits bestehendem Fonds (Umsetzbarkeit 3). Mehrere Quellen (IEA, S&P, OECD-Seite, ifo/INSM-PDF, SWP) waren gesperrt oder nicht lesbar; KAS-Bilanz der Rohstoffpartnerschaften war gesperrt, daher nur aus Suchergebnis berücksichtigt.

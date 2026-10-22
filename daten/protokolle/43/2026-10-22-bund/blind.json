@@ -1,0 +1,468 @@
+{
+  "pruefsumme": "1a819e63644f86c79966f4acfb2151f6992e8ad6bd9cded881a8ea713da64724",
+  "thema": {
+    "id": 43,
+    "name": "Künstliche Intelligenz",
+    "ziel": "Menschen werden durch KI nicht getäuscht, nicht ohne Ausweg benachteiligt und können im Beruf mit der KI-Entwicklung Schritt halten."
+  },
+  "ursachen": [
+    {
+      "id": 4301,
+      "beschreibung": "Viele Tätigkeiten lassen sich technisch durch Computer übernehmen: 2022 arbeiteten 38 % der Beschäftigten in Berufen, in denen mindestens 70 % der Tätigkeiten ersetzbar sind.",
+      "ebene": "bund"
+    },
+    {
+      "id": 4302,
+      "beschreibung": "Beschäftigte nutzen KI sehr ungleich: 2024 ohne Bildungsabschluss knapp ein Drittel, mit Hochschul-, Meister- oder Technikerabschluss fast 80 %. Eingeführt wird KI meist informell.",
+      "ebene": "bund"
+    },
+    {
+      "id": 4303,
+      "beschreibung": "Kriminelle nutzen KI, um Angriffe effizienter und professioneller durchzuführen.",
+      "ebene": "bund"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        4301
+      ],
+      "text": "Zu 1 gehören Aussagen zur Ersetzbarkeit von Tätigkeiten und Stellen durch KI sowie Maßnahmen, die KI-bedingte Verdrängung begrenzen oder den Übergang absichern. Nicht dazu: allgemeiner Stellenabbau durch Strukturwandel in der Industrie (502), Lohnfragen, Fachkräftemangel ohne KI-Bezug. Abgrenzung zu 2: 1 betrifft das Tätigkeitsrisiko, 2 den Zugang zu KI-Kompetenz. Grenzfall: Stellenabbau durch Arbeitgeber ohne ausdrücklichen KI-Bezug: nur als ursachen_offen."
+    },
+    {
+      "nr": 2,
+      "ursachen": [
+        4302
+      ],
+      "text": "Zu 2 gehören Aussagen zu Weiterbildung, Qualifizierung und Schulung für den Umgang mit KI sowie zum Zugang dazu. Nicht dazu: allgemeine Weiterbildung ohne KI-Bezug, Studienkosten (31), Schulbildung (4). Abgrenzung zu 1: 2 betrifft Zugang und Kompetenz, nicht den Umfang der Tätigkeiten. Grenzfall: allgemeine Weiterbildungsförderung mit KI als Beispiel: nur als ursachen_offen."
+    },
+    {
+      "nr": 3,
+      "ursachen": [
+        4303
+      ],
+      "text": "Zu 3 gehören Maßnahmen gegen den Einsatz von KI bei Betrug und Täuschung, etwa Strafbarkeit von Deepfakes und Stimmklonen, Löschpflichten und Haftung von Plattformen sowie Regeln für Anbieter offener Modelle. Nicht dazu: allgemeiner Online-Betrug ohne KI-Bezug (906), Hasskommentare (25, 2501, 2502). Grenzfall: Warnungen vor Betrugsmaschen ohne KI-Bezug: nur als ursachen_offen."
+    }
+  ],
+  "instrumente": [],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "bund",
+      "beschreibung": "KI-Bürgerassistenten einführen, der Bürgerinnen und Bürger bei digitalen Behördengängen unterstützt",
+      "zitat": "Außerdem wollen wir einen KI-Bürgerassistenten einführen, der Bürgerinnen und Bürger bei digitalen Behördengängen unterstützt.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4301
+      ],
+      "pruefsumme": "4bf56b90149ed915"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "bund",
+      "beschreibung": "Sicherheitsbehörden digitale Befugnisse geben, einschließlich automatischer Datenanalyse mittels KI",
+      "zitat": "Wir schaffen digitale Befugnisse wie Quellen-Telekommunikationsüberwachung, Online-Durchsuchung und automatische Datenanalyse mittels KI für alle Bundessicherheitsbehörden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4303
+      ],
+      "pruefsumme": "dde8f4a2541efcac"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "bund",
+      "beschreibung": "Europäische Plattform- und KI-Regeln durchsetzen und Plattformen zum Vorgehen gegen illegale Inhalte verpflichten.",
+      "zitat": "Es gilt die europäischen Regelungen (DMA, DSA, KI-Verordnung) durchzusetzen und die Plattformen zu zwingen, gegen illegale Inhalte vorzugehen",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4303
+      ],
+      "pruefsumme": "c2dacc62bab928bd"
+    },
+    {
+      "kennung": "M04",
+      "ebene": "bund",
+      "beschreibung": "Gesetzliche Rahmenbedingungen schaffen, die den KI-Einsatz etwa in Medizintechnik und Verkehrswesen ermöglichen",
+      "zitat": "KI-Systeme stellen einen großen Wachstumsmarkt dar; von diesen können und wollen wir uns in Deutschland nicht abkoppeln. Deshalb sind effektive gesetzliche Rahmenbedingungen notwendig, die den Einsatz zum Beispiel in Medizintechnik und Verkehrswesen ermöglichen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4301
+      ],
+      "pruefsumme": "7c4326d8f7f00dba"
+    },
+    {
+      "kennung": "M05",
+      "ebene": "bund",
+      "beschreibung": "KI-erzeugte Medieninhalte kennzeichnen; Plattformen haften für Falschinformationen und Rechtsverstöße solcher Inhalte",
+      "zitat": "Durch Künstliche Intelligenz erzeugte Medieninhalte müssen gekennzeichnet werden, Plattformen haften bei Falschinformationen und Rechtsverstößen durch solche Inhalte.",
+      "ursachen_ids": [
+        4303
+      ],
+      "pruefsumme": "5a50441b64a3a9a6"
+    },
+    {
+      "kennung": "M06",
+      "ebene": "bund",
+      "beschreibung": "Bot-Kennzeichnungspflicht aus der KI-Verordnung strikt durchsetzen.",
+      "zitat": "Wir wollen außerdem eine strikte Durchsetzung der Bot-Kennzeichnungspflicht aus der KI-Verordnung",
+      "ursachen_ids": [
+        4303
+      ],
+      "pruefsumme": "47cd04f5c4b1340e"
+    },
+    {
+      "kennung": "M07",
+      "ebene": "bund",
+      "beschreibung": "Kriminalpolizei und Staatsanwaltschaft so ausstatten, dass sie KI-gestützte Manipulation verfolgen können",
+      "zitat": "Stattdessen müssen Kriminalpolizei und Staatsanwaltschaft in die Lage versetzt werden, mit der dynamischen Entwicklung von Kriminalität Schritt zu halten: von der Wirtschaftskriminalität über Cyber-Attacken hin zu Manipulation mithilfe von KI und Algorithmen in sozialen Medien.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4303
+      ],
+      "pruefsumme": "814b909a6b4215b1"
+    },
+    {
+      "kennung": "M08",
+      "ebene": "bund",
+      "beschreibung": "Lehramtsstudium mit stärkerem Fokus auf KI-Kompetenzen ausrichten",
+      "zitat": "Die Lehrausbildung wollen wir bundesweit zu einem dualen Lehramtsstudium weiterentwickeln, das Theorie und Praxis eng miteinander verzahnt und einen stärkeren Fokus auf digitale und KI-Kompetenzen legt.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4302
+      ],
+      "pruefsumme": "1c84cd7a1ed456d5"
+    },
+    {
+      "kennung": "M09",
+      "ebene": "bund",
+      "beschreibung": "Verwaltungsprozesse mit Automatisierung und KI beschleunigen; dadurch sollen Beschäftigte entlastet werden.",
+      "zitat": "Wir nutzen Automatisierung und Künstliche Intelligenz, um Verwaltungsprozesse zu beschleunigen und effizienter zu gestalten. So entlasten wir die Beschäftigten und verbessern den Service für die Bürgerinnen und Bürger.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4301
+      ],
+      "pruefsumme": "05fdf3080f7e15e9"
+    },
+    {
+      "kennung": "M10",
+      "ebene": "bund",
+      "beschreibung": "KI-Entwicklung und -Anwendung gezielt fördern und digitale Kompetenzen in Unternehmen und Hochschulen stärken.",
+      "zitat": "Wir haben eine große Kompetenz in Künstlicher Intelligenz (KI), müssen diese aber stärker in die Praxis bringen. Dazu wollen wir die Entwicklung und Anwendung von KI, die Etablierung robuster Cybersicherheitsstandards sowie die Stärkung digitaler Kompetenzen in Unternehmen und Hochschulen – etwa durch eine Weiterentwicklung der Mittelstandsdigitalzentren – gezielt fördern",
+      "ursachen_ids": [
+        4301
+      ],
+      "ursachen_offen": [
+        4302
+      ],
+      "pruefsumme": "939d4cdf930e0a58"
+    },
+    {
+      "kennung": "M11",
+      "ebene": "bund",
+      "beschreibung": "EU-Gesetze zu KI und digitalen Diensten zügig in nationales Recht überführen",
+      "zitat": "Die EU-Gesetze über Künstliche Intelligenz (AI Act) und über digitale Dienste (Digital Services Act) müssen zügig in nationales Recht überführt und perspektivisch weiterentwickelt werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4303
+      ],
+      "pruefsumme": "fc776283d38f5902"
+    },
+    {
+      "kennung": "M12",
+      "ebene": "bund",
+      "beschreibung": "Dafür sorgen, dass KI-generierte Inhalte klar erkennbar sind.",
+      "zitat": "Zudem sorgen wir dafür, dass KI-generierte Inhalte klar erkennbar sind.",
+      "ursachen_ids": [
+        4303
+      ],
+      "pruefsumme": "45ea96db3eed94b6"
+    },
+    {
+      "kennung": "M13",
+      "ebene": "bund",
+      "beschreibung": "Verbreitung von Nacktbildern gegen den Willen Betroffener, auch KI-generierter, grundsätzlich strafbar machen.",
+      "zitat": "Bei der Umsetzung der EU-Richtlinie zur Bekämpfung von Gewalt gegen Frauen setzen wir uns dafür ein, dass die Verbreitung von KI-generierten oder echten Nacktbildern gegen den Willen der Betroffenen grundsätzlich eine Straftat darstellt.",
+      "ursachen_ids": [
+        4303
+      ],
+      "pruefsumme": "00cc3622b51e8952"
+    },
+    {
+      "kennung": "M14",
+      "ebene": "bund",
+      "beschreibung": "Betriebsräte bei der Einführung von Künstlicher Intelligenz mit echtem Mitbestimmungsrecht ausstatten (Einigungserfordernis).",
+      "zitat": "Wir reformieren das Betriebsverfassungsgesetz und werden die Mitbestimmung der Betriebsräte bei strategischer Personalplanung und -bemessung, bei der Einführung von Künstlicher Intelligenz sowie bei Gesundheitsschutz und Weiterbildung im Betrieb zu echten Mitbestimmungsrechten mit Einigungserfordernis ausbauen.",
+      "ursachen_ids": [
+        4301
+      ],
+      "pruefsumme": "64dca50f51473e4e"
+    },
+    {
+      "kennung": "M15",
+      "ebene": "bund",
+      "beschreibung": "EU-Regulierung von KI ablehnen und praxisnahe nationale Lösungen gegen KI-Risiken fordern",
+      "zitat": "Gleichzeitig kann KI aber auch ein Risiko speziell für Kritische Infrastruktur, Verkehrstechnik und bürgerliche Freiheiten darstellen. Die zentralistische Regulierung dieser Themen durch die EU, wie durch den Cybersecurity Act, Ethik-Leitlinien für KI und den Artificial Intelligence Act, lehnt [Partei] ab und fordert praxisnahe, nationale Lösungen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4303
+      ],
+      "pruefsumme": "6972db19605bd22e"
+    },
+    {
+      "kennung": "M16",
+      "ebene": "bund",
+      "beschreibung": "KI-Wissen als Teil der beruflichen Ausbildung verankern",
+      "zitat": "Politische Bildung, Medienkompetenz und KI-Wissen sollen Teil der beruflichen Ausbildung sein.",
+      "ursachen_ids": [
+        4302
+      ],
+      "pruefsumme": "3cd43e8307b99fa5"
+    },
+    {
+      "kennung": "M17",
+      "ebene": "bund",
+      "beschreibung": "Lernsoftware nicht als Ersatz für Lehrpersonal einsetzen; KI nicht zur Bewertung von Lernerfolgen nutzen",
+      "zitat": "Lernsoftware darf nicht als Ersatz für Lehrpersonal eingesetzt werden. KI darf nicht für die Bewertung oder die Vorhersage von Lernerfolgen genutzt werden.",
+      "ursachen_ids": [
+        4301
+      ],
+      "pruefsumme": "399e79d04183bf4e"
+    },
+    {
+      "kennung": "M18",
+      "ebene": "bund",
+      "beschreibung": "Verwaltung mit KI effizient und vollständig digitalisiert aufbauen, auch für Bescheide bei eindeutigen Sachverhalten",
+      "zitat": "Mit dem Einsatz von KI bauen wir in Deutschland eine effiziente, vollständig digitalisierte Verwaltung für Bürger und Unternehmen auf",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4301
+      ],
+      "pruefsumme": "93a54e800972b34b"
+    },
+    {
+      "kennung": "M19",
+      "ebene": "bund",
+      "beschreibung": "EU-KI-Verordnung innovationsoffen umsetzen, keine Übererfüllung, KI-Forschung fördern und beschleunigen",
+      "zitat": "Die Verordnung der EU („AI Act“) muss verantwortungsvoll, bürokratiearm und innovationsoffen umgesetzt und weiterentwickelt werden. Eine Übererfüllung lehnen wir strikt ab. Wir fördern und beschleunigen KI-Forschung, unterstützen die Entwicklung von Anwendungen und ermöglichen Freiräume.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4303
+      ],
+      "pruefsumme": "5c44b2a5b854a98d"
+    },
+    {
+      "kennung": "M20",
+      "ebene": "bund",
+      "beschreibung": "Chancen von KI in der Justiz ausloten, ohne dass KI richterliche Entscheidungen ersetzt",
+      "zitat": "Dazu gehört auch, dass die Chancen der Künstlichen Intelligenz (KI) in der Justiz genutzt werden. Diese wollen wir konsequent ausloten, ohne dass KI richterliche Entscheidungen ersetzt.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4301
+      ],
+      "pruefsumme": "ed7b7f4bb643383f"
+    },
+    {
+      "kennung": "M21",
+      "ebene": "bund",
+      "beschreibung": "Förderung von Open-Source-Software und frei verfügbaren KI-Modellen für Wissenschaft, Bildung, Kultur und Verwaltung",
+      "zitat": "Fördern wollen wir die Entwicklung und den Einsatz von Open-Source-Software sowie frei verfügbarer KI-Modelle für Anwendungen in Wissenschaft, Bildung, Kultur und öffentlicher Verwaltung.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4303
+      ],
+      "pruefsumme": "92adfaab175e75f5"
+    },
+    {
+      "kennung": "M22",
+      "ebene": "bund",
+      "beschreibung": "KI-basierte Auswertung von Bestandsdaten durch Sicherheitsbehörden nur bei schwersten Straftaten zulassen",
+      "zitat": "Ermächtigungsgrundlagen mit besonders hoher Eingriffstiefe – wie die KI-basierte Auswertung von Bestandsdaten oder der automatisierte Datenabgleich – sind nur da erforderlich, wo unsere Gesellschaft vor extremistischen, terroristischen oder anderen schwersten Straftaten geschützt werden muss.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4303
+      ],
+      "pruefsumme": "ef6a570731b5add2"
+    }
+  ],
+  "teilbewertung": {
+    "vorherige_pruefsumme": "d002a9667eca7ecdd785c7136373aea2d4a1f71f207b1782c35dd8e662089c22",
+    "zu_bewerten": [
+      "M21",
+      "M22"
+    ],
+    "bisher": {
+      "neue_instrumente": [
+        {
+          "kennung": "I1",
+          "name": "Kennzeichnungspflicht für KI-Inhalte und Bots durchsetzen (Bund)",
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "begruendung": "Kennzeichnung senkt in Experimenten die Glaubwürdigkeit markierter Inhalte etwas, trifft aber auch wahre Inhalte; Kriminelle umgehen Kennzeichnungen leicht. Die Pflicht besteht schon (KI-Verordnung), Aufsicht ist national.",
+          "evidenz": "gemischt",
+          "beleg_studie_url": "https://academic.oup.com/pnasnexus/article/3/10/pgae403/7795946"
+        },
+        {
+          "kennung": "I2",
+          "name": "EU-Regeln zu KI und Plattformen national umsetzen und durchsetzen (Bund)",
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "begruendung": "Aufsicht nach KI-Verordnung und DSA kann Täuschung und illegale Inhalte eindämmen; die Zusage bleibt allgemein und die Wirkung auf KI-gestützte Kriminalität ist kaum untersucht.",
+          "evidenz": "offen"
+        }
+      ],
+      "zuordnung": [
+        {
+          "kennung": "M01",
+          "ursachen": []
+        },
+        {
+          "kennung": "M02",
+          "ursachen": []
+        },
+        {
+          "kennung": "M03",
+          "instrument": "I2",
+          "ursachen": [
+            4303
+          ]
+        },
+        {
+          "kennung": "M04",
+          "ursachen": []
+        },
+        {
+          "kennung": "M05",
+          "einzeln": {
+            "wirksamkeit": 2,
+            "umsetzbarkeit": 1,
+            "begruendung": "Haftung schafft Anreiz zur Entfernung täuschender KI-Inhalte, Kennzeichnung wirkt nur begrenzt; Plattformhaftung ist im DSA EU-weit geregelt, eine nationale Verschärfung kaum möglich.",
+            "evidenz": "gemischt",
+            "beleg_studie_url": "https://academic.oup.com/pnasnexus/article/3/10/pgae403/7795946"
+          },
+          "ursachen": [
+            4303
+          ]
+        },
+        {
+          "kennung": "M06",
+          "instrument": "I1",
+          "ursachen": [
+            4303
+          ]
+        },
+        {
+          "kennung": "M07",
+          "einzeln": {
+            "wirksamkeit": 2,
+            "umsetzbarkeit": 2,
+            "begruendung": "Bessere Ausstattung erhöht die Chance, KI-gestützte Taten aufzuklären; konkrete Mittel fehlen, und Polizei und Justiz liegen großteils bei den Ländern. Wirkung auf diese Taten kaum untersucht.",
+            "evidenz": "offen"
+          },
+          "ursachen": [
+            4303
+          ]
+        },
+        {
+          "kennung": "M08",
+          "ursachen": []
+        },
+        {
+          "kennung": "M09",
+          "ursachen": []
+        },
+        {
+          "kennung": "M10",
+          "einzeln": {
+            "wirksamkeit": 1,
+            "umsetzbarkeit": 3,
+            "begruendung": "Mittelstandsdigitalzentren werden schon vom Bund gefördert und können KI-Kompetenz in kleinen Betrieben stärken; die Zusage ist unbestimmt und erreicht Beschäftigte ohne Abschluss kaum gezielt.",
+            "evidenz": "offen"
+          },
+          "ursachen": [
+            4302
+          ]
+        },
+        {
+          "kennung": "M11",
+          "instrument": "I2",
+          "ursachen": [
+            4303
+          ]
+        },
+        {
+          "kennung": "M12",
+          "instrument": "I1",
+          "ursachen": [
+            4303
+          ]
+        },
+        {
+          "kennung": "M13",
+          "einzeln": {
+            "wirksamkeit": 2,
+            "umsetzbarkeit": 3,
+            "begruendung": "Schließt eine Strafbarkeitslücke bei Deepfake-Nacktbildern, umsetzbar mit der EU-Richtlinie; ob Strafdrohung allein abschreckt, ist kaum untersucht, die Verfolgung im Netz bleibt schwierig.",
+            "evidenz": "offen"
+          },
+          "ursachen": [
+            4303
+          ]
+        },
+        {
+          "kennung": "M14",
+          "einzeln": {
+            "wirksamkeit": 2,
+            "umsetzbarkeit": 3,
+            "begruendung": "Betriebsräte senken bei Automatisierung das Jobverlustrisiko und erhöhen Weiterbildung, ohne Einführung zu bremsen; wirkt nur in Betrieben mit Betriebsrat. Änderung des BetrVG liegt beim Bund.",
+            "evidenz": "belegt",
+            "beleg_studie_url": "https://www.zew.de/PU89075"
+          },
+          "ursachen": [
+            4301
+          ]
+        },
+        {
+          "kennung": "M15",
+          "ursachen": []
+        },
+        {
+          "kennung": "M16",
+          "einzeln": {
+            "wirksamkeit": 2,
+            "umsetzbarkeit": 2,
+            "begruendung": "Verankerung in Ausbildungsordnungen erreicht viele Beschäftigte ohne Hochschulabschluss früh; bereits Beschäftigte erreicht sie nicht, Berufsschulen sind Ländersache. Wirkung kaum evaluiert.",
+            "evidenz": "offen"
+          },
+          "ursachen": [
+            4302
+          ]
+        },
+        {
+          "kennung": "M17",
+          "einzeln": {
+            "wirksamkeit": 1,
+            "umsetzbarkeit": 1,
+            "begruendung": "Schützt Lehrkräfte vor Ersatz durch Software, betrifft aber nur einen Beruf; Schulen liegen in Länderzuständigkeit, der Bund kann das nicht regeln.",
+            "evidenz": "offen"
+          },
+          "ursachen": [
+            4301
+          ]
+        },
+        {
+          "kennung": "M18",
+          "ursachen": []
+        },
+        {
+          "kennung": "M19",
+          "ursachen": []
+        },
+        {
+          "kennung": "M20",
+          "ursachen": []
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "blind_pruefsumme": "69213ece1e8b18159e8cf92e0fd1de3ad7bb597f33aeb233ebd114a65960384a",
+  "neue_instrumente": [],
+  "zuordnung": [
+    { "kennung": "M83", "instrument": "I3", "ursachen": [4201] },
+    { "kennung": "M84", "ursachen": [] },
+    { "kennung": "M85", "ursachen": [] },
+    { "kennung": "M86", "ursachen": [] },
+    { "kennung": "M87", "ursachen": [] },
+    { "kennung": "M88", "instrument": "I13", "ursachen": [4203] },
+    { "kennung": "M89", "ursachen": [] },
+    { "kennung": "M90", "ursachen": [] },
+    { "kennung": "M91", "instrument": "I10", "ursachen": [4203] },
+    { "kennung": "M92", "instrument": "I6", "ursachen": [4202] },
+    { "kennung": "M93", "ursachen": [] },
+    { "kennung": "M94", "ursachen": [] },
+    { "kennung": "M95", "instrument": "I2", "ursachen": [4201] },
+    { "kennung": "M96", "einzeln": { "wirksamkeit": 0, "umsetzbarkeit": 2, "begruendung": "Entlastet Ersterwerber laut IW deutlich, senkt aber das Aufkommen einer vermögensbezogenen Steuer und verstärkt so das Gewicht von Lohn- und Umsatzsteuer. Aufkommen und Satzhoheit liegen bei den Ländern, Ausgleich nötig.", "evidenz": "belegt", "beleg_studie_url": "https://www.iwkoeln.de/studien/gutachten/beitrag/tobias-hentze-bjoern-seipelt-michael-voigtlaender-reform-der-grunderwerbsteuer-325128.html" }, "ursachen": [4203] },
+    { "kennung": "M97", "ursachen": [] },
+    { "kennung": "M98", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Kann Lizenzkosten senken; München meldete Einsparungen in Millionenhöhe. Dagegen: Umstellung kostet zunächst, München kehrte zu Windows zurück, Einsparungen gemessen am Bundesdefizit gering.", "evidenz": "gemischt", "beleg_studie_url": "https://www.computerworld.com/article/1398642/switch-to-open-source-successfully-completed-city-of-munich-says.html" }, "ursachen": [4202] },
+    { "kennung": "M99", "ursachen": [] },
+    { "kennung": "M100", "einzeln": { "wirksamkeit": 0, "umsetzbarkeit": 1, "begruendung": "Bremst Mehrbelastungen bei der Grundsteuer, senkt aber das Aufkommen einer vermögensbezogenen Steuer. Hebesätze legen Kommunen fest, Länder haben Abweichungsrecht; der Bund kann kaum allein handeln.", "evidenz": "offen" }, "ursachen": [4203] },
+    { "kennung": "M101", "instrument": "I11", "ursachen": [4203] },
+    { "kennung": "M102", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Weniger externe Berater und mehr Transparenz können Ausgaben senken. Dagegen: Einsparvolumen gemessen am Defizit gering, eigenes Fachpersonal muss teils erst aufgebaut werden.", "evidenz": "offen" }, "ursachen": [4202] },
+    { "kennung": "M103", "ursachen": [] },
+    { "kennung": "M104", "ursachen": [] },
+    { "kennung": "M105", "ursachen": [] },
+    { "kennung": "M106", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Senkt die Steuerlast für die große Mehrheit der Beschäftigten. Dagegen: Umfang und Tarifverlauf unbestimmt, keine dauerhafte Inflationsanpassung, Finanzierung offen.", "evidenz": "gemischt" }, "ursachen": [4201] },
+    { "kennung": "M107", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 2, "begruendung": "Bundesrechnungshof: wegen schwacher Verträge konnte die Bundeswehr Mehrkosten nicht dem Auftragnehmer anlasten. Dagegen: Hersteller preisen Risiken ein, wenige Anbieter, Wirkung erst bei neuen Verträgen.", "evidenz": "offen", "beleg_studie_url": "https://vergabeblog.de/2018-04-25/bundesrechnungshof-ruegt-unwirtschaftliches-verhalten-in-den-bereichen-gesundheit-steuern-bundeswehr-und-strassenbau/" }, "ursachen": [4202] },
+    { "kennung": "M108", "ursachen": [] }
+  ]
+}
+
+Nicht bestätigte vorgeschlagene Ursachen:
+- M86 (4201): Steuerbefreiung von Renten bis 2000 Euro ist eine Sonderbefreiung für Rentner, kein Tarif- oder Inflationsausgleich; Ziel des Themas betrifft Beschäftigte.
+- M103 (4202): Zitat sieht Umschichtung von Stellen vor („dafür dort aufbauen“), keine Einsparung.
+- M105 (4203): Aktienrückkaufsteuer soll laut Text die Praxis unterbinden (Lenkung), nicht Einnahmen verschieben.
+- M88, M91, M101: 4202 (offen) nicht bestätigt, wie bei M14/M25, M31/M39, M35/M47 bisher.
+
+Offene entschieden: M96 und M100 auf 4203 (Grunderwerb- und Grundsteuer sind vermögensbezogen, analog M43/M11; Senkung daher Wirksamkeit 0 wie I12). M98 (ids), M102, M107 auf 4202 (Ausgabeneffizienz, nicht Ausgabenschub). Abgelehnt: M84, M85, M89, M62-analog (Unternehmens-/Kapitaleinkommensteuer, keine vermögensbezogene Steuer, bisher ebenso); M87, M93, M99 (Satz einzelner Steuern, wie M04/M08/M50); M90 (Militärausgaben, wie M32/M69); M94 (Fonds, wie M34); M97 (Kommunen, wie M15/M67); M104 (Kinderfreibetrag, wie M36); M108 (anderes Thema).
+
+Schwierig: M106 einzeln statt I4, weil der Text keine Gegenfinanzierung durch höhere Belastung oben nennt und unbestimmt bleibt; M86 Grenzfall (nominal fixer Rentenfreibetrag wirkt ähnlich wie kalte Progression bei Rentnern). Hinweis zu bisher: I5 (Schuldenbremse einhalten, W2) vs. M22 identisch – konsistent; keine Einwände.

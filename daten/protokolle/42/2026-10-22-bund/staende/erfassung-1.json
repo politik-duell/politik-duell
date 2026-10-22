@@ -1,0 +1,1439 @@
+{
+  "thema_id": 42,
+  "programme": [
+    {
+      "partei_id": 11,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Einkommensteuertarif schrittweise senken, Grundfreibetrag erhöhen, Grenze für den Spitzensteuersatz anheben",
+          "ursachen_ids": [
+            4201
+          ],
+          "buendel": "Entlastung über Grundfreibetrag",
+          "zitat": "Dazu flachen wir den Einkommensteuertarif schrittweise spürbar ab und erhöhen den «Grundfreibetrag». Die Einkommensgrenze für den Spitzensteuersatz erhöhen wir deutlich.",
+          "seite": 14
+        },
+        {
+          "beschreibung": "Einkommensteuertarif regelmäßig an die Inflation anpassen, um die kalte Progression auszugleichen",
+          "ursachen_ids": [
+            4201
+          ],
+          "buendel": "Tarif an Inflation anpassen",
+          "zitat": "Deshalb passen wir den Einkommensteuertarif regelmäßig an die Inflation an und gleichen so die kalte Progression aus.",
+          "seite": 14
+        },
+        {
+          "beschreibung": "Kindergeld anheben und künftig automatisch nach der Geburt auszahlen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4201
+          ],
+          "zitat": "Entsprechend heben wir auch das Kindergeld an, das künftig nach der Geburt automatisch ausgezahlt werden soll.",
+          "seite": 63
+        },
+        {
+          "beschreibung": "Umsatzsteuer auf Speisen in der Gastronomie auf sieben Prozent senken",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4203
+          ],
+          "buendel": "Konsum belasten oder entlasten",
+          "zitat": "Wir reduzieren die Umsatzsteuer auf Speisen in der Gastronomie auf sieben Prozent.",
+          "seite": 16
+        },
+        {
+          "beschreibung": "Unternehmensbesteuerung auf höchstens 25 Prozent auf einbehaltene Gewinne begrenzen, schrittweise, durch Senken der Tarifbelastung",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4203
+          ],
+          "buendel": "Unternehmen und Kapital entlasten",
+          "zitat": "Unser Ziel ist eine attraktive Unternehmensbesteuerung von maximal 25 Prozent auf einbehaltene Gewinne, die wir schrittweise umsetzen wollen. Dazu senken wir insbesondere die Tarifbelastung und verbessern wesentlich das Optionsmodell und die Thesaurierungsbegünstigung.",
+          "seite": 16
+        },
+        {
+          "beschreibung": "Solidaritätszuschlag abschaffen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4203
+          ],
+          "zitat": "Wir schaffen den restlichen Solidaritätszuschlag ab.",
+          "seite": 16
+        },
+        {
+          "beschreibung": "Freibeträge bei der Erbschaftsteuer deutlich erhöhen",
+          "ursachen_ids": [
+            4203
+          ],
+          "buendel": "Vermögen und Erbschaften stärker besteuern",
+          "zitat": "Wir erhöhen die Freibeträge bei der Erbschaftsteuer deutlich. So kann das Eigenheim in höherem Maße steuerfrei vererbt werden.",
+          "seite": 34
+        },
+        {
+          "beschreibung": "Kassensturz beim Bund, alle Ausgaben und Subventionen hinterfragen, Ausgaben die ihr Ziel verfehlen entfallen lassen",
+          "ursachen_ids": [
+            4202
+          ],
+          "buendel": "Ausgaben senken",
+          "zitat": "Unmittelbar zu Beginn der neuen Wahlperiode machen wir einen ehrlichen Kassensturz und hinterfragen alle Ausgaben, insbesondere die Subventionen. […] Ausgaben, die ihr Ziel verfehlen, müssen entfallen.",
+          "seite": 77
+        },
+        {
+          "beschreibung": "Maastricht-Kriterien (Schuldenstand, Defizit) verbindlich halten, Verstöße über automatisiertes Defizitverfahren sanktionieren",
+          "ursachen_ids": [
+            4202
+          ],
+          "buendel": "Neuverschuldung zulassen",
+          "zitat": "Dabei müssen die Maastricht-Kriterien, insbesondere die Schuldenstandsquote von 60 Prozent und das jährliche Defizit-Kriterium von drei Prozent des Bruttoinlandsproduktes, weiterhin verbindlich bleiben. Verstöße müssen mit einem automatisierten Defizitverfahren sanktioniert werden.",
+          "seite": 78
+        },
+        {
+          "beschreibung": "Verteidigungsausgaben mindestens auf dem NATO-Zwei-Prozent-Ziel halten",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4202
+          ],
+          "zitat": "Wir halten die NATO-Verpflichtungen für die Finanzierung unserer Verteidigung verlässlich und dauerhaft ein. Wir verstehen das aktuelle Zwei-Prozent-Ziel der NATO als Untergrenze unserer Verteidigungsausgaben, um eine vollständig einsatzbereite Bundeswehr mit einer personellen und materiellen Vollausstattung zu ermöglichen.",
+          "seite": 52
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 4201,
+          "name": "Kindergeld erhöhen",
+          "seite": 63
+        },
+        {
+          "ursache": 4203,
+          "name": "Solidaritätszuschlag abschaffen",
+          "seite": 16
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Einkommensteuertarif so entlasten, dass die große Mehrheit der Steuerpflichtigen profitiert; Spitzeneinkommen und -vermögen stärker beteiligen.",
+          "ursachen_ids": [
+            4201,
+            4203
+          ],
+          "zitat": "Der Einkommensteuertarif nimmt derzeit gerade mittlere Einkommen relativ stark in Anspruch. Wir wollen die große Mehrheit der Einkommensteuerpflichtigen entlasten (etwa 95 Prozent) und dafür unter anderem Spitzeneinkommen und -vermögen stärker an der Finanzierung des Gemeinwohls und der Modernisierung unseres Landes beteiligen.",
+          "seite": 23
+        },
+        {
+          "beschreibung": "Besteuerung von Familien reformieren, gerechtere Verteilung der Steuerlast bei Paarfamilien erreichen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4201
+          ],
+          "zitat": "Wir wollen die Besteuerung von Familien unter Berücksichtigung bereits getroffener Lebensentscheidungen reformieren, für Paarfamilien eine gerechtere Verteilung der Steuerlast erreichen und Partnerschaftlichkeit fördern.",
+          "seite": 27
+        },
+        {
+          "beschreibung": "Schuldenregel im Grundgesetz reformieren, damit Investitionen nicht behindert werden; mehr Kreditspielraum.",
+          "ursachen_ids": [
+            4202
+          ],
+          "zitat": "Die aktuelle Schuldenregel ist nicht auf die Herausforderungen unserer Zeit und der Zukunft ausgelegt. Deshalb wollen wir die Schuldenregel im Grundgesetz so reformieren, dass Investitionen in die Zukunftsfähigkeit unseres Landes und in den Wohlstand nicht behindert werden.",
+          "seite": 17
+        },
+        {
+          "beschreibung": "Vermögensteuer für sehr hohe Vermögen wieder einführen und so Einnahmen erhöhen.",
+          "ursachen_ids": [
+            4202,
+            4203
+          ],
+          "zitat": "Die ausgesetzte Vermögensteuer wollen wir für sehr hohe Vermögen revitalisieren.",
+          "seite": 19
+        },
+        {
+          "beschreibung": "Mindestbesteuerung für große Betriebsvermögen bei Erbschaften und Schenkungen einführen.",
+          "ursachen_ids": [
+            4203
+          ],
+          "zitat": "Innerhalb des bestehenden progressiven Steuertarifs führen wir eine effektive Mindestbesteuerung für große Betriebsvermögen ein, die auch für vermögenshaltende Familienstiftungen gilt.",
+          "seite": 19
+        },
+        {
+          "beschreibung": "Finanztransaktionssteuer einführen, weil Finanztransaktionen bisher nicht besteuert werden.",
+          "ursachen_ids": [
+            4203
+          ],
+          "zitat": "Anders als an den Finanzplätzen Paris oder Mailand, werden Finanztransaktionen in Deutschland bisher nicht besteuert. Daher wollen wir eine Finanztransaktionssteuer einführen.",
+          "seite": 19
+        },
+        {
+          "beschreibung": "Ermäßigten Mehrwertsteuersatz für Lebensmittel von sieben auf fünf Prozent senken.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4203
+          ],
+          "zitat": "In Zeiten steigender Preise gerade für die Lebensmittel des täglichen Bedarfs wollen wir den ermäßigten Mehrwertsteuersatz für Lebensmittel von sieben Prozent auf fünf Prozent senken.",
+          "seite": 24
+        },
+        {
+          "beschreibung": "Investitionen in Maschinen und Geräte mit einer Steuererstattung von 10 Prozent der Anschaffungssumme fördern.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4203
+          ],
+          "zitat": "Jede Betriebs- bzw. Unternehmensinvestition in Maschinen und Geräte (aus den sogenannten Ausrüstungsinvestitionen) soll mit 10 Prozent der Anschaffungssumme direkt und unkompliziert über eine Steuererstattung gefördert werden.",
+          "seite": 8
+        },
+        {
+          "beschreibung": "Umsatzsteuerbetrug stärker zurückdrängen, um die Einnahmeseite zu stärken.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4203
+          ],
+          "zitat": "Wir benötigen überdies eine Stärkung der Staatseinnahmen durch ein gerechtes Steuersystem. Dazu gehört auch, Steuerhinterziehung und Finanzkriminalität weiter zu bekämpfen. So gilt es, Umsatzsteuerbetrug vor allem in bargeldintensiven Branchen weiter zurückzudrängen.",
+          "seite": 18
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 4202,
+          "name": "Neuverschuldung zulassen",
+          "seite": 17
+        },
+        {
+          "ursache": 4202,
+          "name": "Einnahmen durch Steuern erhöhen",
+          "seite": 19
+        },
+        {
+          "ursache": 4203,
+          "name": "Vermögen und Erbschaften stärker besteuern",
+          "seite": 19
+        },
+        {
+          "ursache": 4203,
+          "name": "Finanztransaktionssteuer",
+          "seite": 19
+        },
+        {
+          "ursache": 4203,
+          "name": "Unternehmen und Kapital entlasten",
+          "seite": 8
+        },
+        {
+          "ursache": 4203,
+          "name": "Konsum belasten oder entlasten",
+          "seite": 24
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Arbeitnehmerpauschbetrag in der Einkommensteuer auf mindestens 1.500 Euro anheben.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4201
+          ],
+          "buendel": "Entlastung über Grundfreibetrag",
+          "zitat": "Um die Erwerbstätigen bürokratisch und finanziell zu entlasten, werden wir die Arbeitnehmerpauschbeträge in der Einkommensteuererklärung anheben. Wir wollen eine Anhebung auf mindestens 1.500 Euro.",
+          "seite": 74
+        },
+        {
+          "beschreibung": "Solidaritätszuschlag in den Einkommensteuertarif integrieren.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4201
+          ],
+          "zitat": "Den Solidaritätszuschlag werden wir in den Einkommensteuertarif integrieren.",
+          "seite": 74
+        },
+        {
+          "beschreibung": "Steuergutschriften für niedrige Einkommen, Alleinerziehende und Aufstockende einführen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4201
+          ],
+          "zitat": "Um insbesondere niedrige Einkommen, Alleinerziehende und auch Menschen, die mit Bürgergeld aufstocken müssen, zielgenau und unbürokratisch zu entlasten, führen wir Steuergutschriften ein.",
+          "seite": 74
+        },
+        {
+          "beschreibung": "Für neue Ehen individuelle Besteuerung mit übertragbarem Grundfreibetrag statt Ehegattensplitting.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4201
+          ],
+          "zitat": "In der jetzigen Form stellt das Ehegattensplitting ein Erwerbshindernis für Frauen dar und ist weder gerecht noch zeitgemäß. Deshalb wollen wir es grundlegend geschlechtergerecht reformieren, indem wir für Neuehen eine individuelle Besteuerung mit übertragbarem Grundfreibetrag einführen.",
+          "seite": 20
+        },
+        {
+          "beschreibung": "Freibeträge für Kleinsparer erhöhen und dynamisch an die Inflation anpassen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4201
+          ],
+          "buendel": "Tarif an Inflation anpassen",
+          "zitat": "Dafür werden wir die Freibeträge für Kleinsparer*innen erhöhen, sie dynamisch an die Inflation anpassen",
+          "seite": 98
+        },
+        {
+          "beschreibung": "Schuldenbremse reformieren: Kredite in dem Umfang zulassen, wie der Staat investiert.",
+          "ursachen_ids": [
+            4202
+          ],
+          "buendel": "Neuverschuldung zulassen",
+          "zitat": "Um die notwendigen Investitionen in Infrastruktur, in die Dekarbonisierung unseres Landes und in eine starke, zukunftsfähige Wirtschaft zu finanzieren, wollen wir die Schuldenbremse im Einklang mit den europäischen Regeln reformieren. Die Aufnahme von staatlichen Krediten soll dazu in dem Umfang ermöglicht werden, wie vom Staat Investitionen getätigt werden.",
+          "seite": 36
+        },
+        {
+          "beschreibung": "Steuerschlupflöcher schließen, um den Haushalt zu entlasten.",
+          "ursachen_ids": [
+            4202
+          ],
+          "buendel": "Einnahmen durch Steuern erhöhen",
+          "zitat": "Wir wollen den Haushalt entlasten, indem wir Steuerschlupflöcher schließen […].",
+          "seite": 37
+        },
+        {
+          "beschreibung": "Klima- und umweltschädliche Subventionen abbauen.",
+          "ursachen_ids": [
+            4202
+          ],
+          "buendel": "Ausgaben senken",
+          "zitat": "Und wir wollen insbesondere klima- und umweltschädliche Subventionen abbauen.",
+          "seite": 37
+        },
+        {
+          "beschreibung": "Verwaltung durch weitere Digitalisierung verschlanken, um den Haushalt zu entlasten.",
+          "ursachen_ids": [
+            4202
+          ],
+          "zitat": "Wir wollen den Haushalt entlasten, indem […] die Verwaltung durch die weitere Digitalisierung verschlanken.",
+          "seite": 37
+        },
+        {
+          "beschreibung": "Deutschlandfonds für Bund, Länder und Kommunen errichten, der Investitionen ergänzt.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4202
+          ],
+          "zitat": "Wir werden deshalb einen Deutschlandfonds für Bund, Länder und Kommunen errichten.",
+          "seite": 36
+        },
+        {
+          "beschreibung": "Verteidigungsetat dauerhaft deutlich über 2 Prozent des Bruttoinlandsprodukts.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4202
+          ],
+          "zitat": "Dafür braucht es verlässliche Finanzierung mit einem Verteidigungsetat, der […] dauerhaft deutlich mehr als 2 Prozent des Bruttoinlandsprodukts in unsere Sicherheit und Verteidigungsfähigkeit investiert.",
+          "seite": 152
+        },
+        {
+          "beschreibung": "Erbschaftsteuer reformieren mit personenbezogenem Lebensfreibetrag und Ausnahmen für sehr große Erbschaften streichen.",
+          "ursachen_ids": [
+            4203
+          ],
+          "buendel": "Vermögen und Erbschaften stärker besteuern",
+          "zitat": "Deswegen fokussieren wir uns auf folgende Maßnahmen: eine Reform der Erbschaftssteuer hin zu einem Modell mit personenbezogenem Lebensfreibetrag, weitgehender Streichung bestehender Ausnahmen für außerordentlich große Erbschaften (selbst bewohntes Eigentum bleibt befreit) und großzügigen Stundungsregelungen",
+          "seite": 73
+        },
+        {
+          "beschreibung": "Befristete Investitionsprämie von 10 Prozent für Unternehmen, auf die Steuerschuld angerechnet.",
+          "ursachen_ids": [
+            4203
+          ],
+          "buendel": "Unternehmen und Kapital entlasten",
+          "zitat": "Wer in Deutschland investiert, soll es bei der Steuer leichter haben: Dazu führen wir eine auf fünf Jahre befristete, unbürokratische Investitionsprämie von 10 Prozent für alle Unternehmen und alle Investitionen mit Ausnahme der Gebäudeinvestitionen ein.",
+          "seite": 18
+        },
+        {
+          "beschreibung": "Stromsteuer auf das europäische Mindestmaß senken.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4203
+          ],
+          "buendel": "Konsum belasten oder entlasten",
+          "zitat": "Auch für die Wirtschaft ist die weitere Absenkung der Steuern und Abgaben auf Strom wichtig. Deshalb übernehmen wir die Netzentgelte für die überregionalen Stromleitungen aus dem Deutschlandfonds und senken die Stromsteuer auf das europäische Minimum.",
+          "seite": 17
+        },
+        {
+          "beschreibung": "Gewinne multinationaler Konzerne lokal besteuern.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4203
+          ],
+          "zitat": "Als weiteres Standbein setzen wir deshalb auf Einnahmen durch die lokale Besteuerung der Gewinne multinationaler Konzerne.",
+          "seite": 74
+        },
+        {
+          "beschreibung": "Gewerbesteuer-Dumping von Kommunen durch wirksame Maßnahmen eindämmen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4203
+          ],
+          "zitat": "«Gewerbesteuer»dumping von Kommunen werden wir durch wirksame Maßnahmen entgegentreten, unter Berücksichtigung des Hebesatzrechts der Kommunen.",
+          "seite": 74
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 4201,
+          "name": "Solidaritätszuschlag in Tarif integrieren",
+          "seite": 74
+        },
+        {
+          "ursache": 4201,
+          "name": "Steuergutschriften für niedrige Einkommen",
+          "seite": 74
+        },
+        {
+          "ursache": 4201,
+          "name": "Individuelle Besteuerung statt Ehegattensplitting",
+          "seite": 20
+        },
+        {
+          "ursache": 4202,
+          "name": "Verwaltung durch Digitalisierung verschlanken",
+          "seite": 37
+        },
+        {
+          "ursache": 4202,
+          "name": "Deutschlandfonds für Investitionen",
+          "seite": 36
+        },
+        {
+          "ursache": 4202,
+          "name": "Verteidigungsetat über 2 Prozent des BIP",
+          "seite": 152
+        },
+        {
+          "ursache": 4203,
+          "name": "Lokale Besteuerung der Gewinne multinationaler Konzerne",
+          "seite": 74
+        },
+        {
+          "ursache": 4203,
+          "name": "Gewerbesteuer-Dumping eindämmen",
+          "seite": 74
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "erbschaftssteuer",
+          "ursache": 4203,
+          "richtung": "Vermögen und Erbschaften stärker besteuern"
+        },
+        {
+          "begriff": "investitionsprämie",
+          "ursache": 4203,
+          "richtung": "Unternehmen und Kapital entlasten"
+        },
+        {
+          "begriff": "pauschbetrag",
+          "ursache": 4201,
+          "richtung": "Entlastung über Grundfreibetrag"
+        },
+        {
+          "begriff": "steuerschlupflöcher",
+          "ursache": 4202,
+          "richtung": "Einnahmen durch Steuern erhöhen"
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Einkommensteuer-Freibeträge und Eckwerte automatisch an die Preisentwicklung anpassen",
+          "ursachen_ids": [
+            4201
+          ],
+          "buendel": "Tarif an Inflation anpassen",
+          "zitat": "Damit der Staat nicht zum Profiteur von Inflation und der Steuerzahler nicht Opfer der Kalten Progression wird, wollen wir die Freibeträge und Eckwerte der Einkommensteuer automatisch an die allgemeine Preisentwicklung anpassen (Tarif auf Rädern).",
+          "seite": 14
+        },
+        {
+          "beschreibung": "Grundfreibetrag schrittweise um mindestens 1.000 Euro anheben",
+          "ursachen_ids": [
+            4201
+          ],
+          "buendel": "Entlastung über Grundfreibetrag",
+          "zitat": "Den Grundfreibetrag wollen wir im Zuge der Bürgergeldreform schrittweise um mindestens 1.000 Euro anheben.",
+          "seite": 14
+        },
+        {
+          "beschreibung": "Einkommensteuertarif als linear-progressiver Chancentarif, der den Mittelstandsbauch beseitigt",
+          "ursachen_ids": [
+            4201
+          ],
+          "zitat": "Dazu wollen wir stufenweise einen linear-progressiven Chancentarif in der Einkommensteuer einführen, der den Mittelstandsbauch vollständig beseitigt.",
+          "seite": 14
+        },
+        {
+          "beschreibung": "Spitzensteuersatz erst bei höherem Einkommen greifen lassen (Bindung an die Beitragsbemessungsgrenze)",
+          "ursachen_ids": [
+            4201
+          ],
+          "zitat": "Konkret fordern wir, dass sich der Spitzensteuersatz künftig an der aktuellen Beitragsbemessungsgrenze der Rentenversicherung orientiert.",
+          "seite": 14
+        },
+        {
+          "beschreibung": "Solidaritätszuschlag vollständig abschaffen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4201
+          ],
+          "zitat": "Darüber hinaus wollen wir den Solidaritätszuschlag vollständig abschaffen.",
+          "seite": 14
+        },
+        {
+          "beschreibung": "Zuschläge für Überstunden bei Vollzeitarbeit von der Lohnsteuer befreien",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4201
+          ],
+          "zitat": "Um zusätzliche Arbeitsanreize zu schaffen, wollen wir Zuschläge für Überstunden bei Vollzeitarbeit von der Lohnsteuer befreien.",
+          "seite": 14
+        },
+        {
+          "beschreibung": "Schuldenbremse im Grundgesetz einhalten",
+          "ursachen_ids": [
+            4202
+          ],
+          "buendel": "Neuverschuldung zulassen",
+          "zitat": "Freiheit für künftige Generationen bedeutet auch, ihnen keine Schuldenberge zu hinterlassen. Daher ist für uns Freie Demokraten die Einhaltung der im Grundgesetz verankerten Schuldenbremse zentrales Gebot der Generationengerechtigkeit.",
+          "seite": 35
+        },
+        {
+          "beschreibung": "Subventionen zurückfahren, bis Finanzhilfen und Steuerermäßigungen zur Wertschöpfung passen",
+          "ursachen_ids": [
+            4202
+          ],
+          "buendel": "Ausgaben senken",
+          "zitat": "Wir Freie Demokraten wollen Subventionen zurückfahren, damit Finanzhilfen und Steuerermäßigungen auf ein angemessenes Verhältnis zur wirtschaftlichen Wertschöpfung gebracht werden.",
+          "seite": 36
+        },
+        {
+          "beschreibung": "Bundesausgaben stärker auf die originären Aufgaben des Bundes beschränken",
+          "ursachen_ids": [
+            4202
+          ],
+          "zitat": "Wir Freie Demokraten wollen Ausgaben des Bundes grundsätzlich stärker auf die originären Aufgaben des Bundes beschränken.",
+          "seite": 36
+        },
+        {
+          "beschreibung": "Stellenzahl in der Bundesverwaltung außerhalb der Sicherheitsbehörden deutlich reduzieren",
+          "ursachen_ids": [
+            4202
+          ],
+          "zitat": "Die Stellenzahl in der Bundesverwaltung außerhalb der Sicherheitsbehörden wollen wir deutlich reduzieren.",
+          "seite": 37
+        },
+        {
+          "beschreibung": "Staatsbeteiligungen veräußern",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4202
+          ],
+          "zitat": "Wir Freie Demokraten wollen Staatsbeteiligungen veräußern, weil private Investoren die besseren Unternehmer sind.",
+          "seite": 36
+        },
+        {
+          "beschreibung": "Freibeträge der Erbschaft- und Schenkungsteuer automatisch an die Inflationsrate anpassen",
+          "ursachen_ids": [
+            4203
+          ],
+          "buendel": "Vermögen und Erbschaften stärker besteuern",
+          "zitat": "Die Existenz von Unternehmen darf nicht durch die Erbschaft- und Schenkungsteuer gefährdet sein. Wir fordern, dass die Freibeträge automatisch um die Inflationsrate erhöht werden.",
+          "seite": 15
+        },
+        {
+          "beschreibung": "Unternehmenssteuerbelastung auf unter 25 Prozent absenken",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4203
+          ],
+          "buendel": "Unternehmen und Kapital entlasten",
+          "zitat": "Wir fordern die Absenkung der Unternehmenssteuerbelastung auf unter 25 Prozent.",
+          "seite": 15
+        },
+        {
+          "beschreibung": "Gewerbesteuer durch eine international systemtaugliche Alternative ersetzen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4203
+          ],
+          "zitat": "Dazu wollen wir das deutsche Steuerrecht entbürokratisieren, die Gewerbesteuer durch eine international systemtaugliche Alternative ersetzen […].",
+          "seite": 15
+        },
+        {
+          "beschreibung": "Steuerfreies Aufstiegsvermögen mit übertragbarem und dynamisiertem Sparer-Freibetrag",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4203
+          ],
+          "zitat": "Deshalb fordern wir die Einführung eines steuerfreien Aufstiegsvermögens, indem die Sparer nicht ausgeschöpfte Sparer-Freibeträge auf die nachfolgenden Jahre übertragen können […].",
+          "seite": 16
+        },
+        {
+          "beschreibung": "Katalog der Umsätze zum ermäßigten Umsatzsteuersatz vereinfachen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4203
+          ],
+          "zitat": "Wir Freie Demokraten wollen den Katalog der Umsätze zum ermäßigten Steuersatz vereinfachen und entbürokratisieren.",
+          "seite": 15
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 4201,
+          "name": "Tarifverlauf der Einkommensteuer",
+          "seite": 14
+        },
+        {
+          "ursache": 4201,
+          "name": "Spitzensteuersatz-Schwelle",
+          "seite": 14
+        },
+        {
+          "ursache": 4201,
+          "name": "Solidaritätszuschlag abschaffen",
+          "seite": 14
+        },
+        {
+          "ursache": 4201,
+          "name": "Steuerfreiheit für Überstundenzuschläge",
+          "seite": 14
+        },
+        {
+          "ursache": 4202,
+          "name": "Bundesausgaben auf Kernaufgaben beschränken",
+          "seite": 36
+        },
+        {
+          "ursache": 4202,
+          "name": "Personalabbau in der Bundesverwaltung",
+          "seite": 37
+        },
+        {
+          "ursache": 4202,
+          "name": "Staatsbeteiligungen veräußern",
+          "seite": 36
+        },
+        {
+          "ursache": 4203,
+          "name": "Gewerbesteuer durch Alternative ersetzen",
+          "seite": 15
+        },
+        {
+          "ursache": 4203,
+          "name": "Steuerfreies Aufstiegsvermögen (Sparer-Freibetrag)",
+          "seite": 16
+        },
+        {
+          "ursache": 4203,
+          "name": "Vereinfachung des ermäßigten Umsatzsteuersatzes",
+          "seite": 15
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Einkommensteuer-Freibeträge an die Inflation koppeln (indexieren)",
+          "ursachen_ids": [
+            4201
+          ],
+          "buendel": "Tarif an Inflation anpassen",
+          "zitat": "Die Freibeträge sollen indexiert werden, um auch zukünftig heimliche Steuererhöhungen auszuschließen.",
+          "seite": 59
+        },
+        {
+          "beschreibung": "Einkommensteuer-Grundfreibetrag auf 15.000 Euro erhöhen",
+          "ursachen_ids": [
+            4201
+          ],
+          "buendel": "Entlastung über Grundfreibetrag",
+          "zitat": "Der einkommensteuerliche Grundfreibetrag soll auf 15.000 Euro erhöht werden, von der bisherigen Anlehnung an sozialhilferechtliche Regelungen wird Abstand genommen.",
+          "seite": 59
+        },
+        {
+          "beschreibung": "Solidaritätszuschlag für alle abschaffen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4201
+          ],
+          "zitat": "Mehr Netto vom Brutto schaffen wir durch: […] Abschaffung des Solidaritätszuschlags für alle",
+          "seite": 15
+        },
+        {
+          "beschreibung": "Einkommensteuertarif mit wenigen Stufen neu gestalten",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4201
+          ],
+          "zitat": "Die AfD wird das Steuerrecht durch einen geänderten Einkommensteuertarif mit wenigen Stufen vereinfachen.",
+          "seite": 57
+        },
+        {
+          "beschreibung": "Ehegattensplitting zum Familiensplitting ausweiten",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4201
+          ],
+          "zitat": "Als eine der wichtigsten Maßnahmen in Anlehnung an den Wortlaut des Grundgesetzes fordern wir eine Ausweitung des Ehegattensplittings auf das Familiensplitting.",
+          "seite": 60
+        },
+        {
+          "beschreibung": "Beitragszahlungen an die EU drastisch senken",
+          "ursachen_ids": [
+            4202
+          ],
+          "buendel": "Ausgaben senken",
+          "zitat": "Unter anderem sind die Beitragszahlungen von (2023) knapp 30 Milliarden Euro an die EU drastisch zu reduzieren.",
+          "seite": 55
+        },
+        {
+          "beschreibung": "Schuldenbremse einhalten, keine Aufweichung",
+          "ursachen_ids": [
+            4202
+          ],
+          "buendel": "Neuverschuldung zulassen",
+          "zitat": "Die im Grundgesetz festgeschriebene Schuldenbremse ist einzuhalten. Die AfD lehnt jedwede Aufweichung der Schuldenbremse entschieden ab.",
+          "seite": 55
+        },
+        {
+          "beschreibung": "Grundsteuer abschaffen und Kommunen über Zuschlag auf Einkommen- und Körperschaftsteuer entschädigen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4202
+          ],
+          "buendel": "Einnahmen durch Steuern erhöhen",
+          "zitat": "Die Kommunen werden durch einen Zuschlag auf die Einkommensteuer und die Körperschaftssteuer vollumfänglich entschädigt.",
+          "seite": 59
+        },
+        {
+          "beschreibung": "Erbschaftsteuer und Vermögensteuer abschaffen",
+          "ursachen_ids": [
+            4203
+          ],
+          "buendel": "Vermögen und Erbschaften stärker besteuern",
+          "zitat": "Die AfD will die derzeit zur Erhebung ausgesetzte Vermögensteuer sowie die Erbschaftssteuer abschaffen.",
+          "seite": 61
+        },
+        {
+          "beschreibung": "Mehrwertsteuer für Speisen und Getränke in der Gastronomie auf 7 % senken",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4203
+          ],
+          "buendel": "Konsum belasten oder entlasten",
+          "zitat": "Deshalb fordern wir einen einheitlichen Mehrwertsteuersatz für die Gastronomie von 7 %.",
+          "seite": 58
+        },
+        {
+          "beschreibung": "Unternehmenssteuern auf ein international konkurrenzfähiges Niveau senken",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4203
+          ],
+          "buendel": "Unternehmen und Kapital entlasten",
+          "zitat": "Mehr Netto vom Brutto schaffen wir durch: […] Senkung der Unternehmenssteuern auf ein international konkurrenzfähiges Niveau",
+          "seite": 15
+        },
+        {
+          "beschreibung": "CO₂-Abgaben ersatzlos abschaffen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4203
+          ],
+          "zitat": "Wir fordern eine ersatzlose Abschaffung der CO₂-Abgaben.",
+          "seite": 58
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 4201,
+          "name": "Solidaritätszuschlag abschaffen",
+          "seite": 15
+        },
+        {
+          "ursache": 4201,
+          "name": "Einkommensteuertarif vereinfachen",
+          "seite": 57
+        },
+        {
+          "ursache": 4201,
+          "name": "Familiensplitting",
+          "seite": 60
+        },
+        {
+          "ursache": 4203,
+          "name": "CO₂-Bepreisung und Emissionshandel",
+          "seite": 58
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "erbschaftssteuer",
+          "ursache": 4203,
+          "richtung": "Vermögen und Erbschaften stärker besteuern"
+        },
+        {
+          "begriff": "solidaritätszuschlag",
+          "ursache": 4201,
+          "richtung": "Solidaritätszuschlag abschaffen"
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Einkommen bis zu einer festen Grenze im Jahr steuerfrei stellen (Grundfreibetrag)",
+          "ursachen_ids": [
+            4201
+          ],
+          "buendel": "Entlastung über Grundfreibetrag",
+          "zitat": "Alle zu versteuernden Einkommen unter 16.800 Euro im Jahr bleiben steuerfrei – das entspricht der Höhe unseres Modells des Existenzminimums.",
+          "seite": 11
+        },
+        {
+          "beschreibung": "Einkommensteuertarif umgestalten: niedrige Einkommen weniger, hohe Einkommen stärker belasten",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4201
+          ],
+          "zitat": "Als Faustregel gilt: Wer (als Single, Steuerklasse I) weniger als 7.000 Euro im Monat brutto verdient, zahlt mit unserem Tarif weniger Steuern.",
+          "seite": 11
+        },
+        {
+          "beschreibung": "Ehegattensplitting durch eine Individualbesteuerung mit übertragbarem Grundfreibetrag ersetzen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4201
+          ],
+          "zitat": "Wir wollen die Steuerpolitik geschlechtergerechter machen und setzen uns für eine Reform des Ehegattensplittings in Richtung einer Individualbesteuerung mit übertragbarem Grundfreibetrag ein.",
+          "seite": 46
+        },
+        {
+          "beschreibung": "Schuldenbremse abschaffen, damit öffentliche Investitionen über Kredite finanziert werden können",
+          "ursachen_ids": [
+            4202
+          ],
+          "buendel": "Neuverschuldung zulassen",
+          "zitat": "Wir fordern die Abschaffung der Schuldenbremse. Es muss wieder möglich sein, öffentliche Investitionen in die Infrastruktur, eine klimaneutrale Industrie und den sozialen Ausgleich über Kredite zu finanzieren.",
+          "seite": 13
+        },
+        {
+          "beschreibung": "Vermögensteuer wieder einführen (mit Freibetrag, progressiver Satz)",
+          "ursachen_ids": [
+            4202,
+            4203
+          ],
+          "zitat": "Die Linke fordert, dass die Vermögensteuer wieder eingeführt wird […] Geschätzte jährliche Mehreinnahmen: 108 Milliarden Euro.",
+          "seite": 10
+        },
+        {
+          "beschreibung": "Einmalige Vermögensabgabe für die Reichsten zur Finanzierung der Krisen- und Transformationskosten",
+          "ursachen_ids": [
+            4202
+          ],
+          "zitat": "Um die enormen Kosten der sozialen und ökologischen Transformation zu stemmen, fordern wir eine einmalige Vermögensabgabe, die die Reichsten unserer Gesellschaft einmalig belastet. […] So können mindestens 310 Milliarden Euro eingenommen werden.",
+          "seite": 11
+        },
+        {
+          "beschreibung": "Übergewinnsteuer von 90 Prozent auf Krisenprofite einführen",
+          "ursachen_ids": [
+            4202,
+            4203
+          ],
+          "zitat": "Die Linke fordert die Einführung einer Übergewinnsteuer in Höhe von 90 Prozent auf alle Krisenprofite (Kapitel 1).",
+          "seite": 12
+        },
+        {
+          "beschreibung": "Rüstungsausgaben drastisch senken und die Mittel in Bildung, Soziales, Gesundheit und Transformation lenken",
+          "ursachen_ids": [
+            4202
+          ],
+          "buendel": "Ausgaben senken",
+          "zitat": "Wir wollen die Rüstungsausgaben drastisch senken und stattdessen Investitionen in Bildung, Soziales, Gesundheit und eine gerechte Transformation.",
+          "seite": 23
+        },
+        {
+          "beschreibung": "Steuerhinterziehung konsequent verfolgen, Strafverfolger und Finanzämter personell und technisch stärken",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4202
+          ],
+          "zitat": "Die Strafverfolgungsbehörden und Finanzämter müssen personell und technisch in die Lage versetzt werden, Steuerhinterziehung als Geschäftsmodell konsequent zu verfolgen.",
+          "seite": 13
+        },
+        {
+          "beschreibung": "Bund soll die Sozialleistungen tragen, die die Kommunen belasten",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4202
+          ],
+          "zitat": "Die kommunalen Haushalte müssen von den Sozialleistungen entlastet werden. Diese muss in vollem Umfang der Bund tragen.",
+          "seite": 44
+        },
+        {
+          "beschreibung": "Bundesweites Kommunalentschuldungspaket",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4202
+          ],
+          "zitat": "Es braucht ein bundesweites Kommunalentschuldungspaket.",
+          "seite": 44
+        },
+        {
+          "beschreibung": "Körperschaftsteuer für Unternehmen auf 25 Prozent anheben",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4203
+          ],
+          "buendel": "Unternehmen und Kapital entlasten",
+          "zitat": "Wir fordern, dass die Körperschaftsteuer auf 25 Prozent erhöht wird.",
+          "seite": 12
+        },
+        {
+          "beschreibung": "Tonnagesteuer-Privileg der Reeder abschaffen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4203
+          ],
+          "zitat": "Wir wollen das Tonnagesteuer-Privileg der großen Reeder abschaffen und deren Gewinne der ordentlichen Gewinnbesteuerung unterwerfen.",
+          "seite": 12
+        },
+        {
+          "beschreibung": "Gewerbesteuer zu einer Gemeindewirtschaftsteuer mit breiterer Bemessungsgrundlage umbauen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4203
+          ],
+          "zitat": "Die Linke tritt für die Reform der Gewerbesteuer ein, sie soll in eine Gemeindewirtschaftsteuer umgewandelt werden. […] Dafür werden wir den Freibetrag auf 30.000 Euro anheben.",
+          "seite": 12
+        },
+        {
+          "beschreibung": "Finanztransaktionssteuer von 0,1 Prozent auf jede Finanztransaktion",
+          "ursachen_ids": [
+            4203
+          ],
+          "zitat": "Wir streiten für eine Finanztransaktionssteuer, um Spekulation auf den Finanzmärkten einzudämmen. Bei jeder Finanztransaktion soll ein Steuersatz von 0,1 Prozent fällig werden.",
+          "seite": 12
+        },
+        {
+          "beschreibung": "Mehrwertsteuer auf Grundnahrungsmittel, Hygieneprodukte sowie Bus und Bahn senken oder befreien",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4203
+          ],
+          "buendel": "Konsum belasten oder entlasten",
+          "zitat": "Wir wollen der Teuerung entgegenwirken: ▪ Grundnahrungsmittel, Hygieneprodukte, Bus und Bahn (Regional- und Fernverkehr) wollen wir von der Mehrwertsteuer befreien.",
+          "seite": 6
+        },
+        {
+          "beschreibung": "Grunderwerbsteuer so reformieren, dass Teilkäufe von Immobilien anteilig besteuert werden",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4203
+          ],
+          "zitat": "Wir fordern eine Reform der Grunderwerbsteuer, sodass anteilige Immobilienkäufe (ab über 50 Prozent) entsprechend anteilig besteuert werden.",
+          "seite": 11
+        },
+        {
+          "beschreibung": "Grundsteuer am Verkehrswert ausrichten und nicht auf Mieter umlegen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4203
+          ],
+          "zitat": "Wir fordern eine Reform der Grundsteuer, die sich am Verkehrswert des Grundstücks orientiert und nicht auf die Mieter*innen umgelegt werden darf.",
+          "seite": 10
+        },
+        {
+          "beschreibung": "Vorübergehender Energie-Soli für Reiche zur Finanzierung günstiger Energie-Sockeltarife",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            4203
+          ],
+          "zitat": "Zur Finanzierung fordern wir vorübergehend einen Energie-Soli für Reiche.",
+          "seite": 6
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 4201,
+          "name": "Einkommensteuertarif umgestalten",
+          "seite": 11
+        },
+        {
+          "ursache": 4201,
+          "name": "Ehegattensplitting durch Individualbesteuerung ersetzen",
+          "seite": 46
+        },
+        {
+          "ursache": 4202,
+          "name": "Einmalige Vermögensabgabe",
+          "seite": 11
+        },
+        {
+          "ursache": 4202,
+          "name": "Übergewinnsteuer",
+          "seite": 12
+        },
+        {
+          "ursache": 4202,
+          "name": "Steuerhinterziehung konsequent verfolgen",
+          "seite": 13
+        },
+        {
+          "ursache": 4202,
+          "name": "Bund übernimmt Sozialkosten der Kommunen",
+          "seite": 44
+        },
+        {
+          "ursache": 4202,
+          "name": "Kommunalentschuldungspaket",
+          "seite": 44
+        },
+        {
+          "ursache": 4203,
+          "name": "Übergewinnsteuer",
+          "seite": 12
+        },
+        {
+          "ursache": 4203,
+          "name": "Tonnagesteuer-Privileg abschaffen",
+          "seite": 12
+        },
+        {
+          "ursache": 4203,
+          "name": "Gemeindewirtschaftsteuer statt Gewerbesteuer",
+          "seite": 12
+        },
+        {
+          "ursache": 4203,
+          "name": "Finanztransaktionssteuer",
+          "seite": 12
+        },
+        {
+          "ursache": 4203,
+          "name": "Grunderwerbsteuer reformieren",
+          "seite": 11
+        },
+        {
+          "ursache": 4203,
+          "name": "Grundsteuer am Verkehrswert",
+          "seite": 10
+        },
+        {
+          "ursache": 4203,
+          "name": "Energie-Soli für Reiche",
+          "seite": 6
+        }
+      ]
+    }
+  ],
+  "suchbegriffe": {
+    "4201": {
+      "Tarif an Inflation anpassen": [
+        "kalte progression",
+        "progressionsausgleich",
+        "tarifanpassung",
+        "tarifeckwert"
+      ],
+      "Entlastung über Grundfreibetrag": [
+        "grundfreibetrag",
+        "pauschbetrag"
+      ],
+      "Ausgleich verzichten, Einnahmen sichern": [
+        "ausgleichsverzicht",
+        "tarifverschieb"
+      ]
+    },
+    "4202": {
+      "Ausgaben senken": [
+        "ausgabenkuerz",
+        "sparpaket",
+        "konsolidierung"
+      ],
+      "Einnahmen durch Steuern erhöhen": [
+        "steuererhoehung",
+        "einnahmenerhoeh",
+        "steuerschlupfloecher"
+      ],
+      "Neuverschuldung zulassen": [
+        "neuverschuldung",
+        "kreditaufnahme",
+        "bereichsausnahme"
+      ]
+    },
+    "4203": {
+      "Vermögen und Erbschaften stärker besteuern": [
+        "vermoegensteuer",
+        "erbschaftsteuer",
+        "erbschaftssteuer"
+      ],
+      "Unternehmen und Kapital entlasten": [
+        "unternehmensteuer",
+        "koerperschaftsteuer",
+        "gewerbesteuer",
+        "investitionspraemie"
+      ],
+      "Konsum belasten oder entlasten": [
+        "mehrwertsteuer",
+        "umsatzsteuer"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "71d17430f17443815bcf1e9ca3d823ceebe05184071e1efbf1a8d8dab7b1154e",
+    "programme": [
+      {
+        "partei_id": 11,
+        "land": null,
+        "ursachen": {
+          "4201": {
+            "Tarif an Inflation anpassen": {
+              "kalte progression": 1,
+              "progressionsausgleich": 0,
+              "tarifanpassung": 0,
+              "tarifeckwert": 0
+            },
+            "Entlastung über Grundfreibetrag": {
+              "grundfreibetrag": 2,
+              "pauschbetrag": 0
+            },
+            "Ausgleich verzichten, Einnahmen sichern": {
+              "ausgleichsverzicht": 0,
+              "tarifverschieb": 0
+            }
+          },
+          "4202": {
+            "Ausgaben senken": {
+              "ausgabenkuerz": 0,
+              "sparpaket": 0,
+              "konsolidierung": 0
+            },
+            "Einnahmen durch Steuern erhöhen": {
+              "steuererhoehung": 0,
+              "einnahmenerhoeh": 0,
+              "steuerschlupfloecher": 0
+            },
+            "Neuverschuldung zulassen": {
+              "neuverschuldung": 0,
+              "kreditaufnahme": 0,
+              "bereichsausnahme": 0
+            }
+          },
+          "4203": {
+            "Vermögen und Erbschaften stärker besteuern": {
+              "vermoegensteuer": 0,
+              "erbschaftsteuer": 1,
+              "erbschaftssteuer": 0
+            },
+            "Unternehmen und Kapital entlasten": {
+              "unternehmensteuer": 0,
+              "koerperschaftsteuer": 0,
+              "gewerbesteuer": 0,
+              "investitionspraemie": 0
+            },
+            "Konsum belasten oder entlasten": {
+              "mehrwertsteuer": 0,
+              "umsatzsteuer": 3
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": null,
+        "ursachen": {
+          "4201": {
+            "Tarif an Inflation anpassen": {
+              "kalte progression": 0,
+              "progressionsausgleich": 0,
+              "tarifanpassung": 0,
+              "tarifeckwert": 0
+            },
+            "Entlastung über Grundfreibetrag": {
+              "grundfreibetrag": 0,
+              "pauschbetrag": 0
+            },
+            "Ausgleich verzichten, Einnahmen sichern": {
+              "ausgleichsverzicht": 0,
+              "tarifverschieb": 0
+            }
+          },
+          "4202": {
+            "Ausgaben senken": {
+              "ausgabenkuerz": 0,
+              "sparpaket": 0,
+              "konsolidierung": 0
+            },
+            "Einnahmen durch Steuern erhöhen": {
+              "steuererhoehung": 0,
+              "einnahmenerhoeh": 0,
+              "steuerschlupfloecher": 0
+            },
+            "Neuverschuldung zulassen": {
+              "neuverschuldung": 0,
+              "kreditaufnahme": 1,
+              "bereichsausnahme": 0
+            }
+          },
+          "4203": {
+            "Vermögen und Erbschaften stärker besteuern": {
+              "vermoegensteuer": 0,
+              "erbschaftsteuer": 0,
+              "erbschaftssteuer": 0
+            },
+            "Unternehmen und Kapital entlasten": {
+              "unternehmensteuer": 1,
+              "koerperschaftsteuer": 0,
+              "gewerbesteuer": 0,
+              "investitionspraemie": 0
+            },
+            "Konsum belasten oder entlasten": {
+              "mehrwertsteuer": 6,
+              "umsatzsteuer": 1
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": null,
+        "ursachen": {
+          "4201": {
+            "Tarif an Inflation anpassen": {
+              "kalte progression": 0,
+              "progressionsausgleich": 0,
+              "tarifanpassung": 0,
+              "tarifeckwert": 0
+            },
+            "Entlastung über Grundfreibetrag": {
+              "grundfreibetrag": 2,
+              "pauschbetrag": 1
+            },
+            "Ausgleich verzichten, Einnahmen sichern": {
+              "ausgleichsverzicht": 0,
+              "tarifverschieb": 0
+            }
+          },
+          "4202": {
+            "Ausgaben senken": {
+              "ausgabenkuerz": 0,
+              "sparpaket": 0,
+              "konsolidierung": 0
+            },
+            "Einnahmen durch Steuern erhöhen": {
+              "steuererhoehung": 0,
+              "einnahmenerhoeh": 0,
+              "steuerschlupfloecher": 0
+            },
+            "Neuverschuldung zulassen": {
+              "neuverschuldung": 0,
+              "kreditaufnahme": 2,
+              "bereichsausnahme": 0
+            }
+          },
+          "4203": {
+            "Vermögen und Erbschaften stärker besteuern": {
+              "vermoegensteuer": 0,
+              "erbschaftsteuer": 0,
+              "erbschaftssteuer": 2
+            },
+            "Unternehmen und Kapital entlasten": {
+              "unternehmensteuer": 0,
+              "koerperschaftsteuer": 0,
+              "gewerbesteuer": 2,
+              "investitionspraemie": 0
+            },
+            "Konsum belasten oder entlasten": {
+              "mehrwertsteuer": 3,
+              "umsatzsteuer": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": null,
+        "ursachen": {
+          "4201": {
+            "Tarif an Inflation anpassen": {
+              "kalte progression": 0,
+              "progressionsausgleich": 0,
+              "tarifanpassung": 0,
+              "tarifeckwert": 0
+            },
+            "Entlastung über Grundfreibetrag": {
+              "grundfreibetrag": 1,
+              "pauschbetrag": 0
+            },
+            "Ausgleich verzichten, Einnahmen sichern": {
+              "ausgleichsverzicht": 0,
+              "tarifverschieb": 0
+            }
+          },
+          "4202": {
+            "Ausgaben senken": {
+              "ausgabenkuerz": 0,
+              "sparpaket": 0,
+              "konsolidierung": 1
+            },
+            "Einnahmen durch Steuern erhöhen": {
+              "steuererhoehung": 0,
+              "einnahmenerhoeh": 0,
+              "steuerschlupfloecher": 0
+            },
+            "Neuverschuldung zulassen": {
+              "neuverschuldung": 0,
+              "kreditaufnahme": 0,
+              "bereichsausnahme": 0
+            }
+          },
+          "4203": {
+            "Vermögen und Erbschaften stärker besteuern": {
+              "vermoegensteuer": 0,
+              "erbschaftsteuer": 0,
+              "erbschaftssteuer": 0
+            },
+            "Unternehmen und Kapital entlasten": {
+              "unternehmensteuer": 0,
+              "koerperschaftsteuer": 0,
+              "gewerbesteuer": 1,
+              "investitionspraemie": 0
+            },
+            "Konsum belasten oder entlasten": {
+              "mehrwertsteuer": 0,
+              "umsatzsteuer": 3
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": null,
+        "ursachen": {
+          "4201": {
+            "Tarif an Inflation anpassen": {
+              "kalte progression": 0,
+              "progressionsausgleich": 0,
+              "tarifanpassung": 0,
+              "tarifeckwert": 1
+            },
+            "Entlastung über Grundfreibetrag": {
+              "grundfreibetrag": 4,
+              "pauschbetrag": 5
+            },
+            "Ausgleich verzichten, Einnahmen sichern": {
+              "ausgleichsverzicht": 0,
+              "tarifverschieb": 0
+            }
+          },
+          "4202": {
+            "Ausgaben senken": {
+              "ausgabenkuerz": 0,
+              "sparpaket": 0,
+              "konsolidierung": 1
+            },
+            "Einnahmen durch Steuern erhöhen": {
+              "steuererhoehung": 0,
+              "einnahmenerhoeh": 0,
+              "steuerschlupfloecher": 0
+            },
+            "Neuverschuldung zulassen": {
+              "neuverschuldung": 2,
+              "kreditaufnahme": 1,
+              "bereichsausnahme": 0
+            }
+          },
+          "4203": {
+            "Vermögen und Erbschaften stärker besteuern": {
+              "vermoegensteuer": 0,
+              "erbschaftsteuer": 3,
+              "erbschaftssteuer": 1
+            },
+            "Unternehmen und Kapital entlasten": {
+              "unternehmensteuer": 1,
+              "koerperschaftsteuer": 0,
+              "gewerbesteuer": 0,
+              "investitionspraemie": 0
+            },
+            "Konsum belasten oder entlasten": {
+              "mehrwertsteuer": 5,
+              "umsatzsteuer": 6
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": null,
+        "ursachen": {
+          "4201": {
+            "Tarif an Inflation anpassen": {
+              "kalte progression": 0,
+              "progressionsausgleich": 0,
+              "tarifanpassung": 0,
+              "tarifeckwert": 0
+            },
+            "Entlastung über Grundfreibetrag": {
+              "grundfreibetrag": 1,
+              "pauschbetrag": 0
+            },
+            "Ausgleich verzichten, Einnahmen sichern": {
+              "ausgleichsverzicht": 0,
+              "tarifverschieb": 0
+            }
+          },
+          "4202": {
+            "Ausgaben senken": {
+              "ausgabenkuerz": 0,
+              "sparpaket": 0,
+              "konsolidierung": 1
+            },
+            "Einnahmen durch Steuern erhöhen": {
+              "steuererhoehung": 0,
+              "einnahmenerhoeh": 0,
+              "steuerschlupfloecher": 0
+            },
+            "Neuverschuldung zulassen": {
+              "neuverschuldung": 0,
+              "kreditaufnahme": 1,
+              "bereichsausnahme": 0
+            }
+          },
+          "4203": {
+            "Vermögen und Erbschaften stärker besteuern": {
+              "vermoegensteuer": 0,
+              "erbschaftsteuer": 3,
+              "erbschaftssteuer": 0
+            },
+            "Unternehmen und Kapital entlasten": {
+              "unternehmensteuer": 0,
+              "koerperschaftsteuer": 0,
+              "gewerbesteuer": 7,
+              "investitionspraemie": 0
+            },
+            "Konsum belasten oder entlasten": {
+              "mehrwertsteuer": 13,
+              "umsatzsteuer": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}

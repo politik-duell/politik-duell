@@ -1,0 +1,60 @@
+{
+  "partei_id": 13,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Ab 2035 nur noch klimaneutrale Antriebe neu zulassen.", "ursachen_ids": [4501], "buendel": "Antriebe und Flotte wechseln", "zitat": "Wir bleiben dabei, ab 2035 nur noch klimaneutrale Antriebe neu zuzulassen.", "seite": 25 },
+    { "beschreibung": "Verlagerung von Straßentransport auf die Schiene fördern und Kapazitäten im Kombiverkehr ausbauen.", "ursachen_ids": [], "ursachen_offen": [4501], "buendel": "Verkehr verlagern (Schiene, Rad)", "zitat": "Auch für den Schienengüterverkehr wollen wir Kapazitäten, zum Beispiel im Kombiverkehr, ausbauen und die Verlagerung von Straßentransport auf die Schiene fördern.", "seite": 50 },
+    { "beschreibung": "Privilegien für Privatjets abschaffen, um diese klimaschädliche Fortbewegungsart zu reduzieren.", "ursachen_ids": [4501], "buendel": "Nachfrage über Abgaben steuern", "zitat": "Die Privilegien für Privatjets wollen wir abschaffen und diese enorm klimaschädliche Fortbewegungsart reduzieren.", "seite": 47 },
+    { "beschreibung": "Generelles Tempolimit von 130 km/h auf Autobahnen, das die Partei als überfällig ansieht.", "ursachen_ids": [4501], "buendel": "Tempo und Fahrverbote", "zitat": "Ein Sicherheitstempo von 130 km/h auf Autobahnen als generelles «Tempolimit» ist deshalb überfällig.", "seite": 48 },
+    { "beschreibung": "Nachhaltige Kraftstoffe aus erneuerbaren Energien für den Luft- und Schiffsverkehr unterstützen.", "ursachen_ids": [4501], "zitat": "Um den Luft- und Schiffsverkehr klimaneutral zu modernisieren, unterstützen wir die Produktion nachhaltiger Kraftstoffe aus erneuerbaren Energien, zum Beispiel E-Kerosin, fördern Technologien zur Kraftstoffeinsparung", "seite": 47 },
+    { "beschreibung": "Förderung für energetische Sanierungen stärker nach Einkommen und eingesparter Energie staffeln.", "ursachen_ids": [4502], "buendel": "Sanierung bezuschussen", "zitat": "Die Effizienz steht zukünftig stärker im Mittelpunkt einer finanziellen Förderung. Je kleiner das Einkommen und je mehr Energie eingespart wird, desto höher die Förderung.", "seite": 72 },
+    { "beschreibung": "Energetische Sanierung mit Aufstockung oder Erweiterung von Wohngebäuden erleichtern.", "ursachen_ids": [], "ursachen_offen": [4502], "zitat": "Wo möglich, wollen wir es erleichtern, dass die energetische Sanierung von Wohngebäuden mit Aufstockung oder Erweiterung verbunden wird.", "seite": 71 },
+    { "beschreibung": "Sanierte Gebäude einfacher als taxonomiekonform anerkennen.", "ursachen_ids": [], "ursachen_offen": [4502], "zitat": "Um die Finanzierung von klimafreundlichen Sanierungen zu erleichtern, wollen wir sanierte Gebäude einfacher als taxonomiekonform anerkennen.", "seite": 72 },
+    { "beschreibung": "Anreize setzen, dass Vermieter verfügbare öffentliche Fördermittel zur Sanierung tatsächlich nutzen.", "ursachen_ids": [], "ursachen_offen": [4502], "zitat": "Damit diese positiven Effekte auch bei Mieter*innen ankommen, wollen wir klare Anreize dafür setzen, dass Vermieter*innen verfügbare öffentliche Fördermittel zur Sanierung auch tatsächlich nutzen.", "seite": 72 },
+    { "beschreibung": "Nährstoffbilanz einführen, um den Düngereinsatz gezielter zu machen und zu senken.", "ursachen_ids": [4503], "buendel": "Düngung begrenzen", "zitat": "Die Einführung einer Nährstoffbilanz unterstützt den gezielteren Düngereinsatz und kann helfen, ihn zu senken.", "seite": 59 },
+    { "beschreibung": "Weidehaltung auf extensivem Dauergrünland fördern.", "ursachen_ids": [], "ursachen_offen": [4503], "zitat": "Weidehaltung auf extensivem, artenreichem Dauergrünland hat sowohl positive Biodiversitäts- wie auch Klimaeffekte. Das wollen wir ebenso fördern", "seite": 58 },
+    { "beschreibung": "Wiedervernässung von Mooren unterstützen und Genehmigungen für den Umstieg erleichtern.", "ursachen_ids": [], "ursachen_offen": [4503], "zitat": "Wir unterstützen Landwirt*innen beim Übergang auf nasse Bewirtschaftung und werden die Rahmenbedingungen so gestalten, dass Genehmigungsverfahren für den Umstieg einfacher und schneller funktionieren.", "seite": 57 },
+    { "beschreibung": "Verantwortung der Sektoren im Klimaschutzgesetz stärken; jedes Ministerium muss Maßnahmen umsetzen.", "ursachen_ids": [4504], "buendel": "Sektorziele verbindlich machen", "zitat": "Um den Herausforderungen und der Dringlichkeit der Klimakrise zu begegnen, werden wir die Rolle des Expertenrates für Klimafragen sowie die […] Verantwortung von Sektoren im Bundes-Klimaschutzgesetz stärken, in denen Klimaschutz zu wenig vorankommt. […] Jedes Ministerium muss deswegen unabhängig von der Gesamtbilanz der Bundesregierung geeignete Maßnahmen umsetzen, die zur Einhaltung der Klimaziele führen sollen.", "seite": 38 },
+    { "beschreibung": "Bei prognostizierter längerfristiger Zielverfehlung verbindlich in den Sektoren nachsteuern.", "ursachen_ids": [4504], "buendel": "früher nachsteuern", "zitat": "Bei prognostizierter längerfristiger Zielverfehlung soll in den jeweiligen Sektoren verbindlich nachgesteuert werden, denn andernfalls drohen Deutschland teure Strafzahlungen und zukünftig höhere CO₂-Preise.", "seite": 39 }
+  ],
+  "neue_buendel": [
+    { "ursache": 4501, "name": "Nachhaltige Kraftstoffe für Luft- und Schiffsverkehr", "seite": 47 },
+    { "ursache": 4502, "name": "Energetische Sanierung mit Aufstockung verbinden", "seite": 71 },
+    { "ursache": 4502, "name": "Sanierte Gebäude als taxonomiekonform anerkennen", "seite": 72 },
+    { "ursache": 4502, "name": "Anreize für Vermieter zur Nutzung der Sanierungsförderung", "seite": 72 },
+    { "ursache": 4503, "name": "Weidehaltung fördern", "seite": 58 },
+    { "ursache": 4503, "name": "Wiedervernässung von Mooren erleichtern", "seite": 57 }
+  ]
+}
+
+Protokoll Teilauftrag 4 (Thema 45, Klimaschutz; Grüne Bund)
+
+Gelesen: Inhaltsverzeichnis S. 4–7; S. 25 (Industrie, Flottengrenzwerte, Fundstelle); S. 38–39 (Klimaschutzgesetz, Sektoren, Nachsteuerung; Fundstellen); S. 44–48 (Wärme, Klimaanpassung, Verkehr; Fundstellen S. 47, 48); S. 50 (Schienengüterverkehr); S. 55 (Fundstelle Munitionsbergung, kein Klimabezug); S. 57–61 (Landwirtschaft, Düngung, Tierhaltung); S. 71–72 (Bauen und Sanieren, Gebäudesektor).
+
+Richtungen mit Maßnahme: Antriebe und Flotte wechseln (M1), Verkehr verlagern (M2, offen), Nachfrage über Abgaben steuern (M3, Privatjets), Tempo und Fahrverbote (M4), Sanierung bezuschussen (M6), Düngung begrenzen (M10), Sektorziele verbindlich machen (M13), früher nachsteuern (M14).
+Richtungen ohne Maßnahme: Straßenkapazität ausbauen (gegenläufig: Sanierung statt Neubau ist nur Lagebeschreibung, S. 47); Gebäudehülle sanieren, Sanierung verpflichten (Ordnungsrecht): keine Zusage gefunden; Tierbestand verringern und Tierhaltung emissionsärmer machen: keine Zusage (S. 58, 61 nur Leitbild „weniger Tiere besser halten“); Abgabe auf Tierhaltung oder Dünger: keine Zusage; Produktion ins Ausland verlagern (gegenläufig): keine Zusage; Gesamtbudget flexibel steuern (gegenläufig): keine Zusage (S. 39 nur Gesamtbilanz erwähnt).
+
+Gleichartige weitere Stellen (nicht gesondert erfasst, je Bündel eine Maßnahme):
+- Verkehr verlagern: Radwegenetz dauerhaft finanzieren (S. 47); Mobilitätsgesetz mit Priorisierung von ÖPNV, Schiene, Fuß- und Radverkehr (S. 48); gleichartig zu M2.
+- Nachfrage über Abgaben: Lkw-Maut-Reform (S. 47) ist ein Rückblick („haben wir … gesetzt“) und deshalb nicht erfasst.
+- Tempo: Tempo 80 auf Landstraßen erweitern, Tempo 30 innerorts ermöglichen (S. 48), gleichartig zu M4.
+- Sanierung: Vorschüsse für Sanierungen (S. 72), Förderprogramme stärker staffeln (S. 39), gleichartig zu M6.
+- Sektorziele: Ministerien-Pflicht und Expertenrat stehen im selben Absatz (S. 38–39) und sind in M13 zitiert.
+- Düngung: robuste Sorten mit weniger synthetischem Dünger fördern (S. 59), gleichartig zu M10, nicht erfasst.
+- Wärme: Förderung von bis zu 70 Prozent für fossilfreie Heizungen (S. 44) betrifft die Heizungsart (R2 schließt aus, Ursache 305/1601–1604), nicht erfasst.
+
+Nicht erfasst:
+- S. 44: Wärmenetze, BEW-Förderung, Preisaufsicht Fernwärme, Wasserstoff, Holzverbrennung – Heizungsart und Wärmenetze (Ursachen 305, 1601 bis 1604), nicht 4502.
+- S. 47: Kurzstreckenflüge durch Bahn überflüssig machen – Ziel, Bahnangebot (Thema 8).
+- S. 47: „Für die Schaffung neuer Start- und Landekapazitäten … sehen wir … keinen Bedarf“ – Haltung ohne Maßnahme.
+- S. 47: „Das Straßennetz … benötigt daher Sanierungen statt Neubau“, Bundesverkehrswegeplan „kritisch überprüfen“ – Lagebeschreibung und Prüfauftrag.
+- S. 47: Deutschlandfonds für Verkehrsinfrastruktur – Finanzierung Thema 8.
+- S. 58 und 61: „weniger Tiere besser halten“ – Leitbild ohne konkrete Handlung (Tierbestand verringern).
+- S. 59: Pestizidabgabe, Farm-to-Fork-Halbierung, Ökolandbau 30 Prozent, Biostrategie – nicht Methan oder Lachgas (Ziel bzw. andere Gase).
+- S. 60: Einsatz fossiler Brennstoffe in der Landwirtschaft senken, alternative Treibstoffe – nicht Methan oder Lachgas (Leitfaden R3).
+- S. 57: GAP-Gelder für öffentliche Leistungen – kein Bezug zu Methan oder Lachgas.
+- S. 72: Gebäudepass für öffentliche Gebäude, Kreislaufwirtschaft am Bau – kein Emissionsbezug; „Sanierungsrate deutlich zu erhöhen“ ist ein Ziel.
+- S. 55: Sofortprogramm Munitionsbergung – kein Klimabezug (Ursache 4504 nicht).
+
+Seiten ohne Text: 1–3, 14, 63–64, 101–102, 159–160 (nicht im Thema-Kapitel).
+Stand im PDF: kein abweichender Stand angegeben.

@@ -33,5 +33,563 @@
   "freigabe": {
     "datum": "2026-10-21",
     "art": "ki"
-  }
+  },
+  "instrumente": [
+    {
+      "id": 10838,
+      "name": "Neue EU-Freihandelsabkommen mit Drittstaaten zügig abschließen und Absatzmärkte diversifizieren (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "Modellrechnungen (ifo 2025) zeigen, dass Abkommen u. a. mit Mercosur, Indien und ASEAN-Staaten die Exportverluste durch US-Zölle ausgleichen könnten; Zollsätze der USA ändern sie nicht. Abschluss liegt bei der EU und braucht Zustimmung der Partner.",
+      "evidenz": "gemischt",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10839,
+      "name": "Mit den USA über Abbau von Zöllen und Handelshemmnissen verhandeln, etwa sektorale Abkommen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "Setzt direkt an den US-Zöllen an; ein Industriezoll-Abkommen würde Exporte entlasten. Ergebnis hängt vom Willen der US-Regierung ab, Handelspolitik ist EU-Zuständigkeit; die Verhandlungen 2025 brachten nur begrenzte Senkungen.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10840,
+      "name": "Rohstoffpartnerschaften und Abkommen zur Diversifizierung der Rohstoffbezugsquellen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Japan senkte nach 2010 mit Partnerschaften und staatlich gestützten Investitionen seine Abhängigkeit von China bei Seltenen Erden von über 90 auf 60–70 %. Partnerschaften ohne Finanzierung brachten in Deutschland bisher kaum Lieferungen.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://thenightly.com.au/politics/world/the-new-york-times-how-japan-built-a-rare-earth-supply-chain-without-china-c-20939714",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10841,
+      "name": "Heimischen und europäischen Rohstoffabbau durch modernisiertes Bergrecht und schnellere Verfahren stärken (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Mehr eigene Förderung verringert Importabhängigkeit; neue Bergwerke brauchen aber im Schnitt weit über zehn Jahre bis zur Produktion, und für viele kritische Rohstoffe fehlen in Deutschland abbauwürdige Vorkommen.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10842,
+      "name": "Recycling und Kreislaufwirtschaft fördern, Recycling- und Einsatzquoten erhöhen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Recycling ersetzt langfristig Primärrohstoffe; bei Seltenen Erden liegt die Recyclingquote aber nur bei etwa 1 %, und Rückläufe aus langlebigen Produkten kommen spät. Quoten sind teils EU-rechtlich vorgeprägt.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.jyu.fi/en/news/towards-better-autonomy-rare-earth-elements-recycled-from-waste",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10843,
+      "name": "Gegen zollfreie Billigsendungen und unsichere Produkte aus Drittstaaten vorgehen, Zollkontrollen verschärfen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Schließt Lücken, über die Kleinsendungen zoll- und kontrollfrei hereinkommen; die EU hat die Abschaffung der 150-Euro-Freigrenze beschlossen. Der Effekt auf heimische Hersteller ist kaum untersucht; Händler weichen etwa auf EU-Lager aus.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10844,
+      "name": "EU-Handelsschutz nutzen: Antisubventions- und Antidumpingverfahren, Ausgleichszölle (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "Antidumpingzölle senken Einfuhren aus China deutlich (Felbermayr/Sandkamp), helfen aber vor allem schwächeren Herstellern und schaden Weiterverarbeitern; Nettoeffekt auf Beschäftigung eher negativ. Verfahren führt die EU-Kommission.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.ifo.de/en/cesifo/publications/2018/working-paper/trade-effects-anti-dumping-duties-firm-level-evidence-china",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10845,
+      "name": "CO₂-Grenzausgleich (CBAM) nachbessern: Anwendungsbereich, Verfahren, Exportentlastung (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Ein wirksamerer CBAM gleicht CO₂-Kosten bei Importen von Stahl, Zement u. a. aus und mindert Wettbewerbsnachteile; er betrifft nur wenige Branchen, Studien sehen Lücken bei Weiterverarbeitern. Änderung liegt bei der EU.",
+      "evidenz": "gemischt",
+      "entwurf_herkunft": "blind"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "durchsucht_fuer": [4401, 4402, 4403],
+      "massnahmen": [
+        {
+          "id": 10846,
+          "instrument": 10838,
+          "beschreibung": "Mercosur-Abkommen zügig in Kraft setzen",
+          "ursachen_ids": [4401],
+          "zitat": "Mercosur ist ausverhandelt und muss jetzt zügig in Kraft treten.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=20",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10847,
+          "instrument": 10839,
+          "beschreibung": "Neue Handelsabkommen in der EU unterstützen und die Partnerschaft mit den USA zu einem transatlantischen Handelsraum vertiefen",
+          "ursachen_ids": [4401],
+          "zitat": "Wir unterstützen in der EU neue Abkommen mit Indien und den ASEAN-Staaten und vertiefen Partnerschaften insbesondere mit den USA für einen umfassenden transatlantischen Wirtschafts-, Handels- und Zukunftsraum.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=20",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10848,
+          "instrument": 10844,
+          "beschreibung": "Bei marktverzerrenden Subventionen das EU-Antisubventionsverfahren und einen WTO-Streitschlichtungsmechanismus nutzen",
+          "ursachen_ids": [4403],
+          "zitat": "Bei marktverzerrenden Subventionen und Exportbeihilfen setzen wir auf das EU-Antisubventionsverfahren und einen wirksamen, international anerkannten Streitschlichtungsmechanismus bei der Welthandelsorganisation.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=20",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10849,
+          "instrument": 10840,
+          "beschreibung": "Kritische Abhängigkeiten bei Absatzmärkten, Rohstoffquellen und Lieferketten verringern, durch stärkere Diversifizierung",
+          "ursachen_ids": [4402],
+          "zitat": "Zugleich werden wir kritische wirtschaftliche Abhängigkeiten verringern, etwa durch die stärkere Diversifizierung von Absatzmärkten, Rohstoffquellen und Lieferketten sowie den Schutz kritischer Infrastruktur und sicherheitsrelevanter Technologie.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=20",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10850,
+          "instrument": 10841,
+          "beschreibung": "Versorgung durch heimischen Rohstoffabbau sichern und Wertstoffe aus Recycling als Rohstoffe nutzen",
+          "ursachen_ids": [4402],
+          "zitat": "Wir sichern die Versorgung auch durch einen verantwortungsvollen, heimischen Abbau. Zudem verstehen wir die aus Recycling entstandenen Wertstoffe als Rohstoffe 2.0.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=20",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10851,
+          "beschreibung": "Vorratshaltung von Rohstoffen über eine Bevorratungsrücklage anreizen",
+          "ursachen_ids": [4402],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Vorräte überbrücken Lieferstopps bei Exportbeschränkungen direkt; Japan betreibt ein solches System seit Jahren. Wirkungen sind kaum evaluiert, Vorräte lösen die Abhängigkeit nicht, und die steuerliche Rücklage kostet Einnahmen.",
+          "zitat": "Wir reizen das privatwirtschaftliche, nicht-spekulative Anlegen von Vorräten durch eine Rohstoffbevorratungsrücklage an.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=20",
+          "evidenz": "offen",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "durchsucht_fuer": [4401, 4402, 4403],
+      "massnahmen": [
+        {
+          "id": 10852,
+          "instrument": 10839,
+          "beschreibung": "Handelshemmnisse gegenüber den USA abbauen und einen Subventionswettlauf vermeiden.",
+          "ursachen_ids": [4401],
+          "zitat": "Die Gefahr protektionistischer Maßnahmen der USA ist weiter gestiegen. Wir setzen alles daran, Handelshemmnisse abzubauen und einen Subventionswettlauf mit den USA zu vermeiden.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=61",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10853,
+          "instrument": 10838,
+          "beschreibung": "Handelsabkommen schneller abschließen; Entscheidung im Ministerrat mit qualifizierter Mehrheit statt Einstimmigkeit.",
+          "ursachen_ids": [4401],
+          "zitat": "Der Abschluss von weitreichenden Handels- und Investitionsabkommen (beispielsweise das EU- Mercosur-Abkommen oder die Freihandelsverträge der EU mit Indien und Australien) sind wichtige Meilensteine, um robuste Allianzen und Partnerschaften zu etablieren. […] Wir wollen, dass solche Abkommen künftig einfacher gestaltet und schneller zum Abschluss gebracht werden können. Zu oft werden Verhandlungen von einzelnen EU-Mitgliedstaaten ausgebremst. Handelsabkommen sollen daher durch eine qualifizierte Mehrheit im Ministerrat der EU entschieden werden.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=65",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10854,
+          "beschreibung": "Rohstofffonds schaffen und die heimische Rohstoffgewinnung ausbauen.",
+          "ursachen_ids": [4402],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ein staatlicher Rohstofffonds kann wie in Japan Projekte außerhalb Chinas mitfinanzieren und Abhängigkeit spürbar senken; der Fonds besteht bereits. Heimische Förderung wirkt erst nach vielen Jahren.",
+          "zitat": "Um unsere heimische Industrie mit Rohstoffen zu versorgen, setzen wir auf den neu geschaffenen Rohstofffonds, werden die heimische Rohstoffgewinnung voranbringen und uns für eine koordinierte Rohstoffstrategie der EU einsetzen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=11",
+          "beleg_studie_url": "https://thenightly.com.au/politics/world/the-new-york-times-how-japan-built-a-rare-earth-supply-chain-without-china-c-20939714",
+          "evidenz": "belegt",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10855,
+          "beschreibung": "Europäische Resilienzstrategie gegen Lieferrisiken (De-Risking) und Abhängigkeiten bei Rohstoffen und Vorprodukten.",
+          "ursachen_ids": [4402],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Eine EU-Resilienzstrategie kann Abhängigkeiten bei Rohstoffen und Vorprodukten verringern; der Text bleibt ohne konkrete Instrumente, und die Umsetzung hängt von EU-Entscheidungen ab.",
+          "zitat": "Die EU muss sich unabhängiger aufstellen und strategische Wertschöpfung wieder stärker nach Europa verlagern. Dazu braucht es eine europäische Resilienzstrategie, die Risiken verringert (De-Risking), kritische Infrastrukturen effektiv schützt und strategisch wichtige Schlüsselindustrien wieder in Europa ansiedelt.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=11",
+          "evidenz": "offen",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10856,
+          "instrument": 10840,
+          "beschreibung": "Mit strategischen Partnerschaften und Allianzen den Zugang zu wertvollen Rohstoffen sichern.",
+          "ursachen_ids": [4402],
+          "zitat": "Viele Bereiche unseres Alltags und unserer Wirtschaft hängen unmittelbar an robusten Lieferketten und dem Zugang zu besonders wertvollen Rohstoffen. Als innovativer Industriestandort wollen wir Allianzen bilden und mit strategischen Partnerschaften Brücken bauen",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=64",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10857,
+          "instrument": 10845,
+          "beschreibung": "CO2-Grenzausgleichsmechanismus für Importe entbürokratisieren und um Exportförderung ergänzen.",
+          "ursachen_ids": [4403],
+          "zitat": "Wir entbürokratisieren den CO 2 -Grenzausgleichsmechanismus (CBAM – Carbon Border Adjustment Mechanism) und ergänzen ihn um eine Exportförderung.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=11",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "durchsucht_fuer": [4401, 4402, 4403],
+      "massnahmen": [
+        {
+          "id": 10858,
+          "instrument": 10840,
+          "beschreibung": "Neue Rohstoffpartnerschaften schließen, die auf Menschenrechte und Umweltschutz ausgerichtet sind.",
+          "ursachen_ids": [4402],
+          "zitat": "Und viertens entwickeln wir eine nachhaltige und faire Rohstoffaußenpolitik und schließen neue Rohstoffpartnerschaften, die an der Einhaltung der Menschenrechte und des Umweltschutzes ausgerichtet sind.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=30",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10859,
+          "instrument": 10841,
+          "beschreibung": "Heimischen und europäischen Rohstoffabbau mit modernisiertem Bergrecht und schnelleren Verfahren fördern.",
+          "ursachen_ids": [4402],
+          "zitat": "Drittens setzen wir auf heimischen und europäischen Bergbau, auch mit einem modernisierten Bergrecht, das die Ziele Klimaschutz, Umweltschutz und Bürger*innenbeteiligung vereint, und mit beschleunigten und effektiveren Verwaltungsprozessen für den Rohstoffabbau, um – wo möglich – unabhängiger zu werden von Rohstoffimporten.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=30",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10860,
+          "instrument": 10842,
+          "beschreibung": "Abfallvermeidung, Wiederverwendung und Recycling für eine Kreislaufwirtschaft fördern.",
+          "ursachen_ids": [4402],
+          "zitat": "Zweitens fördern wir Abfallvermeidung, Langlebigkeit, Wiederverwendung, Reparatur und Recycling für den Aufbau einer effektiven Kreislaufwirtschaft.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=30",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10861,
+          "beschreibung": "Bei Ausschreibungen in abhängigen Sektoren Resilienzvorgaben des Net-Zero Industry Act anwenden.",
+          "ursachen_ids": [4402],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Resilienzkriterien in Ausschreibungen (etwa Wind, Solar) mindern die Abhängigkeit von einzelnen Lieferländern bei Vorprodukten; die EU-Vorgaben gelten bereits, die Wirkung ist noch nicht untersucht und kann Kosten erhöhen.",
+          "zitat": "Um unsere Unabhängigkeit und ungestörte Lieferketten zu sichern, gehen wir bei Ausschreibungen in Sektoren mit hoher Abhängigkeit entsprechend der Resilienzvorgaben des Net-Zero Industry Acts vor.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=30",
+          "evidenz": "offen",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10862,
+          "instrument": 10844,
+          "beschreibung": "Ausgleichszölle auf EU-Ebene unterstützen, wo unfaire Handelspraktiken geboten sind, etwa auf Stahl.",
+          "ursachen_ids": [4403],
+          "zitat": "Unfaire Handelspraktiken und Marktverzerrungen erfordern entschiedenes Handeln – deshalb setzen wir uns, wo es geboten ist, bei der EU-Kommission für Ausgleichszölle ein, etwa auf Stahl.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=29",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10863,
+          "instrument": 10843,
+          "beschreibung": "Zollschlupflöcher schließen, durch die Onlinehändler unsichere Produkte am Zoll vorbeischleusen.",
+          "ursachen_ids": [4403],
+          "zitat": "Die Schlupflöcher im Zollrecht müssen geschlossen werden, durch die besonders asiatische Onlinehändler wie Temu unsichere Wegwerfprodukte am Zoll vorbeischleusen und europäische Hersteller unterbieten.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=29",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10864,
+          "instrument": 10845,
+          "beschreibung": "CO₂-Grenzausgleich CBAM praxistauglicher und wirksamer gestalten, gegen Wettbewerbsnachteile europäischer Industrie.",
+          "ursachen_ids": [4403],
+          "zitat": "Wir werden den […] europäischen CO₂-Zoll CBAM durch eine Ausweitung des Anwendungsbereichs, eine Berücksichtigung der Gesamtemissionen des Herstellers im Herkunftsland und die Nutzung von Standardwerten praxistauglicher und effektiver gestalten.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=29",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10865,
+          "beschreibung": "Staatliche Förderung für Produkte wie E-Autos nur für größtenteils in Europa produzierte Produkte gewähren.",
+          "ursachen_ids": [4403],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Lenkt geförderte Nachfrage etwa bei E-Autos auf europäische Produktion und mindert so Importdruck; die OECD sieht bei Local-Content-Vorgaben höhere Kosten und Einbußen in anderen Branchen. Ausgestaltung muss EU- und WTO-Recht beachten.",
+          "zitat": "Staatliche Förderprogramme für den Kauf von Produkten wie E-Autos werden wir künftig für Produkte gewähren, die größtenteils auch in Europa mit seinen hohen sozialen und ökologischen Standards produziert wurden.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=30",
+          "beleg_studie_url": "https://ideas.repec.org/p/oec/traaab/209-en.html",
+          "evidenz": "gemischt",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "durchsucht_fuer": [4401, 4402, 4403],
+      "massnahmen": [
+        {
+          "id": 10866,
+          "instrument": 10839,
+          "beschreibung": "Transatlantische Handelsbeziehungen durch sektorale Abkommen vertiefen, etwa ein Industriezölle-Abkommen",
+          "ursachen_ids": [4401],
+          "zitat": "Für uns Freie Demokraten ist der Ausbau der transatlantischen Handelsbeziehungen ein Schwerpunkt, mindestens durch sektorale Abkommen (z.B. einem Industriezölle-Abkommen)",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=52",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10867,
+          "instrument": 10838,
+          "beschreibung": "Ausgehandelte und laufende EU-Freihandelsabkommen mit mehreren Staaten zügig abschließen",
+          "ursachen_ids": [4401],
+          "zitat": "Wir setzen uns daher dafür ein, ausgehandelte EU-Freihandelsabkommen sowie laufende Verhandlungen vor allem mit Indonesien, Australien, Thailand, den Philippinen und Malaysia zügig abzuschließen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=52",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10868,
+          "instrument": 10840,
+          "beschreibung": "Partnerschaften bei Rohstoffen und grünen Technologien vor allem mit mittleren Mächten ausbauen",
+          "ursachen_ids": [4402],
+          "zitat": "Wir setzen uns für mehr wirtschaftliche Abkommen und Investitionspartnerschaften sowie Partnerschaften im Bereich Rohstoffe oder grüne Technologien insbesondere mit mittleren Mächten ein.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=52",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10869,
+          "instrument": 10842,
+          "beschreibung": "Moderne Recyclingmethoden fördern und den gesetzlichen Rahmen dafür ausgestalten",
+          "ursachen_ids": [4402],
+          "zitat": "Wir wollen moderne Recyclingmethoden statt Produktverbote. Dazu werden wir den bisherigen gesetzlichen Rahmen marktwirtschaftlicher und technologieoffener ausgestalten. Damit machen wir unser Land gleichzeitig unabhängiger von Rohstoffimporten.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=41",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10870,
+          "instrument": 10843,
+          "beschreibung": "Europaweit gegen die Schwemme illegaler Billigprodukte aus China vorgehen",
+          "ursachen_ids": [4403],
+          "zitat": "Wir fordern, der Schwemme illegaler Billigprodukte aus China europaweit den Kampf anzusagen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=49",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "durchsucht_fuer": [4401, 4402, 4403],
+      "massnahmen": [
+        {
+          "id": 10871,
+          "beschreibung": "Zusammenarbeit mit Mercosur, ASEAN und BRICS fördern, wenn sie dem Land dient; WTO reformieren",
+          "ursachen_ids": [4401],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "WTO-Reform und Zusammenarbeit mit weiteren Wirtschaftsräumen können Zollkonflikte entschärfen und Absatzmärkte öffnen; der Text bleibt unbestimmt, und Ergebnisse hängen von vielen anderen Staaten ab.",
+          "zitat": "Wir unterstützen die Reform der Welthandelsorganisation (WTO) und fördern die Zusammenarbeit mit den BRICS-Staaten sowie regionalen Organisationen wie ASEAN und Mercosur, wenn sie der wirtschaftlichen Wohlfahrt und politischen Selbstbestimmtheit unseres Landes dient.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=95",
+          "evidenz": "offen",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10872,
+          "beschreibung": "Vorhandene Handelshemmnisse beseitigen",
+          "ursachen_ids": [4401],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Abbau von Handelshemmnissen kann Exporte erleichtern; der Text nennt weder Partner noch Weg, und gegen US-Zölle hilft eigener Abbau nur über Verhandlungen auf EU-Ebene.",
+          "zitat": "Den internationalen Handel fördern wir, indem wir: […] vorhandene Handelshemmnisse beseitigen",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=15",
+          "evidenz": "offen",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10873,
+          "instrument": 10840,
+          "beschreibung": "Handelsabkommen abschließen, die Rohstofflieferketten sichern",
+          "ursachen_ids": [4402],
+          "zitat": "Den internationalen Handel fördern wir, indem wir: […] vorteilhafte Handelsabkommen für unser Land abschließen, die dazu beitragen, unsere Rohstofflieferketten zu sichern",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=15",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10874,
+          "beschreibung": "CO₂-Grenzausgleich aufheben",
+          "ursachen_ids": [4403],
+          "wirksamkeit": 0,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Die Abschaffung des CO₂-Grenzausgleichs entlastet Importeure, mindert aber den Schutz heimischer Hersteller vor CO₂-intensiven Importen; zum Ziel trägt sie nicht bei. Änderung nur durch EU-Beschluss.",
+          "zitat": "Den internationalen Handel fördern wir, indem wir: […] Aufhebung des CO₂-Grenzausgleichs",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=15",
+          "evidenz": "gemischt",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "durchsucht_fuer": [4401, 4402, 4403],
+      "massnahmen": [
+        {
+          "id": 10875,
+          "beschreibung": "Heimische Agrarproduktion vor billigen Importen aus Drittländern mit geringeren Standards schützen",
+          "ursachen_ids": [4403],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Schutz vor Billigimporten mit geringeren Standards (etwa Spiegelklauseln) kann Agrarbetriebe entlasten; ein Instrument nennt der Text nicht, Handelspolitik ist EU-Zuständigkeit und WTO-rechtlich begrenzt.",
+          "zitat": "Landwirtschaft im Einklang mit der Natur: Das geht nur, wenn die hohen Produktionsstandards der heimischen Agrarwirtschaft vor billigen Importen aus Drittländern, die unseren Standards nicht entsprechen, geschützt werden.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=42",
+          "evidenz": "offen",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10876,
+          "instrument": 10842,
+          "beschreibung": "Höhere gesetzliche Recyclingquoten und Einsatzquoten für wiederverwertete Stoffe",
+          "ursachen_ids": [4402],
+          "zitat": "Wir fordern höhere gesetzliche Recyclingquoten und höhere Einsatzquoten für wiederverwertete Stoffe.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=35",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10877,
+          "instrument": 10842,
+          "beschreibung": "Ressourcenschutzgesetz für sparsamen Umgang mit Ressourcen",
+          "ursachen_ids": [4402],
+          "zitat": "Unser Ziel ist eine Gesellschaft, die sparsam mit Ressourcen umgeht. Dafür braucht es ein Ressourcenschutzgesetz.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=35",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "durchsucht_fuer": [4401, 4402, 4403],
+      "massnahmen": [
+        {
+          "id": 10878,
+          "beschreibung": "Bundesregierung soll sich in der EU-Handelspolitik gegen unfaire Handelspraktiken der USA zur Wehr setzen",
+          "ursachen_ids": [4401],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "EU-Gegenmaßnahmen trafen 2018 gezielt US-Exporte bei geringem Eigenschaden (Fetzer/Schwarz); dass sie US-Zölle senken, ist nicht belegt, Eskalation droht. Text bleibt unbestimmt, Entscheidung liegt bei der EU.",
+          "zitat": "Wir fordern, dass die Bundesregierung im Rahmen der EU-Handelspolitik darauf drängt, dass wir uns gegen unfaire Handelspraktiken auch der USA zur Wehr setzen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=14",
+          "beleg_studie_url": "https://www.ifo.de/en/cesifo/node/43044",
+          "evidenz": "gemischt",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10879,
+          "beschreibung": "Internationale Abkommen mit Standards, damit heimische Anbieter nicht von Billigproduzenten verdrängt werden",
+          "ursachen_ids": [4403],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Verbindliche Standards in Abkommen können Billigkonkurrenz aus weniger regulierten Ländern verteuern; der Text nennt weder Partner noch Instrument, Handelspolitik ist EU-Zuständigkeit und braucht Zustimmung der Partnerländer.",
+          "zitat": "Was wir brauchen, sind internationale Abkommen, die die Versorgungssicherheit und den Zugang zu wichtigen Absatzmärkten gewährleisten sowie soziale, menschenrechtliche und ökologische Standards sichern, damit heimische Anbieter nicht von weniger regulierten ausländischen Billigproduzenten vom Markt verdrängt werden.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=13",
+          "evidenz": "offen",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10880,
+          "beschreibung": "Handelsabkommen wie das Mercosur-Abkommen ablehnen, die Konkurrenzdruck durch Importe erhöhen",
+          "ursachen_ids": [4403],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Verhindert zusätzlichen Importdruck auf die Landwirtschaft; das Thünen-Institut erwartet durch Mercosur aber nur Produktionsrückgänge unter 1 % (v. a. Rindfleisch), zugleich entfallen Exportchancen. Entscheidung liegt beim EU-Rat.",
+          "zitat": "Handelsabkommen, die den Konkurrenzdruck für unsere heimische Landwirtschaft erhöhen, wie das Mercosur-Abkommen, lehnen wir ab.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=19",
+          "beleg_studie_url": "https://www.topagrar.com/management-und-politik/news/welche-bedeutung-hat-mercosur-fuer-oezdemirs-agrarpolitik-13306578.html",
+          "evidenz": "belegt",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    }
+  ]
 }

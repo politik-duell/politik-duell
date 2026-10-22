@@ -1,0 +1,62 @@
+{
+  "partei_id": 12,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Betriebsräte bei der Einführung von Künstlicher Intelligenz mit echtem Mitbestimmungsrecht ausstatten (Einigungserfordernis).",
+      "ursachen_ids": [4301],
+      "zitat": "Wir reformieren das Betriebsverfassungsgesetz und werden die Mitbestimmung der Betriebsräte bei strategischer Personalplanung und -bemessung, bei der Einführung von Künstlicher Intelligenz sowie bei Gesundheitsschutz und Weiterbildung im Betrieb zu echten Mitbestimmungsrechten mit Einigungserfordernis ausbauen.",
+      "seite": 13
+    },
+    {
+      "beschreibung": "Verwaltungsprozesse mit Automatisierung und KI beschleunigen; dadurch sollen Beschäftigte entlastet werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [4301],
+      "zitat": "Wir nutzen Automatisierung und Künstliche Intelligenz, um Verwaltungsprozesse zu beschleunigen und effizienter zu gestalten. So entlasten wir die Beschäftigten und verbessern den Service für die Bürgerinnen und Bürger.",
+      "seite": 38
+    },
+    {
+      "beschreibung": "Bot-Kennzeichnungspflicht aus der KI-Verordnung strikt durchsetzen.",
+      "ursachen_ids": [4303],
+      "zitat": "Wir wollen außerdem eine strikte Durchsetzung der Bot-Kennzeichnungspflicht aus der KI-Verordnung",
+      "seite": 50
+    },
+    {
+      "beschreibung": "Dafür sorgen, dass KI-generierte Inhalte klar erkennbar sind.",
+      "ursachen_ids": [4303],
+      "zitat": "Zudem sorgen wir dafür, dass KI-generierte Inhalte klar erkennbar sind.",
+      "seite": 51
+    },
+    {
+      "beschreibung": "Europäische Plattform- und KI-Regeln durchsetzen und Plattformen zum Vorgehen gegen illegale Inhalte verpflichten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [4303],
+      "zitat": "Es gilt die europäischen Regelungen (DMA, DSA, KI-Verordnung) durchzusetzen und die Plattformen zu zwingen, gegen illegale Inhalte vorzugehen",
+      "seite": 50
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 4301, "name": "KI-Einsatz vorantreiben", "seite": 38 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 4302, "seiten": [13, 14, 15, 38], "grund": "Weiterbildung und Qualifizierung nur allgemein (Recht auf Weiterbildung, Weiterbildungsförderung der BA, Lebenslanges Lernen im öffentlichen Dienst); keine Zusage mit KI-Bezug zum Kompetenzaufbau der Beschäftigten." }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis (S. 3); Kapitel 1–2 Wirtschaft und Industrie, S. 9–10 vollständig (KI-Strategie, Ökosysteme, KI-Strategie, Ökosysteme, Recheninfrastruktur, Hochschulkompetenzen – Forschungsförderung, kein Bezug zu Tätigkeitsrisiko oder Qualifizierung von Beschäftigten, nicht erfasst); Kapitel 3 Arbeitsmarkt vollständig (S. 12–14); Kapitel 4 Bildung nur nach Begriffen (S. 15, Digitalpakt Schule ohne KI-Bezug); Verwaltung S. 38 (Kapitel 14, Ausschnitt S. 38); Polizei S. 43 (Kapitel 16, Ausschnitt); Kapitel 18 Medien und Kultur S. 49–51 vollständig für Desinformation, KI-Kennzeichnung und Kreativwirtschaft; S. 52 nicht gelesen (keine Begriffsstelle).
+
+Nicht erfasst:
+- S. 14: „Unser Ziel ist ein Recht auf Weiterbildung und beruflichen Neustart in allen Lebensphasen“ und „mit neuen Entwicklungen Schritt halten“: Ziel ohne KI-Bezug (zu 4302 nicht erfasst, s. oben).
+- S. 12: Qualifizierung während Arbeitslosigkeit, Transformationsförderung: allgemeiner Strukturwandel ohne KI-Bezug (4301 ausgeschlossen).
+- S. 13: „in einer digitalen Arbeitswelt gute Arbeitsbedingungen“, Datenschutz im Betrieb: kein KI-Bezug zur Verdrängung oder Qualifizierung.
+- S. 43: „Unsere Polizei soll automatisierte (KI-basierte) Datenanalysen vornehmen können“: KI-Einsatz durch Behörden, keine Abwehr von KI-Täuschung (4303 nicht).
+- S. 43: Cyberabwehr und Cybercrime-Strafverfolgung ohne KI-Bezug (wie 906 im Leitfaden ausgeschlossen).
+- S. 50: Algorithmen-Offenlegung der Plattformen und Faktencheck-Tools: Desinformation ohne KI-Bezug; Tools zum Faktencheck nur als Teil der Plattformpflichten.
+- S. 51: Vergütung und Urheberrechte für Kreative bei KI und digitalen Plattformen („faire Vergütungsregeln“): Lohn- und Vergütungsfrage, keine Verdrängung (nicht 4301).
+- S. 9–10: KI-Forschungsförderung, Ökosysteme und KI-Strategie: Innovationspolitik ohne Bezug zu Tätigkeitsrisiko oder Qualifizierung.
+
+Richtungen ohne Maßnahme: „Umschulung für KI-bedingten Wandel“, „Schutz vor KI-Verdrängung“ (nur allgemeine Mitbestimmung, s. oben), „Absicherung bei KI-bedingtem Jobverlust“ (4301: keine Zusage); „Rechtsanspruch auf KI-Weiterbildung“, „Förderung KI-Kompetenz für Geringqualifizierte“, „Betriebe zur KI-Schulung verpflichten“, „Eigenanteil bei KI-Weiterbildung“ (4302: keine KI-spezifische Zusage gefunden); „Strafbarkeit von Deepfakes“, „Verbot von Stimmklonen“, „Löschpflicht und Plattformhaftung für KI-Fälschungen“ (4303: nicht gefunden, S. 50–51 gelesen); „Gegenrichtung: Forschung und offene Modelle erlauben“ (4303: nicht gefunden; S. 9–10 gelesen).
+
+Seiten ohne Text: keine betroffen (S. 1, 2, 67, 68 liegen außerhalb der gelesenen Kapitel).

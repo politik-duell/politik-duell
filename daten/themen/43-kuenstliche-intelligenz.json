@@ -33,5 +33,241 @@
   "freigabe": {
     "datum": "2026-10-21",
     "art": "ki"
-  }
+  },
+  "instrumente": [
+    {
+      "id": 10825,
+      "name": "Kennzeichnungspflicht für KI-Inhalte und Bots durchsetzen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kennzeichnung senkt in Experimenten die Glaubwürdigkeit markierter Inhalte etwas, trifft aber auch wahre Inhalte; Kriminelle umgehen Kennzeichnungen leicht. Die Pflicht besteht schon (KI-Verordnung), Aufsicht ist national.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://academic.oup.com/pnasnexus/article/3/10/pgae403/7795946",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10826,
+      "name": "EU-Regeln zu KI und Plattformen national umsetzen und durchsetzen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Aufsicht nach KI-Verordnung und DSA kann Täuschung und illegale Inhalte eindämmen; die Zusage bleibt allgemein und die Wirkung auf KI-gestützte Kriminalität ist kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "durchsucht_fuer": [4301, 4302, 4303],
+      "keine_massnahme": {
+        "begruendung": "Erfasste Stellen (S. 29, 40) setzen laut Bewertung ohne Parteinamen an keiner der Ursachen an.",
+        "stand": "2026-10-22",
+        "treffer": 3,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 12,
+      "durchsucht_fuer": [4301, 4302, 4303],
+      "massnahmen": [
+        {
+          "id": 10827,
+          "beschreibung": "Betriebsräte bei der Einführung von Künstlicher Intelligenz mit echtem Mitbestimmungsrecht ausstatten (Einigungserfordernis).",
+          "ursachen_ids": [4301],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Betriebsräte senken bei Automatisierung das Jobverlustrisiko und erhöhen Weiterbildung, ohne Einführung zu bremsen; wirkt nur in Betrieben mit Betriebsrat. Änderung des BetrVG liegt beim Bund.",
+          "zitat": "Wir reformieren das Betriebsverfassungsgesetz und werden die Mitbestimmung der Betriebsräte bei strategischer Personalplanung und -bemessung, bei der Einführung von Künstlicher Intelligenz sowie bei Gesundheitsschutz und Weiterbildung im Betrieb zu echten Mitbestimmungsrechten mit Einigungserfordernis ausbauen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=13",
+          "beleg_studie_url": "https://www.zew.de/PU89075",
+          "evidenz": "belegt",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10828,
+          "instrument": 10825,
+          "beschreibung": "Bot-Kennzeichnungspflicht aus der KI-Verordnung strikt durchsetzen.",
+          "ursachen_ids": [4303],
+          "zitat": "Wir wollen außerdem eine strikte Durchsetzung der Bot-Kennzeichnungspflicht aus der KI-Verordnung",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=50",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10829,
+          "instrument": 10825,
+          "beschreibung": "Dafür sorgen, dass KI-generierte Inhalte klar erkennbar sind.",
+          "ursachen_ids": [4303],
+          "zitat": "Zudem sorgen wir dafür, dass KI-generierte Inhalte klar erkennbar sind.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=51",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10830,
+          "instrument": 10826,
+          "beschreibung": "Europäische Plattform- und KI-Regeln durchsetzen und Plattformen zum Vorgehen gegen illegale Inhalte verpflichten.",
+          "ursachen_ids": [4303],
+          "zitat": "Es gilt die europäischen Regelungen (DMA, DSA, KI-Verordnung) durchzusetzen und die Plattformen zu zwingen, gegen illegale Inhalte vorzugehen",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=50",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "durchsucht_fuer": [4301, 4302, 4303],
+      "massnahmen": [
+        {
+          "id": 10831,
+          "beschreibung": "KI-Entwicklung und -Anwendung gezielt fördern und digitale Kompetenzen in Unternehmen und Hochschulen stärken.",
+          "ursachen_ids": [4302],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Mittelstandsdigitalzentren werden schon vom Bund gefördert und können KI-Kompetenz in kleinen Betrieben stärken; die Zusage ist unbestimmt und erreicht Beschäftigte ohne Abschluss kaum gezielt.",
+          "zitat": "Wir haben eine große Kompetenz in Künstlicher Intelligenz (KI), müssen diese aber stärker in die Praxis bringen. Dazu wollen wir die Entwicklung und Anwendung von KI, die Etablierung robuster Cybersicherheitsstandards sowie die Stärkung digitaler Kompetenzen in Unternehmen und Hochschulen – etwa durch eine Weiterentwicklung der Mittelstandsdigitalzentren – gezielt fördern",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=23",
+          "evidenz": "offen",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10832,
+          "beschreibung": "Verbreitung von Nacktbildern gegen den Willen Betroffener, auch KI-generierter, grundsätzlich strafbar machen.",
+          "ursachen_ids": [4303],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Schließt eine Strafbarkeitslücke bei Deepfake-Nacktbildern, umsetzbar mit der EU-Richtlinie; ob Strafdrohung allein abschreckt, ist kaum untersucht, die Verfolgung im Netz bleibt schwierig.",
+          "zitat": "Bei der Umsetzung der EU-Richtlinie zur Bekämpfung von Gewalt gegen Frauen setzen wir uns dafür ein, dass die Verbreitung von KI-generierten oder echten Nacktbildern gegen den Willen der Betroffenen grundsätzlich eine Straftat darstellt.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=119",
+          "evidenz": "offen",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "durchsucht_fuer": [4301, 4302, 4303],
+      "keine_massnahme": {
+        "begruendung": "Erfasste Stellen (S. 23, 39, 9) setzen laut Bewertung ohne Parteinamen an keiner der Ursachen an.",
+        "stand": "2026-10-22",
+        "treffer": 1,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 15,
+      "durchsucht_fuer": [4301, 4302, 4303],
+      "keine_massnahme": {
+        "begruendung": "Erfasste Stellen (S. 51) setzen laut Bewertung ohne Parteinamen an keiner der Ursachen an.",
+        "stand": "2026-10-22",
+        "treffer": 1,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 16,
+      "durchsucht_fuer": [4301, 4302, 4303],
+      "massnahmen": [
+        {
+          "id": 10833,
+          "beschreibung": "Lernsoftware nicht als Ersatz für Lehrpersonal einsetzen; KI nicht zur Bewertung von Lernerfolgen nutzen",
+          "ursachen_ids": [4301],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Schützt Lehrkräfte vor Ersatz durch Software, betrifft aber nur einen Beruf; Schulen liegen in Länderzuständigkeit, der Bund kann das nicht regeln.",
+          "zitat": "Lernsoftware darf nicht als Ersatz für Lehrpersonal eingesetzt werden. KI darf nicht für die Bewertung oder die Vorhersage von Lernerfolgen genutzt werden.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=39",
+          "evidenz": "offen",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10834,
+          "beschreibung": "KI-Wissen als Teil der beruflichen Ausbildung verankern",
+          "ursachen_ids": [4302],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Verankerung in Ausbildungsordnungen erreicht viele Beschäftigte ohne Hochschulabschluss früh; bereits Beschäftigte erreicht sie nicht, Berufsschulen sind Ländersache. Wirkung kaum evaluiert.",
+          "zitat": "Politische Bildung, Medienkompetenz und KI-Wissen sollen Teil der beruflichen Ausbildung sein.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=40",
+          "evidenz": "offen",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10835,
+          "beschreibung": "KI-erzeugte Medieninhalte kennzeichnen; Plattformen haften für Falschinformationen und Rechtsverstöße solcher Inhalte",
+          "ursachen_ids": [4303],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Haftung schafft Anreiz zur Entfernung täuschender KI-Inhalte, Kennzeichnung wirkt nur begrenzt; Plattformhaftung ist im DSA EU-weit geregelt, eine nationale Verschärfung kaum möglich.",
+          "zitat": "Durch Künstliche Intelligenz erzeugte Medieninhalte müssen gekennzeichnet werden, Plattformen haften bei Falschinformationen und Rechtsverstößen durch solche Inhalte.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=55",
+          "beleg_studie_url": "https://academic.oup.com/pnasnexus/article/3/10/pgae403/7795946",
+          "evidenz": "gemischt",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10836,
+          "beschreibung": "Kriminalpolizei und Staatsanwaltschaft so ausstatten, dass sie KI-gestützte Manipulation verfolgen können",
+          "ursachen_ids": [4303],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Bessere Ausstattung erhöht die Chance, KI-gestützte Taten aufzuklären; konkrete Mittel fehlen, und Polizei und Justiz liegen großteils bei den Ländern. Wirkung auf diese Taten kaum untersucht.",
+          "zitat": "Stattdessen müssen Kriminalpolizei und Staatsanwaltschaft in die Lage versetzt werden, mit der dynamischen Entwicklung von Kriminalität Schritt zu halten: von der Wirtschaftskriminalität über Cyber-Attacken hin zu Manipulation mithilfe von KI und Algorithmen in sozialen Medien.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=48",
+          "evidenz": "offen",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10837,
+          "instrument": 10826,
+          "beschreibung": "EU-Gesetze zu KI und digitalen Diensten zügig in nationales Recht überführen",
+          "ursachen_ids": [4303],
+          "zitat": "Die EU-Gesetze über Künstliche Intelligenz (AI Act) und über digitale Dienste (Digital Services Act) müssen zügig in nationales Recht überführt und perspektivisch weiterentwickelt werden.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=57",
+          "stand": "2026-10-22",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "durchsucht_fuer": [4301, 4302, 4303],
+      "keine_massnahme": {
+        "begruendung": "Erfasste Stellen (S. 43, 35) setzen laut Bewertung ohne Parteinamen an keiner der Ursachen an.",
+        "stand": "2026-10-22",
+        "treffer": 0,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    }
+  ]
 }

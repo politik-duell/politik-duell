@@ -1,0 +1,9 @@
+Bewerte die Blindliste nach .claude/agents/blind-bewertung.md.
+Liste (nur lesen): /home/user/politik-duell/.cache/entwurf/43/blind.json
+Prüfsumme der Liste: 1a819e63644f86c79966f4acfb2151f6992e8ad6bd9cded881a8ea713da64724
+Antwort (nur schreiben): /home/user/politik-duell/.cache/entwurf/43/protokoll/bewertung-antwort.txt
+Heute ist der 2026-10-22.
+
+Teil-Neubewertung: Bewerte nur die 2 Kennungen unter „teilbewertung.zu_bewerten“ (neu oder geändert). Lies trotzdem die ganze Liste und „teilbewertung.bisher“ (die bisherige Bewertung der übrigen Kennungen, ohne Herkunft): Gleiche Lösungswege bekommen dasselbe Instrument – verweise auf ein bisheriges („"instrument": "I3"“) oder ein vorhandenes (Zahl).
+Bisherige Instrumente und Zuordnungen änderst du nicht; neue Instrumente bekommen Kennungen, die in „bisher“ nicht vorkommen. In „zuordnung“ stehen nur die Kennungen aus „zu_bewerten“, in „neue_instrumente“ nur neue Instrumente. Ein Skript führt deine Antwort mit der bisherigen zusammen und lehnt ab, wenn sich Unverändertes unterscheidet.
+Hältst du eine bisherige Bewertung für falsch, schreibe das unter das JSON – die Koordination entscheidet dann über eine vollständige Neubewertung.
