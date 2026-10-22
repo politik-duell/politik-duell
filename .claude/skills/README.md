@@ -17,8 +17,10 @@ flowchart TD
         T2["KI-Freigabe · eigener Commit"]
         T3["/thema-erfassen<br/>Leitfaden vollständig? (entwurf:auftrag)<br/>je Programm und Thema ein Agent programm-erfassung<br/>Themen und Nachträge in einem Lauf · Rückfragen nur bei Skriptfehlern"]
         T4["entwurf:blind → Agent blind-bewertung<br/>ohne Parteinamen: Werte, Instrumente, Zuordnung"]
-        T5["entwurf:eintragen · Prüfungen · Archiv · Pull Request"]
-        T1 --> T2 --> T3 --> T4 --> T5
+        T45["entwurf:eintragen · Prüfungen · Archiv"]
+        T46["Folgen (/nebenwirkungen-erfassen, fester Schritt)<br/>nebenwirkungen:blind → je Teil Agent nebenwirkungen-recherche<br/>ohne Parteinamen: sechs Bereiche, beide Richtungen, ohne Punkte"]
+        T5["Commit · Pull Request"]
+        T1 --> T2 --> T3 --> T4 --> T45 --> T46 --> T5
     end
     subgraph F["Forderungen"]
         F1["/forderung-erfassen<br/>npm run instrumente: schon vorhanden?"]
@@ -32,8 +34,6 @@ flowchart TD
         H4["haltung:eintragen (mind. 3 erkennbare Positionen)"]
         H1 --> H2 --> H3 --> H4
     end
-    T5 --> N["/nebenwirkungen-erfassen<br/>nebenwirkungen:blind → je Teil Agent nebenwirkungen-recherche<br/>ohne Parteinamen: Folgen in sechs Bereichen, beide Richtungen, ohne Punkte"]
-    N --> P
     T5 --> P["Später: menschliche Prüfung ersetzt KI-Freigabe und KI-Entwurf"]
     H4 --> P
 ```
