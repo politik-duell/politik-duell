@@ -1,0 +1,130 @@
+{
+  "pruefsumme": "ecc1f973bebf1afd",
+  "thema_id": 16,
+  "thema": "Heizungstausch",
+  "ziel": "Eigentümer und Mieter wissen, welche Heizung künftig erlaubt und sinnvoll ist, und können sich den Umstieg leisten.",
+  "ursachen": [
+    "Viele halten den Umstieg für nicht lohnend oder können ihn nicht bezahlen: 43 % der Interessierten zweifeln an der Wirtschaftlichkeit einer Wärmepumpe, 32 % fehlt das Geld (2026)",
+    "Die Regeln für neue Heizungen wurden in wenigen Jahren mehrfach grundlegend geändert (zuletzt Gebäudemodernisierungsgesetz, Juli 2026), dazu kommt ab 2028 ein europäischer CO₂-Preis für Heizöl und Gas",
+    "Viele wissen noch nicht, ob Fernwärme oder ein Wärmenetz kommt: Erst 26 % der Gemeinden haben ihre Wärmeplanung abgeschlossen (Juni 2026)",
+    "Mieterinnen und Mieter können über die Heizung nicht entscheiden, tragen aber die Heizkosten: Sie nutzen fast viermal seltener klimafreundliche Technik als Eigenheimbesitzer (15 % zu 59 %)"
+  ],
+  "teil": 2,
+  "teile": 3,
+  "einheiten": [
+    {
+      "id": 7049,
+      "name": "Klimakomponente im Wohngeld stärken",
+      "ebene": "bund",
+      "begruendung": "Hilft Haushalten mit Wohngeld, höhere Heizkosten oder Mieten nach einer Sanierung zu tragen; erreicht nur Wohngeldbeziehende und ändert nichts daran, ob die Heizung erneuert wird."
+    },
+    {
+      "id": 7051,
+      "name": "Kappungsgrenzen bei energetischen Sanierungen lockern",
+      "ebene": "bund",
+      "begruendung": "Erhöht den Anreiz für Vermieter, Heizung und Gebäude zu erneuern, was Heizkosten der Mieter senken kann; zugleich dürfen Mieten nach der Sanierung stärker steigen."
+    },
+    {
+      "id": 7053,
+      "name": "Heizungstausch nach Einkommen fördern, bis zu 100 % für niedrige Einkommen; 25 Mrd. Euro im Jahr",
+      "ebene": "bund",
+      "begruendung": "Beseitigt die Kostenhürde für Haushalte mit kleinem und mittlerem Einkommen weitgehend; 25 Milliarden Euro im Jahr sind ein Vielfaches der heutigen Förderung, die Finanzierung hängt an neuen Steuern."
+    },
+    {
+      "id": 7055,
+      "name": "Vermieter verpflichten, Fördermittel zu nutzen und weiterzugeben",
+      "ebene": "bund",
+      "begruendung": "Kann die Kosten für Mieter senken, wenn saniert wird; eine Pflicht zur Förderung ist ungewöhnlich und schwer durchzusetzen, und sie verpflichtet nicht zur Sanierung selbst."
+    },
+    {
+      "id": 7158,
+      "name": "Kommunale Wärmeplanung und Wärmenetze unterstützen: Beratung, Personal, Förderung (Landesprogramm)",
+      "ebene": "land",
+      "begruendung": "Beschleunigt die Wärmepläne und den Bau von Wärmenetzen, auf die viele Eigentümer warten; das Land kann Kommunen mit Geld und Fachleuten helfen."
+    },
+    {
+      "id": 7159,
+      "name": "Kommunale Wärmeplanung vereinfachen, realistische Vorgaben (Landesprogramm)",
+      "ebene": "land",
+      "begruendung": "Kann die Planung für kleine Gemeinden beschleunigen; wenn Pläne gröber werden, wissen Eigentümer aber weniger genau, was kommt."
+    }
+  ],
+  "suchhilfe": {
+    "haushalt": {
+      "frage": "Was kostet der Weg Bund, Ländern, Kommunen oder Sozialkassen – oder was bringt er ein?",
+      "vorteil": [
+        "Mehreinnahmen",
+        "Einsparung öffentlicher Haushalt",
+        "Entlastung Sozialversicherung"
+      ],
+      "nachteil": [
+        "Mindereinnahmen",
+        "Kosten Bundeshaushalt",
+        "Haushaltsausgaben Gesetzentwurf"
+      ]
+    },
+    "wirtschaft": {
+      "frage": "Welche Kosten oder Entlastungen entstehen für Unternehmen (besonders kleine und mittlere), wie wirkt er auf Preise und Verbraucher?",
+      "vorteil": [
+        "Entlastung Unternehmen",
+        "sinkende Preise",
+        "Investitionen"
+      ],
+      "nachteil": [
+        "Kosten für Unternehmen",
+        "Preisanstieg",
+        "Wettbewerbsfähigkeit"
+      ]
+    },
+    "aufwand": {
+      "frage": "Welcher Aufwand für Anträge, Nachweise und Kontrollen entsteht oder entfällt – für Bürger, Wirtschaft, Verwaltung?",
+      "vorteil": [
+        "Bürokratieabbau",
+        "Erfüllungsaufwand sinkt"
+      ],
+      "nachteil": [
+        "Erfüllungsaufwand",
+        "Nachweispflichten",
+        "Normenkontrollrat Stellungnahme"
+      ]
+    },
+    "umwelt": {
+      "frage": "Wie wirkt er auf Emissionen, Natur und Ressourcen, und welche Lasten oder Vorteile hat er für spätere Jahre?",
+      "vorteil": [
+        "Emissionsminderung",
+        "Umweltentlastung"
+      ],
+      "nachteil": [
+        "Mehremissionen",
+        "Umweltrisiken",
+        "Flächenverbrauch"
+      ]
+    },
+    "verteilung": {
+      "frage": "Wer gewinnt, wer trägt die Last – nach Einkommen, Alter, Familienform, Stadt und Land?",
+      "vorteil": [
+        "Entlastung geringe Einkommen",
+        "Verteilungswirkung progressiv"
+      ],
+      "nachteil": [
+        "regressiv",
+        "Mitnahmeeffekte",
+        "profitieren höhere Einkommen"
+      ]
+    },
+    "grundrechte": {
+      "frage": "Schränkt er Freiheiten ein oder stärkt er sie, behandelt er Gruppen ungleich, wie wirkt er auf Gesundheit und Sicherheit?",
+      "vorteil": [
+        "Gesundheit verbessert",
+        "Schutz",
+        "Gleichstellung"
+      ],
+      "nachteil": [
+        "Datenschutz",
+        "Grundrechtseingriff",
+        "Benachteiligung",
+        "Gesundheitsrisiko"
+      ]
+    }
+  }
+}

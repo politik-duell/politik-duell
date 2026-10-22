@@ -53,7 +53,20 @@
       "umsetzbarkeit": 3,
       "begruendung": "Senkt die Investition, die viele Haushalte scheuen oder nicht aufbringen können, und setzt damit an den laut KfW größten Hindernissen an. Ob sie Haushalte mit wenig Geld erreicht, hängt von der Staffelung ab.",
       "evidenz": "gemischt",
-      "beleg_studie_url": "https://www.kfw.de/PDF/Download-Center/Konzernthemen/Research/PDF-Dokumente-KfW-Energiewendebarometer/KfW-Energiewendebarometer-2026.pdf"
+      "beleg_studie_url": "https://www.kfw.de/PDF/Download-Center/Konzernthemen/Research/PDF-Dokumente-KfW-Energiewendebarometer/KfW-Energiewendebarometer-2026.pdf",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-22",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Die Bundesförderung für effiziente Gebäude, zu der auch die Heizungszuschüsse gehören, ist im Regierungsentwurf 2027 mit rund 12,56 Mrd. Euro im Klima- und Transformationsfonds veranschlagt.",
+            "quelle_url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1205500",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7035,
@@ -61,7 +74,12 @@
       "wirksamkeit": 2,
       "umsetzbarkeit": 2,
       "begruendung": "Nimmt Haushalten die hohe Anfangsinvestition ab, die laut KfW oft fehlt; solche Angebote gibt es bisher nur vereinzelt, ihre Wirkung in der Breite ist kaum untersucht.",
-      "evidenz": "offen"
+      "evidenz": "offen",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-22",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7036,
@@ -69,7 +87,28 @@
       "wirksamkeit": 1,
       "umsetzbarkeit": 3,
       "begruendung": "Schafft Wahlfreiheit und beendet den Streit um die 65-Prozent-Vorgabe; ist aber selbst eine weitere Änderung der Regeln, und mit dem steigenden CO₂-Preis bleibt offen, welche Heizung sich langfristig lohnt. 2026 mit dem Gebäudemodernisierungsgesetz weitgehend umgesetzt.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-22",
+        "hinweise": [
+          {
+            "bereich": "aufwand",
+            "richtung": "vorteil",
+            "text": "Laut Normenkontrollrat sank der Erfüllungsaufwand um rund 6,8 Mrd. Euro, zum Großteil durch das Gebäudemodernisierungsgesetz; entlastet wird überwiegend Aufwand, der noch nicht entstanden war.",
+            "quelle_url": "https://www.normenkontrollrat.bund.de/Webs/NKR/SharedDocs/Pressemitteilungen/DE/2026/2026-10-nkr-jahresbericht-2026.html",
+            "belegstufe": "A"
+          },
+          {
+            "bereich": "umwelt",
+            "richtung": "nachteil",
+            "text": "Ohne die 65-Prozent-Vorgabe wächst laut Öko-Institut die Lücke zum Gebäude-Klimaziel 2030 um 5 bis 8 auf 30 bis 33 Mio. t CO₂e pro Jahr (Berechnung zu den Eckpunkten, März 2026).",
+            "quelle_url": "https://idw-online.de/de/news866964",
+            "belegstufe": "C",
+            "zweite_quelle_url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1191030"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7037,
@@ -77,7 +116,28 @@
       "wirksamkeit": 1,
       "umsetzbarkeit": 3,
       "begruendung": "Vermeidet weitere Wechsel der Regeln; die Vorgaben selbst waren stark umstritten, und ob sie Regierungswechsel überdauern, ist offen – 2026 wurden sie grundlegend geändert.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-22",
+        "hinweise": [
+          {
+            "bereich": "aufwand",
+            "richtung": "nachteil",
+            "text": "Zum Vergleich: Der Erfüllungsaufwand sank laut Normenkontrollrat um rund 6,8 Mrd. Euro, zum Großteil durch das Gebäudemodernisierungsgesetz; diese Entlastung entfiele bei Beibehaltung der Vorgaben.",
+            "quelle_url": "https://www.normenkontrollrat.bund.de/Webs/NKR/SharedDocs/Pressemitteilungen/DE/2026/2026-10-nkr-jahresbericht-2026.html",
+            "belegstufe": "A"
+          },
+          {
+            "bereich": "umwelt",
+            "richtung": "vorteil",
+            "text": "Die 65-Prozent-Vorgabe verhindert laut Öko-Institut eine zusätzliche Klimalücke im Gebäudesektor; ihr Wegfall vergrößert die Lücke 2030 um 5 bis 8 auf 30 bis 33 Mio. t CO₂e pro Jahr (Eckpunkte, 2026).",
+            "quelle_url": "https://idw-online.de/de/news866964",
+            "belegstufe": "C",
+            "zweite_quelle_url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1191030"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7038,
@@ -86,7 +146,20 @@
       "umsetzbarkeit": 2,
       "begruendung": "Beschleunigt die Wärmepläne, auf die viele Eigentümer warten, und den Bau von Wärmenetzen; planen und bauen müssen die Kommunen, der Bund kann nur Geld und Beratung geben.",
       "evidenz": "gemischt",
-      "beleg_studie_url": "https://www.bbsr.bund.de/BBSR/DE/veroeffentlichungen/analysen-kompakt/2026/ak-09-2026.html"
+      "beleg_studie_url": "https://www.bbsr.bund.de/BBSR/DE/veroeffentlichungen/analysen-kompakt/2026/ak-09-2026.html",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-22",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Die Wärmeplanung kostet Gemeinden bis ca. 10.000 Einwohner laut Difu mindestens 50.000 Euro; der Bund stellt den Ländern dafür befristet bis 2028 insgesamt 500 Mio. Euro bereit.",
+            "quelle_url": "https://www.bmwsb.bund.de/SharedDocs/faqs/DE/kwp/kwp.html",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7039,
@@ -94,7 +167,12 @@
       "wirksamkeit": 1,
       "umsetzbarkeit": 3,
       "begruendung": "Schützt Mieterinnen und Mieter vor Mietsteigerungen durch den Heizungstausch; zugleich sinkt der Anreiz für Vermieter, die Heizung zu erneuern, sodass Mieter länger die Kosten alter Heizungen tragen können.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-22",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7158,
@@ -102,7 +180,20 @@
       "wirksamkeit": 2,
       "umsetzbarkeit": 3,
       "begruendung": "Beschleunigt die Wärmepläne und den Bau von Wärmenetzen, auf die viele Eigentümer warten; das Land kann Kommunen mit Geld und Fachleuten helfen.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-22",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Der Bund stellt den Ländern für die erstmalige Wärmeplanung bis 2028 insgesamt 500 Mio. Euro bereit; das Difu schätzt die Kosten je Gemeinde bis etwa 10.000 Einwohner auf mindestens 50.000 Euro.",
+            "quelle_url": "https://www.bmwsb.bund.de/SharedDocs/faqs/DE/kwp/kwp.html",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7159,
@@ -110,7 +201,12 @@
       "wirksamkeit": 1,
       "umsetzbarkeit": 3,
       "begruendung": "Kann die Planung für kleine Gemeinden beschleunigen; wenn Pläne gröber werden, wissen Eigentümer aber weniger genau, was kommt.",
-      "evidenz": "offen"
+      "evidenz": "offen",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-22",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7160,
@@ -118,7 +214,27 @@
       "wirksamkeit": 1,
       "umsetzbarkeit": 1,
       "begruendung": "Nimmt Kommunen eine Pflicht ab und Eigentümern das Warten auf einen Plan, schafft aber keine Klarheit, ob ein Wärmenetz kommt. Die Pflicht steht im Bundesrecht; das Land kann nur sein Ausführungsgesetz ändern oder im Bundesrat werben.",
-      "evidenz": "offen"
+      "evidenz": "offen",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-22",
+        "hinweise": [
+          {
+            "bereich": "aufwand",
+            "richtung": "vorteil",
+            "text": "Kommunen sparen Planungskosten: Das Difu schätzt sie für Orte bis etwa 10.000 Einwohner auf mindestens 50.000 Euro; der Bund gibt den Ländern dafür bis 2028 insgesamt 500 Mio. Euro.",
+            "quelle_url": "https://www.bmwsb.bund.de/SharedDocs/faqs/DE/kwp/kwp.html",
+            "belegstufe": "A"
+          },
+          {
+            "bereich": "umwelt",
+            "richtung": "nachteil",
+            "text": "Laut Umweltbundesamt ist eine vorausschauende kommunale Planung nötig, um Wärmenetze auszubauen und schnell zu dekarbonisieren; der Netzausbau gilt als entscheidend für die Wärmewende.",
+            "quelle_url": "https://www.umweltbundesamt.de/themen/waermeversorgung-von-gebaeuden-muss",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     }
   ],
   "abdeckung": [
@@ -159,7 +275,20 @@
           "evidenz": "offen",
           "stand": "2026-09-30",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Zum Vergleich: Alle Maßnahmen des Investitionssofortprogramms zusammen (u. a. Abschreibungen, Körperschaftsteuer) senken die Steuern 2026 um 8,1 und 2027 um 11,8 Mrd. Euro.",
+                "quelle_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw23-de-investitionssofortprogramm-1083898",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         }
       ]
     },
@@ -260,7 +389,12 @@
           "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=44",
           "stand": "2026-09-30",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         }
       ]
     },
@@ -290,7 +424,12 @@
           "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=44",
           "stand": "2026-09-30",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         }
       ]
     },
@@ -325,7 +464,20 @@
           "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=34",
           "stand": "2026-09-30",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Der Vorschlag nennt 25 Mrd. Euro im Jahr; im Haushaltsentwurf 2027 sind für die Bundesförderung effiziente Gebäude rund 12,56 Mrd. Euro vorgesehen.",
+                "quelle_url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1205500",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 7054,
@@ -350,7 +502,12 @@
           "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=34",
           "stand": "2026-09-30",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 7056,
@@ -611,7 +768,27 @@
           "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=86",
           "stand": "2026-09-30",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Für das Bundesprogramm KfW-Förderkredit Geothermie (Bohrungen für Wärmenetze) stellt der Bund einen Garantierahmen von 600 Mio. Euro und rund 50 Mio. Euro Haushaltsmittel bereit.",
+                "quelle_url": "https://www.kfw.de/%C3%9Cber-die-KfW/Newsroom/Aktuelles/Deutschlandfonds.html",
+                "belegstufe": "A"
+              },
+              {
+                "bereich": "umwelt",
+                "richtung": "gemischt",
+                "text": "Laut Umweltbundesamt vermeidet Geothermie Treibhausgase und birgt bei Einhaltung der Vorgaben keine unbeherrschbaren Umweltrisiken; induzierte Seismizität gehört zu den geprüften Risiken.",
+                "quelle_url": "https://www.umweltbundesamt.de/themen/klima-energie/erneuerbare-energien/geothermie",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         }
       ]
     },

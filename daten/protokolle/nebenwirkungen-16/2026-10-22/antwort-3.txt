@@ -1,0 +1,93 @@
+{
+  "pruefsumme": "7abd3eb76c5dc0c7",
+  "einheiten": [
+    {
+      "id": 7160,
+      "bereiche": [
+        { "bereich": "haushalt", "gesucht_vorteil": ["Wärmeplanung Bundesmittel Länder Kommunen Entlastung Haushalt"], "gesucht_nachteil": ["Wärmeplanungsgesetz Kosten Länder Kommunen nicht auskömmlich Konnexität"], "hinweis": null },
+        { "bereich": "wirtschaft", "gesucht_vorteil": ["Wärmeplanung Entlastung Unternehmen Gebäudeeigentümer"], "gesucht_nachteil": ["Wärmeplanung Investitionssicherheit Stadtwerke Wärmenetz Unternehmen"], "hinweis": null },
+        {
+          "bereich": "aufwand",
+          "gesucht_vorteil": ["Wärmeplanung Kosten Kommune Erfüllungsaufwand Entlastung", "Wärmeplanungsgesetz Erfüllungsaufwand Verwaltung 535 Millionen"],
+          "gesucht_nachteil": ["Wärmeplanung Nachweispflichten Datenübermittlung Aufwand Gebäudeeigentümer"],
+          "hinweis": {
+            "richtung": "vorteil",
+            "text": "Kommunen sparen Planungskosten: Das Difu schätzt sie für Orte bis etwa 10.000 Einwohner auf mindestens 50.000 Euro; der Bund gibt den Ländern dafür bis 2028 insgesamt 500 Mio. Euro.",
+            "quelle_url": "https://www.bmwsb.bund.de/SharedDocs/faqs/DE/kwp/kwp.html",
+            "belegstufe": "A",
+            "beleg": "\"Die Kosten für die Wärmeplanung sind sehr unterschiedlich\"; Difu: \"die Kosten auf mindestens 50.000 Euro\" (bis ca. 10.000 Einwohner); Bund: \"finanzielle Mittel in Höhe von insgesamt 500 Millionen Euro\" an die Länder, befristet bis 2028 (BMWSB, Fragen und Antworten zur Kommunalen Wärmeplanung)"
+          }
+        },
+        {
+          "bereich": "umwelt",
+          "gesucht_vorteil": ["Wärmeplanung Abschaffung Emissionsminderung Umweltentlastung", "Wärmeplanung Treibhausgasneutralität Wärmenetze Emissionsminderung"],
+          "gesucht_nachteil": ["Umweltbundesamt kommunale Wärmeplanung Wärmewende Wärmenetze Ausbau Planung notwendig", "Wärmeplanung Umweltrisiken Flächenverbrauch"],
+          "hinweis": {
+            "richtung": "nachteil",
+            "text": "Laut Umweltbundesamt ist eine vorausschauende kommunale Planung nötig, um Wärmenetze auszubauen und schnell zu dekarbonisieren; der Netzausbau gilt als entscheidend für die Wärmewende.",
+            "quelle_url": "https://www.umweltbundesamt.de/themen/waermeversorgung-von-gebaeuden-muss",
+            "belegstufe": "A",
+            "beleg": "\"Auch der Ausbau und die Dekarbonisierung von Wärmenetzen ist entscheidend.\" \"Um Wärmenetze auszubauen und möglichst schnell zu dekarbonisieren, ist eine vorausschauende Planung notwendig.\" (UBA, Wärmeversorgung von Gebäuden muss treibhausgasneutral werden)"
+          }
+        },
+        { "bereich": "verteilung", "gesucht_vorteil": ["Wärmeplanung Mieter Entlastung geringe Einkommen"], "gesucht_nachteil": ["Wärmeplanung Abschaffung Mieter Kleine Gemeinden Stadt Land Benachteiligung"], "hinweis": null },
+        { "bereich": "grundrechte", "gesucht_vorteil": ["Wärmeplanung Bürgerinnen Bürger Beteiligung Datenschutz"], "gesucht_nachteil": ["Wärmeplanung Datenschutz Gebäudedaten Grundrechtseingriff"], "hinweis": null }
+      ]
+    },
+    {
+      "id": 7172,
+      "bereiche": [
+        {
+          "bereich": "haushalt",
+          "gesucht_vorteil": ["Geothermie Förderung Einsparung öffentlicher Haushalt Wärmenetz Kommunen"],
+          "gesucht_nachteil": ["KfW Förderkredit Geothermie Garantierahmen Haushaltsmittel Bund", "Tiefengeothermie Fündigkeitsrisiko öffentliche Haushalte Kosten Kommune"],
+          "hinweis": {
+            "richtung": "nachteil",
+            "text": "Für das Bundesprogramm KfW-Förderkredit Geothermie (Bohrungen für Wärmenetze) stellt der Bund einen Garantierahmen von 600 Mio. Euro und rund 50 Mio. Euro Haushaltsmittel bereit.",
+            "quelle_url": "https://www.kfw.de/%C3%9Cber-die-KfW/Newsroom/Aktuelles/Deutschlandfonds.html",
+            "belegstufe": "A",
+            "beleg": "\"stellt der Bund einen Garantierahmen (Gewährleistung) von 600 Millionen EUR\" \"sowie rund 50 Millionen EUR Haushaltsmittel zur Verfügung.\" (KfW, Fragen und Antworten zum Deutschlandfonds; Programm startete laut KfW-Pressemitteilung am 18.12.2025)"
+          }
+        },
+        { "bereich": "wirtschaft", "gesucht_vorteil": ["Geothermie Investitionen Stadtwerke Wertschöpfung Wärmepreise"], "gesucht_nachteil": ["Tiefengeothermie Bohrkosten Stadtwerke Wärmepreise Wettbewerbsfähigkeit"], "hinweis": null },
+        { "bereich": "aufwand", "gesucht_vorteil": ["Geothermie-Beschleunigungsgesetz Bürokratieabbau Genehmigungsverfahren Frist"], "gesucht_nachteil": ["Geothermie Genehmigung Nachweispflichten Erfüllungsaufwand Stellungnahme"], "hinweis": null },
+        {
+          "bereich": "umwelt",
+          "gesucht_vorteil": ["Geothermie Emissionsminderung Treibhausgase vermeiden Umweltbundesamt"],
+          "gesucht_nachteil": ["Tiefengeothermie Umweltrisiken induzierte Seismizität Grundwasser Umweltbundesamt"],
+          "hinweis": {
+            "richtung": "gemischt",
+            "text": "Laut Umweltbundesamt vermeidet Geothermie Treibhausgase und birgt bei Einhaltung der Vorgaben keine unbeherrschbaren Umweltrisiken; induzierte Seismizität gehört zu den geprüften Risiken.",
+            "quelle_url": "https://www.umweltbundesamt.de/themen/klima-energie/erneuerbare-energien/geothermie",
+            "belegstufe": "A",
+            "beleg": "Geothermie \"die schon heute Treibhausgasemissionen vermeidet\"; bei Einhaltung der rechtlichen Vorgaben und Frühwarnsystemen \"keine unbeherrschbaren Risiken für die Umwelt bestehen\"; \"induzierte Seismizität\" als möglicher Umwelteinfluss der Stimulation genannt (UBA, Geothermie)"
+          }
+        },
+        { "bereich": "verteilung", "gesucht_vorteil": ["Geothermie Wärmenetz Anschluss geringe Einkommen Wärmepreis stabil"], "gesucht_nachteil": ["Geothermie Wärmenetz Anschlusszwang Kosten Haushalte Stadt Land"], "hinweis": null },
+        { "bereich": "grundrechte", "gesucht_vorteil": ["Geothermie Gesundheit Schutz Versorgungssicherheit"], "gesucht_nachteil": ["Geothermie Wasserschutzgebiet Gesundheitsrisiko Anwohner Beteiligung"], "hinweis": null }
+      ]
+    },
+    {
+      "id": 7227,
+      "bereiche": [
+        {
+          "bereich": "haushalt",
+          "gesucht_vorteil": ["Investitionssofortprogramm Wachstum Mehreinnahmen Gewerbesteuer Kommunen"],
+          "gesucht_nachteil": ["Investitionssofortprogramm degressive Abschreibung Mindereinnahmen Bund Länder Kommunen"],
+          "hinweis": {
+            "richtung": "nachteil",
+            "text": "Zum Vergleich: Alle Maßnahmen des Investitionssofortprogramms zusammen (u. a. Abschreibungen, Körperschaftsteuer) senken die Steuern 2026 um 8,1 und 2027 um 11,8 Mrd. Euro.",
+            "quelle_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw23-de-investitionssofortprogramm-1083898",
+            "belegstufe": "A",
+            "beleg": "\"Im kommenden Jahr sollen die Maßnahmen zu niedrigeren Steuern für Bund, Länder und Kommunen von 8,1 Milliarden Euro führen\"; \"2027 sind dann 11,8 Milliarden Euro, 2028 zwölf Milliarden Euro und 2029 11,3 Milliarden Euro vorgesehen.\" Bundesrat: \"Bis zum Jahr 2029 erwarten sie bei Ländern und Kommunen finanzielle Ausfälle in Höhe von 30 Milliarden Euro.\" (Bundestag, Textarchiv KW 23/2025)"
+          }
+        },
+        { "bereich": "wirtschaft", "gesucht_vorteil": ["degressive Abschreibung Investitionen Entlastung Unternehmen Rentabilität"], "gesucht_nachteil": ["degressive Abschreibung Mitnahmeeffekte Unternehmen Kritik"], "hinweis": null },
+        { "bereich": "aufwand", "gesucht_vorteil": ["Abschreibung Bürokratieabbau Erfüllungsaufwand sinkt Investitionssofortprogramm"], "gesucht_nachteil": ["Abschreibung Nachweispflichten Erfüllungsaufwand Gesetzentwurf"], "hinweis": null },
+        { "bereich": "umwelt", "gesucht_vorteil": ["Abschreibung Klimatechnologie Emissionsminderung Investitionen"], "gesucht_nachteil": ["Sofortabschreibung Mehremissionen Umweltrisiken"], "hinweis": null },
+        { "bereich": "verteilung", "gesucht_vorteil": ["Abschreibung Vermieter Mieter Entlastung Umlage Heizkosten"], "gesucht_nachteil": ["Abschreibung Vermieter Modernisierungsumlage Mieter regressiv Mitnahmeeffekte"], "hinweis": null },
+        { "bereich": "grundrechte", "gesucht_vorteil": ["Abschreibung Vermieter Gesundheit Schutz Gleichstellung"], "gesucht_nachteil": ["Abschreibung Vermieter Benachteiligung Mieter Grundrechtseingriff"], "hinweis": null }
+      ]
+    }
+  ]
+}

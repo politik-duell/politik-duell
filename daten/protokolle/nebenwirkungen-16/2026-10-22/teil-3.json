@@ -1,0 +1,112 @@
+{
+  "pruefsumme": "7abd3eb76c5dc0c7",
+  "thema_id": 16,
+  "thema": "Heizungstausch",
+  "ziel": "Eigentümer und Mieter wissen, welche Heizung künftig erlaubt und sinnvoll ist, und können sich den Umstieg leisten.",
+  "ursachen": [
+    "Viele halten den Umstieg für nicht lohnend oder können ihn nicht bezahlen: 43 % der Interessierten zweifeln an der Wirtschaftlichkeit einer Wärmepumpe, 32 % fehlt das Geld (2026)",
+    "Die Regeln für neue Heizungen wurden in wenigen Jahren mehrfach grundlegend geändert (zuletzt Gebäudemodernisierungsgesetz, Juli 2026), dazu kommt ab 2028 ein europäischer CO₂-Preis für Heizöl und Gas",
+    "Viele wissen noch nicht, ob Fernwärme oder ein Wärmenetz kommt: Erst 26 % der Gemeinden haben ihre Wärmeplanung abgeschlossen (Juni 2026)",
+    "Mieterinnen und Mieter können über die Heizung nicht entscheiden, tragen aber die Heizkosten: Sie nutzen fast viermal seltener klimafreundliche Technik als Eigenheimbesitzer (15 % zu 59 %)"
+  ],
+  "teil": 3,
+  "teile": 3,
+  "einheiten": [
+    {
+      "id": 7160,
+      "name": "Pflicht zur kommunalen Wärmeplanung abschaffen (Landesprogramm)",
+      "ebene": "land",
+      "begruendung": "Nimmt Kommunen eine Pflicht ab und Eigentümern das Warten auf einen Plan, schafft aber keine Klarheit, ob ein Wärmenetz kommt. Die Pflicht steht im Bundesrecht; das Land kann nur sein Ausführungsgesetz ändern oder im Bundesrat werben."
+    },
+    {
+      "id": 7172,
+      "name": "Tiefengeothermie als kommunale Wärmequelle fördern, Genehmigungen entbürokratisieren",
+      "ebene": "land",
+      "begruendung": "Kann dort, wo die Geologie passt, Wärmenetze möglich machen und so Klarheit über die künftige Versorgung schaffen; Tiefengeothermie ist teuer, braucht Jahre und kommt nur für einen Teil der Gemeinden in Frage."
+    },
+    {
+      "id": 7227,
+      "name": "Investitionen in Klimatechnologien und Energieeffizienz steuerlich schneller absetzbar, auch für Vermieter",
+      "ebene": "bund",
+      "begruendung": "Macht den Heizungstausch auch für Vermieter steuerlich attraktiver, sodass mehr Mietwohnungen umgestellt werden können; ob Mieterinnen und Mieter dabei sparen, hängt von der Umlage ab, und die Maßnahme ist nicht auf Mietwohnungen zugeschnitten."
+    }
+  ],
+  "suchhilfe": {
+    "haushalt": {
+      "frage": "Was kostet der Weg Bund, Ländern, Kommunen oder Sozialkassen – oder was bringt er ein?",
+      "vorteil": [
+        "Mehreinnahmen",
+        "Einsparung öffentlicher Haushalt",
+        "Entlastung Sozialversicherung"
+      ],
+      "nachteil": [
+        "Mindereinnahmen",
+        "Kosten Bundeshaushalt",
+        "Haushaltsausgaben Gesetzentwurf"
+      ]
+    },
+    "wirtschaft": {
+      "frage": "Welche Kosten oder Entlastungen entstehen für Unternehmen (besonders kleine und mittlere), wie wirkt er auf Preise und Verbraucher?",
+      "vorteil": [
+        "Entlastung Unternehmen",
+        "sinkende Preise",
+        "Investitionen"
+      ],
+      "nachteil": [
+        "Kosten für Unternehmen",
+        "Preisanstieg",
+        "Wettbewerbsfähigkeit"
+      ]
+    },
+    "aufwand": {
+      "frage": "Welcher Aufwand für Anträge, Nachweise und Kontrollen entsteht oder entfällt – für Bürger, Wirtschaft, Verwaltung?",
+      "vorteil": [
+        "Bürokratieabbau",
+        "Erfüllungsaufwand sinkt"
+      ],
+      "nachteil": [
+        "Erfüllungsaufwand",
+        "Nachweispflichten",
+        "Normenkontrollrat Stellungnahme"
+      ]
+    },
+    "umwelt": {
+      "frage": "Wie wirkt er auf Emissionen, Natur und Ressourcen, und welche Lasten oder Vorteile hat er für spätere Jahre?",
+      "vorteil": [
+        "Emissionsminderung",
+        "Umweltentlastung"
+      ],
+      "nachteil": [
+        "Mehremissionen",
+        "Umweltrisiken",
+        "Flächenverbrauch"
+      ]
+    },
+    "verteilung": {
+      "frage": "Wer gewinnt, wer trägt die Last – nach Einkommen, Alter, Familienform, Stadt und Land?",
+      "vorteil": [
+        "Entlastung geringe Einkommen",
+        "Verteilungswirkung progressiv"
+      ],
+      "nachteil": [
+        "regressiv",
+        "Mitnahmeeffekte",
+        "profitieren höhere Einkommen"
+      ]
+    },
+    "grundrechte": {
+      "frage": "Schränkt er Freiheiten ein oder stärkt er sie, behandelt er Gruppen ungleich, wie wirkt er auf Gesundheit und Sicherheit?",
+      "vorteil": [
+        "Gesundheit verbessert",
+        "Schutz",
+        "Gleichstellung"
+      ],
+      "nachteil": [
+        "Datenschutz",
+        "Grundrechtseingriff",
+        "Benachteiligung",
+        "Gesundheitsrisiko"
+      ]
+    }
+  }
+}
