@@ -38,7 +38,20 @@
       "wirksamkeit": 1,
       "umsetzbarkeit": 2,
       "begruendung": "Eine Haltelinie verhindert, dass die Renten wegen des steigenden Verhältnisses von Rentnern zu Beitragszahlenden hinter den Löhnen zurückfallen; das Missverhältnis bleibt, die Kosten steigen über Beiträge oder Steuerzuschüsse. Per Bundesgesetz umsetzbar, die dauerhafte Finanzierung ist offen.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-22",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Die Verlängerung der Haltelinie führt laut Deutscher Rentenversicherung ab 2032 zu jährlich knapp 12 Mrd. Euro Mehrausgaben, die der Bund erstatten soll.",
+            "quelle_url": "https://www.deutsche-rentenversicherung.de/DRV/DE/Ueber-uns-und-Presse/Presse/Pressemitteilungen/Pressemitteilungen-archiv/2025/2025-12-10-bvv-gunkel",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6174,
@@ -46,7 +59,27 @@
       "wirksamkeit": 1,
       "umsetzbarkeit": 3,
       "begruendung": "Mehr Weiterarbeit im Rentenalter bringt der Rentenversicherung etwas mehr Beiträge und Steuern; Studien erwarten nur kleine Beschäftigungseffekte, Steuerfreiheit kostet Einnahmen. Per Bundesgesetz umsetzbar.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-22",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Die steuerfreie Weiterarbeit im Rentenalter entlastet die Beschäftigten laut Bundesregierung um bis zu 890 Mio. Euro jährlich; in dieser Höhe sinken die Steuereinnahmen.",
+            "quelle_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw46-de-aktivrente-1123118",
+            "belegstufe": "A"
+          },
+          {
+            "bereich": "verteilung",
+            "richtung": "gemischt",
+            "text": "Die Aktivrente entlastet laut DIW vor allem Besserverdienende im Rentenalter; Minijobbende, rund 645.000 Personen, profitieren nicht von der Steuerfreiheit.",
+            "quelle_url": "https://www.diw.de/de/diw_01.c.959970.de/aktivrente_entlastet_vor_allem_besserverdienende_rentner_innen.html",
+            "belegstufe": "B"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6175,
@@ -54,7 +87,12 @@
       "wirksamkeit": 2,
       "umsetzbarkeit": 3,
       "begruendung": "Viele Solo-Selbstständige sorgen kaum vor und sind im Alter häufiger arm; eine Vorsorgepflicht setzt direkt an dieser Lücke an, wirkt aber erst über Jahrzehnte, und Pflichtbeiträge belasten Selbstständige mit geringem Einkommen. Per Bundesgesetz umsetzbar.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-22",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6176,
@@ -62,7 +100,12 @@
       "wirksamkeit": 1,
       "umsetzbarkeit": 2,
       "begruendung": "Mehr Einzahlende verbessern das Verhältnis zu den Rentnern zunächst, später entstehen aus den Beiträgen aber auch Ansprüche; für Beamte kostet der Übergang Bund und Länder anfangs viel Geld. Per Bundesgesetz möglich, mit langen Übergangszeiten.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-22",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6177,
@@ -70,7 +113,12 @@
       "wirksamkeit": 2,
       "umsetzbarkeit": 3,
       "begruendung": "Setzt direkt an der geringen Verbreitung von Betriebsrenten an; mehr Förderung und weniger Haftungsrisiken haben die Verbreitung bisher aber nur langsam erhöht, vor allem in kleinen Betrieben und bei Geringverdienenden. Per Bundesgesetz umsetzbar.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-22",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6178,
@@ -78,7 +126,12 @@
       "wirksamkeit": 2,
       "umsetzbarkeit": 3,
       "begruendung": "Kostengünstige, einfache Produkte und eine Förderung für kleine und mittlere Einkommen setzen an der Lücke bei der Zusatzvorsorge an; ob deutlich mehr Menschen vorsorgen, ist offen, solange die Teilnahme freiwillig bleibt. Per Bundesgesetz umsetzbar.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-22",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6179,
@@ -86,7 +139,12 @@
       "wirksamkeit": 1,
       "umsetzbarkeit": 2,
       "begruendung": "Ein Fonds kann den Beitragsanstieg dämpfen, wenn weniger Beitragszahlende auf mehr Rentner kommen; bei den vorgeschlagenen Größenordnungen ist der Effekt klein, die Erträge sind unsicher. Per Bundesgesetz umsetzbar, bei Kreditfinanzierung mit Haushaltsrisiken.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-22",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6180,
@@ -94,7 +152,34 @@
       "wirksamkeit": 2,
       "umsetzbarkeit": 2,
       "begruendung": "Eine stärkere Aufwertung niedriger Ansprüche setzt direkt an niedrigen Renten nach niedrigen Löhnen an; wer große Lücken im Erwerbsleben hat, profitiert oft nicht, die Kosten steigen. Per Bundesgesetz umsetzbar, die Finanzierung ist nicht geklärt.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-22",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Zum Vergleich: Die Einführung der Grundrente kostete laut Gesetzentwurf 2021 rund 1,3 Mrd. Euro; der Bundeszuschuss sollte dauerhaft um 1,4 Mrd. Euro steigen.",
+            "quelle_url": "https://www.bundestag.de/webarchiv/Ausschuesse/ausschuesse19/a11/Anhoerungen/683366-683366",
+            "belegstufe": "A"
+          },
+          {
+            "bereich": "aufwand",
+            "richtung": "nachteil",
+            "text": "Zum Vergleich: Die Rentenversicherung nannte die Einkommensprüfung der Grundrente trotz Datenaustausch 'mit einem hohen Bürokratieaufwand verbunden' und nannte 1.700 Stellen.",
+            "quelle_url": "https://www.bundestag.de/webarchiv/Ausschuesse/ausschuesse19/a11/Anhoerungen/683366-683366",
+            "belegstufe": "A"
+          },
+          {
+            "bereich": "verteilung",
+            "richtung": "gemischt",
+            "text": "Zum Vergleich: Bei der bestehenden Grundrente gingen Ende 2024 rund 76 % der Zuschläge an Frauen; rund die Hälfte der Berechtigten erhielt wegen zu hoher Haushaltseinkommen nichts.",
+            "quelle_url": "https://www.diw.de/de/diw_01.c.981265.de/publikationen/wochenberichte/2025_41_1/grundrentenberechtigte_haeufiger_erwerbstaetig_als_andere_rentner_innen.html",
+            "belegstufe": "B"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6181,
@@ -102,7 +187,27 @@
       "wirksamkeit": 1,
       "umsetzbarkeit": 3,
       "begruendung": "Ein höherer Mindestlohn erhöht die Rentenansprüche von Geringverdienenden; auch mit 15 Euro liegt die Rente nach Lücken im Erwerbsleben oft nahe der Grundsicherung. Per Bundesgesetz umsetzbar, bisher entscheidet die Mindestlohnkommission.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-22",
+        "hinweise": [
+          {
+            "bereich": "wirtschaft",
+            "richtung": "nachteil",
+            "text": "Auf höhere Lohnkosten reagierten nach der Anhebung auf 12 Euro (2022) 53,4 % der Mindestlohnbetriebe und 72,6 % im Gastgewerbe mit Preiserhöhungen (IAB-Betriebsbefragung).",
+            "quelle_url": "https://iab-forum.de/mindestlohnerhoehung-auf-12-euro-nur-wenige-betriebe-reagierten-eigenen-angaben-zufolge-mit-entlassungen/",
+            "belegstufe": "B"
+          },
+          {
+            "bereich": "verteilung",
+            "richtung": "vorteil",
+            "text": "Von der Anhebung auf 13,90 Euro waren laut Destatis rund 20 % der Jobs von Frauen betroffen (Männer 14 %), in Ostdeutschland rund 20 % (Westdeutschland 16 %).",
+            "quelle_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/07/PD25_256_62.html",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6182,
@@ -110,7 +215,20 @@
       "wirksamkeit": 1,
       "umsetzbarkeit": 1,
       "begruendung": "Verlagert Kosten von den Beitragszahlenden auf die Steuerzahlenden und entlastet die Beiträge; am Verhältnis von Beitragszahlenden zu Rentnern ändert es nichts. Es geht um zweistellige Milliardenbeträge im Jahr, deren Finanzierung offen ist.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-22",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Laut DRV-Schätzung hätten die Bundeszuschüsse 2023 rund 40 Mrd. Euro höher sein müssen, um die nicht beitragsgedeckten Leistungen zu decken (rund 124 statt 84 Mrd. Euro).",
+            "quelle_url": "https://rentenupdate.drv-bund.de/DE/1_Archiv/Archiv/2025/10_Bundeszuschuesse_nbL?nn=69daab5139cdab02f5c5d350",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     }
   ],
   "abdeckung": [
@@ -151,7 +269,12 @@
           "evidenz": "gemischt",
           "stand": "2026-09-29",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 6186,
@@ -285,7 +408,20 @@
           "evidenz": "belegt",
           "stand": "2026-09-29",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [
+              {
+                "bereich": "wirtschaft",
+                "richtung": "vorteil",
+                "text": "Laut IAB braucht es rund 400.000 Personen Nettozuwanderung pro Jahr, um das Erwerbspersonenpotenzial konstant zu halten; inländische Mobilisierung bringt nur 1,5-1,8 Mio.",
+                "quelle_url": "https://iab-forum.de/bei-der-arbeitskraeftesicherung-gilt-es-jeden-hebel-zu-nutzen/",
+                "belegstufe": "B"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 6197,
@@ -354,7 +490,12 @@
           "evidenz": "belegt",
           "stand": "2026-09-29",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 6203,
@@ -384,7 +525,12 @@
           "evidenz": "gemischt",
           "stand": "2026-09-29",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 6205,
@@ -458,7 +604,27 @@
           "evidenz": "gemischt",
           "stand": "2026-09-29",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Zum Vergleich: Die Mütterrente III kostet laut Rentenversicherung rund 5 Mrd. Euro pro Jahr und soll aus Steuermitteln statt aus Beiträgen finanziert werden.",
+                "quelle_url": "https://www.deutsche-rentenversicherung.de/DRV/DE/Ueber-uns-und-Presse/Presse/Meldungen/2025/250806-statement-rentenpaket-muetterrente-III.html",
+                "belegstufe": "A"
+              },
+              {
+                "bereich": "grundrechte",
+                "richtung": "gemischt",
+                "text": "Zum Vergleich: Angerechnete Kindererziehungszeiten verkleinern die Rentenlücke zwischen Frauen und Männern in Westdeutschland (Jahrgänge 1952 bis 1959) laut DIW nur von 41 auf 37 %.",
+                "quelle_url": "https://www.diw.de/de/diw_01.c.941727.de/angerechnete_kindererziehungszeiten_verkleinern_rentenluecke_zwischen_frauen_und_maennern_nur_geringfuegig.html",
+                "belegstufe": "B"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 6211,
@@ -483,7 +649,12 @@
           "evidenz": "offen",
           "stand": "2026-09-29",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 6213,
@@ -508,7 +679,20 @@
           "evidenz": "gemischt",
           "stand": "2026-09-29",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Zum Vergleich: Die Einkommensteuerreform 2027 hat laut Bundesregierung ein Entlastungsvolumen von rund 10 Mrd. Euro im Jahr, was entsprechend geringere Steuereinnahmen bedeutet.",
+                "quelle_url": "https://www.bundesregierung.de/breg-de/aktuelles/einkommensteuerreform-2027-2451192",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 6215,
@@ -522,7 +706,12 @@
           "evidenz": "gemischt",
           "stand": "2026-09-29",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         }
       ]
     },
@@ -552,7 +741,20 @@
           "evidenz": "gemischt",
           "stand": "2026-09-29",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Zum Vergleich: Die Haltelinie von 48 % kostet den Bund laut Gesetzentwurf 2029 rund 3,6 und 2031 rund 11,0 Mrd. Euro; ein höheres Rentenniveau würde mehr kosten.",
+                "quelle_url": "https://www.ihre-vorsorge.de/rente/nachrichten/stabiles-rentenniveau-kostet-alle-steuerzahler-milliarden-euro",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 6218,
@@ -588,7 +790,27 @@
           "evidenz": "gemischt",
           "stand": "2026-09-29",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Zum Vergleich: Die Grundrente kostete laut Gesetzentwurf rund 1,3 Mrd. Euro im Einführungsjahr 2021 für rund 1,3 Mio. Menschen; ein Zuschlag bis zur Armutsrisikogrenze würde mehr kosten.",
+                "quelle_url": "https://www.bundestag.de/webarchiv/Ausschuesse/ausschuesse19/a11/Anhoerungen/683366-683366",
+                "belegstufe": "A"
+              },
+              {
+                "bereich": "aufwand",
+                "richtung": "nachteil",
+                "text": "Zum Vergleich: Bei der Grundrente hielt die Rentenversicherung die Einkommensprüfung für mit hohem Bürokratieaufwand verbunden und nannte dafür 1.700 Stellen.",
+                "quelle_url": "https://www.bundestag.de/webarchiv/Ausschuesse/ausschuesse19/a11/Anhoerungen/683366-683366",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 6221,
@@ -602,7 +824,12 @@
           "evidenz": "gemischt",
           "stand": "2026-09-29",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 6222,
@@ -665,7 +892,20 @@
           "evidenz": "gemischt",
           "stand": "2026-09-29",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Zum Vergleich: Die Grundrente kostete laut Gesetzentwurf rund 1,3 Mrd. Euro im Einführungsjahr 2021 für rund 1,3 Mio. Menschen; eine Mindestrente von 1.500 Euro würde mehr kosten.",
+                "quelle_url": "https://www.bundestag.de/webarchiv/Ausschuesse/ausschuesse19/a11/Anhoerungen/683366-683366",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 6439,
@@ -679,7 +919,20 @@
           "evidenz": "gemischt",
           "stand": "2026-09-29",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Zum Vergleich: Die Haltelinie von 48 % kostet den Bund laut Gesetzentwurf 2029 rund 3,6 und 2031 rund 11,0 Mrd. Euro; ein Niveau von 75 % würde deutlich mehr kosten.",
+                "quelle_url": "https://www.ihre-vorsorge.de/rente/nachrichten/stabiles-rentenniveau-kostet-alle-steuerzahler-milliarden-euro",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         }
       ]
     }
