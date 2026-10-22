@@ -1,0 +1,31 @@
+{
+  "thema_id": 44,
+  "stand": "2026-10-21",
+  "herkunft": "Perspektivenprüfung 2026-10-21 (KI-Entwurf, docs/perspektiven-ursachen.md, Thema 44), vor dem Blick in die Programme geschrieben. Noch nicht von der Betreiberin bestätigt.",
+  "regeln": [
+    { "nr": 1, "ursachen": [4401], "text": "Zu 1 gehören Zölle und vergleichbare Handelsbeschränkungen von Handelspartnern (vor allem USA), die deutsche Exporte verteuern oder verdrängen, und der dadurch verringerte Absatz. Nicht dazu: Rohstoffimporte (2), Importe aus China (3), allgemeine Konjunktur und Investitionszurückhaltung (501, 504). Grenzfall: Zollfolgen bei Exporten in Drittstaaten: nur als ursachen_offen." },
+    { "nr": 2, "ursachen": [4402], "text": "Zu 2 gehört, dass Rohstoffe und Vorprodukte aus wenigen Ländern stammen und ihre Lieferung bei Exportbeschränkungen oder Krisen stockt. Nicht dazu: Zölle auf deutsche Exporte (1), Rohstoffpreise allgemein (501), Energieimporte (303). Grenzfall: Rohstoffe, die über Drittstaaten ins Land kommen: nur als ursachen_offen." },
+    { "nr": 3, "ursachen": [4403], "text": "Zu 3 gehören Importe aus Drittstaaten, vor allem China, die heimische Hersteller unter Wettbewerbsdruck setzen. Nicht dazu: Zölle der USA gegen deutsche Exporte (1), Rohstoffabhängigkeit (2), Lohn- und Energiekosten der Industrie (501). Grenzfall: staatlich gestützte Überkapazitäten als Erklärung der Importe: nur als ursachen_offen, bis die EP-Studie gelesen ist." }
+  ],
+  "buendel": {
+    "4401": ["Zollabbau durch Verhandlung", "Gegenzölle und Vergeltung", "Neue Absatzmärkte erschließen", "Wirtschaftssanktionen aufheben", "Kooperationsabkommen statt Freihandelsabkommen", "Exportgarantien"],
+    "4402": ["Bezugsländer diversifizieren", "Eigene Förderung und Recycling", "Exportbeschränkungen (gegenläufig)", "Regionale Produktion statt Importe", "Verbrauch von Primärrohstoffen senken", "Recycling und Kreislaufwirtschaft", "Resilienz bei Ausschreibungen", "Bergbau in Schutzgebieten verbieten", "Ressourcenschutzgesetz", "Rohstoffbevorratung"],
+    "4403": ["Handelsschutz gegen Dumping", "Importzölle senken", "Zollschlupflöcher für Onlinehändler schließen", "CO₂-Grenzausgleich (CBAM) wirksamer gestalten", "Förderung nur für in Europa produzierte Produkte", "Regionale Produktion statt Importe", "Grenzausgleich auf Importe"]
+  },
+  "suchbegriffe": {
+    "4401": {
+      "Zollabbau durch Verhandlung": ["zollabkommen", "zollabbau", "handelshemmnisse"],
+      "Gegenzölle und Vergeltung": ["gegenzoll", "vergeltungszoll"],
+      "Neue Absatzmärkte erschließen": ["freihandelsabkommen", "mercosur"]
+    },
+    "4402": {
+      "Bezugsländer diversifizieren": ["rohstoffpartner", "rohstoffabkommen"],
+      "Eigene Förderung und Recycling": ["rohstofffoerder", "rohstoffrecycl"],
+      "Exportbeschränkungen (gegenläufig)": ["exportbeschraenk", "exportzoll"]
+    },
+    "4403": {
+      "Handelsschutz gegen Dumping": ["antidumping", "ausgleichszoll"],
+      "Importzölle senken": ["importzoll", "vorproduktzoll", "grenzausgleich"]
+    }
+  }
+}

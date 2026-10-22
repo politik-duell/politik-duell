@@ -1,0 +1,90 @@
+{
+  "partei_id": 12,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Präventions- und Demokratieprojekte an Schulen gegen abwertende Haltungen unter Schülern verstärkt und dauerhaft fördern.",
+      "ursachen_ids": [2301],
+      "buendel": "Klassenklima und soziales Lernen stärken",
+      "zitat": "Angesichts zunehmender rassistischer und sexistischer Haltungen unter Schülerinnen und Schülern werden präventive und demokratiepädagogische Projekte an Schulen intensiviert und dauerhaft gefördert.",
+      "seite": 36
+    },
+    {
+      "beschreibung": "Schulen und andere Einrichtungen sollen verpflichtend Schutzkonzepte gegen Gewalt und Diskriminierung entwickeln und umsetzen.",
+      "ursachen_ids": [2301],
+      "zitat": "Prävention ist der wirksamste Schutz vor Gewalt. Einrichtungen der Jugendhilfe, Schulen, Einrichtungen der Eingliederungshilfe, der Geflüchtetenhilfe sowie des Gesundheits- und Pflegebereichs sollen verpflichtend Schutzkonzepte entwickeln und umsetzen. Diese müssen Schutz vor Gewalt und Diskriminierung beinhalten […]",
+      "seite": 32
+    },
+    {
+      "beschreibung": "Gemeinsames Lernen (Inklusion) durch zusätzliche Lehrerstunden, Förderpädagogik, Assistenz und Beratung stärken.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2301],
+      "zitat": "Gemeinsames Lernen wird durch zusätzliche Lehrerstunden, Förderpädagogik, Assistenz und Beratung gestärkt.",
+      "seite": 19
+    },
+    {
+      "beschreibung": "Präventionsangebote in Kommunen und Schulen unterstützen, um Konflikte frühzeitig zu entschärfen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2301],
+      "zitat": "Präventionsarbeit in Kommunen, Schulen und Vereinen hilft, Konflikte frühzeitig zu entschärfen und Straftaten zu verhindern. Kommunale Präventionsräte und soziale Präventionsangebote werden unterstützt.",
+      "seite": 30
+    },
+    {
+      "beschreibung": "Verbindliche regelmäßige Schulungen und Fortbildungen für Fachkräfte in der Gewalt- und Diskriminierungsprävention.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2302],
+      "buendel": "Fortbildung und Handlungssicherheit der Lehrkräfte",
+      "zitat": "Regelmäßige Schulungen und Fortbildungen für Fachkräfte sind verbindlich, damit Prävention im Alltag wirkt.",
+      "seite": 33
+    },
+    {
+      "beschreibung": "Qualifizierung zu Beratungslehrkräften neu starten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2302],
+      "buendel": "Unterstützung durch Fachkräfte und Beschwerdewege",
+      "zitat": "Die Qualifizierung zu Beratungslehrkräften wird neu gestartet.",
+      "seite": 18
+    },
+    {
+      "beschreibung": "Gesundheitsförderung und Gesundheitskompetenz in Schulen ausbauen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2304],
+      "buendel": "Befähigung und Stressbewältigung",
+      "zitat": "Gesundheitsförderung und Gesundheitskompetenz in Schulen werden ausgebaut.",
+      "seite": 15
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 2302, "seiten": [18, 33, 36], "grund": "Schulsozialarbeit (S. 18) ist ohne Mobbing, Gewalt oder Konflikt im Zitat, daher nach R2 nicht 2302; Fortbildung für Schulen (S. 36) gleichartig zu S. 33." },
+    { "ursache": 2304, "seiten": [15, 18, 19], "grund": "Entlastung und Arbeitszeit betreffen Lehrkräfte, nicht Leistungs- oder Prüfungsdruck der Schüler; psychische Versorgung (S. 15) ist gleichartig zu Gesundheitsförderung in Schulen." }
+  ],
+  "neue_buendel": [
+    { "ursache": 2301, "name": "Verpflichtende Schutzkonzepte", "seite": 32 },
+    { "ursache": 2301, "name": "Gemeinsames Lernen (Inklusion) stärken", "seite": 19 },
+    { "ursache": 2301, "name": "Präventionsangebote unterstützen", "seite": 30 },
+    { "ursache": 2302, "name": "Beratungslehrkräfte qualifizieren", "seite": 18 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "schutzkonzept", "ursache": 2301, "richtung": "Verpflichtende Schutzkonzepte gegen Gewalt und Diskriminierung" },
+    { "begriff": "demokratiepädagog", "ursache": 2301, "richtung": "Präventions- und Demokratieprojekte an Schulen" }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: S. 1–6 (Vorwort, Grundsätze, kein Inhaltsverzeichnis im PDF). Kapitel: „Gute Schule für alle“ (S. 18–19), „Demokratie lernen und leben“ und Bildungsübergänge (S. 20), „Prävention und Früherkennung“ und „Psychische Gesundheit“ (S. 15), „Kinder- und Jugendpolitik“ (S. 25–28), „Prävention und kommunale Sicherheit“ und „Schutz vor Gewalt“ (S. 30–33), „Demokratie“ und „Vielfalt schützen“ (S. 34–36). Fundstellen S. 7, 9, 12, 14, 27, 28, 29, 31, 33, 35, 36, 38 gelesen; S. 7, 9, 12, 14, 29, 31, 38 ohne Schulbezug zu Mobbing.
+
+Nicht erfasst (gelesen, nicht aufgenommen):
+- S. 18: Schulsozialarbeit dauerhaft über Landesmittel finanziert (ab 01.08.2028) und „Finanzierungsniveau … deutlich ausgebaut“. Ohne Mobbing, Gewalt oder Konflikt im Zitat (R2), daher nicht 2302. Gleichartig zu „Schulen mit besonderen sozialen Herausforderungen erhalten gezielte … personelle Unterstützung“ (S. 19).
+- S. 20: Mitbestimmung von Schülerinnen und Schülern „werden gestärkt“. Gleichartig zu den Projekten auf S. 36 (gleiches Bündel).
+- S. 36: Landesprogramm „Schule ohne Rassismus“ gestärkt, schulinterne Fortbildungen wieder ermöglicht. Gleichartig zu S. 36 (Projekte) bzw. S. 33 (Fortbildung).
+- S. 20: Lehrkräfte werden unterstützt, wenn sie Haltung gegen Rassismus, Antisemitismus und Extremismus zeigen. Extremismus gehört nach R2 nicht zu diesem Thema.
+- S. 19: Unterstützung eines stärker regulierten Zugangs zu Social-Media-Angeboten für Kinder und Jugendliche mit Plattformregeln. Cybermobbing mit Schulbezug und Plattformschutz ist Ursache 2303, die für dieses Landesprogramm nicht zulässig ist.
+- S. 18: Modellprojekt zur Arbeitszeiterfassung und Entlastung der Lehrkräfte. Betrifft Lehrkräfte, nicht Schülerdruck.
+- S. 19: Schullaufbahnempfehlung, Ganztag, Lernmittelfreiheit, Schulstruktur. Kein Bezug zu den Ursachen.
+- S. 25–27: Jugendbeteiligung in Kommunen, Jungenarbeit, Häuser des Jugendrechts, Frühe Hilfen. Nicht schulbezogen.
+- S. 35: Lehrkräfte bei Demokratiearbeit unterstützt; Medienbildung zu Hass im Netz. Kein Mobbing-Bezug im Zitat, gehört zu Thema 25.
+
+Richtungen ohne Maßnahme: 2301 Regeln und Konsequenzen durchsetzen (keine Fundstelle). 2304 Leistungs- und Prüfungsdruck: keine Zusage im Landesprogramm gefunden (Prüfungssysteme S. 31 betreffen die Juristenausbildung).
+
+Seiten ohne Text: S. 1 (Titelseite). Keine Rolle.

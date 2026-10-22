@@ -1,0 +1,74 @@
+{
+  "partei_id": 13,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Pflichtfach Informatik und Medienbildung von Klasse 5 bis 10 bzw. 11 an allen allgemeinbildenden Schulen, mit kritischem Umgang mit Inhalten in sozialen Medien.",
+      "ursachen_ids": [2503],
+      "buendel": "Prävention, Medienkompetenz und Gesprächskultur",
+      "zitat": "Wir setzen uns für eine verbindliche Vermittlung digitaler Kompetenzen im Unterricht ein. Dafür wollen wir nach dem Vorbild Baden-Württembergs ein Unterrichtsfach „Informatik und Medienbildung“ schaffen, das verpflichtend von Klasse 5 bis 10 bzw. 11 an allen allgemeinbildenden Schulen durchgängig angeboten werden soll.",
+      "seite": 64
+    },
+    {
+      "beschreibung": "Opferarbeit ausbauen, Beratungsangebote stärken und spezialisierte Anlaufstellen für Betroffene schaffen.",
+      "ursachen_ids": [2501],
+      "buendel": "Meldewege und Hilfe für Betroffene ausbauen",
+      "zitat": "Gleichzeitig bauen wir die Opferarbeit aus, stärken niedrigschwellige Beratungsangebote und schaffen spezialisierte Anlaufstellen, um Betroffene besser zu unterstützen und zu schützen.",
+      "seite": 46
+    },
+    {
+      "beschreibung": "Staatsanwaltschaften und Gerichte mit spezialisiertem Personal und interdisziplinären Teams gegen Cyber- und Onlinekriminalität stärken.",
+      "ursachen_ids": [2501],
+      "buendel": "Strafverfolgung von Hass und Bedrohung im Netz",
+      "zitat": "Cyber- und Onlinekriminalität nehmen rasant zu und stellen die Justiz vor neue Herausforderungen. Wir wollen Staatsanwaltschaften und Gerichte gezielt stärken, und zwar durch spezialisiertes Personal und interdisziplinäre Teams.",
+      "seite": 46
+    },
+    {
+      "beschreibung": "Plattformen stärker in die Pflicht nehmen, strafbare Inhalte schneller zu erkennen und zu entfernen; Umsetzung des EU Digital Services Act.",
+      "ursachen_ids": [2501],
+      "buendel": "Plattformen verbindlich in die Pflicht nehmen",
+      "zitat": "Plattformen müssen stärker in die Verantwortung genommen werden, damit strafbare Inhalte schneller erkannt und konsequent entfernt werden. Dazu fordern wir die konsequente Umsetzung und lokale Flankierung des EU Digital Services Act (DSA).",
+      "seite": 46
+    },
+    {
+      "beschreibung": "Landes-Demokratiefördergesetz, das Initiativen, Beratungsstellen und Präventionsprojekte gegen Hass und Extremismus dauerhaft absichert.",
+      "ursachen_ids": [2503],
+      "zitat": "Ein Landes-Demokratiefördergesetz soll geschaffen werden, um Engagement langfristig zu stärken und demokratische Strukturen verlässlich abzusichern. […] Wir wollen, dass Sachsen-Anhalt diesen Schritt geht und damit Initiativen, Beratungsstellen und Präventionsprojekte nachhaltig unterstützt werden.",
+      "seite": 74
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 2503, "name": "Förderung von Präventionsprojekten gegen Hass", "seite": 74 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "opferarbeit", "ursache": 2501, "richtung": "Meldewege und Hilfe für Betroffene ausbauen" },
+    { "begriff": "digital services act", "ursache": 2501, "richtung": "Plattformen verbindlich in die Pflicht nehmen" },
+    { "begriff": "medienbildung", "ursache": 2503, "richtung": "Prävention, Medienkompetenz und Gesprächskultur" }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis (S. 2–6); Kapitel 2.3 Rechtsextremismus und Hass (S. 39–41); 2.4 Innere Sicherheit (S. 41–43, Cyberkriminalität S. 42); 2.5 Gewaltschutz (S. 43–45); 2.6 Justiz (S. 46–47); 3.1 und 3.3 Ausschnitte mit Medienbezug (S. 49–50, S. 53, S. 64–65); 2.10 Medienfreiheit (S. 52–53); 3.8 Zivilgesellschaft (S. 73–75). Stichwortsuche im Volltext nach Hass, Netz, Cyber, Plattform, Melde-, Moderation, Algorithmus, Medienkompetenz, Anfeindung, Bedrohung: nur die oben genannten Fundstellen.
+
+Zu Bündeln: „Moderation und Gestaltung der Plattformen“ (2503) ohne Fund. Der Volltext enthält keine Vorgaben zu Moderation, Löschverfahren oder Gestaltung von Plattformen durch das Land; „Algorithmen“ kommt nur im Schulunterricht (S. 64) vor, „Social-Media-Algorithmen“ nur als Erklärung der Netzwelt (S. 53). Keine Maßnahme erfasst.
+
+Hinweis zur Zuordnung: Die Plattform-Zusage (S. 46) nennt Plattformen. Nach R1 wäre sie 2502, das ist für dieses Programm nicht zulässig. Der Auftrag führt das Bündel „Plattformen verbindlich in die Pflicht nehmen“ unter 2501; daher Zuordnung zu 2501 wie im Auftrag angegeben.
+
+Gleichartige weitere Stellen (nicht gesondert erfasst):
+- S. 53: Digital- und Medienkompetenz in Erwachsenenbildung und Familienbildung (gleiche Art wie die Medienbildung in der Schule, S. 64).
+- S. 41: „Prävention und Bildung gegen Diskriminierung“ im Netz, Schulen und Vereinen (gleiche Art wie das Demokratiefördergesetz, S. 74).
+- S. 75: „Projekte gegen Diskriminierung unterstützen“ gegen Hass und Ausgrenzung (gleiche Art wie das Demokratiefördergesetz, S. 74).
+- S. 41 und S. 74: Beratung und psychosoziale Hilfe für Betroffene rechter Gewalt (gleiche Art wie die Opferarbeit, S. 46; Gewalt im öffentlichen Raum, nicht im Netz).
+
+Nicht erfasst:
+- S. 40: Taskforce AfD-Verbot, Verbot von Waffenbesitz für Extremisten (kein Bezug zu Anfeindungen im Netz).
+- S. 42: „Kriminalität verlagert sich zunehmend ins Internet“ und Befähigung von Polizei und Strafverfolgung (allgemeine Aussage ohne konkrete Zusage; Cyberkriminalität ohne Hass-Bezug, R2).
+- S. 53: Maßnahmen gegen Fake News und Desinformation (R2: allgemeine Netzpolitik, kein Bezug zu Hass oder Anfeindung).
+- S. 73–74: Schutzkonzepte für Engagierte bei rechter Bedrohung (offline, kein Netzbezug im Zitat).
+- S. 73: E-Sport-Landschaft und Jugendmedienschutz-Staatsvertrag (allgemeine Netzpolitik, R2).
+- S. 52–53: Öffentlich-rechtlicher Rundfunk, Digitalabgabe für lokale Medien (Medienpolitik, kein Bezug zu Hass im Netz).
+
+Seiten ohne Text: 1, 5, 100 (Titel- bzw. Trennseiten), ohne Bedeutung für dieses Thema.
+
+Grenzfälle: Demokratiefördergesetz (S. 74) als Prävention gegen Hass; Plattform-Zusage (S. 46) nach Bündelzuordnung des Auftrags unter 2501.

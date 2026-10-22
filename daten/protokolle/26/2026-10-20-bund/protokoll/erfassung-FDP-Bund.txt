@@ -1,0 +1,58 @@
+{
+  "partei_id": 14,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Praxisnahe Förderung und Arbeitsvermittlung für Menschen mit Behinderung auf dem ersten Arbeitsmarkt",
+      "ursachen_ids": [2602],
+      "zitat": "Durch praxisnahe Förderung und Arbeitsvermittlung verbessern wir die Chancen auf dem ersten Arbeitsmarkt.",
+      "seite": 25
+    },
+    {
+      "beschreibung": "Mehr Barrierefreiheit im öffentlichen Leben",
+      "ursachen_ids": [],
+      "ursachen_offen": [2601],
+      "zitat": "Wir Freie Demokraten setzen uns für mehr Barrierefreiheit im öffentlichen Leben ein.",
+      "seite": 25
+    },
+    {
+      "beschreibung": "Nachweis einer dauerhaften Behinderung nur noch einmal erbringen",
+      "ursachen_ids": [],
+      "ursachen_offen": [2603],
+      "zitat": "Der Nachweis einer dauerhaften Behinderung muss künftig nur noch einmalig erbracht werden.",
+      "seite": 25
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 2601, "seiten": [25, 40, 41, 42, 43], "grund": "Mobilitätskapitel (S. 40–43) gelesen: nur Infrastruktur-Planungsbeschleunigung, ÖPNV und Bahnwettbewerb, keine Barrierefreiheit von Bahnhöfen, Haltestellen oder Verkehrsmitteln. Barrierefreiheit-Zusage S. 25 ist allgemein und als Grenzfall offen erfasst." },
+    { "ursache": 2602, "seiten": [17, 18, 25], "grund": "Arbeitsrecht (S. 17–18) gelesen: keine Zusage zu Ausstattung, Arbeitsplatzanpassung oder Ausgleichsabgabe für Menschen mit Behinderung." },
+    { "ursache": 2603, "seiten": [17, 18, 25], "grund": "Keine Zusage zu Vorbehalten von Betrieben oder Beratung; Arbeitsrecht gelesen, nichts zu Einstellung und Beschäftigung von Menschen mit Behinderung." }
+  ],
+  "neue_buendel": [
+    { "ursache": 2602, "name": "Arbeitsplätze und Ausstattung fördern", "seite": 25 },
+    { "ursache": 2601, "name": "Barrierefreiheit im Bahnverkehr ausbauen und Umsetzung steuern", "seite": 25 },
+    { "ursache": 2603, "name": "Schwerbehinderung Nachweis vereinfachen", "seite": 25 }
+  ]
+}
+
+--- Protokoll ---
+
+Thema 26 „Barrieren für Menschen mit Behinderung“, FDP (Bund).
+
+Gelesen: Inhaltsverzeichnis (S. 1–6), Kapitel III.d Arbeitsrecht (S. 17–18), IV.b Offene Gesellschaft mit Abschnitt „Für eine tolerante und offene Gesellschaft“ (S. 25), Kapitel VI.b Mobilität und VI.c Wohnen (S. 40–44). Fundstelle S. 9 (Mobilitätsgarantie für Lehrkräfte) und S. 24 (Bahnhöfe bei Videoüberwachung) als Auszug geprüft.
+
+Volltextsuche nach barrierefrei, Barriere, Behinderung, Aufzug und Bahnsteig ergibt nur S. 25.
+
+Nicht erfasst:
+- S. 25: „Wir setzen uns für eine stärkere Sichtbarkeit von Menschen mit Behinderung ein“: Leitbild, kein Bezug zu einer Barriere.
+- S. 25: inklusives Bildungssystem, sonderpädagogische Inhalte, Erhalt der Förderschulen: gemeinsamer Unterricht ist eine eigene Haltung (R2).
+- S. 40–41: Planungszeiten für Infrastruktur halbieren, Baustellen-Turbo: allgemeine Infrastruktur, kein Bezug zu Barrierefreiheit.
+- S. 42: ÖPNV-Angebote und flexible Bedarfsverkehre: ohne Bezug zu Barrierefreiheit genannt.
+- S. 17–18: Arbeitszeit, Arbeitsrecht allgemein: keine Maßnahme für Menschen mit Behinderung.
+- S. 24: Videoüberwachung an Bahnhöfen: Sicherheitsthema, kein Bezug zur Barrierefreiheit.
+
+Grenzfälle (ursachen_offen): Barrierefreiheit im öffentlichen Leben (2601, allgemeine Zusage ohne konkrete Stelle); Nachweis einer dauerhaften Behinderung nur einmal erbringen (2603, Verwaltungserleichterung, kein klarer Bezug zur Einstellung).
+
+Richtungen ohne Maßnahme: 2601 Finanzierung und Verfahren der Umsetzung (keine Zusage zu barrierefreien Bahnhöfen); 2602 Verpflichtungen für Betriebe (Ausgleichsabgabe, Beschäftigungspflicht, Quote in S. 17–25 nicht genannt); 2603 Regeln flexibler gestalten (Kündigungsschutz, Zusatzurlaub nicht genannt).
+
+Seiten ohne Text: S. 1 und 2 (Titel und Bild), ohne Rolle.

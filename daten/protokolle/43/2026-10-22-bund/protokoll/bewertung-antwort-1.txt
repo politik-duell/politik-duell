@@ -1,0 +1,34 @@
+{
+  "blind_pruefsumme": "d002a9667eca7ecdd785c7136373aea2d4a1f71f207b1782c35dd8e662089c22",
+  "neue_instrumente": [
+    { "kennung": "I1", "name": "Kennzeichnungspflicht für KI-Inhalte und Bots durchsetzen (Bund)", "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Kennzeichnung senkt in Experimenten die Glaubwürdigkeit markierter Inhalte etwas, trifft aber auch wahre Inhalte; Kriminelle umgehen Kennzeichnungen leicht. Die Pflicht besteht schon (KI-Verordnung), Aufsicht ist national.", "evidenz": "gemischt", "beleg_studie_url": "https://academic.oup.com/pnasnexus/article/3/10/pgae403/7795946" },
+    { "kennung": "I2", "name": "EU-Regeln zu KI und Plattformen national umsetzen und durchsetzen (Bund)", "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Aufsicht nach KI-Verordnung und DSA kann Täuschung und illegale Inhalte eindämmen; die Zusage bleibt allgemein und die Wirkung auf KI-gestützte Kriminalität ist kaum untersucht.", "evidenz": "offen" }
+  ],
+  "zuordnung": [
+    { "kennung": "M01", "ursachen": [] },
+    { "kennung": "M02", "ursachen": [] },
+    { "kennung": "M03", "instrument": "I2", "ursachen": [4303] },
+    { "kennung": "M04", "ursachen": [] },
+    { "kennung": "M05", "einzeln": { "wirksamkeit": 2, "umsetzbarkeit": 1, "begruendung": "Haftung schafft Anreiz zur Entfernung täuschender KI-Inhalte, Kennzeichnung wirkt nur begrenzt; Plattformhaftung ist im DSA EU-weit geregelt, eine nationale Verschärfung kaum möglich.", "evidenz": "gemischt", "beleg_studie_url": "https://academic.oup.com/pnasnexus/article/3/10/pgae403/7795946" }, "ursachen": [4303] },
+    { "kennung": "M06", "instrument": "I1", "ursachen": [4303] },
+    { "kennung": "M07", "einzeln": { "wirksamkeit": 2, "umsetzbarkeit": 2, "begruendung": "Bessere Ausstattung erhöht die Chance, KI-gestützte Taten aufzuklären; konkrete Mittel fehlen, und Polizei und Justiz liegen großteils bei den Ländern. Wirkung auf diese Taten kaum untersucht.", "evidenz": "offen" }, "ursachen": [4303] },
+    { "kennung": "M08", "ursachen": [] },
+    { "kennung": "M09", "ursachen": [] },
+    { "kennung": "M10", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 3, "begruendung": "Mittelstandsdigitalzentren werden schon vom Bund gefördert und können KI-Kompetenz in kleinen Betrieben stärken; die Zusage ist unbestimmt und erreicht Beschäftigte ohne Abschluss kaum gezielt.", "evidenz": "offen" }, "ursachen": [4302] },
+    { "kennung": "M11", "instrument": "I2", "ursachen": [4303] },
+    { "kennung": "M12", "instrument": "I1", "ursachen": [4303] },
+    { "kennung": "M13", "einzeln": { "wirksamkeit": 2, "umsetzbarkeit": 3, "begruendung": "Schließt eine Strafbarkeitslücke bei Deepfake-Nacktbildern, umsetzbar mit der EU-Richtlinie; ob Strafdrohung allein abschreckt, ist kaum untersucht, die Verfolgung im Netz bleibt schwierig.", "evidenz": "offen" }, "ursachen": [4303] },
+    { "kennung": "M14", "einzeln": { "wirksamkeit": 2, "umsetzbarkeit": 3, "begruendung": "Betriebsräte senken bei Automatisierung das Jobverlustrisiko und erhöhen Weiterbildung, ohne Einführung zu bremsen; wirkt nur in Betrieben mit Betriebsrat. Änderung des BetrVG liegt beim Bund.", "evidenz": "belegt", "beleg_studie_url": "https://www.zew.de/PU89075" }, "ursachen": [4301] },
+    { "kennung": "M15", "ursachen": [] },
+    { "kennung": "M16", "einzeln": { "wirksamkeit": 2, "umsetzbarkeit": 2, "begruendung": "Verankerung in Ausbildungsordnungen erreicht viele Beschäftigte ohne Hochschulabschluss früh; bereits Beschäftigte erreicht sie nicht, Berufsschulen sind Ländersache. Wirkung kaum evaluiert.", "evidenz": "offen" }, "ursachen": [4302] },
+    { "kennung": "M17", "einzeln": { "wirksamkeit": 1, "umsetzbarkeit": 1, "begruendung": "Schützt Lehrkräfte vor Ersatz durch Software, betrifft aber nur einen Beruf; Schulen liegen in Länderzuständigkeit, der Bund kann das nicht regeln.", "evidenz": "offen" }, "ursachen": [4301] },
+    { "kennung": "M18", "ursachen": [] },
+    { "kennung": "M19", "ursachen": [] },
+    { "kennung": "M20", "ursachen": [] }
+  ]
+}
+
+Nicht bestätigt: M10 – 4301 (Förderung von KI-Anwendung begrenzt keine Verdrängung); stattdessen offene 4302 bestätigt (digitale Kompetenzen in Unternehmen).
+Offene Ursachen bestätigt: M03, M11 (Durchsetzung/Umsetzung KI-Verordnung und DSA inkl. Löschpflichten, Regel 3), M07 (ausdrücklich KI-Manipulation), M10 (4302).
+Offene verworfen / ohne Ursache: M01, M09, M18, M20 (KI-Einsatz in Verwaltung/Justiz, kein Bezug zu Verdrängung oder Kompetenz der Betroffenen); M02 (allgemeine Überwachungsbefugnisse, nicht gegen KI-Kriminalität gerichtet); M04, M19 (Wirtschaftsförderung/Rahmen für KI-Einsatz); M15 (Ablehnung von EU-Regeln, keine konkrete Maßnahme gegen KI-Angriffe); M08 (Lehrkräfteausbildung = Schulbildung, nach Regel 2 ausgeschlossen).
+Schwierig: M17 (Lehrkräfte-Ersatz als 4301 knapp vertretbar, Wirkung gering); M14 evtl. auch 4302 (informelle Einführung), nicht vorgeschlagen, daher nur 4301; M05 Umsetzbarkeit wegen DSA-Vollharmonisierung niedrig; Kennzeichnung (I1) nur W1, da Kriminelle sich nicht daran halten. Quellen: Mozilla- und OECD-Seiten nicht erreichbar (403), Weizenbaum-PDF nicht lesbar.

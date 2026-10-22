@@ -40,5 +40,327 @@
       "alltag": "Ich finde mit Behinderung keine Arbeit",
       "ursachen_ids": [2602, 2603]
     }
+  ],
+  "instrumente": [
+    {
+      "id": 10302,
+      "name": "Vermittlung und Förderung von Menschen mit Behinderung auf dem allgemeinen Arbeitsmarkt stärken (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Begleitete Vermittlung (Supported Employment/IPS) verdoppelt laut Übersichtsarbeit etwa die Chance auf reguläre Arbeit. Die Zusagen bleiben aber unbestimmt, und es fehlt ein konkretes Instrument oder ein Betrag.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.fhi.no/en/publ/2017/supported-employment-for-arbeidssokere-med-bistandsbehov-en-systematisk-ove/",
+      "entwurf_herkunft": "blind"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "durchsucht_fuer": [2601, 2602, 2603],
+      "massnahmen": [
+        {
+          "id": 10303,
+          "beschreibung": "Barrieren in Bus und Bahn schneller beseitigen",
+          "ursachen_ids": [2601],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Die Maßnahme setzt am richtigen Problem an, dem schleppenden Barriereabbau in Bus und Bahn. Sie nennt aber weder Mittel noch Steuerung oder Fristen, daher ist kaum eine Wirkung abzuschätzen.",
+          "zitat": "Barrieren in Bus und Bahn müssen schneller beseitigt werden.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=62",
+          "evidenz": "offen",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10304,
+          "instrument": 10302,
+          "beschreibung": "Vermittlung auf den ersten Arbeitsmarkt, Inklusionsbetriebe und Werkstätten stärken",
+          "ursachen_ids": [2602],
+          "zitat": "Wir erleichtern Menschen mit Behinderungen den Zugang zu Ausbildung und Arbeit mit passgenauen Impulsen für einen inklusiven Arbeitsmarkt. Dafür stärken wir sowohl die Vermittlung auf den ersten Arbeitsmarkt als auch Inklusionsbetriebe und Werkstätten.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=61",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "durchsucht_fuer": [2601, 2602, 2603],
+      "massnahmen": [
+        {
+          "id": 10305,
+          "beschreibung": "Mehr Kontrolle und Steuerung des Bundes bei der Deutschen Bahn und ihrer Infrastruktursparte",
+          "ursachen_ids": [2601],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Der Bundesrechnungshof sieht mangelnde Steuerung durch den Bund als Hauptgrund für Verzögerungen. Die Maßnahme stärkt die Steuerung allerdings nur allgemein, ohne Bezug zur Barrierefreiheit von Bahnhöfen.",
+          "zitat": "Die neue gemeinwohlorientierte Infrastruktursparte DB InfraGO sowie den Gesamtkonzern entwickeln wir mit mehr Kontrolle und Steuerung des Bundes weiter.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=35",
+          "beleg_studie_url": "https://correctiv.org/bundesrechnungshof/2025/07/30/hunderte-millionen-foerdergeld-fuer-barrierefreie-bahnhoefe-ungenutzt/",
+          "evidenz": "offen",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10306,
+          "instrument": 10302,
+          "beschreibung": "Verstärkte Förderung der Aufnahme einer Arbeit auf dem allgemeinen Arbeitsmarkt für Menschen mit Behinderung",
+          "ursachen_ids": [2602],
+          "zitat": "Wir sichern die Verwirklichung des gleichen Rechts auf Arbeit für Menschen mit Behinderungen. Dazu werden wir die Aufnahme einer Arbeit auf dem allgemeinen Arbeitsmarkt verstärkt fördern[…]",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=39",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10307,
+          "instrument": 10302,
+          "beschreibung": "Weiterentwicklung der Werkstätten für behinderte Menschen und bessere Einkommen der Werkstattbeschäftigten",
+          "ursachen_ids": [2602],
+          "zitat": "Dazu werden wir die Aufnahme einer Arbeit auf dem allgemeinen Arbeitsmarkt verstärkt fördern und die Weiterentwicklung der Werkstätten für behinderte Menschen zügig umsetzen. Dabei werden wir auch die Einkommenssituation der Werkstattbeschäftigten verbessern.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=39",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10308,
+          "beschreibung": "Schwerbehindertenvertretungen in den Betrieben stärken",
+          "ursachen_ids": [2602],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Schwerbehindertenvertretungen können bei der Arbeitsplatzgestaltung und bei Förderanträgen helfen. Die Zusage ist aber unbestimmt und wirkt vor allem in Betrieben, die schon Menschen mit Behinderung beschäftigen.",
+          "zitat": "Zudem wollen wir neben besseren Chancen für Menschen mit Behinderungen auf dem Arbeitsmarkt auch die Schwerbehindertenvertretungen in den Betrieben sowie die politische Selbstvertretung stärken.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=39",
+          "evidenz": "offen",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "durchsucht_fuer": [2601, 2602, 2603],
+      "massnahmen": [
+        {
+          "id": 10309,
+          "beschreibung": "Erhebliche Investitionen in umfassende Barrierefreiheit, Haltestellen und Mobilitätsangebote.",
+          "ursachen_ids": [2601],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Investitionen in barrierefreie Haltestellen bauen Barrieren direkt ab. Laut Bundesrechnungshof fehlt es aber weniger an Geld als an Steuerung: Von 600 Mio. Euro wurden nur 84 Mio. abgerufen.",
+          "zitat": "Durch erhebliche Investitionen in umfassende Barrierefreiheit, sichere Haltestellen und attraktive Mobilitätsangebote stellen wir sicher, dass klimafreundliche Mobilität für alle zugänglich ist und der Verkehrssektor seine Klimaziele erfüllen kann.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=47",
+          "beleg_studie_url": "https://correctiv.org/bundesrechnungshof/2025/07/30/hunderte-millionen-foerdergeld-fuer-barrierefreie-bahnhoefe-ungenutzt/",
+          "evidenz": "gemischt",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10310,
+          "beschreibung": "Veraltete Regelwerke erneuern, um Ausnahmen bei der Barrierefreiheit im Nahverkehr zu beenden.",
+          "ursachen_ids": [2601],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Weite Ausnahmen im PBefG verzögern die Barrierefreiheit im Nahverkehr, und sie zu streichen erhöht die Verbindlichkeit. Vor Ort fehlen aber vor allem Geld und Personal; umsetzen müssten Länder und Kommunen.",
+          "zitat": "Wir wollen den Stadtumbau stärker fördern und veraltete Regelwerke erneuern, etwa um Ausnahmen bei der Barrierefreiheit im Nahverkehr zu beenden.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=48",
+          "evidenz": "offen",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10311,
+          "beschreibung": "Ausgleichsabgabe anpassen und gesetzliche Schlupflöcher schließen, damit Arbeitgeber ihrer Beschäftigungspflicht nachkommen.",
+          "ursachen_ids": [2602],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Laut IAB erhöht die Ausgleichsabgabe die Beschäftigung nur geringfügig (im Schnitt etwa 0,2 Personen je Betrieb). Eine ältere Studie fand bei Quotenänderungen keinen Effekt. Gesetzlich ist das leicht umsetzbar.",
+          "zitat": "Damit Arbeitgeber*innen ihrer Beschäftigungspflicht nachkommen, schließen wir gesetzliche Schlupflöcher und passen die Ausgleichsabgabe an.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=123",
+          "beleg_studie_url": "https://iab.de/publication/?id=591316",
+          "evidenz": "gemischt",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10312,
+          "beschreibung": "Werkstattsystem schrittweise zu Inklusionsunternehmen mit Mindestlohn und Rentenansprüchen weiterentwickeln.",
+          "ursachen_ids": [2602],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Wenn Werkstätten zu Inklusionsunternehmen mit Mindestlohn werden, entstehen gemeinsame, geeignete Arbeitsplätze. Der Umbau für rund 300.000 Beschäftigte ist aber teuer, die Finanzierung ist ungeklärt, und die Wirkung ist kaum untersucht.",
+          "zitat": "Das heutige ausgrenzende Werkstättensystem wollen wir schrittweise in Richtung Inklusionsunternehmen weiterentwickeln, in denen Menschen mit und ohne Behinderung gemeinsam arbeiten, mindestens nach Mindestlohn entlohnt werden und existenzsichernde Rentenansprüche erwerben können.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=123",
+          "evidenz": "offen",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10313,
+          "beschreibung": "Modellprojekte zur beruflichen Integration von Menschen mit Behinderung in Bundesverwaltungen.",
+          "ursachen_ids": [2602],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Modellprojekte in Bundesverwaltungen können geeignete Arbeitsplätze erproben. Ihre Reichweite ist aber klein und auf den öffentlichen Dienst begrenzt.",
+          "zitat": "Zusätzlich setzen wir uns dafür ein, dass in den Bundesverwaltungen Modellprojekte für die berufliche Integration von Menschen mit Behinderungen über die gesetzlichen Vorgaben hinaus geschaffen werden.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=123",
+          "evidenz": "offen",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10314,
+          "beschreibung": "Bürokratische Hürden abbauen und durch Aufklärung Vorurteile gegenüber Beschäftigung von Menschen mit Behinderung abbauen.",
+          "ursachen_ids": [2603],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Etwa 22 % der Betriebe erwarten Leistungseinschränkungen oder Sonderregeln, und Aufklärung und weniger Bürokratie setzen dort an. Die Wirkung von Aufklärung ist kaum belegt, und die Zusage nennt keine konkreten Schritte.",
+          "zitat": "Wir wollen das Potenzial von Menschen mit Behinderung auch auf den Arbeitsmarkt bringen. Dazu bauen wir bürokratische Hürden und durch Aufklärung Vorurteile ab.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=19",
+          "beleg_studie_url": "https://www.wirtschaftsdienst.eu/inhalt/jahr/2025/heft/8/beitrag/aus-sicht-der-betriebe-was-es-braucht-damit-inklusion-besser-gelingt.html",
+          "evidenz": "offen",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10315,
+          "beschreibung": "Hürden beim Eintritt und bei der Rückkehr ins Berufsleben sowie bei der Qualifizierung beseitigen.",
+          "ursachen_ids": [2603],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Die Zusage benennt das Ziel, Hürden beim Berufseinstieg abzubauen, sagt aber nicht, welche Regeln oder Vorbehalte geändert werden sollen. Eine Wirkung lässt sich daher kaum abschätzen.",
+          "zitat": "Hürden bei Eintritt und Rückkehr ins Berufsleben sowie bei der Qualifizierung beseitigen wir.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=123",
+          "evidenz": "offen",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "durchsucht_fuer": [2601, 2602, 2603],
+      "massnahmen": [
+        {
+          "id": 10316,
+          "instrument": 10302,
+          "beschreibung": "Praxisnahe Förderung und Arbeitsvermittlung für Menschen mit Behinderung auf dem ersten Arbeitsmarkt",
+          "ursachen_ids": [2602],
+          "zitat": "Durch praxisnahe Förderung und Arbeitsvermittlung verbessern wir die Chancen auf dem ersten Arbeitsmarkt.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=25",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "durchsucht_fuer": [2601, 2602, 2603],
+      "keine_massnahme": {
+        "begruendung": "Erfasste Stellen (S. 23) setzen laut Bewertung ohne Parteinamen an keiner der Ursachen an.",
+        "stand": "2026-10-20",
+        "treffer": 2,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 16,
+      "durchsucht_fuer": [2601, 2602, 2603],
+      "massnahmen": [
+        {
+          "id": 10317,
+          "beschreibung": "Netz sanieren, elektrifizieren und ausbauen sowie Strecken reaktivieren, jeweils barrierefrei.",
+          "ursachen_ids": [2601],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Barrierefreiheit wird nur als Begleitbedingung beim Netzausbau genannt, und bei Neubau ist sie ohnehin Standard. Den Rückstand an bestehenden Bahnhöfen und die Steuerungsmängel spricht die Zusage nicht an.",
+          "zitat": "Damit die Bahn wieder pünktlich und zuverlässig fährt, muss das Netz saniert, elektrifiziert, müssen Strecken reaktiviert und ausgebaut werden, natürlich barrierefrei.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=37",
+          "evidenz": "offen",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10318,
+          "beschreibung": "Beschäftigungspflicht für Menschen mit Behinderung wieder auf sechs Prozent anheben; Betriebe sollen sich nicht freikaufen können.",
+          "ursachen_ids": [2602],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Eine Studie fand keinen Effekt der Quotensenkung von 6 auf 5 Prozent, eine neuere IAB-Studie dagegen einen kleinen positiven Effekt der Pflicht. Ohne Freikaufmöglichkeit wären neue Sanktionen nötig, und das Problem fehlender Tätigkeiten bliebe.",
+          "zitat": "Die Beschäftigungspflicht von Menschen mit Behinderungen muss wieder auf sechs Prozent angehoben werden. Die Betriebe dürfen sich daraus nicht rauskaufen können.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=54",
+          "beleg_studie_url": "https://iab.de/publication/?id=591316",
+          "evidenz": "gemischt",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10319,
+          "beschreibung": "Inklusionsbetriebe besser öffentlich finanzieren.",
+          "ursachen_ids": [2602],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Inklusionsbetriebe schaffen gezielt geeignete Arbeitsplätze mit Mindestlohn, und mehr Förderung kann sie ausweiten. Belastbare Wirkungsstudien fehlen, und die Zahl der Plätze ist bislang gering.",
+          "zitat": "Inklusionsbetriebe besser fördern, denn diese leisten einen wesentlichen Beitrag zur Inklusion in den allgemeinen Arbeitsmarkt. Sie brauchen eine bessere öffentliche Finanzierung.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=54",
+          "beleg_studie_url": "https://www.betanet.de/inklusionsbetriebe.html",
+          "evidenz": "offen",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "durchsucht_fuer": [2601, 2602, 2603],
+      "massnahmen": [
+        {
+          "id": 10376,
+          "beschreibung": "Anreize schaffen, damit mehr barrierefreie Arbeitsplätze entstehen",
+          "ursachen_ids": [2602],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Zuschüsse für Arbeitsplatzanpassung erhöhen laut Studien Anpassungen und Beschäftigung, werden aber oft wenig genutzt. Die Zusage nennt weder Instrument noch Betrag; ähnliche Leistungen gibt es im SGB IX schon, der Bund kann sie ausbauen.",
+          "zitat": "Gleichzeitig braucht es mehr Anreize zur Schaffung barrierefreier Arbeitsplätze.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=22",
+          "beleg_studie_url": "https://nber.org/papers/w31978",
+          "evidenz": "belegt",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    }
   ]
 }

@@ -1,0 +1,53 @@
+{
+  "partei_id": 17,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Eingriffe mit hoher Grundrechtstiefe wie automatisierte Datenanalysen nur zur Abwehr schwerster Straftaten und Gefahren zulassen",
+      "ursachen_ids": [3401],
+      "zitat": "Eingriffe mit hoher Grundrechtstiefe – etwa automatisierte Datenanalysen oder KI-gestützte Auswertungen – dürfen nur dort eingesetzt werden, wo es um die Abwehr schwerster Straftaten, terroristischer Bedrohungen oder extremistischer Gewalt geht.",
+      "seite": 67
+    },
+    {
+      "beschreibung": "Einsatz von Palantir-Software und ähnlichen Systemen zur automatisierten Datenverknüpfung ablehnen",
+      "ursachen_ids": [],
+      "ursachen_offen": [3401],
+      "zitat": "Den Einsatz von Palantir-Software und vergleichbaren Systemen zur umfassenden automatisierten Datenverknüpfung lehnen wir ab.",
+      "seite": 67
+    },
+    {
+      "beschreibung": "Ministerielles Einzelweisungsrecht in konkreten Ermittlungsverfahren abschaffen",
+      "ursachen_ids": [],
+      "ursachen_offen": [3403],
+      "zitat": "Das ministerielle Einzelweisungsrecht in konkreten Ermittlungsverfahren ist ein Einfallstor für politische Einflussnahme und muss abgeschafft werden.",
+      "seite": 71
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 3401, "name": "Automatisierte Datenanalysen der Polizei begrenzen", "seite": 67 },
+    { "ursache": 3403, "name": "Ministerielles Einzelweisungsrecht in Ermittlungsverfahren abschaffen", "seite": 71 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3402, "seiten": [66, 67, 68], "grund": "Nur Leitbild („Deeskalation ist dabei stets das oberste Gebot“) und allgemeine Forderung, Polizisten im Einsatz besser zu schützen, ohne konkrete Maßnahme." },
+    { "ursache": 3403, "seiten": [66], "grund": "„braucht es eine vollständige politische und rechtliche Aufarbeitung“: allgemeine Forderung ohne konkrete Handlungszusage." }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis (S. 1–6); Kapitel 5.2 „Sicherheit durch Rechtsstaatlichkeit“ mit „Schutz ist staatliche Kernaufgabe“ (S. 66–67), „Polizei – Sicherheit braucht Vertrauen“ (S. 68), „Schutz beginnt vor der Katastrophe“ (S. 68–69, nur Überblick); Justiz-Kapitel 5.3 „Justiz stärken“ (S. 71) Stelle zum Weisungsrecht; Fundstellen S. 9, 66, 86 geprüft.
+
+Grenzfälle:
+- S. 67 Palantir-Ablehnung: Haltung ohne eigene Handlung, als Grenzfall in ursachen_offen.
+- S. 71 Weisungsrecht: Ursache 3403 nur locker (Einfluss auf Ermittlungsverfahren, nicht auf Einstellungen mangels Tatverdachts); als Grenzfall in ursachen_offen.
+
+Nicht erfasst:
+- S. 9 „Deeskalation“: Außenpolitik, keine Polizei.
+- S. 66 „Deeskalation ist dabei stets das oberste Gebot“: Leitbild, siehe nicht_erfasst.
+- S. 67 „Wir setzen uns für mehr sichtbare Polizeipräsenz, klare rechtliche Befugnisse …“: Präsenz gehört nach R2 zu Sicherheit, nicht zu 3401–3403.
+- S. 67 „Gesetzesvorhaben zur Ausweitung polizeilicher … Befugnisse werden wir kritisch … begleiten“: Begleitung, kein Handeln.
+- S. 68 Personal, Beförderungen, Besoldung („Landespolizei … 7.000 Polizeibeamte“): R2, Ausstattung und Personal gehören zu Sicherheit.
+- S. 86 „Videoüberwachung in sensiblen Bereichen“: Arbeitnehmer- und Verbraucherschutzkontext, nicht Polizei.
+
+Richtungen ohne Maßnahme: „Kommunikation und Fortbildung der Polizei“ (3402) – keine Maßnahme zu Aus- und Fortbildung oder Kommunikation im Umgang mit Jugendlichen gefunden; „Handlungsfähigkeit und Rückhalt der Polizei“ (3402) – nur Personal und Ausstattung (R2: Sicherheit); „Unabhängige Beschwerde- und Kontrollstellen“ (3403), „Dokumentation und faire Verfahren“ (3403) – nichts gefunden außer Weisungsrecht; „Kontrollen begrenzen und nachvollziehbar machen“ (3401) – keine Regel zu anlasslosen Kontrollen, Kontrollquittung oder Kontrollorten gefunden.
+Seiten ohne Text: keine relevanten.

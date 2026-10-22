@@ -1,0 +1,46 @@
+{
+  "partei_id": 14,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Volles Elterngeld (14 Monate), wenn beide Elternteile je mindestens vier Elterngeldmonate nehmen.", "ursachen_ids": [2801], "buendel": "Partnerschaftliche Aufteilung fördern", "zitat": "Das volle Elterngeld (14 Monate) soll voll ausgezahlt werden, wenn beide Partner je mindestens vier Elterngeldmonate in Anspruch nehmen.", "seite": 30 },
+    { "beschreibung": "Steuerliche Absetzbarkeit von Betreuungskosten und Unterhalt verbessern, um Familien und Alleinerziehende zu entlasten.", "ursachen_ids": [2801], "buendel": "Familienarbeit entlasten und anerkennen", "zitat": "Um Familien und Alleinerziehende stärker zu entlasten, wollen wir die steuerliche Absetzbarkeit von Betreuungskosten und gesetzlichen Unterhaltsleistungen verbessern.", "seite": 14 },
+    { "beschreibung": "Wechselmodell bei der Betreuung minderjähriger Kinder nach einer Trennung als gesetzliches Leitbild.", "ursachen_ids": [], "ursachen_offen": [2801], "zitat": "Wir Freie Demokraten wollen das sogenannte Wechselmodell zum gesetzlichen Leitbild bei der Betreuung minderjähriger Kinder nach einer Trennung der Eltern machen, wobei stets das Kindeswohl oberster Maßstab der Entscheidung bleibt.", "seite": 31 },
+    { "beschreibung": "Arbeitszeitgesetz reformieren: wöchentliche statt tägliche Höchstarbeitszeit, flexible Arbeitszeitmodelle.", "ursachen_ids": [], "ursachen_offen": [2802], "buendel": "Teilzeit nach Wunsch und Familienzeit ohne Nachteile", "zitat": "Wir Freie Demokraten wollen das deutsche Arbeitszeitgesetz reformieren, indem wir mit einer wöchentlichen statt einer täglichen Höchstarbeitszeit neue und flexible Arbeitszeitmodelle ermöglichen.", "seite": 18 },
+    { "beschreibung": "Rentenpunkte-Splitting für Paare bei Erwerbsunterbrechungen durch Carearbeit, gegen Altersarmut von Frauen.", "ursachen_ids": [], "ursachen_offen": [2802], "zitat": "Zur Bekämpfung von Altersarmut bei Frauen möchten wir, dass Paare bei Erwerbsunterbrechungen aufgrund von Carearbeit standardisiert die Möglichkeit des Rentenpunkte-Splittings wahrnehmen.", "seite": 30 },
+    { "beschreibung": "Abschaffung der Steuerklassen 3 und 5, um die ökonomische Freiheit von Frauen zu stärken.", "ursachen_ids": [], "ursachen_offen": [2802], "zitat": "Die ökonomische Freiheit von Frauen stärken wir durch bessere steuerliche Regelungen, insbesondere durch die Abschaffung der Steuerklassen 3 und 5, für die wir uns weiterhin einsetzen.", "seite": 30 },
+    { "beschreibung": "Mädchen in der Schule für MINT-Fächer begeistern, um den Anteil von Gründerinnen zu erhöhen.", "ursachen_ids": [], "ursachen_offen": [2803], "buendel": "Rollenstereotype abbauen", "zitat": "Um den Anteil von Gründerinnen zu erhöhen, begeistern wir insbesondere Mädchen in der Schule in MINT-Fächern", "seite": 30 }
+  ],
+  "neue_buendel": [
+    { "ursache": 2801, "name": "Wechselmodell als gesetzliches Leitbild", "seite": 31 },
+    { "ursache": 2802, "name": "Rentenpunkte-Splitting bei Erwerbsunterbrechung", "seite": 30 },
+    { "ursache": 2802, "name": "Steuerklassen 3 und 5 abschaffen", "seite": 30 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 2804, "seiten": [17, 18, 19, 28, 29, 30, 31], "grund": "Kapitel Arbeitsrecht (S. 17–19) und Frauen/Familie (S. 28–31) gelesen; nichts zu Beschwerdestellen, Schutz vor sexueller Belästigung oder betrieblicher Prävention am Arbeitsplatz." }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "steuerklasse", "ursache": 2802, "richtung": "Steuerklassen 3 und 5 abschaffen" },
+    { "begriff": "wechselmodell", "ursache": 2801, "richtung": "Wechselmodell als Leitbild" }
+  ]
+}
+
+Protokoll
+
+Gelesen: S. 1–6 (Inhaltsverzeichnis, Präambel); Kapitel III d und e (S. 17–20, Arbeitsrecht und Sozialsysteme); Kapitel IV d (S. 28–30, selbstbestimmte Frauen); Kapitel IV e (S. 30–31, Familie, Senioren); Fundstellen S. 7, 11, 24, 33, 46–49 gesichtet (Trefferkontext ohne Bezug zu 2801–2804, außer S. 18 und 31 zu 2802).
+
+Richtungen ohne Maßnahme: 2802 „Rückkehr in Vollzeit und planbare Arbeitszeiten“ (gezielt gesucht: Rückkehr, Vollzeit, Wiedereinstieg, planbare Arbeitszeiten; nichts gefunden); 2803 „Anerkennung häuslicher Sorgearbeit“ (gezielt gesucht: Anerkennung, Erziehungsleistung, Sorgearbeit, Carearbeit; nur der Rentenpunkte-Splitting-Passus S. 30 betrifft Carearbeit, erfasst unter 2802 offen; nichts zu Mütterrente); 2804 vollständig ohne Maßnahme (gezielt gesucht: Schulung, Verantwortung des Arbeitgebers, Prävention, Belästigung, Beschwerde; siehe nicht_erfasst).
+
+Nicht erfasst:
+- S. 28: Frauenhausplätze und Online-Plattform, häusliche Gewalt (R2: gehört zu Sicherheit).
+- S. 28–29: Frauengesundheit, Schwangerschaftsabbruch, Kostenübernahme (kein Bezug zu 2801–2803).
+- S. 30: Mutterschutz für Selbstständige und gestaffelter Mutterschutz nach Fehlgeburt (kein Bezug zu den Ursachen).
+- S. 30: Elterngeld-Automatisierung, Kinderchancenportal (Verwaltungsvereinfachung, keine Aufteilung der Sorgearbeit).
+- S. 31: Betriebskindergärten, Kurzzeit- und Tagespflege (Kinderbetreuung und Pflege, andere Themen).
+- S. 31: Fortpflanzungsmedizin, Leihmutterschaft, Abstammungsrecht, Adoption (kein Bezug).
+- S. 29–30: Wahlfreiheit und Familienmodelle als Leitbild (Lagebeschreibung und Ziel, R1: Wahlfreiheit ist keine Benachteiligung).
+- S. 14: Lohnabstandsgebot und Bürgergeldreform (S. 19–20): kein Bezug zu 2801–2804.
+- Gleichartige Stellen (gleicher Hebel wie erfasst): S. 31 „Das veraltete Arbeitszeitgesetz schaffen wir ab, um flexible Arbeitszeiten zu ermöglichen.“ (Bündel „Teilzeit nach Wunsch und Familienzeit ohne Nachteile“, S. 18 gewählt); S. 30 „Der steuerliche Abzug von Kinderbetreuungskosten soll verbessert werden.“ (S. 31, gleicher Hebel wie S. 14); S. 8 „Frauen in MINT-Berufen“ (Berufsorientierung, gleicher Hebel wie S. 30).
+- Nicht erfasst aus Ziel- und Lagebeschreibung: S. 28 „verdienen immer noch weniger Geld als Männer“ (Lage, keine Zusage).
+
+Seiten ohne Text: S. 1 und 2 (Titel, Vorbemerkung), ohne Rolle.
+Stand im PDF: nicht geprüft; kein abweichender Stand erkennbar.

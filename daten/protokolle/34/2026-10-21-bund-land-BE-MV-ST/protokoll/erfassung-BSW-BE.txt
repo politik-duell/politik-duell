@@ -1,0 +1,68 @@
+{
+  "partei_id": 17,
+  "land": "BE",
+  "massnahmen": [
+    {
+      "beschreibung": "Einsatzkräfte sollen stärker in Deeskalation geschult werden; bestehende Deeskalationsstrategien sind anzuwenden und auszuwerten.",
+      "ursachen_ids": [3402],
+      "buendel": "Kommunikation und Fortbildung der Polizei",
+      "zitat": "Zugleich müssen Einsatzkräfte noch stärker darin geschult und dazu angehalten werden, deeskalierend zu wirken. Eine gewaltsame Polizei provoziert Gegengewalt. Existierende Deeskalationsstrategien bei Demonstrationen – völlig unabhängig von deren politischer Ausrichtung – sind konsequent anzuwenden und auszuwerten.",
+      "seite": 39
+    },
+    {
+      "beschreibung": "Videoüberwachung an nachweislich besonders kriminalitätsbelasteten Orten, mit parlamentarischer Genehmigung und Echtzeit-Auswertung.",
+      "ursachen_ids": [3401],
+      "buendel": "Gezielte Kontrollen für Sicherheit ermöglichen",
+      "zitat": "Dazu setzen wir «Videoüberwachung» an nachweislich besonders kriminalitätsbelasteten Orten ein – mit parlamentarischer Genehmigung und Echtzeit-Auswertung durch ausreichend Personal.",
+      "seite": 41
+    },
+    {
+      "beschreibung": "Zusätzliche gemeinsame Kontrollen von Ordnungsamt, Polizei und Zoll, auch in Innenräumen wie der Schankwirtschaft.",
+      "ursachen_ids": [3401],
+      "zitat": "Für eine saubere Stadt und die Bekämpfung von Drogenmissbrauch führen wir zusätzliche gemeinsame Kontrollen des Ordnungsamts mit der Polizei und den Zollbehörden ein. Solche Kontrollen werden sowohl in Innenräumen, etwa in der Schankwirtschaft, als auch im öffentlichen Raum durchgeführt.",
+      "seite": 41
+    },
+    {
+      "beschreibung": "Bei Drogenkonsum im Umfeld von Schulen und Kitas sollen neben Platzverweisen Sicherheitszonen eingerichtet werden.",
+      "ursachen_ids": [3401],
+      "zitat": "Öffentlichen Droghenkonsum im Umfeld von Schulen und Kitas ahnden wir konsequent. Dafür greifen wir neben Platzverweisen auch auf die Einrichtung von Sicherheitszonen zurück.",
+      "seite": 41
+    },
+    {
+      "beschreibung": "Intensivere Streifenpräsenz an Brennpunkten wie Bahnhöfen, Parks und Plätzen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [3402],
+      "zitat": "Um Gewalt im öffentlichen Raum vorzubeugen, wird eine intensivere Streifenpräsenz an Brennpunkten wie Bahnhöfen und besonders kriminalitätsbelasteten Parks und Plätzen eingerichtet.",
+      "seite": 40
+    },
+    {
+      "beschreibung": "Bei unverhältnismäßiger Gewalt durch Polizeikräfte sofortige und konsequente Disziplinarmaßnahmen sowie Überprüfung der Einsatzkräfte.",
+      "ursachen_ids": [],
+      "ursachen_offen": [3403],
+      "zitat": "Selbstverständlich stellen wir die vielen Polizeibeamten, die ihre Tätigkeit beanstandungslos ausüben, nicht unter Generalverdacht. Zugleich setzen wir aber im Falle der Anwendung unverhältnismäßiger Gewalt sofortige und konsequente Disziplinarmaßnahmen um.",
+      "seite": 39
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 3401, "name": "Gemeinsame Kontrollen mit Ordnungsamt und Zoll", "seite": 41 },
+    { "ursache": 3401, "name": "Sicherheitszonen einrichten", "seite": 41 },
+    { "ursache": 3402, "name": "Intensivere Streifenpräsenz", "seite": 40 },
+    { "ursache": 3403, "name": "Disziplinarmaßnahmen bei unverhältnismäßiger Gewalt", "seite": 39 }
+  ]
+}
+
+Protokoll
+Gelesen: S. 37–41 (Innere Sicherheit, Polizei, Schulgewalt, Gewalt im öffentlichen Raum, Videoüberwachung, Ordnungsamt); S. 1–6 (Vorwort, kein Inhaltsverzeichnis) überflogen. Kein Inhaltsverzeichnis im Dokument; Kapitel nach Überschriften bestimmt.
+Fundstellen S. 38, 39, 41 gelesen; Begriffe Kontrolle, Befugnis, Beschwerde, Kennzeichnung, Dokumentation, Bodycam, Ombudsstelle, Anlassloskontrolle, Gefahrengebiet, Schleierfahndung im ganzen Text gesucht – keine Fundstelle außer Videoüberwachung und Kontrollen Ordnungsamt.
+Weitere gleichartige Stellen (Bündel „Kommunikation und Fortbildung der Polizei“): S. 38 „Verbesserung der Ausbildung … von Einsatzkräften“ (Ausbildung); S. 40 „Fortbildungsangebote für … die Polizei“ (Cybermobbing, Online-Kriminalität). Konkreteste Stelle (Deeskalationsschulung, S. 39) erfasst.
+Weitere Stelle zu „Gezielte Kontrollen für Sicherheit ermöglichen“: nicht gesondert, weil die gemeinsamen Kontrollen mit Ordnungsamt und Zoll einen anderen Hebel haben (neue_buendel).
+Nicht erfasst:
+- S. 38 „Die Berliner Polizei muss entpolitisiert werden …“, „Dem Missbrauch … muss Einhalt geboten werden“: Forderung und Ziel, keine konkrete Handlungszusage.
+- S. 38 „Die Arbeit der Polizei ist … auf klassische Polizeiarbeit zu reduzieren …“: Ziel ohne Maßnahme zur Art des Polizeikontakts; nicht 3402.
+- S. 39 Personaleinstellung, Besoldung, Ausstattung (gepanzerte Fahrzeuge, Schutzkleidung), Arbeitsbedingungen, psychosoziale Nachsorge: nach Leitfaden R2 Sicherheit bzw. kein Bezug zu 3401–3403.
+- S. 40 Schulgewalt, Präventions- und Anti-Gewaltprogramme, Schulsozialarbeit, Wachschutz an Schulen: Prävention, kein Polizeikontakt-Verfahren.
+- S. 40 „Häuslicher Gewalt … Fußfessel, Warnsystem“: Gewalt in Partnerschaft gehört zu Sicherheit.
+- S. 41 Quellen-TKÜ und KI, GER: Ermittlungsbefugnisse ohne Bezug zu Kontrollen junger Menschen.
+Richtungen ohne Maßnahme: Kontrollen begrenzen (3401: keine Stelle zu anlasslosen Kontrollen, Kontrollbescheinigung, Gefahrengebieten); Kennzeichnungspflicht, unabhängige Beschwerdestelle, Ombudsstelle, Bodycam (3403: keine Stelle gefunden).
+Bündel ohne Maßnahme, gezielt gesucht (Rückhalt, Einsatztraining, Handlungssicherheit, Schutz für Einsatzkräfte, Unabhängig, Verfahren, Kennzeichnung, Befugnis, Gefahrengebiet, Anlass): keine Zusage gefunden; S. 39 psychosoziale Nachsorge und Ausstattung bleiben nach R2 außen vor; S. 64 „Überwachung ohne Anlass lehnen wir ab“ ist ein allgemeines Bekenntnis zur Digitalpolitik ohne Polizeibezug, nicht erfasst.
+Seiten ohne Text: keine Rolle gespielt.

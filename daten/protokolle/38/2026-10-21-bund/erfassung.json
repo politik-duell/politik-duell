@@ -1,0 +1,1333 @@
+{
+  "thema_id": 38,
+  "programme": [
+    {
+      "partei_id": 11,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Mehr Effizienz beim Einsatz der Beitragsgelder in der gesetzlichen Krankenversicherung, mehr Wettbewerb der Krankenkassen.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3801
+          ],
+          "zitat": "[…] wir mehr Effizienz beim Einsatz von Beitragsgeldern an und stärken den Wettbewerb der Krankenkassen.",
+          "seite": 70
+        },
+        {
+          "beschreibung": "Fehlsteuerungen der Krankenhausreform korrigieren.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3801
+          ],
+          "zitat": "Fehlsteuerungen in Folge der Krankenhausreform werden wir korrigieren.",
+          "seite": 70
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3802,
+          "seiten": [
+            31,
+            63,
+            71
+          ],
+          "grund": "Gelesen: Kapitel Gesundheit und Pflege (S. 67–72). S. 63: Ehegattensplitting ist Steuerrecht, keine Mitversicherung. Keine Zusage zur Erstattung versicherungsfremder Leistungen der GKV durch den Bund. S. 31: Grundsatz gegen Verschiebung steuerfinanzierter Ausgaben betrifft die Arbeitslosenversicherung. S. 71: Steuermittel nur in der Pflegeversicherung (andere Ursache)."
+        },
+        {
+          "ursache": 3803,
+          "seiten": [
+            70
+          ],
+          "grund": "Gelesen: GKV-Abschnitt (S. 69–70). Keine Aussage zu Rücklagen der Kassen oder zum erhobenen Zusatzbeitrag im Verhältnis zum Bekanntgegebenen."
+        },
+        {
+          "ursache": 3804,
+          "seiten": [
+            69,
+            70,
+            71
+          ],
+          "grund": "Gelesen: Kapitel Gesundheit und Pflege (S. 67–72). Keine Aussage zu gesetzlichen Zuzahlungen, Eigenanteilen oder zur Belastungsgrenze."
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Versicherungsfremde Aufgaben im Gesundheitswesen aus Steuermitteln finanzieren",
+          "ursachen_ids": [
+            3802
+          ],
+          "buendel": "Steuerfinanzierung versicherungsfremder Leistungen",
+          "zitat": "Versicherungsfremde Aufgaben im Gesundheitswesen wollen wir zukünftig ausreichend aus Steuermitteln finanzieren.",
+          "seite": 29
+        },
+        {
+          "beschreibung": "Krankenkassen und private Versicherungen in einem solidarischen System zusammenführen",
+          "ursachen_ids": [
+            3801
+          ],
+          "zitat": "Krankenkassen und private Krankenversicherungen bilden so ein System einer solidarischen Bürgerversicherung aus, an dem alle beteiligt sind",
+          "seite": 29
+        },
+        {
+          "beschreibung": "Finanzausgleich zwischen Krankenkassen gerechter gestalten und private Versicherungen einbeziehen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3801
+          ],
+          "neue_buendel": [
+            {
+              "ursache": 3801,
+              "name": "Finanzausgleich zwischen Krankenkassen gerechter gestalten",
+              "seite": 29
+            }
+          ],
+          "zitat": "Der Finanzausgleich zwischen den Krankenkassen soll gerechter ausgestaltet werden, und auch die privaten Versicherungen sollen zum Risikostrukturausgleich beitragen.",
+          "seite": 29
+        },
+        {
+          "beschreibung": "Beiträge stärker an der wirtschaftlichen Leistungsfähigkeit der Versicherten ausrichten",
+          "ursachen_ids": [
+            3801
+          ],
+          "zitat": "Die Beiträge der Versicherten sollen sich noch stärker als jetzt an ihrer wirtschaftlichen Leistungsfähigkeit orientieren.",
+          "seite": 29
+        },
+        {
+          "beschreibung": "Weitere Strukturreformen für die Versorgungssicherheit, auch in strukturschwachen Regionen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3801
+          ],
+          "zitat": "Diesen erfolgreichen Kurs werden wir fortführen und die Versorgungssicherheit durch weitere Strukturreformen verbessern, insbesondere um die medizinische Versorgung in strukturschwachen Regionen zu sichern.",
+          "seite": 29
+        },
+        {
+          "beschreibung": "Budgets für Hausärztinnen und Hausärzte abschaffen",
+          "ursachen_ids": [
+            3801
+          ],
+          "zitat": "Bei den ärztlichen Berufen wollen wir den Schwerpunkt auf die Haus- und Kinderärztinnen und -ärzte legen und den Ausbau der Ausbildungs- und Weiterbildungskapazitäten vorantreiben sowie die Budgets für Hausärztinnen und -ärzte abschaffen.",
+          "seite": 32
+        },
+        {
+          "beschreibung": "Termingarantie bei Krankenkassen und Kassenärztlichen Vereinigungen einführen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3801
+          ],
+          "zitat": "Um Wartezeiten zu verringern, werden wir eine Termingarantie der Krankenkassen und Kassenärztlichen Vereinigungen einführen.",
+          "seite": 29
+        },
+        {
+          "beschreibung": "Krankenkassen sollen größere Mengen in Deutschland hergestellter Therapien einkaufen dürfen",
+          "ursachen_ids": [
+            3801
+          ],
+          "zitat": "Krankenkassen sollen zusammen mit anderen nationalen und europäischen Akteuren größere Mengen an Therapien über längere Zeiträume einkaufen dürfen, wenn diese bei uns hergestellt werden.",
+          "seite": 30
+        },
+        {
+          "beschreibung": "Begrenzung finanzieller Belastungen der Versicherten als Teil der Sicherheit im Gesundheitswesen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3804
+          ],
+          "zitat": "Mit Maßnahmen wie einer Termingarantie, der Begrenzung finanzieller Belastungen und solidarischen Finanzierungsmodellen sorgen wir für mehr Sicherheit und Verlässlichkeit im Gesundheitswesen.",
+          "seite": 28
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3803,
+          "seiten": [
+            28,
+            29,
+            30,
+            32
+          ],
+          "grund": "Kap. 10 und 11 gelesen. Keine Zusage zu Rücklagen, Mindestreserve oder zum Zusatzbeitrag. Die Beitragsreduzierung bei Verletzung der Termingarantie (S. 29) betrifft keine Rücklagen und keine Satzfestlegung."
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 3801,
+          "name": "Finanzausgleich zwischen Krankenkassen gerechter gestalten",
+          "seite": 29
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Beitragsbemessung reformieren und auch Kapitaleinnahmen zur Finanzierung heranziehen",
+          "ursachen_ids": [
+            3801
+          ],
+          "buendel": "Einnahmebasis verbreitern",
+          "zitat": "Die Beitragsbemessung werden wir reformieren und beispielsweise auch Kapitaleinnahmen zur Finanzierung unseres Gesundheits- und Pflegesystems heranziehen.",
+          "seite": 94
+        },
+        {
+          "beschreibung": "Umsetzung der Krankenhausreform vorantreiben, gemeinsam mit den Ländern",
+          "ursachen_ids": [
+            3801
+          ],
+          "buendel": "Versorgung ausbauen und besser vergüten",
+          "zitat": "Die Umsetzung der Krankenhausreform werden wir weiter vorantreiben und gemeinsam mit den Ländern umsetzen.",
+          "seite": 89
+        },
+        {
+          "beschreibung": "Fehl- und Überversorgung abbauen, unter anderem durch mehr Zweitmeinungsverfahren",
+          "ursachen_ids": [
+            3801
+          ],
+          "buendel": "Ausgaben begrenzen: Preise, Budgets, Wirtschaftlichkeit",
+          "zitat": "Und wir wollen wissenschaftliche Maßnahmen ergreifen, um Fehl- und Überversorgung abzubauen, zum Beispiel durch den Ausbau von Zweitmeinungsverfahren.",
+          "seite": 88
+        },
+        {
+          "beschreibung": "Abrechnungsbetrug und Fehlverhalten im Gesundheitswesen wirkungsvoller begrenzen",
+          "ursachen_ids": [
+            3801
+          ],
+          "zitat": "Abrechnungsbetrug und Fehlverhalten im Gesundheitswesen werden wir zusammen mit den Ländern wirkungsvoller begrenzen.",
+          "seite": 88
+        },
+        {
+          "beschreibung": "Hausärztlich-zentrierte Primärversorgung stärken, für bessere Qualität und Effizienz",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3801
+          ],
+          "zitat": "Deshalb werden wir die hausärztlich-zentrierte Primärversorgung stärken, um eine bessere Behandlungsqualität und Effizienz zu erreichen.",
+          "seite": 88
+        },
+        {
+          "beschreibung": "Mindestbemessungsgrenze in der Krankenversicherung für Soloselbstständige reformieren",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3801
+          ],
+          "zitat": "Um freiwillig versicherte, geringverdienende oder in Teilzeit beschäftigte Soloselbstständige besser abzusichern, werden wir die Mindestbemessungsgrenze in der gesetzlichen Krankenversicherung reformieren.",
+          "seite": 94
+        },
+        {
+          "beschreibung": "Private Versicherungen an den Transformationskosten der Krankenhäuser beteiligen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3801
+          ],
+          "zitat": "Wir werden weiter darauf achten, dass sich auch die privaten Versicherungen an den Transformationskosten beteiligen.",
+          "seite": 89
+        },
+        {
+          "beschreibung": "Versicherungsfremde Leistungen über den Staat finanzieren, etwa Rentenbeiträge pflegender Angehöriger und Beiträge für Bürgergeldbeziehende",
+          "ursachen_ids": [
+            3802
+          ],
+          "buendel": "Steuerfinanzierung versicherungsfremder Leistungen",
+          "zitat": "In den vergangenen Jahren wurden den Versicherungen jedoch viele Kosten zugeschoben, die aus Steuermitteln hätten finanziert werden sollen. Diesen Trend wollen wir umkehren und damit die Versicherten und die Arbeitgeber von versicherungsfremden Leistungen entlasten. Dazu gehört, dass wir die Finanzierung der Rentenbeiträge von pflegenden Angehörigen oder die Beiträge für Empfänger*innen von Bürgergeld angemessener über den Staat finanzieren.",
+          "seite": 93
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 3801,
+          "name": "Abrechnungsbetrug und Fehlverhalten begrenzen",
+          "seite": 88
+        },
+        {
+          "ursache": 3801,
+          "name": "Hausärztliche Primärversorgung stärken",
+          "seite": 88
+        },
+        {
+          "ursache": 3801,
+          "name": "Mindestbemessungsgrenze in der Krankenversicherung reformieren",
+          "seite": 94
+        },
+        {
+          "ursache": 3801,
+          "name": "Private Versicherungen an Transformationskosten beteiligen",
+          "seite": 89
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3803,
+          "seiten": [
+            87,
+            88,
+            89,
+            93,
+            94
+          ],
+          "grund": "Keine Zusage zu Rücklagen der Krankenkassen, zur Lücke zwischen erhobenem und bekanntgegebenem Zusatzbeitrag oder zu den Reserven; in den Fundstellen nur Beitragsaussagen ohne Handlung."
+        },
+        {
+          "ursache": 3804,
+          "seiten": [
+            87,
+            88,
+            89,
+            93,
+            94
+          ],
+          "grund": "Keine Zusage zu gesetzlichen Zuzahlungen, Belastungsgrenze oder Eigenanteilen bei Krankenhaus, Heilmitteln, Krankenpflege oder Fahrkosten; Pflegeeigenanteile gehören zu einem anderen Thema."
+        }
+      ],
+      "hebel_nicht_gefunden": []
+    },
+    {
+      "partei_id": 14,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Ausgabenwachstum der GKV soll nicht stärker steigen als die Einnahmen.",
+          "ursachen_ids": [
+            3801
+          ],
+          "zitat": "Um die ungebremste Leistungsausgabenentwicklung in der GKV in den Griff zu bekommen, sollen in Zukunft die Ausgaben nicht stärker wachsen als die Einnahmen.",
+          "seite": 33
+        },
+        {
+          "beschreibung": "Leistungsausweitungen der letzten zehn Jahre prüfen; nicht bewährte Leistungen aus dem Leistungskatalog streichen.",
+          "ursachen_ids": [
+            3801
+          ],
+          "zitat": "Zusätzlich werden wir alle Leistungsausweitungen der letzten zehn Jahre einem Evidenz-, Effizienz- und Wirtschaftlichkeitscheck unterziehen. Leistungen, die sich nicht bewährt haben, sollen aus dem GKV-Leistungskatalog gestrichen werden.",
+          "seite": 33
+        },
+        {
+          "beschreibung": "Ungekürzte, leistungsgerechte Vergütung aller Gesundheitsberufe in der ambulanten Versorgung.",
+          "ursachen_ids": [
+            3801
+          ],
+          "zitat": "Zu einer Stärkung der flächendeckenden ambulanten Versorgung gehört für uns auch, dass die ungekürzte Vergütung aller Gesundheitsberufe leistungsgerecht erfolgen muss.",
+          "seite": 33
+        },
+        {
+          "beschreibung": "Krankenhausversorgung spezialisieren und die Kostenentwicklung bremsen.",
+          "ursachen_ids": [
+            3801
+          ],
+          "zitat": "In der Krankenhausversorgung wollen wir spezialisierte und damit bessere Angebote vorhalten, die Kostenentwicklung bremsen und zugleich Ärzte und Pflegekräfte entlasten.",
+          "seite": 33
+        },
+        {
+          "beschreibung": "Primärarztsystem in der ambulanten Versorgung: Haus- und Kinderärzte als erste Anlaufstelle.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3801
+          ],
+          "zitat": "In der ambulanten Versorgung setzen wir uns für ein Primärarztsystem ein: Haus- und Kinderärzte sollten die erste Anlaufstelle für Patientinnen und Patienten sein.",
+          "seite": 33
+        },
+        {
+          "beschreibung": "Besondere Vergütung für Arzneimittel mit Therapieerfolgen.",
+          "ursachen_ids": [
+            3801
+          ],
+          "zitat": "Therapieerfolge wollen wir besonders vergüten.",
+          "seite": 33
+        },
+        {
+          "beschreibung": "Bessere psychotherapeutische Versorgung; Wartezeit auf einen Therapieplatz unter vier Wochen.",
+          "ursachen_ids": [
+            3801
+          ],
+          "zitat": "Wir setzen uns für eine bessere psychotherapeutische Versorgung ein und wollen die Wartezeit auf einen Therapieplatz auf unter vier Wochen verkürzen.",
+          "seite": 34
+        },
+        {
+          "beschreibung": "Krankenkassen sollen für vorsorgende Versicherte einen reduzierten Zusatzbeitrag einführen können.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3801
+          ],
+          "zitat": "Wer Vorsorge betreibt, verursacht dadurch weniger Ausgaben für seine Krankenkasse. Deshalb wollen wir den Krankenkassen ermöglichen, für diese Versicherten einen reduzierten Zusatzbeitrag einzuführen.",
+          "seite": 34
+        },
+        {
+          "beschreibung": "Beiträge für Selbstständige in der GKV an den tatsächlichen Einnahmen orientieren.",
+          "ursachen_ids": [
+            3801
+          ],
+          "zitat": "Ungleichbehandlungen wollen wir deshalb abbauen und zum Beispiel die Beiträge für Selbstständige zur gesetzlichen Krankenversicherung an den tatsächlichen Einnahmen orientieren.",
+          "seite": 19
+        }
+      ],
+      "neue_buendel": [
+        {
+          "ursache": 3801,
+          "name": "Ausgabenwachstum an Einnahmen koppeln",
+          "seite": 33
+        },
+        {
+          "ursache": 3801,
+          "name": "Leistungskatalog auf Wirtschaftlichkeit prüfen",
+          "seite": 33
+        },
+        {
+          "ursache": 3801,
+          "name": "Vergütung der Gesundheitsberufe",
+          "seite": 33
+        },
+        {
+          "ursache": 3801,
+          "name": "Krankenhausstruktur und Kostenbremse",
+          "seite": 33
+        },
+        {
+          "ursache": 3801,
+          "name": "Primärarztsystem",
+          "seite": 33
+        },
+        {
+          "ursache": 3801,
+          "name": "Vergütung innovativer Arzneimittel",
+          "seite": 33
+        },
+        {
+          "ursache": 3801,
+          "name": "Psychotherapeutische Versorgung ausbauen",
+          "seite": 34
+        },
+        {
+          "ursache": 3801,
+          "name": "Reduzierter Zusatzbeitrag für Vorsorge",
+          "seite": 34
+        },
+        {
+          "ursache": 3801,
+          "name": "Beitragsbemessung für Selbstständige",
+          "seite": 19
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3802,
+          "seiten": [
+            20,
+            33,
+            34
+          ],
+          "grund": "Kapitel Gesundheit (S. 33–34) gelesen; keine Aussage zur Erstattung versicherungsfremder GKV-Leistungen durch den Bund oder zu Steuerfinanzierung in der GKV. S. 20 betrifft Sozialleistungen allgemein, nicht die GKV."
+        },
+        {
+          "ursache": 3803,
+          "seiten": [
+            33,
+            34
+          ],
+          "grund": "Kapitel Gesundheit gelesen; keine Aussage zu Rücklagen der Kassen oder zur Differenz zwischen erhobenem und bekanntgegebenem Zusatzbeitrag."
+        },
+        {
+          "ursache": 3804,
+          "seiten": [
+            33,
+            34
+          ],
+          "grund": "Kapitel Gesundheit gelesen; keine Aussage zu gesetzlichen Zuzahlungen, Eigenanteilen oder zur Belastungsgrenze."
+        }
+      ],
+      "eigene_synonyme": [
+        {
+          "begriff": "primärarzt",
+          "ursache": 3801,
+          "richtung": "Primärarztsystem"
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Fallpauschalen im Krankenhaus abschaffen, mittelfristig individuelle Budgetvereinbarungen",
+          "ursachen_ids": [
+            3801
+          ],
+          "zitat": "Notwendig ist die vollständige Abschaffung der Fallpauschalen und mittelfristig die Rückkehr zu individuellen Budgetvereinbarungen",
+          "seite": 28
+        },
+        {
+          "beschreibung": "Bundeseinheitliche gesetzliche Personalbemessung in pflegesensitiven Krankenhausbereichen",
+          "ursachen_ids": [
+            3801
+          ],
+          "zitat": "Eine bundeseinheitliche, gesetzliche Personalbemessung für alle […] pflegesensitiven Bereiche ist zur Sicherstellung der pflegerischen Versorgung unerlässlich.",
+          "seite": 28
+        },
+        {
+          "beschreibung": "Ende der Behandlung ohne Vergütungsanspruch in der ambulanten ärztlichen Versorgung",
+          "ursachen_ids": [
+            3801
+          ],
+          "zitat": "Die Rationierung ärztlicher Leistungen durch den Zwang, Behandlungen ohne Vergütungsanspruch zu erbringen, muss beendet werden.",
+          "seite": 28
+        },
+        {
+          "beschreibung": "Finanzielle und organisatorische Niederlassungshilfen für Ärzte im ländlichen Raum",
+          "ursachen_ids": [
+            3801
+          ],
+          "zitat": "Zur Förderung der Niederlassung von Ärzten im ländlichen Räumen sind finanzielle und organisatorische Niederlassungshilfen zu etablieren.",
+          "seite": 28
+        },
+        {
+          "beschreibung": "Gestaffelte Bonus- und Rückvergütungssysteme gegen Bagatellbehandlungen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3801
+          ],
+          "zitat": "Um einer ungesteuerten Leistungsausweitung durch Bagatellbehandlungen zu begegnen, sind gestaffelte Bonus- bzw. Rückvergütungssysteme sinnvoll.",
+          "seite": 28
+        },
+        {
+          "beschreibung": "Bürgergeld-Mitversicherung in der Krankenversicherung vollständig aus dem Bundeshaushalt finanzieren",
+          "ursachen_ids": [
+            3802
+          ],
+          "buendel": "Steuerfinanzierung versicherungsfremder Leistungen",
+          "zitat": "Das werden wir verhindern, indem die beitragsfreie Mitversicherung der Bürgergeldempfänger, die heute zu zwei Dritteln vom Beitragszahler finanziert wird, zukünftig vollständig aus dem Bundeshaushalt aufgebracht wird.",
+          "seite": 22
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3803,
+          "seiten": [
+            22
+          ],
+          "grund": "Keine Aussage zu Kassenrücklagen, Mindestreserve oder zur Lücke zwischen erhobenem und bekanntgegebenem Zusatzbeitrag. Die Verwaltungskostensenkung (S. 22) betrifft keine Rücklagen."
+        },
+        {
+          "ursache": 3804,
+          "seiten": [
+            22,
+            28,
+            29
+          ],
+          "grund": "Keine gesetzliche Zuzahlung, kein Eigenanteil und keine Belastungsgrenze genannt. Häusliche Pflege (S. 29) betrifft Pflegegeld und Pflegekasse, nicht Zuzahlungen bei GKV-Leistungen."
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Beitragsbemessungsgrenze in der Krankenversicherung abschaffen; Beiträge auf alle Einkommen erheben, auch auf Kapitalerträge.",
+          "ursachen_ids": [
+            3801
+          ],
+          "zitat": "Wir setzen uns für eine solidarische Gesundheits- und Pflegeversicherung ein. Alle zahlen ein, Beiträge werden auf alle Einkommen erhoben, alle werden gut versorgt. Die Beitragsbemessungsgrenze fällt weg. Auch für Einkommen aus Kapitalerträgen und andere Einkommensarten müssen Beiträge gezahlt werden.",
+          "seite": 18
+        },
+        {
+          "beschreibung": "Gesetzliche Krankenversicherung soll alle medizinisch sinnvollen Leistungen abdecken, etwa Zahnersatz und Brillen; nutzlose Leistungen sollen gestrichen werden.",
+          "ursachen_ids": [
+            3801
+          ],
+          "ursachen_offen": [
+            3804
+          ],
+          "zitat": "Unsere solidarische Gesundheitsversicherung soll evidenzbasiert alle medizinisch sinnvollen Leistungen wie Zahnersatz, Brillen und Ibuprofen abdecken – erwiesenermaßen nutzlose Leistungen können wir uns hingegen sparen.",
+          "seite": 18
+        },
+        {
+          "beschreibung": "Betriebskosten der Krankenhäuser vollständig von den Krankenkassen finanzieren; Fallpauschalen abschaffen.",
+          "ursachen_ids": [
+            3801
+          ],
+          "zitat": "Wir wollen, dass die notwendigen Betriebskosten der Krankenhäuser von den Krankenkassen vollständig finanziert werden. Die Fallpauschalen müssen vollständig abgeschafft werden.",
+          "seite": 18
+        },
+        {
+          "beschreibung": "Gesetzlich vorgeschriebene Personalbemessung in Kliniken; mindestens 100 000 zusätzliche Pflegekräfte in den Krankenhäusern.",
+          "ursachen_ids": [
+            3801
+          ],
+          "zitat": "Wir setzen uns für eine gesetzlich vorgeschriebene Personalbemessung ein, bei der es am Ende auch mehr Personal gibt, sowie für Schichtpläne ohne Stress. Es braucht mindestens 100 000 zusätzliche Pflegekräfte in den Krankenhäusern!",
+          "seite": 18
+        },
+        {
+          "beschreibung": "Arzneimittelpreise in der EU einheitlich festlegen, um den Preisanstieg bei Arzneimitteln zu begrenzen.",
+          "ursachen_ids": [
+            3801
+          ],
+          "zitat": "Preise müssen in der EU einheitlich festgelegt werden.",
+          "seite": 19
+        },
+        {
+          "beschreibung": "Bund und Länder sollen nachhaltig in die Krankenhäuser investieren.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3801
+          ],
+          "zitat": "Bund und Länder müssen nachhaltig in die Krankenhäuser investieren! Die Vermögensteuer kann ihnen dabei helfen.",
+          "seite": 18
+        },
+        {
+          "beschreibung": "Kommunale Versorgungszentren als Rückgrat der wohnortnahen Gesundheitsversorgung fördern.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3801
+          ],
+          "zitat": "Wir wollen kommunale Versorgungszentren als Rückgrat der wohnortnahen Gesundheitsversorgung fördern!",
+          "seite": 19
+        },
+        {
+          "beschreibung": "Psychotherapie über das Kostenerstattungsverfahren ermöglichen, solange zu wenig Psychotherapeut*innen zugelassen sind.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3801
+          ],
+          "zitat": "Solange nicht genügend zugelassene Psychotherapeut*innen zur Verfügung stehen, müssen Therapien unbürokratisch über das Kostenerstattungsverfahren ermöglicht werden.",
+          "seite": 19
+        },
+        {
+          "beschreibung": "Mit Übernahme der Privatversicherten sinkt der Krankenversicherungsbeitrag von 17,1 auf etwa 13,3 Prozent des Bruttolohns.",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3803
+          ],
+          "zitat": "Privatversicherte werden in die gesetzliche Krankenversicherung übernommen. Dadurch fällt der Beitrag für die Krankenversicherung von derzeit 17,1 auf etwa 13,3 Prozent des Bruttolohns.",
+          "seite": 18
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 3802,
+          "seiten": [
+            15,
+            41,
+            55
+          ],
+          "grund": "Kein Bezug zur GKV: Mütterrente und Grundrente (S. 15) betreffen die Rentenversicherung; Steuermittel für Forschung (S. 41) und Bundeszuschuss zur Künstlersozialkasse (S. 55) sind keine versicherungsfremden GKV-Leistungen. Keine Zusage zur Steuerfinanzierung von GKV-Leistungen gefunden (Suche nach Steuerzuschuss, Bundeszuschuss, versicherungsfremd, Bürgergeld)."
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Bürgerversicherung mit Einzahlung nach Einkommen einführen und Zusatzbeiträge abschaffen",
+          "ursachen_ids": [
+            3801
+          ],
+          "ursachen_offen": [
+            3803
+          ],
+          "zitat": "Wir fordern die Abschaffung der Zusatzbeiträge und die Einführung einer Bürgerversicherung, in die alle Bürger nach ihrem Einkommen einzahlen und grundsätzlich gleiche Leistungen auf dem Niveau der höchsten medizinischen Standards erhalten.",
+          "seite": 26
+        },
+        {
+          "beschreibung": "Grundfreibetrag auf Sozialabgaben, gegenfinanziert durch höhere Beitragsbemessungsgrenzen",
+          "ursachen_ids": [
+            3801
+          ],
+          "zitat": "Wir brauchen einen Grundfreibetrag auf Sozialabgaben bei gleichbleibenden Ansprüchen, gegenfinanziert durch eine Anhebung der Beitragsbemessungsgrenzen.",
+          "seite": 17
+        },
+        {
+          "beschreibung": "Kapitalerträge wie Arbeitseinkommen mit dem normalen Einkommensteuersatz belasten",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3801
+          ],
+          "zitat": "Kapitalerträge sind wie Arbeitseinkommen mit dem normalen Einkommenssteuersatz zu belasten.",
+          "seite": 17
+        },
+        {
+          "beschreibung": "Hausärzte als Ansprechpartner höher vergüten",
+          "ursachen_ids": [
+            3801
+          ],
+          "zitat": "Besonders Hausärzte als Ansprechpartner der Patienten müssen höher vergütet werden.",
+          "seite": 27
+        },
+        {
+          "beschreibung": "Krankenhäuser vor Ort erhalten und besser in die Versorgung integrieren",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3801
+          ],
+          "zitat": "Wir fordern einen Erhalt und bessere Integration der Krankenhäuser in die Gesundheitsversorgung vor Ort.",
+          "seite": 27
+        },
+        {
+          "beschreibung": "Abschaffung der Trennung der Versorgungssektoren (ambulant, Pflege, stationär)",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3801
+          ],
+          "zitat": "Wir fordern die Abschaffung der kostspieligen Trennung der verschiedenen Versorgungssektoren wie z. B. der ambulanten, Pflege- und stationären Versorgung.",
+          "seite": 27
+        },
+        {
+          "beschreibung": "Mehr Medizinstudienplätze und Pflegeausbildung, bessere Bezahlung des Pflegepersonals",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3801
+          ],
+          "zitat": "Wir wollen mehr Medizinstudienplätze und Ausbildungsplätze für Psychotherapeuten schaffen, mehr Pflegepersonal ausbilden und eine bessere Bezahlung.",
+          "seite": 27
+        },
+        {
+          "beschreibung": "Zahnersatz und Sehhilfen wieder vollständig in den Leistungskatalog der gesetzlichen Krankenversicherung aufnehmen",
+          "ursachen_ids": [],
+          "ursachen_offen": [
+            3804
+          ],
+          "zitat": "Wir wollen notwendigen Zahnersatz und Sehhilfen vollständig in den Leistungskatalog der gesetzlichen Gesundheitsabsicherung zurückholen.",
+          "seite": 27
+        },
+        {
+          "beschreibung": "Gesetzliche Krankenkassen finanzieren versicherungsfremde Leistungen aus Steuermitteln",
+          "ursachen_ids": [
+            3802
+          ],
+          "buendel": "Steuerfinanzierung versicherungsfremder Leistungen",
+          "zitat": "Wir fordern die Steuerfinanzierung von versicherungsfremden Leistungen (z. B. Beiträge von Bürgergeld-Empfängern).",
+          "seite": 26
+        }
+      ],
+      "nicht_erfasst": []
+    }
+  ],
+  "suchbegriffe": {
+    "3801": {
+      "Ausgaben begrenzen: Preise, Budgets, Wirtschaftlichkeit": [
+        "ausgabenbremse",
+        "kostendämpf",
+        "arzneimittelpreis",
+        "herstellerabschlag",
+        "honorarbudget",
+        "wirtschaftlichkeitsgebot",
+        "preismoratorium",
+        "einnahmenorientierte ausgabenpolitik"
+      ],
+      "Versorgung ausbauen und besser vergüten": [
+        "krankenhausvergütung",
+        "krankenhausreform",
+        "versorgungsausbau",
+        "honorarerhöh",
+        "pflegepersonal"
+      ],
+      "Einnahmebasis verbreitern": [
+        "beitragsbemessungsgrenze",
+        "bürgerversicherung",
+        "kapitalerträge",
+        "kapitaleinkommen",
+        "beitragspflichtig"
+      ],
+      "Einnahmen nicht erhöhen, Ausgaben an Einnahmen orientieren": [
+        "keine höhere bemessungsgrenze",
+        "einnahmenorientiert",
+        "ausgaben an einnahmen",
+        "grundlohnrate"
+      ]
+    },
+    "3802": {
+      "Bund übernimmt mehr aus Steuern": [
+        "bundeszuschuss",
+        "steuerfinanzier",
+        "versicherungsfremd",
+        "bürgergeldbeziehend",
+        "steuermittel"
+      ],
+      "Beitragsfreie Mitversicherung einschränken": [
+        "mitversicherung",
+        "ehepartner",
+        "beitragsfrei",
+        "familienversicherung"
+      ]
+    },
+    "3803": {
+      "Rücklagenregeln ändern": [
+        "rücklagen",
+        "mindestreserve",
+        "reservekorridor",
+        "schwankungsreserve"
+      ],
+      "Zusatzbeitrag an Bedarf binden": [
+        "zusatzbeitrag senken",
+        "beitragssatz senken"
+      ]
+    },
+    "3804": {
+      "Zuzahlungen senken oder abschaffen": [
+        "zuzahlung",
+        "zuzahlungsfrei",
+        "eigenanteil senken",
+        "belastungsgrenze senken"
+      ],
+      "Zuzahlungen erhöhen oder steuern": [
+        "zuzahlung erhöhen",
+        "praxisgebühr",
+        "steuerungsgebühr"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "a31efbbf8e30c0f90244cf5b8bcbde2f9a1d96284841d465c9c985e49adcc9b3",
+    "programme": [
+      {
+        "partei_id": 11,
+        "land": null,
+        "ursachen": {
+          "3801": {
+            "Ausgaben begrenzen: Preise, Budgets, Wirtschaftlichkeit": {
+              "ausgabenbremse": 0,
+              "kostendämpf": 0,
+              "arzneimittelpreis": 0,
+              "herstellerabschlag": 0,
+              "honorarbudget": 0,
+              "wirtschaftlichkeitsgebot": 0,
+              "preismoratorium": 0,
+              "einnahmenorientierte ausgabenpolitik": 0
+            },
+            "Versorgung ausbauen und besser vergüten": {
+              "krankenhausvergütung": 0,
+              "krankenhausreform": 2,
+              "versorgungsausbau": 0,
+              "honorarerhöh": 0,
+              "pflegepersonal": 0
+            },
+            "Einnahmebasis verbreitern": {
+              "beitragsbemessungsgrenze": 0,
+              "bürgerversicherung": 0,
+              "kapitalerträge": 0,
+              "kapitaleinkommen": 0,
+              "beitragspflichtig": 0
+            },
+            "Einnahmen nicht erhöhen, Ausgaben an Einnahmen orientieren": {
+              "keine höhere bemessungsgrenze": 0,
+              "einnahmenorientiert": 0,
+              "ausgaben an einnahmen": 0,
+              "grundlohnrate": 0
+            }
+          },
+          "3802": {
+            "Bund übernimmt mehr aus Steuern": {
+              "bundeszuschuss": 0,
+              "steuerfinanzier": 1,
+              "versicherungsfremd": 0,
+              "bürgergeldbeziehend": 0,
+              "steuermittel": 1
+            },
+            "Beitragsfreie Mitversicherung einschränken": {
+              "mitversicherung": 0,
+              "ehepartner": 1,
+              "beitragsfrei": 0,
+              "familienversicherung": 0
+            }
+          },
+          "3803": {
+            "Rücklagenregeln ändern": {
+              "rücklagen": 0,
+              "mindestreserve": 0,
+              "reservekorridor": 0,
+              "schwankungsreserve": 0
+            },
+            "Zusatzbeitrag an Bedarf binden": {
+              "zusatzbeitrag senken": 0,
+              "beitragssatz senken": 0
+            }
+          },
+          "3804": {
+            "Zuzahlungen senken oder abschaffen": {
+              "zuzahlung": 0,
+              "zuzahlungsfrei": 0,
+              "eigenanteil senken": 0,
+              "belastungsgrenze senken": 0
+            },
+            "Zuzahlungen erhöhen oder steuern": {
+              "zuzahlung erhöhen": 0,
+              "praxisgebühr": 0,
+              "steuerungsgebühr": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 12,
+        "land": null,
+        "ursachen": {
+          "3801": {
+            "Ausgaben begrenzen: Preise, Budgets, Wirtschaftlichkeit": {
+              "ausgabenbremse": 0,
+              "kostendämpf": 0,
+              "arzneimittelpreis": 0,
+              "herstellerabschlag": 0,
+              "honorarbudget": 0,
+              "wirtschaftlichkeitsgebot": 0,
+              "preismoratorium": 0,
+              "einnahmenorientierte ausgabenpolitik": 0
+            },
+            "Versorgung ausbauen und besser vergüten": {
+              "krankenhausvergütung": 0,
+              "krankenhausreform": 0,
+              "versorgungsausbau": 0,
+              "honorarerhöh": 0,
+              "pflegepersonal": 0
+            },
+            "Einnahmebasis verbreitern": {
+              "beitragsbemessungsgrenze": 0,
+              "bürgerversicherung": 2,
+              "kapitalerträge": 1,
+              "kapitaleinkommen": 0,
+              "beitragspflichtig": 0
+            },
+            "Einnahmen nicht erhöhen, Ausgaben an Einnahmen orientieren": {
+              "keine höhere bemessungsgrenze": 0,
+              "einnahmenorientiert": 0,
+              "ausgaben an einnahmen": 0,
+              "grundlohnrate": 0
+            }
+          },
+          "3802": {
+            "Bund übernimmt mehr aus Steuern": {
+              "bundeszuschuss": 0,
+              "steuerfinanzier": 1,
+              "versicherungsfremd": 1,
+              "bürgergeldbeziehend": 1,
+              "steuermittel": 2
+            },
+            "Beitragsfreie Mitversicherung einschränken": {
+              "mitversicherung": 0,
+              "ehepartner": 0,
+              "beitragsfrei": 0,
+              "familienversicherung": 0
+            }
+          },
+          "3803": {
+            "Rücklagenregeln ändern": {
+              "rücklagen": 0,
+              "mindestreserve": 0,
+              "reservekorridor": 0,
+              "schwankungsreserve": 0
+            },
+            "Zusatzbeitrag an Bedarf binden": {
+              "zusatzbeitrag senken": 0,
+              "beitragssatz senken": 0
+            }
+          },
+          "3804": {
+            "Zuzahlungen senken oder abschaffen": {
+              "zuzahlung": 0,
+              "zuzahlungsfrei": 0,
+              "eigenanteil senken": 0,
+              "belastungsgrenze senken": 0
+            },
+            "Zuzahlungen erhöhen oder steuern": {
+              "zuzahlung erhöhen": 0,
+              "praxisgebühr": 0,
+              "steuerungsgebühr": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 13,
+        "land": null,
+        "ursachen": {
+          "3801": {
+            "Ausgaben begrenzen: Preise, Budgets, Wirtschaftlichkeit": {
+              "ausgabenbremse": 0,
+              "kostendämpf": 1,
+              "arzneimittelpreis": 0,
+              "herstellerabschlag": 0,
+              "honorarbudget": 0,
+              "wirtschaftlichkeitsgebot": 1,
+              "preismoratorium": 0,
+              "einnahmenorientierte ausgabenpolitik": 0
+            },
+            "Versorgung ausbauen und besser vergüten": {
+              "krankenhausvergütung": 0,
+              "krankenhausreform": 1,
+              "versorgungsausbau": 0,
+              "honorarerhöh": 0,
+              "pflegepersonal": 0
+            },
+            "Einnahmebasis verbreitern": {
+              "beitragsbemessungsgrenze": 0,
+              "bürgerversicherung": 3,
+              "kapitalerträge": 0,
+              "kapitaleinkommen": 0,
+              "beitragspflichtig": 0
+            },
+            "Einnahmen nicht erhöhen, Ausgaben an Einnahmen orientieren": {
+              "keine höhere bemessungsgrenze": 0,
+              "einnahmenorientiert": 0,
+              "ausgaben an einnahmen": 0,
+              "grundlohnrate": 0
+            }
+          },
+          "3802": {
+            "Bund übernimmt mehr aus Steuern": {
+              "bundeszuschuss": 0,
+              "steuerfinanzier": 0,
+              "versicherungsfremd": 1,
+              "bürgergeldbeziehend": 0,
+              "steuermittel": 1
+            },
+            "Beitragsfreie Mitversicherung einschränken": {
+              "mitversicherung": 0,
+              "ehepartner": 0,
+              "beitragsfrei": 0,
+              "familienversicherung": 0
+            }
+          },
+          "3803": {
+            "Rücklagenregeln ändern": {
+              "rücklagen": 0,
+              "mindestreserve": 0,
+              "reservekorridor": 0,
+              "schwankungsreserve": 0
+            },
+            "Zusatzbeitrag an Bedarf binden": {
+              "zusatzbeitrag senken": 0,
+              "beitragssatz senken": 0
+            }
+          },
+          "3804": {
+            "Zuzahlungen senken oder abschaffen": {
+              "zuzahlung": 0,
+              "zuzahlungsfrei": 0,
+              "eigenanteil senken": 0,
+              "belastungsgrenze senken": 0
+            },
+            "Zuzahlungen erhöhen oder steuern": {
+              "zuzahlung erhöhen": 0,
+              "praxisgebühr": 0,
+              "steuerungsgebühr": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 14,
+        "land": null,
+        "ursachen": {
+          "3801": {
+            "Ausgaben begrenzen: Preise, Budgets, Wirtschaftlichkeit": {
+              "ausgabenbremse": 0,
+              "kostendämpf": 0,
+              "arzneimittelpreis": 0,
+              "herstellerabschlag": 0,
+              "honorarbudget": 0,
+              "wirtschaftlichkeitsgebot": 0,
+              "preismoratorium": 0,
+              "einnahmenorientierte ausgabenpolitik": 0
+            },
+            "Versorgung ausbauen und besser vergüten": {
+              "krankenhausvergütung": 0,
+              "krankenhausreform": 0,
+              "versorgungsausbau": 0,
+              "honorarerhöh": 0,
+              "pflegepersonal": 1
+            },
+            "Einnahmebasis verbreitern": {
+              "beitragsbemessungsgrenze": 1,
+              "bürgerversicherung": 0,
+              "kapitalerträge": 0,
+              "kapitaleinkommen": 0,
+              "beitragspflichtig": 0
+            },
+            "Einnahmen nicht erhöhen, Ausgaben an Einnahmen orientieren": {
+              "keine höhere bemessungsgrenze": 0,
+              "einnahmenorientiert": 0,
+              "ausgaben an einnahmen": 0,
+              "grundlohnrate": 0
+            }
+          },
+          "3802": {
+            "Bund übernimmt mehr aus Steuern": {
+              "bundeszuschuss": 0,
+              "steuerfinanzier": 2,
+              "versicherungsfremd": 0,
+              "bürgergeldbeziehend": 0,
+              "steuermittel": 0
+            },
+            "Beitragsfreie Mitversicherung einschränken": {
+              "mitversicherung": 0,
+              "ehepartner": 0,
+              "beitragsfrei": 0,
+              "familienversicherung": 0
+            }
+          },
+          "3803": {
+            "Rücklagenregeln ändern": {
+              "rücklagen": 0,
+              "mindestreserve": 0,
+              "reservekorridor": 0,
+              "schwankungsreserve": 0
+            },
+            "Zusatzbeitrag an Bedarf binden": {
+              "zusatzbeitrag senken": 0,
+              "beitragssatz senken": 0
+            }
+          },
+          "3804": {
+            "Zuzahlungen senken oder abschaffen": {
+              "zuzahlung": 0,
+              "zuzahlungsfrei": 0,
+              "eigenanteil senken": 0,
+              "belastungsgrenze senken": 0
+            },
+            "Zuzahlungen erhöhen oder steuern": {
+              "zuzahlung erhöhen": 0,
+              "praxisgebühr": 0,
+              "steuerungsgebühr": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 15,
+        "land": null,
+        "ursachen": {
+          "3801": {
+            "Ausgaben begrenzen: Preise, Budgets, Wirtschaftlichkeit": {
+              "ausgabenbremse": 0,
+              "kostendämpf": 0,
+              "arzneimittelpreis": 0,
+              "herstellerabschlag": 0,
+              "honorarbudget": 0,
+              "wirtschaftlichkeitsgebot": 0,
+              "preismoratorium": 0,
+              "einnahmenorientierte ausgabenpolitik": 0
+            },
+            "Versorgung ausbauen und besser vergüten": {
+              "krankenhausvergütung": 0,
+              "krankenhausreform": 1,
+              "versorgungsausbau": 0,
+              "honorarerhöh": 0,
+              "pflegepersonal": 1
+            },
+            "Einnahmebasis verbreitern": {
+              "beitragsbemessungsgrenze": 0,
+              "bürgerversicherung": 0,
+              "kapitalerträge": 1,
+              "kapitaleinkommen": 0,
+              "beitragspflichtig": 0
+            },
+            "Einnahmen nicht erhöhen, Ausgaben an Einnahmen orientieren": {
+              "keine höhere bemessungsgrenze": 0,
+              "einnahmenorientiert": 0,
+              "ausgaben an einnahmen": 0,
+              "grundlohnrate": 0
+            }
+          },
+          "3802": {
+            "Bund übernimmt mehr aus Steuern": {
+              "bundeszuschuss": 0,
+              "steuerfinanzier": 4,
+              "versicherungsfremd": 1,
+              "bürgergeldbeziehend": 0,
+              "steuermittel": 4
+            },
+            "Beitragsfreie Mitversicherung einschränken": {
+              "mitversicherung": 1,
+              "ehepartner": 0,
+              "beitragsfrei": 1,
+              "familienversicherung": 0
+            }
+          },
+          "3803": {
+            "Rücklagenregeln ändern": {
+              "rücklagen": 0,
+              "mindestreserve": 0,
+              "reservekorridor": 0,
+              "schwankungsreserve": 0
+            },
+            "Zusatzbeitrag an Bedarf binden": {
+              "zusatzbeitrag senken": 0,
+              "beitragssatz senken": 0
+            }
+          },
+          "3804": {
+            "Zuzahlungen senken oder abschaffen": {
+              "zuzahlung": 0,
+              "zuzahlungsfrei": 0,
+              "eigenanteil senken": 0,
+              "belastungsgrenze senken": 0
+            },
+            "Zuzahlungen erhöhen oder steuern": {
+              "zuzahlung erhöhen": 0,
+              "praxisgebühr": 0,
+              "steuerungsgebühr": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 16,
+        "land": null,
+        "ursachen": {
+          "3801": {
+            "Ausgaben begrenzen: Preise, Budgets, Wirtschaftlichkeit": {
+              "ausgabenbremse": 0,
+              "kostendämpf": 0,
+              "arzneimittelpreis": 0,
+              "herstellerabschlag": 0,
+              "honorarbudget": 0,
+              "wirtschaftlichkeitsgebot": 0,
+              "preismoratorium": 0,
+              "einnahmenorientierte ausgabenpolitik": 0
+            },
+            "Versorgung ausbauen und besser vergüten": {
+              "krankenhausvergütung": 0,
+              "krankenhausreform": 1,
+              "versorgungsausbau": 0,
+              "honorarerhöh": 0,
+              "pflegepersonal": 1
+            },
+            "Einnahmebasis verbreitern": {
+              "beitragsbemessungsgrenze": 2,
+              "bürgerversicherung": 0,
+              "kapitalerträge": 2,
+              "kapitaleinkommen": 0,
+              "beitragspflichtig": 0
+            },
+            "Einnahmen nicht erhöhen, Ausgaben an Einnahmen orientieren": {
+              "keine höhere bemessungsgrenze": 0,
+              "einnahmenorientiert": 0,
+              "ausgaben an einnahmen": 0,
+              "grundlohnrate": 0
+            }
+          },
+          "3802": {
+            "Bund übernimmt mehr aus Steuern": {
+              "bundeszuschuss": 1,
+              "steuerfinanzier": 1,
+              "versicherungsfremd": 1,
+              "bürgergeldbeziehend": 0,
+              "steuermittel": 1
+            },
+            "Beitragsfreie Mitversicherung einschränken": {
+              "mitversicherung": 0,
+              "ehepartner": 0,
+              "beitragsfrei": 0,
+              "familienversicherung": 0
+            }
+          },
+          "3803": {
+            "Rücklagenregeln ändern": {
+              "rücklagen": 2,
+              "mindestreserve": 0,
+              "reservekorridor": 0,
+              "schwankungsreserve": 0
+            },
+            "Zusatzbeitrag an Bedarf binden": {
+              "zusatzbeitrag senken": 0,
+              "beitragssatz senken": 0
+            }
+          },
+          "3804": {
+            "Zuzahlungen senken oder abschaffen": {
+              "zuzahlung": 0,
+              "zuzahlungsfrei": 0,
+              "eigenanteil senken": 0,
+              "belastungsgrenze senken": 0
+            },
+            "Zuzahlungen erhöhen oder steuern": {
+              "zuzahlung erhöhen": 0,
+              "praxisgebühr": 0,
+              "steuerungsgebühr": 0
+            }
+          }
+        }
+      },
+      {
+        "partei_id": 17,
+        "land": null,
+        "ursachen": {
+          "3801": {
+            "Ausgaben begrenzen: Preise, Budgets, Wirtschaftlichkeit": {
+              "ausgabenbremse": 0,
+              "kostendämpf": 0,
+              "arzneimittelpreis": 0,
+              "herstellerabschlag": 0,
+              "honorarbudget": 0,
+              "wirtschaftlichkeitsgebot": 0,
+              "preismoratorium": 0,
+              "einnahmenorientierte ausgabenpolitik": 0
+            },
+            "Versorgung ausbauen und besser vergüten": {
+              "krankenhausvergütung": 0,
+              "krankenhausreform": 1,
+              "versorgungsausbau": 0,
+              "honorarerhöh": 0,
+              "pflegepersonal": 2
+            },
+            "Einnahmebasis verbreitern": {
+              "beitragsbemessungsgrenze": 1,
+              "bürgerversicherung": 2,
+              "kapitalerträge": 2,
+              "kapitaleinkommen": 0,
+              "beitragspflichtig": 0
+            },
+            "Einnahmen nicht erhöhen, Ausgaben an Einnahmen orientieren": {
+              "keine höhere bemessungsgrenze": 0,
+              "einnahmenorientiert": 0,
+              "ausgaben an einnahmen": 0,
+              "grundlohnrate": 0
+            }
+          },
+          "3802": {
+            "Bund übernimmt mehr aus Steuern": {
+              "bundeszuschuss": 0,
+              "steuerfinanzier": 1,
+              "versicherungsfremd": 1,
+              "bürgergeldbeziehend": 0,
+              "steuermittel": 1
+            },
+            "Beitragsfreie Mitversicherung einschränken": {
+              "mitversicherung": 0,
+              "ehepartner": 0,
+              "beitragsfrei": 2,
+              "familienversicherung": 0
+            }
+          },
+          "3803": {
+            "Rücklagenregeln ändern": {
+              "rücklagen": 0,
+              "mindestreserve": 0,
+              "reservekorridor": 0,
+              "schwankungsreserve": 0
+            },
+            "Zusatzbeitrag an Bedarf binden": {
+              "zusatzbeitrag senken": 0,
+              "beitragssatz senken": 0
+            }
+          },
+          "3804": {
+            "Zuzahlungen senken oder abschaffen": {
+              "zuzahlung": 0,
+              "zuzahlungsfrei": 0,
+              "eigenanteil senken": 0,
+              "belastungsgrenze senken": 0
+            },
+            "Zuzahlungen erhöhen oder steuern": {
+              "zuzahlung erhöhen": 0,
+              "praxisgebühr": 0,
+              "steuerungsgebühr": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "partei_id": 12,
+  "land": "ST",
+  "massnahmen": [
+    {
+      "beschreibung": "Fachkräfte des Hilfesystems im Umgang mit digitaler Gewalt schulen.",
+      "ursachen_ids": [2501],
+      "buendel": "Meldewege und Hilfe für Betroffene ausbauen",
+      "zitat": "Das Hilfesystem braucht Schulung und technischen Schutz. Fachkräfte werden im Umgang mit digitaler Gewalt geschult […]",
+      "seite": 32
+    },
+    {
+      "beschreibung": "Digitale Präsenz von Strafverfolgungs- und Aufsichtsbehörden ausbauen und digitale Beratungsangebote ergänzen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2501],
+      "buendel": "Strafverfolgung von Hass und Bedrohung im Netz",
+      "zitat": "Fachkräfte werden im Umgang mit digitaler Gewalt geschult, die digitale Präsenz von Strafverfolgungsbehörden und Aufsichtsbehörden ausgebaut und um digitale Beratungsangebote ergänzt.",
+      "seite": 32
+    },
+    {
+      "beschreibung": "Medienbildung ausbauen, insbesondere zu Hass im Netz, Desinformation und gezielten Kampagnen.",
+      "ursachen_ids": [2503],
+      "buendel": "Prävention, Medienkompetenz und Gesprächskultur",
+      "zitat": "Medienbildung wird weiter ausgebaut – insbesondere zu Hass im Netz, Desinformation und gezielten Kampagnen.",
+      "seite": 35
+    },
+    {
+      "beschreibung": "Zivilgesellschaftliche Initiativen, die sich gegen Hass engagieren, verlässlich fördern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2503],
+      "zitat": "Zivilgesellschaftliche Initiativen, die sich für Menschenrechte und gegen Hass engagieren, werden verlässlich gefördert.",
+      "seite": 36
+    }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 2501, "seiten": [27, 31, 32, 33, 35], "grund": "Opferschutz allgemein (S. 32) gleichartig zur Hilfe-Maßnahme; Staatsanwaltschaften ohne Hass-Bezug (S. 31); Verfolgung von Extremismus (S. 33, 35) nach R2 nicht dieses Thema; Häuser des Jugendrechts (S. 27) ohne Netzbezug." },
+    { "ursache": 2503, "seiten": [19, 41], "grund": "Medienbildung in allen Fächern (S. 19) gleichartig zur Medienbildung auf S. 35; E-Sport-Medienkompetenz und Spielsuchtprävention (S. 41) ohne Hass-Bezug, gleichartig Medienkompetenz." }
+  ],
+  "neue_buendel": [
+    { "ursache": 2503, "name": "Zivilgesellschaftliche Initiativen gegen Hass fördern", "seite": 36 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "medienbildung", "ursache": 2503, "richtung": "Medienbildung zu Hass im Netz" }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: S. 1–6 (Vorwort, kein Inhaltsverzeichnis im PDF). Kapitel: „Schutz vor Gewalt“ und „Opferschutz“ (S. 32–33), „Prävention und kommunale Sicherheit“ und „Justiz“ (S. 30–31), „Demokratie verteidigen“ und „Demokratie schützen und stärken“ (S. 34–35), „Vielfalt schützen, Diskriminierung bekämpfen“ (S. 36), „Kinder- und Jugendpolitik“ (S. 25–27), „Gute Schule für alle / Digitalisierung“ (S. 19), E-Sport (S. 41). Fundstellen S. 27, 31, 32, 33, 35, 36, 41 gelesen.
+
+Nicht erfasst (gelesen, nicht aufgenommen):
+- S. 19: Social-Media-Zugang mit Schutzstufen und verbindlichen Plattformregeln für Kinder und Jugendliche. Plattformpflichten sind Ursache 2502, die für dieses Landesprogramm nicht zulässig ist.
+- S. 32: „Opferschutz wird weiter ausgebaut“ – allgemein für Opfer von Gewalt, Hasskriminalität und Extremismus, ohne Netzbezug; gleicher Hebel wie die Schulungs-Maßnahme (Bündel Meldewege).
+- S. 31: Gerichte und Staatsanwaltschaften personell und technisch gestärkt – allgemeine Justizpolitik, ohne Bezug zu Hass im Netz.
+- S. 33: Ihnen wird mit „konsequenter Strafverfolgung“ entgegengetreten; S. 35: Schwerpunktstaatsanwaltschaft Rechtsextremismus – Extremismus, nach R2 Radikalisierung.
+- S. 27: Häuser des Jugendrechts für Delikte minderjähriger Beschuldigter – kein Netzbezug.
+- S. 41: Medienkompetenz in der E-Sport-Jugendarbeit und Prävention gegen Spielsucht – ohne Hass-Bezug, gleichartig zur Medienbildung auf S. 35.
+
+Richtungen ohne Maßnahme: 2501 Meldewege und Meldestellen: keine Zusage gefunden (Meldestelle, Hassrede, Betroffenenberatung ohne Treffer). 2503 Moderation und Gestaltung der Plattformen: keine Zusage (Plattformdesign, Anonymität, Algorithmen ohne Treffer in den gelesenen Kapiteln).
+
+Seiten ohne Text: S. 1 (Titelseite). Keine Rolle.

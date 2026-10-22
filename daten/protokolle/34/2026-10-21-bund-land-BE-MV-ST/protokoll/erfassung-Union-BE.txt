@@ -1,0 +1,86 @@
+{
+  "partei_id": 11,
+  "land": "BE",
+  "neue_buendel": [{ "ursache": 3401, "name": "Videoüberwachung an Kriminalitätsorten", "seite": 10 }],
+  "massnahmen": [
+    {
+      "beschreibung": "Kriminalitätsauffällige Räume können kurzfristig als kriminalbelastete Orte erklärt werden",
+      "ursachen_ids": [3401],
+      "buendel": "Gezielte Kontrollen für Sicherheit ermöglichen",
+      "zitat": "Wir werden daher dafür sorgen, dass ein kriminalitätsauffälliger Raum unter bestimmten Voraussetzungen auch kurzfristig zu einem kriminalbelasteten Ort erklärt werden kann, um kriminellen Entwicklungen frühzeitig zu begegnen.",
+      "seite": 8
+    },
+    {
+      "beschreibung": "Videoüberwachung an allen kriminalitätsbelasteten Orten ausbauen",
+      "ursachen_ids": [],
+      "ursachen_offen": [3401],
+      "zitat": "Wir werden die Videoüberwachung an allen kriminalitätsbelasteten Orten weiter ausbauen und setzen dabei auch auf intelligente Systeme, die im Rahmen der bestehenden Rechtsgrundlagen einen wirksamen Beitrag zur Gefahrenabwehr leisten.",
+      "seite": 10
+    },
+    {
+      "beschreibung": "Polizeikräfte regelmäßig aus- und fortbilden; operative Dienstbereiche mit Tasern ausstatten",
+      "ursachen_ids": [3402],
+      "buendel": "Kommunikation und Fortbildung der Polizei",
+      "zitat": "Operativ eingesetzte Dienstbereiche sollen vollständig mit Tasern ausgestattet und Einsatzkräfte regelmäßig aus- und fortgebildet werden.",
+      "seite": 8
+    },
+    {
+      "beschreibung": "Schießtrainings der Polizei verdoppeln",
+      "ursachen_ids": [3402],
+      "buendel": "Handlungsfähigkeit und Rückhalt der Polizei",
+      "zitat": "Um der geänderten Gefahrenlage gerecht zu werden, werden wir die Anzahl der Schießtrainings verdoppeln.",
+      "seite": 7
+    },
+    {
+      "beschreibung": "Kooperation von Schulen mit der Polizei ausbauen, regelmäßige Blaulicht-Tage an Schulen",
+      "ursachen_ids": [],
+      "ursachen_offen": [3402],
+      "zitat": "Wir setzen uns dafür ein, die Kooperation von Schulen mit Polizei, Feuerwehr und Bundeswehr gezielt auszubauen und regelmäßige „Blaulicht-Tage“ an Berliner Schulen zu etablieren.",
+      "seite": 64
+    },
+    {
+      "beschreibung": "Doppelstrukturen abbauen, darunter die Stelle des Polizeibeauftragten",
+      "ursachen_ids": [3403],
+      "buendel": "Unabhängige Beschwerde- und Kontrollstellen",
+      "zitat": "Die Arbeit des Petitionsausschusses werden wir stärken und Doppelstrukturen mit der Landesantidiskriminierungsstelle sowie dem Bürger- und Polizeibeauftragten abbauen.",
+      "seite": 118
+    },
+    {
+      "beschreibung": "Berichts- und Dokumentationspflichten der Polizei stark zurückfahren",
+      "ursachen_ids": [3403],
+      "buendel": "Dokumentation und faire Verfahren",
+      "zitat": "Die Berichts- und Dokumentationspflichten werden wir daher drastisch zurückfahren und überarbeiten.",
+      "seite": 8
+    }
+  ]
+}
+
+Protokoll (Thema 34, Ursachen 3401–3403, Land BE)
+
+Gelesen: Inhaltsverzeichnis (S. 2–3); Kapitel „Starke Polizei“ (S. 7–9), „Sicherheit überall“ (S. 10–11, mit Gewaltkapitel bis S. 12), „Kinder- und Jugendschutz“ (S. 12–13); Fundstellen S. 6, 7, 8, 10, 11, 13, 16, 24, 64, 72, 78, 110, 118 (S. 24 und 72 an den Fundstellen gelesen, S. 78 an den Fundstellen gelesen); Integrationskapitel und Petitionsausschuss (S. 117–118). Die Fundstelle S. 6 ist Rückblick (bestehendes Gesetz, Bodycams, Taser), S. 16 die Liste „NICHT brauchen“ (Abgrenzung), S. 78 betrifft Ordnungsämter.
+
+Grenzfälle:
+- S. 10 Videoüberwachung: Technik und Überwachung statt Kontrollbefugnis. Eigener Hebel, deshalb ohne Bündel und mit neue_buendel „Videoüberwachung an Kriminalitätsorten“ (Koordination entscheidet). Der Suchbegriff „videoüberwachung“ steht im Bündel „Gezielte Kontrollen für Sicherheit ermöglichen“.
+- S. 64 Blaulicht-Tage: Kontakt zwischen Schule und Polizei, nicht ein konkreter Polizeieinsatz; nach dem Leitfaden zu 3402 (Kommunikation) als Grenzfall ursachen_offen, ohne Bündel (das Bündel „Kommunikation und Fortbildung der Polizei“ ist mit der Taser-Fortbildung belegt).
+- S. 8 Taser: Die Zusage nennt Ausstattung und Fortbildung. Erfasst wegen der Aus- und Fortbildung (3402); die Ausstattung allein gehört zu Sicherheit (R2).
+- S. 7 Schießtrainings: Aus- und Fortbildung nach dem Leitfaden zu 3402; Bündel „Handlungsfähigkeit und Rückhalt der Polizei“ (Suchbegriff „einsatztraining“).
+
+Bündel ohne Maßnahme:
+- 3401 „Kontrollen begrenzen und nachvollziehbar machen“: keine Zusage gefunden. Der Text enthält nur Ausweitungen (verdachtsunabhängige Kontrollen, S. 8; Videoüberwachung, S. 10; Schwerpunktkontrollen Verkehr, S. 72) und das Hinweisgebersystem (S. 11, Ermittlungsinstrument). Keine Kennzeichnung, keine Kontrollquittung, keine Begrenzung von Befugnissen.
+- 3403 „Dokumentation und faire Verfahren“: belegt durch S. 8. „Kennzeichnungspflicht“, „unabhängige Ermittlungsstelle“, „Beschwerdemanagement“, „Ombudsstelle“: keine Zusage gefunden.
+
+Nicht erfasst:
+- S. 7–8: Ausstattung, Dienststellen, Wachen, Fuhrpark, Personal, Liegenschaftsschutz – Sicherheit (R2), nicht 3401–3403.
+- S. 8: Landesantidiskriminierungsgesetz überarbeiten – Diskriminierung im Alltag (R2), keine Regel für Polizeikontakte oder Beschwerdewege gegen die Polizei.
+- S. 8: Polizeiwache Leopoldplatz, Ausbau Kottbusser Tor – Infrastruktur und Präsenz, keine Kontrollregel.
+- S. 9: Mindeststrafe für Angriffe auf Einsatzkräfte, Ausweisungsrecht, Bundespolizei, Haftgründe – Strafrecht, nicht Einsatzpraxis gegenüber Bürgern.
+- S. 9: Schutz kritischer Infrastruktur, polizeilicher Sicherheitsrahmen – Schutzaufgabe, keine Kontrolle von Personen.
+- S. 10: Nora-Notruf-App, Angsträume – nicht Polizei. S. 72: Sicherheitspersonal und Videoüberwachung im ÖPNV – nicht Polizei.
+- S. 11: Straßenprostitution, Drogenkriminalität, Hinweisgebersystem – Verbot oder Ermittlung, nicht 3401–3403.
+- S. 12–13: Jugenddelinquenz-Teams, Schuldistanz, Jugendämter, Kinderschutz – Jugendhilfe, keine Polizeikontakte.
+- S. 24: Videoüberwachung an Justizvollzugsanstalten – Justizvollzug, nicht Polizeikontakt.
+- S. 72: Schwerpunktkontrollen an Kreuzungen zum Schutz von Rad- und Fußverkehr – Verkehrsüberwachung, keine Regel für Polizeikontakte mit jungen Menschen.
+- S. 78: Ordnungsämter (Bodycams, Einsatztraining durch die Polizeiakademie, Befugnisse) – nicht Polizei.
+- S. 110: sichtbare Präsenz der Polizei gegen queerfeindliche Straftaten – Präsenz, keine Einsatzregel.
+
+Richtungen ohne Maßnahme: siehe „Bündel ohne Maßnahme“ oben. Seiten ohne Text: keine im Kapitel. Stand im PDF: wie im Auftrag.

@@ -1,0 +1,73 @@
+{
+  "partei_id": 15,
+  "land": "BE",
+  "massnahmen": [
+    {
+      "beschreibung": "Mehr Polizeikontrollen ohne konkreten Anlass in Problemvierteln",
+      "ursachen_ids": [3401],
+      "buendel": "Gezielte Kontrollen für Sicherheit ermöglichen",
+      "zitat": "Die AfD fordert: […] Mehr Polizeikontrollen ohne Anlass in Problemvierteln.",
+      "seite": 13
+    },
+    {
+      "beschreibung": "Vollständige Videoüberwachung in allen Brennpunktbereichen",
+      "ursachen_ids": [],
+      "ursachen_offen": [3401],
+      "zitat": "Die AfD fordert: […] Eine vollständige Videoüberwachung in allen Brennpunktbereichen.",
+      "seite": 13
+    },
+    {
+      "beschreibung": "Rechtliche Grundlage für nächtliche Ausgangssperren für jugendliche Intensivtäter",
+      "ursachen_ids": [],
+      "ursachen_offen": [3401],
+      "zitat": "Die AfD fordert: […] Eine rechtliche Grundlage für kriminalitätsbezogene nächtliche Ausgangssperren für jugendliche Intensivtäter.",
+      "seite": 13
+    },
+    {
+      "beschreibung": "Bezirkspolizei bei den Ordnungsämtern mit Identitätsfeststellung, Durchsuchung, Platzverweisen und unmittelbarem Zwang",
+      "ursachen_ids": [],
+      "ursachen_offen": [3401, 3402],
+      "zitat": "Wir wollen die Polizei entlasten, indem wir eine Bezirkspolizei, die bei den Ordnungsämtern angesiedelt ist, einführen. […] Folgende Aufgaben sollen auf die Bezirkspolizei übertragen werden: Identitätsfeststellung, Durchsuchung von Personen und Gegenständen, das Erteilen von Platzverweisen sowie die Anwendung von unmittelbarem Zwang.",
+      "seite": 12
+    },
+    {
+      "beschreibung": "Sicherstellung einer ausreichenden Ausbildung des Polizei-Nachwuchses",
+      "ursachen_ids": [3402],
+      "buendel": "Kommunikation und Fortbildung der Polizei",
+      "zitat": "Die AfD fordert: […] Die Erhöhung des Personals bei der Polizei […] und die Sicherstellung einer ausreichenden Ausbildung des Nachwuchses.",
+      "seite": 13
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 3401, "name": "Videoüberwachung in Brennpunkten", "seite": 13 },
+    { "ursache": 3401, "name": "Nächtliche Ausgangssperren für jugendliche Intensivtäter", "seite": 13 },
+    { "ursache": 3401, "name": "Bezirkspolizei bei den Ordnungsämtern", "seite": 12 }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 3403,
+      "seiten": [12, 13, 14, 15, 16, 17, 18, 19],
+      "grund": "Kapitel „Innere Sicherheit, Justiz & Datenschutz“ gelesen: keine Beschwerdestelle, keine unabhängige Kontrolle, keine Kennzeichnung oder Dokumentation von Polizeieinsätzen. Vermummungsverbot und Strafrechtsthemen gehören nicht hierher."
+    }
+  ]
+}
+
+--- Protokoll ---
+Gelesen: Inhaltsverzeichnis (S. 1–6); Kapitel „Innere Sicherheit, Justiz & Datenschutz“ (PDF-Seiten 12–19) vollständig. Fundstellen: S. 13 (Treffer 3401 und 3403), S. 83 (Videoüberwachung an Müll-Hotspots, Kapitel Umwelt: „kann gezielt eingesetzt werden“ – Möglichkeit, nicht erfasst).
+
+Erfasst:
+- 3401 S. 13 „Mehr Polizeikontrollen ohne Anlass“ (Bündel „Gezielte Kontrollen für Sicherheit ermöglichen“). Weitere gleichartige Stelle: S. 15 „Die Ausweitung anlassloser Kontrollen an kriminalitätsbelasteten Orten.“ (Forderung im Abschnitt Berliner Justiz, Messerdelikte), nicht separat erfasst.
+- 3401 (Grenzfälle, ursachen_offen): S. 13 Videoüberwachung (anderer Hebel als Kontrollbefugnis); S. 13 Ausgangssperren für jugendliche Intensivtäter; S. 12/13 Bezirkspolizei mit Identitätsfeststellung, Durchsuchung, Platzverweisen und unmittelbarem Zwang (zugleich 3402).
+- 3402 S. 13 Ausbildung des Nachwuchses (Bündel „Kommunikation und Fortbildung der Polizei“); Personalerhöhung nach R2 nicht hier.
+
+Nicht erfasst:
+- S. 12–13 Ausstattung, Gebäude, Ausrüstung, Schutzausstattung und Arbeitsbedingungen der Polizei: nach R2 zu Sicherheit, nicht 3402.
+- S. 13 Personalerhöhung, Zulagen, Alimentierung, Anreize für gefahrengeneigte Tätigkeiten: nach R2 zu Sicherheit bzw. Personal, nicht 3402.
+- S. 13 Mobile Polizeiwachen und dichteres Netz stationärer Wachen in Problemvierteln: Präsenz und Infrastruktur, keine Befugnis und keine Einsatzpraxis nach R1.
+- S. 13 Vermummungsverbot bei Versammlungen (ebenso S. 17): Versammlungsrecht, kein Polizeikontakt mit jungen Menschen.
+- S. 14–15 Ident-Arbeitsgruppe, Sondereinheit Ausländerbehörde, Abschiebungen, Strafmündigkeit, Warnschussarrest, Neuköllner Modell: Migration bzw. Jugendstrafrecht, nicht Polizeiverhalten.
+- S. 15 Messerverbotszonen: ausdrücklich abgelehnt, keine Zusage.
+- S. 83 Videoüberwachung an Müll-Hotspots: Umwelt, Möglichkeitsform, kein Polizeibezug.
+
+Bündel ohne Maßnahme: 3401 „Kontrollen begrenzen und nachvollziehbar machen“ – im Text gesucht (anlasslos, Kontrollbescheinigung, Racial Profiling, Kontrollbefugnisse begrenzen, Gefahrengebiete): nichts gefunden. 3402 „Handlungsfähigkeit und Rückhalt der Polizei“ – nur Personal, Ausrüstung, Anreize (siehe oben), nichts zu Einsatztraining oder Schutz der Einsatzkräfte im Sinne von R1. 3403 beide Bündel: nichts gefunden.
+Seiten ohne Text: keine im gelesenen Kapitel.

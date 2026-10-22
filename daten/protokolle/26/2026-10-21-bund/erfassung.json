@@ -1,0 +1,153 @@
+{
+  "thema_id": 26,
+  "programme": [
+    {
+      "partei_id": 17,
+      "land": null,
+      "massnahmen": [
+        {
+          "beschreibung": "Anreize schaffen, damit mehr barrierefreie Arbeitsplätze entstehen",
+          "ursachen_ids": [
+            2602
+          ],
+          "buendel": "Arbeitsplätze und Ausstattung fördern",
+          "zitat": "Gleichzeitig braucht es mehr Anreize zur Schaffung barrierefreier Arbeitsplätze.",
+          "seite": 22
+        }
+      ],
+      "nicht_erfasst": [
+        {
+          "ursache": 2601,
+          "seiten": [
+            22,
+            29,
+            30
+          ],
+          "grund": "Bahnhofsschließungen und Bahnkonzept (S. 29–30) ohne Aussage zur Barrierefreiheit von Bahnhöfen oder Zügen; Verkehrsinvestitionen ohne Bezug zu Zugangsbarrieren."
+        },
+        {
+          "ursache": 2603,
+          "seiten": [
+            21,
+            22,
+            33
+          ],
+          "grund": "Kündigungsschutz für Betriebsratsinitiatoren (S. 21) ohne Bezug zu Menschen mit Behinderung; Sensibilisierung (S. 33) betrifft Gewaltschutz von Frauen; keine Aussage zu Vorbehalten oder Beschäftigungsregeln für Menschen mit Behinderung."
+        }
+      ]
+    }
+  ],
+  "suchbegriffe": {
+    "2601": {
+      "Barrierefreiheit im Bahnverkehr ausbauen und Umsetzung steuern": [
+        "barrierefrei",
+        "barrierefreiheit",
+        "bahnhof",
+        "aufzug",
+        "bahnsteig",
+        "stufenfrei",
+        "mobilitätsgarantie",
+        "behindertengerecht"
+      ],
+      "Finanzierung und Verfahren der Umsetzung": [
+        "finanzierung barrierefreiheit",
+        "förderprogramm bahnhöfe",
+        "umsetzungsfristen",
+        "planungsbeschleunigung"
+      ]
+    },
+    "2602": {
+      "Arbeitsplätze und Ausstattung fördern": [
+        "arbeitsplatzanpassung",
+        "inklusionsbetriebe",
+        "werkstatt für behinderte",
+        "budget für arbeit",
+        "lohnkostenzuschuss",
+        "arbeitsassistenz",
+        "inklusiver arbeitsmarkt"
+      ],
+      "Verpflichtungen für Betriebe": [
+        "ausgleichsabgabe",
+        "beschäftigungspflicht",
+        "schwerbehindertenquote",
+        "pflichtquote"
+      ]
+    },
+    "2603": {
+      "Vorbehalte abbauen und beraten": [
+        "aufklärung arbeitgeber",
+        "inklusionsberatung",
+        "einheitliche ansprechstellen",
+        "vorbehalte",
+        "sensibilisierung"
+      ],
+      "Regeln flexibler gestalten": [
+        "kündigungsschutz",
+        "zusatzurlaub",
+        "entbürokratisierung inklusion",
+        "weniger bürokratie bei der beschäftigung"
+      ]
+    }
+  },
+  "treffer": {
+    "begriffe_pruefsumme": "57b12ca87717444fdda46eb774525d37b0df207bdc031639a52a250570e59e00",
+    "programme": [
+      {
+        "partei_id": 17,
+        "land": null,
+        "ursachen": {
+          "2601": {
+            "Barrierefreiheit im Bahnverkehr ausbauen und Umsetzung steuern": {
+              "barrierefrei": 1,
+              "barrierefreiheit": 0,
+              "bahnhof": 0,
+              "aufzug": 0,
+              "bahnsteig": 0,
+              "stufenfrei": 0,
+              "mobilitätsgarantie": 0,
+              "behindertengerecht": 0
+            },
+            "Finanzierung und Verfahren der Umsetzung": {
+              "finanzierung barrierefreiheit": 0,
+              "förderprogramm bahnhöfe": 0,
+              "umsetzungsfristen": 0,
+              "planungsbeschleunigung": 0
+            }
+          },
+          "2602": {
+            "Arbeitsplätze und Ausstattung fördern": {
+              "arbeitsplatzanpassung": 0,
+              "inklusionsbetriebe": 0,
+              "werkstatt für behinderte": 0,
+              "budget für arbeit": 0,
+              "lohnkostenzuschuss": 0,
+              "arbeitsassistenz": 0,
+              "inklusiver arbeitsmarkt": 0
+            },
+            "Verpflichtungen für Betriebe": {
+              "ausgleichsabgabe": 0,
+              "beschäftigungspflicht": 0,
+              "schwerbehindertenquote": 0,
+              "pflichtquote": 0
+            }
+          },
+          "2603": {
+            "Vorbehalte abbauen und beraten": {
+              "aufklärung arbeitgeber": 0,
+              "inklusionsberatung": 0,
+              "einheitliche ansprechstellen": 0,
+              "vorbehalte": 0,
+              "sensibilisierung": 1
+            },
+            "Regeln flexibler gestalten": {
+              "kündigungsschutz": 1,
+              "zusatzurlaub": 0,
+              "entbürokratisierung inklusion": 0,
+              "weniger bürokratie bei der beschäftigung": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}

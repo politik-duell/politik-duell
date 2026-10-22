@@ -1,0 +1,83 @@
+{
+  "partei_id": 17,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Familien beim Erwerb des ersten selbstgenutzten Eigenheims von der Grunderwerbsteuer befreien",
+      "ursachen_ids": [3904],
+      "buendel": "Grunderwerbsteuer senken oder Freibetrag einführen",
+      "zitat": "Gleichzeitig wollen wir Familien beim Erwerb des ersten selbstgenutzten Eigenheims von der Grunderwerbsteuer befreien.",
+      "seite": 17
+    },
+    {
+      "beschreibung": "Vererbte Vermögen oberhalb der Freibeträge gleich besteuern (Erbschaftsteuer für große Erbschaften erhöhen)",
+      "ursachen_ids": [3903],
+      "buendel": "Erbschaftsteuer erhöhen (Gegenrichtung)",
+      "zitat": "Aktuell gilt: je höher das Erbvermögen, desto niedriger der effektive Steuersatz. […] Das wollen wir verändern und alle vererbten Vermögen oberhalb der Freibeträge gleich besteuern.",
+      "seite": 17
+    },
+    {
+      "beschreibung": "Spekulation mit Bauland eindämmen und aktive Bodenpolitik betreiben",
+      "ursachen_ids": [],
+      "ursachen_offen": [3901],
+      "zitat": "Wir wollen die Spekulation mit Bauland eindämmen sowie eine aktive, langfristige Bodenpolitik und eine nachhaltige Stadtentwicklungspolitik mit gemischten Quartieren fördern.",
+      "seite": 28
+    },
+    {
+      "beschreibung": "Planungsbedingte Wertsteigerungen von Grundstücken abschöpfen",
+      "ursachen_ids": [],
+      "ursachen_offen": [3901],
+      "zitat": "Leistungslose Gewinne privater Grundeigentümer, die durch planungsbedingte Wertsteigerungen entstehen, sind mindestens teilweise abzuschöpfen.",
+      "seite": 28
+    },
+    {
+      "beschreibung": "Beschleunigung von Bauvorhaben, Vereinfachung seriellen Bauens und vereinfachte Genehmigung",
+      "ursachen_ids": [],
+      "ursachen_offen": [3901],
+      "buendel": "Planungs- und Genehmigungsverfahren beschleunigen",
+      "zitat": "Notwendig ist auch die Beschleunigung von Bauvorhaben, etwa durch die Vereinfachung von seriellem Bauen und die Einführung eines vereinfachten Genehmigungsverfahrens für sozialen Wohnungsbau.",
+      "seite": 28
+    },
+    {
+      "beschreibung": "Heizungsgesetz abschaffen und durch andere Regelungen ersetzen",
+      "ursachen_ids": [],
+      "ursachen_offen": [3902],
+      "buendel": "Energievorgaben lockern",
+      "zitat": "Habecks Heizungsgesetz wollen wir sofort abschaffen und durch sinnvolle Regelungen ersetzen.",
+      "seite": 10
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 3901, "name": "Spekulation mit Bauland eindämmen (Bodenpolitik)", "seite": 28 },
+    { "ursache": 3901, "name": "Abschöpfung planungsbedingter Wertsteigerungen", "seite": 28 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3905, "seiten": [11, 17, 28], "grund": "Fundstellen S. 11 (Fehltreffer: Kredite für Energienetze), S. 17 und Kapitel Wohnen (S. 28) gelesen: keine Zusage zu Zinsen, Tilgung oder Laufzeit der Kreditrate für selbstgenutztes Wohneigentum. Zinsvergünstigte Kredite (S. 28) gelten gemeinnützigen Mietwohnungsunternehmen (T2)." }
+  ]
+}
+
+Protokoll (BSW, Bund, Thema 39 „Wohneigentum“)
+
+Gelesen: Kapitel 2 (S. 14–19: Steuern und Finanzen S. 16–17, Bürokratie S. 18–19), Kapitel 3 (S. 20–28: Wohnen ab S. 25, Mietpreisbremse, Bauland, Bodenpolitik S. 27–28), Verkehr und Energie (S. 9–12: Heizungsgesetz, Gebäude) stichprobenhaft. Textdatei sonst per Stichwortsuche (Grunderwerb, Eigentum, Bauland, Baukosten, Zinsen, Erbschaft) gesichtet.
+
+Maßnahme 1 (3904): weitere gleichartige Stelle zum Bündel „Grunderwerbsteuer senken oder Freibetrag einführen“: S. 17 „Share Deals“ schließen (Grunderwerbsteuer-Schlupfloch für institutionelle Investoren). Als gleicher Hebel, aber gegenläufige Richtung nicht gewählt, weil die Familienbefreiung die konkretere Zusage ist.
+
+Maßnahme 2 (3903): „Vererbte Vermögen oberhalb der Freibeträge gleich besteuern“ (S. 17). Familiäre Übertragung als Eigenkapitalquelle (R3).
+
+Maßnahme 3 bis 5 (3901, offen): Die Bodenpolitik und Abschöpfung (S. 28) betreffen Grundstückspreise und Spekulation, die nach R1 nur offen zugeordnet werden. Die Genehmigungs-Zusage (S. 28) nennt Bauvorhaben allgemein, aber als Beispiel den sozialen Wohnungsbau; deshalb offen.
+
+Maßnahme 6 (3902, offen): Heizungsgesetz (S. 10). Die Umbaukosten betreffen vor allem den Bestand; deshalb nur offen. Die Forderung „Zur Dämpfung der Baukosten müssen überzogene Bauvorschriften auf den Prüfstand gestellt werden.“ (S. 28) ist ein Prüfauftrag und bleibt draußen.
+
+Gesehen, nicht erfasst:
+- S. 17: Grundsteuer-Reform, Belastungsmoratorium für Eigenheimbesitzer. Laufende Kosten, keine Ursache des Erwerbs (3904 betrifft die Nebenkosten beim Kauf).
+- S. 17: Steuerfreiheit von Wertzuwächsen bei Immobilien (zehn Jahre) auf selbstgenutzten Wohnraum begrenzen. Keine Ursache dieses Themas.
+- S. 28: gemeinnütziger Wohnungsbau, Mietendeckel, Mietpreisbremse, Mietwucher, Ferienwohnungen, Mietenstopp. Mietwohnungen gehören zu T2.
+- S. 19–20: Bodenpreise für Agrarflächen, Flächenschutz (Bündel „Flächenschutz, weniger Neuausweisung“), Ausgleichsmaßnahmen für Bauvorhaben, Photovoltaik. Das sind Agrarflächen-Ziele („hat für uns Priorität“), keine Zusage zur Neuausweisung von Bauland für Wohnen.
+- S. 11 (Fehltreffer „zinsgünstiger“): Kredite für Energienetze, nicht Wohnen.
+- S. 28: Wohnungsbauziele der Ampel (400.000 Wohnungen). Lagebeschreibung.
+
+Richtungen ohne Maßnahme: 3905 (keine Maßnahme zur Kreditrate). 3903 nur über Erbschaft; keine Förderdarlehen, kein Bausparen, keine Vermögensübertragung-Erleichterung, keine Änderung der Banken-Eigenkapitalanforderung. 3904 nur über Grunderwerbsteuer (Maklerprovision, Notarkosten, Einheitssatz: nicht erwähnt).
+
+Seiten ohne Text: S. 1 (Titelseite), ohne Bedeutung.
+
+Stand im PDF: Titelseite „Wahlprogramm für die Bundestagswahl 2025“, kein abweichender Stand.

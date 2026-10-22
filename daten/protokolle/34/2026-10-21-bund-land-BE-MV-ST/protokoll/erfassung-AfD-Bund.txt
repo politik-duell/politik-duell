@@ -1,0 +1,107 @@
+{
+  "partei_id": 15,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Polizeibeauftragte und innerbehördliche Denunzierungsstellen abschaffen, Beweislastumkehr beenden",
+      "ursachen_ids": [
+        3403
+      ],
+      "buendel": "Unabhängige Beschwerde- und Kontrollstellen",
+      "zitat": "Abschaffung aller politisch installierten Polizeibeauftragten […] sowie der Beweislastumkehr",
+      "seite": 119
+    },
+    {
+      "beschreibung": "Kontrollstellen und Razzien in sogenannten No-go-Areas durchführen",
+      "ursachen_ids": [
+        3401
+      ],
+      "buendel": "Gezielte Kontrollen für Sicherheit ermöglichen",
+      "zitat": "Es sind weiter die erforderlichen Mittel bereitzustellen und […] (wie z. B. Razzien und Kontrollstellen) durchzuführen, damit der Rechtsstaat in den sogenannten No-go-Areas wieder durchgesetzt werden kann.",
+      "seite": 123
+    },
+    {
+      "beschreibung": "Strafverfolgungs- und Fahndungsbefugnisse der Polizei an die aktuelle Kriminalitätsentwicklung anpassen",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3401
+      ],
+      "zitat": "Anpassung der Strafverfolgungsbefugnisse und der Fahndungs-möglichkeiten der Polizei",
+      "seite": 120
+    },
+    {
+      "beschreibung": "Befugnisse der Bundespolizei erweitern, auch als Grenzbehörde außerhalb der Grenzübergangsstellen",
+      "ursachen_ids": [
+        3401
+      ],
+      "zitat": "In rechtlicher Hinsicht fordern wir eine Erweiterung der Befugnisse der Bundespolizei",
+      "seite": 126
+    },
+    {
+      "beschreibung": "Rechtsschutz der Beamten in dienstlichen Angelegenheiten sicherstellen",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        3402
+      ],
+      "buendel": "Handlungsfähigkeit und Rückhalt der Polizei",
+      "zitat": "Sicherstellung des Rechtsschutzes der Beamten in dienstlichen Angelegenheiten",
+      "seite": 120
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 3402,
+      "seiten": [
+        117,
+        118,
+        119,
+        120,
+        125,
+        126
+      ],
+      "grund": "Kein Treffer zu Einsatzpraxis, Deeskalation, Kommunikation, Fortbildung, Bodycams. Personal, Besoldung, Zulagen, Ausrüstung, Bewaffnung und Fahndungstechnik sind nach R2 Sicherheit."
+    }
+  ],
+  "neue_buendel": [
+    {
+      "ursache": 3401,
+      "name": "Strafverfolgungs- und Fahndungsbefugnisse erweitern",
+      "seite": 120
+    },
+    {
+      "ursache": 3401,
+      "name": "Befugnisse der Bundespolizei erweitern",
+      "seite": 126
+    }
+  ],
+  "eigene_synonyme": [
+    {
+      "begriff": "no-go-area",
+      "ursache": 3401,
+      "richtung": "Kontrollstellen und Razzien"
+    }
+  ]
+}
+
+
+--- Protokoll ---
+
+Gelesene Seiten: Inhaltsverzeichnis (S. 1–8); Kapitel „Innere Sicherheit“ (S. 116–126, S. 116 ist Trennseite; S. 127 leer); Fundstellen S. 119 und S. 125.
+
+Richtungen ohne Maßnahme:
+- 3402 (Kommunikation und Fortbildung, Einsatzpraxis): kein Treffer im Kapitel; Deeskalation, Bodycam, Fortbildung nicht genannt.
+- 3401 Richtung „Kontrollen begrenzen“: nur Ablehnungen (S. 125 flächendeckende Videoüberwachung, Staatstrojaner, Vorratsdatenspeicherung). Ablehnung ohne eigene Handlung, deshalb nicht erfasst.
+- 3403 Richtung „Dokumentation und faire Verfahren“: nicht gefunden (keine Kennzeichnungspflicht, keine Dokumentationspflicht).
+
+Gleichartige Stellen: Keine zusätzlichen Stellen zu den Bündeln.
+
+Nicht erfasst:
+- S. 117–118: Aufstockung der Ermittlungsbehörden, Schutz ermittelnder Beamter, Personal (R2: Sicherheit).
+- S. 119–120: Besoldung, Gefährdungszulagen, Ausrüstung, Bewaffnung (R2: Ausstattung, Sicherheit).
+- S. 119: Keine politischen Beamten in Sicherheitsbehörden, Ablehnung von Gesinnungsüberprüfungen, keine sofortige Entlassung aus politischen Gründen: Dienstrecht, kein Polizeikontakt.
+- S. 125: Ablehnung flächendeckender Videoüberwachung, Staatstrojaner, Vorratsdatenspeicherung: Bekenntnis ohne Handlung.
+- S. 126: Fahndungstechnik, elektronische Überwachungssysteme, Altersgrenze der Einsatzkräfte: Ausstattung oder Personal (R2).
+- S. 118: Jugendstrafrecht, Strafmündigkeit: nicht Polizeikontakt.
+
+Seiten ohne Text: keine im Kapitel betroffen.
+Stand: Titelseite und Vorwort wie im Auftrag (Parteitag Januar 2025).

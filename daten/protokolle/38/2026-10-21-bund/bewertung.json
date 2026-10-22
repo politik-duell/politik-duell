@@ -1,0 +1,490 @@
+{
+  "blind_pruefsumme": "7298d522419f80b4ad3b5bfb1f1d4ce9eea1ee872ea15ab9f54fd9c9beaba025",
+  "neue_instrumente": [
+    {
+      "kennung": "I1",
+      "name": "Versicherungsfremde Leistungen (v. a. Bürgergeld-Beiträge) kostendeckend aus Steuermitteln finanzieren (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Laut IGES deckt die Bürgergeld-Pauschale nur rund 39 % der Kosten (Lücke ca. 9-10 Mrd. Euro), Erstattung senkt den Beitragsbedarf spürbar. Dagegen: einmalige Entlastung ohne Wirkung auf das Ausgabenwachstum, belastet den angespannten Bundeshaushalt.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.haufe.de/sozialwesen/gesundheitsausgaben-fuer-buergergeldbeziehende-nicht-gedeckt_244_623712.html"
+    },
+    {
+      "kennung": "I2",
+      "name": "Privatversicherte in eine gemeinsame Bürgerversicherung einbeziehen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "IGES/Bertelsmann-Simulation: Einbeziehung aller Privatversicherten senkt den Beitragssatz um 0,2-0,6 Punkte, weil sie im Schnitt mehr verdienen und gesünder sind. Dagegen: einmaliger Effekt, verfassungsrechtliche Fragen zum PKV-Bestand, lange Übergänge.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://idw-online.de/de/news731604"
+    },
+    {
+      "kennung": "I3",
+      "name": "Beitragsbemessungsgrenze anheben oder abschaffen und weitere Einkommensarten verbeitragen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Modellrechnungen zeigen Mehreinnahmen und Beitragssatzspielraum durch breitere Einnahmebasis. Dagegen: bremst das Ausgabenwachstum nicht, Erhebung auf Kapitaleinkünfte aufwendig, mögliche Ausweichreaktionen und Belastung von Arbeitskosten umstritten.",
+      "evidenz": "gemischt"
+    },
+    {
+      "kennung": "I4",
+      "name": "Beitragsbemessung für geringverdienende Selbstständige an tatsächlichen Einnahmen ausrichten (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Senkt die Beitragslast geringverdienender Selbstständiger und macht Beiträge für sie bezahlbarer. Dagegen: betrifft eine kleine Gruppe, mindert eher die Einnahmen und ändert nichts am allgemeinen Beitragsanstieg.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I5",
+      "name": "Fallpauschalen im Krankenhaus abschaffen und Betriebskosten voll bzw. über Budgets finanzieren (Bund)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 2,
+      "begruendung": "Könnte Fehlanreize zur Mengenausweitung verringern. Dagegen: volle Kostenerstattung bzw. Selbstkostendeckung schwächt Kostenkontrolle und dürfte die Ausgaben der Kassen erhöhen; Erfahrungen vor 1993 zeigten steigende Kosten.",
+      "evidenz": "gemischt"
+    },
+    {
+      "kennung": "I6",
+      "name": "Krankenhausstrukturen spezialisieren und Krankenhausreform umsetzen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Konzentration kann Vorhaltekosten und Doppelstrukturen senken und Qualität verbessern. Dagegen: Einsparungen erst langfristig und unsicher, Umbau verursacht zunächst hohe Transformationskosten.",
+      "evidenz": "gemischt"
+    },
+    {
+      "kennung": "I7",
+      "name": "Krankenhausinvestitionen und Transformationskosten aus anderen Mitteln statt aus GKV-Beiträgen tragen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Entlastet die Beitragszahler von Kosten, die nicht aus dem laufenden Betrieb stammen, und mindert Quersubventionierung aus Fallerlösen. Dagegen: geringer, kaum untersuchter Effekt auf den Beitragssatz; Finanzierung durch Länder bzw. PKV ungeklärt.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I8",
+      "name": "Ärztliche Honorare im ambulanten Bereich erhöhen und Budgetierung aufheben (Bund)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kann die Versorgung in Praxen stärken. Dagegen: setzt bei den Ausgaben an, erhöht sie aber und treibt damit den Beitragsbedarf; für bezahlbare Beiträge kein Beitrag.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I9",
+      "name": "Primärarztsystem mit hausärztlicher Steuerung einführen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Systematische Übersicht: Gatekeeping senkt Facharzt- und Klinikinanspruchnahme und teils die Ausgaben bei besserer Qualität. Dagegen: Evidenz schwach und meist aus anderen Systemen, geringere Patientenzufriedenheit, Hausarztmangel.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://blogs.imperial.ac.uk/medical-centre/?p=434"
+    },
+    {
+      "kennung": "I10",
+      "name": "Leistungen ohne Nutzennachweis abbauen, etwa über Zweitmeinungen und Prüfung des Leistungskatalogs (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Abbau von Über- und Fehlversorgung kann Ausgaben dämpfen. Dagegen: Wirkung deutscher Zweitmeinungsverfahren kaum belegt, Inanspruchnahme sehr gering; Streichungen sind langwierig und bringen meist wenig Volumen.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I11",
+      "name": "Zahnersatz und Sehhilfen vollständig in den GKV-Leistungskatalog aufnehmen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "Senkt hohe Eigenanteile deutlich; Kostenbeteiligung mindert nachweislich auch nötige Inanspruchnahme, vor allem bei Geringverdienenden. Dagegen: Mehrausgaben in Milliardenhöhe erhöhen den Beitragsbedarf, Finanzierung ungeklärt.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://en.wikipedia.org/wiki/RAND_Health_Insurance_Experiment"
+    }
+  ],
+  "zuordnung": [
+    {
+      "kennung": "M01",
+      "instrument": "I5",
+      "ursachen": [
+        3801
+      ]
+    },
+    {
+      "kennung": "M02",
+      "instrument": "I4",
+      "ursachen": [
+        3801
+      ]
+    },
+    {
+      "kennung": "M03",
+      "instrument": "I11",
+      "ursachen": [
+        3804
+      ]
+    },
+    {
+      "kennung": "M04",
+      "instrument": "I7",
+      "ursachen": [
+        3801
+      ]
+    },
+    {
+      "kennung": "M05",
+      "ursachen": []
+    },
+    {
+      "kennung": "M06",
+      "ursachen": []
+    },
+    {
+      "kennung": "M07",
+      "instrument": "I1",
+      "ursachen": [
+        3802
+      ]
+    },
+    {
+      "kennung": "M08",
+      "instrument": "I10",
+      "ursachen": [
+        3801
+      ]
+    },
+    {
+      "kennung": "M09",
+      "ursachen": []
+    },
+    {
+      "kennung": "M10",
+      "instrument": "I7",
+      "ursachen": [
+        3801
+      ]
+    },
+    {
+      "kennung": "M11",
+      "instrument": "I3",
+      "ursachen": [
+        3801
+      ]
+    },
+    {
+      "kennung": "M12",
+      "instrument": "I9",
+      "ursachen": [
+        3801
+      ]
+    },
+    {
+      "kennung": "M13",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Bessere Verzahnung der Sektoren kann Doppeluntersuchungen und unnötige Klinikaufenthalte vermeiden. Dagegen: völlige Abschaffung der Sektorentrennung ist unbestimmt, berührt Länderkompetenzen und Einsparungen sind kaum belegt.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3801
+      ]
+    },
+    {
+      "kennung": "M14",
+      "instrument": "I8",
+      "ursachen": [
+        3801
+      ]
+    },
+    {
+      "kennung": "M15",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 1,
+        "begruendung": "Übernahme von Zahnersatz und Brillen senkt Eigenanteile deutlich, Streichung nutzloser Leistungen dämpft Ausgaben. Dagegen: Mehrausgaben übersteigen absehbar die Einsparungen, Finanzierung ungeklärt.",
+        "evidenz": "gemischt"
+      },
+      "ursachen": [
+        3801,
+        3804
+      ]
+    },
+    {
+      "kennung": "M16",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Gemeinsame Preisfestsetzung könnte die Verhandlungsmacht gegenüber Herstellern stärken. Dagegen: hängt von EU-Entscheidungen ab, und einheitliche Preise könnten für Deutschland auch höher ausfallen als heute.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3801
+      ]
+    },
+    {
+      "kennung": "M17",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Anreize zur Vorsorge können langfristig Krankheitskosten senken. Dagegen: Einsparungen durch Bonusmodelle sind kaum belegt, Mitnahmeeffekte bei ohnehin Gesunden mindern die Einnahmen.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3801
+      ]
+    },
+    {
+      "kennung": "M18",
+      "ursachen": []
+    },
+    {
+      "kennung": "M19",
+      "instrument": "I8",
+      "ursachen": [
+        3801
+      ]
+    },
+    {
+      "kennung": "M20",
+      "instrument": "I3",
+      "ursachen": [
+        3801
+      ]
+    },
+    {
+      "kennung": "M21",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Finanzielle Anreize senken nachweislich die Inanspruchnahme (RAND-Experiment). Dagegen: es entfällt auch nötige Versorgung, besonders bei Geringverdienenden; die Einsparung für die Kassen ist begrenzt.",
+        "evidenz": "gemischt"
+      },
+      "ursachen": [
+        3801
+      ]
+    },
+    {
+      "kennung": "M22",
+      "ursachen": []
+    },
+    {
+      "kennung": "M23",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Bessere Betrugsbekämpfung holt Geld zurück und ist rechtlich einfach. Dagegen: aufgedeckte Schäden machen nur einen kleinen Teil der Ausgaben aus, Wirkung auf den Beitragssatz gering.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3801
+      ]
+    },
+    {
+      "kennung": "M24",
+      "instrument": "I1",
+      "ursachen": [
+        3802
+      ]
+    },
+    {
+      "kennung": "M25",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Kann Beiträge für Geringverdienende bezahlbarer machen. Dagegen: ohne Angabe des Wegs unbestimmt, ändert am Ausgabenwachstum nichts.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3801
+      ]
+    },
+    {
+      "kennung": "M26",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Zielt auf geringere Zuzahlungen und Eigenanteile. Dagegen: weder Instrument noch Umfang genannt, Wirkung daher kaum abschätzbar.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3804
+      ]
+    },
+    {
+      "kennung": "M27",
+      "instrument": "I5",
+      "ursachen": [
+        3801
+      ]
+    },
+    {
+      "kennung": "M28",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Einbeziehung der PKV in den Risikostrukturausgleich brächte der GKV zusätzliche Mittel. Dagegen: verfassungsrechtlich umstritten, und ein gerechterer Ausgleich zwischen Kassen verteilt Geld nur um.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3801
+      ]
+    },
+    {
+      "kennung": "M29",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 2,
+        "begruendung": "Bindung der Ausgaben an die Einnahmen ist Kernempfehlung der Finanzkommission und setzt direkt am Ausgabenwachstum an. Dagegen: frühere Budgetierungen wirkten nur zeitweise und können Versorgungsengpässe auslösen.",
+        "evidenz": "gemischt"
+      },
+      "ursachen": [
+        3801
+      ]
+    },
+    {
+      "kennung": "M30",
+      "instrument": "I2",
+      "ursachen": [
+        3801
+      ]
+    },
+    {
+      "kennung": "M31",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Erfolgsabhängige Vergütung kann Zahlungen für unwirksame Arzneimittel vermeiden. Dagegen: Messung aufwendig, Einsparungen in Studien uneinheitlich, als Zusatzvergütung eher ausgabensteigernd.",
+        "evidenz": "gemischt"
+      },
+      "ursachen": [
+        3801
+      ]
+    },
+    {
+      "kennung": "M32",
+      "instrument": "I1",
+      "ursachen": [
+        3802
+      ]
+    },
+    {
+      "kennung": "M33",
+      "instrument": "I9",
+      "ursachen": [
+        3801
+      ]
+    },
+    {
+      "kennung": "M34",
+      "ursachen": []
+    },
+    {
+      "kennung": "M35",
+      "ursachen": []
+    },
+    {
+      "kennung": "M36",
+      "instrument": "I4",
+      "ursachen": [
+        3801
+      ]
+    },
+    {
+      "kennung": "M37",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Mehr Effizienz und Kassenwettbewerb können Ausgaben dämpfen. Dagegen: ohne konkrete Instrumente unbestimmt, Wirkung des Kassenwettbewerbs auf Leistungsausgaben gering.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3801
+      ]
+    },
+    {
+      "kennung": "M38",
+      "instrument": "I6",
+      "ursachen": [
+        3801
+      ]
+    },
+    {
+      "kennung": "M39",
+      "ursachen": []
+    },
+    {
+      "kennung": "M40",
+      "instrument": "I2",
+      "ursachen": [
+        3801
+      ]
+    },
+    {
+      "kennung": "M41",
+      "instrument": "I8",
+      "ursachen": [
+        3801
+      ]
+    },
+    {
+      "kennung": "M42",
+      "instrument": "I8",
+      "ursachen": [
+        3801
+      ]
+    },
+    {
+      "kennung": "M43",
+      "instrument": "I2",
+      "ursachen": [
+        3801
+      ]
+    },
+    {
+      "kennung": "M44",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Freibetrag entlastet Geringverdienende, Anhebung der Bemessungsgrenze verbreitert die Einnahmebasis. Dagegen: als Gegenfinanzierung angelegt, also für die Kasse etwa aufkommensneutral; Ausgabenwachstum bleibt.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        3801
+      ]
+    },
+    {
+      "kennung": "M45",
+      "ursachen": []
+    },
+    {
+      "kennung": "M46",
+      "ursachen": []
+    },
+    {
+      "kennung": "M47",
+      "ursachen": []
+    },
+    {
+      "kennung": "M48",
+      "ursachen": []
+    },
+    {
+      "kennung": "M49",
+      "instrument": "I1",
+      "ursachen": [
+        3802
+      ]
+    },
+    {
+      "kennung": "M50",
+      "instrument": "I6",
+      "ursachen": [
+        3801
+      ]
+    },
+    {
+      "kennung": "M51",
+      "instrument": "I10",
+      "ursachen": [
+        3801
+      ]
+    },
+    {
+      "kennung": "M52",
+      "ursachen": []
+    }
+  ]
+}

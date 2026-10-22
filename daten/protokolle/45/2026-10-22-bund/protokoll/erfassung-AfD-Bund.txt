@@ -1,0 +1,137 @@
+{
+  "partei_id": 15,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Aufhebung des Verbrennerverbots und der Flottengrenzwerte",
+      "ursachen_ids": [],
+      "ursachen_offen": [4501],
+      "buendel": "Antriebe und Flotte wechseln",
+      "zitat": "Strangulierende Bürokratie und wettbewerbsverzerrende Vorschriften reduzieren wir durch: […] Aufhebung des Verbrennerverbots und der unerreichbaren Flottengrenzwerte",
+      "seite": 14
+    },
+    {
+      "beschreibung": "Generelles Tempolimit auf Autobahnen ablehnen",
+      "ursachen_ids": [4501],
+      "buendel": "Tempo und Fahrverbote",
+      "zitat": "Die AfD lehnt ein generelles Tempolimit auf Bundesautobahnen strikt ab.",
+      "seite": 45
+    },
+    {
+      "beschreibung": "CO₂-bezogene Erhöhung der Lkw-Maut zurücknehmen",
+      "ursachen_ids": [],
+      "ursachen_offen": [4501],
+      "buendel": "Nachfrage über Abgaben steuern",
+      "zitat": "Die massive CO₂-bezogene Erhöhung der Lkw-Maut muss zurückgenommen werden, da sie vor allem die Waren verteuert.",
+      "seite": 45
+    },
+    {
+      "beschreibung": "Rollende Landstraße und Containerumschlag für Transitverbindungen etablieren",
+      "ursachen_ids": [],
+      "ursachen_offen": [4501],
+      "buendel": "Verkehr verlagern (Schiene, Rad)",
+      "zitat": "Das Konzept der „Rollenden Landstraße“ und des Containerumschlages soll für die Transitverbindungen durch Deutschland mit regelmäßigen Taktungen etabliert werden.",
+      "seite": 45
+    },
+    {
+      "beschreibung": "Innerstädtische Fahrspuren und Parkraum erhalten und ausbauen",
+      "ursachen_ids": [],
+      "ursachen_offen": [4501],
+      "buendel": "Straßenkapazität ausbauen",
+      "zitat": "Gleichzeitig fordert die AfD den Erhalt und Ausbau von innerstädtischen Fahrspuren und Parkraum zur Vermeidung von wachsendem Verkehrschaos sowie zum Schutz der Attraktivität des Einzelhandels.",
+      "seite": 43
+    },
+    {
+      "beschreibung": "Flughäfen als Wirtschaftsfaktor stärken",
+      "ursachen_ids": [],
+      "ursachen_offen": [4501],
+      "zitat": "Deutschlands Flughäfen sind als Wirtschaftsfaktor zu stärken.",
+      "seite": 46
+    },
+    {
+      "beschreibung": "Belastende Klimaschutzvorschriften für Seehäfen reduzieren",
+      "ursachen_ids": [],
+      "ursachen_offen": [4501],
+      "zitat": "Wir befürworten daher eine konsequente Reduktion von Gebühren und bürokratischen Vorschriften, insbesondere von belastenden Klimaschutzbestimmungen, sowie eine Förderung der Digitalisierung, private Investitionen und Beteiligungen an unseren Häfen.",
+      "seite": 47
+    },
+    {
+      "beschreibung": "CO₂-Steuer abschaffen",
+      "ursachen_ids": [],
+      "ursachen_offen": [4501],
+      "zitat": "Ideologiegetriebene Kosten wie EEG-Umlage, CO₂-Steuer und das Gebäudeenergiegesetz (GEG) werden wir abschaffen.",
+      "seite": 37
+    },
+    {
+      "beschreibung": "Jede Steuer ablehnen, die sich auf Klimaschutz beruft",
+      "ursachen_ids": [],
+      "ursachen_offen": [4503],
+      "buendel": "Abgabe auf Tierhaltung oder Dünger",
+      "zitat": "Die AfD lehnt daher jede Politik und jede Steuer ab, die sich auf angeblichen Klimaschutz beruft, denn das Klima kann der Mensch nicht schützen.",
+      "seite": 80
+    },
+    {
+      "beschreibung": "Bedarfsgerechte Düngung wieder ermöglichen und Dünge-Bürokratie begrenzen",
+      "ursachen_ids": [4503],
+      "buendel": "Düngung begrenzen",
+      "zitat": "Die derzeitigen Düngeregeln verursachen erhebliche Ertrags- und Qualitätseinbußen sowie massive ökologische Probleme, darunter der Verlust von Bodenfruchtbarkeit und Humus. Die AfD wird deshalb die bedarfsgerechte Nährstoffversorgung von Kulturpflanzen nach guter fachlicher Praxis wieder ermöglichen und den bürokratischen Aufwand auf das absolut notwendige Minimum beschränken.",
+      "seite": 76
+    },
+    {
+      "beschreibung": "Aus dem Pariser Klimaabkommen aussteigen",
+      "ursachen_ids": [],
+      "ursachen_offen": [4504],
+      "zitat": "Wir wollen zudem aus dem Pariser Klimaabkommen aussteigen.",
+      "seite": 80
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 4502,
+      "seiten": [14, 37, 38, 40, 41],
+      "grund": "Gebäude: Heizungsrecht (Verbot von Gas- und Ölheizungen aufheben, GEG abschaffen) gehört zu Heizungsart und Regeln (nicht zu 2); Wohnkapitel (S. 36–40) ohne Sanierungs-, Dämm- oder Förderzusage; Energiekapitel (S. 40–42) betrifft Energiewirtschaft."
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 4501, "name": "Flugverkehr stärken", "seite": 46 },
+    { "ursache": 4501, "name": "Klimavorschriften für Häfen abbauen", "seite": 47 },
+    { "ursache": 4501, "name": "CO₂-Bepreisung und Emissionshandel", "seite": 37 },
+    { "ursache": 4504, "name": "Aussteigen aus dem Pariser Klimaabkommen", "seite": 80 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "synthetische kraftstoffe", "ursache": 4501, "richtung": "Antriebe und Flotte wechseln" },
+    { "begriff": "verbrennerverbot", "ursache": 4501, "richtung": "Antriebe und Flotte wechseln" }
+  ]
+}
+
+PROTOKOLL AfD (Bund), Thema 45 „Klimaschutz“
+
+Gelesen: Inhaltsverzeichnis (S. 2–6); Kapitel „Bauen, Wohnen, Infrastruktur, Energie, Verkehr und Digitales“ S. 36–47 (Wohnen S. 36–39, Energie S. 40–42, Verkehr S. 42–47); Soziale Marktwirtschaft S. 14 (Liste zu Verbrennerverbot, CO₂-Abgabe, Gebäude); Landwirtschaft, Umwelt und Klima S. 75–81 (Düngung S. 76, Tierhaltung S. 76–77, Klima S. 77–80, Windkraft S. 80–81); Digitales S. 47 (Seehäfen).
+
+Gleichartig, nicht gesondert erfasst:
+- „Die heutige einseitige Bevorzugung von Elektromobilität ist sofort zu stoppen“ (S. 44): Bündel „Antriebe und Flotte wechseln“ (gleiche Richtung wie Verbrennerverbot-Aufhebung, S. 14).
+- „Im Verkehrssektor wird sich die AfD auf allen Ebenen dafür einsetzen, das Verbot des Verbrennungsmotors aufzuheben.“ (S. 42): gleiche Richtung wie Verbrennerverbot-Aufhebung (S. 14), Bündel schon belegt.
+- Synthetische Kraftstoffe, Gleichbehandlung bei Abgaben (S. 44, „müssen … eine Gleichbehandlung erfahren“, Grenzfall zu Antrieben): Bündel „Antriebe und Flotte wechseln“.
+- Luftverkehrsteuer abschaffen (S. 47): Verkehrsabgabe, gleichartig zur Lkw-Maut; Bündel „Nachfrage über Abgaben steuern“ schon belegt.
+- Verladestellen und multimodale Güterverkehrszentren verdichten (S. 45): gleiche Richtung wie Rollende Landstraße.
+- Dieselfahrverbote und Tempo-30-Regelungen ablehnen (S. 43): Bündel „Tempo und Fahrverbote“, gleiche Richtung wie Tempolimit (S. 45).
+- Verbote von Inlands- und Kurzstreckenflügen ablehnen (S. 46): Gegenrichtung ohne eigenes Bündel im Auftrag, nicht erfasst.
+- Ladeinfrastruktur aus öffentlichen Mitteln stoppen (S. 44): Thema 15, nicht erfasst.
+
+Nicht erfasst:
+- S. 40–42 (Kohle, Kernkraft, Wasserstoff, Netzagentur, Gaskraftwerke): Energiewirtschaft, nicht eine der Ursachen 4501–4504 (Verkehr, Gebäude, Landwirtschaft, Budget).
+- S. 45–46 (Schienennetz, Bahnkonzern in GmbH, Deutschlandticket, ETCS): Bahn- und Busangebot, Thema 8.
+- S. 37–38 (GEG, Heizungsverbot): Heizungsart und Regeln, R2 schließt das aus (4502).
+- S. 76–77 (Tierwohl, Haltungssysteme, Kombihaltung, Schlachtung): kein Emissionsbezug; S. 76 Bekenntnis „Wir bekennen uns zur Tierhaltung“ ohne Maßnahme zum Tierbestand.
+- S. 78–79 (Klimawissenschaft, „Große Transformation“, Kritik an Klimapolitik): Lagen- und Haltungsaussagen, keine Maßnahme zu Budget oder Sektoren.
+- S. 80–81 (Windkraft-Ausbaustopp, Umweltschutz statt Wind): Energie, nicht Ursache dieses Themas.
+
+Richtungen ohne Maßnahme (Kapitel gelesen, 0 Treffer):
+- 4501: „Verkehr verlagern (Schiene, Rad)“ ist belegt; „Radwegausbau“ nicht gefunden.
+- 4502: „Gebäudehülle sanieren“, „Sanierung verpflichten (Ordnungsrecht)“, „Sanierung bezuschussen“: keine Zusage (Gebäudekapitel S. 36–40 gelesen).
+- 4503: „Tierbestand verringern“, „Tierhaltung emissionsärmer machen“: keine Zusage; „Produktion ins Ausland verlagern (gegenläufig)“: nicht gefunden (S. 77 nur Schlachtstandard bei Importware).
+- 4504: „Sektorziele verbindlich machen“, „Gesamtbudget flexibel steuern (gegenläufig)“, „früher nachsteuern“: keine Zusage im Text; Pariser Klimaabkommen (S. 80) nur als Ausstieg.
+
+Grenzfälle (ursachen_offen): alle Verkehrs-Treiber (Flotte, Güter, Abgaben, Flugverkehr, Häfen) nach R1 offen; Klima-Steuerablehnung (4503) und Pariser Ausstieg (4504) als Grenz.
+
+Seiten ohne Text: 36 (Kapitel-Trennseite), 52–54: ohne Bedeutung; S. 35 und 98–100 nicht betroffen.

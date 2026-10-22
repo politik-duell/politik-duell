@@ -1,0 +1,44 @@
+{
+  "partei_id": 11,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Einkommensteuertarif schrittweise senken, Grundfreibetrag erhöhen, Grenze für den Spitzensteuersatz anheben", "ursachen_ids": [4201], "buendel": "Entlastung über Grundfreibetrag", "zitat": "Dazu flachen wir den Einkommensteuertarif schrittweise spürbar ab und erhöhen den «Grundfreibetrag». Die Einkommensgrenze für den Spitzensteuersatz erhöhen wir deutlich.", "seite": 14 },
+    { "beschreibung": "Einkommensteuertarif regelmäßig an die Inflation anpassen, um die kalte Progression auszugleichen", "ursachen_ids": [4201], "buendel": "Tarif an Inflation anpassen", "zitat": "Deshalb passen wir den Einkommensteuertarif regelmäßig an die Inflation an und gleichen so die kalte Progression aus.", "seite": 14 },
+    { "beschreibung": "Kindergeld anheben und künftig automatisch nach der Geburt auszahlen", "ursachen_ids": [], "ursachen_offen": [4201], "zitat": "Entsprechend heben wir auch das Kindergeld an, das künftig nach der Geburt automatisch ausgezahlt werden soll.", "seite": 63 },
+    { "beschreibung": "Umsatzsteuer auf Speisen in der Gastronomie auf sieben Prozent senken", "ursachen_ids": [], "ursachen_offen": [4203], "buendel": "Konsum belasten oder entlasten", "zitat": "Wir reduzieren die Umsatzsteuer auf Speisen in der Gastronomie auf sieben Prozent.", "seite": 16 },
+    { "beschreibung": "Unternehmensbesteuerung auf höchstens 25 Prozent auf einbehaltene Gewinne begrenzen, schrittweise, durch Senken der Tarifbelastung", "ursachen_ids": [], "ursachen_offen": [4203], "buendel": "Unternehmen und Kapital entlasten", "zitat": "Unser Ziel ist eine attraktive Unternehmensbesteuerung von maximal 25 Prozent auf einbehaltene Gewinne, die wir schrittweise umsetzen wollen. Dazu senken wir insbesondere die Tarifbelastung und verbessern wesentlich das Optionsmodell und die Thesaurierungsbegünstigung.", "seite": 16 },
+    { "beschreibung": "Solidaritätszuschlag abschaffen", "ursachen_ids": [], "ursachen_offen": [4203], "zitat": "Wir schaffen den restlichen Solidaritätszuschlag ab.", "seite": 16 },
+    { "beschreibung": "Freibeträge bei der Erbschaftsteuer deutlich erhöhen", "ursachen_ids": [4203], "buendel": "Vermögen und Erbschaften stärker besteuern", "zitat": "Wir erhöhen die Freibeträge bei der Erbschaftsteuer deutlich. So kann das Eigenheim in höherem Maße steuerfrei vererbt werden.", "seite": 34 },
+    { "beschreibung": "Kassensturz beim Bund, alle Ausgaben und Subventionen hinterfragen, Ausgaben die ihr Ziel verfehlen entfallen lassen", "ursachen_ids": [4202], "buendel": "Ausgaben senken", "zitat": "Unmittelbar zu Beginn der neuen Wahlperiode machen wir einen ehrlichen Kassensturz und hinterfragen alle Ausgaben, insbesondere die Subventionen. […] Ausgaben, die ihr Ziel verfehlen, müssen entfallen.", "seite": 77 },
+    { "beschreibung": "Maastricht-Kriterien (Schuldenstand, Defizit) verbindlich halten, Verstöße über automatisiertes Defizitverfahren sanktionieren", "ursachen_ids": [4202], "buendel": "Neuverschuldung zulassen", "zitat": "Dabei müssen die Maastricht-Kriterien, insbesondere die Schuldenstandsquote von 60 Prozent und das jährliche Defizit-Kriterium von drei Prozent des Bruttoinlandsproduktes, weiterhin verbindlich bleiben. Verstöße müssen mit einem automatisierten Defizitverfahren sanktioniert werden.", "seite": 78 },
+    { "beschreibung": "Verteidigungsausgaben mindestens auf dem NATO-Zwei-Prozent-Ziel halten", "ursachen_ids": [], "ursachen_offen": [4202], "zitat": "Wir halten die NATO-Verpflichtungen für die Finanzierung unserer Verteidigung verlässlich und dauerhaft ein. Wir verstehen das aktuelle Zwei-Prozent-Ziel der NATO als Untergrenze unserer Verteidigungsausgaben, um eine vollständig einsatzbereite Bundeswehr mit einer personellen und materiellen Vollausstattung zu ermöglichen.", "seite": 52 }
+  ],
+  "neue_buendel": [
+    { "ursache": 4201, "name": "Kindergeld erhöhen", "seite": 63 },
+    { "ursache": 4203, "name": "Solidaritätszuschlag abschaffen", "seite": 16 }
+  ]
+}
+
+Protokoll (Thema 42 „Steuern und Abgaben“, Union Bund)
+
+Gelesen: Inhaltsverzeichnis (S. 2); Kapitel „Agenda für die Fleißigen“ und „Freiräume für die Wirtschaft“ (S. 11–18); Vermögen (S. 34); NATO/Verteidigung (S. 52); Familie (S. 63); Haushalt „Solide Haushaltsführung“ (S. 77–78). Alle Fundstellen gelesen (S. 14, 16, 18, 34, 63).
+
+Gleichartige Stellen, nicht zusätzlich erfasst (je Bündel nur eine Maßnahme):
+- Grundfreibetrag: Kinderfreibetrag „in Richtung des Grundfreibetrags der Eltern“ zu entwickeln (S. 63).
+- Konsum: Energie- und Umsatzsteuer für Güter des täglichen Bedarfs in Krisen reduzieren „dürfen“ (S. 14, bedingter Einsatz bei der EU); Stromsteuer für alle senken (Energiekapitel, nicht gelesen im Rahmen dieses Themas); Energiesteuer-Befreiung der Land- und Forstwirtschaft (Energiekapitel).
+- Erbschaft: Familienunternehmen in der Erbfolge nicht in der Substanz belasten (S. 16); Vermögensteuer ablehnen (S. 34, Haltung).
+- Ausgaben: Verteidigungsausgaben als Grenzfall in ursachen_offen (R2), gleichartig zum Kassensturz.
+- Schuldenregel: „An der grundgesetzlichen Schuldenbremse festhalten“ (S. 77), gleichartig zur Maastricht-Stelle (S. 78).
+
+Nicht erfasst:
+- S. 14: Sozialversicherungsbeiträge auf 40 Prozent zu bringen (Beiträge, R1 ausgeschlossen); Pendlerpauschale erhöhen (Werbungskostenabzug, kein Tarif oder Grundfreibetrag); Überstundenzuschläge steuerfrei (Steuerbefreiung, kein Tarif oder Grundfreibetrag).
+- S. 15: haushaltsnahe Dienstleistungen steuerlich absetzbar (Absetzbarkeit, nicht 4201 bis 4203).
+- S. 18: Verrechnungsmodell bei der Einfuhrumsatzsteuer (Verfahren, keine Steuerhöhe); Renten-Doppelbesteuerung vermeiden und Quellenabzug (Verfahren, nicht Tarif).
+- S. 34: Freibetrag für Mitarbeiterkapitalbeteiligung und für vermögenswirksame Leistungen (Sparförderung, nicht Grundfreibetrag); Grunderwerbsteuer-Freibetrag, den Länder „gewähren können“ (Möglichkeit); Vermögensbildungsprämie (Förderung).
+- S. 63: Entlastungsbetrag für Alleinerziehende erhöhen (Abzugsbetrag, nicht Tarif oder Grundfreibetrag); Ehegattensplitting festhalten (Bekenntnis zu Bestehendem); Kinderbetreuungskosten absetzbar (Absetzbarkeit).
+- S. 52 und 77–78: Haftung für Schulden anderer Staaten ausschließen (betrifft nicht die eigene Verschuldung des Bundes).
+
+Richtungen ohne Maßnahme: 4201 „Ausgleich verzichten, Einnahmen sichern“ (die Union gleicht die kalte Progression aus); 4202 „Einnahmen durch Steuern erhöhen“ (die Union senkt Steuern, S. 14, 16).
+
+Stand: PDF nennt keinen anderen Stand als der Auftrag.
+Seiten ohne Text: 1 und 82 (Titel und Rückseite), ohne Bedeutung.

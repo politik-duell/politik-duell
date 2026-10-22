@@ -1,0 +1,1868 @@
+{
+  "pruefsumme": "69213ece1e8b18159e8cf92e0fd1de3ad7bb597f33aeb233ebd114a65960384a",
+  "thema": {
+    "id": 42,
+    "name": "Steuern und Abgaben",
+    "ziel": "Beschäftigte behalten von ihrem Bruttolohn so viel, dass sie damit auskommen, und können sich auf die Höhe von Abgaben und staatlichen Leistungen verlassen."
+  },
+  "ursachen": [
+    {
+      "id": 4201,
+      "beschreibung": "Die Einkommensteuer steigt real, wenn Löhne und Preise steigen, der Tarif aber nicht im gleichen Maß angepasst wird (kalte Progression). Ab 2027 ist offen, ob der Ausgleich weiterläuft.",
+      "ebene": "bund"
+    },
+    {
+      "id": 4202,
+      "beschreibung": "Der Bund gibt mehr aus, als seine laufenden Einnahmen decken: Das Defizit steigt, die Verschuldung wächst und die Zinsausgaben steigen stark.",
+      "ebene": "bund"
+    },
+    {
+      "id": 4203,
+      "beschreibung": "Die Steuereinnahmen stammen zum größten Teil aus Lohn- und Umsatzsteuer; Erbschaftsteuer und andere vermögensbezogene Steuern machen nur einen kleinen Anteil aus.",
+      "ebene": "bund"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        4201
+      ],
+      "text": "Zu 1 gehören der Verlauf der Einkommensteuer bei steigenden Löhnen und Preisen und die Frage, ob der Tarif angepasst wird (kalte Progression, Tarifeckwerte, Grundfreibetrag). Nicht dazu: Höhe der Steuersätze insgesamt (3), Sozialbeiträge (701, 3801–3803), Bürgergeld-Anrechnung (506). Grenzfall: Kindergeld-Erhöhung ohne Tarifwirkung nur als ursachen_offen."
+    },
+    {
+      "nr": 2,
+      "ursachen": [
+        4202
+      ],
+      "text": "Zu 2 gehört, dass die Ausgaben des Bundes die laufenden Einnahmen übersteigen, sich Defizit und Verschuldung erhöhen und Zinsausgaben steigen. Nicht dazu: einzelne Ausgabenbereiche wie Rente (701) oder GKV-Bundeszuschüsse (3802), die eigene Ursachen sind. Grenzfall: Ausgabenschub durch Verteidigung oder Sozialleistungen nur als ursachen_offen."
+    },
+    {
+      "nr": 3,
+      "ursachen": [
+        4203
+      ],
+      "text": "Zu 3 gehört, wie sich die Steuereinnahmen auf Lohn-, Umsatz-, Erbschaft- und sonstige Steuern verteilen. Nicht dazu: die Gesamthöhe der Abgaben auf Arbeit (1104, Preise und Löhne) und die Beitragsentwicklung (701, 3801). Grenzfall: Steuerhöhe einzelner Steuern (z. B. Mehrwertsteuer-Satz) nur als ursachen_offen."
+    }
+  ],
+  "instrumente": [],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "bund",
+      "beschreibung": "Verwaltung durch weitere Digitalisierung verschlanken, um den Haushalt zu entlasten.",
+      "zitat": "Wir wollen den Haushalt entlasten, indem […] die Verwaltung durch die weitere Digitalisierung verschlanken.",
+      "ursachen_ids": [
+        4202
+      ],
+      "pruefsumme": "1721865856956a07"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "bund",
+      "beschreibung": "Einkommensteuer-Grundfreibetrag auf 15.000 Euro erhöhen",
+      "zitat": "Der einkommensteuerliche Grundfreibetrag soll auf 15.000 Euro erhöht werden, von der bisherigen Anlehnung an sozialhilferechtliche Regelungen wird Abstand genommen.",
+      "ursachen_ids": [
+        4201
+      ],
+      "pruefsumme": "e9a3abf6c40d2edd"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "bund",
+      "beschreibung": "Ehegattensplitting zum Familiensplitting ausweiten",
+      "zitat": "Als eine der wichtigsten Maßnahmen in Anlehnung an den Wortlaut des Grundgesetzes fordern wir eine Ausweitung des Ehegattensplittings auf das Familiensplitting.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4201
+      ],
+      "pruefsumme": "1fab843365ef1b08"
+    },
+    {
+      "kennung": "M04",
+      "ebene": "bund",
+      "beschreibung": "Ermäßigten Mehrwertsteuersatz für Lebensmittel von sieben auf fünf Prozent senken.",
+      "zitat": "In Zeiten steigender Preise gerade für die Lebensmittel des täglichen Bedarfs wollen wir den ermäßigten Mehrwertsteuersatz für Lebensmittel von sieben Prozent auf fünf Prozent senken.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4203
+      ],
+      "pruefsumme": "d3fe17dcca843ce1"
+    },
+    {
+      "kennung": "M05",
+      "ebene": "bund",
+      "beschreibung": "Freibeträge der Erbschaft- und Schenkungsteuer automatisch an die Inflationsrate anpassen",
+      "zitat": "Die Existenz von Unternehmen darf nicht durch die Erbschaft- und Schenkungsteuer gefährdet sein. Wir fordern, dass die Freibeträge automatisch um die Inflationsrate erhöht werden.",
+      "ursachen_ids": [
+        4203
+      ],
+      "pruefsumme": "43376cf4d2958346"
+    },
+    {
+      "kennung": "M06",
+      "ebene": "bund",
+      "beschreibung": "Schuldenbremse einhalten, keine Aufweichung",
+      "zitat": "Die im Grundgesetz festgeschriebene Schuldenbremse ist einzuhalten. [Partei] lehnt jedwede Aufweichung der Schuldenbremse entschieden ab.",
+      "ursachen_ids": [
+        4202
+      ],
+      "pruefsumme": "4ab5685c879c3009"
+    },
+    {
+      "kennung": "M07",
+      "ebene": "bund",
+      "beschreibung": "Verteidigungsausgaben mindestens auf dem NATO-Zwei-Prozent-Ziel halten",
+      "zitat": "Wir halten die NATO-Verpflichtungen für die Finanzierung unserer Verteidigung verlässlich und dauerhaft ein. Wir verstehen das aktuelle Zwei-Prozent-Ziel der NATO als Untergrenze unserer Verteidigungsausgaben, um eine vollständig einsatzbereite Bundeswehr mit einer personellen und materiellen Vollausstattung zu ermöglichen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4202
+      ],
+      "pruefsumme": "2a3d23c9f377bbde"
+    },
+    {
+      "kennung": "M08",
+      "ebene": "bund",
+      "beschreibung": "Stromsteuer auf das europäische Mindestmaß senken.",
+      "zitat": "Auch für die Wirtschaft ist die weitere Absenkung der Steuern und Abgaben auf Strom wichtig. Deshalb übernehmen wir die Netzentgelte für die überregionalen Stromleitungen aus dem Deutschlandfonds und senken die Stromsteuer auf das europäische Minimum.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4203
+      ],
+      "pruefsumme": "e56a4df3204dcfa3"
+    },
+    {
+      "kennung": "M09",
+      "ebene": "bund",
+      "beschreibung": "Gewinne multinationaler Konzerne lokal besteuern.",
+      "zitat": "Als weiteres Standbein setzen wir deshalb auf Einnahmen durch die lokale Besteuerung der Gewinne multinationaler Konzerne.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4203
+      ],
+      "pruefsumme": "340bc7815bb8ac88"
+    },
+    {
+      "kennung": "M10",
+      "ebene": "bund",
+      "beschreibung": "Körperschaftsteuer für Unternehmen auf 25 Prozent anheben",
+      "zitat": "Wir fordern, dass die Körperschaftsteuer auf 25 Prozent erhöht wird.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4203
+      ],
+      "pruefsumme": "c7f9e942e2f11d76"
+    },
+    {
+      "kennung": "M11",
+      "ebene": "bund",
+      "beschreibung": "Grundsteuer am Verkehrswert ausrichten und nicht auf Mieter umlegen",
+      "zitat": "Wir fordern eine Reform der Grundsteuer, die sich am Verkehrswert des Grundstücks orientiert und nicht auf die Mieter*innen umgelegt werden darf.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4203
+      ],
+      "pruefsumme": "08034dce547fc778"
+    },
+    {
+      "kennung": "M12",
+      "ebene": "bund",
+      "beschreibung": "Steuerhinterziehung konsequent verfolgen, Strafverfolger und Finanzämter personell und technisch stärken",
+      "zitat": "Die Strafverfolgungsbehörden und Finanzämter müssen personell und technisch in die Lage versetzt werden, Steuerhinterziehung als Geschäftsmodell konsequent zu verfolgen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4202
+      ],
+      "pruefsumme": "23080094ad7723c4"
+    },
+    {
+      "kennung": "M13",
+      "ebene": "bund",
+      "beschreibung": "Vorübergehender Energie-Soli für Reiche zur Finanzierung günstiger Energie-Sockeltarife",
+      "zitat": "Zur Finanzierung fordern wir vorübergehend einen Energie-Soli für Reiche.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4203
+      ],
+      "pruefsumme": "27eb64b17401fdef"
+    },
+    {
+      "kennung": "M14",
+      "ebene": "bund",
+      "beschreibung": "Finanztransaktionssteuer von 0,1 Prozent auf jede Finanztransaktion",
+      "zitat": "Wir streiten für eine Finanztransaktionssteuer, um Spekulation auf den Finanzmärkten einzudämmen. Bei jeder Finanztransaktion soll ein Steuersatz von 0,1 Prozent fällig werden.",
+      "ursachen_ids": [
+        4203
+      ],
+      "pruefsumme": "a8f1cb5022dd46ff"
+    },
+    {
+      "kennung": "M15",
+      "ebene": "bund",
+      "beschreibung": "Bund soll die Sozialleistungen tragen, die die Kommunen belasten",
+      "zitat": "Die kommunalen Haushalte müssen von den Sozialleistungen entlastet werden. Diese muss in vollem Umfang der Bund tragen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4202
+      ],
+      "pruefsumme": "9de20d5e1a5304c9"
+    },
+    {
+      "kennung": "M16",
+      "ebene": "bund",
+      "beschreibung": "Freibeträge für Kleinsparer erhöhen und dynamisch an die Inflation anpassen.",
+      "zitat": "Dafür werden wir die Freibeträge für Kleinsparer*innen erhöhen, sie dynamisch an die Inflation anpassen",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4201
+      ],
+      "pruefsumme": "8ef94bdbe25758f8"
+    },
+    {
+      "kennung": "M17",
+      "ebene": "bund",
+      "beschreibung": "Unternehmenssteuerbelastung auf unter 25 Prozent absenken",
+      "zitat": "Wir fordern die Absenkung der Unternehmenssteuerbelastung auf unter 25 Prozent.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4203
+      ],
+      "pruefsumme": "b11fe0f8d17fd63f"
+    },
+    {
+      "kennung": "M18",
+      "ebene": "bund",
+      "beschreibung": "Einkommensteuertarif mit wenigen Stufen neu gestalten",
+      "zitat": "[Partei] wird das Steuerrecht durch einen geänderten Einkommensteuertarif mit wenigen Stufen vereinfachen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4201
+      ],
+      "pruefsumme": "6af4e2fca0e4df64"
+    },
+    {
+      "kennung": "M19",
+      "ebene": "bund",
+      "beschreibung": "Katalog der Umsätze zum ermäßigten Umsatzsteuersatz vereinfachen",
+      "zitat": "Wir wollen den Katalog der Umsätze zum ermäßigten Steuersatz vereinfachen und entbürokratisieren.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4203
+      ],
+      "pruefsumme": "67c105100cba7d26"
+    },
+    {
+      "kennung": "M20",
+      "ebene": "bund",
+      "beschreibung": "Unternehmenssteuern auf ein international konkurrenzfähiges Niveau senken",
+      "zitat": "Mehr Netto vom Brutto schaffen wir durch: […] Senkung der Unternehmenssteuern auf ein international konkurrenzfähiges Niveau",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4203
+      ],
+      "pruefsumme": "4e7ad2e3a5b38777"
+    },
+    {
+      "kennung": "M21",
+      "ebene": "bund",
+      "beschreibung": "Staatsbeteiligungen veräußern",
+      "zitat": "Wir wollen Staatsbeteiligungen veräußern, weil private Investoren die besseren Unternehmer sind.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4202
+      ],
+      "pruefsumme": "256da90254efbebf"
+    },
+    {
+      "kennung": "M22",
+      "ebene": "bund",
+      "beschreibung": "Schuldenbremse im Grundgesetz einhalten",
+      "zitat": "Freiheit für künftige Generationen bedeutet auch, ihnen keine Schuldenberge zu hinterlassen. Daher ist für uns [Partei] die Einhaltung der im Grundgesetz verankerten Schuldenbremse zentrales Gebot der Generationengerechtigkeit.",
+      "ursachen_ids": [
+        4202
+      ],
+      "pruefsumme": "f0c134ad9211e3d8"
+    },
+    {
+      "kennung": "M23",
+      "ebene": "bund",
+      "beschreibung": "Einmalige Vermögensabgabe für die Reichsten zur Finanzierung der Krisen- und Transformationskosten",
+      "zitat": "Um die enormen Kosten der sozialen und ökologischen Transformation zu stemmen, fordern wir eine einmalige Vermögensabgabe, die die Reichsten unserer Gesellschaft einmalig belastet. […] So können mindestens 310 Milliarden Euro eingenommen werden.",
+      "ursachen_ids": [
+        4202
+      ],
+      "pruefsumme": "f0e7073ec946b4be"
+    },
+    {
+      "kennung": "M24",
+      "ebene": "bund",
+      "beschreibung": "Investitionen in Maschinen und Geräte mit einer Steuererstattung von 10 Prozent der Anschaffungssumme fördern.",
+      "zitat": "Jede Betriebs- bzw. Unternehmensinvestition in Maschinen und Geräte (aus den sogenannten Ausrüstungsinvestitionen) soll mit 10 Prozent der Anschaffungssumme direkt und unkompliziert über eine Steuererstattung gefördert werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4203
+      ],
+      "pruefsumme": "3d740a82c6b106f4"
+    },
+    {
+      "kennung": "M25",
+      "ebene": "bund",
+      "beschreibung": "Finanztransaktionssteuer einführen, weil Finanztransaktionen bisher nicht besteuert werden.",
+      "zitat": "Anders als an den Finanzplätzen Paris oder Mailand, werden Finanztransaktionen in Deutschland bisher nicht besteuert. Daher wollen wir eine Finanztransaktionssteuer einführen.",
+      "ursachen_ids": [
+        4203
+      ],
+      "pruefsumme": "402f52700a276518"
+    },
+    {
+      "kennung": "M26",
+      "ebene": "bund",
+      "beschreibung": "Grundsteuer abschaffen und Kommunen über Zuschlag auf Einkommen- und Körperschaftsteuer entschädigen",
+      "zitat": "Die Kommunen werden durch einen Zuschlag auf die Einkommensteuer und die Körperschaftssteuer vollumfänglich entschädigt.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4202
+      ],
+      "pruefsumme": "d774d5eaed8659ef"
+    },
+    {
+      "kennung": "M27",
+      "ebene": "bund",
+      "beschreibung": "Beitragszahlungen an die EU drastisch senken",
+      "zitat": "Unter anderem sind die Beitragszahlungen von (2023) knapp 30 Milliarden Euro an die EU drastisch zu reduzieren.",
+      "ursachen_ids": [
+        4202
+      ],
+      "pruefsumme": "e35db3eb6e5ff1d4"
+    },
+    {
+      "kennung": "M28",
+      "ebene": "bund",
+      "beschreibung": "Besteuerung von Familien reformieren, gerechtere Verteilung der Steuerlast bei Paarfamilien erreichen.",
+      "zitat": "Wir wollen die Besteuerung von Familien unter Berücksichtigung bereits getroffener Lebensentscheidungen reformieren, für Paarfamilien eine gerechtere Verteilung der Steuerlast erreichen und Partnerschaftlichkeit fördern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4201
+      ],
+      "pruefsumme": "c3dfbb6bfda6f209"
+    },
+    {
+      "kennung": "M29",
+      "ebene": "bund",
+      "beschreibung": "Erbschaftsteuer und Vermögensteuer abschaffen",
+      "zitat": "[Partei] will die derzeit zur Erhebung ausgesetzte Vermögensteuer sowie die Erbschaftssteuer abschaffen.",
+      "ursachen_ids": [
+        4203
+      ],
+      "pruefsumme": "300b24639f242588"
+    },
+    {
+      "kennung": "M30",
+      "ebene": "bund",
+      "beschreibung": "Gewerbesteuer zu einer Gemeindewirtschaftsteuer mit breiterer Bemessungsgrundlage umbauen",
+      "zitat": "[Partei] tritt für die Reform der Gewerbesteuer ein, sie soll in eine Gemeindewirtschaftsteuer umgewandelt werden. […] Dafür werden wir den Freibetrag auf 30.000 Euro anheben.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4203
+      ],
+      "pruefsumme": "47f53efb42149983"
+    },
+    {
+      "kennung": "M31",
+      "ebene": "bund",
+      "beschreibung": "Vermögensteuer wieder einführen (mit Freibetrag, progressiver Satz)",
+      "zitat": "[Partei] fordert, dass die Vermögensteuer wieder eingeführt wird […] Geschätzte jährliche Mehreinnahmen: 108 Milliarden Euro.",
+      "ursachen_ids": [
+        4202,
+        4203
+      ],
+      "pruefsumme": "9c8100fe1c883dc5"
+    },
+    {
+      "kennung": "M32",
+      "ebene": "bund",
+      "beschreibung": "Rüstungsausgaben drastisch senken und die Mittel in Bildung, Soziales, Gesundheit und Transformation lenken",
+      "zitat": "Wir wollen die Rüstungsausgaben drastisch senken und stattdessen Investitionen in Bildung, Soziales, Gesundheit und eine gerechte Transformation.",
+      "ursachen_ids": [
+        4202
+      ],
+      "pruefsumme": "01d02dd247bc622a"
+    },
+    {
+      "kennung": "M33",
+      "ebene": "bund",
+      "beschreibung": "Steuerfreies Aufstiegsvermögen mit übertragbarem und dynamisiertem Sparer-Freibetrag",
+      "zitat": "Deshalb fordern wir die Einführung eines steuerfreien Aufstiegsvermögens, indem die Sparer nicht ausgeschöpfte Sparer-Freibeträge auf die nachfolgenden Jahre übertragen können […].",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4203
+      ],
+      "pruefsumme": "17e5972a0dfd2ef8"
+    },
+    {
+      "kennung": "M34",
+      "ebene": "bund",
+      "beschreibung": "Deutschlandfonds für Bund, Länder und Kommunen errichten, der Investitionen ergänzt.",
+      "zitat": "Wir werden deshalb einen Deutschlandfonds für Bund, Länder und Kommunen errichten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4202
+      ],
+      "pruefsumme": "1e183fec7f382d2b"
+    },
+    {
+      "kennung": "M35",
+      "ebene": "bund",
+      "beschreibung": "Erbschaftsteuer reformieren mit personenbezogenem Lebensfreibetrag und Ausnahmen für sehr große Erbschaften streichen.",
+      "zitat": "Deswegen fokussieren wir uns auf folgende Maßnahmen: eine Reform der Erbschaftssteuer hin zu einem Modell mit personenbezogenem Lebensfreibetrag, weitgehender Streichung bestehender Ausnahmen für außerordentlich große Erbschaften (selbst bewohntes Eigentum bleibt befreit) und großzügigen Stundungsregelungen",
+      "ursachen_ids": [
+        4203
+      ],
+      "pruefsumme": "37dfbc7a0328143f"
+    },
+    {
+      "kennung": "M36",
+      "ebene": "bund",
+      "beschreibung": "Kindergeld anheben und künftig automatisch nach der Geburt auszahlen",
+      "zitat": "Entsprechend heben wir auch das Kindergeld an, das künftig nach der Geburt automatisch ausgezahlt werden soll.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4201
+      ],
+      "pruefsumme": "3a67e3f1003ca751"
+    },
+    {
+      "kennung": "M37",
+      "ebene": "bund",
+      "beschreibung": "Einkommensteuertarif schrittweise senken, Grundfreibetrag erhöhen, Grenze für den Spitzensteuersatz anheben",
+      "zitat": "Dazu flachen wir den Einkommensteuertarif schrittweise spürbar ab und erhöhen den «Grundfreibetrag». Die Einkommensgrenze für den Spitzensteuersatz erhöhen wir deutlich.",
+      "ursachen_ids": [
+        4201
+      ],
+      "pruefsumme": "d00ebe54b960b80e"
+    },
+    {
+      "kennung": "M38",
+      "ebene": "bund",
+      "beschreibung": "Umsatzsteuerbetrug stärker zurückdrängen, um die Einnahmeseite zu stärken.",
+      "zitat": "Wir benötigen überdies eine Stärkung der Staatseinnahmen durch ein gerechtes Steuersystem. Dazu gehört auch, Steuerhinterziehung und Finanzkriminalität weiter zu bekämpfen. So gilt es, Umsatzsteuerbetrug vor allem in bargeldintensiven Branchen weiter zurückzudrängen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4203
+      ],
+      "pruefsumme": "821c56dd9ca7da3b"
+    },
+    {
+      "kennung": "M39",
+      "ebene": "bund",
+      "beschreibung": "Vermögensteuer für sehr hohe Vermögen wieder einführen und so Einnahmen erhöhen.",
+      "zitat": "Die ausgesetzte Vermögensteuer wollen wir für sehr hohe Vermögen revitalisieren.",
+      "ursachen_ids": [
+        4202,
+        4203
+      ],
+      "pruefsumme": "e30f6aa5675e9878"
+    },
+    {
+      "kennung": "M40",
+      "ebene": "bund",
+      "beschreibung": "Für neue Ehen individuelle Besteuerung mit übertragbarem Grundfreibetrag statt Ehegattensplitting.",
+      "zitat": "In der jetzigen Form stellt das Ehegattensplitting ein Erwerbshindernis für Frauen dar und ist weder gerecht noch zeitgemäß. Deshalb wollen wir es grundlegend geschlechtergerecht reformieren, indem wir für Neuehen eine individuelle Besteuerung mit übertragbarem Grundfreibetrag einführen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4201
+      ],
+      "pruefsumme": "64830b72dfcf226c"
+    },
+    {
+      "kennung": "M41",
+      "ebene": "bund",
+      "beschreibung": "Befristete Investitionsprämie von 10 Prozent für Unternehmen, auf die Steuerschuld angerechnet.",
+      "zitat": "Wer in Deutschland investiert, soll es bei der Steuer leichter haben: Dazu führen wir eine auf fünf Jahre befristete, unbürokratische Investitionsprämie von 10 Prozent für alle Unternehmen und alle Investitionen mit Ausnahme der Gebäudeinvestitionen ein.",
+      "ursachen_ids": [
+        4203
+      ],
+      "pruefsumme": "15698959156cbda3"
+    },
+    {
+      "kennung": "M42",
+      "ebene": "bund",
+      "beschreibung": "Mehrwertsteuer für Speisen und Getränke in der Gastronomie auf 7 % senken",
+      "zitat": "Deshalb fordern wir einen einheitlichen Mehrwertsteuersatz für die Gastronomie von 7 %.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4203
+      ],
+      "pruefsumme": "9f500c80ad75b467"
+    },
+    {
+      "kennung": "M43",
+      "ebene": "bund",
+      "beschreibung": "Grunderwerbsteuer so reformieren, dass Teilkäufe von Immobilien anteilig besteuert werden",
+      "zitat": "Wir fordern eine Reform der Grunderwerbsteuer, sodass anteilige Immobilienkäufe (ab über 50 Prozent) entsprechend anteilig besteuert werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4203
+      ],
+      "pruefsumme": "8049b60bedd9bd02"
+    },
+    {
+      "kennung": "M44",
+      "ebene": "bund",
+      "beschreibung": "Schuldenregel im Grundgesetz reformieren, damit Investitionen nicht behindert werden; mehr Kreditspielraum.",
+      "zitat": "Die aktuelle Schuldenregel ist nicht auf die Herausforderungen unserer Zeit und der Zukunft ausgelegt. Deshalb wollen wir die Schuldenregel im Grundgesetz so reformieren, dass Investitionen in die Zukunftsfähigkeit unseres Landes und in den Wohlstand nicht behindert werden.",
+      "ursachen_ids": [
+        4202
+      ],
+      "pruefsumme": "3f6739b655bc2e69"
+    },
+    {
+      "kennung": "M45",
+      "ebene": "bund",
+      "beschreibung": "Übergewinnsteuer von 90 Prozent auf Krisenprofite einführen",
+      "zitat": "[Partei] fordert die Einführung einer Übergewinnsteuer in Höhe von 90 Prozent auf alle Krisenprofite (Kapitel 1).",
+      "ursachen_ids": [
+        4202,
+        4203
+      ],
+      "pruefsumme": "f8600c0f1d8ccd16"
+    },
+    {
+      "kennung": "M46",
+      "ebene": "bund",
+      "beschreibung": "Schuldenbremse reformieren: Kredite in dem Umfang zulassen, wie der Staat investiert.",
+      "zitat": "Um die notwendigen Investitionen in Infrastruktur, in die Dekarbonisierung unseres Landes und in eine starke, zukunftsfähige Wirtschaft zu finanzieren, wollen wir die Schuldenbremse im Einklang mit den europäischen Regeln reformieren. Die Aufnahme von staatlichen Krediten soll dazu in dem Umfang ermöglicht werden, wie vom Staat Investitionen getätigt werden.",
+      "ursachen_ids": [
+        4202
+      ],
+      "pruefsumme": "97845cceaf316f38"
+    },
+    {
+      "kennung": "M47",
+      "ebene": "bund",
+      "beschreibung": "Mindestbesteuerung für große Betriebsvermögen bei Erbschaften und Schenkungen einführen.",
+      "zitat": "Innerhalb des bestehenden progressiven Steuertarifs führen wir eine effektive Mindestbesteuerung für große Betriebsvermögen ein, die auch für vermögenshaltende Familienstiftungen gilt.",
+      "ursachen_ids": [
+        4203
+      ],
+      "pruefsumme": "080855680c6dd723"
+    },
+    {
+      "kennung": "M48",
+      "ebene": "bund",
+      "beschreibung": "Grundfreibetrag schrittweise um mindestens 1.000 Euro anheben",
+      "zitat": "Den Grundfreibetrag wollen wir im Zuge der Bürgergeldreform schrittweise um mindestens 1.000 Euro anheben.",
+      "ursachen_ids": [
+        4201
+      ],
+      "pruefsumme": "6efedb3653b259d2"
+    },
+    {
+      "kennung": "M49",
+      "ebene": "bund",
+      "beschreibung": "Gewerbesteuer-Dumping von Kommunen durch wirksame Maßnahmen eindämmen.",
+      "zitat": "«Gewerbesteuer»dumping von Kommunen werden wir durch wirksame Maßnahmen entgegentreten, unter Berücksichtigung des Hebesatzrechts der Kommunen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4203
+      ],
+      "pruefsumme": "747b1c65605890d1"
+    },
+    {
+      "kennung": "M50",
+      "ebene": "bund",
+      "beschreibung": "CO₂-Abgaben ersatzlos abschaffen",
+      "zitat": "Wir fordern eine ersatzlose Abschaffung der CO₂-Abgaben.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4203
+      ],
+      "pruefsumme": "2ff81d449b3e6e47"
+    },
+    {
+      "kennung": "M51",
+      "ebene": "bund",
+      "beschreibung": "Einkommensteuertarif so entlasten, dass die große Mehrheit der Steuerpflichtigen profitiert; Spitzeneinkommen und -vermögen stärker beteiligen.",
+      "zitat": "Der Einkommensteuertarif nimmt derzeit gerade mittlere Einkommen relativ stark in Anspruch. Wir wollen die große Mehrheit der Einkommensteuerpflichtigen entlasten (etwa 95 Prozent) und dafür unter anderem Spitzeneinkommen und -vermögen stärker an der Finanzierung des Gemeinwohls und der Modernisierung unseres Landes beteiligen.",
+      "ursachen_ids": [
+        4201,
+        4203
+      ],
+      "pruefsumme": "1a8b093035c69afc"
+    },
+    {
+      "kennung": "M52",
+      "ebene": "bund",
+      "beschreibung": "Einkommensteuertarif als linear-progressiver Chancentarif, der den Mittelstandsbauch beseitigt",
+      "zitat": "Dazu wollen wir stufenweise einen linear-progressiven Chancentarif in der Einkommensteuer einführen, der den Mittelstandsbauch vollständig beseitigt.",
+      "ursachen_ids": [
+        4201
+      ],
+      "pruefsumme": "48d85504b1a2983c"
+    },
+    {
+      "kennung": "M53",
+      "ebene": "bund",
+      "beschreibung": "Einkommensteuer-Freibeträge an die Inflation koppeln (indexieren)",
+      "zitat": "Die Freibeträge sollen indexiert werden, um auch zukünftig heimliche Steuererhöhungen auszuschließen.",
+      "ursachen_ids": [
+        4201
+      ],
+      "pruefsumme": "c6c9b03569bdc71a"
+    },
+    {
+      "kennung": "M54",
+      "ebene": "bund",
+      "beschreibung": "Solidaritätszuschlag abschaffen",
+      "zitat": "Wir schaffen den restlichen Solidaritätszuschlag ab.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4203
+      ],
+      "pruefsumme": "fcdd31feb3e111ff"
+    },
+    {
+      "kennung": "M55",
+      "ebene": "bund",
+      "beschreibung": "Einkommen bis zu einer festen Grenze im Jahr steuerfrei stellen (Grundfreibetrag)",
+      "zitat": "Alle zu versteuernden Einkommen unter 16.800 Euro im Jahr bleiben steuerfrei – das entspricht der Höhe unseres Modells des Existenzminimums.",
+      "ursachen_ids": [
+        4201
+      ],
+      "pruefsumme": "072312cbb1542ea4"
+    },
+    {
+      "kennung": "M56",
+      "ebene": "bund",
+      "beschreibung": "Stellenzahl in der Bundesverwaltung außerhalb der Sicherheitsbehörden deutlich reduzieren",
+      "zitat": "Die Stellenzahl in der Bundesverwaltung außerhalb der Sicherheitsbehörden wollen wir deutlich reduzieren.",
+      "ursachen_ids": [
+        4202
+      ],
+      "pruefsumme": "1852026a0e02d0f2"
+    },
+    {
+      "kennung": "M57",
+      "ebene": "bund",
+      "beschreibung": "Einkommensteuertarif regelmäßig an die Inflation anpassen, um die kalte Progression auszugleichen",
+      "zitat": "Deshalb passen wir den Einkommensteuertarif regelmäßig an die Inflation an und gleichen so die kalte Progression aus.",
+      "ursachen_ids": [
+        4201
+      ],
+      "pruefsumme": "29f7365448f6e580"
+    },
+    {
+      "kennung": "M58",
+      "ebene": "bund",
+      "beschreibung": "Arbeitnehmerpauschbetrag in der Einkommensteuer auf mindestens 1.500 Euro anheben.",
+      "zitat": "Um die Erwerbstätigen bürokratisch und finanziell zu entlasten, werden wir die Arbeitnehmerpauschbeträge in der Einkommensteuererklärung anheben. Wir wollen eine Anhebung auf mindestens 1.500 Euro.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4201
+      ],
+      "pruefsumme": "6d20658f82c6cbf5"
+    },
+    {
+      "kennung": "M59",
+      "ebene": "bund",
+      "beschreibung": "Solidaritätszuschlag vollständig abschaffen",
+      "zitat": "Darüber hinaus wollen wir den Solidaritätszuschlag vollständig abschaffen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4201
+      ],
+      "pruefsumme": "3a3f712739ea7f29"
+    },
+    {
+      "kennung": "M60",
+      "ebene": "bund",
+      "beschreibung": "Umsatzsteuer auf Speisen in der Gastronomie auf sieben Prozent senken",
+      "zitat": "Wir reduzieren die Umsatzsteuer auf Speisen in der Gastronomie auf sieben Prozent.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4203
+      ],
+      "pruefsumme": "fcf9a626eba664ca"
+    },
+    {
+      "kennung": "M61",
+      "ebene": "bund",
+      "beschreibung": "Zuschläge für Überstunden bei Vollzeitarbeit von der Lohnsteuer befreien",
+      "zitat": "Um zusätzliche Arbeitsanreize zu schaffen, wollen wir Zuschläge für Überstunden bei Vollzeitarbeit von der Lohnsteuer befreien.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4201
+      ],
+      "pruefsumme": "caaa46a96eb476d1"
+    },
+    {
+      "kennung": "M62",
+      "ebene": "bund",
+      "beschreibung": "Tonnagesteuer-Privileg der Reeder abschaffen",
+      "zitat": "Wir wollen das Tonnagesteuer-Privileg der großen Reeder abschaffen und deren Gewinne der ordentlichen Gewinnbesteuerung unterwerfen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4203
+      ],
+      "pruefsumme": "0249ac22afadd60b"
+    },
+    {
+      "kennung": "M63",
+      "ebene": "bund",
+      "beschreibung": "Einkommensteuer-Freibeträge und Eckwerte automatisch an die Preisentwicklung anpassen",
+      "zitat": "Damit der Staat nicht zum Profiteur von Inflation und der Steuerzahler nicht Opfer der Kalten Progression wird, wollen wir die Freibeträge und Eckwerte der Einkommensteuer automatisch an die allgemeine Preisentwicklung anpassen (Tarif auf Rädern).",
+      "ursachen_ids": [
+        4201
+      ],
+      "pruefsumme": "e5a5cdd0ce769491"
+    },
+    {
+      "kennung": "M64",
+      "ebene": "bund",
+      "beschreibung": "Klima- und umweltschädliche Subventionen abbauen.",
+      "zitat": "Und wir wollen insbesondere klima- und umweltschädliche Subventionen abbauen.",
+      "ursachen_ids": [
+        4202
+      ],
+      "pruefsumme": "d5c847aea64090ab"
+    },
+    {
+      "kennung": "M65",
+      "ebene": "bund",
+      "beschreibung": "Steuerschlupflöcher schließen, um den Haushalt zu entlasten.",
+      "zitat": "Wir wollen den Haushalt entlasten, indem wir Steuerschlupflöcher schließen […].",
+      "ursachen_ids": [
+        4202
+      ],
+      "pruefsumme": "982e721ece724974"
+    },
+    {
+      "kennung": "M66",
+      "ebene": "bund",
+      "beschreibung": "Solidaritätszuschlag für alle abschaffen",
+      "zitat": "Mehr Netto vom Brutto schaffen wir durch: […] Abschaffung des Solidaritätszuschlags für alle",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4201
+      ],
+      "pruefsumme": "b88ab7f899e10f0a"
+    },
+    {
+      "kennung": "M67",
+      "ebene": "bund",
+      "beschreibung": "Bundesweites Kommunalentschuldungspaket",
+      "zitat": "Es braucht ein bundesweites Kommunalentschuldungspaket.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4202
+      ],
+      "pruefsumme": "5142da93db4197d3"
+    },
+    {
+      "kennung": "M68",
+      "ebene": "bund",
+      "beschreibung": "Maastricht-Kriterien (Schuldenstand, Defizit) verbindlich halten, Verstöße über automatisiertes Defizitverfahren sanktionieren",
+      "zitat": "Dabei müssen die Maastricht-Kriterien, insbesondere die Schuldenstandsquote von 60 Prozent und das jährliche Defizit-Kriterium von drei Prozent des Bruttoinlandsproduktes, weiterhin verbindlich bleiben. Verstöße müssen mit einem automatisierten Defizitverfahren sanktioniert werden.",
+      "ursachen_ids": [
+        4202
+      ],
+      "pruefsumme": "ee9a3d3c602955c6"
+    },
+    {
+      "kennung": "M69",
+      "ebene": "bund",
+      "beschreibung": "Verteidigungsetat dauerhaft deutlich über 2 Prozent des Bruttoinlandsprodukts.",
+      "zitat": "Dafür braucht es verlässliche Finanzierung mit einem Verteidigungsetat, der […] dauerhaft deutlich mehr als 2 Prozent des Bruttoinlandsprodukts in unsere Sicherheit und Verteidigungsfähigkeit investiert.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4202
+      ],
+      "pruefsumme": "2d8304f1711d2f15"
+    },
+    {
+      "kennung": "M70",
+      "ebene": "bund",
+      "beschreibung": "Mehrwertsteuer auf Grundnahrungsmittel, Hygieneprodukte sowie Bus und Bahn senken oder befreien",
+      "zitat": "Wir wollen der Teuerung entgegenwirken: ▪ Grundnahrungsmittel, Hygieneprodukte, Bus und Bahn (Regional- und Fernverkehr) wollen wir von der Mehrwertsteuer befreien.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4203
+      ],
+      "pruefsumme": "9c8074d0f555e9a3"
+    },
+    {
+      "kennung": "M71",
+      "ebene": "bund",
+      "beschreibung": "Ehegattensplitting durch eine Individualbesteuerung mit übertragbarem Grundfreibetrag ersetzen",
+      "zitat": "Wir wollen die Steuerpolitik geschlechtergerechter machen und setzen uns für eine Reform des Ehegattensplittings in Richtung einer Individualbesteuerung mit übertragbarem Grundfreibetrag ein.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4201
+      ],
+      "pruefsumme": "2437d30c62c9983f"
+    },
+    {
+      "kennung": "M72",
+      "ebene": "bund",
+      "beschreibung": "Freibeträge bei der Erbschaftsteuer deutlich erhöhen",
+      "zitat": "Wir erhöhen die Freibeträge bei der Erbschaftsteuer deutlich. So kann das Eigenheim in höherem Maße steuerfrei vererbt werden.",
+      "ursachen_ids": [
+        4203
+      ],
+      "pruefsumme": "31ab62c02fa51cb2"
+    },
+    {
+      "kennung": "M73",
+      "ebene": "bund",
+      "beschreibung": "Einkommensteuertarif umgestalten: niedrige Einkommen weniger, hohe Einkommen stärker belasten",
+      "zitat": "Als Faustregel gilt: Wer (als Single, Steuerklasse I) weniger als 7.000 Euro im Monat brutto verdient, zahlt mit unserem Tarif weniger Steuern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4201
+      ],
+      "pruefsumme": "b63bdfc6d1d09047"
+    },
+    {
+      "kennung": "M74",
+      "ebene": "bund",
+      "beschreibung": "Solidaritätszuschlag in den Einkommensteuertarif integrieren.",
+      "zitat": "Den Solidaritätszuschlag werden wir in den Einkommensteuertarif integrieren.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4201
+      ],
+      "pruefsumme": "282409f2e8f1078d"
+    },
+    {
+      "kennung": "M75",
+      "ebene": "bund",
+      "beschreibung": "Kassensturz beim Bund, alle Ausgaben und Subventionen hinterfragen, Ausgaben die ihr Ziel verfehlen entfallen lassen",
+      "zitat": "Unmittelbar zu Beginn der neuen Wahlperiode machen wir einen ehrlichen Kassensturz und hinterfragen alle Ausgaben, insbesondere die Subventionen. […] Ausgaben, die ihr Ziel verfehlen, müssen entfallen.",
+      "ursachen_ids": [
+        4202
+      ],
+      "pruefsumme": "21689c5f03df4d2a"
+    },
+    {
+      "kennung": "M76",
+      "ebene": "bund",
+      "beschreibung": "Schuldenbremse abschaffen, damit öffentliche Investitionen über Kredite finanziert werden können",
+      "zitat": "Wir fordern die Abschaffung der Schuldenbremse. Es muss wieder möglich sein, öffentliche Investitionen in die Infrastruktur, eine klimaneutrale Industrie und den sozialen Ausgleich über Kredite zu finanzieren.",
+      "ursachen_ids": [
+        4202
+      ],
+      "pruefsumme": "d29929506375c6c0"
+    },
+    {
+      "kennung": "M77",
+      "ebene": "bund",
+      "beschreibung": "Steuergutschriften für niedrige Einkommen, Alleinerziehende und Aufstockende einführen.",
+      "zitat": "Um insbesondere niedrige Einkommen, Alleinerziehende und auch Menschen, die mit Bürgergeld aufstocken müssen, zielgenau und unbürokratisch zu entlasten, führen wir Steuergutschriften ein.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4201
+      ],
+      "pruefsumme": "90b3da99402ed448"
+    },
+    {
+      "kennung": "M78",
+      "ebene": "bund",
+      "beschreibung": "Spitzensteuersatz erst bei höherem Einkommen greifen lassen (Bindung an die Beitragsbemessungsgrenze)",
+      "zitat": "Konkret fordern wir, dass sich der Spitzensteuersatz künftig an der aktuellen Beitragsbemessungsgrenze der Rentenversicherung orientiert.",
+      "ursachen_ids": [
+        4201
+      ],
+      "pruefsumme": "98a9fea599ec3deb"
+    },
+    {
+      "kennung": "M79",
+      "ebene": "bund",
+      "beschreibung": "Gewerbesteuer durch eine international systemtaugliche Alternative ersetzen",
+      "zitat": "Dazu wollen wir das deutsche Steuerrecht entbürokratisieren, die Gewerbesteuer durch eine international systemtaugliche Alternative ersetzen […].",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4203
+      ],
+      "pruefsumme": "35c277dffb177ccc"
+    },
+    {
+      "kennung": "M80",
+      "ebene": "bund",
+      "beschreibung": "Bundesausgaben stärker auf die originären Aufgaben des Bundes beschränken",
+      "zitat": "Wir wollen Ausgaben des Bundes grundsätzlich stärker auf die originären Aufgaben des Bundes beschränken.",
+      "ursachen_ids": [
+        4202
+      ],
+      "pruefsumme": "8911b242583fc651"
+    },
+    {
+      "kennung": "M81",
+      "ebene": "bund",
+      "beschreibung": "Subventionen zurückfahren, bis Finanzhilfen und Steuerermäßigungen zur Wertschöpfung passen",
+      "zitat": "Wir wollen Subventionen zurückfahren, damit Finanzhilfen und Steuerermäßigungen auf ein angemessenes Verhältnis zur wirtschaftlichen Wertschöpfung gebracht werden.",
+      "ursachen_ids": [
+        4202
+      ],
+      "pruefsumme": "9a9fd248fda659f3"
+    },
+    {
+      "kennung": "M82",
+      "ebene": "bund",
+      "beschreibung": "Unternehmensbesteuerung auf höchstens 25 Prozent auf einbehaltene Gewinne begrenzen, schrittweise, durch Senken der Tarifbelastung",
+      "zitat": "Unser Ziel ist eine attraktive Unternehmensbesteuerung von maximal 25 Prozent auf einbehaltene Gewinne, die wir schrittweise umsetzen wollen. Dazu senken wir insbesondere die Tarifbelastung und verbessern wesentlich das Optionsmodell und die Thesaurierungsbegünstigung.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4203
+      ],
+      "pruefsumme": "1a58d3ba67f820d7"
+    },
+    {
+      "kennung": "M83",
+      "ebene": "bund",
+      "beschreibung": "Spitzensteuersatz erst bei sehr hohen Einkommen ansetzen",
+      "zitat": "Der Spitzensteuersatz sollte mittlere Einkommen verschonen und erst bei sehr hohen Einkommen einsetzen.",
+      "ursachen_ids": [
+        4201
+      ],
+      "pruefsumme": "c764b194bdf80b40"
+    },
+    {
+      "kennung": "M84",
+      "ebene": "bund",
+      "beschreibung": "Schuldzinsen und Lizenzen an Holdinggesellschaften im Ausland nicht mehr von der Gewerbesteuer abziehen",
+      "zitat": "Schuldzinsen und Lizenzzahlungen an Holdinggesellschaften im Ausland gehören zu den wichtigsten Instrumenten für international tätige Unternehmen, Gewinne ins steuergünstige Ausland zu verschieben. Diese sollten deshalb bei der Berechnung der Gewerbesteuer nicht mehr vom Gewerbeertrag abgezogen werden dürfen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4203
+      ],
+      "pruefsumme": "6da37827f2b68e27"
+    },
+    {
+      "kennung": "M85",
+      "ebene": "bund",
+      "beschreibung": "Kapitalerträge wie Arbeitseinkommen mit dem normalen Einkommensteuersatz belasten",
+      "zitat": "Kapitalerträge sind wie Arbeitseinkommen mit dem normalen Einkommenssteuersatz zu belasten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4201,
+        4203
+      ],
+      "pruefsumme": "319a4de0ab4de5ad"
+    },
+    {
+      "kennung": "M86",
+      "ebene": "bund",
+      "beschreibung": "Gesetzliche Rente bis 2000 Euro im Monat von der Steuer befreien, sofern keine anderen Einkommen",
+      "zitat": "Bei Abwesenheit anderer Einkommen sollte die gesetzliche Rente bis 2000 Euro im Monat von der Steuer befreit werden.",
+      "ursachen_ids": [
+        4201
+      ],
+      "pruefsumme": "590eb60773021153"
+    },
+    {
+      "kennung": "M87",
+      "ebene": "bund",
+      "beschreibung": "CO2-Preis abschaffen",
+      "zitat": "Den CO2-Preis, der alles teurer macht, ohne dass es für die meisten Menschen Alternativen gibt, wollen wir abschaffen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4203
+      ],
+      "pruefsumme": "1842eb801257816a"
+    },
+    {
+      "kennung": "M88",
+      "ebene": "bund",
+      "beschreibung": "Finanztransaktionssteuer auf Wertpapier- und Derivategeschäfte einführen",
+      "zitat": "Auch ist es höchste Zeit, eine Finanztransaktionssteuer für alle Wertpapier- und Derivategeschäfte einzuführen, um hochspekulatives Handeln (und die Entkopplung der Finanzmärkte von der Realwirtschaft) einzudämmen und zu besteuern.",
+      "ursachen_ids": [
+        4203
+      ],
+      "ursachen_offen": [
+        4202
+      ],
+      "pruefsumme": "3737850a4318ba25"
+    },
+    {
+      "kennung": "M89",
+      "ebene": "bund",
+      "beschreibung": "Steuerfreiheit für Wertzuwächse bei Immobilien auf selbstgenutzten Wohnraum begrenzen",
+      "zitat": "Ein weiteres dringend zu schließendes Schlupfloch für Vermögende liegt in der Steuerfreiheit von Wertzuwächsen bei Immobilien ab einer Haltedauer von zehn Jahren. Wir wollen, dass dieses Privileg auf selbstgenutzten Wohnraum begrenzt wird.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4203
+      ],
+      "pruefsumme": "baecd6abdd7e544b"
+    },
+    {
+      "kennung": "M90",
+      "ebene": "bund",
+      "beschreibung": "Keine höheren Militärausgaben, kein Zwei-Prozent-Ziel und keine Schuldenfonds für die Aufrüstung",
+      "zitat": "Wir lehnen höhere Militärausgaben ab, die Erfüllung des Zwei-Prozent-Zieles der NATO oder gar höhere Ausgaben ebenso wie weitere Sondervermögen bzw. Schuldenfonds für die Aufrüstung der Bundeswehr oder Militärhilfen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4202
+      ],
+      "pruefsumme": "b6dbac2b7d936256"
+    },
+    {
+      "kennung": "M91",
+      "ebene": "bund",
+      "beschreibung": "Vermögensteuer ab 25 Mio. Euro Vermögen mit 1 bis 3 Prozent wieder einführen",
+      "zitat": "Die Vermögenssteuer wollen wir für Vermögen ab 25 Millionen Euro mit einem Steuersatz von 1 Prozent reaktivieren, der ab 100 Millionen Euro Vermögen auf 2 Prozent und ab 1 Mrd. Euro auf 3 Prozent steigt.",
+      "ursachen_ids": [
+        4203
+      ],
+      "ursachen_offen": [
+        4202
+      ],
+      "pruefsumme": "aaf8458ecba684ce"
+    },
+    {
+      "kennung": "M92",
+      "ebene": "bund",
+      "beschreibung": "Investitionen in Infrastruktur aus der Schuldenbremse ausklammern",
+      "zitat": "Wir wollen Investitionen in Brücken, Straßen, Schienen, Schulen, Wohnungen und Netze aus der Schuldenbremse ausklammern […]",
+      "ursachen_ids": [
+        4202
+      ],
+      "pruefsumme": "f387e5ceb2ad9d1d"
+    },
+    {
+      "kennung": "M93",
+      "ebene": "bund",
+      "beschreibung": "Mehrwertsteuer auf 0 Prozent für Grundnahrungsmittel senken",
+      "zitat": "Lebensmittel dürfen nicht durch staatliche Abgaben wie eine Fleischsteuer noch teurer gemacht werden. Stattdessen fordern wir eine Absenkung der Mehrwertsteuer auf 0 Prozent für Grundnahrungsmittel wie Fleisch, Getreide, Milchprodukte, sowie Obst und Gemüse.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4203
+      ],
+      "pruefsumme": "e43e537bc973dde3"
+    },
+    {
+      "kennung": "M94",
+      "ebene": "bund",
+      "beschreibung": "Industriefonds für Investitionen in Zukunftsbranchen und Schlüsselindustrien",
+      "zitat": "Wir wollen über einen Industriefonds in relevante Zukunftsbranchen und Schlüsselindustrien investieren und innovativen Start-ups mit \"geduldigem\" Kapital, das keine schnellen Renditen erwartet, zum Erfolg verhelfen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4202
+      ],
+      "pruefsumme": "c0fec3ffd7ba11e5"
+    },
+    {
+      "kennung": "M95",
+      "ebene": "bund",
+      "beschreibung": "Steuerlichen Grundfreibetrag deutlich erhöhen, orientiert an der Armutsgefährdungsschwelle",
+      "zitat": "Wir fordern eine deutliche Erhöhung des steuerlichen Grundfreibetrages, der sich an der Armutsgefährdungsschwelle orientieren sollte.",
+      "ursachen_ids": [
+        4201
+      ],
+      "pruefsumme": "d22ce949ba9d3c12"
+    },
+    {
+      "kennung": "M96",
+      "ebene": "bund",
+      "beschreibung": "Familien beim ersten selbstgenutzten Eigenheim von der Grunderwerbsteuer befreien",
+      "zitat": "Gleichzeitig wollen wir Familien beim Erwerb des ersten selbstgenutzten Eigenheims von der Grunderwerbsteuer befreien.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4203
+      ],
+      "pruefsumme": "60b1036e99137f88"
+    },
+    {
+      "kennung": "M97",
+      "ebene": "bund",
+      "beschreibung": "Den Kommunen die erforderlichen finanziellen Mittel bereitstellen",
+      "zitat": "Dafür sind den Kommunen die erforderlichen finanziellen Mittel bereitzustellen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4202
+      ],
+      "pruefsumme": "f065f95ed795eb66"
+    },
+    {
+      "kennung": "M98",
+      "ebene": "bund",
+      "beschreibung": "Verwaltung soll Open-Source-Lösungen statt teurer Software-Rahmenverträge einsetzen",
+      "zitat": "Wir fordern: Statt weitere Milliarden für die Vertiefung unserer Abhängigkeit an US-Monopolisten zu überweisen, sollte die nächste Bundesregierung die Verwaltung dabei unterstützen, Open-Source-Lösungen einzusetzen, die langfristig viel Geld sparen […]",
+      "ursachen_ids": [
+        4202
+      ],
+      "pruefsumme": "ede7156e2797038b"
+    },
+    {
+      "kennung": "M99",
+      "ebene": "bund",
+      "beschreibung": "Steuerermäßigung für Agrardiesel wiederherstellen",
+      "zitat": "Die Streichung der Steuerermäßigung für Agrardiesel wollen wir zurücknehmen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4203
+      ],
+      "pruefsumme": "c004136979712b54"
+    },
+    {
+      "kennung": "M100",
+      "ebene": "bund",
+      "beschreibung": "Belastungsmoratorium bei der Grundsteuer für Eigenheimbesitzer und Mieter",
+      "zitat": "Die Grundsteuer-Reform, die aufkommensneutral sein sollte, führt aktuell zu erheblichen Mehrkosten für Millionen Bürger. Wir fordern ein Belastungsmoratorium für normale Eigenheimbesitzer und Mieter.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4203
+      ],
+      "pruefsumme": "14e0d1f32fc6926f"
+    },
+    {
+      "kennung": "M101",
+      "ebene": "bund",
+      "beschreibung": "Vererbte Vermögen oberhalb der Freibeträge gleich besteuern",
+      "zitat": "Aktuell gilt: je höher das Erbvermögen, desto niedriger der effektive Steuersatz. […] Das wollen wir verändern und alle vererbten Vermögen oberhalb der Freibeträge gleich besteuern.",
+      "ursachen_ids": [
+        4203
+      ],
+      "ursachen_offen": [
+        4202
+      ],
+      "pruefsumme": "e4d29a67d63f035b"
+    },
+    {
+      "kennung": "M102",
+      "ebene": "bund",
+      "beschreibung": "Teure Beraterverträge im Militärbereich beenden, volle Transparenz über Militärausgaben",
+      "zitat": "Volle Transparenz über alle Militärausgaben, Schluss mit teuren und sinnlosen Beraterverträgen",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4202
+      ],
+      "pruefsumme": "c82f144c010f0e6b"
+    },
+    {
+      "kennung": "M103",
+      "ebene": "bund",
+      "beschreibung": "Unnötige Stellen in Ministerien abbauen, Beauftragte in den Ministerien abschaffen",
+      "zitat": "Um den Teufelskreislauf zu durchbrechen, wollen wir unnötige Stellen in Ministerien abbauen und dafür dort aufbauen, wo Bürger und Wirtschaft mehr Service und Unterstützung brauchen.",
+      "ursachen_ids": [
+        4202
+      ],
+      "pruefsumme": "219834d93374b2cd"
+    },
+    {
+      "kennung": "M104",
+      "ebene": "bund",
+      "beschreibung": "Steuerlichen Kinderfreibetrag so hoch machen wie das Kindergeld",
+      "zitat": "Dem Staat muss jedes Kind gleich viel wert sein: Der steuerliche Freibetrag des Chefarztes für seine Kinder sollte genauso hoch sein wie das Kindergeld, das eine Krankenschwester für ihre Kinder erhält.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4201
+      ],
+      "pruefsumme": "b87a9f12f67bd28a"
+    },
+    {
+      "kennung": "M105",
+      "ebene": "bund",
+      "beschreibung": "Aktienrückkäufe besteuern",
+      "zitat": "Durch Besteuerung von Aktienrückkäufen wollen wir dafür sorgen, dass diese Praxis unterbleibt.",
+      "ursachen_ids": [
+        4203
+      ],
+      "pruefsumme": "5d4abffe3106549e"
+    },
+    {
+      "kennung": "M106",
+      "ebene": "bund",
+      "beschreibung": "Einkommen bis 7500 Euro brutto steuerlich entlasten",
+      "zitat": "Wir wollen Einkommen bis zu 7500 Euro brutto steuerlich entlasten.",
+      "ursachen_ids": [
+        4201
+      ],
+      "pruefsumme": "5b833236ed0f6ed2"
+    },
+    {
+      "kennung": "M107",
+      "ebene": "bund",
+      "beschreibung": "Rüstungsindustrie zur Haftung für Kostensteigerungen und Verzögerungen verpflichten",
+      "zitat": "Die Bundesregierung muss die Rüstungsindustrie vertraglich verpflichten, für Kostensteigerungen und Verzögerungen bei Rüstungsprojekten zu haften.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4202
+      ],
+      "pruefsumme": "b3f3ea50c3a160d4"
+    },
+    {
+      "kennung": "M108",
+      "ebene": "bund",
+      "beschreibung": "Unternehmen, die Kita-Plätze bereitstellen, steuerliche Vorteile gewähren",
+      "zitat": "Unternehmen sollen stärker in die Pflicht genommen werden, wenn es um die Bereitstellung von Kita-Plätzen geht. Im Gegenzug soll es für diese Unternehmen steuerliche Vorteile geben.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        4203
+      ],
+      "pruefsumme": "d80730e0a9cdcb1c"
+    }
+  ],
+  "teilbewertung": {
+    "vorherige_pruefsumme": "8d05919fe80d27be55bd2d6f1d3c0bcfd0ff871c733feb940fc77fd6d88a8f89",
+    "zu_bewerten": [
+      "M83",
+      "M84",
+      "M85",
+      "M86",
+      "M87",
+      "M88",
+      "M89",
+      "M90",
+      "M91",
+      "M92",
+      "M93",
+      "M94",
+      "M95",
+      "M96",
+      "M97",
+      "M98",
+      "M99",
+      "M100",
+      "M101",
+      "M102",
+      "M103",
+      "M104",
+      "M105",
+      "M106",
+      "M107",
+      "M108"
+    ],
+    "bisher": {
+      "neue_instrumente": [
+        {
+          "kennung": "I1",
+          "name": "Einkommensteuertarif und Freibeträge automatisch an die Inflation anpassen (Bund)",
+          "wirksamkeit": 3,
+          "umsetzbarkeit": 3,
+          "begruendung": "Setzt direkt an der kalten Progression an; Schweiz, USA, Kanada, Belgien u. a. indexieren automatisch, Simulationen zeigen weitgehenden Ausgleich. Dagegen: Einnahmeausfall gegenüber Status quo und weniger Budgetspielraum; einfaches Bundesgesetz mit Bundesratszustimmung.",
+          "evidenz": "belegt",
+          "beleg_studie_url": "https://www.wirtschaftsdienst.eu/inhalt/jahr/2016/heft/10/beitrag/moeglichkeiten-zur-kompensation-der-kalten-progression-wirkung-in-oesterreich.html"
+        },
+        {
+          "kennung": "I2",
+          "name": "Grundfreibetrag der Einkommensteuer stark anheben (auf etwa 15.000 bis 17.000 Euro) (Bund)",
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 1,
+          "begruendung": "Entlastet alle Steuerpflichtigen spürbar und gleicht aufgelaufene kalte Progression mehr als aus. Dagegen: einmaliger Schritt ohne dauerhafte Anpassung und Ausfälle in zweistelliger Milliardenhöhe ohne geklärte Gegenfinanzierung.",
+          "evidenz": "belegt"
+        },
+        {
+          "kennung": "I3",
+          "name": "Einkommensteuertarif abflachen und Spitzensteuersatz später greifen lassen, ohne Gegenfinanzierung (Bund)",
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 1,
+          "begruendung": "Mildert den steilen Progressionsverlauf bei mittleren Einkommen, an dem die kalte Progression besonders wirkt. Dagegen: einmalige Änderung ohne Indexierung, Entlastung absolut v. a. bei höheren Einkommen, hohe Ausfälle ohne Finanzierung.",
+          "evidenz": "gemischt"
+        },
+        {
+          "kennung": "I4",
+          "name": "Einkommensteuertarif umbauen: untere und mittlere Einkommen entlasten, hohe stärker belasten (Bund)",
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "begruendung": "Senkt die Belastung der Mehrheit der Beschäftigten und ist teilweise gegenfinanziert. Dagegen: keine dauerhafte Inflationsanpassung, Ausweichreaktionen hoher Einkommen mindern die Gegenfinanzierung.",
+          "evidenz": "gemischt"
+        },
+        {
+          "kennung": "I5",
+          "name": "Schuldenbremse einhalten, keine Lockerung (Bund)",
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 3,
+          "begruendung": "Fiskalregeln gehen laut IWF mit niedrigeren Defiziten einher, besonders bei verbindlicher Ausgestaltung. Dagegen: kausaler Effekt umstritten, Regeln drücken oft Investitionen; geltendes Recht, daher leicht umsetzbar.",
+          "evidenz": "gemischt",
+          "beleg_studie_url": "https://www.imf.org/-/media/files/publications/sdn/2018/sdn1804-on-second-generation-fiscal-rules.pdf.md"
+        },
+        {
+          "kennung": "I6",
+          "name": "Schuldenbremse lockern oder abschaffen, um Investitionen über Kredite zu finanzieren (Bund)",
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "begruendung": "Kann Investitionsstau abbauen und Wachstum stützen; IWF verweist auf Investitionsverdrängung durch starre Regeln. Dagegen: erhöht Defizit und Zinslast unmittelbar; erfordert Grundgesetzänderung mit Zweidrittelmehrheit, EU-Regeln gelten weiter.",
+          "evidenz": "gemischt",
+          "beleg_studie_url": "https://www.imf.org/-/media/files/publications/sdn/2018/sdn1804-on-second-generation-fiscal-rules.pdf.md"
+        },
+        {
+          "kennung": "I7",
+          "name": "Subventionen und Ausgaben systematisch überprüfen und abbauen (Bund)",
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "begruendung": "Finanzhilfen und Steuervergünstigungen des Bundes umfassen dreistellige Milliardenbeträge, Abbau senkt das Defizit spürbar. Dagegen: Einsparziele bleiben oft unbestimmt, viele Posten sind politisch und rechtlich gebunden.",
+          "evidenz": "gemischt"
+        },
+        {
+          "kennung": "I8",
+          "name": "Bundesverwaltung verkleinern (Stellenabbau, Digitalisierung) (Bund)",
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Senkt Personal- und Verwaltungskosten auf längere Sicht. Dagegen: Personalausgaben sind nur ein kleiner Teil des Bundeshaushalts, Digitalisierung kostet zunächst; Einsparungen kaum untersucht.",
+          "evidenz": "offen"
+        },
+        {
+          "kennung": "I9",
+          "name": "Steuerhinterziehung und Steuerbetrug stärker verfolgen, Steuerverwaltung personell stärken (Bund)",
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "begruendung": "Betriebsprüfer erzielen im Schnitt rund 1 Mio. Euro Mehrergebnis je Jahr, mehr Personal erhöht die Einnahmen. Dagegen: Finanzämter sind Ländersache, Fachkräfte fehlen; der Bund kann nur über Gesetze, Bundesbehörden und Vereinbarungen beitragen.",
+          "evidenz": "belegt",
+          "beleg_studie_url": "https://www.zdfheute.de/wirtschaft/kampf-gegen-steuerhinterziehung-finanzamt-100.html"
+        },
+        {
+          "kennung": "I10",
+          "name": "Vermögensteuer wieder erheben (Bund)",
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "begruendung": "Erhöht den Anteil vermögensbezogener Steuern; DIW schätzt je nach Ausgestaltung zweistellige Milliardenbeträge. Dagegen: Ausweichreaktionen, Bewertungsaufwand und Verfassungsvorgaben zur Bewertung; Aufkommen fließt den Ländern zu.",
+          "evidenz": "gemischt",
+          "beleg_studie_url": "https://www.diw.de/de/diw_01.c.1002952.de/nachrichten/es_gibt_bessere_wege__vermoegen_zu_besteuern.html"
+        },
+        {
+          "kennung": "I11",
+          "name": "Verschonung großer Betriebsvermögen bei der Erbschaftsteuer begrenzen oder Mindeststeuer einführen (Bund)",
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 3,
+          "begruendung": "Große Betriebsvermögen werden weitgehend steuerfrei übertragen, Schätzungen nennen Ausfälle in Milliardenhöhe; Stundung kann Liquiditätsprobleme mildern. Dagegen: Unternehmensverbände warnen vor Investitionsfolgen, Ausweichgestaltungen möglich.",
+          "evidenz": "gemischt",
+          "beleg_studie_url": "https://www.wirtschaftsdienst.eu/inhalt/jahr/2016/heft/6/beitrag/die-demontage-der-erbschaftsteuer.html"
+        },
+        {
+          "kennung": "I12",
+          "name": "Freibeträge der Erbschaft- und Schenkungsteuer erhöhen oder an die Inflation koppeln (Bund)",
+          "wirksamkeit": 0,
+          "umsetzbarkeit": 3,
+          "begruendung": "Setzt an der Erbschaftsteuer an, senkt aber deren Aufkommen und verstärkt damit das Übergewicht von Lohn- und Umsatzsteuer. Für einzelne Erben (Eigenheim) entlastend; rechtlich einfach umsetzbar.",
+          "evidenz": "belegt"
+        },
+        {
+          "kennung": "I13",
+          "name": "Nationale Finanztransaktionssteuer einführen (Bund)",
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "begruendung": "Besteuert bisher steuerfreie Kapitaltransaktionen; Frankreich und Italien erheben sie. Dagegen: dortige Einnahmen blieben unter den Prognosen, Handel weicht aus; national einführbar, Bemessungsgrundlage strittig.",
+          "evidenz": "gemischt",
+          "beleg_studie_url": "https://articlegateway.com/index.php/JAF/article/view/6562"
+        }
+      ],
+      "zuordnung": [
+        {
+          "kennung": "M01",
+          "instrument": "I8",
+          "ursachen": [
+            4202
+          ]
+        },
+        {
+          "kennung": "M02",
+          "instrument": "I2",
+          "ursachen": [
+            4201
+          ]
+        },
+        {
+          "kennung": "M03",
+          "ursachen": []
+        },
+        {
+          "kennung": "M04",
+          "ursachen": []
+        },
+        {
+          "kennung": "M05",
+          "instrument": "I12",
+          "ursachen": [
+            4203
+          ]
+        },
+        {
+          "kennung": "M06",
+          "instrument": "I5",
+          "ursachen": [
+            4202
+          ]
+        },
+        {
+          "kennung": "M07",
+          "ursachen": []
+        },
+        {
+          "kennung": "M08",
+          "ursachen": []
+        },
+        {
+          "kennung": "M09",
+          "ursachen": []
+        },
+        {
+          "kennung": "M10",
+          "ursachen": []
+        },
+        {
+          "kennung": "M11",
+          "einzeln": {
+            "wirksamkeit": 1,
+            "umsetzbarkeit": 2,
+            "begruendung": "Verkehrswertorientierung stärkt die Grundsteuer als vermögensbezogene Steuer, Umlageverbot verlagert Last auf Eigentümer. Dagegen: Reform eher aufkommensneutral, Länder haben Abweichungsrecht, Bewertung aufwendig.",
+            "evidenz": "offen"
+          },
+          "ursachen": [
+            4203
+          ]
+        },
+        {
+          "kennung": "M12",
+          "instrument": "I9",
+          "ursachen": [
+            4202
+          ]
+        },
+        {
+          "kennung": "M13",
+          "ursachen": []
+        },
+        {
+          "kennung": "M14",
+          "instrument": "I13",
+          "ursachen": [
+            4203
+          ]
+        },
+        {
+          "kennung": "M15",
+          "ursachen": []
+        },
+        {
+          "kennung": "M16",
+          "ursachen": []
+        },
+        {
+          "kennung": "M17",
+          "ursachen": []
+        },
+        {
+          "kennung": "M18",
+          "ursachen": []
+        },
+        {
+          "kennung": "M19",
+          "ursachen": []
+        },
+        {
+          "kennung": "M20",
+          "ursachen": []
+        },
+        {
+          "kennung": "M21",
+          "einzeln": {
+            "wirksamkeit": 1,
+            "umsetzbarkeit": 2,
+            "begruendung": "Bringt einmalige Erlöse, die Schulden tilgen können. Dagegen: kein Beitrag zum strukturellen Defizit, entgangene Dividenden, Erlöse hängen vom Marktumfeld ab.",
+            "evidenz": "offen"
+          },
+          "ursachen": [
+            4202
+          ]
+        },
+        {
+          "kennung": "M22",
+          "instrument": "I5",
+          "ursachen": [
+            4202
+          ]
+        },
+        {
+          "kennung": "M23",
+          "einzeln": {
+            "wirksamkeit": 2,
+            "umsetzbarkeit": 1,
+            "begruendung": "Einmalige Vermögensabgabe kann hohe Einnahmen bringen und Kreditbedarf senken. Dagegen: Grundgesetz erlaubt sie nur bei außerordentlichem Finanzbedarf, Bewertung und Ausweichen schwierig, Aufkommen unsicher.",
+            "evidenz": "gemischt"
+          },
+          "ursachen": [
+            4202,
+            4203
+          ]
+        },
+        {
+          "kennung": "M24",
+          "ursachen": []
+        },
+        {
+          "kennung": "M25",
+          "instrument": "I13",
+          "ursachen": [
+            4203
+          ]
+        },
+        {
+          "kennung": "M26",
+          "ursachen": []
+        },
+        {
+          "kennung": "M27",
+          "einzeln": {
+            "wirksamkeit": 1,
+            "umsetzbarkeit": 1,
+            "begruendung": "Geringere EU-Beiträge würden den Bundeshaushalt entlasten. Dagegen: Finanzrahmen und Eigenmittel erfordern einstimmige EU-Beschlüsse, Rückflüsse aus EU-Programmen fielen ebenfalls weg.",
+            "evidenz": "offen"
+          },
+          "ursachen": [
+            4202
+          ]
+        },
+        {
+          "kennung": "M28",
+          "ursachen": []
+        },
+        {
+          "kennung": "M29",
+          "einzeln": {
+            "wirksamkeit": 0,
+            "umsetzbarkeit": 1,
+            "begruendung": "Setzt an vermögensbezogenen Steuern an, senkt deren Anteil aber weiter und verstärkt das Übergewicht von Lohn- und Umsatzsteuer. Länder verlören ihr Erbschaftsteueraufkommen ohne geklärten Ausgleich.",
+            "evidenz": "belegt"
+          },
+          "ursachen": [
+            4203
+          ]
+        },
+        {
+          "kennung": "M30",
+          "ursachen": []
+        },
+        {
+          "kennung": "M31",
+          "instrument": "I10",
+          "ursachen": [
+            4203
+          ]
+        },
+        {
+          "kennung": "M32",
+          "ursachen": []
+        },
+        {
+          "kennung": "M33",
+          "ursachen": []
+        },
+        {
+          "kennung": "M34",
+          "ursachen": []
+        },
+        {
+          "kennung": "M35",
+          "instrument": "I11",
+          "ursachen": [
+            4203
+          ]
+        },
+        {
+          "kennung": "M36",
+          "ursachen": []
+        },
+        {
+          "kennung": "M37",
+          "instrument": "I3",
+          "ursachen": [
+            4201
+          ]
+        },
+        {
+          "kennung": "M38",
+          "instrument": "I9",
+          "ursachen": [
+            4202
+          ]
+        },
+        {
+          "kennung": "M39",
+          "instrument": "I10",
+          "ursachen": [
+            4203
+          ]
+        },
+        {
+          "kennung": "M40",
+          "ursachen": []
+        },
+        {
+          "kennung": "M41",
+          "ursachen": []
+        },
+        {
+          "kennung": "M42",
+          "ursachen": []
+        },
+        {
+          "kennung": "M43",
+          "einzeln": {
+            "wirksamkeit": 1,
+            "umsetzbarkeit": 3,
+            "begruendung": "Erschwert Share Deals und erhöht das Aufkommen einer vermögensbezogenen Steuer. Dagegen: seit 2021 bereits verschärft, Mehreinnahmen begrenzt und den Ländern zufließend.",
+            "evidenz": "offen"
+          },
+          "ursachen": [
+            4203
+          ]
+        },
+        {
+          "kennung": "M44",
+          "instrument": "I6",
+          "ursachen": [
+            4202
+          ]
+        },
+        {
+          "kennung": "M45",
+          "einzeln": {
+            "wirksamkeit": 1,
+            "umsetzbarkeit": 1,
+            "begruendung": "Kann in Krisen zusätzliche Einnahmen bringen. Dagegen: Abgrenzung von Krisengewinnen schwierig, 90 Prozent verfassungsrechtlich heikel, EU-Solidaritätsbeitrag 2022 brachte weniger als erwartet.",
+            "evidenz": "gemischt"
+          },
+          "ursachen": [
+            4202
+          ]
+        },
+        {
+          "kennung": "M46",
+          "instrument": "I6",
+          "ursachen": [
+            4202
+          ]
+        },
+        {
+          "kennung": "M47",
+          "instrument": "I11",
+          "ursachen": [
+            4203
+          ]
+        },
+        {
+          "kennung": "M48",
+          "einzeln": {
+            "wirksamkeit": 1,
+            "umsetzbarkeit": 3,
+            "begruendung": "Höherer Grundfreibetrag entlastet alle Steuerpflichtigen und gleicht einen Teil der kalten Progression aus. Dagegen: einmaliger, mäßiger Schritt ohne dauerhafte Anpassung.",
+            "evidenz": "belegt"
+          },
+          "ursachen": [
+            4201
+          ]
+        },
+        {
+          "kennung": "M49",
+          "ursachen": []
+        },
+        {
+          "kennung": "M50",
+          "ursachen": []
+        },
+        {
+          "kennung": "M51",
+          "instrument": "I4",
+          "ursachen": [
+            4201
+          ]
+        },
+        {
+          "kennung": "M52",
+          "instrument": "I3",
+          "ursachen": [
+            4201
+          ]
+        },
+        {
+          "kennung": "M53",
+          "instrument": "I1",
+          "ursachen": [
+            4201
+          ]
+        },
+        {
+          "kennung": "M54",
+          "ursachen": []
+        },
+        {
+          "kennung": "M55",
+          "instrument": "I2",
+          "ursachen": [
+            4201
+          ]
+        },
+        {
+          "kennung": "M56",
+          "instrument": "I8",
+          "ursachen": [
+            4202
+          ]
+        },
+        {
+          "kennung": "M57",
+          "instrument": "I1",
+          "ursachen": [
+            4201
+          ]
+        },
+        {
+          "kennung": "M58",
+          "einzeln": {
+            "wirksamkeit": 1,
+            "umsetzbarkeit": 3,
+            "begruendung": "Der Pauschbetrag ist nicht indexiert; eine Anhebung gleicht Inflation für Beschäftigte teilweise aus und vereinfacht. Dagegen: einmaliger Schritt, Wirkung je Person gering.",
+            "evidenz": "offen"
+          },
+          "ursachen": [
+            4201
+          ]
+        },
+        {
+          "kennung": "M59",
+          "ursachen": []
+        },
+        {
+          "kennung": "M60",
+          "ursachen": []
+        },
+        {
+          "kennung": "M61",
+          "ursachen": []
+        },
+        {
+          "kennung": "M62",
+          "ursachen": []
+        },
+        {
+          "kennung": "M63",
+          "instrument": "I1",
+          "ursachen": [
+            4201
+          ]
+        },
+        {
+          "kennung": "M64",
+          "instrument": "I7",
+          "ursachen": [
+            4202
+          ]
+        },
+        {
+          "kennung": "M65",
+          "einzeln": {
+            "wirksamkeit": 1,
+            "umsetzbarkeit": 2,
+            "begruendung": "Schließen von Steuerschlupflöchern kann Mehreinnahmen bringen. Dagegen: ohne Benennung konkreter Regelungen bleiben Umfang und Wirkung unbestimmt.",
+            "evidenz": "offen"
+          },
+          "ursachen": [
+            4202
+          ]
+        },
+        {
+          "kennung": "M66",
+          "ursachen": []
+        },
+        {
+          "kennung": "M67",
+          "ursachen": []
+        },
+        {
+          "kennung": "M68",
+          "einzeln": {
+            "wirksamkeit": 1,
+            "umsetzbarkeit": 1,
+            "begruendung": "Verbindliche EU-Defizitregeln können Haushaltsdisziplin stärken. Dagegen: Regeln gelten bereits, ein automatisiertes Verfahren erfordert EU-Beschlüsse, die Deutschland nicht allein treffen kann.",
+            "evidenz": "gemischt"
+          },
+          "ursachen": [
+            4202
+          ]
+        },
+        {
+          "kennung": "M69",
+          "ursachen": []
+        },
+        {
+          "kennung": "M70",
+          "ursachen": []
+        },
+        {
+          "kennung": "M71",
+          "ursachen": []
+        },
+        {
+          "kennung": "M72",
+          "instrument": "I12",
+          "ursachen": [
+            4203
+          ]
+        },
+        {
+          "kennung": "M73",
+          "instrument": "I4",
+          "ursachen": [
+            4201
+          ]
+        },
+        {
+          "kennung": "M74",
+          "ursachen": []
+        },
+        {
+          "kennung": "M75",
+          "instrument": "I7",
+          "ursachen": [
+            4202
+          ]
+        },
+        {
+          "kennung": "M76",
+          "instrument": "I6",
+          "ursachen": [
+            4202
+          ]
+        },
+        {
+          "kennung": "M77",
+          "ursachen": []
+        },
+        {
+          "kennung": "M78",
+          "instrument": "I3",
+          "ursachen": [
+            4201
+          ]
+        },
+        {
+          "kennung": "M79",
+          "ursachen": []
+        },
+        {
+          "kennung": "M80",
+          "einzeln": {
+            "wirksamkeit": 1,
+            "umsetzbarkeit": 3,
+            "begruendung": "Begrenzung auf Kernaufgaben kann Ausgaben senken. Dagegen: unbestimmt, welche Ausgaben entfallen; viele Bundesausgaben sind gesetzlich gebunden.",
+            "evidenz": "offen"
+          },
+          "ursachen": [
+            4202
+          ]
+        },
+        {
+          "kennung": "M81",
+          "instrument": "I7",
+          "ursachen": [
+            4202
+          ]
+        },
+        {
+          "kennung": "M82",
+          "ursachen": []
+        }
+      ]
+    }
+  }
+}

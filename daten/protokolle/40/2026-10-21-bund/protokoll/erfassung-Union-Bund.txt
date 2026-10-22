@@ -1,0 +1,37 @@
+{
+  "partei_id": 11,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Überstundenzuschläge bei Vollzeitbeschäftigung steuerfrei stellen.", "ursachen_ids": [4001], "buendel": "Mehrarbeit vergüten oder ausgleichen", "zitat": "Wir stellen Überstundenzuschläge bei Vollzeitbeschäftigung steuerfrei. Wer freiwillig mehr arbeiten will, soll mehr Netto vom Brutto haben.", "seite": 14 },
+    { "beschreibung": "Anstelle der täglichen Höchstarbeitszeit eine wöchentliche Höchstarbeitszeit im Arbeitszeitgesetz festlegen.", "ursachen_ids": [4001], "buendel": "Wöchentliche Höchstarbeitszeit statt Tagesgrenze", "zitat": "Wir reformieren das Arbeitszeitgesetz und legen für alle Unternehmen anstelle der täglichen eine wöchentliche Höchstarbeitszeit im Sinne der europäischen Arbeitszeitrichtlinie fest.", "seite": 14 },
+    { "beschreibung": "Besondere Schutzerfordernisse bei gefahrgeneigten Berufen berücksichtigen.", "ursachen_ids": [], "ursachen_offen": [4001], "zitat": "Das gilt vor allem bei gefahrgeneigten Berufen. Hier berücksichtigen wir die besonderen Schutzerfordernisse, weil das Unfallrisiko nach acht Stunden steigt.", "seite": 14 },
+    { "beschreibung": "Unternehmen können freie Personalkapazitäten in einer Kooperation untereinander zur Verfügung stellen.", "ursachen_ids": [], "ursachen_offen": [4001], "zitat": "So können sich zwei Unternehmen im Rahmen einer Kooperation freie Personalkapazitäten mit Zustimmung der Betriebsräte untereinander zur Verfügung stellen.", "seite": 15 },
+    { "beschreibung": "Rechtssicherheit für mobiles Arbeiten und Homeoffice schaffen und mobile Arbeitsformen fördern.", "ursachen_ids": [4003], "buendel": "Mobiles Arbeiten", "zitat": "Auch für das Homeoffice schaffen wir Rechtssicherheit und fördern damit mobile Arbeitsformen: Sofern freiwillig gewählt, definieren wir es unabhängig vom zeitlichen Umfang als einen Unterfall des mobilen Arbeitens.", "seite": 14 },
+    { "beschreibung": "Elterngeld verbessern und den Partnerschaftsbonus bei vollzeitnaher Teilzeit beider Eltern weiterentwickeln.", "ursachen_ids": [], "ursachen_offen": [4003], "buendel": "Elternzeit und Familienzeit", "zitat": "Wir verbessern das Elterngeld. Den Partnerschaftsbonus bei gleichzeitiger vollzeitnaher Teilzeit beider Eltern entwickeln wir weiter.", "seite": 62 },
+    { "beschreibung": "Hinzuverdienstgrenzen und Transferentzugsraten reformieren, um Anreize für Arbeit oder mehr Arbeit zu erhöhen.", "ursachen_ids": [], "ursachen_offen": [4002], "zitat": "Wir reformieren die Hinzuverdienstgrenzen und die Transferentzugsraten, um die Anreize zu erhöhen, eine Arbeit aufzunehmen oder mehr zu arbeiten.", "seite": 31 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 4002, "seiten": [15, 34], "grund": "Gelesen: Kapitel Arbeit und Fachkräfte (S. 14–15), Sozialstaat und Rente (S. 31–35). S. 15: „Es braucht bessere Rahmenbedingungen für Vollzeitarbeit oder vollzeitnahe Arbeit“ ist ein allgemeines Ziel ohne Maßnahme. S. 34: Aktivrente betrifft Arbeit nach dem Rentenalter, nicht den gewünschten Umfang." },
+    { "ursache": 4003, "seiten": [8, 71], "grund": "Gelesen: Familie (S. 8, 60–64), Pflege (S. 71–72). S. 71: „Vereinbarkeit von Pflege und Beruf stärken“ ist ein Ziel ohne Freistellungs- oder Lageregel. Pflegegeld und Pflegebudget gehören zu T10. Die Zusage zur Elternzeit auf S. 8 ist nicht maschinenlesbar und wird über S. 62 erfasst; das Bekenntnis „Wir bekennen uns zur Elternzeit“ (S. 62) ist kein Handlungsversprechen." }
+  ]
+}
+
+Protokoll
+
+Gelesen: Inhaltsverzeichnis (S. 2); Kapitel „Die Fleißigen“ mit Abschnitt „Arbeitsrecht modernisieren“ und „Arbeits- und Fachkräfte gewinnen“ (S. 12–15); Kapitel „Familie und Verantwortung“ (S. 60–64) mit Elternzeit und Familienbildung; Sozialstaat, Arbeitsmarkt und Rente (S. 31–35); Pflege (S. 71–72); Fundstellen S. 14, 15, 62, aus dem Auftrag.
+
+Gleichartige Stellen (nicht separat erfasst):
+- S. 15 „Mobiles Arbeiten innerhalb der EU“ (grenzüberschreitendes mobiles Arbeiten rechtssicher und flexibel machen): gleiches Bündel „Mobiles Arbeiten“, konkretere nationale Stelle S. 14 gewählt.
+- S. 14 „Wir gestalten die Vorgaben für mobile Arbeitsplätze praxisnäher“: gleiches Bündel, s. oben.
+- S. 8 „Wir verbessern Elternzeit und Elterngeld. Sie geben Familien mehr Zeit und unterstützen den Wunsch nach Aufgabenteilung.“ Zusage zur Elternzeit, Bündel „Elternzeit und Familienzeit“; im Textfile nicht maschinenlesbar (Buchstaben einzeln getrennt), daher S. 62 als Zitat gewählt. Die Stelle S. 8 ist inhaltlich die passendere Zusage zur Elternzeit.
+- S. 15 „Wir verbessern die steuerliche Absetzbarkeit haushaltsnaher Dienstleistungen“: Thema 28 (Familienarbeit), hier nicht erfasst (kein Arbeitszeitbezug).
+
+Nicht erfasst:
+- S. 14–15: Wöchentliche Höchstarbeitszeit ist erfasst. Ruhezeiten und Erreichbarkeit nach Feierabend werden nicht erwähnt.
+- S. 15: „Vorbeschäftigungsverbot“ abschaffen (Befristung): kein Arbeitszeitbezug.
+- S. 14: Arbeitsschutz „Hohe Standards“: als ursachen_offen (Schutzerfordernisse bei Schichtdauer) aufgenommen.
+- S. 34: Freiwillig längeres Arbeiten (Frühstart-Rente, Altersvorsorge) und Mitarbeiterkapitalbeteiligung: kein Arbeitszeitbezug.
+
+Richtungen ohne Maßnahme: 4002 (Anspruch auf Teilzeit, Rückkehr in Vollzeit, Kürzere Arbeitszeit, Wahlarbeitszeit): nur als ursachen_offen (S. 31) und als nicht erfasst, s. JSON. Bündel „Gleitzeit und feste Arbeitszeitlage“ (4003): keine Stelle gefunden.
+Seiten ohne Text: S. 1, S. 82 (Titel und Rückseite), ohne Bedeutung.
+Stand im PDF: Titelseite „Politikwechsel für Deutschland – Wahlprogramm von CDU und CSU“, kein abweichender Stand vermerkt.

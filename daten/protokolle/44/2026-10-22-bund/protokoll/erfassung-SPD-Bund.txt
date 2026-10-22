@@ -1,0 +1,71 @@
+{
+  "partei_id": 12,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Handelshemmnisse gegenüber den USA abbauen und einen Subventionswettlauf vermeiden.",
+      "ursachen_ids": [4401],
+      "zitat": "Die Gefahr protektionistischer Maßnahmen der USA ist weiter gestiegen. Wir setzen alles daran, Handelshemmnisse abzubauen und einen Subventionswettlauf mit den USA zu vermeiden.",
+      "seite": 61
+    },
+    {
+      "beschreibung": "Handelsabkommen schneller abschließen; Entscheidung im Ministerrat mit qualifizierter Mehrheit statt Einstimmigkeit.",
+      "ursachen_ids": [4401],
+      "zitat": "Der Abschluss von weitreichenden Handels- und Investitionsabkommen (beispielsweise das EU- Mercosur-Abkommen oder die Freihandelsverträge der EU mit Indien und Australien) sind wichtige Meilensteine, um robuste Allianzen und Partnerschaften zu etablieren. […] Wir wollen, dass solche Abkommen künftig einfacher gestaltet und schneller zum Abschluss gebracht werden können. Zu oft werden Verhandlungen von einzelnen EU-Mitgliedstaaten ausgebremst. Handelsabkommen sollen daher durch eine qualifizierte Mehrheit im Ministerrat der EU entschieden werden.",
+      "seite": 65
+    },
+    {
+      "beschreibung": "Rohstofffonds schaffen und die heimische Rohstoffgewinnung ausbauen.",
+      "ursachen_ids": [4402],
+      "zitat": "Um unsere heimische Industrie mit Rohstoffen zu versorgen, setzen wir auf den neu geschaffenen Rohstofffonds, werden die heimische Rohstoffgewinnung voranbringen und uns für eine koordinierte Rohstoffstrategie der EU einsetzen.",
+      "seite": 11
+    },
+    {
+      "beschreibung": "Europäische Resilienzstrategie gegen Lieferrisiken (De-Risking) und Abhängigkeiten bei Rohstoffen und Vorprodukten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [4402],
+      "zitat": "Die EU muss sich unabhängiger aufstellen und strategische Wertschöpfung wieder stärker nach Europa verlagern. Dazu braucht es eine europäische Resilienzstrategie, die Risiken verringert (De-Risking), kritische Infrastrukturen effektiv schützt und strategisch wichtige Schlüsselindustrien wieder in Europa ansiedelt.",
+      "seite": 11
+    },
+    {
+      "beschreibung": "Mit strategischen Partnerschaften und Allianzen den Zugang zu wertvollen Rohstoffen sichern.",
+      "ursachen_ids": [4402],
+      "zitat": "Viele Bereiche unseres Alltags und unserer Wirtschaft hängen unmittelbar an robusten Lieferketten und dem Zugang zu besonders wertvollen Rohstoffen. Als innovativer Industriestandort wollen wir Allianzen bilden und mit strategischen Partnerschaften Brücken bauen",
+      "seite": 64
+    },
+    {
+      "beschreibung": "CO2-Grenzausgleichsmechanismus für Importe entbürokratisieren und um Exportförderung ergänzen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [4403],
+      "zitat": "Wir entbürokratisieren den CO 2 -Grenzausgleichsmechanismus (CBAM – Carbon Border Adjustment Mechanism) und ergänzen ihn um eine Exportförderung.",
+      "seite": 11
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 4402, "name": "Eigene Förderung und Recycling", "seite": 11 },
+    { "ursache": 4402, "name": "Bezugsländer diversifizieren", "seite": 64 },
+    { "ursache": 4403, "name": "Grenzausgleich auf Importe", "seite": 11 }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis (S. 3); Einleitung S. 4–5 (nur Überblick); Kapitel 2 Made in Germany 2.0 (S. 10–11, Industrie, Rohstoffe, Grenzausgleich); Kapitel 23 Europäische Interessen (S. 61–62 vollständig); Kapitel 24 Gerechte Welt (S. 63–66, Handel, Rohstoffe, Lieferketten, Abkommen); Kapitel 22 Europa (S. 57–60) nur nach Handels- und Zollbegriffen durchsucht, ohne Treffer. S. 67–68 ohne Text.
+
+Nicht erfasst:
+- S. 11: „Die Kreislaufwirtschaftsstrategie wollen wir pragmatisch umsetzen, zum Beispiel mit Absatzmärkten für umweltschonend recycelte Rohstoffe“: gleichartig zu „Eigene Förderung und Recycling“ (Rohstofffonds oben gewählt, weil konkreter).
+- S. 11: „Gemeinsam mit unseren europäischen Partnern werden wir Local-Content-Regeln und Lokalisierungspflichten prüfen.“: Prüfauftrag, nicht erfasst.
+- S. 11: „Leitmärkte für grünen Stahl made in Germany – feste Anteile von grünem Stahl“: Absatzsicherung für Stahl, kein Importbezug zu 4403, nicht erfasst.
+- S. 11: „Klimafreundlich zu produzieren oder zu arbeiten, darf kein Wettbewerbsnachteil sein!“: allgemeines Ziel, nicht erfasst.
+- S. 61–62: „Wir bleiben mit Peking in einem robusten Dialog“ und „Gleichzeitig müssen wir in kritischen Bereichen wirtschaftlich unabhängiger werden (De-Risking)“: Dialog und Lagebeschreibung, gleichartig zur Resilienzstrategie (S. 11), nicht separat erfasst.
+- S. 64: „Wir wollen konkrete Vereinbarungen zu internationalen Standards, die gute Arbeit mit existenzsichernden Löhnen sicherstellt“ und EU-Lieferkettenrichtlinie: Arbeits- und Menschenrechtsstandards, nicht zu den Ursachen.
+- S. 64: Milliardärssteuer („Wir werden in einer Globalen Allianz für Steuergerechtigkeit … die Einführung einer Milliardärssteuer vorantreiben“): Steuerthema, nicht Thema 44.
+- S. 61: „Die Gefahr protektionistischer Maßnahmen …“ und die Zusage zu Handelshemmnissen oben erfasst; Gegenzölle und Vergeltung nicht genannt.
+
+Richtungen ohne Maßnahme:
+- 4401 „Gegenzölle und Vergeltung“ und „Zollabbau durch Verhandlung“ (nur allgemein über „Handelshemmnisse abbauen“ erfasst, S. 61): keine Gegenzoll-Zusage; S. 61–62 gelesen.
+- 4402 „Exportbeschränkungen (gegenläufig)“: nicht gefunden; S. 11, 64 gelesen.
+- 4403 „Handelsschutz gegen Dumping“ (Antidumping, Ausgleichszoll) und „Importzölle senken“: keine Zusage gefunden; S. 61–62 und S. 11 gelesen. Der CBAM-Eintrag (S. 11) ist als Grenzfall offen gemeldet.
+- Hinweis: Der Auftrag verweist für 4403 auf eine EP-Studie zu staatlich gestützten Überkapazitäten. Diese ist nicht Teil der Textdatei und wurde nicht gelesen; die Zuordnung der Überkapazitäts-Erklärung bleibt daher offen.
+
+Seiten ohne Text: S. 67–68 (Schlussseite, Rückseite) ohne Bezug.

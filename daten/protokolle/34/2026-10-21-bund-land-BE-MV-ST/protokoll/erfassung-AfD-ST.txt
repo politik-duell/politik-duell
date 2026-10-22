@@ -1,0 +1,36 @@
+{
+  "partei_id": 15,
+  "land": "ST",
+  "massnahmen": [
+    { "beschreibung": "Polizei konzentriert sich auf die Bekämpfung echter Verbrechen; Verfolgung von Meinungsäußerungen soll unterbleiben.", "ursachen_ids": [3402], "zitat": "Die Polizei muss deshalb wieder ihr Hauptaugenmerk auf die Bekämpfung echter Verbrechen legen. Die Verfolgung von Bürgern, die sich im Rahmen der Meinungsfreiheit äußern, hat zu unterbleiben.", "seite": 104 },
+    { "beschreibung": "Funktion des Polizeibeauftragten abschaffen.", "ursachen_ids": [3403], "buendel": "Unabhängige Beschwerde- und Kontrollstellen", "zitat": "11. Funktion des Polizeibeauftragten abschaffen! […] Daneben braucht es keinen Polizeibeauftragten.", "seite": 109 },
+    { "beschreibung": "Interne Ermittlungen nach Schusswaffengebrauch nur noch bei konkretem Verdacht auf Fehlverhalten einleiten.", "ursachen_ids": [], "ursachen_offen": [3403], "buendel": "Dokumentation und faire Verfahren", "zitat": "Wir werden deshalb durchsetzen, dass nach Schusswaffengebrauch nur noch bei konkreten Verdachtsmomenten auf Fehlverhalten interne Ermittlungen gegen Polizeivollzugsbeamte eingeleitet werden.", "seite": 106 },
+    { "beschreibung": "Aussetzung der Förderung bei Disziplinarverfahren erst mit staatsanwaltlichen Ermittlungen wirksam werden lassen.", "ursachen_ids": [], "ursachen_offen": [3403], "zitat": "Wir werden deshalb feststellen, dass erst staatsanwaltschaftliche Ermittlungen diesen Suspensiveffekt entfalten.", "seite": 108 },
+    { "beschreibung": "Bundesratsinitiative für massiv verstärkte Kontrollen an den deutschen Grenzen.", "ursachen_ids": [], "ursachen_offen": [3401], "buendel": "Gezielte Kontrollen für Sicherheit ermöglichen", "zitat": "Eine AfD-geführte Landesregierung wird sich im Bundesrat dafür einsetzen, dass die Kontrollen an den deutschen Grenzen massiv verstärkt und illegale Zuwanderer ohne Asylantragsrecht ausnahmslos zurückgewiesen werden.", "seite": 27 }
+  ],
+  "neue_buendel": [
+    { "ursache": 3402, "name": "Aufgabenschwerpunkt der Polizei", "seite": 104 },
+    { "ursache": 3403, "name": "Förderung bei Disziplinarverfahren aussetzen", "seite": 108 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3402, "seiten": [106, 107], "grund": "Taser-Einführung ist Ausstattung der Polizei (R2, Sicherheit), keine Einsatzpraxis oder Schulung zum Umgang mit Bürgern." },
+    { "ursache": 3402, "seiten": [105, 106], "grund": "Entlastung der Vollzugsbeamten von Verwaltungsarbeit betrifft die interne Organisation, nicht den Umgang mit Bürgern bei Polizeikontakten." }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Kapitel VI „Innere Sicherheit“ (S. 103–116) vollständig; Kapitel XI bis XVI nur über Stichwortsuche auf Polizeikontakte (keine weiteren Fundstellen); Einwanderung S. 27 (Grenzkontrollen); Schule S. 88 (Wachdienst); Kapitel XII S. 113 (Bürgerwacht). Seiten ohne Text in diesem Bereich: keine. Inhaltsverzeichnis und Präambel (S. 1–7) nicht zum Thema.
+
+Gleichartige Stellen (nicht zusätzlich erfasst): S. 251 (Forderungsliste) wiederholt „Funktion des Polizeibeauftragten abschaffen“ und „Keine Vorverurteilung bei Disziplinarverfahren“ (gleiche Stellen wie S. 108–109).
+
+Nicht erfasst:
+- S. 88 privater Wachdienst auf dem Schulhof: kein Polizeikontakt, sondern Ersatz durch privates Personal.
+- S. 113 kommunale Bürgerwacht: kein Polizeikontakt.
+- S. 105 Polizeifunk/Notfallsystem zur schnelleren Bearbeitung: Ausstattung (R2, Sicherheit).
+- S. 105–106 Personal aufstocken (7.500), Attraktivität, Beförderungen, Zulagen, Dienstunfähigkeitsversicherung (S. 107–108): Personal und Besoldung (R2, Sicherheit bzw. nicht Ursache 3401–3403).
+- S. 107 Geschlechterquoten bei der Polizei abzulehnen: keine Maßnahme gegen Polizeikontakte mit Jugendlichen.
+- S. 109–110 Warnschussarrest, Jugendstrafrecht: keine Polizeikontakte.
+- S. 104 „Respekt gegenüber der Polizei … Freund und Helfer“: Zielsatz; die konkrete Zusage steht auf S. 104 (Hauptaugenmerk) und ist erfasst.
+
+Richtungen ohne Maßnahme: Kontrollen begrenzen (3401, Richtung „Begrenzung“) – nicht gefunden; Kommunikation/Fortbildung (3402) – nicht gefunden. Bündel „Dokumentation und faire Verfahren“ und „Unabhängige Beschwerde- und Kontrollstellen“ belegt; Kennzeichnungspflicht und Bodycams kommen im Programm nicht vor.

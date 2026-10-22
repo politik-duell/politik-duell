@@ -1,0 +1,64 @@
+{
+  "partei_id": 16,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Einkommen bis zu einer festen Grenze im Jahr steuerfrei stellen (Grundfreibetrag)", "ursachen_ids": [4201], "buendel": "Entlastung über Grundfreibetrag", "zitat": "Alle zu versteuernden Einkommen unter 16.800 Euro im Jahr bleiben steuerfrei – das entspricht der Höhe unseres Modells des Existenzminimums.", "seite": 11 },
+    { "beschreibung": "Einkommensteuertarif umgestalten: niedrige Einkommen weniger, hohe Einkommen stärker belasten", "ursachen_ids": [], "ursachen_offen": [4201], "zitat": "Als Faustregel gilt: Wer (als Single, Steuerklasse I) weniger als 7.000 Euro im Monat brutto verdient, zahlt mit unserem Tarif weniger Steuern.", "seite": 11 },
+    { "beschreibung": "Ehegattensplitting durch eine Individualbesteuerung mit übertragbarem Grundfreibetrag ersetzen", "ursachen_ids": [], "ursachen_offen": [4201], "zitat": "Wir wollen die Steuerpolitik geschlechtergerechter machen und setzen uns für eine Reform des Ehegattensplittings in Richtung einer Individualbesteuerung mit übertragbarem Grundfreibetrag ein.", "seite": 46 },
+    { "beschreibung": "Schuldenbremse abschaffen, damit öffentliche Investitionen über Kredite finanziert werden können", "ursachen_ids": [4202], "buendel": "Neuverschuldung zulassen", "zitat": "Wir fordern die Abschaffung der Schuldenbremse. Es muss wieder möglich sein, öffentliche Investitionen in die Infrastruktur, eine klimaneutrale Industrie und den sozialen Ausgleich über Kredite zu finanzieren.", "seite": 13 },
+    { "beschreibung": "Vermögensteuer wieder einführen (mit Freibetrag, progressiver Satz)", "ursachen_ids": [4202, 4203], "zitat": "Die Linke fordert, dass die Vermögensteuer wieder eingeführt wird […] Geschätzte jährliche Mehreinnahmen: 108 Milliarden Euro.", "seite": 10 },
+    { "beschreibung": "Einmalige Vermögensabgabe für die Reichsten zur Finanzierung der Krisen- und Transformationskosten", "ursachen_ids": [4202], "zitat": "Um die enormen Kosten der sozialen und ökologischen Transformation zu stemmen, fordern wir eine einmalige Vermögensabgabe, die die Reichsten unserer Gesellschaft einmalig belastet. […] So können mindestens 310 Milliarden Euro eingenommen werden.", "seite": 11 },
+    { "beschreibung": "Übergewinnsteuer von 90 Prozent auf Krisenprofite einführen", "ursachen_ids": [4202, 4203], "zitat": "Die Linke fordert die Einführung einer Übergewinnsteuer in Höhe von 90 Prozent auf alle Krisenprofite (Kapitel 1).", "seite": 12 },
+    { "beschreibung": "Rüstungsausgaben drastisch senken und die Mittel in Bildung, Soziales, Gesundheit und Transformation lenken", "ursachen_ids": [4202], "buendel": "Ausgaben senken", "zitat": "Wir wollen die Rüstungsausgaben drastisch senken und stattdessen Investitionen in Bildung, Soziales, Gesundheit und eine gerechte Transformation.", "seite": 23 },
+    { "beschreibung": "Steuerhinterziehung konsequent verfolgen, Strafverfolger und Finanzämter personell und technisch stärken", "ursachen_ids": [], "ursachen_offen": [4202], "zitat": "Die Strafverfolgungsbehörden und Finanzämter müssen personell und technisch in die Lage versetzt werden, Steuerhinterziehung als Geschäftsmodell konsequent zu verfolgen.", "seite": 13 },
+    { "beschreibung": "Bund soll die Sozialleistungen tragen, die die Kommunen belasten", "ursachen_ids": [], "ursachen_offen": [4202], "zitat": "Die kommunalen Haushalte müssen von den Sozialleistungen entlastet werden. Diese muss in vollem Umfang der Bund tragen.", "seite": 44 },
+    { "beschreibung": "Bundesweites Kommunalentschuldungspaket", "ursachen_ids": [], "ursachen_offen": [4202], "zitat": "Es braucht ein bundesweites Kommunalentschuldungspaket.", "seite": 44 },
+    { "beschreibung": "Körperschaftsteuer für Unternehmen auf 25 Prozent anheben", "ursachen_ids": [], "ursachen_offen": [4203], "buendel": "Unternehmen und Kapital entlasten", "zitat": "Wir fordern, dass die Körperschaftsteuer auf 25 Prozent erhöht wird.", "seite": 12 },
+    { "beschreibung": "Tonnagesteuer-Privileg der Reeder abschaffen", "ursachen_ids": [], "ursachen_offen": [4203], "zitat": "Wir wollen das Tonnagesteuer-Privileg der großen Reeder abschaffen und deren Gewinne der ordentlichen Gewinnbesteuerung unterwerfen.", "seite": 12 },
+    { "beschreibung": "Gewerbesteuer zu einer Gemeindewirtschaftsteuer mit breiterer Bemessungsgrundlage umbauen", "ursachen_ids": [], "ursachen_offen": [4203], "zitat": "Die Linke tritt für die Reform der Gewerbesteuer ein, sie soll in eine Gemeindewirtschaftsteuer umgewandelt werden. […] Dafür werden wir den Freibetrag auf 30.000 Euro anheben.", "seite": 12 },
+    { "beschreibung": "Finanztransaktionssteuer von 0,1 Prozent auf jede Finanztransaktion", "ursachen_ids": [4203], "zitat": "Wir streiten für eine Finanztransaktionssteuer, um Spekulation auf den Finanzmärkten einzudämmen. Bei jeder Finanztransaktion soll ein Steuersatz von 0,1 Prozent fällig werden.", "seite": 12 },
+    { "beschreibung": "Mehrwertsteuer auf Grundnahrungsmittel, Hygieneprodukte sowie Bus und Bahn senken oder befreien", "ursachen_ids": [], "ursachen_offen": [4203], "buendel": "Konsum belasten oder entlasten", "zitat": "Wir wollen der Teuerung entgegenwirken: ▪ Grundnahrungsmittel, Hygieneprodukte, Bus und Bahn (Regional- und Fernverkehr) wollen wir von der Mehrwertsteuer befreien.", "seite": 6 },
+    { "beschreibung": "Grunderwerbsteuer so reformieren, dass Teilkäufe von Immobilien anteilig besteuert werden", "ursachen_ids": [], "ursachen_offen": [4203], "zitat": "Wir fordern eine Reform der Grunderwerbsteuer, sodass anteilige Immobilienkäufe (ab über 50 Prozent) entsprechend anteilig besteuert werden.", "seite": 11 },
+    { "beschreibung": "Grundsteuer am Verkehrswert ausrichten und nicht auf Mieter umlegen", "ursachen_ids": [], "ursachen_offen": [4203], "zitat": "Wir fordern eine Reform der Grundsteuer, die sich am Verkehrswert des Grundstücks orientiert und nicht auf die Mieter*innen umgelegt werden darf.", "seite": 10 },
+    { "beschreibung": "Vorübergehender Energie-Soli für Reiche zur Finanzierung günstiger Energie-Sockeltarife", "ursachen_ids": [], "ursachen_offen": [4203], "zitat": "Zur Finanzierung fordern wir vorübergehend einen Energie-Soli für Reiche.", "seite": 6 }
+  ],
+  "neue_buendel": [
+    { "ursache": 4201, "name": "Einkommensteuertarif umgestalten", "seite": 11 },
+    { "ursache": 4201, "name": "Ehegattensplitting durch Individualbesteuerung ersetzen", "seite": 46 },
+    { "ursache": 4202, "name": "Einmalige Vermögensabgabe", "seite": 11 },
+    { "ursache": 4202, "name": "Übergewinnsteuer", "seite": 12 },
+    { "ursache": 4202, "name": "Steuerhinterziehung konsequent verfolgen", "seite": 13 },
+    { "ursache": 4202, "name": "Bund übernimmt Sozialkosten der Kommunen", "seite": 44 },
+    { "ursache": 4202, "name": "Kommunalentschuldungspaket", "seite": 44 },
+    { "ursache": 4203, "name": "Übergewinnsteuer", "seite": 12 },
+    { "ursache": 4203, "name": "Tonnagesteuer-Privileg abschaffen", "seite": 12 },
+    { "ursache": 4203, "name": "Gemeindewirtschaftsteuer statt Gewerbesteuer", "seite": 12 },
+    { "ursache": 4203, "name": "Finanztransaktionssteuer", "seite": 12 },
+    { "ursache": 4203, "name": "Grunderwerbsteuer reformieren", "seite": 11 },
+    { "ursache": 4203, "name": "Grundsteuer am Verkehrswert", "seite": 10 },
+    { "ursache": 4203, "name": "Energie-Soli für Reiche", "seite": 6 }
+  ]
+}
+
+Protokoll (Teilauftrag 1, Thema 42 „Steuern und Abgaben“, Linke Bund)
+
+Gelesen: Inhaltsverzeichnis S. 1–6; Kapitel 1 „Leben bezahlbar machen“ (S. 6, Preise und Energie); Kapitel 3 „Umsteuern“ S. 10–14 vollständig; Kapitel 6 Fundstelle S. 23 (Rüstungsausgaben); Kapitel 9 Fundstellen S. 36–37 (Mehrwertsteuer ÖPNV, Bahn); Kapitel 12 S. 44; Kapitel 14 S. 46. Vorwort S. 4–5 nicht als Quelle genutzt (Einleitung). Seiten 1, 59, 60 ohne Text.
+
+Gleichartige weitere Stellen (nicht eigens erfasst, weil der Bündel-Hebel schon belegt ist):
+- Bündel „Vermögen und Erbschaften stärker besteuern“: Erbschaftsteuer und Schenkungsteuer, Freibeträge, Steuersatz 6 bis 60 Prozent, Mehreinnahmen 17 Mrd. (S. 11); Milliardärsteuer 12 Prozent (S. 10).
+- Bündel „Einnahmen durch Steuern erhöhen“ (4202): Erbschaftsteuer (S. 11), Körperschaftsteuer 25 Prozent (S. 12), Quellensteuer und Steuervermeidung (S. 12).
+- Bündel „Konsum belasten oder entlasten“: Mehrwertsteuer-Befreiung für ÖPNV und Bahn (S. 36, 37), Abschaffung der Mehrwertsteuer auf Grundnahrungsmittel mit Weitergabe (S. 11, S. 42), ermäßigte Steuersätze für Handwerk, Arzneimittel, Kinderprodukte (S. 11), Mehrwertsteuer auf Flugtickets ins Ausland (S. 37).
+- Bündel „Unternehmen und Kapital entlasten“: Kapitalertragsteuer an Arbeitseinkommen angleichen (S. 11), Mindesthebesatz der Gewerbesteuer 350 Prozent (S. 44).
+- Tarif (4201, offen): Spitzensteuersatz 53 Prozent ab 85.000 Euro, 60 und 75 Prozent für höhere Einkommen; Solidaritätszuschlag für die reichsten 10 Prozent (S. 11).
+
+Nicht erfasst:
+- S. 11 „einmaligen steuerfinanzierten Inflationsausgleich“ für Rentner, Auszubildende und Studierende: Einmalzahlung, kein Eingriff in Tarif oder Progression (4201).
+- S. 13 „Steuerlückenschätzung“, Steuerfahnder und BaFin-Aufsicht: Vollzug und Aufsicht ohne eigene Zusage zu Einnahmen, nur Steuerhinterziehung verfolgen aufgenommen (siehe oben).
+- S. 44 „Als Soforthilfeprogramm sollen Kommunen … Mittel … bekommen können“: Kann-Formulierung, nicht aufgenommen.
+- S. 10–11 Sozialversicherungsabgaben und Beiträge: nicht zu Ursache 4203 nach Leitfaden R3 (Beiträge 701, 3801).
+
+Richtungen ohne Maßnahme: 4201 „Tarif an Inflation anpassen“ (kalte Progression, Tarifeckwerte): kein Fund; „Ausgleich verzichten, Einnahmen sichern“: kein Fund. 4202 „Ausgaben senken“: nur Rüstung (aufgenommen); „Neuverschuldung zulassen“ aufgenommen. 4203 „Unternehmen und Kapital entlasten“: nur Körperschaftsteuer-Erhöhung und Gewerbesteuer-Reform (Richtung entgegen dem Bündelnamen, Bündel dennoch zugeordnet).
+
+Seiten ohne Text relevant: keine.
+
+Neue Bündel (Prüfhinweis, Bündel des Auftrags, nicht im Leitfaden der Datenbank): Entlastung über Grundfreibetrag; Neuverschuldung zulassen; Einnahmen durch Steuern erhöhen; Ausgaben senken; Vermögen und Erbschaften stärker besteuern; Unternehmen und Kapital entlasten; Konsum belasten oder entlasten.

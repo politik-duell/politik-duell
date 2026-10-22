@@ -49,5 +49,1147 @@
   "freigabe": {
     "datum": "2026-10-19",
     "art": "ki"
-  }
+  },
+  "instrumente": [
+    {
+      "id": 10615,
+      "name": "Grunderwerbsteuer-Freibetrag oder -Befreiung für (erst)selbstgenutztes Wohneigentum (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "Senkt die Erwerbsnebenkosten direkt; Studien zeigen aber, dass Preise stark auf die Steuer reagieren, ein Teil der Entlastung kann in Kaufpreise fließen. Länder dürfen nur den Satz festlegen, Freibeträge brauchen ein Bundesgesetz.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://ideas.repec.org/p/ces/ceswps/_8839.html",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10616,
+      "name": "Grunderwerbsteuersatz allgemein senken (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Senkt die Nebenkosten für alle Käufer, Land ist zuständig; dagegen sprechen hohe Einnahmeausfälle und dass Preise teils mitsteigen (Studien zu Satzänderungen).",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://ideas.repec.org/p/ces/ceswps/_8839.html",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10617,
+      "name": "Grunderwerbsteuersatz anheben (Land)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 3,
+      "begruendung": "Erhöht die Erwerbsnebenkosten statt sie zu senken; Studien zeigen zwar teilweise sinkende Preise, für Käufer bleibt aber keine Entlastung beim Eigenkapital für Nebenkosten.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://ideas.repec.org/p/ces/ceswps/_8839.html",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10618,
+      "name": "Grunderwerbsteuer-Freibetrag oder -Befreiung für selbstgenutztes Wohneigentum (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Senkt die Nebenkosten beim Kauf deutlich; Teil der Entlastung kann in Preise übergehen. Bund kann das Grunderwerbsteuergesetz ändern, braucht aber den Bundesrat, da das Aufkommen den Ländern zusteht.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://ideas.repec.org/p/ces/ceswps/_8839.html",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10619,
+      "name": "Erbschaftsteuer senken, abschaffen oder Freibeträge erhöhen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Familientransfers erleichtern den Eigentumserwerb, doch die meisten Erbschaften liegen unter den Freibeträgen und große Transfers gehen an bereits Vermögende; Bundesrat muss zustimmen.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.diw.de/de/diw_01.c.809938.de/erbschaften_machen_vor_allem_vermoegende_noch_reicher.html",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10620,
+      "name": "Wohnungsbau- bzw. Sparprämie erhöhen und dynamisieren (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Evaluation zeigt: Geförderte sparen mehr und erwerben früher Eigentum; die Beträge sind aber klein und erreichen Geringverdiener bisher kaum. Bund betreibt die Förderung bereits.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.diw.de/de/diw_01.c.822044.de/s_12953.html",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10621,
+      "name": "Mehr Bauland ausweisen und Ausweisung vereinfachen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Restriktive Flächenregeln gehen laut OECD mit geringerem Angebot und höheren Preisen einher; die Ausweisung liegt aber bei den Kommunen, der Bund kann nur Rahmen und eigene Flächen beitragen.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://oecdecoscope.blog/2021/07/02/a-recipe-for-lower-house-prices/",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10622,
+      "name": "Planungs- und Genehmigungsverfahren beschleunigen und digitalisieren (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Kürzere Verfahren können Flächen schneller nutzbar machen, schaffen aber kein zusätzliches Bauland; Baugenehmigungen regeln die Länder, Umweltprüfungen teils EU-Recht.",
+      "evidenz": "gemischt",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10623,
+      "name": "Aktive kommunale Bodenpolitik: Bodenfonds und Vorkaufsrechte stärken (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Kommunaler Flächenerwerb kann Bauland mobilisieren und günstiger vergeben; Wirkung auf Eigentumserwerb kaum untersucht, Ankauf auf teuren Märkten schwierig.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10624,
+      "name": "Planungsbedingte Bodenwertsteigerungen abschöpfen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Kann Spekulation und Horten von Bauland weniger lohnend machen; ob dadurch mehr Flächen bebaut werden oder Kosten an Käufer weitergegeben werden, ist kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10625,
+      "name": "Bauvorschriften und Baustandards abbauen und vereinfachen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Studien sehen Vorgaben als großen Kostentreiber im Neubau, die Größenordnung ist umstritten; Bauordnungen sind Landesrecht, der Bund kann nur Teile regeln.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.baulinks.de/webplugin/2015/0702.php4",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10626,
+      "name": "Serielles und modulares Bauen fördern und Genehmigungen vereinheitlichen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Vorfertigung verkürzt Bauzeiten und senkt Kostenrisiken; belastbare Kostensenkungen sind bislang nicht unabhängig belegt und betreffen eher Mehrfamilienhäuser.",
+      "evidenz": "gemischt",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10627,
+      "name": "Heizungsvorgaben des Gebäudeenergiegesetzes abschaffen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Im Neubau sind Wärmepumpen ohnehin verbreitet, die Kostenersparnis ist gering; ein ersatzloses Auslaufen kollidiert mit der Umsetzung der EU-Gebäuderichtlinie.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10628,
+      "name": "Zinsverbilligte Förderkredite für selbstgenutztes Wohneigentum ausbauen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Senkt die laufende Rate direkt, Bund finanziert die Programme bereits; bisher geringe Nachfrage wegen enger Grenzen und Auflagen, und Subventionen können in Preise übergehen.",
+      "evidenz": "gemischt",
+      "entwurf_herkunft": "blind"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "durchsucht_fuer": [3901, 3902, 3903, 3904, 3905],
+      "massnahmen": [
+        {
+          "id": 10629,
+          "instrument": 10621,
+          "beschreibung": "Mehr Bauland für den Neubau ausweisen, auch durch Nutzung von Brach- und Konversionsflächen und Bundesgrundstücken.",
+          "ursachen_ids": [3901],
+          "zitat": "Für mehr Neubau braucht es auch mehr Bauland – gerade in den Metropolen und Wachstumsregionen.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=73",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10630,
+          "instrument": 10622,
+          "beschreibung": "Planungs- und Genehmigungsverfahren für Bauleitplanung und Baugenehmigung digitalisieren und beschleunigen.",
+          "ursachen_ids": [3901],
+          "zitat": "Planungs- und Nebenkosten senken wir durch Digitalisierung und Beschleunigung von Bauleit- und Baugenehmigungsverfahren.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=73",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10631,
+          "beschreibung": "Befristete Ausnahmen vom Planungsrecht für Wohnungsbauvorhaben in angespannten Märkten.",
+          "ursachen_ids": [3901],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Erlaubt Wohnungsbau ohne neuen Bebauungsplan und kann Flächen schnell nutzbar machen; seit 2025 in Kraft, Wirkung noch kaum untersucht und abhängig von der Zustimmung der Gemeinden.",
+          "zitat": "Mit einer befristeten Sonderregelung für angespannte Wohnungsmärkte erlauben wir bei Wohnungsbauvorhaben Ausnahmen vom geltenden Planungsrecht.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=73",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10632,
+          "instrument": 10625,
+          "beschreibung": "Bauordnungs- und Raumordnungsrecht entschlacken und Vorschriften spürbar reduzieren.",
+          "ursachen_ids": [3902],
+          "zitat": "Dazu entschlacken wir das Bauordnungs- und Raumordnungsrecht grundlegend und reduzieren die Vorschriften spürbar und verantwortungsbewusst.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=73",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10633,
+          "beschreibung": "Keine neuen Standards, die Baukosten ohne nennenswerten Mehrwert erhöhen.",
+          "ursachen_ids": [3902],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Verhindert nur weitere Kostensteigerungen durch neue Standards, senkt bestehende Baukosten nicht; leicht umsetzbar.",
+          "zitat": "Mit uns gibt es keine neuen Standards, die Baukosten ohne nennenswerten Mehrwert erhöhen.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=73",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10634,
+          "instrument": 10620,
+          "beschreibung": "Vermögensbildungsprämie einführen, die Arbeitnehmersparzulage und Wohnungsbauprämie zusammenführt und den Förderbetrag erhöht.",
+          "ursachen_ids": [3903],
+          "zitat": "Wir führen eine Vermögensbildungsprämie ein, in der wir die Arbeitnehmersparzulage und die Wohnungsbauprämie verschmelzen. Wir erhöhen den Förderbetrag deutlich und vereinheitlichen die Einkommensgrenzen.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=34",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10635,
+          "instrument": 10619,
+          "beschreibung": "Freibeträge bei der Erbschaftsteuer erhöhen, damit das Eigenheim in höherem Maße steuerfrei vererbt werden kann.",
+          "ursachen_ids": [3903],
+          "zitat": "Wir erhöhen die Freibeträge bei der Erbschaftsteuer deutlich. So kann das Eigenheim in höherem Maße steuerfrei vererbt werden.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=34",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10636,
+          "instrument": 10618,
+          "beschreibung": "Länder sollen einen Freibetrag bei der Grunderwerbsteuer für den ersten Erwerb selbstgenutzten Wohneigentums gewähren können.",
+          "ursachen_ids": [3904],
+          "zitat": "Wir unterstützen vor allem Familien, sich den Traum vom Eigenheim zu erfüllen. Länder sollen einen Freibetrag bei der Grunderwerbsteuer von 250.000 Euro pro Erwachsenen und 150.000 Euro für jedes Kind beim erstmaligen Erwerb selbstgenutzten Wohneigentums gewähren können.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=34",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10637,
+          "instrument": 10628,
+          "beschreibung": "Bestehende Förderprogramme der Zinsverbilligung neu ausrichten: Einkommensgrenzen anheben, Kauf von Bestandsimmobilien einbeziehen.",
+          "ursachen_ids": [3905],
+          "zitat": "Die bestehenden Förderprogramme, wie zum Beispiel die Zinsverbilligungsprogramme der KfW, richten wir neu aus, indem wir die Einkommensgrenzen anheben und den Kauf von Bestandsimmobilien einbeziehen.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=73",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3904],
+      "massnahmen": [
+        {
+          "id": 10638,
+          "instrument": 10615,
+          "beschreibung": "Grunderwerbsteuer beim ersten selbstgenutzten Wohneigentum deutlich senken, Teilerlass bis zu einem Kaufpreisanteil",
+          "ursachen_ids": [3904],
+          "zitat": "Wir setzen uns dafür ein, die Grunderwerbsteuer beim erstmaligen Erwerb von selbstgenutztem Wohneigentum deutlich zu reduzieren. Bis zu einem Kaufpreisanteil von 300.000 Euro soll sie bei Immobilienkäufen bis 800.000 Euro erlassen werden.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=33",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3904],
+      "massnahmen": [
+        {
+          "id": 10639,
+          "instrument": 10616,
+          "beschreibung": "Senkung der Grunderwerbsteuer als weitere Zielstellung neben dem Baukindergeld",
+          "ursachen_ids": [3904],
+          "zitat": "„MV -Baukindergeld “: Zahlung eines Zuschusses von 15.000 Euro je Kind beim Ersterwerb selbstgenutzten Wohneigentums; weitere Zielstellungen: Senkung der Grunderwerbsteuer, zinsgünstige Kredite beim Hausbau und Immobilienerwerb.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=6",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3904],
+      "massnahmen": [
+        {
+          "id": 10640,
+          "instrument": 10615,
+          "beschreibung": "Grunderwerbsteuer beim ersten selbstgenutzten Eigenheim im ländlichen Raum entfallen lassen",
+          "ursachen_ids": [3904],
+          "zitat": "Wir setzen uns für eine Grunderwerbsteuerbefreiung beim erstmaligen Erwerb selbstgenutzten Wohneigentums im ländlichen Raum ein.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=31",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "durchsucht_fuer": [3901, 3902, 3903, 3904, 3905],
+      "massnahmen": [
+        {
+          "id": 10641,
+          "instrument": 10622,
+          "beschreibung": "Genehmigungsfiktion: Anträge gelten nach Fristablauf als genehmigt, auch für Bau- und Investitionsprojekte",
+          "ursachen_ids": [3901],
+          "zitat": "Wir führen eine Genehmigungsfiktion ein, bei der Anträge automatisch genehmigt sind, wenn die Behörde nicht innerhalb einer gesetzten Frist reagiert. Das gibt Bau- und Investitionsprojekten mehr Planungssicherheit.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=38",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10642,
+          "instrument": 10623,
+          "beschreibung": "Kommunen beim Aufbau von Bodenfonds unterstützen",
+          "ursachen_ids": [3901],
+          "zitat": "Um eine langfristige und nachhaltige Stadtentwicklung zu ermöglichen, müssen Kommunen beim Aufbau von Bodenfonds unterstützt werden.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=22",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10643,
+          "instrument": 10623,
+          "beschreibung": "Vorkaufsrecht für Kommunen stärken",
+          "ursachen_ids": [3901],
+          "zitat": "Das Vorkaufsrecht für Kommunen muss gestärkt werden.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=22",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10644,
+          "beschreibung": "Vereinfachte Baustandards wie den Gebäudetyp E weiterentwickeln",
+          "ursachen_ids": [3902],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Pilotprojekte melden rund 15 % geringere Bauwerkskosten durch Verzicht auf nicht nötige Standards; eine unabhängige Gesamtauswertung steht noch aus.",
+          "zitat": "Vereinfachte Baustandards wie der Gebäudetyp E müssen weiterentwickelt werden.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=22",
+          "beleg_studie_url": "https://stmb.bayern.de/med/pressemitteilungen/pressearchiv/2025/112/index.php",
+          "evidenz": "gemischt",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10645,
+          "instrument": 10626,
+          "beschreibung": "Serielles und modulares Bauen fördern",
+          "ursachen_ids": [3902],
+          "zitat": "Im seriellen und modularen Bauen stecken große Potenziale, die wir heben wollen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=22",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10646,
+          "instrument": 10619,
+          "beschreibung": "Freibeträge bei Erbschaft und Schenkung erhöhen",
+          "ursachen_ids": [3903],
+          "zitat": "Die Erbschaft- und Schenkungsteuer in ihrer heutigen Form ist nicht gerecht […] Die persönlichen Freibeträge wollen wir erhöhen, um den Vermögenspreissteigerungen seit der letzten Anpassung Rechnung zu tragen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=19",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10647,
+          "instrument": 10628,
+          "beschreibung": "Förderprogramm Jung kauft Alt verstetigen und ausbauen, mit zinsgünstigen Krediten für junge Familien",
+          "ursachen_ids": [3905],
+          "zitat": "Das Programm „Jung kauft Alt“ wollen wir verstetigen und ausbauen. […] Durch zinsgünstige Kredite und Zuschüsse zur energetischen Sanierung bekommen sie die Chance, sich ihren Traum zu erfüllen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=22",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3904],
+      "massnahmen": [
+        {
+          "id": 10648,
+          "instrument": 10615,
+          "beschreibung": "Grunderwerbsteuer um 0,5 Prozentpunkte anheben; große Unternehmen sollen mehr zahlen, Selbstnutzer sollen ausgenommen werden",
+          "ursachen_ids": [3904],
+          "zitat": "Wir heben die «Grunderwerbsteuer» um 0,5 Prozentpunkte an. Große Unternehmen sollen künftig mehr zahlen, Ausnahmen soll es für Selbstnutzer*innen geben.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=63",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10649,
+          "instrument": 10615,
+          "beschreibung": "Grunderwerbsteuer für selbstgenutztes Eigentum absenken, sobald Share Deals auf Bundesebene unterbunden sind (bedingte Zusage)",
+          "ursachen_ids": [3904],
+          "zitat": "Der Steuersatz auf den Erwerb von selbstgenutztem Eigentum soll dann abgesenkt werden, wenn zuvor die durch Unternehmen zur Vermeidung der Grunderwerbsteuerpflicht verwendeten „Share Deals“ auf Bundesebene unterbunden werden.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=63",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3904],
+      "keine_massnahme": {
+        "begruendung": "Kapitel Wohnen (S. 53–55) und Stellen S. 4 gelesen, Stichwortsuche Grunderwerb, Notar, Grundbuch, Makler, Eigentum, Steuer. Nichts zu Erwerbsnebenkosten; Eigentumsdarlehen (S. 4) betreffen Zinsen.",
+        "stand": "2026-10-21",
+        "treffer": 0,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 12,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3904],
+      "massnahmen": [
+        {
+          "id": 10650,
+          "instrument": 10615,
+          "beschreibung": "Ersterwerb von Immobilien für natürliche Personen von der Grunderwerbsteuer befreien (Forderung an den Bund)",
+          "ursachen_ids": [3904],
+          "zitat": "Um den Vermögensaufbau zu fördern fordern wir für natürliche Personen eine Befreiung des Ersterwerbs von Immobilien von der Grunderwerbsteuer",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=54",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "durchsucht_fuer": [3901, 3902, 3903, 3904, 3905],
+      "massnahmen": [
+        {
+          "id": 10651,
+          "instrument": 10628,
+          "beschreibung": "Förderung von Kauf und Neubau selbst genutzten Wohneigentums über zinsgünstige staatliche Kredite, vor allem für junge Familien",
+          "ursachen_ids": [3905],
+          "zitat": "Wir wollen den Kauf und den Neubau des ersten, selbst genutzten Wohneigentums sowie den Umbau leer stehender Wohnungen und Ausbauten zu günstigem Wohnraum stärker und sozial gerecht fördern. Damit unterstützen wir vor allem junge Familien durch zinsgünstige staatliche Kredite.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=70",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10652,
+          "instrument": 10620,
+          "beschreibung": "Wohnungsbauprämie, deren Höhe mit der Inflation steigt, für den Zugang zu Wohneigentum",
+          "ursachen_ids": [3903],
+          "zitat": "Eine Wohnungsbauprämie, deren Höhe mit der Inflation steigt und die an den Klimaschutzzielen ausgerichtet ist, erleichtert auch Menschen mit geringem und mittlerem Einkommen den Zugang zu Wohneigentum.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=70",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10653,
+          "beschreibung": "Entlastung bei den Nebenkosten des Kaufs wie Makler- und Notargebühren",
+          "ursachen_ids": [3904],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Bund regelt Notargebühren und Maklerrecht, die Maklerkosten wurden 2020 schon geteilt; ohne konkrete Höhe bleibt die Entlastung unbestimmt.",
+          "zitat": "Wir entlasten bei den Nebenkosten wie den Makler- und Notargebühren.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=70",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10654,
+          "beschreibung": "Flächenzertifikatehandel zur Begrenzung des Flächenverbrauchs, Ziel 30 Hektar pro Tag bis 2030",
+          "ursachen_ids": [3901],
+          "wirksamkeit": 0,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Begrenzt neue Bauflächen und kann Innenentwicklung anreizen; für Eigentumserwerb ist eher ein knapperes Flächenangebot zu erwarten. Bundesweiter Handel braucht Länder und Kommunen.",
+          "zitat": "Deshalb setzen wir auf neue Instrumente wie den Flächenzertifikatehandel oder ein Baulandabgabemodell. So setzen wir Anreize, den Flächenverbrauch bis 2030 auf 30 Hektar pro Tag und langfristig auf Nettonull zu senken.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=73",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10655,
+          "instrument": 10623,
+          "beschreibung": "Bodenpolitik am Gemeinwohl ausrichten, Bundesbodenfonds einrichten, kommunale Bodenfonds unterstützen",
+          "ursachen_ids": [3901],
+          "zitat": "Wohnraum und Bauflächen dürfen keine Spekulationsobjekte sein. Wir setzen uns für eine Bodenpolitik ein, die sich auch am Gemeinwohl orientiert, und passen das Baurecht entsprechend an. Wir richten einen Bundesbodenfonds ein und unterstützen den Aufbau von kommunalen Bodenfonds.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=71",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10656,
+          "beschreibung": "Städtebauförderung aufstocken und Innenentwicklung vereinfachen",
+          "ursachen_ids": [3901],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Erleichterte Innenentwicklung kann Baulücken und Brachen nutzbar machen; Städtebauförderung zielt aber vor allem auf Quartiersaufwertung. Bund finanziert sie bereits.",
+          "zitat": "Hierfür wollen wir die Mittel für die Städtebauförderung aufstocken und die Anwendung der Innenentwicklungsmaßnahmen vereinfachen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=73",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10657,
+          "instrument": 10625,
+          "beschreibung": "Baurecht vereinfachen und Verfahren bundesweit angleichen, auch zur Digitalisierung",
+          "ursachen_ids": [3902],
+          "zitat": "Dazu werden wir das Baurecht vereinfachen, Verfahren digitalisieren und bundesweit angleichen – davon profitieren alle Formen des Bauens.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=71",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10658,
+          "instrument": 10626,
+          "beschreibung": "Serielles Bauen von Wohngebäuden stärken",
+          "ursachen_ids": [3902],
+          "zitat": "Auch seriell errichtete Wohngebäude leisten bei nachhaltigen Bauweisen einen wirkungsvollen Beitrag, um Wohnraum schnell und preiswert zu schaffen. Diese Ansätze wollen wir stärken.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=71",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3904],
+      "massnahmen": [
+        {
+          "id": 10659,
+          "instrument": 10615,
+          "beschreibung": "Grunderwerbsteuer für Menschen, die selbst im Eigenheim wohnen wollen, sozial staffeln und senken.",
+          "ursachen_ids": [3904],
+          "zitat": "Außerdem wollen wir die Grunderwerbssteuer nicht nur auf das Niveau von Brandenburg anheben, sondern klar sozial staffeln: Menschen, die in den eigenen vier Wänden leben wollen, zahlen weniger.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=52",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10660,
+          "beschreibung": "Grunderwerbsteuer an den Steuersatz von Brandenburg anpassen.",
+          "ursachen_ids": [3904],
+          "wirksamkeit": 0,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Angleichung an den Satz eines anderen Landes; eine Entlastung bei den Nebenkosten ist nicht erkennbar, die Richtung bleibt offen.",
+          "zitat": "Außerdem wollen wir die Anpassung der Grunderwerbssteuer an die Höhe des Steuersatzes von Brandenburg.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=124",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3904],
+      "keine_massnahme": {
+        "begruendung": "Kapitel 8 „Wohnraum“ (S. 50–55) vollständig gelesen; dort Miete, Bauland, Förderung und Baukosten, aber keine Maßnahme zu Grunderwerbsteuer, Notar- und Grundbuchkosten oder Maklerprovision. Suche im gesamten Text (Grunderwerbsteuer, Freibetrag, Notar, Grundbuch, Makler, Erwerbsnebenkosten) ohne Treffer.",
+        "stand": "2026-10-21",
+        "treffer": 0,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 13,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3904],
+      "keine_massnahme": {
+        "begruendung": "Kapitel 5.3 Wohnen, Bauen, Stadt- und Landesentwicklung (S. 91–94) und Inhaltsverzeichnis gelesen; Stichwortsuche im ganzen Programm (Grunderwerbsteuer, Notar, Grundbuch, Makler, Nebenkosten, Eigenkapital, Eigentum, Eigenheim): nichts zu Erwerbsnebenkosten beim Kauf.",
+        "stand": "2026-10-21",
+        "treffer": 0,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 14,
+      "durchsucht_fuer": [3901, 3902, 3903, 3904, 3905],
+      "massnahmen": [
+        {
+          "id": 10661,
+          "instrument": 10622,
+          "beschreibung": "Genehmigungsverfahren beschleunigen, überflüssige Umweltgutachten abschaffen, Vorrang für Wohnungsbau.",
+          "ursachen_ids": [3901],
+          "zitat": "Wir beschleunigen Genehmigungsverfahren, schaffen überflüssige Umweltgutachten ab und geben dem Wohnungsbau Vorrang.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=44",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10662,
+          "instrument": 10621,
+          "beschreibung": "Ausweisung neuer Bauflächen vereinfachen, auch durch Nachverdichtung und Aufstockung.",
+          "ursachen_ids": [3901],
+          "zitat": "Neben der Nachverdichtung und Aufstockung vereinfachen wir auch die Ausweisung neuer Bauflächen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=44",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10663,
+          "instrument": 10626,
+          "beschreibung": "Serielles Bauen durch einheitliche Anforderungen und bundesweite Genehmigungsstandards voranbringen.",
+          "ursachen_ids": [3902],
+          "zitat": "Mit einheitlichen Anforderungen und bundesweiten Genehmigungsstandards bringen wir das serielle Bauen voran.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=44",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10664,
+          "instrument": 10625,
+          "beschreibung": "Überzogene Bau-Auflagen abbauen und auf Mindeststandards reduzieren.",
+          "ursachen_ids": [3902],
+          "zitat": "Wir werden überzogene Bau-Auflagen abbauen und auf sinnvolle Mindeststandards bei Gebäudeenergie, Brand- und Gesundheitsschutz sowie Statik reduzieren.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=44",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10665,
+          "instrument": 10627,
+          "beschreibung": "Heizungsgesetz mit seinen Vorgaben vollständig auslaufen lassen.",
+          "ursachen_ids": [3902],
+          "zitat": "Das Heizungsgesetz mit seinen überzogenen Vorgaben muss vollständig auslaufen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=45",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10666,
+          "instrument": 10618,
+          "beschreibung": "Grunderwerbsteuerfreibetrag von 500.000 Euro für die erste selbst genutzte Immobilie, plus 100.000 Euro je Kind.",
+          "ursachen_ids": [3904],
+          "zitat": "Mit einem Grunderwerbsteuerfreibetrag von 500.000 EUR für die erste selbst genutzte Immobilie von natürlichen Personen erleichtern wir den Zugang zu Eigentum. Für Familien erhöht sich dieser Freibetrag für jedes Kind um 100.000 Euro.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=45",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10667,
+          "instrument": 10619,
+          "beschreibung": "Freibeträge der Erbschaft- und Schenkungsteuer automatisch an die Inflation anpassen.",
+          "ursachen_ids": [3903],
+          "zitat": "Die Existenz von Unternehmen darf nicht durch die Erbschaft- und Schenkungsteuer gefährdet sein. Wir fordern, dass die Freibeträge automatisch um die Inflationsrate erhöht werden.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=15",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10668,
+          "beschreibung": "Mittel aus der betrieblichen Altersvorsorge für den Eigentumserwerb nutzbar machen.",
+          "ursachen_ids": [3903],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Schafft eine zusätzliche Eigenkapitalquelle, in der Schweiz verbreitet genutzt; dagegen sprechen geschwächte Altersvorsorge und dass nur Beschäftigte mit Betriebsrente profitieren.",
+          "zitat": "Nach Schweizer Vorbild sollen Mittel aus der betrieblichen Altersvorsorge für den Eigentumserwerb genutzt werden können.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=45",
+          "evidenz": "gemischt",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3904],
+      "massnahmen": [
+        {
+          "id": 10669,
+          "instrument": 10615,
+          "beschreibung": "Grunderwerbsteuer beim Kauf selbst genutzter Immobilien senken: die ersten 750.000 Euro steuerfrei, gegenfinanziert durch Verkauf landeseigener Grundstücke",
+          "ursachen_ids": [3904],
+          "zitat": "Für den Erwerb von selbst genutztem Immobilieneigentum werden wir die Grunderwerbsteuer senken. Die ersten 750.000 Euro Kaufpreis beim Erwerb sind steuerfrei; für den Kaufpreisanteil oberhalb von 750.000 Euro wird der geltende Steuersatz fällig. Die Gegenfinanzierung erfolgt durch den Verkauf von landeseigenen Baugrundstücken.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=47",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3904],
+      "massnahmen": [
+        {
+          "id": 10670,
+          "instrument": 10616,
+          "beschreibung": "Grunderwerbsteuersatz wieder auf 3,5 Prozent absenken",
+          "ursachen_ids": [3904],
+          "zitat": "Wir Freie Demokraten werden: […] den Steuersatz der Grunderwerbsteuer wieder auf 3,5 Prozent absenken.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=71",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3904],
+      "massnahmen": [
+        {
+          "id": 10671,
+          "instrument": 10615,
+          "beschreibung": "Grunderwerbsteuer-Freibetrag für den ersten Erwerb selbstgenutzten Wohneigentums, zusammen mit einem Landesförderprogramm; Einsatz dafür auf Bundesebene.",
+          "ursachen_ids": [3904],
+          "zitat": "Wir stärken das bestehende Förderprogramm für selbstgenutztes Wohneigentum und ergänzen es um einen Grunderwerbsteuer-Freibetrag für den erstmaligen Erwerb selbstgenutzten Wohneigentums, für den wir uns auf Bundesebene einsetzen.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=11",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "durchsucht_fuer": [3901, 3902, 3903, 3904, 3905],
+      "massnahmen": [
+        {
+          "id": 10672,
+          "beschreibung": "Genehmigungsrecht für Ersatzbauten von Wohngebäuden im Außenbereich ermöglichen",
+          "ursachen_ids": [3901],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Erleichtert Ersatzneubau auf bereits bebauten Außenbereichsflächen; betrifft nur wenige Fälle und schafft kaum neues Bauland. Bund ist für das Bauplanungsrecht zuständig.",
+          "zitat": "Außerdem muss Ersatz für alte Bestandsbauten genehmigungsrechtlich im Außenbereich ermöglicht werden.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=40",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10673,
+          "instrument": 10625,
+          "beschreibung": "Gesetzliche Vorgaben zum Bau- und Mietrecht zurückführen, um Wohnungsbau zu erleichtern",
+          "ursachen_ids": [3902],
+          "zitat": "Ausufernde gesetzliche Vorgaben zum Bau- und Mietrecht […] Wir werden den Wohnungsbau von diesen Fesseln befreien",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=37",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10674,
+          "beschreibung": "Gebäudeenergiegesetz abschaffen (zusammen mit EEG-Umlage und CO₂-Steuer)",
+          "ursachen_ids": [3902],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 0,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Energievorgaben tragen zu Baukosten bei, ihr Anteil ist umstritten; das GEG setzt die EU-Gebäuderichtlinie um, eine ersatzlose Abschaffung wäre EU-rechtswidrig.",
+          "zitat": "Ideologiegetriebene Kosten wie EEG-Umlage, CO₂-Steuer und das Gebäudeenergiegesetz (GEG) werden wir abschaffen.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=37",
+          "beleg_studie_url": "https://www.baulinks.de/webplugin/2015/0702.php4",
+          "evidenz": "gemischt",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10675,
+          "beschreibung": "Eigenkapitalersatz für Mieter beim Kauf selbstgenutzten Wohneigentums",
+          "ursachen_ids": [3903],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Setzt direkt an der Eigenkapitalhürde an; Erfahrungen mit Help to Buy zeigen aber steigende Preise in knappen Märkten. Ausgestaltung und Finanzierung sind offen.",
+          "zitat": "Mieter sollen beim Kauf von selbstgenutztem Wohneigentum z. B. durch Eigenkapitalersatz unterstützt werden.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=38",
+          "beleg_studie_url": "https://researchonline.lse.ac.uk/id/eprint/120627/",
+          "evidenz": "gemischt",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10676,
+          "instrument": 10619,
+          "beschreibung": "Erbschaftsteuer und Vermögensteuer abschaffen",
+          "ursachen_ids": [3903],
+          "zitat": "Die AfD will die derzeit zur Erhebung ausgesetzte Vermögensteuer sowie die Erbschaftssteuer abschaffen.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=61",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10677,
+          "instrument": 10618,
+          "beschreibung": "Grunderwerbsteuer für selbstnutzende Käufer abschaffen, dazu Grundsteuer und Rundfunkbeitrag",
+          "ursachen_ids": [3904],
+          "zitat": "So sind die Grunderwerbsteuer für Selbstnutzer, die Grundsteuer und der Rundfunkbeitrag (GEZ) aufzuheben",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=37",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10678,
+          "beschreibung": "Sparerpauschbetrag auf 6.672 Euro erhöhen und an die Geringfügigkeitsgrenze koppeln",
+          "ursachen_ids": [3903],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Höhere steuerfreie Zinserträge erleichtern das Ansparen nur geringfügig und vor allem bei bereits größeren Ersparnissen; Steuerausfälle sind erheblich.",
+          "zitat": "Die AfD will den Sparerpauschbetrag auf 6.672 Euro erhöhen und an die Geringfügigkeitsgrenze koppeln",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=61",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10679,
+          "beschreibung": "Mieter sollen Wohnungen aus öffentlichem Wohnungsbestand zu vergünstigten Bedingungen erwerben können",
+          "ursachen_ids": [3903],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Vergünstigter Kauf senkt den Eigenkapitalbedarf einzelner Mieter; der öffentliche Bestand ist begrenzt und meist kommunal, preisgünstiger Mietbestand geht verloren.",
+          "zitat": "Zur Förderung der Eigentumsbildung werden wir einen Rahmen schaffen, in dem Mieter ihre Wohnungen […] zu vergünstigten Bedingungen erwerben können.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=38",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3904],
+      "massnahmen": [
+        {
+          "id": 10680,
+          "instrument": 10615,
+          "beschreibung": "Grunderwerbsteuer für Ersterwerber selbstgenutzten Wohneigentums abschaffen; für außerhalb des EU-Raums ansässige Investoren eine Steuer einführen",
+          "ursachen_ids": [3904],
+          "zitat": "Ergänzend zur Gewährung öffentlicher Bürgschaften für den Erwerb von Wohneigentum werden wir die Grunderwerbsteuer für einheimische Ersterwerber selbstgenutzten Wohneigentums vollständig abschaffen, dafür aber eine Grunderwerbsteuer in Höhe von 20 % für außerhalb des EU-Raums ansässige Investoren einführen.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=9",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3904],
+      "massnahmen": [
+        {
+          "id": 10681,
+          "instrument": 10615,
+          "beschreibung": "Grunderwerbsteuer für die erste selbstgenutzte Immobilie abschaffen",
+          "ursachen_ids": [3904],
+          "zitat": "Wir wollen unsere Familien stärken und deshalb die Grunderwerbsteuer für die erste selbstgenutzte Immobilie vollständig abschaffen.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=55",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3904],
+      "massnahmen": [
+        {
+          "id": 10682,
+          "instrument": 10616,
+          "beschreibung": "Grunderwerbsteuer von 5 auf 2,5 Prozent absenken.",
+          "ursachen_ids": [3904],
+          "zitat": "Wir werden den Eigentumserwerb deshalb deutlich erleichtern und zu diesem Zweck die Grunderwerbssteuer von aktuell 5 Prozent auf 2,5 Prozent absenken.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=228",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "durchsucht_fuer": [3901, 3902, 3903, 3904, 3905],
+      "massnahmen": [
+        {
+          "id": 10683,
+          "instrument": 10619,
+          "beschreibung": "Selbstgenutztes Wohneigentum bei Erbschaften bis 200 Quadratmeter von der Erbschaftsteuer befreien.",
+          "ursachen_ids": [3903],
+          "zitat": "Pro Erbschaft wollen wir eine Immobilie mit bis zu 200 Quadratmetern von der Erbschaftsteuer befreien, wenn sie selbst genutzt wird.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=11",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10684,
+          "instrument": 10624,
+          "beschreibung": "Leistungslose Bodenwertzuwächse abschöpfen, um Spekulation mit Bauland zu bremsen.",
+          "ursachen_ids": [3901],
+          "zitat": "Keine Spekulation mit Wohnraum und Bauland! Wir wollen Zweckentfremdung von Wohnraum verbieten und dem Profitstreben mit Grund und Boden entgegenwirken: Leistungslose Bodenwertzuwächse sollen in einem ersten Schritt abgeschöpft werden.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=9",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3904],
+      "massnahmen": [
+        {
+          "id": 10685,
+          "instrument": 10617,
+          "beschreibung": "Grunderwerbsteuer auf mindestens 6,5, möglichst 8,0 Prozent anheben",
+          "ursachen_ids": [3904],
+          "zitat": "Wir fordern eine Steigerung der «Grunderwerbsteuer» von aktuell 6,0 Prozent auf 8,0 Prozent, mindestens aber auf das Brandenburger Niveau von 6,5 Prozent.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=79",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10686,
+          "instrument": 10615,
+          "beschreibung": "Länder sollen Steuersatz differenzieren, damit selbst genutztes Wohneigentum und sozialer Wohnungsbau ausgenommen werden können",
+          "ursachen_ids": [3904],
+          "zitat": "Wir werden uns gegenüber dem Bund dafür einsetzen, dass die Länder den gesetzliche Spielraum erhalten, den Steuersatz zu differenzieren, damit z. B. Grundstückserwerbe für sozialen Wohnungsbau oder auch für selbst genutztes Wohneigentum unterhalb des Luxussegments von einer solchen zusätzlichen Belastung ausgenommen werden können.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=79",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3904],
+      "keine_massnahme": {
+        "begruendung": "Kapitel 2 „Wohnen“ (S. 6–7) und Kapitel 4 „Finanzen“ (S. 8–9) gelesen; nichts zu Grunderwerbsteuer, Notar-, Grundbuch- oder Maklerkosten beim Kauf. Suchbegriffe ohne Treffer im ganzen Programm.",
+        "stand": "2026-10-21",
+        "treffer": 0,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 16,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3904],
+      "keine_massnahme": {
+        "begruendung": "Kapitel Gerechte Finanzen (S. 17–18) und Kapitel Wohnen (S. 82–85) gelesen; keine Aussage zu Grunderwerbsteuer, Notar-, Grundbuch- oder Maklerkosten beim Immobilienkauf. Nur Mietrecht, Wohngeld, Sozialwohnungsbau, Eigenheim-Sanierung und Eigentumsförderung (S. 83, 85) ohne Bezug zu Kaufnebenkosten.",
+        "stand": "2026-10-21",
+        "treffer": 0,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 17,
+      "durchsucht_fuer": [3901, 3902, 3903, 3904, 3905],
+      "massnahmen": [
+        {
+          "id": 10687,
+          "instrument": 10618,
+          "beschreibung": "Familien beim Erwerb des ersten selbstgenutzten Eigenheims von der Grunderwerbsteuer befreien",
+          "ursachen_ids": [3904],
+          "zitat": "Gleichzeitig wollen wir Familien beim Erwerb des ersten selbstgenutzten Eigenheims von der Grunderwerbsteuer befreien.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=17",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10688,
+          "instrument": 10623,
+          "beschreibung": "Spekulation mit Bauland eindämmen und aktive Bodenpolitik betreiben",
+          "ursachen_ids": [3901],
+          "zitat": "Wir wollen die Spekulation mit Bauland eindämmen sowie eine aktive, langfristige Bodenpolitik und eine nachhaltige Stadtentwicklungspolitik mit gemischten Quartieren fördern.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=28",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10689,
+          "instrument": 10624,
+          "beschreibung": "Planungsbedingte Wertsteigerungen von Grundstücken abschöpfen",
+          "ursachen_ids": [3901],
+          "zitat": "Leistungslose Gewinne privater Grundeigentümer, die durch planungsbedingte Wertsteigerungen entstehen, sind mindestens teilweise abzuschöpfen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=28",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10690,
+          "instrument": 10622,
+          "beschreibung": "Beschleunigung von Bauvorhaben, Vereinfachung seriellen Bauens und vereinfachte Genehmigung",
+          "ursachen_ids": [3901],
+          "zitat": "Notwendig ist auch die Beschleunigung von Bauvorhaben, etwa durch die Vereinfachung von seriellem Bauen und die Einführung eines vereinfachten Genehmigungsverfahrens für sozialen Wohnungsbau.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=28",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10691,
+          "instrument": 10627,
+          "beschreibung": "Heizungsgesetz abschaffen und durch andere Regelungen ersetzen",
+          "ursachen_ids": [3902],
+          "zitat": "Habecks Heizungsgesetz wollen wir sofort abschaffen und durch sinnvolle Regelungen ersetzen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=10",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3904],
+      "keine_massnahme": {
+        "begruendung": "Erfasste Stellen (S. 55) setzen laut Bewertung ohne Parteinamen an keiner der Ursachen an.",
+        "stand": "2026-10-21",
+        "treffer": 1,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 17,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3904],
+      "keine_massnahme": {
+        "begruendung": "Kapitel 'Wohnungsfrage lösen' (S. 20–21) gelesen; nichts zu Grunderwerbsteuer, Notar- und Grundbuchkosten oder Maklerprovision beim Kauf. Bauland, Sozialwohnungen und Ferienwohnungen betreffen keine Erwerbsnebenkosten.",
+        "stand": "2026-10-21",
+        "treffer": 0,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 17,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3904],
+      "massnahmen": [
+        {
+          "id": 10692,
+          "instrument": 10615,
+          "beschreibung": "Freibeträge bei der Grunderwerbsteuer als Teil eines Bau-Beschleunigungspakets unterstützen",
+          "ursachen_ids": [3904],
+          "zitat": "Das BSW unterstützt daher ein Bau-Beschleunigungsgesetz mit klaren Fristen und Standardverfahren, die Einführung eines digitalen Bauantrags, steuerliche Sonderabschreibungen und Freibeträge bei der «Grunderwerbsteuer» sowie zinsgünstige KfW-Programme und Bürgschaften.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=31",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    }
+  ]
 }

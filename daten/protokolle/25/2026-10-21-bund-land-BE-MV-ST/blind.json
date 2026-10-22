@@ -1,0 +1,415 @@
+{
+  "pruefsumme": "54fa5ec2ae9c2df85ad1aef363227b5378d89a54090a624d1a8137291d8cd9a3",
+  "thema": {
+    "id": 25,
+    "name": "Hass und Anfeindungen im Internet",
+    "ziel": "Menschen können sich online austauschen und beteiligen, ohne angefeindet, bedroht oder durch digitale Gewalt eingeschüchtert zu werden."
+  },
+  "ursachen": [
+    {
+      "id": 2501,
+      "beschreibung": "Hasskommentare werden selten bei Plattformen gemeldet: 2023 meldeten laut forsa-Befragung 30 % (2019: 25 %) Hasskommentare oder deren Verfasser",
+      "ebene": "land"
+    },
+    {
+      "id": 2502,
+      "beschreibung": "Als rechtswidrig gemeldete Hassrede bleibt teils online: Im EU-Kontrolltest 2022 entfernten Plattformen 63,6 % der gemeldeten Inhalte (3.634 Meldungen)",
+      "ebene": "bund"
+    },
+    {
+      "id": 2503,
+      "beschreibung": "Frust und bereits sichtbare Anfeindungen erhöhen die Wahrscheinlichkeit weiterer beleidigender Beiträge (Experiment 2017 mit 667 Teilnehmenden in den USA)",
+      "ebene": "land"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        2501,
+        2502,
+        2503
+      ],
+      "text": "Zu 2501 gehören Meldewege, Beratung und Hilfe für Betroffene, zu 2502 Pflichten und Aufsicht für Plattformen (Löschen, Moderation, Durchsetzung), zu 2503 Prävention, Gesprächs- und Moderationsdesign. Strafverfolgung von Hass und Bedrohung im Netz zählt zu 2501 oder 2502, je nachdem, ob das Zitat Betroffene oder Plattformen nennt."
+    },
+    {
+      "nr": 2,
+      "text": "Betrug und Datenmissbrauch im Netz gehören zu Sicherheit, extremistische Inhalte zu Radikalisierung und Extremismus, Cybermobbing unter Schülern zu Mobbing in der Schule. Maßnahmen ohne Bezug zu Hass, Bedrohung oder Anfeindung (allgemeine Netzpolitik) sind keine Maßnahme dieses Themas."
+    }
+  ],
+  "instrumente": [
+    {
+      "id": 10227,
+      "name": "Plattformen zum Entfernen rechtswidriger Hassinhalte verpflichten (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "belegt",
+      "begruendung": "Löschpflichten mit Bußgeld senkten nach NetzDG-Studie Hass online und Hasskriminalität offline; die Pflicht besteht über den DSA aber schon, und eigene nationale Regeln sind durch die EU-Harmonisierung begrenzt.",
+      "beleg_studie_url": "https://econpapers.repec.org/RePEc:cge:wacage:701"
+    },
+    {
+      "id": 10228,
+      "name": "Digitales Gewaltschutzgesetz mit gerichtlichen Accountsperren und Betroffenenrechten (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Sperren von Täterkonten senkten in Fallstudien Aktivität und Toxizität, Betroffene erhalten einen Rechtsweg; Ausweichen auf neue Konten oder andere Plattformen schwächt die Wirkung, die Belege sind begrenzt.",
+      "beleg_studie_url": "https://cscw2021.cc.gatech.edu/?p=43"
+    },
+    {
+      "id": 10229,
+      "name": "Login-Falle zur Identifizierung anonymer Täter (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Schließt eine Ermittlungslücke bei anonymen Konten und macht Anzeigen aussichtsreicher; zur tatsächlichen Wirkung auf Aufklärung und Abschreckung gibt es kaum Untersuchungen."
+    },
+    {
+      "id": 10230,
+      "name": "Verfolgung von Hasskriminalität durch Polizei und Schwerpunktstaatsanwaltschaften stärken (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Spezialisierte Stellen erhöhen Fallzahlen und Verfahren, eine Wirkung auf Melde- und Anzeigeverhalten ist nicht untersucht; Polizei und Staatsanwaltschaften sind überwiegend Ländersache."
+    },
+    {
+      "id": 10231,
+      "name": "Beratung und Ansprechstellen für Betroffene von Hass dauerhaft fördern (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Beratung senkt den Aufwand für Betroffene, gegen Hass vorzugehen, Evaluationen zeigen hohe Zufriedenheit; Wirkung auf Meldungen und Anzeigen ist kaum gemessen, der Bund kann nur über Programme fördern."
+    },
+    {
+      "id": 10232,
+      "name": "Strafrechtliche Lücken bei Hetze und bildbasierter digitaler Gewalt schließen (Bund)",
+      "ebene": "bund",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Neue oder klarere Straftatbestände geben Betroffenen eine Handhabe; ob sie Hass im Netz verringern, hängt von der Durchsetzung ab und ist kaum untersucht."
+    },
+    {
+      "id": 10233,
+      "name": "Beratung und Hilfe für Betroffene digitaler Gewalt ausbauen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Beratung und geschulte Fachkräfte senken die Hürden, gegen Anfeindungen vorzugehen, Evaluationen zeigen hohe Zufriedenheit; belastbare Wirkungsbelege zu Meldungen fehlen."
+    },
+    {
+      "id": 10234,
+      "name": "Meldestellen für Hass und digitale Gewalt einrichten und fördern (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Ein zentraler Meldeweg mit Weiterleitung an Strafverfolgung setzt direkt an der geringen Meldequote an; zur Wirkung auf Meldeverhalten und Hassaufkommen gibt es kaum Studien."
+    },
+    {
+      "id": 10235,
+      "name": "Öffentliche Förderung von Meldestellen beenden (Land)",
+      "ebene": "land",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Weniger Meldewege erschweren Betroffenen das Melden; ein Beitrag zum Schutz vor Anfeindungen ist nicht erkennbar."
+    },
+    {
+      "id": 10236,
+      "name": "Spezialisierte Verfolgung von Online-Hass bei Polizei und Staatsanwaltschaft stärken (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Mehr Personal, Technik und Schulung erhöhen die Chance, dass Anzeigen Folgen haben; eine Wirkung auf Meldeverhalten oder Hassaufkommen ist nicht evaluiert."
+    },
+    {
+      "id": 10237,
+      "name": "Strafrecht gegen digitale Gewalt und Deepfakes weiterentwickeln (Land, über Bundesrat)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "evidenz": "offen",
+      "begruendung": "Klarere Tatbestände geben Betroffenen eine Handhabe, die Wirkung ist kaum untersucht; das Strafrecht regelt der Bund, das Land kann nur über den Bundesrat anstoßen."
+    },
+    {
+      "id": 10238,
+      "name": "Strafrechtsschutz bei Ehr- und Hassdelikten zurücknehmen (Land, über Bundesrat)",
+      "ebene": "land",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 1,
+      "evidenz": "offen",
+      "begruendung": "Weniger Strafschutz gibt Betroffenen weniger Handhabe gegen Anfeindungen; Kritiker sehen darin Schutz der Meinungsfreiheit, zum Ziel trägt es nicht bei. Zuständig ist der Bund."
+    },
+    {
+      "id": 10239,
+      "name": "Prävention von Hass und digitaler Gewalt in Schule, Bildung und Kampagnen (Land)",
+      "ebene": "land",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Schulische Programme gegen Cybermobbing senkten Täterschaft in einer Meta-Analyse um 10–15 %; andere Auswertungen sind weniger eindeutig, reine Aufklärungskampagnen sind kaum untersucht.",
+      "beleg_studie_url": "https://www.vrc.crim.cam.ac.uk/node/1282"
+    },
+    {
+      "id": 10240,
+      "name": "Zivilgesellschaftliche und Demokratie-Projekte gegen Hass fördern (Land)",
+      "ebene": "land",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "offen",
+      "begruendung": "Kann Prävention und Gegenrede stärken; der Bezug zu Anfeindungen im Netz ist unbestimmt und die Wirkung solcher Förderung kaum untersucht."
+    }
+  ],
+  "massnahmen": [
+    {
+      "kennung": "M01",
+      "ebene": "land",
+      "beschreibung": "Gesetzliche Regeln gegen ohne Zustimmung erstellte KI-Sexualdarstellungen (Deepfakes)",
+      "zitat": "Zum Schutz vor Deepfakes fordern wir strikte gesetzliche Regelungen gegen die Erstellung und Verbreitung KI-generierter sexualisierter Inhalte, die ohne Zustimmung der Betroffenen erstellt wurden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2501
+      ],
+      "pruefsumme": "0435601b36417b28"
+    },
+    {
+      "kennung": "M02",
+      "ebene": "land",
+      "beschreibung": "Medienbildung als verpflichtenden Bestandteil von Lehrplänen und Ausbildungen stärken",
+      "zitat": "Lehrpläne und Ausbildungen modernisieren, um Medienbildung als verpflichtenden Bestandteil zu stärken.",
+      "ursachen_ids": [
+        2503
+      ],
+      "pruefsumme": "2f341def25c4cc90"
+    },
+    {
+      "kennung": "M03",
+      "ebene": "land",
+      "beschreibung": "Beratungs- und Unterstützungsangebote für Betroffene digitaler Gewalt ausbauen und stärken",
+      "zitat": "Wir wollen: […] Beratungs- und Unterstützungsangebote für Betroffene digitaler Gewalt ausbauen und stärken.",
+      "ursachen_ids": [
+        2501
+      ],
+      "pruefsumme": "d69dc8a6acdd51e4"
+    },
+    {
+      "kennung": "M04",
+      "ebene": "land",
+      "beschreibung": "Plattformen stärker in die Pflicht nehmen, strafbare Inhalte schneller zu erkennen und zu entfernen; Umsetzung des EU Digital Services Act.",
+      "zitat": "Plattformen müssen stärker in die Verantwortung genommen werden, damit strafbare Inhalte schneller erkannt und konsequent entfernt werden. Dazu fordern wir die konsequente Umsetzung und lokale Flankierung des EU Digital Services Act (DSA).",
+      "ursachen_ids": [
+        2501
+      ],
+      "pruefsumme": "8924d67c2f7102f2"
+    },
+    {
+      "kennung": "M05",
+      "ebene": "land",
+      "beschreibung": "Staatsanwaltschaften und Gerichte mit spezialisiertem Personal und interdisziplinären Teams gegen Cyber- und Onlinekriminalität stärken.",
+      "zitat": "Cyber- und Onlinekriminalität nehmen rasant zu und stellen die Justiz vor neue Herausforderungen. Wir wollen Staatsanwaltschaften und Gerichte gezielt stärken, und zwar durch spezialisiertes Personal und interdisziplinäre Teams.",
+      "ursachen_ids": [
+        2501
+      ],
+      "pruefsumme": "a411e5734f297005"
+    },
+    {
+      "kennung": "M06",
+      "ebene": "bund",
+      "beschreibung": "Staatlich geförderte Meldestellen für Meinungsäußerungen abschaffen und nicht mehr mit Steuergeld finanzieren",
+      "zitat": "Wir fordern die Abschaffung von Meldestellen und deren Finanzierung mit Steuergeldern.",
+      "ursachen_ids": [
+        2501
+      ],
+      "pruefsumme": "5c84aa153d856e05"
+    },
+    {
+      "kennung": "M07",
+      "ebene": "land",
+      "beschreibung": "Landes-Demokratiefördergesetz, das Initiativen, Beratungsstellen und Präventionsprojekte gegen Hass und Extremismus dauerhaft absichert.",
+      "zitat": "Ein Landes-Demokratiefördergesetz soll geschaffen werden, um Engagement langfristig zu stärken und demokratische Strukturen verlässlich abzusichern. […] Wir wollen, dass [Land] diesen Schritt geht und damit Initiativen, Beratungsstellen und Präventionsprojekte nachhaltig unterstützt werden.",
+      "ursachen_ids": [
+        2503
+      ],
+      "pruefsumme": "54ac2047e84560a5"
+    },
+    {
+      "kennung": "M08",
+      "ebene": "land",
+      "beschreibung": "Verfasser von Hassnachrichten vor allem im Online-Bereich vor Konsequenzen stellen.",
+      "zitat": "Wir wollen: […] insbesondere im Online-Bereich die Verfasser von Hassnachrichten vor Konsequenzen stellen und solche verachtenden Taten verhindern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2501
+      ],
+      "pruefsumme": "916262582cdbf0f8"
+    },
+    {
+      "kennung": "M09",
+      "ebene": "land",
+      "beschreibung": "Opferarbeit ausbauen, Beratungsangebote stärken und spezialisierte Anlaufstellen für Betroffene schaffen.",
+      "zitat": "Gleichzeitig bauen wir die Opferarbeit aus, stärken niedrigschwellige Beratungsangebote und schaffen spezialisierte Anlaufstellen, um Betroffene besser zu unterstützen und zu schützen.",
+      "ursachen_ids": [
+        2501
+      ],
+      "pruefsumme": "34252e9bbee39c3d"
+    },
+    {
+      "kennung": "M10",
+      "ebene": "bund",
+      "beschreibung": "Begriffe wie „Hass und Hetze“ klar definieren, damit zulässige Meinungen nicht als strafbar oder löschbar gelten",
+      "zitat": "Wir fordern, dass diese Grenzen der Meinungsfreiheit nicht durch die Verwendung unklarer und undefinierter Begriffe aufgeweicht werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2502
+      ],
+      "pruefsumme": "48ef08323158a84a"
+    },
+    {
+      "kennung": "M11",
+      "ebene": "land",
+      "beschreibung": "Technik-Kompetenzzentren für Beratung, Weiterbildung und Forensik bei digitaler Gewalt aufbauen",
+      "zitat": "Die Tatbestände rund um digitale Gewalt sind nach wie vor oft rechtliche Grauzone und kriminalistisches Neuland. […] Wir wollen Technik-Kompetenzzentren aufbauen, die Beratungsstellen, Frauenhäuser und Verbraucher*innen in den Bereichen Beratung, Weiterbildung und Forensik bei Fällen digitaler Gewalt sowie allgemein im Bereich IT-Sicherheit unterstützen.",
+      "ursachen_ids": [
+        2501
+      ],
+      "pruefsumme": "0477c901a0c28c21"
+    },
+    {
+      "kennung": "M12",
+      "ebene": "land",
+      "beschreibung": "Auf Bundesebene transparente Algorithmen einsetzen",
+      "zitat": "Uns auf Bundesebene […] sowie transparente Algorithmen und faire Besteuerung einsetzen.",
+      "ursachen_ids": [
+        2503
+      ],
+      "pruefsumme": "d385502ca243086b"
+    },
+    {
+      "kennung": "M13",
+      "ebene": "land",
+      "beschreibung": "Polizei und Justiz für digitale Gewalt sensibilisieren und fortbilden",
+      "zitat": "Polizei und Justiz stärker für digitale Gewalt sensibilisieren und entsprechend fortbilden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2501
+      ],
+      "pruefsumme": "aa37cfd70a5fdac0"
+    },
+    {
+      "kennung": "M14",
+      "ebene": "bund",
+      "beschreibung": "Polizei soll das Internet nicht nach Beleidigungen durchforsten und Hausdurchsuchungen dafür unterlassen",
+      "zitat": "Die Polizei braucht auch Entlastung von nachrangigen Aufgaben. Hausdurchsuchungen wegen Politikerbeleidigung oder die Durchforstung des Internets nach möglichen Beleidigungen gehören ganz sicher nicht zu den Aufgaben, mit denen unsere Polizei und Ermittlungsbehörden sich beschäftigen sollten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2501,
+        2502
+      ],
+      "pruefsumme": "942e9d35c01353a8"
+    },
+    {
+      "kennung": "M15",
+      "ebene": "land",
+      "beschreibung": "Jugendarbeit stärken, unter anderem durch digitale Gewaltprävention",
+      "zitat": "Jugendarbeit muss als eigenständiger Schwerpunkt stärker berücksichtigt werden, insbesondere durch Empowermentansätze, politische Bildung, digitale Gewaltprävention sowie Diversitätsmanagement in Jugendverbänden und Einrichtungen der offenen Kinder- und Jugendarbeit.",
+      "ursachen_ids": [
+        2503
+      ],
+      "pruefsumme": "6ba672e0e25b2f7d"
+    },
+    {
+      "kennung": "M16",
+      "ebene": "bund",
+      "beschreibung": "Beleidigung von Personen des politischen Lebens aus dem Strafgesetzbuch (§ 188) streichen",
+      "zitat": "Wir fordern, den Tatbestand der Beleidigung einer „im politischen Leben des Volkes stehenden Person“ wieder aus Paragraf 188 des Strafgesetzbuchs zu streichen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2501,
+        2502
+      ],
+      "pruefsumme": "7361deba92525c31"
+    },
+    {
+      "kennung": "M17",
+      "ebene": "land",
+      "beschreibung": "Justizbeschäftigte besser vor Bedrohungen, Einschüchterung und Hasskampagnen schützen",
+      "zitat": "Richter:innen, Staatsanwält:innen und Justizvollzugsbedienstete besser vor Bedrohungen, Einschüchterung, Hasskampagnen und Angriffen schützen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2501
+      ],
+      "pruefsumme": "c11d57714e78cfe7"
+    },
+    {
+      "kennung": "M18",
+      "ebene": "land",
+      "beschreibung": "Pflichtfach Informatik und Medienbildung von Klasse 5 bis 10 bzw. 11 an allen allgemeinbildenden Schulen, mit kritischem Umgang mit Inhalten in sozialen Medien.",
+      "zitat": "Wir setzen uns für eine verbindliche Vermittlung digitaler Kompetenzen im Unterricht ein. Dafür wollen wir nach dem Vorbild [Land] ein Unterrichtsfach „Informatik und Medienbildung“ schaffen, das verpflichtend von Klasse 5 bis 10 bzw. 11 an allen allgemeinbildenden Schulen durchgängig angeboten werden soll.",
+      "ursachen_ids": [
+        2503
+      ],
+      "pruefsumme": "3009e2a0257ed6c2"
+    },
+    {
+      "kennung": "M19",
+      "ebene": "land",
+      "beschreibung": "Hasskriminalität und diskriminierende Straftaten konsequent bekämpfen",
+      "zitat": "Hasskriminalität und diskriminierende Straftaten konsequent bekämpfen und Präventionsarbeit mit Opferschutz verzahnen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2501
+      ],
+      "pruefsumme": "5384c7db0a935a4c"
+    },
+    {
+      "kennung": "M20",
+      "ebene": "land",
+      "beschreibung": "Spezialisierte Ansprechpersonen für Hasskriminalität in jeder Polizeibehörde und jedem Landkreis, damit Opfer von Hass ernst genommen werden.",
+      "zitat": "Hasskriminalität wird durch spezialisierte Ansprechpartner:innen in jeder Polizeibehörde und jedem Landkreis bekämpft – damit Opfer von Hass und Hetze ernst genommen werden.",
+      "ursachen_ids": [
+        2501
+      ],
+      "pruefsumme": "3dd52da7819c3aef"
+    },
+    {
+      "kennung": "M21",
+      "ebene": "land",
+      "beschreibung": "Auf Bundesebene Haftungs- und Sorgfaltspflichten für Tech-Konzerne einsetzen",
+      "zitat": "Uns auf Bundesebene für Haftungs- und Sorgfaltspflichten von Tech-Konzernen […] einsetzen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2501
+      ],
+      "pruefsumme": "f1e712261bb3cd8c"
+    },
+    {
+      "kennung": "M22",
+      "ebene": "land",
+      "beschreibung": "Projekte unterstützen, die sich gegen Hass und digitale Übergriffe engagieren",
+      "zitat": "Projekte unterstützen, die sich gegen Hass, sexualisierte Gewalt und digitale Übergriffe engagieren.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2503
+      ],
+      "pruefsumme": "3cddaa25ea4ecba5"
+    },
+    {
+      "kennung": "M23",
+      "ebene": "land",
+      "beschreibung": "Verpflichtende Weiterbildung für Polizei und Justiz sowie Spezialeinheiten bei LKA und Staatsanwaltschaft für digitale Gewalt",
+      "zitat": "Zusätzlich zum Ausbau von Schutz- und Therapieangeboten für Betroffene fordern wir hier eine Fortbildungs- und Sensibilisierungsoffensive innerhalb der [Land] Sicherheitsbehörden. Diese sollte verpflichtende Weiterbildung für Polizei und Justiz sowie die Bildung von Spezialeinheiten beim LKA und Fachdezernaten bei der Staatsanwaltschaft umfassen.",
+      "ursachen_ids": [
+        2501
+      ],
+      "pruefsumme": "5fdc6e0393fc5fe6"
+    }
+  ]
+}

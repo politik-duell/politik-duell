@@ -1,0 +1,47 @@
+{
+  "partei_id": 14,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Genehmigungsverfahren beschleunigen, überflüssige Umweltgutachten abschaffen, Vorrang für Wohnungsbau.", "ursachen_ids": [3901], "buendel": "Planungs- und Genehmigungsverfahren beschleunigen", "zitat": "Wir beschleunigen Genehmigungsverfahren, schaffen überflüssige Umweltgutachten ab und geben dem Wohnungsbau Vorrang.", "seite": 44 },
+    { "beschreibung": "Ausweisung neuer Bauflächen vereinfachen, auch durch Nachverdichtung und Aufstockung.", "ursachen_ids": [3901], "buendel": "Mehr Bauland ausweisen", "zitat": "Neben der Nachverdichtung und Aufstockung vereinfachen wir auch die Ausweisung neuer Bauflächen.", "seite": 44 },
+    { "beschreibung": "Serielles Bauen durch einheitliche Anforderungen und bundesweite Genehmigungsstandards voranbringen.", "ursachen_ids": [3902], "buendel": "Serielles und Typenbau fördern", "zitat": "Mit einheitlichen Anforderungen und bundesweiten Genehmigungsstandards bringen wir das serielle Bauen voran.", "seite": 44 },
+    { "beschreibung": "Überzogene Bau-Auflagen abbauen und auf Mindeststandards reduzieren.", "ursachen_ids": [3902], "buendel": "Bauvorgaben vereinfachen und vereinheitlichen", "zitat": "Wir werden überzogene Bau-Auflagen abbauen und auf sinnvolle Mindeststandards bei Gebäudeenergie, Brand- und Gesundheitsschutz sowie Statik reduzieren.", "seite": 44 },
+    { "beschreibung": "Heizungsgesetz mit seinen Vorgaben vollständig auslaufen lassen.", "ursachen_ids": [3902], "buendel": "Energievorgaben lockern", "zitat": "Das Heizungsgesetz mit seinen überzogenen Vorgaben muss vollständig auslaufen.", "seite": 45 },
+    { "beschreibung": "Grunderwerbsteuerfreibetrag von 500.000 Euro für die erste selbst genutzte Immobilie, plus 100.000 Euro je Kind.", "ursachen_ids": [3904], "buendel": "Grunderwerbsteuer senken oder Freibetrag einführen", "zitat": "Mit einem Grunderwerbsteuerfreibetrag von 500.000 EUR für die erste selbst genutzte Immobilie von natürlichen Personen erleichtern wir den Zugang zu Eigentum. Für Familien erhöht sich dieser Freibetrag für jedes Kind um 100.000 Euro.", "seite": 45 },
+    { "beschreibung": "Freibeträge der Erbschaft- und Schenkungsteuer automatisch an die Inflation anpassen.", "ursachen_ids": [3903], "buendel": "Vermögensübertragung in der Familie erleichtern", "zitat": "Die Existenz von Unternehmen darf nicht durch die Erbschaft- und Schenkungsteuer gefährdet sein. Wir fordern, dass die Freibeträge automatisch um die Inflationsrate erhöht werden.", "seite": 15 },
+    { "beschreibung": "Mittel aus der betrieblichen Altersvorsorge für den Eigentumserwerb nutzbar machen.", "ursachen_ids": [3903], "zitat": "Nach Schweizer Vorbild sollen Mittel aus der betrieblichen Altersvorsorge für den Eigentumserwerb genutzt werden können.", "seite": 45 },
+    { "beschreibung": "Erwerbsnebenkosten bei fremdgenutzten Immobilien sofort steuerlich abzugsfähig machen.", "ursachen_ids": [], "ursachen_offen": [3904], "zitat": "Bei fremdgenutzten Immobilien sollen die Erwerbsnebenkosten steuerlich sofort abzugsfähig sein.", "seite": 16 },
+    { "beschreibung": "Kreditvergabe für altersgerechte Sanierungen und Umbauten unterstützen.", "ursachen_ids": [], "ursachen_offen": [3905], "zitat": "Die Kreditvergabe für altersgerechte Sanierungen und Umbauten unterstützen wir.", "seite": 31 }
+  ],
+  "neue_buendel": [
+    { "ursache": 3903, "name": "Betriebliche Altersvorsorge für Eigentumserwerb nutzen", "seite": 45 },
+    { "ursache": 3904, "name": "Steuerlicher Abzug von Erwerbsnebenkosten", "seite": 16 },
+    { "ursache": 3905, "name": "Kreditvergabe für altersgerechte Sanierung", "seite": 31 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3904, "seiten": [16, 45], "grund": "Kapitel Steuern (S. 14–16) und Eigentümernation (S. 44–45) gelesen; keine Zusage zu Notar-, Grundbuch- oder Maklerkosten; Grunderwerbsteuer nur als Freibetrag erfasst." },
+    { "ursache": 3905, "seiten": [16, 31, 44, 45], "grund": "Zinsen, Tilgung, Zinsbindung und Förderdarlehen nicht genannt; nur die Kreditvergabe für Sanierungen (S. 31) erfasst." }
+  ],
+  "eigene_synonyme": []
+}
+
+Protokoll
+
+Gelesen: S. 1–6 (Inhaltsverzeichnis, Präambel); Kapitel III b „Steuersystem“ (S. 13–16, Erbschaft- und Schenkungsteuer, Steuerrecht Finanzierung von Wohneigentum); Kapitel IV e (S. 31, Seniorinnen und Senioren); Kapitel VI b „Infrastruktur und Mobilität“ (S. 40–43, Wohnungsbau-Bezug gesichtet); Kapitel VI c „Mehr Bauen und besseres Wohnen“ (S. 43–45); Kapitel VI d (S. 45, Heizen, Klimadividende, gelesen).
+
+Richtungen ohne Maßnahme: 3901 „Flächenschutz, weniger Neuausweisung“ (gezielt gesucht: Flächenschutz, Flächenverbrauch, Flächensparen; nichts gefunden). 3903 „Eigenkapital durch Förderdarlehen ersetzen“, „Sparen für Eigenkapital fördern“ (Bausparen, vermögenswirksame Leistungen; nichts gefunden), „Eigenkapitalanforderung der Banken“ (nichts gefunden), „Erbschaftsteuer erhöhen (Gegenrichtung)“ (Gegenrichtung nicht genannt; die Vermögensteuer wird abgelehnt). 3904 „Notar- und Grundbuchkosten senken“, „Maklerprovision begrenzen oder aufteilen“, „Einheitlichen Grunderwerbsteuersatz festlegen“ (nichts gefunden), „Länder-Einnahmen aus der Steuer sichern (Gegenrichtung)“ (nicht genannt). 3905 „Zinsen senken über den Leitzins“, „Zinsverbilligung und Förderdarlehen“, „Tilgung und Zinsbindung anpassen“ (gezielt gesucht: Zins, Tilgung, Zinsbindung, Kredit, Leitzins, Bauzins; nichts gefunden).
+
+Nicht erfasst:
+- S. 42–44: Steuerliche Abschreibungen im Wohnungsbau und Sonderabschreibung (Mietwohnungsbau, Zuordnung zu T2 nach R2 von 3902, nicht zu diesem Thema).
+- S. 44–45: Mieterrechte, Nebenkostenrecht, Mietpreisbremse, Kappungsgrenzen (Miete, kein Eigentumserwerb).
+- S. 44: Digitale Planung und BIM, Smart-City-Verkehr, Parkplatzerfassung (Digitalisierung, kein Bezug zu den Ursachen genannt).
+- S. 45: Klimadividende, CO2-Zertifikatehandel, Energiebesteuerung (Energiepreise, kein Baukostenbezug); Fernwärmeanschlusszwang abgelehnt (Position).
+- S. 45: Holzheizung, Auflagen für Kamine und Öfen reduzieren (gleichartig mit „Energievorgaben lockern“, S. 45; im Protokoll genannt, nicht gesondert erfasst).
+- S. 44: „Mit einem sofortigen Baukostenmoratorium stoppen wir staatliche Kostentreiber“ (gleicher Hebel wie „Bauvorgaben vereinfachen“, S. 44; dort ist die konkretere Zusage zu Mindeststandards erfasst).
+- S. 44: „Gebäudetyp E … Bund-Länder-Offensive“ (gleicher Hebel wie „Bauvorgaben vereinfachen“, S. 44).
+- S. 44: „Genehmigungsfiktion, wenn Behörde nicht fristgerecht reagiert“ (gleicher Hebel wie „Planungs- und Genehmigungsverfahren beschleunigen“, S. 44).
+- S. 45: Grundstückspreise, Spekulation auf Grundstücke (nichts gefunden).
+- S. 31: „Kreditvergabe für altersgerechte Sanierungen“ erfasst als Grenzfall.
+
+Seiten ohne Text: S. 1 und 2 (Titel, Vorbemerkung), ohne Rolle.
+Stand im PDF: wie im Auftrag.

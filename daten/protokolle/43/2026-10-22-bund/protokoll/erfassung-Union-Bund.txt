@@ -1,0 +1,39 @@
+{
+  "partei_id": 11,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Verwaltung mit KI effizient und vollständig digitalisiert aufbauen, auch für Bescheide bei eindeutigen Sachverhalten", "ursachen_ids": [], "ursachen_offen": [4301], "buendel": "KI-Einsatz vorantreiben, neue KI-Berufe schaffen", "zitat": "Mit dem Einsatz von KI bauen wir in Deutschland eine effiziente, vollständig digitalisierte Verwaltung für Bürger und Unternehmen auf", "seite": 29 },
+    { "beschreibung": "EU-KI-Verordnung innovationsoffen umsetzen, keine Übererfüllung, KI-Forschung fördern und beschleunigen", "ursachen_ids": [], "ursachen_offen": [4303], "buendel": "Gegenrichtung: Forschung und offene Modelle erlauben", "zitat": "Die Verordnung der EU („AI Act“) muss verantwortungsvoll, bürokratiearm und innovationsoffen umgesetzt und weiterentwickelt werden. Eine Übererfüllung lehnen wir strikt ab. Wir fördern und beschleunigen KI-Forschung, unterstützen die Entwicklung von Anwendungen und ermöglichen Freiräume.", "seite": 29 },
+    { "beschreibung": "Sicherheitsbehörden digitale Befugnisse geben, einschließlich automatischer Datenanalyse mittels KI", "ursachen_ids": [], "ursachen_offen": [4303], "zitat": "Wir schaffen digitale Befugnisse wie Quellen-Telekommunikationsüberwachung, Online-Durchsuchung und automatische Datenanalyse mittels KI für alle Bundessicherheitsbehörden.", "seite": 40 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 4302, "seiten": [29, 32, 65, 66, 67], "grund": "Weiterbildung, Berufsbildung und Arbeitsmarkt ohne KI-Bezug (S. 65, 67: Digitalisierung der Weiterbildung, Teil- und Weiterqualifizierung, Allianz); KI nur als Einsatz in Verwaltung und Ämtern (S. 29, 32), kein Zugang zu KI-Kompetenz." }
+  ],
+  "neue_buendel": [
+    { "ursache": 4303, "name": "KI-Einsatz der Sicherheitsbehörden", "seite": 40 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "einsatz von ki", "ursache": 4301, "richtung": "KI-Einsatz vorantreiben, neue KI-Berufe schaffen" },
+    { "begriff": "ki-forschung", "ursache": 4303, "richtung": "Gegenrichtung: Forschung und offene Modelle erlauben" }
+  ]
+}
+
+Protokoll (Thema 43 „Künstliche Intelligenz“, Union Bund)
+
+Gelesen: Inhaltsverzeichnis (S. 2); Kapitel „Potenziale der Digitalisierung und KI“ (S. 29–31, Freiräume für KI, KI im Mittelstand, KI in der Verwaltung, Datennutzung); Sicherheit und Recht (S. 40–41, Befugnisse, Sicherheit im Netz); Arbeitsmarkt (S. 31–32); Bildung und Weiterbildung (S. 65–67); Kultur (S. 58). Keine Fundstellen im Auftrag.
+
+Gleichartige Stellen, nicht zusätzlich erfasst (je Bündel nur eine Maßnahme):
+- KI-Einsatz vorantreiben: „KI im Mittelstand“ mit Transferförderung (S. 29); KI in den Ämtern „Einsatz von KI stärken“ (S. 32, Arbeitsverwaltung); Recht und Datennutzung: „souveräne KI- und Cloudanwendungen“ (S. 29).
+- Behörden-KI: KI-Technologie für Finanzbehörden gegen Steuerbetrug (S. 18), gleichartig zu den Sicherheitsbehörden.
+- Gegenrichtung: Die Stellen zu KI-Forschung und Freiräumen sind bereits durch die gewählte Maßnahme abgedeckt.
+
+Nicht erfasst:
+- S. 31–32: Jobcenter „intensive und qualifizierende Unterstützung“, Arbeitslosenversicherung „zukunftsfest“ machen (allgemeine Arbeitsmarktpolitik, kein KI-Bezug, R1).
+- S. 29: „Die Risiken von KI müssen wir beherrschen“ (Lage/Ziel, keine Zusage).
+- S. 41: Digital Services Act mit Schwerpunkt Desinformation, Jugend- und Medienschutz (Plattformregeln ohne KI-Bezug, R3).
+- S. 58: „Neue Technologien wie Künstliche Intelligenz werden auch in der Kultur ein Wirtschaftsfaktor sein. Wir setzen uns dafür ein, dass die Potenziale genutzt werden.“ (Prüf- und Ziel-Formulierung, keine konkrete Zusage zu 4301 bis 4303).
+- S. 65–67: Medienbildung und Informatik in der Schule, Digitalpakt, MINT (Schule, R2 ausgeschlossen); Digitalisierung der Weiterbildung und Anpassung der Ausbildungsordnungen (kein KI-Bezug, R2).
+
+Richtungen ohne Maßnahme: 4302 (Rechtsanspruch KI-Weiterbildung, Förderung KI-Kompetenz, Schulungspflicht, Eigenanteil) – kein Fund. 4303 Strafbarkeit von Deepfakes, Löschpflicht und Plattformhaftung für KI-Fälschungen, Verbot von Stimmklonen – kein Fund (Stichworte Deepfake, Stimm, Fälschung, Täuschung ohne Treffer).
+
+Stand: PDF nennt keinen anderen Stand als der Auftrag. Seiten ohne Text: 1 und 82, ohne Bedeutung.

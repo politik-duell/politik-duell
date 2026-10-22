@@ -1,0 +1,89 @@
+{
+  "partei_id": 12,
+  "land": "BE",
+  "massnahmen": [
+    {
+      "beschreibung": "Verdachtsunabhängige Kontrollen räumlich und zeitlich auf das notwendige Minimum begrenzen; Waffen- und Messerverbotszonen als Ausnahme",
+      "ursachen_ids": [3401],
+      "buendel": "Kontrollen begrenzen und nachvollziehbar machen",
+      "zitat": "Verdachtsunabhängige Kontrollen wollen wir räumlich und in ihrem Anwendungsbereich auf das notwendige Minimum beschränken. Waffen- und Messerverbotszonen sollen die Ausnahme bleiben.",
+      "seite": 30
+    },
+    {
+      "beschreibung": "Interkulturelle Kompetenz der Polizei ausbauen und Sensibilisierung in Aus- und Fortbildung stärken",
+      "ursachen_ids": [3402],
+      "buendel": "Kommunikation und Fortbildung der Polizei",
+      "zitat": "Wir stehen für eine Polizei, die respektvoll handelt und die Vielfalt dieser Stadt widerspiegelt. Ihre interkulturelle Kompetenz bauen wir deshalb weiter aus und stärken die Sensibilisierung für Rassismus, Queerfeindlichkeit und geschlechtsspezifische Gewalt in der Aus- und Fortbildung.",
+      "seite": 31
+    },
+    {
+      "beschreibung": "Digitales Community Policing starten, das besonders junge Menschen online erreicht",
+      "ursachen_ids": [3402],
+      "neue_buendel": "Community Policing",
+      "zitat": "Ergänzend starten wir ein Programm des digitalen „Community Policing“, das besonders junge Menschen auch online erreicht.",
+      "seite": 31
+    },
+    {
+      "beschreibung": "Routinemäßige Supervision für Polizeibeschäftigte, um Einsatzgeschehen zu reflektieren, ausbauen",
+      "ursachen_ids": [],
+      "ursachen_offen": [3402],
+      "buendel": "Handlungsfähigkeit und Rückhalt der Polizei",
+      "zitat": "Routinemäßige Supervision, bei der Beamt*innen das Einsatzgeschehen reflektieren können, bauen wir aus.",
+      "seite": 31
+    },
+    {
+      "beschreibung": "Ombudsstelle des Landesantidiskriminierungsgesetzes mit Initiativ- und Befragungsrechten und Berichtspflicht ausstatten",
+      "ursachen_ids": [],
+      "ursachen_offen": [3403],
+      "buendel": "Unabhängige Beschwerde- und Kontrollstellen",
+      "zitat": "Die Berliner Verwaltung muss hier vorangehen. Die Ombudsstelle des Landesantidiskriminierungsgesetzes (LADG) statten wir deshalb mit mehr Rechten aus. Dazu zählen Initiativ- und Befragungsrechte sowie eine Berichtspflicht.",
+      "seite": 48
+    },
+    {
+      "beschreibung": "Einheit für interne Ermittlungen bei strafrechtlichen Vorwürfen gegen Beschäftigte des öffentlichen Dienstes anstreben",
+      "ursachen_ids": [],
+      "ursachen_offen": [3403],
+      "neue_buendel": "Interne Ermittlungseinheit",
+      "zitat": "Zur Aufarbeitung strafrechtlicher Vorwürfe gegen Beschäftigte des öffentlichen Dienstes streben wir eine Einheit „Interne Ermittlungen“ bei der Senatsverwaltung für Inneres an.",
+      "seite": 31
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 3402, "name": "Community Policing", "seite": 31 },
+    { "ursache": 3403, "name": "Interne Ermittlungseinheit", "seite": 31 }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 3401,
+      "seiten": [30, 31],
+      "grund": "Racial Profiling: Bekenntnis zum bestehenden Verbot (diskriminierende Auswahl gehört nach Leitfaden zu Diskriminierung im Alltag). Stärkung des Vertrauens: Ziel."
+    }
+  ]
+}
+
+Protokoll
+
+Gelesen: Inhaltsverzeichnis (S. 3–6); Kapitel „Sicherheit für ein gutes Leben“ (S. 28–32, vollständig); Kapitel „Gute Gesundheitsversorgung“ (S. 33–35) auf Polizeibezug geprüft (keiner); Kapitel „Vielfältiges Berlin, Antidiskriminierung“ (S. 48) gelesen; Fundstelle S. 7 (Sanierung von Wachen) ist keine Maßnahme zu 340x.
+
+Gleiche Stellen, nicht doppelt erfasst:
+- S. 30 „Deshalb unterziehen wir die Einstufung kriminalitätsbelasteter Orte einer regelmäßigen parlamentarischen Kontrolle.“ (gleicher Hebel wie Maßnahme 1, Kontrollorte; Satz beginnt auf S. 30, Fortsetzung S. 31).
+- S. 31 „Die Polizei soll Strafverfolgung und Gefahrenabwehr mit „Community Policing“ verbinden …“ (gleicher Hebel wie digitales Community Policing; Soll-Formulierung, erfasst ist die konkrete Zusage).
+- S. 30 „Auf Bundesebene setzen wir uns … dafür ein, die Rechte des unabhängigen Polizei- und Bürgerbeauftragten im Strafprozess zu stärken.“ (Bund-Ebene, Bündel „Unabhängige Beschwerde- und Kontrollstellen“ bereits mit der LADG-Ombudsstelle belegt; hier als weitere gleichartige Stelle im Protokoll.)
+
+Nicht erfasst:
+- S. 30 „Wir halten deshalb an der Berliner Deeskalationsstrategie fest“ – Bekenntnis zu Bestehendem (3402).
+- S. 30 Bekenntnis zum Verbot von Racial Profiling; Ziel „Vertrauen aller Communities“ (3401).
+- S. 30 Zeugnisverweigerungsrecht für Sozialarbeitende – nicht Polizeikontakt.
+- S. 31 Disziplinarrecht (Extremist*innen, Chatgruppen) – nicht Verfahren wegen Polizeigewalt (3403).
+- S. 31 Fuß- und Fahrradstreifen, Sicherheitspersonal in U- und S-Bahnhöfen – Präsenz, nach Leitfaden Sicherheit (R2).
+- S. 31 Ausstattung, Infrastruktur, „stärken Polizei und Feuerwehr politisch“ – Ausstattung nach R2 Sicherheit; Rest allgemein.
+- S. 31 „Wir wollen, dass jedes Kind … Polizei- und Feuerwehrkräfte … erlebt“ – Ziel.
+- S. 31 „Um Menschen in psychischen Krisen besser zu helfen, vernetzen wir Polizei … und sozialpsychiatrische Dienste“ – Hilfe für Betroffene, keine Zusage zum Auftreten bei Polizeikontakten (3402); Grenzfall, nicht aufgenommen.
+- S. 31 Palantir/KI-Auswertung – Datenauswertung, nicht Kontakt mit jungen Menschen.
+- S. 32 Verkürzung der Verfahrensdauern (Justiz) – nicht Einstellung mangels Tatverdachts (3403).
+
+Bündel ohne Maßnahme:
+- „Gezielte Kontrollen für Sicherheit ermöglichen“ (3401): im Text keine Erweiterung von Kontrollbefugnissen, Schleierfahndung oder Kontrollen an Kriminalitätsschwerpunkten gefunden.
+- „Dokumentation und faire Verfahren“ (3403): keine Zusage zu Kennzeichnungspflicht, Bodycams oder Dokumentation von Einsätzen gefunden.
+
+Seiten ohne Text (1, 2, 57, 65, 66): Titel- oder Trennseiten bzw. Kapitel ohne Polizeibezug; keine Rolle für das Thema.

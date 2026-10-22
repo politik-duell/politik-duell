@@ -1,0 +1,116 @@
+{
+  "partei_id": 13,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Förderung von Kauf und Neubau selbst genutzten Wohneigentums über zinsgünstige staatliche Kredite, vor allem für junge Familien",
+      "ursachen_ids": [3905],
+      "buendel": "Zinsverbilligung und Förderdarlehen",
+      "zitat": "Wir wollen den Kauf und den Neubau des ersten, selbst genutzten Wohneigentums sowie den Umbau leer stehender Wohnungen und Ausbauten zu günstigem Wohnraum stärker und sozial gerecht fördern. Damit unterstützen wir vor allem junge Familien durch zinsgünstige staatliche Kredite.",
+      "seite": 70
+    },
+    {
+      "beschreibung": "Wohnungsbauprämie, deren Höhe mit der Inflation steigt, für den Zugang zu Wohneigentum",
+      "ursachen_ids": [3903],
+      "buendel": "Sparen für Eigenkapital fördern",
+      "zitat": "Eine Wohnungsbauprämie, deren Höhe mit der Inflation steigt und die an den Klimaschutzzielen ausgerichtet ist, erleichtert auch Menschen mit geringem und mittlerem Einkommen den Zugang zu Wohneigentum.",
+      "seite": 70
+    },
+    {
+      "beschreibung": "Entlastung bei den Nebenkosten des Kaufs wie Makler- und Notargebühren",
+      "ursachen_ids": [3904],
+      "buendel": "Notar- und Grundbuchkosten senken",
+      "zitat": "Wir entlasten bei den Nebenkosten wie den Makler- und Notargebühren.",
+      "seite": 70
+    },
+    {
+      "beschreibung": "Flächenzertifikatehandel zur Begrenzung des Flächenverbrauchs, Ziel 30 Hektar pro Tag bis 2030",
+      "ursachen_ids": [],
+      "ursachen_offen": [3901],
+      "buendel": "Flächenschutz, weniger Neuausweisung",
+      "zitat": "Deshalb setzen wir auf neue Instrumente wie den Flächenzertifikatehandel oder ein Baulandabgabemodell. So setzen wir Anreize, den Flächenverbrauch bis 2030 auf 30 Hektar pro Tag und langfristig auf Nettonull zu senken.",
+      "seite": 73
+    },
+    {
+      "beschreibung": "Bodenpolitik am Gemeinwohl ausrichten, Bundesbodenfonds einrichten, kommunale Bodenfonds unterstützen",
+      "ursachen_ids": [],
+      "ursachen_offen": [3901],
+      "zitat": "Wohnraum und Bauflächen dürfen keine Spekulationsobjekte sein. Wir setzen uns für eine Bodenpolitik ein, die sich auch am Gemeinwohl orientiert, und passen das Baurecht entsprechend an. Wir richten einen Bundesbodenfonds ein und unterstützen den Aufbau von kommunalen Bodenfonds.",
+      "seite": 71
+    },
+    {
+      "beschreibung": "Städtebauförderung aufstocken und Innenentwicklung vereinfachen",
+      "ursachen_ids": [],
+      "ursachen_offen": [3901],
+      "zitat": "Hierfür wollen wir die Mittel für die Städtebauförderung aufstocken und die Anwendung der Innenentwicklungsmaßnahmen vereinfachen.",
+      "seite": 73
+    },
+    {
+      "beschreibung": "Baurecht vereinfachen und Verfahren bundesweit angleichen, auch zur Digitalisierung",
+      "ursachen_ids": [],
+      "ursachen_offen": [3902],
+      "buendel": "Bauvorgaben vereinfachen und vereinheitlichen",
+      "zitat": "Dazu werden wir das Baurecht vereinfachen, Verfahren digitalisieren und bundesweit angleichen – davon profitieren alle Formen des Bauens.",
+      "seite": 71
+    },
+    {
+      "beschreibung": "Serielles Bauen von Wohngebäuden stärken",
+      "ursachen_ids": [],
+      "ursachen_offen": [3902],
+      "buendel": "Serielles und Typenbau fördern",
+      "zitat": "Auch seriell errichtete Wohngebäude leisten bei nachhaltigen Bauweisen einen wirkungsvollen Beitrag, um Wohnraum schnell und preiswert zu schaffen. Diese Ansätze wollen wir stärken.",
+      "seite": 71
+    },
+    {
+      "beschreibung": "Steuerschlupflöcher bei Immobiliengeschäften wie Share Deals schließen",
+      "ursachen_ids": [],
+      "ursachen_offen": [3904],
+      "zitat": "Steuerschlupflöcher bei Immobiliengeschäften, etwa über sogenannte Share Deals, sind zu schließen.",
+      "seite": 71
+    },
+    {
+      "beschreibung": "Erbschaftsteuer reformieren, Ausnahmen für sehr große Erbschaften streichen, selbst bewohntes Eigentum bleibt befreit",
+      "ursachen_ids": [],
+      "ursachen_offen": [3903],
+      "buendel": "Erbschaftsteuer erhöhen (Gegenrichtung)",
+      "zitat": "Deswegen fokussieren wir uns auf folgende Maßnahmen: eine Reform der Erbschaftssteuer hin zu einem Modell mit personenbezogenem Lebensfreibetrag, weitgehender Streichung bestehender Ausnahmen für außerordentlich große Erbschaften (selbst bewohntes Eigentum bleibt befreit) und großzügigen Stundungsregelungen.",
+      "seite": 73
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 3901, "name": "Bodenfonds und Beteiligung an Bodenwertsteigerungen", "seite": 71 },
+    { "ursache": 3901, "name": "Innenentwicklung und Städtebauförderung", "seite": 73 },
+    { "ursache": 3904, "name": "Share Deals bei Immobilienkäufen schließen", "seite": 71 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3902, "seiten": [44, 71, 72, 124], "grund": "Heizungsförderung und Gebäudeenergiegesetz (S. 44) betreffen den Einbau in Bestandsgebäude, keine Neubaukosten; Schallschutzförderung (S. 124) betrifft Lärmschutz in Innenstädten, nicht Baukosten; Baukostenzuschüsse im sozialen Mietwohnungsbau (S. 72) gehören zu T2; Sanierungsförderung (S. 72) betrifft den Bestand." }
+  ],
+  "hebel_nicht_gefunden": []
+}
+
+Protokoll (Thema 39, Grüne Bund, Regierungsprogramm 2025, Stand 2025-01-26):
+
+Gelesen: Inhaltsverzeichnis (S. 4–7); Kap. 2 A „Starke Teilhabe: gute Arbeit, bezahlbares Wohnen, faire Löhne“ vollständig (S. 67–74: Bezahlbares Wohnen, Bauen und Sanieren, Gerechtes Steuersystem); Fundstellen S. 70, 73, 75 gelesen (S. 75: nur Auszug, „Vermögenswirksame Leistungen“ und Sparerpauschbetrag); S. 44, 51, 124 nur über den Auszug geprüft (S. 44: GEG und Heizungsförderung; S. 51: Naturschutz „Schub“; S. 124: Schallschutz).
+
+Gleichartige Stellen (im Protokoll, nicht erfasst):
+- S. 73: „ein Baulandabgabemodell“ steht im selben Satz wie der Flächenzertifikatehandel; eigener Hebel (Abgabe), aber dieselbe Stelle, daher nur einmal erfasst. Koordination: Hebel „Baulandabgabe einführen“ prüfen.
+- S. 51: „wirksame Maßnahmen gegen weiteren «Flächenverbrauch»“ (Naturschutz) – gleichartig zu S. 73 (Bündel „Flächenschutz, weniger Neuausweisung“; die konkretere Stelle mit Zahl und Frist ist erfasst).
+- S. 71: „Bei Bodenwertsteigerungen durch Planungsrechtänderungen beteiligen wir die öffentliche Hand stärker.“ – gleicher Hebel wie der Bundesbodenfonds (neue_buendel „Bodenfonds und Beteiligung an Bodenwertsteigerungen“).
+- S. 71: „Übertriebene Anforderungen an bauliche Standards werden wir auf ein sinnvolles Maß zurückführen.“ – gleichartig zum Bündel „Bauvorgaben vereinfachen und vereinheitlichen“ (dort die Stelle mit „bundesweit angleichen“ erfasst).
+- S. 73–74: „eine gerechte Immobilienbesteuerung ohne Schlupflöcher“ und „Schließen weiterer offenkundiger Gerechtigkeitslücken … vor allem bei der Immobilienbesteuerung wie Share Deals“ – gleichartig zu „Share Deals“ (S. 71, erfasst).
+- S. 75: „Erweiterung der Förderung von vermögenswirksamen Leistungen … Zuschuss zum Fondssparen … Sparerpauschbetrag spürbar anheben“ – gleicher Hebel (Sparförderung) wie die Wohnungsbauprämie (S. 70); die wohnungsbezogene Stelle ist erfasst.
+
+Nicht erfasst (gelesen, nicht aufgenommen):
+- S. 70: Mietrecht, Mietpreisbremse, Kappungsgrenzen, Wohnungslosigkeit, Umwandlungsbremse (keine Ursache dieses Themas; Miete gehört zu T2).
+- S. 70–71: „Wohnkonzerne … Ausschüttung von Renditen begrenzen“ (Mietwohnungsmarkt, T2).
+- S. 71: „Der beste Weg liegt darin, vorhandenes Potenzial zu nutzen: bestehende Gebäude aufstocken, … Dachböden ausbauen …“ – Strategiebeschreibung ohne eigene Zusage.
+- S. 71: „Der Umbau bestehender Gebäude muss attraktiver werden …“ und Kreislaufwirtschaft, digitaler Gebäudepass (S. 72) – Bestand bzw. Material, keine Neubaukosten.
+- S. 74: Arbeitnehmerpauschbetrag, Steuergutschriften, Grundfreibetrag, Solidaritätszuschlag, Mehrwertsteuer – allgemeine Entlastung ohne Bezug zu Wohneigentum.
+- S. 73–74: „Gewerbesteuerdumping“, Grundstücksunternehmen im Gewerbesteuerrecht – keine Ursache dieses Themas.
+- S. 72: „Gebäude … als taxonomiekonform anerkennen“ – Finanzierung klimafreundlicher Sanierungen (Bestand).
+
+Richtungen ohne Maßnahme: 3903 Eigenkapitalanforderung der Banken, Förderdarlehen als Eigenkapitalersatz, Vermögensübertragung in der Familie (Schenkung, Freibetrag): keine Zusage gefunden. 3904 Einheitlicher Grunderwerbsteuersatz, Grunderwerbsteuer senken oder Freibetrag, Maklerprovision begrenzen (Begriff „Grunderwerbsteuer“ im Programm nicht vorhanden; Makler nur in der Nebenkosten-Zusage erfasst). 3905 Zinsen über den Leitzins, Tilgung und Zinsbindung: keine Zusage gefunden.
+
+Seiten ohne Text (1, 2, 3, 14, 63, 64, 101, 102, 159, 160) spielten keine Rolle.
+
+Stand im PDF: wie im Auftrag.

@@ -1,0 +1,28 @@
+{
+  "partei_id": 11,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Warninfrastruktur ausbauen, bis die Lücken geschlossen sind; Sonderprogramm für die zivile Verteidigung.", "ursachen_ids": [4102], "buendel": "Sirenen ausbauen und an das Warnsystem anbinden", "zitat": "Wir legen ein Sonderprogramm für die zivile Verteidigung auf, bauen die Warninfrastruktur weiter aus, bis die Lücken geschlossen sind […]", "seite": 42 },
+    { "beschreibung": "Wissen über das Verhalten bei Hochwasser, Stromausfällen und anderen Krisen stärken.", "ursachen_ids": [4103], "buendel": "Vorräte und Information fördern", "zitat": "Auch das Wissen um das Verhalten bei Hochwasser, Stromausfällen und anderen Krisen stärken wir.", "seite": 42 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 4101, "seiten": [42], "grund": "Gelesen: kompletter Abschnitt „Zeitenwende beim Bevölkerungsschutz und zivile Verteidigung“ (S. 42). Keine Aussage zu Schutzräumen, Bunkern, Schutzorten in Gebäuden, Kellern oder Tiefgaragen. Pakt für den Bevölkerungsschutz (Unterbringung, Fahrzeuge, IT) betrifft Einheiten, nicht Schutzorte für die Bevölkerung. Die nationale Strategie zum Schutz der Kulturgüter (S. 42) ist kein Schutzort." },
+    { "ursache": 4103, "seiten": [42], "grund": "Appell „Jedermann ist gefordert, sich im Rahmen der Selbsthilfe aktiv zu beteiligen …“ ist keine Handlung der Partei. „Zivile Reserve“ (Konzept, Spontanhelfer) betrifft Helfende, nicht Vorräte. Keine staatliche Notreserve an Wasser, Lebensmitteln oder Medikamenten." }
+  ]
+}
+
+Protokoll
+
+Gelesen: Inhaltsverzeichnis (S. 2); Kapitel „Sicherheit im digitalen Raum“ und „Zeitenwende beim Bevölkerungsschutz und zivile Verteidigung“ (S. 41–42); Abschnitt „Sicherheit für unsere Kulturgüter“ (S. 42); Stichwortsuche im ganzen Text nach Schutzraum, Bunker, Keller, Tiefgarage, Zufluchtsort, Sirene, MoWaS, Cell Broadcast, Warn-App, Notvorrat, Notreserve ohne weitere Treffer.
+
+Gleichartige Stellen (nicht separat erfasst):
+- S. 42 „Pakt für den Bevölkerungsschutz mit den Ländern … Investitionen in die Ausstattung des Zivil- und Katastrophenschutzes“: öffentliche Investition in Einheiten, nicht Schutzorte oder Warnweg; nicht erfasst (4101 ohne Bezug).
+- S. 42 Warnsystem: „Warn-Apps“ und „Cell Broadcast“ kommen im Text nicht vor.
+
+Nicht erfasst:
+- S. 42 „Schutz unserer Kulturgüter“: nationale Strategie mit Bestandsschutz, Notfallplänen und Sicherung des Betriebsablaufs für die Grundversorgung. Gegenstand sind Kulturgüter, keine Schutzorte für Menschen und keine Vorräte (siehe JSON 4101).
+- S. 42 „Zivile Reserve“ und Spontanhelfer: Konzept, betrifft Helfende (siehe JSON 4103).
+
+Richtungen ohne Maßnahme: 4101 (Schutzräume reaktivieren oder neu bauen, Schutzorte im Bestand, Zivilschutzbindung), siehe JSON. Bündel „Eigenverantwortung betonen“ (4103) und „Staatliche Notreserven“ (4103): keine Zusage gefunden.
+Seiten ohne Text: S. 1, S. 82 (Titel und Rückseite), ohne Bedeutung. Keine Bildseiten im Abschnitt Bevölkerungsschutz.
+Stand im PDF: Titelseite „Politikwechsel für Deutschland – Wahlprogramm von CDU und CSU“, kein abweichender Stand vermerkt.

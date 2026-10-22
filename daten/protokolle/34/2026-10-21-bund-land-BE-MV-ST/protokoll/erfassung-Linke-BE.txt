@@ -1,0 +1,61 @@
+{
+  "partei_id": 16,
+  "land": "BE",
+  "massnahmen": [
+    { "beschreibung": "Verdachtsunabhängige Polizeikontrollen abschaffen", "ursachen_ids": [3401], "buendel": "Kontrollen begrenzen und nachvollziehbar machen", "zitat": "«Verdachtsunabhängige Kontrollen» der Polizei treffen überproportional häufig junge Menschen mit vermuteter Migrationsgeschichte – diese diskriminierende Praxis werden wir abschaffen.", "seite": 177 },
+    { "beschreibung": "Polizei muss bei Identitätsfeststellung und Durchsuchung schriftlich Grund und Rechtsgrundlage nennen", "ursachen_ids": [3401], "zitat": "Die Polizei ist zu verpflichten, bei jeder Identitätsfeststellung und Durchsuchung schriftlich den Grund und die Rechtsgrundlage anzugeben (Kontrollquittungen).", "seite": 290 },
+    { "beschreibung": "Fortbildung der Polizei im Umgang mit Menschen in psychischen Ausnahmesituationen", "ursachen_ids": [3402], "buendel": "Kommunikation und Fortbildung der Polizei", "zitat": "Wir wollen stattdessen Fähigkeiten im Umgang mit Menschen in psychischen Ausnahmesituationen stärken. Das betrifft Aus- und Fortbildung der Polizeibeamt*innen.", "seite": 291 },
+    { "beschreibung": "Nicht-polizeiliche multiprofessionelle Krisenteams aufbauen, die nicht zur Polizei gehören", "ursachen_ids": [3402], "zitat": "Wir wollen […] vor allem aber die Stärkung nicht-polizeilicher Ressourcen in der Krisenintervention u. a. durch den Aufbau multiprofessioneller Interventionsteams, die nicht Teil der Polizei und an die Notrufzentralen angebunden sind.", "seite": 291 },
+    { "beschreibung": "Deeskalationskonzepte bei Versammlungen konsequent umsetzen", "ursachen_ids": [3402], "zitat": "Gewalt gegen öffentlich Beschäftigte ist unakzeptabel. Deeskalationskonzepte bei Versammlungen schützen auch die Beschäftigten und sind konsequent zu verfolgen.", "seite": 293 },
+    { "beschreibung": "Einsatz von Tasern außerhalb von Spezialkräften ablehnen", "ursachen_ids": [], "ursachen_offen": [3402], "zitat": "Wir lehnen den Einsatz von Tasern außerhalb von Spezialkräften ab.", "seite": 291 },
+    { "beschreibung": "Unabhängigen Polizeibeauftragten mit Befugnissen und Personal ausbauen", "ursachen_ids": [3403], "buendel": "Unabhängige Beschwerde- und Kontrollstellen", "zitat": "Deshalb wollen wir den Polizei- und Bürgerbeauftragten als Institution ausbauen, seine Befugnisse und sein Personal stärken. […] Der Polizeibeauftragte muss über die notwendigen Untersuchungs- und Ermittlungsbefugnisse verfügen, um rechtswidrige Gewalt und Menschenrechtsverletzungen durch die Sicherheitsbehörden aufzuklären.", "seite": 290 },
+    { "beschreibung": "Bodycam-Aufzeichnungen: Einsicht für Bürger*innen und automatische Aktivierung beim Waffeneinsatz", "ursachen_ids": [3403], "buendel": "Dokumentation und faire Verfahren", "zitat": "Bürger*innen sollen die Aktivierung der Bodycam verlangen und die Aufzeichnungen einsehen können. […] Beim Einsatz von Waffen ist die Bodycam automatisch auszulösen.", "seite": 290 },
+    { "beschreibung": "Zivilgesellschaftliche Initiativen unterstützen, die polizeiliches Handeln beobachten", "ursachen_ids": [], "ursachen_offen": [3403], "zitat": "Wir unterstützen zivilgesellschaftliche Initiativen und Beratungsstellen, wie z.B. die „Kampagne für Opfer rassistischer Polizeigewalt“ (KOP), die polizeiliches Handeln beobachten und auf rassistische Praktiken aufmerksam machen.", "seite": 290 },
+    { "beschreibung": "Schutz für Beschäftigte, die Fehlverhalten melden, durch Umsetzung des Hinweisgeberschutzgesetzes", "ursachen_ids": [], "ursachen_offen": [3403], "zitat": "Wer seine Vorgesetzten über Fehlverhalten im Kolleg*innenkreis informiert, muss von seinem Arbeitgeber in besonderer Weise geschützt werden. Das Hinweisgeberschutzgesetz muss hierfür endlich konsequent umgesetzt werden.", "seite": 297 },
+    { "beschreibung": "Versammlungsbehörde aus der Polizei herauslösen", "ursachen_ids": [], "ursachen_offen": [3402], "zitat": "Die Versammlungsbehörde wollen wir aus der Polizei Berlin herauslösen.", "seite": 294 }
+  ],
+  "neue_buendel": [
+    { "ursache": 3401, "name": "Kontrollquittung", "seite": 290 },
+    { "ursache": 3402, "name": "Multiprofessionelle Krisenintervention statt Polizei", "seite": 291 },
+    { "ursache": 3402, "name": "Deeskalations- und Einsatzkonzepte bei Versammlungen", "seite": 293 },
+    { "ursache": 3402, "name": "Verbot bestimmter Einsatzmittel (Taser)", "seite": 291 },
+    { "ursache": 3402, "name": "Versammlungsbehörde aus der Polizei lösen", "seite": 294 },
+    { "ursache": 3403, "name": "Förderung unabhängiger Beobachtung von Polizeieinsätzen", "seite": 290 },
+    { "ursache": 3403, "name": "Hinweisgeberschutz für Beschäftigte", "seite": 297 }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "waffenverbotszone", "ursache": 3401, "richtung": "Kontrollen begrenzen und nachvollziehbar machen" },
+    { "begriff": "kriminalitätsbelastete orte", "ursache": 3401, "richtung": "Kontrollen begrenzen und nachvollziehbar machen" },
+    { "begriff": "hinweisgeber", "ursache": 3403, "richtung": "Unabhängige Beschwerde- und Kontrollstellen" }
+  ]
+}
+
+Protokoll (Thema 34, Teilauftrag 2)
+
+Gelesen: Inhaltsverzeichnis (S. 3); Kapitel 21 Inneres (S. 286–302) vollständig; Kapitel 19 Antidiskriminierung, Abschnitt Ombudsstelle und Racial Profiling (S. 270); Kapitel 22 Justiz (S. 303–305 gelesen, S. 306–311 per Stichwortsuche auf Polizei, Kontrolle, Beschwerde und Staatsanwaltschaft ohne Treffer zu 3401–3403); Sport (S. 314, 323); Antifaschismus (S. 326, 329); Fundstellen S. 162, 177, 270, 285, 290, 291, 293, 323. Stichworte Kennzeichnung, Ermittlungsstelle, Gegenanzeige, Einstellung ohne Treffer zur Polizei.
+
+Erfasst (Ebene Land): 3401 zwei Maßnahmen (verdachtsunabhängige Kontrollen abschaffen; Kontrollquittung). 3402 fünf (Fortbildung; Krisenteams; Deeskalation; Taser als Grenzfall; Versammlungsbehörde als Grenzfall). 3403 vier (Polizeibeauftragter; Bodycam; Förderung unabhängiger Beobachtung als Grenzfall; Hinweisgeberschutz als Grenzfall).
+
+Gleichartige Stellen, nicht gesondert erfasst:
+- 3401 (Hebel Verbot anlassloser Kontrollen): S. 290 Kontrollorte „kriminalitätsbelastete Orte“ und Waffenverbotszonen abschaffen; S. 292 „1000 Nadelstiche“ und Kontrollen von Ordnungsamt oder Zoll nicht als Türöffner für Polizei („lehnen wir ab“); S. 270 Bekenntnis gegen Racial Profiling; S. 323 „die Befugnisse der Polizei verringern“.
+- 3402 Aus- und Fortbildung: S. 292 Ausbildung der Einsatz- und Rettungskräfte modernisieren und um grundrechtsbezogene Bildung ergänzen; S. 293 Polizeiausbildung an der HWR stärken (Berliner Modell); S. 289 multiprofessionelle Teams „womöglich“ übernehmen Aufgaben (Konjunktiv, gleichartig zu Krisenteams).
+- 3402 Einsatzkonzepte: S. 292 Anpassung der Einsatzkonzepte für Versammlungen und Fanaufläufe (Überstunden), S. 323 „echte Deeskalation und einen verringerten Polizeieinsatz“ bei Fußball (Forderung).
+- 3402 Einsatzmittel: S. 294 „Die Einsatzpraxis polizeilicher Schmerzgriffe lehnen wir … ab“.
+- 3403 Bodycam und Akten: S. 290 Zugang zu polizeilichen Akten und Bodycam-Aufzeichnungen gesetzlich garantieren; S. 292 Verlaufsstatistik zur Dokumentation polizeilicher Arbeit.
+- 3403 Beschwerdestellen: S. 270 Ombudsstelle nach LADG (Befugnisse ausweiten, Presse- und Initiativrecht); der Bürgerbeauftragte-Ausbau ist der konkretere Eintrag.
+
+Nicht erfasst:
+- S. 162 unabhängige Beschwerdestelle für Schulen und S. 285 Beschwerdestelle für Unterkünfte: kein Polizeikontakt.
+- S. 287–288 Zäune, Kameras, Polizeieinsätze „prüfen“ (Prüfauftrag), Personalbestand „prüfen“: Prüf- und Ablehnungsaussagen, keine Zusage.
+- S. 289 „gemeinsam mit Expert*innen … langfristige Maßnahmen entwickeln“: Entwicklungsauftrag ohne konkrete Handlung.
+- S. 290 Kritikfähigkeit und Fehlerkultur „müssen verbessert werden“, unabhängige Forschung stärken: Ziel bzw. Forschungsförderung, keine Kontroll- oder Beschwerdestelle.
+- S. 291 Überwachungsbefugnisse, Staatstrojaner, Datenschutz bei Polizeidatenbanken: nicht Teil von 3401–3403 nach Leitfaden.
+- S. 292–293 Arbeitsbedingungen, psychologische Betreuung, PTBS-Anerkennung, Gebäudesanierung, Frauenanteil: nach R1 keine Einsatzpraxis, Kommunikation oder Aus-/Fortbildung; Ausstattung gehört nach R2 zu Sicherheit. Das Bündel „Handlungsfähigkeit und Rückhalt der Polizei“ hat deshalb keinen Eintrag.
+- S. 294 pauschale Stadionverbote ablehnen, Fanrechte: keine Polizeikontakt-Zusage der Polizei, sondern Ablehnung von Verbänden-/Vereinsmaßnahmen.
+- S. 297 Beschäftigte aus dem Dienst entfernen „sollte“ (Disziplinarrecht): Möglichkeit, kein Beschwerde- oder Kontrollweg.
+- S. 326–329 Beschwerdestellen für extrem rechte Vorfälle und Umgang mit extrem rechten Beamt*innen: kein Polizeikontakt junger Menschen bzw. Personalfrage.
+- S. 286 „Bürger*innennähe herstellen“: Ziel.
+
+Richtungen ohne Maßnahme (Bündel): „Gezielte Kontrollen für Sicherheit ermöglichen“ (3401; Linke lehnt Kontrollorte, Videoüberwachung und Zäune ab; kein Hinweis auf Schleierfahndung oder Kontrollausweitung auf S. 287, 288, 290). „Handlungsfähigkeit und Rückhalt der Polizei“ (3402; siehe oben). „Kennzeichnung“ und „Gegenanzeige“ im Gesamttext ohne Treffer.
+
+Seiten ohne Text: S. 98, 334–336 nicht betroffen; keine Fundstelle auf Bildseiten.

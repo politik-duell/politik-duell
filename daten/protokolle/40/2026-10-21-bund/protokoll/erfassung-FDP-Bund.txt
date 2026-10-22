@@ -1,0 +1,37 @@
+{
+  "partei_id": 14,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Arbeitszeitgesetz reformieren: wöchentliche statt tägliche Höchstarbeitszeit, flexible Arbeitszeitmodelle.", "ursachen_ids": [4001], "buendel": "Wöchentliche Höchstarbeitszeit statt Tagesgrenze", "zitat": "Wir Freie Demokraten wollen das deutsche Arbeitszeitgesetz reformieren, indem wir mit einer wöchentlichen statt einer täglichen Höchstarbeitszeit neue und flexible Arbeitszeitmodelle ermöglichen.", "seite": 18 },
+    { "beschreibung": "Zuschläge für Überstunden bei Vollzeitarbeit von der Lohnsteuer befreien.", "ursachen_ids": [4001], "ursachen_offen": [4002], "zitat": "Um zusätzliche Arbeitsanreize zu schaffen, wollen wir Zuschläge für Überstunden bei Vollzeitarbeit von der Lohnsteuer befreien.", "seite": 14 },
+    { "beschreibung": "Einkommensteuer-Tarif (Chancentarif) so umbauen, dass sich zusätzliche Arbeit stärker lohnt.", "ursachen_ids": [], "ursachen_offen": [4002], "zitat": "Der Anreiz, zusätzliche Arbeit aufzunehmen, ist zu gering. […] Dazu wollen wir stufenweise einen linear-progressiven Chancentarif in der Einkommensteuer einführen, der den Mittelstandsbauch vollständig beseitigt.", "seite": 14 },
+    { "beschreibung": "Eine großzügige Arbeitstagepauschale ersetzt die Regeln zum häuslichen Arbeitszimmer und zur Homeoffice-Pauschale.", "ursachen_ids": [], "ursachen_offen": [4003], "buendel": "Mobiles Arbeiten", "zitat": "Eine großzügige Arbeitstagepauschale ersetzt und vereinfacht die bisherigen Regelungen zum häuslichen Arbeitszimmer, zur Homeoffice- und Entfernungskostenpauschale.", "seite": 15 },
+    { "beschreibung": "Arbeitszeitgesetz abschaffen, um flexible Arbeitszeiten zu ermöglichen; Vereinbarkeit von Beruf und Familie verbessern.", "ursachen_ids": [], "ursachen_offen": [4003], "buendel": "Gleitzeit und feste Arbeitszeitlage", "zitat": "Das veraltete Arbeitszeitgesetz schaffen wir ab, um flexible Arbeitszeiten zu ermöglichen. Flexible Arbeitszeiten, Teilzeit, Jobsharing, bzw. Topsharing und Homeoffice soll es Frauen wie Männern ermöglichen, Beruf und Familie besser zu vereinbaren.", "seite": 31 }
+  ],
+  "neue_buendel": [
+    { "ursache": 4001, "name": "Steuerfreiheit für Überstundenzuschläge", "seite": 14 },
+    { "ursache": 4002, "name": "Einkommensteuer-Tarif für mehr Arbeit", "seite": 14 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 4001, "seiten": [18, 44], "grund": "Kapitel Arbeitsrecht (S. 17–19) und Mobilität (S. 44) gelesen; keine Zusage zur Erfassung der Arbeitszeit. Die Parkplatz-Echtzeiterfassung (S. 44) betrifft keine Arbeitszeit." },
+    { "ursache": 4003, "seiten": [30, 31], "grund": "Kapitel Familie und Vereinbarkeit (S. 30–31) gelesen; keine Freistellung für Elternzeit oder Pflegezeit. Elterngeld-Partnermonate betreffen die Aufteilung der Sorgearbeit (Thema 28), Kurzzeit- und Tagespflege die Pflegeversorgung (Thema 10)." }
+  ],
+  "eigene_synonyme": []
+}
+
+Protokoll
+
+Gelesen: S. 1–6 (Inhaltsverzeichnis, Präambel); Kapitel III b „Steuersystem“ (S. 13–16, Einkommensteuer, Überstunden, Steuerrecht); Kapitel III d „Arbeitsrecht“ (S. 17–18); Kapitel III e „Soziale Sicherungssysteme“ (S. 18–20, Bürgergeld, Selbstständige); Kapitel IV e „Familie und Senioren“ (S. 30–31); Fundstellen S. 15, 18, 19, 31 und S. 44 gelesen.
+
+Richtungen ohne Maßnahme: 4001 „Arbeitszeit erfassen und kontrollieren“ (gezielt gesucht: Zeiterfassung, Arbeitszeitkontrolle; nichts gefunden außer einer Parkplatz-Echtzeiterfassung, S. 44, die nicht die Arbeitszeit betrifft). 4001 „Tägliche Höchstarbeitszeit einhalten“ (die Stellen S. 18 und S. 31 wollen die tägliche Grenze gerade ersetzen, ihr Gegenteil; daher nur bei „Wöchentliche Höchstarbeitszeit statt Tagesgrenze“ erfasst). 4002 „Anspruch auf Teilzeit ausbauen“, „Stunden aufstocken und Rückkehr in Vollzeit“, „Wahlarbeitszeit und Arbeitszeitkonto“ (gezielt gesucht: Teilzeitanspruch, Brückenteilzeit, Zeitkonto, Wahlarbeitszeit, aufstocken; nichts gefunden). 4003 „Elternzeit und Familienzeit“, „Pflegezeit als Freistellung“ (gezielt gesucht: Elternzeit, Pflegezeit, Familienzeit; nichts gefunden). 4003 „Gleitzeit und feste Arbeitszeitlage“ erfasst über S. 31.
+
+Nicht erfasst:
+- S. 18: „Vier-Tage-Woche mit vollem Lohnausgleich ablehnen“ (Ablehnung einer gesetzlichen Regelung, keine eigene Handlungszusage; Richtung „Kürzere Arbeitszeit für alle“ nicht erfasst).
+- S. 19–20: Arbeitsgelegenheiten, Zumutbarkeit und Hinzuverdienst im Bürgergeld (Erwerbslose, nicht Umfang der Arbeitszeit von Beschäftigten).
+- S. 19: Mindestlohn-Dokumentation und elektronische Arbeitsunfähigkeitsbescheinigung (Bürokratie, kein Bezug zu den Ursachen).
+- S. 31: Kurz- und Tagespflege für Pflegebedürftige (Pflegeversorgung, Thema 10).
+- S. 30: Elterngeld-Partnermonate (Aufteilung der Sorgearbeit, Thema 28).
+- Gleichartige Stellen (gleicher Hebel wie erfasst): S. 31 „Das veraltete Arbeitszeitgesetz schaffen wir ab“ ist bei 4001 gleichartig mit S. 18 (Wöchentliche Höchstarbeitszeit); bei 4003 als Gleitzeit erfasst.
+
+Seiten ohne Text: S. 1 und 2 (Titel, Vorbemerkung), ohne Rolle.
+Stand im PDF: wie im Auftrag.

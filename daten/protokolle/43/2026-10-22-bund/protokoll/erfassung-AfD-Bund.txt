@@ -1,0 +1,54 @@
+{
+  "partei_id": 15,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Gesetzliche Rahmenbedingungen schaffen, die den KI-Einsatz etwa in Medizintechnik und Verkehrswesen ermöglichen",
+      "ursachen_ids": [],
+      "ursachen_offen": [4301],
+      "buendel": "KI-Einsatz vorantreiben, neue KI-Berufe schaffen",
+      "zitat": "KI-Systeme stellen einen großen Wachstumsmarkt dar; von diesen können und wollen wir uns in Deutschland nicht abkoppeln. Deshalb sind effektive gesetzliche Rahmenbedingungen notwendig, die den Einsatz zum Beispiel in Medizintechnik und Verkehrswesen ermöglichen.",
+      "seite": 51
+    },
+    {
+      "beschreibung": "EU-Regulierung von KI ablehnen und praxisnahe nationale Lösungen gegen KI-Risiken fordern",
+      "ursachen_ids": [],
+      "ursachen_offen": [4303],
+      "buendel": "Gegenrichtung: Forschung und offene Modelle erlauben",
+      "zitat": "Gleichzeitig kann KI aber auch ein Risiko speziell für Kritische Infrastruktur, Verkehrstechnik und bürgerliche Freiheiten darstellen. Die zentralistische Regulierung dieser Themen durch die EU, wie durch den Cybersecurity Act, Ethik-Leitlinien für KI und den Artificial Intelligence Act, lehnt die AfD ab und fordert praxisnahe, nationale Lösungen.",
+      "seite": 51
+    }
+  ],
+  "nicht_erfasst": [
+    {
+      "ursache": 4302,
+      "seiten": [24, 160, 163],
+      "grund": "Weiterbildung im Bürgergeld (S. 24) und berufliche Bildung (S. 163) ohne KI-Bezug; KI-Umgang in Schulen (S. 160) gehört zur Schulbildung (Ursache 4), nicht zu 2."
+    },
+    {
+      "ursache": 4303,
+      "seiten": [47, 48],
+      "grund": "Digitale Assistenzsysteme und Überwachung (S. 47–48) ohne KI-Bezug zu Betrug oder Täuschung."
+    }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "künstliche intelligenz", "ursache": 4301, "richtung": "KI-Einsatz vorantreiben, neue KI-Berufe schaffen" }
+  ]
+}
+
+PROTOKOLL AfD (Bund), Thema 43 „Künstliche Intelligenz“
+
+Gelesen: Inhaltsverzeichnis (S. 2–6); Kapitel „Digitalisierung“ S. 46–50 nur per Suche nach KI-Begriffen und Abschnitt „Digitale Assistenzsysteme“ (S. 47–48) gelesen, ohne KI-Bezug; „Künstliche Intelligenz“ S. 51 (vollständig); Fachkräfte S. 114; Schule „Sinnvolle Digitalisierung“ S. 160; Berufliche Bildung S. 163; Bürgergeld-Weiterbildung S. 24. S. 52–54 sind Kapitel-Trennseiten ohne Text.
+
+Gleichartig, nicht gesondert erfasst:
+- S. 114 („Auch technologische Lösungen wie Künstliche Intelligenz (KI), Robotik und Digitalisierung … sind zur Bekämpfung eines etwaigen Fachkräftemangels konsequent umzusetzen.“): gleiche Richtung „KI-Einsatz vorantreiben“, Bündel schon belegt durch S. 51; die Stelle auf S. 51 ist konkreter (Rahmenbedingungen, Anwendungsbereiche).
+
+Nicht erfasst:
+- S. 51: Cybersecurity- und Digitalstrategie (digitale Souveränität), nur Infrastruktur, keine KI-Zusage zu 4301–4303.
+- S. 160: KI-Umgang in Schulen gehört zu Schulbildung (Ursache 4), R2 schließt das aus.
+
+Richtungen ohne Maßnahme (0 Treffer, Kapitel gelesen): „Umschulung für KI-bedingten Wandel“, „Schutz vor KI-Verdrängung“, „Absicherung bei KI-bedingtem Jobverlust“ (4301); „Rechtsanspruch auf KI-Weiterbildung“, „Förderung KI-Kompetenz für Geringqualifizierte“, „Betriebe zur KI-Schulung verpflichten“, „Eigenanteil bei KI-Weiterbildung“ (4302); „Strafbarkeit von Deepfakes“, „Löschpflicht und Plattformhaftung“, „Verbot von Stimmklonen“ (4303). Das Programm nennt dazu keine Zusage; die Kapitel „Künstliche Intelligenz“, „Digitalisierung“ und die Bildungs- und Arbeitsmarktstellen sind gelesen.
+
+Grenzfälle (ursachen_offen): 4301 (Rahmenbedingungen für KI-Einsatz, Grenz zu R1), 4303 (EU-KI-Regulierung ablehnen, Grenz zu R3).
+
+Seiten ohne Text: 52, 53 (Trennseiten zwischen Kapiteln), kein Inhalt verloren.

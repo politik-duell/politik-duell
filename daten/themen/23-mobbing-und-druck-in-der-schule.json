@@ -49,5 +49,1958 @@
       "alltag": "Mein Kind wird in der Schule gemobbt",
       "ursachen_ids": [2301, 2302]
     }
+  ],
+  "instrumente": [
+    {
+      "id": 10112,
+      "name": "Präventionsprogramme gegen Mobbing, Gewalt und Ausgrenzung an Schulen fördern (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Schulische Anti-Mobbing-Programme senken Mobbing und Viktimisierung nachweislich, wenn auch moderat; die Zusagen bleiben unbestimmt (fördern, stärken) und legen weder Reichweite noch Programmstandard fest.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://doi.org/10.1002/cl2.1143",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10113,
+      "name": "Flächendeckende, verbindliche Präventions- und Anti-Gewaltprogramme an allen Schulen (Land)",
+      "wirksamkeit": 3,
+      "umsetzbarkeit": 2,
+      "begruendung": "Setzt direkt an Klassennormen an; Meta-Analysen zeigen eine Senkung von Mobbing um rund ein Fünftel. Flächendeckende Einführung braucht Fortbildung, Unterrichtszeit und Qualitätssicherung über Jahre.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://doi.org/10.1002/cl2.1143",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10114,
+      "name": "Soziales Lernen, Empathie und Konfliktlösung als Unterrichtsinhalt stärken (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Programme zum sozial-emotionalen Lernen verbessern belegt Sozialverhalten und Klassenklima; Wirkung auf Mobbing selbst ist schwächer belegt und hängt von Umsetzung und Programmqualität ab.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://doi.org/10.1111/j.1467-8624.2010.01564.x",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10115,
+      "name": "Aufklärung gegen Diskriminierung und queerfeindliche Haltungen in der Schule (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Zielt auf abwertende Haltungen, die Ausgrenzung begünstigen; Programme zur Vorurteilsreduktion zeigen aber oft nur kleine, kurzlebige Effekte, eine Wirkung auf Mobbing ist kaum nachgewiesen.",
+      "evidenz": "gemischt",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10116,
+      "name": "Klassengemeinschaft stärken: Klassenrat, Klassenleiterstunde, gemeinsame Aktivitäten (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kann Zusammenhalt und Klassennormen positiv beeinflussen und Konflikte früh sichtbar machen; eigenständige Wirkung auf Mobbing ist kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10117,
+      "name": "Zusätzliche Lernzeit mit sozialem Lernen in Vorschule und Ganztag (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Soziales Lernen ist nur ein Nebenziel von Vorschule und Ganztag; ein Effekt auf Mobbing in der Schule ist kaum untersucht. Ausbau braucht Personal und Räume.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10118,
+      "name": "Verpflichtende Schutzkonzepte gegen Gewalt und Diskriminierung an Schulen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Schutzkonzepte schaffen Interventionspläne, Beschwerdewege und Prävention; Länder können sie vorschreiben. Wirkung auf Mobbing unter Schülern ist kaum evaluiert, Qualität hängt von der Umsetzung ab.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10119,
+      "name": "Schutzkonzepte in Einrichtungen für Kinder fördern oder vorschreiben (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Bund kann über Kinder- und Jugendhilfe und Anreize beitragen, für Schulen sind aber die Länder zuständig; Wirkung auf Mobbing unter Schülern ist kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10120,
+      "name": "Klare Schulregeln zu Gewalt und Mobbing mit verbindlichen, abgestuften Reaktionen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Klare Regeln und verlässliche Reaktionen gelten als wirksame Bestandteile von Anti-Mobbing-Programmen; rein strafende Ahndung ohne Prävention zeigt dagegen wenig Wirkung auf das Schulklima.",
+      "evidenz": "gemischt",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10121,
+      "name": "Schulverweise und alternative Beschulung bei Gewalt erleichtern (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Schützt Mitschüler kurzfristig vor gewalttätigen Einzelnen; Studien zu Ausschlüssen finden aber keine Verbesserung von Schulklima und Verhalten, teils mehr Folgeprobleme bei den Ausgeschlossenen.",
+      "evidenz": "gemischt",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10122,
+      "name": "Schulsozialarbeit und Schulpsychologie an jeder Schule ausbauen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Fachkräfte vor Ort können Konflikte und Mobbingfälle früh bearbeiten und Lehrkräfte unterstützen; belastbare Wirkungsstudien fehlen weitgehend, und Fachkräfte sind knapp.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10123,
+      "name": "Psychologische und psychosoziale Unterstützung für Schüler an Schulen ausbauen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Hilft Belasteten, lindert aber Folgen statt den Leistungsdruck selbst; gezielte Hilfen wirken, universelle Programme (etwa Achtsamkeit) zeigten in großen Studien keinen Effekt.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9340028/",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10124,
+      "name": "Psychosoziale Fachkräfte und Mental-Health-Angebote an Schulen fördern (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Bund kann mit Programmen beitragen, dauerhaftes Personal an Schulen liegt bei den Ländern; lindert Folgen von Druck, universelle Angebote zeigen gemischte Ergebnisse.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9340028/",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10125,
+      "name": "Fortbildung von Lehrkräften zu Mobbing, Gewalt, Konflikten und Klassenführung (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Aktives Eingreifen von Lehrkräften hängt mit weniger Viktimisierung zusammen; eine kontrollierte Studie zu einem kurzen Lehrkräftetraining fand aber keine Änderung von Verhalten und Mobbing.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10603241/",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10126,
+      "name": "Lehrkräfteaus- und -fortbildung allgemein praxisnäher und verbindlicher gestalten (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Mehr Praxis und Fortbildung können die Handlungssicherheit im Klassenraum stärken; Mobbing und Konflikte sind nicht genannt, ein Effekt auf das Eingreifen ist kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10127,
+      "name": "Fortbildungen für pädagogische Fachkräfte zu Diskriminierung (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kann Lehrkräfte für Ausgrenzung sensibilisieren; ob Diskriminierungsfortbildungen das Eingreifen bei Mobbing verändern, ist kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10128,
+      "name": "Unabhängige Beschwerdestellen für Schülerinnen, Schüler und Eltern (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Bietet Betroffenen einen Weg, wenn die Schule nicht handelt; wirkt aber nachgelagert im Einzelfall, Effekte auf Mobbing sind kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10129,
+      "name": "Lehrpläne und Stundentafel entschlacken (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Weniger Stoff und Fächer können Lernlast senken; ob der Leistungsdruck dadurch spürbar sinkt, hängt von Prüfungen und Bewertung ab und ist kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10130,
+      "name": "Längeres gemeinsames Lernen und weniger Selektionsdruck beim Übergang (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Verbindliche Übergangsentscheidungen erhöhen nachweislich Noten- und Zukunftsangst in Klasse 4; zugleich steigen dort die Leistungen. Strukturreformen brauchen mehrere Jahre.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.zew.de/en/press/latest-press-releases/binding-teachers-recommendation-for-secondary-school-track-increases-pupils-achievement-but-also-their-stress-levels",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10131,
+      "name": "Hausaufgaben in die betreute Schulzeit verlagern (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Mehr Hausaufgabenzeit geht mit mehr Lernangst einher (Querschnittsdaten); der Nutzen von Hausaufgaben ist uneinheitlich belegt. Betreute Lernzeit braucht Personal.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2023.1130274/full",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10132,
+      "name": "Jugendschutz auf Plattformen durchsetzen, etwa durch Altersverifikation (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Plattformpflichten können Kinder vor Angriffen schützen; Wirkung auf Cybermobbing ist nicht belegt, Altersprüfungen werden umgangen, und vieles hängt vom EU-Rahmen (DSA) ab.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10320,
+      "name": "Pflichtweises Sitzenbleiben abschaffen, Wiederholen nur noch freiwillig (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Nimmt die Drohung der Nichtversetzung, und Sitzenbleiben verbessert Leistungen laut Forschung nicht; zum Wohlbefinden sind Befunde uneinheitlich (teils Belastung, teils positive Effekte), betroffen ist ein kleiner Teil.",
+      "beleg_studie_url": "https://www.bertelsmann-stiftung.de/de/publikationen/publikation/did/klassenwiederholungen-teuer-und-unwirksam",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10321,
+      "name": "Ziffernnoten weitgehend durch schriftliche oder dialogische Rückmeldungen ersetzen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Benotete Stunden gehen in Studien mit mehr Angst und weniger Motivation einher; in Langzeitvergleichen ohne Noten zeigte sich aber kaum besseres Wohlbefinden, Druck kann sich auf spätere Abschlüsse verlagern.",
+      "beleg_studie_url": "https://publinova.nl/product/performance-grading-and-motivational-functioning-and-fear-in-physical-education",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10322,
+      "name": "Mentale Gesundheit, Resilienz und Stressbewältigung im Unterricht verankern (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Schulische Präventionsprogramme senken Angst und Depressivität nur schwach, universelle Angebote weniger als gezielte; lindert Folgen, statt den Leistungsdruck selbst zu senken. Curricula sind Landessache.",
+      "beleg_studie_url": "https://openresearch-repository.anu.edu.au/items/f894e732-2981-4864-b78f-eafbf446aba1",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10323,
+      "name": "Ruhe- und Rückzugsräume ohne Bewertung und Pausengestaltung an Schulen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "evidenz": "offen",
+      "begruendung": "Kann Erholung im Schulalltag ermöglichen; berührt den Leistungsdruck nur am Rand, Wirkung kaum untersucht, und Räume fehlen an vielen Schulen.",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10324,
+      "name": "Selektionshürden beim Übergang zur weiterführenden Schule abbauen (Empfehlung, Probeunterricht) (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "evidenz": "gemischt",
+      "begruendung": "Verbindliche Übergangsentscheidungen erhöhen nachweislich Sorgen in Klasse 4, zugleich steigen dort die Leistungen; die Maßnahmen lockern nur einzelne Hürden, Druck kann sich auf später verlagern.",
+      "beleg_studie_url": "https://www.zew.de/en/press/latest-press-releases/binding-teachers-recommendation-for-secondary-school-track-increases-pupils-achievement-but-also-their-stress-levels",
+      "entwurf_herkunft": "blind"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "durchsucht_fuer": [2301, 2302, 2303, 2304],
+      "massnahmen": [
+        {
+          "id": 10133,
+          "instrument": 10132,
+          "beschreibung": "Ausreichenden Kinder- und Jugendschutz im Internet gewährleisten; Digital Services Act mit Schwerpunkt Jugend- und Medienschutz umsetzen",
+          "ursachen_ids": [2303],
+          "zitat": "Wir sorgen dafür, dass ein ausreichender Kinder- und Jugendschutz auch im Internet gewährleistet wird. […] Wir stellen sicher, dass bei der Umsetzung des Digital Services Act der Schwerpunkt auf mehr Transparenz, Kampf gegen Desinformation sowie Jugend- und Medienschutz gelegt wird.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=41",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10134,
+          "instrument": 10119,
+          "beschreibung": "Verbindliche, standardisierte Schutzkonzepte dort, wo Kinder betreut werden (Gewaltprävention)",
+          "ursachen_ids": [2301],
+          "zitat": "Wir sorgen dafür, dass es dort, wo Kinder betreut werden, flächendeckend verbindliche und standardisierte Schutzkonzepte gibt.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=39",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2301, 2302, 2304],
+      "massnahmen": [
+        {
+          "id": 10135,
+          "instrument": 10114,
+          "beschreibung": "Gewaltfreie Konfliktlösung sowie Gleichberechtigung und Grenzen früh in Kitas und Schulen vermitteln",
+          "ursachen_ids": [2301],
+          "zitat": "Themen wie Gleichberechtigung, Grenzen und Konsens sowie gewaltfreie Konfliktlösung müssen frühzeitig in Kitas und Schulen vermittelt werden.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=11",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10136,
+          "instrument": 10117,
+          "beschreibung": "Ganztagsangebote an Grundschulen qualitativ ausbauen; sie sollen unter anderem soziales Lernen fördern",
+          "ursachen_ids": [2301],
+          "zitat": "Ganztagsangebote an Grundschulen wollen wir weiter qualitativ ausbauen. Sie entlasten Familien, schaffen verlässliche Betreuung und bieten zusätzliche Chancen für Förderung, Bewegung und soziales Lernen.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=56",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10137,
+          "beschreibung": "Gesetzliche Schutzpflicht an Schulen, damit Schülerinnen und Schüler vor religiösem oder sozialem Gruppendruck geschützt sind",
+          "ursachen_ids": [2301],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Benennt Gruppendruck unter Schülern als Schutzgut; eine gesetzliche Schutzpflicht ohne konkrete Instrumente wirkt kaum im Alltag und berührt Grundrechtsabwägungen.",
+          "zitat": "Das Berliner Neutralitätsgesetz muss um eine aktive staatliche Schutzpflicht zur Gewährleistung religiöser und weltanschaulicher Neutralität an Schulen erweitert werden. […] Die weltanschauliche Freiheit von Kindern und Jugendlichen ist vor religiösen oder sozialem Gruppendruck aktiv zu schützen.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=57",
+          "evidenz": "offen",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10138,
+          "instrument": 10126,
+          "beschreibung": "Aus-, Fort- und Weiterbildung von Lehrkräften verbindlicher ausrichten; alle Lehrkräfte sollen regelmäßig fortgebildet werden",
+          "ursachen_ids": [2302],
+          "zitat": "Wir wollen die Aus-, Fort- und Weiterbildung von Lehrkräften verbindlicher, strategischer und praxisnäher ausrichten. […] Künftig sollen alle Lehrkräfte diese Qualifizierungsangebote systematisch durchlaufen und regelmäßig fortgebildet werden.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=58",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10139,
+          "beschreibung": "Strategie gegen Gewalt an Schulen, die Prävention, Intervention und Repression konsequent verbindet",
+          "ursachen_ids": [2302, 2301],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Verbindet Prävention und Intervention, was erfolgreiche Ansätze auszeichnet; es bleibt aber bei der Ankündigung einer Strategie ohne konkrete Instrumente.",
+          "zitat": "Darauf aufbauend werden wir eine klare Strategie entwickeln, die Prävention, Intervention und Repression konsequent miteinander verbindet.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=60",
+          "evidenz": "offen",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10140,
+          "instrument": 10123,
+          "beschreibung": "Landesprogramm für psychische Gesundheit und Ausbau schulpsychologischer Angebote, Resilienzförderung im Schulalltag",
+          "ursachen_ids": [2304],
+          "zitat": "Mit einem Landesprogramm für Mental Health und dem Ausbau schulpsychologischer Angebote wollen wir verlässliche Unterstützungsstrukturen für Schülerinnen und Schüler, Lehrkräfte und Familien schaffen. Prävention, frühe Hilfen und Resilienzförderung sollen dabei fester Bestandteil des Schulalltags werden.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=61",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2301, 2302, 2304],
+      "massnahmen": [
+        {
+          "id": 10141,
+          "instrument": 10126,
+          "beschreibung": "Gezieltes Mentoring für angehende Lehrkräfte beim Berufseinstieg",
+          "ursachen_ids": [2302],
+          "zitat": "Mit einem gezielten Mentoring wollen wir angehende Lehrerinnen und Lehrer besser beim Berufseinstieg unterstützen.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=56",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10142,
+          "instrument": 10126,
+          "beschreibung": "Lehramtsausbildung durch mehr und früher beginnende Praxisphasen im Studium praxisnäher gestalten",
+          "ursachen_ids": [2302],
+          "zitat": "Stattdessen werden wir die Lehramtsausbildung durch mehr und ab dem 1. Semester beginnende Praxisphasen im Studium praxisnäher gestalten.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=55",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2301, 2302, 2304],
+      "massnahmen": [
+        {
+          "id": 10143,
+          "instrument": 10126,
+          "beschreibung": "Ausbildung von Lehrkräften auf Praxisnähe ausrichten, mehr verbindliche Praxisphasen",
+          "ursachen_ids": [2302],
+          "zitat": "Ausbildung von Lehrkräften stärker auf Eignung, Qualität und Praxisnähe ausrichten: […] Frühzeitige und verbindliche Praxisphasen müssen daher ausgebaut werden.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=25",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10144,
+          "instrument": 10114,
+          "beschreibung": "Oberschule: Stärkung von Basiskompetenzen, Sozialverhalten und Selbstorganisation",
+          "ursachen_ids": [2301],
+          "zitat": "Mit der Oberschule Profil schärfen und sie zur Schule der Praxis ausbauen: Wir werden mit der neuen Oberschule die bisherigen Schulformen Sekundarschule und Gemeinschaftsschule zusammenführen und profilieren. […] Praxisorientierte Lernerfahrungen, informatische Grundbildung und ökonomisches Grundverständnis sind dabei ebenso wichtig wie die Stärkung von Basiskompetenzen, Sozialverhalten und Selbstorganisation.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=22",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "durchsucht_fuer": [2301, 2302, 2303, 2304],
+      "massnahmen": [
+        {
+          "id": 10145,
+          "instrument": 10119,
+          "beschreibung": "Anreize für Schutzkonzepte gegen Gewalt in Einrichtungen, in denen Kinder und Jugendliche sich aufhalten",
+          "ursachen_ids": [2302],
+          "zitat": "Kinder und Jugendliche haben ein Recht darauf, ohne Gewalt aufzuwachsen. Wir wollen […] Anreize für Schutzkonzepte in allen Einrichtungen schaffen, in denen sich Kinder und Jugendliche regelmäßig aufhalten.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=28",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10146,
+          "instrument": 10132,
+          "beschreibung": "Jugendschutz im Netz stärken, etwa durch Möglichkeiten zur Altersverifikation",
+          "ursachen_ids": [2303],
+          "zitat": "Regelungen gegen Hasskriminalität und andere Straftaten im Netz sowie zum Jugendschutz setzen wir konsequent durch. […] während wir gleichzeitig den Jugendschutz stärken, etwa durch effektive Möglichkeiten zur Altersverifikation.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=45",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2301, 2302, 2304],
+      "massnahmen": [
+        {
+          "id": 10147,
+          "beschreibung": "Jede Schule soll ein Anti-Mobbing-Team bekommen, das gegen Mobbing vorgeht.",
+          "ursachen_ids": [2302],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Feste Teams bearbeiten Mobbingfälle verlässlich, wie in erfolgreichen Programmen (etwa KiVa); als Einzelmaßnahme kaum evaluiert, und Teams brauchen Zeit und Schulung.",
+          "zitat": "Jede Schule soll künftig ein Anti-Mobbing-Team haben.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=41",
+          "evidenz": "offen",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10148,
+          "instrument": 10122,
+          "beschreibung": "Mehr Stellen für Schulsozialarbeit und Schulpsychologie sowie weitere Fachkräfte, auch gegen Mobbing und Konflikte.",
+          "ursachen_ids": [2301, 2302],
+          "zitat": "Mobbing, Diskriminierung und gruppenfeindliches Verhalten müssen wir erkennen und bekämpfen. […] Wir setzen uns darüber hinaus für den Ausbau multiprofessioneller Teams ein, z.B. durch mehr Stellen für Schulsozialarbeiter*innen, Schulpsycholog*innen, pädagogischen Unterrichtshilfen sowie Erzieher*innen.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=41",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10149,
+          "instrument": 10128,
+          "beschreibung": "Eine unabhängige Beschwerdestelle für Schulen und Kitas beim Parlament ansiedeln.",
+          "ursachen_ids": [2302],
+          "zitat": "Eine unabhängige Beschwerdestelle für Schulen und Kitas siedeln wir beim Parlament an.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=41",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10150,
+          "instrument": 10114,
+          "beschreibung": "Das Thema Empathie als Wahlpflichtfach einführen, um Mitgefühl und Kompromissfähigkeit zu fördern.",
+          "ursachen_ids": [2301],
+          "zitat": "Empathie, Mitgefühl und die Fähigkeit zum Kompromiss wollen wir gezielt fördern. Dafür führen wir in einem Wahlpflichtfach das Thema Empathie ein.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=41",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10151,
+          "instrument": 10115,
+          "beschreibung": "Queere Bildung in Schulen stärken, um Hass und Gewalt vorzubeugen.",
+          "ursachen_ids": [2301],
+          "zitat": "In Schulen, Jugendarbeit und Erwachsenenbildung stärken wir queere Bildung, um Hass und Gewalt vorzubeugen.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=49",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10152,
+          "instrument": 10129,
+          "beschreibung": "Rahmenlehrpläne verschlanken und die Stundentafel flexibilisieren, ohne weitere Fächer einzuführen.",
+          "ursachen_ids": [2304],
+          "zitat": "Schule soll fürs Leben stärken. Deshalb verschlanken wir Rahmenlehrpläne und flexibilisieren die Stundentafel. Weitere Fächer führen wir nicht ein.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=40",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10153,
+          "instrument": 10123,
+          "beschreibung": "Mentale Gesundheit aller Beteiligten an Schulen stärken, mit mehr Schulpsychologie und Gesundheitsfachkräften.",
+          "ursachen_ids": [2304],
+          "zitat": "Die mentale Gesundheit aller Beteiligten stärken wir, unter anderem durch mehr multiprofessionelles Personal, insbesondere Schulpsychologie und Gesundheitsfachkräfte.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=42",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10154,
+          "instrument": 10127,
+          "beschreibung": "Fortbildungen zu Diskriminierung und Rassismus; diskriminierungskritische Module in der Ausbildung pädagogischer Fachkräfte.",
+          "ursachen_ids": [2302],
+          "zitat": "Fortbildungen zu Diskriminierung, Rassismus und Postkolonialismus stärken wir. In die Ausbildung pädagogischer Fachkräfte integrieren wir verpflichtend diskriminierungskritische Module – in allen Entwicklungsstufen.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=41",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2301, 2302, 2304],
+      "massnahmen": [
+        {
+          "id": 10155,
+          "instrument": 10112,
+          "beschreibung": "Präventionsangebote gegen Mobbing, Gewalt und Ausgrenzung weiter unterstützen; Angebote zur Stärkung psychischer Gesundheit junger Menschen.",
+          "ursachen_ids": [2301],
+          "zitat": "Wir wollen Präventionsangebote gegen Mobbing, Cybermobbing, Gewalt und Ausgrenzung sowie Angebote zur Stärkung psychischer Gesundheit junger Menschen weiter unterstützen.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=36",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10156,
+          "instrument": 10114,
+          "beschreibung": "Konfliktlösung und Kommunikation als Alltagskompetenzen in der schulischen Bildung stärken.",
+          "ursachen_ids": [2301],
+          "zitat": "Wir wollen Alltagskompetenzen wie Finanzbildung, Medienkompetenz, Kommunikation und Konfliktlösung in der schulischen Bildung weiter stärken.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=69",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10157,
+          "beschreibung": "Leistungsbewertung reformieren, mit lernförderlichen und prozessorientierten Rückmeldungen.",
+          "ursachen_ids": [2304],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Lernförderliche Rückmeldungen können Bewertungsangst mindern; ohne Änderung an Abschlüssen und Übergängen bleibt der Druck, die Befundlage zu notenfreier Bewertung ist uneinheitlich.",
+          "zitat": "Wir wollen die Leistungsbewertung reformieren und damit lernförderliche und prozessorientierte Leistungsrückmeldungen in den Mittelpunkt stellen.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=68",
+          "evidenz": "gemischt",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10158,
+          "beschreibung": "In der beruflichen Ausbildung ein flexibleres Prüfungssystem mit mehreren Prüfungszeiträumen schaffen.",
+          "ursachen_ids": [2304],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Mehrere Prüfungstermine können Prüfungsstress in der Ausbildung mindern; kaum untersucht, und der Spielraum ist durch bundesweite Prüfungsordnungen begrenzt.",
+          "zitat": "Es soll im Rahmen der nach bundesweiten Vorgaben und betrieblichen Notwendigkeiten bestehenden Möglichkeiten ein flexibleres Prüfungssystem mit mehreren Prüfungszeiträumen geben, um Lernphasen planbarer zu machen und Stress zu reduzieren.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=70",
+          "evidenz": "offen",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2301, 2302, 2304],
+      "massnahmen": [
+        {
+          "id": 10159,
+          "instrument": 10112,
+          "beschreibung": "Präventions- und Demokratieprojekte an Schulen gegen abwertende Haltungen unter Schülern verstärkt und dauerhaft fördern.",
+          "ursachen_ids": [2301],
+          "zitat": "Angesichts zunehmender rassistischer und sexistischer Haltungen unter Schülerinnen und Schülern werden präventive und demokratiepädagogische Projekte an Schulen intensiviert und dauerhaft gefördert.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=36",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10160,
+          "instrument": 10118,
+          "beschreibung": "Schulen und andere Einrichtungen sollen verpflichtend Schutzkonzepte gegen Gewalt und Diskriminierung entwickeln und umsetzen.",
+          "ursachen_ids": [2301],
+          "zitat": "Prävention ist der wirksamste Schutz vor Gewalt. Einrichtungen der Jugendhilfe, Schulen, Einrichtungen der Eingliederungshilfe, der Geflüchtetenhilfe sowie des Gesundheits- und Pflegebereichs sollen verpflichtend Schutzkonzepte entwickeln und umsetzen. Diese müssen Schutz vor Gewalt und Diskriminierung beinhalten […]",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=32",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10161,
+          "beschreibung": "Präventionsangebote in Kommunen und Schulen unterstützen, um Konflikte frühzeitig zu entschärfen.",
+          "ursachen_ids": [2301],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Allgemeine kommunale Kriminalprävention kann Konflikte entschärfen; Schule und Mobbing sind nur ein Teilbereich, Wirkung auf das Klassenklima ist offen.",
+          "zitat": "Präventionsarbeit in Kommunen, Schulen und Vereinen hilft, Konflikte frühzeitig zu entschärfen und Straftaten zu verhindern. Kommunale Präventionsräte und soziale Präventionsangebote werden unterstützt.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=30",
+          "evidenz": "offen",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10162,
+          "instrument": 10125,
+          "beschreibung": "Verbindliche regelmäßige Schulungen und Fortbildungen für Fachkräfte in der Gewalt- und Diskriminierungsprävention.",
+          "ursachen_ids": [2302],
+          "zitat": "Regelmäßige Schulungen und Fortbildungen für Fachkräfte sind verbindlich, damit Prävention im Alltag wirkt.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=33",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10163,
+          "instrument": 10125,
+          "beschreibung": "Qualifizierung zu Beratungslehrkräften neu starten.",
+          "ursachen_ids": [2302],
+          "zitat": "Die Qualifizierung zu Beratungslehrkräften wird neu gestartet.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=18",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "durchsucht_fuer": [2301, 2302, 2303, 2304],
+      "massnahmen": [
+        {
+          "id": 10164,
+          "instrument": 10124,
+          "beschreibung": "Mental-Health-Coaches und Gruppenangebote an weiterführenden Schulen ausbauen, Schwerpunkt Schulen mit besonderen Bedarfen.",
+          "ursachen_ids": [2304],
+          "zitat": "Mit den Mental Health Coaches und ihren Gruppenangeboten an weiterführenden Schulen konnten wichtige Anlaufstellen geschaffen werden, die wir ausbauen wollen. Dabei legen wir den Fokus vor allem auf Schulen mit besonderen Bedarfen wie den Startchancenschulen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=85",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10165,
+          "beschreibung": "Diskriminierungssensible Fortbildungen in Kindertagespflege und Lehrkräfteausbildung fördern.",
+          "ursachen_ids": [2302],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Sensibilisierung kann Ausgrenzung früher erkennen lassen; Effekt auf Eingreifen bei Mobbing kaum untersucht, Lehrkräfteausbildung liegt bei den Ländern, der Bund kann nur fördern.",
+          "zitat": "Um die Chancen für alle Kinder von Anfang an gleich zu gestalten, setzen wir uns für diskriminierungssensible Fortbildungen in der Kindertagespflege und Lehrer*innenausbildung ein.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=76",
+          "evidenz": "offen",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2301, 2302, 2304],
+      "massnahmen": [
+        {
+          "id": 10166,
+          "instrument": 10116,
+          "beschreibung": "Klassenräte sollen an allen Schulen und in allen Klassen verbindlich umgesetzt werden.",
+          "ursachen_ids": [2301],
+          "zitat": "Wir sorgen dafür, dass die gesetzlich verankerten Klassenräte auch in allen Schulen und Klassen verbindlich umgesetzt werden und achten darauf, dass auch Schüler*innen in Willkommensklassen von Beginn an die gleichen demokratischen Rechte wahrnehmen können.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=185",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10167,
+          "instrument": 10128,
+          "beschreibung": "Unabhängige Beschwerdestelle gegen Diskriminierung an Schulen wird eingerichtet.",
+          "ursachen_ids": [2302],
+          "zitat": "Unter dem Dach der LADG-Ombudsstelle wird eine unabhängige Beschwerdestelle gegen Diskriminierung an Schulen eingerichtet.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=136",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10168,
+          "instrument": 10126,
+          "beschreibung": "Bedarfsgerechte, qualitätsgesicherte Fortbildungen für pädagogisches Personal, schulweit umgesetzt und evaluiert.",
+          "ursachen_ids": [2302],
+          "zitat": "Wir werden für bedarfsgerechte, praxisnahe und qualitätsgesicherte Fortbildungsangebote sorgen, die fachbereichs- und schulweit implementiert und evaluiert werden.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=194",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10169,
+          "instrument": 10118,
+          "beschreibung": "Kinderschutzstandards sollen in allen Einrichtungen, in denen sich Kinder und Jugendliche aufhalten, verlässlich umgesetzt werden.",
+          "ursachen_ids": [2302],
+          "zitat": "Wir […] setzen uns […] ein, dass in allen Einrichtungen, in denen Kinder und Jugendliche sich aufhalten, Kinderschutzstandards […] implementiert werden.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=184",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10170,
+          "instrument": 10130,
+          "beschreibung": "Zahl der Gemeinschaftsschulen soll verdoppelt werden, um Schulstress zu verringern.",
+          "ursachen_ids": [2304],
+          "zitat": "Gemeinschaftsschulen sind die Schulen der Zukunft. Wir Grüne wollen ihre Zahl in Berlin verdoppeln.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=220",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10171,
+          "instrument": 10131,
+          "beschreibung": "Verlässliche Betreuung in der Grundschule wird um mindestens eine Stunde verlängert, damit zu Hause keine Aufgaben mehr nötig sind.",
+          "ursachen_ids": [2304],
+          "zitat": "Wir Grüne verlängern die Zeiten der verlässlichen Betreuung auch für Kinder ohne Hortvertrag in der Grundschule um mindestens eine Stunde auf 14:30 Uhr. In dieser Zeit sollen Kinder Gelerntes mit professioneller Begleitung vertiefen können, sodass keine weiteren Aufgaben zu Hause erledigt werden müssen.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=191",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10172,
+          "instrument": 10130,
+          "beschreibung": "Der Übergang von der Grund- zur Oberschule soll reformiert werden, damit Schüler*innen mit weniger Druck zur Schule gehen.",
+          "ursachen_ids": [2304],
+          "zitat": "Den Übergang auf die Oberschule werden wir reformieren und gerechter gestalten, sodass Schüler*innen der 4., 5. und 6. Klassen mit weniger Druck zur Schule gehen können.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=188",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10173,
+          "instrument": 10123,
+          "beschreibung": "Präventions- und Unterstützungsangebote für Kinder und Jugendliche sollen deutlich ausgebaut werden, unter anderem mit mehr Schulpsychologie.",
+          "ursachen_ids": [2304],
+          "zitat": "Speziell für Kinder und Jugendliche wollen wir Präventions- und Unterstützungsangebote deutlich ausbauen, unter anderem durch mehr Schulpsycholog*innen und -sozialarbeiter*innen, aufsuchende Jugendpsychiatrie-Teams, frühzeitige Hilfen im sozialen Umfeld und eine bessere Vernetzung zwischen dem Gesundheits-, Jugend- und Bildungsbereich.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=204",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2301, 2302, 2304],
+      "massnahmen": [
+        {
+          "id": 10174,
+          "instrument": 10125,
+          "beschreibung": "Medienbildung für Lehrkräfte stärken, damit Schulen besser auf Mobbing im Netz reagieren können",
+          "ursachen_ids": [2302],
+          "zitat": "Und wir stärken die Medienbildung für Lehrkräfte, damit Schule besser auf Mobbing im Netz, Desinformation und den souveränen Umgang mit digitalen Medien reagieren kann.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=44",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10175,
+          "instrument": 10123,
+          "beschreibung": "Psychosoziale Beratung an Schulen ermöglichen und Programme für die mentale Gesundheit von Schüler*innen ausbauen",
+          "ursachen_ids": [2304],
+          "zitat": "Für eine demokratischere Schule und ein gesundes Lernklima wollen wir: […] psychosoziale Beratung an den Schulen ermöglichen und Programme zur Förderung der mentalen Gesundheit von Schüler*innen ausbauen.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=44",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10176,
+          "instrument": 10129,
+          "beschreibung": "Stundentafel entschlacken und Fächerzahl reduzieren",
+          "ursachen_ids": [2304],
+          "zitat": "Um bestmögliche Wege zum Bildungserfolg zu ermöglichen, werden wir: […] vernetztes Lernen fördern, die Stundentafel entschlacken, die Fächerzahl reduzieren und Verbundfächer unterstützen.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=43",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10177,
+          "beschreibung": "Wahlmöglichkeiten zwischen Abitur nach zwölf oder dreizehn Jahren an Schulen schaffen",
+          "ursachen_ids": [2304],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Längere Schulzeit kann Zeitdruck mindern; Studien zu G8/G9 finden teils mehr Stress bei G8 (v. a. Mädchen), teils keine gesundheitlichen Unterschiede. Wahlmodell braucht Organisationsaufwand.",
+          "zitat": "Um bestmögliche Wege zum Bildungserfolg zu ermöglichen, werden wir: […] flexible Schulausgangsphasen mit Wahlmöglichkeiten zwischen Abitur nach 12 oder 13 Jahren schaffen.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=43",
+          "beleg_studie_url": "https://www.diw.de/de/diw_01.c.497179.de/publikationen/roundup/2015_0057/empirische_befunde_zu_auswirkungen_der_g8-schulzeitverkuerzung.html",
+          "evidenz": "gemischt",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10178,
+          "instrument": 10112,
+          "beschreibung": "Präventionskonzepte gegen sexualisierte und digitale Gewalt an Schulen",
+          "ursachen_ids": [2301],
+          "zitat": "Wir schützen Frauen* vor Gewalt durch: […] Präventionskonzepte gegen sexualisierte und digitale Gewalt an Schulen, Hochschulen und am Arbeitsplatz.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=82",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10179,
+          "instrument": 10127,
+          "beschreibung": "Fachkräfte durch gezielte Fortbildungen unterstützen, Kinder und Jugendliche schutzorientiert zu begleiten",
+          "ursachen_ids": [2302],
+          "zitat": "Um Gleichstellung und Selbstbestimmung von Anfang an mitzudenken und zu stärken, wollen wir: […] alle Fachkräfte durch gezielte Fortbildungen unterstützen, damit sie Kinder und Jugendliche sicher, verantwortungsvoll und schutzorientiert begleiten können.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=84",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10180,
+          "instrument": 10127,
+          "beschreibung": "Verpflichtende Weiterbildungen für Pädagog*innen gegen Mehrfachdiskriminierung queerer Menschen einführen",
+          "ursachen_ids": [2302],
+          "zitat": "Um Queerfeminismus zu fördern: […] führen wir verpflichtende Weiterbildungen für Pädagog*innen, Sozialarbeiter*innen, Schulpsycholog*innen und für Polizist*innen ein, um Mehrfachdiskriminierung von queeren Personen zu verhindern.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=87",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "durchsucht_fuer": [2301, 2302, 2303, 2304],
+      "massnahmen": [
+        {
+          "id": 10181,
+          "beschreibung": "Praxisnahe Aus- und Fortbildung sowie bessere Arbeitsbedingungen und Aufstieg für Lehrkräfte",
+          "ursachen_ids": [2302],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Bessere Ausbildung kann Handlungssicherheit stärken, Mobbing ist nicht genannt; Lehrkräfteausbildung und Bezahlung liegen bei den Ländern.",
+          "zitat": "Mit attraktiveren Arbeitsbedingungen, einer praxisnahen Aus- und Fortbildung, einer leistungsorientierten Bezahlung und attraktiven Aufstiegsmöglichkeiten wollen wir mehr Freiräume im Lehrberuf schaffen.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=9",
+          "evidenz": "offen",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10182,
+          "beschreibung": "Auseinandersetzung mit Menschenfeindlichkeit im Schulunterricht intensivieren",
+          "ursachen_ids": [2301],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Kann abwertende Haltungen thematisieren; Wirkung auf Mobbing ist schwach belegt, und Unterrichtsinhalte regeln allein die Länder.",
+          "zitat": "In der Schule muss außerdem auch die Auseinandersetzung mit den verschiedenen Formen von Menschenfeindlichkeit wie dem Antisemitismus intensiviert werden.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=9",
+          "evidenz": "gemischt",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10183,
+          "beschreibung": "Schulen erhalten frei einsetzbares Budget und können auch über die Länge der gymnasialen Laufbahn entscheiden",
+          "ursachen_ids": [2304],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Wahl der Schulzeit kann Zeitdruck mindern, Befunde zu G8/G9 sind gemischt; Schulautonomie und Schulzeit regeln die Länder, der Bund kann das nicht vorgeben.",
+          "zitat": "Wir wollen den Schulen mehr pädagogische, personelle und finanzielle Kompetenzen einräumen. Dazu sollen alle ein frei einsetzbares Chancenbudget erhalten. Damit können Schulen eigenständig […] die Länge der gymnasialen Laufbahn (G8/G9) entscheiden.",
+          "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=9",
+          "evidenz": "gemischt",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2301, 2302, 2304],
+      "massnahmen": [
+        {
+          "id": 10184,
+          "instrument": 10126,
+          "beschreibung": "Verpflichtende, bedarfsgerechte Fortbildungen für alle Lehrkräfte mit jährlichem Mindestkontingent und regelmäßiger Kontrolle.",
+          "ursachen_ids": [2302],
+          "zitat": "Daher setzen wir uns für verpflichtende, bedarfsgerechte Fortbildungsveranstaltungen für sämtliche Lehrkräfte ein, von denen sie ein bestimmtes Kontingent im Jahr erfüllen müssen, und werden ihre Erfüllung regelmäßig überprüfen.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=10",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10185,
+          "beschreibung": "Polizeiliche Anti-Gewalt-Trainings im Schulunterricht und Informationsangebote ausbauen.",
+          "ursachen_ids": [2301],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ergänzt Prävention im Unterricht; polizeilich geleitete Kurzprogramme zeigen in Studien meist nur schwache Effekte, Mobbing wird nicht eigens adressiert.",
+          "zitat": "Präventive Angebote, wie beispielsweise die von der Polizei im Rahmen des Schulunterrichts angebotenen Anti-Gewalt-Trainings, und Informationsveranstaltungen müssen verstärkt werden.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=68",
+          "evidenz": "offen",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10186,
+          "beschreibung": "Mehr Einsatz von Jugend- und Sozialarbeit und eine bessere Verzahnung von Polizei, Schulen und Jugendhilfe.",
+          "ursachen_ids": [2302],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Bessere Zusammenarbeit von Schule, Jugendhilfe und Polizei kann bei Gewalt schneller Hilfe bringen; vieles zielt auf Jugendkriminalität außerhalb der Schule, Wirkung auf Mobbing ist offen.",
+          "zitat": "Präventive Angebote, wie beispielsweise die von der Polizei im Rahmen des Schulunterrichts angebotenen Anti-Gewalt-Trainings, und Informationsveranstaltungen müssen verstärkt werden. Gleichzeitig ist eine bessere Verzahnung von Polizei, Schulen und Jugendhilfe erforderlich. Darüber hinaus ist ein verstärkter Einsatz von Jugend- und Sozialarbeiterinnen und -arbeitern sowie Streetworkerinnen und Streetworkern notwendig, um eine verlässliche Anlaufstelle zu schaffen.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=68",
+          "evidenz": "offen",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2301, 2302, 2304],
+      "massnahmen": [
+        {
+          "id": 10187,
+          "instrument": 10112,
+          "beschreibung": "Prävention von Mobbing, Cybermobbing und Gewalt an Schulen stärken",
+          "ursachen_ids": [2301],
+          "zitat": "Deshalb stärken wir die Prävention von Mobbing, Cybermobbing, Gewalt und digitalen Konflikten sowie den Zugang zu bestehenden Unterstützungsangeboten.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=87",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10188,
+          "instrument": 10120,
+          "beschreibung": "Schulordnungen mit klaren Regeln zu Gewalt und Mobbing und abgestuften Reaktionswegen",
+          "ursachen_ids": [2301],
+          "zitat": "Wir Freie Demokraten werden: […] die Schulordnungen auf wenige klare und rechtssichere Regeln konzentrieren. Gewalt, Mobbing, Bedrohungen und das Mitführen von Waffen müssen darin eindeutig geregelt und mit abgestuften, verbindlichen Reaktionswegen hinterlegt werden.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=89",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10189,
+          "beschreibung": "Vom Unterricht suspendierte, gewaltauffällige Jugendliche durch Bildungs- und Berufsangebote beschäftigen und fördern",
+          "ursachen_ids": [2301],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Förderung suspendierter Jugendlicher kann Rückfälle verringern; setzt erst nach dem Ausschluss an und wirkt kaum auf das Klima in der Klasse.",
+          "zitat": "Wir Freie Demokraten werden: […] sicherstellen, dass vom Unterricht suspendierte Jugendliche sinnvoll beschäftigt werden und zu diesem Zweck gewaltauffällige Jugendliche durch Bildungs- und Berufsangebote fördern, insbesondere durch Kooperationen mit Handwerksbetrieben und Jugendhilfeträgern.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=89",
+          "evidenz": "offen",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10190,
+          "instrument": 10125,
+          "beschreibung": "Fortbildungen für Lehrkräfte zum Umgang mit Gewaltvorfällen verbindlich in die Qualitätsentwicklung der Schulen einbinden",
+          "ursachen_ids": [2302],
+          "zitat": "Wir Freie Demokraten werden: […] bestehende Fortbildungsangebote zu Notfallmanagement, Deeskalation, schulrechtlichen Handlungsmöglichkeiten und Umgang mit Gewaltvorfällen verbindlich in die schulische Qualitätsentwicklung einbinden.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=89",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10191,
+          "instrument": 10122,
+          "beschreibung": "Jede Schule erhält eine Kraft für Schulsozialarbeit, die soziale Konflikte lösen hilft",
+          "ursachen_ids": [2302],
+          "zitat": "Wir Freie Demokraten werden: […] gewährleisten, dass jede Schule eine Kraft für Schulsozialarbeit als pädagogische Unterstützung und Beratung im Haus hat, um komplexe und schwierige soziale Konflikte lösen zu können.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=97",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10192,
+          "instrument": 10123,
+          "beschreibung": "Schülerinnen und Schüler mit psychischer Stärke durch die Schulzeit begleiten, mit Fachkräften und festen Strukturen",
+          "ursachen_ids": [2304],
+          "zitat": "Wir Freie Demokraten werden: […] sicherstellen, dass jede Schülerin und jeder Schüler die Chance hat, mit psychischer Stärke durch die Schulzeit zu gehen, begleitet von Profis, unterstützt durch echte Strukturen und in einem Umfeld, das zuhört und handelt.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=101",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2301, 2302, 2304],
+      "massnahmen": [
+        {
+          "id": 10193,
+          "instrument": 10126,
+          "beschreibung": "Verbindliches Qualifizierungsprogramm mit pädagogischer Schulung, Fortbildungen und Mentoring für Seiteneinsteiger in den Lehrerberuf",
+          "ursachen_ids": [2302],
+          "zitat": "Für Seiteneinsteigerinnen und Seiteneinsteiger fordern wir ein verbindliches, 1,5-jähriges Qualifizierungsprogramm mit pädagogischer Schulung, begleitenden Fortbildungen und individuellem Mentoring – nach Vorbild erfolgreicher Modelle.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=30",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10194,
+          "instrument": 10115,
+          "beschreibung": "Diskriminierung in Jugendarbeit und Schule entgegenwirken, mit Aufklärung für Toleranz und Akzeptanz werben",
+          "ursachen_ids": [2301],
+          "zitat": "Dazu wollen wir etwa in der Jugendarbeit und in der Schule Diskriminierung entgegenwirken und mit Aufklärung für Toleranz und Akzeptanz werben.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=37",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "durchsucht_fuer": [2301, 2302, 2303, 2304],
+      "massnahmen": [
+        {
+          "id": 10195,
+          "beschreibung": "Stärkung der Disziplinarrechte und der rechtlichen Sicherheit von Lehrkräften und Schulen",
+          "ursachen_ids": [2301, 2302],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Mehr Disziplinarrechte können Eingreifen erleichtern, strafende Ansätze allein zeigen aber wenig Wirkung aufs Schulklima; Schulrecht ist Ländersache.",
+          "zitat": "Disziplinarrechte der Lehrer und Schulen stärken. Um den Auftrag der Schule gerecht zu werden, bedarf es einer Stärkung der rechtlichen Sicherheit und der Disziplinarrechte.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=162",
+          "evidenz": "gemischt",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2301, 2302, 2304],
+      "massnahmen": [
+        {
+          "id": 10196,
+          "instrument": 10120,
+          "beschreibung": "Konsequentes Ahnden von übergriffigem Verhalten gegen Mitschüler und Lehrer; verbindliches Meldeverfahren und Einschalten der Polizei bei Gewalt an Schulen",
+          "ursachen_ids": [2301, 2302],
+          "zitat": "Die AfD wird konsequente Maßnahmen gegen Gewalt an Schulen umsetzen. Auch übergriffiges Verhalten unterhalb der Strafbarkeitsgrenze gegenüber Mitschülern und Lehrern muss konsequent geahndet werden.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=31",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10197,
+          "instrument": 10121,
+          "beschreibung": "Schulausschluss, wenn eine ernstliche Gefahr für andere Schüler besteht",
+          "ursachen_ids": [2301],
+          "zitat": "Ausschluss von der Schule muss möglich werden, wenn eine ernstliche Gefahr für die anderen Schüler vorliegt.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=31",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10198,
+          "instrument": 10121,
+          "beschreibung": "Alternative Beschulungsformen für fremdgefährdende Kinder und Jugendliche",
+          "ursachen_ids": [2301],
+          "zitat": "Für fremdgefährdende Kinder und Jugendliche schaffen wir alternative Formen der Beschulung.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=31",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10199,
+          "beschreibung": "Einführung von Schulkleidung, damit die Herkunft im Schulalltag weniger in den Vordergrund tritt",
+          "ursachen_ids": [2301],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Soll Statusunterschiede als Anlass für Ausgrenzung mindern; größere Studien finden keinen Rückgang von Mobbing, nur Befragungen einzelner Schulen berichten Vorteile.",
+          "zitat": "Schulen sind Orte des ungestörten gemeinsamen Lernens, an denen die Herkunft weder kulturell noch finanziell im Vordergrund stehen darf. Die Einführung von Schulkleidung trägt dem Rechnung.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=29",
+          "evidenz": "gemischt",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10200,
+          "instrument": 10125,
+          "beschreibung": "Lehrkräfteausbildung mit Schwerpunkt auf Klassenführung und Stressmanagement",
+          "ursachen_ids": [2302],
+          "zitat": "Im Lehrkräftebildungsgesetz wollen wir den Schwerpunkt weg von den politisch vorgegebenen Themen […] hin zu denjenigen Themen verlagern, welche die Lehramtsabsolventen in der Multikohortenstudie als besonders wichtig benannt haben: Unterrichtsplanung, Klassenführung, Stressmanagement und digitale Medienbildung.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=39",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2301, 2302, 2304],
+      "massnahmen": [
+        {
+          "id": 10201,
+          "instrument": 10121,
+          "beschreibung": "Lehrkräfte sollen ihre Sanktionsmöglichkeiten gesetzlich erhalten; bei Gewalt- und Drogendelikten sollen Schulverweise schneller erfolgen.",
+          "ursachen_ids": [2301],
+          "zitat": "Dafür werden wir die Sanktionsmöglichkeiten der Lehrkräfte gesetzlich stärken und bei Gewalt- und Drogendelikten deutlich schneller von Schulverweisen Gebrauch machen.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=32",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10202,
+          "instrument": 10122,
+          "beschreibung": "Schulsozialarbeit wird als Landesaufgabe etabliert; die Zahl der Schulpsychologen soll dem Bedarf angepasst werden.",
+          "ursachen_ids": [2301, 2302],
+          "zitat": "Gewalt- und Drogenprobleme werden wir durch konsequentes Handeln unterbinden; Schulsozialarbeit wird als Landesaufgabe etabliert und die Zahl der Schulpsychologen dem gestiegenen Bedarf angepasst.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=25",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10203,
+          "beschreibung": "Vorschaltklassen, in denen Kinder mit Sprachdefiziten bei Bedarf Sprachkompetenz und grundlegendes Sozialverhalten vermittelt bekommen.",
+          "ursachen_ids": [2301],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Vermittlung von Sozialverhalten kann Konflikte mindern; getrennte Klassen können aber Ausgrenzung verstärken, eine Wirkung auf Mobbing ist kaum untersucht.",
+          "zitat": "Wir setzen uns deshalb konsequent für Vorschaltklassen ein, in denen Kindern mit Migrationshintergrund bei Bedarf gezielt Sprachkompetenz und grundlegendes Sozialverhalten vermittelt werden.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=26",
+          "evidenz": "offen",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2301, 2302, 2304],
+      "massnahmen": [
+        {
+          "id": 10204,
+          "instrument": 10121,
+          "beschreibung": "Gewalttäter sollen nach überarbeiteten Ordnungsmaßnahmen schneller von der Schule verwiesen werden können; bei Wiederholung Überweisung an eine Spezialschule.",
+          "ursachen_ids": [2301],
+          "zitat": "Für die noch nicht strafmündigen Schüler werden wir die Verordnung über schulische Ordnungsmaßnahmen vom 6. Februar 2012 und den Erlass über Erziehungsmitteln in der Schule vom 26. Mai 1994 dergestalt überarbeiten, dass Gewalttäter schneller der Schule verwiesen und im Wiederholungsfall oder in besonders schweren Fällen an eine Spezialschule für Gewalttäter überwiesen werden können.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=89",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10205,
+          "beschreibung": "Vernetzung von Schulen und Staatsanwaltschaften, damit jede Straftat strafmündiger Schüler vor Gericht kommt.",
+          "ursachen_ids": [2301],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Kann Übergriffe als nicht hinnehmbar markieren; Strafverfahren wirken spät, und Diversion nach Jugendgerichtsgesetz ist Bundesrecht, eine Anklage jeder Tat kann das Land nicht vorgeben.",
+          "zitat": "Wir wollen durch Vernetzung von Schulen und Staatsanwaltschaften erreichen, dass jede Straftat aller strafmündigen Schüler vor Gericht kommt.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=89",
+          "evidenz": "offen",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10206,
+          "beschreibung": "Privater Wachdienst auf dem Schulhof, unterstellt dem Schulleiter, bei Bedarf einzurichten.",
+          "ursachen_ids": [2301],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Mehr Aufsicht auf dem Schulhof kann Übergriffe dort mindern; private Wachleute haben aber keine pädagogische Rolle und kaum Befugnisse, Wirkung auf Mobbing ist unbelegt.",
+          "zitat": "Deshalb braucht es einen dem Schulleiter unterstehenden privaten Wachdienst, der auf dem Schulhof für Recht und Ordnung sorgt und potenzielle Gewalttäter in ihre Schranken weist. Wir werden bei Bedarf einen solchen Wachdienst einrichten.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=88",
+          "evidenz": "offen",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10207,
+          "instrument": 10128,
+          "beschreibung": "Erweiterte Appellationsrechte für Eltern und Schüler bei Fehlverhalten von Lehrkräften und eine Beschwerdestelle am Bildungsministerium.",
+          "ursachen_ids": [2302],
+          "zitat": "Um auf Fehlverhalten von Lehrern und Schulleitern angemessen reagieren zu können, werden wir erweiterte Appellationsrechte für Eltern und Schüler schaffen und am Bildungsministerium eine Beschwerdestelle mit erhöhter Sichtbarkeit einrichten.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=86",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "durchsucht_fuer": [2301, 2302, 2303, 2304],
+      "massnahmen": [
+        {
+          "id": 10208,
+          "beschreibung": "Hausaufgaben abschaffen; das Einüben und Festigen soll in der Schule stattfinden.",
+          "ursachen_ids": [2304],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Weniger Hausaufgaben können Lernangst und Druck mindern (Querschnittsdaten), der Nutzen von Hausaufgaben ist uneinheitlich belegt; über Hausaufgaben entscheiden allein die Länder.",
+          "zitat": "Lernen soll in der Schule stattfinden. Über Hausaufgaben wird soziale Ungleichheit in ungleichen Schulerfolg übersetzt, deshalb wollen wir sie abschaffen.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=38",
+          "beleg_studie_url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2023.1130274/full",
+          "evidenz": "gemischt",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10209,
+          "instrument": 10124,
+          "beschreibung": "Schulpsychologische und sozialarbeiterische Fachkräfte dauerhaft an jeder Schule verfügbar machen.",
+          "ursachen_ids": [2304],
+          "zitat": "Schulpsycholog*innen und Sozialarbeiter*innen müssen flächendeckend und dauerhaft an jeder Schule verfügbar sein.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=39",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2301, 2302, 2304],
+      "massnahmen": [
+        {
+          "id": 10210,
+          "instrument": 10113,
+          "beschreibung": "Flächendeckende Präventions- und Anti-Gewaltprogramme an Schulen einführen",
+          "ursachen_ids": [2301],
+          "zitat": "Es müssen flächendeckend Präventions- und Anti-Gewaltprogramme eingeführt werden.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=40",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10211,
+          "instrument": 10122,
+          "beschreibung": "Mehr Sozialarbeit an Schulen; Prävention statt Repression bei Gewalt unter Minderjährigen",
+          "ursachen_ids": [2302, 2301],
+          "zitat": "Schwere Körperverletzungen unter Minderjährigen nehmen zu. Wir setzen auf Prävention vor Repression. In die Schulen gehören mehr Sozalarbeiter.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=40",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10212,
+          "instrument": 10125,
+          "beschreibung": "Fortbildungsangebote für Lehrkräfte, Sozialarbeit und Polizei gegen Cybermobbing erweitern und verbessern",
+          "ursachen_ids": [2302],
+          "zitat": "Cybermobbing und Online-Kriminalität unter Jugendlichen sagen wir den Kampf an. Dazu erweitern und verbessern wir Fortbildungsangebote für Lehrkräfte, Sozialarbeiter und die Polizei.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=40",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10213,
+          "beschreibung": "Frühere Intervention bei Gewalt in Schulen und intensive soziale Betreuung von Mehrfachtätern",
+          "ursachen_ids": [2302],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Früheres Eingreifen setzt direkt am Handeln der Schule an; die Zusage nennt aber kein Verfahren, und die Betreuung von Mehrfachtätern erreicht nur einen kleinen Teil der Fälle.",
+          "zitat": "Bei Gewalt in Schulen muss eine frühere Intervention stattfinden. Insbesondere für Mehrfachtäter streben wir eine intensive soziale Betreuung an.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=40",
+          "evidenz": "offen",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10214,
+          "instrument": 10117,
+          "beschreibung": "Wiedereinführung einer verbindlichen Vorschulphase, die soziales Lernen fördert",
+          "ursachen_ids": [2301],
+          "zitat": "Darüber hinaus setzen wir uns für die Wiedereinführung einer verbindlichen Vorschulphase ein, die gezielt Sprachbildung, Zahlenverständnis und soziales Lernen fördert.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=14",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2301, 2302, 2304],
+      "massnahmen": [
+        {
+          "id": 10215,
+          "instrument": 10113,
+          "beschreibung": "Gewaltschutz, Prävention und soziales Lernen als feste Bestandteile schulischer Bildung ausbauen.",
+          "ursachen_ids": [2301],
+          "zitat": "Ausbau von Gewaltschutz, Prävention und sozialem Lernen als festen Bestandteilen schulischer Bildung.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=46",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10216,
+          "instrument": 10122,
+          "beschreibung": "Schulen mit multiprofessionellen Teams (u. a. Sozialarbeit, Schulpsychologie) ausstatten, um psychischen Problemen und Gewalt vorzubeugen.",
+          "ursachen_ids": [2301, 2302, 2304],
+          "zitat": "Schulen sind mit multiprofessionellen Teams (Sozialarbeit, Gesundheitsförderung, Schulpsychologie, IT-Support) auszustatten, um psychischen Problemen und Gewalt vorzubeugen.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=46",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10217,
+          "instrument": 10116,
+          "beschreibung": "Verbindliche Klassenleiterstunde und feste Sprechzeiten für Klassenleitungen.",
+          "ursachen_ids": [2301],
+          "zitat": "Verbindliche Klassenleiterstunde und feste Sprechzeiten für die Klassenleiter.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=46",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10218,
+          "instrument": 10116,
+          "beschreibung": "Mehr Klassennachmittage, gemeinsame Unternehmungen und Aktionen an Schulen.",
+          "ursachen_ids": [2301],
+          "zitat": "Mehr Klassennachmittage, gemeinsame Unternehmungen und Aktionen an Schulen.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=46",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10219,
+          "beschreibung": "Kleinere Klassen mit höchstens 24 Schülerinnen und Schülern, unter anderem für Resilienz und soziale Kompetenzen.",
+          "ursachen_ids": [2304, 2301],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 1,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Kleinere Klassen senkten Mobbing in manchen Studien (etwa Grundschule Japan), in anderen nicht; zusätzliche Lehrkräfte fehlen absehbar.",
+          "zitat": "Kleinere Klassen mit maximal 24 Schülerinnen und Schülern, um individuelle Förderung, Resilienz, Selbstbewusstsein und soziale Kompetenzen zu stärken.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=48",
+          "beleg_studie_url": "https://www.rieti.go.jp/en/publications/summary/17030016.html",
+          "evidenz": "gemischt",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10220,
+          "beschreibung": "Verbindliche Sucht- und Gesundheitsprävention in Schulen, altersgerecht und alltagsnah, mit Stärkung von Lebens-, Sozial- und Resilienzkompetenzen.",
+          "ursachen_ids": [2304, 2301],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Lebenskompetenzprogramme können Sozial- und Bewältigungsfähigkeiten stärken; der Schwerpunkt liegt auf Sucht- und Gesundheitsprävention, Mobbing und Leistungsdruck werden nur am Rand berührt.",
+          "zitat": "Verbindliche Sucht- und Gesundheitsprävention in Schulen, altersgerecht und alltagsnah. […] Stärkung von Lebens-, Sozial- und Resilienzkompetenzen.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=63",
+          "evidenz": "offen",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10221,
+          "instrument": 10131,
+          "beschreibung": "Schultage nicht weiter verlängern, stattdessen Hausaufgabenbetreuung anbieten, damit der Nachmittag frei bleibt.",
+          "ursachen_ids": [2304],
+          "zitat": "Schultage nicht weiter verlängern, eher Hausaufgabenbetreuung anbieten, um den Nachmittag für Hobbys und Vereinsleben freizuhalten.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=46",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10222,
+          "instrument": 10126,
+          "beschreibung": "Verpflichtende, praxisnahe Fortbildungen für Lehrkräfte, im Rahmen verbesserter Arbeitsbedingungen.",
+          "ursachen_ids": [2302],
+          "zitat": "Verbesserung der Rahmenbedingungen für die Lehrkräfte […] verpflichtende, praxisnahe Fortbildungen.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=47",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2301, 2302, 2304],
+      "massnahmen": [
+        {
+          "id": 10223,
+          "instrument": 10122,
+          "beschreibung": "Verbindlicher landesweiter Personalschlüssel für Schulsozialarbeit und Schulpsychologie; jede Schule mindestens eine Schulsozialarbeitsstelle",
+          "ursachen_ids": [2301, 2302],
+          "zitat": "Schulsozialarbeit ist jedoch unverzichtbar für Prävention, Integration, Konfliktlösung und die Unterstützung von Lehrkräften. […] Wir brauchen einen verbindlichen, landesweiten Personalschlüssel für Schulsozialarbeit und Schulpsychologie, orientiert am Bundesdurchschnitt. Jede Schule muss dauerhaft mindestens eine Schulsozialarbeiterstelle haben.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=47",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10224,
+          "instrument": 10126,
+          "beschreibung": "Lehramtsausbildung: Theorie und Praxis im Studium besser verzahnen, damit Absolventen im Beruf bestehen",
+          "ursachen_ids": [2302],
+          "zitat": "Theorie und Praxis müssen im Studium besser verzahnt werden, damit Absolventen sicher, handlungsfähig und langfristig im Beruf bestehen können.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=52",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10225,
+          "instrument": 10123,
+          "beschreibung": "Sozialpsychiatrischen Dienst ausbauen und stärker in Jugend- und Schularbeit einbinden",
+          "ursachen_ids": [2304],
+          "zitat": "Immer mehr sozial benachteiligte Menschen, Rentner, Geflüchtete sowie Jugendliche leiden unter Depressionen, Zukunftsängsten oder Traumafolgestörungen. […] Der sozialpsychiatrische Dienst muss deshalb ausgebaut und stärker in Jugend-, Schul- und Integrationsarbeit eingebunden werden.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=59",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10226,
+          "instrument": 10130,
+          "beschreibung": "Längeres gemeinsames Lernen als Antwort auf Überforderung und Leistungsdruck an Schulen",
+          "ursachen_ids": [2304],
+          "zitat": "Überforderung, Leistungsdruck, Nachhilfe und Schulabbrüche sind häufige Folgen. Das BSW ist deshalb für längeres gemeinsames Lernen bis zur 8. Klasse.",
+          "beleg_programm_url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf#page=45",
+          "stand": "2026-10-20",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2301, 2302, 2304],
+      "massnahmen": [
+        {
+          "id": 10325,
+          "instrument": 10112,
+          "beschreibung": "Landesprogramm gegen Mobbing; Schulklima und Schulsozialarbeit als Bausteine der Prävention.",
+          "ursachen_ids": [2301, 2302],
+          "zitat": "Wir möchten ein Landesaktionsprogramm gegen Mobbing etablieren. Studien zeigen eine hohe Quote an Mobbingfällen sowohl an Schulen als auch in der Arbeitswelt. Es zeigt sich, dass betroffene Täter*innen und Opfer ihre Rollen oftmals von der Schule ins Berufsleben übertragen. Daher gilt es, frühzeitig zu intervenieren und präventiv zu handeln. Dazu braucht es eine starke Schulsozialarbeit ebenso wie ein Schulklima, das auf Kooperation und Miteinander setzt.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=63",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10326,
+          "instrument": 10128,
+          "beschreibung": "Unabhängige landesweite Ombudsstelle für Schulen, an die sich Schüler*innen, Eltern und Lehrkräfte bei Diskriminierung und Übergriffen anonym wenden können.",
+          "ursachen_ids": [2302],
+          "zitat": "Wir setzen für Schulen eine unabhängige landesweite Ombudsstelle für Diskriminierung und Übergriffe jeglicher Art, verbal und körperlich ein, an die sich Schüler*innen, Eltern und Lehrkräfte zur (anonymen) Meldung von Vorfällen und zur (anonymen) Beratung im Umgang mit diesen wenden können.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=64",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10327,
+          "instrument": 10125,
+          "beschreibung": "Verbindliche regelmäßige Fortbildungen für Lehrkräfte zu Diskriminierung und Übergriffen.",
+          "ursachen_ids": [2302],
+          "zitat": "Gleichzeitig wollen wir verbindliche regelmäßige Fortbildungen von Lehrer*innen im Bereich der Diskriminierung, um sie zu sensibilisieren und um ihnen wirksame Werkzeuge im Umgang mit Diskriminierung und Übergriffen an die Hand zu geben.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=64",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10328,
+          "instrument": 10116,
+          "beschreibung": "Mehr Mitbestimmung von Schüler*innen durch Klassenräte und Schüler*innenparlamente.",
+          "ursachen_ids": [2301],
+          "zitat": "Wir setzen uns entschieden dafür ein, die Mitbestimmung von Schüler*innen auf allen Ebenen der Schule zu stärken, um Demokratie für junge Menschen früh erfahrbar zu machen. […] Um echte Mitbestimmung zu gewährleisten, fordern wir neben Schüler*innenvertretungen auch die Einführung weiterer Gremien wie Klassenräte und Schüler*innenparlamente.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=64",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10329,
+          "instrument": 10322,
+          "beschreibung": "Stressmanagement, Achtsamkeit und Entspannung als Bestandteil des Sportunterrichts.",
+          "ursachen_ids": [2304],
+          "zitat": "Wir wollen eine inhaltliche Erweiterung des Schulsports mit einem neuen Fokus auf Gesundheitsprävention und Freude an Bewegung einführen. Körperbezogene Ansätze zum Stressmanagement",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=56",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10330,
+          "instrument": 10321,
+          "beschreibung": "Benotungen im Schulbetrieb deutlich verringern und in Neigungs- und Talentfächern abschaffen; stattdessen dialogorientierte Rückmeldungen.",
+          "ursachen_ids": [2304],
+          "zitat": "Wir setzen uns für eine deutliche Verringerung der Benotungen im allgemeinen Schulbetrieb und den Ersatz durch dialogorientierte Rückmeldeformate ein, die individuelle Lernfortschritte, Fähigkeiten und Entwicklungspotenziale stärker berücksichtigen. In Neigungs- und Talentfächern sollen Noten generell abgeschafft werden.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=60",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10331,
+          "instrument": 10320,
+          "beschreibung": "Sitzenbleiben soll im Wesentlichen eine freiwillige Entscheidung von Schüler*innen und Eltern sein.",
+          "ursachen_ids": [2304],
+          "zitat": "Das sogenannte „Sitzenbleiben“ soll im Wesentlichen eine freiwillige und individuelle Entscheidung der Schüler*innen und Eltern werden.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=60",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10332,
+          "instrument": 10320,
+          "beschreibung": "Stärkung der flexiblen Schuleingangsphase mit altersgemischten Gruppen, ohne Leistungsdruck durch Sitzenbleiben.",
+          "ursachen_ids": [2304],
+          "zitat": "Zusätzlich setzen wir uns für die Stärkung der flexiblen Schuleingangsphase ein. Kinder lernen dort in altersgemischten Gruppen und können entsprechend ihrer Entwicklung zwei bis drei Jahre dort verweilen. So bekommt jedes Kind die nötige Zeit, sich zu entwickeln, ohne Stigmatisierung und Leistungsdruck durch Sitzenbleiben zu erfahren.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=60",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10333,
+          "beschreibung": "Abitur wieder nach 13 Schuljahren (G9), damit mehr Zeit für persönliche Entwicklung bleibt.",
+          "ursachen_ids": [2304],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Eine Studie fand unter G8 mehr Stress bei Mädchen, andere keine gesundheitlichen Unterschiede zu G9; die Umstellung dauert mehrere Jahre und braucht zusätzliche Lehrkräfte.",
+          "zitat": "Darüber hinaus setzen wir uns dafür ein, dass das Abitur wieder nach 13 Schuljahren (G9) abgelegt wird. Ein längerer Bildungsweg bietet Schüler*innen mehr Zeit für persönliche Entwicklung, außerschulisches Engagement und vertiefendes Lernen.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=60",
+          "beleg_studie_url": "https://www.diw.de/de/diw_01.c.497179.de/publikationen/roundup/2015_0057/empirische_befunde_zu_auswirkungen_der_g8-schulzeitverkuerzung.html",
+          "evidenz": "gemischt",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2301, 2302, 2304],
+      "massnahmen": [
+        {
+          "id": 10334,
+          "instrument": 10128,
+          "beschreibung": "Unabhängige Beschwerdestelle für Schüler*innen und Eltern bei Diskriminierung, Mobbing und Gewalt an Schulen",
+          "ursachen_ids": [2302],
+          "zitat": "Die Linke setzt sich konsequent gegen Rassismus, Antisemitismus, Sexismus, Queerfeindlichkeit, Ableismus, Diskriminierung aufgrund des sozio-ökonomischen Status, Mobbing und Gewalt an Berliner Schulen ein. Dafür braucht es eine abgestimmte und funktionsfähige Antidiskriminierungsarchitektur. Kernstück ist eine unabhängige Beschwerdestelle, angedockt an die Landesantidiskriminierungsstelle.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=162",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10335,
+          "instrument": 10122,
+          "beschreibung": "Schulsozialarbeit strukturell stärken, um Ausgrenzung und Gewalt frühzeitig entgegenzuwirken",
+          "ursachen_ids": [2301, 2302],
+          "zitat": "Darüber hinaus müssen diskriminierungskritische Jugendarbeit und Schulsozialarbeit strukturell gestärkt werden, um Rassismus, Ausgrenzung und digitaler Gewalt frühzeitig entgegenzuwirken.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=281",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10336,
+          "instrument": 10321,
+          "beschreibung": "Ziffernnoten bis einschließlich Klasse 9 durch mündliche und schriftliche Rückmeldungen zum Leistungsstand ersetzen",
+          "ursachen_ids": [2304],
+          "zitat": "Ziffernnoten wollen wir an allen Schularten bis einschließlich Klasse 9 durch mündliche und schriftliche Rückmeldungen zum Leistungsstand ersetzen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=168",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10337,
+          "beschreibung": "Hausaufgaben abbauen",
+          "ursachen_ids": [2304],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Mehr Hausaufgabenzeit hängt in Querschnittsdaten mit mehr Lernangst zusammen, ursächlich ist das nicht belegt; Abbau ist ohne Zusatzpersonal möglich, der Umfang bleibt unbestimmt.",
+          "zitat": "Vor allem Schüler*innen aus finanziell ärmeren Verhältnissen haben weniger Zeit, Räume, Ruhe und Unterstützung beim Erledigen von Hausaufgaben. […] Deshalb wollen wir Hausaufgaben abbauen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=168",
+          "beleg_studie_url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2023.1130274/full",
+          "evidenz": "gemischt",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10338,
+          "instrument": 10123,
+          "beschreibung": "Landesprogramm Psychologie an Schulen mit einer Psychologin oder einem Psychologen auf 800 Schüler*innen",
+          "ursachen_ids": [2304],
+          "zitat": "Analog zum Landesprogramm Schulsozialarbeit wollen wir zudem ein Landesprogramm Psychologie an Schulen einrichten und so eine*n Psycholog*in auf 800 Schüler*innen an die Schulen bringen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=158",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10339,
+          "instrument": 10322,
+          "beschreibung": "Selbstregulationskompetenzen stärken; mentale Gesundheit in schulinterne Curricula und Peer-to-Peer-Programme aufnehmen",
+          "ursachen_ids": [2304],
+          "zitat": "Auch die Schüler*innen selbst müssen für ihre Bedürfnisse sensibilisiert werden. Insbesondere Selbstregulationskompetenzen wollen wir stärken. Dazu bedarf es einer Verankerung des Themas mentale Gesundheit in den schulinternen Curricula und des Ausbaus von Peer-to-Peer-Programmen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=158",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10340,
+          "instrument": 10324,
+          "beschreibung": "Probeunterricht beim Übergang an weiterführende Schulen abschaffen",
+          "ursachen_ids": [2304],
+          "zitat": "Den Probeunterricht wollen wir abschaffen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=161",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10341,
+          "instrument": 10324,
+          "beschreibung": "Bei der Schulformempfehlung Stärken stärker würdigen und pädagogischer Einschätzung der Klassenkonferenzen mehr Gewicht geben",
+          "ursachen_ids": [2304],
+          "zitat": "Bei der Entscheidung darüber, welche Schulform einem Kind ab der Sekundarstufe I empfohlen wird, wollen wir nicht nur die Leistungen in Mathe, Deutsch und Englisch einbeziehen, sondern wieder umfassender die Stärken der Schüler*innen würdigen und der pädagogischen Einschätzung der Klassenkonferenzen mehr Gewicht verleihen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=161",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10342,
+          "instrument": 10320,
+          "beschreibung": "Sitzenbleiben auch an Gymnasien abschaffen",
+          "ursachen_ids": [2304],
+          "zitat": "Sitzenbleiben wollen wir auch an Gymnasien abschaffen, freiwilliges Verweilen aber weiterhin ermöglichen, wenn es pädagogisch sinnvoll ist.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=162",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10343,
+          "instrument": 10129,
+          "beschreibung": "Überfüllte und veraltete Lehrpläne entrümpeln",
+          "ursachen_ids": [2304],
+          "zitat": "Darüber hinaus wollen wir die teilweise veralteten und überfüllten Lehrpläne entrümpeln und Lehrpläne wie -formate zeitgemäß gestalten.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=157",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10344,
+          "instrument": 10323,
+          "beschreibung": "Rückzugsorte für Schüler*innen ohne Bewertung an Schulen; Schulclubs fördern",
+          "ursachen_ids": [2304],
+          "zitat": "Schüler*innen brauchen auch in der Schule Rückzugsorte und selbstorganisierte Räume, in denen sie sich begegnen, ausprobieren und ihren Schulalltag mitgestalten können, ohne bewertet oder benotet zu werden. Solche Orte, wie Schulclubs an weiterführenden Schulen, wollen wir fördern.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=164",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10345,
+          "instrument": 10128,
+          "beschreibung": "Antidiskriminierungs- und Mobbingbeauftragte der Bildungsverwaltung in Stelle und Einfluss stärken",
+          "ursachen_ids": [2302],
+          "zitat": "Zudem wollen wir die Stelle und den Einfluss des*der Antidiskriminierungs- sowie Mobbingbeauftragten der Bildungsverwaltung stärken.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=162",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10346,
+          "instrument": 10112,
+          "beschreibung": "Außerschulische Präventions- und Empowermentangebote an Schulen, auch zu Mobbing- und Gewaltprävention, absichern und verstetigen",
+          "ursachen_ids": [2301],
+          "zitat": "Außerschulische Bildungs- und Empowermentangebote in den Bereichen Antidiskriminierung, antirassistische und inklusionssensible Bildung, Antisemitismusprävention, queere Bildung, Armutssensibilisierung, Mobbing- und Gewaltprävention, die die Berliner Schulen durch Projektarbeit, Fortbildungen und bei der Schulentwicklung unterstützen, wollen wir absichern und verstetigen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=163",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [2301, 2302, 2304],
+      "massnahmen": [
+        {
+          "id": 10347,
+          "instrument": 10116,
+          "beschreibung": "Klassenleiterstunden verpflichtend machen und als Klassenrat gemeinsam mit allen Schüler:innen gestalten",
+          "ursachen_ids": [2301],
+          "zitat": "Wir wollen: […] Klassenleiterstunden verpflichtend machen und basisdemokratisch gemeinsam mit allen Schüler:innen in Form eines Klassenrates gestalten.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=5",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10348,
+          "beschreibung": "Eigenes Schulfach „Beziehungen, Sexualkunde und Gesundheit“ nach britischem Vorbild einführen",
+          "ursachen_ids": [2301],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ein Fach zu Beziehungen kann soziales Lernen und respektvollen Umgang fördern; Mobbing ist nicht genannt, eine Wirkung kaum untersucht, und ein neues Fach braucht Stundentafel und Lehrkräfte.",
+          "zitat": "Wir wollen: […] Einführung eines Fachs für „Beziehungen, Sexualkunde und Gesundheit“ nach britischem Vorbild",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=6",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10349,
+          "beschreibung": "Leistungskontrollen begrenzen: höchstens zwei Klausuren oder Tests pro Woche",
+          "ursachen_ids": [2304],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Begrenzt Prüfungsballungen und damit Belastungsspitzen; die Gesamtmenge an Leistungskontrollen bleibt gleich, eine Wirkung solcher Obergrenzen ist kaum untersucht.",
+          "zitat": "Klare Regelung zur Leistungskontrolle. Die aktuellen „Soll“-Bestimmungen sollen so angepasst werden, dass maximal zwei Klausuren oder Test die Woche geschrieben werden dürfen.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=6",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10350,
+          "instrument": 10323,
+          "beschreibung": "Leitlinien für die Pausengestaltung an Schulen und Ruhe- und Gemeinschaftsräume bereitstellen",
+          "ursachen_ids": [2304],
+          "zitat": "Klare Leitlinien für Schulen über die Pausengestaltung, inklusive die Bereitstellung von Ruhe- und Gemeinschaftsräumen, um eine individuelle Pausengestaltung durch Schüler:innen zu ermöglichen.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=6",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10351,
+          "beschreibung": "Benotung in Kunst, Musik und Sport abschaffen, außer wenn die Fächer als Leistungskurse belegt sind",
+          "ursachen_ids": [2304],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Benotung im Sport geht in Studien mit mehr Angst und weniger Motivation einher; die Maßnahme betrifft aber nur Nebenfächer, der Druck in den Hauptfächern bleibt.",
+          "zitat": "Abschaffung der Benotung in Kunst, Musik und Sport, sofern die Fächer nicht als Leistungskurse belegt werden.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=6",
+          "beleg_studie_url": "https://publinova.nl/product/performance-grading-and-motivational-functioning-and-fear-in-physical-education",
+          "evidenz": "gemischt",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10352,
+          "instrument": 10322,
+          "beschreibung": "Resilienzförderung und Lerntrainings in die Rahmenpläne aufnehmen",
+          "ursachen_ids": [2304],
+          "zitat": "Wir wollen: […] Eingliederung von Resilienzförderung und Lerntrainings in die Rahmenpläne",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=6",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10353,
+          "instrument": 10115,
+          "beschreibung": "Queeres Leben im Rahmenplan von Schulen verankern, etwa in Sozialkunde, Biologie und Geschichte",
+          "ursachen_ids": [2301],
+          "zitat": "Queeres Leben im Rahmenplan von Schulen verankern – in Fächern wie Sozialkunde, Biologie und Geschichte.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=16",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [2301, 2302, 2304],
+      "massnahmen": [
+        {
+          "id": 10354,
+          "instrument": 10324,
+          "beschreibung": "Am Ende der Grundschulzeit keine Schullaufbahnempfehlung mehr; Eltern erhalten nur Beratung zur Schulwahl.",
+          "ursachen_ids": [2304],
+          "zitat": "Für die Schulwahl am Ende der Grundschulzeit sollen die Eltern dann Beratungsangebote, aber keine Schullaufbahnempfehlung mehr erhalten.",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=31",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "durchsucht_fuer": [2301, 2302, 2303, 2304],
+      "massnahmen": [
+        {
+          "id": 10355,
+          "instrument": 10132,
+          "beschreibung": "Social-Media-Gesetz nach australischem Vorbild, um Kinder auf Plattformen zu schützen",
+          "ursachen_ids": [2303],
+          "zitat": "Wir fordern ein Social-Media-Gesetz nach australischem Vorbild, damit die Kinder nicht in einem virtuellen Paralleluniversum verschwinden, sondern wieder im Hier und Jetzt mit echten Freunden kommunizieren und lachen.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=24",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    }
   ]
 }

@@ -40,5 +40,1672 @@
       "alltag": "Ich wurde von der Polizei schlecht behandelt",
       "ursachen_ids": [3402, 3403]
     }
+  ],
+  "instrumente": [
+    {
+      "id": 10443,
+      "name": "Polizeiliche Kontrollbefugnisse, Kontrollorte und Kontrolldichte ausweiten (Land)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 3,
+      "begruendung": "Mehr Kontrollen und Befugnisse erhöhen die Zahl der Kontakte, die als belastend gelten; Studien finden nur schwache, uneinheitliche Effekte auf Kriminalität. Für das Ziel respektvoller, seltener Kontrollen spricht nichts.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://fullfact.org/crime/does-stop-search-work/",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10444,
+      "name": "Polizeiliche Kontrollbefugnisse und Kontrollen ausweiten (Bund)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 3,
+      "begruendung": "Erweiterte Befugnisse und mehr Kontrollen erhöhen die Zahl der Kontakte; für eine respektvollere oder nachvollziehbarere Behandlung bei Kontrollen bietet das keinen Ansatz.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://fullfact.org/crime/does-stop-search-work/",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10445,
+      "name": "Anlasslose Kontrollen abschaffen oder eng begrenzen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Weniger anlasslose Kontrollen senken die Zahl belastender Kontakte; ihr Nutzen gegen Kriminalität gilt als schwach. Dagegen: Wirkung der Abschaffung in Deutschland kaum untersucht, Polizei verliert ein Werkzeug.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://fullfact.org/crime/does-stop-search-work/",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10446,
+      "name": "Kontrollorte und Verbotszonen überprüfen, Kriterien präzisieren und befristen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Klarere Kriterien und Überprüfung können anlasslose Kontrollen begrenzen und nachvollziehbarer machen; ob die Zahl der Kontrollen spürbar sinkt, bleibt offen.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10447,
+      "name": "Kontrollquittung mit Grund und Rechtsgrundlage bei Polizeikontrollen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Erfahrungen aus Spanien (Fuenlabrada) zeigen mehr Transparenz, weniger Spannung und selektivere Kontrollen. Dagegen: kaum kontrollierte Studien, zusätzlicher Aufwand für die Polizei.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.justiceinitiative.org/voices/q-and-a-how-a-system-to-document-police-stops-improved-policing-in-fuenlabrada-spain",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10448,
+      "name": "Aus- und Fortbildung zu Kommunikation, Deeskalation, Grundrechten und Antidiskriminierung (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Ein randomisiertes US-Experiment zeigt: Training in fairem Verfahren senkt wahrgenommene Schikane und Gewalt. Dagegen: Inhalte hier meist unbestimmt, Effekte schwinden ohne Begleitung durch Vorgesetzte.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://cebcp.org/weisburd-procedural-justice-hot-spots/",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10449,
+      "name": "Deeskalation als verbindliche Einsatzstrategie (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Deeskalationsansätze senkten in einem US-Feldversuch Gewaltanwendung und Verletzungen deutlich. Dagegen: Belege stammen aus wenigen Programmen, Strategie ohne Training bleibt unbestimmt.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://nij.ojp.gov/topics/articles/what-works-de-escalation-training",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10450,
+      "name": "Aus- und Fortbildung der Polizei allgemein ausbauen und modernisieren (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Mehr oder modernere Ausbildung kann das Verhalten bei Kontakten verbessern, die Maßnahmen nennen aber keine Inhalte zu Kommunikation oder Umgang mit Betroffenen.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10451,
+      "name": "Bürgernahe Polizei mit Kontaktbereichsbeamten und Fußstreifen ausbauen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Eine Meta-Analyse findet positive Effekte bürgernaher Polizeiarbeit auf Zufriedenheit und Legitimität, kaum auf Kriminalität. Dagegen: Gesamtbefund uneindeutig, braucht zusätzliches Personal.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://cris.huji.ac.il/en/publications/community-oriented-policing-to-reduce-crime-disorder-and-fear-and/",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10452,
+      "name": "Supervision und psychologische Begleitung für Polizeikräfte ausbauen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Reflexion von Einsätzen kann Einsatzpraxis verbessern; ein Effekt auf den Umgang mit Betroffenen ist kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10453,
+      "name": "Polizei diverser aufstellen und interkulturell öffnen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Vielfältigeres Personal kann Kommunikation erleichtern; ob es das Verhalten bei Kontakten spürbar ändert, ist wenig belegt.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10454,
+      "name": "Bodycam-Pflicht bei Zwang oder auf Verlangen mit Einsichtsrecht für Betroffene (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Bodycams senken laut Campbell-Review Beschwerden, Effekt auf Gewalt unklar; feste Einschaltregeln scheinen zu helfen. Aufnahmen erleichtern die Klärung von Vorwürfen.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8356344/",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10455,
+      "name": "Individuelle oder pseudonyme Kennzeichnungspflicht für Polizeikräfte (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kennzeichnung erleichtert die Identifizierung bei Vorwürfen, gerichtlich gebilligt. Dagegen: Wirkung auf Einstellungsquoten kaum untersucht, Identifizierung scheitert nur in einem Teil der Fälle.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10456,
+      "name": "Individuelle oder anonymisierte Kennzeichnungspflicht für Polizeikräfte des Bundes (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Kennzeichnung erleichtert die Identifizierung bei Vorwürfen gegen Bundespolizisten. Dagegen: Wirkung auf die Aufklärung kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10457,
+      "name": "Unabhängige Polizeibeschwerdestelle mit eigenen Untersuchungsbefugnissen (Land)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Studien finden bei unabhängigen Stellen mit Befugnissen häufiger bestätigte Vorwürfe; die Designs sind aber schwach, andere Befunde gegenläufig.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://policing.counciloncj.org/assessing-the-evidence/xi-civilian-oversight",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10458,
+      "name": "Polizeibeauftragte oder Ombudsstelle einrichten oder stärken, ohne konkrete Ermittlungsbefugnisse (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Eine Anlaufstelle erleichtert Beschwerden; Befunde deuten aber darauf hin, dass Stellen ohne echte Befugnisse wenig an der Aufklärung ändern.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://policing.counciloncj.org/assessing-the-evidence/xi-civilian-oversight",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10459,
+      "name": "Polizeibeauftragte abschaffen (Land)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 3,
+      "begruendung": "Entfernt eine unabhängige Beschwerdemöglichkeit; zur Klärung von Fehlern bleiben nur die Wege, deren hohe Einstellungsquote die Ursache ist.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://policing.counciloncj.org/assessing-the-evidence/xi-civilian-oversight",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10460,
+      "name": "Polizeibeauftragte abschaffen (Bund)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 3,
+      "begruendung": "Entfernt eine unabhängige Beschwerdemöglichkeit beim Bund; Vorwürfe blieben allein bei Staatsanwaltschaften, deren häufige Einstellungen die Ursache sind.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://policing.counciloncj.org/assessing-the-evidence/xi-civilian-oversight",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10461,
+      "name": "Dokumentationspflichten der Polizei zurücknehmen oder reduzieren (Land)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 3,
+      "begruendung": "Weniger Dokumentation entlastet die Polizei, erschwert aber die Nachprüfung von Einsätzen und die Klärung von Vorwürfen.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    },
+    {
+      "id": 10462,
+      "name": "Disziplinarverfahren bei Fehlverhalten beschleunigen und konsequent führen (Land)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3,
+      "begruendung": "Schnellere, konsequente Disziplinarverfahren können Fehlverhalten ahnden; sie bleiben aber polizeiintern, die Wirkung auf die Klärung von Vorwürfen ist kaum untersucht.",
+      "evidenz": "offen",
+      "entwurf_herkunft": "blind"
+    }
+  ],
+  "abdeckung": [
+    {
+      "partei_id": 11,
+      "durchsucht_fuer": [3401, 3402, 3403],
+      "massnahmen": [
+        {
+          "id": 10463,
+          "beschreibung": "Keine Pflicht der Bundespolizei, nach einer Kontrolle eine Kontrollquittung auszustellen.",
+          "ursachen_ids": [3401],
+          "wirksamkeit": 0,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Verzicht auf Kontrollquittungen lässt Kontrollen der Bundespolizei für Betroffene so wenig nachvollziehbar wie bisher.",
+          "zitat": "Wir verpflichten sie auch nicht, anlässlich einer Kontrolle eine Kontrollquittung auszustellen.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=40",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10464,
+          "instrument": 10460,
+          "beschreibung": "Sonderermittler wie den Polizeibeauftragten des Bundes abschaffen; Vorwürfe durch Staatsanwaltschaften und Gerichte klären lassen.",
+          "ursachen_ids": [3403],
+          "zitat": "Wo es Vorwürfe gegen sie gibt, müssen diese durch Staatsanwaltschaften und Gerichte aufgeklärt werden. Sonderermittler, wie den von der Ampel eingerichteten Polizeibeauftragten des Bundes, schaffen wir ab.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=40",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10465,
+          "beschreibung": "Keine Kennzeichnungspflicht für Bundespolizisten.",
+          "ursachen_ids": [3403],
+          "wirksamkeit": 0,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Verzicht auf Kennzeichnung lässt die Identifizierung bei Vorwürfen gegen Bundespolizisten unverändert schwierig.",
+          "zitat": "Die Einführung einer Kennzeichnungspflicht für Bundespolizisten lehnen wir ab.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=40",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10466,
+          "beschreibung": "Bodycams bei Polizeieinsätzen, auch in Wohnräumen.",
+          "ursachen_ids": [3403],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Bodycams können Beschwerden senken und Beweise sichern, Effekt auf Gewalt unklar; ohne Einschaltpflicht und Einsicht für Betroffene begrenzt, Einsatz in Wohnungen rechtlich heikel.",
+          "zitat": "Dafür sorgen wir, etwa durch die flächendeckende Ausstattung mit Distanz-Elektro-Impulsgeräten (TASER) und die Verwendung von Bodycams – auch bei Einsätzen in Wohnräumen.",
+          "beleg_programm_url": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf#page=40",
+          "beleg_studie_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8356344/",
+          "evidenz": "gemischt",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3401, 3402, 3403],
+      "massnahmen": [
+        {
+          "id": 10467,
+          "instrument": 10443,
+          "beschreibung": "Kriminalitätsauffällige Räume können kurzfristig als kriminalbelastete Orte erklärt werden",
+          "ursachen_ids": [3401],
+          "zitat": "Wir werden daher dafür sorgen, dass ein kriminalitätsauffälliger Raum unter bestimmten Voraussetzungen auch kurzfristig zu einem kriminalbelasteten Ort erklärt werden kann, um kriminellen Entwicklungen frühzeitig zu begegnen.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=8",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10468,
+          "instrument": 10450,
+          "beschreibung": "Polizeikräfte regelmäßig aus- und fortbilden; operative Dienstbereiche mit Tasern ausstatten",
+          "ursachen_ids": [3402],
+          "zitat": "Operativ eingesetzte Dienstbereiche sollen vollständig mit Tasern ausgestattet und Einsatzkräfte regelmäßig aus- und fortgebildet werden.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=8",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10469,
+          "beschreibung": "Schießtrainings der Polizei verdoppeln",
+          "ursachen_ids": [3402],
+          "wirksamkeit": 0,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Mehr Schießtraining betrifft Waffenhandhabung, nicht Kommunikation oder respektvollen Umgang bei Kontakten.",
+          "zitat": "Um der geänderten Gefahrenlage gerecht zu werden, werden wir die Anzahl der Schießtrainings verdoppeln.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=7",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10470,
+          "instrument": 10459,
+          "beschreibung": "Doppelstrukturen abbauen, darunter die Stelle des Polizeibeauftragten",
+          "ursachen_ids": [3403],
+          "zitat": "Die Arbeit des Petitionsausschusses werden wir stärken und Doppelstrukturen mit der Landesantidiskriminierungsstelle sowie dem Bürger- und Polizeibeauftragten abbauen.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=118",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10471,
+          "instrument": 10461,
+          "beschreibung": "Berichts- und Dokumentationspflichten der Polizei stark zurückfahren",
+          "ursachen_ids": [3403],
+          "zitat": "Die Berichts- und Dokumentationspflichten werden wir daher drastisch zurückfahren und überarbeiten.",
+          "beleg_programm_url": "https://berlin-wird.de/image/uploads/data/regierungsprogramm2026_2031.pdf#page=8",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3401, 3402, 3403],
+      "massnahmen": [
+        {
+          "id": 10472,
+          "instrument": 10443,
+          "beschreibung": "Mehr Polizei an Innenstädten und Kriminalitätsschwerpunkten, höherer Kontrolldruck und wirksamere Platzverweise im öffentlichen Raum",
+          "ursachen_ids": [3401],
+          "zitat": "Wir sorgen für mehr Sicherheit und Ordnung im öffentlichen Raum, durch mehr Polizei in den Innenstädten und an Kriminalitätsschwerpunkten, höheren Kontrolldruck sowie wirksamere Platzverweise und Aufenthaltsverbote.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=31",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10473,
+          "instrument": 10450,
+          "beschreibung": "Ausbildung der Polizei analysieren, Ausbildungsinhalte modernisieren und digital aufbereiten",
+          "ursachen_ids": [3402],
+          "zitat": "Wir werden die derzeitige Ausbildung insbesondere für den mittleren Polizeivollzugsdienst analysieren und Ausbildungsinhalte modernisieren und digital aufbereiten.",
+          "beleg_programm_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf#page=28",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 11,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3401, 3402, 3403],
+      "massnahmen": [
+        {
+          "id": 10474,
+          "instrument": 10443,
+          "beschreibung": "Befugnisse und Kompetenzen der Polizei erweitern",
+          "ursachen_ids": [3401],
+          "zitat": "Sicherheit gewährleisten durch eine sichtbare und handlungsfähige Polizei, hierzu erweitern wir ihre Kompetenzen und Befugnisse.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=6",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10475,
+          "beschreibung": "Bodycam-Einsatz auch in Wohnungen ermöglichen, um deeskalierend zu wirken und Dokumentation zu sichern",
+          "ursachen_ids": [3403],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Bodycams in Wohnungen sichern Beweise, Wirkung auf Gewalt laut Review unklar; ohne Rechte für Betroffene dienen sie vor allem der Polizei, Art. 13 GG setzt Grenzen.",
+          "zitat": "Der Einsatz der Bodycam soll auch in Wohnungen möglich sein, da gerade bei Fällen häuslicher Gewalt die deeskalierende Wirkung zum Schutz der vor Ort im Einsatz befindlichen Polizistinnen und Polizisten wichtig ist.",
+          "beleg_programm_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf#page=7",
+          "beleg_studie_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8356344/",
+          "evidenz": "gemischt",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "durchsucht_fuer": [3401, 3402, 3403],
+      "massnahmen": [
+        {
+          "id": 10476,
+          "instrument": 10444,
+          "beschreibung": "Modernes Bundespolizeigesetz mit klaren Befugnissen der Bundespolizei",
+          "ursachen_ids": [3401],
+          "zitat": "Wir schaffen ein modernes Bundespolizeigesetz, das der Bundespolizei klare Befugnisse gibt, um den heutigen sicherheitspolitischen Herausforderungen wirksam zu begegnen.",
+          "beleg_programm_url": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf#page=43",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3401, 3402, 3403],
+      "massnahmen": [
+        {
+          "id": 10477,
+          "instrument": 10445,
+          "beschreibung": "Verdachtsunabhängige Kontrollen räumlich und zeitlich auf das notwendige Minimum begrenzen; Waffen- und Messerverbotszonen als Ausnahme",
+          "ursachen_ids": [3401],
+          "zitat": "Verdachtsunabhängige Kontrollen wollen wir räumlich und in ihrem Anwendungsbereich auf das notwendige Minimum beschränken. Waffen- und Messerverbotszonen sollen die Ausnahme bleiben.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=30",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10478,
+          "instrument": 10448,
+          "beschreibung": "Interkulturelle Kompetenz der Polizei ausbauen und Sensibilisierung in Aus- und Fortbildung stärken",
+          "ursachen_ids": [3402],
+          "zitat": "Wir stehen für eine Polizei, die respektvoll handelt und die Vielfalt dieser Stadt widerspiegelt. Ihre interkulturelle Kompetenz bauen wir deshalb weiter aus und stärken die Sensibilisierung für Rassismus, Queerfeindlichkeit und geschlechtsspezifische Gewalt in der Aus- und Fortbildung.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=31",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10479,
+          "beschreibung": "Digitales Community Policing starten, das besonders junge Menschen online erreicht",
+          "ursachen_ids": [3402],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Online-Ansprache junger Menschen kann Vertrauen und Kommunikation fördern; Wirkung digitaler Bürgerpolizei auf Kontakte kaum untersucht.",
+          "zitat": "Ergänzend starten wir ein Programm des digitalen „Community Policing“, das besonders junge Menschen auch online erreicht.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=31",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10480,
+          "instrument": 10452,
+          "beschreibung": "Routinemäßige Supervision für Polizeibeschäftigte, um Einsatzgeschehen zu reflektieren, ausbauen",
+          "ursachen_ids": [3402],
+          "zitat": "Routinemäßige Supervision, bei der Beamt*innen das Einsatzgeschehen reflektieren können, bauen wir aus.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=31",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10481,
+          "instrument": 10458,
+          "beschreibung": "Ombudsstelle des Landesantidiskriminierungsgesetzes mit Initiativ- und Befragungsrechten und Berichtspflicht ausstatten",
+          "ursachen_ids": [3403],
+          "zitat": "Die Berliner Verwaltung muss hier vorangehen. Die Ombudsstelle des Landesantidiskriminierungsgesetzes (LADG) statten wir deshalb mit mehr Rechten aus. Dazu zählen Initiativ- und Befragungsrechte sowie eine Berichtspflicht.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=48",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10482,
+          "beschreibung": "Einheit für interne Ermittlungen bei strafrechtlichen Vorwürfen gegen Beschäftigte des öffentlichen Dienstes anstreben",
+          "ursachen_ids": [3403],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Eine Ermittlungseinheit außerhalb der Polizei, aber im Innenressort, kann Vorwürfe distanzierter prüfen; volle Unabhängigkeit fehlt, Wirkung offen.",
+          "zitat": "Zur Aufarbeitung strafrechtlicher Vorwürfe gegen Beschäftigte des öffentlichen Dienstes streben wir eine Einheit „Interne Ermittlungen“ bei der Senatsverwaltung für Inneres an.",
+          "beleg_programm_url": "https://library.fes.de/pdf-files/bibliothek/ltw-programme/SPD_Berlin_Wahlprogramm_20260521-v3-4_7942063.pdf#page=31",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3401, 3402, 3403],
+      "massnahmen": [
+        {
+          "id": 10483,
+          "instrument": 10452,
+          "beschreibung": "Angeleitete Reflexion, Feedbackangebote und Begleitung für Polizeibeschäftigte in belastenden Situationen ausbauen",
+          "ursachen_ids": [3402],
+          "zitat": "Außerdem wird ein neues Beurteilungssystem mit entsprechenden beamtenrechtlichen Regelungen implementiert sowie die angeleitete Reflexion, Feedbackangebote und die Begleitung in belastenden Situationen ausgebaut.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=48",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10484,
+          "instrument": 10453,
+          "beschreibung": "Interkulturelle Öffnung in der Polizei konsequent fortführen",
+          "ursachen_ids": [3402],
+          "zitat": "Eine moderne Einwanderungsgesellschaft braucht eine dienstleistungsorientierte, diskriminierungsfreie und interkulturell kompetente Verwaltung. Diese interkulturelle Öffnung führen wir konsequent fort – in Verwaltung, Bildung, Polizei und sozialen Einrichtungen.",
+          "beleg_programm_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf#page=39",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 12,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3401, 3402, 3403],
+      "massnahmen": [
+        {
+          "id": 10485,
+          "instrument": 10450,
+          "beschreibung": "Aus- und Fortbildung der Polizei modernisieren und an neue Einsatzlagen anpassen",
+          "ursachen_ids": [3402],
+          "zitat": "Ausbildung und Fortbildung werden modernisiert und an neue Einsatzlagen angepasst.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=29",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10486,
+          "instrument": 10458,
+          "beschreibung": "Unabhängigkeit des Polizeibeauftragten stärken",
+          "ursachen_ids": [3403],
+          "zitat": "Die Unabhängigkeit des Polizeibeauftragen soll gestärkt werden.",
+          "beleg_programm_url": "https://spdsachsenanhalt.de/wp-content/uploads/sites/63/2026/03/SPD-Wahlprogramm-2026.pdf#page=29",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "durchsucht_fuer": [3401, 3402, 3403],
+      "massnahmen": [
+        {
+          "id": 10487,
+          "beschreibung": "Ticketsystem für Polizeikontrollen, das die Gründe nennt, für mehr Transparenz",
+          "ursachen_ids": [3401],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Kontrollbelege mit Grund machen Kontrollen nachvollziehbar; Erfahrungen aus Spanien sind positiv, kontrollierte Studien fehlen. Gilt nur für die Bundespolizei.",
+          "zitat": "Mit einem Ticketsystem für Kontrollen, das die Gründe für Kontrollen darlegt, wollen wir polizeiliches Handeln transparenter machen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=134",
+          "beleg_studie_url": "https://www.justiceinitiative.org/voices/q-and-a-how-a-system-to-document-police-stops-improved-policing-in-fuenlabrada-spain",
+          "evidenz": "gemischt",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10488,
+          "beschreibung": "Polizeiliche Kontrollbefugnisse so ausgestalten, dass sie rechtssicher angewandt werden können",
+          "ursachen_ids": [3401],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Rechtssichere Kontrollbefugnisse können Kontrollen nachvollziehbarer machen; ob sie seltener oder verhältnismäßiger werden, bleibt offen.",
+          "zitat": "Dabei wollen wir polizeiliche Kontrollbefugnisse so ausgestalten, dass diese rechtssicher angewandt werden können.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=134",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10489,
+          "beschreibung": "Aus- und Fortbildung der Polizei zu Diversität und Fehlerkultur",
+          "ursachen_ids": [3402],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Fortbildung zu Diversität und Fehlerkultur kann den Umgang bei Kontakten verbessern (US-Experiment zu fairem Verfahren); wirkt nur bei der Bundespolizei, Inhalte unbestimmt.",
+          "zitat": "In der Aus- und Fortbildung wollen wir für Diversität sensibilisieren und eine gute Fehlerkultur entwickeln.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=134",
+          "beleg_studie_url": "https://cebcp.org/weisburd-procedural-justice-hot-spots/",
+          "evidenz": "belegt",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10490,
+          "beschreibung": "Umgang mit psychischen Ausnahmesituationen stärker in den Fokus nehmen und die psychosoziale Notfallversorgung verbessern",
+          "ursachen_ids": [3402],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Stärkerer Fokus auf psychische Ausnahmesituationen kann die Einsatzpraxis verbessern, bleibt aber unbestimmt; Polizeipraxis liegt überwiegend bei den Ländern.",
+          "zitat": "Den Umgang mit psychischen Ausnahmesituationen wollen wir stärker in den Fokus nehmen und die psychosoziale Notfallversorgung von Einsatzkräften und Betroffenen verbessern.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=134",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10491,
+          "beschreibung": "Polizeibeauftragten des Bundes als Anlaufstelle stärken und weiterentwickeln",
+          "ursachen_ids": [3403],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Stärkung des Polizeibeauftragten des Bundes erleichtert Beschwerden; ohne konkrete Befugnisse bleibt die Wirkung auf die Aufklärung laut Forschung begrenzt.",
+          "zitat": "Mit dem Polizeibeauftragten des Bundes haben wir eine Anlaufstelle für Polizist*innen und Bürger*innen geschaffen, die wir stärken und weiterentwickeln wollen.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=134",
+          "beleg_studie_url": "https://policing.counciloncj.org/assessing-the-evidence/xi-civilian-oversight",
+          "evidenz": "gemischt",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10492,
+          "instrument": 10456,
+          "beschreibung": "Anonymisierte Kennzeichnungspflicht für die Bundespolizei",
+          "ursachen_ids": [3403],
+          "zitat": "Zudem führen wir für die Bundespolizei eine anonymisierte Kennzeichnungspflicht ein.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=134",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3401, 3402, 3403],
+      "massnahmen": [
+        {
+          "id": 10493,
+          "instrument": 10447,
+          "beschreibung": "Digitale Kontrollquittung, die jede Person über den Anlass einer Polizeikontrolle informiert.",
+          "ursachen_ids": [3401],
+          "zitat": "Polizeiliches Handeln muss sich stets nach dem Handeln der Verdächtigen richten, weshalb wir anlasslose Kontrollen ablehnen. […] Um dem entgegenzuwirken, möchten wir eine digitale Kontrollquittung einführen, mit der jede Person über den Anlass der Kontrolle informiert werden kann.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=228",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10494,
+          "instrument": 10446,
+          "beschreibung": "Kriminalitätsbelastete Orte und Messer- und Waffenverbotszonen überprüfen und, wo nötig, abschaffen.",
+          "ursachen_ids": [3401],
+          "zitat": "Wir werden die bestehenden kriminalitätsbelasteten Orte und Messer- und Waffenverbotszonen auf ihre Sinnhaftigkeit überprüfen und werden sie, wo erforderlich, wieder abschaffen.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=228",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10495,
+          "instrument": 10448,
+          "beschreibung": "Demokratiebildung, Diskriminierungskritik und Kommunikation in Aus- und Fortbildung der Sicherheitsbehörden fördern.",
+          "ursachen_ids": [3402],
+          "zitat": "Deshalb müssen Demokratiebildung, Diskriminierungskritik und kommunikative Kompetenzen in Aus- und Fortbildung sowie im Studium gefördert werden.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=226",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10496,
+          "instrument": 10449,
+          "beschreibung": "Kurswechsel zu einer Deeskalationsstrategie bei Polizeieinsätzen auf der Straße.",
+          "ursachen_ids": [3402],
+          "zitat": "Während der Wegner-Senat mit einem Kurs der Repression zu mehr Eskalation auf den Straßen beiträgt, stehen wir für einen Kurswechsel zu einer Deeskalationsstrategie ein.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=229",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10497,
+          "beschreibung": "Standardisierte Verfahren der Polizei im Umgang mit geschlechtsspezifischer und häuslicher Gewalt nach spanischem Vorbild.",
+          "ursachen_ids": [3402],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Standardisierte Abläufe bei häuslicher Gewalt verbessern die Einsatzpraxis für Opfer, berühren Kontakte mit jungen Menschen aber nur am Rand.",
+          "zitat": "Bei der Polizei etablieren wir standardisierte Verfahren im Umgang mit geschlechtsspezifischer und häuslicher Gewalt nach spanischem Vorbild.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=131",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10498,
+          "instrument": 10451,
+          "beschreibung": "Community Policing in die Fläche bringen: mehr Kontaktbereichsbeamt*innen, Fahrradstreifen und Präsenz an Hotspots.",
+          "ursachen_ids": [3402],
+          "zitat": "Wir Grüne wollen Ansätze des „Community Policing“ in die Fläche bringen, um das Vertrauen in die Sicherheitsbehörden zu erhöhen und das Sicherheitsgefühl zu stärken. Dazu zählen mehr Kontaktbereichsbeamt*innen als lokale Ansprechpersonen, die Ausweitung von Fahrradstreifen und Präsenz an hochfrequentierten Orten oder Hotspots, auch mit mobilen Wachen und Kiezläufer*innen.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=225",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10499,
+          "instrument": 10452,
+          "beschreibung": "Empfehlungen der Berliner Polizeistudie umsetzen und Supervision, Einsatznachbereitung und Resilienzstärkung für Einsatzkräfte ausbauen.",
+          "ursachen_ids": [3402],
+          "zitat": "Wir werden überdies die Empfehlungen der Berliner Polizeistudie konsequent […] umsetzen und Angebote hinsichtlich Supervision, Einsatznachbereitungen und Resilienzstärkung ausbauen.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=226",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10500,
+          "instrument": 10457,
+          "beschreibung": "Unabhängigen Polizeibeauftragten verbessern: mehr Kontrolle und Prüfung aller an ihn herangetragenen Sachverhalte.",
+          "ursachen_ids": [3403],
+          "zitat": "Wir werden die unabhängige Kontrolle verbessern und dem Beauftragten ermöglichen, effektiv alle an ihn herangetragenen Sachverhalte zu überprüfen.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=227",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10501,
+          "instrument": 10454,
+          "beschreibung": "Bodycam-Einsatz auf die Polizei beschränken und nur auf Verlangen oder bei unmittelbarem Zwang anschalten.",
+          "ursachen_ids": [3403],
+          "zitat": "Die Ergebnisse der Bodycam-Studie wollen wir umsetzen und den Einsatz auf die Polizei beschränken. Die Bodycam dient dabei auch als bürgerrechtliches Instrument, das auf Verlangen oder bei unmittelbarem Zwang zur Beweissicherung angeschaltet werden muss.",
+          "beleg_programm_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf#page=228",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3401, 3402, 3403],
+      "massnahmen": [
+        {
+          "id": 10502,
+          "instrument": 10448,
+          "beschreibung": "Reform der Aus- und Fortbildung der Polizei mit mehr politischer Bildung und besserer Vorbereitung auf Einsatzsituationen mit psychisch belasteten Menschen",
+          "ursachen_ids": [3402],
+          "zitat": "Für eine bürger*innennahe Polizei wollen wir: […] eine Reform der Aus- und Fortbildung der Landespolizei, die einen höheren Anteil an politischer Bildung vorsieht sowie besser auf Einsatzsituationen mit Menschen in psychischen Ausnahmezuständen vorbereitet […].",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=77",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10503,
+          "instrument": 10452,
+          "beschreibung": "Unterstützung der Polizeikräfte bei mentaler Belastung",
+          "ursachen_ids": [3402],
+          "zitat": "Das ändern wir. Wir sorgen für ausreichend Personal, unterstützen bei mentaler Belastung und modernisieren die Aus- und Fortbildung, damit Polizist*innen besser auf unterschiedliche Einsatzlagen vorbereitet sind.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=77",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10504,
+          "instrument": 10451,
+          "beschreibung": "Bürgernahe Polizei mit mehr Präsenz vor Ort, etwa zu Fuß in den Quartieren und im Dialog mit Anwohnenden",
+          "ursachen_ids": [3402],
+          "zitat": "Für ein sicheres MV wollen wir: […] eine „Bürger*innen-Polizei“ nach skandinavischem Vorbild stärken, mit mehr Präsenz vor Ort, etwa durch Beamt*innen zu Fuß in den Quartieren und im direkten Dialog mit den Menschen.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=76",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10505,
+          "instrument": 10458,
+          "beschreibung": "Einrichtung eines unabhängigen Polizeibeauftragten für Hinweise und Beschwerden von Bürgerinnen, Bürgern und Polizeikräften",
+          "ursachen_ids": [3403],
+          "zitat": "Für eine bürger*innennahe Polizei wollen wir: […] ein*n unabhängige*n Polizeibeauftragte*n, an den/die sich nicht nur Polizeibeamt*innen, sondern auch alle Bürger*innen mit Hinweisen und Beschwerden wenden können.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=77",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10506,
+          "instrument": 10455,
+          "beschreibung": "Ausweitung der Kennzeichnungspflicht für Polizeikräfte auf alle Einsatzlagen",
+          "ursachen_ids": [3403],
+          "zitat": "Wir garantieren friedliche Demonstrationen und fordern: […] die numerische Kennzeichnungspflicht auf alle Einsatzlagen und alle eingesetzten Polizeibeamtinnen und -beamte auszuweiten.",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=78",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10507,
+          "instrument": 10454,
+          "beschreibung": "Verpflichtender Bodycam-Einsatz bei Androhung und Anwendung körperlicher Gewalt durch die Polizei",
+          "ursachen_ids": [3403],
+          "zitat": "Für eine bürger*innennahe Polizei wollen wir: […] ein Polizeigesetz, das […] den verpflichtenden Einsatz von Bodycams bei der Androhung und Anwendung körperlicher Gewalt vorsieht […].",
+          "beleg_programm_url": "https://gruene-mv.de/?wpdmdl=33772#page=77",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 13,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3401, 3402, 3403],
+      "massnahmen": [
+        {
+          "id": 10508,
+          "instrument": 10448,
+          "beschreibung": "Aus- und Fortbildung der Polizei auf Antidiskriminierung, interkulturelle Kompetenz und Deeskalation ausrichten",
+          "ursachen_ids": [3402],
+          "zitat": "Die Aus- und Fortbildung der Polizei soll auf demokratische Werte, Menschenrechte, Antidiskriminierung, interkulturelle Kompetenz und Deeskalation ausgerichtet sein.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=43",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10509,
+          "instrument": 10453,
+          "beschreibung": "Polizei diverser aufstellen, gezielt Menschen mit Migrationsgeschichte, Frauen, queere Menschen und mehrsprachige Bewerber*innen ansprechen",
+          "ursachen_ids": [3402],
+          "zitat": "Unsere Polizei soll die Gesellschaft widerspiegeln, der sie dient. Dafür wollen wir gezielt Menschen mit Migrationsgeschichte, Frauen, queere Menschen und Bewerber*innen mit mehrsprachigen Kompetenzen ansprechen und fördern.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=43",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10510,
+          "instrument": 10457,
+          "beschreibung": "Unabhängige Polizeibeauftragte Stelle für Beschwerden und Fehlverhalten in der Polizei schaffen",
+          "ursachen_ids": [3403],
+          "zitat": "Wir wollen eine unabhängige Stelle schaffen, die Beschwerden, Hinweise und Fehlverhalten in der Polizei untersucht – und das transparent, niedrigschwellig und mit umfassenden Rechten.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=43",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10511,
+          "beschreibung": "Beschwerden bei der Polizei nachvollziehbar dokumentieren und auswerten",
+          "ursachen_ids": [3403],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Systematische Dokumentation und Auswertung von Beschwerden verbessert die Nachvollziehbarkeit, ändert aber nichts an der Unabhängigkeit der Prüfung.",
+          "zitat": "Beschwerden müssen nachvollziehbar dokumentiert und ausgewertet werden, um Strukturen zu verbessern.",
+          "beleg_programm_url": "https://www.gruene-lsa.de/wp-content/uploads/2026/05/Programm-zur-Landtagswahl-2026.pdf#page=43",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "durchsucht_fuer": [3401, 3402, 3403],
+      "keine_massnahme": {
+        "begruendung": "Erfasste Stellen (S. 23, 24, 22) setzen laut Bewertung ohne Parteinamen an keiner der Ursachen an.",
+        "stand": "2026-10-21",
+        "treffer": 2,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    },
+    {
+      "partei_id": 14,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3401, 3402, 3403],
+      "massnahmen": [
+        {
+          "id": 10512,
+          "instrument": 10451,
+          "beschreibung": "Kontaktbereichsbeamte intensiver einsetzen und von zusätzlichen Tätigkeiten entlasten, um den Austausch zwischen Polizei und Bevölkerung zu verbessern",
+          "ursachen_ids": [3402],
+          "zitat": "Um das Sicherheitsgefühl der Bürgerinnen und Bürger zu steigern und den niedrigschwelligen Austausch zwischen Polizei und Bevölkerung zu verbessern, fordern wir, die Kontaktbereichsbeamtinnen und -beamten intensiver einzusetzen und dafür von zusätzlichen Tätigkeiten zu entlasten.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=67",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10513,
+          "instrument": 10446,
+          "beschreibung": "Kriterien für kriminalitätsbelastete Orte präzisieren, öffentlich nachvollziehbar machen, regelmäßig evaluieren und bei Wegfall aufheben",
+          "ursachen_ids": [3401],
+          "zitat": "Wir Freie Demokraten wollen die Kriterien, nach denen ein Ort als kriminalitätsbelastet eingestuft wird, präzisieren und öffentlich nachvollziehbar machen. Dazu muss das Allgemeine Sicherheits- und Ordnungsgesetz (ASOG) um eine Auflistung der Straftaten, die zu einer solchen Einstufung führen, ergänzt werden. […] Die Einstufung ist regelmäßig zu evaluieren. Liegen die Voraussetzungen nicht mehr vor, muss die Einstufung aufgehoben werden.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=67",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10514,
+          "instrument": 10443,
+          "beschreibung": "Verdachtsunabhängige Identitätsfeststellung und Durchsuchung an kriminalitätsbelasteten Orten als Sonderbefugnis der Polizei",
+          "ursachen_ids": [3401],
+          "zitat": "Wir Freie Demokraten wollen Kriminalität an Orten, an denen Straftaten mit erheblichen Auswirkungen gehäuft oder bandenmäßig verübt werden, effektiv bekämpfen. Dazu erhält die Polizei an solchen kriminalitätsbelasteten Orten die Sonderbefugnisse der verdachtsunabhängigen Identitätsfeststellung und der Durchsuchung von Personen und Sachen.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=67",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10515,
+          "instrument": 10450,
+          "beschreibung": "Umfangreiche Schulungen von Polizei, Staatsanwaltschaft und Gerichten zur Sensibilisierung gegen antisemitische Aussagen und Straftaten",
+          "ursachen_ids": [3402],
+          "zitat": "Wir setzen uns für umfangreiche Schulungen von Polizei, Staatsanwaltschaft und Gerichten zur Sensibilisierung im Hinblick auf antisemitische Aussagen und Straftaten ein.",
+          "beleg_programm_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf#page=78",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3401, 3402, 3403],
+      "massnahmen": [
+        {
+          "id": 10516,
+          "instrument": 10450,
+          "beschreibung": "Aus- und Fortbildung der Polizei auf höchstem Niveau sichern; Ausbildungsstandort Güstrow personell und finanziell stärken",
+          "ursachen_ids": [3402],
+          "zitat": "Wir Freie Demokraten werden: […] die Aus- und Fortbildung auf höchstem Niveau gewährleisten und den Standort der Fachhochschule für öffentliche Verwaltung, Polizei und Rechtspflege in Güstrow personell und finanziell stärken.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=133",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10517,
+          "instrument": 10458,
+          "beschreibung": "Polizeibeauftragten als unabhängige Anlaufstelle für Bürger bei Beschwerden stärken",
+          "ursachen_ids": [3403],
+          "zitat": "Wir Freie Demokraten werden: […] die Funktion des Polizeibeauftragten stärken: als unabhängige Anlaufstelle für Bürger bei Beschwerden sowie für Polizeibeschäftigte bei internen Konflikten.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=133",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10518,
+          "instrument": 10455,
+          "beschreibung": "Pseudonymisierte Kennzeichnungspflicht für Polizeibeamte bei Einsätzen einführen",
+          "ursachen_ids": [3403],
+          "zitat": "Wir Freie Demokraten werden: […] eine pseudonymisierte Kennzeichnungspflicht für alle Polizeibeamtinnen und -beamte bei Einsätzen einführen.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=133",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10519,
+          "instrument": 10461,
+          "beschreibung": "Bürokratische Dokumentations- und Verwaltungspflichten der Polizei spürbar reduzieren",
+          "ursachen_ids": [3403],
+          "zitat": "Dafür werden wir bürokratische Dokumentations- und Verwaltungspflichten spürbar reduzieren.",
+          "beleg_programm_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026.pdf#page=132",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 14,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3401, 3402, 3403],
+      "massnahmen": [
+        {
+          "id": 10520,
+          "instrument": 10445,
+          "beschreibung": "Waffenverbotszonen im Land abschaffen, damit in diesen Zonen keine anlasslosen Personenkontrollen mehr möglich sind.",
+          "ursachen_ids": [3401],
+          "zitat": "Ebenso fordern wir die Abschaffung aller Waffenverbotszonen im Land und damit die Abschaffung der Möglichkeit der anlasslosen Personenkontrollen in diesen.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=48",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10521,
+          "instrument": 10448,
+          "beschreibung": "Konsequente und nachhaltige Fortbildung der Polizei zur Antidiskriminierung.",
+          "ursachen_ids": [3402],
+          "zitat": "Zudem unterstützen wir den Aufbau von festen Ansprechpersonen für die Antidiskriminierung in der Polizei und fordern eine konsequente sowie nachhaltige Fortbildung.",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=37",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10522,
+          "beschreibung": "Feste Ansprechpersonen für Antidiskriminierung in der Polizei aufbauen.",
+          "ursachen_ids": [3403],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Interne Ansprechpersonen senken die Schwelle für Hinweise, sind aber nicht unabhängig und ohne Aufklärungsbefugnisse.",
+          "zitat": "Zudem unterstützen wir den Aufbau von festen Ansprechpersonen für die Antidiskriminierung in der Polizei",
+          "beleg_programm_url": "https://www.fdp-lsa.de/sites/default/files/2026-07/fdpwahlprogrammltw2026.pdf#page=37",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "durchsucht_fuer": [3401, 3402, 3403],
+      "massnahmen": [
+        {
+          "id": 10523,
+          "instrument": 10460,
+          "beschreibung": "Polizeibeauftragte und innerbehördliche Denunzierungsstellen abschaffen, Beweislastumkehr beenden",
+          "ursachen_ids": [3403],
+          "zitat": "Abschaffung aller politisch installierten Polizeibeauftragten […] sowie der Beweislastumkehr",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=119",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10524,
+          "instrument": 10444,
+          "beschreibung": "Kontrollstellen und Razzien in sogenannten No-go-Areas durchführen",
+          "ursachen_ids": [3401],
+          "zitat": "Es sind weiter die erforderlichen Mittel bereitzustellen und […] (wie z. B. Razzien und Kontrollstellen) durchzuführen, damit der Rechtsstaat in den sogenannten No-go-Areas wieder durchgesetzt werden kann.",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=123",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10525,
+          "instrument": 10444,
+          "beschreibung": "Befugnisse der Bundespolizei erweitern, auch als Grenzbehörde außerhalb der Grenzübergangsstellen",
+          "ursachen_ids": [3401],
+          "zitat": "In rechtlicher Hinsicht fordern wir eine Erweiterung der Befugnisse der Bundespolizei",
+          "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=126",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3401, 3402, 3403],
+      "massnahmen": [
+        {
+          "id": 10526,
+          "instrument": 10443,
+          "beschreibung": "Mehr Polizeikontrollen ohne konkreten Anlass in Problemvierteln",
+          "ursachen_ids": [3401],
+          "zitat": "Die AfD fordert: […] Mehr Polizeikontrollen ohne Anlass in Problemvierteln.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=13",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10527,
+          "instrument": 10443,
+          "beschreibung": "Rechtliche Grundlage für nächtliche Ausgangssperren für jugendliche Intensivtäter",
+          "ursachen_ids": [3401],
+          "zitat": "Die AfD fordert: […] Eine rechtliche Grundlage für kriminalitätsbezogene nächtliche Ausgangssperren für jugendliche Intensivtäter.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=13",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10528,
+          "instrument": 10443,
+          "beschreibung": "Bezirkspolizei bei den Ordnungsämtern mit Identitätsfeststellung, Durchsuchung, Platzverweisen und unmittelbarem Zwang",
+          "ursachen_ids": [3401],
+          "zitat": "Wir wollen die Polizei entlasten, indem wir eine Bezirkspolizei, die bei den Ordnungsämtern angesiedelt ist, einführen. […] Folgende Aufgaben sollen auf die Bezirkspolizei übertragen werden: Identitätsfeststellung, Durchsuchung von Personen und Gegenständen, das Erteilen von Platzverweisen sowie die Anwendung von unmittelbarem Zwang.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=12",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10529,
+          "instrument": 10450,
+          "beschreibung": "Sicherstellung einer ausreichenden Ausbildung des Polizei-Nachwuchses",
+          "ursachen_ids": [3402],
+          "zitat": "Die AfD fordert: […] Die Erhöhung des Personals bei der Polizei […] und die Sicherstellung einer ausreichenden Ausbildung des Nachwuchses.",
+          "beleg_programm_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf#page=13",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3401, 3402, 3403],
+      "massnahmen": [
+        {
+          "id": 10530,
+          "instrument": 10461,
+          "beschreibung": "Dokumentationspflichten bei Polizeieinsätzen im SOG zurücknehmen",
+          "ursachen_ids": [3403],
+          "zitat": "Wir treten […] öffentlich entgegen und werden die durch Rot-Rot beschlossenen Dokumentationspflichten im SOG in Regierungsverantwortung sofort zurücknehmen.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=38",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10531,
+          "instrument": 10462,
+          "beschreibung": "Disziplinarverfahren gegen Polizeibeamte durch verbesserte Prozesse und mehr Personal straffen",
+          "ursachen_ids": [3403],
+          "zitat": "Wir straffen Disziplinarverfahren durch verbesserte Prozesse und mehr Personaleinsatz.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=38",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10532,
+          "instrument": 10450,
+          "beschreibung": "Fortlaufende Auffrischungs- und Vertiefungstrainings für die Polizei, mit Zeit und Infrastruktur",
+          "ursachen_ids": [3402],
+          "zitat": "Neben dem in der Ausbildung erworbenen Können sind […] fortlaufend Auffrischungs- und Vertiefungstrainings erforderlich. Dafür muss genügend Zeit eingeräumt werden und die erforderliche Infrastruktur bereitstehen.",
+          "beleg_programm_url": "https://afd-vg.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf#page=38",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 15,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3401, 3402, 3403],
+      "massnahmen": [
+        {
+          "id": 10533,
+          "instrument": 10459,
+          "beschreibung": "Funktion des Polizeibeauftragten abschaffen.",
+          "ursachen_ids": [3403],
+          "zitat": "11. Funktion des Polizeibeauftragten abschaffen! […] Daneben braucht es keinen Polizeibeauftragten.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=109",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10534,
+          "beschreibung": "Interne Ermittlungen nach Schusswaffengebrauch nur noch bei konkretem Verdacht auf Fehlverhalten einleiten.",
+          "ursachen_ids": [3403],
+          "wirksamkeit": 0,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Weniger interne Ermittlungen nach Schusswaffengebrauch erschweren die Klärung möglicher Fehler.",
+          "zitat": "Wir werden deshalb durchsetzen, dass nach Schusswaffengebrauch nur noch bei konkreten Verdachtsmomenten auf Fehlverhalten interne Ermittlungen gegen Polizeivollzugsbeamte eingeleitet werden.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=106",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10535,
+          "beschreibung": "Aussetzung der Förderung bei Disziplinarverfahren erst mit staatsanwaltlichen Ermittlungen wirksam werden lassen.",
+          "ursachen_ids": [3403],
+          "wirksamkeit": 0,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Beschränkt Folgen laufender Disziplinarverfahren für Beamte; für die Klärung von Vorwürfen Betroffener bringt das nichts.",
+          "zitat": "Wir werden deshalb feststellen, dass erst staatsanwaltschaftliche Ermittlungen diesen Suspensiveffekt entfalten.",
+          "beleg_programm_url": "https://afd-lsa.de/wp-content/uploads/2026/07/AfD_Sachsen-Anhalt_Regierungsprogramm_2026_230726-web.pdf#page=108",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "durchsucht_fuer": [3401, 3402, 3403],
+      "massnahmen": [
+        {
+          "id": 10536,
+          "beschreibung": "Anlasslose polizeiliche Kontrollbefugnisse abschaffen; rassistische Polizeikontrollen gesetzlich verbieten.",
+          "ursachen_ids": [3401],
+          "wirksamkeit": 2,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Abschaffung anlassloser Kontrollbefugnisse senkt belastende Kontakte mit der Bundespolizei; ihr Nutzen gegen Kriminalität gilt als schwach. Dagegen: deutsche Wirkung kaum untersucht.",
+          "zitat": "Es braucht zudem ein gesetzliches Verbot rassistischer Polizeikontrollen („Racial Profiling“) und die Abschaffung von anlasslosen polizeilichen Kontrollbefugnissen […]",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=53",
+          "beleg_studie_url": "https://fullfact.org/crime/does-stop-search-work/",
+          "evidenz": "gemischt",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10537,
+          "beschreibung": "Polizei soll ansprechbar sein und deeskalierend auftreten.",
+          "ursachen_ids": [3402],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Ansprechbares, deeskalierendes Auftreten setzt an der Einsatzpraxis an, bleibt aber ohne konkretes Instrument und betrifft beim Bund nur die Bundespolizei.",
+          "zitat": "Sicherheit muss stadtteilgerecht sein: Die Polizei muss ansprechbar sein und deeskalierend auftreten.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=48",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10538,
+          "beschreibung": "Einsatz von Pfefferspray durch die Polizei stark einschränken und bei Versammlungen und Veranstaltungen verbieten.",
+          "ursachen_ids": [3402],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Einschränkung von Pfefferspray kann Verletzungen bei Ansammlungen mindern; Bund regelt nur Bundespolizei, Versammlungsrecht und Landespolizei liegen bei den Ländern.",
+          "zitat": "Den Einsatz von Pfefferspray durch die Polizei wollen wir massiv einschränken. Im Zusammenhang mit Versammlungen, Ansammlungen im öffentlichen Raum und Veranstaltungen soll er verboten werden.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=49",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10539,
+          "beschreibung": "Psychologische Unterstützung für Polizeibeamt*innen verbessern.",
+          "ursachen_ids": [3402],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Psychologische Unterstützung kann Belastung und damit Fehlreaktionen mindern; ein Effekt auf den Umgang mit Betroffenen ist kaum untersucht.",
+          "zitat": "Die psychologische Unterstützung für Polizeibeamt*innen soll verbessert werden.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=49",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10540,
+          "instrument": 10456,
+          "beschreibung": "Individuelle Kennzeichnungspflicht für Polizeibeamt*innen einführen.",
+          "ursachen_ids": [3403],
+          "zitat": "Wir fordern eine individuelle Kennzeichnungspflicht von Politist*innen. Es muss selbstverständlich werden, dass Polizeibeamt*innen den Bürger*innen individuell erkennbar gegenübertreten.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=49",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10541,
+          "beschreibung": "Einsatzprotokolle und Polizeivideos bei Treuhandstellen aufbewahren, um Übergriffe aufzuklären und zu verhindern.",
+          "ursachen_ids": [3403],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Unabhängig verwahrte Protokolle und Videos sichern Beweise für die Klärung von Vorwürfen; Konzept und Wirkung unerprobt, für Landespolizeien nur über Länder.",
+          "zitat": "Zur Aufklärung und Vermeidung von Übergriffen sollen Einsatzprotokolle und Polizeivideos bei Treuhandstellen aufbewahrt werden.",
+          "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=49",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3401, 3402, 3403],
+      "massnahmen": [
+        {
+          "id": 10542,
+          "instrument": 10445,
+          "beschreibung": "Verdachtsunabhängige Polizeikontrollen abschaffen",
+          "ursachen_ids": [3401],
+          "zitat": "«Verdachtsunabhängige Kontrollen» der Polizei treffen überproportional häufig junge Menschen mit vermuteter Migrationsgeschichte – diese diskriminierende Praxis werden wir abschaffen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=177",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10543,
+          "instrument": 10447,
+          "beschreibung": "Polizei muss bei Identitätsfeststellung und Durchsuchung schriftlich Grund und Rechtsgrundlage nennen",
+          "ursachen_ids": [3401],
+          "zitat": "Die Polizei ist zu verpflichten, bei jeder Identitätsfeststellung und Durchsuchung schriftlich den Grund und die Rechtsgrundlage anzugeben (Kontrollquittungen).",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=290",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10544,
+          "instrument": 10448,
+          "beschreibung": "Fortbildung der Polizei im Umgang mit Menschen in psychischen Ausnahmesituationen",
+          "ursachen_ids": [3402],
+          "zitat": "Wir wollen stattdessen Fähigkeiten im Umgang mit Menschen in psychischen Ausnahmesituationen stärken. Das betrifft Aus- und Fortbildung der Polizeibeamt*innen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=291",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10545,
+          "beschreibung": "Nicht-polizeiliche multiprofessionelle Krisenteams aufbauen, die nicht zur Polizei gehören",
+          "ursachen_ids": [3402],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 2,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Nichtpolizeiliche Krisenteams ersetzen Polizeikontakte in psychischen Krisen; betrifft junge Menschen nur am Rand, Aufbau braucht Personal und Jahre.",
+          "zitat": "Wir wollen […] vor allem aber die Stärkung nicht-polizeilicher Ressourcen in der Krisenintervention u. a. durch den Aufbau multiprofessioneller Interventionsteams, die nicht Teil der Polizei und an die Notrufzentralen angebunden sind.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=291",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10546,
+          "instrument": 10449,
+          "beschreibung": "Deeskalationskonzepte bei Versammlungen konsequent umsetzen",
+          "ursachen_ids": [3402],
+          "zitat": "Gewalt gegen öffentlich Beschäftigte ist unakzeptabel. Deeskalationskonzepte bei Versammlungen schützen auch die Beschäftigten und sind konsequent zu verfolgen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=293",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10547,
+          "beschreibung": "Einsatz von Tasern außerhalb von Spezialkräften ablehnen",
+          "ursachen_ids": [3402],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Verzicht auf Taser im Streifendienst vermeidet ein riskantes Zwangsmittel; Wirkung auf den Umgang bei Kontakten insgesamt kaum untersucht.",
+          "zitat": "Wir lehnen den Einsatz von Tasern außerhalb von Spezialkräften ab.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=291",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10548,
+          "instrument": 10457,
+          "beschreibung": "Unabhängigen Polizeibeauftragten mit Befugnissen und Personal ausbauen",
+          "ursachen_ids": [3403],
+          "zitat": "Deshalb wollen wir den Polizei- und Bürgerbeauftragten als Institution ausbauen, seine Befugnisse und sein Personal stärken. […] Der Polizeibeauftragte muss über die notwendigen Untersuchungs- und Ermittlungsbefugnisse verfügen, um rechtswidrige Gewalt und Menschenrechtsverletzungen durch die Sicherheitsbehörden aufzuklären.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=290",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10549,
+          "instrument": 10454,
+          "beschreibung": "Bodycam-Aufzeichnungen: Einsicht für Bürger*innen und automatische Aktivierung beim Waffeneinsatz",
+          "ursachen_ids": [3403],
+          "zitat": "Bürger*innen sollen die Aktivierung der Bodycam verlangen und die Aufzeichnungen einsehen können. […] Beim Einsatz von Waffen ist die Bodycam automatisch auszulösen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=290",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10550,
+          "beschreibung": "Zivilgesellschaftliche Initiativen unterstützen, die polizeiliches Handeln beobachten",
+          "ursachen_ids": [3403],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Zivilgesellschaftliche Beobachtung macht Fehlverhalten sichtbar und berät Betroffene, hat aber keine Befugnisse zur Aufklärung.",
+          "zitat": "Wir unterstützen zivilgesellschaftliche Initiativen und Beratungsstellen, wie z.B. die „Kampagne für Opfer rassistischer Polizeigewalt“ (KOP), die polizeiliches Handeln beobachten und auf rassistische Praktiken aufmerksam machen.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=290",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10551,
+          "beschreibung": "Schutz für Beschäftigte, die Fehlverhalten melden, durch Umsetzung des Hinweisgeberschutzgesetzes",
+          "ursachen_ids": [3403],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Schutz für Hinweisgebende in der Polizei kann Fehlverhalten sichtbar machen; Wirkung auf die Aufklärung von Vorwürfen kaum untersucht.",
+          "zitat": "Wer seine Vorgesetzten über Fehlverhalten im Kolleg*innenkreis informiert, muss von seinem Arbeitgeber in besonderer Weise geschützt werden. Das Hinweisgeberschutzgesetz muss hierfür endlich konsequent umgesetzt werden.",
+          "beleg_programm_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf#page=297",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3401, 3402, 3403],
+      "massnahmen": [
+        {
+          "id": 10552,
+          "instrument": 10457,
+          "beschreibung": "Unabhängige Beschwerdestelle mit Mandat, Ressourcen und Befugnissen, um Fehlverhalten der Polizei zu verfolgen",
+          "ursachen_ids": [3403],
+          "zitat": "Eine von der Polizei unabhängige Beschwerdestelle mit ausreichendem Mandat, Ressourcen und Befugnissen, um Fehlverhalten der Polizei effektiv zu verfolgen und aufzuklären.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=20",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10553,
+          "instrument": 10447,
+          "beschreibung": "Kontrollquittungen für Betroffene polizeilicher Maßnahmen einführen",
+          "ursachen_ids": [3401],
+          "zitat": "Den Polizeibeauftragten zu einer Anlaufstelle für „alle“ machen und Kontrollquittungen für Betroffene polizeilicher Maßnahmen einführen.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=20",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10554,
+          "instrument": 10448,
+          "beschreibung": "Demokratie- und Grundrechtsbildung sowie Fehlerkultur in Aus- und Fortbildung der Polizei stärken",
+          "ursachen_ids": [3402],
+          "zitat": "Demokratie- und Grundrechtsbildung in Ausbildung und Fortbildung stärken, eine Fehlerkultur und Resilienz gegen extrem rechte Einstellungen befördern.",
+          "beleg_programm_url": "https://wahlprogramm26.die-linke-mv.de/wp-content/uploads/sites/77/2026/08/LINKE-MV_LTW26_Langwahlprogramm_A4_web.pdf#page=20",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 16,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3401, 3402, 3403],
+      "massnahmen": [
+        {
+          "id": 10555,
+          "instrument": 10448,
+          "beschreibung": "Regelmäßige Fortbildungen der Polizei zu Menschenrechten und interkultureller Kompetenz.",
+          "ursachen_ids": [3402],
+          "zitat": "Besondere Aufmerksamkeit legen wir auf demokratische Professionalität durch regelmäßige Fortbildungen zu Menschenrechten und interkultureller Kompetenz, um eine demokratische Alltagskultur in der Polizei zu stärken.",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=128",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10556,
+          "beschreibung": "Bürgerforen zur Polizeiarbeit vor Ort, Anhörungen und Rechenschaftsberichte zu Sicherheitspolitik.",
+          "ursachen_ids": [3402],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Bürgerforen und Rechenschaftsberichte fördern Austausch und Transparenz; die Wirkung auf das Verhalten bei einzelnen Kontakten ist gering.",
+          "zitat": "Wir schaffen echte Bürger:innenbeteiligung bei sicherheitspolitischen Fragen: Öffentliche Anhörungen zu neuen Sicherheitsgesetzen, Bürger:innenforen zur Polizeiarbeit vor Ort und transparente Rechenschaftsberichte aller Sicherheitsbehörden ermöglichen es, dass Bürger:innen mitgestalten können.",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=128",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10557,
+          "instrument": 10457,
+          "beschreibung": "Eine unabhängige Polizeibeschwerdestelle mit eigenen Ermittlungsbefugnissen einrichten.",
+          "ursachen_ids": [3403],
+          "zitat": "Ihre Rechte werden gestärkt durch eine unabhängige Polizeibeschwerdestelle mit eigenen Ermittlungsbefugnissen und ausreichender Ausstattung, damit Beschwerden nicht zu den Akten gelegt werden.",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=128",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10558,
+          "instrument": 10455,
+          "beschreibung": "Individuelle Kennzeichnungspflicht für Polizeikräfte.",
+          "ursachen_ids": [3403],
+          "zitat": "Eine demokratische Polizei hat nichts zu verbergen. Die individuelle Kennzeichnungspflicht […] schützen Bürger:innen ebenso wie Polizeikräfte vor falschen Anschuldigungen.",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=129",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10559,
+          "instrument": 10454,
+          "beschreibung": "Automatischer Einsatz von Bodycams bei Schusswaffengebrauch und Taser-Einsatz.",
+          "ursachen_ids": [3403],
+          "zitat": "Die individuelle Kennzeichnungspflicht und der automatische Einsatz von Bodycams beim Schusswaffengebrauch oder beim Einsatz von Tasern schützen Bürger:innen ebenso wie Polizeikräfte vor falschen Anschuldigungen.",
+          "beleg_programm_url": "https://www.dielinke-sachsen-anhalt.de/fileadmin/aaa_download_lsa/Parteitage/10._LPT_2._Tagung_VV_LTW_2026/Beschluesse/2026-03-19_Landtagswahlprogramm__final_.pdf#page=129",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "durchsucht_fuer": [3401, 3402, 3403],
+      "massnahmen": [
+        {
+          "id": 10560,
+          "beschreibung": "Aus- und Fortbildung der Polizei in Akademien und Trainingszentren ausbauen",
+          "ursachen_ids": [3402],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "blind",
+          "begruendung": "Bessere Ausbildung in Akademien kann das Einsatzverhalten verbessern; Inhalte zu Kommunikation und Umgang mit Betroffenen werden nicht genannt.",
+          "zitat": "Wir fordern eine solide Ausstattung der Polizei mit modernen Einsatzmitteln und IT […] Dabei setzen wir auf exzellente Aus- und Fortbildung in Akademien und Trainingszentren.",
+          "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=35",
+          "evidenz": "offen",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "BE",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3401, 3402, 3403],
+      "massnahmen": [
+        {
+          "id": 10561,
+          "instrument": 10448,
+          "beschreibung": "Einsatzkräfte sollen stärker in Deeskalation geschult werden; bestehende Deeskalationsstrategien sind anzuwenden und auszuwerten.",
+          "ursachen_ids": [3402],
+          "zitat": "Zugleich müssen Einsatzkräfte noch stärker darin geschult und dazu angehalten werden, deeskalierend zu wirken. Eine gewaltsame Polizei provoziert Gegengewalt. Existierende Deeskalationsstrategien bei Demonstrationen – völlig unabhängig von deren politischer Ausrichtung – sind konsequent anzuwenden und auszuwerten.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=39",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10562,
+          "instrument": 10443,
+          "beschreibung": "Zusätzliche gemeinsame Kontrollen von Ordnungsamt, Polizei und Zoll, auch in Innenräumen wie der Schankwirtschaft.",
+          "ursachen_ids": [3401],
+          "zitat": "Für eine saubere Stadt und die Bekämpfung von Drogenmissbrauch führen wir zusätzliche gemeinsame Kontrollen des Ordnungsamts mit der Polizei und den Zollbehörden ein. Solche Kontrollen werden sowohl in Innenräumen, etwa in der Schankwirtschaft, als auch im öffentlichen Raum durchgeführt.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=41",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10563,
+          "instrument": 10443,
+          "beschreibung": "Bei Drogenkonsum im Umfeld von Schulen und Kitas sollen neben Platzverweisen Sicherheitszonen eingerichtet werden.",
+          "ursachen_ids": [3401],
+          "zitat": "Öffentlichen Droghenkonsum im Umfeld von Schulen und Kitas ahnden wir konsequent. Dafür greifen wir neben Platzverweisen auch auf die Einrichtung von Sicherheitszonen zurück.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=41",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10564,
+          "instrument": 10462,
+          "beschreibung": "Bei unverhältnismäßiger Gewalt durch Polizeikräfte sofortige und konsequente Disziplinarmaßnahmen sowie Überprüfung der Einsatzkräfte.",
+          "ursachen_ids": [3403],
+          "zitat": "Selbstverständlich stellen wir die vielen Polizeibeamten, die ihre Tätigkeit beanstandungslos ausüben, nicht unter Generalverdacht. Zugleich setzen wir aber im Falle der Anwendung unverhältnismäßiger Gewalt sofortige und konsequente Disziplinarmaßnahmen um.",
+          "beleg_programm_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf#page=39",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "MV",
+      "landtagswahl": "2026-09-20",
+      "durchsucht_fuer": [3401, 3402, 3403],
+      "massnahmen": [
+        {
+          "id": 10565,
+          "instrument": 10448,
+          "beschreibung": "Fortbildung der Polizei mit praxisnahen Standards für Einsatznachbereitung und Fehlerkultur.",
+          "ursachen_ids": [3402],
+          "zitat": "Professionelle Fehlerkultur und Qualitätssicherung durch praxisnahe Fortbildung und klare Standards für Einsatznachbereitung.",
+          "beleg_programm_url": "https://mv.bsw-vg.de/wp-content/uploads/2026/04/Landeswahlprogramm-2026.pdf#page=68",
+          "stand": "2026-10-21",
+          "geprueft": false,
+          "ki_entwurf": true
+        }
+      ]
+    },
+    {
+      "partei_id": 17,
+      "land": "ST",
+      "landtagswahl": "2026-09-06",
+      "durchsucht_fuer": [3401, 3402, 3403],
+      "keine_massnahme": {
+        "begruendung": "Erfasste Stellen (S. 67, 71) setzen laut Bewertung ohne Parteinamen an keiner der Ursachen an.",
+        "stand": "2026-10-21",
+        "treffer": 3,
+        "geprueft": false,
+        "ki_entwurf": true
+      }
+    }
   ]
 }

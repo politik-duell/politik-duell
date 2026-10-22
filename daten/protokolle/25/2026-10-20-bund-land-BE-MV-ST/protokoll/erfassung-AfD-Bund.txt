@@ -1,0 +1,53 @@
+{
+  "partei_id": 15,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Ablehnung des EU-Digital-Services-Act und Rückabwicklung des NetzDG",
+      "ursachen_ids": [2502],
+      "buendel": "Plattformen verbindlich in die Pflicht nehmen",
+      "zitat": "Deshalb lehnen wir auch die Implementierung des europäischen „Digital Services Act (DSA)“ in Deutschland entschieden ab und werden das NetzDG rückabwickeln.",
+      "seite": 50
+    },
+    {
+      "beschreibung": "Große Anbieter sozialer Medien sollen die Meinungsfreiheit ihrer Nutzer respektieren",
+      "ursachen_ids": [2502],
+      "buendel": "Eigenverantwortung der Plattformen und Meinungsfreiheit wahren",
+      "zitat": "Als Quasi-Oligopole sollen die großen Anbieter sozialer Medien verpflichtet werden, die Meinungsfreiheit ihrer Nutzer zu respektieren.",
+      "seite": 132
+    },
+    {
+      "beschreibung": "Abschaffung des besonderen Strafschutzes (§ 188 StGB) für Personen des politischen Lebens",
+      "ursachen_ids": [],
+      "ursachen_offen": [2501],
+      "zitat": "Die „Majestätsbeleidigung“, d.h. den besonderen Schutz des § 188 StGB für Personen, die im politischen Leben des Volkes stehen, wollen wir abschaffen.",
+      "seite": 133
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 2501, "name": "Majestätsbeleidigung abschaffen", "seite": 133 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 2503, "seiten": [48, 49, 50, 132, 133], "grund": "Digitalisierung (S. 46–50) und Meinungsfreiheit (S. 132–133) gelesen: keine Prävention, Medienkompetenz, Gesprächskultur oder Gestaltung der Plattformen (Moderation, Anonymität, Algorithmen) genannt." }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis (S. 1–8); Kapitel „Innere Sicherheit“ (S. 116–126) vollständig; Kapitel „Demokratie und Rechtsstaat“ mit Meinungsfreiheit und Strafrecht (S. 132–133); Digitalisierungskapitel (S. 46–50) vollständig; Stichwortsuche im Gesamttext (Hass, Plattform, Melde-, Beratung, Anonym, Algorith, Medienkompetenz, Netiquette) ohne weitere Treffer.
+
+Nicht erfasst:
+- S. 50: Beendigung der Finanzierung nichtstaatlicher Akteure, Offenlegung der NGO-Finanzierung, Kampf gegen Desinformation – anderer Zusammenhang (Meinungslenkung), kein Hass- oder Anfeindungsbezug.
+- S. 49: Kritische Meinungen „solange sie nicht die Grenze zur Strafbarkeit überschreiten“ – Grundsatzaussage ohne Handlung.
+- S. 133: „Die Verfolgung, Ächtung und Löschung von sog. ‚Hate Speech‘ ist ein Verstoß gegen die Meinungsfreiheit“ – Bekenntnis, keine Handlungszusage; Hinweis für die Richtung „Eigenverantwortung … wahren“.
+- S. 132: „Staatliche Zensurvorschriften … werden wir umgehend abschaffen“ – gleiche Stoßrichtung wie die NetzDG-Zusage (S. 50), nicht separat erfasst.
+- S. 118: Unterstützung der Staatsanwaltschaften durch Erhöhung des Anteils am Steueraufkommen – allgemeine Bekämpfung der organisierten Kriminalität, kein Bezug zu Hass oder Netz.
+- S. 137–139: Abschaffung der Weisungsgebundenheit der Staatsanwaltschaft – allgemeine Justizreform, kein Bezug zu Hass oder Netz.
+- S. 124: „Antisemitische Beleidigungen müssen konsequent strafrechtlich geahndet werden“ – Passage im Islam-Kapitel, Bezug zu Beleidigungen ohne Netzbezug; für die Ursache „im Netz“ nicht übernommen.
+- S. 122–125 (Extremismus, Islam): keine Maßnahme gegen Hass oder Anfeindungen im Netz.
+
+Richtungen ohne Maßnahme: 2501 Meldewege und Hilfe für Betroffene (keine Fundstelle; Betroffenenberatung, Meldestelle, Opferberatung nicht genannt); 2503 Prävention, Medienkompetenz und Gesprächskultur; 2503 Moderation und Gestaltung der Plattformen.
+
+Seiten ohne Text: S. 52–54 (Übergang Digitalisierung/Finanzen) ohne Relevanz; Kapiteltrenner S. 116 und S. 115 ohne Bedeutung für die Ursache.
+
+Grenzfälle: §188-StGB-Abschaffung (S. 133) als offen 2501 – betrifft Strafschutz gegen Beleidigung von Politikern, nicht ausdrücklich „im Netz“; Bündel-Neuanlage „Majestätsbeleidigung abschaffen“. Plattform-Maßnahmen: NetzDG-/DSA-Ablehnung (S. 50) unter Bündel „Plattformen verbindlich in die Pflicht nehmen“ (Richtung abschaffen), Meinungsfreiheit-Verpflichtung (S. 132) unter Bündel „Eigenverantwortung der Plattformen und Meinungsfreiheit wahren“.

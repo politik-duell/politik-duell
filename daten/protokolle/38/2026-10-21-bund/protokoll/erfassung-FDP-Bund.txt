@@ -1,0 +1,53 @@
+{
+  "partei_id": 14,
+  "land": null,
+  "massnahmen": [
+    { "beschreibung": "Ausgabenwachstum der GKV soll nicht stärker steigen als die Einnahmen.", "ursachen_ids": [3801], "zitat": "Um die ungebremste Leistungsausgabenentwicklung in der GKV in den Griff zu bekommen, sollen in Zukunft die Ausgaben nicht stärker wachsen als die Einnahmen.", "seite": 33 },
+    { "beschreibung": "Leistungsausweitungen der letzten zehn Jahre prüfen; nicht bewährte Leistungen aus dem Leistungskatalog streichen.", "ursachen_ids": [3801], "zitat": "Zusätzlich werden wir alle Leistungsausweitungen der letzten zehn Jahre einem Evidenz-, Effizienz- und Wirtschaftlichkeitscheck unterziehen. Leistungen, die sich nicht bewährt haben, sollen aus dem GKV-Leistungskatalog gestrichen werden.", "seite": 33 },
+    { "beschreibung": "Ungekürzte, leistungsgerechte Vergütung aller Gesundheitsberufe in der ambulanten Versorgung.", "ursachen_ids": [3801], "zitat": "Zu einer Stärkung der flächendeckenden ambulanten Versorgung gehört für uns auch, dass die ungekürzte Vergütung aller Gesundheitsberufe leistungsgerecht erfolgen muss.", "seite": 33 },
+    { "beschreibung": "Krankenhausversorgung spezialisieren und die Kostenentwicklung bremsen.", "ursachen_ids": [3801], "zitat": "In der Krankenhausversorgung wollen wir spezialisierte und damit bessere Angebote vorhalten, die Kostenentwicklung bremsen und zugleich Ärzte und Pflegekräfte entlasten.", "seite": 33 },
+    { "beschreibung": "Primärarztsystem in der ambulanten Versorgung: Haus- und Kinderärzte als erste Anlaufstelle.", "ursachen_ids": [], "ursachen_offen": [3801], "zitat": "In der ambulanten Versorgung setzen wir uns für ein Primärarztsystem ein: Haus- und Kinderärzte sollten die erste Anlaufstelle für Patientinnen und Patienten sein.", "seite": 33 },
+    { "beschreibung": "Besondere Vergütung für Arzneimittel mit Therapieerfolgen.", "ursachen_ids": [3801], "zitat": "Therapieerfolge wollen wir besonders vergüten.", "seite": 33 },
+    { "beschreibung": "Bessere psychotherapeutische Versorgung; Wartezeit auf einen Therapieplatz unter vier Wochen.", "ursachen_ids": [3801], "zitat": "Wir setzen uns für eine bessere psychotherapeutische Versorgung ein und wollen die Wartezeit auf einen Therapieplatz auf unter vier Wochen verkürzen.", "seite": 34 },
+    { "beschreibung": "Krankenkassen sollen für vorsorgende Versicherte einen reduzierten Zusatzbeitrag einführen können.", "ursachen_ids": [], "ursachen_offen": [3801], "zitat": "Wer Vorsorge betreibt, verursacht dadurch weniger Ausgaben für seine Krankenkasse. Deshalb wollen wir den Krankenkassen ermöglichen, für diese Versicherten einen reduzierten Zusatzbeitrag einzuführen.", "seite": 34 },
+    { "beschreibung": "Beiträge für Selbstständige in der GKV an den tatsächlichen Einnahmen orientieren.", "ursachen_ids": [3801], "zitat": "Ungleichbehandlungen wollen wir deshalb abbauen und zum Beispiel die Beiträge für Selbstständige zur gesetzlichen Krankenversicherung an den tatsächlichen Einnahmen orientieren.", "seite": 19 }
+  ],
+  "neue_buendel": [
+    { "ursache": 3801, "name": "Ausgabenwachstum an Einnahmen koppeln", "seite": 33 },
+    { "ursache": 3801, "name": "Leistungskatalog auf Wirtschaftlichkeit prüfen", "seite": 33 },
+    { "ursache": 3801, "name": "Vergütung der Gesundheitsberufe", "seite": 33 },
+    { "ursache": 3801, "name": "Krankenhausstruktur und Kostenbremse", "seite": 33 },
+    { "ursache": 3801, "name": "Primärarztsystem", "seite": 33 },
+    { "ursache": 3801, "name": "Vergütung innovativer Arzneimittel", "seite": 33 },
+    { "ursache": 3801, "name": "Psychotherapeutische Versorgung ausbauen", "seite": 34 },
+    { "ursache": 3801, "name": "Reduzierter Zusatzbeitrag für Vorsorge", "seite": 34 },
+    { "ursache": 3801, "name": "Beitragsbemessung für Selbstständige", "seite": 19 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 3802, "seiten": [20, 33, 34], "grund": "Kapitel Gesundheit (S. 33–34) gelesen; keine Aussage zur Erstattung versicherungsfremder GKV-Leistungen durch den Bund oder zu Steuerfinanzierung in der GKV. S. 20 betrifft Sozialleistungen allgemein, nicht die GKV." },
+    { "ursache": 3803, "seiten": [33, 34], "grund": "Kapitel Gesundheit gelesen; keine Aussage zu Rücklagen der Kassen oder zur Differenz zwischen erhobenem und bekanntgegebenem Zusatzbeitrag." },
+    { "ursache": 3804, "seiten": [33, 34], "grund": "Kapitel Gesundheit gelesen; keine Aussage zu gesetzlichen Zuzahlungen, Eigenanteilen oder zur Belastungsgrenze." }
+  ],
+  "eigene_synonyme": [
+    { "begriff": "primärarzt", "ursache": 3801, "richtung": "Primärarztsystem" }
+  ]
+}
+
+Protokoll
+
+Gelesen: S. 1–6 (Inhaltsverzeichnis, Präambel); Kapitel III b „Steuersystem“ (S. 13–16, Einnahmen des Staates, Sozialabgaben); Kapitel III e „Soziale Sicherungssysteme“ (S. 18–20); Kapitel IV g „Gesundheit und Pflege“ (S. 31–35); Fundstelle S. 14 (Spitzensteuersatz an Beitragsbemessungsgrenze der Rentenversicherung, keine GKV-Einnahmebasis).
+
+Richtungen ohne Maßnahme: 3802 „Steuerfinanzierung versicherungsfremder Leistungen“ und „Beitragsfreie Mitversicherung einschränken“ (gezielt gesucht: versicherungsfremd, Bundeszuschuss, Steuermittel, Mitversicherung, Familienversicherung; nichts gefunden). 3803 „Rücklagenregeln“ und „Zusatzbeitrag an Bedarf binden“ (gezielt gesucht: Rücklagen, Reserve, Zusatzbeitrag; nichts gefunden außer der Prävention-Stelle S. 34, die einen Beitragsanreiz betrifft und unter 3801 offen steht). 3804 „Zuzahlungen senken oder abschaffen“ und „Zuzahlungen erhöhen oder steuern“ (gezielt gesucht: Zuzahlung, Eigenanteil, Belastungsgrenze, Praxisgebühr; nichts gefunden).
+
+Nicht erfasst:
+- S. 33–34: Wahlfreiheit und Wechsel zwischen Kassen, Einheitskasse abgelehnt (Position, keine Ausgaben- oder Einnahmenmaßnahme).
+- S. 33: Sektorenbarrieren abbauen, Verzahnung der Versorgung, Notfallreform (Versorgungsstruktur, kein Kostenbezug genannt).
+- S. 34: Digitale Gesundheitsanwendungen, Telemedizin, Wearables (Digitalisierung, kein Kostenbezug genannt).
+- S. 34: Suchtprävention, Cannabis, Suizidprävention, Organspende (kein Bezug zu den Ursachen).
+- S. 34–35: Pflegeversicherung, Pflegefachkräfte, Anerkennungsverfahren, kapitalgedeckte Pflegevorsorge (Pflegeversicherung nach R1 ausgeschlossen).
+- S. 14: Spitzensteuersatz an Beitragsbemessungsgrenze der Rentenversicherung (Einkommensteuer, keine GKV-Beitragsbemessung).
+- S. 19–20: Krankenversicherung nicht betroffen außer S. 19 (erfasst). S. 20: negative Einkommensteuer und Zusammenfassung der Sozialleistungen (Bürgergeld/Wohngeld, keine GKV).
+- Gleichartige Stellen (gleicher Hebel wie erfasst): S. 33 „Ausgaben nicht stärker wachsen als Einnahmen“ und S. 33 „Leistungsausweitungen prüfen“ sind verschieden (Deckel gegen Leistungsrecht); keine weiteren Stellen zur Vergütung gefunden.
+
+Seiten ohne Text: S. 1 und 2 (Titel, Vorbemerkung), ohne Rolle.
+Stand im PDF: wie im Auftrag.

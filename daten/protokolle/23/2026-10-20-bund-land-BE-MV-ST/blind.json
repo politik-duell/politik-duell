@@ -1,0 +1,1632 @@
+{
+  "pruefsumme": "bf1418eacfbfbb64eba8b9fbdeec37209445ac5496ddaecf2a7e9c4542e6dfaf",
+  "thema": {
+    "id": 23,
+    "name": "Mobbing und Druck in der Schule",
+    "ziel": "Schülerinnen und Schüler können ohne Mobbing und Ausgrenzung zur Schule gehen und schulische Anforderungen ohne gesundheitlich belastenden Druck bewältigen."
+  },
+  "ursachen": [
+    {
+      "id": 2301,
+      "beschreibung": "Abwertende Klassennormen und die Rechtfertigung von Übergriffen begünstigen Mobbing (Längsschnittstudie 2019 mit 1.250 Kindern in 98 Klassen)",
+      "ebene": "land"
+    },
+    {
+      "id": 2302,
+      "beschreibung": "Greifen Lehrkräfte bei Mobbing nicht ein und unterstützen Betroffene nicht, kann sich das Verhalten verfestigen (Studie mit 609 Kindern in 34 Klassen, 2017)",
+      "ebene": "land"
+    },
+    {
+      "id": 2303,
+      "beschreibung": "Digitale Angriffe erreichen ein größeres Publikum als Mobbing in der Schule; 2022 wurden 3,0 % der Jugendlichen in Deutschland ausschließlich online gemobbt (HBSC-Studie, 2024)",
+      "ebene": "bund"
+    },
+    {
+      "id": 2304,
+      "beschreibung": "Belastender Leistungs- und Prüfungsdruck hängt mit Angst und depressiven Beschwerden zusammen (systematischer Review 2023, 52 Studien)",
+      "ebene": "land"
+    }
+  ],
+  "regeln": [
+    {
+      "nr": 1,
+      "ursachen": [
+        2301,
+        2302,
+        2303,
+        2304
+      ],
+      "text": "Zu 2301 gehören Klassenklima, soziales Lernen und Prävention von Ausgrenzung, zu 2302 Handeln und Qualifikation von Lehrkräften und Beschwerdewege an Schulen, zu 2303 Cybermobbing mit Schulbezug und Plattformschutz für Kinder, zu 2304 Leistungs- und Prüfungsdruck sowie Entlastung."
+    },
+    {
+      "nr": 2,
+      "text": "Lehrkräftemangel, Unterrichtsausfall, Lernrückstände und Sanierung gehören zu Schule, allgemeine Anfeindungen im Netz zu Hass im Internet, Mediennutzung von Kindern zu eigenem Thema. Schulsozialarbeit und Schulpsychologie zählen zu 2301 und 2302, wenn das Zitat Mobbing, Gewalt oder Konflikte nennt."
+    }
+  ],
+  "instrumente": [],
+  "massnahmen": [
+    {
+      "kennung": "M001",
+      "ebene": "land",
+      "beschreibung": "Verteilungsquoten beim Übergang in die Grundschulen für bessere Durchmischung nach Sprachstand",
+      "zitat": "Darüber hinaus soll durch Verteilungsquoten beim Übergang in die Grundschulen eine bessere Durchmischung von Schülern mit unterschiedlichem deutschen Sprachstand innerhalb der Bezirke erreicht werden. Ziel ist es, Segregation zu verhindern und Begegnung zu fördern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2301
+      ],
+      "pruefsumme": "1a2c0192fc0f7d94"
+    },
+    {
+      "kennung": "M002",
+      "ebene": "land",
+      "beschreibung": "Präventionsangebote gegen Mobbing, Gewalt und Ausgrenzung weiter unterstützen; Angebote zur Stärkung psychischer Gesundheit junger Menschen.",
+      "zitat": "Wir wollen Präventionsangebote gegen Mobbing, Cybermobbing, Gewalt und Ausgrenzung sowie Angebote zur Stärkung psychischer Gesundheit junger Menschen weiter unterstützen.",
+      "ursachen_ids": [
+        2301
+      ],
+      "ursachen_offen": [
+        2304
+      ],
+      "pruefsumme": "c43582a80156820f"
+    },
+    {
+      "kennung": "M003",
+      "ebene": "land",
+      "beschreibung": "Wahlmöglichkeiten zwischen Abitur nach zwölf oder dreizehn Jahren an Schulen schaffen",
+      "zitat": "Um bestmögliche Wege zum Bildungserfolg zu ermöglichen, werden wir: […] flexible Schulausgangsphasen mit Wahlmöglichkeiten zwischen Abitur nach 12 oder 13 Jahren schaffen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2304
+      ],
+      "pruefsumme": "02749c039d3cde69"
+    },
+    {
+      "kennung": "M004",
+      "ebene": "land",
+      "beschreibung": "Bundesjugendspiele in Klasse 1 bis 4 wieder als Wettkampf nach früheren Regeln durchführen; Einsatz beim zuständigen Kuratorium.",
+      "zitat": "Wir werden uns deshalb gegenüber dem für die Gestaltung der Bundesjugendspiele verantwortlichen Kuratorium dafür einsetzen, die Bundesjugendspiele in den Klassen 1 bis 4 zukünftig wieder nach den vor dem Schuljahr 2023/2024 geltenden Regeln und insbesondere auch als Wettkampf durchzuführen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2304
+      ],
+      "pruefsumme": "aa45f9589a4882b9"
+    },
+    {
+      "kennung": "M005",
+      "ebene": "land",
+      "beschreibung": "Verpflichtende Weiterbildungen für Pädagog*innen gegen Mehrfachdiskriminierung queerer Menschen einführen",
+      "zitat": "Um Queerfeminismus zu fördern: […] führen wir verpflichtende Weiterbildungen für Pädagog*innen, Sozialarbeiter*innen, Schulpsycholog*innen und für Polizist*innen ein, um Mehrfachdiskriminierung von queeren Personen zu verhindern.",
+      "ursachen_ids": [
+        2302
+      ],
+      "ursachen_offen": [
+        2301
+      ],
+      "pruefsumme": "5a4fb8a9f7fe4715"
+    },
+    {
+      "kennung": "M006",
+      "ebene": "land",
+      "beschreibung": "Schulsekretariate aufwerten, Aufgaben erweitern und gemeinsam von Land und Kommunen finanzieren, um Lehrkräfte und Schulleitungen zu entlasten",
+      "zitat": "Zur Entlastung von Lehrkräften und Schulleitungen müssen Schulsekretariate aufgewertet, ihre Aufgaben erweitert und gemeinsam von Land und Kommunen finanziert werden.",
+      "ursachen_ids": [
+        2304
+      ],
+      "pruefsumme": "1ce99d3e143b7806"
+    },
+    {
+      "kennung": "M007",
+      "ebene": "bund",
+      "beschreibung": "Kinder und Jugendliche sollen einen Rechtsanspruch auf Schutz vor Gewalt erhalten; ihre Rechte sollen im Grundgesetz verankert werden.",
+      "zitat": "Wir wollen, dass Kinder und Jugendliche einen Rechtsanspruch auf gute Entfaltung und soziale Teilhabe bekommen. Gleiches gilt für den Schutz vor Gewalt. Deshalb wollen wir ihre Rechte im Grundgesetz verankern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2301
+      ],
+      "pruefsumme": "baa86e8bf59c047a"
+    },
+    {
+      "kennung": "M008",
+      "ebene": "land",
+      "beschreibung": "Prävention von Mobbing, Cybermobbing und Gewalt an Schulen stärken",
+      "zitat": "Deshalb stärken wir die Prävention von Mobbing, Cybermobbing, Gewalt und digitalen Konflikten sowie den Zugang zu bestehenden Unterstützungsangeboten.",
+      "ursachen_ids": [
+        2301
+      ],
+      "pruefsumme": "cfedfe4376b46b4e"
+    },
+    {
+      "kennung": "M009",
+      "ebene": "land",
+      "beschreibung": "Jede Schule soll ein Anti-Mobbing-Team bekommen, das gegen Mobbing vorgeht.",
+      "zitat": "Jede Schule soll künftig ein Anti-Mobbing-Team haben.",
+      "ursachen_ids": [
+        2302
+      ],
+      "ursachen_offen": [
+        2301
+      ],
+      "pruefsumme": "a095318130c49500"
+    },
+    {
+      "kennung": "M010",
+      "ebene": "land",
+      "beschreibung": "Gesundheitsförderung und Gesundheitskompetenz in Schulen ausbauen.",
+      "zitat": "Gesundheitsförderung und Gesundheitskompetenz in Schulen werden ausgebaut.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2304
+      ],
+      "pruefsumme": "e1a6e3c0b996610b"
+    },
+    {
+      "kennung": "M011",
+      "ebene": "land",
+      "beschreibung": "Vernetzung von Schulen und Staatsanwaltschaften, damit jede Straftat strafmündiger Schüler vor Gericht kommt.",
+      "zitat": "Wir wollen durch Vernetzung von Schulen und Staatsanwaltschaften erreichen, dass jede Straftat aller strafmündigen Schüler vor Gericht kommt.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2301
+      ],
+      "pruefsumme": "01917c457c887dfd"
+    },
+    {
+      "kennung": "M012",
+      "ebene": "land",
+      "beschreibung": "Zugang zum Gymnasium nur noch mit befriedigenden Leistungen in Deutsch, Mathematik und erster Fremdsprache",
+      "zitat": "Die Zugangsvoraussetzungen zum Gymnasium werden verschärft: In den Fächern Deutsch, Mathe und in der ersten Fremdsprache müssen für den Zugang zum Gymnasium mindestens befriedigende Leistungen erreicht worden sein.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2304
+      ],
+      "pruefsumme": "f1c90ec963037440"
+    },
+    {
+      "kennung": "M013",
+      "ebene": "land",
+      "beschreibung": "Schulen und andere Einrichtungen sollen verpflichtend Schutzkonzepte gegen Gewalt und Diskriminierung entwickeln und umsetzen.",
+      "zitat": "Prävention ist der wirksamste Schutz vor Gewalt. Einrichtungen der Jugendhilfe, Schulen, Einrichtungen der Eingliederungshilfe, der Geflüchtetenhilfe sowie des Gesundheits- und Pflegebereichs sollen verpflichtend Schutzkonzepte entwickeln und umsetzen. Diese müssen Schutz vor Gewalt und Diskriminierung beinhalten […]",
+      "ursachen_ids": [
+        2301
+      ],
+      "pruefsumme": "dd72b68518cef145"
+    },
+    {
+      "kennung": "M014",
+      "ebene": "land",
+      "beschreibung": "Präventionskonzepte gegen sexualisierte und digitale Gewalt an Schulen",
+      "zitat": "Wir schützen Frauen* vor Gewalt durch: […] Präventionskonzepte gegen sexualisierte und digitale Gewalt an Schulen, Hochschulen und am Arbeitsplatz.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2301
+      ],
+      "pruefsumme": "65fa51a960dc90f4"
+    },
+    {
+      "kennung": "M015",
+      "ebene": "land",
+      "beschreibung": "Lehramtsausbildung: Theorie und Praxis im Studium besser verzahnen, damit Absolventen im Beruf bestehen",
+      "zitat": "Theorie und Praxis müssen im Studium besser verzahnt werden, damit Absolventen sicher, handlungsfähig und langfristig im Beruf bestehen können.",
+      "ursachen_ids": [
+        2302
+      ],
+      "pruefsumme": "4456d817105519eb"
+    },
+    {
+      "kennung": "M016",
+      "ebene": "land",
+      "beschreibung": "Polizeiliche Anti-Gewalt-Trainings im Schulunterricht und Informationsangebote ausbauen.",
+      "zitat": "Präventive Angebote, wie beispielsweise die von der Polizei im Rahmen des Schulunterrichts angebotenen Anti-Gewalt-Trainings, und Informationsveranstaltungen müssen verstärkt werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2301
+      ],
+      "pruefsumme": "2a457993635ada34"
+    },
+    {
+      "kennung": "M017",
+      "ebene": "land",
+      "beschreibung": "Schulordnungen mit klaren Regeln zu Gewalt und Mobbing und abgestuften Reaktionswegen",
+      "zitat": "Wir werden: […] die Schulordnungen auf wenige klare und rechtssichere Regeln konzentrieren. Gewalt, Mobbing, Bedrohungen und das Mitführen von Waffen müssen darin eindeutig geregelt und mit abgestuften, verbindlichen Reaktionswegen hinterlegt werden.",
+      "ursachen_ids": [
+        2301
+      ],
+      "pruefsumme": "398093d4fe8a25dc"
+    },
+    {
+      "kennung": "M018",
+      "ebene": "land",
+      "beschreibung": "Rahmenlehrpläne verschlanken und die Stundentafel flexibilisieren, ohne weitere Fächer einzuführen.",
+      "zitat": "Schule soll fürs Leben stärken. Deshalb verschlanken wir Rahmenlehrpläne und flexibilisieren die Stundentafel. Weitere Fächer führen wir nicht ein.",
+      "ursachen_ids": [
+        2304
+      ],
+      "pruefsumme": "3aa8e7f3627cf8ad"
+    },
+    {
+      "kennung": "M019",
+      "ebene": "land",
+      "beschreibung": "Verpflichtende, praxisnahe Fortbildungen für Lehrkräfte, im Rahmen verbesserter Arbeitsbedingungen.",
+      "zitat": "Verbesserung der Rahmenbedingungen für die Lehrkräfte […] verpflichtende, praxisnahe Fortbildungen.",
+      "ursachen_ids": [
+        2302
+      ],
+      "pruefsumme": "45b1c6a35cf32dbc"
+    },
+    {
+      "kennung": "M020",
+      "ebene": "land",
+      "beschreibung": "Landesprogramm für psychische Gesundheit und Ausbau schulpsychologischer Angebote, Resilienzförderung im Schulalltag",
+      "zitat": "Mit einem Landesprogramm für Mental Health und dem Ausbau schulpsychologischer Angebote wollen wir verlässliche Unterstützungsstrukturen für Schülerinnen und Schüler, Lehrkräfte und Familien schaffen. Prävention, frühe Hilfen und Resilienzförderung sollen dabei fester Bestandteil des Schulalltags werden.",
+      "ursachen_ids": [
+        2304
+      ],
+      "pruefsumme": "8930b287fed48562"
+    },
+    {
+      "kennung": "M021",
+      "ebene": "land",
+      "beschreibung": "Lehramtsausbildung durch mehr und früher beginnende Praxisphasen im Studium praxisnäher gestalten",
+      "zitat": "Stattdessen werden wir die Lehramtsausbildung durch mehr und ab dem 1. Semester beginnende Praxisphasen im Studium praxisnäher gestalten.",
+      "ursachen_ids": [
+        2302
+      ],
+      "pruefsumme": "a019b6df7a655131"
+    },
+    {
+      "kennung": "M022",
+      "ebene": "bund",
+      "beschreibung": "Mitbestimmungsrechte von Schülerinnen und Schülern ausbauen.",
+      "zitat": "Die Mitbestimmungsrechte von Schüler*innen müssen ausgebaut werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2301
+      ],
+      "pruefsumme": "385ae7300d81f8b4"
+    },
+    {
+      "kennung": "M023",
+      "ebene": "land",
+      "beschreibung": "Ausbildung von Lehrkräften auf Praxisnähe ausrichten, mehr verbindliche Praxisphasen",
+      "zitat": "Ausbildung von Lehrkräften stärker auf Eignung, Qualität und Praxisnähe ausrichten: […] Frühzeitige und verbindliche Praxisphasen müssen daher ausgebaut werden.",
+      "ursachen_ids": [
+        2302
+      ],
+      "pruefsumme": "d936622d57a592ae"
+    },
+    {
+      "kennung": "M024",
+      "ebene": "land",
+      "beschreibung": "Queere Bildung in Schulen stärken, um Hass und Gewalt vorzubeugen.",
+      "zitat": "In Schulen, Jugendarbeit und Erwachsenenbildung stärken wir queere Bildung, um Hass und Gewalt vorzubeugen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2301
+      ],
+      "pruefsumme": "87f11fe0bbc333f9"
+    },
+    {
+      "kennung": "M025",
+      "ebene": "land",
+      "beschreibung": "Konsequentes Ahnden von übergriffigem Verhalten gegen Mitschüler und Lehrer; verbindliches Meldeverfahren und Einschalten der Polizei bei Gewalt an Schulen",
+      "zitat": "[Partei] wird konsequente Maßnahmen gegen Gewalt an Schulen umsetzen. Auch übergriffiges Verhalten unterhalb der Strafbarkeitsgrenze gegenüber Mitschülern und Lehrern muss konsequent geahndet werden.",
+      "ursachen_ids": [
+        2301
+      ],
+      "ursachen_offen": [
+        2302
+      ],
+      "pruefsumme": "199a44318bc6fda3"
+    },
+    {
+      "kennung": "M026",
+      "ebene": "land",
+      "beschreibung": "Verbindlicher landesweiter Personalschlüssel für Schulsozialarbeit und Schulpsychologie; jede Schule mindestens eine Schulsozialarbeitsstelle",
+      "zitat": "Schulsozialarbeit ist jedoch unverzichtbar für Prävention, Integration, Konfliktlösung und die Unterstützung von Lehrkräften. […] Wir brauchen einen verbindlichen, landesweiten Personalschlüssel für Schulsozialarbeit und Schulpsychologie, orientiert am Bundesdurchschnitt. Jede Schule muss dauerhaft mindestens eine Schulsozialarbeiterstelle haben.",
+      "ursachen_ids": [
+        2301,
+        2302
+      ],
+      "pruefsumme": "bff35c75490d1f3a"
+    },
+    {
+      "kennung": "M027",
+      "ebene": "land",
+      "beschreibung": "Fortbildungsangebote für Lehrkräfte, Sozialarbeit und Polizei gegen Cybermobbing erweitern und verbessern",
+      "zitat": "Cybermobbing und Online-Kriminalität unter Jugendlichen sagen wir den Kampf an. Dazu erweitern und verbessern wir Fortbildungsangebote für Lehrkräfte, Sozialarbeiter und die Polizei.",
+      "ursachen_ids": [
+        2302
+      ],
+      "pruefsumme": "f9ba45147c78cb79"
+    },
+    {
+      "kennung": "M028",
+      "ebene": "land",
+      "beschreibung": "Strategie gegen Gewalt an Schulen, die Prävention, Intervention und Repression konsequent verbindet",
+      "zitat": "Darauf aufbauend werden wir eine klare Strategie entwickeln, die Prävention, Intervention und Repression konsequent miteinander verbindet.",
+      "ursachen_ids": [
+        2302
+      ],
+      "ursachen_offen": [
+        2301
+      ],
+      "pruefsumme": "3adbc6b0ee32ef8b"
+    },
+    {
+      "kennung": "M029",
+      "ebene": "land",
+      "beschreibung": "Lehrkräfte sollen ihre Sanktionsmöglichkeiten gesetzlich erhalten; bei Gewalt- und Drogendelikten sollen Schulverweise schneller erfolgen.",
+      "zitat": "Dafür werden wir die Sanktionsmöglichkeiten der Lehrkräfte gesetzlich stärken und bei Gewalt- und Drogendelikten deutlich schneller von Schulverweisen Gebrauch machen.",
+      "ursachen_ids": [
+        2301
+      ],
+      "pruefsumme": "de2e3e757a2ff687"
+    },
+    {
+      "kennung": "M030",
+      "ebene": "bund",
+      "beschreibung": "Bildungsangebote fördern, die demokratische Werte vermitteln, auch an Schulen",
+      "zitat": "Wir fördern Bildungsangebote, die demokratische Werte vermitteln und Menschen befähigen, aktiv an der Demokratie teilzuhaben. […] Schulen, außerschulische Bildungseinrichtungen und Initiativen der politischen Bildung werden wir unterstützen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2301
+      ],
+      "pruefsumme": "7b2e58a1abb4f7bd"
+    },
+    {
+      "kennung": "M031",
+      "ebene": "land",
+      "beschreibung": "Verpflichtende, bedarfsgerechte Fortbildungen für alle Lehrkräfte mit jährlichem Mindestkontingent und regelmäßiger Kontrolle.",
+      "zitat": "Daher setzen wir uns für verpflichtende, bedarfsgerechte Fortbildungsveranstaltungen für sämtliche Lehrkräfte ein, von denen sie ein bestimmtes Kontingent im Jahr erfüllen müssen, und werden ihre Erfüllung regelmäßig überprüfen.",
+      "ursachen_ids": [
+        2302
+      ],
+      "pruefsumme": "e17e717f82c62c30"
+    },
+    {
+      "kennung": "M032",
+      "ebene": "land",
+      "beschreibung": "Zahl der Gemeinschaftsschulen soll verdoppelt werden, um Schulstress zu verringern.",
+      "zitat": "Gemeinschaftsschulen sind die Schulen der Zukunft. Wir wollen ihre Zahl in [Land] verdoppeln.",
+      "ursachen_ids": [
+        2304
+      ],
+      "pruefsumme": "40c5ef497113c8f7"
+    },
+    {
+      "kennung": "M033",
+      "ebene": "land",
+      "beschreibung": "Wiederholung einer Klasse, wo es notwendig ist",
+      "zitat": "Wo es notwendig ist, muss die Wiederholung einer Klasse erfolgen.",
+      "ursachen_ids": [
+        2304
+      ],
+      "pruefsumme": "b1b318dd6924bd70"
+    },
+    {
+      "kennung": "M034",
+      "ebene": "bund",
+      "beschreibung": "Medien- und Datenschutzkompetenz von Kindern und Jugendlichen früh fördern.",
+      "zitat": "Die Medien- und Datenschutzkompetenz von Kindern und Jugendlichen muss möglichst früh gefördert werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2303
+      ],
+      "pruefsumme": "d3b2d959b0a5f527"
+    },
+    {
+      "kennung": "M035",
+      "ebene": "land",
+      "beschreibung": "Präventionsangebote in Kommunen und Schulen unterstützen, um Konflikte frühzeitig zu entschärfen.",
+      "zitat": "Präventionsarbeit in Kommunen, Schulen und Vereinen hilft, Konflikte frühzeitig zu entschärfen und Straftaten zu verhindern. Kommunale Präventionsräte und soziale Präventionsangebote werden unterstützt.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2301
+      ],
+      "pruefsumme": "037e2608701c200c"
+    },
+    {
+      "kennung": "M036",
+      "ebene": "land",
+      "beschreibung": "Privater Wachdienst auf dem Schulhof, unterstellt dem Schulleiter, bei Bedarf einzurichten.",
+      "zitat": "Deshalb braucht es einen dem Schulleiter unterstehenden privaten Wachdienst, der auf dem Schulhof für Recht und Ordnung sorgt und potenzielle Gewalttäter in ihre Schranken weist. Wir werden bei Bedarf einen solchen Wachdienst einrichten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2301
+      ],
+      "pruefsumme": "cb3cc8174281ea81"
+    },
+    {
+      "kennung": "M037",
+      "ebene": "land",
+      "beschreibung": "Fachkräfte durch gezielte Fortbildungen unterstützen, Kinder und Jugendliche schutzorientiert zu begleiten",
+      "zitat": "Um Gleichstellung und Selbstbestimmung von Anfang an mitzudenken und zu stärken, wollen wir: […] alle Fachkräfte durch gezielte Fortbildungen unterstützen, damit sie Kinder und Jugendliche sicher, verantwortungsvoll und schutzorientiert begleiten können.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2302
+      ],
+      "pruefsumme": "b4126884b03e30a3"
+    },
+    {
+      "kennung": "M038",
+      "ebene": "land",
+      "beschreibung": "Verbindliche Sucht- und Gesundheitsprävention in Schulen, altersgerecht und alltagsnah, mit Stärkung von Lebens-, Sozial- und Resilienzkompetenzen.",
+      "zitat": "Verbindliche Sucht- und Gesundheitsprävention in Schulen, altersgerecht und alltagsnah. […] Stärkung von Lebens-, Sozial- und Resilienzkompetenzen.",
+      "ursachen_ids": [
+        2304
+      ],
+      "ursachen_offen": [
+        2301
+      ],
+      "pruefsumme": "cb7219a29feca0e0"
+    },
+    {
+      "kennung": "M039",
+      "ebene": "land",
+      "beschreibung": "Schulpsychologische Versorgung der Schulen sichern, Beratung und Betreuung betroffener Schülerinnen und Schüler",
+      "zitat": "Wir sichern zudem die schulpsychologische Versorgung der Schulen, um flächendeckende Beratung und Betreuung von betroffenen Schülerinnen und Schülern zu gewährleisten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2302
+      ],
+      "pruefsumme": "f7b072b878ae12d5"
+    },
+    {
+      "kennung": "M040",
+      "ebene": "bund",
+      "beschreibung": "Ausreichenden Kinder- und Jugendschutz im Internet gewährleisten; Digital Services Act mit Schwerpunkt Jugend- und Medienschutz umsetzen",
+      "zitat": "Wir sorgen dafür, dass ein ausreichender Kinder- und Jugendschutz auch im Internet gewährleistet wird. […] Wir stellen sicher, dass bei der Umsetzung des Digital Services Act der Schwerpunkt auf mehr Transparenz, Kampf gegen Desinformation sowie Jugend- und Medienschutz gelegt wird.",
+      "ursachen_ids": [
+        2303
+      ],
+      "pruefsumme": "ba1400b35a7f308e"
+    },
+    {
+      "kennung": "M041",
+      "ebene": "land",
+      "beschreibung": "Kinderschutzstandards sollen in allen Einrichtungen, in denen sich Kinder und Jugendliche aufhalten, verlässlich umgesetzt werden.",
+      "zitat": "Wir […] setzen uns […] ein, dass in allen Einrichtungen, in denen Kinder und Jugendliche sich aufhalten, Kinderschutzstandards […] implementiert werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2302
+      ],
+      "pruefsumme": "23efedb5d27fffff"
+    },
+    {
+      "kennung": "M042",
+      "ebene": "land",
+      "beschreibung": "Probeunterricht für Gymnasien beenden und durch ein zugangsorientiertes Aufnahmeverfahren ersetzen.",
+      "zitat": "Die Instrumentalisierung des „Probeunterrichts“ in seiner aktuellen Form werden wir beenden und durch ein zugangsorientiertes Verfahren zu Aufnahmeprüfung für Gymnasien ersetzen […].",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2304
+      ],
+      "pruefsumme": "c5626265dbec6da1"
+    },
+    {
+      "kennung": "M043",
+      "ebene": "land",
+      "beschreibung": "Fortbildung der Lehrkräfte in Medienbildung und im Einsatz digitaler Unterrichtsmodule intensivieren",
+      "zitat": "Die Fortbildung der Lehrkräfte in Medienbildung und im Einsatz digitaler Unterrichtsmodule werden wir intensivieren und so digitale Didaktik im Fachunterricht verankern.",
+      "ursachen_ids": [
+        2302
+      ],
+      "pruefsumme": "0f0a9e6e7b190e1b"
+    },
+    {
+      "kennung": "M044",
+      "ebene": "land",
+      "beschreibung": "Gemeinsames Lernen (Inklusion) durch zusätzliche Lehrerstunden, Förderpädagogik, Assistenz und Beratung stärken.",
+      "zitat": "Gemeinsames Lernen wird durch zusätzliche Lehrerstunden, Förderpädagogik, Assistenz und Beratung gestärkt.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2301
+      ],
+      "pruefsumme": "cdd1ac8398177693"
+    },
+    {
+      "kennung": "M045",
+      "ebene": "land",
+      "beschreibung": "Leistungsbewertung reformieren, mit lernförderlichen und prozessorientierten Rückmeldungen.",
+      "zitat": "Wir wollen die Leistungsbewertung reformieren und damit lernförderliche und prozessorientierte Leistungsrückmeldungen in den Mittelpunkt stellen.",
+      "ursachen_ids": [
+        2304
+      ],
+      "pruefsumme": "4e3c9b2cfcd724e4"
+    },
+    {
+      "kennung": "M046",
+      "ebene": "land",
+      "beschreibung": "Landesweite Leistungswettbewerbe mit Preisen und öffentlichen Ehrungen für Schülerleistungen.",
+      "zitat": "Dazu werden wir landesweit Mathematikolympiaden, Sprachenwettbewerbe und naturwissenschaftliche Forschungswettbewerbe durchführen, die mit Preisen und öffentlichen Ehrungen verbunden sind.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2304
+      ],
+      "pruefsumme": "e99bd321c84ea835"
+    },
+    {
+      "kennung": "M047",
+      "ebene": "land",
+      "beschreibung": "Längeres gemeinsames Lernen als Antwort auf Überforderung und Leistungsdruck an Schulen",
+      "zitat": "Überforderung, Leistungsdruck, Nachhilfe und Schulabbrüche sind häufige Folgen. [Partei] ist deshalb für längeres gemeinsames Lernen bis zur 8. Klasse.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2304
+      ],
+      "pruefsumme": "03c3f10a60b269be"
+    },
+    {
+      "kennung": "M048",
+      "ebene": "bund",
+      "beschreibung": "Verbindliche, standardisierte Schutzkonzepte dort, wo Kinder betreut werden (Gewaltprävention)",
+      "zitat": "Wir sorgen dafür, dass es dort, wo Kinder betreut werden, flächendeckend verbindliche und standardisierte Schutzkonzepte gibt.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2301
+      ],
+      "pruefsumme": "6da67195c4637e66"
+    },
+    {
+      "kennung": "M049",
+      "ebene": "land",
+      "beschreibung": "Mentale Gesundheit aller Beteiligten an Schulen stärken, mit mehr Schulpsychologie und Gesundheitsfachkräften.",
+      "zitat": "Die mentale Gesundheit aller Beteiligten stärken wir, unter anderem durch mehr multiprofessionelles Personal, insbesondere Schulpsychologie und Gesundheitsfachkräfte.",
+      "ursachen_ids": [
+        2304
+      ],
+      "pruefsumme": "01d7467cde6a4d84"
+    },
+    {
+      "kennung": "M050",
+      "ebene": "land",
+      "beschreibung": "Zeit- und Stufenplan zur Entlastung von Lehrkräften durch Reduzierung der Unterrichtsverpflichtung entwickeln.",
+      "zitat": "Unser Ziel ist, eine flächendeckende und hochwertige Unterrichtsversorgung im Land abzusichern und sich bietende Möglichkeiten zu nutzen, um Lehrkräfte, u.a. durch eine Reduzierung der Unterrichtsverpflichtung, zu entlasten. Dazu werden wir im Rahmen des Bildungspakts Gute Schule im Zusammenhang mit der demographischen Entwicklung einen Zeit- und Stufenplan entwickeln.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2304
+      ],
+      "pruefsumme": "6960667c3d5cbc26"
+    },
+    {
+      "kennung": "M051",
+      "ebene": "land",
+      "beschreibung": "Erweiterte Appellationsrechte für Eltern und Schüler bei Fehlverhalten von Lehrkräften und eine Beschwerdestelle am Bildungsministerium.",
+      "zitat": "Um auf Fehlverhalten von Lehrern und Schulleitern angemessen reagieren zu können, werden wir erweiterte Appellationsrechte für Eltern und Schüler schaffen und am Bildungsministerium eine Beschwerdestelle mit erhöhter Sichtbarkeit einrichten.",
+      "ursachen_ids": [
+        2302
+      ],
+      "pruefsumme": "233c585e4ca9ef73"
+    },
+    {
+      "kennung": "M052",
+      "ebene": "bund",
+      "beschreibung": "Praxisnahe Aus- und Fortbildung sowie bessere Arbeitsbedingungen und Aufstieg für Lehrkräfte",
+      "zitat": "Mit attraktiveren Arbeitsbedingungen, einer praxisnahen Aus- und Fortbildung, einer leistungsorientierten Bezahlung und attraktiven Aufstiegsmöglichkeiten wollen wir mehr Freiräume im Lehrberuf schaffen.",
+      "ursachen_ids": [
+        2302
+      ],
+      "pruefsumme": "d653506ed1feccc2"
+    },
+    {
+      "kennung": "M053",
+      "ebene": "bund",
+      "beschreibung": "Lehrpläne modernisieren mit mehr Raum für Medienkompetenz",
+      "zitat": "Zugleich wollen wir die Lehrpläne modernisieren: Wir fordern mehr Raum für wirtschaftliche und finanzielle Bildung, MINT-Themen, Demokratie und Politik sowie Medienkompetenz.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2303
+      ],
+      "pruefsumme": "e2a779ce4a76e409"
+    },
+    {
+      "kennung": "M054",
+      "ebene": "land",
+      "beschreibung": "Verbindliches Qualifizierungsprogramm mit pädagogischer Schulung, Fortbildungen und Mentoring für Seiteneinsteiger in den Lehrerberuf",
+      "zitat": "Für Seiteneinsteigerinnen und Seiteneinsteiger fordern wir ein verbindliches, 1,5-jähriges Qualifizierungsprogramm mit pädagogischer Schulung, begleitenden Fortbildungen und individuellem Mentoring – nach Vorbild erfolgreicher Modelle.",
+      "ursachen_ids": [
+        2302
+      ],
+      "pruefsumme": "005ee6d65d387196"
+    },
+    {
+      "kennung": "M055",
+      "ebene": "land",
+      "beschreibung": "Psychosoziale Beratung an Schulen ermöglichen und Programme für die mentale Gesundheit von Schüler*innen ausbauen",
+      "zitat": "Für eine demokratischere Schule und ein gesundes Lernklima wollen wir: […] psychosoziale Beratung an den Schulen ermöglichen und Programme zur Förderung der mentalen Gesundheit von Schüler*innen ausbauen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2304
+      ],
+      "pruefsumme": "5f582733b3a712de"
+    },
+    {
+      "kennung": "M056",
+      "ebene": "land",
+      "beschreibung": "Mehr Klassennachmittage, gemeinsame Unternehmungen und Aktionen an Schulen.",
+      "zitat": "Mehr Klassennachmittage, gemeinsame Unternehmungen und Aktionen an Schulen.",
+      "ursachen_ids": [
+        2301
+      ],
+      "pruefsumme": "a0c3f2986abd9e70"
+    },
+    {
+      "kennung": "M057",
+      "ebene": "bund",
+      "beschreibung": "Digitalpakt mit digitaler Infrastruktur und forschungsbasierter Qualifizierung von Lehrkräften und Schulleitungen",
+      "zitat": "Damit legen wir den Fokus auf digitale Infrastruktur, digitale Lehr- und Lernprogramme sowie auf die forschungsbasierte Qualifizierung von Lehrkräften und Schulleitungen.",
+      "ursachen_ids": [
+        2302
+      ],
+      "pruefsumme": "670b2ca37e4a8920"
+    },
+    {
+      "kennung": "M058",
+      "ebene": "land",
+      "beschreibung": "Der Übergang von der Grund- zur Oberschule soll reformiert werden, damit Schüler*innen mit weniger Druck zur Schule gehen.",
+      "zitat": "Den Übergang auf die Oberschule werden wir reformieren und gerechter gestalten, sodass Schüler*innen der 4., 5. und 6. Klassen mit weniger Druck zur Schule gehen können.",
+      "ursachen_ids": [
+        2304
+      ],
+      "pruefsumme": "4e2c38aaa495dbd4"
+    },
+    {
+      "kennung": "M059",
+      "ebene": "land",
+      "beschreibung": "Jede Schule erhält eine Kraft für Schulsozialarbeit, die soziale Konflikte lösen hilft",
+      "zitat": "Wir werden: […] gewährleisten, dass jede Schule eine Kraft für Schulsozialarbeit als pädagogische Unterstützung und Beratung im Haus hat, um komplexe und schwierige soziale Konflikte lösen zu können.",
+      "ursachen_ids": [
+        2302
+      ],
+      "pruefsumme": "1ca63b31d4ec726a"
+    },
+    {
+      "kennung": "M060",
+      "ebene": "bund",
+      "beschreibung": "Rechtliche Grundlagen für eine bessere Kooperation von Schule, Jugendhilfe und Eingliederungshilfe schaffen",
+      "zitat": "Wir schaffen die rechtlichen Voraussetzungen für eine verbesserte Kooperationsstruktur für Schule, Jugendhilfe und Eingliederungshilfe.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2302
+      ],
+      "pruefsumme": "8976cdc7d2ae1f34"
+    },
+    {
+      "kennung": "M061",
+      "ebene": "land",
+      "beschreibung": "Medienkompetenz für Lehrkräfte in der Ausbildung verankern und in der Fortbildung vorsehen",
+      "zitat": "Die Vermittlung von Medienkompetenz ist für Lehrkräfte verpflichtend in der Ausbildung zu verankern und in der Fortbildung vorzusehen.",
+      "ursachen_ids": [
+        2302
+      ],
+      "pruefsumme": "360d68c98d76b975"
+    },
+    {
+      "kennung": "M062",
+      "ebene": "land",
+      "beschreibung": "Einheitliche, mit dem Landesantidiskriminierungsgesetz vereinbare Vorgaben für Schulordnungen an [Land] Schulen.",
+      "zitat": "Dazu […] einheitliche Vorgaben zur inhaltlichen Ausgestaltung von Schulordnungen an [Land] Schulen, die LADG-konform sind.",
+      "ursachen_ids": [
+        2301
+      ],
+      "pruefsumme": "1129fab2fe4706cb"
+    },
+    {
+      "kennung": "M063",
+      "ebene": "land",
+      "beschreibung": "Radikale Entbürokratisierung im Schulsektor und Aussetzung schulischer Regularien für ein Jahr.",
+      "zitat": "Wir starten eine radikale Entbürokratisierung im Schulsektor. […] Zudem wollen wir die Aussetzung sämtlicher Regularien und bürokratischer Hürden im schulischen Bereich auf ein Jahr erreichen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2304
+      ],
+      "pruefsumme": "2a953cfafdf6e800"
+    },
+    {
+      "kennung": "M064",
+      "ebene": "land",
+      "beschreibung": "Ganztagsangebote an Grundschulen qualitativ ausbauen; sie sollen unter anderem soziales Lernen fördern",
+      "zitat": "Ganztagsangebote an Grundschulen wollen wir weiter qualitativ ausbauen. Sie entlasten Familien, schaffen verlässliche Betreuung und bieten zusätzliche Chancen für Förderung, Bewegung und soziales Lernen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2301
+      ],
+      "pruefsumme": "e24eb792b7278240"
+    },
+    {
+      "kennung": "M065",
+      "ebene": "land",
+      "beschreibung": "Schülerinnen und Schüler mit psychischer Stärke durch die Schulzeit begleiten, mit Fachkräften und festen Strukturen",
+      "zitat": "Wir werden: […] sicherstellen, dass jede Schülerin und jeder Schüler die Chance hat, mit psychischer Stärke durch die Schulzeit zu gehen, begleitet von Profis, unterstützt durch echte Strukturen und in einem Umfeld, das zuhört und handelt.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2304
+      ],
+      "pruefsumme": "222e0df42eab62fd"
+    },
+    {
+      "kennung": "M066",
+      "ebene": "land",
+      "beschreibung": "Klassenräte sollen an allen Schulen und in allen Klassen verbindlich umgesetzt werden.",
+      "zitat": "Wir sorgen dafür, dass die gesetzlich verankerten Klassenräte auch in allen Schulen und Klassen verbindlich umgesetzt werden und achten darauf, dass auch Schüler*innen in Willkommensklassen von Beginn an die gleichen demokratischen Rechte wahrnehmen können.",
+      "ursachen_ids": [
+        2301
+      ],
+      "pruefsumme": "7b8571540a702c7f"
+    },
+    {
+      "kennung": "M067",
+      "ebene": "land",
+      "beschreibung": "Stundentafel entschlacken und Fächerzahl reduzieren",
+      "zitat": "Um bestmögliche Wege zum Bildungserfolg zu ermöglichen, werden wir: […] vernetztes Lernen fördern, die Stundentafel entschlacken, die Fächerzahl reduzieren und Verbundfächer unterstützen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2304
+      ],
+      "pruefsumme": "b9f3d47eae9f8a5e"
+    },
+    {
+      "kennung": "M068",
+      "ebene": "bund",
+      "beschreibung": "Kinder- und Jugendhilfe so weiterentwickeln, dass junge Menschen bestmöglich unterstützt werden; psychosoziale Angebote ausbauen",
+      "zitat": "Wir entwickeln die Kinder- und Jugendhilfe so weiter, dass sie ihnen bestmögliche Unterstützung bietet. […] Wir bauen psychosoziale Unterstützungsangebote aus.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2304
+      ],
+      "pruefsumme": "8d433acc95e8cbb3"
+    },
+    {
+      "kennung": "M069",
+      "ebene": "land",
+      "beschreibung": "Präventions- und Demokratieprojekte an Schulen gegen abwertende Haltungen unter Schülern verstärkt und dauerhaft fördern.",
+      "zitat": "Angesichts zunehmender rassistischer und sexistischer Haltungen unter Schülerinnen und Schülern werden präventive und demokratiepädagogische Projekte an Schulen intensiviert und dauerhaft gefördert.",
+      "ursachen_ids": [
+        2301
+      ],
+      "pruefsumme": "0bd84aa537dc3ffc"
+    },
+    {
+      "kennung": "M070",
+      "ebene": "land",
+      "beschreibung": "Unterstützungsstrukturen für die persönliche Resilienz von Forschenden und Lehrenden aufbauen oder verknüpfen.",
+      "zitat": "Wir sehen die Notwendigkeit, dass Forschende (aber auch Lehrende) in ihren Bereichen gestützt und geschützt werden auch in ihrer persönlichen Resilienz. Dazu legen wir Unterstützungsstrukturen auf bzw. […] bestehende.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2304
+      ],
+      "pruefsumme": "909ca89af0347c5b"
+    },
+    {
+      "kennung": "M071",
+      "ebene": "land",
+      "beschreibung": "Alternative Beschulungsformen für fremdgefährdende Kinder und Jugendliche",
+      "zitat": "Für fremdgefährdende Kinder und Jugendliche schaffen wir alternative Formen der Beschulung.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2301
+      ],
+      "pruefsumme": "16cea9b7c3dc424b"
+    },
+    {
+      "kennung": "M072",
+      "ebene": "land",
+      "beschreibung": "Flächendeckende Präventions- und Anti-Gewaltprogramme an Schulen einführen",
+      "zitat": "Es müssen flächendeckend Präventions- und Anti-Gewaltprogramme eingeführt werden.",
+      "ursachen_ids": [
+        2301
+      ],
+      "pruefsumme": "c4e151af60ebc35c"
+    },
+    {
+      "kennung": "M073",
+      "ebene": "land",
+      "beschreibung": "Anforderungen für den Gymnasialbesuch mit Prüfungen vor dem Wechsel verschärfen",
+      "zitat": "Wir werden: […] klarere Anforderungen an den Besuch des Gymnasiums stellen. Schüler und Schülerinnen sollten vor dem Wechsel auf das Gymnasium Prüfungen bestehen müssen, welche sich nach transparenten Bildungsstandards richten.",
+      "ursachen_ids": [
+        2304
+      ],
+      "pruefsumme": "b6bc46bc21520172"
+    },
+    {
+      "kennung": "M074",
+      "ebene": "land",
+      "beschreibung": "Verbindliche regelmäßige Schulungen und Fortbildungen für Fachkräfte in der Gewalt- und Diskriminierungsprävention.",
+      "zitat": "Regelmäßige Schulungen und Fortbildungen für Fachkräfte sind verbindlich, damit Prävention im Alltag wirkt.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2302
+      ],
+      "pruefsumme": "5f55afaeb08aa451"
+    },
+    {
+      "kennung": "M075",
+      "ebene": "land",
+      "beschreibung": "Gewaltschutz, Prävention und soziales Lernen als feste Bestandteile schulischer Bildung ausbauen.",
+      "zitat": "Ausbau von Gewaltschutz, Prävention und sozialem Lernen als festen Bestandteilen schulischer Bildung.",
+      "ursachen_ids": [
+        2301
+      ],
+      "pruefsumme": "62130beb669f9fd3"
+    },
+    {
+      "kennung": "M076",
+      "ebene": "land",
+      "beschreibung": "Oberschule: Stärkung von Basiskompetenzen, Sozialverhalten und Selbstorganisation",
+      "zitat": "Mit der Oberschule Profil schärfen und sie zur Schule der Praxis ausbauen: Wir werden mit der neuen Oberschule die bisherigen Schulformen Sekundarschule und Gemeinschaftsschule zusammenführen und profilieren. […] Praxisorientierte Lernerfahrungen, informatische Grundbildung und ökonomisches Grundverständnis sind dabei ebenso wichtig wie die Stärkung von Basiskompetenzen, Sozialverhalten und Selbstorganisation.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2301
+      ],
+      "pruefsumme": "5e2d61f14e23902b"
+    },
+    {
+      "kennung": "M077",
+      "ebene": "land",
+      "beschreibung": "Gezieltes Mentoring für angehende Lehrkräfte beim Berufseinstieg",
+      "zitat": "Mit einem gezielten Mentoring wollen wir angehende Lehrerinnen und Lehrer besser beim Berufseinstieg unterstützen.",
+      "ursachen_ids": [
+        2302
+      ],
+      "pruefsumme": "84c0d3ed09a0fbda"
+    },
+    {
+      "kennung": "M078",
+      "ebene": "land",
+      "beschreibung": "Zusätzliche Unterstützungskräfte einstellen, um Lehrkräfte zu entlasten",
+      "zitat": "Deshalb werden wir […] auch in Zukunft Unterstützungskräfte einstellen, damit Lehrkräfte und Erziehende entlastet werden.",
+      "ursachen_ids": [
+        2304
+      ],
+      "pruefsumme": "c53c083c66ed422d"
+    },
+    {
+      "kennung": "M079",
+      "ebene": "land",
+      "beschreibung": "Demokratiebildung als festen Bestandteil von Studium, Referendariat und Fortbildung der pädagogischen Fachkräfte verankern.",
+      "zitat": "Demokratiebildung verstehen und stärken wir dafür als notwendigen Bestandteil von Studium, Referendariat und Fortbildung der pädagogischen Fachkräfte sowie der Qualifizierung der Schulleitungen.",
+      "ursachen_ids": [
+        2302
+      ],
+      "pruefsumme": "601e9fc8d725d1b4"
+    },
+    {
+      "kennung": "M080",
+      "ebene": "land",
+      "beschreibung": "Schulausschluss, wenn eine ernstliche Gefahr für andere Schüler besteht",
+      "zitat": "Ausschluss von der Schule muss möglich werden, wenn eine ernstliche Gefahr für die anderen Schüler vorliegt.",
+      "ursachen_ids": [
+        2301
+      ],
+      "pruefsumme": "74691e85276112f0"
+    },
+    {
+      "kennung": "M081",
+      "ebene": "bund",
+      "beschreibung": "Anreize für Schutzkonzepte gegen Gewalt in Einrichtungen, in denen Kinder und Jugendliche sich aufhalten",
+      "zitat": "Kinder und Jugendliche haben ein Recht darauf, ohne Gewalt aufzuwachsen. Wir wollen […] Anreize für Schutzkonzepte in allen Einrichtungen schaffen, in denen sich Kinder und Jugendliche regelmäßig aufhalten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2302
+      ],
+      "pruefsumme": "025bc8a0ba2570ce"
+    },
+    {
+      "kennung": "M082",
+      "ebene": "land",
+      "beschreibung": "Kleinere Klassen mit höchstens 24 Schülerinnen und Schülern, unter anderem für Resilienz und soziale Kompetenzen.",
+      "zitat": "Kleinere Klassen mit maximal 24 Schülerinnen und Schülern, um individuelle Förderung, Resilienz, Selbstbewusstsein und soziale Kompetenzen zu stärken.",
+      "ursachen_ids": [
+        2304
+      ],
+      "ursachen_offen": [
+        2301
+      ],
+      "pruefsumme": "e6d8517c5a4967d6"
+    },
+    {
+      "kennung": "M083",
+      "ebene": "land",
+      "beschreibung": "Mehr Stellen für Schulsozialarbeit und Schulpsychologie sowie weitere Fachkräfte, auch gegen Mobbing und Konflikte.",
+      "zitat": "Mobbing, Diskriminierung und gruppenfeindliches Verhalten müssen wir erkennen und bekämpfen. […] Wir setzen uns darüber hinaus für den Ausbau multiprofessioneller Teams ein, z.B. durch mehr Stellen für Schulsozialarbeiter*innen, Schulpsycholog*innen, pädagogischen Unterrichtshilfen sowie Erzieher*innen.",
+      "ursachen_ids": [
+        2301,
+        2302
+      ],
+      "pruefsumme": "701a667d7c5edd90"
+    },
+    {
+      "kennung": "M084",
+      "ebene": "bund",
+      "beschreibung": "Mental-Health-Coaches und Gruppenangebote an weiterführenden Schulen ausbauen, Schwerpunkt Schulen mit besonderen Bedarfen.",
+      "zitat": "Mit den Mental Health Coaches und ihren Gruppenangeboten an weiterführenden Schulen konnten wichtige Anlaufstellen geschaffen werden, die wir ausbauen wollen. Dabei legen wir den Fokus vor allem auf Schulen mit besonderen Bedarfen wie den Startchancenschulen.",
+      "ursachen_ids": [
+        2304
+      ],
+      "pruefsumme": "3f47e661b1bec46a"
+    },
+    {
+      "kennung": "M085",
+      "ebene": "land",
+      "beschreibung": "Gesetzliche Schutzpflicht an Schulen, damit Schülerinnen und Schüler vor religiösem oder sozialem Gruppendruck geschützt sind",
+      "zitat": "Das [Land] Neutralitätsgesetz muss um eine aktive staatliche Schutzpflicht zur Gewährleistung religiöser und weltanschaulicher Neutralität an Schulen erweitert werden. […] Die weltanschauliche Freiheit von Kindern und Jugendlichen ist vor religiösen oder sozialem Gruppendruck aktiv zu schützen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2301
+      ],
+      "pruefsumme": "fbaaf23e85acca5c"
+    },
+    {
+      "kennung": "M086",
+      "ebene": "bund",
+      "beschreibung": "Hausaufgaben abschaffen; das Einüben und Festigen soll in der Schule stattfinden.",
+      "zitat": "Lernen soll in der Schule stattfinden. Über Hausaufgaben wird soziale Ungleichheit in ungleichen Schulerfolg übersetzt, deshalb wollen wir sie abschaffen.",
+      "ursachen_ids": [
+        2304
+      ],
+      "pruefsumme": "4eb355844c670b53"
+    },
+    {
+      "kennung": "M087",
+      "ebene": "land",
+      "beschreibung": "Schulsozialarbeit an Schulen möglichst erhalten, mit klaren Zielen und regelmäßiger Evaluation",
+      "zitat": "Die Schulsozialarbeit soll in Zusammenarbeit mit den Trägern der Jugendhilfe möglichst erhalten werden. Sie muss sich an klaren Zielen orientieren und regelmäßig evaluiert werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2302
+      ],
+      "pruefsumme": "05b5b1a5ed9344d9"
+    },
+    {
+      "kennung": "M088",
+      "ebene": "bund",
+      "beschreibung": "Schutz vor Diskriminierung und Ausgrenzung ausweiten (Gleichbehandlungsgesetz, Anti-Rassismus-Beauftragte)",
+      "zitat": "Wir wollen den Schutz vor Diskriminierung, Rassismus und Ausgrenzung weiter stärken. Dazu werden wir das Allgemeine Gleichbehandlungsgesetz ausweiten und die Stelle der Anti-Rassismus-Beauftragten dauerhaft verankern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2301
+      ],
+      "pruefsumme": "e67c04b4a84e5c10"
+    },
+    {
+      "kennung": "M089",
+      "ebene": "land",
+      "beschreibung": "Werteerziehung und Persönlichkeitsentwicklung als Teil des schulischen Auftrags",
+      "zitat": "Gleichberechtigt mit der Wissensvermittlung sind für uns Werteerziehung und die Förderung der Persönlichkeitsentwicklung Teil des schulischen Auftrags.",
+      "ursachen_ids": [
+        2301
+      ],
+      "pruefsumme": "e4c63825a6a28e6e"
+    },
+    {
+      "kennung": "M090",
+      "ebene": "bund",
+      "beschreibung": "Auseinandersetzung mit Menschenfeindlichkeit im Schulunterricht intensivieren",
+      "zitat": "In der Schule muss außerdem auch die Auseinandersetzung mit den verschiedenen Formen von Menschenfeindlichkeit wie dem Antisemitismus intensiviert werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2301
+      ],
+      "pruefsumme": "f44fc4d94f462110"
+    },
+    {
+      "kennung": "M091",
+      "ebene": "land",
+      "beschreibung": "Konfliktlösung und Kommunikation als Alltagskompetenzen in der schulischen Bildung stärken.",
+      "zitat": "Wir wollen Alltagskompetenzen wie Finanzbildung, Medienkompetenz, Kommunikation und Konfliktlösung in der schulischen Bildung weiter stärken.",
+      "ursachen_ids": [
+        2301
+      ],
+      "pruefsumme": "4e4239ea6b5eb760"
+    },
+    {
+      "kennung": "M092",
+      "ebene": "land",
+      "beschreibung": "Gesundheitsprävention ausbauen, psychische Gesundheit und Suchtprävention mit Schulen und anderen stärken",
+      "zitat": "Prävention als Lebensprinzip: Gesundheitsprävention wird in allen Lebensphasen verankert – von der Kita bis ins hohe Alter. Bewegung, Ernährung, psychische Gesundheit und Suchtprävention stärken wir gemeinsam mit Kommunen, Schulen, Vereinen und Krankenkassen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2304
+      ],
+      "pruefsumme": "311ea5076b2968bb"
+    },
+    {
+      "kennung": "M093",
+      "ebene": "land",
+      "beschreibung": "Abschulung vom Gymnasium muss möglich sein",
+      "zitat": "Eine Abschulung vom Gymnasium muss möglich sein.",
+      "ursachen_ids": [
+        2304
+      ],
+      "pruefsumme": "f58588ed8da56573"
+    },
+    {
+      "kennung": "M094",
+      "ebene": "bund",
+      "beschreibung": "Manipulative Algorithmen von Social-Media-Plattformen strenger regulieren; auf Kinder ausgerichtete Suchtalgorithmen nicht zulassen.",
+      "zitat": "Manipulative Algorithmen von Social-Media-Plattformen wollen wir strenger regulieren. Algorithmen, die gezielt darauf ausgerichtet sind, unsere Kinder süchtig zu machen, werden wir nicht dulden.",
+      "ursachen_ids": [
+        2303
+      ],
+      "pruefsumme": "5affcceef6bf0c5b"
+    },
+    {
+      "kennung": "M095",
+      "ebene": "land",
+      "beschreibung": "Homogenere Klassen, damit Erziehung und Unterricht handhabbar werden.",
+      "zitat": "Homogenere Klassen sollen dazu beitragen, dass Erziehung und Wissensvermittlung wieder handhabbar werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2301
+      ],
+      "pruefsumme": "e08f9048f442cb1d"
+    },
+    {
+      "kennung": "M096",
+      "ebene": "land",
+      "beschreibung": "Medienbildung für Lehrkräfte stärken, damit Schulen besser auf Mobbing im Netz reagieren können",
+      "zitat": "Und wir stärken die Medienbildung für Lehrkräfte, damit Schule besser auf Mobbing im Netz, Desinformation und den souveränen Umgang mit digitalen Medien reagieren kann.",
+      "ursachen_ids": [
+        2302
+      ],
+      "pruefsumme": "0e9245d61338cd5b"
+    },
+    {
+      "kennung": "M097",
+      "ebene": "land",
+      "beschreibung": "Alle Kinder von Flüchtlingen und Asylbewerbern in Sonderklassen unterrichten.",
+      "zitat": "Wir werden alle Kinder von Flüchtlingen und Asylbewerbern in Sonderklassen unterrichten lassen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2301
+      ],
+      "pruefsumme": "3aed429b38e6222d"
+    },
+    {
+      "kennung": "M098",
+      "ebene": "land",
+      "beschreibung": "Unabhängige Beschwerdestelle gegen Diskriminierung an Schulen wird eingerichtet.",
+      "zitat": "Unter dem Dach der LADG-Ombudsstelle wird eine unabhängige Beschwerdestelle gegen Diskriminierung an Schulen eingerichtet.",
+      "ursachen_ids": [
+        2302
+      ],
+      "pruefsumme": "d8f76f8e674da92f"
+    },
+    {
+      "kennung": "M099",
+      "ebene": "land",
+      "beschreibung": "Einführung von Schulkleidung, damit die Herkunft im Schulalltag weniger in den Vordergrund tritt",
+      "zitat": "Schulen sind Orte des ungestörten gemeinsamen Lernens, an denen die Herkunft weder kulturell noch finanziell im Vordergrund stehen darf. Die Einführung von Schulkleidung trägt dem Rechnung.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2301
+      ],
+      "pruefsumme": "8ac0d1d4a4b47619"
+    },
+    {
+      "kennung": "M100",
+      "ebene": "bund",
+      "beschreibung": "Niedrigschwellige, auch digitale Beratung für junge Menschen in psychisch schwierigen Lebenslagen",
+      "zitat": "Für junge Menschen in psychisch schwierigen Lebenslagen streben wir bundesweit niedrigschwellige, auch digitale Beratungsangebote an.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2304
+      ],
+      "pruefsumme": "2a5dc42c51232dc4"
+    },
+    {
+      "kennung": "M101",
+      "ebene": "land",
+      "beschreibung": "Sozialpsychiatrischen Dienst ausbauen und stärker in Jugend- und Schularbeit einbinden",
+      "zitat": "Immer mehr sozial benachteiligte Menschen, Rentner, Geflüchtete sowie Jugendliche leiden unter Depressionen, Zukunftsängsten oder Traumafolgestörungen. […] Der sozialpsychiatrische Dienst muss deshalb ausgebaut und stärker in Jugend-, Schul- und Integrationsarbeit eingebunden werden.",
+      "ursachen_ids": [
+        2304
+      ],
+      "pruefsumme": "119110163c536221"
+    },
+    {
+      "kennung": "M102",
+      "ebene": "bund",
+      "beschreibung": "Schulpsychologische und sozialarbeiterische Fachkräfte dauerhaft an jeder Schule verfügbar machen.",
+      "zitat": "Schulpsycholog*innen und Sozialarbeiter*innen müssen flächendeckend und dauerhaft an jeder Schule verfügbar sein.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2304
+      ],
+      "pruefsumme": "a69fc056e7e8332f"
+    },
+    {
+      "kennung": "M103",
+      "ebene": "land",
+      "beschreibung": "Fortbildungen zu Diskriminierung und Rassismus; diskriminierungskritische Module in der Ausbildung pädagogischer Fachkräfte.",
+      "zitat": "Fortbildungen zu Diskriminierung, Rassismus und Postkolonialismus stärken wir. In die Ausbildung pädagogischer Fachkräfte integrieren wir verpflichtend diskriminierungskritische Module – in allen Entwicklungsstufen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2302
+      ],
+      "pruefsumme": "a8ca0c8e42eb1ee1"
+    },
+    {
+      "kennung": "M104",
+      "ebene": "land",
+      "beschreibung": "Stärkere Leistungsorientierung am Gymnasium, einschließlich Punktetabelle für die Bewertung von Leistungen.",
+      "zitat": "Stärkere Leistungsorientierung am Gymnasium, einschließlich der Punktetabelle für die Bewertung von Leistungen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2304
+      ],
+      "pruefsumme": "53b82671cf597fc5"
+    },
+    {
+      "kennung": "M105",
+      "ebene": "land",
+      "beschreibung": "Dokumentationspflichten in Schulen abbauen, die pädagogisch nichts bringen",
+      "zitat": "Schluss mit Dokumentationspflichten, die pädagogisch nichts bringen.",
+      "ursachen_ids": [
+        2304
+      ],
+      "pruefsumme": "50fe109ce710cdeb"
+    },
+    {
+      "kennung": "M106",
+      "ebene": "bund",
+      "beschreibung": "Notenpflicht spätestens ab der dritten Klasse",
+      "zitat": "Wir sprechen uns für eine Notenpflicht spätestens ab der dritten Klasse aus.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2304
+      ],
+      "pruefsumme": "5e9bb518897c9754"
+    },
+    {
+      "kennung": "M107",
+      "ebene": "land",
+      "beschreibung": "Das Thema Empathie als Wahlpflichtfach einführen, um Mitgefühl und Kompromissfähigkeit zu fördern.",
+      "zitat": "Empathie, Mitgefühl und die Fähigkeit zum Kompromiss wollen wir gezielt fördern. Dafür führen wir in einem Wahlpflichtfach das Thema Empathie ein.",
+      "ursachen_ids": [
+        2301
+      ],
+      "pruefsumme": "114d2e9d9451e196"
+    },
+    {
+      "kennung": "M108",
+      "ebene": "bund",
+      "beschreibung": "Jugendschutz im Netz stärken, etwa durch Möglichkeiten zur Altersverifikation",
+      "zitat": "Regelungen gegen Hasskriminalität und andere Straftaten im Netz sowie zum Jugendschutz setzen wir konsequent durch. […] während wir gleichzeitig den Jugendschutz stärken, etwa durch effektive Möglichkeiten zur Altersverifikation.",
+      "ursachen_ids": [
+        2303
+      ],
+      "pruefsumme": "8df6f9c7a2ba510b"
+    },
+    {
+      "kennung": "M109",
+      "ebene": "bund",
+      "beschreibung": "Aufbau digitaler Fähigkeiten und Medienkompetenz in Schulen.",
+      "zitat": "Außerdem setzen wir auf den Aufbau von digitalen Fähigkeiten, Medienkompetenz und auf den verantwortlichen Einsatz von Künstlicher Intelligenz (KI).",
+      "ursachen_ids": [
+        2303
+      ],
+      "pruefsumme": "518c0ac090583fc4"
+    },
+    {
+      "kennung": "M110",
+      "ebene": "land",
+      "beschreibung": "Schulsozialarbeit wird als Landesaufgabe etabliert; die Zahl der Schulpsychologen soll dem Bedarf angepasst werden.",
+      "zitat": "Gewalt- und Drogenprobleme werden wir durch konsequentes Handeln unterbinden; Schulsozialarbeit wird als Landesaufgabe etabliert und die Zahl der Schulpsychologen dem gestiegenen Bedarf angepasst.",
+      "ursachen_ids": [
+        2301,
+        2302
+      ],
+      "pruefsumme": "6172c22991748262"
+    },
+    {
+      "kennung": "M111",
+      "ebene": "land",
+      "beschreibung": "Schultage nicht weiter verlängern, stattdessen Hausaufgabenbetreuung anbieten, damit der Nachmittag frei bleibt.",
+      "zitat": "Schultage nicht weiter verlängern, eher Hausaufgabenbetreuung anbieten, um den Nachmittag für Hobbys und Vereinsleben freizuhalten.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2304
+      ],
+      "pruefsumme": "0c8d9c696bc56a22"
+    },
+    {
+      "kennung": "M112",
+      "ebene": "land",
+      "beschreibung": "Strukturen und Vorgaben für den systematischen Schutz von Kindern und Jugendlichen weiterentwickeln.",
+      "zitat": "Wir werden die Strukturen und Vorgaben für den systematischen Schutz aller Kinder und Jugendlichen stetig weiterentwickeln.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2302
+      ],
+      "pruefsumme": "e2aa8ff47b7d5034"
+    },
+    {
+      "kennung": "M113",
+      "ebene": "land",
+      "beschreibung": "Mehr Einsatz von Jugend- und Sozialarbeit und eine bessere Verzahnung von Polizei, Schulen und Jugendhilfe.",
+      "zitat": "Präventive Angebote, wie beispielsweise die von der Polizei im Rahmen des Schulunterrichts angebotenen Anti-Gewalt-Trainings, und Informationsveranstaltungen müssen verstärkt werden. Gleichzeitig ist eine bessere Verzahnung von Polizei, Schulen und Jugendhilfe erforderlich. Darüber hinaus ist ein verstärkter Einsatz von Jugend- und Sozialarbeiterinnen und -arbeitern sowie Streetworkerinnen und Streetworkern notwendig, um eine verlässliche Anlaufstelle zu schaffen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2302
+      ],
+      "pruefsumme": "f1e5b38dbd1673b5"
+    },
+    {
+      "kennung": "M114",
+      "ebene": "land",
+      "beschreibung": "Aus-, Fort- und Weiterbildung von Lehrkräften verbindlicher ausrichten; alle Lehrkräfte sollen regelmäßig fortgebildet werden",
+      "zitat": "Wir wollen die Aus-, Fort- und Weiterbildung von Lehrkräften verbindlicher, strategischer und praxisnäher ausrichten. […] Künftig sollen alle Lehrkräfte diese Qualifizierungsangebote systematisch durchlaufen und regelmäßig fortgebildet werden.",
+      "ursachen_ids": [
+        2302
+      ],
+      "pruefsumme": "1728b30e496f7ad3"
+    },
+    {
+      "kennung": "M115",
+      "ebene": "land",
+      "beschreibung": "Verbindliche Klassenleiterstunde und feste Sprechzeiten für Klassenleitungen.",
+      "zitat": "Verbindliche Klassenleiterstunde und feste Sprechzeiten für die Klassenleiter.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2301
+      ],
+      "pruefsumme": "26650458e8f1501f"
+    },
+    {
+      "kennung": "M116",
+      "ebene": "land",
+      "beschreibung": "Aufnahme ins Gymnasium bei Noten schlechter als 2,5 über einen zusätzlichen, mehrfach wiederholbaren Eignungstest.",
+      "zitat": "Dabei streben wir z.B. die Aufnahme in das Gymnasium bei einer Note von schlechter als 2,5 über einen zusätzlichen Eignungstest an, der mehrfach wiederholt werden kann und transparent das Leistungsvermögen des Schülers abbildet.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2304
+      ],
+      "pruefsumme": "af74e49e12bfb6bf"
+    },
+    {
+      "kennung": "M117",
+      "ebene": "land",
+      "beschreibung": "Gewaltfreie Konfliktlösung sowie Gleichberechtigung und Grenzen früh in Kitas und Schulen vermitteln",
+      "zitat": "Themen wie Gleichberechtigung, Grenzen und Konsens sowie gewaltfreie Konfliktlösung müssen frühzeitig in Kitas und Schulen vermittelt werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2301
+      ],
+      "pruefsumme": "a9492e03212c7b17"
+    },
+    {
+      "kennung": "M118",
+      "ebene": "bund",
+      "beschreibung": "Schulen erhalten frei einsetzbares Budget und können auch über die Länge der gymnasialen Laufbahn entscheiden",
+      "zitat": "Wir wollen den Schulen mehr pädagogische, personelle und finanzielle Kompetenzen einräumen. Dazu sollen alle ein frei einsetzbares Chancenbudget erhalten. Damit können Schulen eigenständig […] die Länge der gymnasialen Laufbahn (G8/G9) entscheiden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2304
+      ],
+      "pruefsumme": "878483e082cb6ba1"
+    },
+    {
+      "kennung": "M119",
+      "ebene": "land",
+      "beschreibung": "Gewalttäter sollen nach überarbeiteten Ordnungsmaßnahmen schneller von der Schule verwiesen werden können; bei Wiederholung Überweisung an eine Spezialschule.",
+      "zitat": "Für die noch nicht strafmündigen Schüler werden wir die Verordnung über schulische Ordnungsmaßnahmen vom 6. Februar 2012 und den Erlass über Erziehungsmitteln in der Schule vom 26. Mai 1994 dergestalt überarbeiten, dass Gewalttäter schneller der Schule verwiesen und im Wiederholungsfall oder in besonders schweren Fällen an eine Spezialschule für Gewalttäter überwiesen werden können.",
+      "ursachen_ids": [
+        2301
+      ],
+      "pruefsumme": "0d9e27f4396fb10e"
+    },
+    {
+      "kennung": "M120",
+      "ebene": "land",
+      "beschreibung": "Wiedereinführung einer verbindlichen Vorschulphase, die soziales Lernen fördert",
+      "zitat": "Darüber hinaus setzen wir uns für die Wiedereinführung einer verbindlichen Vorschulphase ein, die gezielt Sprachbildung, Zahlenverständnis und soziales Lernen fördert.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2301
+      ],
+      "pruefsumme": "dcad5eb4551d3ae7"
+    },
+    {
+      "kennung": "M121",
+      "ebene": "land",
+      "beschreibung": "In der beruflichen Ausbildung ein flexibleres Prüfungssystem mit mehreren Prüfungszeiträumen schaffen.",
+      "zitat": "Es soll im Rahmen der nach bundesweiten Vorgaben und betrieblichen Notwendigkeiten bestehenden Möglichkeiten ein flexibleres Prüfungssystem mit mehreren Prüfungszeiträumen geben, um Lernphasen planbarer zu machen und Stress zu reduzieren.",
+      "ursachen_ids": [
+        2304
+      ],
+      "pruefsumme": "5bf30e1d7e44ab25"
+    },
+    {
+      "kennung": "M122",
+      "ebene": "land",
+      "beschreibung": "Erhöhung der Unterrichtsverpflichtung für Referendar*innen zurücknehmen, als Entlastung.",
+      "zitat": "Im Sinne der Entlastung nehmen wir daher die kürzlich erfolgte Erhöhung der Unterrichtsverpflichtung zurück und sorgen für eine gute Mischung zwischen Praxis und Theorie in der zweiten Phase.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2304
+      ],
+      "pruefsumme": "6925e4d177c566de"
+    },
+    {
+      "kennung": "M123",
+      "ebene": "land",
+      "beschreibung": "Zusammenarbeit von Schule mit Kinder- und Jugendhilfe sowie Jugendsozialarbeit weiterentwickeln und stärken",
+      "zitat": "Die Kooperation zwischen Schule sowie der Kinder- und Jugendhilfe und der Jugendsozialarbeit werden wir dabei konsequent weiterentwickeln und stärken.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2302
+      ],
+      "pruefsumme": "79df0743605919f9"
+    },
+    {
+      "kennung": "M124",
+      "ebene": "land",
+      "beschreibung": "Präventionsangebote in Schulen stärken; Fachkräfte in Schulen sollen regelmäßig für Anzeichen von Kindeswohlgefährdung geschult werden.",
+      "zitat": "Wir werden Präventionsangebote in Schulen und Kindertageseinrichtungen stärken und Fachkräfte in Jugendämtern, Schulen und Kitas regelmäßig für Anzeichen von Kindeswohlgefährdung schulen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2302
+      ],
+      "pruefsumme": "2bd9149eacf8915d"
+    },
+    {
+      "kennung": "M125",
+      "ebene": "land",
+      "beschreibung": "Vergabe weiterführender Schulplätze nach Noten und Wohnortnähe; Abschaffung der Losvergabe für einen Teil der Plätze",
+      "zitat": "Die Vergabe von Plätzen an weiterführenden Schulen muss sich konsequent an den Noten und der Wohnortnähe orientieren sowie eine Geschwisterkindregelung umfassen. Die Vergabe von 30 % der Schulplätze über das Losverfahren werden wir abschaffen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2304
+      ],
+      "pruefsumme": "d5796d6031664276"
+    },
+    {
+      "kennung": "M126",
+      "ebene": "land",
+      "beschreibung": "Mehr Sozialarbeit an Schulen; Prävention statt Repression bei Gewalt unter Minderjährigen",
+      "zitat": "Schwere Körperverletzungen unter Minderjährigen nehmen zu. Wir setzen auf Prävention vor Repression. In die Schulen gehören mehr Sozalarbeiter.",
+      "ursachen_ids": [
+        2302,
+        2301
+      ],
+      "pruefsumme": "b8efd8ff570b6a18"
+    },
+    {
+      "kennung": "M127",
+      "ebene": "land",
+      "beschreibung": "Schulleitungen und pädagogisches Personal von Verwaltungsaufgaben entlasten, zusätzliches Verwaltungsfachpersonal einsetzen.",
+      "zitat": "Wir wollen alle Maßnahmen ergreifen, um die Attraktivität aller Schulen im Land als Arbeits- und Lernorte zu steigern. Wir wollen dafür Schulleitungen und Pädagoginnen und Pädagogen von Verwaltungsaufgaben weiter entlasten und durch zusätzliches Verwaltungsfachpersonal unterstützen.",
+      "ursachen_ids": [
+        2304
+      ],
+      "pruefsumme": "1680b7c0e57473fe"
+    },
+    {
+      "kennung": "M128",
+      "ebene": "bund",
+      "beschreibung": "Bildungsstandards wieder anheben statt Leistungsanforderungen zu senken",
+      "zitat": "Statt einer Senkung der Leistungsanforderungen müssen die Bildungsstandards aller Schulformen und Bildungseinrichtungen wieder auf das Niveau einer führenden innovativen Wissenschafts- und Industrienation angehoben werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2304
+      ],
+      "pruefsumme": "c36c488f0df809bc"
+    },
+    {
+      "kennung": "M129",
+      "ebene": "land",
+      "beschreibung": "Vorschaltklassen, in denen Kinder mit Sprachdefiziten bei Bedarf Sprachkompetenz und grundlegendes Sozialverhalten vermittelt bekommen.",
+      "zitat": "Wir setzen uns deshalb konsequent für Vorschaltklassen ein, in denen Kindern mit Migrationshintergrund bei Bedarf gezielt Sprachkompetenz und grundlegendes Sozialverhalten vermittelt werden.",
+      "ursachen_ids": [
+        2301
+      ],
+      "pruefsumme": "cb45fc87e459a232"
+    },
+    {
+      "kennung": "M130",
+      "ebene": "land",
+      "beschreibung": "Anforderungen und Leistungsstandards nicht mehr absenken, sondern anheben",
+      "zitat": "Kinder lernen nicht durch Unterforderung. Das Absenken von Anforderungen und Leistungsstandards werden wir stoppen und stattdessen umkehren.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2304
+      ],
+      "pruefsumme": "8bf1bdb7d90f91c6"
+    },
+    {
+      "kennung": "M131",
+      "ebene": "land",
+      "beschreibung": "Präventions- und Unterstützungsangebote für Kinder und Jugendliche sollen deutlich ausgebaut werden, unter anderem mit mehr Schulpsychologie.",
+      "zitat": "Speziell für Kinder und Jugendliche wollen wir Präventions- und Unterstützungsangebote deutlich ausbauen, unter anderem durch mehr Schulpsycholog*innen und -sozialarbeiter*innen, aufsuchende Jugendpsychiatrie-Teams, frühzeitige Hilfen im sozialen Umfeld und eine bessere Vernetzung zwischen dem Gesundheits-, Jugend- und Bildungsbereich.",
+      "ursachen_ids": [
+        2304
+      ],
+      "pruefsumme": "ff093c1ed337776c"
+    },
+    {
+      "kennung": "M132",
+      "ebene": "land",
+      "beschreibung": "Zentrales IT-System für alle [Land] Schulen zur Entlastung und Verringerung des Verwaltungsaufwands",
+      "zitat": "Zur Entlastung der Schulen und für mehr Transparenz soll ein zentrales IT-System für alle [Land] Schulen geschaffen werden, das den Verwaltungsaufwand verringert und die Kommunikation zwischen Lehrkräften, Eltern und Schulverwaltung erleichtert.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2304
+      ],
+      "pruefsumme": "d29a080c23e8f884"
+    },
+    {
+      "kennung": "M133",
+      "ebene": "land",
+      "beschreibung": "Demokratische Prozesse in Schulen stärken, Schüler*innen stärker an Entscheidungen beteiligen",
+      "zitat": "Für eine demokratischere Schule und ein gesundes Lernklima wollen wir: […] demokratische Prozesse in Schulen stärken: Schüler*innen stärker an Entscheidungen beteiligen und Schulkonferenzen als transparente, verbindliche Gremien ausbauen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2301
+      ],
+      "pruefsumme": "f403415bf07aa8fc"
+    },
+    {
+      "kennung": "M134",
+      "ebene": "land",
+      "beschreibung": "Eine unabhängige Beschwerdestelle für Schulen und Kitas beim Parlament ansiedeln.",
+      "zitat": "Eine unabhängige Beschwerdestelle für Schulen und Kitas siedeln wir beim Parlament an.",
+      "ursachen_ids": [
+        2302
+      ],
+      "pruefsumme": "6c3b2e1b7496bd41"
+    },
+    {
+      "kennung": "M135",
+      "ebene": "land",
+      "beschreibung": "Verbindliche Schullaufbahnempfehlung, die sich nach zentralen Klassenarbeiten richtet.",
+      "zitat": "Deshalb werden wir die Schullaufbahnempfehlung wieder verbindlich machen. Um die Beurteilung zu objektivieren, sollen zentrale Klassenarbeiten durchgeführt werden, deren Ergebnis darüber entscheidet, welche Schulart empfohlen wird.",
+      "ursachen_ids": [
+        2304
+      ],
+      "pruefsumme": "dafcca554d6ead54"
+    },
+    {
+      "kennung": "M136",
+      "ebene": "land",
+      "beschreibung": "Verlässliche Betreuung in der Grundschule wird um mindestens eine Stunde verlängert, damit zu Hause keine Aufgaben mehr nötig sind.",
+      "zitat": "Wir verlängern die Zeiten der verlässlichen Betreuung auch für Kinder ohne Hortvertrag in der Grundschule um mindestens eine Stunde auf 14:30 Uhr. In dieser Zeit sollen Kinder Gelerntes mit professioneller Begleitung vertiefen können, sodass keine weiteren Aufgaben zu Hause erledigt werden müssen.",
+      "ursachen_ids": [
+        2304
+      ],
+      "pruefsumme": "8c2b1989cd1987c1"
+    },
+    {
+      "kennung": "M137",
+      "ebene": "land",
+      "beschreibung": "Frühere Intervention bei Gewalt in Schulen und intensive soziale Betreuung von Mehrfachtätern",
+      "zitat": "Bei Gewalt in Schulen muss eine frühere Intervention stattfinden. Insbesondere für Mehrfachtäter streben wir eine intensive soziale Betreuung an.",
+      "ursachen_ids": [
+        2302
+      ],
+      "pruefsumme": "7f7bf1c56fc360e2"
+    },
+    {
+      "kennung": "M138",
+      "ebene": "bund",
+      "beschreibung": "Diskriminierungssensible Fortbildungen in Kindertagespflege und Lehrkräfteausbildung fördern.",
+      "zitat": "Um die Chancen für alle Kinder von Anfang an gleich zu gestalten, setzen wir uns für diskriminierungssensible Fortbildungen in der Kindertagespflege und Lehrer*innenausbildung ein.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2302
+      ],
+      "pruefsumme": "fdfd97695de23aa1"
+    },
+    {
+      "kennung": "M139",
+      "ebene": "land",
+      "beschreibung": "Bedarfsgerechte, qualitätsgesicherte Fortbildungen für pädagogisches Personal, schulweit umgesetzt und evaluiert.",
+      "zitat": "Wir werden für bedarfsgerechte, praxisnahe und qualitätsgesicherte Fortbildungsangebote sorgen, die fachbereichs- und schulweit implementiert und evaluiert werden.",
+      "ursachen_ids": [
+        2302
+      ],
+      "pruefsumme": "0769e1f3e84df32b"
+    },
+    {
+      "kennung": "M140",
+      "ebene": "land",
+      "beschreibung": "Schulen mit multiprofessionellen Teams (u. a. Sozialarbeit, Schulpsychologie) ausstatten, um psychischen Problemen und Gewalt vorzubeugen.",
+      "zitat": "Schulen sind mit multiprofessionellen Teams (Sozialarbeit, Gesundheitsförderung, Schulpsychologie, IT-Support) auszustatten, um psychischen Problemen und Gewalt vorzubeugen.",
+      "ursachen_ids": [
+        2301,
+        2302
+      ],
+      "ursachen_offen": [
+        2304
+      ],
+      "pruefsumme": "6f77d256052e7384"
+    },
+    {
+      "kennung": "M141",
+      "ebene": "land",
+      "beschreibung": "Diskriminierung in Jugendarbeit und Schule entgegenwirken, mit Aufklärung für Toleranz und Akzeptanz werben",
+      "zitat": "Dazu wollen wir etwa in der Jugendarbeit und in der Schule Diskriminierung entgegenwirken und mit Aufklärung für Toleranz und Akzeptanz werben.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2301
+      ],
+      "pruefsumme": "fcf47c54f1cfdb6e"
+    },
+    {
+      "kennung": "M142",
+      "ebene": "land",
+      "beschreibung": "Qualifizierung zu Beratungslehrkräften neu starten.",
+      "zitat": "Die Qualifizierung zu Beratungslehrkräften wird neu gestartet.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2302
+      ],
+      "pruefsumme": "7912c48c4e5aa909"
+    },
+    {
+      "kennung": "M143",
+      "ebene": "land",
+      "beschreibung": "Fortbildungen für Lehrkräfte zum Umgang mit Gewaltvorfällen verbindlich in die Qualitätsentwicklung der Schulen einbinden",
+      "zitat": "Wir werden: […] bestehende Fortbildungsangebote zu Notfallmanagement, Deeskalation, schulrechtlichen Handlungsmöglichkeiten und Umgang mit Gewaltvorfällen verbindlich in die schulische Qualitätsentwicklung einbinden.",
+      "ursachen_ids": [
+        2302
+      ],
+      "pruefsumme": "6a6909c296838bfb"
+    },
+    {
+      "kennung": "M144",
+      "ebene": "land",
+      "beschreibung": "Lehrkräfteausbildung mit Schwerpunkt auf Klassenführung und Stressmanagement",
+      "zitat": "Im Lehrkräftebildungsgesetz wollen wir den Schwerpunkt weg von den politisch vorgegebenen Themen […] hin zu denjenigen Themen verlagern, welche die Lehramtsabsolventen in der Multikohortenstudie als besonders wichtig benannt haben: Unterrichtsplanung, Klassenführung, Stressmanagement und digitale Medienbildung.",
+      "ursachen_ids": [
+        2302
+      ],
+      "pruefsumme": "80b1dde56842524a"
+    },
+    {
+      "kennung": "M145",
+      "ebene": "land",
+      "beschreibung": "Bewertungsschlüssel für alle Schulformen anheben, um Schulnoten wieder aussagekräftiger zu machen.",
+      "zitat": "Wir wollen, dass Schulnoten wieder zu einer harten Währung werden. Deshalb werden wir die Bewertungsschlüssel für alle Schulformen anheben.",
+      "ursachen_ids": [
+        2304
+      ],
+      "pruefsumme": "661412f0355d2067"
+    },
+    {
+      "kennung": "M146",
+      "ebene": "land",
+      "beschreibung": "Arbeitszeit von Lehrkräften zeitlich erfassen und Tätigkeiten klar festlegen, um Überlastung vorzubeugen.",
+      "zitat": "Die Arbeit von Lehrerinnen und Lehrern soll zum Schutz vor Überlastung zeitlich erfasst und durch eine Tätigkeitsbeschreibung klar festgelegt werden.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2304
+      ],
+      "pruefsumme": "d689a27443da4d2a"
+    },
+    {
+      "kennung": "M147",
+      "ebene": "land",
+      "beschreibung": "Vom Unterricht suspendierte, gewaltauffällige Jugendliche durch Bildungs- und Berufsangebote beschäftigen und fördern",
+      "zitat": "Wir werden: […] sicherstellen, dass vom Unterricht suspendierte Jugendliche sinnvoll beschäftigt werden und zu diesem Zweck gewaltauffällige Jugendliche durch Bildungs- und Berufsangebote fördern, insbesondere durch Kooperationen mit Handwerksbetrieben und Jugendhilfeträgern.",
+      "ursachen_ids": [],
+      "ursachen_offen": [
+        2301
+      ],
+      "pruefsumme": "efec4be8bb5f7a85"
+    },
+    {
+      "kennung": "M148",
+      "ebene": "bund",
+      "beschreibung": "Stärkung der Disziplinarrechte und der rechtlichen Sicherheit von Lehrkräften und Schulen",
+      "zitat": "Disziplinarrechte der Lehrer und Schulen stärken. Um den Auftrag der Schule gerecht zu werden, bedarf es einer Stärkung der rechtlichen Sicherheit und der Disziplinarrechte.",
+      "ursachen_ids": [
+        2301
+      ],
+      "ursachen_offen": [
+        2302
+      ],
+      "pruefsumme": "2dbd372ffc95ee22"
+    }
+  ]
+}

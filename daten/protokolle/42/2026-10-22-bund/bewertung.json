@@ -1,0 +1,837 @@
+{
+  "blind_pruefsumme": "69213ece1e8b18159e8cf92e0fd1de3ad7bb597f33aeb233ebd114a65960384a",
+  "neue_instrumente": [
+    {
+      "kennung": "I1",
+      "name": "Einkommensteuertarif und Freibeträge automatisch an die Inflation anpassen (Bund)",
+      "wirksamkeit": 3,
+      "umsetzbarkeit": 3,
+      "begruendung": "Setzt direkt an der kalten Progression an; Schweiz, USA, Kanada, Belgien u. a. indexieren automatisch, Simulationen zeigen weitgehenden Ausgleich. Dagegen: Einnahmeausfall gegenüber Status quo und weniger Budgetspielraum; einfaches Bundesgesetz mit Bundesratszustimmung.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.wirtschaftsdienst.eu/inhalt/jahr/2016/heft/10/beitrag/moeglichkeiten-zur-kompensation-der-kalten-progression-wirkung-in-oesterreich.html"
+    },
+    {
+      "kennung": "I2",
+      "name": "Grundfreibetrag der Einkommensteuer stark anheben (auf etwa 15.000 bis 17.000 Euro) (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "Entlastet alle Steuerpflichtigen spürbar und gleicht aufgelaufene kalte Progression mehr als aus. Dagegen: einmaliger Schritt ohne dauerhafte Anpassung und Ausfälle in zweistelliger Milliardenhöhe ohne geklärte Gegenfinanzierung.",
+      "evidenz": "belegt"
+    },
+    {
+      "kennung": "I3",
+      "name": "Einkommensteuertarif abflachen und Spitzensteuersatz später greifen lassen, ohne Gegenfinanzierung (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1,
+      "begruendung": "Mildert den steilen Progressionsverlauf bei mittleren Einkommen, an dem die kalte Progression besonders wirkt. Dagegen: einmalige Änderung ohne Indexierung, Entlastung absolut v. a. bei höheren Einkommen, hohe Ausfälle ohne Finanzierung.",
+      "evidenz": "gemischt"
+    },
+    {
+      "kennung": "I4",
+      "name": "Einkommensteuertarif umbauen: untere und mittlere Einkommen entlasten, hohe stärker belasten (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Senkt die Belastung der Mehrheit der Beschäftigten und ist teilweise gegenfinanziert. Dagegen: keine dauerhafte Inflationsanpassung, Ausweichreaktionen hoher Einkommen mindern die Gegenfinanzierung.",
+      "evidenz": "gemischt"
+    },
+    {
+      "kennung": "I5",
+      "name": "Schuldenbremse einhalten, keine Lockerung (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Fiskalregeln gehen laut IWF mit niedrigeren Defiziten einher, besonders bei verbindlicher Ausgestaltung. Dagegen: kausaler Effekt umstritten, Regeln drücken oft Investitionen; geltendes Recht, daher leicht umsetzbar.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.imf.org/-/media/files/publications/sdn/2018/sdn1804-on-second-generation-fiscal-rules.pdf.md"
+    },
+    {
+      "kennung": "I6",
+      "name": "Schuldenbremse lockern oder abschaffen, um Investitionen über Kredite zu finanzieren (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1,
+      "begruendung": "Kann Investitionsstau abbauen und Wachstum stützen; IWF verweist auf Investitionsverdrängung durch starre Regeln. Dagegen: erhöht Defizit und Zinslast unmittelbar; erfordert Grundgesetzänderung mit Zweidrittelmehrheit, EU-Regeln gelten weiter.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.imf.org/-/media/files/publications/sdn/2018/sdn1804-on-second-generation-fiscal-rules.pdf.md"
+    },
+    {
+      "kennung": "I7",
+      "name": "Subventionen und Ausgaben systematisch überprüfen und abbauen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Finanzhilfen und Steuervergünstigungen des Bundes umfassen dreistellige Milliardenbeträge, Abbau senkt das Defizit spürbar. Dagegen: Einsparziele bleiben oft unbestimmt, viele Posten sind politisch und rechtlich gebunden.",
+      "evidenz": "gemischt"
+    },
+    {
+      "kennung": "I8",
+      "name": "Bundesverwaltung verkleinern (Stellenabbau, Digitalisierung) (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Senkt Personal- und Verwaltungskosten auf längere Sicht. Dagegen: Personalausgaben sind nur ein kleiner Teil des Bundeshaushalts, Digitalisierung kostet zunächst; Einsparungen kaum untersucht.",
+      "evidenz": "offen"
+    },
+    {
+      "kennung": "I9",
+      "name": "Steuerhinterziehung und Steuerbetrug stärker verfolgen, Steuerverwaltung personell stärken (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Betriebsprüfer erzielen im Schnitt rund 1 Mio. Euro Mehrergebnis je Jahr, mehr Personal erhöht die Einnahmen. Dagegen: Finanzämter sind Ländersache, Fachkräfte fehlen; der Bund kann nur über Gesetze, Bundesbehörden und Vereinbarungen beitragen.",
+      "evidenz": "belegt",
+      "beleg_studie_url": "https://www.zdfheute.de/wirtschaft/kampf-gegen-steuerhinterziehung-finanzamt-100.html"
+    },
+    {
+      "kennung": "I10",
+      "name": "Vermögensteuer wieder erheben (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2,
+      "begruendung": "Erhöht den Anteil vermögensbezogener Steuern; DIW schätzt je nach Ausgestaltung zweistellige Milliardenbeträge. Dagegen: Ausweichreaktionen, Bewertungsaufwand und Verfassungsvorgaben zur Bewertung; Aufkommen fließt den Ländern zu.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.diw.de/de/diw_01.c.1002952.de/nachrichten/es_gibt_bessere_wege__vermoegen_zu_besteuern.html"
+    },
+    {
+      "kennung": "I11",
+      "name": "Verschonung großer Betriebsvermögen bei der Erbschaftsteuer begrenzen oder Mindeststeuer einführen (Bund)",
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3,
+      "begruendung": "Große Betriebsvermögen werden weitgehend steuerfrei übertragen, Schätzungen nennen Ausfälle in Milliardenhöhe; Stundung kann Liquiditätsprobleme mildern. Dagegen: Unternehmensverbände warnen vor Investitionsfolgen, Ausweichgestaltungen möglich.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://www.wirtschaftsdienst.eu/inhalt/jahr/2016/heft/6/beitrag/die-demontage-der-erbschaftsteuer.html"
+    },
+    {
+      "kennung": "I12",
+      "name": "Freibeträge der Erbschaft- und Schenkungsteuer erhöhen oder an die Inflation koppeln (Bund)",
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 3,
+      "begruendung": "Setzt an der Erbschaftsteuer an, senkt aber deren Aufkommen und verstärkt damit das Übergewicht von Lohn- und Umsatzsteuer. Für einzelne Erben (Eigenheim) entlastend; rechtlich einfach umsetzbar.",
+      "evidenz": "belegt"
+    },
+    {
+      "kennung": "I13",
+      "name": "Nationale Finanztransaktionssteuer einführen (Bund)",
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 2,
+      "begruendung": "Besteuert bisher steuerfreie Kapitaltransaktionen; Frankreich und Italien erheben sie. Dagegen: dortige Einnahmen blieben unter den Prognosen, Handel weicht aus; national einführbar, Bemessungsgrundlage strittig.",
+      "evidenz": "gemischt",
+      "beleg_studie_url": "https://articlegateway.com/index.php/JAF/article/view/6562"
+    }
+  ],
+  "zuordnung": [
+    {
+      "kennung": "M01",
+      "instrument": "I8",
+      "ursachen": [
+        4202
+      ]
+    },
+    {
+      "kennung": "M02",
+      "instrument": "I2",
+      "ursachen": [
+        4201
+      ]
+    },
+    {
+      "kennung": "M03",
+      "ursachen": []
+    },
+    {
+      "kennung": "M04",
+      "ursachen": []
+    },
+    {
+      "kennung": "M05",
+      "instrument": "I12",
+      "ursachen": [
+        4203
+      ]
+    },
+    {
+      "kennung": "M06",
+      "instrument": "I5",
+      "ursachen": [
+        4202
+      ]
+    },
+    {
+      "kennung": "M07",
+      "ursachen": []
+    },
+    {
+      "kennung": "M08",
+      "ursachen": []
+    },
+    {
+      "kennung": "M09",
+      "ursachen": []
+    },
+    {
+      "kennung": "M10",
+      "ursachen": []
+    },
+    {
+      "kennung": "M11",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Verkehrswertorientierung stärkt die Grundsteuer als vermögensbezogene Steuer, Umlageverbot verlagert Last auf Eigentümer. Dagegen: Reform eher aufkommensneutral, Länder haben Abweichungsrecht, Bewertung aufwendig.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        4203
+      ]
+    },
+    {
+      "kennung": "M12",
+      "instrument": "I9",
+      "ursachen": [
+        4202
+      ]
+    },
+    {
+      "kennung": "M13",
+      "ursachen": []
+    },
+    {
+      "kennung": "M14",
+      "instrument": "I13",
+      "ursachen": [
+        4203
+      ]
+    },
+    {
+      "kennung": "M15",
+      "ursachen": []
+    },
+    {
+      "kennung": "M16",
+      "ursachen": []
+    },
+    {
+      "kennung": "M17",
+      "ursachen": []
+    },
+    {
+      "kennung": "M18",
+      "ursachen": []
+    },
+    {
+      "kennung": "M19",
+      "ursachen": []
+    },
+    {
+      "kennung": "M20",
+      "ursachen": []
+    },
+    {
+      "kennung": "M21",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Bringt einmalige Erlöse, die Schulden tilgen können. Dagegen: kein Beitrag zum strukturellen Defizit, entgangene Dividenden, Erlöse hängen vom Marktumfeld ab.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        4202
+      ]
+    },
+    {
+      "kennung": "M22",
+      "instrument": "I5",
+      "ursachen": [
+        4202
+      ]
+    },
+    {
+      "kennung": "M23",
+      "einzeln": {
+        "wirksamkeit": 2,
+        "umsetzbarkeit": 1,
+        "begruendung": "Einmalige Vermögensabgabe kann hohe Einnahmen bringen und Kreditbedarf senken. Dagegen: Grundgesetz erlaubt sie nur bei außerordentlichem Finanzbedarf, Bewertung und Ausweichen schwierig, Aufkommen unsicher.",
+        "evidenz": "gemischt"
+      },
+      "ursachen": [
+        4202,
+        4203
+      ]
+    },
+    {
+      "kennung": "M24",
+      "ursachen": []
+    },
+    {
+      "kennung": "M25",
+      "instrument": "I13",
+      "ursachen": [
+        4203
+      ]
+    },
+    {
+      "kennung": "M26",
+      "ursachen": []
+    },
+    {
+      "kennung": "M27",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Geringere EU-Beiträge würden den Bundeshaushalt entlasten. Dagegen: Finanzrahmen und Eigenmittel erfordern einstimmige EU-Beschlüsse, Rückflüsse aus EU-Programmen fielen ebenfalls weg.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        4202
+      ]
+    },
+    {
+      "kennung": "M28",
+      "ursachen": []
+    },
+    {
+      "kennung": "M29",
+      "einzeln": {
+        "wirksamkeit": 0,
+        "umsetzbarkeit": 1,
+        "begruendung": "Setzt an vermögensbezogenen Steuern an, senkt deren Anteil aber weiter und verstärkt das Übergewicht von Lohn- und Umsatzsteuer. Länder verlören ihr Erbschaftsteueraufkommen ohne geklärten Ausgleich.",
+        "evidenz": "belegt"
+      },
+      "ursachen": [
+        4203
+      ]
+    },
+    {
+      "kennung": "M30",
+      "ursachen": []
+    },
+    {
+      "kennung": "M31",
+      "instrument": "I10",
+      "ursachen": [
+        4203
+      ]
+    },
+    {
+      "kennung": "M32",
+      "ursachen": []
+    },
+    {
+      "kennung": "M33",
+      "ursachen": []
+    },
+    {
+      "kennung": "M34",
+      "ursachen": []
+    },
+    {
+      "kennung": "M35",
+      "instrument": "I11",
+      "ursachen": [
+        4203
+      ]
+    },
+    {
+      "kennung": "M36",
+      "ursachen": []
+    },
+    {
+      "kennung": "M37",
+      "instrument": "I3",
+      "ursachen": [
+        4201
+      ]
+    },
+    {
+      "kennung": "M38",
+      "instrument": "I9",
+      "ursachen": [
+        4202
+      ]
+    },
+    {
+      "kennung": "M39",
+      "instrument": "I10",
+      "ursachen": [
+        4203
+      ]
+    },
+    {
+      "kennung": "M40",
+      "ursachen": []
+    },
+    {
+      "kennung": "M41",
+      "ursachen": []
+    },
+    {
+      "kennung": "M42",
+      "ursachen": []
+    },
+    {
+      "kennung": "M43",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Erschwert Share Deals und erhöht das Aufkommen einer vermögensbezogenen Steuer. Dagegen: seit 2021 bereits verschärft, Mehreinnahmen begrenzt und den Ländern zufließend.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        4203
+      ]
+    },
+    {
+      "kennung": "M44",
+      "instrument": "I6",
+      "ursachen": [
+        4202
+      ]
+    },
+    {
+      "kennung": "M45",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Kann in Krisen zusätzliche Einnahmen bringen. Dagegen: Abgrenzung von Krisengewinnen schwierig, 90 Prozent verfassungsrechtlich heikel, EU-Solidaritätsbeitrag 2022 brachte weniger als erwartet.",
+        "evidenz": "gemischt"
+      },
+      "ursachen": [
+        4202
+      ]
+    },
+    {
+      "kennung": "M46",
+      "instrument": "I6",
+      "ursachen": [
+        4202
+      ]
+    },
+    {
+      "kennung": "M47",
+      "instrument": "I11",
+      "ursachen": [
+        4203
+      ]
+    },
+    {
+      "kennung": "M48",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Höherer Grundfreibetrag entlastet alle Steuerpflichtigen und gleicht einen Teil der kalten Progression aus. Dagegen: einmaliger, mäßiger Schritt ohne dauerhafte Anpassung.",
+        "evidenz": "belegt"
+      },
+      "ursachen": [
+        4201
+      ]
+    },
+    {
+      "kennung": "M49",
+      "ursachen": []
+    },
+    {
+      "kennung": "M50",
+      "ursachen": []
+    },
+    {
+      "kennung": "M51",
+      "instrument": "I4",
+      "ursachen": [
+        4201
+      ]
+    },
+    {
+      "kennung": "M52",
+      "instrument": "I3",
+      "ursachen": [
+        4201
+      ]
+    },
+    {
+      "kennung": "M53",
+      "instrument": "I1",
+      "ursachen": [
+        4201
+      ]
+    },
+    {
+      "kennung": "M54",
+      "ursachen": []
+    },
+    {
+      "kennung": "M55",
+      "instrument": "I2",
+      "ursachen": [
+        4201
+      ]
+    },
+    {
+      "kennung": "M56",
+      "instrument": "I8",
+      "ursachen": [
+        4202
+      ]
+    },
+    {
+      "kennung": "M57",
+      "instrument": "I1",
+      "ursachen": [
+        4201
+      ]
+    },
+    {
+      "kennung": "M58",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Der Pauschbetrag ist nicht indexiert; eine Anhebung gleicht Inflation für Beschäftigte teilweise aus und vereinfacht. Dagegen: einmaliger Schritt, Wirkung je Person gering.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        4201
+      ]
+    },
+    {
+      "kennung": "M59",
+      "ursachen": []
+    },
+    {
+      "kennung": "M60",
+      "ursachen": []
+    },
+    {
+      "kennung": "M61",
+      "ursachen": []
+    },
+    {
+      "kennung": "M62",
+      "ursachen": []
+    },
+    {
+      "kennung": "M63",
+      "instrument": "I1",
+      "ursachen": [
+        4201
+      ]
+    },
+    {
+      "kennung": "M64",
+      "instrument": "I7",
+      "ursachen": [
+        4202
+      ]
+    },
+    {
+      "kennung": "M65",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Schließen von Steuerschlupflöchern kann Mehreinnahmen bringen. Dagegen: ohne Benennung konkreter Regelungen bleiben Umfang und Wirkung unbestimmt.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        4202
+      ]
+    },
+    {
+      "kennung": "M66",
+      "ursachen": []
+    },
+    {
+      "kennung": "M67",
+      "ursachen": []
+    },
+    {
+      "kennung": "M68",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 1,
+        "begruendung": "Verbindliche EU-Defizitregeln können Haushaltsdisziplin stärken. Dagegen: Regeln gelten bereits, ein automatisiertes Verfahren erfordert EU-Beschlüsse, die Deutschland nicht allein treffen kann.",
+        "evidenz": "gemischt"
+      },
+      "ursachen": [
+        4202
+      ]
+    },
+    {
+      "kennung": "M69",
+      "ursachen": []
+    },
+    {
+      "kennung": "M70",
+      "ursachen": []
+    },
+    {
+      "kennung": "M71",
+      "ursachen": []
+    },
+    {
+      "kennung": "M72",
+      "instrument": "I12",
+      "ursachen": [
+        4203
+      ]
+    },
+    {
+      "kennung": "M73",
+      "instrument": "I4",
+      "ursachen": [
+        4201
+      ]
+    },
+    {
+      "kennung": "M74",
+      "ursachen": []
+    },
+    {
+      "kennung": "M75",
+      "instrument": "I7",
+      "ursachen": [
+        4202
+      ]
+    },
+    {
+      "kennung": "M76",
+      "instrument": "I6",
+      "ursachen": [
+        4202
+      ]
+    },
+    {
+      "kennung": "M77",
+      "ursachen": []
+    },
+    {
+      "kennung": "M78",
+      "instrument": "I3",
+      "ursachen": [
+        4201
+      ]
+    },
+    {
+      "kennung": "M79",
+      "ursachen": []
+    },
+    {
+      "kennung": "M80",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Begrenzung auf Kernaufgaben kann Ausgaben senken. Dagegen: unbestimmt, welche Ausgaben entfallen; viele Bundesausgaben sind gesetzlich gebunden.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        4202
+      ]
+    },
+    {
+      "kennung": "M81",
+      "instrument": "I7",
+      "ursachen": [
+        4202
+      ]
+    },
+    {
+      "kennung": "M82",
+      "ursachen": []
+    },
+    {
+      "kennung": "M83",
+      "instrument": "I3",
+      "ursachen": [
+        4201
+      ]
+    },
+    {
+      "kennung": "M84",
+      "ursachen": []
+    },
+    {
+      "kennung": "M85",
+      "ursachen": []
+    },
+    {
+      "kennung": "M86",
+      "ursachen": []
+    },
+    {
+      "kennung": "M87",
+      "ursachen": []
+    },
+    {
+      "kennung": "M88",
+      "instrument": "I13",
+      "ursachen": [
+        4203
+      ]
+    },
+    {
+      "kennung": "M89",
+      "ursachen": []
+    },
+    {
+      "kennung": "M90",
+      "ursachen": []
+    },
+    {
+      "kennung": "M91",
+      "instrument": "I10",
+      "ursachen": [
+        4203
+      ]
+    },
+    {
+      "kennung": "M92",
+      "instrument": "I6",
+      "ursachen": [
+        4202
+      ]
+    },
+    {
+      "kennung": "M93",
+      "ursachen": []
+    },
+    {
+      "kennung": "M94",
+      "ursachen": []
+    },
+    {
+      "kennung": "M95",
+      "instrument": "I2",
+      "ursachen": [
+        4201
+      ]
+    },
+    {
+      "kennung": "M96",
+      "einzeln": {
+        "wirksamkeit": 0,
+        "umsetzbarkeit": 2,
+        "begruendung": "Entlastet Ersterwerber laut IW deutlich, senkt aber das Aufkommen einer vermögensbezogenen Steuer und verstärkt so das Gewicht von Lohn- und Umsatzsteuer. Aufkommen und Satzhoheit liegen bei den Ländern, Ausgleich nötig.",
+        "evidenz": "belegt",
+        "beleg_studie_url": "https://www.iwkoeln.de/studien/gutachten/beitrag/tobias-hentze-bjoern-seipelt-michael-voigtlaender-reform-der-grunderwerbsteuer-325128.html"
+      },
+      "ursachen": [
+        4203
+      ]
+    },
+    {
+      "kennung": "M97",
+      "ursachen": []
+    },
+    {
+      "kennung": "M98",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Kann Lizenzkosten senken; München meldete Einsparungen in Millionenhöhe. Dagegen: Umstellung kostet zunächst, München kehrte zu Windows zurück, Einsparungen gemessen am Bundesdefizit gering.",
+        "evidenz": "gemischt",
+        "beleg_studie_url": "https://www.computerworld.com/article/1398642/switch-to-open-source-successfully-completed-city-of-munich-says.html"
+      },
+      "ursachen": [
+        4202
+      ]
+    },
+    {
+      "kennung": "M99",
+      "ursachen": []
+    },
+    {
+      "kennung": "M100",
+      "einzeln": {
+        "wirksamkeit": 0,
+        "umsetzbarkeit": 1,
+        "begruendung": "Bremst Mehrbelastungen bei der Grundsteuer, senkt aber das Aufkommen einer vermögensbezogenen Steuer. Hebesätze legen Kommunen fest, Länder haben Abweichungsrecht; der Bund kann kaum allein handeln.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        4203
+      ]
+    },
+    {
+      "kennung": "M101",
+      "instrument": "I11",
+      "ursachen": [
+        4203
+      ]
+    },
+    {
+      "kennung": "M102",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 3,
+        "begruendung": "Weniger externe Berater und mehr Transparenz können Ausgaben senken. Dagegen: Einsparvolumen gemessen am Defizit gering, eigenes Fachpersonal muss teils erst aufgebaut werden.",
+        "evidenz": "offen"
+      },
+      "ursachen": [
+        4202
+      ]
+    },
+    {
+      "kennung": "M103",
+      "ursachen": []
+    },
+    {
+      "kennung": "M104",
+      "ursachen": []
+    },
+    {
+      "kennung": "M105",
+      "ursachen": []
+    },
+    {
+      "kennung": "M106",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Senkt die Steuerlast für die große Mehrheit der Beschäftigten. Dagegen: Umfang und Tarifverlauf unbestimmt, keine dauerhafte Inflationsanpassung, Finanzierung offen.",
+        "evidenz": "gemischt"
+      },
+      "ursachen": [
+        4201
+      ]
+    },
+    {
+      "kennung": "M107",
+      "einzeln": {
+        "wirksamkeit": 1,
+        "umsetzbarkeit": 2,
+        "begruendung": "Bundesrechnungshof: wegen schwacher Verträge konnte die Bundeswehr Mehrkosten nicht dem Auftragnehmer anlasten. Dagegen: Hersteller preisen Risiken ein, wenige Anbieter, Wirkung erst bei neuen Verträgen.",
+        "evidenz": "offen",
+        "beleg_studie_url": "https://vergabeblog.de/2018-04-25/bundesrechnungshof-ruegt-unwirtschaftliches-verhalten-in-den-bereichen-gesundheit-steuern-bundeswehr-und-strassenbau/"
+      },
+      "ursachen": [
+        4202
+      ]
+    },
+    {
+      "kennung": "M108",
+      "ursachen": []
+    }
+  ],
+  "teilbewertung": {
+    "vorherige_pruefsumme": "8d05919fe80d27be55bd2d6f1d3c0bcfd0ff871c733feb940fc77fd6d88a8f89",
+    "neu_bewertet": [
+      "M83",
+      "M84",
+      "M85",
+      "M86",
+      "M87",
+      "M88",
+      "M89",
+      "M90",
+      "M91",
+      "M92",
+      "M93",
+      "M94",
+      "M95",
+      "M96",
+      "M97",
+      "M98",
+      "M99",
+      "M100",
+      "M101",
+      "M102",
+      "M103",
+      "M104",
+      "M105",
+      "M106",
+      "M107",
+      "M108"
+    ]
+  }
+}

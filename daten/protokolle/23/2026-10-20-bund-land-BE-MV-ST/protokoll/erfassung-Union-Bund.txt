@@ -1,0 +1,68 @@
+{
+  "partei_id": 11,
+  "land": null,
+  "massnahmen": [
+    {
+      "beschreibung": "Ausreichenden Kinder- und Jugendschutz im Internet gewährleisten; Digital Services Act mit Schwerpunkt Jugend- und Medienschutz umsetzen",
+      "ursachen_ids": [2303],
+      "zitat": "Wir sorgen dafür, dass ein ausreichender Kinder- und Jugendschutz auch im Internet gewährleistet wird. […] Wir stellen sicher, dass bei der Umsetzung des Digital Services Act der Schwerpunkt auf mehr Transparenz, Kampf gegen Desinformation sowie Jugend- und Medienschutz gelegt wird.",
+      "seite": 41
+    },
+    {
+      "beschreibung": "Digitalpakt mit digitaler Infrastruktur und forschungsbasierter Qualifizierung von Lehrkräften und Schulleitungen",
+      "ursachen_ids": [2302],
+      "zitat": "Damit legen wir den Fokus auf digitale Infrastruktur, digitale Lehr- und Lernprogramme sowie auf die forschungsbasierte Qualifizierung von Lehrkräften und Schulleitungen.",
+      "seite": 66
+    },
+    {
+      "beschreibung": "Rechtliche Grundlagen für eine bessere Kooperation von Schule, Jugendhilfe und Eingliederungshilfe schaffen",
+      "ursachen_ids": [],
+      "ursachen_offen": [2302],
+      "zitat": "Wir schaffen die rechtlichen Voraussetzungen für eine verbesserte Kooperationsstruktur für Schule, Jugendhilfe und Eingliederungshilfe.",
+      "seite": 65
+    },
+    {
+      "beschreibung": "Verbindliche, standardisierte Schutzkonzepte dort, wo Kinder betreut werden (Gewaltprävention)",
+      "ursachen_ids": [],
+      "ursachen_offen": [2301],
+      "zitat": "Wir sorgen dafür, dass es dort, wo Kinder betreut werden, flächendeckend verbindliche und standardisierte Schutzkonzepte gibt.",
+      "seite": 39
+    },
+    {
+      "beschreibung": "Kinder- und Jugendhilfe so weiterentwickeln, dass junge Menschen bestmöglich unterstützt werden; psychosoziale Angebote ausbauen",
+      "ursachen_ids": [],
+      "ursachen_offen": [2304],
+      "zitat": "Wir entwickeln die Kinder- und Jugendhilfe so weiter, dass sie ihnen bestmögliche Unterstützung bietet. […] Wir bauen psychosoziale Unterstützungsangebote aus.",
+      "seite": 63
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 2303, "name": "Plattformen und Jugendschutz im Netz", "seite": 41 },
+    { "ursache": 2302, "name": "Qualifizierung von Lehrkräften", "seite": 66 },
+    { "ursache": 2302, "name": "Kooperation von Schule und Jugendhilfe", "seite": 65 },
+    { "ursache": 2304, "name": "Psychosoziale Unterstützung junger Menschen", "seite": 63 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 2304, "seiten": [3, 5, 14, 18, 22, 24, 36, 40, 53, 63], "grund": "Entlastung im Sinne von Steuern, Abgaben, Landwirtschaft und Justizpersonal ohne Bezug zu Leistungs- und Prüfungsdruck in der Schule; Resilienz nur wirtschaftlich und sicherheitspolitisch. Die psychosoziale Unterstützung (S. 63) ist als Grenzfall erfasst." }
+  ]
+}
+
+Protokoll (Thema 23 „Mobbing und Druck in der Schule“, Union Bund)
+
+Gelesen: Inhaltsverzeichnis (S. 1–6); Kapitel „Familie und Verantwortung“ (S. 62–63), „Lernort Schule stärken“ und „Aufstieg durch Bildung“ (S. 64–66), „Kinderschutz“ und „Recht und Ordnung“ (S. 39–40); Fundstellen S. 3, 5, 14, 18, 22, 24, 36, 40, 41, 42, 53, 63, 66, 67, 69, 70.
+
+Nicht erfasst:
+- S. 66: „Wir werden […] ein Maßnahmenpaket zur Stärkung von Gesundheit- und Jugendmedienschutz vorlegen“ (Social Media). Gleichartig zur Plattform-/Jugendschutz-Zusage S. 41, dort schon erfasst.
+- S. 66: Medienbildung und Informatik in der Schule. Mediennutzung von Kindern ist nach R2 ein eigenes Thema.
+- S. 67, 69: Fortbildung in der Berufsbildung und für Fachkräfte. Keine Lehrkräfte, daher nicht 2302.
+- S. 64: Vergleichsarbeiten, Lernstandserhebungen und Abitur-Vergleichbarkeit. Erhöhen Anforderungen, sind keine Entlastung.
+- S. 39: Strafmündigkeit und Jugendstrafrecht. Kein Bezug zur Schule.
+- S. 65: Sprachförderung und Schulreife. Kein Bezug zu Mobbing oder Druck.
+- S. 62: Gemeinsamer Unterricht und Förderschulen. Nach R2 eigene Haltung, nicht hier.
+- Entlastung (siehe nicht_erfasst).
+
+Richtungen ohne Maßnahme: 2301 Klassenklima/soziales Lernen und Regeln/Konsequenzen (keine Fundstelle außer dem Schutzkonzept); 2302 Schulsozialarbeit, Schulpsychologie, Beschwerdestellen (keine Fundstelle außer der Kooperationsstruktur).
+
+Hinweis zu den Bündeln: Der Auftrag nennt keine Bündel, sondern Richtungen mit Trefferzahl. Die Zuordnung der Maßnahmen zu diesen Richtungen steht daher unter „neue_buendel“, ohne Feld „buendel“.
+
+Seiten ohne Text: S. 1 und 82 (Titel- und Rückseite), nicht im Kapitel.

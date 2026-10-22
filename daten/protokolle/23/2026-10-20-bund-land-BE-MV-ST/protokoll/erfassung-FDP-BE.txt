@@ -1,0 +1,60 @@
+{
+  "partei_id": 14,
+  "land": "BE",
+  "massnahmen": [
+    {
+      "beschreibung": "Verpflichtende, bedarfsgerechte Fortbildungen für alle Lehrkräfte mit jährlichem Mindestkontingent und regelmäßiger Kontrolle.",
+      "ursachen_ids": [2302],
+      "buendel": "Fortbildung und Handlungssicherheit der Lehrkräfte",
+      "zitat": "Daher setzen wir uns für verpflichtende, bedarfsgerechte Fortbildungsveranstaltungen für sämtliche Lehrkräfte ein, von denen sie ein bestimmtes Kontingent im Jahr erfüllen müssen, und werden ihre Erfüllung regelmäßig überprüfen.",
+      "seite": 10
+    },
+    {
+      "beschreibung": "Polizeiliche Anti-Gewalt-Trainings im Schulunterricht und Informationsangebote ausbauen.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2301],
+      "zitat": "Präventive Angebote, wie beispielsweise die von der Polizei im Rahmen des Schulunterrichts angebotenen Anti-Gewalt-Trainings, und Informationsveranstaltungen müssen verstärkt werden.",
+      "seite": 68
+    },
+    {
+      "beschreibung": "Mehr Einsatz von Jugend- und Sozialarbeit und eine bessere Verzahnung von Polizei, Schulen und Jugendhilfe.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2302],
+      "buendel": "Unterstützung durch Fachkräfte und Beschwerdewege",
+      "zitat": "Präventive Angebote, wie beispielsweise die von der Polizei im Rahmen des Schulunterrichts angebotenen Anti-Gewalt-Trainings, und Informationsveranstaltungen müssen verstärkt werden. Gleichzeitig ist eine bessere Verzahnung von Polizei, Schulen und Jugendhilfe erforderlich. Darüber hinaus ist ein verstärkter Einsatz von Jugend- und Sozialarbeiterinnen und -arbeitern sowie Streetworkerinnen und Streetworkern notwendig, um eine verlässliche Anlaufstelle zu schaffen.",
+      "seite": 68
+    },
+    {
+      "beschreibung": "Radikale Entbürokratisierung im Schulsektor und Aussetzung schulischer Regularien für ein Jahr.",
+      "ursachen_ids": [],
+      "ursachen_offen": [2304],
+      "buendel": "Belastung reduzieren",
+      "zitat": "Wir starten eine radikale Entbürokratisierung im Schulsektor. […] Zudem wollen wir die Aussetzung sämtlicher Regularien und bürokratischer Hürden im schulischen Bereich auf ein Jahr erreichen.",
+      "seite": 8
+    }
+  ],
+  "neue_buendel": [
+    { "ursache": 2301, "name": "Gewaltprävention an Schulen", "seite": 68 }
+  ],
+  "nicht_erfasst": [
+    { "ursache": 2301, "seiten": [11, 78], "grund": "Förderschulen und Inklusionsklassen betreffen Schulform, nicht Ausgrenzung durch Mitschüler. Schutzkonzept gegen Gewalt in geförderten Einrichtungen (S. 78) betrifft vor allem sexualisierte und häusliche Gewalt, nicht Mobbing." },
+    { "ursache": 2302, "seiten": [8, 10, 16], "grund": "Multiprofessionelle Teams mit Sozialarbeit und Psychologie (S. 8) nennen weder Mobbing noch Gewalt noch Konflikte (R2). Lehrkräftemangel und Quereinstieg (S. 10) gehören nach R2 zu Schule allgemein. Cybermobbing im Medienkompetenz-Kapitel (S. 16) gehört nach R1 zu 2303, das für dieses Programm nicht im Auftrag steht." },
+    { "ursache": 2304, "seiten": [9, 78, 115], "grund": "Wohlfühlen der Schülerinnen und Schüler (S. 9) wird nur über Sanitäranlagen konkretisiert. Ausweichtermine für Feiertage bei Prüfungen (S. 78) betreffen Religion, nicht Prüfungsdruck. Gesundheit (S. 115) nur allgemeine Prävention, keine Zusage zu Leistungs- oder Prüfungsdruck." }
+  ]
+}
+
+--- Protokoll ---
+
+Gelesen: Inhaltsverzeichnis (S. 2–6); Kapitel Schulische Bildung (S. 6–11); Medienkompetenz (S. 14–17); Sicherheit, Auszug (S. 67–69); Häusliche Gewalt (S. 77–78); Familie (S. 111); Gesundheit und Sucht (S. 113–117). Fundstellen S. 3, 16 (Berufsorientierung und Medienkompetenz) und S. 78 gelesen.
+
+Ohne Text: S. 1, 94, 100, 105 liegen außerhalb der passenden Kapitel.
+
+Bündel ohne Maßnahme (im Text gezielt gesucht): "Klassenklima und soziales Lernen stärken" (2301) – keine Zusage zu Klassenklima, sozialem Lernen oder Ausgrenzungsprävention gefunden. "Regeln und Konsequenzen durchsetzen" (2301) – keine Schulordnung oder Ordnungsmaßnahmen gefunden. "Befähigung und Stressbewältigung" (2304) – Resilienz nur im Klimakontext (S. 89).
+
+Weitere gleichartige Stelle zum Bündel Fortbildung: S. 11 (Fortbildungsangebote nur bei Prüfung auf Beutelsbacher Konsens finanzieren). Nicht aufgenommen, da inhaltliche Prüfungsbedingung und nicht Mobbing-bezogen.
+
+Nicht erfasst: S. 20–21, 36, 49 (allgemeine Bürokratieentlastung für Bürger und Wirtschaft, kein Schulbezug); S. 15 (Smartphone-Regeln an Schulen, Mediennutzung); S. 11 (Förderschulen, Elternwahlrecht); S. 12 (Einzugszwang, soziale Selektion).
+
+Hinweise der Prüfung: Die Bündel „Fortbildung und Handlungssicherheit der Lehrkräfte“, „Unterstützung durch Fachkräfte und Beschwerdewege“ und „Belastung reduzieren“ stehen im Auftrag bei den Ursachen 2302 bzw. 2304 (Treffer-Liste), nicht in R1/R2; nicht neu, nur vom Leitfaden nicht gelistet. Maßnahme 2 (Anti-Gewalt-Trainings) und Maßnahme 3 (Sozialarbeit, Anlaufstelle) stehen im selben Absatz auf S. 68, sind aber zwei verschiedene Zusagen mit verschiedenem Hebel; M3 nennt Gewalt im Zitat, damit R2 greift.
+
+Stand im PDF: Kein abweichender Stand genannt.
