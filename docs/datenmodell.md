@@ -70,6 +70,7 @@ erDiagram
         date stand
         boolean geprueft
         boolean ki_entwurf
+        jsonb nebenwirkungen "Folgen über das Thema hinaus, ohne Punkte; null = ungeprüft"
     }
     instrumente {
         integer id PK "Nummernkreis wie Maßnahmen"
@@ -82,6 +83,7 @@ erDiagram
         integer entspricht FK "gleicher Lösungsweg auf der anderen Ebene"
         boolean ki_entwurf
         text entwurf_herkunft "blind | nicht_blind"
+        jsonb nebenwirkungen "wie bei massnahmen"
     }
     abdeckung {
         smallint thema_id FK

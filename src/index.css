@@ -1100,6 +1100,26 @@ textarea {
 .keine-begruendung {
   font-size: 0.85rem;
 }
+.folgen {
+  margin: 6px 0 0;
+  font-size: 0.85rem;
+}
+.folgen-titel {
+  margin: 0;
+  font-weight: 700;
+}
+.folgen-titel span,
+.folgen-leer {
+  font-weight: 400;
+  color: var(--text-leise);
+}
+.folgen ul {
+  margin: 2px 0 0;
+  padding-left: 1.1em;
+}
+.folge-art {
+  color: var(--text-leise);
+}
 .belege {
   display: inline-block;
   margin-top: 4px;

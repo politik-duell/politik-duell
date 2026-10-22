@@ -8,6 +8,9 @@ import {
   type Land,
   type Landesprogramm,
   type Massnahme,
+  NEBENWIRKUNG_BEREICHE,
+  NEBENWIRKUNG_RICHTUNGEN,
+  type Nebenwirkung,
   type Partei,
   type Symptomgruppe,
   type Thema,
@@ -82,20 +85,7 @@ export interface Instrument {
 
 export type EntwurfHerkunft = 'blind' | 'nicht_blind'
 
-/** Bereiche der Folgen nach § 44 GGO, ergänzt um Verteilung und Grundrechte (docs/plan-nebenwirkungen.md). */
-export const NEBENWIRKUNG_BEREICHE = ['haushalt', 'wirtschaft', 'aufwand', 'umwelt', 'verteilung', 'grundrechte'] as const
-export const NEBENWIRKUNG_RICHTUNGEN = ['vorteil', 'nachteil', 'gemischt'] as const
 export const MAX_NEBENWIRKUNGEN = 3
-
-export interface Nebenwirkung {
-  bereich: (typeof NEBENWIRKUNG_BEREICHE)[number]
-  richtung: (typeof NEBENWIRKUNG_RICHTUNGEN)[number]
-  text: string
-  quelle_url: string
-  /** Wie bei Ursachen: A amtlich, B Befragung/begutachtete Studie, C Einschätzung – C nur mit zweiter Quelle. */
-  belegstufe: 'A' | 'B' | 'C'
-  zweite_quelle_url?: string
-}
 
 /**
  * Folgen einer Maßnahme über das Thema hinaus. `geprueft`: Datum, an dem alle Bereiche durchgesehen
@@ -135,7 +125,7 @@ export interface KatalogPartei extends Partei {
 }
 
 /** Maßnahme im Repo: wie in der Datenbank, plus Herkunft der Bewertung und Wahlperiode. */
-export interface KatalogMassnahme extends Massnahme {
+export interface KatalogMassnahme extends Omit<Massnahme, 'nebenwirkungen'> {
   /** Instrument, aus dem Wirksamkeit, Umsetzbarkeit und Begründung stammen. */
   instrument_id?: number
   /** Nur bei Landesprogrammen: die Landtagswahl, zu der das Programm gehört. */
@@ -247,16 +237,27 @@ const zaehlendeAbdeckung = (k: Katalog, mitKiEntwurf: boolean) =>
 const programmSchluessel = (x: { thema_id: number; partei_id: number; land?: string | null; landtagswahl?: string }) =>
   `${x.thema_id}/${x.partei_id}/${x.land ?? ''}/${x.landtagswahl ?? ''}`
 
+/**
+ * Folgen über das Thema hinaus für Spiel und Datenbank: nur geprüfte Hinweise – KI-Entwürfe nur dort, wo
+ * auch der Eintrag selbst als Entwurf nur in der Testphase erscheint. Leere Liste = geprüft, nichts belegt.
+ */
+const sichtbareFolgen = (nw: Nebenwirkungen | undefined, kiErlaubt: boolean): Nebenwirkung[] | undefined =>
+  nw && (!nw.ki_entwurf || kiErlaubt) ? nw.hinweise : undefined
+
 export function spielbareMassnahmen(k: Katalog, mitKiEntwurf = false): Massnahme[] {
   const eintraege = new Map(zaehlendeAbdeckung(k, mitKiEntwurf).map((a) => [programmSchluessel(a), a]))
   return k.massnahmen
     .filter((m) => eintraege.has(programmSchluessel(m)))
     .map((eintrag) => {
-      const { instrument_id, landtagswahl: _l, entwurf_herkunft: eigene, bewertungen: _b, ...m } = eintrag
+      const { instrument_id, landtagswahl: _l, entwurf_herkunft: eigene, bewertungen: _b, nebenwirkungen: eigeneFolgen, ...rest } = eintrag
+      const m: Massnahme = rest
       // Das Instrument bleibt an der Maßnahme: Die Forderungskarte zeigt darüber, wer es vorschlägt.
-      if (instrument_id !== undefined) (m as Massnahme).instrument_id = instrument_id
-      if (!mitKiEntwurf) return m
+      if (instrument_id !== undefined) m.instrument_id = instrument_id
       const ki = !k.fiktiv && !eintraege.get(programmSchluessel(eintrag))!.geprueft
+      const nw = instrument_id !== undefined ? k.instrumente.find((i) => i.id === instrument_id)?.nebenwirkungen : eigeneFolgen
+      const folgen = sichtbareFolgen(nw, mitKiEntwurf && ki)
+      if (folgen) m.nebenwirkungen = folgen
+      if (!mitKiEntwurf) return m
       // Herkunft der Entwurfswerte (Instrument oder Maßnahme) – im Spiel als „nicht blind“ gekennzeichnet.
       const herkunft = eintrag.instrument_id !== undefined ? k.instrumente.find((i) => i.id === eintrag.instrument_id)?.entwurf_herkunft : eigene
       return { ...m, ki_entwurf: ki, ...(ki ? { entwurf_herkunft: herkunft ?? null } : {}) }
@@ -287,6 +288,7 @@ export function spielbareInstrumente(k: Katalog, mitKiEntwurf = false): Instrume
       beleg_studie_url: i.beleg_studie_url ?? null,
       ebene: ebene(i.id),
       entspricht: i.entspricht !== undefined && dabei.has(i.entspricht) ? i.entspricht : null,
+      nebenwirkungen: sichtbareFolgen(i.nebenwirkungen, mitKiEntwurf && ki) ?? null,
       ...(mitKiEntwurf ? { ki_entwurf: ki, ...(ki ? { entwurf_herkunft: i.entwurf_herkunft ?? null } : {}) } : {}),
       ...(i.schlagwoerter ? { schlagwoerter: i.schlagwoerter } : {}),
     }

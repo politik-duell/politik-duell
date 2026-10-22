@@ -3,6 +3,7 @@ import { useDaten, useLandName } from '../data/kontext'
 import { ROLLEN } from '../data/rollen'
 import { MAX_JE_URSACHE, punkteText, type ParteiErgebnis, type Treffer } from '../logic/bewertung'
 import { EVIDENZ_TEXT } from '../logic/forderung'
+import { Folgen } from './Folgen'
 import { ohneTreffer } from '../logic/ohneTreffer'
 import type { RundenErgebnis, Spieler } from '../spiel'
 import { KI_ENTWURF, KI_ENTWURF_ERKLAERUNG, KI_HINWEIS, MassnahmeBelege, NICHT_BLIND, NICHT_BLIND_ERKLAERUNG } from './belege'
@@ -184,6 +185,7 @@ function MassnahmeInhalt({ t, gewicht, mehrere }: { t: Treffer; gewicht: number;
           <p className="massnahme-rolle duell-mehrfach">{mehrfachText(t.ursachen_ids.length)}</p>
         )}
         {(t.massnahme.evidenz === 'gemischt' || t.massnahme.evidenz === 'offen') && <p className="massnahme-rolle">{EVIDENZ_TEXT[t.massnahme.evidenz]}</p>}
+        <Folgen hinweise={t.massnahme.nebenwirkungen} />
       </details>
     </div>
   )
