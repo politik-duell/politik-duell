@@ -7,9 +7,14 @@
     { "nr": 2, "ursachen": [4402], "text": "Zu 2 gehört, dass Rohstoffe und Vorprodukte aus wenigen Ländern stammen und ihre Lieferung bei Exportbeschränkungen oder Krisen stockt. Nicht dazu: Zölle auf deutsche Exporte (1), Rohstoffpreise allgemein (501), Energieimporte (303). Grenzfall: Rohstoffe, die über Drittstaaten ins Land kommen: nur als ursachen_offen." },
     { "nr": 3, "ursachen": [4403], "text": "Zu 3 gehören Importe aus Drittstaaten, vor allem China, die heimische Hersteller unter Wettbewerbsdruck setzen. Nicht dazu: Zölle der USA gegen deutsche Exporte (1), Rohstoffabhängigkeit (2), Lohn- und Energiekosten der Industrie (501). Grenzfall: staatlich gestützte Überkapazitäten als Erklärung der Importe: nur als ursachen_offen, bis die EP-Studie gelesen ist." }
   ],
+  "buendel": {
+    "4401": ["Zollabbau durch Verhandlung", "Gegenzölle und Vergeltung", "Neue Absatzmärkte erschließen", "Wirtschaftssanktionen aufheben", "Kooperationsabkommen statt Freihandelsabkommen", "Exportgarantien"],
+    "4402": ["Bezugsländer diversifizieren", "Eigene Förderung und Recycling", "Exportbeschränkungen (gegenläufig)", "Recycling und Kreislaufwirtschaft", "Verbrauch von Primärrohstoffen senken", "Resilienz bei Ausschreibungen", "Bergbau in Schutzgebieten verbieten", "Ressourcenschutzgesetz", "Rohstoffbevorratung"],
+    "4403": ["Handelsschutz gegen Dumping", "Importzölle senken", "Zollschlupflöcher für Onlinehändler schließen", "CO₂-Grenzausgleich (CBAM) wirksamer gestalten", "Förderung nur für in Europa produzierte Produkte", "Regionale Produktion statt Importe", "Grenzausgleich auf Importe"]
+  },
   "suchbegriffe": {
     "4401": {
-      "Zollabbau durch Verhandlung": ["zollabkommen", "zollabbau"],
+      "Zollabbau durch Verhandlung": ["zollabkommen", "zollabbau", "handelshemmnisse"],
       "Gegenzölle und Vergeltung": ["gegenzoll", "vergeltungszoll"],
       "Neue Absatzmärkte erschließen": ["freihandelsabkommen", "mercosur"]
     },
@@ -20,7 +25,7 @@
     },
     "4403": {
       "Handelsschutz gegen Dumping": ["antidumping", "ausgleichszoll"],
-      "Importzölle senken": ["importzoll", "vorproduktzoll"]
+      "Importzölle senken": ["importzoll", "vorproduktzoll", "grenzausgleich"]
     }
   }
 }

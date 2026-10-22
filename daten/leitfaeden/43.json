@@ -7,12 +7,17 @@
     { "nr": 2, "ursachen": [4302], "text": "Zu 2 gehören Aussagen zu Weiterbildung, Qualifizierung und Schulung für den Umgang mit KI sowie zum Zugang dazu. Nicht dazu: allgemeine Weiterbildung ohne KI-Bezug, Studienkosten (31), Schulbildung (4). Abgrenzung zu 1: 2 betrifft Zugang und Kompetenz, nicht den Umfang der Tätigkeiten. Grenzfall: allgemeine Weiterbildungsförderung mit KI als Beispiel: nur als ursachen_offen." },
     { "nr": 3, "ursachen": [4303], "text": "Zu 3 gehören Maßnahmen gegen den Einsatz von KI bei Betrug und Täuschung, etwa Strafbarkeit von Deepfakes und Stimmklonen, Löschpflichten und Haftung von Plattformen sowie Regeln für Anbieter offener Modelle. Nicht dazu: allgemeiner Online-Betrug ohne KI-Bezug (906), Hasskommentare (25, 2501, 2502). Grenzfall: Warnungen vor Betrugsmaschen ohne KI-Bezug: nur als ursachen_offen." }
   ],
+  "buendel": {
+    "4301": ["Umschulung für KI-bedingten Wandel", "Schutz vor KI-Verdrängung", "Absicherung bei KI-bedingtem Jobverlust", "KI-Einsatz vorantreiben, neue KI-Berufe schaffen", "KI-Einsatz vorantreiben"],
+    "4302": ["Rechtsanspruch auf KI-Weiterbildung", "Förderung KI-Kompetenz für Geringqualifizierte", "Betriebe zur KI-Schulung verpflichten", "Eigenanteil bei KI-Weiterbildung", "KI-Kompetenz in der Lehrkräfteausbildung", "KI-Wissen in der beruflichen Ausbildung"],
+    "4303": ["Strafbarkeit von Deepfakes", "Löschpflicht und Plattformhaftung für KI-Fälschungen", "Verbot von Stimmklonen", "Gegenrichtung: Forschung und offene Modelle erlauben", "Strafverfolgung von KI-Kriminalität stärken", "AI Act in nationales Recht überführen", "KI-Einsatz der Sicherheitsbehörden"]
+  },
   "suchbegriffe": {
     "4301": {
       "Umschulung für KI-bedingten Wandel": ["ki-umschulung", "ki-berufswechsel"],
-      "Schutz vor KI-Verdrängung": ["ki-arbeitsplatzschutz", "ki-einsatzgrenz"],
+      "Schutz vor KI-Verdrängung": ["ki-arbeitsplatzschutz", "ki-einsatzgrenz", "lernsoftware"],
       "Absicherung bei KI-bedingtem Jobverlust": ["ki-jobverlust", "ki-arbeitslos"],
-      "KI-Einsatz vorantreiben, neue KI-Berufe schaffen": ["ki-einsatz", "ki-fachkraeft"]
+      "KI-Einsatz vorantreiben, neue KI-Berufe schaffen": ["ki-einsatz", "ki-fachkraeft", "kuenstliche intelligenz", "einsatz von ki"]
     },
     "4302": {
       "Rechtsanspruch auf KI-Weiterbildung": ["ki-weiterbildung", "ki-qualifizierung"],
@@ -22,9 +27,9 @@
     },
     "4303": {
       "Strafbarkeit von Deepfakes": ["deepfake", "ki-faelschung"],
-      "Löschpflicht und Plattformhaftung für KI-Fälschungen": ["deepfake-loeschung", "ki-plattformhaftung"],
+      "Löschpflicht und Plattformhaftung für KI-Fälschungen": ["deepfake-loeschung", "ki-plattformhaftung", "kuenstliche intelligenz"],
       "Verbot von Stimmklonen": ["stimmklon", "stimmimitation"],
-      "Gegenrichtung: Forschung und offene Modelle erlauben": ["open-source-ki", "ki-forschungsausnahme"]
+      "Gegenrichtung: Forschung und offene Modelle erlauben": ["open-source-ki", "ki-forschungsausnahme", "ki-forschung"]
     }
   }
 }

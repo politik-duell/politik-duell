@@ -8,11 +8,17 @@
     { "nr": 3, "ursachen": [4503], "text": "Zu 3 gehören die Treibhausgase der Landwirtschaft (Methan aus Tierhaltung, Lachgas aus Düngung). Nicht dazu: Landnutzung, Wald und Moore (LULUCF) und Lebensmittelpreise (Thema 11). Die Landwirtschaft liegt im Budget im Plus; die Ursache beschreibt das Tempo, nicht die Budgetverfehlung. Grenzfall Moorböden: nur als ursachen_offen." },
     { "nr": 4, "ursachen": [4504], "text": "Zu 4 gehören die Regeln, wie die Gesamtmenge und die Sektorbudgets verbindlich festgelegt, ausgeglichen und nachgesteuert werden (Klimaschutzgesetz, Gesamtbudget, Sektorausgleich, Nachsteuerung). Nicht dazu: einzelne Maßnahmen in Verkehr, Gebäuden oder Landwirtschaft (Ansatzpunkte in 1 bis 3 sowie 15, 16). Die Richtung der Lösung bleibt offen." }
   ],
+  "buendel": {
+    "4501": ["Verkehr verlagern (Schiene, Rad)", "Antriebe und Flotte wechseln", "Nachfrage über Abgaben steuern", "Tempo und Fahrverbote", "Straßenkapazität ausbauen (gegenläufig)", "Flugverkehr stärken", "Klimavorschriften für Häfen abbauen", "CO₂-Bepreisung und Emissionshandel", "Straßenkapazität ausbauen", "Planungsbeschleunigung für Infrastruktur", "Finanzierung der Straßeninfrastruktur", "Nachhaltige Kraftstoffe für Luft- und Schiffsverkehr", "Verbot von Kurzstreckenflügen", "Verbrenner-Neuwagen auslaufen lassen", "Förderung kleiner E-Fahrzeuge", "Ladeinfrastruktur ausbauen"],
+    "4502": ["Gebäudehülle sanieren", "Sanierung verpflichten (Ordnungsrecht)", "Sanierung bezuschussen", "Kappungsgrenzen bei energetischen Sanierungen lockern", "CO2-Zertifikatehandel für Gebäudewärme", "Energetische Sanierung mit Aufstockung verbinden", "Sanierte Gebäude als taxonomiekonform anerkennen", "Anreize für Vermieter zur Nutzung der Sanierungsförderung", "Abriss von Bestandsgebäuden begrenzen", "Sanierungsberatung mit Sanierungsbeauftragten"],
+    "4503": ["Tierbestand verringern", "Tierhaltung emissionsärmer machen", "Düngung begrenzen", "Abgabe auf Tierhaltung oder Dünger", "Produktion ins Ausland verlagern (gegenläufig)", "Weidehaltung fördern", "Wiedervernässung von Mooren erleichtern", "Düngemittelalternativen fördern", "Förderung tierschutzgerechter Stallumbauten", "Moore revitalisieren", "Klimaschutz-Förderung in der Landwirtschaft", "Moorschutz und Wiedervernässung"],
+    "4504": ["Sektorziele verbindlich machen", "Gesamtbudget flexibel steuern (gegenläufig)", "früher nachsteuern", "Aussteigen aus dem Pariser Klimaabkommen", "Emissionshandel als Leitinstrument mit Obergrenze", "Negativemissionsziel im EU-Klimaziel", "Gesamtbudget flexibel steuern", "Klimaschutz als Gemeinschaftsaufgabe"]
+  },
   "suchbegriffe": {
     "4501": {
-      "Verkehr verlagern (Schiene, Rad)": ["schienengueter", "radwegausbau"],
-      "Antriebe und Flotte wechseln": ["flottengrenzwert", "e-fuel"],
-      "Nachfrage über Abgaben steuern": ["lkw-maut", "verkehrsabgabe"],
+      "Verkehr verlagern (Schiene, Rad)": ["schienengueter", "radwegausbau", "radweg"],
+      "Antriebe und Flotte wechseln": ["flottengrenzwert", "e-fuel", "synthetische kraftstoffe", "verbrennerverbot", "verbrenner"],
+      "Nachfrage über Abgaben steuern": ["lkw-maut", "verkehrsabgabe", "co2-preis"],
       "Tempo und Fahrverbote": ["tempolimit", "fahrverbot"],
       "Straßenkapazität ausbauen (gegenläufig)": ["autobahnausbau", "strassenneubau"]
     },
@@ -24,7 +30,7 @@
     "4503": {
       "Tierbestand verringern": ["tierbestand", "viehbestand"],
       "Tierhaltung emissionsärmer machen": ["futterzusatz", "methanhemm"],
-      "Düngung begrenzen": ["stickstoffueberschuss", "duengeverordnung"],
+      "Düngung begrenzen": ["stickstoffueberschuss", "duengeverordnung", "stoffstrombilanz"],
       "Abgabe auf Tierhaltung oder Dünger": ["tierhaltungsabgabe", "stickstoffabgabe"],
       "Produktion ins Ausland verlagern (gegenläufig)": ["fleischimport", "agrarimport"]
     },
