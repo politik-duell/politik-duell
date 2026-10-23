@@ -1,0 +1,132 @@
+{
+  "pruefsumme": "c0735d19a3fc64d2",
+  "thema_id": 11,
+  "thema": "Preise und Löhne",
+  "ziel": "Menschen können sich mit ihrem Einkommen Lebensmittel und den täglichen Bedarf dauerhaft leisten.",
+  "ursachen": [
+    "Lebensmittelpreise hängen stark an den Energiekosten in Landwirtschaft, Transport, Lagerung und Dünger; nach dem Preisschub ab 2021 steigen sie mit dem Energiepreisschock 2026 voraussichtlich erneut",
+    "Der Lebensmittelhandel ist stark konzentriert: Vier Handelsgruppen haben rund 87 % des Umsatzes, und die Preisaufschläge in der Lieferkette sind zeitgleich mit der Konzentration gestiegen",
+    "Die Löhne hielten mit den Preisen lange nicht mit: Die Reallöhne sanken von 2020 bis 2023 und erreichten 2025 erst wieder fast das Niveau von 2019",
+    "Hohe Steuern und Sozialabgaben auf Arbeit: Bei einem alleinstehenden Durchschnittsverdiener gehen 49,3 % der Arbeitskosten an Staat und Sozialversicherung, der zweithöchste Wert in der OECD (2025)",
+    "Rund 6,3 Millionen Jobs (16 %) liegen im Niedriglohnbereich, vor allem in Gastgewerbe, Landwirtschaft und Kultur (April 2025)"
+  ],
+  "teil": 2,
+  "teile": 3,
+  "einheiten": [
+    {
+      "id": 6885,
+      "name": "Einkommensteuertarif abflachen und Grundfreibetrag erhöhen",
+      "ebene": "bund",
+      "begruendung": "Erhöht das Nettoeinkommen fast aller Steuerzahlenden, am stärksten in absoluten Beträgen bei höheren Einkommen; die Kosten sind hoch und die Finanzierung ist nicht geklärt."
+    },
+    {
+      "id": 6886,
+      "name": "Grundfreibetrag stark anheben (auf rund 15.000 Euro bzw. die Armutsgefährdungsschwelle)",
+      "ebene": "bund",
+      "begruendung": "Entlastet besonders kleine Einkommen spürbar; die Steuerausfälle lägen im hohen zweistelligen Milliardenbereich, eine Finanzierung ist nicht geklärt."
+    },
+    {
+      "id": 6887,
+      "name": "Sozialabgaben bei 40 % begrenzen",
+      "ebene": "bund",
+      "begruendung": "Verhindert weitere Beitragssteigerungen, senkt die Abgaben aber nicht; dafür wären Reformen in Rente, Gesundheit und Pflege nötig, die noch offen sind."
+    },
+    {
+      "id": 6888,
+      "name": "Beiträge für Bürgergeldbeziehende aus Steuern statt aus Beiträgen finanzieren",
+      "ebene": "bund",
+      "begruendung": "Senkt die Kranken- und Pflegebeiträge etwas, weil der Bund die Kosten trägt; die Entlastung der Beschäftigten ist gering und belastet den Bundeshaushalt mit rund zehn Milliarden Euro im Jahr."
+    },
+    {
+      "id": 6889,
+      "name": "Mindestlohn auf 15 Euro oder 60 % des Medianlohns anheben",
+      "ebene": "bund",
+      "begruendung": "Erhöht die Löhne im Niedriglohnbereich direkt; Studien zur Einführung 2015 und zur Erhöhung 2022 fanden kaum Jobverluste. Der Bundestag kann die Höhe per Gesetz festlegen, wie 2022 geschehen."
+    },
+    {
+      "id": 6890,
+      "name": "Tarifbindung stärken (Tariftreuegesetz, Allgemeinverbindlichkeit erleichtern)",
+      "ebene": "bund",
+      "begruendung": "Wer nach Tarif arbeitet, verdient im Schnitt mehr; Tariftreue greift aber nur bei öffentlichen Aufträgen, und wie stark die Tarifbindung dadurch steigt, ist offen."
+    }
+  ],
+  "suchhilfe": {
+    "haushalt": {
+      "frage": "Was kostet der Weg Bund, Ländern, Kommunen oder Sozialkassen – oder was bringt er ein?",
+      "vorteil": [
+        "Mehreinnahmen",
+        "Einsparung öffentlicher Haushalt",
+        "Entlastung Sozialversicherung"
+      ],
+      "nachteil": [
+        "Mindereinnahmen",
+        "Kosten Bundeshaushalt",
+        "Haushaltsausgaben Gesetzentwurf"
+      ]
+    },
+    "wirtschaft": {
+      "frage": "Welche Kosten oder Entlastungen entstehen für Unternehmen (besonders kleine und mittlere), wie wirkt er auf Preise und Verbraucher?",
+      "vorteil": [
+        "Entlastung Unternehmen",
+        "sinkende Preise",
+        "Investitionen"
+      ],
+      "nachteil": [
+        "Kosten für Unternehmen",
+        "Preisanstieg",
+        "Wettbewerbsfähigkeit"
+      ]
+    },
+    "aufwand": {
+      "frage": "Welcher Aufwand für Anträge, Nachweise und Kontrollen entsteht oder entfällt – für Bürger, Wirtschaft, Verwaltung?",
+      "vorteil": [
+        "Bürokratieabbau",
+        "Erfüllungsaufwand sinkt"
+      ],
+      "nachteil": [
+        "Erfüllungsaufwand",
+        "Nachweispflichten",
+        "Normenkontrollrat Stellungnahme"
+      ]
+    },
+    "umwelt": {
+      "frage": "Wie wirkt er auf Emissionen, Natur und Ressourcen, und welche Lasten oder Vorteile hat er für spätere Jahre?",
+      "vorteil": [
+        "Emissionsminderung",
+        "Umweltentlastung"
+      ],
+      "nachteil": [
+        "Mehremissionen",
+        "Umweltrisiken",
+        "Flächenverbrauch"
+      ]
+    },
+    "verteilung": {
+      "frage": "Wer gewinnt, wer trägt die Last – nach Einkommen, Alter, Familienform, Stadt und Land?",
+      "vorteil": [
+        "Entlastung geringe Einkommen",
+        "Verteilungswirkung progressiv"
+      ],
+      "nachteil": [
+        "regressiv",
+        "Mitnahmeeffekte",
+        "profitieren höhere Einkommen"
+      ]
+    },
+    "grundrechte": {
+      "frage": "Schränkt er Freiheiten ein oder stärkt er sie, behandelt er Gruppen ungleich, wie wirkt er auf Gesundheit und Sicherheit?",
+      "vorteil": [
+        "Gesundheit verbessert",
+        "Schutz",
+        "Gleichstellung"
+      ],
+      "nachteil": [
+        "Datenschutz",
+        "Grundrechtseingriff",
+        "Benachteiligung",
+        "Gesundheitsrisiko"
+      ]
+    }
+  },
+  "quellen": []
+}

@@ -1,0 +1,96 @@
+{
+  "thema": 11,
+  "teile": 3,
+  "loesungswege": 17,
+  "rueckfragen": 3,
+  "fortsetzungen": 0,
+  "websuchen": 23,
+  "abrufe": 7,
+  "limitabbrueche": 0,
+  "tokens": {
+    "eingabe": 142,
+    "cache_schreiben": 194399,
+    "cache_lesen": 2585971,
+    "ausgabe": 60488
+  },
+  "nacharbeit": {
+    "eingabe": 28,
+    "cache_schreiben": 26335,
+    "cache_lesen": 709866,
+    "ausgabe": 21615
+  },
+  "teile_einzeln": [
+    {
+      "teil": 1,
+      "runden": 3,
+      "anfragen": 2,
+      "fortsetzungen": 0,
+      "websuchen": 8,
+      "abrufe": 3,
+      "werkzeuge": 35,
+      "limitabbrueche": 0,
+      "tokens": {
+        "eingabe": 52,
+        "cache_schreiben": 70656,
+        "cache_lesen": 844833,
+        "ausgabe": 24428
+      },
+      "nacharbeit": {
+        "eingabe": 14,
+        "cache_schreiben": 14166,
+        "cache_lesen": 303610,
+        "ausgabe": 11415
+      },
+      "start": "2026-10-23T01:26:02.263Z",
+      "ende": "2026-10-23T01:31:14.693Z"
+    },
+    {
+      "teil": 2,
+      "runden": 2,
+      "anfragen": 1,
+      "fortsetzungen": 0,
+      "websuchen": 8,
+      "abrufe": 2,
+      "werkzeuge": 35,
+      "limitabbrueche": 0,
+      "tokens": {
+        "eingabe": 62,
+        "cache_schreiben": 74783,
+        "cache_lesen": 1326621,
+        "ausgabe": 27131
+      },
+      "nacharbeit": {
+        "eingabe": 14,
+        "cache_schreiben": 12169,
+        "cache_lesen": 406256,
+        "ausgabe": 10200
+      },
+      "start": "2026-10-23T01:26:02.286Z",
+      "ende": "2026-10-23T01:30:57.438Z"
+    },
+    {
+      "teil": 3,
+      "runden": 1,
+      "anfragen": 0,
+      "fortsetzungen": 0,
+      "websuchen": 7,
+      "abrufe": 2,
+      "werkzeuge": 24,
+      "limitabbrueche": 0,
+      "tokens": {
+        "eingabe": 28,
+        "cache_schreiben": 48960,
+        "cache_lesen": 414517,
+        "ausgabe": 8929
+      },
+      "nacharbeit": {
+        "eingabe": 0,
+        "cache_schreiben": 0,
+        "cache_lesen": 0,
+        "ausgabe": 0
+      },
+      "start": "2026-10-23T01:26:02.303Z",
+      "ende": "2026-10-23T01:28:13.418Z"
+    }
+  ]
+}
