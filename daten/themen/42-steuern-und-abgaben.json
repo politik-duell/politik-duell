@@ -43,7 +43,20 @@
       "begruendung": "Setzt direkt an der kalten Progression an; Schweiz, USA, Kanada, Belgien u. a. indexieren automatisch, Simulationen zeigen weitgehenden Ausgleich. Dagegen: Einnahmeausfall gegenüber Status quo und weniger Budgetspielraum; einfaches Bundesgesetz mit Bundesratszustimmung.",
       "evidenz": "belegt",
       "beleg_studie_url": "https://www.wirtschaftsdienst.eu/inhalt/jahr/2016/heft/10/beitrag/moeglichkeiten-zur-kompensation-der-kalten-progression-wirkung-in-oesterreich.html",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Ein Inflationsausgleich im Tarif lässt Mehreinnahmen entfallen: Die 2025 neu entstehende kalte Progression betrug rund 7,9 Mrd. Euro, davon rund 3,3 Mrd. Euro bei den Ländern.",
+            "quelle_url": "https://dserver.bundestag.de/btd/20/135/2013560.pdf",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 10760,
@@ -52,7 +65,20 @@
       "umsetzbarkeit": 1,
       "begruendung": "Entlastet alle Steuerpflichtigen spürbar und gleicht aufgelaufene kalte Progression mehr als aus. Dagegen: einmaliger Schritt ohne dauerhafte Anpassung und Ausfälle in zweistelliger Milliardenhöhe ohne geklärte Gegenfinanzierung.",
       "evidenz": "belegt",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Zum Vergleich: Eine Anhebung des Grundfreibetrags um 216 Euro mindert die Steuereinnahmen laut Gesetzentwurf um rund 1,9 Mrd. Euro im Jahr; das sind nicht die Kosten dieses Wegs.",
+            "quelle_url": "https://dserver.bundestag.de/brd/2026/0507-26.pdf",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 10761,
@@ -61,7 +87,20 @@
       "umsetzbarkeit": 1,
       "begruendung": "Mildert den steilen Progressionsverlauf bei mittleren Einkommen, an dem die kalte Progression besonders wirkt. Dagegen: einmalige Änderung ohne Indexierung, Entlastung absolut v. a. bei höheren Einkommen, hohe Ausfälle ohne Finanzierung.",
       "evidenz": "gemischt",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Zum Vergleich: Das gesamte Einkommensteuerreformgesetz 2027 mindert die Steuereinnahmen um rund 5,6 Mrd. Euro im Jahr 2028; das sind nicht die Kosten dieses Wegs.",
+            "quelle_url": "https://dserver.bundestag.de/brd/2026/0507-26.pdf",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 10762,
@@ -70,7 +109,20 @@
       "umsetzbarkeit": 2,
       "begruendung": "Senkt die Belastung der Mehrheit der Beschäftigten und ist teilweise gegenfinanziert. Dagegen: keine dauerhafte Inflationsanpassung, Ausweichreaktionen hoher Einkommen mindern die Gegenfinanzierung.",
       "evidenz": "gemischt",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Zum Vergleich: Das gesamte Einkommensteuerreformgesetz 2027, mit höherem Reichensteuersatz gegenfinanziert, mindert die Einnahmen um rund 5,6 Mrd. Euro im Jahr 2028; nicht die Kosten dieses Wegs.",
+            "quelle_url": "https://dserver.bundestag.de/brd/2026/0507-26.pdf",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 10763,
@@ -80,7 +132,20 @@
       "begruendung": "Fiskalregeln gehen laut IWF mit niedrigeren Defiziten einher, besonders bei verbindlicher Ausgestaltung. Dagegen: kausaler Effekt umstritten, Regeln drücken oft Investitionen; geltendes Recht, daher leicht umsetzbar.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.imf.org/-/media/files/publications/sdn/2018/sdn1804-on-second-generation-fiscal-rules.pdf.md",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "vorteil",
+            "text": "Zum Vergleich: Im Finanzplan sinkt die Kreditaufnahme innerhalb der Schuldenregel von 40,4 Mrd. Euro 2026 auf 15,6 Mrd. Euro 2030; das sind nicht die Einsparungen dieses Wegs.",
+            "quelle_url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1205072",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 10764,
@@ -90,7 +155,27 @@
       "begruendung": "Kann Investitionsstau abbauen und Wachstum stützen; IWF verweist auf Investitionsverdrängung durch starre Regeln. Dagegen: erhöht Defizit und Zinslast unmittelbar; erfordert Grundgesetzänderung mit Zweidrittelmehrheit, EU-Regeln gelten weiter.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.imf.org/-/media/files/publications/sdn/2018/sdn1804-on-second-generation-fiscal-rules.pdf.md",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Zum Vergleich: Der Finanzplan sieht Zinsausgaben des Bundes von rund 41,9 Mrd. Euro 2027 und 80,7 Mrd. Euro 2030 vor; das sind nicht allein die Kosten dieses Wegs.",
+            "quelle_url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1205072",
+            "belegstufe": "A"
+          },
+          {
+            "bereich": "umwelt",
+            "richtung": "vorteil",
+            "text": "Zum Vergleich: Das Sondervermögen mit bis zu 500 Mrd. Euro Kredit führt dem Klima- und Transformationsfonds 100 Mrd. Euro zu; das sind nicht allein die Folgen dieses Wegs.",
+            "quelle_url": "https://dserver.bundestag.de/btd/21/007/2100779.pdf",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 10765,
@@ -99,7 +184,20 @@
       "umsetzbarkeit": 2,
       "begruendung": "Finanzhilfen und Steuervergünstigungen des Bundes umfassen dreistellige Milliardenbeträge, Abbau senkt das Defizit spürbar. Dagegen: Einsparziele bleiben oft unbestimmt, viele Posten sind politisch und rechtlich gebunden.",
       "evidenz": "gemischt",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "umwelt",
+            "richtung": "vorteil",
+            "text": "Zum Vergleich: Die umweltschädlichen Subventionen beliefen sich 2018 auf über 65 Mrd. Euro; das ist nicht der Betrag, den dieser Weg abbaut.",
+            "quelle_url": "https://www.umweltbundesamt.de/daten/umwelt-wirtschaft/umweltschaedliche-subventionen-in-deutschland",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 10766,
@@ -108,7 +206,12 @@
       "umsetzbarkeit": 2,
       "begruendung": "Senkt Personal- und Verwaltungskosten auf längere Sicht. Dagegen: Personalausgaben sind nur ein kleiner Teil des Bundeshaushalts, Digitalisierung kostet zunächst; Einsparungen kaum untersucht.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 10767,
@@ -118,7 +221,20 @@
       "begruendung": "Betriebsprüfer erzielen im Schnitt rund 1 Mio. Euro Mehrergebnis je Jahr, mehr Personal erhöht die Einnahmen. Dagegen: Finanzämter sind Ländersache, Fachkräfte fehlen; der Bund kann nur über Gesetze, Bundesbehörden und Vereinbarungen beitragen.",
       "evidenz": "belegt",
       "beleg_studie_url": "https://www.zdfheute.de/wirtschaft/kampf-gegen-steuerhinterziehung-finanzamt-100.html",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "vorteil",
+            "text": "Zum Vergleich: Betriebsprüfungen der Länder stellten 2023 steuerliche Mehrergebnisse von rund 13,2 Mrd. Euro fest; das sind nicht die Erträge zusätzlicher Prüfer.",
+            "quelle_url": "https://dserver.bundestag.de/btd/20/112/2011267.pdf",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 10768,
@@ -128,7 +244,20 @@
       "begruendung": "Erhöht den Anteil vermögensbezogener Steuern; DIW schätzt je nach Ausgestaltung zweistellige Milliardenbeträge. Dagegen: Ausweichreaktionen, Bewertungsaufwand und Verfassungsvorgaben zur Bewertung; Aufkommen fließt den Ländern zu.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.diw.de/de/diw_01.c.1002952.de/nachrichten/es_gibt_bessere_wege__vermoegen_zu_besteuern.html",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "vorteil",
+            "text": "Das DIW schätzte 2016 für eine wieder erhobene Vermögensteuer auch bei hohen Freibeträgen ein Aufkommen von 10 bis 20 Mrd. Euro im Jahr.",
+            "quelle_url": "https://www.diw.de/de/diw_01.c.525353.de/publikationen/wochenberichte/2016_04/hohes_aufkommenspotential_bei_wiedererhebung_der_vermoegensteuer.html",
+            "belegstufe": "B"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 10769,
@@ -138,7 +267,20 @@
       "begruendung": "Große Betriebsvermögen werden weitgehend steuerfrei übertragen, Schätzungen nennen Ausfälle in Milliardenhöhe; Stundung kann Liquiditätsprobleme mildern. Dagegen: Unternehmensverbände warnen vor Investitionsfolgen, Ausweichgestaltungen möglich.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.wirtschaftsdienst.eu/inhalt/jahr/2016/heft/6/beitrag/die-demontage-der-erbschaftsteuer.html",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "vorteil",
+            "text": "Bei großen Betriebsvermögen wurden 2025 im Rahmen der Verschonungsbedarfsprüfung Steuern von 3,7 Mrd. Euro erlassen; eine Begrenzung der Verschonung betrifft solche Beträge.",
+            "quelle_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/08/PD26_306_736.html",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 10770,
@@ -147,7 +289,20 @@
       "umsetzbarkeit": 3,
       "begruendung": "Setzt an der Erbschaftsteuer an, senkt aber deren Aufkommen und verstärkt damit das Übergewicht von Lohn- und Umsatzsteuer. Für einzelne Erben (Eigenheim) entlastend; rechtlich einfach umsetzbar.",
       "evidenz": "belegt",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Zum Vergleich: Die festgesetzte Erbschaftsteuer lag 2025 bei 13,3 Mrd. Euro; das sind nicht die Mindereinnahmen dieses Wegs, zeigt aber das Aufkommen, an dem er ansetzt.",
+            "quelle_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/08/PD26_306_736.html",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 10771,
@@ -157,7 +312,20 @@
       "begruendung": "Besteuert bisher steuerfreie Kapitaltransaktionen; Frankreich und Italien erheben sie. Dagegen: dortige Einnahmen blieben unter den Prognosen, Handel weicht aus; national einführbar, Bemessungsgrundlage strittig.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://articlegateway.com/index.php/JAF/article/view/6562",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "wirtschaft",
+            "richtung": "gemischt",
+            "text": "Die Wissenschaftlichen Dienste verweisen auf Erfahrungen in Frankreich und Italien: Handelsvolumen kurz- bis mittelfristig 10 bis 30 Prozent niedriger, aber nur begrenzte Effekte auf die Liquidität.",
+            "quelle_url": "https://www.bundestag.de/resource/blob/1100514/WD-4-022-25.pdf",
+            "belegstufe": "B"
+          }
+        ],
+        "ki_entwurf": true
+      }
     }
   ],
   "abdeckung": [
@@ -222,7 +390,12 @@
           "evidenz": "gemischt",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         }
       ]
     },
@@ -304,7 +477,27 @@
           "evidenz": "offen",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Zum Vergleich: Eine Anhebung des Arbeitnehmer-Pauschbetrags auf 1.430 Euro mindert die Steuereinnahmen laut Gesetzentwurf um rund 1,1 Mrd. Euro im Jahr; nicht die Kosten dieses Wegs.",
+                "quelle_url": "https://dserver.bundestag.de/brd/2026/0507-26.pdf",
+                "belegstufe": "A"
+              },
+              {
+                "bereich": "aufwand",
+                "richtung": "vorteil",
+                "text": "Bei einer Anhebung auf 1.430 Euro rechnet die Bundesregierung mit 1,3 Mio. Beschäftigten, die keine Anlage N mehr ausfüllen, und mit rund 108.000 Stunden weniger Aufwand im Jahr.",
+                "quelle_url": "https://dserver.bundestag.de/brd/2026/0507-26.pdf",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10783,
@@ -330,7 +523,12 @@
           "evidenz": "offen",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10785,
@@ -395,7 +593,20 @@
           "evidenz": "belegt",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Zum Vergleich: Eine Anhebung des Grundfreibetrags um 216 Euro mindert die Steuereinnahmen laut Gesetzentwurf um rund 1,9 Mrd. Euro im Jahr; das sind nicht die Kosten dieses Wegs.",
+                "quelle_url": "https://dserver.bundestag.de/brd/2026/0507-26.pdf",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10790,
@@ -454,7 +665,12 @@
           "evidenz": "offen",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10795,
@@ -480,7 +696,12 @@
           "evidenz": "offen",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10797,
@@ -534,7 +755,20 @@
           "evidenz": "offen",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [
+              {
+                "bereich": "wirtschaft",
+                "richtung": "nachteil",
+                "text": "Zum Vergleich: Aus dem EU-Haushalt erhielt Deutschland 2014 bis 2020 Direktzahlungen für die Landwirtschaft von rund 5 Mrd. Euro im Jahr; das sind nicht die Folgen geringerer Beiträge.",
+                "quelle_url": "https://www.bundestag.de/resource/blob/834626/3e7a070d5cce12c139b9686cecb5b658/WD-4-022-21-pdf.pdf",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10801,
@@ -560,7 +794,20 @@
           "evidenz": "belegt",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Die festgesetzte Erbschaftsteuer lag 2025 bei 13,3 Mrd. Euro; dieses Aufkommen entfiele bei einer Abschaffung.",
+                "quelle_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/08/PD26_306_736.html",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         }
       ]
     },
@@ -625,7 +872,27 @@
           "evidenz": "gemischt",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "vorteil",
+                "text": "Zum Vergleich: Das DIW berechnete 2012 für eine Abgabe von 10 Prozent auf private Vermögen über 250.000 Euro rund 230 Mrd. Euro Aufkommen; das ist ein anderes Modell als dieser Weg.",
+                "quelle_url": "https://www.diw.de/de/diw_01.c.405753.de/vermoegensabgaben_-_ein_beitrag_zur_sanierung_der_staatsfinanzen_in_europa.html",
+                "belegstufe": "B"
+              },
+              {
+                "bereich": "wirtschaft",
+                "richtung": "nachteil",
+                "text": "Eine Vermögensabgabe kann Betriebsvermögen erfassen; das DIW empfahl in einem Modell hohe Freibeträge, um Liquidität und Finanzierung kleinerer Unternehmen zu schützen.",
+                "quelle_url": "https://www.diw.de/de/diw_01.c.405753.de/vermoegensabgaben_-_ein_beitrag_zur_sanierung_der_staatsfinanzen_in_europa.html",
+                "belegstufe": "B"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10808,
@@ -640,7 +907,20 @@
           "evidenz": "gemischt",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "vorteil",
+                "text": "Zum Vergleich: Für den EU-Energiekrisenbeitrag (33 Prozent) schätzte die Bundesregierung 2022 und 2023 zusammen ein bis drei Mrd. Euro Mehreinnahmen; das sind nicht die Einnahmen dieses Wegs.",
+                "quelle_url": "https://www.bundesregierung.de/breg-de/aktuelles/eu-energiekrisenbeitrag-2145638",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10809,
@@ -677,7 +957,20 @@
           "evidenz": "offen",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "vorteil",
+                "text": "Vor der Verschärfung 2021 gingen Schätzungen davon aus, dass dem Staat durch Share Deals jährlich etwa 1 Mrd. Euro Grunderwerbsteuer entgeht.",
+                "quelle_url": "https://dserver.bundestag.de/btd/19/285/1928528.pdf",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10812,
@@ -692,7 +985,12 @@
           "evidenz": "offen",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         }
       ]
     },
@@ -713,7 +1011,20 @@
           "evidenz": "gemischt",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Zum Vergleich: Eine Anhebung des Grundfreibetrags um 216 Euro mindert die Steuereinnahmen laut Gesetzentwurf um rund 1,9 Mrd. Euro im Jahr; das sind nicht die Kosten dieses Wegs.",
+                "quelle_url": "https://dserver.bundestag.de/brd/2026/0507-26.pdf",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10814,
@@ -784,7 +1095,20 @@
           "evidenz": "belegt",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Zum Vergleich: Das Aufkommen der Grunderwerbsteuer, die den Ländern zusteht, betrug 2024 rund 12,7 Mrd. Euro; das sind nicht die Kosten dieses Wegs.",
+                "quelle_url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1050734",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10820,
@@ -799,7 +1123,20 @@
           "evidenz": "offen",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Zum Vergleich: Die Gemeinden nahmen 2024 aus der Grundsteuer B 15,6 Mrd. Euro ein; das sind nicht die Mindereinnahmen dieses Wegs.",
+                "quelle_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/08/PD25_309_713.html",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10821,
@@ -825,7 +1162,12 @@
           "evidenz": "offen",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10823,
@@ -841,7 +1183,12 @@
           "evidenz": "offen",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10824,
@@ -857,7 +1204,12 @@
           "evidenz": "gemischt",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         }
       ]
     }

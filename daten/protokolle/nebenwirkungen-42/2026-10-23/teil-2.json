@@ -1,0 +1,130 @@
+{
+  "pruefsumme": "e4feff77c329fec0",
+  "thema_id": 42,
+  "thema": "Steuern und Abgaben",
+  "ziel": "Beschäftigte behalten von ihrem Bruttolohn so viel, dass sie damit auskommen, und können sich auf die Höhe von Abgaben und staatlichen Leistungen verlassen.",
+  "ursachen": [
+    "Die Einkommensteuer steigt real, wenn Löhne und Preise steigen, der Tarif aber nicht im gleichen Maß angepasst wird (kalte Progression). Ab 2027 ist offen, ob der Ausgleich weiterläuft.",
+    "Der Bund gibt mehr aus, als seine laufenden Einnahmen decken: Das Defizit steigt, die Verschuldung wächst und die Zinsausgaben steigen stark.",
+    "Die Steuereinnahmen stammen zum größten Teil aus Lohn- und Umsatzsteuer; Erbschaftsteuer und andere vermögensbezogene Steuern machen nur einen kleinen Anteil aus."
+  ],
+  "teil": 2,
+  "teile": 6,
+  "einheiten": [
+    {
+      "id": 10763,
+      "name": "Schuldenbremse einhalten, keine Lockerung (Bund)",
+      "ebene": "bund",
+      "begruendung": "Fiskalregeln gehen laut IWF mit niedrigeren Defiziten einher, besonders bei verbindlicher Ausgestaltung. Dagegen: kausaler Effekt umstritten, Regeln drücken oft Investitionen; geltendes Recht, daher leicht umsetzbar."
+    },
+    {
+      "id": 10764,
+      "name": "Schuldenbremse lockern oder abschaffen, um Investitionen über Kredite zu finanzieren (Bund)",
+      "ebene": "bund",
+      "begruendung": "Kann Investitionsstau abbauen und Wachstum stützen; IWF verweist auf Investitionsverdrängung durch starre Regeln. Dagegen: erhöht Defizit und Zinslast unmittelbar; erfordert Grundgesetzänderung mit Zweidrittelmehrheit, EU-Regeln gelten weiter."
+    },
+    {
+      "id": 10765,
+      "name": "Subventionen und Ausgaben systematisch überprüfen und abbauen (Bund)",
+      "ebene": "bund",
+      "begruendung": "Finanzhilfen und Steuervergünstigungen des Bundes umfassen dreistellige Milliardenbeträge, Abbau senkt das Defizit spürbar. Dagegen: Einsparziele bleiben oft unbestimmt, viele Posten sind politisch und rechtlich gebunden."
+    },
+    {
+      "id": 10766,
+      "name": "Bundesverwaltung verkleinern (Stellenabbau, Digitalisierung) (Bund)",
+      "ebene": "bund",
+      "begruendung": "Senkt Personal- und Verwaltungskosten auf längere Sicht. Dagegen: Personalausgaben sind nur ein kleiner Teil des Bundeshaushalts, Digitalisierung kostet zunächst; Einsparungen kaum untersucht."
+    },
+    {
+      "id": 10767,
+      "name": "Steuerhinterziehung und Steuerbetrug stärker verfolgen, Steuerverwaltung personell stärken (Bund)",
+      "ebene": "bund",
+      "begruendung": "Betriebsprüfer erzielen im Schnitt rund 1 Mio. Euro Mehrergebnis je Jahr, mehr Personal erhöht die Einnahmen. Dagegen: Finanzämter sind Ländersache, Fachkräfte fehlen; der Bund kann nur über Gesetze, Bundesbehörden und Vereinbarungen beitragen."
+    },
+    {
+      "id": 10776,
+      "name": "Maastricht-Kriterien (Schuldenstand, Defizit) verbindlich halten, Verstöße über automatisiertes Defizitverfahren sanktionieren",
+      "ebene": "bund",
+      "begruendung": "Verbindliche EU-Defizitregeln können Haushaltsdisziplin stärken. Dagegen: Regeln gelten bereits, ein automatisiertes Verfahren erfordert EU-Beschlüsse, die Deutschland nicht allein treffen kann."
+    }
+  ],
+  "suchhilfe": {
+    "haushalt": {
+      "frage": "Was kostet der Weg Bund, Ländern, Kommunen oder Sozialkassen – oder was bringt er ein?",
+      "vorteil": [
+        "Mehreinnahmen",
+        "Einsparung öffentlicher Haushalt",
+        "Entlastung Sozialversicherung"
+      ],
+      "nachteil": [
+        "Mindereinnahmen",
+        "Kosten Bundeshaushalt",
+        "Haushaltsausgaben Gesetzentwurf"
+      ]
+    },
+    "wirtschaft": {
+      "frage": "Welche Kosten oder Entlastungen entstehen für Unternehmen (besonders kleine und mittlere), wie wirkt er auf Preise und Verbraucher?",
+      "vorteil": [
+        "Entlastung Unternehmen",
+        "sinkende Preise",
+        "Investitionen"
+      ],
+      "nachteil": [
+        "Kosten für Unternehmen",
+        "Preisanstieg",
+        "Wettbewerbsfähigkeit"
+      ]
+    },
+    "aufwand": {
+      "frage": "Welcher Aufwand für Anträge, Nachweise und Kontrollen entsteht oder entfällt – für Bürger, Wirtschaft, Verwaltung?",
+      "vorteil": [
+        "Bürokratieabbau",
+        "Erfüllungsaufwand sinkt"
+      ],
+      "nachteil": [
+        "Erfüllungsaufwand",
+        "Nachweispflichten",
+        "Normenkontrollrat Stellungnahme"
+      ]
+    },
+    "umwelt": {
+      "frage": "Wie wirkt er auf Emissionen, Natur und Ressourcen, und welche Lasten oder Vorteile hat er für spätere Jahre?",
+      "vorteil": [
+        "Emissionsminderung",
+        "Umweltentlastung"
+      ],
+      "nachteil": [
+        "Mehremissionen",
+        "Umweltrisiken",
+        "Flächenverbrauch"
+      ]
+    },
+    "verteilung": {
+      "frage": "Wer gewinnt, wer trägt die Last – nach Einkommen, Alter, Familienform, Stadt und Land?",
+      "vorteil": [
+        "Entlastung geringe Einkommen",
+        "Verteilungswirkung progressiv"
+      ],
+      "nachteil": [
+        "regressiv",
+        "Mitnahmeeffekte",
+        "profitieren höhere Einkommen"
+      ]
+    },
+    "grundrechte": {
+      "frage": "Schränkt er Freiheiten ein oder stärkt er sie, behandelt er Gruppen ungleich, wie wirkt er auf Gesundheit und Sicherheit?",
+      "vorteil": [
+        "Gesundheit verbessert",
+        "Schutz",
+        "Gleichstellung"
+      ],
+      "nachteil": [
+        "Datenschutz",
+        "Grundrechtseingriff",
+        "Benachteiligung",
+        "Gesundheitsrisiko"
+      ]
+    }
+  },
+  "quellen": []
+}

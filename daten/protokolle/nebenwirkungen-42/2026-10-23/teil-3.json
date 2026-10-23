@@ -1,0 +1,130 @@
+{
+  "pruefsumme": "6a93a1629a1a223f",
+  "thema_id": 42,
+  "thema": "Steuern und Abgaben",
+  "ziel": "Beschäftigte behalten von ihrem Bruttolohn so viel, dass sie damit auskommen, und können sich auf die Höhe von Abgaben und staatlichen Leistungen verlassen.",
+  "ursachen": [
+    "Die Einkommensteuer steigt real, wenn Löhne und Preise steigen, der Tarif aber nicht im gleichen Maß angepasst wird (kalte Progression). Ab 2027 ist offen, ob der Ausgleich weiterläuft.",
+    "Der Bund gibt mehr aus, als seine laufenden Einnahmen decken: Das Defizit steigt, die Verschuldung wächst und die Zinsausgaben steigen stark.",
+    "Die Steuereinnahmen stammen zum größten Teil aus Lohn- und Umsatzsteuer; Erbschaftsteuer und andere vermögensbezogene Steuern machen nur einen kleinen Anteil aus."
+  ],
+  "teil": 3,
+  "teile": 6,
+  "einheiten": [
+    {
+      "id": 10784,
+      "name": "Steuerschlupflöcher schließen, um den Haushalt zu entlasten.",
+      "ebene": "bund",
+      "begruendung": "Schließen von Steuerschlupflöchern kann Mehreinnahmen bringen. Dagegen: ohne Benennung konkreter Regelungen bleiben Umfang und Wirkung unbestimmt."
+    },
+    {
+      "id": 10794,
+      "name": "Bundesausgaben stärker auf die originären Aufgaben des Bundes beschränken",
+      "ebene": "bund",
+      "begruendung": "Begrenzung auf Kernaufgaben kann Ausgaben senken. Dagegen: unbestimmt, welche Ausgaben entfallen; viele Bundesausgaben sind gesetzlich gebunden."
+    },
+    {
+      "id": 10796,
+      "name": "Staatsbeteiligungen veräußern",
+      "ebene": "bund",
+      "begruendung": "Bringt einmalige Erlöse, die Schulden tilgen können. Dagegen: kein Beitrag zum strukturellen Defizit, entgangene Dividenden, Erlöse hängen vom Marktumfeld ab."
+    },
+    {
+      "id": 10800,
+      "name": "Beitragszahlungen an die EU drastisch senken",
+      "ebene": "bund",
+      "begruendung": "Geringere EU-Beiträge würden den Bundeshaushalt entlasten. Dagegen: Finanzrahmen und Eigenmittel erfordern einstimmige EU-Beschlüsse, Rückflüsse aus EU-Programmen fielen ebenfalls weg."
+    },
+    {
+      "id": 10807,
+      "name": "Einmalige Vermögensabgabe für die Reichsten zur Finanzierung der Krisen- und Transformationskosten",
+      "ebene": "bund",
+      "begruendung": "Einmalige Vermögensabgabe kann hohe Einnahmen bringen und Kreditbedarf senken. Dagegen: Grundgesetz erlaubt sie nur bei außerordentlichem Finanzbedarf, Bewertung und Ausweichen schwierig, Aufkommen unsicher."
+    },
+    {
+      "id": 10808,
+      "name": "Übergewinnsteuer von 90 Prozent auf Krisenprofite einführen",
+      "ebene": "bund",
+      "begruendung": "Kann in Krisen zusätzliche Einnahmen bringen. Dagegen: Abgrenzung von Krisengewinnen schwierig, 90 Prozent verfassungsrechtlich heikel, EU-Solidaritätsbeitrag 2022 brachte weniger als erwartet."
+    }
+  ],
+  "suchhilfe": {
+    "haushalt": {
+      "frage": "Was kostet der Weg Bund, Ländern, Kommunen oder Sozialkassen – oder was bringt er ein?",
+      "vorteil": [
+        "Mehreinnahmen",
+        "Einsparung öffentlicher Haushalt",
+        "Entlastung Sozialversicherung"
+      ],
+      "nachteil": [
+        "Mindereinnahmen",
+        "Kosten Bundeshaushalt",
+        "Haushaltsausgaben Gesetzentwurf"
+      ]
+    },
+    "wirtschaft": {
+      "frage": "Welche Kosten oder Entlastungen entstehen für Unternehmen (besonders kleine und mittlere), wie wirkt er auf Preise und Verbraucher?",
+      "vorteil": [
+        "Entlastung Unternehmen",
+        "sinkende Preise",
+        "Investitionen"
+      ],
+      "nachteil": [
+        "Kosten für Unternehmen",
+        "Preisanstieg",
+        "Wettbewerbsfähigkeit"
+      ]
+    },
+    "aufwand": {
+      "frage": "Welcher Aufwand für Anträge, Nachweise und Kontrollen entsteht oder entfällt – für Bürger, Wirtschaft, Verwaltung?",
+      "vorteil": [
+        "Bürokratieabbau",
+        "Erfüllungsaufwand sinkt"
+      ],
+      "nachteil": [
+        "Erfüllungsaufwand",
+        "Nachweispflichten",
+        "Normenkontrollrat Stellungnahme"
+      ]
+    },
+    "umwelt": {
+      "frage": "Wie wirkt er auf Emissionen, Natur und Ressourcen, und welche Lasten oder Vorteile hat er für spätere Jahre?",
+      "vorteil": [
+        "Emissionsminderung",
+        "Umweltentlastung"
+      ],
+      "nachteil": [
+        "Mehremissionen",
+        "Umweltrisiken",
+        "Flächenverbrauch"
+      ]
+    },
+    "verteilung": {
+      "frage": "Wer gewinnt, wer trägt die Last – nach Einkommen, Alter, Familienform, Stadt und Land?",
+      "vorteil": [
+        "Entlastung geringe Einkommen",
+        "Verteilungswirkung progressiv"
+      ],
+      "nachteil": [
+        "regressiv",
+        "Mitnahmeeffekte",
+        "profitieren höhere Einkommen"
+      ]
+    },
+    "grundrechte": {
+      "frage": "Schränkt er Freiheiten ein oder stärkt er sie, behandelt er Gruppen ungleich, wie wirkt er auf Gesundheit und Sicherheit?",
+      "vorteil": [
+        "Gesundheit verbessert",
+        "Schutz",
+        "Gleichstellung"
+      ],
+      "nachteil": [
+        "Datenschutz",
+        "Grundrechtseingriff",
+        "Benachteiligung",
+        "Gesundheitsrisiko"
+      ]
+    }
+  },
+  "quellen": []
+}
