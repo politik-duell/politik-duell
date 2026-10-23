@@ -1,6 +1,6 @@
 import { readFileSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
-import { alltagsFaelle, beurteile, bilanz, type Fall, pruefeFaelle } from './ki-testset/auswertung.ts'
+import { alltagsFaelle, beurteile, bilanz, type Fall, pruefeFaelle, type Variante } from './ki-testset/auswertung.ts'
 import { pruefeDatenordner } from './katalog-laden.ts'
 
 const antwort = (typ: Fall['typ'], thema_id: number | null, ursachen_ids: number[], nachfrage: string | null = null) => ({
@@ -57,5 +57,15 @@ describe('KI-Testset', () => {
     expect(pruefeFaelle(faelle, katalog.themen, katalog.ursachen)).toEqual([])
     expect(faelle.find((f) => f.id === 'alltag-1104')).toMatchObject({ thema: 11, ursachen: [1104], auch: [1103] })
     expect(faelle.find((f) => f.id === 'symptom-11-2')).toMatchObject({ thema: 11, ursachen: [1103, 1104] })
+    const mitVariante = alltagsFaelle(katalog.themen, katalog.ursachen, [{ id: 'var-1104-1', ursache: 1104, text: 'Vom Gehalt bleibt kaum was.' }])
+    expect(mitVariante.find((f) => f.id === 'var-1104-1')).toMatchObject({ thema: 11, ursachen: [1104], auch: [1103], rueckfrage: true })
+  })
+
+  it('die Fassungen in eigenen Worten gehören zu bestehenden Ursachen', () => {
+    const { katalog } = pruefeDatenordner()
+    const { varianten } = JSON.parse(readFileSync(new URL('ki-testset/varianten.json', import.meta.url), 'utf8')) as { varianten: Variante[] }
+    const faelle = alltagsFaelle(katalog.themen, katalog.ursachen, varianten)
+    expect(pruefeFaelle(faelle, katalog.themen, katalog.ursachen)).toEqual([])
+    expect(faelle.filter((f) => f.id.startsWith('var-'))).toHaveLength(varianten.length)
   })
 })

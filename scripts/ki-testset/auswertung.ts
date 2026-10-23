@@ -72,19 +72,35 @@ export function pruefeFaelle(faelle: Fall[], themen: Pick<Thema, 'id'>[], ursach
  * Fälle aus dem Katalog selbst: je Ursache ihr Alltagssatz, je Symptomgruppe deren Satz. Jeder muss im eigenen
  * Thema landen – sonst beschreibt ein anderes Thema dieselbe Lage (wie „Vom Bruttolohn bleibt zu wenig netto“
  * in Steuern und Abgaben, obwohl die Ursache dazu in Preise und Löhne steht). Die übrigen Ursachen einer
- * Symptomgruppe sind erlaubt, weil die Gruppe als Ganzes vorausgewählt wird.
+ * Symptomgruppe sind erlaubt, weil die Gruppe als Ganzes vorausgewählt wird. Dazu je Ursache die Eingaben in
+ * eigenen Worten aus `varianten.json` (npm run ki:varianten).
  */
-export function alltagsFaelle(themen: Pick<Thema, 'id' | 'symptome'>[], ursachen: Pick<Ursache, 'id' | 'thema_id' | 'alltag'>[]): Fall[] {
+export function alltagsFaelle(
+  themen: Pick<Thema, 'id' | 'symptome'>[],
+  ursachen: Pick<Ursache, 'id' | 'thema_id' | 'alltag'>[],
+  varianten: Variante[] = [],
+): Fall[] {
   const faelle: Fall[] = []
   for (const t of themen) {
     const gruppen = t.symptome ?? []
-    for (const u of ursachen.filter((x) => x.thema_id === t.id && x.alltag)) {
+    for (const u of ursachen.filter((x) => x.thema_id === t.id)) {
       const auch = [...new Set(gruppen.filter((g) => g.ursachen_ids.includes(u.id)).flatMap((g) => g.ursachen_ids))].filter((id) => id !== u.id)
-      faelle.push({ id: `alltag-${u.id}`, text: u.alltag!, typ: 'problem', thema: t.id, ursachen: [u.id], ...(auch.length ? { auch } : {}) })
+      const dazu = auch.length ? { auch } : {}
+      if (u.alltag) faelle.push({ id: `alltag-${u.id}`, text: u.alltag, typ: 'problem', thema: t.id, ursachen: [u.id], ...dazu })
+      // Eigene Worte sind oft vager als der Alltagssatz: Eine Nachfrage ist dann richtig, das Thema muss stimmen.
+      for (const v of varianten.filter((x) => x.ursache === u.id))
+        faelle.push({ id: v.id, text: v.text, typ: 'problem', thema: t.id, ursachen: [u.id], ...dazu, rueckfrage: true })
     }
     for (const g of gruppen) faelle.push({ id: `symptom-${t.id}-${g.nr}`, text: g.alltag, typ: 'problem', thema: t.id, ursachen: g.ursachen_ids })
   }
   return faelle
+}
+
+/** Eingabe in eigenen Worten zu einer Ursache (scripts/ki-testset/varianten.json). */
+export interface Variante {
+  id: string
+  ursache: number
+  text: string
 }
 
 export interface Bilanz {
