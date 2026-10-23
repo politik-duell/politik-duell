@@ -1,0 +1,96 @@
+{
+  "thema": 15,
+  "teile": 3,
+  "loesungswege": 13,
+  "rueckfragen": 3,
+  "fortsetzungen": 2,
+  "websuchen": 183,
+  "abrufe": 52,
+  "limitabbrueche": 2,
+  "tokens": {
+    "eingabe": 160,
+    "cache_schreiben": 918898,
+    "cache_lesen": 8012716,
+    "ausgabe": 125508
+  },
+  "nacharbeit": {
+    "eingabe": 26,
+    "cache_schreiben": 41314,
+    "cache_lesen": 1634720,
+    "ausgabe": 24941
+  },
+  "teile_einzeln": [
+    {
+      "teil": 1,
+      "runden": 3,
+      "anfragen": 1,
+      "fortsetzungen": 1,
+      "websuchen": 86,
+      "abrufe": 32,
+      "werkzeuge": 131,
+      "limitabbrueche": 1,
+      "tokens": {
+        "eingabe": 76,
+        "cache_schreiben": 446275,
+        "cache_lesen": 4914252,
+        "ausgabe": 64993
+      },
+      "nacharbeit": {
+        "eingabe": 10,
+        "cache_schreiben": 21771,
+        "cache_lesen": 959368,
+        "ausgabe": 12918
+      },
+      "start": "2026-10-22T17:57:17.968Z",
+      "ende": "2026-10-23T01:02:10.143Z"
+    },
+    {
+      "teil": 2,
+      "runden": 3,
+      "anfragen": 1,
+      "fortsetzungen": 1,
+      "websuchen": 76,
+      "abrufe": 13,
+      "werkzeuge": 98,
+      "limitabbrueche": 1,
+      "tokens": {
+        "eingabe": 48,
+        "cache_schreiben": 410027,
+        "cache_lesen": 2478275,
+        "ausgabe": 49033
+      },
+      "nacharbeit": {
+        "eingabe": 6,
+        "cache_schreiben": 11400,
+        "cache_lesen": 417159,
+        "ausgabe": 9215
+      },
+      "start": "2026-10-22T17:57:29.206Z",
+      "ende": "2026-10-23T00:59:17.935Z"
+    },
+    {
+      "teil": 3,
+      "runden": 2,
+      "anfragen": 1,
+      "fortsetzungen": 0,
+      "websuchen": 21,
+      "abrufe": 7,
+      "werkzeuge": 36,
+      "limitabbrueche": 0,
+      "tokens": {
+        "eingabe": 36,
+        "cache_schreiben": 62596,
+        "cache_lesen": 620189,
+        "ausgabe": 11482
+      },
+      "nacharbeit": {
+        "eingabe": 10,
+        "cache_schreiben": 8143,
+        "cache_lesen": 258193,
+        "ausgabe": 2808
+      },
+      "start": "2026-10-22T17:58:04.916Z",
+      "ende": "2026-10-22T18:01:50.252Z"
+    }
+  ]
+}

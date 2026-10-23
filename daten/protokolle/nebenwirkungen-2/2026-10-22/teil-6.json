@@ -1,0 +1,132 @@
+{
+  "pruefsumme": "39b59a226c53fbed",
+  "thema_id": 2,
+  "thema": "Miete",
+  "ziel": "Mieterinnen und Mieter finden eine passende Wohnung und können sich die Miete dauerhaft leisten.",
+  "ursachen": [
+    "Es werden weniger Wohnungen gebaut als gebraucht (Bedarf laut Prognose rund 320.000 pro Jahr)",
+    "Mieten bei Neuvermietung liegen rund 43 % über Bestandsmieten, in großen Städten besonders hoch",
+    "Stark gestiegene Baukosten: Wohngebäude wurden 2010 bis 2025 um 89 % teurer, mehr als doppelt so stark wie die Inflation",
+    "Mieten in laufenden Verträgen steigen weiter (Nettokaltmieten 2025 im Schnitt +2,1 %)",
+    "Die Nachfrage wächst vor allem in wirtschaftlich starken Großstädten: mehr Haushalte durch Zuwanderung und Zuzug aus dem Inland, dazu höhere Einkommen",
+    "Jedes Jahr fallen mehr Sozialwohnungen aus der Bindung, als neue gefördert werden (2025: rund 27.000 neu gefördert, rund 55.000 fallen jährlich heraus)"
+  ],
+  "teil": 6,
+  "teile": 7,
+  "einheiten": [
+    {
+      "id": 6647,
+      "name": "Sozialbindung geförderter Wohnungen unbefristet",
+      "ebene": "land",
+      "begruendung": "Verhindert, dass künftig geförderte Wohnungen nach einigen Jahren aus der Bindung fallen; das Land kann das im eigenen Förderrecht regeln. Private Bauherren nehmen eine Förderung mit Dauerbindung womöglich seltener an."
+    },
+    {
+      "id": 6648,
+      "name": "Höhere Quote für Sozialwohnungen bei Neubauten (kooperative Baulandentwicklung)",
+      "ebene": "land",
+      "begruendung": "Sichert in neuen Quartieren mehr Sozialwohnungen ohne volle Landesförderung; eine sehr hohe Quote kann private Bauvorhaben unwirtschaftlich machen und den Neubau bremsen."
+    },
+    {
+      "id": 6649,
+      "name": "Fehlbelegungsabgabe für Mieter in Sozialwohnungen mit gestiegenem Einkommen",
+      "ebene": "land",
+      "begruendung": "Lenkt Sozialwohnungen stärker zu Bedürftigen und bringt Geld für neue Förderung; schafft selbst kaum neue Wohnungen, der Verwaltungsaufwand ist hoch, und Besserverdienende ziehen aus, was die Durchmischung verringern kann."
+    },
+    {
+      "id": 6650,
+      "name": "Große Vermieter per Landesgesetz verpflichten, einen Teil der Wohnungen an WBS-Haushalte zu vermieten",
+      "ebene": "land",
+      "begruendung": "Würde den Bestand an Wohnungen für Haushalte mit geringem Einkommen schnell erweitern; ob ein Land das regeln darf, ist fraglich, denn das Mietrecht ist Bundessache (Bundesverfassungsgericht 2021 zum Berliner Mietendeckel)."
+    },
+    {
+      "id": 6656,
+      "name": "Landeswohnungsbaugesellschaft gründen, deren Wohnungen nicht aus der Sozialbindung fallen",
+      "ebene": "land",
+      "begruendung": "Eine eigene Gesellschaft kann dauerhaft gebundene Wohnungen bauen, wo andere nicht investieren; Aufbau und Eigenkapital kosten Zeit und Geld, und in vielen Regionen Sachsen-Anhalts fehlt eher Nachfrage als Angebot."
+    },
+    {
+      "id": 6658,
+      "name": "Eigenes Landesprogramm zur Förderung des Mietwohnungsbaus, vor allem für kommunale und genossenschaftliche Wohnungsunternehmen",
+      "ebene": "land",
+      "begruendung": "Mehr geförderte Mietwohnungen kommunaler und genossenschaftlicher Unternehmen können günstige Wohnungen sichern; das Programm nennt aber weder Miet- noch Belegungsbindungen noch einen Umfang."
+    }
+  ],
+  "suchhilfe": {
+    "haushalt": {
+      "frage": "Was kostet der Weg Bund, Ländern, Kommunen oder Sozialkassen – oder was bringt er ein?",
+      "vorteil": [
+        "Mehreinnahmen",
+        "Einsparung öffentlicher Haushalt",
+        "Entlastung Sozialversicherung"
+      ],
+      "nachteil": [
+        "Mindereinnahmen",
+        "Kosten Bundeshaushalt",
+        "Haushaltsausgaben Gesetzentwurf"
+      ]
+    },
+    "wirtschaft": {
+      "frage": "Welche Kosten oder Entlastungen entstehen für Unternehmen (besonders kleine und mittlere), wie wirkt er auf Preise und Verbraucher?",
+      "vorteil": [
+        "Entlastung Unternehmen",
+        "sinkende Preise",
+        "Investitionen"
+      ],
+      "nachteil": [
+        "Kosten für Unternehmen",
+        "Preisanstieg",
+        "Wettbewerbsfähigkeit"
+      ]
+    },
+    "aufwand": {
+      "frage": "Welcher Aufwand für Anträge, Nachweise und Kontrollen entsteht oder entfällt – für Bürger, Wirtschaft, Verwaltung?",
+      "vorteil": [
+        "Bürokratieabbau",
+        "Erfüllungsaufwand sinkt"
+      ],
+      "nachteil": [
+        "Erfüllungsaufwand",
+        "Nachweispflichten",
+        "Normenkontrollrat Stellungnahme"
+      ]
+    },
+    "umwelt": {
+      "frage": "Wie wirkt er auf Emissionen, Natur und Ressourcen, und welche Lasten oder Vorteile hat er für spätere Jahre?",
+      "vorteil": [
+        "Emissionsminderung",
+        "Umweltentlastung"
+      ],
+      "nachteil": [
+        "Mehremissionen",
+        "Umweltrisiken",
+        "Flächenverbrauch"
+      ]
+    },
+    "verteilung": {
+      "frage": "Wer gewinnt, wer trägt die Last – nach Einkommen, Alter, Familienform, Stadt und Land?",
+      "vorteil": [
+        "Entlastung geringe Einkommen",
+        "Verteilungswirkung progressiv"
+      ],
+      "nachteil": [
+        "regressiv",
+        "Mitnahmeeffekte",
+        "profitieren höhere Einkommen"
+      ]
+    },
+    "grundrechte": {
+      "frage": "Schränkt er Freiheiten ein oder stärkt er sie, behandelt er Gruppen ungleich, wie wirkt er auf Gesundheit und Sicherheit?",
+      "vorteil": [
+        "Gesundheit verbessert",
+        "Schutz",
+        "Gleichstellung"
+      ],
+      "nachteil": [
+        "Datenschutz",
+        "Grundrechtseingriff",
+        "Benachteiligung",
+        "Gesundheitsrisiko"
+      ]
+    }
+  }
+}

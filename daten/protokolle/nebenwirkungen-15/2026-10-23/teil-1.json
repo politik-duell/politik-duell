@@ -1,0 +1,131 @@
+{
+  "pruefsumme": "42d51e20f47ebbea",
+  "thema_id": 15,
+  "thema": "Autofahren",
+  "ziel": "Wer auf das Auto angewiesen ist, kann sich das Fahren dauerhaft leisten, mit Verbrenner oder Elektroauto.",
+  "ursachen": [
+    "Der Spritpreis hängt am Weltmarkt für Rohöl: Mit dem Krieg im Iran und der zeitweisen Sperrung der Straße von Hormus stiegen die Preise 2026 binnen Wochen teils um mehr als ein Drittel",
+    "Steuern und Abgaben machen einen großen Teil des Spritpreises aus: Energiesteuer (65,45 Cent je Liter Benzin, 47,04 Cent Diesel), CO₂-Preis und Mehrwertsteuer",
+    "Wenig Wettbewerb bei Raffinerien und Großhandel: Preissenkungen kommen nicht vollständig an der Zapfsäule an, in Deutschland stiegen die Preise 2026 besonders stark",
+    "Elektroautos sind für viele noch zu teuer: Gut die Hälfte der Haushalte ohne Elektroauto nennt den Preis als Hindernis (2026: 52 %)",
+    "Wer in einem Mehrparteienhaus wohnt, kann oft nicht zu Hause laden: Die rund 9 Millionen Stellplätze an 21 Millionen Wohnungen sind bisher nur unzureichend mit Lademöglichkeiten ausgestattet"
+  ],
+  "teil": 1,
+  "teile": 3,
+  "einheiten": [
+    {
+      "id": 7011,
+      "name": "CO₂-Preis auf Kraftstoffe abschaffen",
+      "ebene": "bund",
+      "begruendung": "Senkt den Spritpreis 2026 um rund 15 bis 18 Cent je Liter; ab 2028 gilt aber der europäische Emissionshandel für Verkehr, den Deutschland nicht allein abschaffen kann. Die Einnahmen fehlen für Entlastungen an anderer Stelle."
+    },
+    {
+      "id": 7012,
+      "name": "CO₂-Einnahmen als Klimageld oder Klimabonus zurückzahlen",
+      "ebene": "bund",
+      "begruendung": "Gleicht die Mehrkosten durch den CO₂-Preis für viele Haushalte aus, senkt den Spritpreis aber nicht; wer viel fahren muss, wird nur teilweise entlastet. Ein Auszahlungsweg an alle Haushalte muss erst aufgebaut werden."
+    },
+    {
+      "id": 7013,
+      "name": "Pendlerpauschale erhöhen",
+      "ebene": "bund",
+      "begruendung": "Entlastet Pendelnde über die Steuer; wer wenig verdient und kaum Steuern zahlt, hat wenig davon."
+    },
+    {
+      "id": 7014,
+      "name": "Kaufförderung für Elektroautos für kleine und mittlere Einkommen (Prämie, Steuerabzug, Leasing)",
+      "ebene": "bund",
+      "begruendung": "Setzt direkt am Preis an, den Haushalte als größtes Hindernis nennen; soziales Leasing hat in Frankreich viele Haushalte mit kleinem Einkommen erreicht. Frühere Prämien in Deutschland wurden zum Teil mitgenommen und kamen vor allem besser Verdienenden zugute."
+    },
+    {
+      "id": 7015,
+      "name": "Öffentliche Ladeinfrastruktur ausbauen und Ladepreise senken",
+      "ebene": "bund",
+      "begruendung": "Hilft, wer nicht zu Hause laden kann, vor allem in Mehrparteienhäusern; öffentliches Laden bleibt aber meist teurer und aufwendiger als eine eigene Wallbox."
+    },
+    {
+      "id": 7025,
+      "name": "Energiesteuer auf Kraftstoffe bis auf null abschmelzen, CO₂-Preis soll sie ersetzen, Kfz-Steuer abschaffen",
+      "ebene": "bund",
+      "begruendung": "Ersetzt eine Steuer durch den CO₂-Preis; ob Sprit dadurch billiger wird, hängt von dessen Höhe ab. Die EU-Mindestsätze kann Deutschland nicht allein ändern."
+    }
+  ],
+  "suchhilfe": {
+    "haushalt": {
+      "frage": "Was kostet der Weg Bund, Ländern, Kommunen oder Sozialkassen – oder was bringt er ein?",
+      "vorteil": [
+        "Mehreinnahmen",
+        "Einsparung öffentlicher Haushalt",
+        "Entlastung Sozialversicherung"
+      ],
+      "nachteil": [
+        "Mindereinnahmen",
+        "Kosten Bundeshaushalt",
+        "Haushaltsausgaben Gesetzentwurf"
+      ]
+    },
+    "wirtschaft": {
+      "frage": "Welche Kosten oder Entlastungen entstehen für Unternehmen (besonders kleine und mittlere), wie wirkt er auf Preise und Verbraucher?",
+      "vorteil": [
+        "Entlastung Unternehmen",
+        "sinkende Preise",
+        "Investitionen"
+      ],
+      "nachteil": [
+        "Kosten für Unternehmen",
+        "Preisanstieg",
+        "Wettbewerbsfähigkeit"
+      ]
+    },
+    "aufwand": {
+      "frage": "Welcher Aufwand für Anträge, Nachweise und Kontrollen entsteht oder entfällt – für Bürger, Wirtschaft, Verwaltung?",
+      "vorteil": [
+        "Bürokratieabbau",
+        "Erfüllungsaufwand sinkt"
+      ],
+      "nachteil": [
+        "Erfüllungsaufwand",
+        "Nachweispflichten",
+        "Normenkontrollrat Stellungnahme"
+      ]
+    },
+    "umwelt": {
+      "frage": "Wie wirkt er auf Emissionen, Natur und Ressourcen, und welche Lasten oder Vorteile hat er für spätere Jahre?",
+      "vorteil": [
+        "Emissionsminderung",
+        "Umweltentlastung"
+      ],
+      "nachteil": [
+        "Mehremissionen",
+        "Umweltrisiken",
+        "Flächenverbrauch"
+      ]
+    },
+    "verteilung": {
+      "frage": "Wer gewinnt, wer trägt die Last – nach Einkommen, Alter, Familienform, Stadt und Land?",
+      "vorteil": [
+        "Entlastung geringe Einkommen",
+        "Verteilungswirkung progressiv"
+      ],
+      "nachteil": [
+        "regressiv",
+        "Mitnahmeeffekte",
+        "profitieren höhere Einkommen"
+      ]
+    },
+    "grundrechte": {
+      "frage": "Schränkt er Freiheiten ein oder stärkt er sie, behandelt er Gruppen ungleich, wie wirkt er auf Gesundheit und Sicherheit?",
+      "vorteil": [
+        "Gesundheit verbessert",
+        "Schutz",
+        "Gleichstellung"
+      ],
+      "nachteil": [
+        "Datenschutz",
+        "Grundrechtseingriff",
+        "Benachteiligung",
+        "Gesundheitsrisiko"
+      ]
+    }
+  }
+}

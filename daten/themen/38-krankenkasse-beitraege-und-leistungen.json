@@ -51,7 +51,12 @@
       "begruendung": "Laut IGES deckt die Bürgergeld-Pauschale nur rund 39 % der Kosten (Lücke ca. 9-10 Mrd. Euro), Erstattung senkt den Beitragsbedarf spürbar. Dagegen: einmalige Entlastung ohne Wirkung auf das Ausgabenwachstum, belastet den angespannten Bundeshaushalt.",
       "evidenz": "belegt",
       "beleg_studie_url": "https://www.haufe.de/sozialwesen/gesundheitsausgaben-fuer-buergergeldbeziehende-nicht-gedeckt_244_623712.html",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 10567,
@@ -61,7 +66,12 @@
       "begruendung": "IGES/Bertelsmann-Simulation: Einbeziehung aller Privatversicherten senkt den Beitragssatz um 0,2-0,6 Punkte, weil sie im Schnitt mehr verdienen und gesünder sind. Dagegen: einmaliger Effekt, verfassungsrechtliche Fragen zum PKV-Bestand, lange Übergänge.",
       "evidenz": "belegt",
       "beleg_studie_url": "https://idw-online.de/de/news731604",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 10568,
@@ -70,7 +80,12 @@
       "umsetzbarkeit": 2,
       "begruendung": "Modellrechnungen zeigen Mehreinnahmen und Beitragssatzspielraum durch breitere Einnahmebasis. Dagegen: bremst das Ausgabenwachstum nicht, Erhebung auf Kapitaleinkünfte aufwendig, mögliche Ausweichreaktionen und Belastung von Arbeitskosten umstritten.",
       "evidenz": "gemischt",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 10569,
@@ -79,7 +94,12 @@
       "umsetzbarkeit": 3,
       "begruendung": "Senkt die Beitragslast geringverdienender Selbstständiger und macht Beiträge für sie bezahlbarer. Dagegen: betrifft eine kleine Gruppe, mindert eher die Einnahmen und ändert nichts am allgemeinen Beitragsanstieg.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 10570,
@@ -88,7 +108,12 @@
       "umsetzbarkeit": 2,
       "begruendung": "Könnte Fehlanreize zur Mengenausweitung verringern. Dagegen: volle Kostenerstattung bzw. Selbstkostendeckung schwächt Kostenkontrolle und dürfte die Ausgaben der Kassen erhöhen; Erfahrungen vor 1993 zeigten steigende Kosten.",
       "evidenz": "gemischt",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 10571,
@@ -97,7 +122,20 @@
       "umsetzbarkeit": 2,
       "begruendung": "Konzentration kann Vorhaltekosten und Doppelstrukturen senken und Qualität verbessern. Dagegen: Einsparungen erst langfristig und unsicher, Umbau verursacht zunächst hohe Transformationskosten.",
       "evidenz": "gemischt",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Für den Krankenhaustransformationsfonds stellt der Bund in den nächsten zehn Jahren 29 Mrd. Euro bereit.",
+            "quelle_url": "https://www.bundesgesundheitsministerium.de/themen/krankenhaus/krankenhausreform",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 10572,
@@ -106,7 +144,20 @@
       "umsetzbarkeit": 2,
       "begruendung": "Entlastet die Beitragszahler von Kosten, die nicht aus dem laufenden Betrieb stammen, und mindert Quersubventionierung aus Fallerlösen. Dagegen: geringer, kaum untersuchter Effekt auf den Beitragssatz; Finanzierung durch Länder bzw. PKV ungeklärt.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Der Bund stellt für den Transformationsfonds 2026 bis 2035 insgesamt 29 Mrd. Euro aus dem Sondervermögen bereit; die Länder tragen 2026 bis 2029 mindestens 30 Prozent.",
+            "quelle_url": "https://www.bundesgesundheitsministerium.de/presse/pressemitteilungen/transformationsfonds-bundesamt-fuer-soziale-sicherung-bewilligt-bereits-erste-foerdermittel-17-04-2026",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 10573,
@@ -115,7 +166,12 @@
       "umsetzbarkeit": 3,
       "begruendung": "Kann die Versorgung in Praxen stärken. Dagegen: setzt bei den Ausgaben an, erhöht sie aber und treibt damit den Beitragsbedarf; für bezahlbare Beiträge kein Beitrag.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 10574,
@@ -125,7 +181,12 @@
       "begruendung": "Systematische Übersicht: Gatekeeping senkt Facharzt- und Klinikinanspruchnahme und teils die Ausgaben bei besserer Qualität. Dagegen: Evidenz schwach und meist aus anderen Systemen, geringere Patientenzufriedenheit, Hausarztmangel.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://blogs.imperial.ac.uk/medical-centre/?p=434",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 10575,
@@ -134,7 +195,12 @@
       "umsetzbarkeit": 2,
       "begruendung": "Abbau von Über- und Fehlversorgung kann Ausgaben dämpfen. Dagegen: Wirkung deutscher Zweitmeinungsverfahren kaum belegt, Inanspruchnahme sehr gering; Streichungen sind langwierig und bringen meist wenig Volumen.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 10576,
@@ -144,7 +210,12 @@
       "begruendung": "Senkt hohe Eigenanteile deutlich; Kostenbeteiligung mindert nachweislich auch nötige Inanspruchnahme, vor allem bei Geringverdienenden. Dagegen: Mehrausgaben in Milliardenhöhe erhöhen den Beitragsbedarf, Finanzierung ungeklärt.",
       "evidenz": "belegt",
       "beleg_studie_url": "https://en.wikipedia.org/wiki/RAND_Health_Insurance_Experiment",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     }
   ],
   "abdeckung": [
@@ -165,7 +236,12 @@
           "evidenz": "offen",
           "stand": "2026-10-21",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         }
       ]
     },
@@ -208,7 +284,12 @@
           "evidenz": "offen",
           "stand": "2026-10-21",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10581,
@@ -223,7 +304,12 @@
           "evidenz": "offen",
           "stand": "2026-10-21",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10582,
@@ -249,7 +335,12 @@
           "evidenz": "offen",
           "stand": "2026-10-21",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         }
       ]
     },
@@ -303,7 +394,12 @@
           "evidenz": "offen",
           "stand": "2026-10-21",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10588,
@@ -368,7 +464,20 @@
           "evidenz": "gemischt",
           "stand": "2026-10-21",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [
+              {
+                "bereich": "wirtschaft",
+                "richtung": "nachteil",
+                "text": "Zum Vergleich: Ein Gesetzentwurf sieht für 2027 bis 2029 eine pauschale Absenkung der Krankenhausvergütung um einen Prozentpunkt vor; laut Bundesrat droht eine Unterdeckung der realen Kosten.",
+                "quelle_url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1191028",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10593,
@@ -427,7 +536,12 @@
           "evidenz": "gemischt",
           "stand": "2026-10-21",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10598,
@@ -442,7 +556,12 @@
           "evidenz": "offen",
           "stand": "2026-10-21",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10599,
@@ -496,7 +615,12 @@
           "evidenz": "gemischt",
           "stand": "2026-10-21",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10603,
@@ -539,7 +663,12 @@
           "evidenz": "gemischt",
           "stand": "2026-10-21",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10606,
@@ -565,7 +694,12 @@
           "evidenz": "offen",
           "stand": "2026-10-21",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10608,
@@ -608,7 +742,12 @@
           "evidenz": "offen",
           "stand": "2026-10-21",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10611,
@@ -634,7 +773,12 @@
           "evidenz": "offen",
           "stand": "2026-10-21",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10613,

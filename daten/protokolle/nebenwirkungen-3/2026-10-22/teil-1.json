@@ -1,0 +1,131 @@
+{
+  "pruefsumme": "608e382c7676977f",
+  "thema_id": 3,
+  "thema": "Energiepreise",
+  "ziel": "Haushalte können Strom und Heizung dauerhaft bezahlen.",
+  "ursachen": [
+    "Hohe Netzentgelte für den Betrieb und Ausbau der Stromnetze",
+    "Steuern, Abgaben und Umlagen machen einen großen Teil der Strom- und Gaspreise aus, beim Gas auch der CO₂-Preis",
+    "Rund 70 % der Energie wird importiert, vor allem Öl, Gas und Steinkohle",
+    "Der Strompreis an der Börse richtet sich nach dem teuersten noch benötigten Kraftwerk, heute oft einem Gaskraftwerk",
+    "Drei Viertel der Wohnungen wurden 2022 mit Gas oder Öl beheizt (Zensus); die Heizkosten hängen deshalb stark von deren Preisen ab"
+  ],
+  "teil": 1,
+  "teile": 3,
+  "einheiten": [
+    {
+      "id": 6704,
+      "name": "Stromsteuer für alle auf das EU-Mindestmaß senken",
+      "ebene": "bund",
+      "begruendung": "Senkt den Strompreis für Haushalte um gut 2 Cent je Kilowattstunde; kostet den Bundeshaushalt mehrere Milliarden Euro im Jahr."
+    },
+    {
+      "id": 6709,
+      "name": "Dynamische Stromtarife und intelligente Messsysteme",
+      "ebene": "bund",
+      "begruendung": "Haushalte, die Strom in günstigen Stunden nutzen können, sparen; für viele Haushalte ohne Wärmepumpe, E-Auto oder Batterie ist die Ersparnis gering."
+    },
+    {
+      "id": 6715,
+      "name": "Investitionen in Energieeffizienz steuerlich schneller absetzbar",
+      "ebene": "bund",
+      "begruendung": "Macht Sanierungen und Heizungstausch für Eigentümer günstiger und senkt langfristig den Verbrauch; Mieterinnen und Mieter profitieren nur indirekt, und der Steuervorteil hilft Haushalten mit hohem Einkommen mehr."
+    },
+    {
+      "id": 6719,
+      "name": "Soziales Wärmepumpen-Leasing für ärmere Haushalte",
+      "ebene": "bund",
+      "begruendung": "Senkt die Hürde, von Gas oder Öl auf eine Wärmepumpe umzusteigen, für Haushalte ohne Ersparnisse; die meisten ärmeren Haushalte wohnen zur Miete und entscheiden nicht über die Heizung."
+    },
+    {
+      "id": 6725,
+      "name": "Förderung von bis zu 70 Prozent für fossilfreie Heizungen",
+      "ebene": "bund",
+      "begruendung": "Macht den Umstieg von Gas und Öl auf Wärmepumpen und Wärmenetze bezahlbarer und koppelt die Heizkosten von fossilen Preisen ab; die Förderung besteht bereits, der Umstieg dauert aber Jahre und hängt vom Strompreis ab."
+    },
+    {
+      "id": 6727,
+      "name": "Netzausbau günstiger: Freileitungen statt Erdkabel, dynamische Netzentgelte",
+      "ebene": "bund",
+      "begruendung": "Freileitungen sind deutlich billiger als Erdkabel und dämpfen so den Anstieg der Netzentgelte; für viele bereits geplante Leitungen wäre ein Wechsel aufwendig, und Freileitungen stoßen vor Ort häufiger auf Widerstand."
+    }
+  ],
+  "suchhilfe": {
+    "haushalt": {
+      "frage": "Was kostet der Weg Bund, Ländern, Kommunen oder Sozialkassen – oder was bringt er ein?",
+      "vorteil": [
+        "Mehreinnahmen",
+        "Einsparung öffentlicher Haushalt",
+        "Entlastung Sozialversicherung"
+      ],
+      "nachteil": [
+        "Mindereinnahmen",
+        "Kosten Bundeshaushalt",
+        "Haushaltsausgaben Gesetzentwurf"
+      ]
+    },
+    "wirtschaft": {
+      "frage": "Welche Kosten oder Entlastungen entstehen für Unternehmen (besonders kleine und mittlere), wie wirkt er auf Preise und Verbraucher?",
+      "vorteil": [
+        "Entlastung Unternehmen",
+        "sinkende Preise",
+        "Investitionen"
+      ],
+      "nachteil": [
+        "Kosten für Unternehmen",
+        "Preisanstieg",
+        "Wettbewerbsfähigkeit"
+      ]
+    },
+    "aufwand": {
+      "frage": "Welcher Aufwand für Anträge, Nachweise und Kontrollen entsteht oder entfällt – für Bürger, Wirtschaft, Verwaltung?",
+      "vorteil": [
+        "Bürokratieabbau",
+        "Erfüllungsaufwand sinkt"
+      ],
+      "nachteil": [
+        "Erfüllungsaufwand",
+        "Nachweispflichten",
+        "Normenkontrollrat Stellungnahme"
+      ]
+    },
+    "umwelt": {
+      "frage": "Wie wirkt er auf Emissionen, Natur und Ressourcen, und welche Lasten oder Vorteile hat er für spätere Jahre?",
+      "vorteil": [
+        "Emissionsminderung",
+        "Umweltentlastung"
+      ],
+      "nachteil": [
+        "Mehremissionen",
+        "Umweltrisiken",
+        "Flächenverbrauch"
+      ]
+    },
+    "verteilung": {
+      "frage": "Wer gewinnt, wer trägt die Last – nach Einkommen, Alter, Familienform, Stadt und Land?",
+      "vorteil": [
+        "Entlastung geringe Einkommen",
+        "Verteilungswirkung progressiv"
+      ],
+      "nachteil": [
+        "regressiv",
+        "Mitnahmeeffekte",
+        "profitieren höhere Einkommen"
+      ]
+    },
+    "grundrechte": {
+      "frage": "Schränkt er Freiheiten ein oder stärkt er sie, behandelt er Gruppen ungleich, wie wirkt er auf Gesundheit und Sicherheit?",
+      "vorteil": [
+        "Gesundheit verbessert",
+        "Schutz",
+        "Gleichstellung"
+      ],
+      "nachteil": [
+        "Datenschutz",
+        "Grundrechtseingriff",
+        "Benachteiligung",
+        "Gesundheitsrisiko"
+      ]
+    }
+  }
+}

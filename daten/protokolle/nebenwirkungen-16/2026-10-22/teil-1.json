@@ -1,0 +1,130 @@
+{
+  "pruefsumme": "a1cada7b32bccd3f",
+  "thema_id": 16,
+  "thema": "Heizungstausch",
+  "ziel": "Eigentümer und Mieter wissen, welche Heizung künftig erlaubt und sinnvoll ist, und können sich den Umstieg leisten.",
+  "ursachen": [
+    "Viele halten den Umstieg für nicht lohnend oder können ihn nicht bezahlen: 43 % der Interessierten zweifeln an der Wirtschaftlichkeit einer Wärmepumpe, 32 % fehlt das Geld (2026)",
+    "Die Regeln für neue Heizungen wurden in wenigen Jahren mehrfach grundlegend geändert (zuletzt Gebäudemodernisierungsgesetz, Juli 2026), dazu kommt ab 2028 ein europäischer CO₂-Preis für Heizöl und Gas",
+    "Viele wissen noch nicht, ob Fernwärme oder ein Wärmenetz kommt: Erst 26 % der Gemeinden haben ihre Wärmeplanung abgeschlossen (Juni 2026)",
+    "Mieterinnen und Mieter können über die Heizung nicht entscheiden, tragen aber die Heizkosten: Sie nutzen fast viermal seltener klimafreundliche Technik als Eigenheimbesitzer (15 % zu 59 %)"
+  ],
+  "teil": 1,
+  "teile": 3,
+  "einheiten": [
+    {
+      "id": 7034,
+      "name": "Zuschüsse für neue klimafreundliche Heizungen fortführen oder ausbauen",
+      "ebene": "bund",
+      "begruendung": "Senkt die Investition, die viele Haushalte scheuen oder nicht aufbringen können, und setzt damit an den laut KfW größten Hindernissen an. Ob sie Haushalte mit wenig Geld erreicht, hängt von der Staffelung ab."
+    },
+    {
+      "id": 7035,
+      "name": "Wärmepumpen-Leasing oder Wärme-Contracting ohne hohe Startinvestition",
+      "ebene": "bund",
+      "begruendung": "Nimmt Haushalten die hohe Anfangsinvestition ab, die laut KfW oft fehlt; solche Angebote gibt es bisher nur vereinzelt, ihre Wirkung in der Breite ist kaum untersucht."
+    },
+    {
+      "id": 7036,
+      "name": "Heizungsgesetz abschaffen, freie Wahl der Heizung",
+      "ebene": "bund",
+      "begruendung": "Schafft Wahlfreiheit und beendet den Streit um die 65-Prozent-Vorgabe; ist aber selbst eine weitere Änderung der Regeln, und mit dem steigenden CO₂-Preis bleibt offen, welche Heizung sich langfristig lohnt. 2026 mit dem Gebäudemodernisierungsgesetz weitgehend umgesetzt."
+    },
+    {
+      "id": 7037,
+      "name": "Geltende Vorgaben beibehalten, Planungssicherheit bis 2045",
+      "ebene": "bund",
+      "begruendung": "Vermeidet weitere Wechsel der Regeln; die Vorgaben selbst waren stark umstritten, und ob sie Regierungswechsel überdauern, ist offen – 2026 wurden sie grundlegend geändert."
+    },
+    {
+      "id": 7038,
+      "name": "Kommunale Wärmeplanung und Wärmenetze fördern",
+      "ebene": "bund",
+      "begruendung": "Beschleunigt die Wärmepläne, auf die viele Eigentümer warten, und den Bau von Wärmenetzen; planen und bauen müssen die Kommunen, der Bund kann nur Geld und Beratung geben."
+    },
+    {
+      "id": 7039,
+      "name": "Modernisierungsumlage für energetische Sanierung abschaffen, Warmmietenneutralität",
+      "ebene": "bund",
+      "begruendung": "Schützt Mieterinnen und Mieter vor Mietsteigerungen durch den Heizungstausch; zugleich sinkt der Anreiz für Vermieter, die Heizung zu erneuern, sodass Mieter länger die Kosten alter Heizungen tragen können."
+    }
+  ],
+  "suchhilfe": {
+    "haushalt": {
+      "frage": "Was kostet der Weg Bund, Ländern, Kommunen oder Sozialkassen – oder was bringt er ein?",
+      "vorteil": [
+        "Mehreinnahmen",
+        "Einsparung öffentlicher Haushalt",
+        "Entlastung Sozialversicherung"
+      ],
+      "nachteil": [
+        "Mindereinnahmen",
+        "Kosten Bundeshaushalt",
+        "Haushaltsausgaben Gesetzentwurf"
+      ]
+    },
+    "wirtschaft": {
+      "frage": "Welche Kosten oder Entlastungen entstehen für Unternehmen (besonders kleine und mittlere), wie wirkt er auf Preise und Verbraucher?",
+      "vorteil": [
+        "Entlastung Unternehmen",
+        "sinkende Preise",
+        "Investitionen"
+      ],
+      "nachteil": [
+        "Kosten für Unternehmen",
+        "Preisanstieg",
+        "Wettbewerbsfähigkeit"
+      ]
+    },
+    "aufwand": {
+      "frage": "Welcher Aufwand für Anträge, Nachweise und Kontrollen entsteht oder entfällt – für Bürger, Wirtschaft, Verwaltung?",
+      "vorteil": [
+        "Bürokratieabbau",
+        "Erfüllungsaufwand sinkt"
+      ],
+      "nachteil": [
+        "Erfüllungsaufwand",
+        "Nachweispflichten",
+        "Normenkontrollrat Stellungnahme"
+      ]
+    },
+    "umwelt": {
+      "frage": "Wie wirkt er auf Emissionen, Natur und Ressourcen, und welche Lasten oder Vorteile hat er für spätere Jahre?",
+      "vorteil": [
+        "Emissionsminderung",
+        "Umweltentlastung"
+      ],
+      "nachteil": [
+        "Mehremissionen",
+        "Umweltrisiken",
+        "Flächenverbrauch"
+      ]
+    },
+    "verteilung": {
+      "frage": "Wer gewinnt, wer trägt die Last – nach Einkommen, Alter, Familienform, Stadt und Land?",
+      "vorteil": [
+        "Entlastung geringe Einkommen",
+        "Verteilungswirkung progressiv"
+      ],
+      "nachteil": [
+        "regressiv",
+        "Mitnahmeeffekte",
+        "profitieren höhere Einkommen"
+      ]
+    },
+    "grundrechte": {
+      "frage": "Schränkt er Freiheiten ein oder stärkt er sie, behandelt er Gruppen ungleich, wie wirkt er auf Gesundheit und Sicherheit?",
+      "vorteil": [
+        "Gesundheit verbessert",
+        "Schutz",
+        "Gleichstellung"
+      ],
+      "nachteil": [
+        "Datenschutz",
+        "Grundrechtseingriff",
+        "Benachteiligung",
+        "Gesundheitsrisiko"
+      ]
+    }
+  }
+}

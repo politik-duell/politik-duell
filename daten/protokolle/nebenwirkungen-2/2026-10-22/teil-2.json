@@ -1,0 +1,132 @@
+{
+  "pruefsumme": "7559708074709a38",
+  "thema_id": 2,
+  "thema": "Miete",
+  "ziel": "Mieterinnen und Mieter finden eine passende Wohnung und können sich die Miete dauerhaft leisten.",
+  "ursachen": [
+    "Es werden weniger Wohnungen gebaut als gebraucht (Bedarf laut Prognose rund 320.000 pro Jahr)",
+    "Mieten bei Neuvermietung liegen rund 43 % über Bestandsmieten, in großen Städten besonders hoch",
+    "Stark gestiegene Baukosten: Wohngebäude wurden 2010 bis 2025 um 89 % teurer, mehr als doppelt so stark wie die Inflation",
+    "Mieten in laufenden Verträgen steigen weiter (Nettokaltmieten 2025 im Schnitt +2,1 %)",
+    "Die Nachfrage wächst vor allem in wirtschaftlich starken Großstädten: mehr Haushalte durch Zuwanderung und Zuzug aus dem Inland, dazu höhere Einkommen",
+    "Jedes Jahr fallen mehr Sozialwohnungen aus der Bindung, als neue gefördert werden (2025: rund 27.000 neu gefördert, rund 55.000 fallen jährlich heraus)"
+  ],
+  "teil": 2,
+  "teile": 7,
+  "einheiten": [
+    {
+      "id": 2013,
+      "name": "Sozialen Wohnungsbau stärken; Wohnungsgesellschaften und Genossenschaften über einen Deutschlandfonds mit Eigenkapital ausstatten",
+      "ebene": "bund",
+      "begruendung": "Mehr Kapital für gemeinwohlorientierte Bauherren kann das Angebot günstiger Wohnungen erhöhen; erfordert erhebliche öffentliche Mittel."
+    },
+    {
+      "id": 2015,
+      "name": "Neue bundeseigene Wohnungsgesellschaft gründen",
+      "ebene": "bund",
+      "begruendung": "Schafft zusätzliche Wohnungen, laut Programm vor allem für Beschäftigte des Bundes; die Wirkung auf den allgemeinen Markt ist begrenzt."
+    },
+    {
+      "id": 2021,
+      "name": "Mietpreisbremse verlängern, Ausnahmen abschaffen, auf Wohnungen älter als fünf Jahre anwenden und Schlupflöcher (möbliert, Ferienwohnung) schließen",
+      "ebene": "bund",
+      "begruendung": "Dämpft Mieten bei Neuvermietung in angespannten Märkten; schafft keine neuen Wohnungen."
+    },
+    {
+      "id": 2023,
+      "name": "Mehr Wohnraum im Bestand: Aufstockung, Umwandlung von Büros, Dachausbau; Baurecht vereinfachen, Verfahren digitalisieren, Standards zurückführen",
+      "ebene": "bund",
+      "begruendung": "Nutzt vorhandene Gebäude und senkt Kosten durch einfachere Regeln; wie viele Wohnungen so entstehen, ist unsicher."
+    },
+    {
+      "id": 2032,
+      "name": "Baukostenmoratorium, Bau-Auflagen auf Mindeststandards reduzieren, serielles Bauen mit bundesweiten Standards",
+      "ebene": "bund",
+      "begruendung": "Setzt an Vorschriften als Kostentreiber an; Mindeststandards bei Gebäudeenergie sind teils durch EU-Recht vorgegeben."
+    },
+    {
+      "id": 2033,
+      "name": "Genehmigungsfiktion für Bauanträge, durchgehend digitale Planung, einfachere Ausweisung neuer Bauflächen",
+      "ebene": "bund",
+      "begruendung": "Beschleunigt Verfahren und erweitert das Flächenangebot; Personalmangel in Bauämtern bleibt ein Engpass."
+    }
+  ],
+  "suchhilfe": {
+    "haushalt": {
+      "frage": "Was kostet der Weg Bund, Ländern, Kommunen oder Sozialkassen – oder was bringt er ein?",
+      "vorteil": [
+        "Mehreinnahmen",
+        "Einsparung öffentlicher Haushalt",
+        "Entlastung Sozialversicherung"
+      ],
+      "nachteil": [
+        "Mindereinnahmen",
+        "Kosten Bundeshaushalt",
+        "Haushaltsausgaben Gesetzentwurf"
+      ]
+    },
+    "wirtschaft": {
+      "frage": "Welche Kosten oder Entlastungen entstehen für Unternehmen (besonders kleine und mittlere), wie wirkt er auf Preise und Verbraucher?",
+      "vorteil": [
+        "Entlastung Unternehmen",
+        "sinkende Preise",
+        "Investitionen"
+      ],
+      "nachteil": [
+        "Kosten für Unternehmen",
+        "Preisanstieg",
+        "Wettbewerbsfähigkeit"
+      ]
+    },
+    "aufwand": {
+      "frage": "Welcher Aufwand für Anträge, Nachweise und Kontrollen entsteht oder entfällt – für Bürger, Wirtschaft, Verwaltung?",
+      "vorteil": [
+        "Bürokratieabbau",
+        "Erfüllungsaufwand sinkt"
+      ],
+      "nachteil": [
+        "Erfüllungsaufwand",
+        "Nachweispflichten",
+        "Normenkontrollrat Stellungnahme"
+      ]
+    },
+    "umwelt": {
+      "frage": "Wie wirkt er auf Emissionen, Natur und Ressourcen, und welche Lasten oder Vorteile hat er für spätere Jahre?",
+      "vorteil": [
+        "Emissionsminderung",
+        "Umweltentlastung"
+      ],
+      "nachteil": [
+        "Mehremissionen",
+        "Umweltrisiken",
+        "Flächenverbrauch"
+      ]
+    },
+    "verteilung": {
+      "frage": "Wer gewinnt, wer trägt die Last – nach Einkommen, Alter, Familienform, Stadt und Land?",
+      "vorteil": [
+        "Entlastung geringe Einkommen",
+        "Verteilungswirkung progressiv"
+      ],
+      "nachteil": [
+        "regressiv",
+        "Mitnahmeeffekte",
+        "profitieren höhere Einkommen"
+      ]
+    },
+    "grundrechte": {
+      "frage": "Schränkt er Freiheiten ein oder stärkt er sie, behandelt er Gruppen ungleich, wie wirkt er auf Gesundheit und Sicherheit?",
+      "vorteil": [
+        "Gesundheit verbessert",
+        "Schutz",
+        "Gleichstellung"
+      ],
+      "nachteil": [
+        "Datenschutz",
+        "Grundrechtseingriff",
+        "Benachteiligung",
+        "Gesundheitsrisiko"
+      ]
+    }
+  }
+}

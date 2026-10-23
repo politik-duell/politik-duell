@@ -1,0 +1,120 @@
+{
+  "thema": 7,
+  "teile": 4,
+  "loesungswege": 23,
+  "rueckfragen": 10,
+  "fortsetzungen": 0,
+  "websuchen": 300,
+  "abrufe": 131,
+  "limitabbrueche": 2,
+  "tokens": {
+    "eingabe": 380,
+    "cache_schreiben": 1404849,
+    "cache_lesen": 17930687,
+    "ausgabe": 258729
+  },
+  "nacharbeit": {
+    "eingabe": 174,
+    "cache_schreiben": 1059908,
+    "cache_lesen": 12669940,
+    "ausgabe": 161468
+  },
+  "teile_einzeln": [
+    {
+      "teil": 1,
+      "runden": 4,
+      "anfragen": 3,
+      "fortsetzungen": 0,
+      "websuchen": 97,
+      "abrufe": 36,
+      "werkzeuge": 148,
+      "limitabbrueche": 1,
+      "tokens": {
+        "eingabe": 100,
+        "cache_schreiben": 532396,
+        "cache_lesen": 4579119,
+        "ausgabe": 59471
+      },
+      "nacharbeit": {
+        "eingabe": 34,
+        "cache_schreiben": 426289,
+        "cache_lesen": 2750769,
+        "ausgabe": 32833
+      },
+      "start": "2026-10-22T13:20:46.900Z",
+      "ende": "2026-10-22T17:50:37.689Z"
+    },
+    {
+      "teil": 2,
+      "runden": 4,
+      "anfragen": 3,
+      "fortsetzungen": 0,
+      "websuchen": 91,
+      "abrufe": 47,
+      "werkzeuge": 156,
+      "limitabbrueche": 1,
+      "tokens": {
+        "eingabe": 124,
+        "cache_schreiben": 512883,
+        "cache_lesen": 6777913,
+        "ausgabe": 102675
+      },
+      "nacharbeit": {
+        "eingabe": 56,
+        "cache_schreiben": 388761,
+        "cache_lesen": 4617853,
+        "ausgabe": 59641
+      },
+      "start": "2026-10-22T13:20:46.921Z",
+      "ende": "2026-10-22T17:55:49.986Z"
+    },
+    {
+      "teil": 3,
+      "runden": 3,
+      "anfragen": 2,
+      "fortsetzungen": 0,
+      "websuchen": 84,
+      "abrufe": 20,
+      "werkzeuge": 121,
+      "limitabbrueche": 0,
+      "tokens": {
+        "eingabe": 76,
+        "cache_schreiben": 233808,
+        "cache_lesen": 4268803,
+        "ausgabe": 55116
+      },
+      "nacharbeit": {
+        "eingabe": 50,
+        "cache_schreiben": 187636,
+        "cache_lesen": 3890099,
+        "ausgabe": 42981
+      },
+      "start": "2026-10-22T13:20:46.939Z",
+      "ende": "2026-10-22T13:32:30.418Z"
+    },
+    {
+      "teil": 4,
+      "runden": 3,
+      "anfragen": 2,
+      "fortsetzungen": 0,
+      "websuchen": 28,
+      "abrufe": 28,
+      "werkzeuge": 71,
+      "limitabbrueche": 0,
+      "tokens": {
+        "eingabe": 80,
+        "cache_schreiben": 125762,
+        "cache_lesen": 2304852,
+        "ausgabe": 41467
+      },
+      "nacharbeit": {
+        "eingabe": 34,
+        "cache_schreiben": 57222,
+        "cache_lesen": 1411219,
+        "ausgabe": 26013
+      },
+      "start": "2026-10-22T13:20:46.955Z",
+      "ende": "2026-10-22T13:31:56.157Z"
+    }
+  ]
+}

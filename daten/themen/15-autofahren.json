@@ -60,7 +60,27 @@
       "wirksamkeit": 2,
       "umsetzbarkeit": 1,
       "begruendung": "Senkt den Spritpreis 2026 um rund 15 bis 18 Cent je Liter; ab 2028 gilt aber der europäische Emissionshandel für Verkehr, den Deutschland nicht allein abschaffen kann. Die Einnahmen fehlen für Entlastungen an anderer Stelle.",
-      "evidenz": "belegt"
+      "evidenz": "belegt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Der nationale Emissionshandel brachte 2025 rund 16 Mrd. Euro ein, die vollständig in den Klima- und Transformationsfonds fließen; bei Abschaffung des CO₂-Preises entfielen sie dort.",
+            "quelle_url": "https://www.umweltbundesamt.de/presse/pressemitteilungen/emissionshandel-21-milliarden-euro-fliessen-in-den",
+            "belegstufe": "A"
+          },
+          {
+            "bereich": "umwelt",
+            "richtung": "nachteil",
+            "text": "Eine UBA-Modellierung beziffert die zusätzliche Minderung durch einen CO₂-Preis im Verkehr auf 7 Mio. t CO₂-Äq. im Jahr 2030 (kumuliert 116 Mio. t bis 2045); ohne ihn entfiele sie.",
+            "quelle_url": "https://www.umweltbundesamt.de/themen/verkehr/klimaschutz-im-verkehr",
+            "belegstufe": "B"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7012,
@@ -68,7 +88,27 @@
       "wirksamkeit": 1,
       "umsetzbarkeit": 2,
       "begruendung": "Gleicht die Mehrkosten durch den CO₂-Preis für viele Haushalte aus, senkt den Spritpreis aber nicht; wer viel fahren muss, wird nur teilweise entlastet. Ein Auszahlungsweg an alle Haushalte muss erst aufgebaut werden.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Die Einnahmen des nationalen Emissionshandels (rund 16 Mrd. Euro 2025) fließen bisher vollständig in den Klima- und Transformationsfonds; bei Rückzahlung fehlten sie dort.",
+            "quelle_url": "https://www.umweltbundesamt.de/presse/pressemitteilungen/emissionshandel-21-milliarden-euro-fliessen-in-den",
+            "belegstufe": "A"
+          },
+          {
+            "bereich": "verteilung",
+            "richtung": "vorteil",
+            "text": "Eine pauschale Auszahlung pro Kopf enthält laut DIW wegen des nach Einkommen unterschiedlichen CO₂-Fußabdrucks bereits eine öko-soziale Komponente: Geringere Einkommen profitieren relativ stärker.",
+            "quelle_url": "https://www.diw.de/de/diw_01.c.935747.de/publikationen/wochenberichte/2025_06_1/mehr_klarheit_schaffen__klimageld_als_sozialer_ausgleich_bei_hoeheren_co___-preisen.html",
+            "belegstufe": "B"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7013,
@@ -76,7 +116,34 @@
       "wirksamkeit": 1,
       "umsetzbarkeit": 3,
       "begruendung": "Entlastet Pendelnde über die Steuer; wer wenig verdient und kaum Steuern zahlt, hat wenig davon.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Die Erhöhung der Entfernungspauschale auf 38 Cent ab dem ersten Kilometer kostet 2026 rund 1,1 Mrd. Euro (Jahreswirkung) und bei voller Jahreswirkung knapp 2 Mrd. Euro Steuereinnahmen.",
+            "quelle_url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1104874",
+            "belegstufe": "A"
+          },
+          {
+            "bereich": "umwelt",
+            "richtung": "nachteil",
+            "text": "Das Umweltbundesamt sieht in der Entfernungspauschale einen Anreiz, der Zersiedelung der Landschaft und Verkehrswachstum begünstigt.",
+            "quelle_url": "https://www.umweltbundesamt.de/presse/pressemitteilungen/umweltschaedliche-subventionen-liegen-bei-ueber-52",
+            "belegstufe": "A"
+          },
+          {
+            "bereich": "verteilung",
+            "richtung": "nachteil",
+            "text": "Von rund 5 Mrd. Euro Steuerentlastung durch die Entfernungspauschale 2025 dürfte rund 1 Mrd. Euro auf 1,7 Mio. Personen mit einem Einkommen über 122.919 Euro entfallen.",
+            "quelle_url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1104874",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7014,
@@ -85,7 +152,34 @@
       "umsetzbarkeit": 3,
       "begruendung": "Setzt direkt am Preis an, den Haushalte als größtes Hindernis nennen; soziales Leasing hat in Frankreich viele Haushalte mit kleinem Einkommen erreicht. Frühere Prämien in Deutschland wurden zum Teil mitgenommen und kamen vor allem besser Verdienenden zugute.",
       "evidenz": "gemischt",
-      "beleg_studie_url": "https://www.kfw.de/PDF/Download-Center/Konzernthemen/Research/PDF-Dokumente-KfW-Energiewendebarometer/KfW-Energiewendebarometer-2026.pdf"
+      "beleg_studie_url": "https://www.kfw.de/PDF/Download-Center/Konzernthemen/Research/PDF-Dokumente-KfW-Energiewendebarometer/KfW-Energiewendebarometer-2026.pdf",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Zum Vergleich: Der frühere Umweltbonus (2016–2023) umfasste bewilligte Fördermittel von 10,2 Mrd. Euro für rund 2,17 Mio. Fahrzeuge; das sind nicht die Kosten dieser Maßnahme.",
+            "quelle_url": "https://technopolis-group.com/?p=61750",
+            "belegstufe": "B"
+          },
+          {
+            "bereich": "umwelt",
+            "richtung": "vorteil",
+            "text": "Zum Vergleich: Der frühere Umweltbonus (2016–2023) brachte laut Evaluation brutto 7,3 Mt CO₂-Äq. Treibhausgaseinsparung; das ist nicht die Wirkung dieser Maßnahme.",
+            "quelle_url": "https://technopolis-group.com/?p=61750",
+            "belegstufe": "B"
+          },
+          {
+            "bereich": "verteilung",
+            "richtung": "nachteil",
+            "text": "Zum Vergleich: Die frühere Umweltbonus-Förderung nutzten laut Evaluation überproportional Haushalte mit höherem Nettoeinkommen; die Evaluation spricht von einem unerwünschten Verteilungseffekt.",
+            "quelle_url": "https://technopolis-group.com/?p=61750",
+            "belegstufe": "B"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7015,
@@ -93,7 +187,20 @@
       "wirksamkeit": 1,
       "umsetzbarkeit": 3,
       "begruendung": "Hilft, wer nicht zu Hause laden kann, vor allem in Mehrparteienhäusern; öffentliches Laden bleibt aber meist teurer und aufwendiger als eine eigene Wallbox.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Zum Vergleich: Der Haushaltsentwurf 2026 sieht für die Errichtung von Tank- und Ladeinfrastruktur 1,7 Mrd. Euro vor; das sind nicht die Kosten dieser Maßnahme.",
+            "quelle_url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1111618",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7258,
@@ -102,7 +209,27 @@
       "umsetzbarkeit": 3,
       "begruendung": "Jedes ersetzte Verbrennerfahrzeug braucht kein Benzin oder Diesel mehr. Bei 4,1 % Elektroanteil im Pkw-Bestand (1. 1. 2026) und langer Erneuerungszeit wirkt das erst über Jahre und schützt nicht vor einem Preisschock im laufenden Jahr.",
       "evidenz": "gemischt",
-      "beleg_studie_url": "https://www.kba.de/DE/Presse/Pressemitteilungen/Fahrzeugbestand/2026/pm09_fz_bestand_pm_komplett.html"
+      "beleg_studie_url": "https://www.kba.de/DE/Presse/Pressemitteilungen/Fahrzeugbestand/2026/pm09_fz_bestand_pm_komplett.html",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Zum Vergleich: Das 2026 gestartete Bundesprogramm für E-Auto-Prämien umfasst 3 Mrd. Euro bis 2029 für geschätzt 800.000 Fahrzeuge; es sind nicht die Kosten dieser Maßnahme.",
+            "quelle_url": "https://www.bundesumweltministerium.de/PM11760",
+            "belegstufe": "A"
+          },
+          {
+            "bereich": "umwelt",
+            "richtung": "vorteil",
+            "text": "Laut Umweltbundesamt sind 2020 zugelassene Elektroautos über den gesamten Lebenszyklus rund 40 Prozent klimafreundlicher als Benziner; für 2030 werden rund 55 Prozent erwartet.",
+            "quelle_url": "https://www.umweltbundesamt.de/en/press/pressinformation/climate-benefit-for-electric-cars-confirmed",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7259,
@@ -111,7 +238,20 @@
       "umsetzbarkeit": 1,
       "begruendung": "Strombasierte Kraftstoffe entkoppeln den Preis vom Rohöl, sind aber nicht kommerziell verfügbar und würden zunächst etwa 2 Euro je Liter kosten (Benzin im Großhandel 0,50). Bis 2035 deckt es höchstens die Hälfte des Bedarfs von Luft-, Schifffahrt und Chemie. Das Verbrennerverbot ist EU-Recht.",
       "evidenz": "offen",
-      "beleg_studie_url": "https://www.pik-potsdam.de/members/Ueckerdt/E-Fuels_Stand-und-Projektionen_PIK-Potsdam.pdf"
+      "beleg_studie_url": "https://www.pik-potsdam.de/members/Ueckerdt/E-Fuels_Stand-und-Projektionen_PIK-Potsdam.pdf",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "umwelt",
+            "richtung": "nachteil",
+            "text": "Laut Umweltbundesamt brauchen strombasierte Kraftstoffe im Pkw für dieselbe Fahrleistung die drei- bis sechsfache Strommenge eines Elektroautos und gelten als hochgradig ineffizient.",
+            "quelle_url": "https://www.umweltbundesamt.de/themen/verkehr/kraftstoffe-antriebe",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7260,
@@ -120,7 +260,34 @@
       "umsetzbarkeit": 1,
       "begruendung": "Senkt den Preis sofort, aber nur befristet; der Tankrabatt 2026 kam laut Monopolkommission zu einem großen Teil, aber nicht vollständig an. Die schnelle Senkung der Umsatzsteuer braucht EU-Zustimmung. Das Programm nennt Güter des täglichen Bedarfs, nicht nur Kraftstoff.",
       "evidenz": "gemischt",
-      "beleg_studie_url": "https://www.monopolkommission.de/fileadmin/monopolkommission/Indexierte_Dateien/PDFs/Policy_Briefs/Monopolkommission-Policy-Brief-16-2026-Tankrabatt.pdf#page=1"
+      "beleg_studie_url": "https://www.monopolkommission.de/fileadmin/monopolkommission/Indexierte_Dateien/PDFs/Policy_Briefs/Monopolkommission-Policy-Brief-16-2026-Tankrabatt.pdf#page=1",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Zum Vergleich: Die befristete Senkung um 14,04 Cent je Liter von Mai bis Juni 2026 kostete laut Gesetzentwurf 1,6 Mrd. Euro; das sind nicht die Kosten dieser Maßnahme.",
+            "quelle_url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1165456",
+            "belegstufe": "A"
+          },
+          {
+            "bereich": "umwelt",
+            "richtung": "nachteil",
+            "text": "Laut Gesetzentwurf begünstigt eine Senkung der Energiesteuer den Einsatz fossiler Energien vorübergehend und kann den Kraftstoffverbrauch zeitweise steigern.",
+            "quelle_url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1165456",
+            "belegstufe": "A"
+          },
+          {
+            "bereich": "verteilung",
+            "richtung": "nachteil",
+            "text": "Zum Vergleich (Tankrabatt 2022): Laut DIW entlastet er eher wohlhabende Haushalte, die viel mit großen Autos fahren, und wirkt wie eine Umverteilung von unten nach oben.",
+            "quelle_url": "https://www.diw.de/de/diw_01.c.861731.de/nachrichten/entlastung_fuer_autofahrer__der_tankrabatt_ist_das_naheliegendste__aber_auch_schlechteste_instrument.html",
+            "belegstufe": "B"
+          }
+        ],
+        "ki_entwurf": true
+      }
     }
   ],
   "abdeckung": [
@@ -194,7 +361,12 @@
           "evidenz": "offen",
           "stand": "2026-10-01",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         }
       ]
     },
@@ -311,7 +483,27 @@
           "beleg_programm_url": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf#page=17",
           "stand": "2026-09-30",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Die Einnahmen betrugen 2024 bei der Energiesteuer 36,6 Mrd. Euro und bei der Kfz-Steuer 9,7 Mrd. Euro (UBA, vorläufig); sie sänken mit dem Abschmelzen bzw. der Abschaffung entsprechend.",
+                "quelle_url": "https://www.umweltbundesamt.de/daten/umweltindikatoren/indikator-umweltbezogene-steuern",
+                "belegstufe": "A"
+              },
+              {
+                "bereich": "umwelt",
+                "richtung": "nachteil",
+                "text": "Zum Vergleich: Die befristete Energiesteuersenkung auf Kraftstoffe 2026 begünstigt laut Gesetzentwurf den Einsatz fossiler Energien vorübergehend; das ist nicht die Wirkung dieser Maßnahme.",
+                "quelle_url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1165456",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 7266,
@@ -342,7 +534,34 @@
           "beleg_programm_url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf#page=14",
           "stand": "2026-09-30",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Zum Vergleich: Die befristete Senkung um 14,04 Cent je Liter von Mai bis Juni 2026 kostete laut Gesetzentwurf 1,6 Mrd. Euro; das sind nicht die Kosten einer dauerhaften Senkung.",
+                "quelle_url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1165456",
+                "belegstufe": "A"
+              },
+              {
+                "bereich": "umwelt",
+                "richtung": "nachteil",
+                "text": "Laut Gesetzentwurf begünstigt eine Senkung der Energiesteuer den Einsatz fossiler Energien vorübergehend und kann den Kraftstoffverbrauch zeitweise steigern.",
+                "quelle_url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1165456",
+                "belegstufe": "A"
+              },
+              {
+                "bereich": "verteilung",
+                "richtung": "nachteil",
+                "text": "Zum Vergleich (Tankrabatt 2022): Laut DIW entlastet er eher wohlhabende Haushalte, die viel mit großen Autos fahren, und wirkt wie eine Umverteilung von unten nach oben.",
+                "quelle_url": "https://www.diw.de/de/diw_01.c.861731.de/nachrichten/entlastung_fuer_autofahrer__der_tankrabatt_ist_das_naheliegendste__aber_auch_schlechteste_instrument.html",
+                "belegstufe": "B"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 7027,
@@ -416,7 +635,12 @@
           "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=36",
           "stand": "2026-09-30",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 7263,
@@ -501,7 +725,12 @@
           "evidenz": "offen",
           "stand": "2026-10-01",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         }
       ]
     }

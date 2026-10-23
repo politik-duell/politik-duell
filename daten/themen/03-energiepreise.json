@@ -86,7 +86,12 @@
       "wirksamkeit": 2,
       "umsetzbarkeit": 2,
       "begruendung": "Senkt den Strompreis für Haushalte um gut 2 Cent je Kilowattstunde; kostet den Bundeshaushalt mehrere Milliarden Euro im Jahr.",
-      "evidenz": "belegt"
+      "evidenz": "belegt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-22",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6705,
@@ -199,7 +204,12 @@
       "wirksamkeit": 1,
       "umsetzbarkeit": 3,
       "begruendung": "Haushalte, die Strom in günstigen Stunden nutzen können, sparen; für viele Haushalte ohne Wärmepumpe, E-Auto oder Batterie ist die Ersparnis gering.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-22",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6828,
@@ -207,7 +217,12 @@
       "wirksamkeit": 1,
       "umsetzbarkeit": 0,
       "begruendung": "Mehr Pipelinegas könnte den Gaspreis senken, würde die Abhängigkeit von einem einzelnen Lieferland aber wieder erhöhen; die EU hat mit der Verordnung (EU) 2026/261 die Einfuhr von russischem Gas verboten (Pipelinegas spätestens ab Herbst 2027), eine Wiederaufnahme wäre EU-rechtswidrig.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-22",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     }
   ],
   "abdeckung": [
@@ -281,7 +296,12 @@
           "evidenz": "gemischt",
           "stand": "2026-09-30",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 6822,
@@ -295,7 +315,12 @@
           "evidenz": "offen",
           "stand": "2026-09-30",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         }
       ]
     },
@@ -347,7 +372,12 @@
           "evidenz": "offen",
           "stand": "2026-09-30",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         }
       ]
     },
@@ -421,7 +451,27 @@
           "evidenz": "gemischt",
           "stand": "2026-09-30",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Die Bundesförderung für effiziente Gebäude ist im Regierungsentwurf zum Haushalt 2027 mit rund 12,56 Mrd. Euro im KTF veranschlagt – das Programm insgesamt, nicht die Kosten dieser Maßnahme.",
+                "quelle_url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1205500",
+                "belegstufe": "A"
+              },
+              {
+                "bereich": "umwelt",
+                "richtung": "gemischt",
+                "text": "Wärmepumpen vermieden laut Umweltbundesamt 2020 rund 2 Mio. t Treibhausgase bei 1,3 Mio. Anlagen; entweichendes Kältemittel verursacht zusätzliche Emissionen.",
+                "quelle_url": "https://www.umweltbundesamt.de/themen/klima-energie/erneuerbare-energien/umgebungswaerme-waermepumpen",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 6823,
@@ -435,7 +485,20 @@
           "evidenz": "gemischt",
           "stand": "2026-09-30",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [
+              {
+                "bereich": "umwelt",
+                "richtung": "vorteil",
+                "text": "Zum Vergleich: Erneuerbare Energien vermieden 2024 laut Umweltbundesamt bereits rund 259 Mio. t CO₂-Äquivalente, davon 40 Mio. t im Wärmesektor.",
+                "quelle_url": "https://www.umweltbundesamt.de/publikationen/emissionsbilanz-erneuerbarer-energietrager-2024",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         }
       ]
     },
@@ -465,7 +528,20 @@
           "evidenz": "gemischt",
           "stand": "2026-09-30",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [
+              {
+                "bereich": "umwelt",
+                "richtung": "nachteil",
+                "text": "Freileitungen führen laut Bundesamt für Naturschutz zu Kollisionen von Vögeln, Eingriffen in Gehölzbestände und Beeinträchtigungen des Landschaftsbildes.",
+                "quelle_url": "https://www.bfn.de/stromleitungen",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 6728,
@@ -620,7 +696,20 @@
           "evidenz": "offen",
           "stand": "2026-09-30",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [
+              {
+                "bereich": "wirtschaft",
+                "richtung": "nachteil",
+                "text": "Erzeugungsanlagen sollen künftig voraussichtlich 4 bis 7 Euro je kW und Jahr zahlen; Bestandsanlagen sind 20 Jahre ausgenommen, der Marktpreis ändert sich laut Bundesnetzagentur kaum.",
+                "quelle_url": "https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2026/20260527_Agnes.html",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 6736,
@@ -667,7 +756,27 @@
           "evidenz": "gemischt",
           "stand": "2026-09-30",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Das bestehende Gebäudeförderprogramm (BEG) ist im Haushaltsentwurf 2027 mit rund 12,56 Mrd. Euro im KTF angesetzt – das Programm insgesamt, nicht die Kosten dieser Maßnahme.",
+                "quelle_url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1205500",
+                "belegstufe": "A"
+              },
+              {
+                "bereich": "umwelt",
+                "richtung": "vorteil",
+                "text": "Öl- und Gasheizungen verursachen in Privathaushalten laut Umweltbundesamt die meisten CO₂-Emissionen; ein Umstieg etwa auf Wärmepumpen setzt dort an.",
+                "quelle_url": "https://www.umweltbundesamt.de/service/newsletter/archiv/uba-aktuell-nr-12026",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         }
       ]
     },
@@ -697,7 +806,20 @@
           "evidenz": "offen",
           "stand": "2026-09-30",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Zum Vergleich auf Landesebene: Berlin erwartete 2021 für den Kauf seines Stromnetzes Anschaffungskosten von rund 2,14 Mrd. Euro, finanziert über Kredite mit Landesbürgschaften.",
+                "quelle_url": "https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2021/pressemitteilung.1079401.php",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 6831,
@@ -733,7 +855,12 @@
           "evidenz": "gemischt",
           "stand": "2026-09-30",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 6834,
@@ -747,7 +874,20 @@
           "evidenz": "gemischt",
           "stand": "2026-09-30",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [
+              {
+                "bereich": "umwelt",
+                "richtung": "nachteil",
+                "text": "Die neuen Gaskraftwerke (zunächst rund 11 GW) sollen wasserstofffähig sein und erst ab 2045 klimaneutral betrieben werden; bis dahin ist ein Betrieb mit Erdgas möglich.",
+                "quelle_url": "https://www.bundestag.de/dokumente/textarchiv/2026/kw28-de-versorgungssicherheit-strom-1192538",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 6835,
@@ -772,7 +912,27 @@
           "evidenz": "gemischt",
           "stand": "2026-09-30",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-22",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Im Regierungsentwurf des Bundeshaushalts 2027 sind rund 12,56 Mrd. Euro im Klima- und Transformationsfonds für die Bundesförderung für effiziente Gebäude vorgesehen, die auch Heizungstausch umfasst.",
+                "quelle_url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1205500",
+                "belegstufe": "A"
+              },
+              {
+                "bereich": "umwelt",
+                "richtung": "vorteil",
+                "text": "Wärmepumpen ersetzen fossile Heizungen; laut Umweltbundesamt ist ihre Klimabilanz schon heute gut und wird mit mehr Strom aus erneuerbaren Energien besser, Ölheizungen emittieren am meisten CO₂.",
+                "quelle_url": "https://www.umweltbundesamt.de/themen/mehr-klimaschutz-einer-neuen-heizung",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         }
       ]
     }
