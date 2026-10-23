@@ -111,6 +111,47 @@ KI-Entwurf (`ki_entwurf: true`), noch nicht gegengelesen. Zehn Hinweise an siebe
 
 **Erster Lauf des Skills (22. 10. 2026)** für die übrigen 15 Lösungswege, drei Agenten ohne Parteibezug: elf Hinweise an acht Wegen (3 Vorteile, 7 Nachteile, 1 gemischt), alle Belegstufe A; je Teil zwei Belege im Original nachgesehen. Sieben Wege ohne belegte Folge (6704, 6709, 6715, 6719, 6822, 6828, 6833). Protokoll: `daten/protokolle/nebenwirkungen-3/2026-10-22/`. Im Urteil korrigiert: Gesamtzahlen eines Sektors oder aller Erneuerbaren nur ausdrücklich „zum Vergleich“ (keine Wirkung der Maßnahme), dieselbe Haushaltsquelle für ähnliche Förderwege, Verbandsaussage durch amtliche Angabe ersetzt. Lehre: Drucksachen als PDF ließen sich oft nicht lesen – Zahlen daraus blieben draußen.
 
+**Zweiter Lauf (22./23. 10. 2026)** für fünf weitere Themen, 21 Teile, alle Lösungswege ohne Parteibezug:
+
+| Thema | Lösungswege | mit Hinweis | Vorteile | Nachteile | gemischt |
+|---|---|---|---|---|---|
+| 16 Heizungstausch | 15 | 9 | 3 | 9 | 1 |
+| 7 Rente | 23 | 12 | 2 | 13 | 3 |
+| 2 Miete | 40 | 17 | 5 | 11 | 3 |
+| 38 Krankenkasse | 24 | 3 | 0 | 3 | 0 |
+| 15 Autofahren | 13 | 10 | 3 | 19 | 0 |
+
+Die Bilanz neigt zu Nachteilen, vor allem weil fast jeder Haushaltshinweis eine Belastung ist. Beim Gegenlesen sollte man prüfen, ob Vorteile ausreichend gesucht wurden. Bei Krankenkasse gehören die meisten Folgen (Beiträge, Eigenanteile, Leistungen) zum Thema selbst, deshalb gibt es dort kaum Hinweise. Im Urteil der Koordination gefestigte Regeln:
+
+- Haushalt erst ab Milliardenbeträgen, Aufwand nur mit Größenordnung.
+- Kosten eines anderen Programms nur mit „Zum Vergleich:“.
+- Keine eigenen Hochrechnungen.
+- Fach- und Tagespresse ist kein Beleg, auch wenn sie eine Behörde zitiert.
+- Für ähnliche Wege dieselbe Quelle verwenden, z. B. BEG-Haushalt, sozialer Wohnungsbau (BMWSB 20.03.2026), BVerfG zur Mietpreisbremse.
+- Für „einführen“ und „abschaffen“ spiegelbildliche Hinweise.
+- Beitragssätze, Mieten oder Fahrkosten der Betroffenen gehören zum Thema selbst.
+
+**Verbrauch** (`npm run nebenwirkungen:verbrauch`, je Thema als `verbrauch.json` im Protokoll), für alle sechs bisher erfassten Themen (130 Lösungswege, 24 Teile):
+
+- **Agenten:** 6,8 Mio. Tokens neu gelesen, 74 Mio. aus dem Cache, 1,2 Mio. Ausgabe. Das sind rund 52 000 neu gelesene Tokens je Lösungsweg.
+- **Recherche:** 1 669 Websuchen (≈ 13 je Weg) und 481 Abrufe.
+- **Koordination:** rund 0,9 Mio. Tokens neu, 29 Mio. aus dem Cache.
+- **Nacharbeit:** Fast die Hälfte des Agentenverbrauchs (47 %) fiel nach der ersten Rückfrage an. Bei Teilen, deren Auftrag die Regeln oben schon enthielt, sank der Anteil auf 9–38 % (Autofahren, Krankenkasse, spätere Miete-Teile). Bei den ersten Teilen lag er bei 65–71 %.
+- **Abbrüche:** 11 Limitabbrüche bei sieben parallelen Agenten.
+
+Ansätze zum Optimieren, nach erwartetem Nutzen:
+
+1. Die Regeln oben in die Agentendefinition übernehmen, statt sie erst per Rückfrage nachzuliefern.
+2. Die Selbstprüfung um prüfbare Fehler erweitern, die oft zu Rückfragen führten:
+   - gleiche `gesucht_*`-Listen über mehrere Wege,
+   - `quelle_url` auf ein PDF,
+   - bekannte Sekundärquellen,
+   - Aufwand ohne Zahl.
+3. Eine Liste gemeinsamer Quellen je Thema vorab mitgeben.
+4. Eine erlaubte PDF-zu-Text-Funktion für amtliche Drucksachen. Viele Abrufe scheiterten an PDFs.
+5. Je Bereich eine Suche für beide Richtungen statt zwei, das halbiert die Pflichtsuchen. Die Cache-Lesungen wachsen mit jeder Runde.
+6. Weniger Agenten gleichzeitig, um Limitabbrüche zu vermeiden.
+
 **Erste Lehren:**
 
 - **Vorteile muss man aktiv suchen.** Zuerst fanden sich fast nur Nachteile bei fossilen und Vorteile bei erneuerbaren Lösungswegen. Erst gezielte Suche ergab die Gegenrichtung (Verteilung bei 6706, Haushalt bei 6707). Für die Recherche-Anleitung: je Lösungsweg ausdrücklich nach Vor- *und* Nachteilen in jedem Bereich fragen.
