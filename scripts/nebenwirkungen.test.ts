@@ -10,6 +10,7 @@ import {
   nebenwirkungenEintragen,
   pruefeNebenAntwort,
   pruefeWerkzeuge,
+  zahlenOhneBeleg,
   TEIL_GROESSE,
   teileNachUrsache,
   type NebenAntwort,
@@ -27,7 +28,7 @@ const liste = (ids: number[] = [1, 2], ursache = (id: number) => id): NebenBlind
 })
 const hinweis = (ueber: Partial<NebenHinweis> = {}): NebenHinweis => ({
   richtung: 'nachteil', text: 'Kostet den Haushalt rund 5 Mrd. Euro im Jahr.', quelle_url: 'https://www.destatis.de/a', belegstufe: 'A',
-  beleg: 'Die Mindereinnahmen betragen rund fünf Milliarden Euro.', ...ueber,
+  beleg: 'Die Mindereinnahmen betragen rund 5 Milliarden Euro.', ...ueber,
 })
 const einheit = (id: number, hinweise: Partial<Record<string, NebenHinweis>> = {}) => ({
   id,
@@ -109,14 +110,14 @@ describe('Nebenwirkungen: Recherche ohne Parteinamen', () => {
     expect(in_('umwelt', hinweis({ quelle_url: 'https://www.pharmazeutische-zeitung.de/a' }))).toMatch(/Presse oder Sekundärquelle/)
     expect(in_('umwelt', hinweis({ zweite_quelle_url: 'https://www.faz.net/b', belegstufe: 'C' }))).toMatch(/faz\.net ist Presse/)
     expect(in_('umwelt', hinweis({ quelle_url: 'https://dserver.bundestag.de/btd/21/1/1.pdf' }))).toMatch(/PDF mit Seite/)
-    expect(in_('umwelt', hinweis({ quelle_url: 'https://dserver.bundestag.de/btd/21/1/1.pdf', beleg: 'Die Mindereinnahmen betragen rund fünf Mrd. Euro (S. 4).' }))).toBe('')
+    expect(in_('umwelt', hinweis({ quelle_url: 'https://dserver.bundestag.de/btd/21/1/1.pdf', beleg: 'Die Mindereinnahmen betragen rund 5 Mrd. Euro (S. 4).' }))).toBe('')
     expect(in_('umwelt', hinweis({ beleg: 'einkommensschwache Haushalte [geben] mehr für Lebensmittel aus' }))).toMatch(/zusammengesetzt/)
     expect(in_('umwelt', hinweis({ beleg: 'Wirtschaft rund 432 000 Euro … Verwaltung Bund rund 1,3 Mio. Euro' }))).toMatch(/zusammengesetzt/)
-    expect(in_('umwelt', hinweis({ beleg: '„… die Mindereinnahmen betragen rund fünf Milliarden Euro …“' }))).toBe('')
-    expect(in_('umwelt', hinweis({ quelle_url: 'https://dserver.bundestag.de/btd/21/1/1.pdf', beleg: 'Die Mindereinnahmen betragen rund fünf Mrd. Euro … S. 4' }))).toBe('')
+    expect(in_('umwelt', hinweis({ beleg: '„… die Mindereinnahmen betragen rund 5 Milliarden Euro …“' }))).toBe('')
+    expect(in_('umwelt', hinweis({ quelle_url: 'https://dserver.bundestag.de/btd/21/1/1.pdf', beleg: 'Die Mindereinnahmen betragen rund 5 Mrd. Euro … S. 4' }))).toBe('')
     expect(in_('haushalt', hinweis({ text: 'Kostet den Bund rund 300 Mio. Euro im Jahr.' }))).toMatch(/Milliardenbeträgen/)
     expect(in_('aufwand', hinweis({ text: 'Mehr Nachweispflichten für Betriebe.' }))).toMatch(/Größenordnung/)
-    expect(in_('aufwand', hinweis({ text: 'Erfüllungsaufwand der Wirtschaft rund 40 Mio. Euro im Jahr.' }))).toBe('')
+    expect(in_('aufwand', hinweis({ text: 'Erfüllungsaufwand der Wirtschaft rund 40 Mio. Euro im Jahr.', beleg: 'Der Erfüllungsaufwand der Wirtschaft beträgt rund 40 Mio. Euro jährlich.' }))).toBe('')
   })
 
   it('verlangt bei Wegen zur selben Ursache ein Gegenstück oder einen Grund', () => {
@@ -128,12 +129,19 @@ describe('Nebenwirkungen: Recherche ohne Parteinamen', () => {
     expect(fehler(antwort([einheit(1, { haushalt: hinweis() }), einheit(2, { haushalt: hinweis({ richtung: 'vorteil' }) })]), gleich)).toBe('')
   })
 
+  it('verlangt, dass Zahlen im Text im Beleg stehen', () => {
+    expect(fehler(antwort([einheit(1, { haushalt: hinweis({ text: 'Kostet rund 5 Mrd. Euro, davon 3 Mrd. Euro beim Bund.' }) }), einheit(2)]))).toMatch(/Zahl 3 steht im Text, aber nicht im Beleg/)
+    expect(zahlenOhneBeleg('Der CO2-Preis brachte 2025 rund 16 Mrd. Euro (Bundesverkehrswegeplan 2030).', 'Im Jahr 2025 lagen die Einnahmen bei rund 16 Milliarden Euro.')).toEqual({ zahlen: [], jahre: ['2030'] })
+    expect(zahlenOhneBeleg('Rund 1.500 km und 25,6 %', 'über 1500 km, 25,6 Prozent')).toEqual({ zahlen: [], jahre: [] })
+  })
+
   it('gleicht Suchen und Quellen mit dem Transkript ab', () => {
     const a = antwort()
     const gelaufen = { suchen: a.einheiten.flatMap((e) => e.bereiche.flatMap((b) => b.gesucht)), adressen: ['https://www.destatis.de/a/'] }
     expect(pruefeWerkzeuge(a, gelaufen)).toEqual([])
     expect(pruefeWerkzeuge(a, { ...gelaufen, suchen: gelaufen.suchen.slice(1) }).join()).toMatch(/1 › haushalt: „gesucht“ enthält nicht ausgeführte Suchen \(„Weg 1 haushalt/)
     expect(pruefeWerkzeuge(a, { ...gelaufen, adressen: ['https://www.bvai.de/a'] }).join()).toMatch(/destatis\.de\/a nicht selbst geöffnet/)
+    expect(pruefeWerkzeuge(a, { ...gelaufen, suchen: gelaufen.suchen.slice(0, 3) }).join()).toMatch(/Nur 3 verschiedene Suchen für 2 Lösungswege – mindestens 2 je Weg/)
     // Mit Transkript darf dieselbe Suche für mehrere Wege stehen.
     const e = einheit(2)
     e.bereiche[0].gesucht = [...einheit(1).bereiche[0].gesucht]

@@ -166,6 +166,12 @@ Die Bilanz neigt zu Nachteilen, vor allem weil fast jeder Haushaltshinweis eine 
 12. **Beleg im Original** (`scripts/nebenwirkungen/original.ts`): Das Skript lädt die Quelle selbst, als PDF je Seite, als HTML im Text. Es lehnt einen Beleg ab, der dort nicht wörtlich steht, und bei PDFs eine falsche Seite. Nicht ladbare Seiten meldet es nur als Hinweis. Die Stichprobe der Koordination prüft damit nur noch, ob der Beleg den Text trägt.
 13. **Gleiche Maßstäbe je Ursache:** Die Teil-Liste nennt je Weg die Nummer seiner Ursache. Hat ein Weg zur selben Ursache in einem Bereich einen Hinweis, braucht jeder andere dort ein Gegenstück oder in `ohne` einen kurzen Grund.
 
+**Messung Thema 45** (44 Wege, 23. 10. 2026): 14 000 neu gelesene Tokens und 2,3 Suchen je Weg, 41 % Nacharbeit, kein Limitabbruch. Alle acht Teile brauchten eine Rückfrage. Mit dem Abgleich ehrlicher, aber anfangs dünn: Ein Agent machte fünf Suchen für sechs Wege. Daraus:
+
+14. **Mindestens zwei Suchen je Weg:** Die Prüfung zählt die verschiedenen Suchen im Transkript.
+15. **Zahlen im Text stehen im Beleg** (in vier von acht Teilen ein Rückfragegrund): sonst Fehler. Jahre nur als Warnung, weil sie oft Kontext sind („Bundesverkehrswegeplan 2030“).
+16. **„Zum Vergleich“ nur bei echter Haushaltsänderung:** Schichtet ein Weg nur um oder ändert er die Vergabe, ist das Programmvolumen keine Folge des Wegs. Diese Regel steht in der Agentendefinition, weil sie nicht prüfbar ist. Ebenso: Eine Evaluation im Auftrag eines Ministeriums ist Belegstufe B.
+
 **Erste Lehren:**
 
 - **Vorteile muss man aktiv suchen.** Zuerst fanden sich fast nur Nachteile bei fossilen und Vorteile bei erneuerbaren Lösungswegen. Erst gezielte Suche ergab die Gegenrichtung (Verteilung bei 6706, Haushalt bei 6707). Für die Recherche-Anleitung: je Lösungsweg ausdrücklich nach Vor- *und* Nachteilen in jedem Bereich fragen.
