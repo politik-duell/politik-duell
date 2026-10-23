@@ -51,7 +51,27 @@
       "begruendung": "Laut UBA spart Tempo 130 etwa 1,3-2,0 Mio. t, Tempo 120 mit 80 außerorts rund 6,6 Mio. t CO2-Äq. pro Jahr; per Gesetz sofort umsetzbar und kostengünstig, deckt aber nur einen Teil der Verkehrslücke.",
       "evidenz": "belegt",
       "beleg_studie_url": "https://www.umweltbundesamt.de/themen/verkehr/nachhaltige-mobilitaet/tempolimit",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "wirtschaft",
+            "richtung": "nachteil",
+            "text": "Ein allgemeines Tempolimit verursacht laut einer älteren UBA-Studie Kosten durch höheren Zeitbedarf der Pkw-Fahrer bei gegebener Wegstrecke.",
+            "quelle_url": "https://www.umweltbundesamt.de/system/files/medien/publikation/long/3136.pdf",
+            "belegstufe": "A"
+          },
+          {
+            "bereich": "grundrechte",
+            "richtung": "vorteil",
+            "text": "Ein Tempolimit kann laut Umweltbundesamt die Zahl schwerer Unfälle und die Schwere der Verletzungen verringern.",
+            "quelle_url": "https://www.umweltbundesamt.de/themen/verkehr/nachhaltige-mobilitaet/tempolimit",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 10882,
@@ -61,7 +81,27 @@
       "begruendung": "Hält den Status quo; die laut UBA mögliche Minderung von 1,3 bis 6,6 Mio. t CO2-Äq. pro Jahr bleibt ungenutzt, die Verkehrsemissionen sinken dadurch nicht.",
       "evidenz": "belegt",
       "beleg_studie_url": "https://www.umweltbundesamt.de/themen/verkehr/nachhaltige-mobilitaet/tempolimit",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "wirtschaft",
+            "richtung": "vorteil",
+            "text": "Ohne Tempolimit entfällt der höhere Zeitbedarf der Pkw-Fahrer bei gegebener Wegstrecke, den laut einer älteren UBA-Studie ein allgemeines Tempolimit verursacht.",
+            "quelle_url": "https://www.umweltbundesamt.de/system/files/medien/publikation/long/3136.pdf",
+            "belegstufe": "A"
+          },
+          {
+            "bereich": "grundrechte",
+            "richtung": "nachteil",
+            "text": "Ohne Tempolimit bleibt die Verringerung schwerer Unfälle und der Verletzungsschwere ungenutzt, die laut Umweltbundesamt ein Tempolimit bringen kann.",
+            "quelle_url": "https://www.umweltbundesamt.de/themen/verkehr/nachhaltige-mobilitaet/tempolimit",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 10883,
@@ -71,7 +111,27 @@
       "begruendung": "Studien zeigen, dass CO2-Preise Emissionen auch bei niedrigen Preisen senken; ihr Abbau schwächt diesen Anreiz. Rechtlich national möglich, ab dem EU-Emissionshandel für Verkehr und Wärme aber begrenzt.",
       "evidenz": "belegt",
       "beleg_studie_url": "https://strathprints.strath.ac.uk/72023",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Zum Vergleich: Der nationale Emissionshandel für Wärme und Verkehr brachte 2025 rund 16 Mrd. Euro für den Klima- und Transformationsfonds; das sind nicht die Kosten dieses Wegs.",
+            "quelle_url": "https://dehst.de/SharedDocs/Pressemitteilungen/DE/2026-001-Emissionshandel-21-Milliarden-Euro.html",
+            "belegstufe": "A"
+          },
+          {
+            "bereich": "verteilung",
+            "richtung": "gemischt",
+            "text": "Die CO2-Bepreisung von Wärme und Verkehr belastet Haushalte 2024 mit 8,5 Mrd. Euro, Geringverdienende relativ stärker; Grundsicherung und Wohngeld gleichen das weitgehend aus.",
+            "quelle_url": "https://www.umweltbundesamt.de/system/files/medien/11850/publikationen/72_2025_cc_bf.pdf",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 10884,
@@ -80,7 +140,27 @@
       "umsetzbarkeit": 2,
       "begruendung": "Mehr Straßenkapazität senkt keine Emissionen; Studien zu induziertem Verkehr zeigen eher Mehrverkehr, die Größe des Effekts schwankt aber stark je nach Lage und Stauniveau.",
       "evidenz": "gemischt",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "wirtschaft",
+            "richtung": "vorteil",
+            "text": "Straßenprojekte des Bundesverkehrswegeplans 2030 bringen laut Gesamtplanbewertung vor allem Zeitgewinne, Kosteneinsparungen und mehr Verkehrssicherheit für Verkehrsteilnehmer.",
+            "quelle_url": "https://www.bmv.de/SharedDocs/DE/Anlage/G/BVWP/bvwp-2030-kabinettsplan.pdf?__blob=publicationFile",
+            "belegstufe": "A"
+          },
+          {
+            "bereich": "umwelt",
+            "richtung": "nachteil",
+            "text": "Beim Bundesverkehrswegeplan 2030 ist die Flächeninanspruchnahme der Straße je investiertem Euro fast fünfmal so groß wie bei der Schiene und zwölfmal so groß wie bei der Wasserstraße.",
+            "quelle_url": "https://www.bmv.de/SharedDocs/DE/Anlage/G/BVWP/bvwp-2030-kabinettsplan.pdf?__blob=publicationFile",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 10885,
@@ -89,7 +169,20 @@
       "umsetzbarkeit": 2,
       "begruendung": "Neue Radwege werden genutzt, ersetzen laut Studien aber oft nur wenige Autofahrten; ohne begleitende Maßnahmen bleibt die CO2-Wirkung klein. Bund kann über Förderprogramme beitragen.",
       "evidenz": "gemischt",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "grundrechte",
+            "richtung": "vorteil",
+            "text": "Regelmäßiges Radfahren erhöht laut einer vom Umweltbundesamt genannten Untersuchung die Lebenserwartung um 3 bis 14 Monate.",
+            "quelle_url": "https://www.umweltbundesamt.de/themen/verkehr/nachhaltige-mobilitaet/radverkehr",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 10886,
@@ -99,7 +192,20 @@
       "begruendung": "EU-Flottengrenzwerte haben die Neuwagen-Emissionen 2019-2023 um rund 28 % gesenkt; die Wirkung auf den Bestand kommt aber verzögert, und die Regel hängt von EU-Entscheidungen ab.",
       "evidenz": "belegt",
       "beleg_studie_url": "https://www.eea.europa.eu/data-and-maps/indicators/average-co2-emissions-from-motor-vehicles-1/assessment",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "umwelt",
+            "richtung": "vorteil",
+            "text": "Elektroautos stoßen laut Umweltbundesamt lokal keine Abgasschadstoffe aus und verringern die Lärmbelastung.",
+            "quelle_url": "https://www.umweltbundesamt.de/umwelttipps-fuer-den-alltag/beim-autokauf-elektroautos-bevorzugen-auf-geringen",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 10887,
@@ -109,7 +215,12 @@
       "begruendung": "Flottengrenzwerte haben die Neuwagen-Emissionen nachweislich gesenkt; ihre Aufhebung bremst die Minderung. Zudem kann Deutschland die EU-Verordnung nicht allein ändern.",
       "evidenz": "belegt",
       "beleg_studie_url": "https://www.eea.europa.eu/data-and-maps/indicators/average-co2-emissions-from-motor-vehicles-1/assessment",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 10888,
@@ -119,7 +230,27 @@
       "begruendung": "Schiene verursacht je Tonnenkilometer deutlich weniger Emissionen; trotz Förderung stagniert der Kombiverkehr aber, weil er privat rund 28 % teurer ist. Ausbau braucht Jahre.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://repositum.tuwien.at/handle/20.500.12708/189196?mode=full",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "umwelt",
+            "richtung": "gemischt",
+            "text": "Je Tonnenkilometer stießen Güterbahnen 2022 rund 0,032 g Stickoxide aus, Lkw 0,198 g, Binnenschiffe 0,415 g; bei Luftschadstoffen hat nur die Schiene einen Vorteil.",
+            "quelle_url": "https://www.umweltbundesamt.de/system/files/medien/479/publikationen/schwere_lasten_grosse_aufgabe_ein_ziel_v5_240822_bf.pdf",
+            "belegstufe": "A"
+          },
+          {
+            "bereich": "grundrechte",
+            "richtung": "nachteil",
+            "text": "Der Schienengüterverkehr ist besonders laut und fährt vor allem nachts, wenn Anwohner besonders lärmempfindlich sind (Umweltbundesamt, 2017).",
+            "quelle_url": "https://www.umweltbundesamt.de/presse/pressemitteilungen/jeder-fuenfte-deutsche-leidet-unter-schienenlaerm",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 10889,
@@ -128,7 +259,27 @@
       "umsetzbarkeit": 2,
       "begruendung": "Weniger Kontrolle der Stickstoffüberschüsse senkt kein Lachgas, sondern riskiert mehr; der Nutzen der Stoffstrombilanz für die Beratung ist allerdings umstritten. Lockerungen stoßen an die EU-Nitratrichtlinie.",
       "evidenz": "gemischt",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "aufwand",
+            "richtung": "vorteil",
+            "text": "Die Streichung der Stoffstrombilanz senkt den Erfüllungsaufwand um jährlich 18,1 Millionen Euro.",
+            "quelle_url": "https://dserver.bundestag.de/brd/2026/0251-26.pdf",
+            "belegstufe": "A"
+          },
+          {
+            "bereich": "umwelt",
+            "richtung": "nachteil",
+            "text": "An landwirtschaftlich geprägten Grundwassermessstellen überschreiten 25,6 % den Nitrat-Grenzwert von 50 mg/l; weniger Kontrolle der Überschüsse riskiert mehr.",
+            "quelle_url": "https://www.umweltbundesamt.de/daten/wasser/grundwasserbeschaffenheit",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 10890,
@@ -138,7 +289,20 @@
       "begruendung": "Der Expertenrat sah im Wegfall sektoraler Nachsteuerung eine erhöhte Gefahr der Zielverfehlung; zugleich wurden Sektorziele früher trotz Sofortprogrammen verfehlt. Per Gesetzesänderung schnell möglich.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.aerzteblatt.de/news/expertenrat-sieht-ampelplaene-zum-klimaschutzgesetz-kritisch-bb9035c9-d676-4e4e-88fe-42c073c03dc9",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Zum Vergleich: Das Sofortprogramm 2020 für den Gebäudesektor sah zusätzliche Mittel von 5,8 Mrd. Euro für die Gebäudeförderung 2021 vor; das sind nicht die Kosten dieses Wegs.",
+            "quelle_url": "https://expertenrat-klima.de/fileadmin/ERK/Pressemitteilungen_Meldungen/ERK2021_Pruefbericht-Sofortprogramm-Gebaeudesektor_Pressemitteilung.pdf",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 10891,
@@ -148,7 +312,27 @@
       "begruendung": "Der EU-Emissionshandel hat Emissionen nachweislich gesenkt, eine Obergrenze sichert die Gesamtmenge; Sektorverfehlungen werden aber nicht behoben, und die Ausweitung hängt von EU-Entscheidungen ab.",
       "evidenz": "belegt",
       "beleg_studie_url": "https://strathprints.strath.ac.uk/72023",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "vorteil",
+            "text": "Zum Vergleich: Der nationale Emissionshandel für Wärme und Verkehr, die bisher nicht im EU-Emissionshandel liegen, brachte 2025 rund 16 Mrd. Euro; das sind nicht die Erlöse dieses Wegs.",
+            "quelle_url": "https://dehst.de/SharedDocs/Pressemitteilungen/DE/2026-001-Emissionshandel-21-Milliarden-Euro.html",
+            "belegstufe": "A"
+          },
+          {
+            "bereich": "verteilung",
+            "richtung": "nachteil",
+            "text": "Zum Vergleich: Die CO2-Bepreisung von Wärme und Verkehr (nationaler Emissionshandel) belastete 2024 private Haushalte mit 8,5 Mrd. Euro und Unternehmen mit 3,8 Mrd. Euro; nicht die Kosten dieses Wegs.",
+            "quelle_url": "https://www.umweltbundesamt.de/system/files/medien/11850/publikationen/72_2025_cc_bf.pdf",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     }
   ],
   "abdeckung": [
@@ -224,7 +408,20 @@
           "evidenz": "offen",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [
+              {
+                "bereich": "verteilung",
+                "richtung": "gemischt",
+                "text": "Etwa die Hälfte der Erbschaften und Schenkungen liegt unter 50.000 Euro, Übertragungen über 500.000 Euro erhalten 1,5 Prozent der Begünstigten; ein Abzug setzt an dieser Verteilung an.",
+                "quelle_url": "https://www.diw.de/de/diw_01.c.524604.de/publikationen/wochenberichte/2016_03_1/hohe_erbschaftswelle__niedriges_erbschaftsteueraufkommen.html",
+                "belegstufe": "B"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10898,
@@ -240,7 +437,20 @@
           "evidenz": "belegt",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [
+              {
+                "bereich": "umwelt",
+                "richtung": "nachteil",
+                "text": "Rund 70 Prozent der Ammoniak-Emissionen stammen aus der Tierhaltung; Ammoniak schädigt Land- und Wasserökosysteme erheblich.",
+                "quelle_url": "https://www.umweltbundesamt.de/themen/boden-landwirtschaft/umweltbelastungen-der-landwirtschaft/ammoniak-geruch-staub",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10899,
@@ -305,7 +515,20 @@
           "evidenz": "offen",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "gemischt",
+                "text": "Zum Vergleich: Für die Luftverkehrsteuer, die dieser Weg ersetzt, wurden 2025 rund 2,1 Mrd. Euro angemeldet; das sind nicht die Kosten dieses Wegs.",
+                "quelle_url": "https://www.destatis.de/DE/Themen/Staat/Steuern/Weitere-Steuern/luftverkehrsteuer.html",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10904,
@@ -320,7 +543,12 @@
           "evidenz": "gemischt",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10905,
@@ -335,7 +563,27 @@
           "evidenz": "gemischt",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Zum Vergleich: Die frühere Kaufprämie Umweltbonus hatte 2016 bis 2023 bewilligte Bundesmittel von 10,17 Mrd. Euro; das sind nicht die Kosten dieses Wegs.",
+                "quelle_url": "https://technopolis-group.com/wp-content/uploads/2024/11/EB_Evaluation_Umweltbonus.pdf",
+                "belegstufe": "B"
+              },
+              {
+                "bereich": "verteilung",
+                "richtung": "nachteil",
+                "text": "Bei der früheren Kaufprämie Umweltbonus hatten rund 60 % der Geförderten über 4.500 Euro und rund 30 % über 6.000 Euro Haushaltsnettoeinkommen im Monat.",
+                "quelle_url": "https://technopolis-group.com/wp-content/uploads/2024/11/EB_Evaluation_Umweltbonus.pdf",
+                "belegstufe": "B"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10906,
@@ -361,7 +609,12 @@
           "evidenz": "offen",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10908,
@@ -376,7 +629,12 @@
           "evidenz": "gemischt",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         }
       ]
     },
@@ -419,7 +677,12 @@
           "evidenz": "offen",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10912,
@@ -446,7 +709,12 @@
           "evidenz": "gemischt",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10914,
@@ -462,7 +730,20 @@
           "evidenz": "belegt",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [
+              {
+                "bereich": "verteilung",
+                "richtung": "gemischt",
+                "text": "Bisher nutzen vor allem Haushalte mit über 5.000 Euro Nettoeinkommen die BEG-Wohngebäudeförderung; die Staffelung nach Einkommen setzt an dieser Verteilung an.",
+                "quelle_url": "https://www.energiewechsel.de/KAENEF/Redaktion/DE/PDF-Anlagen/BEG/beg-evaluation-2022-beg-wg.pdf?__blob=publicationFile",
+                "belegstufe": "B"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10915,
@@ -477,7 +758,12 @@
           "evidenz": "offen",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10916,
@@ -492,7 +778,12 @@
           "evidenz": "offen",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10917,
@@ -507,7 +798,12 @@
           "evidenz": "offen",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10918,
@@ -523,7 +819,27 @@
           "evidenz": "gemischt",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [
+              {
+                "bereich": "aufwand",
+                "richtung": "nachteil",
+                "text": "Zum Vergleich: Die Pflicht zur Stoffstrombilanz verursachte jährlich 18,1 Millionen Euro Erfüllungsaufwand; das sind nicht die Kosten dieses Wegs.",
+                "quelle_url": "https://dserver.bundestag.de/brd/2026/0251-26.pdf",
+                "belegstufe": "A"
+              },
+              {
+                "bereich": "umwelt",
+                "richtung": "vorteil",
+                "text": "An landwirtschaftlich geprägten Grundwassermessstellen überschreiten 25,6 % den Nitrat-Grenzwert von 50 mg/l; eine Bilanz setzt bei den Überschüssen an.",
+                "quelle_url": "https://www.umweltbundesamt.de/daten/wasser/grundwasserbeschaffenheit",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10919,
@@ -610,7 +926,20 @@
           "evidenz": "gemischt",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [
+              {
+                "bereich": "verteilung",
+                "richtung": "nachteil",
+                "text": "Die Kappungsgrenze von 3 Euro je Quadratmeter in sechs Jahren soll Mieter vor sprunghaften Mieterhöhungen nach Modernisierung schützen; eine Lockerung verringert diesen Schutz.",
+                "quelle_url": "https://dserver.bundestag.de/btd/19/046/1904672.pdf",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10926,
@@ -626,7 +955,27 @@
           "evidenz": "gemischt",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "vorteil",
+                "text": "Zum Vergleich: Der nationale Emissionshandel für Wärme und Verkehr brachte 2025 rund 16 Mrd. Euro für den Klima- und Transformationsfonds; das sind nicht die Kosten dieses Wegs.",
+                "quelle_url": "https://dehst.de/SharedDocs/Pressemitteilungen/DE/2026-001-Emissionshandel-21-Milliarden-Euro.html",
+                "belegstufe": "A"
+              },
+              {
+                "bereich": "verteilung",
+                "richtung": "gemischt",
+                "text": "Die CO2-Bepreisung von Wärme und Verkehr belastet Haushalte 2024 mit 8,5 Mrd. Euro, Geringverdienende relativ stärker; Grundsicherung und Wohngeld gleichen das weitgehend aus.",
+                "quelle_url": "https://www.umweltbundesamt.de/system/files/medien/11850/publikationen/72_2025_cc_bf.pdf",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10927,
@@ -641,7 +990,20 @@
           "evidenz": "offen",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [
+              {
+                "bereich": "grundrechte",
+                "richtung": "nachteil",
+                "text": "Das Bundesverfassungsgericht stellte 2021 fest, dass die damaligen Vorschriften hohe Emissionsminderungslasten unumkehrbar auf Zeiträume nach 2030 verschoben.",
+                "quelle_url": "https://www.bundesverfassungsgericht.de/SharedDocs/Pressemitteilungen/DE/2021/bvg21-031.html",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10928,
@@ -667,7 +1029,12 @@
           "evidenz": "offen",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         }
       ]
     },
@@ -743,7 +1110,12 @@
           "evidenz": "offen",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10936,
@@ -797,7 +1169,12 @@
           "evidenz": "offen",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10940,
@@ -813,7 +1190,12 @@
           "evidenz": "gemischt",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10941,
@@ -839,7 +1221,12 @@
           "evidenz": "gemischt",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10943,
@@ -854,7 +1241,20 @@
           "evidenz": "belegt",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [
+              {
+                "bereich": "grundrechte",
+                "richtung": "nachteil",
+                "text": "Ein Verbot von Kurzstreckenflügen greift laut Wissenschaftlichem Dienst in Berufsfreiheit, Eigentum und Handlungsfreiheit der Fluggesellschaften ein (geprüft für Flüge unter 1.500 km).",
+                "quelle_url": "https://www.bundestag.de/resource/blob/851052/2ed2b5db2738c8a601f7d92be465ea21/WD-3-106-21-pdf-data.pdf",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10944,
@@ -880,7 +1280,27 @@
           "evidenz": "gemischt",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Zum Vergleich: Die frühere Kaufprämie Umweltbonus hatte 2016 bis 2023 bewilligte Bundesmittel von 10,17 Mrd. Euro; das sind nicht die Kosten dieses Wegs.",
+                "quelle_url": "https://technopolis-group.com/wp-content/uploads/2024/11/EB_Evaluation_Umweltbonus.pdf",
+                "belegstufe": "B"
+              },
+              {
+                "bereich": "verteilung",
+                "richtung": "vorteil",
+                "text": "Beim früheren Umweltbonus hatten rund 60 % der Fördernehmenden über 4.500 Euro Haushaltsnetto im Monat; eine Staffelung nach Einkommen setzt an dieser Verteilung an.",
+                "quelle_url": "https://technopolis-group.com/wp-content/uploads/2024/11/EB_Evaluation_Umweltbonus.pdf",
+                "belegstufe": "B"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10946,
@@ -896,7 +1316,20 @@
           "evidenz": "belegt",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Zum Vergleich: Das Deutschlandnetz, ein Teil des Ladeinfrastruktur-Ausbaus, finanziert der Bund mit rund 2,3 Mrd. Euro; das sind nicht die Kosten dieses Wegs.",
+                "quelle_url": "https://www.bmv.de/DE/Themen/Mobilitaet/Elektromobilitaet/Deutschlandnetz/deutschlandnetz.html",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10947,
@@ -912,7 +1345,27 @@
           "evidenz": "belegt",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Zum Vergleich: Die BEG-Wohngebäudeförderung setzte 2022 rund 12,2 Mrd. Euro Bundesmittel ein; das sind nicht die Kosten dieses Wegs.",
+                "quelle_url": "https://www.energiewechsel.de/KAENEF/Redaktion/DE/PDF-Anlagen/BEG/beg-evaluation-2022-beg-wg.pdf?__blob=publicationFile",
+                "belegstufe": "B"
+              },
+              {
+                "bereich": "verteilung",
+                "richtung": "nachteil",
+                "text": "Bisher nutzen vor allem Haushalte mit über 5.000 Euro Nettoeinkommen die BEG-Wohngebäudeförderung; mit sinkendem Einkommen nimmt die Inanspruchnahme ab.",
+                "quelle_url": "https://www.energiewechsel.de/KAENEF/Redaktion/DE/PDF-Anlagen/BEG/beg-evaluation-2022-beg-wg.pdf?__blob=publicationFile",
+                "belegstufe": "B"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10948,
@@ -927,7 +1380,12 @@
           "evidenz": "offen",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10949,
@@ -943,7 +1401,12 @@
           "evidenz": "gemischt",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10950,
@@ -959,7 +1422,20 @@
           "evidenz": "belegt",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [
+              {
+                "bereich": "umwelt",
+                "richtung": "vorteil",
+                "text": "Rund 70 Prozent der Ammoniak-Emissionen stammen aus der Tierhaltung; Ammoniak schädigt Land- und Wasserökosysteme erheblich, weniger Tiere setzen hier an.",
+                "quelle_url": "https://www.umweltbundesamt.de/themen/boden-landwirtschaft/umweltbelastungen-der-landwirtschaft/ammoniak-geruch-staub",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10951,
@@ -974,7 +1450,12 @@
           "evidenz": "offen",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10952,
@@ -1028,7 +1509,20 @@
           "evidenz": "offen",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Zum Vergleich: Die frühere Kaufprämie Umweltbonus hatte 2016 bis 2023 bewilligte Bundesmittel von 10,17 Mrd. Euro; das sind nicht die Kosten dieses Wegs.",
+                "quelle_url": "https://technopolis-group.com/wp-content/uploads/2024/11/EB_Evaluation_Umweltbonus.pdf",
+                "belegstufe": "B"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10956,
@@ -1044,7 +1538,20 @@
           "evidenz": "belegt",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [
+              {
+                "bereich": "umwelt",
+                "richtung": "nachteil",
+                "text": "E-Fuels im Pkw brauchen für dieselbe Fahrleistung etwa die drei- bis sechsfache Strommenge eines Elektro-Pkw.",
+                "quelle_url": "https://www.umweltbundesamt.de/themen/verkehr/kraftstoffe-antriebe",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 10957,
@@ -1082,7 +1589,27 @@
           "evidenz": "belegt",
           "stand": "2026-10-22",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Zum Vergleich: Europäischer und nationaler Emissionshandel brachten in Deutschland 2025 zusammen 21,4 Mrd. Euro Einnahmen für den Klimafonds; das sind nicht die Kosten dieses Wegs.",
+                "quelle_url": "https://dehst.de/SharedDocs/Pressemitteilungen/DE/2026-001-Emissionshandel-21-Milliarden-Euro.html",
+                "belegstufe": "A"
+              },
+              {
+                "bereich": "verteilung",
+                "richtung": "vorteil",
+                "text": "Zum Vergleich: Die CO2-Bepreisung von Wärme und Verkehr (nationaler Emissionshandel) belastete 2024 private Haushalte mit 8,5 Mrd. Euro; das sind nicht die Einsparungen dieses Wegs.",
+                "quelle_url": "https://www.umweltbundesamt.de/system/files/medien/11850/publikationen/72_2025_cc_bf.pdf",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         }
       ]
     }

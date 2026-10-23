@@ -12,6 +12,7 @@ import { ohneParteinamen } from '../supabase/functions/_shared/ki.ts'
 // @ts-expect-error – Hook in reinem JavaScript (schneller Start), ohne Typdeklaration
 import { gesperrteAdresse } from '../.claude/hooks/sperre.mjs'
 import { verdaechtigeReste } from './entwurf.ts'
+import { fehlendeZahlen } from './zitate.ts'
 
 export const NEBEN_ORDNER = (themaId: number) => `.cache/nebenwirkungen/${themaId}`
 /** Lösungswege je Agent: sechs Bereiche × zwei Richtungen je Weg – mehr wird für einen Agenten zu lang. */
@@ -319,6 +320,11 @@ export function pruefeNebenAntwort(liste: NebenBlindliste, antwort: NebenAntwort
         fehler.push(`${bOrt}: „beleg“ zusammengesetzt (Auslassung „…“ oder Einschub „[ ]“) – ein zusammenhängender Abschnitt wörtlich aus der Quelle`)
       else if (typeof h.quelle_url === 'string' && PDF.test(h.quelle_url) && !/\bS\.\s*\d/.test(h.beleg))
         fehler.push(`${bOrt}: „beleg“ aus einem PDF mit Seite („S. 12“) – gelesen mit npm run -s nebenwirkungen:pdf`)
+      if (typeof h.text === 'string' && typeof h.beleg === 'string') {
+        const z = zahlenOhneBeleg(h.text, h.beleg)
+        if (z.zahlen.length) fehler.push(`${bOrt}: Zahl ${z.zahlen.join(', ')} steht im Text, aber nicht im Beleg – weglassen oder einen längeren Abschnitt als Beleg`)
+        if (z.jahre.length) warnungen.push(`${bOrt}: Jahr ${z.jahre.join(', ')} steht im Text, aber nicht im Beleg – stimmt es?`)
+      }
     }
     if (hinweise > MAX_HINWEISE) fehler.push(`${ort}: ${hinweise} Hinweise – höchstens ${MAX_HINWEISE}, nur die wesentlichen`)
   }
@@ -346,6 +352,19 @@ export function pruefeNebenAntwort(liste: NebenBlindliste, antwort: NebenAntwort
   return { fehler, warnungen }
 }
 
+/**
+ * Zahlen im Text, die im Beleg fehlen (in Thema 45 der häufigste Rückfragegrund): Jahre getrennt, weil sie oft
+ * Kontext sind („Bundesverkehrswegeplan 2030“); Ziffern an Buchstaben (CO2, WD 4) zählen nicht.
+ */
+export function zahlenOhneBeleg(text: string, beleg: string): { zahlen: string[]; jahre: string[] } {
+  const fehlend = fehlendeZahlen(text.replace(/(\p{L})\d+/gu, '$1'), beleg)
+  const jahr = (z: string) => /^(19|20)\d\d$/.test(z)
+  return { zahlen: fehlend.filter((z) => !jahr(z)), jahre: fehlend.filter(jahr) }
+}
+
+/** Mindestens so viele verschiedene Suchen je Lösungsweg (Thema 45: anfangs fünf Suchen für sechs Wege). */
+export const MIN_SUCHEN_JE_WEG = 2
+
 /** Was der Agent laut Transkript wirklich getan hat: Suchanfragen und geöffnete Adressen (WebFetch, nebenwirkungen:pdf). */
 export interface Werkzeuge {
   suchen: string[]
@@ -358,12 +377,15 @@ const adresse = (u: string) => u.trim().replace(/#.*$/, '').replace(/\/+$/, '')
 /**
  * Abgleich mit dem Transkript: In Thema 42 standen in „gesucht“ Anfragen, die nie liefen, und ein Beleg kam aus
  * der Kopie eines Verbands, während `quelle_url` auf das Ministerium zeigte. Jede Anfrage in „gesucht“ muss gelaufen
- * (WebSearch oder Suchwörter von nebenwirkungen:pdf), jede Quelle geöffnet sein.
+ * (WebSearch oder Suchwörter von nebenwirkungen:pdf), jede Quelle geöffnet sein, und je Weg müssen genug Suchen gelaufen sein.
  */
 export function pruefeWerkzeuge(antwort: NebenAntwort, w: Werkzeuge): string[] {
   const fehler: string[] = []
   const suchen = new Set(w.suchen.map(anfrage))
   const adressen = new Set(w.adressen.map(adresse))
+  const wege = Array.isArray(antwort?.einheiten) ? antwort.einheiten.length : 0
+  if (suchen.size < MIN_SUCHEN_JE_WEG * wege)
+    fehler.push(`Nur ${suchen.size} verschiedene Suchen für ${wege} Lösungswege – mindestens ${MIN_SUCHEN_JE_WEG} je Weg, gezielt auf den Weg selbst (Kosten, Entlastung, Betroffene)`)
   for (const e of Array.isArray(antwort?.einheiten) ? antwort.einheiten : []) {
     for (const x of Array.isArray(e?.bereiche) ? e.bereiche : []) {
       const ort = `Lösungsweg ${e.id} › ${x?.bereich}`

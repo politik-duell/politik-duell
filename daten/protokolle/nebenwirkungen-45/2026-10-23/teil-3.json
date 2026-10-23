@@ -1,0 +1,137 @@
+{
+  "pruefsumme": "e2e0d563b82df5bd",
+  "thema_id": 45,
+  "thema": "Klimaschutz",
+  "ziel": "Die Emissionen sinken so schnell, dass die Klimaziele erreichbar bleiben und die Erderwärmung begrenzt wird.",
+  "ursachen": [
+    "Im Verkehr sinken die Emissionen nicht: 2025 lagen sie 2,1 Mio. t über dem Vorjahr, und der Expertenrat sieht den Verkehr für 2021 bis 2030 mit 60,8 Mio. t über seinem Budget.",
+    "Im Gebäudebereich sinken die Emissionen nicht: 2025 stiegen sie um 3,4 Mio. t, und der Expertenrat sieht das Gebäudebudget für 2021 bis 2030 um 23,0 Mio. t überschritten.",
+    "Die Emissionen der Landwirtschaft bleiben 2025 nahezu unverändert; Methan aus der Tierhaltung und Lachgas aus der Stickstoffdüngung machen den größten Teil aus.",
+    "Verfehlungen einzelner Sektoren gleichen Puffer anderer Sektoren im Gesamtbudget aus; nachsteuern muss die Regierung erst, wenn eine Überschreitung zweimal festgestellt ist."
+  ],
+  "teil": 3,
+  "teile": 8,
+  "einheiten": [
+    {
+      "id": 10913,
+      "name": "Nachhaltige Kraftstoffe aus erneuerbaren Energien für den Luft- und Schiffsverkehr unterstützen.",
+      "ebene": "bund",
+      "begruendung": "E-Kerosin kann Luftverkehr dekarbonisieren, kostet laut ICCT aber ein Vielfaches fossilen Kerosins und ist vor 2050 nicht wettbewerbsfähig; bis 2030 kleine Mengen.",
+      "ursache": 1
+    },
+    {
+      "id": 10935,
+      "name": "Belastende Klimaschutzvorschriften für Seehäfen reduzieren",
+      "ebene": "bund",
+      "begruendung": "Weniger Klimaschutzvorgaben für Häfen senken keine Verkehrsemissionen, eher im Gegenteil; welche Vorgaben gemeint sind, bleibt unklar, viele beruhen auf EU-Recht.",
+      "ursache": 1
+    },
+    {
+      "id": 10939,
+      "name": "Öffentliche Fahrzeugbeschaffung auf reine E-Fahrzeuge umstellen",
+      "ebene": "bund",
+      "begruendung": "Öffentliche Flotten sind klein, die direkte Minderung gering; Signal- und Markteffekte sind möglich, aber kaum untersucht.",
+      "ursache": 1
+    },
+    {
+      "id": 10940,
+      "name": "KfZ-Steuer neu gestalten: große und schwere Autos stärker besteuern",
+      "ebene": "bund",
+      "begruendung": "Fahrzeugsteuern nach Größe und CO2 lenken Käufe zu sparsameren Autos; Studien zum französischen Bonus-Malus finden aber teils keinen Netto-Effekt. Kfz-Steuer ist Bundessache.",
+      "ursache": 1
+    },
+    {
+      "id": 10942,
+      "name": "Straßenbau auf die Sanierung des Bestands konzentrieren",
+      "ebene": "bund",
+      "begruendung": "Verzicht auf Neubau vermeidet zusätzlichen induzierten Verkehr, senkt bestehende Emissionen aber nicht; Größe des Effekts in Studien unterschiedlich. Über Haushalt und Bedarfsplan steuerbar.",
+      "ursache": 1
+    },
+    {
+      "id": 10943,
+      "name": "Flüge unter 500 Kilometern oder fünf Zugstunden verbieten",
+      "ebene": "bund",
+      "begruendung": "Das französische Kurzstreckenverbot senkte Emissionen nur wenig, auch durch Ausweichen auf andere Routen; ein Verbot braucht nach EU-Luftverkehrsrecht eine Ausnahme der Kommission.",
+      "ursache": 1
+    }
+  ],
+  "suchhilfe": {
+    "haushalt": {
+      "frage": "Was kostet der Weg Bund, Ländern, Kommunen oder Sozialkassen – oder was bringt er ein?",
+      "vorteil": [
+        "Mehreinnahmen",
+        "Einsparung öffentlicher Haushalt",
+        "Entlastung Sozialversicherung"
+      ],
+      "nachteil": [
+        "Mindereinnahmen",
+        "Kosten Bundeshaushalt",
+        "Haushaltsausgaben Gesetzentwurf"
+      ]
+    },
+    "wirtschaft": {
+      "frage": "Welche Kosten oder Entlastungen entstehen für Unternehmen (besonders kleine und mittlere), wie wirkt er auf Preise und Verbraucher?",
+      "vorteil": [
+        "Entlastung Unternehmen",
+        "sinkende Preise",
+        "Investitionen"
+      ],
+      "nachteil": [
+        "Kosten für Unternehmen",
+        "Preisanstieg",
+        "Wettbewerbsfähigkeit"
+      ]
+    },
+    "aufwand": {
+      "frage": "Welcher Aufwand für Anträge, Nachweise und Kontrollen entsteht oder entfällt – für Bürger, Wirtschaft, Verwaltung?",
+      "vorteil": [
+        "Bürokratieabbau",
+        "Erfüllungsaufwand sinkt"
+      ],
+      "nachteil": [
+        "Erfüllungsaufwand",
+        "Nachweispflichten",
+        "Normenkontrollrat Stellungnahme"
+      ]
+    },
+    "umwelt": {
+      "frage": "Wie wirkt er auf Emissionen, Natur und Ressourcen, und welche Lasten oder Vorteile hat er für spätere Jahre?",
+      "vorteil": [
+        "Emissionsminderung",
+        "Umweltentlastung"
+      ],
+      "nachteil": [
+        "Mehremissionen",
+        "Umweltrisiken",
+        "Flächenverbrauch"
+      ]
+    },
+    "verteilung": {
+      "frage": "Wer gewinnt, wer trägt die Last – nach Einkommen, Alter, Familienform, Stadt und Land?",
+      "vorteil": [
+        "Entlastung geringe Einkommen",
+        "Verteilungswirkung progressiv"
+      ],
+      "nachteil": [
+        "regressiv",
+        "Mitnahmeeffekte",
+        "profitieren höhere Einkommen"
+      ]
+    },
+    "grundrechte": {
+      "frage": "Schränkt er Freiheiten ein oder stärkt er sie, behandelt er Gruppen ungleich, wie wirkt er auf Gesundheit und Sicherheit?",
+      "vorteil": [
+        "Gesundheit verbessert",
+        "Schutz",
+        "Gleichstellung"
+      ],
+      "nachteil": [
+        "Datenschutz",
+        "Grundrechtseingriff",
+        "Benachteiligung",
+        "Gesundheitsrisiko"
+      ]
+    }
+  },
+  "quellen": []
+}

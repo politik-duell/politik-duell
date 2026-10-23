@@ -1,0 +1,137 @@
+{
+  "pruefsumme": "62dd12b44e04032c",
+  "thema_id": 45,
+  "thema": "Klimaschutz",
+  "ziel": "Die Emissionen sinken so schnell, dass die Klimaziele erreichbar bleiben und die Erderwärmung begrenzt wird.",
+  "ursachen": [
+    "Im Verkehr sinken die Emissionen nicht: 2025 lagen sie 2,1 Mio. t über dem Vorjahr, und der Expertenrat sieht den Verkehr für 2021 bis 2030 mit 60,8 Mio. t über seinem Budget.",
+    "Im Gebäudebereich sinken die Emissionen nicht: 2025 stiegen sie um 3,4 Mio. t, und der Expertenrat sieht das Gebäudebudget für 2021 bis 2030 um 23,0 Mio. t überschritten.",
+    "Die Emissionen der Landwirtschaft bleiben 2025 nahezu unverändert; Methan aus der Tierhaltung und Lachgas aus der Stickstoffdüngung machen den größten Teil aus.",
+    "Verfehlungen einzelner Sektoren gleichen Puffer anderer Sektoren im Gesamtbudget aus; nachsteuern muss die Regierung erst, wenn eine Überschreitung zweimal festgestellt ist."
+  ],
+  "teil": 4,
+  "teile": 8,
+  "einheiten": [
+    {
+      "id": 10897,
+      "name": "Kosten energetischer Sanierungen von der Erbschaft- und Schenkungsteuer abzugsfähig machen",
+      "ebene": "bund",
+      "begruendung": "Schafft einen Sanierungsanreiz beim Erben oder Schenken, betrifft aber nur wenige Fälle und vor allem Vermögende; Länder erhalten die Steuer, daher Zustimmung des Bundesrats nötig.",
+      "ursache": 2
+    },
+    {
+      "id": 10907,
+      "name": "Programm „Jung kauft Alt“ ausbauen, mit Zuschüssen zur energetischen Sanierung.",
+      "ebene": "bund",
+      "begruendung": "Zuschüsse beim Kauf alter Häuser verbinden Eigentumserwerb mit Sanierung; das Programm ist klein, die zusätzliche Minderung begrenzt.",
+      "ursache": 2
+    },
+    {
+      "id": 10914,
+      "name": "Förderung für energetische Sanierungen stärker nach Einkommen und eingesparter Energie staffeln.",
+      "ebene": "bund",
+      "begruendung": "Sanierungsförderung spart laut Evaluation des Förderjahres 2021 rund 1,7 Mio. t CO2-Äq. pro Jahr; Staffelung nach Einsparung erhöht die Zielgenauigkeit, Mitnahmeeffekte bleiben möglich.",
+      "ursache": 2
+    },
+    {
+      "id": 10915,
+      "name": "Energetische Sanierung mit Aufstockung oder Erweiterung von Wohngebäuden erleichtern.",
+      "ebene": "bund",
+      "begruendung": "Aufstockung kann Sanierungen wirtschaftlicher machen; betrifft nur geeignete Gebäude, Baurecht liegt teils bei den Ländern. Wirkung kaum untersucht.",
+      "ursache": 2
+    },
+    {
+      "id": 10916,
+      "name": "Sanierte Gebäude einfacher als taxonomiekonform anerkennen.",
+      "ebene": "bund",
+      "begruendung": "Leichtere Taxonomie-Anerkennung könnte Sanierungskredite verbilligen; die Kriterien legt aber die EU fest, die Wirkung ist kaum untersucht.",
+      "ursache": 2
+    },
+    {
+      "id": 10917,
+      "name": "Anreize setzen, dass Vermieter verfügbare öffentliche Fördermittel zur Sanierung tatsächlich nutzen.",
+      "ebene": "bund",
+      "begruendung": "Setzt am Vermieter-Mieter-Dilemma an, das Sanierungen bremst; welche Anreize gemeint sind, bleibt offen, Wirkung kaum untersucht.",
+      "ursache": 2
+    }
+  ],
+  "suchhilfe": {
+    "haushalt": {
+      "frage": "Was kostet der Weg Bund, Ländern, Kommunen oder Sozialkassen – oder was bringt er ein?",
+      "vorteil": [
+        "Mehreinnahmen",
+        "Einsparung öffentlicher Haushalt",
+        "Entlastung Sozialversicherung"
+      ],
+      "nachteil": [
+        "Mindereinnahmen",
+        "Kosten Bundeshaushalt",
+        "Haushaltsausgaben Gesetzentwurf"
+      ]
+    },
+    "wirtschaft": {
+      "frage": "Welche Kosten oder Entlastungen entstehen für Unternehmen (besonders kleine und mittlere), wie wirkt er auf Preise und Verbraucher?",
+      "vorteil": [
+        "Entlastung Unternehmen",
+        "sinkende Preise",
+        "Investitionen"
+      ],
+      "nachteil": [
+        "Kosten für Unternehmen",
+        "Preisanstieg",
+        "Wettbewerbsfähigkeit"
+      ]
+    },
+    "aufwand": {
+      "frage": "Welcher Aufwand für Anträge, Nachweise und Kontrollen entsteht oder entfällt – für Bürger, Wirtschaft, Verwaltung?",
+      "vorteil": [
+        "Bürokratieabbau",
+        "Erfüllungsaufwand sinkt"
+      ],
+      "nachteil": [
+        "Erfüllungsaufwand",
+        "Nachweispflichten",
+        "Normenkontrollrat Stellungnahme"
+      ]
+    },
+    "umwelt": {
+      "frage": "Wie wirkt er auf Emissionen, Natur und Ressourcen, und welche Lasten oder Vorteile hat er für spätere Jahre?",
+      "vorteil": [
+        "Emissionsminderung",
+        "Umweltentlastung"
+      ],
+      "nachteil": [
+        "Mehremissionen",
+        "Umweltrisiken",
+        "Flächenverbrauch"
+      ]
+    },
+    "verteilung": {
+      "frage": "Wer gewinnt, wer trägt die Last – nach Einkommen, Alter, Familienform, Stadt und Land?",
+      "vorteil": [
+        "Entlastung geringe Einkommen",
+        "Verteilungswirkung progressiv"
+      ],
+      "nachteil": [
+        "regressiv",
+        "Mitnahmeeffekte",
+        "profitieren höhere Einkommen"
+      ]
+    },
+    "grundrechte": {
+      "frage": "Schränkt er Freiheiten ein oder stärkt er sie, behandelt er Gruppen ungleich, wie wirkt er auf Gesundheit und Sicherheit?",
+      "vorteil": [
+        "Gesundheit verbessert",
+        "Schutz",
+        "Gleichstellung"
+      ],
+      "nachteil": [
+        "Datenschutz",
+        "Grundrechtseingriff",
+        "Benachteiligung",
+        "Gesundheitsrisiko"
+      ]
+    }
+  },
+  "quellen": []
+}
