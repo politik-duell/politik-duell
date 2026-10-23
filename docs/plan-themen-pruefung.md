@@ -44,6 +44,28 @@ Gruppe C wird mitgetestet, aber dort ist keine Änderung zu erwarten.
 - **Mit Vorsicht deuten**: Bei einer Runde kann ein einzelner Fehler Zufall sein. Einen Kontrollsatz, der kippt, mit `--nur <id> --runden 3` gezielt nachprüfen. Das kostet 3 Aufrufe je Satz.
 - Ist eine Beschreibung schuld an einem neuen Fehler, die Beschreibung dieses einen Themas zurücknehmen statt den ganzen Branch.
 
+## Vergleich: genügt `mistral-small-latest`?
+
+`mistral-medium-latest` ist seit dem 11. 10. 2026 Standard. Damals gab es nur einen Schritt und einen langen Prompt, und small war deutlich schlechter: 73 % ganz richtig gegen 91 % (46 Fälle × 3). Seitdem hat sich die Einordnung geändert:
+- zwei Schritte mit kürzeren Prompts,
+- Vorauswahl nur, wenn die KI sicher ist,
+- Bestätigung durch die Person.
+
+Mit dieser Fassung ist small nie gemessen worden. Ausgewählt wird das Modell mit `MISTRAL_MODEL=mistral-small-latest` vor dem Befehl, so wie in der Edge Function.
+
+1. **Thema (83 Aufrufe):** derselbe Befehl wie oben, nur mit small. Verglichen wird mit dem Lauf von medium aus diesem Plan.
+   - Abbrechen, wenn small mehr als 5 Sätze häufiger falsch zuordnet. Dann ist small für Schritt 1 ungeeignet.
+2. **Ganzer Ablauf (154 Aufrufe):** `npm run ki:testset -- --runden 1 --max-anfragen 160`, die 77 festen Fälle mit beiden Schritten, mit small.
+   - Vergleichswert ist medium vom 18. 10. 2026 mit 61 von 75 richtig (`docs/plan-symptome.md`).
+   - **Wichtigste Kennzahl:** falsch vorausgewählte Ursachen (`zu_viel`, `falsch`). Small darf hier nicht schlechter sein als medium.
+
+**Entscheidung:**
+- **small für beide Schritte**, wenn small in beiden Läufen höchstens knapp unter medium liegt und keine zusätzlichen falschen Ursachen vorauswählt. Dafür das Secret `MISTRAL_MODEL` in Supabase anlegen (Edge Functions → Secrets). Es gilt ohne neue Version.
+- **small nur für Schritt 2**, wenn Schritt 1 schlechter ist, die Ursachen aber stimmen. Das braucht eine kleine Codeänderung: ein eigenes Modell für Schritt 2.
+- **sonst medium.**
+
+Zusammen sind das 237 Aufrufe mit small, zusätzlich zu den 83 mit medium. Alle Läufe kommen auf den Testschlüssel, nie auf den Schlüssel des Spiels.
+
 ## Danach, je nach Entscheidung
 
 - Gruppe B: Für jedes Paar festlegen, welches Thema die Ursache führt. Dann Ursache oder Beschreibung anpassen und nur diese Sätze erneut testen.
