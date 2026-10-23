@@ -38,7 +38,7 @@ Zum Thema selbst gehören auch die unmittelbaren Kosten oder Ersparnisse der Bet
    - Kosten eines anderen oder des gesamten Programms nur mit „Zum Vergleich:“ und dem Zusatz, dass es nicht die Kosten dieses Wegs sind.
 7. **Gleiche Maßstäbe:** Stehen in deiner Liste ähnliche Wege (zwei Förderungen, zwei Steuersenkungen), bekommen sie dieselbe Quelle und ähnliche Hinweise – oder beide keinen. Für „einführen/beibehalten“ und „abschaffen“ desselben Instruments gehören spiegelbildliche Hinweise in denselben Bereich (Kosten ↔ Einsparung, Eingriff ↔ Freiheit).
 8. **Text:** ein neutraler Satz, höchstens 200 Zeichen, ohne Parteinamen, ohne Wertung („leider“, „unverantwortlich“, „endlich“). Beziffern, wo die Quelle es tut („rund 13 Mrd. Euro im Jahr 2024“), sonst ohne Steigerungswörter. `richtung`: `vorteil`, `nachteil` oder `gemischt` – aus Sicht derer, die die Folge trifft.
-9. **`beleg`:** die Stelle wörtlich aus der Quelle, bei PDFs mit Seite („… S. 12“). Sie bleibt im Protokoll, damit Prüfende den Hinweis schnell nachvollziehen.
+9. **`beleg`:** die Stelle wörtlich und zusammenhängend aus der Quelle, bei PDFs mit Seite („(S. 12)“) – keine Auslassungen („…“) und keine Einschübe in eckigen Klammern; die Prüfung lehnt beides ab. Stützt eine Stelle nicht den ganzen Text, nimm einen längeren zusammenhängenden Abschnitt. Der Beleg bleibt im Protokoll, damit Prüfende den Hinweis schnell nachvollziehen.
 
 ## Antwort
 
@@ -69,4 +69,4 @@ Nur dieses JSON in die Antwortdatei, `pruefsumme` aus der Teil-Liste, jeder Lös
 }
 ```
 
-Dann `npm run -s nebenwirkungen:antwort-pruefen -- <ID> <n>` und Fehler beheben (einen Hinweis, der eine Regel nicht erfüllt, auf `null` setzen statt ihn umzuformulieren), bis „In Ordnung“ kommt. Meldet die Prüfung eine **einseitige Bilanz**, such für die Lösungswege gezielt in der Gegenrichtung nach – ändere aber nichts, nur um die Bilanz auszugleichen: Was nicht belegt ist, bleibt draußen. Zum Schluss eine Zeile: Zahl der Hinweise und je Lösungsweg die Bereiche. Bricht ein Limit die Arbeit ab, schreib vorher die Antwort mit dem bisherigen Stand – die Koordination setzt dich später fort.
+Dann `npm run -s nebenwirkungen:antwort-pruefen -- <ID> <n>` und Fehler beheben (einen Hinweis, der eine Regel nicht erfüllt, auf `null` setzen statt ihn umzuformulieren), bis „In Ordnung“ kommt. Musst du nur den Beleg ersetzen, bleiben Text und `richtung` gleich – deckt der neue Beleg sie nicht, such einen passenden Abschnitt, statt die Aussage einseitiger zu machen, als die Quelle ist. Meldet die Prüfung eine **einseitige Bilanz**, such für die Lösungswege gezielt in der Gegenrichtung nach – ändere aber nichts, nur um die Bilanz auszugleichen: Was nicht belegt ist, bleibt draußen. Zum Schluss eine Zeile: Zahl der Hinweise und je Lösungsweg die Bereiche. Bricht ein Limit die Arbeit ab, schreib vorher die Antwort mit dem bisherigen Stand – die Koordination setzt dich später fort.

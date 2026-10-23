@@ -14,6 +14,7 @@ const MAX_BYTES = 40 * 1024 * 1024
 const UMFELD = 350
 const MAX_STELLEN = 10
 const MAX_SEITE = 8000
+const BROWSER = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36'
 
 const args = process.argv.slice(2)
 const url = args[0]
@@ -35,7 +36,8 @@ if (grund) {
 
 let res: Response
 try {
-  res = await fetch(url, { redirect: 'follow', signal: AbortSignal.timeout(60_000) })
+  // Manche Bundesstellen (etwa die Mindestlohnkommission) antworten ohne Browser-Kennung und Sprache mit 403.
+  res = await fetch(url, { redirect: 'follow', headers: { 'User-Agent': BROWSER, Accept: 'application/pdf,*/*', 'Accept-Language': 'de-DE,de;q=0.9' }, signal: AbortSignal.timeout(60_000) })
 } catch (e) {
   console.error(`Nicht abrufbar: ${e instanceof Error ? (e.cause as { code?: string })?.code ?? e.message : e}`)
   process.exit(1)

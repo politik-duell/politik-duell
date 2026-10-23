@@ -25,7 +25,7 @@ Je Thema:
 npm run -s nebenwirkungen:blind -- <ID> [--alle]
 ```
 
-Das Skript teilt die Lösungswege in Teile zu höchstens sechs (`.cache/nebenwirkungen/<ID>/teil-<n>.json`) – nur Name, Ebene und Begründung, keine Partei, kein Zitat – und bricht ab, wenn eine Begründung einen Parteibezug enthält. Jeder Teil enthält unter `quellen` die schon verwendeten Quellen des Themas. Es gibt je Teil den Auftrag aus.
+Das Skript teilt die Lösungswege in Teile zu höchstens sechs, Wege zur selben Ursache möglichst im selben Teil (`.cache/nebenwirkungen/<ID>/teil-<n>.json`) – nur Name, Ebene und Begründung, keine Partei, kein Zitat – und bricht ab, wenn eine Begründung einen Parteibezug enthält. Jeder Teil enthält unter `quellen` die schon verwendeten Quellen des Themas. Es gibt je Teil den Auftrag aus.
 
 ## 2. Recherche
 
@@ -39,7 +39,7 @@ npm run -s nebenwirkungen:blind -- <ID> --quellen
 
 > Recherchiere `.cache/nebenwirkungen/<ID>/teil-<n>.json`. Antwort in `.cache/nebenwirkungen/<ID>/protokoll/antwort-<n>.txt`, Prüfung mit `npm run -s nebenwirkungen:antwort-pruefen -- <ID> <n>`.
 
-Der Hook sperrt dem Agenten alles außer Teil-Liste, eigener Antwort, Selbstprüfung, PDF-Text (`npm run -s nebenwirkungen:pdf`) und Websuche (Parteiserver gesperrt). Die Selbstprüfung verlangt je Lösungsweg alle sechs Bereiche mit eigenen Suchanfragen, höchstens drei Hinweise, einen wörtlichen Beleg aus der Quelle (bei PDFs mit Seite), Belegstufe C nur mit zweiter Quelle; sie lehnt Parteiquellen und -namen, Presse- und Sekundärquellen, Haushalt unter einer Milliarde und Aufwand ohne Zahl ab.
+Der Hook sperrt dem Agenten alles außer Teil-Liste, eigener Antwort, Selbstprüfung, PDF-Text (`npm run -s nebenwirkungen:pdf`) und Websuche (Parteiserver gesperrt). Die Selbstprüfung verlangt je Lösungsweg alle sechs Bereiche mit eigenen Suchanfragen, höchstens drei Hinweise, einen wörtlichen, zusammenhängenden Beleg aus der Quelle (bei PDFs mit Seite, ohne Auslassungen), Belegstufe C nur mit zweiter Quelle; sie lehnt Parteiquellen und -namen, Presse- und Sekundärquellen, Haushalt unter einer Milliarde und Aufwand ohne Zahl ab.
 
 ## 3. Urteil der Koordination (einmal, nach dem Prüfmuster in `../README.md`)
 

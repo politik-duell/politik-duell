@@ -153,6 +153,13 @@ Die Bilanz neigt zu Nachteilen, vor allem weil fast jeder Haushaltshinweis eine 
 5. **Eine Suche je Bereich** für beide Richtungen: `gesucht` statt `gesucht_vorteil`/`gesucht_nachteil`. Eine zweite Suche gibt es nur, wenn die erste einseitig ist. Die Bilanzwarnung bleibt.
 6. **Wellen zu höchstens vier Agenten** statt sieben gleichzeitig.
 
+**Messung nach den Optimierungen** (Thema 11, 17 Wege, 23. 10. 2026): 11 000 statt 52 000 neu gelesene Tokens und 1,4 statt 13 Suchen je Weg, 26 statt 47 % Nacharbeit, kein Limitabbruch. Daraus vier weitere Änderungen:
+
+7. **Zusammengesetzte Belege** („…“ mitten im Satz, Einschübe in „[ ]“) lehnt die Selbstprüfung ab; zweimal musste die Koordination das zurückgeben.
+8. **Teile nach Ursache:** Wege zur selben Ursache liegen im selben Teil (`teileNachUrsache`), damit ähnliche Wege von einem Agenten dieselben Maßstäbe bekommen. Dicht gepackt: 263 statt 257 Teile über alle Themen.
+9. **PDF-Abruf mit Browser-Kennung und Sprache:** Die Mindestlohnkommission antwortete sonst mit 403.
+10. **Beleg tauschen ändert die Aussage nicht:** Ein Agent machte beim Ersetzen eines Belegs aus „gemischt“ einen Nachteil; die Agentendefinition verlangt jetzt einen passenden längeren Abschnitt statt einer einseitigeren Aussage.
+
 **Erste Lehren:**
 
 - **Vorteile muss man aktiv suchen.** Zuerst fanden sich fast nur Nachteile bei fossilen und Vorteile bei erneuerbaren Lösungswegen. Erst gezielte Suche ergab die Gegenrichtung (Verteilung bei 6706, Haushalt bei 6707). Für die Recherche-Anleitung: je Lösungsweg ausdrücklich nach Vor- *und* Nachteilen in jedem Bereich fragen.
