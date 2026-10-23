@@ -565,6 +565,10 @@ npm run pruefung:uebernehmen -- export.json   # Ergebnis der Prüfung übernehme
 npm run zitate:pruefen             # Zitate gegen die Programm-PDFs prüfen (braucht Internet)
 npm run daten:id -- --gegen origin/main       # IDs, neue Ursachen, Phasen und Blindwerte mit einem anderen Stand vergleichen
 npm run daten:id -- --haltung                 # nächste freie ID für eine Haltung
+npm run daten:luecken -- --bund               # Kandidaten für fehlende Maßnahmen: verwandter Lösungsweg derselben Partei in einem anderen Thema
+npm run ki:testset -- --alltag                # jeden Alltagssatz (Ursachen, Symptomgruppen) einordnen lassen: landet er in einem anderen Thema, überschneiden sich Themen (braucht MISTRAL_API_KEY)
 ```
+
+**Lücken finden, ohne neu zu recherchieren.** `daten:luecken` verbindet Lösungswege verschiedener Themen über Programmstellen, die mindestens zwei Parteien in beiden Themen zitieren, und meldet Programme, die den einen Weg haben, den verwandten aber nicht (Kandidaten, keine Befunde – erst die Stelle lesen). `ki:testset -- --alltag` findet Themen, deren Beschreibung die Lage eines anderen Themas beschreibt: Dort wird eine Schilderung an den falschen Ursachen gemessen (Beispiel: „Vom Bruttolohn bleibt zu wenig netto“ stand bei Steuern und Abgaben, die Ursache dazu in Preise und Löhne).
 
 Werkzeuge zum Erfassen: siehe „Erfassen“.

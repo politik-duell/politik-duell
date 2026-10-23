@@ -1,9 +1,9 @@
 {
   "id": 42,
   "name": "Steuern und Abgaben",
-  "beschreibung": "Vom Bruttolohn bleibt vielen zu wenig netto. Viele fürchten, dass Steuern steigen oder staatliche Leistungen gekürzt werden.",
+  "beschreibung": "Bei Lohnerhöhungen steigt die Steuer überproportional mit (kalte Progression). Viele fürchten, dass wegen der Staatsschulden Steuern steigen oder Leistungen gekürzt werden, und fragen sich, wer die Steuern trägt.",
   "ziel": "Beschäftigte behalten von ihrem Bruttolohn so viel, dass sie damit auskommen, und können sich auf die Höhe von Abgaben und staatlichen Leistungen verlassen.",
-  "schlagwoerter": ["steuern", "abgaben", "sozialabgaben", "netto", "nettolohn", "lohnsteuer", "einkommensteuer", "steuererhoehung", "leistungskuerzung", "kalte progression", "steuerlast", "staatsschulden"],
+  "schlagwoerter": ["lohnerhoehung", "gehaltserhoehung", "lohnsteuer", "einkommensteuer", "steuererhoehung", "leistungskuerzung", "kalte progression", "staatsschulden", "steuergerechtigkeit", "erbschaftsteuer"],
   "ursachen": [
     {
       "id": 4201,
@@ -464,6 +464,21 @@
       "partei_id": 13,
       "durchsucht_fuer": [4201, 4202, 4203],
       "massnahmen": [
+        {
+          "id": 10961,
+          "beschreibung": "Grundfreibetrag der Einkommensteuer erhöhen (ohne Betrag).",
+          "ursachen_ids": [4201],
+          "wirksamkeit": 1,
+          "umsetzbarkeit": 3,
+          "entwurf_herkunft": "nicht_blind",
+          "begruendung": "Ein höherer Grundfreibetrag entlastet alle Steuerpflichtigen und gleicht einen Teil der kalten Progression aus. Dagegen: einmaliger Schritt ohne Betrag und ohne dauerhafte Anpassung. Nachgetragen in Anlehnung an die gleichartige, blind bewertete Zusage (Grundfreibetrag um 1.000 Euro anheben).",
+          "zitat": "Den Grundfreibetrag erhöhen wir.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=74",
+          "evidenz": "offen",
+          "stand": "2026-10-23",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
         {
           "id": 10782,
           "beschreibung": "Arbeitnehmerpauschbetrag in der Einkommensteuer auf mindestens 1.500 Euro anheben.",

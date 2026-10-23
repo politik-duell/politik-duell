@@ -28,6 +28,7 @@
     "katalog:pruefen": "node --experimental-strip-types scripts/katalog/pruefen.ts",
     "katalog:vergleich": "node --experimental-strip-types scripts/katalog/vergleich.ts",
     "zitate:pruefen": "node --experimental-strip-types scripts/pruefe-zitate.ts",
+    "daten:luecken": "node --experimental-strip-types scripts/pruefe-luecken.ts",
     "daten:id": "node --experimental-strip-types scripts/daten-id.ts",
     "programm:text": "node --experimental-strip-types scripts/entwurf/programm-text.ts",
     "programme:laden": "node --experimental-strip-types scripts/entwurf/programme-laden.ts",

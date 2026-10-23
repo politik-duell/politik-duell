@@ -4,6 +4,8 @@
 // Änderung messen, bevor sie live geht. Schreibt nichts in die Datenbank.
 //
 //   MISTRAL_API_KEY=… npm run ki:testset [-- --runden 3] [--nur id,id] [--json ergebnis.json]
+//   MISTRAL_API_KEY=… npm run ki:testset -- --alltag [--themen 11,42]   – statt der festen Fälle die Alltagssätze aller
+//                                                    Ursachen und Symptomgruppen: findet Themen, die dieselbe Lage beschreiben
 //
 // MISTRAL_MODEL wie in der Edge Function (Standard: mistral-medium-latest). Kostet echte KI-Aufrufe
 // (je Fall und Runde einer, bei einem Problem mit Thema zwei) – nicht Teil der CI.
@@ -13,7 +15,7 @@ import { vollstaendigeHaltungen } from '../supabase/functions/_shared/haltung.ts
 import { ordneEin, themenPrompt } from '../supabase/functions/_shared/ki.ts'
 import { frageMistral, MISTRAL_STANDARDMODELL } from '../supabase/functions/_shared/mistral.ts'
 import type { AnalyseAntwort } from '../supabase/functions/_shared/typen.ts'
-import { beurteile, bilanz, type Fall, pruefeFaelle, type Urteil } from './ki-testset/auswertung.ts'
+import { alltagsFaelle, beurteile, bilanz, type Fall, pruefeFaelle, type Urteil } from './ki-testset/auswertung.ts'
 import { pruefeDatenordner } from './katalog-laden.ts'
 
 const GLEICHZEITIG = 4
@@ -37,7 +39,10 @@ if (fehler.length) {
   console.error(`Datenkatalog fehlerhaft (npm run daten:pruefen):\n${fehler.join('\n')}`)
   process.exit(1)
 }
-const alle = (JSON.parse(readFileSync(new URL('ki-testset/faelle.json', import.meta.url), 'utf8')) as { faelle: Fall[] }).faelle
+const nurThemen = option('themen')?.split(',').map(Number)
+const alle = process.argv.includes('--alltag')
+  ? alltagsFaelle(katalog.themen.filter((t) => !nurThemen || nurThemen.includes(t.id)), katalog.ursachen)
+  : (JSON.parse(readFileSync(new URL('ki-testset/faelle.json', import.meta.url), 'utf8')) as { faelle: Fall[] }).faelle
 const fallFehler = pruefeFaelle(alle, katalog.themen, katalog.ursachen)
 if (fallFehler.length) {
   console.error(`Testset fehlerhaft:\n${fallFehler.join('\n')}`)

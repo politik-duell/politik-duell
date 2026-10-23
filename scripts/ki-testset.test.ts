@@ -1,6 +1,6 @@
 import { readFileSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
-import { beurteile, bilanz, type Fall, pruefeFaelle } from './ki-testset/auswertung.ts'
+import { alltagsFaelle, beurteile, bilanz, type Fall, pruefeFaelle } from './ki-testset/auswertung.ts'
 import { pruefeDatenordner } from './katalog-laden.ts'
 
 const antwort = (typ: Fall['typ'], thema_id: number | null, ursachen_ids: number[], nachfrage: string | null = null) => ({
@@ -49,5 +49,13 @@ describe('KI-Testset', () => {
     expect(beurteile(forderung, antwort('problem', null, [])).ok).toBe(false)
     const b = bilanz([beurteile(fall, antwort('problem', 2, [201])), falschesThema])
     expect(b).toMatchObject({ faelle: 2, ok: 1, typ: 2, thema: 1, ursachen: { exakt: 1 } })
+  })
+
+  it('baut aus Alltagssätzen und Symptomgruppen Fälle, die zum Katalog passen', () => {
+    const { katalog } = pruefeDatenordner()
+    const faelle = alltagsFaelle(katalog.themen, katalog.ursachen)
+    expect(pruefeFaelle(faelle, katalog.themen, katalog.ursachen)).toEqual([])
+    expect(faelle.find((f) => f.id === 'alltag-1104')).toMatchObject({ thema: 11, ursachen: [1104], auch: [1103] })
+    expect(faelle.find((f) => f.id === 'symptom-11-2')).toMatchObject({ thema: 11, ursachen: [1103, 1104] })
   })
 })
