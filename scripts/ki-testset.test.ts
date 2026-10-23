@@ -1,6 +1,7 @@
 import { readFileSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
 import { alltagsFaelle, beurteile, bilanz, type Fall, pruefeFaelle, type Variante } from './ki-testset/auswertung.ts'
+import { anfragenGrenze } from './ki-testset/grenze.ts'
 import { pruefeDatenordner } from './katalog-laden.ts'
 
 const antwort = (typ: Fall['typ'], thema_id: number | null, ursachen_ids: number[], nachfrage: string | null = null) => ({
@@ -67,5 +68,12 @@ describe('KI-Testset', () => {
     const faelle = alltagsFaelle(katalog.themen, katalog.ursachen, varianten)
     expect(pruefeFaelle(faelle, katalog.themen, katalog.ursachen)).toEqual([])
     expect(faelle.filter((f) => f.id.startsWith('var-'))).toHaveLength(varianten.length)
+  })
+
+  it('begrenzt die KI-Aufrufe je Lauf', () => {
+    const zaehle = anfragenGrenze(2, ['--max-anfragen', '2'])
+    zaehle()
+    zaehle()
+    expect(() => zaehle()).toThrow('Obergrenze von 2')
   })
 })

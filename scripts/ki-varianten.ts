@@ -4,11 +4,12 @@
 // übrig“ landete im falschen Thema, der Alltagssatz der Ursache nicht). Ergänzt nur fehlende Ursachen, damit
 // durchgesehene und von Hand korrigierte Fassungen erhalten bleiben. KI-Entwurf: vor dem Einchecken lesen.
 //
-//   MISTRAL_API_KEY=… npm run ki:varianten [-- --themen 11,42]
+//   MISTRAL_API_KEY=… npm run ki:varianten [-- --themen 11,42] [--max-anfragen <n>]   (je Ursache ein Aufruf, ohne Angabe höchstens 100)
 import { readFileSync, writeFileSync } from 'node:fs'
 import { frageMistral } from '../supabase/functions/_shared/mistral.ts'
 import { pruefeDatenordner } from './katalog-laden.ts'
 import type { Variante } from './ki-testset/auswertung.ts'
+import { anfragenGrenze } from './ki-testset/grenze.ts'
 
 const DATEI = new URL('ki-testset/varianten.json', import.meta.url)
 const GLEICHZEITIG = 4
@@ -42,6 +43,7 @@ try {
 }
 const vorhanden = new Set(bestand.map((v) => v.ursache))
 const offen = katalog.ursachen.filter((u) => !vorhanden.has(u.id) && (!nurThemen || nurThemen.includes(u.thema_id)))
+const zaehle = anfragenGrenze(offen.length)
 
 const neu: Variante[] = []
 let naechste = 0
@@ -52,6 +54,7 @@ await Promise.all(
       const thema = katalog.themen.find((t) => t.id === u.thema_id)!
       const frage = `Thema: ${thema.name}\nUrsache: ${u.beschreibung}${u.alltag ? `\nIm Alltag: „${u.alltag}“` : ''}${u.gilt_fuer ? `\nGilt nur für: ${u.gilt_fuer}` : ''}`
       try {
+        zaehle()
         const antwort = (await frageMistral(SYSTEM, [{ role: 'user', content: frage }], { key: key! }, 400)) as { saetze?: unknown }
         const saetze = Array.isArray(antwort.saetze) ? antwort.saetze.filter((s): s is string => typeof s === 'string' && s.trim() !== '') : []
         saetze.slice(0, 3).forEach((text, n) => neu.push({ id: `var-${u.id}-${n + 1}`, ursache: u.id, text: text.trim() }))

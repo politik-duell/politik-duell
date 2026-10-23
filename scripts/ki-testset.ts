@@ -10,13 +10,15 @@
 //   … [--nur-thema]                                  – nur Schritt 1 (Typ und Thema), halb so viele KI-Aufrufe
 //
 // MISTRAL_MODEL wie in der Edge Function (Standard: mistral-medium-latest). Kostet echte KI-Aufrufe
-// (je Fall und Runde einer, bei einem Problem mit Thema zwei) – nicht Teil der CI.
+// (je Fall und Runde einer, bei einem Problem mit Thema zwei) – nicht Teil der CI. Dasselbe Konto wie das Spiel:
+// höchstens 100 Aufrufe je Lauf, mehr nur mit --max-anfragen <n> (scripts/ki-testset/grenze.ts).
 import { readFileSync, writeFileSync } from 'node:fs'
 import { spielbareHaltungen } from '../src/data/katalog.ts'
 import { vollstaendigeHaltungen } from '../supabase/functions/_shared/haltung.ts'
 import { ordneEin, themenPrompt } from '../supabase/functions/_shared/ki.ts'
 import { frageMistral, MISTRAL_STANDARDMODELL } from '../supabase/functions/_shared/mistral.ts'
 import type { AnalyseAntwort } from '../supabase/functions/_shared/typen.ts'
+import { anfragenGrenze } from './ki-testset/grenze.ts'
 import { alltagsFaelle, beurteile, bilanz, type Fall, pruefeFaelle, type Urteil, type Variante } from './ki-testset/auswertung.ts'
 import { pruefeDatenordner } from './katalog-laden.ts'
 
@@ -60,6 +62,8 @@ if (fallFehler.length) {
   process.exit(1)
 }
 const faelle = nur ? alle.filter((f) => nur.includes(f.id)) : alle
+// Je Fall und Runde höchstens zwei Aufrufe (Thema, Ursachen); Wiederholungen nach 429 zählen mit.
+const zaehle = anfragenGrenze(faelle.length * runden * (nurThema ? 1 : 2))
 
 // Wie die Edge Function mit Zugang zur Testphase: Haltungen, für die alle Parteien eine Position haben.
 const spielbar = spielbareHaltungen(katalog, true)
@@ -96,7 +100,10 @@ async function frage(fall: Fall, runde: number): Promise<Lauf> {
     const fragen = (s: string, n: Parameters<typeof frageMistral>[1]) => {
       // --nur-thema: den zweiten Schritt (Ursachen) nicht fragen – halbiert die Kosten, wenn nur das Thema interessiert.
       if (nurThema && aufrufe++ > 0) return Promise.reject(new Error('nur Thema'))
-      return mitWiederholung(() => frageMistral(s, n, { key: key!, modell }))
+      return mitWiederholung(() => {
+        zaehle()
+        return frageMistral(s, n, { key: key!, modell })
+      })
     }
     const { antwort, unsicher } = await ordneEin(fragen, verlauf, null, { ...katalog, haltungen }, () => 0)
     const urteil = beurteile(fall, antwort)
