@@ -51,7 +51,7 @@ Gruppe C wird mitgetestet, aber dort ist keine Änderung zu erwarten.
 - Vorauswahl nur, wenn die KI sicher ist,
 - Bestätigung durch die Person.
 
-Mit dieser Fassung ist small nie gemessen worden. Ausgewählt wird das Modell mit `MISTRAL_MODEL=mistral-small-latest` vor dem Befehl, so wie in der Edge Function.
+Mit dieser Fassung ist small nie gemessen worden. **Seit dem 23. 10. 2026 läuft das Live-Spiel mit small** (Secret `MISTRAL_MODEL` in Supabase). Gilt nach dem Vergleich medium, das Secret löschen. Ausgewählt wird das Modell mit `MISTRAL_MODEL=mistral-small-latest` vor dem Befehl, so wie in der Edge Function.
 
 1. **Thema (83 Aufrufe):** derselbe Befehl wie oben, nur mit small. Verglichen wird mit dem Lauf von medium aus diesem Plan.
    - Abbrechen, wenn small mehr als 5 Sätze häufiger falsch zuordnet. Dann ist small für Schritt 1 ungeeignet.
