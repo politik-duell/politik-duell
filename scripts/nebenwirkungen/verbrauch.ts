@@ -3,17 +3,10 @@
 // Aufruf: npm run nebenwirkungen:verbrauch -- [Thema-ID …] [--transkripte <ordner>] [--speichern]
 //   --speichern legt je Thema verbrauch.json im jüngsten Protokollordner daten/protokolle/nebenwirkungen-<ID>/<Datum>/ ab.
 import { existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
-import { homedir } from 'node:os'
 import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { AUFTRAG, lies, TRANSKRIPTE, werkzeugAufrufe, type Zeile } from './transkript.ts'
 
-type Zeile = {
-  type?: string
-  timestamp?: string
-  isMeta?: boolean
-  origin?: { kind?: string }
-  message?: { id?: string; model?: string; content?: unknown; usage?: Record<string, number> }
-}
 type Tokens = { eingabe: number; cache_schreiben: number; cache_lesen: number; ausgabe: number }
 type Agent = {
   thema: number
@@ -38,9 +31,8 @@ const nimm = (name: string) => {
 }
 const speichern = args.includes('--speichern') && args.splice(args.indexOf('--speichern'), 1).length > 0
 const wurzel = fileURLToPath(new URL('../../', import.meta.url))
-const ordner = nimm('--transkripte') ?? join(homedir(), '.claude', 'projects', wurzel.replace(/\/$/, '').replace(/[/.]/g, '-'))
+const ordner = nimm('--transkripte') ?? TRANSKRIPTE
 const themen = new Set(args.map(Number).filter(Number.isInteger))
-const AUFTRAG = /Recherchiere \.cache\/nebenwirkungen\/(\d+)\/teil-(\d+)\.json/
 
 const leer = (): Tokens => ({ eingabe: 0, cache_schreiben: 0, cache_lesen: 0, ausgabe: 0 })
 const addiere = (z: Tokens, u: Record<string, number>) => {
@@ -50,16 +42,6 @@ const addiere = (z: Tokens, u: Record<string, number>) => {
   z.ausgabe += u.output_tokens ?? 0
 }
 const summe = (ts: Tokens[]) => ts.reduce((z, t) => (addiere(z, { input_tokens: t.eingabe, cache_creation_input_tokens: t.cache_schreiben, cache_read_input_tokens: t.cache_lesen, output_tokens: t.ausgabe }), z), leer())
-const lies = (datei: string): Zeile[] =>
-  readFileSync(datei, 'utf8')
-    .split('\n')
-    .flatMap((s) => {
-      try {
-        return s ? [JSON.parse(s) as Zeile] : []
-      } catch {
-        return []
-      }
-    })
 // Gestreamte Antworten stehen in mehreren Zeilen mit derselben Nachrichten-ID; Verbrauch nur einmal zählen.
 const verbrauch = (zeilen: Zeile[], von = '', bis = '￿') => {
   const t = leer()
@@ -98,9 +80,7 @@ for (const sitzung of readdirSync(ordner, { withFileTypes: true }).filter((d) =>
     const rueckfrage = nachrichten.slice(1).find((z) => !fortsetzung(z.message!.content as string))
     const treffer = texte[0]?.match(AUFTRAG)
     if (!treffer || (themen.size && !themen.has(Number(treffer[1])))) continue
-    const werkzeuge = zeilen.flatMap((z) =>
-      z.type === 'assistant' && Array.isArray(z.message?.content) ? (z.message.content as { type: string; name?: string }[]).filter((b) => b.type === 'tool_use') : [],
-    )
+    const werkzeuge = werkzeugAufrufe(zeilen)
     const zeiten = zeilen.map((z) => z.timestamp ?? '').filter(Boolean).sort()
     agenten.push({
       thema: Number(treffer[1]),

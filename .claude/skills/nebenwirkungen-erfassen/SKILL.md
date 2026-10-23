@@ -39,7 +39,7 @@ npm run -s nebenwirkungen:blind -- <ID> --quellen
 
 > Recherchiere `.cache/nebenwirkungen/<ID>/teil-<n>.json`. Antwort in `.cache/nebenwirkungen/<ID>/protokoll/antwort-<n>.txt`, Prüfung mit `npm run -s nebenwirkungen:antwort-pruefen -- <ID> <n>`.
 
-Der Hook sperrt dem Agenten alles außer Teil-Liste, eigener Antwort, Selbstprüfung, PDF-Text (`npm run -s nebenwirkungen:pdf`) und Websuche (Parteiserver gesperrt). Die Selbstprüfung verlangt je Lösungsweg alle sechs Bereiche mit eigenen Suchanfragen, höchstens drei Hinweise, einen wörtlichen, zusammenhängenden Beleg aus der Quelle (bei PDFs mit Seite, ohne Auslassungen), Belegstufe C nur mit zweiter Quelle; sie lehnt Parteiquellen und -namen, Presse- und Sekundärquellen, Haushalt unter einer Milliarde und Aufwand ohne Zahl ab.
+Der Hook sperrt dem Agenten alles außer Teil-Liste, eigener Antwort, Selbstprüfung, PDF-Text (`npm run -s nebenwirkungen:pdf`) und Websuche (Parteiserver gesperrt). Die Selbstprüfung verlangt je Lösungsweg alle sechs Bereiche mit tatsächlich ausgeführten Suchen (Abgleich mit dem Transkript des Agenten), selbst geöffnete Quellen, Belege, die wörtlich im Originaltext stehen (das Skript lädt ihn), bei Wegen zur selben Ursache ein Gegenstück oder einen Grund in `ohne`, höchstens drei Hinweise, einen wörtlichen, zusammenhängenden Beleg aus der Quelle (bei PDFs mit Seite, ohne Auslassungen), Belegstufe C nur mit zweiter Quelle; sie lehnt Parteiquellen und -namen, Presse- und Sekundärquellen, Haushalt unter einer Milliarde und Aufwand ohne Zahl ab.
 
 ## 3. Urteil der Koordination (einmal, nach dem Prüfmuster in `../README.md`)
 
@@ -48,7 +48,7 @@ Je Teil ruft `npm run -s nebenwirkungen:antwort-pruefen -- <ID> <n>` die Bilanz 
 - **Abgrenzung:** Steht ein Hinweis eigentlich für die Wirkung auf das Thema selbst (gehört in die Bewertung)? Dann raus.
 - **Gleiche Maßstäbe:** Bekommen ähnliche Lösungswege ähnliche Hinweise – etwa beide Steuersenkungen eine Haushaltsangabe? Fehlt bei einem, was beim anderen steht?
 - **Bilanz:** Meldet die Prüfung „einseitig“ oder haben Wege einer Richtung nur Nachteile und die der anderen nur Vorteile, frag gezielt nach der Gegenrichtung.
-- **Stichprobe:** Öffne bei zwei Hinweisen je Teil die Quelle (WebFetch, bei PDFs `npm run -s nebenwirkungen:pdf -- <URL> '<Wörter aus dem Beleg>'`) und prüfe, ob `beleg` dort steht.
+- **Stichprobe:** Ob `beleg` wörtlich in der Quelle steht, prüft das Skript. Prüf bei zwei Hinweisen je Teil, ob der Beleg den Text trägt (Zahl, Jahr, Bezug). Meldet das Skript „nicht im Original prüfbar“, öffne dort die Quelle selbst (WebFetch, bei PDFs `npm run -s nebenwirkungen:pdf -- <URL> '<Wörter aus dem Beleg>'`).
 
 Bei „passt nicht“ **eine** gebündelte Rückfrage an denselben Agenten (SendMessage), danach ein letztes Urteil. Was dann nicht passt, wird verworfen – der Agent setzt `hinweis: null` und prüft erneut.
 
