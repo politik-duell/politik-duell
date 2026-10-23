@@ -25,26 +25,34 @@ Je Thema:
 npm run -s nebenwirkungen:blind -- <ID> [--alle]
 ```
 
-Das Skript teilt die Lösungswege in Teile zu höchstens sechs (`.cache/nebenwirkungen/<ID>/teil-<n>.json`) – nur Name, Ebene und Begründung, keine Partei, kein Zitat – und bricht ab, wenn eine Begründung einen Parteibezug enthält. Es gibt je Teil den Auftrag aus.
+Das Skript teilt die Lösungswege in Teile zu höchstens sechs (`.cache/nebenwirkungen/<ID>/teil-<n>.json`) – nur Name, Ebene und Begründung, keine Partei, kein Zitat – und bricht ab, wenn eine Begründung einen Parteibezug enthält. Jeder Teil enthält unter `quellen` die schon verwendeten Quellen des Themas. Es gibt je Teil den Auftrag aus.
 
 ## 2. Recherche
 
-Je Teil ein Agent `nebenwirkungen-recherche` (bis zu sieben gleichzeitig, ohne Parameter `model`), Auftrag nur die Zeile aus Schritt 1:
+Je Teil ein Agent `nebenwirkungen-recherche` (ohne Parameter `model`), **in Wellen zu höchstens vier gleichzeitig** – mit sieben liefen die Limits über und Agenten brachen ab. Die erste Welle nimmt aus jedem Thema den ersten Teil. Nach dem Urteil (Schritt 3) über eine Welle:
+
+```bash
+npm run -s nebenwirkungen:blind -- <ID> --quellen
+```
+
+übernimmt die Quellen der beurteilten Antworten in die noch offenen Teile (Prüfsumme bleibt) und gibt deren Aufträge aus; dann die nächste Welle. Auftrag nur die Zeile aus Schritt 1, ohne eigene Regeln – die stehen in der Agentendefinition:
 
 > Recherchiere `.cache/nebenwirkungen/<ID>/teil-<n>.json`. Antwort in `.cache/nebenwirkungen/<ID>/protokoll/antwort-<n>.txt`, Prüfung mit `npm run -s nebenwirkungen:antwort-pruefen -- <ID> <n>`.
 
-Der Hook sperrt dem Agenten alles außer Teil-Liste, eigener Antwort, Selbstprüfung und Websuche (Parteiserver gesperrt). Die Selbstprüfung verlangt je Lösungsweg alle sechs Bereiche mit Suchanfragen **in beide Richtungen**, höchstens drei Hinweise, einen wörtlichen Beleg aus der Quelle, Belegstufe C nur mit zweiter Quelle, keine Parteiquellen und -namen.
+Der Hook sperrt dem Agenten alles außer Teil-Liste, eigener Antwort, Selbstprüfung, PDF-Text (`npm run -s nebenwirkungen:pdf`) und Websuche (Parteiserver gesperrt). Die Selbstprüfung verlangt je Lösungsweg alle sechs Bereiche mit eigenen Suchanfragen, höchstens drei Hinweise, einen wörtlichen Beleg aus der Quelle (bei PDFs mit Seite), Belegstufe C nur mit zweiter Quelle; sie lehnt Parteiquellen und -namen, Presse- und Sekundärquellen, Haushalt unter einer Milliarde und Aufwand ohne Zahl ab.
 
 ## 3. Urteil der Koordination (einmal, nach dem Prüfmuster in `../README.md`)
 
-Je Teil ruft `npm run -s nebenwirkungen:antwort-pruefen -- <ID> <n>` die Bilanz ab (je Lösungsweg Bereiche mit `+`/`−`/`±`). Kurz „passt“ oder „passt nicht: <Punkte>“, nur zu dem, was kein Skript prüfen kann:
+Je Teil ruft `npm run -s nebenwirkungen:antwort-pruefen -- <ID> <n>` die Bilanz ab (je Lösungsweg Bereiche mit `+`/`−`/`±`). Kurz „passt“ oder „passt nicht: <Punkte>“, nur zu dem, was kein Skript prüfen kann. Die Regeln der Agentendefinition nicht in der Rückfrage wiederholen, nur die Stelle nennen („6215: eigene Hochrechnung“):
 
 - **Abgrenzung:** Steht ein Hinweis eigentlich für die Wirkung auf das Thema selbst (gehört in die Bewertung)? Dann raus.
 - **Gleiche Maßstäbe:** Bekommen ähnliche Lösungswege ähnliche Hinweise – etwa beide Steuersenkungen eine Haushaltsangabe? Fehlt bei einem, was beim anderen steht?
 - **Bilanz:** Meldet die Prüfung „einseitig“ oder haben Wege einer Richtung nur Nachteile und die der anderen nur Vorteile, frag gezielt nach der Gegenrichtung.
-- **Stichprobe:** Öffne bei zwei Hinweisen je Teil die Quelle (WebFetch) und prüfe, ob `beleg` dort steht.
+- **Stichprobe:** Öffne bei zwei Hinweisen je Teil die Quelle (WebFetch, bei PDFs `npm run -s nebenwirkungen:pdf -- <URL> '<Wörter aus dem Beleg>'`) und prüfe, ob `beleg` dort steht.
 
 Bei „passt nicht“ **eine** gebündelte Rückfrage an denselben Agenten (SendMessage), danach ein letztes Urteil. Was dann nicht passt, wird verworfen – der Agent setzt `hinweis: null` und prüft erneut.
+
+Wiederholt sich ein Grund für Rückfragen über mehrere Teile, gehört er als Regel in die Agentendefinition oder, wenn prüfbar, in `pruefeNebenAntwort` (`scripts/nebenwirkungen.ts`).
 
 ## 4. Eintragen
 
@@ -58,6 +66,7 @@ Prüft alle Antworten erneut, trägt die Hinweise als KI-Entwurf ein (ohne Beleg
 
 ```bash
 npm run -s daten:pruefen && npm run -s seed && npm test -- --reporter=dot
+npm run -s nebenwirkungen:verbrauch -- <ID …> --speichern
 ```
 
 Im Pull Request je Thema: Zahl der Lösungswege mit Hinweisen und ohne, die Bilanz (Vorteile/Nachteile/gemischt), verworfene Hinweise mit Grund. Gegenlesen sollten zwei Personen mit unterschiedlicher politischer Haltung; erst dann entfällt `ki_entwurf`.

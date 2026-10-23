@@ -139,18 +139,19 @@ Die Bilanz neigt zu Nachteilen, vor allem weil fast jeder Haushaltshinweis eine 
 - **Nacharbeit:** Fast die Hälfte des Agentenverbrauchs (47 %) fiel nach der ersten Rückfrage an. Bei Teilen, deren Auftrag die Regeln oben schon enthielt, sank der Anteil auf 9–38 % (Autofahren, Krankenkasse, spätere Miete-Teile). Bei den ersten Teilen lag er bei 65–71 %.
 - **Abbrüche:** 11 Limitabbrüche bei sieben parallelen Agenten.
 
-Ansätze zum Optimieren, nach erwartetem Nutzen:
+**Optimierungen (umgesetzt am 23. 10. 2026)**, nach erwartetem Nutzen. Ob sie wirken, zeigt `npm run nebenwirkungen:verbrauch` beim nächsten Lauf (Vergleichswerte oben: 52 000 neu gelesene Tokens und 13 Suchen je Weg, 47 % Nacharbeit, 11 Limitabbrüche):
 
-1. Die Regeln oben in die Agentendefinition übernehmen, statt sie erst per Rückfrage nachzuliefern.
-2. Die Selbstprüfung um prüfbare Fehler erweitern, die oft zu Rückfragen führten:
-   - gleiche `gesucht_*`-Listen über mehrere Wege,
-   - `quelle_url` auf ein PDF,
-   - bekannte Sekundärquellen,
+1. **Regeln in der Agentendefinition:** Die Regeln oben stehen in `.claude/agents/nebenwirkungen-recherche.md`, nicht erst in Rückfragen. Der Auftrag bleibt die eine Zeile aus `nebenwirkungen:blind`.
+2. **Selbstprüfung lehnt ab**, was die Koordination oft zurückgab (`pruefeNebenAntwort`):
+   - gleiche `gesucht`-Listen bei zwei Wegen,
+   - Belege aus PDFs ohne Seite,
+   - Presse- und Sekundärquellen (`SEKUNDAERQUELLEN`),
+   - Haushalt ohne Milliardenbetrag,
    - Aufwand ohne Zahl.
-3. Eine Liste gemeinsamer Quellen je Thema vorab mitgeben.
-4. Eine erlaubte PDF-zu-Text-Funktion für amtliche Drucksachen. Viele Abrufe scheiterten an PDFs.
-5. Je Bereich eine Suche für beide Richtungen statt zwei, das halbiert die Pflichtsuchen. Die Cache-Lesungen wachsen mit jeder Runde.
-6. Weniger Agenten gleichzeitig, um Limitabbrüche zu vermeiden.
+3. **Gemeinsame Quellen:** Jeder Teil enthält unter `quellen` die schon verwendeten Quellen des Themas. `nebenwirkungen:blind -- <ID> --quellen` ergänzt nach jeder Welle die Quellen der beurteilten Antworten in den offenen Teilen.
+4. **PDF als Text:** `npm run nebenwirkungen:pdf -- <URL> 'Suchwörter'` gibt nur die Fundstellen mit Seite aus. Der Hook erlaubt es dem Agenten nur mit einer Adresse ohne Shell-Sonderzeichen und ohne Parteiserver.
+5. **Eine Suche je Bereich** für beide Richtungen: `gesucht` statt `gesucht_vorteil`/`gesucht_nachteil`. Eine zweite Suche gibt es nur, wenn die erste einseitig ist. Die Bilanzwarnung bleibt.
+6. **Wellen zu höchstens vier Agenten** statt sieben gleichzeitig.
 
 **Erste Lehren:**
 
@@ -164,7 +165,7 @@ Ansätze zum Optimieren, nach erwartetem Nutzen:
 
 | Lehre aus dem Pilot | Umsetzung in `/nebenwirkungen-erfassen` |
 | --- | --- |
-| Vorteile muss man aktiv suchen | Startbegriffe je Bereich für beide Richtungen (`SUCHHILFE` in `scripts/nebenwirkungen.ts`); die Antwort nennt je Bereich die Suchanfragen nach Vor- und nach Nachteilen, sonst Fehler; einseitige Bilanzen meldet die Prüfung, die Koordination fragt gezielt nach |
+| Vorteile muss man aktiv suchen | Startbegriffe je Bereich für beide Richtungen (`SUCHHILFE` in `scripts/nebenwirkungen.ts`), in einer Suchanfrage verbunden; die Antwort nennt je Bereich die benutzten Anfragen (`gesucht`), sonst Fehler; einseitige Bilanzen meldet die Prüfung, die Koordination fragt gezielt nach |
 | Abgrenzung zur Wirksamkeit ist eng | Die Blindliste enthält Ziel, Ursachen und Begründung; der Agent soll nur nennen, was andere trifft oder anderswo wirkt; die Koordination prüft das im Urteil |
 | Kosten stehen oft nur in Parteiquellen | Parteiserver technisch gesperrt (Hook) und in der Prüfung abgelehnt; Liste guter Quellen im Agenten |
 | „Geprüft“ war grob | Jeder der sechs Bereiche muss mit Suchanfragen belegt sein, bevor `geprueft` gesetzt wird |
