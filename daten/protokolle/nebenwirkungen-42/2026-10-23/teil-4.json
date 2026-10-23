@@ -1,0 +1,130 @@
+{
+  "pruefsumme": "9b7787a522d0380b",
+  "thema_id": 42,
+  "thema": "Steuern und Abgaben",
+  "ziel": "Beschäftigte behalten von ihrem Bruttolohn so viel, dass sie damit auskommen, und können sich auf die Höhe von Abgaben und staatlichen Leistungen verlassen.",
+  "ursachen": [
+    "Die Einkommensteuer steigt real, wenn Löhne und Preise steigen, der Tarif aber nicht im gleichen Maß angepasst wird (kalte Progression). Ab 2027 ist offen, ob der Ausgleich weiterläuft.",
+    "Der Bund gibt mehr aus, als seine laufenden Einnahmen decken: Das Defizit steigt, die Verschuldung wächst und die Zinsausgaben steigen stark.",
+    "Die Steuereinnahmen stammen zum größten Teil aus Lohn- und Umsatzsteuer; Erbschaftsteuer und andere vermögensbezogene Steuern machen nur einen kleinen Anteil aus."
+  ],
+  "teil": 4,
+  "teile": 6,
+  "einheiten": [
+    {
+      "id": 10768,
+      "name": "Vermögensteuer wieder erheben (Bund)",
+      "ebene": "bund",
+      "begruendung": "Erhöht den Anteil vermögensbezogener Steuern; DIW schätzt je nach Ausgestaltung zweistellige Milliardenbeträge. Dagegen: Ausweichreaktionen, Bewertungsaufwand und Verfassungsvorgaben zur Bewertung; Aufkommen fließt den Ländern zu."
+    },
+    {
+      "id": 10769,
+      "name": "Verschonung großer Betriebsvermögen bei der Erbschaftsteuer begrenzen oder Mindeststeuer einführen (Bund)",
+      "ebene": "bund",
+      "begruendung": "Große Betriebsvermögen werden weitgehend steuerfrei übertragen, Schätzungen nennen Ausfälle in Milliardenhöhe; Stundung kann Liquiditätsprobleme mildern. Dagegen: Unternehmensverbände warnen vor Investitionsfolgen, Ausweichgestaltungen möglich."
+    },
+    {
+      "id": 10770,
+      "name": "Freibeträge der Erbschaft- und Schenkungsteuer erhöhen oder an die Inflation koppeln (Bund)",
+      "ebene": "bund",
+      "begruendung": "Setzt an der Erbschaftsteuer an, senkt aber deren Aufkommen und verstärkt damit das Übergewicht von Lohn- und Umsatzsteuer. Für einzelne Erben (Eigenheim) entlastend; rechtlich einfach umsetzbar."
+    },
+    {
+      "id": 10771,
+      "name": "Nationale Finanztransaktionssteuer einführen (Bund)",
+      "ebene": "bund",
+      "begruendung": "Besteuert bisher steuerfreie Kapitaltransaktionen; Frankreich und Italien erheben sie. Dagegen: dortige Einnahmen blieben unter den Prognosen, Handel weicht aus; national einführbar, Bemessungsgrundlage strittig."
+    },
+    {
+      "id": 10802,
+      "name": "Erbschaftsteuer und Vermögensteuer abschaffen",
+      "ebene": "bund",
+      "begruendung": "Setzt an vermögensbezogenen Steuern an, senkt deren Anteil aber weiter und verstärkt das Übergewicht von Lohn- und Umsatzsteuer. Länder verlören ihr Erbschaftsteueraufkommen ohne geklärten Ausgleich."
+    },
+    {
+      "id": 10811,
+      "name": "Grunderwerbsteuer so reformieren, dass Teilkäufe von Immobilien anteilig besteuert werden",
+      "ebene": "bund",
+      "begruendung": "Erschwert Share Deals und erhöht das Aufkommen einer vermögensbezogenen Steuer. Dagegen: seit 2021 bereits verschärft, Mehreinnahmen begrenzt und den Ländern zufließend."
+    }
+  ],
+  "suchhilfe": {
+    "haushalt": {
+      "frage": "Was kostet der Weg Bund, Ländern, Kommunen oder Sozialkassen – oder was bringt er ein?",
+      "vorteil": [
+        "Mehreinnahmen",
+        "Einsparung öffentlicher Haushalt",
+        "Entlastung Sozialversicherung"
+      ],
+      "nachteil": [
+        "Mindereinnahmen",
+        "Kosten Bundeshaushalt",
+        "Haushaltsausgaben Gesetzentwurf"
+      ]
+    },
+    "wirtschaft": {
+      "frage": "Welche Kosten oder Entlastungen entstehen für Unternehmen (besonders kleine und mittlere), wie wirkt er auf Preise und Verbraucher?",
+      "vorteil": [
+        "Entlastung Unternehmen",
+        "sinkende Preise",
+        "Investitionen"
+      ],
+      "nachteil": [
+        "Kosten für Unternehmen",
+        "Preisanstieg",
+        "Wettbewerbsfähigkeit"
+      ]
+    },
+    "aufwand": {
+      "frage": "Welcher Aufwand für Anträge, Nachweise und Kontrollen entsteht oder entfällt – für Bürger, Wirtschaft, Verwaltung?",
+      "vorteil": [
+        "Bürokratieabbau",
+        "Erfüllungsaufwand sinkt"
+      ],
+      "nachteil": [
+        "Erfüllungsaufwand",
+        "Nachweispflichten",
+        "Normenkontrollrat Stellungnahme"
+      ]
+    },
+    "umwelt": {
+      "frage": "Wie wirkt er auf Emissionen, Natur und Ressourcen, und welche Lasten oder Vorteile hat er für spätere Jahre?",
+      "vorteil": [
+        "Emissionsminderung",
+        "Umweltentlastung"
+      ],
+      "nachteil": [
+        "Mehremissionen",
+        "Umweltrisiken",
+        "Flächenverbrauch"
+      ]
+    },
+    "verteilung": {
+      "frage": "Wer gewinnt, wer trägt die Last – nach Einkommen, Alter, Familienform, Stadt und Land?",
+      "vorteil": [
+        "Entlastung geringe Einkommen",
+        "Verteilungswirkung progressiv"
+      ],
+      "nachteil": [
+        "regressiv",
+        "Mitnahmeeffekte",
+        "profitieren höhere Einkommen"
+      ]
+    },
+    "grundrechte": {
+      "frage": "Schränkt er Freiheiten ein oder stärkt er sie, behandelt er Gruppen ungleich, wie wirkt er auf Gesundheit und Sicherheit?",
+      "vorteil": [
+        "Gesundheit verbessert",
+        "Schutz",
+        "Gleichstellung"
+      ],
+      "nachteil": [
+        "Datenschutz",
+        "Grundrechtseingriff",
+        "Benachteiligung",
+        "Gesundheitsrisiko"
+      ]
+    }
+  },
+  "quellen": []
+}

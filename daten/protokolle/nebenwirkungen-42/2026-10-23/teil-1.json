@@ -1,0 +1,130 @@
+{
+  "pruefsumme": "6bb1a9517a0c7ed0",
+  "thema_id": 42,
+  "thema": "Steuern und Abgaben",
+  "ziel": "Beschäftigte behalten von ihrem Bruttolohn so viel, dass sie damit auskommen, und können sich auf die Höhe von Abgaben und staatlichen Leistungen verlassen.",
+  "ursachen": [
+    "Die Einkommensteuer steigt real, wenn Löhne und Preise steigen, der Tarif aber nicht im gleichen Maß angepasst wird (kalte Progression). Ab 2027 ist offen, ob der Ausgleich weiterläuft.",
+    "Der Bund gibt mehr aus, als seine laufenden Einnahmen decken: Das Defizit steigt, die Verschuldung wächst und die Zinsausgaben steigen stark.",
+    "Die Steuereinnahmen stammen zum größten Teil aus Lohn- und Umsatzsteuer; Erbschaftsteuer und andere vermögensbezogene Steuern machen nur einen kleinen Anteil aus."
+  ],
+  "teil": 1,
+  "teile": 6,
+  "einheiten": [
+    {
+      "id": 10759,
+      "name": "Einkommensteuertarif und Freibeträge automatisch an die Inflation anpassen (Bund)",
+      "ebene": "bund",
+      "begruendung": "Setzt direkt an der kalten Progression an; Schweiz, USA, Kanada, Belgien u. a. indexieren automatisch, Simulationen zeigen weitgehenden Ausgleich. Dagegen: Einnahmeausfall gegenüber Status quo und weniger Budgetspielraum; einfaches Bundesgesetz mit Bundesratszustimmung."
+    },
+    {
+      "id": 10760,
+      "name": "Grundfreibetrag der Einkommensteuer stark anheben (auf etwa 15.000 bis 17.000 Euro) (Bund)",
+      "ebene": "bund",
+      "begruendung": "Entlastet alle Steuerpflichtigen spürbar und gleicht aufgelaufene kalte Progression mehr als aus. Dagegen: einmaliger Schritt ohne dauerhafte Anpassung und Ausfälle in zweistelliger Milliardenhöhe ohne geklärte Gegenfinanzierung."
+    },
+    {
+      "id": 10761,
+      "name": "Einkommensteuertarif abflachen und Spitzensteuersatz später greifen lassen, ohne Gegenfinanzierung (Bund)",
+      "ebene": "bund",
+      "begruendung": "Mildert den steilen Progressionsverlauf bei mittleren Einkommen, an dem die kalte Progression besonders wirkt. Dagegen: einmalige Änderung ohne Indexierung, Entlastung absolut v. a. bei höheren Einkommen, hohe Ausfälle ohne Finanzierung."
+    },
+    {
+      "id": 10762,
+      "name": "Einkommensteuertarif umbauen: untere und mittlere Einkommen entlasten, hohe stärker belasten (Bund)",
+      "ebene": "bund",
+      "begruendung": "Senkt die Belastung der Mehrheit der Beschäftigten und ist teilweise gegenfinanziert. Dagegen: keine dauerhafte Inflationsanpassung, Ausweichreaktionen hoher Einkommen mindern die Gegenfinanzierung."
+    },
+    {
+      "id": 10782,
+      "name": "Arbeitnehmerpauschbetrag in der Einkommensteuer auf mindestens 1.500 Euro anheben.",
+      "ebene": "bund",
+      "begruendung": "Der Pauschbetrag ist nicht indexiert; eine Anhebung gleicht Inflation für Beschäftigte teilweise aus und vereinfacht. Dagegen: einmaliger Schritt, Wirkung je Person gering."
+    },
+    {
+      "id": 10789,
+      "name": "Grundfreibetrag schrittweise um mindestens 1.000 Euro anheben",
+      "ebene": "bund",
+      "begruendung": "Höherer Grundfreibetrag entlastet alle Steuerpflichtigen und gleicht einen Teil der kalten Progression aus. Dagegen: einmaliger, mäßiger Schritt ohne dauerhafte Anpassung."
+    }
+  ],
+  "suchhilfe": {
+    "haushalt": {
+      "frage": "Was kostet der Weg Bund, Ländern, Kommunen oder Sozialkassen – oder was bringt er ein?",
+      "vorteil": [
+        "Mehreinnahmen",
+        "Einsparung öffentlicher Haushalt",
+        "Entlastung Sozialversicherung"
+      ],
+      "nachteil": [
+        "Mindereinnahmen",
+        "Kosten Bundeshaushalt",
+        "Haushaltsausgaben Gesetzentwurf"
+      ]
+    },
+    "wirtschaft": {
+      "frage": "Welche Kosten oder Entlastungen entstehen für Unternehmen (besonders kleine und mittlere), wie wirkt er auf Preise und Verbraucher?",
+      "vorteil": [
+        "Entlastung Unternehmen",
+        "sinkende Preise",
+        "Investitionen"
+      ],
+      "nachteil": [
+        "Kosten für Unternehmen",
+        "Preisanstieg",
+        "Wettbewerbsfähigkeit"
+      ]
+    },
+    "aufwand": {
+      "frage": "Welcher Aufwand für Anträge, Nachweise und Kontrollen entsteht oder entfällt – für Bürger, Wirtschaft, Verwaltung?",
+      "vorteil": [
+        "Bürokratieabbau",
+        "Erfüllungsaufwand sinkt"
+      ],
+      "nachteil": [
+        "Erfüllungsaufwand",
+        "Nachweispflichten",
+        "Normenkontrollrat Stellungnahme"
+      ]
+    },
+    "umwelt": {
+      "frage": "Wie wirkt er auf Emissionen, Natur und Ressourcen, und welche Lasten oder Vorteile hat er für spätere Jahre?",
+      "vorteil": [
+        "Emissionsminderung",
+        "Umweltentlastung"
+      ],
+      "nachteil": [
+        "Mehremissionen",
+        "Umweltrisiken",
+        "Flächenverbrauch"
+      ]
+    },
+    "verteilung": {
+      "frage": "Wer gewinnt, wer trägt die Last – nach Einkommen, Alter, Familienform, Stadt und Land?",
+      "vorteil": [
+        "Entlastung geringe Einkommen",
+        "Verteilungswirkung progressiv"
+      ],
+      "nachteil": [
+        "regressiv",
+        "Mitnahmeeffekte",
+        "profitieren höhere Einkommen"
+      ]
+    },
+    "grundrechte": {
+      "frage": "Schränkt er Freiheiten ein oder stärkt er sie, behandelt er Gruppen ungleich, wie wirkt er auf Gesundheit und Sicherheit?",
+      "vorteil": [
+        "Gesundheit verbessert",
+        "Schutz",
+        "Gleichstellung"
+      ],
+      "nachteil": [
+        "Datenschutz",
+        "Grundrechtseingriff",
+        "Benachteiligung",
+        "Gesundheitsrisiko"
+      ]
+    }
+  },
+  "quellen": []
+}
