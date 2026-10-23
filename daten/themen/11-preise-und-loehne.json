@@ -65,7 +65,27 @@
       "wirksamkeit": 1,
       "umsetzbarkeit": 3,
       "begruendung": "Senkt die Preise einmalig um knapp 2 %, wenn der Handel die Senkung weitergibt; an den Ursachen der Preissteigerung ändert das nichts. Rechtlich und finanziell ohne große Hürden möglich.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Zum Vergleich: Ein Nullsatz auf alle bisher ermäßigt besteuerten Lebensmittel brächte rund 18 Mrd. Euro Mindereinnahmen (2027); das sind nicht die Kosten dieses Wegs, die nicht beziffert sind.",
+            "quelle_url": "https://dserver.bundestag.de/btd/21/058/2105839.pdf",
+            "belegstufe": "A"
+          },
+          {
+            "bereich": "verteilung",
+            "richtung": "gemischt",
+            "text": "Gemessen am Einkommen werden niedrige Einkommen stärker entlastet; in Euro profitieren Haushalte mit höherem Einkommen pro Person stärker (ZEW-Gutachten für das BMF).",
+            "quelle_url": "https://www.zew.de/fileadmin/FTP/gutachten/BMF_Umsatzsteuersaetze_2026.pdf",
+            "belegstufe": "B"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6880,
@@ -73,7 +93,27 @@
       "wirksamkeit": 2,
       "umsetzbarkeit": 2,
       "begruendung": "Senkt die Preise für Grundnahrungsmittel um bis zu 6,5 % und entlastet vor allem Haushalte mit wenig Geld, wenn die Senkung weitergegeben wird; seit 2022 erlaubt das EU-Recht einen Nullsatz. Dagegen spricht der hohe Steuerausfall, und ob der Handel die Senkung vollständig weitergibt, ist umstritten.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Zum Vergleich: Ein Nullsatz auf alle bisher ermäßigt besteuerten Lebensmittel brächte rund 18 Mrd. Euro Mindereinnahmen (2027); das sind nicht die Kosten dieses Wegs, der enger gefasst ist.",
+            "quelle_url": "https://dserver.bundestag.de/btd/21/058/2105839.pdf",
+            "belegstufe": "A"
+          },
+          {
+            "bereich": "verteilung",
+            "richtung": "gemischt",
+            "text": "Gemessen am Einkommen werden niedrige Einkommen stärker entlastet; in Euro profitieren Haushalte mit höherem Einkommen pro Person stärker (ZEW-Gutachten für das BMF).",
+            "quelle_url": "https://www.zew.de/fileadmin/FTP/gutachten/BMF_Umsatzsteuersaetze_2026.pdf",
+            "belegstufe": "B"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6881,
@@ -81,7 +121,12 @@
       "wirksamkeit": 1,
       "umsetzbarkeit": 3,
       "begruendung": "Macht Preise und Margen entlang der Lieferkette sichtbar und kann Kartellverfahren anstoßen; ob Transparenz allein die Preise senkt, ist kaum untersucht.",
-      "evidenz": "offen"
+      "evidenz": "offen",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6882,
@@ -89,7 +134,12 @@
       "wirksamkeit": 1,
       "umsetzbarkeit": 1,
       "begruendung": "Setzt an der Konzentration im Lebensmittelhandel an; ob kleinere Händler niedrigere Preise bringen, ist offen. Eine Entflechtung ohne Rechtsverstoß ist verfassungsrechtlich umstritten und dauert Jahre.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6883,
@@ -98,7 +148,12 @@
       "umsetzbarkeit": 3,
       "begruendung": "Kann weitere Konzentration im Handel bremsen, wie es die Monopolkommission empfiehlt; auf die Preise wirkt das erst langfristig und nicht sicher.",
       "evidenz": "gemischt",
-      "beleg_studie_url": "https://www.monopolkommission.de/publikationen/lebensmittel/s/wettbewerb-in-der-lebensmittellieferkette"
+      "beleg_studie_url": "https://www.monopolkommission.de/publikationen/lebensmittel/s/wettbewerb-in-der-lebensmittellieferkette",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6884,
@@ -106,7 +161,20 @@
       "wirksamkeit": 2,
       "umsetzbarkeit": 2,
       "begruendung": "Erhöht das Nettoeinkommen von Geringverdienenden und der Mitte direkt; die Gegenfinanzierung über höhere Steuern für hohe Einkommen oder Vermögen ist umsetzbar, aber politisch und rechtlich aufwendig.",
-      "evidenz": "belegt"
+      "evidenz": "belegt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "verteilung",
+            "richtung": "nachteil",
+            "text": "Laut DIW (2017) würden die niedrigsten Einkommen von einer Senkung der Einkommensteuer kaum entlastet, da sie kaum Einkommensteuer zahlen.",
+            "quelle_url": "https://www.diw.de/de/diw_01.c.558513.de/beseitigung_des____mittelstandsbauchs____beim_einkommensteuertarif_wuerde_vor_allem_besserverdienende_entlasten.html",
+            "belegstufe": "B"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6885,
@@ -114,7 +182,27 @@
       "wirksamkeit": 2,
       "umsetzbarkeit": 1,
       "begruendung": "Erhöht das Nettoeinkommen fast aller Steuerzahlenden, am stärksten in absoluten Beträgen bei höheren Einkommen; die Kosten sind hoch und die Finanzierung ist nicht geklärt.",
-      "evidenz": "belegt"
+      "evidenz": "belegt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Zum Vergleich: Die Anhebung des Grundfreibetrags 2024 um 180 Euro kostet 2025 rund 3,3 Mrd. Euro Steuern. Das sind nicht die Kosten dieses Wegs.",
+            "quelle_url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1017072",
+            "belegstufe": "A"
+          },
+          {
+            "bereich": "verteilung",
+            "richtung": "nachteil",
+            "text": "Eine Abflachung des Tarifs (Mittelstandsbauch) käme laut DIW (2017) zu über der Hälfte den einkommensstärksten 20 Prozent zugute; die niedrigsten Einkommen würden kaum entlastet.",
+            "quelle_url": "https://www.diw.de/de/diw_01.c.558513.de/beseitigung_des____mittelstandsbauchs____beim_einkommensteuertarif_wuerde_vor_allem_besserverdienende_entlasten.html",
+            "belegstufe": "B"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6886,
@@ -122,7 +210,20 @@
       "wirksamkeit": 2,
       "umsetzbarkeit": 1,
       "begruendung": "Entlastet besonders kleine Einkommen spürbar; die Steuerausfälle lägen im hohen zweistelligen Milliardenbereich, eine Finanzierung ist nicht geklärt.",
-      "evidenz": "belegt"
+      "evidenz": "belegt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Zum Vergleich: Die Anhebung des Grundfreibetrags 2024 um 180 Euro kostet 2025 rund 3,3 Mrd. Euro Steuern. Das sind nicht die Kosten dieses Wegs.",
+            "quelle_url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1017072",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6887,
@@ -130,7 +231,12 @@
       "wirksamkeit": 1,
       "umsetzbarkeit": 2,
       "begruendung": "Verhindert weitere Beitragssteigerungen, senkt die Abgaben aber nicht; dafür wären Reformen in Rente, Gesundheit und Pflege nötig, die noch offen sind.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6888,
@@ -138,7 +244,12 @@
       "wirksamkeit": 1,
       "umsetzbarkeit": 2,
       "begruendung": "Senkt die Kranken- und Pflegebeiträge etwas, weil der Bund die Kosten trägt; die Entlastung der Beschäftigten ist gering und belastet den Bundeshaushalt mit rund zehn Milliarden Euro im Jahr.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6889,
@@ -146,7 +257,20 @@
       "wirksamkeit": 2,
       "umsetzbarkeit": 3,
       "begruendung": "Erhöht die Löhne im Niedriglohnbereich direkt; Studien zur Einführung 2015 und zur Erhöhung 2022 fanden kaum Jobverluste. Der Bundestag kann die Höhe per Gesetz festlegen, wie 2022 geschehen.",
-      "evidenz": "belegt"
+      "evidenz": "belegt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "vorteil",
+            "text": "Zum Vergleich: Die Anhebung auf 12 Euro (2022) brachte der Sozialversicherung im Saldo 1,4 Mrd. Euro Mehreinnahmen pro Jahr ab 2023. Das sind nicht die Werte für 15 Euro.",
+            "quelle_url": "https://dserver.bundestag.de/btd/20/014/2001408.pdf",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6890,
@@ -154,7 +278,20 @@
       "wirksamkeit": 1,
       "umsetzbarkeit": 3,
       "begruendung": "Wer nach Tarif arbeitet, verdient im Schnitt mehr; Tariftreue greift aber nur bei öffentlichen Aufträgen, und wie stark die Tarifbindung dadurch steigt, ist offen.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "aufwand",
+            "richtung": "nachteil",
+            "text": "Der Regierungsentwurf zum Bundestariftreuegesetz beziffert den jährlichen Erfüllungsaufwand der Wirtschaft auf rund 432.000 Euro, der Bundesverwaltung auf rund 1,3 Mio. Euro.",
+            "quelle_url": "https://dserver.bundestag.de/btd/21/019/2101941.pdf",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6891,
@@ -162,7 +299,20 @@
       "wirksamkeit": 1,
       "umsetzbarkeit": 3,
       "begruendung": "Minijobs sind überwiegend schlecht bezahlt; ob ihre Umwandlung zu höheren Stundenlöhnen führt oder nur zu mehr Sozialversicherung bei gleichem Netto, ist umstritten.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "wirtschaft",
+            "richtung": "gemischt",
+            "text": "Nach der Mindestlohneinführung 2015 wandelten Betriebe Minijobs um; etwas weniger als die Hälfte der Umwandlungen bedeutete zusätzliche sozialversicherungspflichtige Beschäftigung.",
+            "quelle_url": "https://doku.iab.de/kurzber/2017/kb1117.pdf",
+            "belegstufe": "B"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6892,
@@ -170,7 +320,20 @@
       "wirksamkeit": 1,
       "umsetzbarkeit": 3,
       "begruendung": "Senkt die Energiekosten landwirtschaftlicher Betriebe um wenige Hundert Millionen Euro im Jahr; auf die Lebensmittelpreise wirkt das kaum.",
-      "evidenz": "offen"
+      "evidenz": "offen",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [
+          {
+            "bereich": "umwelt",
+            "richtung": "nachteil",
+            "text": "Die Steuervergütung für Agrardiesel (Entlastung 21,48 Cent je Liter) schwächt laut Umweltbundesamt den Anreiz zum effizienten Kraftstoffeinsatz, mit negativen Folgen für Klimaschutz und Luftqualität.",
+            "quelle_url": "https://stories.umweltbundesamt.de/system/files/document/143-2021_umweltschaedliche_subventionen_0.pdf",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7228,
@@ -178,7 +341,12 @@
       "wirksamkeit": 1,
       "umsetzbarkeit": 2,
       "begruendung": "Ein Berufsabschluss führt oft aus dem Niedriglohnbereich heraus, weil Fachkräfte deutlich mehr verdienen als Helfer; die Wirkung stellt sich erst über Jahre ein, und die Programme nennen kaum konkrete Instrumente.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-23",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     }
   ],
   "abdeckung": [
@@ -453,7 +621,12 @@
           "beleg_programm_url": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf#page=7",
           "stand": "2026-09-30",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 6914,
@@ -549,7 +722,12 @@
           "beleg_programm_url": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=17",
           "stand": "2026-09-30",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-23",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 6921,
