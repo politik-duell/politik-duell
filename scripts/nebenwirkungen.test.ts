@@ -9,6 +9,7 @@ import {
   nebenwirkungenEintragen,
   pruefeNebenAntwort,
   TEIL_GROESSE,
+  teileNachUrsache,
   type NebenAntwort,
   type NebenBlindliste,
   type NebenHinweis,
@@ -54,6 +55,16 @@ describe('Nebenwirkungen: Recherche ohne Parteinamen', () => {
     expect(text).not.toMatch(/"beleg"/)
   })
 
+  it('legt Wege zur selben Ursache in denselben Teil', () => {
+    const wege = (ursache: number, ...ids: number[]) => ids.map((id) => ({ id, ursache }))
+    const teile = teileNachUrsache([...wege(1, 1, 2), ...wege(2, 3, 4, 5), ...wege(3, 6, 7, 8, 9, 10, 11), ...wege(4, 12), ...wege(5, ...Array.from({ length: 8 }, (_, i) => 20 + i))])
+    expect(teile.map((t) => t.map((e) => e.id))).toEqual([[6, 7, 8, 9, 10, 11], [20, 21, 22, 23, 24, 25], [3, 4, 5, 1, 2, 12], [26, 27]])
+    const { katalog } = pruefeDatenordner()
+    const ids = nebenBlind(katalog, 11, true).listen.map((l) => l.einheiten.map((e) => e.id))
+    // Die Steuer- und Abgabenwege (Ursache 1104) lagen im ersten Lauf auf zwei Teile verteilt.
+    expect(ids.find((t) => t.includes(6884))).toEqual(expect.arrayContaining([6885, 6886, 6887, 6888, 6920]))
+  })
+
   it('übernimmt Quellen beurteilter Antworten je Adresse einmal', () => {
     const a = antwort([einheit(1, { haushalt: hinweis() }), einheit(2, { haushalt: hinweis(), umwelt: hinweis({ quelle_url: 'https://www.uba.de/b' }) })])
     expect(quellenDerAntworten([a]).map((q) => `${q.bereich} ${q.quelle_url}`)).toEqual(['haushalt https://www.destatis.de/a', 'umwelt https://www.uba.de/b'])
@@ -93,6 +104,10 @@ describe('Nebenwirkungen: Recherche ohne Parteinamen', () => {
     expect(in_('umwelt', hinweis({ zweite_quelle_url: 'https://www.faz.net/b', belegstufe: 'C' }))).toMatch(/faz\.net ist Presse/)
     expect(in_('umwelt', hinweis({ quelle_url: 'https://dserver.bundestag.de/btd/21/1/1.pdf' }))).toMatch(/PDF mit Seite/)
     expect(in_('umwelt', hinweis({ quelle_url: 'https://dserver.bundestag.de/btd/21/1/1.pdf', beleg: 'Die Mindereinnahmen betragen rund fünf Mrd. Euro (S. 4).' }))).toBe('')
+    expect(in_('umwelt', hinweis({ beleg: 'einkommensschwache Haushalte [geben] mehr für Lebensmittel aus' }))).toMatch(/zusammengesetzt/)
+    expect(in_('umwelt', hinweis({ beleg: 'Wirtschaft rund 432 000 Euro … Verwaltung Bund rund 1,3 Mio. Euro' }))).toMatch(/zusammengesetzt/)
+    expect(in_('umwelt', hinweis({ beleg: '„… die Mindereinnahmen betragen rund fünf Milliarden Euro …“' }))).toBe('')
+    expect(in_('umwelt', hinweis({ quelle_url: 'https://dserver.bundestag.de/btd/21/1/1.pdf', beleg: 'Die Mindereinnahmen betragen rund fünf Mrd. Euro … S. 4' }))).toBe('')
     expect(in_('haushalt', hinweis({ text: 'Kostet den Bund rund 300 Mio. Euro im Jahr.' }))).toMatch(/Milliardenbeträgen/)
     expect(in_('aufwand', hinweis({ text: 'Mehr Nachweispflichten für Betriebe.' }))).toMatch(/Größenordnung/)
     expect(in_('aufwand', hinweis({ text: 'Erfüllungsaufwand der Wirtschaft rund 40 Mio. Euro im Jahr.' }))).toBe('')

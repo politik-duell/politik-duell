@@ -105,8 +105,9 @@ export interface NebenAntwort {
 }
 
 /** Lösungswege eines Themas: genutzte Instrumente und Maßnahmen ohne Instrument. `alle`: auch schon erfasste KI-Entwürfe. */
-export function einheitenDesThemas(k: Katalog, themaId: number, alle = false): (Einheit & { nebenwirkungen?: Nebenwirkungen })[] {
+export function einheitenDesThemas(k: Katalog, themaId: number, alle = false): (Einheit & { nebenwirkungen?: Nebenwirkungen; ursache: number })[] {
   const massnahmen = k.massnahmen.filter((m) => m.thema_id === themaId)
+  const ersteUrsache = (ms: typeof massnahmen) => Math.min(...ms.flatMap((m) => m.ursachen_ids))
   const instrumente = k.instrumente
     .filter((i) => i.thema_id === themaId && massnahmen.some((m) => m.instrument_id === i.id))
     .map((i) => ({
@@ -115,10 +116,11 @@ export function einheitenDesThemas(k: Katalog, themaId: number, alle = false): (
       ebene: (massnahmen.find((m) => m.instrument_id === i.id)?.land ? 'land' : 'bund') as Einheit['ebene'],
       begruendung: i.begruendung,
       nebenwirkungen: i.nebenwirkungen,
+      ursache: ersteUrsache(massnahmen.filter((m) => m.instrument_id === i.id)),
     }))
   const einzeln = massnahmen
     .filter((m) => m.instrument_id === undefined)
-    .map((m) => ({ id: m.id, name: m.beschreibung, ebene: (m.land ? 'land' : 'bund') as Einheit['ebene'], begruendung: m.begruendung, nebenwirkungen: m.nebenwirkungen }))
+    .map((m) => ({ id: m.id, name: m.beschreibung, ebene: (m.land ? 'land' : 'bund') as Einheit['ebene'], begruendung: m.begruendung, nebenwirkungen: m.nebenwirkungen, ursache: ersteUrsache([m]) }))
   // Menschlich geprüfte Hinweise werden nie ersetzt; KI-Entwürfe nur mit `alle`.
   return [...instrumente, ...einzeln]
     .filter((e) => !e.nebenwirkungen || (alle && e.nebenwirkungen.ki_entwurf))
@@ -137,11 +139,35 @@ export function quellenAus(hinweise: Quelle[]): Quelle[] {
 export const quellenDerAntworten = (antworten: NebenAntwort[]): Quelle[] =>
   quellenAus(antworten.flatMap((a) => a.einheiten.flatMap((e) => e.bereiche.flatMap((b) => (b.hinweis ? [{ bereich: b.bereich, text: b.hinweis.text, quelle_url: b.hinweis.quelle_url }] : [])))))
 
+/**
+ * Teilt Lösungswege so auf, dass Wege zur selben Ursache möglichst im selben Teil liegen: Ähnliche Wege bekommen
+ * so von einem Agenten dieselben Maßstäbe (im ersten Lauf nach den Optimierungen lagen zwei Einkommensteuer-Wege
+ * in verschiedenen Teilen, und nur einer bekam einen Verteilungshinweis). Gruppen über TEIL_GROESSE werden geteilt;
+ * dicht gepackt entstehen kaum mehr Teile als bei fester Reihenfolge (alle Themen: 263 statt 257).
+ */
+export function teileNachUrsache<T extends { id: number; ursache: number }>(einheiten: T[]): T[][] {
+  const gruppen = new Map<number, T[]>()
+  for (const e of [...einheiten].sort((a, b) => a.ursache - b.ursache || a.id - b.id)) gruppen.set(e.ursache, [...(gruppen.get(e.ursache) ?? []), e])
+  // Große Gruppen in volle Teile; die Reste der Größe nach in den ersten Teil, in den sie passen.
+  const stuecke = [...gruppen.values()].flatMap((g) => Array.from({ length: Math.ceil(g.length / TEIL_GROESSE) }, (_, i) => g.slice(i * TEIL_GROESSE, (i + 1) * TEIL_GROESSE)))
+  const teile: T[][] = []
+  for (const stueck of stuecke.sort((a, b) => b.length - a.length || a[0].ursache - b[0].ursache)) {
+    const platz = teile.find((t) => t.length + stueck.length <= TEIL_GROESSE)
+    if (platz) platz.push(...stueck)
+    else teile.push([...stueck])
+  }
+  return teile
+}
+
+/** Auslassung mitten im Beleg oder Einschub in eckigen Klammern; „…“ am Anfang oder Ende und vor der Seitenangabe bleibt erlaubt. */
+const AUSLASSUNG = /\[|\]|[\p{L}\p{N},;:.]\s*(…|\.\.\.)\s*(?!S\.\s*\d)[\p{L}\p{N}]/u
+
 /** Blindlisten in Teilen zu höchstens TEIL_GROESSE Lösungswegen – ohne Parteien, Länder oder Zitate. */
 export function nebenBlind(k: Katalog, themaId: number, alle = false): { listen: NebenBlindliste[]; reste: string[] } {
   const thema = k.themen.find((t) => t.id === themaId)
   if (!thema) throw new Error(`Thema ${themaId} gibt es nicht`)
-  const einheiten = einheitenDesThemas(k, themaId, alle).map(({ id, name, ebene, begruendung }) => ({ id, name, ebene, begruendung }))
+  const gruppiert = teileNachUrsache(einheitenDesThemas(k, themaId, alle)).map((t) => t.map(({ id, name, ebene, begruendung }) => ({ id, name, ebene, begruendung })))
+  const einheiten = gruppiert.flat()
   const parteinamen = k.parteien.map(({ name, kurzname }) => ({ name, kurzname }))
   const reste = einheiten.flatMap((e) =>
     [e.name, e.begruendung].flatMap((t) => [...verdaechtigeReste(t), ...(ohneParteinamen(t, parteinamen) !== t ? ['Parteiname'] : [])].map((r) => `${e.id}: ${r}`)),
@@ -149,8 +175,8 @@ export function nebenBlind(k: Katalog, themaId: number, alle = false): { listen:
   const massnahmen = k.massnahmen.filter((m) => m.thema_id === themaId)
   const vorhanden = [...k.instrumente.filter((i) => i.thema_id === themaId), ...massnahmen].flatMap((x) => x.nebenwirkungen?.hinweise ?? [])
   const quellen = quellenAus(vorhanden)
-  const teile = Math.ceil(einheiten.length / TEIL_GROESSE)
-  const listen = Array.from({ length: teile }, (_, i) => {
+  const teile = gruppiert.length
+  const listen = gruppiert.map((teil, i) => {
     const inhalt = {
       thema_id: themaId,
       thema: thema.name,
@@ -158,7 +184,7 @@ export function nebenBlind(k: Katalog, themaId: number, alle = false): { listen:
       ursachen: k.ursachen.filter((u) => u.thema_id === themaId).map((u) => u.beschreibung),
       teil: i + 1,
       teile,
-      einheiten: einheiten.slice(i * TEIL_GROESSE, (i + 1) * TEIL_GROESSE),
+      einheiten: teil,
       suchhilfe: SUCHHILFE,
     }
     return { pruefsumme: sha(JSON.stringify(inhalt)), ...inhalt, quellen }
@@ -278,6 +304,8 @@ export function pruefeNebenAntwort(liste: NebenBlindliste, antwort: NebenAntwort
         if (presse) fehler.push(`${bOrt}: „${feld}“ – ${presse} ist Presse oder Sekundärquelle; die zitierte Stelle selbst (Behörde, Drucksache, Studie) oder hinweis: null`)
       }
       if (typeof h.beleg !== 'string' || h.beleg.trim().length < 20) fehler.push(`${bOrt}: „beleg“ – die Stelle wörtlich aus der Quelle (mindestens 20 Zeichen)`)
+      else if (AUSLASSUNG.test(h.beleg))
+        fehler.push(`${bOrt}: „beleg“ zusammengesetzt (Auslassung „…“ oder Einschub „[ ]“) – ein zusammenhängender Abschnitt wörtlich aus der Quelle`)
       else if (typeof h.quelle_url === 'string' && PDF.test(h.quelle_url) && !/\bS\.\s*\d/.test(h.beleg))
         fehler.push(`${bOrt}: „beleg“ aus einem PDF mit Seite („S. 12“) – gelesen mit npm run -s nebenwirkungen:pdf`)
     }
