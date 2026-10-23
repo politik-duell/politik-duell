@@ -160,6 +160,12 @@ Die Bilanz neigt zu Nachteilen, vor allem weil fast jeder Haushaltshinweis eine 
 9. **PDF-Abruf mit Browser-Kennung und Sprache:** Die Mindestlohnkommission antwortete sonst mit 403.
 10. **Beleg tauschen ändert die Aussage nicht:** Ein Agent machte beim Ersetzen eines Belegs aus „gemischt“ einen Nachteil; die Agentendefinition verlangt jetzt einen passenden längeren Abschnitt statt einer einseitigeren Aussage.
 
+**Messung Thema 42** (31 Wege, 23. 10. 2026): 13 000 neu gelesene Tokens und 1,8 Suchen je Weg, 43 % Nacharbeit, kein Limitabbruch. Alle sechs Teile brauchten eine Rückfrage. Der Abgleich mit den Transkripten zeigte: Keiner der Einträge in `gesucht` war als Suche gelaufen. Die Pflicht zu eigenen Listen je Weg (Punkt 2) hatte erfundene Anfragen erzeugt. Daraus drei Prüfungen in `nebenwirkungen:antwort-pruefen`:
+
+11. **Abgleich mit dem Transkript** (`scripts/nebenwirkungen/transkript.ts`): Jede Anfrage in `gesucht` muss als WebSearch oder als Suchwörter von `nebenwirkungen:pdf` gelaufen sein. Jede `quelle_url` muss der Agent selbst geöffnet haben. Eine Suche darf dafür für mehrere Wege stehen. Die Prüfung auf gleiche Listen gilt nur noch ohne Transkript.
+12. **Beleg im Original** (`scripts/nebenwirkungen/original.ts`): Das Skript lädt die Quelle selbst, als PDF je Seite, als HTML im Text. Es lehnt einen Beleg ab, der dort nicht wörtlich steht, und bei PDFs eine falsche Seite. Nicht ladbare Seiten meldet es nur als Hinweis. Die Stichprobe der Koordination prüft damit nur noch, ob der Beleg den Text trägt.
+13. **Gleiche Maßstäbe je Ursache:** Die Teil-Liste nennt je Weg die Nummer seiner Ursache. Hat ein Weg zur selben Ursache in einem Bereich einen Hinweis, braucht jeder andere dort ein Gegenstück oder in `ohne` einen kurzen Grund.
+
 **Erste Lehren:**
 
 - **Vorteile muss man aktiv suchen.** Zuerst fanden sich fast nur Nachteile bei fossilen und Vorteile bei erneuerbaren Lösungswegen. Erst gezielte Suche ergab die Gegenrichtung (Verteilung bei 6706, Haushalt bei 6707). Für die Recherche-Anleitung: je Lösungsweg ausdrücklich nach Vor- *und* Nachteilen in jedem Bereich fragen.

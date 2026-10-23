@@ -8,13 +8,11 @@ import { pruefeKatalog } from '../../src/data/katalog.ts'
 // @ts-expect-error – Hook in reinem JavaScript (schneller Start), ohne Typdeklaration
 import { gesperrteAdresse } from '../../.claude/hooks/sperre.mjs'
 import { pruefkontext } from '../nebenwirkungen.ts'
-import { seitenTexte } from '../zitate.ts'
+import { ladeOriginal } from './original.ts'
 
-const MAX_BYTES = 40 * 1024 * 1024
 const UMFELD = 350
 const MAX_STELLEN = 10
 const MAX_SEITE = 8000
-const BROWSER = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36'
 
 const args = process.argv.slice(2)
 const url = args[0]
@@ -34,25 +32,17 @@ if (grund) {
   process.exit(1)
 }
 
-let res: Response
-try {
-  // Manche Bundesstellen (etwa die Mindestlohnkommission) antworten ohne Browser-Kennung und Sprache mit 403.
-  res = await fetch(url, { redirect: 'follow', headers: { 'User-Agent': BROWSER, Accept: 'application/pdf,*/*', 'Accept-Language': 'de-DE,de;q=0.9' }, signal: AbortSignal.timeout(60_000) })
-} catch (e) {
-  console.error(`Nicht abrufbar: ${e instanceof Error ? (e.cause as { code?: string })?.code ?? e.message : e}`)
+const original = await ladeOriginal(url, { nurPdf: true })
+if ('fehler' in original) {
+  console.error(original.fehler)
   process.exit(1)
 }
-const endAdresse = gesperrteAdresse(res.url, ctx.liste, ctx.programmHosts)
+const endAdresse = gesperrteAdresse(original.endAdresse, ctx.liste, ctx.programmHosts)
 if (endAdresse) {
   console.error(`Gesperrt nach Weiterleitung: ${endAdresse}`)
   process.exit(1)
 }
-const daten = new Uint8Array(await res.arrayBuffer())
-if (!res.ok || daten.length > MAX_BYTES || String.fromCharCode(...daten.slice(0, 5)) !== '%PDF-') {
-  console.error(`Kein lesbares PDF (HTTP ${res.status}, ${Math.round(daten.length / 1024)} KB)`)
-  process.exit(1)
-}
-const seiten = (await seitenTexte(daten)).map((t) => t.replace(/[ \t]+/g, ' ').replace(/(\p{Ll})- ?\n(\p{Ll})/gu, '$1$2').replace(/\n{2,}/g, '\n').trim())
+const { seiten } = original
 const leer = seiten.every((t) => t.length < 20)
 if (leer) {
   console.error(`${seiten.length} Seiten, aber kein Text (eingescannt?) – Quelle nicht verwendbar`)

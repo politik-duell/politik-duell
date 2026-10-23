@@ -3,21 +3,25 @@ import { describe, expect, it } from 'vitest'
 import { NEBENWIRKUNG_BEREICHE } from '../src/data/types'
 import { pruefeDatenordner } from './katalog-laden'
 import {
+  belegSeite,
   bilanz,
   nebenBlind,
   quellenDerAntworten,
   nebenwirkungenEintragen,
   pruefeNebenAntwort,
+  pruefeWerkzeuge,
   TEIL_GROESSE,
   teileNachUrsache,
   type NebenAntwort,
   type NebenBlindliste,
   type NebenHinweis,
 } from './nebenwirkungen'
+import { htmlText } from './nebenwirkungen/original'
+import { werkzeugeAus, type Zeile } from './nebenwirkungen/transkript'
 
-const liste = (ids: number[] = [1, 2]): NebenBlindliste => ({
+const liste = (ids: number[] = [1, 2], ursache = (id: number) => id): NebenBlindliste => ({
   pruefsumme: 'abc', thema_id: 9, thema: 'Test', ziel: 'Ziel', ursachen: ['U'], teil: 1, teile: 1,
-  einheiten: ids.map((id) => ({ id, name: `Weg ${id}`, ebene: 'bund', begruendung: 'Begründung' })),
+  einheiten: ids.map((id) => ({ id, name: `Weg ${id}`, ebene: 'bund', begruendung: 'Begründung', ursache: ursache(id) })),
   suchhilfe: {} as NebenBlindliste['suchhilfe'],
   quellen: [],
 })
@@ -53,6 +57,8 @@ describe('Nebenwirkungen: Recherche ohne Parteinamen', () => {
     expect(quellen.length).toBeGreaterThan(0)
     expect(new Set(quellen).size).toBe(quellen.length)
     expect(text).not.toMatch(/"beleg"/)
+    // Ursache als Nummer in `ursachen` (für gleiche Maßstäbe), ohne Kennung aus dem Katalog.
+    expect(listen.flatMap((l) => l.einheiten).every((e) => e.ursache! >= 1 && e.ursache! <= listen[0].ursachen.length)).toBe(true)
   })
 
   it('legt Wege zur selben Ursache in denselben Teil', () => {
@@ -111,6 +117,48 @@ describe('Nebenwirkungen: Recherche ohne Parteinamen', () => {
     expect(in_('haushalt', hinweis({ text: 'Kostet den Bund rund 300 Mio. Euro im Jahr.' }))).toMatch(/Milliardenbeträgen/)
     expect(in_('aufwand', hinweis({ text: 'Mehr Nachweispflichten für Betriebe.' }))).toMatch(/Größenordnung/)
     expect(in_('aufwand', hinweis({ text: 'Erfüllungsaufwand der Wirtschaft rund 40 Mio. Euro im Jahr.' }))).toBe('')
+  })
+
+  it('verlangt bei Wegen zur selben Ursache ein Gegenstück oder einen Grund', () => {
+    const gleich = liste([1, 2], () => 1)
+    expect(fehler(antwort(), gleich)).toMatch(/Lösungsweg 2 › haushalt: Lösungsweg 1 \(gleiche Ursache\)/)
+    const zwei = einheit(2)
+    Object.assign(zwei.bereiche[0], { ohne: 'Aufkommen dieses Wegs nicht beziffert' })
+    expect(fehler(antwort([einheit(1, { haushalt: hinweis() }), zwei]), gleich)).toBe('')
+    expect(fehler(antwort([einheit(1, { haushalt: hinweis() }), einheit(2, { haushalt: hinweis({ richtung: 'vorteil' }) })]), gleich)).toBe('')
+  })
+
+  it('gleicht Suchen und Quellen mit dem Transkript ab', () => {
+    const a = antwort()
+    const gelaufen = { suchen: a.einheiten.flatMap((e) => e.bereiche.flatMap((b) => b.gesucht)), adressen: ['https://www.destatis.de/a/'] }
+    expect(pruefeWerkzeuge(a, gelaufen)).toEqual([])
+    expect(pruefeWerkzeuge(a, { ...gelaufen, suchen: gelaufen.suchen.slice(1) }).join()).toMatch(/1 › haushalt: „gesucht“ enthält nicht ausgeführte Suchen \(„Weg 1 haushalt/)
+    expect(pruefeWerkzeuge(a, { ...gelaufen, adressen: ['https://www.bvai.de/a'] }).join()).toMatch(/destatis\.de\/a nicht selbst geöffnet/)
+    // Mit Transkript darf dieselbe Suche für mehrere Wege stehen.
+    const e = einheit(2)
+    e.bereiche[0].gesucht = [...einheit(1).bereiche[0].gesucht]
+    expect(pruefeNebenAntwort(liste(), antwort([einheit(1), e]), ctx, gelaufen).fehler).toEqual([])
+    const zeilen: Zeile[] = [
+      { type: 'assistant', message: { content: [
+        { type: 'tool_use', name: 'WebSearch', input: { query: 'Grundsteuer Aufkommen' } },
+        { type: 'tool_use', name: 'WebFetch', input: { url: 'https://www.destatis.de/a', prompt: 'x' } },
+        { type: 'tool_use', name: 'Bash', input: { command: "npm run -s nebenwirkungen:pdf -- https://dserver.bundestag.de/btd/21/1/1.pdf 'Aufkommen Mrd'" } },
+        { type: 'tool_use', name: 'Bash', input: { command: 'npm run -s nebenwirkungen:pdf -- https://www.bmf.de/b.pdf --seite 3' } },
+      ] } },
+    ]
+    expect(werkzeugeAus(zeilen)).toEqual({
+      suchen: ['Grundsteuer Aufkommen', 'Aufkommen Mrd'],
+      adressen: ['https://www.destatis.de/a', 'https://dserver.bundestag.de/btd/21/1/1.pdf', 'https://www.bmf.de/b.pdf'],
+    })
+  })
+
+  it('findet den Beleg im Originaltext', () => {
+    const seiten = ['Vorwort', 'Die Ausweichreaktionen der Handelsteil- \nnehmer sind erheblich.  Das Aufkommen betrug 2024 „12,7 Milliarden“ Euro.']
+    expect(belegSeite('Die Ausweichreaktionen der Handelsteil - nehmer sind erheblich. (S. 2)', seiten)).toBe(2)
+    expect(belegSeite('… betrug 2024 "12,7 Milliarden" Euro.', seiten)).toBe(2)
+    expect(belegSeite('Das Aufkommen betrug 2024 „12,7 Milliarden“ Euro. … S. 2', seiten)).toBe(2)
+    expect(belegSeite('Das Aufkommen betrug 2024 rund 13 Milliarden Euro.', seiten)).toBe(0)
+    expect(htmlText('<p>Grundsteuer&nbsp;B: 15,6&#160;Mrd.&nbsp;&euro;</p><script>x()</script>')).toBe('Grundsteuer B: 15,6 Mrd. €')
   })
 
   it('warnt bei einseitiger Bilanz', () => {

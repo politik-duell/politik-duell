@@ -7,6 +7,7 @@ import { fileURLToPath } from 'node:url'
 import { erstesJsonObjekt } from '../entwurf/json-text.ts'
 import { pruefeDatenordner } from '../katalog-laden.ts'
 import { formatiere } from '../pruefung-export.ts'
+import { werkzeugeDesTeils } from './transkript.ts'
 import { NEBEN_ORDNER, nebenwirkungenEintragen, pruefeNebenAntwort, pruefkontext, type NebenAntwort, type NebenBlindliste } from '../nebenwirkungen.ts'
 
 const args = process.argv.slice(2)
@@ -35,7 +36,7 @@ for (const t of teile) {
   } catch (e) {
     abbruch(`Teil ${n}: Antwort fehlt oder ist kein JSON (${e instanceof Error ? e.message : e})`)
   }
-  const { fehler } = pruefeNebenAntwort(liste, antwort!, ctx)
+  const { fehler } = pruefeNebenAntwort(liste, antwort!, ctx, werkzeugeDesTeils(themaId, Number(n)))
   if (fehler.length) abbruch(`Teil ${n}: Antwort fehlerhaft:\n  ${fehler.join('\n  ')}`)
   antworten.push(antwort!)
 }

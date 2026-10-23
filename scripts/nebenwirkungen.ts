@@ -66,6 +66,8 @@ export interface Einheit {
   ebene: 'bund' | 'land'
   /** Begründung der Bewertung – zeigt, was schon zur Wirkung auf das Thema gehört (und darum nicht hierher). */
   begruendung: string
+  /** Erste Ursache des Wegs (1 = erste in `ursachen`): Wege zur selben Ursache brauchen gleiche Maßstäbe. */
+  ursache?: number
 }
 
 export interface NebenBlindliste {
@@ -100,7 +102,8 @@ export interface NebenAntwort {
   pruefsumme: string
   einheiten: {
     id: number
-    bereiche: { bereich: Bereich; gesucht: string[]; hinweis: NebenHinweis | null }[]
+    /** `ohne`: warum hier kein Hinweis steht, obwohl ein Weg zur selben Ursache im selben Bereich einen hat. */
+    bereiche: { bereich: Bereich; gesucht: string[]; hinweis: NebenHinweis | null; ohne?: string }[]
   }[]
 }
 
@@ -166,7 +169,10 @@ const AUSLASSUNG = /\[|\]|[\p{L}\p{N},;:.]\s*(…|\.\.\.)\s*(?!S\.\s*\d)[\p{L}\p
 export function nebenBlind(k: Katalog, themaId: number, alle = false): { listen: NebenBlindliste[]; reste: string[] } {
   const thema = k.themen.find((t) => t.id === themaId)
   if (!thema) throw new Error(`Thema ${themaId} gibt es nicht`)
-  const gruppiert = teileNachUrsache(einheitenDesThemas(k, themaId, alle)).map((t) => t.map(({ id, name, ebene, begruendung }) => ({ id, name, ebene, begruendung })))
+  const ursachenIds = k.ursachen.filter((u) => u.thema_id === themaId).map((u) => u.id)
+  const gruppiert = teileNachUrsache(einheitenDesThemas(k, themaId, alle)).map((t) =>
+    t.map(({ id, name, ebene, begruendung, ursache }) => ({ id, name, ebene, begruendung, ursache: ursachenIds.indexOf(ursache) + 1 })),
+  )
   const einheiten = gruppiert.flat()
   const parteinamen = k.parteien.map(({ name, kurzname }) => ({ name, kurzname }))
   const reste = einheiten.flatMap((e) =>
@@ -240,8 +246,11 @@ const PDF = /\.pdf($|[?#])/i
 /** Beträge ab einer Milliarde – kleinere Haushaltsfolgen sind nicht wesentlich. */
 const MILLIARDEN = /\bMrd\.|Milliarde/i
 
-/** Prüft eine Antwort gegen ihre Blindliste. Fehler verhindern das Eintragen; Warnungen gehen an die Koordination. */
-export function pruefeNebenAntwort(liste: NebenBlindliste, antwort: NebenAntwort, ctx: Pruefkontext): { fehler: string[]; warnungen: string[] } {
+/**
+ * Prüft eine Antwort gegen ihre Blindliste. Fehler verhindern das Eintragen; Warnungen gehen an die Koordination.
+ * `werkzeuge` (aus dem Transkript): gleicht „gesucht“ und die Quellen mit dem ab, was wirklich lief.
+ */
+export function pruefeNebenAntwort(liste: NebenBlindliste, antwort: NebenAntwort, ctx: Pruefkontext, werkzeuge?: Werkzeuge): { fehler: string[]; warnungen: string[] } {
   const fehler: string[] = []
   const warnungen: string[] = []
   if (antwort?.pruefsumme !== liste.pruefsumme) fehler.push('„pruefsumme“ passt nicht zur Blindliste (falscher Teil oder veraltete Liste)')
@@ -271,7 +280,9 @@ export function pruefeNebenAntwort(liste: NebenBlindliste, antwort: NebenAntwort
         continue
       }
       if (!suchanfragen(x.gesucht)) fehler.push(`${bOrt}: „gesucht“ – die tatsächlich benutzten Suchanfragen angeben (mindestens eine)`)
-      else {
+      // Ohne Transkript: gleiche Listen bei zwei Wegen deuten auf Abschreiben. Mit Transkript zählt nur, was lief –
+      // eine Suche darf dann für mehrere Wege stehen (die Pflicht zu eigenen Listen ließ in Thema 42 Anfragen erfinden).
+      else if (!werkzeuge) {
         const schluessel = `${x.bereich}|${x.gesucht.map((s) => s.trim().toLowerCase()).sort().join('|')}`
         const anderer = anfragen.get(schluessel)
         if (anderer !== undefined && anderer !== e.id) fehler.push(`${bOrt}: „gesucht“ gleich wie bei Lösungsweg ${anderer} – je Lösungsweg eigene, tatsächlich benutzte Anfragen`)
@@ -312,11 +323,82 @@ export function pruefeNebenAntwort(liste: NebenBlindliste, antwort: NebenAntwort
     if (hinweise > MAX_HINWEISE) fehler.push(`${ort}: ${hinweise} Hinweise – höchstens ${MAX_HINWEISE}, nur die wesentlichen`)
   }
   for (const e of liste.einheiten) if (!gesehen.has(e.id)) fehler.push(`Lösungsweg ${e.id}: fehlt in der Antwort`)
+  if (werkzeuge) fehler.push(...pruefeWerkzeuge(antwort, werkzeuge))
+  // Gleiche Maßstäbe (in Thema 42 der häufigste Rückfragegrund): Hat ein Weg zur selben Ursache im Bereich einen
+  // Hinweis, braucht ein anderer ohne Hinweis dort einen kurzen Grund in „ohne“.
+  const ursacheVon = new Map(liste.einheiten.map((e) => [e.id, e.ursache ?? 0]))
+  for (const e of einheiten.filter((x) => ids.has(x?.id))) {
+    for (const x of Array.isArray(e.bereiche) ? e.bereiche : []) {
+      if (x?.hinweis || (typeof x?.ohne === 'string' && x.ohne.trim().length >= 15)) continue
+      const mit = einheiten.find(
+        (a) => a !== e && ursacheVon.get(a?.id) === ursacheVon.get(e.id) && (Array.isArray(a?.bereiche) ? a.bereiche : []).some((y) => y?.bereich === x?.bereich && y.hinweis),
+      )
+      if (mit)
+        fehler.push(
+          `Lösungsweg ${e.id} › ${x.bereich}: Lösungsweg ${mit.id} (gleiche Ursache) hat hier einen Hinweis – Gegenstück suchen (z. B. Kosten ↔ Einsparung) oder in „ohne“ kurz begründen, warum er hier nicht passt`,
+        )
+    }
+  }
   // Bilanz: Einseitigkeit ist kein Fehler (sie kann stimmen), aber die Koordination soll nachfragen.
   const summe = zaehler.vorteil + zaehler.nachteil + zaehler.gemischt
   if (summe >= 3 && (zaehler.vorteil === 0 || zaehler.nachteil === 0))
     warnungen.push(`Bilanz einseitig: ${zaehler.vorteil} Vorteile, ${zaehler.nachteil} Nachteile, ${zaehler.gemischt} gemischt – Gegenrichtung gezielt nachsuchen`)
   return { fehler, warnungen }
+}
+
+/** Was der Agent laut Transkript wirklich getan hat: Suchanfragen und geöffnete Adressen (WebFetch, nebenwirkungen:pdf). */
+export interface Werkzeuge {
+  suchen: string[]
+  adressen: string[]
+}
+
+const anfrage = (s: string) => s.toLowerCase().replace(/["„“”']/g, '').replace(/\s+/g, ' ').trim()
+const adresse = (u: string) => u.trim().replace(/#.*$/, '').replace(/\/+$/, '')
+
+/**
+ * Abgleich mit dem Transkript: In Thema 42 standen in „gesucht“ Anfragen, die nie liefen, und ein Beleg kam aus
+ * der Kopie eines Verbands, während `quelle_url` auf das Ministerium zeigte. Jede Anfrage in „gesucht“ muss gelaufen
+ * (WebSearch oder Suchwörter von nebenwirkungen:pdf), jede Quelle geöffnet sein.
+ */
+export function pruefeWerkzeuge(antwort: NebenAntwort, w: Werkzeuge): string[] {
+  const fehler: string[] = []
+  const suchen = new Set(w.suchen.map(anfrage))
+  const adressen = new Set(w.adressen.map(adresse))
+  for (const e of Array.isArray(antwort?.einheiten) ? antwort.einheiten : []) {
+    for (const x of Array.isArray(e?.bereiche) ? e.bereiche : []) {
+      const ort = `Lösungsweg ${e.id} › ${x?.bereich}`
+      const nie = (Array.isArray(x?.gesucht) ? x.gesucht : []).filter((s) => typeof s === 'string' && !suchen.has(anfrage(s)))
+      if (nie.length) fehler.push(`${ort}: „gesucht“ enthält nicht ausgeführte Suchen (${nie.map((s) => `„${s}“`).join(', ')}) – suchen oder nur wörtlich eintragen, was gelaufen ist`)
+      for (const u of [x?.hinweis?.quelle_url, x?.hinweis?.zweite_quelle_url])
+        if (typeof u === 'string' && !adressen.has(adresse(u)))
+          fehler.push(`${ort}: ${u} nicht selbst geöffnet – mit WebFetch bzw. npm run -s nebenwirkungen:pdf öffnen; Kopien bei Dritten sind keine Quelle`)
+    }
+  }
+  return fehler
+}
+
+/** Für den Vergleich mit dem Original: Anführungszeichen, Striche, Trennungen und Leerraum vereinheitlicht. */
+export const normiereBeleg = (t: string) =>
+  t
+    .normalize('NFKC')
+    .replace(/­/g, '')
+    .replace(/[„“”«»"]/g, '"')
+    .replace(/[‚‘’']/g, "'")
+    .replace(/[‐‑–—]/g, '-')
+    .replace(/(\p{L})\s*-\s+(\p{Ll})/gu, '$1$2')
+    .replace(/\s+/g, ' ')
+    .toLowerCase()
+    .trim()
+
+/**
+ * Steht der Beleg wörtlich im Original? `seiten`: Seitentexte eines PDFs bzw. ein Eintrag für eine HTML-Seite.
+ * Ergebnis: Seite (1-basiert), auf der er steht, oder 0. Seitenangabe und „…“ am Rand zählen nicht mit.
+ */
+export function belegSeite(beleg: string, seiten: string[]): number {
+  const kern = normiereBeleg(beleg.replace(/\(?\s*S\.\s*\d[\d\s,f.–-]*\)?\s*$/u, '').replace(/^\s*(…|\.\.\.)\s*|\s*(…|\.\.\.)\s*$/gu, ''))
+  if (!kern) return 0
+  const i = seiten.findIndex((t) => normiereBeleg(t).includes(kern))
+  return i + 1
 }
 
 /** Kurze Übersicht je Lösungsweg für die Koordination: Bereich und Richtung der Hinweise. */
