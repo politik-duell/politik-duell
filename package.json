@@ -57,6 +57,7 @@
     "nebenwirkungen:blind": "node --experimental-strip-types scripts/nebenwirkungen/blind.ts",
     "nebenwirkungen:antwort-pruefen": "node --experimental-strip-types --no-warnings scripts/nebenwirkungen/antwort-pruefen.ts",
     "nebenwirkungen:eintragen": "node --experimental-strip-types scripts/nebenwirkungen/eintragen.ts",
+    "nebenwirkungen:verbrauch": "node --experimental-strip-types --no-warnings scripts/nebenwirkungen/verbrauch.ts",
     "phase-a": "node --experimental-strip-types scripts/phase-a.ts",
     "themen:ueberblick": "node --experimental-strip-types scripts/themen-ueberblick.ts",
     "liste:auswahl": "node --experimental-strip-types scripts/liste-auswahl.ts"

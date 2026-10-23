@@ -1,0 +1,130 @@
+{
+  "pruefsumme": "fc7fb91ab703e78e",
+  "thema_id": 38,
+  "thema": "Krankenkasse: Beiträge und Leistungen",
+  "ziel": "Versicherte zahlen einen Beitrag, der stabil und bezahlbar bleibt, und erhalten die medizinisch nötigen Leistungen mit Eigenanteilen, die sie sich leisten können.",
+  "ursachen": [
+    "Die Leistungsausgaben der GKV wachsen schneller als die Beitragseinnahmen: im 1. Quartal 2026 +8,0 % gegenüber +4,1 % (ohne Zusatzbeitrag); ohne Reformen 4,7 % Zusatzbeitrag bis 2030",
+    "Der Bund erstattet versicherungsfremde Leistungen nicht voll: Laut Finanzkommission Gesundheit (2026) brächte die Erstattung 12,5 Mrd. Euro; Abgrenzung umstritten",
+    "Die Kassen füllen nach Defiziten ihre Rücklagen auf: erhobener Zusatzbeitrag Ende März 2026 im Schnitt 3,13 % (bekanntgegeben 2,9 %), Reserven nur rund 0,2 Monatsausgaben",
+    "Gesetzliche Zuzahlungen fallen u. a. bei Krankenhaus, Heilmitteln, häuslicher Krankenpflege und Fahrkosten an, bis zur Belastungsgrenze von 2 % der Bruttoeinnahmen (chronisch Kranke 1 %)"
+  ],
+  "teil": 1,
+  "teile": 4,
+  "einheiten": [
+    {
+      "id": 10566,
+      "name": "Versicherungsfremde Leistungen (v. a. Bürgergeld-Beiträge) kostendeckend aus Steuermitteln finanzieren (Bund)",
+      "ebene": "bund",
+      "begruendung": "Laut IGES deckt die Bürgergeld-Pauschale nur rund 39 % der Kosten (Lücke ca. 9-10 Mrd. Euro), Erstattung senkt den Beitragsbedarf spürbar. Dagegen: einmalige Entlastung ohne Wirkung auf das Ausgabenwachstum, belastet den angespannten Bundeshaushalt."
+    },
+    {
+      "id": 10567,
+      "name": "Privatversicherte in eine gemeinsame Bürgerversicherung einbeziehen (Bund)",
+      "ebene": "bund",
+      "begruendung": "IGES/Bertelsmann-Simulation: Einbeziehung aller Privatversicherten senkt den Beitragssatz um 0,2-0,6 Punkte, weil sie im Schnitt mehr verdienen und gesünder sind. Dagegen: einmaliger Effekt, verfassungsrechtliche Fragen zum PKV-Bestand, lange Übergänge."
+    },
+    {
+      "id": 10568,
+      "name": "Beitragsbemessungsgrenze anheben oder abschaffen und weitere Einkommensarten verbeitragen (Bund)",
+      "ebene": "bund",
+      "begruendung": "Modellrechnungen zeigen Mehreinnahmen und Beitragssatzspielraum durch breitere Einnahmebasis. Dagegen: bremst das Ausgabenwachstum nicht, Erhebung auf Kapitaleinkünfte aufwendig, mögliche Ausweichreaktionen und Belastung von Arbeitskosten umstritten."
+    },
+    {
+      "id": 10569,
+      "name": "Beitragsbemessung für geringverdienende Selbstständige an tatsächlichen Einnahmen ausrichten (Bund)",
+      "ebene": "bund",
+      "begruendung": "Senkt die Beitragslast geringverdienender Selbstständiger und macht Beiträge für sie bezahlbarer. Dagegen: betrifft eine kleine Gruppe, mindert eher die Einnahmen und ändert nichts am allgemeinen Beitragsanstieg."
+    },
+    {
+      "id": 10570,
+      "name": "Fallpauschalen im Krankenhaus abschaffen und Betriebskosten voll bzw. über Budgets finanzieren (Bund)",
+      "ebene": "bund",
+      "begruendung": "Könnte Fehlanreize zur Mengenausweitung verringern. Dagegen: volle Kostenerstattung bzw. Selbstkostendeckung schwächt Kostenkontrolle und dürfte die Ausgaben der Kassen erhöhen; Erfahrungen vor 1993 zeigten steigende Kosten."
+    },
+    {
+      "id": 10571,
+      "name": "Krankenhausstrukturen spezialisieren und Krankenhausreform umsetzen (Bund)",
+      "ebene": "bund",
+      "begruendung": "Konzentration kann Vorhaltekosten und Doppelstrukturen senken und Qualität verbessern. Dagegen: Einsparungen erst langfristig und unsicher, Umbau verursacht zunächst hohe Transformationskosten."
+    }
+  ],
+  "suchhilfe": {
+    "haushalt": {
+      "frage": "Was kostet der Weg Bund, Ländern, Kommunen oder Sozialkassen – oder was bringt er ein?",
+      "vorteil": [
+        "Mehreinnahmen",
+        "Einsparung öffentlicher Haushalt",
+        "Entlastung Sozialversicherung"
+      ],
+      "nachteil": [
+        "Mindereinnahmen",
+        "Kosten Bundeshaushalt",
+        "Haushaltsausgaben Gesetzentwurf"
+      ]
+    },
+    "wirtschaft": {
+      "frage": "Welche Kosten oder Entlastungen entstehen für Unternehmen (besonders kleine und mittlere), wie wirkt er auf Preise und Verbraucher?",
+      "vorteil": [
+        "Entlastung Unternehmen",
+        "sinkende Preise",
+        "Investitionen"
+      ],
+      "nachteil": [
+        "Kosten für Unternehmen",
+        "Preisanstieg",
+        "Wettbewerbsfähigkeit"
+      ]
+    },
+    "aufwand": {
+      "frage": "Welcher Aufwand für Anträge, Nachweise und Kontrollen entsteht oder entfällt – für Bürger, Wirtschaft, Verwaltung?",
+      "vorteil": [
+        "Bürokratieabbau",
+        "Erfüllungsaufwand sinkt"
+      ],
+      "nachteil": [
+        "Erfüllungsaufwand",
+        "Nachweispflichten",
+        "Normenkontrollrat Stellungnahme"
+      ]
+    },
+    "umwelt": {
+      "frage": "Wie wirkt er auf Emissionen, Natur und Ressourcen, und welche Lasten oder Vorteile hat er für spätere Jahre?",
+      "vorteil": [
+        "Emissionsminderung",
+        "Umweltentlastung"
+      ],
+      "nachteil": [
+        "Mehremissionen",
+        "Umweltrisiken",
+        "Flächenverbrauch"
+      ]
+    },
+    "verteilung": {
+      "frage": "Wer gewinnt, wer trägt die Last – nach Einkommen, Alter, Familienform, Stadt und Land?",
+      "vorteil": [
+        "Entlastung geringe Einkommen",
+        "Verteilungswirkung progressiv"
+      ],
+      "nachteil": [
+        "regressiv",
+        "Mitnahmeeffekte",
+        "profitieren höhere Einkommen"
+      ]
+    },
+    "grundrechte": {
+      "frage": "Schränkt er Freiheiten ein oder stärkt er sie, behandelt er Gruppen ungleich, wie wirkt er auf Gesundheit und Sicherheit?",
+      "vorteil": [
+        "Gesundheit verbessert",
+        "Schutz",
+        "Gleichstellung"
+      ],
+      "nachteil": [
+        "Datenschutz",
+        "Grundrechtseingriff",
+        "Benachteiligung",
+        "Gesundheitsrisiko"
+      ]
+    }
+  }
+}
