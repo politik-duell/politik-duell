@@ -68,7 +68,7 @@ insert into public.themen (id, name, beschreibung, symptome) values
   (8, 'Bus und Bahn', 'Seltene Verbindungen, Ausfälle, Verspätungen und teure Tickets.', '[]'::jsonb),
   (9, 'Sicherheit', 'Opfer von Gewalt, Diebstahl oder Betrug werden – zu Hause, unterwegs oder im Internet – oder sich im Alltag unsicher fühlen.', '[]'::jsonb),
   (10, 'Pflege', 'Pflegeplatz oder Pflegedienst finden, hohe Kosten, überlastete Angehörige.', '[{"nr":1,"alltag":"Das Pflegeheim ist so teuer, dass wir es kaum bezahlen können","ursachen_ids":[1002,1005]}]'::jsonb),
-  (11, 'Preise und Löhne', 'Lebensmittel und Dinge des Alltags sind teuer geworden, der Lohn reicht kaum.', '[{"nr":1,"alltag":"Lebensmittel sind zu teuer geworden","ursachen_ids":[1101,1102]},{"nr":2,"alltag":"Von meinem Lohn bleibt mir zu wenig zum Leben","ursachen_ids":[1103,1104]}]'::jsonb),
+  (11, 'Preise und Löhne', 'Lebensmittel und Dinge des Alltags sind teuer geworden, und vom Lohn bleibt nach Steuern und Abgaben zu wenig zum Leben.', '[{"nr":1,"alltag":"Lebensmittel sind zu teuer geworden","ursachen_ids":[1101,1102]},{"nr":2,"alltag":"Von meinem Lohn bleibt mir zu wenig zum Leben","ursachen_ids":[1103,1104]}]'::jsonb),
   (12, 'Straßen und Brücken', 'Kaputte Straßen, gesperrte Brücken, lange Umwege und gefährliche Radwege.', '[{"nr":1,"alltag":"Die Straßen in meiner Gemeinde werden nicht repariert","ursachen_ids":[1202,1203]}]'::jsonb),
   (13, 'Internet und Mobilfunk', 'Langsames Internet zu Hause und Funklöcher unterwegs.', '[]'::jsonb),
   (14, 'Behördengänge', 'Lange Wartezeiten auf Termine und Bescheide, viel Papier, dieselben Angaben immer wieder.', '[]'::jsonb),
@@ -99,7 +99,7 @@ insert into public.themen (id, name, beschreibung, symptome) values
   (39, 'Wohneigentum', 'Viele Menschen möchten eine eigene Wohnung oder ein eigenes Haus, sehen aber Kaufpreise, Eigenkapital und Nebenkosten als kaum erreichbar an.', '[]'::jsonb),
   (40, 'Arbeitszeit, Erreichbarkeit und Vereinbarkeit', 'Viele Beschäftigte arbeiten länger als vereinbart, werden in der Freizeit erreicht oder können ihre Arbeitszeit nicht so gestalten, wie es zu Kindern oder pflegebedürftigen Angehörigen passt.', '[]'::jsonb),
   (41, 'Schutz im Krisen- und Kriegsfall', 'Viele Menschen wissen nicht, wie sie in einer Großlage wie Krieg, Sabotage oder langem Stromausfall gewarnt werden und wo sie Schutz und Versorgung finden. Es geht um den Schutz und die Versorgung der Bevölkerung, nicht um die Verhinderung von Konflikten.', '[]'::jsonb),
-  (42, 'Steuern und Abgaben', 'Vom Bruttolohn bleibt vielen zu wenig netto. Viele fürchten, dass Steuern steigen oder staatliche Leistungen gekürzt werden.', '[]'::jsonb),
+  (42, 'Steuern und Abgaben', 'Bei Lohnerhöhungen steigt die Steuer überproportional mit (kalte Progression). Viele fürchten, dass wegen der Staatsschulden Steuern steigen oder Leistungen gekürzt werden, und fragen sich, wer die Steuern trägt.', '[]'::jsonb),
   (43, 'Künstliche Intelligenz', 'Viele Menschen sorgen sich, dass KI ihren Arbeitsplatz entwertet, dass sie durch KI-Fälschungen getäuscht werden und dass sie über KI-gestützte Entscheidungen keine Kontrolle haben.', '[]'::jsonb),
   (44, 'Zölle und Handelskonflikte', 'Beschäftigte in exportabhängigen Betrieben fürchten um ihren Arbeitsplatz, weil Zölle und Handelskonflikte den Absatz bremsen. Zugleich hängen manche Rohstoffe an wenigen Lieferländern und können knapp werden.', '[]'::jsonb),
   (45, 'Klimaschutz', 'Viele Menschen sorgen sich, dass der Klimawandel ungebremst weitergeht, weil die Treibhausgasemissionen in Deutschland nur langsam sinken.', '[]'::jsonb)
@@ -5127,7 +5127,9 @@ insert into public.massnahmen (id, thema_id, partei_id, land, beschreibung, ursa
   (10956, 45, 17, null, 'Förderung alternativer Kraftstoffe und Entwicklung verbrauchsarmer Verbrennermotoren', '{4501}', null, 1, 2, null, 'Sparsamere Motoren und alternative Kraftstoffe senken Emissionen etwas; laut PIK sind E-Fuels aber teuer (800-1.200 Euro/t CO2), knapp und für Pkw ineffizient, bis 2030 kaum verfügbar.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=10', 'https://publications.pik-potsdam.de/pubman/item/item_25599_8', 'belegt', '2026-10-22', false, true, 'blind', null),
   (10957, 45, 17, null, 'Neue Straßen bauen, wo sie nötig sind', '{4501}', 10884, 0, 2, null, 'Mehr Straßenkapazität senkt keine Emissionen; Studien zu induziertem Verkehr zeigen eher Mehrverkehr, die Größe des Effekts schwankt aber stark je nach Lage und Stauniveau.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=29', null, 'gemischt', '2026-10-22', false, true, 'blind', null),
   (10958, 45, 17, null, 'CO2-Preis abschaffen', '{4501,4502}', 10883, 0, 2, null, 'Studien zeigen, dass CO2-Preise Emissionen auch bei niedrigen Preisen senken; ihr Abbau schwächt diesen Anreiz. Rechtlich national möglich, ab dem EU-Emissionshandel für Verkehr und Wärme aber begrenzt.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=10', 'https://strathprints.strath.ac.uk/72023', 'belegt', '2026-10-22', false, true, 'blind', null),
-  (10959, 45, 17, null, 'Europäischen Emissionshandel globalisieren oder Abschaffung auf EU-Ebene anstreben', '{4504}', null, 0, 1, null, 'Der EU-Emissionshandel hat Emissionen nachweislich gesenkt; seine Abschaffung entfernt die Obergrenze, eine Globalisierung ist unrealistisch. Beides hängt von EU und anderen Staaten ab.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=11', 'https://strathprints.strath.ac.uk/72023', 'belegt', '2026-10-22', false, true, 'blind', null);
+  (10959, 45, 17, null, 'Europäischen Emissionshandel globalisieren oder Abschaffung auf EU-Ebene anstreben', '{4504}', null, 0, 1, null, 'Der EU-Emissionshandel hat Emissionen nachweislich gesenkt; seine Abschaffung entfernt die Obergrenze, eine Globalisierung ist unrealistisch. Beides hängt von EU und anderen Staaten ab.', 'https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf#page=11', 'https://strathprints.strath.ac.uk/72023', 'belegt', '2026-10-22', false, true, 'blind', null),
+  (10960, 11, 13, null, 'Beiträge für Bürgergeldbeziehende angemessener aus Steuermitteln finanzieren, um Versicherte und Arbeitgeber zu entlasten', '{1104}', 6888, 1, 2, null, 'Senkt die Kranken- und Pflegebeiträge etwas, weil der Bund die Kosten trägt; die Entlastung der Beschäftigten ist gering und belastet den Bundeshaushalt mit rund zehn Milliarden Euro im Jahr.', 'https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=93', null, 'gemischt', '2026-10-23', false, true, null, '[]'::jsonb),
+  (10961, 42, 13, null, 'Grundfreibetrag der Einkommensteuer erhöhen (ohne Betrag).', '{4201}', null, 1, 3, null, 'Ein höherer Grundfreibetrag entlastet alle Steuerpflichtigen und gleicht einen Teil der kalten Progression aus. Dagegen: einmaliger Schritt ohne Betrag und ohne dauerhafte Anpassung. Nachgetragen in Anlehnung an die gleichartige, blind bewertete Zusage (Grundfreibetrag um 1.000 Euro anheben).', 'https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=74', null, 'offen', '2026-10-23', false, true, 'nicht_blind', null);
 
 select setval(pg_get_serial_sequence('public.massnahmen', 'id'), (select max(id) from public.massnahmen));
 
@@ -6741,7 +6743,8 @@ insert into public.pruef_einheiten (id, thema_id) values
   (10951, 45),
   (10955, 45),
   (10956, 45),
-  (10959, 45);
+  (10959, 45),
+  (10961, 42);
 
 insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand, ki_entwurf, durchsucht_fuer) values
   (1, 11, null, 'massnahmen', null, '2026-09-30', true, null),
@@ -6942,7 +6945,7 @@ insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand
   (10, 17, 'BE', 'keine', 'Landeswahlprogramm (Beschluss 25. 4. 2026) durchsucht, Kapitel Gesundheit (S. 23) und Stichwörter Investitionskosten, Pflegewohngeld, Eigenanteil: Das Programm fordert gedeckelte Eigenanteile in der Pflegeversicherung (Bundesrecht, Ursache 1002), nennt aber keine Landesmaßnahme zu den Investitionskosten (Ursache 1005).', '2026-09-29', true, null),
   (11, 11, null, 'massnahmen', null, '2026-09-30', true, null),
   (11, 12, null, 'massnahmen', null, '2026-09-30', true, null),
-  (11, 13, null, 'massnahmen', null, '2026-09-30', true, null),
+  (11, 13, null, 'massnahmen', null, '2026-10-23', true, null),
   (11, 14, null, 'massnahmen', null, '2026-09-30', true, null),
   (11, 15, null, 'massnahmen', null, '2026-09-30', true, null),
   (11, 16, null, 'massnahmen', null, '2026-09-30', true, null),
@@ -7621,7 +7624,7 @@ insert into public.abdeckung (thema_id, partei_id, land, art, begruendung, stand
   (41, 17, 'ST', 'keine', 'Kapitel „Schutz beginnt vor der Katastrophe“ (S. 68–69) und Kapitel „Schutz ist staatliche Kernaufgabe“ (S. 66–67) gelesen; nichts zu Sirenen, MoWaS, Warn-Apps oder Cell Broadcast.', '2026-10-21', true, '{4102}'),
   (42, 11, null, 'massnahmen', null, '2026-10-22', true, '{4201,4202,4203}'),
   (42, 12, null, 'massnahmen', null, '2026-10-22', true, '{4201,4202,4203}'),
-  (42, 13, null, 'massnahmen', null, '2026-10-22', true, '{4201,4202,4203}'),
+  (42, 13, null, 'massnahmen', null, '2026-10-23', true, '{4201,4202,4203}'),
   (42, 14, null, 'massnahmen', null, '2026-10-22', true, '{4201,4202,4203}'),
   (42, 15, null, 'massnahmen', null, '2026-10-22', true, '{4201,4202,4203}'),
   (42, 16, null, 'massnahmen', null, '2026-10-22', true, '{4201,4202,4203}'),

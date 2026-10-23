@@ -68,6 +68,25 @@ export function pruefeFaelle(faelle: Fall[], themen: Pick<Thema, 'id'>[], ursach
   return fehler
 }
 
+/**
+ * Fälle aus dem Katalog selbst: je Ursache ihr Alltagssatz, je Symptomgruppe deren Satz. Jeder muss im eigenen
+ * Thema landen – sonst beschreibt ein anderes Thema dieselbe Lage (wie „Vom Bruttolohn bleibt zu wenig netto“
+ * in Steuern und Abgaben, obwohl die Ursache dazu in Preise und Löhne steht). Die übrigen Ursachen einer
+ * Symptomgruppe sind erlaubt, weil die Gruppe als Ganzes vorausgewählt wird.
+ */
+export function alltagsFaelle(themen: Pick<Thema, 'id' | 'symptome'>[], ursachen: Pick<Ursache, 'id' | 'thema_id' | 'alltag'>[]): Fall[] {
+  const faelle: Fall[] = []
+  for (const t of themen) {
+    const gruppen = t.symptome ?? []
+    for (const u of ursachen.filter((x) => x.thema_id === t.id && x.alltag)) {
+      const auch = [...new Set(gruppen.filter((g) => g.ursachen_ids.includes(u.id)).flatMap((g) => g.ursachen_ids))].filter((id) => id !== u.id)
+      faelle.push({ id: `alltag-${u.id}`, text: u.alltag!, typ: 'problem', thema: t.id, ursachen: [u.id], ...(auch.length ? { auch } : {}) })
+    }
+    for (const g of gruppen) faelle.push({ id: `symptom-${t.id}-${g.nr}`, text: g.alltag, typ: 'problem', thema: t.id, ursachen: g.ursachen_ids })
+  }
+  return faelle
+}
+
 export interface Bilanz {
   faelle: number
   ok: number

@@ -75,6 +75,8 @@
     { "id": "beleg-formular", "text": "Den Antrag auf Wohngeld verstehe ich einfach nicht, das sind zwölf Seiten Formular mit lauter Fachbegriffen.", "typ": "problem", "thema": 14, "ursachen": [1404] },
     { "id": "thema-waermepumpe-laerm", "text": "Neben unserem Haus hat der Nachbar eine Wärmepumpe aufgestellt, nachts brummt sie und ich schlafe schlecht.", "typ": "problem", "thema": null },
     { "id": "thema-tanken-tafel", "text": "Tanken ist so teuer geworden, dass ich mir überlege, ob ich noch zur Tafel fahren kann.", "typ": "problem", "thema": 21, "ursachen": [], "auch": [2101], "rueckfrage": true },
+    { "id": "thema-netto-abgaben", "text": "Von meinem Lohn bleibt nach Steuern und Sozialabgaben kaum noch etwas übrig.", "typ": "problem", "thema": 11, "ursachen": [1103, 1104] },
+    { "id": "thema-kalte-progression", "text": "Bei jeder Gehaltserhöhung frisst die Steuer fast alles wieder auf.", "typ": "problem", "thema": 42, "ursachen": [4201] },
     { "id": "thema-heizungsgesetz", "text": "Weg mit dem Heizungsgesetz!", "typ": "forderung", "thema": 16 }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "id": 11,
   "name": "Preise und Löhne",
-  "beschreibung": "Lebensmittel und Dinge des Alltags sind teuer geworden, der Lohn reicht kaum.",
+  "beschreibung": "Lebensmittel und Dinge des Alltags sind teuer geworden, und vom Lohn bleibt nach Steuern und Abgaben zu wenig zum Leben.",
   "ziel": "Menschen können sich mit ihrem Einkommen Lebensmittel und den täglichen Bedarf dauerhaft leisten.",
   "schlagwoerter": ["lebensmittel", "einkauf", "einkaufen", "supermarkt", "preise", "teuer", "inflation", "lohn", "gehalt", "netto", "reicht nicht", "am monatsende", "lebenshaltung"],
   "ursachen": [
@@ -514,6 +514,17 @@
           "zitat": "Um insbesondere niedrige Einkommen, Alleinerziehende und auch Menschen, die mit Bürgergeld aufstocken müssen, zielgenau und unbürokratisch zu entlasten, führen wir Steuergutschriften ein.",
           "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=74",
           "stand": "2026-09-30",
+          "geprueft": false,
+          "ki_entwurf": true
+        },
+        {
+          "id": 10960,
+          "instrument": 6888,
+          "beschreibung": "Beiträge für Bürgergeldbeziehende angemessener aus Steuermitteln finanzieren, um Versicherte und Arbeitgeber zu entlasten",
+          "ursachen_ids": [1104],
+          "zitat": "Diesen Trend wollen wir umkehren und damit die Versicherten und die Arbeitgeber von versicherungsfremden Leistungen entlasten. Dazu gehört, dass wir die Finanzierung der Rentenbeiträge von pflegenden Angehörigen oder die Beiträge für Empfänger*innen von Bürgergeld angemessener über den Staat finanzieren.",
+          "beleg_programm_url": "https://cms.gruene.de/uploads/assets/20250318_Regierungsprogramm_DIGITAL_DINA5.pdf#page=93",
+          "stand": "2026-10-23",
           "geprueft": false,
           "ki_entwurf": true
         }
