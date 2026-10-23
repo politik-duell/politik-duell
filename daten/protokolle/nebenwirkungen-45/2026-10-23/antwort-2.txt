@@ -1,0 +1,101 @@
+{
+  "pruefsumme": "81e2574433fba3c3",
+  "einheiten": [
+    {
+      "id": 10887,
+      "bereiche": [
+        {"bereich": "haushalt", "gesucht": ["Steuerliche Förderung Elektrofahrzeuge Sonderabschreibung Gesetzentwurf Steuermindereinnahmen Mrd. Euro Drucksache"], "hinweis": null, "ohne": "Haushaltswirkung dieses Wegs nicht beziffert"},
+        {"bereich": "wirtschaft", "gesucht": ["Verbrenner-Aus Flottengrenzwerte Aufhebung Folgen Arbeitsplätze Autoindustrie Strafzahlungen Studie", "ifo OR IAB OR Fraunhofer Studie Verbrenner-Aus 2035 Beschäftigung Automobilindustrie Deutschland Effekt Arbeitsplätze", "European Commission impact assessment CO2 standards cars vans 2035 fuel cost savings consumers total cost of ownership"], "hinweis": null},
+        {"bereich": "aufwand", "gesucht": ["Verbrenner-Aus Flottengrenzwerte Aufhebung Folgen Arbeitsplätze Autoindustrie Strafzahlungen Studie"], "hinweis": null},
+        {"bereich": "umwelt", "gesucht": ["Verbrenner-Aus Flottengrenzwerte Aufhebung Folgen Arbeitsplätze Autoindustrie Strafzahlungen Studie"], "hinweis": null, "ohne": "Wirkung auf Luftschadstoffe oder Lärm dieses Wegs nicht belegt"},
+        {"bereich": "verteilung", "gesucht": ["CO2-Flottengrenzwerte Pkw Kraftstoffkosten Verbraucher Einsparung Umweltbundesamt Neuwagen Aufhebung Folgen", "ICCT OR Fraunhofer ISI Studie CO2-Flottengrenzwerte Pkw Kraftstoffkosten Halter Einsparung Euro Gesamtnutzungskosten Elektroauto Deutschland"], "hinweis": null, "ohne": "Kraftstoffkosten der Halter nur als Erwartung der EU-Kommission, ohne zweite Quelle"},
+        {"bereich": "grundrechte", "gesucht": ["CO2-Flottengrenzwerte Pkw Kraftstoffkosten Verbraucher Einsparung Umweltbundesamt Neuwagen Aufhebung Folgen"], "hinweis": null, "ohne": "Gesundheitswirkung dieses Wegs nicht belegt"}
+      ]
+    },
+    {
+      "id": 10888,
+      "bereiche": [
+        {"bereich": "haushalt", "gesucht": ["Güterverkehr Verlagerung Schiene Bundesrechnungshof OR Umweltbundesamt Kosten Investitionen Schienenwege Mrd. Euro"], "hinweis": null, "ohne": "Kosten dieses Wegs nicht aktuell beziffert"},
+        {"bereich": "wirtschaft", "gesucht": ["Güterverkehr Verlagerung Schiene Bundesrechnungshof OR Umweltbundesamt Kosten Investitionen Schienenwege Mrd. Euro"], "hinweis": null},
+        {"bereich": "aufwand", "gesucht": ["Güterverkehr Verlagerung Schiene Bundesrechnungshof OR Umweltbundesamt Kosten Investitionen Schienenwege Mrd. Euro"], "hinweis": null},
+        {"bereich": "umwelt", "gesucht": ["umweltbundesamt.de Emissionsdaten Güterverkehr Vergleich Verkehrsträger Stickstoffoxide Partikel Lkw Güterzug g/tkm", "Luftschadstoffe Lkw Schiene"], "hinweis": {
+          "richtung": "gemischt",
+          "text": "Je Tonnenkilometer stießen Güterbahnen 2022 rund 0,032 g Stickoxide aus, Lkw 0,198 g, Binnenschiffe 0,415 g; bei Luftschadstoffen hat nur die Schiene einen Vorteil.",
+          "quelle_url": "https://www.umweltbundesamt.de/system/files/medien/479/publikationen/schwere_lasten_grosse_aufgabe_ein_ziel_v5_240822_bf.pdf",
+          "belegstufe": "A",
+          "beleg": "Verkehrsmittel Stickoxide in g/tkm Partikel ohne Abrieb in g/km Lkw 0,198 0,010 Güterbahnen 0,032 0,001 Binnenschiff 0,415 0,011 Quelle: Umweltbundesamt 2024 / TREMOD 6.51 Straßenverkehrs beträgt, so haben Binnenschiffe – anders als bei den Treibhausgasemissionen – keinen Vorteil bei den Luftschadstoffen. (S. 15)"
+        }},
+        {"bereich": "verteilung", "gesucht": ["Güterverkehr Schiene Lärm Anwohner Umweltbundesamt Schienengüterverkehr Nachtzüge Belastung Verlagerung"], "hinweis": null, "ohne": "keine belastbare Quelle zur Verteilung gefunden"},
+        {"bereich": "grundrechte", "gesucht": ["Güterverkehr Schiene Lärm Anwohner Umweltbundesamt Schienengüterverkehr Nachtzüge Belastung Verlagerung"], "hinweis": {
+          "richtung": "nachteil",
+          "text": "Der Schienengüterverkehr ist besonders laut und fährt vor allem nachts, wenn Anwohner besonders lärmempfindlich sind (Umweltbundesamt, 2017).",
+          "quelle_url": "https://www.umweltbundesamt.de/presse/pressemitteilungen/jeder-fuenfte-deutsche-leidet-unter-schienenlaerm",
+          "belegstufe": "A",
+          "beleg": "Hinzu kommt, dass der besonders laute Schienengüterverkehr vor allem in der lärmsensiblen Nacht stattfindet."
+        }}
+      ]
+    },
+    {
+      "id": 10903,
+      "bereiche": [
+        {"bereich": "haushalt", "gesucht": ["Luftverkehrsteuer Aufkommen Mrd. Euro Bundeshaushalt Destatis", "Luftverkehrsteuer Gesetzentwurf Absenkung 2026 Mindereinnahmen Haushaltsausgaben ohne Erfüllungsaufwand Drucksache", "destatis.de Pressemitteilung 15. April 2025 Luftverkehrsteuer 2024 angemeldet"], "hinweis": {
+          "richtung": "gemischt",
+          "text": "Zum Vergleich: Für die Luftverkehrsteuer, die dieser Weg ersetzt, wurden 2025 rund 2,1 Mrd. Euro angemeldet; das sind nicht die Kosten dieses Wegs.",
+          "quelle_url": "https://www.destatis.de/DE/Themen/Staat/Steuern/Weitere-Steuern/luftverkehrsteuer.html",
+          "belegstufe": "A",
+          "beleg": "2,1 Milliarden Euro Luftverkehrsteuer für 84,0 Millionen Fluggäste im Jahr 2025 angemeldet"
+        }},
+        {"bereich": "wirtschaft", "gesucht": ["Luftverkehrsteuer Aufkommen Mrd. Euro Bundeshaushalt Destatis"], "hinweis": null, "ohne": "Wirkung der EU-Abgabe auf Preise nicht beziffert"},
+        {"bereich": "aufwand", "gesucht": ["Luftverkehrsteuer Gesetzentwurf Absenkung 2026 Mindereinnahmen Haushaltsausgaben ohne Erfüllungsaufwand Drucksache"], "hinweis": null},
+        {"bereich": "umwelt", "gesucht": ["Luftverkehrsteuer Aufkommen Mrd. Euro Bundeshaushalt Destatis"], "hinweis": null, "ohne": "Wirkung auf Luftschadstoffe oder Lärm dieses Wegs nicht belegt"},
+        {"bereich": "verteilung", "gesucht": ["Luftverkehrsteuer Aufkommen Mrd. Euro Bundeshaushalt Destatis"], "hinweis": null, "ohne": "keine belastbare amtliche Quelle zur Verteilung gefunden"},
+        {"bereich": "grundrechte", "gesucht": ["Luftverkehrsteuer Aufkommen Mrd. Euro Bundeshaushalt Destatis"], "hinweis": null, "ohne": "Gesundheitswirkung dieses Wegs nicht belegt"}
+      ]
+    },
+    {
+      "id": 10904,
+      "bereiche": [
+        {"bereich": "haushalt", "gesucht": ["Steuerliche Förderung Elektrofahrzeuge Sonderabschreibung Gesetzentwurf Steuermindereinnahmen Mrd. Euro Drucksache"], "hinweis": null, "ohne": "Haushaltswirkung dieses Wegs nicht beziffert"},
+        {"bereich": "wirtschaft", "gesucht": ["Bundesregierung Antwort Kleine Anfrage CO2-Flottengrenzwerte Pkw Strafzahlungen Hersteller 2025 Betrag Flexibilität Dreijahresdurchschnitt", "European Commission impact assessment CO2 standards cars vans 2035 fuel cost savings consumers total cost of ownership"], "hinweis": null},
+        {"bereich": "aufwand", "gesucht": ["Bundesregierung Antwort Kleine Anfrage CO2-Flottengrenzwerte Pkw Strafzahlungen Hersteller 2025 Betrag Flexibilität Dreijahresdurchschnitt"], "hinweis": null},
+        {"bereich": "umwelt", "gesucht": ["Wissenschaftlicher Dienst Bundestag Verbrenner-Aus Flottengrenzwerte Auswirkungen Wirtschaft Verbraucher Kraftstoffkosten Einsparung"], "hinweis": null, "ohne": "Wirkung auf Luftschadstoffe oder Lärm dieses Wegs nicht belegt"},
+        {"bereich": "verteilung", "gesucht": ["CO2-Flottengrenzwerte Pkw Kraftstoffkosten Verbraucher Einsparung Umweltbundesamt Neuwagen Aufhebung Folgen", "ICCT OR Fraunhofer ISI Studie CO2-Flottengrenzwerte Pkw Kraftstoffkosten Halter Einsparung Euro Gesamtnutzungskosten Elektroauto Deutschland"], "hinweis": null, "ohne": "Kraftstoffkosten der Halter nur als Erwartung der EU-Kommission, ohne zweite Quelle"},
+        {"bereich": "grundrechte", "gesucht": ["CO2-Flottengrenzwerte Pkw Kraftstoffkosten Verbraucher Einsparung Umweltbundesamt Neuwagen Aufhebung Folgen"], "hinweis": null, "ohne": "Gesundheitswirkung dieses Wegs nicht belegt"}
+      ]
+    },
+    {
+      "id": 10905,
+      "bereiche": [
+        {"bereich": "haushalt", "gesucht": ["Steuerliche Förderung Elektrofahrzeuge Sonderabschreibung Gesetzentwurf Steuermindereinnahmen Mrd. Euro Drucksache", "Umweltbonus Elektrofahrzeuge Gesamtausgaben Mrd. Euro Bundesrechnungshof OR Bundesregierung Antwort Mitnahme", "Mrd"], "hinweis": {
+          "richtung": "nachteil",
+          "text": "Zum Vergleich: Die frühere Kaufprämie Umweltbonus hatte 2016 bis 2023 bewilligte Bundesmittel von 10,17 Mrd. Euro; das sind nicht die Kosten dieses Wegs.",
+          "quelle_url": "https://technopolis-group.com/wp-content/uploads/2024/11/EB_Evaluation_Umweltbonus.pdf",
+          "belegstufe": "B",
+          "beleg": "Im gesamten Förderzeitraum (2016-2023) wurden staatliche Fördermittel in Höhe von 10,17 Mrd. Euro 2 bewilligt (Bundeszuschuss), ergänzt um 5,27 Mrd. Euro an Mitteln der Fahrzeughersteller (Herstelleranteil). (S. 7)"
+        }},
+        {"bereich": "wirtschaft", "gesucht": ["Steuerliche Förderung Elektrofahrzeuge Sonderabschreibung Gesetzentwurf Steuermindereinnahmen Mrd. Euro Drucksache"], "hinweis": null},
+        {"bereich": "aufwand", "gesucht": ["Steuerliche Förderung Elektrofahrzeuge Sonderabschreibung Gesetzentwurf Steuermindereinnahmen Mrd. Euro Drucksache"], "hinweis": null},
+        {"bereich": "umwelt", "gesucht": ["Umweltbonus Elektrofahrzeuge Gesamtausgaben Mrd. Euro Bundesrechnungshof OR Bundesregierung Antwort Mitnahme"], "hinweis": null, "ohne": "Wirkung auf Luftschadstoffe oder Lärm dieses Wegs nicht belegt"},
+        {"bereich": "verteilung", "gesucht": ["E-Auto Kaufprämie Umweltbonus Mitnahmeeffekte Verteilung Haushaltseinkommen Studie Käufer höhere Einkommen", "Ungleichverteilung Einkommen"], "hinweis": {
+          "richtung": "nachteil",
+          "text": "Bei der früheren Kaufprämie Umweltbonus hatten rund 60 % der Geförderten über 4.500 Euro und rund 30 % über 6.000 Euro Haushaltsnettoeinkommen im Monat.",
+          "quelle_url": "https://technopolis-group.com/wp-content/uploads/2024/11/EB_Evaluation_Umweltbonus.pdf",
+          "belegstufe": "B",
+          "beleg": "Etwa 60 % der Fördernehmenden verfügen über ein monatliches Haushaltsnettoeinkommen von mehr als 4.500 Euro und rund 30 % sogar von mehr als 6.000 Euro. Das deutet darauf hin, dass das Förderprogramm eine Umverteilungswirkung zugunsten von Haushalten mit höherem Einkommen hat. (S. 71)"
+        }},
+        {"bereich": "grundrechte", "gesucht": ["E-Auto Kaufprämie Umweltbonus Mitnahmeeffekte Verteilung Haushaltseinkommen Studie Käufer höhere Einkommen"], "hinweis": null, "ohne": "Gesundheitswirkung dieses Wegs nicht belegt"}
+      ]
+    },
+    {
+      "id": 10911,
+      "bereiche": [
+        {"bereich": "haushalt", "gesucht": ["Privatjets Steuerbefreiung Kerosin Luftverkehr Umweltbundesamt Emissionen Geschäftsreiseflüge Privatflugzeuge", "Antwort Bundesregierung Privatflüge Geschäftsreiseflüge Privatjets Anzahl Flüge Kerosin Steuerbefreiung Drucksache Kleine Anfrage"], "hinweis": null, "ohne": "Mehreinnahmen dieses Wegs nicht amtlich beziffert"},
+        {"bereich": "wirtschaft", "gesucht": ["Privatjets Steuerbefreiung Kerosin Luftverkehr Umweltbundesamt Emissionen Geschäftsreiseflüge Privatflugzeuge"], "hinweis": null},
+        {"bereich": "aufwand", "gesucht": ["Privatjets Steuerbefreiung Kerosin Luftverkehr Umweltbundesamt Emissionen Geschäftsreiseflüge Privatflugzeuge"], "hinweis": null},
+        {"bereich": "umwelt", "gesucht": ["Privatjets Steuerbefreiung Kerosin Luftverkehr Umweltbundesamt Emissionen Geschäftsreiseflüge Privatflugzeuge"], "hinweis": null, "ohne": "Wirkung auf Luftschadstoffe oder Lärm dieses Wegs nicht belegt"},
+        {"bereich": "verteilung", "gesucht": ["Bundestag Wissenschaftliche Dienste Geschäftsflugverkehr Privatjets Kerosinsteuer Energiesteuergesetz Befreiung § 27 EU-Emissionshandel Ausnahme Sachstand"], "hinweis": null, "ohne": "keine belastbare amtliche Quelle zur Verteilung gefunden"},
+        {"bereich": "grundrechte", "gesucht": ["Privatjets Steuerbefreiung Kerosin Luftverkehr Umweltbundesamt Emissionen Geschäftsreiseflüge Privatflugzeuge"], "hinweis": null, "ohne": "Gesundheitswirkung dieses Wegs nicht belegt"}
+      ]
+    }
+  ]
+}
