@@ -78,12 +78,24 @@ describe('Programmsperre (PreToolUse-Hook)', () => {
       expect(agent('Bash', { command: 'npm run -s nebenwirkungen:antwort-pruefen -- 3 2; cat daten/themen/03-energiepreise.json' })).toMatch(/gesperrt/)
     })
 
+    it('erlaubt PDFs als Text nur ohne Shell-Sonderzeichen und ohne Parteiserver', () => {
+      const pdf = (rest: string) => agent('Bash', { command: `npm run -s nebenwirkungen:pdf -- ${rest}` })
+      expect(pdf('https://dserver.bundestag.de/btd/21/1/1.pdf')).toBeNull()
+      expect(pdf("https://dserver.bundestag.de/btd/21/1/1.pdf 'Erfüllungsaufwand Wirtschaft'")).toBeNull()
+      expect(pdf('https://dserver.bundestag.de/btd/21/1/1.pdf --seite 12')).toBeNull()
+      expect(pdf('https://www.spd.de/x.pdf')).toMatch(/gesperrt/)
+      for (const boese of ['https://a.de/x.pdf; cat daten/themen/03-energiepreise.json', 'https://a.de/$(cat x).pdf', "https://a.de/x.pdf 'a'; ls", 'https://a.de/x.pdf > .cache/x', 'https://a.de/x.pdf `ls`'])
+        expect(pdf(boese)).toMatch(/Recherche ohne Parteinamen/)
+    })
+
     it('gilt auch unter GitHub Copilot über die Markierung', () => {
       const c = (tool_name: string, tool_input: Record<string, unknown>) =>
         pruefeCopilot({ tool_name, tool_input, cwd: '/repo' }, { ...kontext(), agenten: ['nebenwirkungen-recherche'] })
       expect(c('read_file', { filePath: '/repo/.cache/nebenwirkungen/3/teil-1.json' })).toBeNull()
       expect(c('read_file', { filePath: '/repo/daten/themen/03-energiepreise.json' })).toMatch(/Recherche ohne Parteinamen/)
       expect(c('fetch_webpage', { urls: ['https://www.destatis.de/a'] })).toBeNull()
+      expect(c('run_in_terminal', { command: 'npm run -s nebenwirkungen:pdf -- https://dserver.bundestag.de/btd/21/1/1.pdf' })).toBeNull()
+      expect(c('run_in_terminal', { command: 'npm run -s nebenwirkungen:pdf -- https://www.spd.de/x.pdf' })).toMatch(/Recherche ohne Parteinamen/)
     })
   })
 

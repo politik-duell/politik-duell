@@ -2,6 +2,8 @@
 // Ablauf: Blindliste je Thema in Teilen (Lösungswege ohne Partei) → je Teil ein Agent nebenwirkungen-recherche →
 // Antwort prüfen → eintragen als KI-Entwurf. Die Regeln aus dem Pilot (Energiepreise, 21. 10. 2026) sind hier
 // fest eingebaut: jeder Bereich in beide Richtungen gesucht, Beleg wörtlich aus der Quelle, Bilanz der Richtungen.
+// Aus den Urteilen der ersten Läufe (22./23. 10. 2026) kommen die Prüfungen auf Sekundärquellen, PDF-Seiten,
+// Größenordnungen und gleiche Suchanfragen; sie ersparen Rückfragen der Koordination (Verbrauch: plan-nebenwirkungen.md).
 import { createHash } from 'node:crypto'
 import { readFileSync } from 'node:fs'
 import type { Katalog, Nebenwirkungen } from '../src/data/katalog.ts'
@@ -21,8 +23,8 @@ type Richtung = (typeof NEBENWIRKUNG_RICHTUNGEN)[number]
 
 /**
  * Startbegriffe je Bereich und Richtung. Der Pilot fand zuerst fast nur Nachteile bei fossilen und Vorteile bei
- * erneuerbaren Wegen – die Gegenrichtung kam erst mit gezielter Suche. Darum nennt die Liste beide Richtungen,
- * und die Antwort muss für jede die eigenen Suchanfragen angeben.
+ * erneuerbaren Wegen – die Gegenrichtung kam erst mit gezielter Suche. Darum nennt die Liste beide Richtungen;
+ * eine Suchanfrage je Bereich verbindet Begriffe aus beiden (zwei getrennte verdoppelten die Suchen ohne mehr Treffer).
  */
 export const SUCHHILFE: Record<Bereich, { frage: string; vorteil: string[]; nachteil: string[] }> = {
   haushalt: {
@@ -76,6 +78,17 @@ export interface NebenBlindliste {
   teile: number
   einheiten: Einheit[]
   suchhilfe: typeof SUCHHILFE
+  /**
+   * Schon verwendete Quellen des Themas (Katalog und beurteilte Antworten anderer Teile): ähnliche Wege sollen
+   * dieselbe Quelle nutzen. Nicht in der Prüfsumme – `nebenwirkungen:blind -- <ID> --quellen` ergänzt offene Teile.
+   */
+  quellen: Quelle[]
+}
+
+export interface Quelle {
+  bereich: Bereich
+  text: string
+  quelle_url: string
 }
 
 export interface NebenHinweis extends Omit<Nebenwirkung, 'bereich'> {
@@ -87,7 +100,7 @@ export interface NebenAntwort {
   pruefsumme: string
   einheiten: {
     id: number
-    bereiche: { bereich: Bereich; gesucht_vorteil: string[]; gesucht_nachteil: string[]; hinweis: NebenHinweis | null }[]
+    bereiche: { bereich: Bereich; gesucht: string[]; hinweis: NebenHinweis | null }[]
   }[]
 }
 
@@ -114,6 +127,16 @@ export function einheitenDesThemas(k: Katalog, themaId: number, alle = false): (
 
 const sha = (t: string) => createHash('sha256').update(t).digest('hex').slice(0, 16)
 
+/** Quellen schon erfasster Hinweise, je Adresse einmal (Hinweise sind parteifrei). */
+export function quellenAus(hinweise: Quelle[]): Quelle[] {
+  const gesehen = new Set<string>()
+  return hinweise.filter((h) => !gesehen.has(h.quelle_url) && gesehen.add(h.quelle_url)).map(({ bereich, text, quelle_url }) => ({ bereich, text, quelle_url }))
+}
+
+/** Quellen aus Antworten: alle Hinweise, die nach dem Urteil der Koordination stehen geblieben sind. */
+export const quellenDerAntworten = (antworten: NebenAntwort[]): Quelle[] =>
+  quellenAus(antworten.flatMap((a) => a.einheiten.flatMap((e) => e.bereiche.flatMap((b) => (b.hinweis ? [{ bereich: b.bereich, text: b.hinweis.text, quelle_url: b.hinweis.quelle_url }] : [])))))
+
 /** Blindlisten in Teilen zu höchstens TEIL_GROESSE Lösungswegen – ohne Parteien, Länder oder Zitate. */
 export function nebenBlind(k: Katalog, themaId: number, alle = false): { listen: NebenBlindliste[]; reste: string[] } {
   const thema = k.themen.find((t) => t.id === themaId)
@@ -123,6 +146,9 @@ export function nebenBlind(k: Katalog, themaId: number, alle = false): { listen:
   const reste = einheiten.flatMap((e) =>
     [e.name, e.begruendung].flatMap((t) => [...verdaechtigeReste(t), ...(ohneParteinamen(t, parteinamen) !== t ? ['Parteiname'] : [])].map((r) => `${e.id}: ${r}`)),
   )
+  const massnahmen = k.massnahmen.filter((m) => m.thema_id === themaId)
+  const vorhanden = [...k.instrumente.filter((i) => i.thema_id === themaId), ...massnahmen].flatMap((x) => x.nebenwirkungen?.hinweise ?? [])
+  const quellen = quellenAus(vorhanden)
   const teile = Math.ceil(einheiten.length / TEIL_GROESSE)
   const listen = Array.from({ length: teile }, (_, i) => {
     const inhalt = {
@@ -135,7 +161,7 @@ export function nebenBlind(k: Katalog, themaId: number, alle = false): { listen:
       einheiten: einheiten.slice(i * TEIL_GROESSE, (i + 1) * TEIL_GROESSE),
       suchhilfe: SUCHHILFE,
     }
-    return { pruefsumme: sha(JSON.stringify(inhalt)), ...inhalt }
+    return { pruefsumme: sha(JSON.stringify(inhalt)), ...inhalt, quellen }
   })
   return { listen, reste }
 }
@@ -161,6 +187,33 @@ export function pruefkontext(k: Katalog, wurzel: URL): Pruefkontext {
 
 const suchanfragen = (v: unknown) => Array.isArray(v) && v.length > 0 && v.every((s) => typeof s === 'string' && s.trim().length >= 3)
 
+/**
+ * Fach- und Tagespresse, Verlags- und Ratgeberseiten: kein Beleg, auch wenn sie eine Behörde zitieren – dann die
+ * Behörde selbst. Gesammelt aus den Urteilen der ersten Läufe; erweitern, wenn die Koordination weitere verwirft.
+ */
+export const SEKUNDAERQUELLEN = [
+  'spiegel.de', 'zeit.de', 'faz.net', 'sueddeutsche.de', 'welt.de', 'handelsblatt.com', 'tagesspiegel.de', 'focus.de', 'stern.de',
+  'n-tv.de', 't-online.de', 'rnd.de', 'tagesschau.de', 'zdf.de', 'br.de', 'ndr.de', 'wdr.de', 'mdr.de', 'swr.de', 'deutschlandfunk.de',
+  'wiwo.de', 'capital.de', 'manager-magazin.de', 'merkur.de', 'fr.de', 'taz.de', 'nzz.ch', 'bild.de',
+  'pharmazeutische-zeitung.de', 'aerzteblatt.de', 'aerztezeitung.de', 'apotheke-adhoc.de', 'deutsche-apotheker-zeitung.de',
+  'haufe.de', 'nwb.de', 'baulinks.de', 'immobilienzeitung.de', 'energate-messenger.de', 'tagesspiegel-background.de', 'correctiv.org',
+  'finanztip.de', 'test.de', 'wikipedia.org',
+]
+const host = (u: string) => {
+  try {
+    return new URL(u).hostname.toLowerCase().replace(/^www\./, '')
+  } catch {
+    return ''
+  }
+}
+export const sekundaerquelle = (u: string) => {
+  const h = host(u)
+  return SEKUNDAERQUELLEN.find((s) => h === s || h.endsWith(`.${s}`))
+}
+const PDF = /\.pdf($|[?#])/i
+/** Beträge ab einer Milliarde – kleinere Haushaltsfolgen sind nicht wesentlich. */
+const MILLIARDEN = /\bMrd\.|Milliarde/i
+
 /** Prüft eine Antwort gegen ihre Blindliste. Fehler verhindern das Eintragen; Warnungen gehen an die Koordination. */
 export function pruefeNebenAntwort(liste: NebenBlindliste, antwort: NebenAntwort, ctx: Pruefkontext): { fehler: string[]; warnungen: string[] } {
   const fehler: string[] = []
@@ -170,6 +223,7 @@ export function pruefeNebenAntwort(liste: NebenBlindliste, antwort: NebenAntwort
   const ids = new Set(liste.einheiten.map((e) => e.id))
   const gesehen = new Set<number>()
   const zaehler: Record<Richtung, number> = { vorteil: 0, nachteil: 0, gemischt: 0 }
+  const anfragen = new Map<string, number>()
   for (const e of einheiten) {
     const ort = `Lösungsweg ${e?.id}`
     if (!ids.has(e?.id)) {
@@ -190,8 +244,13 @@ export function pruefeNebenAntwort(liste: NebenBlindliste, antwort: NebenAntwort
         fehler.push(`${bOrt}: unbekannter Bereich`)
         continue
       }
-      if (!suchanfragen(x.gesucht_vorteil)) fehler.push(`${bOrt}: „gesucht_vorteil“ – die Suchanfragen nach Vorteilen angeben (mindestens eine)`)
-      if (!suchanfragen(x.gesucht_nachteil)) fehler.push(`${bOrt}: „gesucht_nachteil“ – die Suchanfragen nach Nachteilen angeben (mindestens eine)`)
+      if (!suchanfragen(x.gesucht)) fehler.push(`${bOrt}: „gesucht“ – die tatsächlich benutzten Suchanfragen angeben (mindestens eine)`)
+      else {
+        const schluessel = `${x.bereich}|${x.gesucht.map((s) => s.trim().toLowerCase()).sort().join('|')}`
+        const anderer = anfragen.get(schluessel)
+        if (anderer !== undefined && anderer !== e.id) fehler.push(`${bOrt}: „gesucht“ gleich wie bei Lösungsweg ${anderer} – je Lösungsweg eigene, tatsächlich benutzte Anfragen`)
+        else anfragen.set(schluessel, e.id)
+      }
       const h = x.hinweis
       if (h === null || h === undefined) continue
       hinweise++
@@ -201,6 +260,8 @@ export function pruefeNebenAntwort(liste: NebenBlindliste, antwort: NebenAntwort
       else {
         if (h.text.length > 200) fehler.push(`${bOrt}: „text“ länger als 200 Zeichen`)
         if (ohneParteinamen(h.text, ctx.parteinamen) !== h.text) fehler.push(`${bOrt}: „text“ nennt eine Partei`)
+        if (x.bereich === 'haushalt' && !MILLIARDEN.test(h.text)) fehler.push(`${bOrt}: Haushalt nur ab Milliardenbeträgen („… Mrd. Euro“), sonst hinweis: null`)
+        if (x.bereich === 'aufwand' && !/\d/.test(h.text)) fehler.push(`${bOrt}: Aufwand nur mit Größenordnung (Betrag, Stunden, Fälle), sonst hinweis: null`)
       }
       if (h.belegstufe !== 'A' && h.belegstufe !== 'B' && h.belegstufe !== 'C') fehler.push(`${bOrt}: „belegstufe“ muss A, B oder C sein`)
       if (h.belegstufe === 'C' && !h.zweite_quelle_url) fehler.push(`${bOrt}: Belegstufe C nur mit „zweite_quelle_url“ (A oder B)`)
@@ -213,8 +274,12 @@ export function pruefeNebenAntwort(liste: NebenBlindliste, antwort: NebenAntwort
         }
         const grund = gesperrteAdresse(u, ctx.liste, ctx.programmHosts)
         if (grund) fehler.push(`${bOrt}: Parteiquelle oder gesperrte Adresse – ${grund}`)
+        const presse = sekundaerquelle(u)
+        if (presse) fehler.push(`${bOrt}: „${feld}“ – ${presse} ist Presse oder Sekundärquelle; die zitierte Stelle selbst (Behörde, Drucksache, Studie) oder hinweis: null`)
       }
       if (typeof h.beleg !== 'string' || h.beleg.trim().length < 20) fehler.push(`${bOrt}: „beleg“ – die Stelle wörtlich aus der Quelle (mindestens 20 Zeichen)`)
+      else if (typeof h.quelle_url === 'string' && PDF.test(h.quelle_url) && !/\bS\.\s*\d/.test(h.beleg))
+        fehler.push(`${bOrt}: „beleg“ aus einem PDF mit Seite („S. 12“) – gelesen mit npm run -s nebenwirkungen:pdf`)
     }
     if (hinweise > MAX_HINWEISE) fehler.push(`${ort}: ${hinweise} Hinweise – höchstens ${MAX_HINWEISE}, nur die wesentlichen`)
   }

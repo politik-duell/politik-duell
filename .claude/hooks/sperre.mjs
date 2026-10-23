@@ -16,7 +16,7 @@
 //    `npm run -s haltung:antwort-pruefen -- <ID>`; keine Websuche (das Zitat genügt), alles andere gesperrt.
 // 4b. Agent nebenwirkungen-recherche (Folgen über das Thema hinaus, docs/plan-nebenwirkungen.md): Read nur
 //    .cache/nebenwirkungen/<ID>/teil-<n>.json und die eigene Antwort, Write nur protokoll/antwort-<n>.txt, Bash nur
-//    `npm run -s nebenwirkungen:antwort-pruefen -- <ID> <n>`, WebSearch und WebFetch wie unter 1 – keine Themendateien,
+//    `npm run -s nebenwirkungen:antwort-pruefen -- <ID> <n>` und `npm run -s nebenwirkungen:pdf -- <URL> …`, WebSearch und WebFetch wie unter 1 – keine Themendateien,
 //    also keine Parteien zu den Lösungswegen.
 // 5. GitHub Copilot in VS Code (.github/hooks/sperre.json, Umgebungsvariable SPERRE_UMGEBUNG=copilot):
 //    Werkzeugnamen und Eingaben weichen ab, und PreToolUse kennt kein agent_type. Darum prüft pruefeCopilot
@@ -78,6 +78,11 @@ export function haltungPfadErlaubt(werkzeug, pfad, wurzel, cwd = wurzel) {
 /** Name des Agenten, der Nebenwirkungen ohne Parteinamen recherchiert (.claude/agents/nebenwirkungen-recherche.md). */
 export const NEBEN_AGENT = /(^|:)nebenwirkungen-recherche$/
 export const NEBEN_PRUEFBEFEHL = /^npm run (-s |--silent )?nebenwirkungen:antwort-pruefen '?--'? \d+ \d+$/
+/**
+ * PDF als Text (scripts/nebenwirkungen/pdf.ts): Adresse ohne Shell-Sonderzeichen (kein ; & | $ ` Klammern oder
+ * Anführungszeichen), danach höchstens ein Suchbegriff in einfachen Anführungszeichen oder --seite <n>.
+ */
+export const NEBEN_PDFBEFEHL = /^npm run (-s |--silent )?nebenwirkungen:pdf '?--'? (https:\/\/[A-Za-z0-9._~:/?=%+,-]+)( '[\p{L}\p{N} .,§%-]+'| --seite \d+)?$/u
 
 /** Darf der Recherche-Agent diesen Pfad benutzen? Genau die Teil-Liste und die eigene Antwort. */
 export function nebenPfadErlaubt(werkzeug, pfad, wurzel, cwd = wurzel) {
@@ -131,10 +136,12 @@ export function pruefe(eingabe, { liste, programmHosts, phaseA, wurzel: basis = 
     if (werkzeug === 'WebFetch' || werkzeug === 'WebSearch') return null
     if ((werkzeug === 'Read' || werkzeug === 'Write') && nebenPfadErlaubt(werkzeug, e.file_path, basis, eingabe.cwd || basis)) return null
     if (werkzeug === 'Bash' && typeof e.command === 'string' && NEBEN_PRUEFBEFEHL.test(e.command.trim()) && !e.run_in_background) return null
+    const pdf = werkzeug === 'Bash' && typeof e.command === 'string' && !e.run_in_background ? NEBEN_PDFBEFEHL.exec(e.command.trim()) : null
+    if (pdf) return gesperrteAdresse(pdf[2], liste, programmHosts)
     return (
       `Recherche ohne Parteinamen: ${werkzeug} ${e.file_path ?? e.path ?? e.command ?? ''} ist gesperrt. ` +
       'Erlaubt sind nur Read auf .cache/nebenwirkungen/<ID>/teil-<n>.json und protokoll/antwort-<n>.txt, Write auf protokoll/antwort-<n>.txt, ' +
-      'Bash nur „npm run -s nebenwirkungen:antwort-pruefen -- <ID> <n>“, WebSearch und WebFetch.'
+      "Bash nur „npm run -s nebenwirkungen:antwort-pruefen -- <ID> <n>“ und „npm run -s nebenwirkungen:pdf -- <https-Adresse> ['Suchbegriff'] | --seite <n>“, WebSearch und WebFetch."
     )
   }
   if (werkzeug === 'WebFetch') return null
@@ -234,7 +241,13 @@ export function pruefeCopilot(eingabe, { liste, programmHosts, phaseA, agenten =
     const web = blind || neben
     const cwd = eingabe.cwd || basis
     const gesperrt = `${name} (Agent läuft, .cache/sperre-agenten/): ${werkzeug} ist gesperrt. Erlaubt sind nur die Blindliste lesen, die eigene Antwort schreiben und die Selbstprüfung${web ? ' sowie Websuche' : ''}.`
-    if (befehle.length) return befehle.every((b) => pruefbefehl.test(b)) && !pfade.length ? null : gesperrt
+    if (befehle.length) {
+      const pdfOk = (b) => {
+        const m = neben ? NEBEN_PDFBEFEHL.exec(b) : null
+        return m && !gesperrteAdresse(m[2], liste, programmHosts)
+      }
+      return befehle.every((b) => pruefbefehl.test(b) || pdfOk(b)) && !pfade.length ? null : gesperrt
+    }
     if (pfade.length) {
       const art = /read|view|open|get_?file/i.test(werkzeug) ? 'Read' : 'Write'
       return pfade.every((p) => pfadOk(art, p, basis, cwd)) ? null : gesperrt
