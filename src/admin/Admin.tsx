@@ -3,16 +3,17 @@ import { type FormEvent, useCallback, useEffect, useState } from 'react'
 import { FILTER_TEXTE, pruefeText, type FilterGrund } from '../../supabase/functions/_shared/moderation'
 import { Logo } from '../components/Logo'
 import { adminDb, type AdminRunde, type ReviewEingabe, type ReviewEintrag } from './client'
+import { Katalog } from './Katalog'
 import { Luecken } from './Luecken'
 import { Pruefung } from './Pruefung'
 import { Testphase } from './Testphase'
 
 // Einfache Admin-Ansicht (#/admin): Probleme für eine öffentliche Anzeige freigeben oder
 // ablehnen, Review-Warteschlange (Themen ohne Daten) abhaken, Eingaben ohne Wertung sichten, Lücken und Kennzahlen
-// ansehen, Prüfende einladen und ihre Bewertungen auswerten.
+// ansehen, den Datenkatalog durchsehen, Prüfende einladen und ihre Bewertungen auswerten.
 // Zugriff regelt die Datenbank: Nur Konten in der Tabelle `admins` sehen etwas.
 
-type Reiter = 'offen' | 'gestoppt' | 'frei' | 'abgelehnt' | 'review' | 'ohne' | 'luecken' | 'pruefung' | 'testphase'
+type Reiter = 'offen' | 'gestoppt' | 'frei' | 'abgelehnt' | 'review' | 'ohne' | 'luecken' | 'katalog' | 'pruefung' | 'testphase'
 
 const REITER: { id: Reiter; name: string }[] = [
   { id: 'offen', name: 'Offen' },
@@ -22,11 +23,12 @@ const REITER: { id: Reiter; name: string }[] = [
   { id: 'review', name: 'Neue Themen' },
   { id: 'ohne', name: 'Ohne Wertung' },
   { id: 'luecken', name: 'Lücken' },
+  { id: 'katalog', name: 'Katalog' },
   { id: 'pruefung', name: 'Prüfung' },
   { id: 'testphase', name: 'Testphase' },
 ]
 
-function reiterVon(r: AdminRunde): Exclude<Reiter, 'review' | 'ohne' | 'luecken' | 'pruefung' | 'testphase'> {
+function reiterVon(r: AdminRunde): Exclude<Reiter, 'review' | 'ohne' | 'luecken' | 'katalog' | 'pruefung' | 'testphase'> {
   if (r.freigegeben) return 'frei'
   if (r.abgelehnt) return 'abgelehnt'
   return r.filter_grund ? 'gestoppt' : 'offen'
@@ -225,7 +227,7 @@ function Moderation() {
   }
 
   const anzahl = (id: Reiter) =>
-    id === 'pruefung' || id === 'testphase' || id === 'luecken'
+    id === 'pruefung' || id === 'testphase' || id === 'luecken' || id === 'katalog'
       ? null
       : id === 'review'
         ? review.length
@@ -260,6 +262,8 @@ function Moderation() {
         <Pruefung />
       ) : reiter === 'testphase' ? (
         <Testphase />
+      ) : reiter === 'katalog' ? (
+        <Katalog />
       ) : reiter === 'luecken' ? (
         <Luecken themaName={themaName} />
       ) : reiter === 'ohne' ? (
