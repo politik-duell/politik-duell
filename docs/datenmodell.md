@@ -199,7 +199,7 @@ erDiagram
 `massnahmen.ursachen_ids` ist ein Array und daher keine echte Fremdschlüsselbeziehung.
 `instrumente` enthält bewusst keine Wirksamkeit und Umsetzbarkeit: Die Forderungskarte zeigt Forschungsstand und Begründung, aber keine Punkte; gewertet wird weiter über die Maßnahmen. Ein Instrument gilt für eine Ebene; `entspricht` verbindet das Bundes- mit dem Landes-Instrument desselben Lösungswegs.
 `pruef_bewertungen.massnahme_id` verweist auf IDs aus `daten/`, nicht zwingend auf `massnahmen`.
-`haltungen.verwandte_themen` ist ein Array und daher keine echte Fremdschlüsselbeziehung. Haltungen haben keine Punkte; anders als bei Maßnahmen steht das Zitat in der Datenbank, weil bei Haltungen der Wortlaut der eigentliche Beleg ist. Die View `haltungen_vollstaendig (haltung_id, geprueft)` nennt die Haltungen, zu denen jede Partei eine Position im Bundesprogramm hat („Alle sieben oder keine“); sie läuft mit den Rechten der Abfragenden, öffentlich zählen also nur geprüfte Positionen. Die Edge Function sieht mit der Service-Rolle auch Entwürfe und nimmt ohne Testphase nur Zeilen mit `geprueft`. Die App nutzt dieselbe Regel (`supabase/functions/_shared/haltung.ts`).
+`haltungen.verwandte_themen` ist ein Array und daher keine echte Fremdschlüsselbeziehung. Haltungen haben keine Punkte; anders als bei Maßnahmen steht das Zitat in der Datenbank, weil bei Haltungen der Wortlaut der eigentliche Beleg ist. Die View `haltungen_vollstaendig (haltung_id, geprueft)` nennt die Haltungen, zu denen jede Partei eine Position im Bundesprogramm hat („Alle sieben oder keine“); sie läuft mit den Rechten der Abfragenden, öffentlich zählen also nur geprüfte Positionen. Die Edge Function sieht mit der Service-Rolle auch Entwürfe und nimmt nur Zeilen mit `geprueft`, solange Entwürfe nicht zählen (ohne Zugang zur Testphase und ohne `einstellungen.ki_entwuerfe_oeffentlich`). Die App nutzt dieselbe Regel (`supabase/functions/_shared/haltung.ts`).
 Die Views `luecken` und `kennzahlen_woche` zählen Runden aus `runden` für den Reiter „Lücken“ der Admin-Ansicht: `luecken (art, thema_id, stichwort, anzahl_30_tage, anzahl, anzahl_testphase, zuletzt)` je Thema bzw. Stichwort, wo das Spiel keine Wertung oder Karte liefern konnte (`ursache_fehlt`: Thema erkannt, aber in der Bestätigung „Nichts davon passt“ gewählt – gespeichert als `ungeprueft` mit Thema); `kennzahlen_woche (woche, testphase, runden, gewertet, …)` je Woche und Status. Nur Zahlen, kein Wortlaut, deshalb ohne 30-Tage-Frist; nur Admins (`security_invoker` und `ist_admin()`), anon gesperrt.
 
 ## Gruppen
@@ -207,10 +207,11 @@ Die Views `luecken` und `kennzahlen_woche` zählen Runden aus `runden` für den 
 | Gruppe | Tabellen | Zugriff |
 |---|---|---|
 | Stammdaten | `parteien`, `themen`, `laender`, `landesprogramme` | lesbar |
-| Kern | `ursachen`, `massnahmen`, `abdeckung`, `instrumente`, `haltungen`, `haltung_positionen`, `haltung_zielkonflikte` | lesbar; ohne KI-Entwürfe, außer in der Testphase |
+| Kern | `ursachen`, `massnahmen`, `abdeckung`, `instrumente`, `haltungen`, `haltung_positionen`, `haltung_zielkonflikte` | lesbar; KI-Entwürfe nur, wenn `ki_entwuerfe_oeffentlich()` an ist, sonst über `testphase_daten` mit Zugang |
 | Spieldaten | `runden`, `review_warteschlange`, `review_eingaben`, `rate_limit` | schreibbar nur über Edge Function |
 | Auswertung | Views `luecken`, `kennzahlen_woche` | nur Admins |
 | Betrieb | `admins`, `pruef_*`, `testphase_zugaenge` | anon gesperrt; Admins und Edge Functions |
+| Einstellungen | `einstellungen` (eine Zeile: `ki_entwuerfe_oeffentlich`, Alpha/Beta) | lesbar; ändern nur Admins |
 
 ## Bund oder Land?
 

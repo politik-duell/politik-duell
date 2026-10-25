@@ -112,9 +112,11 @@ Deno.serve(async (req) => {
     const ursachen = ursachenRes.data as Ursache[]
     const parteien = parteienRes.data as Partei[]
 
-    // Zugang zur Testphase: Dann zählen auch KI-Entwürfe (Maßnahmen, Instrumente, Symptomgruppen).
+    // KI-Entwürfe (Maßnahmen, Instrumente, Symptomgruppen) zählen mit Zugang zur Testphase – oder für alle,
+    // solange der Schalter `einstellungen.ki_entwuerfe_oeffentlich` an ist (Alpha/Beta, CLAUDE.md Grundprinzip 2).
     const testphase = anfrage.zugang ? await zugangGueltig(anfrage.zugang) : false
-    const themen = mitSymptomen(themenRes.data as Thema[], testphase)
+    const entwuerfe = testphase || (await entwuerfeOeffentlich())
+    const themen = mitSymptomen(themenRes.data as Thema[], entwuerfe)
 
     // Angetippte Ursachen: ohne KI werten. Sonst ordnet die KI die Schilderung ein – bei einer Haltung
     // auch einer der vollständig erfassten Wertfragen (Haltungskarte). Bei einem Problem in zwei Schritten
@@ -123,7 +125,7 @@ Deno.serve(async (req) => {
     if (anfrage.auswahl) {
       antwort = antwortAusAuswahl(anfrage.auswahl, themen, ursachen)
     } else {
-      const haltungen = await vollstaendigeHaltungen(testphase)
+      const haltungen = await vollstaendigeHaltungen(entwuerfe)
       antwort = (await ordneEin(frageMistral, anfrage.verlauf, anfrage.seiten.map((s) => s.rolle), { themen, ursachen, parteien, haltungen })).antwort
     }
 
@@ -131,7 +133,7 @@ Deno.serve(async (req) => {
     // Er zählt nicht extra für das Rate-Limit; scheitert er, bleibt es bei der Forderung ohne Karte.
     if (antwort.typ === 'forderung' && !antwort.pauschal && antwort.thema_id !== null) {
       const thema = themen.find((t) => t.id === antwort.thema_id)
-      if (thema) antwort = mitInstrument(antwort, await erkenneInstrument(thema, anfrage.verlauf, anfrage.seiten.map((s) => s.land), testphase))
+      if (thema) antwort = mitInstrument(antwort, await erkenneInstrument(thema, anfrage.verlauf, anfrage.seiten.map((s) => s.land), entwuerfe))
     }
 
     // Abgeschlossene Runde anonym speichern (nur die neutrale Zusammenfassung). Mit Nachfrage ist sie nicht
@@ -141,7 +143,7 @@ Deno.serve(async (req) => {
     if (!antwort.nachfrage && !vorschlag) {
       // Der Originaltext wird geprüft; gespeichert wird er nur bei Runden ohne Wertung (review_eingaben, 30 Tage).
       const original = anfrage.verlauf.filter((n) => n.von === 'spieler').map((n) => n.text)
-      await speichereRunde(antwort, anfrage.parteien, anfrage.seiten, testphase, original, parteien, ursachen)
+      await speichereRunde(antwort, anfrage.parteien, anfrage.seiten, testphase, entwuerfe, original, parteien, ursachen)
     }
 
     return json(antwort)
@@ -154,18 +156,18 @@ Deno.serve(async (req) => {
 
 /**
  * Zweiter Aufruf bei einer Forderung: Entspricht sie eindeutig einem Instrument des Themas? Der Service-Key
- * umgeht Row Level Security: Entwürfe deshalb ausdrücklich nur in der Testphase.
+ * umgeht Row Level Security: Entwürfe deshalb ausdrücklich nur, wenn sie zählen.
  */
 async function erkenneInstrument(
   thema: Thema,
   verlauf: Nachricht[],
   laender: (string | null)[],
-  testphase: boolean,
+  entwuerfe: boolean,
 ): Promise<number | null> {
   try {
     let iAbfrage = db.from('instrumente').select('id, thema_id, name, ebene').eq('thema_id', thema.id)
     let mAbfrage = db.from('massnahmen').select('instrument_id, land').eq('thema_id', thema.id).not('instrument_id', 'is', null)
-    if (!testphase) {
+    if (!entwuerfe) {
       iAbfrage = iAbfrage.eq('ki_entwurf', false)
       mAbfrage = mAbfrage.eq('ki_entwurf', false)
     }
@@ -189,13 +191,13 @@ async function erkenneInstrument(
 
 /**
  * Haltungen mit vollständiger Karte (alle Parteien, View `haltungen_vollstaendig`) – nur sie kommen in den
- * Prompt. Der Service-Key sieht auch Entwürfe; ohne Zugang zur Testphase zählen deshalb nur geprüfte Karten.
+ * Prompt. Der Service-Key sieht auch Entwürfe; zählen deshalb nur geprüfte Karten, solange Entwürfe nicht zählen.
  * Fehlen die Tabellen (Migration noch nicht ausgeführt) oder klappt die Abfrage nicht: keine Haltungen.
  */
-async function vollstaendigeHaltungen(testphase: boolean): Promise<HaltungKurz[]> {
+async function vollstaendigeHaltungen(entwuerfe: boolean): Promise<HaltungKurz[]> {
   try {
     let vAbfrage = db.from('haltungen_vollstaendig').select('haltung_id')
-    if (!testphase) vAbfrage = vAbfrage.eq('geprueft', true)
+    if (!entwuerfe) vAbfrage = vAbfrage.eq('geprueft', true)
     const [vRes, hRes] = await Promise.all([vAbfrage, db.from('haltungen').select('id, frage').order('id')])
     if (vRes.error) throw vRes.error
     if (hRes.error) throw hRes.error
@@ -207,9 +209,16 @@ async function vollstaendigeHaltungen(testphase: boolean): Promise<HaltungKurz[]
   }
 }
 
-/** Symptomgruppen, die zählen: ohne Testphase nur die von Menschen geprüften (docs/plan-symptome.md). */
-function mitSymptomen(themen: Thema[], testphase: boolean): Thema[] {
-  return themen.map((t) => ({ ...t, symptome: (t.symptome ?? []).filter((s) => testphase || !s.ki_entwurf) }))
+/** Symptomgruppen, die zählen: ohne Entwürfe nur die von Menschen geprüften (docs/plan-symptome.md). */
+function mitSymptomen(themen: Thema[], entwuerfe: boolean): Thema[] {
+  return themen.map((t) => ({ ...t, symptome: (t.symptome ?? []).filter((s) => entwuerfe || !s.ki_entwurf) }))
+}
+
+/** Zählen KI-Entwürfe für alle (Schalter aus Migration 20261025000000)? Ohne die Tabelle: nein. */
+async function entwuerfeOeffentlich(): Promise<boolean> {
+  const { data, error } = await db.from('einstellungen').select('ki_entwuerfe_oeffentlich').maybeSingle()
+  if (error) return false
+  return data?.ki_entwuerfe_oeffentlich === true
 }
 
 /** Gültiger, nicht gesperrter Zugang zur Testphase? Dann zählen auch KI-Entwürfe. */
@@ -229,6 +238,7 @@ async function speichereRunde(
   [parteiA, parteiB]: [number, number],
   seiten: [Seite, Seite],
   testphase: boolean,
+  entwuerfe: boolean,
   original: string[],
   parteien: Partei[],
   ursachen: Ursache[],
@@ -292,10 +302,10 @@ async function speichereRunde(
     return
   }
 
-  // Der Service-Key umgeht Row Level Security: KI-Entwürfe deshalb ausdrücklich nur in der Testphase.
+  // Der Service-Key umgeht Row Level Security: KI-Entwürfe deshalb ausdrücklich nur, wenn sie zählen.
   let mAbfrage = db.from('massnahmen').select('*').eq('thema_id', antwort.thema_id).in('partei_id', [parteiA, parteiB])
   let aAbfrage = db.from('abdeckung').select('*').eq('thema_id', antwort.thema_id).in('partei_id', [parteiA, parteiB])
-  if (!testphase) {
+  if (!entwuerfe) {
     mAbfrage = mAbfrage.eq('ki_entwurf', false)
     aAbfrage = aAbfrage.eq('ki_entwurf', false)
   }

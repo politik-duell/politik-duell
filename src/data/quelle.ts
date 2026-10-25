@@ -57,6 +57,11 @@ export interface Daten {
   zielkonflikte: Zielkonflikt[]
   /** Geschlossene Testphase: KI-Entwürfe sind geladen und zählen (mit Hinweis am Ergebnis). */
   testphase?: boolean
+  /**
+   * Beta (CLAUDE.md Grundprinzip 2): KI-Entwürfe sind für alle freigegeben (`einstellungen.ki_entwuerfe_oeffentlich`)
+   * und zählen ohne Zugangslink – mit Hinweis am Ergebnis.
+   */
+  beta?: boolean
 }
 
 const URL = import.meta.env.VITE_SUPABASE_URL as string | undefined
@@ -108,13 +113,16 @@ export async function ladeDaten(): Promise<Daten> {
   // Ohne Abdeckung ließe sich „nichts im Programm“ nicht von „noch nicht erfasst“ unterscheiden.
   if (a.error) throw new Error(`Tabelle „abdeckung“ fehlt – Migration 20260928000000_abdeckung.sql ausführen (${a.error.message})`)
   if (!p.data?.length) throw new Error('Die Datenbank enthält noch keine Parteien.')
+  const massnahmen = m.data as Massnahme[]
+  const abdeckung = a.data as AbdeckungEintrag[]
   return {
     quelle: 'supabase',
+    beta: massnahmen.some((x) => x.ki_entwurf) || abdeckung.some((x) => x.ki_entwurf),
     parteien: p.data as Partei[],
     themen: t.data as Thema[],
     ursachen: u.data as Ursache[],
-    massnahmen: m.data as Massnahme[],
-    abdeckung: a.data as AbdeckungEintrag[],
+    massnahmen,
+    abdeckung,
     // Fehlen die Tabellen (Migration 20261001000000_laender.sql noch nicht ausgeführt),
     // gibt es keine Bundesland-Auswahl – gewertet wird dann nur mit Bundesprogrammen.
     laender: l.error ? [] : (l.data as Land[]),
@@ -171,12 +179,19 @@ export async function mitTestphase(daten: Daten, token: string): Promise<Daten> 
     /** Fehlt bei einer Datenbank ohne Migration 20261009000000_haltungen.sql. */
     haltung_positionen?: HaltungPosition[]
   }
+  // In der Beta sind die Entwürfe schon geladen – nur ergänzen, was noch fehlt.
+  const mIds = new Set(daten.massnahmen.map((x) => x.id))
+  const iIds = new Set(daten.instrumente.map((x) => x.id))
+  const aSchluessel = (x: AbdeckungEintrag) => `${x.thema_id}|${x.partei_id}|${x.land ?? ''}`
+  const aDa = new Set(daten.abdeckung.map(aSchluessel))
+  const pSchluessel = (x: HaltungPosition) => `${x.haltung_id}|${x.partei_id}`
+  const pDa = new Set(daten.haltungPositionen.map(pSchluessel))
   return {
     ...daten,
-    massnahmen: [...daten.massnahmen, ...massnahmen].sort((a, b) => a.id - b.id),
-    abdeckung: [...daten.abdeckung, ...abdeckung],
-    instrumente: [...daten.instrumente, ...(instrumente ?? [])].sort((a, b) => a.id - b.id),
-    haltungPositionen: [...daten.haltungPositionen, ...(haltung_positionen ?? [])],
+    massnahmen: [...daten.massnahmen, ...massnahmen.filter((x) => !mIds.has(x.id))].sort((a, b) => a.id - b.id),
+    abdeckung: [...daten.abdeckung, ...abdeckung.filter((x) => !aDa.has(aSchluessel(x)))],
+    instrumente: [...daten.instrumente, ...(instrumente ?? []).filter((x) => !iIds.has(x.id))].sort((a, b) => a.id - b.id),
+    haltungPositionen: [...daten.haltungPositionen, ...(haltung_positionen ?? []).filter((x) => !pDa.has(pSchluessel(x)))],
     testphase: true,
   }
 }

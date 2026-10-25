@@ -128,6 +128,11 @@ export function Methode() {
         Thema für eine Partei erst, wenn alle Einträge dazu geprüft sind.
       </p>
       <p>
+        <strong>In der Beta</strong> zählen auch vorläufige Bewertungen, die eine KI nach dieser Methode ohne
+        Parteinamen erstellt hat und die Menschen noch nicht geprüft haben. Sie sind an jedem Ergebnis als „KI-Entwurf“
+        gekennzeichnet. Geprüft wird zuerst, was im Spiel am häufigsten vorkommt.
+      </p>
+      <p>
         <strong>Was als Maßnahme zählt:</strong> eine Zusage, etwas zu tun. Ein Ziel oder Leitbild ohne Handlung
         („gute Kitas für alle“) und ein bloßer Prüfauftrag zählen nicht; dann zeigen wir, dass das Programm das Ziel
         nennt, aber keine Maßnahme. Wie bestimmt eine Zusage ist, fließt in die Umsetzbarkeit ein. Wie lang ein Programm

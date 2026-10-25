@@ -4,7 +4,7 @@ import { Ende } from './components/Ende'
 import { Fusszeile } from './components/Fusszeile'
 import { Kopfzeile } from './components/Kopfzeile'
 import { MockHinweis } from './components/MockHinweis'
-import { TestphaseHinweis } from './components/TestphaseHinweis'
+import { BetaHinweis, TestphaseHinweis } from './components/TestphaseHinweis'
 import { Testphasesperre } from './components/Testphasesperre'
 import { Wortwolke } from './components/Wortwolke'
 import { Themenstand } from './components/Themenstand'
@@ -91,7 +91,7 @@ export default function App() {
       {themenSeite && (
         <div className="app">
           {daten && sindBeispieldaten(daten) && <MockHinweis />}
-          {daten?.testphase && <TestphaseHinweis />}
+          {daten?.testphase ? <TestphaseHinweis /> : daten?.beta && <BetaHinweis />}
           <Themenstand daten={daten} ladeFehler={ladeFehler} onZurueck={zurueck} />
           <Fusszeile />
         </div>
@@ -100,7 +100,7 @@ export default function App() {
         {/* Startseite: ganze Fläche; im Spiel nur links und rechts neben der Spalte. */}
         <Wortwolke woerter={woerter} nurRaender={phase !== 'start'} />
         {sindBeispieldaten(daten ?? MOCK_DATEN) && <MockHinweis />}
-        {daten?.testphase && <TestphaseHinweis />}
+        {daten?.testphase ? <TestphaseHinweis /> : daten?.beta && <BetaHinweis />}
         {zugangsHinweis && (
           <div className="mock-hinweis" role="alert">
             {zugangsHinweis} Es werden nur geprüfte Daten gezeigt.
