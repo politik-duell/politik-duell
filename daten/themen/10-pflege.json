@@ -61,7 +61,20 @@
       "wirksamkeit": 2,
       "umsetzbarkeit": 1,
       "begruendung": "Die Investitionskosten machen einen spürbaren Teil der Eigenanteile im Heim aus; übernehmen die Länder sie, sinkt die Belastung direkt. Der Bund kann es vorschreiben, zahlen müssten aber die Länder, deren Finanzierung offen ist.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-25",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "gemischt",
+            "text": "2024 trugen Pflegebedürftige rechnerisch rund 4,17 Mrd. Euro Investitionskosten, die Länder förderten rund 1,03 Mrd. Euro; mehr Förderung könnte mittelbar Sozialhilfeträger entlasten.",
+            "quelle_url": "https://www.bundesgesundheitsministerium.de/fileadmin/Dateien/3_Downloads/Z/Zukunftspakt_Pflege/20251211_Papier_der_Fachebenen.pdf",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6224,
@@ -69,7 +82,12 @@
       "wirksamkeit": 1,
       "umsetzbarkeit": 2,
       "begruendung": "Ein Ausgleich zwischen sozialer und privater Pflegeversicherung verbreitert die Finanzierung und kann Beiträge oder Eigenanteile entlasten; wie viel davon bei den Eigenanteilen ankommt, hängt von der Verwendung ab. Verfassungsrechtlich umstritten, aber per Bundesgesetz möglich.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-25",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6225,
@@ -77,7 +95,12 @@
       "wirksamkeit": 1,
       "umsetzbarkeit": 3,
       "begruendung": "Zusatzversicherungen können künftige Eigenanteile abdecken; bisher haben nur wenige eine, Geringverdienende und heute Pflegebedürftige erreicht die Förderung kaum. Per Bundesgesetz umsetzbar.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-25",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6226,
@@ -85,7 +108,12 @@
       "wirksamkeit": 2,
       "umsetzbarkeit": 3,
       "begruendung": "Setzt daran an, dass Entlastungsleistungen wenig genutzt werden, weil sie kompliziert und starr sind; ob ein Budget die Nutzung deutlich erhöht, ist noch wenig untersucht. Per Bundesgesetz umsetzbar, erste Schritte gibt es seit 2025.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-25",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6227,
@@ -93,7 +121,12 @@
       "wirksamkeit": 2,
       "umsetzbarkeit": 2,
       "begruendung": "Ein Lohnersatz ähnlich dem Elterngeld entlastet pflegende Angehörige finanziell und erleichtert, Beruf und Pflege zu verbinden; die Kosten sind je nach Ausgestaltung hoch, und ob mehr Angehörige die Leistung nutzen als die bisherige Pflegezeit, ist offen.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-25",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6228,
@@ -101,7 +134,27 @@
       "wirksamkeit": 2,
       "umsetzbarkeit": 2,
       "begruendung": "Mehr erreichbare Entlastungsangebote und Beratung setzen daran an, dass Angehörige die Hauptlast tragen; die Plätze fehlen aber oft auch wegen fehlender Pflegekräfte. Der Bund kann Leistungen und Förderung erhöhen, Planung und Bau liegen bei Ländern und Trägern.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-25",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Zum Vergleich: Die Pflegeversicherung gab zuletzt für Tages-/Nachtpflege 1,81 Mrd. und für Kurzzeitpflege 1,01 Mrd. Euro aus; das sind nicht die Kosten dieses Wegs.",
+            "quelle_url": "https://www.bundesgesundheitsministerium.de/fileadmin/Dateien/3_Downloads/Statistiken/Pflegeversicherung/Finanzentwicklung/03-Finanzentwicklung-der-sozialen-Pflegeversicherung__2025.pdf",
+            "belegstufe": "A"
+          },
+          {
+            "bereich": "wirtschaft",
+            "richtung": "vorteil",
+            "text": "Entlastung durch formelle und informelle Unterstützungsangebote kann laut einer Querschnittsstudie wohl die Wahrscheinlichkeit verringern, dass Pflegende ihre Erwerbstätigkeit einschränken.",
+            "quelle_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10949857",
+            "belegstufe": "B"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6229,
@@ -109,7 +162,12 @@
       "wirksamkeit": 2,
       "umsetzbarkeit": 2,
       "begruendung": "Bessere Arbeitsbedingungen setzen am wichtigsten Grund an, warum Pflegekräfte den Beruf verlassen oder in Teilzeit gehen; eine verbindliche Personalbemessung braucht aber zunächst mehr Personal. Per Bundesgesetz umsetzbar, die Umsetzung dauert Jahre.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-25",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6230,
@@ -117,7 +175,12 @@
       "wirksamkeit": 2,
       "umsetzbarkeit": 2,
       "begruendung": "Befragungen zeigen, dass viele ehemalige Pflegekräfte bei besseren Bedingungen zurückkehren würden; wie viele es tatsächlich tun, hängt davon ab, ob sich die Bedingungen spürbar ändern. Ohne eigene Maßnahmen bleibt es ein Ziel.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-25",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6231,
@@ -125,7 +188,12 @@
       "wirksamkeit": 2,
       "umsetzbarkeit": 2,
       "begruendung": "Zuwanderung hat einen großen Teil des Beschäftigungszuwachses in der Pflege getragen; lange Anerkennungsverfahren und Sprachhürden bremsen, und die Anerkennung liegt bei den Ländern. Der Bund kann Verfahren vereinfachen und Anwerbung fördern.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-25",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6232,
@@ -133,7 +201,12 @@
       "wirksamkeit": 1,
       "umsetzbarkeit": 3,
       "begruendung": "Mehr Verantwortung und Aufstiegsmöglichkeiten machen den Beruf attraktiver; wie stark das die Zahl der Pflegekräfte erhöht, ist kaum belegt. Per Bundesgesetz umsetzbar, erste Schritte wurden 2025 beschlossen.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-25",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6233,
@@ -141,7 +214,20 @@
       "wirksamkeit": 2,
       "umsetzbarkeit": 2,
       "begruendung": "Höhere Löhne machen den Beruf attraktiver und halten Pflegekräfte; seit der Tarifpflicht von 2022 sind die Löhne deutlich gestiegen, was aber auch die Eigenanteile erhöht hat. Die Refinanzierung ist per Bundesgesetz möglich, die Finanzierung ist offen.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-25",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Zum Vergleich (nicht Kosten dieses Wegs): Hilfe zur Pflege stieg 2024 um 17,7 % auf 5,3 Milliarden Euro; höhere Löhne werden laut Evaluation auch an Sozialhilfeträger weitergegeben.",
+            "quelle_url": "https://www.bundesgesundheitsministerium.de/fileadmin/Dateien/5_Publikationen/Pflege/Berichte/Abschlussbericht_Evaluation_Entlohnung_nach_Tarif____72_Absatz_3f_SGB_XI_barrierefrei.pdf",
+            "belegstufe": "B"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6234,
@@ -149,7 +235,12 @@
       "wirksamkeit": 1,
       "umsetzbarkeit": 3,
       "begruendung": "Prävention und Rehabilitation können Pflegebedürftigkeit bei Einzelnen verzögern; an der Alterung der Bevölkerung ändern sie nichts, und ihre Wirkung auf die Zahl der Pflegebedürftigen ist schwer zu belegen. Per Bundesgesetz umsetzbar.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-25",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6235,
@@ -157,7 +248,12 @@
       "wirksamkeit": 1,
       "umsetzbarkeit": 3,
       "begruendung": "Bessere Ausbildungsbedingungen können mehr Menschen in den Beruf bringen und Abbrüche verringern; die Ausbildung ist seit 2020 bereits vergütet und schulgeldfrei, weitere Effekte sind schwer abzuschätzen. Per Bundesgesetz und mit den Ländern umsetzbar.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-25",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6447,
@@ -165,7 +261,20 @@
       "wirksamkeit": 2,
       "umsetzbarkeit": 2,
       "begruendung": "Übernimmt das Land die Investitionskosten, sinkt der Eigenanteil im Heim direkt um im Schnitt rund 500 Euro im Monat; Unterkunft, Verpflegung und pflegebedingte Kosten bleiben. Das Land kann es selbst regeln, die Kosten von vielen Millionen Euro im Jahr muss es dauerhaft im Haushalt tragen.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-25",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "gemischt",
+            "text": "Zum Vergleich, nicht die Kosten dieses Wegs: Länder förderten 2024 rund 1,03 Mrd. Euro, Pflegebedürftige trugen rund 4,17 Mrd.; höhere Förderung kann mittelbar Sozialhilfeträger entlasten.",
+            "quelle_url": "https://www.bundesgesundheitsministerium.de/fileadmin/Dateien/3_Downloads/Z/Zukunftspakt_Pflege/20251211_Papier_der_Fachebenen.pdf",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6448,
@@ -173,7 +282,20 @@
       "wirksamkeit": 1,
       "umsetzbarkeit": 3,
       "begruendung": "Eine Landesbeteiligung an den Investitionskosten senkt den Eigenanteil; ohne Angabe, wie viel das Land übernimmt, bleibt die Entlastung offen. Das Land kann es selbst regeln.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-25",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "gemischt",
+            "text": "Zum Vergleich, nicht die Kosten dieses Wegs: Länder förderten 2024 rund 1,03 Mrd. Euro, Pflegebedürftige trugen rund 4,17 Mrd.; höhere Förderung kann mittelbar Sozialhilfeträger entlasten.",
+            "quelle_url": "https://www.bundesgesundheitsministerium.de/fileadmin/Dateien/3_Downloads/Z/Zukunftspakt_Pflege/20251211_Papier_der_Fachebenen.pdf",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 6449,
@@ -181,7 +303,20 @@
       "wirksamkeit": 1,
       "umsetzbarkeit": 3,
       "begruendung": "Fördergeld für Bau und Sanierung dämpft, was Heime als Investitionskosten weitergeben, betrifft aber nur geförderte Einrichtungen und senkt den laufenden Eigenanteil der übrigen Bewohner nicht. Das Land kann ein Programm selbst auflegen.",
-      "evidenz": "gemischt"
+      "evidenz": "gemischt",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-25",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "gemischt",
+            "text": "Zum Vergleich, nicht die Kosten dieses Wegs: Länder förderten 2024 rund 1,03 Mrd. Euro, Pflegebedürftige trugen rund 4,17 Mrd.; höhere Förderung kann mittelbar Sozialhilfeträger entlasten.",
+            "quelle_url": "https://www.bundesgesundheitsministerium.de/fileadmin/Dateien/3_Downloads/Z/Zukunftspakt_Pflege/20251211_Papier_der_Fachebenen.pdf",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     }
   ],
   "abdeckung": [
@@ -271,7 +406,27 @@
           "evidenz": "gemischt",
           "stand": "2026-09-29",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-25",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Eine im Auftrag der DAK-Gesundheit erstellte Analyse von Rothgang beziffert die Zusatzausgaben eines 1.000-Euro-Deckels auf 3,12 Mrd. Euro im Jahr 2027 und 9,88 Mrd. Euro im Jahr 2035.",
+                "quelle_url": "https://caas.content.dak.de/caas/v1/media/163198/data/2ee702a5a3b2e6d8d1acbddac271f936/dak-pflegestudie-2026-folien.pdf",
+                "belegstufe": "B"
+              },
+              {
+                "bereich": "verteilung",
+                "richtung": "vorteil",
+                "text": "Laut der von der DAK-Gesundheit beauftragten Analyse begrenzen Pflegedeckel auch den Anteil der Heimbewohner mit Hilfe zur Pflege, teilweise auf unter 35 Prozent, unter den Wert von 2026.",
+                "quelle_url": "https://caas.content.dak.de/caas/v1/media/163198/data/2ee702a5a3b2e6d8d1acbddac271f936/dak-pflegestudie-2026-folien.pdf",
+                "belegstufe": "B"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 6243,
@@ -537,7 +692,20 @@
           "evidenz": "offen",
           "stand": "2026-09-29",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-25",
+            "hinweise": [
+              {
+                "bereich": "grundrechte",
+                "richtung": "nachteil",
+                "text": "Digitale Pflegetechnik und Robotik werfen wegen des Datenhungers Fragen des Datenschutzes und unangemessener Eingriffe in die Privatsphäre auf.",
+                "quelle_url": "https://dserver.bundestag.de/btd/19/027/1902790.pdf",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 6265,
@@ -551,7 +719,12 @@
           "evidenz": "gemischt",
           "stand": "2026-09-29",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-25",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 6266,
@@ -581,7 +754,20 @@
           "evidenz": "gemischt",
           "stand": "2026-09-29",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-25",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Zum Vergleich: Das Pflegegeld (Geldleistung) kostete die Pflegeversicherung zuletzt rund 21,01 Mrd. Euro; das sind nicht die Kosten dieses Wegs.",
+                "quelle_url": "https://www.bundesgesundheitsministerium.de/fileadmin/Dateien/3_Downloads/Statistiken/Pflegeversicherung/Finanzentwicklung/03-Finanzentwicklung-der-sozialen-Pflegeversicherung__2025.pdf",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 6268,
@@ -622,7 +808,34 @@
           "evidenz": "belegt",
           "stand": "2026-09-29",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-25",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Eine von der gewerkschaftsnahen Hans-Böckler-Stiftung geförderte Studie veranschlagt für eine Pflegebürger-Vollversicherung Mehrausgaben von rund 8,5 Mrd. Euro.",
+                "quelle_url": "https://www.boeckler.de/pdf/p_fofoe_WP_150_2019.pdf",
+                "belegstufe": "B"
+              },
+              {
+                "bereich": "wirtschaft",
+                "richtung": "nachteil",
+                "text": "Laut dieser Studie beliefen sich die jährlichen Mehrausgaben einer Pflegebürger-Vollversicherung für die Arbeitgeber auf 3 Milliarden Euro.",
+                "quelle_url": "https://www.boeckler.de/pdf/p_fofoe_WP_150_2019.pdf",
+                "belegstufe": "B"
+              },
+              {
+                "bereich": "verteilung",
+                "richtung": "gemischt",
+                "text": "Laut dieser Studie steigt die Mehrbelastung mit dem Einkommen: für die Hälfte der Versicherten unter vier Euro im Monat, nur im obersten Einkommensdezil über 100 Euro im Monat.",
+                "quelle_url": "https://www.boeckler.de/pdf/p_fofoe_WP_150_2019.pdf",
+                "belegstufe": "B"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 6271,
@@ -680,7 +893,12 @@
           "evidenz": "gemischt",
           "stand": "2026-09-29",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-25",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 6276,
@@ -705,7 +923,12 @@
           "evidenz": "gemischt",
           "stand": "2026-09-29",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-25",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 6278,
@@ -735,7 +958,20 @@
           "evidenz": "belegt",
           "stand": "2026-09-29",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-25",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Eine von der gewerkschaftsnahen Hans-Böckler-Stiftung geförderte Studie veranschlagt für eine Pflegebürger-Vollversicherung Mehrausgaben von rund 8,5 Mrd. Euro.",
+                "quelle_url": "https://www.boeckler.de/pdf/p_fofoe_WP_150_2019.pdf",
+                "belegstufe": "B"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 6441,
@@ -771,7 +1007,20 @@
           "evidenz": "gemischt",
           "stand": "2026-09-29",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-25",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Zum Vergleich: Das Pflegegeld (Geldleistung) kostete die Pflegeversicherung zuletzt rund 21,01 Mrd. Euro; das sind nicht die Kosten dieses Wegs.",
+                "quelle_url": "https://www.bundesgesundheitsministerium.de/fileadmin/Dateien/3_Downloads/Statistiken/Pflegeversicherung/Finanzentwicklung/03-Finanzentwicklung-der-sozialen-Pflegeversicherung__2025.pdf",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         }
       ]
     },
@@ -967,7 +1216,20 @@
           "evidenz": "gemischt",
           "stand": "2026-09-29",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-25",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "gemischt",
+                "text": "Zum Vergleich, nicht die Kosten dieses Wegs: Länder förderten 2024 rund 1,03 Mrd. Euro, Pflegebedürftige trugen rund 4,17 Mrd.; höhere Förderung kann mittelbar Sozialhilfeträger entlasten.",
+                "quelle_url": "https://www.bundesgesundheitsministerium.de/fileadmin/Dateien/3_Downloads/Z/Zukunftspakt_Pflege/20251211_Papier_der_Fachebenen.pdf",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         }
       ]
     },
@@ -1024,7 +1286,20 @@
           "evidenz": "gemischt",
           "stand": "2026-09-29",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-25",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "gemischt",
+                "text": "Zum Vergleich, nicht die Kosten dieses Wegs: Länder förderten 2024 rund 1,03 Mrd. Euro, Pflegebedürftige trugen rund 4,17 Mrd.; höhere Förderung kann mittelbar Sozialhilfeträger entlasten.",
+                "quelle_url": "https://www.bundesgesundheitsministerium.de/fileadmin/Dateien/3_Downloads/Z/Zukunftspakt_Pflege/20251211_Papier_der_Fachebenen.pdf",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         }
       ]
     },

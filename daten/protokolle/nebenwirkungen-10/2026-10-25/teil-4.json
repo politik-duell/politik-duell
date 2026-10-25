@@ -1,0 +1,138 @@
+{
+  "pruefsumme": "54806aea13a20d8d",
+  "thema_id": 10,
+  "thema": "Pflege",
+  "ziel": "Pflegebedürftige bekommen gute Pflege, die sie und ihre Angehörigen bezahlen und organisieren können.",
+  "ursachen": [
+    "Zu wenige Pflegekräfte; bis 2049 fehlen je nach Szenario 280.000 bis 690.000",
+    "Steigende Eigenanteile im Heim für Pflege, Ausbildung, Unterkunft und Verpflegung (mit Investitionskosten im ersten Jahr im Schnitt 3.364 Euro im Monat)",
+    "Die Zahl der Pflegebedürftigen steigt stärker als durch die Alterung allein, auch wegen des 2017 weiter gefassten Pflegebedürftigkeitsbegriffs",
+    "Pflegende Angehörige tragen die Hauptlast; Entlastungsangebote werden wenig genutzt",
+    "Die Länder fördern die Investitionskosten der Heime kaum; Bewohner zahlen dafür im Schnitt über 500 Euro im Monat"
+  ],
+  "teil": 4,
+  "teile": 5,
+  "einheiten": [
+    {
+      "id": 6447,
+      "name": "Land übernimmt die Investitionskosten der Heime (Land)",
+      "ebene": "land",
+      "begruendung": "Übernimmt das Land die Investitionskosten, sinkt der Eigenanteil im Heim direkt um im Schnitt rund 500 Euro im Monat; Unterkunft, Verpflegung und pflegebedingte Kosten bleiben. Das Land kann es selbst regeln, die Kosten von vielen Millionen Euro im Jahr muss es dauerhaft im Haushalt tragen.",
+      "ursache": 5
+    },
+    {
+      "id": 6448,
+      "name": "Land beteiligt sich an den Investitionskosten, ohne Umfang (Land)",
+      "ebene": "land",
+      "begruendung": "Eine Landesbeteiligung an den Investitionskosten senkt den Eigenanteil; ohne Angabe, wie viel das Land übernimmt, bleibt die Entlastung offen. Das Land kann es selbst regeln.",
+      "ursache": 5
+    },
+    {
+      "id": 6449,
+      "name": "Landesprogramm für Investitionen und Sanierung von Pflegeeinrichtungen (Land)",
+      "ebene": "land",
+      "begruendung": "Fördergeld für Bau und Sanierung dämpft, was Heime als Investitionskosten weitergeben, betrifft aber nur geförderte Einrichtungen und senkt den laufenden Eigenanteil der übrigen Bewohner nicht. Das Land kann ein Programm selbst auflegen.",
+      "ursache": 5
+    },
+    {
+      "id": 6453,
+      "name": "Investitionskostenzuschuss des Landes auf 300 Euro je Person und Monat erhöhen; 40.000 Euro je neuem Heimplatz",
+      "ebene": "land",
+      "begruendung": "Ein Zuschuss von 300 Euro im Monat deckt einen großen Teil der Investitionskosten und senkt den Eigenanteil spürbar; das Programm nennt keine Finanzierung, und Berlin müsste dafür dauerhaft einen dreistelligen Millionenbetrag im Jahr aufbringen.",
+      "ursache": 5
+    },
+    {
+      "id": 6456,
+      "name": "Pflegewohngeld: Land übernimmt Investitionskosten für Heimbewohner",
+      "ebene": "land",
+      "begruendung": "Ein Pflegewohngeld übernimmt die Investitionskosten für Bewohner, die sie nicht selbst tragen können, und entlastet sie direkt; wer mehr Einkommen oder Vermögen hat, zahlt weiter. Das Land kann es selbst einführen, die Kosten muss es dauerhaft tragen.",
+      "ursache": 5
+    },
+    {
+      "id": 6264,
+      "name": "Pflegepersonal durch digitale Anwendungen, Automatisierung und Robotik entlasten",
+      "ebene": "bund",
+      "begruendung": "Digitale Dokumentation und Assistenzsysteme können Pflegekräfte von Routinearbeit entlasten; wie viel Zeit das spart und ob Robotik in der Pflege breit einsetzbar ist, ist bisher kaum untersucht. Der Bund kann es fördern.",
+      "ursache": 1
+    }
+  ],
+  "suchhilfe": {
+    "haushalt": {
+      "frage": "Was kostet der Weg Bund, Ländern, Kommunen oder Sozialkassen – oder was bringt er ein?",
+      "vorteil": [
+        "Mehreinnahmen",
+        "Einsparung öffentlicher Haushalt",
+        "Entlastung Sozialversicherung"
+      ],
+      "nachteil": [
+        "Mindereinnahmen",
+        "Kosten Bundeshaushalt",
+        "Haushaltsausgaben Gesetzentwurf"
+      ]
+    },
+    "wirtschaft": {
+      "frage": "Welche Kosten oder Entlastungen entstehen für Unternehmen (besonders kleine und mittlere), wie wirkt er auf Preise und Verbraucher?",
+      "vorteil": [
+        "Entlastung Unternehmen",
+        "sinkende Preise",
+        "Investitionen"
+      ],
+      "nachteil": [
+        "Kosten für Unternehmen",
+        "Preisanstieg",
+        "Wettbewerbsfähigkeit"
+      ]
+    },
+    "aufwand": {
+      "frage": "Welcher Aufwand für Anträge, Nachweise und Kontrollen entsteht oder entfällt – für Bürger, Wirtschaft, Verwaltung?",
+      "vorteil": [
+        "Bürokratieabbau",
+        "Erfüllungsaufwand sinkt"
+      ],
+      "nachteil": [
+        "Erfüllungsaufwand",
+        "Nachweispflichten",
+        "Normenkontrollrat Stellungnahme"
+      ]
+    },
+    "umwelt": {
+      "frage": "Wie wirkt er auf Emissionen, Natur und Ressourcen, und welche Lasten oder Vorteile hat er für spätere Jahre?",
+      "vorteil": [
+        "Emissionsminderung",
+        "Umweltentlastung"
+      ],
+      "nachteil": [
+        "Mehremissionen",
+        "Umweltrisiken",
+        "Flächenverbrauch"
+      ]
+    },
+    "verteilung": {
+      "frage": "Wer gewinnt, wer trägt die Last – nach Einkommen, Alter, Familienform, Stadt und Land?",
+      "vorteil": [
+        "Entlastung geringe Einkommen",
+        "Verteilungswirkung progressiv"
+      ],
+      "nachteil": [
+        "regressiv",
+        "Mitnahmeeffekte",
+        "profitieren höhere Einkommen"
+      ]
+    },
+    "grundrechte": {
+      "frage": "Schränkt er Freiheiten ein oder stärkt er sie, behandelt er Gruppen ungleich, wie wirkt er auf Gesundheit und Sicherheit?",
+      "vorteil": [
+        "Gesundheit verbessert",
+        "Schutz",
+        "Gleichstellung"
+      ],
+      "nachteil": [
+        "Datenschutz",
+        "Grundrechtseingriff",
+        "Benachteiligung",
+        "Gesundheitsrisiko"
+      ]
+    }
+  },
+  "quellen": []
+}
