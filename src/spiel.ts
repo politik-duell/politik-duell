@@ -78,12 +78,17 @@ export function gespraechsKarten(runden: RundenErgebnis[]): Karte[] {
 export const mitKarte = (karten: Karte[], k: Karte): Karte[] =>
   karten.some((x) => kartenSchluessel(x) === kartenSchluessel(k)) ? karten : [...karten, k]
 
+/** Themen der gewerteten Runden, je Thema einmal – für Endbildschirm und Teilen-Text. */
+export const gewerteteThemen = (runden: RundenErgebnis[]): string[] => [
+  ...new Set(runden.filter((r) => r.status === 'gewertet' && r.thema).map((r) => r.thema!.name)),
+]
+
 /**
  * Text zum Teilen: die Themen der gewerteten Runden und eine Einladung – ohne Parteien, Punkte und Eingaben,
  * damit er sich nicht als Parteien-Punktestand verbreiten lässt (docs/plan-duell-regeln.md).
  */
 export function teilenText(runden: RundenErgebnis[], kiHinweis: string | null): string {
-  const themen = [...new Set(runden.filter((r) => r.status === 'gewertet' && r.thema).map((r) => r.thema!.name))]
+  const themen = gewerteteThemen(runden)
   const anzahl = runden.length === 1 ? 'ein Alltagsproblem' : `${runden.length} Alltagsprobleme`
   return (
     `Wir haben im Politik-Duell ${anzahl} durchgespielt${themen.length ? `: ${themen.join(', ')}` : ''}. ` +

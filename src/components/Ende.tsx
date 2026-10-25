@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { gesamtpunkte, gespraechsKarten, teilenText, type Karte, type RundenErgebnis, type Spieler } from '../spiel'
+import { gesamtpunkte, gespraechsKarten, gewerteteThemen, teilenText, type Karte, type RundenErgebnis, type Spieler } from '../spiel'
 import { ohneTreffer } from '../logic/ohneTreffer'
 import { punkteText } from '../logic/bewertung'
 import { forderungskarte } from '../logic/forderung'
@@ -27,6 +27,8 @@ export function Ende({
   const [geteilt, setGeteilt] = useState<string | null>(null)
   const sieger = pa === pb ? null : pa > pb ? spieler[0] : spieler[1]
   const mitKi = runden.some((r) => r.ergebnisse?.some((e) => e.ki_entwurf))
+  const themen = gewerteteThemen(runden)
+  const gewertet = runden.filter((r) => r.status === 'gewertet').length
 
   async function teilen() {
     const text = teilenText(runden, mitKi ? KI_HINWEIS : null)
@@ -52,13 +54,18 @@ export function Ende({
       <div className="ende-kopf">
         <Logo groesse={72} />
         <h2 className="sr-only">Endstand</h2>
+        {/* Erst, worüber ihr gesprochen habt, dann der Stand – Gespräch vor Triumph (docs/plan-duell-regeln.md, 4). */}
+        {themen.length > 0 && <p className="ende-themen">Ihr habt über {themen.join(', ')} gesprochen.</p>}
         <p className="endstand">
           <span style={parteiStil(spieler[0].partei.farbe)}>{spieler[0].partei.kurzname}</span> {pa} : {pb}{' '}
           <span style={parteiStil(spieler[1].partei.farbe)}>{spieler[1].partei.kurzname}</span>
         </p>
         <p className="sieger">
-          {sieger ? `${sieger.partei.name} liefert in diesem Spiel mehr – ${sieger.name} gewinnt!` : 'Unentschieden!'}
+          {sieger
+            ? `Bei ${gewertet === 1 ? 'eurem Problem' : 'euren Problemen'} hatte ${sieger.partei.kurzname} öfter die wirksamere Lösung.`
+            : 'Gleichstand – bei euren Problemen lagen beide Parteien gleichauf.'}
         </p>
+        <p className="ende-frage">Was hat euch überrascht? Und welches Problem seht ihr beide gleich?</p>
         {mitKi && (
           <p className="ki-hinweis" role="note">
             <strong>{KI_HINWEIS}.</strong> Das Ergebnis beruht teilweise auf KI-Entwürfen aus der Testphase. {KI_ENTWURF_ERKLAERUNG}

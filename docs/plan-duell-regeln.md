@@ -63,6 +63,23 @@ Neu – die Themen der Partie und eine Einladung, ohne Parteien, Punkte und Eing
 - Der Hinweis der Testphase bleibt im Text.
 - Im Spiel selbst ändert sich nichts: Endstand und Sieger stehen weiter auf dem Endbildschirm.
 
+## 4. Gespräch auf Augenhöhe
+
+Vorbild ist die Gesprächshaltung, wie sie Marcant in seinen Videos zeigt: zuhören, das Problem ernst nehmen, ruhig bleiben, mit überprüfbaren Belegen antworten, niemanden vorführen. Das Spiel übernimmt die Haltung, nicht eine Schlussfolgerung: Die Methode bleibt neutral (Grundprinzip 1). Gerade das macht es für Menschen aus einem anderen Lager glaubwürdig.
+
+Umgesetzt (25. 10. 2026, Entscheidung der Betreiberin):
+
+- **Leitfaden im Setup** (aufklappbar): „Ihr wählt verschiedene Parteien? So klappt das Gespräch“ – fünf Sätze zu Zuhören, Belegen, kein Triumph.
+- **„Was heißt das für euch?“** in der Auflösung (`src/logic/fuerEuch.ts`): Die Rolle *jeder* Seite wird auf die gezählten Maßnahmen *beider* Parteien angewandt (`rollen_modifikator`), dazu belegte Folgen für die Verteilung (`nebenwirkungen`, Bereich `verteilung`). Für alle Parteien gleich, ohne Punkte; gezählt wird weiter nur mit der eigenen Rolle.
+- **Gründe bei 0 Punkten sichtbar** statt aufklappbar: „Das Programm enthält keine Maßnahme …“ mit „Durchsucht: …“ und Link zum Programm. 0 Punkte ohne Grund wirken wie Schiebung.
+- **„Fehler melden“ an jeder Maßnahme**: E-Mail mit Maßnahme im Betreff, ohne Angaben zur Person.
+- **Endbildschirm**: zuerst die Themen („Ihr habt über … gesprochen“), dann der Stand; „hatte öfter die wirksamere Lösung“ statt „gewinnt!“; eine Gesprächsfrage.
+
+Offen (Daten, kein Code):
+
+- **Rollen-Modifikatoren** sind erst bei 11 Maßnahmen erfasst (Mieter:in, Eigentümer:in), Verteilungsfolgen bei wenigen Lösungswegen. Bis dahin zeigt „Was heißt das für euch?“ meist „keine Abweichung erfasst“. Nächster Schritt: Rollen für die häufigsten Themen nachtragen (Rente, Energie, Gesundheit, Arbeit).
+- **Themen der Zielgruppe zuerst:** Die Admin-Ansicht „Lücken“ zeigt, wo Runden ohne Wertung enden; dort zuerst erfassen und prüfen.
+
 ## Umsetzung
 
 | Stelle | Änderung |
