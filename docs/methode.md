@@ -133,8 +133,8 @@ Ablauf und Begründung: [`docs/plan-nebenwirkungen.md`](plan-nebenwirkungen.md).
    - Immer gibt es „Nichts davon passt“; zu einem anderen Thema wechseln lässt sich nicht, damit niemand zu einem Thema springt, das gar nicht zur Schilderung passt. Dann wird die Runde nicht gewertet, das Spiel sagt, dass dieser Teil des Themas noch nicht erfasst ist, und die Eingabe geht zur Durchsicht (Grundprinzip 5) – so zeigt sich, welche Ursachen im Katalog fehlen.
 
    Ist keine Ursache erkennbar, fragt das Spiel zusätzlich nach, woran es konkret hakt (zusammen mit Nachfragen zu Forderungen höchstens zweimal); man kann antippen oder weiterschreiben. Bleibt es unklar, wird die Runde nicht gewertet. Bei pauschalen Urteilen über Gruppen gibt es keine Auswahl, nur die Nachfrage nach dem Erlebten.
-3. Die höhere Summe bekommt den Spielpunkt, bei Gleichstand beide.
-4. Nach fünf Runden gewinnt, wer mehr Spielpunkte hat. Zusätzlich zeigt jede Runde, welche aller sieben Parteien die beste Lösung hätte.
+3. Die höhere Summe bekommt den Spielpunkt. Liegt die niedrigere höchstens 10 % unter der höheren, sind beide **gleichauf** und bekommen den Punkt – wie bei Gleichstand. Bewertungen sind Einschätzungen (siehe „Grenzen der Methode“); ein so knapper Abstand trägt kein Urteil darüber, welche Lösung besser ist, und das Spiel ruft dann keinen Sieger aus. Die Schwelle ist gesetzt wie die Gewichte ½, ¼ …: Über alle Themen und Parteipaare macht sie 5 % der Siege zu „gleichauf“ (Gleichstände insgesamt 17 % statt 12 %) und trifft alle Parteien ähnlich (`scripts/gleichauf-auswertung.ts`, Stand 25. 10. 2026; `docs/plan-duell-regeln.md`).
+4. Nach fünf Runden gewinnt, wer mehr Spielpunkte hat. Zusätzlich zeigt jede Runde, welche aller sieben Parteien die beste Lösung hätte – mit allen, die gleichauf damit liegen.
 
 ### Mehrere Lösungswege je Ursache
 

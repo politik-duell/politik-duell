@@ -8,7 +8,7 @@
 // Variante B: wie A, oder eine Stufe niedriger bei einem Teil der führenden Partei.
 // Aufruf: node --experimental-strip-types scripts/gleichauf-auswertung.ts
 import { spielbareAbdeckung, spielbareLandesprogramme, spielbareMassnahmen } from '../src/data/katalog.ts'
-import { bewertePartei, type Ebenen } from '../supabase/functions/_shared/bewertung.ts'
+import { bewertePartei, gleichauf, type Ebenen } from '../supabase/functions/_shared/bewertung.ts'
 import type { Massnahme, Partei } from '../supabase/functions/_shared/typen.ts'
 import { pruefeDatenordner } from './katalog-laden.ts'
 
@@ -34,12 +34,12 @@ function varianten(massnahmen: Massnahme[], relevant: Massnahme[], richtung: 1 |
 }
 
 interface Zaehler { siege: number; A: number; B: number }
-const jePartei = new Map(parteien.map((p) => [p.kurzname, { siege: 0, sA: 0, sB: 0, niederlagen: 0, nA: 0, nB: 0 }]))
+const jePartei = new Map(parteien.map((p) => [p.kurzname, { siege: 0, sA: 0, sB: 0, s10: 0, niederlagen: 0, nA: 0, nB: 0, n10: 0 }]))
 const jeThema = new Map<string, Zaehler>()
 const schwellen = { 'Abstand ≤ 1': (f: number, u: number) => f - u <= 1, 'Abstand ≤ 2': (f: number, u: number) => f - u <= 2, 'Abstand ≤ 10 %': (f: number, u: number) => f - u <= 0.1 * f, 'Abstand ≤ 20 %': (f: number, u: number) => f - u <= 0.2 * f }
 const jeSchwelle = new Map(Object.keys(schwellen).map((n) => [n, 0]))
-const gesamt: Zaehler & { gleich: number; sätze: number; besteVorher: number; besteA: number; besteB: number; besteRunden: number } =
-  { siege: 0, A: 0, B: 0, gleich: 0, sätze: 0, besteVorher: 0, besteA: 0, besteB: 0, besteRunden: 0 }
+const gesamt: Zaehler & { gleich: number; sätze: number; besteVorher: number; besteA: number; besteB: number; beste10: number; besteRunden: number } =
+  { siege: 0, A: 0, B: 0, gleich: 0, sätze: 0, besteVorher: 0, besteA: 0, besteB: 0, beste10: 0, besteRunden: 0 }
 
 for (const thema of k.themen) {
   const massnahmen = alleMassnahmen.filter((m) => m.thema_id === thema.id)
@@ -63,6 +63,7 @@ for (const thema of k.themen) {
         gesamt.besteRunden++
         const beste = basis.filter((e) => e.punkte === max)
         gesamt.besteVorher += beste.length
+        gesamt.beste10 += basis.filter((e) => gleichauf(e.punkte, max)).length
         let a = beste.length, b = beste.length
         for (const e of basis.filter((x) => x.punkte < max)) {
           const hoch = varianten(massnahmen, relevant(e.partei), 1).some((ms) => punkte(e.partei, ms) >= Math.max(...basis.map((x) => punkte(x.partei, ms))))
@@ -94,6 +95,7 @@ for (const thema of k.themen) {
           pf.siege++; pu.niederlagen++
           if (a) { pf.sA++; pu.nA++ }
           if (b) { pf.sB++; pu.nB++ }
+          if (schwellen['Abstand ≤ 10 %'](f.punkte, u.punkte)) { pf.s10++; pu.n10++ }
         }
     }
   }
@@ -104,10 +106,10 @@ console.log(`Ursachensätze mit mind. zwei erfassten Parteien: ${gesamt.sätze} 
 console.log(`Paarvergleiche mit Sieger: ${gesamt.siege} · schon heute gleich (über 0): ${gesamt.gleich}`)
 console.log(`→ gleichauf mit Variante A: ${gesamt.A} (${pz(gesamt.A, gesamt.siege)}) · Variante B: ${gesamt.B} (${pz(gesamt.B, gesamt.siege)})`)
 console.log(`Zum Vergleich, feste Schwellen: ${[...jeSchwelle].map(([n, z]) => `${n}: ${z} (${pz(z, gesamt.siege)})`).join(' · ')}`)
-console.log(`„Beste Lösung insgesamt“, Parteien je Runde im Schnitt: heute ${(gesamt.besteVorher / gesamt.besteRunden).toFixed(2)} · A ${(gesamt.besteA / gesamt.besteRunden).toFixed(2)} · B ${(gesamt.besteB / gesamt.besteRunden).toFixed(2)}`)
-console.log('\nJe Partei: Siege → davon gleichauf A / B · Niederlagen → davon gleichauf A / B')
+console.log(`„Beste Lösung insgesamt“, Parteien je Runde im Schnitt: heute ${(gesamt.besteVorher / gesamt.besteRunden).toFixed(2)} · A ${(gesamt.besteA / gesamt.besteRunden).toFixed(2)} · B ${(gesamt.besteB / gesamt.besteRunden).toFixed(2)} · 10 % ${(gesamt.beste10 / gesamt.besteRunden).toFixed(2)}`)
+console.log('\nJe Partei: Siege → davon gleichauf A / B / 10 % · Niederlagen → davon gleichauf A / B / 10 %')
 for (const [name, z] of jePartei)
-  console.log(`${name.padEnd(8)} Siege ${String(z.siege).padStart(4)} → A ${pz(z.sA, z.siege).padStart(5)} / B ${pz(z.sB, z.siege).padStart(5)} · Niederlagen ${String(z.niederlagen).padStart(4)} → A ${pz(z.nA, z.niederlagen).padStart(5)} / B ${pz(z.nB, z.niederlagen).padStart(5)}`)
+  console.log(`${name.padEnd(8)} Siege ${String(z.siege).padStart(4)} → A ${pz(z.sA, z.siege).padStart(5)} / B ${pz(z.sB, z.siege).padStart(5)} / ${pz(z.s10, z.siege).padStart(5)} · Niederlagen ${String(z.niederlagen).padStart(4)} → A ${pz(z.nA, z.niederlagen).padStart(5)} / B ${pz(z.nB, z.niederlagen).padStart(5)} / ${pz(z.n10, z.niederlagen).padStart(5)} (${z.n10})`)
 if (process.argv.includes('--themen')) {
   console.log('\nJe Thema: Siege → gleichauf A / B')
   for (const [name, z] of [...jeThema].sort((a, b) => b[1].A / b[1].siege - a[1].A / a[1].siege))

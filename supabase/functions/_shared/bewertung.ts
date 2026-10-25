@@ -225,12 +225,23 @@ export function bewertePartei(
 }
 
 /**
- * Rundensieger: Höhere Summe bekommt 1 Punkt, Gleichstand je 1 Punkt.
+ * Gleichauf: Die niedrigere Summe liegt höchstens 10 % unter der höheren. So knapp trägt der Abstand kein Urteil,
+ * welche Lösung besser ist – Bewertungen sind Einschätzungen (docs/methode.md → „Punkte in der Runde“).
+ * Gerechnet in Zehnteln, damit Rundungsfehler nicht über die Grenze entscheiden. Mit 0 Punkten ist niemand gleichauf.
+ */
+export const GLEICHAUF_ANTEIL = 0.1
+export function gleichauf(a: number, b: number): boolean {
+  const [hoch, tief] = [Math.max(zehntel(a), zehntel(b)), Math.min(zehntel(a), zehntel(b))]
+  return hoch > 0 && hoch - tief <= GLEICHAUF_ANTEIL * hoch
+}
+
+/**
+ * Rundensieger: Höhere Summe bekommt 1 Punkt; gleichauf (auch Gleichstand) je 1 Punkt.
  * Haben beide Parteien 0 Punkte (keine Maßnahme), gibt es keinen Punkt.
  */
 export function rundenpunkte(a: number, b: number): [number, number] {
   if (a === 0 && b === 0) return [0, 0]
-  if (a === b) return [1, 1]
+  if (gleichauf(a, b)) return [1, 1]
   return a > b ? [1, 0] : [0, 1]
 }
 
@@ -245,7 +256,8 @@ export function werteRunde(a: ParteiErgebnis, b: ParteiErgebnis): { status: 'gew
 }
 
 /**
- * Alle Parteien mit der höchsten Punktzahl zu diesem Problem (leer, wenn niemand liefert).
+ * Alle Parteien mit der höchsten Punktzahl zu diesem Problem und die, die gleichauf damit liegen (höchstens 10 %
+ * darunter); leer, wenn niemand liefert.
  * Berücksichtigt nur Parteien, für die das Thema erfasst ist.
  */
 export function besteParteien(
@@ -263,5 +275,5 @@ export function besteParteien(
   if (!alle.length) return []
   const max = Math.max(...alle.map((e) => e.punkte))
   if (max <= 0) return []
-  return alle.filter((e) => e.punkte === max)
+  return alle.filter((e) => gleichauf(e.punkte, max))
 }
