@@ -195,6 +195,10 @@ export interface Zielkonflikt {
 export interface RollenModifikator {
   wert: number
   begruendung: string
+  /** Beleg, dass der Weg für diese Rolle deutlich anders wirkt (Pflicht bei /rollen-erfassen). */
+  quelle_url?: string
+  /** Von einer KI vorgeschlagen (/rollen-erfassen), noch nicht von Menschen geprüft. */
+  ki_entwurf?: boolean
 }
 
 export interface Massnahme {

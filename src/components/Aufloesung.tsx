@@ -379,6 +379,14 @@ function FuerEuch({ ergebnisse, spieler }: { ergebnisse: ParteiErgebnis[]; spiel
                 <li key={`${x.partei.id}-${x.massnahme.id}`} style={parteiStil(x.partei.farbe)}>
                   <strong>{x.partei.kurzname}</strong>: {x.massnahme.beschreibung} –{' '}
                   {x.staerker ? 'wirkt für deine Rolle stärker' : 'wirkt für deine Rolle schwächer'}: {x.begruendung}
+                  {x.quelle_url && (
+                    <>
+                      {' '}
+                      <a href={x.quelle_url} target="_blank" rel="noopener noreferrer">
+                        Quelle
+                      </a>
+                    </>
+                  )}
                 </li>
               ))}
             </ul>

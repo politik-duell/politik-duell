@@ -19,8 +19,10 @@ flowchart TD
         T4["entwurf:blind → Agent blind-bewertung<br/>ohne Parteinamen: Werte, Instrumente, Zuordnung"]
         T45["entwurf:eintragen · Prüfungen · Archiv"]
         T46["Folgen (/nebenwirkungen-erfassen, fester Schritt)<br/>nebenwirkungen:blind → je Teil Agent nebenwirkungen-recherche<br/>ohne Parteinamen: sechs Bereiche, beide Richtungen, ohne Punkte"]
+        T47["Rollen (/rollen-erfassen, zum Nachtragen)<br/>rollen:blind → je Teil Agent rollen-recherche<br/>ohne Parteinamen: Modifikator nur mit Quelle und Beleg"]
         T5["Commit · Pull Request"]
         T1 --> T2 --> T3 --> T4 --> T45 --> T46 --> T5
+        T45 -.-> T47 -.-> T5
     end
     subgraph F["Forderungen"]
         F1["/forderung-erfassen<br/>npm run instrumente: schon vorhanden?"]
@@ -45,7 +47,8 @@ flowchart TD
 | Ursachen und Fragen vor den Programmen | Phase A mit Programmsperre (`npm run phase-a`, Hook `.claude/hooks/sperre.mjs`); eigener Commit mit KI-Freigabe, bevor erfasst wird – `daten:id --gegen` prüft das am Commit-Verlauf |
 | Gleiche Suche für alle | Suchbegriffe und Leitfaden je Thema bzw. Haltung, für alle Programme gleich, von Skripten gezählt; vor dem Erfassen je Ursache eine Regel und Suchbegriffe (`daten:pruefen`, `entwurf:auftrag`) |
 | Belegte Zitate | Jeder Erfassungs-Agent prüft sein Zitat gegen die PDF-Seite (`entwurf:programm-pruefen`, `haltung:programm-pruefen`); `zitate:pruefen` in der CI |
-| Urteil ohne Parteinamen | `blind-bewertung`, `haltung-einordnung` und `nebenwirkungen-recherche` sehen nur neutralisierte Listen; der Hook sperrt ihnen alles andere |
+| Urteil ohne Parteinamen | `blind-bewertung`, `haltung-einordnung`, `nebenwirkungen-recherche` und `rollen-recherche` sehen nur neutralisierte Listen; der Hook sperrt ihnen alles andere |
+| Rollen nur belegt | `rollen:antwort-pruefen` verlangt je Modifikator Quelle und wörtlichen Beleg (im Original gefunden), gleicht Suchen mit dem Transkript ab und meldet ungleiche Maßstäbe |
 | Folgen in beide Richtungen | `nebenwirkungen:antwort-pruefen` verlangt je Lösungsweg und Bereich Suchanfragen nach Vor- *und* Nachteilen, einen wörtlichen Beleg und meldet einseitige Bilanzen |
 | Auch mit GitHub Copilot | VS Code liest Skills und Agenten aus `.claude/`; `.github/hooks/sperre.json` ruft denselben Hook auf. Copilot nennt Werkzeuge anders und schickt kein `agent_type` mit, darum prüft der Hook dort alle Texte der Eingabe und markiert laufende Bewertungs- und Einordnungs-Agenten über SubagentStart/-Stop (`.cache/sperre-agenten/`, verfällt nach 2 h) |
 | Keine Eingriffe der Koordination | Sie liest keine Programme und vergibt keine Werte; Rückfragen nur bei Skriptfehlern und im Protokoll |
@@ -79,6 +82,6 @@ Was ein Schritt geprüft hat, prüft kein späterer noch einmal: keine Kontrolle
 
 ## Grundlage
 
-- Skills: [liste-einordnen](liste-einordnen/SKILL.md), [liste-ausfuehren](liste-ausfuehren/SKILL.md), [thema-anlegen](thema-anlegen/SKILL.md), [thema-erfassen](thema-erfassen/SKILL.md), [forderung-erfassen](forderung-erfassen/SKILL.md), [haltung-anlegen](haltung-anlegen/SKILL.md), [haltung-erfassen](haltung-erfassen/SKILL.md), [nebenwirkungen-erfassen](nebenwirkungen-erfassen/SKILL.md)
-- Agenten: [ursachen-recherche](../agents/ursachen-recherche.md), [programm-erfassung](../agents/programm-erfassung.md), [blind-bewertung](../agents/blind-bewertung.md), [haltung-recherche](../agents/haltung-recherche.md), [haltung-erfassung](../agents/haltung-erfassung.md), [haltung-einordnung](../agents/haltung-einordnung.md)
+- Skills: [liste-einordnen](liste-einordnen/SKILL.md), [liste-ausfuehren](liste-ausfuehren/SKILL.md), [thema-anlegen](thema-anlegen/SKILL.md), [thema-erfassen](thema-erfassen/SKILL.md), [forderung-erfassen](forderung-erfassen/SKILL.md), [haltung-anlegen](haltung-anlegen/SKILL.md), [haltung-erfassen](haltung-erfassen/SKILL.md), [nebenwirkungen-erfassen](nebenwirkungen-erfassen/SKILL.md), [rollen-erfassen](rollen-erfassen/SKILL.md)
+- Agenten: [ursachen-recherche](../agents/ursachen-recherche.md), [programm-erfassung](../agents/programm-erfassung.md), [blind-bewertung](../agents/blind-bewertung.md), [haltung-recherche](../agents/haltung-recherche.md), [haltung-erfassung](../agents/haltung-erfassung.md), [haltung-einordnung](../agents/haltung-einordnung.md), [rollen-recherche](../agents/rollen-recherche.md)
 - Evaluationen der Erfassung: [thema-erfassen/evals/](thema-erfassen/evals/)

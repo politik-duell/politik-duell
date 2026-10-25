@@ -212,7 +212,7 @@ export function teileNachUrsache<T extends { id: number; ursache: number; ursach
 const ANKNUEPFUNG = /\b(setz|knüpf)(t|en) (genau )?an dies\w* [^.;]*\ban\b/i
 
 /** Auslassung mitten im Beleg oder Einschub in eckigen Klammern; „…“ am Anfang oder Ende und vor der Seitenangabe bleibt erlaubt. */
-const AUSLASSUNG = /\[|\]|[\p{L}\p{N},;:.]\s*(…|\.\.\.)\s*(?!S\.\s*\d)[\p{L}\p{N}]/u
+export const AUSLASSUNG = /\[|\]|[\p{L}\p{N},;:.]\s*(…|\.\.\.)\s*(?!S\.\s*\d)[\p{L}\p{N}]/u
 
 /** Blindlisten in Teilen zu höchstens TEIL_GROESSE Lösungswegen – ohne Parteien, Länder oder Zitate. */
 export function nebenBlind(k: Katalog, themaId: number, alle = false): { listen: NebenBlindliste[]; reste: string[] } {

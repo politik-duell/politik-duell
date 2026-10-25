@@ -202,7 +202,7 @@ Hängt eine Maßnahme ganz oder teilweise von EU-Entscheidungen ab, die Deutschl
 
 ### Rollen-Modifikator (−2 bis +2, optional)
 
-Nur wenn eine Maßnahme für eine Rolle nachweislich deutlich besser oder schlechter wirkt (z. B. Mietrecht für Mieter:innen vs. Eigentümer:innen). Immer mit Begründung. Auf Wirksamkeit 3 hebt der Modifikator nur bei `evidenz: belegt`; sonst zählt er höchstens bis 2 (die Prüfung warnt). Rollen: `mieter`, `eigentuemer`, `angestellt`, `selbststaendig`, `rentner`, `arbeitslos`, `studierend`, `vermoegend`.
+Nur wenn eine Maßnahme für eine Rolle nachweislich deutlich besser oder schlechter wirkt (z. B. Mietrecht für Mieter:innen vs. Eigentümer:innen). Immer mit Begründung und Beleg: `{ "wert": 1, "begruendung": "…", "quelle_url": "https://…" }` (ohne `quelle_url` warnt die Prüfung). Nachgetragen werden Modifikatoren mit `/rollen-erfassen` – ohne Parteinamen, jeder mit wörtlichem Beleg im Protokoll (`daten/protokolle/rollen-<ID>/`), als KI-Entwurf (`"ki_entwurf": true` am Modifikator). Auf Wirksamkeit 3 hebt der Modifikator nur bei `evidenz: belegt`; sonst zählt er höchstens bis 2 (die Prüfung warnt). Rollen: `mieter`, `eigentuemer`, `angestellt`, `selbststaendig`, `rentner`, `arbeitslos`, `studierend`, `vermoegend`.
 
 ### Stand der Forschung
 

@@ -61,6 +61,32 @@ describe('Programmsperre (PreToolUse-Hook)', () => {
     })
   })
 
+  describe('Agent rollen-recherche', () => {
+    const agent = (tool_name: string, tool_input: Record<string, string>) =>
+      pruefe({ tool_name, tool_input, agent_type: 'rollen-recherche', agent_id: 'r1', cwd: '/repo' }, kontext())
+
+    it('erlaubt nur Teil-Liste, eigene Antwort, Selbstprüfung, PDF-Werkzeug und Websuche ohne Parteiserver', () => {
+      expect(agent('Read', { file_path: '/repo/.cache/rollen/3/teil-2.json' })).toBeNull()
+      expect(agent('Write', { file_path: '.cache/rollen/3/protokoll/antwort-2.txt', content: '{}' })).toBeNull()
+      expect(agent('Bash', { command: 'npm run -s rollen:antwort-pruefen -- 3 2' })).toBeNull()
+      expect(agent('Bash', { command: "npm run -s nebenwirkungen:pdf -- https://dserver.bundestag.de/btd/21/1/1.pdf 'Rentner'" })).toBeNull()
+      expect(agent('WebSearch', { query: 'Verteilungswirkung Rentner Studie' })).toBeNull()
+      expect(agent('WebFetch', { url: 'https://www.spd.de/x' })).toMatch(/gesperrt/)
+      for (const datei of ['/repo/daten/themen/03-energiepreise.json', '/repo/.cache/nebenwirkungen/3/teil-1.json', '/repo/.cache/rollen/3/../../entwurf/3/blind.json'])
+        expect(agent('Read', { file_path: datei })).toMatch(/Rollen ohne Parteinamen/)
+      expect(agent('Bash', { command: 'npm run -s rollen:antwort-pruefen -- 3 2; cat daten/themen/03-energiepreise.json' })).toMatch(/gesperrt/)
+      expect(agent('Bash', { command: 'npm run -s nebenwirkungen:antwort-pruefen -- 3 2' })).toMatch(/gesperrt/)
+    })
+
+    it('gilt auch unter GitHub Copilot über die Markierung', () => {
+      const c = (tool_name: string, tool_input: Record<string, unknown>) =>
+        pruefeCopilot({ tool_name, tool_input, cwd: '/repo' }, { ...kontext(), agenten: ['rollen-recherche'] })
+      expect(c('read_file', { filePath: '/repo/.cache/rollen/3/teil-1.json' })).toBeNull()
+      expect(c('read_file', { filePath: '/repo/daten/themen/03-energiepreise.json' })).toMatch(/Rollen ohne Parteinamen/)
+      expect(c('run_in_terminal', { command: 'npm run -s rollen:antwort-pruefen -- 3 1' })).toBeNull()
+    })
+  })
+
   describe('Agent nebenwirkungen-recherche', () => {
     const agent = (tool_name: string, tool_input: Record<string, string>) =>
       pruefe({ tool_name, tool_input, agent_type: 'nebenwirkungen-recherche', agent_id: 'n1', cwd: '/repo' }, kontext())
