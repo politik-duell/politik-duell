@@ -1,0 +1,148 @@
+{
+  "pruefsumme": "012a9b22e3fa14d9",
+  "thema_id": 10,
+  "thema": "Pflege",
+  "ziel": "Pflegebedürftige bekommen gute Pflege, die sie und ihre Angehörigen bezahlen und organisieren können.",
+  "ursachen": [
+    "Zu wenige Pflegekräfte; bis 2049 fehlen je nach Szenario 280.000 bis 690.000",
+    "Steigende Eigenanteile im Heim für Pflege, Ausbildung, Unterkunft und Verpflegung (mit Investitionskosten im ersten Jahr im Schnitt 3.364 Euro im Monat)",
+    "Die Zahl der Pflegebedürftigen steigt stärker als durch die Alterung allein, auch wegen des 2017 weiter gefassten Pflegebedürftigkeitsbegriffs",
+    "Pflegende Angehörige tragen die Hauptlast; Entlastungsangebote werden wenig genutzt",
+    "Die Länder fördern die Investitionskosten der Heime kaum; Bewohner zahlen dafür im Schnitt über 500 Euro im Monat"
+  ],
+  "teil": 5,
+  "teile": 5,
+  "einheiten": [
+    {
+      "id": 6234,
+      "name": "Prävention und Reha, um Pflegebedürftigkeit hinauszuzögern",
+      "ebene": "bund",
+      "begruendung": "Prävention und Rehabilitation können Pflegebedürftigkeit bei Einzelnen verzögern; an der Alterung der Bevölkerung ändern sie nichts, und ihre Wirkung auf die Zahl der Pflegebedürftigen ist schwer zu belegen. Per Bundesgesetz umsetzbar.",
+      "ursache": 3
+    },
+    {
+      "id": 6265,
+      "name": "Soziale Pflegeversicherung um eine kapitalgedeckte Komponente ergänzen",
+      "ebene": "bund",
+      "begruendung": "Ein Kapitalstock kann die Beitragssätze dämpfen, wenn die Zahl der Pflegebedürftigen steigt; der bestehende Pflegevorsorgefonds ist klein, und ein neuer Kapitalstock wirkt erst langfristig. Per Bundesgesetz umsetzbar, der Aufbau braucht zusätzliche Mittel.",
+      "ursache": 3
+    },
+    {
+      "id": 6440,
+      "name": "Pflegevollversicherung, überwiegend aus Steuermitteln finanziert",
+      "ebene": "bund",
+      "begruendung": "Eine Vollversicherung beseitigt die pflegebedingten Eigenanteile vollständig; Unterkunft und Verpflegung bleiben. Die Mehrkosten liegen bei deutlich über 10 Milliarden Euro im Jahr, eine Finanzierung überwiegend aus Steuern ist offen.",
+      "ursache": 2
+    }
+  ],
+  "suchhilfe": {
+    "haushalt": {
+      "frage": "Was kostet der Weg Bund, Ländern, Kommunen oder Sozialkassen – oder was bringt er ein?",
+      "vorteil": [
+        "Mehreinnahmen",
+        "Einsparung öffentlicher Haushalt",
+        "Entlastung Sozialversicherung"
+      ],
+      "nachteil": [
+        "Mindereinnahmen",
+        "Kosten Bundeshaushalt",
+        "Haushaltsausgaben Gesetzentwurf"
+      ]
+    },
+    "wirtschaft": {
+      "frage": "Welche Kosten oder Entlastungen entstehen für Unternehmen (besonders kleine und mittlere), wie wirkt er auf Preise und Verbraucher?",
+      "vorteil": [
+        "Entlastung Unternehmen",
+        "sinkende Preise",
+        "Investitionen"
+      ],
+      "nachteil": [
+        "Kosten für Unternehmen",
+        "Preisanstieg",
+        "Wettbewerbsfähigkeit"
+      ]
+    },
+    "aufwand": {
+      "frage": "Welcher Aufwand für Anträge, Nachweise und Kontrollen entsteht oder entfällt – für Bürger, Wirtschaft, Verwaltung?",
+      "vorteil": [
+        "Bürokratieabbau",
+        "Erfüllungsaufwand sinkt"
+      ],
+      "nachteil": [
+        "Erfüllungsaufwand",
+        "Nachweispflichten",
+        "Normenkontrollrat Stellungnahme"
+      ]
+    },
+    "umwelt": {
+      "frage": "Wie wirkt er auf Emissionen, Natur und Ressourcen, und welche Lasten oder Vorteile hat er für spätere Jahre?",
+      "vorteil": [
+        "Emissionsminderung",
+        "Umweltentlastung"
+      ],
+      "nachteil": [
+        "Mehremissionen",
+        "Umweltrisiken",
+        "Flächenverbrauch"
+      ]
+    },
+    "verteilung": {
+      "frage": "Wer gewinnt, wer trägt die Last – nach Einkommen, Alter, Familienform, Stadt und Land?",
+      "vorteil": [
+        "Entlastung geringe Einkommen",
+        "Verteilungswirkung progressiv"
+      ],
+      "nachteil": [
+        "regressiv",
+        "Mitnahmeeffekte",
+        "profitieren höhere Einkommen"
+      ]
+    },
+    "grundrechte": {
+      "frage": "Schränkt er Freiheiten ein oder stärkt er sie, behandelt er Gruppen ungleich, wie wirkt er auf Gesundheit und Sicherheit?",
+      "vorteil": [
+        "Gesundheit verbessert",
+        "Schutz",
+        "Gleichstellung"
+      ],
+      "nachteil": [
+        "Datenschutz",
+        "Grundrechtseingriff",
+        "Benachteiligung",
+        "Gesundheitsrisiko"
+      ]
+    }
+  },
+  "quellen": [
+    {
+      "bereich": "haushalt",
+      "text": "Zum Vergleich (nicht Kosten dieses Wegs): Hilfe zur Pflege stieg 2024 um 17,7 % auf 5,3 Milliarden Euro; höhere Löhne werden laut Evaluation auch an Sozialhilfeträger weitergegeben.",
+      "quelle_url": "https://www.bundesgesundheitsministerium.de/fileadmin/Dateien/5_Publikationen/Pflege/Berichte/Abschlussbericht_Evaluation_Entlohnung_nach_Tarif____72_Absatz_3f_SGB_XI_barrierefrei.pdf"
+    },
+    {
+      "bereich": "haushalt",
+      "text": "2024 trugen Pflegebedürftige rechnerisch rund 4,17 Mrd. Euro Investitionskosten, die Länder förderten rund 1,03 Mrd. Euro; mehr Förderung könnte mittelbar Sozialhilfeträger entlasten.",
+      "quelle_url": "https://www.bundesgesundheitsministerium.de/fileadmin/Dateien/3_Downloads/Z/Zukunftspakt_Pflege/20251211_Papier_der_Fachebenen.pdf"
+    },
+    {
+      "bereich": "haushalt",
+      "text": "Eine von der gewerkschaftsnahen Hans-Böckler-Stiftung geförderte Studie veranschlagt für eine Pflegebürger-Vollversicherung Mehrausgaben von rund 8,5 Mrd. Euro.",
+      "quelle_url": "https://www.boeckler.de/pdf/p_fofoe_WP_150_2019.pdf"
+    },
+    {
+      "bereich": "haushalt",
+      "text": "Zum Vergleich: Die Pflegeversicherung gab zuletzt für Tages-/Nachtpflege 1,81 Mrd. und für Kurzzeitpflege 1,01 Mrd. Euro aus; das sind nicht die Kosten dieses Wegs.",
+      "quelle_url": "https://www.bundesgesundheitsministerium.de/fileadmin/Dateien/3_Downloads/Statistiken/Pflegeversicherung/Finanzentwicklung/03-Finanzentwicklung-der-sozialen-Pflegeversicherung__2025.pdf"
+    },
+    {
+      "bereich": "wirtschaft",
+      "text": "Entlastung durch formelle und informelle Unterstützungsangebote kann laut einer Querschnittsstudie wohl die Wahrscheinlichkeit verringern, dass Pflegende ihre Erwerbstätigkeit einschränken.",
+      "quelle_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10949857"
+    },
+    {
+      "bereich": "grundrechte",
+      "text": "Digitale Pflegetechnik und Robotik werfen wegen des Datenhungers Fragen des Datenschutzes und unangemessener Eingriffe in die Privatsphäre auf.",
+      "quelle_url": "https://dserver.bundestag.de/btd/19/027/1902790.pdf"
+    }
+  ]
+}

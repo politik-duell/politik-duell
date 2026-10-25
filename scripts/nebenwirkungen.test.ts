@@ -13,6 +13,7 @@ import {
   zahlenOhneBeleg,
   TEIL_GROESSE,
   teileNachUrsache,
+  vergleichFuer,
   type NebenAntwort,
   type NebenBlindliste,
   type NebenHinweis,
@@ -66,6 +67,11 @@ describe('Nebenwirkungen: Recherche ohne Parteinamen', () => {
     const wege = (ursache: number, ...ids: number[]) => ids.map((id) => ({ id, ursache }))
     const teile = teileNachUrsache([...wege(1, 1, 2), ...wege(2, 3, 4, 5), ...wege(3, 6, 7, 8, 9, 10, 11), ...wege(4, 12), ...wege(5, ...Array.from({ length: 8 }, (_, i) => 20 + i))])
     expect(teile.map((t) => t.map((e) => e.id))).toEqual([[6, 7, 8, 9, 10, 11], [20, 21, 22, 23, 24, 25], [3, 4, 5, 1, 2, 12], [26, 27]])
+    // Ein Weg zu zwei Ursachen geht dorthin, wo Platz ist; der Rest einer geteilten Gruppe kommt ans Ende (Thema 10).
+    const mehrere = teileNachUrsache([...wege(2, 1, 2, 3, 4, 5, 6), { id: 7, ursache: 2, ursachen: [2, 5] }, ...wege(5, 8, 9, 10, 11, 12)])
+    expect(mehrere.map((t) => t.map((e) => e.id))).toEqual([[1, 2, 3, 4, 5, 6], [7, 8, 9, 10, 11, 12]])
+    const rest = teileNachUrsache([...wege(1, 1, 2, 3, 4, 5, 6, 7), ...wege(2, 8, 9, 10, 11, 12), ...wege(3, 13, 14, 15, 16, 17, 18), ...wege(4, 19, 20, 21, 22, 23, 24), ...wege(5, 25, 26, 27, 28)])
+    expect(rest.map((t) => t.map((e) => e.id))).toEqual([[1, 2, 3, 4, 5, 6], [13, 14, 15, 16, 17, 18], [19, 20, 21, 22, 23, 24], [25, 26, 27, 28], [8, 9, 10, 11, 12, 7]])
     const { katalog } = pruefeDatenordner()
     const ids = nebenBlind(katalog, 11, true).listen.map((l) => l.einheiten.map((e) => e.id))
     // Die Steuer- und Abgabenwege (Ursache 1104) lagen im ersten Lauf auf zwei Teile verteilt.
@@ -127,6 +133,24 @@ describe('Nebenwirkungen: Recherche ohne Parteinamen', () => {
     Object.assign(zwei.bereiche[0], { ohne: 'Aufkommen dieses Wegs nicht beziffert' })
     expect(fehler(antwort([einheit(1, { haushalt: hinweis() }), zwei]), gleich)).toBe('')
     expect(fehler(antwort([einheit(1, { haushalt: hinweis() }), einheit(2, { haushalt: hinweis({ richtung: 'vorteil' }) })]), gleich)).toBe('')
+  })
+
+  it('gibt offenen Teilen Hinweise derselben Ursache aus anderen Teilen mit und verlangt dazu Gegenstück oder Grund', () => {
+    const fertig = { liste: liste([1, 2], (id) => id), antwort: antwort() }
+    const offen = liste([3], () => 1)
+    const vergleich = vergleichFuer(offen, [fertig])
+    expect(vergleich).toEqual([{ id: 1, ursache: 1, bereich: 'haushalt', text: hinweis().text, quelle_url: hinweis().quelle_url }])
+    expect(vergleichFuer(liste([3], () => 2), [fertig])).toEqual([])
+    expect(fehler(antwort([einheit(3)]), { ...offen, vergleich })).toMatch(/Lösungsweg 3 › haushalt: Lösungsweg 1 \(gleiche Ursache, anderer Teil/)
+    const drei = einheit(3)
+    Object.assign(drei.bereiche[0], { ohne: 'Weg verändert keine Ausgaben des Bundes' })
+    expect(fehler(antwort([drei]), { ...offen, vergleich })).toBe('')
+  })
+
+  it('lehnt die heutige Lage als Folge ab', () => {
+    const lage = hinweis({ richtung: 'gemischt', bereich: undefined, text: 'Rund 5 Mrd. Euro tragen heute die Betroffenen; der Weg setzt an dieser Verteilung an.' } as Partial<NebenHinweis>)
+    expect(fehler(antwort([einheit(1, { verteilung: lage }), einheit(2)]))).toMatch(/heutige Lage/)
+    expect(fehler(antwort([einheit(1, { verteilung: hinweis({ text: 'Die Mehrbelastung von 5 Mrd. Euro steigt mit dem Einkommen.' }) }), einheit(2)]))).not.toMatch(/heutige Lage/)
   })
 
   it('verlangt, dass Zahlen im Text im Beleg stehen', () => {

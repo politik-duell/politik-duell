@@ -25,21 +25,21 @@ Je Thema:
 npm run -s nebenwirkungen:blind -- <ID> [--alle]
 ```
 
-Das Skript teilt die Lösungswege in Teile zu höchstens sechs, Wege zur selben Ursache möglichst im selben Teil (`.cache/nebenwirkungen/<ID>/teil-<n>.json`) – nur Name, Ebene und Begründung, keine Partei, kein Zitat – und bricht ab, wenn eine Begründung einen Parteibezug enthält. Jeder Teil enthält unter `quellen` die schon verwendeten Quellen des Themas. Es gibt je Teil den Auftrag aus.
+Das Skript teilt die Lösungswege in Teile zu höchstens sechs, Wege zur selben Ursache möglichst im selben Teil (ein Weg zu mehreren Ursachen dorthin, wo Platz ist; Teile mit dem Rest einer geteilten Gruppe am Ende) (`.cache/nebenwirkungen/<ID>/teil-<n>.json`) – nur Name, Ebene und Begründung, keine Partei, kein Zitat – und bricht ab, wenn eine Begründung einen Parteibezug enthält. Jeder Teil enthält unter `quellen` die schon verwendeten Quellen des Themas. Es gibt je Teil den Auftrag aus.
 
 ## 2. Recherche
 
-Je Teil ein Agent `nebenwirkungen-recherche` (ohne Parameter `model`), **in Wellen zu höchstens vier gleichzeitig** – mit sieben liefen die Limits über und Agenten brachen ab. Die erste Welle nimmt aus jedem Thema den ersten Teil. Nach dem Urteil (Schritt 3) über eine Welle:
+Je Teil ein Agent `nebenwirkungen-recherche` (ohne Parameter `model`), **in Wellen zu höchstens vier gleichzeitig** – mit sieben liefen die Limits über und Agenten brachen ab. Die Wellen folgen der Nummer der Teile (bei mehreren Themen nimmt die erste Welle aus jedem Thema den ersten Teil). Nach dem Urteil (Schritt 3) über eine Welle:
 
 ```bash
 npm run -s nebenwirkungen:blind -- <ID> --quellen
 ```
 
-übernimmt die Quellen der beurteilten Antworten in die noch offenen Teile (Prüfsumme bleibt) und gibt deren Aufträge aus; dann die nächste Welle. Auftrag nur die Zeile aus Schritt 1, ohne eigene Regeln – die stehen in der Agentendefinition:
+übernimmt die Quellen der beurteilten Antworten in die noch offenen Teile und unter `vergleich` deren Hinweise zu denselben Ursachen (Prüfsumme bleibt) und gibt deren Aufträge aus; dann die nächste Welle. Auftrag nur die Zeile aus Schritt 1, ohne eigene Regeln – die stehen in der Agentendefinition:
 
 > Recherchiere `.cache/nebenwirkungen/<ID>/teil-<n>.json`. Antwort in `.cache/nebenwirkungen/<ID>/protokoll/antwort-<n>.txt`, Prüfung mit `npm run -s nebenwirkungen:antwort-pruefen -- <ID> <n>`.
 
-Der Hook sperrt dem Agenten alles außer Teil-Liste, eigener Antwort, Selbstprüfung, PDF-Text (`npm run -s nebenwirkungen:pdf`) und Websuche (Parteiserver gesperrt). Die Selbstprüfung verlangt je Lösungsweg alle sechs Bereiche mit tatsächlich ausgeführten Suchen (Abgleich mit dem Transkript des Agenten, mindestens zwei verschiedene je Weg), jede Zahl des Textes auch im Beleg, selbst geöffnete Quellen, Belege, die wörtlich im Originaltext stehen (das Skript lädt ihn), bei Wegen zur selben Ursache ein Gegenstück oder einen Grund in `ohne`, höchstens drei Hinweise, einen wörtlichen, zusammenhängenden Beleg aus der Quelle (bei PDFs mit Seite, ohne Auslassungen), Belegstufe C nur mit zweiter Quelle; sie lehnt Parteiquellen und -namen, Presse- und Sekundärquellen, Haushalt unter einer Milliarde und Aufwand ohne Zahl ab.
+Der Hook sperrt dem Agenten alles außer Teil-Liste, eigener Antwort, Selbstprüfung, PDF-Text (`npm run -s nebenwirkungen:pdf`) und Websuche (Parteiserver gesperrt). Die Selbstprüfung verlangt je Lösungsweg alle sechs Bereiche mit tatsächlich ausgeführten Suchen (Abgleich mit dem Transkript des Agenten, mindestens zwei verschiedene je Weg), jede Zahl des Textes auch im Beleg, selbst geöffnete Quellen, Belege, die wörtlich im Originaltext stehen (das Skript lädt ihn), bei Wegen zur selben Ursache – auch aus `vergleich` – ein Gegenstück oder einen Grund in `ohne`, höchstens drei Hinweise, einen wörtlichen, zusammenhängenden Beleg aus der Quelle (bei PDFs mit Seite, ohne Auslassungen), Belegstufe C nur mit zweiter Quelle; sie lehnt Parteiquellen und -namen, Presse- und Sekundärquellen, Haushalt unter einer Milliarde, Aufwand ohne Zahl und die heutige Lage als Folge („setzt an dieser Verteilung an“) ab.
 
 ## 3. Urteil der Koordination (einmal, nach dem Prüfmuster in `../README.md`)
 
