@@ -172,6 +172,11 @@ Die Bilanz neigt zu Nachteilen, vor allem weil fast jeder Haushaltshinweis eine 
 15. **Zahlen im Text stehen im Beleg** (in vier von acht Teilen ein Rückfragegrund): sonst Fehler. Jahre nur als Warnung, weil sie oft Kontext sind („Bundesverkehrswegeplan 2030“).
 16. **„Zum Vergleich“ nur bei echter Haushaltsänderung:** Schichtet ein Weg nur um oder ändert er die Vergabe, ist das Programmvolumen keine Folge des Wegs. Diese Regel steht in der Agentendefinition, weil sie nicht prüfbar ist. Ebenso: Eine Evaluation im Auftrag eines Ministeriums ist Belegstufe B.
 
+**Messung Thema 10** (27 Wege, 25. 10. 2026, erster Lauf nach 14–16): 17 000 neu gelesene Tokens und 2,4 Suchen je Weg, 32 % Nacharbeit (nach Preis gewichtet 28 %). Zahlen ohne Beleg fing die Prüfung vor dem Urteil ab. Alle fünf Teile brauchten eine Rückfrage, zwei Gründe wiederholten sich – zusammen geschätzt die Hälfte der Nacharbeit:
+
+17. **Gleiche Maßstäbe über Teile hinweg** (etwa 10 % der Kosten): Ein Weg zu zwei Ursachen lag nur nach der ersten eingeteilt, eine Gruppe von sieben Wegen wurde geteilt – ähnliche Wege liefen parallel in verschiedenen Teilen. Die Rückfragen dazu kosteten fast nur das erneute Lesen des Verlaufs. Jetzt geht ein Weg zu mehreren Ursachen in die Gruppe mit Platz, Reste geteilter Gruppen kommen in spätere Wellen, und `--quellen` gibt offenen Teilen die Hinweise derselben Ursachen als `vergleich` mit; die Prüfung verlangt dazu Gegenstück oder Grund.
+18. **Lage statt Folge** (etwa 5–7 %): Dreimal stand eine Statistik zu den Betroffenen mit „der Weg setzt an dieser Verteilung an“ – die Agentendefinition nannte genau das als erlaubtes Beispiel. Jetzt Regel und Fehler der Prüfung. Drei ältere KI-Entwürfe in Thema 45 haben dieselbe Wendung; sie fallen beim nächsten Lauf mit `--alle`.
+
 **Erste Lehren:**
 
 - **Vorteile muss man aktiv suchen.** Zuerst fanden sich fast nur Nachteile bei fossilen und Vorteile bei erneuerbaren Lösungswegen. Erst gezielte Suche ergab die Gegenrichtung (Verteilung bei 6706, Haushalt bei 6707). Für die Recherche-Anleitung: je Lösungsweg ausdrücklich nach Vor- *und* Nachteilen in jedem Bereich fragen.

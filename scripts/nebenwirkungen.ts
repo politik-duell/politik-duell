@@ -67,7 +67,7 @@ export interface Einheit {
   ebene: 'bund' | 'land'
   /** Begründung der Bewertung – zeigt, was schon zur Wirkung auf das Thema gehört (und darum nicht hierher). */
   begruendung: string
-  /** Erste Ursache des Wegs (1 = erste in `ursachen`): Wege zur selben Ursache brauchen gleiche Maßstäbe. */
+  /** Ursache, nach der der Weg eingeteilt ist (1 = erste in `ursachen`): Wege zur selben Ursache brauchen gleiche Maßstäbe. */
   ursache?: number
 }
 
@@ -86,6 +86,16 @@ export interface NebenBlindliste {
    * dieselbe Quelle nutzen. Nicht in der Prüfsumme – `nebenwirkungen:blind -- <ID> --quellen` ergänzt offene Teile.
    */
   quellen: Quelle[]
+  /**
+   * Hinweise beurteilter Wege zu denselben Ursachen aus anderen Teilen (gleiche Maßstäbe über Teile hinweg; in Thema 10
+   * kosteten zwei Rückfragen nur dafür ein Viertel der Nacharbeit). Nicht in der Prüfsumme – ergänzt von `--quellen`.
+   */
+  vergleich?: Vergleich[]
+}
+
+export interface Vergleich extends Quelle {
+  id: number
+  ursache: number
 }
 
 export interface Quelle {
@@ -109,9 +119,9 @@ export interface NebenAntwort {
 }
 
 /** Lösungswege eines Themas: genutzte Instrumente und Maßnahmen ohne Instrument. `alle`: auch schon erfasste KI-Entwürfe. */
-export function einheitenDesThemas(k: Katalog, themaId: number, alle = false): (Einheit & { nebenwirkungen?: Nebenwirkungen; ursache: number })[] {
+export function einheitenDesThemas(k: Katalog, themaId: number, alle = false): (Einheit & { nebenwirkungen?: Nebenwirkungen; ursache: number; ursachen: number[] })[] {
   const massnahmen = k.massnahmen.filter((m) => m.thema_id === themaId)
-  const ersteUrsache = (ms: typeof massnahmen) => Math.min(...ms.flatMap((m) => m.ursachen_ids))
+  const ursachenVon = (ms: typeof massnahmen) => [...new Set(ms.flatMap((m) => m.ursachen_ids))].sort((a, b) => a - b)
   const instrumente = k.instrumente
     .filter((i) => i.thema_id === themaId && massnahmen.some((m) => m.instrument_id === i.id))
     .map((i) => ({
@@ -120,11 +130,12 @@ export function einheitenDesThemas(k: Katalog, themaId: number, alle = false): (
       ebene: (massnahmen.find((m) => m.instrument_id === i.id)?.land ? 'land' : 'bund') as Einheit['ebene'],
       begruendung: i.begruendung,
       nebenwirkungen: i.nebenwirkungen,
-      ursache: ersteUrsache(massnahmen.filter((m) => m.instrument_id === i.id)),
+      ursache: ursachenVon(massnahmen.filter((m) => m.instrument_id === i.id))[0],
+      ursachen: ursachenVon(massnahmen.filter((m) => m.instrument_id === i.id)),
     }))
   const einzeln = massnahmen
     .filter((m) => m.instrument_id === undefined)
-    .map((m) => ({ id: m.id, name: m.beschreibung, ebene: (m.land ? 'land' : 'bund') as Einheit['ebene'], begruendung: m.begruendung, nebenwirkungen: m.nebenwirkungen, ursache: ersteUrsache([m]) }))
+    .map((m) => ({ id: m.id, name: m.beschreibung, ebene: (m.land ? 'land' : 'bund') as Einheit['ebene'], begruendung: m.begruendung, nebenwirkungen: m.nebenwirkungen, ursache: ursachenVon([m])[0], ursachen: ursachenVon([m]) }))
   // Menschlich geprüfte Hinweise werden nie ersetzt; KI-Entwürfe nur mit `alle`.
   return [...instrumente, ...einzeln]
     .filter((e) => !e.nebenwirkungen || (alle && e.nebenwirkungen.ki_entwurf))
@@ -139,6 +150,18 @@ export function quellenAus(hinweise: Quelle[]): Quelle[] {
   return hinweise.filter((h) => !gesehen.has(h.quelle_url) && gesehen.add(h.quelle_url)).map(({ bereich, text, quelle_url }) => ({ bereich, text, quelle_url }))
 }
 
+/** Hinweise beurteilter Teile als Vergleich für offene Teile – nur zu Ursachen, die der offene Teil auch hat. */
+export function vergleichFuer(offen: NebenBlindliste, fertig: { liste: NebenBlindliste; antwort: NebenAntwort }[]): Vergleich[] {
+  const ursachen = new Set(offen.einheiten.map((e) => e.ursache))
+  return fertig.flatMap(({ liste, antwort }) =>
+    antwort.einheiten.flatMap((e) => {
+      const ursache = liste.einheiten.find((x) => x.id === e.id)?.ursache
+      if (ursache === undefined || !ursachen.has(ursache)) return []
+      return e.bereiche.flatMap((b) => (b.hinweis ? [{ id: e.id, ursache, bereich: b.bereich, text: b.hinweis.text, quelle_url: b.hinweis.quelle_url }] : []))
+    }),
+  )
+}
+
 /** Quellen aus Antworten: alle Hinweise, die nach dem Urteil der Koordination stehen geblieben sind. */
 export const quellenDerAntworten = (antworten: NebenAntwort[]): Quelle[] =>
   quellenAus(antworten.flatMap((a) => a.einheiten.flatMap((e) => e.bereiche.flatMap((b) => (b.hinweis ? [{ bereich: b.bereich, text: b.hinweis.text, quelle_url: b.hinweis.quelle_url }] : [])))))
@@ -148,20 +171,45 @@ export const quellenDerAntworten = (antworten: NebenAntwort[]): Quelle[] =>
  * so von einem Agenten dieselben Maßstäbe (im ersten Lauf nach den Optimierungen lagen zwei Einkommensteuer-Wege
  * in verschiedenen Teilen, und nur einer bekam einen Verteilungshinweis). Gruppen über TEIL_GROESSE werden geteilt;
  * dicht gepackt entstehen kaum mehr Teile als bei fester Reihenfolge (alle Themen: 263 statt 257).
+ *
+ * Ein Weg zu mehreren Ursachen geht in die Gruppe, in der er noch Platz hat (erste Ursache zuerst): In Thema 10 lag
+ * ein Weg zu den Investitionskosten der Heime sonst bei den Eigenanteilen, und die übergroße Gruppe schob einen
+ * Vollversicherungsweg in einen fremden Teil. Teile mit dem Rest einer geteilten Gruppe kommen ans Ende, damit sie
+ * in eine spätere Welle fallen und über `vergleich` die Hinweise der ersten Stücke sehen.
  */
-export function teileNachUrsache<T extends { id: number; ursache: number }>(einheiten: T[]): T[][] {
+export function teileNachUrsache<T extends { id: number; ursache: number; ursachen?: number[] }>(einheiten: T[]): T[][] {
+  const groesse = new Map<number, number>()
+  for (const e of einheiten) if ((e.ursachen?.length ?? 1) <= 1) groesse.set(e.ursache, (groesse.get(e.ursache) ?? 0) + 1)
+  const zugeteilt = [...einheiten]
+    .sort((a, b) => a.id - b.id)
+    .map((e) => {
+      if ((e.ursachen?.length ?? 1) <= 1) return e
+      const ursache = e.ursachen!.find((u) => (groesse.get(u) ?? 0) < TEIL_GROESSE) ?? e.ursache
+      groesse.set(ursache, (groesse.get(ursache) ?? 0) + 1)
+      return { ...e, ursache }
+    })
   const gruppen = new Map<number, T[]>()
-  for (const e of [...einheiten].sort((a, b) => a.ursache - b.ursache || a.id - b.id)) gruppen.set(e.ursache, [...(gruppen.get(e.ursache) ?? []), e])
+  for (const e of zugeteilt.sort((a, b) => a.ursache - b.ursache || a.id - b.id)) gruppen.set(e.ursache, [...(gruppen.get(e.ursache) ?? []), e])
   // Große Gruppen in volle Teile; die Reste der Größe nach in den ersten Teil, in den sie passen.
-  const stuecke = [...gruppen.values()].flatMap((g) => Array.from({ length: Math.ceil(g.length / TEIL_GROESSE) }, (_, i) => g.slice(i * TEIL_GROESSE, (i + 1) * TEIL_GROESSE)))
-  const teile: T[][] = []
+  const stuecke = [...gruppen.values()].flatMap((g) =>
+    Array.from({ length: Math.ceil(g.length / TEIL_GROESSE) }, (_, i) => Object.assign(g.slice(i * TEIL_GROESSE, (i + 1) * TEIL_GROESSE), { rest: i > 0 })),
+  )
+  const teile: (T[] & { rest?: boolean })[] = []
   for (const stueck of stuecke.sort((a, b) => b.length - a.length || a[0].ursache - b[0].ursache)) {
     const platz = teile.find((t) => t.length + stueck.length <= TEIL_GROESSE)
-    if (platz) platz.push(...stueck)
-    else teile.push([...stueck])
+    if (platz) {
+      platz.push(...stueck)
+      platz.rest ||= stueck.rest
+    } else teile.push(Object.assign([...stueck], { rest: stueck.rest }))
   }
-  return teile
+  return [...teile.filter((t) => !t.rest), ...teile.filter((t) => t.rest)].map((t) => [...t])
 }
+
+/**
+ * Lage statt Folge: In Thema 10 standen dreimal eine Statistik zu den Betroffenen und „der Weg setzt an dieser
+ * Verteilung an“ – eine eigene Folgerung, die keine Folge belegt; alle drei wurden verworfen.
+ */
+const ANKNUEPFUNG = /\b(setz|knüpf)(t|en) (genau )?an dies\w* [^.;]*\ban\b/i
 
 /** Auslassung mitten im Beleg oder Einschub in eckigen Klammern; „…“ am Anfang oder Ende und vor der Seitenangabe bleibt erlaubt. */
 const AUSLASSUNG = /\[|\]|[\p{L}\p{N},;:.]\s*(…|\.\.\.)\s*(?!S\.\s*\d)[\p{L}\p{N}]/u
@@ -298,6 +346,8 @@ export function pruefeNebenAntwort(liste: NebenBlindliste, antwort: NebenAntwort
       else {
         if (h.text.length > 200) fehler.push(`${bOrt}: „text“ länger als 200 Zeichen`)
         if (ohneParteinamen(h.text, ctx.parteinamen) !== h.text) fehler.push(`${bOrt}: „text“ nennt eine Partei`)
+        if (ANKNUEPFUNG.test(h.text))
+          fehler.push(`${bOrt}: „text“ beschreibt die heutige Lage und knüpft den Weg nur daran an – ein Hinweis nennt, was der Weg verändert, sonst null`)
         if (x.bereich === 'haushalt' && !MILLIARDEN.test(h.text)) fehler.push(`${bOrt}: Haushalt nur ab Milliardenbeträgen („… Mrd. Euro“), sonst hinweis: null`)
         if (x.bereich === 'aufwand' && !/\d/.test(h.text)) fehler.push(`${bOrt}: Aufwand nur mit Größenordnung (Betrag, Stunden, Fälle), sonst hinweis: null`)
       }
@@ -339,9 +389,14 @@ export function pruefeNebenAntwort(liste: NebenBlindliste, antwort: NebenAntwort
       const mit = einheiten.find(
         (a) => a !== e && ursacheVon.get(a?.id) === ursacheVon.get(e.id) && (Array.isArray(a?.bereiche) ? a.bereiche : []).some((y) => y?.bereich === x?.bereich && y.hinweis),
       )
+      const anderswo = (liste.vergleich ?? []).find((v) => v.ursache === ursacheVon.get(e.id) && v.bereich === x?.bereich)
       if (mit)
         fehler.push(
           `Lösungsweg ${e.id} › ${x.bereich}: Lösungsweg ${mit.id} (gleiche Ursache) hat hier einen Hinweis – Gegenstück suchen (z. B. Kosten ↔ Einsparung) oder in „ohne“ kurz begründen, warum er hier nicht passt`,
+        )
+      else if (anderswo)
+        fehler.push(
+          `Lösungsweg ${e.id} › ${x.bereich}: Lösungsweg ${anderswo.id} (gleiche Ursache, anderer Teil, siehe „vergleich“) hat hier einen Hinweis – dieselbe Quelle prüfen oder in „ohne“ kurz begründen, warum er hier nicht passt`,
         )
     }
   }
