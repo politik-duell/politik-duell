@@ -1,6 +1,6 @@
 # Ablauf der Skills und Agenten
 
-Die Skills bauen den Katalog für die **geschlossene Testphase** auf: alles als KI-Entwurf mit KI-Freigabe (`"freigabe": { "art": "ki" }`), ohne menschliche Prüfschritte unterwegs. Menschen prüfen danach (Bewertung in der App, Belegprüfung, blinde Einordnung der Haltungen – `daten/README.md` → „Prüfung“); erst dann wird etwas öffentlich.
+Die Skills bauen den Katalog für die **Alpha-/Beta-Phase** auf: alles als KI-Entwurf mit KI-Freigabe (`"freigabe": { "art": "ki" }`), ohne menschliche Prüfschritte unterwegs. Menschen prüfen danach (Bewertung in der App, Belegprüfung, blinde Einordnung der Haltungen – `daten/README.md` → „Prüfung“). Bis dahin zählen die Entwürfe mit Hinweis am Ergebnis (CLAUDE.md, Grundprinzip 2).
 
 ```mermaid
 flowchart TD

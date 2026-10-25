@@ -424,6 +424,18 @@ pg_cron erst später aktiviert: im SQL Editor `select cron.schedule('review_eing
 Prüfen: In der App eine Haltung eingeben (etwa „Ich finde, Familie ist das Wichtigste“) – in der Admin-Ansicht
 erscheint sie unter „Ohne Wertung“ im Wortlaut mit dem Grund „Haltung“.
 
+### 18. Beta: KI-Entwürfe für alle
+
+Grundprinzip 2 (`CLAUDE.md`): In der Alpha-/Beta-Phase zählen KI-Entwürfe auch ohne Zugangslink – mit Hinweis am Ergebnis.
+
+1. **Migration und Edge Function** spielt nach dem Merge GitHub Actions ein (`.github/workflows/supabase.yml`). Die Migration
+   legt `einstellungen` mit dem Schalter `ki_entwuerfe_oeffentlich` an – **aus**; es ändert sich noch nichts. Ohne die
+   Tabelle wertet die Edge Function wie bisher.
+2. **Einschalten**, wenn es so weit ist: `update public.einstellungen set ki_entwuerfe_oeffentlich = true;`
+   Dann lesen App und Edge Function die Entwürfe für alle; oben erscheint das Band „Beta“. Zurück mit `false`.
+3. **App öffnen:** In Vercel `VITE_OFFEN=true` setzen und neu bauen – sonst bleibt die Sperrseite für alle ohne Zugangslink.
+   Zugangslinks funktionieren weiter; Runden mit Zugang bleiben als `testphase` markiert.
+
 ## Nach Änderungen am Code
 
 `npm run dashboard` erzeugt `supabase/seed.sql`, die Teile in `supabase/seed-teile/` und die Dateien in

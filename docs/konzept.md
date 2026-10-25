@@ -64,7 +64,7 @@ massnahmen (
   evidenz text,                       -- belegt | gemischt | offen
   stand date,
   geprueft boolean default false,
-  ki_entwurf boolean default false    -- nur mit Zugang zur geschlossenen Testphase sichtbar
+  ki_entwurf boolean default false    -- sichtbar mit Zugang zur Testphase oder bei einstellungen.ki_entwuerfe_oeffentlich
 )
 
 instrumente (id, thema_id, name, begruendung, evidenz, beleg_studie_url, ebene, entspricht, ki_entwurf)

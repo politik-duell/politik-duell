@@ -634,13 +634,13 @@ function Inhalt({ daten }: { daten: Daten }) {
   const s = statistik(daten)
   const themen = themenStand(daten)
   const haltungen = haltungStand(daten)
-  const testphase = !!daten.testphase
+  const testphase = !!daten.testphase || !!daten.beta
   return (
     <>
       {testphase && (
         <p className="recht-warnung">
-          Geschlossene Testphase: Die Zahlen enthalten vorläufige KI-Entwürfe, die noch nicht von Menschen geprüft
-          sind. In der öffentlichen App zählen nur geprüfte Einträge.
+          {daten.testphase ? 'Geschlossene Testphase' : 'Beta'}: Die Zahlen enthalten vorläufige KI-Entwürfe, die noch
+          nicht von Menschen geprüft sind. Sie zählen im Spiel mit Hinweis am Ergebnis.
         </p>
       )}
       <h2>So ist die Datengrundlage aufgebaut</h2>

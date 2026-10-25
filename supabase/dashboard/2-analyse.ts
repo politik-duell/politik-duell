@@ -1130,12 +1130,13 @@ Deno.serve(async (req) => {
     const ursachen = ursachenRes.data;
     const parteien = parteienRes.data;
     const testphase = anfrage.zugang ? await zugangGueltig(anfrage.zugang) : false;
-    const themen = mitSymptomen(themenRes.data, testphase);
+    const entwuerfe = testphase || await entwuerfeOeffentlich();
+    const themen = mitSymptomen(themenRes.data, entwuerfe);
     let antwort;
     if (anfrage.auswahl) {
       antwort = antwortAusAuswahl(anfrage.auswahl, themen, ursachen);
     } else {
-      const haltungen = await vollstaendigeHaltungen(testphase);
+      const haltungen = await vollstaendigeHaltungen(entwuerfe);
       antwort = (await ordneEin(frageMistral2, anfrage.verlauf, anfrage.seiten.map((s) => s.rolle), {
         themen,
         ursachen,
@@ -1145,12 +1146,12 @@ Deno.serve(async (req) => {
     }
     if (antwort.typ === "forderung" && !antwort.pauschal && antwort.thema_id !== null) {
       const thema = themen.find((t) => t.id === antwort.thema_id);
-      if (thema) antwort = mitInstrument(antwort, await erkenneInstrument(thema, anfrage.verlauf, anfrage.seiten.map((s) => s.land), testphase));
+      if (thema) antwort = mitInstrument(antwort, await erkenneInstrument(thema, anfrage.verlauf, anfrage.seiten.map((s) => s.land), entwuerfe));
     }
     const vorschlag = !anfrage.auswahl && antwort.typ === "problem" && antwort.ursachen_ids.length > 0;
     if (!antwort.nachfrage && !vorschlag) {
       const original = anfrage.verlauf.filter((n) => n.von === "spieler").map((n) => n.text);
-      await speichereRunde(antwort, anfrage.parteien, anfrage.seiten, testphase, original, parteien, ursachen);
+      await speichereRunde(antwort, anfrage.parteien, anfrage.seiten, testphase, entwuerfe, original, parteien, ursachen);
     }
     return json(antwort);
   } catch (e) {
@@ -1163,11 +1164,11 @@ Deno.serve(async (req) => {
     }, 502);
   }
 });
-async function erkenneInstrument(thema, verlauf, laender, testphase) {
+async function erkenneInstrument(thema, verlauf, laender, entwuerfe) {
   try {
     let iAbfrage = db.from("instrumente").select("id, thema_id, name, ebene").eq("thema_id", thema.id);
     let mAbfrage = db.from("massnahmen").select("instrument_id, land").eq("thema_id", thema.id).not("instrument_id", "is", null);
-    if (!testphase) {
+    if (!entwuerfe) {
       iAbfrage = iAbfrage.eq("ki_entwurf", false);
       mAbfrage = mAbfrage.eq("ki_entwurf", false);
     }
@@ -1186,10 +1187,10 @@ async function erkenneInstrument(thema, verlauf, laender, testphase) {
     return null;
   }
 }
-async function vollstaendigeHaltungen(testphase) {
+async function vollstaendigeHaltungen(entwuerfe) {
   try {
     let vAbfrage = db.from("haltungen_vollstaendig").select("haltung_id");
-    if (!testphase) vAbfrage = vAbfrage.eq("geprueft", true);
+    if (!entwuerfe) vAbfrage = vAbfrage.eq("geprueft", true);
     const [vRes, hRes] = await Promise.all([
       vAbfrage,
       db.from("haltungen").select("id, frage").order("id")
@@ -1203,18 +1204,23 @@ async function vollstaendigeHaltungen(testphase) {
     return [];
   }
 }
-function mitSymptomen(themen, testphase) {
+function mitSymptomen(themen, entwuerfe) {
   return themen.map((t) => ({
     ...t,
-    symptome: (t.symptome ?? []).filter((s) => testphase || !s.ki_entwurf)
+    symptome: (t.symptome ?? []).filter((s) => entwuerfe || !s.ki_entwurf)
   }));
+}
+async function entwuerfeOeffentlich() {
+  const { data, error } = await db.from("einstellungen").select("ki_entwuerfe_oeffentlich").maybeSingle();
+  if (error) return false;
+  return data?.ki_entwuerfe_oeffentlich === true;
 }
 async function zugangGueltig(token) {
   const { data, error } = await db.from("testphase_zugaenge").select("id").eq("token_hash", await tokenHash(token)).eq("gesperrt", false).maybeSingle();
   if (error) throw error;
   return data !== null;
 }
-async function speichereRunde(antwort, [parteiA, parteiB], seiten, testphase, original, parteien, ursachen) {
+async function speichereRunde(antwort, [parteiA, parteiB], seiten, testphase, entwuerfe, original, parteien, ursachen) {
   if (antwort.typ === "grenze") {
     await Promise.all([
       db.from("runden").insert({
@@ -1298,7 +1304,7 @@ async function speichereRunde(antwort, [parteiA, parteiB], seiten, testphase, or
     parteiA,
     parteiB
   ]);
-  if (!testphase) {
+  if (!entwuerfe) {
     mAbfrage = mAbfrage.eq("ki_entwurf", false);
     aAbfrage = aAbfrage.eq("ki_entwurf", false);
   }
