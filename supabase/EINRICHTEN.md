@@ -428,14 +428,12 @@ erscheint sie unter „Ohne Wertung“ im Wortlaut mit dem Grund „Haltung“.
 
 Grundprinzip 2 (`CLAUDE.md`): In der Alpha-/Beta-Phase zählen KI-Entwürfe auch ohne Zugangslink – mit Hinweis am Ergebnis.
 
-1. **Edge Function aktualisieren** (zuerst): Code der Funktion `analyse` durch
-   [`supabase/dashboard/2-analyse.ts`](https://github.com/politik-duell/politik-duell/blob/main/supabase/dashboard/2-analyse.ts) ersetzen → **Deploy**.
-   Ohne die Tabelle aus Schritt 2 wertet sie wie bisher.
-2. **Datenbank ergänzen:** [`supabase/migrations/20261025000000_ki_entwuerfe_oeffentlich.sql`](https://github.com/politik-duell/politik-duell/blob/main/supabase/migrations/20261025000000_ki_entwuerfe_oeffentlich.sql)
-   im SQL Editor ausführen. Legt `einstellungen` mit dem Schalter `ki_entwuerfe_oeffentlich` an – **aus**. Es ändert sich noch nichts.
-3. **Einschalten**, wenn es so weit ist: `update public.einstellungen set ki_entwuerfe_oeffentlich = true;`
+1. **Migration und Edge Function** spielt nach dem Merge GitHub Actions ein (`.github/workflows/supabase.yml`). Die Migration
+   legt `einstellungen` mit dem Schalter `ki_entwuerfe_oeffentlich` an – **aus**; es ändert sich noch nichts. Ohne die
+   Tabelle wertet die Edge Function wie bisher.
+2. **Einschalten**, wenn es so weit ist: `update public.einstellungen set ki_entwuerfe_oeffentlich = true;`
    Dann lesen App und Edge Function die Entwürfe für alle; oben erscheint das Band „Beta“. Zurück mit `false`.
-4. **App öffnen:** In Vercel `VITE_OFFEN=true` setzen und neu bauen – sonst bleibt die Sperrseite für alle ohne Zugangslink.
+3. **App öffnen:** In Vercel `VITE_OFFEN=true` setzen und neu bauen – sonst bleibt die Sperrseite für alle ohne Zugangslink.
    Zugangslinks funktionieren weiter; Runden mit Zugang bleiben als `testphase` markiert.
 
 ## Nach Änderungen am Code
