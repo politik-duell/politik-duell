@@ -1410,6 +1410,40 @@ textarea {
   font-size: 0.85rem;
   color: var(--warnung-text);
 }
+.katalog-link {
+  padding: 0;
+  font: inherit;
+  color: var(--akzent-text);
+  text-align: left;
+  text-decoration: underline;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+.katalog-wege {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.katalog-parteien {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
+.katalog-partei {
+  padding: 1px 8px;
+  font-size: 0.8rem;
+  color: var(--text);
+  text-decoration: none;
+  background: var(--flaeche-2);
+  border-radius: 999px;
+}
+.katalog-partei:hover {
+  text-decoration: underline;
+}
 .admin-aktionen {
   display: flex;
   flex-wrap: wrap;
