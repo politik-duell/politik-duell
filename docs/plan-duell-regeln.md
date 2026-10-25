@@ -1,6 +1,6 @@
 # Plan: Duell-Regeln – gleichauf, Bundesland je Partie, Teilen ohne Parteistand
 
-Stand: 25. 10. 2026 · Plan, nichts umgesetzt. Entscheidungen der Betreiberin vom 25. 10. 2026; Zahlen, die mit **Vorschlag** markiert sind, sind noch zu bestätigen.
+Stand: 25. 10. 2026 · Umgesetzt: Bundesland je Partie (2) und Teilen ohne Parteistand (3). Offen: Schwelle für „gleichauf“ (1), Auswertung unten. Entscheidungen der Betreiberin vom 25. 10. 2026; Zahlen, die mit **Vorschlag** markiert sind, sind noch zu bestätigen.
 
 ## Anlass
 
@@ -21,6 +21,25 @@ Wo der Abstand nicht trägt, ruft das Spiel keinen Sieger aus: Beide bekommen de
 - **Endstand** bleibt die Summe der Rundenpunkte; die Regel wirkt nur je Runde.
 
 Das ist eine Änderung der Methode: Die Rundenpunkte werden auch in der Edge Function berechnet und in `runden` gespeichert. **Vor dem Umschalten an den Daten rechnen:** über alle Themen, Ursachen und Parteipaare, wie oft aus einem Sieg „gleichauf“ wird – und ob das alle Parteien ähnlich trifft. Das Ergebnis kommt mit der Änderung in `docs/methode.md`.
+
+### Auswertung (25. 10. 2026)
+
+`node --experimental-strip-types scripts/gleichauf-auswertung.ts [--themen]` – alle 45 Themen, je Einzelursache und je Symptomgruppe, alle Parteipaare, ohne Rolle, Bund sowie BE, MV, ST (469 Ursachensätze), mit KI-Entwürfen (noch nichts geprüft). Eine Stufe gilt je Bewertungsteil – Instrument (für alle Parteien, die es haben) oder Maßnahme ohne Instrument.
+
+| Regel | Siege, die „gleichauf“ werden (von 7 367) | Gleichstände insgesamt (heute 12 %) |
+| --- | --- | --- |
+| **A:** eine Stufe höher bei der unterlegenen Partei | 2 203 (30 %) | 39 % |
+| **B:** wie A, oder eine Stufe niedriger bei der führenden | 3 444 (47 %) | 53 % |
+| Abstand ≤ 1 Punkt | 1 177 (16 %) | 26 % |
+| Abstand ≤ 2 Punkte | 2 603 (35 %) | 43 % |
+| Abstand ≤ 10 % der höheren Summe | 377 (5 %) | 17 % |
+| Abstand ≤ 20 % der höheren Summe | 1 046 (14 %) | 25 % |
+
+„Beste Lösung insgesamt“ nennt heute im Schnitt 1,6 Parteien je Runde, mit A 2,9, mit B 3,2.
+
+Je Partei (Regel A): Von den Siegen werden 26 % (Grüne) bis 35 % (BSW) gleichauf; von den Niederlagen 22 % (AfD) bis 40 % (SPD, Grüne). Absolut gewinnt jede Partei ähnlich viele Punkte dazu (273 Grüne bis 347 SPD), die Regel staucht also vor allem die Abstände. Wo eine Partei gar keine Maßnahme hat, kann keine Stufe den Abstand schließen – deshalb der niedrige Wert bei den Niederlagen der AfD. Je Thema reicht der Anteil von 6 % (Schutz im Krisen- und Kriegsfall) bis 57 % (Abwanderung).
+
+**Einschätzung:** Die Regel mit einer Stufe ist methodisch am besten begründet, macht aber fast vier von zehn Runden zum Gleichstand; das schwächt den Duellcharakter deutlich. Eine feste Schwelle ist leichter zu erklären („weniger als 1 Punkt Abstand“), aber nicht aus dem Prüfverfahren abgeleitet.
 
 ## 2. Bundesland je Partie
 
@@ -61,4 +80,4 @@ Neu – die Themen der Partie und eine Einladung, ohne Parteien, Punkte und Eing
 
 ## Offen
 
-1. **Zahl bestätigen:** eine Stufe als Grenze für „gleichauf“ – nach der Auswertung an den Daten.
+1. **Schwelle wählen** (Auswertung oben), dann `werteRunde`, `besteParteien` und Anzeige umsetzen und Edge Function `analyse` neu ausrollen.

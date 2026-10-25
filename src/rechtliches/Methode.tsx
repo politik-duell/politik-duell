@@ -212,9 +212,9 @@ export function Methode() {
         </li>
         <li>Die höhere Summe bekommt den Spielpunkt, bei Gleichstand beide.</li>
         <li>
-          Wählst du ein Bundesland, zählt bei Ursachen, für die vor allem die Länder zuständig sind (etwa Lehrkräfte oder
+          Wählt ihr ein Bundesland für die Partie, zählt für beide Parteien bei Ursachen, für die vor allem die Länder zuständig sind (etwa Lehrkräfte oder
           Schulgebäude), das Wahlprogramm der Partei zur letzten Landtagswahl, sonst das Bundesprogramm. Je Partei und
-          Ursache zählt immer genau ein Programm. Ist eine Partei in deinem Land nicht angetreten, wird die Runde nicht
+          Ursache zählt immer genau ein Programm. Ist eine Partei in eurem Land nicht angetreten, wird die Runde nicht
           gewertet. Das Bundesland wird nicht gespeichert.
         </li>
         <li>
