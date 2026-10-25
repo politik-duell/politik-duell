@@ -43,7 +43,12 @@
       "begruendung": "Automatische Gewährung erhöht die Inanspruchnahme laut Forschung deutlich, Verwaltungshürden senken sie. Dagegen: Datenaustausch und IT brauchen mehrere Jahre, bei bereits hoch genutzten Leistungen wie Kindergeld ist der Zugewinn klein.",
       "evidenz": "belegt",
       "beleg_studie_url": "https://www.nber.org/papers/w10488",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-25",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8614,
@@ -53,7 +58,12 @@
       "begruendung": "Experimente zeigen: Information erhöht die Inanspruchnahme, mit Antragshilfe noch stärker. Dagegen: Effekte bleiben begrenzt und erreichen die Bedürftigsten schlechter.",
       "evidenz": "belegt",
       "beleg_studie_url": "https://www.nber.org/papers/w24652",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-25",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8615,
@@ -62,7 +72,20 @@
       "umsetzbarkeit": 3,
       "begruendung": "Sichert die Kaufkraft und verhindert, dass Regelsätze hinter der Inflation zurückbleiben. Dagegen: Eine Fortschreibung besteht bereits; die Lücke durch die Bemessung selbst bleibt unberührt.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-25",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Zum Vergleich: Die Fortschreibung der Regelbedarfsstufen 2023 kostete in der Grundsicherung für Arbeitsuchende rund 2,98 Mrd. Euro mehr; nicht die Kosten dieses Wegs.",
+            "quelle_url": "https://dserver.bundestag.de/btd/20/038/2003873.pdf",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8616,
@@ -71,7 +94,12 @@
       "umsetzbarkeit": 3,
       "begruendung": "Entlastet erwerbstätige Alleinerziehende, als Abzug von der Steuerschuld stärker bei kleinen Einkommen. Dagegen: Wer kaum Steuern zahlt, etwa im Grundsicherungsbezug, profitiert ohne Auszahlung kaum.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-25",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8617,
@@ -80,7 +108,27 @@
       "umsetzbarkeit": 3,
       "begruendung": "Erhöht das Einkommen von Familien mit kleinen Einkommen im ersten Lebensjahr. Dagegen: zeitlich begrenzt und bei Grundsicherungsbezug weitgehend angerechnet.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-25",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Zum Vergleich: Der Bundeshaushalt 2024 sieht für das Elterngeld 7,99 Milliarden Euro vor; das sind nicht die Kosten dieses Wegs.",
+            "quelle_url": "https://www.bundestag.de/dokumente/textarchiv/2024/kw05-de-familie-senioren-frauen-jugend-977696",
+            "belegstufe": "A"
+          },
+          {
+            "bereich": "wirtschaft",
+            "richtung": "gemischt",
+            "text": "Laut Elterngeld-Evaluation sank die Erwerbsquote von Müttern im ersten Lebensjahr des Kindes um rund 2 Prozentpunkte; im zweiten stieg sie bei Müttern mit niedrigen Einkommen um 2,5 Prozentpunkte.",
+            "quelle_url": "https://www.diw.de/de/diw_01.c.400011.de/projekte/elterngeld_monitor.html",
+            "belegstufe": "B"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8618,
@@ -89,7 +137,20 @@
       "umsetzbarkeit": 2,
       "begruendung": "Höheres Kindergeld erreicht alle Familien. Dagegen: Es wird auf die Grundsicherung angerechnet und senkt Armutsrisiken laut Evaluationen daher nur wenig; teuer bei geringer Zielgenauigkeit.",
       "evidenz": "gemischt",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-25",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Zum Vergleich: Die Kindergelderhöhung um 5 Euro 2025 senkt laut Gesetzentwurf die Steuereinnahmen 2025 insgesamt um 1.090 Mio. Euro, also über 1 Mrd. Euro; das sind nicht die Kosten dieses Wegs.",
+            "quelle_url": "https://dserver.bundestag.de/btd/20/127/2012778.pdf",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8619,
@@ -98,7 +159,20 @@
       "umsetzbarkeit": 2,
       "begruendung": "Erhöht die Leistung für Alleinerziehende ohne Unterhalt. Dagegen: Im Grundsicherungsbezug wird der Unterhaltsvorschuss angerechnet, der Zugewinn kommt nur Haushalten oberhalb davon zugute.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-25",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Zum Vergleich: Für den Unterhaltsvorschuss sind im Haushalt 2024 1,4 Milliarden Euro eingeplant; das sind nicht die Kosten dieses Wegs.",
+            "quelle_url": "https://www.bundestag.de/dokumente/textarchiv/2024/kw05-de-familie-senioren-frauen-jugend-977696",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8620,
@@ -107,7 +181,12 @@
       "umsetzbarkeit": 2,
       "begruendung": "Deckt Mehrkosten, wenn Kinder in zwei Haushalten leben, und schließt so eine Lücke für Trennungsfamilien. Dagegen: betrifft eine begrenzte Gruppe, Ausgestaltung offen.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-10-25",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     }
   ],
   "abdeckung": [
@@ -156,7 +235,12 @@
           "evidenz": "gemischt",
           "stand": "2026-10-10",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-25",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 8624,
@@ -221,7 +305,12 @@
           "evidenz": "offen",
           "stand": "2026-10-10",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-25",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 8629,
@@ -236,7 +325,12 @@
           "evidenz": "gemischt",
           "stand": "2026-10-10",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-25",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 8630,
@@ -285,7 +379,12 @@
           "evidenz": "belegt",
           "stand": "2026-10-10",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-25",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 8634,
@@ -300,7 +399,12 @@
           "evidenz": "offen",
           "stand": "2026-10-10",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-25",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 8635,
@@ -327,7 +431,27 @@
           "evidenz": "belegt",
           "stand": "2026-10-10",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-25",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Der Gesetzentwurf rechnet mit Mehrausgaben von rund 1,95 Mrd. Euro für 2025, die je nach Inanspruchnahme bis 2028 auf bis zu 5,93 Mrd. Euro wachsen können.",
+                "quelle_url": "https://dserver.bundestag.de/btd/20/090/2009092.pdf",
+                "belegstufe": "A"
+              },
+              {
+                "bereich": "aufwand",
+                "richtung": "gemischt",
+                "text": "Laut Normenkontrollrat: Bund jährlich rund 408,6 Mio. Euro mehr Erfüllungsaufwand, Länder rund 20,0 Mio. Euro und Wirtschaft rund 4,0 Mio. Euro weniger; die Verwaltungsangaben seien unvollständig.",
+                "quelle_url": "https://dserver.bundestag.de/btd/20/090/2009092.pdf",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 8637,
@@ -364,7 +488,12 @@
           "evidenz": "offen",
           "stand": "2026-10-10",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-25",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 8640,
@@ -390,7 +519,12 @@
           "evidenz": "offen",
           "stand": "2026-10-10",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-25",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         }
       ]
     },
@@ -422,7 +556,12 @@
           "evidenz": "offen",
           "stand": "2026-10-10",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-25",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 8644,
@@ -437,7 +576,12 @@
           "evidenz": "offen",
           "stand": "2026-10-10",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-25",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         }
       ]
     },
@@ -469,7 +613,12 @@
           "evidenz": "offen",
           "stand": "2026-10-10",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-25",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 8647,
@@ -484,7 +633,20 @@
           "evidenz": "gemischt",
           "stand": "2026-10-10",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-25",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Zum Vergleich (nicht die Kosten dieses Wegs): Für das frühere Betreuungsgeld waren im Bundeshaushalt Ausgaben von einer Milliarde Euro vorgesehen.",
+                "quelle_url": "https://www.bundestag.de/webarchiv/presse/hib/2014_10/333698-333698",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 8648,
@@ -499,7 +661,12 @@
           "evidenz": "offen",
           "stand": "2026-10-10",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-25",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 8649,
@@ -514,7 +681,12 @@
           "evidenz": "offen",
           "stand": "2026-10-10",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-25",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 8650,
@@ -546,7 +718,12 @@
           "evidenz": "gemischt",
           "stand": "2026-10-10",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-25",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 8652,
@@ -561,7 +738,12 @@
           "evidenz": "offen",
           "stand": "2026-10-10",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-25",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 8653,
@@ -576,7 +758,20 @@
           "evidenz": "offen",
           "stand": "2026-10-10",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-25",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Zum Vergleich: Für Leistungen nach dem Asylbewerberleistungsgesetz gaben staatliche Stellen 2025 insgesamt 6,2 Milliarden Euro brutto aus; das sind nicht die Kosten dieses Wegs.",
+                "quelle_url": "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Soziales/Asylbewerberleistungen/_inhalt.html",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 8654,
@@ -592,7 +787,27 @@
           "evidenz": "belegt",
           "stand": "2026-10-10",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-25",
+            "hinweise": [
+              {
+                "bereich": "haushalt",
+                "richtung": "nachteil",
+                "text": "Zum Vergleich: Der Regierungsentwurf einer Kindergrundsicherung rechnet für 2025 mit Mehrausgaben von rund 1,95 Mrd. Euro, bis 2028 mit bis zu 5,93 Mrd. Euro; nicht die Kosten dieses Wegs.",
+                "quelle_url": "https://dserver.bundestag.de/btd/20/090/2009092.pdf",
+                "belegstufe": "A"
+              },
+              {
+                "bereich": "aufwand",
+                "richtung": "gemischt",
+                "text": "Zum Vergleich: Beim Regierungsentwurf einer Kindergrundsicherung nennt der NKR jährlich 408,6 Mio. Euro für den Bund, -20,0 Mio. Euro für Länder, -4,0 Mio. Euro für Wirtschaft; nicht dieser Weg.",
+                "quelle_url": "https://dserver.bundestag.de/btd/20/090/2009092.pdf",
+                "belegstufe": "A"
+              }
+            ],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 8655,
@@ -640,7 +855,12 @@
           "evidenz": "offen",
           "stand": "2026-10-10",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-25",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 8659,
@@ -655,7 +875,12 @@
           "evidenz": "offen",
           "stand": "2026-10-10",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-25",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 8660,
@@ -687,7 +912,12 @@
           "evidenz": "offen",
           "stand": "2026-10-10",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-25",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         },
         {
           "id": 8662,
@@ -713,7 +943,12 @@
           "evidenz": "offen",
           "stand": "2026-10-10",
           "geprueft": false,
-          "ki_entwurf": true
+          "ki_entwurf": true,
+          "nebenwirkungen": {
+            "geprueft": "2026-10-25",
+            "hinweise": [],
+            "ki_entwurf": true
+          }
         }
       ]
     }
