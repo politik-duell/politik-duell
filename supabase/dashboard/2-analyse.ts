@@ -298,16 +298,6 @@ function bereinigeStichwort(roh, ersatz) {
 }
 
 // _shared/typen.ts
-var ROLLEN_IDS = [
-  "mieter",
-  "eigentuemer",
-  "angestellt",
-  "selbststaendig",
-  "rentner",
-  "arbeitslos",
-  "studierend",
-  "vermoegend"
-];
 var MAX_AUSWAHL = 3;
 function auswahlErlaubt(ids, gruppe) {
   return ids.filter((id) => !gruppe?.ursachen_ids.includes(id)).length <= MAX_AUSWAHL;
@@ -320,16 +310,6 @@ var MAX_TEXTLAENGE = 500;
 var NACHFRAGE_BEISPIEL = "Magst du ein Beispiel nennen, wann dich das zuletzt betroffen hat?";
 var NACHFRAGE_FORDERUNG = "Was soll sich dadurch in deinem Alltag \xE4ndern?";
 var NACHFRAGE_URSACHE = "Was genau macht dir dabei Sorgen? Beschreib kurz, woran es in deinem Alltag hakt.";
-var ROLLEN_TEXT = {
-  mieter: "Mieter:in",
-  eigentuemer: "Eigent\xFCmer:in",
-  angestellt: "Angestellt",
-  selbststaendig: "Selbstst\xE4ndig",
-  rentner: "Rentner:in",
-  arbeitslos: "Arbeitslos",
-  studierend: "Studierend",
-  vermoegend: "Verm\xF6gend"
-};
 function themenPrompt(themen, haltungen = []) {
   return baueSystemPrompt(themen, null, haltungen);
 }
@@ -599,8 +579,8 @@ function genanntesSymptom(schritt2, thema) {
   const nr = alsObjekt(schritt2).symptom;
   return Number.isInteger(nr) ? thema.symptome?.find((s) => s.nr === nr) : void 0;
 }
-async function ordneEin(frage, verlauf, rolle, { themen, ursachen, parteien = [], haltungen = [] }, zufall = Math.random) {
-  const r1 = alsObjekt(await frage(themenPrompt(themen, haltungen), nutzerNachrichten(verlauf, rolle)));
+async function ordneEin(frage, verlauf, { themen, ursachen, parteien = [], haltungen = [] }, zufall = Math.random) {
+  const r1 = alsObjekt(await frage(themenPrompt(themen, haltungen), nutzerNachrichten(verlauf)));
   let roh = {
     ...r1,
     ursachen_ids: []
@@ -679,24 +659,16 @@ function bereinigeAbweichung(satz, parteien) {
   if (text.length < 10 || text.length > 200 || text.includes("[Partei]") || pruefeText(text)) return null;
   return text;
 }
-function rollenHinweis(rolle) {
-  const text = (r) => r ? ROLLEN_TEXT[r] : "keine Angabe";
-  const rollen = [
-    ...new Set(Array.isArray(rolle) ? rolle : [
-      rolle
-    ])
-  ];
-  if (rollen.length === 1) return `Rolle der Person: ${text(rollen[0])}.`;
-  return `Die beiden Spielenden haben verschiedene Rollen angegeben (${rollen.map(text).join("; ")}); wer gerade schreibt, ist offen.`;
-}
-function nutzerNachrichten(verlauf, rolle) {
+function nutzerNachrichten(verlauf) {
   const nachfragen = verlauf.filter((n) => n.von === "ki").length;
-  const hinweis = rollenHinweis(rolle) + (nachfragen === 1 ? " Es wurde schon einmal nachgefragt: Falls du noch einmal nachfragst, frag anders als zuvor, z. B. nach einem konkreten Beispiel aus dem Alltag, und gib die Forderung nicht noch einmal wieder." : "") + (nachfragen >= MAX_NACHFRAGEN ? ' Es wurde bereits zweimal nachgefragt: Ordne jetzt abschlie\xDFend ein und stelle keine Nachfrage mehr. Bleibt es bei einer Forderung ohne Alltagsproblem, ordne sie als "forderung" ein und schreib in "rueckmeldung" 1\u20132 kurze S\xE4tze: die Forderung neutral aufgreifen, sagen, dass hier L\xF6sungen f\xFCr konkrete Alltagsprobleme gewertet werden, und zu einem solchen Problem einladen. W\xE4hle nur Ursachen, die sich aus dem Gesagten erkennen lassen.' : "");
+  const hinweis = ((nachfragen === 1 ? " Es wurde schon einmal nachgefragt: Falls du noch einmal nachfragst, frag anders als zuvor, z. B. nach einem konkreten Beispiel aus dem Alltag, und gib die Forderung nicht noch einmal wieder." : "") + (nachfragen >= MAX_NACHFRAGEN ? ' Es wurde bereits zweimal nachgefragt: Ordne jetzt abschlie\xDFend ein und stelle keine Nachfrage mehr. Bleibt es bei einer Forderung ohne Alltagsproblem, ordne sie als "forderung" ein und schreib in "rueckmeldung" 1\u20132 kurze S\xE4tze: die Forderung neutral aufgreifen, sagen, dass hier L\xF6sungen f\xFCr konkrete Alltagsprobleme gewertet werden, und zu einem solchen Problem einladen. W\xE4hle nur Ursachen, die sich aus dem Gesagten erkennen lassen.' : "")).trim();
   return [
-    {
-      role: "system",
-      content: hinweis
-    },
+    ...hinweis ? [
+      {
+        role: "system",
+        content: hinweis
+      }
+    ] : [],
     ...verlauf.map((n) => ({
       role: n.von === "spieler" ? "user" : "assistant",
       content: n.text
@@ -730,21 +702,17 @@ function pruefeAnfrage(roh) {
 function pruefeSeiten(a) {
   const roh = a.seiten === void 0 ? [
     {
-      rolle: a.rolle,
       land: a.land
     },
     {
-      rolle: a.rolle,
       land: a.land
     }
   ] : a.seiten;
   if (!Array.isArray(roh) || roh.length !== 2) throw new EingabeFehler("Ung\xFCltige Seiten.");
   const seiten = roh.map((s) => {
-    const { rolle, land } = s ?? {};
-    if (rolle !== null && rolle !== void 0 && !ROLLEN_IDS.includes(rolle)) throw new EingabeFehler("Ung\xFCltige Rolle.");
+    const { land } = s ?? {};
     if (land !== null && land !== void 0 && (typeof land !== "string" || !/^[A-Z]{2}$/.test(land))) throw new EingabeFehler("Ung\xFCltiges Bundesland.");
     return {
-      rolle: rolle ?? null,
       land: land ?? null
     };
   });
@@ -1137,7 +1105,7 @@ Deno.serve(async (req) => {
       antwort = antwortAusAuswahl(anfrage.auswahl, themen, ursachen);
     } else {
       const haltungen = await vollstaendigeHaltungen(entwuerfe);
-      antwort = (await ordneEin(frageMistral2, anfrage.verlauf, anfrage.seiten.map((s) => s.rolle), {
+      antwort = (await ordneEin(frageMistral2, anfrage.verlauf, {
         themen,
         ursachen,
         parteien,
@@ -1336,7 +1304,7 @@ async function speichereRunde(antwort, [parteiA, parteiB], seiten, testphase, en
   const [ea, eb] = [
     a,
     b
-  ].map((p, i) => bewertePartei(p, antwort.thema_id, antwort.ursachen_ids, seiten[i].rolle, massnahmen, abdeckung, {
+  ].map((p, i) => bewertePartei(p, antwort.thema_id, antwort.ursachen_ids, null, massnahmen, abdeckung, {
     land: seiten[i].land,
     ursachen,
     landesprogramme

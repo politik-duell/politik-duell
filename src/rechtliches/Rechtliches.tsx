@@ -129,8 +129,8 @@ function Datenschutz() {
 
       <h2>4. Deine Eingaben im Spiel</h2>
       <p>
-        Wenn du ein Problem eingibst oder einsprichst, schickt die App den Text zusammen mit der gewählten Rolle und den
-        beiden gewählten Parteien an unsere Funktion bei Supabase (Frankfurt). Diese bittet Mistral AI SAS (Paris,
+        Wenn du ein Problem eingibst oder einsprichst, schickt die App den Text zusammen mit den beiden gewählten Parteien
+        an unsere Funktion bei Supabase (Frankfurt). Diese bittet Mistral AI SAS (Paris,
         Frankreich) um eine Einordnung: Ist es ein Problem, eine Forderung oder eine Haltung, und zu welchem Thema
         gehört es? Die Punkte vergibt nicht die KI, sondern unsere feste Bewertungstabelle.
       </p>
@@ -150,7 +150,7 @@ function Datenschutz() {
         von der KI ohne Namen und persönliche Details formuliert), ein Stichwort, das zugeordnete Thema, die beiden
         gewählten Parteien, deren Punkte und der Zeitpunkt. Bleibt es bei einer Forderung oder Haltung, speichern wir
         statt Punkten nur die Nummer des erkannten Lösungswegs bzw. der erkannten Wertfrage aus unserem Katalog – nicht,
-        welche Seite du vertrittst. Deine Rolle und dein Name im Spiel werden nicht
+        welche Seite du vertrittst. Dein Name im Spiel wird nicht
         gespeichert. Diese Daten lassen sich keiner Person zuordnen. Probleme zu Themen, die wir noch nicht bewertet
         haben, landen zusätzlich mit einer kurzen vorläufigen Einschätzung in einer Liste zur redaktionellen Prüfung.
       </p>
@@ -158,7 +158,7 @@ function Datenschutz() {
         <strong>Runden ohne Wertung:</strong> Endet eine Runde ohne Punkte – weil du eine Haltung oder Forderung
         nennst, das Spiel auf eine Äußerung nicht eingeht, kein Thema oder keine Ursache erkennbar ist oder eine
         Partei zum Thema noch nicht erfasst ist –, speichern wir deine Eingaben dieser Runde im Wortlaut, dazu den
-        Grund, das erkannte Thema, die Kurzfassung und den Zeitpunkt. Nicht dabei sind Parteien, Rolle, Bundesland,
+        Grund, das erkannte Thema, die Kurzfassung und den Zeitpunkt. Nicht dabei sind Parteien, Bundesland,
         Name im Spiel oder eine Verbindung zur gespeicherten Runde. Zweck: Wir prüfen, ob die KI richtig eingeordnet
         hat, und verbessern Einordnung und Themenkatalog (Art. 6 Abs. 1 lit. a und Art. 9 Abs. 2 lit. a DSGVO, deine
         Einwilligung vor dem Spielstart). Lesen können die Einträge nur die Admins des Projekts; sie werden nie

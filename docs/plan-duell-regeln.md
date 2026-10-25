@@ -70,14 +70,14 @@ Vorbild ist die Gesprächshaltung, wie sie Marcant in seinen Videos zeigt: zuhö
 Umgesetzt (25. 10. 2026, Entscheidung der Betreiberin):
 
 - **Leitfaden im Setup** (aufklappbar): „Ihr wählt verschiedene Parteien? So klappt das Gespräch“ – fünf Sätze zu Zuhören, Belegen, kein Triumph.
-- **„Was heißt das für euch?“** in der Auflösung (`src/logic/fuerEuch.ts`): Die Rolle *jeder* Seite wird auf die gezählten Maßnahmen *beider* Parteien angewandt (`rollen_modifikator`), dazu belegte Folgen für die Verteilung (`nebenwirkungen`, Bereich `verteilung`). Für alle Parteien gleich, ohne Punkte; gezählt wird weiter nur mit der eigenen Rolle.
+- **„Was heißt das für euch?“** in der Auflösung (`src/logic/fuerEuch.ts`): belegte Folgen für die Verteilung (`nebenwirkungen`, Bereich `verteilung`) der gezählten Maßnahmen beider Parteien. Für alle Parteien gleich, ohne Punkte. (Anfangs auch die Rolle jeder Seite auf die Maßnahmen beider Parteien; mit den Rollen ausgesetzt, siehe unten.)
 - **Gründe bei 0 Punkten sichtbar** statt aufklappbar: „Das Programm enthält keine Maßnahme …“ mit „Durchsucht: …“ und Link zum Programm. 0 Punkte ohne Grund wirken wie Schiebung.
 - **„Fehler melden“ an jeder Maßnahme**: E-Mail mit Maßnahme im Betreff, ohne Angaben zur Person.
 - **Endbildschirm**: zuerst die Themen („Ihr habt über … gesprochen“), dann der Stand; „hatte öfter die wirksamere Lösung“ statt „gewinnt!“; eine Gesprächsfrage.
 
 Offen (Daten, kein Code):
 
-- **Rollen-Modifikatoren** sind erst bei 11 Maßnahmen erfasst (Mieter:in, Eigentümer:in), Verteilungsfolgen bei wenigen Lösungswegen. Bis dahin zeigt „Was heißt das für euch?“ meist „keine Abweichung erfasst“. Nachtragen mit `/rollen-erfassen <Thema-ID>` (25. 10. 2026): blind wie die Nebenwirkungen, zuerst mit den Quellen, die der Katalog schon hat, sonst gezielte Websuche; jeder Modifikator nur mit Quelle und wörtlichem Beleg. Reihenfolge: häufigste Themen (Rente, Energie, Gesundheit, Arbeit), dann `--alle` für die elf Miete-Modifikatoren ohne Quelle.
+- **Rollen ausgesetzt (25. 10. 2026, Entscheidung der Betreiberin):** Modifikatoren lagen nur bei 11 Maßnahmen vor; der erste Lauf von `/rollen-erfassen` (Energiepreise, 22 Wege) brachte nach Rückfragen einen belegten Weg. Aufwand und Angreifbarkeit (je Rolle andere Punkte) stehen in keinem Verhältnis zum Nutzen. Darum: keine Rollenwahl im Setup, keine Rolle an die KI, Wertung nur mit dem Grundwert (`bewertePartei` bekommt `null`). `rollen_modifikator` bleibt in den Daten und in der Prüfung, der Skill ruht. Wieder aufnehmen erst, wenn die Bewertungen geprüft sind und es einen Anlass gibt.
 - **Themen der Zielgruppe zuerst:** Die Admin-Ansicht „Lücken“ zeigt, wo Runden ohne Wertung enden; dort zuerst erfassen und prüfen.
 
 ## Umsetzung

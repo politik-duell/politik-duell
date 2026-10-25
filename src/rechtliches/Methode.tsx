@@ -182,10 +182,9 @@ export function Methode() {
         Vereinbarung beitragen kann, und 1, wenn nur die Länder es über ihr eigenes Recht regeln können.
       </p>
       <p>
-        <strong>Rolle:</strong> Wählst du eine Rolle (z. B. Mieter:in), kann eine Maßnahme für dich mehr oder weniger
-        bringen. Dann verschiebt sich ihre Wirksamkeit für dich um bis zu zwei Stufen (innerhalb von 0 bis 3); auf 3
-        nur, wenn die Wirkung belegt ist. Solche Auf- oder Abwertungen sind je Maßnahme einzeln begründet und werden
-        angezeigt.
+        <strong>Für alle gleich:</strong> Jede Maßnahme zählt für alle mit derselben Bewertung – eine Auf- oder Abwertung
+        je nach Lebenslage (etwa für Mieter:innen) gibt es vorerst nicht. Wen eine Maßnahme belegt be- oder entlastet,
+        zeigt die Auflösung unter „Was heißt das für euch?“, ohne Punkte.
       </p>
 
       <h2>4. Punkte in der Runde</h2>

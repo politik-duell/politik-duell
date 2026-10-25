@@ -104,6 +104,7 @@ export function programmFuer(ursacheId: number, ebenen?: Ebenen): string | null 
   return ebene === 'land' ? ebenen.land : null
 }
 
+/** `rolle`: Rollen sind vorerst ausgesetzt (docs/methode.md) – App und Edge Function geben `null`. */
 export function massnahmenPunkte(m: Massnahme, rolle: Rolle | null) {
   const mod = rolle ? m.rollen_modifikator?.[rolle] : undefined
   const rollenBonus = mod?.wert ?? 0

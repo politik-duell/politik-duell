@@ -19,7 +19,7 @@ flowchart TD
         T4["entwurf:blind → Agent blind-bewertung<br/>ohne Parteinamen: Werte, Instrumente, Zuordnung"]
         T45["entwurf:eintragen · Prüfungen · Archiv"]
         T46["Folgen (/nebenwirkungen-erfassen, fester Schritt)<br/>nebenwirkungen:blind → je Teil Agent nebenwirkungen-recherche<br/>ohne Parteinamen: sechs Bereiche, beide Richtungen, ohne Punkte"]
-        T47["Rollen (/rollen-erfassen, zum Nachtragen)<br/>rollen:blind → je Teil Agent rollen-recherche<br/>ohne Parteinamen: Modifikator nur mit Quelle und Beleg"]
+        T47["Rollen (/rollen-erfassen, ruht: Rollen ausgesetzt)<br/>rollen:blind → je Teil Agent rollen-recherche<br/>ohne Parteinamen: Modifikator nur mit Quelle und Beleg"]
         T5["Commit · Pull Request"]
         T1 --> T2 --> T3 --> T4 --> T45 --> T46 --> T5
         T45 -.-> T47 -.-> T5

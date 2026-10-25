@@ -11,7 +11,6 @@ const ergebnis = (p: Partei, ms: Massnahme[]) =>
 
 describe('fuerEuch', () => {
   const miete = massnahme(1, {
-    rollen_modifikator: { mieter: { wert: 1, begruendung: 'senkt die Miete' }, eigentuemer: { wert: -1, begruendung: 'weniger Einnahmen' } },
     nebenwirkungen: [
       { bereich: 'verteilung', richtung: 'vorteil', text: 'Entlastet Haushalte mit wenig Einkommen.', quelle_url: 'https://q', belegstufe: 'A' },
       { bereich: 'haushalt', richtung: 'nachteil', text: 'Kostet Geld.', quelle_url: 'https://q', belegstufe: 'A' },
@@ -19,21 +18,13 @@ describe('fuerEuch', () => {
   })
   const ohne = massnahme(2)
 
-  it('wendet jede Rolle auf die Maßnahmen beider Parteien an', () => {
-    const f = fuerEuch([ergebnis(partei(1), [ohne]), ergebnis(partei(2), [miete])], ['mieter', 'eigentuemer'])
-    expect(f.rollen).toHaveLength(2)
-    expect(f.rollen[0]).toMatchObject({ seite: 0, rolle: 'mieter', folgen: [{ staerker: true, begruendung: 'senkt die Miete' }] })
-    expect(f.rollen[0].folgen[0].partei.id).toBe(2)
-    expect(f.rollen[1]).toMatchObject({ seite: 1, rolle: 'eigentuemer', folgen: [{ staerker: false }] })
+  it('zeigt nur Folgen für die Verteilung, je Partei einmal – ohne Rollen', () => {
+    const f = fuerEuch([ergebnis(partei(1), [miete, { ...miete, id: 3 }]), ergebnis(partei(2), [ohne])])
+    expect(f).toEqual({ verteilung: [expect.objectContaining({ partei: expect.objectContaining({ id: 1 }) })] })
+    expect(f.verteilung.map((v) => v.hinweis.text)).toEqual(['Entlastet Haushalte mit wenig Einkommen.'])
   })
 
-  it('zeigt Seiten ohne Rolle nicht und nur Folgen für die Verteilung, je Partei einmal', () => {
-    const f = fuerEuch([ergebnis(partei(1), [miete, { ...miete, id: 3 }]), ergebnis(partei(2), [ohne])], [null, 'rentner'])
-    expect(f.rollen).toEqual([{ seite: 1, rolle: 'rentner', folgen: [] }])
-    expect(f.verteilung.map((v) => [v.partei.id, v.hinweis.text])).toEqual([[1, 'Entlastet Haushalte mit wenig Einkommen.']])
-  })
-
-  it('ist leer ohne Rollen und ohne Verteilungsfolgen', () => {
-    expect(fuerEuch([ergebnis(partei(1), [ohne])], [null, null])).toEqual({ rollen: [], verteilung: [] })
+  it('ist leer ohne Verteilungsfolgen', () => {
+    expect(fuerEuch([ergebnis(partei(1), [ohne])])).toEqual({ verteilung: [] })
   })
 })

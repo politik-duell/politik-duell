@@ -74,10 +74,10 @@ describe('Karten der Partie (Endbildschirm)', () => {
 })
 
 describe('vergleichsSeite', () => {
-  const s = (rolle: Spieler['rolle'], land: string | null) => ({ rolle, land }) as Spieler
-  it('nutzt Rolle und Land nur, wenn beide Seiten sie gleich gewählt haben', () => {
-    expect(vergleichsSeite([s('mieter', 'ST'), s('mieter', 'ST')])).toEqual({ rolle: 'mieter', land: 'ST' })
-    expect(vergleichsSeite([s('arbeitslos', 'ST'), s('mieter', null)])).toEqual({ rolle: null, land: null })
+  const s = (land: string | null) => ({ land }) as Spieler
+  it('nutzt das Land nur, wenn beide Seiten es gleich gewählt haben', () => {
+    expect(vergleichsSeite([s('ST'), s('ST')])).toEqual({ land: 'ST' })
+    expect(vergleichsSeite([s('ST'), s(null)])).toEqual({ land: null })
   })
 })
 

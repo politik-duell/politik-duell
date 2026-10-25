@@ -82,7 +82,7 @@ async function frage(fall: Fall, runde: number): Promise<Lauf> {
   const verlauf = [{ von: 'spieler' as const, text: fall.text }]
   try {
     const fragen = (s: string, n: Parameters<typeof frageMistral>[1]) => mitWiederholung(() => frageMistral(s, n, { key: key!, modell }))
-    const { antwort, unsicher } = await ordneEin(fragen, verlauf, null, { ...katalog, haltungen }, () => 0)
+    const { antwort, unsicher } = await ordneEin(fragen, verlauf, { ...katalog, haltungen }, () => 0)
     return { fall, runde, antwort, unsicher, urteil: beurteile(fall, antwort) }
   } catch (e) {
     return { fall, runde, fehler: e instanceof Error ? e.message : String(e) }

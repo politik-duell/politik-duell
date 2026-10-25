@@ -5,7 +5,7 @@ Ausführliche Fassung des Konzepts (bis Oktober 2026 in `CLAUDE.md`). Die Grundp
 ## Spielablauf
 
 1. Startbildschirm mit Titel, kurzer Erklärung, Datenschutzhinweis. Im Hintergrund: langsam bewegte Wortwolke der Themen, die das Spiel kennt (angelegt, mit belegten Ursachen; keine Eingaben von Spielenden).
-2. Spieler A und B wählen je eine Partei (nicht dieselbe) und optional eine Rolle (Mieter, Eigentümer, Angestellte, Selbstständig, Rentner, Arbeitslos, Studierend, Vermögend); optional wählen beide gemeinsam ein Bundesland für die Partie („Wo spielt ihr?“). Jede Partei wird in jeder Runde mit der Rolle ihrer Seite und dem Land der Partie gewertet.
+2. Spieler A und B wählen je eine Partei (nicht dieselbe); optional wählen beide gemeinsam ein Bundesland für die Partie („Wo spielt ihr?“). Jede Partei wird in jeder Runde mit dem Land der Partie gewertet. (Die Rollenwahl ist seit 25. 10. 2026 ausgesetzt, `docs/methode.md` → „Rollen“.)
 3. Pro Runde (insgesamt 5; meist einigen sich beide auf ein Problem, eine Anzeige „wer ist dran“ gibt es nicht): Ein Spieler **hält einen Knopf gedrückt** und spricht sein Problem ein (Text-Eingabe als Alternative).
 4. KI klassifiziert: `problem` | `forderung` | `wert` | `grenze`.
    - `forderung` → max. 2 Nachfragen („Was läuft in deinem Alltag konkret schief?"), die Forderung wird dabei neutral wiedergegeben. Ist das Thema erkennbar, kann die Person stattdessen bis zu drei Ursachen des Themas antippen (gewertet wie eine Zuordnung der KI; nicht bei Pauschalurteilen über Gruppen). Bleibt es bei der Forderung: Runde ohne Wertung, neues Problem möglich – keine Umdeutung zum Problem. Entspricht die Forderung eindeutig einem erfassten Lösungsweg (Instrument des Themas, zweiter KI-Aufruf), zeigt ein Knopf „Zeig mir, wer das fordert“ die **Forderungskarte**: welche Parteien den Lösungsweg im Programm haben (mit Beleg-Link), Forschungsstand und Begründung – ohne Punkte; nach einem gewerteten Problem erscheint sie zusätzlich in der Auflösung. Weitere Schritte (Forderungs- und Haltungskarte): `docs/plan-haltungen.md`.
@@ -21,9 +21,9 @@ Ausführliche Fassung des Konzepts (bis Oktober 2026 in `CLAUDE.md`). Die Grundp
 Pro Maßnahme in der Datenbank:
 - `wirksamkeit` 0–3: Setzt die Maßnahme an den tatsächlichen Ursachen an?
 - `umsetzbarkeit` 0–3: rechtlich, finanziell, zeitlich realistisch?
-- optional `rollen_modifikator`: Auf- oder Abwertung je Rolle (z. B. Mietrecht für Mieter vs. Eigentümer), begründet.
+- optional `rollen_modifikator`: Auf- oder Abwertung je Rolle (z. B. Mietrecht für Mieter vs. Eigentümer), begründet – vorerst ausgesetzt, zählt nicht.
 
-Punkte je Maßnahme = `wirksamkeit × umsetzbarkeit` (0–9); der Rollen-Modifikator verschiebt die Wirksamkeit (innerhalb 0–3). Pro Ursache zählen die verschiedenen Lösungswege (je Instrument die beste Maßnahme, ohne Instrument je Maßnahme) mit abnehmendem Gewicht: bester voll, zweiter ½, dritter ¼ …, zusammen höchstens 9, auf eine Nachkommastelle (Begründung und Forschung: `docs/methode.md` → „Mehrere Lösungswege je Ursache“). Rundenpunkte = Summe über die zugeordneten Ursachen. Höhere Summe gewinnt die Runde (1 Punkt). Gleichstand oder gleichauf (niedrigere Summe höchstens 10 % unter der höheren): beide je 1 Punkt; „Beste Lösung insgesamt“ nennt ebenso alle, die gleichauf mit der besten liegen. Hat eine Partei keine Maßnahme zum Thema: 0.
+Punkte je Maßnahme = `wirksamkeit × umsetzbarkeit` (0–9), für alle gleich. Pro Ursache zählen die verschiedenen Lösungswege (je Instrument die beste Maßnahme, ohne Instrument je Maßnahme) mit abnehmendem Gewicht: bester voll, zweiter ½, dritter ¼ …, zusammen höchstens 9, auf eine Nachkommastelle (Begründung und Forschung: `docs/methode.md` → „Mehrere Lösungswege je Ursache“). Rundenpunkte = Summe über die zugeordneten Ursachen. Höhere Summe gewinnt die Runde (1 Punkt). Gleichstand oder gleichauf (niedrigere Summe höchstens 10 % unter der höheren): beide je 1 Punkt; „Beste Lösung insgesamt“ nennt ebenso alle, die gleichauf mit der besten liegen. Hat eine Partei keine Maßnahme zum Thema: 0.
 
 Ist ein Thema für eine der beiden Parteien noch **nicht erfasst** (Programm nicht vollständig ausgewertet und geprüft, Tabelle `abdeckung`), wird die Runde nicht gewertet – fehlende Daten dürfen keiner Partei einen Punkt kosten. Die Anzeige unterscheidet „keine Maßnahme zu diesen Ursachen“, „nichts zum Thema im Programm“ und „noch nicht erfasst“.
 
@@ -91,7 +91,7 @@ Row Level Security: Frontend darf nur lesen (Themen, Maßnahmen, freigegebene Pr
 
 ## KI-Schnittstelle
 
-Edge Function `analyse` erhält: Gesprächsverlauf der Runde, Rolle und Bundesland je Seite (`seiten`; ältere App-Fassungen schicken eine `rolle` und ein `land` für beide), Parteien – oder eine bestätigte Auswahl (`auswahl: { thema_id, ursachen_ids }`, bzw. `passt_nicht: true` mit leerer Liste), dann ohne KI-Aufruf.
+Edge Function `analyse` erhält: Gesprächsverlauf der Runde, Bundesland je Seite (`seiten`; ältere App-Fassungen schicken ein `land` für beide und eine `rolle`, die verworfen wird), Parteien – oder eine bestätigte Auswahl (`auswahl: { thema_id, ursachen_ids }`, bzw. `passt_nicht: true` mit leerer Liste), dann ohne KI-Aufruf.
 Die KI wird in zwei Schritten gefragt (`ordneEin` in `_shared/ki.ts`): **Schritt 1** mit allen Themen (ID, Name, Beschreibung) und den vollständig erfassten Haltungen (Kennung „H&lt;id&gt;“ + Frage) – Typ, Thema, `thema_sicher`, `thema_kandidaten`, `mehrere_probleme`; **Schritt 2** nur bei einem Problem mit Thema, nur mit dessen Ursachen (ID, Kurztext, Alltagssatz) – `ursachen_ids`, `ursachen_belege`, `sicher`. Ist etwas unsicher, enthält die Antwort keine Ursachen, sondern eine Nachfrage mit Thema. Schlägt die KI Ursachen vor, speichert die Funktion die Runde nicht; das tut erst die Anfrage mit der bestätigten Auswahl.
 Antwort (JSON):
 
