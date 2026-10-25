@@ -3,6 +3,9 @@ import { useDaten, useLandName } from '../data/kontext'
 import { ROLLEN } from '../data/rollen'
 import { MAX_JE_URSACHE, punkteText, type ParteiErgebnis, type Treffer } from '../logic/bewertung'
 import { EVIDENZ_TEXT } from '../logic/forderung'
+import { fuerEuch } from '../logic/fuerEuch'
+import { BETREIBER } from '../rechtliches/betreiber'
+import type { Massnahme } from '../data/types'
 import { Folgen } from './Folgen'
 import { ohneTreffer } from '../logic/ohneTreffer'
 import type { RundenErgebnis, Spieler } from '../spiel'
@@ -51,6 +54,12 @@ function ProgrammLinks({ ergebnis }: { ergebnis: ParteiErgebnis }) {
     </span>
   )
 }
+
+/** E-Mail mit Maßnahme im Betreff – „Fehler melden“ direkt an der Wertung, ohne Angaben zur Person. */
+const fehlerLink = (m: Massnahme) =>
+  `mailto:${BETREIBER.email}?subject=${encodeURIComponent(`Politik-Duell – Fehler bei Maßnahme ${m.id}`)}&body=${encodeURIComponent(
+    `Maßnahme ${m.id}: ${m.beschreibung}\n\nWas stimmt nicht? (Bitte mit Link auf die Stelle im Programm oder die Quelle.)\n`,
+  )}`
 
 const wertungFuer = (e: ParteiErgebnis, ursacheId: number) => e.ursachen.find((u) => u.ursache_id === ursacheId)
 
@@ -171,7 +180,10 @@ function MassnahmeInhalt({ t, gewicht, mehrere }: { t: Treffer; gewicht: number;
         }
       />
       {t.massnahme.land && <p className="massnahme-rolle">Aus dem Landeswahlprogramm {landName(t.massnahme.land)}</p>}
-      <MassnahmeBelege massnahme={t.massnahme} />
+      <MassnahmeBelege massnahme={t.massnahme} />{' '}
+      <a className="fehler-link" href={fehlerLink(t.massnahme)}>
+        Fehler melden
+      </a>
       <details className="massnahme-einordnung">
         <summary>Einordnung</summary>
         <p className="massnahme-begruendung">{t.massnahme.begruendung}</p>
@@ -330,16 +342,67 @@ function Duell({ runde, spieler }: { runde: RundenErgebnis; spieler: [Spieler, S
         Rundenpunkte sind die Summe über alle Ursachen; eine Maßnahme, die auf mehrere davon wirkt, zählt bei jeder. Tippen
         zeigt Maßnahmen und Belege.
       </p>
+      {/* Warum eine Partei hier nichts hat – sichtbar, nicht aufklappbar: 0 Punkte ohne Grund wirken wie Schiebung. */}
       {leere.map(({ e, leer }) => (
-        <details key={e.partei.id} className="duell-fehlt" style={parteiStil(e.partei.farbe)}>
-          <summary>
+        <div key={e.partei.id} className="duell-fehlt" style={parteiStil(e.partei.farbe)}>
+          <p className="duell-fehlt-kopf">
             {e.partei.kurzname}: {leer!.kurz}
-          </summary>
+          </p>
           <p>{leer!.lang}</p>
-          {e.abdeckung?.begruendung && <p className="keine-begruendung">{e.abdeckung.begruendung}</p>}
+          {e.abdeckung?.begruendung && <p className="keine-begruendung">Durchsucht: {e.abdeckung.begruendung}</p>}
           <ProgrammLinks ergebnis={e} />
-        </details>
+        </div>
       ))}
+    </section>
+  )
+}
+
+/**
+ * „Was heißt das für euch?“: wie die Lösungswege beider Parteien für die Rollen beider Seiten wirken und wen sie
+ * belegt be- oder entlasten. Für alle Parteien gleich, ohne Punkte (docs/plan-duell-regeln.md, Abschnitt 4).
+ */
+function FuerEuch({ ergebnisse, spieler }: { ergebnisse: ParteiErgebnis[]; spieler: [Spieler, Spieler] }) {
+  const f = fuerEuch(ergebnisse, spieler.map((s) => s.rolle))
+  if (!f.rollen.length && !f.verteilung.length) return null
+  const rollenName = (id: string) => ROLLEN.find((r) => r.id === id)?.label ?? id
+  return (
+    <section className="fuer-euch enthuellen" style={{ animationDelay: '1450ms' }}>
+      <h3>Was heißt das für euch?</h3>
+      {f.rollen.map(({ seite, rolle, folgen }) => (
+        <div key={seite} className="fuer-euch-seite">
+          <p className="fuer-euch-wer">
+            {spieler[seite].name} · {rollenName(rolle)}
+          </p>
+          {folgen.length ? (
+            <ul>
+              {folgen.map((x) => (
+                <li key={`${x.partei.id}-${x.massnahme.id}`} style={parteiStil(x.partei.farbe)}>
+                  <strong>{x.partei.kurzname}</strong>: {x.massnahme.beschreibung} –{' '}
+                  {x.staerker ? 'wirkt für deine Rolle stärker' : 'wirkt für deine Rolle schwächer'}: {x.begruendung}
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p className="fuer-euch-leer">Für deine Rolle ist bei diesen Lösungswegen keine Abweichung erfasst.</p>
+          )}
+        </div>
+      ))}
+      {f.verteilung.length > 0 && (
+        <div className="fuer-euch-seite">
+          <p className="fuer-euch-wer">Wen es trifft</p>
+          <ul>
+            {f.verteilung.map(({ partei, hinweis }) => (
+              <li key={`${partei.id}-${hinweis.text}`} style={parteiStil(partei.farbe)}>
+                <strong>{partei.kurzname}</strong>: {hinweis.text}{' '}
+                <a href={hinweis.quelle_url} target="_blank" rel="noopener noreferrer">
+                  Quelle
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+      <p className="fuer-euch-leer">Gilt für beide Parteien gleich und zählt nicht zu den Punkten.</p>
     </section>
   )
 }
@@ -439,6 +502,7 @@ export function Aufloesung({
               {runde.ergebnisse.some((e) => e.nicht_blind) && ` ${NICHT_BLIND_ERKLAERUNG}`}
             </details>
           )}
+          <FuerEuch ergebnisse={runde.ergebnisse} spieler={spieler} />
           <details className="beste enthuellen" style={{ animationDelay: '1500ms' }}>
             <summary>
               <span className="beste-titel">Beste Lösung aller Parteien</span>

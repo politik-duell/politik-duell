@@ -160,6 +160,22 @@ function ParteiTabelle({
   )
 }
 
+/** Gesprächshaltung für ein Duell über Lagergrenzen hinweg (docs/plan-duell-regeln.md, Abschnitt 4). */
+function Leitfaden() {
+  return (
+    <details className="leitfaden">
+      <summary>Ihr wählt verschiedene Parteien? So klappt das Gespräch</summary>
+      <ul>
+        <li>Lass die andere Person ihr Problem in eigenen Worten nennen und frag nach, was sie selbst erlebt hat.</li>
+        <li>Nimm das Problem ernst, auch wenn du die Lösung ihrer Partei nicht teilst.</li>
+        <li>Schaut euch die Belege gemeinsam an: Zitat, Seite im Programm, Studie. Fehler gern melden.</li>
+        <li>Kein Triumph bei einem Punkt: Die Wertung ist eine Einschätzung, kein Urteil über Menschen.</li>
+        <li>Am Ende zählt das Gespräch: Was hat euch überrascht, wo seht ihr dasselbe Problem?</li>
+      </ul>
+    </details>
+  )
+}
+
 export function Setup({ onFertig }: { onFertig: (s: [Spieler, Spieler]) => void }) {
   const [a, setA] = useState<Auswahl>({ partei: null, rolle: null })
   const [b, setB] = useState<Auswahl>({ partei: null, rolle: null })
@@ -175,6 +191,7 @@ export function Setup({ onFertig }: { onFertig: (s: [Spieler, Spieler]) => void 
         Jede Seite wählt eine andere Partei. Die Rolle beeinflusst manche Bewertungen.
         {mitLaendern && ' Mit Bundesland zählt bei Landesthemen wie Schule für beide das Landeswahlprogramm. Gespeichert wird es nicht.'}
       </p>
+      <Leitfaden />
       {schmal ? (
         <>
           <ParteiTabelle a={a} b={b} onA={setA} onB={setB} />

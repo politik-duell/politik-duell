@@ -581,6 +581,18 @@ textarea:focus-visible {
   width: calc(100% - 32px);
   margin: 0 16px;
 }
+.leitfaden {
+  margin: 0 0 12px;
+  font-size: 0.92rem;
+}
+.leitfaden summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+.leitfaden ul {
+  margin: 6px 0 0;
+  padding-left: 1.2em;
+}
 .partie-land {
   margin-top: 16px;
 }
@@ -1083,9 +1095,43 @@ textarea {
   font-size: 0.88rem;
   color: var(--text-leise);
 }
-.duell-fehlt summary {
-  cursor: pointer;
+.duell-fehlt-kopf {
+  margin: 0;
   color: var(--text);
+  font-weight: 700;
+}
+.fehler-link {
+  font-size: 0.8rem;
+  color: var(--text-leise);
+}
+.fuer-euch {
+  margin-top: 1.25rem;
+  padding: 12px 16px;
+  border-radius: var(--papier-radius);
+  border: 1.5px solid var(--linie);
+}
+.fuer-euch h3 {
+  margin: 0 0 6px;
+}
+.fuer-euch-wer {
+  margin: 8px 0 2px;
+  font-weight: 700;
+}
+.fuer-euch ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.fuer-euch li {
+  margin: 4px 0;
+  padding-left: 10px;
+  border-left: 4px solid var(--partei);
+  font-size: 0.9rem;
+}
+.fuer-euch-leer {
+  margin: 4px 0 0;
+  font-size: 0.85rem;
+  color: var(--text-leise);
 }
 .duell-fehlt p {
   margin: 6px 0 4px;
@@ -1219,6 +1265,16 @@ textarea {
 }
 .endstand span {
   border-bottom: 5px solid var(--partei-linie);
+}
+.ende-themen {
+  margin: 0.5rem auto 0;
+  max-width: 36ch;
+  color: var(--text-leise);
+}
+.ende-frage {
+  margin: 0.5rem auto 0;
+  max-width: 36ch;
+  font-size: 0.95rem;
 }
 .sieger {
   margin: 0.75rem auto 0;
