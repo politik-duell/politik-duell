@@ -177,6 +177,15 @@ Die Bilanz neigt zu Nachteilen, vor allem weil fast jeder Haushaltshinweis eine 
 17. **Gleiche Maßstäbe über Teile hinweg** (etwa 10 % der Kosten): Ein Weg zu zwei Ursachen lag nur nach der ersten eingeteilt, eine Gruppe von sieben Wegen wurde geteilt – ähnliche Wege liefen parallel in verschiedenen Teilen. Die Rückfragen dazu kosteten fast nur das erneute Lesen des Verlaufs. Jetzt geht ein Weg zu mehreren Ursachen in die Gruppe mit Platz, Reste geteilter Gruppen kommen in spätere Wellen, und `--quellen` gibt offenen Teilen die Hinweise derselben Ursachen als `vergleich` mit; die Prüfung verlangt dazu Gegenstück oder Grund.
 18. **Lage statt Folge** (etwa 5–7 %): Dreimal stand eine Statistik zu den Betroffenen mit „der Weg setzt an dieser Verteilung an“ – die Agentendefinition nannte genau das als erlaubtes Beispiel. Jetzt Regel und Fehler der Prüfung. Drei ältere KI-Entwürfe in Thema 45 haben dieselbe Wendung; sie fallen beim nächsten Lauf mit `--alle`.
 
+**Messung Thema 8** (30 Wege, 25. 10. 2026, erster Lauf nach 17–18): 14 000 neu gelesene Tokens und 2,3 Suchen je Weg, 30 % Nacharbeit (Thema 10: 17 000, 2,4, 32 %). Alle sechs Teile brauchten eine Rückfrage. Die Gründe:
+
+- **Einseitige Bilanz** (vier Teile): Zweimal fand die Rückfrage eine Gegenrichtung, die trägt (6837, 6850). Zweimal blieb nichts übrig.
+- **Lage statt Folge** (Teil 4): Die UBA-Emissionen je Personenkilometer standen als Umweltvorteil bei drei Ausbauwegen. Die Wendung aus Punkt 18 kam nicht vor, deshalb griff die Prüfung nicht. Die Regel in der Agentendefinition reichte als Begründung.
+- **Gleiche Maßstäbe in derselben Welle** (Teile 1/4, 2/6): `vergleich` hilft erst in späteren Wellen. Zwei Reaktivierungswege und zwei Wege zum 9-Euro-Ticket liefen gleichzeitig und brauchten deshalb eine Rückfrage.
+- **Umsonst gefragt:** Zweimal fragte die Koordination nach der Drucksache hinter einer hib-Meldung. hib zählt laut Agentendefinition als amtlich, solche Rückfragen also unterlassen.
+
+Verworfen wurde ein Hinweis: die Verlagerung vom Pkw auf die Schiene beim Deutschlandtakt (6845). Das ist die Wirkung auf das Thema selbst und keine CO2-Angabe.
+
 **Erste Lehren:**
 
 - **Vorteile muss man aktiv suchen.** Zuerst fanden sich fast nur Nachteile bei fossilen und Vorteile bei erneuerbaren Lösungswegen. Erst gezielte Suche ergab die Gegenrichtung (Verteilung bei 6706, Haushalt bei 6707). Für die Recherche-Anleitung: je Lösungsweg ausdrücklich nach Vor- *und* Nachteilen in jedem Bereich fragen.
