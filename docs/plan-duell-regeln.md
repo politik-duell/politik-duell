@@ -77,7 +77,7 @@ Umgesetzt (25. 10. 2026, Entscheidung der Betreiberin):
 
 Offen (Daten, kein Code):
 
-- **Rollen-Modifikatoren** sind erst bei 11 Maßnahmen erfasst (Mieter:in, Eigentümer:in), Verteilungsfolgen bei wenigen Lösungswegen. Bis dahin zeigt „Was heißt das für euch?“ meist „keine Abweichung erfasst“. Nächster Schritt: Rollen für die häufigsten Themen nachtragen (Rente, Energie, Gesundheit, Arbeit).
+- **Rollen-Modifikatoren** sind erst bei 11 Maßnahmen erfasst (Mieter:in, Eigentümer:in), Verteilungsfolgen bei wenigen Lösungswegen. Bis dahin zeigt „Was heißt das für euch?“ meist „keine Abweichung erfasst“. Nachtragen mit `/rollen-erfassen <Thema-ID>` (25. 10. 2026): blind wie die Nebenwirkungen, zuerst mit den Quellen, die der Katalog schon hat, sonst gezielte Websuche; jeder Modifikator nur mit Quelle und wörtlichem Beleg. Reihenfolge: häufigste Themen (Rente, Energie, Gesundheit, Arbeit), dann `--alle` für die elf Miete-Modifikatoren ohne Quelle.
 - **Themen der Zielgruppe zuerst:** Die Admin-Ansicht „Lücken“ zeigt, wo Runden ohne Wertung enden; dort zuerst erfassen und prüfen.
 
 ## Umsetzung

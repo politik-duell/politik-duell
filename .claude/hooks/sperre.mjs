@@ -18,6 +18,8 @@
 //    .cache/nebenwirkungen/<ID>/teil-<n>.json und die eigene Antwort, Write nur protokoll/antwort-<n>.txt, Bash nur
 //    `npm run -s nebenwirkungen:antwort-pruefen -- <ID> <n>` und `npm run -s nebenwirkungen:pdf -- <URL> …`, WebSearch und WebFetch wie unter 1 – keine Themendateien,
 //    also keine Parteien zu den Lösungswegen.
+// 4c. Agent rollen-recherche (Rollen-Modifikatoren belegen, Skill /rollen-erfassen): wie 4b, aber
+//    .cache/rollen/<ID>/… und `npm run -s rollen:antwort-pruefen -- <ID> <n>`; das PDF-Werkzeug der Nebenwirkungen darf er mitnutzen.
 // 5. GitHub Copilot in VS Code (.github/hooks/sperre.json, Umgebungsvariable SPERRE_UMGEBUNG=copilot):
 //    Werkzeugnamen und Eingaben weichen ab, und PreToolUse kennt kein agent_type. Darum prüft pruefeCopilot
 //    alle Texte der Eingabe unabhängig vom Werkzeugnamen, und SubagentStart/-Stop legen für die Dauer eines
@@ -100,6 +102,26 @@ export function nebenPfadErlaubt(werkzeug, pfad, wurzel, cwd = wurzel) {
   return false
 }
 
+/** Name des Agenten, der Rollen-Modifikatoren ohne Parteinamen belegt (.claude/agents/rollen-recherche.md). */
+export const ROLLEN_AGENT = /(^|:)rollen-recherche$/
+export const ROLLEN_PRUEFBEFEHL = /^npm run (-s |--silent )?rollen:antwort-pruefen '?--'? \d+ \d+$/
+
+/** Darf der Rollen-Agent diesen Pfad benutzen? Genau die Teil-Liste und die eigene Antwort. */
+export function rollenPfadErlaubt(werkzeug, pfad, wurzel, cwd = wurzel) {
+  if (typeof pfad !== 'string' || !pfad.trim()) return false
+  const norm = (p) => {
+    const r = resolve(wurzel, p).replace(/\\/g, '/')
+    return process.platform === 'win32' ? r.toLowerCase() : r
+  }
+  const datei = norm(isAbsolute(pfad) ? pfad : join(cwd, pfad))
+  const basis = norm(wurzel).replace(/\/$/, '')
+  const rest = datei.startsWith(`${basis}/`) ? datei.slice(basis.length + 1) : null
+  if (rest === null) return false
+  if (werkzeug === 'Read') return /^\.cache\/rollen\/\d+\/(teil-\d+\.json|protokoll\/antwort-\d+\.txt)$/.test(rest)
+  if (werkzeug === 'Write') return /^\.cache\/rollen\/\d+\/protokoll\/antwort-\d+\.txt$/.test(rest)
+  return false
+}
+
 /**
  * Die Selbstprüfung des Bewertungs-Agenten – genau dieser Befehl, ohne weitere Zeichen: keine
  * Verkettung, Umleitung oder Ersetzung. Das Skript liest nur blind.json und die Antwort.
@@ -142,6 +164,18 @@ export function pruefe(eingabe, { liste, programmHosts, phaseA, wurzel: basis = 
       `Recherche ohne Parteinamen: ${werkzeug} ${e.file_path ?? e.path ?? e.command ?? ''} ist gesperrt. ` +
       'Erlaubt sind nur Read auf .cache/nebenwirkungen/<ID>/teil-<n>.json und protokoll/antwort-<n>.txt, Write auf protokoll/antwort-<n>.txt, ' +
       "Bash nur „npm run -s nebenwirkungen:antwort-pruefen -- <ID> <n>“ und „npm run -s nebenwirkungen:pdf -- <https-Adresse> ['Suchbegriff'] | --seite <n>“, WebSearch und WebFetch."
+    )
+  }
+  if (typeof eingabe.agent_type === 'string' && ROLLEN_AGENT.test(eingabe.agent_type)) {
+    if (werkzeug === 'WebFetch' || werkzeug === 'WebSearch') return null
+    if ((werkzeug === 'Read' || werkzeug === 'Write') && rollenPfadErlaubt(werkzeug, e.file_path, basis, eingabe.cwd || basis)) return null
+    if (werkzeug === 'Bash' && typeof e.command === 'string' && ROLLEN_PRUEFBEFEHL.test(e.command.trim()) && !e.run_in_background) return null
+    const pdf = werkzeug === 'Bash' && typeof e.command === 'string' && !e.run_in_background ? NEBEN_PDFBEFEHL.exec(e.command.trim()) : null
+    if (pdf) return gesperrteAdresse(pdf[2], liste, programmHosts)
+    return (
+      `Rollen ohne Parteinamen: ${werkzeug} ${e.file_path ?? e.path ?? e.command ?? ''} ist gesperrt. ` +
+      'Erlaubt sind nur Read auf .cache/rollen/<ID>/teil-<n>.json und protokoll/antwort-<n>.txt, Write auf protokoll/antwort-<n>.txt, ' +
+      "Bash nur „npm run -s rollen:antwort-pruefen -- <ID> <n>“ und „npm run -s nebenwirkungen:pdf -- <https-Adresse> ['Suchbegriff'] | --seite <n>“, WebSearch und WebFetch."
     )
   }
   if (werkzeug === 'WebFetch') return null
@@ -234,16 +268,17 @@ export function pruefeCopilot(eingabe, { liste, programmHosts, phaseA, agenten =
   const blind = agenten.some((a) => BLIND_AGENT.test(a))
   const haltung = agenten.some((a) => HALTUNG_AGENT.test(a))
   const neben = agenten.some((a) => NEBEN_AGENT.test(a))
-  if (blind || haltung || neben) {
-    const name = blind ? 'Bewertung ohne Parteinamen' : haltung ? 'Einordnung ohne Parteinamen' : 'Recherche ohne Parteinamen'
-    const pfadOk = blind ? blindPfadErlaubt : haltung ? haltungPfadErlaubt : nebenPfadErlaubt
-    const pruefbefehl = blind ? BLIND_PRUEFBEFEHL : haltung ? HALTUNG_PRUEFBEFEHL : NEBEN_PRUEFBEFEHL
-    const web = blind || neben
+  const rollen = agenten.some((a) => ROLLEN_AGENT.test(a))
+  if (blind || haltung || neben || rollen) {
+    const name = blind ? 'Bewertung ohne Parteinamen' : haltung ? 'Einordnung ohne Parteinamen' : rollen ? 'Rollen ohne Parteinamen' : 'Recherche ohne Parteinamen'
+    const pfadOk = blind ? blindPfadErlaubt : haltung ? haltungPfadErlaubt : rollen ? rollenPfadErlaubt : nebenPfadErlaubt
+    const pruefbefehl = blind ? BLIND_PRUEFBEFEHL : haltung ? HALTUNG_PRUEFBEFEHL : rollen ? ROLLEN_PRUEFBEFEHL : NEBEN_PRUEFBEFEHL
+    const web = blind || neben || rollen
     const cwd = eingabe.cwd || basis
     const gesperrt = `${name} (Agent läuft, .cache/sperre-agenten/): ${werkzeug} ist gesperrt. Erlaubt sind nur die Blindliste lesen, die eigene Antwort schreiben und die Selbstprüfung${web ? ' sowie Websuche' : ''}.`
     if (befehle.length) {
       const pdfOk = (b) => {
-        const m = neben ? NEBEN_PDFBEFEHL.exec(b) : null
+        const m = neben || rollen ? NEBEN_PDFBEFEHL.exec(b) : null
         return m && !gesperrteAdresse(m[2], liste, programmHosts)
       }
       return befehle.every((b) => pruefbefehl.test(b) || pdfOk(b)) && !pfade.length ? null : gesperrt
@@ -305,7 +340,7 @@ export async function hauptprogramm(modus) {
   const copilot = process.env.SPERRE_UMGEBUNG === 'copilot'
   if (modus === 'subagent-start' || modus === 'subagent-stop') {
     const typ = String(eingabe.agent_type ?? '')
-    if (!BLIND_AGENT.test(typ) && !HALTUNG_AGENT.test(typ) && !NEBEN_AGENT.test(typ)) return
+    if (!BLIND_AGENT.test(typ) && !HALTUNG_AGENT.test(typ) && !NEBEN_AGENT.test(typ) && !ROLLEN_AGENT.test(typ)) return
     const pfad = join(AGENTEN_ORDNER, `${String(eingabe.agent_id ?? typ).replace(/[^\w.-]/g, '_')}.json`)
     if (modus === 'subagent-stop') rmSync(pfad, { force: true })
     else {

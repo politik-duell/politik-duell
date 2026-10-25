@@ -7,6 +7,7 @@ export interface RollenFolge {
   massnahme: Massnahme
   staerker: boolean
   begruendung: string
+  quelle_url?: string
 }
 
 /** Was die Lösungswege beider Parteien für die Spielenden selbst heißen – für alle Parteien gleich, ohne Punkte. */
@@ -29,7 +30,7 @@ export function fuerEuch(ergebnisse: ParteiErgebnis[], rollen: (Rolle | null)[])
       e.treffer.flatMap((t) => {
         const mod = t.massnahme.rollen_modifikator?.[rolle]
         return mod && mod.wert !== 0
-          ? [{ partei: e.partei, massnahme: t.massnahme, staerker: mod.wert > 0, begruendung: mod.begruendung }]
+          ? [{ partei: e.partei, massnahme: t.massnahme, staerker: mod.wert > 0, begruendung: mod.begruendung, ...(mod.quelle_url ? { quelle_url: mod.quelle_url } : {}) }]
           : []
       }),
     )

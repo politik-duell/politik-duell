@@ -556,10 +556,15 @@ export function pruefeKatalog(
             f(rOrt, 'erwartet { wert, begruendung }')
             continue
           }
-          unbekannteFelder(rOrt, mod, ['wert', 'begruendung'])
+          unbekannteFelder(rOrt, mod, ['wert', 'begruendung', 'quelle_url', 'ki_entwurf'])
           ganzzahl(rOrt, mod, 'wert', -2, 2)
           if (mod.wert === 0) f(rOrt, '„wert“ 0 hat keine Wirkung – Eintrag weglassen')
           text(rOrt, mod, 'begruendung', 200)
+          if (mod.quelle_url !== undefined && (typeof mod.quelle_url !== 'string' || !/^https:\/\/\S+$/.test(mod.quelle_url)))
+            f(rOrt, '„quelle_url“ muss eine https-Adresse sein')
+          if (mod.ki_entwurf !== undefined && mod.ki_entwurf !== true) f(rOrt, '„ki_entwurf“ nur als true')
+          // Nachweislich deutlich anders (daten/README.md): ältere Einträge ohne Quelle nur als Warnung.
+          if (!katalog.fiktiv && mod.quelle_url === undefined) warnungen.push(`${rOrt}: ohne „quelle_url“ – mit /rollen-erfassen --alle belegen`)
           // Die Punkte deckeln das bei 2 (bewertung.ts); hier nur der Hinweis, dass der Wert so nicht voll wirkt.
           if (!katalog.fiktiv && typeof mod.wert === 'number' && b.wirksamkeit + mod.wert > 2 && b.wirksamkeit < 3 && b.evidenz !== 'belegt')
             warnungen.push(`${rOrt}: hebt die Wirksamkeit auf 3, die Wirkung ist aber nicht „belegt“ – zählt nur bis 2`)
