@@ -1,0 +1,137 @@
+{
+  "pruefsumme": "b237c35b41c8846d",
+  "thema_id": 8,
+  "thema": "Bus und Bahn",
+  "ziel": "Menschen kommen mit Bus und Bahn zuverlässig, in vertretbarer Zeit und zu bezahlbaren Preisen ans Ziel, auch auf dem Land.",
+  "ursachen": [
+    "Rund 21 Millionen Menschen fehlt ein gutes Grundangebot an Bus und Bahn, besonders auf dem Land",
+    "Marodes, überaltertes Schienennetz; laut Bundesrechnungshof steuert der Bund seine Mittel für den Erhalt kaum wirksam",
+    "Zu wenige Bus- und Straßenbahnfahrerinnen und -fahrer; in den nächsten zehn Jahren gehen rund vier von zehn Beschäftigten in Verkehrsberufen in den Ruhestand",
+    "Tickets werden teurer: Das Deutschlandticket kostet seit Januar 2026 63 Euro im Monat; den Preis legen die Länder fest, Bund und Länder zahlen je 1,5 Milliarden Euro im Jahr zu"
+  ],
+  "teil": 1,
+  "teile": 6,
+  "einheiten": [
+    {
+      "id": 6740,
+      "name": "Mehr Bundesmittel für den Nahverkehr (Regionalisierungsmittel)",
+      "ebene": "bund",
+      "begruendung": "Mehr Geld erlaubt den Ländern, mehr Züge und Busse zu bestellen; ob es beim Angebot auf dem Land ankommt oder etwa für gestiegene Kosten oder Ticketpreise gebraucht wird, entscheiden die Länder.",
+      "ursache": 1
+    },
+    {
+      "id": 6747,
+      "name": "Stillgelegte Bahnstrecken reaktivieren",
+      "ebene": "bund",
+      "begruendung": "Verbessert die Anbindung einzelner ländlicher Orte deutlich, erreicht insgesamt aber nur wenige Menschen; Planung und Bau dauern viele Jahre.",
+      "ursache": 1
+    },
+    {
+      "id": 6748,
+      "name": "Verbindliches Mindestangebot an Bus und Bahn (Mobilitätsgarantie)",
+      "ebene": "bund",
+      "begruendung": "Setzt direkt am fehlenden Grundangebot an; ein flächendeckender Takt ist teuer und scheitert derzeit auch am fehlenden Fahrpersonal. Zuständig sind die Länder, der Bund kann über Geld und Rahmenrecht beitragen.",
+      "ursache": 1
+    },
+    {
+      "id": 6749,
+      "name": "Landesweites Bus- und Bahnnetz ausbauen, Takte verdichten",
+      "ebene": "land",
+      "begruendung": "Häufigere Fahrten und direkte Verbindungen verbessern das Angebot spürbar und ziehen mehr Fahrgäste an; das Land muss die zusätzlichen Fahrten dauerhaft bezahlen und braucht Fahrpersonal.",
+      "ursache": 1
+    },
+    {
+      "id": 6750,
+      "name": "Rufbusse und On-Demand-Verkehre ausbauen",
+      "ebene": "land",
+      "begruendung": "Schließt Lücken dort, wo Linienbusse fast leer fahren würden; Rufbusse befördern wenige Menschen je Fahrt und sind teuer, ersetzen also keinen dichten Takt.",
+      "ursache": 1
+    },
+    {
+      "id": 6751,
+      "name": "Verbindliches Mindestangebot (z. B. Stundentakt für jeden Ort, 10-Minuten-Takt in der Stadt)",
+      "ebene": "land",
+      "begruendung": "Setzt direkt am fehlenden Grundangebot an; ein flächendeckender Takt ist teuer und braucht Fahrpersonal, das derzeit fehlt.",
+      "ursache": 1
+    }
+  ],
+  "suchhilfe": {
+    "haushalt": {
+      "frage": "Was kostet der Weg Bund, Ländern, Kommunen oder Sozialkassen – oder was bringt er ein?",
+      "vorteil": [
+        "Mehreinnahmen",
+        "Einsparung öffentlicher Haushalt",
+        "Entlastung Sozialversicherung"
+      ],
+      "nachteil": [
+        "Mindereinnahmen",
+        "Kosten Bundeshaushalt",
+        "Haushaltsausgaben Gesetzentwurf"
+      ]
+    },
+    "wirtschaft": {
+      "frage": "Welche Kosten oder Entlastungen entstehen für Unternehmen (besonders kleine und mittlere), wie wirkt er auf Preise und Verbraucher?",
+      "vorteil": [
+        "Entlastung Unternehmen",
+        "sinkende Preise",
+        "Investitionen"
+      ],
+      "nachteil": [
+        "Kosten für Unternehmen",
+        "Preisanstieg",
+        "Wettbewerbsfähigkeit"
+      ]
+    },
+    "aufwand": {
+      "frage": "Welcher Aufwand für Anträge, Nachweise und Kontrollen entsteht oder entfällt – für Bürger, Wirtschaft, Verwaltung?",
+      "vorteil": [
+        "Bürokratieabbau",
+        "Erfüllungsaufwand sinkt"
+      ],
+      "nachteil": [
+        "Erfüllungsaufwand",
+        "Nachweispflichten",
+        "Normenkontrollrat Stellungnahme"
+      ]
+    },
+    "umwelt": {
+      "frage": "Wie wirkt er auf Emissionen, Natur und Ressourcen, und welche Lasten oder Vorteile hat er für spätere Jahre?",
+      "vorteil": [
+        "Emissionsminderung",
+        "Umweltentlastung"
+      ],
+      "nachteil": [
+        "Mehremissionen",
+        "Umweltrisiken",
+        "Flächenverbrauch"
+      ]
+    },
+    "verteilung": {
+      "frage": "Wer gewinnt, wer trägt die Last – nach Einkommen, Alter, Familienform, Stadt und Land?",
+      "vorteil": [
+        "Entlastung geringe Einkommen",
+        "Verteilungswirkung progressiv"
+      ],
+      "nachteil": [
+        "regressiv",
+        "Mitnahmeeffekte",
+        "profitieren höhere Einkommen"
+      ]
+    },
+    "grundrechte": {
+      "frage": "Schränkt er Freiheiten ein oder stärkt er sie, behandelt er Gruppen ungleich, wie wirkt er auf Gesundheit und Sicherheit?",
+      "vorteil": [
+        "Gesundheit verbessert",
+        "Schutz",
+        "Gleichstellung"
+      ],
+      "nachteil": [
+        "Datenschutz",
+        "Grundrechtseingriff",
+        "Benachteiligung",
+        "Gesundheitsrisiko"
+      ]
+    }
+  },
+  "quellen": []
+}
