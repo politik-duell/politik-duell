@@ -1,6 +1,5 @@
 import { useEffect, useState, type ReactNode } from 'react'
 import { useDaten, useLandName } from '../data/kontext'
-import { ROLLEN } from '../data/rollen'
 import { MAX_JE_URSACHE, punkteText, type ParteiErgebnis, type Treffer } from '../logic/bewertung'
 import { EVIDENZ_TEXT } from '../logic/forderung'
 import { fuerEuch } from '../logic/fuerEuch'
@@ -160,7 +159,7 @@ function MitRechnung({ ergebnis, rechnung }: { ergebnis: ReactNode; rechnung: Re
   )
 }
 
-/** Eine gezählte Maßnahme mit Punkten, Belegen und aufklappbarer Einordnung (Begründung, Rolle, Forschungsstand). */
+/** Eine gezählte Maßnahme mit Punkten, Belegen und aufklappbarer Einordnung (Begründung, Forschungsstand). */
 function MassnahmeInhalt({ t, gewicht, mehrere }: { t: Treffer; gewicht: number; mehrere: boolean }) {
   const landName = useLandName()
   return (
@@ -187,12 +186,6 @@ function MassnahmeInhalt({ t, gewicht, mehrere }: { t: Treffer; gewicht: number;
       <details className="massnahme-einordnung">
         <summary>Einordnung</summary>
         <p className="massnahme-begruendung">{t.massnahme.begruendung}</p>
-        {t.rollenBegruendung && (
-          <p className="massnahme-rolle">
-            Für deine Rolle {t.rollenBonus > 0 ? 'wirksamer' : 'weniger wirksam'} (Grundwert {t.massnahme.wirksamkeit}/3):{' '}
-            {t.rollenBegruendung}
-          </p>
-        )}
         {t.ursachen_ids.length > 1 && (
           <p className="massnahme-rolle duell-mehrfach">{mehrfachText(t.ursachen_ids.length)}</p>
         )}
@@ -268,10 +261,9 @@ function Duell({ runde, spieler }: { runde: RundenErgebnis; spieler: [Spieler, S
   const ursache = (id: number) => ursachen.find((u) => u.id === id)
   const punkteVon = (e: ParteiErgebnis, id: number) => (e.abdeckung ? (wertungFuer(e, id)?.punkte ?? 0) : null)
   const leere = runde.ergebnisse!.map((e) => ({ e, leer: ohneTreffer(e, landName) })).filter((x) => x.leer)
-  // Jede Seite mit ihrer Rolle; das Bundesland nur, wenn es zählt: bei Ursachen in Länderzuständigkeit (docs/methode.md).
+  // Das Bundesland nur, wenn es zählt: bei Ursachen in Länderzuständigkeit (docs/methode.md).
   const landZaehlt = ursachenIds.some((id) => ursache(id)?.ebene === 'land')
-  const seitenText = (s: Spieler) =>
-    [s.name, ROLLEN.find((r) => r.id === s.rolle)?.label, landZaehlt && s.land ? landName(s.land) : null].filter(Boolean).join(' · ')
+  const seitenText = (s: Spieler) => [s.name, landZaehlt && s.land ? landName(s.land) : null].filter(Boolean).join(' · ')
 
   return (
     <section className="duell enthuellen" aria-label="Gegenüberstellung je Ursache">
@@ -358,58 +350,28 @@ function Duell({ runde, spieler }: { runde: RundenErgebnis; spieler: [Spieler, S
 }
 
 /**
- * „Was heißt das für euch?“: wie die Lösungswege beider Parteien für die Rollen beider Seiten wirken und wen sie
- * belegt be- oder entlasten. Für alle Parteien gleich, ohne Punkte (docs/plan-duell-regeln.md, Abschnitt 4).
+ * „Was heißt das für euch?“: wen die Lösungswege beider Parteien belegt be- oder entlasten. Für alle Parteien gleich,
+ * ohne Punkte (docs/plan-duell-regeln.md, Abschnitt 4).
  */
-function FuerEuch({ ergebnisse, spieler }: { ergebnisse: ParteiErgebnis[]; spieler: [Spieler, Spieler] }) {
-  const f = fuerEuch(ergebnisse, spieler.map((s) => s.rolle))
-  if (!f.rollen.length && !f.verteilung.length) return null
-  const rollenName = (id: string) => ROLLEN.find((r) => r.id === id)?.label ?? id
+function FuerEuch({ ergebnisse }: { ergebnisse: ParteiErgebnis[] }) {
+  const { verteilung } = fuerEuch(ergebnisse)
+  if (!verteilung.length) return null
   return (
     <section className="fuer-euch enthuellen" style={{ animationDelay: '1450ms' }}>
       <h3>Was heißt das für euch?</h3>
-      {f.rollen.map(({ seite, rolle, folgen }) => (
-        <div key={seite} className="fuer-euch-seite">
-          <p className="fuer-euch-wer">
-            {spieler[seite].name} · {rollenName(rolle)}
-          </p>
-          {folgen.length ? (
-            <ul>
-              {folgen.map((x) => (
-                <li key={`${x.partei.id}-${x.massnahme.id}`} style={parteiStil(x.partei.farbe)}>
-                  <strong>{x.partei.kurzname}</strong>: {x.massnahme.beschreibung} –{' '}
-                  {x.staerker ? 'wirkt für deine Rolle stärker' : 'wirkt für deine Rolle schwächer'}: {x.begruendung}
-                  {x.quelle_url && (
-                    <>
-                      {' '}
-                      <a href={x.quelle_url} target="_blank" rel="noopener noreferrer">
-                        Quelle
-                      </a>
-                    </>
-                  )}
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <p className="fuer-euch-leer">Für deine Rolle ist bei diesen Lösungswegen keine Abweichung erfasst.</p>
-          )}
-        </div>
-      ))}
-      {f.verteilung.length > 0 && (
-        <div className="fuer-euch-seite">
-          <p className="fuer-euch-wer">Wen es trifft</p>
-          <ul>
-            {f.verteilung.map(({ partei, hinweis }) => (
-              <li key={`${partei.id}-${hinweis.text}`} style={parteiStil(partei.farbe)}>
-                <strong>{partei.kurzname}</strong>: {hinweis.text}{' '}
-                <a href={hinweis.quelle_url} target="_blank" rel="noopener noreferrer">
-                  Quelle
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+      <div className="fuer-euch-seite">
+        <p className="fuer-euch-wer">Wen es trifft</p>
+        <ul>
+          {verteilung.map(({ partei, hinweis }) => (
+            <li key={`${partei.id}-${hinweis.text}`} style={parteiStil(partei.farbe)}>
+              <strong>{partei.kurzname}</strong>: {hinweis.text}{' '}
+              <a href={hinweis.quelle_url} target="_blank" rel="noopener noreferrer">
+                Quelle
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
       <p className="fuer-euch-leer">Gilt für beide Parteien gleich und zählt nicht zu den Punkten.</p>
     </section>
   )
@@ -435,7 +397,6 @@ export function Aufloesung({
   const landName = useLandName()
   // Der Vergleich aller Parteien nutzt nur, was beide Seiten gleich gewählt haben (vergleichsSeite).
   const abweichend = [
-    ...(spieler[0].rolle !== spieler[1].rolle ? [['Rollen', 'ohne Rolle']] : []),
     ...(spieler[0].land !== spieler[1].land ? [['Bundesländer', 'nur mit den Bundeswahlprogrammen']] : []),
   ]
   const ohneWertung = runde.ergebnisse?.filter((e) => !e.abdeckung) ?? []
@@ -510,7 +471,7 @@ export function Aufloesung({
               {runde.ergebnisse.some((e) => e.nicht_blind) && ` ${NICHT_BLIND_ERKLAERUNG}`}
             </details>
           )}
-          <FuerEuch ergebnisse={runde.ergebnisse} spieler={spieler} />
+          <FuerEuch ergebnisse={runde.ergebnisse} />
           <details className="beste enthuellen" style={{ animationDelay: '1500ms' }}>
             <summary>
               <span className="beste-titel">Beste Lösung aller Parteien</span>

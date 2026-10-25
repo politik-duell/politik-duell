@@ -1,15 +1,13 @@
 import { useState, useSyncExternalStore } from 'react'
 import { useDaten } from '../data/kontext'
 import { waehlbareLaender } from '../data/quelle'
-import { ROLLEN } from '../data/rollen'
-import type { Partei, Rolle } from '../data/types'
+import type { Partei } from '../data/types'
 import { Kreuzfeld } from './Kreuz'
 import { parteiStil } from './stil'
 import type { Spieler } from '../spiel'
 
 interface Auswahl {
   partei: Partei | null
-  rolle: Rolle | null
 }
 
 /** Schmale Ansicht: beide Seiten kreuzen in einer gemeinsamen Tabelle an. */
@@ -20,29 +18,6 @@ const schmalAbo = (melden: () => void) => {
   return () => mq.removeEventListener('change', melden)
 }
 const istSchmal = () => matchMedia(SCHMAL).matches
-
-/** Rolle einer Seite (optional). */
-function Angaben({ titel, auswahl, onChange }: { titel: string; auswahl: Auswahl; onChange: (a: Auswahl) => void }) {
-  return (
-    <>
-      <label className="rolle-wahl-label" htmlFor={`${titel}-rolle`}>
-        Deine Rolle im Alltag (optional)
-      </label>
-      <select
-        id={`${titel}-rolle`}
-        value={auswahl.rolle ?? ''}
-        onChange={(e) => onChange({ ...auswahl, rolle: (e.target.value || null) as Rolle | null })}
-      >
-        <option value="">Keine Angabe</option>
-        {ROLLEN.map((r) => (
-          <option key={r.id} value={r.id}>
-            {r.label}
-          </option>
-        ))}
-      </select>
-    </>
-  )
-}
 
 /**
  * Bundesland der Partie (optional): eines für beide Seiten, damit beide Parteien an den Programmen
@@ -108,7 +83,6 @@ function SpielerWahl({
           )
         })}
       </div>
-      <Angaben titel={titel} auswahl={auswahl} onChange={onChange} />
     </fieldset>
   )
 }
@@ -177,8 +151,8 @@ function Leitfaden() {
 }
 
 export function Setup({ onFertig }: { onFertig: (s: [Spieler, Spieler]) => void }) {
-  const [a, setA] = useState<Auswahl>({ partei: null, rolle: null })
-  const [b, setB] = useState<Auswahl>({ partei: null, rolle: null })
+  const [a, setA] = useState<Auswahl>({ partei: null })
+  const [b, setB] = useState<Auswahl>({ partei: null })
   const [land, setLand] = useState<string | null>(null)
   const mitLaendern = waehlbareLaender(useDaten()).length > 0
   const schmal = useSyncExternalStore(schmalAbo, istSchmal)
@@ -188,27 +162,12 @@ export function Setup({ onFertig }: { onFertig: (s: [Spieler, Spieler]) => void 
     <main className="seite">
       <h2>Wer tritt an?</h2>
       <p className="hinweis">
-        Jede Seite wählt eine andere Partei. Die Rolle beeinflusst manche Bewertungen.
+        Jede Seite wählt eine andere Partei.
         {mitLaendern && ' Mit Bundesland zählt bei Landesthemen wie Schule für beide das Landeswahlprogramm. Gespeichert wird es nicht.'}
       </p>
       <Leitfaden />
       {schmal ? (
-        <>
-          <ParteiTabelle a={a} b={b} onA={setA} onB={setB} />
-          <div className="angaben-paar">
-            {(
-              [
-                ['Spieler:in A', a, setA],
-                ['Spieler:in B', b, setB],
-              ] as const
-            ).map(([titel, auswahl, onChange]) => (
-              <fieldset key={titel} className="spieler-wahl stimmzettel">
-                <legend>{titel}</legend>
-                <Angaben titel={titel} auswahl={auswahl} onChange={onChange} />
-              </fieldset>
-            ))}
-          </div>
-        </>
+        <ParteiTabelle a={a} b={b} onA={setA} onB={setB} />
       ) : (
         <div className="stimmzettel-paar">
           <SpielerWahl titel="Spieler:in A" auswahl={a} gesperrt={b.partei} onChange={setA} />
@@ -221,8 +180,8 @@ export function Setup({ onFertig }: { onFertig: (s: [Spieler, Spieler]) => void 
         disabled={!bereit}
         onClick={() =>
           onFertig([
-            { name: 'Spieler:in A', partei: a.partei!, rolle: a.rolle, land },
-            { name: 'Spieler:in B', partei: b.partei!, rolle: b.rolle, land },
+            { name: 'Spieler:in A', partei: a.partei!, land },
+            { name: 'Spieler:in B', partei: b.partei!, land },
           ])
         }
       >

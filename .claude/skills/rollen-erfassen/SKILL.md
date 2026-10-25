@@ -1,6 +1,6 @@
 ---
 name: rollen-erfassen
-description: Trägt für ein oder mehrere Themen des Politik-Duells belegte Rollen-Modifikatoren nach (Lösungsweg wirkt für Mieter:innen, Rentner:innen, Arbeitslose … nachweislich deutlich anders) – ohne Parteinamen, jeder mit Quelle und wörtlichem Beleg, als KI-Entwurf. Aufruf mit Themen-IDs, z. B. /rollen-erfassen 3 oder /rollen-erfassen 3 4 7; mit --alle auch KI-Entwürfe und Modifikatoren ohne Quelle neu.
+description: Ruht, solange Rollen im Spiel ausgesetzt sind. Trägt für ein oder mehrere Themen des Politik-Duells belegte Rollen-Modifikatoren nach (Lösungsweg wirkt für Mieter:innen, Rentner:innen, Arbeitslose … nachweislich deutlich anders) – ohne Parteinamen, jeder mit Quelle und wörtlichem Beleg, als KI-Entwurf. Aufruf mit Themen-IDs, z. B. /rollen-erfassen 3 oder /rollen-erfassen 3 4 7; mit --alle auch KI-Entwürfe und Modifikatoren ohne Quelle neu.
 argument-hint: <Thema-ID> [<Thema-ID> …] [--alle]
 disable-model-invocation: true
 ---
@@ -8,6 +8,8 @@ disable-model-invocation: true
 # Rollen erfassen
 
 Aufruf: **$ARGUMENTS**
+
+> **Ruht (seit 25. 10. 2026):** Rollen sind im Spiel ausgesetzt, Modifikatoren zählen nicht (`docs/methode.md` → „Rollen“). Nicht ausführen, solange das gilt – außer die Betreiberin nimmt die Rollen ausdrücklich wieder auf.
 
 Du bist Koordination: Recherchieren nur die Agenten `rollen-recherche`, ohne zu wissen, welche Partei einen Lösungsweg vorschlägt. Du recherchierst und formulierst nicht selbst. Anders als Nebenwirkungen **verändern Modifikatoren Punkte** (für Spielende mit dieser Rolle). Darum gilt „nachweislich“ streng: jeder Modifikator mit Quelle und wörtlichem Beleg, sonst keiner. Ergebnis: KI-Entwurf (`ki_entwurf: true` am Modifikator); geprüfte Bewertungen ändert der Skill nie. Hintergrund: `docs/plan-duell-regeln.md` → Abschnitt 4, Regeln: `daten/README.md` → „Rollen-Modifikator“.
 

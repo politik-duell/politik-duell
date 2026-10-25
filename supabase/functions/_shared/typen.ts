@@ -331,11 +331,10 @@ export interface AnalyseAntwort {
 }
 
 /**
- * Rolle und Bundesland einer Seite (A oder B). Jede Partei wird mit den Angaben ihrer Seite gewertet –
- * gleich, wer das Problem nennt.
+ * Bundesland einer Seite (A oder B). Jede Partei wird mit den Angaben ihrer Seite gewertet – gleich, wer das Problem
+ * nennt. Eine Rolle gibt es vorerst nicht (Rollen ausgesetzt, docs/methode.md).
  */
 export interface Seite {
-  rolle: Rolle | null
   /** Bundesland (Kürzel) – nur zur Wertung, wird nicht gespeichert. */
   land: string | null
 }
@@ -345,7 +344,7 @@ export interface AnalyseAnfrage {
   /** Zufällige Sitzungs-ID (nur für das Rate-Limit, keine Zuordnung zu Personen). */
   sitzung: string
   verlauf: Nachricht[]
-  /** Rolle und Bundesland der Seiten A und B (in der Reihenfolge von `parteien`). */
+  /** Bundesland der Seiten A und B (in der Reihenfolge von `parteien`). */
   seiten: [Seite, Seite]
   /** Zugang zur geschlossenen Testphase (Token aus dem Einladungslink) – dann zählen auch KI-Entwürfe. */
   zugang?: string | null

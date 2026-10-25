@@ -1,4 +1,4 @@
-import type { Partei, Rolle, Seite, Thema } from './data/types'
+import type { Partei, Seite, Thema } from './data/types'
 import type { ParteiErgebnis } from './logic/bewertung'
 
 export const RUNDEN_GESAMT = 5
@@ -6,7 +6,6 @@ export const RUNDEN_GESAMT = 5
 export interface Spieler {
   name: string
   partei: Partei
-  rolle: Rolle | null
   /**
    * Bundesland (Kürzel) – bei Ursachen in Länderzuständigkeit zählt dann das Landesprogramm. Wird einmal je Partie
    * gewählt und ist für beide Seiten gleich.
@@ -52,11 +51,11 @@ export interface RundenErgebnis {
 }
 
 /**
- * Rolle und Bundesland für den Vergleich aller Parteien („Beste Lösung aller Parteien“): nur, was beide Seiten
- * gleich gewählt haben – sonst ohne Rolle bzw. nur mit Bundesprogrammen, damit keine Seite den Vergleich bestimmt.
+ * Bundesland für den Vergleich aller Parteien („Beste Lösung aller Parteien“): nur, wenn beide Seiten dasselbe
+ * gewählt haben – sonst nur mit Bundesprogrammen, damit keine Seite den Vergleich bestimmt.
  */
 export function vergleichsSeite([a, b]: [Spieler, Spieler]): Seite {
-  return { rolle: a.rolle === b.rolle ? a.rolle : null, land: a.land === b.land ? a.land : null }
+  return { land: a.land === b.land ? a.land : null }
 }
 
 /**

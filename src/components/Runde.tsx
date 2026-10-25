@@ -81,8 +81,9 @@ function ShuffleSymbol() {
 const spielerTexte = (v: Nachricht[]) => v.filter((n) => n.von === 'spieler').map((n) => n.text)
 
 /**
- * Jede Partei wird mit Rolle und Bundesland ihrer Seite gewertet – gleich, wer das Problem nennt. Der Vergleich
- * aller Parteien nutzt Rolle bzw. Land nur, wenn beide Seiten dieselben gewählt haben (siehe vergleichsSeite).
+ * Jede Partei wird mit dem Bundesland ihrer Seite gewertet – gleich, wer das Problem nennt. Der Vergleich aller
+ * Parteien nutzt das Land nur, wenn beide Seiten dasselbe gewählt haben (siehe vergleichsSeite). Ohne Rolle: Rollen
+ * sind ausgesetzt (docs/methode.md).
  */
 function werteAus(
   analyse: AnalyseAntwort,
@@ -105,10 +106,10 @@ function werteAus(
   }
 
   const [ea, eb] = spieler.map((s) =>
-    bewertePartei(s.partei, thema.id, analyse.ursachen_ids, s.rolle, massnahmen, abdeckung, ebenenFuer(daten, s.land)),
+    bewertePartei(s.partei, thema.id, analyse.ursachen_ids, null, massnahmen, abdeckung, ebenenFuer(daten, s.land)),
   )
   const { status, punkte } = werteRunde(ea, eb)
-  const { rolle, land } = vergleichsSeite(spieler)
+  const { land } = vergleichsSeite(spieler)
   const ebenen = ebenenFuer(daten, land)
   return {
     nr, thema, status, ...(forderung ? { forderung } : {}), ...(karten.length ? { karten } : {}),
@@ -119,9 +120,9 @@ function werteAus(
     einschaetzung: null,
     ergebnisse: [ea, eb],
     punkte,
-    beste: besteParteien(parteien, thema.id, analyse.ursachen_ids, rolle, massnahmen, abdeckung, ebenen),
+    beste: besteParteien(parteien, thema.id, analyse.ursachen_ids, null, massnahmen, abdeckung, ebenen),
     nichtErfasst: parteien.filter(
-      (p) => !bewertePartei(p, thema.id, analyse.ursachen_ids, rolle, massnahmen, abdeckung, ebenen).abdeckung,
+      (p) => !bewertePartei(p, thema.id, analyse.ursachen_ids, null, massnahmen, abdeckung, ebenen).abdeckung,
     ),
   }
 }
@@ -178,7 +179,7 @@ export function Runde({
   const [beispiel, setBeispiel] = useState<BeispielArt | null>(null)
   const daten = useDaten()
 
-  const seiten = spieler.map(({ rolle, land }) => ({ rolle, land })) as [Seite, Seite]
+  const seiten = spieler.map(({ land }) => ({ land })) as [Seite, Seite]
   const laender = seiten.map((s) => s.land)
   const parteiIds: [number, number] = [spieler[0].partei.id, spieler[1].partei.id]
   const [nurProbleme, setNurProbleme] = useState(liesNurProbleme)

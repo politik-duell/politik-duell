@@ -126,7 +126,7 @@ Deno.serve(async (req) => {
       antwort = antwortAusAuswahl(anfrage.auswahl, themen, ursachen)
     } else {
       const haltungen = await vollstaendigeHaltungen(entwuerfe)
-      antwort = (await ordneEin(frageMistral, anfrage.verlauf, anfrage.seiten.map((s) => s.rolle), { themen, ursachen, parteien, haltungen })).antwort
+      antwort = (await ordneEin(frageMistral, anfrage.verlauf, { themen, ursachen, parteien, haltungen })).antwort
     }
 
     // Forderung mit erkanntem Thema: ein zweiter, kurzer Aufruf nur mit den Instrumenten dieses Themas.
@@ -329,10 +329,11 @@ async function speichereRunde(
   const b = parteien.find((p) => p.id === parteiB)
   if (!a || !b) return
 
-  // Jede Partei mit Rolle und Bundesland ihrer Seite. Das Bundesland zählt nur für die Wertung; gespeichert wird es nicht.
+  // Jede Partei mit dem Bundesland ihrer Seite (Rollen ausgesetzt, docs/methode.md). Das Bundesland zählt nur für
+  // die Wertung; gespeichert wird es nicht.
   const landesprogramme = lpRes.data as Landesprogramm[]
   const [ea, eb] = ([a, b] as const).map((p, i) =>
-    bewertePartei(p, antwort.thema_id!, antwort.ursachen_ids, seiten[i].rolle, massnahmen, abdeckung, {
+    bewertePartei(p, antwort.thema_id!, antwort.ursachen_ids, null, massnahmen, abdeckung, {
       land: seiten[i].land,
       ursachen,
       landesprogramme,
