@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { kartenHaltungen, MOCK_DATEN, type Daten } from '../data/quelle'
-import { gespraechsKarten, mitKarte, vergleichsSeite, type RundenErgebnis, type Spieler } from '../spiel'
+import { gespraechsKarten, mitKarte, teilenText, vergleichsSeite, type RundenErgebnis, type Spieler } from '../spiel'
 import { haltungskarte, POSITION_TEXT } from './haltung'
 
 // Beispieldaten (daten/beispiel/haltungen/): Haltung 1 (Tempolimit) und 2 (Zuwanderung) sind für alle fünf
@@ -78,5 +78,24 @@ describe('vergleichsSeite', () => {
   it('nutzt Rolle und Land nur, wenn beide Seiten sie gleich gewählt haben', () => {
     expect(vergleichsSeite([s('mieter', 'ST'), s('mieter', 'ST')])).toEqual({ rolle: 'mieter', land: 'ST' })
     expect(vergleichsSeite([s('arbeitslos', 'ST'), s('mieter', null)])).toEqual({ rolle: null, land: null })
+  })
+})
+
+describe('teilenText', () => {
+  const runde = (status: RundenErgebnis['status'], name?: string) =>
+    ({ status, thema: name ? { id: 1, name, beschreibung: '' } : null }) as RundenErgebnis
+
+  it('nennt die Themen der gewerteten Runden, je einmal, ohne Parteien und Punkte', () => {
+    const t = teilenText([runde('gewertet', 'Miete'), runde('ungeprueft'), runde('gewertet', 'Rente'), runde('unvollstaendig', 'Pflege'), runde('gewertet', 'Miete')], null)
+    expect(t).toBe(
+      'Wir haben im Politik-Duell 5 Alltagsprobleme durchgespielt: Miete, Rente. Welche Partei hat dafür die wirksamste Lösung – mit Beleg? Spielt es selbst. Versprechen kann jeder.',
+    )
+    expect(t).not.toMatch(/\d+ : \d+/)
+  })
+
+  it('kommt ohne gewertete Runde aus und nennt den Hinweis der Testphase', () => {
+    expect(teilenText([runde('ungeprueft')], 'KI-Entwurf')).toBe(
+      'Wir haben im Politik-Duell ein Alltagsproblem durchgespielt. Welche Partei hat dafür die wirksamste Lösung – mit Beleg? Spielt es selbst. (Testphase – KI-Entwurf.) Versprechen kann jeder.',
+    )
   })
 })

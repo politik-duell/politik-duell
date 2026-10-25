@@ -210,11 +210,14 @@ export function Methode() {
           Neuvermietung und wegfallende Sozialwohnungen. Beschreibst du so eine Folge, zählen alle diese Ursachen (nicht nur
           drei); du kannst einzelne abwählen. Welche Ursachen zu einer Folge gehören, steht fest im Katalog.
         </li>
-        <li>Die höhere Summe bekommt den Spielpunkt, bei Gleichstand beide.</li>
         <li>
-          Wählst du ein Bundesland, zählt bei Ursachen, für die vor allem die Länder zuständig sind (etwa Lehrkräfte oder
+          Die höhere Summe bekommt den Spielpunkt. Liegt die niedrigere höchstens 10 % darunter, sind beide gleichauf und
+          bekommen den Punkt: So knapp sagt der Abstand nicht, welche Lösung besser ist.
+        </li>
+        <li>
+          Wählt ihr ein Bundesland für die Partie, zählt für beide Parteien bei Ursachen, für die vor allem die Länder zuständig sind (etwa Lehrkräfte oder
           Schulgebäude), das Wahlprogramm der Partei zur letzten Landtagswahl, sonst das Bundesprogramm. Je Partei und
-          Ursache zählt immer genau ein Programm. Ist eine Partei in deinem Land nicht angetreten, wird die Runde nicht
+          Ursache zählt immer genau ein Programm. Ist eine Partei in eurem Land nicht angetreten, wird die Runde nicht
           gewertet. Das Bundesland wird nicht gespeichert.
         </li>
         <li>

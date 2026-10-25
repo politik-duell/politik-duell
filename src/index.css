@@ -581,6 +581,9 @@ textarea:focus-visible {
   width: calc(100% - 32px);
   margin: 0 16px;
 }
+.partie-land {
+  margin-top: 16px;
+}
 select,
 textarea {
   width: 100%;

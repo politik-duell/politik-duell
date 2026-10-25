@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { gesamtpunkte, gespraechsKarten, type Karte, type RundenErgebnis, type Spieler } from '../spiel'
+import { gesamtpunkte, gespraechsKarten, teilenText, type Karte, type RundenErgebnis, type Spieler } from '../spiel'
 import { ohneTreffer } from '../logic/ohneTreffer'
 import { punkteText } from '../logic/bewertung'
 import { forderungskarte } from '../logic/forderung'
@@ -29,11 +29,7 @@ export function Ende({
   const mitKi = runden.some((r) => r.ergebnisse?.some((e) => e.ki_entwurf))
 
   async function teilen() {
-    const text =
-      `Politik-Duell – ${runden.length} Alltagsprobleme geprüft. ` +
-      `Ergebnis: ${spieler[0].partei.kurzname} ${pa} : ${pb} ${spieler[1].partei.kurzname}. ` +
-      (mitKi ? `(Testphase – ${KI_HINWEIS}.) ` : '') +
-      'Versprechen kann jeder.'
+    const text = teilenText(runden, mitKi ? KI_HINWEIS : null)
     if (navigator.share) {
       try {
         await navigator.share({ title: 'Politik-Duell', text, url: location.href })

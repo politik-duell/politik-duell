@@ -3,7 +3,7 @@ import { ABDECKUNG, INSTRUMENTE, MASSNAHMEN, PARTEIEN, THEMEN, URSACHEN } from '
 import type { AbdeckungEintrag, Landesprogramm, Massnahme, Nachricht } from '../data/types'
 import { kartenHaltungen, MOCK_DATEN } from '../data/quelle'
 import { analysiere } from './analyse'
-import { besteParteien, bewertePartei, MAX_JE_URSACHE, massnahmenPunkte, punkteText, rundenpunkte, werteRunde, type Ebenen } from './bewertung'
+import { besteParteien, bewertePartei, gleichauf, MAX_JE_URSACHE, massnahmenPunkte, punkteText, rundenpunkte, werteRunde, type Ebenen } from './bewertung'
 import { ohneTreffer } from './ohneTreffer'
 
 const spieler = (...texte: string[]): Nachricht[] => texte.map((text) => ({ von: 'spieler', text }))
@@ -218,6 +218,18 @@ describe('Bewertung', () => {
     expect(rundenpunkte(0, 0)).toEqual([0, 0])
   })
 
+  it('wertet höchstens 10 % Abstand als gleichauf', () => {
+    expect(rundenpunkte(10, 9)).toEqual([1, 1])
+    expect(rundenpunkte(10, 8.9)).toEqual([1, 0])
+    expect(rundenpunkte(8.1, 9)).toEqual([1, 1])
+    expect(rundenpunkte(8, 9)).toEqual([0, 1])
+    expect(rundenpunkte(0.9, 1)).toEqual([1, 1])
+    expect(rundenpunkte(0, 0.5)).toEqual([0, 1])
+    // Rechnung in Zehnteln: 0,7 × 10 ist in Gleitkomma nicht genau 7.
+    expect(gleichauf(7, 6.3)).toBe(true)
+    expect(gleichauf(0, 0)).toBe(false)
+  })
+
   it('findet die insgesamt beste Partei', () => {
     const beste = besteParteien(PARTEIEN, 1, [101], null, MASSNAHMEN, ABDECKUNG)
     expect(beste.map((b) => b.partei.id)).toEqual([1])
@@ -295,6 +307,22 @@ describe('Mehrere Lösungswege je Ursache', () => {
     const e = werte([m(1, 2, 3, 10, [981, 982]), m(2, 2, 2, 11, [982])], [981, 982])
     expect(e.punkte).toBe(6 + 6 + 4 * 0.5)
     expect(e.treffer.find((t) => t.massnahme.id === 1)?.ursachen_ids).toEqual([981, 982])
+  })
+})
+
+describe('Beste Lösung: gleichauf', () => {
+  // Thema 97, Ursache 971: Alpha 9 (3 × 3), Beta 6 + 4 × ½ + 1 × ¼ = 8,3 (gerundet), Gamma 6.
+  const m = (id: number, partei: number, w: 0 | 1 | 2 | 3, u: 0 | 1 | 2 | 3, instrument: number): Massnahme => ({
+    id, thema_id: 97, partei_id: partei, beschreibung: `M${id}`, ursachen_ids: [971], instrument_id: instrument, wirksamkeit: w,
+    umsetzbarkeit: u, begruendung: 'x', beleg_programm_url: 'https://example.org/p.pdf#page=1', stand: '2026-05-01', geprueft: true,
+  })
+  const massnahmen = [m(1, 1, 3, 3, 1), m(3, 2, 3, 2, 2), m(4, 2, 2, 2, 3), m(6, 2, 1, 1, 4), m(5, 3, 2, 3, 1)]
+  const abdeckung: AbdeckungEintrag[] = [1, 2, 3].map((partei_id) => ({ thema_id: 97, partei_id, land: null, art: 'massnahmen', begruendung: null, stand: '2026-05-01' }))
+
+  it('nennt alle Parteien, die höchstens 10 % unter der besten liegen', () => {
+    const alle = [1, 2, 3].map((id) => bewertePartei(partei(id), 97, [971], null, massnahmen, abdeckung))
+    expect(alle.map((e) => e.punkte)).toEqual([9, 8.3, 6])
+    expect(besteParteien(PARTEIEN, 97, [971], null, massnahmen, abdeckung).map((e) => e.partei.id)).toEqual([1, 2])
   })
 })
 

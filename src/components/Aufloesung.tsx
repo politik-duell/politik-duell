@@ -417,7 +417,9 @@ export function Aufloesung({
                     .join(' und ')}.`
                 : `Keine Wertung: Für ${ohneWertung.map((e) => e.partei.kurzname).join(' und ')} noch nicht erfasst.`
               : runde.punkte[0] === 1 && runde.punkte[1] === 1
-                ? 'Gleichstand – beide bekommen einen Punkt.'
+                ? runde.ergebnisse[0].punkte === runde.ergebnisse[1].punkte
+                  ? 'Gleichstand – beide bekommen einen Punkt.'
+                  : 'Gleichauf – höchstens 10 % Abstand, beide bekommen einen Punkt.'
                 : runde.punkte[0] === 1
                   ? `Punkt für ${spieler[0].name} (${spieler[0].partei.kurzname})!`
                   : runde.punkte[1] === 1

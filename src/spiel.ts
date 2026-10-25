@@ -7,7 +7,10 @@ export interface Spieler {
   name: string
   partei: Partei
   rolle: Rolle | null
-  /** Bundesland (Kürzel) – bei Ursachen in Länderzuständigkeit zählt dann das Landesprogramm. */
+  /**
+   * Bundesland (Kürzel) – bei Ursachen in Länderzuständigkeit zählt dann das Landesprogramm. Wird einmal je Partie
+   * gewählt und ist für beide Seiten gleich.
+   */
   land: string | null
 }
 
@@ -74,6 +77,21 @@ export function gespraechsKarten(runden: RundenErgebnis[]): Karte[] {
 /** Fügt eine Karte hinzu, wenn sie noch nicht in der Liste steht. */
 export const mitKarte = (karten: Karte[], k: Karte): Karte[] =>
   karten.some((x) => kartenSchluessel(x) === kartenSchluessel(k)) ? karten : [...karten, k]
+
+/**
+ * Text zum Teilen: die Themen der gewerteten Runden und eine Einladung – ohne Parteien, Punkte und Eingaben,
+ * damit er sich nicht als Parteien-Punktestand verbreiten lässt (docs/plan-duell-regeln.md).
+ */
+export function teilenText(runden: RundenErgebnis[], kiHinweis: string | null): string {
+  const themen = [...new Set(runden.filter((r) => r.status === 'gewertet' && r.thema).map((r) => r.thema!.name))]
+  const anzahl = runden.length === 1 ? 'ein Alltagsproblem' : `${runden.length} Alltagsprobleme`
+  return (
+    `Wir haben im Politik-Duell ${anzahl} durchgespielt${themen.length ? `: ${themen.join(', ')}` : ''}. ` +
+    'Welche Partei hat dafür die wirksamste Lösung – mit Beleg? Spielt es selbst. ' +
+    (kiHinweis ? `(Testphase – ${kiHinweis}.) ` : '') +
+    'Versprechen kann jeder.'
+  )
+}
 
 export function gesamtpunkte(runden: RundenErgebnis[]): [number, number] {
   return runden.reduce<[number, number]>((s, r) => [s[0] + r.punkte[0], s[1] + r.punkte[1]], [0, 0])

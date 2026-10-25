@@ -152,12 +152,20 @@ function bewertePartei(partei, themaId, ursachenIds, rolle, massnahmen, abdeckun
     } : {}
   };
 }
+var GLEICHAUF_ANTEIL = 0.1;
+function gleichauf(a, b) {
+  const [hoch, tief] = [
+    Math.max(zehntel(a), zehntel(b)),
+    Math.min(zehntel(a), zehntel(b))
+  ];
+  return hoch > 0 && hoch - tief <= GLEICHAUF_ANTEIL * hoch;
+}
 function rundenpunkte(a, b) {
   if (a === 0 && b === 0) return [
     0,
     0
   ];
-  if (a === b) return [
+  if (gleichauf(a, b)) return [
     1,
     1
   ];
