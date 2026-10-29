@@ -27,7 +27,6 @@ import { themenWoerter } from './data/wortwolke'
 import { useHash, zurueck } from './navigation'
 import { RUNDEN_GESAMT, type RundenErgebnis, type Spieler } from './spiel'
 
-const NUR_TESTPHASE = import.meta.env.VITE_OFFEN !== 'true'
 
 type Phase = 'start' | 'setup' | 'runde' | 'aufloesung' | 'ende'
 
@@ -72,8 +71,9 @@ export default function App() {
     scrollTo({ top: 0 })
   }
 
-  // Nur geschlossene Testphase: Ohne gültigen Zugangslink kein Spiel. Mit VITE_OFFEN=true wieder öffentlich.
-  if (NUR_TESTPHASE && daten?.quelle === 'supabase' && !daten.testphase) {
+  // Geschlossene Testphase: ohne gültigen Zugangslink kein Spiel. Offen, sobald die Beta freigegeben ist
+  // (`einstellungen.ki_entwuerfe_oeffentlich` – dann sind KI-Entwürfe auch ohne Zugang lesbar).
+  if (daten?.quelle === 'supabase' && !daten.testphase && !daten.beta) {
     return (
       <div className="app">
         {zugangsHinweis && (

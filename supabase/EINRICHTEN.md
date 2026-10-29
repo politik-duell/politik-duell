@@ -432,8 +432,8 @@ Grundprinzip 2 (`CLAUDE.md`): In der Alpha-/Beta-Phase zählen KI-Entwürfe auch
    legt `einstellungen` mit dem Schalter `ki_entwuerfe_oeffentlich` an – **aus**; es ändert sich noch nichts. Ohne die
    Tabelle wertet die Edge Function wie bisher.
 2. **Einschalten**, wenn es so weit ist: `update public.einstellungen set ki_entwuerfe_oeffentlich = true;`
-   Dann lesen App und Edge Function die Entwürfe für alle; oben erscheint das Band „Beta“. Zurück mit `false`.
-3. **App öffnen:** In Vercel `VITE_OFFEN=true` setzen und neu bauen – sonst bleibt die Sperrseite für alle ohne Zugangslink.
+   Dann lesen App und Edge Function die Entwürfe für alle, die Sperrseite entfällt und oben erscheint das Band „Beta“ –
+   ohne neuen Build. Zurück mit `false`: wieder Sperrseite für alle ohne Zugangslink.
    Zugangslinks funktionieren weiter; Runden mit Zugang bleiben als `testphase` markiert.
 
 ## Nach Änderungen am Code

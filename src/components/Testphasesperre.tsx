@@ -1,6 +1,6 @@
 import { Logo } from './Logo'
 
-/** Sperrseite: Solange nur die geschlossene Testphase läuft, kommt man ohne Zugangslink nicht ins Spiel. */
+/** Sperrseite: Solange die Beta nicht freigegeben ist (`einstellungen.ki_entwuerfe_oeffentlich`), kommt man ohne Zugangslink nicht ins Spiel. */
 export function Testphasesperre() {
   return (
     <main className="start">
