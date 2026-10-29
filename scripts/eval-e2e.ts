@@ -166,13 +166,22 @@ function vorbereiten(repo: string, ref: string, themen: number[]) {
   git('-c', 'user.name=eval', '-c', 'user.email=eval@localhost', 'commit', '-m', `Eval: Bundes-Erfassung der Themen ${themen.join(', ')} entfernt`)
 }
 
+const ERLAUBT = [
+  'Bash(npm run:*)', 'Bash(npm test:*)', 'Bash(git add:*)', 'Bash(git commit:*)', 'Bash(git status:*)', 'Bash(git diff:*)',
+  'Bash(git checkout -- daten/*)', 'Bash(cp .cache/entwurf/*)', 'Bash(mkdir -p .cache/*)',
+  'Read', 'Write', 'Edit', 'Grep', 'Glob', 'Agent', 'SendMessage', 'Skill', 'WebSearch', 'WebFetch', 'TaskCreate', 'TaskUpdate', 'TaskList',
+]
+
 const SITZUNG = /^(CLAUDECODE|CLAUDE_PID|SESSION_INGRESS_URL|CLAUDE_SESSION_INGRESS_TOKEN_FILE|CLAUDE_CODE_(SESSION_ID|REMOTE_SESSION_ID|MESSAGING_.*|POST_FOR_SESSION_INGRESS_V2|TEE_SDK_STDOUT|SYNC_.*|CHILD_SESSION|DIAGNOSTICS_FILE|INCLUDE_PARTIAL_MESSAGES|ENTRYPOINT))$/
 
 function starteClaude(repo: string, themen: number[], protokoll: string, zusatz: string[]): Promise<number> {
   const args = [
     '-p', `/thema-erfassen ${themen.join(' ')} --bund`,
     '--output-format', 'stream-json', '--verbose',
-    '--permission-mode', option('rechte') ?? 'bypassPermissions',
+    // Ohne Bildschirm fragt niemand nach: Nur die Werkzeuge des Skills sind frei, alles andere wird abgelehnt
+    // und steht als abgelehnter Aufruf im Ereignisprotokoll.
+    '--permission-mode', option('rechte') ?? 'dontAsk',
+    '--allowedTools', ...ERLAUBT,
     '--append-system-prompt', EVAL_HINWEIS,
     '--disallowedTools', 'Bash(git push:*)', 'mcp__github__create_pull_request',
     ...zusatz,

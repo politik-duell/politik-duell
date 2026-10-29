@@ -163,6 +163,8 @@ export interface Ablauf {
   agenten: Record<string, { anzahl: number; dauer_s: number }>
   /** Regeln des Skills, die der Lauf verletzt hat. */
   verstoesse: string[]
+  /** Aufrufe außerhalb der erlaubten Werkzeuge (vom Rechte-Modus abgelehnt). */
+  abgelehnt: string[]
   commit: boolean
 }
 
@@ -182,7 +184,7 @@ const PROGRAMMTEXT = /\.cache\/(texte|programme)\//
 export function leseAblauf(ereignisse: Ereignis[]): Ablauf {
   const w = werkzeuge(ereignisse)
   const ergebnis = ereignisse.findLast((e) => e.type === 'result') as
-    | (Ereignis & { is_error?: boolean; total_cost_usd?: number; num_turns?: number; modelUsage?: Record<string, Record<string, number>> })
+    | (Ereignis & { is_error?: boolean; total_cost_usd?: number; num_turns?: number; permission_denials?: { tool_name: string; tool_input?: Record<string, unknown> }[]; modelUsage?: Record<string, Record<string, number>> })
     | undefined
   const tokens: Record<string, number> = {}
   for (const [modell, n] of Object.entries(ergebnis?.modelUsage ?? {}))
@@ -218,6 +220,7 @@ export function leseAblauf(ereignisse: Ereignis[]): Ablauf {
     tokens,
     agenten,
     verstoesse,
+    abgelehnt: (ergebnis?.permission_denials ?? []).map((d) => `${d.tool_name} ${String(d.tool_input?.command ?? d.tool_input?.file_path ?? '').slice(0, 80)}`.trim()),
     commit: w.some((x) => x.name === 'Bash' && /\bgit\s+commit\b/.test(String(x.input.command ?? ''))),
   }
 }
@@ -295,6 +298,7 @@ export function bericht(variante: string, laeufe: LaufErgebnis[]): string {
       }),
   )
   const verstoesse = laeufe.flatMap((l) => l.ablauf.verstoesse.map((v) => `- ${l.lauf}: ${v}`))
+  const abgelehnt = laeufe.flatMap((l) => (l.ablauf.abgelehnt ?? []).map((v) => `- ${l.lauf}: ${v}`))
   const agenten = [...new Set(laeufe.flatMap((l) => Object.keys(l.ablauf.agenten)))].sort()
     .map((typ) => `${typ} ${mittel(laeufe.map((l) => l.ablauf.agenten[typ]?.anzahl ?? 0)).toFixed(1)}`)
   return `## Variante ${variante} (${laeufe.length} ${laeufe.length === 1 ? 'Lauf' : 'Läufe'})
@@ -316,5 +320,9 @@ ${einzeln.join('\n') || 'keine'}
 ### Regelverstöße im Ablauf
 
 ${verstoesse.join('\n') || 'keine'}
+
+### Abgelehnte Aufrufe (außerhalb der erlaubten Werkzeuge)
+
+${abgelehnt.join('\n') || 'keine'}
 `
 }

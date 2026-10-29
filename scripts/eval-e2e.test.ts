@@ -83,12 +83,13 @@ describe('End-to-End-Eval (eval:e2e)', () => {
       werkzeug(61000, 'a2', 'Agent', { subagent_type: 'blind-bewertung', model: 'sonnet' }),
       werkzeug(62000, 'w3', 'Read', { file_path: '/repo/.cache/texte/abc.json' }),
       werkzeug(70000, 'w4', 'Bash', { command: 'git commit -m x && git push -u origin x' }),
-      { t: 71000, type: 'result', is_error: false, total_cost_usd: 3.5, num_turns: 40, modelUsage: { 'claude-haiku': { inputTokens: 10, outputTokens: 5, cacheReadInputTokens: 100 } } },
+      { t: 71000, type: 'result', is_error: false, total_cost_usd: 3.5, num_turns: 40, modelUsage: { 'claude-haiku': { inputTokens: 10, outputTokens: 5, cacheReadInputTokens: 100 } }, permission_denials: [{ tool_name: 'Bash', tool_input: { command: 'rm -rf x' } }] },
     ])
     expect(a.agenten['programm-erfassung']).toEqual({ anzahl: 1, dauer_s: 4 })
     expect(a.agenten['blind-bewertung'].anzahl).toBe(1)
     expect(a.tokens).toEqual({ 'claude-haiku': 115 })
     expect(a.commit).toBe(true)
+    expect(a.abgelehnt).toEqual(['Bash rm -rf x'])
     expect(a.fehler).toBe(false)
     // Lesen im Agenten ist erlaubt, in der Koordination nicht.
     expect(a.verstoesse).toHaveLength(3)

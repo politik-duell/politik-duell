@@ -77,7 +77,7 @@ Ergebnis je Lauf unter `.cache/eval-e2e/<variante>/<nr>/`:
 Danach wird die Arbeitskopie entfernt, außer mit `--behalten`. `auswerten` wertet alle Läufe neu aus, so gelten geänderte Goldfälle auch für alte Läufe.
 
 - `--trocken` legt die Arbeitskopie nur an und prüft sie (`daten:pruefen`, `ursachen:freigegeben`), ohne `claude` zu starten.
-- `--rechte <Modus>` setzt den Rechte-Modus von `claude`, Standard `bypassPermissions`: Der Lauf ist unbeaufsichtigt und schreibt nur in die Arbeitskopie.
+- Rechte: Der Lauf ist unbeaufsichtigt, darum `--permission-mode dontAsk` mit einer festen Liste (`ERLAUBT` in `scripts/eval-e2e.ts`: npm-Skripte, `git add`/`commit`, Lesen und Schreiben, Agenten, Websuche). Alles andere wird ohne Rückfrage abgelehnt und steht im Ereignisprotokoll – braucht der Skill mehr, ist das ein Befund. `--rechte <Modus>` setzt einen anderen Modus.
 - `--claude …` gibt weitere Argumente an `claude` weiter, etwa `--model`.
 
 **Kosten:** Ein Lauf entspricht einem echten `/thema-erfassen` mit zwei Themen und sechs bis sieben Programmen, also Erfassung (Haiku), Bewertung (Opus) und Folgen (Sonnet). Grob ein bis zwei Millionen Tokens und rund eine halbe Stunde. Das Eval ist darum nicht Teil der CI. Geprüft werden dort nur die Goldfälle und die Auswertung (`scripts/eval-e2e.test.ts`).
