@@ -166,6 +166,8 @@ function vorbereiten(repo: string, ref: string, themen: number[]) {
   git('-c', 'user.name=eval', '-c', 'user.email=eval@localhost', 'commit', '-m', `Eval: Bundes-Erfassung der Themen ${themen.join(', ')} entfernt`)
 }
 
+const SITZUNG = /^(CLAUDECODE|CLAUDE_PID|SESSION_INGRESS_URL|CLAUDE_SESSION_INGRESS_TOKEN_FILE|CLAUDE_CODE_(SESSION_ID|REMOTE_SESSION_ID|MESSAGING_.*|POST_FOR_SESSION_INGRESS_V2|TEE_SDK_STDOUT|SYNC_.*|CHILD_SESSION|DIAGNOSTICS_FILE|INCLUDE_PARTIAL_MESSAGES|ENTRYPOINT))$/
+
 function starteClaude(repo: string, themen: number[], protokoll: string, zusatz: string[]): Promise<number> {
   const args = [
     '-p', `/thema-erfassen ${themen.join(' ')} --bund`,
@@ -177,7 +179,9 @@ function starteClaude(repo: string, themen: number[], protokoll: string, zusatz:
   ]
   const start = Date.now()
   const aus = createWriteStream(protokoll)
-  const kind = spawn('claude', args, { cwd: repo, stdio: ['ignore', 'pipe', 'inherit'], env: { ...process.env, IS_SANDBOX: process.env.IS_SANDBOX ?? '1' } })
+  // Aus einer laufenden Claude-Code-Sitzung gestartet: deren Sitzungsbezug nicht erben, sonst schreibt der Lauf in sie.
+  const env = Object.fromEntries(Object.entries(process.env).filter(([k]) => !SITZUNG.test(k)))
+  const kind = spawn('claude', args, { cwd: repo, stdio: ['ignore', 'pipe', 'inherit'], env: { ...env, IS_SANDBOX: process.env.IS_SANDBOX ?? '1' } })
   let rest = ''
   kind.stdout.on('data', (d: Buffer) => {
     const zeilen = (rest + d.toString()).split('\n')
