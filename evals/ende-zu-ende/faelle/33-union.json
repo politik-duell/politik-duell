@@ -1,0 +1,25 @@
+{
+  "id": "33-union",
+  "skill": "thema-erfassen",
+  "thema_id": 33,
+  "partei_id": 11,
+  "land": null,
+  "herkunft": "daten/themen/33-mediennutzung-von-kindern-und-jugendlichen.json (Stand 2026-10-06, KI-Entwurf); verboten: verworfene Stellen aus daten/protokolle/33/2026-10-06-bund-land-BE-MV-ST",
+  "geprueft": null,
+  "erwartet": [
+    {
+      "seite": 41,
+      "zitat": "Wir sorgen dafür, dass ein ausreichender Kinder- und Jugendschutz auch im Internet gewährleistet wird. Das gilt auch für Soziale Medien als wichtige Plattformen des Austauschs und der Information. Wir stellen sicher, dass bei der Umsetzung des Digital Services Act der Schwerpunkt auf mehr Transparenz, Kampf gegen Desinformation sowie Jugend- und Medienschutz gelegt wird.",
+      "ursachen_ids": [3301],
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3
+    }
+  ],
+  "verboten": [
+    {
+      "seite": 66,
+      "zitat": "Diese werden wir schnellstmöglich wissenschaftlich basiert bewerten und ein Maßnahmenpaket zur Stärkung von Gesundheit- und Jugendmedienschutz vorlegen.",
+      "grund": "Bewertung ohne Parteinamen (2026-10-06-bund-land-BE-MV-ST): setzt an keiner Ursache an"
+    }
+  ]
+}

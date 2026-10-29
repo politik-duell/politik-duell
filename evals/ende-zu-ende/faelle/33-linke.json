@@ -1,0 +1,24 @@
+{
+  "id": "33-linke",
+  "skill": "thema-erfassen",
+  "thema_id": 33,
+  "partei_id": 16,
+  "land": null,
+  "herkunft": "daten/themen/33-mediennutzung-von-kindern-und-jugendlichen.json (Stand 2026-10-06, KI-Entwurf); verboten: verworfene Stellen aus daten/protokolle/33/2026-10-06-bund-land-BE-MV-ST",
+  "geprueft": null,
+  "erwartet": [
+    {
+      "seite": 39,
+      "zitat": "Die Medien- und Datenschutzkompetenz von Kindern und Jugendlichen muss möglichst früh gefördert werden.",
+      "ursachen_ids": [3303]
+    },
+    {
+      "seite": 57,
+      "zitat": "Die EU-Gesetze über Künstliche Intelligenz (AI Act) und über digitale Dienste (Digital Services Act) müssen zügig in nationales Recht überführt und perspektivisch weiterentwickelt werden.",
+      "ursachen_ids": [3301],
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3
+    }
+  ],
+  "verboten": []
+}

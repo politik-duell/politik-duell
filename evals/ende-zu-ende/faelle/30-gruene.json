@@ -1,0 +1,49 @@
+{
+  "id": "30-gruene",
+  "skill": "thema-erfassen",
+  "thema_id": 30,
+  "partei_id": 13,
+  "land": null,
+  "herkunft": "daten/themen/30-sucht-und-gluecksspiel.json (Stand 2026-10-06, KI-Entwurf); verboten: verworfene Stellen aus daten/protokolle/30/2026-10-06-bund-land-BE-MV-ST",
+  "geprueft": null,
+  "erwartet": [
+    {
+      "seite": 94,
+      "zitat": "Nach dem Grundsatz der Verhältnisprävention wollen wir […] die Werbung für diese Produkte stärker regulieren.",
+      "ursachen_ids": [3003],
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3
+    },
+    {
+      "seite": 94,
+      "zitat": "Dabei setzen wir uns auch für einen starken Nichtraucher*innenschutz ein, unter anderem durch die Einführung von einheitlichen, neutralen Verpackungen ohne Markenlogos.",
+      "ursachen_ids": [3003]
+    },
+    {
+      "seite": 96,
+      "zitat": "An dem Ziel des Verkaufs von Cannabis in lizenzierten Fachgeschäften halten wir weiter fest und setzen uns auf europäischer und internationaler Ebene dafür ein, auch um damit den Schwarzmarkt und die Organisierte Kriminalität weiter einzudämmen.",
+      "ursachen_ids": [3005],
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1
+    },
+    {
+      "seite": 96,
+      "zitat": "Die Bekämpfung der Drogenkriminalität muss sich auf den organisierten Handel und die dahinterstehenden Strukturen der Organisierten Kriminalität fokussieren, dafür werden wir die Kriminalpolizei und den Zoll entsprechend stärken.",
+      "ursachen_ids": [3005]
+    },
+    {
+      "seite": 96,
+      "zitat": "Gleichzeitig wollen wir die Angebote für Prävention, Therapie und den Gesundheitsschutz auch bei legalen Suchtmitteln ausbauen und Menschen unterstützen, damit sie gar nicht erst abhängig werden oder ihnen besser geholfen werden kann, wenn sie suchtkrank sind.",
+      "ursachen_ids": [3006],
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2
+    }
+  ],
+  "verboten": [
+    {
+      "seite": 94,
+      "zitat": "Nach dem Grundsatz der Verhältnisprävention wollen wir Produzenten von gesundheitsschädlichen Produkten wie Tabak und Alkohol stärker an den enormen Folgekosten am Gesundheitssystem beteiligen",
+      "grund": "Bewertung ohne Parteinamen (2026-10-06-bund-land-BE-MV-ST): setzt an keiner Ursache an"
+    }
+  ]
+}

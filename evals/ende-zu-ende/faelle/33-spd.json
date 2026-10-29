@@ -1,0 +1,28 @@
+{
+  "id": "33-spd",
+  "skill": "thema-erfassen",
+  "thema_id": 33,
+  "partei_id": 12,
+  "land": null,
+  "herkunft": "daten/themen/33-mediennutzung-von-kindern-und-jugendlichen.json (Stand 2026-10-06, KI-Entwurf); verboten: verworfene Stellen aus daten/protokolle/33/2026-10-06-bund-land-BE-MV-ST",
+  "geprueft": null,
+  "erwartet": [
+    {
+      "seite": 45,
+      "zitat": "Plattformbetreiber werden verpflichtet, illegale Inhalte zu entfernen, während wir gleichzeitig den Jugendschutz stärken, etwa durch effektive Möglichkeiten zur Altersverifikation.",
+      "ursachen_ids": [3301]
+    },
+    {
+      "seite": 50,
+      "zitat": "Plattformen sollen verpflichtet werden, ihre Algorithmen und Entscheidungsprozesse zur Inhaltsdarstellung offenzulegen und auf diskriminierende oder manipulative Praktiken zu prüfen.",
+      "ursachen_ids": [3301]
+    }
+  ],
+  "verboten": [
+    {
+      "seite": 49,
+      "zitat": "Wir setzen uns dafür ein, Programme zur Förderung der Medien- und Nachrichtenkompetenz für alle Altersgruppen auszubauen, um Manipulation und Desinformation entgegenzuwirken.",
+      "grund": "Bewertung ohne Parteinamen (2026-10-06-bund-land-BE-MV-ST): setzt an keiner Ursache an"
+    }
+  ]
+}

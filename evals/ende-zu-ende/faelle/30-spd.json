@@ -1,0 +1,32 @@
+{
+  "id": "30-spd",
+  "skill": "thema-erfassen",
+  "thema_id": 30,
+  "partei_id": 12,
+  "land": null,
+  "herkunft": "daten/themen/30-sucht-und-gluecksspiel.json (Stand 2026-10-06, KI-Entwurf); verboten: verworfene Stellen aus daten/protokolle/30/2026-10-06-bund-land-BE-MV-ST",
+  "geprueft": null,
+  "erwartet": [
+    {
+      "seite": 28,
+      "zitat": "Wir wollen strengere Regulierungen, Werbebeschränkungen und Altersgrenzen für Energy- Drinks, Alkohol, Einweg-Zigaretten und neuartige Nikotinprodukte.",
+      "ursachen_ids": [3003],
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 3
+    },
+    {
+      "seite": 46,
+      "zitat": "Bei Cannabis wollen wir, um den Gesundheitsschutz, den Jugendschutz und den Kampf gegen die Organisierte Kriminalität zu verbessern, die notwendigen Schritte einleiten, um eine europarechtskonforme Legalisierung zu ermöglichen.",
+      "ursachen_ids": [3005],
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1
+    }
+  ],
+  "verboten": [
+    {
+      "seite": 30,
+      "zitat": "Zudem wollen wir die Suchtprävention und die Prävention psychischer Erkrankungen stärken.",
+      "grund": "Bewertung ohne Parteinamen (2026-10-06-bund-land-BE-MV-ST): setzt an keiner Ursache an"
+    }
+  ]
+}

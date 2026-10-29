@@ -1,0 +1,23 @@
+{
+  "id": "30-fdp",
+  "skill": "thema-erfassen",
+  "thema_id": 30,
+  "partei_id": 14,
+  "land": null,
+  "herkunft": "daten/themen/30-sucht-und-gluecksspiel.json (Stand 2026-10-06, KI-Entwurf); verboten: verworfene Stellen aus daten/protokolle/30/2026-10-06-bund-land-BE-MV-ST",
+  "geprueft": null,
+  "erwartet": [
+    {
+      "seite": 34,
+      "zitat": "Bei Cannabis haben wir bereits einen entscheidenden ersten Schritt gemacht, der hilft, den Schwarzmarkt einzudämmen und zugleich Qualität und Jugendschutz zu sichern. Wir halten deshalb an der Cannabis-Legalisierung fest.",
+      "ursachen_ids": [3005]
+    }
+  ],
+  "verboten": [
+    {
+      "seite": 34,
+      "zitat": "Wir Freie Demokraten wollen die Prävention auch bei Suchtmitteln in den Fokus rücken. Statt das Konsumverhalten zu kriminalisieren, wollen wir durch Aufklärung zu einem verantwortungsfähigen Umgang mit Suchtmitteln verhelfen.",
+      "grund": "Bewertung ohne Parteinamen (2026-10-06-bund-land-BE-MV-ST): setzt an keiner Ursache an"
+    }
+  ]
+}

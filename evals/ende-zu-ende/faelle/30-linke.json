@@ -1,0 +1,41 @@
+{
+  "id": "30-linke",
+  "skill": "thema-erfassen",
+  "thema_id": 30,
+  "partei_id": 16,
+  "land": null,
+  "herkunft": "daten/themen/30-sucht-und-gluecksspiel.json (Stand 2026-10-06, KI-Entwurf); verboten: verworfene Stellen aus daten/protokolle/30/2026-10-06-bund-land-BE-MV-ST",
+  "geprueft": null,
+  "erwartet": [
+    {
+      "seite": 20,
+      "zitat": "Wir wollen ein Werbe- und Sponsoring-Verbot für Tabak, Alkohol, andere Drogen sowie Glücksspielangebote einführen, begleitet von Aufklärungskampagnen zu Alkohol-, Drogen und Spielsucht.",
+      "ursachen_ids": [3003]
+    },
+    {
+      "seite": 20,
+      "zitat": "Wir wollen Drogenkonsum vollständig entkriminalisieren und medizinische und sozialarbeiterische Interventions- programme schaffen, um Drogen endlich angemessen zu regulieren.",
+      "ursachen_ids": [3005]
+    },
+    {
+      "seite": 20,
+      "zitat": "Wir wollen eine vollständige Legalisierung von Cannabis und die dafür notwendigen Änderungen auf EU- und UN-Ebene durchsetzen.",
+      "ursachen_ids": [3005],
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 1
+    },
+    {
+      "seite": 20,
+      "zitat": "Deshalb wollen wir einen flächendeckenden Zugang zu Drogenkonsumräumen, sterilen Konsumutensilien und Medikamenten gegen Überdosierung. Die Analyse von Drogen auf gefährliche Beimischungen und Verunreinigungen (Drugchecking) muss flächendeckend verfügbar sein.",
+      "ursachen_ids": [3005]
+    },
+    {
+      "seite": 20,
+      "zitat": "Wir stärken Präventions-, Beratungs- und Hilfsangebote.",
+      "ursachen_ids": [3006],
+      "wirksamkeit": 2,
+      "umsetzbarkeit": 2
+    }
+  ],
+  "verboten": []
+}

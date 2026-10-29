@@ -15,6 +15,7 @@
     "dashboard": "npm run seed && node --experimental-strip-types scripts/erzeuge-dashboard.ts",
     "daten:pruefen": "node --experimental-strip-types scripts/pruefe-daten.ts",
     "ki:testset": "node --experimental-strip-types --no-warnings scripts/ki-testset.ts",
+    "eval:e2e": "node --experimental-strip-types --no-warnings scripts/eval-e2e.ts",
     "pruefliste": "node --experimental-strip-types scripts/erzeuge-pruefliste.ts",
     "haltung:pruefliste": "node --experimental-strip-types scripts/erzeuge-haltung-pruefliste.ts",
     "haltung:auswerten": "node --experimental-strip-types scripts/haltung-auswerten.ts",

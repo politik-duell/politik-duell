@@ -1,0 +1,25 @@
+{
+  "id": "30-union",
+  "skill": "thema-erfassen",
+  "thema_id": 30,
+  "partei_id": 11,
+  "land": null,
+  "herkunft": "daten/themen/30-sucht-und-gluecksspiel.json (Stand 2026-10-06, KI-Entwurf); verboten: verworfene Stellen aus daten/protokolle/30/2026-10-06-bund-land-BE-MV-ST",
+  "geprueft": null,
+  "erwartet": [
+    {
+      "seite": 39,
+      "zitat": "Die Ampel ist mit ihrem Cannabis-Gesetz gescheitert. Es begrenzt weder den Konsum, noch drängt es den Schwarzmarkt zurück. […] Die Legalisierung dieser Droge nehmen wir deshalb zurück.",
+      "ursachen_ids": [3005],
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 3
+    }
+  ],
+  "verboten": [
+    {
+      "seite": 47,
+      "zitat": "Wir stärken die Zusammenarbeit von Europol mit den Polizeien der Mitgliedstaaten. […] im Kampf gegen Organisierte Kriminalität, insbesondere Drogen- und Schleuserkriminalität, Cyberkriminalität und Terrorismus.",
+      "grund": "Bewertung ohne Parteinamen (2026-10-06-bund-land-BE-MV-ST): setzt an keiner Ursache an"
+    }
+  ]
+}

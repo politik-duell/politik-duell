@@ -1,0 +1,35 @@
+{
+  "id": "33-gruene",
+  "skill": "thema-erfassen",
+  "thema_id": 33,
+  "partei_id": 13,
+  "land": null,
+  "herkunft": "daten/themen/33-mediennutzung-von-kindern-und-jugendlichen.json (Stand 2026-10-06, KI-Entwurf); verboten: verworfene Stellen aus daten/protokolle/33/2026-10-06-bund-land-BE-MV-ST",
+  "geprueft": null,
+  "erwartet": [
+    {
+      "seite": 85,
+      "zitat": "Manipulative Algorithmen von Social-Media-Plattformen wollen wir strenger regulieren. Algorithmen, die gezielt darauf ausgerichtet sind, unsere Kinder süchtig zu machen, werden wir nicht dulden.",
+      "ursachen_ids": [3301]
+    },
+    {
+      "seite": 85,
+      "zitat": "Eltern unterstützen wir mit Voreinstellungen für sichere Dienste und Geräte (kids-safety-by-default) sowie Datenschutzregelungen, die die Privatsphäre von Kindern und Jugendlichen schützen.",
+      "ursachen_ids": [3303, 3301]
+    },
+    {
+      "seite": 77,
+      "zitat": "Außerdem setzen wir auf den Aufbau von digitalen Fähigkeiten, Medienkompetenz und auf den verantwortlichen Einsatz von Künstlicher Intelligenz (KI).",
+      "ursachen_ids": [3303],
+      "wirksamkeit": 1,
+      "umsetzbarkeit": 1
+    }
+  ],
+  "verboten": [
+    {
+      "seite": 85,
+      "zitat": "Gleichzeitig soll ein Bürgerrat unter Einbeziehung von Kindern und Jugendlichen zu aktuellen Fragen des digitalen Kinder- und Jugendschutzes eingesetzt werden. Ziel ist es, bis Ende der Wahlperiode ein weiteres Maßnahmenpaket im Deutschen Bundestag zu beschließen.",
+      "grund": "Bewertung ohne Parteinamen (2026-10-06-bund-land-BE-MV-ST): setzt an keiner Ursache an"
+    }
+  ]
+}
