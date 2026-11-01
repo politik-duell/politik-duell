@@ -95,6 +95,13 @@ describe('End-to-End-Eval (eval:e2e)', () => {
     expect(a.verstoesse).toHaveLength(3)
     expect(a.verstoesse.join('\n')).toMatch(/model=sonnet[\s\S]*liest Programmtext[\s\S]*git push/)
     expect(leseAblauf([]).abgeschlossen).toBe(false)
+    // Abbruch in einem früheren Abschluss (Nutzungslimit), danach noch ein leerer Abschluss
+    const abbruch = leseAblauf([
+      { t: 1, type: 'result', is_error: false, num_turns: 15, total_cost_usd: 1 },
+      { t: 2, type: 'result', is_error: true, num_turns: 1, total_cost_usd: 5, result: 'You have hit your limit' },
+      { t: 3, type: 'result', is_error: false, num_turns: 0, total_cost_usd: 5 },
+    ])
+    expect(abbruch).toMatchObject({ abgeschlossen: false, fehler: true, fehlermeldung: 'You have hit your limit', zuege: 16, kosten_usd: 5 })
   })
 
   it('gekippte Fälle zwischen zwei Varianten (Mehrheit der Läufe)', () => {

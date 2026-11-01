@@ -80,7 +80,7 @@ Danach wird die Arbeitskopie entfernt, außer mit `--behalten`. `auswerten` wert
 - Rechte: Der Lauf ist unbeaufsichtigt, darum `--permission-mode dontAsk` mit einer festen Liste (`ERLAUBT` in `scripts/eval-e2e.ts`: npm-Skripte, `git add`/`commit`, Lesen und Schreiben, Agenten, Websuche). Alles andere wird ohne Rückfrage abgelehnt und steht im Ereignisprotokoll – braucht der Skill mehr, ist das ein Befund. `--rechte <Modus>` setzt einen anderen Modus.
 - `--claude …` gibt weitere Argumente an `claude` weiter, etwa `--model`.
 
-**Kosten:** Ein Lauf entspricht einem echten `/thema-erfassen` mit zwei Themen und sechs bis sieben Programmen, also Erfassung (Haiku), Bewertung (Opus) und Folgen (Sonnet). Grob ein bis zwei Millionen Tokens und rund eine halbe Stunde. Das Eval ist darum nicht Teil der CI. Geprüft werden dort nur die Goldfälle und die Auswertung (`scripts/eval-e2e.test.ts`).
+**Kosten:** Ein Lauf entspricht einem echten `/thema-erfassen` mit zwei Themen und sechs bis sieben Programmen, also Erfassung (Haiku), Bewertung (Opus) und Folgen (Sonnet). Grob ein bis zwei Millionen Tokens und rund eine halbe Stunde. Mehrere Läufe hintereinander können das Nutzungslimit des Kontos erreichen. Der Lauf bricht dann ab und steht im Bericht unter „Abbrüche“. Bereits eingetragene Maßnahmen werden trotzdem gewertet. Das Eval ist darum nicht Teil der CI. Geprüft werden dort nur die Goldfälle und die Auswertung (`scripts/eval-e2e.test.ts`).
 
 ## Varianten vergleichen
 

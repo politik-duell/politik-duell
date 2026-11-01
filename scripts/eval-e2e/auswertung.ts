@@ -155,6 +155,7 @@ interface Werkzeug { id: string; name: string; input: Record<string, unknown>; p
 export interface Ablauf {
   abgeschlossen: boolean
   fehler: boolean
+  fehlermeldung?: string
   dauer_s: number
   kosten_usd: number | null
   zuege: number | null
@@ -183,9 +184,12 @@ const PROGRAMMTEXT = /\.cache\/(texte|programme)\//
 
 export function leseAblauf(ereignisse: Ereignis[]): Ablauf {
   const w = werkzeuge(ereignisse)
-  const ergebnis = ereignisse.findLast((e) => e.type === 'result') as
-    | (Ereignis & { is_error?: boolean; total_cost_usd?: number; num_turns?: number; permission_denials?: { tool_name: string; tool_input?: Record<string, unknown> }[]; modelUsage?: Record<string, Record<string, number>> })
-    | undefined
+  // Mit Agenten im Hintergrund endet jeder Zug der Koordination mit einem eigenen Abschluss; Kosten und Tokens darin
+  // sind kumuliert (der letzte zählt), Fehler (etwa ein erreichtes Nutzungslimit) können in jedem stehen.
+  const abschluesse = ereignisse.filter((e) => e.type === 'result') as
+    (Ereignis & { is_error?: boolean; result?: string; total_cost_usd?: number; num_turns?: number; permission_denials?: { tool_name: string; tool_input?: Record<string, unknown> }[]; modelUsage?: Record<string, Record<string, number>> })[]
+  const ergebnis = abschluesse.at(-1)
+  const fehlschlag = abschluesse.find((e) => e.is_error)
   const tokens: Record<string, number> = {}
   for (const [modell, n] of Object.entries(ergebnis?.modelUsage ?? {}))
     tokens[modell] = (n.inputTokens ?? 0) + (n.outputTokens ?? 0) + (n.cacheReadInputTokens ?? 0) + (n.cacheCreationInputTokens ?? 0)
@@ -212,15 +216,16 @@ export function leseAblauf(ereignisse: Ereignis[]): Ablauf {
     if (/create_pull_request/.test(x.name)) verstoesse.push('Pull Request im Eval-Lauf')
   }
   return {
-    abgeschlossen: !!ergebnis,
-    fehler: !ergebnis || !!ergebnis.is_error,
+    abgeschlossen: !!ergebnis && !fehlschlag,
+    fehler: !ergebnis || !!fehlschlag,
+    fehlermeldung: fehlschlag?.result?.slice(0, 120),
     dauer_s: Math.round((ereignisse.at(-1)?.t ?? 0) / 1000),
     kosten_usd: ergebnis?.total_cost_usd ?? null,
-    zuege: ergebnis?.num_turns ?? null,
+    zuege: ergebnis ? abschluesse.reduce((n, e) => n + (e.num_turns ?? 0), 0) : null,
     tokens,
     agenten,
     verstoesse,
-    abgelehnt: (ergebnis?.permission_denials ?? []).map((d) => `${d.tool_name} ${String(d.tool_input?.command ?? d.tool_input?.file_path ?? '').slice(0, 80)}`.trim()),
+    abgelehnt: abschluesse.flatMap((e) => e.permission_denials ?? []).map((d) => `${d.tool_name} ${String(d.tool_input?.command ?? d.tool_input?.file_path ?? '').slice(0, 80)}`.trim()),
     commit: w.some((x) => x.name === 'Bash' && /\bgit\s+commit\b/.test(String(x.input.command ?? ''))),
   }
 }
@@ -297,7 +302,10 @@ export function bericht(variante: string, laeufe: LaufErgebnis[]): string {
         return `- ${l.lauf} · ${f.id}: ${teile.join('; ') || 'keine Maßnahme erwartet, aber erfasst'}`
       }),
   )
-  const verstoesse = laeufe.flatMap((l) => l.ablauf.verstoesse.map((v) => `- ${l.lauf}: ${v}`))
+  const verstoesse = laeufe.flatMap((l) => [
+    ...(l.ablauf.fehlermeldung ? [`- ${l.lauf}: abgebrochen – ${l.ablauf.fehlermeldung}`] : []),
+    ...l.ablauf.verstoesse.map((v) => `- ${l.lauf}: ${v}`),
+  ])
   const abgelehnt = laeufe.flatMap((l) => (l.ablauf.abgelehnt ?? []).map((v) => `- ${l.lauf}: ${v}`))
   const agenten = [...new Set(laeufe.flatMap((l) => Object.keys(l.ablauf.agenten)))].sort()
     .map((typ) => `${typ} ${mittel(laeufe.map((l) => l.ablauf.agenten[typ]?.anzahl ?? 0)).toFixed(1)}`)
@@ -317,7 +325,7 @@ ${zeilen.join('\n')}
 
 ${einzeln.join('\n') || 'keine'}
 
-### Regelverstöße im Ablauf
+### Abbrüche und Regelverstöße im Ablauf
 
 ${verstoesse.join('\n') || 'keine'}
 
