@@ -42,7 +42,7 @@ function leseFaelle(): Fall[] {
   return readdirSync(FAELLE).filter((f) => f.endsWith('.json')).sort().map((f) => leseJson(join(FAELLE, f)))
 }
 
-/** Maßnahmen eines Bundesprogramms in einer Themendatei, mit den Werten ihres Instruments. */
+/** Maßnahmen eines Bundesprogramms in einer Themendatei, mit ihren Werten (einzeln bewertet oder über ihr Instrument). */
 function laufProgramm(thema: Json, partei: number): LaufProgramm {
   const eintrag = (thema.abdeckung as Json[]).find((a) => a.partei_id === partei && !a.land)
   if (!eintrag) return { erfasst: false }
@@ -51,8 +51,8 @@ function laufProgramm(thema: Json, partei: number): LaufProgramm {
     seite: seiteAus(m.beleg_programm_url),
     zitat: m.zitat,
     ursachen_ids: m.ursachen_ids,
-    wirksamkeit: instrumente.get(m.instrument)?.wirksamkeit,
-    umsetzbarkeit: instrumente.get(m.instrument)?.umsetzbarkeit,
+    wirksamkeit: m.wirksamkeit ?? instrumente.get(m.instrument)?.wirksamkeit,
+    umsetzbarkeit: m.umsetzbarkeit ?? instrumente.get(m.instrument)?.umsetzbarkeit,
   }))
   return { erfasst: true, stellen }
 }
@@ -115,8 +115,8 @@ function gold(themen: number[], ueberschreiben: boolean) {
         seite: seiteAus(m.beleg_programm_url),
         zitat: m.zitat,
         ursachen_ids: m.ursachen_ids,
-        wirksamkeit: instrumente.get(m.instrument)?.wirksamkeit,
-        umsetzbarkeit: instrumente.get(m.instrument)?.umsetzbarkeit,
+        wirksamkeit: m.wirksamkeit ?? instrumente.get(m.instrument)?.wirksamkeit,
+        umsetzbarkeit: m.umsetzbarkeit ?? instrumente.get(m.instrument)?.umsetzbarkeit,
       }))
       const verboten = (verworfen?.stellen ?? [])
         .filter((s) => s.partei_id === a.partei_id && !erwartet.some((g) => gleicheStelle(g, s)))
