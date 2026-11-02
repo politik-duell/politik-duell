@@ -4,23 +4,27 @@
   "thema_id": 30,
   "partei_id": 15,
   "land": null,
-  "herkunft": "daten/themen/30-sucht-und-gluecksspiel.json (Stand 2026-10-06, KI-Entwurf); verboten: verworfene Stellen aus daten/protokolle/30/2026-10-06-bund-land-BE-MV-ST",
-  "geprueft": null,
+  "herkunft": "daten/themen/30-sucht-und-gluecksspiel.json (Stand 2026-10-06, KI-Entwurf); verboten: verworfene Stellen aus daten/protokolle/30/2026-10-06-bund-land-BE-MV-ST; Durchsicht 2026-11-02: Empfehlungen von Claude (ohne Parteinamen, Regel in README) gesammelt übernommen",
+  "geprueft": {
+    "von": "Betreiberin",
+    "am": "2026-11-02"
+  },
   "erwartet": [
     {
       "seite": 32,
       "zitat": "Die Freigabe des Cannabiskonsums außerhalb bestimmter medizinischer Indikationen halten wir für einen Fehler, der umgehend korrigiert werden muss.",
       "ursachen_ids": [3005],
       "wirksamkeit": 1,
-      "umsetzbarkeit": 3
-    },
+      "umsetzbarkeit": 3,
+      "pflicht": true
+    }
+  ],
+  "verboten": [],
+  "neutral": [
     {
       "seite": 32,
       "zitat": "Unterstützend befürworten wir den Ausbau der suchtpsychiatrischen Versorgung, um die dauerhafte Abstinenz von Drogenkranken zu erreichen.",
-      "ursachen_ids": [3006],
-      "wirksamkeit": 2,
-      "umsetzbarkeit": 2
+      "grund": "Mehr suchtpsychiatrische Versorgung ist sinnvoll, setzt aber nicht an Scham und Abwertung an (3006). Gleiche Regel wie bei den anderen Versorgungs- und Präventionszusagen."
     }
-  ],
-  "verboten": []
+  ]
 }

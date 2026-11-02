@@ -25,6 +25,8 @@ export interface Fall {
   erwartet: GoldStelle[]
   /** Stellen, die nicht als Maßnahme zählen dürfen (z. B. von der Bewertung ohne Parteinamen verworfen). */
   verboten: { seite: number; zitat: string; grund: string }[]
+  /** Stellen, die man so oder so sehen kann: Erfasst ein Lauf sie, zählt das weder für noch gegen den Fall. */
+  neutral?: { seite: number; zitat: string; grund: string }[]
   /** Programm enthält nach dem Goldstandard nichts zum Thema – jede Maßnahme ist zusätzlich. */
   keine_massnahme?: boolean
 }
@@ -100,8 +102,13 @@ export function beurteileFall(f: Fall, p: LaufProgramm): FallUrteil {
     if (ab(g.wirksamkeit, passend.wirksamkeit) || ab(g.umsetzbarkeit, passend.umsetzbarkeit))
       u.bewertung_abweichend.push({ seite: g.seite, soll: `${g.wirksamkeit}×${g.umsetzbarkeit}`, ist: `${passend.wirksamkeit}×${passend.umsetzbarkeit}` })
   }
+  let neutrale = 0
   for (const [i, s] of p.stellen.entries()) {
     if (zugeordnet.has(i)) continue
+    if ((f.neutral ?? []).some((x) => gleicheStelle(x, s))) {
+      neutrale++
+      continue
+    }
     const v = f.verboten.find((x) => gleicheStelle(x, s))
     if (v) u.verbotene.push({ seite: s.seite, zitat: kurzZitat(s.zitat), grund: v.grund })
     else u.zusaetzlich.push({ seite: s.seite, zitat: kurzZitat(s.zitat) })
@@ -113,7 +120,7 @@ export function beurteileFall(f: Fall, p: LaufProgramm): FallUrteil {
     !u.falsche_ursache.length &&
     !u.bewertung_abweichend.length &&
     !u.verbotene.length &&
-    !(f.keine_massnahme && p.stellen.length)
+    !(f.keine_massnahme && p.stellen.length > neutrale)
   u.status = ok ? 'bestanden' : 'nicht_bestanden'
   return u
 }
@@ -131,7 +138,7 @@ export function pruefeFaelle(faelle: Fall[], themen: { id: number; ursachen: num
     if (!parteien.includes(f.partei_id)) fehler.push(`${f.id}: Partei ${f.partei_id} unbekannt`)
     if (f.keine_massnahme && f.erwartet.length) fehler.push(`${f.id}: keine_massnahme, aber ${f.erwartet.length} erwartete Stellen`)
     if (f.geprueft && (!f.geprueft.von || !/^\d{4}-\d{2}-\d{2}$/.test(f.geprueft.am))) fehler.push(`${f.id}: geprueft braucht von und am (JJJJ-MM-TT)`)
-    for (const s of [...f.erwartet, ...f.verboten]) {
+    for (const s of [...f.erwartet, ...f.verboten, ...(f.neutral ?? [])]) {
       if (!Number.isInteger(s.seite) || s.seite < 1) fehler.push(`${f.id}: Seite ${s.seite} ungültig`)
       if (woerter(s.zitat).length < 3) fehler.push(`${f.id}, S. ${s.seite}: Zitat zu kurz für den Abgleich`)
     }
@@ -141,6 +148,7 @@ export function pruefeFaelle(faelle: Fall[], themen: { id: number; ursachen: num
       for (const w of [g.wirksamkeit, g.umsetzbarkeit]) if (w !== undefined && ![0, 1, 2, 3].includes(w)) fehler.push(`${f.id}, S. ${g.seite}: Wert ${w} nicht 0–3`)
     }
     for (const v of f.verboten) if (f.erwartet.some((g) => gleicheStelle(g, v))) fehler.push(`${f.id}, S. ${v.seite}: Stelle ist zugleich erwartet und verboten`)
+    for (const n of f.neutral ?? []) if ([...f.erwartet, ...f.verboten].some((g) => gleicheStelle(g, n))) fehler.push(`${f.id}, S. ${n.seite}: neutrale Stelle ist zugleich erwartet oder verboten`)
   }
   return fehler
 }

@@ -4,15 +4,20 @@
   "thema_id": 33,
   "partei_id": 15,
   "land": null,
-  "herkunft": "daten/themen/33-mediennutzung-von-kindern-und-jugendlichen.json (Stand 2026-10-06, KI-Entwurf); verboten: verworfene Stellen aus daten/protokolle/33/2026-10-06-bund-land-BE-MV-ST",
-  "geprueft": null,
-  "erwartet": [],
-  "verboten": [
+  "herkunft": "daten/themen/33-mediennutzung-von-kindern-und-jugendlichen.json (Stand 2026-10-06, KI-Entwurf); verboten: verworfene Stellen aus daten/protokolle/33/2026-10-06-bund-land-BE-MV-ST; Durchsicht 2026-11-02: Empfehlungen von Claude (ohne Parteinamen, Regel in README) gesammelt übernommen",
+  "geprueft": {
+    "von": "Betreiberin",
+    "am": "2026-11-02"
+  },
+  "erwartet": [
     {
       "seite": 50,
       "zitat": "Deshalb lehnen wir auch die Implementierung des europäischen „Digital Services Act (DSA)“ in Deutschland entschieden ab und werden das NetzDG rückabwickeln.",
-      "grund": "Bewertung ohne Parteinamen (2026-10-06-bund-land-BE-MV-ST): setzt an keiner Ursache an"
+      "ursachen_ids": [3301],
+      "wirksamkeit": 0,
+      "umsetzbarkeit": 0
     }
   ],
-  "keine_massnahme": true
+  "verboten": [],
+  "neutral": []
 }

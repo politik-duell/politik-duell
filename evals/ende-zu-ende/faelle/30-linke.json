@@ -4,20 +4,24 @@
   "thema_id": 30,
   "partei_id": 16,
   "land": null,
-  "herkunft": "daten/themen/30-sucht-und-gluecksspiel.json (Stand 2026-10-06, KI-Entwurf); verboten: verworfene Stellen aus daten/protokolle/30/2026-10-06-bund-land-BE-MV-ST",
-  "geprueft": null,
+  "herkunft": "daten/themen/30-sucht-und-gluecksspiel.json (Stand 2026-10-06, KI-Entwurf); verboten: verworfene Stellen aus daten/protokolle/30/2026-10-06-bund-land-BE-MV-ST; Durchsicht 2026-11-02: Empfehlungen von Claude (ohne Parteinamen, Regel in README) gesammelt übernommen",
+  "geprueft": {
+    "von": "Betreiberin",
+    "am": "2026-11-02"
+  },
   "erwartet": [
     {
       "seite": 20,
       "zitat": "Wir wollen ein Werbe- und Sponsoring-Verbot für Tabak, Alkohol, andere Drogen sowie Glücksspielangebote einführen, begleitet von Aufklärungskampagnen zu Alkohol-, Drogen und Spielsucht.",
-      "ursachen_ids": [3003],
+      "ursachen_ids": [3003, 3004],
       "wirksamkeit": 3,
-      "umsetzbarkeit": 2
+      "umsetzbarkeit": 2,
+      "pflicht": true
     },
     {
       "seite": 20,
       "zitat": "Wir wollen Drogenkonsum vollständig entkriminalisieren und medizinische und sozialarbeiterische Interventions- programme schaffen, um Drogen endlich angemessen zu regulieren.",
-      "ursachen_ids": [3005],
+      "ursachen_ids": [3005, 3006],
       "wirksamkeit": 2,
       "umsetzbarkeit": 2
     },
@@ -33,15 +37,24 @@
       "zitat": "Deshalb wollen wir einen flächendeckenden Zugang zu Drogenkonsumräumen, sterilen Konsumutensilien und Medikamenten gegen Überdosierung. Die Analyse von Drogen auf gefährliche Beimischungen und Verunreinigungen (Drugchecking) muss flächendeckend verfügbar sein.",
       "ursachen_ids": [3005],
       "wirksamkeit": 2,
-      "umsetzbarkeit": 2
+      "umsetzbarkeit": 2,
+      "pflicht": true
     },
     {
       "seite": 20,
-      "zitat": "Wir stärken Präventions-, Beratungs- und Hilfsangebote.",
-      "ursachen_ids": [3006],
+      "zitat": "Wir wollen Spielautomaten in Gaststätten verbieten.",
+      "ursachen_ids": [3004],
       "wirksamkeit": 2,
-      "umsetzbarkeit": 2
+      "umsetzbarkeit": 3,
+      "pflicht": true
     }
   ],
-  "verboten": []
+  "verboten": [],
+  "neutral": [
+    {
+      "seite": 20,
+      "zitat": "Wir stärken Präventions-, Beratungs- und Hilfsangebote.",
+      "grund": "„Präventions-, Beratungs- und Hilfsangebote stärken“ nennt kein Mittel. Ursache 3006 sind Scham und Abwertung, mehr Angebote ändern daran nichts. Gleiche Regel für alle Programme: allgemeines „Prävention oder Hilfe ausbauen“ wird nicht gewertet."
+    }
+  ]
 }

@@ -71,6 +71,11 @@ describe('End-to-End-Eval (eval:e2e)', () => {
     const leer = fall({ erwartet: [], keine_massnahme: true })
     expect(beurteileFall(leer, { erfasst: true, stellen: [] }).status).toBe('bestanden')
     expect(beurteileFall(leer, { erfasst: true, stellen: [stelle(50, 'Glücksspielwerbung im Sport wird verboten.', [3004])] }).status).toBe('nicht_bestanden')
+    // Neutrale Stellen zählen weder als zusätzlich noch gegen „keine Maßnahme“.
+    const neutral = { ...leer, neutral: [{ seite: 50, zitat: 'Glücksspielwerbung im Sport wird verboten.', grund: 'egal' }] }
+    const u = beurteileFall(neutral, { erfasst: true, stellen: [stelle(50, 'Glücksspielwerbung im Sport wird verboten.', [3004])] })
+    expect(u.status).toBe('bestanden')
+    expect(u.zusaetzlich).toEqual([])
   })
 
   it('Ablauf aus dem Ereignisprotokoll: Agenten, Kosten, Verstöße der Koordination', () => {

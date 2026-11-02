@@ -4,15 +4,19 @@
   "thema_id": 33,
   "partei_id": 12,
   "land": null,
-  "herkunft": "daten/themen/33-mediennutzung-von-kindern-und-jugendlichen.json (Stand 2026-10-06, KI-Entwurf); verboten: verworfene Stellen aus daten/protokolle/33/2026-10-06-bund-land-BE-MV-ST",
-  "geprueft": null,
+  "herkunft": "daten/themen/33-mediennutzung-von-kindern-und-jugendlichen.json (Stand 2026-10-06, KI-Entwurf); verboten: verworfene Stellen aus daten/protokolle/33/2026-10-06-bund-land-BE-MV-ST; Durchsicht 2026-11-02: Empfehlungen von Claude (ohne Parteinamen, Regel in README) gesammelt übernommen",
+  "geprueft": {
+    "von": "Betreiberin",
+    "am": "2026-11-02"
+  },
   "erwartet": [
     {
       "seite": 45,
       "zitat": "Plattformbetreiber werden verpflichtet, illegale Inhalte zu entfernen, während wir gleichzeitig den Jugendschutz stärken, etwa durch effektive Möglichkeiten zur Altersverifikation.",
       "ursachen_ids": [3301],
       "wirksamkeit": 1,
-      "umsetzbarkeit": 2
+      "umsetzbarkeit": 2,
+      "pflicht": true
     },
     {
       "seite": 50,
@@ -22,11 +26,12 @@
       "umsetzbarkeit": 1
     }
   ],
-  "verboten": [
+  "verboten": [],
+  "neutral": [
     {
       "seite": 49,
       "zitat": "Wir setzen uns dafür ein, Programme zur Förderung der Medien- und Nachrichtenkompetenz für alle Altersgruppen auszubauen, um Manipulation und Desinformation entgegenzuwirken.",
-      "grund": "Bewertung ohne Parteinamen (2026-10-06-bund-land-BE-MV-ST): setzt an keiner Ursache an"
+      "grund": "Medienkompetenz für alle Altersgruppen gegen Desinformation zielt nicht auf die Ursachen des Themas. Gleiche Regel wie bei den anderen allgemeinen Medienkompetenz-Zusagen."
     }
   ]
 }

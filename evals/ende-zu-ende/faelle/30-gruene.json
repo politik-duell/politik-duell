@@ -4,8 +4,11 @@
   "thema_id": 30,
   "partei_id": 13,
   "land": null,
-  "herkunft": "daten/themen/30-sucht-und-gluecksspiel.json (Stand 2026-10-06, KI-Entwurf); verboten: verworfene Stellen aus daten/protokolle/30/2026-10-06-bund-land-BE-MV-ST",
-  "geprueft": null,
+  "herkunft": "daten/themen/30-sucht-und-gluecksspiel.json (Stand 2026-10-06, KI-Entwurf); verboten: verworfene Stellen aus daten/protokolle/30/2026-10-06-bund-land-BE-MV-ST; Durchsicht 2026-11-02: Empfehlungen von Claude (ohne Parteinamen, Regel in README) gesammelt übernommen",
+  "geprueft": {
+    "von": "Betreiberin",
+    "am": "2026-11-02"
+  },
   "erwartet": [
     {
       "seite": 94,
@@ -19,14 +22,16 @@
       "zitat": "Dabei setzen wir uns auch für einen starken Nichtraucher*innenschutz ein, unter anderem durch die Einführung von einheitlichen, neutralen Verpackungen ohne Markenlogos.",
       "ursachen_ids": [3003],
       "wirksamkeit": 1,
-      "umsetzbarkeit": 3
+      "umsetzbarkeit": 3,
+      "pflicht": true
     },
     {
       "seite": 96,
       "zitat": "An dem Ziel des Verkaufs von Cannabis in lizenzierten Fachgeschäften halten wir weiter fest und setzen uns auf europäischer und internationaler Ebene dafür ein, auch um damit den Schwarzmarkt und die Organisierte Kriminalität weiter einzudämmen.",
       "ursachen_ids": [3005],
       "wirksamkeit": 2,
-      "umsetzbarkeit": 1
+      "umsetzbarkeit": 1,
+      "pflicht": true
     },
     {
       "seite": 96,
@@ -36,18 +41,19 @@
       "umsetzbarkeit": 2
     },
     {
-      "seite": 96,
-      "zitat": "Gleichzeitig wollen wir die Angebote für Prävention, Therapie und den Gesundheitsschutz auch bei legalen Suchtmitteln ausbauen und Menschen unterstützen, damit sie gar nicht erst abhängig werden oder ihnen besser geholfen werden kann, wenn sie suchtkrank sind.",
-      "ursachen_ids": [3006],
+      "seite": 94,
+      "zitat": "Nach dem Grundsatz der Verhältnisprävention wollen wir Produzenten von gesundheitsschädlichen Produkten wie Tabak und Alkohol stärker an den enormen Folgekosten am Gesundheitssystem beteiligen",
+      "ursachen_ids": [3002],
       "wirksamkeit": 2,
       "umsetzbarkeit": 2
     }
   ],
-  "verboten": [
+  "verboten": [],
+  "neutral": [
     {
-      "seite": 94,
-      "zitat": "Nach dem Grundsatz der Verhältnisprävention wollen wir Produzenten von gesundheitsschädlichen Produkten wie Tabak und Alkohol stärker an den enormen Folgekosten am Gesundheitssystem beteiligen",
-      "grund": "Bewertung ohne Parteinamen (2026-10-06-bund-land-BE-MV-ST): setzt an keiner Ursache an"
+      "seite": 96,
+      "zitat": "Gleichzeitig wollen wir die Angebote für Prävention, Therapie und den Gesundheitsschutz auch bei legalen Suchtmitteln ausbauen und Menschen unterstützen, damit sie gar nicht erst abhängig werden oder ihnen besser geholfen werden kann, wenn sie suchtkrank sind.",
+      "grund": "„Angebote für Prävention und Therapie ausbauen“ nennt kein konkretes Mittel gegen Scham und Abwertung (3006). Gleiche Regel wie bei den anderen allgemeinen Präventionszusagen."
     }
   ]
 }

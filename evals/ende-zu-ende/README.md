@@ -12,16 +12,18 @@ Bisher deckt es `/thema-erfassen` ab (Erfassung, Bewertung ohne Parteinamen, Ein
 |---|---|
 | `erwartet` | Stellen, die als Maßnahme erfasst werden sollen: Seite, Zitat, Ursachen, blind vergebene Werte des Instruments. `pflicht: true` = muss jeder Lauf finden. |
 | `verboten` | Stellen, die nicht als Maßnahme zählen dürfen. Erzeugt aus den Stellen, die die Bewertung ohne Parteinamen im Archiv verworfen hat. |
+| `neutral` | Stellen, die man so oder so sehen kann. Erfasst ein Lauf sie, zählt das weder für noch gegen den Fall. |
 | `keine_massnahme` | Das Programm enthält nichts zum Thema; jede erfasste Maßnahme ist ein Fehlgriff. |
 | `geprueft` | `{ "von": …, "am": "JJJJ-MM-TT" }` nach menschlicher Durchsicht, sonst `null`. |
 
-**Stand: Alle Fälle sind aus KI-Entwürfen erzeugt** (`npm run -s eval:e2e -- gold 30 33`) und noch nicht von Menschen geprüft. Bis dahin misst das Eval nur, ob ein Lauf vom bisherigen Stand abweicht, nicht, ob er richtig ist. Bei der Durchsicht je Fall:
+**Stand (2. 11. 2026):** Alle 14 Fälle sind durchgesehen. Erzeugt wurden sie aus KI-Entwürfen (`npm run -s eval:e2e -- gold 30 33`). Die Durchsicht lief über eine Prüfliste ohne Parteinamen mit je einer Frage: Ist das eine Maßnahme gegen eine Ursache dieses Themas? Die Empfehlungen dazu schrieb Claude, die Betreiberin hat sie gesammelt übernommen. Dabei galt eine Regel, gleich für alle Programme:
 
-- Fehlt eine Zusage im Programm, kommt sie unter `erwartet` dazu.
-- Die zentralen Zusagen bekommen `pflicht: true`. Gute Kandidaten sind Stellen, die in den Vergleichstests einzelnen Läufen fehlten und schon erwartet sind (Grüne S. 85 zu 33, Linke S. 20 zu 30).
-- Bei verbotenen Stellen prüfen, ob die Bewertung sie zu Recht verworfen hat (etwa Union S. 47 zu 30).
-- Werte, die nicht zum Maßstab in `docs/methode.md` passen, werden korrigiert. Das Urteil fällt ohne Blick auf den Parteinamen.
-- Ist die Durchsicht fertig, wird `geprueft` gesetzt. `gold … --ueberschreiben` ersetzt auch geprüfte Fälle, darum danach nur noch von Hand ändern.
+- **Maßnahme** ist, was ein konkretes Mittel nennt, das an einer der Ursachen ansetzt. Eine Position zu einem Mittel zählt in beide Richtungen, also Einführung wie Ablehnung (etwa alle Aussagen zum Digital Services Act). Die Höhe entscheidet die Bewertung.
+- **Wichtig** (`pflicht`) ist ein zentrales, konkretes Mittel. Dazu gehört die Cannabis-Position jedes Programms.
+- **Neutral** (`neutral`, nicht gewertet) ist Allgemeines ohne Mittel, etwa „Prävention stärken“, „Hilfsangebote ausbauen“ oder „Medienkompetenz fördern“. Neutral ist auch, was zum Thema, aber zu keiner Ursache passt.
+- **Keine Maßnahme** (`verboten`) sind Prüfaufträge und Verfahren, etwa ein Bürgerrat oder „erst bewerten, dann ein Paket vorlegen“.
+
+Weil die Empfehlungen von Claude stammen, ist die Durchsicht nicht unabhängig vom Modell, das auch die Skills ausführt. Bei Zweifeln an einem Fall `geprueft` zurücksetzen und neu entscheiden. `gold … --ueberschreiben` ersetzt auch geprüfte Fälle, darum Änderungen nur noch von Hand.
 
 Gleich heißt wie in den Vergleichstests: Seite ±1 und mindestens 60 % gemeinsame Wörter, bezogen auf das kürzere Zitat.
 
