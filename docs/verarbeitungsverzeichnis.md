@@ -15,7 +15,7 @@ Stellen zusammen anpassen. Die Datenschutz-Folgenabschätzung steht in
 | Kontakt | politik-duell@posteo.de |
 | Datenschutzbeauftragte:r | noch nicht benannt – siehe DSFA, Abschnitt 7 |
 | Aufsichtsbehörde | Berliner Beauftragte für Datenschutz und Informationsfreiheit |
-| Auftragsverarbeiter | Vercel Inc. (USA, Hosting/CDN), Supabase Inc. (Datenbank, Edge Functions, Auth; Region Frankfurt), Mistral AI SAS (Paris, KI-Einordnung), Posteo e. K. (Berlin, E-Mail) |
+| Auftragsverarbeiter | Vercel Inc. (USA, Hosting/CDN), Supabase Inc. (Datenbank, Edge Functions, Auth; Region Frankfurt), Mistral AI SAS (Paris, KI-Einordnung), Posteo e. K. (Berlin, E-Mail). Verträge nach Art. 28 mit Supabase, Vercel und Mistral abgelegt am 3. November 2026 |
 | Drittlandübermittlung | Vercel (USA): EU-US Data Privacy Framework bzw. Standardvertragsklauseln; Supabase Inc. (USA) als Unternehmen mit Datenhaltung in Frankfurt: AVV mit Standardvertragsklauseln |
 
 ## Verarbeitungstätigkeiten

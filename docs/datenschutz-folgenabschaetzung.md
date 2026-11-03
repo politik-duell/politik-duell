@@ -80,7 +80,7 @@ Bewertung nach den Maßnahmen in Abschnitt 5.
 | M4 | Wortfilter gegen Kontaktdaten, Links, Namen, Beleidigungen, Hetze (Browser und Edge Function) | umgesetzt |
 | M5 | Keine IPs, keine Konten, keine Cookies; Rate-Limits nur mit Zufallsnummer bzw. abgeleitetem Schlüssel | umgesetzt |
 | M6 | RLS: Frontend liest nur; Vorschläge lesen, abhaken, löschen nur Admins | umgesetzt |
-| M7 | Löschung der Vorschläge nach 180 Tagen (Trigger + `pg_cron`) | umgesetzt, `pg_cron` prüfen (O3) |
+| M7 | Löschung der Vorschläge nach 180 Tagen (Trigger + `pg_cron`) | umgesetzt |
 | M8 | Datenbank und Edge Functions in Frankfurt, KI bei EU-Anbieter, Training abgeschaltet | umgesetzt |
 | M9 | KI vergibt keine Punkte; Bestätigung durch die Person; Methode und Daten offen | umgesetzt |
 | M10 | KI-Kennzeichnung im Spiel (sichtbar und maschinenlesbar, `src/components/KiText.tsx`) | umgesetzt |
@@ -89,11 +89,12 @@ Bewertung nach den Maßnahmen in Abschnitt 5.
 
 - **O1 Verantwortlicher:** eingetragen (Arne Baron). Beim Übergang auf den Trägerverein Impressum,
   Datenschutzerklärung und diese Dokumente anpassen.
-- **O2 Mistral:** Training abgeschaltet (bestätigt 3. November 2026). Version und Datum der Bedingungen
-  samt Datenverarbeitungsvertrag (DPA) festhalten.
-- **O3 `pg_cron`:** In Supabase aktivieren und den Job `themen_vorschlaege_aufraeumen` prüfen
-  (`select * from cron.job;`).
-- **O4 AVV:** Verträge zur Auftragsverarbeitung mit Vercel und Supabase abschließen bzw. ablegen.
+- ~~**O2 Mistral:**~~ Erledigt 3. November 2026: Training abgeschaltet (Screenshot), Bedingungen und
+  Datenverarbeitungsvertrag (DPA) mit Datum abgelegt.
+- ~~**O3 `pg_cron`:**~~ Erledigt 3. November 2026: aktiviert, Job `themen_vorschlaege_aufraeumen`
+  eingetragen.
+- ~~**O4 AVV:**~~ Erledigt 3. November 2026: Verträge zur Auftragsverarbeitung mit Supabase (unterzeichnet),
+  Vercel und Mistral (Fassung mit Datum) abgelegt – privat, nicht im Repository.
 - **O6 Datenschutzbeauftragte:r:** siehe Abschnitt 7.
 - **O7 Auswertung der Vorschläge:** Festlegen, wer `npm run vorschlaege` ausführt. Läuft die Auswertung
   über einen KI-Agenten (z. B. Claude Code), gehen die Vorschläge an dessen Anbieter. Das ist nur mit einem
@@ -111,7 +112,7 @@ DSGVO).
 
 ## 8. Ergebnis
 
-Mit den umgesetzten Maßnahmen und nach Erledigung von O2–O7 ist das Restrisiko **gering**. Eine vorherige
+Mit den umgesetzten Maßnahmen und nach Erledigung von O6 und O7 ist das Restrisiko **gering**. Eine vorherige
 Konsultation der Aufsichtsbehörde (Art. 36) ist nicht erforderlich.
 
 | | |
