@@ -61,9 +61,10 @@ Lösungsvorschläge von Parteien und zeigt einen Gesamtsieger; die Frage muss da
 - KI-Entwürfe im Datenkatalog zählen dauerhaft ohne menschliche Prüfung (siehe `docs/methode.md`).
 
 **Fristen und Registrierung:** Die Pflichten für Hochrisiko-Systeme nach Anhang III gelten seit dem
-Digital Omnibus ab 2. Dezember 2027. Ob für Systeme, die nach Art. 6 Abs. 3 nicht als Hochrisiko gelten,
-weiterhin eine Registrierung in der EU-Datenbank (Art. 49 Abs. 2) nötig ist, ist im endgültigen Text von
-Verordnung (EU) 2026/1744 nachzuprüfen (**offen**). Diese Dokumentation ist auf Verlangen der
+Digital Omnibus ab 2. Dezember 2027. Die Registrierung in der EU-Datenbank für Systeme, die nach Art. 6 Abs. 3 nicht als Hochrisiko gelten
+(Art. 49 Abs. 2), bleibt nach dem Omnibus bestehen; gestrichen wurden nur zwei Angaben im Formular
+(Anhang VIII Abschnitt B Nr. 7 und 9). Sie gehört zu den Pflichten für Anhang-III-Systeme und ist damit
+spätestens bis 2. Dezember 2027 zu erledigen (Wortlaut im Amtsblatt gegenprüfen). Diese Dokumentation ist auf Verlangen der
 Marktüberwachungsbehörde vorzulegen (Art. 6 Abs. 4).
 
 ## 4. Transparenzpflichten (Art. 50) – gelten seit 2. August 2026

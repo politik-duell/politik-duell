@@ -40,7 +40,7 @@ Stellen zusammen anpassen. Die Datenschutz-Folgenabschätzung steht in
 | Daten | Eingabetext und Gesprächsverlauf der Runde, gewählte Parteien, Bundesland; kann politische Meinungen erkennen lassen (**Art. 9 DSGVO**) |
 | Rechtsgrundlage | Art. 6 Abs. 1 lit. a, Art. 9 Abs. 2 lit. a DSGVO (ausdrückliche Einwilligung vor Spielstart, ab 16 Jahren, Art. 8) |
 | Empfänger | Supabase (Edge Function, Frankfurt), Mistral AI (Paris) |
-| Löschfrist | Originaltext wird nach gewerteter Runde verworfen; Mistral: Aufbewahrung zur Missbrauchserkennung nach dessen Bedingungen (Training abgeschaltet – **prüfen**) |
+| Löschfrist | Originaltext wird nach gewerteter Runde verworfen; Mistral: Aufbewahrung zur Missbrauchserkennung nach dessen Bedingungen (Training abgeschaltet, bestätigt 3. November 2026) |
 | TOM | API-Schlüssel nur serverseitig; Temperatur 0,1, striktes JSON; Moderation auf Namen/Kontaktdaten; Logs nur mit Fehlermeldungen (bei Mistral-Fehlern bis 200 Zeichen der Fehlerantwort) |
 
 ### V3 Speicherung gespielter Runden (`runden`)

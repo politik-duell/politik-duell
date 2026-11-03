@@ -58,7 +58,7 @@ in Abschnitt 5.
 |---|---|---|---|---|
 | R1 | Rückschluss auf die politische Meinung einer bestimmten Person aus gespeicherten Runden | gering (keine Kennung, keine IP, keine Verknüpfung) | hoch | gering |
 | R2 | Personenbezogene Details Dritter oder der Person selbst im Freitext (Namen, Adressen, Gesundheit) | mittel | mittel | mittel → Maßnahmen M2, M3 |
-| R3 | Verarbeitung bei Mistral über den Zweck hinaus (Training, lange Aufbewahrung) | gering, **wenn** Training abgeschaltet und AVV wirksam | hoch | gering (unter Vorbehalt O2) |
+| R3 | Verarbeitung bei Mistral über den Zweck hinaus (Training, lange Aufbewahrung) | gering (Training abgeschaltet) | hoch | gering (unter Vorbehalt O2) |
 | R4 | Unbefugter Zugriff auf `review_eingaben` (Wortlaut) | gering (RLS, nur Admins) | hoch | gering |
 | R5 | Wortlaut bleibt länger als 30 Tage, wenn niemand spielt | mittel, wenn `pg_cron` fehlt | mittel | gering, wenn O3 erledigt |
 | R6 | Jugendliche unter 16 willigen ohne Zustimmung der Eltern ein | mittel | mittel | mittel (Selbstauskunft, Hinweis) |
@@ -84,9 +84,8 @@ in Abschnitt 5.
 ## 6. Offene Punkte vor dem öffentlichen Start
 
 - **O1 Verantwortlicher:** Betreiberangaben in `src/rechtliches/betreiber.ts` eintragen (Trägerverein).
-- **O2 Mistral:** In der Mistral-Konsole prüfen und festhalten (Datum, Screenshot): Training abgeschaltet,
-  Datenverarbeitungsvertrag (DPA) akzeptiert, Region EU. Ohne das stimmen Datenschutzerklärung und R3
-  nicht.
+- **O2 Mistral:** Training ist abgeschaltet (bestätigt 3. November 2026). Noch festhalten: Version und Datum
+  der Bedingungen samt Datenverarbeitungsvertrag (DPA) von Mistral.
 - **O3 `pg_cron`:** In Supabase aktivieren und den Job `review_eingaben_aufraeumen` prüfen
   (`select * from cron.job;`).
 - **O4 AVV:** Auftragsverarbeitungsverträge mit Vercel und Supabase abschließen bzw. dokumentieren.
