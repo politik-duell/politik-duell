@@ -9,18 +9,6 @@ const KEY = import.meta.env.VITE_SUPABASE_ANON_KEY as string | undefined
 export const adminDb: SupabaseClient | null =
   URL && KEY ? createClient(URL, KEY, { auth: { persistSession: true, storageKey: 'wl-admin' } }) : null
 
-export interface AdminRunde {
-  id: number
-  created_at: string
-  problem_text: string
-  stichwort: string | null
-  filter_grund: string | null
-  status: 'gewertet' | 'unvollstaendig' | 'ungeprueft' | 'wert' | 'forderung' | 'grenze'
-  freigegeben: boolean
-  abgelehnt: boolean
-  moderiert_am: string | null
-}
-
 /** Einladung zur Prüfung (Tabelle pruef_einladungen, ohne Token-Hash). */
 export interface PruefEinladung {
   id: string
@@ -45,20 +33,10 @@ export interface PruefBewertung {
   aktualisiert: string
 }
 
-export interface ReviewEintrag {
+/** Themenvorschlag von Spielenden (Tabelle themen_vorschlaege, ohne KI, nach 180 Tagen gelöscht). */
+export interface ThemenVorschlag {
   id: number
   created_at: string
-  problem_text: string
-  einschaetzung: string | null
+  text: string
   erledigt: boolean
-}
-
-/** Eingaben einer Runde ohne Wertung im Wortlaut (Tabelle review_eingaben, nach 30 Tagen gelöscht). */
-export interface ReviewEingabe {
-  id: number
-  created_at: string
-  grund: 'grenze' | 'wert' | 'forderung' | 'ungeprueft' | 'unvollstaendig'
-  eingaben: string[]
-  thema_id: number | null
-  zusammenfassung: string | null
 }

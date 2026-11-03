@@ -12,6 +12,7 @@ import { KI_ENTWURF, KI_ENTWURF_ERKLAERUNG, KI_HINWEIS, MassnahmeBelege, NICHT_B
 import { ForderungsKarte } from './ForderungsKarte'
 import { Kreuzfeld } from './Kreuz'
 import { parteiStil } from './stil'
+import { VorschlagFormular } from './ThemaVorschlag'
 
 // Gemeinsame Bausteine liegen in belege.tsx (auch die Forderungskarte nutzt sie); hier weiter exportiert.
 export { KI_ENTWURF, KI_HINWEIS, MassnahmeBelege, NICHT_BLIND }
@@ -429,14 +430,14 @@ export function Aufloesung({
         <section className="ungeprueft enthuellen">
           <span className="badge-ungeprueft">ungeprüft – keine Wertung</span>
           <p>
-            Zu diesem Problem liegen noch keine geprüften Daten vor. Deshalb gibt es keine Punkte und keine Links. Das
-            Problem wurde zur Prüfung vorgemerkt.
+            Zu diesem Problem liegen noch keine geprüften Daten vor. Deshalb gibt es keine Punkte und keine Links.
           </p>
           {runde.einschaetzung && (
             <p className="einschaetzung">
               <strong>Vorläufige Einschätzung (ungeprüft):</strong> {runde.einschaetzung}
             </p>
           )}
+          <VorschlagFormular anlass="Soll das Spiel dieses Thema kennen?" />
         </section>
       ) : (
         <>

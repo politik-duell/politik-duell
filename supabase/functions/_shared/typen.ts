@@ -373,8 +373,8 @@ export interface UrsachenAuswahl {
   /** Leer genau dann, wenn `passt_nicht`. */
   ursachen_ids: number[]
   /**
-   * „Nichts davon passt“ in der Bestätigung (docs/plan-zuordnung.md): Runde ohne Wertung, der Wortlaut geht in
-   * `review_eingaben` – so zeigt sich, welche Ursachen im Katalog fehlen.
+   * „Nichts davon passt“ in der Bestätigung (docs/plan-zuordnung.md): Runde ohne Wertung. Die App schickt das
+   * nicht mehr an die Edge Function (gespeichert wird nichts); die Funktion versteht es weiterhin.
    */
   passt_nicht?: boolean
   /**

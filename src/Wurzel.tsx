@@ -13,6 +13,7 @@ function rechtsSeite(hash: string): RechtsSeite | null {
   if (hash.startsWith('#/impressum')) return 'impressum'
   if (hash.startsWith('#/datenschutz')) return 'datenschutz'
   if (hash.startsWith('#/methode')) return 'methode'
+  if (hash.startsWith('#/vorschlag')) return 'vorschlag'
   return null
 }
 

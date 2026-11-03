@@ -95,17 +95,18 @@ jobs:
 
       - name: Daten (seed.sql)
         if: steps.aenderung.outputs.daten == 'true'
-        # Eine Transaktion: bei einem Fehler bleibt die Datenbank beim alten Stand. Gespielte Runden bleiben erhalten.
+        # Eine Transaktion: bei einem Fehler bleibt die Datenbank beim alten Stand. Prüfbewertungen und Vorschläge bleiben erhalten.
         run: psql "$DB_URL" -v ON_ERROR_STOP=1 --single-transaction --quiet -f supabase/seed.sql
 
       - name: Edge Functions
         if: steps.aenderung.outputs.funktionen == 'true'
         env:
           SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
-        # verify_jwt kommt aus supabase/config.toml (für beide Funktionen aus).
+        # verify_jwt kommt aus supabase/config.toml (für alle Funktionen aus).
         run: |
           supabase functions deploy analyse --project-ref "$PROJEKT" --use-api
           supabase functions deploy pruefung --project-ref "$PROJEKT" --use-api
+          supabase functions deploy vorschlag --project-ref "$PROJEKT" --use-api
 
       - name: Zusammenfassung
         if: always()

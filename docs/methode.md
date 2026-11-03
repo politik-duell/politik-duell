@@ -207,7 +207,7 @@ Das Spiel nimmt jede Äußerung ernst, auch zugespitzte. Eine Grenze gibt es nur
 - zu Gewalt aufrufen oder
 - Personen beleidigen.
 
-Darauf geht das Spiel nicht ein: keine Nachfrage, keine Forderungs- oder Haltungskarte, keine Punkte. Die Antwort belehrt nicht und gibt die Äußerung nicht wieder, sondern lädt zu einem Problem aus dem Alltag ein; die Runde geht weiter. In der Runde gespeichert wird nur, dass es sie gab – ohne Zusammenfassung, Stichwort oder Thema. Damit sich prüfen lässt, ob die Grenze richtig gezogen wurde, steht der Wortlaut wie bei allen Runden ohne Wertung getrennt davon in der Admin-Ansicht (Tabelle `review_eingaben`, ohne Parteien und ohne Verbindung zur Runde, gelöscht beim Sichten oder nach 30 Tagen).
+Darauf geht das Spiel nicht ein: keine Nachfrage, keine Forderungs- oder Haltungskarte, keine Punkte. Die Antwort belehrt nicht und gibt die Äußerung nicht wieder, sondern lädt zu einem Problem aus dem Alltag ein; die Runde geht weiter. Gespeichert wird davon nichts – wie bei allen Eingaben im Spiel (`docs/datenmodell.md`).
 
 - **Begründung:** Art. 1 GG (Menschenwürde) und Art. 3 GG (Gleichheit). Über Lösungen für Alltagsprobleme lässt sich streiten; ob Menschen gleiche Würde und gleiche Rechte haben, ist im Spiel nicht verhandelbar.
 - **Für alle Richtungen gleich.** Es zählt, was gesagt wird, nicht gegen wen oder aus welcher politischen Richtung.

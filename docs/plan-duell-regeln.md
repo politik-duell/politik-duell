@@ -78,7 +78,7 @@ Umgesetzt (25. 10. 2026, Entscheidung der Betreiberin):
 Offen (Daten, kein Code):
 
 - **Rollen ausgesetzt (25. 10. 2026, Entscheidung der Betreiberin):** Modifikatoren lagen nur bei 11 Maßnahmen vor; der erste Lauf von `/rollen-erfassen` (Energiepreise, 22 Wege) brachte nach Rückfragen einen belegten Weg. Aufwand und Angreifbarkeit (je Rolle andere Punkte) stehen in keinem Verhältnis zum Nutzen. Darum: keine Rollenwahl im Setup, keine Rolle an die KI, Wertung nur mit dem Grundwert (`bewertePartei` bekommt `null`). `rollen_modifikator` bleibt in den Daten und in der Prüfung, der Skill ruht. Wieder aufnehmen erst, wenn die Bewertungen geprüft sind und es einen Anlass gibt.
-- **Themen der Zielgruppe zuerst:** Die Admin-Ansicht „Lücken“ zeigt, wo Runden ohne Wertung enden; dort zuerst erfassen und prüfen.
+- **Themen der Zielgruppe zuerst:** Die Admin-Ansicht „Vorschläge“ (bzw. `npm run -s vorschlaege`) zeigt, welche Themen Spielende vermissen; dort zuerst erfassen und prüfen.
 
 ## Umsetzung
 

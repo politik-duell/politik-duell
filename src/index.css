@@ -2949,3 +2949,41 @@ textarea {
   align-items: center;
   gap: 8px 16px;
 }
+
+/* Thema vorschlagen (components/ThemaVorschlag.tsx) */
+.vorschlag-zu,
+.vorschlag-danke {
+  margin: 12px 0 0;
+  font-size: 0.9rem;
+  color: var(--text-leise);
+}
+.vorschlag {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 1rem;
+  padding: 16px;
+  border-radius: var(--papier-radius);
+  background: var(--flaeche);
+  border: 1.5px solid var(--linie);
+}
+.vorschlag-titel {
+  font-weight: 600;
+}
+.vorschlag .meta {
+  margin: 0;
+}
+.vorschlag-fehler {
+  margin: 0;
+  color: var(--warnung-text);
+}
+.vorschlag-knoepfe {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+.vorschlag-knoepfe .knopf {
+  width: auto;
+}

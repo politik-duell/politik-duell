@@ -261,3 +261,26 @@ export async function analysiere(
   if (!data) throw new AnalyseFehler('Leere Antwort von der Einordnung.')
   return data
 }
+
+export class VorschlagFehler extends Error {}
+
+/** Gibt es eine Datenbank, an die Themenvorschläge gehen können? (Beispieldaten ohne Supabase: nein.) */
+export const vorschlagMoeglich = (): boolean => supabase !== null
+
+/**
+ * Themenvorschlag ohne KI (Edge Function `vorschlag`): Nur der Text geht an die Datenbank – ohne Bezug zum Spiel,
+ * zu Parteien oder Eingaben. Die Sitzungs-ID dient nur dem Rate-Limit und wird nicht mit dem Text gespeichert.
+ */
+export async function schlageThemaVor(text: string): Promise<void> {
+  if (!supabase) throw new VorschlagFehler('Vorschläge gehen nur in der Online-Version des Spiels.')
+  const { error } = await supabase.functions.invoke('vorschlag', { body: { text, sitzung: sitzung() } })
+  if (!error) return
+  let meldung = 'Das hat gerade nicht geklappt. Bitte versuch es noch einmal.'
+  try {
+    const body = await (error as { context?: Response }).context?.json()
+    if (body?.fehler) meldung = body.fehler
+  } catch {
+    // Antwort ohne JSON – Standardtext behalten.
+  }
+  throw new VorschlagFehler(meldung)
+}

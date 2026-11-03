@@ -8,6 +8,7 @@ import { zufallsBeispiel, type BeispielArt } from '../logic/zufall'
 import { mitKarte, vergleichsSeite, type Karte, type RundenErgebnis, type Spieler } from '../spiel'
 import { ForderungsKarte } from './ForderungsKarte'
 import { HALTUNG_EINLEITUNG, HaltungsKarte } from './HaltungsKarte'
+import { VorschlagFormular } from './ThemaVorschlag'
 import { UrsachenAuswahl } from './UrsachenAuswahl'
 
 /** Fester Satz zu einer Haltung, wenn die KI keine eigene Rückmeldung liefert. */
@@ -36,12 +37,15 @@ function forderungAntwort(themaName: string | null): string {
   )
 }
 
-/** Nach „Nichts davon passt“: sagen, dass dieser Teil des Themas noch fehlt, und zu einem neuen Problem einladen. */
+/**
+ * Nach „Nichts davon passt“: sagen, dass dieser Teil des Themas noch fehlt, und zu einem neuen Problem einladen.
+ * Gespeichert wird nichts; wer möchte, schlägt das Fehlende ausdrücklich vor (Formular darunter).
+ */
 function passtNichtAntwort(themaName: string | null): string {
   return (
     'Danke – das ist ' +
     (themaName ? `beim Thema „${themaName}“ ` : '') +
-    'noch nicht erfasst. Wir sehen es uns an und ergänzen fehlende Ursachen. Magst du ein anderes Problem nennen?'
+    'noch nicht erfasst. Magst du ein anderes Problem nennen? Oder schlag vor, was fehlt.'
   )
 }
 
@@ -146,6 +150,8 @@ export function Runde({
   const [eingabe, setEingabe] = useState('')
   const [denkt, setDenkt] = useState(false)
   const [fehler, setFehler] = useState<string | null>(null)
+  /** Nach „Nichts davon passt“: Formular „Thema vorschlagen“ gleich offen zeigen. */
+  const [vorschlagen, setVorschlagen] = useState(false)
   /**
    * Bestätigung (docs/plan-zuordnung.md): das Thema, dessen Ursachen gerade zum Antippen stehen – mit den von der KI
    * vorgeschlagenen Ursachen, wenn sie sicher war.
@@ -206,6 +212,7 @@ export function Runde({
     setFehler(null)
     setAngebot(null)
     setHaltung(null)
+    setVorschlagen(false)
     setDenkt(true)
     let analyse: AnalyseAntwort
     try {
@@ -297,37 +304,24 @@ export function Runde({
   }
 
   /**
-   * „Nichts davon passt“: Runde ohne Wertung, das Gesagte geht zur Durchsicht (review_eingaben, 30 Tage), damit
-   * fehlende Ursachen ergänzt werden können. Danach kann ein neues Problem genannt werden.
+   * „Nichts davon passt“: Runde ohne Wertung, ohne Anfrage an den Server – gespeichert wird nichts. Danach kann ein
+   * neues Problem genannt oder das Fehlende ausdrücklich vorgeschlagen werden.
    */
-  async function passtNicht(themaId: number) {
+  function passtNicht(themaId: number) {
     if (denkt) return
     const gespraech = verlauf.length ? verlauf : vorher
     setFehler(null)
-    setDenkt(true)
-    try {
-      await analysiere(daten, {
-        verlauf: gespraech,
-        seiten,
-        parteien: [spieler[0].partei.id, spieler[1].partei.id],
-        auswahl: { thema_id: themaId, ursachen_ids: [], passt_nicht: true },
-      })
-    } catch (err) {
-      setFehler(err instanceof AnalyseFehler ? err.message : 'Das hat gerade nicht geklappt.')
-      return
-    } finally {
-      setDenkt(false)
-    }
     const name = daten.themen.find((t) => t.id === themaId)?.name
     setVerlauf([])
     setVorher(gespraech)
     setAngebot(null)
     setZusammenfassung(null)
     setHinweis(passtNichtAntwort(name ?? null))
+    setVorschlagen(true)
   }
 
   /**
-   * Angetippte Ursachen werten: ohne KI, die Edge Function speichert die Runde. `symptom`: die vorgeschlagene
+   * Angetippte Ursachen werten: ohne KI und ohne Speichern (die Edge Function prüft nur die Auswahl). `symptom`: die vorgeschlagene
    * Symptomgruppe – ihre Ursachen zählen nicht zur Höchstzahl.
    */
   async function auswaehlen(themaId: number, ursachenIds: number[], symptom?: number) {
@@ -393,6 +387,8 @@ export function Runde({
           </p>
         )}
       </div>
+
+      {vorschlagen && <VorschlagFormular offen />}
 
       {haltung !== null && (
         <HaltungsKarte
@@ -492,6 +488,7 @@ export function Runde({
           </button>
         </div>
       </form>
+      {!vorschlagen && <VorschlagFormular anlass="Dein Thema fehlt im Spiel?" />}
     </main>
   )
 }
