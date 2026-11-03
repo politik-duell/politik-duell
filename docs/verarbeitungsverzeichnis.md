@@ -11,9 +11,10 @@ Stellen zusammen anpassen. Die Datenschutz-Folgenabschätzung steht in
 
 | Feld | Angabe |
 |---|---|
-| Verantwortlicher | **offen** – Betreiber bzw. Trägerverein (`src/rechtliches/betreiber.ts`, `docs/verein/`) |
+| Verantwortlicher | Arne Baron, Hauptstr. 14, 13158 Berlin (`src/rechtliches/betreiber.ts`); später der Trägerverein (`docs/verein/`) |
 | Kontakt | politik-duell@posteo.de |
-| Datenschutzbeauftragte:r | **offen** – siehe DSFA, Abschnitt „Datenschutzbeauftragte:r“ |
+| Datenschutzbeauftragte:r | noch nicht benannt – siehe DSFA, Abschnitt 7 |
+| Aufsichtsbehörde | Berliner Beauftragte für Datenschutz und Informationsfreiheit |
 | Auftragsverarbeiter | Vercel Inc. (USA, Hosting/CDN), Supabase Inc. (Datenbank, Edge Functions, Auth; Region Frankfurt), Mistral AI SAS (Paris, KI-Einordnung), Posteo e. K. (Berlin, E-Mail) |
 | Drittlandübermittlung | Vercel (USA): EU-US Data Privacy Framework bzw. Standardvertragsklauseln; Supabase Inc. (USA) als Unternehmen mit Datenhaltung in Frankfurt: AVV mit Standardvertragsklauseln |
 
@@ -40,35 +41,32 @@ Stellen zusammen anpassen. Die Datenschutz-Folgenabschätzung steht in
 | Daten | Eingabetext und Gesprächsverlauf der Runde, gewählte Parteien, Bundesland; kann politische Meinungen erkennen lassen (**Art. 9 DSGVO**) |
 | Rechtsgrundlage | Art. 6 Abs. 1 lit. a, Art. 9 Abs. 2 lit. a DSGVO (ausdrückliche Einwilligung vor Spielstart, ab 16 Jahren, Art. 8) |
 | Empfänger | Supabase (Edge Function, Frankfurt), Mistral AI (Paris) |
-| Löschfrist | Originaltext wird nach gewerteter Runde verworfen; Mistral: Aufbewahrung zur Missbrauchserkennung nach dessen Bedingungen (Training abgeschaltet, bestätigt 3. November 2026) |
-| TOM | API-Schlüssel nur serverseitig; Temperatur 0,1, striktes JSON; Moderation auf Namen/Kontaktdaten; Logs nur mit Fehlermeldungen (bei Mistral-Fehlern bis 200 Zeichen der Fehlerantwort) |
+| Speicherung | **keine** – die Antwort geht nur an den Browser; der Spielverlauf liegt nur im Arbeitsspeicher des Tabs (seit Migration `20261103000000_keine_eingaben_speichern.sql`) |
+| Löschfrist | Mistral: Aufbewahrung zur Missbrauchserkennung nach dessen Bedingungen; Training abgeschaltet (bestätigt 3. November 2026) |
+| TOM | API-Schlüssel nur serverseitig; Temperatur 0,1, striktes JSON; Logs nur mit Fehlermeldungen (bei Mistral-Fehlern bis 200 Zeichen der Fehlerantwort) |
 
-### V3 Speicherung gespielter Runden (`runden`)
-
-| Feld | Angabe |
-|---|---|
-| Zweck | Auswertung, welche Themen gespielt werden; Moderation |
-| Daten | neutrale Kurzfassung (≤ 200 Zeichen, ohne Namen), Stichwort, Thema, Parteien, Punkte, Lösungsweg-/Haltungsnummer, Zeitpunkt, Testphasen-Markierung |
-| Personenbezug | nach Gestaltung anonym (keine Kennung, keine IP, keine Verbindung zur Sitzung) |
-| Rechtsgrundlage | Einwilligung (wie V2), soweit überhaupt Personenbezug besteht |
-| Empfänger | Supabase; Admins |
-| Löschfrist | keine feste – anonym; Admins können löschen |
-
-### V4 Review-Warteschlangen (`review_eingaben`, `review_warteschlange`)
+### V3 Themenvorschläge (Edge Function `vorschlag`, Tabelle `themen_vorschlaege`)
 
 | Feld | Angabe |
 |---|---|
-| Zweck | Einordnung der KI prüfen, Themenkatalog verbessern |
-| Daten | `review_eingaben`: Eingaben im Wortlaut bei Runden ohne Wertung, Grund, Thema, Kurzfassung, Zeitpunkt – ohne Parteien und ohne Verbindung zur Runde. `review_warteschlange`: Kurzfassung und vorläufige Einschätzung zu unbekannten Themen |
-| Rechtsgrundlage | Art. 6 Abs. 1 lit. a, Art. 9 Abs. 2 lit. a DSGVO |
-| Empfänger | nur Admins (RLS) |
-| Löschfrist | `review_eingaben`: beim Sichten, spätestens nach 30 Tagen (Funktion bei jedem Eintrag; täglich per `pg_cron` – **aktiv? prüfen**). `review_warteschlange`: anonym, keine feste Frist |
+| Zweck | Entscheiden, welche Themen als Nächstes in den Katalog kommen |
+| Betroffene | Spielende, die freiwillig einen Vorschlag abschicken |
+| Daten | nur der selbst geschriebene Text (3–500 Zeichen) und der Zeitpunkt; ohne Sitzung, Parteien, Spielstand, IP. Kann eine politische Meinung erkennen lassen |
+| Rechtsgrundlage | Art. 6 Abs. 1 lit. a, Art. 9 Abs. 2 lit. a DSGVO (ausdrückliche Einwilligung mit „Vorschlag senden“, Hinweis am Formular) |
+| Empfänger | Supabase; nur Admins (RLS); Auswertung per `npm run vorschlaege` – **wer bzw. welches Werkzeug das ausführt, festlegen** (siehe DSFA O7) |
+| Löschfrist | wenn nicht mehr gebraucht, spätestens 180 Tage (Trigger bei jedem Eintrag, täglich mit `pg_cron`) |
+| TOM | kein KI-Aufruf; Wortfilter gegen Kontaktdaten, Links, Namen, Beleidigungen, Hetze (Browser und Server); eigenes Rate-Limit mit abgeleitetem Schlüssel, getrennt von den Vorschlägen |
+
+### V4 entfällt
+
+Gespeicherte Runden (`runden`) und Review-Warteschlangen (`review_eingaben`, `review_warteschlange`) gibt es
+seit der Migration `20261103000000_keine_eingaben_speichern.sql` nicht mehr; die Einträge wurden gelöscht.
 
 ### V5 Missbrauchsschutz (`rate_limit`)
 
 | Feld | Angabe |
 |---|---|
-| Zweck | Anfragen begrenzen, Kosten deckeln |
+| Zweck | Anfragen an die KI und Vorschläge begrenzen, Kosten deckeln |
 | Daten | zufällige Sitzungsnummer (sessionStorage) und Zähler |
 | Rechtsgrundlage | Art. 6 Abs. 1 lit. f DSGVO; Speichern im Browser § 25 Abs. 2 Nr. 2 TDDDG |
 | Löschfrist | höchstens ein Tag auf dem Server; im Browser beim Schließen des Tabs |

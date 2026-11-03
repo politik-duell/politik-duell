@@ -47,7 +47,8 @@ Lösungsvorschläge von Parteien und zeigt einen Gesamtsieger; die Frage muss da
      `docs/plan-zuordnung.md`). Die Punkte berechnet deterministischer Code aus der kuratierten Datenbank
      (`src/logic/bewertung.ts`) – ohne KI.
    - Kein Profiling natürlicher Personen (Art. 6 Abs. 3 Unterabs. 3): keine Konten, keine Kennungen, keine
-     Verknüpfung von Runden; die Einordnung betrifft eine Äußerung, nicht die Person.
+     Speicherung von Runden oder Eingaben; die Einordnung betrifft eine Äußerung, nicht die Person.
+     Themenvorschläge laufen ganz ohne KI.
 3. **Kein erhebliches Risiko** für Grundrechte oder Wahlen: Gleiche Kriterien für alle Parteien, Belege
    aus der Datenbank (die KI erfindet keine Quellen), offene Methode und Daten (CC BY 4.0), Punkte
    nachvollziehbar.

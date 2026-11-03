@@ -11,8 +11,9 @@ import { schlageThemaVor, VorschlagFehler, vorschlagMoeglich } from '../data/que
 /** Was mit dem Vorschlag passiert – steht direkt am Formular (Datenschutz, Transparenz). */
 export const VORSCHLAG_HINWEIS =
   'Ohne KI: Nur dein Text wird gespeichert – ohne Bezug zu deinem Spiel, deinen Eingaben oder Parteien – und ' +
-  'nur für uns sichtbar, bis wir ihn gesichtet haben, höchstens 180 Tage. Bitte keine Namen, Kontaktdaten oder ' +
-  'Angaben über dich.'
+  'nur für uns sichtbar, höchstens 180 Tage. Bitte keine Namen, Kontaktdaten oder ' +
+  'Angaben über dich. Mit „Vorschlag senden“ willigst du ausdrücklich ein, dass wir den Text so speichern und ' +
+  'auswerten (Datenschutzerklärung, Abschnitt 4a).'
 
 export function VorschlagFormular({ anlass, offen: anfangsOffen = false }: { anlass?: string; offen?: boolean }) {
   const id = useId()
