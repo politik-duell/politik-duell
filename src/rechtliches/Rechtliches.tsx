@@ -88,7 +88,7 @@ function Impressum() {
       <p>
         Gibt das Spiel eine Aussage aus einem Wahlprogramm falsch oder unvollständig wieder, schreibt uns bitte – auch
         Parteien selbst – an <a href={`mailto:${BETREIBER.email}`}>{BETREIBER.email}</a>, mit Programm und Seite. Wir
-        prüfen jeden Hinweis, antworten und berichtigen belegte Fehler im öffentlichen Datenkatalog. Der Anspruch auf
+        prüfen jeden Hinweis, antworten innerhalb von 14 Tagen und berichtigen belegte Fehler im öffentlichen Datenkatalog. Der Anspruch auf
         Gegendarstellung nach § 20 MStV bleibt davon unberührt.
       </p>
       <h2>Haftung für Links</h2>

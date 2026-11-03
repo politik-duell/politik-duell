@@ -56,9 +56,9 @@ Vertieft geprüft sind Datenschutz (`docs/datenschutz-folgenabschaetzung.md`,
 
 | Nr. | Aufgabe | Stand |
 |---|---|---|
-| A1 | Korrekturweg festlegen: wer Hinweise von Parteien prüft, Antwortfrist (Vorschlag: 14 Tage), Berichtigung per Pull Request, kurze Antwort an die Absender | Hinweis im Impressum umgesetzt; Ablauf offen |
-| A2 | Mit dem Trägerverein Impressum ergänzen (Vereinsname, Registergericht und -nummer, Vertretungsberechtigte, verantwortliche Person nach § 18 Abs. 2 MStV) | offen |
-| A3 | Gemeinnützigkeit: Satzungszweck (politische Bildung, § 52 Abs. 2 Nr. 7 bzw. Nr. 24 AO) vorab mit dem Finanzamt abstimmen; Zeigen eines Gesamtsiegers ansprechen | offen |
+| A1 | Korrekturweg: Hinweise prüft Arne Baron (später eine vom Vorstand benannte Person); Antwort binnen 14 Tagen; belegte Fehler per Pull Request berichtigen, kurze Antwort an die Absender | festgelegt; Hinweis im Impressum |
+| A2 | Nach der Beta-Phase, mit dem Trägerverein Impressum ergänzen (Vereinsname, Registergericht und -nummer, Vertretungsberechtigte, verantwortliche Person nach § 18 Abs. 2 MStV) | offen |
+| A3 | Nach der Beta-Phase – Gemeinnützigkeit: Satzungszweck (politische Bildung, § 52 Abs. 2 Nr. 7 bzw. Nr. 24 AO) vorab mit dem Finanzamt abstimmen; Zeigen eines Gesamtsiegers ansprechen | offen |
 | A4 | Vor bezahlter Werbung prüfen, ob sie als politische Werbung nach Verordnung (EU) 2024/900 gilt | offen |
 | A5 | Vor Einsatz in Schulen: Modus für unter 16 klären | offen |
 | A6 | Barrierefreiheit nach WCAG 2.1 AA prüfen | offen |
