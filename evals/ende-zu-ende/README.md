@@ -98,3 +98,19 @@ Behalten wird die Änderung nur, wenn keine Fälle verloren gehen oder die verlo
 
 - **Weitere Themen:** `gold <ID>`, dann durchsehen. Gut geeignet sind kleine Themen mit Archiv unter `daten/protokolle/<ID>/` (dort stehen die verworfenen Stellen).
 - **Weitere Skills** (`/haltung-erfassen`, `/nebenwirkungen-erfassen`): eigener Wert für `skill`, eigene Vorbereitung und Auswertung in `scripts/eval-e2e/`.
+
+## Ergebnisse
+
+**Basis** (Stand `fd5520d`, 29. 10.–1. 11. 2026, 3 Läufe, Goldfälle nach der Durchsicht vom 2. 11.):
+
+- 13 von 14 Fällen mehrheitlich bestanden, Fundquote im Mittel 90 %
+- je Lauf 7,93 USD und 21 min; 7 Erfassungs-, 2 Bewertungs- und rund 8 Folgen-Agenten
+- keine Regelverstöße, keine Aufrufe außerhalb der Werkzeugliste
+- Lauf 3 brach in der Folgenrecherche am Nutzungslimit ab (Maßnahmen schon eingetragen und gewertet)
+
+Nicht bestanden haben nur Fälle, in denen die Erfassung (Haiku) eine Stelle nicht gefunden hat:
+
+- 30-fdp in 2 von 3 Läufen (Cannabis-Position S. 34, Pflicht)
+- 30-gruene, 33-spd und 33-union je einmal
+
+Die Bewertung ohne Parteinamen hat keine erwartete Stelle verworfen. Ein Vergleich Haiku gegen Sonnet bei der Erfassung lohnt sich erst, wenn die Fundquote bei weiteren Themen auffällt. Die Läufe selbst liegen nur unter `.cache/` und sind nicht versioniert.
