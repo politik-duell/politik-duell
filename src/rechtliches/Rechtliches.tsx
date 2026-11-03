@@ -6,7 +6,8 @@ import { Methode } from './Methode'
 
 // Impressum (#/impressum), Datenschutzerklärung (#/datenschutz), Methode (#/methode) und Themenvorschlag (#/vorschlag).
 // Die Texte beschreiben, was die App tatsächlich tut – bei Änderungen an
-// Datenflüssen (neue Dienste, neue gespeicherte Felder) hier mit anpassen.
+// Datenflüssen (neue Dienste, neue gespeicherte Felder) hier mit anpassen – ebenso
+// docs/verarbeitungsverzeichnis.md und docs/datenschutz-folgenabschaetzung.md.
 
 export type RechtsSeite = 'impressum' | 'datenschutz' | 'methode' | 'vorschlag'
 
@@ -152,6 +153,16 @@ function Datenschutz() {
         Art. 9 Abs. 2 lit. a DSGVO). Bitte gib keine Namen, Adressen oder anderen persönlichen Details ein.
       </p>
       <p>
+        <strong>Mindestalter:</strong> Einwilligen kannst du selbst ab 16 Jahren (Art. 8 DSGVO). Bist du jünger,
+        spiel bitte nur, wenn deine Eltern einverstanden sind – oder im Unterricht, wenn die Schule das Spiel mit den
+        Eltern abgestimmt hat.
+      </p>
+      <p>
+        <strong>KI-Kennzeichnung:</strong> Antworten der KI im Gespräch und die Kurzfassung deines Problems sind mit
+        „KI“ gekennzeichnet; von der KI formulierte Texte tragen zusätzlich eine maschinenlesbare Markierung
+        (EU-KI-Verordnung, Art. 50). Die Punkte stammen nie von der KI.
+      </p>
+      <p>
         Mistral verarbeitet den Text als Auftragsverarbeiter nur für die Einordnung und nicht zum Training seiner
         Modelle; nach seinen Bedingungen kann Mistral Anfragen für begrenzte Zeit zur Missbrauchserkennung aufbewahren.
         Die Antwort der KI und die Punkte gehen nur an deinen Browser zurück.
@@ -183,8 +194,8 @@ function Datenschutz() {
         <strong>Gespeichert werden</strong> nur der Text und der Zeitpunkt – ohne Sitzungsnummer, Parteien, Spielstand
         oder IP-Adresse. Lesen können die Vorschläge nur die Admins des Projekts; wir werten sie – auch mit
         automatischen Hilfsmitteln – aus, um zu entscheiden, welche Themen wir als Nächstes aufnehmen, und
-        veröffentlichen sie nicht im Wortlaut. Wir löschen sie, sobald wir sie gesichtet haben, spätestens nach 180
-        Tagen automatisch. Rechtsgrundlage ist deine Einwilligung, die du mit dem Absenden gibst (Art. 6 Abs. 1 lit. a
+        veröffentlichen sie nicht im Wortlaut. Wir löschen sie, sobald wir sie nicht mehr brauchen, spätestens nach 180
+        Tagen automatisch. Rechtsgrundlage ist deine ausdrückliche Einwilligung, die du mit „Vorschlag senden“ gibst (der Hinweis steht direkt am Formular) (Art. 6 Abs. 1 lit. a
         und, soweit der Vorschlag eine politische Meinung erkennen lässt, Art. 9 Abs. 2 lit. a DSGVO). Bitte schreib
         keine Namen oder Angaben über dich hinein. Da wir einen Vorschlag dir nicht zuordnen können, können wir ihn
         nicht gezielt löschen (Art. 11 DSGVO).
@@ -257,8 +268,8 @@ function Datenschutz() {
         die Testphase nicht bei jedem Besuch neu öffnen musst – bis du „Testphase verlassen“ wählst. Das ist für die
         gewünschte Funktion unbedingt erforderlich (§ 25 Abs. 2 Nr. 2 TDDDG). Bei uns (Supabase, Frankfurt am Main):
         ein Hashwert des Codes (nicht der Code selbst), ein Name zur Unterscheidung der Zugänge, den wir beim Anlegen
-        eintragen, und das Anlegedatum. Runden aus der Testphase sind als solche markiert, damit wir sie getrennt
-        auswerten können; sie werden nicht mit dem Zugang verknüpft. Für Eingaben im Spiel gilt Abschnitt 4.
+        eintragen, und das Anlegedatum. Runden speichern wir auch in der Testphase nicht. Für Eingaben im Spiel gilt
+        Abschnitt 4.
       </p>
       <p>
         <strong>Löschung:</strong> Wir löschen die Zugänge mit dem Ende der Testphase oder vorher auf Wunsch per

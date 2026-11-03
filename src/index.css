@@ -725,10 +725,10 @@ textarea {
   line-height: 1.2;
   letter-spacing: -0.01em;
 }
-.problem-zitat::before {
+.problem-zitat-text::before {
   content: '„';
 }
-.problem-zitat::after {
+.problem-zitat-text::after {
   content: '“';
 }
 .trommelwirbel {
@@ -2986,4 +2986,19 @@ textarea {
 }
 .vorschlag-knoepfe .knopf {
   width: auto;
+}
+/* Sichtbare Marke für KI-Text (EU AI Act Art. 50, src/components/KiText.tsx) */
+.ki-marke {
+  display: inline-block;
+  margin-right: 6px;
+  padding: 0 5px;
+  border: 1px solid var(--linie);
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  vertical-align: 0.15em;
+  color: var(--text-leise);
 }

@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { KiMarke } from './KiText'
+import { KI_ERZEUGT } from './kiKennzeichnung'
 import { gesamtpunkte, gespraechsKarten, gewerteteThemen, teilenText, type Karte, type RundenErgebnis, type Spieler } from '../spiel'
 import { ohneTreffer } from '../logic/ohneTreffer'
 import { punkteText } from '../logic/bewertung'
@@ -95,7 +97,9 @@ export function Ende({
                   </>
                 )}
               </p>
-              <p className="zf-problem">„{r.zusammenfassung}“</p>
+              <p className="zf-problem" {...KI_ERZEUGT}>
+                <KiMarke />„{r.zusammenfassung}“
+              </p>
               {r.ergebnisse && (
                 <div className="zf-parteien">
                   {r.ergebnisse.map((e, i) => {
