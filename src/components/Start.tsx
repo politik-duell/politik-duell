@@ -55,7 +55,7 @@ export function Start({
               <span className="einwilligung-text">
                 Ich bin einverstanden, dass eine KI meine Eingaben wie in der{' '}
                 <a href="#/datenschutz">Datenschutzerklärung</a> beschrieben einordnet. Mir ist klar, dass sie
-                politische Meinungen erkennen lassen können.
+                politische Meinungen erkennen lassen können. Ich bin mindestens 16 Jahre alt.
               </span>
               <Kreuzfeld />
             </label>

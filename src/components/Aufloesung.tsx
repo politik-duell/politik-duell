@@ -1,4 +1,6 @@
 import { useEffect, useState, type ReactNode } from 'react'
+import { KiMarke } from './KiText'
+import { KI_ERZEUGT } from './kiKennzeichnung'
 import { useDaten, useLandName } from '../data/kontext'
 import { MAX_JE_URSACHE, punkteText, type ParteiErgebnis, type Treffer } from '../logic/bewertung'
 import { EVIDENZ_TEXT } from '../logic/forderung'
@@ -417,7 +419,10 @@ export function Aufloesung({
           ))}
         </div>
       ) : null}
-            <blockquote className="problem-zitat">{runde.zusammenfassung}</blockquote>
+            <blockquote className="problem-zitat" {...KI_ERZEUGT}>
+        <KiMarke />
+        <span className="problem-zitat-text">{runde.zusammenfassung}</span>
+      </blockquote>
       <p className="meta">
         {runde.thema ? `Thema: ${runde.thema.name}` : 'Thema nicht in der Datenbank'}
       </p>

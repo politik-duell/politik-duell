@@ -9,6 +9,7 @@ import { mitKarte, vergleichsSeite, type Karte, type RundenErgebnis, type Spiele
 import { ForderungsKarte } from './ForderungsKarte'
 import { HALTUNG_EINLEITUNG, HaltungsKarte } from './HaltungsKarte'
 import { VorschlagFormular } from './ThemaVorschlag'
+import { KiBlase } from './KiText'
 import { UrsachenAuswahl } from './UrsachenAuswahl'
 
 /** Fester Satz zu einer Haltung, wenn die KI keine eigene Rückmeldung liefert. */
@@ -147,6 +148,8 @@ export function Runde({
    */
   const [vorher, setVorher] = useState<Nachricht[]>([])
   const [hinweis, setHinweis] = useState<string | null>(null)
+  /** Stammt `hinweis` von der KI (Rückmeldung) oder ist es ein fester Satz des Spiels? */
+  const [hinweisVonKi, setHinweisVonKi] = useState(false)
   const [eingabe, setEingabe] = useState('')
   const [denkt, setDenkt] = useState(false)
   const [fehler, setFehler] = useState<string | null>(null)
@@ -209,6 +212,7 @@ export function Runde({
     setEingabe('')
     setBeispiel(null)
     setHinweis(null)
+    setHinweisVonKi(false)
     setFehler(null)
     setAngebot(null)
     setHaltung(null)
@@ -292,6 +296,7 @@ export function Runde({
           analyse.rueckmeldung ||
             (analyse.typ === 'wert' ? WERT_ANTWORT : analyse.pauschal ? PAUSCHAL_ANTWORT : forderungAntwort(thema)),
         )
+        setHinweisVonKi(Boolean(analyse.rueckmeldung))
       }
     } else if (analyse.typ === 'problem' && analyse.thema_id !== null && analyse.ursachen_ids.length > 0) {
       // Gewertet wird erst, was die Person bestätigt: die Ursachen der KI vorausgewählt (sie war sicher).
@@ -318,6 +323,7 @@ export function Runde({
     setZusammenfassung(null)
     setHinweis(passtNichtAntwort(name ?? null))
     setVorschlagen(true)
+    setHinweisVonKi(false)
   }
 
   /**
@@ -369,18 +375,34 @@ export function Runde({
       </p>
 
       <div className="verlauf" aria-live="polite">
-        {vorher.map((n, i) => (
-          <p key={`v${i}`} className={`blase blase-${n.von}`}>
-            {n.text}
-          </p>
-        ))}
-        {hinweis && <p className="blase blase-ki">{hinweis}</p>}
-        {verlauf.map((n, i) => (
-          <p key={i} className={`blase blase-${n.von}`}>
-            {n.text}
-          </p>
-        ))}
-        {denkt && <p className="blase blase-ki denkt">Ich ordne das ein …</p>}
+        {vorher.map((n, i) =>
+          n.von === 'ki' ? (
+            <KiBlase key={`v${i}`} erzeugt>
+              {n.text}
+            </KiBlase>
+          ) : (
+            <p key={`v${i}`} className={`blase blase-${n.von}`}>
+              {n.text}
+            </p>
+          ),
+        )}
+        {hinweis && <KiBlase erzeugt={hinweisVonKi}>{hinweis}</KiBlase>}
+        {verlauf.map((n, i) =>
+          n.von === 'ki' ? (
+            <KiBlase key={i} erzeugt>
+              {n.text}
+            </KiBlase>
+          ) : (
+            <p key={i} className={`blase blase-${n.von}`}>
+              {n.text}
+            </p>
+          ),
+        )}
+        {denkt && (
+          <KiBlase erzeugt={false} className="denkt">
+            Ich ordne das ein …
+          </KiBlase>
+        )}
         {fehler && (
           <p className="blase blase-fehler" role="alert">
             {fehler}

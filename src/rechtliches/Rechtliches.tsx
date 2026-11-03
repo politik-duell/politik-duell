@@ -6,7 +6,8 @@ import { Methode } from './Methode'
 
 // Impressum (#/impressum), Datenschutzerklärung (#/datenschutz), Methode (#/methode) und Themenvorschlag (#/vorschlag).
 // Die Texte beschreiben, was die App tatsächlich tut – bei Änderungen an
-// Datenflüssen (neue Dienste, neue gespeicherte Felder) hier mit anpassen.
+// Datenflüssen (neue Dienste, neue gespeicherte Felder) hier mit anpassen – ebenso
+// docs/verarbeitungsverzeichnis.md und docs/datenschutz-folgenabschaetzung.md.
 
 export type RechtsSeite = 'impressum' | 'datenschutz' | 'methode' | 'vorschlag'
 
@@ -150,6 +151,16 @@ function Datenschutz() {
         Deine Eingaben können politische Meinungen erkennen lassen – das sind besonders geschützte Daten (Art. 9
         DSGVO). Deshalb fragen wir vor dem Spielstart ausdrücklich nach deiner Einwilligung (Art. 6 Abs. 1 lit. a und
         Art. 9 Abs. 2 lit. a DSGVO). Bitte gib keine Namen, Adressen oder anderen persönlichen Details ein.
+      </p>
+      <p>
+        <strong>Mindestalter:</strong> Einwilligen kannst du selbst ab 16 Jahren (Art. 8 DSGVO). Bist du jünger,
+        spiel bitte nur, wenn deine Eltern einverstanden sind – oder im Unterricht, wenn die Schule das Spiel mit den
+        Eltern abgestimmt hat.
+      </p>
+      <p>
+        <strong>KI-Kennzeichnung:</strong> Antworten der KI im Gespräch und die Kurzfassung deines Problems sind mit
+        „KI“ gekennzeichnet; von der KI formulierte Texte tragen zusätzlich eine maschinenlesbare Markierung
+        (EU-KI-Verordnung, Art. 50). Die Punkte stammen nie von der KI.
       </p>
       <p>
         Mistral verarbeitet den Text als Auftragsverarbeiter nur für die Einordnung und nicht zum Training seiner
