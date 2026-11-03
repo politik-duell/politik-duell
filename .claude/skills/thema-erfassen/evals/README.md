@@ -82,7 +82,7 @@ Vergleich mit den 34 Bundes-Maßnahmen dieser sechs Parteien in der archivierten
 - **Wartezeit etwa gleich:** Ein Sammel-Agent braucht länger, dafür laufen bei höchstens sieben gleichzeitigen Agenten 6 Sammelaufträge in einer Welle, 12 Einzelaufträge in zwei.
 - Fehlende Stellen unterscheiden sich zwischen den Läufen, aber nicht in der Zahl; das ist Streuung des Agenten wie im Test oben.
 
-**Schluss:** **Einzelaufträge bleiben Standard.** `--sammel` kann sich bei kleinen Themen (wenige Fundstellen je Programm) lohnen; ob die Grenze bei der Zahl der Fundstellen liegt, zeigt erst ein weiterer Lauf mit zwei kleinen Themen und einem großen Thema.
+**Schluss:** **Einzelaufträge bleiben Standard.** `--sammel` kann sich bei kleinen Themen (wenige Fundstellen je Programm) lohnen; ob die Grenze bei der Zahl der Fundstellen liegt, zeigt erst ein weiterer Lauf mit zwei kleinen Themen und einem großen Thema. *(Überholt: Nach Entscheidung der Betreiberin sind Sammelaufträge Standard bei mehreren Themen, siehe oben.)*
 
 ## Vergleichslauf: Programmkatalog mit Haiku (`docs/plan-programmkatalog.md`)
 
@@ -129,3 +129,11 @@ Vergleich mit den 34 Bundes-Maßnahmen dieser sechs Parteien in der archivierten
 - **Billiger, aber langsamer:** etwa ein Siebtel der Kosten, aber mehr Werkzeugaufrufe (19–38 je Agent) und fünfmal so lange Laufzeit.
 
 **Schluss:** `programm-erfassung` läuft seit 9. 10. 2026 mit `haiku`; „im Zweifel aufnehmen“ steht in der Agentenbeschreibung (Schritt 5), das Aussortieren in `blind-bewertung.md` (Prüfliste, Punkt 8). Nach dem ersten echten Lauf prüfen: Wie viele Maßnahmen verwirft die Bewertung (`zuordnungsBilanz` im Pull Request), und fehlen Zusagen, die eine Stichprobe mit `sonnet` findet?
+
+## Weitere Messungen (Begründungen aus `.claude/skills/README.md` → „Sparsam“)
+
+- **Hebel-Checkliste:** Bei Thema 18 erfasste ein Einzelagent Bündel nach Bereichen (etwa „Verkehr und Antriebe“) oft nur einmal je Bereich: 68 statt 123 Maßnahmen. Mit `hebel` beantwortet jedes Programm jeden Hebel.
+- **Leitfaden vor dem Lesen vollständig:** Bei Thema 18 kostete eine fehlende Regel eine Rückfrage an jedes Programm, zusammen mehr Tokens als die Erfassung selbst.
+- **Bewertung und Einordnung mit `opus`:** Ein Entwurf mit einem kleineren Modell brauchte Prüfung und Nacharbeit und kostete so dreimal dieselbe Liste.
+- **Sammelaufträge:** Der Lauf mit den Themen 18 und 30 (+39 % Tokens) gilt als nicht repräsentativ (siehe oben).
+- **Ganzer Lauf:** Die Basis des End-to-End-Evals steht in [`evals/ende-zu-ende/README.md`](../../../../evals/ende-zu-ende/README.md) → „Ergebnisse“.
