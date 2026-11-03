@@ -1,5 +1,7 @@
 # Plan: Verlässliche Zuordnung – die Person bestätigt jede Wertung
 
+> **Stand 3. November 2026:** Runden und Eingaben werden nicht mehr gespeichert (Migration `20261103000000_keine_eingaben_speichern.sql`). Was hier zu `review_eingaben`, `luecken` und dem Speichern nach „Nichts davon passt“ steht, ist überholt; stattdessen gibt es „Thema vorschlagen“ (`docs/datenmodell.md`).
+
 Stand: 13. 10. 2026 · Konzept, noch nicht umgesetzt. Grundsatzentscheidungen getroffen (siehe „Entscheidungen“).
 
 ## Ziel

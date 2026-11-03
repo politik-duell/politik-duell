@@ -2,6 +2,7 @@
 //   1-datenbank.sql   – Schema (alle Migrationen) für den SQL Editor; die Daten kommen aus supabase/seed-teile/
 //   2-analyse.ts      – Edge Function `analyse` als eine Datei für den Function-Editor
 //   3-pruefung.ts     – Edge Function `pruefung` (Bewertung durch Eingeladene)
+//   4-vorschlag.ts    – Edge Function `vorschlag` (Themenvorschläge, ohne KI)
 import { execFileSync } from 'node:child_process'
 import { mkdtempSync, readdirSync, readFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
@@ -17,6 +18,7 @@ const wurzel = new URL('../supabase/', import.meta.url)
 export const FUNKTIONEN = [
   ['2-analyse.ts', 'analyse'],
   ['3-pruefung.ts', 'pruefung'],
+  ['4-vorschlag.ts', 'vorschlag'],
 ] as const
 
 export function datenbankSql(): string {

@@ -15,7 +15,7 @@ Du bist Koordination: Recherchieren nur die Agenten `rollen-recherche`, ohne zu 
 
 ## 0. Reihenfolge
 
-Zuerst Themen, die im Spiel oft vorkommen (Admin → „Lücken“, `npm run -s themen:ueberblick -- --kurz`), dann die großen Alltagsthemen (Rente, Energie, Gesundheit, Arbeit, Miete).
+Zuerst Themen, die Spielende oft vorschlagen oder die im Spiel wichtig sind (`npm run -s vorschlaege`, `npm run -s themen:ueberblick -- --kurz`), dann die großen Alltagsthemen (Rente, Energie, Gesundheit, Arbeit, Miete).
 
 ## 1. Blindlisten
 

@@ -74,25 +74,19 @@ haltungen (id, frage, beschreibung, verwandte_themen)   -- Wertfragen für die H
 haltung_positionen (haltung_id, partei_id, land, position, kurzfassung, zitat, beleg_programm_url, begruendung, stand, ki_entwurf)
 haltung_zielkonflikte (haltung_id, seite, text, quelle_url)
 
-review_eingaben (id, created_at, grund, eingaben text[], thema_id, zusammenfassung)
-  -- Runden ohne Wertung im Wortlaut, nur Admins, gelöscht beim Sichten oder nach 30 Tagen
   -- View haltungen_vollstaendig: Haltungen mit Position aller Parteien („Alle sieben oder keine“)
-  -- Views luecken, kennzahlen_woche: Zahlen aus runden für die Admin-Ansicht (Reiter „Lücken“), nur Admins
 
-runden (
-  id, created_at, thema_id null, instrument_id null, haltung_id null, problem_text,
-  partei_a, partei_b, punkte_a, punkte_b,   -- numeric(5,1)
-  status text,            -- gewertet | ungeprueft | unvollstaendig | wert | forderung | grenze (ohne Inhalt)
-  freigegeben boolean default false   -- Freigabe für eine mögliche öffentliche Anzeige (die Wortwolke zeigt derzeit Themen, keine Probleme)
-)
+themen_vorschlaege (id, created_at, text, erledigt)
+  -- ausdrücklich abgeschickte Themenvorschläge (ohne KI, Edge Function `vorschlag`), nur Admins, höchstens 180 Tage
+  -- Aus den Eingaben im Spiel wird nichts gespeichert (Migration 20261103000000; früher: runden, review_*)
 ```
 
-Row Level Security: Frontend darf nur lesen (Themen, Maßnahmen, freigegebene Probleme) und über die Edge Function schreiben.
+Row Level Security: Frontend darf nur lesen (Themen, Maßnahmen) und schreibt nur Themenvorschläge über die Edge Function `vorschlag`.
 
 ## KI-Schnittstelle
 
 Edge Function `analyse` erhält: Gesprächsverlauf der Runde, Bundesland je Seite (`seiten`; ältere App-Fassungen schicken ein `land` für beide und eine `rolle`, die verworfen wird), Parteien – oder eine bestätigte Auswahl (`auswahl: { thema_id, ursachen_ids }`, bzw. `passt_nicht: true` mit leerer Liste), dann ohne KI-Aufruf.
-Die KI wird in zwei Schritten gefragt (`ordneEin` in `_shared/ki.ts`): **Schritt 1** mit allen Themen (ID, Name, Beschreibung) und den vollständig erfassten Haltungen (Kennung „H&lt;id&gt;“ + Frage) – Typ, Thema, `thema_sicher`, `thema_kandidaten`, `mehrere_probleme`; **Schritt 2** nur bei einem Problem mit Thema, nur mit dessen Ursachen (ID, Kurztext, Alltagssatz) – `ursachen_ids`, `ursachen_belege`, `sicher`. Ist etwas unsicher, enthält die Antwort keine Ursachen, sondern eine Nachfrage mit Thema. Schlägt die KI Ursachen vor, speichert die Funktion die Runde nicht; das tut erst die Anfrage mit der bestätigten Auswahl.
+Die KI wird in zwei Schritten gefragt (`ordneEin` in `_shared/ki.ts`): **Schritt 1** mit allen Themen (ID, Name, Beschreibung) und den vollständig erfassten Haltungen (Kennung „H&lt;id&gt;“ + Frage) – Typ, Thema, `thema_sicher`, `thema_kandidaten`, `mehrere_probleme`; **Schritt 2** nur bei einem Problem mit Thema, nur mit dessen Ursachen (ID, Kurztext, Alltagssatz) – `ursachen_ids`, `ursachen_belege`, `sicher`. Ist etwas unsicher, enthält die Antwort keine Ursachen, sondern eine Nachfrage mit Thema. Gespeichert wird keine Runde – weder nach der Einordnung noch nach der bestätigten Auswahl.
 Antwort (JSON):
 
 ```json
