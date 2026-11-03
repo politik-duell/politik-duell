@@ -1,5 +1,7 @@
 # Evaluationen für `/thema-erfassen`
 
+Den ganzen Lauf gegen Goldfälle misst das End-to-End-Eval ([`evals/ende-zu-ende/`](../../../../evals/ende-zu-ende/README.md)); vor jeder Änderung am Zuschnitt von Skill und Agenten dort mit und ohne Änderung vergleichen.
+
 Szenarien im Format der Skill-Best-Practices (`skills`, `query`, `files`, `expected_behavior`). Sie stammen aus echten Fehlern beim Erfassen von Thema 9 (Sicherheit; Bundes- und Landesdurchgang). Jedes Szenario ist zusätzlich als automatischer Test umgesetzt (`scripts/entwurf.test.ts` → „Evaluationen des Skills“, dort wird auch das Format dieser Dateien geprüft). Das Verhalten der Koordination selbst (`expected_behavior`) lässt sich nur in einem Durchlauf beobachten; die Tests sichern die Skripte, auf die sich dieses Verhalten stützt.
 
 | Datei | Szenario | Automatisch geprüft |
