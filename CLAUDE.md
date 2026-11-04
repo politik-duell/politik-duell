@@ -34,5 +34,5 @@ Ein Zwei-Spieler-Webspiel: Spieler nennen reale Alltagsprobleme, das Spiel prüf
 - `docs/datenmodell.md` – Schema, Views und Rechte (Stand der Migrationen)
 - `docs/methode.md` – Methode, Lösungswege je Ursache, Bund und Länder, „Grenze“
 - `daten/README.md` – Datenformat und Prüfung; `docs/plan-*.md` – Pläne (Haltungen, Prüfung, Sicherungen)
-- `docs/datenschutz-folgenabschaetzung.md`, `docs/verarbeitungsverzeichnis.md`, `docs/ki-verordnung.md` – DSFA, Verarbeitungsverzeichnis, Einordnung nach EU-KI-Verordnung (bei Änderungen an Datenflüssen oder an der Rolle der KI mit anpassen)
+- `docs/datenschutz-folgenabschaetzung.md`, `docs/verarbeitungsverzeichnis.md`, `docs/ki-verordnung.md` – DSFA, Verarbeitungsverzeichnis, Einordnung nach EU-KI-Verordnung (bei Änderungen an Datenflüssen oder an der Rolle der KI mit anpassen); `docs/rechtsrahmen.md` – übrige Regelungen (MStV, Urheberrecht, Gemeinnützigkeit, politische Werbung …) und offene Aufgaben
 - `docs/verein/` – Trägerverein, Lizenzen (Code AGPL-3.0-or-later, Daten CC BY 4.0)

@@ -84,6 +84,13 @@ function Impressum() {
         ihre Belege stehen im <a href={BETREIBER.quellcode}>öffentlichen Quellcode</a>. Fehler oder fehlende Belege
         bitte dort melden oder per E-Mail.
       </p>
+      <h2>Korrekturen und Gegendarstellung</h2>
+      <p>
+        Gibt das Spiel eine Aussage aus einem Wahlprogramm falsch oder unvollständig wieder, schreibt uns bitte – auch
+        Parteien selbst – an <a href={`mailto:${BETREIBER.email}`}>{BETREIBER.email}</a>, mit Programm und Seite. Wir
+        prüfen jeden Hinweis, antworten innerhalb von 14 Tagen und berichtigen belegte Fehler im öffentlichen Datenkatalog. Der Anspruch auf
+        Gegendarstellung nach § 20 MStV bleibt davon unberührt.
+      </p>
       <h2>Haftung für Links</h2>
       <p>
         Die Beleg-Links führen zu Wahlprogrammen und Studien auf fremden Websites. Für deren Inhalte sind allein die

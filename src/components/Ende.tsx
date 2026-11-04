@@ -140,7 +140,7 @@ export function Ende({
       </div>
       {geteilt && <p className="hinweis">{geteilt}</p>}
       <p className="hinweis methode-link">
-        Das Ergebnis gilt nur für die {runden.length} genannten Probleme.{' '}
+        Das Ergebnis gilt nur für die {runden.length} genannten Probleme und ist keine Wahlempfehlung.{' '}
         <a href="#/methode">So bewerten wir · Fehler melden</a>
       </p>
     </main>
