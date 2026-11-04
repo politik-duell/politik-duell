@@ -666,8 +666,9 @@ function Inhalt({ daten }: { daten: Daten }) {
 
       <h2>Dein Thema fehlt?</h2>
       <p>
-        Du kannst es trotzdem nennen: Das Spiel gibt dann eine vorläufige Einschätzung ohne Wertung, und wir merken
-        uns das Thema für die Auswertung. Wie wir bewerten, steht unter <a href="#/methode">So bewerten wir</a>; alle
+        Du kannst es trotzdem nennen: Das Spiel gibt dann eine vorläufige Einschätzung ohne Wertung. Gespeichert wird
+        aus dem Spiel nichts – damit wir das Thema aufnehmen können, <a href="#/vorschlag">schlag es vor</a>. Wie wir
+        bewerten, steht unter <a href="#/methode">So bewerten wir</a>; alle
         Daten mit Belegen liegen im <a href={BETREIBER.quellcode}>öffentlichen Quellcode</a>.
       </p>
     </>
