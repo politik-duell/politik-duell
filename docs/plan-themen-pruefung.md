@@ -69,6 +69,21 @@ Mit dieser Fassung ist small nie gemessen worden. **Seit dem 23. 10. 2026 läuft
 
 Zusammen rund 240 Aufrufe in drei Läufen, verteilt über den Monat, plus wenige Einzelprüfungen mit medium.
 
+## Ergebnis 5. 11. 2026 (small, 3 Läufe wie freigegeben)
+
+| | small (Branch) | medium (Vergleich) |
+| --- | --- | --- |
+| Testlauf Thema: Kontrollsätze | 39/46 | 46/46 (22. 10., 3 Runden, `main`) |
+| Testlauf Thema: Gruppe A | 7/12 | 0/12 |
+| Testlauf Thema: Gruppe B / C / schwankend | 4/10 · 0/11 · 3/4 | 0/10 · 0/11 · – |
+| Ganzer Ablauf, feste Fälle | 53/77 (69 %) | 61/75 (81 %, 18. 10.) |
+| davon Thema falsch | 11 | – |
+| zu viele / zu wenige / falsche Ursachen | 7 / 2 / 0 | – |
+
+- Kontrollsätze, die small falsch hat: 1604, 2404, 2704, 2801, 2901, 2903, 2905. Ob das am Modell oder an den neuen Beschreibungen liegt, trennt dieser Lauf nicht; Einzelprüfungen mit medium waren nicht freigegeben.
+- small liegt im ganzen Ablauf deutlich unter medium, vor allem bei der Themenwahl. Falsche Ursachen wählt es nicht.
+- Rohdaten nicht im Repository (Antworten der KI); Zählung aus `ki:testset --json`.
+
 ## Danach, je nach Entscheidung
 
 - Gruppe B: Für jedes Paar festlegen, welches Thema die Ursache führt. Dann Ursache oder Beschreibung anpassen und nur diese Sätze erneut testen.
