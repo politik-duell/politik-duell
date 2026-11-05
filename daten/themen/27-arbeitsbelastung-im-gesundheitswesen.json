@@ -73,7 +73,12 @@
       "umsetzbarkeit": 2,
       "begruendung": "Verlässliche Vergütung und Dienstzeiten verbessern die Bedingungen angehender Ärztinnen und Ärzte. Umfang, Finanzierung und tatsächliche Wirkung auf die Belastung hängen von der konkreten Regelung ab.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8005,
@@ -82,7 +87,12 @@
       "umsetzbarkeit": 3,
       "begruendung": "Digitale Zugänge können Beteiligung erleichtern, ändern aber weder die Reichweite der Mitbestimmung noch unmittelbar Personal, Arbeitszeit oder Unterstützung.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8006,
@@ -92,7 +102,12 @@
       "begruendung": "Verlässlichere Arbeitszeiten und mehr Beteiligung setzen an Erholung und Einflussmöglichkeiten an. Die Zusage bleibt breit und lässt Umfang, Umsetzung und Finanzierung offen.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.who.int/publications/i/item/9789240053052",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8007,
@@ -101,7 +116,12 @@
       "umsetzbarkeit": 2,
       "begruendung": "Berufsbezogene Sprachförderung kann Verständigungsprobleme im Arbeitsalltag mindern. Für ihre direkte Wirkung auf die Belastung von Beschäftigten und die nötigen Kapazitäten ist die Evidenz begrenzt.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8008,
@@ -110,7 +130,12 @@
       "umsetzbarkeit": 2,
       "begruendung": "Verbindliche Beteiligung kann den Einfluss auf Arbeitsbedingungen und Veränderungsprozesse erhöhen. Ohne nähere Zuständigkeiten und Durchsetzungsrechte bleibt die erwartbare Wirkung unsicher.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8009,
@@ -120,7 +145,27 @@
       "begruendung": "Zusätzliche Pflegekräfte können knappe Besetzung und Zeitdruck mindern. Anwerbung und Rückkehr sind jedoch nicht automatisch zusätzliche verfügbare Vollzeitkräfte und erfordern Zeit sowie geeignete Arbeitsbedingungen.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.who.int/publications/i/item/9789240003279",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Zum Vergleich: Das Pflegepersonal-Stärkungsgesetz führt insgesamt zu Mehrausgaben von rund 2,8 Mrd. Euro im Jahr 2022; das sind nicht die Kosten dieses Wegs.",
+            "quelle_url": "https://dserver.bundestag.de/btd/19/044/1904453.pdf",
+            "belegstufe": "A"
+          },
+          {
+            "bereich": "grundrechte",
+            "richtung": "vorteil",
+            "text": "Je ein Patient mehr pro Pflegekraft ist bei operierten Patienten mit 7 % höheren Chancen verbunden, innerhalb von 30 Tagen nach Aufnahme zu sterben (Beobachtungsstudie, Krankenhäuser in neun Ländern).",
+            "quelle_url": "https://researchonline.ljmu.ac.uk/565/3/Aiken%20et%20al%202014%20Nurse%20staffing%20education%20levels%20and%20patient%20mortality%20Lancet.pdf",
+            "belegstufe": "B"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8010,
@@ -130,7 +175,34 @@
       "begruendung": "Höhere und bedarfsgerechte Besetzung kann Arbeitslast senken; Studien zu Personalstärke und Ergebnissen stützen den Ansatz, zeigen aber auch Kosten-, Mess- und Umsetzungsprobleme sowie weniger klare Befunde für andere Berufsgruppen.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://europepmc.org/article/MED/35780608",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Zum Vergleich: Das Pflegepersonal-Stärkungsgesetz führt insgesamt zu Mehrausgaben von rund 2,8 Mrd. Euro im Jahr 2022; das sind nicht die Kosten dieses Wegs.",
+            "quelle_url": "https://dserver.bundestag.de/btd/19/044/1904453.pdf",
+            "belegstufe": "A"
+          },
+          {
+            "bereich": "aufwand",
+            "richtung": "nachteil",
+            "text": "Die Pflegepersonalbemessungsverordnung sieht für die Wirtschaft einen einmaligen Umstellungsaufwand durch Informationspflichten von geschätzt rund 234 400 000 Euro vor.",
+            "quelle_url": "https://dserver.bundestag.de/brd/2024/0065-24.pdf",
+            "belegstufe": "A"
+          },
+          {
+            "bereich": "grundrechte",
+            "richtung": "vorteil",
+            "text": "Je ein Patient mehr pro Pflegekraft ist bei operierten Patienten mit 7 % höheren Chancen verbunden, innerhalb von 30 Tagen nach Aufnahme zu sterben (Beobachtungsstudie, Krankenhäuser in neun Ländern).",
+            "quelle_url": "https://researchonline.ljmu.ac.uk/565/3/Aiken%20et%20al%202014%20Nurse%20staffing%20education%20levels%20and%20patient%20mortality%20Lancet.pdf",
+            "belegstufe": "B"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8011,
@@ -140,7 +212,12 @@
       "begruendung": "Gesundheitsförderung kann Beschäftigte unterstützen, verändert aber nicht zwingend hohe emotionale Anforderungen, geringe Mitsprache oder fehlende soziale Unterstützung am Arbeitsplatz.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://europepmc.org/article/MED/37893584",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8012,
@@ -149,7 +226,12 @@
       "umsetzbarkeit": 3,
       "begruendung": "Tarifbindung kann Entlohnung und Arbeitsbedingungen bei erfassten Auftragnehmenden verbessern. Die Reichweite hängt von Vergabeumfang, Kontrollen und der tatsächlichen Tarifabdeckung ab.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8013,
@@ -158,7 +240,12 @@
       "umsetzbarkeit": 2,
       "begruendung": "Unterstützung und Schutz von Interessenvertretungen können Mitsprache und soziale Unterstützung fördern. Die Wirkungsforschung zur konkreten Entlastung im Gesundheitswesen ist begrenzt; private Arbeitsrechtsregeln liegen zudem teilweise beim Bund.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8014,
@@ -168,7 +255,12 @@
       "begruendung": "Durchlässige Laufbahnen und neue Rollen können berufliche Anerkennung und Entwicklungsperspektiven verbessern. Sie brauchen Ausbildungsplätze, klare Befugnisse und passende Finanzierung und ersetzen keine ausreichende Besetzung.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.who.int/publications/i/item/9789240003279",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8015,
@@ -178,7 +270,12 @@
       "begruendung": "Weniger unnötige Dokumentation kann unmittelbar Arbeitszeit freisetzen. Forschung misst die Belastung uneinheitlich und untersucht die Wirkung konkreter Vereinfachungen bislang nur begrenzt; notwendige Qualitäts- und Sicherheitsnachweise bleiben erforderlich.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://europepmc.org/article/MED/33434273",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8016,
@@ -187,7 +284,12 @@
       "umsetzbarkeit": 3,
       "begruendung": "Schutz von Initiierenden und leichtere Wahlen können betriebliche Mitsprache ermöglichen. Ob daraus spürbar mehr Einfluss auf Arbeitsbelastung folgt, hängt von tatsächlicher Gründung und Durchsetzung ab.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8017,
@@ -196,7 +298,12 @@
       "umsetzbarkeit": 2,
       "begruendung": "Mitwirkung in Planungs- und Leitungsgremien erhöht die Möglichkeit, Arbeitsbedingungen zu beeinflussen. Die Wirkung ist unklar, solange Aufgaben, Stimmrechte und Umsetzung der Beschlüsse nicht feststehen.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8018,
@@ -205,7 +312,12 @@
       "umsetzbarkeit": 2,
       "begruendung": "Eine Kammer kann berufliche Interessen und Selbstverwaltung stärken, wirkt aber nur mittelbar auf tägliche Arbeitslast, Dienstpläne oder Unterstützung am Arbeitsplatz.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8019,
@@ -214,7 +326,12 @@
       "umsetzbarkeit": 3,
       "begruendung": "Erleichterte Tarifbindung und Allgemeinverbindlichkeit können die Reichweite ausgehandelter Entlohnung verbessern. Der Effekt auf die Belastung hängt von den vereinbarten Inhalten und der tatsächlichen Abdeckung ab.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8020,
@@ -224,7 +341,12 @@
       "begruendung": "Reviews zeigen bessere Kommunikation und Versorgungsqualität mit professioneller Sprachmittlung; eine direkte Entlastung der Beschäftigten ist weniger gut untersucht. Verfügbarkeit und Finanzierung bestimmen die Wirkung.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://europepmc.org/article/MED/17362215",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8021,
@@ -233,7 +355,12 @@
       "umsetzbarkeit": 1,
       "begruendung": "Wirksame Sanktionen können Mitsprache schützen und abschrecken. Die Schaffung neuer Straftatbestände oder Sanktionen liegt nicht ohne Weiteres in Landeshand; die Maßnahme braucht bundesrechtliche Schritte.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8022,
@@ -243,7 +370,12 @@
       "begruendung": "Kürzere Arbeitszeiten können Erholung verbessern, wenn die Arbeitsmenge nicht auf weniger Zeit verdichtet wird. Voller Lohnausgleich und zusätzlicher Personalausgleich sind kosten- und personalintensiv.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://europepmc.org/article/MED/30737987",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8023,
@@ -253,7 +385,12 @@
       "begruendung": "Pools können kurzfristige Ausfälle auffangen und planbare Einsatzzeiten fördern. Modellierungen zeigen, dass flexible Kräfte eine ausreichende Grundbesetzung nicht ersetzen und bei knapper Verfügbarkeit wenig verlässlich sind.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://europepmc.org/article/MED/33677251",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8024,
@@ -263,7 +400,12 @@
       "begruendung": "Schutzmaßnahmen können emotionale Belastungen und Gefährdungen mindern. Reviews betonen, dass Schulungen Teil eines umfassenden Schutzkonzepts mit Unterstützung und passenden Bedingungen sein müssen.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://europepmc.org/article/MED/33802868",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8025,
@@ -272,7 +414,12 @@
       "umsetzbarkeit": 2,
       "begruendung": "Entlastungstarifverträge können Arbeitsbedingungen verbindlicher verbessern. Reichweite, Finanzierung und Durchsetzung sind offen; Tarifregeln allein schaffen keine zusätzlichen Arbeitskräfte.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8026,
@@ -282,7 +429,20 @@
       "begruendung": "Mehr ausgebildetes Personal kann Besetzungsengpässe mindern, bessere Bezahlung kann die Anerkennung stärken. Ausbildung wirkt zeitverzögert und beide Zusagen lassen Umfang und Finanzierung offen.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.who.int/publications/i/item/9789240003279",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [
+          {
+            "bereich": "grundrechte",
+            "richtung": "vorteil",
+            "text": "Je ein Patient mehr pro Pflegekraft ist bei operierten Patienten mit 7 % höheren Chancen verbunden, innerhalb von 30 Tagen nach Aufnahme zu sterben (Beobachtungsstudie, Krankenhäuser in neun Ländern).",
+            "quelle_url": "https://researchonline.ljmu.ac.uk/565/3/Aiken%20et%20al%202014%20Nurse%20staffing%20education%20levels%20and%20patient%20mortality%20Lancet.pdf",
+            "belegstufe": "B"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8027,
@@ -292,7 +452,20 @@
       "begruendung": "Kostenfreie und praxisnahe Ausbildung kann Zugang und Nachwuchs fördern, führt aber erst nach Abschluss zu zusätzlicher Besetzung. Ausbildungs- und Finanzierungskapazitäten begrenzen das Tempo.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.who.int/publications/i/item/9789240003279",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [
+          {
+            "bereich": "grundrechte",
+            "richtung": "vorteil",
+            "text": "Je ein Patient mehr pro Pflegekraft ist bei operierten Patienten mit 7 % höheren Chancen verbunden, innerhalb von 30 Tagen nach Aufnahme zu sterben (Beobachtungsstudie, Krankenhäuser in neun Ländern).",
+            "quelle_url": "https://researchonline.ljmu.ac.uk/565/3/Aiken%20et%20al%202014%20Nurse%20staffing%20education%20levels%20and%20patient%20mortality%20Lancet.pdf",
+            "belegstufe": "B"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8028,
@@ -301,7 +474,12 @@
       "umsetzbarkeit": 2,
       "begruendung": "Mehr Urlaub ermöglicht zusätzliche Erholungszeit, verändert aber nicht unmittelbar Pausen und Belastung zwischen den Urlaubstagen. Personalvertretung während Abwesenheiten muss mitgedacht werden.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8029,
@@ -310,7 +488,12 @@
       "umsetzbarkeit": 2,
       "begruendung": "Verbindliche Schritte können Personalengpässe und Arbeitsbedingungen adressieren. Die Zusage nennt weder Mindeststandards noch Finanzierung oder Sanktionen bei Nichteinhaltung.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8030,
@@ -320,7 +503,12 @@
       "begruendung": "Beratung kann bei Stress und psychischer Belastung helfen, beseitigt aber keine Ursachen wie Unterbesetzung oder ungünstige Dienstpläne. Reviews finden Nutzen individueller Ansätze, bei heterogenen Studien.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://europepmc.org/article/MED/37893584",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8031,
@@ -329,7 +517,12 @@
       "umsetzbarkeit": 3,
       "begruendung": "Tarifverträge können Bezahlung und Bedingungen regeln; die bloße Unterstützung enthält aber keine konkrete Vorgabe zu Lohn, Arbeitszeit oder Entlastung.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8032,
@@ -339,7 +532,12 @@
       "begruendung": "Gute Sprachkenntnisse können Verständigungsprobleme begrenzen, ersetzen aber keine verfügbare Sprachmittlung in komplexen Fällen. Höhere Zugangshürden können zudem die Personalgewinnung erschweren.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://europepmc.org/article/MED/17362215",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8033,
@@ -348,7 +546,12 @@
       "umsetzbarkeit": 3,
       "begruendung": "Prävention kann Gesundheit und Aufmerksamkeit für Arbeitsbedingungen fördern, greift aber ohne konkrete organisatorische Änderungen die genannten Ursachen nur begrenzt an.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8034,
@@ -358,7 +561,34 @@
       "begruendung": "Personalbemessung und planbare Schichten setzen direkt an Besetzung und Erholung an. Die geforderte Größenordnung, Refinanzierung und Umsetzung über mehrere Berufsgruppen erfordern erhebliche Ressourcen.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://europepmc.org/article/MED/35780608",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Zum Vergleich: Ein früheres Pflegegesetz sah für alle Kostenträger Mehrausgaben von rund 2,8 Milliarden Euro im Jahr 2022 vor; das sind nicht die Kosten dieses Wegs.",
+            "quelle_url": "https://dserver.bundestag.de/btd/19/044/1904453.pdf",
+            "belegstufe": "A"
+          },
+          {
+            "bereich": "aufwand",
+            "richtung": "nachteil",
+            "text": "Für die Wirtschaft entsteht durch die Pflegepersonalbemessungsverordnung ein einmaliger Umstellungsaufwand durch Informationspflichten von geschätzt rund 234 400 000 Euro.",
+            "quelle_url": "https://dserver.bundestag.de/brd/2024/0065-24.pdf",
+            "belegstufe": "A"
+          },
+          {
+            "bereich": "grundrechte",
+            "richtung": "vorteil",
+            "text": "Eine Patientin oder ein Patient mehr je Pflegekraft geht mit 7% höheren Chancen auf Krankenhaussterblichkeit nach Operationen einher (Beobachtungsstudie, neun Länder).",
+            "quelle_url": "https://researchonline.ljmu.ac.uk/565/3/Aiken%20et%20al%202014%20Nurse%20staffing%20education%20levels%20and%20patient%20mortality%20Lancet.pdf",
+            "belegstufe": "B"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8035,
@@ -367,7 +597,12 @@
       "umsetzbarkeit": 1,
       "begruendung": "Ein Sabbatjahr kann einzelnen Beschäftigten Erholung ermöglichen, löst aber nicht die regelmäßigen Pausen- und Schichtprobleme. Vertretung, Anspruchsumfang und Finanzierung sind ungeklärt.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8036,
@@ -376,7 +611,27 @@
       "umsetzbarkeit": 1,
       "begruendung": "Finanzierung ist Voraussetzung für zusätzliche Stellen, schafft diese aber ohne konkrete Mittel, Verteilung und Einstellungsplan nicht selbst. Umfang und dauerhafte Finanzierung sind offen.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Zum Vergleich: Ein früheres Pflegegesetz sah für alle Kostenträger Mehrausgaben von rund 2,8 Milliarden Euro im Jahr 2022 vor; das sind nicht die Kosten dieses Wegs.",
+            "quelle_url": "https://dserver.bundestag.de/btd/19/044/1904453.pdf",
+            "belegstufe": "A"
+          },
+          {
+            "bereich": "grundrechte",
+            "richtung": "vorteil",
+            "text": "Eine Patientin oder ein Patient mehr je Pflegekraft geht mit 7% höheren Chancen auf Krankenhaussterblichkeit nach Operationen einher (Beobachtungsstudie, neun Länder).",
+            "quelle_url": "https://researchonline.ljmu.ac.uk/565/3/Aiken%20et%20al%202014%20Nurse%20staffing%20education%20levels%20and%20patient%20mortality%20Lancet.pdf",
+            "belegstufe": "B"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8037,
@@ -385,7 +640,12 @@
       "umsetzbarkeit": 2,
       "begruendung": "Förderbedingungen können Mitsprache bei geförderten Einrichtungen anreizen, erfassen aber nur einen Teil der Arbeitgeber und nennen keine konkreten Mitbestimmungsstandards.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8038,
@@ -395,7 +655,12 @@
       "begruendung": "Automatisierung kann Dokumentationszeit senken, kann aber durch Prüfung, Korrekturen und Integration neue Arbeit erzeugen. Reviews finden wenige, heterogene Interventionsstudien und keine verlässliche allgemeine Wirkung.",
       "evidenz": "offen",
       "beleg_studie_url": "https://europepmc.org/article/MED/39366661",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8039,
@@ -404,7 +669,12 @@
       "umsetzbarkeit": 2,
       "begruendung": "Einheitlichere Beteiligungsrechte können den Einfluss Beschäftigter stärken. Die nötigen Änderungen betreffen unterschiedliche Rechts- und Trägerstrukturen; ihre Wirkung auf Belastung ist nicht direkt belegt.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8040,
@@ -414,7 +684,12 @@
       "begruendung": "Planbarere und passende Dienstzeiten können Erholung erleichtern. Reviews verbinden ungünstige Schichtmerkmale mit Müdigkeit, finden aber gemischte Befunde und belegen diesen konkreten Rechtsanspruch nicht direkt.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://europepmc.org/article/MED/30737987",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8041,
@@ -424,7 +699,12 @@
       "begruendung": "Flexiblere Grenzen können individuelle Modelle ermöglichen, garantieren aber weder Pausen noch Erholung und können längere Einsätze erleichtern. Die Forschung verbindet kurze Ruhezeiten mit Müdigkeit, während Gesamtergebnisse gemischt sind.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://europepmc.org/article/MED/30737987",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8042,
@@ -433,7 +713,12 @@
       "umsetzbarkeit": 3,
       "begruendung": "Spezialisierte Ermittlungen können bestehende Rechte besser durchsetzen und abschrecken. Sie schaffen selbst keine neuen Beteiligungsrechte und hängen von Fällen, Personal und Verfahrensdauer ab.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8043,
@@ -443,7 +728,12 @@
       "begruendung": "Erzwingbare Beteiligung bei Personalbemessung, Gesundheitsschutz und Weiterbildung stärkt den Einfluss auf Arbeitsbedingungen. Ob sie Belastungen reduziert, hängt von Durchsetzung und verfügbaren Ressourcen ab.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.who.int/publications/i/item/9789240053052",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8044,
@@ -453,7 +743,12 @@
       "begruendung": "Kontrollen und Beteiligung können psychosoziale Risiken sichtbar machen und Verbesserungen anstoßen. Wirkung setzt wirksame Standards und Abhilfe voraus; Zuständigkeiten für Arbeitsschutzregeln sind zwischen Bund und Ländern verteilt.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.who.int/publications/i/item/9789240053052",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8045,
@@ -462,7 +757,12 @@
       "umsetzbarkeit": 3,
       "begruendung": "Austausch kann Probleme sichtbar machen, verleiht aber ohne verbindliche Rechte oder Umsetzungspflichten keinen zusätzlichen Einfluss auf Arbeitsbedingungen.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8046,
@@ -472,7 +772,12 @@
       "begruendung": "Förderprogramme können Prävention und gesundheitsfördernde Arbeitsbedingungen unterstützen. Ohne konkrete Vorgaben zu Personal, Arbeitszeit oder Einfluss bleibt die Wirkung auf die benannten Belastungsursachen begrenzt.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.who.int/publications/i/item/9789240053052",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8047,
@@ -481,7 +786,12 @@
       "umsetzbarkeit": 2,
       "begruendung": "Technik kann einzelne Aufgaben erleichtern, aber die Maßnahme benennt weder Anwendungen noch Einsatzbedingungen. Einführungs-, Wartungs- und Kontrollaufwand kann einen Teil der erhofften Entlastung aufzehren.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8048,
@@ -490,7 +800,12 @@
       "umsetzbarkeit": 1,
       "begruendung": "Rückgängigmachung von Ausgründungen kann Mitbestimmungswege wiederherstellen, betrifft aber nur bestimmte Einrichtungen und erfordert erhebliche organisatorische sowie finanzielle Schritte.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8049,
@@ -499,7 +814,12 @@
       "umsetzbarkeit": 2,
       "begruendung": "Angemessene Bezahlung kann das Verhältnis von Einsatz und Belohnung verbessern. Ohne Maßstab, Betrag und Finanzierungsweg bleibt der Umfang unbestimmt; leistungsbezogene Anreize können zusätzliche Belastung erzeugen.",
       "evidenz": "gemischt",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8050,
@@ -509,7 +829,12 @@
       "begruendung": "Arbeitsschutz und verbindliche Beteiligung können Belastungen vorbeugen und Mitsprache stärken. Die konkrete Entlastung hängt von Standards, Kontrolle und tatsächlicher Personalverfügbarkeit ab.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.who.int/publications/i/item/9789240053052",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8051,
@@ -519,7 +844,12 @@
       "begruendung": "Eine konkrete Lohnanhebung verbessert unmittelbar die finanzielle Belohnung für Pflegearbeit. Höhe, betroffene Beschäftigte und Refinanzierung sind nicht ausgeführt; höhere Bezahlung allein löst Überlastung nicht.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.who.int/publications/i/item/9789240003279",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8052,
@@ -528,7 +858,12 @@
       "umsetzbarkeit": 2,
       "begruendung": "Vergütung kann die finanzielle Belastung während der Ausbildung senken, betrifft aber Auszubildende und nicht unmittelbar die Arbeitslast der bereits Beschäftigten. Finanzierungszuständigkeiten sind zu klären.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8053,
@@ -537,7 +872,12 @@
       "umsetzbarkeit": 2,
       "begruendung": "Solche Modelle können Beschäftigten mehr Mitsprache eröffnen, sind aber kein allgemeiner Hebel für Arbeitsbedingungen und erfordern freiwillige Gründungen sowie tragfähige Finanzierung.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8054,
@@ -547,7 +887,12 @@
       "begruendung": "Mehr fachlicher Spielraum kann Einfluss auf die eigene Arbeit stärken. Zusätzliche Verantwortung kann zugleich Anforderungen erhöhen; Zuständigkeiten und Qualifikationen müssen klar geregelt sein.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.nationalacademies.org/publications/25982",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8055,
@@ -557,7 +902,12 @@
       "begruendung": "Begrenzte Arbeitszeiten und ausreichende Ruhe können Müdigkeit reduzieren; Reviews stützen den Zusammenhang, zeigen aber teils gemischte Ergebnisse. Ohne Ausgleich kann die Arbeitsmenge pro Schicht steigen.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://europepmc.org/article/MED/30737987",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8056,
@@ -566,7 +916,34 @@
       "umsetzbarkeit": 3,
       "begruendung": "Ein höherer Mindestlohn verbessert die Entlohnung der davon erfassten Beschäftigten, erreicht aber viele qualifizierte Gesundheitsberufe nicht direkt und verändert Arbeitsbelastung oder Personalbesetzung nicht.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "vorteil",
+            "text": "Zum Vergleich: Eine frühere Mindestlohnanhebung brachte der Sozialversicherung laut Gesetzentwurf im Saldo 1,4 Milliarden Euro Mehreinnahmen pro Jahr ab 2023; das sind nicht die Kosten dieses Wegs.",
+            "quelle_url": "https://dserver.bundestag.de/btd/20/014/2001408.pdf",
+            "belegstufe": "A"
+          },
+          {
+            "bereich": "wirtschaft",
+            "richtung": "nachteil",
+            "text": "Laut einer Studie für die Mindestlohnkommission stieg der Verbraucherpreisindex einer Produktkategorie mit 10 Prozent betroffenen Beschäftigten bei der Erhöhung im Oktober 2022 um 0,83 Punkte.",
+            "quelle_url": "https://www.mindestlohn-kommission.de/shareddocs/downloads/en/Evaluation/fifth-report.pdf?__blob=publicationFile",
+            "belegstufe": "B"
+          },
+          {
+            "bereich": "verteilung",
+            "richtung": "vorteil",
+            "text": "Von der Anhebung des Mindestlohns könnten laut Statistischem Bundesamt bis zu 6,6 Millionen Jobs betroffen sein.",
+            "quelle_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/07/PD25_256_62.html",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8057,
@@ -576,7 +953,12 @@
       "begruendung": "Bessere Zusammenarbeit und erweiterte Befugnisse können Aufgaben verteilen und den Arbeitsablauf erleichtern. Ohne konkrete Zuständigkeiten oder Bezug zur Personalbemessung bleibt die Entlastung unsicher.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.nationalacademies.org/publications/25982",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 8058,
@@ -585,7 +967,12 @@
       "umsetzbarkeit": 3,
       "begruendung": "Eine Abstimmung gibt Pflegekräften Einfluss auf die Einrichtung einer Selbstvertretung, ändert aber für sich genommen weder Arbeitsbedingungen noch Mitsprache am Arbeitsplatz.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     }
   ],
   "abdeckung": [

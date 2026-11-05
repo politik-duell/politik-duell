@@ -1,0 +1,144 @@
+{
+  "pruefsumme": "0b261c5ed24fb137",
+  "thema_id": 27,
+  "thema": "Arbeitsbelastung im Gesundheitswesen",
+  "ziel": "Beschäftigte im Gesundheitswesen können ihre Arbeit dauerhaft gesund, mit ausreichender Erholung, verlässlichen Arbeitszeiten und angemessener Entlohnung ausüben.",
+  "ursachen": [
+    "Unzureichende Personalbesetzung und zu wenig Zeit je Patient hängen mit moralischem Stress zusammen (Befragung von 976 Pflegenden in der ambulanten Pflege, 2022)",
+    "Wer selten oder nie Pausen machen kann, ist stärker belastet; auch ein Schichtwechsel gegen den eigenen Willen belastet (Befragung von 873 Beschäftigten, 2021)",
+    "Dokumentation bindet viel Zeit: In einer deutschen Pflegestudie (2024/25) nahm sie anfangs rund 54 Minuten je Frühdienst in Anspruch",
+    "Pflegende erbringen mehr Aufwand, als sie Belohnung erfahren (ERI-Ratio 1,7; Befragung 2021 von 2.689 Pflegenden); 38,3 % hatten regelmäßig Ausstiegsgedanken",
+    "Hohe emotionale Anforderungen, wenig Einfluss auf die Arbeit und fehlende soziale Unterstützung gehen mit stärkerem moralischem Stress einher (Befragung 2022, 976 Pflegende)",
+    "Fehlender Zugang zu Dolmetschenden bei Sprachbarrieren geht mit höherer Arbeitsbelastung einher (Befragung 2018 von 800 Beschäftigten in 22 Kliniken)"
+  ],
+  "teil": 5,
+  "teile": 10,
+  "einheiten": [
+    {
+      "id": 8007,
+      "name": "Berufsbezogene Sprachförderung für Gesundheitsbeschäftigte (Land)",
+      "ebene": "land",
+      "begruendung": "Berufsbezogene Sprachförderung kann Verständigungsprobleme im Arbeitsalltag mindern. Für ihre direkte Wirkung auf die Belastung von Beschäftigten und die nötigen Kapazitäten ist die Evidenz begrenzt.",
+      "ursache": 6
+    },
+    {
+      "id": 8020,
+      "name": "Professionelle Sprachmittlung im Gesundheitswesen finanzieren (Land)",
+      "ebene": "land",
+      "begruendung": "Reviews zeigen bessere Kommunikation und Versorgungsqualität mit professioneller Sprachmittlung; eine direkte Entlastung der Beschäftigten ist weniger gut untersucht. Verfügbarkeit und Finanzierung bestimmen die Wirkung.",
+      "ursache": 6
+    },
+    {
+      "id": 8032,
+      "name": "Sprachniveau C1 für medizinisches Fachpersonal verlangen (Bund)",
+      "ebene": "bund",
+      "begruendung": "Gute Sprachkenntnisse können Verständigungsprobleme begrenzen, ersetzen aber keine verfügbare Sprachmittlung in komplexen Fällen. Höhere Zugangshürden können zudem die Personalgewinnung erschweren.",
+      "ursache": 6
+    },
+    {
+      "id": 8015,
+      "name": "Dokumentations- und Nachweispflichten vereinfachen (Bund)",
+      "ebene": "bund",
+      "begruendung": "Weniger unnötige Dokumentation kann unmittelbar Arbeitszeit freisetzen. Forschung misst die Belastung uneinheitlich und untersucht die Wirkung konkreter Vereinfachungen bislang nur begrenzt; notwendige Qualitäts- und Sicherheitsnachweise bleiben erforderlich.",
+      "ursache": 3
+    },
+    {
+      "id": 8038,
+      "name": "KI-gestützte Dokumentation ausbauen (Bund)",
+      "ebene": "bund",
+      "begruendung": "Automatisierung kann Dokumentationszeit senken, kann aber durch Prüfung, Korrekturen und Integration neue Arbeit erzeugen. Reviews finden wenige, heterogene Interventionsstudien und keine verlässliche allgemeine Wirkung.",
+      "ursache": 3
+    }
+  ],
+  "suchhilfe": {
+    "haushalt": {
+      "frage": "Was kostet der Weg Bund, Ländern, Kommunen oder Sozialkassen – oder was bringt er ein?",
+      "vorteil": [
+        "Mehreinnahmen",
+        "Einsparung öffentlicher Haushalt",
+        "Entlastung Sozialversicherung"
+      ],
+      "nachteil": [
+        "Mindereinnahmen",
+        "Kosten Bundeshaushalt",
+        "Haushaltsausgaben Gesetzentwurf"
+      ]
+    },
+    "wirtschaft": {
+      "frage": "Welche Kosten oder Entlastungen entstehen für Unternehmen (besonders kleine und mittlere), wie wirkt er auf Preise und Verbraucher?",
+      "vorteil": [
+        "Entlastung Unternehmen",
+        "sinkende Preise",
+        "Investitionen"
+      ],
+      "nachteil": [
+        "Kosten für Unternehmen",
+        "Preisanstieg",
+        "Wettbewerbsfähigkeit"
+      ]
+    },
+    "aufwand": {
+      "frage": "Welcher Aufwand für Anträge, Nachweise und Kontrollen entsteht oder entfällt – für Bürger, Wirtschaft, Verwaltung?",
+      "vorteil": [
+        "Bürokratieabbau",
+        "Erfüllungsaufwand sinkt"
+      ],
+      "nachteil": [
+        "Erfüllungsaufwand",
+        "Nachweispflichten",
+        "Normenkontrollrat Stellungnahme"
+      ]
+    },
+    "umwelt": {
+      "frage": "Wie wirkt er auf Emissionen, Natur und Ressourcen, und welche Lasten oder Vorteile hat er für spätere Jahre?",
+      "vorteil": [
+        "Emissionsminderung",
+        "Umweltentlastung"
+      ],
+      "nachteil": [
+        "Mehremissionen",
+        "Umweltrisiken",
+        "Flächenverbrauch"
+      ]
+    },
+    "verteilung": {
+      "frage": "Wer gewinnt, wer trägt die Last – nach Einkommen, Alter, Familienform, Stadt und Land?",
+      "vorteil": [
+        "Entlastung geringe Einkommen",
+        "Verteilungswirkung progressiv"
+      ],
+      "nachteil": [
+        "regressiv",
+        "Mitnahmeeffekte",
+        "profitieren höhere Einkommen"
+      ]
+    },
+    "grundrechte": {
+      "frage": "Schränkt er Freiheiten ein oder stärkt er sie, behandelt er Gruppen ungleich, wie wirkt er auf Gesundheit und Sicherheit?",
+      "vorteil": [
+        "Gesundheit verbessert",
+        "Schutz",
+        "Gleichstellung"
+      ],
+      "nachteil": [
+        "Datenschutz",
+        "Grundrechtseingriff",
+        "Benachteiligung",
+        "Gesundheitsrisiko"
+      ]
+    }
+  },
+  "quellen": [
+    {
+      "bereich": "grundrechte",
+      "text": "Je ein Patient mehr pro Pflegekraft ist bei operierten Patienten mit 7 % höheren Chancen verbunden, innerhalb von 30 Tagen nach Aufnahme zu sterben (Beobachtungsstudie, Krankenhäuser in neun Ländern).",
+      "quelle_url": "https://researchonline.ljmu.ac.uk/565/3/Aiken%20et%20al%202014%20Nurse%20staffing%20education%20levels%20and%20patient%20mortality%20Lancet.pdf"
+    },
+    {
+      "bereich": "aufwand",
+      "text": "Die Pflegepersonalbemessungsverordnung sieht für die Wirtschaft einen einmaligen Umstellungsaufwand durch Informationspflichten von geschätzt rund 234 400 000 Euro vor.",
+      "quelle_url": "https://dserver.bundestag.de/brd/2024/0065-24.pdf"
+    }
+  ],
+  "vergleich": []
+}
