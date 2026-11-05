@@ -82,6 +82,7 @@ Zusammen rund 240 Aufrufe in drei Läufen, verteilt über den Monat, plus wenige
 
 - Kontrollsätze, die small falsch hat: 1604, 2404, 2704, 2801, 2901, 2903, 2905. Ob das am Modell oder an den neuen Beschreibungen liegt, trennt dieser Lauf nicht; Einzelprüfungen mit medium waren nicht freigegeben.
 - Nachprüfung mit medium (7 Aufrufe, freigegeben): 2404, 2801, 2901, 2903 richtig – das lag an small. Falsch auch mit medium: 1604 → 3, 2704 → 5, 2905 → 1. Ursache sind die neuen Beschreibungen (Thema 1 „Wege durchs Gesundheitssystem“ zieht den Therapieplatz an, Thema 27 ohne „Bezahlung“, Thema 16 ohne Mieter). Nachgebessert und mit medium erneut geprüft (3 Aufrufe, freigegeben): 3/3 richtig.
+- Nach der Durchsicht (Thema 21 mit „geringem Lohn“): Alltagssätze der Themen 11 und 21 mit medium (8 Aufrufe, freigegeben) 7/8; 1105 („verdiene so wenig …“) landet weiter in 21, wie schon am 22. 10. – offene Frage aus Gruppe B.
 - small liegt im ganzen Ablauf deutlich unter medium, vor allem bei der Themenwahl. Falsche Ursachen wählt es nicht.
 - Rohdaten nicht im Repository (Antworten der KI); Zählung aus `ki:testset --json`.
 
