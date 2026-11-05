@@ -1,0 +1,2840 @@
+{
+ "hinweis": "KI-Entwürfe (npm run ki:varianten): je Ursache drei Eingaben in eigenen Worten von Spielenden. Testfälle, keine Daten – durchsehen und falsche oder mehrdeutige Sätze korrigieren oder löschen; gelöschte Ursachen erzeugt der nächste Lauf neu.",
+ "varianten": [
+  {
+   "id": "var-101-1",
+   "ursache": 101,
+   "text": "Kein Arzt nimmt mich mehr an."
+  },
+  {
+   "id": "var-101-2",
+   "ursache": 101,
+   "text": "In meinem Dorf gibt es nur noch einen Hausarzt, und der hat keine Kapazität mehr für mich."
+  },
+  {
+   "id": "var-101-3",
+   "ursache": 101,
+   "text": "Ich rufe seit Wochen bei allen Praxen in der Umgebung an, aber überall heißt es: Wir nehmen keine neuen Patienten."
+  },
+  {
+   "id": "var-102-1",
+   "ursache": 102,
+   "text": "Ich dreh mich im Kreis mit den Arztterminen."
+  },
+  {
+   "id": "var-102-2",
+   "ursache": 102,
+   "text": "Letzte Woche habe ich drei verschiedene Praxen angerufen, aber niemand konnte mir sagen, wo ich eigentlich hinmuss."
+  },
+  {
+   "id": "var-102-3",
+   "ursache": 102,
+   "text": "Ich war schon beim Hausarzt, dann beim Orthopäden und jetzt soll ich zum Neurologen – und keiner weiß, was ich eigentlich habe."
+  },
+  {
+   "id": "var-103-1",
+   "ursache": 103,
+   "text": "Als Kassenpatient warte ich ewig beim Orthopäden."
+  },
+  {
+   "id": "var-103-2",
+   "ursache": 103,
+   "text": "Mein Hautarzt hat mir erst in drei Monaten einen Termin gegeben, obwohl ich seit Wochen starke Schmerzen habe."
+  },
+  {
+   "id": "var-103-3",
+   "ursache": 103,
+   "text": "Ich rufe an und die sagen nur: 'Für Sie als Kassenpatientin ist erst im nächsten Quartal was frei.'"
+  },
+  {
+   "id": "var-201-1",
+   "ursache": 201,
+   "text": "Keine Bude zu finden ist scheiße"
+  },
+  {
+   "id": "var-201-2",
+   "ursache": 201,
+   "text": "Ich suche seit Monaten eine Wohnung in Berlin-Mitte, aber alles ist weg"
+  },
+  {
+   "id": "var-201-3",
+   "ursache": 201,
+   "text": "Ich hab schon 20 Besichtigungstermine gehabt und immer war die Wohnung schon vergeben, bevor ich überhaupt da war"
+  },
+  {
+   "id": "var-202-1",
+   "ursache": 202,
+   "text": "Neue Wohnung kostet mich fast doppelt so viel"
+  },
+  {
+   "id": "var-202-2",
+   "ursache": 202,
+   "text": "In Berlin will der Vermieter 1200 Euro für die gleiche Wohnung, die meine Nachbarin für 800 hat"
+  },
+  {
+   "id": "var-202-3",
+   "ursache": 202,
+   "text": "Ich hab eine super Wohnung gefunden, aber die Miete ist so hoch, dass ich mir kaum noch was leisten kann"
+  },
+  {
+   "id": "var-203-1",
+   "ursache": 203,
+   "text": "Meine neue Wohnung kostet mich die Hälfte meines Gehalts."
+  },
+  {
+   "id": "var-203-2",
+   "ursache": 203,
+   "text": "Die Miete für die 3-Zimmer-Wohnung in meinem Neubau ist von 800 auf 1500 Euro gestiegen."
+  },
+  {
+   "id": "var-203-3",
+   "ursache": 203,
+   "text": "Ich habe gerade eine Wohnung gefunden, aber die Miete ist so hoch, dass ich mir kaum noch was leisten kann."
+  },
+  {
+   "id": "var-204-1",
+   "ursache": 204,
+   "text": "Jedes Jahr wird die Miete teurer, obwohl ich hier bleibe."
+  },
+  {
+   "id": "var-204-2",
+   "ursache": 204,
+   "text": "Meine Miete ist seit 2022 um 150 Euro gestiegen, obwohl ich in derselben Wohnung wohne."
+  },
+  {
+   "id": "var-204-3",
+   "ursache": 204,
+   "text": "Ich kann es nicht fassen, schon wieder eine Mieterhöhung – dabei habe ich doch nichts verändert!"
+  },
+  {
+   "id": "var-205-1",
+   "ursache": 205,
+   "text": "Keine Wohnung zu finden ist so anstrengend"
+  },
+  {
+   "id": "var-205-2",
+   "ursache": 205,
+   "text": "Ich habe schon 20 Besichtigungstermine in Berlin gehabt und immer war die Wohnung schon weg"
+  },
+  {
+   "id": "var-205-3",
+   "ursache": 205,
+   "text": "Ich suche seit Monaten und jedes Mal ist die Wohnung schon an jemanden anderen vergeben, es ist zum Verzweifeln"
+  },
+  {
+   "id": "var-206-1",
+   "ursache": 206,
+   "text": "Meine Miete frisst mein ganzes Gehalt."
+  },
+  {
+   "id": "var-206-2",
+   "ursache": 206,
+   "text": "Seit mein Vermieter die Wohnung saniert hat, ist die Miete um 200 Euro gestiegen und ich kann sie nicht mehr bezahlen."
+  },
+  {
+   "id": "var-206-3",
+   "ursache": 206,
+   "text": "Ich suche seit Monaten eine Wohnung unter 600 Euro warm, aber alles ist entweder zu teuer oder schon weg."
+  },
+  {
+   "id": "var-301-1",
+   "ursache": 301,
+   "text": "Meine Stromrechnung ist wieder zu hoch."
+  },
+  {
+   "id": "var-301-2",
+   "ursache": 301,
+   "text": "Dieses Jahr sind 200 Euro mehr für die Netzgebühren drauf als letztes Jahr."
+  },
+  {
+   "id": "var-301-3",
+   "ursache": 301,
+   "text": "Ich checke gerade meine Abrechnung und die Gebühren fürs Netz machen fast die Hälfte aus – das ist doch irre!"
+  },
+  {
+   "id": "var-302-1",
+   "ursache": 302,
+   "text": "Stromrechnung wieder zu hoch, verdammt nochmal"
+  },
+  {
+   "id": "var-302-2",
+   "ursache": 302,
+   "text": "Letzte Woche kam die Gasabrechnung, 40% waren nur Steuern und Umlagen"
+  },
+  {
+   "id": "var-302-3",
+   "ursache": 302,
+   "text": "Ich checke meine Rechnung und denke nur: Warum zahle ich so viel für Dinge, die ich gar nicht verstehe?"
+  },
+  {
+   "id": "var-303-1",
+   "ursache": 303,
+   "text": "Die Heizung wird immer teurer."
+  },
+  {
+   "id": "var-303-2",
+   "ursache": 303,
+   "text": "Seit ich im Altbau wohne, explodieren meine Nebenkosten durch die Gasrechnung."
+  },
+  {
+   "id": "var-303-3",
+   "ursache": 303,
+   "text": "Ich checke jeden Tag die Ölpreise, weil ich Angst habe, dass die nächste Abrechnung mich ruiniert."
+  },
+  {
+   "id": "var-304-1",
+   "ursache": 304,
+   "text": "Stromrechnung explodiert wieder"
+  },
+  {
+   "id": "var-304-2",
+   "ursache": 304,
+   "text": "Seit mein neuer Vertrag läuft, zahle ich für die Kilowattstunde fast doppelt so viel wie vor einem Jahr"
+  },
+  {
+   "id": "var-304-3",
+   "ursache": 304,
+   "text": "Ich checke gerade meine Abrechnung und kann nicht fassen, wie viel mehr ich jetzt für Strom blechen muss – dabei nutze ich nicht mal mehr als sonst"
+  },
+  {
+   "id": "var-305-1",
+   "ursache": 305,
+   "text": "Meine Heizung frisst mein ganzes Geld"
+  },
+  {
+   "id": "var-305-2",
+   "ursache": 305,
+   "text": "Seit ich in der Altbauwohnung mit Ölheizung wohne, explodieren meine Nebenkosten"
+  },
+  {
+   "id": "var-305-3",
+   "ursache": 305,
+   "text": "Ich zittere schon, wenn ich die Heizkostenabrechnung aufmache – jedes Jahr ist es anders"
+  },
+  {
+   "id": "var-401-1",
+   "ursache": 401,
+   "text": "Unser Biolehrer ist schon wieder krank."
+  },
+  {
+   "id": "var-401-2",
+   "ursache": 401,
+   "text": "In meiner Klasse fällt seit Wochen Mathe aus, weil die Vertretung auch krank ist."
+  },
+  {
+   "id": "var-401-3",
+   "ursache": 401,
+   "text": "Stell dir vor, wir haben seit drei Wochen keinen Sportunterricht mehr, weil einfach niemand da ist."
+  },
+  {
+   "id": "var-402-1",
+   "ursache": 402,
+   "text": "Die Toiletten in der Schule sind eklig."
+  },
+  {
+   "id": "var-402-2",
+   "ursache": 402,
+   "text": "In der Klasse meines Sohnes tropft es seit Wochen von der Decke, wenn es regnet."
+  },
+  {
+   "id": "var-402-3",
+   "ursache": 402,
+   "text": "Stell dir vor, ich war gestern in der Schule und die Heizung ist wieder kaputt – die Kinder sitzen mit Jacken im Unterricht."
+  },
+  {
+   "id": "var-403-1",
+   "ursache": 403,
+   "text": "Mein Kind checkt Mathe einfach nicht."
+  },
+  {
+   "id": "var-403-2",
+   "ursache": 403,
+   "text": "Mein Sohn hat in der letzten Mathearbeit nur eine 5 geschrieben, obwohl er sich angestrengt hat."
+  },
+  {
+   "id": "var-403-3",
+   "ursache": 403,
+   "text": "Ich mach mir Sorgen, weil mein Kind in Mathe total abgehängt ist und ich nicht weiß, wie ich helfen soll."
+  },
+  {
+   "id": "var-404-1",
+   "ursache": 404,
+   "text": "Mein Kind kann kaum Deutsch, Hilfe fehlt"
+  },
+  {
+   "id": "var-404-2",
+   "ursache": 404,
+   "text": "In unserer Kita wurde nie getestet, ob mein Sohn Sprachprobleme hat, jetzt hinkt er hinterher"
+  },
+  {
+   "id": "var-404-3",
+   "ursache": 404,
+   "text": "Ich mach mir Sorgen, die Schule sagt, er versteht zu wenig, aber niemand hilft uns richtig"
+  },
+  {
+   "id": "var-405-1",
+   "ursache": 405,
+   "text": "Mein Kind hat keine Chance, weil wir arm sind."
+  },
+  {
+   "id": "var-405-2",
+   "ursache": 405,
+   "text": "Mein Sohn bekommt keine Nachhilfe, weil ich mir das nicht leisten kann."
+  },
+  {
+   "id": "var-405-3",
+   "ursache": 405,
+   "text": "Ich sehe, wie die Kinder aus den besseren Vierteln immer bessere Noten haben, und das macht mich traurig."
+  },
+  {
+   "id": "var-501-1",
+   "ursache": 501,
+   "text": "Mein Job hängt am seidenen Faden."
+  },
+  {
+   "id": "var-501-2",
+   "ursache": 501,
+   "text": "Unser Betrieb hat die dritte Schicht gestrichen, weil die Stromrechnung explodiert ist."
+  },
+  {
+   "id": "var-501-3",
+   "ursache": 501,
+   "text": "Ich hab Angst, dass sie uns bald alle rausschmeißen, die Bestellungen bleiben aus und die Chefs reden nur noch von Kosten."
+  },
+  {
+   "id": "var-502-1",
+   "ursache": 502,
+   "text": "Mein Job fliegt weg, was jetzt?"
+  },
+  {
+   "id": "var-502-2",
+   "ursache": 502,
+   "text": "In der Fabrik, wo ich seit 15 Jahren arbeite, wird nächste Woche die Schließung bekannt gegeben."
+  },
+  {
+   "id": "var-502-3",
+   "ursache": 502,
+   "text": "Ich hab Angst, dass ich mit meinen 50 Jahren in der Metallbranche keine neue Stelle mehr finde."
+  },
+  {
+   "id": "var-503-1",
+   "ursache": 503,
+   "text": "Im Osten kassier ich weniger für denselben Job."
+  },
+  {
+   "id": "var-503-2",
+   "ursache": 503,
+   "text": "Mein Gehalt als Erzieherin in Leipzig ist 300 Euro niedriger als das meiner Schwester in Köln."
+  },
+  {
+   "id": "var-503-3",
+   "ursache": 503,
+   "text": "Ich arbeite hier genauso hart wie die in Hamburg, aber am Ende des Monats fehlt mir einfach das Geld."
+  },
+  {
+   "id": "var-504-1",
+   "ursache": 504,
+   "text": "Die Straßen hier sind kaputt, die Bahn kommt nie pünktlich"
+  },
+  {
+   "id": "var-504-2",
+   "ursache": 504,
+   "text": "In unserer Schule fehlen seit Jahren die neuen Computer, die wir dringend bräuchten"
+  },
+  {
+   "id": "var-504-3",
+   "ursache": 504,
+   "text": "Ich kann nicht verstehen, warum die Ampel an der Kreuzung schon wieder kaputt ist – das dauert ja ewig, bis die repariert wird"
+  },
+  {
+   "id": "var-505-1",
+   "ursache": 505,
+   "text": "Ich ersticke im Papierkram."
+  },
+  {
+   "id": "var-505-2",
+   "ursache": 505,
+   "text": "Jeden Monat verbringe ich 10 Stunden mit Formularen für die Steuererklärung."
+  },
+  {
+   "id": "var-505-3",
+   "ursache": 505,
+   "text": "Ich hab gestern wieder den ganzen Tag nur Akten sortiert, statt mich um Kunden zu kümmern."
+  },
+  {
+   "id": "var-506-1",
+   "ursache": 506,
+   "text": "Mehr Job, weniger Kohle – lohnt sich nicht."
+  },
+  {
+   "id": "var-506-2",
+   "ursache": 506,
+   "text": "Letzte Woche hab ich 20 Stunden extra gearbeitet und am Ende nur 50 Euro mehr auf dem Konto gehabt."
+  },
+  {
+   "id": "var-506-3",
+   "ursache": 506,
+   "text": "Ich hab gestern gerechnet: Wenn ich mehr schuften gehe, krieg ich kaum was extra, weil die das Bürgergeld dann kürzen."
+  },
+  {
+   "id": "var-507-1",
+   "ursache": 507,
+   "text": "Ich krieg zu wenig Kohle für die Arbeit"
+  },
+  {
+   "id": "var-507-2",
+   "ursache": 507,
+   "text": "Seit ich bei der kleinen Firma angefangen habe, bekomme ich 200 Euro weniger als mein Kollege im Tarifbetrieb"
+  },
+  {
+   "id": "var-507-3",
+   "ursache": 507,
+   "text": "Ich arbeite genauso viel wie meine Freundin, aber sie verdient mehr, weil ihr Chef Tarif zahlt"
+  },
+  {
+   "id": "var-601-1",
+   "ursache": 601,
+   "text": "Kein Platz für alle, und die Ämter sind überlastet."
+  },
+  {
+   "id": "var-601-2",
+   "ursache": 601,
+   "text": "In unserer Turnhalle schlafen jetzt 50 Leute, und der Termin beim Amt ist erst in drei Monaten."
+  },
+  {
+   "id": "var-601-3",
+   "ursache": 601,
+   "text": "Ich war gestern beim Bürgeramt – da stand ich zwei Stunden an, und die haben gesagt, sie kommen mit den Anträgen nicht hinterher."
+  },
+  {
+   "id": "var-602-1",
+   "ursache": 602,
+   "text": "Warte seit Ewigkeiten auf meinen Asylbescheid."
+  },
+  {
+   "id": "var-602-2",
+   "ursache": 602,
+   "text": "Mein Anwalt sagt, mein Fall liegt seit 14 Monaten beim Gericht, und ich darf nicht arbeiten."
+  },
+  {
+   "id": "var-602-3",
+   "ursache": 602,
+   "text": "Ich sitze hier fest, kann nicht planen und weiß nicht, ob ich nächste Woche noch hier bin oder nicht."
+  },
+  {
+   "id": "var-603-1",
+   "ursache": 603,
+   "text": "Ich warte seit Monaten auf meinen Sprachkurs."
+  },
+  {
+   "id": "var-603-2",
+   "ursache": 603,
+   "text": "Mein Arztabschluss aus Syrien wird erst in einem Jahr anerkannt, obwohl ich jetzt schon arbeiten könnte."
+  },
+  {
+   "id": "var-603-3",
+   "ursache": 603,
+   "text": "Ich habe schon drei Bewerbungen geschrieben, aber ohne das Zertifikat geht nichts – und das dauert ewig."
+  },
+  {
+   "id": "var-604-1",
+   "ursache": 604,
+   "text": "Die sollen doch eigentlich weg sein, oder?"
+  },
+  {
+   "id": "var-604-2",
+   "ursache": 604,
+   "text": "Mein Nachbar aus Syrien hat seit zwei Jahren keinen Pass mehr und darf trotzdem nicht abgeschoben werden."
+  },
+  {
+   "id": "var-604-3",
+   "ursache": 604,
+   "text": "Ich versteh’s nicht, die haben gesagt, er muss gehen, aber jetzt wohnt er immer noch im Haus gegenüber."
+  },
+  {
+   "id": "var-605-1",
+   "ursache": 605,
+   "text": "Mein Asylantrag hängt seit Monaten fest, obwohl ich woanders hin sollte."
+  },
+  {
+   "id": "var-605-2",
+   "ursache": 605,
+   "text": "Ich warte seit einem Jahr auf die Rückführung nach Italien, aber es passiert einfach nichts."
+  },
+  {
+   "id": "var-605-3",
+   "ursache": 605,
+   "text": "Ich dachte, ich würde nach Polen zurückgeschickt, aber jetzt sitze ich hier fest und weiß nicht, was als Nächstes kommt."
+  },
+  {
+   "id": "var-606-1",
+   "ursache": 606,
+   "text": "Ich warte seit Jahren auf meinen Aufenthaltstitel."
+  },
+  {
+   "id": "var-606-2",
+   "ursache": 606,
+   "text": "Mein Nachbar aus Syrien hat seit 2018 einen Duldungsstatus und darf nicht arbeiten."
+  },
+  {
+   "id": "var-606-3",
+   "ursache": 606,
+   "text": "Ich kann nicht planen, weil ich nicht weiß, ob ich nächste Woche noch hier sein darf."
+  },
+  {
+   "id": "var-701-1",
+   "ursache": 701,
+   "text": "Meine Rente wird nicht reichen, oder?"
+  },
+  {
+   "id": "var-701-2",
+   "ursache": 701,
+   "text": "Ich habe Angst, dass ich mit 67 nur noch 46% von meinem letzten Gehalt bekomme, obwohl ich mein ganzes Leben eingezahlt habe."
+  },
+  {
+   "id": "var-701-3",
+   "ursache": 701,
+   "text": "Ich weiß nicht, wie ich später über die Runden kommen soll, wenn die Beiträge immer höher werden und am Ende kaum was übrig bleibt."
+  },
+  {
+   "id": "var-702-1",
+   "ursache": 702,
+   "text": "Meine Rente wird lausig, weil ich oft joblos war."
+  },
+  {
+   "id": "var-702-2",
+   "ursache": 702,
+   "text": "Mit meinem Teilzeitlohn von 1200 Euro im Monat wird meine Rente später kaum zum Leben reichen."
+  },
+  {
+   "id": "var-702-3",
+   "ursache": 702,
+   "text": "Ich hab jahrelang nur Minijobs gehabt und jetzt weiß ich, dass ich später kaum was von der Rente habe – das macht mich richtig fertig."
+  },
+  {
+   "id": "var-703-1",
+   "ursache": 703,
+   "text": "Kann mir keine Rente leisten, zu wenig Kohle."
+  },
+  {
+   "id": "var-703-2",
+   "ursache": 703,
+   "text": "Mit meinem Minijob bei der Bäckerei kann ich keine betriebliche Altersvorsorge abschließen."
+  },
+  {
+   "id": "var-703-3",
+   "ursache": 703,
+   "text": "Ich würde ja was für später zurücklegen, aber nach Miete und Essen bleibt einfach nichts mehr übrig."
+  },
+  {
+   "id": "var-801-1",
+   "ursache": 801,
+   "text": "Ohne Auto bin ich aufgeschmissen hier"
+  },
+  {
+   "id": "var-801-2",
+   "ursache": 801,
+   "text": "Der nächste Bus fährt erst in zwei Stunden, und ich muss zum Arzt in die Stadt"
+  },
+  {
+   "id": "var-801-3",
+   "ursache": 801,
+   "text": "Ich kann nicht mal schnell zum Supermarkt, weil der Bus nur dreimal am Tag kommt – und der letzte ist schon um 15 Uhr weg"
+  },
+  {
+   "id": "var-802-1",
+   "ursache": 802,
+   "text": "Mein Zug hat wieder Verspätung, verdammt nochmal!"
+  },
+  {
+   "id": "var-802-2",
+   "ursache": 802,
+   "text": "Gestern ist mein ICE wegen eines kaputten Weichenantriebs eine Stunde stehengeblieben."
+  },
+  {
+   "id": "var-802-3",
+   "ursache": 802,
+   "text": "Ich warte schon seit 20 Minuten am Bahnsteig und der Zug kommt einfach nicht, weil irgendwo wieder die Gleise kaputt sind."
+  },
+  {
+   "id": "var-803-1",
+   "ursache": 803,
+   "text": "Mein Bus kam heute wieder nicht"
+  },
+  {
+   "id": "var-803-2",
+   "ursache": 803,
+   "text": "Der 11er ist schon zum dritten Mal diese Woche ausgefallen, weil kein Fahrer da war"
+  },
+  {
+   "id": "var-803-3",
+   "ursache": 803,
+   "text": "Ich stehe schon 20 Minuten an der Haltestelle und der Bus kommt einfach nicht – wieder kein Personal"
+  },
+  {
+   "id": "var-804-1",
+   "ursache": 804,
+   "text": "Mein Ticket kostet jetzt 63 Euro, zu viel!"
+  },
+  {
+   "id": "var-804-2",
+   "ursache": 804,
+   "text": "Seit Januar zahle ich für mein Monatsabo 63 Euro statt 49, das tut weh."
+  },
+  {
+   "id": "var-804-3",
+   "ursache": 804,
+   "text": "Ich kann mir das Deutschlandticket kaum noch leisten, seit es so teuer geworden ist."
+  },
+  {
+   "id": "var-901-1",
+   "ursache": 901,
+   "text": "Abends trau ich mich nicht durch den Park"
+  },
+  {
+   "id": "var-901-2",
+   "ursache": 901,
+   "text": "Gestern Abend bin ich am Hauptbahnhof schnell weitergelaufen, weil es so leer war"
+  },
+  {
+   "id": "var-901-3",
+   "ursache": 901,
+   "text": "Ich hasse es, wenn ich nach der Arbeit noch einkaufen muss und dann im Dunkeln durch den Park gehe – da krieg ich immer ein komisches Gefühl"
+  },
+  {
+   "id": "var-902-1",
+   "ursache": 902,
+   "text": "Mein Fahrrad wurde geklaut und nie wieder gesehen."
+  },
+  {
+   "id": "var-902-2",
+   "ursache": 902,
+   "text": "Vor drei Monaten hat jemand mein Auto aufgebrochen, aber die Polizei hat bis heute nichts herausgefunden."
+  },
+  {
+   "id": "var-902-3",
+   "ursache": 902,
+   "text": "Ich wurde letzte Woche auf der Straße beleidigt und bedroht, aber die haben den Typ einfach laufen lassen. Das macht mich so wütend und hilflos."
+  },
+  {
+   "id": "var-903-1",
+   "ursache": 903,
+   "text": "Letzte Woche wurde ich auf dem Heimweg zusammengeschlagen."
+  },
+  {
+   "id": "var-903-2",
+   "ursache": 903,
+   "text": "Mein Bruder, 16, kam mit blutiger Nase nach Hause, weil ihn jemand auf dem Schulhof angegriffen hat."
+  },
+  {
+   "id": "var-903-3",
+   "ursache": 903,
+   "text": "Ich trau mich abends nicht mehr allein raus, seit ich gehört habe, dass immer mehr Jugendliche verprügelt werden."
+  },
+  {
+   "id": "var-904-1",
+   "ursache": 904,
+   "text": "Er schlägt mich wieder, wenn er betrunken ist"
+  },
+  {
+   "id": "var-904-2",
+   "ursache": 904,
+   "text": "Gestern hat er mir das Handy kaputtgeschmissen, weil ich zu spät nach Hause kam"
+  },
+  {
+   "id": "var-904-3",
+   "ursache": 904,
+   "text": "Ich trau mich nicht mehr, meine Meinung zu sagen, seit er mich das letzte Mal angeschrien und die Tür zugeschlagen hat"
+  },
+  {
+   "id": "var-905-1",
+   "ursache": 905,
+   "text": "In meiner Straße klauen die immer die Fahrräder."
+  },
+  {
+   "id": "var-905-2",
+   "ursache": 905,
+   "text": "Letzte Woche hat mich einer mit Akzent auf dem Heimweg bedroht."
+  },
+  {
+   "id": "var-905-3",
+   "ursache": 905,
+   "text": "Ich trau mich abends nicht mehr allein raus, seit das mit den Typen vor dem Supermarkt passiert ist."
+  },
+  {
+   "id": "var-906-1",
+   "ursache": 906,
+   "text": "Jemand hat mein Konto gehackt und Geld abgehoben"
+  },
+  {
+   "id": "var-906-2",
+   "ursache": 906,
+   "text": "Letzte Woche habe ich eine Phishing-Mail von meiner Bank bekommen und bin darauf reingefallen"
+  },
+  {
+   "id": "var-906-3",
+   "ursache": 906,
+   "text": "Ich hab gestern gemerkt, dass jemand mit meinen Daten bei Amazon bestellt hat – total unangenehm!"
+  },
+  {
+   "id": "var-907-1",
+   "ursache": 907,
+   "text": "Habe Angst vor Anschlägen in der Stadt"
+  },
+  {
+   "id": "var-907-2",
+   "ursache": 907,
+   "text": "Letzte Woche wurde die Moschee in meiner Straße beschmiert"
+  },
+  {
+   "id": "var-907-3",
+   "ursache": 907,
+   "text": "Ich trau mich nicht mehr, abends allein mit dem Fahrrad durch den Park zu fahren"
+  },
+  {
+   "id": "var-908-1",
+   "ursache": 908,
+   "text": "Ich trau mich nachts nicht mehr allein raus"
+  },
+  {
+   "id": "var-908-2",
+   "ursache": 908,
+   "text": "Letzte Woche hat mich jemand im Park bedrängt, seitdem zittere ich bei jedem Schritt"
+  },
+  {
+   "id": "var-908-3",
+   "ursache": 908,
+   "text": "Ich war gestern im Club und da hat mich einer einfach angefasst, ich fühle mich so schmutzig und unsicher"
+  },
+  {
+   "id": "var-909-1",
+   "ursache": 909,
+   "text": "Immer nur Ausländer in den Nachrichten bei Verbrechen"
+  },
+  {
+   "id": "var-909-2",
+   "ursache": 909,
+   "text": "Gestern wieder im Tatort: der Täter war aus Syrien, dabei kenne ich hier nur nette Leute aus dem Land"
+  },
+  {
+   "id": "var-909-3",
+   "ursache": 909,
+   "text": "Ich schau die Nachrichten und denke nur: Warum wird immer betont, wenn jemand aus dem Ausland kommt? Das gibt so ein falsches Bild."
+  },
+  {
+   "id": "var-911-1",
+   "ursache": 911,
+   "text": "Ich hab Angst vor dem Typen von nebenan, der immer betrunken ist"
+  },
+  {
+   "id": "var-911-2",
+   "ursache": 911,
+   "text": "Mein Nachbar schreit nachts und wirft mit Flaschen, ich trau mich nicht raus"
+  },
+  {
+   "id": "var-911-3",
+   "ursache": 911,
+   "text": "Gestern ist mir einer hinterhergelaufen, der total durch war – ich zittere noch"
+  },
+  {
+   "id": "var-1001-1",
+   "ursache": 1001,
+   "text": "Immer zu wenig Hände für alle"
+  },
+  {
+   "id": "var-1001-2",
+   "ursache": 1001,
+   "text": "Meine Oma im Heim bekommt nur noch 5 Minuten pro Schicht"
+  },
+  {
+   "id": "var-1001-3",
+   "ursache": 1001,
+   "text": "Ich arbeite im Pflegeheim und schaffe es kaum, alle zu versorgen, so voll ist der Plan"
+  },
+  {
+   "id": "var-1002-1",
+   "ursache": 1002,
+   "text": "Das Heim frisst mein ganzes Geld."
+  },
+  {
+   "id": "var-1002-2",
+   "ursache": 1002,
+   "text": "Seit Mama im Pflegeheim ist, kostet mich das erste Jahr über 40.000 Euro nur für ihren Anteil."
+  },
+  {
+   "id": "var-1002-3",
+   "ursache": 1002,
+   "text": "Ich weiß nicht mehr, wie ich das schaffen soll – die Rechnung fürs Heim ist einfach zu hoch für uns."
+  },
+  {
+   "id": "var-1003-1",
+   "ursache": 1003,
+   "text": "Meine Oma braucht plötzlich Hilfe, und ich check’s nicht mehr."
+  },
+  {
+   "id": "var-1003-2",
+   "ursache": 1003,
+   "text": "Seit mein Vater nach dem Schlaganfall zu Hause gepflegt wird, fehlt mir die Zeit für alles andere."
+  },
+  {
+   "id": "var-1003-3",
+   "ursache": 1003,
+   "text": "Ich dachte, nur Opa wäre betroffen, aber jetzt braucht auch Tante Lisa Unterstützung – und ich weiß nicht, wie wir das stemmen sollen."
+  },
+  {
+   "id": "var-1004-1",
+   "ursache": 1004,
+   "text": "Ich schaffe das allein nicht mehr."
+  },
+  {
+   "id": "var-1004-2",
+   "ursache": 1004,
+   "text": "Seit ich meine Mutter nach dem Schlaganfall zu Hause versorge, habe ich keine freie Minute mehr."
+  },
+  {
+   "id": "var-1004-3",
+   "ursache": 1004,
+   "text": "Ich bin so erschöpft – ich kümmere mich Tag und Nacht um meinen Vater, und niemand hilft mir dabei."
+  },
+  {
+   "id": "var-1005-1",
+   "ursache": 1005,
+   "text": "500 Euro extra fürs Heim, das ist Wahnsinn"
+  },
+  {
+   "id": "var-1005-2",
+   "ursache": 1005,
+   "text": "Seit ich im St. Josefshaus wohne, muss ich jeden Monat 520 Euro für die Einrichtung zahlen"
+  },
+  {
+   "id": "var-1005-3",
+   "ursache": 1005,
+   "text": "Ich kann es nicht fassen, dass ich für mein Zimmer im Heim so viel extra blechen muss, dabei ist das doch schon teuer genug"
+  },
+  {
+   "id": "var-1101-1",
+   "ursache": 1101,
+   "text": "Eier kosten plötzlich 5 Euro, was geht hier ab?"
+  },
+  {
+   "id": "var-1101-2",
+   "ursache": 1101,
+   "text": "Mein wöchentlicher Einkauf im Bio-Laden ist seit letztem Jahr um 30 Euro teurer geworden."
+  },
+  {
+   "id": "var-1101-3",
+   "ursache": 1101,
+   "text": "Ich kann mir kaum noch frisches Gemüse leisten, alles ist so viel teurer als vor einem Jahr."
+  },
+  {
+   "id": "var-1102-1",
+   "ursache": 1102,
+   "text": "Im Supermarkt ist alles so teuer geworden"
+  },
+  {
+   "id": "var-1102-2",
+   "ursache": 1102,
+   "text": "Bei Edeka kostet mein Lieblingsjoghurt plötzlich 20 Cent mehr als letzte Woche"
+  },
+  {
+   "id": "var-1102-3",
+   "ursache": 1102,
+   "text": "Ich checke immer alle Prospekte, aber überall sind die Preise fast gleich – das kann doch nicht sein"
+  },
+  {
+   "id": "var-1103-1",
+   "ursache": 1103,
+   "text": "Mein Gehalt bleibt gleich, alles wird teurer."
+  },
+  {
+   "id": "var-1103-2",
+   "ursache": 1103,
+   "text": "Seit ich 2020 angefangen habe, verdiene ich fast dasselbe, aber der Einkauf kostet jetzt 50 Euro mehr."
+  },
+  {
+   "id": "var-1103-3",
+   "ursache": 1103,
+   "text": "Ich checke mein Konto und denke nur: Wie soll das reichen, wenn alles immer mehr kostet und ich nicht mehr bekomme?"
+  },
+  {
+   "id": "var-1104-1",
+   "ursache": 1104,
+   "text": "Von meinem Gehalt bleibt kaum was übrig."
+  },
+  {
+   "id": "var-1104-2",
+   "ursache": 1104,
+   "text": "Nach Abzug von Steuern und Krankenkasse habe ich nur noch 1200 Euro von meinen 2500 Euro Brutto."
+  },
+  {
+   "id": "var-1104-3",
+   "ursache": 1104,
+   "text": "Ich arbeite so viel und am Ende kommt kaum was auf meinem Konto an, das frustriert mich total."
+  },
+  {
+   "id": "var-1105-1",
+   "ursache": 1105,
+   "text": "Ich komm mit meinem Gehalt kaum über die Runden."
+  },
+  {
+   "id": "var-1105-2",
+   "ursache": 1105,
+   "text": "Nach 40 Stunden die Woche im Café bleib ich mit 1200 Euro netto unter der Armutsgrenze."
+  },
+  {
+   "id": "var-1105-3",
+   "ursache": 1105,
+   "text": "Ich arbeite Vollzeit und kann mir trotzdem keine neue Winterjacke leisten, das ist so frustrierend."
+  },
+  {
+   "id": "var-1201-1",
+   "ursache": 1201,
+   "text": "Immer wieder Stau wegen kaputter Brücken"
+  },
+  {
+   "id": "var-1201-2",
+   "ursache": 1201,
+   "text": "Auf der A5 stehe ich seit Wochen im Stau, weil die Brücke bei Frankfurt schon wieder gesperrt ist"
+  },
+  {
+   "id": "var-1201-3",
+   "ursache": 1201,
+   "text": "Ich war gestern wieder ewig unterwegs, weil die Baustelle auf der Autobahnbrücke einfach nicht fertig wird – das nervt so!"
+  },
+  {
+   "id": "var-1202-1",
+   "ursache": 1202,
+   "text": "Meine Straße ist kaputt wie Sau."
+  },
+  {
+   "id": "var-1202-2",
+   "ursache": 1202,
+   "text": "Vor meinem Haus ist seit Monaten ein Schlagloch, das mein Auto jedes Mal durchrüttelt."
+  },
+  {
+   "id": "var-1202-3",
+   "ursache": 1202,
+   "text": "Ich fahre jeden Tag zur Arbeit und muss aufpassen, dass ich nicht in eines der vielen Schlaglöcher fahre – das ist echt nervig."
+  },
+  {
+   "id": "var-1203-1",
+   "ursache": 1203,
+   "text": "Die Baustelle vor meiner Haustür ist seit Monaten da"
+  },
+  {
+   "id": "var-1203-2",
+   "ursache": 1203,
+   "text": "Seit Juni steht das Schild 'Bauarbeiten' an der Hauptstraße, und es tut sich nichts"
+  },
+  {
+   "id": "var-1203-3",
+   "ursache": 1203,
+   "text": "Ich kann nicht mehr zuschauen, wie die Baustelle an der Ecke seit einem halben Jahr einfach nur rumsteht"
+  },
+  {
+   "id": "var-1204-1",
+   "ursache": 1204,
+   "text": "Auf dem Rad hab ich immer Angst vor Autos"
+  },
+  {
+   "id": "var-1204-2",
+   "ursache": 1204,
+   "text": "Gestern hat mich ein Auto auf meinem E-Bike fast von der Straße gedrängt"
+  },
+  {
+   "id": "var-1204-3",
+   "ursache": 1204,
+   "text": "Ich trau mich kaum noch, mit meinem Pedelec zur Arbeit zu fahren, weil die Autos so nah vorbeirasen"
+  },
+  {
+   "id": "var-1301-1",
+   "ursache": 1301,
+   "text": "Mein Internet ist so langsam, kann kaum was laden"
+  },
+  {
+   "id": "var-1301-2",
+   "ursache": 1301,
+   "text": "Bei uns auf dem Dorf habe ich nur 5 Mbit, obwohl die Nachbarstadt schon Glasfaser hat"
+  },
+  {
+   "id": "var-1301-3",
+   "ursache": 1301,
+   "text": "Ich warte ewig auf Videos und selbst Zoom ruppelt – dabei wohne ich nicht mal im tiefsten Wald"
+  },
+  {
+   "id": "var-1302-1",
+   "ursache": 1302,
+   "text": "Kein Netz im Wald, verdammt nochmal!"
+  },
+  {
+   "id": "var-1302-2",
+   "ursache": 1302,
+   "text": "Bei uns auf dem Berg kann ich nicht mal eine Sprachnachricht abschicken."
+  },
+  {
+   "id": "var-1302-3",
+   "ursache": 1302,
+   "text": "Ich war gestern wandern und plötzlich war alles tot – kein Google Maps, nichts."
+  },
+  {
+   "id": "var-1401-1",
+   "ursache": 1401,
+   "text": "Immer wieder Papierkram trotz Internet"
+  },
+  {
+   "id": "var-1401-2",
+   "ursache": 1401,
+   "text": "Für den Elternantrag auf Kindergeld habe ich stundenlang auf der Website gesucht, am Ende musste ich doch ins Amt"
+  },
+  {
+   "id": "var-1401-3",
+   "ursache": 1401,
+   "text": "Ich dachte, ich mach das schnell online, aber dann heißt es plötzlich: Bitte per Post oder persönlich abgeben."
+  },
+  {
+   "id": "var-1402-1",
+   "ursache": 1402,
+   "text": "Mein Termin beim Amt ist erst in 3 Monaten"
+  },
+  {
+   "id": "var-1402-2",
+   "ursache": 1402,
+   "text": "Ich habe seit Juni auf meinen Steuerbescheid gewartet, weil die Sachbearbeiterin im Urlaub und dann krank war"
+  },
+  {
+   "id": "var-1402-3",
+   "ursache": 1402,
+   "text": "Ich war gestern beim Bürgeramt und die Schlange stand bis zur Tür – die haben nur noch zwei Leute am Schalter"
+  },
+  {
+   "id": "var-1403-1",
+   "ursache": 1403,
+   "text": "Immer dieselben Formulare ausfüllen, nervt!"
+  },
+  {
+   "id": "var-1403-2",
+   "ursache": 1403,
+   "text": "Beim Bürgeramt musste ich zum dritten Mal meinen Mietvertrag vorlegen, obwohl ich ihn schon beim Jobcenter abgegeben hatte."
+  },
+  {
+   "id": "var-1403-3",
+   "ursache": 1403,
+   "text": "Ich war heute wieder ewig am Amt und musste alles nochmal erklären – die haben doch schon alles von mir!"
+  },
+  {
+   "id": "var-1404-1",
+   "ursache": 1404,
+   "text": "Beim Amt dauert alles ewig wegen den Formularen."
+  },
+  {
+   "id": "var-1404-2",
+   "ursache": 1404,
+   "text": "Ich musste dreimal zum Bürgeramt, weil jedes Mal ein anderes Formular fehlte."
+  },
+  {
+   "id": "var-1404-3",
+   "ursache": 1404,
+   "text": "Ich war gestern beim Amt und hab mich gefühlt wie in einem Labyrinth – erst das eine Formular, dann das nächste, und am Ende fehlte trotzdem was."
+  },
+  {
+   "id": "var-1501-1",
+   "ursache": 1501,
+   "text": "Tanken tut weh, seit Wochen."
+  },
+  {
+   "id": "var-1501-2",
+   "ursache": 1501,
+   "text": "Letzte Woche habe ich für meinen Golf 20 Euro mehr gezahlt als im Januar."
+  },
+  {
+   "id": "var-1501-3",
+   "ursache": 1501,
+   "text": "Ich kann mir kaum noch leisten, zur Arbeit zu fahren, seit der Sprit so teuer ist."
+  },
+  {
+   "id": "var-1502-1",
+   "ursache": 1502,
+   "text": "Tanken brennt ein Loch in die Tasche."
+  },
+  {
+   "id": "var-1502-2",
+   "ursache": 1502,
+   "text": "Jedes Mal, wenn ich meinen alten Golf volltanke, sind 20 Euro nur für Steuern drauf."
+  },
+  {
+   "id": "var-1502-3",
+   "ursache": 1502,
+   "text": "Ich hab gestern 80 Euro getankt und dachte nur: Wo bleibt das ganze Geld?"
+  },
+  {
+   "id": "var-1503-1",
+   "ursache": 1503,
+   "text": "Tankstellenpreise gehen nie runter, egal was passiert"
+  },
+  {
+   "id": "var-1503-2",
+   "ursache": 1503,
+   "text": "Letzte Woche war der Sprit wieder 5 Cent teurer, obwohl die Ölpreise gefallen sind"
+  },
+  {
+   "id": "var-1503-3",
+   "ursache": 1503,
+   "text": "Ich hab gestern vollgetankt und dachte nur: Warum ist das immer so teuer, obwohl alle sagen, es wird billiger?"
+  },
+  {
+   "id": "var-1504-1",
+   "ursache": 1504,
+   "text": "Kann mir kein E-Auto leisten"
+  },
+  {
+   "id": "var-1504-2",
+   "ursache": 1504,
+   "text": "Mein Budget reicht nicht für den Tesla Model 3, den ich mir eigentlich wünsche"
+  },
+  {
+   "id": "var-1504-3",
+   "ursache": 1504,
+   "text": "Ich würde so gern umweltfreundlicher fahren, aber das Geld reicht einfach nicht für ein neues Elektroauto"
+  },
+  {
+   "id": "var-1505-1",
+   "ursache": 1505,
+   "text": "Mein E-Auto lädt nicht zu Hause."
+  },
+  {
+   "id": "var-1505-2",
+   "ursache": 1505,
+   "text": "Jeden Abend suche ich eine öffentliche Ladesäule, weil mein Parkplatz im Hinterhof keinen Stromanschluss hat."
+  },
+  {
+   "id": "var-1505-3",
+   "ursache": 1505,
+   "text": "Ich stehe immer vor dem Problem, dass ich mein Auto nicht zu Hause aufladen kann – total nervig, oder?"
+  },
+  {
+   "id": "var-1601-1",
+   "ursache": 1601,
+   "text": "Die neue Heizung ist mir zu teuer."
+  },
+  {
+   "id": "var-1601-2",
+   "ursache": 1601,
+   "text": "Ich habe kein Geld für die Wärmepumpe, obwohl mein altes System kaputt ist."
+  },
+  {
+   "id": "var-1601-3",
+   "ursache": 1601,
+   "text": "Ich würde gern umsteigen, aber die Rechnung passt einfach nicht und ich weiß nicht, ob sich das jemals rechnet."
+  },
+  {
+   "id": "var-1602-1",
+   "ursache": 1602,
+   "text": "Meine Heizung ist kaputt, aber was darf ich jetzt einbauen?"
+  },
+  {
+   "id": "var-1602-2",
+   "ursache": 1602,
+   "text": "Letzte Woche hat der Handwerker gesagt, ich könnte noch eine Gasheizung nehmen, aber gestern las ich, dass das ab nächstem Jahr verboten ist."
+  },
+  {
+   "id": "var-1602-3",
+   "ursache": 1602,
+   "text": "Ich stehe total auf dem Schlauch – erst sollte ich auf Wärmepumpe umsteigen, dann hieß es, das geht bei uns nicht, und jetzt weiß ich gar nicht mehr, was ich machen soll."
+  },
+  {
+   "id": "var-1603-1",
+   "ursache": 1603,
+   "text": "Ich weiß nicht, was ich mit der Heizung machen soll."
+  },
+  {
+   "id": "var-1603-2",
+   "ursache": 1603,
+   "text": "In meinem Ort soll erst 2027 die Wärmeplanung fertig sein, also kann ich die alte Heizung nicht ersetzen."
+  },
+  {
+   "id": "var-1603-3",
+   "ursache": 1603,
+   "text": "Ich stehe total auf dem Schlauch – soll ich jetzt schon eine neue Heizung kaufen oder noch warten?"
+  },
+  {
+   "id": "var-1604-1",
+   "ursache": 1604,
+   "text": "Meine Heizung ist alt und frisst nur Geld"
+  },
+  {
+   "id": "var-1604-2",
+   "ursache": 1604,
+   "text": "Ich heize mit der 20 Jahre alten Gasheizung, die der Vermieter nicht austauschen will"
+  },
+  {
+   "id": "var-1604-3",
+   "ursache": 1604,
+   "text": "Ich zittere im Winter, weil die Heizung so ineffizient ist und ich die Rechnung nicht bezahlen kann"
+  },
+  {
+   "id": "var-1701-1",
+   "ursache": 1701,
+   "text": "Kein Platz für mein Baby in der Kita"
+  },
+  {
+   "id": "var-1701-2",
+   "ursache": 1701,
+   "text": "Seit drei Monaten warte ich auf einen Betreuungsplatz für meine 18 Monate alte Tochter"
+  },
+  {
+   "id": "var-1701-3",
+   "ursache": 1701,
+   "text": "Ich bin total gestresst, weil ich einfach keinen Kitaplatz für meinen Sohn bekomme und nicht weiß, wie ich das mit der Arbeit vereinbaren soll"
+  },
+  {
+   "id": "var-1702-1",
+   "ursache": 1702,
+   "text": "In der Kita fehlen immer Leute."
+  },
+  {
+   "id": "var-1702-2",
+   "ursache": 1702,
+   "text": "Mein Sohn kommt oft weinend nach Hause, weil die Erzieherin heute wieder allein für 20 Kinder zuständig war."
+  },
+  {
+   "id": "var-1702-3",
+   "ursache": 1702,
+   "text": "Ich hol mein Kind ab und die Betreuerin sieht total gestresst aus, die hat heute wieder keine Pause machen können."
+  },
+  {
+   "id": "var-1703-1",
+   "ursache": 1703,
+   "text": "Meine Kita hat zu wenig Leute für die vielen Kinder"
+  },
+  {
+   "id": "var-1703-2",
+   "ursache": 1703,
+   "text": "In der Kita meines Sohnes sind 25 Kinder mit nur einer Erzieherin in der Gruppe"
+  },
+  {
+   "id": "var-1703-3",
+   "ursache": 1703,
+   "text": "Ich bin total gestresst, weil in der Kita meiner Tochter immer nur eine Betreuerin für die ganze Gruppe da ist und ich mir Sorgen mache, ob sie genug Aufmerksamkeit bekommt"
+  },
+  {
+   "id": "var-1704-1",
+   "ursache": 1704,
+   "text": "Kita zu, Kind zu Hause, Stress pur."
+  },
+  {
+   "id": "var-1704-2",
+   "ursache": 1704,
+   "text": "Gestern um 7 Uhr die Nachricht: Kita macht heute zu, weil die Erzieherin krank ist."
+  },
+  {
+   "id": "var-1704-3",
+   "ursache": 1704,
+   "text": "Ich hatte schon alles geplant und dann kommt so eine Nachricht – jetzt sitze ich mit meinem Kind zu Hause und weiß nicht, was ich machen soll."
+  },
+  {
+   "id": "var-1705-1",
+   "ursache": 1705,
+   "text": "Die Kita kostet mich zu viel Geld."
+  },
+  {
+   "id": "var-1705-2",
+   "ursache": 1705,
+   "text": "Seit mein Kind in die Kita geht, muss ich jeden Monat 300 Euro mehr ausgeben."
+  },
+  {
+   "id": "var-1705-3",
+   "ursache": 1705,
+   "text": "Ich weiß nicht, wie ich die Kita-Gebühren noch bezahlen soll, das ist einfach zu teuer für mich."
+  },
+  {
+   "id": "var-1801-1",
+   "ursache": 1801,
+   "text": "Ich schmelze hier einfach weg."
+  },
+  {
+   "id": "var-1801-2",
+   "ursache": 1801,
+   "text": "Letzte Woche hatte ich drei Tage hintereinander 35 Grad im Büro und konnte kaum noch klar denken."
+  },
+  {
+   "id": "var-1801-3",
+   "ursache": 1801,
+   "text": "Ich kann nicht mehr schlafen, weil es nachts einfach nicht abkühlt – und das schon seit Wochen."
+  },
+  {
+   "id": "var-1802-1",
+   "ursache": 1802,
+   "text": "Oma schwitzt und wird schlapp"
+  },
+  {
+   "id": "var-1802-2",
+   "ursache": 1802,
+   "text": "Mein Opa (82) hat letzte Woche im Garten einen Kreislaufkollaps gehabt"
+  },
+  {
+   "id": "var-1802-3",
+   "ursache": 1802,
+   "text": "Ich hab Angst, dass meine Eltern im Sommer wieder so komisch atmen, wenn es so heiß ist"
+  },
+  {
+   "id": "var-1803-1",
+   "ursache": 1803,
+   "text": "Nachts schwitze ich mich kaputt, kein Lüftchen."
+  },
+  {
+   "id": "var-1803-2",
+   "ursache": 1803,
+   "text": "In meiner Dachwohnung in Kreuzberg war es letzte Nacht wieder 28 Grad, obwohl ich alle Fenster aufriss."
+  },
+  {
+   "id": "var-1803-3",
+   "ursache": 1803,
+   "text": "Ich liege da und starre die Decke an, weil die Hitze einfach nicht weicht – selbst um drei Uhr morgens ist es unerträglich."
+  },
+  {
+   "id": "var-1804-1",
+   "ursache": 1804,
+   "text": "Bei Regen steht hier alles unter Wasser."
+  },
+  {
+   "id": "var-1804-2",
+   "ursache": 1804,
+   "text": "Gestern ist mein Keller vollgelaufen, weil der Asphalt das Wasser nicht aufnimmt."
+  },
+  {
+   "id": "var-1804-3",
+   "ursache": 1804,
+   "text": "Ich war gestern unterwegs und plötzlich stand ich knöcheltief im Wasser – die Straßen sind einfach nur Beton."
+  },
+  {
+   "id": "var-1805-1",
+   "ursache": 1805,
+   "text": "Mein Keller steht wieder unter Wasser."
+  },
+  {
+   "id": "var-1805-2",
+   "ursache": 1805,
+   "text": "Letzte Woche hat das Hochwasser unsere neu gebaute Garage überschwemmt."
+  },
+  {
+   "id": "var-1805-3",
+   "ursache": 1805,
+   "text": "Ich mach mir Sorgen, weil direkt neben uns ein neues Haus im Überschwemmungsgebiet entsteht und wir schon zweimal Wasser im Garten hatten."
+  },
+  {
+   "id": "var-1806-1",
+   "ursache": 1806,
+   "text": "Mein Haus hat keine Elementarschadenversicherung."
+  },
+  {
+   "id": "var-1806-2",
+   "ursache": 1806,
+   "text": "Ich habe versucht, eine Versicherung gegen Hochwasser abzuschließen, aber alle Anbieter haben mich abgelehnt."
+  },
+  {
+   "id": "var-1806-3",
+   "ursache": 1806,
+   "text": "Ich habe gerade gemerkt, dass meine Hausversicherung Starkregen nicht abdeckt – und jetzt mache ich mir Sorgen."
+  },
+  {
+   "id": "var-1901-1",
+   "ursache": 1901,
+   "text": "Keiner ruft an, obwohl ich perfekt passe."
+  },
+  {
+   "id": "var-1901-2",
+   "ursache": 1901,
+   "text": "Bei der dritten Bewerbung als Erzieherin mit Kopftuch wieder Absage, obwohl ich die beste Qualifikation hatte."
+  },
+  {
+   "id": "var-1901-3",
+   "ursache": 1901,
+   "text": "Ich hab mich bei fünf Stellen beworben und nur eine Rückmeldung bekommen – und die war eine Absage. Ich glaub, es liegt am Kopftuch."
+  },
+  {
+   "id": "var-1902-1",
+   "ursache": 1902,
+   "text": "Im Supermarkt wurde ich wieder angestarrt."
+  },
+  {
+   "id": "var-1902-2",
+   "ursache": 1902,
+   "text": "Mein Kollege hat gesagt, ich sei nur wegen meiner Hautfarbe eingestellt worden."
+  },
+  {
+   "id": "var-1902-3",
+   "ursache": 1902,
+   "text": "Weißt du, gestern im Park hat mich jemand gefragt, ob ich hier überhaupt leben darf – einfach so."
+  },
+  {
+   "id": "var-1903-1",
+   "ursache": 1903,
+   "text": "Immer wieder blöde Sprüche wegen meiner Identität"
+  },
+  {
+   "id": "var-1903-2",
+   "ursache": 1903,
+   "text": "Gestern hat mich ein Kollege gefragt, ob ich mich nicht einfach 'normal' anziehen könnte"
+  },
+  {
+   "id": "var-1903-3",
+   "ursache": 1903,
+   "text": "Ich war im Café und die Kellnerin hat mich absichtlich falsch angesprochen, obwohl ich ihr gesagt habe, wie ich heiße"
+  },
+  {
+   "id": "var-1904-1",
+   "ursache": 1904,
+   "text": "In der Schule werde ich immer übergangen."
+  },
+  {
+   "id": "var-1904-2",
+   "ursache": 1904,
+   "text": "Mein Antrag beim Bürgeramt wurde abgelehnt, obwohl ich alle Unterlagen hatte – nur weil ich anders aussehe."
+  },
+  {
+   "id": "var-1904-3",
+   "ursache": 1904,
+   "text": "Ich war heute wieder im Amt und wurde einfach ignoriert, obwohl ich vor allen anderen dran war. Das macht mich so wütend."
+  },
+  {
+   "id": "var-2001-1",
+   "ursache": 2001,
+   "text": "Kein Platz zum Chillen hier."
+  },
+  {
+   "id": "var-2001-2",
+   "ursache": 2001,
+   "text": "Im Park sitzen wir immer auf dem kalten Boden, weil es keine Bänke gibt."
+  },
+  {
+   "id": "var-2001-3",
+   "ursache": 2001,
+   "text": "Ich langweile mich zu Hause, aber in der Stadt gibt’s nichts für uns außer teure Cafés."
+  },
+  {
+   "id": "var-2002-1",
+   "ursache": 2002,
+   "text": "Kein Geld für Kino mit den anderen."
+  },
+  {
+   "id": "var-2002-2",
+   "ursache": 2002,
+   "text": "Ich kann nicht mit zum Schwimmbad, weil mein Taschengeld für die Eintrittskarte nicht reicht."
+  },
+  {
+   "id": "var-2002-3",
+   "ursache": 2002,
+   "text": "Ich würde so gern mit den anderen ins Escape Room gehen, aber ich hab einfach kein Geld dafür."
+  },
+  {
+   "id": "var-2003-1",
+   "ursache": 2003,
+   "text": "Die Altersgenossen jagen uns vom Platz weg."
+  },
+  {
+   "id": "var-2003-2",
+   "ursache": 2003,
+   "text": "Gestern hat wieder jemand die Polizei gerufen, weil wir am Skatepark waren."
+  },
+  {
+   "id": "var-2003-3",
+   "ursache": 2003,
+   "text": "Immer wenn wir uns am Bolzplatz treffen, kommt irgendwer und meckert wegen dem Lärm."
+  },
+  {
+   "id": "var-2101-1",
+   "ursache": 2101,
+   "text": "Mit dem Geld reicht’s nie bis Ende Monat."
+  },
+  {
+   "id": "var-2101-2",
+   "ursache": 2101,
+   "text": "Ich habe gestern wieder die Miete mit dem letzten Rest vom Bürgergeld bezahlt und jetzt fehlt’s für Essen."
+  },
+  {
+   "id": "var-2101-3",
+   "ursache": 2101,
+   "text": "Ich weiß nicht, wie ich das nächste Mal einkaufen soll, das Konto ist leer und die Miete ist schon abgegangen."
+  },
+  {
+   "id": "var-2102-1",
+   "ursache": 2102,
+   "text": "Mit Kind allein, immer knapp bei Kasse"
+  },
+  {
+   "id": "var-2102-2",
+   "ursache": 2102,
+   "text": "Seit der Trennung von meinem Partner fehlen mir jeden Monat 200 Euro für die Miete und die Schulmaterialien meiner Tochter"
+  },
+  {
+   "id": "var-2102-3",
+   "ursache": 2102,
+   "text": "Ich schäme mich, wenn meine Kinder fragen, warum wir uns keine neuen Schuhe leisten können – dabei arbeite ich Vollzeit"
+  },
+  {
+   "id": "var-2103-1",
+   "ursache": 2103,
+   "text": "Habe Anspruch, aber trau mich nicht zu beantragen."
+  },
+  {
+   "id": "var-2103-2",
+   "ursache": 2103,
+   "text": "Ich bekomme zwar Wohngeld, aber die Grundsicherung für meine Kinder habe ich nie beantragt, obwohl ich weiß, dass wir sie bräuchten."
+  },
+  {
+   "id": "var-2103-3",
+   "ursache": 2103,
+   "text": "Ich schäme mich total, aber eigentlich könnten wir mehr Unterstützung kriegen – ich hab’s einfach nie gemacht."
+  },
+  {
+   "id": "var-2201-1",
+   "ursache": 2201,
+   "text": "Meine Freunde ziehen mich in die falsche Richtung."
+  },
+  {
+   "id": "var-2201-2",
+   "ursache": 2201,
+   "text": "Seit ich mit den Leuten aus dem Fitnessstudio abhänge, denke ich anders über Ausländer."
+  },
+  {
+   "id": "var-2201-3",
+   "ursache": 2201,
+   "text": "Ich merke, wie ich mich immer mehr mit den Ansichten meiner neuen Clique anfreunde, obwohl ich früher anders dachte."
+  },
+  {
+   "id": "var-2202-1",
+   "ursache": 2202,
+   "text": "Immer diese komischen Videos auf YouTube"
+  },
+  {
+   "id": "var-2202-2",
+   "ursache": 2202,
+   "text": "Mein Sohn hat gestern ein Video über Verschwörungstheorien auf TikTok gesehen"
+  },
+  {
+   "id": "var-2202-3",
+   "ursache": 2202,
+   "text": "Ich hab gestern wieder so einen komischen Post in meiner Timeline gehabt und weiß nicht, wie ich das meinen Kindern erklären soll"
+  },
+  {
+   "id": "var-2203-1",
+   "ursache": 2203,
+   "text": "Ich fühle mich ständig übergangen und hasse alle da oben"
+  },
+  {
+   "id": "var-2203-2",
+   "ursache": 2203,
+   "text": "Mein Chef hat mich wieder übergangen, obwohl ich die beste Idee hatte – jetzt checke ich nur noch Verschwörungstheorien"
+  },
+  {
+   "id": "var-2203-3",
+   "ursache": 2203,
+   "text": "Weißt du, ich hab das Gefühl, dass die da oben mich einfach nicht ernst nehmen. Und dann lese ich so Sachen im Netz und denke: Die haben ja doch recht."
+  },
+  {
+   "id": "var-2204-1",
+   "ursache": 2204,
+   "text": "Meine Freunde labern nur noch von Feinden und Macht"
+  },
+  {
+   "id": "var-2204-2",
+   "ursache": 2204,
+   "text": "Mein Bruder sagt, nur seine Gruppe hat recht und Gewalt sei manchmal nötig"
+  },
+  {
+   "id": "var-2204-3",
+   "ursache": 2204,
+   "text": "Ich verstehe nicht, warum sie plötzlich alle anderen verachten und sich so wichtig nehmen"
+  },
+  {
+   "id": "var-2205-1",
+   "ursache": 2205,
+   "text": "Immer streiten wir uns bei Politik."
+  },
+  {
+   "id": "var-2205-2",
+   "ursache": 2205,
+   "text": "Gestern hat mein Bruder wieder geschrien, als ich gesagt habe, dass ich die neue Steuerreform unfair finde."
+  },
+  {
+   "id": "var-2205-3",
+   "ursache": 2205,
+   "text": "Ich kann nicht mal mehr mit meinem Vater über die Rente reden, ohne dass er gleich wütend wird und mir vorwirft, ich würde ihn nicht verstehen."
+  },
+  {
+   "id": "var-2206-1",
+   "ursache": 2206,
+   "text": "Bei uns wird gleich geschrien, wenn einer was anderes meint"
+  },
+  {
+   "id": "var-2206-2",
+   "ursache": 2206,
+   "text": "Mein Bruder hört mir nicht mehr zu, seit ich bei der letzten Wahl anders gewählt habe als er"
+  },
+  {
+   "id": "var-2206-3",
+   "ursache": 2206,
+   "text": "Ich kann mit meiner Schwester nicht mehr über Politik reden, ohne dass sie gleich wütend wird und ich mich zurückziehe"
+  },
+  {
+   "id": "var-2301-1",
+   "ursache": 2301,
+   "text": "Alle lachen über mich in der Pause"
+  },
+  {
+   "id": "var-2301-2",
+   "ursache": 2301,
+   "text": "In der 7b wird Tim immer als Streber bezeichnet, weil er gute Noten hat"
+  },
+  {
+   "id": "var-2301-3",
+   "ursache": 2301,
+   "text": "Ich kann nicht mehr in die Schule, weil alle über mein Aussehen lästern und keiner was sagt"
+  },
+  {
+   "id": "var-2302-1",
+   "ursache": 2302,
+   "text": "Die Lehrer gucken nur zu, wenn die mich ärgern."
+  },
+  {
+   "id": "var-2302-2",
+   "ursache": 2302,
+   "text": "In der 5b hat der Mathelehrer immer weggesehen, wenn Tim mich auslachte und meine Hefte versteckte."
+  },
+  {
+   "id": "var-2302-3",
+   "ursache": 2302,
+   "text": "Ich kann nicht mehr in die Schule, die anderen mobben mich und die Lehrer tun einfach nichts dagegen."
+  },
+  {
+   "id": "var-2303-1",
+   "ursache": 2303,
+   "text": "Alle lachen über mich im Gruppenchat."
+  },
+  {
+   "id": "var-2303-2",
+   "ursache": 2303,
+   "text": "Gestern hat jemand mein peinliches Foto in den Klassen-WhatsApp-Chat gepostet und alle haben es geliked."
+  },
+  {
+   "id": "var-2303-3",
+   "ursache": 2303,
+   "text": "Ich kann nicht mehr schlafen, weil die Nachrichten im Chat einfach nicht aufhören und alle mich fertigmachen."
+  },
+  {
+   "id": "var-2304-1",
+   "ursache": 2304,
+   "text": "Ich hab Angst vor jeder Klausur."
+  },
+  {
+   "id": "var-2304-2",
+   "ursache": 2304,
+   "text": "Seit der Mathearbeit letzte Woche schlafe ich nachts kaum noch."
+  },
+  {
+   "id": "var-2304-3",
+   "ursache": 2304,
+   "text": "Ich zittere immer, wenn ich an die nächste Prüfung denke, und fühle mich total überfordert."
+  },
+  {
+   "id": "var-2401-1",
+   "ursache": 2401,
+   "text": "Alle meine Freunde sind weg, nur ich bleib hier."
+  },
+  {
+   "id": "var-2401-2",
+   "ursache": 2401,
+   "text": "Mein Sohn hat für sein duales Studium nach München ziehen müssen, weil es hier keine passende Firma gibt."
+  },
+  {
+   "id": "var-2401-3",
+   "ursache": 2401,
+   "text": "Ich vermisse meine Tochter so, seit sie für ihr Medizinstudium nach Hamburg gezogen ist. Sie sagt, sie kommt nicht zurück, weil hier keine Jobs für sie sind."
+  },
+  {
+   "id": "var-2402-1",
+   "ursache": 2402,
+   "text": "Hier stirbt mehr, als geboren wird"
+  },
+  {
+   "id": "var-2402-2",
+   "ursache": 2402,
+   "text": "In meinem Dorf sind die meisten über 65, und die Schule macht zu"
+  },
+  {
+   "id": "var-2402-3",
+   "ursache": 2402,
+   "text": "Ich bin die Jüngste im Ort, und die meisten Nachbarn sind Rentner"
+  },
+  {
+   "id": "var-2403-1",
+   "ursache": 2403,
+   "text": "Hier gibt’s keine Ausbildung für mich."
+  },
+  {
+   "id": "var-2403-2",
+   "ursache": 2403,
+   "text": "Ich wollte eigentlich Kfz-Mechatroniker werden, aber in meiner Stadt gibt es nur eine Stelle – und die war schon vergeben."
+  },
+  {
+   "id": "var-2403-3",
+   "ursache": 2403,
+   "text": "Ich hab mich bei allen Betrieben in der Umgebung beworben, aber nirgends passt es. Jetzt weiß ich nicht, was ich machen soll."
+  },
+  {
+   "id": "var-2404-1",
+   "ursache": 2404,
+   "text": "Unser Dorf verkommt total, kein Geld für Reparaturen"
+  },
+  {
+   "id": "var-2404-2",
+   "ursache": 2404,
+   "text": "Die Hauptstraße in meinem Heimatort hat seit drei Jahren Schlaglöcher, aber die Gemeinde sagt, es fehlt das Budget"
+  },
+  {
+   "id": "var-2404-3",
+   "ursache": 2404,
+   "text": "Ich kann nicht mehr zuschauen, wie unsere Schule verrottet – die Gemeinde hat einfach keine Mittel, um sie zu sanieren"
+  },
+  {
+   "id": "var-2501-1",
+   "ursache": 2501,
+   "text": "Hasskommentare melden? Keine Ahnung wie."
+  },
+  {
+   "id": "var-2501-2",
+   "ursache": 2501,
+   "text": "Unter dem Post über mein neues Buch stand wieder so ein Mist, aber ich hab’s einfach ignoriert."
+  },
+  {
+   "id": "var-2501-3",
+   "ursache": 2501,
+   "text": "Ich hab gestern wieder so einen ekligen Kommentar unter meinem Foto gesehen, aber ich trau mich nicht, den zu melden – vielleicht bringt’s ja eh nichts."
+  },
+  {
+   "id": "var-2502-1",
+   "ursache": 2502,
+   "text": "Immer noch diese Scheiße online."
+  },
+  {
+   "id": "var-2502-2",
+   "ursache": 2502,
+   "text": "Ich habe gestern eine rassistische Nachricht auf Twitter gemeldet, aber sie ist immer noch da."
+  },
+  {
+   "id": "var-2502-3",
+   "ursache": 2502,
+   "text": "Ich hab gestern eine richtig eklige Nachricht gemeldet und heute ist sie immer noch da, das macht mich so wütend."
+  },
+  {
+   "id": "var-2503-1",
+   "ursache": 2503,
+   "text": "Immer diese blöden Kommentare unter meinem Post."
+  },
+  {
+   "id": "var-2503-2",
+   "ursache": 2503,
+   "text": "Gestern hat mich jemand im Forum als Versager beschimpft, weil ich eine andere Meinung hatte."
+  },
+  {
+   "id": "var-2503-3",
+   "ursache": 2503,
+   "text": "Ich hab nur eine harmlose Frage gestellt und dann ging das los – einer nach dem anderen hat mich angepöbelt."
+  },
+  {
+   "id": "var-2601-1",
+   "ursache": 2601,
+   "text": "Rollstuhl und Bahnhof – kein Match."
+  },
+  {
+   "id": "var-2601-2",
+   "ursache": 2601,
+   "text": "Gestern wollte ich mit meinem Rollstuhl zum Gleis 3, aber der Aufzug war schon wieder kaputt."
+  },
+  {
+   "id": "var-2601-3",
+   "ursache": 2601,
+   "text": "Ich stehe da und warte, während alle anderen einfach die Treppe runtergehen. Und ich? Keine Chance."
+  },
+  {
+   "id": "var-2602-1",
+   "ursache": 2602,
+   "text": "Kein Job passt zu mir mit meiner Behinderung"
+  },
+  {
+   "id": "var-2602-2",
+   "ursache": 2602,
+   "text": "In der Werkstatt um die Ecke gibt es keine Aufgaben, die ich mit meinem Rollstuhl machen kann"
+  },
+  {
+   "id": "var-2602-3",
+   "ursache": 2602,
+   "text": "Ich hab schon so viele Bewerbungen geschrieben, aber überall heißt es, sie hätten nichts für mich."
+  },
+  {
+   "id": "var-2603-1",
+   "ursache": 2603,
+   "text": "Chef denkt, ich schaff das nicht"
+  },
+  {
+   "id": "var-2603-2",
+   "ursache": 2603,
+   "text": "Mein Bewerbungsgespräch endete, als ich meine Gehbehinderung erwähnte"
+  },
+  {
+   "id": "var-2603-3",
+   "ursache": 2603,
+   "text": "Ich hab mich so gefreut über den Job, aber dann hieß es, sie bräuchten jemanden, der alles ohne Hilfe kann"
+  },
+  {
+   "id": "var-2701-1",
+   "ursache": 2701,
+   "text": "Ich schaffe die Schicht nicht mehr mit den vielen Patienten."
+  },
+  {
+   "id": "var-2701-2",
+   "ursache": 2701,
+   "text": "Gestern musste ich bei fünf Patienten die Medikamente in 20 Minuten verteilen, obwohl einer davon eigentlich mehr Zuwendung gebraucht hätte."
+  },
+  {
+   "id": "var-2701-3",
+   "ursache": 2701,
+   "text": "Ich komme mir vor wie eine Maschine – von einem zum nächsten, ohne richtig zuzuhören, und das macht mich fertig."
+  },
+  {
+   "id": "var-2702-1",
+   "ursache": 2702,
+   "text": "Ich schaffe keine Pause heute wieder."
+  },
+  {
+   "id": "var-2702-2",
+   "ursache": 2702,
+   "text": "Gestern habe ich in meiner 12-Stunden-Schicht nur 15 Minuten gegessen, weil die Station voll war."
+  },
+  {
+   "id": "var-2702-3",
+   "ursache": 2702,
+   "text": "Ich bin total kaputt, ich hatte heute schon wieder keine Pause und musste die Spätschicht übernehmen, obwohl ich eigentlich frei hatte."
+  },
+  {
+   "id": "var-2703-1",
+   "ursache": 2703,
+   "text": "Ich schreibe nur noch Protokolle statt zu pflegen."
+  },
+  {
+   "id": "var-2703-2",
+   "ursache": 2703,
+   "text": "Gestern habe ich im Frühdienst 50 Minuten für die Dokumentation der Vitalwerte von Frau Meier gebraucht."
+  },
+  {
+   "id": "var-2703-3",
+   "ursache": 2703,
+   "text": "Ich komme kaum zum Atmen, weil ich ständig am PC hange und die Berichte ausfüllen muss."
+  },
+  {
+   "id": "var-2704-1",
+   "ursache": 2704,
+   "text": "Ich schufte mich kaputt für wenig Kohle."
+  },
+  {
+   "id": "var-2704-2",
+   "ursache": 2704,
+   "text": "Nach der dritten Nachtschicht in Folge ohne Pause fühle ich mich ausgenutzt."
+  },
+  {
+   "id": "var-2704-3",
+   "ursache": 2704,
+   "text": "Ich liebe meinen Job, aber manchmal frage ich mich, warum ich mir das antue – für den Lohn und die Dankbarkeit."
+  },
+  {
+   "id": "var-2705-1",
+   "ursache": 2705,
+   "text": "Ich halte das nicht mehr aus hier"
+  },
+  {
+   "id": "var-2705-2",
+   "ursache": 2705,
+   "text": "Jeden Tag sehe ich, wie Patienten leiden, und darf nichts ändern"
+  },
+  {
+   "id": "var-2705-3",
+   "ursache": 2705,
+   "text": "Ich bin total am Ende, weil ich ständig Entscheidungen mit ansehen muss, die ich nicht mittragen kann, und keiner hört mir zu"
+  },
+  {
+   "id": "var-2706-1",
+   "ursache": 2706,
+   "text": "Kann mit dem Patienten nicht reden, kein Dolmetscher da"
+  },
+  {
+   "id": "var-2706-2",
+   "ursache": 2706,
+   "text": "Gestern musste ich wieder eine Stunde mit Google Translate kämpfen, weil kein Dolmetscher für den syrischen Patienten verfügbar war"
+  },
+  {
+   "id": "var-2706-3",
+   "ursache": 2706,
+   "text": "Ich hatte heute wieder so einen Tag, wo ich mich mit Händen und Füßen verständigen musste – und am Ende wusste ich trotzdem nicht, was der Patient wirklich braucht"
+  },
+  {
+   "id": "var-2801-1",
+   "ursache": 2801,
+   "text": "Ich mach hier alles allein."
+  },
+  {
+   "id": "var-2801-2",
+   "ursache": 2801,
+   "text": "Jeden Abend räume ich die Küche auf, während er auf dem Sofa sitzt und Serien schaut."
+  },
+  {
+   "id": "var-2801-3",
+   "ursache": 2801,
+   "text": "Ich bin so genervt, ich putze, koche und organisiere den ganzen Haushalt, und er merkt nicht mal, wie viel Arbeit das ist."
+  },
+  {
+   "id": "var-2802-1",
+   "ursache": 2802,
+   "text": "Ich will endlich wieder Vollzeit arbeiten."
+  },
+  {
+   "id": "var-2802-2",
+   "ursache": 2802,
+   "text": "Seit mein Sohn in der Schule ist, arbeite ich nur noch 20 Stunden, obwohl ich eigentlich 40 will."
+  },
+  {
+   "id": "var-2802-3",
+   "ursache": 2802,
+   "text": "Ich dachte, ich mache erstmal Teilzeit, bis die Kinder größer sind – aber jetzt bin ich seit fünf Jahren stecken geblieben und komme nicht raus."
+  },
+  {
+   "id": "var-2803-1",
+   "ursache": 2803,
+   "text": "Ich schaffe beides nicht, Job und Kind."
+  },
+  {
+   "id": "var-2803-2",
+   "ursache": 2803,
+   "text": "Ich wollte eigentlich nur 20 Stunden arbeiten, aber dann fehlt das Geld für die Kita."
+  },
+  {
+   "id": "var-2803-3",
+   "ursache": 2803,
+   "text": "Ich fühle mich schuldig, wenn ich im Büro bin, und schuldig, wenn ich zu Hause bleibe."
+  },
+  {
+   "id": "var-2804-1",
+   "ursache": 2804,
+   "text": "Bei der Arbeit angegrabscht, keine Ahnung, wohin damit"
+  },
+  {
+   "id": "var-2804-2",
+   "ursache": 2804,
+   "text": "Mein Kollege hat mir gestern wieder unangemessene Kommentare gemacht, aber ich kenne die Anlaufstelle nicht"
+  },
+  {
+   "id": "var-2804-3",
+   "ursache": 2804,
+   "text": "Ich fühle mich so hilflos, weil ich nicht weiß, an wen ich mich wenden soll, wenn so etwas passiert"
+  },
+  {
+   "id": "var-2901-1",
+   "ursache": 2901,
+   "text": "Seit er weg ist, fehlt mir alles."
+  },
+  {
+   "id": "var-2901-2",
+   "ursache": 2901,
+   "text": "Ich setze mich abends immer noch an den Küchentisch, wo wir früher zusammen gegessen haben, und starre auf den leeren Stuhl."
+  },
+  {
+   "id": "var-2901-3",
+   "ursache": 2901,
+   "text": "Ich vermisse es so sehr, einfach mal mit jemandem zu lachen oder zu weinen – seit sie nicht mehr da ist, ist es still in der Wohnung."
+  },
+  {
+   "id": "var-2902-1",
+   "ursache": 2902,
+   "text": "Habe kein Geld für Freunde, fühle mich leer"
+  },
+  {
+   "id": "var-2902-2",
+   "ursache": 2902,
+   "text": "Seit ich mir nicht mal mehr den Kaffee mit Kolleginnen leisten kann, sitze ich abends oft allein in meiner Wohnung"
+  },
+  {
+   "id": "var-2902-3",
+   "ursache": 2902,
+   "text": "Ich würde so gern mal wieder was unternehmen, aber mein Konto ist leer – und ohne Geld traut sich keiner, mich einzuladen"
+  },
+  {
+   "id": "var-2903-1",
+   "ursache": 2903,
+   "text": "Ich fühl mich leer, weiß aber nicht warum."
+  },
+  {
+   "id": "var-2903-2",
+   "ursache": 2903,
+   "text": "Seit Wochen schlafe ich schlecht und weine oft, aber ich kann nicht erklären, was in mir vorgeht."
+  },
+  {
+   "id": "var-2903-3",
+   "ursache": 2903,
+   "text": "Ich sitze nur da und starre vor mich hin – ich weiß, dass was nicht stimmt, aber ich krieg’s einfach nicht raus."
+  },
+  {
+   "id": "var-2904-1",
+   "ursache": 2904,
+   "text": "Ich schaffe das allein, oder?"
+  },
+  {
+   "id": "var-2904-2",
+   "ursache": 2904,
+   "text": "Seit mein Vater gestorben ist, weine ich heimlich im Auto, aber erzähl das niemandem."
+  },
+  {
+   "id": "var-2904-3",
+   "ursache": 2904,
+   "text": "Ich hab das Gefühl, ich darf nicht traurig sein, sonst denkt meine Freundin, ich bin schwach."
+  },
+  {
+   "id": "var-2905-1",
+   "ursache": 2905,
+   "text": "Ich warte ewig auf einen Therapieplatz"
+  },
+  {
+   "id": "var-2905-2",
+   "ursache": 2905,
+   "text": "Seit drei Monaten stehe ich auf der Warteliste meiner Psychologin und fühle mich immer hilfloser"
+  },
+  {
+   "id": "var-2905-3",
+   "ursache": 2905,
+   "text": "Ich habe schon bei fünf Praxen angerufen, aber überall heißt es: frühestens in vier Monaten"
+  },
+  {
+   "id": "var-3001-1",
+   "ursache": 3001,
+   "text": "Immer wieder greif ich zur Flasche."
+  },
+  {
+   "id": "var-3001-2",
+   "ursache": 3001,
+   "text": "Nach der Arbeit hole ich mir am Kiosk um die Ecke noch schnell ein Bier, obwohl ich eigentlich aufhören wollte."
+  },
+  {
+   "id": "var-3001-3",
+   "ursache": 3001,
+   "text": "Ich merke, wie ich abends automatisch zum Weinregal greife – und das, obwohl ich mir vorgenommen habe, heute mal ohne zu machen."
+  },
+  {
+   "id": "var-3002-1",
+   "ursache": 3002,
+   "text": "Ich kaufe jetzt öfter Bier, weil’s so günstig ist"
+  },
+  {
+   "id": "var-3002-2",
+   "ursache": 3002,
+   "text": "Seit die Zigaretten im Supermarkt nur noch 5 Euro kosten, rauche ich wieder eine Schachtel am Tag"
+  },
+  {
+   "id": "var-3002-3",
+   "ursache": 3002,
+   "text": "Ich merke, wie ich seit dem Preisrückgang abends öfter zum Wein greife – und morgens den Kopf schüttele"
+  },
+  {
+   "id": "var-3003-1",
+   "ursache": 3003,
+   "text": "Mein Sohn will jetzt rauchen wie im Werbespot"
+  },
+  {
+   "id": "var-3003-2",
+   "ursache": 3003,
+   "text": "Gestern hat mein 14-jähriger die Bierflasche aus der Plakatwerbung am Kiosk nachgeahmt"
+  },
+  {
+   "id": "var-3003-3",
+   "ursache": 3003,
+   "text": "Ich mach mir Sorgen, er findet das cool, weil überall diese coole Werbung für Rauchen und Saufen ist"
+  },
+  {
+   "id": "var-3004-1",
+   "ursache": 3004,
+   "text": "Ich verliere immer alles beim Online-Poker."
+  },
+  {
+   "id": "var-3004-2",
+   "ursache": 3004,
+   "text": "Jedes Mal, wenn ich in der Mittagspause die Wetten-App öffne, sind am Ende 50 Euro weg."
+  },
+  {
+   "id": "var-3004-3",
+   "ursache": 3004,
+   "text": "Ich schwöre mir immer, nur 20 Euro zu setzen, aber dann ist plötzlich mein ganzes Gehalt futsch."
+  },
+  {
+   "id": "var-3005-1",
+   "ursache": 3005,
+   "text": "Ich nehm was und hoffe, dass es nicht killt."
+  },
+  {
+   "id": "var-3005-2",
+   "ursache": 3005,
+   "text": "Letzte Woche hab ich von nem Typen gekauft, der mir was als Kokain verkauft hat – war aber mit Fentanyl gestreckt."
+  },
+  {
+   "id": "var-3005-3",
+   "ursache": 3005,
+   "text": "Ich hab so Angst, dass ich beim nächsten Mal was nehme, das mich umbringt, aber ich komm nicht raus."
+  },
+  {
+   "id": "var-3006-1",
+   "ursache": 3006,
+   "text": "Ich schäme mich zu viel für die Spielhalle."
+  },
+  {
+   "id": "var-3006-2",
+   "ursache": 3006,
+   "text": "Seit ich letzte Woche mein ganzes Gehalt beim Online-Poker verloren habe, traue ich mich nicht, zum Arzt zu gehen."
+  },
+  {
+   "id": "var-3006-3",
+   "ursache": 3006,
+   "text": "Ich würde ja gerne mit jemandem reden, aber ich habe Angst, dass alle mich dann für schwach halten."
+  },
+  {
+   "id": "var-3101-1",
+   "ursache": 3101,
+   "text": "Mit 800 Euro im Monat komm ich nicht klar."
+  },
+  {
+   "id": "var-3101-2",
+   "ursache": 3101,
+   "text": "Mein Chef zahlt mir im ersten Lehrjahr nur 750 Euro, aber die Miete frisst die Hälfte."
+  },
+  {
+   "id": "var-3101-3",
+   "ursache": 3101,
+   "text": "Ich dachte, ich könnte mir was leisten, aber mit meiner Ausbildungsvergütung bleibt kaum was übrig – und das bei 40 Stunden die Woche."
+  },
+  {
+   "id": "var-3102-1",
+   "ursache": 3102,
+   "text": "Jobben neben Uni ist anstrengend"
+  },
+  {
+   "id": "var-3102-2",
+   "ursache": 3102,
+   "text": "Ich arbeite 20 Stunden die Woche im Supermarkt, um meine Miete zu stemmen"
+  },
+  {
+   "id": "var-3102-3",
+   "ursache": 3102,
+   "text": "Ich schaffe es kaum noch, für die Klausuren zu lernen, weil ich so viel arbeiten muss, um über die Runden zu kommen"
+  },
+  {
+   "id": "var-3201-1",
+   "ursache": 3201,
+   "text": "Mein Club fliegt raus, Miete zu hoch."
+  },
+  {
+   "id": "var-3201-2",
+   "ursache": 3201,
+   "text": "Unser Lieblingsjazzkeller muss zumachen, weil der Vermieter die Miete verdoppelt hat."
+  },
+  {
+   "id": "var-3201-3",
+   "ursache": 3201,
+   "text": "Ich war gestern zum letzten Mal in meinem Stammclub, der macht jetzt zu, weil die Miete nicht mehr zu stemmen ist."
+  },
+  {
+   "id": "var-3202-1",
+   "ursache": 3202,
+   "text": "Die Bude nebenan ballert wieder bis morgens."
+  },
+  {
+   "id": "var-3202-2",
+   "ursache": 3202,
+   "text": "Jeden Freitag um 23 Uhr fängt der Bass an, und ich kann nicht einschlafen, obwohl ich um 6 Uhr raus muss."
+  },
+  {
+   "id": "var-3202-3",
+   "ursache": 3202,
+   "text": "Gestern hat mich die Nachbarin angerufen, weil sie seit Stunden das Konzert von meinem Balkon aus hört – ich schäme mich so."
+  },
+  {
+   "id": "var-3203-1",
+   "ursache": 3203,
+   "text": "Unser Club hat kein Geld mehr"
+  },
+  {
+   "id": "var-3203-2",
+   "ursache": 3203,
+   "text": "Ich kann meine Bandproben im Jugendzentrum nicht mehr bezahlen, weil die Miete gestiegen ist"
+  },
+  {
+   "id": "var-3203-3",
+   "ursache": 3203,
+   "text": "Wir haben so tolle Ideen für Workshops, aber ohne Sponsoren können wir die einfach nicht umsetzen"
+  },
+  {
+   "id": "var-3204-1",
+   "ursache": 3204,
+   "text": "Hier dröhnt alles, kann man nicht aushalten"
+  },
+  {
+   "id": "var-3204-2",
+   "ursache": 3204,
+   "text": "In meinem Lieblingsclub hallt der Sound so, dass ich die Vocals kaum verstehe"
+  },
+  {
+   "id": "var-3204-3",
+   "ursache": 3204,
+   "text": "Ich war gestern im Club und die Akustik war so schlecht, dass ich nach einer Stunde Kopfschmerzen hatte"
+  },
+  {
+   "id": "var-3301-1",
+   "ursache": 3301,
+   "text": "Ich checke ständig, ob ich neue Likes habe."
+  },
+  {
+   "id": "var-3301-2",
+   "ursache": 3301,
+   "text": "Mein Sohn postet jeden Tag ein neues Foto, seit er gemerkt hat, dass er dafür viele Likes bekommt."
+  },
+  {
+   "id": "var-3301-3",
+   "ursache": 3301,
+   "text": "Ich kann nicht mehr aufhören, auf mein Handy zu schauen – jedes Mal, wenn ich ein Like bekomme, will ich gleich wieder was posten."
+  },
+  {
+   "id": "var-3302-1",
+   "ursache": 3302,
+   "text": "Ich penn immer zu wenig, weil ich abends noch zocke"
+  },
+  {
+   "id": "var-3302-2",
+   "ursache": 3302,
+   "text": "Mein Sohn schaut bis 23 Uhr TikTok-Videos und schläft dann erst um 1 Uhr ein"
+  },
+  {
+   "id": "var-3302-3",
+   "ursache": 3302,
+   "text": "Gestern ist sie wieder mit dem Handy eingeschlafen und heute Morgen konnte sie kaum die Augen aufhalten"
+  },
+  {
+   "id": "var-3303-1",
+   "ursache": 3303,
+   "text": "Ich checke ständig, wie lang mein Kind am Handy hängt."
+  },
+  {
+   "id": "var-3303-2",
+   "ursache": 3303,
+   "text": "Mein 6-jähriger Sohn will nach dem Kindergarten sofort YouTube gucken, aber ich weiß nicht, ob eine Stunde zu viel ist."
+  },
+  {
+   "id": "var-3303-3",
+   "ursache": 3303,
+   "text": "Ich mach mir so Sorgen, ob ich zu streng bin oder zu lasch mit der Zeit am Tablet – was meinst du?"
+  },
+  {
+   "id": "var-3401-1",
+   "ursache": 3401,
+   "text": "Immer wieder angehalten, macht mich kaputt."
+  },
+  {
+   "id": "var-3401-2",
+   "ursache": 3401,
+   "text": "Jedes Mal, wenn ich mit meinem Fahrrad durch den Park fahre, werde ich von der Polizei angehalten und durchsucht."
+  },
+  {
+   "id": "var-3401-3",
+   "ursache": 3401,
+   "text": "Weißt du, ich kann nicht mehr entspannt rausgehen, weil ich ständig Angst habe, wieder kontrolliert zu werden."
+  },
+  {
+   "id": "var-3402-1",
+   "ursache": 3402,
+   "text": "Die Bullen haben mich einfach ignoriert."
+  },
+  {
+   "id": "var-3402-2",
+   "ursache": 3402,
+   "text": "Gestern am Bahnhof hat mich der Polizist nur angestarrt und meine Fragen nicht beantwortet."
+  },
+  {
+   "id": "var-3402-3",
+   "ursache": 3402,
+   "text": "Ich stand da, hab versucht zu erklären, was los war, aber der hat mich einfach nur abgewinkt und so getan, als wäre ich Luft."
+  },
+  {
+   "id": "var-3403-1",
+   "ursache": 3403,
+   "text": "Die Bullen haben mich einfach reingehauen."
+  },
+  {
+   "id": "var-3403-2",
+   "ursache": 3403,
+   "text": "Bei der Demo letzte Woche hat mich ein Polizist am Arm gepackt und so fest gedrückt, dass ich noch Tage später blaue Flecken hatte."
+  },
+  {
+   "id": "var-3403-3",
+   "ursache": 3403,
+   "text": "Ich war total schockiert, wie die mich behandelt haben, und jetzt sagt mein Anwalt, da kommt eh nichts bei raus."
+  },
+  {
+   "id": "var-3501-1",
+   "ursache": 3501,
+   "text": "Führerschein kostet mich jetzt 2000 Euro, viel zu viel."
+  },
+  {
+   "id": "var-3501-2",
+   "ursache": 3501,
+   "text": "Ich habe schon 1500 Euro für die Fahrstunden ausgegeben und brauche noch mindestens fünf weitere."
+  },
+  {
+   "id": "var-3501-3",
+   "ursache": 3501,
+   "text": "Ich spare seit Monaten, aber die Preise steigen schneller als mein Sparschwein."
+  },
+  {
+   "id": "var-3502-1",
+   "ursache": 3502,
+   "text": "Durchgefallen, jetzt kostet’s nochmal 200 Euro."
+  },
+  {
+   "id": "var-3502-2",
+   "ursache": 3502,
+   "text": "Mein dritter Anlauf für die Theorieprüfung hat mich schon 450 Euro gekostet."
+  },
+  {
+   "id": "var-3502-3",
+   "ursache": 3502,
+   "text": "Ich hab’s wieder nicht geschafft und muss die praktische Prüfung nochmal machen – das tut richtig weh im Portemonnaie."
+  },
+  {
+   "id": "var-3601-1",
+   "ursache": 3601,
+   "text": "Alle Läden hier machen zu, keiner kauft mehr vor Ort"
+  },
+  {
+   "id": "var-3601-2",
+   "ursache": 3601,
+   "text": "Mein Lieblingsbuchladen in der Fußgängerzone hat zugemacht, weil die Leute lieber bei Amazon bestellen"
+  },
+  {
+   "id": "var-3601-3",
+   "ursache": 3601,
+   "text": "Ich war letzte Woche in der Stadt und war total schockiert – die Hälfte der Läden steht leer, weil alle online shoppen"
+  },
+  {
+   "id": "var-3602-1",
+   "ursache": 3602,
+   "text": "Alle Läden sehen gleich aus, langweilig."
+  },
+  {
+   "id": "var-3602-2",
+   "ursache": 3602,
+   "text": "Bei uns hat der kleine Buchladen mit den handgefertigten Notizbüchern zugemacht, jetzt gibt’s nur noch die Kette."
+  },
+  {
+   "id": "var-3602-3",
+   "ursache": 3602,
+   "text": "Ich vermisse den Laden mit den ausgefallenen Schals, da war immer was Besonderes – jetzt steht er leer."
+  },
+  {
+   "id": "var-3603-1",
+   "ursache": 3603,
+   "text": "Die Stadt sieht scheiße aus, keiner bleibt hier."
+  },
+  {
+   "id": "var-3603-2",
+   "ursache": 3603,
+   "text": "Immer wenn ich durch die Fußgängerzone gehe, fallen mir die zugewucherten Schaufenster und der kaputte Boden auf."
+  },
+  {
+   "id": "var-3603-3",
+   "ursache": 3603,
+   "text": "Ich war gestern in der Stadt und es war so traurig – überall leere Läden und Dreck, da hat man einfach keine Lust, länger zu bleiben."
+  },
+  {
+   "id": "var-3604-1",
+   "ursache": 3604,
+   "text": "Die Läden haben immer zu, wenn ich da bin"
+  },
+  {
+   "id": "var-3604-2",
+   "ursache": 3604,
+   "text": "Mein Lieblingsbuchladen in der Fußgängerzone schließt um 18 Uhr, obwohl ich erst um 19 Uhr Feierabend habe"
+  },
+  {
+   "id": "var-3604-3",
+   "ursache": 3604,
+   "text": "Ich wollte mir am Wochenende neue Schuhe kaufen, aber alle Geschäfte waren schon zu, als ich endlich Zeit hatte"
+  },
+  {
+   "id": "var-3701-1",
+   "ursache": 3701,
+   "text": "Unsere Halle ist kaputt und zu."
+  },
+  {
+   "id": "var-3701-2",
+   "ursache": 3701,
+   "text": "Die Turnhalle meiner Tochter hat seit Monaten ein undichtes Dach, jetzt ist der Boden nass."
+  },
+  {
+   "id": "var-3701-3",
+   "ursache": 3701,
+   "text": "Ich kann nicht mehr zum Volleyballtraining, weil die Halle wegen Schimmel gesperrt wurde – total frustrierend."
+  },
+  {
+   "id": "var-3702-1",
+   "ursache": 3702,
+   "text": "Die Hallenmiete frisst unser ganzes Budget."
+  },
+  {
+   "id": "var-3702-2",
+   "ursache": 3702,
+   "text": "Unser Fußballverein muss jetzt 200 Euro mehr im Monat für die Turnhalle zahlen, obwohl wir kaum noch Sponsoren haben."
+  },
+  {
+   "id": "var-3702-3",
+   "ursache": 3702,
+   "text": "Ich mach mir Sorgen, weil wir die Gebühren für die Sporthalle nicht mehr stemmen können und bald vielleicht trainieren müssen, wo es regnet."
+  },
+  {
+   "id": "var-3703-1",
+   "ursache": 3703,
+   "text": "Unser Platz ist kaputt und wir haben kein Geld"
+  },
+  {
+   "id": "var-3703-2",
+   "ursache": 3703,
+   "text": "Die Duschen in unserer Turnhalle tropfen seit Monaten und die Reparatur können wir uns nicht leisten"
+  },
+  {
+   "id": "var-3703-3",
+   "ursache": 3703,
+   "text": "Stell dir vor, wir müssen unsere Spiele absagen, weil die Tribüne marode ist und die Stadt uns keine Unterstützung gibt"
+  },
+  {
+   "id": "var-3801-1",
+   "ursache": 3801,
+   "text": "Mein Zusatzbeitrag geht wieder hoch."
+  },
+  {
+   "id": "var-3801-2",
+   "ursache": 3801,
+   "text": "Letzte Woche kam der Brief: 1,2 % mehr für die Krankenkasse, obwohl ich seit Jahren dieselben Medikamente nehme."
+  },
+  {
+   "id": "var-3801-3",
+   "ursache": 3801,
+   "text": "Ich checke gerade meine Abrechnung und denke nur: Warum wird das immer teurer, obwohl ich nichts anderes bekomme?"
+  },
+  {
+   "id": "var-3802-1",
+   "ursache": 3802,
+   "text": "Meine Kasse kassiert für Sachen, die ich nie brauche."
+  },
+  {
+   "id": "var-3802-2",
+   "ursache": 3802,
+   "text": "Jeden Monat zahle ich 400 Euro, aber ein Teil geht für Dinge wie Mutterschaftsgeld, obwohl ich keine Kinder habe."
+  },
+  {
+   "id": "var-3802-3",
+   "ursache": 3802,
+   "text": "Ich versteh nicht, warum ich für Leistungen bleche, die andere kriegen – ich hab doch selbst kaum was davon."
+  },
+  {
+   "id": "var-3803-1",
+   "ursache": 3803,
+   "text": "Meine Krankenkasse will mehr Geld von mir."
+  },
+  {
+   "id": "var-3803-2",
+   "ursache": 3803,
+   "text": "Letzte Woche kam der Brief: Ab März zahle ich 3,13 % Zusatzbeitrag statt 2,9 %."
+  },
+  {
+   "id": "var-3803-3",
+   "ursache": 3803,
+   "text": "Ich checke gerade meine Abrechnung und merke, dass meine Kasse plötzlich mehr abzieht – die sagen, sie brauchen das für ihre Rücklagen."
+  },
+  {
+   "id": "var-3804-1",
+   "ursache": 3804,
+   "text": "Immer wieder 10 Euro für Rezeptgebühren"
+  },
+  {
+   "id": "var-3804-2",
+   "ursache": 3804,
+   "text": "Bei meiner Physiotherapie nach dem Bandscheibenvorfall muss ich jedes Mal 10 Euro zahlen"
+  },
+  {
+   "id": "var-3804-3",
+   "ursache": 3804,
+   "text": "Ich war letzte Woche im Krankenhaus und jetzt kommen schon wieder die Zuzahlungen für die Medikamente dazu"
+  },
+  {
+   "id": "var-3901-1",
+   "ursache": 3901,
+   "text": "Kein Platz für mein Haus"
+  },
+  {
+   "id": "var-3901-2",
+   "ursache": 3901,
+   "text": "In meiner Stadt gibt es nur ein einziges freies Grundstück, aber das ist zu teuer"
+  },
+  {
+   "id": "var-3901-3",
+   "ursache": 3901,
+   "text": "Ich suche schon seit Monaten nach einem Bauplatz, aber alles ist entweder schon bebaut oder nicht zum Bauen freigegeben"
+  },
+  {
+   "id": "var-3902-1",
+   "ursache": 3902,
+   "text": "Mein Traumhaus wird immer teurer."
+  },
+  {
+   "id": "var-3902-2",
+   "ursache": 3902,
+   "text": "Der Architekt sagt, die Materialkosten für mein geplantes Reihenhaus sind um 50.000 Euro gestiegen."
+  },
+  {
+   "id": "var-3902-3",
+   "ursache": 3902,
+   "text": "Ich wollte endlich bauen, aber jetzt kostet alles so viel mehr, dass ich mir das nicht mehr leisten kann."
+  },
+  {
+   "id": "var-3903-1",
+   "ursache": 3903,
+   "text": "Kann mir die Wohnung nicht leisten."
+  },
+  {
+   "id": "var-3903-2",
+   "ursache": 3903,
+   "text": "Ich spare seit 5 Jahren, aber für die 20% Eigenkapital fehlen mir noch 40.000 Euro."
+  },
+  {
+   "id": "var-3903-3",
+   "ursache": 3903,
+   "text": "Ich dachte, ich hätte genug gespart, aber jetzt brauche ich fast das Doppelte von dem, was ich habe."
+  },
+  {
+   "id": "var-3904-1",
+   "ursache": 3904,
+   "text": "Kaufpreis ist nicht alles, die Nebenkosten killen mich."
+  },
+  {
+   "id": "var-3904-2",
+   "ursache": 3904,
+   "text": "Ich habe 15.000 Euro für Notar und Grunderwerbsteuer zurücklegen müssen, obwohl das Haus nur 300.000 gekostet hat."
+  },
+  {
+   "id": "var-3904-3",
+   "ursache": 3904,
+   "text": "Ich dachte, ich hätte genug gespart, aber dann kamen noch diese ganzen Gebühren dazu – jetzt fehlt mir das Geld für die Einrichtung."
+  },
+  {
+   "id": "var-3905-1",
+   "ursache": 3905,
+   "text": "Meine Miete fürs eigene Haus frisst mein ganzes Geld."
+  },
+  {
+   "id": "var-3905-2",
+   "ursache": 3905,
+   "text": "Jeden Monat gehen 800 Euro von meinem Gehalt direkt an die Bank fürs Haus."
+  },
+  {
+   "id": "var-3905-3",
+   "ursache": 3905,
+   "text": "Ich komm kaum über die Runden, weil die Hausrate so hoch ist – dabei verdiene ich eigentlich ganz gut."
+  },
+  {
+   "id": "var-4001-1",
+   "ursache": 4001,
+   "text": "Ich mach immer Überstunden und krieg nix dafür."
+  },
+  {
+   "id": "var-4001-2",
+   "ursache": 4001,
+   "text": "Letzte Woche habe ich wieder bis 20 Uhr im Büro gesessen, obwohl ich eigentlich um 17 Uhr Feierabend hätte."
+  },
+  {
+   "id": "var-4001-3",
+   "ursache": 4001,
+   "text": "Ich bin so genervt, ich arbeite ständig länger und bekomme nicht mal einen freien Tag dafür."
+  },
+  {
+   "id": "var-4002-1",
+   "ursache": 4002,
+   "text": "Ich will weniger arbeiten, krieg’s aber nicht hin."
+  },
+  {
+   "id": "var-4002-2",
+   "ursache": 4002,
+   "text": "Mein Chef lässt mich nicht auf 30 Stunden runtergehen, obwohl ich das seit Monaten will."
+  },
+  {
+   "id": "var-4002-3",
+   "ursache": 4002,
+   "text": "Ich würde so gern mehr Stunden machen, aber mein Vertrag lässt das einfach nicht zu."
+  },
+  {
+   "id": "var-4003-1",
+   "ursache": 4003,
+   "text": "Kann nicht Vollzeit, Kind ist noch klein."
+  },
+  {
+   "id": "var-4003-2",
+   "ursache": 4003,
+   "text": "Seit Oma den Schlaganfall hatte, gehe ich nur noch 30 Stunden die Woche."
+  },
+  {
+   "id": "var-4003-3",
+   "ursache": 4003,
+   "text": "Ich hab meine Stunden reduziert, weil ich sonst nicht weiß, wie ich die Kinder vom Kindergarten abhole und noch einkaufen soll."
+  },
+  {
+   "id": "var-4101-1",
+   "ursache": 4101,
+   "text": "Kein Bunker in der Nähe, was jetzt?"
+  },
+  {
+   "id": "var-4101-2",
+   "ursache": 4101,
+   "text": "In meiner Straße gibt’s nur noch einen alten Keller, der ist seit Jahren zu."
+  },
+  {
+   "id": "var-4101-3",
+   "ursache": 4101,
+   "text": "Ich hab gestern nachgeschaut, aber hier in der Stadt gibt’s kaum noch Schutzräume – und die sind alle marode."
+  },
+  {
+   "id": "var-4102-1",
+   "ursache": 4102,
+   "text": "Ich hör die Sirene nie, wenn’s ernst wird"
+  },
+  {
+   "id": "var-4102-2",
+   "ursache": 4102,
+   "text": "Gestern hat die Sirene in meiner Straße nicht gepiept, obwohl im Nachbarort Alarm war"
+  },
+  {
+   "id": "var-4102-3",
+   "ursache": 4102,
+   "text": "Ich hab Angst, dass ich im Notfall nichts mitbekomme, weil bei uns die Warnung nicht funktioniert"
+  },
+  {
+   "id": "var-4103-1",
+   "ursache": 4103,
+   "text": "Kein Strom, kein Essen – und jetzt?"
+  },
+  {
+   "id": "var-4103-2",
+   "ursache": 4103,
+   "text": "Ich habe nur drei Dosen Ravioli und einen Campingkocher, der seit Jahren im Keller steht."
+  },
+  {
+   "id": "var-4103-3",
+   "ursache": 4103,
+   "text": "Gestern ist bei uns der Strom ausgefallen und ich stand da wie der Ochs vorm Berg – ich hatte nicht mal eine Taschenlampe griffbereit."
+  },
+  {
+   "id": "var-4201-1",
+   "ursache": 4201,
+   "text": "Mehr Lohn, aber netto kaum was übrig."
+  },
+  {
+   "id": "var-4201-2",
+   "ursache": 4201,
+   "text": "Seit meiner Gehaltserhöhung im Januar bleibt mir netto nur 50 Euro mehr."
+  },
+  {
+   "id": "var-4201-3",
+   "ursache": 4201,
+   "text": "Ich hab endlich mehr verdient, aber am Ende des Monats ist trotzdem nichts mehr da – die Steuer frisst alles auf."
+  },
+  {
+   "id": "var-4202-1",
+   "ursache": 4202,
+   "text": "Ich hab Angst, dass meine Rente bald weg ist."
+  },
+  {
+   "id": "var-4202-2",
+   "ursache": 4202,
+   "text": "Letzte Woche hab ich im Radio gehört, dass die Zinsen für die Staatsschulden schon wieder gestiegen sind – und ich weiß nicht, wie das für mich ausgeht."
+  },
+  {
+   "id": "var-4202-3",
+   "ursache": 4202,
+   "text": "Weißt du, ich mach mir echt Sorgen, dass die ganzen Schulden irgendwann dazu führen, dass die Krankenkasse nicht mehr alles zahlt."
+  },
+  {
+   "id": "var-4203-1",
+   "ursache": 4203,
+   "text": "Mein Gehalt wird voll besteuert, aber die Mieteinnahmen nicht."
+  },
+  {
+   "id": "var-4203-2",
+   "ursache": 4203,
+   "text": "Jeden Monat gehen 400 Euro Lohnsteuer ab, während meine Tante ihr geerbtes Haus steuerfrei behält."
+  },
+  {
+   "id": "var-4203-3",
+   "ursache": 4203,
+   "text": "Ich arbeite hart und zahle viel Steuern, aber mein Onkel mit seinem großen Vermögen zahlt kaum was."
+  },
+  {
+   "id": "var-4301-1",
+   "ursache": 4301,
+   "text": "Mein Job wird bald von KI gemacht."
+  },
+  {
+   "id": "var-4301-2",
+   "ursache": 4301,
+   "text": "Ich arbeite seit 10 Jahren als Buchhalter und jetzt sagt mein Chef, dass eine Software das bald übernimmt."
+  },
+  {
+   "id": "var-4301-3",
+   "ursache": 4301,
+   "text": "Ich mach mir total Sorgen, gestern hat mein Kollege erzählt, dass sein Job durch ein Programm ersetzt wurde und ich frag mich, ob ich als Nächste dran bin."
+  },
+  {
+   "id": "var-4302-1",
+   "ursache": 4302,
+   "text": "Keine Ahnung, wie ich die KI nutzen soll."
+  },
+  {
+   "id": "var-4302-2",
+   "ursache": 4302,
+   "text": "Mein Chef hat mir gesagt, ich soll die neue Software ausprobieren, aber ich habe nicht mal einen Laptop zu Hause."
+  },
+  {
+   "id": "var-4302-3",
+   "ursache": 4302,
+   "text": "Ich stehe total auf dem Schlauch mit dem neuen Programm, und keiner zeigt mir, wie’s geht."
+  },
+  {
+   "id": "var-4303-1",
+   "ursache": 4303,
+   "text": "Meine Oma hat angerufen, aber es war nicht sie."
+  },
+  {
+   "id": "var-4303-2",
+   "ursache": 4303,
+   "text": "Gestern kam eine Sprachnachricht von meinem Bruder, doch seine Stimme klang irgendwie falsch."
+  },
+  {
+   "id": "var-4303-3",
+   "ursache": 4303,
+   "text": "Ich hab gerade eine Nachricht bekommen, die genau so klingt wie mein Freund – aber der ist im Urlaub."
+  },
+  {
+   "id": "var-4401-1",
+   "ursache": 4401,
+   "text": "Meine Aufträge aus USA sind weg"
+  },
+  {
+   "id": "var-4401-2",
+   "ursache": 4401,
+   "text": "Seit die Zölle da sind, bestellt mein Kunde aus Chicago nur noch halb so viel wie früher"
+  },
+  {
+   "id": "var-4401-3",
+   "ursache": 4401,
+   "text": "Ich mach mir Sorgen, mein Chef hat gesagt, wir müssen Leute entlassen, weil die Amis nicht mehr so viel kaufen"
+  },
+  {
+   "id": "var-4402-1",
+   "ursache": 4402,
+   "text": "Meine Maschine steht still, weil China nichts liefert"
+  },
+  {
+   "id": "var-4402-2",
+   "ursache": 4402,
+   "text": "Die Neodym-Magnete für unsere Lautsprecher kommen nur aus einer chinesischen Mine"
+  },
+  {
+   "id": "var-4402-3",
+   "ursache": 4402,
+   "text": "Stell dir vor, wir haben alles geplant und dann heißt es plötzlich: Keine Lieferung aus China, alles liegt still. So war’s letzte Woche bei uns."
+  },
+  {
+   "id": "var-4403-1",
+   "ursache": 4403,
+   "text": "Meine Firma verliert Aufträge an China-Ware."
+  },
+  {
+   "id": "var-4403-2",
+   "ursache": 4403,
+   "text": "Letzte Woche hat mein Chef gesagt, wir müssen die Preise senken, weil die Konkurrenz aus China wieder billiger liefert."
+  },
+  {
+   "id": "var-4403-3",
+   "ursache": 4403,
+   "text": "Ich mach mir Sorgen, mein Job könnte wegfallen, weil alle plötzlich die günstigeren Teile aus China kaufen."
+  },
+  {
+   "id": "var-4501-1",
+   "ursache": 4501,
+   "text": "Mein Auto qualmt immer noch wie verrückt."
+  },
+  {
+   "id": "var-4501-2",
+   "ursache": 4501,
+   "text": "Gestern bin ich mit dem alten Diesel zum Supermarkt gefahren und habe mich gefragt, warum die Abgase so stinken."
+  },
+  {
+   "id": "var-4501-3",
+   "ursache": 4501,
+   "text": "Ich fahre eigentlich viel mit dem Rad, aber wenn ich mal das Auto nehme, kommt mir das total schädlich vor."
+  },
+  {
+   "id": "var-4502-1",
+   "ursache": 4502,
+   "text": "Meine Heizung frisst zu viel Gas"
+  },
+  {
+   "id": "var-4502-2",
+   "ursache": 4502,
+   "text": "Im Altbau meines Vermieters läuft die Ölheizung noch auf vollen Touren"
+  },
+  {
+   "id": "var-4502-3",
+   "ursache": 4502,
+   "text": "Ich dreh die Heizung runter, aber im Winter ist die Wohnung trotzdem eiskalt und die Abrechnung astronomisch"
+  },
+  {
+   "id": "var-4503-1",
+   "ursache": 4503,
+   "text": "Meine Kuhherde bläst immer noch so viel Methan ab"
+  },
+  {
+   "id": "var-4503-2",
+   "ursache": 4503,
+   "text": "Seit ich auf dem Biohof meines Onkels arbeite, sehe ich, wie die Güllegrube ständig dampft"
+  },
+  {
+   "id": "var-4503-3",
+   "ursache": 4503,
+   "text": "Ich war gestern beim Bauern nebenan und die haben wieder so viel gedüngt, da stinkt’s nur so nach Stickstoff"
+  },
+  {
+   "id": "var-4504-1",
+   "ursache": 4504,
+   "text": "Warum warten, bis es zu spät ist?"
+  },
+  {
+   "id": "var-4504-2",
+   "ursache": 4504,
+   "text": "Mein Stromanbieter hat die Ziele verfehlt, aber keiner regt sich."
+  },
+  {
+   "id": "var-4504-3",
+   "ursache": 4504,
+   "text": "Ich versteh nicht, warum wir erst handeln, wenn schon alles im Argen liegt."
+  }
+ ]
+}
