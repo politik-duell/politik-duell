@@ -9,7 +9,7 @@ import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { erstesJsonObjekt } from '../entwurf/json-text.ts'
 import { pruefeDatenordner } from '../katalog-laden.ts'
-import { NEBEN_ORDNER, nebenBlind, quellenAus, quellenDerAntworten, type NebenAntwort, type NebenBlindliste } from '../nebenwirkungen.ts'
+import { NEBEN_ORDNER, nebenBlind, quellenAus, quellenDerAntworten, vergleichFuer, type NebenAntwort, type NebenBlindliste } from '../nebenwirkungen.ts'
 
 const args = process.argv.slice(2)
 const themaId = Number(args.find((a) => /^\d+$/.test(a)))
@@ -38,13 +38,19 @@ if (args.includes('--quellen')) {
   }
   const fertig = teile.filter((t) => antwort(t))
   const neu = quellenDerAntworten(fertig.map((t) => antwort(t)!))
+  const beurteilt = fertig.map((t) => ({ liste: liste(t), antwort: antwort(t)! }))
   const offen = teile.filter((t) => !fertig.includes(t))
+  let vergleiche = 0
   for (const t of offen) {
     const l = liste(t)
     l.quellen = quellenAus([...(l.quellen ?? []), ...neu])
+    l.vergleich = vergleichFuer(l, beurteilt)
+    vergleiche += l.vergleich.length
     writeFileSync(join(ordner, t), JSON.stringify(l, null, 2) + '\n', 'utf8')
   }
-  console.log(`Thema ${themaId}: ${neu.length} Quellen aus ${fertig.length} Antworten in ${offen.length} offene Teile übernommen.`)
+  console.log(
+    `Thema ${themaId}: ${neu.length} Quellen aus ${fertig.length} Antworten in ${offen.length} offene Teile übernommen, ${vergleiche} Hinweise zu denselben Ursachen als Vergleich.`,
+  )
   for (const t of offen.sort((a, b) => parseInt(a.slice(5)) - parseInt(b.slice(5)))) console.log(auftrag(parseInt(t.slice(5))))
   process.exit(0)
 }

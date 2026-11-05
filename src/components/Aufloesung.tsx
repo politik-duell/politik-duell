@@ -1,8 +1,12 @@
 import { useEffect, useState, type ReactNode } from 'react'
+import { KiMarke } from './KiText'
+import { KI_ERZEUGT } from './kiKennzeichnung'
 import { useDaten, useLandName } from '../data/kontext'
-import { ROLLEN } from '../data/rollen'
 import { MAX_JE_URSACHE, punkteText, type ParteiErgebnis, type Treffer } from '../logic/bewertung'
 import { EVIDENZ_TEXT } from '../logic/forderung'
+import { fuerEuch } from '../logic/fuerEuch'
+import { BETREIBER } from '../rechtliches/betreiber'
+import type { Massnahme } from '../data/types'
 import { Folgen } from './Folgen'
 import { ohneTreffer } from '../logic/ohneTreffer'
 import type { RundenErgebnis, Spieler } from '../spiel'
@@ -10,6 +14,7 @@ import { KI_ENTWURF, KI_ENTWURF_ERKLAERUNG, KI_HINWEIS, MassnahmeBelege, NICHT_B
 import { ForderungsKarte } from './ForderungsKarte'
 import { Kreuzfeld } from './Kreuz'
 import { parteiStil } from './stil'
+import { VorschlagFormular } from './ThemaVorschlag'
 
 // Gemeinsame Bausteine liegen in belege.tsx (auch die Forderungskarte nutzt sie); hier weiter exportiert.
 export { KI_ENTWURF, KI_HINWEIS, MassnahmeBelege, NICHT_BLIND }
@@ -51,6 +56,12 @@ function ProgrammLinks({ ergebnis }: { ergebnis: ParteiErgebnis }) {
     </span>
   )
 }
+
+/** E-Mail mit Maßnahme im Betreff – „Fehler melden“ direkt an der Wertung, ohne Angaben zur Person. */
+const fehlerLink = (m: Massnahme) =>
+  `mailto:${BETREIBER.email}?subject=${encodeURIComponent(`Politik-Duell – Fehler bei Maßnahme ${m.id}`)}&body=${encodeURIComponent(
+    `Maßnahme ${m.id}: ${m.beschreibung}\n\nWas stimmt nicht? (Bitte mit Link auf die Stelle im Programm oder die Quelle.)\n`,
+  )}`
 
 const wertungFuer = (e: ParteiErgebnis, ursacheId: number) => e.ursachen.find((u) => u.ursache_id === ursacheId)
 
@@ -151,7 +162,7 @@ function MitRechnung({ ergebnis, rechnung }: { ergebnis: ReactNode; rechnung: Re
   )
 }
 
-/** Eine gezählte Maßnahme mit Punkten, Belegen und aufklappbarer Einordnung (Begründung, Rolle, Forschungsstand). */
+/** Eine gezählte Maßnahme mit Punkten, Belegen und aufklappbarer Einordnung (Begründung, Forschungsstand). */
 function MassnahmeInhalt({ t, gewicht, mehrere }: { t: Treffer; gewicht: number; mehrere: boolean }) {
   const landName = useLandName()
   return (
@@ -171,16 +182,13 @@ function MassnahmeInhalt({ t, gewicht, mehrere }: { t: Treffer; gewicht: number;
         }
       />
       {t.massnahme.land && <p className="massnahme-rolle">Aus dem Landeswahlprogramm {landName(t.massnahme.land)}</p>}
-      <MassnahmeBelege massnahme={t.massnahme} />
+      <MassnahmeBelege massnahme={t.massnahme} />{' '}
+      <a className="fehler-link" href={fehlerLink(t.massnahme)}>
+        Fehler melden
+      </a>
       <details className="massnahme-einordnung">
         <summary>Einordnung</summary>
         <p className="massnahme-begruendung">{t.massnahme.begruendung}</p>
-        {t.rollenBegruendung && (
-          <p className="massnahme-rolle">
-            Für deine Rolle {t.rollenBonus > 0 ? 'wirksamer' : 'weniger wirksam'} (Grundwert {t.massnahme.wirksamkeit}/3):{' '}
-            {t.rollenBegruendung}
-          </p>
-        )}
         {t.ursachen_ids.length > 1 && (
           <p className="massnahme-rolle duell-mehrfach">{mehrfachText(t.ursachen_ids.length)}</p>
         )}
@@ -256,10 +264,9 @@ function Duell({ runde, spieler }: { runde: RundenErgebnis; spieler: [Spieler, S
   const ursache = (id: number) => ursachen.find((u) => u.id === id)
   const punkteVon = (e: ParteiErgebnis, id: number) => (e.abdeckung ? (wertungFuer(e, id)?.punkte ?? 0) : null)
   const leere = runde.ergebnisse!.map((e) => ({ e, leer: ohneTreffer(e, landName) })).filter((x) => x.leer)
-  // Jede Seite mit ihrer Rolle; das Bundesland nur, wenn es zählt: bei Ursachen in Länderzuständigkeit (docs/methode.md).
+  // Das Bundesland nur, wenn es zählt: bei Ursachen in Länderzuständigkeit (docs/methode.md).
   const landZaehlt = ursachenIds.some((id) => ursache(id)?.ebene === 'land')
-  const seitenText = (s: Spieler) =>
-    [s.name, ROLLEN.find((r) => r.id === s.rolle)?.label, landZaehlt && s.land ? landName(s.land) : null].filter(Boolean).join(' · ')
+  const seitenText = (s: Spieler) => [s.name, landZaehlt && s.land ? landName(s.land) : null].filter(Boolean).join(' · ')
 
   return (
     <section className="duell enthuellen" aria-label="Gegenüberstellung je Ursache">
@@ -330,16 +337,45 @@ function Duell({ runde, spieler }: { runde: RundenErgebnis; spieler: [Spieler, S
         Rundenpunkte sind die Summe über alle Ursachen; eine Maßnahme, die auf mehrere davon wirkt, zählt bei jeder. Tippen
         zeigt Maßnahmen und Belege.
       </p>
+      {/* Warum eine Partei hier nichts hat – sichtbar, nicht aufklappbar: 0 Punkte ohne Grund wirken wie Schiebung. */}
       {leere.map(({ e, leer }) => (
-        <details key={e.partei.id} className="duell-fehlt" style={parteiStil(e.partei.farbe)}>
-          <summary>
+        <div key={e.partei.id} className="duell-fehlt" style={parteiStil(e.partei.farbe)}>
+          <p className="duell-fehlt-kopf">
             {e.partei.kurzname}: {leer!.kurz}
-          </summary>
+          </p>
           <p>{leer!.lang}</p>
-          {e.abdeckung?.begruendung && <p className="keine-begruendung">{e.abdeckung.begruendung}</p>}
+          {e.abdeckung?.begruendung && <p className="keine-begruendung">Durchsucht: {e.abdeckung.begruendung}</p>}
           <ProgrammLinks ergebnis={e} />
-        </details>
+        </div>
       ))}
+    </section>
+  )
+}
+
+/**
+ * „Was heißt das für euch?“: wen die Lösungswege beider Parteien belegt be- oder entlasten. Für alle Parteien gleich,
+ * ohne Punkte (docs/plan-duell-regeln.md, Abschnitt 4).
+ */
+function FuerEuch({ ergebnisse }: { ergebnisse: ParteiErgebnis[] }) {
+  const { verteilung } = fuerEuch(ergebnisse)
+  if (!verteilung.length) return null
+  return (
+    <section className="fuer-euch enthuellen" style={{ animationDelay: '1450ms' }}>
+      <h3>Was heißt das für euch?</h3>
+      <div className="fuer-euch-seite">
+        <p className="fuer-euch-wer">Wen es trifft</p>
+        <ul>
+          {verteilung.map(({ partei, hinweis }) => (
+            <li key={`${partei.id}-${hinweis.text}`} style={parteiStil(partei.farbe)}>
+              <strong>{partei.kurzname}</strong>: {hinweis.text}{' '}
+              <a href={hinweis.quelle_url} target="_blank" rel="noopener noreferrer">
+                Quelle
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <p className="fuer-euch-leer">Gilt für beide Parteien gleich und zählt nicht zu den Punkten.</p>
     </section>
   )
 }
@@ -364,7 +400,6 @@ export function Aufloesung({
   const landName = useLandName()
   // Der Vergleich aller Parteien nutzt nur, was beide Seiten gleich gewählt haben (vergleichsSeite).
   const abweichend = [
-    ...(spieler[0].rolle !== spieler[1].rolle ? [['Rollen', 'ohne Rolle']] : []),
     ...(spieler[0].land !== spieler[1].land ? [['Bundesländer', 'nur mit den Bundeswahlprogrammen']] : []),
   ]
   const ohneWertung = runde.ergebnisse?.filter((e) => !e.abdeckung) ?? []
@@ -384,7 +419,10 @@ export function Aufloesung({
           ))}
         </div>
       ) : null}
-            <blockquote className="problem-zitat">{runde.zusammenfassung}</blockquote>
+            <blockquote className="problem-zitat" {...KI_ERZEUGT}>
+        <KiMarke />
+        <span className="problem-zitat-text">{runde.zusammenfassung}</span>
+      </blockquote>
       <p className="meta">
         {runde.thema ? `Thema: ${runde.thema.name}` : 'Thema nicht in der Datenbank'}
       </p>
@@ -397,14 +435,14 @@ export function Aufloesung({
         <section className="ungeprueft enthuellen">
           <span className="badge-ungeprueft">ungeprüft – keine Wertung</span>
           <p>
-            Zu diesem Problem liegen noch keine geprüften Daten vor. Deshalb gibt es keine Punkte und keine Links. Das
-            Problem wurde zur Prüfung vorgemerkt.
+            Zu diesem Problem liegen noch keine geprüften Daten vor. Deshalb gibt es keine Punkte und keine Links.
           </p>
           {runde.einschaetzung && (
             <p className="einschaetzung">
               <strong>Vorläufige Einschätzung (ungeprüft):</strong> {runde.einschaetzung}
             </p>
           )}
+          <VorschlagFormular anlass="Soll das Spiel dieses Thema kennen?" />
         </section>
       ) : (
         <>
@@ -417,7 +455,9 @@ export function Aufloesung({
                     .join(' und ')}.`
                 : `Keine Wertung: Für ${ohneWertung.map((e) => e.partei.kurzname).join(' und ')} noch nicht erfasst.`
               : runde.punkte[0] === 1 && runde.punkte[1] === 1
-                ? 'Gleichstand – beide bekommen einen Punkt.'
+                ? runde.ergebnisse[0].punkte === runde.ergebnisse[1].punkte
+                  ? 'Gleichstand – beide bekommen einen Punkt.'
+                  : 'Gleichauf – höchstens 10 % Abstand, beide bekommen einen Punkt.'
                 : runde.punkte[0] === 1
                   ? `Punkt für ${spieler[0].name} (${spieler[0].partei.kurzname})!`
                   : runde.punkte[1] === 1
@@ -437,6 +477,7 @@ export function Aufloesung({
               {runde.ergebnisse.some((e) => e.nicht_blind) && ` ${NICHT_BLIND_ERKLAERUNG}`}
             </details>
           )}
+          <FuerEuch ergebnisse={runde.ergebnisse} />
           <details className="beste enthuellen" style={{ animationDelay: '1500ms' }}>
             <summary>
               <span className="beste-titel">Beste Lösung aller Parteien</span>

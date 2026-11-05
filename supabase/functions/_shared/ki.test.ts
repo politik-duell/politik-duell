@@ -82,22 +82,18 @@ describe('systemPrompt', () => {
 
 describe('nutzerNachrichten', () => {
   it('verlangt nach zwei Nachfragen eine abschließende Einordnung', () => {
-    const n = nutzerNachrichten([spieler('a'), ki('b'), spieler('c'), ki('d'), spieler('e')], ['mieter', 'mieter'])
-    expect(n[0].content).toContain('Mieter:in')
+    const n = nutzerNachrichten([spieler('a'), ki('b'), spieler('c'), ki('d'), spieler('e')])
     expect(n[0].content).toContain('bereits zweimal')
     // Eine Forderung bleibt eine Forderung, sie wird nicht zum Problem umgedeutet.
     expect(n[0].content).toContain('als "forderung" ein')
     expect(n[0].content).toContain('"rueckmeldung"')
-    expect(nutzerNachrichten([spieler('a'), ki('b'), spieler('c')], null)[0].content).toContain('frag anders als zuvor')
-    expect(nutzerNachrichten([spieler('a')], null)[0].content).not.toContain('frag anders')
+    expect(nutzerNachrichten([spieler('a'), ki('b'), spieler('c')])[0].content).toContain('frag anders als zuvor')
+    expect(nutzerNachrichten([spieler('a')]).map((x) => x.role)).toEqual(['user'])
     expect(n.slice(1).map((x) => x.role)).toEqual(['user', 'assistant', 'user', 'assistant', 'user'])
   })
 
-  it('nennt bei verschiedenen Rollen der Seiten beide', () => {
-    const text = nutzerNachrichten([spieler('a')], ['arbeitslos', 'mieter'])[0].content
-    expect(text).toContain('verschiedene Rollen')
-    expect(text).toContain('Mieter:in')
-    expect(nutzerNachrichten([spieler('a')], [null, null])[0].content).toContain('Rolle der Person: keine Angabe.')
+  it('schickt keine Rolle an die KI (Rollen ausgesetzt)', () => {
+    expect(JSON.stringify(nutzerNachrichten([spieler('a'), ki('b'), spieler('c')]))).not.toMatch(/Rolle/)
   })
 })
 
@@ -327,11 +323,12 @@ describe('pruefeAnfrage', () => {
   }
 
   it('akzeptiert eine gültige Anfrage', () => {
-    // Ältere App-Fassung: eine Rolle und ein Land für beide Seiten.
-    expect(pruefeAnfrage(gueltig).seiten).toEqual([{ rolle: 'mieter', land: null }, { rolle: 'mieter', land: null }])
+    // Ältere App-Fassung: ein Land für beide Seiten; die Rolle wird verworfen (Rollen ausgesetzt).
+    expect(pruefeAnfrage(gueltig).seiten).toEqual([{ land: null }, { land: null }])
     expect(pruefeAnfrage({ ...gueltig, land: 'ST' }).seiten[1].land).toBe('ST')
     const seiten = [{ rolle: 'arbeitslos', land: 'ST' }, { rolle: null, land: null }]
-    expect(pruefeAnfrage({ ...gueltig, rolle: undefined, seiten }).seiten).toEqual(seiten)
+    expect(pruefeAnfrage({ ...gueltig, rolle: undefined, seiten }).seiten).toEqual([{ land: 'ST' }, { land: null }])
+    expect(pruefeAnfrage({ ...gueltig, rolle: 'koenig' }).seiten).toEqual([{ land: null }, { land: null }])
     expect(pruefeAnfrage(gueltig).zugang).toBeNull()
     const zugang = 'a'.repeat(43)
     expect(pruefeAnfrage({ ...gueltig, zugang }).zugang).toBe(zugang)
@@ -342,11 +339,9 @@ describe('pruefeAnfrage', () => {
     ['feste Sitzung des globalen Limits', { ...gueltig, sitzung: '00000000-0000-0000-0000-000000000000' }],
     ['mit zu langem Text', { ...gueltig, verlauf: [spieler('a'.repeat(501))] }],
     ['mit KI als letzter Nachricht', { ...gueltig, verlauf: [spieler('a'), ki('b')] }],
-    ['mit unbekannter Rolle', { ...gueltig, rolle: 'koenig' }],
     ['mit gleicher Partei', { ...gueltig, parteien: [1, 1] }],
     ['mit ungültigem Bundesland', { ...gueltig, land: 'Sachsen-Anhalt' }],
     ['mit nur einer Seite', { ...gueltig, seiten: [{ rolle: null, land: null }] }],
-    ['mit unbekannter Rolle einer Seite', { ...gueltig, seiten: [{ rolle: null, land: null }, { rolle: 'koenig', land: null }] }],
     ['mit ungültigem Bundesland einer Seite', { ...gueltig, seiten: [{ rolle: null, land: 'Berlin' }, { rolle: null, land: null }] }],
     ['mit ungültigem Zugang zur Testphase', { ...gueltig, zugang: 'geheim' }],
     ['mit zu langem Verlauf', { ...gueltig, verlauf: Array(7).fill(spieler('a')) }],
@@ -720,7 +715,7 @@ describe('ordneEin', () => {
 
   it('übernimmt sichere Ursachen aus Schritt 2 – Schritt 2 sieht nur die Ursachen des Themas', async () => {
     const { frage, aufrufe } = kiMit(schritt1, { ursachen_ids: [1404], ursachen_belege: { 1404: 'so viele Formulare' }, sicher: true })
-    const { antwort, unsicher } = await ordneEin(frage, amt, null, katalog, () => 0)
+    const { antwort, unsicher } = await ordneEin(frage, amt, katalog, () => 0)
     expect(unsicher).toEqual([])
     expect(antwort).toMatchObject({ typ: 'problem', thema_id: 14, ursachen_ids: [1404], nachfrage: null })
     expect(aufrufe).toHaveLength(2)
@@ -732,7 +727,7 @@ describe('ordneEin', () => {
 
   it('macht bei unpassendem Beleg eine Nachfrage mit Thema statt einer Wertung', async () => {
     const { frage } = kiMit(schritt1, { ursachen_ids: [1403], ursachen_belege: { 1403: 'Formulare beim Amt verstehe ich nicht' }, sicher: true })
-    const { antwort, unsicher } = await ordneEin(frage, amt, null, katalog, () => 0)
+    const { antwort, unsicher } = await ordneEin(frage, amt, katalog, () => 0)
     expect(unsicher).toEqual(['beleg_1403'])
     expect(antwort).toMatchObject({ typ: 'problem', thema_id: 14, ursachen_ids: [] })
     expect(antwort.nachfrage).toBeTruthy()
@@ -744,7 +739,7 @@ describe('ordneEin', () => {
       ursachen_belege: { 1404: 'so viele Formulare', 1403: 'Formulare beim Amt verstehe ich nicht' },
       sicher: true,
     })
-    const { antwort, unsicher } = await ordneEin(frage, amt, null, katalog, () => 0)
+    const { antwort, unsicher } = await ordneEin(frage, amt, katalog, () => 0)
     expect(unsicher).toEqual(['beleg_1403'])
     expect(antwort).toMatchObject({ thema_id: 14, ursachen_ids: [1404], nachfrage: null })
   })
@@ -755,14 +750,14 @@ describe('ordneEin', () => {
       { ...schritt1, thema_id: 1, mehrere_probleme: true, thema_kandidaten: [8, 99], nachfrage: ['Welches Problem soll in dieser Runde zählen?'] },
       { ursachen_ids: [101], ursachen_belege: { 101: 'Hausarzt ist 15 Kilometer weg' }, sicher: true },
     )
-    const { antwort, unsicher } = await ordneEin(frage, verlauf, null, katalog, () => 0)
+    const { antwort, unsicher } = await ordneEin(frage, verlauf, katalog, () => 0)
     expect(unsicher).toEqual(['thema_kandidaten', 'mehrere_probleme'])
     expect(antwort).toMatchObject({ thema_id: 1, ursachen_ids: [], nachfrage: 'Welches Problem soll in dieser Runde zählen?', thema_kandidaten: [8] })
   })
 
   it('bleibt bei einem Fehler in Schritt 2 bei der Nachfrage, statt die Runde scheitern zu lassen', async () => {
     const { frage } = kiMit(schritt1, new Error('Mistral 503'))
-    const { antwort, unsicher } = await ordneEin(frage, amt, null, katalog, () => 0)
+    const { antwort, unsicher } = await ordneEin(frage, amt, katalog, () => 0)
     expect(unsicher).toContain('ursachen_keine_antwort')
     expect(antwort).toMatchObject({ thema_id: 14, ursachen_ids: [] })
   })
@@ -774,7 +769,7 @@ describe('ordneEin', () => {
       { typ: 'problem', thema_id: null, einschaetzung: 'Möglicher Grund …', zusammenfassung: 'x' },
     ]) {
       const { frage, aufrufe } = kiMit(r1)
-      const { antwort, unsicher } = await ordneEin(frage, amt, null, katalog, () => 0)
+      const { antwort, unsicher } = await ordneEin(frage, amt, katalog, () => 0)
       expect(aufrufe).toHaveLength(1)
       expect(unsicher).toEqual([])
       expect(antwort.ursachen_ids).toEqual([])
@@ -785,17 +780,17 @@ describe('ordneEin', () => {
   it('übernimmt bei einer Forderung kein Thema, bei dem die KI selbst unsicher ist', async () => {
     const r1 = { typ: 'forderung', thema_id: 14, thema_sicher: false, nachfrage: ['Was soll sich dadurch ändern?'], zusammenfassung: 'x' }
     const { frage, aufrufe } = kiMit(r1)
-    const { antwort, unsicher } = await ordneEin(frage, amt, null, katalog, () => 0)
+    const { antwort, unsicher } = await ordneEin(frage, amt, katalog, () => 0)
     expect(aufrufe).toHaveLength(1)
     expect(unsicher).toEqual(['thema_unsicher'])
     expect(antwort).toMatchObject({ typ: 'forderung', thema_id: null })
-    const sicher = await ordneEin(kiMit({ ...r1, thema_sicher: true }).frage, amt, null, katalog, () => 0)
+    const sicher = await ordneEin(kiMit({ ...r1, thema_sicher: true }).frage, amt, katalog, () => 0)
     expect(sicher.antwort.thema_id).toBe(14)
   })
 
   it('übernimmt keine Ursachen, die Schritt 1 trotz Anweisung liefert', async () => {
     const { frage } = kiMit({ ...schritt1, ursachen_ids: [1404], ursachen_belege: { 1404: 'so viele Formulare' } }, { ursachen_ids: [], sicher: false })
-    const { antwort } = await ordneEin(frage, amt, null, katalog, () => 0)
+    const { antwort } = await ordneEin(frage, amt, katalog, () => 0)
     expect(antwort.ursachen_ids).toEqual([])
   })
 })
@@ -842,7 +837,7 @@ describe('Symptomgruppen und teilweise passende Ursachen', () => {
       symptom: null,
       sicher: false,
     })
-    const { antwort, unsicher } = await ordneEin(frage, verlauf, null, S_KATALOG, () => 0)
+    const { antwort, unsicher } = await ordneEin(frage, verlauf, S_KATALOG, () => 0)
     expect(unsicher).toContain('teilweise')
     expect(antwort).toMatchObject({ typ: 'problem', thema_id: 1, ursachen_ids: [] })
     expect(antwort.nachfrage).toBeTruthy()
@@ -856,14 +851,14 @@ describe('Symptomgruppen und teilweise passende Ursachen', () => {
       teilweise: { 206: 'Von Sozialwohnungen ist nicht die Rede.' },
       sicher: true,
     })
-    const { antwort } = await ordneEin(frage, wohnung, null, S_KATALOG, () => 0)
+    const { antwort } = await ordneEin(frage, wohnung, S_KATALOG, () => 0)
     expect(antwort.ursachen_ids).toEqual([])
     expect(antwort.abweichung).toBe('Von Sozialwohnungen ist nicht die Rede.')
   })
 
   it('wertet bei einer genannten Folge alle Ursachen der Gruppe, zusätzlich zum genannten Grund', async () => {
     const frage = kiMit(s1(2), { ursachen_ids: [204], ursachen_belege: { 204: 'Miete ist um 15 Prozent gestiegen' }, symptom: 1, sicher: true })
-    const { antwort, unsicher } = await ordneEin(frage, wohnung, null, S_KATALOG, () => 0)
+    const { antwort, unsicher } = await ordneEin(frage, wohnung, S_KATALOG, () => 0)
     expect(unsicher).toEqual([])
     expect(antwort).toMatchObject({ thema_id: 2, ursachen_ids: [204, 201, 202, 205, 206], symptom: 1, nachfrage: null })
     expect(antwort.abweichung).toBeUndefined()
@@ -871,7 +866,7 @@ describe('Symptomgruppen und teilweise passende Ursachen', () => {
 
   it('wertet eine Folge auch ohne einzeln genannte Ursache', async () => {
     const frage = kiMit(s1(2), { ursachen_ids: [], symptom: 1, sicher: true })
-    const { antwort } = await ordneEin(frage, [spieler('Wir finden keine bezahlbare Wohnung.')], null, S_KATALOG, () => 0)
+    const { antwort } = await ordneEin(frage, [spieler('Wir finden keine bezahlbare Wohnung.')], S_KATALOG, () => 0)
     expect(antwort).toMatchObject({ ursachen_ids: [201, 202, 205, 206], symptom: 1, nachfrage: null })
   })
 
@@ -883,22 +878,22 @@ describe('Symptomgruppen und teilweise passende Ursachen', () => {
       symptom: null,
       sicher: true,
     })
-    const { antwort } = await ordneEin(frage, wohnung, null, S_KATALOG, () => 0)
+    const { antwort } = await ordneEin(frage, wohnung, S_KATALOG, () => 0)
     expect(antwort).toMatchObject({ ursachen_ids: [204, 201, 202, 205, 206], symptom: 1, nachfrage: null })
     expect(antwort.abweichung).toBeUndefined()
   })
 
   it('nimmt bei unsicherer KI nur die Gruppe, ohne weitere Ursachen', async () => {
     const frage = kiMit(s1(2), { ursachen_ids: [204], ursachen_belege: { 204: 'Miete ist um 15 Prozent gestiegen' }, symptom: 1, sicher: false })
-    const { antwort } = await ordneEin(frage, wohnung, null, S_KATALOG, () => 0)
+    const { antwort } = await ordneEin(frage, wohnung, S_KATALOG, () => 0)
     expect(antwort).toMatchObject({ ursachen_ids: [201, 202, 205, 206], symptom: 1, nachfrage: null })
   })
 
   it('übernimmt keine Folge, wenn die Zuordnung sonst unsicher ist oder die Nummer nicht existiert', async () => {
-    const unsicher = await ordneEin(kiMit({ ...s1(2), thema_sicher: false }, { ursachen_ids: [], symptom: 1, sicher: true }), wohnung, null, S_KATALOG, () => 0)
+    const unsicher = await ordneEin(kiMit({ ...s1(2), thema_sicher: false }, { ursachen_ids: [], symptom: 1, sicher: true }), wohnung, S_KATALOG, () => 0)
     expect(unsicher.antwort).toMatchObject({ ursachen_ids: [] })
     expect(unsicher.antwort.symptom).toBeUndefined()
-    const fremd = await ordneEin(kiMit(s1(2), { ursachen_ids: [], symptom: 7, sicher: true }), wohnung, null, S_KATALOG, () => 0)
+    const fremd = await ordneEin(kiMit(s1(2), { ursachen_ids: [], symptom: 7, sicher: true }), wohnung, S_KATALOG, () => 0)
     expect(fremd.antwort.ursachen_ids).toEqual([])
     expect(fremd.antwort.symptom).toBeUndefined()
   })

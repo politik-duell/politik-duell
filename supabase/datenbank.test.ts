@@ -75,26 +75,21 @@ describe('Datenbank', () => {
     expect(r.rows.length).toBe(ABDECKUNG.length)
   })
 
-  it('Abdeckung: Begründung genau bei „keine“, Status „unvollstaendig“ erlaubt', async () => {
+  it('Abdeckung: Begründung genau bei „keine“', async () => {
     await expect(db.query(`insert into abdeckung values (1, 1, 'keine', null, now())`)).rejects.toThrow()
     await expect(db.query(`update abdeckung set begruendung = 'x' where art = 'massnahmen'`)).rejects.toThrow()
-    await expect(db.query(`insert into runden (problem_text, status) values ('x', 'unvollstaendig')`)).resolves.toBeTruthy()
-    await expect(db.query(`insert into runden (problem_text, status) values ('x', 'kaputt')`)).rejects.toThrow()
   })
 
-  it('echter Seed ersetzt die Beispielparteien, gespielte Runden bleiben', async () => {
+  it('echter Seed ersetzt die Beispielparteien', async () => {
     const pruef = new PGlite()
     await pruef.exec(`create role anon nologin; create role authenticated nologin; create role service_role nologin bypassrls;
       create schema auth; create table auth.users (id uuid primary key);
       create function auth.uid() returns uuid language sql stable as $$ select null::uuid $$;`)
     for (const datei of readdirSync(new URL('./migrations', import.meta.url)).sort()) await pruef.exec(lies(`./migrations/${datei}`))
     await pruef.exec(seedSql(KATALOG))
-    await pruef.exec(`insert into runden (problem_text, status, partei_a, partei_b) values ('alt', 'gewertet', 1, 2)`)
     await pruef.exec(lies('./seed.sql'))
     const alt = await pruef.query<{ n: number }>(`select count(*)::int as n from parteien where id in (${KATALOG.parteien.map((p) => p.id).join(',')})`)
     expect(alt.rows[0].n).toBe(0)
-    const runde = await pruef.query<{ partei_a: number | null }>(`select partei_a from runden where problem_text = 'alt'`)
-    expect(runde.rows).toEqual([{ partei_a: null }])
     // Länder und Ebenen der Ursachen kommen mit.
     const laender = await pruef.query<{ id: string }>('select id from laender order by id')
     expect(laender.rows.map((l) => l.id)).toEqual(['BE', 'MV', 'ST'])
@@ -195,28 +190,10 @@ describe('Datenbank', () => {
       }
     })
 
-    it('eine Forderung merkt sich das Instrument; ein neuer Seed lässt den Verweis stehen', async () => {
-      await db.exec(`insert into runden (problem_text, status, thema_id, instrument_id) values ('Forderung: Mietpreisbremse', 'forderung', 2, ${instrument.id})`)
-      try {
-        await db.exec(seedSql(KATALOG))
-        const r = await db.query<{ instrument_id: number }>(`select instrument_id from runden where status = 'forderung'`)
-        expect(r.rows).toEqual([{ instrument_id: instrument.id }])
-        await expect(db.query(`insert into runden (problem_text, status, instrument_id) values ('x', 'forderung', 8888)`)).rejects.toThrow()
-      } finally {
-        await db.exec(`delete from runden where status = 'forderung'`)
-      }
-    })
-
-    it('Seed entfernt Instrumente, die nicht mehr im Katalog stehen; der Verweis in Runden wird leer', async () => {
+    it('Seed entfernt Instrumente, die nicht mehr im Katalog stehen', async () => {
       await db.exec(`insert into instrumente (id, thema_id, name) values (9001, 2, 'alt')`)
-      await db.exec(`insert into runden (problem_text, status, instrument_id) values ('x', 'forderung', 9001)`)
-      try {
-        await db.exec(seedSql(KATALOG))
-        expect((await db.query<{ id: number }>('select id from instrumente order by id')).rows.map((i) => i.id)).toEqual(INSTRUMENTE.map((i) => i.id))
-        expect((await db.query(`select instrument_id from runden where status = 'forderung'`)).rows).toEqual([{ instrument_id: null }])
-      } finally {
-        await db.exec(`delete from runden where status = 'forderung'`)
-      }
+      await db.exec(seedSql(KATALOG))
+      expect((await db.query<{ id: number }>('select id from instrumente order by id')).rows.map((i) => i.id)).toEqual(INSTRUMENTE.map((i) => i.id))
     })
 
     it('prüft Ebene und Forschungsstand', async () => {
@@ -287,76 +264,27 @@ describe('Datenbank', () => {
       await expect(db.query(`insert into haltungen (id, frage, beschreibung, verwandte_themen) values (90, 'Frage?', 'x', '{}')`)).rejects.toThrow()
     })
 
-    it('eine Haltung ohne Problem merkt sich die Wertfrage; ein neuer Seed lässt den Verweis stehen', async () => {
-      await db.exec(`insert into runden (problem_text, status, haltung_id) values ('Persönliche Haltung: Tempolimit', 'wert', 1)`)
-      try {
-        await db.exec(seedSql(KATALOG))
-        const r = await db.query<{ haltung_id: number }>(`select haltung_id from runden where status = 'wert' and haltung_id is not null`)
-        expect(r.rows).toEqual([{ haltung_id: 1 }])
-        // Nur bei Haltungen, nur bekannte IDs, nie bei Grenzfällen.
-        await expect(db.query(`insert into runden (problem_text, status, haltung_id) values ('x', 'forderung', 1)`)).rejects.toThrow()
-        await expect(db.query(`insert into runden (problem_text, status, haltung_id) values ('', 'grenze', 1)`)).rejects.toThrow()
-        await expect(db.query(`insert into runden (problem_text, status, haltung_id) values ('x', 'wert', 99)`)).rejects.toThrow()
-      } finally {
-        await db.exec(`delete from runden where status = 'wert'`)
-      }
-    })
-
-    it('Seed entfernt Haltungen, die nicht mehr im Katalog stehen; der Verweis in Runden wird leer', async () => {
+    it('Seed entfernt Haltungen, die nicht mehr im Katalog stehen', async () => {
       await db.exec(`insert into haltungen (id, frage, beschreibung, verwandte_themen) values (90, 'Alt?', 'alt', '{1}')`)
-      await db.exec(`insert into runden (problem_text, status, haltung_id) values ('x', 'wert', 90)`)
-      try {
-        await db.exec(seedSql(KATALOG))
-        expect((await db.query<{ id: number }>('select id from haltungen order by id')).rows.map((h) => h.id)).toEqual(HALTUNGEN.map((h) => h.id))
-        expect((await db.query(`select haltung_id from runden where status = 'wert'`)).rows).toEqual([{ haltung_id: null }])
-        expect((await db.query('select * from haltung_positionen')).rows).toHaveLength(HALTUNG_POSITIONEN.length)
-      } finally {
-        await db.exec(`delete from runden where status = 'wert'`)
-      }
+      await db.exec(seedSql(KATALOG))
+      expect((await db.query<{ id: number }>('select id from haltungen order by id')).rows.map((h) => h.id)).toEqual(HALTUNGEN.map((h) => h.id))
+      expect((await db.query('select * from haltung_positionen')).rows).toHaveLength(HALTUNG_POSITIONEN.length)
     })
   })
 
-  it('anon sieht nur freigegebene Runden', async () => {
-    await db.exec(`insert into runden (problem_text, status, freigegeben) values ('offen', 'wert', false), ('frei', 'wert', true)`)
-    const r = await alsRolle('anon', () => db.query<{ problem_text: string }>('select problem_text from runden'))
-    expect(r.rows.map((x) => x.problem_text)).toEqual(['frei'])
+  it('speichert keine Spieleingaben: Runden und Review-Tabellen gibt es nicht mehr', async () => {
+    const r = await db.query<{ name: string }>(
+      `select table_name as name from information_schema.tables where table_schema = 'public'
+        and table_name in ('runden', 'review_warteschlange', 'review_eingaben', 'luecken', 'kennzahlen_woche')`,
+    )
+    expect(r.rows).toEqual([])
   })
 
-  it('speichert Forderungen ohne Problem als eigenen Status und lehnt unbekannte ab', async () => {
-    await db.exec(`insert into runden (problem_text, status, thema_id) values ('Forderung: mehr Wohnungen', 'forderung', 2)`)
-    await expect(db.query(`insert into runden (problem_text, status) values ('x', 'unbekannt')`)).rejects.toThrow()
-    await db.exec(`delete from runden where status = 'forderung'`)
-  })
-
-  it('speichert Grenzfälle nur ohne Inhalt', async () => {
-    await db.exec(`insert into runden (problem_text, status, partei_a, partei_b, testphase) values ('', 'grenze', 1, 2, false)`)
-    // Kein Text, kein Stichwort, kein Thema, kein Filtergrund, keine Punkte, keine Freigabe.
-    for (const spalten of [
-      `(problem_text, status) values ('Abwertung', 'grenze')`,
-      `(problem_text, stichwort, status) values ('', 'x', 'grenze')`,
-      `(problem_text, filter_grund, status) values ('', 'Hetze', 'grenze')`,
-      `(problem_text, thema_id, status) values ('', 2, 'grenze')`,
-      `(problem_text, punkte_a, status) values ('', 0, 'grenze')`,
-    ])
-      await expect(db.query(`insert into runden ${spalten}`)).rejects.toThrow()
-    const { rows } = await db.query<{ id: number }>(`select id from runden where status = 'grenze'`)
-    await expect(db.query(`update runden set freigegeben = true where id = $1`, [rows[0].id])).rejects.toThrow()
-    await db.exec(`delete from runden where status = 'grenze'`)
-  })
-
-  it('anon darf nicht schreiben', async () => {
-    await expect(
-      alsRolle('anon', () => db.query(`insert into runden (problem_text, status) values ('x', 'wert')`)),
-    ).rejects.toThrow()
+  it('anon darf nicht schreiben und das Rate-Limit nicht sehen', async () => {
     await expect(alsRolle('anon', () => db.query(`update parteien set name = 'x'`))).resolves.toMatchObject({
       affectedRows: 0,
     })
-  })
-
-  it('anon sieht Review-Warteschlange und Rate-Limit nicht', async () => {
-    await db.exec(`insert into review_warteschlange (problem_text) values ('Bus fährt selten')`)
-    const r = await alsRolle('anon', () => db.query('select * from review_warteschlange'))
-    expect(r.rows).toHaveLength(0)
+    await expect(alsRolle('anon', () => db.query('select * from rate_limit'))).resolves.toMatchObject({ rows: [] })
     await expect(
       alsRolle('anon', () => db.query(`select rate_limit_pruefen(gen_random_uuid(), 1, '1 minute')`)),
     ).rejects.toThrow()
@@ -377,15 +305,9 @@ describe('Datenbank', () => {
   })
 })
 
-describe('Moderation', () => {
-  let offen: number
-
+describe('Admins', () => {
   beforeAll(async () => {
     await db.exec(`insert into auth.users values ('${ADMIN}'), ('${NUTZER}'); insert into admins values ('${ADMIN}');`)
-    const r = await db.query<{ id: number }>(
-      `insert into runden (problem_text, stichwort, status, punkte_a) values ('Miete steigt', 'Miete', 'gewertet', 4) returning id`,
-    )
-    offen = r.rows[0].id
   })
 
   it('nur Admins sind Admins', async () => {
@@ -395,52 +317,9 @@ describe('Moderation', () => {
     await expect(alsRolle('anon', frage)).rejects.toThrow()
   })
 
-  it('angemeldete Nicht-Admins sehen nur Freigegebenes und können nichts ändern', async () => {
-    const r = await alsNutzer(() => db.query<{ id: number }>('select id from runden where id = $1', [offen]))
-    expect(r.rows).toHaveLength(0)
-    const u = await alsNutzer(() => db.query('update runden set freigegeben = true where id = $1', [offen]))
-    expect(u.affectedRows).toBe(0)
+  it('angemeldete Nicht-Admins sehen die Admin-Liste nicht', async () => {
     const a = await alsNutzer(() => db.query('select * from admins'))
     expect(a.rows).toHaveLength(0)
-  })
-
-  it('Admins sehen offene Runden und die Review-Warteschlange', async () => {
-    const r = await alsAdmin(() => db.query('select id from runden where id = $1', [offen]))
-    expect(r.rows).toHaveLength(1)
-    const q = await alsAdmin(() => db.query('select * from review_warteschlange'))
-    expect(q.rows.length).toBeGreaterThan(0)
-  })
-
-  it('Admins geben frei – danach sieht anon das Stichwort', async () => {
-    await alsAdmin(() =>
-      db.query(`update runden set stichwort = 'Mieterhöhung', freigegeben = true, moderiert_am = now() where id = $1`, [offen]),
-    )
-    const r = await alsRolle('anon', () =>
-      db.query<{ stichwort: string }>('select stichwort from runden where id = $1', [offen]),
-    )
-    expect(r.rows).toEqual([{ stichwort: 'Mieterhöhung' }])
-  })
-
-  it('Admins dürfen Punkte und Texte nicht ändern', async () => {
-    await expect(alsAdmin(() => db.query('update runden set punkte_a = 99 where id = $1', [offen]))).rejects.toThrow()
-    await expect(alsAdmin(() => db.query(`update runden set problem_text = 'x' where id = $1`, [offen]))).rejects.toThrow()
-  })
-
-  it('freigegeben und abgelehnt schließen sich aus', async () => {
-    await expect(alsAdmin(() => db.query('update runden set abgelehnt = true where id = $1', [offen]))).rejects.toThrow()
-  })
-
-  it('Admins haken Review-Einträge ab und löschen Runden', async () => {
-    const u = await alsAdmin(() => db.query('update review_warteschlange set erledigt = true'))
-    expect(u.affectedRows).toBeGreaterThan(0)
-    const d = await alsAdmin(() => db.query('delete from runden where id = $1', [offen]))
-    expect(d.affectedRows).toBe(1)
-  })
-
-  it('Stichwörter sind höchstens 40 Zeichen lang', async () => {
-    await expect(
-      db.query(`insert into runden (problem_text, stichwort, status) values ('x', repeat('a', 41), 'wert')`),
-    ).rejects.toThrow()
   })
 })
 
@@ -550,94 +429,32 @@ describe('Prüfung: neuer Link', () => {
   })
 })
 
-describe('Eingaben ohne Wertung (review_eingaben)', () => {
-  const einfuegen = (werte: string) => db.query(`insert into review_eingaben (grund, eingaben, thema_id, zusammenfassung) values ${werte}`)
-
-  it('nur Admins lesen und löschen, sonst niemand', async () => {
-    await einfuegen(`('wert', '{"Ich finde, Bildung ist wichtiger als alles"}', null, 'Persönliche Haltung zu Bildung')`)
-    await expect(alsRolle('anon', () => db.query('select * from review_eingaben'))).rejects.toThrow()
-    expect((await alsNutzer(() => db.query('select * from review_eingaben'))).rows).toHaveLength(0)
-    await expect(alsRolle('anon', () => db.query(`insert into review_eingaben (grund, eingaben) values ('wert', '{x}')`))).rejects.toThrow()
-    await expect(alsAdmin(() => db.query(`update review_eingaben set grund = 'forderung'`))).rejects.toThrow()
-    const a = await alsAdmin(() => db.query<{ id: number; eingaben: string[] }>('select * from review_eingaben'))
-    expect(a.rows).toHaveLength(1)
-    expect(a.rows[0].eingaben).toEqual(['Ich finde, Bildung ist wichtiger als alles'])
-    await alsAdmin(() => db.query('delete from review_eingaben where id = $1', [a.rows[0].id]))
-    expect((await db.query('select * from review_eingaben')).rows).toHaveLength(0)
+describe('Themenvorschläge (themen_vorschlaege)', () => {
+  it('nur die Edge Function schreibt; nur Admins lesen, haken ab und löschen', async () => {
+    await db.exec(`insert into themen_vorschlaege (text) values ('Zu wenige Kinderärzte auf dem Land')`)
+    await expect(alsRolle('anon', () => db.query('select * from themen_vorschlaege'))).rejects.toThrow()
+    await expect(alsRolle('anon', () => db.query(`insert into themen_vorschlaege (text) values ('x')`))).rejects.toThrow()
+    expect((await alsNutzer(() => db.query('select * from themen_vorschlaege'))).rows).toHaveLength(0)
+    await expect(alsNutzer(() => db.query(`insert into themen_vorschlaege (text) values ('x')`))).rejects.toThrow()
+    const a = await alsAdmin(() => db.query<{ id: number; text: string; erledigt: boolean }>('select * from themen_vorschlaege'))
+    expect(a.rows).toMatchObject([{ text: 'Zu wenige Kinderärzte auf dem Land', erledigt: false }])
+    await expect(alsAdmin(() => db.query(`update themen_vorschlaege set text = 'y'`))).rejects.toThrow()
+    const u = await alsAdmin(() => db.query('update themen_vorschlaege set erledigt = true where id = $1', [a.rows[0].id]))
+    expect(u.affectedRows).toBe(1)
+    const d = await alsAdmin(() => db.query('delete from themen_vorschlaege where id = $1', [a.rows[0].id]))
+    expect(d.affectedRows).toBe(1)
   })
 
-  it('Grenze nur mit Wortlaut, ohne Thema und Kurzfassung; höchstens drei Eingaben', async () => {
-    await einfuegen(`('grenze', '{"Abwertung"}', null, null)`)
-    await expect(einfuegen(`('grenze', '{"Abwertung"}', 2, null)`)).rejects.toThrow()
-    await expect(einfuegen(`('grenze', '{"Abwertung"}', null, 'x')`)).rejects.toThrow()
-    await expect(einfuegen(`('wert', '{}', null, null)`)).rejects.toThrow()
-    await expect(einfuegen(`('wert', '{a,b,c,d}', null, null)`)).rejects.toThrow()
-    await expect(einfuegen(`('gewertet', '{a}', null, null)`)).rejects.toThrow()
-    await db.exec('delete from review_eingaben')
+  it('prüft die Länge des Texts', async () => {
+    await expect(db.query(`insert into themen_vorschlaege (text) values ('ab')`)).rejects.toThrow()
+    await expect(db.query(`insert into themen_vorschlaege (text) values (repeat('a', 501))`)).rejects.toThrow()
   })
 
-  it('löscht Einträge nach 30 Tagen', async () => {
-    await db.exec(`insert into review_eingaben (created_at, grund, eingaben) values (now() - interval '31 days', 'wert', '{alt}')`)
-    await db.exec(`insert into review_eingaben (created_at, grund, eingaben) values (now() - interval '29 days', 'wert', '{jung}')`)
-    const { rows } = await db.query<{ eingaben: string[] }>('select eingaben from review_eingaben')
-    expect(rows.map((r) => r.eingaben[0])).toEqual(['jung'])
-    await db.exec('delete from review_eingaben')
-  })
-})
-
-describe('Lücken und Kennzahlen (Admin)', () => {
-  beforeAll(async () => {
-    await db.exec('delete from runden')
-    const instrument = INSTRUMENTE[0].id
-    const haltung = HALTUNGEN[0].id
-    await db.exec(`insert into runden (created_at, problem_text, stichwort, status, thema_id, instrument_id, haltung_id, testphase) values
-      (now(),                     'a', 'Handwerker ',  'ungeprueft',     null, null, null, false),
-      (now(),                     'b', 'handwerker',   'ungeprueft',     null, null, null, true),
-      (now() - interval '40 days','c', 'Handwerker',   'ungeprueft',     null, null, null, false),
-      (now(),                     'd', 'Miete',        'unvollstaendig', 2,    null, null, false),
-      (now(),                     'j', 'Miete',        'ungeprueft',     2,    null, null, true),
-      (now(),                     'e', 'Miete',        'gewertet',       2,    null, null, false),
-      (now(),                     'f', 'Mietdeckel',   'forderung',      2,    null, null, false),
-      (now(),                     'g', 'Mietdeckel',   'forderung',      2,    ${instrument}, null, false),
-      (now(),                     'h', 'Tempolimit',   'wert',           null, null, null, false),
-      (now(),                     'i', 'Bildung',      'wert',           null, null, ${haltung}, false)`)
-    await db.exec(`insert into runden (problem_text, status) values ('', 'grenze')`)
-  })
-
-  it('nur Admins sehen Lücken und Kennzahlen', async () => {
-    for (const sicht of ['luecken', 'kennzahlen_woche']) {
-      await expect(alsRolle('anon', () => db.query(`select * from ${sicht}`))).rejects.toThrow()
-      expect((await alsNutzer(() => db.query(`select * from ${sicht}`))).rows).toHaveLength(0)
-      expect((await alsAdmin(() => db.query(`select * from ${sicht}`))).rows.length).toBeGreaterThan(0)
-    }
-  })
-
-  it('zählt Lücken je Thema bzw. Stichwort, ohne Grenzfälle und ohne Runden mit Karte', async () => {
-    const { rows } = await alsAdmin(() =>
-      db.query<{ art: string; thema_id: number | null; stichwort: string | null; anzahl_30_tage: number; anzahl: number; anzahl_testphase: number }>(
-        'select art, thema_id, stichwort, anzahl_30_tage, anzahl, anzahl_testphase from luecken order by art, stichwort',
-      ),
-    )
-    expect(rows).toEqual([
-      { art: 'forderung_ohne_loesungsweg', thema_id: 2, stichwort: null, anzahl_30_tage: 1, anzahl: 1, anzahl_testphase: 0 },
-      { art: 'haltung_ohne_karte', thema_id: null, stichwort: 'tempolimit', anzahl_30_tage: 1, anzahl: 1, anzahl_testphase: 0 },
-      { art: 'kein_thema', thema_id: null, stichwort: 'handwerker', anzahl_30_tage: 2, anzahl: 3, anzahl_testphase: 1 },
-      { art: 'unvollstaendig', thema_id: 2, stichwort: null, anzahl_30_tage: 1, anzahl: 1, anzahl_testphase: 0 },
-      { art: 'ursache_fehlt', thema_id: 2, stichwort: null, anzahl_30_tage: 1, anzahl: 1, anzahl_testphase: 1 },
-    ])
-  })
-
-  it('zählt Runden je Woche und Testphase nach Status', async () => {
-    const { rows } = await alsAdmin(() =>
-      db.query<Record<string, number | boolean>>(
-        `select testphase, sum(runden)::int as runden, sum(gewertet)::int as gewertet, sum(ungeprueft)::int as ungeprueft,
-           sum(forderung_mit_karte)::int as forderung_mit_karte, sum(wert_mit_karte)::int as wert_mit_karte, sum(grenze)::int as grenze
-         from kennzahlen_woche group by testphase order by testphase`,
-      ),
-    )
-    expect(rows).toEqual([
-      { testphase: false, runden: 9, gewertet: 1, ungeprueft: 2, forderung_mit_karte: 1, wert_mit_karte: 1, grenze: 1 },
-      { testphase: true, runden: 2, gewertet: 0, ungeprueft: 2, forderung_mit_karte: 0, wert_mit_karte: 0, grenze: 0 },
-    ])
+  it('löscht Vorschläge nach 180 Tagen', async () => {
+    await db.exec(`insert into themen_vorschlaege (created_at, text) values (now() - interval '181 days', 'alt')`)
+    await db.exec(`insert into themen_vorschlaege (text) values ('neu')`)
+    const { rows } = await db.query<{ text: string }>('select text from themen_vorschlaege')
+    expect(rows).toEqual([{ text: 'neu' }])
+    await db.exec('delete from themen_vorschlaege')
   })
 })

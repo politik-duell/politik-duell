@@ -8,6 +8,8 @@ import { zufallsBeispiel, type BeispielArt } from '../logic/zufall'
 import { mitKarte, vergleichsSeite, type Karte, type RundenErgebnis, type Spieler } from '../spiel'
 import { ForderungsKarte } from './ForderungsKarte'
 import { HALTUNG_EINLEITUNG, HaltungsKarte } from './HaltungsKarte'
+import { VorschlagFormular } from './ThemaVorschlag'
+import { KiBlase } from './KiText'
 import { UrsachenAuswahl } from './UrsachenAuswahl'
 
 /** Fester Satz zu einer Haltung, wenn die KI keine eigene Rückmeldung liefert. */
@@ -36,12 +38,15 @@ function forderungAntwort(themaName: string | null): string {
   )
 }
 
-/** Nach „Nichts davon passt“: sagen, dass dieser Teil des Themas noch fehlt, und zu einem neuen Problem einladen. */
+/**
+ * Nach „Nichts davon passt“: sagen, dass dieser Teil des Themas noch fehlt, und zu einem neuen Problem einladen.
+ * Gespeichert wird nichts; wer möchte, schlägt das Fehlende ausdrücklich vor (Formular darunter).
+ */
 function passtNichtAntwort(themaName: string | null): string {
   return (
     'Danke – das ist ' +
     (themaName ? `beim Thema „${themaName}“ ` : '') +
-    'noch nicht erfasst. Wir sehen es uns an und ergänzen fehlende Ursachen. Magst du ein anderes Problem nennen?'
+    'noch nicht erfasst. Magst du ein anderes Problem nennen? Oder schlag vor, was fehlt.'
   )
 }
 
@@ -81,8 +86,9 @@ function ShuffleSymbol() {
 const spielerTexte = (v: Nachricht[]) => v.filter((n) => n.von === 'spieler').map((n) => n.text)
 
 /**
- * Jede Partei wird mit Rolle und Bundesland ihrer Seite gewertet – gleich, wer das Problem nennt. Der Vergleich
- * aller Parteien nutzt Rolle bzw. Land nur, wenn beide Seiten dieselben gewählt haben (siehe vergleichsSeite).
+ * Jede Partei wird mit dem Bundesland ihrer Seite gewertet – gleich, wer das Problem nennt. Der Vergleich aller
+ * Parteien nutzt das Land nur, wenn beide Seiten dasselbe gewählt haben (siehe vergleichsSeite). Ohne Rolle: Rollen
+ * sind ausgesetzt (docs/methode.md).
  */
 function werteAus(
   analyse: AnalyseAntwort,
@@ -105,10 +111,10 @@ function werteAus(
   }
 
   const [ea, eb] = spieler.map((s) =>
-    bewertePartei(s.partei, thema.id, analyse.ursachen_ids, s.rolle, massnahmen, abdeckung, ebenenFuer(daten, s.land)),
+    bewertePartei(s.partei, thema.id, analyse.ursachen_ids, null, massnahmen, abdeckung, ebenenFuer(daten, s.land)),
   )
   const { status, punkte } = werteRunde(ea, eb)
-  const { rolle, land } = vergleichsSeite(spieler)
+  const { land } = vergleichsSeite(spieler)
   const ebenen = ebenenFuer(daten, land)
   return {
     nr, thema, status, ...(forderung ? { forderung } : {}), ...(karten.length ? { karten } : {}),
@@ -119,9 +125,9 @@ function werteAus(
     einschaetzung: null,
     ergebnisse: [ea, eb],
     punkte,
-    beste: besteParteien(parteien, thema.id, analyse.ursachen_ids, rolle, massnahmen, abdeckung, ebenen),
+    beste: besteParteien(parteien, thema.id, analyse.ursachen_ids, null, massnahmen, abdeckung, ebenen),
     nichtErfasst: parteien.filter(
-      (p) => !bewertePartei(p, thema.id, analyse.ursachen_ids, rolle, massnahmen, abdeckung, ebenen).abdeckung,
+      (p) => !bewertePartei(p, thema.id, analyse.ursachen_ids, null, massnahmen, abdeckung, ebenen).abdeckung,
     ),
   }
 }
@@ -142,9 +148,13 @@ export function Runde({
    */
   const [vorher, setVorher] = useState<Nachricht[]>([])
   const [hinweis, setHinweis] = useState<string | null>(null)
+  /** Stammt `hinweis` von der KI (Rückmeldung) oder ist es ein fester Satz des Spiels? */
+  const [hinweisVonKi, setHinweisVonKi] = useState(false)
   const [eingabe, setEingabe] = useState('')
   const [denkt, setDenkt] = useState(false)
   const [fehler, setFehler] = useState<string | null>(null)
+  /** Nach „Nichts davon passt“: Formular „Thema vorschlagen“ gleich offen zeigen. */
+  const [vorschlagen, setVorschlagen] = useState(false)
   /**
    * Bestätigung (docs/plan-zuordnung.md): das Thema, dessen Ursachen gerade zum Antippen stehen – mit den von der KI
    * vorgeschlagenen Ursachen, wenn sie sicher war.
@@ -178,7 +188,7 @@ export function Runde({
   const [beispiel, setBeispiel] = useState<BeispielArt | null>(null)
   const daten = useDaten()
 
-  const seiten = spieler.map(({ rolle, land }) => ({ rolle, land })) as [Seite, Seite]
+  const seiten = spieler.map(({ land }) => ({ land })) as [Seite, Seite]
   const laender = seiten.map((s) => s.land)
   const parteiIds: [number, number] = [spieler[0].partei.id, spieler[1].partei.id]
   const [nurProbleme, setNurProbleme] = useState(liesNurProbleme)
@@ -202,9 +212,11 @@ export function Runde({
     setEingabe('')
     setBeispiel(null)
     setHinweis(null)
+    setHinweisVonKi(false)
     setFehler(null)
     setAngebot(null)
     setHaltung(null)
+    setVorschlagen(false)
     setDenkt(true)
     let analyse: AnalyseAntwort
     try {
@@ -284,6 +296,7 @@ export function Runde({
           analyse.rueckmeldung ||
             (analyse.typ === 'wert' ? WERT_ANTWORT : analyse.pauschal ? PAUSCHAL_ANTWORT : forderungAntwort(thema)),
         )
+        setHinweisVonKi(Boolean(analyse.rueckmeldung))
       }
     } else if (analyse.typ === 'problem' && analyse.thema_id !== null && analyse.ursachen_ids.length > 0) {
       // Gewertet wird erst, was die Person bestätigt: die Ursachen der KI vorausgewählt (sie war sicher).
@@ -296,37 +309,25 @@ export function Runde({
   }
 
   /**
-   * „Nichts davon passt“: Runde ohne Wertung, das Gesagte geht zur Durchsicht (review_eingaben, 30 Tage), damit
-   * fehlende Ursachen ergänzt werden können. Danach kann ein neues Problem genannt werden.
+   * „Nichts davon passt“: Runde ohne Wertung, ohne Anfrage an den Server – gespeichert wird nichts. Danach kann ein
+   * neues Problem genannt oder das Fehlende ausdrücklich vorgeschlagen werden.
    */
-  async function passtNicht(themaId: number) {
+  function passtNicht(themaId: number) {
     if (denkt) return
     const gespraech = verlauf.length ? verlauf : vorher
     setFehler(null)
-    setDenkt(true)
-    try {
-      await analysiere(daten, {
-        verlauf: gespraech,
-        seiten,
-        parteien: [spieler[0].partei.id, spieler[1].partei.id],
-        auswahl: { thema_id: themaId, ursachen_ids: [], passt_nicht: true },
-      })
-    } catch (err) {
-      setFehler(err instanceof AnalyseFehler ? err.message : 'Das hat gerade nicht geklappt.')
-      return
-    } finally {
-      setDenkt(false)
-    }
     const name = daten.themen.find((t) => t.id === themaId)?.name
     setVerlauf([])
     setVorher(gespraech)
     setAngebot(null)
     setZusammenfassung(null)
     setHinweis(passtNichtAntwort(name ?? null))
+    setVorschlagen(true)
+    setHinweisVonKi(false)
   }
 
   /**
-   * Angetippte Ursachen werten: ohne KI, die Edge Function speichert die Runde. `symptom`: die vorgeschlagene
+   * Angetippte Ursachen werten: ohne KI und ohne Speichern (die Edge Function prüft nur die Auswahl). `symptom`: die vorgeschlagene
    * Symptomgruppe – ihre Ursachen zählen nicht zur Höchstzahl.
    */
   async function auswaehlen(themaId: number, ursachenIds: number[], symptom?: number) {
@@ -374,24 +375,42 @@ export function Runde({
       </p>
 
       <div className="verlauf" aria-live="polite">
-        {vorher.map((n, i) => (
-          <p key={`v${i}`} className={`blase blase-${n.von}`}>
-            {n.text}
-          </p>
-        ))}
-        {hinweis && <p className="blase blase-ki">{hinweis}</p>}
-        {verlauf.map((n, i) => (
-          <p key={i} className={`blase blase-${n.von}`}>
-            {n.text}
-          </p>
-        ))}
-        {denkt && <p className="blase blase-ki denkt">Ich ordne das ein …</p>}
+        {vorher.map((n, i) =>
+          n.von === 'ki' ? (
+            <KiBlase key={`v${i}`} erzeugt>
+              {n.text}
+            </KiBlase>
+          ) : (
+            <p key={`v${i}`} className={`blase blase-${n.von}`}>
+              {n.text}
+            </p>
+          ),
+        )}
+        {hinweis && <KiBlase erzeugt={hinweisVonKi}>{hinweis}</KiBlase>}
+        {verlauf.map((n, i) =>
+          n.von === 'ki' ? (
+            <KiBlase key={i} erzeugt>
+              {n.text}
+            </KiBlase>
+          ) : (
+            <p key={i} className={`blase blase-${n.von}`}>
+              {n.text}
+            </p>
+          ),
+        )}
+        {denkt && (
+          <KiBlase erzeugt={false} className="denkt">
+            Ich ordne das ein …
+          </KiBlase>
+        )}
         {fehler && (
           <p className="blase blase-fehler" role="alert">
             {fehler}
           </p>
         )}
       </div>
+
+      {vorschlagen && <VorschlagFormular offen />}
 
       {haltung !== null && (
         <HaltungsKarte
@@ -491,6 +510,7 @@ export function Runde({
           </button>
         </div>
       </form>
+      {!vorschlagen && <VorschlagFormular anlass="Dein Thema fehlt im Spiel?" />}
     </main>
   )
 }

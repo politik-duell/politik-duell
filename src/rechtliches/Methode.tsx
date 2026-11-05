@@ -114,8 +114,7 @@ export function Methode() {
         Spiel, wo die Parteien dazu stehen – mit Wortlaut und Seite im Programm, ohne Richtig oder Falsch – und welche
         Ziele dabei gegeneinander stehen. Auf Äußerungen, die einer Gruppe die Menschenwürde oder gleiche Rechte absprechen, zu Gewalt
         aufrufen oder Personen beleidigen, geht das Spiel nicht ein (Art. 1 und 3 Grundgesetz) – gleich, aus welcher
-        Richtung sie kommen. Den Wortlaut sehen dann nur wir, um die Einordnung zu prüfen, und löschen ihn nach
-        spätestens 30 Tagen. Ein pauschales Urteil über eine Gruppe ist noch
+        Richtung sie kommen. Gespeichert wird davon nichts. Ein pauschales Urteil über eine Gruppe ist noch
         kein solcher Fall: Dann fragt das Spiel, was du selbst erlebt hast. Die Wahlprogramme der Parteien werden davon
         nicht berührt – sie werden zitiert und nach denselben Kriterien bewertet wie alle anderen.
       </p>
@@ -126,6 +125,11 @@ export function Methode() {
         Ursachen ansetzen – mit wörtlichem Zitat, Seitenangabe, Stand des Programms und, wo vorhanden, einer Studie zur
         Wirkung. Jede Bewertung hat eine kurze Begründung, die in der Auflösung angezeigt wird. Ins Spiel kommt ein
         Thema für eine Partei erst, wenn alle Einträge dazu geprüft sind.
+      </p>
+      <p>
+        <strong>In der Beta</strong> zählen auch vorläufige Bewertungen, die eine KI nach dieser Methode ohne
+        Parteinamen erstellt hat und die Menschen noch nicht geprüft haben. Sie sind an jedem Ergebnis als „KI-Entwurf“
+        gekennzeichnet. Geprüft wird zuerst, was im Spiel am häufigsten vorkommt.
       </p>
       <p>
         <strong>Was als Maßnahme zählt:</strong> eine Zusage, etwas zu tun. Ein Ziel oder Leitbild ohne Handlung
@@ -177,10 +181,9 @@ export function Methode() {
         Vereinbarung beitragen kann, und 1, wenn nur die Länder es über ihr eigenes Recht regeln können.
       </p>
       <p>
-        <strong>Rolle:</strong> Wählst du eine Rolle (z. B. Mieter:in), kann eine Maßnahme für dich mehr oder weniger
-        bringen. Dann verschiebt sich ihre Wirksamkeit für dich um bis zu zwei Stufen (innerhalb von 0 bis 3); auf 3
-        nur, wenn die Wirkung belegt ist. Solche Auf- oder Abwertungen sind je Maßnahme einzeln begründet und werden
-        angezeigt.
+        <strong>Für alle gleich:</strong> Jede Maßnahme zählt für alle mit derselben Bewertung – eine Auf- oder Abwertung
+        je nach Lebenslage (etwa für Mieter:innen) gibt es vorerst nicht. Wen eine Maßnahme belegt be- oder entlastet,
+        zeigt die Auflösung unter „Was heißt das für euch?“, ohne Punkte.
       </p>
 
       <h2>4. Punkte in der Runde</h2>
@@ -210,11 +213,14 @@ export function Methode() {
           Neuvermietung und wegfallende Sozialwohnungen. Beschreibst du so eine Folge, zählen alle diese Ursachen (nicht nur
           drei); du kannst einzelne abwählen. Welche Ursachen zu einer Folge gehören, steht fest im Katalog.
         </li>
-        <li>Die höhere Summe bekommt den Spielpunkt, bei Gleichstand beide.</li>
         <li>
-          Wählst du ein Bundesland, zählt bei Ursachen, für die vor allem die Länder zuständig sind (etwa Lehrkräfte oder
+          Die höhere Summe bekommt den Spielpunkt. Liegt die niedrigere höchstens 10 % darunter, sind beide gleichauf und
+          bekommen den Punkt: So knapp sagt der Abstand nicht, welche Lösung besser ist.
+        </li>
+        <li>
+          Wählt ihr ein Bundesland für die Partie, zählt für beide Parteien bei Ursachen, für die vor allem die Länder zuständig sind (etwa Lehrkräfte oder
           Schulgebäude), das Wahlprogramm der Partei zur letzten Landtagswahl, sonst das Bundesprogramm. Je Partei und
-          Ursache zählt immer genau ein Programm. Ist eine Partei in deinem Land nicht angetreten, wird die Runde nicht
+          Ursache zählt immer genau ein Programm. Ist eine Partei in eurem Land nicht angetreten, wird die Runde nicht
           gewertet. Das Bundesland wird nicht gespeichert.
         </li>
         <li>

@@ -1,16 +1,13 @@
 import { useState, useSyncExternalStore } from 'react'
 import { useDaten } from '../data/kontext'
 import { waehlbareLaender } from '../data/quelle'
-import { ROLLEN } from '../data/rollen'
-import type { Partei, Rolle } from '../data/types'
+import type { Partei } from '../data/types'
 import { Kreuzfeld } from './Kreuz'
 import { parteiStil } from './stil'
 import type { Spieler } from '../spiel'
 
 interface Auswahl {
   partei: Partei | null
-  rolle: Rolle | null
-  land: string | null
 }
 
 /** Schmale Ansicht: beide Seiten kreuzen in einer gemeinsamen Tabelle an. */
@@ -22,56 +19,28 @@ const schmalAbo = (melden: () => void) => {
 }
 const istSchmal = () => matchMedia(SCHMAL).matches
 
-/** Rolle und Bundesland einer Seite (beide optional). */
-function Angaben({
-  titel,
-  auswahl,
-  knapp = false,
-  onChange,
-}: {
-  titel: string
-  auswahl: Auswahl
-  knapp?: boolean
-  onChange: (a: Auswahl) => void
-}) {
+/**
+ * Bundesland der Partie (optional): eines für beide Seiten, damit beide Parteien an den Programmen
+ * desselben Landes gemessen werden (docs/plan-duell-regeln.md).
+ */
+function LandWahl({ land, onChange }: { land: string | null; onChange: (l: string | null) => void }) {
   const laender = waehlbareLaender(useDaten())
+  if (!laender.length) return null
   return (
-    <>
-      <label className="rolle-wahl-label" htmlFor={`${titel}-rolle`}>
-        Deine Rolle im Alltag (optional)
+    <fieldset className="spieler-wahl stimmzettel partie-land">
+      <legend>Wo spielt ihr?</legend>
+      <label className="rolle-wahl-label" htmlFor="partie-land">
+        Bundesland (optional)
       </label>
-      <select
-        id={`${titel}-rolle`}
-        value={auswahl.rolle ?? ''}
-        onChange={(e) => onChange({ ...auswahl, rolle: (e.target.value || null) as Rolle | null })}
-      >
-        <option value="">Keine Angabe</option>
-        {ROLLEN.map((r) => (
-          <option key={r.id} value={r.id}>
-            {r.label}
+      <select id="partie-land" value={land ?? ''} onChange={(e) => onChange(e.target.value || null)}>
+        <option value="">Nur Bundesprogramme</option>
+        {laender.map((l) => (
+          <option key={l.id} value={l.id}>
+            {l.name}
           </option>
         ))}
       </select>
-      {laender.length > 0 && (
-        <>
-          <label className="rolle-wahl-label" htmlFor={`${titel}-land`}>
-            Dein Bundesland (optional)
-          </label>
-          <select
-            id={`${titel}-land`}
-            value={auswahl.land ?? ''}
-            onChange={(e) => onChange({ ...auswahl, land: e.target.value || null })}
-          >
-            <option value="">{knapp ? 'Keine Angabe' : 'Keine Angabe – nur Bundesprogramme'}</option>
-            {laender.map((l) => (
-              <option key={l.id} value={l.id}>
-                {l.name}
-              </option>
-            ))}
-          </select>
-        </>
-      )}
-    </>
+    </fieldset>
   )
 }
 
@@ -114,7 +83,6 @@ function SpielerWahl({
           )
         })}
       </div>
-      <Angaben titel={titel} auswahl={auswahl} onChange={onChange} />
     </fieldset>
   )
 }
@@ -166,9 +134,26 @@ function ParteiTabelle({
   )
 }
 
+/** Gesprächshaltung für ein Duell über Lagergrenzen hinweg (docs/plan-duell-regeln.md, Abschnitt 4). */
+function Leitfaden() {
+  return (
+    <details className="leitfaden">
+      <summary>Ihr wählt verschiedene Parteien? So klappt das Gespräch</summary>
+      <ul>
+        <li>Lass die andere Person ihr Problem in eigenen Worten nennen und frag nach, was sie selbst erlebt hat.</li>
+        <li>Nimm das Problem ernst, auch wenn du die Lösung ihrer Partei nicht teilst.</li>
+        <li>Schaut euch die Belege gemeinsam an: Zitat, Seite im Programm, Studie. Fehler gern melden.</li>
+        <li>Kein Triumph bei einem Punkt: Die Wertung ist eine Einschätzung, kein Urteil über Menschen.</li>
+        <li>Am Ende zählt das Gespräch: Was hat euch überrascht, wo seht ihr dasselbe Problem?</li>
+      </ul>
+    </details>
+  )
+}
+
 export function Setup({ onFertig }: { onFertig: (s: [Spieler, Spieler]) => void }) {
-  const [a, setA] = useState<Auswahl>({ partei: null, rolle: null, land: null })
-  const [b, setB] = useState<Auswahl>({ partei: null, rolle: null, land: null })
+  const [a, setA] = useState<Auswahl>({ partei: null })
+  const [b, setB] = useState<Auswahl>({ partei: null })
+  const [land, setLand] = useState<string | null>(null)
   const mitLaendern = waehlbareLaender(useDaten()).length > 0
   const schmal = useSyncExternalStore(schmalAbo, istSchmal)
   const bereit = a.partei && b.partei && a.partei.id !== b.partei.id
@@ -177,39 +162,26 @@ export function Setup({ onFertig }: { onFertig: (s: [Spieler, Spieler]) => void 
     <main className="seite">
       <h2>Wer tritt an?</h2>
       <p className="hinweis">
-        Jede Seite wählt eine andere Partei. Die Rolle beeinflusst manche Bewertungen.
-        {mitLaendern && ' Mit Bundesland zählt bei Landesthemen wie Schule das Landeswahlprogramm. Gespeichert wird es nicht.'}
+        Jede Seite wählt eine andere Partei.
+        {mitLaendern && ' Mit Bundesland zählt bei Landesthemen wie Schule für beide das Landeswahlprogramm. Gespeichert wird es nicht.'}
       </p>
+      <Leitfaden />
       {schmal ? (
-        <>
-          <ParteiTabelle a={a} b={b} onA={setA} onB={setB} />
-          <div className="angaben-paar">
-            {(
-              [
-                ['Spieler:in A', a, setA],
-                ['Spieler:in B', b, setB],
-              ] as const
-            ).map(([titel, auswahl, onChange]) => (
-              <fieldset key={titel} className="spieler-wahl stimmzettel">
-                <legend>{titel}</legend>
-                <Angaben titel={titel} auswahl={auswahl} knapp onChange={onChange} />
-              </fieldset>
-            ))}
-          </div>
-        </>
+        <ParteiTabelle a={a} b={b} onA={setA} onB={setB} />
       ) : (
         <div className="stimmzettel-paar">
           <SpielerWahl titel="Spieler:in A" auswahl={a} gesperrt={b.partei} onChange={setA} />
           <SpielerWahl titel="Spieler:in B" auswahl={b} gesperrt={a.partei} onChange={setB} />
         </div>
       )}
+      <LandWahl land={land} onChange={setLand} />
       <button
         className="knopf knopf-gross"
         disabled={!bereit}
         onClick={() =>
           onFertig([
-            { name: 'Spieler:in A', partei: a.partei!, rolle: a.rolle, land: a.land },
-            { name: 'Spieler:in B', partei: b.partei!, rolle: b.rolle, land: b.land },
+            { name: 'Spieler:in A', partei: a.partei!, land },
+            { name: 'Spieler:in B', partei: b.partei!, land },
           ])
         }
       >

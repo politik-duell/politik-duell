@@ -14,3 +14,8 @@ verify_jwt = false
 # Eingeladene Prüfende haben kein Konto; Zugang nur mit persönlichem Token
 # (geprüft über den SHA-256-Hash in pruef_einladungen).
 verify_jwt = false
+
+[functions.vorschlag]
+# Themenvorschläge ohne Login und ohne KI; geschützt durch Eingabeprüfung,
+# Wortfilter und Rate-Limit pro Sitzung.
+verify_jwt = false

@@ -1,6 +1,6 @@
 # Datenmodell
 
-Stand: Migrationen bis `20261009000000_haltungen.sql` (`supabase/migrations/`).
+Stand: Migrationen bis `20261103000000_keine_eingaben_speichern.sql` (`supabase/migrations/`).
 Die kuratierten Daten liegen als JSON in `daten/`; `npm run seed` erzeugt daraus die `seed.sql`.
 
 ## ER-Diagramm
@@ -11,11 +11,9 @@ erDiagram
     instrumente |o--o{ massnahmen : "instrument_id"
     themen ||--o{ instrumente : "gehört zu"
     instrumente |o--o| instrumente : "entspricht (Bund ↔ Land)"
-    instrumente |o--o{ runden : "instrument_id"
     haltungen ||--o{ haltung_positionen : "hat"
     parteien ||--o{ haltung_positionen : "vertritt"
     haltungen ||--o{ haltung_zielkonflikte : "hat"
-    haltungen |o--o{ runden : "haltung_id"
     themen ||--o{ massnahmen : "gehört zu"
     themen ||--o{ ursachen : "hat"
     themen ||--o{ abdeckung : "ist erfasst für"
@@ -24,8 +22,6 @@ erDiagram
     laender ||--o{ landesprogramme : "gilt in"
     laender |o--o{ massnahmen : "land (null = Bund)"
     laender |o--o{ abdeckung : "land (null = Bund)"
-    themen |o--o{ runden : "thema_id"
-    parteien |o--o{ runden : "partei_a / partei_b"
     themen ||--o{ pruef_einheiten : "gehört zu"
     pruef_einladungen ||--o{ pruef_bewertungen : "gibt ab"
 
@@ -107,21 +103,6 @@ erDiagram
         date stand
         text kein_programm
     }
-    runden {
-        bigint id PK
-        timestamptz created_at
-        smallint thema_id FK
-        integer instrument_id FK "nur bei status forderung"
-        smallint haltung_id FK "nur bei status wert"
-        text problem_text
-        smallint partei_a FK
-        smallint partei_b FK
-        smallint punkte_a
-        smallint punkte_b
-        text status "gewertet | ungeprueft | unvollstaendig | wert | forderung | grenze"
-        boolean freigegeben
-        boolean testphase
-    }
     haltungen {
         smallint id PK "eigener Nummernkreis"
         text frage "neutrale Ja/Nein-Frage"
@@ -147,18 +128,11 @@ erDiagram
         text text
         text quelle_url
     }
-    review_warteschlange {
+    themen_vorschlaege {
         bigint id PK
-        text problem_text
-        text einschaetzung
+        timestamptz created_at
+        text text "Wortlaut des Vorschlags, nur Admins, max. 180 Tage"
         boolean erledigt
-    }
-    review_eingaben {
-        bigint id PK
-        text grund "grenze | wert | forderung | ungeprueft | unvollstaendig"
-        text_arr eingaben "Wortlaut, nur Admins, max. 30 Tage"
-        smallint thema_id FK
-        text zusammenfassung
     }
     rate_limit {
         uuid sitzung PK
@@ -199,18 +173,19 @@ erDiagram
 `massnahmen.ursachen_ids` ist ein Array und daher keine echte Fremdschlüsselbeziehung.
 `instrumente` enthält bewusst keine Wirksamkeit und Umsetzbarkeit: Die Forderungskarte zeigt Forschungsstand und Begründung, aber keine Punkte; gewertet wird weiter über die Maßnahmen. Ein Instrument gilt für eine Ebene; `entspricht` verbindet das Bundes- mit dem Landes-Instrument desselben Lösungswegs.
 `pruef_bewertungen.massnahme_id` verweist auf IDs aus `daten/`, nicht zwingend auf `massnahmen`.
-`haltungen.verwandte_themen` ist ein Array und daher keine echte Fremdschlüsselbeziehung. Haltungen haben keine Punkte; anders als bei Maßnahmen steht das Zitat in der Datenbank, weil bei Haltungen der Wortlaut der eigentliche Beleg ist. Die View `haltungen_vollstaendig (haltung_id, geprueft)` nennt die Haltungen, zu denen jede Partei eine Position im Bundesprogramm hat („Alle sieben oder keine“); sie läuft mit den Rechten der Abfragenden, öffentlich zählen also nur geprüfte Positionen. Die Edge Function sieht mit der Service-Rolle auch Entwürfe und nimmt ohne Testphase nur Zeilen mit `geprueft`. Die App nutzt dieselbe Regel (`supabase/functions/_shared/haltung.ts`).
-Die Views `luecken` und `kennzahlen_woche` zählen Runden aus `runden` für den Reiter „Lücken“ der Admin-Ansicht: `luecken (art, thema_id, stichwort, anzahl_30_tage, anzahl, anzahl_testphase, zuletzt)` je Thema bzw. Stichwort, wo das Spiel keine Wertung oder Karte liefern konnte (`ursache_fehlt`: Thema erkannt, aber in der Bestätigung „Nichts davon passt“ gewählt – gespeichert als `ungeprueft` mit Thema); `kennzahlen_woche (woche, testphase, runden, gewertet, …)` je Woche und Status. Nur Zahlen, kein Wortlaut, deshalb ohne 30-Tage-Frist; nur Admins (`security_invoker` und `ist_admin()`), anon gesperrt.
+`haltungen.verwandte_themen` ist ein Array und daher keine echte Fremdschlüsselbeziehung. Haltungen haben keine Punkte; anders als bei Maßnahmen steht das Zitat in der Datenbank, weil bei Haltungen der Wortlaut der eigentliche Beleg ist. Die View `haltungen_vollstaendig (haltung_id, geprueft)` nennt die Haltungen, zu denen jede Partei eine Position im Bundesprogramm hat („Alle sieben oder keine“); sie läuft mit den Rechten der Abfragenden, öffentlich zählen also nur geprüfte Positionen. Die Edge Function sieht mit der Service-Rolle auch Entwürfe und nimmt nur Zeilen mit `geprueft`, solange Entwürfe nicht zählen (ohne Zugang zur Testphase und ohne `einstellungen.ki_entwuerfe_oeffentlich`). Die App nutzt dieselbe Regel (`supabase/functions/_shared/haltung.ts`).
+Eingaben aus dem Spiel werden nicht gespeichert (Migration `20261103000000_keine_eingaben_speichern.sql`): Die früheren Tabellen `runden`, `review_warteschlange`, `review_eingaben` und die Views `luecken`, `kennzahlen_woche` sind samt Inhalt entfernt. Gespeichert wird nur, was jemand ausdrücklich über „Thema vorschlagen“ abschickt: `themen_vorschlaege` – nur der Text und der Zeitpunkt, ohne Sitzung, Parteien oder Verbindung zu einem Spiel; geschrieben ohne KI von der Edge Function `vorschlag` (Wortfilter: Kontaktdaten, Namen, Beleidigungen und Hetze werden abgelehnt), gelesen nur von Admins (Reiter „Vorschläge“, `npm run vorschlaege`), Admins ändern nur `erledigt`; gelöscht nach 180 Tagen (Trigger bei jedem neuen Vorschlag, mit pg_cron zusätzlich täglich).
 
 ## Gruppen
 
 | Gruppe | Tabellen | Zugriff |
 |---|---|---|
 | Stammdaten | `parteien`, `themen`, `laender`, `landesprogramme` | lesbar |
-| Kern | `ursachen`, `massnahmen`, `abdeckung`, `instrumente`, `haltungen`, `haltung_positionen`, `haltung_zielkonflikte` | lesbar; ohne KI-Entwürfe, außer in der Testphase |
-| Spieldaten | `runden`, `review_warteschlange`, `review_eingaben`, `rate_limit` | schreibbar nur über Edge Function |
-| Auswertung | Views `luecken`, `kennzahlen_woche` | nur Admins |
+| Kern | `ursachen`, `massnahmen`, `abdeckung`, `instrumente`, `haltungen`, `haltung_positionen`, `haltung_zielkonflikte` | lesbar; KI-Entwürfe nur, wenn `ki_entwuerfe_oeffentlich()` an ist, sonst über `testphase_daten` mit Zugang |
+| Spieldaten | `rate_limit` | nur Edge Functions |
+| Vorschläge | `themen_vorschlaege` | schreiben nur Edge Function `vorschlag`; lesen, abhaken, löschen nur Admins |
 | Betrieb | `admins`, `pruef_*`, `testphase_zugaenge` | anon gesperrt; Admins und Edge Functions |
+| Einstellungen | `einstellungen` (eine Zeile: `ki_entwuerfe_oeffentlich`, Alpha/Beta) | lesbar; ändern nur Admins |
 
 ## Bund oder Land?
 
@@ -230,5 +205,5 @@ order by land nulls first, partei_id;
 
 1. Die KI ordnet das Problem Thema und Ursachen zu.
 2. `abdeckung` prüfen. Fehlt ein Eintrag für eine der Parteien, ist der Status `unvollstaendig` und es gibt keine Punkte.
-3. Je Ursache zählen die verschiedenen Lösungswege (je `instrument_id` die beste Maßnahme, ohne Instrument jede Maßnahme für sich; Punkte `wirksamkeit × umsetzbarkeit` mit Rollen-Modifikator), absteigend gewichtet mit 1, ½, ¼ …, höchstens 9, auf eine Nachkommastelle (`runden.punkte_a/b` sind `numeric(5,1)`). Bei gewähltem Land zählen die Landesprogramme, sonst der Bund.
-4. Die Summe über die Ursachen ergibt die Rundenpunkte. Wer mehr hat, bekommt 1 Punkt, bei Gleichstand beide 1 Punkt. Das Ergebnis steht in `runden`.
+3. Je Ursache zählen die verschiedenen Lösungswege (je `instrument_id` die beste Maßnahme, ohne Instrument jede Maßnahme für sich; Punkte `wirksamkeit × umsetzbarkeit`; `rollen_modifikator` zählt vorerst nicht), absteigend gewichtet mit 1, ½, ¼ …, höchstens 9, auf eine Nachkommastelle. Bei gewähltem Land zählen die Landesprogramme, sonst der Bund.
+4. Die Summe über die Ursachen ergibt die Rundenpunkte. Wer mehr hat, bekommt 1 Punkt, bei Gleichstand beide 1 Punkt. Das Ergebnis wird nicht gespeichert.

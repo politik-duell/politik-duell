@@ -1,6 +1,8 @@
-// Edge Function `analyse`: ordnet eine Äußerung per KI (Mistral) ein und
-// speichert abgeschlossene Runden anonym. Die KI vergibt keine Punkte und
-// nennt keine Links – Punkte kommen deterministisch aus der Datenbank.
+// Edge Function `analyse`: ordnet eine Äußerung per KI (Mistral) ein. Die KI
+// vergibt keine Punkte und nennt keine Links – Punkte kommen deterministisch aus
+// der Datenbank (gerechnet in der App). Gespeichert wird nichts von der Eingabe:
+// weder Wortlaut noch Kurzfassung, Thema oder Ergebnis (Migration 20261103000000).
+// Themen vorschlagen geht ausdrücklich über die Edge Function `vorschlag`.
 //
 // Secrets (Supabase → Edge Functions → Secrets):
 //   MISTRAL_API_KEY            – Pflicht
@@ -11,7 +13,6 @@
 // Automatisch vorhanden: SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY
 
 import { createClient } from 'npm:@supabase/supabase-js@2'
-import { bewertePartei, werteRunde } from '../_shared/bewertung.ts'
 import {
   antwortAusAuswahl,
   bereinigeInstrument,
@@ -24,17 +25,13 @@ import {
   ordneEin,
   pruefeAnfrage,
 } from '../_shared/ki.ts'
-import { pruefeText } from '../_shared/moderation.ts'
 import { tokenHash } from '../_shared/pruefung.ts'
 import type {
-  AbdeckungEintrag,
   AnalyseAntwort,
   InstrumentEintrag,
-  Landesprogramm,
   Massnahme,
   Nachricht,
   Partei,
-  Seite,
   Thema,
   Ursache,
 } from '../_shared/typen.ts'
@@ -112,9 +109,11 @@ Deno.serve(async (req) => {
     const ursachen = ursachenRes.data as Ursache[]
     const parteien = parteienRes.data as Partei[]
 
-    // Zugang zur Testphase: Dann zählen auch KI-Entwürfe (Maßnahmen, Instrumente, Symptomgruppen).
+    // KI-Entwürfe (Maßnahmen, Instrumente, Symptomgruppen) zählen mit Zugang zur Testphase – oder für alle,
+    // solange der Schalter `einstellungen.ki_entwuerfe_oeffentlich` an ist (Alpha/Beta, CLAUDE.md Grundprinzip 2).
     const testphase = anfrage.zugang ? await zugangGueltig(anfrage.zugang) : false
-    const themen = mitSymptomen(themenRes.data as Thema[], testphase)
+    const entwuerfe = testphase || (await entwuerfeOeffentlich())
+    const themen = mitSymptomen(themenRes.data as Thema[], entwuerfe)
 
     // Angetippte Ursachen: ohne KI werten. Sonst ordnet die KI die Schilderung ein – bei einer Haltung
     // auch einer der vollständig erfassten Wertfragen (Haltungskarte). Bei einem Problem in zwei Schritten
@@ -123,25 +122,15 @@ Deno.serve(async (req) => {
     if (anfrage.auswahl) {
       antwort = antwortAusAuswahl(anfrage.auswahl, themen, ursachen)
     } else {
-      const haltungen = await vollstaendigeHaltungen(testphase)
-      antwort = (await ordneEin(frageMistral, anfrage.verlauf, anfrage.seiten.map((s) => s.rolle), { themen, ursachen, parteien, haltungen })).antwort
+      const haltungen = await vollstaendigeHaltungen(entwuerfe)
+      antwort = (await ordneEin(frageMistral, anfrage.verlauf, { themen, ursachen, parteien, haltungen })).antwort
     }
 
     // Forderung mit erkanntem Thema: ein zweiter, kurzer Aufruf nur mit den Instrumenten dieses Themas.
     // Er zählt nicht extra für das Rate-Limit; scheitert er, bleibt es bei der Forderung ohne Karte.
     if (antwort.typ === 'forderung' && !antwort.pauschal && antwort.thema_id !== null) {
       const thema = themen.find((t) => t.id === antwort.thema_id)
-      if (thema) antwort = mitInstrument(antwort, await erkenneInstrument(thema, anfrage.verlauf, anfrage.seiten.map((s) => s.land), testphase))
-    }
-
-    // Abgeschlossene Runde anonym speichern (nur die neutrale Zusammenfassung). Mit Nachfrage ist sie nicht
-    // abgeschlossen – und ebenso nicht, wenn die KI Ursachen vorschlägt: Gewertet wird erst, was die Person in der
-    // App bestätigt (docs/plan-zuordnung.md); diese Runde speichert dann die Anfrage mit `auswahl`.
-    const vorschlag = !anfrage.auswahl && antwort.typ === 'problem' && antwort.ursachen_ids.length > 0
-    if (!antwort.nachfrage && !vorschlag) {
-      // Der Originaltext wird geprüft; gespeichert wird er nur bei Runden ohne Wertung (review_eingaben, 30 Tage).
-      const original = anfrage.verlauf.filter((n) => n.von === 'spieler').map((n) => n.text)
-      await speichereRunde(antwort, anfrage.parteien, anfrage.seiten, testphase, original, parteien, ursachen)
+      if (thema) antwort = mitInstrument(antwort, await erkenneInstrument(thema, anfrage.verlauf, anfrage.seiten.map((s) => s.land), entwuerfe))
     }
 
     return json(antwort)
@@ -154,18 +143,18 @@ Deno.serve(async (req) => {
 
 /**
  * Zweiter Aufruf bei einer Forderung: Entspricht sie eindeutig einem Instrument des Themas? Der Service-Key
- * umgeht Row Level Security: Entwürfe deshalb ausdrücklich nur in der Testphase.
+ * umgeht Row Level Security: Entwürfe deshalb ausdrücklich nur, wenn sie zählen.
  */
 async function erkenneInstrument(
   thema: Thema,
   verlauf: Nachricht[],
   laender: (string | null)[],
-  testphase: boolean,
+  entwuerfe: boolean,
 ): Promise<number | null> {
   try {
     let iAbfrage = db.from('instrumente').select('id, thema_id, name, ebene').eq('thema_id', thema.id)
     let mAbfrage = db.from('massnahmen').select('instrument_id, land').eq('thema_id', thema.id).not('instrument_id', 'is', null)
-    if (!testphase) {
+    if (!entwuerfe) {
       iAbfrage = iAbfrage.eq('ki_entwurf', false)
       mAbfrage = mAbfrage.eq('ki_entwurf', false)
     }
@@ -189,13 +178,13 @@ async function erkenneInstrument(
 
 /**
  * Haltungen mit vollständiger Karte (alle Parteien, View `haltungen_vollstaendig`) – nur sie kommen in den
- * Prompt. Der Service-Key sieht auch Entwürfe; ohne Zugang zur Testphase zählen deshalb nur geprüfte Karten.
+ * Prompt. Der Service-Key sieht auch Entwürfe; zählen deshalb nur geprüfte Karten, solange Entwürfe nicht zählen.
  * Fehlen die Tabellen (Migration noch nicht ausgeführt) oder klappt die Abfrage nicht: keine Haltungen.
  */
-async function vollstaendigeHaltungen(testphase: boolean): Promise<HaltungKurz[]> {
+async function vollstaendigeHaltungen(entwuerfe: boolean): Promise<HaltungKurz[]> {
   try {
     let vAbfrage = db.from('haltungen_vollstaendig').select('haltung_id')
-    if (!testphase) vAbfrage = vAbfrage.eq('geprueft', true)
+    if (!entwuerfe) vAbfrage = vAbfrage.eq('geprueft', true)
     const [vRes, hRes] = await Promise.all([vAbfrage, db.from('haltungen').select('id, frage').order('id')])
     if (vRes.error) throw vRes.error
     if (hRes.error) throw hRes.error
@@ -207,9 +196,16 @@ async function vollstaendigeHaltungen(testphase: boolean): Promise<HaltungKurz[]
   }
 }
 
-/** Symptomgruppen, die zählen: ohne Testphase nur die von Menschen geprüften (docs/plan-symptome.md). */
-function mitSymptomen(themen: Thema[], testphase: boolean): Thema[] {
-  return themen.map((t) => ({ ...t, symptome: (t.symptome ?? []).filter((s) => testphase || !s.ki_entwurf) }))
+/** Symptomgruppen, die zählen: ohne Entwürfe nur die von Menschen geprüften (docs/plan-symptome.md). */
+function mitSymptomen(themen: Thema[], entwuerfe: boolean): Thema[] {
+  return themen.map((t) => ({ ...t, symptome: (t.symptome ?? []).filter((s) => entwuerfe || !s.ki_entwurf) }))
+}
+
+/** Zählen KI-Entwürfe für alle (Schalter aus Migration 20261025000000)? Ohne die Tabelle: nein. */
+async function entwuerfeOeffentlich(): Promise<boolean> {
+  const { data, error } = await db.from('einstellungen').select('ki_entwuerfe_oeffentlich').maybeSingle()
+  if (error) return false
+  return data?.ki_entwuerfe_oeffentlich === true
 }
 
 /** Gültiger, nicht gesperrter Zugang zur Testphase? Dann zählen auch KI-Entwürfe. */
@@ -222,139 +218,4 @@ async function zugangGueltig(token: string): Promise<boolean> {
     .maybeSingle()
   if (error) throw error
   return data !== null
-}
-
-async function speichereRunde(
-  antwort: AnalyseAntwort,
-  [parteiA, parteiB]: [number, number],
-  seiten: [Seite, Seite],
-  testphase: boolean,
-  original: string[],
-  parteien: Partei[],
-  ursachen: Ursache[],
-) {
-  // Grenze (Abwertung, Gewalt, Beleidigung): in `runden` nur, dass es eine solche Runde gab – ohne
-  // Zusammenfassung, Stichwort oder Filtergrund. Den Wortlaut sieht nur die Admin-Ansicht (30 Tage).
-  if (antwort.typ === 'grenze') {
-    await Promise.all([
-      db.from('runden').insert({ problem_text: '', status: 'grenze', partei_a: parteiA, partei_b: parteiB, testphase }),
-      merkeOhneWertung('grenze', original, null, null),
-    ])
-    return
-  }
-
-  const stichwort = antwort.stichwort ?? null
-  const basis = {
-    problem_text: antwort.zusammenfassung,
-    stichwort,
-    // Automatischer Filter: Treffer landen in der Admin-Ansicht unter „Vom Filter gestoppt“.
-    filter_grund: pruefeText(stichwort, antwort.zusammenfassung, ...original),
-    partei_a: parteiA,
-    partei_b: parteiB,
-    testphase,
-  }
-
-  // Haltung: mit der erkannten Wertfrage, falls zugeordnet (nur die ID).
-  if (antwort.typ === 'wert') {
-    await Promise.all([
-      db.from('runden').insert({ ...basis, status: 'wert', ...(antwort.haltung_id ? { haltung_id: antwort.haltung_id } : {}) }),
-      merkeOhneWertung('wert', original, null, antwort.zusammenfassung),
-    ])
-    return
-  }
-  // Forderung ohne Alltagsproblem nach zwei Nachfragen: ohne Wertung, mit dem erkannten Thema.
-  if (antwort.typ === 'forderung') {
-    await Promise.all([
-      db.from('runden').insert({ ...basis, status: 'forderung', thema_id: antwort.thema_id, ...(antwort.instrument_id ? { instrument_id: antwort.instrument_id } : {}) }),
-      merkeOhneWertung('forderung', original, antwort.thema_id, antwort.zusammenfassung),
-    ])
-    return
-  }
-
-  // „Nichts davon passt“: Thema bekannt, Ursache nicht erfasst – ungeprüft mit Thema (Lücken: „ursache_fehlt“).
-  if (antwort.passt_nicht && antwort.thema_id !== null) {
-    await Promise.all([
-      db.from('runden').insert({ ...basis, status: 'ungeprueft', thema_id: antwort.thema_id }),
-      merkeOhneWertung('ungeprueft', original, antwort.thema_id, antwort.zusammenfassung),
-    ])
-    return
-  }
-
-  if (antwort.thema_id === null) {
-    await Promise.all([
-      db.from('runden').insert({ ...basis, status: 'ungeprueft' }),
-      db.from('review_warteschlange').insert({
-        problem_text: antwort.zusammenfassung,
-        einschaetzung: antwort.einschaetzung ?? null,
-      }),
-      merkeOhneWertung('ungeprueft', original, null, antwort.zusammenfassung),
-    ])
-    return
-  }
-
-  // Der Service-Key umgeht Row Level Security: KI-Entwürfe deshalb ausdrücklich nur in der Testphase.
-  let mAbfrage = db.from('massnahmen').select('*').eq('thema_id', antwort.thema_id).in('partei_id', [parteiA, parteiB])
-  let aAbfrage = db.from('abdeckung').select('*').eq('thema_id', antwort.thema_id).in('partei_id', [parteiA, parteiB])
-  if (!testphase) {
-    mAbfrage = mAbfrage.eq('ki_entwurf', false)
-    aAbfrage = aAbfrage.eq('ki_entwurf', false)
-  }
-  const laender = [...new Set(seiten.map((s) => s.land).filter((l): l is string => l !== null))]
-  const [mRes, aRes, lpRes] = await Promise.all([
-    mAbfrage,
-    aAbfrage,
-    laender.length
-      ? db.from('landesprogramme').select('*').in('land', laender).in('partei_id', [parteiA, parteiB])
-      : Promise.resolve({ data: [], error: null }),
-  ])
-  // Speichern ist Nebensache: Ein Fehler hier soll die Antwort an die App nicht verhindern.
-  const fehler = mRes.error ?? aRes.error ?? lpRes.error
-  if (fehler) {
-    console.error('speichereRunde:', fehler.message)
-    return
-  }
-  const massnahmen = mRes.data as Massnahme[]
-  const abdeckung = aRes.data as AbdeckungEintrag[]
-  const a = parteien.find((p) => p.id === parteiA)
-  const b = parteien.find((p) => p.id === parteiB)
-  if (!a || !b) return
-
-  // Jede Partei mit Rolle und Bundesland ihrer Seite. Das Bundesland zählt nur für die Wertung; gespeichert wird es nicht.
-  const landesprogramme = lpRes.data as Landesprogramm[]
-  const [ea, eb] = ([a, b] as const).map((p, i) =>
-    bewertePartei(p, antwort.thema_id!, antwort.ursachen_ids, seiten[i].rolle, massnahmen, abdeckung, {
-      land: seiten[i].land,
-      ursachen,
-      landesprogramme,
-    }),
-  )
-  const { status } = werteRunde(ea, eb)
-  // Gespeichert werden die Rundenpunkte (Summe über die Ursachen), nicht der Spielpunkt.
-  // Ist das Thema für eine Partei noch nicht erfasst, gibt es keine Punkte.
-  const punkte = status === 'gewertet' ? { punkte_a: ea.punkte, punkte_b: eb.punkte } : {}
-  await Promise.all([
-    db.from('runden').insert({ ...basis, thema_id: antwort.thema_id, status, ...punkte }),
-    status === 'gewertet' ? null : merkeOhneWertung(status, original, antwort.thema_id, antwort.zusammenfassung),
-  ])
-}
-
-/**
- * Runde ohne Wertung: die Eingaben im Wortlaut zur Durchsicht in der Admin-Ansicht (`review_eingaben`, nur Admins,
- * nach 30 Tagen gelöscht). Ein Fehler hier soll die Antwort an die App nicht verhindern.
- */
-async function merkeOhneWertung(
-  grund: 'grenze' | 'wert' | 'forderung' | 'ungeprueft' | 'unvollstaendig',
-  original: string[],
-  themaId: number | null,
-  zusammenfassung: string | null,
-) {
-  const eingaben = original.map((t) => t.trim().slice(0, 2000)).filter(Boolean).slice(-3)
-  if (!eingaben.length) return
-  const { error } = await db.from('review_eingaben').insert({
-    grund,
-    eingaben,
-    thema_id: grund === 'grenze' ? null : themaId,
-    zusammenfassung: grund === 'grenze' ? null : zusammenfassung?.slice(0, 200) || null,
-  })
-  if (error) console.error('merkeOhneWertung:', error.message)
 }

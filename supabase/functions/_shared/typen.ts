@@ -195,6 +195,10 @@ export interface Zielkonflikt {
 export interface RollenModifikator {
   wert: number
   begruendung: string
+  /** Beleg, dass der Weg für diese Rolle deutlich anders wirkt (Pflicht bei /rollen-erfassen). */
+  quelle_url?: string
+  /** Von einer KI vorgeschlagen (/rollen-erfassen), noch nicht von Menschen geprüft. */
+  ki_entwurf?: boolean
 }
 
 export interface Massnahme {
@@ -327,11 +331,10 @@ export interface AnalyseAntwort {
 }
 
 /**
- * Rolle und Bundesland einer Seite (A oder B). Jede Partei wird mit den Angaben ihrer Seite gewertet –
- * gleich, wer das Problem nennt.
+ * Bundesland einer Seite (A oder B). Jede Partei wird mit den Angaben ihrer Seite gewertet – gleich, wer das Problem
+ * nennt. Eine Rolle gibt es vorerst nicht (Rollen ausgesetzt, docs/methode.md).
  */
 export interface Seite {
-  rolle: Rolle | null
   /** Bundesland (Kürzel) – nur zur Wertung, wird nicht gespeichert. */
   land: string | null
 }
@@ -341,7 +344,7 @@ export interface AnalyseAnfrage {
   /** Zufällige Sitzungs-ID (nur für das Rate-Limit, keine Zuordnung zu Personen). */
   sitzung: string
   verlauf: Nachricht[]
-  /** Rolle und Bundesland der Seiten A und B (in der Reihenfolge von `parteien`). */
+  /** Bundesland der Seiten A und B (in der Reihenfolge von `parteien`). */
   seiten: [Seite, Seite]
   /** Zugang zur geschlossenen Testphase (Token aus dem Einladungslink) – dann zählen auch KI-Entwürfe. */
   zugang?: string | null
@@ -370,8 +373,8 @@ export interface UrsachenAuswahl {
   /** Leer genau dann, wenn `passt_nicht`. */
   ursachen_ids: number[]
   /**
-   * „Nichts davon passt“ in der Bestätigung (docs/plan-zuordnung.md): Runde ohne Wertung, der Wortlaut geht in
-   * `review_eingaben` – so zeigt sich, welche Ursachen im Katalog fehlen.
+   * „Nichts davon passt“ in der Bestätigung (docs/plan-zuordnung.md): Runde ohne Wertung. Die App schickt das
+   * nicht mehr an die Edge Function (gespeichert wird nichts); die Funktion versteht es weiterhin.
    */
   passt_nicht?: boolean
   /**

@@ -3,7 +3,6 @@ import { bereinigeStichwort, pruefeText } from './moderation.ts'
 import {
   auswahlErlaubt,
   MAX_AUSWAHL,
-  ROLLEN_IDS,
   type AnalyseAnfrage,
   type AnalyseAntwort,
   type HaltungEintrag,
@@ -11,7 +10,6 @@ import {
   type Massnahme,
   type Nachricht,
   type Partei,
-  type Rolle,
   type Seite,
   type Symptomgruppe,
   type Thema,
@@ -31,17 +29,6 @@ export const NACHFRAGE_BEISPIEL = 'Magst du ein Beispiel nennen, wann dich das z
 export const NACHFRAGE_FORDERUNG = 'Was soll sich dadurch in deinem Alltag ändern?'
 /** Nachfrage, wenn das Thema klar ist, aber keine Ursache erkennbar. */
 export const NACHFRAGE_URSACHE = 'Was genau macht dir dabei Sorgen? Beschreib kurz, woran es in deinem Alltag hakt.'
-
-const ROLLEN_TEXT: Record<Rolle, string> = {
-  mieter: 'Mieter:in',
-  eigentuemer: 'Eigentümer:in',
-  angestellt: 'Angestellt',
-  selbststaendig: 'Selbstständig',
-  rentner: 'Rentner:in',
-  arbeitslos: 'Arbeitslos',
-  studierend: 'Studierend',
-  vermoegend: 'Vermögend',
-}
 
 /** Was die KI von einer Haltung sieht: nur Nummer und Frage (keine Positionen, keine Parteien). */
 export type HaltungKurz = Pick<HaltungEintrag, 'id' | 'frage'>
@@ -460,11 +447,10 @@ export interface Einordnungskatalog {
 export async function ordneEin(
   frage: FrageKi,
   verlauf: Nachricht[],
-  rolle: Rolle | null | readonly (Rolle | null)[],
   { themen, ursachen, parteien = [], haltungen = [] }: Einordnungskatalog,
   zufall: () => number = Math.random,
 ): Promise<{ antwort: AnalyseAntwort; unsicher: string[] }> {
-  const r1 = alsObjekt(await frage(themenPrompt(themen, haltungen), nutzerNachrichten(verlauf, rolle)))
+  const r1 = alsObjekt(await frage(themenPrompt(themen, haltungen), nutzerNachrichten(verlauf)))
   let roh: Record<string, unknown> = { ...r1, ursachen_ids: [] }
   const unsicher: string[] = []
   let gruppe: Symptomgruppe | undefined
@@ -530,18 +516,9 @@ function bereinigeAbweichung(satz: string, parteien: Pick<Partei, 'name' | 'kurz
   return text
 }
 
-/** Rolle für den Hinweis an die KI; bei zwei Seiten mit verschiedenen Rollen beide (wer spricht, ist offen). */
-function rollenHinweis(rolle: Rolle | null | readonly (Rolle | null)[]): string {
-  const text = (r: Rolle | null) => (r ? ROLLEN_TEXT[r] : 'keine Angabe')
-  const rollen = [...new Set(Array.isArray(rolle) ? rolle : [rolle])] as (Rolle | null)[]
-  if (rollen.length === 1) return `Rolle der Person: ${text(rollen[0])}.`
-  return `Die beiden Spielenden haben verschiedene Rollen angegeben (${rollen.map(text).join('; ')}); wer gerade schreibt, ist offen.`
-}
-
-export function nutzerNachrichten(verlauf: Nachricht[], rolle: Rolle | null | readonly (Rolle | null)[]) {
+export function nutzerNachrichten(verlauf: Nachricht[]) {
   const nachfragen = verlauf.filter((n) => n.von === 'ki').length
-  const hinweis =
-    rollenHinweis(rolle) +
+  const hinweis = (
     (nachfragen === 1
       ? ' Es wurde schon einmal nachgefragt: Falls du noch einmal nachfragst, frag anders als zuvor,' +
         ' z. B. nach einem konkreten Beispiel aus dem Alltag, und gib die Forderung nicht noch einmal wieder.'
@@ -553,8 +530,9 @@ export function nutzerNachrichten(verlauf: Nachricht[], rolle: Rolle | null | re
         ' konkrete Alltagsprobleme gewertet werden, und zu einem solchen Problem einladen.' +
         ' Wähle nur Ursachen, die sich aus dem Gesagten erkennen lassen.'
       : '')
+  ).trim()
   return [
-    { role: 'system' as const, content: hinweis },
+    ...(hinweis ? [{ role: 'system' as const, content: hinweis }] : []),
     ...verlauf.map((n) => ({
       role: n.von === 'spieler' ? ('user' as const) : ('assistant' as const),
       content: n.text,
@@ -603,19 +581,19 @@ export function pruefeAnfrage(roh: unknown): AnalyseAnfrage {
 }
 
 /**
- * Rolle und Bundesland je Seite. Ältere App-Fassungen (zwischengespeicherte PWA) schicken noch eine `rolle` und ein
- * `land` für die ganze Runde – dann gelten sie für beide Seiten.
+ * Bundesland je Seite. Ältere App-Fassungen (zwischengespeicherte PWA) schicken noch ein `land` für die ganze Runde –
+ * dann gilt es für beide Seiten – und eine `rolle`; die wird nicht mehr gewertet und verworfen (Rollen ausgesetzt,
+ * docs/methode.md).
  */
-function pruefeSeiten(a: Partial<AnalyseAnfrage> & { rolle?: unknown; land?: unknown }): [Seite, Seite] {
-  const roh: unknown[] = a.seiten === undefined ? [{ rolle: a.rolle, land: a.land }, { rolle: a.rolle, land: a.land }] : a.seiten
+function pruefeSeiten(a: Partial<AnalyseAnfrage> & { land?: unknown }): [Seite, Seite] {
+  const roh: unknown[] = a.seiten === undefined ? [{ land: a.land }, { land: a.land }] : a.seiten
   if (!Array.isArray(roh) || roh.length !== 2) throw new EingabeFehler('Ungültige Seiten.')
   const seiten = roh.map((s) => {
-    const { rolle, land } = (s ?? {}) as { rolle?: unknown; land?: unknown }
-    if (rolle !== null && rolle !== undefined && !ROLLEN_IDS.includes(rolle as Rolle)) throw new EingabeFehler('Ungültige Rolle.')
+    const { land } = (s ?? {}) as { land?: unknown }
     // Bundesland nur als Kürzel; es zählt nur für die Wertung und wird nicht gespeichert.
     if (land !== null && land !== undefined && (typeof land !== 'string' || !/^[A-Z]{2}$/.test(land)))
       throw new EingabeFehler('Ungültiges Bundesland.')
-    return { rolle: (rolle ?? null) as Rolle | null, land: (land ?? null) as string | null }
+    return { land: (land ?? null) as string | null }
   })
   return [seiten[0], seiten[1]]
 }

@@ -551,26 +551,6 @@ textarea:focus-visible {
   outline: 3px solid var(--fokus);
   outline-offset: -3px;
 }
-.angaben-paar {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin-top: 16px;
-}
-.angaben-paar .spieler-wahl legend {
-  padding: 10px 12px 8px;
-  font-size: 1.1rem;
-}
-.angaben-paar .rolle-wahl-label {
-  clear: both;
-  margin: 10px 12px 6px;
-  font-size: 0.85rem;
-}
-.angaben-paar .spieler-wahl select {
-  width: calc(100% - 24px);
-  margin: 0 12px;
-  font-size: 0.9rem;
-}
 .rolle-wahl-label {
   display: block;
   margin: 14px 16px 6px;
@@ -580,6 +560,21 @@ textarea:focus-visible {
 .spieler-wahl select {
   width: calc(100% - 32px);
   margin: 0 16px;
+}
+.leitfaden {
+  margin: 0 0 12px;
+  font-size: 0.92rem;
+}
+.leitfaden summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+.leitfaden ul {
+  margin: 6px 0 0;
+  padding-left: 1.2em;
+}
+.partie-land {
+  margin-top: 16px;
 }
 select,
 textarea {
@@ -730,10 +725,10 @@ textarea {
   line-height: 1.2;
   letter-spacing: -0.01em;
 }
-.problem-zitat::before {
+.problem-zitat-text::before {
   content: '„';
 }
-.problem-zitat::after {
+.problem-zitat-text::after {
   content: '“';
 }
 .trommelwirbel {
@@ -1080,9 +1075,43 @@ textarea {
   font-size: 0.88rem;
   color: var(--text-leise);
 }
-.duell-fehlt summary {
-  cursor: pointer;
+.duell-fehlt-kopf {
+  margin: 0;
   color: var(--text);
+  font-weight: 700;
+}
+.fehler-link {
+  font-size: 0.8rem;
+  color: var(--text-leise);
+}
+.fuer-euch {
+  margin-top: 1.25rem;
+  padding: 12px 16px;
+  border-radius: var(--papier-radius);
+  border: 1.5px solid var(--linie);
+}
+.fuer-euch h3 {
+  margin: 0 0 6px;
+}
+.fuer-euch-wer {
+  margin: 8px 0 2px;
+  font-weight: 700;
+}
+.fuer-euch ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.fuer-euch li {
+  margin: 4px 0;
+  padding-left: 10px;
+  border-left: 4px solid var(--partei);
+  font-size: 0.9rem;
+}
+.fuer-euch-leer {
+  margin: 4px 0 0;
+  font-size: 0.85rem;
+  color: var(--text-leise);
 }
 .duell-fehlt p {
   margin: 6px 0 4px;
@@ -1216,6 +1245,16 @@ textarea {
 }
 .endstand span {
   border-bottom: 5px solid var(--partei-linie);
+}
+.ende-themen {
+  margin: 0.5rem auto 0;
+  max-width: 36ch;
+  color: var(--text-leise);
+}
+.ende-frage {
+  margin: 0.5rem auto 0;
+  max-width: 36ch;
+  font-size: 0.95rem;
 }
 .sieger {
   margin: 0.75rem auto 0;
@@ -1409,6 +1448,40 @@ textarea {
 .admin-warnung {
   font-size: 0.85rem;
   color: var(--warnung-text);
+}
+.katalog-link {
+  padding: 0;
+  font: inherit;
+  color: var(--akzent-text);
+  text-align: left;
+  text-decoration: underline;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+.katalog-wege {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.katalog-parteien {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
+.katalog-partei {
+  padding: 1px 8px;
+  font-size: 0.8rem;
+  color: var(--text);
+  text-decoration: none;
+  background: var(--flaeche-2);
+  border-radius: 999px;
+}
+.katalog-partei:hover {
+  text-decoration: underline;
 }
 .admin-aktionen {
   display: flex;
@@ -2875,4 +2948,57 @@ textarea {
   flex-wrap: wrap;
   align-items: center;
   gap: 8px 16px;
+}
+
+/* Thema vorschlagen (components/ThemaVorschlag.tsx) */
+.vorschlag-zu,
+.vorschlag-danke {
+  margin: 12px 0 0;
+  font-size: 0.9rem;
+  color: var(--text-leise);
+}
+.vorschlag {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 1rem;
+  padding: 16px;
+  border-radius: var(--papier-radius);
+  background: var(--flaeche);
+  border: 1.5px solid var(--linie);
+}
+.vorschlag-titel {
+  font-weight: 600;
+}
+.vorschlag .meta {
+  margin: 0;
+}
+.vorschlag-fehler {
+  margin: 0;
+  color: var(--warnung-text);
+}
+.vorschlag-knoepfe {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+.vorschlag-knoepfe .knopf {
+  width: auto;
+}
+/* Sichtbare Marke für KI-Text (EU AI Act Art. 50, src/components/KiText.tsx) */
+.ki-marke {
+  display: inline-block;
+  margin-right: 6px;
+  padding: 0 5px;
+  border: 1px solid var(--linie);
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  vertical-align: 0.15em;
+  color: var(--text-leise);
 }

@@ -1,10 +1,11 @@
 // Vite-Plugin: kleiner Index der Prüfeinheiten je Thema (`virtual:pruef-index`).
-// Die Admin-Listen brauchen nur Namen und IDs; die vollständigen Themendateien
+// Die Admin-Listen brauchen nur Namen, IDs und Kennzahlen; die vollständigen Themendateien
 // lädt die App je Thema nach (src/pruefung/katalog.ts). So bleibt jeder Abruf
 // klein, auch wenn `daten/` sehr groß wird.
 import { readdirSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import type { Plugin } from 'vite'
+import { kennzahlen, type KatalogKennzahlen } from '../src/admin/katalogAnsicht.ts'
 import { pruefEinheiten } from '../src/data/katalog.ts'
 import { pruefeDatenordner } from './katalog-laden.ts'
 
@@ -16,6 +17,8 @@ export interface PruefIndexThema {
   name: string
   /** IDs der Prüfeinheiten (Instrumente und Maßnahmen ohne Instrument), aufsteigend. */
   einheiten: number[]
+  /** Für Admin → Katalog: Stand der Erfassung und Prüfung. */
+  kennzahlen: KatalogKennzahlen
 }
 
 export function pruefIndex(): Plugin {
@@ -32,6 +35,7 @@ export function pruefIndex(): Plugin {
         id: t.id,
         name: t.name,
         einheiten: pruefEinheiten(katalog, t.id).map((e) => e.id),
+        kennzahlen: kennzahlen(katalog, t.id),
       }))
       return `export const PRUEF_INDEX = ${JSON.stringify(index)}`
     },

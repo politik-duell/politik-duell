@@ -4,7 +4,7 @@ import { Ende } from './components/Ende'
 import { Fusszeile } from './components/Fusszeile'
 import { Kopfzeile } from './components/Kopfzeile'
 import { MockHinweis } from './components/MockHinweis'
-import { TestphaseHinweis } from './components/TestphaseHinweis'
+import { BetaHinweis, TestphaseHinweis } from './components/TestphaseHinweis'
 import { Testphasesperre } from './components/Testphasesperre'
 import { Wortwolke } from './components/Wortwolke'
 import { Themenstand } from './components/Themenstand'
@@ -27,7 +27,6 @@ import { themenWoerter } from './data/wortwolke'
 import { useHash, zurueck } from './navigation'
 import { RUNDEN_GESAMT, type RundenErgebnis, type Spieler } from './spiel'
 
-const NUR_TESTPHASE = import.meta.env.VITE_OFFEN !== 'true'
 
 type Phase = 'start' | 'setup' | 'runde' | 'aufloesung' | 'ende'
 
@@ -72,8 +71,9 @@ export default function App() {
     scrollTo({ top: 0 })
   }
 
-  // Nur geschlossene Testphase: Ohne gültigen Zugangslink kein Spiel. Mit VITE_OFFEN=true wieder öffentlich.
-  if (NUR_TESTPHASE && daten?.quelle === 'supabase' && !daten.testphase) {
+  // Geschlossene Testphase: ohne gültigen Zugangslink kein Spiel. Offen, sobald die Beta freigegeben ist
+  // (`einstellungen.ki_entwuerfe_oeffentlich` – dann sind KI-Entwürfe auch ohne Zugang lesbar).
+  if (daten?.quelle === 'supabase' && !daten.testphase && !daten.beta) {
     return (
       <div className="app">
         {zugangsHinweis && (
@@ -91,7 +91,7 @@ export default function App() {
       {themenSeite && (
         <div className="app">
           {daten && sindBeispieldaten(daten) && <MockHinweis />}
-          {daten?.testphase && <TestphaseHinweis />}
+          {daten?.testphase ? <TestphaseHinweis /> : daten?.beta && <BetaHinweis />}
           <Themenstand daten={daten} ladeFehler={ladeFehler} onZurueck={zurueck} />
           <Fusszeile />
         </div>
@@ -100,7 +100,7 @@ export default function App() {
         {/* Startseite: ganze Fläche; im Spiel nur links und rechts neben der Spalte. */}
         <Wortwolke woerter={woerter} nurRaender={phase !== 'start'} />
         {sindBeispieldaten(daten ?? MOCK_DATEN) && <MockHinweis />}
-        {daten?.testphase && <TestphaseHinweis />}
+        {daten?.testphase ? <TestphaseHinweis /> : daten?.beta && <BetaHinweis />}
         {zugangsHinweis && (
           <div className="mock-hinweis" role="alert">
             {zugangsHinweis} Es werden nur geprüfte Daten gezeigt.

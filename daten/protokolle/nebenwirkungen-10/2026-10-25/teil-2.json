@@ -1,0 +1,138 @@
+{
+  "pruefsumme": "669cce263e59cf3f",
+  "thema_id": 10,
+  "thema": "Pflege",
+  "ziel": "Pflegebedürftige bekommen gute Pflege, die sie und ihre Angehörigen bezahlen und organisieren können.",
+  "ursachen": [
+    "Zu wenige Pflegekräfte; bis 2049 fehlen je nach Szenario 280.000 bis 690.000",
+    "Steigende Eigenanteile im Heim für Pflege, Ausbildung, Unterkunft und Verpflegung (mit Investitionskosten im ersten Jahr im Schnitt 3.364 Euro im Monat)",
+    "Die Zahl der Pflegebedürftigen steigt stärker als durch die Alterung allein, auch wegen des 2017 weiter gefassten Pflegebedürftigkeitsbegriffs",
+    "Pflegende Angehörige tragen die Hauptlast; Entlastungsangebote werden wenig genutzt",
+    "Die Länder fördern die Investitionskosten der Heime kaum; Bewohner zahlen dafür im Schnitt über 500 Euro im Monat"
+  ],
+  "teil": 2,
+  "teile": 5,
+  "einheiten": [
+    {
+      "id": 6223,
+      "name": "Investitionskosten der Heime nicht mehr den Bewohnern anlasten",
+      "ebene": "bund",
+      "begruendung": "Die Investitionskosten machen einen spürbaren Teil der Eigenanteile im Heim aus; übernehmen die Länder sie, sinkt die Belastung direkt. Der Bund kann es vorschreiben, zahlen müssten aber die Länder, deren Finanzierung offen ist.",
+      "ursache": 2
+    },
+    {
+      "id": 6224,
+      "name": "Private Pflegeversicherung in den Finanzausgleich einbeziehen",
+      "ebene": "bund",
+      "begruendung": "Ein Ausgleich zwischen sozialer und privater Pflegeversicherung verbreitert die Finanzierung und kann Beiträge oder Eigenanteile entlasten; wie viel davon bei den Eigenanteilen ankommt, hängt von der Verwendung ab. Verfassungsrechtlich umstritten, aber per Bundesgesetz möglich.",
+      "ursache": 2
+    },
+    {
+      "id": 6225,
+      "name": "Private und betriebliche Pflegezusatzvorsorge fördern",
+      "ebene": "bund",
+      "begruendung": "Zusatzversicherungen können künftige Eigenanteile abdecken; bisher haben nur wenige eine, Geringverdienende und heute Pflegebedürftige erreicht die Förderung kaum. Per Bundesgesetz umsetzbar.",
+      "ursache": 2
+    },
+    {
+      "id": 6242,
+      "name": "Pflegekosten-Deckel: Eigenanteile in der stationären Pflege auf 1.000 Euro im Monat begrenzen",
+      "ebene": "bund",
+      "begruendung": "Ein Deckel senkt die pflegebedingten Eigenanteile direkt und für alle Heimbewohner; Unterkunft, Verpflegung und Investitionskosten bleiben aber, und die Mehrkosten von mehreren Milliarden Euro im Jahr müssen über Beiträge oder Steuern finanziert werden.",
+      "ursache": 2
+    },
+    {
+      "id": 6270,
+      "name": "Solidarische Pflegevollversicherung, die alle pflegerischen Leistungen abdeckt",
+      "ebene": "bund",
+      "begruendung": "Eine Vollversicherung beseitigt die pflegebedingten Eigenanteile vollständig; Unterkunft und Verpflegung bleiben. Die Mehrkosten liegen bei deutlich über 10 Milliarden Euro im Jahr, die Finanzierung über eine Bürgerversicherung ist politisch und rechtlich offen.",
+      "ursache": 2
+    },
+    {
+      "id": 6275,
+      "name": "Schonvermögen für Pflegebedürftige erhöhen",
+      "ebene": "bund",
+      "begruendung": "Ein höheres Schonvermögen schützt Erspartes, bevor die Sozialhilfe einspringt; die Eigenanteile selbst sinken dadurch nicht. Per Bundesgesetz umsetzbar, die Mehrkosten tragen die Sozialhilfeträger.",
+      "ursache": 2
+    }
+  ],
+  "suchhilfe": {
+    "haushalt": {
+      "frage": "Was kostet der Weg Bund, Ländern, Kommunen oder Sozialkassen – oder was bringt er ein?",
+      "vorteil": [
+        "Mehreinnahmen",
+        "Einsparung öffentlicher Haushalt",
+        "Entlastung Sozialversicherung"
+      ],
+      "nachteil": [
+        "Mindereinnahmen",
+        "Kosten Bundeshaushalt",
+        "Haushaltsausgaben Gesetzentwurf"
+      ]
+    },
+    "wirtschaft": {
+      "frage": "Welche Kosten oder Entlastungen entstehen für Unternehmen (besonders kleine und mittlere), wie wirkt er auf Preise und Verbraucher?",
+      "vorteil": [
+        "Entlastung Unternehmen",
+        "sinkende Preise",
+        "Investitionen"
+      ],
+      "nachteil": [
+        "Kosten für Unternehmen",
+        "Preisanstieg",
+        "Wettbewerbsfähigkeit"
+      ]
+    },
+    "aufwand": {
+      "frage": "Welcher Aufwand für Anträge, Nachweise und Kontrollen entsteht oder entfällt – für Bürger, Wirtschaft, Verwaltung?",
+      "vorteil": [
+        "Bürokratieabbau",
+        "Erfüllungsaufwand sinkt"
+      ],
+      "nachteil": [
+        "Erfüllungsaufwand",
+        "Nachweispflichten",
+        "Normenkontrollrat Stellungnahme"
+      ]
+    },
+    "umwelt": {
+      "frage": "Wie wirkt er auf Emissionen, Natur und Ressourcen, und welche Lasten oder Vorteile hat er für spätere Jahre?",
+      "vorteil": [
+        "Emissionsminderung",
+        "Umweltentlastung"
+      ],
+      "nachteil": [
+        "Mehremissionen",
+        "Umweltrisiken",
+        "Flächenverbrauch"
+      ]
+    },
+    "verteilung": {
+      "frage": "Wer gewinnt, wer trägt die Last – nach Einkommen, Alter, Familienform, Stadt und Land?",
+      "vorteil": [
+        "Entlastung geringe Einkommen",
+        "Verteilungswirkung progressiv"
+      ],
+      "nachteil": [
+        "regressiv",
+        "Mitnahmeeffekte",
+        "profitieren höhere Einkommen"
+      ]
+    },
+    "grundrechte": {
+      "frage": "Schränkt er Freiheiten ein oder stärkt er sie, behandelt er Gruppen ungleich, wie wirkt er auf Gesundheit und Sicherheit?",
+      "vorteil": [
+        "Gesundheit verbessert",
+        "Schutz",
+        "Gleichstellung"
+      ],
+      "nachteil": [
+        "Datenschutz",
+        "Grundrechtseingriff",
+        "Benachteiligung",
+        "Gesundheitsrisiko"
+      ]
+    }
+  },
+  "quellen": []
+}

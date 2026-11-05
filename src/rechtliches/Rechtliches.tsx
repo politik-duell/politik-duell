@@ -1,13 +1,15 @@
 import { useEffect } from 'react'
 import { Logo } from '../components/Logo'
+import { VorschlagSeite } from '../components/ThemaVorschlag'
 import { BETREIBER, betreiberVollstaendig, DATENSCHUTZ_STAND } from './betreiber'
 import { Methode } from './Methode'
 
-// Impressum (#/impressum), Datenschutzerklärung (#/datenschutz) und Methode (#/methode).
+// Impressum (#/impressum), Datenschutzerklärung (#/datenschutz), Methode (#/methode) und Themenvorschlag (#/vorschlag).
 // Die Texte beschreiben, was die App tatsächlich tut – bei Änderungen an
-// Datenflüssen (neue Dienste, neue gespeicherte Felder) hier mit anpassen.
+// Datenflüssen (neue Dienste, neue gespeicherte Felder) hier mit anpassen – ebenso
+// docs/verarbeitungsverzeichnis.md und docs/datenschutz-folgenabschaetzung.md.
 
-export type RechtsSeite = 'impressum' | 'datenschutz' | 'methode'
+export type RechtsSeite = 'impressum' | 'datenschutz' | 'methode' | 'vorschlag'
 
 function Unvollstaendig() {
   if (betreiberVollstaendig()) return null
@@ -54,7 +56,15 @@ export function Rechtliches({ seite, onZurueck }: { seite: RechtsSeite; onZuruec
         </a>
       </header>
       <Unvollstaendig />
-      {seite === 'impressum' ? <Impressum /> : seite === 'methode' ? <Methode /> : <Datenschutz />}
+      {seite === 'impressum' ? (
+        <Impressum />
+      ) : seite === 'methode' ? (
+        <Methode />
+      ) : seite === 'vorschlag' ? (
+        <VorschlagSeite />
+      ) : (
+        <Datenschutz />
+      )}
     </main>
   )
 }
@@ -73,6 +83,13 @@ function Impressum() {
         finanziert. Alle Parteien werden nach denselben, offen einsehbaren Kriterien bewertet; die Bewertungen und
         ihre Belege stehen im <a href={BETREIBER.quellcode}>öffentlichen Quellcode</a>. Fehler oder fehlende Belege
         bitte dort melden oder per E-Mail.
+      </p>
+      <h2>Korrekturen und Gegendarstellung</h2>
+      <p>
+        Gibt das Spiel eine Aussage aus einem Wahlprogramm falsch oder unvollständig wieder, schreibt uns bitte – auch
+        Parteien selbst – an <a href={`mailto:${BETREIBER.email}`}>{BETREIBER.email}</a>, mit Programm und Seite. Wir
+        prüfen jeden Hinweis, antworten innerhalb von 14 Tagen und berichtigen belegte Fehler im öffentlichen Datenkatalog. Der Anspruch auf
+        Gegendarstellung nach § 20 MStV bleibt davon unberührt.
       </p>
       <h2>Haftung für Links</h2>
       <p>
@@ -95,9 +112,12 @@ function Datenschutz() {
         <li>Keine Konten, keine Cookies, kein Tracking, keine Werbung.</li>
         <li>Wir speichern keine IP-Adressen und kein Audio.</li>
         <li>
-          Was du eingibst, ordnet eine KI (Mistral AI, Paris) ein. Wir speichern davon eine anonyme, neutrale
-          Kurzfassung und ein Stichwort. Deinen Originaltext speichern wir nur, wenn eine Runde ohne Wertung endet –
-          nur für uns zur Prüfung sichtbar und höchstens 30 Tage.
+          Was du im Spiel eingibst oder einsprichst, ordnet eine KI (Mistral AI, Paris) ein. Wir speichern davon
+          nichts – weder deinen Text noch eine Kurzfassung, das Thema oder das Ergebnis der Runde.
+        </li>
+        <li>
+          Gespeichert wird nur, was du selbst über „Thema vorschlagen“ abschickst – ohne KI und ohne Bezug zu deinem
+          Spiel, höchstens 180 Tage.
         </li>
         <li>Die Wortwolke im Hintergrund zeigt nur die Themen, die das Spiel schon werten kann – keine Eingaben von Spielenden.</li>
       </ul>
@@ -129,8 +149,8 @@ function Datenschutz() {
 
       <h2>4. Deine Eingaben im Spiel</h2>
       <p>
-        Wenn du ein Problem eingibst oder einsprichst, schickt die App den Text zusammen mit der gewählten Rolle und den
-        beiden gewählten Parteien an unsere Funktion bei Supabase (Frankfurt). Diese bittet Mistral AI SAS (Paris,
+        Wenn du ein Problem eingibst oder einsprichst, schickt die App den Text zusammen mit den beiden gewählten Parteien
+        an unsere Funktion bei Supabase (Frankfurt). Diese bittet Mistral AI SAS (Paris,
         Frankreich) um eine Einordnung: Ist es ein Problem, eine Forderung oder eine Haltung, und zu welchem Thema
         gehört es? Die Punkte vergibt nicht die KI, sondern unsere feste Bewertungstabelle.
       </p>
@@ -140,30 +160,25 @@ function Datenschutz() {
         Art. 9 Abs. 2 lit. a DSGVO). Bitte gib keine Namen, Adressen oder anderen persönlichen Details ein.
       </p>
       <p>
+        <strong>Mindestalter:</strong> Einwilligen kannst du selbst ab 16 Jahren (Art. 8 DSGVO). Bist du jünger,
+        spiel bitte nur, wenn deine Eltern einverstanden sind – oder im Unterricht, wenn die Schule das Spiel mit den
+        Eltern abgestimmt hat.
+      </p>
+      <p>
+        <strong>KI-Kennzeichnung:</strong> Antworten der KI im Gespräch und die Kurzfassung deines Problems sind mit
+        „KI“ gekennzeichnet; von der KI formulierte Texte tragen zusätzlich eine maschinenlesbare Markierung
+        (EU-KI-Verordnung, Art. 50). Die Punkte stammen nie von der KI.
+      </p>
+      <p>
         Mistral verarbeitet den Text als Auftragsverarbeiter nur für die Einordnung und nicht zum Training seiner
         Modelle; nach seinen Bedingungen kann Mistral Anfragen für begrenzte Zeit zur Missbrauchserkennung aufbewahren.
-        Den Originaltext prüfen wir automatisch auf Beleidigungen, Namen und Kontaktdaten. Endet die Runde mit einer
-        Wertung, verwerfen wir ihn danach. Endet sie ohne Wertung (siehe unten), bewahren wir ihn kurz auf.
+        Die Antwort der KI und die Punkte gehen nur an deinen Browser zurück.
       </p>
       <p>
-        <strong>Gespeichert wird pro Runde:</strong> eine neutrale Kurzfassung des Problems (höchstens 200 Zeichen,
-        von der KI ohne Namen und persönliche Details formuliert), ein Stichwort, das zugeordnete Thema, die beiden
-        gewählten Parteien, deren Punkte und der Zeitpunkt. Bleibt es bei einer Forderung oder Haltung, speichern wir
-        statt Punkten nur die Nummer des erkannten Lösungswegs bzw. der erkannten Wertfrage aus unserem Katalog – nicht,
-        welche Seite du vertrittst. Deine Rolle und dein Name im Spiel werden nicht
-        gespeichert. Diese Daten lassen sich keiner Person zuordnen. Probleme zu Themen, die wir noch nicht bewertet
-        haben, landen zusätzlich mit einer kurzen vorläufigen Einschätzung in einer Liste zur redaktionellen Prüfung.
-      </p>
-      <p>
-        <strong>Runden ohne Wertung:</strong> Endet eine Runde ohne Punkte – weil du eine Haltung oder Forderung
-        nennst, das Spiel auf eine Äußerung nicht eingeht, kein Thema oder keine Ursache erkennbar ist oder eine
-        Partei zum Thema noch nicht erfasst ist –, speichern wir deine Eingaben dieser Runde im Wortlaut, dazu den
-        Grund, das erkannte Thema, die Kurzfassung und den Zeitpunkt. Nicht dabei sind Parteien, Rolle, Bundesland,
-        Name im Spiel oder eine Verbindung zur gespeicherten Runde. Zweck: Wir prüfen, ob die KI richtig eingeordnet
-        hat, und verbessern Einordnung und Themenkatalog (Art. 6 Abs. 1 lit. a und Art. 9 Abs. 2 lit. a DSGVO, deine
-        Einwilligung vor dem Spielstart). Lesen können die Einträge nur die Admins des Projekts; sie werden nie
-        veröffentlicht. Wir löschen sie, sobald wir sie gesichtet haben, spätestens nach 30 Tagen automatisch. Bitte
-        gib deshalb erst recht keine Namen oder anderen persönlichen Details ein.
+        <strong>Was wir speichern:</strong> nichts aus deinen Eingaben. Weder dein Text noch eine Kurzfassung, ein
+        Stichwort, das erkannte Thema, die gewählten Parteien oder Punkte landen in unserer Datenbank; der Verlauf
+        deines Spiels steht nur im Arbeitsspeicher deines Browsers und ist mit dem Schließen des Tabs weg. Dein Name im
+        Spiel verlässt deinen Browser nicht; ein gewähltes Bundesland wird nur für die Wertung mitgeschickt.
       </p>
       <p>
         <strong>Wortwolke:</strong> Die Wortwolke auf der Startseite zeigt die Themen, die das Spiel schon werten kann. Eingaben
@@ -171,16 +186,34 @@ function Datenschutz() {
       </p>
       <p>
         <strong>Widerruf:</strong> Du kannst deine Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen,
-        indem du nicht weiterspielst. Bereits gespeicherte Kurzfassungen und Eingaben sind anonym; wir können sie dir
-        deshalb nicht mehr zuordnen und nicht gezielt löschen. Eingaben ohne Wertung löschen wir ohnehin nach
-        spätestens 30 Tagen.
+        indem du nicht weiterspielst. Weil wir aus dem Spiel nichts speichern, gibt es bei uns nichts zu löschen.
+      </p>
+
+      <h2>4a. Themen vorschlagen</h2>
+      <p>
+        Über „Thema vorschlagen“ (Fußzeile, und nach Runden, die das Spiel nicht werten kann) kannst du uns ein
+        Problem oder Thema nennen, das im Spiel fehlt. Das ist freiwillig und funktioniert ohne KI: Die App schickt
+        nur den Text, den du in dieses Feld schreibst und abschickst, an unsere Funktion bei Supabase (Frankfurt).
+        Deine Eingaben aus dem Spiel werden dafür nicht verwendet. Texte mit Kontaktdaten, Links, Namen von Personen
+        oder Beleidigungen nimmt die Funktion nicht an (automatischer Wortfilter), damit du umformulieren kannst.
+      </p>
+      <p>
+        <strong>Gespeichert werden</strong> nur der Text und der Zeitpunkt – ohne Sitzungsnummer, Parteien, Spielstand
+        oder IP-Adresse. Lesen können die Vorschläge nur die Admins des Projekts; wir werten sie – auch mit
+        automatischen Hilfsmitteln – aus, um zu entscheiden, welche Themen wir als Nächstes aufnehmen, und
+        veröffentlichen sie nicht im Wortlaut. Wir löschen sie, sobald wir sie nicht mehr brauchen, spätestens nach 180
+        Tagen automatisch. Rechtsgrundlage ist deine ausdrückliche Einwilligung, die du mit „Vorschlag senden“ gibst (der Hinweis steht direkt am Formular) (Art. 6 Abs. 1 lit. a
+        und, soweit der Vorschlag eine politische Meinung erkennen lässt, Art. 9 Abs. 2 lit. a DSGVO). Bitte schreib
+        keine Namen oder Angaben über dich hinein. Da wir einen Vorschlag dir nicht zuordnen können, können wir ihn
+        nicht gezielt löschen (Art. 11 DSGVO).
       </p>
 
       <h2>5. Schutz vor Missbrauch</h2>
       <p>
-        Damit die KI nicht überlastet wird, begrenzen wir die Anfragen. Dafür erzeugt die App eine zufällige
-        Sitzungsnummer und legt sie im Sitzungsspeicher des Browsers ab (sessionStorage – wird beim Schließen des Tabs
-        gelöscht). Auf dem Server steht sie mit einem Zähler höchstens einen Tag lang. Sie enthält keine Angaben
+        Damit die KI nicht überlastet wird und niemand massenhaft Vorschläge einwirft, begrenzen wir die Anfragen.
+        Dafür erzeugt die App eine zufällige Sitzungsnummer und legt sie im Sitzungsspeicher des Browsers ab
+        (sessionStorage – wird beim Schließen des Tabs gelöscht). Auf dem Server steht sie (für Vorschläge ein daraus
+        abgeleiteter Wert) mit einem Zähler höchstens einen Tag lang, getrennt von den Vorschlägen. Sie enthält keine Angaben
         über dich. Das Speichern im Browser ist für den Dienst unbedingt erforderlich (§ 25 Abs. 2 Nr. 2 TDDDG),
         Rechtsgrundlage für die Verarbeitung ist Art. 6 Abs. 1 lit. f DSGVO.
       </p>
@@ -242,8 +275,8 @@ function Datenschutz() {
         die Testphase nicht bei jedem Besuch neu öffnen musst – bis du „Testphase verlassen“ wählst. Das ist für die
         gewünschte Funktion unbedingt erforderlich (§ 25 Abs. 2 Nr. 2 TDDDG). Bei uns (Supabase, Frankfurt am Main):
         ein Hashwert des Codes (nicht der Code selbst), ein Name zur Unterscheidung der Zugänge, den wir beim Anlegen
-        eintragen, und das Anlegedatum. Runden aus der Testphase sind als solche markiert, damit wir sie getrennt
-        auswerten können; sie werden nicht mit dem Zugang verknüpft. Für Eingaben im Spiel gilt Abschnitt 4.
+        eintragen, und das Anlegedatum. Runden speichern wir auch in der Testphase nicht. Für Eingaben im Spiel gilt
+        Abschnitt 4.
       </p>
       <p>
         <strong>Löschung:</strong> Wir löschen die Zugänge mit dem Ende der Testphase oder vorher auf Wunsch per
@@ -254,7 +287,7 @@ function Datenschutz() {
       <p>
         Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit
         und Widerspruch (Art. 15–21 DSGVO) sowie auf Widerruf einer Einwilligung (Art. 7 Abs. 3 DSGVO). Da wir keine
-        Daten speichern, die sich dir zuordnen lassen, können wir Anfragen zu gespeicherten Kurzfassungen meist nicht
+        Daten speichern, die sich dir zuordnen lassen, können wir Anfragen zu Themenvorschlägen meist nicht
         beantworten (Art. 11 DSGVO). Für Prüfende gilt das nicht: Ihre Daten sind ihnen zugeordnet, Auskunft,
         Berichtigung und Löschung erledigen wir wie in Abschnitt 8 beschrieben. Schreib uns trotzdem gern: <a href={`mailto:${BETREIBER.email}`}>{BETREIBER.email}</a>.
       </p>

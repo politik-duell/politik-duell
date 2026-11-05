@@ -7,7 +7,7 @@ Grundprinzipien: [CLAUDE.md](CLAUDE.md); Konzept und Meilensteine: [docs/konzept
 ## Stand: Meilenstein 1 – klickbarer Prototyp
 
 - Startbildschirm mit Erklärung, Datenschutzhinweis und schwebender Wortwolke der erfassten Themen
-- Parteiwahl für Spieler:in A und B (nicht dieselbe) plus optionale Rolle
+- Parteiwahl für Spieler:in A und B (nicht dieselbe), optional ein Bundesland für die Partie
 - 5 Runden, Texteingabe
 - Mock-Analyse im Format der späteren Edge Function `analyse` (`problem` | `forderung` | `wert`)
   - Forderung → höchstens 2 Nachfragen nach dem Alltagsproblem
@@ -34,7 +34,7 @@ Grundprinzipien: [CLAUDE.md](CLAUDE.md); Konzept und Meilensteine: [docs/konzept
 - Seed-Daten aus den fiktiven Beispieldaten (`npm run seed` → `supabase/seed.sql`)
 - Edge Function `analyse` (`supabase/functions/analyse/`): Mistral ordnet die Äußerung ein (striktes JSON), die Antwort wird streng geprüft (nur IDs aus dem Katalog, keine Links, höchstens zwei Nachfragen)
 - Punkte berechnet dieselbe Logik in App und Funktion (`supabase/functions/_shared/bewertung.ts`) – die KI vergibt keine Punkte
-- Abgeschlossene Runden werden anonym gespeichert (nur neutrale Kurzfassung); unbekannte Themen landen in `review_warteschlange` mit vorläufiger Einschätzung; Runden ohne Wertung (auch Grenzfälle) zusätzlich im Wortlaut in `review_eingaben` (nur Admins, gelöscht beim Sichten oder nach 30 Tagen)
+- Aus den Eingaben im Spiel wird nichts gespeichert. Fehlende Themen schlagen Spielende ausdrücklich über „Thema vorschlagen“ vor: Edge Function `vorschlag` ohne KI, Tabelle `themen_vorschlaege` (nur Admins, 180 Tage); auswerten mit `npm run vorschlaege`
 - Rate-Limit pro zufälliger Sitzungs-ID
 - Ohne Supabase-Verbindung: „Mit Beispieldaten spielen“ bzw. `VITE_DATENQUELLE=mock`
 
@@ -116,10 +116,10 @@ npm run dashboard  # Dateien zum Einfügen im Supabase-Dashboard neu erzeugen
 
 ## Bewertungsregeln im Prototyp
 
-- Punkte je Maßnahme: `wirksamkeit × umsetzbarkeit` (0–9); der Rollen-Modifikator verschiebt die Wirksamkeit (0–3). Pro zugeordneter Ursache zählen die verschiedenen Lösungswege der Partei mit abnehmendem Gewicht (bester voll, dann ½, ¼ …), höchstens 9 je Ursache. Rundenpunkte = Summe.
+- Punkte je Maßnahme: `wirksamkeit × umsetzbarkeit` (0–9), für alle gleich (Rollen-Modifikatoren vorerst ausgesetzt). Pro zugeordneter Ursache zählen die verschiedenen Lösungswege der Partei mit abnehmendem Gewicht (bester voll, dann ½, ¼ …), höchstens 9 je Ursache. Rundenpunkte = Summe.
 - Höhere Summe → 1 Spielpunkt, Gleichstand → je 1 Punkt.
 - Annahme: Haben **beide** Parteien 0 Punkte (keine Maßnahme), gibt es keinen Punkt.
-- Jede Partei wird mit Rolle und Bundesland ihrer Seite bewertet – gleich, wer das Problem nennt. Der Vergleich aller Parteien („Beste Lösung“) nutzt Rolle bzw. Land nur, wenn beide Seiten sie gleich gewählt haben.
+- Jede Partei wird mit dem Bundesland der Partie bewertet – gleich, wer das Problem nennt.
 
 ## Lizenz
 

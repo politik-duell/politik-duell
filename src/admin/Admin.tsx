@@ -1,50 +1,27 @@
 import type { Session } from '@supabase/supabase-js'
 import { type FormEvent, useCallback, useEffect, useState } from 'react'
-import { FILTER_TEXTE, pruefeText, type FilterGrund } from '../../supabase/functions/_shared/moderation'
 import { Logo } from '../components/Logo'
-import { adminDb, type AdminRunde, type ReviewEingabe, type ReviewEintrag } from './client'
-import { Luecken } from './Luecken'
+import { adminDb, type ThemenVorschlag } from './client'
+import { Katalog } from './Katalog'
 import { Pruefung } from './Pruefung'
 import { Testphase } from './Testphase'
 
-// Einfache Admin-Ansicht (#/admin): Probleme für eine öffentliche Anzeige freigeben oder
-// ablehnen, Review-Warteschlange (Themen ohne Daten) abhaken, Eingaben ohne Wertung sichten, Lücken und Kennzahlen
-// ansehen, Prüfende einladen und ihre Bewertungen auswerten.
+// Einfache Admin-Ansicht (#/admin): Themenvorschläge der Spielenden sichten, den Datenkatalog durchsehen,
+// Prüfende einladen und ihre Bewertungen auswerten, Zugänge zur Testphase verwalten. Eingaben aus dem Spiel werden
+// nicht gespeichert (Migration 20261103000000) – hier gibt es deshalb keine Runden.
 // Zugriff regelt die Datenbank: Nur Konten in der Tabelle `admins` sehen etwas.
 
-type Reiter = 'offen' | 'gestoppt' | 'frei' | 'abgelehnt' | 'review' | 'ohne' | 'luecken' | 'pruefung' | 'testphase'
+type Reiter = 'vorschlaege' | 'katalog' | 'pruefung' | 'testphase'
 
 const REITER: { id: Reiter; name: string }[] = [
-  { id: 'offen', name: 'Offen' },
-  { id: 'gestoppt', name: 'Vom Filter gestoppt' },
-  { id: 'frei', name: 'Freigegeben' },
-  { id: 'abgelehnt', name: 'Abgelehnt' },
-  { id: 'review', name: 'Neue Themen' },
-  { id: 'ohne', name: 'Ohne Wertung' },
-  { id: 'luecken', name: 'Lücken' },
+  { id: 'vorschlaege', name: 'Vorschläge' },
+  { id: 'katalog', name: 'Katalog' },
   { id: 'pruefung', name: 'Prüfung' },
   { id: 'testphase', name: 'Testphase' },
 ]
 
-function reiterVon(r: AdminRunde): Exclude<Reiter, 'review' | 'ohne' | 'luecken' | 'pruefung' | 'testphase'> {
-  if (r.freigegeben) return 'frei'
-  if (r.abgelehnt) return 'abgelehnt'
-  return r.filter_grund ? 'gestoppt' : 'offen'
-}
-
 const zeit = (iso: string) =>
-  new Date(iso).toLocaleString('de-DE', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' })
-
-const GRUND_TEXTE: Record<ReviewEingabe['grund'], string> = {
-  grenze: 'Grenze – darauf geht das Spiel nicht ein',
-  wert: 'Haltung',
-  forderung: 'Forderung ohne Alltagsproblem',
-  ungeprueft: 'kein Thema oder keine Ursache erkannt',
-  unvollstaendig: 'Partei noch nicht erfasst',
-}
-
-const filterText = (grund: string | null) =>
-  grund ? (FILTER_TEXTE[grund as FilterGrund] ?? grund) : null
+  new Date(iso).toLocaleString('de-DE', { day: '2-digit', month: '2-digit', year: '2-digit', hour: '2-digit', minute: '2-digit' })
 
 export function Admin() {
   const [session, setSession] = useState<Session | null>(null)
@@ -143,98 +120,7 @@ function Anmeldung() {
 }
 
 function Moderation() {
-  const db = adminDb!
-  const [reiter, setReiter] = useState<Reiter>('offen')
-  const [runden, setRunden] = useState<AdminRunde[]>([])
-  const [review, setReview] = useState<ReviewEintrag[]>([])
-  const [ohne, setOhne] = useState<ReviewEingabe[]>([])
-  const [themen, setThemen] = useState<Map<number, string>>(new Map())
-  const [fehler, setFehler] = useState<string | null>(null)
-
-  const laden = useCallback(async () => {
-    const [r, q, o, t] = await Promise.all([
-      db
-        .from('runden')
-        .select('id, created_at, problem_text, stichwort, filter_grund, status, freigegeben, abgelehnt, moderiert_am')
-        .not('status', 'in', '(wert,forderung,grenze)') // Werte, Forderungen und Grenzfälle sind keine Probleme und kommen nicht zur Freigabe
-        .order('created_at', { ascending: false })
-        .limit(300),
-      db
-        .from('review_warteschlange')
-        .select('*')
-        .eq('erledigt', false)
-        .order('created_at', { ascending: false })
-        .limit(200),
-      db.from('review_eingaben').select('*').order('created_at', { ascending: false }).limit(300),
-      db.from('themen').select('id, name'),
-    ])
-    const f = r.error ?? q.error ?? o.error
-    setFehler(f ? f.message : null)
-    if (r.data) setRunden(r.data as AdminRunde[])
-    if (q.data) setReview(q.data as ReviewEintrag[])
-    if (o.data) setOhne(o.data as ReviewEingabe[])
-    if (t.data) setThemen(new Map((t.data as { id: number; name: string }[]).map((x) => [x.id, x.name])))
-  }, [db])
-
-  useEffect(() => {
-    let timer: ReturnType<typeof setTimeout> | undefined
-    const baldLaden = () => {
-      clearTimeout(timer)
-      timer = setTimeout(() => void laden(), 500)
-    }
-    const kanal = db
-      .channel('moderation')
-      .on('postgres_changes', { event: '*', schema: 'public', table: 'runden' }, baldLaden)
-      .on('postgres_changes', { event: '*', schema: 'public', table: 'review_warteschlange' }, baldLaden)
-      .on('postgres_changes', { event: '*', schema: 'public', table: 'review_eingaben' }, baldLaden)
-      // Erst laden, wenn der Kanal steht – so geht keine Änderung dazwischen verloren.
-      // Klappt Realtime nicht, trotzdem einmal laden.
-      .subscribe((status) => {
-        if (status === 'SUBSCRIBED' || status === 'CHANNEL_ERROR' || status === 'TIMED_OUT') void laden()
-      })
-    return () => {
-      clearTimeout(timer)
-      void db.removeChannel(kanal)
-    }
-  }, [db, laden])
-
-  async function aendern(id: number, werte: Partial<AdminRunde>) {
-    const { error } = await db.from('runden').update(werte).eq('id', id)
-    if (error) setFehler(error.message)
-    await laden()
-  }
-
-  async function loeschen(id: number) {
-    if (!confirm('Eintrag endgültig löschen?')) return
-    const { error } = await db.from('runden').delete().eq('id', id)
-    if (error) setFehler(error.message)
-    await laden()
-  }
-
-  async function erledigt(id: number) {
-    const { error } = await db.from('review_warteschlange').update({ erledigt: true }).eq('id', id)
-    if (error) setFehler(error.message)
-    await laden()
-  }
-
-  // Gesichtet: Der Wortlaut wird sofort gelöscht (sonst nach 30 Tagen automatisch).
-  async function gesichtet(id: number) {
-    const { error } = await db.from('review_eingaben').delete().eq('id', id)
-    if (error) setFehler(error.message)
-    await laden()
-  }
-
-  const anzahl = (id: Reiter) =>
-    id === 'pruefung' || id === 'testphase' || id === 'luecken'
-      ? null
-      : id === 'review'
-        ? review.length
-        : id === 'ohne'
-          ? ohne.length
-          : runden.filter((r) => reiterVon(r) === id).length
-  const themaName = (id: number | null) => (id === null ? null : (themen.get(id) ?? `Thema ${id}`))
-  const sichtbar = runden.filter((r) => reiterVon(r) === reiter)
-  const jetzt = () => new Date().toISOString()
+  const [reiter, setReiter] = useState<Reiter>('vorschlaege')
 
   return (
     <main>
@@ -246,160 +132,110 @@ function Moderation() {
             aria-current={r.id === reiter ? 'page' : undefined}
             onClick={() => setReiter(r.id)}
           >
-            {r.name} {anzahl(r.id) !== null && <span className="admin-zahl">{anzahl(r.id)}</span>}
+            {r.name}
           </button>
         ))}
       </nav>
-      {fehler && (
-        <p className="admin-fehler" role="alert">
-          {fehler}
-        </p>
-      )}
-
       {reiter === 'pruefung' ? (
         <Pruefung />
       ) : reiter === 'testphase' ? (
         <Testphase />
-      ) : reiter === 'luecken' ? (
-        <Luecken themaName={themaName} />
-      ) : reiter === 'ohne' ? (
-        <>
-          <p className="admin-hinweis">
-            Runden ohne Wertung mit den Eingaben im Wortlaut – zum Prüfen, ob die KI richtig eingeordnet hat. Nur hier
-            sichtbar, nie öffentlich. „Gesichtet“ löscht den Eintrag; spätestens nach 30 Tagen wird er automatisch
-            gelöscht.
-          </p>
-          {ohne.length === 0 && <p className="admin-leer">Nichts offen.</p>}
-          <ul className="admin-liste">
-            {ohne.map((e) => (
-              <li key={e.id} className="admin-eintrag">
-                {e.eingaben.map((t, i) => (
-                  <p key={i} className="admin-text">
-                    {e.eingaben.length > 1 && <span className="admin-klein">{i === 0 ? 'Eingabe' : `Antwort ${i}`}: </span>}
-                    {t}
-                  </p>
-                ))}
-                {e.zusammenfassung && <p className="admin-klein">Kurzfassung der KI: {e.zusammenfassung}</p>}
-                <div className="admin-aktionen">
-                  <span className="admin-klein">
-                    {zeit(e.created_at)} · {GRUND_TEXTE[e.grund] ?? e.grund}
-                    {themaName(e.thema_id) && ` · ${themaName(e.thema_id)}`}
-                  </span>
-                  <button className="knopf knopf-klein" onClick={() => gesichtet(e.id)}>
-                    Gesichtet
-                  </button>
-                </div>
-              </li>
-            ))}
-          </ul>
-        </>
-      ) : reiter === 'review' ? (
-        <>
-          <p className="admin-hinweis">
-            Probleme ohne passendes Thema in der Datenbank. Neue Themen und Maßnahmen werden mit Quellen im Repo
-            ergänzt; hier nur abhaken, was gesichtet ist.
-          </p>
-          {review.length === 0 && <p className="admin-leer">Nichts offen.</p>}
-          <ul className="admin-liste">
-            {review.map((e) => (
-              <li key={e.id} className="admin-eintrag">
-                <p className="admin-text">{e.problem_text}</p>
-                {e.einschaetzung && <p className="admin-klein">KI-Einschätzung (ungeprüft): {e.einschaetzung}</p>}
-                <div className="admin-aktionen">
-                  <span className="admin-klein">{zeit(e.created_at)}</span>
-                  <button className="knopf knopf-klein" onClick={() => erledigt(e.id)}>
-                    Gesichtet
-                  </button>
-                </div>
-              </li>
-            ))}
-          </ul>
-        </>
+      ) : reiter === 'katalog' ? (
+        <Katalog />
       ) : (
-        <>
-          {reiter === 'offen' && (
-            <p className="admin-hinweis">
-              Nur neutrale Stichwörter ohne Namen, Orte oder Beleidigungen freigeben. Freigegebene Stichwörter
-              erscheinen derzeit nirgends öffentlich: Die Wortwolke zeigt die erfassten Themen.
-            </p>
-          )}
-          {sichtbar.length === 0 && <p className="admin-leer">Keine Einträge.</p>}
-          <ul className="admin-liste">
-            {sichtbar.map((r) => (
-              <RundenEintrag
-                key={r.id}
-                runde={r}
-                onFreigeben={(stichwort) =>
-                  aendern(r.id, { stichwort, freigegeben: true, abgelehnt: false, moderiert_am: jetzt() })
-                }
-                onAblehnen={() => aendern(r.id, { freigegeben: false, abgelehnt: true, moderiert_am: jetzt() })}
-                onZuruecksetzen={() => aendern(r.id, { freigegeben: false, abgelehnt: false, moderiert_am: null })}
-                onLoeschen={() => loeschen(r.id)}
-              />
-            ))}
-          </ul>
-        </>
+        <Vorschlaege />
       )}
     </main>
   )
 }
 
-function RundenEintrag({
-  runde,
-  onFreigeben,
-  onAblehnen,
-  onZuruecksetzen,
-  onLoeschen,
-}: {
-  runde: AdminRunde
-  onFreigeben: (stichwort: string) => void
-  onAblehnen: () => void
-  onZuruecksetzen: () => void
-  onLoeschen: () => void
-}) {
-  const [stichwort, setStichwort] = useState(runde.stichwort ?? runde.problem_text.slice(0, 40))
-  const bereinigt = stichwort.trim().replace(/\s+/g, ' ')
-  const gueltig = bereinigt.length >= 1 && bereinigt.length <= 40
-  const warnung = filterText(pruefeText(bereinigt))
-  const offen = !runde.freigegeben && !runde.abgelehnt
+/** Themenvorschläge (Tabelle themen_vorschlaege): offene zuerst; „Erledigt“ hakt ab, „Löschen“ entfernt sofort. */
+function Vorschlaege() {
+  const db = adminDb!
+  const [liste, setListe] = useState<ThemenVorschlag[]>([])
+  const [erledigte, setErledigte] = useState(false)
+  const [fehler, setFehler] = useState<string | null>(null)
+
+  const laden = useCallback(async () => {
+    const { data, error } = await db
+      .from('themen_vorschlaege')
+      .select('id, created_at, text, erledigt')
+      .order('created_at', { ascending: false })
+      .limit(500)
+    setFehler(error ? `${error.message} – ist die Migration 20261103000000_keine_eingaben_speichern.sql ausgeführt?` : null)
+    if (data) setListe(data as ThemenVorschlag[])
+  }, [db])
+
+  useEffect(() => {
+    let timer: ReturnType<typeof setTimeout> | undefined
+    const baldLaden = () => {
+      clearTimeout(timer)
+      timer = setTimeout(() => void laden(), 500)
+    }
+    const kanal = db
+      .channel('vorschlaege')
+      .on('postgres_changes', { event: '*', schema: 'public', table: 'themen_vorschlaege' }, baldLaden)
+      // Erst laden, wenn der Kanal steht – so geht keine Änderung dazwischen verloren.
+      // Klappt Realtime nicht, trotzdem einmal laden.
+      .subscribe((status) => {
+        if (status === 'SUBSCRIBED' || status === 'CHANNEL_ERROR' || status === 'TIMED_OUT') void laden()
+      })
+    return () => {
+      clearTimeout(timer)
+      void db.removeChannel(kanal)
+    }
+  }, [db, laden])
+
+  async function erledigen(id: number, erledigt: boolean) {
+    const { error } = await db.from('themen_vorschlaege').update({ erledigt }).eq('id', id)
+    if (error) setFehler(error.message)
+    await laden()
+  }
+
+  async function loeschen(id: number) {
+    if (!confirm('Vorschlag endgültig löschen?')) return
+    const { error } = await db.from('themen_vorschlaege').delete().eq('id', id)
+    if (error) setFehler(error.message)
+    await laden()
+  }
+
+  const offen = liste.filter((v) => !v.erledigt)
+  const sichtbar = erledigte ? liste.filter((v) => v.erledigt) : offen
 
   return (
-    <li className="admin-eintrag">
-      <p className="admin-text">{runde.problem_text}</p>
-      {runde.filter_grund && <p className="admin-warnung">Filter: {filterText(runde.filter_grund)}</p>}
-      {offen ? (
-        <label className="admin-stichwort">
-          Stichwort
-          <input value={stichwort} maxLength={40} onChange={(e) => setStichwort(e.target.value)} />
-        </label>
-      ) : (
-        <p className="admin-klein">
-          Stichwort: <strong>{runde.stichwort ?? '–'}</strong>
+    <>
+      <p className="admin-hinweis">
+        Themen, die Spielende über „Thema vorschlagen“ ausdrücklich eingereicht haben – ohne KI, ohne Bezug zu einer
+        Runde. Nie öffentlich; spätestens nach 180 Tagen automatisch gelöscht. Auswerten lässt sich die Liste auch mit{' '}
+        <code>npm run vorschlaege</code>.
+      </p>
+      {fehler && (
+        <p className="admin-fehler" role="alert">
+          {fehler}
         </p>
       )}
-      {offen && warnung && <p className="admin-warnung">Achtung, Stichwort: {warnung}</p>}
-      <div className="admin-aktionen">
-        <span className="admin-klein">
-          {zeit(runde.created_at)} · {runde.status === 'gewertet' ? 'gewertet' : runde.status === 'unvollstaendig' ? 'Partei noch nicht erfasst' : 'ungeprüft'}
-        </span>
-        {offen ? (
-          <>
-            <button className="knopf knopf-klein" disabled={!gueltig} onClick={() => onFreigeben(bereinigt)}>
-              Freigeben
-            </button>
-            <button className="knopf knopf-klein knopf-leise" onClick={onAblehnen}>
-              Ablehnen
-            </button>
-          </>
-        ) : (
-          <button className="knopf knopf-klein knopf-leise" onClick={onZuruecksetzen}>
-            {runde.freigegeben ? 'Zurückziehen' : 'Wieder öffnen'}
-          </button>
-        )}
-        <button className="knopf knopf-klein knopf-gefahr" onClick={onLoeschen}>
-          Löschen
+      <p className="admin-aktionen">
+        <button className="knopf knopf-klein knopf-leise" onClick={() => setErledigte((e) => !e)}>
+          {erledigte ? `Offene zeigen (${offen.length})` : `Erledigte zeigen (${liste.length - offen.length})`}
         </button>
-      </div>
-    </li>
+      </p>
+      {sichtbar.length === 0 && <p className="admin-leer">{erledigte ? 'Keine erledigten Vorschläge.' : 'Nichts offen.'}</p>}
+      <ul className="admin-liste">
+        {sichtbar.map((v) => (
+          <li key={v.id} className="admin-eintrag">
+            <p className="admin-text">{v.text}</p>
+            <div className="admin-aktionen">
+              <span className="admin-klein">{zeit(v.created_at)}</span>
+              <button className="knopf knopf-klein" onClick={() => erledigen(v.id, !v.erledigt)}>
+                {v.erledigt ? 'Wieder öffnen' : 'Erledigt'}
+              </button>
+              <button className="knopf knopf-klein knopf-gefahr" onClick={() => loeschen(v.id)}>
+                Löschen
+              </button>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </>
   )
 }

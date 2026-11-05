@@ -134,7 +134,7 @@ Für Haltung 1 (Tempolimit) und 2 (Zuwanderung) hat die Betreiberin am 4. 10. 20
 | Blinde Einordnung (zwei Prüfende, nur Frage und Zitat ohne Parteinamen) | beide bestätigen alle 13 Einordnungen, auch die Grenzfälle der Zuwanderung (BSW, Union, SPD, Grüne) – `einordnung_bestaetigt: 2` |
 | Belege (Betreiberin) | alle 14 Positionen korrekt belegt – `belege_geprueft: 2026-10-04`; bei „Keine Aussage“ (BSW, Tempolimit) mit Vermerk zur zweiten Suche |
 
-Damit sind die Positionen beider Haltungen `geprueft: true`. `ki_entwurf` bleibt als Herkunftsangabe stehen. Sobald der Seed in Supabase liegt, erscheinen die Karten ohne Hinweis auf einen KI-Entwurf – im Spiel aber weiterhin nur, wo die App freigeschaltet ist (geschlossene Testphase, `VITE_OFFEN`). Haltung 3 hat keine Positionen und bleibt zurückgestellt.
+Damit sind die Positionen beider Haltungen `geprueft: true`. `ki_entwurf` bleibt als Herkunftsangabe stehen. Sobald der Seed in Supabase liegt, erscheinen die Karten ohne Hinweis auf einen KI-Entwurf – im Spiel aber weiterhin nur, wo die App freigeschaltet ist (Zugangslink zur geschlossenen Testphase oder freigegebene Beta, `einstellungen.ki_entwuerfe_oeffentlich`). Haltung 3 hat keine Positionen und bleibt zurückgestellt.
 
 ## Weitere Haltungen (KI-Entwurf)
 

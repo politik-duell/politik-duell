@@ -31,8 +31,8 @@ export const lies = (datei: string): Zeile[] =>
       }
     })
 
-/** Alle Transkripte von nebenwirkungen-recherche: Sitzung, Datei, Zeilen. */
-export function agentenTranskripte(ordner = TRANSKRIPTE): { sitzung: string; zeilen: Zeile[] }[] {
+/** Alle Transkripte eines Agenten (Standard: nebenwirkungen-recherche, auch rollen-recherche): Sitzung, Datei, Zeilen. */
+export function agentenTranskripte(ordner = TRANSKRIPTE, agent = 'nebenwirkungen-recherche'): { sitzung: string; zeilen: Zeile[] }[] {
   if (!existsSync(ordner)) return []
   return readdirSync(ordner, { withFileTypes: true })
     .filter((d) => d.isDirectory() && existsSync(join(ordner, d.name, 'subagents')))
@@ -40,7 +40,7 @@ export function agentenTranskripte(ordner = TRANSKRIPTE): { sitzung: string; zei
       const sub = join(ordner, d.name, 'subagents')
       return readdirSync(sub)
         .filter((f) => f.endsWith('.meta.json'))
-        .filter((f) => JSON.parse(readFileSync(join(sub, f), 'utf8')).agentType === 'nebenwirkungen-recherche')
+        .filter((f) => JSON.parse(readFileSync(join(sub, f), 'utf8')).agentType === agent)
         .map((f) => join(sub, f.replace('.meta.json', '.jsonl')))
         .filter(existsSync)
         .map((datei) => ({ sitzung: d.name, zeilen: lies(datei) }))
@@ -48,9 +48,9 @@ export function agentenTranskripte(ordner = TRANSKRIPTE): { sitzung: string; zei
 }
 
 /** Auftrag (Thema, Teil) aus der ersten Nachricht eines Transkripts. */
-export function auftragDes(zeilen: Zeile[]): { thema: number; teil: number } | undefined {
+export function auftragDes(zeilen: Zeile[], auftrag = AUFTRAG): { thema: number; teil: number } | undefined {
   const erste = zeilen.find((z) => z.type === 'user' && typeof z.message?.content === 'string')
-  const t = (erste?.message?.content as string | undefined)?.match(AUFTRAG)
+  const t = (erste?.message?.content as string | undefined)?.match(auftrag)
   return t ? { thema: Number(t[1]), teil: Number(t[2]) } : undefined
 }
 
@@ -79,10 +79,15 @@ export function werkzeugeAus(zeilen: Zeile[]): Werkzeuge {
 }
 
 /** Werkzeuge des jüngsten Agenten für Thema und Teil, oder undefined ohne Transkript (andere Umgebung). */
-export function werkzeugeDesTeils(thema: number, teil: number, ordner = TRANSKRIPTE): Werkzeuge | undefined {
-  const passend = agentenTranskripte(ordner)
+export function werkzeugeDesTeils(
+  thema: number,
+  teil: number,
+  ordner = TRANSKRIPTE,
+  { agent, auftrag }: { agent?: string; auftrag?: RegExp } = {},
+): Werkzeuge | undefined {
+  const passend = agentenTranskripte(ordner, agent)
     .filter((t) => {
-      const a = auftragDes(t.zeilen)
+      const a = auftragDes(t.zeilen, auftrag)
       return a?.thema === thema && a.teil === teil
     })
     .sort((a, b) => (a.zeilen[0]?.timestamp ?? '').localeCompare(b.zeilen[0]?.timestamp ?? ''))

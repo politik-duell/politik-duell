@@ -55,7 +55,7 @@ export function Start({
               <span className="einwilligung-text">
                 Ich bin einverstanden, dass eine KI meine Eingaben wie in der{' '}
                 <a href="#/datenschutz">Datenschutzerklärung</a> beschrieben einordnet. Mir ist klar, dass sie
-                politische Meinungen erkennen lassen können.
+                politische Meinungen erkennen lassen können. Ich bin mindestens 16 Jahre alt.
               </span>
               <Kreuzfeld />
             </label>
@@ -66,8 +66,8 @@ export function Start({
         )}
         <p className="datenschutz">
           <strong>Datenschutz:</strong> Keine Konten, keine Cookies, keine IP-Adressen, kein Audio. Deine Eingaben
-          ordnet eine KI (Mistral, EU) ein. Gespeichert wird eine anonyme, neutrale Kurzfassung des Problems; endet eine
-          Runde ohne Wertung, sehen wir den Wortlaut zur Prüfung (höchstens 30 Tage). Die
+          ordnet eine KI (Mistral, EU) ein; wir speichern sie nicht – weder im Wortlaut noch als Kurzfassung oder
+          Ergebnis. Gespeichert wird nur, was du ausdrücklich als Thema vorschlägst. Die
           Wortwolke im Hintergrund zeigt die Themen, die das Spiel schon werten kann – keine Eingaben.{' '}
           <a href="#/datenschutz">Mehr erfahren</a>
         </p>

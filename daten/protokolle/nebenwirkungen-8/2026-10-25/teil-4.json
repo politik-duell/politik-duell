@@ -1,0 +1,137 @@
+{
+  "pruefsumme": "6d4343d70a94dd6e",
+  "thema_id": 8,
+  "thema": "Bus und Bahn",
+  "ziel": "Menschen kommen mit Bus und Bahn zuverlässig, in vertretbarer Zeit und zu bezahlbaren Preisen ans Ziel, auch auf dem Land.",
+  "ursachen": [
+    "Rund 21 Millionen Menschen fehlt ein gutes Grundangebot an Bus und Bahn, besonders auf dem Land",
+    "Marodes, überaltertes Schienennetz; laut Bundesrechnungshof steuert der Bund seine Mittel für den Erhalt kaum wirksam",
+    "Zu wenige Bus- und Straßenbahnfahrerinnen und -fahrer; in den nächsten zehn Jahren gehen rund vier von zehn Beschäftigten in Verkehrsberufen in den Ruhestand",
+    "Tickets werden teurer: Das Deutschlandticket kostet seit Januar 2026 63 Euro im Monat; den Preis legen die Länder fest, Bund und Länder zahlen je 1,5 Milliarden Euro im Jahr zu"
+  ],
+  "teil": 4,
+  "teile": 6,
+  "einheiten": [
+    {
+      "id": 6752,
+      "name": "Stillgelegte Strecken und Haltepunkte reaktivieren (Land)",
+      "ebene": "land",
+      "begruendung": "Verbessert die Anbindung einzelner Orte deutlich, erreicht insgesamt aber wenige Menschen; Planung und Bau dauern Jahre.",
+      "ursache": 1
+    },
+    {
+      "id": 6771,
+      "name": "Starre Linienverkehre durch flexible, bedarfsgerechte Angebote ergänzen",
+      "ebene": "bund",
+      "begruendung": "On-Demand-Angebote können Lücken im ländlichen Raum schließen, befördern aber wenige Menschen je Fahrt und sind teuer; Angebot und Finanzierung liegen bei Ländern und Kommunen.",
+      "ursache": 1
+    },
+    {
+      "id": 6774,
+      "name": "ÖPNV im ländlichen Raum bedarfsgerecht ausbauen",
+      "ebene": "bund",
+      "begruendung": "Benennt das Ziel eines besseren Angebots auf dem Land, aber keinen Weg und keine Finanzierung; Angebot und Bestellung liegen bei Ländern und Kommunen.",
+      "ursache": 1
+    },
+    {
+      "id": 6787,
+      "name": "Schülerbeförderung aus dem Landeshaushalt bezahlen, damit mehr Regionalisierungsmittel für das Angebot bleiben",
+      "ebene": "land",
+      "begruendung": "Macht Geld für zusätzliche Fahrten frei, ohne neue Bundesmittel; das Land muss die Schülerbeförderung dafür dauerhaft aus dem eigenen Haushalt bezahlen.",
+      "ursache": 1
+    },
+    {
+      "id": 6789,
+      "name": "Flächendeckendes Nahverkehrsangebot sichern statt Buslinien kürzen",
+      "ebene": "land",
+      "begruendung": "Sichert das bestehende Angebot gegen Kürzungen, nennt aber weder Umfang noch Finanzierung eines Ausbaus.",
+      "ursache": 1
+    },
+    {
+      "id": 6802,
+      "name": "Nahverkehrsabgabe für Betriebe ab 50 Beschäftigten",
+      "ebene": "land",
+      "begruendung": "Schafft eine zusätzliche Einnahmequelle für mehr Angebot, wie sie etwa Frankreich kennt; das Land braucht dafür eine eigene gesetzliche Grundlage, und die Abgabe belastet die Betriebe.",
+      "ursache": 1
+    }
+  ],
+  "suchhilfe": {
+    "haushalt": {
+      "frage": "Was kostet der Weg Bund, Ländern, Kommunen oder Sozialkassen – oder was bringt er ein?",
+      "vorteil": [
+        "Mehreinnahmen",
+        "Einsparung öffentlicher Haushalt",
+        "Entlastung Sozialversicherung"
+      ],
+      "nachteil": [
+        "Mindereinnahmen",
+        "Kosten Bundeshaushalt",
+        "Haushaltsausgaben Gesetzentwurf"
+      ]
+    },
+    "wirtschaft": {
+      "frage": "Welche Kosten oder Entlastungen entstehen für Unternehmen (besonders kleine und mittlere), wie wirkt er auf Preise und Verbraucher?",
+      "vorteil": [
+        "Entlastung Unternehmen",
+        "sinkende Preise",
+        "Investitionen"
+      ],
+      "nachteil": [
+        "Kosten für Unternehmen",
+        "Preisanstieg",
+        "Wettbewerbsfähigkeit"
+      ]
+    },
+    "aufwand": {
+      "frage": "Welcher Aufwand für Anträge, Nachweise und Kontrollen entsteht oder entfällt – für Bürger, Wirtschaft, Verwaltung?",
+      "vorteil": [
+        "Bürokratieabbau",
+        "Erfüllungsaufwand sinkt"
+      ],
+      "nachteil": [
+        "Erfüllungsaufwand",
+        "Nachweispflichten",
+        "Normenkontrollrat Stellungnahme"
+      ]
+    },
+    "umwelt": {
+      "frage": "Wie wirkt er auf Emissionen, Natur und Ressourcen, und welche Lasten oder Vorteile hat er für spätere Jahre?",
+      "vorteil": [
+        "Emissionsminderung",
+        "Umweltentlastung"
+      ],
+      "nachteil": [
+        "Mehremissionen",
+        "Umweltrisiken",
+        "Flächenverbrauch"
+      ]
+    },
+    "verteilung": {
+      "frage": "Wer gewinnt, wer trägt die Last – nach Einkommen, Alter, Familienform, Stadt und Land?",
+      "vorteil": [
+        "Entlastung geringe Einkommen",
+        "Verteilungswirkung progressiv"
+      ],
+      "nachteil": [
+        "regressiv",
+        "Mitnahmeeffekte",
+        "profitieren höhere Einkommen"
+      ]
+    },
+    "grundrechte": {
+      "frage": "Schränkt er Freiheiten ein oder stärkt er sie, behandelt er Gruppen ungleich, wie wirkt er auf Gesundheit und Sicherheit?",
+      "vorteil": [
+        "Gesundheit verbessert",
+        "Schutz",
+        "Gleichstellung"
+      ],
+      "nachteil": [
+        "Datenschutz",
+        "Grundrechtseingriff",
+        "Benachteiligung",
+        "Gesundheitsrisiko"
+      ]
+    }
+  },
+  "quellen": []
+}

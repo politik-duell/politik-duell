@@ -200,9 +200,11 @@ Hängt eine Maßnahme ganz oder teilweise von EU-Entscheidungen ab, die Deutschl
 | 2 | umsetzbar mit Aufwand oder in mehreren Jahren |
 | 3 | rechtlich möglich, finanziert und innerhalb einer Wahlperiode realistisch |
 
-### Rollen-Modifikator (−2 bis +2, optional)
+### Rollen-Modifikator (−2 bis +2, optional – vorerst ausgesetzt)
 
-Nur wenn eine Maßnahme für eine Rolle nachweislich deutlich besser oder schlechter wirkt (z. B. Mietrecht für Mieter:innen vs. Eigentümer:innen). Immer mit Begründung. Auf Wirksamkeit 3 hebt der Modifikator nur bei `evidenz: belegt`; sonst zählt er höchstens bis 2 (die Prüfung warnt). Rollen: `mieter`, `eigentuemer`, `angestellt`, `selbststaendig`, `rentner`, `arbeitslos`, `studierend`, `vermoegend`.
+**Zählt vorerst nicht** (seit 25. 10. 2026, `docs/methode.md` → „Rollen“): Das Spiel bietet keine Rollenwahl, die Wertung nutzt nur den Grundwert. Vorhandene Modifikatoren bleiben und werden weiter geprüft; neue nicht nachtragen, `/rollen-erfassen` ruht.
+
+Nur wenn eine Maßnahme für eine Rolle nachweislich deutlich besser oder schlechter wirkt (z. B. Mietrecht für Mieter:innen vs. Eigentümer:innen). Immer mit Begründung und Beleg: `{ "wert": 1, "begruendung": "…", "quelle_url": "https://…" }` (ohne `quelle_url` warnt die Prüfung). Nachgetragen werden Modifikatoren mit `/rollen-erfassen` – ohne Parteinamen, jeder mit wörtlichem Beleg im Protokoll (`daten/protokolle/rollen-<ID>/`), als KI-Entwurf (`"ki_entwurf": true` am Modifikator). Auf Wirksamkeit 3 hebt der Modifikator nur bei `evidenz: belegt`; sonst zählt er höchstens bis 2 (die Prüfung warnt). Rollen: `mieter`, `eigentuemer`, `angestellt`, `selbststaendig`, `rentner`, `arbeitslos`, `studierend`, `vermoegend`.
 
 ### Stand der Forschung
 
@@ -365,7 +367,7 @@ Viele Programme schlagen denselben Lösungsweg vor – etwa ein Handyverbot an S
 - `schlagwoerter` braucht nur die Offline-Analyse ohne KI; kleingeschrieben, Umlaute als ae/oe/ue.
 - `beleg_programm_url` muss auf `programm_url` der Partei zeigen (bei Landeseinträgen auf die `url` des Landesprogramms), mit Seitenanker `#page=N`.
 - `evidenz`: Stand der Forschung, siehe „Stand der Forschung“. Pflicht, bevor eine Maßnahme `geprueft` wird, und bei KI-Entwürfen.
-- `ki_entwurf` (optional, bei Maßnahmen und `keine_massnahme`): `true`, wenn der Eintrag mit Hilfe einer KI erstellt wurde. Öffentlich zählt er wie jeder ungeprüfte Eintrag nicht („noch nicht erfasst“). In der **geschlossenen Testphase** (nur mit Zugangslink, siehe `supabase/EINRICHTEN.md`) zählt ein Eintrag, wenn jede Maßnahme darin geprüft oder KI-Entwurf ist – im Spiel deutlich als „vorläufige KI-Bewertung“ gekennzeichnet. Nach der menschlichen Prüfung bleibt das Feld als Herkunftsangabe stehen; entscheidend ist dann `geprueft`.
+- `ki_entwurf` (optional, bei Maßnahmen und `keine_massnahme`): `true`, wenn der Eintrag mit Hilfe einer KI erstellt wurde. Ohne Entwürfe zählt er wie jeder ungeprüfte Eintrag nicht („noch nicht erfasst“). In der **Alpha-/Beta-Phase** – mit Zugangslink zur geschlossenen Testphase oder für alle, wenn `einstellungen.ki_entwuerfe_oeffentlich` an ist (siehe `supabase/EINRICHTEN.md`) – zählt ein Eintrag, wenn jede Maßnahme darin geprüft oder KI-Entwurf ist – im Spiel deutlich als „vorläufige KI-Bewertung“ gekennzeichnet. Nach der menschlichen Prüfung bleibt das Feld als Herkunftsangabe stehen; entscheidend ist dann `geprueft`.
 - `beleg_studie_url` ist optional.
 - `bewertung` schreibt nur `npm run pruefung:uebernehmen` (siehe „Prüfung“), z. B. `{ "anzahl": 3, "median_w": 2, "median_u": 2, "spannweite": 1, "datum": "2026-10-05", "entwurf": [2, 3] }`. `wirksamkeit` und `umsetzbarkeit` müssen den Medianen entsprechen; `entwurf` hält die ursprünglichen Werte fest.
 - `stand` darf nicht vor dem `programm_stand` der Partei liegen (bei Landeseinträgen: vor dem `stand` des Landesprogramms).

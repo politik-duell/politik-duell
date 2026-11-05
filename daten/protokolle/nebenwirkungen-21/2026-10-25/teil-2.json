@@ -1,0 +1,136 @@
+{
+  "pruefsumme": "cf9d586fd586386b",
+  "thema_id": 21,
+  "thema": "Armut und Kinderarmut",
+  "ziel": "Menschen und ihre Kinder können ihren notwendigen Lebensunterhalt dauerhaft sichern und am gesellschaftlichen Leben teilnehmen.",
+  "ursachen": [
+    "Auch mit Grundsicherung bleibt bei manchen Haushalten eine Versorgungslücke: Rund drei Viertel der Tafelbesuchenden lebten 2020 in Haushalten mit Grundsicherungsbezug",
+    "Familienressourcen sichern den Lebensunterhalt von Kindern nicht immer: 2022 waren etwa 31 % der Alleinerziehenden armutsgefährdet (2018: rund 37 %)",
+    "Ein Teil der Anspruchsberechtigten nimmt Grundsicherung nicht in Anspruch; laut IAB-Studie (2012) sind Höhe des Anspruchs und erwartete Bezugsdauer die entscheidenden Einflussfaktoren"
+  ],
+  "teil": 2,
+  "teile": 5,
+  "einheiten": [
+    {
+      "id": 8616,
+      "name": "Steuerliche Entlastung für Alleinerziehende ausbauen oder als Abzug von der Steuerschuld gestalten (Bund)",
+      "ebene": "bund",
+      "begruendung": "Entlastet erwerbstätige Alleinerziehende, als Abzug von der Steuerschuld stärker bei kleinen Einkommen. Dagegen: Wer kaum Steuern zahlt, etwa im Grundsicherungsbezug, profitiert ohne Auszahlung kaum.",
+      "ursache": 2
+    },
+    {
+      "id": 8617,
+      "name": "Elterngeld-Mindestbetrag und Ersatzrate für geringe Einkommen anheben (Bund)",
+      "ebene": "bund",
+      "begruendung": "Erhöht das Einkommen von Familien mit kleinen Einkommen im ersten Lebensjahr. Dagegen: zeitlich begrenzt und bei Grundsicherungsbezug weitgehend angerechnet.",
+      "ursache": 2
+    },
+    {
+      "id": 8618,
+      "name": "Kindergeld an die Entwicklung des Kinderfreibetrags koppeln bzw. angleichen (Bund)",
+      "ebene": "bund",
+      "begruendung": "Höheres Kindergeld erreicht alle Familien. Dagegen: Es wird auf die Grundsicherung angerechnet und senkt Armutsrisiken laut Evaluationen daher nur wenig; teuer bei geringer Zielgenauigkeit.",
+      "ursache": 2
+    },
+    {
+      "id": 8619,
+      "name": "Unterhaltsvorschuss: Kindergeld nur teilweise anrechnen, Bezugsdauer ausweiten (Bund)",
+      "ebene": "bund",
+      "begruendung": "Erhöht die Leistung für Alleinerziehende ohne Unterhalt. Dagegen: Im Grundsicherungsbezug wird der Unterhaltsvorschuss angerechnet, der Zugewinn kommt nur Haushalten oberhalb davon zugute.",
+      "ursache": 2
+    },
+    {
+      "id": 8620,
+      "name": "Existenzminimum und Umgangsmehrbedarf von Kindern in Trennungsfamilien absichern (Bund)",
+      "ebene": "bund",
+      "begruendung": "Deckt Mehrkosten, wenn Kinder in zwei Haushalten leben, und schließt so eine Lücke für Trennungsfamilien. Dagegen: betrifft eine begrenzte Gruppe, Ausgestaltung offen.",
+      "ursache": 2
+    },
+    {
+      "id": 8623,
+      "name": "Familien mit niedrigem Lohneinkommen sollen durch Kindergeld, Kinderzuschlag und Wohngeld nicht auf Bürgergeld angewiesen sein.",
+      "ebene": "bund",
+      "begruendung": "Kinderzuschlag und Wohngeld gelten als zielgenau gegen Armutsrisiken erwerbstätiger Eltern. Dagegen: geringe Inanspruchnahme und Schnittstellenprobleme, Ausgestaltung und Höhe offen.",
+      "ursache": 2
+    }
+  ],
+  "suchhilfe": {
+    "haushalt": {
+      "frage": "Was kostet der Weg Bund, Ländern, Kommunen oder Sozialkassen – oder was bringt er ein?",
+      "vorteil": [
+        "Mehreinnahmen",
+        "Einsparung öffentlicher Haushalt",
+        "Entlastung Sozialversicherung"
+      ],
+      "nachteil": [
+        "Mindereinnahmen",
+        "Kosten Bundeshaushalt",
+        "Haushaltsausgaben Gesetzentwurf"
+      ]
+    },
+    "wirtschaft": {
+      "frage": "Welche Kosten oder Entlastungen entstehen für Unternehmen (besonders kleine und mittlere), wie wirkt er auf Preise und Verbraucher?",
+      "vorteil": [
+        "Entlastung Unternehmen",
+        "sinkende Preise",
+        "Investitionen"
+      ],
+      "nachteil": [
+        "Kosten für Unternehmen",
+        "Preisanstieg",
+        "Wettbewerbsfähigkeit"
+      ]
+    },
+    "aufwand": {
+      "frage": "Welcher Aufwand für Anträge, Nachweise und Kontrollen entsteht oder entfällt – für Bürger, Wirtschaft, Verwaltung?",
+      "vorteil": [
+        "Bürokratieabbau",
+        "Erfüllungsaufwand sinkt"
+      ],
+      "nachteil": [
+        "Erfüllungsaufwand",
+        "Nachweispflichten",
+        "Normenkontrollrat Stellungnahme"
+      ]
+    },
+    "umwelt": {
+      "frage": "Wie wirkt er auf Emissionen, Natur und Ressourcen, und welche Lasten oder Vorteile hat er für spätere Jahre?",
+      "vorteil": [
+        "Emissionsminderung",
+        "Umweltentlastung"
+      ],
+      "nachteil": [
+        "Mehremissionen",
+        "Umweltrisiken",
+        "Flächenverbrauch"
+      ]
+    },
+    "verteilung": {
+      "frage": "Wer gewinnt, wer trägt die Last – nach Einkommen, Alter, Familienform, Stadt und Land?",
+      "vorteil": [
+        "Entlastung geringe Einkommen",
+        "Verteilungswirkung progressiv"
+      ],
+      "nachteil": [
+        "regressiv",
+        "Mitnahmeeffekte",
+        "profitieren höhere Einkommen"
+      ]
+    },
+    "grundrechte": {
+      "frage": "Schränkt er Freiheiten ein oder stärkt er sie, behandelt er Gruppen ungleich, wie wirkt er auf Gesundheit und Sicherheit?",
+      "vorteil": [
+        "Gesundheit verbessert",
+        "Schutz",
+        "Gleichstellung"
+      ],
+      "nachteil": [
+        "Datenschutz",
+        "Grundrechtseingriff",
+        "Benachteiligung",
+        "Gesundheitsrisiko"
+      ]
+    }
+  },
+  "quellen": []
+}

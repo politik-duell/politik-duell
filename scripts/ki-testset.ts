@@ -105,7 +105,7 @@ async function frage(fall: Fall, runde: number): Promise<Lauf> {
         return frageMistral(s, n, { key: key!, modell })
       })
     }
-    const { antwort, unsicher } = await ordneEin(fragen, verlauf, null, { ...katalog, haltungen }, () => 0)
+    const { antwort, unsicher } = await ordneEin(fragen, verlauf, { ...katalog, haltungen }, () => 0)
     const urteil = beurteile(fall, antwort)
     return { fall, runde, antwort, unsicher, urteil: nurThema ? { ...urteil, ursachen: null, ok: urteil.typ && urteil.thema } : urteil }
   } catch (e) {

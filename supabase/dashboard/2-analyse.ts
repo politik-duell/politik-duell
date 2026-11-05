@@ -5,184 +5,6 @@
 // analyse/index.ts
 import { createClient } from "npm:@supabase/supabase-js@2";
 
-// _shared/bewertung.ts
-var MAX_JE_URSACHE = 9;
-var gewichtNachRang = (rang) => 1 / 2 ** rang;
-var zehntel = (x) => Math.round(x * 10);
-var findeAbdeckung = (abdeckung, parteiId, themaId, land = null) => abdeckung.find((a) => a.partei_id === parteiId && a.thema_id === themaId && (a.land ?? null) === land) ?? null;
-function programmFuer(ursacheId, ebenen) {
-  if (!ebenen?.land) return null;
-  const ebene = ebenen.ursachen.find((u) => u.id === ursacheId)?.ebene ?? "bund";
-  return ebene === "land" ? ebenen.land : null;
-}
-function massnahmenPunkte(m, rolle) {
-  const mod = rolle ? m.rollen_modifikator?.[rolle] : void 0;
-  const rollenBonus = mod?.wert ?? 0;
-  const hoechstens = m.evidenz === "gemischt" || m.evidenz === "offen" ? Math.max(2, m.wirksamkeit) : 3;
-  const wirksamkeit = Math.min(hoechstens, Math.max(0, m.wirksamkeit + rollenBonus));
-  return {
-    punkte: wirksamkeit * m.umsetzbarkeit,
-    wirksamkeit,
-    rollenBonus,
-    rollenBegruendung: mod?.begruendung
-  };
-}
-function bewertePartei(partei, themaId, ursachenIds, rolle, massnahmen, abdeckung, ebenen) {
-  const benoetigt = ursachenIds.length ? [
-    ...new Set(ursachenIds.map((id) => programmFuer(id, ebenen)))
-  ] : [
-    null
-  ];
-  const programme = [];
-  const ohneWertung = (fehlt) => ({
-    partei,
-    punkte: 0,
-    treffer: [],
-    ursachen: [],
-    abdeckung: null,
-    fehlt,
-    programme: []
-  });
-  for (const land of benoetigt) {
-    let url = partei.programm_url;
-    let stand = partei.programm_stand;
-    if (land !== null) {
-      const lp = ebenen?.landesprogramme.find((p) => p.partei_id === partei.id && p.land === land);
-      if (!lp) return ohneWertung({
-        grund: "nicht_erfasst",
-        land
-      });
-      if (!lp.url || !lp.stand) return ohneWertung({
-        grund: "kein_landesprogramm",
-        land,
-        begruendung: lp.kein_programm ?? void 0
-      });
-      url = lp.url;
-      stand = lp.stand;
-    }
-    const a = findeAbdeckung(abdeckung, partei.id, themaId, land);
-    if (!a) return ohneWertung({
-      grund: "nicht_erfasst",
-      land
-    });
-    if (a.durchsucht_fuer && ursachenIds.some((id) => programmFuer(id, ebenen) === land && !a.durchsucht_fuer.includes(id))) return ohneWertung({
-      grund: "nicht_erfasst",
-      land
-    });
-    programme.push({
-      land,
-      url,
-      stand,
-      abdeckung: a
-    });
-  }
-  const erfasst = programme.every((p) => p.abdeckung.art === "keine") ? programme[0].abdeckung : programme.find((p) => p.abdeckung.art === "massnahmen").abdeckung;
-  const eigene = massnahmen.filter((m) => m.partei_id === partei.id && m.thema_id === themaId);
-  const trefferJeMassnahme = /* @__PURE__ */ new Map();
-  const ursachen = [];
-  let zehntelSumme = 0;
-  for (const ursacheId of ursachenIds) {
-    const land = programmFuer(ursacheId, ebenen);
-    const jeWeg = /* @__PURE__ */ new Map();
-    for (const m of eigene) {
-      if (!m.ursachen_ids.includes(ursacheId) || (m.land ?? null) !== land) continue;
-      const p = massnahmenPunkte(m, rolle);
-      const weg = m.instrument_id != null ? `i${m.instrument_id}` : `m${m.id}`;
-      const bisher = jeWeg.get(weg);
-      if (!bisher || p.punkte > bisher.p.punkte) jeWeg.set(weg, {
-        m,
-        p
-      });
-    }
-    if (!jeWeg.size) continue;
-    const wege = [
-      ...jeWeg.values()
-    ].sort((x, y) => y.p.punkte - x.p.punkte || x.m.id - y.m.id);
-    const gezaehlt = wege.filter((w, i) => i === 0 || w.p.punkte > 0);
-    const beitraege = gezaehlt.map((w, rang) => ({
-      massnahme_id: w.m.id,
-      punkte: w.p.punkte,
-      gewicht: gewichtNachRang(rang)
-    }));
-    const roh = beitraege.reduce((s, b) => s + b.punkte * b.gewicht, 0);
-    const punkteUrsache = Math.min(zehntel(MAX_JE_URSACHE), zehntel(roh));
-    zehntelSumme += punkteUrsache;
-    ursachen.push({
-      ursache_id: ursacheId,
-      punkte: punkteUrsache / 10,
-      beitraege,
-      gedeckelt: roh > MAX_JE_URSACHE
-    });
-    for (const { m, p } of gezaehlt) {
-      const vorhanden = trefferJeMassnahme.get(m.id);
-      if (vorhanden) {
-        vorhanden.ursachen_ids.push(ursacheId);
-      } else {
-        trefferJeMassnahme.set(m.id, {
-          massnahme: m,
-          ursachen_ids: [
-            ursacheId
-          ],
-          punkteJeUrsache: p.punkte,
-          rollenBonus: p.rollenBonus,
-          wirksamkeit: p.wirksamkeit,
-          rollenBegruendung: p.rollenBegruendung
-        });
-      }
-    }
-  }
-  const punkte = zehntelSumme / 10;
-  const kiEntwurf = programme.some((p) => p.abdeckung.ki_entwurf);
-  const treffer = [
-    ...trefferJeMassnahme.values()
-  ];
-  const nichtBlind = treffer.some((t) => t.massnahme.ki_entwurf && t.massnahme.entwurf_herkunft !== "blind");
-  return {
-    partei,
-    punkte,
-    treffer,
-    ursachen,
-    abdeckung: erfasst,
-    programme,
-    ...kiEntwurf ? {
-      ki_entwurf: true
-    } : {},
-    ...nichtBlind ? {
-      nicht_blind: true
-    } : {}
-  };
-}
-function rundenpunkte(a, b) {
-  if (a === 0 && b === 0) return [
-    0,
-    0
-  ];
-  if (a === b) return [
-    1,
-    1
-  ];
-  return a > b ? [
-    1,
-    0
-  ] : [
-    0,
-    1
-  ];
-}
-function werteRunde(a, b) {
-  if (!a.abdeckung || !b.abdeckung) return {
-    status: "unvollstaendig",
-    punkte: [
-      0,
-      0
-    ]
-  };
-  return {
-    status: "gewertet",
-    punkte: rundenpunkte(a.punkte, b.punkte)
-  };
-}
-
 // _shared/fehler.ts
 var EingabeFehler = class extends Error {
 };
@@ -290,16 +112,6 @@ function bereinigeStichwort(roh, ersatz) {
 }
 
 // _shared/typen.ts
-var ROLLEN_IDS = [
-  "mieter",
-  "eigentuemer",
-  "angestellt",
-  "selbststaendig",
-  "rentner",
-  "arbeitslos",
-  "studierend",
-  "vermoegend"
-];
 var MAX_AUSWAHL = 3;
 function auswahlErlaubt(ids, gruppe) {
   return ids.filter((id) => !gruppe?.ursachen_ids.includes(id)).length <= MAX_AUSWAHL;
@@ -312,16 +124,6 @@ var MAX_TEXTLAENGE = 500;
 var NACHFRAGE_BEISPIEL = "Magst du ein Beispiel nennen, wann dich das zuletzt betroffen hat?";
 var NACHFRAGE_FORDERUNG = "Was soll sich dadurch in deinem Alltag \xE4ndern?";
 var NACHFRAGE_URSACHE = "Was genau macht dir dabei Sorgen? Beschreib kurz, woran es in deinem Alltag hakt.";
-var ROLLEN_TEXT = {
-  mieter: "Mieter:in",
-  eigentuemer: "Eigent\xFCmer:in",
-  angestellt: "Angestellt",
-  selbststaendig: "Selbstst\xE4ndig",
-  rentner: "Rentner:in",
-  arbeitslos: "Arbeitslos",
-  studierend: "Studierend",
-  vermoegend: "Verm\xF6gend"
-};
 function themenPrompt(themen, haltungen = []) {
   return baueSystemPrompt(themen, null, haltungen);
 }
@@ -591,8 +393,8 @@ function genanntesSymptom(schritt2, thema) {
   const nr = alsObjekt(schritt2).symptom;
   return Number.isInteger(nr) ? thema.symptome?.find((s) => s.nr === nr) : void 0;
 }
-async function ordneEin(frage, verlauf, rolle, { themen, ursachen, parteien = [], haltungen = [] }, zufall = Math.random) {
-  const r1 = alsObjekt(await frage(themenPrompt(themen, haltungen), nutzerNachrichten(verlauf, rolle)));
+async function ordneEin(frage, verlauf, { themen, ursachen, parteien = [], haltungen = [] }, zufall = Math.random) {
+  const r1 = alsObjekt(await frage(themenPrompt(themen, haltungen), nutzerNachrichten(verlauf)));
   let roh = {
     ...r1,
     ursachen_ids: []
@@ -671,24 +473,16 @@ function bereinigeAbweichung(satz, parteien) {
   if (text.length < 10 || text.length > 200 || text.includes("[Partei]") || pruefeText(text)) return null;
   return text;
 }
-function rollenHinweis(rolle) {
-  const text = (r) => r ? ROLLEN_TEXT[r] : "keine Angabe";
-  const rollen = [
-    ...new Set(Array.isArray(rolle) ? rolle : [
-      rolle
-    ])
-  ];
-  if (rollen.length === 1) return `Rolle der Person: ${text(rollen[0])}.`;
-  return `Die beiden Spielenden haben verschiedene Rollen angegeben (${rollen.map(text).join("; ")}); wer gerade schreibt, ist offen.`;
-}
-function nutzerNachrichten(verlauf, rolle) {
+function nutzerNachrichten(verlauf) {
   const nachfragen = verlauf.filter((n) => n.von === "ki").length;
-  const hinweis = rollenHinweis(rolle) + (nachfragen === 1 ? " Es wurde schon einmal nachgefragt: Falls du noch einmal nachfragst, frag anders als zuvor, z. B. nach einem konkreten Beispiel aus dem Alltag, und gib die Forderung nicht noch einmal wieder." : "") + (nachfragen >= MAX_NACHFRAGEN ? ' Es wurde bereits zweimal nachgefragt: Ordne jetzt abschlie\xDFend ein und stelle keine Nachfrage mehr. Bleibt es bei einer Forderung ohne Alltagsproblem, ordne sie als "forderung" ein und schreib in "rueckmeldung" 1\u20132 kurze S\xE4tze: die Forderung neutral aufgreifen, sagen, dass hier L\xF6sungen f\xFCr konkrete Alltagsprobleme gewertet werden, und zu einem solchen Problem einladen. W\xE4hle nur Ursachen, die sich aus dem Gesagten erkennen lassen.' : "");
+  const hinweis = ((nachfragen === 1 ? " Es wurde schon einmal nachgefragt: Falls du noch einmal nachfragst, frag anders als zuvor, z. B. nach einem konkreten Beispiel aus dem Alltag, und gib die Forderung nicht noch einmal wieder." : "") + (nachfragen >= MAX_NACHFRAGEN ? ' Es wurde bereits zweimal nachgefragt: Ordne jetzt abschlie\xDFend ein und stelle keine Nachfrage mehr. Bleibt es bei einer Forderung ohne Alltagsproblem, ordne sie als "forderung" ein und schreib in "rueckmeldung" 1\u20132 kurze S\xE4tze: die Forderung neutral aufgreifen, sagen, dass hier L\xF6sungen f\xFCr konkrete Alltagsprobleme gewertet werden, und zu einem solchen Problem einladen. W\xE4hle nur Ursachen, die sich aus dem Gesagten erkennen lassen.' : "")).trim();
   return [
-    {
-      role: "system",
-      content: hinweis
-    },
+    ...hinweis ? [
+      {
+        role: "system",
+        content: hinweis
+      }
+    ] : [],
     ...verlauf.map((n) => ({
       role: n.von === "spieler" ? "user" : "assistant",
       content: n.text
@@ -722,21 +516,17 @@ function pruefeAnfrage(roh) {
 function pruefeSeiten(a) {
   const roh = a.seiten === void 0 ? [
     {
-      rolle: a.rolle,
       land: a.land
     },
     {
-      rolle: a.rolle,
       land: a.land
     }
   ] : a.seiten;
   if (!Array.isArray(roh) || roh.length !== 2) throw new EingabeFehler("Ung\xFCltige Seiten.");
   const seiten = roh.map((s) => {
-    const { rolle, land } = s ?? {};
-    if (rolle !== null && rolle !== void 0 && !ROLLEN_IDS.includes(rolle)) throw new EingabeFehler("Ung\xFCltige Rolle.");
+    const { land } = s ?? {};
     if (land !== null && land !== void 0 && (typeof land !== "string" || !/^[A-Z]{2}$/.test(land))) throw new EingabeFehler("Ung\xFCltiges Bundesland.");
     return {
-      rolle: rolle ?? null,
       land: land ?? null
     };
   });
@@ -1122,13 +912,14 @@ Deno.serve(async (req) => {
     const ursachen = ursachenRes.data;
     const parteien = parteienRes.data;
     const testphase = anfrage.zugang ? await zugangGueltig(anfrage.zugang) : false;
-    const themen = mitSymptomen(themenRes.data, testphase);
+    const entwuerfe = testphase || await entwuerfeOeffentlich();
+    const themen = mitSymptomen(themenRes.data, entwuerfe);
     let antwort;
     if (anfrage.auswahl) {
       antwort = antwortAusAuswahl(anfrage.auswahl, themen, ursachen);
     } else {
-      const haltungen = await vollstaendigeHaltungen(testphase);
-      antwort = (await ordneEin(frageMistral2, anfrage.verlauf, anfrage.seiten.map((s) => s.rolle), {
+      const haltungen = await vollstaendigeHaltungen(entwuerfe);
+      antwort = (await ordneEin(frageMistral2, anfrage.verlauf, {
         themen,
         ursachen,
         parteien,
@@ -1137,12 +928,7 @@ Deno.serve(async (req) => {
     }
     if (antwort.typ === "forderung" && !antwort.pauschal && antwort.thema_id !== null) {
       const thema = themen.find((t) => t.id === antwort.thema_id);
-      if (thema) antwort = mitInstrument(antwort, await erkenneInstrument(thema, anfrage.verlauf, anfrage.seiten.map((s) => s.land), testphase));
-    }
-    const vorschlag = !anfrage.auswahl && antwort.typ === "problem" && antwort.ursachen_ids.length > 0;
-    if (!antwort.nachfrage && !vorschlag) {
-      const original = anfrage.verlauf.filter((n) => n.von === "spieler").map((n) => n.text);
-      await speichereRunde(antwort, anfrage.parteien, anfrage.seiten, testphase, original, parteien, ursachen);
+      if (thema) antwort = mitInstrument(antwort, await erkenneInstrument(thema, anfrage.verlauf, anfrage.seiten.map((s) => s.land), entwuerfe));
     }
     return json(antwort);
   } catch (e) {
@@ -1155,11 +941,11 @@ Deno.serve(async (req) => {
     }, 502);
   }
 });
-async function erkenneInstrument(thema, verlauf, laender, testphase) {
+async function erkenneInstrument(thema, verlauf, laender, entwuerfe) {
   try {
     let iAbfrage = db.from("instrumente").select("id, thema_id, name, ebene").eq("thema_id", thema.id);
     let mAbfrage = db.from("massnahmen").select("instrument_id, land").eq("thema_id", thema.id).not("instrument_id", "is", null);
-    if (!testphase) {
+    if (!entwuerfe) {
       iAbfrage = iAbfrage.eq("ki_entwurf", false);
       mAbfrage = mAbfrage.eq("ki_entwurf", false);
     }
@@ -1178,10 +964,10 @@ async function erkenneInstrument(thema, verlauf, laender, testphase) {
     return null;
   }
 }
-async function vollstaendigeHaltungen(testphase) {
+async function vollstaendigeHaltungen(entwuerfe) {
   try {
     let vAbfrage = db.from("haltungen_vollstaendig").select("haltung_id");
-    if (!testphase) vAbfrage = vAbfrage.eq("geprueft", true);
+    if (!entwuerfe) vAbfrage = vAbfrage.eq("geprueft", true);
     const [vRes, hRes] = await Promise.all([
       vAbfrage,
       db.from("haltungen").select("id, frage").order("id")
@@ -1195,161 +981,19 @@ async function vollstaendigeHaltungen(testphase) {
     return [];
   }
 }
-function mitSymptomen(themen, testphase) {
+function mitSymptomen(themen, entwuerfe) {
   return themen.map((t) => ({
     ...t,
-    symptome: (t.symptome ?? []).filter((s) => testphase || !s.ki_entwurf)
+    symptome: (t.symptome ?? []).filter((s) => entwuerfe || !s.ki_entwurf)
   }));
+}
+async function entwuerfeOeffentlich() {
+  const { data, error } = await db.from("einstellungen").select("ki_entwuerfe_oeffentlich").maybeSingle();
+  if (error) return false;
+  return data?.ki_entwuerfe_oeffentlich === true;
 }
 async function zugangGueltig(token) {
   const { data, error } = await db.from("testphase_zugaenge").select("id").eq("token_hash", await tokenHash(token)).eq("gesperrt", false).maybeSingle();
   if (error) throw error;
   return data !== null;
-}
-async function speichereRunde(antwort, [parteiA, parteiB], seiten, testphase, original, parteien, ursachen) {
-  if (antwort.typ === "grenze") {
-    await Promise.all([
-      db.from("runden").insert({
-        problem_text: "",
-        status: "grenze",
-        partei_a: parteiA,
-        partei_b: parteiB,
-        testphase
-      }),
-      merkeOhneWertung("grenze", original, null, null)
-    ]);
-    return;
-  }
-  const stichwort = antwort.stichwort ?? null;
-  const basis = {
-    problem_text: antwort.zusammenfassung,
-    stichwort,
-    // Automatischer Filter: Treffer landen in der Admin-Ansicht unter „Vom Filter gestoppt“.
-    filter_grund: pruefeText(stichwort, antwort.zusammenfassung, ...original),
-    partei_a: parteiA,
-    partei_b: parteiB,
-    testphase
-  };
-  if (antwort.typ === "wert") {
-    await Promise.all([
-      db.from("runden").insert({
-        ...basis,
-        status: "wert",
-        ...antwort.haltung_id ? {
-          haltung_id: antwort.haltung_id
-        } : {}
-      }),
-      merkeOhneWertung("wert", original, null, antwort.zusammenfassung)
-    ]);
-    return;
-  }
-  if (antwort.typ === "forderung") {
-    await Promise.all([
-      db.from("runden").insert({
-        ...basis,
-        status: "forderung",
-        thema_id: antwort.thema_id,
-        ...antwort.instrument_id ? {
-          instrument_id: antwort.instrument_id
-        } : {}
-      }),
-      merkeOhneWertung("forderung", original, antwort.thema_id, antwort.zusammenfassung)
-    ]);
-    return;
-  }
-  if (antwort.passt_nicht && antwort.thema_id !== null) {
-    await Promise.all([
-      db.from("runden").insert({
-        ...basis,
-        status: "ungeprueft",
-        thema_id: antwort.thema_id
-      }),
-      merkeOhneWertung("ungeprueft", original, antwort.thema_id, antwort.zusammenfassung)
-    ]);
-    return;
-  }
-  if (antwort.thema_id === null) {
-    await Promise.all([
-      db.from("runden").insert({
-        ...basis,
-        status: "ungeprueft"
-      }),
-      db.from("review_warteschlange").insert({
-        problem_text: antwort.zusammenfassung,
-        einschaetzung: antwort.einschaetzung ?? null
-      }),
-      merkeOhneWertung("ungeprueft", original, null, antwort.zusammenfassung)
-    ]);
-    return;
-  }
-  let mAbfrage = db.from("massnahmen").select("*").eq("thema_id", antwort.thema_id).in("partei_id", [
-    parteiA,
-    parteiB
-  ]);
-  let aAbfrage = db.from("abdeckung").select("*").eq("thema_id", antwort.thema_id).in("partei_id", [
-    parteiA,
-    parteiB
-  ]);
-  if (!testphase) {
-    mAbfrage = mAbfrage.eq("ki_entwurf", false);
-    aAbfrage = aAbfrage.eq("ki_entwurf", false);
-  }
-  const laender = [
-    ...new Set(seiten.map((s) => s.land).filter((l) => l !== null))
-  ];
-  const [mRes, aRes, lpRes] = await Promise.all([
-    mAbfrage,
-    aAbfrage,
-    laender.length ? db.from("landesprogramme").select("*").in("land", laender).in("partei_id", [
-      parteiA,
-      parteiB
-    ]) : Promise.resolve({
-      data: [],
-      error: null
-    })
-  ]);
-  const fehler = mRes.error ?? aRes.error ?? lpRes.error;
-  if (fehler) {
-    console.error("speichereRunde:", fehler.message);
-    return;
-  }
-  const massnahmen = mRes.data;
-  const abdeckung = aRes.data;
-  const a = parteien.find((p) => p.id === parteiA);
-  const b = parteien.find((p) => p.id === parteiB);
-  if (!a || !b) return;
-  const landesprogramme = lpRes.data;
-  const [ea, eb] = [
-    a,
-    b
-  ].map((p, i) => bewertePartei(p, antwort.thema_id, antwort.ursachen_ids, seiten[i].rolle, massnahmen, abdeckung, {
-    land: seiten[i].land,
-    ursachen,
-    landesprogramme
-  }));
-  const { status } = werteRunde(ea, eb);
-  const punkte = status === "gewertet" ? {
-    punkte_a: ea.punkte,
-    punkte_b: eb.punkte
-  } : {};
-  await Promise.all([
-    db.from("runden").insert({
-      ...basis,
-      thema_id: antwort.thema_id,
-      status,
-      ...punkte
-    }),
-    status === "gewertet" ? null : merkeOhneWertung(status, original, antwort.thema_id, antwort.zusammenfassung)
-  ]);
-}
-async function merkeOhneWertung(grund, original, themaId, zusammenfassung) {
-  const eingaben = original.map((t) => t.trim().slice(0, 2e3)).filter(Boolean).slice(-3);
-  if (!eingaben.length) return;
-  const { error } = await db.from("review_eingaben").insert({
-    grund,
-    eingaben,
-    thema_id: grund === "grenze" ? null : themaId,
-    zusammenfassung: grund === "grenze" ? null : zusammenfassung?.slice(0, 200) || null
-  });
-  if (error) console.error("merkeOhneWertung:", error.message);
 }
