@@ -67,7 +67,20 @@
       "begruendung": "Ein erfüllter Anspruch verbessert den Zugang direkt, setzt aber ausreichende Plätze und Personal voraus. Die Umsetzung hängt deshalb von regionaler Kapazität und Finanzierung ab.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/fruehe-bildung-bedarfsgerechte-angebote-fehlen-weiterhin.html",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [
+          {
+            "bereich": "verteilung",
+            "richtung": "vorteil",
+            "text": "In Regionen mit einem Kita-Ausbauschock fallen die Erwerbseinbußen von Müttern ein Jahr nach der Geburt beim Jahreseinkommen um rund 1,5 Prozentpunkte geringer aus.",
+            "quelle_url": "https://doku.iab.de/kurzgraf/2026/kb2026-15_A4.pdf",
+            "belegstufe": "B"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7273,
@@ -76,7 +89,12 @@
       "umsetzbarkeit": 3,
       "begruendung": "Kürzere Verfahren können den Ausbau erleichtern, schaffen aber weder Bauflächen noch Personal. Verwaltungsvereinfachungen sind innerhalb einer Wahlperiode realistisch.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7274,
@@ -86,7 +104,20 @@
       "begruendung": "Zusätzliche und gesicherte Plätze wirken unmittelbar gegen Angebotslücken; der tatsächliche Effekt hängt von Personalverfügbarkeit und regionaler Planung ab. Investitionen und laufende Kosten begrenzen das Tempo.",
       "evidenz": "belegt",
       "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/fruehe-bildung-bedarfsgerechte-angebote-fehlen-weiterhin.html",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [
+          {
+            "bereich": "verteilung",
+            "richtung": "vorteil",
+            "text": "In Regionen mit starkem Kita-Ausbau fallen die Erwerbseinbußen von Müttern ein Jahr nach der Geburt beim Jahreseinkommen um rund 1,5 Prozentpunkte geringer aus (IAB-Studie).",
+            "quelle_url": "https://doku.iab.de/kurzgraf/2026/kb2026-15_A4.pdf",
+            "belegstufe": "B"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7275,
@@ -96,7 +127,12 @@
       "begruendung": "Eine verlässliche Finanzierung kann Plätze erhalten und Ausbau ermöglichen. Der Effekt hängt davon ab, ob Mittel zusätzlich bereitgestellt und tatsächlich für Kapazitäten eingesetzt werden.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.dji.de/themen/kinderbetreuung/kita-personalbedarf.html",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7276,
@@ -106,7 +142,12 @@
       "begruendung": "Kleinräumige Planung kann Plätze besser an Bedarf und Bevölkerungsentwicklung anpassen. Sie behebt einen landesweiten Personal- oder Finanzmangel nicht allein.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/fruehe-bildung-bedarfsgerechte-angebote-fehlen-weiterhin.html",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7277,
@@ -116,7 +157,12 @@
       "begruendung": "Bedarfsgerechte Zeiten und Ersatzangebote können Versorgungslücken für Familien mit besonderen Arbeitszeiten abfedern. Personalbedarf, Nachfrage und Qualität begrenzen die flächendeckende Umsetzung.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.dji.de/themen/kinderbetreuung/eltern-wuenschen-sich-flexiblere-betreuungsangebote.html",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7278,
@@ -125,7 +171,12 @@
       "umsetzbarkeit": 1,
       "begruendung": "Nachtbetreuung hilft nur Familien mit entsprechendem Bedarf und löst die allgemeine Angebotslücke kaum. Der hohe Personal- und Organisationsaufwand erschwert eine Umsetzung in der Wahlperiode.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7279,
@@ -134,7 +185,12 @@
       "umsetzbarkeit": 2,
       "begruendung": "Betriebskitas schaffen zusätzliche Plätze und können Arbeitszeiten besser abdecken. Sie erreichen nicht alle Familien und benötigen Personal sowie tragfähige Trägerfinanzierung.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7280,
@@ -144,7 +200,27 @@
       "begruendung": "Investitionshilfen können zusätzliche Plätze und erreichbare Angebote ermöglichen. Die Wirkung hängt von kommunaler Planung, Kofinanzierung und verfügbarem Personal ab.",
       "evidenz": "belegt",
       "beleg_studie_url": "https://www.dji.de/themen/kinderbetreuung/kita-personalbedarf.html",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Zum Vergleich: Der Bund stellt den Ländern 2026 bis 2029 vier Milliarden Euro für Investitionen in Kitas sowie Hochschul- und Wissenschaftsinfrastruktur bereit; das sind nicht die Kosten dieses Wegs.",
+            "quelle_url": "https://www.bmbfsfj.bund.de/bmbfsfj/aktuelles/pressemitteilungen/neue-kitaplaetze-und-bessere-ausstattung-292166",
+            "belegstufe": "A"
+          },
+          {
+            "bereich": "verteilung",
+            "richtung": "vorteil",
+            "text": "In Regionen mit starkem Kita-Ausbau fallen die Erwerbseinbußen von Müttern ein Jahr nach der Geburt beim Jahreseinkommen um rund 1,5 Prozentpunkte geringer aus (IAB-Studie).",
+            "quelle_url": "https://doku.iab.de/kurzgraf/2026/kb2026-15_A4.pdf",
+            "belegstufe": "B"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7281,
@@ -153,7 +229,12 @@
       "umsetzbarkeit": 3,
       "begruendung": "Anreize können zusätzliche betriebliche Plätze mobilisieren, besonders für Beschäftigte mit passenden Arbeitszeiten. Wie viele zusätzliche Plätze dadurch entstehen, ist für die konkrete Ausgestaltung unsicher.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7282,
@@ -163,7 +244,12 @@
       "begruendung": "Eine automatische Information und Vermittlung kann administrative Hürden senken. Sie erhöht das Platzangebot nicht und hilft nur, wenn passende Plätze verfügbar sind.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/fruehe-bildung-bedarfsgerechte-angebote-fehlen-weiterhin.html",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7283,
@@ -173,7 +259,12 @@
       "begruendung": "Transparente Verfahren können Mehrfachanmeldungen und ungerechte Zugänge reduzieren. Ein digitales System schafft selbst keine zusätzlichen Betreuungsplätze.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/fruehe-bildung-bedarfsgerechte-angebote-fehlen-weiterhin.html",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7284,
@@ -182,7 +273,12 @@
       "umsetzbarkeit": 2,
       "begruendung": "Reservierte Plätze können einzelne Zugangsprobleme abfedern, verringern aber die Zahl regulär verfügbarer Plätze. Der Nutzen hängt von lokaler Nachfrage und verlässlicher Finanzierung ab.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7285,
@@ -191,7 +287,12 @@
       "umsetzbarkeit": 3,
       "begruendung": "Schnellere Bescheide erleichtern die Planung und beseitigen Verzögerungen im Verwaltungszugang. Sie schaffen keinen Platz, wenn das Angebot fehlt.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7286,
@@ -201,7 +302,12 @@
       "begruendung": "Die konkreten Zielwerte setzen direkt an der Personalausstattung an, die pädagogische Interaktionen ermöglicht. Die Verbesserung ist wirksam, erfordert angesichts des Fachkräftemangels aber zusätzliche Personal- und Finanzressourcen.",
       "evidenz": "belegt",
       "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/1756-verbesserte-personalschluessel-aber-belastung-durch-ausfaelle.html",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7287,
@@ -211,7 +317,12 @@
       "begruendung": "Mehr anrechenbare Personalzeit und die Berücksichtigung von Ausfällen können die Betreuung spürbar verbessern. Der Effekt bleibt begrenzt, wenn zusätzliche Fachkräfte nicht verfügbar sind.",
       "evidenz": "belegt",
       "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/1756-verbesserte-personalschluessel-aber-belastung-durch-ausfaelle.html",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7288,
@@ -221,7 +332,12 @@
       "begruendung": "Die Zielwerte verbessern die Personalausstattung gegenüber ungünstigen Ausgangslagen, bleiben aber hinter den fachlichen Empfehlungen zurück. Zusätzliches Personal ist nötig.",
       "evidenz": "belegt",
       "beleg_studie_url": "https://www.dji.de/themen/kinderbetreuung/plaetze-und-personalschluessel.html",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7289,
@@ -231,7 +347,12 @@
       "begruendung": "Die festen Stufen verbessern die Personalausstattung, bleiben aber deutlich hinter den fachlichen Empfehlungen von 1:3 und 1:7,5 zurück. Der Zeitplan ist bestimmt, das zusätzliche Personal muss bei Fachkräftemangel aber erst gewonnen werden.",
       "evidenz": "belegt",
       "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/1756-verbesserte-personalschluessel-aber-belastung-durch-ausfaelle.html",
-      "entwurf_herkunft": "nicht_blind"
+      "entwurf_herkunft": "nicht_blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7290,
@@ -241,7 +362,12 @@
       "begruendung": "Einheitliche Mindeststandards können die Qualität und Berücksichtigung von Ausfällen stärken. Die Länder setzen sie um; Personalverfügbarkeit und Finanzierung bestimmen die tatsächliche Wirkung.",
       "evidenz": "belegt",
       "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/1756-verbesserte-personalschluessel-aber-belastung-durch-ausfaelle.html",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7291,
@@ -251,7 +377,12 @@
       "begruendung": "Bessere Bezahlung und Arbeitsbedingungen können die Attraktivität und Bindung von Fachkräften erhöhen. Der Fachkräftemangel und die Tarif- und Haushaltskosten begrenzen Geschwindigkeit und Reichweite.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/personalkrise-in-der-kindertagesbetreuung-spitzt-sich-zu.html",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7292,
@@ -261,7 +392,20 @@
       "begruendung": "Die Refinanzierung kann Trägern ermöglichen, tarifliche Löhne zu zahlen und Personal zu halten. Der Bund kann Kosten mittragen, aber die tatsächliche Personalgewinnung ist nicht garantiert.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/personalkrise-in-der-kindertagesbetreuung-spitzt-sich-zu.html",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Zum Vergleich: Der Bund unterstützt die Länder über das KiQuTG 2025 und 2026 mit rund 4 Mrd. Euro; das sind nicht die Kosten dieses Wegs.",
+            "quelle_url": "https://dserver.bundestag.de/btd/21/051/2105102.pdf",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7293,
@@ -271,7 +415,12 @@
       "begruendung": "Mehr Ausbildungsplätze, Praxisanteile und Quereinstiege können mittelfristig den Personalzugang verbessern. Fehlende Lehrkräfte, Räume und Ausbildungserfolg begrenzen den Zuwachs.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/personalkrise-in-der-kindertagesbetreuung-spitzt-sich-zu.html",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7294,
@@ -281,7 +430,12 @@
       "begruendung": "Vergütung kann den Zugang zur Ausbildung erleichtern und die Zahl der Auszubildenden erhöhen. Ein unmittelbarer Effekt auf verfügbare Fachkräfte entsteht erst nach Ausbildungsabschluss.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/personalkrise-in-der-kindertagesbetreuung-spitzt-sich-zu.html",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7295,
@@ -291,7 +445,20 @@
       "begruendung": "Bundesmittel für vergütete Ausbildung, Kapazitäten und Qualifizierung können den Ländern beim Aufbau des Personals helfen. Wirkung und Zeitbedarf hängen von Länderumsetzung und Ausbildungserfolg ab.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/personalkrise-in-der-kindertagesbetreuung-spitzt-sich-zu.html",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Zum Vergleich: Der Bund unterstützt die Länder über das KiQuTG 2025 und 2026 mit rund 4 Mrd. Euro; das sind nicht die Kosten dieses Wegs.",
+            "quelle_url": "https://dserver.bundestag.de/btd/21/051/2105102.pdf",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7296,
@@ -300,7 +467,12 @@
       "umsetzbarkeit": 3,
       "begruendung": "Weniger unnötige Dokumentation kann Fachkräfte und Leitung entlasten. Freigesetzte Zeit ersetzt keine zusätzlichen Betreuungskräfte und hängt von einer sorgfältigen Auswahl der Pflichten ab.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7297,
@@ -309,7 +481,12 @@
       "umsetzbarkeit": 2,
       "begruendung": "Zusätzliche Unterstützung kann pädagogischen Fachkräften mehr Zeit für Kinder geben. Sie benötigt weiteres Personal und verbessert nicht automatisch die Fachkraft-Kind-Relation.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7298,
@@ -319,7 +496,12 @@
       "begruendung": "Zusätzliche spezialisierte Kräfte können Kinder mit besonderem Förderbedarf gezielter unterstützen. Fachkräftemangel und die Finanzierung dauerhafter Stellen begrenzen die Umsetzung.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/1756-verbesserte-personalschluessel-aber-belastung-durch-ausfaelle.html",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7299,
@@ -329,7 +511,12 @@
       "begruendung": "Faire Entgelte, Beratung und klare Vereinbarungen können Tagespflegepersonen halten und zusätzliche Plätze ermöglichen. Die Zahl der erreichbaren Plätze bleibt von der Gewinnung und Bindung der Betreuungspersonen abhängig.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/personalkrise-in-der-kindertagesbetreuung-spitzt-sich-zu.html",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7300,
@@ -339,7 +526,12 @@
       "begruendung": "Eine bessere Personalausstattung kann die Betreuungsqualität erhöhen. Eine Übertragung ohne Einkommensverluste erfordert zusätzliche Finanzierung und muss zur Struktur der Tagespflege passen.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/personalkrise-in-der-kindertagesbetreuung-spitzt-sich-zu.html",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7301,
@@ -349,7 +541,12 @@
       "begruendung": "Bundesunterstützung kann die Länder beim Erhalt und Ausbau ergänzender Betreuungsplätze unterstützen. Die konkrete Wirkung hängt von Umsetzung und dauerhafter Finanzierung vor Ort ab.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/personalkrise-in-der-kindertagesbetreuung-spitzt-sich-zu.html",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7302,
@@ -359,7 +556,20 @@
       "begruendung": "Beitragsfreiheit entlastet Familien und kann die Nutzung besonders bei jüngeren Kindern erhöhen. Sie schafft zusätzliche Nachfrage und kann Mittel binden, die sonst für Qualität oder Plätze verfügbar wären.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.dji.de/themen/kinderbetreuung/gebuehrenfreie-kitas-verstaerken-ungleiche-belastung-von-familien.html",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [
+          {
+            "bereich": "wirtschaft",
+            "richtung": "gemischt",
+            "text": "Nach einer DIW-Studie zu gebührenfreien letzten Kita-Jahren stieg die Erwerbstätigenquote der Mütter nicht; ihr Erwerbsvolumen stieg kurzfristig um gut 0,8 Stunden pro Woche.",
+            "quelle_url": "https://www.diw.de/documents/publikationen/73/diw_01.c.698962.de/19-48-1.pdf",
+            "belegstufe": "B"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7303,
@@ -369,7 +579,20 @@
       "begruendung": "Geringere Beiträge entlasten Familien und können den Zugang erleichtern, beseitigen aber nicht alle Zusatzkosten. Mehr Nachfrage kann bei knappen Plätzen den Zugang erschweren, wenn der Ausbau nicht Schritt hält.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.dji.de/themen/kinderbetreuung/gebuehrenfreie-kitas-verstaerken-ungleiche-belastung-von-familien.html",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [
+          {
+            "bereich": "wirtschaft",
+            "richtung": "gemischt",
+            "text": "Nach einer DIW-Studie zu gebührenfreien letzten Kita-Jahren stieg die Erwerbstätigenquote der Mütter nicht; ihr Erwerbsvolumen stieg kurzfristig um gut 0,8 Stunden pro Woche.",
+            "quelle_url": "https://www.diw.de/documents/publikationen/73/diw_01.c.698962.de/19-48-1.pdf",
+            "belegstufe": "B"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7304,
@@ -379,7 +602,12 @@
       "begruendung": "Ermäßigungen mindern die finanzielle Belastung größerer Familien, ohne die Kosten für alle Eltern abzuschaffen. Die Entlastung erreicht nur Familien, die die jeweilige Regelung nutzen.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.dji.de/themen/kinderbetreuung/gebuehrenfreie-kitas-verstaerken-ungleiche-belastung-von-familien.html",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7305,
@@ -389,7 +617,12 @@
       "begruendung": "Einkommensabhängige Beiträge können die Belastung gezielter bei Familien mit geringem Einkommen senken. Der Bund kann Vorgaben zur Staffelung machen, Höhe und Erhebung der Beiträge liegen aber bei Ländern und Kommunen; die Angebotsknappheit bleibt.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.dji.de/themen/kinderbetreuung/gebuehrenfreie-kitas-verstaerken-ungleiche-belastung-von-familien.html",
-      "entwurf_herkunft": "nicht_blind"
+      "entwurf_herkunft": "nicht_blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7306,
@@ -399,7 +632,12 @@
       "begruendung": "Steuerliche Abzüge können einen Teil der Kosten kompensieren. Die Entlastung ist geringer oder fehlt bei Familien mit niedriger Steuerlast und löst weder Platzmangel noch hohe laufende Beiträge direkt.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.oecd.org/en/publications/education-at-a-glance-2024_c00cad36-en.html",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7307,
@@ -409,7 +647,20 @@
       "begruendung": "Eine Finanzierung der tatsächlichen Kosten kann bessere Personalausstattung ermöglichen und Beitragsbelastungen begrenzen. Die Ausgabenhöhe und die Verteilung zwischen Land, Kommunen und Trägern sind anspruchsvoll.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.dji.de/themen/kinderbetreuung/plaetze-und-personalschluessel.html",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Zum Vergleich: Der Bund unterstützt die Länder über das KiQuTG 2025 und 2026 mit rund 4 Mrd. Euro bei Qualität und Teilhabe in der Kindertagesbetreuung; das sind nicht die Kosten dieses Wegs.",
+            "quelle_url": "https://dserver.bundestag.de/btd/21/051/2105102.pdf",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7308,
@@ -418,7 +669,12 @@
       "umsetzbarkeit": 2,
       "begruendung": "Ein zweckgebundener Zuschuss kann einzelne Familien bei den Kosten entlasten. Seine Reichweite hängt von Anspruchshöhe und Zugang ab und beeinflusst das Platzangebot nicht.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7309,
@@ -428,7 +684,20 @@
       "begruendung": "Ein Geldbetrag kann Familien finanziell entlasten, sichert aber keinen Kita-Platz und kann die Nachfrage nach Betreuung sogar senken. Die Kosten hängen von Anspruch und Leistungshöhe ab.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.dji.de/themen/kinderbetreuung/gebuehrenfreie-kitas-verstaerken-ungleiche-belastung-von-familien.html",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [
+          {
+            "bereich": "verteilung",
+            "richtung": "nachteil",
+            "text": "Eine Studie zu Betreuungsgeld-Regelungen in Deutschland findet für zugewanderte wie einheimische Mütter eine signifikant negative Wirkung auf die Erwerbsbeteiligung.",
+            "quelle_url": "https://www.wirtschaftsdienst.eu/inhalt/jahr/2023/heft/5/beitrag/betreuungsgeld-familienpolitische-leistung-oder-hindernis-bei-der-arbeitsmarktintegration.html",
+            "belegstufe": "B"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7310,
@@ -437,7 +706,12 @@
       "umsetzbarkeit": 2,
       "begruendung": "Kostenfreie Mahlzeiten senken einen Teil der Familienausgaben, lassen Elternbeiträge und weitere Zusatzkosten aber bestehen. Die Wirkung auf die Gesamtbelastung ist daher begrenzt.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7311,
@@ -446,7 +720,12 @@
       "umsetzbarkeit": 3,
       "begruendung": "Das Verhindern verpflichtender Zusatzforderungen kann unerwartete Kosten begrenzen. Es senkt nicht automatisch die regulären Elternbeiträge und muss mit der Finanzierung zusätzlicher Leistungen vereinbar sein.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7312,
@@ -455,7 +734,12 @@
       "umsetzbarkeit": 2,
       "begruendung": "Vorankündigung und Schlichtung könnten Familien mehr Planungssicherheit geben. Sie verhindern weder krankheitsbedingte Ausfälle noch lösen sie Personalengpässe; arbeitsrechtliche Ausgestaltung ist anspruchsvoll.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7313,
@@ -465,7 +749,12 @@
       "begruendung": "Zusätzliche Personalressourcen können Ausfälle auffangen und Betreuung stabilisieren. Eine dauerhafte Wirkung setzt verlässliche Finanzierung und verfügbare Fachkräfte voraus.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/1756-verbesserte-personalschluessel-aber-belastung-durch-ausfaelle.html",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7314,
@@ -475,7 +764,12 @@
       "begruendung": "Zusätzliche pädagogische Leitungs- und Personalzeit kann die Arbeit in Einrichtungen verbessern. Die Wirkung hängt davon ab, dass Mittel zusätzlich und dauerhaft für qualifiziertes Personal eingesetzt werden.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/1756-verbesserte-personalschluessel-aber-belastung-durch-ausfaelle.html",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7315,
@@ -484,7 +778,20 @@
       "umsetzbarkeit": 2,
       "begruendung": "Ein Betreuungsgehalt kann einzelne Familien finanziell entlasten, stellt aber keine bedarfsgerechte externe Betreuung sicher. Ob es die Platznachfrage dauerhaft senkt, ist unklar.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [
+          {
+            "bereich": "verteilung",
+            "richtung": "nachteil",
+            "text": "Eine Studie zu Betreuungsgeld-Regelungen in Deutschland findet für zugewanderte wie einheimische Mütter eine signifikant negative Wirkung auf die Erwerbsbeteiligung.",
+            "quelle_url": "https://www.wirtschaftsdienst.eu/inhalt/jahr/2023/heft/5/beitrag/betreuungsgeld-familienpolitische-leistung-oder-hindernis-bei-der-arbeitsmarktintegration.html",
+            "belegstufe": "B"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7316,
@@ -493,7 +800,12 @@
       "umsetzbarkeit": 2,
       "begruendung": "Bessere Arbeitsbedingungen können Belastungen mindern und die Bindung von Personal unterstützen. Der direkte Beitrag zu mehr verfügbaren Betreuungsstunden ist begrenzt und nicht gut untersucht.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7317,
@@ -502,7 +814,12 @@
       "umsetzbarkeit": 1,
       "begruendung": "Eine Priorisierung kann Plätze für bestimmte Familien zugänglicher machen, erhöht aber nicht die Zahl der Plätze und kann andere Familien benachteiligen. Ein bundesweiter Eingriff in die Vergabe erfordert Abstimmung mit Ländern und Kommunen.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7318,
@@ -512,7 +829,12 @@
       "begruendung": "Frühe Sprachförderung kann den Förderzugang verbessern, aber eine Pflicht erhöht nicht das knappe Platzangebot. Bedarfsermittlung, Zuständigkeit und Durchsetzung sind anspruchsvoll.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/1756-verbesserte-personalschluessel-aber-belastung-durch-ausfaelle.html",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7319,
@@ -522,7 +844,12 @@
       "begruendung": "Ein längerer Anspruch kann den Betreuungsumfang für Familien mit entsprechendem Bedarf direkt verbessern. Er verlangt zusätzliche Plätze und Personal und ist ohne entsprechende Kapazitäten innerhalb einer Wahlperiode schwer erfüllbar.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/fruehe-bildung-bedarfsgerechte-angebote-fehlen-weiterhin.html",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7320,
@@ -532,7 +859,20 @@
       "begruendung": "Gemeinsame Standards können regionale Mindestqualität und Ausfallberücksichtigung verbessern. Ihre Umsetzung erfordert Abstimmung mit den Ländern und zusätzliche Mittel, wenn sie über bestehende Ausstattung hinausgehen.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.dji.de/themen/kinderbetreuung/plaetze-und-personalschluessel.html",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Zum Vergleich: Der Bund unterstützt die Länder über das KiQuTG 2025 und 2026 mit rund 4 Mrd. Euro; das sind nicht die Kosten dieses Wegs.",
+            "quelle_url": "https://dserver.bundestag.de/btd/21/051/2105102.pdf",
+            "belegstufe": "A"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7321,
@@ -542,7 +882,27 @@
       "begruendung": "Gezielte Mittel können zusätzliche Kapazitäten und Förderung an Orten mit hohem Bedarf unterstützen. Ob Plätze entstehen, hängt von Umsetzung, Personal und ergänzender kommunaler Finanzierung ab.",
       "evidenz": "gemischt",
       "beleg_studie_url": "https://www.dji.de/veroeffentlichungen/aktuelles/news/article/fruehe-bildung-bedarfsgerechte-angebote-fehlen-weiterhin.html",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [
+          {
+            "bereich": "haushalt",
+            "richtung": "nachteil",
+            "text": "Zum Vergleich: Der Bund stellt den Ländern 2026 bis 2029 vier Milliarden Euro bereit; das sind nicht die Kosten dieses Wegs.",
+            "quelle_url": "https://www.bmbfsfj.bund.de/bmbfsfj/aktuelles/pressemitteilungen/neue-kitaplaetze-und-bessere-ausstattung-292166",
+            "belegstufe": "A"
+          },
+          {
+            "bereich": "verteilung",
+            "richtung": "vorteil",
+            "text": "In Regionen mit starkem Kita-Ausbau fallen die Erwerbseinbußen von Müttern ein Jahr nach der Geburt beim Jahreseinkommen um rund 1,5 Prozentpunkte geringer aus (IAB-Studie).",
+            "quelle_url": "https://doku.iab.de/kurzgraf/2026/kb2026-15_A4.pdf",
+            "belegstufe": "B"
+          }
+        ],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7322,
@@ -551,7 +911,12 @@
       "umsetzbarkeit": 1,
       "begruendung": "Ein Anspruch für ältere Kinder geht über das für dieses Thema erforderliche Kita-Angebot hinaus und schafft keinen Platz. Umfang, Zuständigkeiten und Finanzierung machen die Umsetzung schwierig.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7323,
@@ -560,7 +925,12 @@
       "umsetzbarkeit": 3,
       "begruendung": "Zusätzliche kostenpflichtige Leistungen verbessern die Bezahlbarkeit der Grundbetreuung nicht und können die Belastung von Familien erhöhen. Die Erlaubnis ist administrativ umsetzbar, wirkt aber dem Kostenziel nicht entgegen.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     },
     {
       "id": 7324,
@@ -569,7 +939,12 @@
       "umsetzbarkeit": 2,
       "begruendung": "Ein gezieltes Angebot kann den Zugang für Hochschulangehörige verbessern, löst aber nur einen kleinen Teil des allgemeinen Platzmangels. Personal- und Investitionsbedarf bleiben bestehen.",
       "evidenz": "offen",
-      "entwurf_herkunft": "blind"
+      "entwurf_herkunft": "blind",
+      "nebenwirkungen": {
+        "geprueft": "2026-11-05",
+        "hinweise": [],
+        "ki_entwurf": true
+      }
     }
   ],
   "abdeckung": [
