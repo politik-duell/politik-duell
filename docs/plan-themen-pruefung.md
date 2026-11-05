@@ -1,11 +1,14 @@
 # Plan: Themenbeschreibungen prüfen (November 2026)
 
-Stand 23. 10. 2026, Branch `fix/themen-zuordnung`. Die Beschreibungen von 14 Themen (1, 5, 10, 12, 14, 16, 21, 23, 24, 25, 27, 28, 29, 35) sind geschärft, damit Schritt 1 der Einordnung (`themenPrompt`) Alltagssätze dem richtigen Thema zuordnet. Geprüft ist das noch nicht: Das Mistral-Kontingent des Monats war durch Testläufe aufgebraucht.
+Stand 23. 10. 2026, Branch `fix/themen-zuordnung`. Die Beschreibungen von 14 Themen (1, 5, 10, 12, 14, 16, 21, 23, 24, 25, 27, 28, 29, 35) sind geschärft, damit Schritt 1 der Einordnung (`themenPrompt`) Alltagssätze dem richtigen Thema zuordnet. Geprüft ist das noch nicht: Das Mistral-Kontingent des Monats war durch Testläufe aufgebraucht. Stand 5. 11. 2026: Es gibt keinen Testschlüssel, siehe Regeln.
 
-## Vorher klären
+## Regeln für KI-Aufrufe
 
-- **Eigener Testschlüssel** mit eigenem Limit, getrennt vom Konto des Spiels. Ohne ihn läuft der Test nicht.
-- Jeder Lauf ist auf 100 KI-Aufrufe begrenzt (`scripts/ki-testset/grenze.ts`). Mehr nur nach Absprache mit `--max-anfragen`.
+Einen eigenen Testschlüssel gibt es nicht. Die Tests laufen über denselben Mistral-Schlüssel und dasselbe Kontingent wie das Spiel. Deshalb gilt:
+
+- **Jeder Lauf nur nach ausdrücklicher Zustimmung der Betreiberin**, mit vorher genannter Zahl der Aufrufe.
+- **Höchstens 100 Aufrufe je Lauf** (`scripts/ki-testset/grenze.ts`), nie `--max-anfragen` darüber. Keine Volläufe (`--alltag` ohne `--nur`, mehrere Runden über alle Fälle).
+- Zwischen zwei Läufen das Ergebnis auswerten. Nachprüfen nur gezielt einzelne Sätze, nicht den ganzen Satz neu.
 
 ## Ausgangslage
 
@@ -24,10 +27,10 @@ Lauf vom 22. 10. 2026 mit `npm run ki:testset -- --alltag --runden 3`, `mistral-
 
 ## Testlauf (83 Aufrufe)
 
-Ein Lauf, eine Runde, nur Schritt 1 (`--nur-thema`):
+Ein Lauf, eine Runde, nur Schritt 1 (`--nur-thema`), mit small wie im Live-Spiel. Die Ausgangslage stammt von medium: Was hier falsch ist, kann an der Beschreibung oder am Modell liegen. Kippt ein Kontrollsatz, ihn einzeln mit medium nachprüfen (1 Aufruf je Satz).
 
 ```sh
-MISTRAL_API_KEY=<Testschlüssel> npm run ki:testset -- --alltag --nur-thema --runden 1 --json ergebnis.json --nur \
+MISTRAL_MODEL=mistral-small-latest npm run ki:testset -- --alltag --nur-thema --runden 1 --json ergebnis.json --nur \
 alltag-102,alltag-503,alltag-504,alltag-505,alltag-506,alltag-507,alltag-604,alltag-605,symptom-6-1,alltag-909,alltag-1001,alltag-1105,alltag-1204,alltag-1603,alltag-2002,alltag-2103,symptom-22-2,alltag-2303,alltag-2403,alltag-2702,alltag-2705,symptom-27-1,alltag-2802,alltag-2803,alltag-2902,alltag-2904,alltag-3502,alltag-3802,alltag-4202,alltag-4203,alltag-4303,alltag-4503,alltag-4504,\
 alltag-404,alltag-2202,alltag-3604,alltag-4403,\
 alltag-101,alltag-103,symptom-1-1,alltag-501,alltag-502,symptom-5-1,alltag-1002,alltag-1003,alltag-1004,alltag-1005,symptom-10-1,alltag-1201,alltag-1202,alltag-1203,symptom-12-1,alltag-1401,alltag-1402,alltag-1403,alltag-1404,alltag-1601,alltag-1602,alltag-1604,symptom-16-1,alltag-2101,alltag-2102,alltag-2301,alltag-2302,alltag-2304,symptom-23-1,alltag-2401,alltag-2402,alltag-2404,alltag-2501,alltag-2502,alltag-2503,symptom-25-1,alltag-2701,alltag-2703,alltag-2704,alltag-2706,alltag-2801,alltag-2804,alltag-2901,alltag-2903,alltag-2905,alltag-3501
@@ -53,18 +56,18 @@ Gruppe C wird mitgetestet, aber dort ist keine Änderung zu erwarten.
 
 Mit dieser Fassung ist small nie gemessen worden. **Seit dem 23. 10. 2026 läuft das Live-Spiel mit small** (Secret `MISTRAL_MODEL` in Supabase). Gilt nach dem Vergleich medium, das Secret löschen. Ausgewählt wird das Modell mit `MISTRAL_MODEL=mistral-small-latest` vor dem Befehl, so wie in der Edge Function.
 
-1. **Thema (83 Aufrufe):** derselbe Befehl wie oben, nur mit small. Verglichen wird mit dem Lauf von medium aus diesem Plan.
-   - Abbrechen, wenn small mehr als 5 Sätze häufiger falsch zuordnet. Dann ist small für Schritt 1 ungeeignet.
-2. **Ganzer Ablauf (154 Aufrufe):** `npm run ki:testset -- --runden 1 --max-anfragen 160`, die 77 festen Fälle mit beiden Schritten, mit small.
-   - Vergleichswert ist medium vom 18. 10. 2026 mit 61 von 75 richtig (`docs/plan-symptome.md`).
+1. **Thema:** steckt im Testlauf oben (small, 83 Aufrufe).
+   - Ordnet small mehr als 5 der 46 Kontrollsätze falsch zu, die medium am 22. 10. richtig hatte, ist small für Schritt 1 fraglich. Nachprüfen nur diese Sätze mit medium.
+2. **Ganzer Ablauf:** die 77 festen Fälle mit beiden Schritten, small, eine Runde, in **zwei Läufen** zu je höchstens 100 Aufrufen (`--nur` mit den ersten bzw. letzten Fall-IDs aus `scripts/ki-testset/faelle.json`), jeder mit eigener Zustimmung.
+   - Vergleichswert ist medium vom 18. 10. 2026 mit 61 von 75 richtig (`docs/plan-symptome.md`). Der Prompt hat sich seitdem geändert (Rollen ausgesetzt, Gespräch), der Vergleich ist also nur grob.
    - **Wichtigste Kennzahl:** falsch vorausgewählte Ursachen (`zu_viel`, `falsch`). Small darf hier nicht schlechter sein als medium.
 
 **Entscheidung:**
-- **small für beide Schritte**, wenn small in beiden Läufen höchstens knapp unter medium liegt und keine zusätzlichen falschen Ursachen vorauswählt. Dafür das Secret `MISTRAL_MODEL` in Supabase anlegen (Edge Functions → Secrets). Es gilt ohne neue Version.
+- **small für beide Schritte**, wenn small in beiden Läufen höchstens knapp unter medium liegt und keine zusätzlichen falschen Ursachen vorauswählt. Das Secret `MISTRAL_MODEL` bleibt dann wie es ist.
 - **small nur für Schritt 2**, wenn Schritt 1 schlechter ist, die Ursachen aber stimmen. Das braucht eine kleine Codeänderung: ein eigenes Modell für Schritt 2.
-- **sonst medium.**
+- **sonst medium:** das Secret `MISTRAL_MODEL` in Supabase löschen (Edge Functions → Secrets).
 
-Zusammen sind das 237 Aufrufe mit small, zusätzlich zu den 83 mit medium. Alle Läufe kommen auf den Testschlüssel, nie auf den Schlüssel des Spiels.
+Zusammen rund 240 Aufrufe in drei Läufen, verteilt über den Monat, plus wenige Einzelprüfungen mit medium.
 
 ## Danach, je nach Entscheidung
 
