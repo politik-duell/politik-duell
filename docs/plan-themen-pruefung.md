@@ -81,6 +81,7 @@ Zusammen rund 240 Aufrufe in drei Läufen, verteilt über den Monat, plus wenige
 | zu viele / zu wenige / falsche Ursachen | 7 / 2 / 0 | – |
 
 - Kontrollsätze, die small falsch hat: 1604, 2404, 2704, 2801, 2901, 2903, 2905. Ob das am Modell oder an den neuen Beschreibungen liegt, trennt dieser Lauf nicht; Einzelprüfungen mit medium waren nicht freigegeben.
+- Nachprüfung mit medium (7 Aufrufe, freigegeben): 2404, 2801, 2901, 2903 richtig – das lag an small. Falsch auch mit medium: 1604 → 3, 2704 → 5, 2905 → 1. Ursache sind die neuen Beschreibungen (Thema 1 „Wege durchs Gesundheitssystem“ zieht den Therapieplatz an, Thema 27 ohne „Bezahlung“, Thema 16 ohne Mieter). Nachgebessert; die drei Sätze erneut prüfen (3 Aufrufe, braucht Freigabe).
 - small liegt im ganzen Ablauf deutlich unter medium, vor allem bei der Themenwahl. Falsche Ursachen wählt es nicht.
 - Rohdaten nicht im Repository (Antworten der KI); Zählung aus `ki:testset --json`.
 
