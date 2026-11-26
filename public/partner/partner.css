@@ -1,0 +1,102 @@
+/* Partnerseite politik-duell.de/partner/ (Pitch-Präsentation, statisch; Anpassungen in der Präsentation, dann neu erzeugen). */
+@font-face{font-family:'Space Grotesk';src:url(schriften/space-grotesk-latin-wght-normal.woff2) format('woff2');font-weight:300 700;font-display:swap}
+@font-face{font-family:'Public Sans';src:url(schriften/public-sans-latin-wght-normal.woff2) format('woff2');font-weight:100 900;font-display:swap}
+:root {
+  --navy: #14224A;
+  --blau: #1F4BB8;
+  --blau-hell: #E4EBFB;
+  --gold: #F2B441;
+  --papier: #F3F5F9;
+  --flaeche: #FBFCFE;
+  --tinte: #1A2233;
+  --leise: #4E586E;
+  --linie: #D3D9E3;
+  --nacht-leise: #C3CDE6;
+}
+
+body { font-family: 'Public Sans', Arial, sans-serif; color: var(--tinte); }
+
+section { padding: 128px 128px 160px; background: var(--papier); counter-increment: page; display: flex; flex-direction: column; }
+section.hell { background: var(--papier); }
+section.weiss { background: var(--flaeche); }
+section.dunkel { background: var(--navy); color: #F3F5F9; }
+section.akzent { background: var(--blau); color: #F7F9FD; }
+
+h1, h2, h3 { font-family: 'Space Grotesk', Arial, sans-serif; }
+h2.titel { font-size: 64px; font-weight: 600; line-height: 1.1; color: var(--navy); margin: 0 0 56px; max-width: 1500px; }
+section.dunkel h2.titel { color: #F3F5F9; }
+
+.eyebrow { font-family: 'Space Grotesk', Arial, sans-serif; font-size: 24px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--blau); margin: 0 0 20px; }
+section.dunkel .eyebrow { color: var(--gold); }
+section.akzent .eyebrow { color: #FFE2A8; }
+
+.lead { font-size: 30px; line-height: 1.45; color: var(--leise); margin: 0; }
+section.dunkel .lead { color: var(--nacht-leise); }
+
+.fuss { position: absolute; left: 128px; bottom: 64px; width: 1664px; display: flex; justify-content: space-between; font-size: 24px; color: var(--leise); }
+section.dunkel .fuss { color: var(--nacht-leise); }
+section.akzent .fuss { color: #D5DFF7; }
+.fuss .pg::after { content: counter(page); }
+.fuss p { font-size: 24px; margin: 0; }
+
+/* Karten */
+.reihe { display: flex; gap: 32px; }
+.karte { flex: 1; background: var(--flaeche); border: 2px solid var(--linie); border-radius: 24px; padding: 40px; display: flex; flex-direction: column; gap: 16px; }
+section.weiss .karte { background: var(--papier); }
+section.dunkel .karte { background: #1D2D5C; border-color: #2E4180; }
+.karte h3 { font-size: 40px; font-weight: 600; line-height: 1.15; color: var(--navy); margin: 0; }
+section.dunkel .karte h3 { color: #F3F5F9; }
+.karte .txt { font-size: 28px; line-height: 1.45; color: var(--leise); margin: 0; }
+section.dunkel .karte .txt { color: var(--nacht-leise); }
+.karte .nr { font-family: 'Space Grotesk', Arial, sans-serif; font-size: 30px; font-weight: 700; color: var(--navy); background: var(--gold); border-radius: 999px; width: 64px; height: 64px; display: flex; align-items: center; justify-content: center; margin: 0; }
+.karte x-icon { color: var(--blau); width: 56px; height: 56px; }
+section.dunkel .karte x-icon { color: var(--gold); }
+
+/* Große Zahlen */
+.zahlen { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 32px; }
+.zahl { background: var(--flaeche); border-radius: 24px; padding: 28px 36px; border-top: 8px solid var(--blau); display: flex; flex-direction: column; gap: 8px; }
+.zahl .wert { font-family: 'Space Grotesk', Arial, sans-serif; font-size: 80px; font-weight: 700; line-height: 1; color: var(--navy); margin: 0; }
+.zahl .was { font-size: 30px; font-weight: 600; color: var(--tinte); margin: 0; }
+.zahl .detail { font-size: 24px; line-height: 1.4; color: var(--leise); margin: 0; }
+
+/* Ankommen */
+@keyframes rein { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+.rein { animation: rein 520ms ease-out both; animation-delay: calc(var(--i, 0) * 110ms); }
+
+/* Tabellen */
+table.tab { font-size: 28px; color: var(--tinte); width: 100%; }
+table.tab th { text-align: left; color: var(--blau); font-weight: 700; }
+
+
+html,body{margin:0;height:100%;background:#0E1733;overflow:hidden;-webkit-font-smoothing:antialiased}
+#buehne{position:absolute;left:50%;top:50%;width:1920px;height:1080px;transform-origin:0 0}
+section{position:absolute;inset:0;width:1920px;height:1080px;box-sizing:border-box;opacity:0;visibility:hidden;transition:opacity .45s ease,visibility 0s linear .45s}
+section.aktiv{opacity:1;visibility:visible;transition:opacity .45s ease}
+h1,h2,h3,p{margin-top:0}
+.karte .ico{color:var(--blau);width:56px;height:56px}
+section.dunkel .karte .ico{color:var(--gold)}
+.ico{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.rein{animation:none;opacity:0}
+section.aktiv .rein{animation:rein 600ms cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--i,0) * 120ms)}
+section.aktiv .titel{animation:rein 500ms ease-out both}
+section.aktiv#fahrplan div[style*="width:416px"]{animation:wachsen 1.2s .3s cubic-bezier(.2,.7,.2,1) both;transform-origin:left}
+@keyframes wachsen{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+section.aktiv#cover .rein[style*="--i:4"] p[style*="120px"]{animation:pop .6s 1s cubic-bezier(.3,1.6,.5,1) both}
+@keyframes pop{from{transform:scale(.4);opacity:0}to{transform:scale(1);opacity:1}}
+.fuss .pg{display:none}
+@media (orientation:portrait){#hinweis::after{content:' · Querformat empfohlen'}}
+table.tab{border-collapse:collapse}table.tab th,table.tab td{padding:18px 14px;border-bottom:2px solid var(--linie)}table.tab tr:last-child td{font-weight:700;border-bottom:none}
+#leiste{position:fixed;left:0;right:0;bottom:0;height:5px;background:rgba(255,255,255,.12);z-index:5}
+#fortschritt{height:100%;width:0;background:#F2B441;transition:width .4s ease}
+#steuerung{position:fixed;right:18px;bottom:18px;display:flex;gap:8px;align-items:center;z-index:6;font:600 14px 'Public Sans',Arial,sans-serif;color:#C3CDE6}
+#steuerung button{all:unset;cursor:pointer;width:40px;height:40px;border-radius:50%;background:rgba(20,34,74,.85);color:#F3F5F9;display:flex;align-items:center;justify-content:center;font-size:20px;border:1px solid rgba(255,255,255,.18)}
+#steuerung button:hover{background:#1F4BB8}
+#steuerung button:focus-visible{outline:2px solid #F2B441;outline-offset:2px}
+#zaehler{background:rgba(20,34,74,.85);padding:10px 14px;border-radius:20px;border:1px solid rgba(255,255,255,.18)}
+#hinweis{position:fixed;left:50%;top:18px;white-space:nowrap;transform:translateX(-50%);font:14px 'Public Sans',Arial,sans-serif;color:#C3CDE6;background:rgba(20,34,74,.85);padding:8px 16px;border-radius:20px;z-index:6;transition:opacity .6s}
+@media (prefers-reduced-motion: reduce){section.aktiv .rein,section.aktiv .titel{animation:none;opacity:1}section{transition:none}}
+@media print{@page{size:1920px 1080px;margin:0}html,body{overflow:visible;background:none}#buehne{position:static;transform:none!important}section{position:relative;opacity:1;visibility:visible;page-break-after:always}.rein{opacity:1;animation:none!important}#leiste,#steuerung,#hinweis{display:none}}
+
+#rechtliches{position:fixed;left:18px;top:14px;z-index:6;font:13px 'Public Sans',Arial,sans-serif}
+#rechtliches a{color:#8E9AB8;text-decoration:none;margin-right:12px}
+#rechtliches a:hover{color:#F3F5F9;text-decoration:underline}
