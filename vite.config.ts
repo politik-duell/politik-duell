@@ -21,8 +21,10 @@ export default defineConfig({
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,webmanifest}'],
         // Themendaten (nur Prüfseite und Admin) werden je Thema live geladen, nicht vorab.
-        globIgnores: ['assets/daten/**'],
+        // Die Partnerseite (public/partner/, statische Pitch-Präsentation) gehört nicht zur App.
+        globIgnores: ['assets/daten/**', 'partner/**'],
         navigateFallback: '/index.html',
+        navigateFallbackDenylist: [/^\/partner(\/|$)/],
         cleanupOutdatedCaches: true,
         runtimeCaching: [],
       },

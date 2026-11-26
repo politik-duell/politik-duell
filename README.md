@@ -112,6 +112,7 @@ npm run dashboard  # Dateien zum Einfügen im Supabase-Dashboard neu erzeugen
 | `src/data/wortwolke.ts` | Wörter der Wortwolke (erfasste Themen) |
 | `src/admin/` | Admin-Ansicht zur Moderation (`#/admin`, eigenes Bundle) |
 | `src/rechtliches/` | Impressum, Datenschutzerklärung und Betreiberangaben |
+| `public/partner/` | Partnerseite politik-duell.de/partner/: statische Pitch-Präsentation für Förderer und Institutionen (nicht indexiert, eigene CSP in `vercel.json`, nicht im Service Worker; Schriften selbst gehostet, OFL) |
 | `vercel.json` | Deployment: Build und Sicherheits-Header |
 
 ## Bewertungsregeln im Prototyp
