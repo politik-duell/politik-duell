@@ -393,6 +393,11 @@ export function Runde({
   }
 
   const angebotThema = angebot ? (daten.themen.find((t) => t.id === angebot.thema_id) ?? null) : null
+  /**
+   * Nur antippen, nicht tippen: Stehen die Ursachen zur Auswahl und wartet keine Rückfrage der KI auf Antwort, ist das
+   * Eingabefeld ausgeblendet. „Nichts davon passt“ bringt es zurück.
+   */
+  const nurAuswahl = !!angebotThema && verlauf.at(-1)?.von !== 'ki'
   const angebotGruppe = angebot?.symptom !== undefined ? angebotThema?.symptome?.find((g) => g.nr === angebot.symptom) : undefined
 
   return (
@@ -488,62 +493,64 @@ export function Runde({
         </div>
       )}
 
-      <form className="eingabe" onSubmit={absenden}>
-        <label htmlFor="problem" className="sr-only">
-          Dein Problem
-        </label>
-        <textarea
-          id="problem"
-          rows={3}
-          maxLength={500}
-          placeholder="z. B. „Ich warte seit drei Monaten auf einen Termin beim Facharzt.“"
-          value={eingabe}
-          onChange={(e) => {
-            setEingabe(e.target.value)
-            setBeispiel(null)
-          }}
-          onKeyDown={(e) => {
-            if (e.key === 'Enter' && !e.shiftKey) absenden(e)
-          }}
-          disabled={denkt}
-        />
-        {beispiel && (
-          <p className="meta" aria-live="polite">
-            {BEISPIEL_TEXT[beispiel]} – mit „Senden“ einspielen oder vorher anpassen.
-          </p>
-        )}
-        <div className="eingabe-knoepfe">
-          {zufallsBeispiel(daten, beispielOptionen) && (
-            <button
-              type="button"
-              className="knopf knopf-zweit"
-              onClick={wuerfeln}
-              disabled={denkt}
-              title="Zufälliges Problem, Forderung oder Haltung, die das Spiel schon kennt"
-            >
-              <ShuffleSymbol />
-              Zufallsbeispiel
-            </button>
-          )}
-          <button className="knopf knopf-senden" type="submit" disabled={denkt || !eingabe.trim()}>
-            Senden
-          </button>
-        </div>
-        {zufallsBeispiel(daten, beispielOptionen) && (
-          <label className="meta nur-probleme">
-            <input
-              type="checkbox"
-              checked={nurProbleme}
-              onChange={(e) => {
-                setNurProbleme(e.target.checked)
-                merkeNurProbleme(e.target.checked)
-              }}
-            />{' '}
-            Beispiele nur mit Alltagsproblemen
+      {!nurAuswahl && (
+        <form className="eingabe" onSubmit={absenden}>
+          <label htmlFor="problem" className="sr-only">
+            Dein Problem
           </label>
-        )}
-      </form>
-      {!vorschlagen && <VorschlagFormular anlass="Dein Thema fehlt im Spiel?" />}
+          <textarea
+            id="problem"
+            rows={3}
+            maxLength={500}
+            placeholder="z. B. „Ich warte seit drei Monaten auf einen Termin beim Facharzt.“"
+            value={eingabe}
+            onChange={(e) => {
+              setEingabe(e.target.value)
+              setBeispiel(null)
+            }}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' && !e.shiftKey) absenden(e)
+            }}
+            disabled={denkt}
+          />
+          {beispiel && (
+            <p className="meta" aria-live="polite">
+              {BEISPIEL_TEXT[beispiel]} – mit „Senden“ einspielen oder vorher anpassen.
+            </p>
+          )}
+          <div className="eingabe-knoepfe">
+            {zufallsBeispiel(daten, beispielOptionen) && (
+              <button
+                type="button"
+                className="knopf knopf-zweit"
+                onClick={wuerfeln}
+                disabled={denkt}
+                title="Zufälliges Problem, Forderung oder Haltung, die das Spiel schon kennt"
+              >
+                <ShuffleSymbol />
+                Zufallsbeispiel
+              </button>
+            )}
+            <button className="knopf knopf-senden" type="submit" disabled={denkt || !eingabe.trim()}>
+              Senden
+            </button>
+          </div>
+          {zufallsBeispiel(daten, beispielOptionen) && (
+            <label className="meta nur-probleme">
+              <input
+                type="checkbox"
+                checked={nurProbleme}
+                onChange={(e) => {
+                  setNurProbleme(e.target.checked)
+                  merkeNurProbleme(e.target.checked)
+                }}
+              />{' '}
+              Beispiele nur mit Alltagsproblemen
+            </label>
+          )}
+        </form>
+      )}
+      {!vorschlagen && !nurAuswahl && <VorschlagFormular anlass="Dein Thema fehlt im Spiel?" />}
     </main>
   )
 }
