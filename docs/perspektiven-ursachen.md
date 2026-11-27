@@ -1104,6 +1104,20 @@ Verworfen: **Sozialbeiträge insgesamt steigen** (Summe aus 701 und 3801–3803;
 
 Tragende Zitate: 4201 – Bundesbank: „Offen ist auch, ob die kalte Progression weiter kompensiert wird“ (ab 2027); Progressionsbericht, S. 2: kalte Progression sind „Steuermehrbelastungen …, die entstehen, soweit Einkommenserhöhungen die Inflation ausgleichen“; S. 4: Volumen 2024 gegenüber 2023 9,58 Mrd. Euro. 4202 – Destatis: „Der Bund war Ende 2025 mit 1 840,4 Milliarden Euro verschuldet“ (+6,2 %); Bundesbank: Defizit des Kernhaushalts 2026 „stark um 32 Mrd € auf fast 100 Mrd €“, Zinsausgaben 29,9 Mrd. Euro (2025) bis 78,7 Mrd. Euro (2030, Prognose). 4203 – Destatis: Steuereinnahmen 2025 989,8 Mrd. Euro, davon Lohnsteuer 262,7 Mrd., Umsatzsteuer 310,2 Mrd., Erbschaftsteuer 15,4 Mrd. Euro.
 
+### Nachträgliche Ursache 4204 (27. 11. 2026)
+
+Stand: 27. 11. 2026 · KI-Entwurf, KI-Freigabe für die Testphase; nachträglich (docs/methode.md), Freigabe durch eine zweite Person steht aus
+
+Aufnahmegrund: Rückmeldung aus der Beta – „Dass meine Ersparnisse so stark versteuert werden“ passte zu keiner Ursache. Recherche unter Phase-A-Sperre, ohne Blick in die Programme.
+
+| ID | Ursache (kurz) | Ebene | Quelle (Belegstufe) | Diagnose aus der Debatte |
+| --- | --- | --- | --- | --- |
+| 4204 | Zinserträge nominal besteuert, auch der Inflationsanteil | Bund (EStG §§ 20, 32d) | [Bundesbank, Monatsbericht Juli 2017, S. 7](https://www.bundesbank.de/resource/blob/693428/7556a1e8cac093fb0ebe73f6e0d4f275/mL/2017-07-zinsbesteuerung-data.pdf#page=7) (B); [§ 20 EStG](https://dejure.org/gesetze/EStG/20.html) (A) | Inflationsanteil steuerfrei stellen (IMF WP/23/18, C) vs. Abgeltungsteuer trägt der Inflationsanfälligkeit schon Rechnung (Fuest/Spengel, Wirtschaftsdienst 2016, C); Sparer-Pauschbetrag anheben (IW 38/2022, C) vs. keine weitere Erhöhung geplant (BT-Drs. 20/1482, A); Zinsbereinigung (Christofzik/Feld/Scheuering, Wirtschaftsdienst 2016, C) |
+
+Verworfen: **Pauschalsatz 25 % trifft Sparer mit niedrigem Steuersatz stärker** (nur DIW-Pressemitteilung 2017, C; Günstigerprüfung § 32d Abs. 6 mildert – als Grenzfall in Regel 4); **Abgeltung begünstigt hohe Einkommen** (Verteilungsfrage, nicht das Alltagsproblem kleiner Sparer); **Verfassungswidrigkeit** (Begründung nicht gelesen); **kalte Progression auf Zinsen** (gehört zu 4201). Nicht gelesen: BMF-Beirat 2023, Horn (Marburg), Sinn (Scan).
+
+Tragendes Zitat: Bundesbank, S. 7: „Bei einer Besteuerung der nominalen Zinserträge kann es bereits bei moderaten Inflationsraten zu einer hohen Steuerbelastung der realen Zinseinkommen kommen.“ Neusuche in allen Programmen steht aus; bis dahin gilt 4204 für alle Parteien als „noch nicht erfasst“.
+
 ## Künstliche Intelligenz (43)
 
 Stand: 21. 10. 2026 · KI-Entwurf, KI-Freigabe für die Testphase
