@@ -39,14 +39,15 @@ function forderungAntwort(themaName: string | null): string {
 }
 
 /**
- * Nach „Nichts davon passt“: sagen, dass dieser Teil des Themas noch fehlt, und zu einem neuen Problem einladen.
+ * Nach „Nichts davon passt“: sagen, dass das Thema da ist, nur dieser Teil noch fehlt, und zu einem neuen Problem einladen.
  * Gespeichert wird nichts; wer möchte, schlägt das Fehlende ausdrücklich vor (Formular darunter).
  */
 function passtNichtAntwort(themaName: string | null): string {
   return (
-    'Danke – das ist ' +
-    (themaName ? `beim Thema „${themaName}“ ` : '') +
-    'noch nicht erfasst. Magst du ein anderes Problem nennen? Oder schlag vor, was fehlt.'
+    (themaName
+      ? `Danke – das Thema „${themaName}“ gibt es, aber genau dieses Problem ist dort noch nicht erfasst.`
+      : 'Danke – genau dieses Problem ist noch nicht erfasst.') +
+    ' Magst du ein anderes nennen? Oder schlag vor, was fehlt.'
   )
 }
 
