@@ -24,8 +24,8 @@ export function TestphaseHinweis() {
 export function BetaHinweis() {
   return (
     <div className="mock-hinweis testphase-hinweis" role="note">
-      Beta: Ein großer Teil der Bewertungen sind vorläufige KI-Entwürfe, noch nicht von Menschen geprüft – am Ergebnis
-      jeweils gekennzeichnet. Fehler gern melden: <a href="#/methode">So bewerten wir</a>.
+      Beta: Viele Bewertungen sind noch KI-Entwürfe, nicht von Menschen geprüft.{' '}
+      <a href="#/methode">Mehr und Fehler melden</a>
     </div>
   )
 }

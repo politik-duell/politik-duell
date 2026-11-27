@@ -41,21 +41,27 @@ export function Belege({ ergebnis }: { ergebnis: ParteiErgebnis }) {
 }
 
 /** Links zu den Programmen der Partei (Bund, ggf. Länder) – zum schnellen Selbstprüfen, wo nichts gefunden wurde. */
-function ProgrammLinks({ ergebnis }: { ergebnis: ParteiErgebnis }) {
+function ProgrammLinks({ ergebnis, mitStand = false }: { ergebnis: ParteiErgebnis; mitStand?: boolean }) {
   const landName = useLandName()
+  const programme = ergebnis.programme.length
+    ? ergebnis.programme
+    : [{ land: null, url: ergebnis.partei.programm_url, stand: ergebnis.partei.programm_stand }]
   return (
     <span className="belege">
-      {(ergebnis.programme.length ? ergebnis.programme : [{ land: null, url: ergebnis.partei.programm_url }]).map((p, i) => (
+      {programme.map((p, i) => (
         <span key={p.land ?? 'bund'}>
           {i > 0 && ' · '}
           <a href={p.url} target="_blank" rel="noopener noreferrer">
             {p.land ? `Landeswahlprogramm ${landName(p.land)}` : 'Wahlprogramm'}
+            {mitStand && p.stand ? ` (Stand ${standText(p.stand)})` : ''}
           </a>
         </span>
       ))}
     </span>
   )
 }
+
+const standText = (iso: string) => new Date(iso).toLocaleDateString('de-DE', { day: 'numeric', month: 'long', year: 'numeric' })
 
 /** E-Mail mit Maßnahme im Betreff – „Fehler melden“ direkt an der Wertung, ohne Angaben zur Person. */
 const fehlerLink = (m: Massnahme) =>
@@ -264,6 +270,10 @@ function Duell({ runde, spieler }: { runde: RundenErgebnis; spieler: [Spieler, S
   const ursache = (id: number) => ursachen.find((u) => u.id === id)
   const punkteVon = (e: ParteiErgebnis, id: number) => (e.abdeckung ? (wertungFuer(e, id)?.punkte ?? 0) : null)
   const leere = runde.ergebnisse!.map((e) => ({ e, leer: ohneTreffer(e, landName) })).filter((x) => x.leer)
+  const nichtsBeide =
+    leere.length === 2 &&
+    leere.every(({ e }) => !e.abdeckung?.begruendung && !e.fehlt?.land) &&
+    leere[0].leer!.kurz === leere[1].leer!.kurz
   // Das Bundesland nur, wenn es zählt: bei Ursachen in Länderzuständigkeit (docs/methode.md).
   const landZaehlt = ursachenIds.some((id) => ursache(id)?.ebene === 'land')
   const seitenText = (s: Spieler) => [s.name, landZaehlt && s.land ? landName(s.land) : null].filter(Boolean).join(' · ')
@@ -332,22 +342,38 @@ function Duell({ runde, spieler }: { runde: RundenErgebnis; spieler: [Spieler, S
           })}
         </ul>
       )}
-      <p className="duell-legende">
-        Balken: Punkte je Ursache – bester Lösungsweg voll, jeder weitere halb so stark, höchstens {MAX_JE_URSACHE}. Die
-        Rundenpunkte sind die Summe über alle Ursachen; eine Maßnahme, die auf mehrere davon wirkt, zählt bei jeder. Tippen
-        zeigt Maßnahmen und Belege.
-      </p>
-      {/* Warum eine Partei hier nichts hat – sichtbar, nicht aufklappbar: 0 Punkte ohne Grund wirken wie Schiebung. */}
-      {leere.map(({ e, leer }) => (
-        <div key={e.partei.id} className="duell-fehlt" style={parteiStil(e.partei.farbe)}>
+      <details className="duell-legende">
+        <summary>Wie wird gezählt?</summary>
+        Je Ursache zählt der beste Lösungsweg voll, jeder weitere halb so stark – höchstens {MAX_JE_URSACHE} Punkte. Die
+        Runde ist die Summe über alle Ursachen. Tippe auf eine Zeile für Maßnahmen und Belege.
+      </details>
+      {/* Warum eine Partei hier nichts hat – sichtbar, nicht aufklappbar: 0 Punkte ohne Grund wirken wie Schiebung.
+          Gilt für beide dasselbe (nichts im Programm, noch nicht erfasst), steht es in einem Kasten statt zweimal; die
+          Erklärung zu „noch nicht erfasst“ steht dann im Rundenergebnis darunter. */}
+      {nichtsBeide ? (
+        <div className="duell-fehlt duell-fehlt-beide">
           <p className="duell-fehlt-kopf">
-            {e.partei.kurzname}: {leer!.kurz}
+            {leere.map(({ e }) => e.partei.kurzname).join(' und ')}: {leere[0].leer!.kurz}
           </p>
-          <p>{leer!.lang}</p>
-          {e.abdeckung?.begruendung && <p className="keine-begruendung">Durchsucht: {e.abdeckung.begruendung}</p>}
-          <ProgrammLinks ergebnis={e} />
+          {leere.map(({ e }) => (
+            <p key={e.partei.id} className="duell-fehlt-zeile" style={parteiStil(e.partei.farbe)}>
+              <span className="duell-fehlt-partei">{e.partei.kurzname}</span> <ProgrammLinks ergebnis={e} mitStand />
+            </p>
+          ))}
         </div>
-      ))}
+      ) : (
+        leere.map(({ e, leer }) => (
+          <div key={e.partei.id} className="duell-fehlt" style={parteiStil(e.partei.farbe)}>
+            <p className="duell-fehlt-kopf">
+              {e.partei.kurzname}: {leer!.kurz}
+            </p>
+            {/* „Nichts im Programm“ sagt die Kopfzeile schon; der Stand steht am Link. Sonst die Erklärung. */}
+            {!e.abdeckung && <p>{leer!.lang}</p>}
+            {e.abdeckung?.begruendung && <p className="keine-begruendung">Durchsucht: {e.abdeckung.begruendung}</p>}
+            <ProgrammLinks ergebnis={e} mitStand={!!e.abdeckung} />
+          </div>
+        ))
+      )}
     </section>
   )
 }
@@ -398,6 +424,11 @@ export function Aufloesung({
   }, [])
 
   const landName = useLandName()
+  const { ursachen } = useDaten()
+  // Kurzfassung der KI gleich dem Ursachensatz darunter? Dann nicht zweimal zeigen (Überschrift entfällt).
+  const zusammenfassungDoppelt =
+    !!runde.eingaben?.length &&
+    (runde.ursachen_ids ?? []).some((id) => ursachen.find((u) => u.id === id)?.alltag?.trim() === runde.zusammenfassung.trim())
   // Der Vergleich aller Parteien nutzt nur, was beide Seiten gleich gewählt haben (vergleichsSeite).
   const abweichend = [
     ...(spieler[0].land !== spieler[1].land ? [['Bundesländer', 'nur mit den Bundeswahlprogrammen']] : []),
@@ -409,7 +440,8 @@ export function Aufloesung({
     <main className="seite aufloesung">
       <h2 className="sr-only">Das Problem</h2>
       {/* Die eigene Eingabe im Wortlaut über der Kurzfassung – nicht, wenn beide gleich lauten. */}
-      {runde.eingaben?.length && !(runde.eingaben.length === 1 && runde.eingaben[0].trim() === runde.zusammenfassung.trim()) ? (
+      {runde.eingaben?.length &&
+      (zusammenfassungDoppelt || !(runde.eingaben.length === 1 && runde.eingaben[0].trim() === runde.zusammenfassung.trim())) ? (
         <div className="deine-eingabe">
           <span className="deine-eingabe-label">{runde.eingaben.length > 1 ? 'Deine Eingaben' : 'Deine Eingabe'}</span>
           {runde.eingaben.map((t, i) => (
@@ -419,10 +451,12 @@ export function Aufloesung({
           ))}
         </div>
       ) : null}
-            <blockquote className="problem-zitat" {...KI_ERZEUGT}>
-        <KiMarke />
-        <span className="problem-zitat-text">{runde.zusammenfassung}</span>
-      </blockquote>
+      {!zusammenfassungDoppelt && (
+        <blockquote className="problem-zitat" {...KI_ERZEUGT}>
+          <KiMarke />
+          <span className="problem-zitat-text">{runde.zusammenfassung}</span>
+        </blockquote>
+      )}
       <p className="meta">
         {runde.thema ? `Thema: ${runde.thema.name}` : 'Thema nicht in der Datenbank'}
       </p>
@@ -462,7 +496,7 @@ export function Aufloesung({
                   ? `Punkt für ${spieler[0].name} (${spieler[0].partei.kurzname})!`
                   : runde.punkte[1] === 1
                     ? `Punkt für ${spieler[1].name} (${spieler[1].partei.kurzname})!`
-                    : 'Keine der beiden Parteien hat dazu eine Maßnahme im Programm – kein Punkt.'}
+                    : 'Kein Punkt – beide haben dazu nichts im Programm.'}
             {runde.status === 'unvollstaendig' && (
               <span className="rundensieger-zusatz">Fehlende Daten kosten keine Partei einen Punkt.</span>
             )}
@@ -529,7 +563,7 @@ export function Aufloesung({
 
       {enthuellt && runde.ergebnisse && (
         <p className="hinweis methode-link">
-          Punkte sind eine Einschätzung nach offener Methode, kein Urteil über Parteien.{' '}
+          Einschätzung nach offener Methode, kein Urteil über Parteien.{' '}
           <a href="#/methode">So bewerten wir · Fehler melden</a>
         </p>
       )}
