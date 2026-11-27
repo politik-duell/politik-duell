@@ -156,6 +156,18 @@ export function Runde({
   /** Nach „Nichts davon passt“: Formular „Thema vorschlagen“ gleich offen zeigen. */
   const [vorschlagen, setVorschlagen] = useState(false)
   /**
+   * Stand vor „Nichts davon passt“, damit man zur Auswahl zurückkann (bis zur nächsten Eingabe). Nur im Speicher
+   * der Seite, geht nirgendwohin.
+   */
+  const [vorPasstNicht, setVorPasstNicht] = useState<{
+    verlauf: Nachricht[]
+    vorher: Nachricht[]
+    angebot: NonNullable<typeof angebot>
+    zusammenfassung: string | null
+    hinweis: string | null
+    hinweisVonKi: boolean
+  } | null>(null)
+  /**
    * Bestätigung (docs/plan-zuordnung.md): das Thema, dessen Ursachen gerade zum Antippen stehen – mit den von der KI
    * vorgeschlagenen Ursachen, wenn sie sicher war.
    */
@@ -213,6 +225,7 @@ export function Runde({
     setBeispiel(null)
     setHinweis(null)
     setHinweisVonKi(false)
+    setVorPasstNicht(null)
     setFehler(null)
     setAngebot(null)
     setHaltung(null)
@@ -317,6 +330,7 @@ export function Runde({
     const gespraech = verlauf.length ? verlauf : vorher
     setFehler(null)
     const name = daten.themen.find((t) => t.id === themaId)?.name
+    if (angebot) setVorPasstNicht({ verlauf, vorher, angebot, zusammenfassung, hinweis, hinweisVonKi })
     setVerlauf([])
     setVorher(gespraech)
     setAngebot(null)
@@ -324,6 +338,19 @@ export function Runde({
     setHinweis(passtNichtAntwort(name ?? null))
     setVorschlagen(true)
     setHinweisVonKi(false)
+  }
+
+  /** Zurück zur Auswahl vor „Nichts davon passt“ – ohne neue Anfrage. */
+  function zurueckZurAuswahl() {
+    if (!vorPasstNicht || denkt) return
+    setVerlauf(vorPasstNicht.verlauf)
+    setVorher(vorPasstNicht.vorher)
+    setAngebot(vorPasstNicht.angebot)
+    setZusammenfassung(vorPasstNicht.zusammenfassung)
+    setHinweis(vorPasstNicht.hinweis)
+    setHinweisVonKi(vorPasstNicht.hinweisVonKi)
+    setVorschlagen(false)
+    setVorPasstNicht(null)
   }
 
   /**
@@ -409,6 +436,12 @@ export function Runde({
           </p>
         )}
       </div>
+
+      {vorPasstNicht && (
+        <button type="button" className="knopf-link zurueck-auswahl" onClick={zurueckZurAuswahl} disabled={denkt}>
+          ← Zurück zur Auswahl
+        </button>
+      )}
 
       {vorschlagen && <VorschlagFormular offen />}
 
