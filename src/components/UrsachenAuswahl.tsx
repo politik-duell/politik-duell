@@ -65,11 +65,11 @@ export function UrsachenAuswahl({
         </p>
       )}
       <p className="meta">
-        {verstanden ? 'Stimmt das so? Du kannst die Auswahl ändern. ' : ''}
         {gruppe
-          ? `Zu „${gruppe.alltag}“ tragen mehrere Ursachen bei – sie zählen alle. Dazu höchstens ${MAX_AUSWAHL} weitere. `
-          : `Höchstens ${MAX_AUSWAHL}. `}
-        Gewertet wird dann, wer dafür die beste Lösung hat.
+          ? `Zu „${gruppe.alltag}“ tragen mehrere Ursachen bei – sie zählen alle. Dazu höchstens ${MAX_AUSWAHL} weitere.`
+          : verstanden
+            ? `Passt das? Du kannst ändern – höchstens ${MAX_AUSWAHL}.`
+            : `Tippe an, was passt – höchstens ${MAX_AUSWAHL}.`}
       </p>
       <ul>
         {sichtbar.map((u) => {

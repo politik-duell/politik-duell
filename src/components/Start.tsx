@@ -29,8 +29,8 @@ export function Start({
           <Logo groesse={72} />
         </div>
         <p className="erklaerung">
-          Zwei Spieler:innen, zwei Parteien, fünf Runden. Nennt echte Alltagsprobleme – das Spiel zeigt, welche Partei
-          dafür die wirksamste und umsetzbare Lösung bietet. Mit Beleg nach jeder Runde.
+          Nennt Alltagsprobleme – das Spiel zeigt, welche Partei die beste Lösung hat. Mit Beleg. Zu zweit, fünf
+          Runden.
         </p>
         <p className="start-themen">
           <a href="#/themen">Welche Themen das Spiel schon kennt</a>
@@ -64,13 +64,15 @@ export function Start({
             </button>
           </>
         )}
-        <p className="datenschutz">
-          <strong>Datenschutz:</strong> Keine Konten, keine Cookies, keine IP-Adressen, kein Audio. Deine Eingaben
-          ordnet eine KI (Mistral, EU) ein; wir speichern sie nicht – weder im Wortlaut noch als Kurzfassung oder
-          Ergebnis. Gespeichert wird nur, was du ausdrücklich als Thema vorschlägst. Die
-          Wortwolke im Hintergrund zeigt die Themen, die das Spiel schon werten kann – keine Eingaben.{' '}
-          <a href="#/datenschutz">Mehr erfahren</a>
-        </p>
+        <details className="datenschutz">
+          <summary>
+            <strong>Datenschutz:</strong> keine Konten, keine Cookies, deine Eingaben werden nicht gespeichert.
+          </summary>
+          Keine IP-Adressen, kein Audio. Deine Eingaben ordnet eine KI (Mistral, EU) ein; wir speichern sie nicht – weder
+          im Wortlaut noch als Kurzfassung oder Ergebnis. Gespeichert wird nur, was du ausdrücklich als Thema vorschlägst.
+          Die Wortwolke im Hintergrund zeigt die Themen, die das Spiel schon werten kann – keine Eingaben.{' '}
+          <a href="#/datenschutz">Datenschutzerklärung</a>
+        </details>
       </div>
     </main>
   )

@@ -398,9 +398,6 @@ export function Runde({
   return (
     <main className="seite runde">
       <h2>Welches Alltagsproblem nervt dich?</h2>
-      <p className="hinweis">
-        Schreib auf, was in deinem Alltag konkret schiefläuft.
-      </p>
 
       <div className="verlauf" aria-live="polite">
         {vorher.map((n, i) =>
@@ -528,6 +525,11 @@ export function Runde({
               Zufallsbeispiel
             </button>
           )}
+          <button className="knopf knopf-senden" type="submit" disabled={denkt || !eingabe.trim()}>
+            Senden
+          </button>
+        </div>
+        {zufallsBeispiel(daten, beispielOptionen) && (
           <label className="meta nur-probleme">
             <input
               type="checkbox"
@@ -537,12 +539,9 @@ export function Runde({
                 merkeNurProbleme(e.target.checked)
               }}
             />{' '}
-            nur Alltagsprobleme
+            Beispiele nur mit Alltagsproblemen
           </label>
-          <button className="knopf" type="submit" disabled={denkt || !eingabe.trim()}>
-            Senden
-          </button>
-        </div>
+        )}
       </form>
       {!vorschlagen && <VorschlagFormular anlass="Dein Thema fehlt im Spiel?" />}
     </main>
