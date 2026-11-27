@@ -3,7 +3,7 @@
   "name": "Steuern und Abgaben",
   "beschreibung": "Bei Lohnerhöhungen steigt die Steuer überproportional mit (kalte Progression). Viele fürchten, dass wegen der Staatsschulden Steuern steigen oder Leistungen gekürzt werden, und fragen sich, wer die Steuern trägt.",
   "ziel": "Beschäftigte behalten von ihrem Bruttolohn so viel, dass sie damit auskommen, und können sich auf die Höhe von Abgaben und staatlichen Leistungen verlassen.",
-  "schlagwoerter": ["lohnerhoehung", "gehaltserhoehung", "lohnsteuer", "einkommensteuer", "steuererhoehung", "leistungskuerzung", "kalte progression", "staatsschulden", "steuergerechtigkeit", "erbschaftsteuer"],
+  "schlagwoerter": ["lohnerhoehung", "gehaltserhoehung", "lohnsteuer", "einkommensteuer", "steuererhoehung", "leistungskuerzung", "kalte progression", "staatsschulden", "steuergerechtigkeit", "erbschaftsteuer", "sparen", "zinsen", "abgeltungsteuer"],
   "ursachen": [
     {
       "id": 4201,
@@ -28,6 +28,15 @@
       "quelle_url": "https://www.destatis.de/DE/Themen/Staat/Steuern/Steuereinnahmen/steuereinnahmen.html",
       "ebene": "bund",
       "schlagwoerter": ["lohnsteuer", "umsatzsteuer", "mehrwertsteuer", "erbschaftsteuer", "steuerverteilung", "steuereinnahmen"]
+    },
+    {
+      "id": 4204,
+      "beschreibung": "Zinserträge gehen in voller Nominalhöhe in die Besteuerung ein, auch der Teil, der nur den Kaufkraftverlust durch Inflation ausgleicht.",
+      "alltag": "Von meinen Zinsen bleibt nach Steuern kaum etwas übrig, obwohl die Inflation einen Teil davon schon auffrisst.",
+      "quelle_url": "https://www.bundesbank.de/resource/blob/693428/7556a1e8cac093fb0ebe73f6e0d4f275/mL/2017-07-zinsbesteuerung-data.pdf#page=7",
+      "ebene": "bund",
+      "schlagwoerter": ["sparen", "sparer", "zinsen", "kapitalertrag", "abgeltungsteuer", "inflation", "geldentwert"],
+      "nachtraeglich": "2026-11-27: aus der Beta ergänzt – „Dass meine Ersparnisse so stark versteuert werden“ passte zu keiner Ursache; Recherche ohne Zugriff auf die Programme (Phase-A-Sperre), Fachquelle Bundesbank. Neusuche in allen Programmen steht aus, bis dahin „noch nicht erfasst“."
     }
   ],
   "freigabe": {

@@ -93,17 +93,44 @@ export const MOCK_DATEN: Daten = {
 export const sindBeispieldaten = (d: Daten) =>
   d.quelle === 'mock' || d.parteien.some((p) => /^https:\/\/example\.(org|com|net)\//.test(p.programm_url))
 
+/** Zeilen je Abruf: PostgREST liefert höchstens so viele (Supabase-Standard `max_rows`), der Rest fehlte sonst still. */
+export const SEITE = 1000
+
+/**
+ * Alle Zeilen einer Abfrage, seitenweise geholt. `abfrage` muss eindeutig sortieren, sonst können Zeilen zwischen
+ * zwei Seiten doppelt vorkommen oder fehlen.
+ */
+export async function alleZeilen<T>(
+  abfrage: (von: number, bis: number) => PromiseLike<{ data: T[] | null; error: { message: string } | null }>,
+): Promise<{ data: T[] | null; error: { message: string } | null }> {
+  const zeilen: T[] = []
+  for (let von = 0; ; von += SEITE) {
+    const { data, error } = await abfrage(von, von + SEITE - 1)
+    if (error) return { data: null, error }
+    zeilen.push(...(data ?? []))
+    if (!data || data.length < SEITE) return { data: zeilen, error: null }
+  }
+}
+
 export async function ladeDaten(): Promise<Daten> {
   if (!supabase) return MOCK_DATEN
   const [p, t, u, m, a, l, lp, ins, h, hp, zk] = await Promise.all([
     supabase.from('parteien').select('*').order('id'),
     supabase.from('themen').select('*').order('id'),
-    supabase.from('ursachen').select('*').order('id'),
-    supabase.from('massnahmen').select('*').order('id'),
-    supabase.from('abdeckung').select('*'),
+    alleZeilen((von, bis) => supabase!.from('ursachen').select('*').order('id').range(von, bis)),
+    alleZeilen((von, bis) => supabase!.from('massnahmen').select('*').order('id').range(von, bis)),
+    alleZeilen((von, bis) =>
+      supabase!
+        .from('abdeckung')
+        .select('*')
+        .order('thema_id')
+        .order('partei_id')
+        .order('land', { nullsFirst: true })
+        .range(von, bis),
+    ),
     supabase.from('laender').select('*').order('name'),
     supabase.from('landesprogramme').select('*'),
-    supabase.from('instrumente').select('*').order('id'),
+    alleZeilen((von, bis) => supabase!.from('instrumente').select('*').order('id').range(von, bis)),
     supabase.from('haltungen').select('*').order('id'),
     supabase.from('haltung_positionen').select('*').order('partei_id'),
     supabase.from('haltung_zielkonflikte').select('haltung_id, seite, text, quelle_url').order('id'),

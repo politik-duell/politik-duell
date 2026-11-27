@@ -1,11 +1,12 @@
 {
   "thema_id": 42,
   "stand": "2026-10-21",
-  "herkunft": "Perspektivenprüfung 2026-10-21 (KI-Entwurf, docs/perspektiven-ursachen.md, Thema 42), vor dem Blick in die Programme geschrieben. Noch nicht von der Betreiberin bestätigt.",
+  "herkunft": "Perspektivenprüfung 2026-10-21 (KI-Entwurf, docs/perspektiven-ursachen.md, Thema 42), vor dem Blick in die Programme geschrieben. Noch nicht von der Betreiberin bestätigt. Regel 4 und Suchbegriffe zu 4204: Perspektivenprüfung 2026-11-27 (nachträgliche Ursache, vor dem Blick in die Programme).",
   "regeln": [
     { "nr": 1, "ursachen": [4201], "text": "Zu 1 gehören der Verlauf der Einkommensteuer bei steigenden Löhnen und Preisen und die Frage, ob der Tarif angepasst wird (kalte Progression, Tarifeckwerte, Grundfreibetrag). Nicht dazu: Höhe der Steuersätze insgesamt (3), Sozialbeiträge (701, 3801–3803), Bürgergeld-Anrechnung (506). Grenzfall: Kindergeld-Erhöhung ohne Tarifwirkung nur als ursachen_offen." },
     { "nr": 2, "ursachen": [4202], "text": "Zu 2 gehört, dass die Ausgaben des Bundes die laufenden Einnahmen übersteigen, sich Defizit und Verschuldung erhöhen und Zinsausgaben steigen. Nicht dazu: einzelne Ausgabenbereiche wie Rente (701) oder GKV-Bundeszuschüsse (3802), die eigene Ursachen sind. Grenzfall: Ausgabenschub durch Verteidigung oder Sozialleistungen nur als ursachen_offen." },
-    { "nr": 3, "ursachen": [4203], "text": "Zu 3 gehört, wie sich die Steuereinnahmen auf Lohn-, Umsatz-, Erbschaft- und sonstige Steuern verteilen. Nicht dazu: die Gesamthöhe der Abgaben auf Arbeit (1104, Preise und Löhne) und die Beitragsentwicklung (701, 3801). Grenzfall: Steuerhöhe einzelner Steuern (z. B. Mehrwertsteuer-Satz) nur als ursachen_offen." }
+    { "nr": 3, "ursachen": [4203], "text": "Zu 3 gehört, wie sich die Steuereinnahmen auf Lohn-, Umsatz-, Erbschaft- und sonstige Steuern verteilen. Nicht dazu: die Gesamthöhe der Abgaben auf Arbeit (1104, Preise und Löhne) und die Beitragsentwicklung (701, 3801). Grenzfall: Steuerhöhe einzelner Steuern (z. B. Mehrwertsteuer-Satz) nur als ursachen_offen." },
+    { "nr": 4, "ursachen": [4204], "text": "Zu 4 gehört, wie viel nominaler Kapitalertrag steuerpflichtig bleibt: Besteuerung in Nominalhöhe, auch des Inflationsanteils, und nominal festgelegte Sparer-Freibeträge (§ 20 Abs. 1 Nr. 7, Abs. 9 EStG). Nicht dazu: Steuersatz und Günstigerprüfung (§ 32d), Einkommensteuertarif und kalte Progression (4201), Einnahmenstruktur (4203), Renten, Wohneigentum, Erbschaft. Grenzfall: Der Pauschalsatz belastet Sparer mit niedrigem persönlichen Steuersatz stärker: nur als ursachen_offen." }
   ],
   "buendel": {
     "4201": ["Tarif an Inflation anpassen", "Entlastung über Grundfreibetrag", "Ausgleich verzichten, Einnahmen sichern", "Solidaritätszuschlag abschaffen", "Einkommensteuertarif vereinfachen", "Familiensplitting", "Steuerfreiheit gesetzliche Rente bis 2000 Euro", "Kinderfreibetrag an Kindergeld angleichen", "Tarifverlauf der Einkommensteuer", "Spitzensteuersatz-Schwelle", "Steuerfreiheit für Überstundenzuschläge", "Solidaritätszuschlag in Tarif integrieren", "Steuergutschriften für niedrige Einkommen", "Individuelle Besteuerung statt Ehegattensplitting", "Einkommensteuertarif umgestalten", "Ehegattensplitting durch Individualbesteuerung ersetzen", "Kindergeld erhöhen"],
@@ -30,6 +31,11 @@
       "Vermögen und Erbschaften stärker besteuern": ["vermoegensteuer", "erbschaftsteuer", "erbschaftssteuer"],
       "Unternehmen und Kapital entlasten": ["unternehmensteuer", "koerperschaftsteuer", "gewerbesteuer", "investitionspraemie"],
       "Konsum belasten oder entlasten": ["mehrwertsteuer", "umsatzsteuer"]
+    },
+    "4204": {
+      "Inflationsanteil steuerfrei stellen (Inflationsbereinigung, Realzins)": ["scheingewinn", "inflationsanteil", "realzins"],
+      "Sparer-Freibetrag anheben oder senken": ["sparerpauschbetr", "sparerfreibetr", "freistellungsauftrag"],
+      "Zinsbereinigung (duale Einkommensteuer)": ["zinsbereinig"]
     }
   }
 }
